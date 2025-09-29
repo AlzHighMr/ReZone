@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	<string id="st_traits_use_respec">
+		<text>Vypít</text>
+	</string>
+
+		<string id="st_itm_name_trait_respec">
+		<text>Sunset Sarsaparilla</text>
+	</string>
+
+	<string id="st_itm_desc_trait_respec">
+		<text>"Sunset Sarsaparilla je syceny nápoj typu kořenového piva..\n
+		Společnost Sunset Sarsaparilla Company byla založená v roce 1918 a od te doby se stala známou po celých tehdejších Spojených státech díky svemu nealkoholickému nápoji s přichuti sarsaparilly.."
+		\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] • %c[ui_gray_2] Nápoj\n
+		%c[d_blue] • %c[ui_gray_2] Importováno\n
+		%c[d_blue] • %c[ui_gray_2] Vysoká kvalita\n
+		%c[d_red] • %c[ui_gray_2] Můze způsobit selhání ledvin\n
+		\n \n
+		%c[ui_gray_3]Vypíj tento nápoj, abys resetoval své vlastnosti</text>
+	</string>
+
+
+	<string id="st_btn_enable">
+		<text>Povolit</text>
+	</string>
+	<string id="st_btn_disable">
+		<text>Zakázat</text>
+	</string>
+	
+	<string id="st_btn_learn">
+		<text>Naučit se</text>
+	</string>
+	<string id="st_btn_learn_learned">
+		<text>Naučeno</text>
+	</string>
+	<string id="st_btn_learn_locked">
+		<text>Zamknuto</text>
+	</string>
+	
+	<string id="st_requires_trait">
+		<text>Vyžaduje dovednost</text>
+	</string>
+	
+	<string id="st_traits_reminder">
+		<text>Máš nevyužité body vlastnosti!</text>
+	</string>
+	
+	<string id="st_traits_title">
+		<text>Dovednosti Postavy</text>
+	</string>
+	
+	<string id="st_traits_total_level">
+		<text>Celkový počet naučených dovedností</text>
+	</string>
+	
+	<string id="st_traits_avail_txt">
+		<text>Body dovedností: </text>
+	</string>
+	
+	<string id="st_trait_name_strong_back">
+		<text>Silná záda</text>
+	</string>
+	<string id="st_trait_desc_strong_back">
+		<text>"Jako malý jsi byl otrok svého dědy a pracoval jsi v lese díky tomu máš silná záda od nošení toho všeho dříví."\n \nZvyšuje tvoji nosnou nostnost o +4 kg</text>
+	</string>
+	
+	<string id="st_trait_name_strider">
+		<text>Strider</text>
+	</string>
+	<string id="st_trait_desc_strider">
+		<text>"Musíš chodit rychle.\nPokud nechceš přijít pozdě na schůzku"\n \nZvyšuje rychlost pohybu o 6 %\nSnižuje nostnost o 1 kg.</text>
+	</string>
+	
+	<string id="st_trait_name_sprinter">
+		<text>Sprinter</text>
+	</string>
+	<string id="st_trait_desc_sprinter">
+		<text>"Musíš běžet rychle.\nNechceš se nechat chytit v emisi"\n \nZvyšuje rychlost sprintu o 8 %\nSnižuje nosnou nostnost o 3 %.</text>
+	</string>
+	
+	<string id="st_trait_name_mutant_resist">
+		<text>Houževnatá kůže</text>
+	</string>
+	<string id="st_trait_desc_mutant_resist">
+		<text>"Tvá kůže ztvrdla při zápase s mutanty a ze vší ty radiace"\n \nZískáš o 10 % menší poškození od zásahu mutantu.</text>
+	</string>
+	
+	<string id="st_trait_name_melee_mutant">
+		<text>Lovec mutantu</text>
+	</string>
+	<string id="st_trait_desc_melee_mutant">
+		<text>"Proč plýtvat kulkama, když můžeš ty svině prostě zabodnout?"\n \nMutantům způsobíš o 15 % větší poškozeni při boji zblízka.</text>
+	</string>
+	
+	<string id="st_trait_name_faction_cashback_self">
+		<text>Přátelská tvář</text>
+	</string>
+	<string id="st_trait_desc_faction_cashback_self">
+		<text>"Obchodníci tvé frakce tě vždy rádi uvidí"\n \nZiskáš o +5 % lepší ceny u obchodníku tvé frakce.</text>
+	</string>
+	
+	
+	
+	<string id="st_trait_name_faction_cashback_other">
+		<text>Potulný obchodník</text>
+	</string>
+	<string id="st_trait_desc_faction_cashback_other">
+		<text>"Víš, jak smlouvat s těmi co tě moc neznají"\n \nZiskáš +5% lepší ceny u obchodníku, kteří nepatří k tvé frakci.</text>
+	</string>
+	
+
+	<string id="st_trait_name_psy_resist_controller">
+    <text>Zjitřená mysl</text>
+</string>
+<string id="st_trait_desc_psy_resist_controller">
+    <text>"Tvá mysl není už úplně ta stejná, jako když jsi poprvé vstoupil do zóny."\n \nUtrpíš o 25 % menší poškození od psychických útoků Kontrolora.</text>
+</string>
+
+<string id="st_trait_name_tinkering_armor">
+    <text>Zbrojíř</text>
+</string>
+<string id="st_trait_desc_tinkering_armor">
+    <text>"Nemusel bys tak často opravovat brnění, kdybys prostě nedostával rány"\n \nMáš +15 % vyšší šanci, že při opravě brnění a přileb nevyužiješ opravárenskou sadu.</text>
+</string>
+
+<string id="st_trait_name_tinkering_weapon">
+    <text>Zbraňový expert</text>
+</string>
+<string id="st_trait_desc_tinkering_weapon">
+    <text>"Zabíjení Tarbíků automatickou zbraní si vybírá svou daň na zbrani"\n \nMáš +15 % vyšší šanci, že při opravě zbraně nevyužiješ opravárenskou sadu.</text>
+</string>
+
+<string id="st_trait_name_medicine_boost">
+    <text>Zdravotník</text>
+</string>
+<string id="st_trait_desc_medicine_boost">
+    <text>"Gratuluji, našel jsi lék na díry po kulkách"\n \nPři použití lékařského předmětu získáš +10 % celkově obnoveného zdraví a radiace jako rychlou podporu.</text>
+</string>
+
+<string id="st_trait_name_mag_loading_bonus">
+    <text>Rychlý nabíječ</text>
+</string>
+<string id="st_trait_desc_mag_loading_bonus">
+    <text>"Seber hrst nábojů a prostě je tam namrdej!"\n \nVkládání nábojů do zásobníku je o 25 % rychlejší.</text>
+</string>
+
+<string id="st_trait_name_mag_unloading_bonus">
+    <text>Sběratel nábojů</text>
+</string>
+<string id="st_trait_desc_mag_unloading_bonus">
+    <text>"Nutkavé vypáskování každého zásobníku, který najdeš, ti připadá jako dobrý nápad"\n \nVypáskování nábojů ze zásobníku probíhá o 30 % rychleji.</text>
+</string>
+
+<string id="st_trait_name_lockpicking_bonus">
+    <text>Zámečník</text>
+</string>
+<string id="st_trait_desc_lockpicking_bonus">
+    <text>"Co je to v té krabici?"\n \nObtížnost uzamčení lootboxu se snižuje o 10 %.</text>
+</string>
+
+<string id="st_trait_name_pack_mule">
+    <text>Soumar</text>
+</string>
+<string id="st_trait_desc_pack_mule">
+    <text>"Opravdu nemusíš sbírat každý kousek kořisti."\n \nZvyšuje nosnost o +10 %\nSnížuje rychlost sprintu o 5 %.</text>
+</string>
+
+<string id="st_trait_name_melee_defense">
+    <text>Obranný boj zblízka</text>
+</string>
+<string id="st_trait_desc_melee_defense">
+    <text>"Když vytáhneš nůž, i výbuchy nějak méně bolí"\n \nPři držení zbraně pro boj zblízka utrpíš o 20 % menší poškození při fyzickém zásahu.</text>
+</string>
+
+<string id="st_trait_name_lone_stalker">
+    <text>Osamělý Stalker</text>
+</string>
+<string id="st_trait_desc_lone_stalker">
+    <text>"Kdo vůbec potřebuje přátele?"\n \nKdyž nemáš žádné společníky, tvá nosnost se zvýší o 5 kg a utrpíš o 10 % menší poškození.</text>
+</string>
+
+	
+	<string id="st_trait_name_squad_leader">
+    <text>Vůdce skupiny</text>
+</string>
+<string id="st_trait_desc_squad_leader">
+    <text>"Průzkum zóny je bezpečnější, když máš s sebou členy oddílu s pořádnýma kvérama!"\n \nTvoji společníci způsobují o 15 % větší poškození a o 25 % menší poškození.</text>
+</string>
+
+<string id="st_trait_name_small_guns_reload">
+    <text>Pistolník</text>
+</string>
+<string id="st_trait_desc_small_guns_reload">
+    <text>"Nabij zbraně jak z praku.. a zásobníky"\n \nNabíjej pistole a samopaly o 25 % rychleji.</text>
+</string>
+
+<string id="st_trait_name_big_guns_reload">
+    <text>Mistr dlouhých zbraní</text>
+</string>
+<string id="st_trait_desc_big_guns_reload">
+    <text>"Nemusíš ztrácet čas nabíjením po pár výstřelech z plného zásobníku." \n\nNabíjej pušky, odstřelovačky a brokovnice o 15 % rychleji.</text>
+</string>
+
+
+	
+<string id="st_trait_name_sidearm_quickdraw">
+    <text>Bleskový tas</text>
+</string>
+<string id="st_trait_desc_sidearm_quickdraw">
+    <text>"Pamatuj, že přepnutí na pistoli je vždy rychlejší než nabíjení." \n\nZbraně jiné než pistole tasíš o 25 % rychleji a pistole vytahuješ o 50 % rychleji.</text>
+</string>
+
+<string id="st_trait_name_butcher">
+    <text>Řezník</text>
+</string>
+<string id="st_trait_desc_butcher">
+    <text>"Mrtvolu mutanta pečlivě rozřežte, abyste ji co nejlépe využili"\n \nMáš 50 % šanci získat další část navíc z mutanta při stahování z kůže.</text>
+</string>
+
+<string id="st_trait_name_tinkering_parts">
+    <text>Obnovovač dílů</text>
+</string>
+<string id="st_trait_desc_tinkering_parts">
+    <text>"Stalkeři ti závidí tvé dokonale udržované vybavení"\n \nMáš +25 % vyšší šanci, že při opravě dílů a nástrojů nevyužiješ opravárenskou sadu</text>
+</string>
+
+<string id="st_trait_name_pain_rush">
+    <text>Nahromadění bolesti</text>
+</string>
+<string id="st_trait_desc_pain_rush">
+    <text>"AAAAAAAHHH!"\n \nPři poškození získáš rychlejší pohyb po dobu 10 sekund\nO +25 % rychlejší pohyb.</text>
+</string>
+
+<string id="st_trait_name_pain_train">
+    <text>Vlak plný bolesti</text>
+</string>
+<string id="st_trait_desc_pain_train">
+    <text>"AAAAAAAAAAAHHHHHHHHHH!!!"\n \nBonus Vlak plný bolesti také obnovuje vytrvalost až o 5 % za sekundu\nVlak plný bolesti trvá o 5 sekund déle.</text>
+</string>
+
+<string id="st_trait_name_predator">
+    <text>Predátor</text>
+</string>
+<string id="st_trait_desc_predator">
+    <text>"Nemám čas krvácet"\n \nZabíjení stalkerů a mutantů snižuje tvoje krvácení až o 5 % v průběhu 10 sekund.</text>
+</string>
+
+	
+	<string id="st_trait_name_bloodlust">
+    <text>Krvežízniví</text>
+</string>
+<string id="st_trait_desc_bloodlust">
+    <text>"Pokud krvácí, můžeme ho zabít"\n \nDovednost "Krvežízniví" také poskytuje vylepšenou manipulaci se zbraněmi\nAž o +25 % rychlejší nabíjení a vyndávání/schovávání.</text>
+</string>
+
+<string id="st_trait_name_thick_skull">
+    <text>Tlustá lebka</text>
+</string>
+<string id="st_trait_desc_thick_skull">
+    <text>"Možná je to radiací nebo jen zónou, ale tvá lebka zesílila..."\n \nMáš o 10 % menší poškození při zásahu do hlavy\nCeny obchodování jsou o 3 % horší</text>
+</string>
+
+</string_table>

@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+<!-- Queest: find out what happened -->
+
+<string id="pb_who_is_happening_part_1_name">
+    <text>Prolog: Zjisti, co se stalo</text>
+</string>
+<string id="pb_who_is_happening_part_1_text">
+    <text>Nepamatuji si nic... Hrozná bolest hlavy... Kde jsem? Co je to za místo? Musím se zeptat místních stalkerů.</text>
+</string>
+<string id="pb_who_is_happening_part_2_name">
+    <text>Prolog: Postarej se o zombifikované</text>
+</string>
+<string id="pb_who_is_happening_part_2_text">
+    <text>Ljutý řekl, že pro společenský klid je třeba se postarat o zombifikované nedaleko.</text>
+</string>
+<string id="pb_who_is_happening_part_3_name">
+    <text>Prolog: Prohledej těla zombifikovaných</text>
+</string>
+<string id="pb_who_is_happening_part_3_text">
+    <text>Musím se podívat, co mají v batohu zabití zombifikovaní stalkeři, možná najdu něco cenného.</text>
+</string>
+<string id="pb_who_is_happening_part_4_name">
+    <text>Prolog: Přečti si nalezenou poznámku</text>
+</string>
+<string id="pb_who_is_happening_part_4_text">
+    <text>Možná v nalezené poznámce je užitečná informace, musím ho přečíst.</text>
+</string>
+<string id="pb_who_is_happening_part_5_name">
+    <text>Prolog: Řekni Lutýmu o nálezu</text>
+</string>
+<string id="pb_who_is_happening_part_5_text">
+    <text>V poznámce jsem objevil docela užitečné informace, musím o tom říct Lutýmu.</text>
+</string>
+
+
+<!-- Quest: Spatial Anomaly -->
+<string id="pb_find_exit_to_anomaly_part_1_name">
+    <text>Prostorová anomálie: Najdi východ z anomálie</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_1_text">
+    <text>Musím najít východ z anomálie, abych se odtud dostal.</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_2_name">
+    <text>Prostorová anomálie: Najdi dešifrovač</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_2_text">
+    <text>Musím najít dešifrovač, o kterém mluvil Padalec v PDA.</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_3_name">
+    <text>Prostorová anomálie: Ukázat Lutému dešifrovač</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_3_text">
+    <text>Musím promluvit s Lutým o tom, že jsem našel dešifrovač.</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_4_name">
+    <text>Prostorová anomálie: Opustit anomálii</text>
+</string>
+<string id="pb_find_exit_to_anomaly_part_4_text">
+    <text>Musím opustit prostorovou anomálii.</text>
+</string>
+
+<!-- Quest: Go to Sleep -->
+<string id="pb_actor_go_to_sleep_part_1_name">
+    <text>Obtížná noc: Běž spát</text>
+</string>
+<string id="pb_actor_go_to_sleep_part_1_text">
+    <text>Lutý řekl, abych si zdřímnul, a já s ním souhlasím. Cítím se hrozně, doufám, že spánek situaci zlepší.</text>
+</string>
+
+
+<!-- Quest: Sudden Awakening -->
+<string id="pb_helicopter_crash_search_part_1_name">
+    <text>Náhlé probuzení: Identifikuj zdroj hluku</text>
+</string>
+<string id="pb_helicopter_crash_search_part_1_text">
+    <text>Probudil mě hlasitý hluk venku, zdá se, že je to vrtulník. Musím zjistit, jestli je to pravda.</text>
+</string>
+<string id="pb_helicopter_crash_search_part_2_name">
+    <text>Náhlé probuzení: Prozkoumej místo havárie vrtulníku</text>
+</string>
+<string id="pb_helicopter_crash_search_part_2_text">
+    <text>Vrtulník havaroval kvůli vzdušným anomáliím. Musím jít na místo havárie a prozkoumat okolí.</text>
+</string>
+<string id="pb_helicopter_crash_search_part_3_name">
+    <text>Náhlé probuzení: Zachraň vojáka</text>
+</string>
+<string id="pb_helicopter_crash_search_part_3_text">
+    <text>Na místě havárie jsem našel vojáka, ale umírá. Musím mu pomoci.</text>
+</string>
+<string id="pb_helicopter_crash_search_part_4_name">
+    <text>Náhlé probuzení: Doprovoď vojáka do základny</text>
+</string>
+<string id="pb_helicopter_crash_search_part_4_text">
+    <text>Částečně jsem vojákovi pomohl a teď může jít. Musím ho odvést na základnu.</text>
+</string>
+<string id="pb_helicopter_crash_search_part_5_name">
+    <text>Náhlé probuzení: Promluv s vojákem</text>
+</string>
+<string id="pb_helicopter_crash_search_part_5_text">
+    <text>Voják dorazil na základnu. Teď s ním mohu promluvit.</text>
+</string>
+<string id="pb_helicopter_crash_search_part_6_name">
+    <text>Náhlé probuzení: Promluvit s Lutým</text>
+</string>
+<string id="pb_helicopter_crash_search_part_6_text">
+    <text>Promluvil jsem s vojákem, nyní je třeba promluvit s Lutým.</text>
+</string>
+
+<!-- Quest: Find Padalshik -->
+<string id="pb_found_to_padalshik_part_1_name">
+    <text>Hledání: Najdi Padalshika</text>
+</string>
+<string id="pb_found_to_padalshik_part_1_text">
+    <text>Musím najít Padalshika. Podle Lutého zmizel před dvěma dny.</text>
+</string>
+<string id="pb_found_to_padalshik_part_2_name">
+    <text>Hledání: Prozkoumej tělo Padalshika</text>
+</string>
+<string id="pb_found_to_padalshik_part_2_text">
+    <text>Stalker, kterého jsem hledal, je mrtvý. Musím zjistit, co měl při sobě.</text>
+</string>
+<string id="pb_found_to_padalshik_part_3_name">
+    <text>Hledání: Hledat užitečné informace v PDA</text>
+</string>
+<string id="pb_found_to_padalshik_part_3_text">
+    <text>V Padalshikově batohu bylo PDA. Musím zkontrolovat poslední záznamy.</text>
+</string>
+<string id="pb_found_to_padalshik_part_4_name">
+    <text>Hledání: Projednej informace s Lutým</text>
+</string>
+<string id="pb_found_to_padalshik_part_4_text">
+    <text>Padalshik před svou smrtí provedl hodně věcí. Musím to projednat s Lutým.</text>
+</string>
+
+<!-- Quest: Talk to Dubolom -->
+<string id="pb_talk_to_dubolom_part_1_name">
+    <text>Starý známý: Promluv si s Dubolomem</text>
+</string>
+<string id="pb_talk_to_dubolom_part_1_text">
+    <text>Dubolom poslal zprávu, že se mnou chce mluvit. Musím za ním jít a zjistit, co potřebuje.</text>
+</string>
+
+<!-- Quest: Night Hunting -->
+<string id="pb_night_hunting_part_1_name">
+    <text>Noční lov: Počkej na noc</text>
+</string>
+<string id="pb_night_hunting_part_1_text">
+    <text>Chiméra přichází do bunkru pouze v noci, takže musím počkat do noci, než začnu lovit.</text>
+</string>
+<string id="pb_night_hunting_part_2_name">
+    <text>Noční lov: Promluv si s Dubolomem</text>
+</string>
+<string id="pb_night_hunting_part_2_text">
+    <text>Nyní je noc, mohu promluvit s Dubolomem.</text>
+</string>
+<string id="pb_night_hunting_part_3_name">
+    <text>Noční lov: Následuj Duboloma</text>
+</string>
+<string id="pb_night_hunting_part_3_text">
+    <text>Musím následovat Duboloma.</text>
+</string>
+<string id="pb_night_hunting_part_4_name">
+    <text>Noční lov: Zabíj Chiméru</text>
+</string>
+<string id="pb_night_hunting_part_4_text">
+    <text>Musím zabít Chiméru v bunkru.</text>
+</string>
+<string id="pb_night_hunting_part_5_name">
+    <text>Noční lov: Následuj Duboloma zpět na základnu</text>
+</string>
+<string id="pb_night_hunting_part_5_text">
+    <text>Chiméra je mrtvá, nyní můžeme jít zpět na základnu.</text>
+</string>
+<string id="pb_night_hunting_part_6_name">
+    <text>Noční lov: Promluv si s Dubolomem</text>
+</string>
+<string id="pb_night_hunting_part_6_text">
+    <text>Jsme zpět na základně, nyní musím mluvit s Dubolomem.</text>
+</string>
+
+
+<!-- Quest: Talk to Markus (about the Cartridge) -->
+<string id="pb_first_talk_to_markus_part_1_name">
+<text>Pevné pouto: Promluv si s Markusem</text>
+</string>
+<string id="pb_first_talk_to_markus_part_1_text">
+<text>Dubolom mi řekl, že Markus chce se mnou mluvit o něčem ohledně střeliva. Musím jít k němu a zjistit, co potřebuje.</text>
+</string>
+
+<!-- Quest: In Search of the Cartridge -->
+<string id="pb_found_to_shell_part_1_name">
+<text>Řetěz událostí: Vyhledej Střelu</text>
+</string>
+<string id="pb_found_to_shell_part_1_text">
+<text>Markus mě požádal, abych našel Střelu, která byla vedoucím skupiny před Lutým. Již dlouho je nezvěstný, ale stále existuje malá naděje, že je naživu, protože měl dost dobré vybavení.</text>
+</string>
+<string id="pb_found_to_shell_part_2_name">
+<text>Řetěz událostí: Zabíj Střelu</text>
+</string>
+<string id="pb_found_to_shell_part_2_text">
+<text>Pláč v podzemí ustal, a na opačném konci podzemí se objevil Střela, ale je zombifikován. Musím ho zabít, než zabije mě.</text>
+</string>
+<string id="pb_found_to_shell_part_3_name">
+<text>Řetěz událostí: Prohledej tělo Střely</text>
+</string>
+<string id="pb_found_to_shell_part_3_text">
+<text>Střela je mrtvý, je čas prohledat jeho batoh.</text>
+</string>
+<string id="pb_found_to_shell_part_4_name">
+<text>Řetěz událostí: Vrať se zpět k Markusovi</text>
+</string>
+<string id="pb_found_to_shell_part_4_text">
+<text>Po tom, co jsem v podzemí vzal Střelinu přívěsek, probudil jsem se v suterénu. Ale to, co se stalo, nemůže být snem, protože přívěsek mám stále u sebe. A ten stařík to potvrdil - není to sen. Zatím je nejlépe to nikomu neříkat, ani o něm, ani o tom, co se stalo v podzemí.</text>
+</string>
+
+<!-- Quest: Dangerous Hunt -->
+<string id="pb_kill_to_squad_flash_part_1_name">
+<text>Nebezpečná honba: Promluv si se Zmijí</text>
+</string>
+<string id="pb_kill_to_squad_flash_part_1_text">
+<text>Markus řekl, abych před honbou promluvil se Zmijí.</text>
+</string>
+<string id="pb_kill_to_squad_flash_part_2_name">
+<text>Nebezpečná honba: Zabíj Ploteje</text>
+</string>
+<string id="pb_kill_to_squad_flash_part_2_text">
+<text>Zabíj Ploteje na určeném místě.</text>
+</string>
+<string id="pb_kill_to_squad_flash_part_3_name">
+<text>Nebezpečná honba: Vrať se na základnu a promluvit s Markusem</text>
+</string>
+<string id="pb_kill_to_squad_flash_part_3_text">
+<text>Je potřeba se vrátit na základnu a promluvit s Markusem.</text>
+</string>
+
+<!-- Quest: Talk to Markus -->
+<string id="pb_talk_to_markus_part_1_name">
+<text>Promluv si s Markusem</text>
+</string>
+<string id="pb_talk_to_markus_part_1_text">
+<text>Markus mi napsal, že chce mluvit. Musím za ním zajít.</text>
+</string>
+
+<!-- Quest: Missing Without a Trace -->
+<string id="pb_found_to_markus_part_1_name">
+<text>Nezvěstný: Zeptej se na Markuse u Lutého</text>
+</string>
+<string id="pb_found_to_markus_part_1_text">
+<text>Markus se stále nevrátil na základnu. Musím se zeptat u Lutého, kam odešel.</text>
+</string>
+<string id="pb_found_to_markus_part_2_name">
+<text>Nezvěstný: Počkej, až Lutý najde signál</text>
+</string>
+<string id="pb_found_to_markus_part_2_text">
+<text>Musím počkat, až Lutý najde signál.</text>
+</string>
+<string id="pb_found_to_markus_part_3_name">
+<text>Nezvěstný: Promluv si s Lutým</text>
+</string>
+<string id="pb_found_to_markus_part_3_text">
+<text>Musím si promluvit s Lutým.</text>
+</string>
+<string id="pb_found_to_markus_part_4_name">
+<text>Nezvěstný: Najdi Markuse</text>
+</string>
+<string id="pb_found_to_markus_part_4_text">
+<text>Musím najít Markuse.</text>
+</string>
+<string id="pb_found_to_markus_part_5_name">
+<text>Nezvěstný: Zjisti od Markuse, co se stalo</text>
+</string>
+<string id="pb_found_to_markus_part_5_text">
+<text>Musím zjistit od Markuse, co se stalo.</text>
+</string>
+
+
+<!-- Quest: On the Trail -->
+<string id="pb_go_to_signal_part_1_name">
+<text>Na stopě: Zkontroluj oblast poslední aktivity Markusova PDA</text>
+</string>
+<string id="pb_go_to_signal_part_1_text">
+<text>Musím zkontrolovat oblast poslední aktivity Markusova PDA.</text>
+</string>
+
+<!-- Quest: Heart-to-Heart Talk -->
+<string id="pb_merc_leader_talk_part_1_name">
+<text>Duševní rozhovor: Promluv si s Tesákem</text>
+</string>
+<string id="pb_merc_leader_talk_part_1_text">
+<text>Tesák a jeho skupina jsou v bublině, musím zjistit, co zde dělají.</text>
+</string>
+
+<!-- Quest: Old Grudges -->
+<string id="pb_markus_alive_quest_part_1_name">
+<text>Staré záštity: Promluv si s Markusem</text>
+</string>
+<string id="pb_markus_alive_quest_part_1_text">
+<text>Musím si promluvit s Markusem.</text>
+</string>
+<string id="pb_markus_alive_quest_part_2_name">
+<text>Staré záštity: Následovat Markuse</text>
+</string>
+<string id="pb_markus_alive_quest_part_2_text">
+<text>Markus má plán na osvobození Lutého a ostatních z zajetí žoldáků.</text>
+</string>
+<string id="pb_markus_alive_quest_part_3_name">
+<text>Staré záštity: Promluv si s Markusem</text>
+</string>
+<string id="pb_markus_alive_quest_part_3_text">
+<text>Zdá se, že jsme na místě, musím promluvit s Markusem.</text>
+</string>
+<string id="pb_markus_alive_quest_part_4_name">
+<text>Staré záštity: Vzít výzbroj a vrátit se k Markuse</text>
+</string>
+<string id="pb_markus_alive_quest_part_4_text">
+<text>Markus našel klíč od dispečinku, teď máme munici. Musím doplnit své zásoby a vrátit se zpět k Markusovi.</text>
+</string>
+<string id="pb_markus_alive_quest_part_5_name">
+<text>Staré záštity: Vypnout elektřinu na základně</text>
+</string>
+<string id="pb_markus_alive_quest_part_5_text">
+<text>Musím vypnout elektřinu na základně, to nám pomůže neočekávaně zaútočit na žoldáky. Je důležité, aby mě nikdo nezpozoroval, jinak se nám nepodaří překvapit.</text>
+</string>
+<string id="pb_markus_alive_quest_part_6_name">
+<text>Staré záštity: Zabít žoldáky</text>
+</string>
+<string id="pb_markus_alive_quest_part_6_text">
+<text>Musím zabít žoldáky na základně.</text>
+</string>
+<string id="pb_markus_alive_quest_part_7_name">
+<text>Staré záštity: Promluv si se Šroubem</text>
+</string>
+<string id="pb_markus_alive_quest_part_7_text">
+<text>Žoldáci jsou mrtví, teď můžeme začít osvobozovat zajatce.</text>
+</string>
+<string id="pb_markus_alive_quest_part_8_name">
+<text>Staré záštity: Pomoci Markusovi</text>
+</string>
+<string id="pb_markus_alive_quest_part_8_text">
+<text>Osvobodil jsem Šrouba, teď můžeme pomoci Markusovi osvobodit ostatní.</text>
+</string>
+<string id="pb_markus_alive_quest_part_9_name">
+<text>Staré záštity: Promluv si s Lutým</text>
+</string>
+<string id="pb_markus_alive_quest_part_9_text">
+<text>Markus napsal, že se jim podařilo uniknout z zajetí žoldáků, a Tesák s jeho skupinou utekli. Musím s Lutým promluvit ohledně toho.</text>
+</string>
+
+
+<!-- Quest: The Underground Mystery -->
+<string id="pb_turn_on_transformator_part_1_name">
+<text>Tajemství podzemí: Promluv si se Šroubem</text>
+</string>
+<string id="pb_turn_on_transformator_part_1_text">
+<text>Musím zapnout světlo v bunkru, k tomu je potřeba znovu spustit transformátor v podzemí, ale dveře, které tam vedou, jsou zavřené. Lutý řekl, abych o tom promluvil s Šroubem, pomůže mi je otevřít.</text>
+</string>
+<string id="pb_turn_on_transformator_part_2_name">
+<text>Tajemství podzemí: Následovat Šrouba</text>
+</string>
+<string id="pb_turn_on_transformator_part_2_text">
+<text>Musím následovat Šrouba.</text>
+</string>
+<string id="pb_turn_on_transformator_part_3_name">
+<text>Tajemství podzemí: Počkat, až Šroub odemkne zámek</text>
+</string>
+<string id="pb_turn_on_transformator_part_3_text">
+<text>Musím počkat, až Šroub odemkne zámek.</text>
+</string>
+<string id="pb_turn_on_transformator_part_4_name">
+<text>Tajemství podzemí: Sestoupit do podzemí</text>
+</string>
+<string id="pb_turn_on_transformator_part_4_text">
+<text>Dveře jsou otevřené, teď mohu sestoupit do podzemí a restartovat transformátor.</text>
+</string>
+<string id="pb_turn_on_transformator_part_5_name">
+<text>Tajemství podzemí: Promluv si s generálem Tačenkem</text>
+</string>
+<string id="pb_turn_on_transformator_part_5_text">
+<text>V podzemí jsem narazil na skupinu Dologvců, musím jednat s jejich vůdcem.</text>
+</string>
+<string id="pb_turn_on_transformator_part_6_name">
+<text>Tajemství podzemí: Restartovat transformátor</text>
+</string>
+<string id="pb_turn_on_transformator_part_6_text">
+<text>Nyní musím restartovat transformátor, abych obnovil dodávku elektřiny do bunkru.</text>
+</string>
+<string id="pb_turn_on_transformator_part_7_name">
+<text>Tajemství podzemí: Vrátit se k Lutému</text>
+</string>
+<string id="pb_turn_on_transformator_part_7_text">
+<text>Hotovo, restartoval jsem transformátor, mohu se vrátit zpět k Lutému.</text>
+</string>
+
+<!-- Quest: Survival Challenges -->
+<string id="pb_epidemy_on_base_part_1_name">
+<text>Nástrahy přežití: Vrátit se na základnu a promluvit s Lutým</text>
+</string>
+<string id="pb_epidemy_on_base_part_1_text">
+<text>Podařilo se mi najít nějaké léky, které pomohou zmírnit příznaky nemoci u nakažených. Ale léků je velmi málo, stojí za to o všem vyprávět Lutému.</text>
+</string>
+<string id="pb_epidemy_on_base_part_2_name">
+<text>Nástrahy přežití: Odevzdat léky nakaženým</text>
+</string>
+<string id="pb_epidemy_on_base_part_2_text">
+<text>Mám dvě ampule léku, který pomůže zmírnit příznaky nemoci. Teď musím vybrat ty, kteří tyto ampule obdrží, protože nakažených je tři a na všechny ampule nestačí.</text>
+</string>
+<string id="pb_epidemy_on_base_part_3_name">
+<text>Nástrahy přežití: Přebrat s Lutým</text>
+</string>
+<string id="pb_epidemy_on_base_part_3_text">
+<text>Nepodařilo se mi najít další léky, je třeba o tom informovat Lutého.</text>
+</string>
+
+
+<!-- Quest: Unknown Signal -->
+<string id="pb_enemy_signal_found_part_1_name">
+<text>Neznámý signál: Identifikovat zdroj signálu</text>
+</string>
+<string id="pb_enemy_signal_found_part_1_text">
+<text>Marcus napsal, že zachytil signál nedaleko od stodoly, je třeba toto místo zkontrolovat.</text>
+</string>
+<string id="pb_enemy_signal_found_part_2_name">
+<text>Neznámý signál: Promluvit s neznámým</text>
+</string>
+<string id="pb_enemy_signal_found_part_2_text">
+<text>Na uvedeném místě jsem potkal starce, je třeba s ním promluvit.</text>
+</string>
+<string id="pb_enemy_signal_found_part_3_name">
+<text>Neznámý signál: Doprovodit Lesníka do tábora</text>
+</string>
+<string id="pb_enemy_signal_found_part_3_text">
+<text>Starý se nazývá Lesník a řekl, že nás může vyvést z anomálie. Požádal mě, abych mu ukázal cestu k táboru, aby mohl mluvit s skupinou.</text>
+</string>
+<string id="pb_enemy_signal_found_part_4_name">
+<text>Neznámý signál: Promluvit s Lutým</text>
+</string>
+<string id="pb_enemy_signal_found_part_4_text">
+<text>Dovezl jsem Lesníka k táboru, je třeba o tom říct Lutému.</text>
+</string>
+
+<!-- Quest: Weak Signal -->
+<string id="pb_finality_signal_founded_part_1_name">
+<text>Slabý signál: Zkontrolovat uvedené místo</text>
+</string>
+<string id="pb_finality_signal_founded_part_1_text">
+<text>Lutý řekl, že zachytili další signál, je třeba zjistit, co je jeho zdrojem.</text>
+</string>
+<string id="pb_finality_signal_founded_part_2_name">
+<text>Slabý signál: Promluvit s stalkrem</text>
+</string>
+<string id="pb_finality_signal_founded_part_2_text">
+<text>Je třeba mluvit s neznámým.</text>
+</string>
+
+<!-- Quest: The Last Message -->
+<string id="pb_duty_tachenko_final_quest_meet_part_1_name">
+<text>Poslední vzkaz: Promluv si s generálem Tačenkem</text>
+</string>
+<string id="pb_duty_tachenko_final_quest_meet_part_1_text">
+<text>Generál Tačenko poslal zprávu, že chce se mnou mluvit.</text>
+</string>
+<string id="pb_duty_tachenko_final_quest_meet_part_2_name">
+<text>Poslední vzkaz: Zkusit znovu přistoupit k generálovi</text>
+</string>
+<string id="pb_duty_tachenko_final_quest_meet_part_2_text">
+<text>Nemohu se přiblížit k Tačenkovi, teleportoval mě zpět, je třeba to znovu zkusit.</text>
+</string>
+<string id="pb_duty_tachenko_final_quest_meet_part_3_name">
+<text>Poslední vzkaz: Opustit podzemí</text>
+</string>
+<string id="pb_duty_tachenko_final_quest_meet_part_3_text">
+<text>Skupina generála Tačenka je mrtvá a i jeho smrt je blízko. Požádal mě, abych opustil podzemí, je třeba to udělat.</text>
+</string>
+
+<!-- Quest: To Freedom -->
+<string id="pb_go_to_lesnik_scene_part_1_name">
+<text>Na svobodu: Promluv si s Lesníkem</text>
+</string>
+<string id="pb_go_to_lesnik_scene_part_1_text">
+<text>Lesník poslal zprávu, že mě čeká nedaleko od bunkru, je třeba se s ním setkat a promluvit.</text>
+</string>
+<string id="pb_go_to_lesnik_scene_part_2_name">
+<text>Na svobodu: Sledovat Lesníka</text>
+</string>
+<string id="pb_go_to_lesnik_scene_part_2_text">
+<text>Je třeba následovat Lesníka, abychom vyšli z anomálie.</text>
+</string>
+
+<!-- Secondary Quests -->
+
+<!-- Quest: Kill the Controller -->
+<string id="pb_kill_to_controller_part_1_name">
+<text>Zabít kontrolora</text>
+</string>
+<string id="pb_kill_to_controller_part_1_text">
+<text>Na základnu se dostal kontrolor, je třeba ho zničit.</text>
+</string>
+<string id="pb_kill_to_controller_part_2_name">
+<text>Promluv si s Lutým</text>
+</string>
+<string id="pb_kill_to_controller_part_2_text">
+<text>Je třeba projednat situaci s Lutým.</text>
+</string>
+
+<!-- Quest: Search for Ammo -->
+<string id="pb_find_ammo_7_62_part_1_name">
+<text>Náboje pro Moskita: Najít balení nábojů 7.62x54</text>
+</string>
+<string id="pb_find_ammo_7_62_part_1_text">
+<text>Je třeba najít balení nábojů 7.62x54 a přinést je Moskitovi.</text>
+</string>
+<string id="pb_find_ammo_7_62_part_2_name">
+<text>Náboje pro Moskita: Najít další 3 balení nábojů 7.62x54</text>
+</string>
+<string id="pb_find_ammo_7_62_part_2_text">
+<text>Je třeba najít další 3 balení nábojů 7.62x54.</text>
+</string>
+<string id="pb_find_ammo_7_62_part_3_name">
+<text>Náboje pro Moskita: Najít další 2 balení nábojů 7.62x54</text>
+</string>
+<string id="pb_find_ammo_7_62_part_3_text">
+<text>Je třeba najít další 2 balení nábojů 7.62x54.</text>
+</string>
+<string id="pb_find_ammo_7_62_part_4_name">
+<text>Náboje pro Moskita: Najít další 1 balení nábojů 7.62x54</text>
+</string>
+<string id="pb_find_ammo_7_62_part_4_text">
+<text>Je třeba najít další 1 balení nábojů 7.62x54.</text>
+</string>
+<string id="pb_find_ammo_7_62_part_5_name">
+<text>Náboje pro Moskita: Předat náboje Moskitovi</text>
+</string>
+<string id="pb_find_ammo_7_62_part_5_text">
+<text>Nalezl jsem potřebné náboje pro Moskita, je třeba je nyní předat.</text>
+</string>
+
+
+<!-- Quest: Vést Murada k základně -->
+<string id="pb_murad_go_to_base_part_1_name">
+  <text>SOS signál: Odpovědět na výzvu o pomoc</text>
+</string>
+<string id="pb_murad_go_to_base_part_1_text">
+  <text>Neznámý stalker žádá o pomoc, je třeba mu co nejdříve pomoci.</text>
+</string>
+<string id="pb_murad_go_to_base_part_2_name">
+  <text>SOS signál: Doprovodit Murada k základně</text>
+</string>
+<string id="pb_murad_go_to_base_part_2_text">
+  <text>Je nutné doprovodit Murada k základně.</text>
+</string>
+<string id="pb_murad_go_to_base_part_3_name">
+  <text>SOS signál: Informovat Lutého o stalkerovi</text>
+</string>
+<string id="pb_murad_go_to_base_part_3_text">
+  <text>Doprovodil jsem Murada k základně, nyní je třeba o tom informovat Lutého.</text>
+</string>
+<string id="pb_murad_go_to_base_part_4_name">
+  <text>SOS signál: Promluv si s Muradem</text>
+</string>
+<string id="pb_murad_go_to_base_part_4_text">
+  <text>Je třeba si promluvit s Muradem.</text>
+</string>
+
+<!-- Quest: Najít úkryt Padalshika -->
+<string id="pb_find_habar_padalshik_part_1_name">
+  <text>Habar Padalshika: Najít úkryt</text>
+</string>
+<string id="pb_find_habar_padalshik_part_1_text">
+  <text>Padalshik shromažďoval věci z mrtvol a ukrýval je v úkrytu, je třeba najít tento úkryt.</text>
+</string>
+<string id="pb_find_habar_padalshik_part_2_name">
+  <text>Habar Padalshika: Informovat Lutého o nalezeném úkrytu</text>
+</string>
+<string id="pb_find_habar_padalshik_part_2_text">
+  <text>Padalshikův úkryt je zakódován, je třeba se zeptat Lutého, kdo je schopen dekódovat úkryt.</text>
+</string>
+<string id="pb_find_habar_padalshik_part_3_name">
+  <text>Habar Padalshika: Počkat na otevření kontejneru-úkrytu</text>
+</string>
+<string id="pb_find_habar_padalshik_part_3_text">
+  <text>Lutý řekl, že předá úkryt, který jsem našel, Shurupovi, ten zkusí úkryt otevřít.</text>
+</string>
+<string id="pb_find_habar_padalshik_part_4_name">
+  <text>Habar Padalshika: Promluv si s Shurupem o kontejneru-úkrytu</text>
+</string>
+<string id="pb_find_habar_padalshik_part_4_text">
+  <text>Shurup napsal, že se mu podařilo otevřít kontejner-úkryt, je třeba s ním o tom promluvit.</text>
+</string>
+
+<!-- Quest: Naléhavé spojení -->
+<string id="pb_find_razya_to_rezak_part_1_name">
+  <text>Naléhavé spojení: Najít dva kusy drátu a akumulátor</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_1_text">
+  <text>Voják řekl, že rádiový vysílač, který ležel v suterénu, lze opravit. K tomu je potřeba akumulátor a dva kusy měděného drátu. Pokud se podaří zapnout rádiový vysílač, bude možné zkusit poslat žádost o pomoc za anomálii.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_2_name">
+  <text>Naléhavé spojení: Odevzdat měděný drát vojákovi</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_2_text">
+  <text>Nalezl jsem dva kusy měděného drátu, je třeba je odevzdat vojákovi.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_3_name">
+  <text>Naléhavé spojení: Zkusit sehnat akumulátor</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_3_text">
+  <text>Nalezl jsem dva kusy měděného drátu a odevzdal je vojákovi, nyní stojí za to zkusit sehnat akumulátor.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_4_name">
+  <text>Naléhavé spojení: Odevzdat akumulátor vojákovi</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_4_text">
+  <text>Podařilo se mi sehnat akumulátor, nyní je třeba ho odevzdat vojákovi.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_5_name">
+  <text>Naléhavé spojení: Odevzdat akumulátor a drát vojákovi</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_5_text">
+  <text>Podařilo se mi sehnat akumulátor a měděný drát, nyní je třeba odevzdat vše vojákovi.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_6_name">
+  <text>Naléhavé spojení: Počkat, než voják opraví vysílač</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_6_text">
+  <text>Podařilo se mi sehnat akumulátor a měděný drát, nyní stojí za to počkat, než voják opraví rádiový vysílač.</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_7_name">
+  <text>Naléhavé spojení: Navštívit vojáka</text>
+</string>
+<string id="pb_find_razya_to_rezak_part_7_text">
+  <text>Myslím si, že voják už mohl opravit rádiový vysílač, je čas k němu zajít.</text>
+</string>
+
+
+<!-- Quest: Noční můra -->
+<string id="pb_podzemka_search_part_1_name">
+  <text>Noční můra: Prozkoumat podzemí</text>
+</string>
+<string id="pb_podzemka_search_part_1_text">
+  <text>V jednom z sklepů jsem narazil na nepochopitelnou entitu, která mi řekla, abych vypil láhev vodky stojící na stole. Udělal jsem to a nyní nevím, kde jsem se ocitl. Je třeba prozkoumat toto místo.</text>
+</string>
+
+<!-- Quest: Důležitý rozhovor -->
+<string id="pb_duty_tachenko_meet_part_1_name">
+  <text>Důležitý rozhovor: Promluv si s generálem Tačenkem</text>
+</string>
+<string id="pb_duty_tachenko_meet_part_1_text">
+  <text>Tačenko napsal, že má pro mě důležitý rozhovor, a požádal mě, abych u něj zavítal.</text>
+</string>
+
+<!-- Quest: Potřeba potravin -->
+<string id="pb_find_food_for_duty_part_1_name">
+  <text>Potřeba potravin: Najít osm kusů potravin pro Tačenka</text>
+</string>
+<string id="pb_find_food_for_duty_part_1_text">
+  <text>Tačenko mě požádal, abych pro jeho skupinu našel jídlo. Musím mu s tím pomoci.</text>
+</string>
+<string id="pb_find_food_for_duty_part_2_name">
+  <text>Potřeba potravin: Odevzdat jídlo Tačenkovi</text>
+</string>
+<string id="pb_find_food_for_duty_part_2_text">
+  <text>Jídlo mám, nyní je třeba ho odnést Tačenkovi.</text>
+</string>
+
+<!-- Quest: Ztracená zbraň -->
+<string id="pb_found_duty_weapon_part_1_name">
+  <text>Ztracený automat: Promluv si s Bunčukem</text>
+</string>
+<string id="pb_found_duty_weapon_part_1_text">
+  <text>Tačenko řekl, že Bunčuk ztratil svůj automat a požádal mě, abych mu pomohl ho najít. Musím se zeptat Bunčuka, kde přesně ztratil svou zbraň.</text>
+</string>
+<string id="pb_found_duty_weapon_part_2_name">
+  <text>Ztracený automat: Najít Bunčukův automat</text>
+</string>
+<string id="pb_found_duty_weapon_part_2_text">
+  <text>Bunčuk požádal, abych mu přinesl jeho automat, ztratil ho při útěku před krvavým vampýrem. Poskytl mi přesné umístění zbraně, je třeba ji vzít.</text>
+</string>
+<string id="pb_found_duty_weapon_part_3_name">
+  <text>Ztracený automat: Odevzdat Bunčukův automat</text>
+</string>
+<string id="pb_found_duty_weapon_part_3_text">
+  <text>Abakan od Bunčuka mám, mohu se vrátit zpět.</text>
+</string>
+
+
+<!-- Quest: Přání před smrtí -->
+<string id="pb_found_lisiy_and_give_art_part_1_name">
+  <text>Přání před smrtí: Najít stalker Lýsého a sdělit mu osud Ryabého</text>
+</string>
+<string id="pb_found_lisiy_and_give_art_part_1_text">
+  <text>Před svou smrtí Ryabý požádal, abych předal artefakt, který mi dal, nějakému stalkerovi s přezdívkou Lýsý. Musím splnit jeho poslední přání, i když si artefakt mohu ponechat pro sebe.</text>
+</string>
+<string id="pb_found_lisiy_and_give_art_part_2_name">
+  <text>Přání před smrtí: Promluv si s Lýsým o osudu Ryabého</text>
+</string>
+<string id="pb_found_lisiy_and_give_art_part_2_text">
+  <text>Lýsý se nachází na Předsunuté základně, vysledoval jsem signál jeho PDA. Musím s ním promluvit o tom, co se stalo ve vesmírné bublině.</text>
+</string>
+
+<!-- Quest: Principy přežití -->
+<string id="pb_find_meat_boar_food_part_1_name">
+  <text>Principy přežití: Získat a uvařit kus masa pro Duboloma</text>
+</string>
+<string id="pb_find_meat_boar_food_part_1_text">
+  <text>S normálním jídlem máme právě teď problémy, je toho pro všechny katastrofálně málo. Myslím, že je nejvyšší čas přejít na jinou stravu. Dubolom navrhl začít právě teď a požádal mě, abych opekl kus divočiny, i pro něj.</text>
+</string>
+<string id="pb_find_meat_boar_food_part_2_name">
+  <text>Principy přežití: Odevzdat maso Dubolomovi</text>
+</string>
+<string id="pb_find_meat_boar_food_part_2_text">
+  <text>Maso je hotové, nyní ho mohu odevzdat Dubolomovi.</text>
+</string>
+<string id="pb_find_meat_boar_food_part_3_name">
+  <text>Principy přežití: Promluv si s Dubolomem</text>
+</string>
+<string id="pb_find_meat_boar_food_part_3_text">
+  <text>Došla mi zásoba potravin, Lutý řekl, abych s Dubolomem promluvil o tomto problému.</text>
+</string>
+
+<!-- Quest: Vzácný artefakt -->
+<string id="pb_find_af_vyvert_part_1_name">
+  <text>Vzácný artefakt: Najdi artefakt "Vývrtka" pro Markuse</text>
+</string>
+<string id="pb_find_af_vyvert_part_1_text">
+  <text>Markus požádal, abych pro něj našel artefakt "Vývrtka" a předpokládá, že takový artefakt lze najít ve shlucích gravitačních anomálií.</text>
+</string>
+<string id="pb_find_af_vyvert_part_2_name">
+  <text>Vzácný artefakt: Odevzdej artefakt "Vývrtka" Markusovi</text>
+</string>
+<string id="pb_find_af_vyvert_part_2_text">
+  <text>Nalezl jsem "Vývrtku", nyní ho mohu odevzdat Markusovi.</text>
+</string>
+
+<!-- Quest: Palivo pro generátor -->
+<string id="pb_find_kanistra_for_kuvalda_part_1_name">
+  <text>Palivo pro generátor: Najdi palivo a odevzdej ho Kladivovi</text>
+</string>
+<string id="pb_find_kanistra_for_kuvalda_part_1_text">
+  <text>Kuvalda informoval, že se zbývající zásoby paliva v naftovém generátoru rychle vyčerpávají. Bez generátoru nemáme světlo, požádal mě, abych prozkoumal okolí a pokusil se sehnat trochu paliva pro generátor. Musím to udělat.</text>
+</string>
+<string id="pb_find_kanistra_for_kuvalda_part_2_name">
+  <text>Palivo pro generátor: Odevzdej kanystr s palivem Kladivovi</text>
+</string>
+<string id="pb_find_kanistra_for_kuvalda_part_2_text">
+  <text>Podařilo se mi najít kanystr s palivem pro generátor, nyní ho mohu odevzdat Kladivovi.</text>
+</string>
+<string id="pb_find_kanistra_for_kuvalda_part_3_name">
+  <text>Palivo pro generátor: Odevzdej kanystr s palivem</text>
+</string>
+<string id="pb_find_kanistra_for_kuvalda_part_3_text">
+  <text>Musím odevzdat kanystr s palivem.</text>
+</string>
+
+<!-- Quest: Anomální rostlina -->
+<string id="pb_snake_anomy_plant_part_1_name">
+  <text>Anomální rostlina: Promluv si se Zmijem</text>
+</string>
+<string id="pb_snake_anomy_plant_part_1_text">
+  <text>Dubolom řekl, že mě Zmij hledal. Je třeba s ním promluvit a zjistit, co chtěl.</text>
+</string>
+<string id="pb_snake_anomy_plant_part_2_name">
+  <text>Anomální rostlina: Krytí pro Zmije</text>
+</string>
+<string id="pb_snake_anomy_plant_part_2_text">
+  <text>Zmij má málo nábojů, je třeba ho krytím, zatímco se snaží najít anomální rostliny.</text>
+</string>
+<string id="pb_snake_anomy_plant_part_3_name">
+  <text>Anomální rostlina: Promluv si se Zmijem</text>
+</string>
+<string id="pb_snake_anomy_plant_part_3_text">
+  <text>Vrátili jsme se na základnu, stojí za to promluvit se Zmijem.</text>
+</string>
+
+<!-- Quest: Dokončené záležitosti -->
+<string id="pb_talk_to_lutiy_come_part_1_name">
+  <text>Dokončené záležitosti: Promluv si s Lutým</text>
+</string>
+<string id="pb_talk_to_lutiy_come_part_1_text">
+  <text>Lutý řekl, abych u něj přišel poté, co vyřeším své záležitosti týkající se hledání potravin a pitné vody.</text>
+</string>
+
+<!-- Quest: Prozkoumat místo, kde mě našli -->
+<string id="pb_actor_inventory_1_name">
+  <text>Prozkoumat místo, kde mě našli</text>
+</string>
+<string id="pb_actor_inventory_1_text">
+  <text>Je třeba prozkoumat místo, kde mě našli. Možná tam zbylo něco z mé výbavy.</text>
+</string>
+
+
+
+
+</string_table>

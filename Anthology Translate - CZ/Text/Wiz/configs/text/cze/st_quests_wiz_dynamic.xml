@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<!-- foma -->
+	<string id="wiz_foma_task_1_name">
+    <text>Obchodní nabídka</text>
+</string>
+<string id="wiz_foma_task_1_text">
+    <text>Fomovi chybí artefakt %s. To je tak, bez zbytečných slov a otázek. Opravdový obchodník!</text>
+</string>
+<string id="wiz_foma_task_1_about">
+    <text>Mě zajímají artefakty. Učiníme takto: já ti dám tip na určitý artefakt, a ty ho přineseš a dostaneš odměnu. Obě strany spokojeny. Co říkáš?</text>
+</string>
+<string id="wiz_foma_task_1_fetch_about">
+    <text>Mé klienty zajímají artefakty. Často jsou to prostě „světlé myšlenky“, které neměly štěstí na spojení, kterými disponují oficiální vědecké subjekty v Zóně. Takže učiníme takto: já ti dám tip na určitý artefakt, a ty ho přineseš a dostaneš odměnu. Obě strany spokojeny. Takže potřebuji artefakt %s. Budu ho zde očekávat spolu s tvou odměnou.</text>
+</string>
+<string id="wiz_foma_task_1_fetch_finish">
+    <text>Skvělá práce, kamaráde. Tady jsou tvé bonusy.</text>
+</string>
+
+<string id="wiz_foma_task_2_name">
+    <text>Špinavá práce</text>
+</string>
+<string id="wiz_foma_task_2_text">
+    <text>Foma hodil do hry špinavou práci - je potřeba najít a odstranit jednoho stalker, který někomu tam připravil starosti. Veškeré potřebné informace poskytl Foma na PDA. Je čas dát se do práce. To chudákovi však nevyšlo...</text>
+</string>
+<string id="wiz_foma_task_2_about">
+    <text>Někdy se stalkerové ke mně obrací, když někdo někomu překazil plány nebo mu velmi zavařil, a já zase hledám dobrovolníky, kteří by pomohli v této jejich těžké úloze, aby konkrétní jednotlivci neměli potom problémy. Řekněme, že jsem prostředník.
+V současné době mám v procesu několik cílů na likvidaci. Obvykle to je nějaký stalker, který zradil nebo si objednal své přátele, ale někdy jsou to také čistě objednané vraždy členů jiných skupin. Práce je špinavá, ale někdo ji musí dělat, zejména pokud se toho odměna vyplatí, viď? Tak co, dáváš se? Potřebné informace ti pošlu na PDA.</text>
+</string>
+<string id="wiz_foma_task_2_finish">
+    <text>Díky, stalkeru. Tady jsou tvé peníze, jen se nezakládej na vraždách. Konkurenti najímaných vrahů nejsou žádní potěšení. He-he...</text>
+</string>
+
+	<string id="wiz_foma_task_3_name">
+	<text>Pseudoštěnice a pseudomyši</text>
+</string>
+<string id="wiz_foma_task_3_text">
+	<text>Mezi stalkerů existuje takový vtip: "Stalker zasadil pseudořepku. Vyrostla pseudořepka velká-velká! Stalker vzal granátomet a šel ji získat. A všechno by se mu jistě podařilo, kdyby na něj nevyběhly pseudoštěnice a pseudomyši." Zní to vtipně, ale občas mohou být tyto brouci a myši opravdu obtížnou přítěží. Dostane to až do bodu, kdy nemůžeš udělat deset kroků z tábora - hned na tebe běží další pseudo-někdo! Právě proto Foma navrhl spojit příjemné s užitečným - vydělat peníze za vyčištění okolních území od mutantů. Je to správné, protože se tady rozšířilo všelijaké... A trofeje určitě nebudou zbytečné.</text>
+</string>
+<string id="wiz_foma_task_3_about">
+	<text>Řekni, neviděl jsi tam nějaké mutanti cestou sem? Dloužníci nedávno vyžehlili území kolem, ale nově příchozí stalkerové sdělili, že viděli nějaké psy nebo někoho jiného na vnějších hranicích tábora. Pokud si nedělají legraci, pak to zvířectvo představuje velké nebezpečí jak pro stalkery v táboře, tak pro ty, kdo sem budou teprve chodit. Navíc není vhodné hovořit ani o tom, že absence zákazníků škodí obchodu. Takže za zničení mutantů jsem ochoten slušně zaplatit, možná dokonce něco navíc. Hlavně aby po nich nezůstal žádný stopa. Sežeň přibližné souřadnice.</text>
+</string>
+<string id="wiz_foma_task_3_finish">
+	<text>Skvělá práce. A tady jsou tvé zasloužené peníze.</text>
+</string>
+
+	
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- foma (Loner Trader) New Tasks -->
+	
+	<string id="wiz_foma_task_4_name">
+	<text>Neobvyklý obchod</text>
+</string>
+<string id="wiz_foma_task_4_text">
+	<text>Jak se říká, bohatí mají své vlastní zvláštnosti. Jeden z takových klientů, jak se zdá, oslovil Fomu a požádal ho, aby našel jeden trofej - „%s“... Foma na oplátku slíbil slušné zaplacení za dopravu trofeje k němu, aby ji poté on poslal svému klientovi.</text>
+</string>
+<string id="wiz_foma_task_4_about">
+	<text>Vidíš, nejsem jen dost zaneprázdněný člověk, ale také velmi štědrý k těm, kdo chtějí pomoci mi řešit mé problémy. A právě teď mám objednávku. Zajímá tě to?</text>
+</string>
+<string id="wiz_foma_task_4_fetch_about">
+	<text>Takže jeden z mých klientů, který je také vynikající klenotník specializující se na zvířecí trofeje, chce jednu takovou - %s. Je připraven mi zaplatit slušnou sumu za dopravu. Já na oplátku zaplatím tobě za předchozí dopravu trofeje ke mně. Chápeš, o co jde, že ano? Udělej tak, aby se mutant vzdal svého majetku, a předej ho mně. Peníze ti budou vyplaceny.</text>
+</string>
+<string id="wiz_foma_task_4_fetch_finish">
+	<text>Skvěle! A tady jsou tvé zasloužené peníze.</text>
+</string>
+
+<string id="wiz_foma_task_5_name">
+	<text>Drancování úkrytů</text>
+</string>
+<string id="wiz_foma_task_5_text">
+	<text>Bylo vaše - stane se naše. Foma požádal o vykradení důležitých dokumentů a jejich předání k němu. Koordináty jejich umístění mi poslal na PDA.</text>
+</string>
+<string id="wiz_foma_task_5_about">
+	<text>Tady mi šeptli o úkrytu s velmi zajímavými dokumenty. Nemám ponětí, kdo je jejich vlastník a kde by se mohly nacházet, ale bez váhání odměním toho, kdo by byl schopen zařídit věci tak, aby tyto dokumenty zázračně objevily na tomto baru. Chápeš? Pošlu ti poslední známé souřadnice úkrytu na PDA. Pochybuji, že by to byla past, protože mě podvést - to není jako s Sidorovičem na Koridoru rušit obchody.</text>
+</string>
+<string id="wiz_foma_task_5_finish">
+	<text>To mě potěšilo. Skvělá práce, stalkeru.</text>
+</string>
+
+
+	<!-- val_a4_stalker_pianist -->
+<string id="val_a4_stalker_pianist_task_1_name">
+	<text>Najít pro Pianistu %s</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_text">
+	<text>Je potřeba přinést nástroje Pianistovi, aby mohl provádět modernizaci vybavení.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_about">
+	<text>Víš, bratře, já jsem vlastně docela zručný technik. Umím opravovat jak zbraně, tak i zbroj, a dokonce dělám i vylepšení! No, alespoň bych dělal, kdyby nástroje byly normální. Ale kde je tady seženeš? Možná bys mi mohl pomoci sehnat nějaký jednoduchý set, co?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_about">
+	<text>Potřebuji sadu nástrojů pro hrubou práci. Měl by obsahovat nástroje a oleje pro práci s zbraněmi. Pokud bys to mohl sehnat, byl bych ti vděčný, možná ti i zaplatím!.. Asi.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_finish">
+	<text>Skvěle, kámo! Omlouvám se, nemám čím zaplatit. Ale můžu ti dát pěknou slevu!</text>
+</string>
+
+<string id="val_a4_stalker_pianist_task_2_name">
+	<text>Najít pro Pianistu %s</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_text">
+	<text>Je nutné přinést Pianistovi nástroje pro jemnou práci. Potřebuje rozsáhlejší sadu, aby mohl provádět složitější modernizaci vybavení.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_about">
+	<text>Ej, kámo, pokud se rozhodneš mi sehnat větší sadu, dostaneš ještě větší slevu. Pomůžeš, kámo?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_about">
+	<text>Potřebuji nástroje pro jemnou práci. Měly by být všechny potřebné nástroje. Budeš mi kámo, když to sežeeneš!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_finish">
+	<text>No, kámo, díky moc! Teď už budu určitě bohatý. Čert vem, budu úspěšný!.. Pokud tedy nezmeškám i tuhle šanci. Ale momentálně ti nemůžu nabídnout nic lepšího než slevu. Omlouvám se, kámo.</text>
+</string>
+
+<string id="val_a4_stalker_pianist_task_3_name">
+	<text>Najít pro Pianistu %s</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_text">
+	<text>Je nutné přinést Pianistovi %s. Potřebuje unikátní sadu, aby mohl provádět ještě složitější modernizaci vybavení.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_about">
+	<text>Ej, kámo, pokud najdeš něco hodnotného, dostaneš ode mě slevu!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_fetch_about">
+	<text>Potřebuji nástroje pro kalibraci. Všechno, co potřebuji, by mělo být v té sadě. Budeš mi kámo, když to sežeeneš!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_fetch_finish">
+	<text>No nejsem…! Kámo, díky moc! Teď už budu určitě bohatý. Čert vem, budu úspěšný!.. Pokud tedy nezmeškám i tuhle šanci. Ale momentálně ti nemůžu nabídnout nic lepšího než slevu. Omlouvám se, kámo.</text>
+</string>
+
+	<!-- wiz_chip -->
+<string id="wiz_chip_task_1_name">
+	<text>%s pro Chipa</text>
+</string>
+<string id="wiz_chip_task_1_text">
+	<text>Je potřeba najít sadu a odnést ji lékaři Chipovi.</text>
+</string>
+<string id="wiz_chip_task_1_about">
+	<text>Potřebuji dobrý soubor lékařských nástrojů. Lehká zranění rychle opravím, ale na něco vážnějšího než jen obyčejný skalpel už nestačí.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_about">
+	<text>Potřebuji dobrý soubor lékařských nástrojů. Lehká zranění rychle opravím, ale na něco vážnějšího než jen obyčejný skalpel už nestačí.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_finish">
+	<text>Díky, kámo! Tyhle nástroje zachrání životy mnoha lidí. Ještě jednou díky za nástroje.</text>
+</string>
+
+
+	<!-- wiz_ivanich -->
+<string id="wiz_ivanich_task_1_name">
+	<text>Najít pro Ivanyče %s</text>
+</string>
+<string id="wiz_ivanich_task_1_text">
+	<text>Je potřeba přinést nástroje Ivanyčovi, aby mohl provádět modernizaci vybavení.</text>
+</string>
+<string id="wiz_ivanich_task_1_about">
+	<text>Víš, bratře, já jsem vlastně docela zručný technik. Umím opravovat jak zbraně, tak i zbroj, a dokonce dělám i vylepšení! No, alespoň bych dělal, kdyby nástroje byly normální. Ale kde je tady seženeš? Možná bys mi mohl pomoci sehnat nějaký jednoduchý set, co?</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_about">
+	<text>Potřebuji dobrý set nástrojů pro hrubou práci. V něm by měly být nástroje a oleje pro práci s zbraněmi. Pokud bys to mohl sehnat, byl bych ti vděčný, možná ti i zaplatím!.. Asi.</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_finish">
+	<text>Skvěle, kámo! Omlouvám se, nemám čím zaplatit. Ale můžu ti dát pěknou slevu!</text>
+</string>
+
+<string id="wiz_ivanich_task_2_name">
+	<text>Najít pro Ivanyče %s</text>
+</string>
+<string id="wiz_ivanich_task_2_text">
+	<text>Je nutné přinést Ivanyčovi nástroje pro jemnou práci. Potřebuje rozsáhlejší sadu, aby mohl provádět složitější modernizaci vybavení.</text>
+</string>
+<string id="wiz_ivanich_task_2_about">
+	<text>Ej, kámo, pokud se rozhodneš mi sehnat větší sadu, dostaneš ještě větší slevu. Pomůžeš, kámo?</text>
+</string>
+<string id="wiz_ivanich_task_2_fetch_about">
+	<text>Potřebuji nástroje pro jemnou práci. Tam by mělo být všechno, co potřebuji. Budeš mi kámo, když to seženeš!</text>
+</string>
+<string id="wiz_ivanich_task_2_fetch_finish">
+	<text>No, kámo, díky moc! Teď už budu určitě bohatý. Čert vem, budu úspěšný!.. Pokud tedy nezmeškám i tuhle šanci. Ale momentálně ti nemůžu nabídnout nic lepšího než slevu. Omlouvám se, kámo.</text>
+</string>
+
+<string id="wiz_ivanich_task_3_name">
+	<text>Najít pro Ivanyče %s</text>
+</string>
+<string id="wiz_ivanich_task_3_text">
+	<text>Je nutné přinést Ivanyčovi %s. Potřebuje unikátní sadu, aby mohl provádět ještě složitější modernizaci vybavení.</text>
+</string>
+<string id="wiz_ivanich_task_3_about">
+	<text>Ej, kámo, pokud najdeš něco hodnotného, dostaneš ode mě slevu!</text>
+</string>
+<string id="wiz_ivanich_task_3_fetch_about">
+	<text>Potřebuji nástroje pro kalibraci. Všechno, co potřebuji, by mělo být v té sadě. Budeš mi kámo, když to sežeeneš!</text>
+</string>
+<string id="wiz_ivanich_task_3_fetch_finish">
+	<text>No nejsem…! Kámo, díky moc! Teď už budu určitě bohatý. Čert vem, budu úspěšný!.. Pokud tedy nezmeškám i tuhle šanci. Ale momentálně ti nemůžu nabídnout nic lepšího než slevu. Omlouvám se, kámo.</text>
+</string>
+
+
+</string_table>

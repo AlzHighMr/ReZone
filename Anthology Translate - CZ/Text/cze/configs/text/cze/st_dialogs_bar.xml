@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+<!-- Barkeep -->
+
+<string id="bar_visitors_barman_stalker_trader_start_dialog_11">
+	<text>Ahoj. Jak je, chlape? </text>
+</string>
+<string id="bar_visitors_barman_stalker_trader_start_dialog_12">
+	<text>Co potřebuješ, stalkere? </text>
+</string>
+<string id="bar_visitors_barman_stalker_trader_start_dialog_13">
+	<text>Hej, stalkere. Potřebuješ něco k pití? Možná ti to pomůže sundat ten kyselý výraz z tváře.</text>
+</string>
+<string id="barkeep_100rads_0">
+	<text>Řekni mi o tomhle místě.</text>
+</string>
+<string id="barkeep_100rads_1">
+	<text>Vítejte v baru 100 rads, mé malé oáze v tomto kousku pekla. Tahle čtvrť patří mezi nejbezpečnější v Zóně, a to díky povinnosti. I ty budeš v bezpečí, pokud si zachováš chladnou hlavu. Stalkers z celého světa sem jezdí jíst, odpočívat, povídat si, shánět informace nebo hledat práci. Po čem tedy toužíš? Co pro tebe může stary Barman dnes udělat?</text>
+</string>
+<string id="information_about_stash_barmen_0">
+	<text>Jakékoliv informace o skrýši na prodej? </text>
+</string>
+<string id="information_about_stash_barmen_1">
+	<text>Heh, jo... Občas, když se zdejší smíříčci chopí lahve, opilecky podstrčí informace o svých skrýších. Nevím, co tam mají, ale co vím, je hodnota. Sedm tisíc a je to všechno tvé.</text>
+</string>
+
+<string id="information_about_stash_barmen1_0">
+		<text>Jistě, tady máš. %c[d_orange][7000 RU]</text>
+	</string>
+	<string id="information_about_stash_barmen1_1">
+		<text>Velmi si toho vážíme.</text>
+	</string>
+
+	
+<string id="devushka_4_help_0">
+	<text>Dobrý den, barmane. Přivedl jsem někoho, koho bys mohl chtít vidět.</text>
+</string>
+<string id="devushka_4_help_1">
+	<text>Uh-huh. Ach, Hip. Tady, příteli, napij se na účet podniku, zatímco s ní budu mluvit v soukromí.</text>
+</string>
+<string id="devushka_help_0">
+	<text>Díky. Počkám...</text>
+</string>
+<string id="devushka_help_1">
+	<text>...Dobře. Hip už ví, co musí udělat, a chtěla, abych ti to řekl, zatímco se bude připravovat; půjde za Barieru do Zatonu, aby tam vysadila nějaké kontejnery s artefakty pro Fouska. Artefakty jsou krvi Skadovska, jak jste možná slyšeli. A Hip zřejmě odmítá tuto dodávku provést bez tebe. Takže, jsi připraven? </text>
+</string>
+<string id="devushka_help_2">
+	<text>Jo, jsem připraven. Teď si vezmeme kontejnery.</text>
+</string>
+<string id="devushka_help_3">
+	<text>Téměř, jen potřebuji pár minut, abych si všechno připravil.</text>
+</string>
+
+	
+	
+<!-- GARIK -->
+	<string id="request_go_to_nimble_0">
+		<text>Potřebuji zajít.</text>
+	</string>
+	
+	
+<!-- Voronin (Duty Leader) -->
+<string id="story_dolg_0">
+	<text>Jaká je současná situace, pane?</text>
+</string>
+<string id="story_dolg_1">
+	<text>Momentálně máme čtyři operativní nepřátele: Svobodu, Monolit, žoldáky a bandity. Z těchto čtyř nám největší starosti dělají Monolit a bandité - ti jsou každým dnem organizovanější a organizovanější. To by mohlo představovat vážnou hrozbu, vzhledem k jejich počtu i k jejich obecnému nedostatku lidskosti.\n \nCo se týče Monolitu, nedávno se vrátil s překvapivou rychlostí. Jejich opětovný nástup na začátku tohoto roku ochromil naši přítomnost v Janově a my jsme se museli dopustit některých vážných obětí, abychom zajistili celkovou bezpečnost Rostoku.\n \nNyní, pokud jde o Svobodu a Blue Man Group, je situace pohodlná. Nechápejte je špatně - jsou to vážení protivníci a naši špióni je musí bedlivě sledovat. V tuto chvíli se však nechystají postavit se přímo nám nebo našim spojencům, což nám dává určitý prostor k oddechu. </text>
+</string>
+<string id="story_dolg_2">
+	<text>Jak si vede Povinnost, pane?</text>
+</string>
+<string id="story_dolg_3">
+	<text>Myslíš nejnovější rekruty Povinnost? Rekl bych, že solidní tři z pěti - není to skvělé, ale ani hrozné. Díky Petrenkovi přitahujeme zdravý příliv čerstvých bojovníků, i když přiznávám, že jsem trochu zklamáný z nedostatku zdravého rozumu, který zatím projevují.\n \nDisciplina by mohla být lepší a momentálně nám chybí důstojníci, kteří by dokázali z našich mladších členů vymámit to hloupé cholerické chování. Časem očekávám, že se Povinnost plně zotaví... ale bude to trvat dlouho.</text>
+</string>
+<string id="story_dolg_4">
+	<text>Můžu se zeptat, jak jsme přišli o Janov, pane?</text>
+</string>
+<string id="story_dolg_5">
+	<text>... Myslím, že to není třeba skrývat. Měli jsme slabý článek. Zrádce. Hloupého důstojníka jménem Morgan. Našli ho, jak prodává zbraně právě těm banditům, které se snažíme vyhladit. A jako by ta situace nebyla dost špatná, byla to skupina neutrálních, kterým se ho podařilo chytit při činu, a ne naši důstojníci ve službě. V důsledku toho trvalo roky úsilí, než jsme znovu získali ztracenou důvěru. A to všechno kvůli chybě jednoho člověka.\n \nTo nás zanechalo v hrozné pozici pro boj s nedávným návratem Monolitu. Statečný velící důstojník, kterého jsem do Janova jmenoval, podplukovník Shulga, musel podstoupit řadu chmurných obětí, které ho nakonec stály život. Z celého kontingentu, kterému velel, se jen Gavrilenkovi podařilo vrátit se do Rostoku v pořádku.\n \nJeště když chudák po příjezdu sotva mluvil, a to, co nakonec hlásil, bylo... znepokojující. Pokud ho uvidíte, doporučuji vám, abyste ho nechali být.</text>
+</string>
+<string id="story_dolg_6">
+	<text>Velmi dobře, pane. Rozumím.</text>
+</string>
+
+	
+<string id="st_bar_dolg_leader_life_ask">
+	<text>Rád bych se dozvěděl více o Povinnosti. Co mi můžeš říct o nich?</text>
+</string>
+<string id="st_bar_dolg_leader_life_1">
+	<text>Pojďme se podívat, co ti mohu říct. No, ne každý, kdo pro nás pracuje, nosí uniformu nebo odznak. Povinnost často najímá neutrální stalkerky jako pomocníky nebo informátory. I když jsou naše cíle dalekosáhlé, je nás jen omezený počet, a bylo by arogantní si myslet, že můžeme být všude najednou. Všechny stalkery, bez ohledu na jejich příslušnost, čeká nutnost jídla. Pokud chtějí svým chlebem ochraňovat budoucnost lidskosti spoluprací s námi, tak tím lépe.\n \nPokud znáte někoho, kdo hledá práci, ujistěte se, že ho odkážete na plukovníka Petrenka. Byl by více než ochoten jim pomoci najít poctivé zaměstnání.</text>
+</string>
+<string id="st_bar_dolg_leader_life_2">
+	<text>Přestože by se to mohlo zdát nelogické, vzhledem k naší nenávisti vůči Zóně, Povinnost udržuje zvláštní vztah s Ekology. Bojujeme proti nepříteli jako žádný jiný, nepříteli, který existuje ne jako armáda, ale jako ohavná přírodní síla. Bez poznání nelze vyhrát žádnou válku, natož takovou, a kdo zná našeho nepřítele lépe než samotní Ekologové? V současné době se ještě naivně snaží využívat Zónu pro dobro lidstva, ale nejsou tak slepí jako Freedom: jednoho dne si uvědomí, že jediná skutečná možnost je ji zničit. Jejich obrovské znalosti, podpořené statečností a dovednostmi Povinnost, určitě znamenají konec Zóny v ten den.\n \nMezitím je v zájmu lidskosti poskytovat vědcům cokoli potřebují, ať už jde o krabice s artefakty, které mají studovat, nebo ozbrojené stráže, které je mají chránit před zločinci. Možná je teď klid, ale dříve by Freedom a žoldnéři stříleli po vládních vědcích, kdykoli mohli. Je pouze hrozba odvetou ze strany Povinnosti, která udržuje mír mezi těmito třemi skupinami dnes.</text>
+</string>
+<string id="st_bar_dolg_leader_life_3">
+	<text>Hmm, předpokládám, že vás zajímají naše uniformy, že? \n \nZajímá vás, proč by se voják ve zdravém rozumu vydal do bitvy v černém a červeném? Rád bych, abyste si vzali okamžik a zamysleli se nad tím, kdo jsou naši skuteční nepřátelé. Žoldáci? Ne. Bandité? Neustálý otrava, ale ne. Freedom? Jsou nebezpeční blázni, ale stále ne. Dokonce ani Monolith nejsou naši praví nepřátelé. Pravým nepřítelem je samotná Zóna.\n \nPovězte mi, myslíte si, že kamufláž oklamá krevosa, který cítí pulz vašeho srdce ve vzduchu? Co psi, kteří používají čich a echolokaci? Nebo řídící, kteří potřebují jen číst vaše myšlenky?\n \nProti našim pravým nepřátelům je kamufláž k ničemu. V těchto případech raději oblékám muže do výrazných barev, které jim pomáhají vidět své druhy... černá a červená je zvláště motivovala k boji statečněji, vášnivěji. Ve srovnání s mutanti je vše ostatní hračka.\n \nTakže při boji s lidskými nepřáteli by někteří mohli argumentovat, že kamufláž je dobrá, protože nemůžete zabít to, co nevidíte. Po pekle, který jsme prošli, věří Povinnosti, že to, co zločinci vidí, brzy začnou bát.</text>
+</string>
+<string id="st_bar_dolg_leader_life_4">
+	<text>Dovolte mi, abych vám vyprávěl krátký příběh, abych vám ukázal rozdíl mezi Freedom a Povinnost. \n \nV roce 2006 byl Rostok divokým místem. Oproti tomu dnešní Divoké území vypadá v porovnání mírně. Přesto jsme si vybrali právě Rostok, protože jsme věděli, že býval tovární závod, a byli jsme odhodláni ho obnovit.\nKdyž jsme dorazili, našli jsme stalkera, křivě se odtahujícího od smečky psů, zoufale se přidržujícího života. Zachránili jsme ho, ošetřili ho a já se ho zeptal: "Synu, co jako mladý muž děláš v takovém místě?"\n A on mi říká: "No, pane, dříve jsem byl barmanem, ale vyhnali mě mafiáni. Tak jsem sem přišel, abych jim unikl, abych se pokusil přežít."\n \nPodívám se na toho chlapce, vidím, jak se mu ruce třesou a nedokáže ani držet zbraň, a říkám mu: "No, jsi na správném místě."\n Tento chlapec se nakonec stal Barkeepem a společně jsme obnovili Rostok tak, jak je dnes. Pracujeme se stalkery, vyvoláváme jejich nejlepší schopnosti, abychom znovu získali to málo dobrého, co ve Zóně ještě zůstává.\n \nAle zajímá vás, jak sem do celé této historie zapadá Svoboda. No, v roce 2011 už Svoboda svou starou základnu zničilo, tak se rozhodli, že si ukradnou novou.\nPockali, až anomálie Rostok odřízly od zbytku Zóny, a využili příležitosti a zaútočili na Armádní sklad - území suverénní vlády - a vzali mu své oprávněné vlastníky. A co se od té doby stalo se Sklady? Od té doby, co se jich zmocnil Freedom, se ten kdysi hrdý hrad proměnil v pouhé střely a anarchii a průzkumná vozidla, která kdysi odvážně čelila neznámu, již dávno zkameněla v rez.\n \nFreedom slibuje svobodu, ale dlouhodobě přináší pouze zkázu. Je jen otázkou času, než sami vyhasnou.</text>
+</string>
+<string id="st_bar_dolg_leader_life_5">
+	<text>Předpokládám, že vám mohu poskytnout nějaké informace o přísaze Povinnosti. Je to opravdu jednoduché. \n \n"Já, stalkr známý jako Voronin,\nPřísahám, že budu bránit cíle a ideály Povinnost.\nChránit Zemi před nebezpečími Zóny, hledat a zničit vše, co z ní vychází, uvnitř i mimo její hranice.\nBojovat proti nekonformistům, ať už jsou to jednotliví stalkři nebo skupiny.\nA dát svůj život ve jménu spravedlnosti a pořádku na Zemi!\n \nTak vypadá naše přísaha. Každý voják Povinnost ji skládá srdcem, duší a bez váhání. Naše poslání je jasné a my jsme odhodláni ho plnit.</text>
+</string>
+<string id="st_bar_dolg_leader_life_6">
+	<text>Na rozdíl od anarchistů na sever od nás Povinnost chápe hodnotu sebekontroly a všichni členové, kteří doufají ve povýšení, jsou prosyceni pevnou vírou v disciplínu a vnitřní integritu.\n\nNašimi očima špatný čin nesmyje ten dobrý... ani ten dobrý neznevažuje ten špatný. Existují vedle sebe a musíme je posuzovat podle toho, co jsou.\n\nA tak, když zakopneme a selžeme v samokontrole, jako v tomto jednom ostudném případě v Zatonu před mnoha lety, snažíme se napravit chyby a odpovídáme za ně, jak nejlépe umíme.\n\nV některých případech dokonce i našim nepřátelům. Před mnoha lety talentovaný oddíl Povinnosti zajal skupinu svobodovců a odvedl je do Rostoku k výslechu. Povinnosti zasluhují uznání za jejich lstivost... to je, dokud vyšetřovatelé naší frakce nenašli hrubé přestupky uvnitř oddílu. Ano, Povinnost a Svoboda jsou ve válce, ale to, co tento oddíl provedl se svými vězni... to, co tito škůdci provedli, je nepřijatelné.\n\nKaždý Povinnosťák, který byl zapojen, byl vyloučen zneuctivě, a my jsme se snažili co nejlépe odstranit podvodné sprostosti, které nahráli o svých vězních na síti PDA, a spravedlnost byla uspokojena. Povinnost zaujímá důvěru a je to postavení, které si získáváme svou vůlí dělat to, co je správné, i když to někdy znamená obětování strategické rychlosti. Zóna je odrazem zla uvnitř nás všech. Nemůžeme se s ní bojovat, pokud se rozhodneme ji také krmit.</text>
+</string>
+<string id="st_bar_dolg_leader_life_7">
+	<text>Příležitostně slyším cyniky, kteří si šuškají a ptají se, proč Povinnost stále potřebuje bojovníky... proč jsme stále potřeba v tomto světě. Kdykoliv slyším tuto otázku, vždy dávám stejnou odpověď...\n\nDříve se nejnebezpečnější mutanti pohybovali pouze pod zemí; byli pouze předmětem pověstí. Nyní mám zprávy o Snorcích v Temném údolí, Kontroléřích chodících na povrchu a dokonce o občasném Krváči na Cordonu. Zóna se rozrůstá a pokud se její expanze nezastaví, její hrůzy se rozšíří po celém světě jako nemoc.\n\nVojsko se zavázalo, že zajistí, že nic nepřekročí současné hranice Zóny, ale většina vojáků tráví čas šikanováním neškodných stopařů místo boje s opravdovou hrozbou. Ochrana světa před Zónou je stále více na našich bedrech, protože obranné síly naší země se stávají stále více omylnými a korupčními. Kdyby ne my, tak kdo jiný?</text>
+</string>
+<string id="st_bar_dolg_leader_life_end">
+	<text>V tuto chvíli vám už nic dalšího nechci sdělit.</text>
+</string>
+
+
+	
+<!-- Mangun (Duty Mechanic) -->
+
+<string id="story_dolg_m_0">
+	<text>Řekni mi něco o sobě.</text>
+</string>
+<string id="story_dolg_m_1">
+	<text>Hm, jo, dobře. Proč ne? \n \nDříve jsem pracoval ve výzkumném ústavu Agroprom, ještě než jsem byl povýšen. Předtím, než vznikla Zóna, jsem byl automechanik. Po nějaké době si ve službě všimli mých schopností jako údržbáře, a tak se nakonec rozhodli, že mě sem přidělí jako technika. Nejraději se vrtám v těžkých střelných a útočných zbraních... nesnáším práci na odstřelovačkách, zvlášť těch z NATO.</text>
+</string>
+<string id="story_dolg_m_2">
+	<text>A co je to za zápach? Nemyslel jsem si, že Povinnost povoluje těžké pití.</text>
+</string>
+<string id="story_dolg_m_3">
+	<text>Člověče, je těžké se obejít bez pití. Nebo pár. Škoda, že jsem nemohl pomáhat v Janově, když udeřil Monolit... ale na druhou stranu bych asi nebyl naživu, kdybych nedostal rozkaz zůstat tady. Při obraně toho místa přišlo o život tolik dobrých mužů... Hm, vypadá to, že jsme odbočili od tématu. Každopádně se teď nestyď - ukaž mi své hračky, jestli je potřebuješ opravit.</text>
+</string>
+<string id="story_dolg_m_4">
+	<text>Podívám se, jestli něco nemám.</text>
+</string>
+
+<!-- Snitch (Informer) at the Bar -->
+<string id="talk_to_inf_trader_0">
+	<text>Kdo jsi?</text>
+</string>
+<string id="talk_to_inf_trader_1">
+	<text>Jsem místní informátor a mohu vám nabídnout nejrůznější služby. Momentálně mám k dispozici různé druhy informací a mapy s trasami na různá místa. Moje zdroje patří k nejspolehlivějším v Zóně, ale pro zachování tajemství by i zabily, takže se mě neptejte, kde se tyhle věci dozvídám - odpověď není hezká.</text>
+</string>
+<string id="talk_to_maps_0">
+	<text>Můžeš se s námi podělit o nějaké volné informace o okolí?</text>
+</string>
+<string id="talk_to_maps_1">
+	<text>Obvykle se informacemi živím, ale protože je stejně všude klid, mohu vám poskytnout trochu informací. Na dome.</text>
+</string>
+<string id="talk_to_maps_2">
+	<text>Jsem jedno ucho.</text>
+</string>
+<string id="talk_to_maps_3">
+	<text>No, pravděpodobně už znáš všechno, co se nachází na jih odtud. Právě teď jsi v Rostoku. Je to naprosto bezpečné, pokud máš dobré vztahy se Povinností. Na východě je Hřbitov nákladních aut - něco jako Odpad, ale mnohem větší, mnohem radioaktivnější a mnohem, mnohem nebezpečnější. Západ je Divoká Oblast - části Rostoku, které Povinnost nemůže pravidelně hlídat. To místo je naprostá noční můra a většina stalkerů doporučuje se mu vyhnout, pokud se nepotřebujete dostat do Jantaru. Na severu jsou Armádní skladovistě, které vlastní Povinnosti "nejlepší přítel" Svoboda. Dál na sever se rychle stává území Monolitu, bráněné nelítostnými fanatiky a anomálními poli, která rozpouštějí mozký.</text>
+</string>
+<string id="talk_to_maps_4">
+	<text>Co mi můžeš říct o Monolitu?</text>
+</string>
+<string id="talk_to_maps_5">
+	<text>Údajně se jedná o strážce prastarého mimozemského krystalu známého jako "Plnič přání". Monolitové věří, že tento krystal stvořil Zónu a že splní přání těm, které uzná za hodné. Za tímto účelem jej budou zůřivě bránit před každým, kdo se odváží vkročit dál než k severní Bariéře u Armádních skladů. Samozřejmě existují legendy o lidech, kteří byli shledáni hodnými Udělovateli přání, ale to jsou všechno kecy. Existují jednodušší způsoby, jak zbohatnout, a člověk by si myslel, že už si někdo bude přát, aby zdejší mutanti zmizeli, nebo aby skončily nemoci, nebo dokonce světový mír - ha! Ale... Hádam, že v době, kdy se člověk dostane k Plniči přání, už je mu každý jiný ukradený.</text>
+</string>
+<string id="talk_to_maps_6">
+	<text>Díky za informace.</text>
+</string>
+
+<string id="buy_information_from_trader_0">
+	<text>Máš nějaké čerstvé informace?</text>
+</string>
+<string id="buy_information_from_trader_1">
+	<text>Mám informace o doktorovi z Bažin. Víte, o tom bláznivém staříkovi s legendárními léčitelskými schopnostmi? Alespoň se to říká. Můžu ti říct pravdu, za sedm tisíc.</text>
+</string>
+<string id="buy_information_from_trader_6">
+	<text>Poslouchám.</text>
+</string>
+<string id="buy_information_from_trader_11">
+	<text>Jak možná víte, žije ve Velké bažině. Co možná nevíš, je, proč tam žije. Čeká na svého starého přítele Streloka. S Strelokovým údajným návratem se chce s Doktorem setkat mnoho lidí, ale jen málokdo ho najde. Přitom je to docela snadné - hledejte průlom v plotě podél severozápadní části bažiny a dávejte si pozor na radary a anomálie podél cesty.</text>
+</string>
+<string id="buy_information_from_trader_2">
+	<text>Získal jsem informace o nějakém šlídilovi, který nedávno přepadl CNPP, za deset taců.</text>
+</string>
+<string id="buy_information_from_trader_7">
+	<text>Jsem jedno ucho.</text>
+</string>
+<string id="buy_information_from_trader_12">
+	<text>Takže, než se Monolit rozzlobil a znovu pořádně povstal, tenhle stopař zkoumal Sarkofág kvůli kořisti a - rozuměj - narazil na naprosto unikátní artefakt! Podle všeho je to úlomek samotného Udělovatele přání! Monolitu se to však nelíbilo a byl nucen ho tam nechat, aby zastavil pronásledování. Nezbývá než se ptát, jakou má cenu...</text>
+</string>
+<string id="buy_information_from_trader_3">
+	<text>Mám informace, které vrhají světlo na Strelokovu skupinu, ale jen za patnáct tisíc.</text>
+</string>
+
+<string id="buy_information_from_trader_8">
+   <text>Dej mi to.</text>
+</string>
+		
+
+<string id="buy_information_from_trader_13">
+	<text>Každý ví, že se Strelokovi nedávno podařilo sestavit nový tým, ale nikdo neví, kdo to je. Je to skupina jedinečně schopných jedinců - Stitch, Pathfinder, Rogue a Scope. V tomto pořadí bojový zdravotník, nadaný průvodce, vojenský dezertér a špičkový odstřelovač. Lze se jen ptát, kde jsou teď nebo co mají za lubem.</text>
+</string>
+<string id="buy_information_from_trader_4">
+	<text>Můžu prozradit informace o dobrodružstvích tajemného stopaře, který prozkoumal Generátory za dvacet čtyři tisíc.</text>
+</string>
+<string id="buy_information_from_trader_9">
+	<text>Předat.</text>
+</string>
+<string id="buy_information_from_trader_14">
+	<text>Slyšel jsi hodně o Generátorech? Donedávna byli považováni jen za mýty... ale po Strelokově druhém tažení do středu Zóny už není pochyb o tom, že jsou skuteční. O tom, co jsou zač, se vedly neustálé spory, ale staré satelitní snímky naznačují, že jde o jakousi podivnou infrastrukturu, na jejíž počest byla celá oblast pojmenována. Podle všeho je to místo, kde Monolit vykonává své rozkazy a všechny důležité procesy na území Zóny. Takže stalker už se tam vydal a myslím, že to myslí vážně - jeho zásah by mohl mít na Zónu zásadní vliv. Vůdci několika skupin už v souvislosti s touto informací vyjádřili svou nespokojenost.</text>
+</string>
+<string id="buy_information_from_trader_5">
+	<text>V tuto chvíli ne.</text>
+</string>
+<string id="buy_information_from_trader_10">
+	<text>Nemám zájem.</text>
+</string>
+<string id="st_top_10_task_about_dialog_0">
+	<text>Tak co tu děláte pro zábavu?</text>
+</string>
+<string id="st_top_10_task_about_dialog_1">
+	<text>Zábava? Tady může být rychle nuda, člověče. Zákazníci v dnešní době sotva vyhledávají něco zajímavého. Jen banda amatérů, kteří se chtějí dostat k artefaktům a podobně, víš, co tím myslím?</text>
+</string>
+<string id="st_top_10_task_about_dialog_2">
+	<text>Tak to prostě chodí, ne?</text>
+</string>
+<string id="st_top_10_task_about_dialog_3">
+	<text>Jo, ale copak nikdo z nich nikdy nesnil o tom, že udělá něco epického, něco legendárního? Jako například ty - vypadáš zkušeně. Nechceš dokázat něco, na co lidé nikdy nezapomenou?</text>
+</string>
+<string id="st_top_10_task_about_dialog_4">
+	<text>Pokračujte...</text>
+</string>
+<string id="st_top_10_task_about_dialog_5">
+	<text>Mám velmi zvláštní kontakt, který nabízí obrovskou odměnu za dopadení deseti stalkerů. Padesát tisíc a k tomu sladkosti. To zní jako skvělé peníze za jednoduchý seznam odměn, ne? Tady je ta zajímavá část: tvé cíle jsou shodou okolností deset nejlepších stalkerů v celé Zóně. To znamená, že můžeš lovit Stámgasty, Povinnost, Žoldáky nebo dokonce samotný zasraný Monolit! Pokud chceš, můžeš si seznam prohlédnout na svém PDA. Tenhle chlápek je chce zabít, nezáleží na tom jak.</text>
+</string>
+<string id="st_top_10_task_about_dialog_61">
+	<text>Cože? To je šílené! Proč by to někdo chtěl?</text>
+</string>
+<string id="st_top_10_task_about_dialog_62">
+	<text>Počítejte se mnou.</text>
+</string>
+<string id="st_top_10_task_about_dialog_63">
+	<text>Ne, děkuji, z tohohle vypadávám.</text>
+</string>
+<string id="st_top_10_task_about_dialog_7">
+	<text>Na něco podobného jsem se zeptal svého kontaktu. No, říkal, že už má dost chodících dreadnoughtů, kteří vysávají veškerou kořist svými luxusními puškami a drahými obleky. Chce dát obyčejným lidem větší šanci. Každopádně plat bude neuvěřitelný, tak koho to zajímá? </text>
+</string>
+<string id="st_top_10_task_about_dialog_8">
+	<text>Fantastické! Nahraju ti do PDA polohu tvého prvního cíle. Pokaždé, když jednoho z nich zabiješ, získáš polohu dalšího. Bav se.</text>
+</string>
+<string id="st_top_10_task_about_dialog_9">
+	<text>Obleč se. Nabídka stále platí, pokud si to rozmyslíš.</text>
+</string>
+	
+<string id="st_top_10_task_finish_dialog_0">
+	<text>Dobře, pašáci. Je hotovo. Těchto deset cílů je stejně dobrých jako mrtvých.</text>
+</string>
+<string id="st_top_10_task_finish_dialog_1">
+	<text>Skvělá práce, kamaráde! Náš klient je s tvými výsledky velmi spokojen. Jak jsme slíbili, tady je tvá odměna. Jsem rád, že jsi to nakonec zvládl - ještě teď slyším, jak si lidé o tvých činech povídají. Zabiják legend! Tohle s námi trochu zatřese, hehe...</text>
+</string>
+	
+<!-- modified by Tronex -->
+<string id="inf_trader_buy_transitions_0">
+	<text>Rád bych nakoupil informace o několika trasách.</text>
+</string>
+<string id="inf_trader_buy_transitions_1">
+	<text>Jistě. Tady je to, co mám.</text>
+</string>
+<string id="inf_trader_buy_transitions_2">
+	<text>Z Armádních skladů do radaru za %c[d_orange][7000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_9">
+	<text>Tak co, máš na to peníze?</text>
+</string>
+<string id="inf_trader_buy_transitions_11">
+	<text>Ano, tady máš.</text>
+</string>
+<string id="inf_trader_buy_transitions_3">
+	<text>Z radaru do bunkru pod ním. %c[d_orange][11 000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_12">
+	<text>Máš ty prachy?</text>
+</string>
+<string id="inf_trader_buy_transitions_13">
+	<text>Jistěže. Tady.</text>
+</string>
+<string id="inf_trader_buy_transitions_4">
+	<text>Z radaru do Pripjati. %c[d_orange][9000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_14">
+	<text>Máš peníze?</text>
+</string>
+<string id="inf_trader_buy_transitions_15">
+	<text>Tady máš.</text>
+</string>
+<string id="inf_trader_buy_transitions_5">
+	<text>Z centra Pripjati na předměstí. %c[d_orange][9000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_16">
+	<text>Nejprve budu potřebovat papír.</text>
+</string>
+<string id="inf_trader_buy_transitions_17">
+	<text>Jo, tady je.</text>
+</string>
+<string id="inf_trader_buy_transitions_6">
+	<text>Z Pripjati do Černobylské jaderné elektrárny. %c[d_orange][30 000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_18">
+	<text>Máš s sebou nějaké peníze?</text>
+</string>
+<string id="inf_trader_buy_transitions_19">
+	<text>Ano, tady máš.</text>
+</string>
+<string id="inf_trader_buy_transitions_7">
+	<text>Mezi jižní a severní částí Černobylské jaderné elektrárny. %c[d_orange][35 000 RU]</text>
+</string>
+<string id="inf_trader_buy_transitions_20">
+	<text>Peníze nejdříve.</text>
+</string>
+<string id="inf_trader_buy_transitions_21">
+	<text>Tady jsi.</text>
+</string>
+<string id="inf_trader_buy_transitions_10">
+	<text>Nemám peníze.</text>
+</string>
+<string id="inf_trader_buy_transitions_8">
+	<text>Změnil jsem názor.</text>
+</string>
+
+<!-- Guide -->
+<string id="meet_guid_bar_0">
+	<text>Jsi průvodce?</text>
+</string>
+<string id="meet_guid_bar_1">
+	<text>Ano, Průvodce je to jméno. Za mírný poplatek tě můžu vzít na pár míst. Většinou jsou mými zákazníky nováčci, ale mohu vést i každého zkušeného stopaře - není to žádná ostuda. Rozdělím to: zaplatíte, já vás dopravím, kam chcete, a vrátím se sem. Můžu tě vzít do Jantaru, do Velkých bažin, do armádních skladů, do Smetiště, do Kordonu a na Jupiter.</text>
+</string>
+
+<string id="meet_guid_bar_list_0">
+	<text>Pardon, kam mě můžeš doprovodit?</text>
+</string>
+<string id="meet_guid_bar_list_1">
+	<text>Do Smetiště za sedm set, do Armádních skladů za tisíc, do vesnice nováčků v Kordonu za tři tisíce, do Jantaru za třicet pět set, na stanici Janov v Jupiteru za šest tisíc a do Velké bažiny, také za šest tisíc.</text>
+</string>
+
+<string id="travel_guid_bar_0">
+	<text>Potřebuji, abys mě někam zavedl.</text>
+</string>
+<string id="travel_guid_bar_1">
+	<text>Ano, kam?</text>
+</string>
+<string id="travel_guid_bar_2">
+	<text>Do Kordonu. %c[d_orange][3000 RU]</text>
+</string>
+<string id="travel_guid_bar_3">
+	<text>Na Smetiště. %c[d_orange][700 RU]</text>
+</string>
+<string id="travel_guid_bar_4">
+	<text>Do Armádních skladů. %c[d_orange][1000 RU]</text>
+</string>
+<string id="travel_guid_bar_5">
+	<text>Na Jantar. %c[d_orange][3500 RU]</text>
+</string>
+<string id="travel_guid_bar_6">
+	<text>K Jupiteru. %c[d_orange][6000 RU]</text>
+</string>
+<string id="travel_guid_bar_7">
+	<text>Do Velkých bažin. %c[d_orange][6000 RU]</text>
+</string>
+<string id="travel_guid_bar_8">
+	<text>Změnil jsem názor.</text>
+</string>
+
+<!-- Medic -->
+<string id="bar_dolg_medic_talking_0">
+	<text>Kdo jsi?</text>
+</string>
+<string id="bar_dolg_medic_talking_1">
+	<text>Jsem místní pilíř, i když dřív jsem byl jen zdravotník. Jmenuju se poručík Sostradov, ale zdejší smírčí mi říkají Aspirin. Jo, vážně. Za ty roky jsem se docela zdokonalil v léčení nejrůznějších nemocí a zranění. Působím také jako rezidenční lékárník - koneckonců, pokud doufáte, že se vrátíte živí k řádnému ošetření, potřebujete s sebou v terénu nějaké léky.</text>
+</string>
+<string id="bar_dolg_medic_talking_2">
+	<text>Jak ses dostal k tomu, že jsi medikem u Povinnosti?</text>
+</string>
+<string id="bar_dolg_medic_talking_3">
+	<text>Jak kdo přišel k tomu, že je ve Povinnosti? Zóna ti něco vezme. A pak si to vezme znovu a pak znovu. Dokud ti nezbude nic než Zóna sama. Ať už je to medik, nebo ne, takhle přichází stalker ke Povinnosti.\n\nJsme ti, kteří kvůli téhle pekelné díře přišli o všechno, ale zůstali jsme tu, abychom zabránili ostatním ve stejném osudu. Většina Povinnosťáků se samozřejmě rozhodne chránit lidi tím, že se pokusí Zónu zabít. To já nejsem.\n\nJá jsem tady, abych napravil všechna zranění, která na lidech zanechala. Abych se ujistil, že stalkerům tohoto města se podaří prožít další den, až jejich přátelé potáhnou ulicemi svá zkrvavená těla z jakékoliv bláznivé výpravy, na kterou se vydali.\n\nPokud se sem vrátíš živý, budeš se cítit jako nový. Na rozdíl od některých jiných obchodníků tady v okolí ti ani nebudu účtovat příliš vysoké poplatky.</text>
+</string>
+<string id="bar_dolg_medic_talking_4">
+	<text>Díky, Aspirine.</text>
+</string>
+	
+<!-- ARENA -->
+
+<string id="bar_arena_man_job_0">
+	<text>Kdo máš pro mě, abych bojoval?</text>
+</string>
+<string id="bar_arena_man_job_11">
+	<text>Takže, tvůj první boj? Tvůj soupeř je kus hovna stejně jako ty. Je tu kvůli svým dluhům a má jen dvě možnosti: vyjít ven a bojovat, nebo přistát držkou v nejbližší anomálii. Bude bojovat jako zvíře zahnáné do kouta. Vybavení pro dnešek... Nech mě přemýšlet... Co kdybyste vy dva použili základní pistole, dvě krabičky nábojů by měly stačit. Buď mu nakopeš zadek, nebo tebou nakrmíme psy - není moc na výběr. Jdi na to.</text>
+</string>
+<string id="bar_arena_man_job_111">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_112">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_12">
+	<text>Tvůj poslední zápas neznamenal ani hovno, jsi pořád stejný kus hovna jako předtím a žádný člověk, který si váží sám sebe, na tebe nevsadí ani jeden zásobník. Jestli si chceš vydělat nějaký pořádný prachy, budeš muset ještě párkrát vystoupit v aréně. Tvůj nový soupeř se také dostal přes první kolo a jeho zápas byl mnohem těžší než ten tvůj. Upřímně řečeno se mi nelíbí - zabíjí příliš rychle a to se publiku nelíbí. tak táhni a ukaž nám, co umíš! Po tomto zápase se sázky zvýší - jediné, co musíš udělat, je zůstat naživu. Pohyb!</text>
+</string>
+<string id="bar_arena_man_job_121">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_122">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_13">
+	<text>No, no... Nejsi takový posera, jak se zprvu zdálo. Teď je čas vyzkoušet tě v opravdovém boji. Stojíš proti dvěma chlapům. Prvnímu řikáme Švéd a jméno druhého si nepamatuji. Byli spojeni do dvojice záměrně, protože se navzájem nesnášejí, takže se neboj, že by pracovali jako tým - spíš se budou střílet navzájem. Dneska je den brokovnic, takže je nechávej se dostat moc blízko, jinak tě budeme muset sbírat kousek po kousku. Šance jsou 10:1, takže pokud vyhraješ, vyděláš si slušnou částku. Jdi na to!</text>
+</string>
+<string id="bar_arena_man_job_131">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_132">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_14">
+	<text>No, teď už můžu s klidem říct, že jsi bojovník, opravdový bojovník. Teď je čas na týmový souboj. Máš možnost bojovat se proti třema nováčky - dvěma bratry a jejich kámoše - na své straně. Ještě nebojovali, ale jsou to bratři a s tím týpkem se narodily ve stejný vesnici někde v prdeli v Rusku, takže jsem je musel postavit do týmového boje. Na tvém místě bych od nich neočekával žádnou skutečnou lítost. Bojuješ proti zkušenému týmu, jsou to uchazeči o finále této sezóny. Nebezpečná parta. Používají různé zbraně, ale jeden z nich má automatickou brokovnici - buď na něj velmi opatrní. Dávám ti sebou taky dva nováčky radši moc na ně nespoléhej.. Hodně štěstí, kamaráde... Budeš ho potřebovat.</text>
+</string>
+<string id="bar_arena_man_job_141">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_142">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_15">
+	<text>Dnes tě čeká zvláštní boj. Dokonce i armáda se o tobě dozvěděla! Nediv se, i oni tu bojují - v davu je dokonce generál. Tihle chlapi jsou ze Specnazu nebo OMONu. Jsou dobře vyzbrojení a jejich výzbroj je tak dobrá, jak bys čekal. Ale neboj se, já tě taky nenechám na holi. Dostaneš vestu, kterou používá Svoboda - je lehká, takže tě nebude brzdit. No tak, ukaž jim, že stalker není žádný bicykl. Hodně štěstí!</text>
+</string>
+<string id="bar_arena_man_job_151">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_152">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_16">
+	<text>Čas, abys ukázal, co umíš. Povinnost zajala skupinu banditů, která způsobovala problémy stalkerům poblíž Rostoka. Povinnost je zajala v noci, takže většina banditů byla zajata živá. Stejně by je všechny popravili, tak jsem přesvědčil toho Povinosťáka, aby jim dal šanci. Pokud někdo z nich přežije, půjde do kontejneru mimo Zónu, což je lepší než umřít tady. Dostali dobrou výbavu a je jich šest, takže si dávej pozor. Jdi do toho!</text>
+</string>
+<string id="bar_arena_man_job_161">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_162">
+	<text>Nejsem připraven.</text>
+</string>
+
+	<string id="bar_arena_man_job_17">
+	<text>Tak už jsi skoro ve finále. Teď budeš bojovat se skutečným šampionem. Je sám, ale má útočnou pušku a je v ochranném obleku. Stačí chytit jednu dávku a je po tobě. Čeká tě také překvapení, které ti nemohu prozradit... Tady je moje rada: buď připraven, bude to těžké. Vítěz postupuje do finále. Bojuj na život a na smrt, do toho!</text>
+</string>
+<string id="bar_arena_man_job_171">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_172">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_18">
+	<text>Gratulujeme, jsi ve finále! Zbývá poslední a tenhle zápas je na život a na smrt, každý sám za sebe. V aréně budou další 4 stalkeři: všichni skuteční profíci v exoskeletech, ale tentokrát je to férové - dostaneš přesně to, co oni. Jedina věc je, že v boji na život a na smrt nedostaneš lékárničky ani obvazy. Připraven? Jdi dokázat, že jsi nejlepší, Jdi!</text>
+</string>
+<string id="bar_arena_man_job_181">
+	<text>Jsem připraven.</text>
+</string>
+<string id="bar_arena_man_job_182">
+	<text>Nejsem připraven.</text>
+</string>
+<string id="bar_arena_man_start_111112">
+	<text>Jo! Zaplatil jsi mi za rvačku, ale prostě jsi odešel!</text>
+</string>
+<string id="bar_arena_man_start_11">
+	<text>Jo! Mám pro tebe nový zápas.</text>
+</string>
+<string id="bar_arena_man_start_21">
+	<text>Jdi se napít nebo tak něco. Aréna ještě není připravena.</text>
+</string>
+<string id="bar_arena_man_start_31">
+	<text>Jsi z tebe profesionál!!!</text>
+</string>
+<string id="bar_arena_man_start_41">
+	<text>Vyhrál jsi! Tady je tvá odměna.</text>
+</string>
+<string id="bar_arena_man_start_51">
+	<text>Na tento boj nejsi dost zkušený.</text>
+</string>
+<string id="bar_arena_manager_game_0">
+	<text>Jakou výzvu pro mě máš?</text>
+</string>
+<string id="bar_arena_manager_game_1">
+	<text>Není s čím bojovat, přijď později, až tu budeme mít další mutanti
+
+.</text>
+</string>
+<string id="bar_arena_manager_game_100">
+	<text>Za účast se platí. 1 000 RU.</text>
+</string>
+<string id="bar_arena_manager_game_101">
+	<text>Fajn, tady jsou vaše peníze.</text>
+</string>
+<string id="bar_arena_manager_game_105">
+	<text>Nemám dost peněz.</text>
+</string>
+<string id="bar_arena_manager_game_1051">
+	<text>Tak vypadni, stalkere.</text>
+</string>
+<string id="bar_arena_manager_game_110">
+	<text>Dlužíš mi 2000 RU za účast.</text>
+</string>
+<string id="bar_arena_manager_game_111">
+	<text>Fajn, tady máš své peníze.</text>
+</string>
+<string id="bar_arena_manager_game_11111112">
+	<text>Již jsem ti zaplatil!</text>
+</string>
+<string id="bar_arena_manager_game_115">
+	<text>Nemám dost peněz.</text>
+</string>
+<string id="bar_arena_manager_game_1151">
+	<text>Tak se přestaň tolik vyptávat.</text>
+</string>
+
+<string id="bar_arena_manager_game_120">
+	<text>Zaplať 3 000 RU za účast a krvesaj je tvůj.</text>
+</string>
+<string id="bar_arena_manager_game_121">
+	<text>Fajn, tady máš peníze.</text>
+</string>
+<string id="bar_arena_manager_game_125">
+	<text>Nemám dost.</text>
+</string>
+<string id="bar_arena_manager_game_1251">
+	<text>Neplytvěj mým časem, stalkere.</text>
+</string>
+<string id="bar_arena_manager_game_130">
+	<text>Ne tak rychle. Cena za účast je 5 000 RU.</text>
+</string>
+<string id="bar_arena_manager_game_131">
+	<text>Fajn, tady jsou peníze.</text>
+</string>
+<string id="bar_arena_manager_game_135">
+	<text>Nemám dost peněz.</text>
+</string>
+<string id="bar_arena_manager_game_1351">
+	<text>Nezkoušej předstírat, že jsi žebrák.</text>
+</string>
+<string id="bar_arena_manager_game_140">
+	<text>Cena za účast je 5 000 RU.</text>
+</string>
+<string id="bar_arena_manager_game_141">
+	<text>Fajn, tady máš peníze.</text>
+</string>
+<string id="bar_arena_manager_game_145">
+	<text>Nemám dost peněz.</text>
+</string>
+<string id="bar_arena_manager_game_1451">
+	<text>Nech mě hádat. Někdo ti ukradl rubly?</text>
+</string>
+<string id="bar_arena_manager_game_2">
+	<text>Tady je pseudopes. Velký exemplář, ale dost potlučený. Na druhou stranu je velmi divoký, stejně jako moje tchýně.</text>
+</string>
+<string id="bar_arena_manager_game_200">
+	<text>Dohoda. Před bojem bys měl vsadit na čas, který potřebuješ k zabíjení. Pokud se ti to podaří, vyděláš si na výdaje navíc.</text>
+</string>
+<string id="bar_arena_manager_game_201">
+	<text>30 sekund, trojnásobná výhra.</text>
+</string>
+
+	<string id="bar_arena_manager_game_202">
+	<text>Jedna a půl minuty, dvojitá výhra.</text>
+</string>
+<string id="bar_arena_manager_game_203">
+	<text>Bez časového limitu. Poloviční výhra.</text>
+</string>
+<string id="bar_arena_manager_game_204">
+	<text>Změnil jsem názor.</text>
+</string>
+<string id="bar_arena_manager_game_2041">
+	<text>Těžká sráčka. Už jsi zaplatil.</text>
+</string>
+<string id="bar_arena_manager_game_21">
+	<text>To zvládnu. Budu se prát s tvým psem.</text>
+</string>
+<string id="bar_arena_manager_game_22">
+	<text>Pes? To je všechno, co máš?</text>
+</string>
+<string id="bar_arena_manager_game_221">
+	<text>Aha, tak se naše holka bojí malého psíka? Nezlob se.</text>
+</string>
+<string id="bar_arena_manager_game_3">
+	<text>Tamhle je obluda v plynové masce, které se říká snorchl. Vypadá hubeně a slabě, ale je docela mrštný.</text>
+</string>
+<string id="bar_arena_manager_game_300">
+	<text>Skvěle, všechno připravíme. Vstupte do arény.</text>
+</string>
+<string id="bar_arena_manager_game_31">
+	<text>Přistupte k tomu. Budu bojovat s tvým snorchlem.</text>
+</string>
+<string id="bar_arena_manager_game_32">
+	<text>Zvedá se mi z nich žaludek. K čertu s tím.</text>
+</string>
+<string id="bar_arena_manager_game_321">
+	<text>Vyděsil mě napůl shnilý magor v plynové masce?</text>
+</string>
+<string id="bar_arena_manager_game_4">
+	<text>Tentokrát jsme měli opravdu štěstí. Chytili jsme mladého krvavého zvíře. Ještě hloupého, ale už s patnými mravy.</text>
+</string>
+<string id="bar_arena_manager_game_41">
+	<text>Jdi na to, připrav toho krváče.</text>
+</string>
+<string id="bar_arena_manager_game_42">
+	<text>Krváče? Na to se vykašli!</text>
+</string>
+<string id="bar_arena_manager_game_421">
+	<text>Cože? Ty teď miluješ krvavé zvíře? Kdy ses přidal k Svobodě?</text>
+</string>
+<string id="bar_arena_manager_game_5">
+	<text>Tentokrát tu máme malého tlustého trpaslíka v černém plášti - místní mu říkají burer.</text>
+</string>
+<string id="bar_arena_manager_game_51">
+	<text>Tlustý a malý? Jednoduché. Udělám to já.</text>
+</string>
+<string id="bar_arena_manager_game_52">
+	<text>O těch věcech jsem už všechno slyšel. Nechám to být.</text>
+</string>
+<string id="bar_arena_manager_game_521">
+	<text>Vyskočí ti sotva po pas. A máš z něj strach?</text>
+</string>
+<string id="bar_arena_manager_game_6">
+	<text>Dnes je výjimečný den. Nevím, kde ho našli... Jeho... Ale je to opravdová bestie.</text>
+</string>
+<string id="bar_arena_manager_game_61">
+	<text>Dohoda. Zbavím ho trápení.</text>
+</string>
+
+	<string id="bar_arena_manager_game_62">
+	<text>Nechce se mi umírat, najdi si někoho jiného.</text>
+</string>
+<string id="bar_arena_manager_game_621">
+	<text>No, upřímně řečeno, i mě ta bestie děsí. Ale v aréně nebojuju, tak koho to zajímá?</text>
+</string>
+<string id="bar_arena_manager_info_0">
+	<text>Mám pár otázek.</text>
+</string>
+<string id="bar_arena_manager_info_1">
+	<text>Střílejte.</text>
+</string>
+<string id="bar_arena_manager_info_10">
+	<text>Nevadí.</text>
+</string>
+<string id="bar_arena_manager_info_11">
+	<text>Co je to za podnik?</text>
+</string>
+<string id="bar_arena_manager_info_111">
+	<text>Toto je aréna, můj malý podnik. Místo, kde si stalker může vyzkoušet svou odvahu a získat slávu v boji proti hrůzám Zóny.</text>
+</string>
+<string id="bar_arena_manager_info_12">
+	<text>Jak se sem dostávají mutanti?</text>
+</string>
+<string id="bar_arena_manager_info_121">
+	<text>Udělali jsme dohodu s Povinností, místo aby zabíjeli všechny mutanti, které najdou, přivedou sem ty slabší výměnou za peníze. Povinnost dostane zaplaceno, mutanti budou zabiti a já pak dostanu zaplaceno. Všichni vyhrají.</text>
+</string>
+<string id="bar_arena_manager_info_13">
+	<text>Odkud jsi?</text>
+</string>
+<string id="bar_arena_manager_info_131">
+	<text>Jsem z mnoha míst. Slyšel jsem o tomhle zapadákovi a pochopil jsem, že bych si tu mohl vydělat pěkný peníz. Tak jsem tady.</text>
+</string>
+<string id="bar_arena_manager_rules_0">
+	<text>Jaká jsou pravidla?</text>
+</string>
+<string id="bar_arena_manager_rules_1">
+	<text>Oh, pravidla jsou docela jednoduchá. Vymyslel jsem je sám. Pro výzvy je tu klec a do ní je vpuštěn mutant. Zaplatíš peníze a řekneš mi čas, který potřebuješ na zabíjení příšery. Když to zvládneš - vyhrál jsi, když ne - vyhrál jsem já.\nAle u hlavního chodu bojuji v aréně za své zločiny, bandité a další zvrhlíci ze Zóny, které zajala Povinnost. Někteří z nich jsou jen sledilové, kteří mají chuť se poprat, a ne skuteční zločinci, ale kdo op
+
+ustí arénu v nejmenším počtu kusů, dostane slušnou odměnu. Pokud budou zápasy vyhrávat, přijdou se na ně podívat více sledilové a bojovníci získají větší odměny.</text>
+</string>
+<string id="bar_arena_manager_start_11">
+	<text>Rád tě vidím, stalkere, vítej v aréně.</text>
+</string>
+<string id="bar_arena_manager_start_21">
+	<text>Tak na co čekáš? Vlez do klece.</text>
+</string>
+<string id="bar_arena_manager_start_31">
+	<text>Pardon, zatím není proti čemu bojovat. Počkej den nebo dva, než se nám podaří chytit nového mutanta.</text>
+</string>
+<string id="bar_arena_manager_start_41">
+	<text>Tady jsi! Dobrá práce! Tady je tvá výhra. Pokud toužíš po dalším boji o peníze, stačí se kdykoli zastavit.</text>
+</string>
+<string id="bar_arena_manager_start_51">
+	<text>Promiň, brácho, ale prohrál jsi. Jestli chceš, přijď příště znovu.</text>
+</string>
+
+	<!-- bar_visitors_stalker_mechanic -->
+<string id="bar_visitors_stalker_mechanic_start_dialog_1">
+	<text>Další stalker, přišel navštívit starého Manguna? Fuj, dobré. Ukáž mi, co je rozbité, a já to opravím. Jen doufám, že budeš moct zaplatit za součástky.</text>
+</string>
+</string_table>

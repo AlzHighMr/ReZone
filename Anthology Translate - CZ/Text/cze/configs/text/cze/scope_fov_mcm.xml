@@ -1,0 +1,79 @@
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+
+	<string id="ui_mcm_scop_title">
+		<text>Nastavení HUD zamìøovaèe</text>
+	</string>	
+	<string id="ui_mcm_menu_scop">
+		<text>Nastavení HUD zamìøovaèe</text>
+	</string>
+
+	<string id="ui_mcm_scop_iron_fov">
+		<text>Míøidla a integrované 3D zamìøovaèe</text>
+	</string>
+	<string id="ui_mcm_scop_iron_fov_desc">
+		<text>Nižší hodnoty pøibližují zamìøovaè pøi použití míøidel a integrovaných 3D zamìøovaèù</text>
+	</string>
+
+	<string id="ui_mcm_scop_scope_fov">
+		<text>3D zamìøovaèe</text>
+	</string>
+	<string id="ui_mcm_scop_scope_fov_desc">
+		<text>Nižší hodnoty pøibližují zamìøovaè pøi použití 3D zamìøovaèù</text>
+	</string>
+
+	<string id="ui_mcm_scop_bad_scope_fov">
+		<text>Špatné 3D optické zamìøovaèe</text>
+	</string>
+	<string id="ui_mcm_scop_bad_scope_fov_desc">
+		<text>Z technických dùvodù musí být nìkteré zamìøovaèe, jako ACOG a Susat, výchozím zpùsobem umístìny dále, aby vypadaly normálnì. Toto nastavení je urèeno pro tyto zamìøovaèe.</text>
+	</string>
+
+	<string id="ui_mcm_scop_pistol_fov">
+		<text>Pistole</text>
+	</string>
+	<string id="ui_mcm_scop_pistol_fov_desc">
+		<text>Posuvník pro nastavení vzdálenosti pistolí</text>
+	</string>
+
+	<string id="ui_mcm_scop_grenade_fov">
+		<text>Granátomet</text>
+	</string>
+	<string id="ui_mcm_scop_grenade_fov_desc">
+		<text>Nižší hodnoty pøibližují zamìøovaè pøi použití pøipojených granátometù</text>
+	</string>
+	<string id="ui_mcm_scop_alt_fov">
+		<text>Alternativní míøidla</text>
+	</string>
+	<string id="ui_mcm_scop_alt_fov_desc">
+		<text>Nižší hodnoty pøibližují zamìøovaè pøi použití alternativních míøidel</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_add">
+		<text>Oddálit zbraò</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_add_desc">
+		<text>Oddálí zbraò, kterou držíte, zvýšením hodnoty FOV HUD pøi zoomu</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_subtract">
+		<text>Pøiblížit zbraò</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_subtract_desc">
+		<text>Pøiblíží zbraò, kterou držíte, snížením hodnoty FOV HUD pøi zoomu</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_reset">
+		<text>Resetovat aktuální zbraò</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_reset_desc">
+		<text>Nastaví hodnotu FOV HUD pøi zoomu na výchozí pro zbraò, kterou držíte</text>
+	</string>
+
+	<string id="ui_mcm_scop_snk_update_mcm">
+		<text>Aktualizujte MCM pro zobrazení této funkce. Výchozí klávesy jsou NumPad + a -, a Backspace pro resetování aktuální zbranì</text>
+	</string>
+
+</string_table>

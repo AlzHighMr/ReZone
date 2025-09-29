@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+<!-- ? ??????? ???? -->
+<string id="ba1_first_target_name">
+    <text>"Uvázl jsem": Útěk z laboratoře.</text>
+</string>
+
+<string id="ba1_first_target_descr">
+    <text>Co to sakra?! Jak jsem se sem dostal?! Musím najít cestu ven.</text>
+</string>
+
+<string id="ba1_radio_pomehi_name">
+    <text>"Rušení rádia": Zeptej se stalkerů.</text>
+</string>
+
+<string id="ba1_radio_pomehi_1_name">
+    <text>"Rušení rádia": Najdi .</text>
+</string>
+
+<string id="ba1_radio_pomehi_2_name">
+    <text>"Rušení rádia": Zeptej se stalkerů.</text>
+</string>
+
+<string id="ba1_radio_pomehi_3_name">
+    <text>"Rušení rádia": Zeptej se stalkerů.</text>
+</string>
+
+<string id="ba1_radio_pomehi_descr">
+    <text>Poslechl jsem nouzový signál od nějakých stalkerů, musím se jich zeptat, možná něco vědí.</text>
+</string>
+
+<string id="ba1_radio_pomehi_1_descr">
+    <text>Poslechl jsem nouzový signál od nějakých stalkerů, musím se jich zeptat, možná něco vědí.</text>
+</string>
+
+<string id="ba1_radio_pomehi_2_descr">
+    <text>Poslechl jsem nouzový signál od nějakých stalkerů, musím se jich zeptat, možná něco vědí.</text>
+</string>
+
+<string id="ba1_radio_pomehi_3_descr">
+    <text>Poslechl jsem nouzový signál od nějakých stalkerů, musím se jich zeptat, možná něco vědí.</text>
+</string>
+
+<string id="Prologue_name">
+    <text>"V hledání sebe": Pochopit, co se stalo?</text>
+</string>
+
+<string id="Prologue_descr">
+    <text>Je tu něco špatně... Jak jsem se sem dostal? A kde je moje výbava?!</text>
+</string>
+
+<string id="By_chance_name">
+    <text>"Náhodou": Počkej na zprávu od Gloomyho.</text>
+</string>
+
+<string id="By_chance_1_name">
+    <text>"Náhodou": Vrať se za Gloomym.</text>
+</string>
+
+<string id="By_chance_descr">
+    <text>Hlava mě bolí jako bowlingová koule, ale ruce a nohy mám v pořádku, takže asi přežiju. Gloomy mi řekl, abych si odpočinul, tak to udělám.</text>
+</string>
+
+<string id="By_chance_1_descr">
+    <text>Zajímavá oblast, i když je zvláštní, že jsem o ní nikdy neslyšel... Musím se vydat za Gloomym, vypadá to, že je čas začít pracovat.</text>
+</string>
+
+<string id="nerkasov_name">
+    <text>"Nikrasov": Najdi Nikrasova.</text>
+</string>
+
+<string id="nerkasov_1_name">
+    <text>"Nikrasov": Vrať se za Gloomym.</text>
+</string>
+
+<string id="nerkasov_descr">
+    <text>Není to jednoduchý úkol. Myslím, že bych měl nejdřív prozkoumat vesnici a pak se vydat dál.</text>
+</string>
+
+<string id="nerkasov_1_descr">
+    <text>Můj šestý smysl mě nezklamal, ten Nikrasov byl v jednom ze sklepů domů. Musím se vrátit za Gloomym a podat mu zprávu.</text>
+</string>
+
+<string id="stalkers_trust_name">
+    <text>"Důvěra stalkerů": Setkej se s vůdcem stalkerů.</text>
+</string>
+
+<string id="stalkers_trust_1_name">
+    <text>"Důvěra stalkerů": Odevzdej zprávu.</text>
+</string>
+
+<string id="stalkers_trust_1_descr">
+    <text>Rozhovor vypadal dobře, ale stalkeři jsou trochu nervózní, obyčejná nelibost by toto nevysvětlila. Myslím, že bych se měl zeptat Gloomyho a také mu podat zprávu.</text>
+</string>
+
+<string id="stalkers_trust_descr">
+    <text>Opět běžný poslíček, ale to je jen začátek. Musím se setkat s vůdcem stalkerů a předat mu PDA, a taky zkusit vyjednat nějakou spolupráci.</text>
+</string>
+
+<string id="oddities_name">
+    <text>"Podivnosti": Setkej se se Sapsanem.</text>
+</string>
+
+<string id="oddities_descr">
+    <text>Vůdce místních stalkerů se ozval a chce mluvit. Zvláštní, protože s námi nejsou v dobrých vztazích.</text>
+</string>
+
+<string id="kill_order_name">
+    <text>"Rozkaz k zabití": Zlikviduj Vintovu skupinu.</text>
+</string>
+
+<string id="kill_order_1_name">
+    <text>"Rozkaz k zabití": Prohledej mrtvoly.</text>
+</string>
+
+<string id="kill_order_2_name">
+    <text>"Rozkaz k zabití": Nahlas nálezy.</text>
+</string>
+
+<string id="kill_order_descr">
+    <text>Byl vydán rozkaz k zabití skupiny banditů vedené někým jménem Vint. Termín je jeden den.</text>
+</string>
+
+<string id="kill_order_1_descr">
+    <text>Stojí za to prohledat mrtvoly; mohou mít něco užitečného.</text>
+</string>
+
+<string id="kill_order_2_descr">
+    <text>V Vintově batohu jsem našel složku s dokumenty a PDA. Měl bych to prozkoumat, ale nejdřív nahlásit nález Gloomymu.</text>
+</string>
+
+<string id="i_give_one_vopros_name">
+    <text>"Jen se ptám": Promluv si se Sapsanem.</text>
+</string>
+
+<string id="i_give_one_vopros_descr">
+    <text>Jo... Teď musím najít ty zatracené dokumenty, ale nejdřív bych si měl promluvit se Sapsanem. On a jeho skupina tady žijí už nějakou dobu a pravděpodobně něco vědí.</text>
+</string>
+
+<string id="freedom_zakaz_name">
+    <text>"Rozkaz": Promluv si s Gloomym.</text>
+</string>
+
+<string id="freedom_zakaz_descr">
+    <text>Gloomy říká, že je zde rozkaz. Musím zjistit podrobnosti.</text>
+</string>
+
+<string id="freedom_helper_name">
+    <text>"Volný pomocník": Promluv si s velitelem družiny.</text>
+</string>
+
+<string id="freedom_helper_1_name">
+    <text>"Volný pomocník": Následuj skupinu.</text>
+</string>
+
+<string id="freedom_helper_2_name">
+    <text>"Volný pomocník": Promluv si s Jokerem.</text>
+</string>
+
+<string id="freedom_helper_3_name">
+    <text>"Volný pomocník": Zlikviduj nepřítele.</text>
+</string>
+
+<string id="freedom_helper_4_name">
+    <text>"Volný pomocník": Promluv si s Jokerem.</text>
+</string>
+
+<string id="freedom_helper_descr">
+    <text>Skupina nás kontaktovala a žádá o pomoc. Musím zjistit, co přesně chtějí.</text>
+</string>
+
+<string id="freedom_helper_1_descr">
+    <text>Z rozhovoru s Jokerem je jasné, že plánují obsadit starou továrnu, a mojí úlohou je jim pomoci.</text>
+</string>
+
+<string id="freedom_helper_2_descr">
+    <text>Zjisti jejich připravenost.</text>
+</string>
+
+<string id="freedom_helper_3_descr">
+    <text>Musím zlikvidovat nepřátelské skupiny, které továrnu obsadily.</text>
+</string>
+
+<string id="freedom_helper_4_descr">
+    <text>Nepřátelé byli zlikvidováni a továrna je nyní pod kontrolou "Svobody". Musím si promluvit s Jokerem a vyzvednout si odměnu.</text>
+</string>
+
+<string id="freedom_sciens_name">
+    <text>"Volná věda": Najdi skenery.</text>
+</string>
+
+<string id="freedom_sciens_1_name">
+    <text>"Volná věda": Najdi způsob, jak otevřít dveře.</text>
+</string>
+
+<string id="freedom_sciens_2_name">
+    <text>"Volná věda": Otevři dveře.</text>
+</string>
+
+<string id="freedom_sciens_3_name">
+    <text>"Volná věda": Vezmi skenery.</text>
+</string>
+
+<string id="freedom_sciens_4_name">
+    <text>"Volná věda": Vrať se za Jokerem.</text>
+</string>
+
+<string id="freedom_sciens_descr">
+    <text>Musím najít skenery ve staré administrativní budově.</text>
+</string>
+
+<string id="freedom_sciens_1_descr">
+    <text>Dveře jsou zamčené, musím najít klíče.</text>
+</string>
+
+<string id="freedom_sciens_2_descr">
+    <text>Mám klíče, teď už jen otevřít dveře.</text>
+</string>
+
+<string id="freedom_sciens_3_descr">
+    <text>Vezmi skenery.</text>
+</string>
+
+<string id="freedom_sciens_4_descr">
+    <text>Donést skenery Jokerovi.</text>
+</string>
+
+<string id="Spatial_anomaly_name">
+    <text>"Prostorová anomálie": Najdi rádio-frekvenční skener.</text>
+</string>
+
+<string id="Spatial_anomaly_1_name">
+    <text>"Prostorová anomálie": Naskenuj oblast.</text>
+</string>
+
+<string id="Spatial_anomaly_2_name">
+    <text>"Prostorová anomálie": Rozkóduj získaná data.</text>
+</string>
+
+<string id="Spatial_anomaly_3_name">
+    <text>"Prostorová anomálie": Počkej na dekódování.</text>
+</string>
+
+<string id="Spatial_anomaly_4_name">
+    <text>"Prostorová anomálie": Získej informace.</text>
+</string>
+
+<string id="Spatial_anomaly_5_name">
+    <text>"Prostorová anomálie": Pošli souřadnice východu.</text>
+</string>
+
+<string id="Spatial_anomaly_6_name">
+    <text>"Prostorová anomálie": Nahlas dokončení.</text>
+</string>
+
+<string id="Spatial_anomaly_descr">
+    <text>Musím najít rádio-frekvenční skener, místní technik by jeden měl mít.</text>
+</string>
+
+<string id="Spatial_anomaly_1_descr">
+    <text>Dobře, mám skener, teď ho jen musím použít k naskenování oblasti a uvidíme, co to přinese.</text>
+</string>
+
+<string id="Spatial_anomaly_2_descr">
+    <text>Data jsou nasbírána, ale potřebuji je rozkódovat, abych je přečetl. Měl bych zajít za technikem, ten mi s tím pomůže.</text>
+</string>
+
+<string id="Spatial_anomaly_3_descr">
+    <text>Teď už jen počkat...</text>
+</string>
+
+<string id="Spatial_anomaly_4_descr">
+    <text>Technik poslal zprávu, že dekódování je hotové; musím si vyzvednout data.</text>
+</string>
+
+<string id="Spatial_anomaly_5_descr">
+    <text>Mám data, teď je potřebuji poslat stalkerům.</text>
+</string>
+
+<string id="Spatial_anomaly_6_descr">
+    <text>Data byla odeslána a stalkeři jsou na cestě ke svobodě. Teď musím informovat Sapsana a vyzvednout si odměnu.</text>
+</string>
+
+<string id="go_sleeping_name">
+    <text>"Odpočinek": Jdi spát.</text>
+</string>
+
+<string id="go_sleeping_descr">
+    <text>Nejjednodušší bude teď jít spát, protože je toho ještě hodně, co je potřeba udělat...</text>
+</string>
+
+<string id="Exodus_descr">
+    <text>"Exodus": Setkej se s Yegerem.</text>
+</string>
+
+<string id="Exodus_1_descr">
+    <text>Yeger poslal zprávu, že se chce naléhavě setkat.</text>
+</string>
+
+<string id="otmorozky_name">
+    <text>"Výrostci": Vrať se k Sapsanovi.</text>
+</string>
+
+<string id="otmorozky_1_name">
+    <text>"Výrostci": Vezmi vybavení od Diesela.</text>
+</string>
+
+<string id="otmorozky_2_name">
+    <text>"Výrostci": Zlikviduj útočný oddíl.</text>
+</string>
+
+<string id="otmorozky_3_name">
+    <text>"Výrostci": Prohledej mrtvoly.</text>
+</string>
+
+<string id="otmorozky_4_name">
+    <text>"Výrostci": Vrať se k Sapsanovi.</text>
+</string>
+
+<string id="otmorozky_descr">
+    <text>Sapsan se něčeho bojí, myslím, že je nejlepší se k němu vrátit a zjistit, co se stalo.</text>
+</string>
+
+<string id="otmorozky_1_descr">
+    <text>Sapsan mi podepsal rozsudek smrti... Ale nemůžu odmítnout, tu skupinu si pamatuju. Dobře, musím vzít vybavení od Diesela a jít...</text>
+</string>
+
+<string id="otmorozky_2_descr">
+    <text>Mám vybavení, ale něco mi říká, že s tímto oddílem není něco v pořádku, a Diesel říká, že jejich vůdce je jakýsi „Mrakobes“. Už jsem to jméno slyšel...</text>
+</string>
+
+<string id="otmorozky_3_descr">
+    <text>Stojí za to prohledat mrtvoly, možná najdu něco užitečného.</text>
+</string>
+
+<string id="otmorozky_4_descr">
+    <text>Sapsan vypadá dost rozrušeně, měl bych se rychle vrátit do tábora.</text>
+</string>
+
+<string id="The_end_name">
+    <text>"Konec": Promluv si s Kareglazou.</text>
+</string>
+
+<string id="The_end_descr">
+    <text>Je čas vzít věci do svých rukou...</text>
+</string>
+
+<!-- Quest od Vasiliska -->
+<string id="ops_name">
+    <text>"Úspěchy druhých": Zkontroluj tipy.</text>
+</string>
+
+<string id="ops_1_name">
+    <text>"Úspěchy druhých": Doruč nalezený předmět.</text>
+</string>
+
+<string id="ops_2_name">
+    <text>"Úspěchy druhých": Počkej.</text>
+</string>
+
+<string id="ops_3_name">
+    <text>"Úspěchy druhých": Promluv si s Vasiliskem.</text>
+</string>
+
+<string id="ops_descr">
+    <text>Měl bych prozkoumat místa označená Vasiliskem, možná tam něco najdu.</text>
+</string>
+
+<string id="ops_1_descr">
+    <text>Nalezl jsem flash disk, ale je zamčený. Měl bych ho vzít k Vasiliskovi a uvidíme, co se stane.</text>
+</string>
+
+<string id="ops_2_descr">
+    <text>Vasilisk řekl, že dá flash disk Dieselovi na odemknutí. Měl bych počkat.</text>
+</string>
+
+<string id="ops_3_descr">
+    <text>Vypadá to na něco naléhavého. Měl bych co nejdříve mluvit s Vasiliskem.</text>
+</string>
+
+<string id="ops_s_name">
+    <text>"Prohledat lokaci"</text>
+</string>
+
+<string id="ops_s_descr">
+    <text>Jedna z lokalit označených Vasiliskem.</text>
+</string>
+
+<string id="old_friend_name">
+    <text>"Starý přítel": Setkej se se Sapsanem.</text>
+</string>
+
+<string id="old_friend_descr">
+    <text>Sapsan mě kontaktoval a říká, že má pro mě práci. Měl bych se s ním setkat.</text>
+</string>
+
+<string id="go_to_back_name">
+    <text>"Zpět do minulosti": Vyptávej se místních.</text>
+</string>
+
+<string id="go_to_back_1_name">
+    <text>"Zpět do minulosti": Vrať se ke Sapsanovi.</text>
+</string>
+
+<string id="go_to_back_descr">
+    <text>Musím se vyptat místních, možná vědí, kde najít toho „Zástupce“.</text>
+</string>
+
+<string id="go_to_back_1_descr">
+    <text>Mám souřadnice toho „Zástupce“, myslím, že je čas vrátit se ke Sapsanovi. Ale možná bych si s ním měl nejdřív promluvit?</text>
+</string>
+
+<string id="iawol_name">
+    <text>"V síti lží": Najdi skupinu stalkerů.</text>
+</string>
+
+<string id="iawol_1_name">
+    <text>"V síti lží": Zkontroluj tip.</text>
+</string>
+
+<string id="iawol_2_name">
+    <text>"V síti lží": Vrať se ke Spiderovi.</text>
+</string>
+
+<string id="iawol_3_name">
+    <text>"V síti lží": Najdi Spidera.</text>
+</string>
+
+<string id="iawol_descr">
+    <text>Musím najít skupinu stalkerů, kteří vzali nějaké zařízení z laboratoře. Myslím, že bych měl kontaktovat Sapsana.</text>
+</string>
+
+<string id="iawol_1_descr">
+    <text>Khmury mi dal tip na přibližné místo skupiny, kterou hledám, musím to zkontrolovat.</text>
+</string>
+
+<string id="iawol_2_descr">
+    <text>Skupina je mrtvá a zařízení nemají, zdá se, že mě někdo předběhl. PDA poznámky ale říkají něco jiného. Musím se vrátit ke Spiderovi.</text>
+</string>
+
+<string id="iawol_3_descr">
+    <text>Věděl jsem, že tady není všechno v pořádku... Ošálil mě, musím ho najít. Asi šel dolů do laboratoře.</text>
+</string>
+
+<string id="radio_silence_name">
+    <text>"Radiové ticho": Setkej se se Sapsanem.</text>
+</string>
+
+<string id="radio_silence_1_name">
+    <text>"Radiové ticho": Najdi zmizelou skupinu.</text>
+</string>
+
+<string id="radio_silence_2_name">
+    <text>"Radiové ticho": Vrať se ke Sapsanovi.</text>
+</string>
+
+<string id="radio_silence_3_name">
+    <text>"Radiové ticho": Počkej.</text>
+</string>
+
+<string id="radio_silence_4_name">
+    <text>"Radiové ticho": Promluv si se Sapsanem.</text>
+</string>
+
+<string id="radio_silence_5_name">
+    <text>"Radiové ticho": Najdi vraha.</text>
+</string>
+
+<string id="radio_silence_descr">
+    <text>Vůdce stalkerů mě kontaktoval a řekl, že pro mě má práci. Měl bych si s ním promluvit.</text>
+</string>
+
+<string id="radio_silence_1_descr">
+    <text>Mým úkolem je najít skupinu stalkerů, kteří se už nějakou dobu neozvali. Myslím, že bych měl zkontrolovat jejich tábor, který Sapsan označil.</text>
+</string>
+
+<string id="radio_silence_2_descr">
+    <text>Našel jsem skupinu, ale jsou všichni mrtví, vypadá to na práci profesionála. Nicméně jsem našel PDA na jednom z těl. Měl bych to ukázat Sapsanovi.</text>
+</string>
+
+<string id="radio_silence_3_descr">
+    <text>PDA jsem dal Sapsanovi, řekl, že mám počkat. Dokud mám čas, měl bych navštívit Vasiliska, ten pro mě něco má.</text>
+</string>
+
+<string id="radio_silence_4_descr">
+    <text>Když jsem nastavoval skenery, Sapsan mě kontaktoval a požádal, abych se rychle vrátil. Neměl bych otálet.</text>
+</string>
+
+<string id="radio_silence_5_descr">
+    <text>Jsem rád, že Sapsan není blázen, jinak bych teď už šel peklem. Dobře, musím najít toho vraha.</text>
+</string>
+
+<string id="abnormal_activity_name">
+    <text>"Abnormální aktivita": Nastav skenery.</text>
+</string>
+
+<string id="abnormal_activity_1_name">
+    <text>"Abnormální aktivita": Vrať se pro odměnu.</text>
+</string>
+
+<string id="abnormal_activity_descr">
+    <text>Vasilisk mi dal nějakou rutinní práci, myslím, že zatímco to dělám, PDA stalkera bude odemčeno.</text>
+</string>
+
+<string id="abnormal_activity_1_descr">
+    <text>Všechny skenery jsou nastaveny. Musím se vrátit k Vasiliskovi a vyzvednout si zbytek odměny.</text>
+</string>
+
+<!-- Druhá větev -->
+<string id="Trouble_name">
+    <text>"V labyrintu": Setkej se se Sapsanem.</text>
+</string>
+
+<string id="Trouble_descr">
+    <text>Sapsan je klíč, doslova, k dokončení hlavní práce! Musím k němu pospíšit.</text>
+</string>
+
+<string id="Nothing_personal_name">
+    <text>"Nic osobního": Vydej se pro vybavení.</text>
+</string>
+
+<string id="Nothing_personal_1_name">
+    <text>"Nic osobního": Setkej se s velitelem žoldáků.</text>
+</string>
+
+<string id="Nothing_personal_2_name">
+    <text>"Nic osobního": Nahlas situaci Sapsanovi.</text>
+</string>
+
+<string id="Nothing_personal_descr">
+    <text>Než vyrazím, musím navštívit místního technika, abych vyzvedl vybavení.</text>
+</string>
+
+<string id="Nothing_personal_1_descr">
+    <text>Zdá se, že to sedí, teď můžu jít zkontrolovat ty žoldáky.</text>
+</string>
+
+<string id="Nothing_personal_2_descr">
+    <text>Žoldáci vysvětlili situaci, která se stala, a mám sklony jim věřit. Musím o tom informovat Sapsana.</text>
+</string>
+
+<string id="Easy_Money_name">
+    <text>"Snadné peníze": Promluv si s Khmurym.</text>
+</string>
+
+<string id="Easy_Money_1_name">
+    <text>"Snadné peníze": Vylákaj Yegera ven.</text>
+</string>
+
+<string id="Easy_Money_2_name">
+    <text>"Snadné peníze": Zabij Yegera.</text>
+</string>
+
+<string id="Easy_Money_4_name">
+    <text>"Snadné peníze": Sleduj Yegera.</text>
+</string>
+
+<string id="Easy_Money_3_name">
+    <text>"Snadné peníze": Doruč dokumenty a vyzvedni odměnu.</text>
+</string>
+
+<string id="Easy_Money_descr">
+    <text>Zdá se, že Khmury má pro mě práci, měl bych si s ním promluvit.</text>
+</string>
+
+<string id="Easy_Money_1_descr">
+    <text>Tak... Khmury mi teď určitě udělal malou hlavu, teď musím přijít na to, jak vylákat toho zatraceného Yegera z tábora.</text>
+</string>
+
+<string id="Easy_Money_2_descr">
+    <text>Dobře, teď je tu klid, je čas ho zabít...</text>
+</string>
+
+<string id="Easy_Money_4_descr">
+    <text>Sleduj Yegera.</text>
+</string>
+
+<string id="Easy_Money_3_descr">
+    <text>Měl jsem štěstí, dokumenty byly u Yegera, teď můžu jít zpět ke Khmurymu.</text>
+</string>
+
+<string id="Humanity_name">
+    <text>"Člověčenství": Setkej se s Kareglazou.</text>
+</string>
+
+<string id="Humanity_descr">
+    <text>Peníze jsou jedna věc, ale pořád musím zůstat člověkem. Tyto věci donesu sestře zemřelého a opustím ZÓNu s čistým svědomím.</text>
+</string>
+
+<string id="zamanchiviy_client_name">
+    <text>"Lákavý klient": Setkej se s Quietem.</text>
+</string>
+
+<string id="zamanchiviy_client_descr">
+    <text>Během rozhovoru se Sapsanem jsem se dozvěděl o stalkerovi jménem Quiet, a jak říkal Sapsan, hledal mě a teď je v táboře. Měl bych si s ním promluvit.</text>
+</string>
+
+<string id="searher_na_pol_stavki_name">
+    <text>"Detektiv na částečný úvazek": Najdi průzkumníka jménem Petrukha.</text>
+</string>
+
+<string id="searher_na_pol_stavki_1_name">
+    <text>"Detektiv na částečný úvazek": Najdi způsob, jak odemknout PDA.</text>
+</string>
+
+<string id="searher_na_pol_stavki_2_name">
+    <text>"Detektiv na částečný úvazek": Počkej, až bude PDA odemčeno.</text>
+</string>
+
+<string id="searher_na_pol_stavki_3_name">
+    <text>"Detektiv na částečný úvazek": Vyzvedni PDA od Diesela.</text>
+</string>
+
+<string id="searher_na_pol_stavki_4_name">
+    <text>"Detektiv na částečný úvazek": Prozkoumej oblast kolem tunelu se "Zarkasem".</text>
+</string>
+
+<string id="searher_na_pol_stavki_5_name">
+    <text>"Detektiv na částečný úvazek": Vrať se k Tichému.</text>
+</string>
+
+<string id="searher_na_pol_stavki_descr">
+    <text>Jak řekl Tichý, incident se stal nedávno. Stopa je stále čerstvá, takže stojí za to prohlédnout místo útoku a pak se rozhodnout, co dál.</text>
+</string>
+
+<string id="searher_na_pol_stavki_1_descr">
+    <text>Na místě masakru ještě byli snorkové, ale to je jen část problému. Hlavní problém je, že PDA průzkumníka je zamčené. Myslím, že Diesel to dokáže odemknout. Stojí za to s ním o tom mluvit.</text>
+</string>
+
+<string id="searher_na_pol_stavki_2_descr">
+    <text>Musíme počkat, až Diesel odemkne PDA Petrukhy.</text>
+</string>
+
+<string id="searher_na_pol_stavki_3_descr">
+    <text>Diesel oznámil, že PDA je odemčeno a lze si ho vyzvednout.</text>
+</string>
+
+<string id="searher_na_pol_stavki_4_descr">
+    <text>PDA obsahovalo spoustu informací, ale nejdůležitější je, že máme stopu, kde najít Petrukhu. Musíme vyrazit na sever k tunelu se "Zarkasem".</text>
+</string>
+
+<string id="searher_na_pol_stavki_5_descr">
+    <text>Tolik k tomu, teď se můžeme vrátit k Tichému pro odměnu.</text>
+</string>
+
+
+<!-- Additional Quests (Author: BratNazavr) --><string id="blow_to_the_eyes_name">
+    <text>"Úder do očí": Eliminuj stalkera.</text>
+</string>
+<string id="blow_to_the_eyes_1_name">
+    <text>"Úder do očí": Vrať se pro odměnu.</text>
+</string>
+<string id="blow_to_the_eyes_descr">
+    <text>Sapsan má obavy z jednoho stalkera, který občas chodí kolem tábora. Podle Sapsana je nějak spojený s bandity. Musí být odstraněn.</text>
+</string>
+<string id="blow_to_the_eyes_1_descr">
+    <text>Stalker a skupina "Banditů" byli eliminováni. Teď je čas vyzvednout odměnu.</text>
+</string>
+
+<string id="ammunition_is_a_matter_of_principle_name">
+    <text>"Amunice je otázka principu": Najdi ztracený oddíl.</text>
+</string>
+<string id="ammunition_is_a_matter_of_principle_1_name">
+    <text>"Amunice je otázka principu": Vrať se pro odměnu.</text>
+</string>
+<string id="ammunition_is_a_matter_of_principle_descr">
+    <text>Jak říkal Sapsan, jeho průzkumný oddíl zmizel v bažinaté oblasti, musíme je najít.</text>
+</string>
+<string id="ammunition_is_a_matter_of_principle_1_descr">
+    <text>Průzkumný oddíl je mrtvý, ale nějaké vybavení se dá zachránit. Musíme se vrátit k Sapsanovi.</text>
+</string>
+
+<string id="it_smells_like_kerosene_name">
+    <text>"Páchne to naftou": Vyzvedni balíček.</text>
+</string>
+<string id="it_smells_like_kerosene_1_name">
+    <text>"Páchne to naftou": Vrať se pro odměnu.</text>
+</string>
+<string id="it_smells_like_kerosene_descr">
+    <text>Jak řekl Diesel, musím vyzvednout "Balíček" a doručit ho jemu.</text>
+</string>
+<string id="it_smells_like_kerosene_1_descr">
+    <text>Balíček mám u sebe, teď můžu jít zpět za Dieselem.</text>
+</string>
+
+<string id="amber_values_name">
+    <text>"Hodnota jantaru": Vyzvedni balíček.</text>
+</string>
+<string id="amber_values_1_name">
+    <text>"Hodnota jantaru": Vrať se pro odměnu.</text>
+</string>
+<string id="amber_values_descr">
+    <text>Kurýrní práce je celkem jednoduchá, stačí vyzvednout a doručit. Nic složitého.</text>
+</string>
+<string id="amber_values_1_descr">
+    <text>Balíček z Yantaru mám u sebe, teď musím vyrazit za Vasiliskem.</text>
+</string>
+
+<string id="legend_name">
+    <text>"Legenda": Najdi vojenský oblek.</text>
+</string>
+<string id="legend_1_name">
+    <text>"Legenda": Doruč nalezený předmět.</text>
+</string>
+<string id="legend_descr">
+    <text>Oblek bych měl hledat v doupěti, které je na západ od bažiny.</text>
+</string>
+<string id="legeng_1_descr">
+    <text>Doruč nalezený předmět a vyzvedni odměnu.</text>
+</string>
+
+<string id="sqf_name">
+    <text>"Noví obyvatelé": Vyzvedni objednávku od Vasiliska.</text>
+</string>
+<string id="sqf_1_name">
+    <text>"Noví obyvatelé": Doruč objednávku Jokerovi.</text>
+</string>
+<string id="sqf_descr">
+    <text>Joker mě poslal vyzvednout objednávku od Vasiliska.</text>
+</string>
+<string id="sqf_1_descr">
+    <text>Objednávku mám u sebe, teď se můžu vrátit k Jokerovi.</text>
+</string>
+
+<!-- Additional Storyline -->
+<string id="habar_real_name">
+    <text>"Skutečný chlapík": Najdi zásobu gangsterů.</text>
+</string>
+<string id="habar_real_1_name">
+    <text>"Skutečný chlapík": Doruč zásobu.</text>
+</string>
+<string id="habar_real_descr">
+    <text>Vint říká, že jeho "kamarád" někde v továrně schoval zásobu, ale kde přesně?</text>
+</string>
+<string id="habar_real_1_descr">
+    <text>Zásobu mám u sebe, ale mám ji vrátit Vintovi, nebo doručit stalkerům...</text>
+</string>
+
+<string id="OldFriend_name">
+    <text>"Starý přítel": Setkej se s Khmurym.</text>
+</string>
+<string id="OldFriend_descr">
+    <text>Khmury navázal kontakt. Doufám, že pro mě má něco užitečného.</text>
+</string>
+
+<!-- SEARCH ARTEFACTS --><string id="s_af_fuzz_kolobok_name">
+    <text>"Kolobok": Najdi artefakt</text>
+</string>
+<string id="s_af_fuzz_kolobok_descr">
+    <text>Musíš najít artefakt – "Kolobok", pravděpodobně se nachází v kyselých anomáliích.</text>
+</string>
+<string id="s_af_fuzz_kolobok_1_name">
+    <text>"Kolobok": Doruč artefakt klientovi</text>
+</string>
+<string id="s_af_fuzz_kolobok_1_descr">
+    <text>Artefakt byl nalezen, nyní je potřeba ho doručit klientovi.</text>
+</string>
+
+<string id="s_af_mincer_meat_name">
+    <text>"Kousek masa": Najdi artefakt</text>
+</string>
+<string id="s_af_mincer_meat_descr">
+    <text>Musíš najít artefakt – "Kousek masa", pravděpodobně se nachází v kyselých anomáliích.</text>
+</string>
+<string id="s_af_mincer_meat_1_name">
+    <text>"Kousek masa": Doruč artefakt klientovi</text>
+</string>
+<string id="s_af_mincer_meat_1_descr">
+    <text>Artefakt byl nalezen, nyní je potřeba ho doručit klientovi.</text>
+</string>
+
+<string id="s_af_cristall_name">
+    <text>"Krystal": Najdi artefakt</text>
+</string>
+<string id="s_af_cristall_descr">
+    <text>Musíš najít artefakt – "Krystal", pravděpodobně se nachází v termálních anomáliích.</text>
+</string>
+<string id="s_af_cristall_1_name">
+    <text>"Krystal": Doruč artefakt klientovi</text>
+</string>
+<string id="s_af_cristall_1_descr">
+    <text>Artefakt byl nalezen, nyní je potřeba ho doručit klientovi.</text>
+</string>
+
+<string id="s_af_electra_moonlight_name">
+    <text>"Měsíční světlo": Najdi artefakt</text>
+</string>
+<string id="s_af_electra_moonlight_descr">
+    <text>Musíš najít artefakt – "Měsíční světlo", pravděpodobně se nachází v elektrických anomáliích.</text>
+</string>
+<string id="s_af_electra_moonlight_1_name">
+    <text>"Měsíční světlo": Doruč artefakt klientovi</text>
+</string>
+<string id="s_af_electra_moonlight_1_descr">
+    <text>Artefakt byl nalezen, nyní je potřeba ho doručit klientovi.</text>
+</string>
+
+
+	<!-- -->
+	
+<string id="pp_name">
+    <text>"Projekt Prométheus": Čekej na signál od Khmuryho.</text>
+</string>
+<string id="pp_1_name">
+    <text>"Projekt Prométheus": Promluv si s Khmurym.</text>
+</string>
+<string id="pp_1_1_name">
+    <text>"Projekt Prométheus": Získej přístupovou kartu.</text>
+</string>
+<string id="pp_2_name">
+    <text>"Projekt Prométheus": Vrať se ke Khmurymu.</text>
+</string>
+<string id="pp_3_name">
+    <text>"Projekt Prométheus": Sestup do laboratoře.</text>
+</string>
+<string id="pp_4_name">
+    <text>"Projekt Prométheus": Prozkoumej komplex.</text>
+</string>
+<string id="pp_5_name">
+    <text>"Projekt Prométheus": ...</text>
+</string>
+
+<string id="pp_descr">
+    <text>Khmury říkal, že se blíží něco velkého, musím čekat na jeho signál.</text>
+</string>
+<string id="pp_1_descr">
+    <text>Je tady signál! Musím se rychle dostat ke Khmurymu.</text>
+</string>
+<string id="pp_1_1_descr">
+    <text>Musím získat přístupovou kartu. Abyste ji dostal, musím splnit úkol pro Sapsana.</text>
+</string>
+<string id="pp_2_descr">
+    <text>Mám přístupovou kartu, teď se musím vrátit ke Khmurymu.</text>
+</string>
+<string id="pp_3_descr">
+    <text>Sestup do laboratoře.</text>
+</string>
+<string id="pp_4_descr">
+    <text>Na místě nebyli Khmurovi vojáci a on je v panice. Přesto jsme skoro u cíle, musíme pokračovat a prozkoumat komplex.</text>
+</string>
+<string id="pp_5_descr">
+    <text>Co? COŽE!?</text>
+</string>
+
+<!-- Vedlejší úkoly od Ohiievycha -->
+<string id="hmyriy_vtor_quest_1_t">
+    <text>Zkontroluj oblast na přítomnost mutantů.</text>
+</string>
+<string id="hmyriy_vtor_quest_1_d">
+    <text>Khmury mi zadal zkontrolovat lokaci kvůli nebezpečnému mutantu, který už zabil pár jeho vojáků. Měl bych tam zajít.</text>
+</string>
+<string id="hmyriy_vtor_quest_2_t">
+    <text>Zabij tu bestii.</text>
+</string>
+<string id="hmyriy_vtor_quest_2_d">
+    <text>Musím tu bestii rychle zabít, než mě taky rozdrtí!</text>
+</string>
+<string id="hmyriy_vtor_quest_3_t">
+    <text>Oznam Khmurymu dokončení úkolu.</text>
+</string>
+<string id="hmyriy_vtor_quest_3_d">
+    <text>Musím rychle zpátky do tábora a říct Khmurymu, co jsem udělal.</text>
+</string>
+
+
+</string_table>

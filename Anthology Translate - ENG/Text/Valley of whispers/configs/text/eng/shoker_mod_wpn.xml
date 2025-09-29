@@ -1,0 +1,2875 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+    <string_table>
+
+	<string id="ui_shell_name">
+		<text>.</text>
+	</string>
+	
+	<string id="ui_swm_abort">
+		<text>Game was stopped because of some errors. Please report the last 15 lines of log to the topic on forum AMK-team.ru, Ap-pro.ru or ModDB</text>
+	</string>
+	
+	<string id="ui_swm_luacap_error">
+		<text>The modification can only be launched from \bin\host.exe. If when launching with it your game crashes after the black screen, please read the FAQ supplied in the mods description.</text>
+	</string>
+	
+	<string id="ui_swm_version_error">
+		<text>The modification is designed only for 1.6.02 version.</text>
+	</string>
+	
+	<string id="ui_mm_swm_master">
+		<text>Start</text>
+	</string>
+
+	<string id="st_addons_gl_stop">
+		<text>You can't change addons while grenade launcher is active.</text>
+	</string>
+
+	<string id="st_addons_box">
+		<text>Addons pouch</text>
+	</string>
+	<string id="st_addons_box_descr">
+		<text>This pouch is used to relieve the tactical grip from AS «Val»</text>
+	</string>				
+
+	<string id="st_equipment_base">
+		<text>Equipment</text>
+	</string>
+	<string id="st_equipment_base_desc">
+		<text>The useless part of stalker equipment.</text>
+	</string>		
+	
+	<!-- Bipods -->
+	
+	<string id="st_action_use_item">
+		<text>Use ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_turret_hide_wpn">
+		<text>Keep your hands free</text>
+	</string>	
+	<string id="st_turret_undeploy">
+		<text>Decompose ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_turret_bipod_prefix">
+		<text>(Bipods)</text>
+	</string>
+	
+	<!-- Authors -->
+	
+	<string id="ui_swm_credits_1">
+		<text>%c[255,255,1,1]RicocheT (LanceW)%c[default] - Founder of mod, animations, work with models, YouTube-channel</text>
+	</string>	
+
+	<string id="ui_swm_credits_2">
+		<text>%c[255,255,1,1]Shoker%c[default] - Ideas, scripts, gameplay and tweaking.</text>
+	</string>	
+	
+	<string id="ui_swm_credits_3">
+		<text>%c[255,255,1,1]MaxOFF%c[default] - Textures and support</text>
+	</string>	
+	
+	<string id="ui_swm_credits_4">
+		<text>%c[255,255,1,1]Translate team%c[default] - Greer, Shizz, BFG, Brigadir and Nikitostalker</text>
+	</string>	
+	
+	<string id="ui_swm_credits_5">
+		<text>Special thanks:</text>
+	</string>	
+
+	<string id="ui_swm_credits_6">
+		<text>%c[255,255,1,1]Alpet (NLC Mod)%c[default] - Launcher and engine extension.</text>
+	</string>	
+	
+	<string id="ui_swm_credits_7">
+		<text>%c[255,255,1,1]Sin! (GUNSLINGER mod)%c[default] - Engine reversing.</text>
+	</string>	
+
+	<string id="ui_swm_credits_8">
+		<text>%c[255,255,1,1]Buttmammal%c[default] - Upgrade icons.</text>
+	</string>	
+	
+	<string id="ui_swm_credits_9">
+		<text>%c[255,255,1,1]MadMax%c[default] - models specifically for mod (AK-12, Flamethrower and other)</text>
+	</string>	
+	
+	<!-- Tutorial -->
+
+	<string id="st_tutorial">
+		<text>Tutorial</text>
+	</string>
+	<string id="st_tutorial_descr">
+		<text>Flash-Drive with a set of instructions that will help better navigate in this modification. Strongly recommended for inspection! \nSeriously o_O\nPS: Bad english included.</text>
+	</string>
+	
+	<string id="st_tutorial_1">
+		<text>
+		%c[255,1,255,255]Weapon wear%c[default] - all weapons has Max Wear (Resource) parameter, which tells how many shots the weapon can do before his condition falls to zero. Once the condition is lowered to 90% - the weapons have a chance to jam while shooting. Furthermore - it affect on weapon accuracy. Completely worn-out weapons has 300%-accuracy drop. So it makes sense to repair weapons already at around 90%.
+		</text>
+	</string>
+	
+	<string id="st_tutorial_2">
+		<text>
+		%c[255,1,255,255]Trading%c[default] - useless weapons can be sold to stalkers or traders. Price of weapon depends on its condition. Moreover - specialized traders will not buy a weapon with a low condition. However, the Barmen at Skadovsk and Medic at Yanov buy any weapon, but at very low prices. They can take expensive but broken weapons.
+		</text>
+	</string>
+
+	<string id="st_tutorial_3">
+		<text>
+		%c[255,1,255,255]Repair%c[default] - mechanics can repair weapon with an 140% cost-factor. This means that the repair of weapons below 40% will prove more expensive than buying a new gun. Price of upgrades is not included in repair cost.
+		</text>
+	</string>
+
+	<string id="st_tutorial_4">
+		<text>
+		%c[255,1,255,255]Slow-Mo%c[default] - can be activated by pressing T (default). It should not be abused: when slow-mo active - player lose stamina and health. Low stamina = health will decrease faster and output will be more painful. Energy drink and medkit can smooth out-effect. If Slow-Mo for some reasons does not work - check out the FAQ.
+		</text>
+	</string>
+	
+	<string id="st_tutorial_5">
+		<text>
+		%c[255,1,255,255]Bipods%c[default] - weapons with bipods can be installed by hold-and-release V button (default) at place where you want to do this.
+		</text>
+	</string>
+	
+	<string id="st_tutorial_6">
+		<text>
+		%c[255,1,255,255]Double scope%c[default] - you can switch the scope if the weapon had two variants of it by pressing Middle Mouse Button (default).
+		</text>
+	</string>	
+	
+	<string id="st_tutorial_7">
+		<text>
+		%c[255,1,255,255]Mod console%c[default] - can be activated by U-button (default). Use 'help' and 'list' to see aviable commands (not translated!). You can use it to tweak mod in-game for yourself.
+		</text>
+	</string>	
+	
+	<string id="st_tutorial_8">
+		<text>
+		%c[255,1,255,255]Key Binding%c[default] - you can change mod-keys by editing gamedata\scripts\___KEYS.script.
+		</text>
+	</string>	
+	
+	<string id="st_tutorial_9">
+		<text>
+		%c[255,1,255,255]Bullet Speed and Recoil%c[default] - than more velocity - than faster and farther bullet can fly. Recoil specifed by two values. The first value - impact by first shot. The second  (in round brackets) - increase by each shot.
+		</text>
+	</string>	
+	
+	<string id="st_tutorial_10">
+		<text>
+		%c[255,1,255,255]!Bug Reports!%c[default] - if during the game you got crash (usually with beep): first of all - save last 15-20 lines of your log-file (immediately! after crash) Go to mod-thread at ModDB and look for solution, or post your info from log. Enjoy the game. :)
+		</text>
+	</string>	
+	
+	<!-- Addons -->
+	
+	<string id="st_addon_silencer_base">
+		<text>Silencer</text>
+	</string>
+	<string id="st_addon_silencer_base_descr">
+		<text>
+		An attachment for your weapon, allows you to keep silent shooting. Reduces the combat qualities of the weapon but helps reduce the recoil.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Hit Power: -20%
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: -50%
+		\n%c[255,1,255,255]• %c[default]Accuracy: -60% 
+		\n%c[255,1,255,255]• %c[default]Recoil reduction: 50%		
+		</text>
+	</string>	
+	
+	<string id="st_addon_silencer">
+		<text>Silencer 5.45</text>
+	</string>
+	<string id="st_addon_silencer_5x56">
+		<text>Silencer 5.56</text>
+	</string>
+	<string id="st_addon_silencer_7x62_RU">
+		<text>Silencer 7.62x39</text>
+	</string>
+	<string id="st_addon_silencer_7x62_NATO">
+		<text>Silencer 7.62 (RU\NATO)</text>
+	</string>
+	<string id="st_addon_silencer_9x18">
+		<text>Silencer 9x18</text>
+	</string>
+	<string id="st_addon_silencer_9x18_descr">
+		<text>
+		An attachment for your weapon, allows you to keep silent shooting. Reduces the combat qualities of the weapon but helps reduce the recoil.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Hit Power: -20%
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: -50%
+		\n%c[255,1,255,255]• %c[default]Accuracy: -60% 
+		\n%c[255,1,255,255]• %c[default]Recoil reduction: 50%		
+		</text>
+	</string>		
+	<string id="st_addon_silencer_9x19">
+		<text>Silencer 9x19</text>
+	</string>
+	<string id="st_addon_silencer_9x19_descr">
+		<text>
+		An attachment for your weapon, allows you to keep silent shooting. Reduces the combat qualities of the weapon but helps reduce the recoil.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Hit Power: -20%
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: -50%
+		\n%c[255,1,255,255]• %c[default]Accuracy: -60% 
+		\n%c[255,1,255,255]• %c[default]Recoil reduction: 50%		
+		</text>
+	</string>	
+	<string id="st_addon_silencer_9x39">
+		<text>Silencer 9x39</text>
+	</string>		
+	<string id="st_addon_silencer_45">
+		<text>Silencer .45</text>
+	</string>
+	<string id="st_addon_silencer_45_descr">
+		<text>
+		An attachment for your weapon, allows you to keep silent shooting. Reduces the combat qualities of the weapon but helps reduce the recoil.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Hit Power: -20%
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: -50%
+		\n%c[255,1,255,255]• %c[default]Accuracy: -60% 
+		\n%c[255,1,255,255]• %c[default]Recoil reduction: 50%		
+		</text>
+	</string>	
+	
+	<string id="st_addon_silencer_9x39_vsk">
+		<text>Spec-attachment for VSK-94</text>
+	</string>	
+	<string id="st_addon_silencer_9x39_vsk_descr">
+		<text>
+		A special silencer that changes VSK-94 from an automatic rifle for close quarters combat into a sniper rifle on par with VSS "Vintorez", with the only downside being the damage.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Hit Power: -30%		
+		\n%c[255,1,255,255]• %c[default]Accuracy: +60% 
+		\n%c[255,1,255,255]• %c[default]Recoil reduction: 75%		
+		</text>
+	</string>		
+	
+	<string id="st_addon_grip">
+		<text>Tactical grip for AS «Val»</text>
+	</string>
+	<string id="st_addon_grip_descr">
+		<text>Tactical grip, for installation only on brown AS «Val». Damped recoil due to a small loss of fire-precision.</text>
+	</string>	
+	
+	<string id="st_grenade_launcher">
+		<text>GP-25 «Kostyor»</text>
+	</string>
+	<string id="st_grenade_launcher_descr">
+		<text>A single shot, front loaded, rifled underbarrel grenade launcher for assault rifles made in Warsaw Pact countries. The firing mechanism is self-cocking, with a manual safety catch and automatic shot prevention if incorrectly installed onto a rifle. Uses VOG-25 grenades.</text>
+	</string>
+	<string id="st_grenade_launcher_m203">
+		<text>M203</text>
+	</string>
+	<string id="st_grenade_launcher_m203_descr">
+		<text>A modified M203 grenade launcher that has been shortened by three inches, attached to weapons by means of a Picatinny Rail. Thanks to a changed mount, this grenade launcher is widely used around the world.</text>
+	</string>
+		
+	<string id="st_addon_pso">
+		<text>PSO-1 Scope</text>
+	</string>
+	<string id="st_addon_pso_descr">
+		<text>PSO-1 - medium range scope for RU-weapon.</text>
+	</string>
+	
+	<string id="st_addon_kobra">
+		<text>Kobra Scope</text>
+	</string>
+	<string id="st_addon_kobra_descr">
+		<text>Kobra EKP-1C-03 - close combat scope for RU-weapon.</text>
+	</string>
+	
+	<string id="st_addon_acog">
+		<text>ACOG Scope</text>
+	</string>
+	<string id="st_addon_scope_acog_descr">
+		<text>ACOG TA31RCO-M4 - medium range scope for NATO-weapon.</text>
+	</string>
+	<string id="st_addon_eot">
+		<text>EOTech 553 Scope</text>
+	</string>
+	<string id="st_addon_eot_descr">
+		<text>Eotech 553 - close combat scope for NATO-weapon.</text>
+	</string>
+	
+	<string id="st_addon_susat">
+		<text>SUSAT Scope</text>
+	</string>
+	<string id="st_addon_susat_descr">
+		<text>Sight Unit, Small Arms, Trilux - Optical scope for close-medium combat. Only for L85A2.</text>
+	</string>
+	
+	<string id="st_addon_scope">
+		<text>PO4x34 Scope</text>
+	</string>
+	<string id="st_addon_scope_descr">
+		<text>OTs-14 «Groza» standart optical scope.</text>
+	</string>
+	
+	<string id="st_addon_scope_x2.7">
+		<text>PO4x17 Scope</text>
+	</string>
+	<string id="st_addon_scope_x2.7_descr">
+		<text>A 2.7x OTs-14 «Groza» optical scope for urban combat at close range. Attached to weapons by means of a dovetail mount.</text>
+	</string>	
+	
+	<string id="st_addon_scope_detector">
+		<text>PO4x34 «Detector» Scope</text>
+	</string>
+	<string id="st_addon_scope_detector_descr">
+		<text>OTs-14 «Groza» optical scope with a built-in heat visor used to identify heat sources typical of the human body. Designed for use by special forces. Attached to weapons by means of a dovetail mount. Medium zoom.</text>
+	</string>
+	
+	<string id="st_addon_scope_night_vision">
+		<text>PO4x34 «Night» Scope</text>
+	</string>
+	<string id="st_addon_scope_night_vision_descr">
+		<text>An image intensifier night vision OTs-14 «Groza» scope for combat in darkness. Attached to weapons by means of a dovetail mount. Medium zoom.</text>	
+	</string>
+	
+	<!-- Ammunition -->
+
+	<string id="ammo-normal_descr">
+		<text>
+			Usual round without any advantages or disadvantages.
+		</text>
+	</string>
+	<string id="ammo-ap_descr">
+		<text>
+			Armor-Piercing rounds.
+			\n		
+			\n%c[255,1,255,255]• %c[default]Hit Power: +30%
+			\n%c[255,1,255,255]• %c[default]Accuracy: -30% 
+			\n%c[255,1,255,255]• %c[default]Barrel wear: x2			
+		</text>
+	</string>
+	<string id="ammo-sniper_descr">
+		<text>
+			Sniper rounds.
+			\n
+			\n%c[255,1,255,255]• %c[default]Hit Power: -40%
+			\n%c[255,1,255,255]• %c[default]Accuracy: +40% 
+			\n%c[255,1,255,255]• %c[default]Barrel wear: x2			
+		</text>
+	</string>
+	
+	<!--------------------------------->
+	
+	<string id="ammo-9x18-norm">
+		<text>Ammo 9x18 mm</text>
+	</string>
+	<string id="ammo-9x18-pierc">
+		<text>Ammo 9x18 mm (AP)</text>
+	</string>
+	<string id="ammo-9x18-sniper">
+		<text>Ammo 9x18 mm (+P)</text>
+	</string>
+
+
+	<string id="ammo-9x19-fmj">
+		<text>Ammo 9x19 mm</text>
+	</string>
+	<string id="ammo-9x19-pbp">
+		<text>Ammo 9x19 mm (AP)</text>
+	</string>
+	<string id="ammo-9x19-sniper">
+		<text>Ammo 9x19 mm (+P)</text>
+	</string>
+
+	
+	<string id="ammo-5.45x39-norm">
+		<text>Ammo 5,45x39 mm</text>
+	</string>
+	<string id="ammo-5.45x39-pierc">
+		<text>Ammo 5,45x39 mm (AP)</text>
+	</string>
+	<string id="ammo-5.45x39-sniper">
+		<text>Ammo 5,45x39 mm (+P)</text>
+	</string>
+
+	
+	<string id="ammo-5.56x45-norm">
+		<text>Ammo 5,56x45 mm</text>
+	</string>
+	<string id="ammo-5.56x45-pierc">
+		<text>Ammo 5,56x45 mm (AP)</text>
+	</string>
+	<string id="ammo-5.56x45-sniper">
+		<text>Ammo 5,56x45 mm (+P)</text>
+	</string>	
+
+	
+	<string id="ammo-7.62x39-fmj">
+		<text>Ammo 7,62x39 mm</text>
+	</string>
+	<string id="ammo-7.62x39-ap">
+		<text>Ammo 7,62x39 mm (AP)</text>
+	</string>
+	<string id="ammo-7.62x39-sniper">
+		<text>Ammo 7,62x39 mm (+P)</text>
+	</string>	
+
+	
+	<string id="ammo-7.62x51-fmj">
+		<text>Ammo 7.62x51 mm NATO</text>
+	</string>
+	<string id="ammo-7.62x51-ap">
+		<text>Ammo 7.62x51 mm NATO (AP)</text>
+	</string>
+
+	
+	<string id="ammo-7.62x54-ap">
+		<text>Ammo 7,62x54 mm (Belt)</text>
+	</string>
+
+	
+	<string id="ammo-7.62x54-7h1">
+		<text>Ammo 7,62x54 mm 7H1</text>
+	</string>
+	<string id="ammo-7.62x54-7h14">
+		<text>Ammo 7,62x54 mm (AP)</text>
+	</string>
+
+	
+	<string id="ammo-9x39-pab9">
+		<text>Ammo 9x39 mm (PAB-9)</text>
+	</string>
+	<string id="ammo-9x39-pab9_descr">
+		<text>
+			Cheap version of 9x39 mm cartridge. Currently, forbidden to use in official forces, becouse creates high pressure during firing. Which reduces resource of gun.
+			\n
+			\n%c[255,1,255,255]• %c[default]Hit Power: +10%
+			\n%c[255,1,255,255]• %c[default]Accuracy: -20% 		
+		</text>
+	</string>
+	<string id="ammo-9x39-sp5">
+		<text>Ammo 9x39 mm (SC-5)</text>
+	</string>
+	<string id="ammo-9x39-sp5_descr">
+		<text>
+		Sniper cartridge of 9x39 caliber. It was made with high accuracy for reducing of weapon breaking.
+		\n
+		\n%c[255,1,255,255]• %c[default]Barrel wear out two times slower	
+		</text>
+	</string>
+	
+	
+	<string id="ammo-11.43x23-fmj">
+		<text>Ammo 11,43x23 mm (.45)</text>
+	</string>
+	<string id="ammo-11.43x23-pierc">
+		<text>Ammo 11,43x23 mm (.45 AP)</text>
+	</string>
+	<string id="ammo-11.43x23-sniper">
+		<text>Ammo 11,43x23 mm (.45 +P)</text>
+	</string>	
+
+	
+	<string id="ammo-12.7x54">
+		<text>Ammo 12,7x54 mm (SC-130)</text>
+	</string>
+
+	
+	<string id="ammo-12x70-buck">
+		<text>Ammo 12x70 Buckshot</text>
+	</string>
+	<string id="ammo-12x70-buck_descr">
+		<text>
+		Standard 12-caliber round filled with twelve buckshot-s. For hunting purposes and large single enemies. Optimal at medium ranges.
+		</text>			
+	</string>
+	<string id="ammo-12x76-dart">
+		<text>Ammo 12x76 Shot</text>
+	</string>
+	<string id="ammo-12x76-dart_descr">
+		<text>
+		Standard 12-caliber round filled with 6 mm shot in a quantity of 32 pieces. Suitable for suppression of enemy groups, or hunt for small targets. Perfect for close combat.
+		</text>				
+	</string>
+	<string id="ammo-12x76-zhekan">
+		<text>Ammo 12x76 Slug</text>
+	</string>
+	<string id="ammo-12x76-zhekan_descr">
+		<text>
+		Sub-caliber round with detachable tray. Has good accuracy and cause great damage on hit. Good for long distance.
+		</text>				
+	</string>	
+	
+	
+	<string id="ammo-50.ae_name">
+		<text>Ammo 12,7x33 mm (.50 AE)</text>
+	</string>
+
+	
+	<string id="ammo-12.7x99">
+		<text>Ammo 12,7x99 mm (.50 BMG)</text>
+	</string>
+
+	
+	<string id="ammo-338_name">
+		<text>Ammo 8,6x70 mm (.338 Lapua)</text>
+	</string>
+
+
+	<string id="ammo-m60-ap">
+		<text>Ammo 7.62x51 mm NATO (Belt)</text>
+	</string>
+
+
+	<string id="ammo-m134-ap">
+		<text>Ammo 7.62x51 mm (M134)</text>
+	</string>
+
+		
+	<string id="ammo_57x28_name">
+		<text>Ammo 5.7x28 mm</text>
+	</string>
+	<string id="ammo_57x28-pierc_name">
+		<text>Ammo 5.7x28 mm (AP)</text>
+	</string>
+	<string id="ammo_57x28-sniper_name">
+		<text>Ammo 5.7x28 mm (+P)</text>
+	</string>	
+		
+		
+	<string id="ammo-flamer_name">
+		<text>Tank with fuel</text>
+	</string>
+	<string id="ammo-flamer_descr">
+		<text>
+		The balloon with a solution of fuel and parts of fire artefacts which used as analogue for expensive napalm.
+		</text>
+	</string>
+	
+	
+	<string id="ammo-gauss">
+		<text>Batteries</text>
+	</string>	
+	<string id="ammo-gauss_descr">
+		<text>Batteries that use a capsulated fragment of the Flash artifact as their power source. Manufactured using hi-tech equipment.</text>
+	</string>
+	<string id="ammo-gauss_cardan">
+		<text>Homemade batteries</text>
+	</string>
+	<string id="ammo-gauss_cardan_descr">
+		<text>These lower-capacity cells use capsulated fragments of the Flash artifact as their power source. Their lower capacity is due to makeshift production conditions and lack of specialized equipment.</text>
+	</string>
+
+
+	<string id="ammo-flare_yelow">
+		<text>Signal rocket (yellow)</text>
+	</string>
+	<string id="ammo-flare_green">
+		<text>Signal rocket (green)</text>
+	</string>
+	<string id="ammo-flare_blue">
+		<text>Signal rocket (blue)</text>
+	</string>	
+	<string id="ammo-flare-descr">
+		<text>
+		Used in the flare gun, illuminates a large area for 50 seconds.
+		</text>
+	</string>
+
+	
+	<string id="ammo-detonator">
+		<text>Flash-card with launch codes.</text>
+	</string>
+	<string id="ammo-detonator_descr">
+		<text>
+		A USB drive with the launch codes from SBU. Used in the detonator, becomes useless after the rocket launch.
+		</text>
+	</string>	
+	
+	
+	<string id="ammo-volt">
+		<text>Shard</text>
+	</string>	
+	<string id="ammo-volt_descr">
+		<text>A fragment of an electric artifact, which was charged in anomaly. It is very unstable and in the chance of the casing being damaged lets out all the energy comparable to a hit from electra-anomaly. Used in the Electra Cannon.</text>
+	</string>
+
+	
+	<string id="ammo-pg-7vl">
+		<text>PG-7VL Rocket</text>
+	</string>
+	<string id="ammo-pg-7vl_descr">
+		<text>
+		Armor-piercing anti-tank grenade which can be used against armored targets and targets behind the shelters.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 10
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 6m
+		\n%c[255,1,255,255]• %c[default]Fragments: 40 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 20m
+		\n%c[255,1,255,255]• %c[default]Fly speed: 55-200 m\sec		
+		</text>
+	</string>
+
+	
+	<string id="ammo-m209">
+		<text>M203 Grenade</text>
+	</string>
+	<string id="ammo-m209_descr">
+		<text>
+		Base 40mm grenade for M203.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 6
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 3m
+		\n%c[255,1,255,255]• %c[default]Fragments: 10 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 5m 
+		\n%c[255,1,255,255]• %c[default]Fly speed: 65 m\sec	
+		</text>
+	</string>
+
+	
+	<string id="ammo-vog-25">
+		<text>VOG-25 Grenade</text>
+	</string>
+	<string id="ammo-vog-25_descr">
+		<text>
+		Base grenade for GP-25 «Kostyor».
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 5
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 5m
+		\n%c[255,1,255,255]• %c[default]Fragments: 20 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 8m 
+		\n%c[255,1,255,255]• %c[default]Fly speed: 75 m\sec		
+		</text>
+	</string>
+
+	
+	<string id="ammo-vog-25t">
+		<text>VOG-25T Grenade</text>
+	</string>
+	<string id="ammo-vog-25t_descr">
+		<text>
+		Thermo-grenade for GP-25 «Kostyor».
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 3
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 10m
+		\n%c[255,1,255,255]• %c[default]Fragments: 0 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 0m 
+		\n%c[255,1,255,255]• %c[default]Fly speed: 75 m\sec 		
+		</text>
+	</string>
+	
+	
+	<!-- Cold Arms -->
+	
+	<string id="st_knife">
+		<text>Knife</text>
+	</string>	
+	<string id="st_knife_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Specialization: Cold Arms
+		\nNote: Army knife. Sharpened and made from stainless steel. The optimal for melee combat.
+		</text>
+	</string>
+	
+	<string id="st_axe">
+		<text>Axe</text>
+	</string>	
+	<string id="st_axe_descr">
+		<text>
+		Old village ax, weaker than knife, but can hit further.
+		\n(LMB) - Far weak attack
+		\n(RMB) - Close strong attack		
+		\nUnique.
+		\n%c[255,1,255,255]• %c[default]Specialization: Cold Arms
+		</text>
+	</string>	
+
+	<!-- Grenades -->
+	
+	<string id="st_grenade_f1">
+		<text>F1 Grenade</text>
+	</string>
+	<string id="st_grenade_f1_descr">
+		<text>
+		Hand grenade. A big number of its fragments can pierce armor of average degree of protection.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 6
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 6m
+		\n%c[255,1,255,255]• %c[default]Fragments: 60 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 15m 
+		\n%c[255,1,255,255]• %c[default]Time to explosion: 2.5 sec 		
+		</text>
+	</string>
+	
+	<string id="st_grenade_rgd5">
+		<text>RGD-5 Grenade</text>
+	</string>
+	<string id="st_grenade_rgd5_descr">
+		<text>
+		Hand grenade with a small radius of destruction, but it has a big explosive power.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 3.5
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 10m
+		\n%c[255,1,255,255]• %c[default]Fragments: 10 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 10m
+		\n%c[255,1,255,255]• %c[default]Time to explosion: 2.5 sec 		
+		</text>
+	</string>
+	
+	<string id="st_grenade_rgn">
+		<text>RGN Grenade</text>
+	</string>
+	<string id="st_grenade_rgn_descr">
+		<text>
+		Hand grenade with a small radius of destruction, but it explodes faster than the others grenades.
+		\n		
+		\n%c[255,1,255,255]• %c[default]Explosion power: 4
+		\n%c[255,1,255,255]• %c[default]Explosion radius: 5m
+		\n%c[255,1,255,255]• %c[default]Fragments: 5 pcs
+		\n%c[255,1,255,255]• %c[default]Fragments radius: 5m 
+		\n%c[255,1,255,255]• %c[default]Time to explosion: 1.5 sec 		
+		</text>
+	</string>
+	
+	<string id="st_grenade_smoke">
+		<text>Smoke Grenade</text>
+	</string>
+	<string id="st_grenade_smoke_descr">
+		<text>A hand smoke grenade. Used to put up smoke screens. Once the grenade is thrown it takes 10 seconds for the smoke screen to expand.</text>
+	</string>
+	
+	<string id="st_grenade_rgs">
+		<text>RGS «Zarya» Grenade</text>
+	</string>
+	<string id="st_grenade_rgs_descr">
+		<text>
+		Hand lighting grenade which used for illumination of the dark places.
+		\n
+		\n%c[255,1,255,255]• %c[default]Initial radius: 30m
+		\n%c[255,1,255,255]• %c[default]Duration: 80 sec 		
+		</text>
+	</string>
+	
+	<!-- Pistols\Revolvers -->
+	
+	<string id="st_wpn_pm">
+		<text>PM</text>
+	</string>
+	<string id="st_wpn_pm_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.0 (+0.07)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 160 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_pm_actor">
+		<text>Honorary PM</text>
+	</string>
+	<string id="st_wpn_pm_actor_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.0 (+0.07)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 160 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		\n\nAn ancient PM received by Degtyarev as a reward for "Successful execution of highly dangerous state orders, as well as valor and courage shown in the line of duty".
+		</text>		
+	</string>
+	
+	<string id="st_wpn_cz75">
+		<text>CZ-75</text>
+	</string>
+	<string id="st_wpn_cz75_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 16
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.1 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 200 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_fort">
+		<text>Fort 12</text>
+	</string>
+	<string id="st_wpn_fort_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 12
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 140 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_walther">
+		<text>Walther P99</text>
+	</string>
+	<string id="st_wpn_walther_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 16
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.25 (+0.07)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 180 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+
+	<string id="st_wpn_beretta">
+		<text>Beretta 92</text>
+	</string>
+	<string id="st_wpn_beretta_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 15
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.4 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 230 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+
+	<string id="st_wpn_strike_one">
+		<text>AF1 «Strike One»</text>
+	</string>
+	<string id="st_wpn_strike_one_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 17
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.9 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 190 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_hpsa">
+		<text>FN Browning HP</text>
+	</string>
+	<string id="st_wpn_hpsa_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 13
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.8 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 260 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_pb">
+		<text>PB</text>
+	</string>
+	<string id="st_wpn_pb_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.92 (+0.04)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 70 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Integrated
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+
+	<string id="st_wpn_usp">
+		<text>USP 45</text>
+	</string>
+	<string id="st_wpn_usp_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 11.43x23 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 12
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.0 (+0.07)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 120 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_usp_match">
+		<text>USP 45 Match</text>
+	</string>
+	<string id="st_wpn_usp_match_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 11.43x23 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 12
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.5 (+0.05)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 140 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_sig226">
+		<text>SIG-Sauer P226</text>
+	</string>
+	<string id="st_wpn_sig226_nimble">
+		<text>SIG-Sauer P226 «Alpine»</text>
+	</string>	
+	<string id="st_wpn_sig226_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 11.43x23 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.1 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 130 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_colt1911">
+		<text>Colt 1911</text>
+	</string>
+	<string id="st_wpn_colt1911_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 11.43x23 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 7
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8550 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.0 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 140 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+		
+	<string id="st_wpn_eagle">
+		<text>IMI «Desert Eagle»</text>
+	</string>
+	<string id="st_wpn_eagle_nimble">
+		<text>«Steppe Eagle»</text>
+	</string>	
+	<string id="st_wpn_eagle_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: .50 AE
+		\n%c[255,1,255,255]• %c[default]Mag Size: 7
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.65 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 90 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+	
+	<string id="st_wpn_oc33">
+		<text>OTs-33 «Pernach»</text>
+	</string>
+	<string id="st_wpn_oc33_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 27
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.3 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 120 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>
+		
+	<string id="st_wpn_apb">
+		<text>APB</text>
+	</string>
+	<string id="st_wpn_apb_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.25 (+0.22)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 130 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Pistol
+		</text>
+	</string>	
+	
+	<!-- PDW -->
+	
+	<string id="st_wpn_ak74u">
+		<text>AKS-74u</text>
+	</string>
+	<string id="st_wpn_ak74u_kobra">
+		<text>AKS-74u (Kobra)</text>
+	</string>
+	<string id="st_wpn_ak74u_pso">
+		<text>AKS-74u (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_ak74u_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 12000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.16)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 365 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_mp5">
+		<text>HK MP5A2</text>
+	</string>
+	<string id="st_wpn_mp5_eot">
+		<text>HK MP5A2 (EOT)</text>
+	</string>
+	<string id="st_wpn_mp5_acog">
+		<text>HK MP5A2 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_mp5_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 4000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.26 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 200 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	<string id="st_wpn_mp5sd">
+		<text>HK MP5SD</text>
+	</string>
+	<string id="st_wpn_mp5sd_eot">
+		<text>HK MP5SD (EOT)</text>
+	</string>
+	<string id="st_wpn_mp5sd_acog">
+		<text>HK MP5SD (ACOG)</text>
+	</string>	
+	<string id="st_wpn_mp5sd_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.6 (+0.075)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Integrated
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_vihr">
+		<text>SR-3M "Vikhr"</text>
+	</string>
+	<string id="st_wpn_vihr_kobra">
+		<text>SR-3M "Vikhr" (Kobra)</text>
+	</string>
+	<string id="st_wpn_vihr_pso">
+		<text>SR-3M "Vikhr" (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_vihr_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 4000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.8 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 180 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_p90">
+		<text>FN P90</text>
+	</string>
+	<string id="st_wpn_p90_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.7x28 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 50
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.65 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 350 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+
+	<string id="st_wpn_bizon">
+		<text>PP-19 «Bizon»</text>
+	</string>
+	<string id="st_wpn_bizon_kobra">
+		<text>PP-19 «Bizon» (Kobra)</text>
+	</string>
+	<string id="st_wpn_bizon_pso">
+		<text>PP-19 «Bizon» (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_bizon_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x18 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 64
+		\n%c[255,1,255,255]• %c[default]Max Wear: 4000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.15 (+0.18)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 170 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_mp7">
+		<text>HK MP7A1</text>
+	</string>
+	<string id="st_wpn_mp7_eot">
+		<text>HK MP7A1 (EOT)</text>
+	</string>
+	<string id="st_wpn_mp7_acog">
+		<text>HK MP7A1 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_mp7_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.7x28 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 35
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.75 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 300 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_pp2000">
+		<text>PP-2000</text>
+	</string>
+	<string id="st_wpn_pp2000_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x19 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 4000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.4 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 2.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 200 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x1.2
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<!-- Sniper rifles -->
+	
+	<string id="st_wpn_vintorez">
+		<text>VSS «Vintorez»</text>
+	</string>
+	<string id="st_wpn_vintorez_nimble">
+		<text>VSS «Tide»</text>
+	</string>	
+	<string id="st_wpn_vintorez_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 10
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.4 (+0.3)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 240 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x4
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Integrated
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		\n
+		\n%c[255,1,255,255]Dual scope when PSO-1 installed%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_svd">
+		<text>Dragunov SVD</text>
+	</string>
+	<string id="st_wpn_svd_nimble">
+		<text>SVD «Lynx»</text>
+	</string>	
+	<string id="st_wpn_svd_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x54 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 10
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.5 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 430 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x5 
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+	
+	<string id="st_wpn_svu">
+		<text>Dragunov SVU-A</text>
+	</string>
+	<string id="st_wpn_svu_kobra">
+		<text>SVU-A (Kobra)</text>
+	</string>
+	<string id="st_wpn_svu_pso">
+		<text>SVU-A (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_svu_nimble">
+		<text>SVU-A2</text>
+	</string>	
+	<string id="st_wpn_svu_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x54 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 10
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.1 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 430 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A, 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<string id="st_wpn_vssk">
+		<text>VKS «Exhaust»</text>
+	</string>
+	<string id="st_wpn_vssk_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12.7x54 mm 
+		\n%c[255,1,255,255]• %c[default]Mag Size: 5
+		\n%c[255,1,255,255]• %c[default]Max Wear: 800 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.5 (+0.0)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 250 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x10
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Integrated
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<string id="st_wpn_m110">
+		<text>Mk.11 Mod.0</text>
+	</string>
+	<string id="st_wpn_m110_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 10
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.0 (+0.7)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 460 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x6
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<string id="st_wpn_hk417">
+		<text>HK 417</text>
+	</string>
+	<string id="st_wpn_hk417_eot">
+		<text>HK 417 (EOT)</text>
+	</string>
+	<string id="st_wpn_hk417_acog">
+		<text>HK 417 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_hk417_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.4 (+0.5)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 400 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A, 1
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+	
+	<string id="st_wpn_m14">
+		<text>M14 DMR</text>
+	</string>
+	<string id="st_wpn_m14_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1800 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.5 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 380 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A, 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x1.6
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<string id="st_wpn_awm">
+		<text>Arctic Warfare Magnum</text>
+	</string>
+	<string id="st_wpn_awm_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: .338
+		\n%c[255,1,255,255]• %c[default]Mag Size: 5
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.1 (+0.7)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 450 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x10
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+	
+	<string id="st_wpn_wa2000">
+		<text>WA2000</text>
+	</string>
+	<string id="st_wpn_wa2000_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 6
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.5 (+0.75)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 500 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x10
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<string id="st_wpn_m95">
+		<text>Barrett M95</text>
+	</string>
+	<string id="st_wpn_m95_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12.7x99 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 5
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.5 (+1.0)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 430 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x10
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper
+		</text>
+	</string>
+
+	<!-- Assault Rifles -->
+
+	<string id="st_wpn_abakan">
+		<text>AN-94 «Abakan»</text>
+	</string>
+	<string id="st_wpn_abakan_kobra">
+		<text>AN-94 «Abakan» (Kobra)</text>
+	</string>	
+	<string id="st_wpn_abakan_pso">
+		<text>AN-94 «Abakan» (PSO-1)</text>
+	</string>		
+	<string id="st_wpn_abakan_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.0 (+1.86)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 2
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: GP-25
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]The first shot has no recoil%c[default]
+		</text>
+	</string>
+	
+	<string id="st_wpn_ak74">
+		<text>AK-74</text>
+	</string>
+	<string id="st_wpn_ak74_kobra">
+		<text>AK-74 (Kobra)</text>
+	</string>
+	<string id="st_wpn_ak74_pso">
+		<text>AK-74 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_ak74_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 12000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.8 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: GP-25
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_aks74">
+		<text>AKS-74</text>
+	</string>
+	<string id="st_wpn_aks74_kobra">
+		<text>AKS-74 (Kobra)</text>
+	</string>
+	<string id="st_wpn_aks74_pso">
+		<text>AKS-74 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_aks74_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 12000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.8 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: GP-25
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_fn2000">
+		<text>FN F2000</text>
+	</string>
+	<string id="st_wpn_fn2000_nimble">
+		<text>FN F2000 «Stinger»</text>
+	</string>	
+	<string id="st_wpn_fn2000_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.8 (+0.3)
+		\n%c[255,1,255,255]• %c[default]Reload time: 5.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 450 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x3\Iron Sight
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: Integrated
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]Double scope%c[default]			
+		</text>
+	</string>
+
+	<string id="st_wpn_g36c">
+		<text>HK G36C</text>
+	</string>
+	<string id="st_wpn_g36c_acog">
+		<text>HK G36C (ACOG)</text>
+	</string>
+	<string id="st_wpn_g36c_eot">
+		<text>HK G36C (EOT)</text>
+	</string>	
+	<string id="st_wpn_g36c_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.2 (+0.1)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 450 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 2, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Acog, Eotech
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>	
+	
+	<string id="st_wpn_g36">
+		<text>HK G36</text>
+	</string>
+	<string id="st_wpn_g36_nimble">
+		<text>HK G36 «Strike»</text>
+	</string>	
+	<string id="st_wpn_g36_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.1 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 490 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 2, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x1.5\3.5
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]Double scope%c[default]		
+		</text>
+	</string>
+	
+	<string id="st_wpn_groza">
+		<text>OTs-14 «Groza»</text>
+	</string>
+	<string id="st_wpn_groza_nimble">
+		<text>OTs-14 «Storm»</text>
+	</string>	
+	<string id="st_wpn_groza_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.55 (+0.25)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 290 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: PO4x34
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: Integrated 
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_l85">
+		<text>L85A2</text>
+	</string>
+	<string id="st_wpn_l85_eot">
+		<text>L85A2 (EOT)</text>
+	</string>
+	<string id="st_wpn_l85_acog">
+		<text>L85A2 (ACOG)</text>
+	</string>
+	<string id="st_wpn_l85_susat">
+		<text>L85A2 (SUSAT)</text>
+	</string>		
+	<string id="st_wpn_l85_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.65 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x4
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]Double scope with SUSAT%c[default]
+		</text>
+	</string>	
+	
+	<string id="st_wpn_lr300">
+		<text>Z-M LR300</text>
+	</string>
+	<string id="st_wpn_lr300_eot">
+		<text>Z-M LR300 (EOT)</text>
+	</string>
+	<string id="st_wpn_lr300_acog">
+		<text>Z-M LR300 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_lr300_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 390 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_vsk94">
+		<text>VSK-94</text>
+	</string>
+	<string id="st_wpn_vsk94_kobra">
+		<text>VSK-94 (Kobra)</text>
+	</string>	
+	<string id="st_wpn_vsk94_pso">
+		<text>VSK-94 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_vsk94_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.6 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 220 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes (Special)
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault\Sniper
+		\n
+		\n%c[255,1,255,255]Spec-attachment turns it from assault to sniper rifle%c[default]		
+		</text>
+	</string>
+	
+	<string id="st_wpn_val">
+		<text>AS «Val»</text>
+	</string>
+	<string id="st_wpn_val_kobra">
+		<text>AS «Val» (Kobra)</text>
+	</string>
+	<string id="st_wpn_val_pso">
+		<text>AS «Val» (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_val_grip">
+		<text>AS «Val» (Grip)</text>
+	</string>
+	<string id="st_wpn_val_grip_kobra">
+		<text>AS «Val» (Kobra, Grip)</text>
+	</string>
+	<string id="st_wpn_val_grip_pso">
+		<text>AS «Val» (PSO-1, Grip)</text>
+	</string>		
+	<string id="st_wpn_val_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 9x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.7 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 210 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Integrated
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]Dual scope when PSO-1 installed%c[default]			
+		</text>
+	</string>
+
+	<string id="st_wpn_ak105">
+		<text>AK-105</text>
+	</string>
+	<string id="st_wpn_ak105_kobra">
+		<text>AK-105 (Kobra)</text>
+	</string>
+	<string id="st_wpn_ak105_pso">
+		<text>AK-105 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_ak105_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 13000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.82 (+0.18)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 420 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_a1_a3">
+		<text>Steyr AUG A1</text>
+	</string>
+	<string id="st_wpn_aug_a1_a3_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.65 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 460 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x4
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n
+		\n%c[255,1,255,255]Double scope%c[default]			
+		</text>
+	</string>
+
+	<string id="st_wpn_m4a1">
+		<text>Colt M4A1</text>
+	</string>
+	<string id="st_wpn_m4a1_eot">
+		<text>Colt M4A1 (EOT)</text>
+	</string>
+	<string id="st_wpn_m4a1_acog">
+		<text>Colt M4A1 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_m4a1_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.0 (+0.15)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_m16a2">
+		<text>Colt M16A2</text>
+	</string>
+	<string id="st_wpn_m16a2_eot">
+		<text>Colt M16A2 (EOT)</text>
+	</string>
+	<string id="st_wpn_m16a2_acog">
+		<text>Colt M16A2 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_m16a2_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 490 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_m16a3">
+		<text>Colt M16A3</text>
+	</string>
+	<string id="st_wpn_m16a3_eot">
+		<text>Colt M16A3 (EOT)</text>
+	</string>
+	<string id="st_wpn_m16a3_acog">
+		<text>Colt M16A3 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_m16a3_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 490 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_sig550">
+		<text>SIG SG550</text>
+	</string>
+	<string id="st_wpn_sig550_eot">
+		<text>SIG SG550 (EOT)</text>
+	</string>
+	<string id="st_wpn_sig550_acog">
+		<text>SIG SG550 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_sig550_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.85 (+0.24)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 490 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_sig550_strelok">
+		<text>SIG SG550 «Sniper»</text>
+	</string>
+	<string id="st_wpn_sig550_strelok_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.85 (+0.24)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 490 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\n\nAlthough this instance of assault rifle is not released today, can be clearly seen, that previous owner had arms carefully. On the rifle installed non-detacheable ACOG scope, and this gun reassemled for a sniper-shooting. Auto-shoot mode is not provided. On the butt-stock gently cut word «Gunslinger» and 16 small crosses.
+		</text>
+	</string>
+		
+	<string id="st_wpn_scar">
+		<text>FN SCAR-L</text>
+	</string>
+	<string id="st_wpn_scar_eot">
+		<text>FN SCAR-L (EOT)</text>
+	</string>
+	<string id="st_wpn_scar_acog">
+		<text>FN SCAR-L (ACOG)</text>
+	</string>	
+	<string id="st_wpn_scar_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.2 (+0.21)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 390 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: M203
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_famas_pro">
+		<text>FAMAS G2</text>
+	</string>
+	<string id="st_wpn_famas_pro_eot">
+		<text>FAMAS G2 (EOT)</text>
+	</string>
+	<string id="st_wpn_famas_pro_acog">
+		<text>FAMAS G2 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_famas_pro_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_ak12">
+		<text>AK-12</text>
+	</string>
+	<string id="st_wpn_ak12_kobra">
+		<text>AK-12 (Kobra)</text>
+	</string>	
+	<string id="st_wpn_ak12_pso">
+		<text>AK-12 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_ak12_eot">
+		<text>AK-12 (EOT)</text>
+	</string>	
+	<string id="st_wpn_ak12_acog">
+		<text>AK-12 (ACOG)</text>
+	</string>		
+	<string id="st_wpn_ak12_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.4 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 360 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, 3, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG, Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: GP-25
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_ak47">
+		<text>AKM</text>
+	</string>
+	<string id="st_wpn_ak47_kobra">
+		<text>AKM (Kobra)</text>
+	</string>
+	<string id="st_wpn_ak47_pso">
+		<text>AKM (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_ak47_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 12000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.3 (+0.25)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 360 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: GP-25
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+	
+	<string id="st_wpn_galil">
+		<text>Galil-ARM</text>
+	</string>
+	<string id="st_wpn_galil_eot">
+		<text>Galil-ARM (EOT)</text>
+	</string>
+	<string id="st_wpn_galil_acog">
+		<text>Galil-ARM (ACOG)</text>
+	</string>	
+	<string id="st_wpn_galil_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 25
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.5 (+0.24)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 460 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_ares">
+		<text>Ares «Shrike»</text>
+	</string>
+	<string id="st_wpn_ares_eot">
+		<text>Ares «Shrike» (EOT)</text>
+	</string>
+	<string id="st_wpn_ares_acog">
+		<text>Ares «Shrike» (ACOG)</text>
+	</string>	
+	<string id="st_wpn_ares_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 100
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.0 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 7.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 390 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		</text>
+	</string>
+		
+	<string id="st_wpn_aug_a3">
+		<text>Steyr AUG A3</text>
+	</string>
+	<string id="st_wpn_aug_a3_eot">
+		<text>Steyr AUG A3 (EOT)</text>
+	</string>
+	<string id="st_wpn_aug_a3_acog">
+		<text>Steyr AUG A3 (ACOG)</text>
+	</string>	
+	<string id="st_wpn_aug_a3_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 8000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.65 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 460 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		</text>
+	</string>
+
+	<string id="st_wpn_rpk_tactik">
+		<text>RPK-74 Drum x100</text>
+	</string>
+	<string id="st_wpn_rpk_tactik_kobra">
+		<text>RPK-74 Drum x100 (Kobra)</text>
+	</string>
+	<string id="st_wpn_rpk_tactik_pso">
+		<text>RPK-74 Drum x100 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_rpk_tactik_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 100
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.4)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 480 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Doesn't support special ammo%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_rpk74">
+		<text>RPK-74</text>
+	</string>
+	<string id="st_wpn_rpk74_kobra">
+		<text>RPK-74 (Kobra)</text>
+	</string>
+	<string id="st_wpn_rpk74_pso">
+		<text>RPK-74 (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_rpk74_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.45x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 45
+		\n%c[255,1,255,255]• %c[default]Max Wear: 7000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.9 (+0.4)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 480 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Doesn't support special ammo%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]		
+		</text>
+	</string>
+	
+	<!-- Shotguns -->
+	
+	<string id="st_wpn_usas12">
+		<text>Daewoo USAS-12</text>
+	</string>
+	<string id="st_wpn_usas12_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 20
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 2.0 (+0.5)
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.3 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 80 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+
+	<string id="st_wpn_toz34">
+		<text>TOZ-34</text>
+	</string>
+	<string id="st_wpn_toz34_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 2
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.4 (+0.3)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 150 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+	
+	<string id="st_wpn_toz34_clip">
+		<text>TOZ-34 (Sawed-Off)</text>
+	</string>
+	<string id="st_wpn_toz34_clip_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 2
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.6 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 60 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		\n
+		\n%c[255,1,255,255]Can be taken with detector%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_bm16_full">
+		<text>BM-16</text>
+	</string>
+	<string id="st_wpn_bm16_full_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 2
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.4 (+0.3)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 150 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+
+	<string id="st_wpn_bm16">
+		<text>BM-16 (Sawed-Off)</text>
+	</string>
+	<string id="st_wpn_bm16_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 2
+		\n%c[255,1,255,255]• %c[default]Max Wear: 3000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.6 (+0.2)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		\n
+		\n%c[255,1,255,255]Can be taken with detector%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_rem_870">
+		<text>Remington 870</text>
+	</string>
+	<string id="st_wpn_rem_870_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 6
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.36 (+0.32)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+
+	<string id="st_wpn_wincheaster1300">
+		<text>Mossberg 590 Sawn-Off</text>
+	</string>
+	<string id="st_wpn_wincheaster1300_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 4
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.56 (+0.22)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+	
+	<string id="st_wpn_spas12">
+		<text>SPAS-12</text>
+	</string>
+	<string id="st_wpn_spas12_nimble">
+		<text>SPAS-12 «Carabineer»</text>
+	</string>	
+	<string id="st_wpn_spas12_descr">	
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.1 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 110 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>	
+	
+	<string id="st_wpn_protecta">
+		<text>Protecta</text>
+	</string>	
+	<string id="st_wpn_protecta_nimble">
+		<text>Protecta «Street Sweeper»</text>
+	</string>	
+	<string id="st_wpn_protecta_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 12
+		\n%c[255,1,255,255]• %c[default]Max Wear: 2000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.16 (+0.42)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+	
+	<string id="st_wpn_m3super90">
+		<text>Benelli M3 «Super 90»</text>
+	</string>
+	<string id="st_wpn_m3super90_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.3 (+0.35)
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 130 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x1.6
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+
+	<string id="st_wpn_saiga">
+		<text>Saiga 12K</text>
+	</string>
+	<string id="st_wpn_saiga_kobra">
+		<text>Saiga 12K (Kobra)</text>
+	</string>
+	<string id="st_wpn_saiga_pso">
+		<text>Saiga 12K (PSO-1)</text>
+	</string>	
+	<string id="st_wpn_saiga_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 8
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 4.0 (+0.4)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Kobra, PSO-1
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		</text>
+	</string>
+
+	<string id="st_wpn_saiga_trapper">
+		<text>Saiga 12K «Predator»</text>
+	</string>
+	<string id="st_wpn_saiga_trapper_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 12x70 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 13
+		\n%c[255,1,255,255]• %c[default]Max Wear: 1500 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 3.5 (+0.3)
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 100 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated Kobra
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Shotgun
+		\n\nFormer property of Trapper. This weapon has an extended magazine and unlocked automatic fire. Has an integrated close quarters combat scope.
+		</text>
+	</string>
+	
+	<!-- Machine guns -->
+	
+	<string id="st_wpn_pkm">
+		<text>PKM</text>
+	</string>
+	<string id="st_wpn_pkm_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: Belt 7.62x54 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 200
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.15 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 9.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 410 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Only shooting from the hip%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]	
+		</text>
+	</string>
+	
+	<string id="st_wpn_pkm_zulus">
+		<text>Zulu's PKM</text>
+	</string>
+	<string id="st_wpn_pkm_zulus_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: Belt 7.62x54 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 250
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.15 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 9.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 410 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Only shooting from the hip%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]	
+		\n\nThis machinegun belonged to Zulus. It’s most noteable features are the expanded ammo box and the longer barrel,which was made to order. The weapon modifications made the gun heavier, but for the previous owner it wasn’t that much of a problem.
+		</text>
+	</string>
+	
+	<string id="st_wpn_pkp">
+		<text>PKP «Pecheneg»</text>
+	</string>
+	<string id="st_wpn_pkp_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: Belt 7.62x54 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 100
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.05 (+0.5)
+		\n%c[255,1,255,255]• %c[default]Reload time: 7.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 420 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_rpd">
+		<text>RPD</text>
+	</string>
+	<string id="st_wpn_rpd_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x39 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 100
+		\n%c[255,1,255,255]• %c[default]Max Wear: 6000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 1.5 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 7.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 360 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Doesn't support special ammo%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]				
+		</text>
+	</string>
+	
+	<string id="st_wpn_m60">
+		<text>M60 «The Pig»</text>
+	</string>
+	<string id="st_wpn_m60_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm (M60)
+		\n%c[255,1,255,255]• %c[default]Mag Size: 200
+		\n%c[255,1,255,255]• %c[default]Max Wear: 4000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.8 (+0.7)
+		\n%c[255,1,255,255]• %c[default]Reload time: 7.1 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 440 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]			
+		</text>
+	</string>
+
+	<string id="st_wpn_m134">
+		<text>M134 «Minigun»</text>
+	</string>
+	<string id="st_wpn_m134_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 7.62x51 mm (M134)
+		\n%c[255,1,255,255]• %c[default]Mag Size: 600
+		\n%c[255,1,255,255]• %c[default]Max Wear: 20000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.2 (+0.1)		
+		\n%c[255,1,255,255]• %c[default]Reload time: 3.0 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 430 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		</text>
+	</string>
+
+	<string id="st_wpn_m249">
+		<text>FN M249 «SAW»</text>
+	</string>
+	<string id="st_wpn_m249_eot">
+		<text>FN M249 «SAW» (EOT)</text>
+	</string>	
+	<string id="st_wpn_m249_acog">
+		<text>FN M249 «SAW» (ACOG)</text>
+	</string>	
+	<string id="st_wpn_m249_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: 5.56x45 mm
+		\n%c[255,1,255,255]• %c[default]Mag Size: 200
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.75 (+0.45)
+		\n%c[255,1,255,255]• %c[default]Reload time: 7.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 420 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: A
+		\n%c[255,1,255,255]• %c[default]Scopes: EOT, ACOG
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: Yes
+		\n%c[255,1,255,255]• %c[default]Specialization: Machine gun
+		\n
+		\n%c[255,1,255,255]Doesn't support special ammo%c[default]			
+		\n%c[255,1,255,255]Can be installed on bipods%c[default]				
+		</text>
+	</string>
+	
+	<!-- Special -->
+	
+	<string id="st_wpn_gauss">
+		<text>Gauss rifle</text>
+	</string>
+	<string id="st_wpn_gauss_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Ammo: Batteries
+		\n%c[255,1,255,255]• %c[default]Mag Size: 10
+		\n%c[255,1,255,255]• %c[default]Max Wear: 99999 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.01 (+0.01)
+		\n%c[255,1,255,255]• %c[default]Reload time: 5.2 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 15000 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: Integrated x8
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Sniper	
+		\nNote: A super-accurate hi-tech weapon known as item 62, this rifle was developed in secret laboratories located inside the Zone. The weapon operates by accelerating bullets to extremely high speeds using a system of electromagnets, which provides incredible stopping power with virtually no recoil.
+		\n
+		\n%c[255,1,255,255]Penetrates walls%c[default]		
+		</text>
+	</string>
+	
+	<string id="st_wpn_umirotvoritel">
+		<text>Unidentified weapon</text>
+	</string>
+	<string id="st_wpn_umirotvoritel_descr">
+		<text>An unknown weapon, the firing mechanism of which has not been established. The weapon appears faulty - squeezing the trigger doesn't do anything.</text>
+	</string>
+	
+	<string id="st_wpn_flamer">
+		<text>Flamethrower «MaxoFob»</text>
+	</string>
+	<string id="st_wpn_flamer_descr">
+		<text>This «thing» was made by local crafters during the X-Mas holidays, after which the schematics spread all over the Zone.</text>
+	</string>
+
+	<string id="st_wpn_wunderwaffe">
+		<text>X-25 «Wunderwaffe»</text>
+	</string>
+	<string id="st_wpn_wunderwaffe_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: Batteries
+		\n%c[255,1,255,255]• %c[default]Mag Size: 30
+		\n%c[255,1,255,255]• %c[default]Max Wear: 5000 shots
+		\n%c[255,1,255,255]• %c[default]Recoil: 0.01 (+0.01)
+		\n%c[255,1,255,255]• %c[default]Reload time: 1.7 sec
+		\n%c[255,1,255,255]• %c[default]Bullet Speed: 1000 m\sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1, A
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Assault
+		\nNote: Very strange gun. Origin unknown.
+		\n
+		\n%c[255,1,255,255]Penetrates walls%c[default]			
+		</text>
+	</string>
+	
+	<string id="st_wpn_trolo">
+		<text>PlayBoy</text>
+	</string>
+	<string id="st_wpn_trolo_descr">
+		<text>
+		O_O
+		</text>
+	</string>
+	
+	<string id="st_wpn_flaregun">
+		<text>FlareGun</text>
+	</string>
+	<string id="st_wpn_flaregun_descr">
+		<text>
+		Single shot flare gun, used to fire signal rockets in the sky. Can’t harm or attract monsters.
+		</text>
+	</string>
+	
+	<string id="st_wpn_detonator">
+		<text>Rocket strike</text>
+	</string>
+	<string id="st_wpn_detonator_descr">
+		<text>
+		Stalkers think this is useless, but using the activation codes that were given to you by SBU you can call in a massive rocket strike on the marked area with one of the autonomous silos in the center of the Zone. You can fire it only once.
+		\n\n%c[255,255,1,1][!] %c[default]Explosion radius: 120m.		
+		</text>
+	</string>
+	
+	<string id="st_wpn_volt_gun">
+		<text>Electra Cannon</text>
+	</string>
+	<string id="st_wpn_volt_gun_descr">
+		<text>
+		Hand-crafted weapon, rarely found in use. The radius of destruction give a chance use it for destruction of fortified enemy groups. The created electric "bullet" can't penetrate heavy armor from the first hit, but a couple of shots can cover a huge area within a short timespan. It uses charged up shards of electro artifacts as ammunition.Used for eliminating enemies behind cover.
+		\n%c[255,1,255,255]• %c[default]Damage radius: 14m
+		\n%c[255,1,255,255]• %c[default]Fire distance: 120m		
+		</text>
+	</string>
+	
+	<!-- Heavy -->
+	
+	<string id="st_wpn_rg6">
+		<text>RG-6 «Bulldog»</text>
+	</string>
+	<string id="st_wpn_rg6_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: VOG-25
+		\n%c[255,1,255,255]• %c[default]Mag Size: 6
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Special
+		</text>
+	</string>
+
+	<string id="st_wpn_rpg7">
+		<text>RPG-7</text>
+	</string>
+	<string id="st_wpn_rpg7_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: PG-7VL
+		\n%c[255,1,255,255]• %c[default]Mag Size: 1
+		\n%c[255,1,255,255]• %c[default]Reload time: 4.0 sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Special
+		</text>
+	</string>
+	
+	<string id="st_wpn_m79">
+		<text>Grenade Launcher M79</text>
+	</string>
+	<string id="st_wpn_m79_descr">
+		<text>
+		\n%c[255,1,255,255]• %c[default]Caliber: M209, VOG-25
+		\n%c[255,1,255,255]• %c[default]Mag Size: 1
+		\n%c[255,1,255,255]• %c[default]Max Wear: 10000 shots
+		\n%c[255,1,255,255]• %c[default]Reload time: ~3.1 sec
+		\n
+		\n***********************
+		\n%c[255,1,255,255]• %c[default]Fire modes: 1
+		\n%c[255,1,255,255]• %c[default]Scopes: No
+		\n%c[255,1,255,255]• %c[default]Grenade Launcher: No
+		\n%c[255,1,255,255]• %c[default]Support silencer: No
+		\n%c[255,1,255,255]• %c[default]Specialization: Special
+		\nNote: Due to the special modification, grenade-launcher can fire all types of grenades.	
+		</text>
+	</string>
+	
+</string_table>
+

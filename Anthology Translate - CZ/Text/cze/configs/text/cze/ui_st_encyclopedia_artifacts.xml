@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+<string id="encyclopedia_artefacts">
+	<text>Artefakty</text>
+</string>
+<string id="encyclopedia_artifacts">
+	<text>Artefakty</text>
+</string>
+<string id="pda_encyclopedia_name">
+	<text>Jméno</text>
+</string>
+<string id="pda_encyclopedia_weight">
+	<text>Váha</text>
+</string>
+<string id="pda_encyclopedia_tier">
+	<text>Úroveň</text>
+</string>
+<string id="pda_encyclopedia_tier_0">
+	<text>-</text>
+</string>
+<string id="pda_encyclopedia_tier_1">
+	<text>Nízká</text>
+</string>
+<string id="pda_encyclopedia_tier_2">
+	<text>Průměrná</text>
+</string>
+<string id="pda_encyclopedia_tier_3">
+	<text>Vysoká</text>
+</string>
+<string id="pda_encyclopedia_origin">
+	<text>Původ</text>
+</string>
+	
+	<string id="encyclopedia_artefacts__about">
+		<text>O Artefaktech</text>
+	</string>
+<string id="encyclopedia_artefacts__about_text">
+	<text>
+		%c[pda_white]Artefakty%c[ui_gray_1] jsou objekty, které byly vytvořeny z hoven.\n\n%c[pda_green]Informace%c[ui_gray_1]
+	\nVětšina artefaktů má zvláštní a užitečné vlastnosti. Například některé artefakty vytvářejí ochranné pole, které zvyšuje odolnost uživatele proti poškození, když jsou drženy blízko těla. Jiné mohou zvýšit vytrvalost uživatele nebo chránit před ohněm atd. Artefakty jsou také cenným vědeckým studijním materiálem a vnější korporace by zaplatily vysokou cenu za získání jednoho z těchto artefaktů ze Zóny.
+	\n \n%c[pda_blue]Vznik artefaktu%c[ui_gray_1]
+	\nArtefakty vznikají z anomálií, které jsou vystaveny určitým objektům nebo podmínkám: kombinace běžného objektu (nebo běžných objektů) a anomálie, degenerace a smrt anomálie nebo pokud je anomálie vystavena určitým podmínkám.
+	\nPříkladem je Krystal, který je kombinací kovových látek a anomálie Pálenec. Emissiony jsou známy jako katalyzátor při skutečném vytváření artefaktu, ačkoli vědci ve Zóně stále nedokáží vysvětlit, jak k tomu dochází.
+	\n \n%c[pda_yellow]Finanční využití artefaktů%c[ui_gray_1]
+	\nArtefakty mají velkou hodnotu a stalkeři je často prodávají obchodníkům, kteří je následně prodávají významným kupcům od vojáků, vědců až po velké obchodní společnosti a sběratele.
+	\nVědci, zejména profesor Sakharov, velmi ocení artefakty, protože jsou skvělým výzkumným materiálem a tvrdí, že by mohly být klíčem k řešení světových problémů a klíčem k několika technologickým pokrokům.
+</text>
+</string>
+<string id="encyclopedia_artifacts_baloon_text">
+	<text>
+%c[d_green]Informace
+%c[ui_gray_2]Jedná se o sloučeninu několika dutých organických útvarů, který tento artefakt vydává plynnou látku, která dokáže neutralizovat chemické nebo toxické částice uvnitř těla, aniž by mu ublížila. Bublina však má několik negativních vlastností. Například výrazně zesiluje účinky psi-vln a polí produkovaných mutanti a anomaliemi. Tato nevýhoda se nemá podceňovat: někteří stalkeri uváděli, že psi-vliv byl při vlastnictví Bubble tak silný, že cítili, jak se jim hlavy rozpadají zevnitř, a jediné, co mohli udělat, bylo křičet bolesti a utíkat co nejdál. Stejný mechanismus se zdá být přítomen i v případě elektrických anomálií: artefakt povede elektřinu a zvýší ampéry. Navíc mnoho zpráv od stalkerů naznačuje, že Bubble potřebuje zdroj energie, aby byl funkční. Tímto zdrojem energie je samotné tělo: artefakt vysává životnost a vůli uživatele, často v takovém rozsahu, že způsobuje závratě a ve výjimečných případech uživatele dokonce omráčí. Jediným dalším pozitivním aspektem tohoto artefaktu je skutečnost, že urychluje proces hojení a zaceluje rány, avšak je v tomto ohledu tak mocný, že jeho vysoká cena na trhu a poptávka po něm jsou plně odůvodněné. Výstup radiace je nejvyšší na škále artefaktu. VAROVÁNÍ: Kvůli jeho organické povaze a nestabilitě je tento artefakt dobře znám tím, že se nečekaně samovznítí častěji než jakýkoli jiný organický artefakt, a z tohoto důvodu se doporučuje zdržet se jeho nošení v blízkosti ohně nebo kyselinové anomálie.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_baloon">
+	<text>Bublina</text>
+</string>
+	
+	<string id="encyclopedia_artifacts_blood_text">
+		<text>
+          %c[d_green]Informace\n%c[ui_gray_2]Červenavá formace stlačených zkamenělých rostlin, půdy a zvířecích zbytků. Může částečně neutralizovat chemické jedy tím, že je absorbuje a snižuje celkovou toxicitu v krevním oběhu uživatele. Je poměrně rozšířená, ale není příliš účinná, protože způsobuje, že chemické popáleniny hnisají. Při vystavení otevřenému ohni nebo dokonce samovznícení se zapálí. Další nevýhodou tohoto artefaktu je, že zvyšuje negativní účinky psi-vln a je silným vodičem. Také vyčerpává energii z těla uživatele. Kamenná Krev však urychluje hojení ran díky své organické povaze. Radiacní výstup je nejnižší na stupnici radiacních artefaktů.\n\n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n\n%c[0,225,225,225]• %c[ui_gray_2] artefakt\n%c[0,100,100,255]• %c[ui_gray_2] připevnitelný</text>
+	</string>
+	<string id="encyclopedia_artifacts_blood">
+		<text>Kamenná Krev</text>
+	</string>
+	
+<string id="encyclopedia_artifacts_cristall_flower_text">
+	<text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt připomíná rozpuštěný syr prolínající se safírově modrými kameny. Z artefaktu však vyzáří pouze žlutá vnější vrstva a pečlivým zpracováním je možné extrahovat neradioaktivní modré části pro šperky a jiné průmyslové účely. Pokud je artefakt řádně vyčištěn a vyleštěn, safírová podobnost se stává zjevnější: kameny jsou stejně tvrdé a odolné jako krásný drahokam. Tato jejich kvalita a vzhled je dělá dokonalými drahokamy a šperkaři po celém světě se snaží je mít ve skladu. Užitečnost artefaktu však není omezena pouze na jeho průmyslové aplikace. Existují vědecké důkazy naznačující, že safírové kameny účinně chrání před toxicitou, zatímco vnější skořápka mírně zvyšuje odolnost vůči teplu. Kvůli své hustotě se hmotnost artefaktu zvýšila nad normální standardy, a tak jde o jeden z nejtěžších anomálních vytvoření v Zóně. Na stupnici radiačního výstupu je artefakt nejméně radioaktivní.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_cristall_flower">
+	<text>Kamenný květ</text>
+</string>
+	
+<string id="encyclopedia_artifacts_cristall_text">
+	<text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt vzniká v anomálních zónách s intenzivní termální aktivitou. Aktivně pohlcuje nadměrné teplo, ale zůstává stále chladný. Také chrání uživatele před kyselinami nalezenými v toxických a chemických anomáliích. Na druhou stranu, vystavení těmto prostředím způsobuje, že artefakt zvyšuje korozi kyselin díky dosud neznámému mechanismu. Z tohoto důvodu je nutné zvážit pro a proti při pobytu v blízkosti oblasti s vysokou toxicitou. Také slouží jako vodič elektřiny. Dalším pozitivním účinkem tohoto artefaktu je, že urychluje srážení krve, pokud je nošen blízko těla. (Poznámka: Není doporučeno artefakt vlastnit po dlouhou dobu, protože srážení krve může být nebezpečné pro zdraví.) Tento artefakt je také velmi žádaný šperkaři mimo Zónu, protože jeho vnitřní jádro není radioaktivní a pokud je vybroušeno a zušlechtěno, je považováno za mimořádně krásné. Pouze první 1 cm vnější vrstvy vydává záření. Nicméně je silně doporučeno být opatrný při plánování přivést artefakt na trh, protože dlouhodobé vystavení i minimálním množstvím radioaktivního materiálu může způsobit smrt uživatele. Pokryt tvrdou vrstvou. Relativně těžký kvůli vysoké hustotě. Výstup radiace je nejnižší na stupnici artefaktů radiace.\n\n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n\n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_cristall">
+	<text>Krystal</text>
+</string>
+	
+<string id="encyclopedia_artifacts_dummy_battery_text">
+	<text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt poskytuje mírně vyšší ochranu proti psi než jeho příbuzný, Měsíční svit. Skládá se z elektrostatických prvků, ale vědci dosud nebyli schopni určit přesně fyzikální podmínky nutné pro jeho vznik. Artefakt je velmi oblíbenou věcí v Zóně a je ceněn jak jejími obyvateli, tak návštěvníky pro své povzbuzující vlastnosti, i když má nepříznivý vliv na tělo při dlouhodobém používání. Nicméně je třeba poznamenat, že tento artefakt brání srážení krve a zvyšuje krvácivost otevřených ran. Na druhou stranu je znám svou schopností chránit uživatele před smrtelnými dávkami elektricity díky svému silnému odporu. Tento artefakt je také extrémně lehký a snadno přenosný. Radiace výstupu je nízká na stupnici artefaktové radiace.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_dummy_battery">
+	<text>Baterka</text>
+</string>
+<string id="encyclopedia_artifacts_dummy_dummy_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Skořápka je složeno ze dvou modře zbarvených disků spojených poloprůhledným materiálem neznámé povahy. Tento zvláštní artefakt byl po dlouhou dobu považován mnoha vědci za bezcenný. Teprve nedávno bylo zjištěno, že je skutečně velmi užitečný. Poskytuje vysokou úroveň psionické ochrany a absorbuje elektromagnetické rušení, působící jako uzemňovací materiál. Když artefakt přijde do kontaktu s tělem, člověk se cítí osvěžený a zvyšuje se tak obnovení energie. Tento efekt u některých stopařů vyvolal hyperaktivitu. Jediným negativem tohoto artefaktu je však snížení počtu krevních destiček, což zvyšuje krvácení. Lůžko je extrémně lehké a snadno přenosné. Výstup radiace je velmi vysoký na stupnici artefaktové radiace.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_dummy_dummy">
+    <text>Skořápka</text>
+</string>
+<string id="encyclopedia_artifacts_dummy_glassbeads_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Maminčiny korálky jsou tvarovány jako DNA helix a vznikají v anomálii Vypalovač. Jednou z jejich nejcharakterističtějších vlastností je jejich neustálé pulzování, které generuje prospěšné emise pro lidské tělo. Tyto emise zvyšují metabolismus každého živého tvora a urychlují srážení a hojení ran. Mechanismus účinku tohoto artefaktu je stále neznámý. Mama's Beads také mají silné ochranné vlastnosti: dokáží chránit tělo a objekty před extrémním teplem a kyselinami. Na druhou stranu je třeba poznamenat, že přítomnost tohoto artefaktu zvyšuje korozi kyselin, což vede k urychlenému opotřebení vybavení a vyššímu poškození tkání živého organismu. Proto je silně doporučeno postupovat opatrně v kyselém i toxickém prostředí, pokud vlastníte Mama's Beads. Dalším nebezpečným účinkem tohoto artefaktu je zvýšená elektrická vodivost, takže pravděpodobnost úrazu elektrickým proudem při nošení tohoto artefaktu je mnohem vyšší, zejména během bouřek a v blízkosti elektrických anomálií. Váha je také poměrně vysoká pro tak malý artefakt, což naznačuje, že má extrémně vysokou hustotu. Výstup radiace je nízký na stupnici artefaktové radiace.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_dummy_glassbeads">
+    <text>Maminčiny korálky</text>
+</string>
+
+
+<string id="encyclopedia_artifacts_electra_flash_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt je velmi podobný vzhledem k Měsíčnímu světlu a připomíná plazmovou kouli nebo plazmovou lampu. Když je nošen, je známo, že mírně snižuje škodlivé účinky psi-anomálií nebo psi-vln určitých mutantů. Blesk působí jako silný rezistor a dokáže absorbovat dokonce i smrtelné dávky elektricity. Na druhou stranu je extrémně důležité poznamenat, že pokud přijde do kontaktu s elektrinou, uvolní statický náboj, který, ačkoliv není smrtelný, může mít účinek podobný úderu z Taseru. Artefakt má slabé regenerační vlastnosti a jeho přímý dotyk má podobný účinek jako plazmová koule, který dodává pocit energie. Na druhou stranu však také zpomaluje hojení, takže je třeba být opatrný, zejména při zranění nebo krvácení. Tento artefakt je také extrémně lehký a snadno přenosný. Výstup záření je nejnižší na stupnici záření artefaktu.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_electra_flash">
+    <text>Flash</text>
+</string>
+
+<string id="encyclopedia_artifacts_electra_moonlight_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento jedinečný elektrostatický artefakt může rezonovat pod vlivem psy-vln. Stalkři se naučili artefakt ladit tak, aby rezonoval v opačném směru než hlavní zdroj emisí, čímž významně neutralizuje jejich účinky. Tato koule značně krásy také zvyšuje ochranu proti elektrině tím, že snižuje vodivost v těle při vystavení vysokým úrovním elektriny. Zároveň zlepšuje obnovu energie a vytrvalosti, což umožňuje uživateli cítit se plný energie a osvěžený. Nežádoucím vedlejším účinkem je snížení rychlosti hojení a srážlivosti. Tento artefakt je také extrémně lehký a snadno přenosný. Výstup záření je nízký na stupnici záření artefaktu.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_electra_moonlight">
+    <text>Měsíční svit</text>
+</string>
+<string id="encyclopedia_artifacts_electra_sparkler_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt má vzhled průhledných pavučin. Podobně jako pavučina z proteinu, je lepivý a má vlastnosti lepidla. Nejčastěji se nachází v blízkosti elektro anomálií a zdá se, že absorboval jejich určité vlastnosti: dokáže vyrovnávat fluktuace hustoty elektrického pole a působí jako slabý rezistor, chránící nositele před elektrinou a snižující její škodlivé účinky. Když je nošen, tento artefakt také mírně působí proti škodlivým účinkům psi-anomálií nebo psi-vln některých mutantů. Díky své elektrické povaze tělu poskytuje dodatečný, ackoli slabý zdroj energie. Nemá žádné výhodné léčebné vlastnosti, protože lepivá tekutina, kterou artefakt produkuje, je poškozující pro živou tkáň a zabrání srážení krve. Je extrémně lehký. Radiace na stupnici artefaktu je nejnižší.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_electra_sparkler">
+    <text>Jiskřič</text>
+</string>
+
+
+<string id="encyclopedia_artifacts_eye_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt, který připomíná lidské oko, výrazně zvyšuje metabolismus těla a pomáhá rychlejšímu hojení ran. Zkušení stalkeři říkají, že Oko také přináší štěstí. Bez ohledu na pravdivost tohoto výroku jsou jeho pozitivní účinky opravdu silné. Zaprvé snižuje teplotu těla uživatele a ochlazuje všechny objekty v okolí. Zadruhé poskytuje významnou ochranu proti všem typům kyselin tím, že postupně zvyšuje jejich pH na úroveň vody (pH 7). Zároveň tato artefakt uklidňuje bolest a je extrémně užitečný při léčbě ran. Tyto výhodné vlastnosti však mají svou cenu. Tento artefakt je extrémně nebezpečný při vystavení chemickým anomáliím, protože zvyšuje jejich toxicitu a posiluje jejich účinnost. Proto se vřele doporučuje artefakt nosit v batohu, nikdy na těle, při prozkoumávání toxických oblastí, pokud si nepřejete zemřít. Artefakt je také znám jako "Medené Oko", protože vodí elektrinu a zesiluje její nebezpečné účinky stejným způsobem jako med. Radiace na stupnici artefaktu je velmi vysoká.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_eye">
+    <text>Oko</text>
+</string>
+
+<string id="encyclopedia_artifacts_fire_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt vzniká na místech s vysokou tepelnou aktivitou. Produkuje silné infračervené emise, které zrychlují metabolické procesy a hojí rány před očima svého nositele. Jelikož je tento artefakt velmi vzácný, je extrémně cenný. Co se týče jeho účinku, je podobný Oku, snižuje teplotu těla uživatele, což je obzvláště užitečné při vystavení silnému teplu. Také působí jako silný rezistor a neutralizuje účinky kyselin. Navíc jsou jeho léčebné schopnosti ještě silnější než u Oka, protože se tvrdí, že stalkři přežili zranění od Chimer díky držení tohoto artefaktu. Díky tomu si vysloužil pověst zázračného artefaktu. Mnoho stalkrů vděčí za svůj život právě tomuto artefaktu, a většina zkušených lovců mutantů ho nosí při ohrožení. Nicméně sdílí nejen pozitivní, ale i negativní vlastnosti svého příbuzného: vstup do toxické nebo chemické anomálie s tímto artefaktem na opasku je sebevražda. Zvýší korozi chemických částic a zesílí nepříznivý účinek toxinu v krevním oběhu uživatele. Také se dá použít jako opakovaně použitelná lékárnička, jelikož rány hojí velmi rychle. Výstup záření je nejvyšší na stupnici artefaktu ohnivého záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_fire">
+    <text>Plamen</text>
+</string>
+<string id="encyclopedia_artifacts_fireball_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Je to kulovitý artefakt vyrobený z červeně zbarvených krystalů, vytvořený v anomálii Spalovac. Má jedinečnou vlastnost - má stálou teplotu 75 stupňů Fahrenheit / 24 stupňů Celsia, bez ohledu na své okolí. To mu umožňuje absorbovat teplo z okolí a vytvořit kolem uživatele malou ochrannou kapsu, která zabrání poškození těla plameny. Stabilita teploty je příčinou dalšího pozitivního účinku: urychluje hojení a zastavuje krvácení. Také uživatele chrání před chemickými popáleninami. Nicméně se nedoporučuje přiblížit se k chemickým a kyselinovým anomáliím, když je tento artefakt v držení, protože zvýší nepříznivé účinky kyselin a toxinů v krevním oběhu uživatele. Uživatele také zranitelným vůči elektrickému proudu. Je poměrně těžký kvůli vysoké hustotě jeho krystalovitého materiálu. Výstup záření je nejnižší na stupnici artefaktu ohnivého záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_fireball">
+    <text>Ohnivá koule</text>
+</string>
+<string id="encyclopedia_artifacts_fuzz_kolobok_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Poměrně vzácný artefakt, který vzniká v chemických oblastech. Koblížek je vysoce ceněný pro svou schopnost hojit většinu druhů ran a zastavit krvácení během několika minut. Z neznámých důvodů šíří vědci mezi stalkery zvěsti, že artefakt mění genetický kód nositele, což není prokázáno a mělo by být považováno za vědomý pokus o monopolizaci zásob artefaktu ze strany vědecké komunity. To však neznamená, že je úplně neškodný. Jedinou nevýhodou tohoto artefaktu je skutečnost, že zvyšuje elektrickou vodivost, takže je nejlepší se vyhnout elektro anomáliím, když je artefakt v držení, zvláště protože jeho negativní účinky nejsou vyváženy pozitivními. Také snižuje regeneraci energie, což je důsledek jeho ostrých jehličkovitých přívěsků. Jehličky způsobují malá a rychle se hojící zranění, která způsobují neustálou bolest a svědění, čímž se snižuje vytrvalost. Tento artefakt také snižuje ochranu proti psi-emisím způsobeným anomáliemi nebo mutacemi, stejně jako proti teplu a kyselinám kvůli své vysoké hořlavosti. Díky své chemické povaze je také dobře známý svou schopností zvyšovat ochranu uživatele proti toxicitě. Je lehký a není příliš obtížné ho nosit. Výstup záření je velmi vysoký na stupnici artefaktu ohnivého záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_fuzz_kolobok">
+    <text>Koblížek</text>
+</string>
+	
+<string id="encyclopedia_artifacts_gold_fish_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Primární nástupce a vylepšená verze artefaktu Gravi. Stejně jako u Gravi byl profesor Sakharov v Yantaru ten, kdo objevil jeho jedinečné vlastnosti poté, co na Zónu dopadl masivní výron/exploze. Díky pečlivému následnému výzkumu bylo zjištěno, že tento nový artefakt vzniká tehdy, když se tři Gravi artefakty vzájemně ovlivní a vtáhnou se do singulárního pole jiného artefaktu. Tento jev je extrémně vzácný, a proto je artefakt velmi ceněný. V ukrajinských kruzích Spetsnaz se šíří zvěsti, že v Zóně jsou agenti z Ministerstva obrany Ruské federace, jejichž jediným cílem je získávání a přepravování Goldfish do specializovaných laboratoří mimo Zónu. Artefakt vytváří stále gravitační singulární pole, které ovlivňuje pouze své nejbližší okolí. Nicméně někteří stalkři známí záhadně zmizeli, zanechavše za sebou pouze Goldfish. Artefakt poskytuje vynikající tepelnou a kyselinovou ochranu. Navíc vytváří ochranný a téměř mastný film kolem svého uživatele, který má vlastnosti silného odolného proti ohni a také chrání uživatele proti kyselinám tím, že rozkládá prvky kyselin na jednodušší látky. Je extrémně těžký a není doporučováno používat ho při dlouhých výpravách do Zóny, zejména na delší dobu. Ozářovací výkon je nejvyšší na stupnici artefaktového záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_gold_fish">
+    <text>Zlatý Rybka</text>
+</string>
+
+<string id="encyclopedia_artifacts_gravi_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Gravi vzniká z kovových látek vystavených dlouhé gravitaci. To mu umožňuje udržovat gravitační pole a mít různé vlastnosti, mezi jinými zvyšování hmotnosti všech objektů v jeho blízkosti. Artefakt byl dlouhou dobu záhadou a první, kdo objevil, že Gravi vytváří malé singulární pole gravitační povahy, byl profesor Sakharov v Yantarovi. Tento jev se opakuje v intervalech 30 minut. Tento artefakt může přinést prospěšné výsledky v medicíně nebo válce, pokud je mechanismus jeho funkce využit pro vědecké účely. Je třeba říci, že jeho pozitivní vlastnosti převyšují nad negativními. Konkrétně zvyšuje hmotnost objektu díky svému gravitačnímu poli a vydává smrtelné dávky záření. Na druhou stranu ochrání uživatele před škodlivými účinky ohnivých anomálií nalezených po celé Zóně a před kyselinami chemických/toxických anomálií. Gravi však namísto absorpce smrtelných chemikálií a toxinů způsobuje rozklad chemických sloučenin na jednodušší látky díky svému singulárnímu poli. Jak již bylo zmíněno, je extrémně těžký a není doporučeno jej používat při dlouhých výpravách do Zóny, zejména na delší dobu. Ozářovací výkon je velmi vysoký na stupnici artefaktového záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_gravi">
+    <text>Gravi</text>
+</string>
+	
+<string id="encyclopedia_artifacts_ice_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Také znám jako "Radioaktivní Sněhová vločka". Na první pohled připomíná tento artefakt bílý Koblížek. Někteří tvrdí, že je ve skutečnosti formou Koblížka, protože výrazně zvyšuje odolnost vůči elektrickým proudům tím, že vytváří vlastní elektrické pole a absorbuje elektriku, která prochází tělem uživatele. Díky svým jedinečným vlastnostem může artefakt významně zvýšit svalový tonus nositele a tím výrazně zlepšit regeneraci vytrvalosti. Kvůli své vysoké radioaktivitě jsou stalkerové, kteří ho vlastní, někdy s nadsázkou nazýváni "Radioaktivní sněhové vločky". Při rozhodování, zda ho při mise nosit na opasku, musíte pečlivě zvážit jeho výhody a nevýhody: stojí za to mít větší výdrž a vysokou ochranu proti elektřině za cenu trvalého vystavení se smrtelné radiaci? I kdybyste se rozhodli ho s sebou vzít, mělo by se poznamenat, že se nemá používat při dlouhých výpravách do Zóny. Jeho užitečnost v boji je také sporná, protože zvyšuje krvácivost a brání zhojení ran kvůli svým velmi ostrým výběžkům, které píchají uživatele a dráždí kůži. Je však lehký jako sněhová vločka a velmi snadno se nosí. Na stupnici artefaktového záření má nejvyšší výstup záření.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_ice">
+    <text>Vločka</text>
+</string>
+<string id="encyclopedia_artifacts_medusa_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento gravitační artefakt přitahuje a absorbuje toxické/chemické částice, snižuje účinky otravy tělem toxiny. Velmi běžný v Zóně a neoficiálně používaný mimo Zónu k léčbě lidí vystavených nebezpečným nebo smrtícím chemickým a toxickým látkám. Tento artefakt je poměrně těžký, protože jeho gravitační pole zdánlivě zvyšuje hmotnost. Trochu chrání uživatele před extrémním teplem a kyselinami produkovanými odpovídajícím ohnivým a chemickým anomáliím. Radiace na stupnici artefaktů je nejnižší.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_medusa">
+    <text>Medúza</text>
+</string>
+	
+<string id="encyclopedia_artifacts_mincer_meat_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt má měkkou, pórovitou strukturu podobnou kůži a je schopen se stlačovat. V tomto ohledu připomíná tento artefakt houbu a také se chová jako houba, ale své speciální vlastnosti projevuje pouze za určitých vnějších podmínek. Především, když je v nejbližším kontaktu s teplým zdrojem, vydává zápach hořícího masa. Při dlouhodobém vystavení se může zvýšit jeho hořlavost a způsobit zapálení. Tento jev artefakt nezničí, ale může způsobit zahřátí předmětů v jeho blízkosti a v extrémních případech jejich zapálení spolu s artefaktem. Z tohoto důvodu lze usoudit, že artefakt absorbuje teplo a je schopen jej předávat ostatním předmětům. Za druhé, aby byla metafora s houbou dokončena, póry na jeho povrchu jsou schopny absorbovat malé množství jedovatých látek z prostředí. Za třetí, artefakt mírně zesiluje poškozující účinky psi-pole na živé organismy tím, že absorbuje psi energii a vydává ji malým tempem. Za čtvrté, Meat Chunk je také známý jako vodič elektřiny, podobně jako kůže živého tvora. Některé zdroje ve stalker komunitě naznačují, že způsobuje fyzickou únavu i při krátkodobém používání. Za páté, pravděpodobně nejvýhodnější vlastností tohoto artefaktu je jeho schopnost pomalu uzavírat rány a hojit poškozená tkáň. Výstup radiace je nejnižší na stupnici artefaktů radiace.\n \n%c[0,200,200,200]VLASTNOSTI:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_mincer_meat">
+    <text>Kousek Masa</text>
+</string>
+
+<string id="encyclopedia_artifacts_night_star_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento zářící artefakt dokáže generovat místně namířené gravitační pole, které zvyšuje jeho hmotnost. Z tohoto důvodu je Noční hvězda extrémně těžká. Poskytuje ochranu proti kyselinám a teplu. Díky své krásné vnitřní jádru je velmi vyhledávaný šperkaři po celém světě, avšak je nejlepší postupovat opatrně, protože nezručná manipulace s artefaktem může způsobit jeho výbuch s dostatečnou silou na zničení malé budovy. Je proto velmi doporučeno provádět leštění pomocí specializovaných strojů, což minimalizuje pravděpodobnost výbuchu. Navíc pouze vnější jádro artefaktu vydává záření. Nightstar také absorbuje toxické a chemické látky z prostředí, což z něj činí cenný artefakt pro lovce artefaktů, i když množství absorbovaných toxinů je zanedbatelné. Je však relativně levný a dokonce si ho mohou dovolit i stalkerové s omezeným rozpočtem, pokud se objeví příležitost k jeho koupi. Výstup záření je nízký na stupnici artefaktového záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_night_star">
+    <text>Noční hvězda</text>
+</string>
+	
+<string id="encyclopedia_artifacts_soul_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Duše je jedinečný organický artefakt s podobně jedinečnými vlastnostmi - vylučuje lepkavou slizkou látku, která dramaticky zvyšuje rychlost hojení ran. Díky své rozumné ceně a atraktivnímu vzhledu je tento artefakt ceněným sběratelským předmětem. Kvůli své organické povaze je Soul velmi hořlavý a neměl by se nosit poblíž táborového ohně nebo většiny zdrojů tepla. Je známo, že se dokáže samovolně vzplanout při teplotách vyšších než 60°C. Artefakt poskytuje vysokou úroveň ochrany proti toxickým a chemickým látkám tím, že je absorbuje. Poté je využívá jako základ pro výrobu své lepkavé látky, která při aplikaci na rány zmírňuje bolest a urychluje hojení. Na druhou stranu Soul zesiluje účinky psi-vln a zvyšuje poškození elektrickým proudem těla. Je také známo, že odebírá energii svému uživateli. Artefakt nemá vysokou hustotu a není tedy příliš těžký. Výstup záření je nízký na stupnici artefaktů záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_soul">
+    <text>Duše</text>
+</string>
+
+<string id="encyclopedia_artifacts_vyvert_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento podivně tvarovaný artefakt se objevuje na místech s vysokou gravitační aktivitou. Jedná se o druh houby, která absorbuje chemické a toxické prvky a poskytuje ochranu před vnějšími toxickými látkami a chemickými částicemi, které se již dostaly do těla. I když působí téměř organicky, ve skutečnosti je spíše podobný korálu. Díky své neorganické povaze není hořlavý. Poskytuje ochranu proti kyselinám i teplu. Neexistuje žádná konkrétní frakce, která by o něj měla velký zájem, a proto je většinou prodáván vědcům, kteří studují a experimentují s artefaktem, aby zjistili jeho využití. Má vysokou hustotu a je proto extrémně těžký. Výstup radiace je nízký na škále artefaktů s radiací.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_vyvert">
+    <text>Vývrtka</text>
+</string>
+	
+<string id="encyclopedia_artifacts_compass_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Jedná se o vzácný artefakt – uplynulo několik let od doby, kdy byl naposledy nalezen. Tento artefakt dokáže lokalizovat mezery v anomálních polích. Věří se, že dokáže pomoci člověku bezpečně projít i těmi nejsložitějšími anomálními poli, aniž by utrpěl zranění. Nicméně, jen velmi málo lidí ví, jak s ním zacházet správně.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_compass">
+    <text>Kompas</text>
+</string>
+
+<string id="encyclopedia_artifacts_oasis_heart_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Tento artefakt byl nalezen uprostřed legendární Oázy. Zdá se, že Srdce je zkristalizovaná rostlina, která získala léčivé vlastnosti Oázy.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_oasis_heart">
+    <text>Srdce oázy</text>
+</string>
+	
+<string id="encyclopedia_artifacts_glass_text">
+    <text>%c[d_green]Informace\n%c[ui_gray_2]Ohnivka interaguje s polemi, která jsou neznámá vědě, výrazně zrychluje regeneraci tkání a orgánů u živých bytostí a normalizuje metabolické procesy. Tento artefakt dokáže doslova vrátit těžce zraněného stalkeru na nohy během několika minut. Na druhou stranu se ohnivka může samovolně vzplanout při kontaktu s vysokými teplotami. Zesiluje škodlivé účinky psi-pólů a elektro anomálií a zdá se, že vyčerpává vytrvalost a snižuje její obnovu. Nicméně pohlcuje všechny smrtící chemikálie v těle. Navíc skvěle chrání před toxicitou a zdá se, že do uživatelova krevního oběhu vstřikuje neutralizační chemické látky, které ruší účinky toxinů a poškození nervů. Z tohoto důvodu je na vojenském poli velmi žádaná, protože usnadňuje řízení teroristických útoků s chemickými nebo biologickými zbraněmi. Bohužel je ohnivka extrémně vzácná. Ozařování je velmi vysoké na stupnici artefaktového záření.\n \n%c[0,200,200,200]Vlastnosti:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] artefakt\n%c[0,100,100,255] • %c[ui_gray_2] připevnitelný</text>
+</string>
+<string id="encyclopedia_artifacts_glass">
+    <text>Světluška</text>
+</string>
+	
+</string_table>

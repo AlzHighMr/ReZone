@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	
+<!-- Player states -->
+<string id="st_ui_bleeding_sensor">
+    <text>KRVACENI</text>
+</string>
+<string id="st_ui_main_sensor">
+    <text>RADIACE</text>
+</string>
+<string id="st_ui_health_sensor_inv">
+    <text>ZDRAVI</text>
+</string>
+<string id="ui_inv_radiation_protection">
+    <text>RADIACE</text>
+</string>
+<string id="ui_inv_chemical_burn_protection">
+    <text>CHEMIKALIE</text>
+</string>
+<string id="ui_inv_shock_protection">
+    <text>ELEKTRIKA</text>
+</string>
+<string id="ui_inv_burn_protection">
+    <text>OHEN</text>
+</string>
+<string id="ui_inv_telepatic_protection">
+    <text>PSY</text>
+</string>
+<string id="ui_inv_power_restore">
+    <text>STAMINA</text>
+</string>
+<string id="ui_inv_fire_wound_protection">
+    <text>STRELNE ZRANENI</text>
+</string>
+<string id="ui_inv_wound_protection">
+    <text>TRZNE PORANENI</text>
+</string>
+<string id="ui_inv_strike_protection">
+    <text>UDER</text>
+</string>
+<string id="ui_inv_explosion_protection">
+    <text>EXPLOZE</text>
+</string>
+
+<!-- Nova jednotky -->
+<string id="st_dmg">
+    <text>DMG</text>
+</string>
+<string id="st_rpm">
+    <text>RPM</text>
+</string>
+
+<string id="ui_inv_satiety">
+    <text>%c[0,255,255,255]Nasycenost:</text>
+</string>
+<string id="ui_inv_thirst">
+    <text>%c[0,255,255,255]Hydratace:</text>
+</string>
+<string id="ui_inv_sleep">
+    <text>%c[0,255,255,255]Odpocatost:</text>
+</string>
+
+	
+</string_table>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<string id="scf_deshift_item_desc">
+		<text>Dekodér abnormálních polí, s nímž můžete uzavřít prostorovou bublinu. \n%c[d_green] vývoj vědců.</text>
+	</string>
+	<string id="scf_deshift_item_name">
+		<text>Decodér abnormálních polí</text>
+	</string>
+
+	<string id="scf_sxema_gauss_desc">
+		<text>Staré nákresy popisující komponenty potřebné pro sestavení tajné zbraně "Gauss". Myslím, že zkušený technik by si s tím poradil. \n%c[d_green] Vývoj armády.</text>
+	</string>
+	<string id="scf_sxema_gauss_name">
+		<text>Schéma sestavy "62"</text>
+	</string>
+
+	<string id="scf_n16_prorok_zapis_desc">
+		<text>Voják je adresován vojákovi: \n jackale... Vaši lidé jsou naprosto neschopní ve své práci, chápete to? Moji lidé brzy dorazí do vesnice - a žádné elektronické komunikační vysílače! Budeme komunikovat poštou s holubem, rozumíš blbe!? Přestřihal jsem vaše babičky kvůli odposlechům! Vaše matka, bojovali jste, víte, co je únik informací!? Zkrátka, přidejte více lidí na hlídání. Zanechávám zde náhradní klíčovou kartu, můžete také nechat vzkaz, ať to nepro... Mí lidé na vás brzy přijdou přes továrnu z okolí. A dokud nebude klíčová karta dobře chráněná, rozumíte blbe!? A jo... "Pendjo" je stále naživu. Takže vaše zranění od Nihera nejsou pro nic za nic... Příjde pro mě. Je to jen otázka času. Takže se držte co nejvíce a, pokud možno, nezemřete! \n%c[d_green] Osobní věc.</text>
+	</string>
+	<string id="scf_n16_prorok_zapis_name">
+		<text>Zápisník</text>
+	</string>
+
+	<string id="scf_n16_wood_key_desc">
+		<text>Na klíči je štítek s písmenem "P". \n%c[d_green] Osobní věc Shakala.</text>
+	</string>
+	<string id="scf_n16_wood_key_name">
+		<text>Klíč "P"</text>
+	</string>
+
+	<string id="cld_systemarmor_cardkey_desc">
+		<text>Klíčová karta bezpečnostního systému. S její pomocí můžete násilně vypnout protokol sebedestrukce komplexu. \n%c[d_green] vývoj vědců.</text>
+	</string>
+	<string id="cld_systemarmor_cardkey_name">
+		<text>Klíčová karta "SB"</text>
+	</string>
+
+	<string id="scf_d3_cardkey_desc">
+		<text>Přístupová karta do Podzemního komplexu "Collider". \n%c[d_green] Vývoj armády.</text>
+	</string>
+	<string id="scf_d3_cardkey_name">
+		<text>Klíčová karta Collideru</text>
+	</string>
+
+	<string id="scf_v1_box_key_desc">
+		<text>Druh klíče k otevření osobní schránky... \n%c[d_green] Vývoj Shakala.</text>
+	</string>
+	<string id="scf_v1_box_key_name">
+		<text>Speciální klíč "Jack"</text>
+	</string>
+
+	<string id="scf_v1_shakal_pda_desc">
+		<text>PDA vůdce žoldáků. Na zařízení je jedna čerstvá zpráva od uživatele: \n Fabrik, vezmi čtyři bojovníky a grabuj skladiště, varoval jsem - "fur" dá dobrý. Stalker v kostele začal dělat chyby, a jeden z nich nás včera večer v obci jasně viděl. Je nemožné, aby se nosili do našich záležitostí s prorokem, a v každém případě se tam vkradou, podívej se, co tam skrýváme. Ať už na podlaze, nebo se zraněními - ale ať se nedostanou do sklepa, rozumíš? Běž tam. \n V souborech je nějaký kód: \n%c[0,250,250,0] 7253871 \n%c[d_green] Osobní věc média.</text>
+	</string>
+	<string id="scf_v1_shakal_pda_name">
+		<text>PDA "Jack"</text>
+	</string>
+
+	<string id="scf_n17_merc_pda_desc">
+		<text>PDA žoldáka, který s ostatními Merkovy uspořádal náš útok ve vesnici. Všechno je vyčištěno, pouze jedna jediná zpráva je čitelná od "jackala": \n 1. Fabrik, vezmi čtyři bojovníky a grabuj odstřelovače ze skladiště, varoval jsem - "fur" dá dobrý. Stalker v kostele začal dělat chyby, a jeden z nich nás včera večer jasně viděl ve vesnici. Je nemožné, aby se nosili do našich záležitostí s prorokem, a v každém případě se tam vkradou, podívej se, co tam skrýváme. Ať už na podlaze, nebo se zraněními - ale ať se nedostanou do sklepa, rozumíš? Běž tam. \n%c[d_green] Osobní věc nosiče.</text>
+	</string>
+	<string id="scf_n17_merc_pda_name">
+		<text>PDA "Fabrik"</text>
+	</string>
+
+	<string id="scf_item_memory_module_2_dsc">
+		<text>Paměťový modul, který jsem našel pod bezpilotním zpravodajským zařízením. Lyokha "Digger" - vysušil a odemkl modul, otevřel přístup k informacím, které byly shromážděny zpravodajcem: kromě jiného tento modul obsahuje 4 pelengy na radiowavech.</text>
+	</string>
+	<string id="scf_item_memory_module_2_txt">
+		<text>Paměťový modul (odemčený)</text>
+	</string>
+	<string id="scf_item_memory_module_dsc">
+		<text>Paměťový modul, který jsem našel pod bezpilotním zpravodajským zařízením. Navzdory zhroucení nosiče přímo do řeky: paměťový modul je funkční - ale bohužel je zablokovaný.</text>
+	</string>
+	<string id="scf_item_memory_module_txt">
+		<text>Paměťový modul (zablokovaný)</text>
+	</string>
+
+	<string id="flst_glori_pribor_dsc">
+		<text>Tenhle přístroj - měl by skenovat psi radiaci v vodním parku. Nemám ponětí jak to použít, ale naštěstí to ovládá Gloria. \n%c[d_green] vývoj vědců.</text>
+	</string>
+	<string id="flst_glori_pribor_txt">
+		<text>Skenovací zařízení</text>
+	</string>
+
+<string id="chu_k6_kompromat_dsc">
+	<text>Existuje mnoho důkazů o aktivitách sektářů v zóně. \n má data o táborech a databázích těchto fanatiků. \n fotodokumentace, nahrávky rozhovorů a další materiály o obchodu s lidmi, stejně jako o prodeji orgánů na černém trhu. \n také informace o jejich plánech, trasách a spojeních mimo zónu. \n%c[d_green] Tajná-platná dokumentace.</text>
+</string>
+<string id="chu_k6_kompromat_txt">
+	<text>Komproment pro sektáře</text>
+</string>
+
+<string id="chu_letter_prorok_item_dsc">
+	<text>Postaveno na střeše kostela, ten bastard, kterého jsme vzali z laboratoře na radaru. Zdá se, že jí to tak moc mačká mozek, hehe... Někdo ji samozřejmě hned hodí zpět, ale... s její pomocí získáme nové podobně smýšlející! \n P.S. Tvůj milovaný otec, Prorok. \n%c[d_green] Osobní věc.</text>
+</string>
+<string id="chu_letter_prorok_item_txt">
+	<text>Vzkaz od Proroka</text>
+</string>
+
+<string id="chu_a2_ecologs_pda_desc">
+	<text>Poslední audio zprávy: \n 1. Velmi zajímavá krajina... Z kostela jsou zaznamenány různé anomálie. Soudě podle všeho mají účinky psi-radiace, ale proč?! Pokračujeme v prozkoumávání oblasti, ale neodvažujeme se jít dovnitř, nejprve je potřeba prozkoumat okolí a zjistit, co nám ukáže naše zařízení. \n 2. V okolí je také dost podivností... Jeden z docentů začíná vidět podivné věci, myslím, že je čas se sbalit a vrátit se k profesorovi Bernadovi, je nebezpečné pokračovat v experimentu. Ale... vypadá to, že druhý docent se změnil, nikdy nebyl agresivní - tohoto člověka jsem velmi dobře znal. Nejpravděpodobněji psi-radiace! Musíme okamžitě odejít, teď otočíme naše zařízení a vrátíme se. Docente, co děláš, kam jdeš, stůj! \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="chu_a2_ecologs_pda_name">
+	<text>PDA "Feromon"</text>
+</string>
+
+<string id="chu_a2_scanner_psy_item_desc">
+	<text>Skener-detektor, jehož funkcionalita je určena k hledání různých abnormálních psi vln. \n%c[d_green] Vlastnictví vědců.</text>
+</string>
+<string id="chu_a2_scanner_psy_item_name">
+	<text>Anti-Psy-Emitor</text>
+</string>
+
+<string id="nii_e55_noo_docs_item_desc">
+	<text>Tajné výkresy pro instalaci a spuštění uměle vyšlechtěného abnormálního fragmentu P-24-"Noo-sférického fragmentu". \n%c[d_green] Vlastnictví Výzkumného ústavu.</text>
+</string>
+<string id="nii_e55_noo_docs_item_name">
+	<text>Tajné dokumenty</text>
+</string>
+
+<string id="kan_a3_barge_pda_desc">
+	<text>Poslední audio zpráva: \n zpráva: \n přitáhli mě, aby mě vyhodili z "Komplexu Svobody"... Slyšel jsem v baru o Kaňonu, ha! A fámy o tomto místě, to co nosí. Neanomalizujte tady, žádné artefakty... Ticho. No, myslel jsem si, že se tak "zakořenili" a rozhodli se uzavřít. Ale ukázalo se, že... chtěli chránit, před tím stvořením, co tady žije. Les je opravdu velmi tichý... \n tady jsou jen ty chapadla, pohled skrz a... a velikost toho upíra mě vážně nezklamala! Jak se tam... Strollavi je říkají takoví šílenci, že? Říkají, že nejstarší a nejnebezpečnější podle jejich vzhledu. Také říkají, že jejich velikost je výjimečná, aspoň počítejte na prstech. Ha ha... \n kh-kh... Umgh, ale chytil mě, bastard! Je někde tady, blízko... šustění z keřů a výkřiky... A spojení tady zmizelo přes zem... jen rušení! Pokrývá satelit? Cítím, že všechno je tady jiné. Vypuštění... Zdá se, že tady nejsou žádné výbuchy. Jako by tento kaňon chtěl spílat všemu, co se děje v zóně. Hah... kh-kh! \n%c[255,1,255,255]*Kašel přechází v zvracení*. \n Jak jsem unavený od toho řvaní, měl bych obvaz a pneumatiku, abych si přitáhl nohu a nějak se dostal ke stalkerům, na bezpečné místo... Ale asi to není osud... Slyším její kroky... \n%c[226,90,255] Osobní věc nositele.</text>
+</string>
+<string id="kan_a3_barge_pda_name">
+	<text>PDA "Baron"</text>
+</string>
+
+<string id="st_mod_biografi_prorok_doc_text">
+	<text>V roce 1999 se přestěhoval ze Španělska do Běloruska (17 let). \n v roce 2004 se přestěhoval do Ruska (22 let). \n v roce 2006 došlo k výbuchu noosféry v zóně. \n v roce 2007 ve věku (25 let) do roku 2009 (27 let) bojoval v čečenské válce. \n od roku 2009 - 2016 žil v Chruščovkách v Brjansku. Prakticky nic nedělal, užíval narkotické látky, sloužil za loupež dva roky, hodně pil a sehnal nějaké peníze. \n na začátku roku 2017 dostal kontrakt na zónu. \n v roce 2018 vzal s sebou do partnerů Solda a Macho, šli do zóny. \n od roku 2018 - 2020 se pokusil vytvořit vlastní skupinu, ale neuspěl. \n od roku 2021 - 2023 díky kontaktům obchodníka Garroty a poručíka Potapenka založil vlastní sektu, se kterou začaly první únosy lidí, mučení stalkerů atd. \n od roku 2023 - 2024 se sekta stává známou v zóně a obyčejní stalkerové se jí snaží vyhýbat, sekta posiluje své pozice a ze své moci již bez střechy prorok konečně praskne. \n nyní relevantní roky 42.</text>
+</string>
+<string id="mtrs_biograf_doc_prorok_item_txt">
+	<text>Biografický dokument</text>
+</string>
+
+<string id="okr2_p3_prorok_item_flesh_dsc">
+	<text>Flash disk, který jsem našel v trezoru, nedaleko od stalkerského tábora. Možná je na něm něco užitečného. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr2_p3_prorok_item_flesh_txt">
+	<text>Flashka z trezoru</text>
+</string>
+
+<string id="okr_u28_safe_container_desc">
+	<text>Skříňka je zamčená, je v ní namontován velmi vynalézavý zámek. Soudě podle váhy a řevu při třesení, je v ní něco uvnitř. Samozřejmě to můžeš prodat, ale co když je v tom něco zajímavého... \n na otevření tohoto sofistikovaného mechanismu - potřebuješ inteligentního technika. \n%c[d_green] Plán pro otevření techniky.</text>
+</string>
+<string id="okr_u28_safe_container_name">
+	<text>Zamčený kontejner "Svoboda"</text>
+</string>
+
+<string id="flst_acces_card_sanatorii_dsc">
+	<text>Pomocí této přístupové karty se dostanu k tajné stanici metra, která je pod sanatoriem. \n%c[d_green] Důležitý předmět pro otevření cesty na stanici pod sanatoriem.</text>
+</string>
+<string id="flst_acces_card_sanatorii_txt">
+	<text>Klíčová karta "M-6"</text>
+</string>
+
+<string id="okr_u18_pda_dsc">
+	<text>PDA Svobody. Poslední zpráva od Garroty. \n zpráva: \n šedý, nezklam. Tento válečník, Woland - musí zemřít, potichu a bez svědků. Na stole jsem zanechal poznámku s koordináty místa setkání. Přijde tam v noci, označím tě v PDA, kde to je. Nalij ho a vezmi obálku. Obálku přineseš zpět mně, dohodneme se na platbě na místě. \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="okr_u18_pda_txt">
+	<text>PDA "šedý"</text>
+</string>
+
+
+	<string id="und_u15_convert_dsc">
+	<text>Obálka, kterou mi dal Tesak výměnou za Kufřík. \n Obsah by měl zůstat neporušený a byl předán obchodníkovi. \n%c[d_green] Důležitý předmět pro obchodníka Garrotu.</text>
+</string>
+<string id="und_u15_convert_txt">
+	<text>Obálka pro "Garrotu"</text>
+</string>
+
+<string id="und_prorok_item_flesh_dsc">
+	<text>Flashka, kterou jsem našel v ruce u starého zhnilého těla na posteli v komoře v "Lucky Baru". Možná je na ní něco užitečného. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="und_prorok_item_flesh_txt">
+	<text>Flashka mrtvého</text>
+</string>
+
+<string id="okr_b54_reker_pda_dsc">
+	<text>PDA žoldáka. Jsou zde souřadnice úkrytu a zpráva od jistého Marcuse. \n Zpráva: \n Dnes zkontrolujeme výhodný obchod s bandity, místo setkání jsem pro tebe určil. Pojď na místo, čekám tam na tebe! \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="okr_b54_reker_pda_txt">
+	<text>PDA "RECHRICE"</text>
+</string>
+
+<string id="okr_r5_item_fleshka_dsc">
+	<text>Flashka sektáře, který přednesl svůj projev v sanatoriu. Možná je na ní něco užitečného. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_r5_item_fleshka_txt">
+	<text>Flashka "mnich"</text>
+</string>
+
+<string id="okr_a5_vagon_item_case_dsc">
+	<text>Pokročilý kontejner, chráněný proti hackování, požáru, pádům. Zřejmě je velmi důležité doručit obsah. \n%c[d_green] Předmět pro transakci mezi "Garrotou" a "Tesakem".</text>
+</string>
+<string id="okr_a5_vagon_item_case_txt">
+	<text>Kufřík pro Garrotu</text>
+</string>
+
+<string id="okr_okr_r5_monah_zapiska_dsc">
+	<text>Tajná podzemní cesta vedoucí do metra pod sanatoriem je označena na listu. Zmiňuje se o nějaké žíle, pomocí které se otevírá "brána". Je zde také záznam ... \n Záznam: \n Nesprávného služebníka nepoškozujte, krmte a pijte. Brzy budu v našem útočišti, ale zatím - modlete se, brzy po něm přijdou. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_okr_r5_monah_zapiska_txt">
+	<text>Sektářská poznámka s kartou</text>
+</string>
+
+<string id="okr_pda_dyadi_sema_dsc">
+	<text>Je zde čerstvý záznam. \n Zpráva: \n Ach můj bože! Letím přímo z Amaeriky, ale dostal jsem se do Bermudského trojúhelníku! Co to je, co jsem já? Nerozumím!? Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh! \n Záznam se přerušil. \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="okr_pda_dyadi_sema_txt">
+	<text>CCP "Sam"</text>
+</string>
+
+<string id="okr_dizel_instruments_dsc">
+	<text>Krabice skladu, jednotné, lakovány a kombinované klíče. Dobrá sada pro opravy automobilového vybavení. \n%c[d_green] Předmět pro rozumnou mechanickou techniku.</text>
+</string>
+<string id="okr_dizel_instruments_txt">
+	<text>Sada nástrojů</text>
+</string>
+
+<string id="okr_s1_item_black_box_dsc">
+	<text>Tuto černou krabici jsem našel na letadle. Potřebujeme technika, který ji odemkne a zjistí informace, které obsahuje. \n%c[d_green] Předmět pro odemknutí pomocí techniky.</text>
+</string>
+<string id="okr_s1_item_black_box_txt">
+	<text>Airbag</text>
+</string>
+
+<string id="okr_s1_item_key_dsc">
+	<text>Zřejmě s tímto klíčem můžete otevřít něco na palubě letadla. \n%c[d_green] Předmět pro otevření boxu.</text>
+</string>
+<string id="okr_s1_item_key_txt">
+	<text>Klíč z letadla</text>
+</string>
+
+<string id="okr_v3_item_acces_card_dsc">
+	<text>Zřejmě pomocí této přístupové karty můžete otevřít dveře v podzemním komplexu "V-3". \n%c[d_green] Předmět pro otevření dveří.</text>
+</string>
+<string id="okr_v3_item_acces_card_txt">
+	<text>Klíčová karta "v-3"</text>
+</string>
+
+<string id="okr_c4_medalion_sekta_dsc">
+	<text>Zdá se, že tento předmět nosí jako znak rozlišení. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_c4_medalion_sekta_txt">
+	<text>Sektářský medailon</text>
+</string>
+
+<string id="okr_a5_unblock_pda_dsc">
+	<text>Tento PDA patří mému bratrovi. \n Zpráva: \n Byli jsme vzati do klece ... Nevěděl jsem, odkud se ti šílenci tak najednou objevili! Berou nás ve velkém množství, jsou šílení! Útočí na nás pěstmi, noži a rovnou na naše kulky ... cítím, že se nebojí smrti, bl*! Tento člověk je psycho, to nejinak ... jdeme na školu, je zde příliš mnoho výběru. \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="okr_a5_unblock_pda_txt">
+	<text>PDA Nikita</text>
+</string>
+
+<string id="okr_a5_case_art_dsc">
+	<text>Vlastnosti a povaha tohoto artefaktu jsou neznámé, pro zjištění, o jaký artefakt jde, byste měli hledat informace u vědců. \n%c[d_green] Neznámý abnormální předmět.</text>
+</string>
+<string id="okr_a5_case_art_txt">
+	<text>Stavební chemikálie</text>
+</string>
+
+<string id="okr_s1_instrum_desc">
+	<text>Tato sada je potřeba v táboře. S její pomocí otevřu příslušný Kufřík, který jsem přinesl. \n%c[d_green] Předmět "Technicar".</text>
+</string>
+<string id="okr_s1_instrum_name">
+	<text>Technické nástroje</text>
+</string>
+
+
+<string id="okr_c4_item_case_dsc">
+	<text>Uvnitř je něco, ale na krabici je velmi sofistikovaný zámek. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_c4_item_case_txt">
+	<text>Zavřený kufr</text>
+</string>
+
+<string id="okr_c4_item_flesh_dsc">
+	<text>Tento flash disk může obsahovat užitečné informace, stačí použít počítač – zjistit jeho obsah. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_c4_item_flesh_txt">
+	<text>Flashka sektářů</text>
+</string>
+
+<string id="okr_c4_item_pda_dsc">
+	<text>Majitel ho zablokoval, možná na něm bylo něco důležitého. \n%c[d_green] Osobní věc nositele.</text>
+</string>
+<string id="okr_c4_item_pda_txt">
+	<text>Zablokovaný PDA</text>
+</string>
+
+<string id="okr_c4_doki_info_dsc">
+	<text>Vojenská zpráva, pravděpodobně pro vyššího velitele. Mezi těmito dokumenty pro mě není nic užitečného. \n%c[d_green] Důležitý předmět pro vyšetřování.</text>
+</string>
+<string id="okr_c4_doki_info_txt">
+	<text>Zpráva</text>
+</string>
+
+
+</string_table>
+

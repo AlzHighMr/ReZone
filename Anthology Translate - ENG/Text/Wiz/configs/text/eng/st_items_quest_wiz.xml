@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="wiz_mercs_base_key_name">
+    <text>Old Key</text>
+</string>
+<string id="wiz_mercs_base_key_descr">
+    <text>An old key with inventory number 08803.</text>
+</string>
+<string id="wiz_merc_leader_base_key_name">
+    <text>Key</text>
+</string>
+<string id="wiz_merc_leader_base_key_descr">
+    <text>Key to the leader's room in the mercenary group.</text>
+</string>
+<string id="radreazer_obrazec_name">
+    <text>Vial</text>
+</string>
+<string id="radreazer_obrazec_descr">
+    <text>A well-sealed vial. There’s a radioactivity mark on the body! Be careful with this.</text>
+</string>
+<string id="wiz_millitary_maps">
+    <text>Military Maps</text>
+</string>
+<string id="wiz_millitary_maps_desc">
+    <text>Military maps from a crashed Mi-24 helicopter. The map contains numerous markings: camps, outposts, bases, and more.</text>
+</string>
+<string id="dl_notes_bizon_name">
+    <text>Bison's Note</text>
+</string>
+<string id="dl_notes_bizon_descr">
+    <text>It all started so well, the guys were happy, everyone had plans for what they'd do when it was all over... Damn... If I knew how this whole thing would end, I wouldn’t have convinced the guys to come along, but now it’s too late. Rezak, Voron, Grek, Bury: Rest in peace... Sorry guys, I wanted the best for you.</text>
+</string>
+<string id="pda_sokola_name">
+    <text>Sokol's PDA</text>
+</string>
+<string id="pda_sokola_descr">
+    <text>Among various files, photos, and notes, one entry stands out marked IMPORTANT: \n%c[0,153,255,255] • %c[0,140,140,140] I didn’t think I’d get lucky! But I’ve already lost so much, so this is karma... \n%c[0,153,255,255] • %c[0,140,140,140] I arranged a meeting with Yeger near the abandoned church, now I just have to wait for him and grab the supplies. \n%c[0,153,255,255] • %c[0,140,140,140] Bastard... He shot me in the back! Well, we’ll settle this later... The entry cuts off there.</text>
+</string>
+
+	<string id="wiz_pda_rezaka_name">
+    <text>Rezak's PDA</text>
+</string>
+<string id="wiz_pda_rezaka_descr">
+    <text>The main part of the data is locked, but access to the diary is open.
+Last entry: \n%c[0,153,255,255] • %c[0,140,140,140] Bison and the guys managed to find the entrance to the catacombs, and through them, we'll be there in less than five hours, as long as we don’t run into some creature...</text>
+</string>
+<string id="dl_pda_bandita_name">
+    <text>Bandit Leader's PDA</text>
+</string>
+<string id="dl_pda_bandita_descr">
+    <text>The main part of the data is not valuable, but there’s a small note that was written not too long ago. \n
+Note: \n%c[0,153,255,255] • %c[0,140,140,140] We captured a newbie, lucky that he didn’t manage to do anything, the guys quickly stripped him down, and we put his junk in the stash. I’ll have a look at his stuff when I get the chance.</text>
+</string>
+
+<string id="val_locked_flashcard_name">
+    <text>Flash Drive</text>
+</string>
+<string id="val_locked_flashcard_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Locked.</text>
+</string>
+<string id="el_sp_flashcard_name">
+    <text>Flash Card</text>
+</string>
+<string id="el_sp_flashcard_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] The flash card contains only coordinates for exiting the anomaly.</text>
+</string>
+<string id="el_pda_sos_name">
+    <text>Necrosov's PDA</text>
+</string>
+<string id="el_pda_sos_descr">
+    <text>\n%c[0,193,66,66] • %c[0,193,66,66] Note #1: Looks like a group of mercenaries is searching for an entrance to the complex. I wonder what they need there? We need to send Lefty for reconnaissance. \n%c[0,193,66,66] • %c[0,193,66,66] Note #2: Lefty said the complex is empty, except for mutants and a couple of zombified ones. \n%c[0,193,66,66] • %c[0,193,66,66] Note #3: The mercenaries found the entrance to the laboratory, but it seems like another merc group is watching them. We need to be careful...</text>
+</string>
+<string id="st_ba1_pda_felix_pda">
+    <text>Felix's PDA</text>
+</string>
+<string id="st_ba1_pda_felix_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] The PDA contains several notes and a map of the area marked "Empty Lands." In the notes, the stalker mentions the "Prometheus" project and that he went to the laboratory specifically for its mentions/documents. The rest of the notes are cut off, but there is one unfinished note: Damn, what made me think this was a good idea! I knew how it could end... The mercenaries caught up with me, and I ran out of ammo...</text>
+</string>
+
+	<string id="wiz_case_starogo_name">
+    <text>Hermetic Container</text>
+</string>
+<string id="wiz_case_starogo_descr">
+    <text>Container marked "Y-023" - Closed.</text>
+</string>
+<string id="wiz_old_writes_name">
+    <text>"Old Manuscript"</text>
+</string>
+<string id="wiz_old_writes_descr">
+    <text>A lot of the entries are unreadable, they have simply rotted away. By the middle of the manuscript, there are surviving entries from the Old Man: \n \n
+\n%c[0,153,255,255] "Entry from 29.08.2017" \n
+%c[0,140,140,140] This "greenhorn" doesn't understand anything! They’re just walking into the arms of death and then complain that the Zone is punishing them... Fools! The important thing is that I managed to seal the entrance to the complex - they have no business there! I hid the key to the complex near the descent to it.\n
+%c[0,153,255,255] "Entry from 06.09.2017" \n
+%c[0,140,140,140] A group of stalkers asked me to let them into the abandoned catacombs. I initially refused, but then I realized I wouldn't be able to talk them out of it. I let the stalkers in and sealed the entrance, now no one will be able to enter the catacombs through it, but the trouble is that there is another descent on the territory of the Old ATP.</text>
+</string>
+
+<string id="st_wiz_merc_lead_notebook_name">
+    <text>Mercenary Leader's Notebook</text>
+</string>
+<string id="st_wiz_merc_lead_notebook_desc">
+    <text>Among the numerous spam messages in the laptop's inbox, there is a single message marked as important: \n
+\n%c[0,153,255,255] Message contents: %c[0,140,140,140] "Set up a camp at the former military base - everyone involved in the matter will arrive at your location. Don’t expect Grif: he will be in the 'Dark Valley' with his people, he has his own task. Once you find the artifact, don't rush to leave, first look for traces. The leader of the neutrals is to be eliminated, his task is complete." \nShakal</text>
+</string>
+<string id="val_grek_pda_name">
+    <text>Greko's PDA</text>
+</string>
+<string id="val_grek_pda_desc">
+    <text>%c[0,153,255,255] Last entry: %c[0,140,140,140] So much effort, and all for nothing... I pity the guys, they believed that this damn artifact would be the golden ticket to a comfortable life, but sadly, that’s not the case. I’m practically a dead man now, and Bizon, he went to that shack in the swamp. After some time, I heard a few shots... and that was it... Ah, it all started so well...</text>
+</string>
+<string id="dl_dead_merc_pda_name">
+    <text>Beast's PDA</text>
+</string>
+<string id="dl_dead_merc_pda_desc">
+    <text>The PDA contains only one message: \n
+\n%c[0,153,255,255] • %c[0,140,140,140] Your target is the veteran stalker, nickname - Bizon. He and his group of neutrals were seen near the Dead Lake. Your task: Eliminate the stalker and his group, and take all their information carriers. The meeting place will be indicated later.</text>
+</string>
+
+	<string id="st_wiz_pda_nazar_name">
+    <text>Nazar's PDA</text>
+</string>
+<string id="st_wiz_pda_nazar_descr">
+    <text>Nazar's PDA contains several audio notes: \n
+\n%c[0,153,255,255] Note #1: %c[0,140,140,140] Kosta sent me to find a rather rare artifact from the mercenaries, he said the "blues" promised a good reward. \n
+%c[0,153,255,255] Note #2: %c[0,140,140,140] Found the artifact, contacted Kosta, he said to wait near the swamp, a mercenary should come. \n
+%c[0,153,255,255] Note #3: %c[0,140,140,140] The "blue" took the artifact... and shot... Why didn’t he finish... (coughs) K-Kos... [Audio cuts off].</text>
+</string>
+<string id="st_kat_pda_stalker_unlock_name">
+    <text>Voron’s PDA</text>
+</string>
+<string id="st_kat_pda_stalker_unlock_descr">
+    <text>The PDA was cleared, but a few notes remain: \n
+\n%c[0,153,255,255] Note #2: %c[0,140,140,140] We ran into mutants… We expected this, I got injured… [coughs] The guys wanted to carry me, but I told them no… It’s better to cover the rear here than be a burden on their shoulders. Well then! Prepare yourselves, bastards...</text>
+</string>
+<string id="st_kat_pda_stalker_lock_name">
+    <text>Voron’s PDA</text>
+</string>
+<string id="st_kat_pda_stalker_lock_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Device: %c[0,193,66,66] Locked</text>
+</string>
+<string id="st_wiz_pda_merc_lock_name">
+    <text>Mercenary’s PDA</text>
+</string>
+<string id="st_wiz_pda_merc_lock_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Device: %c[0,193,66,66] Locked</text>
+</string>
+<string id="st_wiz_pda_merc_name">
+    <text>Mercenary’s PDA</text>
+</string>
+<string id="st_wiz_pda_merc_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Notes: \n%c[0,153,255,255] • Krovoy did a great job with this artifact! In essence, the stalker's death was only the fault of the bloodsucker. I wonder how he managed to convince the neutral leader to send that wanderer to the bloodsucker's lair? \n
+%c[0,153,255,255] • Krovoy sent scouts to check the paths so we wouldn't have trouble retreating. \n
+%c[0,153,255,255] • Well, that’s it, now I can go back to the guys.</text>
+</string>
+
+<string id="st_ba1_pda_yara_pda">
+    <text>Yara's PDA</text>
+</string>
+<string id="st_ba1_pda_yara_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Notes: \n%c[0,153,255,255] • %c[0,193,66,66] I wonder what the mercenaries needed in this laboratory? I think it’s worth keeping an eye on them. \n
+%c[0,153,255,255] • %c[0,193,66,66] Damn, they disappeared... We need to be more careful. \n
+%c[0,153,255,255] • %c[0,193,66,66] Strange, I found no one... \n
+%c[0,153,255,255] • %c[0,193,66,66] I checked the laboratory from top to bottom, but not a single soul... \n
+%c[0,153,255,255] • %c[0,193,66,66] Found a military radio station. After turning it on, it picked up someone’s S.O.S signal. I’ll need to ask the locals more about these poor souls. \n
+%c[0,153,255,255] • %c[0,193,66,66] DAMN! I knew it wouldn’t be this simple, looks like this is the end... The Controller turned out to be more resilient than I expected. This is the end...</text>
+</string>
+<!-- Project "Prometheus" -->
+<string id="st_doc_ba1_info_name">
+    <text>Project: Prometheus ch.5</text>
+</string>
+<string id="st_doc_ba1_info_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Everything went wrong! The "Prometheus" project has gone out of control! The laboratory staff discovered a violation of the quarantine zone. Laboratory assistant Chistyakov A.V. performed a heroic act, he sealed the lower levels of the complex to prevent the infection from spreading further, but he perished. Unfortunately, funding was stopped, the project was shut down, and the test subjects were sealed in the complex. \n\n Professor Zvyagintsev A.M \n\n Date: 15.06.2016.</text>
+</string>
+<string id="st_doc_ba1_info_1_name">
+    <text>Project: Prometheus ch.2</text>
+</string>
+<string id="st_doc_ba1_info_1_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] 10.03.2016: \n
+The project has performed quite well, but there are still some issues that require further development and experiments. Most of all, we recommend conducting field tests of the project, because a large portion of our test subjects showed impressive results in laboratory conditions, but after field testing, it became clear that the subjects were still in the early stages. \n
+14.03.2016: \n
+After field testing, we discovered a spy who, with the help of others, was sabotaging the project. As it turns out, the spy was Professor Romanov. We couldn't determine how long he had been working against the project. The professor committed suicide. We hope that the other accomplices will stay in the shadows for now, and the "Prometheus" project will reach its final stage. \n\n Professor Zvyagintsev A.M \n\n Date: 14.03.2016.</text>
+</string>
+
+<string id="st_doc_ba1_info_2_name">
+    <text>Project: Prometheus ch.4</text>
+</string>
+<string id="st_doc_ba1_info_2_descr">
+    <text>\n%c[0,153,255,255] • %c[0,140,140,140] Based on everything mentioned above, we conclude that the subject does not exhibit uncontrolled aggression, unlike its predecessors. \n
+The most notable thing is that the subject has begun emitting a small amount of Psi-Waves, however, the reason for their appearance has not been determined. Moreover, one of the lab assistants mentions constant headaches when staying near the subject. I feel it is necessary to report that the "Prometheus" project is unstable and requires more time for observation. \n\n Professor Zvyagintsev A.M \n\n Date: 09.04.2016.</text>
+</string>
+<string id="ex_sokol_documents_name">
+    <text>Folder of Documents</text>
+</string>
+<string id="ex_sokol_documents_descr">
+    <text>A folder with documents, the majority of which are dated February 2016. The documents also mention some "Prometheus" project.</text>
+</string>
+<string id="ex_sokol_treasure_name">
+    <text>Fireproof Case</text>
+</string>
+<string id="ex_sokol_treasure_descr">
+    <text>A small fireproof case, it seems that money is inside it.</text>
+</string>
+<string id="ex_scaner_radio_name">
+    <text>Radio Frequency Scanner</text>
+</string>
+<string id="ex_scaner_radio_descr">
+    <text>A radio frequency scanner designed for scanning frequency ranges or channels. When the scanner detects a signal on a certain frequency, it pauses for a set time and then continues scanning the designated frequency range.</text>
+</string>
+<string id="pda_petruhi_lock_name">
+    <text>Petruhi's PDA</text>
+</string>
+<string id="pda_petruhi_lock_descr">
+    <text>%c[0,153,255,255] •LOCKED. \n\n%c[0,153,255,255] •The PDA casing bears the inscription: "Wild Group".</text>
+</string>
+
+<string id="pda_petruhi_unlock_name">
+    <text>Petruhi's PDA</text>
+</string>
+<string id="pda_petruhi_unlock_descr">
+    <text>%c[0,153,255,255] •Received message #1: Petruhi, your task is to infiltrate Tikhiy's group. The main objective is to steal the medallion. \n%c[0,153,255,255] •Received message #2: In a couple of hours, we will provoke Tikhiy's group into a raid on the territories. This will be your chance, just don't mess it up. \n\n %c[0,153,255,255] •Personal note: Damn Wild, he'd rather hang out with these stalkers himself... Anyway, I think everything will be over soon. \n\n %c[0,153,255,255] •Personal note: The provocation worked, we are now gathering for the raid. \n\n %c[0,153,255,255] •Personal note: The meeting point is not far from the northern tunnel with the "Zharki".</text>
+</string>
+<string id="ex_gar_medaliyon_name">
+    <text>Old Medallion</text>
+</string>
+<string id="ex_gar_medaliyon_descr">
+    <text>%c[0,153,255,255] •An old medallion with a chain. The medallion has the initials I.A. engraved on it. Inside there is a photo.</text>
+</string>
+<string id="real_habar_name">
+    <text>Regular Hiking Backpack</text>
+</string>
+<string id="real_habar_descr">
+    <text>It looks like a regular hiking backpack, but it is quite heavy. There may be valuable items inside.</text>
+</string>
+<!-- Quest Items for Cyclic Quests -->
+<string id="medkit_case_name">
+    <text>First Aid Kit Case</text>
+</string>
+<string id="medkit_case_descr">
+    <text>Fireproof case with medical supplies.</text>
+</string>
+<string id="alko_treasure_name">
+    <text>Alcohol Backpack</text>
+</string>
+<string id="alko_treasure_descr">
+    <text>A quite heavy backpack with "fuel" for Diesel.</text>
+</string>
+<string id="aiamop_treasure_name">
+    <text>Ammunition Backpack</text>
+</string>
+<string id="aiamop_treasure_descr">
+    <text>The backpack contains a fair amount of ammunition.</text>
+</string>
+<string id="sqf_treasure_name">
+    <text>Joker's Order</text>
+</string>
+<string id="sqf_treasure_descr">
+    <text>The backpack contains a lot of ammunition and provisions.</text>
+</string>
+<string id="st_dl_lab_x6_info_name">
+    <text>Research Documents</text>
+</string>
+<string id="st_dl_lab_x6_info_descr">
+    <text>The report discusses the study of biological samples and so-called artifacts sent from laboratory X11. The samples were exposed to an informational field of varying intensity. The report describes in detail the mutations in living and non-living organisms caused by such exposure.\nThese documents must not fall into the wrong hands.</text>
+</string>
+
+<string id="lake_garik_case_name">
+    <text>Steel Case</text>
+</string>
+<string id="lake_garik_case_descr">
+    <text>“Case is locked.” \nApparently, the contents are of great importance to the owner.</text>
+</string>
+
+
+</string_table>

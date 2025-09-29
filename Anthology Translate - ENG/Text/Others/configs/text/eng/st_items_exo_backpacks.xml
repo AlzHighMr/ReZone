@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+<!--
+	Backpacks
+-->
+
+<string_table>
+	
+<string id="st_exobackpack_name">
+	<text>Raytheon XOS 3 Exoskeleton</text>
+</string>
+<string id="st_exobackpack_descr">
+	<text>Semi-military model of an exoskeleton without heavy armor. The absence of heavy plating allows the operator to move faster. Used by stalkers for transporting heavy loads.\n \n
+	%c[ui_gray_3]CHARACTERISTICS:\n
+	%c[d_blue] • %c[ui_gray_2] universal application\n
+	%c[d_blue] • %c[ui_gray_2] used for item storage\n
+	%c[0,100,255,150] • %c[ui_gray_2] can be used as a stash\n
+	</text>
+</string>
+
+<string id="st_exobackpack2_name">
+	<text>Raytheon XOSM Exoskeleton</text>
+</string>
+<string id="st_exobackpack2_descr">
+	<text>Upgraded version of the Raytheon XOS 3 Exoskeleton. The increased structural weight also comes with an increased carrying capacity. Used by the U.S. military and various PMCs.\n \n
+	%c[ui_gray_3]CHARACTERISTICS:\n
+	%c[d_blue] • %c[ui_gray_2] universal application\n
+	%c[d_blue] • %c[ui_gray_2] used for item storage\n
+	%c[0,100,255,150] • %c[ui_gray_2] can be used as a stash\n
+	</text>
+</string>
+
+	
+</string_table>

@@ -1,0 +1,936 @@
+<?xml version = "1.0" encoding = "windows-1250"?>
+<string_table>
+
+
+
+<string id="test_dialog_0">
+<text> Potøebuji testovací pøípad? </text>
+</string>
+<string id="test_dialog_1">
+<text> Zde je testovací pøípad pro beta verzi. </text>
+</string>
+<string id="test_dialog_2">
+<text> Najdu ho. </text>
+</string>
+<string id="test_dialog_3">
+<text> Nehledej. </text>
+</string>
+<string id="test_dialog_4">
+<text> Dobrı \n </text>
+</string>
+<string id="test_dialog_end_0">
+<text> Úkol jsem splnil </text>
+</string>
+<string id="test_dialog_end_1">
+<text> Vıbornì \n </text>
+</string>
+<string id="test_dialog_end_2">
+<text> Kde je moje odmìna </text>
+</string>
+<string id="test_dialog_end_3">
+<text> Tady je </text>
+</string>
+<string id="test_dialog_end_4">
+<text> Dìkuji. </text>
+</string>
+<string id="test_dialog_end_4">
+<text> Dìkuji. </text>
+</string>
+    
+ <string id="sarik_dialog_0">
+<text> Nevíte, kde se dá sehnat nìjaká práce Profesore? </text>
+</string>
+<string id="sarik_dialog_1">
+<text> Ano, nìco mám, pøišel jsem zrovna dnes ráno. Do Zóny dorazila nová skupina vızkumníkù, kteøí sbírají podivné artefakty. No, ne tak docela artefakty, spíš ozáøené harampádí, ale z nìjakého dùvodu je to zajímá. Moná budou potøebovat pomoc. </text>
+</string>
+<string id="sarik_dialog_2">
+<text> To zní zajímavì. Kde je mùu najít? </text>
+</string>
+<string id="sarik_dialog_3">
+<text> A jdou ti vajíèkáøi do prdele, nechci pro nì pracovat. </text>
+</string>
+<string id="sarik_dialog_4">
+<text> Jsou roztroušeni po celé Zónì. Jednoho prı nedávno vidìli v Bázinách. Zdá se, e se utáboøil ve Starém kostele. </text>
+</string>
+<!-- Meeting of Scientists -->
+<string id="meet_ah_ti_kto_takoy">
+<text> Dobrı den, pane profesore, mohu se zeptat, jak pokraèuje váš vızkum? </text>
+</string>
+<string id="meet_ah_1">
+<text> Ano, samozøejmì! Mám u jednu záleitost, se kterou potøebuji pomoc, jestli jste pro. </text>
+</string>
+<string id="meet_ah_2">
+<text> Jistì, mám trochu èasu. Co potøebuješ? </text>
+</string>
+<string id="meet_ah_no">
+<text> Je mi líto, ale nemám na to èas. </text>
+</string>
+<string id="meet_ah_4">
+<text> Pro svùj další experiment potøebuji anomální špínu z místních anomálních polí. Musíte se do tìchto anomálií vydat a najít tyto témìø zformované artefakty. Váš detektor by je mìl bıt schopen zachytit, aby vám pomohl pøi hledání. </text>
+</string>
+<string id="meet_ah_5">
+<text> To zní jednoduše, pøinesu ti tvou lesklou hlínu. </text>
+</string>
+<string id="meet_ah_6">
+<text> Rád bych ti pomohl, ale nemám detektor artefaktù. Máš nìjakı, kterı bych si mohl pùjèit? </text>
+</string>
+<string id="meet_ah_7">
+<text> Velmi dobøe. Oznacím na tvém PDA anomálie, které chci, abyste prohledal. </text>
+</string>
+<string id="meet_ah_8">
+<text> No, pøedpokládám, e ti mùu dát svùj starı detektor. Je to starı model, ale mìl by to zvládnout. Kdy pro nás udìláš pár takovıch prací, budeš si moct hned koupit lepší! Podívej se do svého PDA na lokality, o které mám zatím zájem. </text>
+</string>
+
+
+ <string id="cancel_ah_0">
+<text> O vaší misi profesore... </text>
+</string>
+<string id="cancel_ah_1">
+<text> Jak pokraèuje pátrání? Našli jste je všechny? </text>
+</string>
+<string id="cancel_ah_2">
+<text> Ne, stále je hledám. </text>
+</string>
+<string id="cancel_ah_3">
+<text> Vlastnì jsem nic nenalezl. </text>
+</string>
+<string id="cancel_ah_4">
+<text> Jsi si jistı? Mé vıpoèty jasnì pøedpovídají, e bys mìl najít alespoò nìco. To by mému vızkumu velmi uškodilo. </text>
+</string>
+<string id="cancel_ah_5">
+<text> Je mi líto, pane profesore, ale nenalezl jsem je. </text>
+</string>
+<string id="cancel_ah_6">
+<text> Dobøe. Budu hledat dál. </text>
+</string>
+<string id="cancel_ah_7">
+<text> Sakra, tohle není dobøe. Tohle mì vrátí nejménì o dva mìsíce zpátky... Promiò, musím do laboratoøe. Sbohem, Stalkere. </text>
+</string>
+<string id="kovalev_1_quest_0">
+<text> Dobrı den, pane profesore, mohu se zeptat, jak pokraèuje váš vızkum? </text>
+</string>
+<string id="kovalev_1_quest_3">
+<text> Nezapomeò pouít detektor, kterı jsem ti dal, mìl by vydávat pípavı zvuk, kdy se pøiblííš k artefaktu. </text>
+</string>
+<string id="kovalev_1_quest_end_0">
+<text> Pøinesl jsem ti tvou záøící hlínu, tak co teï? </text>
+</string>
+<string id="kovalev_1_quest_end_1">
+<text> No jistì, tady je tvá odmìna. S malım bonusem. </text>
+</string>
+    
+
+ <string id="kovalev_2_quest_0">
+<text> Potøebujete ještì s nìèím pomoc, pane profesore? </text>
+</string>
+<string id="kovalev_2_quest_3">
+<text> Víš, døíve jsem mìøil anomálie v Agropromu a zjistil jsem øadu podivnıch abnormalit. Artefakty, které se v tìchto anomáliích tvoøí, mají na noosféru jedineèné modulaèní charakteristiky. Bìhem mıch studií jsme však byli napadeni. Situace se dost vyhrotila a my jsme museli utéct. V tom zmatku jsem na jednom z míst s anomáliemi zapomnìl svùj laptop s daty ze skenování. Pokud mùete, najdìte prosím mùj laptop, budou v nìm uvedeny souøadnice anomálií, které jsem skenoval. Podívejte se po všech anomálních vzorcích, které v nich najdete. </text>
+</string>
+<string id="kovalev_2_quest_end_0">
+<text> Hej, profesore, našel jsem tvùj notebook a získal artefakty. </text>
+</string>
+<string id="kovalev_2_quest_end_1">
+<text> Dìkuji, to mi velice pomùe ve vızkumu! Doufám, e tento bonus pokryje tvé náklady na tuto misi. </text>
+</string>
+<string id="markov_1_quest_0">
+<text> Poslouchám. </text>
+</string>
+<string id="markov_1_quest_2">
+<text> Proè se nezeptáš nìkterého ze svıch kolegù z Jantaru? </text>
+</string>
+<string id="markov_1_quest_3">
+<text> Pracuji oddìlenì od vìdecké skupiny v Jantaru. Tito prùmìrní amatéøi se ani nepustili do studia anomálií, které jsou jim nejbliší. Poslouchej, jestli ty artefakty najdeš, dobøe ti zaplatím. Èím døíve, tím lépe. </text>
+</string>
+<string id="markov_1_quest_end_0">
+<text> Tady jsou vaše vzorky. </text>
+</string>
+<string id="markov_1_quest_end_1">
+<text> Skvìlá práce, mladı mui. Kam teï dám tyhle... </text>
+</string>
+<string id="markov_2_quest_0">
+<text> Potøebujete ještì s nìèím pomoc, pane profesore? </text>
+</string>
+<string id="markov_2_quest_3">
+<text> Ach, ano! Kdy jsem byl na terénním vızkumu, zjistil jsem podivné vıkyvy v noosféøe v sousední oblasti zvané Divoké území. Zdá se, e mají nìjakı vliv na artefakty, které tam vznikají, take chci, abys to šel prozkoumat. Dám ti souøadnice míst, která mì zajímají. </text>
+</string>
+<string id="markov_2_quest_end_0">
+<text> Poøád se cítím celı rozmazanı z tìch elektroanomálií, do kterıch jsem vstoupil. Kadopádnì tady máte, profesore, další várku artefaktù. </text>
+</string>
+<string id="markov_2_quest_end_1">
+<text> Úasné! Tady je vaše odmìna. </text>
+</string>
+<string id="markov_3_quest_0">
+<text> Ještì nìco? Doufal jsem v nìco víc... vzrušujícího. </text>
+</string>
+<string id="markov_3_quest_3">
+<text> Hm, podívejme se... Ach ano! Je tu další terénní vızkum, kterı jsem ještì nestihl provést. Kousek na sever odtud, v Jantaru, je stará laboratoø, která vypouští nebezpeèné vysoké mnoství emisí psi. Mám dùvod se domnívat, e tyto emise ovlivòují tvorbu artefaktù v této oblasti. Nechtìl jsem tì tímto úkolem povìøit, ale nemohu se doèkat vısledkù! Mìl byste si promluvit s profesorem Sacharovem, pokud potøebujete nìjakou psychickou ochranu. </text>
+</string>
+    
+<string id="markov_3_quest_end_0">
+<text> Èlovìèe, tohle opravdu nebylo snadné, ale myslím, e jsem je našel všechny. </text>
+</string>
+<string id="markov_3_quest_end_1">
+<text> Úasné, dìkuji! Moc jsi mi pomohl. </text>
+</string>
+<string id="pirogov_1_quest_0">
+<text> Vypadáte ustaranì. </text>
+</string>
+<string id="pirogov_1_quest_1">
+<text> Ano, tahle díra se hemí mutanti a bandity a ti idioti mì sem poslali samotného! To si vánì mysleli, e budu moct všechno ignorovat a jen tak tudy projít? Kurva! </text>
+</string>
+<string id="pirogov_1_quest_2">
+<text> Woah, uklidni se, chlape. Moná bych ti mohl pomoci. Co potøebuješ? </text>
+</string>
+<string id="pirogov_1_quest_5">
+<text> Dobøe, poslouchej. V okolí jsou docela vzácné anomálie a tihle idiotští bandité se jich prakticky nedotkli. Kdybys mi mohl z kadé z nich sehnat vzorek, byl bych ti velmi vdìènı. Tady jsou souøadnice. </text>
+</string>
+<string id="pirogov_1_quest_end_0">
+<text> Byla to pekelná cesta, ale podaøilo se mi získat vaše vzorky. </text>
+</string>
+<string id="pirogov_1_quest_end_1">
+<text> Skvìle, hned dám vìdìt profesoru Sacharovovi. Dìkuji ti, stalkere, dneska jsi mì opravdu vytail z prùšvihu. </text>
+</string>
+<string id="pirogov_2_quest_0">
+<text> Ještì nìco? </text>
+</string>
+<string id="pirogov_2_quest_3">
+<text> Bohuel ano. Sacharov mi právì øekl, e chce, abych se podíval na høbitov kamionù. Víte, Truck Cemetery je málo prozkoumaná oblast a mnozí se ji z dobrého dùvodu vyhıbají, i kdy se tam zøejmì nachází øada zajímavıch anomálií. Pokud mi z tìchto anomálií seenete vzorky, dám vám padesátiprocentní podíl z platby za tuto práci. Oblast se nachází severnì odtud, ale pozor na bandity. </text>
+</string>
+<string id="pirogov_2_quest_end_0">
+<text> Èlovìèe, to bylo ale pusté místo. Kadopádnì, tady máš další várku, profesore. </text>
+</string>
+<string id="pirogov_2_quest_end_1">
+<text> Dìkuji, to by mìlo staèit. Jak bylo dohodnuto, tady je váš vıøez. </text>
+</string>
+<string id="pirogov_3_quest_0">
+<text> Tak co, ještì nìco, nebo to bylo všechno? </text>
+</string>
+<string id="pirogov_3_quest_3">
+<text> No, je tu ještì jedna vìc. Poslal jsem svého posledního asistenta do Smetištì, aby umístil prototypy do nìkterıch anomálií. Ale zmeškal poslední dva radiové kontakty a obávám se, e se mu nìco stalo. </text>
+</string>
+<string id="pirogov_3_quest_4">
+<text> To v téhle ozáøené díøe není nic pøekvapivého. </text>
+</string>
+<string id="pirogov_3_quest_5">
+<text> Naposledy jsem o nìm slysel, e se chtìl zásobit na Blesím trhu, take je dobrı nápad zaèít hledat tam. Najdi mého asistenta a jeho PDA, mìlo by obsahovat lokace zbylıch anomálií, které mì zajímají. Pøines mi vzorky, abych mohl opustit tohle bohem zapomenuté místo. </text>
+</string>
+<string id="pirogov_3_quest_end_0">
+<text> Našel jsem tvého asistenta. Zdá se, e ho napadli bandité a promìnili ho ve švıcarskı sır, ale podaøilo se mi získat zpìt jeho PDA a dokonèit práci. Tady máš, profesore. </text>
+</string>
+<string id="pirogov_3_quest_end_1">
+<text> Jaká škoda, byl to dobrı èlovìk. Jakı to prohnilı zpùsob smrti... Kadopádnì tady je tvá odmìna. Koneènì se mùu vrátit do bunkru a poøádnì se osprchovat. </text>
+</string>
+    
+<string id="chernov_1_quest_0">
+<text> Ahoj, slyšel jsem, e bys mohl potøebovat pomoc pøi svém vızkumu. </text>
+</string>
+<string id="chernov_1_quest_1">
+<text> Nejsi ty náhodou horlivı? Doufám, e se nepokoušíš o plagiát mé práce. </text>
+</string>
+<string id="chernov_1_quest_2">
+<text> Vùbec ne, pane profesore. Zatím mì zajímají jen peníze. </text>
+</string>
+<string id="chernov_1_quest_5">
+<text> Velmi dobøe. Tak se podíváme, jestli na to máš, ano? V této oblasti, které místní øíkají Armádní sklad, se nachází mnoho zajímavıch anomálií, kterım se vìtšina stalkerù jednoduše snaí vyhnout. Pøineste mi vzorky z tìch, které jsem vám oznaèil na PDA, a pak si mùeme promluvit dál. </text>
+</string>
+<string id="chernov_1_quest_end_0">
+<text> Tady to je, jedna várka lesklé špíny. </text>
+</string>
+<string id="chernov_1_quest_end_1">
+<text> Skvìle. Jak jsem slíbil, tady je vaše platba. Chcete teï vìdìt nìco konkrétního? </text>
+</string>
+<string id="chernov_3_quest_0">
+<text> Zajímalo by mì, jak vùbec víte, kde se ty podivné artefakty objeví. </text>
+</string>
+<string id="chernov_3_quest_1">
+<text> No, naše vızkumná skupina je vlastnì souèástí SIRCAA, Scientific Institute for Research of the Chernobyl Anomalous Area. Neustále tuto zónu zkoumáme, abychom našli zpùsob, jak ji znièit nebo alespoò ovládnout. Díky informacím od místních stalkerù a vlastním exkurzím jsme se toho hodnì dozvìdìli. Pro nìkteré oblasti máme dokonce pøedbìné mapy anomálií. Na základì tìchto informací a údajù z našich skenerù mùeme odvodit pravdìpodobnost vzniku artefaktu. </text>
+</string>
+<string id="chernov_3_quest_2">
+<text> Zajímavé. Take takhle víte, kam mì máte poøád posílat. </text>
+</string>
+<string id="chernov_3_quest_3">
+<text> Pøesnì tak. Tvùj další úkol však bude vyadovat opatrnost. Pøece jen nechci, aby tì nìkdo zabil, zatím se zdá, e jsi dobrı pomocník. Povìøil jsem konkrétního stopaøe, aby prozkoumal nìjaká anomální pole v Rudém lese. Bohuel se zdá, e se ztratil. Poslední místo, odkud mi posílal zprávy, byl zavalenı tunel u mostu do Limansku. Jdi a najdi jeho PDA, které obsahuje skenovací data, je jsem mu dal, a najdi zbıvající vzorky. Musím tì však varovat, v Rudém lese jsem ztratil mnoho pøátel a kolegù, take buï opatrnı. </text>
+</string>
+<string id="chernov_3_quest_end_0">
+<text> To byl ale vılet! I kdy jsem se musel prostøílet, podaøilo se mi získat všechny vzorky. Snad to bude stát za to, pane profesore! </text>
+</string>
+<string id="chernov_3_quest_end_1">
+<text> Nádhera, u jsem se zacínal bát. Doufám, e tenhle bonus pokryje vaše léèebné vıdaje. </text>
+</string>
+<string id="chernov_4_quest_0">
+<text> Tak co, podaøilo se vám nìkdy vytvoøit artefakty v laboratoøi? Chci øíct, e je studujete u nìjakou dobu a nespadla by dramaticky potøeba Zóny, kdyby se artefakty daly vytváøet mimo ni? </text>
+</string>
+<string id="chernov_4_quest_1">
+<text> Práce na vytváøení umìlıch artefaktù probíhaly ještì pøed jadernou katastrofou a vytvoøením Zóny. Mùj nadøízenı il a pracoval v Limansku. Mnoho nocí jsme u nìj pøespávali a diskutovali o moném pùvodu artefaktu. Poté, co jsme z laboratoøe ukradli péstební lùko, se nám dokonce podaøilo vytvoøit protoartefakt, pøesnì takovı, jakı jsi mi pøinesl. </text>
+</string>
+<string id="chernov_4_quest_2">
+<text> Zajímavé. Co se stalo s tvım pøítelem? </text>
+</string>
+<string id="chernov_4_quest_3">
+<text> Nevím, v dobì katastrofy nebyla z Limansku ádná evakuace. Kam zmizeli všichni jeho obyvatelé, je pro mì záhada. To mi pøipomíná, e mám ještì adresu jeho domu. Mohl byste se tam zajít podívat, jestli tam ten artefakt ještì je? Kdo ví, tøeba je to klíè k pochopení toho všeho. </text>
+</string>
+<string id="chernov_4_quest_end_0">
+<text> Limansk je v hrozném stavu. Nenašel jsem ádné pøeivší, kromì bandy šílenıch fanatikù. Podaøilo se mi však najít artefakt. Tady je. </text>
+</string>
+<string id="chernov_4_quest_end_1">
+<text> Tolik jsem oèekával. Pøesto si nemohu pomoct, ale chybí mi mùj starı pøítel... Kadopádnì ucítíme jeho obì a pokusíme se zjistit, jak tomu všemu znovu zabránit. </text>
+</string>
+    
+   <string id="chernov_5_quest_0">
+  <text>Jak to jde, pane profesore? Máte nìjaké novinky o pùvodu artefaktu?</text>
+</string>
+<string id="chernov_5_quest_1">
+  <text>Ano, podívejte se sem. Vidíte tohle? Tento artefakt má zcela jedineènı vzor vyzaøování. Pøíteli, právì tady máme nezpochybnitelnı dùkaz, e artefakty lze získat umìlımi prostøedky.</text>
+</string>
+<string id="chernov_5_quest_2">
+  <text>To je šílené! Poèkejte, myslíte, e je moné, aby se artefakty objevily døív ne Zóna?</text>
+</string>
+<string id="chernov_5_quest_3">
+  <text>No, myslím, e vám to mohu øíct, protoe to stejnì nakonec zjistíte. Slyšeli jste nìkdy o farmách artefaktù? Vızkum v tomto smìru probíhá u dlouho a nyní opuštìná laboratoø X-19 do nich hodnì investovala. Vytváøeli lùka, kterım øíkali "lùka", v nich mohly artefakty vznikat v kontrolovanıch podmínkách. V souèasnosti je oblast ovládána fanatiky, kteøí si øíkají Monolit, a je extrémnì nebezpeèná. Pokud se vám však nìjak podaøí dostat se tam a najít nìjaké zbytky artefaktu nebo dokumentace, budu vaším dluníkem.</text>
+</string>
+<string id="chernov_5_quest_end_0">
+  <text>Páni, ty jsi vánì nehlál, v okolí se to monolity jen hemilo, nicménì se mi podaøilo dostat se do laboratoøe. Vìø tomu nebo ne, ale mìl jsem pravdu. Našel jsem tøi artefakty a nìjaké papíry, které vypadaly dùleité. Tady je máte.</text>
+</string>
+<string id="chernov_5_quest_end_1">
+  <text>Skvìle. Neptejte se, jak jsem vìdìl, e to tam bude, odpovìï by se vám nelíbila. Vzhledem k povaze našeho vızkumu vás musím poádat o diskrétnost. Nakonec svìtu prozradím, co se tu stalo. Ale ne to budu moci udìlat, musím dokonèit svou teorii o tìchto artefaktech.</text>
+</string>
+<string id="chernov_6_quest_0">
+  <text>Rozumím. Potøebujete ještì nìco, pane profesore?</text>
+</string>
+<string id="chernov_6_quest_3">
+  <text>Ano, v návaznosti na naše poslední skenování oblasti jsme našli nìco zajímavého. Velká skupina zlodìjù ovládá oblast, které øíkají Mrtvé mìsto. Z této oblasti jsem získal velmi stabilní údaje, take ji budu skvìle pouít jako kontrolní bod. Pokud mi pøinesete vzorky z tìchto míst, budu z nich moci vytvoøit základní údaje.</text>
+</string>
+<string id="chernov_6_quest_end_0">
+  <text>Huh, mìsto mi nepøipadalo tak "mrtvé". Tady jsou ty vzorky, prof.</text>
+</string>
+<string id="chernov_6_quest_end_1">
+  <text>Skvìlá práce, tady je váš bonus. S tím, jak moc jste mi pomohl, bych vás klidnì mohl zmínit v pøedmluvì své diplomové práce. I kdy to nevypadá, e bys o to nìjak zvláš stál - zatím. Jestli chcete víc práce, moná by ses mìl pohlédnout po nìkterém z mıch kolegù tady v Zónì. Moná pro vás budou mít nìco. Pošlu vás za nimi.</text>
+</string>
+
+<string id="juk_1_quest_0">
+  <text>Dobrı den, bylo mi øeèeno, e byste pro mì mohl mít nìjakou práci.</text>
+</string>
+<string id="juk_1_quest_3">
+  <text>Ano, opravdu mám práci pro vás. V této oblasti se nachází nìkolik anomálních polí, která bych potøeboval prozkoumat. Bohuel jsem zde uvízl a nemohu opustit tento prostor. Anomalie, které mì zajímají, oznaèím na vašem PDA. Doufám, e víte, co máte dìlat. Sacharov by byl rozzlobenı, kdybych nic nenašel.</text>
+</string>
+<string id="juk_1_quest_end_0">
+  <text>Tady máte. Tohle jsou artefakty, které se mi podaøilo najít.</text>
+</string>
+<string id="juk_1_quest_end_1">
+  <text>Huh, neèekal jsem, e se vám to skuteènì podaøí. Skvìlá práce, tady máte odmìnu.</text>
+</string>
+<string id="juk_2_quest_0">
+  <text>Mohu vám ještì s nìèím pomoci?</text>
+</string>
+<string id="juk_2_quest_3">
+  <text>Ano, zatímco jste byl v terénu, obdrel jsem novou dávku dat ze skenování. Jak moná víte, Zóna pøed námi skrıvá spoustu tajemství a mnoho anomálií ještì nebylo zmapováno. Pošlu vám tato pøedbìná data ze skenování, protoe obsahují pøiblinou polohu nìkterıch nezmapovanıch anomálií. Prosím, potvrïte, zda jsou data správná, a dávejte pozor na pøípadné artefakty. Buïte však opatrní - v údajích o poloze se urèitì vyskytne nìjaká chyba.</text>
+</string>
+<string id="juk_2_quest_end_0">
+  <text>Èlovìèe, u mi skoro všechny šrouby došly, ale vaše údaje se zdály bıt správné, pane profesore. Také se mi podaøilo najít nìjaké artefakty, na které byste se mohl chtít podívat.</text>
+</string>
+<string id="juk_2_quest_end_1">
+  <text>Skvìlé, alespoò tedy naše skenery fungují dobøe. Dìkujeme za zprávu, peníze by vám mìly bıt brzy doruèeny.</text>
+</string>
+<string id="juk_3_quest_0">
+  <text>Vypadá to, e máte nìco na srdci.</text>
+</string>
+<string id="juk_3_quest_3">
+  <text>Ano, mám. Víte, v Pripjati jsou nesmírnì zajímavé emisní vzory. Nicménì, jak moná víte, mìsto je stejnì nebezpeèné jako zajímavé a nemám nadìji, e se dostanu dovnitø a ven ivı. Pokud mùete, podívejte se prosím na tato místa a pøivezte mi všechny artefakty, které najdete. Nebojte se, odmìna vám bohatì pokryje náklady na munici a obvazy.</text>
+</string>
+<string id="juk_3_quest_end_0">
+  <text>Myslím, e mám ještì nìkde ve skafandru prùstøel od tìch zatracenıch fanatickù, ale podaøilo se mi provìøit anomálie, o kterıch ses zmínil. Dokonce jsem pro tebe našel nìjaké vzorky.</text>
+</string>
+<string id="juk_3_quest_end_1">
+  <text>Fenomenální! Prosím, vezmi si to, zaslouíš si to. To by mìlo bıt prozatím vše. Pokud si chceš vydìlat další peníze sbíráním artefaktù, mohl bys v Zónì vyhledat nìkteré z mıch kolegù. Dám jim vìdìt, e pøijdeš.</text>
+</string>
+<string id="vorobushkin_1_quest_0">
+  <text>Jak je, profesore, potøebuješ s nìèím pomoci?</text>
+</string>
+<string id="vorobushkin_1_quest_3">
+  <text>Mohl bych. No, tahle oblast je špatnì prozkoumaná, take úplnì nevím, co mám èekat. Podle mıch vıpoètù bych tu však mìl bıt schopen najít artefakty, které potøebuji. Vèera jsem kvùli pøesnému urèení anomálních polí, která je tøeba prozkoumat, opravil èást zaøízení v Krugovém anténním komplexu. Skenování však trvalo pomìrnì dlouho a èím déle jsem tam zùstával, tím to bylo nebezpeènìjší, take jsem se sem musel urychlenì vrátit. Musíte vstoupit do stanice a vyzvednout pamìovı modul, kterı jsem tam nechal. Mìla by na nìm bıt veškerá potøebná data. Mimochodem, poblí je nìkolik anomálií, moná obsahují vzorky, které potøebuji, ale to nebude moné øíct, dokud nezískáte data ze skenu.</text>
+</string>
+<string id="vorobushkin_1_quest_end_0">
+  <text>Jednoduché, pane profesore. Vaše zaøízení tam stále bylo, spolu s daty, a podaøilo se mi získat vaše vzorky.</text>
+</string>
+<string id="vorobushkin_1_quest_end_1">
+  <text>Koneènì nìjaké dobré zprávy. Ta data ze skenu vypadají zajímavì, i kdy...</text>
+</string>
+    
+   <string id="vorobushkin_2_quest_0">
+  <text>Co je to, profesore?</text>
+</string>
+<string id="vorobushkin_2_quest_3">
+  <text>Hmm, nìkteré z tìch vıkladù prostì nedávají smysl. Byl byste ochoten je pro mì zkontrolovat? Pokud najdete nìjaké artefakty a pøinesete mi je zpìt, mohu vám dobøe zaplatit.</text>
+</string>
+<string id="vorobushkin_2_quest_end_0">
+  <text>Zkontroloval jsem místa, která jste zmínil, a našel jsem tyto artefakty. Jsou to ty, které potøebujete?</text>
+</string>
+<string id="vorobushkin_2_quest_end_1">
+  <text>Ano, úasné! Dìláme tu velké pokroky, pøíteli. Tady máte odmìnu.</text>
+</string>
+<string id="vorobushkin_redirect_dialog_0">
+  <text>Máte ještì nìco, s èím vám mohu pomoci?</text>
+</string>
+<string id="vorobushkin_redirect_dialog_1">
+  <text>To je prozatím vše. Pokud nám chcete pomoci dále, pošlu vás za svım kolegou, kterı by vaši pomoc ocenil. Pošlu vám jeho polohu a dám mu vìdìt, e pøijdete. Sbohem, stalkeru!</text>
+</string>
+<string id="vorobushkin_redirect_dialog_2">
+  <text>Díky za neocenitelnou pomoc. Ještì musím provést nìjaké vıpoèty. A vy se pøesunete na sever od Èernobylské jaderné elektrárny. Vedoucí naší skupiny, profesor Skabinskij, u tam je. Netuším, jak se tam dostal, ale prosím, pospìšte si! Pravdìpodobnì potøebuje vaši pomoc.</text>
+</string>
+<string id="vorobushkin_redirect_dialog_3">
+  <text>Naše vıpoèty jsou plné der kvùli nedostatku informací, ale podaøilo se nám pøiblinì urèit polohu anomálie, kterou se nám døíve nepodaøilo pøedpovìdìt. Nyní se tam vydal prozkoumat vedoucí naší operace, profesor Skabinskij. Pravdìpodobnì potøebuje vaši pomoc, take si pospìšte a najdìte ho. To místo je nebezpeèné a on tam nemìl chodit sám.</text>
+</string>
+<string id="ah_start_dialog_0">
+  <text>Ahoj, stalkere.</text>
+</string>
+<string id="ah_start_dialog_1">
+  <text>Ahoj.</text>
+</string>
+<string id="ah_start_dialog_2">
+  <text>Ahoj, bratøe.</text>
+</string>
+<string id="skabinsky_1_quest_0">
+  <text>Jéiši, koneènì jsem vás našel, pane profesore! Jak jste se sem vùbec dostal, kdy je kolem tolik fanatikù?</text>
+</string>
+<string id="skabinsky_1_quest_1">
+  <text>Aha, vy musíte bıt ten uiteènı stalker, o kterém se zmiòoval Vorobushkin. Ještì e jsi mì našel vèas. Take situace je taková: Mìl jsem tu skupinu zlodìjíèkù, kteøí mì doprovázeli, ale vìtšinu z nich u postrèili. Take to musíme udìlat rychle. Blízko nás je nebezpeèná anomálie, jakou jsem ještì nevidìl. Nìkteré naše vıpoèty pøedpovídají, e pøiblinì v této dobì by mìl vzniknout velmi vzácnı a mocnı artefakt. Ty máš s anomálními poli z nás všech zdaleka nejvìtší zkušenosti, take potøebujeme, abys se tam vydal a zjistil, jestli jsou naše pøedpovìdi správné. Musím vás však varovat, bude to velmi nebezpeèné. Jste pro to?</text>
+</string>
+<string id="skabinsky_1_quest_2">
+  <text>Uf, nepøišel jsem a sem, abych to teï vzdal. Jdeme na to!</text>
+</string>
+<string id="skabinsky_1_quest_3">
+  <text>To si nemyslím.</text>
+</string>
+<string id="skabinsky_1_quest_4">
+  <text>Dobøe, líbí se mi tvùj duch. Dostat se tam však bude nesmírnì obtíné. Doufám, e máš dobrı detektor, abys našel vzorky a prohledal anomálie. Ta oblast je dost nebezpeèná. Ted u bez, èas se nám krátí!</text>
+</string>
+<string id="skabinsky_1_quest_5">
+  <text>Dìkuji. Brzy se uvidíme, pane profesore.</text>
+</string>
+<string id="skabinsky_1_quest_6">
+  <text>Poèkejte, slyšíte to? Zóna nás volá, cítím to... Jdi a vezmi si její dar. Budu èekat v Zatonu na tvùj návrat.</text>
+</string>
+<string id="skabinsky_1_quest_5">
+  <text>Dìkuji ti.</text>
+</string>
+
+
+<string id="skabinsky_1_quest_end_0">
+  <text>Pane profesore... Podívejte se na tohle. Takovı artefakt jsem ještì nikdy nevidìl. Dokonce i kdy ho jen drím, je to zvláštní pocit.</text>
+</string>
+<string id="skabinsky_1_quest_end_1">
+  <text>Take je to pravda... A já myslel, e je to jen chyba v našich vıpoètech. Dìkuji ti, stalkere. Náš tım i celá vìdecká komunita jsou tvımi neocenitelnımi dluníky. Rychle mi dejte ten artefakt, abych ho mohl bezpeènì uloit. Potom si mùeme promluvit o tvé odmìnì.</text>
+</string>
+<string id="skabinsky_1_quest_end_2">
+  <text>Je mi potìšením, profesore. Jsem rád, e mohu bıt napomocen pøi odhalování tajemství Zóny. Tady máte. Doufám, e to všechno stálo za to.</text>
+</string>
+<string id="skabinsky_1_quest_end_3">
+  <text>Uh, ne. Kdy o tom tak pøemıšlím, myslím, e tuhle moc chci pro sebe.</text>
+</string>
+<string id="skabinsky_1_quest_end_4">
+  <text>Ted mi to nedìlej, stalkere! Zapomnìl jsi, e jsme mìli dohodu?! Nebudu tolerovat, e ji porušíš!</text>
+</string>
+<string id="skabinsky_1_quest_end_5">
+  <text>Dobøe, dobøe, dìlal jsem si legraci. Tady máš svùj artefakt, Jeíšmarja.</text>
+</string>
+<string id="skabinsky_1_quest_end_6">
+  <text>Huh, podívejme se na tebe. S tímhle artefaktem jsem prakticky nezranitelnı. Nemùeš mi nic udìlat! Ted mi jdi z cesty.</text>
+</string>
+<string id="skabinsky_1_quest_end_7">
+  <text>Tohle je mé ivotní dílo! Nenechám tì s ním odejít, ani pøes mou mrtvolu!</text>
+</string>
+<string id="skabinsky_1_quest_end_8">
+  <text>Dìkuji. Moje práce zde skonèila a já se musím vrátit domù, abych zhodnotil vše, co jsme našli. I kdy se zde naše cesty rozcházejí, náš tım na vás bude vdy vzpomínat. ádné peníze nemohou vynahradit tvùj pøínos ve vìdì, ale to je vše, co mám v tuto chvíli u sebe. Prosím, vezmìte si je. Pokud budeme potøebovat pomoc pøi našem zdejším vızkumu, urèitì vám dáme vìdìt. Doufám, e se naše cesty ještì nìkdy zkøíí, stalkere. Ještì jednou díky a sbohem.</text>
+</string>  
+    
+
+<string id="skabinsky_fail_quest_0">
+  <text>Našel jsem vás, jak pokraèuje vaše hledání?</text>
+</string>
+<string id="skabinsky_fail_quest_1">
+  <text>Dobrı den. Jsi to ty, ten stalker, kterı pomáhal naší skupinì pøi vızkumu? Zdá se, e marnì jsme doufali ve tvou pomoc, vıpoèty jsou špatné, tohle zatracené místo není støedem Zóny. Všechno to bylo marné.</text>
+</string>
+<string id="skabinsky_fail_quest_2">
+  <text>U se nedá nic dìlat?</text>
+</string>
+<string id="skabinsky_fail_quest_3">
+  <text>Všechno, co jsi mohl, jsi u udìlal. Teï se dostan ven. Neúspìch naší operace je tvou zásluhou.</text>
+</string>
+<string id="est_work_kuznecov_0">
+  <text>Hlásím se, pane. Máte pro mì nìjaké zvláštní úkoly?</text>
+</string>
+<string id="est_work_kuznecov_1">
+  <text>Jste pøipraven na poøádnou práci, vojáku? Doufám, e jsi pøipraven - tohle pøichází pøímo shora. Mám seznam prioritních cílù, které chce náèelník štábu prozkoumat.</text>
+</string>
+<string id="est_work_kuznecov_2">
+  <text>Vyádejte si dokumenty z laboratoøí pod Agropromem.</text>
+</string>
+<string id="est_work_kuznecov_22">
+  <text>Rozvìdka hlásí, e v podzemním komplexu pod Vızkumnım ústavem se nacházejí pøísnì utajované dokumenty, které obsahují dùleité informace tıkající se experimentù, které zde byly døíve provádìny. Tvùj úkol je jednoduchı: získat tyto dokumenty. Je mi jedno, jak to udìláš. Jste pøipraveni?</text>
+</string>
+<string id="est_work_kuznecov_221">
+  <text>Ano, pane. Jdu na to.</text>
+</string>
+<string id="est_work_kuznecov_222">
+  <text>Jestì nejsem pøipraven tu práci pøijmout, pane.</text>
+</string>
+<string id="est_work_kuznecov_3">
+  <text>Vyzvednìte dokumenty z komplexu laboratoøí X-18.</text>
+</string>
+<string id="est_work_kuznecov_33">
+  <text>Tato laboratoø obsahuje dùleité informace o vıvoji Kajmanova experimentálního vysílaèe. Tvım úkolem je získat veškerou dokumentaci, kterou najdeš ohlednì tohoto vızkumu, a pøinést ji sem na ústøedí. Za svou práci budeš bohatì odmìnìn.</text>
+</string>
+<string id="est_work_kuznecov_331">
+  <text>Kristapána, plukovníku, to je stejnì dobré, jako kdybyste mì poslal na smrt... tam venku je pìknì hnusnì. Ach, dobøe, fajn. Vrátím se s tìmi dokumenty, pane.</text>
+</string>
+<string id="est_work_kuznecov_332">
+  <text>K sakra ne. Nejsem tak hloupı, abych skonèil jako nìjakı Burerùv obìd. Myslím, e si to nechám ujít. Pane.</text>
+</string>
+<string id="est_work_kuznecov_4">
+  <text>Získej dokumenty z laboratoøe X-16.</text>
+</string>
+<string id="est_work_kuznecov_44">
+  <text>Potøebujeme vızkumné poznámky s podrobnostmi o práci, která byla v této laboratoøi provedena. Nebudu ti lhát, bude to tìké - budeš muset pøeít smrtící radiaci a psi polem, abys ty dokumenty našel. Informace jsou pøinejlepším kuse, ale mùeme s jistotou øíct, e se budete muset probojovat malou armádou zombíkù a mutantù. Doporuèuji, abys našel mobilní laboratoø v Jantaru a promluvil si s vìdeckım tımem, kterı je tam umístìn - budou schopni ti pomoci sehnat nìco, co vás ochrání pøed psi polem obklopujícím komplex. Take? Jsi pro?</text>
+</string>
+<string id="est_work_kuznecov_441">
+  <text>Vezmu to, pane. Je to jako hotová vìc.</text>
+</string>
+<string id="est_work_kuznecov_442">
+  <text>Omlouvám se, pane - na takovou operaci nemám vıcvik ani vybavení. Zatím se toho neujmu.</text>
+</string>
+<string id="est_work_kuznecov_5">
+  <text>Získej dokumenty z laboratoøe X-10.</text>
+</string>
+
+<string id="est_work_kuznecov_55">
+        <text>Váš úkol je jednoduchı: prorazit radar, zaútoèit na komplex, ve kterém se nachází takzvanı "Vypalovaè mozku", a vypnout ho a zároveò sebrat všechny dokumenty, které najdete. Monolit si to nenechá líbit - budete èelit silnému odporu tìchto fanatikù. Take, jste pøipraven vyrazit na sever?</text>
+    </string>
+    <string id="est_work_kuznecov_551">
+        <text>Jsem pøipraven zaútoèit na Vypalovaèi, pane. Vezmu tu misi na sebe.</text>
+    </string>
+    <string id="est_work_kuznecov_552">
+        <text>Nejsem pøipraven tam jít. Zatím ji nepøevezmu.</text>
+    </string>
+    <string id="est_work_kuznecov_6">
+        <text>Získej dokumenty z laboratoøe X-8.</text>
+    </string>
+    <string id="est_work_kuznecov_66">
+        <text>Na okraji Pripjati se nachází pøísnì tajná laboratoø s kódovım oznaèením X-8. V ní je moné získat dokumenty. Tvùj úkol: získat veškerou dokumentaci o vızkumu, kterı zde byl provádìn. Laboratoø najdete pod budovou Jubilea. Jste pøipraveni na svùj úkol?</text>
+    </string>
+    <string id="est_work_kuznecov_661">
+        <text>Jsem pøipraven.</text>
+    </string>
+    <string id="est_work_kuznecov_662">
+        <text>Jestì ne, pane. Potøebuji èas na pøípravu.</text>
+    </string>
+    <string id="est_work_kuznecov_7">
+        <text>Získej dokumenty z Pripjatského podzemí.</text>
+    </string>
+    <string id="est_work_kuznecov_77">
+        <text>Zpravodajci hlásí, e pod Pripjatí se nachází obrovskı komplex - takøíkajíc "mìsto ve mìstì". Velitelství potøebuje, abys zjistil, jaké experimenty a vızkumy se tam dole provádìly, a prozkoumal tajné "potrubí Pripjat-1".</text>
+    </string>
+    <string id="est_work_kuznecov_771">
+        <text>Rozumím, pane.</text>
+    </string>
+    <string id="est_work_kuznecov_772">
+        <text>Jestì nejsem pøipraven - musím se na tuto misi pøipravit.</text>
+    </string>
+    <string id="est_work_kuznecov_8">
+        <text>Zniè øídící místnost monolitu a získej dokumenty.</text>
+    </string>
+    <string id="est_work_kuznecov_9">
+        <text>Zmìnil jsem názor.</text>
+    </string>
+    <string id="est_work_kuznecov_88">
+        <text>Podnikli jsme mnoho pokusù vtrhnout do samotného Èernobylu a zmocnit se té zatracené øídící místnosti - ale kadá z tìchto misí skonèila naprostım neúspìchem. To nic nemìní na tom, e øídící místnost je stále vysoce prioritním cílem. Tvùj úkol: znièit øídící místnost a dostat se ven se všemi informacemi, které najdeš. Ne se tam vydáš, najdi v Everglades poustevníka - je tam bainnı doktor, kterı má informace o dekodéru potøebném k rozbití dveøí vedoucích do øídící místnosti. A buï opatrnı, vojáku. Nìco takového se ještì nikomu nepodaøilo. Vra se v poøádku, rozumíš?</text>
+    </string>
+    <string id="est_work_kuznecov_881">
+        <text>Jistì, pane. Nehodlám teï zemøít, kdy jsem došel tak daleko.</text>
+    </string>
+    <string id="est_work_kuznecov_882">
+        <text>Nemám vybavení ani zkušenosti, abych takovı vıkon zvládl... Musím se pøipravit.</text>
+    </string>
+	
+	
+    <string id="work_vip_kuznecov_agr_undr_0">
+        <text>Mise splnìna, soudruhu plukovníku! Tady jsou dokumenty z podzemního vızkumného ústavu.</text>
+    </string>
+    <string id="work_vip_kuznecov_agr_undr_1">
+        <text>Vynikající práce. Misi jsi provedl èistì a stále jsi v jednom kuse - tady máš zaslouenou odmìnu!"</text>
+    </string>
+	    <string id="work_vip_kuznecov_x18_0">
+        <text>Mise splnìna, pane! Potøebné dokumenty jsem získal z laboratoøe X-18.</text>
+    </string>
+    <string id="work_vip_kuznecov_x18_1">
+        <text>Dobrá práce, vojáku! Velení tyto informace velmi zajímají - a tvùj vıkon nezùstal bez povšimnutí. Poøádna a zaslouená odmìna za skvìlou práci.</text>
+    </string>
+<string id="work_vip_kuznecov_x16_0">
+    <text>Vítejte, soudruhu plukovníku! Mám dokumenty z X-16 v rukou a psi-pole kolem Yantaru je deaktivováno.</text>
+</string>
+    <string id="work_vip_kuznecov_x16_1">
+        <text>Skvìlá práce! To byla zatracenì dobrá práce! Po vypnutí psi-pole bychom mìli bıt schopni vyslat naše speciální operaèní tımy, aby zabezpeèily celı komplex a zajistily, e vìdci budou moci provádìt svou práci v relativním bezpeèí. Tady je tvá odmìna. Zaslouíš si ji víc ne dost, vojáku.</text>
+    </string>
+<string id="work_vip_kuznecov_x10_0">
+    <text>Akce byla úspìšná, pane. "Vypalovaè mozku" je deaktivován a zde jsou dokumenty, které se mi podaøilo najít v X-10.</text>
+</string>
+    <string id="work_vip_kuznecov_x10_1">
+        <text>Cesta na sever je nyní opìt otevøená... moná teï máme skuteènì šanci Zónu øádnì zabezpeèit. A to všechno díky tobì. Sakra, moná jsi jeden z nejlepších bojovníkù, jaké jsem kdy vidìl. Tohle si vezmi jako odmìnu:</text>
+    </string>
+	Pøeklad:
+
+<string id="work_vip_kuznecov_x8_0">
+    <text>Jsem zpìt z Pripjati, pane, a našel jsem laboratoø pod bıvalım KBO "Jubiley". Zde jsou dokumenty z této laboratoøe.</text>
+</string>
+    <string id="work_vip_kuznecov_x8_1">
+        <text>Skvìlá práce! Díky tìmto dokumentùm budeme moci objasnit mnoho záhad Zóny. Velení bude z tvé práce nadšené - a ne, nezapomnìl jsem na tvou odmìnu:</text>
+    </string>
+    <string id="work_vip_kuznecov_jupiter_ugr_1">
+        <text>Úspìšnì jste dokonèili svou misi... neuvìøitelné. Jsem ohromen. Víš, vojáci, kteøí jsou zde vysláni, tì zaèali vnímat jako inspiraci - vidí, jak si razíš cestu Zónou, a øíkají si, e moná i oni udìlají to samé. Já? Dívám se na tebe, vojáku, a jediné, co mì napadá, je, e by ti více slušely generálské naramenice. Tady. Vezmi si to. Není to povıšení na generála, heh, ale jsem si jistı, e vyšší plat neuskodí.</text>
+    </string>
+    <string id="work_vip_kuznecov_control_bunker_1">
+        <text>To nemùe bıt - do prdele. Upøímnì øeèeno, myslel jsem, e jsem právì poslal svého svìdka na smrt - nemám kurva slov. Prostì... dobøe. Okamitì se spojím s velením a oznámím jim, e jsme - ty - zasadili Monolitu drtivou ránu, a informuji je o všech informacích, které jsi zajistil. Co se tıèe toho, kdy se velení rozhodne, kdy bude mise k øádnému obsazení Centra, no... to je na jejich rozhodnutí. Ale díky tobì máme Zónu poprvé na dosah! Koneènì mùeme pøevzít kontrolu nad Zónou, vyèistit ji od mutantù a dát vale všem šmírákùm, kteøí se tu potulují. Patøí vám mùj upøímnı dík a nemohu vám dostateènì pogratulovat. Nedìlám si z tebe srandu - jsi zatracenı hrdina, rozumíš? A nejsem to jenom já - vrchní velení vìøilo ve tvou schopnost splnit tuhle misi, a proto pro tebe vyèlenilo odmìnu a doprovodné pocty. Vezmi si ji! Patøí ti právem!</text>
+    </string>
+    <string id="vasil_nevezuchi_1_0">
+        <text>Pozdravuji tì. Jsem tu, abych ti pomohl - co pro tebe mohu udìlat?</text>
+    </string>
+    <string id="vasil_nevezuchi_1_2">
+        <text>Rád tu koneènì jednou vidím pøátelskou tváø - doufám, e bitva v jaderné elektrárnì dopadla dobøe? Jsem serant Lucky, ale mùete mi øíkat prostì Vasil. Pøejdu rovnou k vìci - monolitické síly se utáboøily na základnì jihovıchodnì od téhle, ehm, záøící vìci uprostøed lesa. Zaminovali pøístup a na stráních vìích rozmístili odstøelovaèe, take buïte opatrní. Vyráíme - zkuste ty sráèe dostat døív, ne nás uvidí, jasnı?</text>
+    </string>
+    <string id="vasil_nevezuchi_1_3">
+        <text>Je to jasné. Pojïte, serante, budu vás kryt.</text>
+    </string>
+    <string id="kvartet_1_0">
+        <text>Soudruhu kapitáne, jsem pøipraven zúèastnit se útoku.</text>
+    </string>
+    <string id="kvartet_1_2">
+        <text>V poøádku. Ti bastardi drí tøi zátarasy: dva na pøístupech k sarkofágu, jeden pøímo pøed jednotkou 4. Všichni jsou v bezpeèí. Dva z našich oddílù zahájí útok z obou stran. Vaším úkolem je podpoøit naše lidi palbou - a postrádat co nejvíc tìch zatracenıch monolitu.</text>
+    </string>
+    <string id="kvartet_1_3">
+        <text>Roger that! Jdu dovnitø.</text>
+    </string>
+    <string id="inform_ab_toolkits_0">
+        <text>Nevis, kde se tady dá sehnat nìjaké náøadí?"</text>
+    </string>
+    <string id="inform_ab_toolkits_1">
+        <text>Nìco jsem slyšel, jen mi dejte nìjaké peníze, tøeba dva tisíce.</text>
+    </string>
+    <string id="inform_ab_toolkits_9">
+        <text>Tady máš.</text>
+    </string>
+    <string id="inform_ab_toolkits_10">
+        <text>Pøijdu pozdìji.</text>
+    </string>
+    <string id="inform_ab_toolkits_2">
+        <text>Vím a za 4 000 vám to øeknu.</text>
+    </string>
+    <string id="inform_ab_toolkits_11">
+        <text>Tady to máš.</text>
+    </string>
+    <string id="inform_ab_toolkits_12">
+        <text>Dìkuji, nepotøebuji to.</text>
+    </string>
+    <string id="inform_ab_toolkits_3">
+        <text>Ale kdy mi zaplatíš nìjaké peníze, tøeba 1000, tak ti to øeknu.</text>
+    </string>
+    <string id="inform_ab_toolkits_13">
+        <text>Tady máš peníze.</text>
+    </string>
+    <string id="inform_ab_toolkits_14">
+        <text>Zmìnil jsem názor.</text>
+    </string>
+    <string id="inform_ab_toolkits_4">
+        <text>2 500 a ne ménì. Pak si promluvíme.</text>
+    </string>
+    <string id="inform_ab_toolkits_15">
+        <text>Tady.</text>
+    </string>
+    <string id="inform_ab_toolkits_16">
+        <text>Peníze jsou napjaté.</text>
+    </string>
+
+   <string id="inform_ab_toolkits_5">
+    <text>Poslouchej, pøíteli:</text>
+</string>
+<string id="inform_ab_toolkits_24">
+    <text>[dále...]</text>
+</string>
+<string id="inform_ab_toolkits_6">
+    <text>Nevím.</text>
+</string>
+<string id="inform_ab_toolkits_7">
+    <text>Podívejte se do skøínì.</text>
+</string>
+<string id="inform_ab_toolkits_8">
+    <text>Dejte mi pokoj, teï se s vámi nemùu zabıvat.</text>
+</string>
+<string id="inform_ab_toolkits_17">
+    <text>Mìl by ses podívat do Temného údolí na základnu banditu. Nemají moc techniky, take si mùeš pùjèit další sadu. Ale kde pøesnì - to mi nebylo nastínìno.</text>
+</string>
+<string id="inform_ab_toolkits_18">
+    <text>Na skládce se podívej po klíèích, kteøí mi nedávno øekli, e mají nìco jako základnu v místním hangáru. Spíše pro hrubou práci tam i bude nalezen.</text>
+</string>
+<string id="inform_ab_toolkits_19">
+    <text>Kordon, ATP. Hledali tam gangsteøi rozsáhlou základnu zablácenou, i techniku s vybavením pøivezli, ale ten nìkam zmizel, ale jeho vìci prı zùstaly.</text>
+</string>
+<string id="inform_ab_toolkits_20">
+    <text>Na kordonu, v rámci jiního kontrolního stanovištì hledej. Doufám, e umíš pracovat s mapou? Nebezpeèné tam, nikdo tam nechodí, take je moné, e nástroje jsou tam pro jemnou práci. A jsou tu i další dùvìryhodné dùvody.</text>
+</string>
+<string id="inform_ab_toolkits_21">
+    <text>V Agropromu, kde je komplex centrální. Je tam také anomálie s elektrony a psi, viš? Je to nìkde v tom komplexu, kterı stojí za to hledat. Teï není èas, aby lidé sbírali všelijaké harampádí, bod je strategickı a boj o nìj probíhá neustále, ale aby vidìli - vidìli všelijaké technické harampádí.</text>
+</string>
+<string id="inform_ab_toolkits_22">
+    <text>Høbitov techniky. To je právì teï vyjdi z baru a hledej auto s èíslem "9941KIL", dovede tì to k cenìné krabici. Slyšel jsem od jednoho Dluníka, e tam byli na zátahu, na prùzkumu obecnì. No, procesávali okolí a tam šnorchl - tma. No, provedli "taktickı ústup", hehe. Jeden tady utíká a všiml si toho cenìného stroje.</text>
+</string>
+<string id="inform_ab_toolkits_23">
+    <text>Jsi na Agropromu, kde je hlavní vojenská základna. Pøíliš chladné? A co nadìláš, ale oni jsou na státní podpoøe a techniku mají "tlustou", ne jako my, z lejna postaví alespoò tank. Snad sis nemyslel, e tak snadno seeneš kalibraèní náøadí?"</text>
+</string>
+<string id="inform_ab_toolkits_25">
+    <text>Díky za prachy, a teï táhni, nevím, kde máš náøadí, ty zasraná kliko.</text>
+</string>
+<string id="inform_ab_toolkits_26">
+    <text>Ne, promin, chlape, na to místo jsem zapomnìl. Podívej se do skøínì, poptej se u dealera.</text>
+</string>
+
+<string id="cs_task0_dialog_0">
+    <text>Máš pro mì nìjaké zvláštní úkoly?</text>
+</string>
+<string id="cs_task0_dialog_1">
+    <text>Nic zvláštního zatím ne, ale mám pro tebe úkol. Nastavili jsme skenovací zaøízení v archianomálii, která se nachází jinì od západní strání vìe. Teï u bude shromaïovat veškerá mìøení anomální aktivity, kterou jsme hledali - potøebuju, abys ho sem nìkdo pøinesl. Jdeš do toho?</text>
+</string>
+<string id="cs_task0_dialog_3">
+    <text>Tøeba nìkdy jindy.</text>
+</string>
+<string id="cs_task0_dialog_2">
+    <text>Udìlám to.</text>
+</string>
+<string id="cs_task0_dialog1_0">
+    <text>Jsem zpátky a mám zaøízení. Tady máš.</text>
+</string>
+<string id="cs_task0_dialog1_2">
+    <text>Dìkuji. Mimochodem, dnes veèer, nìkdy mezi osmou a jedenáctou veèer, se do tábora vrátí zvìd. Zùstaò tady - setkáme se s ním.</text>
+</string>
+<string id="cs_task0_ambush_renegade_0">
+    <text>%c[0,250,250,0]Mùu nìco udìlat pro Jasnou oblohu?%c[0,250,250,0]</text>
+</string>
+<string id="cs_task0_ambush_renegade_1">
+    <text>Ano, je. Víš, znovu jsme získali kontrolu nad naším malım koutem v Bainách, ale i tak naše lidské síly nechávají hodnì na holíèkách. Anomální aktivita poklesla, normálnì by to bylo dobøe, ale místo toho se to v Bainách hemí bandity a odpadlíky, kteøí hledají snadnou práci. Díky tìm sraèkám ztrácíme území a vzdáváme se jedné pozice za druhou. Jsme zalezlí a naši mui jsou vyèerpaní - zejména ti odpadlíci si nedají pokoj. Pokud vím, ti bastardi se chystají na další útok na naši základnu v Èerpací stanici - mùeš našim lidem pomoci je odrazit?</text>
+</string>
+<string id="cs_task0_ambush_renegade_3">
+    <text>Ted ti s tím nemohu pomoci - nìkdy jindy.</text>
+</string>
+<string id="cs_task0_ambush_renegade_2">
+    <text>%c[0,250,250,0]ádnı problém. Postarám se o to.%c[0,250,250,0]</text>
+</string>
+<string id="cs_task0_ambush_renegade_vip_0">
+    <text>%c[0,250,250,0]Odpadlíci byli znièeni.%c[0,250,250,0]</text>
+</string>
+<string id="cs_task0_ambush_renegade_vip_2">
+    <text>V poøádku! Dále musíme zajistit cestu ke Kordonu. U jsem pøipravil útoènı tım na obsazení jiní vesnice; pøesun se na pozice a pomoz jim. Jestli chceš, mùeš jít s nimi - kluci jsou právì pøipraveni vyrazit ze základny.</text>
+</string>
+<string id="cs_task0_ambush_renegade_vip2_0">
+    <text>%c[0,250,250,0]Cesta ke Kordonu je zajistìna.%c[0,250,250,0]</text>
+</string>
+
+   <string id="cs_task0_ambush_renegade_vip2_2">
+    <text>Fantastická práce! Díky tobì jsme zajistili všechny klíèové pozice v Bainách. Zde je tvá odmìna. Pøesto to nejsou jen dobré zprávy - tentokrát jde o armádu. Døíve se Odpadlíci a jakákoli jiná havìt, která s nimi pøišla, neodváili tlaèit hluboko na naše území, protoe se nechtìli pouštìt do boje s vojáky v oblasti. S armádou jsme nebyli zrovna pøátelé, ale oni se spokojili s tím, e nás nechají na pokoji, pokud jsme je na oplatku neobtìovali my. Teï? Armáda posílá na naše území stále více oddílù svıch slídilù a my utrpìli tìké ztráty. U toho mám dost. Vykopej je ze Strojírenského dvora na severovıchodì Bain. To nám tu koneènì dá vıhodu a zajistí, e Jasná obloha koneènì získá v oblasti silnou a bezpeènou pozici. Posílám útoènı tım sloenı z našich nejzkušenìjších bojovníkù - u vyrazili z naší základny. Pøidej se k nim a pomoz jim vyhrát tento boj.</text>
+</string>
+<string id="cs_task0_ambush_renegade_vip3_0">
+    <text>Armáda bylo vykopnuta ze strojového dvora - byl to tuhı boj.</text>
+</string>
+<string id="cs_task0_ambush_renegade_vip3_2">
+    <text>Neuvìøitelné! Díky tvé pomoci jsme znovu obsadili všechny klíèové pozice, o které jsme pøišli, a jsme opìt silou, se kterou se musí poèítat. Ach, ké by tu byl Lebedìv, aby to vidìl... ehm. Dost bylo sentimentu. Teï, kdy u nejsme v krizovém reimu, máme pøed sebou spoustu práce - tady je tvá odmìna. A ještì jednou ti dìkuji za pomoc. Bez tebe bychom to nezvládli.</text>
+</string>
+<string id="cs_task2_dialog_0">
+    <text>%c[0,250,250,0]Zvìd je mrtvı. Tady je jeho PDA.%c[0,250,250,0]</text>
+</string>
+<string id="cs_task2_dialog_2">
+    <text>To je zatracená škoda - byl to jeden z našich nejlepších. Díky.</text>
+</string>
+<string id="cs_task3_cold_dialog_0">
+    <text>%c[0,250,250,0]Jsem tu kvùli dešifrovanému PDA.%c[0,250,250,0]</text>
+</string>
+<string id="cs_task3_cold_dialog_1">
+    <text>Tady se posaï. Mám pro tebe dobré zprávy. Ukázalo se, e nìkteøí z našich kamarádù, kteøí se ztratili v roce 2011, skuteènì pøeili! Podle informací, které jsme získali z PDA, by tu mohl bıt ještì oldák, kterı si øíkal Jizva. V roce 2011 vedl útoènı tım pøes Limansk a Nemocnici do Èernobylské jaderné elektrárny, aby dohnal Støelce a zastavil ho. Podle našeho zvìda mìl dobré informace, e nìkdo, kdo odpovídá Jizvovu popisu, stále kope, a dokonce byl vidìn v kontaktu s nìjakımi stalkery, kteøí by mohli bıt pøeivší z Lebedìvovy skupiny. Podle mì by bylo nejlepší zamíøit rovnou za Sidorovièem a zjistit, jestli o tom všem nìco neví.</text>
+</string>
+<string id="cs_task3_cold_dialog_2">
+    <text>Je, to jsou fantastické zprávy. A ano, máš pravdu - pokud by o tom všem nìkdo nìco vìdìl, byl by to Sidoroviè. Zeptám se ho a uvidíme, jestli se mi nepodaøí zjistit nìco o našich pøeivších soudruzích.</text>
+</string>
+<string id="holod_end_cs_story_0">
+    <text>Našel jsem jednoho pøeivšího èlena Jasné Oblohy.</text>
+</string>
+<string id="holod_end_cs_story_1">
+    <text>Ty jsi ho našel? Kdo je to? Kde je?</text>
+</string>
+<string id="holod_end_cs_story_2">
+    <text>Je to Gamayun, z Lebedìvovy staré skupiny. V souèasné dobì bojuje s Vyvrenci monolitu. Nepodaøilo se mi ho však pøesvìdèit, aby se se mnou vrátil do bain. Øíkal, e tam nemùe nechat své bratry.</text>
+</string>
+<string id="holod_end_cs_story_3">
+    <text>No, pøedpokládám, e vìøím jeho úsudku - a kromì toho, pokud pøeil on, moná jsou tu i další, kteøí se dostali ven iví. Tvùj pøíbìh mi dává nadìji, e se jednoho dne opìt setkáme se svımi starımi druhy. Pošlu naše zpravodajské jednotky, aby poskytly pomoc v boji proti Vyvrencùm. Jo, a nezapomnìl jsem na tvùj podíl na tom všem. Za svou práci si zaslouíš odmìnu.</text>
+</string>
+<string id="holod_end_cs_story_4">
+    <text>Dìkuji ti. (smích)</text>
+</string>
+
+<string id="cs_task4_dragun_dialog_0">
+    <text>Hej! Jsi Jizva? Potøebuji s tebou mluvit.</text>
+</string>
+<string id="cs_task4_dragun_dialog_1">
+    <text>Jo, to jsem já. Kdo sakra jsi? A co dìláš - do prdele, teï ne. Nejdøív mi pomoz zahnat ty pseudopsy! Honí mì u dva kilometry.</text>
+</string>
+<string id="cs_task4_dragun_dialog_2">
+    <text>Jasnì brácho klid, mùeme je zahnat spoleènì.</text>
+</string>
+<string id="cs_task5_dragun_dialog_0">
+    <text>Uf, dokázali jsme to. Take? Mùeš mi øíct nìco o pøeivších èlenech Lebedìvovy skupiny? Mám dobrou zprávu, e o tom všem nìco víš.</text>
+</string>
+<string id="cs_task5_dragun_dialog_1">
+    <text>Jo, máš pravdu, nìco vím. Obávám se však, e ti toho nemohu øíct a tak moc - vìtšina mıch znalostí nejsou o moc víc ne povìsti. Slyšel jsi u o stalkerovi známém jako Strider a partì, se kterou bìhá? Podle všeho jsou to všichni bıvalí èlenové Monolitu, ale vzbouøili se proti svım pánùm a v tìchto dnech vedou partyzánskou kampaò proti svım bıvalım druhùm. Proslyšela se, e tito "Vyvrenci" poèítají do svıch øad i bıvalé èleny Jasné Oblohy. Stridera a jeho jednotku najdeš v Jupiteru poblí bıvalého armádního kontrolního stanovištì - kdysi tam tupila banda Banditu vedena chlápkem jménem Valet, dokud jednoho z nich nesejmul v kopuli.</text>
+</string>
+<string id="cs_task5_dragun_dialog_2">
+    <text>Moc ti dìkuji.</text>
+</string>
+<string id="brodyaga_cs_story_dialog2_0">
+    <text>Našel jsem Gamayunovu posádku a on mi øekl, abych ti pøinesl toto zaøízení. Druina udìlala svou práci.</text>
+</string>
+<string id="brodyaga_cs_story_dialog2_1">
+    <text>Super! Tohle zaøízení zvrátí vıvoj situace v náš prospìch. Jsem rád, e jsi ho našel, i kdy je škoda, e nešel s tebou. Je to zatracenì dobrı bojovník.</text>
+</string>
+<string id="brodyaga_cs_story_dialog2_2">
+    <text>Rozhodl se zùstat s Vyvrenci.</text>
+</string>
+<string id="brodyaga_cs_story_dialog2_3">
+    <text>Dobøe. Myslím, e si zaslouíš odmìnu za pomoc naší skupinì. Nejsme bohatí, ale máme dost penìz na to, abychom ti zaplatili za dobøe odvedenou práci. Tady máš.</text>
+</string>
+<string id="brodyaga_cs_story_dialog2_4">
+    <text>Dìkuji ti.</text>
+</string>
+<string id="brodyaga_cs_story_dialog1_0">
+    <text>Slyšel jsem, e máte ve svıch øadách nìkolik bıvalıch èlenù Jasné Oblohy - mohu s nimi mluvit? Pracuji pro Jasnou oblohu a hledáme naše kamarády.</text>
+</string>
+<string id="brodyaga_cs_story_dialog1_1">
+    <text>Hrm. Máme tu pár lidí, kteøí kdysi patøili k Jasné obloze - byli to vojáci Monolitu jako my ostatní, dokud C-vìdomí neuvolnilo své sevøení. Teï stojíme spoleènì proti Monolitu.</text>
+</string>
+<string id="brodyaga_cs_story_dialog1_2">
+    <text>Tak kde se s nimi mùu setkat?</text>
+</string>
+<string id="brodyaga_cs_story_dialog1_3">
+    <text>Obávám se, e jsi pøišel pozdì. Jejich jednotka se vydala na misi do vıchodní Pripyati a bohuel se ještì neohlásila. Pokud si pospíšíte, moná je stihnete dohnat. Nemám mnoho muù, take nemohu nikoho na záchrannou misi postrádat.</text>
+</string>
+<string id="brodyaga_cs_story_dialog1_4">
+    <text>Dìkuji za informace. Urèitì je najdu, a pokud budou v nebezpeèí, pomohu jim.</text>
+</string>
+<string id="gamajun_cs_story_dialog1_0">
+    <text>Vypadá to, e jsem se sem dostal právì vèas.</text>
+</string>
+<string id="gamajun_cs_story_dialog1_1">
+    <text>Jo, no... ti fanatici by nás zabili, kdybychom byli blí. Poslal tì Strider?</text>
+</string>
+<string id="gamajun_cs_story_dialog1_2">
+    <text>Vlastnì tebe zrovna hledám ano. Jsi èlenem Lebedìvovy skupiny, e? Hledá tì spoleènost Jasné oblohy.</text>
+</string>
+<string id="gamajun_cs_story_dialog1_3">
+    <text>Hmm... Byl jsem. Ale teï jsem lovec Monolitu. Øeknu ti všechno, co vím, a rozhodneme se, co dál, ale zatím potøebuji, abys mi pomohl splnit mé poslání, dokud jsi tady. Síly Monolitu, proti kterım stojíme, jsou silnìjší, ne jsme si mysleli. Vyslal jsem jednotku do øíèního pøístavu, aby se zmocnila zaøízení, které lze pouít k odposlechu tìch fanatickıch jedincù, ale neodpovìdìli na ádnou z mıch zpráv. Vypadá to, e je zajal Monolit. Potøebuji, abys prozkoumal území a pomohl nám získat to zaøízení zpìt.</text>
+</string>
+
+  <string id="gamajun_cs_story_dialog1_4">
+    <text>Dobøe, pomùu vám.</text>
+</string>
+<string id="gamajun_cs_story_dialog2_0">
+    <text>Tady je zaøízení.</text>
+</string>
+<string id="gamajun_cs_story_dialog2_1">
+    <text>Dìkuji. Mìl bys to radìji vrátit Striderovi. Já zùstanu tady s svımi chlapci a zajistíme tuto základnu.</text>
+</string>
+<string id="gamajun_cs_story_dialog2_2">
+    <text>Take ty se mnou do bain nepùjdeš?</text>
+</string>
+<string id="gamajun_cs_story_dialog2_3">
+    <text>Ne, je mi líto, ale jsem Vyvrenec. Nemùu tu nechat své bratry. Slibil jsem ti, e ti povím svùj pøíbìh, e ano? Poslouchej. V roce 2011 jsem byl s Lebedìvem souèástí útoèného tımu, kterı mìl za úkol prorazit do Limansku. S pomocí nìkolika oldákù jsme se tlaèili dál na sever a podaøilo se nám opevnit na území mìsta - a pak pøišla ta obrovská emise. A potom? Na nic si nevzpomínám - Strider øíká, e jsem slouil Monolitu jako všichni ostatní, které ta emise zastihla. Další vìc, kterou si pamatuji, bylo, e jsem se nìkdy v roce 2012 probudil na Jupiteru jako já. Pøeil jsem jen díky Striderovi a od té doby s ním spolupracuji.</text>
+</string>
+<string id="gamajun_cs_story_dialog2_4">
+    <text>Dìkuji, e jsi mi vyprávìl svùj pøíbìh. Pøedám zaøízení Striderovi a urèitì za tebe pozdravím Mráze.</text>
+</string>
+<string id="dolg_story_task_1_dialog_start_0">
+    <text>Je tu nìjakı speciální úkol?</text>
+</string>
+<string id="dolg_story_task_1_dialog_start_1">
+    <text>Kdy o tom tak pøemıšlím, tak ano. Probíhá válka se Svobodou a bandity, navíc ze severu pøicházejí fanatici. Všechny naše síly jsou ve válce a my potøebujeme lovce pro náš hlavní úkol - znièit Zónu. Nabízím ti práci šamana. Je to tak jednoduché: Nabízím ti "èarodìjnickou" zakázku, ty ji splníš a dostaneš za to odmìnu. Co ty na to?"</text>
+</string>
+<string id="dolg_story_task_1_dialog_start_2">
+    <text>Zní to dobøe. Pokud bude slušnì zaplaceno, vezmu to. Jaká je moje první smlouva?</text>
+</string>
+<string id="dolg_story_task_1_dialog_start_3">
+    <text>O plat se neboj, zaplatíme ti penìzi a fajn vybavením, kdy se osvìdèíš. Tvım prvním úkolem bude znièit doupì Upíru, kteøí se nasstìhovali na jih. Je to pekelná otrava, upíøi se dostali pøes všechna naše stanovištì a hlídky. Sejmi tyto potvory a vra se pro odmìnu. Doporuèuji zaèít hledat doupì u Øezníka na Smetišti, je to vùdce místních lovcù.</text>
+</string>
+<string id="dolg_story_task_1_dialog_start_4">
+    <text>Tu smlouvu beru. Povauj tyhle Upíry u za mrtvé.</text>
+</string>
+<string id="dolg_story_task_1_dialog_end_0">
+    <text>Mise splnìna, Upíøi znièeni.</text>
+</string>
+<string id="dolg_story_task_1_dialog_end_1">
+    <text>Dobrá práce, tady máš odmìnu.</text>
+</string>
+
+<string id="prinesi_military_docs_start_0">
+    <text>Take, co musím udìlat, abych získal informace o Jizvì?</text>
+</string>
+<string id="prinesi_military_docs_start_1">
+    <text>No, jde o tohle... Z hlubin Zóny byla zatarasována pøedána krabice se zprávou z jedné z vıprav, která se vydala na sever. Pøes den ji hlídají, jako by byla plná èistého plutonia, ale v noci z nìjakého dùvodu nenechávají víc ne dva stráce. Proplí se k zátarasu a dones mi od tamtud tu krabici. A já tì ti øeknu co vím, v rámci moností. Udìláš to, e ano?</text>
+</string>
+<string id="prinesi_military_docs_start_21">
+    <text>Udìlám to.</text>
+</string>
+<string id="prinesi_military_docs_start_22">
+    <text>Víš, já si to nemyslím. Cením si svého ivota.</text>
+</string>
+<string id="prinesi_military_docs_start_31">
+    <text>No, peníze mám pøipravené, ale ne... nedìlej ádnı hluk, ano? Kdyby se armáda nastvala, tak by nás to všechny pìknì bolelo.</text>
+</string>
+<string id="prinesi_military_docs_done_0">
+    <text>Mám ten kuføík s tìmi dokumenty, tady je.</text>
+</string>
+<string id="prinesi_military_docs_done_1">
+    <text>Dobøe, velmi dobøe, pøíteli. Tady je malá platba na pokrytí tvıch cestovních vıdajù a tvıch nábojù, eheheh. Teï si promluvíme o obchodu, abychom získali ty informace, po kterıch touíš...</text>
+</string>
+<string id="cs_task3_sidor_dialog_0">
+    <text>Hledám jistého oldáka jménem Jizva. Znáš ho?</text>
+</string>
+<string id="cs_task3_sidor_dialog_1">
+    <text>Moná ano. Proè potøebuješ tuto informaci?</text>
+</string>
+   <string id="cs_task3_sidor_dialog_3">
+    <text>Zná informace, které jsou pro Jasnou oblohu dùleité.</text>
+</string>
+<string id="cs_task3_sidor_dialog_2">
+    <text>Huh. Jo, mùu ti prodat nìjaké informace, ale bude tì to nìco stát. Øeknìme... dvacet tisíc, a taky mi dluíš laskavost. Udìlej pro mì nìjakou práci, abys dokázal, e ti mùu vìøit - pak uvidíme, co ti øeknu o Jizvì.</text>
+</string>
+<string id="cs_task3_sidor_dialog_4">
+    <text>Dobøe, provedu jednu z tvıch pochùzek a koupím informace.</text>
+</string>
+<string id="cs_task3_sidor_dialog_5">
+    <text>Na tyhle hry nemám èas, ty vymaštìnı zmrde.</text>
+</string>
+<string id="cs_task3_sidor_dialog_6">
+    <text>A já nemám èas na zkrachovalé, líné kretény. Jestli tu nejsi kvùli obchodu, tak odsud kurva vypadni.</text>
+</string>
+<string id="cs_task3_sidor_dialog1_0">
+    <text>Jsem tu kvùli informacím, které máte o Jizvì.</text>
+</string>
+<string id="cs_task3_sidor_dialog1_1">
+    <text>Máš ty peníze? Dokonèil jsi mùj úkol?</text>
+</string>
+<string id="cs_task3_sidor_dialog1_3">
+    <text>Ještì ne. Brzy se vrátím.</text>
+</string>
+<string id="cs_task3_sidor_dialog1_2">
+    <text>Jo, tady jsou peníze a práce je také hotová.</text>
+</string>
+<string id="cs_task3_sidor_dialog1_4">
+    <text>Perfektní. Poslouchejte pozornì - nebo ještì lépe, zapište si to. Neøíkám ti to dvakrát, heh. Take, pøišel za mnou tenhle oldák - potøeboval vybavení na hlubokı nájezd do severních území zony. Ten chlap mìl hluboko do kapsy, to ti povím - utratil spoustu penìz za špièkové vybavení. Podle toho, co jsem poznal, hledal nìco v Zatonu - jsem si jistı, e tam teï je. Taky jsem slyšel, e je zalezlı v dílnách rozvodny a nìco hledá ve všem tom harampádí. To je všechno, co máš. Hodnì štìstí pøi jeho hledání.</text>
+</string>
+<string id="cs_task3_sidor_dialog1_5">
+    <text>Rád jsem s tebou obchodoval. Díky za informace.</text>
+</string>
+	
+</string_table>

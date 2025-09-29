@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <string id="st_no_helm">
+        <text>Přilba není kompatibilní s výstrojí.</text>
+    </string>
+    <string id="st_no_helmkit">
+        <text>Potřebuješ sadu na opravu přilby, abys sis ji mohl vyměnit.</text>
+    </string>
+    <string id="st_helm_success">
+        <text>Přilba byla úspěšně vyměněna.</text>
+    </string>
+    <string id="ui_inv_max_condition">
+        <text>Max. podmínka</text>
+    </string>
+    <string id="st_part_repaired">
+        <text>%s opraveno na stav %s%.</text>
+    </string>
+    <string id="st_dot">
+      <text>•</text>
+    </string>
+    <string id="st_ui_repair_new">
+        <text>Nové</text>
+    </string>
+
+
+    
+    <string id="st_total_repair">
+        <text>celkový stav obnovený pro vhodné díly:</text>
+    </string>
+
+    <string id="st_can_repair">
+        <text>můžeš opravit následující součásti obleku:</text>
+    </string>
+    <string id="st_type_2">
+        <text>látky</text>
+    </string>
+    <string id="st_type_4">
+        <text>balistika</text>
+    </string>
+    <string id="st_type_3">
+        <text>zpevňující složky</text>
+    </string>
+    <string id="st_type_5">
+        <text>exoskeletové rámy</text>
+    </string>
+    <string id="st_type_1">
+        <text>přilba</text>
+    </string>
+
+    <string id="st_tier_base">
+        <text>vhodné k opravě </text>
+    </string>
+    <string id="st_tier_1">
+        <text>lehké zbroje a respirátory</text>
+    </string>
+    <string id="st_tier_2">
+        <text>střední zbroje a pancéřové přilby/respirátory</text>
+    </string>
+    <string id="st_tier_3">
+        <text>těžká brnění, exoskelety a silně pancéřované přilby</text>
+    </string>
+
+    
+    <string id="st_type_integrity">
+        <text>integrita:</text>
+    </string>
+     
+    
+<string id="ui_mcm_outfit_title">
+    <text>Přepracování částí oděvu</text>
+</string>
+<string id="ui_mcm_menu_outfit">
+    <text>OPO</text>
+</string>
+<string id="ui_mcm_outfit_damage_1">
+    <text>Násobitel poškození částí (Lehké oděvy)</text>
+</string>
+<string id="ui_mcm_outfit_damage_1_desc">
+    <text>Násobitel, který určuje, kolik poškození utrpí části lehkých oděvů (novácké bundy, lehké obleky LCS).</text>
+</string>
+<string id="ui_mcm_outfit_damage_2">
+    <text>Násobitel poškození částí (Středně těžké oděvy)</text>
+</string>
+<string id="ui_mcm_outfit_damage_2_desc">
+    <text>Násobitel, který určuje, kolik poškození utrpí části středně těžkých oděvů (obleky Sunrise, PS5, lehké plátové nosiče).</text>
+</string>
+<string id="ui_mcm_outfit_damage_3">
+    <text>Násobitel poškození částí (Těžké oděvy)</text>
+</string>
+<string id="ui_mcm_outfit_damage_3_desc">
+    <text>Násobitel, který určuje, kolik poškození utrpí části těžkých oděvů (pancéřová vesta SKAT-9, exosuity, exoskeletony). Buďte si vědomi, že těžké oděvy celkově utrpí méně kondičního poškození, takže je vyvážené udržet tento koeficient relativně vysoký.</text>
+</string>
+<string id="ui_mcm_outfit_debug">
+    <text>Ladění chyb</text>
+</string>
+<string id="ui_mcm_outfit_debug_desc">
+    <text>Ladění chyb</text>
+</string>
+<string id="ui_mcm_outfit_round">
+    <text>Snížit škrábance</text>
+</string>
+<string id="ui_mcm_outfit_round_desc">
+    <text>Zaškrtnutím této možnosti se zajistí, že velmi malé množství poškození se nekumuluje na komponentech obleku. Tím se také zjednoduší zobrazení tím, že se nepředstaví dlouhé desetinné číslice v statistikách položek.</text>
+</string>
+
+<string id="ui_mcm_outfit_ui">
+    <text>Zobrazit okno opravy částí</text>
+</string>
+<string id="ui_mcm_outfit_ui_desc">
+    <text>Otevře okno v rozhraní opravy, které zobrazuje obnovení částí oděvů.</text>
+</string>
+
+    
+    <string id="article_opo">
+        <text>Udržba oděvů</text>
+    </string>
+    <string id="article_opo_text">
+        <text>
+            Outfit Parts Overhaul mění způsob údržby a klade větší důraz na používání správných nástrojů a dílů pro údržbu vašeho zařízení.\n \n
+			%c[pda_green]I. Díly a údržba%c[ui_gray_1]\n
+            \n- Výstroj má maximální stav. Ten je určen průměrným stavem jejich dílů.
+            \n- Položky pro opravu výstroje fungují od 0 %, mohou však obnovovat pouze do maximálního stavu.
+            \n- Těžší zbroje potřebují silnější opravné předměty.
+            \n- Technici obnoví všechny součásti na 100 %.
+            \n- Poškození, které oblek časem utrpí, zhoršuje jeho maximální stav. Různé části se zhoršují různou rychlostí.
+            \n \n
+			%c[pda_green]II. Opravy a dílenské změny%c[ui_gray_1]\n
+            \n- Některé opravárenské předměty (šicí soupravy a opravárenské soupravy) opravují části obleku. Tím se zase obnoví maximální stav.
+            \n- Základní šicí soupravy mohou opravovat látky. Pokročilé a těžké šicí soupravy mohou opravovat zpomalovače a látky. Opravné soupravy opravují vše kromě přileb.
+            \n- Každá souprava obnovuje určité množství kondice, které je rovnoměrně rozděleno na všechny části obleku.
+            \n- Při opravě lze použít součásti výstroje. Pokud jsou použity, přímo zvýší hodnotu dílu, ke kterému se hodí. Pokud ne, použijí kondici na součásti ve své kategorii ve výši 25 % jejich účinnosti.
+            \n- Dílenská výměna dílů neobnovuje maximální stav. Jako kompenzace je zdarma a nespotřebovává náplně opravárenské sady.
+			\n \n
+            %c[pda_green]III. Zbrojíř%c[ui_gray_1]\n
+            \n- Můžete rozebrat části výstroje a získat základní komponenty!
+            \n- Pro demontáž použijte příslušný nástroj nebo nástroj přetáhněte na součást.
+            \n- Podmínka ovlivňuje množství získaných součástek.
+            \n- Součásti výstroje se používají k sestavení dalších částí výstroje. Recepty jsou rozděleny mezi příručky mechaniků.
+        </text>
+    </string>
+
+</string_table>

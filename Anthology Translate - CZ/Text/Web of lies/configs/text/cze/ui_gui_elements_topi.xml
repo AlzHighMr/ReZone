@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+  <string id="system_title">
+    <text>Systém oznámení:</text>
+</string>
+<string id="st_menu_cehdevice_1_use">
+    <text>Instalovat</text>
+</string>
+<string id="ui_gui_cehdevice_1_caption">
+    <text>Instalace zařízení DRUID D-06</text>
+</string>
+<string id="ui_gui_cehdevice_2_caption">
+    <text>Instalace PELENA-7K</text>
+</string>
+<string id="ui_gui_seleczia_caption">
+    <text>Zařízení pro výběr</text>
+</string>
+<string id="st_menu_seleczia_use">
+    <text>Použít</text>
+</string>
+<string id="ui_gui_radiometr_caption">
+    <text>Komplex ARK-NK3 s ložisky</text>
+</string>
+<string id="ui_gui_radiometr_list">
+    <text>Charakteristiky:</text>
+</string>
+<string id="st_rmenu_use_1">
+    <text>Nastavení</text>
+</string>
+<string id="st_rmenu_use_2">
+    <text>Ložiska</text>
+</string>
+<string id="st_rmenu_use_3">
+    <text>Zpracování</text>
+</string>
+<string id="ui_quest_f1_var_text_1">
+    <text>Panoramatická analýza</text>
+</string>
+<string id="ui_quest_f1_var_text_2">
+    <text>Ložiska</text>
+</string>
+<string id="ui_quest_f1_var_text_3">
+    <text>Sledování rádiového kanálu</text>
+</string>
+
+	<string id="st_quest_peleng_var_descr_1">
+    <text>Šířka pásma pro současnou analýzu - 5 MHz; Rychlost - 20 MHz/s / 8 MHz/s; Šířka pásma / rozlišení spektra - 5 MHz/25 kHz, 1 MHz/6 kHz; Režimy zobrazení spektra - Okamžité, Průměrné, Rotující;</text>
+</string>
+<string id="st_quest_peleng_var_descr_2">
+    <text>Metoda zaměření - amplituda; Frekvenční rozsah základního setu - 0,3 - 3000 MHz; Frekvenční rozsah v kompletním setu - 0,3 - 18 000 MHz; Hodnoty vyhodnocení úrovně signálu (včetně oslabovačů) -10 ... 110 dB.</text>
+</string>
+<string id="st_quest_peleng_var_descr_3">
+    <text>Rychlost přepínání kanálů 50 kan/s; Šířka pásma pro záznam fragmentů rádiového signálu - 5 MHz, 2 MHz, 250 kHz, 120 kHz, 50 kHz, 25 kHz, 9 kHz, 6 kHz; Typ zaznamenaných informací - rádiový signál, čas, frekvence.</text>
+</string>
+<string id="ui_gui_mineiskatel_caption">
+    <text>Odstraňování protipěchotních min</text>
+</string>
+<string id="st_menu_obezvred_use">
+    <text>Deaktivovat</text>
+</string>
+<string id="ui_gui_bombafinal_caption">
+    <text>Nastavení výbušného zařízení</text>
+</string>
+<string id="ui_gui_spectrometr_caption">
+    <text>Přenosný spektrometr Responder RCI</text>
+</string>
+<string id="ui_gui_spectrometr_list">
+    <text>Funkce:</text>
+</string>
+<string id="st_smenu_use_1">
+    <text>Vzorkování</text>
+</string>
+<string id="st_smenu_use_2">
+    <text>Identifikace</text>
+</string>
+<string id="st_smenu_use_3">
+    <text>Výsledek</text>
+</string>
+<string id="ui_quest_lider_var_text_1">
+    <text>Databáze látek</text>
+</string>
+<string id="ui_quest_lider_var_text_2">
+    <text>Uživatelské rozhraní</text>
+</string>
+
+
+<string id="ui_quest_lider_var_text_3">
+    <text>Provozní podmínky</text>
+</string>
+<string id="st_quest_lider_var_descr_1">
+    <text>Výbušniny, ZHN (nervové a puchýřové látky), bílé prášky, narkotika, toxické průmyslové chemikálie, běžné chemikálie.</text>
+</string>
+<string id="st_quest_lider_var_descr_2">
+    <text>Dotykový displej, vestavěný operační systém Windows.</text>
+</string>
+<string id="st_quest_lider_var_descr_3">
+    <text>Teplota -7...+50°C, relativní vlhkost 0 až 100 %.</text>
+</string>
+<string id="ui_gui_katalizator_caption">
+    <text>Instalace katalyzátoru.</text>
+</string>
+<string id="st_conventer_protoyad_title">
+    <text>Sestavení plynové masky.</text>
+</string>
+<string id="st_payalnik_attach_use1">
+    <text>Sestavení.</text>
+</string>
+<string id="st_razia_form_title">
+    <text>Rádiový test.</text>
+</string>
+<string id="st_rpg_attach_1">
+    <text>Test 1</text>
+</string>
+<string id="st_rpg_attach_2">
+    <text>Test 2</text>
+</string>
+<string id="st_rpg_attach_3">
+    <text>Test 3</text>
+</string>
+<string id="st_rpg_attach_4">
+    <text>Test 4</text>
+</string>
+<string id="st_rpg_attach_5">
+    <text>Test 5</text>
+</string>
+<string id="ui_gui_raztype_1_hint">
+    <text>Proveďte test rádiové stanice Erika-302.</text>
+</string>
+<string id="ui_gui_raztype_2_hint">
+    <text>Proveďte test rádia Granit 2P-44.</text>
+</string>
+<string id="ui_gui_raztype_3_hint">
+    <text>Proveďte test rádiové stanice Berkut-801MK.</text>
+</string>
+<string id="ui_gui_raztype_4_hint">
+    <text>Proveďte test rádiové stanice Barmitsa-RS.</text>
+</string>
+<string id="ui_gui_raztype_5_hint">
+    <text>Proveďte test rádiové stanice Tulpan (22RTP-2-FM).</text>
+</string>
+<string id="st_ach_razia_descr_1">
+    <text>Specifikace Erica-302. Pásmo - 148-174; 440-470 MHz; Počet kanálů - 16; Krok frekvenční sítě - 12,5 / 25 kHz.</text>
+</string>
+<string id="st_ach_razia_descr_2">
+    <text>Specifikace Granit 2P-44. Pásmo - 136 - 174 MHz; Potlačení vedlejších kanálů - 70 dB; Vysílací výkon - 20 W.</text>
+</string>
+<string id="st_ach_razia_descr_3">
+    <text>Specifikace Berkut-801MK. Počet frekvenčních konverzí - 2; Výstupní výkon - 8 W; Citlivost přijímače - 0,12 µV.</text>
+</string>
+<string id="st_ach_razia_descr_4">
+    <text>Specifikace Barmica-RS. Pásmo - 44,025 - 55,975 MHz; Počet provozních kanálů - 480; Počet maskovacích klíčů - 2128.</text>
+</string>
+<string id="st_ach_razia_descr_5">
+    <text>TTX Tulpan (22RTP-2-FM). Rozsah - 140 - 174 MHz; Frekvenční odchylka - ne více než 10 kHz; Nelineární odchylkový faktor - ne více než 10%.</text>
+</string>
+<string id="ui_mm_use_1">
+    <text>1</text>
+</string>
+<string id="ui_mm_use_2">
+    <text>2</text>
+</string>
+<string id="ui_mm_use_3">
+    <text>3</text>
+</string>
+<string id="ui_mm_use_4">
+    <text>4</text>
+</string>
+<string id="st_vpg_attach_1">
+    <text>Vzorek 1</text>
+</string>
+<string id="st_vpg_attach_2">
+    <text>Vzorek 2</text>
+</string>
+<string id="st_vpg_attach_3">
+    <text>Vzorek 3</text>
+</string>
+<string id="st_vpg_attach_4">
+    <text>Vzorek 4</text>
+</string>
+<string id="st_vphr_result_1">
+    <text>Test 2; Test 3; Test 4; Negativní.</text>
+</string>
+
+	<string id="st_vphr_result_2">
+    <text>Negativní.</text>
+</string>
+<string id="st_vphr_result_3">
+    <text>Pozitivní.</text>
+</string>
+<string id="st_vphr_result_4">
+    <text>Negativní.</text>
+</string>
+<string id="st_vphr_dutchik_descr_1">
+    <text>Indikační trubice IT-51 pracují pro sarin, soman, V-plyny.</text>
+</string>
+<string id="st_vphr_dutchik_descr_2">
+    <text>Indikační trubice IT-45 jsou určeny k detekci fosgenu, difosgenu, kyseliny kyanovodíkové, chlorokyanu.</text>
+</string>
+<string id="st_vphr_dutchik_descr_3">
+    <text>Indikační trubice IT-36 detekuje arsenový vodík, vodík sírový, dusíkové oxidy, fosgen, chlorocyanin.</text>
+</string>
+<string id="st_vphr_dutchik_descr_4">
+    <text>Indikační trubice IT-37 detekuje aminokyseliny.</text>
+</string>
+<string id="st_dozimetr_vphr_form_title_1">
+    <text>Chemické průzkumné zařízení vojenské jednotky.</text>
+</string>
+<string id="ui_gui_achdet3_1_hint">
+    <text>Vzít první vzorek pro sarin.</text>
+</string>
+<string id="ui_gui_achdet3_2_hint">
+    <text>Vzít druhý vzorek pro difosgen.</text>
+</string>
+<string id="ui_gui_achdet3_3_hint">
+    <text>Vzít třetí vzorek pro vodík sírový.</text>
+</string>
+<string id="ui_gui_achdet3_4_hint">
+    <text>Vzít první vzorek pro aminokyseliny.</text>
+</string>
+<string id="st_protoyad_box_text">
+    <text>Chybí komponenty potřebné pro sestavení plynové masky.</text>
+</string>
+<string id="st_precond_to_test_razia_text">
+    <text>Chybí komponenty potřebné pro testování rádia.</text>
+</string>
+<string id="st_dozimetr_vphr_item_1_text">
+    <text>Pokud je použit první vzorek, bude odebrán pro první typ CWA.</text>
+</string>
+<string id="st_dozimetr_vphr_item_2_text">
+    <text>Pokud je použit, bude odebrán druhý vzorek pro druhý typ CWA.</text>
+</string>
+<string id="st_dozimetr_vphr_item_3_text">
+    <text>Pokud je použit, bude odebrán třetí vzorek pro třetí typ CWA.</text>
+</string>
+<string id="st_dozimetr_vphr_item_4_text">
+    <text>Pokud je použit, bude odebrán čtvrtý vzorek pro čtvrtý typ CWA.</text>
+</string>
+<string id="ui_gui_radiostation_caption">
+    <text>Nastavení rádia.</text>
+</string>
+<string id="st_conventer_payalnik_title">
+    <text>Páječka Lukey-852D+.</text>
+</string>
+<string id="st_payalnik_attach_use2">
+    <text>Pájet.</text>
+</string>
+<string id="st_multimetr_result_descr_0">
+    <text>0,0 A, 0,0 Ohm, 0,0 F, 0,0 V.</text>
+</string>
+<string id="st_multimetr_result_descr_1">
+    <text>Dobrý. 3 A, 4 Ohm, 12 V.</text>
+</string>
+<string id="st_multimetr_result_descr_2">
+    <text>OK. 3 A, 4 Ohm, 12 V.</text>
+</string>
+<string id="st_multimetr_result_descr_3">
+    <text>Porucha. 0 A, 0 Ohm, 3 V.</text>
+</string>
+<string id="st_multimetr_result_descr_4">
+    <text>OK. 3 A, 4 Ohm, 12 V.</text>
+</string>
+<string id="st_payalnik_message_text">
+    <text>Chybí komponenty pro pájení rádia.</text>
+</string>
+<string id="st_multimetr_message_text">
+    <text>Chybí IC pro měření.</text>
+</string>
+<string id="ui_gui_fugas_caption">
+    <text>Nastavení pojistky.</text>
+</string>
+<string id="st_conventer_fugas_title">
+    <text>Jak sestavit výbušné zařízení.</text>
+</string>
+<string id="st_conventer_fugas_attach_use">
+    <text>Sestavit výbušné zařízení.</text>
+</string>
+<string id="st_fugas_message_text">
+    <text>Chybí komponenty pro sestavení výbušného zařízení.</text>
+</string>
+<string id="ui_mm_fugas_use_1_text">
+    <text>Zadejte hodnoty dvou parametrů - čas dálkového odpálení a délku cílového senzoru.</text>
+</string>
+<string id="ui_mm_fugas_use_2_text">
+    <text>Pro první možnost je vstupní dvojice 6 a 2. Pro druhou možnost 8 a 4.</text>
+</string>
+<string id="ui_gui_radiostation2_caption">
+    <text>Radio R-168-5KDNE.</text>
+</string>
+<string id="st_menu_izyat_use">
+    <text>Odebrat.</text>
+</string>
+<string id="st_menu_close">
+    <text>Zavřít.</text>
+</string>
+
+<string id="ui_gui_notepad_caption_sc">
+    <text>Poznámka od vědce</text>
+</string>
+<string id="st_notepad_type_one_sc_text">
+    <text>"...Ach, vzali jsme si tuto práci zbytečně. Velká ztráta času. Spoléhali jsme se na poctivost partnerů. Chytří vědci, blázni. Oklamali nás jako děti za tři lízátky. Považte se za odsouzené a vykopali jste si svůj vlastní hrob. Střelec je stejně mrtvý. Bude zabit dříve nebo později, ať už se dostane ke bariéře nebo ne. Jenom my to nebudeme vědět..."</text>
+</string>
+<string id="st_dozimetr_radiometr_form_title_1">
+    <text>Dozimetr-radiometr "MKS-07H (DKG-07BS)"</text>
+</string>
+<string id="st_rpz_attach_1">
+    <text>Měření 1.</text>
+</string>
+<string id="st_rpz_attach_2">
+    <text>Měření 2.</text>
+</string>
+<string id="st_rpz_attach_3">
+    <text>Měření 3.</text>
+</string>
+<string id="st_rpz_attach_4">
+    <text>Měření 4.</text>
+</string>
+<string id="ui_gui_achdet5_1_hint">
+    <text>Provést měření s dálkovým senzorem BDPA-07.</text>
+</string>
+<string id="ui_gui_achdet5_2_hint">
+    <text>Měřit s dálkovým senzorem BDGB-07.</text>
+</string>
+<string id="ui_gui_achdet5_3_hint">
+    <text>Měřit z dálkového senzoru BDBG-07.</text>
+</string>
+<string id="ui_gui_achdet5_4_hint">
+    <text>Měřit z dálkového senzoru BDBG-07.</text>
+</string>
+<string id="st_dozimetr_dutchik_descr_1">
+    <text>Použijte dálkový senzor BDPA-07. Měření hustoty toku alfa-radiace; Registrace nuklidů - Plutonium-239, Uran-234, Uran-238; Měřicí rozsah - 0,1...1500 s-1cm-2.</text>
+</string>
+<string id="st_dozimetr_dutchik_descr_2">
+    <text>Detektor BDPB-07. Měření hustoty toku beta-radiace s automatickým odečítáním gamma pozadí; Energetický rozsah - 0,2...3,5 MeV;</text>
+</string>
+<string id="st_dozimetr_dutchik_descr_3">
+    <text>Detektor BDBG-07. Měřená hodnota - DER X-ray a ?- radiace; Energetický rozsah - 0,05...3 MeV; Měřicí rozsah - 0,1 µSv/hod...10 Sv/hod</text>
+</string>
+<string id="st_dozimetr_dutchik_descr_4">
+    <text>Externí detektor BDKS-07. Měření gamma radiace EDR a beta radiace PD s automatickým odečítáním gamma pozadí; Energetický rozsah - 0,2...3,5 MeV; </text>
+</string>
+<string id="st_dozimetr_result_1">
+    <text>Normální.</text>
+</string>
+<string id="st_dozimetr_result_2">
+    <text>Překračuje normu.</text>
+</string>
+<string id="st_dozimetr_result_3">
+    <text>Normální.</text>
+</string>
+<string id="st_dozimetr_result_4">
+    <text>Normální.</text>
+</string>
+<string id="st_dozimetr_radiometr_item_1_text">
+    <text>Při použití bude provedeno první měření s prvním detektorem.</text>
+</string>
+<string id="st_dozimetr_radiometr_item_2_text">
+    <text>Pokud se použije, bude provedeno druhé měření druhým senzorem.</text>
+</string>
+<string id="st_dozimetr_radiometr_item_3_text">
+    <text>Pokud se použije, bude provedeno třetí měření třetím senzorem.</text>
+</string>
+<string id="st_dozimetr_radiometr_item_4_text">
+    <text>Pokud se použije, bude provedeno čtvrté měření čtvrtým senzorem.</text>
+</string>
+<string id="ui_gui_radiolocator_caption">
+    <text>Instalace radaru Kredo-1E.</text>
+</string>
+<string id="ui_gui_rls_caption">
+    <text>Jednotná instalace radaru Kredo-1E.</text>
+</string>
+<string id="all_system_name">
+    <text>Systém oznámení:</text>
+</string>
+<string id="ui_gui_rls_list">
+    <text>Další parametry:</text>
+</string>
+<string id="ui_quest_rls_helper_text_1">
+    <text>První parametr</text>
+</string>
+<string id="ui_quest_rls_helper_text_2">
+    <text>Druhý parametr</text>
+</string>
+<string id="ui_quest_rls_helper_text_3">
+    <text>Třetí parametr</text>
+</string>
+<string id="ui_quest_rls_helper_text_4">
+    <text>Čtvrtý parametr</text>
+</string>
+<string id="ui_quest_rls_helper_text_5">
+    <text>Pátý parametr</text>
+</string>
+<string id="ui_quest_rls_helper_text_6">
+    <text>Šestý parametr</text>
+</string>
+<string id="st_rls_item_1_used">
+    <text>Rozsah 1.</text>
+</string>
+<string id="st_rls_item_2_used">
+    <text>Rozsah 2.</text>
+</string>
+<string id="st_rls_item_3_used">
+    <text>Azimut 1.</text>
+</string>
+<string id="st_rls_item_4_used">
+    <text>Azimut 2.</text>
+</string>
+<string id="st_rls_item_5_used">
+    <text>Úhel náklonu 1.</text>
+</string>
+<string id="st_rls_item_6_used">
+    <text>Úhel náklonu 2.</text>
+</string>
+<string id="st_menu_use">
+    <text>Použít.</text>
+</string>
+<string id="st_rls_quest_descr_1">
+    <text>Rozsah: 2-32.</text>
+</string>
+<string id="st_rls_quest_descr_2">
+    <text>Azimut: 12-180.</text>
+</string>
+<string id="st_rls_quest_descr_3">
+    <text>Úhel náklonu: -18 + 18.</text>
+</string>
+<string id="st_quest_rls_helper_descr_1">
+    <text>Hodnota prvního nastavení rozsahu je uzamčena v nastaveních. Zaškrtněte políčko Rozsah 1 pro její použití.</text>
+</string>
+<string id="st_quest_rls_helper_descr_2">
+    <text>Hodnota druhého nastavení rozsahu je skryta v nastaveních. Zaškrtněte políčko Rozsah 2 pro její použití.</text>
+</string>
+<string id="st_quest_rls_helper_descr_3">
+    <text>Hodnota prvního nastavení azimutu je uložena v nastaveních. Zaškrtněte políčko Azimut 1 pro její použití.</text>
+</string>
+<string id="st_quest_rls_helper_descr_4">
+    <text>Hodnota druhého nastavení azimutu je uložena v nastaveních. Zaškrtněte políčko Azimut 2 pro její použití.</text>
+</string>
+<string id="st_quest_rls_helper_descr_5">
+    <text>Hodnota prvního parametru úhlu náklonu je uložena v nastaveních. Zaškrtněte políčko Úhel náklonu 1 pro její použití.</text>
+</string>
+<string id="st_quest_rls_helper_descr_6">
+    <text>Hodnota druhého parametru úhlu náklonu je uložena v nastaveních. Zaškrtněte políčko Úhel náklonu 2 pro její použití.</text>
+</string>
+<string id="quest_rls_subjects_1_text">
+    <text>Zvoleno první nastavení rozsahu.</text>
+</string>
+<string id="quest_rls_subjects_2_text">
+    <text>Zvoleno druhé nastavení rozsahu.</text>
+</string>
+<string id="quest_rls_subjects_3_text">
+    <text>Zvoleno první nastavení azimutu.</text>
+</string>
+<string id="quest_rls_subjects_4_text">
+    <text>Zvoleno druhé nastavení azimutu.</text>
+</string>
+<string id="quest_rls_subjects_5_text">
+    <text>Zvoleno první nastavení úhlu náklonu.</text>
+</string>
+
+<string id="quest_rls_subjects_6_text">
+    <text>Zvoleno druhé nastavení úhlu náklonu.</text>
+</string>
+<string id="st_conventer_protivogaz_caption">
+    <text>Seznam plynových masek:</text>
+</string>
+<string id="st_conventer_protivogaz_title">
+    <text>Sestavení plynové masky</text>
+</string>
+<string id="ui_quest_protivogaz_name_text_1">
+    <text>Plynová maska RSH4</text>
+</string>
+<string id="ui_quest_protivogaz_name_text_2">
+    <text>Plynová maska PMG-2</text>
+</string>
+<string id="ui_quest_protivogaz_name_text_3">
+    <text>Plynová maska PMK-1</text>
+</string>
+<string id="ui_quest_protivogaz_name_text_4">
+    <text>Plynová maska PMK-3</text>
+</string>
+<string id="ui_quest_protivogaz_name_text_5">
+    <text>Maska IP-4</text>
+</string>
+<string id="st_mens_use_1">
+    <text>Sestavení 1.</text>
+</string>
+<string id="st_mens_use_2">
+    <text>Sestavení 2.</text>
+</string>
+<string id="st_mens_use_3">
+    <text>Sestavení 3.</text>
+</string>
+<string id="st_mens_use_4">
+    <text>Sestavení 4.</text>
+</string>
+<string id="st_mens_use_5">
+    <text>Sestavení 5.</text>
+</string>
+<string id="st_protivogaz_box_1_text">
+    <text>Chybí požadované součásti k provedení sestavení plynové masky.</text>
+</string>
+<string id="st_quest_protivogaz_helper_descr_1">
+    <text>Složení: filtrační-absorpční box EO-16, spojovací trubka, helma-mask ShM-41Mu nebo ShMS, taška. Součástí sady je box s protizamlžovacími fóliemi, nástavce termoizolačních manžet NMU-1 (pro ShM-41Mu), box se záložními membránami pro interkom (pro ShMS).</text>
+</string>
+<string id="st_quest_protivogaz_helper_descr_2">
+    <text>Plynová maska je téměř identická s GP-5 s černou maskou ShMP, rozdíl spočívá v odlišné helma masce - ShM66u. Maska se liší přítomností výřezů pro uši (důležité pro vojenské jednotky k slyšení rozkazů) a přítomností mluvící membrány, která chybí u GP-5...</text>
+</string>
+<string id="st_quest_protivogaz_helper_descr_3">
+    <text>Plynová maska s vysokým stupněm ochrany a zvýšeným komfortem nošení. Jedná se o vojenskou verzi plynové masky typu GP-7. Maska má několik vylepšení oproti civilní verzi.</text>
+</string>
+<string id="st_quest_protivogaz_helper_descr_4">
+    <text>Plynová maska PMK-3 nejnovější generace, která má vysoký stupeň ochrany a zvýšený komfort nošení. Je navržena k ochraně dýchacího systému, obličeje a očí před toxickými látkami, chemickými látkami, biologickými aerosoly a radioaktivním prachem.</text>
+</string>
+<string id="st_quest_protivogaz_helper_descr_5">
+    <text>Moderní izolační plynová maska obecného určení. Kompaktní a poměrně lehká ve srovnání s jinými samostatnými plynovými maskami.</text>
+</string>
+<string id="st_rpp_attach_1">
+    <text>Test 1.</text>
+</string>
+<string id="st_rpp_attach_2">
+    <text>Test 2.</text>
+</string>
+<string id="st_rpp_attach_3">
+    <text>Test 3.</text>
+</string>
+<string id="st_rpp_attach_4">
+    <text>Test 4.</text>
+</string>
+<string id="st_rpp_attach_5">
+    <text>Test 5.</text>
+</string>
+
+<string id="ui_gui_achchep_1_hint">
+    <text>Test prvního typu plynových masek.</text>
+</string>
+<string id="ui_gui_achchep_2_hint">
+    <text>Test druhého typu plynových masek.</text>
+</string>
+<string id="ui_gui_achchep_3_hint">
+    <text>Test třetího typu plynových masek.</text>
+</string>
+<string id="ui_gui_achchep_4_hint">
+    <text>Test čtvrtého typu plynových masek.</text>
+</string>
+<string id="ui_gui_achchep_5_hint">
+    <text>Test pátého typu plynových masek.</text>
+</string>
+<string id="st_prototest_form_title">
+    <text>Testovací systém plynové masky mod. 8020Ě.</text>
+</string>
+<string id="st_protivogaz_test_1_text">
+    <text>Pro test je potřeba konkrétní vzorek plynové masky.</text>
+</string>
+<string id="st_ach_prototest_descr_1">
+    <text>Plynová maska RSH4. Protokol 1 test. Délka testu - 10 sekund. Rozsah faktorů přizpůsobení - 10 000 jednotek.</text>
+</string>
+<string id="st_ach_prototest_descr_2">
+    <text>Plynová maska PMG-2. Test podle protokolu 2. Délka testu - 15 sekund. Rozsah faktorů přizpůsobení - 15 000 jednotek.</text>
+</string>
+<string id="st_ach_prototest_descr_3">
+    <text>Plynová maska PMK-1. Nastavení testu podle protokolu 3. Délka testu - 10 sekund. Rozsah faktorů přizpůsobení - 10 000 jednotek.</text>
+</string>
+<string id="st_ach_prototest_descr_4">
+    <text>Plynová maska PMK-3. Test podle protokolu 4. Délka testu - 20 sekund. Rozsah faktorů přizpůsobení - 20 000 jednotek.</text>
+</string>
+<string id="st_ach_prototest_descr_5">
+    <text>Maska IP-4. Testování podle protokolu 5. Délka testu - 15 sekund. Rozsah faktorů přizpůsobení - 15 000 jednotek.</text>
+</string>
+<string id="st_conventer_eqv_attach_use1">
+    <text>Typ 1.</text>
+</string>
+<string id="st_conventer_eqv_attach_use2">
+    <text>Typ 2.</text>
+</string>
+<string id="st_conventer_eqv_attach_use3">
+    <text>Typ 3.</text>
+</string>
+<string id="ui_gui_eqv_spec_caption">
+    <text>Sada uniforem.</text>
+</string>
+<string id="all_stalker_tainik_type_1_used">
+    <text>Otevřel stalkerův úkryt. Obsah batohu: útočná puška AK-74M, dvě balení průbojných nábojů, plynová maska.</text>
+</string>
+<string id="all_stalker_tainik_type_2_used">
+    <text>Stalkerův úkryt. Obsah batohu: artefakt a dvě anabiotika.</text>
+</string>
+<string id="all_stalker_tainik_type_3_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: pistole Beretta 92FS, plynová maska, artefakt, podvěsný granátomet.</text>
+</string>
+<string id="all_stalker_tainik_type_4_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: ŔN-94 "Abakan" a artefakt.</text>
+</string>
+<string id="all_stalker_tainik_type_5_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: zbrojní oblek "Vítr svobody", útočná puška AKM, podvěsný granátomet.</text>
+</string>
+<string id="all_stalker_tainik_type_6_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: Pouze dvě radioprotector.</text>
+</string>
+<string id="all_stalker_tainik_type_7_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: dva artefakty.</text>
+</string>
+<string id="all_stalker_tainik_type_8_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: zbrojní oblek Zarya, tři granáty, Bear detektor.</text>
+</string>
+<string id="all_stalker_tainik_type_9_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: samopal Bison 2, artefakt, detektor.</text>
+</string>
+<string id="all_stalker_tainik_type_10_used">
+    <text>Otevřen stalkerův úkryt. Obsah batohu: artefakt a tři granáty.</text>
+</string>
+<string id="all_about_suhpai_1_used_text">
+    <text>Použit Sukhpak IRP-P.</text>
+</string>
+<string id="ui_gui_suhpai_1_caption">
+    <text>Sukhpak: IRP-P.</text>
+</string>
+<string id="st_ui_pai_about_use_item_1">
+    <text>Popis první akce. Ze sudých plechovek se zavařeným hovězím masem si můžete vzít kliknutím na tlačítko.</text>
+</string>
+<string id="st_ui_pai_about_use_item_2">
+    <text>Popis druhé akce. Pokud kliknete na tlačítko, můžete si vzít vojenské sušenky (chléb) ve třech baleních, jejichž množství je 3 kusy.</text>
+</string>
+<string id="st_ui_pai_about_use_item_3">
+    <text>Popis třetí akce. Pokud kliknete na tlačítko, můžete si vzít 1 speciální kus kuřecí jaterní paštiky z baleného jídla.</text>
+</string>
+<string id="st_ui_pai_about_use_item_4">
+    <text>Popis čtvrté akce. Z baleného jídla si můžete vzít 2 kusy hovězího masa s rýží v konzervách.</text>
+</string>
+<string id="st_ui_pai_about_use_item_5">
+    <text>Popis páté akce. Pokud kliknete na tlačítko, můžete si vzít nápoj s kofeinem v konzervě, množství je 1 kus.</text>
+</string>
+<string id="all_about_suhpai_2_used_text">
+    <text>Použit Sukhpak IRP-B.</text>
+</string>
+<string id="ui_gui_suhpai_2_caption">
+    <text>Sukhpak: IRP-B.</text>
+</string>
+<string id="st_ui_pai_2_about_use_item_1">
+    <text>Popis první akce. Můžete si vzít konzervu se zavařeným hovězím masem ze sukhpaku, stisknutím tlačítka. Množství je 3 kusy.</text>
+</string>
+<string id="st_ui_pai_2_about_use_item_2">
+    <text>Popis druhé akce. Pokud kliknete na tlačítko, můžete si vzít bramborovou kaši zabalenou v pytlíku s bramborovou kaší z baleného bramboru. Množství je 3 kusy.</text>
+</string>
+<string id="st_ui_pai_2_about_use_item_3">
+    <text>Popis třetí akce. Pokud kliknete na tlačítko, vezmete si 2 kusy speciální bramborové kaše s hovězím masem z baleného materiálu.</text>
+</string>
+<string id="st_ui_pai_2_about_use_item_4">
+    <text>Popis čtvrté akce. Můžete si vzít 2 kusy hořké čokolády z obalu, stisknutím tlačítka.</text>
+</string>
+<string id="st_ui_pai_2_about_use_item_5">
+    <text>Popis páté akce. Pomerančový džus v sáčku (1 kus) můžete vzít z oběda zabaleného v krabici stisknutím tlačítka.</text>
+</string>
+
+	<string id="ui_mm_help_1">
+		<text>?</text>
+	</string>
+<string id="ui_mm_eat_1">
+    <text>Vezmi konzervy</text>
+</string>
+<string id="ui_mm_eat_2">
+    <text>Vezmi chléb</text>
+</string>
+<string id="ui_mm_eat_3">
+    <text>Vezmi paštiku</text>
+</string>
+<string id="ui_mm_eat_4">
+    <text>Vezmi kaši</text>
+</string>
+<string id="ui_mm_eat_5">
+    <text>Dej si napít</text>
+</string>
+<string id="ui_mm_pai_1_text">
+    <text>Vyber si akci:</text>
+</string>
+<string id="ui_mm_closed">
+    <text>Zavřít</text>
+</string>
+<string id="ui_mm_pai_s_text">
+    <text>Obsah suchého vojenského jídla IRP-P:</text>
+</string>
+<string id="ui_mm_pai_s1_text">
+    <text>Hovězí guláš; plechovka (250 g); 3 kusy</text>
+</string>
+<string id="ui_mm_pai_s2_text">
+    <text>Armádní sušenky; balení (50 g); 3 kusy</text>
+</string>
+<string id="ui_mm_pai_s3_text">
+    <text>Jaterní paštika; plechovka (250 g); 1 kus</text>
+</string>
+<string id="ui_mm_pai_s4_text">
+    <text>Rýžová kaše s hovězím; plechovka (250 g); 2 kusy</text>
+</string>
+<string id="ui_mm_pai_s5_text">
+    <text>Energetický nápoj; plechovka (250 g); 1 kus</text>
+</string>
+<string id="ui_mm_pai_2_text">
+    <text>Vyberte si akci:</text>
+</string>
+<string id="ui_mm_pai2_s_text">
+    <text>Obsah suchého vojenského jídla IRP-B:</text>
+</string>
+<string id="ui_mm_eat_1_2">
+    <text>Vezmi konzervy</text>
+</string>
+<string id="ui_mm_eat_2_2">
+    <text>Vezmi guláš</text>
+</string>
+<string id="ui_mm_eat_3_2">
+    <text>Vezmi kaši</text>
+</string>
+<string id="ui_mm_eat_4_2">
+    <text>Vezmi čokoládu</text>
+</string>
+<string id="ui_mm_eat_5_2">
+    <text>Vezmi džus</text>
+</string>
+<string id="ui_mm_pai2_s1_text">
+    <text>Hovězí guláš; plechovka (250 g); 3 kusy</text>
+</string>
+<string id="ui_mm_pai2_s2_text">
+    <text>Bramborová kaše; kostka (150 g); 3 kusy</text>
+</string>
+<string id="ui_mm_pai2_s3_text">
+    <text>Rýžová kaše s hovězím; sklenice (250 g); 2 kusy</text>
+</string>
+<string id="ui_mm_pai2_s4_text">
+    <text>Tmavá čokoláda; tabulka (100 g); 2 kusy</text>
+</string>
+<string id="ui_mm_pai2_s5_text">
+    <text>Pomerančový džus; sáček (250 g); 1 kus</text>
+</string>
+<string id="all_about_ai_1_used_text">
+    <text>Lékárnička AI-2 byla použita.</text>
+</string>
+<string id="ui_gui_ai_1_caption">
+    <text>Lékárnička AI-2.</text>
+</string>
+<string id="st_ui_ai_1_about_use_item_1">
+    <text>Popis první akce. Kliknutím na tlačítko si můžete vzít antishokovou léčbu z obsahu lékárničky; její množství je 3 kusy.</text>
+</string>
+<string id="st_ui_ai_1_about_use_item_2">
+    <text>Popis druhé akce. Poté, co kliknete na tlačítko, si můžete vzít obvaz z lékárničky.</text>
+</string>
+<string id="st_ui_ai_1_about_use_item_3">
+    <text>Popis třetí akce. 3 speciální léky proti radiaci - klikněte na tlačítko a vezměte si 3 kusy speciálních léků proti radiaci z lékárničky.</text>
+</string>
+<string id="st_ui_ai_1_about_use_item_4">
+    <text>Popis čtvrté akce. Speciální antidotum pro otravu OPC. 2 kusy.</text>
+</string>
+<string id="st_ui_ai_1_about_use_item_5">
+    <text>Popis páté akce. Pokud kliknete na tlačítko, vezmete si 1 speciální antidotum z lékárničky.</text>
+</string>
+<string id="ui_mm_ai_1">
+    <text>Vezmi z 1.</text>
+</string>
+<string id="ui_mm_ai_2">
+    <text>Vezmi z 2.</text>
+</string>
+<string id="ui_mm_ai_3">
+    <text>Vezmi z 3.</text>
+</string>
+<string id="ui_mm_ai_4">
+    <text>Vezmi z 4.</text>
+</string>
+<string id="ui_mm_ai_5">
+    <text>Vezmi z 5.</text>
+</string>
+<string id="ui_mm_ai_1_text">
+    <text>Vyberte si akci:</text>
+</string>
+
+<string id="ui_mm_ai_1_s_text">
+    <text>Obsah lékárničky AI-2:</text>
+</string>
+<string id="ui_mm_ai_1_s1_text">
+    <text>1. oddíl; tlumič bolesti; 3 kusy</text>
+</string>
+<string id="ui_mm_ai_1_s2_text">
+    <text>2. oddíl; obvaz; 3 kusy</text>
+</string>
+<string id="ui_mm_ai_1_s3_text">
+    <text>3. oddíl; lék proti radiaci; 3 kusy</text>
+</string>
+<string id="ui_mm_ai_1_s4_text">
+    <text>4. oddíl; antidotum pro otravu ARV; 2 kusy</text>
+</string>
+<string id="ui_mm_ai_1_s5_text">
+    <text>5. oddíl; Radioprotektor; 1 kus</text>
+</string>
+
+<string id="all_about_ai_2_used_text">
+    <text>Lékárnička AI-4 byla použita.</text>
+</string>
+<string id="ui_gui_ai_2_caption">
+    <text>Lékárnička AI-4.</text>
+</string>
+<string id="st_ui_ai_2_about_use_item_1">
+    <text>Popis první akce. Po kliknutí na tlačítko si můžete vzít antishokovou léčbu z obsahu lékárničky. Množství 3 kusy.</text>
+</string>
+<string id="st_ui_ai_2_about_use_item_2">
+    <text>Popis druhé akce. 3 obvazy lze vzít z individuální lékárničky po kliknutí na tlačítko.</text>
+</string>
+<string id="st_ui_ai_2_about_use_item_3">
+    <text>Popis třetí akce. 1 antimikrobiální látka z lékárničky.</text>
+</string>
+<string id="st_ui_ai_2_about_use_item_4">
+    <text>Popis čtvrté akce. Po kliknutí na tlačítko obsahuje esence lékárničky speciální antibiotikum.</text>
+</string>
+<string id="st_ui_ai_2_about_use_item_5">
+    <text>Popis páté akce. Po kliknutí na tlačítko si můžete vzít experimentální antidotum z lékárničky.</text>
+</string>
+<string id="ui_mm_ai_2_1">
+    <text>Vezmi z 1.</text>
+</string>
+<string id="ui_mm_ai_2_2">
+    <text>Vezmi z 2.</text>
+</string>
+<string id="ui_mm_ai_2_3">
+    <text>Vezmi z 3.</text>
+</string>
+<string id="ui_mm_ai_2_4">
+    <text>Vezmi z 4.</text>
+</string>
+<string id="ui_mm_ai_2_5">
+    <text>Vezmi z 5.</text>
+</string>
+<string id="ui_mm_ai_2_text">
+    <text>Vyberte si akci:</text>
+</string>
+<string id="ui_mm_ai_2_s_text">
+    <text>Obsah lékárničky AI-4:</text>
+</string>
+<string id="ui_mm_ai_2_s1_text">
+    <text>1. oddíl; antishoková léčba; 3 kusy</text>
+</string>
+<string id="ui_mm_ai_2_s2_text">
+    <text>2. oddíl; obvazy; 3 kusy</text>
+</string>
+<string id="ui_mm_ai_2_s3_text">
+    <text>3. oddíl; antibakteriální prostředek; 1 kus</text>
+</string>
+<string id="ui_mm_ai_2_s4_text">
+    <text>4. oddíl; speciální anabiotikum; 2 kusy</text>
+</string>
+<string id="ui_mm_ai_2_s5_text">
+    <text>5. oddíl; experimentální antidotum; 1 kus</text>
+</string>
+
+	
+<string id="st_need_art1_box_text">
+    <text>Pro připojení gravitační sestavy potřebujete 5 artefaktů Zlatých rybek.</text>
+</string>
+<string id="st_need_art2_box_text">
+    <text>Pro připojení chemické sestavy potřebujete 5 artefaktů Mica.</text>
+</string>
+<string id="st_need_art3_box_text">
+    <text>Pro připojení termální sestavy potřebujete 5 artefaktů Matčiných korálků.</text>
+</string>
+<string id="st_conventer_yad_title">
+    <text>"Přenosná chemická laboratoř."</text>
+</string>
+<string id="st_conventer_yad_help">
+    <text>Záznam s úkolem.</text>
+</string>
+<string id="st_conventer_yad_attach">
+    <text>Syntetizovat (Ricin)</text>
+</string>
+<string id="st_conventer_artefacts_title">
+    <text>"Převodník artefaktů"</text>
+</string>
+<string id="st_conventer_grenade_attach_art1">
+    <text>Spojit (Zlaté rybky)</text>
+</string>
+<string id="st_conventer_grenade_attach_art2">
+    <text>Spojit (Mica)</text>
+</string>
+<string id="st_conventer_grenade_attach_art3">
+    <text>Spojit (Matčiny korálky)</text>
+</string>
+
+<string id="st_conventer_juk_title">
+    <text>Lutovací stanice Lukey-853D</text>
+</string>
+<string id="ui_gui_guk_2_caption">
+    <text>Výpis parametrů</text>
+</string>
+<string id="ui_gui_guk_1_caption">
+    <text>Výpočetní úkol</text>
+</string>
+<string id="st_conventer_guk_attach_use1">
+    <text>Výpočetní parametry</text>
+</string>
+<string id="st_conventer_guk_attach_use2">
+    <text>Referenční údaje</text>
+</string>
+<string id="st_conventer_guk_attach_use3">
+    <text>Lutování zařízení</text>
+</string>
+<string id="st_need_guk1_box_text">
+    <text>Pro postavení poslucháčských zařízení potřebujete 5 speciálních mikročipů, 15 kondenzátorů a 10 cívek, každou s vlastním speciálním označením.</text>
+</string>
+<string id="ui_gui_guk_item_1">
+    <text>"Počáteční naměřené hodnoty:"</text>
+</string>
+<string id="ui_gui_guk_item_2">
+    <text>"Přijaté vypočítané parametry:"</text>
+</string>
+<string id="st_guk_type_one_1_text">
+    <text>Musíme určit rozsah radiových vln, které může naše rádiové přijímače (maják) přijímat, pokud kapacita jeho oscilačního obvodu může být v rozmezí od 50 pF do 200 pF a indukčnost je 50 mGn.
+Pokud je kapacita oscilačního obvodu C a indukčnost cívky L, odpovídající perioda oscilace se vypočítá podle vzorce: T=2?(LC)^0,5. Odtud frekvence n=1/T=1/2?(LC)^0,5
+Možné rozsahy
+1. 93 kHz až 186 kHz.
+2. 58 kHz až 269 kHz.</text>
+</string>
+<string id="st_guk_1_use_1">
+    <text>Načíst</text>
+</string>
+<string id="st_guk_1_use_2">
+    <text>Přijmout</text>
+</string>
+
+    
+	<string id="ui_gui_a2_pda_copy_caption">
+    <text>"Kopírování informací"</text>
+</string>
+<string id="st_a2_pda_copy_use">
+    <text>Kopírovat</text>
+</string>
+<string id="ui_gui_rukzak_caption">
+    <text>"Umístění batohu Stalker"</text>
+</string>
+<string id="ui_gui_rukzak_caption_3">
+    <text>"Batoh Stalker"</text>
+</string>
+<string id="ui_gui_rukzak_caption_2">
+    <text>"Stalker řečička"</text>
+</string>
+<string id="st_menu_rukzak_use_1">
+    <text>Získat</text>
+</string>
+<string id="st_menu_rukzak_use">
+    <text>Nainstalovat</text>
+</string>
+<string id="st_menu_rukzak_close">
+    <text>Zavřít</text>
+</string>
+<string id="st_a2_scanner_use">
+    <text>Odebrat modul</text>
+</string>
+<string id="st_a2_scanner_close">
+    <text>Zavřít</text>
+</string>
+<string id="ui_gui_a2_samopisez_caption">
+    <text>"Palubní záznam MSRP-12-96"</text>
+</string>
+<string id="ui_gui_a2_samopisez_caption_1">
+    <text>"Palubní Mi-24 vrtulník"</text>
+</string>
+<string id="ui_gui_a2_scanner_caption">
+    <text>"Radiový skener IC-R9800"</text>
+</string>
+<string id="ui_gui_vphr_caption">
+    <text>"VPCR".</text>
+</string>
+<string id="ui_mm_vphr_use_1">
+    <text>Analýza vzorku</text>
+</string>
+<string id="ui_mm_vphr_use_2">
+    <text>VOC; Ostatní VOC</text>
+</string>
+<string id="ui_mm_vphr_use_3">
+    <text>Kontrolní trubky</text>
+</string>
+<string id="ui_mm_vphr_use_1_text">
+    <text>Analýza vzorku: Kanál 1 - 1000, Kanál 2 - 1500.</text>
+</string>
+<string id="ui_mm_vphr_use_2_text">
+    <text>POPs: X-75 mg/del, Y-25 l/del.</text>
+</string>
+<string id="ui_mm_vphr_use_3_text">
+    <text>Výsledek: Hořčíkový plyn 3*10-3 mg/l, VX- 1*10-3 mg/l, žádné POPs.</text>
+</string>
+<string id="ui_gui_vphr_1_item_1">
+    <text>Nastavit N1 = 1000</text>
+</string>
+<string id="ui_gui_vphr_1_item_2">
+    <text>Nastavit N2 = 1500</text>
+</string>
+<string id="ui_gui_vphr_2_item_1">
+    <text>Nastavit X = 75 t1/°</text>
+</string>
+<string id="ui_gui_vphr_2_item_2">
+    <text>Nastavit Y = 25 t2/°</text>
+</string>
+<string id="ui_gui_vphr_1_caption">
+    <text>"Parametry"</text>
+</string>
+<string id="ui_gui_vphr_2_caption">
+    <text>"Hodnocení"</text>
+</string>
+<string id="ui_gui_vphr_3_caption">
+    <text>"Výsledek"</text>
+</string>
+<string id="ui_gui_yad_zadacha_caption">
+    <text>"Úkol na syntézu"</text>
+</string>
+<string id="ui_gui_med_help_caption_1">
+    <text>"Referenční data"</text>
+</string>
+<string id="ui_mm_help_m_text">
+    <text>"Obsah referenčních dat:"</text>
+</string>
+<string id="st_ui_vphr_about_use_item_1">
+    <text>Popis prvního kroku. Analýza vzorku. Po kliknutí na tlačítko se otevře okno se stejným názvem, ve kterém budete muset provést určitou posloupnost akcí. Během analýzy musíte zadat numerické hodnoty parametrů N1 a N2. Data budou zadávána do speciálních polí. Hodnoty samotné budou uvedeny v okně se stejným názvem.</text>
+</string>
+<string id="st_ui_vphr_about_use_item_2">
+    <text>Popis druhého kroku. Hodnocení vzorku. Po kliknutí na tlačítko se otevře okno se stejným názvem, ve kterém budete muset provést určitou posloupnost akcí. Během hodnocení musíte zadat numerické hodnoty koeficientů parametrů na osách X a Y. Data budou zadávána do speciálních polí. Hodnoty samotné budou uvedeny v okně se stejným názvem.</text>
+</string>
+<string id="st_ui_vphr_about_use_item_3">
+    <text>Popis třetího kroku. Výsledek. Po kliknutí na tlačítko se otevře okno se stejným názvem, ve kterém bude zobrazena vizualizace výsledku provozu WHR. Toto okno můžete jednoduše uzavřít dokončením práce.</text>
+</string>
+<string id="ui_gui_osc_caption">
+    <text>"Osciloskop C1-65A".</text>
+</string>
+<string id="ui_mm_osc_s_text">
+    <text>Kroky operace:</text>
+</string>
+<string id="ui_mm_osc_use_1">
+    <text>Kalibrace</text>
+</string>
+<string id="ui_mm_osc_use_2">
+    <text>V/dílek;T/dílek</text>
+</string>
+<string id="ui_mm_osc_use_3">
+    <text>Signál</text>
+</string>
+
+	<string id="ui_mm_osc_use_1_text">
+    <text>Parametry referenčního video pulsu: Frekvence-1 KHz, Amplituda-1,5mV.</text>
+</string>
+<string id="ui_mm_osc_use_2_text">
+    <text>Měřítko: Rin-1 MOhm, Svx-30 pF; X-konec kV/dílek, Y-konec 50ms/dílek.</text>
+</string>
+<string id="ui_mm_osc_use_3_text">
+    <text>Tvar elektrického signálu: sinusový, Perioda-0,2s, Amplituda-20V.</text>
+</string>
+<string id="ui_gui_razia_caption">
+    <text>"Radiostanice Barmitsa-RS".</text>
+</string>
+<string id="ui_gui_oszill_1_caption">
+    <text>"Kalibrace"</text>
+</string>
+<string id="ui_gui_oszill_2_caption">
+    <text>"Měřítko"</text>
+</string>
+<string id="ui_gui_oszill_3_caption">
+    <text>"Signál"</text>
+</string>
+<string id="st_menu_oszill_1_use_1">
+    <text>Nastavit</text>
+</string>
+<string id="st_menu_oszill_1_use_2">
+    <text>Nastavit</text>
+</string>
+<string id="ui_gui_oszill_1_item_1">
+    <text>Nastavit F = 1000 Hz</text>
+</string>
+<string id="ui_gui_oszill_1_item_2">
+    <text>Nastavit A = 1500 V</text>
+</string>
+<string id="ui_gui_oszill_2_item_1">
+    <text>Nastavit X = 20 µV/segment</text>
+</string>
+<string id="ui_gui_oszill_2_item_2">
+    <text>Nastavit Y = 50 ms/segment</text>
+</string>
+<string id="st_ui_osc_about_use_item_1">
+    <text>Popis prvního kroku. Kalibrace. Po kliknutí na tlačítko se otevře okno se stejným názvem. Během kalibrace musíte zadat numerické hodnoty (amplitudu a frekvenci) pro referenční video puls. Data se zadávají do speciálních polí. Hodnoty samotné budou uvedeny v okně kalibrace.</text>
+</string>
+<string id="st_ui_osc_about_use_item_2">
+    <text>Popis druhého kroku. Měřítko. Po kliknutí na tlačítko se otevře okno se stejným názvem. Během měřítka musíte zadat numerické hodnoty koeficientů parametrů na osách X a Y. Data se zadávají do speciálních polí. Hodnoty samotné budou uvedeny v okně měřítka.</text>
+</string>
+<string id="st_ui_osc_about_use_item_3">
+    <text>Popis třetího kroku. Vizualizace signálu. Po kliknutí na tlačítko se otevře okno se stejným názvem, které zobrazuje výsledek displeje osciloskopu. Toto okno můžete uzavřít dokončením vaší práce.</text>
+</string>
+<string id="st_menu_oszill_2_close">
+    <text>Zastavit</text>
+</string>
+<string id="st_menu_oszill_1_close">
+    <text>Použít</text>
+</string>
+<string id="ui_gui_b5_medical_main_caption">
+    <text>"Lékařská sada WPSM"</text>
+</string>
+<string id="ui_gui_med_1_caption">
+    <text>"Modul diagnostiky funkce"</text>
+</string>
+<string id="ui_gui_med_2_caption">
+    <text>"Referenční data"</text>
+</string>
+<string id="ui_gui_med_3_caption">
+    <text>"Modul léčby"</text>
+</string>
+<string id="ui_mm_med_use_1">
+    <text>Diagnóza</text>
+</string>
+<string id="ui_mm_med_use_2">
+    <text>Reference</text>
+</string>
+<string id="ui_mm_med_use_3">
+    <text>Léčba</text>
+</string>
+<string id="st_b5_med_1_use_1">
+    <text>Inspekce</text>
+</string>
+<string id="st_b5_med_3_use_1">
+    <text>Spustit</text>
+</string>
+<string id="st_b5_med_close">
+    <text>Zavřít</text>
+</string>
+<string id="ui_mm_med_lechenie_doing_text">
+    <text>Modul léčby dokončil svoji práci.</text>
+</string>
+<string id="ui_mm_med_osmotr_doing_text">
+    <text>Diagnóza provedena. Použijte referenční data k určení možné diagnózy: 1-, 2-, 3-.</text>
+</string>
+<string id="ui_gui_med_1_caption_2">
+    <text>ULM CASE Medical Suite 1</text>
+</string>
+<string id="ui_gui_med_diag_item_1">
+    <text>Pulz:</text>
+</string>
+
+<string id="ui_gui_med_diag_item_2">
+    <text>Teplota a krevní tlak:</text>
+</string>
+<string id="ui_gui_med_diag_item_3">
+    <text>Krevní test:</text>
+</string>
+<string id="ui_gui_med_diag_item_4">
+    <text>Jiné:</text>
+</string>
+<string id="ui_gui_med_lech_item_1">
+    <text>Zastavení krvácení:</text>
+</string>
+<string id="ui_gui_med_lech_item_2">
+    <text>Bolesti:</text>
+</string>
+<string id="ui_gui_med_lech_item_3">
+    <text>Dezinfekce a detoxikace:</text>
+</string>
+<string id="ui_gui_med_lech_item_4">
+    <text>Antibiotika:</text>
+</string>
+<string id="ui_gui_med_lech_op1">
+    <text>Akce k provedení:</text>
+</string>
+<string id="ui_gui_med_lech_op2">
+    <text>Lék k podání:</text>
+</string>
+<string id="ui_gui_med_lech_op3">
+    <text>Vybraný analgetikum:</text>
+</string>
+<string id="ui_gui_med_lech_op4">
+    <text>Antibiotikum k podání:</text>
+</string>
+<string id="ui_mm_med_s_text">
+    <text>Obsah příručky</text>
+</string>
+<string id="st_b5_r3_use_1_text">
+    <text>1 Obvaz\n2 Přípravek vikasol\n3 Přípravek dicinone</text>
+</string>
+<string id="st_b5_r3_use_2_text">
+    <text>1 Morfinový analgetikum\n2 Analgetikum\n3 Tramal</text>
+</string>
+<string id="st_b5_r3_use_3_text">
+    <text>1\n2 Dioxidin\n3 Octinisept</text>
+</string>
+<string id="st_b5_r3_use_4_text">
+    <text>1 Přípravek penicilin\n2 Přípravek cyfran\n3 Erythromycin</text>
+</string>
+<string id="ui_mm_med_helper_text_1">
+    <text>Analgin</text>
+</string>
+<string id="ui_mm_med_helper_text_2">
+    <text>Vikasol</text>
+</string>
+<string id="ui_mm_med_helper_text_3">
+    <text>Dicinone</text>
+</string>
+<string id="ui_mm_med_helper_text_4">
+    <text>Dioxidin</text>
+</string>
+<string id="ui_mm_med_helper_text_5">
+    <text>Octinisept</text>
+</string>
+<string id="ui_mm_med_helper_text_6">
+    <text>Obvaz</text>
+</string>
+<string id="ui_mm_med_helper_text_7">
+    <text>Morfin</text>
+</string>
+<string id="ui_mm_med_helper_text_8">
+    <text>Tramal</text>
+</string>
+<string id="ui_mm_med_helper_text_9">
+    <text>Reopolyglucin</text>
+</string>
+<string id="ui_mm_med_helper_text_10">
+    <text>Penicilin</text>
+</string>
+<string id="ui_mm_med_helper_text_11">
+    <text>Cyfran</text>
+</string>
+
+	<string id="ui_mm_med_helper_text_12">
+    <text>Erythromycin</text>
+</string>
+<string id="st_mm_med_helper_descr_1">
+    <text>Metamizol sodný (Analgin) je lék, analgetikum a antipyretikum z pyrazolonové skupiny. Ve mnoha zemích byl stažen z oběhu kvůli riziku agranulocytózy.
+    Patří do skupiny NSAID (nesteroidní protizánětlivé léky) pyrazolonových derivátů. Mechanismus účinku je podobný jako u jiných NSAID (neselektivně blokuje COX a snižuje tvorbu prostaglandinů z arachidonové kyseliny). Brání vedení bolestivých extra- a proprioreceptivních impulsů přes Guallovy a Bourdachovy svazky, zvyšuje prah citlivosti thalamických center bolestivé citlivosti, zvyšuje tepelnou disipaci.
+    Indikace\nHorečnatý syndrom (infekčně-zánětlivá onemocnění, bodnutí hmyzem - komáry, včely, klíšťata atd., pooperační komplikace); Bolestivý syndrom (lehké až střední intenzity): včetně neuralgie, myalgie, artralgie...
+    Soukromě doporučováno při hypotenzi a slabém pulsu.
+    </text>
+</string>
+<string id="st_mm_med_helper_descr_2">
+    <text>Vikasol. Vikasol se podílí na tvorbě protrombinu játry a pomáhá normalizovat srážení krve. Účinek Vikasolu se projevuje 12-18 hodin po injekci.
+    Indikace pro použití\nHypo- a avitaminóza K, obstrukční žloutenka, akutní hepatitida, parenchymální, kapilární, hemoroidální, žaludeční, střevní, nosní a plicní krvácení; Poranění, operace, záření nemoc, trombocytopenická púrpur, poslední měsíc těhotenství (k prevenci krvácení novorozenců), děložní juvenilní a premenopauzální krvácení, spontánní krvácení při přípravě na operace s obtížnou hemostázou, sepse s hemoragickými jevy, předávkování antikoagulancii (dicumarin, fenylalin).
+    V zvláštních případech se doporučuje použití při stavu šoku pacienta.
+    </text>
+</string>
+<string id="st_mm_med_helper_descr_3">
+    <text>Dicinon. Hemostatický lék. Jeho hemostatický účinek spočívá v zesílení prvního kroku mechanismu hemostázy (interakce mezi endotelem a krevními destičkami). Prokázáno, že Dicinon zvyšuje adhezi destiček, stabilizuje kapilární stěny, snižuje jejich propustnost, inhibuje syntézu těch prostaglandinů, které způsobují disagregaci destiček, vasodilataci a zvýšenou kapilární propustnost.
+    To vede k kratší době krvácení a snížení ztráty krve. Dicinon nemá vliv na mechanismus srážení krve, protrombinový čas, fibrinolýzu a hladinu destiček (normální). Doporučuje se při nízkém počtu krevních destiček.
+    </text>
+</string>
+
+   <string id="st_mm_med_helper_descr_4">
+    <text>Dioxidine je domácí syntetický antibakteriální lék s širokým spektrem účinku. Byl schválen pro lékařské použití v roce 1976.
+    Kvůli zvláštnostem toxikologie s systémovým působením (IV) se používá pouze v životně důležitých případech pro léčbu těžkých forem anaerobních nebo smíšených aerobně-anaerobních infekcí způsobených multirezistentními kmeny, kdy jiné antibakteriální léky jsou neúčinné nebo jsou špatně snášeny. Při těžkých hnisavých infekcích se může použít do dutiny, endobronchiálně, lokálně.
+    Mechanismus účinku\nDioxidine má baktericidní účinek, jeho mechanismus účinku však není plně pochopen. Účinnost Dioxidinu se zvyšuje v anaerobním prostředí díky indukci tvorby reaktivních kyslíkových druhů. V zvláštních případech se doporučuje používat při nízkém počtu leukocytů v krvi.</text>
+</string>
+<string id="st_mm_med_helper_descr_5">
+    <text>Octinisept. Indikace - léčba kůže a sliznic před diagnostickými a chirurgickými zákroky v dětské, chirurgické a porodnicko-gynekologické praxi, traumatologii, proktologii, dermatovenerologii, otorinolaryngologii, zubařství;
+    léčba rány a popáleniny; prevence mykózy nohou a mezilátkové mykózy.
+    V individuálních případech se doporučuje při hypertenzi a polospále.</text>
+</string>
+<string id="st_mm_med_helper_descr_6">
+    <text>Obvazy jsou pruhy látky (gáza, plátna, lnu, flanelu), které se používají k obvazování ran a obinadlů.
+    Struktura lékařského obvazu se skládá z komplexního tkaného vzoru z bavlněných nití. Tkanina obvazu se skládá ze dvou propletených systémů nití, které jsou navzájem kolmé.
+    V individuálních případech je nejlepší aplikovat obvaz, když je pacient vědomý a jeho celkový stav je v normálních mezích.</text>
+</string>
+
+   <string id="st_mm_med_helper_descr_7">
+    <text>Morfin je lék s analgetickým (opioidním) účinkem.
+    Deriváty morfinu, zejména hydrochlorid (pro injekci) a sulfát (pro perorální užití), se používají v lékařství. Morfin je účinný při potlačování pocitů silné fyzické bolesti a bolesti psychogenního původu. Má také sedativní účinnost a potlačuje kašelový reflex.
+    V zvláštních případech se doporučuje používat při slabém pulsu a normální tělesné teplotě.</text>
+</string>
+<string id="st_mm_med_helper_descr_8">
+    <text>Tramal - Syntetický opioidní analgetikum s centrálním a míšním účinkem (podporuje otevírání K+ a Ca2+-kanálů, způsobuje hyperpolarizaci membrány a inhibici vedení bolestivých impulsů), zvyšuje sedativní účinky. V zvláštních případech se používá při hypertermii a rychlém pulsu.</text>
+</string>
+<string id="st_mm_med_helper_descr_9">
+    <text>Reopolyglucin je roztok pro výměnu plazmy, jehož specifickým účinkem je zvýšení suspenzních vlastností krve, snížení její viskozity, přispívání k obnově průtoku krve v malých kapilárách, prevence a odstraňování agregace krvetvorných prvků.
+    Reopolyglucin se používá ke zlepšení kapilárního průtoku krve za účelem prevence a léčby traumatičeského, chirurgického, toxického a popáleninového šoku.
+    Je doporučován při hypotenzi a zvýšeném počtu bílých krvinek.</text>
+</string>
+<string id="st_mm_med_helper_descr_10">
+    <text>Peniciliny jsou antimikrobiální látky patřící do třídy beta-laktamových antibiotik.
+    V současné době se skupina penicilinů skládá z léků, které jsou rozděleny do několika podskupin v závislosti na jejich původu, chemické struktuře a antimikrobiální aktivitě.
+    V zvláštních případech se doporučuje při vysokém počtu erytrocytů.</text>
+</string>
+
+  <string id="st_mm_med_helper_descr_11">
+    <text>Cifran je antimikrobiální látka z grupy fluorochinolonů. Mechanismus účinku spočívá v inhibici enzymu bakteriální DNA-gyráza a narušení syntézy DNA. Cifran je účinný proti gram-pozitivním i gram-negativním bakteriím, včetně kmenů odolných vůči penicilinům, cefalosporinům a aminoglykosidům. V zvláštních případech se doporučuje při vysokém počtu krevních destiček.</text>
+</string>
+<string id="st_mm_med_helper_descr_12">
+    <text>Erythromycin je bakteriostatický antibiotikum ze skupiny makrolidů, které se reverzibilně váže na 50S-subjednotku ribozomů, což narušuje tvorbu peptidových vazeb mezi molekulami aminokyselin a blokuje syntézu proteinů u mikroorganismů (neovlivňuje syntézu nukleových kyselin). Při použití vysokých dávek a v závislosti na typu patogenu může vykazovat baktericidní účinek.
+    Je doporučován při nízkém počtu erytrocytů.</text>
+</string>
+
+	<string id="st_a5_med_1_use_1">
+    <text>Diagnostika</text>
+</string>
+<string id="st_a5_med_1_use_2">
+    <text>Léčba</text>
+</string>
+<string id="st_b5_med_close">
+    <text>Zavřít</text>
+</string>
+
+<string id="ui_gui_med_diag_op1_1">
+    <text>Carotis:</text>
+</string>
+<string id="ui_gui_med_diag_op1_2">
+    <text>Radiální:</text>
+</string>
+<string id="ui_gui_med_diag_op1_3">
+    <text>Špička:</text>
+</string>
+<string id="ui_gui_med_diag_op2_1">
+    <text>Tělesná teplota:</text>
+</string>
+<string id="ui_gui_med_diag_op2_2">
+    <text>Krevní tlak:</text>
+</string>
+<string id="ui_gui_med_diag_op3_1">
+    <text>Bílé krvinky (WBC):</text>
+</string>
+<string id="ui_gui_med_diag_op3_2">
+    <text>Erytrocyty (RBC):</text>
+</string>
+<string id="ui_gui_med_diag_op3_3">
+    <text>Trombocyty (PLT):</text>
+</string>
+<string id="ui_gui_med_diag_op4_1">
+    <text>Všeobecný stav:</text>
+</string>
+<string id="ui_gui_med_diag_op4_2">
+    <text>Zlomenina končetiny:</text>
+</string>
+<string id="ui_gui_med_diag_op4_3">
+    <text>Popáleniny kůže:</text>
+</string>
+<string id="st_ui_med_about_use_item_1">
+    <text>Popis prvního kroku. Analýza stavu zraněného. Po kliknutí na tlačítko se otevře okno, ve kterém uvidíte kompletní analýzu stavu zraněného podle určitých parametrů. Tyto parametry je třeba zaznamenat, abyste mohli vybrat správné léky pro další léčbu. Výběr přípravků probíhá identifikací shody konkrétních přípravků s jednotlivými případy. Okno lze zavřít poté, co byly parametry hodnocení uloženy.</text>
+</string>
+<string id="st_ui_med_about_use_item_2">
+    <text>Popis druhého kroku. Základní informace. Kliknutím na tlačítko se zobrazí okno stejného názvu, které vám ukáže referenční údaje k 12 přípravkům používaným v zařízení. Hráč bude muset tuto informaci přečíst, aby vybral správný preparát k použití ve třetím modulu. Je důležité věnovat pozornost informacím pro konkrétní případy. Například Cifran se doporučuje při vysokém počtu krevních destiček. Proto by se měl používat, když první modul ukáže odpovídající čísla.</text>
+</string>
+<string id="st_ui_med_about_use_item_3">
+    <text>Popis třetího kroku. Modul léčby. Kliknutím na tlačítko se otevře okno, kde budete muset zadat konkrétní kombinaci přípravků pro stav zraněného. Přípravky jsou zadávány podle dat analýzy a jejich porovnání s referenčními daty.</text>
+</string>
+<string id="st_menu_vzl_1_close">
+    <text>Dokončit</text>
+</string>
+<string id="ui_gui_vzlom_zamka_caption">
+    <text>"Elektronický Hacking Scanner".</text>
+</string>
+<string id="ui_gui_vzl_1_caption">
+    <text>"Skenování a konverze frekvencí"</text>
+</string>
+<string id="ui_gui_vzl_2_caption">
+    <text>"Dekódování rádiových pulzů"</text>
+</string>
+<string id="ui_gui_vzl_3_caption">
+    <text>"Generování zdrojového kódu"</text>
+</string>
+<string id="ui_mm_vzl_use_1">
+    <text>Rozpoznání</text>
+</string>
+<string id="ui_mm_vzl_use_2">
+    <text>Dekódování</text>
+</string>
+<string id="ui_mm_vzl_use_3">
+    <text>Generování</text>
+</string>
+
+	<string id="st_ui_zam_about_use_item_1">
+    <text>Popis prvního kroku. Rozpoznání signálu. Po stisknutí tlačítka se otevře okno stejného názvu. Proces rozpoznání musí skenovat frekvenci signálu, provést ho přes pásmový filtr a určit nosnou frekvenci vysokofrekvenčního pulzu. Tato hodnota je odeslána nízkofrekvenčnímu převodníku pro přípravu k interpretaci.</text>
+</string>
+<string id="st_ui_zam_about_use_item_2">
+    <text>Popis druhého kroku. Dekódování. Kliknutím na tlačítko se dostanete do okna se stejným názvem, ve kterém musíte provést určitou posloupnost operací. Při dekódování je třeba předat přijatý nízkofrekvenční signál skrz soubor dekodérů. Dekódované hodnoty jsou přenášeny v binárním kódu, po čemž jsou přeneseny do generátoru desítkového kódu.</text>
+</string>
+<string id="st_ui_zam_about_use_item_3">
+    <text>Popis třetího kroku. Generátor konečného binárního kódu. Po kliknutí na tlačítko se před vámi otevře okno se stejným názvem, které zobrazí vygenerovaný kód a jeho vstup pro prolomení. Okno můžete jednoduše zavřít, když dokončíte svou práci.</text>
+</string>
+<string id="ui_mm_vzl_use_1_text">
+    <text>HS přeneseno přes PF...žádoucí F nalezeno...převedeno na NS</text>
+</string>
+<string id="ui_mm_vzl_use_2_text">
+    <text>Primární a sekundární dekódování dokončeno</text>
+</string>
+<string id="ui_mm_vzl_use_3_text">
+    <text>Elektronické generování kódu dokončeno...zámek je prolomen.</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_1">
+    <text>Filtrace RF signálu:</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_2">
+    <text>Převedeno na LF signál:</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_3">
+    <text>Dekódování LF signálu:</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_4">
+    <text>Sekundární převod:</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_5">
+    <text>Generování posloupnosti kódu:</text>
+</string>
+<string id="ui_gui_vzlom_zamka_item_6">
+    <text>Zadejte výsledný kód:</text>
+</string>
+<string id="st_vzlom_zamka_1_use_1">
+    <text>Přeskočit</text>
+</string>
+<string id="st_vzlom_zamka_3_use_1">
+    <text>Odeslat</text>
+</string>
+<string id="st_vzlom_zamka_1_use_3">
+    <text>Generovat</text>
+</string>
+<string id="st_vzlom_zamka_1_use_2">
+    <text>Prolomit</text>
+</string>
+<string id="st_vzlom_zamka_1_close">
+    <text>Zavřít</text>
+</string>
+<string id="ui_gui_notepad_caption_1">
+    <text>Poznámka od Seriye</text>
+</string>
+
+	<string id="st_notepad_type_one_1_text">
+    <text>"...Pán mě poslal na zkoušku... Po tolika letech jsem byl výběrčím daní, zlodějem, vrahem... Jsem v prokleté Zóně, a proč? Abych zase pro zisk zbavil druhé životů... Je to peklo. Peklo na zemi, v životě... Trpět, zasloužit si vykoupení v krvi. Minulé hříchy nelze zapomenout, nelze je vrátit zpět, ale budoucnost je tady, mezi dalšími jako já... Vyšší vůle ví, co pro mě zítra přinese, ale vše je v mých rukou a spása není dána pouhými slovy či myšlenkami. Musím prokázat svými skutky a příkladem, že jsem hodný..."</text>
+</string>
+<string id="ui_gui_notepad_caption_2">
+    <text>Osobní záznam</text>
+</string>
+<string id="st_notepad_type_one_2_text">
+    <text>"Máš tři dny na splacení té dluhu, ty parchante, slyšíš mě? "Tři dny, svině. "A pokud nepřineseš peníze, vezmeme tvůj palec nejdřív v kruhu, pak v nějakém slonovi a potom na tyči. Bude poskakovat jako koza, rozumíš mi? To bude 50 dolarů odešťucha, nebo se to rovná světluškám. Šipka je v přístavní čtvrti, šest hodin. Pokud zůstanou nějací leváci, rozsekáme je všechny." </text>
+</string>
+<string id="ui_gui_notepad_caption_3">
+    <text>Poznámka od Cosmose.</text>
+</string>
+<string id="st_notepad_type_one_3_text">
+    <text>"Každopádně, tady je dohoda. Sedím tu s klukama, piju, vyprávím vtipy o holkách a tak... A pak přiběhne Valerič - to je náš mladý, dali jsme ho na strážní věž, aby držel hlídku, jinak se může stát cokoliv. Takže přiběhne, oči na padesát a křičí, že se směrem od továrny blíží oddíl vojáků... Svatá pravda!!! Jak? Odkud se vzali? No, na tom teď nezáleží. Hlavní teď je rychle odsud vypadnout. Nekecám... Zatímco jsme měli přebalit lupičku, oni už tam byli a nějak to všechno tak chytře proběhlo. Zatímco jsme otevírali pusu, už nás obkličovali ze všech stran. To je to, myslím, že už máš dost stalker Cosmos. Teď tě roztrhnou a nebudou se ptát na tvé příjmení. Já samozřejmě křičím, házím do vzduchu, ale bez velké naděje, že někdo odpoví, a připravuji se prodat svoji kůži draho. Vityan a Valery taky berou na vědomí, ale neukazují to. Zkrátka jsme se postavili na obranu a čekáme...".</text>
+</string>
+<string id="ui_gui_notepad_caption_4">
+    <text>Poznámka od Caemana.</text>
+</string>
+<string id="st_notepad_type_one_4_text">
+    <text>"Lis, mají to tam s tou uměleckou károu. Poslal jsem tam kluky dřív, abychom neztráceli čas, a nařídil jim, aby tě tam počkali. Kdyby se stalo cokoliv, zakryjí tě na obchodě. Nejsou moc zkušení, takže se o ně nemusíš starat. Nemají žádné informace o cíli a není třeba jim říkat podrobnosti. Je také důvod, proč ne, víš. Pokud by začali chlubit se tím, s kým a kam šli na obchod, dozvědí se to Dlužníci, a já nemám v úmyslu s nimi sdílet informace. Navíc už sami neví, co se tam děje. Zkrátka, jak vždycky, méně lidí ví, lépe obchod." </text>
+</string>
+<string id="ui_gui_notepad_caption_5">
+    <text>Poznámka od Naily.</text>
+</string>
+<string id="st_notepad_type_one_5_text">
+    <text>"Drželi je v kleci v suterénu. Na začátku jich bylo čtyři, teď jich zůstali dva. Baro a jeho lidi je mučí každý den. Dva z nich to nemohli vydržet a zemřeli. Sám jsem tam nebyl, ale jeden náš starý stojí venku u klece. Říkal mi, jak Baro a jeho lidi krájeli nahoru nohama. Jenom křičeli a plivali, ale k němu nic neřekli. Bylo to hrozné, říkal. Měli střeva ovázané kolem lopaty... Viděl jsem hodně věcí, ale nikdy jsem neviděl takový horor... Mucha, můj pomocník, jim vozil jídlo a pití, a ten chudák se vrátil z práce bledý. Fašisti, říká, pravděpodobně to neudělali... Dutyo neváhal, takže je vzal a Muha od nich. Už není cesty zpět, ale do prdele s tím - lépe na vlastní pěst než po témže místě šlápnout s těmi bestiemi... Mucha jednou mluvil o Východu, prý potřebují lidi a umí si stát za sebou. Zkusíme to tam, uvidíme, jestli to funguje.</text>
+</string>
+
+	<string id="ui_gui_notepad_caption_6">
+    <text>Razumovova poznámka</text>
+</string>
+<string id="st_notepad_type_one_6_text">
+    <text>15. srpna 2014. 10:21 ... jediný přeživší. Kdyby nebylo té žebříku... Ty zatracené žoldáci buď zemřeli dolů, nebo utekli. Není způsob, jak to zjistit - ty věci na mě čekají. Slyším je dýchat, cítím je. Nebo je to vůně Olegova těla?\
+    16:36 Komunikační zařízení selhává, není možné spojit se s centrem. Vypadá to, že venku je výbuch. Zacpal jsem spodní potrubí tím, co bylo po ruce. Není slyšet žádné zvuky - možná už odešli...?\n. 
+    16. srpna 2014. 06:40 ... Zkusil jsem otevřít zámek na mříži. Téměř žádná voda, suché potraviny měl Oleg... Nemohu se donutit jít dolů - někdo zase škrábe a vrčí odtamtud dole. Musím jít dolů... Tak žízním.\n
+    12:28 Moje noha skutečně bolí! Podařilo se mi zastavit krvácení, vstříknul jsem trochu anabolik, zbývá ještě dvě dávky. Podařilo se mi dostat dolů, našel jsem Olegovo tělo. Všude na něm byly stopy po kousání. Vzal jsem zbytek vody a suchých potravin, téměř všechno bylo roztrhané a krvavé. Museli mě slyšet, jenom tak tak jsem stačil vyskočit po schodech, něco mi zůstalo uvězněno v levé noze. K čertu, k čertu, k čertu!!! Teď to tak strašně bolí...\n
+    17. srpna 2014. 19:42 Před očima se mi to všechno hejbe... moje noha je oteklá, už nebolí... smrad... sučky kvílí, prosí o pohlazení... Olegu, nechtěl jsem... nechtěl jsem! stačil by jeden... stačil by... stačil by..."
+    </text>
+</string>
+<string id="ui_gui_notepad_caption_7">
+    <text>Kerasova poznámka</text>
+</string>
+<string id="st_notepad_type_one_7_text">
+    <text>"Proč jsme sem všichni šli? Co nás hnalo? Zisk, artefakty, peníze? Co to bylo? Proč to všechno došlo až sem? Proč jsme se všichni stali jejími věčnými rukojmími? Neodejde? Divné... Proč jsem si to nikdy nevšiml dříve? Pokaždé, když jsem šel na loupež, jsem se snažil na to nemyslet. Tvář mé milované dcery mě udržuje naživu... Její veselé, plné života a čisté oči... Její úsměv... A nic víc... Zóna mě zničila zevnitř a já jsem jejím otrokem... téměř ztrácím klíč ke Svobodě... téměř..."</text>
+</string>
+<string id="ui_gui_notepad_caption_8">
+    <text>Kurdova poznámka</text>
+</string>
+<string id="st_notepad_type_one_8_text">
+    <text>"...Eh, teď bych si přál mít koupel a ty holky, co chodily s Tochou na výdělky... Eh, to byly časy... Kam všechny zmizely? Tokha se nikdy neoženil s tou jeho Marinkou. Prisáhl, že se nikdy neožení. Ale... zrovna jsem mu připomněl ten zelený vlčí čepron. To stačilo, vzteky se vrhnul zpátky k jednotce... A veškerá jeho láska zmizela... I když kdo ví... Měl by se vrátit z výpravy. Možná stále má telefonní číslo té rudovlasé holky... O čem to mluvím? Sníš... Polévka v hrnci je téměř studená... Brown, bestie, chrápe poblíž... Stále sedím a čekám, až se Tohova čtveřice vrátí z mise... Kdyby jen chlapi přišli zpátky naživu..."</text>
+</string>
+	<string id="ui_gui_notepad_caption_9">
+    <text>Kulemova poznámka</text>
+</string>
+<string id="st_notepad_type_one_9_text">
+    <text>"Fuj, zase jsem nabral dech. Moje noha stále bolí. Zatracený švanda vyskočil příliš náhle. Aspoň že není zlomená. Musel jsem použít poslední náboje v pušce, abych ho uklidnil. Ale to je vše - problém v malém, jak kdosi řekl. Kdo přesně, už si nepamatuji. Tyto vzpomínky nejsou mé - jsou to vzpomínky někoho jiného. Osoby, kterou jsem kdysi býval.\nKam zmizel Lyokha, to mě teď trápí. A kde je východ z této kobky? Když se sem hrnuli ti zombíci, musel jsem ven, a rychle. Ztratil jsem ho jen na pár vteřin, a když jsem se otočil, neviděl jsem ho. Možná šel dolů vedlejším tunelem. No, nemůže být mrtvý. Nebyl to ten druh muže, který se snadno vzdává. Nedávají mu jméno Démon jen tak pro nic za nic."</text>
+</string>
+<string id="ui_gui_document_caption_1">
+    <text>Záznam dokumentu</text>
+</string>
+<string id="ui_gui_document_caption_2">
+    <text>"Záznam v dokumentu...</text>
+</string>
+<string id="ui_gui_document_caption_3">
+    <text>Záznam dokumentu</text>
+</string>
+<string id="st_notepad_type_second_3_text">
+    <text>"...Okolo půlnoci jsme - skupina vědců zajatých nebo naverbovaných v různých dobách a na různých místech světa - byli přivedeni na určitou základnu. Byla to dlouhá cesta. Všichni jsou zacházeni stejně. Jak ti, kteří pracují pro peníze, tak ti, kteří jsou zastrašováni, kteří mají zdejší rodiny jako rukojmí.\
+Bojím se. Ten nátěr civilizovanosti se ukázal jako příliš tenký. Nejprve nás každého zvlášť přivedli do zvířecího stavu neustálými hrozbami, veřejným mučením a zneužíváním. Někteří nemohli snést fyzickou bolest. Jiní, kteří byli dost stateční mluvit o svém významu ve vědeckém světě a o speciálních službách, které je určitě osvobodí, praskli a ztratili naději...".</text>
+</string>
+	<string id="ui_gui_document_caption_4">
+    <text>Záznam v dokumentu zní</text>
+</string>
+<string id="st_notepad_type_second_4_text">
+    <text>"...V Střední Africe na dočasném shromaždišti, kde jsme se poprvé setkali, mnozí povzbudili. Po dlouhém období izolace se všichni cítili mnohem lépe: my, zlomení sami sebou, jsme snili, že společně budeme schopni přemýšlet o způsobu útěku, nebo alespoň oznámit bídu, ve které jsme se ocitli.\
+Tábor je střežen žoldáky. Jsou zcela nesociální, ale podléhají brutální disciplíně. Za jakékoliv porušení pravidel následuje smrt..."
+</text>
+</string>
+<string id="ui_gui_document_caption_5">
+    <text>Záznam dokumentu</text>
+</string>
+<string id="st_notepad_type_second_5_text">
+    <text>"...Dívám se na ně a přemýšlím: naše vlády by mohly mít jinou politiku. Místo aby vedly svět ke zkáze a chaosu, místo aby utrácely miliardy za politické intriky a zjevná dobrodružství, měly by se starat o všeobecné blaho a vzdělání lidí obývajících Zemi.\nPo tom, co mi bylo uděláno, se mi tyto myšlenky nezdají naivní. Nesmyslné zneužívání, kterému jsem byl vystaven, nezničilo pouze mou vůli, ale smazalo mnoho iluzí. Jsme odsouzeni. Svět je odsouzen. Nevím, jaké cíle mají ne-lidé, kteří nás ovládli, ale cítí, že jsou absolutními pány situace. S využitím technických úspěchů civilizace si nedělají starosti o žádné zákony civilizovaného světa..."</text>
+</string>
+<string id="ui_gui_document_caption_6">
+    <text>Záznam v dokumentu</text>
+</string>
+<string id="st_notepad_type_second_6_text">
+    <text>"...Bojím se. Bestiální síla násilně proráží tenké zdi vědomí, ničí iluze a vytváří stálý pocit beznaděje. Ptám se sama sebe: proč a jak bylo toto možné?\
+Odpověď je jednoduchá a vynořuje se na povrch: půl století dvojího metru a otevřeného podvádění vytvořilo iluzi beztrestnosti pro mnoho skupin, které operují pod křídly několika vlád. Sami jsme vypěstovali nový kmen moru. Morální mor. To je zvláště zřejmé odsud, na dně propasti, do které jsme spadli. 
+...»</text>
+</string>
+	<string id="st_notepad_type_second_1_text">
+    <text>Přístupový kód bude označen následovně:\na binární šifrovací metoda musí být naučena a použita. Pouze někteří členové skupiny znají samotnou šifru a klíč k ní.</text>
+</string>
+<string id="st_notepad_type_second_2_text">
+    <text>Klíč k šifrování je:\nŠifrování pomocí binárního kódu:\
+Každé písmeno ruské abecedy je zakódováno binárním kódem, například písmeno A=00000, B=00001, C=00010, D=00011..., I=11111.\nPříklad: Slovo SHIFT. V binárním kódu to vypadá takto:\n11000 01000 10100 10000  \n
+Nyní to posuňte DOLEVA o 1 krok a dostaneme kód:\n10000 10001 01001 00001 \n
+Nyní ho převeďte zpět na písmena, abyste získali text:\n\nPro obrácené dekódování musíte provést POSUN DOPRAVA, abyste získali binární kód původní kombinace.\n</text>
+</string>
+<string id="st_notepad_type_one_1_text">
+    <text>%c[0,1,0,0]-%c[default]Prokletá Zóna. Zde už nic není. Pouze smrt. Nesnesitelná, strašlivá, nelidská. 
+Smrt proniká a obklopuje každou částici, každý kámen, každý list z padlého stromu. 
+Smrt způsobuje bolest. Bolest nepřináší úlevu, nedovolí vám zapomenout na tento hrůzu, ale jen vás spálí. Spálí vás znovu a znovu, zatímco si toho stále uvědomujete. 
+Co se děje, zdá se mimo naši schopnost porozumění. Jsme zaslepeni, ztraceni mezi okraji reality. K čertu, nenávidím tohle všechno. Ale už nemám cestu ven. 
+Musím vstát, zkontrolovat stroj a pokračovat, dokud mohu. Dokud ještě dokážu chodit... 
+Tihle chlapi z Duty - zničila je tak snadno, nechala za sebou pouze bolest. 
+Proč tak? Kdo byli ti muži v černých uniformách nesoucí smrt... Nevím. A nechci to vědět. Jen abych se dostal do svého bunkru... Naživu...\n</text>
+</string>
+<string id="st_notepad_type_yad_text">
+    <text>%c[0,1,0,0]-%c[default]Pro syntézu jedu je třeba provést chemickou reakci s použitím tří klíčových složek. Před zahájením syntézy je třeba spočítat koncentrace vstupních výchozích složek.
+Jedna ze dvou reakcí procesu, která je vybrána k provedení za účinku katalyzátoru, má následující poměry vstupu a výstupu.
+X*(OCH3)3+Y*(CN)2+Z*(CH3)2=2*(OCH3)(CN)5+6*(CH3)+2*(OCH3)2
+X*(OCH3)2+Y*(CN)2+Z*(CH3)2=2*(OCH3)(CN)3(CH3)+8*(CH3)+2*(OCH3)
+Koncentrace jednotlivé jednotky látky na vstupu je 10.
+Spočítejte koeficienty v rovnici a vynásobte je číslem 10, abyste zjistili vstupní koncentrace složek.  
+Možné hodnoty X,Y,Z vynásobené 10.\n30 50 20\n 
+30 20 50\n 
+20 50 30\n 
+20 30 50\n 
+50 30 20\n 
+50 20 30\n </text>
+</string>
+	<string id="st_menu_stop">
+    <text>Zastavit</text>
+</string>
+<string id="ui_mm_rac_s_text">
+    <text>Vybrat kanál:</text>
+</string>
+<string id="ui_mm_rac_use_1">
+    <text>Kanál 1.</text>
+</string>
+<string id="ui_mm_rac_use_2">
+    <text>Kanál 2.</text>
+</string>
+<string id="ui_mm_rac_use_3">
+    <text>Kanál 3.</text>
+</string>
+<string id="ui_mm_rac_use_4">
+    <text>Kanál 4.</text>
+</string>
+<string id="ui_mm_rac_use_5">
+    <text>Kanál 5.</text>
+</string>
+<string id="ui_mm_rac_1_text">
+    <text>Rozsah rádiových frekvencí, počet a typ kanálů:</text>
+</string>
+<string id="ui_mm_rac_s1_text">
+    <text>Kanál 1; frekvence 48.975 MHz; uzavřená mírová síla.</text>
+</string>
+<string id="ui_mm_rac_s2_text">
+    <text>Kanál 2; frekvence 49.025 MHz; uzavřená skupina "Povinnost".</text>
+</string>
+<string id="ui_mm_rac_s3_text">
+    <text>Kanál 3; frekvence 51.250 MHz; uzavřená skupina "Svoboda".</text>
+</string>
+<string id="ui_mm_rac_s4_text">
+    <text>Kanál 4; frekvence 51.925 MHz; uzavřená frakce "Žoldáci".</text>
+</string>
+<string id="ui_mm_rac_s5_text">
+    <text>Kanál 5; frekvence 53.250 MHz; uzavřená frakce Monolit.</text>
+</string>
+<string id="ui_mm_rac_sq1_text">
+    <text>Kanál 1; frekvence 58.375 MHz.</text>
+</string>
+<string id="ui_mm_rac_sq2_text">
+    <text>Kanál 2; frekvence 45.125 MHz.</text>
+</string>
+<string id="ui_mm_rac_sq3_text">
+    <text>Kanál 3; frekvence 50.175 MHz.</text>
+</string>
+<string id="ui_mm_rac_sq4_text">
+    <text>4. kanál; frekvence 53.450 MHz.</text>
+</string>
+<string id="ui_mm_rac_sq5_text">
+    <text>5. kanál; frekvence 49.250 MHz.</text>
+</string>
+<string id="st_ui_rac_about_use_item_1">
+    <text>Popis první akce. Kliknutím na tlačítko nastavíte svůj rádiový přijímač pro příjem signálu z frekvence prvního uzavřeného kanálu. Pro zastavení příjmu musíte stisknout tlačítko "Zastavit". Během provozu není možné přepnout na jiný kanál.</text>
+</string>
+<string id="st_ui_rac_about_use_item_2">
+    <text>Popis druhé akce. Kliknutím na tlačítko naladíte rádiovou stanici pro příjem signálu z frekvence prvního uzavřeného kanálu skupiny "Povinnost". Pro zastavení příjmu musíte stisknout tlačítko "Zastavit". Během provozu není možné přepnout na jiný kanál.</text>
+</string>
+<string id="st_ui_rac_about_use_item_3">
+    <text>Popis třetí akce. Kliknutím na tlačítko naladíte rádiovou stanici pro příjem signálu z frekvence prvního uzavřeného kanálu skupiny "Svoboda". Pro zastavení příjmu musíte stisknout tlačítko "Zastavit". Během provozu není možné přepnout na jiný kanál.</text>
+</string>
+<string id="st_ui_rac_about_use_item_4">
+    <text>Popis čtvrté akce. Kliknutím na tlačítko naladíte rádiovou stanici pro příjem signálu z frekvence prvního uzavřeného kanálu frakce "Žoldáci". Pro zastavení příjmu musíte stisknout tlačítko "Zastavit". Během provozu není možné přepnout na jiný kanál.</text>
+</string>
+<string id="st_ui_rac_about_use_item_5">
+    <text>Popis páté akce. Kliknutím na tlačítko naladíte rádiovou stanici pro příjem signálu z frekvence prvního uzavřeného kanálu frakce "Monolit". Pro zastavení příjmu musíte stisknout tlačítko "Zastavit". Během provozu není možné přepnout na jiný kanál.</text>
+</string>
+<string id="ui_gui_dairy_2_caption">
+    <text>Poznámky Haradrima</text>
+</string>
+<string id="ui_mm_dairy_s_text">
+    <text>Obsah diáře:</text>
+</string>
+<string id="ui_mm_dairy_helper_text_1">
+    <text>Cesta</text>
+</string>
+<string id="ui_mm_dairy_helper_text_2">
+    <text>Vzestup</text>
+</string>
+<string id="ui_mm_dairy_helper_text_3">
+    <text>Mula</text>
+</string>
+<string id="ui_mm_dairy_helper_text_4">
+    <text>Ibrahim</text>
+</string>
+<string id="ui_mm_dairy_helper_text_5">
+    <text>Pán</text>
+</string>
+	<string id="st_mm_dairy_helper_descr_1">
+    <text>Jednoho dne, když Muhammad spal poblíž Al-Kaaby, byl probuzen Jibrilem. Anděl přivedl s sebou mimořádné zvíře jménem Burak a řekl mu, že přepravovalo všechny proroky a nyní bude přepravovat Muhammada. Muhammad nasedl na Buraka, který ho vznesl vzduchem do Jeruzaléma. Tam se setkal s Ibrahimem (Abrahámem), Musou (Mojžíšem), Isou (Ježíšem) a dalšími proroky. 
+Všichni společně modlili a Muhammad vedl modlitbu. Poté mu byla nabídnuta nápoj ze tří nádob: voda, víno a mléko. Muhammad si vybral nádobu s mlékem, což znamenalo, že jeho shromáždění je na správné cestě. Víno bylo naopak od té doby muslimům zakázáno.
+Pak se k němu sestoupilo schodiště, po kterém vystoupil on a Jibril do sedmi nebes. Ve spodním nebi viděl Adama, který rozhodoval o osudu duší mrtvých. Andělé Muhammadovi ukázali peklo, a on cítil horko ohně a viděl hrozné utrpení hříšníků. Jak stoupal z nebe, setkal se s proroky: na druhém nebi s Isou; na třetím s Júsufem; na čtvrtém s Idřísem; na pátém s Harunem; na šestém s Musou; na sedmém s Ibrahimem.... 
+	</text>
+</string>
+<string id="st_mm_dairy_helper_descr_2">
+    <text>...Poté Muhammad navštívil Ráj, kde viděl blaženost věřících. Pak Allah promluvil k němu a zavázal muslimy k modlitbě 50krát denně. Když Muhammad sestoupil zpět, Musa ho přesvědčil, aby se vrátil k Alláhovi a požádal Ho, aby snížil počet modliteb. To se opakovalo několikrát, dokud se počet modliteb pro muslimy nesnížil na pět denně.
+Když Muhammad vyprávěl o své cestě, nebyl věřen. Lidé říkali: "Karavana tam jede celý měsíc, jak můžeš tam za jednu noc letět?" Dokonce i Abu Bakr, jeho věrný přítel, měl pochybnosti. 
+Pak Muhammad popsal Jeruzalém, který viděl z výše, kam nikdy předtím nebyl. Tyto popisy odpovídaly vzpomínkám Abu Bakra na město, a Muhammadovy slova byla potvrzena jako pravdivá. Muhammad také vyprávěl o karavaně, kterou viděl shora. 
+Karavana dorazila do Mekky nějakou dobu poté a jeho příběh byl potvrzen.
+	</text>
+</string>
+   <string id="st_mm_dairy_helper_descr_3">
+    <text>Jednoho dne přišel mullá do síně, aby promluvil k věřícím. Síň byla prázdná, kromě mladého koníka, který seděl v první řadě. Mullá si pomyslel: "Mám mluvit, nebo ne?" Tak se odvážil zeptat toho koníka:
+- Tady není nikdo kromě tebe, myslíš, že bych měl mluvit, nebo ne? Koník odpověděl:
+- Pane, jsem prostý člověk, o ničem to nevím. Ale když přijdu do stáje a uvidím, že všechny koně se rozeběhli a zůstal tu jen jeden, stejně mu něco dám k jídlu.
+Mullá si tato slova vzal k srdci a začal svůj kázání. Mluvil více než dvě hodiny a když skončil, byl uklidněn. Chtěl slyšet potvrzení, jak dobrý byl jeho projev. Zeptal se:
+- Jak se ti líbila má řeč? - Já už jsem řekl, že jsem prostý člověk a všechno to moc nerozumím. Ale když přijdu do stáje a uvidím, že všechny koně se rozeběhli a zůstal tu jen jeden, tak mu i tak něco dám k jídlu. Ale nedám mu všechno krmivo, které je určené pro všechny koně.
+	</text>
+</string>
+<string id="st_mm_dairy_helper_descr_4">
+    <text>Ibrahim se zklamal z modlů a hledal jiné bohy: "A když se nad ním setmělo, spatřil hvězdu a řekl: 'To je můj Pán!' A když záře ustoupila, řekl: 'Nemám rád ty, co zapadají.'
+Když spatřil východ měsíce, řekl: 'To je můj Pán!' A když záře zmizela, řekl: 'Líto mi toho, co zbloudili.'
+A když spatřil východ slunce, řekl: 'To je můj Pán, tento je větší!' 
+A když zapadlo, řekl: 'Ó můj lid, nemám podíl na tom, co Mu připisujete jako společníka. 
+Nyní jsem obrátil svou tvář k tomu, kdo stvořil nebesa a zemi, a klaním se Mu čistě, a nejsem mezi modloslužebníky.'" (Korán, 6:76-79)
+</text>
+</string>
+  <string id="st_mm_dairy_helper_descr_5">
+    <text>Východní vládce chtěl znát celou historii lidstva. Moudrý muž přinesl pět set svazků. Král však byl zaneprázdněn státními záležitostmi a poslal ho pryč s tím, že to má zkrátit.
+Po dvaceti letech se moudrý muž vrátil: historie lidstva nyní obsahovala pouze padesát svazků, ale král už byl příliš starý na to, aby zvládl číst tolik tlustých knih, a znovu ho poslal pryč.
+Dalších dvacet let uplynulo, a stařec se šedivými vlasy přinesl králi jediný svazek obsahující veškerou moudrost světa, kterou chtěl znát. Král však ležel na smrtelném loži a neměl čas ani na jednu knihu číst.
+Tehdy mu moudrý muž vysvětlil historii lidstva jedinou větou, a zněla takto: "Člověk se narodí, trpí a umírá."
+    </text>
+</string>
+</string_table>

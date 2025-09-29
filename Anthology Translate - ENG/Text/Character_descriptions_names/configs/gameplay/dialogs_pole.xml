@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<dialog id="friendly_fatty_companion_dialog">
+	<has_info>rookie_pole_task_2_dlg_make_friend</has_info>	
+	<precondition>dialogs_axr_companion.is_not_actor_companion</precondition>
+	<precondition>dialogs_axr_companion.is_not_hostage_task_giver</precondition>
+    <phrase_list>
+        <phrase id="0">
+            <text>axr_phrase_friend_companion_ask_join</text>
+            <next>1</next>
+        </phrase>
+        <phrase id="1">
+            <text>axr_phrase_friend_companion_answer_join</text>
+		<action>dialogs_axr_companion.become_actor_companion</action>
+        </phrase>
+    </phrase_list>
+</dialog>
+
+<dialog id="talk_to_saving_rookie_dlg">
+<has_info>you_save_rookie_hero</has_info>
+<dont_has_info>talk_to_saving_rookie</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Hey man. Thanks a lot, otherwise I think the bloodsucker would’ve eaten me — that door’s pretty flimsy.</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>How did you even end up here?</text>
+        <next>2</next>    
+    </phrase>
+    <phrase id="2">
+        <text>As clich? as it sounds, I was looking for something to scavenge around here.</text>
+        <next>3</next>    
+    </phrase>
+    <phrase id="3">
+        <text>And? Did you find anything?</text>
+        <next>4</next>    
+    </phrase>
+    <phrase id="4">
+        <text>You bet! Go up to the attic, someone stashed some loot there. I'm unlocking it for you as a thank you. Listen, if you’re not too busy, come talk to me later — I’ve got a little proposal.</text>
+        <give_info>talk_to_saving_rookie</give_info>
+        <disable_info>you_save_rookie_hero</disable_info>
+    </phrase>    
+</phrase_list>
+</dialog>
+
+
+<dialog id="rookie_pole_task_2_questions">
+<has_info>rookie_pole_task_2_dlg</has_info>
+<dont_has_info>boss_controller_pole_dead</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Any ideas?</text>
+        <next>1</next>    
+        <next>2</next>    
+        <next>3</next>    
+        <next>4</next>            
+    </phrase>
+    <phrase id="1">
+        <has_info>rookie_pole_task_2_near_entrance</has_info>    
+        <dont_has_info>rookie_pole_task_2_questions_1</dont_has_info>    
+        <text>Let's check that checkpoint, maybe there's something left there. I doubt anyone has looked inside.</text>    
+        <give_info>rookie_pole_task_2_questions_1</give_info>    
+    </phrase>    
+    <phrase id="2">
+        <has_info>rookie_pole_task_2_near_main_build</has_info>    
+        <dont_has_info>rookie_pole_task_2_questions_2</dont_has_info>
+        <text>I think we should check out that three-story administrative building in the center of the complex, and the workshops too, of course.</text>            
+        <give_info>rookie_pole_task_2_questions_2</give_info>            
+    </phrase>        
+    <phrase id="3">
+        <has_info>rookie_pole_task_2_near_dead_camp</has_info>    
+        <dont_has_info>rookie_pole_task_2_questions_4</dont_has_info>
+        <text>Crazy, huh? Let's look around here. Maybe the stalkers left something behind. But I don’t want to stay here too long — I’ve got a bad feeling.</text>
+        <give_info>rookie_pole_task_2_questions_4</give_info>            
+    </phrase>    
+    <phrase id="4">
+        <text>No idea, honestly.</text>                    
+    </phrase>    
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg">
+<has_info>talk_to_saving_rookie</has_info>
+<dont_has_info>rookie_pole_task_1_dlg</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>What did you want to propose?</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>This is all part of the factory. You know, it’s not exactly "fresh," but nobody really came here because there aren’t many artifacts, and it’s a dangerous place for the Zone’s outskirts. But recently, rumors started circulating that some kind of weapon is stored here — something the government developed after the first explosion. You’ve probably heard the stories about Marked One and Strelok looting every underground complex? Well, rookies now hope they can get something valuable here without venturing too far into the center. So, they came. Me too. And right after us came bandits — where there are stalkers, there’s loot to be taken.</text>
+        <next>2</next>    
+    </phrase>
+    <phrase id="2">
+        <text>You want to team up and look for valuable intel around here?</text>
+        <next>3</next>    
+    </phrase>
+    <phrase id="3">
+        <text>Exactly. But first, please help me out — it’s not smart to walk around unarmed. I had a good shotgun that I saved up for before coming here. I went into the local substation nearby, but there was a weird anomaly there. I wasn’t careful and it went off! Luckily it didn’t hit me, but I got so scared I bolted and left the gun behind. Laugh if you want, but when you barely escape death… Anyway, can you bring it back to me? Also, if you're up for it, I’ve got one more favor to ask.</text>
+        <next>4</next>    
+        <next>5</next>            
+    </phrase>
+    <phrase id="4">
+        <text>Alright, I’ll go get your shotgun.</text>
+        <action>dialogs_mlr.give_rookie_pole_task_1</action>            
+        <give_info>rookie_pole_task_1_dlg</give_info>
+    </phrase>    
+    <phrase id="5">
+        <text>Not now.</text>
+    </phrase>        
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg_1">
+<precondition>dialogs_mlr.has_wpn_saiga_rookie_pole</precondition>
+<has_info>rookie_pole_task_1_dlg</has_info>
+<dont_has_info>rookie_pole_task_1_dlg_1</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Here, take your gun. You sure got yourself into trouble.</text>
+        <action>dialogs_mlr.take_wpn_saiga_rookie_pole</action>            
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Thanks. Here, take this "Flash" artifact as a token of my gratitude. I managed to grab it from that anomaly. Get yourself ready, and come by one of these nights — we’ll head to the factory.</text>
+        <give_info>rookie_pole_task_1_dlg_1</give_info>        
+        <give_info>rookie_pole_task_1_dlg_no_sleep</give_info>            
+    </phrase>    
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_2_dlg">
+<precondition>xr_conditions.is_night</precondition>
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>take_barman_doc_from_factory_pole</dont_has_info>
+<dont_has_info>rookie_pole_task_2_dlg</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Alright, I'm ready.</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Great, I can’t wait to uncover all the secrets of this place. But stay alert — let’s hope we get through without any trouble.</text>
+        <action>dialogs_mlr.give_rookie_pole_task_2</action>
+        <action>dialogs_axr_companion.become_actor_companion</action>            
+        <give_info>rookie_pole_task_2_dlg</give_info>
+        <give_info>rookie_pole_task_2_dlg_close_task_3</give_info>        
+        <disable_info>rookie_pole_task_1_dlg_no_sleep</disable_info>        
+    </phrase>    
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_2_dlg_2">
+<precondition>dialogs_mlr.has_pole_factory_documents</precondition>
+<has_info>can_talk_to_fat_stalker</has_info>
+<dont_has_info>rookie_pole_task_2_dlg_2</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Yeah...</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>That’s how it always goes, you know? Almost died again — and again, you saved me. And there was nothing there... That’s the moral, man: trust only objective and well-rounded information, draw proper goddamn parallels, and don’t live with rose-colored glasses on. Ugh, damn it!</text>
+        <next>2</next>        
+    </phrase>
+    <phrase id="2">
+        <text>What now?</text>
+        <next>3</next>
+    </phrase>    
+    <phrase id="3">
+        <text>Will you give me the documents? I want to keep them as a memento after that mess. I’ve got nothing to repay you with, sadly, but I could be a good friend — if you ever want some company wandering around.</text>
+        <next>4</next>
+        <next>5</next>        
+    </phrase>        
+    <phrase id="4">
+        <text>Sure, take them. I don’t need them.</text>
+        <action>dialogs_mlr.take_pole_factory_documents</action>        
+        <give_info>rookie_pole_task_2_dlg_2</give_info>    
+        <give_info>rookie_pole_task_2_dlg_make_friend</give_info>    
+        <disable_info>rookie_pole_task_2_dlg_close_task_3</disable_info>            
+        <action>dialogs_axr_companion.remove_companions_from_squad</action>            
+    </phrase>    
+    <phrase id="5">
+        <text>Are you kidding me? I risked my life for you — three times, no less. I’ll just hand them over to the Barman instead.</text>
+        <give_info>rookie_pole_task_2_dlg_2</give_info>    
+        <disable_info>rookie_pole_task_2_dlg_close_task_3</disable_info>            
+        <give_info>rookie_pole_task_2_dlg_docum_on_actor</give_info>            
+        <action>dialogs_axr_companion.remove_companions_from_squad</action>            
+    </phrase>            
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_3_dlg">
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>rookie_pole_task_3_dlg</dont_has_info>
+<dont_has_info>rookie_pole_task_3_dlg_not</dont_has_info>
+<dont_has_info>rookie_pole_task_2_dlg_close_task_3</dont_has_info>    
+<phrase_list>
+    <phrase id="0">
+        <text>What else do you need help with?</text>
+        <next>1</next>    
+    </phrase>
+    <phrase id="1">
+        <text>Not long ago, another idiot from the village came here. He kept mocking me about how I look. Could you kill that bastard for me?</text>
+        <next>2</next>                
+    </phrase>    
+    <phrase id="2">
+        <text>Kill him? What if someone finds out? They’d tear my head off.</text>
+        <next>3</next>                    
+    </phrase>    
+    <phrase id="3">
+        <text>Nobody will find out. Look — I heard that moron is looking for someone to explore the surroundings and loot a bit. Just tell him you’re an experienced stalker, lead him to some bandits or mutants, and leave him there — let them tear him apart. Will you do it? I’ve got no reward for you, but take his stuff if you want.</text>
+        <next>4</next>        
+        <next>5</next>            
+    </phrase>    
+    <phrase id="4">
+        <text>Alright, I’ll do it.</text>    
+        <action>dialogs_mlr.give_rookie_pole_task_3</action>            
+        <give_info>rookie_pole_task_3_dlg</give_info>            
+    </phrase>    
+    <phrase id="5">
+        <text>That’s too much, don’t you think? No.</text>            
+        <give_info>rookie_pole_task_3_dlg_not</give_info>            
+    </phrase>    
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg_1_from_factory">
+<precondition>dialogs_mlr.has_pole_factory_documents</precondition>
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>rookie_pole_task_2_dlg</dont_has_info>
+<dont_has_info>rookie_pole_task_1_dlg_1_from_factory</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>To be honest, I’ve already been to the factory.</text>            
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>No way, man. Don’t lie. Got any proof?</text>        
+        <next>2</next>
+        <next>3</next>    
+    </phrase>    
+    <phrase id="2">
+        <text>Yeah, here’s what I found there:</text>            
+        <next>4</next>
+    </phrase>    
+    <phrase id="3">
+        <text>Nope, I don’t.</text>    
+        <next>5</next>        
+    </phrase>    
+    <phrase id="4">
+        <text>Well, damn... nothing comes easy, huh? Thanks for at least clearing things up — and yeah, sounds like it’s pretty dangerous in there. I’ve got nothing to pay you with, except for my shotgun. Take it, I won’t need it anymore:</text>    
+        <action>dialogs_mlr.take_pole_factory_documents</action>    
+        <action>dialogs_mlr.take_pole_factory_documents_grab_present</action>            
+        <give_info>rookie_pole_task_1_dlg_1_from_factory</give_info>    
+        <disable_info>rookie_pole_task_1_dlg_no_sleep</disable_info>
+        <disable_info>rookie_pole_task_1_dlg_1</disable_info>            
+    </phrase>
+    <phrase id="5">
+        <text>Then stop wasting my damn time.</text>            
+    </phrase>    
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_3_dlg_1">
+<has_info>rookie_pole_task_3_dlg</has_info>
+<dont_has_info>rookie_pole_task_3_dlg_1</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Hey, I heard you were looking for an experienced stalker to watch your back?</text>
+        <next>1</next>    
+    </phrase>
+    <phrase id="1">
+        <text>Holy shit, hey there! And you’re the “experienced” one? Haha, no offense, bro — don’t take it personally. I’d go smash those bastards myself, but having a partner for this kind of thing never hurts. So, shall we go?</text>
+        <next>2</next>                
+    </phrase>    
+    <phrase id="2">
+        <text>Let’s go.</text>
+        <action>dialogs_axr_companion.become_actor_companion</action>
+        <give_info>rookie_pole_task_3_dlg_1</give_info>        
+    </phrase>        
+</phrase_list>
+</dialog>
+
+
+</game_dialogs>

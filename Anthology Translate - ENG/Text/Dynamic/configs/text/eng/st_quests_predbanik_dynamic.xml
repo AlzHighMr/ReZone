@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+
+	<!-- toad -->
+	<string id="pre_toad_task_1_name">
+	<text>Business Proposal</text>
+</string>
+<string id="pre_toad_task_1_text">
+	<text>Toad needs the artifact %s. No unnecessary words or questions. A truly business-minded person!</text>
+</string>
+<string id="pre_toad_task_1_about">
+	<text>I'm interested in artifacts. Here’s the deal: I give a tip about a specific artifact, you bring it, and you get a reward. Both sides are happy. What do you think?</text>
+</string>
+<string id="pre_toad_task_1_fetch_about">
+	<text>My clients are interested in artifacts. Most of the time, they're just "bright minds" who’ve had some bad luck with connections, or the authorities in the Zone provide them. So here’s the deal: I give a tip about a specific artifact, you bring it, and you get a reward. Both sides are happy. I need the artifact %s. I'll wait for it here, just like your reward.</text>
+</string>
+<string id="pre_toad_task_1_fetch_finish">
+	<text>Well done, friend. And here’s your bonus.</text>
+</string>
+
+<string id="pre_toad_task_2_name">
+	<text>Dirty Work</text>
+</string>
+<string id="pre_toad_task_2_text">
+	<text>Toad has a dirty job for you - you need to find and eliminate a stalker who managed to piss someone off.\n\nToad provided all the necessary information on the PDA. Time to get to work. Poor guy, he’s out of luck...</text>
+</string>
+<string id="pre_toad_task_2_about">
+	<text>Sometimes stalkers come to me when they've upset or pissed off someone, and I, in turn, look for people willing to help them with this tough job, so specific individuals don’t have any problems later. Think of me as a middleman.\nRight now, I have a few targets to eliminate. Usually, it’s some stalker who betrayed or ordered the death of his friends, but sometimes there are even contract killings involving members of other factions. It's dirty work, but someone has to do it, especially if the reward is worth it, right? So, are you in? I'll send you the details on the PDA.</text>
+</string>
+<string id="pre_toad_task_2_finish">
+	<text>Thanks, stalker. Here’s your payment, just don’t get too carried away with the killings. Mercenaries don’t need competition either. Heh heh...</text>
+</string>
+
+<string id="pre_toad_task_3_name">
+	<text>Pseudo-Bugs and Pseudo-Mice</text>
+</string>
+<string id="pre_toad_task_3_text">
+	<text>There’s a joke among stalkers: “A stalker planted a pseudo-radish. It grew into a huge pseudo-radish! The stalker took a grenade launcher and went to harvest it. And everything would have worked out, if not for the pseudo-bugs and pseudo-mice that came running.” Sounds funny, but sometimes these bugs and mice can really be a pain in the ass. It gets to the point where you can’t even take ten steps out of the camp without being attacked by some pseudo-something!\nThat’s why Toad suggested combining business with pleasure - earn some money by cleaning up the surrounding areas from mutants. It’s the right thing to do, especially with all these pests around... Plus, the trophies will definitely come in handy.</text>
+</string>
+<string id="pre_toad_task_3_about">
+	<text>Tell me, did you see any mutants on your way here? The Duty faction recently patrolled the area, but some new stalkers reported seeing either dogs or something else on the outer edges of the camp. If they’re not joking, these creatures pose a big threat to both the stalkers in the camp and those who will come here later. Also, let’s not forget that the lack of clients hurts the business. So, I’m willing to pay well for eliminating these mutants, maybe even throw in a little extra. The main thing is to make sure there’s no trace left of them. Here are the approximate coordinates.</text>
+</string>
+<string id="pre_toad_task_3_finish">
+	<text>Good job. And here’s your hard-earned reward.</text>
+</string>
+
+	
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- toad (Loner Trader) New Tasks -->
+	
+<string id="pre_toad_task_4_name">
+	<text>Unusual Business</text>
+</string>
+<string id="pre_toad_task_4_text">
+	<text>As they say, the rich have their quirks. One such client, apparently, contacted Toad and asked him to find a trophy - the “%s”...\nToad, in turn, promised to pay well for delivering the trophy to him, so that he could forward it to the client.</text>
+</string>
+<string id="pre_toad_task_4_about">
+	<text>You see, I'm not only a busy man, but also extremely generous to those who are willing to help me solve my problems. And right now, I have an urgent order. Interested?</text>
+</string>
+<string id="pre_toad_task_4_fetch_about">
+	<text>Here’s the deal: one of my clients, who’s also a great jeweler specializing in animal trophies, wants one particular piece – %s. He’s willing to pay me a good sum for delivery. I, in turn, am willing to pay you for delivering the trophy to me first. You get what I mean, right? Make sure the mutant parts with its prize and bring it to me. You’ll be well compensated.</text>
+</string>
+<string id="pre_toad_task_4_fetch_finish">
+	<text>Good job! And here’s your well-earned reward.</text>
+</string>
+
+<string id="pre_toad_task_5_name">
+	<text>Treasure Hunter</text>
+</string>
+<string id="pre_toad_task_5_text">
+	<text>What was yours is now ours. Toad asked you to steal important documents and deliver them to him.\nHe sent the coordinates of their location to my PDA.</text>
+</string>
+<string id="pre_toad_task_5_about">
+	<text>I’ve heard about a stash containing some very interesting documents. I have no idea who the owner is or where they might be now, but I will reward anyone who can make those documents magically appear right here on this bar counter. Got it? I’ll send you the last known coordinates of the stash on your PDA. I doubt it’s a trap, because setting me up – that’s not something you want to try with me, unlike Sidrovich and his failed deals on the Cordon.</text>
+</string>
+<string id="pre_toad_task_5_finish">
+	<text>Now, that’s impressive. Great work, stalker.</text>
+</string>
+
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- loris (Loner Trader) Clear Mutants -->
+
+	<string id="esc_main_base_trader_mlr_task_1_name">
+	<text>Exterminator</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_1_text">
+	<text>It's not a good idea to leave mutants unchecked. You need to find their lair and clean it out. This won’t wipe them out completely, but it will certainly reduce their numbers.</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_1_about">
+	<text>Shh... Quiet! Hear that?\nMutants are back again. It sends chills down your spine...\nThey come here often, but it’s still unclear from where. From all over the Zone, maybe... It’s dangerous to leave them unattended.</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_1_finish">
+	<text>So, you've already sorted out all the little critters and sent them to their burrows? Great job! You've done a good deed, my friend! Here, take this from Lemur!</text>
+</string>
+
+<!-- FIND ARTEFACT FOR BEARD TASK -->
+<string id="esc_main_base_trader_mlr_task_2_name">
+	<text>Artifact Hunter</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_2_text">
+	<text>When it comes to artifact orders, Lemur is known for working only with his trusted people. However, sometimes even they can't find anything on time.\nIn such cases, Lemur turns to regular stalkers, so he can fulfill the order on time, and the stalkers can earn a little extra.\nThe trader is willing to pay well for the %s artifact.\nYou should try to find this artifact as soon as possible.</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_2_about">
+	<text>I usually don’t buy artifacts from stalkers, but there’s an urgent order, and I wouldn’t want to let the client down. Can you find one for me?</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_2_fetch_about">
+	<text>There’s a deal... I usually rely on my own people when it comes to artifact hunting, not buying them from others. Seen a lot of shady stuff over time...\nHowever, my guys still haven’t found anything, and this order is really important. The client is good, trustworthy. I wouldn’t want either of us to get stressed out over this. You know my rule, right? If the client is calm, I don’t have to worry. Simple as that.\nSo, listen up, I need the %s artifact. Maybe you've heard of it, or even seen it, but either way. If you find it, I’ll pay you well.\nWhat do you say? Can you get it for me?</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_2_fetch_finish">
+	<text>Well, stalker, you’ve earned your pay! You’ve saved Lemur, and I really appreciate it. Thanks a lot.</text>
+</string>
+
+
+	<!-- ASSASSINATION FOR BEARD TASK -->
+	<string id="esc_main_base_trader_mlr_task_3_name">
+	<text>If a Friend Turns Out to Be an Enemy...</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_3_text">
+	<text>One of the stalkers, who recently switched to the side of the military, decided to betray the trust of his fellow stalkers and kill them in the most vile way, either for his own benefit or just out of spite. Either way, Lemur managed to find out the current location of the traitor through Sidorovich. This brother-killer deserves no forgiveness for his actions. Lemur has asked for vengeance for all the comrades this stalker has betrayed. As the saying goes, you reap what you sow.</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_3_about">
+	<text>We've got a little problem here. There was a good stalker among us, one of those we have plenty of here on "Skadovsk." But one fine gray day, some guys from the valiant army showed up, and guess what? They made him a tempting offer, the result of which was unknown to us... until recently.\nYou see, just recently, we started finding dead stalkers—no distress signals or anything like that. They were either found with their throats slit or a 9mm hole in the back of their heads. What's strange is that, reportedly, no one heard any gunshots. You know, we already had a situation with missing stalkers before—lost some good ones. So, this time, I didn’t wait around. Through my channels, I dug up the latest events and rumors. And what do you think? We found the killer! And guess who it was? It was that same brother-stalker I told you about.\nYou understand, friend, the military's offer really appealed to him, but he probably wasn't expecting to get stabbed in the back by his own people. So, he decided to put the knife in the back of his comrades. They didn’t agree with his decision, but to kill them? That’s too much. Our now-soldier apparently wasn’t opposed to using their trust: he waited for the right moment, and boom—now, no more stalkers with us.\n\nSo, I contacted Sidorovich about this. He helped me figure out where this brother-killer is now. There’s no debating this—he could have walked away, but he chose to start his new life by betraying his loyal friends. Such a person doesn’t deserve forgiveness in our society, and you know what needs to be done.</text>
+</string>
+<string id="esc_main_base_trader_mlr_task_3_finish">
+	<text>Did you get your revenge for the guys? Thank you so much, my friend. This place, the Zone, is a terrible one. A brother will turn on another for personal gain or out of spite. Ah, what times we live in... Anyway, here’s your reward for serving justice.</text>
+</string>
+
+</string_table>

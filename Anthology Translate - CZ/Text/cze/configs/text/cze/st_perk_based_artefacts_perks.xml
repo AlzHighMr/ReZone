@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+  New Artefacts
+-->
+<string_table>
+  <string id="st_pba_af_cocoon_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Kámen\n 
+    %c[0,81,63,22] - %c[0,209,172,56]Po vybavení artefaktu získáš 25% ochranu proti poškození při boji zblízka.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Po obdržení poškození při boji zblízka získáš kamennou kůži.\n
+    %c[0,81,63,22] - %c[0,209,172,56]S obdržením perku získáš navíc 15% ochranu před poškozením při boji zblízka, ale obdržíš 10% postih za rychlost.\n
+    %c[0,81,63,22] - %c[0,209,172,56]S každým stackem roste ochrana s klesajícím výnosem a více se penalizuje rychlost.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Maximálně je možné nasbírat 10 stacků, při kterých obdržíš 85% snížení poškození při boji zblízka, ale budeš zcela znehybněn.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Účinek trvá 10 sekund, poté všechny zásobníky shoří.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Více artefaktů zvyšuje rychlost získávání stacků.
+    </text>
+  </string>
+  <string id="st_pba_af_cell_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Dezintegrátor\n
+    %c[0,81,63,22] - %c[0,209,172,56]Dezintegruje část střely, která k tobě letí. Bohužel při tom vyzařuje velké množství záření, které ti způsobí nemoc.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Snižuje poškození způsobené kulkou o 15 %.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Snížené množství poškození se přemění na radiaci.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Sčítá se s více artefakty s klesající návratností. (max. 65 %)\n \n
+    %c[0,209,172,56]ZVLÁŠTNÍ SCHOPNOST: %c[d_orange]Disintegrační pole\n
+    %c[0,192,71,221] - %c[ui_gray_3]Vhozením artefaktu se vytvoří ochranné pole dezintegrace.\n
+    %c[0,192,71,221] - %c[ui_gray_3]Dezintegrační pole snižuje poškození způsobené kulkou o 60-100 % v jeho blízkosti s malým postihem za radiaci.\n
+    %c[0,192,71,221] - %c[ui_gray_3]Pole trvá 1 minutu. \n
+    %c[0,192,71,221] - %c[ui_gray_3]Ručně přesuňte artefakt do slotu pro granát nebo na něj klikněte pravým tlačítkem myši a pak ho hoďte jako granát. \n
+    %c[0,192,71,221] - %c[ui_gray_3]Artefakt se při použití spotřebuje.
+    </text>
+  </string>
+  <string id="st_pba_af_fountain_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Čas letních obchodů\n
+    %c[0,81,63,22] - %c[0,209,172,56]Získej 8 % cashback z každého nákupu.\n
+    %c[0,81,63,22] - %c[0,209,172,56]Stacky více artefakty.
+    </text>
+  </string>
+ <string id="st_pba_af_spaika_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Kritický vzestup\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po sobě jdoucí zásahy zvyšují poškození vašeho dalšího výstřelu o 5 %.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Kritické zásahy (headshoty) poskytují 15% bonus.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každý zásah obnovuje psychické zdraví s množstvím závislým na počtu nahromaděných efektů.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Chybějící výstřel resetuje efekt nahromadění a uděluje trest v podobě snížení psychického poškození úměrně počtu nahromaděných efektů.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Bonus lze nekonečně nahromadit, pokud neuděláte chybu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nahromadění efektu se sčítá s více artefakty.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Odstranění všech artefaktů Spike odstraní nahromaděné efekty bez trestů.
+    </text>
+</string>
+<string id="st_pba_af_signet_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Světlo klidu\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Velmi obnovuje zdraví a psychickou energii při pobytu poblíž táborového ohně.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zesiluje artefakty pro obnovení psychické energie poblíž táborového ohně.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po sedění poblíž táborového ohně poskytuje až 5 minut pasivní regeneraci zdraví a psychické energie.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_repei_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Drobné poranění\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Tvoje zbraň ztrácí 50% hrubé síly, ale získává schopnost způsobovat krvácení.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každým zásahem bude nepřítel obdržet efekt krvácení a postupně ztrácet zdraví úměrně hrubé síle zbraně.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]NPC budou panikařit v bolestech, což je způsobí chaoticky běhat.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]NPC budou mít větší šanci dostat se do zraněného stavu, kde se budou prosit o milost a mohou ti poskytnout cenné informace, pokud je dosáhnete dříve, než zemřou.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+ <string id="st_pba_af_bat_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Alchymie zóny\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Umožňuje přeměnu artefaktů.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Artefakty lze "Vylepšit", tj. změnit na lepší úroveň\n
+	%c[0,81,63,22]  • (Noční Hvězda -> Gravi -> Zlatá Rybka), nebo je lze "Mutovat", tj. změnit na jiný typ s zachováním stejné úrovně (Noční hvězda -> Kamenná krev -> Medůza)\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Artefakty nejvyšší úrovně lze pouze mutovat.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Perkové artefakty lze pouze mutovat.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Unikátní artefakty, včetně samotného Bat, nelze přeměňovat.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každá přeměna vás bude stát jeden artefakt Bat.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Kliknutím pravým tlačítkem na artefakt provedete přeměnu.
+    </text>
+</string>
+<string id="st_pba_af_sun_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Solární pohon\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Při jasném počasí a částečně jasné od 5 do 21 hodin poskytuje zvýšení zdraví a vytrvalosti.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]V ostatních dobách nebo za jiných povětrnostních podmínek snižuje vytrvalost.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_ear_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Vůle k životu\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Poskytuje silnější regeneraci zdraví čím méně zdraví máte, začínaje 30 %.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Pokud je zdraví nižší než 30 %, dostáváte až o 50 % méně poškození v závislosti na tom, jak nízké je vaše zdraví.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Více artefaktů zvyšuje regeneraci, horní prah zdraví pro spuštění efektu o 3 % a maximální ochranu před poškozením o 10 %.
+    </text>
+</string>
+<string id="st_pba_af_chelust_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Tíha oddanosti\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Poskytuje malou regeneraci zdraví a vytrvalosti.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Členové hříchu zvýšejí účinek artefaktu čtyřnásobně a přidávají regeneraci psychiky.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Společníci hříchu postupně získávají regeneraci zdraví, začínaje tím s nejnižším zdravím.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nesčítá se.
+    </text>
+</string>
+
+
+<string id="st_pba_af_atom_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Arsziho požehnání\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Přeměňuje radiaci na zvýšení vytrvalosti a poskytuje lehkou léčbu záření.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_lighthouse_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Nestandardní způsob cestování\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zabití kohokoli vás teleportuje na místo smrti vaší oběti.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Čas je krátkodobě zpomalován při teleportaci.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Ohromuje NPC v blízkosti místa teleportace.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nepoužívejte to na vrány.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má dobu odpočinku 30 sekund.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nesčítá se.\n \n
+    %c[0,209,172,56]SPECIÁLNÍ SCHOPNOST: %c[d_orange]Vlastní teleport\n
+    %c[0,192,71,221] • %c[ui_gray_3]Kliknutím pravým tlačítkem na artefaktu vyberte místo vlastního teleportu.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Z důvodu Pauliho vyloučení nelze na stejném místě současně být dvěma entitami.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Artefakt je spotřebován při použití.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Stiskni klávesu Escape pro zrušení teleportace.
+    </text>
+</string>
+<string id="st_pba_af_fire_loop_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Pact se Zónou\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Artefakt s velkým vlivem na hru.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Přesunutím artefaktu na opasek uzavřete Pakt se Zónou.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zóna posiluje váš svazek a stává se z něj tajemný artefakt známý také jako Lucifer.\n \n
+    Ukládání hry je před aktivací velmi doporučeno
+    </text>
+</string>
+<string id="st_pba_af_zhelch_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Ten šílený Stalker z frakce Svoboda\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Poskytuje významnou odolnost proti psychickým útokům.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Odebírá psychické zdraví za účelem obnovy zdraví.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Pokud je zdraví plné, obnovuje psychické zdraví.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Existuje šance, že provedete jedno ze šílených nekontrolovatelných jednání.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Čím nižší je psychické zdraví, tím vyšší je šance a závažnost jednání.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nesčítá se.
+    </text>
+</string>
+
+<string id="st_pba_af_sandstone_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Zónová infuze\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Vstup do různých typů anomálií infikuje váš aktivní zbraň.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Infikovaná zbraň ztrácí 30 % své hrubé síly, ale získává 70 % síly elementálního poškození v souladu s typem anomálie.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Pouze elektrické, tepelné a chemické anomálie jsou platné pro infuzi.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Efekt trvá 3 minuty, artefakt musí být vybaven pro fungování efektu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nesčítá se.\n \n
+    %c[0,209,172,56]SPECIÁLNÍ SCHOPNOST: %c[d_orange]Infikované zbraně\n
+    %c[0,192,71,221] • %c[ui_gray_3]Přetáhněte artefakt na zbraň v inventáři, abyste ji přímo infikovali náhodným efektem.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Efekt bude trvat 10 minut.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Artefakt je spotřebován při použití.
+    </text>
+</string>
+<string id="st_pba_af_kislushka_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Jakou barvu má krev?\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Významně léčí krvácení za cenu tvé nasycenosti.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Čím více ran, tím lepší hojení poskytuje.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_black_angel_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Vyhni se tomu\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má 25% šanci odrážet 35% poškození z kulek zpět.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Při odrazu zruší poškození.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty má klesající účinek. (max. 70%)
+    </text>
+</string>
+<string id="st_pba_af_grapes_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Nutná hýždě\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po konzumaci jídla výrazně zvyšuje regeneraci zdraví.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každou sekundu je 10 % spotřebovaných kalorií obnoveno jako zdraví.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Efekt trvá 5 sekund.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_skull_miser_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Rozbijte jackpot\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Při zabití NPC do hlavy z něj vystřikuje fontánka peněz.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_star_phantom_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Fantomový pacifista\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stane se pro každého neviditelným po dobu 1.5 minut.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nemůžete vytáhnout zbraň, mluvit s nikým ani interagovat s ničím.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_medallion_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Chakram\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Artefakt je mocnou vrhací zbraní.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Vyhledává blízké nepřátele a při kontaktu s nimi způsobuje krvácivé poškození.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má schopnost odrazit se od stěn a objektů.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po určité době nebo pokud je příliš daleko, se vrátí zpět k držiteli.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Normálně má 2 použití, která jsou znázorněna stavem artefaktu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Přesuňte artefakt ručně na slot granátu nebo klikněte pravým tlačítkem myši na něj a poté ho hodit jako granát.
+    </text>
+</string>
+
+ <string id="st_pba_af_peas_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Přítel noci\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Od 21 do 5 hodin v různých povětrnostních podmínkách poskytuje léčbu krvácení, zvýšení rychlosti a skoku.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Snížení ospalosti v noci, zvýšení ospalosti ve dne.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_generator_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Godzilla se blíží\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Během sprintu obnovuje nabití baterií předmětů.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nedokáže zcela oživit úplně vybité baterie nebo zařízení bez baterií.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Více než 1 artefakt zvyšuje rychlost sprintu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stack s více artefakty se sčítá.
+    </text>
+</string>
+<string id="st_pba_af_ball_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Ořecholám\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zesiluje hráčovu mocnou nohu a umožňuje mu kopnout do víc mutantů, což má za následek okamžitou smrt.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každý artefakt na opasku umožňuje kopnout do více monster.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má dobu odpočinku 2 sekundy s 1 artefaktem, s každým dalším artefaktem na opasku se zvyšuje o 1 sekundu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stiskni klávesu POUŽÍT, když jste blízko mutanta a máte ho ve vidění, abyste provedli kopnutí\n \n 
+    %c[d_orange]Tíry mutantů: \n
+          %c[0,192,71,221] -   1 artefakt: %c[ui_gray_3]Kočky, psi, Tarbíci, Zombíci, Fractury.\n
+          %c[0,192,71,221] -   2 artefakty: %c[ui_gray_3]Divočáci, Maso, Pseudodogové, Upíři, Snorkové, Číhavci.\n
+          %c[0,192,71,221] -   3 artefakty: %c[ui_gray_3]Trpaslíci, Kontroléři, Poltergeisti.\n
+          %c[0,192,71,221] -   4 artefakty: %c[ui_gray_3]Chiméry, Pseudogiganti.
+    </text>
+</string>
+<string id="st_pba_af_fonar_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Osvěcování kleptomanie\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Artefakt zachytává frekvence balíčků a energií je osvětluje.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Rozsvěcí úkryty a předměty vysílající signál do RF-přijímače.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Světlo je velmi slabé a ve dne téměř neviditelné, proto je vhodné hledat v noci.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nesčítá se.
+    </text>
+</string>
+
+ <string id="st_pba_af_tapeworm_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Zahálka\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Ohromuje nejbližšího monstra v radiusu 3 metry.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Také, pokud tě zasáhnou při souboji blízkými útoky monster nebo lovců, ohromí je.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Postižené nepřátelské bytosti budou ohromeny po dobu 3 sekund.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Během ohromení je nepřítel v boji znemožněn a neútočí.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má dobu mezi použitími 6 sekund.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zranění sebe sama (například pád ze výšky) způsobí vybití artefaktu. Nedopustte si zranění a buďte v bezpečí.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stackuje se s více artefakty.
+    </text>
+  </string>
+  <string id="st_pba_af_moh_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Kulinarická hyperverzita\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Přeměňuje energii z masa mutantů na speciální efekty.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Efekt trvá 1 minutu, konzumace různého masa mutantů přepíše předchozí efekt.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nestackuje se.\n \n
+    %c[d_orange]Efekty: \n
+          %c[0,192,71,221] -   Maso z Flaksy: %c[ui_gray_3]3%/s regenerace zdraví, 33% penalizace poškození střelbou.\n
+          %c[0,192,71,221] -   Masa Divočáka: %c[ui_gray_3]50% snížení poškození střelbou a bodnými zraněními.\n
+          %c[0,192,71,221] -   Psi maso: %c[ui_gray_3]silné zastavení krvácení, 1%/s regenerace psychické energie.\n
+          %c[0,192,71,221] -   Pseudopes: %c[ui_gray_3]3%/s regenerace psychické energie, 50% snížení psychického poškození.\n
+          %c[0,192,71,221] -   Upír: %c[ui_gray_3]staneš se neviditelným, dokud nevystřelíš nebo nezasáhneš nepřítele, velmi silné zastavení krvácení.\n
+          %c[0,192,71,221] -   Psysosáč: %c[ui_gray_3]staneš se neviditelným, dokud nevystřelíš nebo nezasáhneš nepřítele, 8%/s regenerace psychické energie.\n
+          %c[0,192,71,221] -   Snork: %c[ui_gray_3]50% snížení poškození radiací, 10%/s regenerace vytrvalosti, 10 mSv/s regenerace radiace, velké snížení sytosti.\n
+          %c[0,192,71,221] -   Chiméra: %c[ui_gray_3]8%/s regenerace zdraví, 15%/s regenerace vytrvalosti, 33% snížení poškození radiací.\n
+          %c[0,192,71,221] -   Lurker: %c[ui_gray_3]66% snížení poškození chemických/ohnivých/elektrických anomálií.\n
+          %c[0,192,71,221] -   Tarbík: %c[ui_gray_3]30% zvýšení rychlosti, 20% penalizace poškození zblízka.
+    </text>
+  </string>
+  
+<string id="st_pba_af_serofim_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Déšť oživení. \n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po obdržení smrtelného úderu je artefakt zničen a hráč je oživen.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Obnoví se 50% zdraví, všechny negativní efekty jsou vyléčeny a hráč získá 5 sekund imunity.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Aktuální zbraň je zahozena a zrak se poškodí.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nestackuje se.
+    </text>
+  </string>
+  <string id="st_pba_af_elektron_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Crank Vysoké napětí\n
+    %c[0,81,63,22]  • %c[0,209,172,56]50% ochrana proti elektrickým anomáliím.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Při vstupu na Elektru se baterie hráče pro aktivní zařízení plně nabijí.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nabije náhodné množství zařízení a baterií v inventáři dohromady.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Posiluje artefakt a aktivuje speciální schopnost po dobu 10 minut.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Někdy je rozkoš z čerstvého nabití příliš velká, aby se zvládla, a tak vás to trochu nadchne a zdvojnásobí délku speciální schopnosti.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Nestackuje se.\n \n
+    %c[0,209,172,56]SPECIÁLNÍ SCHOPNOST: %c[d_orange]Power-Up Masakr\n
+    %c[0,192,71,221] • %c[ui_gray_3]Poskytuje nekonečný sprint a bonus ke rychlosti pohybu.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Při střelbě zbraně artefakt zvyšuje svůj náboj, což vede k zvýšení kadence střelby a dodatečnému zvýšení rychlosti pohybu.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Pomalejší střelné zbraně poskytují silnější náboj.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Když se nestřílí, artefakt postupně ztrácí svoji energii.
+    </text>
+  </string>
+  
+<string id="st_pba_af_kogot_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Krvavá nenasytnost\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zvýšení poškození zblízka o 30%.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Zvýšení rychlosti útoku zblízka o 50%.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Vampýrský efekt: 5% z nového poškození zblízka se přemění na zdraví hráče.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po každém zásahu hráč získá zrychlení na 5 sekund.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Po zabití určitých mutantů se poblíž nich objeví syrový kus masa.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Stackuje se s více artefakty.
+    </text>
+  </string>
+  <string id="st_pba_af_dragon_eye_perk">
+    <text>
+    %c[0,209,172,56]VÝHODA: %c[d_orange]Starý dobrý ultra-násilí\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Tvá zbraň získá možnost spustit explozivní výstřel.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]První zásah nepřítele ho násilně roztrhne výbuchem.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Výbuch vytváří masité zbytky a zraní každého v dosahu.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Uživatel by měl být opatrný.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Pokud máte štěstí, můžete zasáhnout pilota vrtulníku a aktivovat artefakt.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Má dobu mezi použitími 3 minuty.\n
+    %c[0,81,63,22]  • %c[0,209,172,56]Každý další artefakt snižuje dobu mezi použitími třikrát.\n \n
+    %c[0,209,172,56]SPECIÁLNÍ SCHOPNOST: %c[d_orange]Exploderball\n
+    %c[0,192,71,221] • %c[ui_gray_3]Pravé tlačítko myši - Aktivace artefaktu a jeho odhození, který se zakulatí směrem k pozici ukazatele myši.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Při kotoučení stiskni pravé tlačítko myši pro provedení malého skoku.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Stiskni levé tlačítko myši pro odpálení artefaktu.\n
+    %c[0,192,71,221] • %c[ui_gray_3]Artefakt se spotřebuje při použití.\n
+    %c[0,192,71,221] • %c[ui_gray_3]stiskni klávesu Escape pro zrušení.
+    </text>
+  </string>
+</string_table>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--
+	Backpacks
+-->
+
+<string_table>
+	<string id="st_itm_backpack_name">
+	<text>Batoh</text>
+</string>
+<string id="st_itm_backpack_desc">
+	<text>Batoh vyrobený z odolného materiálu, který je schopen odolat i těm nejnáročnějším povětrnostním podmínkám.\n \n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní item\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+		</text>
+</string>
+
+<string id="st_equ_smallpack_name">
+	<text>Tábornický batoh</text>
+</string>
+<string id="st_equ_smallpack_desc">
+	<text>Batoh se značným úložným prostorem. Vnitřek byl upraven tak, aby nepropouštěl vodu. Není to hezké řešení, ale funguje. Oblíbená volba mezi stalker-y a nováčky.\n \n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní item\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+	</text>
+</string>
+
+<string id="st_equ_smilpack_name">
+	<text>Cestovní batoh</text>
+</string>
+<string id="st_equ_smilpack_desc">
+	<text>Velký batoh na dlouhé cesty. Díky systému rozložení hmotnosti umožňuje uživateli nést dostatek zásob a vybavení na cestu trvající až pět dní.\n \n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní item\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+	</text>
+</string>
+	
+	<string id="st_equ_milpack_name">
+	<text>Bojový batoh</text>
+</string>
+<string id="st_equ_milpack_desc">
+	<text>Bojový batoh používaný armádou, často k uložení další munice a zdravotnického materiálu.\n \n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní item\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+	</text>
+</string>
+
+<string id="st_equ_touristpack_name">
+	<text>Turistický batoh</text>
+</string>
+<string id="st_equ_touristpack_desc">
+	<text>Turistický batoh s velkým úložným prostorem. Není příliš oblíbený kvůli své těžkopádné velikosti.\n \n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní item\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+	</text>
+</string>
+
+<string id="st_kit_hunt">
+	<text>Lovecká souprava</text>
+</string>
+<string id="st_kit_hunt_descr">
+	<text>Celá brašna plná háků, nožů a dalšího vybavení používaného ke stahování kůže a vykuchávání zvířat a mutantů. Jen málo stalkerů s sebou nosí profesionální vybavení pro lov mutantů. To je pravděpodobně důvod, proč tolik Zonerů trpí po konzumaci masa mutantů zažívacími potížemi. Díky rozmanitosti nástrojů může souprava účinně zlepšit údržbu zbraní a zbroje.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní předmět\n
+		%c[d_blue] - %c[ui_gray_2] skladování předmětů\n
+		%c[0,100,255,150] - %c[ui_gray_2] Možno použít jako skrýš\n
+		%c[d_orange] - %c[ui_gray_2] vlastnictví zvyšuje počet částí těla získaných z mutantů\n
+	</text>
+</string>
+
+<string id="st_itm_actor_backpack_name">
+	<text>Systém rychlého uvolnění</text>
+</string>
+<string id="st_itm_actor_backpack_descr">
+	<text>Být zaskočen v Zóně je jedna z nejhorších věcí, které se vám mohou stát. QR-systém vám sice nepomůže takovým situacím předejít, ale rozhodně vám pomůže dostat se z nebezpečí. Jeho funkce je jednoduchá: téměř okamžitě odpne popruhy z batohu a umožní vám uniknout na bezpečné místo, aniz by vám těžký batoh bránil v pohybu. Chcete-li jej používat, nastavte jej jako položku horké klávesy. Stisknutím klávesové zkratky aktivujete nouzové uvolnění, které batoh (a vše v něm) okamžitě shodí na zem. Vybavená zbraň (zbraně), munice, brnění a nastavče na brnění i UPD vám zůstanou, takže jste připraveni k boji. Batoh si můžete vzít zpět až poté.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] vojenský předmět\n
+		%c[d_blue] - %c[ui_gray_2] vestavěná GPS\n
+		%c[d_blue] - %c[ui_gray_2] velmi rychlé použití (uvolňovací svorka)\n
+		%c[d_blue] - %c[ui_gray_2] bojové vybavení zůstává u uživatele\n</text>
+</string>
+<string id="st_itm_actor_backpack_desc_mlr">
+	<text>Často používaný stalkery jako záložní řešení v případě nepředvídaných okolností. Jeho vlastnosti jsou jednoduché, skládá se z popruhu, který lze kdykoli upustit spolu s batohem, aby bylo možné rychle utéct. Poměrně kompaktní a prostorný. Prakticky umožňuje přenastavit batoh spolu s nějakým obsahem.</text>
+</string>
+
+	
+<string id="st_itm_backpack_stash_name">
+	<text>Batoh s označením PDA</text>
+</string>
+<string id="st_itm_backpack_stash_desc">
+	<text>Extrémně odolný batoh s implementovaným zařízením GPS. Po upuštění se automaticky synchronizuje s vaším PDA a vytváří skrýš, která je označena na vašem PDA. Batoh je vyroben z pevných a odolných materiálů, které udrží vaše zařízení v bezpečí a suchu bez ohledu na okolní podmínky. Maskovaný design zajistí, že nebude vyčnívat z okolí.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] vojenský item\n
+		%c[d_blue] - %c[ui_gray_2] vestavená GPS\n
+		%c[d_red] - %c[ui_gray_2] jediné použití\n</text>
+</string>
+	
+</string_table>

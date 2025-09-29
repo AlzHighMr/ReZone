@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_colt1911_classic">
+		<text>Colt M1911 "Classic"</text>
+	</string>
+	<string id="st_wpn_colt1911_classic_s">
+		<text>Colt M1911</text>
+	</string>
+	<string id="st_wpn_colt1911_classic_descr">
+		<text>Jedná se o originální pistoli Colt 1911, kterou v roce 1910 vyrobil John Moses Browning a v následujícím roce si ji nechal patentovat, odtud označení 1911. Do služby přišla v roce 1913 a je považována za vůbec první samonabíjecí pistoli, která je nesmírně úspěšná, protože dokáže používat náboj .45 ACP a bezchybně vystřelit nejméně 1000 ran. To, že jde o klasickou 1911, a ne o 1911A1, poznáte podle toho, že má menší výhozný otvor, delší spoušť a zejména rukojeť ve tvaru diamantu, také její jediný zásobník je 7 kusů, mějte ho u sebe. Díky černému trhu, který probíhá v Zóně, se podařilo získat tuto opravdovou klasiku, i když možná byla trochu upravena, hodně štěstí při zjišťování. Pokud chcete přesnost při použití silné ráže bez příliš velkého zpětného rázu, mohla by být pro vás, ale nejlépe ji používat jako záložní zbraň, pokud vůbec, protože nemá možnost mít tlumič.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_wpn_colt1911a1">
+		<text>Colt M1911A1</text>
+	</string>
+	<string id="st_wpn_colt1911a1_descr">
+		<text>Vylepšená verze modelu 1911 vydaná po kritice z první světové války Military v roce 1924. Jeden z hlavních problémů, včetně příliš malého závěru, méně ergonomické bezpečnostní rukojeti a objemné spouště vyžadující velkou sílu ke střelbě. S touto pistolí prostě nemůžete udělat chybu, ačkoli někteří stále dávají přednost původní 1911 a nacházejí vlastní způsoby, jak se vyhnout nedostatkům, jako je držení jednou rukou, aby se zabránilo "kousnutí kladívka".\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1924\n
+		</text>
+	</string>
+
+	<string id="st_wpn_colt1911_tokarev">
+		<text>Ruský smluvní Colt M1911</text>
+	</string>
+	<string id="st_wpn_colt1911_tokarev_descr">
+		<text>"Ruská verze" pistole 1911. Jedná se o starou variantu, u níž chybí razítko v cyrilici označující, že se jedná o verzi objednanou z USA do Ruska. Je totožná s 1911 americké výroby, ale jedním z klíčových rozdílů je mírně upravený zásobník a hlaveň, což umožňuje každému technikovi změnit ráži z .45 ACP na 7,62x25 mm Tokarev.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy, Rusko\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_up_add_colttokarev_name">
+		<text>Změna ráže na 7,62x25</text>
+	</string>
+
+	<string id="st_up_add_colt695_name">
+		<text>Změna ráže na 9x19</text>
+	</string>
+
+	<string id="st_wpn_sw645">
+		<text>Smith &amp; Wesson 645</text>
+	</string>
+	<string id="st_wpn_sw645_descr">
+		<text>Smith &amp; Wesson Model 645 je kompaktní pistole ráže .45 ACP vyrobená v roce 1985 a její výroba byla ukončena v roce 1988. Přesto je spousta lidí z černého trhu dokáže získat. Pistole S&amp;W 645 je téměř celá vyrobena z nerezové oceli, a je tedy mimořádně odolná vůči nepříznivým povětrnostním podmínkám. Protože je to velmi snadné, může každý technik změnit ráži na 9x19, čímž se z ní stane S&amp;W model 659. Celkově se jedná o dobrou záložní pistoli.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy americké\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Smith &amp; Wesson\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1985\n
+		</text>
+	</string>
+
+
+	<string id="st_wpn_m45">
+		<text>Colt M45</text>
+	</string>
+	<string id="st_wpn_m45_descr">
+		<text>Moderní varianta pistole M1911, která je od roku 1985 standardní boční zbraní průzkumného prvku námořní pěchoty Spojených států amerických. S nápadem na lepší 1911 přišel koncem 80. let 20. století plukovník USMC Robert Young. Je to v podstatě M1911A1 sestavená mnoha výrobci, protože má závěr od Springfield Armory, výsuvný mechanismus a spoušť od Wilson Combat a vše ostatní od Nowlin Manufacturing. Výsledek sice zní jako popis "Frankensteinova monstra", ale ve skutečnosti vznikla pěkná pistole, která je lepší než 1911. Žoldnéři ji upřednostňují kvůli tomu, že je velmi dobře upravitelná.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1985\n
+		</text>
+	</string>
+
+	<string id="st_wpn_m45a1">
+		<text>Colt M45A1</text>
+	</string>
+	<string id="st_wpn_m45a1_descr">
+		<text>Moderní varianta pistole M1911 a vylepšení pistole M45 je od roku 1985 standardní boční zbraní průzkumného prvku námořní pěchoty Spojených států amerických. Oproti M45 má M45A1 systém dvojité vratné pružiny, který rozkládá sílu zpětného rázu náboje .45 ACP snížením vrcholové síly zpětného impulsu. Součástí balení je také tříbodový červený tritiový noční zaměřovač, 5palcová národní zápalková hlaveň, oboustranná pojistka, picatinny lišta pro rám a povrchová úprava Cerakote v pouštní hnědi.
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2012\n
+		</text>
+	</string>
+
+	<string id="st_wpn_svi">
+		<text>Strayer Voigt Infinity</text>
+	</string>
+	<string id="st_wpn_svi_s">
+		<text>SVI 2011</text>
+	</string>
+	<string id="st_wpn_svi_descr">
+		<text>Strayer-Voigt Inc. je výrobce modulárních pistolí ve stylu M1911. Pistole SVI je uváděna na trh pro soutěže, takže je poměrně drahá a vzácná, protože není dostupná pro žádnou armádu ani pro běžného zbrojíře. Samotná pistole má obrovskou výhodu v tom, že má vlastní značkový zásobník Strayer-Voigt na 15 nábojů. Byla také upravena ve vlastní režii tak, aby střílela dávkou na 3 náboje, a obsahuje modré tritiové optické vlákno. Nečekejte však stejně velkou spolehlivost jako u klasické 1911.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Strayer Voigt Inc\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2011\n
+		</text>
+	</string>
+
+	<string id="st_wpn_coonan357">
+		<text>Coonan .357 Magnum Compact</text>
+	</string>
+	<string id="st_wpn_coonan357_s">
+		<text>Coonan .357</text>
+	</string>
+	<string id="st_wpn_coonan357_descr">
+		<text>Pistole Coonan .357 Magnum je svérázná poloautomatická pistole, která používá ráži .357 Magnum prostřednictvím podvozku Coltu 1911. To se provádí změnou hlavně, závěru, rukojeti a zásobníku, aby se přizpůsobily změně ráže. Bohužel zbraň není zrovna nejlepší, pokud jde o přesnost, ale zpětný ráz je snesitelný, pokud nestřílíte rychle, a manipulace je skvělá. Jednou z hlavních výhod používání této pistole namísto některých jiných pistolí ráže .357, jako je Desert Eagle, je její hmotnost, možnost skrytého nošení a lepší boj zblízka.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy americké\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Coonan\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1986\n
+		</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<string id="st_okr_ship_spot_text">
+	<text>%c[d_green] loď. \n %c[d_green] Metoda rychlého pohybu</text>
+</string>
+<string id="st_okr_taxi_spot_text">
+	<text>%c[d_green] vozidla. \n %c[d_green] Metoda rychlého pohybu</text>
+</string>	
+
+<string id="st_scf_pb_use_tutorial_txt">
+	<text>%c[d_green] Zapni dekodér ($$ACTION_USE$$)</text>
+</string>
+
+<string id="ui_st_sr_changer_cld_closed">
+	<text>Teď není nejlepší nápad se vrátit!</text>
+</string>
+
+<string id="st_scf_d3_box_code">
+	<text>Kontejner žoldáků ve sklepě</text>
+</string>
+
+<string id="scf_d3_no_use_code_txt">
+	<text>%c[d_green] Nejprve je nutné se vypořádat s artefaktem, který mi tlačí na hlavu!</text>
+</string>
+
+<string id="st_mod_use_ph_systemarmor">
+	<text>%c[d_green] Deaktivuj obranný systém ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_cd_p50_switcher_use_txt">
+	<text>%c[d_green] Zablokuj dodávku energie ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_cd_collaider_warn_timer">
+	<text>Před spuštěním kolideru</text>
+</string>
+<string id="st_cd_collaider_system_armor_timer">
+	<text>Do komplexu sebedůvěry</text>
+</string>
+
+<string id="scf_d3_door_use_cardkey_txt">
+	<text>%c[d_green] Jdi do podzemního komplexu ($$ACTION_USE$$)</text>
+</string>
+<string id="scf_d3_door_no_cardkey_txt">
+	<text>%c[d_green] Přístup zakázán. \n %c[d_green] Pro aktivaci je potřeba karta klíče</text>
+</string>
+
+<string id="st_scf_d1_use_tutorial_txt">
+	<text>%c[d_green] Prozkoumej artefakt ($$ACTION_USE$$)</text>
+</string>
+<string id="scf_v1_sirena_use_txt">
+	<text>%c[d_green] Vypni sirénu ($$ACTION_USE$$)</text>
+</string>
+<string id="scf_v1_shakal_box_open_txt">
+	<text>%c[d_green] Prozkoumej trezor Shakala ($$ACTION_USE$$)</text>
+</string>
+<string id="scf_v1_shakal_box_txt">
+	<text>%c[d_green] Potřebný klíč. \n %c[d_green] Trezor je zamčený s úžasným výhledem.</text>
+</string>
+<string id="st_scf_n16_door_locked">
+	<text>%c[d_green] zamčeno. \n %c[d_green] Dveře nejsou původní a stojí zde od nedávna.</text>
+</string>
+<string id="st_scf_quest_door_spot_text">
+	<text>Zavřené dveře do sklepa.</text>
+</string>
+<string id="st_scf_quest_house_spot_text">
+	<text>Stojí za to prozkoumat tento dům.</text>
+</string>	
+<string id="st_mod_no_use_ph_scf_trans">
+	<text>%c[d_green] Potřebujeme zdroj rádiového signálu pro interakci s přístrojem</text>
+</string>
+<string id="st_mod_da_use_ph_scf_trans">
+	<text>%c[d_green] Spusť přístroj ($$ACTION_USE$$) \n %c[d_green] použití paměťového modulu</text>
+</string>
+
+<string id="st_flst_cave_timer">
+	<text>Chraň docenta</text>
+</string>
+
+<string id="st_mod_use_ph_babki_use">
+	<text>%c[d_green] Vyber ($$ACTION_USE$$) \n %c[d_green]Můžeš získat nějaké peníze</text>
+</string>
+
+<string id="st_coll_canalization_go_dwn">
+	<text>%c[d_green] Pohybuj se skrz sběrač ($$ACTION_USE$$)</text>
+</string>	
+
+<string id="st_mod_chu_naiden_perehod_v_katakombs_txt">
+	<text>Byl nalezen tajný sestup v "katakombách"</text>
+</string>
+
+<string id="st_chu_lc_door_go_dwn">
+	<text>%c[d_green] Sestup do katakomb ($$ACTION_USE$$)</text>
+</string>	
+
+<string id="st_mod_chu_k5_zakop_use_box">
+	<text>%c[d_green] Prohledat ($$ACTION_USE$$)</text>
+</string>
+<string id="st_mod_chu_k5_zakop_qte">
+	<text>%c[d_green] DISCULACE ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mod_chu_a4_lestnica_tutorial">
+	<text>%c[d_green] Vylez nahoru ($$ACTION_USE$$)</text>
+</string>
+<string id="st_mod_chu_a4_pribor_tutorial">
+	<text>%c[d_green] Deaktivuj přístroj psi radiace ($ $ affection_use $ $)</text>
+</string>
+
+<string id="st_mod_chu_zapiska_prorok_use">
+	<text>%c[d_green] Vezmi poznámku ($$ACTION_USE$$) \n %c[d_green]  Podle stejného to jsou záznamy sektářů.</text>
+</string>
+
+<string id="st_mod_transmut_search_ecologs_group">
+	<text>%c[d_green] Možná někde zde je skupina vědců</text>
+</string>
+
+
+	<string id="st_mod_okr_e62_help_ninkita_tutorial">
+	<text>%c[d_green] Pomoz Nikitovi vstát ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mod_okr_e62_c1_use_crash_door_qte">
+	<text>%c[d_green] Zkus vyrazit dveře ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mod_transmut_chu_k5_zakops">
+	<text>Prozkoumej pohřeb</text>
+</string>
+
+<string id="st_mod_ui_start">
+	<text>Začít</text>
+</string>
+<string id="st_mod_ui_stop">
+	<text>Zastavit</text>
+</string>
+<string id="st_mod_ui_x">
+	<text>[x]</text>
+</string>
+<string id="st_qte_title">
+	<text>Stiskni klávesu - W</text>
+</string>
+
+<string id="nii_e55_no_use_doc_txt">
+	<text>%c[d_green] Neměl bys být vidět</text>
+</string>
+<string id="nii_e55_da_use_doc_txt">
+	<text>%c[d_green] Vezmi dokumenty ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okr_util_box_open_txt">
+	<text>%c[d_green] Podívej se do sudu ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okr_av_box_closed_txt">
+	<text>%c[d_green] Je nutné obsadit stanoviště</text>
+</string>
+<string id="okr_av_box_open_txt">
+	<text>%c[d_green] Prozkoumej krabici ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okr2_oblast_fish_boloto_st">
+	<text>Místo, kde podle stalkera žije vzácný mutant podobný rybě, "rys".</text>
+</string>
+
+<string id="st_ui_pda_okr2_boys_eksxped">
+	<text>%c[d_green] Expedice \n%c[d_green] Možná tento charakter bude chtít připojit k expedici Athena</text>
+</string>
+
+<string id="mod_tip_radio_mtrs_use">
+	<text>%c[d_green] Zapni rádiovou stanici ($$ACTION_USE$$)</text>
+</string>
+<string id="mod_tip_radio_mtrs_no_use">
+	<text>%c[d_green] Slyšíš jen šumění</text>
+</string>
+<string id="mod_tip_radio_mtrs_horrors_use">
+	<text>%c[d_green] Slyšíš hrozné výkřiky, prosby o pomoc</text>
+</string>
+
+<string id="st_mod_biografi_prorok_doc_use">
+	<text>%c[d_green] Vezmi dokument ($$ACTION_USE$$) \n %c[d_green]  Podle obalu se jedná o biografická data</text>
+</string>
+<string id="st_okr_a5_notebook_yes_flesh_1">
+	<text>%c[d_green] Podívej se, co je na flash disku ($$ACTION_USE$$) \n %c[d_green]  flash disk ze sejfu</text>
+</string>
+<string id="st_okr_a5_notebook_yes_flesh_2">
+	<text>%c[d_green] Podívej se, co je na flash disku ($$ACTION_USE$$) \n %c[d_green]  flash disk od mrtvého</text>
+</string>
+<string id="st_okr_a5_notebook_yes_flesh_3">
+	<text>%c[d_green] Podívej se, co je na flash disku ($$ACTION_USE$$) \n %c[d_green]  Flashka "Monk"</text>
+</string>
+<string id="st_okr_a5_notebook_yes_flesh_4">
+	<text>%c[d_green] Podívej se, co je na flash disku ($$ACTION_USE$$) \n %c[d_green]  flash disk sektářů</text>
+</string>
+
+<string id="st_lx24_tex_timer">
+	<text>Očekávej příjezd techniky</text>
+</string>
+
+<string id="st_mod_lx24_generator_tutor">
+	<text>%c[d_green] Prozkoumej generátor ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_lx24_generator_is_work_text">
+	<text>%c[d_green] Generátor funguje</text>
+</string>
+<string id="st_okr2_v3_pult_open_text">
+	<text>%c[d_green] Spusť nouzové čerpadlo ($$ACTION_USE$$)</text>
+</string>
+<string id="st_okr2_lockvent_text">
+	<text>%c[d_green] Něco blokuje otáčení ventilu</text>
+</string>
+<string id="st_okr2_v3_pult_text">
+	<text>%c[d_green] Pro přístup je potřebná klíčová karta V3</text>
+</string>
+
+<string id="st_mod_loot_box_open_txt">
+	<text>%c[d_green] Vezmi obsah ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mtrs_loot_box_zakrit_txt">
+	<text>%c[d_green] Krabice je uzavřena</text>
+</string>
+<string id="st_mtrs_loot_box_open_txt">
+	<text>%c[d_green] Vezmi své věci ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mod_mtrs_sherif_psih_say_no_meets_no_dialog">
+	<text>%c[d_green] Šerif na tebe nereaguje</text>
+</string>
+
+<string id="st_mtrs_e3_door_locked">
+	<text>%c[d_green] Tuto mřížku nepohybuj</text>
+</string>
+
+<string id="st_ofc_o3_door_locked">
+	<text>%c[d_green] Fragment tvé paměti je nyní uzavřen</text>
+</string>
+<string id="st_ofc_o4_boy_nex_door_use_tip">
+	<text>%c[d_green] Zazvoň na zvonek ($$ACTION_USE$$)</text>
+</string>
+<string id="st_ofc_o4_boy_nex_door_no_use_tip">
+	<text>%c[d_green] Počkej na odpověď</text>
+</string>
+
+<string id="st_mod_mtrs_map_on_txt">
+	<text>%c[d_green] Zapni panel ($$ACTION_USE$$)</text>
+</string>
+<string id="st_mod_mtrs_map_of_txt">
+	<text>%c[d_green] Vypni panel ($$ACTION_USE$$)</text>
+</string>	
+
+<string id="st_mod_mtrs_f2_use_control_panel_1_txt">
+	<text>%c[d_green] Otevři štít ($$ACTION_USE$$)</text>
+</string>
+<string id="st_mod_mtrs_f2_use_control_panel_2_txt">
+	<text>%c[d_green] Otoč páku ($$ACTION_USE$$)</text>
+</string>	
+
+<string id="st_mod_act_use_rerorder">
+	<text>%c[d_green] Zapni nahrávání ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_changer_perehod_nii_to_okr">
+	<text>Hirsa v Výzkumném ústavu, s její pomocí se můžeš dostat do zóny</text>
+</string>
+<string id="st_changer_perehod_okrest_to_niichaz">
+	<text>Souřadnice helikoptéry Hirsy. S její pomocí se můžeš dostat k výzkumnému ústavu</text>
+</string>
+
+<string id="st_mod_use_r88_say_no_meets_no_dialog">
+	<text>%c[d_green] Dialog ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_mtrs_lc_door_go_dwn">
+	<text>%c[d_green] Jdi dolů do podzemní struktury ($$ACTION_USE$$) \n %c[d_green] Metro - Stanice sanatoria</text>
+</string>
+
+<string id="st_flst_lc_door_go_up">
+	<text>%c[d_green] Vyjdi na povrch ($$ACTION_USE$$) \n %c[d_green] Okolí Černobylu</text>
+</string>
+<string id="st_flst_lc_door_go_dwn">
+	<text>%c[d_green] Jdi dolů do podzemní struktury ($$ACTION_USE$$) \n %c[d_green] Zkušební komora</text>
+</string>	
+
+<string id="st_time_skip_spot_loc_spot">
+	<text>%c[d_green] Můžeš si sednout a počkat pár hodin</text>
+</string>
+
+<string id="mod_u17_zapiska_st">
+	<text>Poznámka od Garroty</text>
+</string>
+
+<string id="und_u7_stul_time_skip_txt">
+	<text>Čekáš několik hodin ...</text>
+</string>
+
+<string id="st_mod_use_stul_actor_to_sit">
+	<text>%c[d_green] Sedni si ($$ACTION_USE$$) \n %c[d_green] Počkat několik hodin</text>
+</string>
+<string id="st_mod_act_use_snd_guitar">
+	<text>%c[d_green] Hraj na kytaru ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_und_bar_lift_go_up">
+	<text>%c[d_green] Vyjeď výtahem ($$ACTION_USE$$) \n %c[d_green]  Horní patro</text>
+</string>
+<string id="st_und_bar_lift_go_down">
+	<text>%c[d_green] Sjeď výtahem dolů ($$ACTION_USE$$) \n %c[d_green]  Dolní patro</text>
+</string>
+
+<string id="st_und_u4_lift_yes">
+	<text>%c[d_green] Výtah byl zavolán</text>
+</string>
+<string id="st_und_u4_lift_start">
+	<text>%c[d_green] Zavolej výtah ($$ACTION_USE$$)</text>
+</string>
+<string id="und_bar_elevator_door_locked_used">
+	<text>%c[d_green] Musíš zavolat výtah</text>
+</string>
+
+<string id="st_okr_sr_stul_vagon_toturial_txt">
+	<text>%c[d_green] Sedni si ke stolu ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_okr_garrota_rupor_use_1">
+	<text>%c[d_green] Použij ručník k komunikaci s majitelem ($$ACTION_USE$$)</text>
+</string>
+<string id="st_okr_garrota_rupor_use_2">
+	<text>%c[d_green] Použij spojení Garroty ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_okr_r6_sr_door_spot">
+	<text>%c[d_green] Vchod do tajné metro stanice, pod sanatoriem</text>
+</string>
+
+	<string id="st_okr_r6_pult_text">
+	<text>%c[d_green] Pro přístup - je potřeba karta</text>
+</string>
+
+<string id="st_okr_rezak_kompass_tutorial_txt">
+	<text>%c[d_green] Zvedni artefakt ($$ACTION_USE$$)</text>
+</string>
+
+<string id="actor_inventory_rukzak_use">
+	<text>%c[d_green] Otevři batoh ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okr_s1_box_closed_txt">
+	<text>%c[d_green] Kontejner je zavřený - je potřeba klíč</text>
+</string>
+<string id="okr_s1_box_open_txt">
+	<text>%c[d_green] Prozkoumej kontejner ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okrest_roadno_spot_no_txt">
+	<text>%c[d_green] Cesta je uzavřená \n %c[d_green] Tato cesta není teď dostupná</text>
+</string>
+
+<string id="st_okr_v3_rubilnik_yes_txt">
+	<text>%c[d_green] Jídlo bylo dodáno</text>
+</string>
+<string id="st_okr_v3_rubilnik_noy_txt">
+	<text>%c[d_green] Není žádná energie</text>
+</string>
+
+<string id="st_okr_v3_rubilnik_use_txt">
+	<text>%c[d_green] Spusť přepínač ($$ACTION_USE$$)</text>
+</string>
+
+<string id="okr_d2_som_dnk_use_txt">
+	<text>%c[d_green] Vezmi DNA z mutanta ($$ACTION_USE$$)</text>
+</string>
+<string id="okr_d2_som_see_txt">
+	<text>%c[d_green] Tělo černobylského sumce</text>
+</string>
+
+<string id="st_okr_mod_transmut_act_use_objects">
+	<text>%c[d_green] Interakce s objektem je dostupná</text>
+</string>
+<string id="st_okr_mod_transmut_act_use_npcs">
+	<text>%c[d_green] Interakce s postavou je dostupná</text>
+</string>
+
+<string id="st_okr_mod_transmut2_act_use_interes_spot">
+	<text>%c[d_green] Našel jsi zajímavé místo</text>
+</string>
+
+<string id="st_okr_a5_ohr_door_locked">
+	<text>%c[d_green] Dveře jsou nějak blokované</text>
+</string>
+
+<string id="st_okr_c1_act_use_eat_tutorial_txt">
+	<text>%c[d_green] Sežer to z ($$ACTION_USE$$)</text>
+</string>
+
+<string id="st_okr_a5_notebook_yes_flesh">
+	<text>%c[d_green] Podívej se, co je na flash disku ($$ACTION_USE$$)</text>
+</string>
+<string id="st_okr_a5_notebook_no_flesh">
+	<text>%c[d_green] Použitím notebooku můžeš prozkoumat obsah flash disků</text>
+</string>
+
+<string id="st_search_box_mod">
+	<text>%c[d_green] Otevři box ($$ACTION_USE$$)</text>
+</string>
+<string id="st_search_seif">
+	<text>%c[d_green] Otevři sejf ($$ACTION_USE$$)</text>
+</string>
+
+<string id="mod_tip_radio_2_on">
+	<text>%c[d_green] Zapni rádio ($$ACTION_USE$$)</text>
+</string>
+<string id="mod_tip_radio_2_off">
+	<text>%c[d_green] Vypni rádio ($$ACTION_USE$$)</text>
+</string>
+
+
+</string_table>
+

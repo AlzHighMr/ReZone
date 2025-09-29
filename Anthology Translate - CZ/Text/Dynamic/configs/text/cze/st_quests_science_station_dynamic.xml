@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- (yan_sci_bunker_scientists) -->
+	<string id="yan_sci_bunker_scientists_task_1_name">
+		<text>Práce pro vědce : Lov artefaktů</text>
+	</string>
+	<string id="yan_sci_bunker_scientists_task_1_text">
+		<text>Profesor Lutšenko je velmi zaneprázdněn prováděním řady experimentů s použitím vzorků tkání fauny Zóny. Alespoň byl zaneprázdněn, dokud nedošly všechny dostupné materiály.\nNyní potřebuje jakoukoliv pomoc, která mu může poskytnout potřebné vzorky.\n \nSouhlasil jsem, že mu pomohu vyřešit tento problém. „%s“ bude muset být nalezen a doručen v dobrém stavu co nejdříve, dokud vzorek udržuje svou čerstvost. V opačném případě ho profesor Lutšenko nepřijme.\n \nZbývá pouze najít dárce, který poskytne tento vzorek...</text>
+	</string>
+	<string id="yan_sci_bunker_scientists_task_1_about">
+		<text>Došlo k akutnímu nedostatku potřebných živočišných materiálů, a proto potřebuji naléhavě zkušeného lovce k získání určitých vzorků. Můžem s tebou počítat?</text>
+	</string>
+	<string id="yan_sci_bunker_scientists_task_1_fetch_about">
+		<text>V mém laboratoriu jsem prováděl řadu velmi důležitých experimentů týkajících se vlastností některých zástupců fauny.\nK mýmu velkému zklamání jsem neplánoval zásoby vzorků pro případ nepředvídaných okolností a odchylek od experimentu - vyčerpal jsem poslední dostupný materiál, který jsem měl k dispozici.\n \nTyto experimenty mají obrovský význam pro vědeckou komunitu a pro mě osobně, takže potřebuji doplnit zásobu potřebných materiálů. Potřebuji „%s“.\n \nChci jen říci, že mě málo zajímají podrobnosti získání vzorků. Můžeš se vydat na lov, koupit je od obchodníků nebo od dalších Stalkerů. Jediné, co požaduji, je včasná dodávka a čerstvost materiálů. Nejsou pro experiment užitečné, pokud ztratí svou čerstvost.\nJakmile získáš vše, co potřebujem, pojď zpět se sem co nejdříve. Souhlasíš?</text>
+	</string>
+	<string id="yan_sci_bunker_scientists_task_1_fetch_finish">
+		<text>Zvládl to! Vzorky maximálně udržely svou čerstvost! Velice ti děkujem, mladý člověče. Skvělá práce. Ihned budu pokračovat ve svých experimentech.</text>
+	</string>
+	
+	<!-- Collect New Artefact Task -->
+	<string id="yan_sci_bunker_scientists_task_2_name">
+    <text>Vědecký pokrok</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_text">
+    <text>Profesor Lutšenko provádí řadu, podle jeho slov, důležitých výzkumů spojených s artefakty.\n \nBohužel profesor zjistil, že kompletně vyčerpal materiál potřebný pro vysokou přesnost dat. Kvůli tomu byl nucen pozastavit výzkum.\n \nPožádal o nalezení a poskytnutí mu artefaktu %s. Za jeho doručení slíbil dobře zaplatit.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_about">
+    <text>Nezajistil bys mi pomoc s výzkumem, mladý člověče? Finanční odměna nebude dlouho na sebe čekat.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_fetch_about">
+    <text>Fantastické! Nemáš tušení, jaký prospěch můžeš přinést lidstvu!\n \nV tuto chvíli provádím řadu důležitých laboratorních výzkumů, ale vyčerpal jsem veškeré dostupné zásoby materiálu potřebného vzorku! A bez něj jsou data a odpovídající vzorek zcela bezcenné!\n \nProsím tě, potřebuji artefakt %s, abych se mohl okamžitě vrátit ke svým výzkumům a pokračovat v nich.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_fetch_finish">
+    <text>Tvá ochota podat pomocnou ruku vědě v těžkých chvílích je prostě nepostradatelná. Jak bych si přál, aby zde bylo více takových jako vy! Vědecká laboratoř a já osobně ti děkujeme za poskytnutou pomoc.</text>
+</string>
+
+<string id="yan_sci_bunker_scientists_task_4_name">
+    <text>V říši mutantů</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_about">
+    <text>Naši kolegové zoologové umístili na několik místních faunálních zástupců sledovací zařízení, abychom získali úplný soubor dat o nich: jejich pohyb, zvyky, denní život a podobně. Bohužel, musím s lítostí oznámit, že po jedné z nedávných erupcí se několik těchto majáků přestalo správně fungovat - stále vysílají souřadnice, ale... bohužel, jenom ty. O ostatních datech nemůže být řeč. Takže budeš muset najít cíl a manuálně vyjmout zařízení, poté ho sem přinést - jiná možnost, k mé velké lítosti, neexistuje. Na druhou stranu tím můžeš pomoci obyvatelům Zóny vyřešit možný problém.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_0">
+    <text>Podle slov Profesora Lutšenka vědci-zoologové prováděli výzkum životního stylu několika mutantů pomocí připojených sledovacích zařízení. Nedávný výbuch však zřejmě poškodil některé z nich - vědci dostávají pouze aktuální souřadnice bytostí. Data se zaznamenávají na médium majáku, ale jediný způsob, jak je číst, je najít mutanta, eliminovat ho a vzít zařízení.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_1">
+    <text>Seber zařízení s daty, které spadlo z mutanta</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_2">
+    <text>Dones zařízení Profesoru Lutšenkovi</text>
+</string>
+
+
+</string_table>

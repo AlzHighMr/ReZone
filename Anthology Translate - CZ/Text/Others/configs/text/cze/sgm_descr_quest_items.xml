@@ -1,0 +1,626 @@
+	<string id="st_signaller_toolkit_1_descr">
+    <text>Urèeno pro kvalitní terénní opravy vojenského vybavení.</text>
+</string>
+<string id="st_signaller_toolkit_1">
+    <text>Vojenské nástroje ORK-42</text>
+</string>
+<string id="st_signaller_toolkit_2_descr">
+    <text>Urèeno pro nastavení a kalibraci vojenského vybavení.</text>
+</string>
+<string id="st_signaller_toolkit_2">
+    <text>Vojenské nástroje RKB-86u</text>
+</string>
+<string id="st_special_helicopter_key">
+    <text>Univerzální klíè pilota</text>
+</string>
+<string id="st_special_helicopter_key_descr">
+    <text>Urèen k nouzovému pøístupu k vrtulníkùm.</text>
+</string>
+<string id="st_detector_modify_toolkit_descr">
+    <text>Profesionální sada nástrojù pro jemné opravy a modernizace detektorù. Obsah balení postaèuje pro jakékoliv práce na nastavení a vylepšení všech typù detektorù.</text>
+</string>
+<string id="st_detector_modify_toolkit">
+    <text>Nástroje pro práci s detektory</text>
+</string>
+<string id="st_important_science_docks">
+    <text>Vìdecká zpráva è. 1264</text>
+</string>
+<string id="st_important_science_docks_descr">
+    <text>Spojené sešívaèkou, nìkolik listù formátu A4. Na obálce nápis:\n„Slouèení anomálních hornin“\nS/N 1264</text>
+</string>
+<string id="st_flash_avoid_witnesses_name">
+    <text>Datová buòka SBU è. 15764</text>
+</string>
+<string id="st_flash_avoid_witnesses_descr">
+    <text>Pøipojená informace: Skupina oldákù zadrela našeho agenta v okolí Jupiteru. Existují dùvody se domnívat, e náš agent je stále naivu. Vaším úkolem je osvobodit agenta a zneškodnit odpùrce. Pro bezpeènı prùchod do tábora pouijte „oldáckı kombinézu“.\nPro nahrání dat do PDA je tøeba pouít.</text>
+</string>
+<string id="st_flash_top_secrets_name">
+    <text>Vırobek è. 1964</text>
+</string>
+<string id="st_flash_top_secrets_descr">
+    <text>Pøísnì tajné informace: S postupem po lokacích se otevøou další pøechodové kanály:\n %c[255,238,153,26]• %c[default] Zátoò - Jupiter\n %c[255,238,153,26]• %c[default] Jupiter - Zátoò\n %c[255,238,153,26]• %c[default] Jupiter - Prypja\n %c[255,238,153,26]• %c[default] Prypja - Jupiter\n %c[255,238,153,26]• %c[default] Jupiter - Podzemí\n %c[255,238,153,26]• %c[default] Prypja - Podzemí\n %c[255,238,153,26]• %c[default] Prypja - Zátoò\n %c[255,238,153,26]• %c[default] Zátoò - Prypja\n %c[default]Pro nahrání dat do PDA je tøeba pouít.\n%c[207,155,80,255]Tato akce je nevratná. Pøed pouitím dobøe zvate!</text>
+</string>
+<string id="st_letter_from_agent">
+    <text>Dopis od spojky</text>
+</string>
+<string id="st_letter_from_agent_descr">
+    <text>V dopise stojí: Majoru Degtjarevovi. Musíte se urgentnì setkat se spojkou na území elektrárny. Volací znak - „Syréna houká“.</text>
+</string>
+
+<string id="st_quest_flash_light">
+    <text>Svìtlo s optikou „Messler“</text>
+</string>
+<string id="st_quest_flash_light_descr">
+    <text>Halogenová svítilna a optickı zamìøovaè zabudované v jednom tìle.</text>
+</string>
+<string id="st_quest_arms_case">
+    <text>Kuføík s „Ruger GP100“</text>
+</string>
+<string id="st_quest_arms_case_descr">
+    <text>Uvnitø kuføíku je rozebranı „Ruger GP100“ a také opravná sada k nìmu.</text>
+</string>
+<string id="st_quest_heavy_medkits">
+    <text>Lékaøskı set „CCA72“</text>
+</string>
+<string id="st_quest_heavy_medkits_descr">
+    <text>Pouívanı Hasièskım záchrannım sborem, univerzální lékaøskı set s defibrilátorem.</text>
+</string>
+<string id="st_quest_photo_device">
+    <text>Fotoaparát „Suzanna“</text>
+</string>
+<string id="st_quest_photo_device_descr">
+    <text>Støední formát analogovı fotoaparát s pevnì pøipevnìnım stativem.</text>
+</string>
+<string id="st_quest_soldier_medallion">
+    <text>Hemu¾ùv medailon</text>
+</string>
+<string id="st_quest_soldier_medallion_descr">
+    <text>Na medailonu je nápis: Skupina B117.</text>
+</string>
+<string id="st_quest_drink_beylis">
+    <text>„Baileys“</text>
+</string>
+<string id="st_quest_drink_beylis_descr">
+    <text>Vzácnı nápoj, alespoò v rámci Zóny.</text>
+</string>
+<string id="st_quest_frequency_radio">
+    <text>Vysokofrekvenèní vysílaèka „Grundig“</text>
+</string>
+<string id="st_quest_frequency_radio_descr">
+    <text>Pouívá se k zajištìní spojení na velké vzdálenosti. Vıroba Nìmecko.</text>
+</string>
+<string id="st_quest_sharpshooter_binocular">
+    <text>Dalekohled „Stopaø“</text>
+</string>
+<string id="st_quest_sharpshooter_binocular_descr">
+    <text>Speciální vojenskı dalekohled. Souèást vıbavy vojenskıch odstøelovaèù.</text>
+</string>
+<string id="st_quest_live_water">
+    <text>ivá voda</text>
+</string>
+<string id="st_quest_live_water_descr">
+    <text>Další zázrak zrozenı v rámci Zóny.</text>
+</string>
+<string id="st_quest_medic_medkit">
+    <text>Lékárnièka V98</text>
+</string>
+<string id="st_quest_medic_medkit_descr">
+    <text>Velkı lékaøskı set. Skvìle se hodí na jakékoli zranìní èi krvácení.</text>
+</string>
+<string id="st_quest_bloodsucker_letter_1">
+    <text>Podivná poznámka 1</text>
+</string>
+<string id="st_quest_bloodsucker_letter_1_descr">
+    <text>V dopise stojí: „...ty jsi první, kdo mì uvidìl... zachránil jsem ti ivot... na oplátku za mlèení a... pomoc. Pomoz mi... nemohu se objevit mezi lidmi, ale vím, e vìdci urèitì mají to, co potøebuji... NG-7. Pøines mi tento lék. Pomùe mi. A já ti odmìním.“\nPro nahrání dat do PDA je tøeba pouít.</text>
+</string>
+
+	<string id="st_quest_bloodsucker_letter_2">
+    <text>Podivná poznámka 2</text>
+</string>
+<string id="st_quest_bloodsucker_letter_2_descr">
+    <text>V dopise stojí: „Dìkuji. Podívej se do mé schránky, je na konci chodby. Tam je tvoje odmìna.“</text>
+</string>
+<string id="st_quest_bloodsucker_vaccine">
+    <text>Vakcína NG-7</text>
+</string>
+<string id="st_quest_bloodsucker_vaccine_descr">
+    <text>Ozerskı o tomto pøípravku nic neøekl, ale pøedpokládám, e tento lék zastavuje mutaci.</text>
+</string>
+<string id="st_device_pda_alfa_commander_novice">
+    <text>PDA velitele jednotky Alfa</text>
+</string>
+<string id="st_device_pda_alfa_commander_novice_descr">
+    <text>%c[255,238,153,26]Velitel podpùrné skupiny. %c[default]Rozkaz všem podpùrnım jednotkám! Zajistit podporu speciálním jednotkám, nebo pokud mono, zajmout za ivého èi mrtvého Alexandra Grigorjevièe Degtjareva, narozeného 1978, rodák z Prypjati, Ukrajinská SSR. Znaky: štíhlá postava, vìk 25-30 let, vıška 179 cm, vlnité svìtlé vlasy. Velmi nebezpeènı, major SBU. Veškeré nalezené vìci okamitì doruèit na základnu. Zvláštní pozornost vìnovat zachování PDA, papírovıch i elektronickıch nosièù informací. Pìtinásobná odmìna za úspìšné splnìní úkolu!</text>
+</string>
+<string id="st_device_pda_alfa_commander_regular">
+    <text>PDA velitele jednotky Alfa</text>
+</string>
+<string id="st_device_pda_alfa_commander_regular_descr">
+    <text>%c[255,238,153,26]Velitel speciální jednotky. %c[default]Rozkaz všem speciálním jednotkám! Zajmout za ivého èi mrtvého Alexandra Grigorjevièe Degtjareva, narozeného 1978, rodák z Prypjati, Ukrajinská SSR. Znaky: štíhlá postava, vìk 25-30 let, vıška 179 cm, vlnité svìtlé vlasy. Velmi nebezpeènı, major SBU. Veškeré nalezené vìci okamitì doruèit na základnu. Zvláštní pozornost vìnovat zachování PDA, papírovıch i elektronickıch nosièù informací. Desetinásobná odmìna za úspìšné splnìní úkolu!</text>
+</string>
+<string id="st_device_pda_alfa_commander_experienced">
+    <text>PDA velitele jednotky Alfa</text>
+</string>
+<string id="st_device_pda_alfa_commander_experienced_descr">
+    <text>%c[255,238,153,26]Velitel speciální jednotky. %c[default]Rozkaz všem podpùrnım a speciálním jednotkám! Zajmout za ivého èi mrtvého Alexandra Grigorjevièe Degtjareva, narozeného 1978, rodák z Prypjati, Ukrajinská SSR. Znaky: štíhlá postava, vìk 25-30 let, vıška 179 cm, vlnité svìtlé vlasy. Velmi nebezpeènı, major SBU. Veškeré nalezené vìci okamitì doruèit na základnu. Zvláštní pozornost vìnovat zachování PDA, papírovıch i elektronickıch nosièù informací. Patnáctinásobná odmìna za úspìšné splnìní úkolu!</text>
+</string>
+<string id="st_device_pda_alfa_commander_veteran">
+    <text>PDA velitele jednotky Alfa</text>
+</string>
+<string id="st_device_pda_alfa_commander_veteran_descr">
+    <text>%c[255,238,153,26]Velitel elitní speciální jednotky. %c[default]Rozkaz všem elitním speciálním jednotkám! Zajmout za ivého èi mrtvého Alexandra Grigorjevièe Degtjareva, narozeného 1978, rodák z Prypjati, Ukrajinská SSR. Znaky: štíhlá postava, vìk 25-30 let, vıška 179 cm, vlnité svìtlé vlasy. Velmi nebezpeènı, major SBU. Veškeré nalezené vìci okamitì doruèit na základnu. Zvláštní pozornost vìnovat zachování PDA, papírovıch i elektronickıch nosièù informací. Dvacetinásobná odmìna za úspìšné splnìní úkolu!</text>
+</string>
+<string id="st_device_pda_alfa_commander_master">
+    <text>PDA velitele jednotky Alfa</text>
+</string>
+<string id="st_device_pda_alfa_commander_master_descr">
+    <text>%c[255,238,153,26]Velitel speciální nadelitní jednotky. %c[default]Rozkaz všem nadelitním speciálním jednotkám! Zajmout za ivého èi mrtvého Alexandra Grigorjevièe Degtjareva, narozeného 1978, rodák z Prypjati, Ukrajinská SSR. Znaky: štíhlá postava, vìk 25-30 let, vıška 179 cm, vlnité svìtlé vlasy. Velmi nebezpeènı, major SBU. Veškeré nalezené vìci okamitì doruèit na základnu. Zvláštní pozornost vìnovat zachování PDA, papírovıch i elektronickıch nosièù informací. Tøicetinásobná odmìna za úspìšné splnìní úkolu!</text>
+</string>
+<string id="st_device_pda_b1_commander">
+    <text>PDA „Bulldog“</text>
+</string>
+<string id="st_device_pda_b1_commander_descr">
+    <text>PDA s informacemi cennımi pro stalkery.</text>
+</string>
+<string id="st_device_pda_b1_renegade_1">
+    <text>PDA renegáta</text>
+</string>
+
+	<string id="st_device_pda_b1_renegade_1_descr">
+    <text>PDA s cennımi informacemi pro stalkery.</text>
+</string>
+<string id="st_device_pda_b1_renegade_2">
+    <text>PDA renegáta</text>
+</string>
+<string id="st_device_pda_b1_renegade_2_descr">
+    <text>PDA s cennımi informacemi pro stalkery.</text>
+</string>
+<string id="st_device_pda_b1_renegade_3">
+    <text>PDA renegáta</text>
+</string>
+<string id="st_device_pda_b1_renegade_3_descr">
+    <text>PDA s cennımi informacemi pro stalkery.</text>
+</string>
+<string id="st_device_pda_kasilov">
+    <text>PDA Kasilova</text>
+</string>
+<string id="st_device_pda_kasilov_descr">
+    <text>PDA s neznámımi informacemi.</text>
+</string>
+<string id="st_device_pda_cherniy">
+    <text>PDA „Èerného“</text>
+</string>
+<string id="st_device_pda_cherniy_descr">
+    <text>PDA vùdce oldákù. Informace v PDA: Naše heslo je „Proívám nouzi“.</text>
+</string>
+<string id="st_monolith_intercepted_case">
+    <text>Leonùv kuføík</text>
+</string>
+<string id="st_monolith_intercepted_case_descr">
+    <text>Kuføík zachycenı agentem Monolitu u oldákù. Leon ádal, aby kuføík byl doruèen do Prypjati bez otevøení.</text>
+</string>
+<string id="st_jup_thief_voron_pda">
+    <text>PDA „Vrány“</text>
+</string>
+<string id="st_jup_thief_voron_pda_descr">
+    <text>PDA obsahuje archivní soubor, archiv je chránìn heslem. Mùj PDA nepodporuje tuto verzi archivaèního programu. Je tøeba PDA pøedat Gromobojovi – moná dokáe data získat.</text>
+</string>
+<string id="st_zat_shakal_weapon">
+    <text>Personalizovaná „Beretta92FS“</text>
+</string>
+<string id="st_zat_shakal_weapon_descr">
+    <text>Personalizovaná zbraò. Vyrobena na zakázku, na rukojeti je nápis „Èapa“.</text>
+</string>
+<string id="st_af_acid_star_name">
+    <text>„Kyselinnı Infuzorium“</text>
+</string>
+<string id="st_af_acid_star_descr">
+    <text>Unikátní artefakt s vynikajícími ochrannımi vlastnostmi. Je tøeba ho doruèit selekcionáøi... škoda.</text>
+</string>
+<string id="st_zat_postman_parcel">
+    <text>Zásilka pro spoøitele</text>
+</string>
+<string id="st_zat_postman_parcel_descr">
+    <text>Podle stalkera Petjky Razmandjaje je uvnitø pøedplatné. Pøíjemce – Markoviè, spoøitel na Skadovsku.</text>
+</string>
+<string id="st_zat_danger_parcel">
+    <text>Zásilka pro Kanevského</text>
+</string>
+<string id="st_zat_danger_parcel_descr">
+    <text>To, co Mstitel pohrdavì nazval „ohòostrojem“, ve skuteènosti vypadá jako dobøe zabalenı nálo C-4 s detonátorem. Pøíjemce – „dolgovec“ Kanevskij.</text>
+</string>
+<string id="st_shustriy_ingram_m10">
+    <text>Trofézní „Ingram Mac-10“</text>
+</string>
+
+<string id="st_shustriy_ingram_m10_descr">
+    <text>Na pabì samopalu je vyrytı nápis. Rozebrat lze pouze „Za vıbornou slu...“ a iniciály „A.S. P.šk.n“.</text>
+</string>
+<string id="st_shustriy_ak47">
+    <text>Trofézní „AK-47“</text>
+</string>
+<string id="st_shustriy_ak47_descr">
+    <text>Starı ošoupanı automat, se stopami cizích drápù na pabì. Zbraò, o které kolují legendy. Prı s ní sám Oznaèenı zabil posledního ve Zónì „zlomu“.</text>
+</string>
+<string id="st_shustriy_mossberg_590mk">
+    <text>Trofézní „Mossberg 590Mk.L“</text>
+</string>
+<string id="st_shustriy_mossberg_590mk_descr">
+    <text>Podle vzhledu byla tato zbraò dlouho vtlaèována do zemì; pravdìpodobnì v okolí „Agropromu“. Vırobní znaèka na pabì øíká, e jde o brokovnici z omezené série s kvalitnìjším èernìním.</text>
+</string>
+<string id="st_shustriy_steyr_aug_ss190">
+    <text>Trofézní „Steyr AUG SS190“</text>
+</string>
+<string id="st_shustriy_steyr_aug_ss190_descr">
+    <text>Zbraò pro opravdové speciální jednotky. Na této zbrani pracoval technik, kterı jí vıraznì zlepšil bojové vlastnosti. Podle povìstí to byl Šroub - legendární mistr z „Vojenskıch skladù“.</text>
+</string>
+<string id="st_detector_serafim">
+    <text>Detektor „Serafim“</text>
+</string>
+<string id="st_detector_serafim_descr">
+    <text>Speciální vıvoj vìdcù. Je vybaven lokátorem anomálních objektù a LED panelem zobrazujícím smìr k neznámému vzorku. Dokáe nejen detekovat vzorky, ale i urèit vzdálenost k nim. Reim hledání vzorkù se aktivuje zvednutím antény na pøední stranì pøístroje.</text>
+</string>
+<string id="st_af_prodigy_danger_name">
+    <text>„Neznámı artefakt“</text>
+</string>
+<string id="st_af_prodigy_danger_descr">
+    <text>Radioaktivní. O vlastnostech artefaktu je známo jen velmi málo.</text>
+</string>
+<string id="st_af_prodigy_1_processed_name">
+    <text>„Vzorek è. 768“</text>
+</string>
+<string id="st_af_prodigy_1_processed_descr">
+    <text>Organickı artefakt. Skládá se z deformovanıch tkání ivoèišného pùvodu. Pøi vystavení chemickému zneèištìní zaèíná „vysávat“ chemikálie ze vzduchu a pøemìòuje je na hustou lepkavou hmotu.</text>
+</string>
+<string id="st_af_prodigy_2_processed_name">
+    <text>„Vzorek è. 815“</text>
+</string>
+<string id="st_af_prodigy_2_processed_descr">
+    <text>Bylo pøesnì zjištìno, e záøení vznikající pulzováním ztluštìní tohoto vzorku velmi rychle sráí krev v otevøenıch ranách.</text>
+</string>
+<string id="st_af_prodigy_3_processed_name">
+    <text>„Vzorek è. 862“</text>
+</string>
+<string id="st_af_prodigy_3_processed_descr">
+    <text>Organickı artefakt s unikátními vlastnostmi. Zatím neznámım zpùsobem zvyšuje celkovou rychlost regenerace organismu po jakémkoliv zranìní, ani by urychloval hromadìní toxinù.</text>
+</string>
+<string id="st_af_prodigy_4_processed_name">
+    <text>„Vzorek è. 874“</text>
+</string>
+<string id="st_af_prodigy_4_processed_descr">
+    <text>Artefakt elektrostatické povahy. Dokáe vıraznì zvyšovat svalovı tonus nositele.</text>
+</string>
+<string id="st_af_prodigy_5_processed_name">
+    <text>„Vzorek è. 895“</text>
+</string>
+<string id="st_af_prodigy_5_processed_descr">
+    <text>Generuje kolem sebe sféru øízeného gravitaèního pole. Velmi úèinnì sniuje váhu obsahu batohu nositele.</text>
+</string>
+<string id="st_af_prodigy_6_processed_name">
+    <text>„Vzorek è. 934“</text>
+</string>
+<string id="st_af_prodigy_6_processed_descr">
+    <text>Organickı artefakt. Generuje kolem sebe neviditelnou sféru, která zvyšuje imunitu nositele.</text>
+</string>
+<string id="st_zat_shram_quest_pda_with_info_wpnupg_name">
+    <text>„PDA s daty o modifikacích útoènıch pušek“</text>
+</string>
+<string id="st_zat_shram_quest_pda_with_info_wpnupg_desc">
+    <text>Obsahuje podrobné instrukce k opravám a vylepšením rùznıch mechanismù, jako je systém dlouhého chodu údernì-spoušového mechanismu, polovolnı závìr válcového systému a další. Data pro zbranì jako AEK971, Famas F1, Colt M4A1.</text>
+</string>
+<string id="st_zat_shram_quest_flash_with_info_outupg_name">
+    <text>„Flashka s daty o modifikaci brnìní“</text>
+</string>
+<string id="st_zat_shram_quest_flash_with_info_outupg_desc">
+    <text>Tento nosiè obsahuje informace o instalaci dodateènıch modulárních systémù, které poskytují vysokı stupeò ochrany pøed radiací a psi efekty na organismus nositele, jako jsou armádní izolaèní brnìní Gagarin a tìké stalkerské brnìní Vıchod.</text>
+</string>
+
+<string id="st_jup_shram_quest_flash_with_info_wpnupg_name">
+    <text>„Sloka s daty o modifikacích odstøelovacích pušek“</text>
+</string>
+<string id="st_jup_shram_quest_flash_with_info_wpnupg_desc">
+    <text>Zvláštì obsahuje podrobnı popis vylepšení tlumièe zpìtného rázu, hlavnì a elektronického stabilizátoru pro odstøelovací pušky: Barret M82, CheyTac Intervention M200 a KSVK.</text>
+</string>
+<string id="st_zat_maypon_quest_note_desc">
+    <text>„Do prdele! Brouku, kromì tohoto kousku papíru jsi nemìl èím nechat stopu, tak se nediv. Jak to tady ve skladu najdeš – hned to snìz... ertuji. Ale teï vánì. Lukostøelec splnil svou èást dohody – vyzvedl náklad. Zdá se, e to zvládl èisto. Nepøivedl na sebe ádnı zájem. Kufr jsem zkontroloval – vše dle seznamu, jak jsme se domluvili. Nechal jsem ho na VNZ Kruhu – tam kde vdycky. Mùeš si ho vyzvednout, s ostatním vyrovnáme zítra. Sakra, co to mám za šum v uších, teï se podívám... kon...“</text>
+</string>
+<string id="st_zat_maypon_quest_note_name">
+    <text>„Poznámka od Maypona“</text>
+</string>
+<string id="st_zat_maypon_quest_case_desc">
+    <text>„Velmi tìkı kufr s neznámım nákladem. Zdá se, e nevydává záøení a neovlivòuje mysl. Moná nìjaké zaøízení nebo souèást vybavení.“</text>
+</string>
+<string id="st_zat_maypon_quest_case_name">
+    <text>„Mayponùv kufr“</text>
+</string>
+<string id="st_jup_azot_quest_papka_with_info_grenade_name">
+    <text>„Sloka s plány“</text>
+</string>
+<string id="st_jup_azot_quest_papka_with_info_grenade_desc">
+    <text>„V této sloce je rùzná informace i plány potøebné pro vylepšení granátù.“</text>
+</string>
+<string id="st_jup_azot_quest_instruments_for_grenade_name">
+    <text>„Speciální sada náøadí“</text>
+</string>
+<string id="st_jup_azot_quest_instruments_for_grenade_desc">
+    <text>„Obsahuje rùzné nástroje potøebné k sestavení granátù do svazku.“</text>
+</string>
+<string id="st_zat_stalker_fantom_pda_name">
+    <text>„PDA Fantoma“</text>
+</string>
+<string id="st_zat_stalker_fantom_pda_desc">
+    <text>„PDA stalkera pøezdívaného Fantom. Všechny osobní záznamy a informace jsou pod speciální ochranou.“</text>
+</string>
+<string id="st_zat_danger_parcel2_name">
+    <text>„Náklad pro Varga“</text>
+</string>
+<string id="st_zat_danger_parcel2_descr">
+    <text>„Docela tìká krabice. Co v ní je, není známo. Urèeno pro diverzanta Varga z Dolu.“</text>
+</string>
+<string id="st_all_secret_lab_x1_name">
+    <text>„Nosiè s daty o laboratoøi X1“</text>
+</string>
+<string id="st_all_secret_lab_x1_descr">
+    <text>„Hlavní laboratoø, nejdùleitìjší objekt projektu ‚O-Vìdomí‘. Šlo o nejvìtší vìdeckı komplex. Jejím úkolem byla kontrola noosféry (studovaného projektu) a její pøípadná modifikace. Kontrolu mìl pøímo provádìt vìdeckı pracovník komplexu, vycvièenı v laboratoøi X6 (všichni úèastníci experimentù laboratoøí X1 a X2), nacházející se v stázovém stavu. Skládala se ze 6 zaøízení, jejich prototyp byl v laboratoøi X16. Tato zaøízení zajišovala hlavní práci, kadı kontroloval noosféru bìhem implantace vìdomí vìdcù do informaèního pole. Laboratoø X1 byla na území Èernobylské jaderné elektrárny. Byl vybrán podzemní komplex u nedostavìného 6. energetického bloku. Po zastavení vıstavby byly zde podzemní prostory, které bylo tøeba dokonèit, ale byly relativnì vhodné pro laboratoø.“</text>
+</string>
+<string id="st_all_secret_lab_x2_name">
+    <text>„Nosiè s daty o laboratoøi X2“</text>
+</string>
+<string id="st_all_secret_lab_x2_descr">
+    <text>„Takté se nacházela na území elektrárny a byla pøímo propojena s laboratoøí X1, avšak byla umístìna pod 4. energetickım blokem. Sídlili zde vìdci, kteøí provádìli experimenty ke studiu a modifikaci noosféry. Pro ochranu laboratoøí bylo rozhodnuto vybudovat energetické zaøízení, které by na stanici mohlo mìnit vìdomí všech pod jeho kontrolou. Toto zaøízení bylo pozdìji nazváno Monolit. Bylo opakovanì pøeprogramováno pro lepší fungování. Po nehodì v laboratoøi X1 se v X2 snaili situaci napravit a pøevzít kontrolu, avšak neúspìšnì. Kdy se v Èernobylu objevily ozbrojené síly, bylo rozhodnuto zmìnit vìdomí všech v okolí pomocí Monolitu. Probìhl první experiment na èlovìku. K pøekvapení však Monolit nezvládl kontrolovat všechny a ti, kdo unikli kontrole, zemøeli. Po úspìšném experimentu byla vìtšina lidí pøemìnìna na ochranu komplexu, pojmenovanou podle zaøízení Monolit. S postupem èasu se Monolit zdokonaloval a nakonec dosáhl plné kontroly.“</text>
+</string>
+<string id="st_all_secret_lab_x6_name">
+    <text>„Nosiè s daty o laboratoøi X6“</text>
+</string>
+<string id="st_all_secret_lab_x6_descr">
+    <text>„Laboratorní komplex X6 byl centrem pro pøípravu vìdeckıch pracovníkù, kteøí mìli øídit noosféru. Šlo o relativnì malou laboratoø na okraji bıvalého mìsta Limansk. Na rozdíl od ostatních laboratoøí nebyl její provoz dlouhodobı, po pøípravì pracovníkù byla èinnost ukonèena a vìdci pøevedeni do komplexu X1. Pro umístìní nebylo tøeba hledat speciální lokalitu – v oblasti u pøed havárií v roce 1986 fungovala vızkumná stanice „Radiová vlna“, poblí které stála anténa. Tato anténa s experimentem nesouvisela. Komplex také obsahoval potøebné vybavení pro experimenty, jeho pùvod byl pro vìdce záhadou. V roce 2001 byl program laboratoøe X6 ukonèen.“</text>
+</string>
+<string id="st_all_secret_lab_x7_name">
+    <text>„Nosiè s daty o laboratoøi X7“</text>
+</string>
+<string id="st_all_secret_lab_x7_descr">
+    <text>„Tento vìdeckı komplex se zabıval vıvojem technického vybavení pro všechny laboratoøe. Hlavním konstruktérem byl profesor S.I. Kajmanov. Díky jeho práci byly navreny zaøízení jako radar „Duga“, SVI „Kontrola“ a další. Šlo o pøístroje urèené pro rùzné laboratoøe k dalším experimentùm. Laboratoø sídlila v prostorách bıvalé továrny „Jupiter“. Místo bylo zvoleno kvùli dostupnému vybavení a podmínkám pro práci. Laboratoø fungovala a do poslední nehody v roce 2006 v komplexu X1. Po ní nebylo o laboratoøi X1 nic známo, pravdìpodobnì personál zahynul bìhem nehody.“</text>
+</string>
+<string id="st_all_secret_lab_x8_name">
+    <text>„Nosiè s daty o laboratoøi X8“</text>
+</string>
+
+<string id="st_all_secret_lab_x8_descr">
+    <text>„Vìdecko-vızkumnı a inenırskı komplex X8 byl jednou z hlavních laboratoøí projektu ‚O-Vìdomí‘. V tomto komplexu pracovalo mnoho vìdeckıch pracovníkù, zároveò zde probíhalo školení lidí, kteøí se mìli úèastnit experimentu v laboratoøích X1 a X2. Všichni, kdo prošli školením, byli posláni do laboratoøe X6, pøípadnì do X1 nebo X2, podle smìru. Školili se zde také inenıøi, kteøí byli pozdìji posíláni do dalších laboratoøí, vèetnì X9. Komplex slouil pøevánì jako centrum pøeškolování specialistù pro jejich další zaøazení do laboratoøí. Zbytek personálu se vìnoval inenırskému vıvoji. Posledním rozhodnutím inenırù z laboratoøe X8 bylo vytvoøení zaøízení z radaru ‚Duga‘, které mìlo sniovat úroveò agrese v okolí samotnıch antén. Vedoucím inenırského komplexu byl starší vìdeckı pracovník profesor N.A. Lebedev. V roce 2003 byla laboratoø z neznámıch dùvodù uzavøena a personál rozptılen do rùznıch laboratoøí. Èást byla pøevedena do laboratoøe X12, vìtšina inenırù pak do X9.“</text>
+</string>
+
+<string id="st_all_secret_lab_x9_name">
+    <text>„Nosiè s daty o laboratoøi X9“</text>
+</string>
+<string id="st_all_secret_lab_x9_descr">
+    <text>„Málo známı komplex, kde pracoval vìdeckı personál, zèásti nesloenı z pùvodních vìdeckıch skupin, ale z èásti pracovníkù ze sekretních obrannıch vızkumnıch ústavù. Jejich cílem bylo vytvoøení superzbranì zaloené na energetickıch èláncích. Jejich jedinım vısledkem bylo ‚Zaøízení è. 62‘, nazvané ‚Gaussova puška‘. Projekt dlouho stál, hlavním problémem byla nedokonalost energetickıch baterií. Aèkoli byl projekt èásteènì úspìšnı, spotøebovával vysokı vıkon pro nabíjení baterií. V roce 2004 byl projekt uzavøen. Èást personálu byla vrácena do obrannıch ústavù, èást poslána do jinıch laboratoøí. Vedoucí projektu byli pøemístìni do komplexu X1 s cílem pokraèovat v samostatném vıvoji zbraní.“</text>
+</string>
+
+<string id="st_all_secret_lab_x10_name">
+    <text>„Nosiè s daty o laboratoøi X10“</text>
+</string>
+<string id="st_all_secret_lab_x10_descr">
+    <text>„Vìdeckı komplex pùvodnì pøedstavoval vysílací vìe, ale po zmìnách v X8 a pøestavbì podzemních skladù vznikla laboratoø X10. Po pøestavbì se X10 stala stanicí pro potlaèování agrese. Antény byly postaveny na malé ploše bıvalé stavební továrny. Projekt pøevzal pod kontrolu tajnı obrannı vızkumnı ústav. Po prvních experimentech byly vısledky zklamáním – zaøízení nesplòovalo svùj úèel. Po odjezdu komise z ústavu se práce obnovily a antény byly upravovány. V roce 2006 pøi jednom testu došlo k druhé havárii na jaderné elektrárnì, po které došlo k poškození poslední vìe antény, co zpùsobilo poruchu zaøízení. Vznikla psi bariéra, která mìla potlaèovat agresi, ale místo toho ji zvyšovala a zbavovala rozumu všechny v dosahu. Prvními obìmi byli všichni zamìstnanci komplexu. Zaøízení bylo postupem èasu pøezdíváno ‚Vypalovaè mozkù‘ kvùli schopnosti zombifikovat lidi v celém komplexu.“</text>
+</string>
+
+<string id="st_all_secret_lab_x12_name">
+    <text>„Nosiè s daty o laboratoøi X12“</text>
+</string>
+<string id="st_all_secret_lab_x12_descr">
+    <text>„V podstatì tento komplex nebyl skuteènım komplexem, spíše slouil jako ukázkovı objekt pro zmatení komisí z jinıch vızkumnıch ústavù. Skládal se hlavnì z rozsáhlıch archivù dokumentace projektu ‚O-Vìdomí‘. Nacházel se na území bıvalého ústavu ‚Agroprom‘. Personál byl èásteènì pøeloen z rùznıch laboratoøí. Neprovádìl ádné vıznamné aktivity, pouze shromaïoval dokumenty a materiály z vızkumù a experimentù. Naštìstí pøed druhou havárií na elektrárnì byla vìtšina dokumentù odvezena mimo Zónu. Zbytek byl znièen. Po havárii se vìdci do X12 nevrátili, a laboratoø byla opuštìna.“</text>
+</string>
+
+<string id="st_all_secret_lab_x16_name">
+    <text>„Nosiè s daty o laboratoøi X16“</text>
+</string>
+<string id="st_all_secret_lab_x16_descr">
+    <text>„Tento laboratorní komplex byl povaován za jeden z nejdùleitìjších v projektu ‚O-Vìdomí‘. Pracovalo zde mnoho lidí na experimentech s instalací SVI ‚Kontrola‘. Šlo o sloitı projekt. Za prvé, vıvoj prototypu trval dlouho. Za druhé, stavba laboratoøe s instalaèní plochou zabrala hodnì èasu. Za tøetí, samotná instalace vyadovala znaèné úsilí. Instalace zaèala fungovat a v roce 1996. Vìtšina èasu byla vìnována vytvoøení hlavního prvku zaøízení. Zaøízení se pøehøívalo, bylo nutné jej neustále chladit. Objevovaly se poruchy a chyby v technickıch schématech, které u nebylo moné opravit. Spotøebovávalo hodnì energie, co vedlo k pøetíením sítì. Personál si stìoval na èasté bolesti hlavy, lékaøi spojovali pøíèinu s instalací. Pøi havárii na elektrárnì došlo ke skoku vıkonu, kterı zpùsobil nevratné škody v laboratoøi X16. Všichni pøítomní tam vèetnì areálu bıvalé továrny ‚Jantar‘ ztratili rozum, byli zombifikováni nebo zemøeli.“</text>
+</string>
+
+<string id="st_all_secret_lab_x18_name">
+    <text>„Nosiè s daty o laboratoøi X18“</text>
+</string>
+<string id="st_all_secret_lab_x18_descr">
+    <text>„Tento komplex byl posledním zmínìnım v dokumentech projektu ‚O-Vìdomí‘. Vznikl, kdy se vedoucí projektu zamıšleli nad vytvoøením ‚Monolitu‘. K podpoøe jeho funkce bylo nutné vyvinout ivou funkèní hmotu schopnou plnit rùzné úkoly, napøíklad udrovat vıkon. Protoe zaøízení bylo vytvoøeno za pomoci noosféry, potøebovalo takové prvky – shluky energie, které se získávaly i vytváøely rùznımi zpùsoby. Bylo také dokázáno, e tento zdroj energie je nevyèerpatelnı. Energii konvertovala speciální zaøízení navrená laboratoøí X7 pod vedením profesora Kajmanova. Nakonec došlo a k ivım organismùm, povaovanım za nejspolehlivìjší prvky. Byly inkubovány v laboratoøi X2 pro instalaci do øídícího komplexu ‚Monolitu‘. Po naplnìní bunìk byly testovány na stabilitu. Po dokonèení studií a pozorování jejich chování bylo rozhodnuto vırobu ukonèit, dokud nebude potøeba novıch bunìk energie. Laboratoø byla uzavøena, zaøízení konzervováno a personál pøemístìn do laboratoøe X7.“</text>
+</string>
+
+<string id="st_all_about_shram_paper_name">
+    <text>„Pøedpisové urèení objektù jedna a dva projektu S.T.A.L.K.E.R.“</text>
+</string>
+<string id="st_all_about_shram_paper_descr">
+    <text>„Charon. Experiment byl pravdìpodobnì úspìšnı. Vısledek by se mìl brzy projevit. Podle pøíkazu od Kreèeta: Objekt è. 1 – alias Støelec – musí bıt dopraven ke kontrolnímu bodu na Kordónu, pøedtím musí bıt Objekt è. 2 – alias Šrám – dopraven ke kontrolní stanici u Militari blízko Bariéry. K dopravì pouijte náklaïák smrti a dva spolehlivé mue z øad oldnéøù. Po dokonèení operace všechny svìdky vèetnì vykonavatelù zlikvidovat. Teï nás u nic nezastaví…“</text>
+</string>
+
+<string id="zat_anomalies_1_scanner_name">
+    <text>„Snímaè termální anomálie“</text>
+</string>
+<string id="zat_anomalies_1_scanner_descr">
+    <text>„Speciální snímaè anomální aktivity série 18.4798. Pouívají ho vìdci ke studiu procesù probíhajících v termálních anomáliích.“</text>
+</string>
+
+<string id="zat_anomalies_2_scanner_name">
+    <text>„Snímaè psi-statické anomálie“</text>
+</string>
+<string id="zat_anomalies_2_scanner_descr">
+    <text>„Speciální snímaè anomální aktivity série 16.4451. Pouívají ho vìdci ke studiu procesù probíhajících v psi-statickıch anomáliích.“</text>
+</string>
+
+<string id="zat_anomalies_3_scanner_name">
+    <text>„Snímaè gravitaèního symbionta“</text>
+</string>
+<string id="zat_anomalies_3_scanner_descr">
+    <text>„Speciální snímaè anomální aktivity série 14.2321. Pouívají ho vìdci ke studiu procesù probíhajících v gravitaèních anomáliích.“</text>
+</string>
+
+<string id="zat_anomalies_4_scanner_name">
+    <text>„Snímaè chemické anomálie“</text>
+</string>
+<string id="zat_anomalies_4_scanner_descr">
+    <text>„Speciální snímaè anomální aktivity série 12.1150. Pouívají ho vìdci ke studiu procesù probíhajících v chemickıch anomáliích.“</text>
+</string>
+
+<string id="st_zat_stalker_zubr_pda_name">
+    <text>„PDA Zubra“</text>
+</string>
+<string id="st_zat_stalker_zubr_pda_desc">
+    <text>„PDA stalkera–lovce jménem Zubr. Poslední záznam: ‚Pozoruji ty potvory jihozápadnì od Sosnodubu. Asi deset jedincù – chovají se agresivnì, ale nezabíjejí se navzájem. Divné. Podle chování jsou spíš jako èernobylští psi ne obyèejní slepci. A vzhled mají taky – jako kerber s jednou hlavou. Musím se pøiblíit – tøeba se podaøí jednoho nepozorovanì sestøelit...‘“</text>
+</string>
+
+<string id="st_pri_csky_kalancha_pda_name">
+    <text>„PDA profesora Kalanèi“</text>
+</string>
+<string id="st_pri_csky_kalancha_pda_desc">
+    <text>„Poslední záznam: ‚Mùeme se opravdu mılit ve vıpoètech? Pokud ano, všichni tady zemøeme. Ani Šrám, ani nikdo jinı pak nepomùe. Støelce jsme mìli zkusit zlikvidovat døív. Teï u je to bez smyslu… Všude jsou monolitovci… Zabíjeli jsme Gandalfa, a je to… konec.‘“</text>
+</string>
+
+<string id="st_pri_csky_lebedev_pda_name">
+    <text>„PDA profesora Lebedeva“</text>
+</string>
+<string id="st_pri_csky_lebedev_pda_desc">
+    <text>„Poslední záznam: ‚Šrám se pøiblíil ke Støelci pøíliš pozdì. U to pravdìpodobnì nic nezmìní. Naše síly docházejí. Toto rozhodnutí bylo sebevradou, i kdybychom mìli desetkrát více bojovníkù... stejnì je to teï jedno... Šrám... prolomil psi-ochranu Støelce... ale co to... vıboj... ne... jak... aa...‘“</text>
+</string>
+<string id="st_all_about_lebedev_paper_name">
+    <text>„Pøedpisové urèení objektù tøi a ètyøi projektu S.T.A.L.K.E.R.“</text>
+</string>
+<string id="st_all_about_lebedev_paper_descr">
+    <text>„Guron. Experiment pravdìpodobnì uspìl. Vısledek by nemìl dlouho èekat. Podle pøíkazu od Kreèeta: objekty è. 3 a 4, tedy Lebedev a Kalanèa, musí bıt pøevezeni do objektu Tesla pro další zpracování. Všechny stopy jejich pobytu v laboratoøi musí bıt znièeny. Osobní vìci objektù doruète na povrch Pøipjatì. Vytvoøte skrıš v oblasti øíèního pøístavu nedaleko vaší základny. Moná se ještì budou hodit...“</text>
+</string>
+<string id="st_pri_kardan_quest_gauss_pistol_shema_name">
+    <text>„Schéma zmenšené gauss cívky“</text>
+</string>
+<string id="st_pri_kardan_quest_gauss_pistol_shema_desc">
+    <text>„Sada vıkresù a schémat pro hlavní prvek experimentálního pistole – gauss cívky. Bez ní je nepravdìpodobné, e se podaøí vytvoøit potøebné èásti gauss pistole.“</text>
+</string>
+<string id="st_pri_kardan_quest_gauss_pistol_prototype_name">
+    <text>„Zaøízení è. 58“</text>
+</string>
+<string id="st_pri_kardan_quest_gauss_pistol_prototype_desc">
+    <text>„Nefunkèní prototyp gauss pistole.“</text>
+</string>
+<string id="st_jup_kardan_quest_gauss_pistolet_transistor_name">
+    <text>„Krabièka s tranzistory“</text>
+</string>
+<string id="st_jup_kardan_quest_gauss_pistolet_transistor_desc">
+    <text>„Bìné radiodíly – poleové tranzistory. Potøebné pro vırobu gauss cívky.“</text>
+</string>
+<string id="st_jup_kardan_quest_gauss_pistolet_wire_name">
+    <text>„Gauss cívka“</text>
+</string>
+<string id="st_jup_kardan_quest_gauss_pistolet_wire_desc">
+    <text>„Zmenšená verze gauss cívky pouívaná ve stejnojmenné zbrani. Potøebná pro vytvoøení elektromagnetického pole urychlovaèe – hlavního prvku jak gauss pušky, tak i gauss pistole.“</text>
+</string>
+<string id="st_jup_chapay_quest_paket_with_narkota_name">
+    <text>„Balíèek s nákladem“</text>
+</string>
+<string id="st_jup_chapay_quest_paket_with_narkota_desc">
+    <text>„Malı kompaktní polyethylenovı sáèek s obsahem bílého prášku. Buï heroin, nebo nìco jiného.“</text>
+</string>
+<string id="st_jup_chapay_quest_case_with_narkota_name">
+    <text>„Kuføík s nákladem“</text>
+</string>
+<string id="st_jup_chapay_quest_case_with_narkota_desc">
+    <text>„Podle váhy pravdìpodobnì obsahuje docela velkou zásilku drog. Odhadem za minimálnì pùl milionu.“</text>
+</string>
+<string id="st_zat_chapay_quest_flash_with_info_narkota_name">
+    <text>„Flashka se soubory“</text>
+</string>
+<string id="st_zat_chapay_quest_flash_with_info_narkota_desc">
+    <text>„Nìkolik textovıch souborù s pøíjmeními, telefony a adresami. Vypadá to jako nìjaká databáze. Pravdìpodobnì zde jsou zapsány osobní údaje kurırù a zprostøedkovatelù zloèineckého kanálu. Ale mnì to k nièemu není, nejsem narkokontrola.“</text>
+</string>
+<string id="st_jup_azot_nano_outfit_quest_2_case_name">
+    <text>„Kuføík s nanokevlarem“</text>
+</string>
+<string id="st_jup_azot_nano_outfit_quest_2_case_desc">
+    <text>„Pevnı, pohodlnı, nehoølavı kuføík. Obsahoval náklad patøící vìdcùm, konkrétnì unikátní nanokevlar.“</text>
+</string>
+<string id="st_jup_azot_nano_outfit_quest_2_shema_name">
+    <text>„Schéma stavby servomotorù a hydraulickıch posilovaèù“</text>
+</string>
+<string id="st_jup_azot_nano_outfit_quest_2_shema_desc">
+    <text>„Velmi cenné informace potøebné technikùm pro práci s hydraulickımi posilovaèi i servomotory.“</text>
+</string>
+
+<string id="st_pri_azot_nano_outfit_quest_3_flash_name">
+    <text>„Flashka s daty“</text>
+</string>
+<string id="st_pri_azot_nano_outfit_quest_3_flash_desc">
+    <text>„Flashka profesora Mironova s kopií souborù obsahujících informace o tvorbì poloneviditelnıch pøedmìtù.“</text>
+</string>
+<string id="st_pri_azot_nano_outfit_quest_3_case_name">
+    <text>„Kuføík s dokumenty“</text>
+</string>
+<string id="st_pri_azot_nano_outfit_quest_3_case_desc">
+    <text>„Kuføík profesora Mironova, obsahující dokumenty a vısledky jeho vızkumù v oblasti èásteèné mimikry.“</text>
+</string>
+<string id="st_zat_dolg_kanevsky_pda_name">
+    <text>PDA Kanevského</text>
+</string>
+<string id="st_zat_dolg_kanevsky_pda_descr">
+    <text>PDA dùstojníka DOLGu Kanevského. Všechny informace jsou zablokované.</text>
+</string>
+<string id="st_zat_dolg_kanevsky_documents_1_name">
+    <text>„Sloka se zápisy Kanevského“</text>
+</string>
+<string id="st_zat_dolg_kanevsky_documents_1_desc">
+    <text>„Na Janovì je málo místa. ‚Svoboda‘ se tu pevnì usadila a máme málo lidí, abychom je vyhnali. Voronin odmítá poslat posily – mají tam nìco podobného, mutanti proudí z Temné doliny masovì a najatí oldáci se snaí ubránit bar. Špatná situace. Varg øekl, e musíme hledat nová území. Zaton je ideální. Poslali jsme prùzkumníky, ale všechna vhodná místa u obsadili volní. Nechtìjí odejít dobrovolnì, násilím je vyhnat nelze – nechceme si pøidìlávat ještì samotáøe jako nepøátele. Na Zatonu je opuštìná loï, kde si zaloili základnu stalkerové. Vede je místní šmelináø zvanı Sych, a barman pøezdívanı ‚Vous‘. Snaili jsme se s nimi domluvit, slíbili jsme jim všechno moné – peníze, artefakty i zásobování z našich skladù – ale nechtìjí. Jsou zkušení, vìdí, co dìlají. Rozhodli jsme se najmout bandity, aby vyøídili samotáøe, kteøí u ztratili strach. Za 2-3 dny by mìli zaútoèit na ‚Skadovsk‘ a vyhnat odtud tu stalkerskou havì. Pak za tıden-dva, a samotáøi zakòuèí, je Sultán pøitlaèí, a my provedeme ‚osvobozeneckı‘ vıpad a zabijeme bandity, aby ‚Skadovsk‘ byla základna DOLGu.“</text>
+</string>
+<string id="st_zat_dolg_kanevsky_documents_2_name">
+    <text>„Sloka s dokumenty Kanevského“</text>
+</string>
+<string id="st_zat_dolg_kanevsky_documents_2_desc">
+    <text>„Zaèali jsme vyjednávat s bandity. Souhlasili, jsou rádi, e si koneènì nìco vynahradí. Nejdøív nám nevìøili, bylo to podezøelé – støíleli na nás, ale pak najednou úplnì zmìnili postoj a dokonce nám pøedloili vybavení na talíøi s modrım lemem. Pøesvìdèili jsme je, e Zóna se mìní a plány se mìní, bıvalí nepøátelé se stávají nejlepšími pøáteli. Jsme tu dva ze štábu na Zatonu – já a Morgan. Morgan má na starosti naše sklady a domlouvá zásobování banditù naším vybavením. Dohoda mìla bıt podepsána, prı se setkali na Lesnictví. Já vedu vyjednávání s vyslancem Sultána. Ten se sám neukazuje, bojí se lestí. U jsem mìl tøi schùzky s jeho zástupcem Kabanem. Ten je fakt podvodník. Dohodli jsme se na ètvrté schùzce. Vèera jsme èekali a místo Kabana pøišel úplnì jinı bandita. Nazval se Pomstitelem a øekl, e Kabana zastøelili samotáøi a teï on je hlavní vyjednavaè banditù. Také oznámil, e Morgana a bandity na Lesnictví zastøelili stalkerové, pøímo pøi jednání. Nìjak se to dozvìdìli, parchanti! Pøesto jsme dohodu uzavøeli a zítra nám Pomstitel pøinese kufr s penìzi za vybavení. Sám prı pøijít nemùe, volní nìco tuší. Budeme èekat.“</text>
+</string>
+<string id="st_geo_quest_skladovsk_defence_name">
+    <text>„Bedna s municí“</text>
+</string>
+<string id="st_geo_quest_skladovsk_defence_descr">
+    <text>„Velmi tìká bedna napìchovaná náboji.“</text>
+</string>
+<string id="st_geo_3_name">
+    <text>„PDA Kanevského“</text>
+</string>
+<string id="st_geo_3_desc">
+    <text>„PDA patøící dùstojníkovi DOLGu Kanevskému. Data jsou chránìna heslem a zašifrována.“</text>
+</string>
+<string id="st_pri_pogect_istocnik_killer_pda_1_name">
+    <text>„PDA Teutona“</text>
+</string>
+<string id="st_pri_pogect_istocnik_killer_pda_1_desc">
+    <text>„Poslední zpráva: ‚Skupina Serbina zahynula, ale podle novıch dat byl komplex H8 znovu aktivován. Skupina Xaviera mìla zajistit zálohu, ale nevím, jestli dokázali to, co Serbin nezvládl. Vyra tam a z laboratoøe vytáhni všechno, co by mohlo poukazovat na projekt „Pramen“.’“</text>
+</string>
+<string id="st_pri_pogect_istocnik_killer_pda_2_name">
+    <text>„PDA Xaviera“</text>
+</string>
+<string id="st_pri_pogect_istocnik_killer_pda_2_desc">
+    <text>„Poslední zpráva: ‚Fagot, úkol splnìn. Data k projektu „Pramen“ máme. Domluv schùzku s Richardsem. Nejlépe nìkde na odlehlém místì, aby tam bylo co nejmíò zvìdavcù.’“</text>
+</string>
+<string id="st_pri_pogect_istocnik_alfa_pda_1_name">
+    <text>„PDA kapitána Richardse“</text>
+</string>
+<string id="st_pri_pogect_istocnik_alfa_pda_1_desc">
+    <text>„Poslední zpráva: ‚Mu z oldákù navázal kontakt. Havier nás bude èekat poblí závodu, nedaleko stanice Janov. Doufám, e schùzka nebude dlouhá. Pokud nìco pùjde špatnì – moje skupiny zabijí Haviera a vezmou dokumenty. A pak bude mise splnìna.‘“</text>
+</string>
+<string id="st_pri_pogect_istocnik_alfa_case_name">
+    <text>„Kuføík s dokumentací“</text>
+</string>
+<string id="st_pri_pogect_istocnik_alfa_case_desc">
+    <text>„Kuføík obsahuje informace o projektu ‚Pramen‘.“</text>
+</string>
+<string id="st_all_quest_greh_3_pda_name">
+    <text>„PDA Mírového“</text>
+</string>
+<string id="st_all_quest_greh_3_pda_desc">
+    <text>„Poslední záznam: Vypátrali jsme, co pouívají høíšníci. Nìjakı novı preparát. Nevím, co to dìlá s psychikou. Velkou dávku høíšníci skladovali u skladù s kontejnery. Hlavní u nich, kdo pøivezl preparát, byl Demonolog. V rozhovoru s dalším muem jménem Osiris zmínil, e další zásilka pøijde za pár dní. Sakra, to jsou kontroloøi? Vypadá to, e jsou to psionici... sakra, musíme utéct, jsou nás vyluštili...“</text>
+</string>
+<string id="st_all_quest_greh_6_pda_name">
+    <text>„PDA Demonologa“</text>
+</string>
+<string id="st_all_quest_greh_6_pda_desc">
+    <text>„Poslední záznam: Osiris, musíme ustoupit. Vezmi vìtšinu lidí na Jupiter, brzy tam dorazím. To je teprve zaèátek. Inspirátor u je tady. Pánové vìdí, co mají dìlat…“</text>
+</string>
+<string id="st_all_quest_greh_osiris_name">
+    <text>„Dokumenty Osirise“</text>
+</string>
+<string id="st_all_quest_greh_osiris_desc">
+    <text>„Záznam: Vypadá to, e jsme byli jen vyuiti. Pro Pány nemáme ádnou hodnotu. Anubis je jejich øetìzovı pes, je pøipraven jít a do konce. Co vlastnì chce – není jasné. A u to není dùleité. Høích padl, ale oni za to zaplatí. A Anubis jako první…“</text>
+</string>

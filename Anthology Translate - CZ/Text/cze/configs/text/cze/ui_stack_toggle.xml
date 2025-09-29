@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table><string id="ui_stack_toggle">
+  <text>Složit/Rozložit</text>
+</string>
+
+<string id="ui_mcm_menu_stackToggle">
+  <text>Nastavení skládaní předmětů</text>
+</string>
+
+<string id="ui_mcm_stackToggle_subtitleBehavior">
+  <text>Přepnout chování</text>
+</string>
+
+<string id="ui_mcm_stackToggle_resetOnOpen">
+  <text>Resetovat při zavření inventáře</text>
+</string>
+
+<string id="ui_mcm_stackToggle_resetOnOpen_desc">
+  <text>Pokud je povoleno, inventář se vždy otevře ve skládacím režimu bez ohledu na to, jak byl nastaven dříve.</text>
+</string>
+
+<string id="ui_mcm_stackToggle_useKeybind">
+  <text>Přepnout při stisku SHIFT + LEVÝ ALT</text>
+</string>
+
+<string id="ui_mcm_stackToggle_useKeybind_desc">
+  <text>Povolit klávesovou zkratku SHIFT + LEVÝ ALT k přepnutí mezi skládacím a neskládacím režimem, když je inventář otevřen.</text>
+</string>
+
+<string id="ui_mcm_stackToggle_useButton">
+  <text>Zobrazit tlačítko přepnutí</text>
+</string>
+
+<string id="ui_mcm_stackToggle_useButton_desc">
+  <text>Zobrazit/skryt tlačítko přepnutí v inventáři.</text>
+</string>
+
+<string id="ui_mcm_stackToggle_subtitleButton">
+  <text>Pozice Tlačítka</text>
+</string>
+
+<string id="ui_mcm_stackToggle_buttonX">
+  <text>Posun X (Do stran)</text>
+</string>
+
+<string id="ui_mcm_stackToggle_buttonY">
+  <text>Posun Y (Nahoru či dolu)</text>
+</string>
+
+<string id="ui_mcm_stackToggle_noteButton">
+  <text>POZNÁMKA: Pozice X a Y jsou relativní k hráčově straně obrazovky inventáře.</text>
+</string>
+
+<string id="ui_mcm_stackToggle_subtitleAlwaysStack">
+  <text>Nikdy nerozkládat tyto typy předmetů</text>
+</string>
+
+<string id="ui_mcm_stackToggle_noteAlwaysStack">
+  <text>POZNÁMKA: Vybrané typy předmětů níže budou vždy zobrazeny jako složené bez ohledu na to, jak je přepínač nastaven.</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_bolts">
+  <text>Šrouby</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_patches">
+  <text>Nášivky frakcí</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_ammunition">
+  <text>Munice</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_partsMutant">
+  <text>Části Mutantů</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_partsAmmo">
+  <text>Části Munice</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_partsCrafting">
+  <text>Řemeslnické součástky</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_partsOutfit">
+  <text>Části obleků</text>
+</string>
+
+<string id="ui_mcm_stackToggle_alwaysStack_partsWeapon">
+  <text>Části zbraní</text>
+</string>
+
+</string_table>

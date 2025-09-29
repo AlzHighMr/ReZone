@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!--Buttons & Hint-->
+<string id="note_button_private">
+    <text>Personal notes</text>
+</string>
+<string id="note_btn_private_hint">
+    <text>Personal records, notes, etc.</text>
+</string>
+<string id="note_button_monsters">
+    <text>Mutants</text>
+</string>
+<string id="note_btn_monsters_hint">
+    <text>The section dedicated to mutants</text>
+</string>
+<string id="note_button_locations">
+    <text>Locations</text>
+</string>
+<string id="note_btn_locations_hint">
+    <text>The section dedicated to locations</text>
+</string>
+<string id="note_button_factions">
+    <text>Factions</text>
+</string>
+<string id="note_btn_factions_hint">
+    <text>The section dedicated to factions</text>
+</string>
+<string id="note_button_anoms">
+    <text>Anomalies</text>
+</string>
+<string id="note_btn_anoms_hint">
+    <text>The section dedicated to anomalies</text>
+</string>
+<string id="note_button_artefacts">
+    <text>Artifacts</text>
+</string>
+<string id="note_btn_artefacts_hint">
+    <text>The section dedicated to artifacts</text>
+</string>
+<string id="btn_ok_text">
+    <text>Apply</text>
+</string>
+<string id="btn_del_text">
+    <text>Delete note</text>
+</string>
+<string id="note_btn_next_hint">
+    <text>Next</text>
+</string>
+<string id="note_btn_back_hint">
+    <text>Back</text>
+</string>
+<string id="note_button_ranks">
+    <text>Ranks</text>
+</string>
+<string id="note_btn_ranks_hint">
+    <text>Top 20 stalkers</text>
+</string>
+<!--/Buttons & Hint-->
+
+<!-- Location -->
+<string id="escape">
+	<text>Cordon</text>
+</string>
+<string id="enc_location_escape">
+	<text>sss</text>
+</string>
+<!--/Location-->
+
+<!--Community-->
+<string id="enc_faction_stalker">
+    <text>The most reasonable guys to interact with, they have interest in ideological nonsense or grand goals. Stalkers make a living by searching for artifacts or collecting mutant parts, which are in demand by local and global science. They establish camps, checkpoints and trading posts, which they diligently defend against local wildlife or troublemakers. The latter only consists of thugs and military personnel, they maintain normal relations with others. The only thing that hurts the group's reputation is the prevalence of rookies. While it's worth engaging and assisting promising individuals, there are also absolute idiots who are just one step away from encountering their first anomaly, a pack of hungry dogs or even tripping and fatally hitting their head. Such individuals can only be helped by kicking them out of the Zone.</text>
+</string>
+<string id="enc_faction_bandit">
+    <text>The scum of society in all its glory. They sport standart sets of clothes, like sport pants and leather jackets. Everything is straightforward with them and they play by their own rules. Without a dictionary on their slang and all its intricacies, you won't even be able to understand the unexpected thoughts they want to convey to you. However, you don't need to worry because these primitive creatures will always be asking for the same two things: Money or simply to decorate the landscape with your corpse, just for the sake of it. They often roam in groups, which is why they pose a serious threat. In terms of weapons, they are usually poorly armed. They were regularly beaten and frequently dropped on their heads as children, so you don't have to fear any tactical surprises. Their only tactic is to surround you as a group and tear you apart. Their lair is usually found in Garbage and they rarely stray far from their snake pit. Although sometimes they may accidentally surprise you in places where you have no idea how you ended up, let alone them.</text>
+</string>
+<string id="enc_faction_freedom">
+    <text>Cheerful youngsters without a care in the world. They consider themselves anarchists and have a very warm atmosphere at their base. It gives the impression that all they do is drink and party, but in reality they are seasoned fighters. They have bravery and experience that can't be underestimated. The most knowledgeable members are equipped with body armor and weapons that are top-notch. However, they generally prefer light and long-range weapons, so their arsenal consists mostly of sniper rifles or NATO weapons with enhancements. They also choose lighter armors that sacrifice bullet resistance but allow better mobility. If that's what they prefer, so be it. Although it would be interesting to know who supplies them with such weapons and all their booze. They must have interesting sponsors.</text>
+</string>
+<string id="enc_faction_dolg">
+    <text>A militarized group with army discipline. They follow precise orders and minimize improvisation. As far as I've learned, many of them have served in hotspots in the past, with some even having special forces training. In other words, it's advisable to prepare yourself in advance before picking a fight with these formidable individuals. They prefer heavy and brute-force weapons, almost like they're driving tanks, although they are heavily armored enough to be called tanks themselves. They have an intense hatred for the Freedom faction. This enmity has given rise to numerous legends and amusing tales, but in reality, it's a simple bloody massacre without any objective reason or goal. Generally, they are quite friendly people and they even find amusement in making fun of their own superiors and regulations from time to time.</text>
+</string>
+<string id="enc_faction_killer">
+    <text>An incredibly mysterious and secretive community. There is zero information about their base, numbers, leaders, the scope of their activities and which cases they take on and which ones they reject. In fact, nothing is known about them! But that only fuels the interest and curiosity. The only thing that is clear is that there are certain intermediaries between them and their clients, through whom all transactions are conducted. But the identities of these informants or dealers is also secret. It seems that reputable traders like Sidorovich and other faction leaders possess this information but keep it under wraps due to certain non-disclosure conditions. Overall, everything points them being a genuine faction, rather than just a bunch of fools united for fun. They most likely even track and secretly select people, rather than simply making them recite an oath. You're living your life and fooling around, and one day you stumble upon a note in your own backpack inviting you to meet and discuss potential collaboration. Although these are just speculations and tales, nothing can be clearly said about the Mercenaries.</text>
+</string>
+<string id="enc_faction_monolith">
+    <text>There are numerous rumors and horror stories about these strange individuals who have gone off the deep end, becoming personal guards of the Monolith, if it really exists that is. Apparently, they are fanatics who pray to a stone from an otherworldly realm, which materialized or fell from the sky right in the center of the Zone. They worship it and believe that the boulder grants the wishes of true believers. They wander near the Scorcher and dove into its emissions head-first, like a mass suicide. However, several months later, those madmen are seen alive and well! They completely lose their minds in the process however, and indiscriminately kill anyone who is not a believer. They control various paths to the north such as Radar and protect their stone at the cost of their own lives. No one knows how they manage to survive in the Zone's extreme levels of psi-emissions and radiation, but it was precisely after these idol-worshippers appeared that stalkers began discussing the Monolith as a reality. If this stone weren't real, then the madmen would have perished long ago, something mystical must be in the center. Perhaps it's true, but a bullet to the head still drops these enlightened ones, which suits me just fine.</text>
+</string>	
+<string id="enc_faction_army">
+    <text>The ordinary soldiers who, for the most part, are just serving their duty. Because of this, they have no enthusiasm to risk their lives for the sake of eliminating unwanted elements like our stalker brethren. In other words, they don't voluntarily venture deep into the Zone in groups on their own initiative; they only occasionally go on helicopter raids to take out anyone who crosses their path. Very rarely, although I haven't witnessed it myself, people have reported that the military carries out serious operations to capture specific objects. They are probably trying to uncover the reasons behind the disaster. However, these operations are not carried out by ordinary conscripts, but by specialized units with appropriate weapons and equipment. Regardless, such incidents happen infrequently, so there's no need to worry about it. Usually, they spend their time sitting at checkpoints and shooting pedestrians with machine guns.</text>
+</string>
+<string id="enc_faction_ecolog">
+    <text>You can get the most profitable and harmless assignments from them. They are interested in mutants, preferably dead and dismembered ones for spare parts. They constantly explore different properties and need a continuous supply of raw materials. As far as I know, this was before my time you see, they used to focus on artifacts and people used to sell them these stones by the hundreds. However, since these are not organic tissues, they can be examined for much longer before they become useless. Although they still buy artifacts, the payment they give out isn't that high. They have no connection to local conflicts and wars. Overall, they are very cynical and indifferent scoundrels. They consider people as expendable material, and achieving the most incomprehensible goals justifies any sacrifices.</text>
+</string>
+<string id="enc_faction_zombied">
+    <text>Greed and curiosity led these stalkers to such a dismal fate. If they hadn't stuck their noses in forbidden places, searching for unseen treasures, they would have remained safe and sound. Although technically they continue to live and walk the earth, they are no longer considered human. They are mindless shells driven by two primitive instincts: to kill and to consume. They constantly mutter incomprehensible phrases and, in the traditional sense, wield weapons. Their dead minds are still twitching. But this doesn't last long; over time, they turn into real zombies, complete with the decomposition and almost complete indifference to injuries.</text>
+</string>
+<!--/Community-->
+
+<!--Monsters-->
+<string id="Blind_Dog">
+    <text>Blind dogs</text>
+</string>
+<string id="enc_mutant_Blind_Dog">
+    <text>A specific breed of mutated stray dogs. Determining their original gene pool is only possible under laboratory conditions. Their vision is completely atrophied, while their sense of smell and hearing are heightened. They hunt in packs, with the number of individuals in a pack ranging from approximately 5 to 10. During an attack, they surround their prey and knock them down with jumping attacks. There is no leader among them. Individual members only stop attacking when they sustain severe injuries.</text>
+</string>
+<string id="Krovosos">
+    <text>Bloodsuckers</text>
+</string>
+<string id="enc_mutant_Krovosos">
+    <text>A legendary monster. However, meeting this particular celebrity will only bring serious trouble. They have the ability to blend into their surroundings, becoming almost completely invisible to the eye. So, if it seems like there's no one in a dark and damp basement, it doesn't mean that this disgusting creature won't pounce on your throat in an instant. Next, they are completely impervious to any kind of weaponry in this invisible state, which seriously complicates the task of staying alive. You have to find the right moment to engage, but there's very little time to think as it tears through armor with its claws in half a second. Moreover, because of the shape of these claws or whatever they're smeared with, wounds they make bleed profusely and heal very slowly. In other words, it's better not to wander through catacombs without a reason, as that's where they are usually found. But if you really need to explore holes in the ground, it's best to stock up on medical supplies and wear the most advanced armor you have in your wardrobe.</text>
+</string>
+<string id="Krovosos_1">
+    <text>Swamp creatures</text>
+</string>
+<string id="enc_mutant_Krovosos_1">
+    <text>A small subspecies of bloodsuckers that have adapted to scare people in the reeds rather than in dark alleys. Don't expect anything extraordinary; they have the same set of surprises in the form of razor-sharp claws and cute tentacles with suction cups to extract fresh donor blood from the first unlucky victim they come across. Afterward, they go and cash in by selling the blood, although their conscience bothers them so they don't show themselves to people by becoming invisible.</text>
+</string>
+<string id="Kaban">
+    <text>Boars</text>
+</string>
+<string id="enc_mutant_Kaban">
+    <text>Utterly senseless hogs. Once they start charging, nothing will make them deviate from their path. The train driver fell asleep and the train is going fast. You wait for that blissful moment, step aside, and shoot them in the back with a shotgun as they pass by at full speed. If you mess this up and don't step aside in time, there won't be a dry spot left. They tear through everything with their fangs. Long story short, the main thing is not to linger in one place. Although when they attack in a herd, you won't have much room to maneuver. It's better to turn around and leave. Later, you can admire the pigs from a distance.</text>
+</string>
+<string id="Flesh">
+    <text>Fleshes</text>
+</string>
+<string id="enc_mutant_Flesh">
+    <text>Every time I see them I feel sick realizing that these melting creatures with one bulging eye and a droopy one were nothing but ordinary pink piglets once. It's incomprehensible what kind of devilry is happening in the world. Ugly short legs with claw-like paws. A horrifying sight. A painful screech instead of squealing. It's such an obvious and blatant perversion of nature that I even feel sorry for these disfigured creatures. The only way out in this situation is to truly show mercy and put these unfortunate beings down, like rabid dogs. Although it's not as easy as it may seem. They graze in packs and their petrified skin can withstand multiple point-blank shotgun shots.</text>
+</string>
+<string id="Poltergeyst">
+    <text>Electric poltergeist</text>
+</string>
+<string id="enc_mutant_Poltergeyst">
+    <text>Truly supernatural invisible creatures that are encountered only in the depths of the Zone. They usually inhabit semi-ruined buildings. Nothing is known for certain about their origin; there is a legend that they are the spirits of stalkers who were caught in a powerful emission. The manifestation style of these invisible creatures indeed corresponds to the legends of poltergeists (hence the name) and varies from periodic howling and laughter to various objects being thrown around. Unfortunately, all information about this phenomenon is derived from vague and rather contradictory accounts, the authenticity of which is questionable.</text>
+</string>
+<string id="Poltergeist_1">
+	<text>Fire poltergeist</text>
+</string>
+<string id="enc_mutant_Poltergeist_1">
+	<text>Truly supernatural invisible creatures that are encountered only in the depths of the Zone. They usually inhabit semi-ruined buildings. Nothing is known for certain about their origin; there is a legend that they are the spirits of stalkers who were caught in a powerful emission. The manifestation style of these invisible creatures indeed corresponds to the legends of poltergeists (hence the name) and varies from periodic howling and laughter to the appearance of dangerous fireballs materializing out of nowhere. Unfortunately, all information about this phenomenon is derived from vague and rather contradictory accounts, the authenticity of which is questionable.</text>
+</string>
+<string id="PseudoDog">
+    <text>Psydog</text>
+</string>
+<string id="enc_mutant_PseudoDog">
+    <text>Inheriting distinctive traits from pseudodogs, this creature, which dwells near strong sources of psi-radiation, has acquired a number of new ones. The most significant is the ability of mental projection, creating two to six spectral clones that precisely mimic the behavior of the projector. Such clones are no less dangerous than the pseudodog itself. Without a physical form, the projected entities are capable of inflicting both physical and psi damage. They can be visually distinguished by their lighter and stiffer fur. They inhabit the northern parts of the Zone, usually as part of a small kin pack, but individual specimens are more commonly encountered.</text>
+</string>
+<string id="PseudoDog_1">
+    <text>Pseudodogs</text>
+</string>
+<string id="enc_mutant_PseudoDog_1">
+    <text>Mutated wolves. Their round muzzle with a flattened nose gives them a deceptive resemblance to certain dog breeds. The front teeth, including the fangs, have a pointed triangular shape and are noticeably enlarged. When the jaws are closed, there are no gaps between the teeth. Therefore, their wounds are more likely to be deep and slashing rather than tearing. They hunt alone, although sometimes 2-3 individuals can be encountered simultaneously. They prefer to attack their prey from behind, make no warning sounds and move almost silently. In other words, they effectively utilize the element of surprise.</text>
+</string>
+<string id="Pseudo_Gigant">
+    <text>Pseudogiants</text>
+</string>
+<string id="enc_mutant_Pseudo_Gigant">
+    <text>This is what improper nutrition leads to! Indulging in hamburgers, chips and other junk food with all those sweeteners and flavor enhancers, then washing it down with chemically-loaded soda, what you end up with is a two-ton creature! But on a serious note, the only thing you should definitely not underestimate is the exceptional agility of this outwardly clumsy body. It can catch up to you in no time, crush you and leave no trace. Sometimes, just for fun, it can stomp its foot to the ground, causing a localized earthquake with a fifteen-meter diameter. Its shockwave knocks you down instantly. In other words, when encountering this fatty, there's no desire to joke around. Taking it down is very difficult too. Its brain is tucked deep within its massive torso, so forget about precise shots. Its skin is impenetrable, so you either shoot at it persistently with a powerful shotgun, preferably a machine gun, or you bombard it with grenades from a distance.</text>
+</string>
+<string id="Snork">
+    <text>Snorks</text>
+</string>
+<string id="enc_mutant_Snork">
+    <text>I always suspected that if you don't take off your gas mask for a long time, something irreversible might happen. Well, here you go, enjoy the sight. On the other hand, these beauties can work posing as an elephant at children's parties, without even needing a mask. But it's not funny to laugh when you encounter these unfortunate creatures. It's terrifying to imagine how much pain and deprivation one must endure to degrade to such a state. A disfigured body with protruding ribs, peeling skin, and a horrifying hungry grin on the remains of a face. Tattered clothing and that repulsive gas mask resembling a bald, hairless skull. It's a godforsaken sight. They roam around in small packs, searching for food, almost crawling on the ground and sniffing out their prey. They prefer pouncing on you like wild animals and tear you apart with their claws and teeth. An unpleasant foe, especially since it's hard to shake off the knowledge that before you stands a human being, not a fictional monster.</text>
+</string>
+<string id="Tushkan">
+    <text>Tushkanos</text>
+</string>
+<string id="enc_mutant_Tushkan">
+    <text>They would have been pretty cute with their fluffy ears if they weren't so toothy and ravenous. They attack in a whole pack and try to overwhelm you with their numbers. If you have a decent shooter, you can stand your ground and pick them off one by one as they approach. It's a proven method, but sometimes painful. Hitting such small moving targets while trying to dodge isn't a simple task. You'll deplete your ammunition and your armor will be torn to shreds below your knees.</text>
+</string>
+<string id="Controller">
+    <text>Controllers</text>
+</string>
+<string id="enc_mutant_Controller">
+    <text>Perhaps the most legendary monster, the subject of jokes and numerous scary stories. To encounter one and survive is a reason to be grateful for your lucky star, but to bring down such a specimen is an act of heroism. No bulletproof vests can protect you from the ability of this monster to subjugate its victim, to zombify and turn them into a first-rate slave. Seasoned individuals stroll around with their entourage of subordinates, who are ready to tear you apart at this puppeteer's whim. However, as far as I can tell, the process of mind control often ends in a simple lethal outcome, rather than a carefree future in the owner's company. The brains burn out completely and there's nothing left to control. The only way to protect your head is to get heavily intoxicated and, with trembling hands, squeeze the trigger until they turn blue. Well, it's also fair to just run away from this monstrosity.</text>
+</string>
+<string id="Himera">
+    <text>Chimeras</text>
+</string>
+<string id="enc_mutant_Himera">
+    <text>I've heard a couple of times in conversations that this monster isn't a mutated creature, but something deliberately created in a laboratory. If that's true, I would really like to have a chat with the creator of this masterpiece by arranging a free tour for the scoundrel to the nearest lair of the beast. Oh, I would love to see how the offspring and parent would meet each other, maybe cry with joy and embrace tightly. A family reunion! Still, their upbringing is very poor. They attack everyone indiscriminately, move very fast, and with its jumps, instantly nullifies any attempts to maintain distance. It's impossible to hide from it because it has two heads. It admires its own rear end around the clock. These creatures have gone wild without parental supervision. They don't cut their nails, so try not to get him. Clearly, they don't bathe regularly either, so its skin has become stiff from layers of dirt. In short, it would be nice to restore the family unit so that the parents could take care of their offspring. Otherwise, they are left to their fate and that's how something completely grotesque grews up. It's disorderly, although you could also not bother with re-education and simply shoot it down instead.</text>
+</string>
+<string id="Burer">
+	<text>Burers</text>
+</string>
+<string id="enc_mutant_Burer">
+    <text>Incredibly dangerous and cunning creatures. They inhabit dark and enclosed spaces and can also sense the presence of their prey long before making direct visual contact and take full advantage of it. Imagine, you are crawling through the catacombs, seemingly in proud solitude, and suddenly your head starts splitting, blood vessels burst in your eyes. But the fun is just starting! Within a moment, all loose objects soar into the air and then rain down on you. The party is in full swing. Almost accidentally, you come face to face with the instigator of the festivities, a pot-bellied fella in a gloomy cloak with glowing eyes. These scoundrels are in no hurry to meet you; they skulk in the corners and run away until you corner them. But even when cornered, they repel with strange waves that push you back, preventing you from getting within shooting range of say, a shotgun. You have to come up with strategies and act based on the peculiarities of the terrain. Without serious armor you'll surely be crushed in a narrow corridor, but if you have room to maneuver, you need to hustle and get closer to throw a grenade or empty a magazine. In any scenario, they're extremely clever opponents with an unpleasantly rich arsenal of tools for your demise and their own protection.</text>
+</string>
+<!--/Monsters-->
+
+<!--Anomaly-->
+<string id="jarka">
+    <text>Burner</text>
+</string>
+<string id="enc_anomaly_jarka">
+    <text>In its inactive state, it appears as a barely visible cloud of hot air. However, when any object or living creature enters its range, it forms a compact zone heated to a temperature of around 1500K. At night, it can only be detected by powerful detectors or by throwing metallic objects.</text>
+</string>
+<string id="gazirovka">
+    <text>Gas</text>
+</string>
+<string id="enc_anomaly_gazirovka">
+    <text>Strange chemical processes occur non-stop in this anomaly. The result is acid that corrodes the skin and toxic gases that equally corrode the lungs. Fortunately, "gas" can be easily noticed in open areas. It's worse when you unexpectedly encounter it in a dark tunnel.</text>
+</string>
+<string id="electra">
+    <text>Electro</text>
+</string>
+<string id="enc_anomaly_electra">
+    <text>The electro anomaly is easily distinguishable at any time of day. During the day, it can be identified by its blue mist, and at night, with the help of a detector or by throwing a metallic object. Usually, the anomaly has a diameter of about 10 meters and accumulates a powerful static electricity charge. When disturbed, the anomaly releases a series of mini-lightning bolts, and being hit by the current is almost always lethal for any living creature.</text>
+</string>
+<string id="tramplin">
+    <text>Springboard</text>
+</string>
+<string id="enc_anomaly_tramplin">
+    <text>This anomaly was discovered early on, back in 2008. It inflicts impact damage through a gravitational field, similar to a shockwave from an explosion. It stays in one place for about a week and varies in strength during its lifespan. The effects range from bruises and contusions to instant death with the launch of the victim into orbit. It can be detected by distortions in the air above it, swirling foliage, and characteristic reddish-brown marks on the ground where unlucky rookies and fools "took off." It is easily detected by various types of detectors and by throwing different metallic objects into it.</text>
+</string>
+<string id="voronka">
+    <text>Vortex</text>
+</string>
+<string id="enc_anomaly_voronka">
+    <text>An anomaly of presumably gravitational nature. When triggered, the tremendous power of the Vortex drags everything within the radius of 10-15 meters towards center. Victims drawn into the core have no chance of survival: their bodies are quickly constricted into a tight lump, only to be blown up in a powerful discharge of energy a moment later. The anomaly remains stationary throughout its lifetime (a week on average). Easily recognizable in daylight by the air fluctuation above, dancing leaves, fragments of dismembered corpses lying around and a distinctive dark stain in the center. Highly dangerous at night since it can be revealed only by means of a detector or by throwing metal objects into it.</text>
+</string>
+<string id="karusel">
+    <text>Whirligig</text>
+</string>
+<string id="enc_anomaly_karusel">
+    <text>The name is due to the effect of lifting any living creature into the air and then spinning it at tremendous speed. The nature of the anomaly has not been fully explored. It can be detected by a slight dust vortex and scattered body fragments around it. Victims caught on its outer rim - far enough from the maximum effect zone at the center - can escape the Whirligig with relatively minor injuries.</text>
+</string>
+<string id="kameta">
+    <text>Comet</text>
+</string>
+<string id="enc_anomaly_kameta">
+    <text>A fiery ball about a meter in diameter. The heat from it can be felt at a greater distance. It actively moves through enclosed areas.</text>
+</string>
+<string id="tesla">
+    <text>Tesla</text>
+</string>
+<string id="enc_anomaly_tesla">
+    <text>It can be described as a "ball lightning." Undoubtedly, it is a ball, and undoubtedly, of electrical nature... It actively moves along closed trajectories.</text>
+</string>
+<string id="surge">
+    <text>Emission</text>
+</string>
+<string id="enc_anomaly_surge">
+    <text>At different intervals of time, the Zone is affected by gravitational surge waves combined with a sharply increased psychotropic influence. Being in the Zone during this activity is deadly. Invisible waves traverse the entire territory and those without specialized equipment die within seconds. The ground starts shaking, followed by a series of flashes. The sky glows brightly and the world turns black and white as the eyes can't handle the blinding sun. During an emission, phantom formations and shimmers can be seen near gravitational anomalies.</text>
+</string>
+<!--/Anomaly-->
+
+<!--Artefacts-->
+<string id="baloon">
+    <text>Bubble</text>
+</string>
+<string id="blood">
+    <text>Stone Blood</text>
+</string>
+<string id="cristall_flower">
+    <text>Stone Flower</text>
+</string>
+<string id="cristall">
+    <text>Crystal</text>
+</string>
+<string id="dummy_battery">
+    <text>Battery</text>
+</string>
+<string id="dummy_dummy">
+    <text>Dummy</text>
+</string>
+<string id="dummy_glassbeads">
+    <text>Mama's Beads</text>
+</string>
+<string id="electra_flash">
+    <text>Flash</text>
+</string>
+<string id="electra_moonlight">
+    <text>Moonlight</text>
+</string>
+<string id="electra_sparkler">
+    <text>Sparkler</text>
+</string>
+<string id="eye">
+    <text>Eye</text>
+</string>
+<string id="fire">
+    <text>Flame</text>
+</string>
+<string id="fireball">
+    <text>Fireball</text>
+</string>
+<string id="fuzz_kolobok">
+    <text>Kolobok</text>
+</string>
+<string id="glass">
+    <text>Firefly</text>
+</string>
+<string id="gold_fish">
+    <text>Goldfish</text>
+</string>
+<string id="gravi">
+    <text>Gravi</text>
+</string>
+<string id="ice">
+    <text>Snowflake</text>
+</string>
+<string id="medusa">
+    <text>Jellyfish</text>
+</string>
+<string id="mincer_meat">
+    <text>Meat Chunk</text>
+</string>
+<string id="night_star">
+    <text>Night Star</text>
+</string>
+<string id="soul">
+    <text>Soul</text>
+</string>
+<string id="vyvert">
+    <text>Wrenched</text>
+</string>
+<string id="compass">
+    <text>Compass</text>
+</string>
+<string id="st_af_compass_descr">
+    <text>A rare artifact - it was last found many months ago. It has the ability to detect anomalies in the fields. They say that with its help, one can safely pass by the most dangerous anomalies, but very few people know how to use it.</text>
+</string>
+<string id="oasis_heart">
+    <text>Heart of Oasis</text>
+</string>
+<string id="st_af_oasis_heart_descr">
+    <text>An artifact from the center of the legendary Oasis. It appears to be a crystallized plant that has inherited the beneficial properties of Oasis on the body. Unlike Oasis, the artifact is highly radioactive.</text>
+</string>
+<string id="quest_b14_twisted">
+    <text>Altered Wheel</text>
+</string>
+
+<!--artefact_absorbation-->
+<!--elektrik-->
+<string id="electra_sparkler_absorb">
+    <text>%c[255,244,164,96]• Electric Protection = +3 \n• Radiation = +1</text>
+</string>
+<string id="electra_flash_absorb">
+    <text>• Electric Protection = +6 \n• Radiation = +2</text>
+</string>
+<string id="electra_moonlight_absorb">
+    <text>• Psi Protection = +6 \n• Radiation = +2</text>
+</string>
+<string id="dummy_battery_absorb">
+    <text>• Power Restoration = +2 \n• Radiation = +1</text>
+</string>
+<string id="dummy_dummy_absorb">
+    <text>• Power Restoration = +4 \n• Radiation = +2</text>
+</string>
+<string id="ice_absorb">
+    <text>• Power Restoration = +6 \n• Radiation = +3</text>
+</string>
+<!--/elektrik-->
+<!--gravy-->
+<string id="medusa_absorb">
+    <text>• Radiation = -2</text>
+</string>
+<string id="cristall_flower_absorb">
+    <text>• Psi Protection = +3 \n• Radiation = +1</text>
+</string>
+<string id="night_star_absorb">
+    <text>• Max Weight = +4kg \n• Radiation = +1</text>
+</string>
+<string id="vyvert_absorb">
+    <text>• Radiation = -3</text>
+</string>
+<string id="gravi_absorb">
+    <text>• Max Weight = +8kg \n• Radiation = +2</text>
+</string>
+<string id="gold_fish_absorb">
+    <text>• Max Weight = +12kg \n• Radiation = +3</text>
+</string>
+<!--/gravy-->
+<!--himic-->
+<string id="blood_absorb">
+    <text>• Chemical Protection = +3 \n• Radiation = +1</text>
+</string>
+<string id="mincer_meat_absorb">
+    <text>• Chemical Protection = +6 \n• Radiation = +2</text>
+</string>
+<string id="soul_absorb">
+    <text>• Health Restoration = +2 \n• Radiation = +2</text>
+</string>
+<string id="fuzz_kolobok_absorb">
+    <text>• Health Restoration = +4 \n• Radiation = +2</text>
+</string>
+<string id="baloon_absorb">
+    <text>• Radiation = -4</text>
+</string>
+<string id="glass_absorb">
+    <text>• Health Restoration = +6 \n• Radiation = +3</text>
+</string>
+<!--/himic-->
+<!--thermal-->
+<string id="cristall_absorb">
+    <text>• Thermal Protection = +3 \n• Radiation = +1</text>
+</string>
+<string id="fireball_absorb">
+    <text>• Thermal Protection = +6 \n• Radiation = +2</text>
+</string>
+<string id="dummy_glassbeads_absorb">
+    <text>• Wound Healing = +2 \n• Radiation = +1</text>
+</string>
+<string id="eye_absorb">
+    <text>• Wound Healing = +4 \n• Radiation = +2</text>
+</string>
+<string id="fire_absorb">
+    <text>• Wound Healing = +6 \n• Radiation = +3</text>
+</string>
+<!--/thermal-->
+<!--uniq-->
+<string id="compass_absorb">
+    <text>• Thermal Protection = +3 \n• Chemical Protection = +3 \n• Psi Protection = +3 \n• Electric Protection = +3 \n• Power Restoration = +2 \n• Radiation = +4</text>
+</string>
+<string id="oasis_heart_absorb">
+    <text>• Health Restoration = +2 \n• Hunger Elimination = +1 \n• Power Restoration = +2 \n• Wound Healing = +2 \n• Radiation = +4</text>
+</string>
+<string id="quest_b14_twisted_absorb">
+    <text>• Radiation = +6</text>
+</string>
+<!--/uniq-->
+<!--/Artefacts-->
+
+<!--Ranks-->
+<string id="st_enc_npc_strelok_nick_name">
+    <text>Marked One (Strelok)</text>
+</string>
+<string id="st_enc_npc_strelok_name">
+    <text>Edik</text>
+</string>
+<string id="st_enc_npc_strelok_career">
+    <text>Chief scientific consultant at SIRCAA</text>
+</string>
+<string id="st_enc_npc_strelok_info">
+    <text>Veteran Stalker. He was the one who came closest to uncovering the mystery of the Zone's origin. Strelok was one of the most experienced stalkers in the Zone. He founded his own group called Strelok's Group, which included Fang, Ghost and Doctor. Strelok was a renowned stalker, a trailblazer who ventured deep into the Zone multiple times, causing major cataclysms. He is also known as the Marked One.</text>
+</string>
+<string id="st_enc_npc_strelok_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_strelok_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_red_nick_name">
+    <text>Red Shukhov</text>
+</string>
+<string id="st_enc_npc_red_name">
+    <text>Dmitry Shukhov</text>
+</string>
+<string id="st_enc_npc_red_career">
+    <text>Artifact seeker, Zone spirit...</text>
+</string>
+<string id="st_enc_npc_red_info">
+    <text>Dima Shukhov, known as Red, was one of the first stalkers. A brave and lucky individual, Red gathered a group of fellow stalkers for a common goal. Together they (though with great losses) made it to CNPP. It was here that a conflict arose between Shukhov and other members of the group. In a fit of rage, his former friends and partners walled him up at the base of the Sarcophagus. He died, but was resurrected. He was reborn as the Black Stalker, the spirit of the Zone. He became a demon to some and an angel to others. He could cruelly punish anyone for violating the unwritten laws of the Zone, or he could save a lost stalker by pointing out an invisible trap or a safe way back. It is said that he even led some stalkers to particularly rare and valuable artifacts for his own reasons. For stalkers, he is a mystical yet real embodiment of the Zone.</text>
+</string>
+<string id="st_enc_npc_red_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_red_status">
+    <text>Dead</text>
+</string>
+
+<string id="st_enc_npc_semetsky_nick_name">
+    <text>Semetsky</text>
+</string>
+<string id="st_enc_npc_semetsky_name">
+    <text>Yuri Semetsky</text>
+</string>
+<string id="st_enc_npc_semetsky_career">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_semetsky_info">
+    <text>The eternal stalker, Yuri Semetsky reached the Wish Granter and wished for immortality. The Wish Granter, as always, understood his wish in its own way. Since then, Semetsky is forced to die every day. Stalkers consider news of his death a good omen.</text>
+</string>
+<string id="st_enc_npc_semetsky_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_semetsky_status">
+    <text>Dead</text>
+</string>
+	
+<string id="st_enc_npc_kluk_nick_name">
+    <text>Fang</text>
+</string>
+<string id="st_enc_npc_kluk_name">
+    <text>Nikolai Zubaryov</text>
+</string>
+<string id="st_enc_npc_kluk_career">
+    <text>Technician</text>
+</string>
+<string id="st_enc_npc_kluk_info">
+    <text>No data available.</text>
+</string>
+<string id="st_enc_npc_kluk_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_kluk_status">
+    <text>Missing</text>
+</string>
+	
+<string id="st_enc_npc_sniper_nick_name">
+    <text>Sniper</text>
+</string>
+<string id="st_enc_npc_sniper_name">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_sniper_career">
+    <text>Professional assassin</text>
+</string>
+<string id="st_enc_npc_sniper_info">
+    <text>A small, inconspicuous man with a small rifle and a backpack on his back. His ordinary face has become the face of nightmares for those who were targeted by him, however. He is an talented killer, a top-notch professional. He is credited with the killings of Bes and Yoga, as well as a number of unconfirmed contract killings.</text>
+</string>
+<string id="st_enc_npc_sniper_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_sniper_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_zvezdochet_nick_name">
+    <text>Stargazer</text>
+</string>
+<string id="st_enc_npc_zvezdochet_name">
+    <text>Lenya</text>
+</string>
+<string id="st_enc_npc_zvezdochet_career">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_zvezdochet_info">
+    <text>Found Marked One near the death truck and saved him from death.</text>
+</string>
+<string id="st_enc_npc_zvezdochet_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_zvezdochet_status">
+    <text>Unknown</text>
+</string>
+
+<string id="st_enc_npc_volkodav_nick_name">
+    <text>Wolfhound</text>
+</string>
+<string id="st_enc_npc_volkodav_name">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_volkodav_career">
+    <text>Contract work, field commander</text>
+</string>
+<string id="st_enc_npc_volkodav_info">
+    <text>Suspected killer of Fang, still, he's a veteran of the Zone, an experienced wise and cunning leader. The commander of a group of fighters who call themselves "Wolves." An anarchist who despises any laws except the laws of power. A battle-scarred master who's been shot with all calibers. A psychopath and sadist. Wolfhound gained fame by single-handedly destroying a Duty quad, which resulted in General Voronin personally declaring him his mortal enemy.</text>
+</string>
+<string id="st_enc_npc_volkodav_faction">
+    <text>Mercenary</text>
+</string>
+<string id="st_enc_npc_volkodav_status">
+    <text>Alive</text>
+</string>
+
+<string id="st_enc_npc_xemul_nick_name">
+    <text>Hemul</text>
+</string>
+<string id="st_enc_npc_xemul_name">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_xemul_career">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_xemul_info">
+    <text>Unknown.</text>
+</string>
+<string id="st_enc_npc_xemul_faction">
+    <text>Duty</text>
+</string>
+<string id="st_enc_npc_xemul_status">
+    <text>Unknown</text>
+</string>
+	
+<string id="st_enc_npc_staruy_nick_name">
+    <text>Old</text>
+</string>
+<string id="st_enc_npc_staruy_name">
+    <text>Andrey Lunev</text>
+</string>
+<string id="st_enc_npc_staruy_career">
+    <text>Unknown</text>
+</string>
+<string id="st_enc_npc_staruy_info">
+    <text>Wanted by Mercenaries.</text>
+</string>
+<string id="st_enc_npc_staruy_faction">
+    <text>Mercenary</text>
+</string>
+<string id="st_enc_npc_staruy_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_bolotnik_nick_name">
+    <text>Bolotnik</text>
+</string>
+<string id="st_enc_npc_bolotnik_name">
+    <text>Max Bolotov</text>
+</string>
+<string id="st_enc_npc_bolotnik_career">
+    <text>Mutant hunter</text>
+</string>
+<string id="st_enc_npc_bolotnik_info">
+    <text>Of short stature, unremarkable. He always wears a long dark cloak with a hood, even in summer. It's said that the cloak is stitched with special metal threads, flexible but very strong, making it a kind of bulletproof vest, or rather, a bulletproof cloak. It's known that he ended up in some mysterious underground laboratory located near CNPP about ten years ago. Known for managing to single-handedly wipe out Bory Chopper's gang and dealing with an old seasoned bloodsucker, armed nothing but a blunt rusty knife.</text>
+</string>
+<string id="st_enc_npc_bolotnik_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_bolotnik_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_actor_nick_name">
+    <text>Shroud</text>
+</string>
+<string id="st_enc_npc_actor_name">
+    <text>Shroud</text>
+</string>
+<string id="st_enc_npc_actor_career">
+    <text>Novice</text>
+</string>
+<string id="st_enc_npc_actor_info">
+    <text>Just an ordinary stalker.</text>
+</string>
+<string id="st_enc_npc_actor_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_actor_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_petr_name">
+    <text>Petr</text>
+</string>
+<string id="st_enc_npc_petr_nick_name">
+    <text>Cook</text>
+</string>
+<string id="st_enc_npc_petr_career">
+    <text>Drug maker</text>
+</string>
+<string id="st_enc_npc_petr_info">
+    <text>Petruchio ended up in the Zone from chemical defense force, where he ended up after being expelled from Mendeleev Institute. Although he was expelled in his second year, thanks to his innate curiosity in the field of psychonavigation, he managed to glean some information, especially those related to the production of "interesting" substances. Cook was gladly accepted into the ranks of Freedom and serves as their personal producer of psychostimulants from the amphetamine series, which often come to the rescue during long and exhausting outings, combat situations, and night shifts.</text>
+</string>
+<string id="st_enc_npc_petr_faction">
+    <text>Mushroom</text>
+</string>
+<string id="st_enc_npc_petr_status">
+    <text>Alive, but has liver failure</text>
+</string>
+	
+<string id="st_enc_npc_dok_name">
+    <text>Gosha</text>
+</string>
+<string id="st_enc_npc_dok_nick_name">
+    <text>Doc</text>
+</string>
+<string id="st_enc_npc_dok_career">
+    <text>Programmer</text>
+</string>
+<string id="st_enc_npc_dok_info">
+    <text>Known for his ability to fix any PDA, even those that have been in anomalies. He often ventures into abandoned laboratories in search of functional electronics. Once, he returned with a whole backpack of hard drives taken from abandoned computers in some laboratory. After decrypting the data extracted from them, stalkers became aware of the recipes for certain transmutations and the unexplored properties of artifacts. In addition to this, Doc plays the guitar well and is always ready to liven up the evening of the Bar visitors.</text>
+</string>
+<string id="st_enc_npc_dok_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_dok_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_johann_name">
+    <text>Ivan</text>
+</string>
+<string id="st_enc_npc_johann_nick_name">
+    <text>Potsyk</text>
+</string>
+<string id="st_enc_npc_johann_career">
+    <text>Fooling around</text>
+</string>
+<string id="st_enc_npc_johann_info">
+    <text>This stalker ended up in the Zone by accident. Living near Cordon, he followed some other stalker out of boredom and crossed the border of the Exclusion Zone, ending up in the rookie village. As he had a lot of money with him, he marked his arrival with wild revelry. A merry company, led by Ivan, went to taunt the military. Throwing empty bottles at them and using foul language. The soldiers didn't appreciate the humor and put a few rookies in their place. The rest, instantly sobering up, quickly fled. After this, Ivan was nicknamed Potsyk and he had to leave Cordon and seek refuge in the Bar. He is known for his provocative and confrontational character.</text>
+</string>
+<string id="st_enc_npc_johann_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_johann_status">
+    <text>Alive</text>
+</string>
+
+<string id="st_enc_npc_telnov_nick_name">
+    <text>Telnyashka</text>
+</string>
+<string id="st_enc_npc_telnov_name">
+    <text>Igor Telnov</text>
+</string>
+<string id="st_enc_npc_telnov_career">
+    <text>Any dirty job</text>
+</string>
+<string id="st_enc_npc_telnov_info">
+    <text>Energetic and nimble Igor, also known as "Telnyashka," told everyone that he served in Cordon. Apparently, during one of the patrols he went AWOL and simple deserted. He earned his nickname due to his last name, Telnov, and his inexplicable love for sleeping in a telnyashka. For a while, he suffered from guilt and was ashamed in front of his older brother. Then he completely lost it and started gambling. He got into debt, had to carry out the most unpleasant tasks and deal with dirty affairs for shady clients. It got to the point where once he was ordered to kill his own brother, and he almost did it. At the last moment, he recognized him, and... what happened next is unknown. After that, Telnyashka disappeared. He may have left the Zone or returned to the outside world to start his life from scratch.</text>
+</string>
+<string id="st_enc_npc_telnov_faction">
+    <text>Loner</text>
+</string>
+<string id="st_enc_npc_telnov_status">
+    <text>Alive</text>
+</string>
+	
+<string id="st_enc_npc_stalker_nick_name">
+    <text>No information</text>
+</string>
+<string id="st_enc_npc_stalker_name">
+    <text>No information</text>
+</string>
+<string id="st_enc_npc_stalker_career">
+    <text>No information</text>
+</string>
+<string id="st_enc_npc_stalker_info">
+    <text>No information</text>
+</string>
+<string id="st_enc_npc_stalker_faction">
+    <text>No information</text>
+</string>
+<string id="st_enc_npc_stalker_status">
+    <text>No information</text>
+</string>
+	
+<string id="st_enc_npc_cat_nick_name">
+    <text>Cat</text>
+</string>
+<string id="st_enc_npc_cat_name">
+    <text>Pasha</text>
+</string>
+<string id="st_enc_npc_cat_career">
+    <text>Sniper</text>
+</string>
+<string id="st_enc_npc_cat_info">
+    <text>System malfunction.</text>
+</string>
+<string id="st_enc_npc_cat_faction">
+    <text>Observ[REDACTED]</text>
+</string>
+<string id="st_enc_npc_cat_status">
+    <text>Watching you</text>
+</string>
+	
+		<string id="profy">
+		<text>Pro</text>
+	</string>
+	<string id="legendary">
+		<text>Legendary</text>
+	</string>
+<!--/Ranks-->
+
+</string_table>

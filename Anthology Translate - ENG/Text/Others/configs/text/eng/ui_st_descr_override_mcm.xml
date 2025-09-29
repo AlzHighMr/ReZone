@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_descr_override_title">
+		<text>New description</text>
+	</string>
+	<string id="ui_mcm_menu_descr_override">
+		<text>New description</text>
+	</string>
+
+
+	<!-- Main -->
+	<string id="ui_mcm_descr_override_main_header">
+		<text>Instant effects</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_hp">
+		<text>Health</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_rad">
+		<text>Radiation</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_sat">
+		<text>Satiety</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_sleep">
+		<text>Sleep</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_thirst">
+		<text>Thirst</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_alcohol">
+		<text>Alcohol</text>
+	</string>
+
+
+	<!-- Timed -->
+	<string id="ui_mcm_descr_override_timed_header">
+		<text>Timed effects</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_hp_t">
+		<text>Health</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_rad_t">
+		<text>Radiation</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_bleed_t">
+		<text>Bleeding</text>
+	</string>
+
+
+	<!-- BHS -->
+	<string id="ui_mcm_descr_override_bhs_header">
+		<text>Body Health System</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_bhs_num_at">
+		<text>Values to display in number</text>
+	</string>
+	<string id="ui_mcm_descr_override_bhs_num_at_desc">
+		<text>When limb heal value is more than this slider - it'll be displayed as number instead of circles.</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_bhs_num_always">
+		<text>Display in number always</text>
+	</string>
+	<string id="ui_mcm_descr_override_bhs_num_always_desc">
+		<text>Replaces circles for number.</text>
+	</string>
+
+	<string id="ui_mcm_descr_override_bhs_timed">
+		<text>Show pre-heal time</text>
+	</string>
+	<string id="ui_mcm_descr_override_bhs_timed_desc">
+		<text>Display time that it takes for timed-heal to disappear.</text>
+	</string>
+
+
+</string_table>

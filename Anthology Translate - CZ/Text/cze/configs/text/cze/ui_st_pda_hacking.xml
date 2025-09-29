@@ -1,0 +1,317 @@
+
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	<string id="ui_st_pdahacking_preprompt">
+    <text>[pda_main ~/]> </text>
+</string>
+<string id="ui_st_pdahacking_preprompt_us">
+    <text>[pda_main ~/]> _</text>
+</string>
+<string id="ui_st_pdahacking_run">
+    <text>Spustit $name.exe...</text>
+</string>
+<string id="ui_st_pdahacking_running">
+    <text>Spouští se $name.exe ($effect)</text>
+</string>
+<string id="ui_st_pdahacking_load">
+    <text>Načíst soubor $script.script</text>
+</string>
+<string id="ui_st_pdahacking_loaded">
+    <text>Načten soubor $script.script</text>
+</string>
+<string id="ui_st_pdahacking_welcome">
+    <text>Vítejte
+    Vyberte skript k načtení</text>
+</string>
+
+<string id="ui_st_pdahacking_nuke">
+    <text>Nuke</text>
+</string>
+<string id="ui_st_pdahacking_cmdup">
+    <text>Příkaz nahoru</text>
+</string>
+<string id="ui_st_pdahacking_decrypt">
+    <text>Dešifrovat</text>
+</string>
+<string id="ui_st_pdahacking_rescan">
+    <text>Znovu načíst</text>
+</string>
+<string id="ui_st_pdahacking_bruteforce">
+    <text>Brute Force</text>
+</string>
+<string id="ui_st_pdahacking_bruteforce_success">
+    <text>ÚSPĚCH!!!</text>
+</string>
+<string id="ui_st_pdahacking_bruteforce_fail">
+    <text>SELHALO</text>
+</string>
+<string id="ui_st_pdahacking_skey">
+    <text>Skeleton Key</text>
+</string>
+<string id="ui_st_pdahacking_extract">
+    <text>Extrahovat</text>
+</string>
+<string id="ui_st_pdahacking_extract_header">
+    <text>Extrahována měna</text>
+</string>
+<string id="ui_st_pdahacking_extract_msg">
+    <text>%c[ui_2]Extrahovali jste %c[yellow]+$income rublů %c[ui_2]z skrytého kryptoměnového peněženky</text>
+</string>
+
+
+	<string id="ui_st_pdahacking_cmd_remain">
+    <text>Zbývající příkazy</text>
+</string>
+<string id="ui_st_pdahacking_title_hacks">
+    <text>Hacky</text>
+</string>
+<string id="ui_st_pdahacking_title_scripts">
+    <text>Skripty</text>
+</string>
+<string id="ui_st_pdahacking_title_encry_str">
+    <text>Síla šifrování:</text>
+</string>
+<string id="ui_st_pdahacking_title_data_decry">
+    <text>Deskryptováno:</text>
+</string>
+<string id="ui_st_pdahacking_total_power">
+    <text>Celkový výkon = $power</text>
+</string>
+<string id="ui_st_pdahacking_power">
+    <text>Výkon:</text>
+</string>
+<string id="ui_st_pdahacking_selectedscript">
+    <text>Vybraný skript</text>
+</string>
+<string id="ui_st_pdahacking_loadscript">
+    <text>Načíst skript</text>
+</string>
+<string id="ui_st_pdahacking_loadcmd">
+    <text>Spustit hack</text>
+</string>
+
+
+	<string id="ui_st_pdahacking_start">
+    <text>Hackovat</text>
+</string>
+<string id="ui_st_pdahacking_failed">
+    <text>Hack selhal</text>
+</string>
+
+<string id="ui_st_pdahacking_ruble">
+    <text>rub</text>
+</string>
+
+<string id="ui_st_pdahacking_unlocked">
+    <text>PDA odemčeno</text>
+</string>
+<string id="ui_st_pdahacking_outof_cmd">
+    <text>Bez příkazů</text>
+</string>
+<string id="ui_st_pdahacking_outof_scripts">
+    <text>Bez skriptů</text>
+</string>
+<string id="ui_st_pdahacking_behind">
+    <text>Za tebou</text>
+</string>
+
+<string id="st_pdahacking_usb1">
+    <text>Základní softwarový nástroj pro hackování</text>
+</string>
+<string id="st_pdahacking_usb1_descr">
+    <text>Bez ohledu na původní účel tohoto USB zařízení bylo zjevně upraveno pro nelegální účely někým, kdo věděl, co dělá.
+    Vlastní firmware obsahuje databázi sofistikovaných skriptů a exploitů seskupených do sady uživatelsky přívětivých nástrojů,
+    které umožňují i osobě s minimální technickou znalostí prolomit různé druhy šifrování PDA.\n \nDůležité je poznamenat, že tento software by měl být používán pouze pro etické účely a nikoliv pro jakoukoli nelegální činnost.\n \n%c[255, 123, 217, 76]Přidá průvodce na váš PDA, v kategorii funkcí, který vysvětluje, jak hacking funguje.\n \n
+
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] technologický předmět\n
+    %c[255, 63, 192, 255] • %c[ui_gray_2] body příkazu: %c[255, 63, 192, 255]20\n
+    %c[255, 54, 217, 136] • %c[ui_gray_2] počáteční skripty: %c[255, 54, 217, 136]5\n</text>
+</string>
+<string id="st_pdahacking_usb2">
+    <text>Pokročilý softwarový nástroj pro hackování</text>
+</string>
+<string id="st_pdahacking_usb2_descr">
+    <text>Bez ohledu na původní účel tohoto USB zařízení bylo zjevně upraveno pro nelegální účely někým, kdo věděl, co dělá.
+    Vlastní firmware obsahuje databázi sofistikovaných skriptů a exploitů seskupených do sady uživatelsky přívětivých nástrojů,
+    které umožňují i osobě s minimální technickou znalostí prolomit různé druhy šifrování PDA.\n \nDůležité je poznamenat, že tento software by měl být používán pouze pro etické účely a nikoliv pro jakoukoli nelegální činnost.\n \n%c[255, 123, 217, 76]Přidá průvodce na váš PDA, v kategorii funkcí, který vysvětluje, jak hacking funguje.\n \n
+
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] technologický předmět\n
+    %c[255, 63, 192, 255] • %c[ui_gray_2] body příkazu: %c[255, 63, 192, 255]24\n
+    %c[255, 54, 217, 136] • %c[ui_gray_2] počáteční skripty: %c[255, 54, 217, 136]6\n
+    %c[255, 255, 184, 28] • %c[ui_gray_2] max. extrakce měny: %c[255, 255, 184, 28]1\n</text>
+</string>
+<string id="st_pdahacking_usb3">
+    <text>Expertní softwarový nástroj pro hackování</text>
+</string>
+<string id="st_pdahacking_usb3_descr">
+    <text>Bez ohledu na původní účel tohoto USB zařízení bylo zjevně upraveno pro nelegální účely někým, kdo věděl, co dělá.
+    Vlastní firmware obsahuje databázi sofistikovaných skriptů a exploitů seskupených do sady uživatelsky přívětivých nástrojů,
+    které umožňují i osobě s minimální technickou znalostí prolomit různé druhy šifrování PDA.\n \nDůležité je poznamenat, že tento software by měl být používán pouze pro etické účely a nikoliv pro jakoukoli nelegální činnost.\n \n%c[255, 123, 217, 76]Přidá průvodce na váš PDA, v kategorii funkcí, který vysvětluje, jak hacking funguje.\n \n
+
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] technologický předmět\n
+    %c[255, 63, 192, 255] • %c[ui_gray_2] body příkazu: %c[255, 63, 192, 255]28\n
+    %c[255, 54, 217, 136] • %c[ui_gray_2] počáteční skripty: %c[255, 54, 217, 136]7\n
+    %c[255, 255, 184, 28] • %c[ui_gray_2] max. extrakce měny: %c[255, 255, 184, 28]2\n</text>
+</string>
+
+
+	<string id="st_pdahacking_rarity_itm_pda_common">
+		<text>Běžný</text>
+	</string>
+	<string id="st_pdahacking_rarity_itm_pda_uncommon">
+		<text>Neobvyklý</text>
+	</string>
+	<string id="st_pdahacking_rarity_itm_pda_rare">
+		<text>Vzácný</text>
+	</string>
+
+	<!-- kompatibilita pro lepší revizi šifrování -->
+	<string id="st_pdahacking_rarity_itm_pda_encrypted_common">
+		<text>Běžný</text>
+	</string>
+	<string id="st_pdahacking_rarity_itm_pda_encrypted_uncommon">
+		<text>Neobvyklý</text>
+	</string>
+	<string id="st_pdahacking_rarity_itm_pda_encrypted_rare">
+		<text>Vzácný</text>
+</string>
+
+
+<!--	Unlock Cost addon		-->
+	<string id="st_pdahacking_unlock_cost">
+		<text>Jestliže jsi pro to ukázat nějakou hotovost, jistě. %s RU za každé PDA, které dokážu odemknout.</text>
+	</string>
+
+	<!-- Doplněk pro dialogové okno odblokování -->
+	<string id="st_pdahacking_unfail_text_0">
+		<text>Nepodařilo se mi hacknout PDA. Můžeš obnovit šifrování?</text>
+	</string>
+	<string id="st_pdahacking_unfail_text_1">
+		<text>Problém s dovedností. Ale pokud jsi ochotný ukázat nějaké peníze, jistě. %s RU za každý neúspěšný PDA.</text>
+	</string>
+	<string id="st_pdahacking_unfail_text_2">
+		<text>Fajn, tady je %s RU za reset %s mých PDA.</text>
+	</string>
+	<string id="st_pdahacking_unfail_text_3">
+		<text>Nevadí...</text>
+	</string>
+	<string id="st_pdahacking_unfail_text_4">
+		<text>Tady je teď můžeš zkusit hacknout znovu. Bav se.</text>
+	</string>
+	<string id="st_pdahacking_unfail_text_5">
+		<text>Tedy dobře.</text>
+	</string>
+
+	<!-- 
+		MCM
+	-->
+	<string id="ui_mcm_pda_hacking_title">
+		<text>PDA Hacking</text>
+	</string>
+	<string id="ui_mcm_menu_pda_hacking">
+		<text>PDA Hacking</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_locked_chance_mult">
+		<text>Locked PDA Chance Multiplier</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_stash_chance_mult">
+		<text>Stash in PDA Chance Multiplier</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_script_power_min">
+		<text>Minimum Script Power</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_script_power_max">
+		<text>Maximum Script Power</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_hack_device_drop_mult">
+		<text>Hack Software Drop Chance Multiplier</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_extract_reward_mult">
+		<text>Extract Hack Reward Multiplier</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_soundfx_volume">
+		<text>Sound FX Volume</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_enable_tech_unlock_cost">
+		<text>Enable PDA Unlock Cost Override</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_tech_unlock_cost">
+		<text>Technician PDA Unlock Cost</text>
+	</string>
+	<string id="ui_mcm_pda_hacking_tech_unfail_cost">
+		<text>Technician PDA Unfail Cost</text>
+	</string>
+
+
+	<string id="encyclopedia_features_pdahacking">
+    <text>Hackování PDA</text>
+</string>
+<string id="encyclopedia_features_pdahacking_text">
+    <text>
+        %c[pda_green]Mod pro hackování PDA od autora Utjan%c[ui_gray_1]\n \n
+        Tento mod vám umožňuje hackovat uzamčená PDA nalezená na mrtvých stopařích prostřednictvím minihry na PDA.
+        K tomu, abyste mohli PDA hackovat, potřebujete nejprve získat USB klíč s hackovacím softwarem.
+        Ponechte položku USB klíče ve svém inventáři a při použití uzamčeného PDA se objeví tlačítko, které vám umožní spustit hackovací minihru.\n \n
+        
+        %c[pda_green]I. Informace%c[ui_gray_1]\n
+        \n• Dokončení šifrování
+        \n     Abyste vyhráli minihru a odemkli PDA, musíte dosáhnout 100% dokončení šifrování. Aktuální stav můžete vidět v pravém dolním rohu obrazovky.
+        \n• Síla šifrování
+        \n     V závislosti na frakci stopaře, který upustil uzamčené PDA, bude šifrování mít svoji sílu.
+        Síla šifrování snižuje účinnost určitých hacků a čím je vyšší, tím obtížnější je minihra. Síla je zobrazena v levém dolním rohu.
+        \n• Body příkazu
+        \n     Minihru s hackováním začínáte s určitým počtem bodů příkazu. Tyto body se používají k provádění skriptů a hacků.
+        Pokud vám dojdou, selžete v minihře. Modré číslo v levém horním rohu obrazovky ukazuje, kolik jich máte.
+        \n• Seznam skriptů
+        \n     Na levé straně obrazovky je seznam skriptů a jejich hodnota síly. Vybrání skriptu stojí 1 bod příkazu a zobrazí seznam hacků.
+        Skripty mají názvy založené na skutečných souborech ve vaší instalaci Anomaly.
+        Název se používá jako semeno k generování síly a hacků. To znamená, že stejný skript spuštěný na různých uzamčených PDA bude mít stejnou sílu a hacky.
+        Skripty, se kterými začínáte, jsou náhodné pro každou relaci minihry.
+        Pokud vám dojdou skripty, selžete v minihře.
+        \n• Seznam hacků
+        \n     Uprostřed obrazovky je seznam hacků. Zobrazí se pouze tehdy, pokud jste vybrali skript. Provedení hacku stojí 1 bod příkazu.
+        Hacky slouží k postupu v minihře. Účinnost hacků je určena silou vybraného skriptu.\n \n
+
+        %c[pda_green]II. Hacky%c[ui_gray_1]\n
+        \n%c[255, 123, 217, 76]• Dešifrovat%c[ui_gray_1]
+        \n     Jedná se o nejdůležitější hack, protože jeho spuštění zvýší dokončení šifrování. Účinnost hacku je snížena sílou šifrování.
+        \n%c[255, 255, 255, 255]• Nuke%c[ui_gray_1]
+        \n     Sníží sílu šifrování. Je účinnější čím je síla šifrování vyšší.
+        \n%c[255, 63, 192, 255]• Zvýšení příkazů%c[ui_gray_1]
+        \n     Zvýší vaše body příkazu. Jeho spuštění nevyžaduje žádný bod. Pokud je tento hack dostupný a vy máte 0 bodů, minihra nezkrachuje.
+        \n%c[255, 54, 217, 136]• Znovu načíst%c[ui_gray_1]
+        \n     Generuje další skripty.
+        \n%c[255, 255, 255, 63]• BruteForce%c[ui_gray_1]
+        \n     Má šanci okamžitě dosáhnout 100% dokončení šifrování.
+        \n%c[255, 255, 184, 28]• Extrahovat%c[ui_gray_1]
+        \n     Odmění vás malým množstvím rublů.\n \n
+
+        %c[pda_green]III. Hackovací software%c[ui_gray_1]\n
+        \n• Toto přichází ve formě položek s ikonou USB klíče. Existují tři úrovně této položky, každá vám poskytuje lepší start v minihře.
+        Pokročilá a Expertní úroveň je vyžadována, aby se zobrazil hack "Extrahovat".
+        Položky s hackovacím softwarem lze zakoupit u mechaniků, přičemž vyšší úrovně jsou dostupné po předání pokročilých a expertních sestav.
+        Položky s hackovacím softwarem lze také najít na mrtvých stalkerích. Stalkeri vyššího ranku mají vyšší šanci na vyhození vyšších úrovní software.
+        Nezapomeňte si tuto položku nechat ve svém inventáři, abyste mohli spustit minihru při otevření uzamčeného PDA.\n \n
+
+        %c[pda_green]IV. Průběh minihry%c[ui_gray_1]\n
+        \n1. Vyberte skript, ideálně s vysokou silou.
+        \n2. Podívejte se na hacky. Pokud nechcete použít jeden z těch dostupných, můžete vybrat jiný skript pro nový seznam hacků.
+        \n3. Vyberte hack k provedení. To vymaže seznam hacků a odstraní vybraný skript.
+        \n4. Opakujte kroky 1 až 3, dokud nedosáhnete 100% dokončení šifrování a nevyhrajete minihru a tím odemknete PDA.\n \n
+
+        %c[pda_green]V. Poznámky%c[ui_gray_1]\n
+        \n• Pokud v průběhu minihry sundáte PDA, minihra automaticky selže.
+        \n• Pokud selžete v minihře, jste trvale neschopni znovu spustit minihru na konkrétním PDA.
+		
+		%c[pda_green]VI. Technici%c[ui_gray_1]\n
+			\nVe výchozím nastavení tato úprava zvyšuje náklady na odemknutí PDA u techniků. Neúspěšné hackování PDA vám nebrání v jeho odemčení u technika.
+			\nVšak také přidává dialogovou volbu, která vám umožní zaplatit za resetování PDA, které se vám nepodařilo hacknout, takže je můžete zkusit hacknout znovu. Náklady na tuto možnost jsou nižší než na zaplacení odblokování PDA.
+    </text>
+</string>
+
+</string_table>
+                        

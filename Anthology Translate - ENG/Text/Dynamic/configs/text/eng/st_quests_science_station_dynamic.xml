@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- (yan_sci_bunker_scientists) -->
+<string id="yan_sci_bunker_scientists_task_1_name">
+	<text>Scientific Donor</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_1_text">
+	<text>Professor Lutcenko is very busy conducting a series of experiments using tissue samples from the Zone's fauna. At least, he was busy until all available materials ran out. Now, he needs any help he can get to provide the necessary samples.\n\nI agreed to help him solve this problem. The specimen "%s" must be found and delivered in good condition as soon as possible, while the sample retains its freshness. Otherwise, Professor Lutcenko will not accept it.\n\nNow, we just need to find a donor who will provide this sample...</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_1_about">
+	<text>I am facing a severe shortage of required animal materials, so I urgently need an experienced hunter to gather certain samples. Can I count on you?</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_1_fetch_about">
+	<text>I have been conducting a series of very important experiments in my lab related to the properties of certain fauna.\nUnfortunately, I miscalculated my stock of necessary samples for unforeseen circumstances and experiment deviations - I have exhausted the last available material.\n\nThese experiments are of immense importance to the scientific community and to me personally, so I need to replenish the required materials. I need "%s".\n\nLet me make it clear: I am not concerned with the details of how you acquire the samples. You can hunt for them, buy them from traders, or get them from other stalkers. The only thing I require is the timely delivery and freshness of the materials. They will be useless for the experiment if they lose their freshness.\nOnce you gather everything I need, you must return here as quickly as possible. Are you ready?</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_1_fetch_finish">
+	<text>Just look at this! The samples have retained their freshness to the maximum! I am extremely grateful to you, young man. Truly magnificent work. I will resume my experiments immediately.</text>
+</string>
+
+<!-- Collect New Artefact Task -->
+<string id="yan_sci_bunker_scientists_task_2_name">
+	<text>Scientific Progress</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_text">
+	<text>Professor Lutcenko is conducting a series of important studies, related to artifacts, in his words.\n\nUnfortunately, the professor ran out of material necessary for highly accurate data. Because of this, he had to suspend his research.\n\nHe asked to find and deliver him the artifact %s. He promised a good reward for its delivery.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_about">
+	<text>Can you help me with my research, young man? A financial reward will follow shortly.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_fetch_about">
+	<text>Excellent! You can't imagine the good you can do for humanity!\n\nRight now, I am conducting a series of important lab experiments, but I have exhausted all available material samples needed! Without them, the data accuracy and relevant samples are useless!\n\nPlease, I urgently need the artifact %s, so I can continue my research immediately.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_2_fetch_finish">
+	<text>Young man, your eagerness to lend a hand to science in these hard times is truly priceless. I wish there were more people like you around here! The scientific laboratory and I personally thank you for your help.</text>
+</string>
+
+<string id="yan_sci_bunker_scientists_task_4_name">
+	<text>In the World of Mutant Animals</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_about">
+	<text>You see, our zoologist colleagues installed tracking devices on some representatives of the local fauna, so we could get a full sample of data about them: their movements, behavior, habits, everyday life, and so on. Unfortunately, I regret to inform you that after one of the recent emissions, a couple of these devices stopped functioning properly - they still transmit coordinates, but... alas, only that. No other data is available. So, you will need to find the target and retrieve the device manually, then bring it back here - there's no other way, unfortunately. On the bright side, you will also help the inhabitants of the Zone deal with a potential issue.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_0">
+	<text>According to Professor Lutcenko, zoologists were studying the behavior of several mutants using attached tracking devices. However, the recent emission seems to have damaged them - instead of full data, scientists are only getting the current coordinates of the creature. The data is still recorded on the beacon's storage, but the only way to retrieve it is to find the mutant, eliminate it, and take the device.</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_1">
+	<text>Retrieve the device with data that fell from the mutant</text>
+</string>
+<string id="yan_sci_bunker_scientists_task_4_stage_2">
+	<text>Return the device to Professor Lutcenko</text>
+</string>
+
+
+</string_table>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- foma -->
+<string id="wiz_foma_task_1_name">
+    <text>Business Proposal</text>
+</string>
+<string id="wiz_foma_task_1_text">
+    <text>Foma needs an artifact %s. Just like that, without unnecessary words or questions. A truly business-like person!</text>
+</string>
+<string id="wiz_foma_task_1_about">
+    <text>I’m interested in artifacts. Here’s how we’ll do it: I give you a lead on a specific artifact, you bring it, and you get a reward. Both parties are happy. So, what do you think?</text>
+</string>
+<string id="wiz_foma_task_1_fetch_about">
+    <text>My clients are interested in artifacts. Often they are "bright minds" who’ve had bad luck connecting with the official science figures in the Zone. So, here’s the deal: I’ll give you a lead on a specific artifact, you bring it, and you get a reward. Both sides are happy. So, I need the artifact %s. I’ll be waiting for it here, just like your reward.</text>
+</string>
+<string id="wiz_foma_task_1_fetch_finish">
+    <text>Good job, my friend. And here’s your bonus.</text>
+</string>
+
+<string id="wiz_foma_task_2_name">
+    <text>Dirty Work</text>
+</string>
+<string id="wiz_foma_task_2_text">
+    <text>Foma gave me a dirty job – I need to find and eliminate a stalker who managed to piss someone off.\n\nAll the necessary information was provided on the PDA. Time to get to work. Poor guy is really unlucky...</text>
+</string>
+<string id="wiz_foma_task_2_about">
+    <text>Sometimes stalkers come to me when someone either didn’t like them or screwed them over, and I, in turn, look for people willing to help them in this difficult task, so these individuals won’t have any problems later. Consider me a middleman.\nRight now, I have several targets for elimination. Usually, these are stalkers who betrayed or ordered the deaths of their friends, but sometimes there are also contract killings of people from other factions. It’s dirty work, but someone has to do it, especially if the reward is worth it, right? So, are you in? I’ll send the necessary information to your PDA.</text>
+</string>
+<string id="wiz_foma_task_2_finish">
+    <text>Thanks, stalker. Here’s your money, but don’t get too caught up in killings. Competitors are no good for mercenaries either. Heh-heh...</text>
+</string>
+
+<string id="wiz_foma_task_3_name">
+    <text>Pseudo-bugs and Pseudo-mice</text>
+</string>
+<string id="wiz_foma_task_3_text">
+    <text>There’s a joke among stalkers: "A stalker planted a pseudo-radish. The pseudo-radish grew big and huge! The stalker took a grenade launcher and went to harvest it. And he surely would have succeeded, if not for the pseudo-bugs and pseudo-mice that showed up." It sounds funny, but sometimes these bugs and mice can really be a pain. It gets to the point where you can’t even take ten steps out of the camp before another pseudo-someone comes at you!\nThat’s why Foma suggested combining business with pleasure – earn some money by clearing the surrounding areas of mutants. It’s the right thing to do, since all sorts of creatures have proliferated here... And trophies definitely won’t hurt.</text>
+</string>
+<string id="wiz_foma_task_3_about">
+    <text>Say, did you see any mutants on your way here? The Duty group recently went over the territory, but some newly arrived stalkers reported seeing either dogs or something else on the outer borders of the camp. If they’re not joking, those beasts pose a big threat both to stalkers in the camp and to those who will be coming here. Moreover, let's not forget that the lack of clients hurts business. In short, I’m willing to pay well for eliminating mutants, maybe even toss in something extra. The key is to leave no trace of them. Here are the approximate coordinates.</text>
+</string>
+<string id="wiz_foma_task_3_finish">
+    <text>Nice work. And here’s your hard-earned reward.</text>
+</string>
+
+	
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- foma (Loner Trader) New Tasks -->
+	
+	<string id="wiz_foma_task_4_name">
+    <text>Unusual Business</text>
+</string>
+<string id="wiz_foma_task_4_text">
+    <text>As they say, the rich have their quirks. One such client, apparently, turned to Foma and asked him to find a trophy – "%s"...\nFoma, in turn, promised a decent payment for delivering the trophy to him, so that he could send it to his client.</text>
+</string>
+<string id="wiz_foma_task_4_about">
+    <text>You see, I’m not just a busy person, but I’m also very generous to those who are willing to help me solve my problems. And right now, I have an urgent order. Interested?</text>
+</string>
+<string id="wiz_foma_task_4_fetch_about">
+    <text>So, one of my clients, who’s also an excellent jeweler specializing in animal trophies, wants one like this – %s. He’s willing to pay me a good sum for delivery. I, in turn, am ready to pay you for delivering the trophy to me first. Understand what I mean? Make sure the mutant parts with its trophy and deliver it to me. I won’t be stingy with the money.</text>
+</string>
+<string id="wiz_foma_task_4_fetch_finish">
+    <text>Well done! Here’s your hard-earned reward.</text>
+</string>
+
+<string id="wiz_foma_task_5_name">
+    <text>Treasure Hunter</text>
+</string>
+<string id="wiz_foma_task_5_text">
+    <text>What was yours will soon be ours. Foma asked me to steal some important documents and deliver them to him.\nThe coordinates of their location have been sent to my PDA.</text>
+</string>
+<string id="wiz_foma_task_5_about">
+    <text>I’ve heard about a stash with some very interesting documents. I have no idea who owns it or where they might be now, but I’ll reward anyone who manages to make these documents magically appear on this bar counter. Got it? I’ll send you the latest known coordinates of the stash on your PDA. I doubt it’s a trap, because setting me up isn’t like sabotaging Sidorovich’s deals on the Cordone.</text>
+</string>
+<string id="wiz_foma_task_5_finish">
+    <text>Well, you really surprised me. Great job, stalker.</text>
+</string>
+
+<!-- val_a4_stalker_pianist -->
+<string id="val_a4_stalker_pianist_task_1_name">
+    <text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_text">
+    <text>I need to bring the Pianist the tools so he can carry out equipment upgrades.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_about">
+    <text>Hey, buddy, I’m actually a pretty good technician. I can fix weapons and armor, even do some upgrades! Well, I would, if I had proper tools. But where can you get them here? Maybe you could help me find a simple set?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_about">
+    <text>I need a tool set for heavy work. It should include tools and oils for working with weapons. If you can get it, I’ll be grateful, and I’ll even pay you!... Probably.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_finish">
+    <text>Great, dude! Oh, sorry, I don’t have anything to pay you. But I can give you a good discount!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_name">
+    <text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_text">
+    <text>I need to bring the Pianist a tool set for fine work. He needs a more complete set to carry out more complex equipment upgrades.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_about">
+    <text>Hey, dude, if you get me a more complete set, I’ll give you an even bigger discount. Can you help me, pal?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_about">
+    <text>I need tools for fine work. It should have everything I need. You’ll be like a brother to me if you get it!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_finish">
+    <text>Wow, thanks, bro! Now I’m definitely going to get rich. Damn it, I’ll be successful!.. If, of course, I don’t miss this chance too. But for now, I can’t offer you anything better than a discount. Sorry, buddy.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_name">
+    <text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_text">
+    <text>I need to bring the Pianist %s. He needs a unique set of tools to carry out even more complex equipment upgrades.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_about">
+    <text>Hey, man, if you find something really good – I’ll give you a discount!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_fetch_about">
+    <text>I need tools for calibration. It should have everything I need. You’ll be like a brother to me if you get them!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_fetch_finish">
+    <text>Holy sh...! Damn, thanks, bro! Now I’m really going to get rich. Damn it, I’ll be successful!.. If, of course, I don’t miss this chance too. But for now, I can’t offer you anything better than a discount. Sorry, pal.</text>
+</string>
+
+	<!-- wiz_chip -->
+<string id="wiz_chip_task_1_name">
+    <text>%s for Chip</text>
+</string>
+<string id="wiz_chip_task_1_text">
+    <text>You need to find a set and deliver it to the medic Chip.</text>
+</string>
+<string id="wiz_chip_task_1_about">
+    <text>I need a good set of medical tools. I can patch up minor wounds quickly, but for something more serious than a simple scalpel, I’m lacking the proper equipment.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_about">
+    <text>I need a good set of medical tools. I can patch up minor wounds quickly, but for something more serious than a simple scalpel, I’m lacking the proper equipment.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_finish">
+    <text>Thanks, friend! These tools will save many lives. Thanks again for the tools.</text>
+</string>
+
+<!-- wiz_ivanich -->
+<string id="wiz_ivanich_task_1_name">
+    <text>Find %s for Ivanich</text>
+</string>
+<string id="wiz_ivanich_task_1_text">
+    <text>You need to bring Ivanich some tools so he can carry out equipment upgrades.</text>
+</string>
+<string id="wiz_ivanich_task_1_about">
+    <text>Hey, buddy, I’m actually a pretty good technician. I can fix weapons and armor, even do some upgrades! Well, I would, if I had decent tools. But where can you get them here? Maybe you could help me get a simple set?</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_about">
+    <text>I need a tool set for heavy work. It should include tools and oils for working with weapons. If you can get it, I’ll be grateful and even pay you!... Probably.</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_finish">
+    <text>Great, dude! Oh, sorry, I don’t have anything to pay you. But I can give you a good discount!</text>
+</string>
+<string id="wiz_ivanich_task_2_name">
+    <text>Find %s for Ivanich</text>
+</string>
+<string id="wiz_ivanich_task_2_text">
+    <text>You need to bring Ivanich tools for fine work. He needs a more complete set to carry out more complex equipment upgrades.</text>
+</string>
+<string id="wiz_ivanich_task_2_about">
+    <text>Hey, dude, if you get me a more complete set, I’ll give you an even bigger discount. Can you help me, pal?</text>
+</string>
+<string id="wiz_ivanich_task_2_fetch_about">
+    <text>I need tools for fine work. It should have everything I need. You’ll be like a brother to me if you get it!</text>
+</string>
+<string id="wiz_ivanich_task_2_fetch_finish">
+    <text>Wow, thanks, bro! Now I’m definitely going to get rich. Damn it, I’ll be successful!.. If, of course, I don’t miss this chance too. But for now, I can’t offer you anything better than a discount. Sorry, buddy.</text>
+</string>
+<string id="wiz_ivanich_task_3_name">
+    <text>Find %s for Ivanich</text>
+</string>
+<string id="wiz_ivanich_task_3_text">
+    <text>You need to bring Ivanich %s. He needs a unique set to carry out even more complex equipment upgrades.</text>
+</string>
+<string id="wiz_ivanich_task_3_about">
+    <text>Hey, man, if you find something really good – I’ll give you a discount!</text>
+</string>
+<string id="wiz_ivanich_task_3_fetch_about">
+    <text>I need tools for calibration. It should have everything I need. You’ll be like a brother to me if you get them!</text>
+</string>
+<string id="wiz_ivanich_task_3_fetch_finish">
+    <text>Holy shit! Damn, thanks, bro! Now I’m really going to get rich. Damn it, I’ll be successful!.. If, of course, I don’t miss this chance too. But for now, I can’t offer you anything better than a discount. Sorry, pal.</text>
+</string>
+
+
+</string_table>

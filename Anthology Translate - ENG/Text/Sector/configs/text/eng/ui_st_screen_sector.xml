@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="st_bb_heli_pilots_close_box">
+		<text>%C[255,248,153,26] Required code</text>
+	</string>
+
+	<string id="st_pu_aeroplan_use_object">
+		<text>%C[255,248,153,26] Examine the aircraft ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_pu_heli_use_object">
+		<text>%C[255,248,153,26] Inspect a helicopter ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_caz_p666_sector_final_timer_out_start_expl_timer">
+		<text>Time before the explosion:</text>
+	</string>
+
+	<string id="tip_door_caz_p52_closed">
+		<text>%C[255,248,153,26] Required key</text>
+	</string>
+
+	<string id="d6_e218_swith_txt">
+		<text>%C[255,248,153,26] Serve food ($$ACTION_USE$$)</text>
+	</string>
+	<string id="caz_tip_use_press_y96">
+		<text>%C[255,248,153,26] Open the door ($$ACTION_USE$$)</text>
+	</string>
+	<string id="caz_tip_no_electro_in_door">
+		<text>%C[255,248,153,26] control panel is de-energized</text>
+	</string>
+
+	<string id="caz_m69_benzin_tutorial_15_txt">
+		<text>%C[255,248,153,26] Check the tank ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="contract_notebook_r25_st_end">
+		<text>%C[255,248,153,26] Information received</text>
+	</string>
+	<string id="contract_notebook_r25_st_tap">
+		<text>%C[255,248,153,26] Find information ($$ACTION_USE$$)</text>
+	</string>
+	<string id="contract_notebook_r25_st_killer_is_no_ddead">
+		<text>%C[255,248,153,26] must be killed by mercenaries</text>
+	</string>	
+	<string id="contract_notebook_r25_st_password">
+		<text>%C[255,248,153,26] We need a password</text>
+	</string>
+
+	<string id="st_az_to_lab_button_off">
+		<text>%C[255,248,153,26] There is no access</text>
+	</string>
+
+	<string id="st_az_to_lab_button_on">
+		<text>%C[255,248,153,26] go to the laboratory ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="lx15_contract_tutor_ustanovka_x1_hml_txt">
+		<text>%C[255,248,153,26] Turn on the installation ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="tip_door_deshift_dont_work_closed">
+		<text>%C[255,248,153,26] The decoder does not work. Need a key card</text>
+	</string>
+	
+	<string id="tip_door_lx15_door_1_closed">
+		<text>%C[255,248,153,26] The door are jammed</text>
+	</string>
+
+	<string id="tip_door_lx15_door_3_closed">
+		<text>%C[255,248,153,26] The door is de-energized.</text>
+	</string>
+
+	<string id="tip_door_lx15_door_secret_closed">
+		<text>%C[255,248,153,26] The door leading from the M-15 complex</text>
+	</string>
+</string_table>
+

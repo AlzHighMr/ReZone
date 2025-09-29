@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--=================================================================================================================-->
+<!--                                                                                                                 -->
+<!--	Original Author(s) : NLTP_ASHES																			     -->
+<!--	Edited : N/A																							     -->
+<!--	Date : 17/03/2023																						     -->
+<!--	License : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)		     -->
+<!--																											     -->
+<!--	Translation file for Western Goods' quest items.														     -->
+<!--                                                                                                                 -->
+<!-- ================================================================================================================-->
+<string_table>
+
+	<!-- Supply case -->
+<string id="st_wg_act_1_task_1_quest_item">
+	<text>Zásobovací krabice</text>
+</string>
+
+<string id="st_wg_act_1_task_1_quest_item_s">
+	<text>Zásoby</text>
+</string>
+
+<string id="st_wg_act_1_task_1_quest_item_descr">
+	<text>
+		Zapečetěný kufr nalezený poblíž mrtvol posádky vrtulníku. Přesný obsah krabice je neznámý, ale protože měla být doručena Williamsovi Headesovi, musí obsahovat západní zboží.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_blue] • %c[ui_gray_2] importované\n
+		%c[d_cyan] • %c[ui_gray_2] velmi cenné\n
+	</text>
+</string>
+
+
+	<!-- Unidentified weapon -->
+	<string id="st_wg_act_1_task_2_quest_item_1">
+	<text>Neidentifikovaná zbraň</text>
+</string>
+
+<string id="st_wg_act_1_task_2_quest_item_1_s">
+	<text>Neidentifikovaná zbraň</text>
+</string>
+
+<string id="st_wg_act_1_task_2_quest_item_1_descr">
+	<text>
+		Neznámá zbraň, jejíž mechanismus střelby nebyl zjištěn. Zbraň se zdá být bez střeliva - zmáčknutí spouště nedělá nic. Je velmi těžká a rozhodně vysoké technologie. Pozoruhodné je, že se zdá, že nevystřeluje střely na základě zážehu. Nejspíše jsou náboje poháněny elektromagnetickými silami. Lze jen spekulovat, jaký má destruktivní potenciál.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_red] • %c[ui_gray_2] nepoužitelná\n
+	</text>
+</string>
+
+
+	<!-- Bandit's note -->
+	<string id="st_wg_act_1_task_2_quest_item_2">
+	<text>Poznámka bandity</text>
+</string>
+
+<string id="st_wg_act_1_task_2_quest_item_2_s">
+	<text>Poznámka bandity</text>
+</string>
+
+<string id="st_wg_act_1_task_2_quest_item_2_descr">
+	<text>
+		Papírová poznámka nalezená v skladu kontejnerů. Soudě podle rukopisu, byla určitě napsána jedním z banditů...
+	</text>
+</string>
+
+
+	<!-- Research case -->
+	<string id="st_wg_act_2_task_2_quest_item">
+	<text>Dokumenty v kufříku</text>
+</string>
+
+<string id="st_wg_act_2_task_2_quest_item_s">
+	<text>Dokumenty</text>
+</string>
+
+<string id="st_wg_act_2_task_2_quest_item_descr">
+	<text>
+		Zapečetěný kufr, pravděpodobně obsahující výzkumné dokumenty. Byl převážen konvojem vědců na neznámé místo. Klient Dushmana chce tento kufr, ale není známo, kdo jsou a proč mají zájem o tyto dokumenty.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] velmi cenné\n
+	</text>
+</string>
+
+
+	<!-- Danylo Pendrive -->
+	<string id="st_wg_stash_map_quest_item">
+	<text>Mapa k úkrytu</text>
+</string>
+
+<string id="st_wg_stash_map_quest_item_s">
+	<text>Mapa</text>
+</string>
+
+<string id="st_wg_stash_map_quest_item_descr">
+	<text>
+		Ručně nakreslená mapa, poskytnutá Oleksandrem. S ní by mělo být možné najít jeho a jeho bratra starý úkryt v Agropromském podzemí.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_green] • %c[ui_gray_2] informativní\n
+		%c[d_blue] • %c[ui_gray_2] osobní věci\n
+	</text>
+</string>
+
+	<!-- Danylo Pendrive -->
+	<string id="st_wg_danylo_pendrive_quest_item">
+	<text>Pendrive od Danyla</text>
+</string>
+
+<string id="st_wg_danylo_pendrive_quest_item_s">
+	<text>Pendrive</text>
+</string>
+
+<string id="st_wg_danylo_pendrive_quest_item_descr">
+	<text>
+		Pendrive, který byl uložen, když byl Danylo ještě součástí armády. Možná informace, které obsahuje, může napovědět jeho současnou polohu. Bohužel lidé zatím neprovádějí čtení plastů a polovodičů, takže k přečtení obsahu je potřeba zařízení nebo technik.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_green] • %c[ui_gray_2] informativní\n
+		%c[d_blue] • %c[ui_gray_2] technologická položka\n
+	</text>
+</string>
+
+<!-- Oznámení o nasazení SSU -->
+<string id="st_wg_deployment_notice_quest_item">
+	<text>Oznámení o nasazení SSU</text>
+</string>
+
+<string id="st_wg_deployment_notice_quest_item_s">
+	<text>Oznámení o nasazení</text>
+</string>
+
+<string id="st_wg_deployment_notice_quest_item_descr">
+	<text>
+		Vojenský dokument nařizující skupině SSU najít a eliminovat "seržanta Danyla Černenka". Dokument uvádí, že rozkaz následuje po dezerci seržanta, ale zbytek motivace byl vymazán.\n
+		\n
+		%c[ui_gray_1]VLASTNOSTI:\n
+		%c[d_green] • %c[ui_gray_2] informativní\n
+	</text>
+</string>
+
+
+</string_table>

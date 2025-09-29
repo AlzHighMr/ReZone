@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+<string id="ui_inv_outfit_speed">
+    <text>Násobitel rychlosti</text>
+</string>
+
+
+<!-- MCM -->
+
+<string id="ui_mcm_menu_speed">
+    <text>Nastavení Rychlosti</text>
+</string>
+<string id="ui_mcm_menu_speed_title">
+    <text>Oděvy/zbraně ovlivňují rychlost pohybu</text>
+</string>
+<string id="ui_mcm_speed_title">
+    <text>Oděvy/zbraně ovlivňují rychlost pohybu</text>
+</string>
+<string id="ui_mcm_speed_encumbrance">
+    <text>Zatížení ovlivňuje rychlost</text>
+</string>
+<string id="ui_mcm_speed_encumbrance_desc">
+    <text>Vlastnosti zatížení poskytují bonusy, když jste lehce zatíženi (méně než 25% celkového zatížení), a tresty, když jste silně zatíženi (více než 70%).\n \n Buďte upozorněni, že povolení této možnosti povede k neuvěřitelné rychlosti, pokud cestujete s lehkým břemenem.</text>
+</string>
+<string id="ui_mcm_speed_weapon">
+    <text>Zbraň ovlivňuje rychlost sprintu</text>
+</string>
+<string id="ui_mcm_speed_weapon_desc">
+    <text>Pokud je povoleno, zbraně uplatňují modifikátor na rychlost sprintu v závislosti na typu a váze.</text>
+</string>
+<string id="ui_mcm_speed_debug">
+    <text>(Vývojář) Další výstup do konzole</text>
+</string>
+<string id="ui_mcm_speed_debug_desc">
+    <text>Tiskne užitečné informace do konzole.</text>
+</string>
+</string_table>

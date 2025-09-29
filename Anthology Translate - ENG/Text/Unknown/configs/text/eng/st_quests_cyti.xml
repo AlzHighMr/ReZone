@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+   <string_table> 
+
+	<!--/////////////////////////////////// spectrum trade TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- ASSASSINATION FOR MERCS TASK -->
+	<string id="city_sp_leader_task_1_name">
+    <text>Killer</text>
+</string>
+<string id="city_sp_leader_task_1_text">
+    <text>One stalker had the audacity not only to interfere with important people's affairs but also to cross their path. Spectrum values their reputation, so they know the price of solving such issues.\n
+    \n%s (%s) suggested I sign off on this order - for its successful completion, these serious people will immediately understand that my skills are worth their investment, and the intermediary, in turn, will pay for the order.\nThe client also allowed keeping all the trophies found on the killed target.</text>    
+</string>
+<string id="city_sp_leader_task_1_about">
+    <text>There’s a very profitable job. A big shot here has been causing trouble. He’s been so much of a problem that the sentence is clear - the bastard has to go.\nYou’ve got a chance to gain authority and money - all in addition to the loot, which you can keep.\n
+    \nWe’ve got the channels, so the stalker is on his way with the loot. All you need to do is take him out. We’ll handle the rest. So, are you man enough for a real job?</text>
+</string>
+<string id="city_sp_leader_task_1_finish">
+    <text>Well done. Here's your share. We’ll also tell the clients about your professional skills.</text>
+</string>
+
+<!-- ASSAULT TERRITORY FOR MERCS TASK -->
+<string id="city_sp_leader_task_2_name">
+    <text>Cleanup</text>
+</string>
+<string id="city_sp_leader_task_2_text">
+    <text>Spectrum clearly doesn’t need any neighbors, so the area must be cleared of any hostile elements while maintaining the previous balance of power. %s (%s) will pay after successful completion.</text>
+</string>
+<string id="city_sp_leader_task_2_about">
+    <text>I need you to play a key role in the attack. Clear the designated area of any hostile forces.</text>
+</string>
+<string id="city_sp_leader_task_2_finish">
+    <text>Nice. Here's your payment.</text>
+</string>
+
+<!-- STOP ENEMY ASSAULT FOR SPECTRUM TASK -->
+<string id="city_sp_trader_task_1_name">
+    <text>Destroy the Squad!</text>
+</string>
+<string id="city_sp_trader_task_1_text">
+    <text>You need to destroy the enemy squad at the specified location. %s (%s) will wait for your report on task completion.</text>
+</string>
+<string id="city_sp_trader_task_1_about">
+    <text>I’ve been told that an attack is being prepared on one of our camps. We need to take out the enemy before they attack us. Can you do it?</text>
+</string>
+<string id="city_sp_trader_task_1_finish">
+    <text>Done? Nice job!</text>
+</string>
+
+<!-- RECAPTURE TERRITORY FOR SPECTRUM TASK -->
+<string id="city_sp_trader_task_2_name">
+    <text>Commando</text>
+</string>
+<string id="city_sp_trader_task_2_text">
+    <text>You need to reclaim the territory for the group. %s (%s) will wait for your report on task completion.</text>
+</string>
+<string id="city_sp_trader_task_2_about">
+    <text>We have a mission. "Debtors" won’t stop: they’re shooting at our patrols, attacking our checkpoints. Just recently, they captured our camp. Not cool, you know? We need to teach those bastards a lesson before they openly attack us.</text>
+</string>
+<string id="city_sp_trader_task_2_finish">
+    <text>Done? Good job.</text>
+</string>
+
+<!-- ASSASSINATE MONOLITH FOR SPECTRUM TASK -->
+<string id="city_sp_trader_task_3_name">
+    <text>Eliminate</text>
+</string>
+<string id="city_sp_trader_task_3_text">
+    <text>%s (%s) assigned the task to find and eliminate a Monolith member.</text>
+</string>
+<string id="city_sp_trader_task_3_about">
+    <text>I’ve got a very dangerous task. I tried to find volunteers, but no one stepped up. I need someone who can take the initiative. The "Monolith" forces continue to break through our blockade. I need someone who can infiltrate their territory and eliminate a specific member of their group – this will send a strong message to them. What do you think, can you do it?</text>
+</string>
+<string id="city_sp_trader_task_3_finish">
+    <text>Ah! You survived! Here’s your reward.</text>
+</string>
+
+
+	<!-- ASSASSINATE DUTY FOR spectrum TASK -->
+<string id="city_sp_trader_task_4_name">
+    <text>Eliminate the Target</text>
+</string>
+<string id="city_sp_trader_task_4_text">
+    <text>%s (%s) tasked you with finding and eliminating a key target.</text>
+</string>
+<string id="city_sp_trader_task_4_about">
+    <text>There’s this one jerk who keeps shouting about us and slinging mud at us. Well, let him know he’s gone too far. Can you shut him up?</text>
+</string>
+<string id="city_sp_trader_task_4_finish">
+    <text>Excellent! As promised:</text>
+</string>
+
+<!-- FIND WEAPON FOR SPECTRUM TASK -->
+<string id="city_sp_trader_task_5_name">
+    <text>Find the “%s” for “Spectrum”</text>
+</string>
+<string id="city_sp_trader_task_5_text">
+    <text>%s (%s) asked you to find a weapon in excellent condition. They will be waiting for your return.</text>
+</string>
+<string id="city_sp_trader_task_5_about">
+    <text>“Duty” and “Monolith” are blocking our routes. We’re literally cut off from our suppliers. Our weapons are wearing out, and we need to find new ones. Can you help with this?</text>
+</string>
+<string id="city_sp_trader_task_5_fetch_about">
+    <text>“%s” is what we need right now. If you can find a weapon in excellent condition, I’ll pay you well.</text>
+</string>
+<string id="city_sp_trader_task_5_fetch_finish">        
+    <text>Thanks for the weapon. Here’s the money, just as promised.</text>
+</string>
+
+<!-- ELIMINATE MUTANTS FOR SPECTRUM TASK -->
+<string id="city_sp_trader_task_7_name">
+    <text>Clear the Area</text>
+</string>
+<string id="city_sp_trader_task_7_text">
+    <text>Find the specified mutants and clear the area of them.</text>
+</string>
+<string id="city_sp_trader_task_7_about">
+    <text>I’m looking for volunteers who could clear one of our spots from mutants – they’ve been causing too many problems. I won’t skimp on the money. Will you take care of it?</text>
+</string>
+<string id="city_sp_trader_task_7_finish">
+    <text>Done? Here’s what I promised.</text>
+</string>
+
+<!-- FIND LEVEL 1 TOOLS FOR MERC MECHANICS TASK -->
+<string id="city_sp_tech_task_1_name">
+    <text>War Tools: “%s” for Spectrum Technicians</text>
+</string>
+<string id="city_sp_tech_task_1_text">
+    <text>“%s” is needed by Spectrum to maintain their gear in good condition. The tools can be delivered to any of their technicians.</text>
+</string>
+<string id="city_sp_tech_task_1_about">
+    <text>I’ve got an offer for you: You help us, and we help you. How does that sound?</text>
+</string>
+<string id="city_sp_tech_task_1_fetch_about">
+    <text>We’ve been looking for “%s” for a long time. These tools should help with basic maintenance and repairs, as the weapons keep jamming. You can bring them to me or any of our technicians. In return, we’ll give you a nice discount on our services. So, what do you say? Shall we make a deal?</text>
+</string>
+<string id="city_sp_tech_task_1_fetch_finish">
+    <text>Thanks. You’ve made my day. These are just what I needed.</text>
+</string>
+
+<!-- FIND LEVEL 2 TOOLS FOR MERC MECHANICS TASK -->
+<string id="city_sp_tech_task_2_name">
+    <text>War Tools: “%s” for Spectrum Technicians</text>
+</string>
+<string id="city_sp_tech_task_2_text">
+    <text>“%s” is needed by Spectrum to maintain their gear in good condition. The tools can be delivered to any of their technicians.</text>
+</string>
+<string id="city_sp_tech_task_2_about">
+    <text>Here’s another offer. The second repair kit you brought was nice, but it’s missing a few things. Can you find a better one?</text>
+</string>
+<string id="city_sp_tech_task_2_fetch_about">
+    <text>“%s” is what I’m talking about. Honestly, I have no idea where they could even be found, but if you do, come on over, and we’ll help each other out.</text>
+</string>
+<string id="city_sp_tech_task_2_fetch_finish">
+    <text>Great, brother! I’ll put them to work right away, so they won’t just sit around collecting dust.</text>
+</string>
+
+<!-- FIND LEVEL 3 TOOLS FOR MERC MECHANICS TASK -->
+<string id="city_sp_tech_task_3_name">
+    <text>War Tools: “%s” for Spectrum Technicians</text>
+</string>
+<string id="city_sp_tech_task_3_text">
+    <text>“%s” is needed by Spectrum to maintain their gear in good condition. The tools can be delivered to any of their technicians.</text>
+</string>
+<string id="city_sp_tech_task_3_about">
+    <text>So, here’s another offer. Don’t worry, hehe, I won’t ask for more. The tools you brought us helped a lot. We even stopped needing extra hands to assist with repairs. But, as they say, there’s always room for improvement, right? We’re almost there, but we’re missing one last set. Do you think you can find the top-level tools?</text>
+</string>
+<string id="city_sp_tech_task_3_fetch_about">
+    <text>We’re talking about “%s”. If you can find them, come here or to any other technician. We’ll make sure to thank you properly for such a gift.</text>
+</string>
+<string id="city_sp_tech_task_3_fetch_finish">
+    <text>Awesome, brother, awesome. You’ve saved us a ton of nerves, gear, and time. Wait, I’ll tell the others about you so they don’t mess with your prices.</text>
+</string>
+
+
+<!-- (city_sp_medic Medic) -->
+	<string id="city_sp_medic_task_1_name">
+    <text>%s for Spectrum Medic</text>
+</string>
+<string id="city_sp_medic_task_1_text">
+    <text>You need to find a medical kit and deliver it to the Spectrum medic.</text>
+</string>
+<string id="city_sp_medic_task_1_about">
+    <text>I need a good set of medical tools. I can quickly patch up light wounds, but for anything more serious than a simple scalpel, I’m lacking the proper equipment.</text>
+</string>
+<string id="city_sp_medic_task_1_fetch_about">
+    <text>I need a good set of medical tools. I can quickly patch up light wounds, but for anything more serious than a simple scalpel, I’m lacking the proper equipment.</text>
+</string>
+<string id="city_sp_medic_task_1_fetch_finish">
+    <text>Thank you, my friend! These tools will save many lives. Thanks again for the equipment.</text>
+</string>
+
+
+</string_table>

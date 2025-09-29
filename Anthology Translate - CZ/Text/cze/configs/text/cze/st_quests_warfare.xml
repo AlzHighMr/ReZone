@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS FOR WARFARE TASKS
+<	CoC 1.4.22
+<
+<
+<===========================================================-->
+
+<string_table>
+
+	<!--/////////////////////////////////// ARMY WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- ASSAULT AREA FOR MILITARY TASK -->
+<string id="sim_default_army_trader_task_1_name">
+	<text>Útok na území</text>
+</string>
+<string id="sim_default_army_trader_task_1_text">
+	<text>%s z %s tě pověřil vedením útoku na vyčištění území od neoprávněných osob.</text>
+</string>
+<string id="sim_default_army_trader_task_1_about">
+	<text>Velitel je znepokojen narůstajícím počtem nelegálních vniknutí do Zóny. Chce, abys tam šel a vyčistil oblast od neoprávněných osob. Buď pozorný na přátelské osoby, ale kohokoli jiného, koho uvidíš, máš povolené zastřelit ihned.</text>
+</string>
+<string id="sim_default_army_trader_task_1_finish">
+	<text>Skvělá práce. Pokračuj takhle a můžeš se těšit na pochvalu.</text>
+</string>
+
+
+<!-- ÚKOL ZABRAT ÚZEMÍ PRO VOJENSKOU JEDNOTKU -->
+<string id="sim_default_army_trader_task_2_name">
+	<text>Zabrat území</text>
+</string>
+<string id="sim_default_army_trader_task_2_text">
+	<text>Bylo ti nařízeno %s z %s, abys obsadil území v Zóně.</text>
+</string>
+<string id="sim_default_army_trader_task_2_about">
+	<text>Naše jednotka dostala úkol postoupit hlouběji do Zóny. Velitel shání dobrovolníky, kteří by pro nás mohli obsadit území. Můžu mu sdělit, že spolupracuješ?</text>
+</string>
+<string id="sim_default_army_trader_task_2_finish">
+	<text>Je úkol hotový? Dobrá práce. Ihned oznámím veliteli o tvém úspěchu.</text>
+</string>
+
+
+<!-- ÚKOL ZABÍT/UNÉST CÍL PRO VOJENSKOU JEDNOTKU -->
+<string id="sim_default_army_trader_task_3_name">
+	<text>Zabít nebo zajmou nepřátelský cíl</text>
+</string>
+<string id="sim_default_army_trader_task_3_text">
+	<text>%s z %s ti zadal úkol unést nebo zabít nepřátelský cíl.</text>
+</string>
+<string id="sim_default_army_trader_task_3_about">
+	<text>Hlavní stan má seznam nejhledanějších osob ve Zóně. Pokud se ti podaří někoho z nich dostat, dostaneš bonus ve výplatě. Jsi na to připravený?</text>
+</string>
+<string id="sim_default_army_trader_task_3_finish">
+	<text>Skvělá práce! Velitel bude spokojený.</text>
+</string>
+
+<!-- ÚKOL Najdi NÁSTROJE ÚROVNĚ 1 PRO Armádního technika -->
+<string id="sim_default_army_mechanic_task_1_name">
+	<text>Najdi %s pro Armádního technika</text>
+</string>
+<string id="sim_default_army_mechanic_task_1_text">
+	<text>%s potřebují Armádního technika, aby nahradily ty staré. Pokud najdeš nějaké, přines je zpátky k libovolnému Armádnímu mechanikovi.</text>
+</string>
+<string id="sim_default_army_mechanic_task_1_about">
+	<text>Hele, mohl bych tě poprosit o laskavost? Pokud by tě zajímalo, jak ti mohu pomoci, řeknu ti, co potřebuju.</text>
+</string>
+<string id="sim_default_army_mechanic_task_1_fetch_about">
+	<text>Jsme v zoufalé potřebě nových nástrojů, protože jsme nedostali dostatečné finanční prostředky od ministerstva obrany na pořízení lepšího vybavení. Momentálně potřebujeme nový set základních nástrojů. Kdybys našel nějaké, všichni bychom ti byli vděční. Mimochodem, nemusíš je přinášet zpátky ke mně, jakéhokoli vojenského mechanika by to udělalo. Uděláš to pro nás a my ti od této chvíle nabídneme slevu. Souhlasíš?</text>
+</string>
+<string id="sim_default_army_mechanic_task_1_fetch_finish">
+	<text>Skvělé! Přinesl jsi přesně to, co jsme požadovali. Díky.</text>
+</string>
+
+
+<!-- FIND LEVEL 2 TOOLKIT FOR MILITARY MECHANICS TASK -->
+<string id="sim_default_army_mechanic_task_2_name">
+	<text>Najdi sadu %s pro Armádního technika</text>
+</string>
+<string id="sim_default_army_mechanic_task_2_text">
+	<text>%s jsou potřebné vojenským mechanikům k nahrazení starých. Pokud nějaké najdeš, přines je zpět k libovolnému vojenskému mechanikovi.</text>
+</string>
+<string id="sim_default_army_mechanic_task_2_about">
+	<text>Dobře, pokud jsi na to připravený, potřebuji další nástroje. Ale ty by mohly být trochu těžší Najdi. Můžeš to udělat pro mě?</text>
+</string>
+<string id="sim_default_army_mechanic_task_2_fetch_about">
+	<text>Dobrá, nyní potřebujeme sadu pokročilých nástrojů. Přines nějaké zpět a nabídneme ti ještě větší slevu.</text>
+</string>
+<string id="sim_default_army_mechanic_task_2_fetch_finish">
+	<text>Skvělé! Přijď kdykoli, pokud potřebuješ, abych se podíval na tvé vybavení.</text>
+</string>
+
+
+<!-- FIND LEVEL 3 TOOLKIT FOR MILITARY MECHANICS TASK -->
+<string id="sim_default_army_mechanic_task_3_name">
+	<text>Najdi sadu %s pro Armádního technika</text>
+</string>
+<string id="sim_default_army_mechanic_task_3_text">
+	<text>%s jsou potřebné vojenským mechanikům k nahrazení starých. Pokud nějaké najdeš, přines je zpět k libovolnému vojenskému mechanikovi.</text>
+</string>
+<string id="sim_default_army_mechanic_task_3_about">
+	<text>Dobře, pokud jsi na to připravený, potřebuji další nástroje. Ale ty by mohly být trochu těžší Najdi. Můžeš to udělat pro mě?</text>
+</string>
+<string id="sim_default_army_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme sadu expertních nástrojů. Ta by měla obsahovat vše, co potřebujeme pro teď. Přines nějaké zpět a dostaneš ještě větší slevu.</text>
+</string>
+<string id="sim_default_army_mechanic_task_3_fetch_finish">
+	<text>Skvělé! Přijď kdykoli, pokud potřebuješ, abych se podíval na tvé vybavení.</text>
+</string>
+
+
+<!-- PROTECT Povinnost TERRITORY TASK -->
+<string id="sim_default_dolg_trader_task_1_name">
+	<text>Chraň území Povinnost</text>
+</string>
+<string id="sim_default_dolg_trader_task_1_text">
+	<text>Nepřátelské síly se přibližují k území Povinnost. %s z %s tě požádal, abys eliminovat hrozbu.</text>
+</string>
+<string id="sim_default_dolg_trader_task_1_about">
+	<text>Byl jsem informován, že nepřátelské síly postupují k jednomu z našich táborů. Potřebuji, abys je zastavil, než tam dorazí.</text>
+</string>
+<string id="sim_default_dolg_trader_task_1_finish">
+	<text>Vynikající práce. Jsi skvělý bojovník.</text>
+</string>
+
+<!-- RECLAIM Povinnost TERRITORY TASK -->
+<string id="sim_default_dolg_trader_task_2_name">
+	<text>Získat zpět území Povinnosti</text>
+</string>
+<string id="sim_default_dolg_trader_task_2_text">
+	<text>Byl jsi pověřen, abys získal území pro Povinnost. Po dokončení úkolu se obrať na %s v %s.</text>
+</string>
+<string id="sim_default_dolg_trader_task_2_about">
+	<text>Mám důležitou misi k dispozici. Svoboda obsadila jeden z našich táborů a potřebuji specialistu, který ho získá zpět.</text>
+</string>
+<string id="sim_default_dolg_trader_task_2_finish">
+	<text>Úkol je hotový? Dobrá práce.</text>
+</string>
+
+<!-- ASSASHříchATE VIP FOR Povinnost TASK -->
+<string id="sim_default_dolg_trader_task_3_name">
+	<text>Zabít VIP pro Povinnost</text>
+</string>
+<string id="sim_default_dolg_trader_task_3_text">
+	<text>%s z %s tě pověřil Najdi a Zlikviduj cíl.</text>
+</string>
+<string id="sim_default_dolg_trader_task_3_about">
+	<text>Mám seznam VIP, kteří potřebují být... vyřízeni. Někteří jsou informátoři, vysocí členové Svobody, velitelé skupin, taktici nebo jen jednoduchá špína. Získáš-li informace, vytáhni je, jinak střílej na první pohled.</text>
+</string>
+<string id="sim_default_dolg_trader_task_3_finish">
+	<text>Skvělé! Udělal jsi nás hrdými. Tady je to, co jsem ti slíbil.</text>
+</string>
+	
+		<!-- FIND LEVEL 1 TOOLKIT FOR Povinnost MECHANICS TASK -->
+	<string id="sim_default_dolg_mechanic_task_1_name">
+	<text>Najdi %s pro techanika frakce Povinnost</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_1_text">
+	<text>%s jsou potřebné techanika frakce Povinnost k výměně starých nástrojů. Pokud nějaké najdete, přineste je zpět k jakémukoli Mechanikovi frakce Povinnost.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_1_about">
+	<text>Skutečně bych mohl použít dobrou sadu nástrojů, stalkere... a možná i trochu peněz. Pokud máte zájem mi pomoci, řeknu vám, co hledám.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_1_fetch_about">
+	<text>Většina opravných nástrojů, které máme, pochází z roku 2006, kdy se stala druhá událost. Dlouho před vznikem frakce Povinnost. Museli jsme shromáždit to, co zbylo od armády. Zkrátka řečeno, potřebujeme novou sadu základních nástrojů. Přineste je zpět k jakémukoli Mechanikovi frakce Povinnost, seženete je za zvýhodněnou cenu. Jste na to?</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_1_fetch_finish">
+	<text>Dobrá práce. Za přinášení těchto nástrojů vám uděláme dobrou slevu.</text>
+</string>
+
+<!-- ÚKOL NALEZENÍ STROJOVÉ SADY ÚROVNĚ 2 PRO MECHANIKA FRACE Povinnost -->
+<string id="sim_default_dolg_mechanic_task_2_name">
+	<text>Najdi %s pro techanika frakce Povinnost</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_2_text">
+	<text>%s jsou potřebné techanika frakce Povinnost k výměně starých nástrojů. Pokud nějaké najdete, přineste je zpět k jakémukoli Mechanikovi frakce Povinnost.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_2_about">
+	<text>Hele, kámo, pokud bys náhodou našel nějaké pokročilejší nástroje, dostaneš slevu. Můžeš se na ně rozhlédnout?</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme novou sadu pokročilých nástrojů. Přineste jednu sadu a od té doby vám nabídneme větší slevu.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_2_fetch_finish">
+	<text>To je skvělé. Za přinášení těchto nástrojů vám uděláme větší slevu.</text>
+</string>
+
+<!-- ÚKOL NALEZENÍ STROJOVÉ SADY ÚROVNĚ 3 PRO MECHANIKA FRACE Povinnost -->
+<string id="sim_default_dolg_mechanic_task_3_name">
+	<text>Najdi %s pro techanika frakce Povinnost</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_3_text">
+	<text>%s jsou potřebné techanika frakce Povinnost k výměně starých nástrojů. Pokud nějaké najdete, přineste je zpět k jakémukoli Mechanikovi frakce Povinnost.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_3_about">
+	<text>Hele, kámo, pokud bys náhodou našel nějaké pokročilejší nástroje, dostaneš slevu. Můžeš se na ně rozhlédnout?</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme novou sadu expertních nástrojů. Ta by měla obsahovat všechno, co potřebujeme prozatím. Pokud nějaké přinesete, nabídneme vám ještě větší slevu.</text>
+</string>
+<string id="sim_default_dolg_mechanic_task_3_fetch_finish">
+	<text>Výborně! Nyní máme vše, co potřebujeme. Moc díky, stalkere. Užijte si slevy.</text>
+</string>
+	
+
+	<!--/////////////////////////////////// BANDIT WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSASSIATION FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_1_name">
+	<text>Zlikviduj cíl pro bandity</text>
+</string>
+<string id="sim_default_bandit_trader_task_1_text">
+	<text>Najděte a zlikvidujte cíl a poté se vraťte k %s z %s pro zaplacení.</text>
+</string>
+<string id="sim_default_bandit_trader_task_1_about">
+	<text>V Zóně je mnoho lidí, kteří mi zle naklonili nebo mi projevili nedostatek úcty. Někteří z těchto parchantů mi buď dluží peníze nebo zkazili nějakou dohodu. Tito lidé jsou jen potkani, které je třeba vyhladit. Pokud jste na to připraveni, poskytnu vám jejich informace, abyste je mohli sledovat pomocí GPS.</text>
+</string>
+<string id="sim_default_bandit_trader_task_1_finish">
+	<text>Skvělá práce! Tady je malý obnos za vaše starosti:</text>
+</string>
+<!-- ÚKOL NALEZENÍ A ZLIKVIDOVÁNÍ MUTANTŮ PRO BANDITY -->
+<string id="sim_default_bandit_trader_task_2_name">
+	<text>Zlikviduj mutanty pro bandity</text>
+</string>
+<string id="sim_default_bandit_trader_task_2_text">
+	<text>Byly zaznamenány mutanty v blízkosti tohoto místa, což dělá oblast nebezpečnou. Byl jste pověřen úkolem zlikvidovat mutantí hrozbu v této oblasti. Po dokončení úkolu se vraťte k %s v %s.</text>
+</string>
+<string id="sim_default_bandit_trader_task_2_about">
+	<text>Hledáme někoho, kdo má dost odvahy na vyčištění mutantů z několika míst. Stalkerové sem nechodí, protože se bojí. Pokud s tím něco neuděláme, nezbude nám nikdo, komu bychom "půjčovali" zboží, a budeme muset opustit toto území.</text>
+</string>
+<string id="sim_default_bandit_trader_task_2_finish">
+	<text>Fantastická práce! Tady je vaše platba. Udělám si dobrou řeč s šéfem o vás.</text>
+</string>
+<!-- ÚKOL OBRÁNIT ÚZEMÍ PRO BANDITY -->
+<string id="sim_default_bandit_trader_task_3_name">
+	<text>Zlikviduj nepřátelskou hrozbu pro bandity</text>
+</string>
+<string id="sim_default_bandit_trader_task_3_text">
+	<text>Byli jsi pověřen úkolem zlikvidovat hrozbu na území. Po dokončení úkolu se vrať k %s v %s.</text>
+</string>
+<string id="sim_default_bandit_trader_task_3_about">
+	<text>Krávy se nám přesouvají na naše území. Šéf mi dal pokyn Najdi bezcharakterního člověka s dostatečnými koulema, který znovu obsadí některé z těchto táborů. Co říkáš? Máš dost chlupů na hrudi?</text>
+</string>
+<string id="sim_default_bandit_trader_task_3_finish">
+	<text>Fantastická práce! Tady je vaše platba. Udělám si dobrou řeč s šéfem o vás.</text>
+</string>
+<!-- ÚKOL ESKORTOVAT BANDITY -->
+<string id="sim_default_bandit_trader_task_4_name">
+	<text>Cheeki-Breeki i v Damke</text>
+</string>
+<string id="sim_default_bandit_trader_task_4_text">
+	<text>%s z %s vás pověřil, abyste převzali kontrolu nad místními stalkery tím, že je zbavíte jejich cenností, dokud vaše banda veselých mužů nebude spokojena.</text>
+</string>
+<string id="sim_default_bandit_trader_task_4_about">
+	<text>Je tu pár chlapů, kteří hledají dalšího společníka na určitou dobu. Potřebují průzkumníka, který je povede na lov pořádných cílů, a zaplatí vám, až bude vaše práce hotová.</text>
+</string>
+<string id="sim_default_bandit_trader_task_4_finish">
+	<text>Pěkná kořist, co? Tady je tvůj podíl.</text>
+</string>
+<!-- ÚKOL NÁJEMNÝ VRAH PRO BANDITY -->
+<string id="sim_default_bandit_trader_task_5_name">
+	<text>Hitman</text>
+</string>
+<string id="sim_default_bandit_trader_task_5_text">
+	<text>%s z %s vás najal, abyste vykonali vraždu. Najděte a zlikvidujte cíl a poté se vraťte k němu pro zaplacení.</text>
+</string>
+<string id="sim_default_bandit_trader_task_5_about">
+	<text>Mám seznam lidí, kteří mi zle naklonili. Chci, abyste je zlikvidoval. Co na to říkáš?</text>
+</string>
+<string id="sim_default_bandit_trader_task_5_finish">
+	<text>Skvělé, zbavil jsi se toho trouby! Tady je to, co jsem ti slíbil.</text>
+</string>
+
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR BANDIT MECHANICS -->
+	
+<string id="sim_default_bandit_mechanic_task_1_name">
+	<text>Najdi %s pro technika Banditů</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_1_text">
+	<text>Banditní mechanici potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli banditnímu mechanikovi, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_1_about">
+	<text>Je mi zoufale potřeba nových nástrojů, chlape. S těmi rezavými šmejdy, co mám, nemůžu nic udělat, a už mi dochází olej na zbraně. Pokud máte zájem mi pomoct, povím vám, co potřebuji.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_1_fetch_about">
+	<text>Potřebujeme lepší nástroje, chlape. Je hrozně těžké je hledat, když nám každý parchant ve Zóně střílí na povel. Prozatím potřebujeme novou sadu základních nástrojů. Najdete-li jedny, přineste je k jakémukoli z našich mechaniků a nabídneme vám dokonce slevu na další nákupy. Zajímá tě to, kámo?</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_1_fetch_finish">
+	<text>Perfektní! Tohle je přesně to, co potřebujeme, chlape. Promluvím s ostatními techniky, aby ti poskytli slevu.</text>
+</string>
+<!-- NALÉZÁNÍ SADY NÁSTROJŮ ÚROVNĚ 2 PRO BANDITSKÉ techniky -->
+<string id="sim_default_bandit_mechanic_task_2_name">
+	<text>Najdi %s pro technika Banditů</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_2_text">
+	<text>Banditní mechanici potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli banditnímu mechanikovi, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_2_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale nemá všechno, co potřebuji. Myslíš, že můžeš Najdi lepší sadu?</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme %s. Nevím přesně, kde bys mohl jedny sehnat, ale kdyby se ti to podařilo, potřebujeme je.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_2_fetch_finish">
+	<text>Zase jsi dodržel slovo! Dobrá práce, kámo, tady je nějaká hotovost. Mluvil jsem s ostatními techniky, aby ti poskytli ještě větší slevu.</text>
+</string>
+<!-- NALÉZÁNÍ SADY NÁSTROJŮ ÚROVNĚ 3 PRO BANDITSKÉ techniky -->
+<string id="sim_default_bandit_mechanic_task_3_name">
+	<text>Najdi %s pro technika Banditů</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_3_text">
+	<text>Banditní mechanici potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli banditnímu mechanikovi, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_3_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale nemá všechno, co potřebuji. Myslíš, že můžeš Najdi lepší sadu?</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme %s. To by mělo obsahovat všechno, co potřebujeme prozatím. Nevím přesně, kde bys mohl jedny sehnat, ale kdyby se ti to podařilo, potřebujeme je.</text>
+</string>
+<string id="sim_default_bandit_mechanic_task_3_fetch_finish">
+	<text>Zase jsi dodržel slovo! Dobrá práce, kámo, teď už máme všechno, co potřebujeme. Dáme ti další slevu za tvoji práci.</text>
+</string>
+	
+	
+	<!--/////////////////////////////////// KILLER WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->	
+	
+	<!-- ASSASHříchATION FOR MERCS TASK -->
+<string id="sim_default_killer_trader_task_1_name">
+	<text>Kontrakt na vraždu</text>
+</string>
+<string id="sim_default_killer_trader_task_1_text">
+	<text>Byl jste najat, abyste našel a odstranil cíl. Po dokončení úkolu se vraťte k %s v %s pro vyplacení.</text>
+</string>
+<string id="sim_default_killer_trader_task_1_about">
+	<text>Náš zákazník má seznam nevyřízených odměn. Potřebujeme dobrovolníky, kteří tyto vraždy provedou diskrétně, abychom splnili své závazky vůči našemu zákazníkovi. Máte zájem?</text>
+</string>
+<string id="sim_default_killer_trader_task_1_finish">
+	<text>Je hotovo? Skvěle. Zde je tvůj podíl:</text>
+</string>
+<!-- ÚTOK NA TERRITORIUM PRO VRAŽEDNÍKY -->
+<string id="sim_default_killer_trader_task_2_name">
+	<text>Útok na území pro najaté vražedníky</text>
+</string>
+<string id="sim_default_killer_trader_task_2_text">
+	<text>Vyčistěte oblast od všech nepřátelských hrozeb. Po dokončení úkolu se vraťte k %s v %s pro vyplacení.</text>
+</string>
+<string id="sim_default_killer_trader_task_2_about">
+	<text>Potřebuji, abys byl první v linii útoku. Vyčistěte cílovou oblast od veškerých nepřátelských sil.</text>
+</string>
+<string id="sim_default_killer_trader_task_2_finish">
+	<text>Vynikající práce. Jste skvělý bojovník.</text>
+</string>
+<!-- NALÉZÁNÍ SADY NÁSTROJŮ ÚROVNĚ 1 PRO VRAŽEDNICKÉ techniky -->
+<string id="sim_default_killer_mechanic_task_1_name">
+	<text>Najdi %s pro technika Žoldáků</text>
+</string>
+<string id="sim_default_killer_mechanic_task_1_text">
+	<text>Mechanici najatých Žoldáků potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli mechanikovi najatých Žoldáků, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_killer_mechanic_task_1_about">
+	<text>Mám pro tebe návrh. Pokud mi přineseš nějaké nové nástroje, dostaneš zaplaceno. Máš zájem?</text>
+</string>
+<string id="sim_default_killer_mechanic_task_1_fetch_about">
+	<text>Skvěle. Hledáme všude možně %s. Mělo by obsahovat olej a nástroje, které potřebujeme pro práci na palných zbraních. Zaplatíme ti za jeden takový nástrojový set, pokud přineseš úplnou sadu zpět k našim mechanikům, včetně mě. Za každý nový sadu nástrojů, kterou přineseš, snížíme ceny našich služeb jako projev naší vděčnosti. Tak co říkáš? Pomůžeš nám?</text>
+</string>
+<string id="sim_default_killer_mechanic_task_1_fetch_finish">
+	<text>To je přesně to, co jsme hledali. Díky!</text>
+</string>
+<!-- NALÉZÁNÍ SADY NÁSTROJŮ ÚROVNĚ 2 PRO VRAŽEDNICKÉ techniky -->
+<string id="sim_default_killer_mechanic_task_2_name">
+	<text>Najdi %s pro technika Žoldáků</text>
+</string>
+<string id="sim_default_killer_mechanic_task_2_text">
+	<text>Mechanici najatých Žoldáků potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli mechanikovi najatých Žoldáků, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_killer_mechanic_task_2_about">
+	<text>Mám další návrh. Nástrojový set, který jsi mi přinesl, je dobrý, ale nemá všechno, co potřebuji. Myslíš, že můžeš Najdi lepší sadu?</text>
+</string>
+<string id="sim_default_killer_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme %s. Nejsem si jistý, kde bys je mohl sehnat, ale pokud by se ti to podařilo, potřebujeme je.</text>
+</string>
+<string id="sim_default_killer_mechanic_task_2_fetch_finish">
+	<text>Vše, co potřebuji, je zde. Děkuji.</text>
+</string>
+<!-- NALÉZÁNÍ SADY NÁSTROJŮ ÚROVNĚ 3 PRO VRAŽEDNICKÉ techniky -->
+<string id="sim_default_killer_mechanic_task_3_name">
+	<text>Najdi %s pro technika Žoldáků</text>
+</string>
+<string id="sim_default_killer_mechanic_task_3_text">
+	<text>Mechanici najatých Žoldáků potřebují %s k nahrazení starých, takže je přineste zpět k jakémukoli mechanikovi najatých Žoldáků, pokud nějaké najdete.</text>
+</string>
+<string id="sim_default_killer_mechanic_task_3_about">
+	<text>Mám další návrh. Nástrojový set, který jsi mi přinesl, je dobrý, ale nemá všechno, co potřebuji. Myslíš, že můžeš Najdi lepší sadu?</text>
+</string>
+<string id="sim_default_killer_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme %s. Nejsem si jistý, kde bys je mohl sehnat, ale pokud by se ti to podařilo, potřebujeme je.</text>
+</string>
+<string id="sim_default_killer_mechanic_task_3_fetch_finish">
+	<text>Vše, co potřebuji, je zde. Děkuji.</text>
+</string>
+
+	<!--/////////////////////////////////// LONER WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+<string id="sim_default_stalker_trader_task_1_name">
+	<text>Vyčistit oblast od mutantů pro Samotáře</text>
+</string>
+<string id="sim_default_stalker_trader_task_1_text">
+	<text>Mutanti se blíží. Najdi je a vyčisti oblast. Poté se vrať k %s v %s pro svou odměnu.</text>
+</string>
+<string id="sim_default_stalker_trader_task_1_about">
+	<text>Pssst... Slyšíš to? Mutanti vytí. I po všech těch letech mi to stále znepokojuje. Co kdybys vyrazil ven a postaral se o ně? Já tě odměním.</text>
+</string>
+<string id="sim_default_stalker_trader_task_1_finish">
+	<text>Dobrá práce, stalkere!</text>
+</string>
+<!-- ÚKOL PRO Samotáře: NAJDI ARTEFAKT -->
+<string id="sim_default_stalker_trader_task_2_name">
+	<text>Najdi artefakt "%s" pro obchodníka Samotářů</text>
+</string>
+<string id="sim_default_stalker_trader_task_2_text">
+	<text>%s z %s tě žádá, abys pro něj našel artefakt %s.</text>
+</string>
+<string id="sim_default_stalker_trader_task_2_about">
+	<text>Obvykle nekupuji artefakty od stalkerů, ale je jeden, který bych si rád přivlastnil. Chceš to zkusit a sehnat mi ho?</text>
+</string>
+<string id="sim_default_stalker_trader_task_2_fetch_about">
+	<text>Hledám artefakt "%s". Viděl jsi někdy nějaký? Obvykle nekupuji artefakty od stalkerů, ale tenhle bych rád získal. Pokud ho najdeš, dobře ti zaplatím.</text>
+</string>
+<string id="sim_default_stalker_trader_task_2_fetch_finish">
+	<text>Dobrá práce, stalkere! Dobré lovení!</text>
+</string>
+<!-- ÚKOL PRO Samotáře: ZABÍJENÍ 1 -->
+<string id="sim_default_stalker_trader_task_3_name">
+	<text>Strážce mého bratra</text>
+</string>
+<string id="sim_default_stalker_trader_task_3_text">
+	<text>%s z %s tě žádá, abys zabil stalkera, který přešel na stranu vojáků.</text>
+</string>
+<string id="sim_default_stalker_trader_task_3_about">
+	<text>Je tu kluk, bývalý stalker, stejný jako kdokoli jiný tady kolem. Jednoho dne přišli vojenští důstojníci a nabídli mu místo. Příští co jsme věděli, střílel do svých bývalých bratrů do zad! To nemůžeme tolerovat! Najdi toho zrádce a pomsta za muže, které zastřelil.</text>
+</string>
+<string id="sim_default_stalker_trader_task_3_finish">
+	<text>Ach, zabil jsi ho? Myslím, že si dám panáka. Všem by to určitě prospělo...</text>
+</string>
+<!-- ÚKOL PRO Samotáře: ELIMINACE MUTANTŮ 2 -->
+<string id="sim_default_stalker_trader_task_4_name">
+	<text>Eliminuj mutanty pro Samotáře</text>
+</string>
+<string id="sim_default_stalker_trader_task_4_text">
+	<text>V této oblasti byli zaznamenáni mutanty, což z ní činí nebezpečné místo pro některé místní. Byl ti zadán úkol eliminovat mutantí hrozbu v této oblasti. Po dokončení úkolu se vrať k %s v %s.</text>
+</string>
+<string id="sim_default_stalker_trader_task_4_about">
+	<text>Hledal jsem někoho, kdo by pomohl udržovat tuto oblast trochu bezpečnější tím, že by vyčistil různá útočiště mutantů v okolí. Chceš si vzít tenhle úkol?</text>
+</string>
+<string id="sim_default_stalker_trader_task_4_finish">
+	<text>Děkuji, stalkere. Díky tobě bude oblast mnohem bezpečnější pro ostatní. Tady je tvá odměna.</text>
+</string>
+<!-- ÚKOL PRO Samotáře: ZABÍJENÍ 2 -->
+<string id="sim_default_stalker_trader_task_5_name">
+	<text>Vysoce nebezpečná eliminace</text>
+</string>
+<string id="sim_default_stalker_trader_task_5_text">
+	<text>%s z %s má cíle s vysokou hodnotou, kteří musí být eliminováni.</text>
+</string>
+<string id="sim_default_stalker_trader_task_5_about">
+	<text>Mám tu nebezpečnou hrozbu, kterou je třeba odstranit. Nebude to jednoduché, ale slibuji ti dobrou odměnu. Jsi na to?</text>
+</string>
+<string id="sim_default_stalker_trader_task_5_finish">
+	<text>Výborná práce, stalkere. Tady je tvá odměna.</text>
+</string>
+<!-- ÚKOL PRO Samotáře: NAJDI ZBROJ -->
+<string id="sim_default_stalker_trader_task_6_name">
+	<text>Najdi %s pro obchodníka Samotářů</text>
+</string>
+<string id="sim_default_stalker_trader_task_6_text">
+	<text>%s z %s hledá konkrétní palnou zbraň v středním stavu. Pokud ji najdeš, vrať se k němu.</text>
+</string>
+<string id="sim_default_stalker_trader_task_6_about">
+	<text>Jeden z mých loveckých specialistů by rád měl k dispozici konkrétní palnou zbraň, kterou momentálně nemám. Dokážeš ji pro mě vystopovat?</text>
+</string>
+<string id="sim_default_stalker_trader_task_6_fetch_about">
+	<text>Potřebuji %s. Ten lovec, který ji chce, potřebuje, aby byla alespoň ve středním stavu. Dobře ti zaplatím, pokud ji najdeš.</text>
+</string>
+<string id="sim_default_stalker_trader_task_6_fetch_finish">
+	<text>Ah, perfektní. Tohle se mi bude hodit. Tady je slíbená odměna.</text>
+</string>
+<!-- ÚKOL PRO Samotáře: SBRATELSTVÍ S MUTANTY -->
+<string id="sim_default_stalker_trader_task_7_name">
+	<text>Sbratření s mutanty pro obchodníka Samotářů</text>
+</string>
+<string id="sim_default_stalker_trader_task_7_text">
+	<text>%s z %s říká, že dobře zaplatí, když mu přinesu %s.</text>
+</string>
+<string id="sim_default_stalker_trader_task_7_about">
+	<text>Mám vypsánu odměnu za určitý druh mutanta. Zajímá tě to?</text>
+</string>
+<string id="sim_default_stalker_trader_task_7_fetch_about">
+	<text>Zabij tohoto mutanta a přines mi jeho %s a dobře ti zaplatím, stalkere.</text>
+</string>
+<string id="sim_default_stalker_trader_task_7_fetch_finish">
+	<text>Ah, další hrozba odstraněna a nová výzdoba pro tábor. Dobrá práce, stalkere.</text>
+</string>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR LONER MECHANICS TASK -->
+<string id="sim_default_stalker_mechanic_task_1_name">
+	<text>Najdi %s pro techniky Lonery</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_1_text">
+	<text>%s jsou potřebné pro výměnu starých nástrojů u mechaniků Lonery. Pokud nějaké najdeš, měl bys je přinést zpět k libovolnému mechanikovi Lonera.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_1_about">
+	<text>Potřebuji nové nástroje, stalkeru, něco, co je v Zóně těžké sehnat. Pokud máš zájem nám pomoci, řeknu ti, co potřebujeme.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_1_fetch_about">
+	<text>Rád jsi se zeptal, rádi bychom měli nějaké nové nástroje, se kterými můžeme pracovat, něco, co je v Zóně velmi těžké sehnat. Pro začátek najdi novou sadu základních nástrojů. Poté je přines k libovolnému mechanikovi Lonera a my ti nabídneme slevu na veškeré další opravy. Stojíš o to?</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_1_fetch_finish">
+	<text>Skvělé! To je přesně to, co potřebujeme, stalkeru. Pokud potřebuješ jakoukoliv úpravu svého vybavení, neváhej mě požádat, abych se na to podíval. Také informuji ostatní techniky, aby ti poskytli slevu.</text>
+</string>
+<!-- ÚKOL Najdi TOOLKIT ÚROVNĚ 2 PRO MECHANIKA LONERŮ -->
+<string id="sim_default_stalker_mechanic_task_2_name">
+	<text>Najdi %s pro techniky Lonery</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_2_text">
+	<text>%s jsou potřebné pro výměnu starých nástrojů u mechaniků Lonery. Pokud nějaké najdeš, měl bys je přinést zpět k libovolnému mechanikovi Lonera.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_2_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl sehnat lepší sadu?</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme %s. Nejsem si jistý, kde bys mohl jednu sehnat, ale pokud najdeš, přines ji.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_2_fetch_finish">
+	<text>Wow! Našel jsi opravdu pěknou sadu nástrojů. Tady je nějaký peníz jako odměna. Promluvím s ostatními techniky, aby ti dali lepší slevu.</text>
+</string>
+<!-- ÚKOL Najdi TOOLKIT ÚROVNĚ 3 PRO MECHANIKA LONERŮ -->
+<string id="sim_default_stalker_mechanic_task_3_name">
+	<text>Najdi %s pro techniky Lonery</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_3_text">
+	<text>%s jsou potřebné pro výměnu starých nástrojů u mechaniků Lonery. Pokud nějaké najdeš, měl bys je přinést zpět k libovolnému mechanikovi Lonera.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_3_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl sehnat lepší sadu?</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_3_fetch_about">
+	<text>Potřebujeme %s. Nejsem si jistý, kde bys mohl jednu sehnat, ale pokud najdeš, přines ji.</text>
+</string>
+<string id="sim_default_stalker_mechanic_task_3_fetch_finish">
+	<text>Skvělé! Našel jsi velmi pěknou sadu nástrojů. Tady je nějaký peníz za tvé potíže. Také jsem promluvil s ostatními techniky, aby ti dali lepší slevu.</text>
+</string>
+
+	<!--/////////////////////////////////// Jasná OblohaWARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- DELIVER PDA FOR CSKY TASK -->
+<string id="sim_default_csky_trader_task_1_name">
+	<text>Předej PDA Nimbleovi</text>
+</string>
+<string id="sim_default_csky_trader_task_1_text">
+	<text>%s z %s tě žádá, abys předal šifrované PDA Nimbleovi v Zatonu.</text>
+</string>
+<string id="sim_default_csky_trader_task_1_about">
+	<text>Chci, abys předal toto šifrované PDA Nimbleovi. Dej si pozor, abys ho nespadl nebo nerozbil, ok?</text>
+</string>
+<!-- ÚKOL ZNIČIT VRTULNÍK PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_2_name">
+	<text>Znič vojenský vrtulník pro Clear Sky</text>
+</string>
+<string id="sim_default_csky_trader_task_2_text">
+	<text>%s z %s chce, abys zničil vojenský útočný vrtulník.</text>
+</string>
+<string id="sim_default_csky_trader_task_2_about">
+	<text>Armáda nás vždycky obtěžovala, posílají na nás útoky do našich stanovišť a tak. Ale nedávno nás začali napadat i shora. Tušíš, kam mířím? Chci, abys zničil jeden z jejich útočných vrtulníků, to by mělo udělat díru do jejich sil. Myslíš, že bys to zvládl? Odměna bude dobrá.</text>
+</string>
+<!-- ÚKOL ESCORTOVAT VĚDCE PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_3_name">
+	<text>Escortuj vědce pro Jasná Obloha%s</text>
+</string>
+<string id="sim_default_csky_trader_task_3_text">
+	<text>%s z %s tě najal, abys provedl několik vědců na určené místo k výzkumu. Jakmile bude jejich výzkum úspěšně dokončen, vrátíš je bezpečně do tábora, kde budeš odměněn.</text>
+</string>
+<string id="sim_default_csky_trader_task_3_about">
+	<text>Vědci zde v táboře potřebují zkušeného stalkera, který je provede v terénu pro výzkum. Zvládneš to? Tvým úkolem je udržet je naživu a dovést je k cíli. Neúspěch by ti v těchto končinách přinesl špatnou pověst.</text>
+</string>
+<string id="sim_default_csky_trader_task_3_finish">
+	<text>Děkuji, stalkere. Toto můžeš považovat za platbu za tvé služby.</text>
+</string>
+<!-- ÚKOL ZABÍT MUTANTY PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_4_name">
+	<text>Odstraň hrozbu mutantů pro Clear Sky</text>
+</string>
+<string id="sim_default_csky_trader_task_4_text">
+	<text>V těchto končinách byli spatřeni mutanti, což činí oblast nebezpečnou pro některé místní obyvatele. Byl ti zadán úkol odstranit hrozbu mutantů v této oblasti. Po dokončení úkolu se vrať k %s v %s a podívej se hlásit.</text>
+</string>
+<string id="sim_default_csky_trader_task_4_about">
+	<text>Jsi horlivý lovec? Hledáme někoho, kdo by udržoval toto místo o něco bezpečnější tím, že by vyčistil oblast od mutantů na místech, kde se náš oddíl často pohybuje. Máš zájem o tuto práci?</text>
+</string>
+<string id="sim_default_csky_trader_task_4_finish">
+	<text>Fantastické! Tady je tvoje odměna. Přesvědčím ostatní, že je zde znovu relativně bezpečno. Děkuji, stalkere.</text>
+</string>
+<!-- ÚKOL ZABÍT SKUPINU BANDITŮ PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_5_name">
+	<text>Odstraň banditům tábor pro Clear Sky</text>
+</string>
+<string id="sim_default_csky_trader_task_5_text">
+	<text>Byl ti zadán úkol odstranit hrozbu banditů v této oblasti. Po dokončení úkolu se vrať k %s v %s a podívej se hlásit.</text>
+</string>
+<string id="sim_default_csky_trader_task_5_about">
+	<text>Máme velký problém s bandity v této oblasti. Ti vražední lupiči útočí na naše tábory mimo hlavní základnu a snaží se převzít území. Pokud budou v okolí, bude nám to bránit v průchodu mnoha bezpečnými trasami v této oblasti. Potřebujeme zkušeného stalkera, který se nebojí se zapřáhnout. Pomůžeš nám?</text>
+</string>
+<string id="sim_default_csky_trader_task_5_finish">
+	<text>Fantastické! Tady je tvoje odměna. Přesvědčím ostatní, že je zde opět bezpečno. Děkuji, stalkere.</text>
+</string>
+<!-- ÚKOL Najdi MUTANTÍ MASA PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_6_name">
+	<text>Divoká zvěřina</text>
+</string>
+<string id="sim_default_csky_trader_task_6_text">
+	<text>%s z %s chce, abys vykuchal čerstvě mrtvé mutanti a přinesl %s.</text>
+</string>
+<string id="sim_default_csky_trader_task_6_about">
+	<text>Pokud jsi dobrý s puškou a nebojíš se pár mutantů, mám pro tebe práci. Zajímá tě to?</text>
+</string>
+<string id="sim_default_csky_trader_task_6_fetch_about">
+	<text>Zásoby potravin docházejí a musím udržet všechny v táboře s plnými žaludky. Někteří kluci sem a tam donesou nějakou kořist. Ale v poslední době je to pomalé - takže pokud nebudeš příliš zaneprázdněný a budeš venku, potřebuji %s. Mám své lidi, kteří zabíjejí a zpracovávají maso, přímo tady v táboře. Měj na paměti, že když mutanti dostanou adrenalin, maso je tužší. Navíc, čím menší krvácení, tím lépe maso chutná. Takže buď opatrný se střelami, ok?</text>
+</string>
+<string id="sim_default_csky_trader_task_6_fetch_finish">
+	<text>Skvělé, jsi dobrý lovec! Mám pro tebe odměnu.</text>
+</string>
+<!-- ÚKOL ZAÚTOČIT NA VOJENSKÝ TÁBOR PRO Jasná Obloha-->
+<string id="sim_default_csky_trader_task_7_name">
+	<text>Odstraň vojenský tábor pro Clear Sky</text>
+</string>
+<string id="sim_default_csky_trader_task_7_text">
+	<text>Byl ti zadán úkol odstranit vojenskou hrozbu v této oblasti. Po dokončení úkolu se vrať k %s v %s a podívej se hlásit.</text>
+</string>
+<string id="sim_default_csky_trader_task_7_about">
+	<text>Máme velký problém s vojenskými jednotkami v této oblasti. Ti vojáci útočí na naše tábory mimo hlavní základnu a snaží se převzít území. Pokud budou v okolí, bude nám to bránit v průchodu mnoha bezpečnými trasami v této oblasti. Potřebujeme zkušeného stalkera, který se nebojí se zapřáhnout. Pomůžeš nám?</text>
+</string>
+<string id="sim_default_csky_trader_task_7_finish">
+	<text>Fantastické! Tady je tvoje odměna. Přesvědčím ostatní, že je zde opět bezpečno. Děkuji, stalkere.</text>
+</string>
+
+	<!-- FIND LEVEL 1 TOOLS FOR CSKY MECHANICS TASK -->
+<string id="sim_default_csky_mechanic_task_1_name">
+	<text>Najdi %s pro techniky Clear Sky</text>
+</string>
+<string id="sim_default_csky_mechanic_task_1_text">
+	<text>Mechanikům Jasná Oblohajsou potřebné %s na výměnu starých. Pokud najdeš nějaké, přines je k libovolnému mechanikovi Clear Sky.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_1_about">
+	<text>V Zóně je opravdu obtížné sehnat nástroje. Kdybychom se mohli dostat k novým nástrojům, opravy a vylepšování by pro nás bylo mnohem snazší a efektivnější. Úkolem je přinést jakoukoli krabici s nástroji, kterou najdeš, k libovolnému mechanikovi Clear Sky. Pokud tě to zajímá, řeknu ti, co potřebujeme. Jdeš do toho?</text>
+</string>
+<string id="sim_default_csky_mechanic_task_1_fetch_about">
+	<text>V Zóně je opravdu obtížné sehnat nástroje. Kdybychom se mohli dostat k novým nástrojům, opravy a vylepšování by pro nás bylo mnohem snazší a efektivnější. Úkolem je přinést jakoukoli krabici s nástroji, kterou najdeš, k libovolnému mechanikovi Clear Sky. Momentálně potřebujeme základní sadu nástrojů. Jdeš do toho?</text>
+</string>
+<string id="sim_default_csky_mechanic_task_1_fetch_finish">
+	<text>Výborně, kámo! Tady, vem si nějaké peníze. Kontaktoval jsem i ostatní techniky, aby ti nabídli slevu.</text>
+</string>
+<!-- ÚKOL Najdi NÁSTROJE ÚROVNĚ 2 PRO techniky Jasná Obloha-->
+<string id="sim_default_csky_mechanic_task_2_name">
+	<text>Najdi %s pro techniky Clear Sky</text>
+</string>
+<string id="sim_default_csky_mechanic_task_2_text">
+	<text>Mechanikům Jasná Oblohajsou potřebné %s na výměnu starých. Pokud najdeš nějaké, přines je k libovolnému mechanikovi Clear Sky.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_2_about">
+	<text>Skutečně bych potřeboval více nástrojů. Minule jsi mi přinesl dobré věci, ale potřebuji sadu vyšší kvality. Pokud tě to zajímá, řeknu ti, co potřebujeme.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme novou sadu pokročilých nástrojů. Přineseš-li nám jednu, nabídneme ti větší slevu na cokoli, co u nás budeš chtít.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_2_fetch_finish">
+	<text>Výborně, kámo! Zase jsi nám pomohl! Tady, vem si nějaké peníze. Ostatní mechanici ti také nabídnou lepší ceny.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_3_name">
+	<text>Najdi %s pro techniky Clear Sky</text>
+</string>
+<string id="sim_default_csky_mechanic_task_3_text">
+	<text>Mechanikům Jasná Oblohajsou potřebné %s na výměnu starých. Pokud najdeš nějaké, přines je k libovolnému mechanikovi Clear Sky.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_3_about">
+	<text>Skutečně bych potřeboval více nástrojů. Minule jsi mi přinesl dobré věci, ale potřebuji sadu vyšší kvality. Pokud tě to zajímá, řeknu ti, co potřebujeme.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme novou sadu odborných nástrojů. To by mělo být všechno, co momentálně potřebujeme. Přineseš-li nám jednu, nabídneme ti ještě větší slevu na cokoli, co u nás budeš chtít.</text>
+</string>
+<string id="sim_default_csky_mechanic_task_3_fetch_finish">
+	<text>Výborně, kámo! Zase jsi nám pomohl! Tady, vem si nějaké peníze. Ostatní mechanici ti také nabídnou lepší ceny.</text>
+</string>
+<string id="sim_default_csky_trader_nimble_pda_warfare_task_1">
+	<text>Jo, na to jsem čekal. Díky. Tady je tvá odměna:</text>
+</string>
+
+	<!--/////////////////////////////////// FREEDOM WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- STOP ENEMY ASSAULT FOR FREEDOM TASK -->
+
+<string id="sim_default_freedom_trader_task_1_name">
+	<text>Odraz útoku pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_1_text">
+	<text>Překaz útoku na tábor Svobody. Hlás se poté %s v %s, až se ti podaří vyčistit oblast.</text>
+</string>
+<string id="sim_default_freedom_trader_task_1_about">
+	<text>Síly nepřátelské Svobodě se přibližují k jednomu z našich táborů. Potřebuji někoho schopného, kdo odrazí jejich vpád. Jsi ten pravý na tuto práci?</text>
+</string>
+<string id="sim_default_freedom_trader_task_1_finish">
+	<text>Úkol je hotový? Skvěle.</text>
+</string>
+<!-- ÚKOL ZÍSKAT ZPĚT TERRITORIUM PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_2_name">
+	<text>Získat zpět území pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_2_text">
+	<text>Byl jsi pověřen, abys bránil území frakce. Po dokončení úkolu se vrať k %s v %s.</text>
+</string>
+<string id="sim_default_freedom_trader_task_2_about">
+	<text>Mám důležitou misi, pokud jsi ochoten. Povinnost se zmocnila jednoho z našich táborů a já potřebuji infiltrátora, který ho znovu dobude.</text>
+</string>
+<string id="sim_default_freedom_trader_task_2_finish">
+	<text>Výborně. Dobrá práce.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_3_name">
+	<text>Zabít člena Monolith pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_3_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_trader_task_3_about">
+	<text>Mám velmi nebezpečný úkol. Požádal jsem o dobrovolníky, ale zatím se nikdo nepřihlásil. Síly Monolithu neustále pronikají skrze naši blokádu. Chci se s nimi jednou provždy poprat. Potřebuji někoho, kdo vstoupí na jejich území a zabije určitého člena jejich frakce, abychom jim poslali zprávu. Co říkáš? Jsi ten největší dobrodruh v tomto táboře?</text>
+</string>
+<string id="sim_default_freedom_trader_task_3_finish">
+	<text>Aha, přežil jsi! Ty jsi chlap! Skvělá práce.</text>
+</string>
+<!-- ÚKOL ZABÍT Povinnost PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_4_name">
+	<text>Zabít cíl pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_4_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat cíl.</text>
+</string>
+<string id="sim_default_freedom_trader_task_4_about">
+	<text>Je tu určitá osoba, která se velmi hlasitě postavila proti Svobodě a potřebuje utišit. Umíš někoho umlčet?</text>
+</string>
+<string id="sim_default_freedom_trader_task_4_finish">
+	<text>Skvělé! Udělal jsi nás hrdé. Tady je to, co jsem ti slíbil:</text>
+</string>
+<!-- ÚKOL Najdi ZBROJ PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_5_name">
+	<text>Najdi %s pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_5_text">
+	<text>%s z %s tě požádal, abys našel konkrétní palnou zbraň. Vrať se k němu, až najdeš to, co hledá.</text>
+</string>
+<string id="sim_default_freedom_trader_task_5_about">
+	<text>S Povinností na jihu a Monolithem na severu jsme odkázáni sami na sebe. Naše zbraně se opotřebovávají a potřebujeme je nahradit. Máš nějaké zkušenosti s pašováním zbraní?</text>
+</string>
+<string id="sim_default_freedom_trader_task_5_fetch_about">
+	<text>Skutečně potřebujeme nový %s. Pokud nám ho najdeš v dobrém stavu, byl bych ochoten zaplatit slušnou cenu.</text>
+</string>
+<string id="sim_default_freedom_trader_task_5_fetch_finish">
+	<text>Dobrá práce. To nám hodně pomůže při obraně Zóny. Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL Najdi MUTEK MASO PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_6_name">
+	<text>Divočina</text>
+</string>
+<string id="sim_default_freedom_trader_task_6_text">
+	<text>%s z %s tě požádal, abys zbavil čerstvě zabitých mutantů %s.</text>
+</string>
+<string id="sim_default_freedom_trader_task_6_about">
+	<text>Mám tu pro tebe práci, kámo, pokud se nebojíš pár mutantů. Zajímá tě to?</text>
+</string>
+<string id="sim_default_freedom_trader_task_6_fetch_about">
+	<text>Někteří kluci mi občas přinesou pár mrtvol. Ale poslední dobou je to slabé - takže pokud nejsi moc zaneprázdněný a v okolí, potřebuji %s. Náš kuchař maso zabíjí a zpracovává přímo zde v táboře.</text>
+</string>
+<string id="sim_default_freedom_trader_task_6_fetch_finish">
+	<text>Skvělé, jsi dobrý lovec! Mám tu pro tebe odměnu.</text>
+</string>
+<!-- ÚKOL VYČISTIT OBLAST OD MUTEK PRO FREEDOM -->
+<string id="sim_default_freedom_trader_task_7_name">
+	<text>Vyčistit oblast od mutantů pro Svobodu</text>
+</string>
+<string id="sim_default_freedom_trader_task_7_text">
+	<text>Najdi a vyčisti oblast od mutantů.</text>
+</string>
+<string id="sim_default_freedom_trader_task_7_about">
+	<text>Chtěl bych, aby někdo zlikvidoval mutenty na tomto místě, dělají problémy našim klukům. Jsem ochoten za to zaplatit slušnou cenu. Přijmeš to?</text>
+</string>
+<string id="sim_default_freedom_trader_task_7_finish">
+	<text>Dobrá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL Najdi ÚROVEŇ 1 NÁSTROJE PRO technika Svobody -->
+<string id="sim_default_freedom_mechanic_task_1_name">
+	<text>Najdi %s pro technika Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_1_text">
+	<text>%s jsou potřebné pro technika Svobody, aby nahradili ty staré. Přines je zpátky kterémukoli Mechanikovi za Freedom, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_1_about">
+	<text>Hele, kámo. Zajímalo by tě udělat pro mě práci? Potřebuji specifické nástroje pro práci na zbraních.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_1_fetch_about">
+	<text>Ano, kámo, potřebujeme spoustu nových nástrojů, abychom mohli pracovat, ale ti parchanti radši kouří, místo aby nám pomohli Najdi nové náhrady. Najdi nový set základních nástrojů a přines ho kterémukoli Mechanikovi za Freedom, kamkoliv naletíš. Můžeme na tebe spoléhat, kámo?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_1_fetch_finish">
+	<text>Díky, kámo! Věděl jsem, že na tebe můžeme spoléhat. Vypadáš jako chlap, co dokáže udělat práci. Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL Najdi NÁBOJE PRO FREEDOM -->
+<string id="sim_default_freedom_mechanic_task_2_name">
+	<text>Najdi náboje pro technika Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_text">
+	<text>%s jsou potřebné pro technika Svobody. Přines nám dostatek nábojů, abychom měli dost zásob pro případ nouze.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_about">
+	<text>Mám tu pro tebe práci, kámo. Potřebujeme zásoby nábojů, a to dost rychle. Baví tě sbírat?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_fetch_about">
+	<text>Náboje jsou naší největší měnou v téhle Zóně. Měli bychom mít dostatek zásob, abychom se mohli bránit. Přines mi dostatek %s a zaplatím ti slušnou cenu.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_fetch_finish">
+	<text>Dobrá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL VYČISTIT OBLAST OD ANOMÁLIÍ PRO FREEDOM -->
+<string id="sim_default_freedom_mechanic_task_3_name">
+	<text>Vyčistit oblast od anomálií pro technika Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_text">
+	<text>Najdi a vyčisti oblast od anomálií. Potřebujeme bezpečný prostor pro práci.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_about">
+	<text>Potřebuji, aby někdo vyčistil tuto oblast od anomálií. Máme tu spoustu práce a bezpečný prostor je pro nás zásadní. Jsi ten správný na tuto práci?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_finish">
+	<text>Výborně udělaná práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO technika Svobody -->
+<string id="sim_default_freedom_mechanic_task_4_name">
+	<text>Zabít člena Monolith pro technika Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_4_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_4_about">
+	<text>Potřebuju, abys někoho odstranil. Je to člen Monolith a způsobuje nám problémy. Jsi připraven na takový úkol?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_4_finish">
+	<text>Dobrá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL PRO Vědce Svobody -->
+<string id="sim_default_freedom_scientist_task_name">
+	<text>%s pro Vědce Svobody</text>
+</string>
+<string id="sim_default_freedom_scientist_task_text">
+	<text>%s jsou potřebné pro Vědce Svobody. Přines je zpátky kterémukoli Vědci za Freedom, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_freedom_scientist_task_about">
+	<text>Potřebuji %s pro naše výzkumné účely. Máš nějaké zkušenosti s hledáním vědeckých materiálů?</text>
+</string>
+<string id="sim_default_freedom_scientist_task_fetch_about">
+	<text>Náš výzkum se opírá o kvalitní vědecké materiály. Pokud najdeš %s, přines je kterémukoli Vědci za Freedom. Odvděčíme se ti dobře.</text>
+</string>
+<string id="sim_default_freedom_scientist_task_fetch_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO Vědce Svobody -->
+<string id="sim_default_freedom_scientist_task_kill_monolith_name">
+	<text>Zabít člena Monolith pro Vědce Svobody</text>
+</string>
+<string id="sim_default_freedom_scientist_task_kill_monolith_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_scientist_task_kill_monolith_about">
+	<text>Člen Monolith nám způsobuje problémy a ohrožuje naši výzkumnou činnost. Potřebuju, abys ho odstranil. Jsi připraven na tento úkol?</text>
+</string>
+<string id="sim_default_freedom_scientist_task_kill_monolith_finish">
+	<text>Dobrá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL PRO komando Svobody -->
+<string id="sim_default_freedom_commander_task_name">
+	<text>%s pro komando Svobody</text>
+</string>
+<string id="sim_default_freedom_commander_task_text">
+	<text>%s jsou potřebné pro komando Svobody. Přines je zpátky kterémukoli Veliteli za Freedom, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_freedom_commander_task_about">
+	<text>Máme naléhavou potřebu %s pro naše komando. Jsi ochoten nám pomoci s tímto úkolem?</text>
+</string>
+<string id="sim_default_freedom_commander_task_fetch_about">
+	<text>Potřebujeme %s, abychom udrželi naši sílu. Pokud je najdeš, přines je kterémukoli Veliteli za Freedom. Odměníme tě dobře.</text>
+</string>
+<string id="sim_default_freedom_commander_task_fetch_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO komando Svobody -->
+<string id="sim_default_freedom_commander_task_kill_monolith_name">
+	<text>Zabít člena Monolith pro komando Svobody</text>
+</string>
+<string id="sim_default_freedom_commander_task_kill_monolith_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_commander_task_kill_monolith_about">
+	<text>Jeden z členů Monolith nám způsobuje velké problémy. Potřebujeme ho odstranit a očistit tuto oblast. Můžeme na tebe spoléhat?</text>
+</string>
+<string id="sim_default_freedom_commander_task_kill_monolith_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL PRO šamana Svobody -->
+<string id="sim_default_freedom_shaman_task_name">
+	<text>%s pro šamana Svobody</text>
+</string>
+<string id="sim_default_freedom_shaman_task_text">
+	<text>%s jsou potřebné pro šamana Svobody. Přines je zpátky kterémukoli Šamanovi za Freedom, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_freedom_shaman_task_about">
+	<text>Potřebuji %s pro svá rituály. Jsi ochoten mi s tím pomoct?</text>
+</string>
+<string id="sim_default_freedom_shaman_task_fetch_about">
+	<text>%s jsou důležité pro naše šamanské rituály. Pokud najdeš nějaké, přines je kterémukoli Šamanovi za Freedom. Budeš za to odměněn.</text>
+</string>
+<string id="sim_default_freedom_shaman_task_fetch_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO šamana Svobody -->
+<string id="sim_default_freedom_shaman_task_kill_monolith_name">
+	<text>Zabít člena Monolitu pro šamana Svobody</text>
+</string>
+<string id="sim_default_freedom_shaman_task_kill_monolith_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_shaman_task_kill_monolith_about">
+	<text>Potřebuju, abys se postaral o jednoho z členů Monolith. Je mi v cestě při provádění šamanských rituálů. Jsi ochoten mu zabránit?</text>
+</string>
+<string id="sim_default_freedom_shaman_task_kill_monolith_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL PRO veterána Svobody -->
+<string id="sim_default_freedom_veteran_task_name">
+	<text>%s pro veterána Svobody</text>
+</string>
+<string id="sim_default_freedom_veteran_task_text">
+	<text>%s jsou potřebné pro veterána Svobody. Přines je zpátky kterémukoli Veteránovi za Freedom, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_freedom_veteran_task_about">
+	<text>Potřebuji %s pro naše veterány. Pomůžeš mi je sehnat?</text>
+</string>
+<string id="sim_default_freedom_veteran_task_fetch_about">
+	<text>%s jsou důležité pro naše veterány. Pokud najdeš nějaké, přines je kterémukoli Veteránovi za Freedom. Odměníme tě za to.</text>
+</string>
+<string id="sim_default_freedom_veteran_task_fetch_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+<!-- ÚKOL ZABÍT ČLENA Monolith PRO veterána Svobody -->
+<string id="sim_default_freedom_veteran_task_kill_monolith_name">
+	<text>Zabít člena Monolith pro veterána Svobody</text>
+</string>
+<string id="sim_default_freedom_veteran_task_kill_monolith_text">
+	<text>%s z %s tě požádal, abys našel a eliminovat člena Monolith.</text>
+</string>
+<string id="sim_default_freedom_veteran_task_kill_monolith_about">
+	<text>Potřebuji, abys se postaral o jednoho z členů Monolith. Způsobuje nám problémy a ohrožuje naše veterány. Jsi připraven na tento úkol?</text>
+</string>
+<string id="sim_default_freedom_veteran_task_kill_monolith_finish">
+	<text>Skvělá práce, kámo! Tady je odměna, kterou jsem slíbil.</text>
+</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR FREEDOM MECHANICS TASK -->
+	<string id="sim_default_freedom_mechanic_task_2_name">
+	<text>Najdi %s pro techniky Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_text">
+	<text>%s jsou potřebné techniky Svobody k nahrazení těch starých. Pokud nějaké najdete, přineste je zpět kterémukoli Mechanikovi Svobody.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_about">
+	<text>Haha, nerad se ptám, ale opravdu bych potřeboval víc nástrojů. Přinesl jsi mi to, o co jsem tě minule prosil, ale potřebuji sadu vyšší kvality. Můžeš znovu pomoct?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_fetch_about">
+	<text>Nyní potřebujeme novou sadu pokročilých nástrojů. Pokud dokážeš nějakou přinést, budeme všichni vděční.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_2_fetch_finish">
+	<text>Když budete pokračovat takhle, všichni tady tě zamilují. Díky, kámo. Od teď ti nabídneme lepší ceny jako odměnu.</text>
+</string>
+<!-- ÚKOL Najdi NÁSTROJE ÚROVNĚ 3 PRO techniky SVOBODY -->
+<string id="sim_default_freedom_mechanic_task_3_name">
+	<text>Najdi %s pro techniky Svobody</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_text">
+	<text>%s jsou potřebné techniky Svobody k nahrazení těch starých. Pokud nějaké najdete, přineste je zpět kterémukoli Mechanikovi Svobody.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_about">
+	<text>Haha, nerad se ptám, ale opravdu bych potřeboval víc nástrojů. Přinesl jsi mi to, o co jsem tě minule prosil, ale potřebuji sadu vyšší kvality. Můžeš znovu pomoct?</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_fetch_about">
+	<text>Nyní potřebujeme novou sadu expertních nástrojů. To je poslední věc, kterou momentálně potřebujeme, slibuji. Pokud nějaké přineseš, budeme vděční.</text>
+</string>
+<string id="sim_default_freedom_mechanic_task_3_fetch_finish">
+	<text>Díky, kámo. Jako odměnu ti dáme slevu.</text>
+</string>
+
+	<!--/////////////////////////////////// MONOLITH WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSAULT TERRITORY FOR MONOLITH TASK -->
+<string id="sim_default_monolith_trader_task_1_name">
+	<text>Dobytí Nepřátel</text>
+</string>
+<string id="sim_default_monolith_trader_task_1_text">
+	<text>Bylo ti zadáno, abys vyčistil oblast ve prospěch všemocného Monolitu. Po dokončení úkolu se vrať k zajícovi.</text>
+</string>
+<string id="sim_default_monolith_trader_task_1_about">
+	<text>Mám pro tebe důležitou misi. Musíš se vydat do Zóny a vyčistit oblast, aby naše jednotky mohly postoupit dál. Jsi připravený?</text>
+</string>
+<string id="sim_default_monolith_trader_task_1_finish">
+	<text>Úkol je hotový? Dobře. Sláva Monolitu.</text>
+</string>
+<!-- ÚKOL ZABÍJET PLÁNOVATELE PRO MONOLIT -->
+<string id="sim_default_monolith_trader_task_2_name">
+	<text>Zabij Plánovače</text>
+</string>
+<string id="sim_default_monolith_trader_task_2_text">
+	<text>Jeden stalker se snaží deaktivovat Mozkomor. %s z %s ti nařídil ho zabít.</text>
+</string>
+<string id="sim_default_monolith_trader_task_2_about">
+	<text>Existuje mnoho hrozeb pro skvělá díla Zóny. Existuje ten, který se znovu pokouší deaktivovat Mozkomor. Musí být zastaven. Musíš ho Najdi a zničit.</text>
+</string>
+<string id="sim_default_monolith_trader_task_2_finish">
+	<text>Dobře jsi to udělal. Kolektiv je spokojený.</text>
+</string>
+<!-- NALÉZÁNÍ ZBRANĚ PRO MONOLIT ÚKOL -->
+<string id="sim_default_monolith_trader_task_3_name">
+	<text>Najdi %s pro Monolit</text>
+</string>
+<string id="sim_default_monolith_trader_task_3_text">
+	<text>%s z %s požádal o novou pušku, kterou přidat do arzenálu Monolitu.</text>
+</string>
+<string id="sim_default_monolith_trader_task_3_about">
+	<text>Stále se stáváme silnějšími. Potřebujeme více zbraní, abychom mohli pokračovat v dosahování našich cílů. Musíš Najdi novou zbraň pro nás, abychom mohli dále rozšiřovat náš arzenál.</text>
+</string>
+<string id="sim_default_monolith_trader_task_3_fetch_about">
+	<text>Najdi novou %s a přines mi ji.</text>
+</string>
+<string id="sim_default_monolith_trader_task_3_fetch_finish">
+	<text>Tohle bude dobré.</text>
+</string>
+<!-- NALÉZÁNÍ MASA Z MUTANTŮ PRO MONOLIT ÚKOL -->
+<string id="sim_default_monolith_trader_task_4_name">
+	<text>Divoké maso zvěře</text>
+</string>
+<string id="sim_default_monolith_trader_task_4_text">
+	<text>%s z %s ti nařídil vydat se na lov a vykuchání %s.</text>
+</string>
+<string id="sim_default_monolith_trader_task_4_about">
+	<text>Naše zásoby jdou dolů. Musíš vyrazit do Zóny a lovit maso, aby se tví bratři z Monolitu mohli posilnit.</text>
+</string>
+<string id="sim_default_monolith_trader_task_4_fetch_about">
+	<text>Vydej se na lov a přines nám %s. Paměť si, že tyto stvoření jsou darem Zóny. Zabij je rychle a díkuj. Když budeš úspěšný, vrať mi maso.</text>
+</string>
+<string id="sim_default_monolith_trader_task_4_fetch_finish">
+	<text>Zvládl jsi svůj úkol. Dobrá práce.</text>
+</string>
+<!-- NALÉZÁNÍ ZÁSILKY PRO MONOLIT ÚKOL -->
+<string id="sim_default_monolith_trader_task_5_name">
+	<text>Zajisti %s pro Monolit</text>
+</string>
+<string id="sim_default_monolith_trader_task_5_text">
+	<text>%s z %s chce, abys zajistil %s.</text>
+</string>
+<string id="sim_default_monolith_trader_task_5_about">
+	<text>Musíš zajistit více zásob pro nás, abychom mohli pokračovat v našich velkých dílech.</text>
+</string>
+<string id="sim_default_monolith_trader_task_5_fetch_about">
+	<text>Vyzvedni %s a přines je mi.</text>
+</string>
+<string id="sim_default_monolith_trader_task_5_fetch_finish">
+	<text>Dobrá práce, sloužíš Monolitu dobře.</text>
+</string>
+<!-- NALÉZÁNÍ ARTEFAKTU PRO MONOLIT ÚKOL -->
+<string id="sim_default_monolith_trader_task_6_name">
+	<text>Najdi artefakt "%s" pro Monolit</text>
+</string>
+<string id="sim_default_monolith_trader_task_6_text">
+	<text>%s z %s chce, abys našel artefakt %s.</text>
+</string>
+<string id="sim_default_monolith_trader_task_6_about">
+	<text>Musíme Najdi další artefakt, který přineseme jako oběť. Pomůžeš sloužit pro dobro Monolitu?</text>
+</string>
+<string id="sim_default_monolith_trader_task_6_fetch_about">
+	<text>Najdi artefakt "%s". Přines mi ho, až se ti to podaří, abychom mohli provést obřad.</text>
+</string>
+<string id="sim_default_monolith_trader_task_6_fetch_finish">
+	<text>Sloužíš Monolitu dobře. Připoj se k nám dnes večer při obřadní oběti. Bude se zpívat.</text>
+</string>
+<!-- NALÉZÁNÍ NÁSTROJŮ 1. ÚROVNĚ PRO MONOLIT techniky ÚKOL -->
+<string id="sim_default_monolith_mechanic_task_1_name">
+	<text>Najdi %s pro Monolit techniky</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_1_text">
+	<text>Mechanici Monolitu  potřebují %s na výměnu starých, přines jim je, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_1_about">
+	<text>Potřebuji, abys pro mě něco udělal. Potřebuji speciální nástroje na ladění našich zbraní.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_1_fetch_about">
+	<text>Dobře, potřebujeme nové nástroje na ladění našich zbraní s vyšší efektivitou. Najdi novou sadu základních nástrojů. Jdi, teď.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_1_fetch_finish">
+	<text>Dobrá práce. Jako odměnu ti dáváme slevu.</text>
+</string>
+<!-- NALÉZÁNÍ NÁSTROJŮ 2. ÚROVNĚ PRO MONOLIT techniky ÚKOL -->
+<string id="sim_default_monolith_mechanic_task_2_name">
+	<text>Najdi %s pro Monolit techniky</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_2_text">
+	<text>Mechanici Monolitu potřebují %s na výměnu starých, přines jim je, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_2_about">
+	<text>Potřebuji další nástroje, lepší nástroje. Můžeš znovu Najdi, co žádám?</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_2_fetch_about">
+	<text>Potřebujeme více nástrojů. Najdi novou sadu pokročilých nástrojů. Jdi, teď.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_2_fetch_finish">
+	<text>Dobrá. Přinesl jsi, co jsme potřebovali. Jako odměnu ti dáváme slevu.</text>
+</string>
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR MONOLITH MECHANICS TASK -->
+
+<string id="sim_default_monolith_mechanic_task_3_name">
+	<text>Najdi %s pro Monolit techniky</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_3_text">
+	<text>%s jsou potřebné mechanikům Monolitu k výměně starých. Přines je zpět k libovolnému z mechaniků Monolitu, pokud nějaké najdeš.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_3_about">
+	<text>Potřebuji ještě nějaké nástroje, lepší nástroje. Dokážeš Najdi, co žádám, znovu?</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_3_fetch_about">
+	<text>Potřebujeme více nástrojů. Najdi novou sadu expertních nástrojů. Měla by obsahovat to, co nyní potřebujeme. Teď jdi.</text>
+</string>
+<string id="sim_default_monolith_mechanic_task_3_fetch_finish">
+	<text>Dobrá práce. Přinesl jsi, co jsme potřebovali. Jako odměnu ti dáváme slevu.</text>
+</string>
+	
+	<!--/////////////////////////////////// ECOLOGISTS WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ESCORT ECOGS TASK -->
+	<string id="sim_default_ecolog_trader_task_1_name">
+<text>Escortuj vědce</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_text">
+		<text>%s z %s si tě najal, abys zavedl několik vědců na určité místo ke studiu. Jakmile bude jejich výzkum úspěšně proveden, vraťte je bezpečně do tábora.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_about">
+		<text>Potřebujeme zkušeného stopaře, který by vyvedl několik našich kolegů do terénu za účelem studia. Jste pro tento úkol? </text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_fetch_finish">
+		<text>Děkuji za ochranu, stalkere. Prosím, ber toto jako projev naší vděčnosti.</text>
+	</string>
+	
+	<!-- NALEZENÍ ARTEFAKTU PRO ÚKOL ECOGS -->
+	<string id="sim_default_ecolog_trader_task_2_name">
+		<text>Najdi artefakt "%s" pro ekology</text>.
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_text">
+		<text>%s z %s vás požádal o vyhledání artefaktu %s.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_about">
+		<text>Hledáme určité druhy artefaktů. Pokud máte zájem, řeknu vám, co potřebujeme.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_fetch_about">
+		<text>Potřebuji, abys nám přinesl artefakt "%s". Už jsi o něm někdy slyšel? Můžeme ti za to pěkně zaplatit.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_fetch_finish">
+		<text>Skvělé! Našel jsi přesně to, co hledáme.</text>
+	</string>
+	
+	<!-- NAJDI MUTANTNÍ SOUČÁSTKY PRO ÚLOHU ECOGS -->
+	<string id="sim_default_ecolog_trader_task_3_name">
+		<text>Najdi %s pro ekology</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_text">
+		<text>%s z %s vás požádal o získání vzorku tkáně z %s.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_about">
+		<text>Potřebuji zkušeného stopaře nebo lovce mutantů. Jste to někdo?"</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_fetch_about">
+		<text>Vědci potřebují odebrat vzorky tkáně z %s. Je mi jedno, jak je získáš, jen se ujisti, že jsou čerstvé. Přijď sem, jakmile z mutanta získáš, co potřebují.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_fetch_finish">
+		<text>Děkuji vám, pane. Tohle nám nesmírně pomůže v našem výzkumu.</text>
+	</string>
+	
+	<!-- ESCORT ECOGS FOR SAKHAROV TASK 
+	<string id="yan_stalker_sakharov_task_2_name">
+		<text>Escort Sakharov's Scientists %s</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_text">
+		<text>Sakharov has hired you to guide his researchers to a specific location for study in %s. Once their research has been successfully conducted, return them safely to camp.</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_about">
+		<text>We need an experienced stalker to lead a few of our the colleagues out into the field for study. Are you up for the task?</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_fetch_finish">
+		<text>Thank you for your protection, stalker. Please, take this as a token of our gratitude.</text>
+	</string> -->
+	
+	<!-- FIND LEVEL 1 TOOLS FOR ECOLOG MECHANICS TASK -->
+	<string id="sim_default_ecolog_mechanic_task_1_name">
+		<text>Najdi %s pro technika Ekologů</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_text">
+		<text>%s jsou potřeba pro Ekologické techniky, aby nahradily staré, pokud nějaké najdeš, měl bys je přinést zpět kterémukoli Ekologickému mechanikovi.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_about">
+		<text>Mám pro tebe návrh. Pokud mi přineseš nějaké nové nástroje, dostaneš zaplaceno. Jsi pro? </text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_fetch_about">
+		<text>Jistě. Víš, kam se obracejí vajíčkáři, když se jim porouchá některý ze strojů, že? Správně, k nám. Problém je, že naše nářadí už pěkně stárne a rezaví a brzy budeme potřebovat náhradu. Pro začátek najděte nějaké %. Až se vám nějaká sada dostane do rukou, přineste ji některému z našich mechaniků. Za každou přinesenou sadu nářadí vám poskytneme slevu. Chceš to zkusit?</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_fetch_finish">
+		<text>Pravda, na. Tohle jsme hledali, díky!</text>
+	</string>
+
+	<!-- Najdi NÁSTROJE 2. ÚROVNĚ PRO ÚLOHU EKOLOGICKÉ techniky -->
+	<string id="sim_default_ecolog_mechanic_task_2_name">
+		<text>Najdi %s pro technika Ekologů</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_text">
+		<text>%s jsou potřeba pro Ekologické techniky, aby nahradily staré, pokud nějaké najdeš, měl bys je přinést zpět kterémukoli Ekologickému mechanikovi.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_about">
+		<text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl Najdi lepší sadu?"</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_fetch_about">
+		<text>Teď potřebujeme %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_fetch_finish">
+		<text>Všechno, co potřebuji, je tady. Děkuji.</text>
+	</string>
+
+	<!-- NAJDĚTE NÁSTROJE 3. ÚROVNĚ PRO ÚKOL EKOLOGICKÉHO MECHANIKA -->
+	<string id="sim_default_ecolog_mechanic_task_3_name">
+		<text>Najdi %s pro technika Ekologů</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_text">
+		<text>%s jsou potřeba pro Ekologické techniky, aby nahradily staré, pokud nějaké najdeš, měl bys je přinést zpět kterémukoli Ekologickému mechanikovi.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_about">
+		<text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl Najdi lepší sadu?"</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_fetch_about">
+		<text>Teď potřebujeme %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_fetch_finish">
+		<text>Všechno, co potřebuji, je tady. Děkuji.</text>
+	</string>
+
+	<!--/////////////////////////////////// RENEGADE WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSASSIATION FOR RENEGADES TASK -->
+	<string id="sim_default_renegade_trader_task_1_name">
+		<text>Eliminovat cíl pro odpadlíky</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_text">
+		<text>Najdi a eliminuj cíl a pak se vrať do %s z %s pro platbu.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_about">
+		<text>V Zóně je mnoho lidí, kteří se o mě otřeli nebo mi projevili neúctu. Někteří z těch hajzlů mi buď dluží peníze, nebo zkurvili nějakou dohodu. Tihle lidé nejsou nic jiného než krysy, které je třeba zadupat. Pokud se na to cítíš, dám ti jejich informace, abys je mohl sledovat pomocí GPS.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_finish">
+		<text>Skvělá práce! Tady je něco málo za tvou námahu:</text>
+	</string>
+	
+	<!-- ELIMINACE MUTANTŮ PRO ÚKOL RENEGÁTŮ -->
+	<string id="sim_default_renegade_trader_task_2_name">
+		<text>Eliminovat hrozbu mutantů pro odpadlíky</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_text">
+		<text>Blízko tohoto místa byli spatřeni mutanti, kteří činí oblast nebezpečnou. Dostal jsi za úkol eliminovat hrozbu mutantů v této oblasti. Po splnění úkolu se hlaste u %s v %s.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_about">
+		<text>Hledáme někoho, kdo má dost koule na to, aby vyčistil několik míst od mutantů. Slídilové sem nechodí, protože se příliš bojí. Pokud s tím něco neuděláme, nebudeme mít od koho "půjčit" žádné zboží, pak se budeme muset z tohoto území odstěhovat.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_finish">
+		<text>Fantastické! Zde je vaše platba. Určitě se za tebe přimluvím u šéfa.</text>
+	</string>
+
+
+	<!-- BRÁNIT ÚZEMÍ PRO ODPADLÍKY ÚKOL -->
+	<string id="sim_default_renegade_trader_task_3_name">
+		<text>Eliminovat nepřátelskou hrozbu pro odpadlíky</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_text">
+		<text>Byl jsi pověřen eliminovat územní hrozbu v dané oblasti. Po splnění úkolu se hlaste u %s v %s.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_about">
+		<text>Na naše území se stěhují mrchy. Šéf mi dal příkaz naverbovat nějakého podřadného člověka s dostatečnými koulemi, aby získal zpět některé z těchto táborů. Co na to říkáš? Máš na hrudi dost chlupů?"</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_finish">
+		<text>Fantastické! Zde je vaše platba. Určitě se za tebe přimluvím u šéfa.</text>
+	</string>
+
+	<!-- VRAŽDA PRO ODPADLÍKY ÚKOL -->
+	<string id="sim_default_renegade_trader_task_4_name">
+		<text>Zabiják</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_text">
+		<text>%s z %s vás pověřil provedením zásahu. Najdi a zlikviduj cíl a pak se k němu vrať pro platbu.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_about">
+		<text>Mám seznam lidí, kteří mě naštvali. Chci, abys je setřel. Co na to říkáte?"</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_finish">
+		<text>Dobře, že jsi se toho kreténa zbavil! Tady je to, co jsem slíbil.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR RENEGADE MECHANICS -->
+	<string id="sim_default_renegade_mechanic_task_1_name">
+		<text>Najdi %s pro technika Odpadlíků</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_text">
+		<text>%s jsou potřebné pro technika Odpadlíků, aby nahradil staré, pokud je najdeš, měl bys je přinést zpět kterémukoli Odpadlickýmu mechanikovi </text>.
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_about">
+		<text>Zoufale potřebuji nové nářadí, člověče.  S těma rezavýma krámama, co mám, nic neudělám a dochází mi olej na zbraně. Jestli máš zájem mi pomoct, řeknu ti, co potřebuju.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_fetch_about">
+		<text>Potřebujeme lepší nářadí, jo. Je kurva těžký je hledat, když nás každej zmrd v Zóně střílí na potkání. Zatím potřebujeme jen novou sadu základních nástrojů. Když nějakou najdeš, přines ji kterémukoli z našich mechaniků a my ti odteď dokonce nabídneme slevu. Jdeš do toho, kámo? </text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_fetch_finish">
+		<text>Perfektní! Přesně tohle potřebujeme, kámo. Promluvím s ostatními techniky, aby ti dali slevu.</text>
+	</string>
+
+
+	<!-- NAJDI SADU NÁSTROJŮ 2. ÚROVNĚ PRO techniky ODPADLÍKY -->
+	<string id="sim_default_renegade_mechanic_task_2_name">
+		<text>Najdi %s pro technika Odpadlíků</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_text">
+		<text>%s jsou potřebné pro Odpadlický techniky, aby nahradily staré, pokud je najdeš, měl bys je přinést zpět kterémukoli Odpadlickýmu mechanikovi.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_about">
+		<text>Sada nářadí, kterou jsi mi přinesl, je skvělá, ale není v ní všechno, co potřebuji. Myslíš, že mi můžeš Najdi lepší sadu? </text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_fetch_about">
+		<text>Teď potřebujeme %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_fetch_finish">
+		<text>Znovu jsi to dotáhl do konce! Dobrý obchod, chlape, tady máš nějaké peníze. Mluvil jsem s ostatními techniky, aby ti dali ještě větší slevu.</text>
+	</string>
+
+
+	<!-- NAJDI SADU NÁSTROJŮ 3. ÚROVNĚ PRO techniky ODPADLÍKY -->
+	<string id="sim_default_renegade_mechanic_task_3_name">
+		<text>Najdi %s pro technika Odpadlíků</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_text">
+		<text>%s jsou potřebné pro Odpadlický techniky, aby nahradily staré, pokud je najdeš, měl bys je přinést zpět kterémukoli Odpadlickýmu mechanikovi.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_about">
+		<text>Sada nářadí, kterou jsi mi přinesl, je skvělá, ale není v ní všechno, co potřebuji. Myslíš, že mi můžeš Najdi lepší sadu? </text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_fetch_about">
+		<text>Teď potřebujeme %s. Ten by měl obsahovat vše, co zatím potřebujeme. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdete, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_fetch_finish">
+		<text>Znovu jsi to dotáhl do konce! Dobrý obchod, chlape, teď už máme všechno, co potřebujeme. Za tvou práci ti dáme další slevu.</text>
+	</string>
+	
+	
+	<!--/////////////////////////////////// Hřích WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSAULT TERRITORY FOR Hřích TASK -->
+	<string id="sim_default_greh_trader_task_1_name">
+		<text>Dobýt nepřítele</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_text">
+		<text>Byl jsi pověřen vyčistit oblast ve prospěch Hříchu. Po splnění úkolu se hlaste zpět.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_about">
+		<text>Mám pro tebe důležitý úkol. Musíš se vydat do Zóny a vyčistit oblast, aby se tam mohly přesunout naše síly. Jsi připraven?</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_finish">
+		<text>Úkol je splněn? Dobře. Pochvalte Hřích.</text>
+	</string>
+
+	<!-- VRAŽDA PRO ÚKOL Hřích -->
+	<string id="sim_default_greh_trader_task_2_name">
+		<text>Zabij plánovače</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_text">
+		<text>Sledovatel se pokouší deaktivovat Spalovače mozků. %s z %s ti nařídil, abys ho zabil.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_about">
+		<text>Velká díla Zóny jsou ohrožena mnoha hrozbami. Je tu jeden, který se opět chystá deaktivovat Paliče mozků. Je třeba ho zastavit. Musíš ho Najdi a zničit.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_finish">
+		<text>Dobře jste si vedli. Kolektiv je spokojen.</text>
+	</string>
+
+	<!-- NAJDI ZBRAŇ PRO ÚKOL HříchU -->
+	<string id="sim_default_greh_trader_task_3_name">
+		<text>Najdi %s pro Hřích</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_text">
+		<text>%s z %s si vyžádal novou pušku do arzenálu Hříchů.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_about">
+		<text>Každým dnem jsme mocnější. Potřebujeme více zbraní, abychom mohli i nadále dosahovat svých cílů. Musíte pro nás Najdi novou zbraň, abychom mohli pokračovat v rozšiřování našeho arzenálu.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_fetch_about">
+		<text>Najdi nové %s a přines mi je.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_fetch_finish">
+		<text>Toto se povede dobře.</text>
+	</string>
+
+	<!-- NAJDI MASO MUTANTŮ PRO ÚKOL HříchU -->
+	<string id="sim_default_greh_trader_task_4_name">
+		<text>Maso divoké zvěře</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_text">
+		<text>%s z %s ti nařídil ulovit a polně upravit %s.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_about">
+		<text>Našim zásobám dochází. Musíš vyrazit do Zóny a ulovit maso, aby tvoji hříšní bratři mohli hodovat.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_fetch_about">
+		<text>Ulovte a přineste nám %s. Nezapomeň, že tito tvorové jsou darem Zóny. Rychle je zabij a poděkuj za ně. Až se ti to podaří, vrať mi maso.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_fetch_finish">
+		<text>Uspěli jste ve svém úkolu. Dobrá práce.</text>
+	</string>
+
+	<!-- NAJDĚTE ZÁSOBY PRO ÚKOL Hřích -->
+	<string id="sim_default_greh_trader_task_5_name">
+		<text>Zajistěte %s pro Hřích</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_text">
+		<text>%s z %s chce, abys obstaral %s.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_about">
+		<text>Musíš pro nás obstarat další zásoby, abychom mohli pokračovat v našich velkých dílech.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_fetch_about">
+		<text>Získej %s a přines mi je.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_fetch_finish">
+		<text>Dobře jsi posloužil naší věci.</text>
+	</string>
+
+	<!-- FIND ARTEFACT FOR Hřích TASK -->
+	<string id="sim_default_greh_trader_task_6_name">
+		<text>Najdi artefakt "%s" pro Hřích</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_text">
+		<text>%s z %s chce, abys našel artefakt %s.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_about">
+		<text>Musíme Najdi další artefakt, který předáme jako oběť. Pomůžeš sloužit dobru Hříšníků?</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_fetch_about">
+		<text>Najdi artefakt "%s". Až se ti to podaří, přines mi ho, abychom mohli provést obřad.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_fetch_finish">
+		<text>Sloužíš naší věci dobře. Připoj se k nám dnes večer při slavnostní oběti. Bude se zpívat.</text>
+	</string>
+
+	<!-- NAJDI SADU NÁSTROJŮ 1. ÚROVNĚ PRO ÚKOL techniky HříchU -->
+	<string id="sim_default_greh_mechanic_task_1_name">
+		<text>Najdi %s pro mechaniku Hříchu</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_text">
+		<text>%s jsou potřeba pro techniky Hříchu, aby nahradily staré, měl bys je přinést zpět kterémukoli mechanikovi Hříchu, pokud nějakého najdeš.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_about">
+		<text>Potřebuji, abys pro mě něco udělal. Potřebuji specifické nástroje na vyladění našich zbraní.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_fetch_about">
+		<text>Okay, potřebujeme nové nástroje, abychom mohli ladit naše zbraně s lepší účinností. Najděte novou sadu základních nástrojů. Běžte, hned.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_fetch_finish">
+		<text>Dobře jsi si vedl. Za odměnu ti dáváme slevu.</text>
+	</string>
+
+	<!-- NAJDĚTE SADU NÁSTROJŮ 2. ÚROVNĚ PRO ÚLOHU HŘÍŠNÉHO MECHANIKA -->
+	<string id="sim_default_greh_mechanic_task_2_name">
+		<text>Najdi %s pro technika Frakce Hřích</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_text">
+		<text>%s jsou potřebné pro techniky Hříchu, aby nahradily staré, měl bys je přinést zpět kterémukoli mechanikovi Hříchu, pokud nějakého najdeš.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_about">
+		<text>Potřebuji další nástroje; lepší nástroje. Dokážeš Najdi to, o co tě žádám, ještě jednou?"</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_fetch_about">
+		<text>Potřebujeme více nástrojů. Najděte novou sadu pokročilých nástrojů. Jdi, hned.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_fetch_finish">
+		<text>Dobře. Přinesl jsi, co jsme potřebovali. Za odměnu ti dáváme slevu.</text>
+	</string>
+
+	<!-- NAJDI SADU NÁSTROJŮ 3. ÚROVNĚ PRO ÚKOL HŘÍŠNÉHO MECHANIKA -->
+	<string id="sim_default_greh_mechanic_task_3_name">
+		<text>Najdi %s pro technika frakce Hřích</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_text">
+		<text>%s jsou potřebné pro techniky Hříchu, aby nahradily staré, měl bys je přinést zpět kterémukoli mechanikovi Hříchu, pokud nějakého najdeš.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_about">
+		<text>Potřebuji další nástroje; lepší nástroje. Dokážeš Najdi to, o co tě žádám, ještě jednou?"</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_fetch_about">
+		<text>Potřebujeme více nástrojů. Najděte novou sadu odborných nástrojů. Ta by měla obsahovat to, co zatím potřebujeme. A teď běžte.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_fetch_finish">
+		<text>Dobře. Přinesl jsi, co jsme potřebovali. Za odměnu ti dáváme slevu.</text>
+	</string>
+	
+	<!--/////////////////////////////////// ISG WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- FIND LEVEL 1 TOOLS FOR ISG MECHANICS TASK -->
+	<string id="sim_default_isg_mechanic_task_1_name">
+		<text>Najdi %s pro UNISG Mechanika</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_text">
+		<text>%s jsou požadovány techniky UNISG, aby nahradily staré, pokud nějaké najdeš, měl bys je přinést zpět kterémukoli mechanikovi UNISG.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_about">
+		<text>Mám pro vás návrh. Pokud mi přineseš nějaké nové nářadí, dostaneš zaplaceno. Jsi pro? </text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_fetch_about">
+		<text>Dobře. Hledali jsme všude možně %s. Měl by obsahovat nějaký olej a nástroje, které potřebujeme k práci na střelných zbraních. Zaplatíme ti za jednu z těchto sad nářadí, pokud přineseš kompletní sadu zpět kterémukoli z našich mechaniků, včetně mě. Za každou novou sadu nářadí, kterou přinesete, snížíme ceny našich služeb jako projev vděčnosti. Tak co na to říkáte? Pomůžeš nám?"</text>.
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_fetch_finish">
+		<text>Pravda, na. Tohle jsme hledali, díky!</text>
+	</string>
+
+	<!-- Najdi NÁSTROJE 2. ÚROVNĚ PRO ÚLOHU ISG MECHANICS -->
+	<string id="sim_default_isg_mechanic_task_2_name">
+		<text>Najdi %s pro UNISG mechaniku</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_text">
+		<text>%s jsou požadovány techniky UNISG, aby nahradily staré, pokud je najdeš, měl bys je přinést zpět kterémukoli mechanikovi UNISG.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_about">
+		<text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl Najdi lepší sadu?"</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_fetch_about">
+		<text>Teď potřebujeme %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_fetch_finish">
+		<text>Všechno, co potřebuji, je tady. Děkuji.</text>
+	</string>
+
+	<!-- Najdi NÁSTROJE 3. ÚROVNĚ PRO ÚLOHU ISG MECHANIK -->
+	<string id="sim_default_isg_mechanic_task_3_name">
+		<text>Najdi %s pro mechaniku UNISG</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_text">
+		<text>%s jsou požadovány techniky UNISG, aby nahradily staré, pokud je najdeš, měl bys je přinést zpět kterémukoli mechanikovi UNISG.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_about">
+		<text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuji. Myslíš, že bys mi mohl Najdi lepší sadu?"</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_fetch_about">
+		<text>Teď potřebujeme %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebujeme ho.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_fetch_finish">
+		<text>Všechno, co potřebuji, je tady. Děkuji.</text>
+	</string>
+
+</string_table>

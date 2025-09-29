@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<!-- "Bison Group" -->
+<string id="storyline_quest_name">
+	<text>"Bizonova Skupina": Najdi zmizelou skupinu</text>
+</string>
+<string id="storyline_quest_1_name">
+	<text>"Bizonova Skupina": Prozkoumej tělo</text>
+</string>
+<string id="storyline_quest_descr">
+	<text>Bizonova Skupina vyrazila hledat nějaký druh artefaktu, proč ho potřebovali, není známo, jediné, co vím jistě, je výchozí bod skupiny, takže se tam vydám.</text>
+</string>
+<string id="storyline_quest_1_descr">
+	<text>Bison je mrtvý, potřebuji prozkoumat jeho tělo, možná tam najdu něco zajímavého.</text>
+</string>
+<!-- "Assault" -->
+<string id="dl_shturm_name">
+	<text>"Útok": Počkej na skupinu Krasnopola</text>
+</string>
+<string id="dl_shturm_1_name">
+	<text>"Útok": Promluv si s Krasnopolem</text>
+</string>
+<string id="dl_shturm_2_name">
+	<text>"Útok": Znič nepřátele</text>
+</string>
+<string id="dl_shturm_3_name">
+	<text>"Útok": Promluv si s Krasnopolem</text>
+</string>
+<string id="dl_shturm_descr">
+	<text>Potřebuji počkat na skupinu Krasnopola, než zaútočíme na základnu žoldáků.</text>
+</string>
+<string id="dl_shturm_1_descr">
+	<text>Skupina dorazila, stojí za to promluvit si s Krasnopolem před zahájením útoku.</text>
+</string>
+<string id="dl_shturm_2_descr">
+	<text>Skupina zahájila útok, musím zničit žoldáky.</text>
+</string>
+<string id="dl_shturm_3_descr">
+	<text>Žoldáci jsou mrtví, potřebuji promluvit si s Krasnopolem.</text>
+</string>
+<!-- "Theft" -->
+<string id="dl_return_treasure_name">
+	<text>"Krádež": Získej zpět své věci</text>
+</string>
+<string id="dl_return_treasure_descr">
+	<text>Bandité mi vzali všechny věci, musím si je zpět získat.</text>
+</string>
+<!-- "Help" -->
+<string id="dl_sos_message_name">
+	<text>"Pomoc": Odpovězte na signál nouze</text>
+</string>
+<string id="dl_sos_message_descr">
+	<text>Neutrální vůdce požádal, abych zkontroloval signál nouze, který je poblíž tábora.</text>
+</string>
+<!-- "Inhabitants" -->
+<string id="first_quest_name">
+	<text>"Obyvatelé": Dorazte do tábora stalkerů</text>
+</string>
+<string id="first_quest_1_name">
+	<text>"Obyvatelé": Promluvte si s místními obyvateli</text>
+</string>
+<string id="first_quest_descr">
+	<text>Hledání by mělo začít v místním táboře stalkerů, jsem si jistý, že skupina tam byla, nemohli odejít s prázdnýma rukama, stojí za to se zeptat místních obyvatel na skupinu.</text>
+</string>
+<string id="first_quest_1_descr">
+	<text>Stalker u vstupu do tábora navrhl promluvit si s vůdcem tábora a obchodníkem. Protože nemáme jiné nápady, stojí za to to udělat.</text>
+</string>
+<!-- "Swamp Creature" -->
+<string id="bolotnaya_tvar_name">
+	<text>"Bažinatá bytost": Zabijte příšeru</text>
+</string>
+<string id="bolotnaya_tvar_1_name">
+	<text>"Bažinatá bytost": Vraťte se k Fomovi</text>
+</string>
+<string id="bolotnaya_tvar_descr">
+	<text>Obchodník požádal, abyste se zbavili nějaké bažinaté příšery za informace o skupině.</text>
+</string>
+<string id="bolotnaya_tvar_1_descr">
+	<text>Příšera je mrtvá, nyní je možné se vrátit k obchodníkovi pro informace.</text>
+</string>
+<!-- "Retribution" -->
+<string id="vozmezdie_name">
+	<text>"Odplata": Najděte vraha</text>
+</string>
+<string id="vozmezdie_1_name">
+	<text>"Odplata": Rozhodněte o osudu Kostye</text>
+</string>
+<string id="vozmezdie_descr">
+	<text>Zřejmě žoldák zabil tohoto stalkera a vzal si artefakt. Je nutné najít tohoto žoldáka a zkusit zjistit důvod.</text>
+</string>
+<string id="vozmezdie_1_descr">
+	<text>Žoldák, který zabil stalkera, je teď červí potravou, ale stále je tu jedna vina - Kostya. Stojí za to s Ržavým o tom promluvit.</text>
+</string>
+<!-- "On the hot trail" -->
+<string id="po_goryachim_sledam_name">
+	<text>"Na žhavé stopě": Prozkoumejte tunel</text>
+</string>
+<string id="po_goryachim_sledam_descr">
+	<text>Obchodník moc světla na situaci s touto skupinou nerozlišil, ale dal nápovědu o místním tunelu, kde Bison šel po koupi zásob. Stojí za to tam vše prozkoumat.</text>
+</string>
+	<!-- "Catacombs" -->
+<string id="tonnels_more_name">
+	<text>"Katakomby": Dozvědět se více</text>
+</string>
+<string id="tonnels_more_1_name">
+	<text>"Katakomby": Počkejte na zprávu</text>
+</string>
+<string id="tonnels_more_2_name">
+	<text>"Katakomby": Promluvte si s Fomou</text>
+</string>
+<string id="tonnels_more_3_name">
+	<text>"Katakomby": Najděte úkryt</text>
+</string>
+<string id="tonnels_more_4_name">
+	<text>"Katakomby": Najděte klíč</text>
+</string>
+<string id="tonnels_more_5_name">
+	<text>"Katakomby": Otevřete dveře</text>
+</string>
+<string id="tonnels_more_6_name">
+	<text>"Katakomby": Sestupte do podzemí</text>
+</string>
+<string id="tonnels_more_descr">
+	<text>V tunelu byly nalezeny nějaké stopy skupiny. Byly tam už přes tři dny. Navíc byla nalezena PDA od Rezaka, který je členem skupiny Bison. PDA obsahovala informace o určitých katakombách. Musíme zjistit více o nich a kam vedou.</text>
+</string>
+<string id="tonnels_more_1_descr">
+	<text>Bohužel Foma nic neví o katakombách. Ale říká, že zná starého muže, který může pomoci. Neví, kde ho najít, ale tento starý muž je častým návštěvníkem baru a Foma slíbil, že zanechá zprávu, až se starý muž objeví.</text>
+</string>
+<string id="tonnels_more_2_descr">
+	<text>Obchodník poslal zprávu, že má novinky a je důležité s ním co nejdříve promluvit.</text>
+</string>
+<string id="tonnels_more_3_descr">
+	<text>Starý muž, který věděl, jak se dostat do katakomb, je mrtvý. Obchodník má souřadnice ke skrýši, kde by mohlo být něco, co mi pomůže při hledání vstupu do katakomb.</text>
+</string>
+<string id="tonnels_more_4_descr">
+	<text>Ve starém mužově skrýši nebylo mnoho věcí, ale nejzajímavější bylo v jedné staré rukopis. Stálo tam, že jeden ze vstupů do katakomb byl zapečetěn, ale je tu další. Abyste se k němu dostali, musíte najít klíč k celku. Podle poznámek je někde na stejném místě jako vstup do komplexu.</text>
+</string>
+<string id="tonnels_more_5_descr">
+	<text>Klíč mám a nečekal jsem, že to bude magnetická kartička, ale klíč je klíč, hlavně že otevře ty dveře.</text>
+</string>
+<string id="tonnels_more_6_descr">
+	<text>Dveře jsou otevřené, a teď mohu sestoupit do katakomb za skupinou.</text>
+</string>
+<string id="uninvited_guests_name">
+	<text>"Nepozvaní hosté": Průzkum</text>
+</string>
+<string id="uninvited_guests_1_name">
+	<text>"Nepozvaní hosté": Překonání plotu</text>
+</string>
+<string id="uninvited_guests_2_name">
+	<text>"Nepozvaní hosté": Odposlouchnout rozhovor</text>
+</string>
+<string id="uninvited_guests_3_name">
+	<text>"Nepozvaní hosté": Návrat k Ržavému</text>
+</string>
+<string id="uninvited_guests_descr">
+	<text>Ržavý mi dal úkol: Musím zjistit, proč se žoldáci objevili v této oblasti. Stojí za to zmapovat vojenskou základnu.</text>
+</string>
+<string id="uninvited_guests_1_descr">
+	<text>Dveře do základny jsou zamčené, takže klíč nemáme. Budu muset najít jiný způsob, jak se dostat dovnitř, a myslím, že mohu přelézt přes plot.</text>
+</string>
+<string id="uninvited_guests_2_descr">
+	<text>Odposlechnout rozhovor žoldáků.</text>
+</string>
+<string id="uninvited_guests_3_descr">
+	<text>Z rozhovoru žoldáků vyplývá, že byli najati k vyhledání nějakého artefaktu a hledaná věc už s nimi je. Také se od žoldáků dozvěděl, že jejich vůdce se jmenuje "Krivoy".</text>
+</string>
+
+
+<string id="wiz_enemy_with_neutral_name">
+	<text>"Cizinec mezi našimi": Počkejte do setmění.</text>
+</string>
+<string id="wiz_enemy_with_neutral_1_name">
+	<text>"Cizinec mezi našimi": Prozkoumejte tábor žoldáků.</text>
+</string>
+<string id="wiz_enemy_with_neutral_2_name">
+	<text>"Cizinec mezi našimi": Utecte z dungeonu.</text>
+</string>
+<string id="wiz_enemy_with_neutral_descr">
+	<text>Byly nalezeny informace na PDA žoldáka, které naznačují, že vůdce neutrálních, Kosta, je nějakým způsobem zapojen s žoldáky. Měli bychom počkat, až se setmí, abychom prozkoumali tábor žoldáků.</text>
+</string>
+<string id="wiz_enemy_with_neutral_1_descr">
+	<text>Nyní je správná doba; myslím, že žoldáci už odešli.</text>
+</string>
+<string id="wiz_enemy_with_neutral_2_descr">
+	<text>Musíme najít způsob, jak uniknout z dungeonu...</text>
+</string>
+
+<string id="wiz_kak_na_kurorte_name">
+	<text>"Jako na letovisku": Najděte své věci.</text>
+</string>
+<string id="wiz_kak_na_kurorte_1_name">
+	<text>"Jako na letovisku": Promluvte si s Krasnopolským.</text>
+</string>
+<string id="wiz_kak_na_kurorte_2_name">
+	<text>"Jako na letovisku": Získejte své věci zpět.</text>
+</string>
+<string id="wiz_kak_na_kurorte_descr">
+	<text>Žoldáci mi vzali všechno vybavení; myslím, že je to někde poblíž.</text>
+</string>
+<string id="wiz_kak_na_kurorte_1_descr">
+	<text>Místnost je zamčená a zdá se, že poručík už má klíč. Měl bych s ním promluvit.</text>
+</string>
+<string id="wiz_kak_na_kurorte_2_descr">
+	<text>Mám klíč od pokoje vůdce žoldáků, takže teď mohu otevřít dveře a získat své vybavení zpět.</text>
+</string>
+	<!-- "Messenger of Justice" -->
+<string id="gonec_pravosudiya_name">
+    <text>"Posel spravedlnosti": Promluvte si s Rzhavým</text>
+</string>
+<string id="gonec_pravosudiya_1_name">
+    <text>"Posel spravedlnosti": Vyčkejte na zprávu</text>
+</string>
+<string id="gonec_pravosudiya_2_name">
+    <text>"Posel spravedlnosti": Vraťte se k Rzhavému</text>
+</string>
+<string id="gonec_pravosudiya_3_name">
+    <text>"Posel spravedlnosti": Vyslýchejte Kostu</text>
+</string>
+<string id="gonec_pravosudiya_4_name">
+    <text>"Posel spravedlnosti": Zabijte Kostu</text>
+</string>
+<string id="gonec_pravosudiya_descr">
+    <text>Mé podezření ohledně vůdce neutrální frakce - Kosty - bylo potvrzeno. Spolupracoval s žoldáky, prodával jim artefakty a podle nejnovějších informací poslal stalkera, aby byl zabit "modrými".</text>
+</string>
+<string id="gonec_pravosudiya_1_descr">
+    <text>Informoval jsem Rzhavého o koupeném vůdci. Požádal mě, abych počkal několik hodin, než řeknu všechno obyvatelům tábora, a poté se mnou bude kontaktovat, aby jsme se rozhodli, co dál.</text>
+</string>
+<string id="gonec_pravosudiya_2_descr">
+    <text>Rzhavý poslal zprávu. Musíme si promluvit.</text>
+</string>
+<string id="gonec_pravosudiya_3_descr">
+    <text>Předtím, než zabijeme Kostu, je třeba ho vyslýchat.</text>
+</string>
+<string id="gonec_pravosudiya_4_descr">
+    <text>Už jsem se dozvěděl vše, co jsem potřeboval, takže teď je čas ho zabít.</text>
+</string>
+<!-- "Prisoner of Circumstances" -->
+<string id="free_neutral_name">
+    <text>"Vězeň okolností": Vyčkejte do setmění</text>
+</string>
+<string id="free_neutral_1_name">
+    <text>"Vězeň okolností": Zapojte se do nájezdu</text>
+</string>
+<string id="free_neutral_2_name">
+    <text>"Vězeň okolností": Vyčistěte tábor</text>
+</string>
+<string id="free_neutral_3_name">
+    <text>"Vězeň okolností": Promluvte si s vězněm</text>
+</string>
+<string id="free_neutral_4_name">
+    <text>"Vězeň okolností": Promluvte si s Rzhavým</text>
+</string>
+<string id="free_neutral_descr">
+    <text>Kosta, před svou smrtí, prozradil, že Zhekan je stále naživu a je v zajetí banditů. Rzhavý ho chce osvobodit a navrhl, abychom se k němu přidali. Musíme počkat do setmění.</text>
+</string>
+<string id="free_neutral_1_descr">
+    <text>Nejlepší čas na překvapivý útok je v noci. Pojďme si promluvit s Rzhavým.</text>
+</string>
+<string id="free_neutral_2_descr">
+    <text>Nemůžeme vězně osvobodit potichu, takže musíme vyčistit celý tábor banditů.</text>
+</string>
+<string id="free_neutral_3_descr">
+    <text>Bandité jsou mrtví, a před návratem do tábora je třeba si promluvit s vězněm.</text>
+</string>
+	<string id="free_neutral_4_descr">
+		<text>Vězeň byl propuštěn, bandité jsou mrtví, teď mohu mluvit s Rzhavým o své odměně, a je čas vrátit se do tábora.</text>
+	</string>
+
+	
+	<!-- "LOCATION CATACOMBS" -->
+<!-- "CHILDREN OF THE DUNGEONS" -->
+<string id="wiz_children_of_the_dungeons_name">
+	<text>"Děti katakomb": Prozkoumejte katakomby</text>
+</string>
+<string id="wiz_children_of_the_dungeons_1_name">
+	<text>"Děti katakomb": Unikněte z katakomb</text>
+</string>
+<string id="wiz_children_of_the_dungeons_descr">
+	<text>Na základě všech informací, které se mi podařilo získat od těch stalkerů, skupina zamířila touto cestou skrz katakomby, ale kam vedou? Co se v nich právě teď děje? Je nejlepší být opatrný.</text>
+</string>
+<string id="wiz_children_of_the_dungeons_1_descr">
+	<text>Kostlivci, čerstvé těla stalkerů, vše naznačuje, že skupina se nikdy nedostala z katakomb, ale mezi všemi těly jsem nenašel nikoho z Bisonovy skupiny ani jeho tělo. To znamená, že se přece jen dostali ven? Stojí za to pokračovat dál a hledat východ.</text>
+</string>
+<!-- "VORON" -->
+<string id="kat_voron_locked_pda_quest_name">
+	<text>"Voron": Odemkněte PDA</text>
+</string>
+<string id="kat_voron_locked_pda_quest_1_name">
+	<text>"Voron": Vyčkejte na odemknutí</text>
+</string>
+<string id="kat_voron_locked_pda_quest_2_name">
+	<text>"Voron": Získání PDA</text>
+</string>
+<string id="kat_voron_locked_pda_quest_descr">
+	<text>V katakombách jsem našel Voronovo tělo. Byl součástí Bisonovy skupiny a podařilo se mi na něm najít PDA, ale je zamknuté. Musím najít technika, který mi s odemknutím pomůže.</text>
+</string>
+<string id="kat_voron_locked_pda_quest_1_descr">
+	<text>PDA bylo předáno místnímu technikovi - Klavíristovi. Sliboval, že je odemkne, jen musím vyčkat.</text>
+</string>
+<string id="kat_voron_locked_pda_quest_2_descr">
+	<text>Technik mi informoval, že PDA je nyní odemknuté. Měl bych si ho vzít.</text>
+</string>
+
+<!-- "LOCATION DEAD LAKE" -->
+<!-- "IN THE FOOTSTEPS" -->
+<string id="zav_in_the_footsteps_name">
+	<text>"Ve stopách": Najděte informace</text>
+</string>
+<string id="zav_in_the_footsteps_1_name">
+	<text>"Ve stopách": Promluvte si s Garikem</text>
+</string>
+<string id="zav_in_the_footsteps_2_name">
+	<text>"Ve stopách": Zkontrolujte stopu</text>
+</string>
+<string id="zav_in_the_footsteps_3_name">
+	<text>"Ve stopách": Zkontrolujte chatu</text>
+</string>
+<string id="zav_in_the_footsteps_4_name">
+	<text>"Ve stopách": Promluvte si s Tohou</text>
+</string>
+<string id="zav_in_the_footsteps_descr">
+	<text>Katakombami jsme už prošli. Podarilo se nám tam najít Havrana, ale zbytek skupiny se pravděpodobně dostal ven, což je ve skutečnosti dobrá zpráva. To znamená, že je teď musíme hledat zde.</text>
+</string>
+<string id="zav_in_the_footsteps_1_descr">
+	<text>Garik chce něco probrat. Nicméně nejprve se musíme promluvit s Obchodníkem.</text>
+</string>
+<string id="zav_in_the_footsteps_2_descr">
+	<text>Stalker z tábora nahlásil, že skupinu viděli poblíž jihovýchodní osady a směřovala ke bažině. Měli bychom to tam zkontrolovat.</text>
+</string>
+<string id="zav_in_the_footsteps_3_descr">
+	<text>V PDA od Řecka jsem našel docela smutné informace. Doufám, že mé obavy se nepotvrdí...</text>
+</string>
+<string id="zav_in_the_footsteps_4_descr">
+	<text>V jednom domě na bažině jsem našel mrtvého žoldáka. V jeho PDA byly informace o jeho úkolu, který zřejmě nesplnil. To znamená, že stále existuje šance, že Bison je naživu. Musíme se promluvit s vůdcem neutrální frakce, možná už zde viděli žoldáky.</text>
+</string>
+<!-- "Duty: Contact" -->
+<string id="dl_storyline_task_dolg_name">
+	<text>"Povinnost": Navázat spojení</text>
+</string>
+<string id="dl_storyline_task_dolg_1_name">
+	<text>"Povinnost": Navrátit se k Tohovi</text>
+</string>
+<string id="dl_storyline_task_dolg_descr">
+	<text>Vůdce neutrální frakce je ochotný se zúčastnit likvidace členů Syndikátu, ale bojí se, že pokud se akce zúčastní pouze stalkerové, Syndikát pošle lidi k odvetě. Proto musíme navázat spojení s Krasnopolým a pokusit se ho přesvědčit, aby se na akci také zúčastnil.</text>
+</string>
+<string id="dl_storyline_task_dolg_1_descr">
+	<text>Krasnopolý a jeho skupina jsou už na cestě, ale dorazí až zítra o půlnoci. Nyní se musíme vrátit k Tohovi a předat mu dobrou zprávu.</text>
+</string>
+<!-- "Distress Signal" -->
+<string id="dl_sos_signal_name">
+	<text>"Výstražný signál": Zkontrolujte místo</text>
+</string>
+<string id="dl_sos_signal_1_name">
+	<text>"Výstražný signál": Zabijte kontroléra</text>
+</string>
+<string id="dl_sos_signal_2_name">
+	<text>"Výstražný signál": Promluvte si s Garikem</text>
+</string>
+<string id="dl_sos_signal_descr">
+	<text>Garik požádal o pomoc s vyšetřováním výstražného signálu, který zachytili nedávno.</text>
+</string>
+<string id="dl_sos_signal_1_descr">
+	<text>Zabijte mutanta.</text>
+</string>
+<string id="dl_sos_signal_2_descr">
+	<text>Kontrolér je mrtvý, stejně jako stalker, který zřejmě vyslal výstražný signál. Než se vrátíme do tábora, je vhodné promluvit si s Garikem.</text>
+</string>
+<!-- "Unknown signal" -->
+<string id="lake_out_bandits_1_name">
+	<text>"Bezpečné místo": Dostat se na bezpečné místo</text>
+</string>
+<string id="lake_out_bandits_1_descr">
+	<text>Bolí hlava... Vybavení je pryč. Musím se odsud dostat a najít bezpečnější místo.</text>
+</string>
+<!-- "Coming to the rescue" -->
+<string id="lake_na_virychky_name">
+	<text>"Přicházím na pomoc": Získat krabici z rokle</text>
+</string>
+<string id="lake_na_virychky_1_name">
+	<text>"Přicházím na pomoc": Doručit krabici Garikovi</text>
+</string>
+<string id="lake_na_virychky_descr">
+	<text>Jeden stalker mi nabídl zbraně výměnou za splnění úkolu. Na severozápad od tábora stalkerů je malá rokle s anomáliemi, a v té rokli musím získat krabici a doručit ji stalkerovi.</text>
+</string>
+<string id="lake_na_virychky_1_descr">
+	<text>Mám krabici. Všechno vypadá, že proběhlo hladce. Teď už zbývá ji doručit majiteli.</text>
+</string>
+<!-- "Lost" -->
+<string id="lost_name">
+	<text>"Ztraceni": Zjistit, co se stalo?</text>
+</string>
+<string id="lost_1_name">
+	<text>"Ztraceni": Prozkoumat oblast</text>
+</string>
+<string id="lost_2_name">
+	<text>"Ztraceni": Eliminovat skupinu Monolitu</text>
+</string>
+<string id="lost_3_name">
+	<text>"Ztraceni": Prozkoumat těla</text>
+</string>
+<string id="lost_4_name">
+	<text>"Ztraceni": Doručit nalezené dokumenty</text>
+</string>
+<string id="lost_descr">
+	<text>V rádiu jsem slyšel, že skupina stalkerů zmizela. Stojí za to nabídnout pomoc při jejich pátrání.</text>
+</string>
+<string id="lost_1_descr">
+	<text>Toha stručně popsala situaci a ukázala místo posledního kontaktu s touto skupinou. Stojí za to tam všechno prozkoumat. Možná najdeme něco zajímavého.</text>
+</string>
+<string id="lost_2_descr">
+	<text>Při vyšetřování jsem narazil na skupinu Monolitu. Pravděpodobně jsou zodpovědní za zmizení stalkerů, takže budu muset jednat.</text>
+</string>
+<string id="lost_3_descr">
+	<text>Skupina Monolitu byla zlikvidována. Bohužel jsme nemohli zachránit ty chlapce. To je takový osud s Monolitem, zabíjí ty nevěrné... Stojí za to prozkoumat těla chlapců.</text>
+</string>
+<string id="lost_4_descr">
+	<text>Nalezl jsem nějaké dokumenty u vůdce této skupiny. Stojí za to je odnést Tohovi.</text>
+</string>
+	
+	<!-- SECONDS QUESTS -->
+<!-- "New Beginning: Artifact Search" -->
+<string id="dl_new_time_search_art_1_name">
+	<text>"Nový začátek": Prozkoumej Zónu</text>
+</string>
+<string id="dl_new_time_search_art_1_1_name">
+	<text>"Nový začátek": Vrať se k vůdci Neutrálů</text>
+</string>
+<string id="dl_new_time_search_art_1_descr">
+	<text>Vůdce neutrálního tábora označil místo, kde se nachází artefakt, který se nachází ve skupině gravitačních anomálií. Buďte opatrní.</text>
+</string>
+<string id="dl_new_time_search_art_1_1_descr">
+	<text>Artefakt nalezen. Vraťte se k vůdci Neutrálů.</text>
+</string>
+<string id="dl_new_time_search_art_2_name">
+	<text>"Nový začátek": Prozkoumej Zónu</text>
+</string>
+<string id="dl_new_time_search_art_2_1_name">
+	<text>"Nový začátek": Vrať se k vůdci Neutrálů</text>
+</string>
+<string id="dl_new_time_search_art_2_descr">
+	<text>Vůdce neutrálního tábora označil místo, kde se nachází artefakt, který se nachází ve skupině elektrických anomálií. Buďte opatrní.</text>
+</string>
+<string id="dl_new_time_search_art_2_1_descr">
+	<text>Artefakt nalezen. Vraťte se k vůdci Neutrálů.</text>
+</string>
+<string id="dl_new_time_search_art_3_name">
+	<text>"Nový začátek": Prozkoumej Zónu</text>
+</string>
+<string id="dl_new_time_search_art_3_1_name">
+	<text>"Nový začátek": Vrať se k vůdci Neutrálů</text>
+</string>
+<string id="dl_new_time_search_art_3_descr">
+	<text>Vůdce neutrálního tábora označil místo, kde se nachází artefakt, který se nachází ve skupině kyselých anomálií. Buďte opatrní.</text>
+</string>
+<string id="dl_new_time_search_art_3_1_descr">
+	<text>Artefakt nalezen. Vraťte se k vůdci Neutrálů.</text>
+</string>
+<!-- "Scanning" -->
+<string id="wiz_scaner_1_name">
+	<text>"Skenování": Najdi zámeček</text>
+</string>
+<string id="wiz_scaner_2_name">
+	<text>"Skenování": Nainstaluj skener</text>
+</string>
+<string id="wiz_scaner_3_name">
+	<text>"Skenování": Vrať se pro odměnu</text>
+</string>
+<string id="wiz_scaner_1_descr">
+	<text>Ivanich mi zadal úkol najít chybějící zámeček a následně nainstalovat skener v anomálii.</text>
+</string>
+<string id="wiz_scaner_2_descr">
+	<text>Zámeček je mrtvý, ale skener je nyní u mě. Zbývá ho jen nainstalovat a vrátit se k Ivanichovi.</text>
+</string>
+<string id="wiz_scaner_3_descr">
+	<text>Skener byl úspěšně nainstalován. Čas vrátit se pro odměnu.</text>
+</string>
+<!-- "Trade Deal" -->
+<string id="wiz_germo_case_quest_name">
+	<text>"Obchodní dohoda": Dej krabici</text>
+</string>
+<string id="wiz_germo_case_quest_descr">
+	<text>Zřejmě je tato krabice to, co Foma potřebuje. Musím mu ji dát.</text>
+</string>
+	
+
+<!-- "Clean-up" -->
+
+<string id="wiz_mutants_hunting_name">
+	<text>"Lov": Zničte mutanti</text>
+</string>
+<string id="wiz_mutants_hunting_1_name">
+	<text>"Lov": Vyžádejte si odměnu</text>
+</string>
+<string id="wiz_mutants_hunting_descr">
+	<text>Foma mi přiřadil lov. Musím vyčistit čtyři tábory mutantů a jako odměnu mi slíbil dobrý artefakt.</text>
+</string>
+<string id="wiz_mutants_hunting_1_descr">
+	<text>Záchrana je hotová. Foma mi poskytl souřadnice skrýše, kde je umístěna moje odměna.</text>
+</string>
+<!-- "Military Secret" -->
+<string id="wiz_military_secret_name">
+	<text>"Vojenské tajemství": Najděte vojenské mapy</text>
+</string>
+<string id="wiz_military_secret_1_name">
+	<text>"Vojenské tajemství": Dodávka map Zhekanovi</text>
+</string>
+<string id="wiz_military_secret_descr">
+	<text>Zhekan mi řekl, že nedávno v okolí havaroval vojenský vrtulník, ale kde přesně není známo. Moje úkolem je najít vrtulník a získat z něj vojenské mapy.</text>
+</string>
+<string id="wiz_military_secret_1_descr">
+	<text>Mapy byly nalezeny. Teď je musím předat Zhekanovi a vyzvednout svoji odměnu.</text>
+</string>
+<string id="dl_stalker_quest_name">
+	<text>Zničte bandity</text>
+</string>
+<string id="dl_stalker_quest_1_name">
+	<text>Vyžádejte si odměnu</text>
+</string>
+<string id="dl_stalker_quest_1_descr">
+	<text>Vyžádejte si odměnu od obchodníka za zničení banditů.</text>
+</string>
+<string id="dl_stalker_quest_descr">
+	<text>Zničte bandity u Chertovoy Stoyanke. To pomůže zastavit stalkerům, kteří se vracejí do tábora se svým lupem.</text>
+</string>
+<!-- "Clean-up" -->
+<string id="dl_zachistka_name">
+	<text>"Čistka": Setkání se skupinou</text>
+</string>
+<string id="dl_zachistka_1_name">
+	<text>"Čistka": Zničte nepřátele</text>
+</string>
+<string id="dl_zachistka_2_name">
+	<text>"Čistka": Promluvte si s Grozou</text>
+</string>
+<string id="dl_zachistka_3_name">
+	<text>"Čistka": Vyžádejte si odměnu</text>
+</string>
+<string id="dl_zachistka_4_name">
+	<text>"Čistka": Vyžádejte si odměnu</text>
+</string>
+<string id="dl_zachistka_descr">
+	<text>Obchodník mi nabídl úkol vyčistit tábor banditů. Nyní musím potkat skupinu a setkat se s jejím vůdcem.</text>
+</string>
+<string id="dl_zachistka_1_descr">
+	<text>Vůdce skupiny, Groza, neztrácel čas a nařídil nám útok.</text>
+</string>
+	<string id="dl_zachistka_2_descr">
+	<text>Bandité byli eliminováni, je na čase vyjednávat s Grozou.</text>
+</string>
+<string id="dl_zachistka_3_descr">
+	<text>Vyžádejte si odměnu.</text>
+</string>
+<string id="dl_zachistka_4_descr">
+	<text>Bandité i útočná skupina zahynuli, ale odměna za dobře odvedenou práci platí stále.</text>
+</string>
+
+
+</string_table>

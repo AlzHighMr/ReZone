@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+
+	<string id="st_redemption_goodwill">
+		<text>Your relationship with the group %s has improved.</text>
+	</string>
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 1 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_1_title">
+		<text>Redemption, Part 1: Protection</text>
+	</string>
+
+	<string id="st_redemption_1_two_more">
+		<text>We're done here, let's move on. Two more to go.</text>
+	</string>
+	<string id="st_redemption_1_one_more">
+		<text>Let's keep going. Only one place left, probably the most dangerous one.</text>
+	</string>
+	<string id="st_redemption_1_zero_more">
+		<text>I think that's it. We should get out of here as soon as possible.</text>
+	</string>
+
+	<string id="st_redemption_task_1_descr_0">
+		<text>Help the scientists with their research.</text>
+	</string>
+	<string id="st_redemption_task_1_descr_1">
+		<text>Meet with Sakharov's assistant at the Promzone.</text>
+	</string>
+	<string id="st_redemption_task_1_descr_2">
+		<text>Cover Vorontsov while he takes measurements (0/3).</text>
+	</string>
+	<string id="st_redemption_task_1_descr_3">
+		<text>Cover Vorontsov while he takes measurements (1/3).</text>
+	</string>
+	<string id="st_redemption_task_1_descr_4">
+		<text>Cover Vorontsov while he takes measurements (2/3).</text>
+	</string>
+	<string id="st_redemption_task_1_descr_5">
+		<text>Talk to Vorontsov.</text>
+	</string>
+	<string id="st_redemption_task_1_descr_6">
+		<text>Return to Sakharov.</text>
+	</string>
+
+	<string id="st_redemption_task_1_eco">
+		<text>Graduate student Vorontsov</text>		<!-- scientist's name -->
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 2 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_2_title">
+		<text>Redemption, Part 2: Trail</text>
+	</string>
+
+	<string id="st_redemption_task_2_descr_0">
+		<text>Find the documents.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_1">
+		<text>Question the Barman about the stalker with the documents.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_2">
+		<text>Meet the vodka seller at the Truck Cemetery and collect the goods.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_3">
+		<text>Bring the vodka crate to the Barman.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_4">
+		<text>Retrieve the documents from the stalker Hare at the Cordon.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_5">
+		<text>Find the documents hidden by Hare at the Garbage.</text>
+	</string>
+	<string id="st_redemption_task_2_descr_6">
+		<text>Deliver the documents to Sakharov.</text>
+	</string>
+
+	<string id="st_redemption_task_2_bandit">
+		<text>Kostya Shustrila</text>		<!-- bandit name -->
+	</string>
+
+	<string id="st_redemption_2_vodka_box_name">
+		<text>Vodka crate</text>		<!-- vodka name -->
+	</string>
+	<string id="st_redemption_2_vodka_box_descr">
+		<text>A heavy crate for the dynamite, filled with bottles of vodka.</text>		<!-- vodka description -->
+	</string>
+
+	<string id="st_redemption_task_2_hare">
+		<text>Sanya Hare</text>		<!-- hare name -->
+	</string>
+
+	<string id="st_redemption_2_documents_name">
+		<text>Documents</text>		<!-- documents name -->
+	</string>
+	<string id="st_redemption_2_documents_descr">
+		<text>Documents found at the Promzone. It seems that most of the pages are damaged. The remaining ones contain illegible handwriting with calculations, formulas, and routes.</text>		<!-- documents description -->
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 3 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_3_title">
+		<text>Redemption, Part 3: Station</text>
+	</string>
+
+	<string id="st_redemption_task_3_descr_0">
+		<text>Install the device.</text>
+	</string>
+	<string id="st_redemption_task_3_descr_1">
+		<text>Install the device in the radio room of the Promzone radar station.</text>
+	</string>
+	<string id="st_redemption_task_3_descr_2">
+		<text>Leave the station area to contact Sakharov.</text>
+	</string>
+	<string id="st_redemption_task_3_descr_3">
+		<text>Bring Illeon to the scientists' bunker in Yantar.</text>
+	</string>
+
+	<string id="st_redemption_task_3_descr_comp">
+		<text>Leave your teammates behind, Sakharov asked to complete the task alone.</text>
+	</string>
+
+	<string id="st_redemption_3_device_name">
+		<text>Sakharov's Device</text>		<!-- device name -->
+	</string>
+	<string id="st_redemption_3_device_descr">
+		<text>A device for measuring radiation, issued by Professor Sakharov. It's full of incomprehensible buttons and numbers displayed on the screen.</text>		<!-- device description -->
+	</string>
+
+	<string id="st_redemption_3_device_cant_place">
+		<text>The device must be installed in the radio room of the station.</text>		<!-- device cannot be placed -->
+	</string>
+	<string id="st_redemption_3_device_placed">
+		<text>The device has been installed.</text>		<!-- device placed -->
+	</string>
+
+	<string id="st_redemption_task_3_monolith_1">
+		<text>Vakhar</text>		<!-- monolith member name -->
+	</string>
+
+	<string id="st_redemption_task_3_news_unknown">
+		<text>Unknown</text>		<!-- unknown name -->
+	</string>
+
+	<string id="st_redemption_task_3_illeon">
+		<text>Illeon</text>		<!-- illeon name -->
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 4 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_4_title">
+		<text>Redemption, part 4: Search</text>
+	</string>
+
+	<string id="st_redemption_task_4_descr_0">
+		<text>Help Barman in his search.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_1">
+		<text>Talk to Barman.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_2">
+		<text>Retrieve documents from the bandits' base in the Dark Valley.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_3">
+		<text>Bring the documents to Barman.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_4">
+		<text>Find the documents at Agroprom.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_5">
+		<text>Bring the documents to Barman.</text>
+	</string>
+	<string id="st_redemption_task_4_descr_6">
+		<text>Return to Sakharov.</text>
+	</string>
+
+	<string id="st_redemption_4_documents_name">
+		<text>Documents</text>		<!-- documents name -->
+	</string>
+	<string id="st_redemption_4_documents_descr">
+		<text>A weighty folder with documents from the Promzone. It is filled with various descriptions, instructions, and formulas.</text>		<!-- documents description -->
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 5 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_5_title">
+		<text>Redemption, part 5: Truce</text>
+	</string>
+
+	<string id="st_redemption_task_5_descr_0">
+		<text>Find help.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_1">
+		<text>Talk to Voronin.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_2">
+		<text>Talk to Lukash.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_3">
+		<text>Destroy the mutant lair in Grimwood.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_4">
+		<text>Return to Lukash.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_5">
+		<text>Return with the captive to Voronin.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_6">
+		<text>Meet with Duty and Freedom.</text>
+	</string>
+	<string id="st_redemption_task_5_descr_7">
+		<text>Talk to the Barman.</text>
+	</string>
+
+	<string id="st_redemption_task_5_duty_captain">
+		<text>Captain Lavrik</text>		<!-- captain's name -->
+	</string>
+
+	<string id="st_redemption_task_5_freedom_captain">
+		<text>Carp</text>		<!-- freedom fighter's name -->
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task 6 //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_task_6_title">
+		<text>Redemption, Part 6: Emitter</text>
+	</string>
+
+	<string id="st_redemption_task_6_descr_0">
+		<text>Adjust the emitter.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_1">
+		<text>Meet with the Freedom squad at the Promzone.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_2">
+		<text>Wait for the Duty attack.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_3">
+		<text>Find the entrance to the Bunker.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_4">
+		<text>Find the entrance to the Collider.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_5">
+		<text>Adjust the Collider.</text>
+	</string>
+	<string id="st_redemption_task_6_descr_6">
+		<text>Return to Sakharov.</text>
+	</string>
+
+
+	<!-- ---------------------------------------- -->
+	<!-- //////////////////////// Task post //////////////////////// -->
+	<!-- ---------------------------------------- -->
+	<string id="st_redemption_lab_item_1_name">
+		<text>Laptop</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_1_descr">
+		<text>A laptop found at the Collider. It doesn't turn on, the battery has been dead for a long time.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_2_name">
+		<text>PDA</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_2_descr">
+		<text>A PDA found at the Collider. It doesn't work, but scientists might be able to retrieve the necessary information from it.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_3_name">
+		<text>Folder</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_3_descr">
+		<text>A small folder with documents found at the Collider. It contains descriptions of experiments.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_4_name">
+		<text>Boards</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_4_descr">
+		<text>Boards from devices found at the Collider. It's unclear what they are for, but scientists will most likely be able to figure it out.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_5_name">
+		<text>Note</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_5_descr">
+		<text>A note from a scientist found at the Collider. Concepts of one of the scientists working on the Collider for improving the emitter's performance.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_6_name">
+		<text>Notebook</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_6_descr">
+		<text>A notebook with observations found at the Collider. It contains observations about experiments.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_7_name">
+		<text>Notepad</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_7_descr">
+		<text>A notepad with personal notes found at the Collider. It's the diary of one of the laboratory workers.</text>		<!-- description -->
+	</string>
+
+	<string id="st_redemption_lab_item_8_name">
+		<text>Report</text>		<!-- name -->
+	</string>
+	<string id="st_redemption_lab_item_8_descr">
+		<text>A work report found at the Collider. It contains the names of project supervisors and the group leader.</text>		<!-- description -->
+	</string>
+
+</string_table>

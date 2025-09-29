@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_aug_a1">
+		<text>Steyr AUG A1</text>
+	</string>
+	<string id="st_wpn_aug_a1_descr">
+		<text>Steyr AUG A1 ve standardní konfiguraci pušky (vojenská zelená). AUG je rakouská útočná puška ráže 5,56 mm typu bullpup. AUG (Armee-Universal-Gewehr "univerzální armádní puška") byla přijata do výzbroje rakouské armády jako StG 77 (Sturmgewehr 77) v roce 1978, kde nahradila 7,62mm automatickou pušku StG 58 (licenčně vyráběná puška FN FAL). Od roku 1978 se vyrábí jako standardní ruční zbraň rakouského Bundesheeru a různých národních policejních jednotek.\n \n
+		%c[0,255,255,255]CHARAKTERISTIKA:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1977\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Optický pohled\n
+		%c[d_blue] - %c[0,255,255,255,255]Přední rukojeť\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_a2">
+		<text>Steyr AUG A2</text>
+	</string>
+	<string id="st_wpn_aug_a2_descr">
+		<text>Steyr AUG je rakouská útočná puška typu bullpup ráže 5,56x45 mm NATO. Model AUG A2 je vylepšenou verzí modelu A1, který byl představen v roce 1997 Jedním z klíčových rozdílů je nahrazení integrovaného zaměřovače lištou Picatinny, což umožňuje přidání nejrůznějších zaměřovačů a dalekohledů. Na černém trhu se s ní lze běžně setkat a je velmi spolehlivá.\n \n
+		%c[0,255,255,255]CHARAKTERISTIKA:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1982\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Přední rukojeť\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_a3">
+		<text>Steyr AUG A3</text>
+	</string>
+	<string id="st_wpn_aug_a3_descr">
+		<text>Steyr AUG je rakouská útočná puška typu bullpup ráže 5,56x45 mm NATO. Steyr AUG A3 se od základního modelu liší přítomností čtyř lišt Picatinny. Horní slouží k upevnění mířidel, zatímco na spodní lze připevnit granátomet nebo vertikální přední rukojeť. Na boční stranu lze připevnit laserové ukazovátko nebo jiné potřebné přídavné vybavení.\n \n
+		%c[0,255,255,255]CHARAKTERISTIKA:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2014\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255]Přední rukojeť\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_thales">
+		<text>Thales F90</text>
+	</string>
+	<string id="st_wpn_aug_thales_descr">
+		<text>Thales F90, známý také jako EF88, je vylepšenou australskou verzí AUG, F88 Austeyr. Vyroben byl v roce 2012 a měl nahradit F88, jedná se o nejmodernější AUG, který lze najít, má mnoho vylepšení vycházejících z výkonu F88, což zvyšuje jeho ergonomii a spolehlivost. Unikátní hlaveň mu poskytuje mnohem lepší kontrolu zpětného rázu a přesnost, zatímco vlastní předpažbí umožňuje lepší manipulaci. Neuvěřitelně vzácná zbraň.\n \n
+		%c[0,255,255,255]CHARAKTERISTIKA:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2012\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Přední rukojeť\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_9mm">
+		<text>Steyr AUG A3 9mm</text>
+	</string>
+	<string id="st_wpn_aug_9mm_descr">
+		<text>Známý také jako Steyr AUG Para, i když to by se týkalo původní varianty, která neměla Picatinnyho lišty, jinou hlaveň a také integrovaný zaměřovač a předpažbí. AUG 9mm je zjednodušeně řečeno varianta samopalu komorovaná v ráži 9x19 Parabellum vyráběná od roku 1988. Dodává se s jinou unikátní hlavní, závěrem a zásobníkem, ačkoli se do něj vejde i zásobník TMP. Tato zbraň byla vyrobena, jak by napovídal název, pro výsadkáře. Existují sady, které umožňují přeměnit jakýkoli AUG A3 na AUG 9 mm a naopak. Je to spolehlivý samopal ve formátu bullpup, a proto je oblíbený mezi příslušníky Svobodné strany.
+		%c[0,255,255,255]CHARAKTERISTIKA:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1988\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Přední rukojeť\n
+		</text>
+	</string>
+
+
+</string_table>

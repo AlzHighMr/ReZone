@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- «Группа Бизона» -->
+	<string id="storyline_quest_name">
+    <text>"Bison's Group": Find the Missing Group</text>
+</string>
+<string id="storyline_quest_1_name">
+    <text>"Bison's Group": Examine the Body</text>
+</string>
+<string id="storyline_quest_descr">
+    <text>Bison's group set out to find some miracle artifact. Why they needed it is unknown, but the one thing I know for sure is the starting point of the group, and that's where I’ll begin.</text>
+</string>
+<string id="storyline_quest_1_descr">
+    <text>Bison is dead, I need to examine his body, maybe I will find something.</text>
+</string>
+<!-- "Assault" -->
+<string id="dl_shturm_name">
+    <text>"Assault": Wait for Krasnopolski's Group</text>
+</string>
+<string id="dl_shturm_1_name">
+    <text>"Assault": Talk to Krasnopolski</text>
+</string>
+<string id="dl_shturm_2_name">
+    <text>"Assault": Eliminate the Enemy</text>
+</string>
+<string id="dl_shturm_3_name">
+    <text>"Assault": Talk to Krasnopolski</text>
+</string>
+<string id="dl_shturm_descr">
+    <text>You need to wait for Krasnopolski’s group before attacking the Mercenaries' camp.</text>
+</string>
+<string id="dl_shturm_1_descr">
+    <text>The group has arrived, it's time to talk to Krasnopolski before starting the assault.</text>
+</string>
+<string id="dl_shturm_2_descr">
+    <text>The assault has begun, you need to eliminate the mercenaries.</text>
+</string>
+<string id="dl_shturm_3_descr">
+    <text>The mercenaries are dead, you need to talk to Krasnopolski.</text>
+</string>
+<!-- "Theft" -->
+<string id="dl_return_treasure_name">
+    <text>"Theft": Retrieve Your Belongings</text>
+</string>
+<string id="dl_return_treasure_descr">
+    <text>The bandits took all my things, I need to get them back.</text>
+</string>
+<!-- "Help" -->
+<string id="dl_sos_message_name">
+    <text>"Help": Respond to the Distress Signal</text>
+</string>
+<string id="dl_sos_message_descr">
+    <text>The leader of the neutrals asked me to check the distress signal, it’s located near the camp.</text>
+</string>
+
+<!-- "Inhabitants" -->
+<string id="first_quest_name">
+    <text>"Inhabitants": Reach the Stalker Camp</text>
+</string>
+<string id="first_quest_1_name">
+    <text>"Inhabitants": Talk to the Locals</text>
+</string>
+<string id="first_quest_descr">
+    <text>The search should start at the local stalker camp. I'm sure the group was there, they couldn't have left empty-handed. I should ask the locals about the group.</text>
+</string>
+<string id="first_quest_1_descr">
+    <text>The stalker at the camp entrance advised talking to the camp leader and the merchant. Since there are no other ideas for now, I should focus on this.</text>
+</string>
+<!-- "Swamp Monster" -->
+<string id="bolotnaya_tvar_name">
+    <text>"Swamp Monster": Kill the Monster</text>
+</string>
+<string id="bolotnaya_tvar_1_name">
+    <text>"Swamp Monster": Return to Foma</text>
+</string>
+<string id="bolotnaya_tvar_descr">
+    <text>The merchant asked me to deal with some swamp monster in exchange for information about the group.</text>
+</string>
+<string id="bolotnaya_tvar_1_descr">
+    <text>The monster is dead, now I can return to the merchant for the information.</text>
+</string>
+<!-- "Revenge" -->
+<string id="vozmezdie_name">
+    <text>"Revenge": Find the Killer</text>
+</string>
+<string id="vozmezdie_1_name">
+    <text>"Revenge": Decide the Fate of Kosta</text>
+</string>
+<string id="vozmezdie_descr">
+    <text>It seems a mercenary killed this stalker and took the artifact. I need to find this mercenary and try to uncover the reason.</text>
+</string>
+<string id="vozmezdie_1_descr">
+    <text>The mercenary who killed the stalker is now feeding the worms, but there’s still one culprit left – Kosta. I should talk to Rzhavy about this.</text>
+</string>
+<!-- "Hot on the Trail" -->
+<string id="po_goryachim_sledam_name">
+    <text>"Hot on the Trail": Investigate the Tunnel</text>
+</string>
+<string id="po_goryachim_sledam_descr">
+    <text>The merchant didn’t clarify the situation with the group much, but he pointed me to a local tunnel where Bison went after buying provisions. I should check it out.</text>
+</string>
+<!-- "Catacombs" -->
+<string id="tonnels_more_name">
+    <text>"Catacombs": Learn More</text>
+</string>
+<string id="tonnels_more_1_name">
+    <text>"Catacombs": Wait for the Message</text>
+</string>
+<string id="tonnels_more_2_name">
+    <text>"Catacombs": Talk to Foma</text>
+</string>
+<string id="tonnels_more_3_name">
+    <text>"Catacombs": Find the Stash</text>
+</string>
+<string id="tonnels_more_4_name">
+    <text>"Catacombs": Find the Key</text>
+</string>
+<string id="tonnels_more_5_name">
+    <text>"Catacombs": Open the Door</text>
+</string>
+<string id="tonnels_more_6_name">
+    <text>"Catacombs": Descend into the Dungeon</text>
+</string>
+<string id="tonnels_more_descr">
+    <text>In the tunnel, I found some traces of the group. They’ve been gone for over three days, but I also found Rezak’s PDA – he was one of Bison's group members. The PDA contains information about the catacombs. I need to learn more about them and where they lead.</text>
+</string>
+<string id="tonnels_more_1_descr">
+    <text>Foma doesn’t know anything about the catacombs, but he mentioned an old man who could help. He doesn’t know where to find him, but the old man is a frequent visitor at the bar. Foma promised to send me a message when the old man shows up.</text>
+</string>
+<string id="tonnels_more_2_descr">
+    <text>The merchant sent me a message that he has news. I should speak to him as soon as possible.</text>
+</string>
+<string id="tonnels_more_3_descr">
+    <text>The old man who knew how to enter the catacombs is dead. The merchant has coordinates for a stash that might have something that will help me find the entrance to the catacombs.</text>
+</string>
+<string id="tonnels_more_4_descr">
+    <text>In the old man’s stash, there weren’t many items. The most interesting find was an old manuscript. It mentions that one of the catacomb entrances is sealed, but there’s a second one. To access it, I need to find a key, which, according to the notes, is somewhere on the grounds where the entrance is located.</text>
+</string>
+<string id="tonnels_more_5_descr">
+    <text>I have the key. I didn’t expect it to be a magnetic key card, but a key is a key, as long as it opens the door.</text>
+</string>
+<string id="tonnels_more_6_descr">
+    <text>The doors are open, now I can descend into the catacombs following the group.</text>
+</string>
+
+<!-- "Uninvited Guests" -->
+<string id="uninvited_guests_name">
+    <text>"Uninvited Guests": Reconnaissance</text>
+</string>
+<string id="uninvited_guests_1_name">
+    <text>"Uninvited Guests": Climb Over the Fence</text>
+</string>
+<string id="uninvited_guests_2_name">
+    <text>"Uninvited Guests": Eavesdrop on the Conversation</text>
+</string>
+<string id="uninvited_guests_3_name">
+    <text>"Uninvited Guests": Return to Rzhavy</text>
+</string>
+<string id="uninvited_guests_descr">
+    <text>Rzhavy has a job for me: I need to find out why the mercenaries are in the area. I should scout the military base.</text>
+</string>
+<string id="uninvited_guests_1_descr">
+    <text>The door to the base is locked, and I don't have the key. I’ll have to find another way in. I think I can climb over the fence.</text>
+</string>
+<string id="uninvited_guests_2_descr">
+    <text>Eavesdrop on the mercenaries' conversation.</text>
+</string>
+<string id="uninvited_guests_3_descr">
+    <text>From the conversation, I learned that the mercenaries were hired to find an artifact, and they already have it. It also turns out that their leader is someone named Krivoy.</text>
+</string>
+<!-- "An Outsider Among Friends" -->
+<string id="wiz_enemy_with_neutral_name">
+    <text>"An Outsider Among Friends": Wait for Night</text>
+</string>
+<string id="wiz_enemy_with_neutral_1_name">
+    <text>"An Outsider Among Friends": Check the Mercenary Camp</text>
+</string>
+<string id="wiz_enemy_with_neutral_2_name">
+    <text>"An Outsider Among Friends": Escape the Cell</text>
+</string>
+<string id="wiz_enemy_with_neutral_descr">
+    <text>I found information in the mercenary's PDA that the leader of the neutrals, Kosta, is somehow involved with the mercenaries. I should wait for nightfall to check the mercenary camp.</text>
+</string>
+<string id="wiz_enemy_with_neutral_1_descr">
+    <text>This is the right time. I think the mercenaries have already left the camp.</text>
+</string>
+<string id="wiz_enemy_with_neutral_2_descr">
+    <text>I need to find a way to escape the cell...</text>
+</string>
+<!-- "Like a Resort" -->
+<string id="wiz_kak_na_kurorte_name">
+    <text>"Like a Resort": Find My Gear</text>
+</string>
+<string id="wiz_kak_na_kurorte_1_name">
+    <text>"Like a Resort": Talk to Krasnopolsky</text>
+</string>
+<string id="wiz_kak_na_kurorte_2_name">
+    <text>"Like a Resort": Retrieve My Gear</text>
+</string>
+<string id="wiz_kak_na_kurorte_descr">
+    <text>The mercenaries took all my gear, but I think it’s somewhere nearby.</text>
+</string>
+<string id="wiz_kak_na_kurorte_1_descr">
+    <text>The room is locked, and it seems that the lieutenant already has the key. I should talk to him.</text>
+</string>
+<string id="wiz_kak_na_kurorte_2_descr">
+    <text>I have the key to the leader’s room. Now I can open the door and get my stuff back.</text>
+</string>
+
+	<!-- "Herald of Justice" -->
+<string id="gonec_pravosudiya_name">
+    <text>"Herald of Justice": Talk to Rzhavy</text>
+</string>
+<string id="gonec_pravosudiya_1_name">
+    <text>"Herald of Justice": Wait for a Message</text>
+</string>
+<string id="gonec_pravosudiya_2_name">
+    <text>"Herald of Justice": Return to Rzhavy</text>
+</string>
+<string id="gonec_pravosudiya_3_name">
+    <text>"Herald of Justice": Interrogate Kosta</text>
+</string>
+<string id="gonec_pravosudiya_4_name">
+    <text>"Herald of Justice": Kill Kosta</text>
+</string>
+<string id="gonec_pravosudiya_descr">
+    <text>My suspicions about the neutral leader, Kosta, have been confirmed. He was working with mercenaries, selling them artifacts, and based on recent information, he sent a stalker to his death with the "blues" (mercenaries).</text>
+</string>
+<string id="gonec_pravosudiya_1_descr">
+    <text>I reported the information about the traitor leader to Rzhavy. He asked me to wait a couple of hours to inform the camp's inhabitants about everything. After that, he’ll contact me to discuss the next steps.</text>
+</string>
+<string id="gonec_pravosudiya_2_descr">
+    <text>Rzhavy sent a message, I need to talk to him.</text>
+</string>
+<string id="gonec_pravosudiya_3_descr">
+    <text>Before killing Kosta, it would be wise to interrogate him.</text>
+</string>
+<string id="gonec_pravosudiya_4_descr">
+    <text>I've learned everything I needed, now it's time to kill him.</text>
+</string>
+<!-- "Prisoner of Circumstances" -->
+<string id="free_neutral_name">
+    <text>"Prisoner of Circumstances": Wait for Night</text>
+</string>
+<string id="free_neutral_1_name">
+    <text>"Prisoner of Circumstances": Go on a Raid</text>
+</string>
+<string id="free_neutral_2_name">
+    <text>"Prisoner of Circumstances": Clear the Camp</text>
+</string>
+<string id="free_neutral_3_name">
+    <text>"Prisoner of Circumstances": Talk to the Prisoner</text>
+</string>
+<string id="free_neutral_4_name">
+    <text>"Prisoner of Circumstances": Talk to Rzhavy</text>
+</string>
+<string id="free_neutral_descr">
+    <text>Before he died, Kosta revealed that Zhekan is still alive and is being held captive by bandits. Rzhavy wants to rescue him and offered me a chance to help. I need to wait for the night.</text>
+</string>
+<string id="free_neutral_1_descr">
+    <text>Night is the best time for a surprise attack. I should talk to Rzhavy.</text>
+</string>
+<string id="free_neutral_2_descr">
+    <text>Rescuing the prisoner quietly won’t work, so I’ll have to clear the entire bandit camp.</text>
+</string>
+<string id="free_neutral_3_descr">
+    <text>The bandits are dead, I should talk to the prisoner before returning to the camp.</text>
+</string>
+<string id="free_neutral_4_descr">
+    <text>The prisoner is freed, the bandits are dead, now I can discuss my reward with Rzhavy and return to the camp.</text>
+</string>
+
+	
+<!-- "LOCATION: CATACOMBS" -->
+<!-- "Children of the Dungeons" -->
+<string id="wiz_children_of_the_dungeons_name">
+    <text>"Children of the Dungeons": Explore the Catacombs</text>
+</string>
+<string id="wiz_children_of_the_dungeons_1_name">
+    <text>"Children of the Dungeons": Escape the Catacombs</text>
+</string>
+<string id="wiz_children_of_the_dungeons_descr">
+    <text>Based on the information I managed to dig up from the stalkers, the group went through these catacombs. But where do they lead? What’s going on inside? I need to be careful.</text>
+</string>
+<string id="wiz_children_of_the_dungeons_1_descr">
+    <text>Skeletons, fresh corpses of stalkers, everything suggests the group never made it out of the catacombs. But among all the bodies, I didn’t find any from Bison’s group, nor was Bison himself there, so they must have made it out somehow. I need to move on and look for an exit.</text>
+</string>
+<!-- "Crow" -->
+<string id="kat_voron_locked_pda_quest_name">
+    <text>"Crow": Unlock the PDA</text>
+</string>
+<string id="kat_voron_locked_pda_quest_1_name">
+    <text>"Crow": Wait for Unlocking</text>
+</string>
+<string id="kat_voron_locked_pda_quest_2_name">
+    <text>"Crow": Retrieve the PDA</text>
+</string>
+<string id="kat_voron_locked_pda_quest_descr">
+    <text>In the catacombs, I found the body of Crow, who was part of Bison's group. I managed to recover his PDA, but it’s locked. I need to find a technician who can unlock it.</text>
+</string>
+<string id="kat_voron_locked_pda_quest_1_descr">
+    <text>The PDA was handed over to the local technician, Pianist. He promised to unlock it, I just need to wait.</text>
+</string>
+<string id="kat_voron_locked_pda_quest_2_descr">
+    <text>The technician informed me that the PDA is unlocked. It’s time to retrieve it.</text>
+</string>
+
+	
+	<!-- "LOCATION: DEAD LAKE" -->
+<!-- "In the Footsteps" -->
+<string id="zav_in_the_footsteps_name">
+    <text>"In the Footsteps": Find Information</text>
+</string>
+<string id="zav_in_the_footsteps_1_name">
+    <text>"In the Footsteps": Talk to Garik</text>
+</string>
+<string id="zav_in_the_footsteps_2_name">
+    <text>"In the Footsteps": Check the Lead</text>
+</string>
+<string id="zav_in_the_footsteps_3_name">
+    <text>"In the Footsteps": Check the Shack</text>
+</string>
+<string id="zav_in_the_footsteps_4_name">
+    <text>"In the Footsteps": Talk to Toha</text>
+</string>
+<string id="zav_in_the_footsteps_descr">
+    <text>The catacombs are behind me, I found Crow there, but the rest of the group apparently made it out, which is good news. That means I should look for them here.</text>
+</string>
+<string id="zav_in_the_footsteps_1_descr">
+    <text>Garik wants to talk about something. However, I first need to chat with the Trader.</text>
+</string>
+<string id="zav_in_the_footsteps_2_descr">
+    <text>A stalker from the camp reported that the group was seen near the Southeast homestead, moving towards the swamp. I should go check it out.</text>
+</string>
+<string id="zav_in_the_footsteps_3_descr">
+    <text>I found some sad information in Grek’s PDA. I hope my fears don’t turn out to be true...</text>
+</string>
+<string id="zav_in_the_footsteps_4_descr">
+    <text>I found a Merc’s body in a house in the swamp. The PDA contained information about his mission, which he apparently couldn’t complete. That means there’s still a chance that Bison is alive. I need to talk to the leader of the Neutrals, maybe they’ve seen mercenaries around here.</text>
+</string>
+<!-- "Duty: Communication" -->
+<string id="dl_storyline_task_dolg_name">
+    <text>"Duty": Get in Touch</text>
+</string>
+<string id="dl_storyline_task_dolg_1_name">
+    <text>"Duty": Return to Toha</text>
+</string>
+<string id="dl_storyline_task_dolg_descr">
+    <text>The leader of the Neutrals is willing to help eliminate people from the Syndicate. However, they’re concerned that if only stalkers participate in the assault, the Syndicate will send reinforcements to take revenge. Therefore, we need to contact Krasnopolsky and try to convince him to join the assault.</text>
+</string>
+<string id="dl_storyline_task_dolg_1_descr">
+    <text>Krasnopolsky and his group are already on their way, but they won’t arrive until tomorrow midnight. Now I need to return to Toha and share the good news.</text>
+</string>
+
+<!-- "Distress Signal" -->
+<string id="dl_sos_signal_name">
+    <text>"Distress Signal": Check the Location</text>
+</string>
+<string id="dl_sos_signal_1_name">
+    <text>"Distress Signal": Kill the Controller</text>
+</string>
+<string id="dl_sos_signal_2_name">
+    <text>"Distress Signal": Talk to Garik</text>
+</string>
+<string id="dl_sos_signal_descr">
+    <text>Garik asked for help in investigating the distress signal they picked up recently.</text>
+</string>
+<string id="dl_sos_signal_1_descr">
+    <text>Kill the mutant.</text>
+</string>
+<string id="dl_sos_signal_2_descr">
+    <text>The Controller is dead, as is the stalker who apparently sent the distress signal. It’s time to talk to Garik before heading back to the base.</text>
+</string>
+
+<!-- "Unknown Signal" -->
+<string id="lake_out_bandits_1_name">
+    <text>"Safe Place": Reach a Safe Spot</text>
+</string>
+<string id="lake_out_bandits_1_descr">
+    <text>My head is buzzing... My gear is gone. I need to get out of here and find a safer place.</text>
+</string>
+
+<!-- "In Time of Need" -->
+<string id="lake_na_virychky_name">
+    <text>"In Time of Need": Retrieve the Case from the Ravine</text>
+</string>
+<string id="lake_na_virychky_1_name">
+    <text>"In Time of Need": Deliver the Case to Garik</text>
+</string>
+<string id="lake_na_virychky_descr">
+    <text>A stalker, in exchange for weapons, asked me to perform a task. To the northwest of the Stalker's camp, there’s a small ravine with anomalies, and in it, I need to retrieve a case and deliver it to the stalker.</text>
+</string>
+<string id="lake_na_virychky_1_descr">
+    <text>The case is with me, everything went smoothly! Now I just need to deliver it to the owner.</text>
+</string>
+
+<!-- "Handless" -->
+<string id="lost_name">
+    <text>"Lost": Find Out What Happened?</text>
+</string>
+<string id="lost_1_name">
+    <text>"Lost": Investigate the Area</text>
+</string>
+<string id="lost_2_name">
+    <text>"Lost": Eliminate the Monolith Squad</text>
+</string>
+<string id="lost_3_name">
+    <text>"Lost": Examine the Bodies</text>
+</string>
+<string id="lost_4_name">
+    <text>"Lost": Deliver the Found Documents</text>
+</string>
+<string id="lost_descr">
+    <text>I heard on the radio that a stalker squad went missing. It’s worth offering help in the search.</text>
+</string>
+<string id="lost_1_descr">
+    <text>Toha briefly explained the situation and pointed to the last communication point of the squad. I should check it out and see if I can find anything.</text>
+</string>
+<string id="lost_2_descr">
+    <text>I ran into a Monolith squad during the investigation. They are probably responsible for the stalkers' disappearance. Time to act.</text>
+</string>
+<string id="lost_3_descr">
+    <text>The Monolith squad is eliminated. Sadly, I couldn’t save the guys. That’s how Monolith operates—kill the unfaithful. I should examine the bodies of the guys.</text>
+</string>
+<string id="lost_4_descr">
+    <text>I found some documents on the leader of the squad. I should take them to Toha.</text>
+</string>
+
+	
+<!-- "New Beginning: Artifact Search" -->
+<string id="dl_new_time_search_art_1_name">
+    <text>"New Beginning": Explore the Zone</text>
+</string>
+<string id="dl_new_time_search_art_1_1_name">
+    <text>"New Beginning": Return to the Neutral Leader</text>
+</string>
+<string id="dl_new_time_search_art_1_descr">
+    <text>The leader of the neutral camp marked a location for the artifact search. The area is filled with gravitational anomalies, so caution is advised.</text>
+</string>
+<string id="dl_new_time_search_art_1_1_descr">
+    <text>The artifact has been found. It’s time to return to the neutral leader.</text>
+</string>
+
+<string id="dl_new_time_search_art_2_name">
+    <text>"New Beginning": Explore the Zone</text>
+</string>
+<string id="dl_new_time_search_art_2_1_name">
+    <text>"New Beginning": Return to the Neutral Leader</text>
+</string>
+<string id="dl_new_time_search_art_2_descr">
+    <text>The leader of the neutral camp marked a location for the artifact search. The area is filled with electrical anomalies, so caution is advised.</text>
+</string>
+<string id="dl_new_time_search_art_2_1_descr">
+    <text>The artifact has been found. It’s time to return to the neutral leader.</text>
+</string>
+
+<string id="dl_new_time_search_art_3_name">
+    <text>"New Beginning": Explore the Zone</text>
+</string>
+<string id="dl_new_time_search_art_3_1_name">
+    <text>"New Beginning": Return to the Neutral Leader</text>
+</string>
+<string id="dl_new_time_search_art_3_descr">
+    <text>The leader of the neutral camp marked a location for the artifact search. The area is filled with acid anomalies, so caution is advised.</text>
+</string>
+<string id="dl_new_time_search_art_3_1_descr">
+    <text>The artifact has been found. It’s time to return to the neutral leader.</text>
+</string>
+
+	<!-- "Scanning" -->
+<string id="wiz_scaner_1_name">
+    <text>"Scanning": Find the Lockpick</text>
+</string>
+<string id="wiz_scaner_2_name">
+    <text>"Scanning": Install the Scanner</text>
+</string>
+<string id="wiz_scaner_3_name">
+    <text>"Scanning": Return for the Reward</text>
+</string>
+<string id="wiz_scaner_1_descr">
+    <text>Ivanych asked to find the missing lockpick and later install the scanner in the anomaly.</text>
+</string>
+<string id="wiz_scaner_2_descr">
+    <text>The lockpick is dead, and the scanner is now with me. All that’s left is to install it and return to Ivanych.</text>
+</string>
+<string id="wiz_scaner_3_descr">
+    <text>The scanner has been successfully installed. Now it’s time to return for the reward.</text>
+</string>
+
+<!-- "Trade Agreement" -->
+<string id="wiz_germo_case_quest_name">
+    <text>"Trade Agreement": Give the Case</text>
+</string>
+<string id="wiz_germo_case_quest_descr">
+    <text>This case seems to be what Foma needs. I should give it to him.</text>
+</string>
+
+<!-- "Clean-Up" -->
+<string id="wiz_mutants_hunting_name">
+    <text>"Hunting": Destroy the Mutants</text>
+</string>
+<string id="wiz_mutants_hunting_1_name">
+    <text>"Hunting": Collect the Reward</text>
+</string>
+<string id="wiz_mutants_hunting_descr">
+    <text>Foma hired me for a hunt. I need to clear out four mutant camps, and he promised a good artifact as a reward.</text>
+</string>
+<string id="wiz_mutants_hunting_1_descr">
+    <text>The clean-up is done. Foma sent me the coordinates for the stash where my reward is hidden.</text>
+</string>
+
+<!-- "Military Secret" -->
+<string id="wiz_military_secret_name">
+    <text>"Military Secret": Find the Military Maps</text>
+</string>
+<string id="wiz_military_secret_1_name">
+    <text>"Military Secret": Deliver the Maps to Zhekan.</text>
+</string>
+<string id="wiz_military_secret_descr">
+    <text>Zhekan told me about a recent crash of a military helicopter in the area, but the exact location is unknown. My task is to find the helicopter and retrieve the military maps from it.</text>
+</string>
+<string id="wiz_military_secret_1_descr">
+    <text>The maps have been found. Now I need to deliver them to Zhekan and collect my reward.</text>
+</string>
+<string id="dl_stalker_quest_name">
+    <text>Eliminate the Bandits</text>
+</string>
+<string id="dl_stalker_quest_1_name">
+    <text>Collect the Reward</text>
+</string>
+<string id="dl_stalker_quest_1_descr">
+    <text>Collect the reward for eliminating the bandits from the trader.</text>
+</string>
+<string id="dl_stalker_quest_descr">
+    <text>Eliminate the bandits at the Devil's Camp. This will help stop the robberies of stalkers returning to base with their loot.</text>
+</string>
+<!-- "Cleanup" -->
+<string id="dl_zachistka_name">
+    <text>"Cleanup": Meet the Squad</text>
+</string>
+<string id="dl_zachistka_1_name">
+    <text>"Cleanup": Eliminate the Enemy</text>
+</string>
+<string id="dl_zachistka_2_name">
+    <text>"Cleanup": Talk to Groz</text>
+</string>
+<string id="dl_zachistka_3_name">
+    <text>"Cleanup": Collect the Reward</text>
+</string>
+<string id="dl_zachistka_4_name">
+    <text>"Cleanup": Collect the Reward</text>
+</string>
+<string id="dl_zachistka_descr">
+    <text>The trader offered a job to clean up a bandit camp. Now I need to meet the squad.</text>
+</string>
+<string id="dl_zachistka_1_descr">
+    <text>The squad leader, Groz, didn't waste time and ordered the assault.</text>
+</string>
+<string id="dl_zachistka_2_descr">
+    <text>The bandits are eliminated. It's time to talk to Groz.</text>
+</string>
+<string id="dl_zachistka_3_descr">
+    <text>Collect the reward.</text>
+</string>
+<string id="dl_zachistka_4_descr">
+    <text>The bandits and the assault squad are dead, but the reward for the job is still waiting.</text>
+</string>
+
+
+
+</string_table>

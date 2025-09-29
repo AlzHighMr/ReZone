@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+	
+	<string id="encyclopedia_options">
+		<text>Nastavení</text>
+	</string>
+	
+<string id="encyclopedia_options_ai_die_to_anomalies">
+    <text>AI umirají v anomaliích</text>
+</string>
+<string id="encyclopedia_options_ai_die_to_anomalies_text">
+    <text>
+        %c[pda_white]AI umírají v anomaliich%c[ui_gray_1] odstraňuje anomálie jako faktor při plánování cesty AI.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPři zapnutí této funkce mutanti a další stalkeři ztratí svou jasnovideckou schopnost vědět přesně, kde se anomálie nacházejí.\n
+        \nTím pádem budou teď vystavení plnému nebezpečí prostředí Zony stejně jako tvoje vlastní postava.\n
+        \nTuto funkci lze zapnout/vypnout v nabídce herních možností a je výchozím nastavením vypnuta.
+    </text>
+</string>
+<string id="encyclopedia_options_aoe_pickup_mode">
+    <text>Režim sebrání více předmětů</text>
+</string>
+<string id="encyclopedia_options_aoe_pickup_mode_text">
+    <text>
+        %c[pda_white]Režim sebrání více předmětů%c[ui_gray_1] umožňuje výběr více předmětů najednou.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPo zapnutí této funkce vám umožní vybrat více předmětů a umístit je do inventáře jediným stisknutím klávesy, stejně jako v S.T.A.L.K.E.R.: Call of Pripyat.\n
+        \nTuto funkci lze zapnout/vypnout v nabídce herních možností a je výchozím nastavením vypnuta.
+    </text>
+</string>
+	
+<string id="encyclopedia_options_artefact_degradation">
+    <text>Degradace artefaktu</text>
+</string>
+<string id="encyclopedia_options_artefact_degradation_text">
+    <text>
+        %c[pda_white]Degradace artefaktu%c[ui_gray_1] způsobuje, že schopnosti a bonusy artefaktu se při aktivaci zhoršují.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPo aktivaci této funkce už není pro lovce artefaktů konec s nejlepšími artefakty.\n
+        \nArtefakty budou tím slabší, čím více budou používány, což podpoří jejich další lov a hromadění, místo aby se staly jen rychlým zdrojem příjmu.\n
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je zapnuta.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_options_delayed_repairs">
+    <text>Trvající opravy</text>
+</string>
+<string id="encyclopedia_options_delayed_repairs_text">
+    <text>
+        %c[pda_white]Trvající opravy%c[ui_gray_1] umožňují technikům zachovat vaše zařízení.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPři zapnutí této funkce budou rozbité zbraně, výstroj a další předměty, které přinesete technikovi, u něj ponechány, dokud nedokončí všechny opravy.\n
+        \nPo předání předmětu můžete znovu promluvit s technikem a zeptat se, zda jsou připraveny k vyzvednutí, na což vám je buď vrátí, nebo sdělí, kolik času ještě potřebuje.\n
+        \nTento systém přidává k tradičnímu systému oprav poněkud realistické vylepšení, které je vhodné, pokud hledáte těžší zážitek, protože už nebude fungovat okamžitě a místo toho bude klást důraz na používání pistolnických a sice souprav.\n
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+<string id="encyclopedia_options_enhanced_recoil">
+    <text>Zvýšený zpětný ráz</text>
+</string>
+<string id="encyclopedia_options_enhanced_recoil_text">
+    <text>
+        %c[pda_white]Vylepšený zpětný ráz%c[ui_gray_1] přidává mnohem rozmanitější a realističtější ovládání zbraně.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nBěžně při střelbě ze zbraně jediný efekt, který vestavěný systém zpětného rázu poskytuje, je, že postupně zvedá zaměřovač, animuje zbraň a mírně zvyšuje rozptyl střel.\n
+        \nZ tohoto důvodu je normální systém poněkud nedokonalý, protože střelbou v krátkých dávkách a současným pomalým pohybem myší směrem dolů můžete s trochou cviku téměř úplně potlačit zpětný ráz zbraně.\n
+        \nPři zapnutí této funkce se při střelbě ze zbraně vytváří mnohem náhodnější a vícerozměrný zpětný ráz - to obnovuje náročnost ovládání zbraně a zvyšuje vliv na výběr vylepšení a munice.\n
+        \nDůrazně doporučujeme tuto funkci zapnout pouze v případě, že váš systém dokáže udržet stabilní rychlost alespoň třicet snímků za sekundu, i když padesát a více je mnohem lepší.\n
+        \nTuto funkci lze přepnout v nabídce možností hry a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_options_hardcore_ai_aim">
+    <text>Hardcore AI míření</text>
+</string>
+<string id="encyclopedia_options_hardcore_ai_aim_text">
+    <text>
+        %c[pda_white]Hardcore AI aim%c[ui_gray_1] zvyšuje předvídatelnost míření AI a snižuje reakční dobu.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nPři zapnutí této funkce je pro vás těžší vyhnout se zásahu při strafingu a sprintu, přičemž používání krytu je mnohem důležitější pro vaše dlouhodobé přežití.\n
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+<string id="encyclopedia_options_helicopter_patrols">
+    <text>Helikoptérové hlídky</text>
+</string>
+<string id="encyclopedia_options_helicopter_patrols_text">
+    <text>
+        %c[pda_white]Vrtulníkové hlídky%c[ui_gray_1] umožňuje frakcím využít leteckou podporu k obraně strategických oblastí.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nFrakce, které mají v oblasti hlídkující spojenecká letadla, je budou moci požádat o podporu při útoku na nepřátelské pronásledovatele (včetně vás) a mutanti nebo při obraně před nimi.\n
+        \nPřes jejich zastrašující vzhled je lze snadno sundat po lehkém poškození ocasního rotoru.\n
+        \nPokud vás zvuk rotorových listů začne obtěžovat, ale nechcete tuto funkci vypnout, lze je vypnout samostatně.\n
+        \nTyto funkce lze přepínat v nabídce možností hry a ve výchozím nastavení jsou zapnuty.\n
+        \n%c[pda_green]Locations%c[ui_gray_1]
+        \n- Agroprom\n- Cordon\n- Darkscape\n- Velká bažina\n- Limansk
+    </text>
+</string>
+
+
+	<string id="encyclopedia_options_localisation">
+    <text>Lokalizace</text>
+</string>
+<string id="encyclopedia_options_localisation_text">
+    <text>
+        %c[pda_white]Lokalizace%c[ui_gray_1] umožnuje nastavit jazyk, ve kterém budete hrát hru.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nPři změně lokalizace se většina textu aktualizuje automaticky, nicméně u některých je třeba hru restartovat, aby se změnila.\n
+        \nTuto funkci lze nastavit v nabídce možností hry a ve výchozím nastavení je nastavena na "eng".\n
+        \n%c[pda_green]Podporované jazyky%c[ui_gray_1]
+        \n- Angličtina: eng\n- Ruština: rus
+    </text>
+</string>
+<string id="encyclopedia_options_lootmoney">
+    <text>Loot peněz v mrtvolách</text>
+</string>
+<string id="encyclopedia_options_lootmoney_text">
+    <text>
+        %c[d_cyan]Loot peněz v mrtvolách%c[ui_gray_1] umožňuje najít peníze v kapsách zemřelých.\n
+        \n%c[d_green]Informace%c[ui_gray_1]\n
+        \nObjem nalezených peněz závisí na hodnosti mrtvého pronásledovatele. Čím vyšší je hodnost, tím více peněz můžete najít.\n
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_options_online_exclusion">
+    <text>Bezpečná vzdálenost spawnu NPC od hráče</text>
+</string>
+<string id="encyclopedia_options_online_exclusion_text">
+    <text>
+        %c[pda_white]Bezpečná vzdálenost spawnu NPC od hráče%c[ui_gray_1] vytvoří kolem vaší postavy zónu, ve které se nesmí spawnovat.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPři průzkumu v blízkosti okrajů úrovní a jejich vstupních/výstupních bodů můžete být napadeni nepřáteli přicházejícími z jiných úrovní. Se zapnutým online vyloučením jsou tyto nájezdy odloženy, dokud se nedostanete bezpečně z cesty.\n
+        \nMěli bychom poznamenat, že tento systém se točí výhradně kolem vás; nepřátelé, kteří se již nacházejí v místě, kde měníte úrovně, nebudou po vašem příchodu vypuštěni.\n
+        \nTuto funkci lze nastavit v nabídce možností hry a ve výchozím nastavení je nastavena na 25.
+    </text>
+</string>
+<string id="encyclopedia_options_population_factors">
+    <text>Faktory populace</text>
+</string>
+<string id="encyclopedia_options_population_factors_text">
+    <text>
+        %c[pda_white]Populační faktory%c[ui_gray_1] upravují počet stalkerů a mutantů, kteří se nacházejí v Zóně.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nFaktory populace stalkerů a mutantů lze upravovat nezávisle na sobě, což vám umožní rozhodnout, jak divoká nebo osídlená má být Zóna, aniž byste museli upravovat jakýkoli soubor hry.\n
+        \nMělo by být poznamenáno, že efekt je největší při spuštění nové postavy, protože pokud jsou faktory změněny během probíhajícího hraní, projeví se až ve chvíli, kdy stalkerové a/nebo mutanti zemřou a poté se znovu objeví ve větším či menším počtu.\n
+        \nTyto vlastnosti lze nastavit v nabídce možností hry a ve výchozím nastavení jsou nastaveny na 0,5.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_options_quicksave_count">
+    <text>Počet rychlých uložení</text>
+</string>
+<string id="encyclopedia_options_quicksave_count_text">
+    <text>
+        %c[pda_white]Počet rychlých uložení%c[ui_gray_1] umožňuje hře přepínat mezi více quicksavů.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nPři vytváření rychlého uložení se k názvu souboru připojí číslo na konci - tato čísla hra používá k usnadnění sledování více různých quicksavů.\n
+        \nDíky tomu, že můžete vytvořit více různých quicksavů, než se začnou nahrazovat, budete se moci vrátit k předchozímu postupu, pokud omylem uložíte v nevhodnou chvíli.\n
+        \nZkratka: čím vyšší hodnotu tomuto nastavení dáte, tím více quicksavů hra projde.\n
+        \nTuto funkci lze nastavit v nabídce možností hry a ve výchozím nastavení je nastavena na hodnotu 5.
+    </text>
+</string>
+<string id="encyclopedia_options_radio_music">
+    <text>Radio</text>
+</string>
+<string id="encyclopedia_options_radio_music_text">
+    <text>
+        %c[pda_white]Rádiová hudba%c[ui_gray_1] umožňuje přehrávání vlastních hudebních skladeb na určitých místech.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nNa některých odpočinkových místech v Zóně jsou v blízkosti nainstalována rádia, přičemž každé z nich přehrává vybrané hudební skladby, aby se stalkerové bavili.\n
+        \nTuto funkci lze přepnout v nabídce možností hry a ve výchozím nastavení je zapnuta.\n
+        \n%c[pda_green]Locations%c[ui_gray_1]
+        \n- Agroprom: Armádní základna\n- Kordon: Sidorovičův bunkr\n- Velká bažina: Základna Jasné oblohy\n- Temné údolí: Základna banditů\n- Rostok: 100 radů\n- Rudý les: Lesnická věž
+    </text>
+</string>
+
+	
+<string id="encyclopedia_options_sleep_deprivation">
+    <text>Spánková deprivace</text>
+</string>
+<string id="encyclopedia_options_sleep_deprivation_text">
+    <text>
+        %c[pda_white]Spánková deprivace%c[ui_gray_1] umožňuje čas a použití spotřebních předmětů k únavě postavy.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nV celé Zóně najdete mnoho postelí a spacích pytlů, které se normálně používají pouze k tomu, abyste mohli přeskočit čas spaním, avšak se zapnutou funkcí se stávají nezbytnou součástí hry.\n
+        \nJak čas plyne, vaše postava se pomalu začíná cítit unavená a obrazovka se začíná rozmazávat a trast. Tyto efekty se budou zhoršovat, dokud nenajdete vhodné místo k odpočinku nebo dokud vás účinky spánkové deprivace nezpůsobí kolaps z vyčerpání.\n
+        \nÚnavu lze urychlit konzumací předmětů, jako jsou lékárničky a vodka, a potlačit pomocí předmětů, jako jsou energetické nápoje s vysokým obsahem kofeinu - nicméně při jejich nadměrném užívání nebudete schopni odpočívat, dokud jejich účinky nevyprchají.\n
+        \nTuto funkci lze přepnout v nabídce možností hry a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+<string id="encyclopedia_options_thirst">
+    <text>Simulace žízně</text>
+</string>
+<string id="encyclopedia_options_thirst_text">
+    <text>
+        \n%c[d_green]Informace%c[ui_gray_1]\n
+        \nJak název napovídá: jedná se o tvrdou volbu pro simulaci žízně. Tlačí hráče k neustálému hledání zdrojů vody a vedle ostatních potřeb přidává další vrstvu obtížnosti.
+        \nNa vašem HUD se zobrazí ukazatel žízně, který určuje úroveň žízně, čím větší žízeň budete mít, tím horší bude vaše zdraví a vydrž, dokud nedosáhnete bodu smrti.\n	
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je zapnuta.
+    </text>
+</string>
+
+	
+<string id="encyclopedia_options_dynamic_news">
+    <text>Dynamické zprávy</text>
+</string>
+<string id="encyclopedia_options_dynamic_news_text">
+    <text>
+        %c[pda_white]Dynamické zprávy%c[ui_gray_1] umožňují stalkerům informovat o svých zážitcích v Zóně.\n
+        \n%c[pda_zelena]Informace%c[ui_gray_1]
+        \nStalkerové budou pomocí komunikační sítě PDA komentovat události, které viděli nebo slyšeli v blízkosti své polohy, nebo své aktuální aktivity.\n
+        \nTyto události a činnosti mohou být různé, od něčeho tak všedního, jako je stížnost na cenu zboží prodávaného obchodníkem, až po žádost o pomoc od spojenců frakce, když jsou napadeni.\n
+        \nNa systém se váže i řada dalších funkcí; stalkerové mohou komentovat podezřelé aktivity při lovu odměn, což vám napoví, kde se váš cíl nachází, nebo se mohou zmínit, zda má někdo volnou práci.\n
+        \nTuto funkci lze přepnout v nabídce možností uživatelského rozhraní/HUD a ve výchozím nastavení je zapnuta.\n
+
+        \n%c[pda_green]Options%c[ui_gray_1]
+        \nDynamické zprávy jsou vybaveny širokou škálou možností, které umožňují zapnout/vypnout libovolný typ zpráv nebo řídit dobu mezi zprávami.
+        \nMožnosti dynamických zpráv jsou přístupné prostřednictvím nabídky Extra možnosti, do které se dostanete stisknutím klávesy F1 v hlavní nabídce.
+    </text>
+</string>
+<string id="encyclopedia_options_extended_hud">
+    <text>Rozšířený HUD</text>
+</string>
+<string id="encyclopedia_options_extended_hud_text">
+    <text>
+        %c[pda_white]Rozšířený HUD%c[ui_gray_1] umožňuje zobrazení dalších informací na obrazovce.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPři zapnutí této funkce se na displeji zobrazí stručné informace o společníkovi a miniaturní verze pásu artefaktu.\n
+        \nTuto funkci lze přepnout v nabídce možností UI/HUD a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+<string id="encyclopedia_options_portrait_by_outfit">
+    <text>Portrét podle oblečení</text>
+</string>
+<string id="encyclopedia_options_portrait_by_outfit_text">
+    <text>
+        %c[pda_white]Portrét podle oblečení%c[ui_gray_1] změní váš portrét podle vašeho aktuálního oblečení.\n
+        \n%c[pda_green]Informace%c[ui_gray_1]
+        \nPři zapnutí této funkce se pokazdé, když si vybavíte nebo vyzbrojíte oblečení (bez pokrývek hlavy), aktualizuje portrét vaší postavy, aby to odrazilo, a napodobuje tak, jak portréty umělé inteligence odpovídají jejímu vzhledu.\n
+        \nTuto funkci lze přepnout v nabídce možností UI/HUD a ve výchozím nastavení je vypnuta.
+    </text>
+</string>
+
+	
+<string id="encyclopedia_options_use_battery">
+    <text>Používat baterie</text>
+</string>
+<string id="encyclopedia_options_use_battery_text">
+    <text>
+        %c[d_cyan]Volba Použít baterie%c[ui_gray_1] vyžaduje, abyste používali baterie k udržení funkčnosti vašich pomůcek.\n
+        \n%c[d_green]Informace%c[ui_gray_1]\n
+        \nElektrická zařízení, jako jsou detektory a svítilny, získávají potřebné elektrické napětí a energii z univerzálního napájecího zařízení (UPD), aby správně fungovala. Z tohoto důvodu se jednotka UPD neustále spotřebovává.
+        \nAby jednotka UPD zůstala funkční, měli byste ji před ztrátou veškeré energie dobíjet pomocí baterií. 
+        \nDůležité je mít v kapse nějaké baterie, můžete si je buď koupit, nebo nějaké najít v okolí.\n
+        \nTuto funkci lze přepnout v nabídce herních možností a ve výchozím nastavení je zapnuta.
+    </text>
+</string>
+
+
+</string_table>

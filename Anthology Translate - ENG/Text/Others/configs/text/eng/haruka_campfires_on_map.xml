@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+<string id="ui_mcm_menu_campfires_on_map">
+    <text>Campfires on the Map</text>
+</string>
+
+<string id="ui_mcm_campfires_on_map_show_campfires">
+    <text>Show Campfires</text>
+</string>
+<string id="ui_mcm_campfires_on_map_show_only_visited">
+    <text>Show Only Visited</text>
+</string>
+<string id="ui_mcm_campfires_on_map_show_only_visited_desc">
+    <text>The map will display only campfires the player has interacted with.</text>
+</string>
+
+<string id="st_campfire">
+    <text>Campfire</text>
+</string>
+<string id="st_campfire_visited">
+    <text>%c[ui_white]Campfire (%c[d_orange]Visited%c[ui_white])</text>
+</string>
+
+</string_table>

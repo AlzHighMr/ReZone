@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--===========================================================
+<
+< TEXT STRINGS FOR LOST TO THE ZONE: HOLLOW BOUNDARIES TASKS
+<	Anomaly 1.5 - Lost to the Zone: Hollow Boundaries
+<
+<	Made by: Tronex
+<	Last revised: 10 September 2019
+<
+<===========================================================-->
+
+<string_table>
+	<!-- Messages -->
+<string id="st_msg_hb_isg_dushman_intel">
+	<text>Právě mi Dushman poslal pípnutí. Předpokládám, že to znamená, že ti předal informace. Usadil jsem se v oblasti, které místní říkají Jupiter. Dostaň se tam živý, brzy ti pošlu naše přesné souřadnice.</text>
+</string>
+<string id="st_msg_hb_isg_tech_goodluck">
+	<text>Přeji vám tam dole hodně štěstí, chlapi.</text>
+</string>
+<string id="st_msg_hb_isg_breakthrough">
+	<text>Vojáci, podzemí Jupiteru je nyní zabezpečeno a pod kontrolou. Pošlete souřadnice členům svých jednotek a počkejte na nové rozkazy.</text>
+</string>
+<string id="st_msg_hb_isg_petray">
+	<text>Věděl jsem, že ti nemám věřit.</text>
+</string>
+
+
+<string id="st_dyn_news_isg_stash_1">
+    <text>$name mluví. Schoval jsem nějaké zásoby pro nouzové situace v $location. Tady jsou souřadnice, ujistěte se, že se zpráva dostane k vojákům, kteří je potřebují.</text>
+</string>
+
+<string id="st_dyn_news_isg_stash_2">
+    <text>Doufám, že se vám daří na vašich misích. Chci informovat naše vojáky o schovance, kterou jsem schoval v $location. Najdete zde nějaké zásoby a různé věci. Doufám, že je někdo z vás dobře využije. $name končí.</text>
+</string>
+<string id="st_dyn_news_isg_stash_3">
+    <text>Uh... tady mluví $name. Dostal jsem se do $location. K píči, všude mutanty... Každopádně jsem tady nechal schovanku pro budoucí návštěvy, na jistý pád. Tady jsou souřadnice, pokud se někdy ocitneš ve špatné situaci.</text>
+</string>
+
+
+<string id="hb_hernandez_ds_start_dialog_0">
+	<text>Vojáku?</text>
+</string>
+<string id="hb_hernandez_ds_intro_dialog_0">
+	<text>Takže jsme to nakonec zvládli. Co dál, veliteli?</text>
+</string>
+<string id="hb_hernandez_ds_intro_dialog_1">
+	<text>Měli jsme štěstí, že se nám podařilo nepozorovaně proniknout za perimetr Ukrajinské armády. Všechny ostatní speciální jednotky UNISG také úspěšně pronikly do zóny a podle plánu se usadily na dohodnutých kontrolních stanovištích. Zatímco se s nimi zbytek oddílu chystá setkat, budu tě potřebovat pro zvláštní úkol. Jdete za mužem známým jako "Dushman". Je to hlavní spojka mezi žoldáky a jejich externími klienty. Nějaké dotazy?</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_0">
+	<text>Z jakého důvodu se mi zobrazuje tento "Dushman"?</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_1">
+	<text>Intel. Žoldáci jsou tu už dlouho a vypracovali mapy a poznámky, které nám budou velmi užitečné. Je životně důležité, abychom tyto znalosti získali, protože nám pomohou snížit riziko dlouhodobých výprav do hlubin Zóny a také nám řeknou, kde máme největší šanci najít to, pro co jsme přišli.</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_2">
+	<text>A on nám všechny ty informace jen tak předá?</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_3">
+	<text>Předpokládáme ano. OSN už za ty informace poslala královské výkupné. Zajdi za ním a on ti rád předá kopii toho, co ví o Zóně.</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_4">
+	<text>Nemohl nám ty informace poslat digitálně?</text>
+</string>
+<string id="hb_hernandez_about_dushman_dialog_5">
+	<text>Žoldáci rádi prodávají své informace za co nejvyšší cenu. Jakákoli informace odeslaná přes síť se snaží ukradnout nebo zkopírovat. Informace, které se snadněji kradou nebo kopírují, se prodávají za nižší cenu. Jak jsi možná pochopil, moc jim nezáleží na tom, aby nám to usnadnili, a my nemáme moc na výběr.</text>
+</string>
+
+	
+<string id="hb_hernandez_about_darkscape_dialog_0">
+	<text>Budu tě tu moci najít, kdybych tě k něčemu potřeboval?</text>
+</string>
+<string id="hb_hernandez_about_darkscape_dialog_1">
+	<text>Ne, zbytek oddílu musí pokračovat v cestě. Jakmile získáš informace od Dushmana, předám ti naši novou polohu spolu s dalšími rozkazy.</text>
+</string>
+
+<string id="hb_hernandez_about_isg_groups_dialog_0">
+	<text>Proč pracujeme v tak malých skupinách?</text>
+</string>
+<string id="hb_hernandez_about_isg_groups_dialog_1">
+	<text>Prozatím je nutné, abychom nepřitahovali příliš mnoho pozornosti. Je snazší projít bez podezření, když cestujeme v menších oddílech. Neměl bych říkat, že by to byl operační a politický průšvih, kdyby se Ukrajinská vláda dozvěděla o našich speciálních jednotkách. Nicméně i kdyby nás odhalili, díky našemu rozptýlenému, maskovacímu stylu nás bude těžké uplně dopadnout, což nám poskytne dostatek času na záchranu mise, kdyby se věci zvrtly.</text>
+</string>
+
+<string id="hb_hernandez_about_disguise_dialog_0">
+	<text>Jaký je náš postoj k místním obyvatelům?</text>
+</string>
+<string id="hb_hernandez_about_disguise_dialog_1">
+	<text>Vědí o našich oficiálně schválených jednotkách zkoumajících Zónu, ačkoliv nesmí vědět o naší tajné misi. Mnozí z nich by se nás stejně pokusili okrást, napadnout nebo alespoň udát kvůli "ideologickým rozdílům", a my musíme zajistit, aby náš zvláštní úkol zůstal utajen. Pokud tě spáchá někdo jiný než žoldák, musí být zlikvidován. Žádní svědci.</text>
+</string>
+<string id="hb_hernandez_about_disguise_dialog_2">
+	<text>Myslíš, že by nás místní nahlasili SSU?</text>
+</string>
+<string id="hb_hernandez_about_disguise_dialog_3">
+	<text>Přesně tak, i když jen nepřímo. Mezi obyčejnými stalkery, kteří pracují pro informační makléře, ekology, kteří posílají zprávy svým vládním dozorcům, a frakcemi, jako je Povinnost, které zvou Specnaz, jsou oči a uši všude. Pokud by jen jeden z nich odhalil, že UNISG prohledává oblasti, které jsou oficiálně zakázané, celá naše operace je ohrožena.</text>
+</string>
+<string id="hb_hernandez_about_disguise_dialog_4">
+	<text>A jak budu cestovat přes více obydlené oblasti? Hromadná vražda jistě také přitáhne nežádoucí pozornost?</text>
+</string>
+<string id="hb_hernandez_about_disguise_dialog_5">
+	<text>Mrtvost v Zóně je extrémně vysoká a mnoho stalkerů denně beze stopy zmizí. Nicméně máš pravdu. Pravděpodobně bude dobré pořídit si nějaký převlek, abys mohl při průchodu hlavními tábory stalkerů předstírat, že jsi místní. I když je to samo o sobě riskantní, je to rozhodně mnohem praktičtější.</text>
+</string>
+
+<string id="hb_hernandez_about_mercs_dialog_0">
+	<text>Jak víme, že jsou Dushman a jeho žoldáci důvěryhodní?</text>
+</string>
+<string id="hb_hernandez_about_mercs_dialog_1">
+	<text>Vztah OSN k žoldákům nebyl nikdy jednoznačný. Nejenže jsme jim však za informace zaplatili královské výkupné, ale byla jim slíbena ještě vyšší částka, pokud naše operace dopadne dobře. Účinně jsme si koupili jejich mlčení a v současné době je v jejich zájmu, abychom uspěli. Nicméně bych se nedivil, kdyby se proti nám obrátili, jakmile to posereme, takže si tam dejte pozor.</text>
+</string>
+
+<string id="hb_hernandez_about_operation_dialog_0">
+	<text>Jaký je náš celkový operační cíl?</text>
+</string>
+<string id="hb_hernandez_about_operation_dialog_1">
+	<text>Úkol UNISG je dvojí: za prvé, existují vědecké týmy, které v dobré víře provádějí obecný výzkum v Zóně. Za druhé jsou zde týmy speciálních sil, jejichž cílem je provést razii ve starých laboratořích a získat dokumentaci, která by mohla vnést více světla do skutečné podstaty Zóny. Máme podezření, že by ji mohl vytvořit člověk, a pokud se nám to podaří potvrdit, budeme moci ospravedlnit hlubší a otevřenější vyšetřování. My dva patříme do druhé skupiny.</text>
+</string>
+
+	
+<string id="hb_hernandez_about_operation_more_dialog_0">
+	<text>Co dalšího mi můžete říct o působení UNISG v Zóně?</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_1">
+	<text>Podle toho, co jsem slyšel, to není první mezinárodní operace v Zóně. Naše předchozí skupina, známá prostě jako "ISG", byla poměrně aktivní. Byli to výzkumníci životního prostředí sponzorovaní OSN, na rozdíl od ekologů, kteří působí na příkaz ukrajinské vlády. Krátce po druhé emisi v září 2011 se však museli kvůli obrovským ztrátám rozpustit.</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_2">
+	<text>A co se stalo po rozpuštění ISG?</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_3">
+	<text>Nebylo příliš mnoho přeživších, ale většina se rozhodla opustit Zónu. Někteří se však rozhodli přihlásit se k žoldákům nebo Ekologům, nebo prostě vyrazit na vlastní pěst jako Svobodní nebo svobodní stopy. Někteří členové statečně pokračovali ve svém původním poslání, ale jejich počet se stále zmenšoval. Zkrátka se zdálo, že oči a uši OSN v Zóně byly nadobro zavřeny.</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_4">
+	<text>Přesto jsme tady.</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_5">
+	<text>Jistě. Několik zastánců ISG se v průběhu let stále tiše obracelo na OSN s prosbami o podporu, ačkoli byly většinou ignorovány. To se nedávno změnilo poté, co bylo vidět masivní vysílání až z Londýna. Všichni přeživší bývalí ISG, které jsme dokázali identifikovat, se buď nechali zaměstnat jako špioni v rámci svých nových frakcí, nebo je OSN odvolala ze Zóny, aby vytvořili vědecké jádro UNISG. Moji chlapci a já jsme ale jen vojáci, stejně jako většina dnešních agentů UNISG, když o tom tak přemýšlím.</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_6">
+	<text>Zní to, že stará ISG se od té nové dost liší.</text>
+</string>
+<string id="hb_hernandez_about_operation_more_dialog_7">
+	<text>Stará se skládala převážně z vědců a fungovala s plným požehnáním a souhlasem Ukrajiny. S tímto povolením však přišel i dohled, zásahy a cenzura. Máme důvodné podezření, že plná pravda o Zóně byla našim starým výzkumníkům zatajována, a to k potenciální škodě celého světa! Tentokrát přicházíme s vlastními zdroji, s vlastními strážci. OSN nám poskytla veškeré prostředky, abychom tentokrát mohli odhalit celou pravdu sami.</text>
+</string>
+	
+<string id="hb_hernandez_ds_break_dialog_0">
+	<text>Žádné další otázky, veliteli. Jsem připraven vyrazit.</text>
+</string>
+<string id="hb_hernandez_ds_break_dialog_1">
+	<text>Dobrý chlapec. Až se setkáš s Dushmanem, nezapomeň mu říct kódovou frázi pro informace: "V tomto umírajícím světě si stále pamatuj modrý oceán."\nNa tvém PDA označím jeho polohu a způsob, jak se k němu dostat.</text>
+</string>
+<string id="hb_hernandez_ds_break_dialog_2">
+	<text>Je to text od Firelakea?</text>
+</string>
+<string id="hb_hernandez_ds_break_dialog_3">
+	<text>...ano. Teď jdi.</text>
+</string>
+<string id="hb_hernandez_ds_break_dialog_4">
+	<text>Ciao.</text>
+</string>
+
+<string id="hb_dushman_isg_intel_dialog_0">
+	<text>Major Hernandez mě poslal, abych od vás získal nějaké informace.</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_1">
+	<text>Pravda. Jaká je heslová fráze?</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_2">
+	<text>"Stále si pamatuju modrý oceán v tomto umírajícím světě".</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_3">
+	<text>Doufejme, že to nikdy nebude muset být jen vzpomínka. Zde jsou všechny informace, které si OSN vyžádala.</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_4">
+	<text>Děkuji vám.</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_5">
+	<text>Než odejdeš, vím, že plat za práci ve státní správě může být dost mizerný. Kdybys si chtěl někdy vydělat pořádný prachy a byl schopný být diskrétní, klidně se sem stav - my žoldáci máme vždycky spoustu práce, kterou je potřeba udělat. Velmi lukrativní, korporátně placená práce.</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_6">
+	<text>Na to budu pamatovat.</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_7">
+	<text>Dobře. Nechtěl bych, abyste se cítil jako v pasti svého současného zaměstnání. Ne každému je příjemné umírat kvůli kecům nějakého politika. Proč pracovat pro ně, když můžeš pracovat sám pro sebe?</text>
+</string>
+<string id="hb_dushman_isg_intel_dialog_8">
+	<text>Tato operace je větší než my všichni, Dushmane. Pokud se naše cesty znovu zkříží, doufejme, že to bude ze správných důvodů.</text>
+</string>
+	
+<string id="drx_isg_cit_killers_merc_trader_stalker_game_start_dialog_1_0">
+	<text>Takže, nabídl jsi mi práci. Mám zájem.</text>
+</string>
+<string id="drx_isg_cit_killers_merc_trader_stalker_game_start_dialog_1_1">
+	<text>Rád to slyším. Zaměstnavatel chce nějakou pořádnou práci. Ani já ti nedokážu přesně říct, kdo, co nebo kde to je. Jen to, že mají peníze, a to hodně. Bez ohledu na to nás tento zaměstnavatel požádal, abychom vykonali službu pro seznam "zajemců". Tvé PDA bude podle potřeby aktualizován o jejich údaje. Zůstaň v klidu a hlídej si tam záda. Zóna je možná nesmírně lukrativní, ale je to také peklo a nic z toho, co jsem zatím viděl, mě nepřesvědčilo o opaku.</text>
+</string>
+
+<string id="hb_hernandez_jup_start_dialog_0">
+	<text>Aha, ty nejsi mrtvý. Dobře.</text>
+</string>
+
+<string id="hb_hernandez_jup_dushman_intel_0">
+	<text>Ah, nejsi mrtvý. Dobře.</text>
+</string>
+<string id="hb_hernandez_jup_dushman_intel_1">
+	<text>Taky mám intel.</text>
+</string>
+<string id="hb_hernandez_jup_dushman_intel_2">
+	<text>Ještě lepší. Jak vidíš, našli jsme tu dobrý úkryt, ale stále je příliš exponovaný. Rádi bychom prozkoumali katakomby dole a zjistili, jestli jsou obyvatelné, ale poslední oddíl, který jsme vyslali, ztratil kontakt a od té doby se nevrátil. Je to moje chyba, že jsem se unáhlil. Než pošleme někoho dalšího, budeme muset prohledat továrnu nahoru na kopci a najít něco, co by nám mohlo napovědět o uspořádání katakomb dole.</text>
+</string>
+
+<string id="hb_hernandez_about_jup_factory_dialog_0">
+	<text>Proč si myslíš, že v té továrně nad námi najdeme něco užitečného?"</text>
+</string>
+<string id="hb_hernandez_about_jup_factory_dialog_1">
+	<text>Jak vidíš, máme teď s sebou další jednotku. Když jsme je našli, hlásili, že zkoumali Jupiterovu továrnu a našli zapečetěný kufr plný dokumentů, půdorysů, plánů budov a podobně.\Museli se však rychle stáhnout, aby je nezpozorovala nečekaná vojenská četa. Kufr tam zůstal a je třeba ho získat zpět.</text>
+</string>
+
+
+
+<string id="hb_hernandez_about_jup_factory_enter_dialog_0">
+	<text>Jak se přiblížíme k továrně?</text>
+</string>
+<string id="hb_hernandez_about_jup_factory_enter_dialog_1">
+	<text>Pozorně. Podle zpráv se tam nahoru může plížit četa Ukrajinských vojáků. Je třeba je co nejrychleji a nejtichší zlikvidovat.</text>
+</string>
+
+
+
+<string id="hb_hernandez_search_jup_factory_dialog_0">
+	<text>Jsem připraven pomoci prohledat továrnu.</text>
+</string>
+<string id="hb_hernandez_search_jup_factory_dialog_1">
+	<text>Dobrý chlapec. Vezmi si pod své velení oddíl. Získejte dokumenty a zlikvidujte všechny svědky, kteří se náhodou budou nacházet v budově, když dorazíš. Mezitím projdu informace, které jsi přinesl od Dushmana. Rozchod.</text>
+</string>
+<string id="hb_hernandez_search_jup_factory_dialog_2">
+	<text>Ano, pane.</text>
+</string>
+
+
+
+
+<string id="hb_hernandez_found_jupiter_documents_dialog_0">
+	<text>Tady je kufr. Všichni přítomní svědci byli vyraženi.</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_1">
+	<text>Dobře, podívejme se na to... hmm - ah! Tady to je. "Pripyatský podchod", místním známý také jako "Jupiterské podzemí". Uspořádání se zdá být docela jednoduché. Však také podle Dushmanových dokumentů vypadá přesně jako prostředí, které by se mutantům líbilo. Temné, vlhké, místy trochu stísněné. Hm. Teď už víme, proč se odtamtud naše poslední jednotka nevrátila. Přesto rozvržení také naznačuje, že se tam dole také nacházejí nějaké velké jeskynní prostory... A podle seznamu rekvizic mezi továrnou a podchodem jsou tam dole nějaké dokumenty, které měly být evakuovány v roce 1986 a znovu v roce 2006... ale v obou případech se ven nedostaly. Zajímavé, že ano?</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_2">
+	<text>Jaký je plán, pane? </text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_3">
+	<text>Společně prohledáme místo, najdeme dokumenty, které tu zůstaly, a pak se usadíme v jedné z prostornějších částí. Nedokážu si představit, že by nás tam dole navštívilo mnoho lidí, takže to pro nás bude ideální. Jste připraveni jít dolů? </text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_4">
+	<text>Dobře, jdeme na to.</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_41">
+	<text>Dobrý chlapec. Půjdeme všichni společně. Hlídejte si navzájem záda a ujistěte se, že vždycky víte, kde je váš kamarád. Někteří z vás už se možná s mutanty setkali, ale slyšel jsem, že ti podzemní jsou úplně jiný druh odpornosti. Takže se připoutejte, protřepejte hlavy a zůstaňte ve střehu. Můžete si vzít rozchod.</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_42">
+	<text>Ano, pane.</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_5">
+	<text>Počkejte, potřebuji chvilku, abych popadl dech.</text>
+</string>
+<string id="hb_hernandez_found_jupiter_documents_dialog_51">
+	<text>Dobře, ale čím déle zůstaneme nahoru, tím je pravděpodobnější, že nás objeví.</text>
+</string>
+
+
+
+
+<string id="hb_hernandez_start_jup_u_breakthrough_dialog_0">
+	<text>Jsem připraven zajistit podzemí.</text>
+</string>
+<string id="hb_hernandez_start_jup_u_breakthrough_dialog_1">
+	<text>Dobrý chlapec. Půjdeme všichni společně. Hlídejte si navzájem záda a ujistěte se, že vždycky víte, kde je váš kámoš. Někteří z vás už se možná s mutanty setkali, ale slyšel jsem, že ti podzemní jsou úplně jiný druh odpornosti. Takže se připoutejte, protřepejte hlavy a zůstaňte ve střehu. Můžete si vzít rozchod.</text>
+</string>
+<string id="hb_hernandez_start_jup_u_breakthrough_dialog_2">
+		<text>Ano, pane.</text>
+	</string>
+	
+	
+	
+<string id="hb_hernandez_found_jup_u_documents_dialog_0">
+	<text>Pane. Toto musí být dokumenty uvedené v manifestu.</text>
+</string>
+<string id="hb_hernandez_found_jup_u_documents_dialog_1">
+	<text>To... to je neuvěřitelné. Už jen to by mohlo OSN pomoci v jejím úsilí o eskalaci otevřeného a veřejného vyšetřování Zóny vyloučení. Ale musíme toho najít víc. Důkazy musí být nepřekonatelné. Spočím se se zbylými putujícími jednotkami UNISG a dám jim vědět, že jsme pro ně vytvořili silnou centrální základnu. Není nic lepšího než být přímo pod Pripyatí, že? </text>
+</string>
+<string id="hb_hernandez_found_jup_u_documents_dialog_2">
+	<text>Hádám, že už jsme skoro připraveni vystoupit ze stínu? </text>
+</string>
+<string id="hb_hernandez_found_jup_u_documents_dialog_3">
+	<text>Ještě ne, ale brzy. Ještě je třeba udělat další přípravy. Mohl jsem se zmínit, že součástí důvodu, proč jsme tady, je nalezení a prohledání starých laboratoří roztroušených po celé Zóně. Díky informacím, které jsi přinesl od Dushmana, je to nyní možné. V jeho poznámkách je zmínka o tom, že mnohé z těchto laboratoří už byly prohledány. Nicméně dokumenty, které již byly nalezeny, mezitím záhadně zmizely; pravděpodobně SSU ucpává jejich úniky. V poznámkách je také zmínka o tom, že jen málokdo, kdo do laboratoří vstoupí, z nich nekdy vyjde, a že - jako taková - je vysoké pravděpodobné, že stále obsahují spoustu důkazů, které hledáme. Vzhledem k tomu, co jsme našli jen v tomto podchodu, to zní jako sázka, kterou bychom rozhodně měli přijmout.</text>
+</string>
+	
+	
+	
+<string id="hb_hernandez_about_evidence_dialog_0">
+	<text>Jaký druh důkazu hledáme?</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_1">
+	<text>Doslova jakýkoli dokument, který v těchto laboratořích najdete, seberte. Nenechte kámen na kamenu. Je možné, že mnoho jevů v Zóně vzniklo díky výzkumu, který v těchto laboratořích probíhal. Jinými slovy, je možné, že tato podivná nehoda ekologické katastrofy je ve skutečnosti výsledkem záměrně zkonstruovaných, Ženevskou konvenci porušujících zbraní hromadného ničení. Potřebujeme cokoli, co nám to pomůže dokázat.
+	      \V každém případě chceme z této pekelné díry odejít s ohromným množstvím důkazu, že obsah Zóny může představovat velmi reálné mezinárodní bezpečnostní riziko. Riziko příliš velké, na to aby ho zvládl nějaký východoevropský zapadák.
+	      \nTím přitlačíme na Ukrajinu, aby nechala OSN volnou ruku nad Černobylem a jeho tajemstvími... možná dokonce přesune národní monopol na obchod s artefakty do nových rukou...</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_2">
+	<text>To zní dost špinavě.</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_21">
+	<text>Ať už je to špinavé nebo ne, je to naše práce a my ji dotáhneme do konce.</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_3">
+	<text>Souhlasím. Zóna by mohla ohrozit celý svět. Její omezení by nemělo být plně pod kontrolou pouze jednoho státu.</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_31">
+	<text>Jsem rád, že souhlasíte.</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_4">
+	<text>O co si myslíte, že OSN ve skutečnosti jde: o ochranu veřejnosti, nebo o usurpování obchodu s artefakty?</text>
+</string>
+<string id="hb_hernandez_about_evidence_dialog_41">
+	<text>Nepřísluší mi to komentovat. Ani vám to nepřísluší.</text>
+</string>
+	
+<string id="hb_hernandez_search_labs_dialog_0">
+	<text>Koho máme poslat, aby prozkoumal tyto laboratoře?</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_1">
+	<text>Myslím, že ty budeš náš nejlepší kandidát. Prokázal jsi, že jsi schopný nejen v boji, ale také v jednání s místními obyvateli a přežití při plnění samostatných úkolů. To vše bez toho, abys zalarmoval SSU. Než však odejdeš, vezmi si tohle.</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_2">
+	<text>Co je tohle?</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_3">
+	<text>Jednomu z našich špehů z řad Ekologů se podařilo poslat nám schéma... ehm... "zařízení na psychickou ochranu".</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_4">
+	<text>Cože, jako z ovládání mysli?</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_5">
+	<text>Přesně. Přísahám, že čím víc se o tomhle místě dozvíš, tím víc to tu vypadá na hovno. Každopádně tahle helma, kterou jsme postavili, by tě měla ochránit před jakýmkoli zařízením na "ovládání mysli", které je v laboratořích náhodou stále aktivní.</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_6">
+	<text>Svátý hovno. Tohle se mění v hororovou záležitost.</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_7">
+	<text>Budeš v pořádku. Někteří naši muži jsem vybavil podobnými zařízeními, takže si je můžeš vzít s sebou, jestli chceš. Každopádně si pamatuj: tvým úkolem je získat z laboratoří všechny přísně tajné dokumenty a nenechat po sobě žádné svědky. Dovolte mi, abych ti na tvém PDA označil místa. Tady.</text>
+</string>
+<string id="hb_hernandez_search_labs_dialog_8">
+	<text>Nezklamu vás, pane.</text>
+</string>
+	
+<string id="hb_hernandez_found_labs_docs_dialog_0">
+	<text>Ano, váš vrchní informační kurýr se opět vrátil. Podívejte se na ně.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_1">
+	<text>Působivé... Dobrá práce! Zasloužíš si ode mě pochvalu. OSN bude mít radost, až zjistí, co jsme se nyní dozvěděli.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_2">
+	<text>Stalo se něco zajímavého, zatímco jsem byl pryč?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_3">
+	<text>Z vlastních zpráv na JE a mimo ni se vrátilo i několik dalších oddílů ISG. Myslím, že mezi jejich a vaším úsilím máme docela dobrou představu o tom, co se v posledních desetiletích dělo v zákulisí Zóny. Stále však zůstává několik nevysvětlených záhad. Pokud tvůrci Zóny mezitím zmizeli nebo zahynuli, jak je možné, že jen posílila? Stejně tak, jak je možné, že se fanatickému kultu známému jako "Monolit" podařilo zůstat tak silný a dobře zásobený po všechny ty roky?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_4">
+	<text>Víte, kde bychom mohli najít odpovědi na tyto záhady?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_5">
+	<text>Ano. Pamatuješ si na tu vojenskou skupinu, se kterou jsme se setkali v továrně Jupiter? Ukázalo se, že tam nebyli náhodou. Snažili se dosáhnout totéž, co my, jenže raději dokumenty spálili, než aby se o nich dozvěděl svět.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_6">
+	<text>A objevili jste umístění dalšího oddílu?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_7">
+	<text>Ano. A nejen to, moji špioni také vydedukovali jejich cíl: tento vojenský oddíl pronásleduje jejich bývalého hlavního vědeckého konzultanta.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_8">
+	<text>To zní trochu divně. Proč by to dělali?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_9">
+	<text>Jejich hlavní konzultant si svou pozici nevysloužil doktorátem, ale spíše obrovskými přímými zkušenostmi s fenomény Zóny. Podle všeho odhalil mnoho jejích tajemství, včetně podrobností o jejím původu, které v našich zápiscích dosud chybí. Pokud je polovina historek o jeho činech pravdivá, těžko mě to překvapí. Každopádně se svou oficiální funkcí zjevně nebyl spokojen, vzhledem k tomu, že sem utekl. Nedokážu si představit, jaká práce přiměje člověka, aby si v takové říře vzal dovolenou.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_10">
+	<text>A kdo je tento muž?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_11">
+	<text>Říkají mu... Střelec.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_12">
+	<text>Chcete, abych vám ho vyzvedl?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_13">
+	<text>Ano, je to poslední dílek skládačky. Zachraň ho před vojenskými jednotkami, které ho pronásledují na předměstí Pripjati. Přesvědč ho, aby nám pomohl. Pokud bude svědčit ve prospěch OSN proti postupu ukrajinské vlády v Zóně, bude to pro něj řízení mnohem snazší.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_14">
+	<text>A když odmítne pomoci?</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_15">
+	<text>Tak z něj vytahej jeho znalosti, jakýmkoli způsobem, a vrať se s nimi. Mohu ti přidělit oddíl, který ti poskytne pomoc, pokud si myslíš, že to tak půjde. Podle toho, co vím, může být ve skutečnosti nebezpečnější než vojáci, kteří ho pronásledují.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_16">
+	<text>Nehodlám nic riskovat. Pane, dejte prosím vědět jednotce, že se mnou brzy odejde. Najdeme Střelce, postaráme se o jeho stalkery a zkrotime ho dřív, než si uvědomí, co se děje.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_17">
+	<text>Půjdu sám. Jsem si jistý, že nám Střelec pomůže, jakmile mu pomohu já, a nechci riskovat, že ho zasáhne přátelská palba.</text>
+</string>
+<string id="hb_hernandez_found_labs_docs_dialog_18">
+	<text>Velmi dobře. Hodně štěstí.</text>
+</string>
+	
+<string id="hb_hernandez_strelok_pendrive_dialog_0">
+	<text>O Střelci, pane...</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_1">
+	<text>Vidím ten tvůj pohled. Zabil jsi ho. Co se stalo? </text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_1_1">
+	<text>Odmítl se vzdát. Neměl moc na výběr. Našel jsem však u něj tento flashdisk. Možná obsahuje něco cenného.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_2">
+	<text>Právě jsi přivedl jednoho z nejznalejších, nejprohnanějších a nejnebezpečnějších mužů v CELÉ ZÓNĚ do našeho polního velitelství, aniz bys ho odzbrojil. Vysvětli to.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_2_1">
+	<text>Byl to nejlepší způsob, jak ho dostat na lopatky, nemluvě o tom, jak skrýt důkazy o jeho průchodu. Možná by ses měl podívat, co měl u sebe.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_3">
+	<text>Začínal jsem si myslet, že tě zajal nepřítel. Co ti trvalo tak dlouho? </text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_3_1">
+	<text>Souhlasil jsem, že Střelcovi pomůžu. Na oplátku mi dal tento flashdisk. Obsahuje spoustu informací o historii Zóny... a jejích záhadách.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_4">
+	<text>Hm... Podívejme se...\nNevyhnutelné... To je víc, než jsme mohli doufat...</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_5">
+	<text>Co tam vidíte, pane? </text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_6">
+	<text>Přísně tajné dokumenty, informace o laboratořích, složitých zařízeních, osobní zkušenosti a postřehy o CNPP, splnitelná přání... Střelek to všechno nejen prošel, ale své zážitky také dobře zdokumentoval. Tomu říkám splněná mise. Skvělá práce, vojáku!</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_7">
+	<text>Uspěli tedy? Co se stane teď?</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_8">
+	<text>Je čas opustit toto peklo a vrátit se domů. OSN bude s našimi výsledky spokojena. Dám všem velitelům oddílu UNISG vědět, že je čas, aby se prozatím stáhli ze Zóny. Stejně jako předtím, malé skupiny.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_9">
+	<text>Pochopeno.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_10">
+	<text>Některé naše vědecké týmy zůstanou, aby prozkoumaly artefakty a anomální pole. Někteří naši vojáci se také rozhodli přihlásit k žoldákům, takže mohou zůstat déle.</text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_11">
+	<text>Je to dovoleno? </text>
+</string>
+<string id="hb_hernandez_strelok_pendrive_dialog_12">
+	<text>Dal jsem jim povolení, ano. Projevili touhu... začlenit se... do jedinečné značky života Zóny. Mohu jim důvěřovat, že si zachovají svá tajemství, a kontakty, které navážou, se jim budou později hodit.\nNo, máme, pro co jsme přišli. Vaše úloha v této operaci je splněna. Pokud byste se rozhodli zůstat v Zóně, máte mé požehnání, i když by to možná znamenalo, že přijdete o některé šťavnaté příležitosti k povýšení. Rozmyslete si to.\nRozchod.</text>
+</string>
+	
+<string id="hb_hernandez_guide_dialog_0">
+	<text>Uh... ztratil jsem se. Musím odsud odejít.</text>
+</string>
+<string id="hb_hernandez_guide_dialog_1">
+	<text>Hm. Požádám někoho z mého oddílu, aby tě vyzvedl. Kterým směrem chceš jít?</text>
+</string>
+<string id="hb_hernandez_guide_dialog_2">
+	<text>Zpět do našeho předchozího úkrytu pod Jupiterovou továrnou.</text>
+</string>
+<string id="hb_hernandez_guide_dialog_3">
+	<text>Na předměstí Pripjati.</text>
+</string>
+<string id="hb_hernandez_guide_dialog_4">
+	<text>Nevadí, půjdu sám.</text>
+</string>
+<string id="hb_hernandez_guide_dialog_5">
+	<text>Velmi dobře.</text>
+</string>
+<string id="hb_hernandez_guide_dialog_6">
+	<text>Velmi dobře.</text>
+</string>
+	
+<string id="hb_maus_start_0">
+	<text>...</text>
+</string>
+<string id="hb_maus_start_1">
+	<text>Hej, neznám tě?</text>
+</string>
+<string id="hb_maus_start_2">
+	<text>Jo, připadáš mi trochu povědomý... počkej. Jo, já tě taky znám! To snad ne! Kámo, jak to, že už jsi kapitánem?</text>
+</string>
+<string id="hb_maus_start_3">
+	<text>Na tuhle operaci nemám oficiální hodnost, jen odpovídám přímo majorovi.</text>
+</string>
+<string id="hb_maus_start_4">
+	<text>Doufám, že s tebou má tedy opravdu zvláštní plány. Kdybys byl ještě větší sněhová vločka, roztál bys.</text>
+</string>
+<string id="hb_maus_start_5">
+	<text>A co ty? Teď jsi poručík.</text>
+</string>
+<string id="hb_maus_start_6">
+	<text>Tak to teda jo! A já jsem na to taky hrdý. Nemůžu říct, že jsem si to takhle představoval, když jsem se chtěl stát inženýrem, ale řekl bych, že to dopadlo zatraceně dobře!</text>
+</string>
+<string id="hb_maus_start_7">
+	<text>Na člověka, který uvízl v osvětlené pekelné díře, jsi nesmírně šťastný.</text>
+</string>
+<string id="hb_maus_start_8">
+	<text>Jedna pekelná díra je stejně dobrá jako každá jiná, že? Alespoň že zdejší opice s pistolí jsou v polovině případů tak opilé, že nedokážou střílet rovně. Hehe...</text>
+</string>
+<string id="hb_maus_start_9">
+	<text>Když už jsme u té přímé střelby...</text>
+</string>
+<string id="hb_maus_start_10">
+	<text>Aha, správně. Mělo mě napadnout, že tu nejsi kvůli mému šviháckému šarmu a hezkému vzhledu. Jestli se ti trochu zaprášilo, nebo dokonce jestli to JE jenom prach, dej mi ho a já ho rozjedu hladčeji než olejovou skvrnu na ledě.</text>
+</string>
+
+<string id="hb_maus_leave_0">
+	<text>Co plánuješ dělat teď, když mise skončila?</text>
+</string>
+<string id="hb_maus_leave_1">
+	<text>Odejít s ostatními? Cože, snad neuvážuješ o tom, že bys odešel domů?</text>
+</string>
+<string id="hb_maus_leave_2">
+	<text>Ne. Mnohem raději bych se vrátil domů a znovu viděl svoji rodinu. Bylo by to příjemné.</text>
+</string>
+<string id="hb_maus_leave_3">
+	<text>Jistěže ne. Odjíždím se zbytkem UNISG. Možná se někdy uvidíme.</text>
+</string>
+<string id="hb_maus_leave_4">
+	<text>Ne tak docela, ale cítím, že musím zůstat v Zóně. Bez ohledu na to, co si myslí major, si myslím, že moje práce tady ještě neskončila.</text>
+</string>
+<string id="hb_maus_leave_5">
+	<text>Ted, když operace skončila, se pravděpodobně vydam na vlastní pěst. Možná si mezi žoldáky udělám jméno. Musím říct, že se na to těším.</text>
+</string>
+<string id="hb_maus_leave_6">
+	<text>Aha, tak dobře. Cokoli tě napadne.</text>
+</string>
+<string id="hb_maus_leave_7">
+	<text>Doufám, že to zní jako plán. Podívej, kdyby ses dostal do problému, nikdy jsem o tom nevěděl, jasný?</text>
+</string>
+	
+<string id="hb_maus_guide_0">
+	<text>Hej, Mausi. Potřebuju někoho, kdo mě dovede do nového úkrytu...</text>
+</string>
+<string id="hb_maus_guide_1">
+	<text>Ti Tarbíci ti tam dole přivodili noční můry, co? Neboj se, kámo. Spojuju se s jedním z chlapů, aby tě vyzvedl.</text>
+</string>
+<string id="hb_maus_guide_2">
+	<text>...</text>
+</string>
+<string id="hb_strelok_start_dialog_0">
+	<text>To bylo o fous. Kdo jsi ty?</text>
+</string>
+<string id="hb_strelok_start_dialog_1">
+	<text>Zastupuji Spojené národy. Streloku, potřebujeme, aby ses dostavil do naší vazby a svědčil pro nás proti Ukrajinské vládě.</text>
+</string>
+<string id="hb_strelok_start_dialog_2">
+	<text>Zóna má opravdu zvrácený smysl pro humor. Zachráněn před týmem vládních hrdlořezů jiným vládním hrdlořezem. To mě sotva nadchne.</text>
+</string>
+<string id="hb_strelok_start_dialog_3">
+	<text>Dokázal jsem, že jsem pro ně víc než rovnocenný soupeř. Vzdej se, nebo jinak.</text>
+</string>
+<string id="hb_strelok_start_dialog_31">
+	<text>Odmítám.</text>
+</string>
+<string id="hb_strelok_start_dialog_4">
+	<text>Není třeba dalších úmrtí. Přišel jsem sám, abych zajistil tvou bezpečnost a dozvěděl se, co víš. Mohlo by to světu pomoci zahájit seriózní vyšetřování Zóny. A bylo by to pod mezinárodní správou: už žádné vládní lži a tajemství o tomto místě.</text>
+</string>
+<string id="hb_strelok_start_dialog_5">
+	<text>Proč bych měl věřit jedinému tvému slovu?</text>
+</string>
+<string id="hb_strelok_start_dialog_6">
+	<text>Protože by to znamenalo, že tě Ukrajinská armáda přestane do konce života jakkoli pronásledovat nebo obtěžovat.</text>
+</string>
+
+<string id="hb_strelok_start_dialog_7">
+	<text>To zní dobře. Ale nemůžu si taky nechat porad dýchat na krk od OSN, zatímco budu sedět v nějaké pozlacené kleci. Když mě odtud dostaneš, můžu se s tebou podělit o některá tajemství Zóny.</text>
+</string>
+<string id="hb_strelok_start_dialog_8">
+	<text>Jo to je fér. Kam chceš jít?</text>
+</string>
+<string id="hb_strelok_start_dialog_9">
+	<text>Rudý les. To místo je zóna smrti, ale já se tam vyznám. To mě odradí od dalšího armádního pronásledování.</text>
+</string>
+<string id="hb_strelok_start_dialog_10">
+	<text>Dobře, tvé znalosti o zóně výměnou za tvé bezpečí. Pojďme.</text>
+</string>
+	
+<string id="hb_strelok_escorted_dialog_0">
+	<text>Tady to je, Střelče. Teď jsi v bezpečí.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_1">
+	<text>Jsi muž svého slova. Děkuji ti.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_2">
+	<text>A teď k tvému slovu, Střelče.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_3">
+	<text>Jistě. Tady je můj osobní flashdisk. Obsahuje dokumentaci všech mých zážitků a myšlenek týkajících se Zóny spolu s kopiemi mnoha zajímavých dokumentů a dalších informací, které jsem během svých cest našel. OSN v něm najde všechny potřebné odpovědi, ale vězte, že Zónu není a nikdy nebude snadné pochopit. Jsme jako jeskynní lidé, kteří seškrábli dva kameny o sebe a náhodou zapálili oheň. Nejsme si jisti, co se stalo a na co se díváme. Mezitím se oheň šíří a stravuje všechno kolem...</text>
+</string>
+<string id="hb_strelok_escorted_dialog_4">
+	<text>Děkuji ti. Tohle je možná víc, než jsem mohl doufat. Vrátím se ke svému veliteli. A co ty?</text>
+</string>
+<string id="hb_strelok_escorted_dialog_5">
+	<text>Mám tu pár starých přátel, které musím pohřbít, a jednoho, kterého musím navštívit. Po nějaké době si člověk opravdu začne uvědomovat, jak vzácnou komoditou je čas a jak důležité je pamatovat si již strávené chvíle...</text>
+</string>
+<string id="hb_strelok_escorted_dialog_6">
+	<text>Sbohem, Střelče.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_21">
+	<text>Do prdele! Po tomhle všem si nejsem jistý, jestli mohu tuhle informaci přinést zpátky svému veliteli.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_31">
+	<text>Zajímavé. Co si myslíš?</text>
+</string>
+<string id="hb_strelok_escorted_dialog_41">
+	<text>Možná. Vím, co jsem říkal předtím, ale čím víc o tom přemýšlím, tím méně věřím, že OSN tyto informace využije k dobrému. To, co jsi mi sdělil, by mohlo změnit celý svět. Nemělo by to být přenecháno v rukou lidí, kteří už mají veškerou moc. Musím se tu zdržet a dozvědět se o Zóně víc sám. Musím se dozvědět víc, než si budu jistý, jaká je správná volba. A to nemohu udělat, pokud se nestanu svým vlastním stalkerem.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_51">
+	<text>Tomu pocitu rozumím víc, než si vůbec dokážeš představit.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_61">
+	<text>Mohli by mě nakonec chytit a postavit před válečný soud za dezerci. Ironii osudu by to bylo kvůli dalším dokumentům, které jsem našel dříve. Ty by mohly UNISG někdy umožnit, aby do Zóny vtrhla v plné síle.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_71">
+	<text>Jsem také velmi skeptický ke schopnosti jakékoliv vlády zvládnout tuto situaci. Ale to nebude problém, pokud dokumenty, které jste již shromáždili, neopustí Zónu. Vlastně bych mohl využít svých kontaktů mezi slídily a dát tip armádě, aby mohla zpřísnit ostrahu a zabránit tvým druhům v úniku z perimetru. Dá se to zvládnout.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_81">
+	<text>Díky, ale nechci, aby se mým... bývalým spolubojovníkům něco stalo.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_91">
+	<text>Možná existuje i jiný způsob. Uvidíme. Mezitím, pokud to opravdu hodláš dotáhnout do konce, doporučuji navštívit Rostok nebo Zaton. Tam se vždycky najde nějaká práce pro volného slídila a místo, kde se dá vmísit nebo schovat. Kdo ví, třeba si tam dokonce najdeš nějaké přátele.Každopádně nám dochází čas. Pojďme.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_101">
+	<text>Uvidím tě ještě někdy?"</text>
+</string>
+<string id="hb_strelok_escorted_dialog_111">
+	<text>Předpokládám, že ne. Musím pohřbít pár starých přátel, pozdravit ty, kteří ještě žijí, a pak si nejspíš najít nějaké místo,kam zmizet. Myslím, že jsem našel své odpovědi. Doufám, že ty najdeš ty své. Můj flashdisk si můžeš nechat. Už ho nebudu potřebovat.</text>
+</string>
+<string id="hb_strelok_escorted_dialog_121">
+	<text>Sbohem, Střelče. Možná se s tebou jednou setkám na pikniku u cesty.</text>
+</string>
+
+</string_table>

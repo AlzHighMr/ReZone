@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="st_okr_ship_spot_text">
+		<text>%c[d_green] ship. \n %c[ui_gray_2] Method of fast movement</text>
+	</string>
+	<string id="st_okr_taxi_spot_text">
+		<text>%c[d_green] vehicles. \n %c[ui_gray_2] Method of fast movement</text>
+	</string>	
+
+	<string id="st_scf_pb_use_tutorial_txt">
+		<text>%c[d_green] Turn on the decoder ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="ui_st_sr_changer_cld_closed">
+		<text>Now it's not the best idea to go back!</text>
+	</string>
+
+	<string id="st_scf_d3_box_code">
+		<text>Mercenaries container in the basement</text>
+	</string>
+
+	<string id="scf_d3_no_use_code_txt">
+		<text>%c[d_green] First you need to deal with the artifact that presses my head!</text>
+	</string>
+
+	<string id="st_mod_use_ph_systemarmor">
+		<text>%c[d_green] Disable the defense system ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_cd_p50_switcher_use_txt">
+		<text>%c[d_green] block the supply of energy ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_cd_collaider_warn_timer">
+		<text>Before the launch of the collider</text>
+	</string>
+	<string id="st_cd_collaider_system_armor_timer">
+		<text>To the self -esteem complex</text>
+	</string>
+
+	<string id="scf_d3_door_use_cardkey_txt">
+		<text>%c[d_green] go to the underground complex ($$ACTION_USE$$)</text>
+	</string>
+	<string id="scf_d3_door_no_cardkey_txt">
+		<text>%c[d_green] Access is prohibited. \n %c[ui_gray_2] Key card is required to activate</text>
+	</string>
+
+	<string id="st_scf_d1_use_tutorial_txt">
+		<text>%c[d_green] Examine the artifact ($$ACTION_USE$$)</text>
+	</string>
+	<string id="scf_v1_sirena_use_txt">
+		<text>%c[d_green] Turn off the siren ($$ACTION_USE$$)</text>
+	</string>
+	<string id="scf_v1_shakal_box_open_txt">
+		<text>%c[d_green] Examine the Shakal safe ($$ACTION_USE$$)</text>
+	</string>
+	<string id="scf_v1_shakal_box_txt">
+		<text>%c[d_green] A key is needed. \n %c[ui_gray_2] safe, locked with an amazing sight.</text>
+	</string>
+	<string id="st_scf_n16_door_locked">
+		<text>%c[d_green] locked. \n %c[ui_gray_2] The door is not native and stands in this place recently.</text>
+	</string>
+	<string id="st_scf_quest_door_spot_text">
+		<text>Closed door to the cellar.</text>
+	</string>
+	<string id="st_scf_quest_house_spot_text">
+		<text>It is worth examining this house.</text>
+	</string>	
+	<string id="st_mod_no_use_ph_scf_trans">
+		<text>%c[d_green] We need a radio signal source to interact with the device</text>
+	</string>
+	<string id="st_mod_da_use_ph_scf_trans">
+		<text>%c[d_green] Launch the device ($$ACTION_USE$$) \n %c[d_green] using memory module</text>
+	</string>
+
+	<string id="st_flst_cave_timer">
+		<text>Protect the associate professor</text>
+	</string>
+
+	<string id="st_mod_use_ph_babki_use">
+		<text>%c[d_green] Choose ($$ACTION_USE$$) \n %C[255,255,2555] You can get some amount of money</text>
+	</string>
+
+	<string id="st_coll_canalization_go_dwn">
+		<text>%c[d_green] Move through the collector ($$ACTION_USE$$)</text>
+	</string>	
+
+	<string id="st_mod_chu_naiden_perehod_v_katakombs_txt">
+		<text>A secret descent was found in the "catacombs"</text>
+	</string>
+
+	<string id="st_chu_lc_door_go_dwn">
+		<text>%c[d_green] go down to the catacombs ($$ACTION_USE$$)</text>
+	</string>	
+
+	<string id="st_mod_chu_k5_zakop_use_box">
+	<text>%c[d_green] SOW CHANGE ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_mod_chu_k5_zakop_qte">
+	<text>%c[d_green] DISCULATION ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_mod_chu_a4_lestnica_tutorial">
+	<text>%c[d_green] climb up ($$ACTION_USE$$)</text>
+	</string>
+		<string id="st_mod_chu_a4_pribor_tutorial">
+	<text>%c[d_green] deactivate the psi radiation device ($ $ affection_use $ $)</text>
+	</string>
+
+	<string id="st_mod_chu_zapiska_prorok_use">
+		<text>%c[d_green] Take a note ($$ACTION_USE$$) \n %C[255,255,255] Judging by the same, these are records of sectarians.</text>
+	</string>
+
+	<string id="st_mod_transmut_search_ecologs_group">
+		<text>%c[d_green] Perhaps a group of scientists somewhere here</text>
+	</string>
+
+	<string id="st_mod_okr_e62_help_ninkita_tutorial">
+	<text>%c[d_green] Help Nikita to get up ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_mod_okr_e62_c1_use_crash_door_qte">
+	<text>%c[d_green] Try to knock out the door ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_mod_transmut_chu_k5_zakops">
+		<text>Inspect the burial</text>
+	</string>
+
+	<string id="st_mod_ui_start">
+		<text>Start</text>
+	</string>
+	<string id="st_mod_ui_stop">
+		<text>Stop</text>
+	</string>
+	<string id="st_mod_ui_x">
+		<text>[x]</text>
+	</string>
+	<string id="st_qte_title">
+		<text>Press the key - W</text>
+	</string>
+
+	<string id="nii_e55_no_use_doc_txt">
+		<text>%c[d_green] You should not see you</text>
+	</string>
+	<string id="nii_e55_da_use_doc_txt">
+	<text>%c[d_green] pick up documents ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okr_util_box_open_txt">
+	<text>%c[d_green] look into a barrel ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okr_av_box_closed_txt">
+		<text>%c[d_green] It is necessary to capture the avanthopost</text>
+	</string>
+	<string id="okr_av_box_open_txt">
+	<text>%c[d_green] Examine the box ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okr2_oblast_fish_boloto_st">
+		<text>The place where, according to the stalker, “lynx” lives a rare mutant, similar to fish.</text>
+	</string>
+
+	<string id="st_ui_pda_okr2_boys_eksxped">
+		<text>%c[d_green] Expedition \n %c[d_green] Perhaps this character will want to join the expedition of Athena</text>
+	</string>
+
+	<string id="mod_tip_radio_mtrs_use">
+		<text>%c[d_green] Turn on the radio station ($$ACTION_USE$$)</text>
+	</string>
+	<string id="mod_tip_radio_mtrs_no_use">
+		<text>%c[d_green] only interference is heard</text>
+	</string>
+	<string id="mod_tip_radio_mtrs_horrors_use">
+		<text>%c[d_green] You can hear terrible cries, requests for help</text>
+	</string>
+
+	<string id="st_mod_biografi_prorok_doc_use">
+		<text>%c[d_green] Take a document ($$ACTION_USE$$) \n %C[255,255,255] Judging by the cover, this is biographical data</text>
+	</string>
+	<string id="st_okr_a5_notebook_yes_flesh_1">
+		<text>%c[d_green] see what is on the flash drive ($$ACTION_USE$$) \n %C[255,255,255] flash drive from the safe</text>
+	</string>
+	<string id="st_okr_a5_notebook_yes_flesh_2">
+		<text>%c[d_green] see what is on the flash drive ($$ACTION_USE$$) \n %C[255,255,255] corpse flash drive</text>
+	</string>
+	<string id="st_okr_a5_notebook_yes_flesh_3">
+		<text>%c[d_green] View what is on the flash drive ($$ACTION_USE$$) \n %C[255,255,255] Fleshka "Monk"</text>
+	</string>
+	<string id="st_okr_a5_notebook_yes_flesh_4">
+		<text>%c[d_green] see what is on a flash drive ($$ACTION_USE$$) \n %C[255,255,255] flash drive of sectarians</text>
+	</string>
+
+	<string id="st_lx24_tex_timer">
+		<text>Expect the arrival of the technique</text>
+	</string>
+
+	<string id="st_mod_lx24_generator_tutor">
+	<text>%c[d_green] Examine the generator ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_lx24_generator_is_work_text">
+		<text>%c[d_green] The generator works</text>
+	</string>
+	<string id="st_okr2_v3_pult_open_text">
+	<text>%c[d_green] Launch an emergency pump ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_okr2_lockvent_text">
+		<text>%c[d_green] something blocks the rotation of the valve</text>
+	</string>
+	<string id="st_okr2_v3_pult_text">
+		<text>%c[d_green] For access - the key card V3 is needed</text>
+	</string>
+
+	<string id="st_mod_loot_box_open_txt">
+	<text>%c[d_green] Take the contents ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_mtrs_loot_box_zakrit_txt">
+		<text>%c[d_green] The box is closed</text>
+	</string>
+	<string id="st_mtrs_loot_box_open_txt">
+	<text>%c[d_green] Take your things ($$ACTION_USE$$))</text>
+	</string>
+
+	<string id="st_mod_mtrs_sherif_psih_say_no_meets_no_dialog">
+		<text>%c[d_green] The sheriff does not react to you</text>
+	</string>
+
+	<string id="st_mtrs_e3_door_locked">
+		<text>%c[d_green] Do not move this lattice</text>
+	</string>
+
+	<string id="st_ofc_o3_door_locked">
+		<text>%c[d_green] A fragment of your memory is now closed</text>
+	</string>
+	<string id="st_ofc_o4_boy_nex_door_use_tip">
+	<text>%c[d_green] Shoot the doorbell ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_ofc_o4_boy_nex_door_no_use_tip">
+		<text>%c[d_green] wait for an answer</text>
+	</string>
+
+	<string id="st_mod_mtrs_map_on_txt">
+	<text>%c[d_green] Turn on the panel ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_mod_mtrs_map_of_txt">
+	<text>%c[d_green] Turn off the panel ($$ACTION_USE$$)</text>
+	</string>	
+
+	<string id="st_mod_mtrs_f2_use_control_panel_1_txt">
+	<text>%c[d_green] Open the shield ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_mod_mtrs_f2_use_control_panel_2_txt">
+	<text>%c[d_green] Twist the lever ($$ACTION_USE$$)</text>
+	</string>	
+
+	<string id="st_mod_act_use_rerorder">
+		<text>%c[d_green] Turn on the recording ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_changer_perehod_nii_to_okr">
+		<text>Hills "Hirsy" at the Research Institute, with its help you can get to the zone</text>
+	</string>
+	<string id="st_changer_perehod_okrest_to_niichaz">
+		<text>The coordinates of the Hirsy helicopter. With its help, you can get to the research institute</text>
+	</string>
+
+	<string id="st_mod_use_r88_say_no_meets_no_dialog">
+		<text>%c[d_green] Dialogue ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_mtrs_lc_door_go_dwn">
+		<text>%c[d_green] go down to the underground structure ($$ACTION_USE$$) \n %c[d_green] metro. Sanatorium station</text>
+	</string>
+
+	<string id="st_flst_lc_door_go_up">
+		<text>%c[d_green] Round to the surface ($$ACTION_USE$$) \n %c[d_green] Chernobyl surroundings</text>
+	</string>
+	<string id="st_flst_lc_door_go_dwn">
+		<text>%c[d_green] go down to the underground structure ($$ACTION_USE$$) \n %c[d_green] testing comp said</text>
+	</string>	
+
+	<string id="st_time_skip_spot_loc_spot">
+		<text>%c[d_green] You can sit out and wait a couple of hours</text>
+	</string>
+
+	<string id="mod_u17_zapiska_st">
+		<text>A note from Garrota</text>
+	</string>
+
+	<string id="und_u7_stul_time_skip_txt">
+		<text>You wait a few hours ...</text>
+	</string>
+
+	<string id="st_mod_use_stul_actor_to_sit">
+		<text>%c[d_green] Sit ($$ACTION_USE$$) \n %c[d_green] to wait several hours</text>
+	</string>
+	<string id="st_mod_act_use_snd_guitar">
+		<text>%c[d_green] Play the guitar ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_und_bar_lift_go_up">
+		<text>%c[d_green] rise on the elevator ($$ACTION_USE$$) \n %C[255,255,255] Upper tier</text>
+	</string>
+	<string id="st_und_bar_lift_go_down">
+		<text>%c[d_green] go down the elevator ($ dolphone_use $ $) \n %C[255,255,255] lower tier</text>
+	</string>
+
+	<string id="st_und_u4_lift_yes">
+		<text>%c[d_green] The elevator is caused</text>
+	</string>
+	<string id="st_und_u4_lift_start">
+		<text>%c[d_green] Call the elevator ($$ACTION_USE$$)</text>
+	</string>
+	<string id="und_bar_elevator_door_locked_used">
+		<text>%c[d_green] It is necessary to call the elevator</text>
+	</string>
+
+	<string id="st_okr_sr_stul_vagon_toturial_txt">
+		<text>%c[d_green] Sit down at the table ($ dollarcore_use $ $)</text>
+	</string>
+
+	<string id="st_okr_garrota_rupor_use_1">
+		<text>%c[d_green] Use the owner to communicate with the owner ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_okr_garrota_rupor_use_2">
+		<text>%c[d_green] Use the Garrota connection ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_okr_r6_sr_door_spot">
+		<text>%c[d_green] Entrance to the secret metro station, under the sanatorium</text>
+	</string>
+
+	<string id="st_okr_r6_pult_text">
+		<text>%c[d_green] For access - Key card is needed</text>
+	</string>
+
+	<string id="st_okr_rezak_kompass_tutorial_txt">
+		<text>%c[d_green] Raise the artifact ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="actor_inventory_rukzak_use">
+		<text>%c[d_green] Open a backpack ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okr_s1_box_closed_txt">
+		<text>%c[d_green] The container is closed - the key is needed</text>
+	</string>
+	<string id="okr_s1_box_open_txt">
+	<text>%c[d_green] Examine the container ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okrest_roadno_spot_no_txt">
+		<text>%c[d_green] The path is closed \n %c[ui_gray_2] Now this passage is not available to you</text>
+	</string>
+
+	<string id="st_okr_v3_rubilnik_yes_txt">
+		<text>%c[d_green] Food was supplied</text>
+	</string>
+	<string id="st_okr_v3_rubilnik_noy_txt">
+		<text>%c[d_green] There is no power</text>
+	</string>
+
+	<string id="st_okr_v3_rubilnik_use_txt">
+	<text>%c[d_green] Lower the switch ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="okr_d2_som_dnk_use_txt">
+		<text>%c[d_green] Take DNA from a mutant ($$ACTION_USE$$)</text>
+	</string>
+	<string id="okr_d2_som_see_txt">
+		<text>%c[d_green] Body of the Chernobyl catfish</text>
+	</string>
+
+	<string id="st_okr_mod_transmut_act_use_objects">
+		<text>%c[d_green] interaction with the object is available</text>
+	</string>
+	<string id="st_okr_mod_transmut_act_use_npcs">
+		<text>%c[d_green] interaction with the character is available</text>
+	</string>
+	
+	<string id="st_okr_mod_transmut2_act_use_interes_spot">
+		<text>%c[d_green] found a point of interest</text>
+	</string>	
+
+	<string id="st_okr_a5_ohr_door_locked">
+		<text>%c[d_green] The door is something blocked</text>
+	</string>
+
+	<string id="st_okr_c1_act_use_eat_tutorial_txt">
+		<text>%c[d_green] TEAR TO TASE FROM ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="st_okr_a5_notebook_yes_flesh">
+		<text>%c[d_green] See what is on a flash drive ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_okr_a5_notebook_no_flesh">
+		<text>%c[d_green] Using a laptop, you can watch the contents of the flash drives</text>
+	</string>
+
+	<string id="st_search_box_mod">
+		<text>%c[d_green] Open the box ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_search_seif">
+		<text>%c[d_green] Open a safe ($$ACTION_USE$$)</text>
+	</string>
+
+	<string id="mod_tip_radio_2_on">
+		<text>%c[d_green] Turn on the radio receiver ($$ACTION_USE$$)</text>
+	</string>
+	<string id="mod_tip_radio_2_off">
+		<text>%c[d_green] Turn off the radio receiver ($$ACTION_USE$$)</text>
+	</string>
+
+</string_table>
+

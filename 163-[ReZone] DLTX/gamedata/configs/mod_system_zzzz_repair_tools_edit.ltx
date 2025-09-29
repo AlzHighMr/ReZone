@@ -1,0 +1,362 @@
+;;----=========================================================
+;;----=====================| Repair Kits |=====================
+;;----=========================================================
+
+;;-- Tronex
+;; DEFINES:
+;; repair_type 							(item type for repair tools. When this type is specified for repair_only in a repair kit, it can be repair this item)
+;; repair_part_bonus	 	            (Amount bonus to add_condition if parts are used)
+
+;; repair_tool                          (If set to true, this item will be used as a repair tool)
+;; repair_min_condition 	            (Min required condition to use)
+;; repair_max_condition 	            (Max required condition to use)
+;; repair_add_condition 	            (Amount of condition added to repaired item)
+;; repair_use_parts	 	                (If set to true, allows the use of parts (2nd window) to add overall bonus to repair)
+;; repair_only				            (type of items that can be repaired by this kit)
+;; repair_parts_match					(If set to true, parts identical to the item can be used in repair)
+;; repair_parts_sections                (items that can be used as repair parts to add overall bonus to repair)
+;; repair_parts_type                 	(type of items that can be used as repair parts to add overall bonus to repair, defined by repair_type)
+;; repair_use_actor_effects             (Uses actor_effects script. Setup a *_dummy section for the item in actor_effects_data.script)
+;; repair_parts_multi					(nultiplier for repair bonus coming from support parts)
+
+;; workshop_tool                    	(If set to true, this item will be used as a workshop repair tool for parts replacements and upgrades)
+;; workshop_support						(type of items that can be dealt with at the workshop using this kit)
+
+
+;;----==============================================< Sharpening stones >=================================================
+
+![sharpening_stones]:tch_repair ;;--x4
+cost				                               = 1500
+inv_weight			                               = 0.276
+empty_weight			                           = 0.06
+max_uses								           = 4
+
+
+
+;;----==============================================< Lubricants and solvents >=================================================
+![gun_oil]:tch_repair ;;-- Universal gun spray lubricant ;;--x2
+cost				                               = 1830
+inv_weight			                               = 0.248
+empty_weight			                           = 0.048
+max_uses								           = 2
+;;----===============================================================================================
+![gun_oil_ru_d]:tch_repair ;;--x2
+cost				                               = 1675
+inv_weight			                               = 0.094
+empty_weight                                       = 0.039
+max_uses								           = 2
+;;----===============================================================================================
+![gun_oil_ru]:tch_repair ;;-- (Russian gun oil (plastic bottle)) ;;--x2
+cost				                               = 1300
+inv_weight			                               = 0.223
+empty_weight                                       = 0.023
+max_uses								           = 2
+;;----===============================================================================================
+![solvent]:tch_repair  ;;--x2
+cost				                               = 1754
+inv_weight			                               = 0.198
+empty_weight                                       = 0.018
+max_uses								           = 2
+
+
+
+
+
+;;----==============================================< Barrel blashes >=================================================
+![cleaning_kit_p]:tch_repair ;;-- Cleaning kit 9mm .357 .45 ;;--x3
+cost				                               = 2654
+inv_weight			                               =  0.431
+empty_weight                                       = 0.245
+max_uses								           = 3
+;;----===============================================================================================
+![cleaning_kit_s]:tch_repair ;;-- Cleaning kit 12ga ;;--x3
+cost				                               = 2954
+inv_weight			                               = 0.482
+empty_weight                                       = 0.244
+max_uses								           = 3
+;;----===============================================================================================
+![cleaning_kit_r5]:tch_repair ;;-- Cleaning kit 5.54mm 5.56mm ;;--x3
+cost				                               = 3502
+inv_weight			                               = 0.496
+empty_weight                                       = 0.258
+max_uses								           = 3
+;;----===============================================================================================
+![cleaning_kit_r7]:tch_repair ;;-- Cleaning kit 7.62mm 7.92mm .300 ;;--x3
+cost				                               = 4104
+inv_weight			                               = 0.513
+empty_weight			                           = 0.265
+max_uses								           = 3
+;;----===============================================================================================
+![cleaning_kit_u]:tch_repair ;;-- Universal cleaning kit ;;--x3
+cost				                               = 16139
+inv_weight			                               = 1.139
+empty_weight			                           = 0.55
+max_uses								           = 4
+
+;;----==============================================< Gunsmith toolkits >=================================================
+![toolkit_p]:tch_repair ;;-- Pistol toolkit with replacement parts ;;--x4
+cost				                               = 9000
+inv_weight			                               = 2.943
+empty_weight			                           = 1.943
+max_uses								           = 4
+;;----===============================================================================================
+![toolkit_s]:tch_repair ;;-- Shotgun toolkit with replacement parts ;;--x4
+cost				                               = 12660
+inv_weight			                               = 3.216
+empty_weight			                           = 1.216
+max_uses								           = 4
+;;----===============================================================================================
+![toolkit_r5]:tch_repair ;;-- NATO rifle toolkit with replacement parts ;;--x4
+cost				                               = 16420
+inv_weight			                               = 3.484
+empty_weight			                           = 1.484
+max_uses								           = 4
+;;----===============================================================================================
+![toolkit_r7]:tch_repair ;;-- WP rifle toolkit with replacement parts ;;--x4
+cost				                               = 20080
+inv_weight			                               = 3.592
+empty_weight			                           = 1.592
+max_uses								           = 4
+
+;;----==================================================================
+;;----=====================| Repair Kits (Outfit) |=====================
+;;----==================================================================
+
+
+;;----==============================================< Glues >=================================================
+
+![glue_b]:tch_repair ;;-- (Basic glue) ;;--x2
+cost				                               = 2308
+inv_weight			                               = 0.124
+empty_weight			                           = 0.069
+max_uses								           = 2
+;;----===============================================================================================
+![glue_a]:tch_repair ;;-- (Advanced glue) ;;--x2
+cost				                               = 2968
+inv_weight			                               = 0.167
+empty_weight			                           = 0.095
+max_uses								           = 2
+;;----===============================================================================================
+![glue_e]:tch_repair ;;-- (Extreme glue) ;;--x2
+cost				                               = 4396
+inv_weight			                               = 0.194
+empty_weight			                           = 0.104
+max_uses								           = 2
+
+
+;;----==============================================< Sewing kits >=================================================
+![sewing_kit_b]:tch_repair ;;-- (Basic sewing kit) ;;--x4
+cost				                               = 5360
+inv_weight			                               = 0.288
+empty_weight			                           = 0.138
+max_uses								           = 4
+;;----===============================================================================================
+![sewing_kit_a]:tch_repair ;;-- (Advanced sewing kit) ;;--x4
+cost				                               = 9660
+inv_weight			                               = 0.437
+empty_weight			                           = 0.221
+max_uses								           = 4
+;;----===============================================================================================
+![sewing_kit_h]:tch_repair ;;-- (Heavy sewing kit) ;;--x4
+cost				                               = 13420
+inv_weight			                               = 0.586
+empty_weight			                           = 0.286
+max_uses								           = 4
+
+
+
+
+;;----==============================================< Repair kits >=================================================
+![armor_repair_fa]:tch_repair ;;-- (First aid armor repair set (Textile residues and duct tape)) ;;--x2
+cost				                               = 3472
+inv_weight			                               = 0.346
+empty_weight			                           = 0.173
+max_uses								           = 2
+;;----===============================================================================================
+![helmet_repair_kit]:tch_repair ;;--x3
+cost				                               = 15000
+inv_weight			                               = 1.642
+empty_weight			                           = 0.742
+max_uses								           = 3
+;;----===============================================================================================
+![light_repair_kit]:tch_repair ;;--x4
+cost							                   = 15000
+inv_weight						                   = 4.484
+empty_weight						               = 1.169
+max_uses								           = 4
+;;----===============================================================================================
+![medium_repair_kit]:tch_repair ;;--x4
+cost							                   = 20000
+inv_weight						                   = 6.484
+empty_weight						               = 1.569
+max_uses								           = 4
+;;----===============================================================================================
+![heavy_repair_kit]:tch_repair ;;--x5
+cost							                   = 24000
+inv_weight						                   = 10.484
+empty_weight						               = 2.769
+max_uses								           = 5
+
+;;----===============================================================================================
+![exo_repair_kit]:tch_repair ;;--x6
+cost							                   = 28000
+inv_weight						                   = 16.484
+empty_weight						               = 4.769
+max_uses								           = 6
+
+
+
+
+;;----==================================================================
+;;----=====================| Part repair tools |=====================
+;;----==================================================================
+
+![rasp_tool]:tch_repair
+cost					                           = 4200
+inv_weight				                           = 0.35
+empty_weight						         	   = 0.1
+max_uses								     	   = 2
+
+
+repair_min_condition 	                           = 0.10		
+repair_max_condition 	                           = 0.99		
+repair_add_condition 	                           = 0.25		
+repair_part_bonus	 	                           = 0.05		
+repair_use_parts	 	                           = true		
+repair_only				                           = bolt_carrier, bolt, gas_tube
+repair_parts_sections				               = kerosene, grease, gun_oil
+repair_parts_multi							       = 4
+repair_use_actor_effects                           = true 
+tier                                               = 3
+
+
+![ramrod_tool]:tch_repair
+cost					                           = 3869
+inv_weight				                           = 0.3
+empty_weight						         	   = 0.1
+max_uses								     	   = 2
+
+
+repair_min_condition 	                           = 0.10		
+repair_max_condition 	                           = 0.99		
+repair_add_condition 	                           = 0.25		
+repair_part_bonus	 	                           = 0.05		
+repair_use_parts	 	                           = true		
+repair_only				                           = barrel, gas_tube
+repair_parts_sections				               = explo_jerrycan_fuel, kerosene, gun_oil_ru_d, solvent
+repair_parts_multi							       = 4
+repair_use_actor_effects                           = true 
+tier                                               = 3
+
+![leatherman_tool]:identity_immunities
+
+cost					                           = 5000
+inv_weight				                           = 0.4
+use_condition                                      = true
+allow_repair                                       = true
+
+
+disassemble_tool                                   = true
+degradation_factor						           = 0.025
+
+
+repair_min_condition 	                           = 0.10
+repair_max_condition 	                           = 0.99
+repair_add_condition 	                           = 0.25
+repair_part_bonus	 	                           = 0.06
+repair_use_parts	 	                           = true
+repair_only				                           = trigger_components, spring
+repair_parts_sections                              = explo_jerrycan_fuel, kerosene, grease, gun_oil
+repair_parts_multi							       = 4
+repair_use_actor_effects                           = true
+tier                                               = 4
+
+![sewing_thread]:tch_repair
+
+cost					                           = 800
+inv_weight				                           = 0.01
+max_uses								     	   = 2
+
+
+repair_min_condition 	                           = 0.10		
+repair_max_condition 	                           = 0.99		
+repair_add_condition 	                           = 0.25		
+repair_part_bonus	 	                           = 0.03		
+repair_use_parts	 	                           = true		
+repair_only				                           = fabrics  
+tier                                               = 2
+
+![heavy_sewing_thread]:tch_repair
+cost					                           = 5000
+inv_weight				                           = 0.4
+max_uses								     	   = 2
+
+
+repair_min_condition 	                           = 0.10		
+repair_max_condition 	                           = 0.99		
+repair_add_condition 	                           = 0.25		
+repair_part_bonus	 	                           = 0.05	
+repair_use_parts	 	                           = true		
+repair_only				                           = ballistic, retardants
+repair_parts_sections                              = 
+repair_parts_match							       = true
+repair_use_actor_effects                           = true  
+
+workshop_tool						 		       = true   
+workshop_support                                   = outfit_novice
+tier                                               = 3
+
+
+
+;--========================== Tools =============================
+
+![itm_basickit]:identity_immunities
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_basic
+
+![itm_gunsmith_toolkit]
+
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_basic
+
+
+![itm_advancedkit]
+
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_advanced
+
+![itm_expertkit]
+
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_expert
+
+![itm_drugkit]
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_medic
+
+![itm_ammokit]
+use1_functor                             = workshop_tool.tool_workshop
+use1_action_functor                      = workshop_tool.start_workshop_ammo
+
+
+
+![swiss_knife]
+cost				                               = 1000
+repair_part_bonus	 	                           = 0.02
+disassemble_tool                                   = true
+degradation_factor						           = 0.10
+
+![grooming]
+cost				                               = 560
+repair_part_bonus	 	                           = 0.01
+degradation_factor						           = 0.10
+
+
+
+![itm_sleepbag]
+cost                                               = 2000
+inv_weight                                         = 1.00
+
+![compression_bag]
+cost    		                                   = 750
+inv_weight			                               = 0.50

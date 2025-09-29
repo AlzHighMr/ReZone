@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+<!-- Описание для Антологии 2.0 -->
+
+	<string id="st_helm_respirator_joker">
+	<text>"Joker" Respirator</text>
+</string>
+<string id="st_helm_respirator_joker_short">
+	<text>"Joker"</text>
+</string>	
+<string id="st_helm_respirator_joker_descr">
+	<text>%c[ui_gray_1]A standard gas mask designed to filter radioactive dust and toxic substances from the air. Widely used by both rookie and veteran stalkers of all factions due to its essential functionality. Does not provide protection against bullets, shrapnel, or mechanical impacts. Comes with anti-fog goggles.\n \n</text>
+</string>
+
+<string id="st_helm_exo_name">
+	<text>Exo Helmet with "Avon FM12" Gas Mask</text>
+</string>
+<string id="st_helm_exo_name_short">
+	<text>Exo Helmet/"FM12"</text>
+</string>	
+<string id="st_helm_exo_descr">
+	<text>%c[ui_gray_1]Visually resembles a standard exoskeleton helmet, but its protective features differ slightly from the stock model. Offers good bullet resistance along with anomalous protection, making it one of the best in its price range.\n
+	This model includes the "Avon FM12" gas mask with dual filters. Features original Avon anti-glare tinted inserts and the "Avon GPCF-50" general-purpose filter.
+	\n \n</text>
+</string>
+
+<string id="st_helm_battle">
+	<text>"Sphere M12" Helmet with "XM40" Gas Mask</text>
+</string>
+<string id="st_helm_battle_short">
+	<text>"Sphere M12"/"XM40"</text>
+</string>	
+<string id="st_helm_battle_descr">
+	<text>%c[ui_gray_1]A camo-covered aluminum-titanium helmet with slots for steel armor plates and a built-in armored mask. Common among military stalkers and special forces, who often wear it with PSZ-series armor suits. Overall, the "M12" is one of the best combat helmets in the Zone and a highly desirable piece of gear for well-funded stalkers who value their lives.\n
+	The integrated gas mask is based on the experimental American "XM40" model. It is in service with the US military and widely used by mercenaries. It includes a full-face mask and multi-layer 40mm filter cartridge. The "XM40" offers excellent protection in chemically and radioactively contaminated environments, even with partial mask damage.\n \n</text>
+</string>
+
+<string id="st_helm_hardhat">
+	<text>Steel Helmet</text>
+</string>
+<string id="st_helm_hardhat_short">
+	<text>Steel Helmet</text>
+</string>
+<string id="st_helm_hardhat_descr">
+	<text>%c[ui_gray_1]An outdated steel army helmet without any enhancements. Offers no protection from anomalies or radiation, but can deflect bullets. Never particularly popular in the Zone, except for brief armed conflicts between factions.\n \n
+	%c[default]Protection Features:\n%c[255,1,255,255]• %c[default]Head Protection = 30%\n%c[default]</text>
+</string>
+
+<string id="st_helm_hardhat_snag">
+	<text>Steel Helmet with "M50" Gas Mask</text>
+</string>
+<string id="st_helm_hardhat_snag_short">
+	<text>Steel Helmet/"M50"</text>
+</string>
+<string id="st_helm_hardhat_snag_descr">
+	<text>%c[ui_gray_1]An outdated steel army helmet without any enhancements. Offers no protection from anomalies or radiation, but can deflect bullets. Never particularly popular in the Zone, except for brief armed conflicts between factions.\n
+	This model is equipped with the "M50" gas mask, designed for use by the US Armed Forces and not available for civilian sale. It protects the respiratory system, eyes, and facial skin from chemical agents, hazardous chemical vapors, radioactive dust, and biological aerosols.
+	The "M50" includes two filters to reduce breathing resistance and improve weight distribution. The filters contain an absorbent layer and an anti-aerosol element. Thanks to bayonet connectors and self-sealing valves, they can be replaced without breaking the mask's seal.
+	%c[default]Protection Features:\n%c[255,1,255,255]• %c[default]Head Protection = 30%\n%c[default]
+	\n \n</text>
+</string>
+
+<string id="st_helm_tactic">
+	<text>"Sphere 08" Helmet with "M40" Gas Mask</text>
+</string>
+<string id="st_helm_tactic_short">
+	<text>"Sphere 08"/"M40"</text>
+</string>	
+<string id="st_helm_tactic_descr">
+	<text>%c[ui_gray_1]A modern, high-quality Western-style helmet with integrated air filtration. Its construction consists of multiple layers of Kevlar for protection against heavy physical impacts. The helmet is made of composite dielectric materials, offering significantly better protection against electric shock compared to most competitors. Common among military stalkers and special forces, often paired with PSZ-series armor suits.\n
+	This model includes a built-in "M40" gas mask. This US Army-issued gas mask is also very popular among mercenaries. It features a full-face respirator and a multi-layered 40mm filter. The "M40" provides solid protection in chemically and radiologically hazardous environments, even if partially damaged.
+	\n \n</text>
+</string>
+
+
+	<string id="helm_ach7">
+	<text>"ACH-7" Helmet with Respirator</text>
+</string>
+<string id="helm_ach7_short">
+	<text>"ACH-7"/Respirator</text>
+</string>	
+<string id="helm_ach7_descr">
+	<text>%c[ui_gray_1]The advanced 7-piece head protection set—ACH-7 (Advanced Compound Headgear, 7 Parts)—is a much more modern version of the steel helmet. While it performs well against shrapnel, its main appeal lies in its resistance to psi influence and surprisingly low cost. However, the lack of any individual respiratory protection makes it a poor choice for use in the harsh conditions of the Zone. As such, it is popular among rookie stalkers who avoid contaminated areas but are willing to test their mental resilience.\n
+	This model includes a basic respirator, one of many. Used by both rookies and veteran faction members due to its low price, light weight, and availability. While it can protect against radioactive dust, it is completely ineffective against higher levels of radiation exposure. Additionally, it provides virtually no protection against physical harm.
+	\n \n</text>
+</string>
+
+<string id="helm_m50">
+	<text>"M50" Gas Mask</text>
+</string>
+<string id="helm_m50_short">
+	<text>"M50"</text>
+</string>	
+<string id="helm_m50_descr">
+	<text>%c[ui_gray_1]The "M50" gas mask, specially modified for improved performance in the Zone. Though these modifications slightly reduced its overall protection compared to the original model, the "Z" variant boasts strong resistance to psi emissions and radiation. It can be considered an improved version of the M40, and unlike the M40, the M50 is supplied directly to private military contractors who either equip their operatives with it or resell it to other mercenary groups.\n
+	Equipped with two filters to reduce breathing resistance and improve weight distribution. The filters include an absorbent layer and anti-aerosol protection. Bayonet connections and self-sealing valves allow for filter replacement without compromising the internal seal.
+	\n \n</text>	
+</string>	
+
+<string id="helm_tactic">
+	<text>"Sphere 08" Helmet</text>
+</string>
+<string id="helm_tactic_short">
+	<text>"Sphere 08"</text>
+</string>	
+<string id="helm_dolg_tactic_red_descr">
+	<text>%c[ui_gray_1]A modern, high-quality Western-style helmet with an integrated air filtration system. Constructed with multiple layers of Kevlar to protect the wearer from severe physical trauma. The helmet itself is made from composite dielectric materials, offering significantly better electrical resistance than most competitors. It is commonly used by military stalkers and special forces, who often pair it with PSZ-series armored suits.\n \n</text>
+</string>	
+
+<string id="helm_spartan">
+	<text>M10 "Spartan" Helmet</text>
+</string>
+<string id="helm_spartan_short">
+	<text>M10 "Spartan"</text>
+</string>	
+<string id="helm_spartan_descr">
+	<text>%c[ui_gray_1]A ballistic helmet based on the "Last Day" (PD) helmet, custom-made by several influential stalkers. Compared to the original, it is not only lighter but also provides significantly enhanced protection. Thanks to its anomaly resistance, it stands out even compared to combat helmets like the "Sphere," making it extremely popular among stalkers who can afford it.\n \n</text>
+</string>	
+
+<string id="st_helm_respirator_short">
+	<text>PBF Gas Mask</text>
+</string>
+
+
+<string id="st_helm_respirator_old">
+	<text>Old-Model PBF Gas Mask</text>
+</string>
+<string id="st_helm_respirator_old_short">
+	<text>Old PBF</text>
+</string>
+<string id="st_helm_respirator_descr">
+	<text>%c[ui_gray_1]The PBF gas mask ("filterless canister", also known as "Hamster") was developed to protect against biological aerosols, chemical warfare agents, toxic chemicals, and radioactive dust. It was adopted by the Soviet Army in 1973. It protects the face, eyes, and respiratory system from various contaminants. Used both in the military and in civil defense.\n \n</text>
+</string>
+
+<string id="helm_ach7ex">
+	<text>ACH-7EX Helmet</text>
+</string>
+<string id="helm_ach7ex_descr">
+	<text>%c[ui_gray_1]An extended version of the original ACH-7. The main difference lies in the inclusion of an individual respiratory protection device. Its protection level against toxins and radiation is somewhere between that of the GP-5 and PBF gas masks, while the helmet provides good physical protection. Extremely popular among stalkers looking for well-balanced protection at an affordable price.\n \n</text>
+</string>
+
+<!-- Miscellaneous gear -->
+<string id="st_psy_helmet_name">
+	<text>"Psi-Helmet"</text>
+</string>
+<string id="st_psy_helmet_desc">
+	<text>A tuned version of the Psi-Helmet that can be worn under standard headgear. Developed under Sakharov's supervision at the research station near Lake Yantar. The helmet’s unique configuration, composed of electro-type artifacts and an integrated antenna system, functions as a shield. When activated, a dome-like field forms around the user, powered by the energy of the "Dummy" artifact, which blocks most radiation. Remaining emissions are reflected by shielding built directly into the helmet’s structure. Its uniqueness lies in the ability to resist psi emissions of specific frequencies—those emitted by devices codenamed "DUGA" in the Chernobyl Exclusion Zone.</text>
+</string>
+
+<string id="st_bad_psy_helmet_name">
+	<text>Untuned "Psi-Helmet"</text>
+</string>
+<string id="st_bad_psy_helmet_desc">
+	<text>An untuned version of the Psi-Helmet that can be worn under standard headgear. Developed under Sakharov's supervision at the research station near Lake Yantar. The helmet’s unique configuration, composed of electro-type artifacts and an integrated antenna system, functions as a shield. When activated, a dome-like field forms around the user, powered by the energy of the "Dummy" artifact, which blocks most radiation. Remaining emissions are reflected by shielding built directly into the helmet’s structure. However, since the helmet hasn't been fully calibrated, it may malfunction or provide ineffective protection in zones of heavy psi emissions.</text>
+</string>
+
+<!-- Headgear -->
+
+<string id="st_helm_battle_dolg">
+	<text>"Sphere M12" Helmet (Duty)</text>
+</string>
+<string id="st_helm_battle_freedom">
+	<text>"Sphere M12" Helmet (Freedom)</text>
+</string>
+<string id="st_helm_battle_descr">
+	<text>%c[ui_gray_1]An aluminum-titanium helmet covered in camouflage fabric, with slots for steel armor plates and an integrated armored face mask. Widely used by military stalkers and special forces, often paired with PSZ-series armored suits. Overall, the "M12" is one of the best combat helmets in the Zone and a highly desirable protective item for well-funded stalkers who value survival in combat.\n \n</text>
+</string>
+
+<string id="st_helm_protective">
+	<text>SSP-99 "Zaslon" Helmet</text>
+</string>
+<string id="st_helm_protective_descr">
+	<text>%c[ui_gray_1]An uncomfortable but high-quality hood-style helmet, produced by the same institute responsible for the SEVA suit series. It features a hermetically sealed construction designed for total isolation from anomalous environments. Can be combined with military armored suits to enhance their protective capabilities in anomaly zones. Also used as part of the SSP protective suits.\n \n</text>
+</string>
+
+<string id="helm_dolg_battle">
+	<text>-</text>
+</string>
+<string id="helm_dolg_battle_descr">
+	<text>%c[ui_gray_1]NOT USED(!) One of two variants of the "Sphere M12" helmet used by members of Duty. Compared to the original, it offers improved physical and psi protection, but these enhancements have increased the helmet’s overall weight and reduced its anomalous resistance. This helmet is intended to be worn with the PSZ-9d armored suit, just as the original "Sphere M12" is typically worn with the "Bulat" suit.\n \n</text>
+</string>
+
+	
+		<string id="helm_eo21">
+		<text>-</text>
+	</string>
+	<string id="helm_eo21_descr">
+		<text>-\n \n</text>
+	</string>
+
+<!-- Novice outfits -->
+	<string id="novice_outfit_name">
+	<text>Jacket</text>
+</string>
+<string id="novice_outfit_description">
+	<text>%c[ui_gray_1]A fairly thick jacket worn over a warm wool sweater, with jeans tucked into sturdy hiking boots. Quite popular among rookie stalkers, though veterans often mock it, saying its protection is only slightly better than grandma's sweater.\n \n</text>
+</string>
+
+<string id="novice_outfit_camo_name">
+	<text>White Jacket</text>
+</string>
+<string id="novice_outfit_camo_description">
+	<text>%c[ui_gray_1]A fairly thick jacket worn over a warm wool sweater, with jeans tucked into sturdy hiking boots. A strange camouflage choice, but made of better materials than common rookie outfits. Can keep its wearer warm during rain and strong winds, but won’t provide serious protection in the Zone.\n \n</text>
+</string>
+
+<string id="novice_outfit_tourist_name">
+	<text>“Debut” Jacket</text>
+</string>
+<string id="novice_outfit_tourist_description">
+	<text>%c[ui_gray_1]A fairly thick jacket worn over a warm wool sweater, with jeans tucked into sturdy hiking boots. The main difference from others like it is a decent weight distribution system. Judging by its build, the previous owner was a real outdoorsman: smart material choices and a good strap-harness system make it more useful than most jackets—though still not suitable for anything beyond strolling along the Zone’s outer borders.\n \n</text>
+</string>
+
+<string id="csky_novice_outfit_name">
+	<text>Clear Sky Jacket</text>
+</string>
+<string id="csky_novice_outfit_description">
+	<text>%c[ui_gray_1]A simple white-and-blue jacket worn over a warm wool sweater with pants tucked into sturdy hiking boots. Tailors of Clear Sky provide these jackets to newly joined members. Can keep the wearer warm in rain and wind, but won’t offer serious protection beyond the southern Zone.\n \n</text>
+</string>
+
+<string id="dolg_novice_outfit_name">
+	<text>“Duty” Jacket</text>
+</string>
+<string id="dolg_novice_outfit_description">
+	<text>%c[ui_gray_1]A well-made thick jacket with shoulder inserts. Until recently, it was only used as casual wear by Duty members and never meant for field use, let alone combat. This suit was mockingly dubbed a “body bag” because it’s entirely unsuitable for hunting mutants—the main occupation of the faction.\n \n</text>
+</string>
+
+<string id="bandit_novice_outfit_name">
+	<text>Black Leather Jacket</text>
+</string>
+<string id="bandit_novice_outfit_description">
+	<text>%c[ui_gray_1]A black leather jacket traditionally associated with the Zone’s criminal underworld. Mostly worn to intimidate rookie stalkers. Offers good protection from anything weaker than a breeze or a stray bottle of vodka, though it does hold up well against rain.\n \n</text>
+</string>
+
+<string id="bandit_novice_alt_outfit_name">
+	<text>Chain-Lined Jacket</text>
+</string>
+<string id="bandit_novice_alt_outfit_description">
+	<text>%c[ui_gray_1]These jackets started showing up in the Zone after Duty quartermaster Morgan began smuggling supplies to outsiders, including bandits. Offers protection comparable to a standard army vest, though still inadequate for Zone conditions—especially in firefights with Duty squads.\n \n</text>
+</string>
+
+<string id="redline_novice_outfit_name">
+	<text>Dark Jacket</text>
+</string>
+<string id="redline_novice_outfit_description">
+	<text>%c[ui_gray_1]A decent thick jacket with sewn-in belly pockets. In the absence of better gear, it can serve as a makeshift chest rig. Gaiter-like fabric covers the boots to reduce moisture while walking through wet grass. The color scheme may be misleading, as it’s often hard to tell which faction the wearer belongs to from a distance.\n \n</text>
+</string>
+
+<string id="svoboda_novice_outfit_name">
+	<text>“Freedom” Jacket</text>
+</string>
+<string id="svoboda_novice_outfit_description">
+	<text>%c[ui_gray_1]A camouflage jacket worn over a warm wool sweater, with cargo pants tucked into sturdy hiking boots. Worn by members of the Freedom faction when they feel safe—which is always.\n \n</text>
+</string>
+
+<string id="wastelander_outfit_name">
+	<text>“Seeker” Protective Suit</text>
+</string>
+<string id="wastelander_outfit_description">
+	<text>%c[ui_gray_1]A high-quality jumpsuit tailored in the Zone by a local craftsman. A step above most DIY suits found in the Zone, though its inability to be used with other helmets limits its overall effectiveness and customization potential.\n \n</text>
+</string>
+
+
+<string id="monolith_outfit_name">
+	<text>“Zircon” Suit</text>
+</string>
+<string id="monolith_outfit_description">
+	<text>%c[ui_gray_1]A stalker suit used by the Monolith faction. Thanks to the materials used, it offers excellent protection against chemical and radioactive exposure. It also includes a ballistic vest capable of stopping a weak pistol round, though its anomaly resistance leaves much to be desired. The first batches of these suits were discovered deep inside secret Lab X-18 in the Dark Valley. Even though the stalkers who found them soon vanished without a trace, the discovery gave rise to numerous legends and theories among Zone dwellers about the suit’s origins. Many believe these Monolith suits were created even before the Zone itself came into existence.\n \n</text>
+</string>
+
+<string id="banditmerc_outfit_name">
+	<text>“Marauder” Outfit</text>
+</string>
+<string id="banditmerc_outfit_description">
+	<text>%c[ui_gray_1]A stylish mid-season jacket combined with a decent bulletproof vest. Not very suitable for anomaly research, but if you're out to shake down some stalkers — there’s no better choice.\n \n</text>
+</string>
+
+	
+
+</string_table>

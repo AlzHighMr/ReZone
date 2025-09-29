@@ -1,0 +1,2750 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<!-- UI STRINGS FOR CLOSED CAPTION MODS -->
+<string id="ui_mm_cc_icc">
+	<text>Uzavřené titulky</text>
+</string>
+<string id="ui_mm_cc_icc_chktext">
+	<text>Zvukové efekty</text>
+</string>
+<string id="ui_mm_cc_captioning">
+	<text>Uzavřené titulky</text>
+</string>
+<string id="ui_mm_cc_none">
+	<text>Bez titulku</text>
+</string>
+<string id="ui_mm_cc_storyonly">
+	<text>Pouze důležité titulky</text>
+</string>
+<string id="ui_mm_cc_all">
+	<text>Všechny titulky</text>
+</string>
+
+
+<!-- PRISPEVKY DO STRINGOVE TABULKY PRO HRU -->
+<string id="st_sending_msg">
+	<text>Odesilani zpravy</text>
+</string>
+<string id="st_memo">
+	<text>Poznamka</text>
+</string>
+<string id="st_msgfrom_err1">
+	<text>[odesilatel neznamy]</text>
+</string>
+<string id="st_msgfrom_err2">
+	<text>&lt;!DATA_ERROR!&gt;</text>
+</string>
+<string id="st_msgfrom_err3">
+	<text>=?Selhani site</text>
+</string>
+<string id="st_joker_name">
+	<text>Joker</text>
+</string>
+<string id="st_soldier_name">
+	<text>Vojak</text>
+</string>
+<string id="st_hq_general_name">
+	<text>General</text>
+</string>
+<string id="st_ssu_commander_name">
+		<text>Velitel SSU</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR GAME -->
+
+<string id="cc_effect-ambient-blowout_begin">
+	<text>[emise zacina]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_bloodsucker_roar">
+	<text>[kriceni krvezizniveho potvora]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_electro_box_door">
+	<text>[otevirani elektricke skrinky]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_electro_box_switch">
+	<text>[kliknuti vypinace]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_elevator_door">
+	<text>[otevirani dveri vytahu]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_cop_elevator_landing">
+	<text>[Skrivanek pristava ve vytahu]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b38_lock_sound">
+	<text>[odemykani dveri]</text>
+</string>
+<string id="cc_effect-ambient-zaton-zat_b57_bloodsucker_roar">
+	<text>[kriceni krvezizniveho potvora]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b16_oasis_noise">
+	<text>[podivne praskani z nekoho blizko]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b41_steam">
+	<text>[aktivace systemu odvzdusnovani prostoru]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b46_spatial_bubble_idle">
+	<text>[rachot prostorove bubliny]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b46_spatial_bubble_rupture">
+	<text>[prostorova bublina praska]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b219_generator_start">
+	<text>[spusteni generatoru]</text>
+</string>
+<string id="cc_effect-ambient-jupiter-jup_b219_underpass_opening">
+	<text>[otevirani pruchodu pod zemi]</text>
+</string>
+<string id="cc_effect-ambient-underpass-pas_b400_elevator_off">
+	<text>[vytah podzemim se vypina]</text>
+</string>
+<string id="cc_effect-ambient-pripyat-pri_a25_blow_up_door_peep">
+	<text>[pipani pri odpocitavani bomby]</text>
+</string>
+<string id="cc_effect-ambient-pripyat-pri_a25_freezer_knock">
+	<text>[klepani na kov]</text>
+</string>
+<string id="cc_effect-device-door_start">
+	<text>[otevirani dveri]</text>
+</string>
+<string id="cc_effect-device-door_closing">
+	<text>[zavirani dveri]</text>
+</string>
+<string id="cc_effect-device-door_stop">
+	<text>[prudke zavreni dveri]</text>
+</string>
+
+<string id="cc_effect-device-metal_small_open">
+<text>[otevirani kovovych dveri]</text>
+</string>
+<string id="cc_effect-device-power_switch">
+<text>[kliknuti prepinace]</text>
+</string>
+<string id="cc_effect-device-radio_call">
+<text>[volani pres radio]</text>
+</string>
+<string id="cc_effect-device-wood_large_open">
+<text>[otevirani drevenych dveri]</text>
+</string>
+<string id="cc_effect-device-wood_large_close_start">
+<text>[zavirani drevenych dveri]</text>
+</string>
+<string id="cc_effect-anomaly-steam_blowout">
+<text>[syceni pary]</text>
+</string>
+<string id="cc_effect-weapons-n_desert_eagle_shot">
+<text>[vystrel z pistole Desert Eagle]</text>
+</string>
+<string id="cc_effect-music-guitar_">
+<text>[hudba na kytaru]</text>
+</string>
+<string id="cc_effect-music-harmonica_">
+<text>[hudba na harmoniku]</text>
+</string>
+<string id="cc_effect-laughter_">
+<text>[smich]</text>
+</string>
+<string id="cc_wounded-bandit-help">
+<text>[raneny bandita zada o pomoc]</text>
+</string>
+<string id="cc_wounded-dolg-help">
+<text>[raneny clen Duty zada o pomoc]</text>
+</string>
+<string id="cc_wounded-freedom-help">
+<text>[raneny clen Freedom zada o pomoc]</text>
+</string>
+<string id="cc_wounded-killer-help">
+<text>[raneny zoldak zada o pomoc]</text>
+</string>
+<string id="cc_wounded-military-help">
+<text>[raneny vojak zada o pomoc]</text>
+</string>
+<string id="cc_wounded-monolith-help">
+<text>[raneny prislusnik Monolitu zada o pomoc]</text>
+</string>
+<string id="cc_wounded-stalker-help">
+<text>[raneny stalker zada o pomoc]</text>
+</string>
+<string id="cc_fight-bandit-attack">
+<text>[utok banditu]</text>
+</string>
+<string id="cc_fight-dolg-attack">
+<text>[utok clenu Duty]</text>
+</string>
+<string id="cc_fight-freedom-attack">
+<text>[utok clenu Freedom]</text>
+</string>
+<string id="cc_fight-killer-attack">
+<text>[utok zoldaku]</text>
+</string>
+<string id="cc_fight-military-attack">
+<text>[utok armady]</text>
+</string>
+<string id="cc_fight-monolith-attack">
+<text>[utok Monolitu]</text>
+</string>
+<string id="cc_fight-stalker-attack">
+<text>[utok stalkeru]</text>
+</string>
+
+	<!-- CLOSED CAPTIONS FOR 'CALL OF PRIPYAT' -->
+	<!-- Zaton -->
+<string id="zat_a2_base_alarm">
+	<text>Pozor, stalkerove! Skadovsk je pod utokem! Museli jsme se uzavrit, dokud se situace neuklidni.</text>
+</string>
+<string id="zat_a2_base_guard_1">
+	<text>Poloz to zbran, kamo. Toto je nase taboriste, tady ji nepotrebujes.</text>
+</string>
+<string id="zat_a2_base_guard_2">
+	<text>Hele, kamo, tady je to tak poklidne, jak jen to jde. Schovej svoji zbran a udrzme to tak.</text>
+</string>
+<string id="zat_a2_base_guard_3">
+	<text>Pozor, zbrane jsou k zabijeni mutantu a tady zadne nenajdes. Tak ji schovej, jo?</text>
+</string>
+<string id="zat_a2_base_relax">
+	<text>Pozor, stalkerove! Dvere do Skadovska jsou vam znovu otevreny.</text>
+</string>
+<string id="zat_a2_linker_b29_take_order">
+	<text>Skvele! Tady je hotovost.</text>
+</string>
+<string id="zat_a2_stalker_barmen_after_surge">
+	<text>Stalkeri, emise je konecne za nami. Doufam, ze jste v poradku.</text>
+</string>
+<string id="zat_a2_stalker_barmen_farewell_1">
+	<text>Prijd, kdyz se objevi neco zajimaveho. Skadovsk tu zustane, to je jiste...</text>
+</string>
+<string id="zat_a2_stalker_barmen_farewell_2">
+	<text>Prijd, kdyz najdes artefakty, uvidime, co s nimi dokazeme udelat.</text>
+</string>
+<string id="zat_a2_stalker_barmen_farewell_angry_1">
+	<text>Uz jsme hotovi? ... Ano? Dobra... Vychod je tamhle.</text>
+</string>
+<string id="zat_a2_stalker_barmen_farewell_angry_2">
+	<text>Jasne, jasne... Jdi uz. Starat se o pijavice neni na me priorite.</text>
+</string>
+<string id="zat_a2_stalker_barmen_greeting_1">
+	<text>Ahoj! Co te sem privedlo na nasi skromnou lod?</text>
+</string>
+<string id="zat_a2_stalker_barmen_greeting_2">
+	<text>Vitej na nasi bazine, ledoborec!</text>
+</string>
+<string id="zat_a2_stalker_barmen_greeting_angry_1">
+	<text>Lod je tu uz hodne dlouho, ale je to porad plne krys. K cemu vdecime za tuhle pochybnou radost?</text>
+</string>
+<string id="zat_a2_stalker_barmen_greeting_angry_2">
+	<text>Co chces?</text>
+</string>
+<string id="zat_a2_stalker_barmen_surge_phase_1">
+	<text>Pozor stalkri! Blizi se emise! Opakuji, blizi se emise! Okamzite se schovat!</text>
+</string>
+<string id="zat_a2_stalker_barmen_surge_phase_2">
+	<text>Pozor stalkri! Emise zacne v jakoukoli chvili. Najdete ukryt, pokud chcete zit!</text>
+</string>
+<string id="zat_a23_about_x8">
+	<text>Dokumenty se odkazuji na centralni laborator oznacenou jako X8, ktera by mohla obsahovat informace o tajnych experimentech provadenych v Zone. Nasi analytici se touto otazkou jiz delsi dobu zabyvaji.</text>
+</string>
+<string id="zat_b100_heli_2_maps">
+	<text>Vypada to, ze posadka zemrela ve vzduchu a vrtulnik jednoduse havaroval, protoze nikdo ho neovladal. Palubni pocitac mel o trochu vetsi stesti. Zajimalo by me, jestli zde neni neco uzitecneho... Ah, tady je neco...! Mapa oblasti s oznacenymi urcitymi misty. To se muze hodit.</text>
+</string>
+<string id="zat_b101_both_heli_info">
+	<text>Elektronika je zde stejna, ale system ochrany pred emisemi je nedotceny. Co by to mohlo zpusobit?</text>
+</string>
+<string id="zat_b101_one_heli_info">
+	<text>Vsechna elektronika uvnitr vyhorela. Dokonce i plast napajeciho kabelu je roztaveny.</text>
+</string>
+<string id="zat_b103_merc_come_here_now">
+	<text>Tak, to je lepsi! Ted sem muzes prijit a promluvime si.</text>
+</string>
+<string id="zat_b103_merc_count_1">
+	<text>Jedna!</text>
+</string>
+<string id="zat_b103_merc_count_2">
+	<text>Dve!</text>
+</string>
+<string id="zat_b103_merc_count_3">
+	<text>Tri!</text>
+</string>
+<string id="zat_b103_merc_hide_weapon_1">
+	<text>Schovej svoji zbran!</text>
+</string>
+<string id="zat_b103_merc_hide_weapon_2">
+	<text>Rekl jsem ti, aby jsi schoval svoji zbran. Budu do tri pocitat a pokud to neudelas, rozdmycham ti hlavu!</text>
+</string>
+<string id="zat_b103_merc_talk_to_commander_1">
+		<text>Nemam chut placat jazykem. Mluv s velitelem!</text>
+	</string>
+<string id="zat_b103_merc_talk_to_commander_2">
+<text>Pokud se neco objevi, promluv s velitelem.</text>
+</string>
+<string id="zat_b103_merc_warning">
+<text>Jsi blby nebo co? Ustup, nez ti vystrelim do mozku!</text>
+</string>
+<string id="zat_b106_dont_receipt_reward">
+<text>Dobre, lidi, je cas se vratit. Jste k nicemu, takze neocekavejte odmenu.</text>
+</string>
+<string id="zat_b106_garmata_refuse_talk">
+<text>Mluv s bossem. Vic jsem pro strileni nez pro reci.</text>
+</string>
+<string id="zat_b106_garmata_story_reply">
+<text>Zeptal jsem se vsude, ale je to k nicemu. Nikdo nic nevi. Je to jako by byl poltergeist nebo neco podobneho.</text>
+</string>
+<string id="zat_b106_gonta_hunt_complete">
+<text>Je hotovo. Nase prace je hotova, pojdme se vratit. Nezapomen zajit za Pastyrem do Janova a rict mu, ze zranena chimaera je porazena, abys dostal svoji cast.</text>
+</string>
+<string id="zat_b106_gonta_hunt_great">
+<text>Skvele odvedeno! Mozna by ses mel stat lovce chimer jako povolani.</text>
+</string>
+<string id="zat_b106_gonta_hunt_kill">
+<text>Jsme tam. Je to blizko, citim to. Kdyz ji uvidis, miri na hlavu. Ale nepriblizuj se moc, chimeri te citi na mili daleko, i kdyz spi.</text>
+</string>
+<string id="zat_b106_gonta_hunt_plan">
+<text>Pozor! Chimera lovi v noci a rano se vraci do sveho ukrytu na odpocinek. Mohli bychom ji prekvapit pri svitani, kdyz odpociva. Staci se ji priblizit a zabit ji, dokud spi. Dost jednoduche. Ale musime vstavat brzy. Setkame se v baru v... 3 hodiny rano.</text>
+</string>
+<string id="zat_b106_gonta_hunt_sneak">
+<text>Opatrne! Musime byt naprosto tisi, nesmi nas slyset.</text>
+</string>
+<string id="zat_b106_gonta_see_chimera">
+<text>Ten parchant spi... Krab ti posila pozdrav. Hor!</text>
+</string>
+<string id="zat_b106_gonta_story_angry">
+	<text>Ten parchant syn beh nechape, ze toho bude litovat.</text>
+</string>
+<string id="zat_b106_gonta_story_ask">
+	<text>Tak, zjistil jsi neco o Magpie?</text>
+</string>
+<string id="zat_b106_gonta_story_calm">
+	<text>Drz se tam, kamarade, doktor rekl, ze budes za par dni zase na nohou. Mohl bys vyuzit tenhle cas k odpocinku a relaxaci.</text>
+</string>
+<string id="zat_b106_gonta_to_actor">
+	<text>Hej stalkre! Pojd sem! Mam pro tebe otazku.</text>
+</string>
+<string id="zat_b14_robbery_after_pay_snd_1">
+	<text>Dobre! Ted se otoc pomalu a uz se ztrat zpatky tam, odkud jsi prisel!</text>
+</string>
+<string id="zat_b14_robbery_after_pay_snd_2">
+	<text>Jses blbej, ne? Vypadni odsud!</text>
+</string>
+<string id="zat_b14_robbery_after_pay_snd_3">
+	<text>Hej, hovado! Je tam vubec nekdo? Miz, nebo te sem a ted rozsekam!</text>
+</string>
+<string id="zat_b14_robbery_kill_actor_snd_1">
+	<text>Plne te vysaje, svine!</text>
+</string>
+<string id="zat_b14_robbery_kill_actor_snd_2">
+	<text>Klesnes, posranej hajzle!</text>
+</string>
+<string id="zat_b14_robbery_kill_actor_snd_3">
+	<text>Dej mi artefakt, debile!</text>
+</string>
+<string id="zat_b14_robbery_punch">
+	<text>Co za svine!</text>
+</string>
+<string id="zat_b14_robbery_stand_still_snd">
+	<text>Zustan tam stat a ani nemysli na to, abys se hnul, ty hovado! Jedno spatne pohybu a jsi k nicemu!</text>
+</string>
+<string id="zat_b14_robbery_stop_snd">
+	<text>Zastav tam! Schovaj zbran a nehni se!</text>
+</string>
+<string id="zat_b14_scene_1_give_item">
+	<text>Hej, Vouse, podivej, co jsem nasel na te stare trosce! Tohle bude stacit?</text>
+</string>
+<string id="zat_b14_scene_1_linker_reply">
+	<text>Wow, to je neco uplne jineho...! Nikdy jsem takovou vec nevidel. Tady, vem si tohle.</text>
+	</string>
+<string id="zat_b14_scene_1_stalker_bye">
+	<text>Dekuji. Pokud mate jeste nejakou praci, vite, kde me najdete.</text>
+</string>
+<string id="zat_b14_scene_1_stalker_offended">
+	<text>Jen se bezte dal. Urcite si na tenhle okamzik vzpomenete.</text>
+</string>
+<string id="zat_b14_scene_1_stalker_teach_actor">
+	<text>Ach, jsi to ty... No, penize potrebuji stejne jako ty.</text>
+</string>
+<string id="zat_b18_noah_breakdown">
+	<text>Aah... Tohle je to! Je to konec! Jsou tu... mutanti... vsude mutanti!</text>
+</string>
+<string id="zat_b18_noah_gave_first_artefact">
+	<text>Tahle hovadina te nezachrani, az ti mutanti zacnou lezou ze vsech koutu. Tady, vezmi si to a zmiz mi z oci!</text>
+</string>
+<string id="zat_b18_noah_gave_second_artefact">
+	<text>Ha! Myslis si, ze te to ochrani pred emisi? Tady, vezmi si to a utec. Zachran si zadek!</text>
+</string>
+<string id="zat_b18_noah_go_away">
+	<text>Tak zmiz, podivine!</text>
+</string>
+<string id="zat_b18_noah_greetings_1">
+	<text>Do pekla, zatraceni mutanti!!</text>
+</string>
+<string id="zat_b18_noah_greetings_2">
+	<text>Vypadnete odsud, parchanti, nebo vas vsechny sestrelim!</text>
+</string>
+<string id="zat_b18_noah_greetings_3">
+	<text>Mrchy mutanti... Odpadnete!</text>
+</string>
+<string id="zat_b18_noah_no_talk_1">
+	<text>Nechte me byt.</text>
+</string>
+<string id="zat_b18_noah_no_talk_2">
+	<text>Jdete dal.</text>
+</string>
+<string id="zat_b18_noah_no_talk_3">
+	<text>Vypadnete.</text>
+</string>
+<string id="zat_b20_noah_instructions">
+	<text>Dobre pozoruj a nasleduj me.</text>
+</string>
+<string id="zat_b20_noah_jumped">
+	<text>Skvela prace! Klidne se nekdy stav.</text>
+</string>
+<string id="zat_b20_noah_pda">
+	<text>Takze tam jsou ti proklati mutanti. Vylezli na plosinu s tim, ze si mysli, ze je Noah nedostane. Asi nevi, ze mam vlastni cestu tam nahoru od severni farmy. Ceka te zabavna jizda, parchanti!</text>
+</string>
+<string id="zat_b215_stalker_guide_farewell_1">
+	<text>No tak, hodne stesti!</text>
+</string>
+<string id="zat_b215_stalker_guide_farewell_2">
+	<text>Dobrou prestrelku!</text>
+</string>
+<string id="zat_b215_stalker_guide_greeting_1">
+	<text>Ahoj.</text>
+</string>
+<string id="zat_b215_stalker_guide_greeting_2">
+	<text>Hele, stalker. Jak se mas?</text>
+</string>
+<string id="zat_b22_stalker_medic_diary">
+	<text>Zaznam 12. Moje vyzkum se brzy uzavre... Lide v tabore zacinaji neco tusit. Grouse s Danilou planuji jit lovit nejake vysavace krve... Zajimalo by me, kdy si toho vsimnou? Musim seradit sklenice s krvi, abych zjistil, ktere jsou kontaminovane... A zbytek schovat... Nekdo jde... Zaznam 13. Mozna muj posledni. Nejprve ten zvedavy lovec a ted jeste Grouse. S timto neutecu. Prijdou pro me. Vim to... Ale vlastne je to jedno... Tato zavislost na hemoglobinu me brzy zabije. Radeji zemru od kulky nez na nemoc.</text>
+</string>
+<string id="zat_b22_stalker_medic_farewell_1">
+	<text>Ano, jiste. Sbohem.</text>
+</string>
+<string id="zat_b22_stalker_medic_farewell_2">
+	<text>Sbohem.</text>
+</string>
+<string id="zat_b22_stalker_medic_greeting_1">
+	<text>Co se deje? Jsi zraneny nebo trpis radiaci?</text>
+</string>
+<string id="zat_b22_stalker_medic_greeting_2">
+	<text>Ted ne, jo?</text>
+</string>
+<string id="zat_b22_stalker_medic_hello">
+	<text>Vedel jsem, ze se nakonec prozradim... Jsem si jisty, ze mas spoustu otazek.</text>
+</string>
+<string id="zat_b28_heli_3_evacuation_points">
+	<text>Informace na palubnim pocitaci... Dobra, Stingray-3 mel poruchu obou motoru. Hm... Co jeste?... Mapa s moznymi evakuacnimi misty. Pozice B2, B28 a B205. Zajimave.</text>
+</string>
+<string id="zat_b29_stalker_rival_1_order_ready">
+	<text>Prace je hotova. Tady je artefakt.</text>
+</string>
+<string id="zat_b29_stalker_rival_2_order_ready">
+	<text>Prace je hotova. Tady, vezmi si ten artefakt.</text>
+</string>
+<string id="zat_b3_tech_drink_no_more">
+<text>Ahoj, stalkeru. Jak se dari?</text>
+</string>
+<string id="zat_b3_tech_drunk">
+<text>Ehm... Co chces...?</text>
+</string>
+<string id="zat_b3_tech_drunk_discount">
+<text>Ehm... Neco jsi zapomnel?</text>
+</string>
+<string id="zat_b3_tech_no_sleep_1">
+<text>Hmm? Co...? Nech me spat...</text>
+</string>
+<string id="zat_b3_tech_no_sleep_2">
+<text>No tak, nech me byt...!</text>
+</string>
+<string id="zat_b3_tech_no_sleep_3">
+<text>Je tam... Sluz si napojem!</text>
+</string>
+<string id="zat_b3_tech_realy_drunk">
+<text>Co... Co ti muzu udelat?...</text>
+</string>
+<string id="zat_b3_tech_realy_drunk_discount">
+<text>Aah... Ty jsi to... Vejdi!</text>
+</string>
+<string id="zat_b3_tech_see_produce_62">
+<text>Co? Se... Sedesat dva...? To je nemozne.</text>
+</string>
+<string id="zat_b3_tech_sleep_1">
+<text>[usnul]</text>
+</string>
+<string id="zat_b3_tech_sleep_2">
+<text>...Rikam ti, nemame dost energie...</text>
+</string>
+<string id="zat_b3_tech_sleep_3">
+<text>[usnul]</text>
+</string>
+<string id="zat_b3_tech_sleep_4">
+<text>Hej, kluci, kam jdete...? Ne, ja... Ja tu zustanu...</text>
+</string>
+<string id="zat_b3_tech_sober">
+<text>Ahoj...</text>
+</string>
+<string id="zat_b3_tech_take_first_dose">
+<text>Za pevnou ruku!</text>
+</string>
+<string id="zat_b3_tech_take_second_dose">
+<text>Za dobre odvedenou praci!</text>
+</string>
+<string id="zat_b3_tech_take_third_dose">
+<text>Za nase spolecne cile!</text>
+</string>
+<string id="zat_b30_owl_about_trouble">
+		<text>Tohle je Sovicka. Prijd za mnou! Musime si promluvit o nasem obchode.</text>
+	</string>
+<string id="zat_b30_owl_stalker_trader_farewell_1">
+		<text>Presne tak, jdi pryc odtud!</text>
+	</string>
+<string id="zat_b30_owl_stalker_trader_farewell_2">
+		<text>Necht te dvere netrefi...</text>
+	</string>
+<string id="zat_b30_owl_stalker_trader_greeting_1">
+		<text>Takze, mas neco noveho?</text>
+	</string>
+<string id="zat_b30_owl_stalker_trader_greeting_2">
+		<text>Co jsi, socha? Pokud mas neco, rekni to. Pokud ne, slapej pryc!</text>
+	</string>
+<string id="zat_b33_stalker_snag_greeting_gun">
+		<text>Wow, to je pekna zbran! Dej mi na ni kuk.</text>
+	</string>
+<string id="zat_b38_stalker_cop_about_lair_bloodsucker">
+		<text>Videl jsem, jak se do budovy dostal krevsajr. Predpokladam, ze tam maji sve utociste... Ale pojdme tu teorii otestovat.</text>
+	</string>
+<string id="zat_b38_stalker_cop_another_one">
+		<text>Pozor! Tam je dalsi!</text>
+	</string>
+<string id="zat_b38_stalker_cop_appear">
+		<text>Slysel jsi to? ... Nechte toho, asi jsem to slysel jenom ja.</text>
+	</string>
+<string id="zat_b38_stalker_cop_bloodsuckers_no_sleep">
+		<text>Probouzeji se! Utikej!</text>
+	</string>
+<string id="zat_b38_stalker_cop_bloodsuckers_sleep">
+		<text>Pssst! Jsou tady spici krevsaugri. Pokusme se jimi projit beze zvuku.</text>
+	</string>
+<string id="zat_b38_stalker_cop_come_here_1">
+		<text>Pojd sem, podivej se na to! ... Je to asi jedina cesta do sklepa.</text>
+	</string>
+<string id="zat_b38_stalker_cop_come_here_2">
+		<text>Prosim, zdrz svuj potlesk! Ted se podivame dovnitr.</text>
+	</string>
+<string id="zat_b38_stalker_cop_down_floor">
+		<text>Mas nozicky stale v poradku? Zkontrolujme ten sklep.</text>
+	</string>
+<string id="zat_b38_stalker_cop_fear_end">
+	<text>Pfiu... zvladli jsme to. A jeste jsme je neprobudili ze spanku.</text>
+</string>
+<string id="zat_b38_stalker_cop_find_lair_pda">
+	<text>Myslim, ze jsem nasel ukryt. Prijed sem co nejdriv!</text>
+</string>
+<string id="zat_b38_stalker_cop_hit_1">
+	<text>Davej pozor, kam strilis!</text>
+</string>
+<string id="zat_b38_stalker_cop_hit_2">
+	<text>Co do haje delas? Strelil jsi me!</text>
+</string>
+<string id="zat_b38_stalker_cop_jump_down_1">
+	<text>No, skok dolu je jedina moznost... Jdi za mnou!</text>
+</string>
+<string id="zat_b38_stalker_cop_jump_down_2">
+	<text>Tohle vypada jako vychod! Skoc!</text>
+</string>
+<string id="zat_b38_stalker_cop_kill_1">
+	<text>Jeden je pryc! Ale byli tu dva, tak bud opatrny!</text>
+</string>
+<string id="zat_b38_stalker_cop_kill_2">
+	<text>To by melo stacit. To byl posledni.</text>
+</string>
+<string id="zat_b38_stalker_cop_not_a_hunter">
+	<text>Tady neni zadny lovec... Jezis! Podivej se, jsou to drapy. Ti kluci, ktere jsme nasli predtim, nemeli drapy. Divne.</text>
+</string>
+<string id="zat_b38_stalker_cop_not_a_hunter_1">
+	<text>Podivej se na ty drapy! Zvlastni...</text>
+</string>
+<string id="zat_b38_stalker_cop_not_a_hunter_2">
+	<text>Ti tela, ktere jsme predtim nasli, je nemela.</text>
+</string>
+<string id="zat_b38_stalker_cop_not_a_hunter_3">
+	<text>Lovec tu neni, pojdme!</text>
+</string>
+<string id="zat_b38_stalker_cop_notice">
+	<text>Davej pozor na stiny! Mohou se objevit odkudkoli.</text>
+</string>
+<string id="zat_b38_stalker_cop_see_bloodsucker">
+	<text>Je tam neco. Pokryvej me!</text>
+</string>
+<string id="zat_b38_stalker_cop_sit">
+	<text>Kleknout!</text>
+</string>
+<string id="zat_b38_stalker_cop_tell_about_quest">
+<text>Lovec se nam nepodarilo najit, ale mam predstavu, kde by mohl byt. Necham to zkontrolovat a pak se ti ozvu. Mezitim dej vedet stalkerum o techto krvave sajicich bestiich</text>
+</string>
+<string id="zat_b38_stalker_cop_tell_stalker_about_lair">
+<text>Musime o tom informovat Bearda. Doufejme, ze vi, jak se s temi parchanty vyporadat.</text>
+</string>
+<string id="zat_b38_stalker_cop_try">
+<text>Tohle je moje prace. Zamky jsem odemykal cely zivot.</text>
+</string>
+<string id="zat_b39_joker_pda_record">
+	<text>Jsem si jisty, ze artefakt je na samotnem strome. Je zrejme, ze se mohu vylezt na strom z kopce. Jen doufam, ze na tech kopcich nejsou mutanti. Je skoda, ze jsem sem musel prijit sam pote, co jsem mel hadku s Cardanem a Barge. Ale az prinesu ten artefakt zpet, uvidi, ze jsem mel porad pravdu.</text>
+</string>
+<string id="zat_b40_merc_combat">
+	<text>Dobre, sesad toho debila!</text>
+</string>
+<string id="zat_b40_merc_go_away_1">
+	<text>Vrat se, stopari! Toto misto neni pro tebe!</text>
+</string>
+<string id="zat_b40_merc_go_away_2">
+	<text>Stopari! Uz se zde nechapej, dokud jeste mas nohy!</text>
+</string>
+<string id="zat_b42_controller_warning_1">
+	<text>Opust toto misto, clovece.</text>
+</string>
+<string id="zat_b42_controller_warning_2">
+	<text>Jdi odsud, utikej, dokud muzes!</text>
+</string>
+<string id="zat_b44_stalker_barge_pda">
+	<text>Cardan, ten stary opilec! Nejenze je liny parchant, jakmile se napil, "Je tady lip. Meli bychom si to uzit..." Ale pak na me a Jokera zautoci, rika, ze jsme mladi a nemame paru! Haha...! Aha, Joker je taky kus prace. Nabere, ze se napil, popadne tasku a zmizi. Kdyz jsem se snazil uklidnit Cardana, odesel a sakra nevim, kam sel. A co mam delat ja? Pit s tim senilnim blbcem? Ne, dekuji, jeho vodka je odporna! Fuj. A pomyslet si, jak slibne to vsechno zacalo...</text>
+</string>
+<string id="zat_b5_bandit_dealer_speak_1">
+	<text>Podivej, mame tady tyhle artefakty a muzeme jich ziskat vic. Vymenou hledame zbrane a dobre vybaveni.</text>
+</string>
+<string id="zat_b5_bandits_see_actor">
+	<text>Hej! Kdo tam jde?</text>
+</string>
+<string id="zat_b5_dealer_angry">
+	<text>Ty, idiote, privedl jsi toho spiona s sebou!</text>
+</string>
+<string id="zat_b5_dealer_bandit_speak_1">
+	<text>Co mas, ukaz mi!</text>
+</string>
+<string id="zat_b5_dealer_bandit_speak_2">
+	<text>Vis, ze mam cokoli, co ma Odpad, takze zbrane a vybaveni nejsou problem. Vsechno, co mam, je prvotridni, o tom neni pochyb.</text>
+</string>
+<string id="zat_b5_dealer_kill_bandits">
+	<text>Zlikviduj je. Nepotrebuji svedky.</text>
+</string>
+<string id="zat_b5_dealer_see_clients">
+	<text>Prichazeji.</text>
+</string>
+<string id="zat_b5_dealer_to_actor_fire">
+	<text>Sraz je!</text>
+</string>
+<string id="zat_b5_dealer_wait_clients">
+	<text>Pockame tady. Klienti by se meli brzy objevit.</text>
+</string>
+<string id="zat_b5_dealer_want_speak_with_actor">
+	<text>Proc si nedame maly rozhovor, ty a ja?</text>
+</string>
+<string id="zat_b5_dealer_who_there">
+	<text>Co se deje?</text>
+</string>
+<string id="zat_b5_stalkers_all_clear_go">
+	<text>No, to objasnuje veci. Sraz je!</text>
+</string>
+<string id="zat_b5_stalkers_refuse_talk">
+	<text>Pta se sefa.</text>
+</string>
+<string id="zat_b5_stalkers_watch_out_sentry">
+	<text>Davej pozor, at te hlidka nevidi.</text>
+</string>
+<string id="zat_b5_sultan_angry">
+	<text>Stalkerove? Co to sakra...?!</text>
+</string>
+<string id="zat_b5_sultan_kill_stalkers">
+	<text>Sraz je, kluci!</text>
+</string>
+<string id="zat_b52_port_bandits_after_pay_snd_1">
+	<text>Dobre. Ted se vypadni odtud, nez si rozmyslim!</text>
+</string>
+<string id="zat_b52_port_bandits_after_pay_snd_2">
+	<text>Stale tady? Nejsem trpelivy clovek, vis?</text>
+</string>
+<string id="zat_b52_port_bandits_after_pay_snd_3">
+	<text>Dobre, dost bylo! Srazim te dolu!</text>
+</string>
+<string id="zat_b52_port_bandits_kill_actor_snd_1">
+	<text>Zarizni to, blbce!</text>
+</string>
+<string id="zat_b52_port_bandits_kill_actor_snd_2">
+	<text>Kluci, nechce spolupracovat. Zbavte se ho!</text>
+</string>
+<string id="zat_b52_port_bandits_kill_actor_snd_3">
+	<text>Kluci, tenhle parchant se nechce podelit!</text>
+</string>
+<string id="zat_b52_port_bandits_see_actor">
+	<text>To je ten chlapek s tou peknou zbrani! Hej, pockej!</text>
+</string>
+<string id="zat_b52_port_bandits_stand_still_snd">
+	<text>Pockej tam! Jdu dolu!</text>
+</string>
+<string id="zat_b53_artefact_hunter_2_come_on">
+	<text>Jen se uvolni a pokracuj v pohybu.</text>
+</string>
+<string id="zat_b53_artefact_hunter_2_come_on_continue">
+	<text>Vidis, tvuj oblek to zvladne. Pokracuj dal!</text>
+</string>
+<string id="zat_b53_artefact_hunter_help">
+	<text>Pomoz mi, stopari!</text>
+</string>
+<string id="zat_b7_bandit_boss_sultan_farewell_1">
+	<text>Uvidime se... Pokud se ti podari zustat cely.</text>
+</string>
+<string id="zat_b7_bandit_boss_sultan_farewell_2">
+	<text>Zastav se nekdy. Uzijeme si spoustu zabavy!</text>
+</string>
+<string id="zat_b7_bandit_boss_sultan_greeting_1">
+	<text>Sam pan sef!</text>
+</string>
+<string id="zat_b7_bandit_boss_sultan_greeting_2">
+	<text>Takze jsi dokazal dostat sem svou zadnici? Bravo!</text>
+</string>
+<string id="zat_b7_raider_after_bad">
+	<text>No, to je hotovo. ... Co sakra delas? Obdivujes okolni krajinu?</text>
+</string>
+<string id="zat_b7_raider_after_ok">
+	<text>Tak, to je hotovo! Bylo sladke te sledovat pri praci.</text>
+</string>
+<string id="zat_b7_raider_sneak_comments_1">
+	<text>Dame jim co proto!</text>
+</string>
+<string id="zat_b7_raider_sneak_comments_2">
+	<text>Hele, co se deje?</text>
+</string>
+<string id="zat_b7_raider_sneak_comments_3">
+	<text>Zklidni se, chlapce! Zvladneme je s lehkosti.</text>
+</string>
+<string id="zat_b7_raiders_attack">
+	<text>Delejme to!</text>
+</string>
+<string id="zat_b7_raiders_ready_to_go">
+	<text>Takze... Uz jsme na tebe dlouho cekali.</text>
+</string>
+<string id="zat_b7_raiders_sneak_confuse">
+	<text>Co sakra...?! Schovavaji se nebo co?</text>
+</string>
+<string id="zat_b7_raiders_to_boss">
+	<text>Pozor! Sultan te chce videt.</text>
+</string>
+<string id="zat_b7_stalker_after_bad">
+	<text>Dostali jsme ty parchanty. Nejsi moc ochotny zapojit se do opravdoveho boje, ze?</text>
+</string>
+<string id="zat_b7_stalker_after_ok">
+	<text>Dostali jsme ty parchanty. Diky za tvoji pomoc!</text>
+</string>
+<string id="zat_b7_stalkers_attack">
+	<text>Zabij je vsechny!</text>
+</string>
+
+	<!-- Jupiter -->
+<string id="jup_a10_bandit_leader_hello">
+	<text>Podivejte se na toho! Sam muz!</text>
+</string>
+<string id="jup_a10_bandits_warn">
+	<text>Schovej tu zbran, tulaku, nebo te rovnou zahrabu do zeme!</text>
+</string>
+<string id="jup_a10_vano_need_help">
+	<text>Co mam delat? Kdyz tam pujdu, prijdu o penize. Kdyz tam nepujdu, skoncim mrtvy.</text>
+</string>
+<string id="jup_a12_bandit_say_jump">
+	<text>Proc... slysim tam stale triskani drobnych v tvych kapsach?... No, slysim?</text>
+</string>
+<string id="jup_a12_bandit_threat_to_prisoner">
+	<text>Jeden dalsi krok a je mrtvy!</text>
+</string>
+<string id="jup_a12_bandits_bodyguard_warning_actor">
+	<text>Schovej tu zbran, rychle!</text>
+</string>
+<string id="jup_a12_bandits_warning_actor">
+	<text>Hej! Co tu delas? Vrat se tam, odkud jsi prisel, dokud jeste mas nohy.</text>
+</string>
+<string id="jup_a12_merc_attack_started">
+	<text>Jedme!</text>
+</string>
+<string id="jup_a12_merc_cover_us">
+	<text>Pokryji te.</text>
+</string>
+<string id="jup_a12_merc_lets_go">
+	<text>Pohybujeme se.</text>
+</string>
+<string id="jup_a12_merc_ready">
+	<text>Jsem na pozici.</text>
+</string>
+<string id="jup_a12_stalker_assaulter_1_argue">
+	<text>Stale si myslim, ze bychom meli prodat artefakt a pouzit penize na najmuti lidi. Timto zpusobem muzeme spolecne zautocit na bandity.</text>
+</string>
+<string id="jup_a12_stalker_assaulter_2_argue">
+	<text>Nemyslis, ze ho hned zastreli, jakmile budou mit artefakt?</text>
+</string>
+<string id="jup_a12_stalker_assaulter_3_argue">
+	<text>Nemuzeme se jim podvolit. Bez ohledu na to, co jim date, vzdy chteji vic.</text>
+</string>
+<string id="jup_a12_stalker_diplomat_1_argue">
+	<text>To v zadnem pripade! Mnohem lepe je, kdyz jim dame artefakt jako vykupne.</text>
+</string>
+<string id="jup_a12_stalker_diplomat_2_argue">
+	<text>Jiste ho zastreli, kdyz zacneme strilet.</text>
+</string>
+<string id="jup_a12_stalker_diplomat_3_argue">
+	<text>Neustoupime...! Dodrzovani jejich podminek je jedina moznost, kterou mame.</text>
+</string>
+<string id="jup_a12_stalker_diplomat_no_talk">
+<text>Neduveruji ti.</text>
+</string>
+<string id="jup_a12_stalker_prisoner_says_we_can_run_from_here">
+<text>Utikej! Stale to muzeme stihnout!</text>
+</string>
+<string id="jup_a12_stalker_prisoner_thanks_actor">
+<text>Diky, ze jsi me zachranil.</text>
+</string>
+<string id="jup_a12_stalkers_to_actor_came_back">
+<text>Hej, kam jdes? Pockej! Vrat se sem zpatky!</text>
+</string>
+<string id="jup_a12_stalkers_to_actor_meet_on_base">
+<text>Setkam se s tebou u stareho nadrazi.</text>
+</string>
+<string id="jup_a6_base_alarm">
+	<text>Pozor vsichni stalkerove a kdokoli dalsi, kdo se stara, stanice Yanov byla napadena! Prozatim jsme zablokovali vsechny vstupy.</text>
+</string>
+<string id="jup_a6_base_guard_1">
+	<text>Schovej tu zbran. Toto je neutralni oblast.</text>
+</string>
+<string id="jup_a6_base_guard_2">
+	<text>Jsme uz tak v ohnisku palby, stalkeru. Pokud neuchovas tu zbran, zadas si problemy.</text>
+</string>
+<string id="jup_a6_base_guard_3">
+	<text>Dokud mas zbran v ruce, nedostanes se dal. Rozumel si?!</text>
+</string>
+<string id="jup_a6_base_megaphone_1">
+	<text>Zpomal, sefe. Nejprve schovej tu zbran.</text>
+</string>
+<string id="jup_a6_base_megaphone_2">
+	<text>Vstup s zbranemi neni povolen.</text>
+</string>
+<string id="jup_a6_base_megaphone_3">
+	<text>Stalkere, pokud chces vejit, pripoutej svoji zbran.</text>
+</string>
+<string id="jup_a6_base_relax">
+	<text>Pozor vsichni stalkerove a kdokoli dalsi, kdo se stara, Yanov je opet bezpecny. Jste vitani kdykoliv.</text>
+</string>
+<string id="jup_a6_duty_leader_farewell_1">
+	<text>Zase nekdy uvidime, stalkere!</text>
+</string>
+<string id="jup_a6_duty_leader_farewell_2">
+	<text>Tak to je ode me. Mej se fajn!</text>
+</string>
+<string id="jup_a6_duty_leader_greeting_1">
+	<text>Ahoj, stalkere.</text>
+</string>
+<string id="jup_a6_duty_leader_greeting_2">
+	<text>Jaky je tvuj zamer tady?</text>
+</string>
+<string id="jup_a6_freedom_leader_farewell_1">
+	<text>Zdar!</text>
+</string>
+<string id="jup_a6_freedom_leader_farewell_2">
+	<text>Mej se!</text>
+</string>
+<string id="jup_a6_freedom_leader_greeting_1">
+	<text>Hej, kamo! Co se deje?</text>
+</string>
+<string id="jup_a6_freedom_leader_greeting_2">
+	<text>Pojd dal, kamo, uvolni se. Sbal se a odpocin si.</text>
+</string>
+<string id="jup_a6_stalker_barmen_farewell_1">
+	<text>Zastav se nekdy. Tady to muze byt zabava.</text>
+</string>
+<string id="jup_a6_stalker_barmen_farewell_2">
+<text>Uvidime se!</text>
+</string>
+<string id="jup_a6_stalker_barmen_greeting_1">
+<text>Pojd sem, kamo! Mam vsechno, co budes kdy potrebovat.</text>
+</string>
+<string id="jup_a6_stalker_barmen_greeting_2">
+<text>Aloha!</text>
+</string>
+<string id="jup_a6_stalker_medik_after_surge">
+<text>Emitovani je za nami. Doufam, ze je vsichni v poradku. Pokud jsi zraneny, prijd do Yanova a vylecime te.</text>
+</string>
+<string id="jup_a6_stalker_medik_farewell_1">
+<text>Dalsi! ... eh... Mej se hezky a bud zdravy!</text>
+</string>
+<string id="jup_a6_stalker_medik_farewell_2">
+<text>Dbej na sebe a vyhybej se problemum!</text>
+</string>
+<string id="jup_a6_stalker_medik_greeting_1">
+<text>Jsi bledy, kamo. Co takhle par injekci?</text>
+</string>
+<string id="jup_a6_stalker_medik_greeting_2">
+<text>Znovu zraneny? Neztracis cas, ze ne?</text>
+</string>
+<string id="jup_a6_stalker_medik_phase_1">
+<text>Pozor, pozor! Priblizuje se emitovani. Okamzite najdi kryt!</text>
+</string>
+<string id="jup_a6_stalker_medik_phase_2">
+<text>Pozor, pozor! Emitovani je na ceste! Okamzite najdi kryt!</text>
+</string>
+<string id="jup_a9_actor_conservation_info">
+<text>Takze... Prechod podzemim byl naplnen plynem pote, co byl uzavren.</text>
+</string>
+<string id="jup_a9_actor_power_info">
+<text>Vstup do podzemniho tunelu je tady. Pokud aktivujeme generator, budeme schopni odemknout prepravni zamek.</text>
+</string>
+<string id="jup_a9_actor_way_info">
+<text>Schema pro podzemni tunel "Pripyat-1". To je dukaz, ze existuje podzemni cesta do Pripyatu.</text>
+</string>
+<string id="jup_b1_actor_dont_come">
+	<text>Hele, kamo! Cas je penize. Uz jsme na tebe necekali, skupina uz se vraci.</text>
+</string>
+<string id="jup_b1_stalker_warning">
+	<text>Pozor... pozor... opatrnost... kontroler!</text>
+</string>
+<string id="jup_b1_stalkers_aftershock_1">
+	<text>Uhm... sakra... co... co se deje...? Zase...</text>
+</string>
+<string id="jup_b1_stalkers_aftershock_2">
+	<text>Ooh... impuls... ...bleh... hrozne...! Kamo, hlava me rozdira!</text>
+</string>
+<string id="jup_b1_stalkers_first_stay">
+	<text>Budeme tu na tebe cekat. Kdyby se neco stalo, mas nas za zady.</text>
+</string>
+<string id="jup_b1_stalkers_get_out">
+	<text>Ach, sakra! Radsi se rychle vyparme odsud!</text>
+</string>
+<string id="jup_b1_stalkers_greeting">
+	<text>Tak ty jsi expert na diru, co? He-he-he... Nemej strach, kluci se postaraji o mutanty rychle a efektivne.</text>
+</string>
+<string id="jup_b1_stalkers_lair_check">
+	<text>Hmm... vypada to tady klidne. Muzeme pokracovat.</text>
+</string>
+<string id="jup_b1_stalkers_monsters_beat_off">
+	<text>Je to v pohode. Bylo tam par potkanu, ale zpracovali jsme je.</text>
+</string>
+<string id="jup_b1_stalkers_monsters_out">
+	<text>Vypada to, ze to bylo posledni z nich.</text>
+</string>
+<string id="jup_b1_stalkers_psy_wound_1">
+	<text>Aargh... Je ve mne! Ne... neee...</text>
+</string>
+<string id="jup_b1_stalkers_second_stay">
+	<text>Jdi! My pokryjeme vstup.</text>
+</string>
+<string id="jup_b1_stalkers_see_zombied">
+	<text>Je to zombie!</text>
+</string>
+<string id="jup_b10_stalker_drunk_no_meet_1">
+	<text>Nu... ...Er... Ty vis...</text>
+</string>
+<string id="jup_b10_stalker_drunk_no_meet_2">
+	<text>Huh? Coze?</text>
+</string>
+<string id="jup_b10_stalker_drunk_no_meet_3">
+	<text>Er... No...</text>
+</string>
+<string id="jup_b10_ufo_memory_repaired_nitro">
+	<text>Ahoj, tady Nitro. Za to pametove moduly se stav. Je pro tebe pripraveny.</text>
+</string>
+<string id="jup_b15_zulus_greeting">
+	<text>Co se deje?</text>
+</string>
+<string id="jup_b15_zulus_ready">
+	<text>Ok, je to dohoda: pujdeme spolecne. Jakekoliv bojovniky, ktere uvidis, mi posli a ja z nich udelam tym. Az bude vsechno pripravene, dej mi vedet. Sebereme Nitra a vydame se na Jupiter.</text>
+</string>
+<string id="jup_b19_freedom_yar_about_zombie_1">
+	<text>Vypada to jako klidna vesnice... pokud neporusime mistni obyvatele.</text>
+</string>
+<string id="jup_b19_freedom_yar_about_zombie_2">
+	<text>Tak klidne, jako bychom byli na letovisku.</text>
+</string>
+<string id="jup_b19_freedom_yar_about_zombie_3">
+	<text>Uz jsme skoro tam.</text>
+</string>
+<string id="jup_b19_freedom_yar_come_here_1">
+	<text>Pojd sem, zacne to!</text>
+</string>
+<string id="jup_b19_freedom_yar_come_here_2">
+	<text>No tak, na co cekas? Zmeskas tu nejlepsi cast.</text>
+</string>
+<string id="jup_b19_freedom_yar_come_here_3">
+	<text>Co delas? Pospichej, zacina ta zabava.</text>
+</string>
+<string id="jup_b19_freedom_yar_explanations">
+	<text>Takze, to je vse. Vidim, ze se te to hemzi otazkami, a chapu to. Pojdme si pokecat, co ty na to?</text>
+</string>
+<string id="jup_b19_freedom_yar_guessed_long">
+	<text>Vypada to, ze jsem mel pravdu. Ted nas budou zombie kryt, strilej ty parchanty!</text>
+</string>
+<string id="jup_b19_freedom_yar_guessed_short">
+	<text>Vypada to, ze jsem mel pravdu. Strilej ty parchanty!</text>
+</string>
+<string id="jup_b19_freedom_yar_suspense">
+	<text>Uvidime, jestli jsem mel pravdu.</text>
+</string>
+	<string id="jup_b19_freedom_yar_zombie_hit">
+		<text>Proc jsi to udelal? Nedotkl se te, ze ne. Zatracene!</text>
+	</string>
+<string id="jup_b202_bandit_pda">
+	<text>Sultane, s tim luzrem jsem si poradil poradne. To ho nauci, at se s nami neplete.</text>
+</string>
+<string id="jup_b202_bandit_to_snag">
+	<text>Sultan posila pozdravy. Otevri si pusu, parchante!</text>
+</string>
+<string id="jup_b202_snag_pda">
+	<text>Musim se dostat dal od techhle prcku, cim driv, tim lip. Korist, kterou jsem schoval za podstavcem, mi vydrzi na chvili. Je cas jit dal. Urcite uz me hledaji. Ale to je fuk. Uvidime, kdo koho dostane nakonec.</text>
+</string>
+<string id="jup_b207_duty_guards_warning_actor">
+	<text>Hej! Odsud zmiz! Jen clenove Duty maji vstup.</text>
+</string>
+<string id="jup_b207_duty_leader_about_depot">
+	<text>Gavrilenko! Zjistil jsem o tom skladu. Jsou to Freedomovci a je jich tam hodne. Seber celou svoji jednotku a ty parchante rychle seridime.</text>
+</string>
+<string id="jup_b207_duty_leader_about_depot_after">
+	<text>Pokud tohle projde, dostanes pristup ke skladu.</text>
+</string>
+<string id="jup_b207_duty_security_squad_to_freedom_leave">
+	<text>Pozor, Freedomovci! Tohle je uzemi Duty. Vypadnete odtud od toho skladu!</text>
+</string>
+<string id="jup_b207_duty_security_squad_to_freedom_start_attack">
+	<text>Zatraceni...! Sami si za to muzou. Chlapi, zacnete s operaci!</text>
+</string>
+<string id="jup_b207_freedom_guards_warning_actor">
+	<text>Tohle neni verejna cast, kloucku. Nejlepsi by bylo, kdybys sel svou cestou.</text>
+</string>
+<string id="jup_b207_freedom_leader_about_depot">
+	<text>Kremen! Vezmi sve lidi a pripoj se k Haidukovi u skladu. Ty Duty parchanti by se meli brzy objevit pro svoje veci.</text>
+</string>
+<string id="jup_b207_freedom_leader_about_depot_after">
+	<text>Skvele! Ted se kluci dokazou branit. Nestanu na laskavosti, takze muzes tu schranku pouzit kdykoli budes chtit. Dam vsem vedet.</text>
+</string>
+<string id="jup_b207_freedom_recon_squad_refuse">
+	<text>Jasne! Jen nam dej chvili na to, abychom si doplnili nejake strelivo.</text>
+	</string>
+
+<string id="jup_b212_trapper_found_chimera">
+	<text>Hele, tady Trapper. Mel jsem tady lovce, ktery videl vcera vecer chimeru. Podle popisu je to ta sama, kterou hledame. Prijd se mnou, pokud muzes. Je to dulezite.</text>
+</string>
+<string id="jup_b217_stalker_guide_welcome">
+	<text>Tady jsme. Stanice Yanov je utocistem relativni bezpecnosti v okoli Jupiteru. Tady se rozchazime kazdy svou cestou. Ale pokud me budes potrebovat, hledej me v baru.</text>
+</string>
+<string id="jup_b217_stalker_tech_farewell_1">
+	<text>Zatim!</text>
+</string>
+<string id="jup_b217_stalker_tech_farewell_2">
+	<text>Potkame se zase!</text>
+</string>
+<string id="jup_b217_stalker_tech_greeting_1">
+	<text>Hej ty!</text>
+</string>
+<string id="jup_b217_stalker_tech_greeting_2">
+	<text>Ahoj!</text>
+</string>
+<string id="jup_b217_stalker_tech_welcome">
+	<text>Jsi tu poprve? Ja jsem tu relativne novy. Jmenuju se Nitro a zabyvam se vybavenim. Opravim cokoli, co potrebujes. Ale... sehnat dobre naradi je tady problem. Pokud neco uvidis, prineste to rovnou ke mne. A pokud potrebujes technickou pomoc, prijd za mnou a rad udelam, co budu moci pro tebe udelat.</text>
+</string>
+<string id="jup_b219_actor_go">
+	<text>To je dobre. Jdi.</text>
+</string>
+<string id="jup_b219_actor_ready">
+	<text>Vsichni jsou pripraveni, otevrete to.</text>
+</string>
+<string id="jup_b219_duty_ready">
+	<text>Pripraveno! Tym?</text>
+</string>
+<string id="jup_b219_duty_to_tech">
+	<text>Jasne!</text>
+</string>
+<string id="jup_b219_monolith_ready">
+	<text>Take pripraveno.</text>
+</string>
+<string id="jup_b219_soldier_ready">
+	<text>Mam z toho spatny pocit.</text>
+</string>
+<string id="jup_b219_stalker_ready">
+	<text>Jsem vzdy pripraven!</text>
+</string>
+<string id="jup_b219_tech_damn">
+	<text>Prichazi...! Pojdte!</text>
+</string>
+<string id="jup_b219_tech_opening">
+	<text>Roger. Jdeme na to!</text>
+</string>
+<string id="jup_b219_tech_ready">
+	<text>Jdeme?</text>
+</string>
+<string id="jup_b219_tech_success">
+	<text>Tak to je! To je lepsi.</text>
+</string>
+<string id="jup_b219_tech_to_duty">
+	<text>Hodne stesti, kluci!</text>
+</string>
+<string id="jup_b220_trapper_farewell_1">
+	<text>Mej se!</text>
+</string>
+<string id="jup_b220_trapper_farewell_2">
+	<text>Stastnou honbu!</text>
+</string>
+<string id="jup_b220_trapper_greeting_1">
+	<text>Ahoj!</text>
+</string>
+<string id="jup_b220_trapper_greeting_2">
+	<text>Jak se dari na lovu?</text>
+</string>
+<string id="jup_b221_duty_main_1">
+	<text>No, navrhuji pripit na statecny tym muzu Duty, kteri byli poslani na predni linie, aby poradne zmlatili zeleny hnoj.</text>
+</string>
+<string id="jup_b221_duty_main_2">
+	<text>Rekl jsem vam nekdy pribeh o Flintovi? Nejprve nastavil stalkerum past s chimerou, aby je napadla, potom nechal sveho partnera zemrit v anomalii a nakonec se pridal k Freedomu. Rekl bych, ze to je docela logicky zaver. Takze pripijime na nadeji, ze vsichni clenove Freedomu pujdou jeho cestou a my se postarame o ty, kdo zbyli.</text>
+</string>
+
+<string id="jup_b221_duty_main_3">
+	<text>Pijme na to, ze i v centru Zony jsou lide ochotni slouzit Dutu. Na nasi nove skupinu!</text>
+</string>
+<string id="jup_b221_duty_main_4">
+	<text>Zdvihuji sklenici na to, ze tento vyzkumny komplex je nyni plne chranen Dutou pred mutanti, anarchisty a dalsimi nizsimi tvory.</text>
+</string>
+<string id="jup_b221_duty_main_5">
+	<text>Kamaradi! Vypijme to na pocest nasich statecnych dobrovolniku, kteri provadeji mereni v nejnebezpecnejsich oblastech Zony pro nas vedecky pokrok.</text>
+</string>
+<string id="jup_b221_duty_main_6">
+	<text>Navrhuji pripitek pro bojovniky Duty, kteri statecne odrazili zbabely utok tech odpornych parchantu.</text>
+</string>
+<string id="jup_b221_duty_reaction_1">
+	<text>Presne tak!</text>
+</string>
+<string id="jup_b221_duty_reaction_2">
+	<text>Uplne souhlasim!</text>
+</string>
+<string id="jup_b221_duty_reaction_3">
+	<text>Dobre receno!</text>
+</string>
+<string id="jup_b221_duty_reaction_4">
+	<text>Nemohu vic souhlasit.</text>
+</string>
+<string id="jup_b221_duty_reply_1">
+	<text>Uz je mrtvy. A kdyby to bylo na mne, nechal bych vsechny vas nasledovat. Naucil bych vas prestat vyvazet vyrobky Zony zahnanim tou samou chamtivosti.</text>
+</string>
+<string id="jup_b221_duty_reply_2">
+	<text>Nikdo nevi, co se skutecne stalo. Nebyl jsi tam, abys to videl.</text>
+</string>
+<string id="jup_b221_duty_reply_3">
+	<text>Je to skupina slozena z lidi z Monolitu? No, doufam, ze si take najdete skupinu krevsajru, protoze az to udelate, podplukovnik vas urcite prida na seznam nebezpecnych mutantu.</text>
+</string>
+<string id="jup_b221_duty_reply_4">
+	<text>Ha! Ty jsi ale strazny. Teprve minuly rok te Mercenari honili po Temne udoli a ty jsi si strcil ocas mezi nohy. Nebo sis to zapomnel?</text>
+</string>
+
+<string id="jup_b221_duty_reply_5">
+	<text>Ano, dokazu si predstavit vysledky, ktere vedci dostavaji. Vzorky vzduchu: 100% kour, vzorky vody: 100% vodka a idioticky smich na vsech zvukovych frekvencich.</text>
+</string>
+<string id="jup_b221_duty_reply_6">
+	<text>To je v poradku. Ziskame zpet nase zbrane. Vy jste si vyvinuli sikovny zvyk vyhazovat zbrane a artefakty pokazde, kdyz narazite na nase bojovniky. Nemam vam za to co vytknout. Nemuze to byt jednoduche, ze jo? S rozsekanymi kalhotami a vsim vsudy?</text>
+</string>
+
+
+<string id="jup_b221_freedom_main_1">
+	<text>Kluci! Slyseli jste, jak Duty lpi na svych tradicich? Warrant Officer Morgan, aby zachoval povest sve frakce, se rozhodl prodat polovinu sveho skladu na miste. Myslel si, ze je to jeho 'povinnost'.</text>
+</string>
+<string id="jup_b221_freedom_main_2">
+	<text>Sestavte se! Pametate? Stale tradice Duty byly stanoveny samotnym generalem Tkachenkem. Oklamal sve spolubojovniky, zavadel velitelstvi a statecne zemrel ve vesmirne bubline. At zije kazdy clen Duty, ktery jde jeho stopami.</text>
+</string>
+<string id="jup_b221_freedom_main_3">
+	<text>Vite, kdyz jsem poprve videl nasi novou skupinu, zeptal jsem se jich: "Pratele, radeji byste se k nam v Duty pridali, ze ano? Muzete delat, co se vam libi." A vite co? Odpovedeli mi: "Ne, diky. S nimi jde vsechno jenom o rozkazech. Predevsim davat. Neni divu, ze maji prazdne oci. Mame uz dost zombii."</text>
+</string>
+<string id="jup_b221_freedom_main_4">
+	<text>Clen Duty pristoupil k jednomu z nasich lidi, vesel do bunkru a zeptal se ho: "Profesore, mohl byste mi rict, ktery artefakt je nejlepsi na boje s divocaky? Mechanicky klic, aby te chranil pred radiaci, nebo Oko, abys ti pomohlo s ranami." Vite, co byla odpoved? "Synku, to, co potrebujes, je Shell. Pokud uvidis divocaka, utec co nejrychleji zpatky do zakladny." Haha!</text>
+</string>
+<string id="jup_b221_freedom_main_5">
+	<text>Lidi, vite, jak vedci vybrali nase kluky, aby merili anomalie? Ve skutecnosti sli nejprve za Shulgou a rekli mu: "Je tu prace, ktera je prospesna pro vedu." A on odpovedel: "Zadny problem. Koho mam popravit?"</text>
+</string>
+<string id="jup_b221_freedom_main_6">
+	<text>Den co den mi stale jasneji dochazi, jak moc potrebujeme Duty. Kdo by jiny slozil cely sklad zbrani a munice a pak hodaroval Freedom? Bylo to opravdu hezke z jejich strany, nemyslite?</text>
+</string>
+<string id="jup_b221_freedom_reaction_1">
+<text>[smich]</text>
+</string>
+<string id="jup_b221_freedom_reaction_2">
+<text>[smich]</text>
+</string>
+<string id="jup_b221_freedom_reaction_3">
+<text>[smich]</text>
+</string>
+<string id="jup_b221_freedom_reaction_4">
+<text>[smich]</text>
+</string>
+
+<string id="jup_b221_freedom_reply_1">
+	<text>Ano? Vzpominam si, jak se tva odvazna skupina plazila na kolenou, prosic o pristup do Yanova pred emisi.</text>
+</string>
+<string id="jup_b221_freedom_reply_2">
+	<text>Kazdy ma sveho takoveho. Duty je opravdovym utocistem pokrytcu. "Budeme chranit svet pred Zonou", hned pote, co sezeneme par artefaktu.</text>
+</string>
+<string id="jup_b221_freedom_reply_3">
+	<text>Dobre, fanatik by mel zustat s fanatiky. Meli byste nosit i uniformy Monolitu. Aby se stalkerove snad nepletli az by vas videli, ze jste lidi.</text>
+</string>
+<string id="jup_b221_freedom_reply_4">
+	<text>Pred mutanti? Jste si jisti, ze budete mit dostatek mista v te sve bunkru, az se mutanti vrhnou v silne sile? Nejde o to jako v baru 100 Rads, kde se muzete jen tak zavrit a vyckat.</text>
+</string>
+<string id="jup_b221_freedom_reply_5">
+	<text>Pokud vasi dobrovolnici piji stejne jako vy, nemohu si predstavit, jake hodnoty ziskavaji vedci.</text>
+</string>
+<string id="jup_b221_freedom_reply_6">
+	<text>Ano, tak je to spravne. Privedte co nejvic strazi. Ted uz o vasem skladu s vybavenim vi polovina Zony, takze ocekavejte navstevniky.</text>
+</string>
+
+<string id="jup_b25_revage_senya">
+	<text>Pockej...! Najdi ho! Nejhorsi jeste... arg...</text>
+</string>
+<string id="jup_b25_story_artefact">
+	<text>Mel bys mel videt, jak jsem nedavno ziskal tenhle artefakt. To bylo neco. Vis neco o Lomu? No, cokoli slusneho, co tam kdysi bylo, davno zmizelo. Nema smysl hledat v anomaliich, ktere prozkoumal Flint. To vi kazdy.</text>
+</string>
+<string id="jup_b25_story_bloodsucker">
+	<text>Povim ti vsechno, co je treba vedet o krvavcich. Kdyz jsem byl v Zatonu, ti parchanti ztezovali zivot temer kazdemu. Stalkerove se na ne drzeli den a noc, ale nepomohlo to ani trochu. Chudaci. Jednoho dne jsem se rozhodl jim pomoci. Vzal jsem si svou brokovnici a rovnou zamiril do ukrytu krvavcu. Tri dny jsem si s temi parchanty uzival, casto jsem se pustil do dvou nebo dokonce tri najednou. Po kvalitnim case se mnou je problem s krvavci v Zatonu temer vyresen. Ti parchanti porad maji sve chapadla schovane.</text>
+</string>
+<string id="jup_b25_story_controller">
+	<text>Dobre, povim ti, jak zabit kontrolery. Nedavno jsem narazil na hromadu artefaktu a rozhodl se je schovat, protoze uz mi zada nevydrzela. Na ceste zpet jsem dorazil ke svemu ukrytu a tam to bylo, kontroler, klidne sedel primo na vrchu. A ted jsem si rikal: "Kontroler nebo zadny kontroler, musim dostat zpatky svoje veci." Pak jsem si uvedomil, ze pokud se budu chranit necim, jeho manipulacni blaboly na me nebudou fungovat. Takze jsem vzal kus kovove mrize, kterou jsem nasel pobliz, a zacal se priblizit k oblude. Do te doby, nez si uvedomila, co se deje, jsem ji vystrelil cely zasobnik do hlavy. Prave kdyz se pokousela me ovladat, zasadil jsem ji posledni ranu pazbou od pusky a bylo hotovo.</text>
+</string>
+
+<string id="jup_b25_story_first_reac_1">
+<text>Aha! To je nejaky pribeh, Flinte.</text>
+</string>
+<string id="jup_b25_story_first_reac_2">
+<text>Flint je opravdovy chlap, to je jiste.</text>
+</string>
+<string id="jup_b25_story_first_reac_3">
+<text>Ano... Neni spatne.</text>
+</string>
+
+<string id="jup_b25_story_guide">
+	<text>No tak, jsem si jisty, ze vis o ceste ze Zatonu... Ne? No, pruvodce drive udelal obrovsky vylet. Co jsem udelal ja, bylo vytvorit zkratku primou linii, nova myslenka. Vyzkousel jsem par mist a rychle jsem nasel cestu pres anomalie. Takze jsem tuhle informaci prodal pruvodci a ted tudy vezme vsechny.</text>
+</string>
+<string id="jup_b25_story_oasis">
+	<text>Slysel jsi o Oaze? Samozrejme jsi o ni slysel. Ja na druhou stranu jsem tam opravdu byl. Byl jsem prvni clovek, ktery objevil cestu tam, jakysi prukopnik. Tam neni zadne mutanti nebo proklate anomalie. Je to tiche jako hrbitov a plne artefaktu. Byl jsem tam jen pred par dny. V nedeli, vis to... Vest te tam? Ha! Omlouvam se, ale nechci tam tlacenici. Nic osobniho.</text>
+</string>
+<string id="jup_b25_story_scientist">
+	<text>No, mam spoustu pribehu na vypraveni. Povidal jsem ti uz o tom, jak jsem pracoval pro vedce? Takze jednoho dne jsem zavital do jejich bunkru, zvedavy, co tam delaji. Nejprve byli vsichni v soku. Ale pak rekli: "Ty jsi presne to, co potrebujeme prave ted." Ukazalo se, ze chteli nastavit sva zarizeni pod anomaliemi. Samozrejme ti spratci si nechteli hrat s tim sami, tak mi slibili penize a dalsi veci. Takze jsem rekl: "No, to je v poradku, ale ty veci musi stat za to!" Musel jsem se plazit po te oblasti a hledat anomalie, ale nebylo to tak tezke jako dostat od tech blbecku penize za odmenu.</text>
+</string>
+<string id="jup_b25_story_second_reac_1">
+	<text>Fajn pribeh!</text>
+</string>
+<string id="jup_b25_story_second_reac_2">
+	<text>Ano!</text>
+</string>
+<string id="jup_b25_story_second_reac_3">
+	<text>O, wow!</text>
+</string>
+
+<string id="jup_b25_story_zaton">
+	<text>Muze byt par lidi, kteri si mysli, ze Flint klame. No, muzou se zeptat kohokoli na zakladne o mne. Dokonce i tym profesionalnich lovcich, kdyz me videl nedavno, rikali vsichni: "Bez tebe to nezvladneme, Flinte. Nemuzeme to udelat bez tebe." Lovili chimeru, takze jsem musel temto "profikum" ukazat, jak se to dela. Moje munice je opravdu jednoducha. Jen se rovnou vrhnu do ukrytu. Zanechali tam jednoho novacka u vchodu, aby drzel oci na svestkach. Samozrejme, rano, jakmile ten novacek videl tu bestii, predral se ze slipu a utekl, takze jsem si musel s tim poradit sam. Uspesne, jak vidis, he-he-he...</text>
+</string>
+<string id="jup_b4_duty_squad_leader_align">
+<text>Zaradit se!</text>
+</string>
+<string id="jup_b4_duty_squad_leader_align_line">
+<text>Jeden radu, ted!</text>
+</string>
+<string id="jup_b4_duty_squad_leader_final">
+<text>Blahopreji k pripojeni k Duty! Jdi za mnou! Vlevo, vpravo, vlevo, vpravo...</text>
+</string>
+<string id="jup_b4_duty_squad_leader_praise">
+<text>Vidis? Kdyz chces, zvladnes to. Je cas slozit prisahu.</text>
+</string>
+<string id="jup_b4_duty_squad_leader_speech">
+<text>Prisahas, ze budes slouzit Duty s odvahou a poctivosti, ze budes chranit lidskost pred utoky Zony a vzdy budes nasledovat kodex?</text>
+</string>
+
+	
+	
+
+<string id="jup_b4_freedom_squad_leader_any_questions">
+	<text>Tak, mate nejake otazky?</text>
+</string>
+<string id="jup_b4_freedom_squad_leader_lets_talk">
+	<text>Proc jen tak stojite? Posadte se a promluvme si!</text>
+</string>
+<string id="jup_b4_freedom_squad_leader_reply">
+	<text>Nemame prisnou hierarchii. Ziskate nasi uctu a ziskate mnoho nasledovniku. Nicmene, behem mise poslouchame rozkazy velitele bez otazek.</text>
+</string>
+<string id="jup_b4_freedom_squad_leader_speech">
+	<text>Respektujeme svobodu nasich clenu a dalsich stoparu a verime, ze Zona je otevrena vsem. Je to nejvetsi dar, ktery lidstvo kdy dostalo, je to prilezitost pro obrovsky skok v nasem vyvoji a kazdy musi to pochopit.</text>
+</string>
+<string id="jup_b4_freedom_squad_leader_welcome_to_freedom">
+	<text>Tak vas vitame ve Freedom!</text>
+</string>
+
+
+<string id="jup_b4_monolith_1_ask_to_freedom">
+	<text>Kdo nas bude velit?</text>
+</string>
+<string id="jup_b4_monolith_squad_leader_meet">
+	<text>Stopari! Mohl byste sem prijit?</text>
+</string>
+<string id="jup_b4_monolith_talk_to_commander_1">
+	<text>Budes lepe mluvit se Striderem.</text>
+</string>
+<string id="jup_b4_monolith_talk_to_commander_2">
+	<text>Strider je ten, s kym bys mel mluvit.</text>
+</string>
+<string id="jup_b4_monolith_talking_1_1">
+	<text>Muzeme tu cely den sedet, ale nedostaneme se nikam.</text>
+</string>
+<string id="jup_b4_monolith_talking_1_2">
+	<text>Tady jsou jen mutanti.</text>
+</string>
+<string id="jup_b4_monolith_talking_1_3">
+	<text>A kam jdeme?</text>
+</string>
+<string id="jup_b4_monolith_talking_5_1">
+	<text>Prvni vec, kterou musime udelat, je zjistit, kde vlastne jsme.</text>
+</string>
+<string id="jup_b4_monolith_talking_5_2">
+	<text>Potrebujeme najit lidi.</text>
+</string>
+<string id="jup_b4_monolith_talking_5_3">
+	<text>Mame smulu, bez ohledu na to, co udelame.</text>
+</string>
+
+<string id="jup_b4_recruit_1_cool_freedom">
+	<text>Skvele!</text>
+</string>
+<string id="jup_b4_recruit_1_serve_duty">
+	<text>Prisahame!</text>
+</string>
+<string id="jup_b4_recruit_2_cool_freedom">
+	<text>Vyborne! To je presne to, co potrebujeme.</text>
+</string>
+<string id="jup_b4_recruit_2_serve_duty">
+	<text>Prisahame!</text>
+</string>
+<string id="jup_b41_base_alarm">
+	<text>Pozor, pozor! Tady Hermann. Vedecka laborator je pod utokem. Na nejakou dobu nebudeme vpoustet stopare.</text>
+</string>
+<string id="jup_b41_base_relax">
+	<text>Pozor, pozor! Tady Hermann. Nas mobilni laborator je znovu otevrena pro stopare.</text>
+</string>
+<string id="jup_b41_bunker_megaphone_1">
+	<text>Stalkere! Musim te varovat, ze vstup do bunkru s zbrani je prisne zakazan.</text>
+</string>
+<string id="jup_b41_bunker_megaphone_2">
+	<text>Stalkere! Pri vstupu do vyzkumneho zarizeni musis zbran schovat.</text>
+</string>
+<string id="jup_b41_bunker_megaphone_3">
+	<text>Slysis me? Schovat zbran!</text>
+</string>
+<string id="jup_b46_duty_founder_pda_diary">
+	<text>...jakoukoli cestou, vzdycky skoncime na stejnem miste. Stale se nemuzu privyknout tomuto oparu. Je divne, ze Chepurnoy zmizel beze stopy. Mozna nasel unikovou cestu... Den sesty. Dosla nam voda. Plukovnik se zblaznil a zastrelil dva lidi zblizka a pak sebe. Ted jsem sam v tehle proklete anomalii. Kdybych nechal vypadnout spojeni s velitelstvim, mohli by nas zachranit. A Duty by neexistovala. Zajimalo by me, jak by se veci vyvinuly... Ach, to je jedno! Ten kapitan Tkachenko zemrel pred dlouhou dobou. A tenhle general Tkachenko z Duty pujde za nim. To je... spravedlnost, predpokladam.</text>
+</string>
+<string id="jup_b46_spatial_bubble_sos_1">
+	<text>...najit unikovou cestu. Pomoc! Dochazi nam...</text>
+</string>
+
+<string id="jup_b46_spatial_bubble_sos_2">
+	<text>...uz to nevydrzime dlouho. Nemame vodu uz dva dny. Zadame o zachrannou misi! Hel...</text>
+</string>
+<string id="jup_b46_spatial_bubble_sos_3">
+	<text>...potrebujeme okamzitou pomoc! Nevydrzime dele nez tri...</text>
+</string>
+<string id="jup_b47_merc_leader_regret">
+	<text>Nemel jsi sem prijit, stopari! Ted budes potravou pro cervy.</text>
+</string>
+
+
+
+
+<string id="jup_b6_scientist_biochemist_farewell_1">
+	<text>Zase priste!</text>
+</string>
+<string id="jup_b6_scientist_biochemist_farewell_2">
+	<text>Nezapomente se ozvat!</text>
+</string>
+<string id="jup_b6_scientist_biochemist_greeting_1">
+	<text>Ahoj! Vzdycky je hezke videt novou tvar v nasi bunkru.</text>
+</string>
+<string id="jup_b6_scientist_biochemist_greeting_2">
+	<text>Ach... ahoj!</text>
+</string>
+<string id="jup_b6_scientist_medic_farewell_1">
+	<text>Hodne stesti!</text>
+</string>
+<string id="jup_b6_scientist_medic_farewell_2">
+	<text>Ahoj!</text>
+</string>
+<string id="jup_b6_scientist_medic_greeting_1">
+	<text>Ahoj!</text>
+</string>
+<string id="jup_b6_scientist_medic_greeting_2">
+	<text>Hej!</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_farewell_1">
+	<text>Dekuji za vas cas.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_farewell_2">
+	<text>Je to vsechno? Tak zatim.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_greeting_1">
+	<text>No tak, pojdte sem. Co pro vas mohu udelat?</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_greeting_2">
+	<text>Ano, mate mou plnou pozornost.</text>
+</string>
+
+	
+
+<string id="jup_b6_stalker_1_first_measurement_begin">
+	<text>Okay, udelejme to rychle. Cim rychleji skoncime, tim vetsi mame sanci prezit.</text>
+</string>
+<string id="jup_b6_stalker_1_first_measurement_done">
+	<text>Byly provedeny cteni alfa, beta a gama zareni.</text>
+</string>
+<string id="jup_b6_stalker_1_first_measurement_in_progress">
+	<text>Probiha mereni!</text>
+</string>
+<string id="jup_b6_stalker_1_fourth_measurement_done">
+	<text>Sken torzniho pole dokoncen.</text>
+</string>
+<string id="jup_b6_stalker_1_fourth_measurement_in_progress">
+	<text>Blizime se ke konci. Sken torzniho pole je temer hotovy.</text>
+</string>
+<string id="jup_b6_stalker_1_measurements_done">
+	<text>Skoncili jsme tady, stalkeru. Ted se rychle z tehle diry dostaneme ven!</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_1">
+	<text>Hej! Pokryvas nas, nebo ne?</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_2">
+	<text>Pozor, stalker! Pokryj nas!</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_3">
+	<text>Hej! Co to delas?!</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_4">
+	<text>Stalkeru! Jsou tady! Pomoz nam!</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_5">
+	<text>Stalkeru! Co sakra delas?!</text>
+</string>
+<string id="jup_b6_stalker_1_monsters_coming_6">
+	<text>Utoci na nas! Stalkeru, co to...?</text>
+</string>
+<string id="jup_b6_stalker_1_second_measurement_done">
+	<text>Sken elektromagnetickeho pole dokoncen.</text>
+</string>
+<string id="jup_b6_stalker_1_second_measurement_in_progress">
+	<text>Probiha sken elektromagnetickeho pole.</text>
+</string>
+<string id="jup_b6_stalker_1_third_measurement_done">
+	<text>Zvukova data ziskana pro vsechny rozsahy.</text>
+</string>
+<string id="jup_b6_stalker_1_third_measurement_in_progress">
+	<text>Zatim byla ziskana zvukova data pro dva rozsahy.</text>
+</string>
+<string id="jup_b9_blackbox_records">
+	<text>Stingray-4, ozvi se! Ozvi se, zatracene! Stingray-4, rozumis? ... Pozor, skupina Stingray! Tady Stingray-1. Poloha pro nouevakaci je B-Dva-Osm. Opakuji, B-Dva-Osm!</text>
+</string>
+<string id="jup_b9_heli_1_blackbox">
+<text>Dva tela... Vypada to, ze zahynuli pri havarii. ... Vsechno cenne bylo vypleneno a palubni pocitac byl vycisten. Ale cerna skrinka je stale nedotcena. ... Zajimave. ... Predpokladam, ze dobry technik bude schopen z ni vytahnout informace a pote je dekodovat.</text>
+</string>
+
+	<!-- Underpass -->
+
+<string id="pas_b400_sokolov_about_control_gates_1">
+	<text>Je to zablokovane a neni tu zadne tlacitko. Mam pocit, ze nekdo se musi dostat do ridiciho pokoje, aby to vyresil.</text>
+</string>
+<string id="pas_b400_sokolov_about_cover_1">
+	<text>Pockam tu dole a budu nam kryt zada, ok?</text>
+</string>
+<string id="pas_b400_sokolov_about_dome_1">
+	<text>Sakra, vedel jsem, ze sem nemeli chodit.</text>
+</string>
+<string id="pas_b400_sokolov_about_door_1">
+	<text>Neni smysl tu jen tak postavat, to je jiste.</text>
+</string>
+<string id="pas_b400_sokolov_about_elevator_1">
+	<text>Skvele! To je proste skvele!</text>
+</string>
+<string id="pas_b400_sokolov_about_exit_1">
+	<text>Mam pocit, ze jsme to zvladli.</text>
+</string>
+<string id="pas_b400_sokolov_about_gates">
+	<text>Tak... Co tak zmacknout to tlacitko?</text>
+</string>
+<string id="pas_b400_sokolov_about_railway_1">
+	<text>Skvele! Brana nema napajeni.</text>
+</string>
+<string id="pas_b400_sokolov_about_sniper_first_1">
+	<text>Pozor! Tady neco neni v poradku.</text>
+</string>
+<string id="pas_b400_sokolov_about_snorks_1">
+	<text>Uh-oh!</text>
+</string>
+<string id="pas_b400_sokolov_about_snorks_2">
+	<text>Sakra!</text>
+</string>
+<string id="pas_b400_sokolov_about_snorks_3">
+	<text>Pani, oni neustale nepolevuji, co?</text>
+</string>
+<string id="pas_b400_sokolov_about_train_1">
+	<text>Mmmh... neco tu neni v poradku.</text>
+</string>
+	
+<string id="pas_b400_sokolov_about_train_gates_1">
+	<text>Mmmh... neco tu taky citim jako spatne.</text>
+</string>
+<string id="pas_b400_sokolov_about_transformer_1">
+	<text>Hej, bud opatrny s tou veci, jo?</text>
+</string>
+<string id="pas_b400_sokolov_about_tushkano_1">
+	<text>Mam divny pocit, a ne ten dobry druh.</text>
+</string>
+<string id="pas_b400_sokolov_come_back_1">
+	<text>Hej! Takze se pohneme nebo co?</text>
+</string>
+<string id="pas_b400_sokolov_idle_1">
+	<text>Proc jsem se to vubec do toho pustil?</text>
+</string>
+<string id="pas_b400_sokolov_idle_2">
+	<text>K certu s timto mistem! Nemuzu se dockat, az odsud zmizim.</text>
+</string>
+<string id="pas_b400_sokolov_idle_3">
+	<text>Nemuzu uverit temhle blbostem, co mi rikali. "Nemej starosti, rizeni je snadne jako kolac." Vole!</text>
+</string>
+<string id="pas_b400_sokolov_no_meet_1">
+	<text>Ticho! Udrzuj to hezky tichy!</text>
+</string>
+<string id="pas_b400_sokolov_no_meet_2">
+	<text>Budeme si povidat, az odsud vypadneme.</text>
+</string>
+<string id="pas_b400_sokolov_no_meet_3">
+	<text>Tohle rozhodne neni cas na rozhovor.</text>
+</string>
+<string id="pas_b400_sokolov_on_actor_assault_1">
+	<text>Jsi blazen?!</text>
+</string>
+<string id="pas_b400_sokolov_on_actor_hit_1">
+	<text>Ooh... davej pozor, ty troubo!</text>
+</string>
+<string id="pas_b400_sokolov_on_actor_hit_2">
+	<text>Ooh... prestan! Zranjujes me!</text>
+</string>
+<string id="pas_b400_sokolov_on_actor_hit_3">
+	<text>Ugh... zatracenej psychopate!</text>
+</string>
+<string id="pas_b400_sokolov_on_death_1">
+	<text>[Sokolov zemre]</text>
+</string>
+<string id="pas_b400_sokolov_on_enemy_assault_vano_1">
+	<text>Vano je mrtvy.</text>
+</string>
+<string id="pas_b400_sokolov_on_enemy_assault_wanderer_1">
+	<text>Strider byl zabit.</text>
+</string>
+<string id="pas_b400_sokolov_on_enemy_assault_zulus_1">
+	<text>Zulu je porazeny.</text>
+</string>
+
+	<string id="pas_b400_sokolov_on_enemy_hit_1">
+		<text>[Sokolov je zranen]</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_hit_2">
+		<text>[Sokolov je zranen]</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_hit_3">
+		<text>[Sokolov je zranen]</text>
+	</string>
+	<string id="pas_b400_sokolov_wait_for_me_1">
+		<text>Hej, vrat se! Je to nebezpecne.</text>
+	</string>
+	
+	<string id="pas_b400_vano_about_anomaly_first_1">
+		<text>Oh, tady je anomalie.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_first_2">
+		<text>Uvidime, jestli existuje zpusob, jak se pres to dostat.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_first_3">
+		<text>Prijdte! Nasel jsem cestu, jak se pres to dostat.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_1">
+		<text>Dalsi anomalie. Podivejme se.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_2">
+		<text>Hm... jdi tudy jednou, mozna je to tvoje posledni.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_3">
+		<text>Tudy vede cesta. Doufejme, ze povede nekam, kde to nebude tak smrtici.</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_third_1">
+		<text>Dobre, jdeme dal.</text>
+	</string>
+	<string id="pas_b400_vano_about_control_gates_1">
+		<text>Takze... brana je zablokovana, co? Hmm... Ja nevim... Mozna se da otevrit z ridici mistnosti? </text>
+	</string>
+	<string id="pas_b400_vano_about_cover_1">
+		<text>Pokracuj, kamarade! Mam tvuj zadek kryty. Neboj se.</text>
+	</string>
+	<string id="pas_b400_vano_about_dome_1">
+		<text>No, ja budu... To je nadhera!</text>
+	</string>
+	<string id="pas_b400_vano_about_door_1">
+		<text>Dvere jsou otevrene tamhle. Pujdeme tudy?"</text>
+	</string>
+	<string id="pas_b400_vano_about_gates">
+		<text>Podivejte se! Zmackni to tlacitko nebo tak neco, jo?"</text>
+	</string>
+	<string id="pas_b400_vano_about_railway_1">
+		<text>Doslo k vypadku proudu, huh-huh...</text>
+	</string>
+	<string id="pas_b400_vano_about_room_closed">
+		<text>Hej, nechod tam! Je to tam zavrene.</text>
+	</string>
+	<string id="pas_b400_vano_about_room_open">
+		<text>Podivej, uz je otevreno!</text>
+	</string>
+	<string id="pas_b400_vano_about_sniper_first_1">
+		<text>Blesk z tlamy vpravo... ehm... Tedy vlevo.</text>
+	</string>
+	<string id="pas_b400_vano_about_snorks_1">
+		<text>Pekne, vsichni jsou mrtvi.</text>
+	</string>
+	<string id="pas_b400_vano_about_transformer_1">
+		<text>Poslouchej, na tehle veci by mely byt packy, kterymi se daji veci zapinat.</text>
+	</string>
+	<string id="pas_b400_vano_about_underpass">
+		<text>Takze... Jdeme? </text>
+	</string>
+	<string id="pas_b400_vano_come_back_1">
+		<text>Hej, chlape! Prestan ztracet cas. Delej to dost dlouho a sami se ztratime.</text>
+	</string>
+	<string id="pas_b400_vano_idle_1">
+		<text>Vite, ono to tady neni tak spatne... Myslim, ze to tu neni tak zle.</text>
+	</string>
+	<string id="pas_b400_vano_idle_2">
+		<text>S vernymi prateli po boku ani tenhle pruser neni tak spatny.</text>
+	</string>
+	<string id="pas_b400_vano_idle_3">
+		<text>Je dobre, ze jsem se rozhodl te nasledovat. Jak jinak bych mohl videt misto, jako je tohle?"</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_1">
+		<text>Promluvime si potom, kamo.</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_2">
+		<text>Poslouchej, ted neni nejlepsi cas na pokec.</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_3">
+		<text>Budu k tobe uprimny. Ted neni ani cas, ani misto na rozhovor.</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_assault_1">
+		<text>Co to... Ty hajzle! </text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_1">
+		<text>Proc, vole? Proc?...</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_2">
+		<text>Ja nejsem nepritel, chlape!</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_3">
+		<text>Ja s tebou sakra skoncuju!</text>
+	</string>
+	<string id="pas_b400_vano_on_death_1">
+		<text>[Vano zemre]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_sokolov_1">
+		<text>Nas pritel z armady je mrtvy.</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_wanderer_1">
+		<text>Nas monoliticky kamarad byl zabit.</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_zulus_1">
+		<text>Je to Zulu! Je mrtvy.</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_1">
+		<text>[Vano je zranen]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_2">
+		<text>[Vano je zranen]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_3">
+		<text>[Vano je zranen]</text>
+	</string>
+
+	<string id="pas_b400_vano_wait_for_me_1">
+		<text>Hej, clovece! Kam jdes? Pojdme na tom pracovat spolecne!</text>
+	</string>
+	<string id="pas_b400_wanderer_about_control_gates_1">
+		<text>Brana je zablokovana. Na tvem miste bych se porozhledl po ridici mistnosti.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_cover_1">
+		<text>Zustanu tady a budu kryt pristupy.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_door_1">
+		<text>Dvere jsou otevrene. Pujdeme? </text>
+	</string>
+	<string id="pas_b400_wanderer_about_gates">
+		<text>Musis stisknout tlacitko.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_monolith_1">
+		<text>Jsme tu na otevrenem prostranstvi. Jdeme!"</text>
+	</string>
+	<string id="pas_b400_wanderer_about_railway_1">
+		<text>Vypada to, ze k brane neni privadena energie.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_sniper_first_1">
+		<text>Ty jsou moje.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_sniper_first_2">
+		<text>Jsou na pripitek.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_snorks_1">
+		<text>S temi bastardy se vyporadam.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_transformer_1">
+		<text>Transformator. Ty si pamatuji z detstvi.</text>
+	</string>
+	<string id="pas_b400_wanderer_about_underpass">
+		<text>Jdeme dal!</text>
+	</string>
+	<string id="pas_b400_wanderer_come_back_1">
+		<text>Tady neni nejlepsi misto na krouceni palcu, pojdme!"</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_1">
+		<text>Je tu klid. Prilis tiche.</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_2">
+		<text>Myslim, ze jsem tu nekdy mohl byt. Nejsem si jisty.</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_3">
+		<text>Podivne... Vsechno na tomhle miste je divne.</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_1">
+		<text>Zapni to, ano?!</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_2">
+		<text>Klid, clovece.</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_3">
+		<text>Ja... Nechce se mi mluvit.</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_assault_1">
+		<text>Zradce!"</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_1">
+		<text>Uhm, to je... zbytecne.</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_2">
+		<text>Navrhuji, abys s tim okamzite prestal!</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_3">
+		<text>Uhm... Varoval jsem te!</text>
+	</string>
+	<string id="pas_b400_wanderer_on_death_1">
+		<text>[Strider zemre]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_sokolov_1">
+		<text>Sokolov je mrtev.</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_vano_1">
+		<text>Vano je mrtvy.</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_zulus_1">
+		<text>Zulu byl zabit.</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_1">
+		<text>[Strider byl zranen]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_2">
+		<text>[Strider je zranen]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_3">
+		<text>[Strider je zranen]</text>
+	</string>
+	<string id="pas_b400_wanderer_wait_for_me_1">
+		<text>Nepospichej dopredu! Tady je nejlepsi drzet se pohromade.</text>
+	</string>
+	
+	<string id="pas_b400_zulus_about_control_gates_1">
+		<text>Brana je zablokovana a neni zde zadne tlacitko. Nechce se nekomu jit do ridici mistnosti a podivat se, jestli tam neni neco, co by nam pomohlo?"</text>
+	</string>
+	<string id="pas_b400_zulus_about_cover_1">
+		<text>Pokracuj, bracho! Kryju ti zada.</text>
+	</string>
+	<string id="pas_b400_zulus_about_door_1">
+		<text>No, cesta je volna. Jdeme!</text>
+	</string>
+	<string id="pas_b400_zulus_about_exit_1">
+		<text>Vypada to, ze jsme pod Pripjati.</text>
+	</string>
+	<string id="pas_b400_zulus_about_gates">
+		<text>Stiskni tlacitko, bracho!</text>
+	</string>
+	<string id="pas_b400_zulus_about_monolith_1">
+		<text>Zpet na zada, rychle!</text>
+	</string>
+	<string id="pas_b400_zulus_about_monolith_2">
+		<text>Propana!"</text>
+	</string>
+	<string id="pas_b400_zulus_about_obstacle_1">
+		<text>Hm... vypada to, ze prima cesta nepripada v uvahu.</text>
+	</string>
+	<string id="pas_b400_zulus_about_obstacle_2">
+		<text>Zadne obavy. Opravdovi muzi casto voli zadni vratka.</text>
+	</string>
+	<string id="pas_b400_zulus_about_outfits_1">
+		<text>No, alespon ty ochranne obleky dostanou nejake vyuziti.</text>
+	</string>
+	<string id="pas_b400_zulus_about_railway_1">
+		<text>Hm... energie k brane byla prerusena.</text>
+	</string>
+	<string id="pas_b400_zulus_about_sniper_first_1">
+		<text>Odstrelovaci!"</text>
+	</string>
+	<string id="pas_b400_zulus_about_snorks_1">
+		<text>Zustante v klidu. Otevrete... palbu!</text>
+	</string>
+	<string id="pas_b400_zulus_about_train_gates_1">
+		<text>No, bracho... pojdme to rozjet!"</text>
+	</string>
+	<string id="pas_b400_zulus_about_train_gates_2">
+		<text>Priprav se na ty nejlepsi, zemri jako ostatni.</text>
+	</string>
+	<string id="pas_b400_zulus_about_transformer_1">
+		<text>Tohle vypada jako transformator. Zajimalo by me, jestli se aktivovaly vsechny linky.</text>
+	</string>
+	<string id="pas_b400_zulus_about_underpass">
+		<text>Jdeme dal!</text>
+	</string>
+	<string id="pas_b400_zulus_come_back_1">
+		<text>Drz se, bracho! Musime jit porad kupredu.</text>
+	</string>
+	<string id="pas_b400_zulus_idle_1">
+		<text>Jake misto, chlape.</text>
+	</string>
+	<string id="pas_b400_zulus_idle_2">
+		<text>Jaky to neporadek! Za takovou vec bys na nasi zakladne dostal na prdel.</text>
+	</string>
+	<string id="pas_b400_zulus_idle_3">
+		<text>Tohle misto neni Sandy Beach, to je jiste.</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_1">
+		<text>Neni cas na zertovani, bratre.</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_2">
+		<text>Promluvme si, az bude po vsem.</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_3">
+		<text>Prestan s tim zvanenim a soustred se!"</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_assault_1">
+		<text>Hej! Byl to muj pritel!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_1">
+		<text>Fuj! Co to sakra delas?!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_2">
+		<text>Argh! Hej, prestan s tim! </text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_3">
+		<text>Urgh! Hej, takovyhle sracky si nenecham libit!</text>
+	</string>
+	<string id="pas_b400_zulus_on_death_1">
+		<text>[Zulu zemre]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_sokolov_1">
+		<text>Sokolov padl!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_vano_1">
+		<text>Vano je dole!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_wanderer_1">
+		<text>Strider je dole!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_1">
+		<text>[Zulu je zranen]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_2">
+		<text>[Zulu je zranen]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_3">
+		<text>[Zulu je zranen]</text>
+	</string>
+	<string id="pas_b400_zulus_wait_for_me_1">
+		<text>Vrat se, bracho! Na tehle misi nepotrebujeme zveda.</text>
+	</string>
+
+	<!-- Pripyat -->
+	<string id="pri_a15_actor_introduce">
+		<text>Jsem major Degtyarev, USS. Jsem tu, abych vysetril selhani operace 'Fairway'.</text>
+	</string>
+	<string id="pri_a15_actor_introduce_squad">
+		<text>Stalkerove mi pomohli dostat se do Pripjati.</text>
+	</string>
+	<string id="pri_a15_actor_leave_him">
+		<text>Pustte ho, kapitane.</text>
+	</string>
+	<string id="pri_a15_actor_need_talk_with_commander">
+		<text>Mam informace pro Kovalskeho. Vezmete me k nemu.</text>
+	</string>
+	<string id="pri_a15_army_go">
+		<text>Jdi za mnou!"</text>
+	</string>
+	<string id="pri_a15_army_go_with_me">
+		<text>Dobre. Nasleduj me.</text>
+	</string>
+	<string id="pri_a15_army_hide_weapon">
+		<text>Polozte zbrane na zem, hned!</text>
+	</string>
+	<string id="pri_a15_army_joke">
+		<text>Jste vesela parta, ze? </text>
+	</string>
+	<string id="pri_a15_army_leave">
+		<text>Fajn, kaslu na nej!</text>
+	</string>
+	<string id="pri_a15_army_stop">
+		<text>Stujte! </text>
+	</string>
+	<string id="pri_a15_army_who_a_you">
+		<text>Kdo jsi? Co mas spolecneho s velitelem?"</text>
+	</string>
+	<string id="pri_a15_sokolov_conjecture">
+		<text>Vedel jsem to!"</text>
+	</string>
+	<string id="pri_a15_sokolov_predstavit">
+		<text>Nestrilejte! Jsem porucik Sokolov, druhy pilot Stingray-4. Jsem na ceste na nouzovou pozici B28.</text>
+	</string>
+	<string id="pri_a15_sokolov_wonder">
+		<text>Znate Kovalskeho? </text>
+	</string>
+	<string id="pri_a15_vano_speech_one">
+		<text>Proc myslis, ze jsme tady, pro zabavu? Proc takova spoust? Copak nevidis, ze jsme tu vsichni pratele? Ja a agentka D-De... jsme toho hodne zazili. Ver mi, ze to tak je.</text>
+	</string>
+	<string id="prI_a15_wanderer_about_actor">
+		<text>A je mi uplne jedno, kdo pro koho pracuje.</text>
+	</string>
+	<string id="pri_a15_zulus_go">
+		<text>...nebo USS.</text>
+	</string>
+	<string id="pri_a15_zulus_no_business_with_army">
+		<text>S armadou nemam nic spolecneho...</text>
+	</string>
+	<string id="pri_a15_zulus_not_me">
+		<text>Nejdu tam.</text>
+	</string>
+	<string id="pri_a15_zulus_wonder">
+		<text>USS?... Co to...?</text>
+	</string>
+	<string id="pri_a16_army_1_talk_to_commander_1">
+		<text>Majore, kdybyste neco potreboval, promluvte si s plukovnikem.</text>
+	</string>
+	<string id="pri_a16_army_1_talk_to_commander_2">
+		<text>Musite hledat plukovnika, majore.</text>
+	</string>
+	<string id="pri_a16_army_2_talk_to_commander_1">
+		<text>Plukovnik Kovalsky je osoba, se kterou mate mluvit, pane.</text>
+	</string>
+	<string id="pri_a16_army_2_talk_to_commander_2">
+		<text>Mluvte s Kovalskym, majore.</text>
+	</string>
+	<string id="pri_a16_army_3_talk_to_commander_1">
+		<text>Mluvte s Kovalskym, pane.</text>
+	</string>
+	<string id="pri_a16_army_3_talk_to_commander_2">
+		<text>Pane, kdybyste neco potreboval, mel byste se obratit na Kovalskeho.</text>
+	</string>
+	<string id="pri_a16_base_alarm">
+		<text>Pozor vsem jednotkam! Tady plukovnik Kovalsky. Zakladna je pod utokem. Vchod byl zablokovan, dokud nebude hrozba eliminovana.</text>
+	</string>
+	<string id="pri_a16_base_megaphone_1">
+		<text>Majore, jestli vam to nevadi, mohl byste tu zbran schovat do pouzdra?"</text>
+	</string>
+	<string id="pri_a16_base_megaphone_2">
+		<text>Poslouchejte, majore, schovejte si tu zbran do pouzdra, ano? Nezastrelime vas, mate me slovo.</text>
+	</string>
+	<string id="pri_a16_base_megaphone_3">
+		<text>Pojdte, majore. Odlozte tu zbran, proboha. Uz tak jsou vsichni dost nervozni.</text>
+	</string>
+	<string id="pri_a16_base_relax">
+		<text>Pozor vsem jednotkam! Tady plukovnik Kovalsky. Hrozba byla eliminovana.</text>
+	</string>
+	
+	<string id="pri_a17_kovalsky_after_surge">
+		<text>Upozorneni pro vsechny jednotky! Tady plukovnik Kovalsky. Emise je u konce.</text>
+	</string>
+	<string id="pri_a17_kovalsky_surge_phase_1">
+		<text>Pozor vsem jednotkam! Tady plukovnik Kovalsky. Podle nasich udaju se blizi emise. Okamzite se kryjte!</text>
+	</string>
+	<string id="pri_a17_kovalsky_surge_phase_2">
+		<text>Pozor vsem jednotkam! Tady plukovnik Kovalsky. Zacina emise, opakuji, zacina emise. Okamzite se kryjte!</text>
+	</string>
+	<string id="pri_a17_monolith_preacher">
+		<text>Dekujeme ti, Monolite, ze jsi nam odhalil lstive plany svych nepratel. Necht Tve svetlo zazari na duse statecnych vojaku, kteri polozili sve zivoty ve sluzbe Tve vuli. Vzhuru, bojovnici Monolitu! Pomstete sve padle bratry, pozehnane ve vecnem spojeni s Monolitem. Prineste smrt tem, kdo odmitaji svatou silu Monolitu!</text>
+	</string>
+	<string id="pri_a17_recon_squad_actor_dont_hide">
+		<text>Takhle si te vsimnou, majore.</text>
+	</string>
+	<string id="pri_a17_recon_squad_after_monolith_clear">
+		<text>Je to jasne! Jdeme na to!</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_1">
+		<text>Pockejme, az se dostanou do stredu nadvori.</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_2">
+		<text>Cil je na miste.</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_3">
+		<text>Odchazeji!</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_4">
+		<text>Musime jednat driv, nez si nas vsimnou. Zahajte palbu!</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_order_hide1">
+		<text>Ice, jdi na strechu. Vy ostatni pojdte za mnou.</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_order_hide2">
+		<text>Zaujmete pozici.</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_ready_to_fire">
+		<text>Pripraven k utoku na vas rozkaz.</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_to_prapor">
+		<text>Podivne. Prozradil jim nekdo nase plany? Meli bychom to predat Kovalskemu.</text>
+	</string>
+	<string id="pri_a17_recon_squad_monolith_ambush">
+		<text>Je to lecka! Kryjte se!</text>
+	</string>
+	<string id="pri_a17_recon_squad_nice_shoot">
+		<text>Skvela trefa, majore.</text>
+	</string>
+	<string id="pri_a17_recon_squad_order_to_check">
+		<text>Zkontrolujme je. Ice, kryj nas!</text>
+	</string>
+	<string id="pri_a17_recon_squad_prapor_to_commander">
+		<text>Ti fanatici o nas vedeli!"</text>
+	</string>
+	<string id="pri_a17_recon_squad_sniper_out">
+		<text>Ice, probud se sakra!"</text>
+	</string>
+	<string id="pri_a17_recon_squad_talk_with_commander">
+		<text>Radsi se zeptej kapitana.</text>
+	</string>
+	<string id="pri_a18_actor_report">
+		<text>Kovalsky, deje se tu neco divneho. Uvnitr budovy byla spousta monolitickych stihacek. Vsichni byli v transu a mluvili s... Hromadu odpadku. Prozkoumal jsem tu hromadu, a kdyz se tim harampadim prorezes, pripomina primitivni antenu. Zda se, ze skrze tuto antenu k nim nekdo mluvi... A oni veri, ze je to bozi zasah.</text>
+	</string>
+	<string id="pri_a18_kovalskiy_garda">
+		<text>To vsechno je velmi podivne. Nekdo ty fanatiky ovlada... Hmm. Vratime se k tomu pozdeji.</text>
+	</string>
+	<string id="pri_a18_kovalskiy_squad">
+		<text>To vsechno je velmi podivne. Nekdo ty fanatiky ovlada... Hmm. Vratime se k tomu pozdeji. Strazny se zatim neukazal, tak mi dej vedet, jestli ho najdes. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a18_monolith_pray_1">
+		<text>Monolite, neslysime te.</text>
+	</string>
+	<string id="pri_a18_monolith_pray_2">
+		<text>Proc jsi nas opustil, Monolite?"</text>
+	</string>
+	<string id="pri_a18_monolith_pray_3">
+		<text>Cekame na tve rozkazy, Monolite.</text>
+	</string>
+	<string id="pri_a18_shelly_hello">
+		<text>Porucik Skelya, k vasim sluzbam.</text>
+	</string>
+	<string id="pri_a18_sokolov_boj">
+		<text>Svaty hovno, tady se to jimi jen hemzi!"</text>
+	</string>
+	<string id="pri_a18_sokolov_hello">
+		<text>Vis, myslel jsem, ze s tebou budu ve vetsim bezpeci.</text>
+	</string>
+	<string id="pri_a18_sokolov_na_miste">
+		<text>Tady jsme.</text>
+	</string>
+	<string id="pri_a18_vano_boj">
+		<text>Sundej je driv, nez se z toho vymotaji!"</text>
+	</string>
+	<string id="pri_a18_vano_hello">
+		<text>Prihlasil jsem se hned, jak jsem zjistil, ze potrebujes pomoc. Budu te nasledovat az do horkeho konce, clovece.</text>
+	</string>
+	<string id="pri_a20_herec_o_dalsim_ukolu">
+		<text>Pruzkumna jednotka mela informace o umisteni monolitickych sil. Poznamky ukazuji na knihkupectvi.</text>
+	</string>
+
+	<string id="pri_a20_actor_no_data">
+		<text>Pruzkumna jednotka spatrila pouze monoliticke hlidky. Nevidela zadne velke oddily ani jednotky.</text>
+	</string>
+	<string id="pri_a20_actor_report_about_squad">
+		<text>Nasel jsem jednotku. Vsiachni jsou mrtvi. Vypada to, ze byli postreleni, ale po nepriteli neni ani stopy.</text>
+	</string>
+	<string id="pri_a20_colonel_about_sentry">
+		<text>Nechapu, jak mohli zautocit tak nahle, aniz by zanechali nejake dukazy. Opravdu zvlastni. ... Majore, prave jsme zachytili signal hlidky! Podle souradnic je nekde pobliz obchodu s potravinami. Zkontrolujte to, jestli muzete. Spoleham na vas, majore. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a20_colonel_ask_check_recon_squad">
+		<text>Potrebujeme najit pruzkumnou jednotku. Majore, zjistete, co se stalo! Co to sakra... Hmm. Bud tam opatrny, ano? A majore... Informujte me! </text>
+	</string>
+	<string id="pri_a20_colonel_give_next_task_1">
+		<text>To ti zatraceni fanatici. Musime se s nimi vyporadat.</text>
+	</string>
+	<string id="pri_a20_colonel_give_next_task_1_a21_sentry_task">
+		<text>To ti zatraceni fanatici, ti nedaji pokoj. Chybi nam take strazny, neozyva se a neni po nem ani stopy. Musime se o ty bastardy jednou provzdy postarat.</text>
+	</string>
+	<string id="pri_a20_colonel_send_reinforcement">
+		<text>Dobre, poslu k vam dva chlapce. Setkame se s nimi pobliz cile. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a20_colonel_send_reinforcement_a21_about_sentry">
+		<text>Dobre, poslu k vam dva chlapce. Setkame se s nimi pobliz cile. A jeste jedna vec... Prave jsme zachytili signal od hlidky. Podle souradnic je nekde pobliz obchodu s potravinami. Zkontrolujte to, jestli muzete. Spoleham na vas, majore. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a20_colonel_talk_in_radio">
+		<text>Rekonstrukcni jednotka, ozvete se! Co se to tam deje? </text>
+	</string>
+	<string id="pri_a20_colonel_task_done">
+		<text>Nechapu, jak mohli zautocit tak nahle. Aniz by zanechali nejake dukazy. Opravdu divne. Musim si to promyslet. Brzy si zase promluvime.</text>
+	</string>
+	<string id="pri_a20_communication_with_recon_squad">
+		<text>Obdrzel jsem zpravu od pruzkumne jednotky.</text>
+	</string>
+	<string id="pri_a20_recon_squad_attacked">
+		<text>Ne! ... Co to sakra je? ... Pockej! ... Vsichni jsme mrtvi... Argh... Pomoc! Pomozte mi nekdo! Dejte tu vec ode me pryc! Neee...</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_1">
+		<text>Pani, nemuzu uverit, ze jsme se do Pripjati dostali bez uhony. Jak se ti vubec podarilo najit tuhle cestu?"</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_2">
+		<text>Neni to tak tezke. Potrebujes jen zrucnost a trochu stesti, a my mame oboji. Nebo je to mozna Zona, ktera nas odmenuje za nasi trpelivost. Buh vi, ja jsem si to u vedcu zaplatil.</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_3">
+		<text>Jo, taky uz mam Hermanna dost.</text>
+	</string>
+	<string id="pri_a21_actor_to_base_find_and_terminate_controller">
+		<text>Baze, strazny je mrtvy. Choval se divne a napadl me. Take jsem identifikoval a zlikvidoval kontrolora v teto oblasti.</text>
+	</string>
+	<string id="pri_a21_actor_to_base_find_controller">
+		<text>Baze, strazny je mrtvy. Choval se divne a zautocil na me. V teto oblasti jsem take nasel kontrolora, takze jsem musel ustoupit.</text>
+	</string>
+	<string id="pri_a21_actor_to_base_terminate_controller">
+		<text>Baze, kontrolor byl vyrazen.</text>
+	</string>
+	<string id="pri_a21_base_to_actor_find_and_terminate_controller">
+		<text>Zkopirujte to, majore. Kontrolor musel prevzit kontrolu nad hlidkou. Eh. Byl to dobry clovek. ... Hm. To se muselo stat pruzkumne jednotce. Kontrolor je donutil, aby na sebe navzajem utocili. Kazdopadne, konec a konec.</text>
+	</string>
+	<string id="pri_a21_base_to_aktor_terminate_controller">
+		<text>Opiste to, majore. Kontrolor musel prevzit straz. Musis toho kretena zabit, hned ted! Dokud je nazivu, jsme ve velkem nebezpeci.</text>
+	</string>
+	<string id="pri_a21_colonel_base_about_sentry">
+		<text>Majore, tady Kovalsky. Mame tu dalsi nalehavou situaci. Prijdte sem a ja vas seznamim s podrobnostmi.</text>
+	</string>
+	<string id="pri_a21_colonel_give_sentry_task">
+		<text>Majore, mam na vas prosbu. Nas strazny neodpovida. Vite, kde byval obchod s potravinami? Odtud prichazi jeho signal. Prozkoumejte to, jestli muzete. Jeste jedna vec. Budte opatrni. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a21_colonel_lets_talk">
+		<text>Ah, majore. Pojdte dal.</text>
+	</string>
+	<string id="pri_a21_sentr_crazy_1">
+		<text>Nechte me na pokoji, jdete pryc!"</text>
+	</string>
+	<string id="pri_a21_sentr_crazy_2">
+		<text>Ne! Ne, ne!</text>
+	</string>
+
+
+	<string id="pri_a22_actor_to_base_find_squad_member">
+		<text>Baze, nasel jsem jednoho z vasich muzu. Vypada to, ze se odpalil granatem. Nejsou tu zadne stopy po prestrelce ani jine dukazy o tom, ze by byl napaden.</text>
+	</string>
+	<string id="pri_a22_base_to_actor_has_rfi_coordinates">
+		<text>Tady Kovalsky. ... Rozumim, majore. Hej, mam dobre zpravy. Konecne jsme ziskali presne souradnice zdroje ruseni. Signal vychazi z budovy materske skoly.</text>
+	</string>
+	<string id="pri_a22_colonel_about_rfi_and_lost_suad">
+		<text>Nas komunikacni expert se domniva, ze signal je rusen odnekud z nasi blizkosti. Prave ted pracuje na zjisteni souradnic. Vyslal jsem nekolik svych muzu, aby proverili mozny zdroj ruseni, ale ztratili se a jejich osobni signaly neregistrujeme.</text>
+	</string>
+	<string id="pri_a22_colonel_about_situation">
+		<text>Majore, mame vazny problem. Tahle operace je kazdou minutou smesnejsi od chvile, kdy se zritily vrtulniky. Muzi padaji jako mouchy, nemame spojeni s velitelstvim a situace se stale zhorsuje. Evakuacni vrtulniky se opet neobjevily. A timhle tempem nebude trvat dlouho a ztratime kontrolu nad situaci uplne. Musime okamzite navazat spojeni s velitelstvim.</text>
+	</string>
+	<string id="pri_a22_colonel_give_task">
+		<text>Majore, jednim z vasich ukolu je navazat spojeni s velitelstvim. Vzhledem k situaci, ve ktere se nachazime, by to od teto chvile mela byt vase priorita. A take, jako osobni laskavost pro me, prosim, najdete me chlapce.</text>
+	</string>
+	<string id="pri_a22_colonel_to_actor_need_talk">
+		<text>Majore, potrebuji s vami mluvit. Soukrome.</text>
+	</string>
+	<string id="pri_a25_actor_all_doors_locked">
+		<text>Jsem u budovy, ale vsechny vchody jsou zablokovane.</text>
+	</string>
+	<string id="pri_a25_kovalski_take_explosive">
+		<text>Ceta vyslana hledat zdroj ruseni mela vybusniny. Pouzij je k vycisteni vchodu.</text>
+	</string>
+	<string id="pri_a28_actor_scene_end">
+		<text>Sledovatel a druzstvo Stingray jsou mrtvi. Pripravte se ke startu.</text>
+	</string>
+	<string id="pri_a28_actor_scene_end_when_strelok_dead">
+		<text>To jsou vsichni, az na stalkera. Ten je mrtvy. Pripravte se na start.</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_1">
+		<text>Tady major Degtyarev. Slysel jsem vas.</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_2">
+		<text>[Major Degtyarev] Podarilo se mi ziskat dokumenty o experimentech provadenych v Zone. Krome toho nas kontaktoval stopar, ktery byl v CNPP. Jmenuje se Strelok a nabidl nam spolupraci.</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_with_heli_info">
+		<text>[Major Degtarev] Ano, mam ty udaje. A Strelokovy informace to potvrzuji. Vrtulniky byly zasazeny anomaliemi pote, co se jejich poloha behem emisi zmenila. Mapy anomalii vydane jejich pilotum se ukazaly byt nepouzitelne.</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_without_heli_info">
+		<text>[Major Degtarev] Strelok se domniva, ze vrtulniky se dostaly do anomalie. Poloha anomalii se po kazde emisi meni; tento fakt byl pri tvorbe mapy pro operaci Fairway opomenut.</text>
+	</string>
+	<string id="pri_a28_aktor_to_strelok">
+		<text>Nasedni do vrtulniku! Doufam, ze to stalo za to...</text>
+	</string>
+	
+	<string id="pri_a28_army_about_evacuation_1">
+		<text>Pojdme k vrtulniku a promluvime si ve vzduchu, ano?</text>
+	</string>
+	<string id="pri_a28_army_about_evacuation_2">
+		<text>Na rozhovor budeme mit dost casu pozdeji. Musime se ujistit, ze mame dostatek munice.</text>
+	</string>
+	<string id="pri_a28_army_about_evacuation_3">
+		<text>No, tohle byla slusna zakladna. Ta stara nas udrzela nazivu; vic si nemuzeme prat. Ale ted se musime dostat k ptakum a letet domu.</text>
+	</string>
+	<string id="pri_a28_army_about_surge_1">
+		<text>Promluvime si potom. Pri emisich se mi zasekavaji celisti.</text>
+	</string>
+	<string id="pri_a28_army_about_surge_2">
+		<text>Dalsi emise, zacinam jich mit opravdu dost.</text>
+	</string>
+	<string id="pri_a28_army_about_surge_3">
+		<text>Argh... Pripadam si jako v zakopu, po kterem se vali tanky.</text>
+	</string>
+	<string id="pri_a28_army_confusion">
+		<text>Huh?... Dobre, utikej!</text>
+	</string>
+	<string id="pri_a28_army_its_here">
+		<text>Je to tady!</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_1_first">
+		<text>Clovece, ja myslel, ze kysele deste jsou tady dost zle.</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_1_second">
+		<text>Zapomen na to. Vymenim to za dest kterykoli den o vikendu, v nedeli dvakrat.</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_2_first">
+		<text>Propana, to je ale hluk! Jeste ted mi zvoni v usich, mam pocit, ze jsem ohluchl.</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_2_second">
+		<text>Coze? Hehheh... Jen si z tebe delam srandu.</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_3_first">
+		<text>Hehh... Pokazde, kdyz se objevi emise, tak me rozboli hlava.</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_3_second">
+		<text>Pokud te emise nezabiji, rikam, ze to je docela dobry.</text>
+	</string>
+	<string id="pri_a28_army_what_is_that">
+		<text>Co to bylo?!</text>
+	</string>
+	<string id="pri_a28_army_zombied_first">
+		<text>Zombici!"</text>
+	</string>
+	<string id="pri_a28_army_zombied_in_building">
+		<text>V budove je asi tucet zombiku.</text>
+	</string>
+	<string id="pri_a28_center_to_colonel_1">
+		<text>Plukovniku, proc vypadlo spojeni?"</text>
+	</string>
+	<string id="pri_a28_center_to_colonel_2">
+		<text>Dobre. Dobre, poslouchejte, operaci Fairway prebira USS. Je tam major Degtarev? </text>
+	</string>
+	<string id="pri_a28_center_to_colonel_3">
+		<text>Dobre, od teto chvile veli on. Rekni mu, at zustane na miste. Brzy ho bude kontaktovat nadrizeny.</text>
+	</string>
+	<string id="pri_a28_colonel_about_heli">
+		<text>Podivej se na to! Ti zkurvysyni to skutecne dokazali... Mel jsi pravdu, Strelku.</text>
+	</string>
+	<string id="pri_a28_colonel_about_snork">
+		<text>Na to neni cas! Zkontrolujte si zbrane a strilejte podle libosti!"</text>
+	</string>
+	<string id="pri_a28_colonel_aktor_mluvi">
+		<text>Majore, muzu na slovicko? </text>
+	</string>
+	<string id="pri_a28_colonel_after_surge">
+		<text>Vypada to, ze emise skoncila. Kirillove, kontaktujte velitelstvi.</text>
+	</string>
+	<string id="pri_a28_colonel_cannot_wait">
+		<text>Majore, uz nemuzeme cekat.</text>
+	</string>
+	<string id="pri_a28_colonel_clear_the_deck">
+		<text>Pripravte se, muzi!</text>
+	</string>
+	<string id="pri_a28_colonel_close_by">
+		<text>Dobre, chlapci! Jeste posledni stouch!</text>
+	</string>
+	<string id="pri_a28_colonel_evacuation">
+		<text>Odchod, druzstvo!</text>
+	</string>
+	<string id="pri_a28_colonel_fire_will">
+		<text>Strilejte dle libosti! Jdi!</text>
+	</string>
+	<string id="pri_a28_colonel_go_left">
+		<text>Presunout se doleva a vzajemne se kryt!</text>
+	</string>
+	<string id="pri_a28_colonel_instructions">
+		<text>Slyseli jste zpravy, kamaradi. Az vyrazime, drzte se pohromade a udrzujte pronasledovatele nazivu. Nejake otazky? Pripravte se na pohyb!</text>
+	</string>
+	<string id="pri_a28_colonel_ok_go_here">
+		<text>Pres oblouk!</text>
+	</string>
+	<string id="pri_a28_colonel_ready_to_go">
+		<text>Zustan ve strehu a pln rozkazy! Jsme opravdu blizko evakuacniho mista. Jdeme na to!</text>
+	</string>
+	<string id="pri_a28_colonel_see_helicopter">
+		<text>Sracka! To jsou helicoptery Monolithu! Strilejte podle libosti a pokracujte smerem k vrtulnikum!</text>
+	</string>
+
+	<string id="pri_a28_colonel_strelok_out">
+		<text>Sracka! Strelok je mimo provoz! Ale stejne se odsud musime dostat. Bezte!</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_1">
+		<text>Diky emisim. Behem ni neni mozne navazat spojeni.</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_2">
+		<text>Ano.</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_3">
+		<text>Roger.</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor">
+		<text>Majore, kde jste? Musime dostat Streloka na evakuacni misto!</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_go">
+		<text>Majore, budeme muset pokracovat v ceste.</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_long">
+		<text>Majore, uz na vas nemuzeme dlouho cekat.</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_return">
+		<text>Dobre, jedeme dal!</text>
+	</string>
+	<string id="pri_a28_colonel_we_close">
+		<text>Jsme na ceste!</text>
+	</string>
+	<string id="pri_a28_colonel_will_time">
+		<text>Roger, ze! Za chvili tam budeme!</text>
+	</string>
+	<string id="pri_a28_colonel_zombied_attack">
+		<text>Kazda zombie v Pripjati se dozvi, ze prichazime! Musime si pospisit! Utikejte!"</text>
+	</string>
+	<string id="pri_a28_colonel_zombied_first">
+		<text>Presuneme se doprava podel budovy! Dvojnasobny cas!</text>
+	</string>
+	
+	<string id="pri_a28_continuation">
+		<text>K sakru, ty jsi jeste tady? Kdybys neco potreboval, najdi me na zakladne. Jsem zpatky a tentokrat jsem si privedl stalkery.</text> <!-- Chyba v xenglish.db (tento soubor by se mel jmenovat jup_a12_stalker_diplomat_no_talk_pda, protoze rika "Neverim ti..." s hlasovym efektem PDA -->
+	</string>
+	<string id="pri_a28_evac_com_cant_wait">
+		<text>Nasim rozkazem je vzletnout, pokud budeme napadeni, tak si sakra pospeste!"</text>
+	</string>
+	<string id="pri_a28_evac_com_helicopter_run_time">
+		<text>Dale uz cekat nemuzeme! Odletame za 60 sekund!</text>
+	</string>
+	<string id="pri_a28_evac_com_ready">
+		<text>Majore Degtyareve, jsme pripraveni vyrazit!</text>
+	</string>
+	<string id="pri_a28_evac_com_scene_end_when_strelok_dead">
+		<text>Roger that!</text>
+	</string>
+	<string id="pri_a28_evac_com_to_helicopter">
+		<text>Do vrtulniku! Bezte, bezte, bezte!"</text>
+	</string>
+	<string id="pri_a28_evac_com_kde_jste">
+		<text>Stingray! Kde jsi? </text>
+	</string>
+	<string id="pri_a28_evac_come_close">
+		<text>Majore Degtyareve, jsme pod tezkou palbou neidentifikovaneho nepritele! Dlouho se neudrzime!</text>
+	</string>
+	<string id="pri_a28_medic_about_snork">
+		<text>Zase ti... bastardi. Mozna bychom meli obejit budovu.</text>
+	</string>
+	<string id="pri_a28_signalizator_po_surge_1">
+		<text>Rogere!"</text>
+	</string>
+	<string id="pri_a28_signaller_after_surge_2">
+		<text>HQ na lince!</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_1">
+		<text>Majore, slysite me?"</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_2">
+		<text>[Veleni USS] Dobre. Od teto chvile jste zodpovedny za dokonceni operace Fairway. Kovalsky a jednotka Stingray vam budou asistovat; hlaste se.</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_3">
+		<text>[Veleni USS] Rozumim. Prijmete jeho nabidku. Vite, co zpusobilo havarii nasich vrtulniku? </text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_5">
+		<text>[Veleni USS] Dobre. To znamena, ze mame cas do dalsi emise. Budete vyzvednuti spolecne se stalkerem z pozice B28. Druzstvo Stingray bude evakuovano s vami, ptaci jsou jiz ve vzduchu. Prepinam a koncim.</text>
+	</string>
+	<string id="pri_a28_strelok_dont_stop">
+		<text>Nezastavuj! Pokracuj v pohybu!</text>
+	</string>
+	<string id="pri_a28_strelok_go_over_anomaly">
+		<text>Pred nami jsou dalsi zombie!</text>
+	</string>
+	<string id="pri_a28_strelok_run">
+		<text>Bez!"</text>
+	</string>
+
+	<string id="pri_b301_zulus_after_fight">
+		<text>Tak to byla zabava!</text>
+	</string>
+	<string id="pri_b301_zulus_hello_in_combat">
+		<text>Postav se ke zdi! Ti bastardi se na nas riti ze vsech stran!</text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_1">
+		<text>Vezmi to! </text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_2">
+		<text>Myslel sis, ze to se mnou bude snadne, co?!</text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_3">
+		<text>Dej si trochu tohohle!</text>
+	</string>
+	<string id="pri_b305_actor_ask_about_burning_antenn">
+		<text>Ty jsi ten stalker, ktery zneskodnil Scorchera?"</text>
+	</string>
+	<string id="pri_b305_actor_check_signal">
+		<text>Zkontroluju to.</text>
+	</string>
+	<string id="pri_b305_actor_dont_see_anyone">
+		<text>Nikoho nevidim.</text>
+	</string>
+	<string id="pri_b305_actor_emission_starts">
+		<text>Zacina emise!</text>
+	</string>
+	<string id="pri_b305_actor_go">
+		<text>Diky, udelam to.</text>
+	</string>
+	<string id="pri_b305_actor_it_is_underground">
+		<text>Je to pod zemi.</text>
+	</string>
+	<string id="pri_b305_aktor_need_center_to_know">
+		<text>Musime o tom co nejdrive informovat ustredi.</text>
+	</string>
+	<string id="pri_b305_actor_understand">
+		<text>Gotcha.</text>
+	</string>
+	<string id="pri_b305_actor_we_have_problems">
+		<text>Mame problem. Nase vrtulniky havaruji z duvodu, ktere jsme zatim nepochopili.</text>
+	</string>
+	<string id="pri_b305_actor_wondered se">
+		<text>Tak to je to, co to je...</text>
+	</string>
+	<string id="pri_b305_army_what_freezer">
+		<text>Ha-ha-ha! Pani, to jsem jeste nikdy neslysel! Lednicka, co? </text>
+	</string>
+	<string id="pri_b305_kirilov_about_garik">
+		<text>Takze Garry zamiril na janovskou stanici doplnit zasoby. Pozadal me, abych ti vyridil, ze se par dni nevrati.</text>
+	</string>
+	<string id="pri_b305_kirilov_about_garik_vano">
+		<text>Take me Vano pozadal, abych ti rekl, ze s Garrym zamirili na stanici Janov. Rikal, ze privezou suvenyry.</text>
+	</string>
+	<string id="pri_b305_kirilov_about_strelok_1">
+		<text>Diky za pomoc! Mimochodem, plukovnik chce, abys ho navstivil.</text>
+	</string>
+	<string id="pri_b305_kirilov_give_coordinates">
+		<text>Ano, souradnice mam, ale signal je prerusovany a... hybe se!"</text>
+	</string>
+	<string id="pri_b305_kirilov_give_new_coordinates">
+		<text>Signal se vratil! Vysilame souradnice.</text>
+	</string>
+	<string id="pri_b305_kirilov_glad">
+		<text>Jsi to opravdu ty? No, ja budu...! Uz jsme si mysleli, ze naseho doktora nikdy neuvidime.</text>
+	</string>
+	<string id="pri_b305_kirilov_ok">
+		<text>Okay...</text>
+	</string>
+	<string id="pri_b305_kirilov_order_agree">
+		<text>Ano, pane!</text>
+	</string>
+	<string id="pri_b305_kirilov_signal_lost">
+		<text>Signal je pryc.</text>
+	</string>
+	<string id="pri_b305_kirilov_signal_next_to_actor">
+		<text>Je zpet! Je hned vedle tebe.</text>
+	</string>
+	<string id="pri_b305_kirilov_source_is_near">
+		<text>Je to blizko. A blizi se k nasi zakladne.</text>
+	</string>
+	<string id="pri_b305_kirilov_strange_signal">
+		<text>Plukovniku! Byl zachycen radiovy signal a jeho zdroj je nedaleko zakladny. Vysilani je zasifrovane a zatim se mi ho nepodarilo rozlustit.</text>
+	</string>
+	<string id="pri_b305_kirilov_what_freezer">
+		<text>Jaka lednicka? Kde jsi ji nasel?"</text>
+	</string>
+	<string id="pri_b305_kirilov_what_happen">
+		<text>Tak co se stalo?"</text>
+	</string>
+
+
+	<string id="pri_b305_kirilov_what_next">
+		<text>A jaky stat by to mel byt?</text>
+	</string>
+	<string id="pri_b305_kirilov_where_you_been">
+		<text>Takze? Rekni mi to! Kde jsi byl?"</text>
+	</string>
+	<string id="pri_b305_kovalskiy_about_anomaly_map">
+		<text>Meli jsme mapu s bezpecnym vzdusnym koridorem mezi anomaliemi... A vrtulniky mely systemy ochrany proti emisim!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_about_deal">
+		<text>Dokud to nevyresime, nebude zadna podpora vrtulniku. Jediny zpusob, jak se dostat k hranicim Zony, je pesky.</text>
+	</string>
+	<string id="pri_b305_kovalskiy_ask_koordinates">
+		<text>Mate souradnice? </text>
+	</string>
+	<string id="pri_b305_kovalskiy_attack_case_prepare">
+		<text>Majore, tady Kovalsky. Mel by ses sem vratit. Musime se pripravit na mozny utok. Tentokrat nas ti parchanti nechyti se spustenymi kalhotami!"</text>
+	</string>
+	<string id="pri_b305_kovalskiy_let_center_know">
+		<text>Spojim se se svymi veliteli hned po emisi.</text>
+	</string>
+	<string id="pri_b305_kovalskiy_news">
+		<text>Mluvil jsem s velitelem velitelstvi a oznamil mu situaci spolu se vsemi shromazdenymi informacemi. Nejakou dobu nebude k dispozici podpora vrtulniku; navrhl, abychom opevnili sve pozice a vyckali dalsich rozkazu. Pozorovatele USS jsou momentalne na velitelstvi, takze si budete moci brzy promluvit se svymi nadrizenymi.</text>
+	</string>
+	<string id="pri_b305_kovalskiy_order_kirilov">
+		<text>Poruciku! Dostante je na linku co nejdrive!"</text>
+	</string>
+	<string id="pri_b305_kovalskiy_talk_in_safe_place">
+		<text>Pojdte, promluvime si uvnitr!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_think_of_attack">
+		<text>Zase monolit?!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_who_are_you">
+		<text>Kdo jsi?!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_wondered">
+		<text>Co?!</text>
+	</string>
+	<string id="pri_b305_medik_dont_know_what_say">
+		<text>Hm... Nejsem si uplne jisty, jak to popsat.</text>
+	</string>
+	<string id="pri_b305_medik_excuse">
+		<text>Kde jsem to nasel...? Chtel bych videt, jak v mem state neco najdes.</text>
+	</string>
+	<string id="pri_b305_medik_in_freezer">
+		<text>Stejne mi nebudete verit, ale... v lednicce.</text>
+	</string>
+	<string id="pri_b305_medik_talk_later">
+		<text>Uf... to je dlouhy pribeh... Povim ti to jindy.</text>
+	</string>
+	<string id="pri_b305_strelok_o_anomaly_randomize">
+		<text>To je zvlastni... Chces mi rict, ze sis nevsiml, ze se anomalie po emisi pohybuji? Nektere zmizi a nove se objevi na jinych mistech, takze vase mapa anomalii je vlastne k nicemu.</text>
+	</string>
+	<string id="pri_b305_strelok_about_heli">
+		<text>Duvody jsou zrejme. Ve vzduchu je mnoho anomalii, zejmena ve stredu Zony.</text>
+	</string>
+	<string id="pri_b305_strelok_about_zone_destroying">
+		<text>Ano... ale muj plan nevysel. Prisel jsem si promluvit s vasimi veliteli. Mam informace, ktere armade umozni prevzit kontrolu nad Zonou a znicit ji.</text>
+	</string>
+	<string id="pri_b305_strelok_give_up">
+		<text>Nestrilejte, mirim k hlavnimu vchodu!"</text>
+	</string>
+	<string id="pri_b305_strelok_how_to_get_away">
+		<text>Mise nenasleduji jen tak jedna za druhou. Pokud se ti podari prohledat oblast a identifikovat vsechny anomalie, vrtulniky nas budou moci bezpecne vyzvednout, pokud budou vyslany hned po emisi.</text>
+	</string>
+	<string id="pri_b305_strelok_introduse">
+		<text>Jmenuji se Strelok.</text>
+	</string>
+	<string id="pri_b35_both_done_end">
+		<text>Oba cile vyrazeny. Dobra prace! Mise splnena. Stahnete se!</text>
+	</string>
+	<string id="pri_b35_envoy_sighted">
+		<text>Podivej, je tu dalsi skupina! Uvidime, ktery z nich je posel.</text>
+	</string>
+	<string id="pri_b35_kovalski_calls_guide">
+		<text>Poruciku Kirillove, tady Kovalsky. Potrebuji, abyste doprovodil majora.</text>
+	</string>
+	<string id="pri_b35_merc_leader_sighted">
+		<text>Hadam, ze ten u hlavniho vchodu je jejich velitel.</text>
+	</string>
+	<string id="pri_b35_primary_target_down">
+		<text>Prvni cil vyrazen.</text>
+	</string>
+	<string id="pri_b35_primary_target_lost_end">
+		<text>Prvni cil unikl. Vrat se zpet!</text>
+	</string>
+	<string id="pri_b35_rendevous_done">
+		<text>Skoncili! Je cas je znicit!</text>
+	</string>
+	<string id="pri_b35_rendevous_in_process">
+		<text>Cile jsou u hlavniho vchodu.</text>
+	</string>
+	<string id="pri_b35_rendevous_started">
+		<text>Major! Zoldaci jsou na miste.</text>
+	</string>
+	<string id="pri_b35_secondary_target_down">
+		<text>Druhy cil vyrazen.</text>
+	</string>
+	<string id="pri_b35_secondary_target_lost_end">
+		<text>Druhy cil unikl. Stahnete se!</text>
+	</string>
+	<string id="pri_b35_targets_lost_end">
+		<text>Oba cile unikly. Preruste misi a stahnete se!</text>
+	</string>
+
+
+	<!-- CLOSED CAPTIONS FOR CALL OF CHERNOBYL -->
+	<string id="bar_barman_hello_1">
+		<text>Ahoj!</text>
+	</string>
+	<string id="bar_barman_hello_2">
+		<text>Co se deje, chlape? Jak to jde? </text>
+	</string>
+	<string id="bar_barman_hello_3">
+		<text>Jeste zijes? To je skvele.</text>
+	</string>
+	<string id="bar_barman_hello_4">
+		<text>Jak to jde?</text>
+	</string>
+	<string id="bar_barman_hello_5">
+		<text>Co se deje? </text>
+	</string>
+	<string id="bar_barman_wait_1">
+		<text>Co ti tak dlouho trva, co? </text>
+	</string>
+	<string id="bar_barman_wait_2">
+		<text>Delej uz. Pojd sem.</text>
+	</string>
+	<string id="bar_barman_wait_3">
+		<text>Proc tu stojis? No tak, pojd sem.</text>
+	</string>
+	<string id="bar_barman_wait_4">
+		<text>Pojd sem. Nemame moc casu.</text>
+	</string>
+	<string id="bar_guard_prohodi_1">
+		<text>Rekl jsem: Pojdte dal! Nestujte tam.</text>
+	</string>
+	<string id="bar_guard_stop_1">
+		<text>Tam nemuzes jit!</text>
+	</string>
+	<string id="bar_guard_stop_2">
+		<text>Promluvte si s barmanem.</text>
+	</string>
+	<string id="bar_guard_stop_3">
+		<text>Stuj! Ted te sem nemuzu pustit.</text>
+	</string>
+	<string id="duty_hangar_1">
+		<text>Vypadni odsud, stalkere.</text>
+	</string>
+	<string id="esc_mech_meet_1">
+		<text>Tak co? Co chces?"</text>
+	</string>
+	<string id="esc_mech_meet_2">
+		<text>O co ze jde? </text>
+	</string>
+	<string id="esc_mech_meet_3">
+		<text>Das mi nekdy pokoj? Vsichni si myslite, ze me bavi nechat se takhle obtezovat, ze?"</text>
+	</string>
+	<string id="esc_mech_meet_bye_1">
+		<text>Okay, bye.</text>
+	</string>
+	<string id="esc_mech_meet_bye_2">
+		<text>Takze jsi jednicka? Konecne.</text>
+	</string>
+	<string id="esc_mech_meet_bye_3">
+		<text>Konecne me nechas na pokoji. Prinasi mi to stesti.</text>
+	</string>
+	<string id="esc_nimble_greeting_1">
+		<text>Ahoj, pronasledovateli. Premyslis o objednavce?"</text>
+	</string>
+	<string id="esc_nimble_greeting_2">
+		<text>Co se deje? Rozhodl ses neco objednat? </text>
+	</string>
+	<string id="esc_nimble_greeting_3">
+		<text>Hej! Potrebujes neco? </text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_1">
+		<text>Nebojte se. Zbozi dostanes o neco pozdeji.</text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_2">
+		<text>Prijdte pozdeji. Zbozi jeste nemam.</text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_3">
+		<text>Zastavte se pozdeji. Do te doby budu mit vasi objednavku.</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_1">
+		<text>Tim je vase objednavka hotova. Vyzvednete si sve zbozi.</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_2">
+		<text>Zbozi mam. Vezmete si je!</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_3">
+		<text>Vezmi si sve zbozi, stalkere! Jak vidis, drzim slovo.</text>
+	</string>
+	<string id="esc_nimble_order">
+		<text>Prace je hotova. Muzes si vyzvednout zbozi.</text>
+	</string>
+	<string id="esc_fanat_farewell_1">
+		<text>Na shledanou.</text>
+	</string>
+	<string id="esc_fanat_farewell_2">
+		<text>Dobrou chut.</text>
+	</string>
+	<string id="esc_fanat_farewell_3">
+		<text>Rad jsem si s vami popovidal.</text>
+	</string>
+	<string id="esc_fanat_farewell_4">
+		<text>Sbohem.</text>
+	</string>
+	<string id="esc_fanat_farewell_5">
+		<text>Dobry lov, stalkere.</text>
+	</string>
+	<string id="esc_fanat_greeting_1">
+		<text>Ahoj.</text>
+	</string>
+	<string id="esc_fanat_greeting_2">
+		<text>Co se deje?</text>
+	</string>
+	<string id="esc_fanat_greeting_3">
+		<text>Ahojky.</text>
+	</string>
+	<string id="esc_fanat_greeting_4">
+		<text>Ahoj.</text>
+	</string>
+	<string id="red_forester_greet_1">
+		<text>Ahoj. Co te sem privadi?</text>
+	</string>
+	<string id="red_forester_hello_bye_0">
+		<text>Sbohem, chlapce.</text>
+	</string>
+	<string id="red_forester_hello_bye_1">
+		<text>Nezapomen na stareho pana.</text>
+	</string>
+	<string id="red_forester_hello_bye_2">
+		<text>Preji ti rovnou cestu, chlapce.</text>
+	</string>
+	<string id="red_forester_meet_hello_0">
+		<text>Pozdravuji te, ziva duse.</text>
+	</string>
+	<string id="red_forester_meet_hello_1">
+		<text>Co se deje, mladiku? Co tu hledas?"</text>
+	</string>
+	<string id="red_forester_meet_hello_2">
+		<text>Privedla te sem nahoda, nebo co?"</text>
+	</string>
+	<string id="val_bandit_trader_meet_1">
+		<text>...</text>
+	</string>
+	<string id="val_bandit_trader_meet_2">
+		<text>...</text>
+	</string>
+	<string id="yan_sakharov_meet_1">
+		<text>Pozdravuji te, mlady muzi!</text>
+	</string>
+	<string id="yan_sakharov_meet_2">
+		<text>Vitam vas na nasi vedecke zakladne!</text>
+	</string>
+	<string id="yan_sakharov_meet_3">
+		<text>Co prinasite do me skromne laboratore?</text>
+	</string>
+	<string id="yan_sakharov_meet_4">
+		<text>Ano-ano? </text>
+	</string>
+
+	<string id="yan_sakharov_meet_bye_1">
+		<text>Preji vam vse nejlepsi!</text>
+	</string>
+	<string id="yan_sakharov_meet_bye_2">
+		<text>Rad jsem vas poznal.</text>
+	</string>
+	<string id="yan_sakharov_meet_bye_3">
+		<text>Prijdte, kdybyste jeste neco potreboval!</text>
+	</string>
+</string_table>

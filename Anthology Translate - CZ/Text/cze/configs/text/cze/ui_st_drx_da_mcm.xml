@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	
+	<string id="ui_mcm_drx_da_title">
+		<text>Arrival - Anomálie</text>
+	</string>
+	<string id="ui_mcm_menu_drx_da">
+		<text>Arrival</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_presets">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_drx_da_presets_desc">
+		<text>Výběr předdefinovaných nastavení ze seznamu</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_easy">
+		<text>Jednoduché</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_normal">
+		<text>Normální</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_hard">
+		<text>Těžké</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_spawn_chance">
+		<text>Šance na spawn anomální zóny</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_spawn_chance_desc">
+		<text>Šance, že se na předem definovaném chytrém terénu vyskytne anomální zóna</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_max">
+		<text>Rádius anomální zóny</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_max_desc">
+		<text>Maximální vzdálenost od středu chytrého terénu, která je povolena pro zónu anomálií</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_min">
+		<text>Minimální vzdálenost mezi anomáliemi</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_min_desc">
+		<text>Definuje minimální vzdálenost mezi anomáliemi v zóně. Záporné hodnoty umožní, aby se anomálie vzájemně překrývaly</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_amount_modifier">
+		<text>Modifikátor množství anomálií</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_amount_modifier_desc">
+		<text>Modifikuje množství anomálií, které může mít každá anomální zóna</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_max_artefacts_per_zone">
+		<text>Max artefakty na zónu</text>
+	</string>
+	<string id="ui_mcm_drx_da_max_artefacts_per_zone_desc">
+		<text>Definuje maximální množství artefaktů, které se mohou objevit v zóně anomálie</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_artefacts_spawn_chance">
+		<text>Šance na spawn artefaktů</text>
+	</string>
+	<string id="ui_mcm_drx_da_artefacts_spawn_chance_desc">
+		<text>Každý z definovaného maximálního množství artefaktů bude mít tuto šanci na spawn</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_random_artefact_spawn_chance">
+		<text>Náhodná šance na spawn artefaktů</text>
+	</string>
+	<string id="ui_mcm_drx_da_random_artefact_spawn_chance_desc">
+		<text>Které artefakty mohou být spawnovány, je definováno úrovní. Jižní lokace mohou spawnovat pouze slabé artefakty, zatímco podzemní a severní mohou spawnovat silné artefakty. Existuje však šance, definovaná touto hodnotou, že anomální zóna může spawnovat jakýkoli artefakt, včetně unikátních</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_gravitational_shake_modifier">
+		<text>Modifikátor gravitačního chvění</text>
+	</string>
+	<string id="ui_mcm_drx_da_gravitational_shake_modifier_desc">
+		<text>Modifikátor chvění obrazovky v blízkosti gravitačních anomálií</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_electric_field_modifier">
+		<text>Modifikátor elektrického pole</text>
+	</string>
+	<string id="ui_mcm_drx_da_electric_field_modifier_desc">
+		<text>Modifikátor poškození elektrického pole. Nemá vliv na závady elektronických zařízení</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_enable_anomalies_behaviour">
+		<text>Povolit dynamické chování anomálií</text>
+	</string>
+	<string id="ui_mcm_drx_da_enable_anomalies_behaviour_desc">
+		<text>Definuje, zda mají mít dynamické anomálie zvláštní chování a mohou se v zóně objevovat a mizet</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_save_after_cleanup">
+		<text>Uložit hru po odstranění anomálií</text>
+	</string>
+	<string id="ui_mcm_drx_da_save_after_cleanup_desc">
+		<text>Uloží hru po emisi nebo psi-bouři, když jsou z úrovně odstraněny dynamické anomálie</text>.
+	</string>
+
+
+
+<string id="ui_mcm_drx_da_disable_new_anomalies">
+		<text>Zakázat nové anomálie</text>
+	</string>
+	<string id="ui_mcm_drx_da_disable_new_anomalies_desc">
+		<text>Zakáže vytváření nových druhů anomálií. Volba se projeví po příští emisi nebo psy-storm nebo při nové hře</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_choose_help">
+		<text>
+			Níže můžete selektivně povolit
+			n\které nové druhy anomálií se budou ve hře objevovat.
+			n\Pro více FPS je také můžete vypnout a pak budou jen vanilla anomálie</text>
+	</string>
+
+	 <string id="ui_mcm_drx_da_zone_mine_cdf_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_umbra_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_flash_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_ghost_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_gold_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_thorn_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_seed_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_shatterpoint_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_sloth_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_mefistotel_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_net_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_point_enable">
+	 	<text>Povolit</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_sphere_enable">
+	 	<text>Povolit</text>
+	 </string>
+
+	<string id="ui_mcm_drx_da_delete_dynamic_anomalies">
+		<text>Odstranit dynamické anomálie</text>
+	</string>
+	<string id="ui_mcm_drx_da_delete_dynamic_anomalies_desc">
+		<text>Smaže ze hry všechny vygenerované zóny anomálií. Tato volba je určena pro bezpečné odstranění modifikace. Povolte tuto možnost, poté se vraťte do hry, uložte hru, ukončete hru a odstraňte mod</text>.
+	</string>
+
+	<string id="ui_mcm_drx_da_debug_mode">
+		<text>Režim Debug</text>
+	</string>
+	<string id="ui_mcm_drx_da_debug_mode_desc">
+		<text>Zapíná zprávy v konzoli</text>
+	</string>
+
+	
+</string_table>

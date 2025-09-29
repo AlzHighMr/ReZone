@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Faction Patches
+-->
+
+<string_table>
+<string id="csky_patch">
+    <text>Nášivka Jasné oblohy</text>
+</string>
+<string id="csky_patch_description">
+    <text>Nášivka utržená z kombinézy stalkera frakce Jasná obloha.</text>
+</string>
+
+<string id="freedom_patch">
+    <text>Nášivka Svobody</text>
+</string>
+<string id="freedom_patch_description">
+    <text>Nášivka utržená z kombinézy člena Svobody.</text>
+</string>
+
+<string id="stalker_patch">
+    <text>Nášivka Samotáře</text>
+</string>
+<string id="stalker_patch_description">
+    <text>Nášivka utržená z kombinézy nezávislého stalkera.</text>
+</string>
+
+<string id="ecolog_patch">
+    <text>Nášivka Vědce</text>
+</string>
+<string id="ecolog_patch_description">
+    <text>Nášivka utržená z kombinézy vědeckého pracovníka.</text>
+</string>
+
+<string id="bandit_patch">
+    <text>Nášivka Bandity</text>
+</string>
+<string id="bandit_patch_description">
+    <text>Nášivka utržená z kombinézy bandity.</text>
+</string>
+
+<string id="duty_patch">
+    <text>Nášivka Povinnosti</text>
+</string>
+<string id="duty_patch_description">
+    <text>Nášivka utržená z kombinézy člena frakce Povinnost.</text>
+</string>
+
+<string id="monolith_patch">
+    <text>Nášivka Monolitu</text>
+</string>
+<string id="monolith_patch_description">
+    <text>Nášivka utržená z kombinézy člena frakce Monolit.</text>
+</string>
+
+<string id="army_patch">
+    <text>Nášivka Armády</text>
+</string>
+<string id="army_patch_description">
+    <text>Nášivka utržená z uniformy vojáka.</text>
+</string>
+
+<string id="merc_patch">
+    <text>Nášivka Žoldáků</text>
+</string>
+<string id="merc_patch_description">
+    <text>Nášivka utržená z kombinézy žoldáka.</text>
+</string>
+
+<string id="st_clearsky_fp">
+    <text>Nášivka Jasné oblohy</text>
+</string>
+<string id="st_clearsky_fp_descr">
+    <text>Tato nášivka znázorňuje východ slunce na jasné obloze s párem ptáků. Symbolizuje hlavní hodnoty frakce Jasná obloha — léčit Zónu a vyhýbat se ozbrojeným konfliktům. Jasná obloha se snaží výrazně omezit výskyt emisí a dalších anomálních jevů. Jen málo stalkerů však věří, že je takový cíl dosažitelný.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_freedom_fp">
+    <text>Nášivka Svobody</text>
+</string>
+<string id="st_freedom_fp_descr">
+    <text>Tato nášivka zobrazuje zeleného vlka, erb a ukrajinskou vlajku na černém podkladu. Design odráží sociální povahu frakce Svoboda, jejich lásku k vlasti a divoký, nezkrotný charakter jejích bojovníků. Mnozí stalkeři se však pozastavují nad tím, proč anarchisté vůbec používají národní vlajku — natož jako součást výstroje.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_stalker_fp">
+    <text>Nášivka Samotáře</text>
+</string>
+<string id="st_stalker_fp_descr">
+    <text>Používána mezi samotáři, kteří nepatří k žádné frakci. Nášivky jsou běžné i mezi žoldáky, kteří je prodávají záhadným zájemcům. Samotářů je v Zóně mnoho, ale většina z nich je rozptýlena v malých skupinkách nebo putuje osamoceně — často se stávají kořistí organizovaných nebo kriminálních skupin.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_ecolog_fp">
+    <text>Nášivka Vědců</text>
+</string>
+<string id="st_ecolog_fp_descr">
+    <text>Zobrazuje zlatá křídla na bílotyrkysovém pozadí připomínajícím vodu, nad nimi dvě tyrkysové hvězdy — symbolizují cíle vědců v Zóně. Nášivky jsou na černém trhu velmi žádané, protože jejich nošení může zajistit přístup na různá místa i téměř neomezený pohyb. Vědci se však své nášivky nikdy dobrovolně nevzdávají — což ovšem nemorální jedince příliš netrápí.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_bandit_fp">
+    <text>Nášivka Banditů</text>
+</string>
+<string id="st_bandit_fp_descr">
+    <text>Zobrazuje prasklou lebku na bílém štítu. Tento symbol odráží vizi některých lídrů podsvětí v Zóně — nejsou jen obyčejní grázlové, ale samozvaní vládci, kteří zavádějí „pořádek“ výměnou za „ochranu“ a krutě trestají všechny, kdo se jim postaví.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n 
+    </text>
+</string>
+
+<string id="st_dolg_fp">
+    <text>Nášivka Povinnosti</text>
+</string>
+<string id="st_dolg_fp_descr">
+    <text>Nášivka Povinnosti zobrazuje zlatý terč na červeném a černém štítu. Symbolizuje vojenské zaměření skupiny a jejich hlavní misi: chránit okolní svět před Zónou a zničit její monstra.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_monolith_fp">
+    <text>Nášivka Monolitu</text>
+</string>
+<string id="st_monolith_fp_descr">
+    <text>Tato nášivka zobrazuje pár křídel na pozadí zlatého slunce — možná symbolizuje samotný Monolit. Patří jedincům považovaným za vymyté mozky. To, že tento symbol vůbec existuje, vyvolává otázky: Mají členové ještě nějakou kreativitu, nebo někdo jejich kroky řídí? Mezi stalkery jsou tyto nášivky vyhledávanými trofejemi, symbolem přežití a porážky nebezpečného nepřítele.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_army_fp">
+    <text>Nášivka Armády</text>
+</string>
+<string id="st_army_fp_descr">
+    <text>Nášivka Ozbrojených sil Ukrajiny zobrazuje tři štíty s překříženými meči, obklopené vavřínovým věncem. Prostřední štít nese ukrajinskou vlajku a státní znak. Symbolizuje vnímání armády jako ochránců a mírotvůrců v Zóně — i když je otázkou, nakolik tato image odpovídá realitě.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_merc_fp">
+    <text>Nášivka Žoldáků</text>
+</string>
+<string id="st_merc_fp_descr">
+    <text>Jednoduchá nášivka s dravým modrým ptákem na černém podkladu. Odráží povahu žoldáků: chladní, vypočítaví a profesionální vojáci štěstěny — připraveni udeřit kdykoliv, bez otázek.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_greh_fp">
+    <text>Nášivka Hříchu</text>
+</string>
+<string id="st_greh_fp_descr">
+    <text>Držení této nášivky vyvolává neklid. Na černém pozadí je v levém horním rohu had a v pravém ortodoxní kříž. Uprostřed tmavá hvězda se slovem „HŘÍCH“. Přesto její dlouhodobé držení vyvolává zvláštní pocit klidu.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_renegade_fp">
+    <text>Nášivka Odpadlíků</text>
+</string>
+<string id="st_renegade_fp_descr">
+    <text>Zobrazuje žlutého škorpiona na zeleném štítu. Naznačuje, že tato skupina mohla kdysi mít vyšší cíl — dnes však málokdo věří, že ji spojuje něco víc než zoufalství a vůle přežít. Nášivku dnes běžně nosí vyvrhelové a kriminální živly… možná z nostalgie, možná jen kvůli vzhledu.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] osobní předmět\n
+    %c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+    </text>
+</string>
+
+<string id="st_spectrum_fp">
+	<text>Nášivka „Spektra“</text>
+</string>
+<string id="st_spectrum_fp_descr">
+	<text>Nášivka záhadné skupiny. Kdo sponzoruje tuto soukromou vojenskou společnost? To zůstává tajemstvím, které jen tak neodhalíme. Jedno je však jisté — jde o velmi nebezpečnou frakci.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] • %c[ui_gray_2] osobní předmět\n
+	%c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+	</text>
+</string>
+
+<string id="st_milstalk_fp">
+	<text>Nášivka „Vojenských stalkerů“</text>
+</string>
+<string id="st_milstalk_fp_descr">
+	<text>Nášivka stalkerů, kteří podepsali smlouvu s armádou. Přežívají v podmínkách Zóny tam, kde armádě chybí zkušenosti. Plní různé úkoly zadávané vládou.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] • %c[ui_gray_2] osobní předmět\n
+	%c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+	</text>
+</string>
+
+<string id="st_atribute_fp">
+	<text>Nášivka „Attribute“</text>
+</string>
+<string id="st_atribute_fp_descr">
+	<text>Nášivka neznámých kultistů, kteří si říkají „Attribute“. Nikdo netuší, odkud pocházejí, ale zprávy o jejich krutosti se šíří celou Zónou. Kdo vlastně jsou — a co zde hledají?\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] • %c[ui_gray_2] osobní předmět\n
+	%c[d_blue] • %c[ui_gray_2] vysoká hodnota\n
+	</text>
+</string>
+
+
+
+</string_table>
