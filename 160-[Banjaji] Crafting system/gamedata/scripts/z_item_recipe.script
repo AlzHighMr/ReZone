@@ -1,0 +1,32 @@
+local uirecipe_init_workshop = item_recipe.UIRecipe.Init_workshop
+item_recipe.UIRecipe.Init_workshop = function(self)
+	uirecipe_init_workshop(self)
+	self.intercept_draw = false
+	self.itm_name_size = nil
+	self.itm_name_color = GetARGB(255, 150, 150, 150)
+	self.itm_num_color = nil
+	self.cap_color = GetARGB(255, 170, 170, 170)
+end
+
+local uirecipe_initcontrols_1st_page = item_recipe.UIRecipe.InitControls_1st_page
+item_recipe.UIRecipe.InitControls_1st_page = function(self)
+	uirecipe_initcontrols_1st_page(self)
+	self.cap_shadow:SetTextColor(GetARGB(0, 120, 120, 120))
+end
+
+local uirecipe_initcontrols_recipe = item_recipe.UIRecipe.InitControls_recipe
+item_recipe.UIRecipe.InitControls_recipe = function(self)
+	uirecipe_initcontrols_recipe(self)
+	self.cap_shadow:SetTextColor(GetARGB(0, 120, 120, 120))
+end
+
+local uirecipe_draw_text = item_recipe.UIRecipe.Draw_text
+item_recipe.UIRecipe.Draw_text = function(self)
+	uirecipe_draw_text(self)
+	self.information:SetTextColor(GetARGB(255, 170, 170, 170))
+	local trans = game.translate_string(self.encyc_sec .. "_text2")
+	if (trans ~= (self.encyc_sec .. "_text2")) then
+		self.information2:SetText(trans)
+		self.information2:SetTextColor(GetARGB(255, 150, 150, 150))
+	end
+end

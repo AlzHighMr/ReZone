@@ -1,0 +1,523 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition =  trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(dolg:1600)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(dolg:1200)} supplies_4, {=actor_goodwill_ge(dolg:800)} supplies_3, {=actor_goodwill_ge(dolg:400)} supplies_2,  supplies_1
+buy_item_condition_factor = 0.90	;0.40
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_supplier
+
+[trade_generic_buy]:supplier
+
+[trade_generic_sell]:supplier
+
+
+
+
+
+
+;=========== SUPPLIES 1 ===============
+;======================================
+[supplies_1]:common_stock
+
+
+
+;[devices]
+detector_radio             	= 1, 0.50
+detector_geiger             = 1, 0.50
+device_pda_1			    = 1, 0.50
+device_flashlight		    = 1, 0.50
+device_torch_dummy		    = 1, 0.50
+wpn_binoc_inv          	 	= 1, 0.50
+lead_box			        = 3, 0.50
+batteries_dead			    = 6, 0.50
+detector_simple			    = 1, 0.50
+af_frames			        = 1, 0.65
+af_camelbak			        = 1, 0.75
+
+;[supplies]
+bolts_pack			        = 2, 0.50
+itm_tent                	= 1, 0.50
+itm_sleepbag			    = 1, 0.50
+compression_bag			    = 1, 0.50
+itm_actor_backpack		    = 1, 1
+itm_backpack			    = 1, 1
+bandage				        = 8, 1
+medkit				        = 6, 1
+medkit_army			        = 4, 1
+
+kerosene	                = 1, 0.50
+charcoal	                = 2, 0.50
+explo_balon_gas	            = 1, 0.50
+explo_jerrycan_fuel	        = 1, 0.50
+
+;[tools]
+kit_hunt				= 1, 0.50
+fieldcooker				= 1, 0.50
+cooking          		= 1, 0.50	
+
+;[food]
+ration_ukr			   = 1, 0.50
+ration_ru			   = 1, 0.50
+mre				       = 1, 0.50
+
+;[drugs]
+drug_booster			= 2, 0.50
+drug_coagulant			= 1, 0.50
+drug_antidot			= 1, 0.50
+drug_radioprotector		= 1, 0.50
+drug_psy_blockade		= 1, 0.50
+
+;[explosives]
+grenade_f1		       = 4, 0.85
+grenade_smoke		   = 4, 0.85
+grenade_rgd5		   = 1, 0.85
+mine_new               = 3, 0.50
+
+;[melee]
+wpn_knife              = 1, 0.50
+wpn_knife2             = 1, 0.50
+
+
+
+;[ammo]
+ammo_9x18_fmj 		= 16, 0.75
+ammo_9x18_pmm 		= 16, 0.75
+
+ammo_9x19_pbp 		= 15, 0.75
+ammo_9x19_fmj 		= 15, 0.75
+
+ammo_5.45x39_fmj 	= 25, 0.75
+ammo_5.45x39_ep 	= 25, 0.75
+
+ammo_12x70_buck 	= 10, 0.75
+ammo_12x76_zhekan 	= 10, 0.75
+ammo_12x76_dart 	= 10, 0.75
+
+ammo_20x70_buck     = 15, 0.75    ;BaS
+
+ammo_7.62x25_p 		= 16, 0.75
+ammo_7.62x25_ps 	= 16, 0.75
+
+ammo_7.62x39_fmj 	= 15, 0.75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;=========== SUPPLIES 2 ===============
+;======================================
+[supplies_2]:supplies_1
+
+
+;[devices]
+device_torch_nv_1		= 1, 0.75
+equ_small_pack          	= 1, 0.50
+detector_advanced		= 2, 0.75
+af_kevlar			= 1, 0.65
+af_plates			= 1, 0.65
+af_iam				= 3, 0.50
+af_freon  			= 1, 0.75
+af_surge			= 1, 0.75
+af_cooler			= 1, 0.75
+
+;[melee]
+wpn_knife3              = 1, 0.50
+wpn_axe                 = 1, 0.50
+wpn_axe2                = 1, 0.75
+
+;[tools]
+army_bowler             = 1, 0.50
+
+
+
+;[outfits]
+dolg_novice_outfit		= 1, 0.50
+dolg_outfit			    = 1, 0.50
+dolg_scout_outfit 		= 1, 0.50
+dolg_red_outfit			= 1, 0.50
+dolg_voin_outfit		= 1, 0.50
+nbc_dolg_outfit         	= 1, 0.75
+trenchcoat_dolg_brown_outfit 	= 1, 0.75
+
+;[headgear]
+helm_respirator_gp5    = 1, 0.50
+helm_respirator_old    = 1, 0.50
+helm_ppm88		       = 1, 0.50
+helm_m40			   = 1, 0.50
+helm_m50			   = 1, 0.75
+
+;[ammo]
+ammo_9x18_ap 		= 16, 0.75
+ammo_9x19_ap 		= 15, 0.75
+ammo_5.45x39_ap 	= 15, 0.75
+ammo_7.62x39_ap 	= 15, 0.75
+ammo_11.43x23_fmj 	= 14, 0.75
+ammo_11.43x23_hydro 	= 14, 0.75
+ammo_7.62x54_7h14 	= 15, 0.75
+
+ammo_23x75_shrapnel        = 5, 1     ;BaS  
+ammo_23x75_barrikada       = 3, 1     ;BaS
+
+;[pistols]
+wpn_fort                = 1, 0.65
+wpn_pm                  = 1, 0.65
+wpn_pb                  = 1, 0.65
+wpn_tt33	            = 1, 0.65
+wpn_gsh18               = 1, 0.65
+wpn_cz52		        = 1, 0.65
+
+wpn_pm_bas                 = 1, 0.50    ;BaS
+wpn_pm_bas_custom          = 1, 0.50    ;BaS
+
+wpn_aps                 = 1, 0.65
+wpn_oc33                = 1, 0.65
+wpn_tt33_modern         = 1, 0.65
+wpn_pb_custom           = 1, 0.65
+wpn_pm_custom           = 1, 0.65
+wpn_pmm             	= 1, 0.65
+wpn_colt1911_new    	= 1, 0.65
+
+;[shotguns]
+wpn_fort500              = 1, 0.65
+wpn_protecta             = 1, 0.65
+wpn_mp153_bas            = 1, 0.50    ;BaS
+
+
+;[rifles]
+wpn_ak74u               = 1, 0.75
+wpn_akm                 = 1, 0.75
+wpn_akms                = 1, 0.75
+wpn_kiparis         	= 1, 0.75
+wpn_kiparis_s              = 1, 0.50    ;BaS
+wpn_ak74u_n1               = 1, 0.50    ;BaS 
+wpn_sks_b                  = 1, 0.50    ;BaS
+
+wpn_rpk                  = 1, 0.65
+wpn_aek                  = 1, 0.65
+wpn_ak74m                = 1, 0.65
+wpn_ak103                = 1, 0.65
+wpn_aks74               = 1, 0.65
+wpn_ak74                = 1, 0.65
+wpn_abakan               = 1, 0.65
+
+wpn_ak74_n                 = 1, 0.50    ;BaS
+wpn_svd_m1                 = 1, 0.50    ;BaS
+wpn_abakan_n               = 1, 0.50    ;BaS
+wpn_kiparis_m2             = 1, 0.50    ;BaS
+wpn_pk_siber               = 1, 0.50    ;BaS
+
+
+;[explosives]
+grenade_rgd5		= 1, 0.85
+grenade_gd-05		= 1, 0.85
+ied_rpg_new                 = 3, 0.50
+
+;[w_addons]
+pso1m21				= 1, 0.50
+wpn_addon_scope_po4x34		= 1, 0.50
+
+1p29				= 1, 0.50
+ps01				= 1, 0.50
+kobra				= 1, 0.50
+ekp8_02             = 1, 0.50    ;BaS
+1p76                = 1, 0.50    ;BaS
+ps01                = 1, 0.50     ;BaS
+okep77              = 1, 0.50     ;BaS
+
+
+pn23                       = 1, 0.50     ;BaS
+ekp8_18                    = 1, 0.50     ;BaS
+rakurs                     = 1, 0.50     ;BaS
+pso2                       = 1, 0.50     ;BaS
+
+wpn_sil_pmm                = 1, 0.50     ;BaS
+wpn_sil_apb                = 1, 0.50     ;BaS
+wpn_sil_tgp-a			   = 1, 0.50
+wpn_sil_atg			       = 1, 0.50
+wpn_sil_aps			       = 1, 0.50
+
+wpn_sil_kip             = 1, 0.50    ;BaS
+wpn_sil_scorp           = 1, 0.50     ;BaS
+wpn_sil_9mm			    = 1, 0.50
+wpn_sil_45			    = 1, 0.50
+wpn_sil_pbs1			= 1, 0.50
+wpn_sil_pbs4			= 1, 0.50
+
+wpn_addon_grenade_launcher		= 1, 0.50
+
+
+
+
+;[w_addons]
+
+
+
+
+
+
+
+
+
+
+;=========== SUPPLIES 3 ===============
+;======================================
+[supplies_3]:supplies_2
+
+;[devices]
+equ_small_military_pack 	= 1, 0.50
+device_pda_2			= 1, 0.75
+af_frames_up   			= 1, 0.75
+af_camelbak_up			= 1, 0.75
+
+;[melee]
+wpn_knife4              = 1, 0.75
+
+;[outfits]
+specops_dolg_outfit     	= 1, 0.50
+dolg_specops_red_outfit 	= 1, 0.50
+dolg_pantsir_outfit		= 1, 0.50
+dolg_heavy_outfit		= 1, 0.50
+dolg_heavy_redline_outfit 	= 1, 0.50
+light_dolg_outfit       	= 1, 0.50
+helm_tactic			= 1, 0.50
+helm_ranger			= 1, 0.50
+
+;[ammo]
+ammo_7.62x54_ap 	= 15, 0.75
+ammo_vog-25 		= 3, 0.85
+ammo_m209		= 3, 0.85
+ammo_9x39_ap 		= 15, 0.75
+ammo_9x39_pab9 		= 15, 0.75
+ammo_9x21_sp10             = 8, 1     ;BaS
+ammo_vog-30                = 5, 1     ;BaS
+
+;[explosives]
+ied_new                     = 2, 0.50
+
+;[pistols]
+wpn_colt1911_duty         = 1, 0.65
+wpn_tt33_modern           = 1, 0.65
+wpn_pb_custom             = 1, 0.65
+wpn_pm_custom             = 1, 0.65
+wpn_pmm                   = 1, 0.65
+
+;[shotguns]
+wpn_wincheaster1300     = 1, 0.25
+wpn_protecta            = 1, 0.65
+wpn_saiga12s            = 1, 0.65
+wpn_mp153               = 1, 0.65
+
+;[rifles]
+wpn_ak74m_duty           = 1, 0.65
+wpn_aek_duty		     = 1, 0.65
+wpn_ak103                = 1, 0.65
+wpn_ak104                = 1, 0.65
+
+wpn_rpk74                = 1, 0.65
+wpn_groza                = 1, 0.65
+wpn_vsk94                = 1, 0.65
+wpn_val                  = 1, 0.65
+wpn_ak74_modern          = 1, 0.65
+wpn_ak74_alt             = 1, 0.65
+wpn_ak74m_alt            = 1, 0.65
+wpn_aks74_new            = 1, 0.65
+wpn_ak74_modern          = 1, 0.65
+wpn_ak74m_alt            = 1, 0.65
+
+wpn_ak12_m1                = 1, 0.50    ;BaS
+
+wpn_ak74m_n                = 1, 0.50    ;BaS
+wpn_pkm_siber              = 1, 0.50    ;BaS
+
+
+
+;[snipers]
+wpn_svu                     = 1, 0.65
+wpn_svds                   = 1, 0.50    ;BaS
+wpn_svds_pmc               = 1, 0.20 
+
+
+;[w_addons]
+compm4s                    = 1, 0.50    ;BaS 
+kemper                     = 1, 0.50    ;BaS 
+usp1                       = 1, 0.50    ;BaS 
+1p78gs                     = 1, 0.50    ;BaS
+cortex					= 1, 1
+
+wpn_sil_sr1m               = 1, 0.50    ;BaS
+
+
+
+
+
+
+
+
+;=========== SUPPLIES 4 ===============
+;======================================
+[supplies_4]:supplies_3
+
+
+;[devices]
+equ_military_pack   = 1, 0.50
+device_pda_3		= 1, 0.75
+test_container      = 1, 0.50
+af_freon_up  		= 1, 0.75
+af_grid_up   		= 1, 0.75           
+af_cooler_up 		= 1, 0.75
+af_surge_up 		= 1, 0.75
+af_aac			    = 1, 0.75
+
+;[melee]
+wpn_knife5          = 1, 0.50
+
+;[outfits]
+dolg_scientific_outfit		= 1, 0.50
+dolg_scientific_red_outfit	= 1, 0.50
+dolg_scientific_wood_outfit	= 1, 0.50
+dolg_proto_exo_outfit		= 1, 0.50
+dolg_exolight_outfit		= 1, 0.50
+exo_dolg_wood_outfit		= 1, 0.50
+exo_dolg_urban_outfit		= 1, 0.50
+dolg_heavy_proto_exo_outfit	= 1, 0.50
+
+;[headgear]
+helm_exo                = 1, 0.50
+helm_spartan		= 1, 0.50
+
+;[ammo]
+ammo_7.62x54_7h1	= 10, 0.75
+ammo_7.62x54_7h14 	= 15, 0.75
+
+ammo_5.56x45_fmj 	= 10, 0.75
+ammo_5.56x45_ss190 	= 10, 0.75
+ammo_5.56x45_ap 	= 10, 0.75
+
+ammo_5.7x28_ss190 	= 15, 0.75
+ammo_5.7x28_ss195 	= 15, 0.75
+
+ammo_7.62x54_ap 	= 15, 0.75
+
+ammo_12.7x55_fmj 	= 10, 0.75
+ammo_12.7x55_ap 	= 10, 0.75
+
+ammo_7.62x51_fmj 	= 15, 0.75
+ammo_7.62x51_ap 	= 15, 0.75
+
+ammo_5.45x39_fmj 	= 15, 0.75
+ammo_5.45x39_ep 	= 15, 0.75
+ammo_5.45x39_ap 	= 15, 0.75
+
+ammo_7.92x33_fmj 	= 15, 0.75
+ammo_7.92x33_ap 	= 15, 0.75
+
+ammo_magnum_300 	= 10, 0.75
+ammo_pkm_100 		= 6, 0.75
+ammo_pkm_100 		= 4, 0.85
+ammo_og-7b		    = 2, 0.85
+
+;[pistols]
+wpn_pl15            = 1, 0.50    ;BaS
+
+
+;[shotguns]
+wpn_mp153               = 1, 0.65
+wpn_protecta_aim    	= 1, 0.65
+
+;[rifles]
+wpn_aek_duty            = 1, 0.75
+wpn_vintorez            = 1, 0.65
+wpn_ak74m_duty          = 1, 0.75
+wpn_val_modern          = 1, 0.65
+wpn_pkp                 = 1, 0.65
+wpn_pkm                 = 1, 0.65
+wpn_rg-6		        = 1, 0.65
+
+wpn_sr1m                   = 1, 0.50    ;BaS
+wpn_ak12_bas               = 1, 0.50    ;BaS
+wpn_ak105_bas              = 1, 0.50    ;BaS
+
+
+
+;[w_addons]
+wpn_sil_geks545            = 1, 0.50    ;BaS
+gurza_up                   = 1, 0.50    ;BaS
+lazup_pl15                 = 1, 0.50    ;BaS
+wpn_sil_tgpv               = 1, 0.50    ;BaS
+wpn_sil_pl15               = 1, 0.50    ;BaS
+
+
+
+
+
+
+
+
+
+
+
+;=========== SUPPLIES 5 ===============
+;======================================
+[supplies_5]:supplies_4
+
+af_aam				= 1, 0.75
+device_torch_nv_2		= 1, 0.75
+detector_elite			= 1, 0.75
+
+;[melee]
+wpn_knife5              	= 1, 0.75
+wpn_knife6                 = 1, 0.50    ;BaS
+wpn_knife9                 = 1, 0.50    ;BaS
+
+;[pistols]
+wpn_pl15_tan               = 1, 0.50    ;BaS
+
+;[outfits]
+dolg_exo_outfit			= 1, 0.50
+dolg_nosorog_outfit		= 1, 0.50
+
+;[rifles]
+wpn_ash12			= 1, 0.65
+wpn_val_tac                = 1, 0.50    ;BaS
+wpn_ak74u_tac              = 1, 0.50    ;BaS
+wpn_sr2_veresk             = 1, 0.50    ;BaS
+
+wpn_pkp_tac_siber          = 1, 0.50    ;BaS
+wpn_pkm_zenit_siber        = 1, 0.50    ;BaS
+wpn_pkp_siber              = 1, 0.50    ;BaS
+
+;[snipers]
+wpn_vssk                  = 1, 0.50    ;BaS
+wpn_sks_tac               = 1, 0.50    ;BaS
+wpn_dvl10                 = 1, 0.50    ;BaS
+wpn_vintorez_n1            = 1, 0.50    ;BaS 
+
+;[snipers]
+wpn_sv98_custom         = 1, 0.65
+
+;[w_addons]
+1p59                       = 1, 0.50    ;BaS
+wpn_sr2_m1                 = 1, 0.50    ;BaS
+wpn_sil_veresk             = 1, 0.50    ;BaS

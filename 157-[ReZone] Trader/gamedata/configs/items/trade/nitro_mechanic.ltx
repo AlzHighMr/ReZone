@@ -1,0 +1,82 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy 
+sell_condition = trade_generic_sell
+buy_supplies = {=toolkit_task_done(3)} supplies_4, {=toolkit_task_done(2)} supplies_3, {=toolkit_task_done(1)} supplies_2, supplies_1
+buy_item_condition_factor = 0.01
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_nitro
+
+[trade_generic_buy]:mechanic, toolkits_h
+itm_pda_common                           ;NO TRADE
+itm_pda_rare                             ;NO TRADE
+itm_pda_uncommon                         ;NO TRADE
+pri_a25_explosive_charge_item            ;NO TRADE
+
+
+[trade_generic_sell]:
+
+
+[supplies_1]:common_stock		;-- no tool
+sharpening_stones	    = 1, 0.70
+swiss_knife             = 4, 0.70
+ball_hammer             = 3, 0.70
+duct_tape               = 5, 0.70
+grease                  = 5, 0.70
+grooming		        = 4, 0.70
+steel_wool		        = 6, 0.70
+batteries_dead		    = 8, 0.70
+
+kerosene	            = 1, 0.70
+charcoal	            = 2, 0.70
+explo_balon_gas	        = 1, 0.70
+explo_jerrycan_fuel	    = 1, 0.70
+
+[supplies_2]:supplies_1		;-- basic tools delivered
+sharpening_stones	    = 1, 0.70
+swiss_knife             = 4, 0.70
+ball_hammer             = 3, 0.70
+duct_tape               = 5, 0.70
+grease                  = 5, 0.70
+grooming		        = 4, 0.70
+steel_wool		        = 6, 0.70
+batteries_dead		    = 8, 0.70
+
+kerosene	            = 1, 0.70
+charcoal	            = 2, 0.70
+explo_balon_gas	        = 1, 0.70
+explo_jerrycan_fuel	    = 1, 0.70
+
+[supplies_3]:supplies_2		;-- advanced tools delivered
+sharpening_stones	    = 1, 0.70
+swiss_knife             = 4, 0.70
+ball_hammer             = 3, 0.70
+duct_tape               = 5, 0.70
+grease                  = 5, 0.70
+grooming		        = 4, 0.70
+steel_wool		        = 6, 0.70
+batteries_dead		    = 8, 0.70
+
+kerosene	            = 1, 0.70
+charcoal	            = 2, 0.70
+explo_balon_gas	        = 1, 0.70
+explo_jerrycan_fuel	    = 1, 0.70
+
+[supplies_4]:supplies_3		;-- expert tools delivered
+sharpening_stones	    = 1, 0.70
+swiss_knife             = 4, 0.70
+ball_hammer             = 3, 0.70
+duct_tape               = 5, 0.70
+grease                  = 5, 0.70
+grooming		        = 4, 0.70
+steel_wool		        = 6, 0.70
+batteries_dead		    = 8, 0.70
+
+kerosene	            = 1, 0.70
+charcoal	            = 2, 0.70
+explo_balon_gas	        = 1, 0.70
+explo_jerrycan_fuel	    = 1, 0.70

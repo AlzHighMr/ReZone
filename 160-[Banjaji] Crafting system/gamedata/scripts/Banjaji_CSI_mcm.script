@@ -1,0 +1,52 @@
+
+--[[
+	Banjaji's Crafting system improvements v4.0
+	2023.11.15
+	* Constructs options for MCM and listens to option changes.
+	* Modifies item_recipe.delete_recipe, item_recipe.delete_letter and ui_workshop_monkeypatch_Banjaji_CSI.min_craft_item_cond
+	
+--]]
+
+options = 
+{	
+	id = "banjajis_csi", sh = true, gr = 
+	{
+		{id = "Title", type = "slide", text = "banjajis_csi_title", link = "Banjaji_textures\\Banjaji_CSI.dds", size = {76, 50}, spacing = 20, stretch = false},
+		
+		-- item_recipe.script, whether to delete note after reading
+		{id = "delete_recipe", type = "check", val = 1, def = false},
+		{id = "delete_letter", type = "check", val = 1, def = false},
+		
+		-- ui_workshop_monkeypatch_Banjaji_CSI.script, what condition items (greater or equal) to consider as components and tools. Full condition is 1.
+		{id = "min_craft_item_cond", type = "track", val = 2, min = -1, max = 100, step = 1, def = -1}
+    }
+}
+
+-- Loads the options for MCM processing
+function on_mcm_load()
+    return options
+end
+
+-- Registers callbacks
+function on_game_start()
+	RegisterScriptCallback("on_option_change",on_option_change) -- MCM support
+	RegisterScriptCallback("actor_on_first_update", on_option_change) -- Load MCM settings at the start of session
+end
+
+-------------------------------------------------------------------
+-- MCM support
+-------------------------------------------------------------------
+-- Changes variables according to MCM settings
+function on_option_change()
+	if (ui_mcm) then -- Checks if MCM is installed
+		
+		-- item_recipe.script
+		item_recipe.delete_recipe = ui_mcm.get("banjajis_csi/delete_recipe")
+		item_recipe.delete_letter = ui_mcm.get("banjajis_csi/delete_letter")
+		
+		-- ui_workshop_monkeypatch_Banjaji_CSI.script
+		local min_craft_item_cond = ui_mcm.get("banjajis_csi/min_craft_item_cond")
+		min_craft_item_cond = min_craft_item_cond / 100 -- from percentage to fraction (max condition is 1)
+		ui_workshop_monkeypatch_Banjaji_CSI.min_craft_item_cond = min_craft_item_cond
+	end
+end

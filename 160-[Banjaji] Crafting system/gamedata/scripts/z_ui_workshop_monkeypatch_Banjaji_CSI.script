@@ -1,0 +1,120 @@
+function ui_workshop_monkeypatch_Banjaji_CSI.InitControls_comp_win(self, mainframe, xml_comp)
+	-- Titles
+	local cap_c = xml_comp:InitTextWnd("workshop:craft:component_window:cap_components", mainframe)
+	local cap_t = xml_comp:InitTextWnd("workshop:craft:component_window:cap_tools", mainframe)
+	local cap_r = xml_comp:InitTextWnd("workshop:craft:component_window:cap_result", mainframe)
+	
+	-- if color is defined from another script then this can be used
+	if self.cap_color then 
+		cap_c:SetTextColor(self.cap_color)
+		cap_t:SetTextColor(self.cap_color)
+		cap_r:SetTextColor(self.cap_color)
+	end
+	table.insert(self.UI_default_comp, cap_c)
+	table.insert(self.UI_default_comp, cap_t)
+	table.insert(self.UI_default_comp, cap_r)
+	
+	-- Lines, if an element is created later (e.g. component_frame) then that is drawn on top
+	-- List to components
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_l_h", mainframe)) -- Added by Sota
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_arrow_down_c", mainframe))
+	
+	-- Components to tools
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_c_h", mainframe))
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_c_v", mainframe))
+	self.arrow_tool = xml_comp:InitStatic("workshop:craft:component_window:line_arrow_up_t", mainframe)
+	table.insert(self.UI_default_comp, self.arrow_tool)
+	-- show if only one tool
+	self.line_lone_tool = xml_comp:InitStatic("workshop:craft:component_window:line_lone_tool", mainframe) 
+	self.arrow_lone_tool = xml_comp:InitStatic("workshop:craft:component_window:arrow_lone_tool", mainframe)
+	table.insert(self.UI_other_comp, self.line_lone_tool)
+	table.insert(self.UI_other_comp, self.arrow_lone_tool)
+	
+	-- Tools to results
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_t_h", mainframe))
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_t_v", mainframe))
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:line_arrow_down_r", mainframe))
+	
+	
+	-- create three areas for a scrollbar, set self class instance as parent (coordinate origin is self.owner.dialog origin)
+	self.component_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_c", mainframe)
+	self.tool_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_t", mainframe)
+	self.result_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_r", mainframe)
+	
+	-- Vertical scroll lines
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:vert_line_scr", self.component_frame))
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:vert_line_scr", self.tool_frame))
+	table.insert(self.UI_default_comp, xml_comp:InitStatic("workshop:craft:component_window:vert_line_scr", self.result_frame)) -- Added by Sota
+	
+	-- Scrollbar frames
+	table.insert(self.UI_default_comp, self.component_frame)
+	table.insert(self.UI_default_comp, self.tool_frame)
+	table.insert(self.UI_default_comp, self.result_frame)
+	
+	-- Create three scrollbars, set corresponding frame as parent. 
+	-- This has to be after vertical scroll lines, so that they are rendered under scrollbars
+	-- Need to create the scrollbars here as semi-static objects because only scrollbar:Clear() works 
+	self.scrollbar_comp = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.component_frame)
+	self.scrollbar_tool = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.tool_frame)
+	self.scrollbar_res = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.result_frame)
+	self.scrollbar_res:SetFixedScrollBar(false) -- don't always show scrollbar (e.g. without items)
+	table.insert(self.UI_other_comp, self.scrollbar_comp)
+	table.insert(self.UI_other_comp, self.scrollbar_tool)
+	table.insert(self.UI_other_comp, self.scrollbar_res)
+	
+	-- Button
+	self.btn_craft = xml_comp:Init3tButton("workshop:craft:component_window:btn_craft", mainframe)
+	table.insert(self.UI_default_comp, self.btn_craft)
+end
+
+function ui_workshop_monkeypatch_Banjaji_CSI.Draw_scrollbar(self, scrollbar, recipe, scrollbar_type)
+	-- Edited by Sota
+	--local draw_lines = (scrollbar_type ~= "results") and true or false -- don't draw for results
+	local draw_lines = true
+	
+	-- Iterate over items in the list
+	for item,amount in pairs(recipe[scrollbar_type]) do
+		
+		-- Create frame for item background, icon, amount etc in the scrollable window
+		local frame = self.xml_comp:InitStatic("workshop:craft:component_window:frame_component", scrollbar)
+		frame:SetAutoDelete(true) -- I guess for garbage collection in Xray
+		
+		local background = self.xml_comp:InitStatic("workshop:craft:component_window:pic_item_b", frame) -- item background, frame is parent
+		local itm_name = self.xml_comp:InitTextWnd("workshop:craft:component_window:text_item_name", frame) -- item name text, frame is parent
+		local itm_num = self.xml_comp:InitTextWnd("workshop:craft:component_window:text_item_num", background) -- item amount text, background is parent
+		local itm_ico = self.xml_comp:InitStatic("workshop:craft:component_window:pic_icon", background) -- item icon, background is parent
+		--self.itm_ico_temp = self.xml_comp:InitStatic("workshop:craft:component_window:pic_icon", background) -- item icon, background is parent
+		
+		-- Save dynamic elements
+		table.insert(self.UI_dynamic_comp, frame)
+		table.insert(self.UI_dynamic_comp, background)
+		table.insert(self.UI_dynamic_comp, itm_name)
+		table.insert(self.UI_dynamic_comp, itm_num)
+		table.insert(self.UI_dynamic_comp, itm_ico)
+		
+		if draw_lines then
+			local itm_line = self.xml_comp:InitStatic("workshop:craft:component_window:pic_line", background) -- horizontal line, background is parent
+			table.insert(self.UI_dynamic_comp, itm_line)
+		end
+		
+		-- save icons for self:update() function. Saves with icon as key to avoid clashes of same item
+		self.itm_icos[itm_ico] = item
+		
+		-- Writes text into itm_name image
+		local name = ui_item.get_sec_name(item) or item
+		itm_name:SetText(name)
+		
+		-- If another script uses these functions then these variables can be intercepted
+		if self.itm_name_color then -- if color is defined from another script
+			itm_name:SetTextColor(self.itm_name_color)
+		end 
+		if self.itm_name_size == "small" then -- if font is defined from another script
+			itm_name:SetFont(GetFontSmall())
+		elseif self.itm_name_size == "medium" then
+			itm_name:SetFont(GetFontMedium())
+		end
+		
+		-- Writes item amount and whether crafting is possible, updates graphics
+		ui_workshop_monkeypatch_Banjaji_CSI.UpdateItem(self, recipe, scrollbar_type, item, itm_ico, itm_num)
+	end
+end

@@ -1,0 +1,31 @@
+
+--[[
+	2023.11.09
+	Banjaji's Crafting system improvements v4.0
+	* Adds new texture for "Known recipes" article in PDA encyclopedia
+--]]
+
+function on_xml_read()
+    RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        -- XML file to be changed
+        local xml_to_change = [[ui\textures_descr\ui_pda_encyclopedia.xml]]
+
+        -- Check if it's the same file
+        if xml_file_name == xml_to_change then
+            modify_xml(xml_obj)
+        end
+    end)
+end
+
+-- Modify xml
+function modify_xml(xml_obj)
+	-- Add encyclopedia__notes__known_recipes_image that uses basic_recipe_1 texture and settings
+	local new_string = 
+[[
+<file name="ui\guide\encyclopedia_notes">
+	<texture id="encyclopedia__notes__known_recipes_image" x="512" y="256" width="512" height="256"/>
+</file>
+]]
+	
+	local inserted = xml_obj:insertFromXMLString(new_string)
+end

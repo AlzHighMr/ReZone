@@ -1,0 +1,136 @@
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        	-- XML file i want to change
+        	local xml_to_change = [[ui\ui_workshop.xml]]
+
+        	-- Check if its the file i want to change
+        	if xml_file_name == xml_to_change then
+			local back = xml_obj:query("workshop > state > btn_back")
+			local tool_add = xml_obj:query("workshop > state")
+			local add = 
+			[[
+			<pic_toolkit_6_b x="560" y="327" width="164" height="173" stretch="1">
+				<texture>ui_inGame2_workshop_toolkit</texture>
+			</pic_toolkit_6_b>
+			<pic_toolkit_6 x="568" y="335" width="148" height="157" stretch="1"/>
+			<txt_toolkit_6 x="560" y="500" width="164" height="35">
+				<text complex_mode="1" r="200" g="200" b="200" align="c" vert_align="c" font="letterica18"/>
+			</txt_toolkit_6>
+			]]
+			local edit1 = xml_obj:query("workshop > state > pic_toolkit_4_b")
+			local edit2 = xml_obj:query("workshop > state > pic_toolkit_5_b")
+			local edit3 = xml_obj:query("workshop > state > pic_toolkit_4")
+			local edit4 = xml_obj:query("workshop > state > pic_toolkit_5")
+			local edit5 = xml_obj:query("workshop > state > txt_toolkit_4")
+			local edit6 = xml_obj:query("workshop > state > txt_toolkit_5")
+			if is_not_empty(edit1) then
+				local el = edit1[1]
+				xml_obj:setElementAttr(el, {x=49})
+			end
+			if is_not_empty(edit2) then
+				local el = edit2[1]
+				xml_obj:setElementAttr(el, {x=308})
+			end
+			if is_not_empty(edit3) then
+				local el = edit3[1]
+				xml_obj:setElementAttr(el, {x=56})
+			end
+			if is_not_empty(edit4) then
+				local el = edit4[1]
+				xml_obj:setElementAttr(el, {x=316})
+			end
+			if is_not_empty(edit5) then
+				local el = edit5[1]
+				xml_obj:setElementAttr(el, {x=49})
+			end
+			if is_not_empty(edit6) then
+				local el = edit6[1]
+				xml_obj:setElementAttr(el, {x=308})
+			end
+			if is_not_empty(back) then
+				local el = back[1]
+				xml_obj:setElementAttr(el, {x=724, width=40})
+			end
+        		if is_not_empty(tool_add) then
+				local el = tool_add[1]
+				xml_obj:insertFromXMLString(add, el, #el.kids)
+			end
+		end
+    	end)
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        	-- XML file i want to change
+        	local xml_to_change = [[ui\ui_workshop_16.xml]]
+
+        	-- Check if its the file i want to change
+        	if xml_file_name == xml_to_change then
+			local back = xml_obj:query("workshop > state > btn_back")
+			local tool_add = xml_obj:query("workshop > state")
+			local add = 
+			[[
+			<pic_toolkit_6_b x="560" y="327" width="164" height="173" stretch="1">
+				<texture>ui_inGame2_workshop_toolkit</texture>
+			</pic_toolkit_6_b>
+			<pic_toolkit_6 x="568" y="335" width="148" height="157" stretch="1"/>
+			<txt_toolkit_6 x="560" y="500" width="164" height="35">
+				<text complex_mode="1" r="200" g="200" b="200" align="c" vert_align="c" font="letterica18"/>
+			</txt_toolkit_6>
+			]]
+			local edit1 = xml_obj:query("workshop > state > pic_toolkit_4_b")
+			local edit2 = xml_obj:query("workshop > state > pic_toolkit_5_b")
+			local edit3 = xml_obj:query("workshop > state > pic_toolkit_4")
+			local edit4 = xml_obj:query("workshop > state > pic_toolkit_5")
+			local edit5 = xml_obj:query("workshop > state > txt_toolkit_4")
+			local edit6 = xml_obj:query("workshop > state > txt_toolkit_5")
+			if is_not_empty(edit1) then
+				local el = edit1[1]
+				xml_obj:setElementAttr(el, {x=49})
+			end
+			if is_not_empty(edit2) then
+				local el = edit2[1]
+				xml_obj:setElementAttr(el, {x=308})
+			end
+			if is_not_empty(edit3) then
+				local el = edit3[1]
+				xml_obj:setElementAttr(el, {x=56})
+			end
+			if is_not_empty(edit4) then
+				local el = edit4[1]
+				xml_obj:setElementAttr(el, {x=316})
+			end
+			if is_not_empty(edit5) then
+				local el = edit5[1]
+				xml_obj:setElementAttr(el, {x=49})
+			end
+			if is_not_empty(edit6) then
+				local el = edit6[1]
+				xml_obj:setElementAttr(el, {x=308})
+			end
+			if is_not_empty(back) then
+				local el = back[1]
+				xml_obj:setElementAttr(el, {x=724, width=40})
+			end
+        		if is_not_empty(tool_add) then
+				local el = tool_add[1]
+				xml_obj:insertFromXMLString(add, el, #el.kids)
+			end
+		end
+    	end)
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+        	-- XML file i want to change
+        	local xml_to_change = [[ui\textures_descr\ui_item.xml]]
+
+        	-- Check if its the file i want to change
+        	if xml_file_name == xml_to_change then
+			local add = 
+			[[
+			<file name="ui\items\ui_toolkits_big">
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_d" x="186" y="157" width="186" height="157" /> 
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_e" x="186" y="157" width="186" height="157" /> 
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_h" x="0" y="157" width="186" height="157" /> 
+			<texture id="ui_inGame2_btn_workshop_toolkit_6_t" x="0" y="157" width="186" height="157" /> 
+			</file>
+			]]
+        		xml_obj:insertFromXMLString(add)
+		end
+    	end)
+end

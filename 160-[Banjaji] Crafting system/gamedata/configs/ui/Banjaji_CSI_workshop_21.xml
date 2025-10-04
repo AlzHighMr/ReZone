@@ -1,0 +1,110 @@
+<w>
+	<!-- Keeps same filestructure as in ui_workshop.xml just in case -->
+	<workshop>
+		<craft>
+			<component_window>
+				<!-- Parent is workshop:frame in vanilla XML, will quote as "self.owner.dialog" here -->
+				
+				<!-- Frame that defines component window area. Limits are cap_components top, frame_c left, frame_r right and frame_c bottom -->
+				<mainframe x="279" y="72" width="286.875" height="416" stretch="1"/> <!-- Parent is self.owner.dialog -->
+				
+				<!-- Titles. Horizontally same with pic_item_b -->
+				<cap_components x="0" y="-22" width="84.375" height="22"> <!-- Parent is mainframe -->
+					<text r="160" g="170" b="170" font="letterica18" align="c" vert_align="c">st_cap_components</text>
+				</cap_components>
+				<cap_tools x="95.625" y="-22" width="84.375" height="22"> <!-- Parent is mainframe -->
+					<text r="170" g="170" b="170" font="letterica18" align="c" vert_align="c">st_cap_tools</text>
+				</cap_tools>
+				<cap_result x="191.25" y="-22" width="84.375" height="22"> <!-- Parent is mainframe -->
+					<text r="170" g="170" b="170" font="letterica18" align="c" vert_align="c">st_cap_result</text>
+				</cap_result>
+				
+				<!-- Frames -->
+				<frame_c x="0" y="22" width="95.625" height="372" stretch="1"/> <!-- Parent is mainframe -->
+				<frame_t x="95.625" y="22" width="95.625" height="372" stretch="1"/> <!-- Parent is mainframe -->
+				<frame_r x="191.25" y="22" width="95.625" height="372" stretch="1"/> <!-- Parent is mainframe -->
+				
+				<!-- Scrollbars. Parent is frame_c or frame_t or frame_r -->
+				<scrollbar x="0" y="-14" width="96" height="400" right_ident="0" left_ident="0" top_indent="14" bottom_indent="14" vert_interval="0" always_show_scroll="0" stretch="1"/>
+				
+				<!-- Vertical line under scrollbars scrollbar. Parent is frame_c or frame_t or frame_r -->
+				<vert_line_scr x="88.875" y="-14" width="2.25" height="400" stretch="1"> 
+					<texture>ui_inGame2_workshop_line</texture>
+				</vert_line_scr>
+				
+				
+				<!-- Scrollbar content. Parent is scrollbar -->
+				<frame_component x="0" y="0" width="95.625" height="108" stretch="1"/> <!-- frame to hold all together as one item in scrollbar -->
+				
+				<pic_item_b x="7.3125" y="0" width="69.75" height="74" stretch="1"> <!-- background -->
+					<texture>ui_inGame2_item_1_window</texture>
+				</pic_item_b>
+				<pic_icon x="2.25" y="4" width="37.125" height="66" stretch="1"/> <!-- item icon -->
+				
+				<text_item_num x="41.625" y="0" width="28.125" height="74"> <!-- item number -->
+					<text complex_mode="1" r="150" g="150" b="150" align="c" vert_align="c" font="letterica16"/>
+				</text_item_num>
+				<text_item_name x="0" y="74" width="84.375" height="34"> <!-- item name -->
+					<text complex_mode="1" r="150" g="150" b="150" align="c" vert_align="t" font="letterica16"/>
+				</text_item_name>
+				
+				<pic_line x="69.75" y="35" width="13.5" height="4" stretch="1"> <!-- horizontal output line -->
+					<texture>ui_inGame2_workshop_line</texture>
+				</pic_line>
+				
+				
+				<!-- Lines -->
+				<!-- Lines list to components -->
+				<line_list_h x="274.5" y="80" width="46.6875" height="4" stretch="1"> <!-- Parent is self.owner.dialog -->
+					<texture>ui_inGame2_workshop_line</texture>
+				</line_list_h>
+				<line_list_v x="0" y="0" width="0" height="0" stretch="1"> <!-- Parent is self.owner.dialog -->
+					<!-- <texture>ui_inGame2_workshop_line</texture> -->
+				</line_list_v>
+				
+				<line_l_h x="42.1875" y="8" width="48.9375" height="4" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_inGame2_workshop_line</texture>
+				</line_l_h>
+				<line_arrow_down_c x="33.1875" y="0" width="18" height="20" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_button_arrow_down_e</texture>
+				</line_arrow_down_c>
+				
+				<!-- Lines components to tools -->
+				<line_c_h x="88.875" y="404" width="97.875" height="4" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_inGame2_workshop_line</texture>
+				</line_c_h>
+				<line_c_v x="0" y="0" width="0" height="0" stretch="1"> <!-- Parent is mainframe -->
+					<!-- <texture>ui_inGame2_workshop_line</texture> -->
+				</line_c_v>
+				<line_arrow_up_t x="128.8125" y="396" width="18" height="20" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_button_arrow_up_e</texture>
+				</line_arrow_up_t>
+				
+				<line_lone_tool x="0" y="0" width="0" height="0" stretch="1"> <!-- Parent is mainframe -->
+					<!-- <texture>ui_inGame2_workshop_line</texture> -->
+				</line_lone_tool>
+				<arrow_lone_tool x="128.8125" y="130" width="18" height="20" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_button_arrow_up_e</texture>
+				</arrow_lone_tool>
+				
+				<!-- Lines tools to results -->
+				<line_t_h x="184.5" y="8" width="97.875" height="4" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_inGame2_workshop_line</texture>
+				</line_t_h>
+				<line_t_v x="232.3125" y="404" width="48.9375" height="4" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_inGame2_workshop_line</texture> <!-- now it's a horizontal line to button -->
+				</line_t_v>
+				<line_arrow_down_r x="224.4375" y="0" width="18" height="20" stretch="1"> <!-- Parent is mainframe -->
+					<texture>ui_button_arrow_down_e</texture>
+				</line_arrow_down_r>
+				
+				<!-- Button -->
+				<btn_craft x="205.3125" y="396" width="56.25" height="20"> <!-- Parent is mainframe -->
+					<text r="150" g="150" b="150" font="letterica16" align="c" vert_align="c">ui_mm_craft</text>
+					<texture>ui_button_ordinary</texture>
+				</btn_craft>
+			
+			</component_window>
+		</craft>
+	</workshop>
+</w>

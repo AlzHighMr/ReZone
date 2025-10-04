@@ -1,0 +1,140 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = supplies_1
+buy_item_condition_factor = 0.90
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_beard
+
+[trade_generic_buy]: barman, artefacts_h
+mutant_part_flesh_meat                      = 0.6, 0.6
+mutant_part_boar_chop                       = 0.3, 0.3
+mutant_part_dog_meat                        = 0.6, 0.6
+mutant_part_psevdodog_meat                  = 0.6, 0.6
+mutant_part_krovosos_meat                   = 0.6, 0.6
+mutant_part_snork_hand                      = 0.3, 0.3
+mutant_part_chimera_meat                    = 0.6, 0.6
+mutant_part_tushkano_meat                   = 0.6, 0.6
+mutant_part_psysucker_meat                  = 0.6, 0.6
+mutant_part_lurker_meat                     = 0.6, 0.6
+
+mutant_part_krovosos_jaw                    = 0.3, 0.3
+mutant_part_boar_leg                        = 0.3, 0.3
+mutant_part_chimera_kogot                   = 0.3, 0.3
+mutant_part_dog_tail                        = 0.3, 0.3
+mutant_part_flesh_eye                       = 0.3, 0.3
+mutant_part_psevdodog_tail                  = 0.3, 0.3
+mutant_part_snork_leg                       = 0.3, 0.3
+mutant_part_snork_mask                      = 0.3, 0.3
+mutant_part_tushkano_head                   = 0.3, 0.3
+mutant_part_pseudogigant_eye                = 0.3, 0.3
+mutant_part_pseudogigant_hand               = 0.3, 0.3
+mutant_part_chimera_claw                    = 0.3, 0.3
+mutant_part_cat_tail                        = 0.3, 0.3
+mutant_part_burer_hand                      = 0.3, 0.3
+mutant_part_zombi_hand                      = 0.3, 0.3
+mutant_part_controller_hand                 = 0.3, 0.3
+mutant_part_controller_glass                = 0.3, 0.3
+mutant_part_fracture_hand                   = 0.3, 0.3
+mutant_part_dog_liver                       = 0.3, 0.3
+mutant_part_dog_heart                       = 0.3, 0.3
+mutant_part_cat_thyroid                     = 0.3, 0.3
+mutant_part_cat_claw                        = 0.3, 0.3
+mutant_part_lurker_tail                     = 0.3, 0.3
+mutant_part_lurker_eye                      = 0.3, 0.3
+mutant_part_psysucker_hand                  = 0.3, 0.3
+hide_chimera                                = 0.3, 0.3
+hide_pseudogiant                            = 0.3, 0.3
+hide_psy_dog                                = 0.3, 0.3
+hide_pseudodog                              = 0.3, 0.3
+hide_burer                                  = 0.3, 0.3
+hide_controller                             = 0.3, 0.3
+hide_bloodsucker                            = 0.3, 0.3
+hide_boar                                   = 0.3, 0.3
+hide_flesh                                  = 0.3, 0.3
+hide_lurker                                 = 0.3, 0.3
+hide_psysucker                              = 0.3, 0.3
+
+[trade_generic_sell]:supplier
+
+
+;=========== SUPPLIES 1 ===============
+;======================================
+
+[supplies_1]:common_stock
+
+bolts_pack		= 3, 0.50
+
+
+lead_box		= 2, 0.50
+detector_simple         = 1, 0.50
+detector_advanced       = 1, 0.25
+
+;food
+meat_tushkano		= 6, 0.50
+meat_dog		= 6, 0.50
+meat_pseudodog		= 4, 0.50
+meat_flesh		= 4, 0.50
+meat_boar		= 4, 0.50
+meat_bloodsucker	= 2, 0.50
+meat_snork		= 4, 0.50
+meat_chimera		= 1, 0.50
+meat_lurker		= 1, 0.50
+meat_psysucker		= 1, 0.50
+bread			= 4, 0.50
+breadold		= 6, 0.50
+kolbasa			= 4, 0.50
+tushonka                = 4, 0.50
+conserva		= 4, 0.50
+tomato			= 2, 0.50
+sausage			= 2, 0.50
+corn			= 2, 0.50
+beans			= 2, 0.50
+chili                   = 2, 0.50
+salmon                  = 2, 0.50
+raisins                 = 2, 0.50
+chocolate               = 2, 0.50
+nuts                    = 2, 0.50
+mre                     = 1, 0.50
+ration_ru               = 1, 0.50
+ration_ukr		= 1, 0.50
+mint			= 4, 0.50
+mineral_water		= 2, 0.50
+caffeine		= 2, 0.50
+hand_rolling_tobacco    = 2, 0.50
+cigar                   = 1, 0.50
+cigarettes_lucky      	= 3, 0.50
+cigarettes_russian    	= 3, 0.50
+beer                    = 3, 0.50
+vodka                 	= 3, 0.50
+vodka2                	= 3, 0.50
+energy_drink            = 3, 0.50
+water_drink           	= 2, 0.50
+cigarettes            	= 4, 0.50
+tea                   	= 2, 0.50
+akvatab               	= 3, 0.50
+flask                 	= 2, 0.50
+bottle_metal          	= 2, 0.50
+vodka_quality         	= 2, 0.50
+tobacco               	= 2, 0.50
+cigar1                	= 2, 0.50
+cigar2                	= 2, 0.50
+cigar3                	= 2, 0.50
+cooking	= 2, 1 ;                 = 4, 0.50
+fieldcooker             = 1, 0.50
+
+kerosene	= 2, 1 ;                = 1, 0.50
+charcoal	= 2, 1 ;                = 2, 0.50
+explo_balon_gas	= 2, 1 ;         = 1, 0.50
+explo_jerrycan_fuel	= 2, 1 ;     = 1, 0.50
+;box_matches		= 4, 0.50
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+-- Patch for Banjaji's Crafting system improvements v4.0
+
+-- Read recipes from centralized recipe variable and convert to required table format
+zzz_craft_use_in_tooltip_mcm.getCraftableItems = function(item_sec)
+	local items_craftable = {}
+	
+	-- Load recipes
+	local all_recipes = aa_load_recipes_Banjaji_CSI.get_recipes()
+	
+	-- Is note. Get results unlocked by the note
+	if SYS_GetParam(0, item_sec, "kind") == "i_letter" then 
+		local unlocked_recipes = aa_load_recipes_Banjaji_CSI.collect_note_recipes(all_recipes, item_sec) -- recipes where this item is note
+		
+		for recipe_index, recipe in ipairs(unlocked_recipes) do -- iterate over (semi-)unlocked recipes
+			items_craftable[recipe.identificator] = true
+		end
+		
+	-- Is normal item. Get components and tool required for this item
+	else 
+		local comp_recipes = aa_load_recipes_Banjaji_CSI.collect_comp_recipes(all_recipes, item_sec) -- recipes where this item is component
+		for recipe_index, recipe in ipairs(comp_recipes) do -- iterate over component associated recipes
+			items_craftable[recipe.identificator] = true
+		end
+		
+		-- don't consider standard toolkits, otherwise vanilla recipes show ca 50 items
+		if (not is_in_table(ui_workshop.workshop_toolkits, item_sec)) then
+			local tool_recipes = aa_load_recipes_Banjaji_CSI.collect_tool_recipes(all_recipes, item_sec) -- recipes where this item is tool
+			for recipe_index, recipe in ipairs(tool_recipes) do -- iterate over tool associated recipes
+				items_craftable[recipe.identificator] = true
+			end
+		end
+	end
+	
+	return items_craftable
+end
+
+-- Iterate over table values and if section is in values return true
+function is_in_table(table, section)
+	for _, value in pairs(table) do
+		if (section == value) then
+			return true
+		end
+	end
+	return false
+end
