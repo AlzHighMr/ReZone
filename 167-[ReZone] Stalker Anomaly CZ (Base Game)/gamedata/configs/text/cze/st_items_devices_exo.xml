@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--
+	Devices
+-->
+
+<string_table>
+
+	<string id="st_itm_exo_psu_name">
+		<text>Napájecí zdroj pro exoskelet</text>
+	</string>
+	<string id="st_itm_exo_psu_descr">
+		<text>Pomocný zdroj energie vybavený na exoskeletonech pro zvýšení energetické kapacity. Oblíbený u většiny stalkerů vzhledem k poměrně neefektivním elektrárnám, které jsou součástí standardních exoskeletů. Tento typ zdroje energie je nahodile sestavený a poměrně neefektivní. Je sice lehký, ale energetickou kapacitu zvyšuje jen nepatrně. Jednou z hlavních nevýhod většiny exoskeletů je, že jsou určeny pro krátkodobé nasazení v poli, obvykle v lítých bojích, než se vrátí na základnu k dobití. Externí zdroje energie, jako jsou tyto, mohou tento problém částečně zmírnit, ale, jak jasně ukazuje tento příklad, nemusí být nutně účinné.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] zvyšuje kapacitu napájení o 50 %\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskelet.\n
+		</text>
+	</string>
+
+	<string id="st_itm_exo_psu_mili_name">
+		<text>Napájecí zdroj pro exoskeleton Mil-spec</text>
+	</string>
+	<string id="st_itm_exo_psu_mili_descr">
+		<text>Pomocný zdroj energie, kterým jsou vybaveny exoskelety pro zvýšení energetické kapacity. Oblíbený u většiny stalkerů vzhledem k poměrně neefektivním elektrárnám, které jsou součástí standardních exoskeletů. Tento model je profesionálně vyroben v továrně a bez problémů se montuje na exoskelet. Je mohutný, ale velmi odolný a poměrně energeticky účinný, takže poskytuje podstatné zvýšení energetické kapacity a menší přínos pro energetickou účinnost. Je však poměrně těžký.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] zvyšuje energetickou kapacitu o 50 %\n
+		%c[d_cyan] - %c[ui_gray_2] snižuje spotřebu energie o 30 %\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskelet.\n
+		</text>
+	</string>
+	
+	<string id="st_itm_exo_psu_sci_name">
+		<text>Experimentální PSU "Reactor"</text>
+	</string>
+	<string id="st_itm_exo_psu_sci_descr">
+		<text>Pomocný zdroj energie vybavený na exoskeletonech pro zlepšení energetické kapacity. Oblíbený u většiny stalkerů vzhledem k poměrně neefektivním elektrárnám, které jsou součástí standardních exoskeletů. Tento model je experimentálním prototypem a využívá statických vlastností artefaktu Baterie k výrobě téměř nekonečného množství energie. Obsažená zpětnovazební smyčka artefaktu nepřetržitě generuje malé množství energie, čímž pasivně dobíjí zdroj energie poskytující téměř neomezený zdroj energie. Díky velkému množství ochranných prvků a stínění zabudovaných do batohu je batoh nesnesitelně těžký.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] zvyšuje kapacitu energie o 200 %\n
+		%c[d_cyan] - %c[ui_gray_2] snižuje spotřebu energie o 80 %\n
+		%c[d_cyan] - %c[ui_gray_2] pasivně regeneruje energii, když stojí na místě\n
+		%c[d_orange] - %c[ui_gray_2] Stisknutím "P" spustíš elektro-novu\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskeleton.\n
+		</text>
+	</string>
+	
+	<string id="st_itm_exo_psu_tank_name">
+		<text>Experimentální PSU "Stronghold"</text>
+	</string>
+	<string id="st_itm_exo_psu_tank_descr">
+		<text>Pomocný zdroj energie vybavený na exoskeletonech pro zvýšení energetické kapacity. Oblíbený u většiny stalkerů vzhledem k poměrně neefektivním elektrárnám, které jsou součástí standardních exoskeletů. Tento model je experimentální prototyp. Tento prototyp, určený jako doplněk k frontovým jednotkám, které se potřebují prodírat vpřed v silné palbě, využívá gravitačních vlastností artefaktu Prázdnota k vytvoření lokalizované zóny anomálie při aktivaci. Zóna anomálie je soustředěna na uživatele a účinně zpomaluje střely a šrapnely s vysokou rychlostí a také činí útoky mutantů nepoužitelnými. Gravitační studna však brání pohybu uživatele.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] zvyšuje kapacitu energie o 100 %\n
+		%c[d_cyan] - %c[ui_gray_2] snižuje spotřebu energie o 30 %\n
+		%c[d_orange] - %c[ui_gray_2] Stiskni "P" pro snížení poškození\n
+		%c[0,255,255,255]- %c[ui_gray_2]20 nákladů na energii, trvání 8 sekund, 20 sekund cooldown\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskelet.\n
+		</text>
+	</string>
+
+	<string id="st_itm_exo_psu_sprint_name">
+		<text>Experimentální PSU "Engine"</text>
+	</string>
+	<string id="st_itm_exo_psu_sprint_descr">
+		<text>Pomocný zdroj energie vybavený na exoskeletonech pro zlepšení energetické kapacity. Oblíbený u většiny stalkerů vzhledem k poměrně neefektivním elektrárnám, které jsou součástí standardních exoskeletů. Tento model je experimentální prototyp. Tento prototyp, navržený pro rozšíření možností mobility úderných jednotek, využívá kapacitních vlastností artefaktu Flash k napájení upravené sady servomotorů. Artefakt Flash lze dočasně aktivovat a výrazně tak zvýšit mobilitu uživatele. Výrazně zvýšená rychlost pohybu také umožňuje uživateli způsobit obrovské poškození jakémukoli tvorovi nebo osobě, která se mu připlete do cesty.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] zvyšuje kapacitu energie o 100 %\n
+		%c[d_cyan] - %c[ui_gray_2] snižuje spotřebu energie o 30 %\n
+		%c[d_cyan] - %c[ui_gray_2] mírní spotřebu elektrické energie\n
+		%c[d_orange] - %c[ui_gray_2] Stiskni klávesu "P" pro zvýšení rychlosti\n
+		%c[d_cyan] - %c[ui_gray_2] sprint do nepřátel pro způsobení poškození\n
+		%c[0,255,255,255]- %c[ui_gray_2]20 energie, 8 sekund trvání, 20 sekund cooldown\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskeleton.
+		</text>
+	</string>
+
+	<string id="st_batteries_ccell">
+		<text>Bateriová jednotka pro Exoskeleton</text>
+	</string>
+	<string id="st_batteries_ccell_descr">
+		<text>Těžká baterie vojenské specifikace pro napájení exoskeletů. Tyto vysokohustotní napájecí baterie, vyvinuté Ukrajinskými výzkumnými zařízeními na základě výzkumu v Zóně, mohou nahradit vyčerpané články v elektrárnách exoskeletů nebo přenášet energii do palubních úložišť.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] baterie exoskeletů\n
+		%c[d_orange] - %c[ui_gray_2] Pro použití přetáhněte na exoskeleton.\n
+		</text>
+	</string>
+	
+	<string id="st_exo_recipe_1">
+		<text>Chování "bateriových" artefaktů v umělých elektromagnetických polích</text>
+	</string>
+	<string id="st_exo_recipe_1_descr">
+		<text>Vědecký článek z pera V. R. Solenova a R. R. Romanoviče, který podrobně popisuje chování a pozorované účinky artefaktů "Baterka" při vystavení různým intenzitám elektromagnetických polí. Při určitých úrovních VPM je pozorováno, že Baterka vyzařuje z artefaktu krátké intenzivní nárazy stejnosměrného proudu, přičemž tento efekt nemá žádnou souvislost se silou pole. Je velmi obsáhlá a mnohomluvná a k textu a rovnicím je připojeno několik grafů, černobílých fotografií a protokolů z testů. Na zadní straně knihy jsou schémata, jak takový artefakt baterie zadržet, aby při vystavení kladnému proudu vydával větší napětí. Sešit je opatřen úřední pečetí Ukrajinského ministerstva vědy.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] recept\n
+		</text>
+	</string>
+	
+	<string id="st_exo_recipe_2">
+		<text>Pozorování a analýza "úplně prázdných" gravitačních skořápek promítaných na artefakty</text>
+	</string>
+	<string id="st_exo_recipe_2_descr">
+		<text>Vědecký článek z pera A. N. Perčenova a V. R. Solenova, který podrobně popisuje pozorování zvláštních gravitačních účinků artefaktu "Plný prázdný". Podle dokumentu je prostor mezi Prázdnými disky důsledkem toho, že dva disky částečně deformují časoprostor vzhledem ke vzájemné poloze a vytvářejí tak miniaturní gravitační anomálii. Obsah toho, co je "plná" část Plného prázdného, zůstává neznámý a spekuluje se, že jde o viditelnou formu částic vzduchu nabitých vysoce excitovanou energií nulového bodu. Při vystavení střídavému proudu o určité intenzitě ve vakuu se obsah dočasně rozptýlí a gravitační anomálie obsažená mezi oběma disky se rozšíří a vytvoří téměř nepropustnou "skořápku", v níž se zachytí všechny pevné předměty vstupující do prostoru a vychýlí se z původní trajektorie. Při objevu tohoto chování byli údajně zraněni čtyři stážisté a dva laboratorní asistenti, když se podařilo vytočit správnou konfiguraci. V protokolu o experimentu je schéma vakuového ochranného zařízení, které je nutné k replikaci tohoto chování.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] recept\n
+		</text>
+	</string>
+
+	<string id="st_exo_recipe_3">
+		<text>Aplikace artefaktových polí "Flash" na výkon motoru</text>
+	</string>
+	<string id="st_exo_recipe_3_descr">
+		<text>Vědecký článek z pera R. R. Romanoviče a A. N. Perčenova, který podrobně popisuje zvláštní účinky, které mají artefakty "Flash" na elektricky poháněné stroje. Když je artefakt Flash vystaven kladnému elektrickému proudu ve vakuu, artefakt promítá různě velké anomální pole, které výrazně zvyšuje fyzikální výkon elektrických strojů v okolí - motory běží rychleji, procesory se přetaktovávají a dokonce i mechanické hodinky se pohybují rychleji. V různých experimentálních záznamech je zaznamenána náchylnost strojů k vyhoření v důsledku vysokého tepla a tření, které vzniká, pokud je pole udržováno delší dobu, a většina článku je jinak spekulací o tom, co by takové chování mohlo způsobit. Poslední převládající teorií je vliv na kvantové úrovni zvyšující tok elektřiny a sílu magnetismu. Takové teorie jsou však nepotvrzené. Uprostřed článku je schéma s podrobným popisem konstrukce ochranné komory artefaktu použitého při experimentech.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] řemeslo recept\n
+		</text>
+	</string>
+	
+	<string id="st_power">
+		<text>Úroveň energie:</text>
+	</string>
+	<string id="st_equipped_supply">
+		<text>Vybavený zdroj napájení:</text>
+	</string>
+	<string id="st_equipped_none">
+<text>Nic</text>
+	</string>
+	<string id="st_charge_exo">
+		<text>Nabít oblek</text>
+	</string>
+	<string id="st_install_psu">
+		<text>Instalace</text>
+	</string>
+	<string id="st_remove_psu">
+		<text>Odstranit PSU</text>
+	</string>
+	<string id="kb_power">
+		<text>Aktivovat napájení</text>
+	</string>
+	
+
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+	<string id="article_exo">
+		<text>Napájené Exoskelety</text>
+	</string>
+	<string id="article_exo_text">
+		<text>
+			%c[pda_white]Napájené Exoskelety\n
+			%c[ui_gray_2]Exoskelety mají nyní každý svůj vlastní unikátní zdroj energie. Aby se exoskelet mohl efektivně pohybovat, musí být úroveň energie udržována.\n \n
+			%c[pda_white]Exo baterie%c[ui_gray_2]\n
+			Zásoby energie exoskeletu lze dobíjet pomocí baterií z úklidu nebo baterií zakoupených u obchodníků. Baterie standardně obsahují 100 energie.\n
+			Energie exoskeletu se vyčerpává s pohybem, přičemž k většímu vyčerpání dochází při sprintu. Pokud energie klesne na 0, rychlost pohybu se výrazně sníží.\n \n
+			%c[pda_white]Externí zdroje energie%c[ui_gray_2]\n
+			Exoskelety lze vylepšit pomocí zdrojů energie, které lze koupit, vyrobit a získat z kořisti.\n
+			Chcete-li vybavit napájecí zdroj, přetáhněte jej na zbroj nebo na něj klikněte pravým tlačítkem myši, když je exoskelet vybaven.\n
+			Napájecí zdroje zvyšují energetickou kapacitu exoskeletu nad 100, přičemž vyšší úrovně poskytují jedinečné výhody a schopnosti.
+		</text>
+	</string>
+	
+	<string id="st_err_none">
+		<text>[SYSCTL] VAROVÁNÍ: FUNKČNOST NENALEZENA</text>
+	</string>
+	<string id="st_err_power">
+		<text>[SYSCTL] VAROVÁNÍ: NEDOSTATEK ENERGIE</text>
+	</string>
+	<string id="st_err_cooldown">
+		<text>[SYSCTL] VAROVÁNÍ: TEPLOTA SYSTÉMU NAD BEZPEČNOU HRANICÍ</text>
+	</string>
+	<string id="st_ok_cooldown">
+		<text>[SYSCTL] INFO: TEPLOTA SYSTÉMU POD BEZPEČNOU HRANICÍ</text>
+	</string>
+	<string id="st_act_tank">
+		<text>[SYSCTL] INFO: GRAVITAČNÍ ZÁBRANA AKTIVNÍ</text>
+	</string>
+	<string id="st_act_sprint">
+		<text>[SYSCTL] INFO: PŘETAKTOVÁNÍ MOTORU AKTIVNÍ</text>
+	</string>
+
+	<string id="st_low_power">
+		<text>[SYSCTL] VAROVÁNÍ: NÍZKÝ STAV BATERIE</text>
+	</string>
+	
+	<string id="ui_mcm_menu_exo">
+		<text>Exo Servo (Napájení)</text>
+	</string>
+	<string id="ui_mcm_exo_title">
+		<text>Nastavení Exoskeletů (Napájení)</text>
+	</string>
+	
+	<string id="ui_mcm_exo_drain">
+		<text>Vyčerpání energie exoskeletů</text>
+	</string>
+	<string id="ui_mcm_exo_sprint_drain">
+		<text>Exoskeleton Sprint - Vyčerpávání energie</text>
+	</string>
+
+
+	<string id="ui_mcm_exo_drain_desc">
+		<text>Násobitel ztráty energie.</text>
+	</string>
+	<string id="ui_mcm_exo_sprint_drain_desc">
+		<text>Násobitel ztráty energie při sprintu.</text>
+	</string>
+
+	<string id="ui_mcm_exo_battery_chance">
+		<text>Šance na získaní baterií z mrtvol</text>
+	</string>
+	<string id="ui_mcm_exo_battery_chance_desc">
+		<text>Šance, že stalkerům v exoskeletu vypadnou baterie.</text>
+	</string>
+
+	<string id="ui_mcm_exo_debug">
+		<text>Zapnout debug logy</text>
+	</string>
+	<string id="ui_mcm_exo_debug_desc">
+		<text>Zapnout debug logy v konzoli</text>
+	</string>
+
+	<string id="ui_mcm_menu_exo_power">
+		<text>Tlačítko pro zapnutí napájení</text>
+	</string>
+	<string id="ui_mcm_exo_power_keybind">
+		<text>Aktivovat napájení PSU</text>
+	</string>
+	<string id="ui_mcm_exo_power_keybind_desc">
+		<text>Slouží k aktivaci schopností souvisejících s exoskeletem.</text>
+	</string>
+
+</string_table>

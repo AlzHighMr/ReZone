@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons Attachments
+-->
+
+<string_table>
+
+	<string id="st_addon_scope">
+		<text>PSO-1M Optika</text>
+	</string>
+	<string id="st_addon_scope_descr">
+		<text>%c[ui_gray_2]Řada optických zaměřovačů sovětské výroby běžně používaná od roku 1964, kdy byla zavedena jako standardně vydávaný teleskopický zaměřovač pro odstřelovací pušky SVD. Později byl dalekohled upraven pro útočné pušky, jako jsou AK-74 nebo AN-94. Je uznáván pro svou odolnost, všestrannost a dobře navržený obrazec retikuláru, který je vybaven praktickým dálkoměrem. Tento konkrétní zaměřovač má míru zvětšení 4,0x. Na zbraně se připevňuje pomocí holubičího ocasu; standard v zemích Varšavské smlouvy.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2]všechny pušky Varšavské smlouvy\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]4.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor síťky: %c[ui_gray_2]PSO-1
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_1p29">
+		<text>Optika 1P29 "Tulipán"</text>
+	</string>
+	<string id="st_addon_scope_1p29_descr">
+		<text>%c[ui_gray_2]Zaměřovač USP-1 má optické uspořádání s hranolovým stavěcím systémem. Úhly zaměření se nastavují mechanicky otáčením těla zaměřovače vzhledem k montážní konzole zbraně. Nevyžaduje baterie, protože je osvětlen tritiem. Dálkoměrná stupnice na okraji zorného pole zaměřovače má dosah až 1200 m.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] všechny pušky Varšavské smlouvy\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]4.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor síťky: %c[ui_gray_2]PSU-1
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_ac10632">
+		<text>Barska Electro Sight AC10632</text>
+	</string>
+	<string id="st_addon_scope_ac10632_descr">
+		<text>%c[ui_gray_2]Zaměřovač Barska Electro Sight Multi Reticle Red Dot Sight AC10632 byl vyvinut s cílem být tím nejlepším produktem pro každého, kdo hledá vysoce kvalitní zaměřovač. Lze jej namontovat na zbraně NATO a na AK-12.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2]všechny pušky NATO\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_acog">
+		<text>Optika ACOG 3,5x</text>
+	</string>
+	<string id="st_addon_scope_acog_descr">
+		<text>%c[ui_gray_2]ACOG je zkratka pro Advanced Combat Optical Gunsights a označuje rodinu zaměřovacích dalekohledů na palné zbraně vyráběných společností Trijicon. Puškohledy tohoto typu jsou obvykle vysoce kvalitní a mají vnitřní osvětlení retikulí na bázi tritia. Tento konkrétní typ má optický zaměřovač ve stylu USMC a je vybaven nastavitelným zvětšením.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[ui_gray_2]všechny pušky NATO\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]3,5x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor síťky: %c[ui_gray_2]USMC
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_eotech">
+		<text>EOTech Optika</text>
+	</string>
+	<string id="st_addon_scope_eotech_descr">
+		<text>%c[ui_gray_2]Holografický zaměřovač pro útočné pušky a samopaly NATO.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2]všechny pušky NATO\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+
+		</text>
+	</string>
+)
+	
+	<string id="st_addon_scope_galil_susat">
+		<text>Optika Galil 4.0x (SUSAT)</text>
+	</string>
+	<string id="st_addon_scope_galil">
+		<text>Optika Galil 4.0x</text>
+	</string>
+	<string id="st_addon_scope_galil_descr">
+		<text>%c[ui_gray_2]Optický zaměřovač pro izraelskou pušku IMI Galil.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] automatická puška Galil AR\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]4.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor sítnice: %c[ui_gray_2]SUSAT
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_kobra">
+		<text>EKP 1S-03 "Kobra"</text>
+	</string>
+	<string id="st_addon_scope_kobra_descr">
+		<text>%c[ui_gray_2]Zaměřovač Kobra je bojový optický přístroj s otevřeným kolimátorem, který používá laserem generovaný HUD k překrytí obrazce zaměřovače na filtrovanou čočku. Je určen k zasahování rychle se pohybujících cílů a cílů objevujících se po krátkou dobu v boji zblízka a ve městě za různých světelných podmínek.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] všechny pušky Varšavské smlouvy\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2] žádné (kolimátor)\n
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_po4x34">
+		<text>Optika PO4x34</text>
+	</string>
+	<string id="st_addon_scope_po4x34_descr">
+		<text>%c[ui_gray_2]Optický zaměřovač pro zbraně řady OTs-14.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[ui_gray_2] OTs-14 série zbraní\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]4.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor zaměřovače: %c[ui_gray_2]4x34
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_pso-1m2-01">
+		<text>Optika PSO-1M2-1</text>
+	</string>
+	<string id="st_addon_scope_pso-1m2-01_descr">
+		<text>%c[ui_gray_2]PSO-1M2-O1 je vybaven mimořádně účinným a užitečným výškovým dálkoměrem pro dvojí použití, s odstupňovanými stupnicemi pro odhad postavy ve stoje i v leže. Výškový dálkoměr Simonov na 400 metrů s gradientem (ve stylu choke) má chevron pro použití s puškami ráže 9x39.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] všechny pušky Varšavské smlouvy\n	
+		%c[0,255,255,255]PROPERTIES:\n	
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]4.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor síťky: %c[ui_gray_2]PSO-1-1
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_pu">
+		<text>Optika PU</text>
+	</string>
+	<string id="st_addon_scope_pu_descr">
+		<text>%c[ui_gray_2]Standardní teleskopický zaměřovač Rudé armády za druhé světové války a v letech po ní. Navržen pro pěchotní a přesné pušky, například Mosin-Nagant nebo SVT-40. Je vybaven pevným 3,5násobným zvětšením. Stejně jako všechny sovětské konstrukce je odolný a účinný, vyrábí se a používá dodnes.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] historické ruské pušky\n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]3,5x\n
+		%c[d_cyan] - %c[0,255,255,255,255]Vzor sítnice: %c[ui_gray_2]PU
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_zf4">
+		<text>OptikaZF-4</text>
+	</string>
+	<string id="st_addon_scope_zf4_descr">
+		<text>%c[ui_gray_2]ZF-4 je jedním z prvních teleskopických zaměřovačů, které kdy byly vytvořeny. Byl navržen a vyroben v Německu během druhé světové války a měl poskytnout řadové pěchotě možnost boje na velké vzdálenosti. Používali jej především němečtí odstřelovači a elitní bojové oddíly. Puškohled se stále používá, protože zbraně, pro které byl navržen, jsou běžně dostupné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] historické německé pušky\n
+		%c[0,255,255,255]PROPERTIES:\n	
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]2.0x\n
+		%c[d_cyan] - %c[0,255,255,255]Vzor síťky: %c[ui_gray_2]ZF-41
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_cmore">
+        <text>Taktický zaměřovač C-MORE</text>
+    </string>
+    <string id="st_addon_scope_cmore_descr">
+        <text>Vysoce výkonný zaměřovač s červeným bodem, který poskytuje neomezené zorné pole a zároveň eliminuje překážky a tunelové vidění běžné u tubusových zaměřovačů. Řada Railway má předinstalovanou standardní lištovou základnu, která umožňuje připevnění zaměřovače na většinu montážních lišt Weaver nebo Picatinny nebo přijímačů.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+
+		</text>
+    </string>
+	
+	<string id="st_addon_scope_ac11090">
+<text>AC11090 Red Dot Reflektor</text>
+    </string>
+    <string id="st_addon_scope_ac11090_descr">
+        <text>Lehký zaměřovač s červeným bodem s 2x zvětšením pro útočné pušky NATO, samopaly a AK-12.
+		</text>
+    </string>
+	
+	<string id="st_addon_sil_45">
+<text>Tlumič pro zbraně ráže .45 ACP</text>
+	</string>
+	<string id="st_addon_sil_45_descr">
+		<text>%c[ui_gray_2]Tlumič pro pistole a samopaly ráže .45 ACP.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Zbraně ráže .45\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_57">
+<text>Tlumič 5,7x28</text>
+	</string>
+	<string id="st_addon_sil_57_descr">
+		<text>%c[ui_gray_2]Tlumič pro FN-P90 PDW.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] zbraně ráže 5,7 mm\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_6p9">
+<text>Tlumič 6P9</text>
+	</string>
+	<string id="st_addon_sil_6p9_descr">
+		<text>%c[ui_gray_2]Tlumič pro pistoli PB.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] zbraně ráže 9 mm\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_9a91">
+		<text>Tlumič 9A-91/VSK-94</text>
+	</string>
+	<string id="st_addon_sil_9a91_descr">
+		<text>%c[ui_gray_2]Tlumič pro karabinu 9A-91 a VSK-94.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Zbraně ráže 9x39\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_9mm">
+		<text>Tlumič 9mm</text>
+	</string>
+	<string id="st_addon_sil_9mm_descr">
+		<text>%c[ui_gray_2]Tlumič pro 9mm pistole a samopaly. Účinný tlumič hluku pro zbraně ráže 9x18. Je velmi archaický, přesto poměrně účinný. Obvykle se používá pro boj zblízka proti lehce obrněným nepřátelům a pro atentáty.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] zbraně ráže 9 mm\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_aps">
+		<text>APS Tlumič</text>
+	</string>
+	<string id="st_addon_sil_aps_descr">
+		<text>%c[ui_gray_2Tlumič pro pistoli OTs-33 "Pernach".\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Zbraně ráže 9 mm\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_atg">
+		<text>ATG Tlumič</text>
+	</string>
+	<string id="st_addon_sil_atg_descr">
+		<text>%c[ui_gray_2]Tlumič pro AK-102, AK-103 a AK-104.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] zbraně ráže 5,56, 7,62\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_gemtech">
+		<text>Gemtech Tlumič</text>
+	</string>
+	<string id="st_addon_sil_gemtech_descr">
+		<text>%c[ui_gray_2]Tlumič pro Glock a FN-FNP.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Zbraně ráže 9 mm, .45\n
+		</text>
+	</string>
+	
+<string id="st_addon_sil_kzrzp">
+	<text>Přídavný tlumič KZRZP</text>
+</string>
+<string id="st_addon_sil_kzrzp_descr">
+	<text>%c[ui_gray_2]Tlumič pro odstřelovačské pušky SVD.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 7,62 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_nato">
+	<text>Přídavný tlumič NATO</text>
+</string>
+<string id="st_addon_sil_nato_descr">
+	<text>%c[ui_gray_2]Tlumič pro standardní pušky ráže NATO 5,56x45 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže .45, 5,56 a 7,62 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_pbs1">
+	<text>Přídavný tlumič PBS-1</text>
+</string>
+<string id="st_addon_sil_pbs1_descr">
+	<text>%c[ui_gray_2]Tlumič pro bezhlučnou a bezplamennou střelbu z pušek Kalashnikov ráže 7,62 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 7,62 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_pbs4">
+	<text>Přídavný tlumič PBS-4</text>
+</string>
+<string id="st_addon_sil_pbs4_descr">
+	<text>%c[ui_gray_2]Tlumič pro pušky AKS-74U.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 5,45 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_sr25">
+	<text>Přídavný tlumič SR-25</text>
+</string>
+<string id="st_addon_sil_sr25_descr">
+	<text>%c[ui_gray_2]Tlumič pro SR-25\n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 7,62 mm\n
+	</text>
+</string>
+	
+<string id="st_addon_sil_tgp-a">
+	<text>Přídavný tlumič TGP-A</text>
+</string>
+<string id="st_addon_sil_tgp-a_descr">
+	<text>%c[ui_gray_2]Tlumič pro sérii zbraní AK a kulomety RPK-74.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 5,45 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_vihr">
+	<text>Přídavný tlumič SR-3M</text>
+</string>
+<string id="st_addon_sil_vihr_descr">
+	<text>%c[ui_gray_2]Tlumič pro pušku SR-3M.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 9x39 mm\n
+	</text>
+</string>
+<string id="st_addon_silencer">
+	<text>Přídavný tlumič US Army Smallbore Rifle</text>
+</string>
+<string id="st_addon_silencer_descr">
+	<text>%c[ui_gray_2]Pokročilý tlumič pro pušky navržený a vyrobený v USA. Téměř úplně eliminuje záblesk z ústí hlavně a výrazně tlumí zvuk při střelbě. Běžně používán na všech puškách západní výroby a stále je v aktivní službě ve západních ozbrojených silách.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Zbraně ráže 5,56x45 mm\n
+	</text>
+</string>
+<string id="st_addon_silencer_svu">
+	<text>Přídavný tlumič SVU</text>
+</string>
+<string id="st_addon_silencer_svu_descr">
+	<text>%c[ui_gray_2]Tento speciálně navržený tříkomorový tlumič není určen k úplnému potlačení zvuku u pušky SVU, protože voják by nepoužíval podzvukovou munici. Jeho hlavním účelem je utlumit a rozptýlit zvuk natolik, aby bylo obtížné jejich zaznamenání nepřítelem.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Pušky SVU\n
+	</text>
+</string>
+<string id="st_addon_trijicon_acog">
+	<text>Záměrná pomůcka ACOG</text>
+</string>
+<string id="st_addon_trijicon_acog_descr">
+	<text>%c[ui_gray_2]Odpojitelný optický zaměřovač určený speciálně pro pušky NATO. ACOG znamená Advanced Combat Optical Gunsights a odkazuje na rodinu zaměřovačů pro palné zbraně vyráběných společností Trijicon. Dodává se s vnitřním osvětlením řadicího bodu na bázi tritia. Tento konkrétní typ má moderní retikulový vzor "trijicon" a pevné zvětšení 2,0x.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] Vybrané pušky NATO\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[0,255,255,255]Zvětšení: %c[ui_gray_2]2,0x\n
+	%c[d_cyan] • %c[0,255,255,255]Vzor řadicího bodu: %c[ui_gray_2]trijicon
+	</text>
+</string>
+
+
+
+
+
+
+	
+</string_table>

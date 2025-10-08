@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_sr25">
+		<text>SR-25</text>
+	</string>
+	<string id="st_wpn_sr25_descr">
+		<text>Zbraň SR-25 vyvinul Reed Knight, majitel společnosti Knights Armament Co. a Eugene Stoner. SR-25 je puška AR-15 zvětšená pro střelbu v ráži 7,62x51 mm NATO nebo .308. Je určena pro střelbu z pušek AR-15. 60 % dílů pušky je zaměnitelných s komponenty AR-15. Tato puška se dobře prodávala mezi civilními střelci, kteří potřebovali přesnou poloautomatickou pušku pro lov nebo střelbu na cíl. Tato puška našla zalíbení také v americké armádě. Kvůli tlumiči zpětného rázu ve stylu AR-15, který se vysouvá dozadu z hlavně, nemůže být SR-25 vybavena sklopnou pažbou a namísto toho je vybavena teleskopickou pažbou.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy americké\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Knight's Armament Company\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1990\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_bm16_full_alt_23">
+		<text>TOZ-34 "Chimera Hunter"</text>
+	</string>
+	<string id="st_wpn_bm16_full_alt_23_descr">
+		<text>Předurčena pro profesionální i amatérský lov, TOZ-34 je brokovnice s nadměrným/podměrným vývrtem. Cenově dostupná s vysokým poškozením a schopností okamžitě vybíjet oba náboje z ní činí oblíbenou zbraň mezi nováčky na okraji Zóny. Díky své přesnosti a zastavovací síle je obzvláště užitečná proti mutantům.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]SSSR\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Tulsky Oruzheiny Zavod\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1964\n \n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Optický pohled\n \n
+		%c[0,255,255,255]UNIKÁTNÍ: %c[0,250,250,0]Tento zvláštní TOZ-34 byl upraven podle potřeb Zóny tím, že podporuje větší a účinnější náboje než klasická 12ga. Díky tomu si mezi slídiči vysloužila pověst účinné zbraně k lovu velkých mutantů, jako jsou chiméry, odtud také pochází její název.\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_toz34_mark4_23">
+		<text>TOZ-34 "Lovec Chimér"</text>
+	</string>
+	<string id="st_wpn_toz34_mark4_23_descr">
+		<text>Předurčená pro profesionální i amatérský lov, TOZ-34 je brokovnice s přesahem. Cenově dostupná s vysokým poškozením a schopností okamžitě vybíjet oba náboje z ní činí oblíbenou zbraň mezi nováčky na okraji Zóny. Díky své přesnosti a zastavovací síle je obzvláště užitečná proti mutantům.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]SSSR\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Tulsky Oruzheiny Zavod\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1964\n
+		%c[0,255,255,255]INTEGRATED PŘÍSLUŠENSTVÍ:\n
+		%c[d_blue] - %c[0,255,255,255,255]Optický zrak\n \n
+		%c[0,255,255,255]UNIKÁTNÍ: %c[0,250,250,0]Tento zvláštní TOZ-34 byl upraven podle potřeb Zóny tím, že podporuje větší a účinnější náboje než klasická 12ga. Díky tomu si mezi slídiči vysloužila pověst účinné zbraně k lovu velkých mutantů, jako jsou chiméry, odtud také pochází její název.\n
+		</text>
+	</string>
+
+	
+
+</string_table>

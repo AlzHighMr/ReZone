@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+	
+	<string id="encyclopedia_world">
+		<text>Herní svět</text>
+	</string>
+
+	<string id="encyclopedia_world_craft">
+		<text>Výroba</text>
+	</string>
+	<string id="encyclopedia_world_craft_text">
+		<text>
+			\Výroba (Crafting) je velmi široké téma. Zahrňuje: demontáž zbraní, rozebiraní obleků, vytváření předmetu a specialních dílů.	
+		    \Rozenrání se provádí přímým přetažením požadovaného nástroje nebo sady nástrojů (u obleku) na oblek v inventáři.\n		
+		    \Demontáž zbraně %c[0,215,215,215]-%c[ui_gray_2]-%c[ui_gray_2].
+		    \n Zbraně se rozebírají pomocí speciálních nástrojů: kladiva, páčidla a švýcarského nože. Každý nástroj lze použít k rozebrání určité zbraně.
+		    \Kladivo lze použít k rozebrání pušek ráže 7,62, pušek ráže 9 mm, pušek ráže 5,56, pušek ráže 5,45, samopalů, upilovaných brokovnic a brokovnic. Nemožné: všechny pistole.
+		    \Kladivo dokáže rozebrat pušky ráže 7,62, 9 mm, 5,56, 5,45, samopaly, pušky, brokovnice a pistole.
+		    \Švýcarským nožem lze rozebrat pouze opotřebované a zrezivělé pistole.
+		    \n%c[0,215,215,215]- %c[ui_gray_2]Rozborka obleku %c[0,215,215,215]-%c[ui_gray_2].
+		    \n Rozborka obleku se provádí pomocí sady nástrojů: hrubého, běžného a jemného a pomocí švýcarského nože.
+		    \n Švýcarským nožem lze řezat pouze čistě látkové předměty: baretý, klobouky, čelenky, kukly atd.
+		    \n Hrubé nástroje mohou také řezat to samé co švýcarský nůž. Je určen k rozebírání předmětů s nízkou technickou úrovní: všechny druhy bund, plastu, některé plynové masky.	
+		    \n Běžné nástroje dokáží rozebrat to samé co hrubý nástroj. Určeno pro demontáž medium-tech předmětů: stalkerské obleky (bodysuity), stalkerské obleky s 
+		    \SEVA" obrněné obleky (Povinnost kombinézy, husté pláště, vědecký Iolit), obleky jako "Amber".
+		    \n Tenké nástroje mohou také řezat to samé co normální nástroje. Určeno k demontáži high-tech předmětů: všechny druhy SEV, ekoobleky, těžké obrněné obleky (Bulat, Scat),	
+		    \Exoskelety, těžké obrněné obleky Voskhod a high-tech přilby (Sféry, taktické přilby). Neumožňuje demontáž klopové přilby, stejně jako jakýchkoli jiných nástrojů. \n
+		    \n%c[0,215,215,215]-%c[ui_gray_2]Item creation %c[0,215,215,215]-%c[ui_gray_2].
+		    \n Tvorba předmětu je pravděpodobně nejrozsáhlejší téma. Řemeslníci neustále vymýšlejí nové způsoby výroby věcí, obchodníci přinášejí do Zóny nejrůznější nové věcičky, které lze k výrobě věcí použít.
+
+			\n \n
+            \Jednou z nejdůležitějších technologií používaných v Zóně je deaktivace předmětů, které lze deaktivovat. Dekontaminační tekutinu lze získat smícháním akvatabů a libovolné vodky.
+			\n Smíchejte aquatabs a vodku přetážením jednoho na druhé v inventáři. Chcete-li deaktivovat předmět, musíte přetáhnout předmět na kapalinu nebo kapalinu na předmět v inventáři.		
+			\n \n			
+			Zkušený řemeslník také získá to nejnutnější z předmětů, které najde. Například obvazy z hadru a vodky, rovněž přetážením jednoho na druhé. 
+			Hadry lze získat také rozřezáním látkových předmětů (obvazů, čepic, kukel, šátků atd.) švýcarským nožem. Všechny tyto akce se provádějí přetážením jednoho předmětu na druhý v inventáři.			
+			\n Také kousky látky lze získat rozebráním kostýmu, můžete je jednoduše najít. Některé druhy látek lze zakoupit u obchodníků.
+			Kusy látky lze také získat od obchodníků.
+			\Můžete si také vyrobit vlastní batoh nebo spací pytel. U obchodníka si také můžete koupit šicí soupravu a šicí materiál a přetáhnout jeden na druhý v inventáři.			
+			šicí souprava
+			Materiály na výrobu kroucených výrobků si můžete koupit také u obchodníků. Výsledné samochary jsou mnohem účinnější než cigarety.
+			Někdy u nich také najdete soupravy na výrobu nábojů, obvykle brokových. Podomácku vyrobené broky jsou o něco méně účinné, ale mnohem levnější než tovární broky.\n
+			\n%c[0,215,215,215]-%c[ui_gray_2]Component replacement %c[0,215,215,215]-%c[ui_gray_2].
+			\n Mezi opravami některých předmětů je oblíbená také výměna součástí předmětu.	
+			\Nejčastější výměnou je výměna hlavně zbraně. K tomu je třeba mít hlaveň v dobrém stavu a ráže hlavně by měla odpovídat ráži zbraně.
+			\Je-li hlaveň opotřebována, lze ji vyčistit parafínem, benzínem, vodkou, čisticí zbraní, čisticími soupravami, olejem na zbraně, opravnými soupravami.
+			\Je-li hlaveň zrezivělá, lze ji uvést do normálního stavu pomocí čisticích prostředků na zbraně, čisticích souprav, oleje na zbraně, opravných souprav.
+			\Dále budete potřebovat sadu určité ráže, abyste mohli vyměnit hlaveň stejné ráže. S pomocí sady a hlavně můžete obnovit až 50 % síly zbraně bez ohledu na tu původní.
+			\n \n
+			\Je také možné vyměnit serva na exoskeletonech. Budete k tomu potřebovat servo, které získáte rozebráním exoskeletu, a sadu pro výměnu serv. 
+			\S pomocí sady serv a servopohonu můžete obnovit až 30 % síly exoskeletu bez ohledu na jeho původní stav.
+			\%c[0,215,215,215]- %c[0,240,140,140]Článek lze časem doplnit. %c[0,215,215,215]-.					
+		</text>
+	</string>	
+	
+</string_table>

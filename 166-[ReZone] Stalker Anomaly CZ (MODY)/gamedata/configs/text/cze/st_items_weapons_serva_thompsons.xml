@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_thompson_m1a1">
+		<text>Thompson M1A1</text>
+	</string>
+	<string id="st_wpn_thompson_m1a1_descr">
+		<text>Thompson je samopal se zpětným rázem, chlazen vzduchem a zásobníkem pro selektivní střelbu.\n
+		Tato varianta samopalu Thompson má výrazně sníženou rychlost střelby a zjednodušenou konstrukci vyrobenou na žádost americké armády. V důsledku toho byl odstraněn Blishův závěr, olejový systém a kompenzátor. Navzdory nižší rychlosti střelby se z ní střílí mnohem hůře než z modelu 1921.\n Tato varianta má také jiný závěr než varianta 1921/1928, a proto neumožňuje použití bubnových zásobníků\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy americké\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Auto-Ordnance Company, Birmingham Small Arms Company Limited\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1941\n
+		</text>
+	</string>
+
+	<string id="st_wpn_thompson_1921">
+		<text>Thompson model 1921</text>
+	</string>
+	<string id="st_wpn_thompson_1921_descr">
+		<text>Thompson je samopal se zpětným rázem, chlazen vzduchem a zásobníkem se selektivní střelbou.\n Tato varianta Thompsonu přezdívaná také jako "chicagský psací stroj" se vyznačuje rychlejší střelbou a systémem Blish Lock pro ovládání zbraně.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Auto-Ordnance Company, Birmingham Small Arms Company Limited\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1921\n
+		</text>
+	</string>
+
+	<string id="st_up_m1a1_b8_name">
+		<text>Instalace těžší hlavně</text>
+	</string>
+	<string id="st_up_m1a1_b8_descr">
+		<text>Instalace těžší hlavně pro další zlepšení zpětného rázu</text>
+	</string>
+	<string id="st_up_m1a1_b5_name">
+		<text>Instalace polymerové pažby</text>
+	</string>
+	<string id="st_up_m1a1_b5_descr">
+		<text>Instalace polymerové pažby, která nahradí dřevěné díly pro rychlé snížení hmotnosti.</text>
+	</string>
+	<string id="st_up_m1a1_b6_name">
+		<text>Instalace polymerového chrániče ruky</text>
+	</string>
+	<string id="st_up_m1a1_b6_descr">
+		<text>Instalace polymerového chrániče ruky, který nahradí dřevěné díly pro mírné snížení hmotnosti.</text>
+	</string>
+		<string id="st_up_m1a1_b7_name">
+		<text>Instalace antikorozních dílů</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>Instalace zbraňových součástí, které se hůře rozkládají.</text>
+	</string>
+
+	<string id="st_up_1921_b8_name">
+		<text>Instalace vysoce kvalitních dovážených součástí</text>
+	</string>
+	<string id="st_up_1921_b8_descr">
+		<text>Instalace dílů vyšší kvality dovezených z USA pro zvýšení spolehlivosti zbraně.</text>
+	</string>
+	<string id="st_up_1921_b5_name">
+		<text>Instalace polymerové pažby</text>
+	</string>
+	<string id="st_up_1921_b5_descr">
+		<text>Instalace polymerové pažby, která nahradí dřevěné díly pro rychlé snížení hmotnosti.</text>
+	</string>
+	<string id="st_up_1921_b6_name">
+		<text>Instalace polymerové rukojeti</text>
+	</string>
+	<string id="st_up_1921_b6_descr">
+		<text>Instalace polymerového chrániče ruky, který nahradí dřevěné díly pro mírné snížení hmotnosti.</text>
+	</string>
+		<string id="st_up_1921_b7_name">
+		<text>Instalace antikorozních dílů</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>Instalace zbraňových součástí, které se hůře rozkládají.</text>
+	</string>
+
+	<string id="st_up_1921_b9_name">
+		<text>Instalace přepracovaného mechanismu zámku Blish</text>
+	</string>
+	<string id="st_up_1921_b9_descr">
+		<text>Instalace upraveného mechanismu závěru, který výrazně zvyšuje spolehlivost zbraně.</text>
+	</string>
+
+</string_table>

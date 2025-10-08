@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+ Artefacts Containers (IAM)
+-->
+
+<string_table>
+<string id="st_af_itcher_af_iam_name">
+	<text>IAM s "Itcher"</text>
+</string>
+<string id="st_af_itcher_af_iam_descr">
+	<text>
+	Formace přírodní termální povahy. Itcher se skládá ze dvou oddělených vrstev. Povrch je tvrdá, hustá metamorfovaná hornina s hlubokými jizvami pokrývajícími celé tělo, a měkké žluté jádro je tvořeno neznámou organickou látkou. Aktivně pohlcuje teplo a zůstává stále chladné. Je zcela neaktivní a nemá žádné zjevné vlastnosti. Nicméně, není doporučeno přiblížit se k chemickým a kyselým anomáliím, když máte tento artefakt, protože zvýší nepříznivé účinky kyselin a toxinů v krvi uživatele.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_green] • %c[ui_gray_2] nevyzařuje radioaktivitu\n
+	</text>
+</string>
+<string id="st_af_pin_af_iam_name">
+	<text>IAM s "Pinem"</text>
+</string>
+<string id="st_af_pin_af_iam_descr">
+	<text>
+	Malý artefakt vzniklý termálními anomáliemi v Zóně při extrémních teplotách. Jeho vzhled naznačuje, že to byl orgán cévnaté rostliny. Další studie ukázaly, že vnitřek obsahuje další organická tkáň. Stonek nemá žádné užitečné vlastnosti. Naopak, malé hroty snižují teplotu těla uživatele a chladí všechny objekty v jejich blízkosti. Tento artefakt poskytuje lehkou psychickou ochranu, protože se rezonuje pod vlivem psi-vln. Na druhou stranu, není doporučeno přiblížit se k chemickým a kyselým anomáliím, když máte tento artefakt, protože zvýší nepříznivé účinky kyselin a toxinů v krvi uživatele.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] vyzářuje radioaktivitu:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+<string id="st_af_cristall_af_iam_name">
+	<text>IAM s "Krystalem"</text>
+</string>
+<string id="st_af_cristall_af_iam_descr">
+	<text>
+	Tento artefakt vzniká v anomálních zónách s intenzivní termální aktivitou. Aktivně pohlcuje teplo a zůstává stále chladný. Také chrání uživatele před elektrickými proudy. Na druhou stranu, vystavení takovým prostředím způsobuje zvýšení vodivosti artefaktu z neznámých mechanismů. Tento artefakt je také vysoce ceněný šperkaři mimo Zónu, protože jeho vnitřní jádro není radioaktivní a pokud je vybroušené a zušlechtěné, považuje se za výjimečně krásný. Pouze první 1 cm jeho vnější vrstvy vyzařuje radiaci. Nicméně, je velmi doporučeno opatrně postupovat při plánování prodeje artefaktu, protože dlouhodobé vystavení i minimálním množstvím radioaktivních látek může vést k úmrtí uživatele. Poměrně těžký a hustý.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] vyzářuje radioaktivitu:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+<string id="st_af_fireball_af_iam_name">
+	<text>IAM s "Ohnivou koulí"</text>
+</string>
+<string id="st_af_fireball_af_iam_descr">
+	<text>
+	Sférický artefakt vyrobený z červeně zbarveného krystalu, vytvořený v anomálii Burner. Má jedinečnou vlastnost: stálou teplotu 75 stupňů Fahrenheitu/24 stupňů Celsia, bez ohledu na okolí. To mu umožňuje pohlcovat teplo z okolí a vytvářet malou kapsu kolem uživatele, která chrání tělo před ohněm. Nebezpečným účinkem tohoto artefaktu je zvýšení elektrické vodivosti, takže pravděpodobnost úrazu elektrickým proudem při nošení je mnohem vyšší, zejména během bouřek a v blízkosti elektrických anomálií. Je poměrně těžký a hustý.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] vyzářuje radioaktivitu:\n
+	%c[d_green] • Gamma záření\n
+	%c[d_orange] • neutrony\n
+	</text>
+</string>
+
+ 
+<string id="st_af_blood_af_iam_name">
+	<text>IAM s "Krvavým kamenem"</text>
+</string>
+<string id="st_af_blood_af_iam_descr">
+	<text>
+		Červenavá formace stlačených zkamenělých rostlin, půdy a zvířecích zbytků. Může částečně neutralizovat chemické jedy tím, že je absorbuje a snižuje celkovou toxicitu v krevním oběhu uživatele. Je poměrně běžná, ale není příliš účinná, protože způsobuje hnisavé chemické popáleniny. Při kontaktu s otevřeným ohněm nebo dokonce samovznícením se zapálí. Dalším pozitivním účinkem tohoto artefaktu je urychlování srážení krve, pokud je nošen blízko těla. Nicméně není doporučováno nosit tento artefakt po delší dobu, protože srážení krve může být také nebezpečné pro zdraví.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+		%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] nevyzařuje radioaktivitu\n
+	</text>
+</string>
+<string id="st_af_mincer_meat_af_iam_name">
+	<text>IAM s "Kusy masa"</text>
+</string>
+<string id="st_af_mincer_meat_af_iam_descr">
+	<text>
+		Tento artefakt má měkkou, porézní strukturu podobnou kůži. V tomto ohledu připomíná a funguje jako houba, ale odhaluje své speciální vlastnosti pouze při vystavení určitým vnějším podmínkám. Zaprvé, póry na jeho povrchu jsou známy pro absorpci malých množství toxicity z prostředí. Zadruhé, artefakt mírně zesiluje poškozující účinky psi-pole na živé organismy tím, že absorbuje psi-energii a vyzářuje ji malým tempem. Zatřetí, je známo, že je vodičem elektriny.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+		%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+		%c[d_red] • %c[ui_gray_2] vyzářuje radioaktivitu:\n
+		%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+<string id="st_af_bracelet_af_iam_name">
+	<text>IAM s "Náramkem"</text>
+</string>
+<string id="st_af_bracelet_af_iam_descr">
+	<text>
+		Náramek je vyroben z běžného druhu mechorostu vystavených vysokému záření radioaktivních a chemických anomálií. Poskytuje významnou ochranu proti všem typům kyselin tím, že postupně zvyšuje jejich pH na úroveň vody (pH 7). Když je nošen, artefakt je znám tím, že mírně vyrovnává škodlivé účinky psi-anomálií nebo psi-vln.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+		%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+		%c[d_red] • %c[ui_gray_2] vyzářuje radioaktivitu:\n
+		%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+<string id="st_af_baloon_af_iam_name">
+    <text>IAM s "Bubble"</text>
+</string>
+<string id="st_af_baloon_af_iam_descr">
+    <text>
+    Tento artefakt je složen z několika dutých organických útvarů a vylučuje plynnou látku, která dokáže neutralizovat chemické nebo toxické částice v těle. Má také stabilní teplotu bez ohledu na okolí. To mu umožňuje absorpci tepla z okolí a vytvoření malé kapsy kolem uživatele, která chrání tělo před ohněm. Bubble také má značně negativní vlastnost, protože zesiluje účinky psi-vln a polí produkovaných mutacemi a anomáliemi. Tento nevýhodný jev nelze podcenovat, protože někteří stopaři hlásili, že vliv na psychiku byl při používání Bubble tak silný, že cítili, jak jim v hlavě praskají kosti, a jediné, co mohli udělat, bylo křičet bolesti a utéct co nejdál.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    %c[d_orange] • neutrony\n
+    </text>
+</string>
+
+<string id="st_af_electra_sparkler_af_iam_name">
+    <text>IAM s "Sparkler"</text>
+</string>
+<string id="st_af_electra_sparkler_af_iam_descr">
+    <text>
+    Tento artefakt má vzhled průhledných pavučin a podobně jako pavučina je lepkavý a má vlastnosti lepidla. Nejčastěji se nachází v blízkosti elektro anomálií a dokáže vyrovnávat výkyvy v hustotě elektrického pole, působit jako slabý rezistor a chránit nositele před elektřinou a snižovat její škodlivé účinky. Na druhou stranu je třeba poznamenat, že přítomnost tohoto artefaktu zvyšuje korozi kyselin, což vede k rychlejšímu opotřebení zařízení a vyššímu poškození tkání organismu.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_green] • %c[ui_gray_2] neobsahuje radioaktivní emise\n
+    </text>
+</string>
+<string id="st_af_sponge_af_iam_name">
+    <text>IAM s "Sponge"</text>
+</string>        
+<string id="st_af_sponge_af_iam_descr">
+    <text>
+    Ekologové věří, že Sponge je pokročilá živá forma s uvědoměním dědičným od živých tvorů. Navzdory teoriím kolem tohoto artefaktu se všichni shodují v jedné věci: pohybuje se. Tento artefakt působí jako výkonný rezistor a dokáže absorbovat i smrtící dávky elektřiny. Na druhou stranu začne hořet při kontaktu s otevřeným plamenem nebo dokonce samovolně vzplanout.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    </text>
+</string>
+
+<string id="st_af_ring_af_iam_name">
+	<text>IAM s "Kruhem"</text>
+</string>
+<string id="st_af_ring_af_iam_descr">
+	<text>
+	Velmi malý artefakt elektrického původu. Těžko ho rozeznat. Skládá se ze dvou prstenovitých materiálů organického původu, odtud také jméno. Když se Kruh točí, nikdy se nezastaví, což odporuje prvnímu zákonu termodynamiky. Vědci tvrdí, že tento artefakt zdědil gravitační vlastnosti od vortexistických anomálií. Vnější kruh má vysokou vodivost, absorbuje elektrický proud z relativních zdrojů a odvádí ho do vnitřního kruhu. Na druhé straně je Kruh hořlavý. Dlouhodobé vystavení může zvýšit jeho hořlavost a způsobit jeho vzplanutí.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+<string id="st_af_electra_flash_af_iam_name">
+	<text>IAM s "Bleskem"</text>
+</string>
+<string id="st_af_electra_flash_af_iam_descr">
+	<text>
+	Tento artefakt je velmi podobný vzhledem k Měsíčnímu světlu a připomíná plazmovou kouli nebo plazmovou lampu. Je znám svou schopností chránit uživatele před smrtelnými dávkami elektřiny. Při nošení je také známo, že mírně neutralizuje škodlivé účinky psi-anomálií nebo psi-vln. Avšak brání přirozenému hojení těla, je tedy nutná opatrnost, zejména při zranění nebo krvácení. Tento artefakt je také extrémně lehký a snadno přenosný.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	%c[d_orange] • neutrony\n
+	</text>
+</string>
+<string id="st_af_cristall_flower_af_iam_name">
+	<text>IAM se "Kamenným květem"</text>
+</string>
+<string id="st_af_cristall_flower_af_iam_descr">
+	<text>
+	Tento artefakt připomíná roztavený sýr prolínající se s safírovými kameny. Pouze žlutý vnější plášť artefaktu vydává radiaci a pomocí pečlivého zpracování je možné extrahovat ne-radioaktivní modré části pro šperkařské a průmyslové účely, protože pokud jsou správně vyčištěny a leštěny, vypadají úžasně jako safíry. Kvůli tomu jsou velmi žádané šperkaři po celém světě. Využitelnost artefaktu však není omezena pouze na průmyslové aplikace. Existují vědecké důkazy naznačující, že safírové kameny účinně chrání před psi-vlnami, zatímco vnější plášť mírně zvyšuje odolnost proti toxicitě. Může však způsobit ohřátí objektu v jeho blízkosti a v extrémních případech jejich vzplanutí společně s artefaktem. Je neuvěřitelně hutný a patří mezi nejtěžší anomální tvory v Zóně.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_green] • %c[ui_gray_2] neemituje radioaktivitu\n
+	</text>
+</string>
+
+<string id="st_af_lobster_eyes_af_iam_name">
+	<text>IAM s "Krabíma očima"</text>
+</string>
+<string id="st_af_lobster_eyes_af_iam_descr">
+	<text>
+	Jak název naznačuje, tento artefakt má tvar dvou očí spojených dohromady s velmi tlustým vnějším povrchem. Tento artefakt poskytuje o něco větší ochranu před psi než jeho příbuzný, Kamenný květ. V určité míře rezonuje pod vlivem psi-vln a absorbuje jejich nebezpečný účinek. Další pozitivní vlastností je jeho schopnost pohlcovat nadměrné teplo a zůstat stále chladný. Velmi hutný.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+<string id="st_af_electra_moonlight_af_iam_name">
+<text>IAM s "Moonlight"</text>
+</string>
+<string id="st_af_electra_moonlight_af_iam_descr">
+<text>
+Tento unikátní elektrostatický artefakt může rezonovat pod vlivem psi-vln. Stalkers se naučili jemně nastavit artefakt tak, aby významně neutralizoval jejich účinky. Tato koule značné krásy také zvyšuje ochranu proti elektrickému proudu snižováním vodivosti v těle. Je třeba poznamenat, že Moonlight se vystavením otevřenému plameni nebo dokonce samovolně vzplanuje.\n \n
+%c[0,255,255,255]VLASTNOSTI:\n
+%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+%c[d_green] • Gamma záření\n
+</text>
+</string>
+
+<string id="st_af_black_spray_af_iam_name">
+	<text>IAM s "Black Spray"</text>
+</string>
+<string id="st_af_black_spray_af_iam_descr">
+	<text>
+	Jedná se o vzácný artefakt, o jeho vlastnostech a původu je málo známo. Black Spray má podobný tvar jako další artefakty připomínající safíry. Organická povaha stonku (který má podobné vlastnosti jako pinové artefakty) naznačuje, že vzniká z cévnatých rostlin vystavených nebezpečným psi-poleum a elektromagnetickým vlnám. Další jedinečnou vlastností je schopnost zpožďovat šíření světla, které do něj vstupuje. Tento tajemný mechanismus se aplikuje také na psi-vlny obklopující artefakt. Z tohoto důvodu výrazně neutralizuje psi-rušení v širokém poloměru. Tyto výhodné vlastnosti však mají svou cenu. Tento artefakt je extrémně nebezpečný při použití v toxickém prostředí, protože zesiluje jejich účinek a zvyšuje jejich sílu. Při průzkumu toxických oblastí je proto vřele doporučeno artefakt nosit ve svém batohu. Díky krásné modré aury, kterou vydává, je velmi vyhledáván šperkaři po celém světě.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	%c[d_orange] • neutrony\n
+	</text>
+</string>
+
+<string id="st_af_medusa_af_iam_name">
+	<text>IAM s "Jellyfish"</text>
+</string>
+<string id="st_af_medusa_af_iam_descr">
+	<text>
+	Velmi častý v Zóně. Tento gravitační artefakt dokáže mírně chránit tělo a objekty před fyzickými nárazy. Také mírně chrání svého uživatele před extrémním teplem vyvolaným anomáliemi ohně. Tento artefakt je poměrně těžký, protože gravitační pole se zdá zvyšovat jeho hmotnost. Dalším negativem je, že zvyšuje negativní účinky psi-vln.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_green] • %c[ui_gray_2] neobsahuje radioaktivní emise\n
+	</text>
+</string>
+<string id="st_af_vyvert_af_iam_name">
+	<text>IAM s "Wrenched"</text>
+</string>
+<string id="st_af_vyvert_af_iam_descr">
+	<text>
+	Tento podivně tvarovaný artefakt se objevuje na místech s zvýšenou gravitační aktivitou. Přestože vypadá téměř organicky, je ve skutečnosti více podobný korálu. Díky své gravitační povaze poskytuje ochranu proti fyzickým nárazům, protože výrazně snižuje tření způsobené rychle se pohybujícími objekty. Také působí jako druh houby, která absorbuje chemické a toxické látky, poskytující ochranu před vnějšími toxickými látkami i před chemickými částicemi, které již pronikly do těla. Wrenched dokáže generovat místně řízené gravitační pole, které zvyšuje jeho hmotnost a činí objekt velmi hutným.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+
+<string id="st_af_empty_af_iam_name">
+	<text>IAM s "Prázdnym"</text>
+</string>
+<string id="st_af_empty_af_iam_descr">
+	<text>
+	Dva disky organického materiálu (obvykle tuky, celuloza a lignin) s ničím než s prázdným prostorem mezi nimi. To je způsobeno jedinečným gravitačním polem vytvořeným ve středu, které stabilizuje vzdálenost mezi disky. Jakýkoli pokus o stlačení disku nebo jejich oddělení selže kvůli rychlým pozitivním/negativním změnám v gravitačním poli. Kvůli tomuto mechanismu je pohyb s Prazdnym obtížný, protože gravitační pole zvyšuje hustotu okolního vzduchu. Skutečná užitečnost tohoto efektu spočívá v jeho schopnosti snižovat tření a poskytovat tak velkou ochranu proti fyzickým nárazům.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+<string id="st_af_full_empty_af_iam_name">
+	<text>IAM s "Plným prázdnym"</text>
+</string>
+<string id="st_af_full_empty_af_iam_descr">
+	<text>
+	Podobně jako Prazdny, tento artefakt se skládá ze dvou disků organického materiálu spojených jedinečným gravitačním polem mezi nimi. Avšak toto pole ve Full Empty je mimořádné: všechny atomy vstupující do středu se, bez ohledu na jejich povahu, stanou interaktivními pod vlivem neznámých účinků pole, čímž uvolňují fotony světla. Vědci na něj obvykle odkazují jako na "galaxy efekt", který artefaktu dodává výjimečnou oběžnou dráhu světla. Zvýšení hustoty okolního vzduchu je ve srovnání s Prazdnym vyšší. Kvůli tomu je artefakt neuvěřitelně hustý. Jako nadřazený artefakt Prazdneho poskytuje vynikající ochranu proti fyzickým nárazům. Někteří tvrdí, že Plne prazdne je schopno zastavit 9mm střely vystřelené z blízkosti, i když to nebylo testováno.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	%c[d_orange] • neutrony\n
+	</text>
+</string>
+<string id="st_af_night_star_af_iam_name">
+	<text>IAM s "Nightstar"</text>
+</string>
+<string id="st_af_night_star_af_iam_descr">
+	<text>
+	Tento světélkující artefakt dokáže vytvářet místně zaměřené pole nízké gravitace. Je široce používán stalkery spolu s Gravi, podobným artefaktem, pro zvýšení maximálního zatížení. Díky své krásné vnitřní jádru je vyhledáván šperkaři po celém světě, nicméně je nejlepší postupovat opatrně, protože neschopná manipulace může způsobit explozi artefaktu s dostatečnou silou na zbourání malé budovy. Proto je výslovně doporučeno provádět leštění pomocí specializovaných strojů, které minimalizují pravděpodobnost výbuchu. Pouze vnější jádro artefaktu vyzařuje radiaci. Nightstar také absorbuje toxické a chemické látky z prostředí, což z něj činí cenný artefakt pro lovce artefaktů, i když množství absorbovaných toxinů je zanedbatelné. Je relativně levný a i stalkeri s omezeným rozpočtem si ho mohou dovolit. Nicméně, Nightstar vylučuje zápach hořícího masa při nejbližším kontaktu s teplem. Prolongované vystavení může zvýšit jeho hořlavost a způsobit jeho vzplanutí.\n
+	%c[0,255,255,255]VLASTNOSTI:\n \n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_green] • %c[ui_gray_2] nevyzařuje radioaktivitu\n
+	</text>
+</string>
+
+<string id="st_af_gravi_af_iam_name">
+	<text>IAM s "Gravi"</text>
+</string>
+<string id="st_af_gravi_af_iam_descr">
+	<text>
+	Gravi je vytvořen z kovových látek vystavených dlouhodobé gravitaci. To mu umožňuje udržovat silné protigravitační pole, které snižuje hmotnost všech objektů v jeho blízkosti. Dlouho byl tento artefakt záhadou, až vědec Sakharov v Yantaru jako první objevil, že Gravi vytváří krátkodobé protigravitační singulární pole, které se opakuje v intervalech 30 minut. Nebezpečným účinkem tohoto artefaktu je, že zvyšuje elektrickou vodivost, takže pravděpodobnost úrazu elektrickým proudem při nošení tohoto artefaktu je mnohem vyšší, zejména během bourek a v blízkosti elektrických anomálií. Také zvyšuje negativní účinky psy-vln a je silným vodičem.\n
+	%c[0,255,255,255]VLASTNOSTI:\n \n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+<string id="st_af_gold_fish_af_iam_name">
+	<text>IAM s "Zlatou rybkou"</text>
+</string>
+<string id="st_af_gold_fish_af_iam_descr">
+	<text>
+	Přímý nástupce a vylepšená verze artefaktu Gravi. Stejně jako u Gravi objevil vědec Sakharov v Yantaru jeho jedinečné vlastnosti poté, co do Zóny zasáhla masivní bouře/výbuch. Díky pečlivému následnému výzkumu bylo zjištěno, že tento nový artefakt vzniká interakcí tří Gravi artefaktů a kombinací singulárních polí. Tento jev je extrémně vzácný a právě proto je tento artefakt velmi cenný. Artefakt vytváří stále protigravitační singulární pole, které snižuje hmotnost všech objektů v jeho blízkosti. Nicméně rychlost pohybujících se objektů uvnitř jeho poloměru se rychle zvyšuje až na nebezpečné úrovně. Někteří tvrdí, že tento artefakt dokáže zastavit i kulky, ale to bylo vyvráceno a připisováno pouze nepřesnému pozorování. Zlatá rybka je známa také tím, že eliminuje negativní účinky psychických vln. Je považována za jeden z nejsilnějších artefaktů ve Zóně, což ji činí velmi vzácnou a cennou mezi stalkery.\n
+	%c[0,255,255,255]VLASTNOSTI:\n \n
+	%c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+	%c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+	%c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+	%c[d_green] • Gamma záření\n
+	</text>
+</string>
+
+<string id="st_af_dummy_glassbeads_af_iam_name">
+    <text>IAM s "Maminy korálky"</text>
+</string>
+<string id="st_af_dummy_glassbeads_af_iam_descr">
+    <text>
+    Tvarem připomínající DNA helix se Mamina korálky vytvářejí v Burner anomálii. Jedna z jejich nejcharakterističtějších vlastností je, že neustále pulzují a vytvářejí emise prospěšné pro lidské tělo. Tyto emise zvyšují metabolismus každého živého tvora, urychlují srážení krve a hojení ran. Mechanismus účinku tohoto artefaktu je stále neznámý. Mamina korálky také disponují silnými ochrannými vlastnostmi: jsou schopny chránit tělo a předměty před extrémním teplem. Na druhou stranu je třeba poznamenat, že přítomnost tohoto artefaktu zvyšuje elektrickou vodivost, takže pravděpodobnost úrazu elektrickým proudem při nošení tohoto artefaktu je mnohem vyšší, zejména během bouří a v blízkosti elektrických anomálií. Tento artefakt je také poměrně hutný pro tak malý předmět.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_green] • %c[ui_gray_2] nevyzařuje radioaktivní emise\n
+    </text>
+</string>
+<string id="st_af_eye_af_iam_name">
+    <text>IAM s "Okem"</text>
+</string>
+<string id="st_af_eye_af_iam_descr">
+    <text>
+    Tento artefakt, připomínající lidské oko, výrazně zvyšuje metabolismus těla, pomáhá rychlejšímu hojení ran. Zkušení stalkři říkají, že Oko také přináší štěstí. Bez ohledu na platnost tohoto tvrzení jsou jeho pozitivní účinky skutečně velmi silné. Tento artefakt tlumí bolest a je extrémně užitečný při ošetřování ran a nošení na opasek mírně neutralizuje škodlivé účinky psy-anomálií nebo psy-vln. Tyto prospěšné vlastnosti však mají svou cenu. Tento artefakt je extrémně nebezpečný při vystavení chemickým anomáliím, protože zesiluje jejich toxicitu a zvyšuje jejich sílu. Proto se výrazně doporučuje artefakt uchovávat v batohu při průzkumu toxických oblastí, pokud nemáte přání zemřít. Artefakt je také znám přezdívkou "měděné oko", protože vodí elektrinu a zesiluje její nebezpečné účinky stejně jako med.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    </text>
+</string>
+<string id="st_af_fire_af_iam_name">
+    <text>IAM s "Plamenem"</text>
+</string>
+<string id="st_af_fire_af_iam_descr">
+    <text>
+    Tento artefakt vzniká v oblastech s vysokou tepelnou aktivitou a produkuje silné infračervené emise, které zesilují metabolické procesy a nesmírně rychle hojí rány. Stalkři v držení tohoto artefaktu údajně přežili zranění od chimér. Díky tomu získal svou pověst. Mnoho zkušených lovců mutantů mu vděčí za svůj život a nosí ho s sebou pro případ nebezpečí. Nicméně vstupovat s tímto artefaktem do psy-pole je sebevražda, protože absorbuje psy energii a emituje ji s významnou intenzitou.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro ukládání artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    %c[d_orange] • neutrony\n
+    </text>
+</string>
+<string id="st_af_dummy_battery_af_iam_name">
+    <text>IAM s "Baterii"</text>
+</string>
+<string id="st_af_dummy_battery_af_iam_descr">
+    <text>
+    Tento artefakt je velmi popularni v Zone a je ceneny jak jejimi obyvateli, tak navstevniky pro sve energetizujici vlastnosti, i kdyz ma nepriznivy ucinek na telo pri dlouhodobem uzivani. Na druhou stranu je silnym odolavacem, je dobre znamy svou schopnosti chranit uzivatele pred smrticimi davkami elektriny. Nicmene tento artefakt zabranuje srazeni krve, zvysuje krvacivost a je znamo, ze absorbuje teplo a prenasi je na jine objekty. Tento artefakt je take extremne lehky a snadno prenosny.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zarizeni pro ukladani artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_green] • %c[ui_gray_2] zadne radioaktivni emise\n
+    </text>
+</string>
+<string id="st_af_dummy_dummy_af_iam_name">
+    <text>IAM se "Skorapkou"</text>
+</string>
+<string id="st_af_dummy_dummy_af_iam_descr">
+    <text>
+    Skorapka je slozena ze dvou disku modrozelene barvy spojenych polopruhlednym materialem nezname povahy. Tento zvlastni artefakt byl po dlouhou dobu mnoha vedci povazovan za bezcenny. Teprve nedavno bylo zjisteno, ze je ve skutecnosti velmi prospesny. Kdyz artefakt prijde do kontaktu s telem, obnovi uzivatele a zvysi tak regeneraci vytrvalosti. Jedna nevyhoda tohoto artefaktu je vsak ta, ze snizuje pocet krevnich desticek v krevnim obehu, cimz zvysuje krvacivost. Poskytuje znacnou uroven ochrany pred psy vlivy a absorbuje elektromagneticke ruseni, pusobi jako zemici material, ale pri kontaktu s otevrenym plamenem nebo dokonce samo vzplane. Je nutna opatrnost pri priblizeni se ke zdrojum tepla s timto artefaktem. Skorapka je extremne lehka a velmi prenosna.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zarizeni pro ukladani artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivni emise:\n
+    %c[d_green] • Gamma zareni\n
+    %c[d_orange] • neutrony\n
+    </text>
+</string>
+ 
+<string id="st_af_ice_af_iam_name">
+    <text>IAM s "Snowflake"</text>
+</string>
+<string id="st_af_ice_af_iam_descr">
+    <text>
+    Také známý jako "Radioaktivní sněhová vločka". Na první pohled připomíná tento artefakt bílý Koblížek. Díky svým jedinečným vlastnostem může artefakt významně zvýšit svalový tón nositele a tím výrazně zlepšit obnovu vytrvalosti. Vzhledem k jeho vysoké radioaktivitě jsou stalkři, kteří ho vlastní, někdy žertovně přezdíváni "Radioaktivní sněhové vločky". Při rozhodování, zda jej nosit na opasku, je třeba zvážit příslušné pro a proti: vyplatí se mít větší vytrvalost a ochranu proti elektrickému výboji za cenu neustálého vystavování se smrtelné radiaci? Sněhová vločka však interaguje s okolními zdroji energie tím, že je absorbuje a zesiluje jejich účinky. Z tohoto důvodu je sebevražda přiblížovat se zdrojům tepla, toxickým oblastem a psy-pole držící tento artefakt. Artefakt je velmi lehký.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro uložení artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    %c[d_orange] • neutrony\n
+    </text>
+</string>
+<string id="st_af_soul_af_iam_name">
+    <text>IAM s "Duší"</text>
+</string>
+<string id="st_af_soul_af_iam_descr">
+    <text>
+    Duše je unikátní organický artefakt, který vylučuje lepkavou slizovitou hmotu, která dramaticky zvyšuje rychlost hojení ran. Díky své rozumné ceně a atraktivnímu vzhledu je tento artefakt cenným sběratelským předmětem. Také snižuje účinky psy-vln a jejich poškození mozku, ale je třeba poznamenat, že Duše odebírá energii svému uživateli.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro uložení artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_green] • %c[ui_gray_2] žádné radioaktivní emise\n
+    </text>
+</string>
+<string id="st_af_fuzz_kolobok_af_iam_name">
+    <text>IAM s "Koblížkem"</text>
+</string>
+<string id="st_af_fuzz_kolobok_af_iam_descr">
+    <text>
+    Relativně vzácný artefakt vytvořený v chemických oblastech, Koblížek je vysoko ceněn pro svou schopnost léčit většinu druhů ran a zastavit krvácení během několika minut. Z neznámých důvodů šíří vědci mezi stalkery zvěsti, že artefakt modifikuje genetický kód uživatele. I když to není prokázáno a mělo by se to považovat za vědomý pokus o monopolizaci zásob artefaktu. To však neznamená, že je zcela neškodný. Jeden nevýhodou tohoto artefaktu je, že negativně interaguje s radioaktivními částicemi, je proto nejlepší se vyhýbat radiaci, pokud je v jeho držení. Jehly artefaktu také způsobují malé, ale rychle se hojící rány, které přinášejí nepříjemnost a svědění a tím snižují vytrvalost. Tento artefakt také snižuje ochranu proti teplu a kyselinám kvůli své vysoké hořlavosti.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] zařízení pro uložení artefaktu\n
+    %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+    %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+    %c[d_green] • Gamma záření\n
+    </text>
+</string>
+ 
+<string id="st_af_glass_af_iam_name">
+    <text>IAM s "Ohnivkou"</text>
+</string>
+<string id="st_af_glass_af_iam_descr">
+    <text>
+        Ohnivka interaguje s polemi neznámými vědě, výrazně urychluje regeneraci tkání a orgánů u živých organismů a normalizuje metabolické procesy. Tento artefakt dokáže zotavit těžce zraněného stopaře během několika minut. Na druhou stranu může ohnivka spontánně vzplanout při vystavení silným radioaktivním zdrojům a při hojení oslabuje tělo snižováním počtu krevních destiček, což zvyšuje krvácivost. Zdá se také, že vyčerpává vytrvalost a snižuje její regeneraci. Někteří lidé, kteří použili ohnivku k léčebným účelům, uvádějí, že po použití nemohli několik hodin chodit.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] zařízení pro uchovávání artefaktu\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+        %c[d_green] • Gamma záření\n
+        %c[d_orange] • neutrony\n
+    </text>
+</string>
+<string id="st_af_compass_af_iam_name">
+    <text>IAM s "Kompasem"</text>
+</string>
+<string id="st_af_compass_af_iam_descr">
+    <text>
+        Velmi vzácný artefakt. Od jeho nalezení uplynulo několik let. Dokáže lokalizovat mezery v anomálních polích a věří se, že umožňuje projít nejkomplexnějšími anomáliemi úplně bez újmy. Nicméně jen velmi málo lidí ví, jak s ním správně zacházet. Dokáže ovlivnit pohybující se objekty, některé zcela zmizí nebo se možná teleportují. Taktéž oslabuje tělo vyčerpáváním vytrvalosti a zvyšuje krvácivost. Největší nebezpečí představuje vysoká úroveň radioaktivního záření, které artefakt vydává. Držení tohoto artefaktu poblíž těla způsobuje smrt během několika minut.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] zařízení pro uchovávání artefaktu\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+        %c[d_green] • Gamma záření\n
+        %c[d_orange] • neutrony\n
+    </text>
+</string>
+<string id="st_af_oasis_heart_af_iam_name">
+    <text>IAM s "Srdcem Oázy"</text>
+</string>
+<string id="st_af_oasis_heart_af_iam_descr">
+    <text>
+        Tento artefakt byl nalezen uprostřed legendární Oázy. Zdá se, že srdce je zkřišťalizovaná rostlina, která získala léčivé vlastnosti Oázy. Nejenže dramaticky zvyšuje rychlost hojení ran a procesy léčení, ale také tělu poskytuje silný zdroj energie. Je to opravdový zázrak. Nicméně Oáza je velmi citlivá na vnější zdroje energie a své okolí. Z tohoto důvodu interakce s anomálními poli přinese smrt držiteli.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] zařízení pro uchovávání artefaktu\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+        %c[d_green] • Gamma záření\n
+        %c[d_orange] • neutrony\n
+    </text>
+</string>
+ 
+<string id="st_af_death_lamp_af_iam_name">
+    <text>IAM s "Lampou Smrti"</text>
+</string>
+<string id="st_af_death_lamp_af_iam_descr">
+    <text>
+        "Velká, červená a prokletá." Takto místní preferují popisovat Lampu Smrti, zatímco někteří ji nazývají "Semenem Satana". Mnoho obchodníků věří pověstem o tomto artefaktu a odmítá ho koupit. O jeho původu se ví málo a dosud nebyla objevena žádná hodnota. Lampu Smrti před několika lety objevila skupina tří zkušených stopařů. Krátce poté, co prodali artefakt ekologům v Yantaru, byli nalezeni dva z nich mrtví s hrůzným výrazem na tváři. O osudu třetího stopaře se nic neví. Po této události členové vědeckého týmu, kteří studovali artefakt, hlásili problémy s nočními můrami v následujících dnech. Kromě těchto záhadných účinků artefakt vyčerpává vitalitu a vůli uživatele, často do té míry, že způsobuje závratě a ve výjimečných případech uživatele dokonce přivádí k mdlobám.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+        %c[d_green] • Gamma záření\n
+        %c[d_orange] • neutrony\n
+        %c[d_red] • pozitrony\n
+    </text>
+</string>
+<string id="st_af_misery_bread_af_iam_name">
+    <text>IAM s "Anomálním Chlebem"</text>
+</string>
+<string id="st_af_misery_bread_af_iam_descr">
+    <text>
+        Kousek chleba tak tmavý jako duše toho, kdo ho zanechal. Určitě není bezpečné ho jíst.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_red] • %c[ui_gray_2] radioaktivní emise:\n
+        %c[d_green] • Gamma záření\n
+        %c[d_orange] • neutrony\n
+        %c[d_red] • pozitrony\n
+    </text>
+</string>
+<string id="st_af_quest_b14_twisted_af_iam_name">
+    <text>IAM se "Zkrouceným Kolem"</text>
+</string>
+<string id="st_af_quest_b14_twisted_af_iam_descr">
+    <text>
+        Toto bylo kdysi kolo na odvalovací stanici. Nyní se částečně změnilo v podivný artefakt. Nejsou zaznamenány žádné významné vlastnosti.\n \n
+        %c[0,255,255,255]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] úložné zařízení pro artefakty\n
+        %c[d_cyan] • %c[ui_gray_2] kapacita:%c[ui_gray_2] 1\n
+        %c[d_green] • %c[ui_gray_2] žádné radioaktivní emise\n
+    </text>
+</string>
+
+</string_table>

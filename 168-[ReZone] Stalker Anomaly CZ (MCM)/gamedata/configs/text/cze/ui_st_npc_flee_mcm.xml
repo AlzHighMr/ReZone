@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_npc_flee_title">
+		<text>NPC flee</text>
+	</string>
+	<string id="ui_mcm_menu_npc_flee">
+		<text>NPC flee</text>
+	</string>
+
+
+	<!-- Powers -->
+	<string id="ui_mcm_npc_flee_header_power">
+		<text>Powers   (flee starts if "enemies_power > friends_power*threshold_mult")</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_threshold_mult">
+		<text>Threshold mult</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_companion_pwr">
+		<text>Companion power multiplier</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_enemies_pwr_mult">
+		<text>Enemies power mult</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_friends_pwr_mult">
+		<text>Friends power mult</text>
+	</string>
+
+
+	<!-- Distance before flee -->
+	<string id="ui_mcm_npc_flee_header_dist_before">
+		<text>Radius   (before flee starts, calculates enemies/friends power only in this radius)</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_enemies_radius">
+		<text>Enemies radius</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_friends_radius">
+		<text>Friends radius</text>
+	</string>
+
+
+	<!-- Distance after flee -->
+	<string id="ui_mcm_npc_flee_header_dist_after">
+		<text>Radius 2   (when already fleeing, lower radius to cancel if weaker enemies nearby)</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_enemies_upd_radius">
+		<text>Enemies radius 2</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_friends_upd_radius">
+		<text>Friends radius 2</text>
+	</string>
+
+
+	<!-- Others -->
+	<string id="ui_mcm_npc_flee_header_others">
+		<text>Misc</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_start_flee_time">
+		<text>First flee seconds that can't be cancelled</text>
+	</string>
+	<string id="ui_mcm_npc_flee_start_flee_time_desc">
+		<text>First seconds after flee starts that can not be cancelled by weak enemy or hits</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_flee_protection_time">
+		<text>Flee protection time (sec.)</text>
+	</string>
+	<string id="ui_mcm_npc_flee_flee_protection_time_desc">
+		<text>When NPC stop fleeing, he can't flee again for this time</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_cancel_on_hit">
+		<text>Cancel flee if NPC hitted</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_hits_to_cancel">
+		<text>Hits amount to cancel flee</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_flee_smart_min_dist">
+		<text>Min distance to flee</text>
+	</string>
+	<string id="ui_mcm_npc_flee_flee_smart_min_dist_desc">
+		<text>Pick a target to flee only if it's further than this value</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_cover_time">
+		<text>Cover squad time (0 to disable)</text>
+	</string>
+	<string id="ui_mcm_npc_flee_cover_time_desc">
+		<text>Farthest NPC will cover his squad's flee.</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_smoke_enabled">
+		<text>Smoke grenades</text>
+	</string>
+
+	<string id="ui_mcm_npc_flee_flee_dbg">
+		<text>Debug (console prints)</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+
+	<string id="st_rax_fav">
+    <text>Označit jako oblíbené</text>
+</string>
+<string id="st_rax_unfav">
+    <text>Zrušit označení oblíbeného</text>
+</string>
+<string id="st_rax_junk">
+    <text>Označit jako nepotřebné</text>
+</string>
+<string id="st_rax_unjunk">
+    <text>Zrušit označení nepotřebné</text>
+</string>
+<string id="ui_mcm_title_SortingPlus">
+    <text>Sorting Plus</text>
+</string>
+<string id="ui_mcm_menu_SortingPlus">
+    <text>Sorting Plus</text>
+</string>
+<string id="ui_mcm_SortingPlus_playerinv">
+    <text>Třídit inventář hráče</text>
+</string>
+<string id="ui_mcm_SortingPlus_playerinv_desc">
+    <text>Inventář na pravé straně ve všech obrazovkách kromě obchodování.</text>
+</string>
+<string id="ui_mcm_SortingPlus_playertrade">
+    <text>Třídit obchodní inventář hráče</text>
+</string>
+<string id="ui_mcm_SortingPlus_playertrade_desc">
+    <text>Inventář na pravé straně při obchodování.</text>
+</string>
+<string id="ui_mcm_SortingPlus_npcinv">
+    <text>Třídit inventář NPC</text>
+</string>
+<string id="ui_mcm_SortingPlus_npcinv_desc">
+    <text>Inventář na levé straně ve všech obrazovkách kromě obchodování.</text>
+</string>
+<string id="ui_mcm_SortingPlus_npctrade">
+    <text>Třídit obchodní inventář NPC</text>
+</string>
+<string id="ui_mcm_SortingPlus_npctrade_desc">
+    <text>Inventář na levé straně při obchodování.</text>
+</string>
+<string id="ui_mcm_SortingPlus_useltx">
+    <text>Použít sortingplus.ltx</text>
+</string>
+<string id="ui_mcm_SortingPlus_useltx_desc">
+    <text>Ignoruje níže uvedená nastavení ve prospěch těch v sortingplus.ltx, které nabízí detailnější ovládání.</text>
+</string>
+
+<string id="ui_mcm_SortingPlus_iconjunk">
+    <text>Označit jako nepotřebné</text>
+</string>
+<string id="ui_mcm_SortingPlus_iconjunk_desc">
+    <text>Označí předměty označené jako nepotřebné ikonou.</text>
+</string>
+<string id="ui_mcm_SortingPlus_hilitejunk">
+    <text>Zvýraznit nepotřebné</text>
+</string>
+<string id="ui_mcm_SortingPlus_hilitejunk_desc">
+    <text>Zvýrazní předměty označené jako nepotřebné.</text>
+</string>
+<string id="ui_mcm_SortingPlus_sortjunk">
+    <text>Použít kategorii nepotřebné</text>
+</string>
+<string id="ui_mcm_SortingPlus_sortjunk_desc">
+    <text>Třídí předměty označené jako nepotřebné do vlastní kategorie, výchozí je poslední.</text>
+</string>
+<string id="ui_mcm_SortingPlus_selljunk">
+    <text>"Automaticky" prodávat nepotřebné</text>
+</string>
+<string id="ui_mcm_SortingPlus_selljunk_desc">
+    <text>Nepotřebné, který obchodník koupí, bude umístěn v prodejním panelu. Musíte stále stisknout tlačítko prodeje k dokončení.</text>
+</string>
+<string id="ui_mcm_SortingPlus_iconfavs">
+    <text>Označit jako oblíbené</text>
+</string>
+<string id="ui_mcm_SortingPlus_iconfavs_desc">
+    <text>Označí předměty označené jako oblíbené ikonou.</text>
+</string>
+<string id="ui_mcm_SortingPlus_hilitefavs">
+    <text>Zvýraznit oblíbené</text>
+</string>
+<string id="ui_mcm_SortingPlus_hilitefavs_desc">
+    <text>Zvýrazní předměty označené jako oblíbené.</text>
+</string>
+<string id="ui_mcm_SortingPlus_sortfavs">
+    <text>Použít kategorii oblíbených</text>
+</string>
+<string id="ui_mcm_SortingPlus_sortfavs_desc">
+    <text>Třídí předměty označené jako oblíbené do vlastní kategorie, výchozí je první.</text>
+</string>
+<string id="ui_mcm_SortingPlus_putallfavs">
+    <text>Blokovat "Přesunout všechno" pro oblíbené</text>
+</string>
+	<string id="ui_mcm_SortingPlus_putallfavs_desc">
+	<text>Oblíbené položky se nepřesunou z inventáře při přesunu všech položek.</text>
+</string>
+<string id="ui_mcm_SortingPlus_resort">
+	<text>Přeřadit při označování</text>
+</string>
+<string id="ui_mcm_SortingPlus_resort_desc">
+	<text>Inventář se ihned přeřadí při označování oblíbených položek/šrotu. V opačném případě se přeřazení provede při příštím otevření inventáře. Užitečná zpětná vazba, pokud je zvýrazňování vypnuto.</text>
+</string>
+<string id="ui_mcm_SortingPlus_001loadout">
+	<text>Sestava zbraní</text>
+</string>
+<string id="ui_mcm_SortingPlus_002mags">
+	<text>Zásobníky</text>
+</string>
+<string id="ui_mcm_SortingPlus_000favorites">
+	<text>Oblíbené</text>
+</string>
+<string id="ui_mcm_SortingPlus_999junk">
+	<text>Nepotřebné</text>
+</string>
+<string id="ui_mcm_SortingPlus_010weapons">
+	<text>Zbraně</text>
+</string>
+<string id="ui_mcm_SortingPlus_020outfits">
+	<text>Oblečení</text>
+</string>
+<string id="ui_mcm_SortingPlus_030artifacts">
+	<text>Artefakty</text>
+</string>
+<string id="ui_mcm_SortingPlus_040devices">
+	<text>Zařízení</text>
+</string>
+<string id="ui_mcm_SortingPlus_050tools">
+	<text>Nástroje</text>
+</string>
+<string id="ui_mcm_SortingPlus_060medical">
+	<text>Léky</text>
+</string>
+<string id="ui_mcm_SortingPlus_070foods">
+	<text>Jídlo</text>
+</string>
+<string id="ui_mcm_SortingPlus_080mutantfoods">
+	<text>Mutantní jídlo</text>
+</string>
+<string id="ui_mcm_SortingPlus_090quest">
+	<text>Položky úkolů</text>
+</string>
+<string id="ui_mcm_SortingPlus_100notes">
+	<text>Poznámky</text>
+</string>
+<string id="ui_mcm_SortingPlus_110ammo">
+	<text>Náboje</text>
+</string>
+<string id="ui_mcm_SortingPlus_120mutantparts">
+	<text>Mutantní kousky</text>
+</string>
+<string id="ui_mcm_SortingPlus_130misc">
+	<text>Různé</text>
+</string>
+<string id="ui_mcm_SortingPlus_140upgrades">
+	<text>Vylepšení</text>
+</string>
+<string id="ui_mcm_SortingPlus_150parts">
+	<text>Díly</text>
+</string>
+
+</string_table>

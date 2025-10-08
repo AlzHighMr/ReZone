@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Usable Items (Special Purposes)
+-->
+
+<string_table>
+	
+<string id="st_itm_repairkit_tier_1_name">
+	<text>Základní nástroje</text>
+</string>
+<string id="st_itm_basickit_name">
+	<text>Základní nástroje</text>
+</string>
+<string id="st_itm_basickit_descr">
+	<text>Základní sada opravárenských nástrojů. Pravděpodobně není vhodná pro pokročilou údržbu, ale může se hodit v rukou šikovného technika. Obsahuje různé druhy a velikosti kleští, šroubů, lepidel a různých spojovacích prvků. S dostatečnými znalostmi a zkušenostmi lze tuto sadu použít k vytváření základního vybavení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vyžaduje vhodné materiály\n
+	%c[d_orange] • %c[ui_gray_2] použitelné v dílně mechanika pro výrobu\n
+	%c[d_orange] • %c[ui_gray_2] technik by mohl tímto plně upravit zbraně a brnění.\n \n
+	</text>
+</string>
+<string id="st_itm_repairkit_tier_2_name">
+	<text>Pokročilé nástroje</text>
+</string>
+<string id="st_itm_advancedkit_name">
+	<text>Pokročilé nástroje</text>
+</string>
+<string id="st_itm_advancedkit_descr">
+	<text>Dobrá sada starých nástrojů, které navzdory svému stáří vypadají v dobrém stavu. Obsahuje malé kleště, špičaté pinzety, sondy a háčky. S dostatečnými znalostmi a zkušenostmi lze tuto sadu použít k vytváření lepšího vybavení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vyžaduje vhodné materiály\n
+	%c[d_orange] • %c[ui_gray_2] použitelné v dílně mechanika pro výrobu\n
+	%c[d_orange] • %c[ui_gray_2] technik by mohl tímto plně upravit zbraně a brnění.\n \n
+	</text>
+</string>
+<string id="st_itm_repairkit_tier_3_name">
+	<text>Expertní nástroje</text>
+</string>
+<string id="st_itm_expertkit_name">
+	<text>Expertní nástroje</text>
+</string>
+<string id="st_itm_expertkit_descr">
+	<text>Expertní sada vysoce kvalitních nástrojů pro jemné ladění vybavení. Obsahuje sadu vrtáků, precizní pinzety, páječku, šroubováky 4 mm a multimetr. S dostatečnými znalostmi a zkušenostmi lze tuto sadu použít k vytváření pokročilého vybavení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vyžaduje vhodné materiály\n
+	%c[d_orange] • %c[ui_gray_2] použitelné v dílně mechanika pro výrobu\n
+	%c[d_orange] • %c[ui_gray_2] technik by mohl tímto plně upravit zbraně a brnění.\n \n
+	</text>
+</string>
+<string id="st_itm_drugkit">
+	<text>Sada na výrobu drog</text>
+</string>
+<string id="st_itm_drugkit_descr">
+	<text>
+	Malé pouzdro a různé kovové předměty tvoří sadu pro správu a výrobu drog. Obsahuje některé plastové obaly, tablety a ampule.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vyžaduje vhodné materiály\n
+	%c[d_orange] • %c[ui_gray_2] použitelné v dílně mechanika pro výrobu\n
+	%c[d_orange] • %c[ui_gray_2] lékař by mohl tímto vyrábět drogy a léky.\n \n
+	</text>
+</string>
+
+
+<string id="st_itm_ammokit">
+<text>Nástroje na výrobu munice</text>
+</string>
+<string id="st_itm_ammokit_descr">
+	<text>Dobrá sada starých nástrojů a příslušenství pro výrobu munice. Obsahuje sadu půlek na vytlačování kolíčků, kladivo, lisovací nástroj a sadu na měření střelného prachu. S dostatečnými znalostmi a zkušenostmi lze tuto sadu použít k recyklaci poškozené munice a vytváření lepších variant.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vyžaduje vhodné materiály\n
+	%c[d_orange] • %c[ui_gray_2] použitelné v dílně mechanika pro výrobu\n
+	%c[d_orange] • %c[ui_gray_2] technik by mohl tímto plně upravit zbraně a brnění.\n \n
+	</text>
+</string>
+	
+
+<string id="st_binocular_name">
+	<text>Dalekohled</text>
+</string>
+<string id="st_binocular_descr">
+	<text>Standardní vojenské ukrajinský dalekohled. Užitečné pro průzkum. Velmi odolný.\n</text>
+</string>
+<string id="st_con_checker_name">
+	<text>Papír s informacemi o stavu vybavení</text>
+</string>
+<string id="st_con_checker_descr">
+	<text>Odkus papíru s informacemi o stavu vašeho vybavení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelné pro hodnocení stavu vybavení\n</text>
+</string>
+<string id="st_container_tool_name">
+	<text>Nástroj na manipulaci s artefakty</text>
+</string>
+<string id="st_container_tool_descr">
+	<text>Kleště vyrobené z tvrzené oceli, určené výhradně pro manipulaci s artefakty. Kvůli specifickému mechanizmu fungování neexistuje žádný jiný způsob, jak vyjmout artefakt z kontejnerů. Kleště vám také umožní vyhnout se popáleninám, které obvykle následují po dotyku artefaktu holýma rukama; nechrání vás však před účinky artefaktů na váš psychiku a nervový systém. Žádný opravdový lovec artefaktů v Zóně neopouští základnu bez podobného nástroje.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[ui_cyan] • %c[ui_gray_2] použitelné pro manipulaci s artefakty\n
+	%c[ui_cyan] • %c[ui_gray_2] nezbytné pro manipulaci s obsahem artefaktových úložných zařízení\n</text>
+</string>
+<string id="st_lead_box_name">
+	<text>Olovem vystlaná kovová schránka (prázdná)</text>
+</string>
+<string id="st_lead_box_descr">
+	<text>Olovem vystlaná kovová schránka (LLMC) je jednoduchá kovová krabice s tlustými stěnami, pěnovými vložkami a těžkým víkem s tlakovým těsněním. Speciálně navržená pro přepravu radioaktivních materiálů, v Zóně se LLMC nejčastěji používá jako zařízení pro skladování a přepravu artefaktů. Zabrání úniku veškeré radiace, čímž zajistí bezpečnost uživatele při držení artefaktů. Zařízení však nelze připevnit k opasku, což znamená, že se nebudou uplatňovat žádné pozitivní ani negativní vlastnosti artefaktů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[ui_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktů\n
+	%c[ui_cyan] • %c[ui_gray_2] kapacita: %c[ui_gray_1] 1\n
+	%c[d_red]VAROVÁNÍ: %c[ui_gray_2] Před prodejem musíte artefakty z kontejneru vyjmout.\n</text>
+</string>
+	
+<string id="st_lead_box_half_name">
+	<text>Olovem vystlaná kovová schránka (Zaplněná z poloviny)</text>
+</string>
+<string id="st_lead_box_half_descr">
+	<text>Olovem vystlaná kovová schránka (LLMC) je jednoduchá kovová krabice s tlustými stěnami, pěnovými vložkami a těžkým víkem s tlakovým těsněním. Speciálně navržená pro přepravu radioaktivních materiálů, v Zóně se LLMC nejčastěji používá jako zařízení pro skladování a přepravu artefaktů. Zabrání úniku veškeré radiace, čímž zajistí bezpečnost uživatele při držení artefaktů. Zařízení však nelze připevnit k opasku, což znamená, že se nebudou uplatňovat žádné pozitivní ani negativní vlastnosti artefaktů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[ui_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktů\n
+	%c[ui_cyan] • %c[ui_gray_2] kapacita: %c[ui_gray_1] 1\n
+	%c[d_red]VAROVÁNÍ: %c[ui_gray_2] Před prodejem musíte artefakty z kontejneru vyjmout.\n</text>
+</string>
+<string id="st_lead_box_closed_name">
+	<text>Olovem vystlaná kovová schránka (Plná)</text>
+</string>
+<string id="st_lead_box_closed_descr">
+	<text>Olovem vystlaná kovová schránka (LLMC) je jednoduchá kovová krabice s tlustými stěnami, pěnovými vložkami a těžkým víkem s tlakovým těsněním. Speciálně navržená pro přepravu radioaktivních materiálů, v Zóně se LLMC nejčastěji používá jako zařízení pro skladování a přepravu artefaktů. Zabrání úniku veškeré radiace, čímž zajistí bezpečnost uživatele při držení artefaktů. Zařízení však nelze připevnit k opasku, což znamená, že se nebudou uplatňovat žádné pozitivní ani negativní vlastnosti artefaktů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[ui_cyan] • %c[ui_gray_2] zařízení pro skladování artefaktů\n
+	%c[ui_cyan] • %c[ui_gray_2] kapacita: %c[ui_gray_1] 1\n
+	%c[d_red]VAROVÁNÍ: %c[ui_gray_2] Před prodejem musíte artefakty z kontejneru vyjmout.\n</text>
+</string>
+<string id="st_crowbar">
+	<text>Železná páčidla (Opakovatelně použitelná)</text>
+</string>
+<string id="st_crowbar_descr">
+	<text>Nejlepší nástroj pro otvírání zámků a vyklápění dveří. Běžně se nachází v průmyslových oblastech. Někteří stopaři z neznámých důvodů nosí páčidla ve svém inventáři navzdory jejich těžké váze. Mají nízkou hodnotu. Byl tu známý Stalker, který nosil kolem jedinečná železná páčidla s nápisem "Vlastnictví Black Mesa". Jsou tak vyhledávána, že někteří stopaři je hledají jako by hledali vzácné a cenné artefakty.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] neomezené použití</text>
+</string>
+<string id="st_bolts_pack">
+	<text>Sada vrhacích šroubů</text>
+</string>
+<string id="st_bolts_pack_descr">
+	<text>Malá sada obsahující několik hřebů a prázdných nábojů, které slouží jako levná alternativa pro navigaci v anomáliích.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] obsahuje 20 až 30 hřebů a/nebo prázdných nábojů\n</text>
+</string>
+<string id="st_swiss">
+	<text>Švýcarský nůž</text>
+</string>
+<string id="st_swiss_descr">
+	<text>Univerzální a elegantní švýcarský nůž. Lze ho využít jako podpůrný materiál při opravách zbraní a oblečení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] nástroj pro rozebírání\n
+	</text>
+</string>
+	
+<string id="st_grooming">
+	<text>Kosmetický set</text>
+</string>
+<string id="st_grooming_descr">
+	<text>Kosmetický set, který obsahuje cestovní pouzdro z balistického nylonu, hřeben na vousy a knír a detailní obličejové nůžky. Nůžky mají rozměrná prstová kružítka, ultra ostré čepele ze nerezové oceli, protiskluzový gumový grip a přesnou špičku pro stříhání.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] rozmontovatelný nástroj\n
+	</text>
+</string>
+<string id="st_drugs_kit">
+	<text>Malý lékárenský set</text>
+</string>
+<string id="st_drugs_kit_descr">
+	<text>Malé krabičky a různé kovové předměty tvoří sadu pro správu a výrobu léků. V některých plastových sáčcích jsou tablety a byliny.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_red] • %c[ui_gray_2] nepoužitelný\n</text>
+</string>
+<string id="st_itm_sleepbag_name">
+	<text>Spacák</text>
+</string>
+<string id="st_itm_sleepbag_descr">
+	<text>Lehký spacák, který vás udrží teplé a suché, když potřebujete odpočinout. Buďte si jisti, že si vyberete bezpečné místo s možnou únikovou cestou.\n \n
+	%c[d_red]UPOZORNĚNÍ: %c[ui_gray_2]Spánek na otevřeném prostranství může přilákat predátory.\n
+	Neposkytuje ochranu před radiací.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] nastaví přenosnou postel\n
+	%c[d_cyan] • %c[ui_gray_2] použijte stlačovací tašku pro sběr\n
+	%c[d_cyan] • %c[ui_gray_2] neomezené použití\n
+</text>
+</string>
+<string id="st_compression_bag">
+	<text>Stlačovací taška</text>
+</string>
+<string id="st_compression_bag_descr">
+	<text>Slouží k uložení spacáku.\n \n
+	%c[ui_gray_2]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] používá se k sběru nerozbaleného spacáku\n
+	%c[d_orange] • %c[ui_gray_2] klikněte pravým tlačítkem myši na předmět poblíž spacáku > 'Použít'\n
+	</text>
+</string>
+<string id="st_itm_tent_bag">
+	<text>Plátěnka na stan (prázdná)</text>
+</string>
+<string id="st_itm_tent_bag_descr">
+	<text>Taška určená pro skladování a přepravu stanu. Rozkládání a sbalení trvá nějakou dobu.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] používá se k sbalení stanu\n
+	%c[d_orange] • %c[ui_gray_2] klikněte pravým tlačítkem myši na předmět poblíž stane > 'Použít'\n
+	</text>
+</string>
+<string id="st_itm_tent_name">
+	<text>Plátěnka na stan (plná)</text>
+</string>
+<string id="st_itm_tent_descr">
+	<text>Taška obsahující stan pro kempování, ochranu před deštěm a větrem. Rozkládání a instalace trvá nějakou dobu. V Zóně je nejlepší ho umístit na místo s únikovými cestami v případě nebezpečí.\n \n
+	%c[d_red]UPOZORNĚNÍ: %c[ui_gray_2]Spánek na otevřeném prostranství může přilákat predátory.\n
+	Neposkytuje ochranu před radiací.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] postaví stan\n
+	%c[d_cyan] • %c[ui_gray_2] neomezené použití\n</text>
+</string>
+<string id="st_lighter">
+	<text>Zapalovač</text>
+</string>
+<string id="st_lighter_descr">
+	<text>V Zóně je spolehlivý, vodotěsný zdroj ohně nezbytný nejen pro vaření jídel, ale také pro zapálení cigarety nebo něčeho silnějšího před - poklepejme na dřevo - bojem s kontrolérem. Tento odolný a robustní plynový kovový zapalovač je vzhledem k toxickému a škodlivému prostředí Zóny perfektní volbou.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelný pro vaření, kouření a zapalování ohně\n</text>
+</string>
+<string id="st_lighter_refillers_descr">
+	<text>Není téměř žádný smysl nosit zapalovač, pokud ho nelze použít k zapálení. Zkušení stalkerové si vždy pamatují doplnit zapalovač palivem před odjezdem na delší výpravy do hluboké Zóny. Běžně dostupné palivo do zapalovačů "Carcinoleum" je relativně levné a plní účel dostatečně dobře.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelný k doplňování zapalovačů\n</text>
+</string>
+	
+	
+<string id="st_lighter_refiller5">
+	<text>Palivo do zapalovače (133 ml)</text>
+</string>
+<string id="st_lighter_refiller4">
+	<text>Palivo do zapalovače (107 ml)</text>
+</string>
+<string id="st_lighter_refiller3">
+	<text>Palivo do zapalovače (80 ml)</text>
+</string>
+<string id="st_lighter_refiller2">
+	<text>Palivo do zapalovače (54 ml)</text>
+</string>
+<string id="st_lighter_refiller1">
+	<text>Palivo do zapalovače (27 ml)</text>
+</string>
+	
+	<string id="st_itm_mapkit">
+		<text>Mapa s Anomáliema </text>
+	</string>
+	<string id="st_itm_mapkit_descr">
+	<text>Neoznačený dokument obsahující několik ručně psaných listů papíru, osobních fotografií a několik opotřebovaných odstavců. Nic zvláštního, kromě jedné velké tištěné mapy s některými označenými místy. Zřejmě vlastník byl lovcem artefaktů.\n \n
+	</text>
+</string>
+	<string id="st_itm_mapkit_1">
+		<text>Mapa s Anomáliema (Armádní Skladiště)</text>
+	</string>
+	<string id="st_itm_mapkit_2">
+		<text>Mapa s Anomáliema (Yantar)</text>
+	</string>
+	<string id="st_itm_mapkit_3">
+		<text>Mapa s Anomáliema (Rudý Les)</text>
+	</string>
+	<string id="st_itm_mapkit_4">
+		<text>Mapa s Anomáliema (Mrtvé Město)</text>
+	</string>
+	<string id="st_itm_mapkit_5">
+		<text>Mapa s Anomáliema (Hřbitov aut)</text>
+	</string>
+	<string id="st_itm_mapkit_6">
+		<text>Mapa s Anomáliema (Jupiter)</text>
+	</string>
+	<string id="st_itm_mapkit_7">
+		<text>Mapa s Anomáliema (Zaton)</text>
+	</string>
+	<string id="st_itm_mapkit_8">
+		<text>Mapa s Anomáliema (Smetiště)</text>
+	</string>
+	<string id="st_itm_mapkit_9">
+		<text>Mapa s Anomáliema (Agroprom)</text>
+	</string>
+	
+	
+<string id="st_ammo_box">
+	<text>Krabice nábojů</text>
+</string>
+<string id="st_ammo_box_descr">
+	<text>Každý stalker si je vědom důležitosti spolehlivé zbraně. Proto je denní a důkladná prohlídka tvého střelce pro tvé přežití zásadní. Stalkeři často počítají své náboje a čistí je, aby minimalizovali riziko zaseknutí zbraně v rozpáleném boji.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	</text>
+</string>
+<string id="st_itm_sleepbag_desc">
+	<text>Přenosný spacák navržený tak, aby uživatele udržel v teple a skrytém během noci.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	%c[d_orange] • %c[ui_gray_2] Dvojklikem umístěte na zem.\n</text>
+</string>
+<string id="st_itm_gunsmith_toolkit">
+	<text>Gunsmith Kit</text>
+</string>
+<string id="st_itm_gunsmith_toolkit_descr">
+	<text>Sada obsahující oleje a nástroje používané pro základní údržbu palných zbraní. Užitečné při průzkumu, ale také poměrně těžké.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	%c[d_orange] • %c[ui_gray_2] Přetáhněte na předmět, který chcete opravit.\n</text>
+</string>
+<string id="st_itm_outfit_toolkit">
+	<text>Šicí sada</text>
+</string>
+<string id="st_itm_outfit_toolkit_descr">
+	<text>Provizorní sada šicího vybavení a náhradních materiálů pro údržbu oblečení. Užitečné pro opravu děr a roztržek v brnění.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	%c[d_orange] • %c[ui_gray_2] Přetáhněte na předmět, který chcete opravit.\n</text>
+</string>
+<string id="st_itm_tent_desc">
+	<text>Armádní přístřešek, vyrobený tak, aby odolával drsnému počasí. Pro umístění stany ji postavte na otevřeném prostoru.\n</text>
+</string>
+<string id="st_itm_lantern_name">
+	<text>LED Lantern</text>
+</string>
+<string id="st_itm_lantern_desc">
+	<text>Hrnitý, odolný a výkonný světlomet s napájením na lithiové baterie. Při stacionárním použití by měl být umístěn na zemi.\n</text>
+</string>
+<string id="st_itm_artefact_container_name">
+	<text>Kontejner na artefakty</text>
+</string>
+</string_table>

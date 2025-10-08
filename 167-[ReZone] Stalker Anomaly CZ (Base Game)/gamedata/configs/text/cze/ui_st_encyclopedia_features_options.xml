@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+	<string id="encyclopedia_features_options">
+    <text>Funkce (Možnosti)</text>
+</string>
+
+<string id="encyclopedia_features_options_aoe_pickup_mode">
+    <text>Režim hromadného sběru (AoE)</text>
+</string>
+<string id="encyclopedia_features_options_aoe_pickup_mode_text">
+    <text>
+        %c[d_cyan]Režim hromadného sběru v oblasti účinku%c[ui_gray_2] umožňuje sebrání více předmětů najednou.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři povolení této funkce můžete jediným stiskem klávesy sebrat více předmětů a umístit je do svého inventáře, stejně jako to bylo možné ve hře Call of Pripyat.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_ai_die_in_anomaly">
+    <text>Úmrtí AI v anomáliích</text>
+</string>
+<string id="encyclopedia_features_options_ai_die_in_anomaly_text">
+    <text>
+        %c[d_cyan]Úmrtí AI v anomáliích%c[ui_gray_2] způsobuje, že stalkerové jsou zranitelní vůči anomáliím, stejně jako mutanti.\n
+        \n%c[d_red]Varování%c[ui_gray_2]\n
+        \nStalkerové se pokusí vyhýbat se anomálním oblastem, ale často selžou v detekci hranic těchto oblastí, což má za následek jejich úmrtí.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+        \nZměna této možnosti během hry vyžaduje restart hry.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_features_options_artefact_degradation">
+    <text>Degradace artefaktů</text>
+</string>
+<string id="encyclopedia_features_options_artefact_degradation_text">
+    <text>
+        %c[d_cyan]Degradace artefaktů%c[ui_gray_2] způsobuje, že schopnosti a bonusy artefaktů degradují po jejich aktivaci.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nS povolenou touto funkcí už nebudou mít nejlepší artefakty takovou nekonečnou hodnotu pro lovce artefaktů.\n
+        \nArtefakty budou postupně oslabovat s každým použitím, což podnítí jejich další lovení a shromažďování, namísto toho, aby se staly pouze rychlým zdrojem příjmů.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_day_radiation">
+    <text>Denní radiace</text>
+</string>
+<string id="encyclopedia_features_options_day_radiation_text">
+    <text>
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nBěhem dne se vzduch ozáří. Vystavení se venku vás vystaví neustálému účinku okolní radiace, což má negativní vliv na vaše zdraví.\n
+        \nBuď se musíte vyhýbat vycházení ven během dne, nebo si mít po ruce nějaké antiradiny, abyste se zbavili absorbované radiace v těle.\n \n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_debug_hud">
+    <text>Debug HUD/Mapa</text>
+</string>
+<string id="encyclopedia_features_options_debug_hud_text">
+    <text>
+        %c[d_cyan]Debug HUD%c[ui_gray_2] zobrazuje informace a umístění chytrých terénů na mapě.\n
+        \n%c[d_cyan]Debug mapa HUD%c[ui_gray_2] zobrazuje informace a umístění artefaktů a skrýší. Na mapě musíte používat klávesy jako SHIFT, ALT, CTRL.\n
+        \nTyto 2 funkce lze zapnout nebo vypnout v nabídce herních možností a jsou výchozím stavem vypnuty.
+        \nSpouštění hry v debug režimu zobrazí více informací při použití těchto možností.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_delayed_repairs">
+    <text>Odložené opravy</text>
+</string>
+<string id="encyclopedia_features_options_delayed_repairs_text">
+    <text>
+        %c[d_cyan]Odložené opravy%c[ui_gray_2] umožňují technikům udržovat vaše vybavení.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nS touto funkcí budou poškozené zbraně, oděvy a jiné předměty, které přinesete technikovi, zůstávat v jeho držení, dokud neprovede všechny opravy.\n
+        \nPo předání předmětů můžete znovu promluvit s technikem a zeptat se, zda jsou připraveny k vyzvednutí. Technik vám je buď vrátí, nebo vám řekne, kolik času je ještě potřeba.\n
+        \nTímto se přidává do tradičního systému oprav určitý realistický prvek, vhodný pro ty, kteří hledají obtížnější zážitek, protože opravy již nebudou okamžitě fungovat a bude se více zdůrazňovat použití opravárenských a šicích sad.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_features_options_dynamic_news">
+    <text>Offline simulátor boje</text>
+</string>
+<string id="encyclopedia_features_options_dynamic_news_text">
+    <text>
+        %c[d_cyan]Offline simulátor boje%c[ui_gray_2] umožňuje stalkerům/mutantům bojovat se svými nepřáteli na jiných částech Zóny.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři povolení bude simulováno boje mezi skupinami na jiných mapách do určité míry. Výsledek závisí na %c[ui_gray_3]faktorech populace%c[ui_gray_2] pro stalkerů a mutanti.
+        \nHráč může dostávat zprávy o přestřelkách od stalkerů na vzdálených místech.
+        \nPři povolené možnosti %c[ui_gray_3]Dynamické vztahy frakcí%c[ui_gray_2] budou boje mezi frakcemi hrát roli v změnách vztahů.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_extended_hud">
+    <text>Rozšířený HUD</text>
+</string>
+<string id="encyclopedia_features_options_extended_hud_text">
+    <text>
+        %c[d_cyan]Rozšířený HUD%c[ui_gray_2] umožňuje zobrazení dalších informací na obrazovce.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři povolení této funkce jsou na hlavičkovém displeji zobrazeny stručné informace o společnících a zmenšená verze pásu na artefakty.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce možností UI/HUD a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_full_alife">
+    <text>Kompletní simulace A-Life</text>
+</string>
+<string id="encyclopedia_features_options_full_alife_text">
+    <text>
+        %c[d_cyan]Kompletní simulace A-Life%c[ui_gray_2] aktivuje systém A-Life na všech mapách.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nNormálně je simulace A-Life povolena pouze na aktuální mapě hráče a na dalších mapách přímo s ní spojených.
+        \nTato funkce umožní simulaci A-Life na každém místě, i když se tam momentálně nenacházíte. To způsobí, že stalkerové a mutanti v celé Zóně se budou pohybovat, žít a jednat sami o sobě, což rozšíří dynamický zážitek ve Zóně.\n
+        \n%c[d_red]Upozornění: %c[ui_gray_2]Tato funkce zvýší zátěž na počítači. Možná budete muset snížit faktor populace, pokud narazíte na výkonnostní problémy.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.\n
+        \nPovolení/vypnutí této funkce vyžaduje restart hry.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_features_options_hardcore_ai_aim">
+    <text>Realistická míření AI</text>
+</string>
+<string id="encyclopedia_features_options_hardcore_ai_aim_text">
+    <text>
+        %c[d_cyan]Realistická míření AI%c[ui_gray_2] zvyšuje předvídatelnost zaměření umělé inteligence a snižuje dobu reakce.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři povolení této funkce se stane obtížnějším se vyhnout zásahu při strafe a sprintování, a použití krytí se stane mnohem důležitějším pro váš dlouhodobý přežití.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_harcore_campfire">
+    <text>Realistické ukládání (ohniště)</text>
+</string>
+<string id="encyclopedia_features_options_harcore_campfire_text">
+    <text>
+        %c[d_cyan]Realistické ukládání (ohniště)%c[ui_gray_2] vám umožní ukládat postup pouze na ohništích!\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nTato funkce zvyšuje hardcoreový prvek hry a zobrazuje zážitek ze survivalu.
+        \nJakmile je tato funkce povolena, nebudete moci ukládat postup z hlavního menu ani pomocí tlačítka rychlého uložení. Místo toho budete muset použít zápalky na ohništích, abyste mohli ukládat.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.\n
+        \nSkvěle funguje spolu s módem pro realistické ukládání (podmínky).
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_harcore_conditions">
+    <text>Realistické ukládání (podmínky)</text>
+</string>
+<string id="encyclopedia_features_options_harcore_conditions_text">
+    <text>
+        %c[d_cyan]Realistické ukládání (podmínky)%c[ui_gray_2] vám umožní ukládat postup, pokud jsou splněny určité podmínky.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nTato funkce zvyšuje hardcoreový prvek hry a zobrazuje zážitek ze survivalu.
+        \nJakmile je tato funkce povolena, nebudete moci ukládat postup z hlavního menu ani pomocí tlačítka rychlého uložení, pokud je splněna jedna z těchto podmínek:
+        \n%c[d_red]• %c[ui_gray_2]Máte nízké zdraví.
+        \n%c[d_red]• %c[ui_gray_2]Jste ozářeni.
+        \n%c[d_red]• %c[ui_gray_2]Krvácíte.
+        \n%c[d_red]• %c[ui_gray_2]Jste v nebezpečí (nepřátelé vás zahlédli).
+        \n%c[d_red]• %c[ui_gray_2]Probíhá emise.\n \n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnuta.\n
+        \nSkvěle funguje spolu s módem pro realistické ukládání (ohniště).
+    </text>
+</string>
+
+	
+<string id="encyclopedia_features_options_helicopter_patrols">
+    <text>Vrtulníkové hlídky</text>
+</string>
+<string id="encyclopedia_features_options_helicopter_patrols_text">
+    <text>
+        %c[d_cyan]Vrtulníkové hlídky%c[ui_gray_2] umožňují frakcím využívat vzdušnou podporu k obraně strategických oblastí.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nFrakce, které mají ve své oblasti kamarádské vrtulníky hlídkující vzduchem, budou je moci povolat pro podporu při útocích nebo obraně proti nepřátelským stalkerům (včetně vás) a mutantům.\n
+        \nNavzdory své zastrašující povaze je lze snadno sestřelit poté, co utrpí lehkou závadu na ocasním rotoru.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem povolená.\n
+        \n%c[d_green]Lokace%c[ui_gray_2]\n
+        \n• Agroprom\n• Kordon\n• Darkscape\n• Velké bažiny\n• Limansk
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_lootmoney">
+    <text>Získávání peněz z mrtvol</text>
+</string>
+<string id="encyclopedia_features_options_lootmoney_text">
+    <text>
+        %c[d_cyan]Získávání peněz%c[ui_gray_2] vám umožňuje nalézt peníze v kapsách těch, kteří zemřeli.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nMnožství peněz, které najdete, závisí na hodnosti mrtvého stalkera. Čím vyšší je hodnost, tím více peněz je možné najít.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce možností hry a je výchozím stavem vypnutá.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_online_exclusion">
+    <text>Online vyloučení</text>
+</string>
+<string id="encyclopedia_features_options_online_exclusion_text">
+    <text>
+        %c[d_cyan]Online vyloučení%c[ui_gray_2] vytváří zónu bez spawnu okolo vašeho postavy.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři prozkoumávání okrajů úrovní a jejich vstupních/výstupních bodů vás mohou napadnout nepřátelé přicházející z jiných úrovní. S povoleným online vyloučením jsou tyto spawnování oddálená, dokud se nebudete nacházet v bezpečné vzdálenosti.\n
+        \nJe třeba poznamenat, že tento systém se točí pouze kolem vás; nepřátelé již na místě, když měníte úrovně, nebudou odstraněni při vašem příchodu.\n
+        \nTuto funkci lze nastavit v nabídce herních možností a výchozí hodnota je 75.
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_features_options_population_factors">
+    <text>Faktory populace</text>
+</string>
+<string id="encyclopedia_features_options_population_factors_text">
+    <text>
+        %c[d_cyan]Faktory populace%c[ui_gray_2] upravují počet stalkerů a mutantů nalezených v Zóně.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nFaktory populace stalkerů a mutantů lze upravovat nezávisle na sobě, což vám umožní rozhodnout, jak divoká nebo usídlená by měla být Zóna, aniž byste museli upravovat jakékoliv soubory hry.\n
+        \nJe třeba poznamenat, že účinek je největší při začátku nové postavy, protože pokud jsou faktory změněny během probíhající hry, projeví se pouze jako stalkerové a/nebo mutanti zemřou a pak se znovu objeví větším nebo menším počtem.\n
+        \nTyto funkce lze upravit v nabídce herních možností.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_portrait_by_outfit">
+    <text>Portrét podle oblečení</text>
+</string>
+<string id="encyclopedia_features_options_portrait_by_outfit_text">
+    <text>
+        %c[d_cyan]Portrét podle oblečení%c[ui_gray_2] mění váš portrét na základě vašeho aktuálního oblečení.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nPři povolení této funkce bude váš portrét po každém oblékání nebo svlékání oblečení (neplatí pro hlavové pokrývky) aktualizován tak, aby odpovídal vzhledu postavy, což napodobuje, jak se portréty AI shodují s tím, jak vypadají.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce možností hry a je výchozím stavem vypnutá.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_radio_music">
+    <text>Radio</text>
+</string>
+<string id="encyclopedia_features_options_radio_music_text">
+    <text>
+        %c[d_cyan]Radio%c[ui_gray_2] umožňuje přehrávání vlastních hudebních skladeb na určitých místech.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nUrčitá uvolněná místa v Zóně mají poblíž nainstalovaná rádia, která hrají výběr hudebních skladeb, aby zábavili stalkerů.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem povolená.\n
+        \n%c[d_green]Lokace%c[ui_gray_2]\n
+        \n• Agroprom - Armádní základna\n• Kordon - Bunkr Sidoroviče\n• Velké bažiny - Základna Jasné oblohy\n• Temné udolí - Banditská základna\n• Rostok - 100 Rads\n• Rudý les - Věž Lesníka
+    </text>
+</string>
+
+	
+	<string id="encyclopedia_features_options_thirst">
+    <text>Simulace žízně</text>
+</string>
+<string id="encyclopedia_features_options_thirst_text">
+    <text>
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nJak název napovídá: tato volba hardcore režimu simuluje žízeň. Neustále nutí hráče hledat zdroje vody a přidává další vrstvu obtížnosti kromě ostatních potřeb.
+        \nNa obrazovce HUD se zobrazí ukazatel žízně, který určuje úroveň žízně. Čím větší žízeň máte, tím horší budou vaše zdraví a vytrvalost, až dosáhnete bodu smrti.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem povolena.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_sleep_deprivation">
+    <text>Deprivace spánku</text>
+</string>
+<string id="encyclopedia_features_options_sleep_deprivation_text">
+    <text>
+        %c[d_cyan]Deprivace spánku%c[ui_gray_2] umožňuje, aby čas a používání spotřebního materiálu vyčerpávalo postavu.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nV celé Zóně najdete mnoho postelí a spacích pytlů, které obvykle slouží k přeskočení času spánkem. S povolenou touto funkcí se stávají nezbytnou součástí hry.\n
+        \nJak čas ubíhá, bude se vaše postava postupně cítit unavená, obrazovka začne rozmazávat a třást se. Tyto účinky budou postupně horší, dokud nenajdete vhodné místo k odpočinku, nebo vás účinky deprivace spánku nepřimějí ke zhroucení vyčerpáním.\n
+        \nÚnavu lze zrychlit spotřebou položek, jako jsou léčebné sady a vodka, a zrušit pitím například energetických nápojů s vysokým obsahem kofeinu - ale přílišné užívání vás bude znemožňovat odpočinek, dokud účinky neskončí.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem vypnutá.
+    </text>
+</string>
+
+<string id="encyclopedia_features_options_use_battery">
+    <text>Používání baterií</text>
+</string>
+<string id="encyclopedia_features_options_use_battery_text">
+    <text>
+        %c[d_cyan]Používání baterií%c[ui_gray_2] vyžaduje, abyste používali baterie k udržení funkčnosti svých zařízení.\n
+        \n%c[d_green]Informace%c[ui_gray_2]\n
+        \nElektrická zařízení, jako jsou detektory a svítilny, získávají potřebné elektrické napětí a energii z univerzálního zdroje energie (UPD), aby správně fungovaly. Z tohoto důvodu je UPD konstantně spotřebováván.
+        \nAbychom udrželi funkčnost UPD, měli bychom jej dobíjet pomocí baterií předtím, než se zcela vyčerpá veškerá jeho energie.
+        \nJe důležité mít nějaké baterie u sebe, můžete si je buď koupit nebo najít někde kolem.\n
+        \nTuto funkci lze zapnout nebo vypnout v nabídce herních možností a je výchozím stavem povolena.
+    </text>
+</string>
+
+	
+</string_table>

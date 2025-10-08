@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--
+	Basic items (Some are not used anymore)
+-->
+
+<string_table>
+
+	<string id="st_itm_campfire">
+		<text>Ohniště</text>
+	</string>
+	<string id="st_itm_campfire_descr">
+	<text>Táborové ohně nejsou předměty, které můžete nosit s sebou, neměli jste to sakra vidět!\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[0,100,255,255] - %c[ui_gray_2] stalkerovo oblíbené místo\n
+		%c[0,100,255,255] - %c[ui_gray_2] užitečné pro vaření\n
+		%c[0,100,255,255] - %c[ui_gray_2] čas na příběh\n
+		%c[0,100,255,255] - %c[ui_gray_2] lze použít s kytarou a vodkou\n
+	</text>
+</string>
+
+<string id="st_poxod_rukzak">
+	<text>Anomální batoh</text>
+</string>
+<string id="st_poxod_rukzak_descr">
+	<text>Na první pohled se zdá, že tento batoh nemá žádné výjimečné vlastnosti. Předměty v něm umístěné však časem ztratí svou hmotnost. Proslýcha se, že je výsledkem zásilky batohu pro armádu, která se omylem dostala do anomálie. Pokusy vědců o obnovení jeho jedinečných vlastností selhaly. Dávky anomálních batohů byly zakoupeny vlivnými lidmi v Zóně, kteří je dále vyváželi do celého světa.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] unikátní předmět\n
+	</text>
+</string>
+
+<string id="st_bolt">
+	<text>Šroub</text>
+</string>
+<string id="st_bolt_descr">
+	<text>Obyčejný rezavý šroub, často používaný nováčky i zkušenými stalkery k detekování bezpečných cest mezi anomáliemi.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[ui_gray_2] - %c[ui_gray_2] každodenní předmět\n
+		%c[ui_gray_2] - %c[ui_gray_2] neomezené zásobování\n
+	</text>
+</string>
+
+<string id="st_bolty">
+	<text>Šrouby</text>
+</string>
+<string id="st_bolty_descr">
+	<text>Obyčejný rezavý šroub, často používaný nováčky i zkušenými stalkery k detekování bezpečných cest mezi anomáliemi.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[ui_gray_2] - %c[ui_gray_2] každodenní předmět\n
+	</text>
+</string>
+
+<string id="st_bolt_bullet">
+	<text>Prázdná nábojnice</text>
+</string>
+<string id="st_bolt_bullet_descr">
+	<text>Někdy stalker[y] využívaji všechny prázdné náboje, které mají, jako alternativu k šroubům, aby si vybudovali bezpečné cesty mezi anomáliemi.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[ui_gray_2] - %c[ui_gray_2] každodenní předmět\n
+	</text>
+</string>
+
+<string id="st_identity_card">
+	<text>Osobní průkaz totožnosti USS</text>
+</string>
+<string id="st_identity_card_descr">
+	<text>Toto je váš osobní průkaz totožnosti, který odhaluje vaši skutečnou identitu. Mějte jej skrytý. Jako útočník USS se specializujete na útočné pušky a těžké zbraně. Jste také specializován na ovládání zpětného rázu zbraní. Pomalá rychlost sprintu.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] osobní věci\n
+	</text>
+</string>
+
+<string id="st_identity_card_assaulter_descr">
+    <text>Jako útočník USS máš jedinečné silné a slabé stránky.\n\n
+    %c[d_cyan]VYBAVENÍ\n
+    %c[vychozí]Obratnost těžkého pancíře: %c[d_red_1]A+\n
+    %c[d_blue] - %c[default]Obratnost při uzavřeném dýchání: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Manipulace s artefakty: %c[d_red_1]C\n\n
+    %c[d_cyan]ZBRANĚ\n
+    %c[d_blue] - %c[default]Boj s nožem: %c[d_red_1]A+\n
+    %c[d_blue] - %c[default]Specialita na manipulaci: %c[d_red_1]Vysoký zpětný ráz\n
+    %c[d_blue] - %c[default]Udržbářská specializace: %c[d_red_1]Těžké zbraně\n\n
+    %c[d_cyan]MEDICÍNA\n
+    %c[d_blue] - %c[default]Obvazy/medikamenty zručnost: %c[d_red_1]B\n
+    %c[d_blue] - %c[vychozí]Dovednosti lékaře: %c[d_red_1]C\n
+    %c[d_blue] - %c[vychozí]Dovednosti zacházení s léky: %c[d_red_1]C\n\n
+    %c[d_cyan]ATLETIKA\n
+    %c[d_blue] - %c[default]Výdrž: %c[ui_gray_1] %c[d_red_1]velmi vysoká\n
+    %c[d_blue] - %c[default]Rychlost sprintu: %c[d_red_1]pomalá\n
+    %c[d_blue] - %c[default]Výška skoku: %c[d_red_1]low\n
+    %c[d_blue] - %c[default]Obratnost pádu/skocení: %c[d_red_1]low\n
+    %c[d_blue] - %c[default]Základní výdrž: %c[d_red_1]low\n
+    %c[d_blue] - %c[default]Maximální nosnost: %c[ui_gray_1] %c[d_red_1]high\n\n
+    %c[d_cyan]ZDRAVOTNÍ PROFIL\n
+    %c[d_blue] - %c[default]Míra spotřeby jídla: %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Potřeba spánku: %c[d_red_1]high\n\n
+    %c[d_cyan]Odolnost imunitního systému\n
+    %c[d_blue] - %c[default]Drogy/alkohol: %c[d_red_1]A+\n
+    %c[d_blue] - %c[default]Nezdravé potraviny: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Artefakty: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Radiace: %c[ui_gray_1] %c[d_red_1]C\n
+    </text>
+</string>
+<string id="st_identity_card_recon_descr">
+    <text>Jako průzkumník USS máš jedinečné silné a slabé stránky.\n\n
+    %c[d_cyan]VYBAVENÍ\n
+    %c[vychozí]Obratnost těžkého pancíře: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Obratnost při uzavřeném dýchání: %c[d_red_1]A+\n
+    %c[d_blue] - %c[default]Manipulace s artefakty: %c[d_red_1]A+\n\n
+    %c[d_cyan]ZBRANĚ\n
+    %c[d_blue] - %c[default]Boj s nožem: %c[d_red_1]A\n
+    %c[d_blue] - %c[default]Specialita na manipulaci: %c[d_red_1]SMG's\n
+    %c[d_blue] - %c[default]Udržbářská specializace: %c[d_red_1]SMG's\n\n
+    %c[d_cyan]MEDICÍNA\n
+    %c[d_blue] - %c[default]Obvazy/medikamenty: %c[d_red_1]A+\n
+    %c[d_blue] - %c[default]Dovednosti lékaře: %c[d_red_1]A\n
+    %c[d_blue] - %c[default]Dovednosti zacházení s léky: %c[d_red_1]A\n\n
+    %c[d_cyan]ATLETIKA\n
+    %c[d_blue] - %c[default]Výdrž: %c[ui_gray_1] %c[d_red_1]low\n
+    %c[d_blue] - %c[default]Rychlost sprintu: %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Výška skoku: %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Obratnost pádu/skoku: %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Základní výdrž: %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Maximální nosnost: %c[ui_gray_1] %c[d_red_1]low\n\n
+    %c[d_cyan]ZDRAVOTNÍ PROFIL\n
+    %c[d_blue] - %c[default]Míra spotřeby jídla: %c[d_red_1]slow\n
+    %c[d_blue] - %c[default]Potřeba spánku: %c[d_red_1]medium\n\n
+    %c[d_cyan]Odolnost imunitního systému\n
+    %c[d_blue] - %c[default]Drogy/alkohol: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Nezdravé potraviny: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Artefakty: %c[d_red_1]A\n
+    %c[d_blue] - %c[default]Radiace: %c[ui_gray_1] %c[d_red_1]A\n
+    </text>
+</string>
+
+<string id="st_identity_card_sniper_descr">
+    <text>Jako odstřelovač USS máš velmi dobře vyvážené atributy.\n\n
+    %c[d_cyan]VYBAVENÍ\n
+    %c[vychozí]Obratnost těžkého brnění: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Obratnost při uzavřeném dýchání: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Manipulace s artefakty: %c[d_red_1]B\n\n
+    %c[d_cyan]ZBRANĚ\n
+    %c[d_blue] - %c[default]Boj s nožem: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Specialita na manipulaci: %c[d_red_1]odstřelovací pušky\n
+    %c[d_blue] - %c[default]Udržbářská specializace: %c[d_red_1]odstřelovací pušky \n\n
+    %c[d_cyan]MEDICÍNA\n
+    %c[d_blue] - %c[default]Obvazy/medikamenty zručnost: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Dovednosti lékaře: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Dovednosti v zacházení s léky: %c[d_red_1]B+\n\n
+    %c[d_cyan]ATLETIKA\n
+    %c[d_blue] - %c[default]Výdrž: %c[ui_gray_1] %c[d_red_1]medium\n
+    %c[d_blue] - %c[default]Rychlost sprintu: %c[d_red_1]medium\n
+    %c[d_blue] - %c[default]Výška skoku: %c[d_red_1]medium\n
+    %c[d_blue] - %c[default]Obratnost při pádu/skoku: %c[d_red_1]medium\n
+    %c[d_blue] - %c[default]Výdrž při běhu: 
+    %c[d_red_1]high\n
+    %c[d_blue] - %c[default]Výdrž při sprintu: 
+    %c[d_red_1]střední\n
+    %c[d_blue] - %c[default]Maximální nosnost: %c[ui_gray_1] %c[d_red_1]střední\n\n
+    %c[d_cyan]ZDRAVOTNÍ PROFIL\n
+    %c[d_blue] - %c[default]Míra spotřeby jídla: %c[d_red_1]střední\n
+    %c[d_blue] - %c[default]Potřeba spánku: %c[d_red_1]střední\n\n
+    %c[d_cyan]Odolnost imunitního systému\n
+    %c[d_blue] - %c[default]Drogy/alkohol: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Nezdravé potraviny: %c[d_red_1]C\n
+    %c[d_blue] - %c[default]Artefakty: %c[d_red_1]B\n
+    %c[d_blue] - %c[default]Radiace: %c[ui_gray_1] %c[d_red_1]B\n
+    </text>
+</string>
+	
+<string id="st_energy">
+	<text>žádná</text>
+</string>
+<string id="st_energy_descr">
+	<text>Uložená energie se udává v ampérhodinách (Ah).</text>
+</string>
+
+<string id="green_bug_name">
+	<text>Zelený brouk</text>
+</string>
+<string id="green_bug_description">
+	<text>Zelený brouk je nerozlučným společníkem každého stalkera. Není člověka v Zóně, který by se s ním na své cestě nikdy nesetkal. Pokud ho spatří jen jednou nebo dvakrát za život, měl by to považovat za štěstí. Vaše nálada klesá přímo úměrně každému dalšímu setkání se zeleným broukem... \n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výrazně zvyšuje šanci na pád hry\n
+	%c[d_blue] - %c[ui_gray_2] nelze zahodit\n
+	%c[d_blue] - %c[ui_gray_2] nelze prodat\n
+	</text>
+</string>
+
+<string id="sleep_itm_warning_blowout">
+	<text>Není bezpečné spát!</text>
+</string>
+	
+</string_table>

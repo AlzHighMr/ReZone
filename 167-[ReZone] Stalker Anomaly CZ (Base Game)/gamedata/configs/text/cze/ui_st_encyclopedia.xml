@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<!-- PDA -->
+	<string id="pda_btn_encyclopedia">
+		<text>Průvodce</text>
+	</string>
+	
+	<string id="pda_btn_encyclopedia_hint">
+		<text>Ukaž uživatelskou přiručku</text>
+	</string>
+	
+	<!-- Interface components -->
+	
+<string id="pda_encyclopedia_title">
+	<text>Průvodce Zónou</text>
+</string>
+<string id="st_pda_encyclopedia_image_checkbox">
+	<text>Obrázky nahoře</text>
+</string>
+<string id="st_pda_encyclopedia_message_checkbox">
+	<text>Zobrazit zprávy</text>
+</string>
+<!-- Zprávy -->
+<string id="pda_encyclopedia_notify">
+	<text>Odemčen článek: %s, %s</text>
+</string>
+<string id="pda_encyclopedia_notify_note">
+	<text>Nová poznámka: %s</text>
+</string>
+<!-- Různé -->
+<string id="pda_encyclopedia_info">
+	<text>Informace</text>
+</string>
+<string id="pda_encyclopedia_properties">
+	<text>Vlastnosti</text>
+</string>
+<string id="pda_encyclopedia_subject">
+	<text>Předmět</text>
+</string>
+<string id="pda_encyclopedia_content">
+	<text>Obsah</text>
+</string>
+<string id="pda_encyclopedia_ironman_lifes">
+	<text>Přidělené životy</text>
+</string>
+<string id="pda_encyclopedia_ironman_life">
+	<text>Zbývající životy</text>
+</string>
+<string id="pda_encyclopedia_ironman_deaths">
+	<text>Počet smrtí</text>
+</string>
+<string id="pda_encyclopedia_ironman_cycle">
+	<text>Časový cyklus přidělování životů (v hodinách)</text>
+</string>
+<string id="pda_encyclopedia_ironman_1">
+	<text>Jedna chyba a je to konec...</text>
+</string>
+<string id="pda_encyclopedia_ironman_2">
+	<text>Musím být opatrnější!</text>
+</string>
+<string id="pda_encyclopedia_ironman_3">
+	<text>Jsem zatím v bezpečí.</text>
+</string>
+<!-- Uzamčené články -->
+<string id="pda_encyclopedia_locked">
+	<text>Zamčené</text>
+</string>
+<string id="pda_encyclopedia_locked_text">
+	<text>
+		Tento článek zatím nemáš odemčený.\n
+		\nČlánky můžeš odemknout různými způsoby, například:\n
+		\n• Objevováním lokalit poprvé.
+		\n• Stahováním dat z paměťových karet.
+		\n• Lovením mutantů pro jejich části a maso a kůže.
+		\n• Hovorem a interakcí se stalkery.
+		\n• Používáním předmětů a vybavením oděvů frakce.
+	</text>
+</string>
+	
+</string_table>

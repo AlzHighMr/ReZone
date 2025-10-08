@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>	
+	<string id="st_auto_looter_no_valid_tool">
+		<text>Pro tuto položku nemáš platný demontážní nástroj nebo je nástroj téměř rozbitý. Automatická demontáž se nespustí.</text>
+	</string>
+	<string id="st_auto_looter_still_running">
+		<text>Auto sběr je stále spuštěn pro tento objekt</text>
+	</string>
+	<string id="st_auto_looter_remote_looting_disabled">
+		<text>Vzdálené prohledávání zakázáno</text>
+	</string>
+	<string id="st_auto_looter_remote_looting_too_far">
+		<text>Cíl je moc daleko pro prohledávaní</text>
+	</string>
+	<string id="st_auto_looter_parts_not_stripped">
+		<text>Součásti zbraně nemohly být automaticky odebrány (vytvoření součásti bylo zpožděno jiným skriptem). Znovu spusť autosběrač, aby ses znovu pokusil o demontáž.</text>
+	</string>
+
+	<!-- Context menu on items -->
+	<string id="st_auto_looter_enable_auto_disassemble">
+		<text>Povolit auto-demontáž</text>
+	</string>
+	<string id="st_auto_looter_disable_auto_disassemble">
+		<text>Zakázat auto-demontáž</text>
+	</string>
+
+	<string id="st_auto_looter_enable_auto_loot">
+		<text>Povolit auto-sbíraní</text>
+	</string>
+	<string id="st_auto_looter_disable_auto_loot">
+		<text>Zakázat auto-sbíraní</text>
+	</string>
+</string_table>

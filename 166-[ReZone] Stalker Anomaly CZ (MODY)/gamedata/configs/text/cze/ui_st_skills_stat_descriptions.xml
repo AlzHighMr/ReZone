@@ -1,0 +1,83 @@
+<string_table>
+
+
+    <string id="st_player_skill_stats">
+        <text>\nSTATISTIKY:</text>
+    </string>
+
+    <!-- Scavenging -->
+<string id="st_player_skills_hint_scavenging">
+	<text>Dovednost nabízí zvýšené množství vìcí z tìl stalkerù.\n \nZkušenosti jsou získávány skrze vybírání mrtvol, vyšší úrovnì stalkerù poskytují více zkušeností. \n \n</text>
+</string>
+<string id="st_skills_stats_scavenging_skill_positive">
+	<text>\n%c[255,86,102,255]•%c[ui_6] Šance na získání extra výbavy: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_scavenging_skill_negative">
+	<text>\n%c[255,86,102,255]•%c[ui_6] Ztracíš šanci pro dobrou výbavu: %c[d_red]$stat%</text>
+</string>
+
+
+
+
+
+<!-- Síla -->
+<string id="st_player_skills_hint_strength">
+	<text>Nabízí zvýšenou nosnost a poškození v soubojích zblízka.\n \nÚrovnì jsou získávány pøi cestování s tìžkým bøemenem a soubojích zblízka. \n \n</text>
+</string>
+<string id="st_skills_stats_weight_modifer_positive">
+	<text>\n%c[255,255,201,86]•%c[ui_6] Úprava nosnosti: %c[d_green]x$stat</text>
+</string>
+<string id="st_skills_stats_weight_modifer_negative">
+	<text>\n%c[255,255,201,86]•%c[ui_6] Úprava nosnosti: %c[d_red]x$stat</text>
+</string>
+<string id="st_skills_stats_melee_damage_positive">
+	<text>\n%c[255,255,201,86]•%c[ui_6] Úprava poškození v soubojích zblízka: %c[d_green]x$stat</text>
+</string>
+<string id="st_skills_stats_melee_damage_negative">
+	<text>\n%c[255,255,201,86]•%c[ui_6] Úprava poškození v soubojích zblízka: %c[d_red]x$stat</text>
+</string>
+<string id="st_skills_stats_base_weight">
+	<text>\n%c[255,255,201,86]•%c[ui_6] Bonus pro nosnost: %c[d_green]+$stat kg</text>
+</string>
+
+
+
+
+<!-- Pøežití -->
+<string id="st_player_skills_hint_survival">
+	<text>Nabízí zvýšenou odolnost proti poškození a šanci na získání dalších èástí mutantù pøi jejich zpracování.\n \nÚrovnì jsou získávány tím, že utrpíš poškození (pouze od støel a mutantù) a zpracováváním mutantù, nebezpeènìjší mutanty poskytují více zkušeností. \n \n</text>
+</string>
+<string id="st_skills_stats_resistance_positive">
+	<text>\n%c[255,135,255,86]•%c[ui_6] Zvýšené snižení poškození o: %c[d_green]x$stat</text>
+</string>
+<string id="st_skills_stats_resistance_negative">
+	<text>\n%c[255,135,255,86]•%c[ui_6] Zvýšené pøijímání poškození o: %c[d_red]x$stat</text>
+</string>
+<string id="st_skills_stats_bleed_restore">
+	<text>\n%c[255,135,255,86]•%c[ui_6] Zvýšená redukce krvácení o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_hunting_skill_positive">
+	<text>\n%c[255,135,255,86]•%c[ui_6] Šance na získání další èásti mutantù navíc : %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_hunting_skill_negative">
+	<text>\n%c[255,135,255,86]•%c[ui_6] Šance na ztrátu èásti mutantù navíc : %c[d_red]$stat%</text>
+</string>
+
+<!-- Výdrž -->
+<string id="st_player_skills_hint_endurance">
+	<text>Nabízí zvýšenou vytrvalost a rychlost.\n \nÚrovnì jsou získávány pøi cestování s lehkým batohem. \n \n</text>
+</string>
+<string id="st_skills_stats_power_loss_positive">
+	<text>\n%c[255,255,86,86]•%c[ui_6] Modifikátor spotøeby vytrvalosti: %c[d_green]x$stat</text>
+</string>
+<string id="st_skills_stats_power_loss_negative">
+	<text>\n%c[255,255,86,86]•%c[ui_6] Modifikátor spotøeby vytrvalosti: %c[d_red]x$stat</text>
+</string>
+<string id="st_skills_stats_speed_modifier_positive">
+	<text>\n%c[255,255,86,86]•%c[ui_6] Modifikátor rychlosti: %c[d_green]x$stat</text>
+</string>
+<string id="st_skills_stats_speed_modifier_negative">
+	<text>\n%c[255,255,86,86]•%c[ui_6] Modifikátor rychlosti: %c[d_red]x$stat</text>
+</string>
+
+</string_table>

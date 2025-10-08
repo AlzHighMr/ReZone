@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+<!-- Trading / Repair dialog -->
+<string id="st_stalker_trade_dialog_init">
+	<text>Co máš na prodej? %c[d_orange][Obchod]</text>
+</string>
+<string id="st_stalker_trade_dialog_reply_1">
+	<text>Nesmíš očekávat nic extra. Tady mám, co mám.</text>
+</string>
+<string id="st_stalker_trade_dialog_reply_2">
+	<text>Fajn.</text>
+</string>
+<string id="st_stalker_trade_dialog_reply_3">
+	<text>Ehm... jasně.</text>
+</string>
+<string id="st_stalker_trade_dialog_reply_no_1">
+	<text>Vlastně ne. Najdi si někoho jiného.</text>
+</string>
+<string id="st_stalker_trade_dialog_reply_no_2">
+	<text>Omlouvám se, raději si to nechám.</text>
+</string>
+<string id="st_trader_dialog_init">
+	<text>Chci si koupit nějaké vybavení. %c[d_orange][Obchod]</text>
+</string>
+<string id="st_trader_dialog_reply_1">
+	<text>Jasně, tady.</text>
+</string>
+
+<string id="st_trader_dialog_reply_2">
+	<text>Podívej se.</text>
+</string>
+<string id="st_trader_dialog_reply_3">
+	<text>Tady je, co mám.</text>
+</string>
+<string id="st_mechanic_dialog_init">
+	<text>Mé vybavení potřebuje trochu vylepšit. %c[d_orange][Opravy/Upgrade]</text>
+</string>
+<string id="st_mechanic_dialog_reply_1">
+	<text>Rozumím, ukáž mi to vybavení... A taky peníze.</text>
+</string>
+<string id="st_mechanic_dialog_reply_2">
+	<text>Další šrot na opravu? Fajn.</text>
+</string>
+<string id="st_mechanic_dialog_reply_3">
+	<text>Skvěle, další práce.</text>
+</string>
+<string id="st_medic_dialog_init">
+	<text>Chci si koupit lékařské potřeby. %c[d_orange][Obchod]</text>
+</string>
+<string id="st_medic_dialog_reply_1">
+	<text>Mám jich málo, ale tady je, co mám.</text>
+</string>
+<string id="st_medic_dialog_reply_2">
+	<text>Zatraceně, brzy mi tohle dojde... Ale tady.</text>
+</string>
+<string id="st_medic_dialog_reply_3">
+	<text>Dobře, neplýtvej s tím zbožím.</text>
+</string>
+<string id="st_bartender_dialog_init">
+	<text>Máš něco na prodej? %c[d_orange][Obchod]</text>
+</string>
+<string id="st_bartender_dialog_reply_1">
+	<text>Jídlo, pití, cigaro... co chceš?</text>
+</string>
+<string id="st_bartender_dialog_reply_2">
+	<text>Hladový? Mám tu přesně to pravé...</text>
+</string>
+<string id="st_bartender_dialog_reply_3">
+<text>Co si dáš k pití dnes? Pivko nebo vodku?</text>
+</string>
+
+<!-- Selling important documents -->
+
+<string id="st_trade_important_documents_0">
+	<text>Našel jsem staré dokumenty, zajímá tě to?</text>
+</string>
+<string id="st_trade_important_documents_1">
+	<text>Jasně! Podívejme se, co tam máš.</text>
+</string>
+<string id="st_trade_important_documents_2">
+	<text>Tady, podívej se.</text>
+</string>
+<string id="st_trade_important_documents_4">
+	<text>Platí.</text>
+</string>
+<string id="st_trade_important_documents_5">
+	<text>Myslím, že si je prozatím ponechám...</text>
+</string>
+<string id="st_trade_important_documents_7">
+	<text>Dobře tedy.</text>
+</string>
+<string id="st_trade_important_documents_ask_esc_m_trader">
+	<text>Nebudu se ptát, odkud jsi je získal. Takové dokumenty jsou mimořádné. Téměř každý z nich bude mít prospěch... včetně mě. Jsem připraven je hned teď koupit za %s RU a navíc ti nabídnu něco pěkného z mého skladu. Co říkáš?</text>
+</string>
+<string id="st_trade_important_documents_answer_esc_m_trader">
+	<text>Skvěle! Pokud najdeš něco podobného, přines mi to ihned. Ujistím se, že dostaneš něco pěkného na oplátku... Hehe.</text>
+</string>
+<string id="st_trade_important_documents_ask_bar_visitors_barman_stalker_trader">
+	<text>Co děláš... Dobře, poslouchej. Tyhle dokumenty mají skutečnou hodnotu, obsahují informace o experimentech spojených se Zónou. Na tvém místě bych si dal pozor, abych je nedal do nesprávných rukou. Takže tady je nabídka, %s RU je dobrá cena za takové dokumenty. Postarám se také o další věci. Za další dokumenty ti připravím více peněz. Co říkáš?</text>
+</string>
+<string id="st_trade_important_documents_answer_bar_visitors_barman_stalker_trader">
+	<text>Skvěle! Víš, kde mě najdeš, až získáš víc těchto dokumentů.</text>
+</string>
+	
+
+<string id="st_trade_important_documents_ask_zat_b7_bandit_boss_sultan">
+	<text>Podívej se na tebe, malý statečný hrdino, který se s tím najednou setkal. Dnes budu hodný a přehlednu tyto detaily. Znám lidi, kteří by zabili za takové dokumenty, něco, co bylo skryto dlouhá prkna let, víš. %s RU a doporučuji ti pečlivě přemýšlet.</text>
+</string>
+<string id="st_trade_important_documents_answer_zat_b7_bandit_boss_sultan">
+	<text>Dobrá práce, kloučku. Příště, až "najdeš" něco takového, nezapomeň mi udělat návštěvu.</text>
+</string>
+<string id="st_trade_important_documents_ask_mar_smart_terrain_base_stalker_leader_marsh">
+	<text>Předpokládám, že tyto dokumenty obsahují cenné informace pro naší skupinu. Bohužel nám to momentálně nejde dobře, teprve jsme se postavili na vlastní nohy. Můžu ti nabídnout pouze %s RU, odpusť mi to.</text>
+</string>
+<string id="st_trade_important_documents_answer_mar_smart_terrain_base_stalker_leader_marsh">
+	<text>Děkuji! Chápu, že to, co jsem ti právě dal, není dostatečná odměna za tak cenné informace. Promluvím s naším obchodníkem Dispute. Možná ti příště, až přineseš více dokumentů, ušetří nějaké dodatečné vybavení. Až se naše situace zlepší, mohu za takové informace zaplatit mnohem víc, slibuji!</text>
+</string>
+<string id="st_trade_important_documents_ask_bar_dolg_leader">
+	<text>Zajímavé... Pojďme postupovat následovně... Správná cena by byla %s RU. Nemluvě o tom, že "Povinnost" se v poslední době nepředvádí v nejlepším světle. Díky těmto dokumentům budeme schopni zařídit dodávky potřebného vybavení. Myslím si, že i ty z toho něco získáš. Souhlasíš?</text>
+</string>
+<string id="st_trade_important_documents_answer_bar_dolg_leader">
+	<text>Dnes začnu jednání s armádou, věřím, že to nebude trvat příliš dlouho, abychom viděli nějaké výsledky. Příště, když nám přineseš podobné dokumenty, vyberu pro tebe důstojnější odměnu. Prozatím vezmi tohle jako projev vděčnosti od "Dolu"!</text>
+</string>
+<string id="st_trade_important_documents_ask_agr_smart_terrain_1_6_near_2_military_colonel_kovalski">
+	<text>Zajímavé... Velmi zajímavé. Přehlednu fakt, že jsi náhle našel takové dokumenty sám. Každopádně mám lepší nápad, spíše obchodní nabídku. Takže mi tyto dokumenty předáš a zapomeneš, že jsi je kdy viděl. Pokud najdeš více, přines je sem, přímo mně, bez jakýchkoli prostředníků, rozumíš? Já na svou část mohu zaplatit hotovosti. %s RU za každý dokument. Jsme domluveni?</text>
+</string>
+<string id="st_trade_important_documents_answer_agr_smart_terrain_1_6_near_2_military_colonel_kovalski">
+	<text>Takže jsme se domluvili. Prozatím tady je nějaký peníz z mé kapsy, abych tě nezarmoutil vůbec.</text>
+</string>
+
+<string id="st_trade_important_documents_ask_cit_killers_merc_trader_stalker">
+<text>Skutečně zábavné... Dokumenty o experimentech na území Zóny... V dobách průlomu někteří z našich důležitých klientů nabízeli za ně fantastické částky. Dnes jsou časy jiné a není, že bychom je zvlášť potřebovali v této chudé době, ale informace zde stále mají dostatečnou hodnotu, hmmm... Udělejme to. Vezmu je teď za %s RU. Deal?</text>
+</string>
+<string id="st_trade_important_documents_answer_cit_killers_merc_trader_stalker">
+<text>To je v pořádku. Pokud najdeš podobné dokumenty, měl bys je přinést, nebuď ostychlý.</text>
+</string>
+<string id="st_trade_important_documents_ask_yan_stalker_sakharov">
+<text>Skutečně zajímavý materiál! Tyto dokumenty nejsou naším hlavním zaměřením, ale jejich obsah může osvětlit mnoho našich studií. Navíc nemám pochyb, že naši sponzoři budou mít o ně velký zájem, což se pozitivně projeví na našem financování. Chceš s námi uzavřít zvláštní dohodu? Za dokumenty jako tyto od nás můžeš dostat finanční odměnu. Mohu zařídit %s RU za dokumenty, které jsi mi právě dal.</text>
+</string>
+<string id="st_trade_important_documents_answer_yan_stalker_sakharov">
+<text>Děkuji! Jsem velmi spokojen s naší novou spoluprací.</text>
+</string>
+<string id="st_trade_important_documents_ask_mil_smart_terrain_7_7_freedom_leader_stalker">
+	<text>Ha, odkud jsi tyhle papíry dostal? Víš, že tyhle informace mohou obrátit svět vzhůru nohama! Určitě je nebudu skrývat. Pokud se v minulosti odehrály nějaké nelegální experimenty, lidé musí znát pravdu. A "tohle" v tvých rukou je jen začátek. Můžu ti nabídnout %s RU. A než odmítneš, měl bys to takhle přemýšlet: Dnes děláš dobrou práci a zítra se ti to vrátí v trojnásobném rozsahu.</text>
+</string>
+<string id="st_trade_important_documents_answer_mil_smart_terrain_7_7_freedom_leader_stalker">
+	<text>Skvěle! Pokud najdeš ještě něco, co by nám mohlo pomoci, budu velmi vděčný.</text>
+</string>
+	
+	
+<!-- Swap items with Companions -->
+<string id="st_companion_inv_show_gui">
+<text>Potřebuji se podívat na věci, které neseš.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items">
+<text>Potřebuji, abys mi nesl moje věci.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_dummy">
+<text>Potřebuji, abys mi nesl moje věci.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_response_accept_1">
+<text>Jistě, řekni mi, kdy chceš své věci zpět.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_response_accept_2">
+<text>Ty mi necháváš nosit tu těžkou věc, že? Dobře tedy.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_response_refuse_1">
+<text>Počkej, kámo, mám taky věci! Nemůžu naráz nést všechny tvé krámy!</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_response_refuse_2">
+<text>Omlouvám se, ale můj batoh už je plný.</text>
+</string>
+<string id="st_companion_inv_take_all_my_items_response_refuse_3">
+<text>Cožpak jsem, mez? No tak, kámo, můj batoh už praská!</text>
+</string>
+<string id="st_companion_inv_give_me_back_all_items">
+<text>Nyní je na řadě mě, abych byl ta oslice. Můžeš mi předat kořist?</text>
+</string>
+<string id="st_companion_inv_give_me_back_all_items_response">
+<text>Jistě, tady máš.</text>
+</string>
+
+<!-- Paid Companions -->
+<string id="st_paid_companion_dialog_text_0">
+<text>Hledám eskortní tým, máš zájem?</text>
+</string>
+<string id="st_paid_companion_dialog_text_1">
+<text>Za předem zaplacenou částku tě ochráníme Za připojení na 24 hodin chci %s, za 48 hodin %s. Buď si vědom, že pokud se vydáš do některých laboratoří nebo oblastí ovládaných Monolitem, jste na vlastní pěst, jasné?</text>
+</string>
+<string id="st_paid_companion_dialog_text_2">
+<text>Omlouvám se, už mám jinou práci.</text>
+</string>
+<string id="st_paid_companion_dialog_text_3">
+<text>24 hodin je vše, co potřebuji %c[d_orange][%s RU].</text>
+</string>
+<string id="st_paid_companion_dialog_text_4">
+<text>Dobře, dva dny %c[d_orange][%s RU].</text>
+</string>
+<string id="st_paid_companion_dialog_text_5">
+<text>Vlastně... změnil jsem názor.</text>
+</string>
+<string id="st_paid_companion_dialog_text_6">
+<text>Pohneme se.</text>
+</string>
+<string id="st_paid_companion_dialog_text_7">
+<text>Pohneme se.</text>
+</string>
+<string id="st_paid_companion_dialog_text_8">
+<text>Dobře tedy.</text>
+</string>
+<string id="st_paid_companion_dialog_text_9">
+<text>Dobře.</text>
+</string>
+<string id="st_paid_companion_contract_timeout_1">
+<text>Smlouva skončila. Jedeš zase na vlastní pěst, buď opatrní.</text>
+</string>
+<string id="st_paid_companion_contract_timeout_2">
+<text>Mé služby jsou splněny, odcházím nyní. Opatruj se stalkere.</text>
+</string>
+<string id="st_paid_companion_danger_1">
+<text>To není to, na čem jsme se dohodli. Omlouvám se, nemám dnes v plánu sebevraždu. Dohoda je ukončena.</text>
+</string>
+<string id="st_paid_companion_danger_2">
+<text>Skutečně?! Co jsem ti řekl, když jsi přijal mou pomoc? Nepůjdu tam, táhnu odtud.</text>
+</string>
+
+<!-- Medic general -->
+<string id="st_dm_medic_general_text_0">
+	<text>Potřebuji lékařskou pomoc.</text>
+</string>
+<string id="st_dm_medic_general_text_1_0">
+	<text>Mohu ošetřit veškerá tvá zranění za 1 850 RU. Mám speciální sérum, které tě v mžiku postaví na nohy. Pokud nejsi ozářený - to ale sérum nespraví. Přesto z tebe mohu další léčbou za 1 480 RU vyplavit veškeré to zháře svinstvo. Tak jak jste se rozhodl?</text>
+</string>
+<string id="st_dm_medic_general_text_1_1">
+	<text>Aha, samozřejmě, ani se nedokážeš udržet v jednom kuse. Podívejme se...</text>
+</string>
+<string id="st_dm_medic_general_text_1_2">
+	<text>Hmm? Dobře, pojď sem.</text>
+</string>
+<string id="st_dm_medic_general_text_1_3">
+	<text>Jo, dám tě do pořádku... za poplatek.</text>
+</string>
+<string id="st_dm_medic_general_text_10_0">
+	<text>Nemáš žádná zranění ani neprojevuješ známky nemoci z ozáření. Měl bys být v pořádku.</text>
+</string>
+<string id="st_dm_medic_general_text_10_1">
+	<text>Podívám se na to... Hmm... Mně připadáš v pořádku.</text>
+</string>
+<string id="st_dm_medic_general_text_10_2">
+	<text>Hmm... Ruce a nohy jsou v pořádku... hlava je na svém místě... Ano, jsi v pořádku.</text>
+</string>
+<string id="st_dm_medic_general_text_10_3">
+	<text>Kámo, jsi zdravější než krvavěžíznivec.</text>
+</string>
+<string id="st_dm_medic_general_text_10_4">
+	<text>Nebuď směšný. Jsi v pořádku.</text>
+</string>
+<string id="st_dm_medic_general_text_2">
+	<text>Vyleč mi rány. %c[d_orange][1 850 RU]</text>
+</string>
+<string id="st_dm_medic_general_text_3">
+	<text>Zbav mě radiace. %c[d_orange][1 480 RU]</text>
+</string>
+<string id="st_dm_medic_general_text_4">
+	<text>Do háje s tím, potřebuju být v dobré kondici. %c[d_orange][3 350 RU]</text>
+</string>
+<string id="st_dm_medic_general_text_5">
+	<text>Víte co, doktore? Vyléčím se sám!</text>
+</string>
+	
+<string id="st_dm_medic_general_text_6">
+	<text>Tady máš, příště buď opatrný.</text>
+</string>
+<string id="st_dm_medic_general_text_7">
+	<text>Záleží na tobě.</text>
+</string>
+<!-- Unlock PDAs -->
+<string id="st_encrypted_pda_text_0">
+	<text>Mám zašifrované PDA, zdá se, že nereaguje. Můžeš to pro mě vyřešit?</text>
+</string>
+<string id="st_encrypted_pda_text_1">
+	<text>Jestliže jsi ochotni ukázat nějakou hotovost, jistě. 500 RU za každé PDA, které dokážu odemknout.</text>
+</string>
+<string id="st_encrypted_pda_text_2">
+	<text>Tady je to fér.</text>
+</string>
+<string id="st_encrypted_pda_text_3">
+	<text>Rozmyslel jsem si to...</text>
+</string>
+<string id="st_encrypted_pda_text_4">
+	<text>Tady je, nyní je můžeš používat. Bav se.</text>
+</string>
+<string id="st_encrypted_pda_text_5">
+	<text>Tak dobře.</text>
+</string>
+	
+	
+<!-- Faction bribe -->
+	
+<string id="st_bribe_text_0">
+	<text>Máš konekce, že? Můžeš mi pomoci vyřídit věci s některými lidmi?</text>
+</string>
+<string id="st_bribe_text_1">
+	<text>Možná. Koho jsi nasral?</text>
+</string>
+<string id="st_bribe_text_2">
+	<text>Chci, aby mě zdejší Ukrajinští vojáci nechali na pokoji.</text>
+</string>
+<string id="st_bribe_text_21">
+	<text>Hmmm. Něco ti řeknu. Můžu jednoho z jejich důstojníků přimět, aby pro tebe zfalšoval dočasné doklady. 5000 RU by mělo stačit, aby z něj vymámil dvoudenní propustku. 10 000 RU na čtyři dny. Dokud je propustka platná, na místě tě nezastřelí, ale bez ohledu na to bych radil nepokoušet u nich štěstí.</text>
+</string>
+<string id="st_bribe_text_3">
+	<text>Chci, aby mě Sultánovi muži přestali obtěžovat.</text>
+</string>
+<string id="st_bribe_text_31">
+	<text>Přestat? Nikdy nepřestanou, ale možná tě budou chvíli ignorovat, když jim ušetříš práci s tím, že tě budou muset oškubat. 5000 RU by je mělo uspokojit na dva dny, 10 000 RU na čtyři. Kolik to bude?</text>
+</string>
+<string id="st_bribe_text_4">
+	<text>Zanechal jsem špatný dojem s Jasnou oblohou a chci ukázat, že to nemyslím zle.</text>
+</string>
+<string id="st_bribe_text_41">
+	<text>Neumím si představit, čím jsi některé obyvatele bažin nastval. Každopádně 5000 RU by mělo stačit, aby se na den nebo dva dostali do smířlivější nálady, zatímco 10 000 RU by je mělo přimět, aby se na čtyři trochu uvolnili.</text>
+</string>
+<string id="st_bribe_text_5">
+	<text>Povinnost mě pronásleduje a já chci, aby to přestalo.</text>
+</string>
+<string id="st_bribe_text_51">
+	<text>Při všech svých ideálech "spravedlnosti" a "pořádku" nejsou nad to, když na chvíli ignorují takzvané "anarchisty a zločince", když jim zaplatíš. 5000 RU by je mělo uklidnit na dva dny, 10 000 RU na čtyři.</text>
+</string>
+	
+	
+<string id="st_bribe_text_6">
+	<text>Rád bych si s Ekology... a jejich strážci vyjasnil jedno nedorozumění.</text>
+</string>
+<string id="st_bribe_text_61">
+	<text>Mělo by být dost snadné přesvědčit Vědce, jistě. S pěti tisíci RU to můžeš vyřešit za den nebo dva. 10 000 RU na čtyři dny.</text>
+</string>
+<string id="st_bribe_text_7">
+	<text>Nasral jsem Svobodu.</text>
+</string>
+<string id="st_bribe_text_71">
+	<text>Svobodu? Ty zatracený fašisto. Dělám si srandu, dělám si srandu. Pět tisíc RU by je mělo přimět, aby tě den nebo dva ignorovali, deset tisíc RU čtyři dny.</text>
+</string>
+<string id="st_bribe_text_8">
+	<text>Žoldáci. Jako bych měl na hlavu vypsánu odměnu.</text>
+</string>
+<string id="st_bribe_text_81">
+	<text>Ty to nejspíš víš. Naštěstí žiji pro peníze. 5000 RU by je mohlo vykoupit na den nebo dva, 10 000 RU by je mělo vyplatit na čtyři.</text>
+</string>
+<string id="st_bribe_text_9">
+	<text>Stalkery zdarma. Nějak se mi u nich podařilo získat špatnou pověst.</text>
+</string>
+<string id="st_bribe_text_91">
+	<text>Právě... počkat, *všichni* z nich? Paní, ty si vážně umíš udělat přátele, co? Můžu je přesvědčit, aby tě nechali dva dny na pokoji, když zaplatíš 5000 RU. Na čtyři dny 10 000 RU. Platí?</text>
+</string>
+<string id="st_bribe_text_13">
+	<text>Tady by dva dny měly stačit.</text>
+</string>
+<string id="st_bribe_text_14">
+	<text>Fajn, ať jsou to čtyři dny.</text>
+</string>
+<string id="st_bribe_text_10">
+	<text>Změnil jsem názor.</text>
+</string>
+<string id="st_bribe_text_11">
+	<text>Je to tak.</text>
+</string>
+<string id="st_bribe_text_12">
+	<text>Spojím se s nimi, abychom to vyřešili, takže dokončete svůj obchod, než si to rozmyslí. A nezapomeň: udržuj si odstup. Pokud jsi se dostal dostatečně blízko, budou jednat.</text>
+</string>
+	
+<!-- Guide Job -->
+<string id="st_jg_1">
+	<text>Slyšel jsem tvoji zprávu. Potřebuješ průvodce?</text>
+</string>
+<string id="st_jg_1_alt">
+	<text>O práci...</text>
+</string>
+<string id="st_jg_2">
+	<text>Ano, pomůžeš?</text>
+</string>
+<string id="st_jg_2_alt">
+	<text>O co se jedná?</text>
+</string>
+<string id="st_jg_3">
+	<text>Řekni mi nějaké podrobnosti.</text>
+</string>
+<string id="st_jg_4">
+	<text>Dobře, jdeme.</text>
+</string>
+<string id="st_jg_5">
+	<text>Vedu tě, stalkeru! Až se dostaneme tam, kam potřebuji, promluv na mě znovu a já ti dám výplatu.</text>
+</string>
+<string id="st_jg_6">
+	<text>Promiň, ale nemáš peníze, abys mi zaplatil, kdyby plán nevyšel.</text>
+</string>
+<string id="st_jg_mlr_1">
+	<text>Vůbec nevím, kdo jsi. Ne, díky, stalkere.</text>
+</string>
+<string id="st_jg_7">
+	<text>Připomeň mi, kam jdeme?</text>
+</string>
+<string id="st_jg_8">
+	<text>Tady jsme.</text>
+</string>
+<string id="st_jg_9">
+	<text>Nakonec! Díky, stalkere, dobrá práce. Tady máš peníze.</text>
+</string>
+<string id="st_jg_10">
+	<text>Změnil jsem názor. Raději bych tu práci zrušil.</text>
+</string>
+<string id="st_jg_11">
+		<text>Opravdu? Jsi si tím jistý? </text>
+	</string>
+<string id="st_jg_12">
+		<text>Ano, jsem si jistý.</text>
+	</string>
+<string id="st_jg_13">
+		<text>Vlastně nech to být.</text>
+	</string>
+<string id="st_jg_14">
+		<text>Hledám zkušeného stalkera, který by mě dovedl na místo zvané %s. Právě teď jsem %s. Moje jméno je %s.</text>
+	</string>
+<string id="st_jg_15">
+		<text>Je přiliš pozdě. Omlouváme se, ale tohle nebyla dohoda, nedostaneš celou platbu.</text>
+	</string>
+<string id="st_jg_16">
+	<text>Tady je dohoda: do %s hodin musím být %s. Za práci ti mohu zaplatit %s rublů, ale mej na paměti, že pokud se tam nedostaneme včas, nedostaneš celou platbu.</text>
+</string>
+<string id="st_jg_17">
+	<text>Potřebuji být</text>
+</string>
+<string id="st_jg_18">
+	<text>Pak budu pokračovat sám a budu brát ty peníze. To je škoda.</text>
+</string>
+<string id="st_jg_19">
+	<text>Délka včetně výchozího bodu a cíle:&#032;</text>
+</string>
+<string id="st_jg_29">
+	<text>Stalker musí být&#032;</text>
+</string>
+<string id="st_jg_cancel_1">
+	<text>Skvěle. Díky za nic.</text>
+</string>
+<string id="st_jg_cancel_2">
+	<text>Jaká škoda.</text>
+</string>
+<string id="st_jg_cancel_3">
+	<text>Díky za ztrátu mého času.</text>
+</string>
+	
+<!-- Debt / Loan -->
+<string id="debt_register_0">
+		<text>%s, můžeš mi půjčit škváru? </text>
+	</string>
+<string id="debt_register_1">
+	<text>Peníze pravděpodobně potřebuješ z dobrého důvodu... ale já také. Vrátíš padesát procent částky plus samotnou částku a mej na paměti, že mé věci ti nebudou k dispozici, dokud nesplatíš svůj dluh.</text>
+</string>
+<string id="debt_register_2">
+	<text>Potřebuji jen %c[d_orange][5 000 RU].</text>
+</string>
+<string id="debt_register_3">
+	<text>Ok, dej mi %c[d_orange][10 000 RU].</text>
+</string>
+<string id="debt_register_4">
+	<text>Chci %c[d_orange][15 000 RU].</text>
+</string>
+<string id="debt_register_5">
+	<text>Podle mě v pořádku. Vezmu si %c[d_orange][20 000 RU].</text>
+</string>
+<string id="debt_register_6">
+	<text>Rozmyslel jsem si to...</text>
+</string>
+<string id="debt_register_7">
+	<text>Dovolím to jen proto, že jsem slyšel, že jsi mi pomohl. Doufám, že jsi také důvěryhodný. Tady máš. Až se tu příště objevíš, chci %c[d_orange][%s RU]%c[255,160,160,190].</text>
+</string>
+<string id="debt_register_8">
+	<text>Je to tak.</text>
+</string>
+<string id="debt_register_10">
+	<text>Mám rozhazovat peníze pokaždé, když sem někdo přivede svůj ubohý zadek? Odpověď zní ne.</text>
+</string>
+	
+<string id="debt_pay_off_0">
+	<text>O penězích, které ti dlužím...</text>
+</string>
+<string id="debt_pay_off_1">
+	<text>Zaplátíš svůj dluh?</text>
+</string>
+<string id="debt_pay_off_2">
+	<text>Jistě, tady jsou vaše peníze %c[d_orange][%s RU].</text>
+</string>
+<string id="debt_pay_off_3">
+	<text>Um... stále na tom pracuji.</text>
+</string>
+<string id="debt_pay_off_4">
+	<text>Skvělé, tvůj účet je nyní čistý.</text>
+</string>
+<string id="debt_pay_off_5">
+	<text>Radši si pospěš.</text>
+</string>
+
+<string id="st_debt_no_trade_1">
+	<text>Nemyslím si. Dlužíš mi peníze, pamatuješ? Měl bys svůj dluh brzy splatit.</text>
+</string>
+
+<!-- purchase extra equipment -->
+<string id="buy_extra_items_0">
+	<text>Máš nějaké speciální nabídky?</text>
+</string>
+<string id="buy_extra_items_1">
+	<text>Co máš na mysli?</text>
+</string>
+<string id="buy_extra_items_2">
+	<text>Rád bych si koupil nějaké navíc vybavení.</text>
+</string>
+<string id="buy_extra_items_3">
+	<text>To je jistě možné, ale nikdo ti teď nebude chtít prodat nic navíc. Budeš muset získat nějakou důvěru a zkušenosti, a potom můžeš nakoupit vybavení ve velkém.</text>
+</string>
+<string id="buy_extra_items_4">
+	<text>Rád bych si koupil nějaké vybavení navíc.</text>
+</string>
+<string id="buy_extra_items_5">
+	<text>O co máš zájem?</text>
+</string>
+<string id="buy_extra_items_6">
+	<text>Lékařské potřeby.</text>
+</string>
+<string id="buy_extra_items_7">
+	<text>Zásoby.</text>
+</string>
+<string id="buy_extra_items_8">
+	<text>Munice.</text>
+</string>
+<string id="buy_extra_items_9">
+	<text>Vybrat.</text>
+</string>
+<string id="buy_extra_items_10">
+	<text>Vybrat.</text>
+</string>
+<string id="buy_extra_items_11">
+	<text>Vybrat.</text>
+</string>
+<string id="buy_extra_items_12">
+	<text>Změnil jsem názor.</text>
+</string>
+
+<string id="buy_extra_items_txt">
+	<text>%s %c[d_orange][%s RU]</text>
+</string>
+
+<!-- Purchase routes -->
+<string id="st_buy_route_0">
+	<text>Chci si koupit informace o skrytých trasách.</text>
+</string>
+<string id="st_buy_route_1">
+	<text>Mám nějaké informace. \nOsm tisíc rublů je běžná cena za většinu oblastí a míst, deset tisíc za citlivé body a dvanáct tisíc za informace o skrytých cestách. \nPokud máš zájem, mohu se s tebou podělit o informace o konkrétních "tajných" trasách. Čtyřicet tisíc rublů, nicméně.</text>
+</string>
+<string id="st_buy_route_2">
+	<text>To je pro mě trochu drahé.</text>
+</string>
+<string id="st_buy_route_3">
+	<text>To není můj problém, přijď, až to budeš myslet vážně.</text>
+</string>
+<string id="st_buy_route_4">
+	<text>Tady máš.</text>
+</string>
+<string id="st_buy_route_dialog">
+		<text>%c[255,160,160,190]-%c[255,220,220,220] %s - %s pro %c[255,160,160,190][%s RU]</text>
+	</string>
+	
+<string id="st_route_open_title">
+		<text>Informace o trasách</text>
+	</string>
+<string id="st_route_open_msg">
+		<text>%c[255,160,160,190]Byla objevena nová cesta mezi %c[255,220,220,220](%s)%c[255,160,160,190] a %c[255,220,220,220](%s)</text>
+	</string>
+<string id="st_route_unknown">
+		<text>Neznámá cesta</text>
+	</string>
+
+<string id="st_route_aes1">
+		<text>Černobyl Jih</text>
+	</string>
+<string id="st_route_aes2">
+		<text>Černobyl Sever</text>
+	</string>
+<string id="st_route_agr">
+	<text>Agroprom</text>
+</string>
+<string id="st_route_bar">
+	<text>Rostok</text>
+</string>
+<string id="st_route_cit">
+	<text>Mrtvé město</text>
+</string>
+<string id="st_route_dsc">
+	<text>Temná kotlina</text>
+</string>
+<string id="st_route_esc">
+	<text>Kordon</text>
+</string>
+<string id="st_route_gar">
+	<text>Smetiště</text>
+</string>
+<string id="st_route_gen">
+	<text>Generátory</text>
+</string>
+<string id="st_route_jup">
+	<text>Jupiter</text>
+</string>
+<string id="st_route_kat">
+	<text>Opuštěná nemocnice</text>
+</string>
+<string id="st_route_lim">
+	<text>Limansk</text>
+</string>
+<string id="st_route_mar">
+	<text>Velké bažiny</text>
+</string>
+<string id="st_route_mil">
+	<text>Armádní skladiště</text>
+</string>
+<string id="st_route_out">
+	<text>Předměstí</text>
+</string>
+<string id="st_route_pol">
+	<text>Louka</text>
+</string>
+<string id="st_route_pri">
+	<text>Pripyat</text>
+</string>
+<string id="st_route_rad">
+	<text>Radar</text>
+</string>
+<string id="st_route_red">
+	<text>Rudý les</text>
+</string>
+<string id="st_route_ros">
+	<text>Divoká oblast</text>
+</string>
+<string id="st_route_trc">
+	<text>Hřbitov nákladních aut</text>
+</string>
+<string id="st_route_val">
+	<text>Temné údolí</text>
+</string>
+<string id="st_route_yan">
+	<text>Yantar</text>
+</string>
+<string id="st_route_zat">
+	<text>Zaton</text>
+</string>
+<string id="st_route_x8">
+	<text>Laboratoř X-8</text>
+</string>
+<string id="st_route_x16">
+	<text>Laboratoř X-16</text>
+</string>
+<string id="st_route_x18">
+	<text>Laboratoř X-18</text>
+</string>
+<string id="st_route_x19">
+	<text>Laboratoř X-19</text>
+</string>
+<string id="st_route_mar_h">
+	<text>Skrytá cesta na Základnu Jasné Oblohy</text>
+</string>
+<string id="st_route_agr_u">
+	<text>Podzemí Agropromu</text>
+</string>
+<string id="st_route_jup_u">
+	<text>Podzemí Jupiteru</text>
+</string>
+<string id="st_route_sar">
+	<text>Sarkofág</text>
+</string>
+<string id="st_route_s_lab">
+	<text>Řídící centrum Monolitu</text>
+</string>
+<string id="st_route_w_lab">
+	<text>Válečná laboratoř Monolitu</text>
+</string>
+	
+	<!-- Travel - unused -->
+<string id="ka_travel_dialog_ask">
+	<text>Potřebuji se někam dostat... Můžeš mě odvést?</text>
+</string>
+<string id="ka_travel_dialog_response">
+	<text>Jistě. Kam bys chtěl jít?</text>
+</string>
+<string id="ka_travel_dialog_nevermind">
+	<text>Rozmyslel jsem si to.</text>
+</string>
+<string id="ka_travel_dialog_accept">
+	<text>To zní to skvěle.</text>
+</string>
+<string id="ka_travel_dialog_change">
+	<text>Vlastně musím jít někam jinam...</text>
+</string>
+<string id="ka_travel_dialog_deny">
+	<text>To je příliš drahé.</text>
+</string>
+<string id="ka_travel_dialog_cost">
+	<text>To tě bude stát %s rublů.</text>
+</string>
+
+<string id="ka_travel_dialog_zaton">
+	<text>Na Skadovsk v Zatonu.</text>
+</string>
+<string id="ka_travel_dialog_jupiter">
+	<text>Yanovská stanice v Jupiteru.</text>
+</string>
+<string id="ka_travel_dialog_yantar">
+	<text>Vědecká Laboratoř Yantar.</text>
+</string>
+<string id="ka_travel_dialog_cordon">
+	<text>Vesnice v Kordonu.</text>
+</string>
+<string id="ka_travel_dialog_bar">
+	<text>100 Rads Bar v Rostoku.</text>
+</string>
+<string id="ka_travel_dialog_warehouses">
+	<text>Základna Svobody v Armádních Skladištích.</text>
+</string>
+<string id="ka_travel_dialog_city">
+	<text>Zombíčí základna v Mrtvém Městě.</text>
+</string>
+<string id="ka_travel_dialog_agroprom">
+	<text>Armádní Základna V Agropromu.</text>
+</string>
+<string id="ka_travel_dialog_swamp">
+	<text>Základna Jasné Oblohy ve Velkých Bažinách.</text>
+</string>
+	
+	
+	
+	
+	
+	
+	
+	<!-- About Quests Bandit -->
+<string id="about_quests_dialog_bandit_0">
+	<text>Slyšel jsi tu v poslední době nějaké novinky?</text>
+</string>
+<string id="about_quests_dialog_bandit_1">
+	<text>Jaké?</text>
+</string>
+<string id="about_quests_dialog_bandit_10">
+	<text>Co si myslíš o Šikulovi?</text>
+</string>
+<string id="about_quests_dialog_bandit_101">
+	<text>Šikula? Myslím, že jednou toho kluzkého osla na klidném místě přeskočíme!</text>
+</string>
+<string id="about_quests_dialog_bandit_11">
+	<text>Slyšel jsi něco o Oáze o tom artefaktu?</text>
+</string>
+<string id="about_quests_dialog_bandit_111">
+	<text>No, jednou jsem slyšel takovou legrační historku. V podstatě kluci ze Smetiště založili fámu o tom, kde je Oáza, a taky ji udělali opravdu věrohodnou. Pak se na to místo vydali a čekali. No, co na to říct? Přišlo tolik důvěřivých nymandů, kteří se chtěli podělit o své věci, že kluci, kteří to celé začali, brzy poté Zónu opustili. A proč ne? Chlapi byli připraveni na celý život. Jen jeden z nich zůstal, nějaký chlápek, který si říkal Joga...</text>
+</string>
+<string id="about_quests_dialog_bandit_112">
+	<text>Že když tam půjdete, všechny vaše problémy se vyřeší... Myslím, že to se musí hodit - už žádná kocovina ani hemoroidy, to musí být dobré! Najdete to, založte si letovisko a nechte peníze štávat.</text>
+</string>
+<string id="about_quests_dialog_bandit_113">
+	<text>Proč bych se obtěžoval poslouchat tyhle kecy? Jsou to jen laciné řeči pro nuly... Opravdoví chlapi těmhle kecům nevěří. Znáš to, sedíš v baru s vychlazeným v ruce a kolem tebe bzučí slidilové a hádají se, kde je Oáza. A každý z těch cucáků přísahá, že ví, kde je... I když se to z nějakého důvodu liší od cucáka k cucákovi.</text>
+</string>
+<string id="about_quests_dialog_bandit_12">
+	<text>Potkal jsi někdy stalkera jménem Straka?</text>
+</string>
+<string id="about_quests_dialog_bandit_121">
+	<text>Jistě jste... Jediny pohled na něj mi prozradil, že je to naprostý cucák, a pak jsem slyšel stalkery, že je to taky naprostý šmejd. Nevím ale, kde je... Budeš si ho muset najít sám, jestli po něm jdeš.</text>
+</string>
+<string id="about_quests_dialog_bandit_122">
+	<text>Ne... To jméno slyším poprvé, kámo.</text>
+</string>
+<string id="about_quests_dialog_bandit_13">
+	<text>Nevíš, kdo mohl ukrást věci z osobní schránky?</text>
+</string>
+<string id="about_quests_dialog_bandit_131">
+	<text>Krysa. Myslím, že by ses měl raději zeptat šéfa v Janově, protože jsou známí tím, že loví krysy.</text>
+</string>
+<string id="about_quests_dialog_bandit_14">
+	<text>Kdo by mi mohl pomoci s dešifrováním něčeho tady?</text>
+</string>
+<string id="about_quests_dialog_bandit_141">
+	<text>No, slyšel jsem, že Nitro v Janově je dobré. Prý ještě v době, kdy nepracoval pro Povinnost, ho kluci párkrát priměli, aby prolomil stalkerské PDA... Ach, staré dobré časy...</text>
+</string>
+<string id="about_quests_dialog_bandit_143">
+	<text>Nechovej se ke mně vědecky, šéfe. Na tyhle sráčky budeš potřebovat hackera. Ještě když jsem seděl, tak jsem jednoho potkal v base, ale to je jediný, koho znám. Když mě pustili, měl ještě asi pětku...</text>
+</string>
+<string id="about_quests_dialog_bandit_15">
+	<text>Mám PDA toho obchodníka se službami. Nevíš o někom, kdo by o něj měl zájem?</text>
+</string>
+<string id="about_quests_dialog_bandit_151">
+	<text>Ve Skadovsku je obchodník jménem Hejkal. Platí docela dobře a kluci mu občas prodávají stalkerské PDAčka. Taky se moc nevyptává, takže je to v pohodě.</text>
+</string>
+<string id="about_quests_dialog_bandit_152">
+	<text>Jen o někom, kamaráde. Přemýšlej o tom: jeho vlastní frakce toho kokota pohřbí živá, ostatní frakce sice budou kopat, ale Hejkal v Zatonu by to PDA nechal pořádně zmizet. Jediná věc je, že jen Hejkal ví, kde se ten PDA později objeví... Je to na tobě.</text>
+</string>
+	
+<string id="about_quests_dialog_bandit_16">
+	<text>Kde v okolí najdu nástroje?</text>
+</string>
+<string id="about_quests_dialog_bandit_165">
+	<text>No, pokud potřebuješ chirurgické nástroje, pohlédl bych se po nemocnicích a stanicích záchranné služby. Pokud hledáš stavební nářadí, pak se podívej u lomu na Jupiteru. Pokud hledáš drobné nářadí, pak prohledej staré dílny.</text>
+</string>
+<string id="about_quests_dialog_bandit_166">
+	<text>Jak to mám sakra vědět? Nepotřebuju nářadí, abych přesvědčil stalkery, aby si odkašlali, jen abys věděl... Klid, dělám si legraci.</text>
+</string>
+<string id="about_quests_dialog_bandit_17">
+	<text>Kdo dokáže odblokovat paměťový modul?</text>
+</string>
+<string id="about_quests_dialog_bandit_171">
+	<text>Dobrá otázka! Na to přece specializuji, ne? Hah! Jsi hloupý, kamaráde? Bud to budou technici, nebo vědci... Snad si nemyslíš, že se zabývám takovými sráči?</text>
+</string>
+<string id="about_quests_dialog_bandit_172">
+	<text>Budu k tobě upřímný: naposledy jsem odblokoval paměťové moduly ještě ve škole a paměťový modul byla zatracená disketa. Bez si o tom promluvit s odborníky a rozbij jim hubu.</text>
+</string>
+<string id="about_quests_dialog_bandit_18">
+	<text>Kdo by se mohl vloupat do ocelového kontejneru?</text>
+</string>
+<string id="about_quests_dialog_bandit_181">
+	<text>Znáš Kardana ze Skadovsku? No, oněhdy se opil a začal honit toho blbce s džímkou po celém podniku. Počítám, že by Kardan mohl tu džímku použít k užitečnějším účelům a rozbíjet věci, kdybys potřeboval.</text>
+</string>
+<string id="about_quests_dialog_bandit_182">
+	<text>No, se správnými nástroji bych to zvládl i já, ale kdo by pak tahal vybavení do Zóny s sebou? Navštiv techniky, kamaráde - ti se v takových věcech vyznají.</text>
+</string>
+<string id="about_quests_dialog_bandit_19">
+	<text>Hledám stalkera jménem Straka. Nevíš, kde bych ho mohl najít?</text>
+</string>
+<string id="about_quests_dialog_bandit_191">
+	<text>Kdo ví? Zeptej se Sultána ve Skadovsku. Šéf většinou ví, kde jsou všichni dvojníci.</text>
+</string>
+<string id="about_quests_dialog_bandit_193">
+	<text>Jo, o tomhle břídilovi jsem slyšel. Obvykle se potlouká v Zatonu, takže tady ho nenajdeš.</text>
+</string>
+<string id="about_quests_dialog_bandit_2">
+	<text>Víš něco o těch havarovaných vrtulnících?</text>
+</string>
+<string id="about_quests_dialog_bandit_20">
+	<text>Kdo by mohl mít zájem o informace o zakladateli Povinnosti?</text>
+</string>
+<string id="about_quests_dialog_bandit_201">
+	<text>Nevím o nikom, kdo by neměl zájem! To je výbušná informace, kamaráde, takže nejlepší bude, když půjdeš přes Sovu do Skadovska - tak získáš nějaké peníze, ale nenaděláš si nepřátele.</text>
+</string>
+<string id="about_quests_dialog_bandit_22">
+	<text>Ne. Přemýšlej o tom, vlevo mám Povinnost, vpravo Svobodu a za zadkem stalkery - a ty čekáš, že budu mít oči na stopkách?</text>
+</string>
+<string id="about_quests_dialog_bandit_23">
+	<text>No, kluci říkali, že zahlédli jednoho, jak se houpe na lanech v Železném lese, ale tam toho uvidíš mnohem víc... Určitě narazíš na anomálii nebo ti lebku rozdrtí poltergeist.</text>
+</string>
+<string id="about_quests_dialog_bandit_24">
+	<text>Jo, nějací chlapci viděli, jak se jeden zřítil na náhorní plošinu, ale jde o to, že tam není žádná cesta nahoru... říkali, že to letělo tak divně, že to vypadalo, jako by si pilot vzal prášek nebo tak něco.</text>
+</string>
+<string id="about_quests_dialog_bandit_26">
+	<text>Slyšel jsem, že vrtulník spadl přímo do vody v bažinách. Narazil na mělčinu docela rychle a tamní voda taky není zrovna zdraví prospěšná - jed, chemikálie a podobné sráčky.</text>
+</string>
+
+<string id="about_quests_dialog_bandit_3">
+	<text>Viděl jsi v okolí nějakou armádu?</text>
+</string>
+<string id="about_quests_dialog_bandit_30">
+	<text>Kdo by mohl mít zájem o mapy oblasti mezi Zatonem a Jupiterem?</text>
+</string>
+<string id="about_quests_dialog_bandit_301">
+	<text>Pilot, počítám - je to hlavní průvodce po těch končinách. Bylo by dobré, kdyby měl nějaké mapy a nepoužíval hvězdy, jak to dělá teď...</text>
+</string>
+<string id="about_quests_dialog_bandit_31">
+	<text>Chlapci říkali, že vojenský oddíl se vydal po jižní náhorní plošině přímo k táboru žoldnéřů. Uzouidili, že se to za chvíli rozjede, a tak spěšně odjeli.</text>
+</string>
+<string id="about_quests_dialog_bandit_32">
+	<text>Slyšel jsem historku o tom, jak se armádní švábi snažili dostat nějaké svinstvo z jejich havarovaného vrtulníku v bažině. Představ si to, pět armádních kluků v uniformách poskakuje v bažině a snaží se nenamáčet...</text>
+</string>
+<string id="about_quests_dialog_bandit_33">
+	<text>Jeden chlápek mi vyprávěl, jak pronásledoval stalkera, aby získal kus jeho kořisti, když uslyšel výstřely a další sracky. Ukázalo se, že armáda bojuje se žoldáky. Schoval se a přestřelku přečkal, ale to už stalker utekl. Smůla, co?</text>
+</string>
+<string id="about_quests_dialog_bandit_34">
+	<text>No, jeden brácha mi vyprávěl o tom, že byl svědkem docela vtipné scény. Představ si tu barák s mlýnem na střeše a vedle ní zvaného Noeho, celého názhaveného a tak, a deset armádních kluků, co se snaží dostat co nejdál od Noeho psa. No, brácha se dobře pobavil a nechal ten cirkus na pokoji.</text>
+</string>
+<string id="about_quests_dialog_bandit_35">
+	<text>No, tohle je pochybné místo, plné chlápků se zapnutými střelnými zbraněmi a tak... Nemám čas kontrolovat, kteří z nich jsou vojáci a kteří jsou na misi ve službě.</text>
+</string>
+<string id="about_quests_dialog_bandit_4">
+	<text>Víš, jak se dostat do Pripjati?</text>
+</string>
+<string id="about_quests_dialog_bandit_40">
+	<text>Koho bych mohl najmout na ochranu vědců?</text>
+</string>
+<string id="about_quests_dialog_bandit_403">
+	<text>Hah, já a kluci to zvládneme! Poskytneme jim ochranu, jakou ještě neviděli! Stálí love a mutanti se budou sakra bát přiblížit se k tomu pří*ranému místu, věř mi! Vykasli se na to každý týden a jsme tví. A nezapomeň na vánoční bonus!</text>
+</string>
+<string id="about_quests_dialog_bandit_41">
+	<text>Pešky, kámo. Jdi směrem k Jupiteru a tam se ptej, protože z Zatonu do Pripjati žádná prima cesta nevede a to je vědecký fakt.</text>
+</string>
+<string id="about_quests_dialog_bandit_43">
+	<text>Hej kámo, vypadám jako průvodce nebo co? Mám snad na čele tetování s nápisem "Tady se ptej na blbosti" nebo tak něco? Bez se zeptat Pilota, ten je placený za to, aby odpovídal na otázky o takových kravinách.</text>
+</string>
+<string id="about_quests_dialog_bandit_44">
+	<text>Ne... Co bych tam vlastně dělal? Nejsou tam žádní stalkerové, které by bylo možné oskubat!</text>
+</string>
+<string id="about_quests_dialog_bandit_5">
+	<text>Můžeš mi navrhnout někoho, kdo není příliš vázáný a byl by ochotný se o Pripjat ucházet?</text>
+</string>
+<string id="about_quests_dialog_bandit_51">
+	<text>Pripjat není místo pro lidi, jako jsme my. Přemýšlej o tom, je plný mutantů a anomálií... jako zbytek Zóny... ale bez stalkerů a jejich kořisti. Až se v Pripjati objeví stálí love, dej nám vědět a my se tam vydáme, abychom zachovali přirozený řád věcí.</text>
+</string>
+<string id="about_quests_dialog_bandit_57">
+	<text>Nemám tušení, kámo. Promiň.</text>
+</string>
+<string id="about_quests_dialog_bandit_6">
+	<text>Nasel jsem neobvyklého střelce. Nevíš o někom, kdo by o ní mohl něco vědět?</text>
+</string>
+<string id="about_quests_dialog_bandit_62">
+	<text>No, zeptal bych se techniků. Vždyť je to jejich věc, aby o těchhle věcech věděli, ne?</text>
+</string>
+<string id="about_quests_dialog_bandit_63">
+	<text>Tak mě to napadá, ale šmíráci ze Skadovska věří, že Cardan je technický génius nebo co. Jestli chceš, promluv si s ním... Podle mě je to jen starý opilec...</text>
+</string>
+<string id="about_quests_dialog_bandit_7">
+	<text>Koho bych si mohl najmout, aby provedl měření pro vědce?</text>
+</string>
+
+<string id="about_quests_dialog_bandit_73">
+	<text>To je snadné - naši chlapi to zvládnou. Teda nechodili do školy nebo tak, ale vezmou si, koho chceš, a pořádně si ho změří. Jakmile budou mít míry, stačí jim pěkný hrob a ani to není problém!</text>
+</string>
+<string id="about_quests_dialog_bandit_8">
+	<text>Našel jsem velmi podivný artefakt. Můžeš mi navrhnout kupce?</text>
+</string>
+<string id="about_quests_dialog_bandit_81">
+	<text>Říkáš podivný artefakt? Pojďme se na něj podívat... Podej mi ho, abych si ho mohl lépe prohlédnout... Hah, klídek, kamaráde - dělám si legraci, ale být tebou, držel bych si takovou věc od těla. Ostatní by nemuseli mít tak dobrý smysl pro humor.</text>
+</string>
+<string id="about_quests_dialog_bandit_83">
+	<text>Máš koule na to, abys tady s tím artefaktem mával. Respekt. Jde o tohle: člověk, který se má na tuhle sracku podívat, je Fousek ve Skadovsku. Zatím nevíme, jakým způsobem dostává artefakty ze Zóny, takže bys ten svůj měl bez problému prodat.</text>
+</string>
+<string id="about_quests_dialog_bandit_9">
+	<text>Nasel jsem poblíž cele doupe krvězíznivců. Co budeme dělat?</text>
+</string>
+<string id="about_quests_dialog_bandit_91">
+	<text>Err, co se tu dá dělat? Utíkat k čertu pryč, to je to, co!</text>
+</string>
+<string id="about_quests_dialog_bandit_98">
+	<text>Dobře, zapomeň na to.</text>
+</string>
+
+	<!-- About Quests Povinnost -->
+	<string id="about_quests_dialog_dolg_0">
+	<text>Slyšel jsi tu v poslední době nějaké novinky?</text>
+</string>
+<string id="about_quests_dialog_dolg_1">
+	<text>Jaké?</text>
+</string>
+<string id="about_quests_dialog_dolg_10">
+	<text>Co si myslíš o Šikulovi?</text>
+</string>
+<string id="about_quests_dialog_dolg_101">
+	<text>Šikula? Nikdy jsem o něm neslyšel. Možná je v jiné družině nebo tak něco?</text>
+</string>
+<string id="about_quests_dialog_dolg_11">
+	<text>Slyšel jsi něco o Oáze?</text>
+</string>
+<string id="about_quests_dialog_dolg_111">
+	<text>Je to pohádka o stalkerování. To stalkerové to dělají: vymýšlejí si kraviny, které nejsou pravda, a pak se všichni sejdou a hledají je! Být tebou, tak tyhle věci ignoruju. Je to jako mýtus na vstupní bráně: uvěříš tomu a za chvíli uvěříš, že existuje plnič přání.</text>
+</string>
+<string id="about_quests_dialog_dolg_112">
+	<text>Aha, to místo, kde se rány samy hojí a kde se ti magicky doplňuje energie? Mám pro tebe novinku, příteli: neexistuje. Stalkerové si tyhle blbosti vymýšlejí, aby Zona zněla méně nebezpečně, než ve skutečnosti je, ale krutá realita je taková, že v Zóně žádná bezpečná místa nejsou. A tuhle realitu si musíš pevně uvědomit, kámo - snílci v Zóně dlouho nevydrží.</text>
+</string>
+<string id="about_quests_dialog_dolg_113">
+	<text>Jo, a všechny artefakty tam mají cenu zlata a jsou ti předkládány na stříbrném podnose, zatímco si necháváš masírovat nohy... Dělám si samozřejmě legraci. Pochybuji, že to existuje, i když by bylo hezké, kdyby ano. Mohli bychom tam dokonce zřídit nemocnici, aniž bychom potřebovali nějaké zdravotníky - lidé by se tam mohli jen tak objevit a uzdravit se... Sakra, to je ale nesplnitelný sen.</text>
+</string>
+	<string id="about_quests_dialog_dolg_12">
+	<text>Potkal jsi někdy stalkera jménem Straka?</text>
+</string>
+<string id="about_quests_dialog_dolg_121">
+	<text>Mám problém vzpomenout si na všechny lidi ve službě Povinnost a ty se mě ptáš na stalkery? Mají svou základnu ve Skadovsku - jdi se zeptat tam.</text>
+</string>
+<string id="about_quests_dialog_dolg_122">
+	<text>Ne, neptal.</text>
+</string>
+<string id="about_quests_dialog_dolg_13">
+	<text>Víš, kdo mohl ukrást věci z osobní schránky?</text>
+</string>
+<string id="about_quests_dialog_dolg_131">
+	<text>Tady to máme! To by se na základně Povinnost nikdy nestalo, ale tady je těch pankáčů ze Svobody plno - tam bych se podíval jako první.</text>
+</string>
+<string id="about_quests_dialog_dolg_14">
+	<text>Kdo by mi tady mohl pomoci něco rozšifrovat?</text>
+</string>
+
+	<string id="about_quests_dialog_dolg_141">
+	<text>Na stanici Janov je technik jménem Nitro. Je docela dobrý v elektronice. Jednou jsem zapomněl heslo ke svému PDA a on ho rozluštil během pěti vteřin!</text>
+</string>
+<string id="about_quests_dialog_dolg_143">
+	<text>Janov je místo, kam musíš jít - hledej Nitra, je v tomhle dobrý.</text>
+</string>
+<string id="about_quests_dialog_dolg_15">
+	<text>Mám PDA obchodníka s Povinností. Nevíte o někom, kdo by o něj měl zájem?</text>
+</string>
+<string id="about_quests_dialog_dolg_151">
+	<text>Prodejce ve službě Povinností? To je nemožné! Na druhou stranu, pokud máš nějaké informace, pak bys je měl nejlépe předat podplukovníkovi Sulgovi a nechat ho, ať se tím zabývá.</text>
+</string>
+<string id="about_quests_dialog_dolg_16">
+	<text>Kde tady v okolí najdu nástroje?</text>
+</string>
+<string id="about_quests_dialog_dolg_163">
+	<text>Nedaleko je celá továrna. Samozřejmě už může být vybrána, ale i tak bych na tvém místě zkontroloval sklady v továrně.</text>
+</string>
+<string id="about_quests_dialog_dolg_165">
+	<text>Byl bych tebou, začal bych hledat ve starých dílnách. Možná také něco najdeš v obchodech.</text>
+</string>
+<string id="about_quests_dialog_dolg_166">
+	<text>Tady v okolí jsou jen mutanti a anomálie. Hah! V anomáliích bych to nehledal a trpaslíci a kontrolér ti s tím taky nepomůžou.</text>
+</string>
+<string id="about_quests_dialog_dolg_169">
+	<text>Vlastně je tady pod mostem vlak. Už jsem je viděl - obvykle se používají k přepravě technického personálu, takže bys tam mohl najít nějaké nářadí.</text>
+</string>
+<string id="about_quests_dialog_dolg_17">
+	<text>Kdo dokáže odemknout paměťový modul?</text>
+</string>
+<string id="about_quests_dialog_dolg_171">
+	<text>Nitro - je to jediný člověk na stanici Janov, který o takových věcech něco ví.</text>
+</string>
+<string id="about_quests_dialog_dolg_172">
+	<text>Musíš se s tím poradit s technikem. Jediný slušný technik v okolí je Nitro v Janově.</text>
+</string>
+<string id="about_quests_dialog_dolg_18">
+	<text>Kdo by se mohl vloupat do ocelového kontejneru?</text>
+</string>
+<string id="about_quests_dialog_dolg_181">
+	<text>Říká se, že mezi stalkery je technik. Je to opilec, ale ví, co dělá. Promluv s ním.</text>
+</string>
+	<string id="about_quests_dialog_dolg_182">
+	<text>Hah, to už s sebou rovnou můžeš nosit trezor. S tím ti Nitro určitě nepomůže... kdyby měl elektronický zámek, možná by to bylo něco jiného...</text>
+</string>
+<string id="about_quests_dialog_dolg_19">
+	<text>Hledám stalkera jménem Straka. Nevíte, kde bych ho mohl najít?</text>
+</string>
+<string id="about_quests_dialog_dolg_191">
+	<text>Raďsi se zeptej stalkerů - ti vědí své. O Strakaovi, nebo jak se jmenuje, jsem nikdy neslyšel.</text>
+</string>
+<string id="about_quests_dialog_dolg_2">
+	<text>Víte něco o těch havarovaných vrtulnících?</text>
+</string>
+<string id="about_quests_dialog_dolg_20">
+	<text>Kdo by mohl mít zájem o informace o zakladateli Povinnosti?</text>
+</string>
+<string id="about_quests_dialog_dolg_201">
+	<text>Našeho velitele, samozřejmě. Nahlas vše, co víš, Sulgovi a určitě se ti dostane vděčnosti od Povinnosti.</text>
+</string>
+<string id="about_quests_dialog_dolg_22">
+	<text>Jo, naši zvědové viděli vojenský vrtulník, jak se snáší k záložním polím u Jupitera. Říkali, že jim pořád signalizovali, aby změnili kurz, ale piloti asi měli jiné starosti. Zajímalo by mě, jestli se klukům z armády podařilo dostat z minového pole v pořádku.</text>
+</string>
+<string id="about_quests_dialog_dolg_23">
+	<text>Tady v okolí ne. Naše přítomnost je tu omezená... zkus se zeptat našich chlapců u Janova.</text>
+</string>
+
+	<string id="about_quests_dialog_dolg_25">
+	<text>Naše hlídka oznámila, že se vojenský vrtulník pokusil nouzově přistát poblíž továrny Jupiter. Bohužel vrtulník narazil přímo do střechy nad dílnami. Pravděpodobně nikdo nepřežil - hlídka po havárii nezachytila žádné nouzové signály.</text>
+</string>
+<string id="about_quests_dialog_dolg_3">
+	<text>Viděl jsi v okolí nějaké vojáky?</text>
+</string>
+<string id="about_quests_dialog_dolg_30">
+	<text>Kdo by mohl mít zájem o mapy oblasti mezi Zatonem a Jupiterem?</text>
+</string>
+<string id="about_quests_dialog_dolg_301">
+	<text>Někoho, kdo pro ně má nějaké využití. Mám na mysli Pilota - je průvodcem na trase mezi Janovem a Skadovskem, takže by se mu ty mapy určitě hodily.</text>
+</string>
+<string id="about_quests_dialog_dolg_31">
+	<text>Vojenský? Žádné jsem tu neviděl, ale v téhle oblasti netrávíme moc času.</text>
+</string>
+<string id="about_quests_dialog_dolg_35">
+	<text>Nedávno byla v minovém poli spatřena mrtvola vojáka. Pravděpodobně je to jeden z těch chlápků, co přiletěli tím vrtulníkem. Vrtulník kromě posádky přepravuje až osm lidí, takže museli najít cestu ven, i když nikdo neví, kam se poděli.</text>
+</string>
+<string id="about_quests_dialog_dolg_36">
+	<text>V bunkru vedoucích byl viděn vojenský chlápek, který se tam dostal teprve nedávno. Podrobnosti neznám.</text>
+</string>
+<string id="about_quests_dialog_dolg_37">
+	<text>Nějaký chlápek ve vojenské uniformě byl nedávno viděn, jak vchází do budovy u komplexu Volchovské AA. Je však docela dobře možné, že to byl jen zombie, který si spletl vojáka.</text>
+</string>
+<string id="about_quests_dialog_dolg_38">
+	<text>Šliďáci zahleděli vojenskou jednotku poblíž Jupiterova závodu. Soudě podle popisu to byly speciální jednotky. Doprovázel je neidentifikovaný stalker a mířili k Pripjati. Zní to důvěryhodně, ale zkušenost ukazuje, že takovým informacím se obvykle nedá věřit.</text>
+</string>
+<string id="about_quests_dialog_dolg_4">
+	<text>Víš, jak se dostat do Pripjati?</text>
+</string>
+	<string id="about_quests_dialog_dolg_40">
+	<text>Koho bych mohl najmout na ochranu vědců?</text>
+</string>
+<string id="about_quests_dialog_dolg_401">
+	<text>Nejsou schopni najít lepší ochranu, než jakou jim poskytne Povinnost. Zajdi za podplukovníkem Sulgou do Janova - určitě spolu něco vymyslíte.</text>
+</string>
+<string id="about_quests_dialog_dolg_402">
+	<text>Ne. Dokud pro ně budou pracovat lidé ze Svobody, budeme se od toho místa držet dál. Poslouchat ty idi*ty, jak celý den vyprávějí ty svoje pos*raný vtipy, je osud horší než smrt.</text>
+</string>
+<string id="about_quests_dialog_dolg_42">
+	<text>Poslání nemá v tuto chvíli důvod hledat cestu do Pripjati, ale i tak sbíráme informace. Existují nepotvrzené zprávy, že do Pripjati vedou tunely pod elektrárnou Jupiter. Prověření této informace by vyžadovalo důkladné prohledání všeho v okolí elektrárny.</text>
+</string>
+<string id="about_quests_dialog_dolg_43">
+	<text>Ne. Pokud potřebuješ takovou informaci, budeš si muset promluvit s civilním průvodcem - naši průzkumníci mají už tak dost práce.</text>
+</string>
+<string id="about_quests_dialog_dolg_44">
+	<text>Naši zvědové pravidelně kontrolují oblast, jestli tam nejsou bezpečné cesty do Pripjati, ale zatím to nepřineslo žádné výsledky.</text>
+</string>
+<string id="about_quests_dialog_dolg_5">
+	<text>Můžeš mi navrhnout někoho, kdo není příliš vázán a byl by ochotný podniknout tah na Pripjat?</text>
+</string>
+<string id="about_quests_dialog_dolg_51">
+	<text>Přítomnost Povinnosti v této oblasti je omezena. Promluvte si s našimi lidmi v Janově.</text>
+</string>
+<string id="about_quests_dialog_dolg_52">
+	<text>Povídá se, že vědci mají ve svém bunkru vojáka. Nemá ale moc možnosti, jak se dostat ven. Víš, vědci tam jsou na dvanáct až osmnáct měsíců a on se pěšky a po svých na okraj Zóny nedostane. Vzhledem k tomu by ho to určitě zajímalo.</text>
+</string>
+	
+	<string id="about_quests_dialog_dolg_53">
+	<text>Navrhuji ti, aby ses podíval mezi lidi, kteří touží po dobrodružství. Například na stanici Janov je Stalker Váňo. Je mu jedno, do jakých průšvihů se dostane, a mohl by být užitečný - ten kluk dokáže najít cestu skrz anomálii se zavřenýma očima.</text>
+</string>
+<string id="about_quests_dialog_dolg_54">
+	<text>No, mohl bys začít náborovou kampaň v psychiatrické léčebně... Pak ale zase znám dobrou alternativu - monolitické bojovníky. Když už jsme u toho, poblíž komplexu AA byl spatřen jejich oddíl a nejspíš znají i cestu do Pripjati... Hej, chlape, doufám, že mě nebereš vážně...</text>
+</string>
+<string id="about_quests_dialog_dolg_56">
+	<text>Pohledni se po dobrovolnících v Povinnosti. Například Stridera. Zatím nemá žádnou misi, takže si myslím, že by ho podplukovník mohl pustit s tebou.</text>
+</string>
+<string id="about_quests_dialog_dolg_57">
+	<text>Každý ví, že Povinnost má nejlepší stíhače... ale momentálně máme jiné cíle.</text>
+</string>
+<string id="about_quests_dialog_dolg_6">
+	<text>Našel jsem neobvyklého střelce. Nevíš o někom, kdo by o ní mohl něco vědět?</text>
+</string>
+<string id="about_quests_dialog_dolg_62">
+	<text>No, já budu! To je ale dělo! Vyrobil jsi ho sám, nebo jsi ho opravdu našel? Nikdy jsem nic takového neviděl... Zeptej se techniků.</text>
+</string>
+<string id="about_quests_dialog_dolg_7">
+	<text>Koho bych mohl najmout, aby provedl měření pro vědce?</text>
+</string>
+<string id="about_quests_dialog_dolg_71">
+	<text>To je hloupá otázka - Povinnost, samozřejmě. Máme spoustu lidí se zkušenostmi a s vědci jsme už dříve spolupracovali. Zajdi za podplukovníkem Sulgou - jsem si jistý, že na tuhle práci najde oddíl.</text>
+</string>
+	<string id="about_quests_dialog_dolg_72">
+	<text>Kdo by tam chtěl pracovat, když je bunkr chráněn Svobodou? Ti zatracení pacifisté jsou většinu času tak zfeťovaní, že se mezi sebou střílejí stejně jako nepřítel.</text>
+</string>
+<string id="about_quests_dialog_dolg_8">
+	<text>Nasel jsem velmi zvláštní artefakt. Můžete mi navrhnout kupce?</text>
+</string>
+<string id="about_quests_dialog_dolg_81">
+	<text>Artefakty jsou všechny podivné a ani bych nedoporučoval nosit je u sebe. Předej ho odborníkům a budeš s ním hotov.</text>
+</string>
+<string id="about_quests_dialog_dolg_83">
+	<text>Měl bys tu věc ukázat stalkerům - ti jsou na tyhle věci experti. A ještě lépe, ukaz to člověku, kterému prodávají své artefakty.</text>
+</string>
+<string id="about_quests_dialog_dolg_9">
+	<text>Nasel jsem poblíž cele doupe Upírů. Co budeme dělat?</text>
+</string>
+<string id="about_quests_dialog_dolg_91">
+	<text>Oddíly Povinnosti se v této oblasti momentálně nezapojí do vyčišťovacích operací, takže doupe bude muset počkat.</text>
+</string>
+<string id="about_quests_dialog_dolg_98">
+	<text>Dobře, zapomeň na to.</text>
+</string>
+
+	<!-- About Quests Freedom -->
+	<string id="about_quests_dialog_freedom_0">
+	<text>Slyšel jsi tu v poslední době nějaké novinky?</text>
+</string>
+<string id="about_quests_dialog_freedom_1">
+	<text>Jaké?</text>
+</string>
+<string id="about_quests_dialog_freedom_10">
+	<text>Co si myslíš o Šikulovi?</text>
+</string>
+<string id="about_quests_dialog_freedom_101">
+	<text>Já jsem o něm moc neslyšel... Raději se zeptej stalkerů, je to jeden z nich, ne?</text>
+</string>
+<string id="about_quests_dialog_freedom_11">
+	<text>Slyšel jsi něco o Oáze o tom artefaktu?</text>
+</string>
+<string id="about_quests_dialog_freedom_111">
+	<text>Mnoho... Pěkný příběh, to se musí nechat. Palác v písku, ostrov v mlze, hrad v oblacích... Sangri La, Eden... Oáza. Každý svobodný člověk má svůj sen a já se mu za to nedivím.</text>
+</string>
+<string id="about_quests_dialog_freedom_112">
+	<text>No, od jednoho stalkera jsem slyšel zajímavý příběh. Myslím, že to byl první člověk, který se mi zmínil o Oáze. Říkal, že podle legendy se ti tam zahojí všechna zranění a ty se uklidníš a uvolníš, jako bys v Zóně vůbec nebyl. Od té doby jsem ho neviděl... Teprve když odešel, vzpomněl jsem si, že dřív kulhal, ale když odešel, chodil rovně a vypadal, že sakra omládl.</text>
+</string>
+<string id="about_quests_dialog_freedom_113">
+	<text>Ano, svobodní stalkerové mi dali souřadnice... Deset různých sad souřadnic. Když je dáme dohromady, dostaneme oblast od Vypalovače po Elektrárnu s Janovským barem někde poblíž středu. Je docela možné, že se právě teď nacházíme v Oáze, tak si to užijte!</text>
+</string>
+<string id="about_quests_dialog_freedom_12">
+	<text>Potkal jsi někdy stalkera jménem Straka?</text>
+</string>
+<string id="about_quests_dialog_freedom_121">
+	<text>Ne. Moc svobodných stalkerů tady neznám.</text>
+</string>
+<string id="about_quests_dialog_freedom_122">
+	<text>Magpie? Ne, ale to je super jméno.</text>
+</string>
+<string id="about_quests_dialog_freedom_13">
+	<text>Víš, kdo mohl ukrást věci z osobní skříňky?</text>
+</string>
+
+	<string id="about_quests_dialog_freedom_131">
+	<text>Ne, nikdo takový tu není. Máme tu lidi, kteří ti uloupnou kousek chleba nebo doušek pití, když se nedíváš, ale žádní vyslovení zloději...</text>
+</string>
+<string id="about_quests_dialog_freedom_14">
+	<text>Kdo by mi mohl pomoci s dešifrováním něčeho tady?</text>
+</string>
+<string id="about_quests_dialog_freedom_141">
+	<text>Slyšel jsem, že Nitro v Janově fandí kombinacím a algoritmům. Nejsem si ale jistý, nikdy jsem s ním pořádně nemluvil - pracuje pro Povinnost, takže na nás svobodné nemá moc času.</text>
+</string>
+<string id="about_quests_dialog_freedom_143">
+	<text>Nejsem moc velký odborník na místní experty... Až tam budeš příště, zeptej se našich kluků v Janově - ti to budou vědět určitě.</text>
+</string>
+<string id="about_quests_dialog_freedom_15">
+	<text>Mám PDA obchodníka se službami. Nevíš o někom, kdo by o něj měl zájem?</text>
+</string>
+<string id="about_quests_dialog_freedom_151">
+	<text>To zní zajímavě! Dal bych to Lokimu, našemu vůdci v Janově. Ten se postará o to, aby svobodní pronásledovatelé věděli, jaké lidi Povinnost rekrutuje do svých řad.</text>
+</string>
+<string id="about_quests_dialog_freedom_16">
+	<text>Kde tady v okolí najdu nástroje?</text>
+</string>
+<string id="about_quests_dialog_freedom_163">
+	<text>V továrně, kámo, kde jinde? Není tam zrovna živo, ale sklady ti zvednou náladu. Je tam trochu bezpečněji a určitě tam najdeš nějaké slušné nářadí.</text>
+</string>
+
+
+	<string id="about_quests_dialog_freedom_165">
+	<text>To je dobrá otázka, člověče. Zamysleme se nad ní. Kde najdeš nástroje mimo Zónu? Když máš půlku mozku, tak si je koupíš v obchodě... Pokud nemáš, hledáš nářadí a mozek v dílně. Je to tak? V Zóně je to stejně - musíte hledat na stejných místech. Je to tak jednoduché, stalkere!</text>
+</string>
+<string id="about_quests_dialog_freedom_166">
+	<text>Nástroje? Poslyš, chlape, to je nějaký kód? Nejsou tu žádný prasata nebo tak něco, můžeš mluvit svobodně... Aha, to myslíš vážně? V tom případě fakt nevím.</text>
+</string>
+<string id="about_quests_dialog_freedom_169">
+	<text>No, slyšel jsem, že jeden z našich kluků hledal nářadí a nasedl do vlaku pod mostem. Podle všeho je tam Tesla... Každopádně říkal, že to tam není žádná sranda... Proč ti to říkám? No, říkal, že tam viděl ležet nářadí, ale rozhodl se ho tam nechat, protože to nebylo bezpečné.</text>
+</string>
+<string id="about_quests_dialog_freedom_17">
+	<text>Kdo dokáže odemknout paměťový modul?</text>
+</string>
+<string id="about_quests_dialog_freedom_171">
+	<text>No, Tukarev v bunkru vědců to dokáže. Je rychlý, dobrý a zdvořilý. Je tu také Nitro v Janově, věšák ve službě. Je sice levný a podelaný, ale nejspíš to zvládne.</text>
+</string>
+<string id="about_quests_dialog_freedom_172">
+	<text>Zkušený technik, řekl bych. Ten místní se zabývá spíš mechanickými věcmi, takže pokud nepotřebuješ rozvrtat hlavěň paměťového modulu, doporučuji se zeptat v Jupiteru.</text>
+</string>
+<string id="about_quests_dialog_freedom_18">
+	<text>Kdo by se mohl vloupat do ocelového kontejneru?</text>
+</string>
+<string id="about_quests_dialog_freedom_181">
+	<text>No, Kardan ve Skadovsku by měl být dobrý. Lidé říkají, že ví, co dělá, i když je většinu času opilý. Možná by ti mohl pomoct rozlousknout ten kontejner.</text>
+</string>
+<string id="about_quests_dialog_freedom_182">
+	<text>Je tu někdo, kdo se živí rozbíjením ocelových kontejnerů? Místní technik Nitro ti ale nepomůže. Prý se spíš vloupává do cizí elektroniky.</text>
+</string>
+<string id="about_quests_dialog_freedom_19">
+	<text>Pátrám po stalkerovi jménem Straka. Nevíte, kde bych ho mohl najít?</text>
+</string>
+	<string id="about_quests_dialog_freedom_191">
+	<text>Nikdy jsem o něm neslyšel... Na tvém místě bych se zeptal ostatních svobodných stalkerů.</text>
+</string>
+<string id="about_quests_dialog_freedom_2">
+	<text>Víte něco o těch havarovaných vrtulnících?</text>
+</string>
+<string id="about_quests_dialog_freedom_20">
+	<text>Kdo by mohl mít zájem o informace o zakladateli frakce Povinnost?</text>
+</string>
+<string id="about_quests_dialog_freedom_201">
+	<text>Loki, o tom není pochyb. Je to náš vůdce tady v Janově. I kdyby nevěděl, co s těmi informacemi dělat - hlavní je, aby se k nim nedostala Povinnost. Dovedeš si představit, kolik propagandistických keců to vygeneruje? Bolí mě z toho hlava, jen na to pomyslím.</text>
+</string>
+<string id="about_quests_dialog_freedom_22">
+	<text>Jo, slyšel jsi tu historku o vrtulníku na minovém poli? V podstatě to bylo tak, že se Jar-Hlavy zřítily na záložní přistávací plochu, kterou jejich kolegové Jar-Hlavy zaminovali před šesti lety. Někteří lidé teď říkají, že to udělali z hlouposti, ale já si myslím, že je v tom něco víc. Podívejte se na to takhle: nikdo tam nepůjde, takže jakmile hoši z armády dokončí svoji misi, mohou se vrátit k vrtulníku, trochu ho opravit a jít. Rád bych věděl, co je jejich úkolem...</text>
+</string>
+<string id="about_quests_dialog_freedom_23">
+	<text>Nejsem místní kámoš, vím hovno. Zastav se u nás v Janově - naši hoši ti řeknou všechno, co chceš vědět, a pro jistotu i všechno, co nevíš.</text>
+</string>
+<string id="about_quests_dialog_freedom_25">
+	<text>Jo, nějací kluci zahledli vrtulník, který letal opravdu chaoticky jako onehdy. Taky nepristal na dobrém místě - přímo na jedné ze střech Jupiteru. Říkali, že se zřítil a pak proletěl střechou do budovy a stáhl s sebou všelijaké svinstvo.</text>
+</string>
+
+<string id="about_quests_dialog_freedom_3">
+	<text>Viděl jsi v okolí nějakou armádu?</text>
+</string>
+<string id="about_quests_dialog_freedom_30">
+	<text>Kdo by měl zájem o mapy oblasti mezi Zatonem a Jupiterem?</text>
+</string>
+<string id="about_quests_dialog_freedom_301">
+	<text>Pilot určitě, člověče. Je to hlavní zdejší průvodce svobodných stalkerů - pokud chceš mluvit o mapách, tak chceš právě jeho.</text>
+</string>
+<string id="about_quests_dialog_freedom_31">
+	<text>Klid, kámo. Nejsou tu žádní poldové, závařovači ani zasraná domobrana - v Zóně jsi v bezpečí, jak jen to jde.</text>
+</string>
+<string id="about_quests_dialog_freedom_35">
+	<text>Ne, ale nějací chlapi mi říkali, že viděli armádní jednotku, jak se plazí minovým polem u heliportu. Ti kluci přemýšleli, že jim pomohou, ale rozhodli se, že ne. Závařovači jsou nepředvídatelná rasa, nikdy nevíš, kdy jim rupne v bedně a vystřelí ti do zad.</text>
+</string>
+<string id="about_quests_dialog_freedom_36">
+	<text>Sám jsem žádného neviděl, ale proslýchá se, že v bunkru vědců je závařovačí hlava. Biolog Ozersky říkal, že je z toho vrtulníku, co se zřítil na elektrárnu... Vtip je v tom, že si sprťi pořídili domácího vojáka.</text>
+</string>
+<string id="about_quests_dialog_freedom_37">
+	<text>Osobně ne, ale slyšel jsem pár věcí od svobodných stalkerů. Říkali, že u Volchovského komplexu AA byla spatřena závařovačí hlava. Musí to být duch nebo zombie, která se probudila... co myslíš?</text>
+</string>
+<string id="about_quests_dialog_freedom_38">
+	<text>Ne. Jeden chlápek říkal, že viděl sedm vojáků, jak sledují svobodného stalkera kolem radiostanice směrem k Pripjati. V Zóně už nějakou dobu není žádná tráva, takže si říkám, že to musí být čistě a jednoduše bláznivé řeči.</text>
+</string>
+<string id="about_quests_dialog_freedom_4">
+	<text>Víte, jak se dostat do Pripjati?</text>
+</string>
+<string id="about_quests_dialog_freedom_40">
+	<text>Koho bych mohl najmout na ochranu vědců?</text>
+</string>
+<string id="about_quests_dialog_freedom_401">
+	<text>Svoboda, my jinými slovy. S vědci pracujeme pořád, takže jejich hlídání by pro nás byla hračka. Promluv si s naším šéfem Lokim v Janově - určitě bude souhlasit.</text>
+</string>
+<string id="about_quests_dialog_freedom_402">
+	<text>Nejsem si jistý, příteli, protože podle toho, co jsem slyšel, si Jojači najali na práci jednotku Povinnost... Rádi bychom hlídali vědce, ale koukat každý den na ty zapařené obličeje Povinnosti za to nestojí.</text>
+</string>
+<string id="about_quests_dialog_freedom_42">
+	<text>Říká se, že se tam dá dostat z Jupiteru... Myslím tu rostlinu, ne tu planetu... Hah! To je dobrý, to musíš uznat!</text>
+</string>
+<string id="about_quests_dialog_freedom_43">
+	<text>Víte, já nemám ani paru. Jen si na to nemůžu najít čas... Zeptal bych se Pilota v táboře, jo? Je to svobodný Stalker a zná tu oblast líp než kdokoli jiný.</text>
+</string>
+<string id="about_quests_dialog_freedom_44">
+	<text>Brácho, kdybych to věděl, už bych tam dávno šel. Dostat se pryč od Povinnosti, závařovaček a všech těch bojů by stálo za to...</text>
+</string>
+<string id="about_quests_dialog_freedom_5">
+	<text>Můžeš mi navrhnout někoho, kdo není příliš svázaný a byl by ochotný se o Pripjat ucházet?</text>
+</string>
+<string id="about_quests_dialog_freedom_51">
+	<text>Promiň, příteli, ale v Zatonu nikoho neznám... Dejte na mou radu a zeptejte se našich chlapců v Janově.</text>
+</string>
+<string id="about_quests_dialog_freedom_52">
+	<text>Znáš bunkr vědců? No, mají tam problém. Nejdřív se Garry, stalker, rozhodl, že se vydá do Pripjati, a teď stejný nápad dostal i ten závařovač, který tam je. Garry je samotář a je na to hrdý, ale ten závařovačí hlava je přesně to, co hledáte.</text>
+</string>
+<string id="about_quests_dialog_freedom_53">
+	<text>Vano v Janově je stejně dobrý jako každý jiný. Je to slušný chlápek a kdykoli by se mohl přidat ke Svobodě, kdyby chtěl. Pokud vím, není nadšený z našeho boje s Povinností... nebo vlastně z jakéhokoli boje. To je jeho názor na věc a my ho respektujeme!</text>
+</string>
+<string id="about_quests_dialog_freedom_54">
+	<text>Jistá věc. Jeden z našich chlapů si všiml oddílu u vyschlého jezera. Určitě znají Pripjat jako své boty a nezdá se, že by pro někoho pracovali. Určitě budou i stateční, protože jsou to bojovníci Monolitu!</text>
+</string>
+	<string id="about_quests_dialog_freedom_55">
+		<text>Tak. Strider, vůdce našich nových rekrutů... zdá se, že se v našich řadách cítí nesvůj. Jeho chlapci se adaptovali v pohodě, ale on tu není až tak spokojený... Promluv s ním - nerad vidím dobrého človeka tam, kde mu srdce neleží...</text>
+	</string>
+
+<string id="about_quests_dialog_freedom_57">
+	<text>Ne, nemám tušení.</text>
+</string>
+<string id="about_quests_dialog_freedom_6">
+	<text>Našel jsem neobvyklého střelce. Nevíte o někom, kdo by o něm mohl něco vědět?</text>
+</string>
+<string id="about_quests_dialog_freedom_62">
+	<text>Našel jsi k ní návod, že ne? Ne? Tak to nemám ponětí.</text>
+</string>
+<string id="about_quests_dialog_freedom_7">
+	<text>Koho bych mohl najmout, aby provedl měření pro vědce?</text>
+</string>
+<string id="about_quests_dialog_freedom_71">
+	<text>Myslím, že naši kluci by to mohli udělat. Svoboda má svůj podíl chytrých lidí, a když něco nevíme, zeptáme se v bunkru. Rádi bychom měli příležitost pomoci vědě! Promluv si s Lokim v Janově - určitě ti řekne totéž.</text>
+</string>
+<string id="about_quests_dialog_freedom_72">
+	<text>Já a kluci bychom to rádi udělali, ale Povinnost v těchto dnech hlídá bunkr. Zaskočit za vědci je problém už takhle, ale být tam každý den by prostě nebylo zdravé, to je zatraceně jisté.</text>
+</string>
+<string id="about_quests_dialog_freedom_8">
+	<text>Našel jsem velmi zvláštní artefakt. Můžeš mi navrhnout kupce?</text>
+</string>
+<string id="about_quests_dialog_freedom_81">
+	<text>Potřebuješ sběratele, kamaráde. V Janově žádného nenajdeš, vzhledem k tomu, že i někteří stalkeři se sem bojí chodit. Raději se zeptej v Zatonu, tam je to trochu klidnější.</text>
+</string>
+<string id="about_quests_dialog_freedom_83">
+	<text>Znáš Fouska, barmana v táboře svobodných Stalkerů? Vykupuje artefakty a taky tě moc neokrádá. Příjemný chlápek, ať se na to díváš z jakékoliv strany. Škoda, že pro nás nepracuje, vážně.</text>
+</string>
+<string id="about_quests_dialog_freedom_9">
+	<text>Našel jsem poblíž cele doupě Upírů. Co budeme dělat?</text>
+</string>
+<string id="about_quests_dialog_freedom_91">
+	<text>Člověče, musíš ty svobodné stalkery varovat - mají tady přece svůj hlavní tábor. Divoká příroda v Zóně je jistě cenná, to je jasné, ale větší starost mi dělají lidé na tomto místě.</text>
+</string>
+<string id="about_quests_dialog_freedom_98">
+	<text>Dobře, zapomeň na to.</text>
+</string>
+
+	<!-- About Quests Stalker -->
+	<string id="about_quests_dialog_stalkers_0">
+	<text>Slyšel jsi tu v poslední době nějaké novinky?</text>
+</string>
+<string id="about_quests_dialog_stalkers_1">
+	<text>Jaké?</text>
+</string>
+<string id="about_quests_dialog_stalkers_10">
+	<text>Co si myslíš o Šikulovi?</text>
+</string>
+<string id="about_quests_dialog_stalkers_101">
+	<text>Neměl jsem to potěšení... Raději se zeptej nějakých Skadovských štamgastů.</text>
+</string>
+<string id="about_quests_dialog_stalkers_11">
+	<text>Slyšel jsi něco o Oáze o tom artefaktu?</text>
+</string>
+<string id="about_quests_dialog_stalkers_111">
+	<text>Slyšel jsem o Oáze všechno! Je to legenda, mýtus... každý stalker od ní očekává něco jiného a každý z nich zatraceně tvrdí, že zná přesnou polohu. Škoda, že jediné, co mají ta místa společného, je to, že je zatraceně těžké se k nim dostat.</text>
+</string>
+<string id="about_quests_dialog_stalkers_112">
+	<text>No, říká se, že se tam rány hojí okamžitě a energie se ti doplní během několika minut... Říká se, že v Oáze žádná nemoc ani choroba nevydrží, dokonce ani otrava radiací! Jedine, co však vím jistě, je místo, kde se nachází... Chceš to vědět? Je to uprostřed Zóny! Ale musí to zůstat mezi námi, nikomu ani slovo!</text>
+</string>
+<string id="about_quests_dialog_stalkers_113">
+	<text>Slyšel jsem, že každý mutant, kterého tam potkáš, prostě projde kolem, aniz by se na tebe podíval. Také se říká, že je tam artefakt zvaný Srdce oázy... Nikdo neví, co přesně dělá, ale jedno je jisté: neměl bys ho dotýkat. Kdo ho vezme, nebude mít v Zóně už žádné místo... Kde se nachází? Člověče, každý přece ví, že je to v Pripjati pod ruským kolem! Kde jinde by to mělo být?</text>
+</string>
+<string id="about_quests_dialog_stalkers_12">
+	<text>Potkal jsi někdy stalkera jménem Straka?</text>
+</string>
+<string id="about_quests_dialog_stalkers_121">
+	<text>Jistě jste... Netuším však, kde je teď.</text>
+</string>
+<string id="about_quests_dialog_stalkers_122">
+	<text>Hrm... Nikdy jsem o něm neslyšel...</text>
+</string>
+	<string id="about_quests_dialog_stalkers_13">
+	<text>Ne, nevíš? Zeptejte se starších lidí v Janově, ti by vám mohli pomoci.</text>
+</string>
+<string id="about_quests_dialog_stalkers_131">
+	<text>Ne, ne? Zeptejte se starších lidí v Janově, ti by vám mohli pomoci.</text>
+</string>
+<string id="about_quests_dialog_stalkers_14">
+	<text>Kdo by mi mohl pomoci s dešifrováním něčeho tady?</text>
+</string>
+<string id="about_quests_dialog_stalkers_141">
+	<text>Nitro v Janově, kdo další? Miluje tyhle složité technologické sráčky... mnohem víc než jednání se střelci.</text>
+</string>
+<string id="about_quests_dialog_stalkers_143">
+	<text>Nikdo, koho znám. Zeptejte se v Janově - mají tam nějakého experta.</text>
+</string>
+<string id="about_quests_dialog_stalkers_15">
+	<text>Mám PDA obchodníka se službami. Nevíte o někom, kdo by o něj měl zájem?</text>
+</string>
+<string id="about_quests_dialog_stalkers_151">
+	<text>Znáte Sovu ve Skadovsku? Počítám, že by ji rád získal. Rád se plete do citlivých záležitostí...</text>
+</string>
+<string id="about_quests_dialog_stalkers_152">
+	<text>Na Skadovsku nad Zatonem býval chlapík jménem Sova. Obchoduje s informacemi... tvé PDA by ho mohlo zajímat.</text>
+</string>
+<string id="about_quests_dialog_stalkers_16">
+	<text>Kde tady v okolí najdu nástroje?</text>
+</string>
+<string id="about_quests_dialog_stalkers_161">
+	<text>Sledovatel mi řekl, že jeho starý muž pracoval v dílnách rozvodny před 86. rokem. Říkal, že tam mají všelijaké vybavení, takže tam asi bude i nářadí. Nejspíš už je to všechno zrezivělé na sráčky, ale i tak by to mohlo stát za prohlídku.</text>
+</string>
+<string id="about_quests_dialog_stalkers_162">
+	<text>Znáte tu pilu v lese na kopci? Mělo by tam být nějaké nářadí, pokud se k němu ovšem nikdo nedostal dřív. O tom ale pochybuji: čím blíž se k tomu místu dostáváte, tím víc máte chuť se posrat a utéct k čertu pryč. Desivá není ani radiace, to nechám být...</text>
+</string>
+
+	<string id="about_quests_dialog_stalkers_163">
+	<text>No, továrna Jupiter je přímo tady a určitě tam budou nějaké nástroje. Osobně bych se k samotné rostlině nepřibližoval... z toho místa mi naskakuje husí kůže. Mohl by ses podívat do skladu Jupiteru, do těch na straně továrny.</text>
+</string>
+<string id="about_quests_dialog_stalkers_164">
+	<text>Slyšel jsem, že v Pripjati je pár míst, kde se dá najít všelijaké technické harampádí. Jedním z nich má být starý sovětský obchodní dům. Bylo to v podstatě jediné místo, kde se tehdy prodávalo něco užitečného.</text>
+</string>
+<string id="about_quests_dialog_stalkers_165">
+	<text>Jak to mám vědět? Podívejte se do starých dílen nebo obchodu, mohlo by tam být něco použitelného.</text>
+</string>
+<string id="about_quests_dialog_stalkers_166">
+	<text>Pravdu řečeno, poslední místo, kde jsem viděl slušné nářadí, byl Sidorovičův bunkr v Kordonu. Jasně, musíš za ně zaplatit, ale jsou nové a taky nejsou zas tak drahé.</text>
+</string>
+<string id="about_quests_dialog_stalkers_167">
+	<text>Víš, kamaráde, nepřišel jsem do Zony hledat nástroje. Přemýšlej o tom, k čemu je radioaktivní kladivo?</text>
+</string>
+<string id="about_quests_dialog_stalkers_168">
+	<text>Slyšel jsem zvěst, že ve starém servisním středisku si můžeš vyzvednout kousky... Možná tam najdeš i nářadí. Ale stejně jako u všeho ostatního: jediný způsob, jak získat dobré věci, je dostat se k nim jako první.</text>
+</string>
+<string id="about_quests_dialog_stalkers_169">
+	<text>Dobrá otázka... Na tvém místě bych se podíval do starého vlaku pod mostem. Neptej se proč... Můj instinkt mi říká, že bys mohl něco najít.</text>
+</string>
+<string id="about_quests_dialog_stalkers_17">
+	<text>Kdo dokáže odblokovat paměťový modul?</text>
+</string>
+<string id="about_quests_dialog_stalkers_171">
+	<text>Nech mě přemýšlet... No, Nitro v Janově to určitě dokáže. Jinak je tu ještě Tukarev, vědecký technik a skutečný profík. Musíš si ale rozmyslet, co chceš, protože Nitro je mnohem levnější.</text>
+</string>
+<string id="about_quests_dialog_stalkers_172">
+	<text>No, budeš potřebovat technika, ale jediný v okolí je Kardán. Jde o to, že po tolika letech na dně láhve není zrovna bezpečný v blízkosti složité elektroniky. Být tebou, poptám se v Jupiteru - tam mají ty správné odborníky.</text>
+</string>
+
+	<string id="about_quests_dialog_stalkers_18">
+	<text>Kdo by se mohl vloupat do ocelového kontejneru?</text>
+</string>
+<string id="about_quests_dialog_stalkers_181">
+	<text>Kardan ve Skadovsku, hádam. Vždyť na to, jak prorezává visací zámky, je radost se dívat.</text>
+</string>
+<string id="about_quests_dialog_stalkers_182">
+	<text>Předpokládám, že je to nějaký technik. Nitro to ale nejspíš dělat nebude - na drsné věci není.</text>
+</string>
+<string id="about_quests_dialog_stalkers_183">
+	<text>Hah, na to se ptáš v Pripjati?! Dej na mou radu a hledej někoho trochu dál od centra Zony.</text>
+</string>
+<string id="about_quests_dialog_stalkers_19">
+	<text>Hledám stalkera jménem Straka. Nevíš, kde bych ho mohl najít?</text>
+</string>
+<string id="about_quests_dialog_stalkers_191">
+	<text>Nejlépe se zeptat Fouska, barmana ve Skadovsku. Ten obvykle ví, kde se stalkerové nacházejí.</text>
+</string>
+<string id="about_quests_dialog_stalkers_193">
+	<text>Stalkere? Jak to mám sakra vědět? Nejlepší bude, když se zeptáš v Zatonu, tam se potlouká hodně často.</text>
+</string>
+<string id="about_quests_dialog_stalkers_2">
+	<text>Víš něco o těch havarovaných vrtulnících?</text>
+</string>
+<string id="about_quests_dialog_stalkers_20">
+	<text>Kdo má zájem o informace o zakladateli frakce Povinnost?</text>
+</string>
+
+	<string id="about_quests_dialog_stalkers_201">
+	<text>Chtěl bych si popovídat se Sovou, obchodníkem s informacemi ve Skadovsku. Můžeš se vsadit, že ho budou zajímat důvěryhodné informace o takové legendě.</text>
+</string>
+<string id="about_quests_dialog_stalkers_21">
+	<text>Sám jsem jednoho viděl... Nevypadalo to, že by havarovalo, ale taky to nelítalo dobře. Kymácel se ze strany na stranu, dokud nepristál na náhorní plošině na jihu Zatonu... Bylo by zajímavé zjistit, jestli někdo přežil... Kdybychom jen znali způsob, jak se tam dostat. Vlastně jsem slyšel, že Noah z psychobarky by to mohl vědět...</text>
+</string>
+<string id="about_quests_dialog_stalkers_22">
+	<text>Slyšel jsem, že nedaleko odsud havarovalo několik vojenských vrtulníků... Lidé říkají různé věci, ale jednu si pamatuji jasně. Říkali, že přistál na záložním heliportu, který kdysi zaminováli sami jar-hlavy. Věřil bys té ironii? Můj fotr říkával: "Nekopej jámu jinému, protože to budeš ty, kdo do ní spadne." To je pravda, ne?</text>
+</string>
+<string id="about_quests_dialog_stalkers_23">
+	<text>Můj kamarád mi vyprávěl tenhle příběh... Šel do Železného lesa pro nějaké artefakty, a jakmile tam došel, uslyšel za sebou ránu. Otočil se, aby se podíval, co to je, a uviděl vrtulník, který se k němu řítil plnou rychlostí a cestou strhával pylonky a další sr*čky. Vypadl odtamtud... Překvapuje mě, že se dostal ven, aniž by přistál v anomálii. S hledáním Železného lesa nebudeš mít velké problémy - je vidět na míle daleko. Je taky plný poltergeistů, takže si zachovejte rozvahu.</text>
+</string>
+<string id="about_quests_dialog_stalkers_24">
+	<text>Slyšel jsem, že jeden přistál na jižní plošině, ale dostat se tam není snadné. Další věc, kterou jsem slyšel, je, že někdo zahlédl Noeho na okraji té náhorní plošiny, což znamená, že ten psychopat zná způsob, jak se na ni dostat.</text>
+</string>
+<string id="about_quests_dialog_stalkers_25">
+	<text>Sám jsem žádného neviděl, ale proslýchá se, že jeden narazil přímo do rostliny... Nikdo to ale nechce prověřit - to místo je prostě příliš nebezpečné.</text>
+</string>
+<string id="about_quests_dialog_stalkers_26">
+	<text>Jeden stalker mi řekl, že viděl několik vojenských vrtulníků, které se dostaly do nějakých potíží... Viděl, jak se na jedné z nich rozsvítil motor a pak spadla přímo do bažiny plné anomálií. Dostaneš se tam celkem snadno, ale samotná bažina je zatracená noční můra... Není to místo pro lidi, to mi věřte.</text>
+</string>
+<string id="about_quests_dialog_stalkers_3">
+	<text>Neviděl jsi tu někde vojáky?</text>
+</string>
+<string id="about_quests_dialog_stalkers_30">
+	<text>Kdo by mohl mít zájem o mapy oblasti mezi Zatonem a Jupiterem?</text>
+</string>
+	<string id="about_quests_dialog_stalkers_301">
+	<text>Pilote, kdo k sakru ještě? Je to průvodce, viď? Neustále podniká cesty mezi Skadovskem a Janovem, takže pro tvé mapy určitě najde využití.</text>
+</string>
+<string id="about_quests_dialog_stalkers_302">
+	<text>Tohle není Zaton ani Jupiter, takže tyhle mapy jsou tu k ničemu, že? Zeptej se na těch místech a možná budeš mít víc štěstí!</text>
+</string>
+<string id="about_quests_dialog_stalkers_31">
+	<text>Sám jsem žádné neviděl, ale slyšel jsem vyprávět o nějakých vojácích, kteří se dostali dolů z jižní plošiny na straně kanalizace. Prý se nejdřív snažili dostat dolů úplně pořádně, pomocí kabelu a tak. Ale pak to vzdali a sklouzli dolů po zadku, hah! Zónová bobová dráha - to se musí líbit!</text>
+</string>
+<string id="about_quests_dialog_stalkers_32">
+	<text>Slyšel jsem ve Skadovsku rozhovor o asi pěti závažnících, kteří byli spatřeni, jak vycházejí z odvodňovacího tunelu u bažiny. Říkali, že ti vojáci byli špinaví jako čert a jednoho z nich bys ani nerozeznal od bažinného krvilačného, od hlavy až k patě pokrytého slizem.</text>
+</string>
+<string id="about_quests_dialog_stalkers_33">
+	<text>Ne osobně, ale můj přítel viděl, jak vojenská jednotka napadla skupinu žoldáků u zpracovatelské stanice. Ale než si našel pěkné místo, kde by si to mohl vychutnat, bylo po všem, protože závažníci ustoupili. Žádné ztráty na obou stranách... typické, že?</text>
+</string>
+<string id="about_quests_dialog_stalkers_34">
+	<text>Zřejmě bylo spatřeno asi deset závažnických hlav, které se potloukaly kolem Noemovy barky. Vzhledem k tomu, že psychopat byl v tu chvíli naživu, pravděpodobně se s nimi nějak dohodl... což je mu podobné. Zřejmě se nikdo nechtěl Noaha zeptat, co se stalo - od toho šíleného parchanta člověk nikdy neví, co muže čekat.</text>
+</string>
+<string id="about_quests_dialog_stalkers_35">
+	<text>Slyšel jsem, jak v noci něco vybuchlo, a pak mi někdo v Janově řekl, že na starém minovém poli viděl mrtvou závažnickou hlavu a za ní opuštěný armádní vrtulník. Vypadá to, že ve tmě nedokázali určit, kde přistáli, a jeli rovnou přes doly. Nikdo neví, kolik jich bylo šílených.</text>
+</string>
+
+	<string id="about_quests_dialog_stalkers_44">
+	<text>Hah, kdybych znal cestu do Pripjati, nebyl bych tady. Proč myslíš, že jsem šel směrem do středu Zóny? Pripjat je plná artefaktů, člověče! Kdo se tam dostane dřív, bude si žít na vysoké noze!</text>
+</string>
+<string id="about_quests_dialog_stalkers_5">
+	<text>Můžeš mi navrhnout někoho, kdo není příliš svázaný a byl by ochotný se o Pripjat ucházet?</text>
+</string>
+<string id="about_quests_dialog_stalkers_51">
+	<text>Myslím, že tady nikdo takový není. Všichni, kdo chtěli být blíz středu Zóny, odešli na Jupiter. Tam bych se na tvém místě zeptal.</text>
+</string>
+<string id="about_quests_dialog_stalkers_52">
+	<text>Slyšel jsi o tom závažníkovi, který je momentálně s vědci? Myslím, že nemá moc co ztratit, když půjde s tebou. Vědci v nejbližší době neodejdou, sám se do Kordonu nedostane, takže by mohl být natolik hloupý, aby šel do Pripjati s tebou!</text>
+</string>
+<string id="about_quests_dialog_stalkers_53">
+	<text>Znáš Vana na stanici Janov? Je to poctivý chlapík, dobrý stalker a důvěřivý jako čert. Tak tohle je kocour, kterému je lépe mezi anomáliemi než mezi lidmi - dokud tu bude, vždycky se najde někdo, kdo ho využije.</text>
+</string>
+<string id="about_quests_dialog_stalkers_54">
+	<text>Poslouchej, člověče, slyšel jsem, že u vyschlého jezera jižně od komplexu AA byla spatřena jednotka... Podle všeho to nejsou obvyklí stalkři ani Svoboda ani Povinnost - jsou to monolitáři! Takže jestli potřebuješ někoho, s kým bys mohl jít do Pripjati, tak jsou to právě oni. Haha, uvědomuješ si, že si dělám srandu, že jo?</text>
+</string>
+<string id="about_quests_dialog_stalkers_55">
+	<text>Znáš Stridera, vůdce nového oddílu Svobody? Kdybys viděl jeho ubohý polibek, sám bys věděl, že Janov pro něj není to pravé místo. Měl by sis s ním zkusit promluvit. Možná do toho půjde.</text>
+</string>
+<string id="about_quests_dialog_stalkers_56">
+	<text>Znáš Stridera, vůdce nové jednotky Povinnosti? Kdybys viděl jeho ubohý polibek, sám bys věděl, že Janov pro něj není to pravé místo. Měl by sis s ním zkusit promluvit. Možná do toho půjde.</text>
+</string>
+<string id="about_quests_dialog_stalkers_57">
+	<text>Hrm... Nikdo mě nenapadá.</text>
+</string>
+<string id="about_quests_dialog_stalkers_6">
+	<text>Nasel jsem neobvyklého střelce. Nevíte o někom, kdo by o něm mohl něco vědět?</text>
+</string>
+<string id="about_quests_dialog_stalkers_62">
+	<text>Kdo ví? Zeptal bych se odborníků... víš, techniků a tak...</text>
+</string>
+<string id="about_quests_dialog_stalkers_63">
+	<text>Počítám, že zeptat se Kardána ve Skadovsku nebude na škodu, kamaráde. Zabývá se zbraněmi a je dobrý... Možná mu i přes to chlastání zbyla jedna nebo dvě mozkové buňky...</text>
+</string>
+<string id="about_quests_dialog_stalkers_7">
+	<text>Koho bych mohl najmout, aby provedl měření pro vědce?</text>
+</string>
+	<string id="about_quests_dialog_stalkers_71">
+	<text>Znáš lovce Gonta? Myslím, že on a jeho chlapci by neměli nic proti práci pro vědce. Chci říct, že kdyby mutanti začali být na obtíž, tihle chlapci jsou přesně to, co potřebujete, abyste se s nimi vypořádali.</text>
+</string>
+<string id="about_quests_dialog_stalkers_72">
+	<text>Slyšel jsi o Grizzlym, Torbovi a Mitayovi, stalkerech v Janově? Pracují jako trojice a jsou zatraceně sexy! Myslím, že se na takovou práci hodí... pokud se Mitayovi pro jednou podařilo vyhnout se průšvihům.</text>
+</string>
+<string id="about_quests_dialog_stalkers_73">
+	<text>Nemám ponětí, kamaráde. Máme tu dost vlastních starostí.</text>
+</string>
+<string id="about_quests_dialog_stalkers_8">
+	<text>Nasel jsem velmi podivný artefakt. Můžeš mi navrhnout kupce?</text>
+</string>
+<string id="about_quests_dialog_stalkers_81">
+	<text>Myslím, že ne. Lidé tady chodí po známých věcech. Zeptej se v okolí Zatonu, je to blízko k okraji Zóny a tak.</text>
+</string>
+<string id="about_quests_dialog_stalkers_83">
+	<text>Ukázal bych to Fousovi, barmanovi ve Skadovsku. Prý spolupracuje se sběrateli z vnějšího světa a tyhle kočky se vždycky zblázní do divných věcí.</text>
+</string>
+<string id="about_quests_dialog_stalkers_9">
+	<text>Našel jsem poblíž cele doupě Upírů. Co budeme dělat?</text>
+</string>
+<string id="about_quests_dialog_stalkers_91">
+	<text>Pane, o tom musíš říct Fouskovi ve Skadovsku... Protože buď se s nimi vypořádáme, nebo nás roztrhají na kusy.</text>
+</string>
+<string id="about_quests_dialog_stalkers_98">
+	<text>Dobře, zapomeň na to.</text>
+</string>
+<string id="about_skadovsk_dialog_bandit_0">
+	<text>Kde je tady v okolí nejbližší stalker kemp?</text>
+</string>
+<string id="about_skadovsk_dialog_bandit_1">
+	<text>Co jsi zač, hlupáku? O táborech stalkerů nic nevím, ale nejbližší tábor v okolí je Skadovsk. Dám ti souřadnice a udělám to dokonce zadarmo. Pěkný, co?</text>
+</string>
+<string id="about_skadovsk_dialog_stalkers_0">
+	<text>Kde je tady v okolí nejbližší tábor stalkerů?</text>
+</string>
+<string id="about_skadovsk_dialog_stalkers_1">
+	<text>Nahraju ti souřadnice do PDA... Skadovsk je jediný větší tábor v okolí.</text>
+</string>
+<string id="about_quests_dialog_stalkers_27">
+	<text>Slyšel jsem o několika haváriích... Podrobnosti neznám - drby nejsou moje parketa. Omlouvám se, jestli vám to moc nepomůže.</text>
+</string>
+<string id="about_quests_dialog_stalkers_28">
+	<text>Cloveče, mám jiné starosti i bez tvých vrtulníků... Vsadím se, že havárie vrtulníků bolí jako čert, ale jinak nevím, co na to říct.</text>
+</string>
+<string id="about_quests_dialog_bandit_27">
+	<text>O čem to mluvíš, pakaři? Musíš hulit pořádný hardcore sráčky, abys tady viděl vrtulník, protože ty opravdový tady nemají co dělat.</text>
+</string>
+<string id="about_quests_dialog_freedom_27">
+	<text>Huh? Ne, chlape, já se takovýma kravinama nezabývám. Mému poslání šířit vědomosti to ani trochu nepomáháš, víš, co tím myslím?</text>
+</string>
+
+	<string id="about_quests_dialog_dolg_27">
+	<text>Naše hlídka sledovala klesající vrtulníky, ale podrobnosti o tom hlásila osobně podplukovníkovi. Je to na základě potřeby vědět a já tyhle věci opravdu nepotřebuji vědět.</text>
+</string>
+<string id="about_quests_dialog_bandit_50">
+	<text>Kde najdu oblek s uzavřeným dýchacím modulem?</text>
+</string>
+<string id="about_quests_dialog_bandit_501">
+	<text>Nejsem si jistý, naleznem, ale správné množství mincí dokáže zázraky - pokud víš, kam je investovat. Popovídej si s Šikulou... Pokud se dohodnete na podrobnostech, nějak ti ty hadry sežene. Doufám, že ano... pár dní bez něj bychom si tady na Skadovsku užili...</text>
+</string>
+<string id="about_quests_dialog_bandit_502">
+	<text>Co já vím? Sám tu nejsem dlouho... Raději se zeptej v Zatonu, tam si naši bratři dělají vlastní síť.</text>
+</string>
+<string id="about_quests_dialog_bandit_503">
+	<text>Nic netuším. Proč, plánujes strkat nos do anomálie? Hele, kdybys narazil na nějaké artefakty, dej nám vědět. Hned tam budeme... Blahopřát vám k dobře odvedené práci!</text>
+</string>
+<string id="about_quests_dialog_dolg_50">
+	<text>Kde najdu oblek s uzavřeným dýchacím modulem?</text>
+</string>
+<string id="about_quests_dialog_dolg_501">
+	<text>Jak to mám vědět? Počkej... tady na Skadovsku je jeden chlápek, prý ti sežene, co potřebuješ. Sedí na horní palubě, jmenuje se Šikula.</text>
+</string>
+<string id="about_quests_dialog_dolg_502">
+	<text>No, nikdo nepůjde až sem s takovým extra oblekem... Raději se zeptej v Zatonu - o krok blíž k civilizaci.</text>
+</string>
+<string id="about_quests_dialog_dolg_503">
+	<text>Nemám tušení, kde bys ho hledal... Takové obleky jsou vzácné i mezi členy Služeb. Vydávají je jen za zvláštní vyznamenání v bitvě nebo při vedení operací ve vysoce anomálních oblastech.</text>
+</string>
+<string id="about_quests_dialog_freedom_50">
+	<text>Kde najdu oblek s uzavřeným dýchacím modulem?</text>
+</string>
+<string id="about_quests_dialog_freedom_501">
+	<text>Slyšel jsem, že nějací pronásledovatelé mluvili o jednom muži se známostmi, Šikula nebo tak nějak. Může ti sehnat skoro všechno. Však víš: vybavení, střelecké a takovýhle věci... ne drogy. Potlouká se po Skadovsku, kdybys ho potřeboval.</text>
+</string>
+<string id="about_quests_dialog_freedom_502">
+	<text>Dobrá otázka, člověče... Ty se tady ve Svobodě nikdy nenosí... Být tebou, zeptal bych se stalkerů v Zatonu. Možná tam někdo takový podnik provozuje.</text>
+</string>
+<string id="about_quests_dialog_freedom_503">
+	<text>Heh, na co potřebuješ takovou blbost? V akci je to k ničemu. Ale zase... Hádam, že to může být k něčemu užitečné. Lépe se ti dýchá a slunce ti tolik neleze do očí... Možná bych si taky jednu pořídil. Hele, nevíš, kde bych ho mohl sehnat?</text>
+</string>
+<string id="about_quests_dialog_stalkers_50">
+	<text>Kde se dá sehnat oblek s uzavřeným dýchacím modulem?</text>
+</string>
+<string id="about_quests_dialog_stalkers_501">
+	<text>No, já bych vsadil na Šikula. Třetí paluba ve Skadovsku. Ten chlap ti dokáže sehnat sníh i v zatracené poušti... Jeho služby ale nejsou zrovna finančně nenáročné.</text>
+</string>
+<string id="about_quests_dialog_stalkers_502">
+	<text>Nech mě přemýšlet... Kdysi byl jeden takový člověk na Zatonu, jmenoval se Šikula. Zkus se podívat, jestli tam ještě je. Slyšel jsem, že se specializuje na zboží vyšší kategorie.</text>
+</string>
+<string id="about_quests_dialog_stalkers_503">
+	<text>Chlape, mluvíš o tom, jako by to byly kancelářské potřeby nebo tak něco... Nikdo to neví jistě. Takových kousků je málo a jsou velmi vzácné... Považuj se za šťastlivce, když nějaký ulovíš.</text>
+</string>
+
+
+	<!-- Call of Chernobyl -->
+<string id="dm_dialog_add_trade">
+    <text>Takže... Slyšel jsem, že vedle toho obchoduješ.</text>
+</string>
+<string id="dm_dialog_add_repair">
+    <text>Povídá se, že jsi šikovný. Můžeš mi opravit vybavení?</text>
+</string>
+<string id="dm_dialog_character_history">
+    <text>Řekni mi něco o sobě.</text>
+</string>
+
+	<!-- Obecne -->
+	<string id="actor_break_dialog_0">
+		<text>Uvidíme se později.</text>
+	</string>
+	<string id="actor_break_dialog_1">
+		<text>Už budu muset jít.</text>
+	</string>
+	<string id="actor_break_dialog_2">
+		<text>Sbohem.</text>
+	</string>
+	<string id="actor_break_dialog_3">
+		<text>Už budu muset jít.</text>
+	</string>
+
+	<!-- Plnič prani -->
+	<string id="st_wish_1">
+		<text>Chci, aby Zona zmizela!</text>
+	</string>
+	<string id="st_wish_2">
+		<text>Lidstvo je zkažené. Lidstvo musí být kontrolováno!</text>
+	</string>
+	<string id="st_wish_3">
+		<text>Přeji si světovy mír!</text>
+	</string>
+	<string id="st_wish_4">
+		<text>Přeji si všechna bohatství Zony!</text>
+	</string>
+	<string id="st_wish_5">
+		<text>Udělej mě nesmrtelným!</text>
+	</string>
+	<string id="st_wish_99">
+		<text>[nic neříkej]</text>
+	</string>
+
+
+
+	<!-- Alundaio -->
+	<string id="axr_phrase_npc_start_wounded">
+		<text>Pomoc... mě.</text>
+	</string>
+	<string id="axr_phrase_actor_has_medkit">
+		<text>Pomužu ti.</text>
+	</string>
+	<string id="axr_phrase_actor_dont_has_medkit">
+		<text>Promi%n. Nemohu ti pomoci.</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_trade">
+		<text>Rád bych vyměnil vybavení.</text>
+	</string>
+	<string id="dm_dialog_become_companion_greeting">
+		<text>Vypadáš, že tu máš nějaký cíl.</text>
+	</string>
+	<string id="dm_dialog_companion_I_have_a_question">
+    <text>Tak? Možná... Mám otázku.</text>
+</string>
+<string id="dm_dialog_companion_question_answer_1">
+    <text>Co je to?</text>
+</string>
+<string id="dm_dialog_companion_question_answer_2">
+    <text>Poptej se nějakého jiného osamělého člověka.</text>
+</string>
+<string id="dm_dialog_actor_answer_1">
+    <text>Zajímavé...</text>
+</string>
+<string id="dm_dialog_actor_answer_2">
+    <text>Uh... Omlouvám se, že to zkracuji, ale musím jít.</text>
+</string>
+<string id="dm_dialog_spolupracovnik_can_i_come_with_1">
+    <text>Pojďme cestovat společně. Co říkáš?</text>
+</string>
+<string id="dm_dialog_companion_can_we_come_with_2">
+    <text>Moji přátelé a já potřebujeme trochu pomoci s průchodem Zónou. Vadilo by vám, kdybychom se k vám připojili? </text>
+</string>
+<string id="dm_dialog_companion_can_i_come_with_2">
+    <text>Pokračujme společně jako tým. Co říkáte? </text>
+</string>
+<string id="dm_dialog_companion_actor_reply_to_join_1">
+    <text>Tak se soustřed na to, kam s těmi zbraněmi míříš.</text>
+</string>
+<string id="dm_dialog_companion_actor_reply_to_join_2">
+    <text>Fajn. Ale jestli umřeš, vezmu si tvé věci.</text>
+</string>
+<string id="dm_dialog_companion_actor_reply_to_join_3">
+    <text>Ne. Nemám zájem.</text>
+</string>
+<string id="dm_dialog_companion_actor_reply_to_join_4">
+    <text>Ztrať se!</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_alone_1">
+    <text>Díky, kámo. Slibuji, že se ti nebudu plést do cesty.</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_alone_2">
+    <text>Skvěle. Opravdu potřebuji něčí pomoc.</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_alone_3">
+    <text>Špatný zadek, člověče. Díky.</text>
+</string>
+<string id="dm_dialog_companion_final_words_bad_alone_1">
+    <text>Dobře. I tak díky...</text>
+</string>
+<string id="dm_dialog_companion_final_words_bad_alone_2">
+    <text>Woah, chlape! Co máš sakra za problém?</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_1">
+    <text>To rád slyším! No tak, lidi!</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_2">
+    <text>Dobře. Hej, lidi, tenhle stalker nás tam dostane. Následujte ho.</text>
+</string>
+<string id="dm_dialog_companion_final_words_good_3">
+    <text>Jdeme na to. Čeká nás nějaké cestování.</text>
+</string>
+<string id="dm_dialog_companion_final_words_bad_1">
+    <text>To je jedno.</text>
+</string>
+	<string id="dm_dialog_companion_final_words_bad_2">
+		<text>Zabíj toho kreténa!</text>
+	</string>
+<string id="axr_phrase_companion_ask_for_command">
+    <text>Co potřebuješ?</text>
+</string>
+<string id="axr_phrase_actor_give_command">
+    <text>[Vydej příkaz]</text>
+</string>
+<string id="axr_phrase_actor_give_command_combat">
+    <text>Promluvme si o taktice...</text>
+</string>
+<string id="axr_phrase_actor_give_command_combat_type_camper">
+    <text>Chci, abys byl v boji opatrnější.</text>
+</string>
+<string id="axr_phrase_actor_give_command_combat_type_default">
+    <text>Dělej to, co obvykle děláš v boji.</text>
+</string>
+<string id="axr_phrase_actor_give_command_combat_type_monolith">
+    <text>Dej nepřátelům vše, co máš!</text>
+</string>
+<string id="axr_phrase_actor_give_command_stay_close">
+    <text>Zůstaň u mě a kryj mi záda.</text>
+</string>
+<string id="axr_phrase_actor_give_command_keep_distance">
+    <text>Chci, aby ses držel dál.</text>
+</string>
+<string id="axr_phrase_actor_give_command_stealth">
+    <text>Ticho... K zemi a buď zticha.</text>
+</string>
+<string id="axr_phrase_actor_give_command_stop_stealth">
+    <text>Dobře. Pokračujme normálně.</text>
+</string>
+<string id="axr_phrase_actor_give_command_relax">
+    <text>Uvolni se trochu. Řeknu ti, až bude čas jít.</text>
+</string>
+<string id="axr_phrase_actor_give_command_relax_over">
+    <text>Dobře. Je čas jít.</text>
+</string>
+<string id="axr_phrase_actor_give_command_leave">
+    <text>Potřebuji odtud odcestovat na vlastní pěst.</text>
+</string>
+<string id="axr_phrase_companion_are_you_sure">
+    <text>Jsi si jistý?</text>
+</string>
+	<string id="axr_phrase_actor_acknowledge_1">
+		<text>Ano.</text>
+	</string>
+<string id="axr_phrase_actor_give_command_wait">
+    <text>Čekej zde a hlídej tuto pozici.</text>
+</string>
+<string id="axr_phrase_actor_give_command_follow">
+    <text>Potřebuji, abys mě následoval.</text>
+</string>
+<string id="axr_phrase_actor_give_command_ignore_combat">
+    <text>Prozatím se vyhni střelbě na kohokoli.</text>
+</string>
+<string id="axr_phrase_actor_give_command_dont_ignore_combat">
+    <text>Útoč na nepřátele pouze na pokyn.</text>
+</string>
+<string id="axr_phrase_actor_give_command_ignore_combat_but_help_actor">
+    <text>Neútoč na nikoho, pokud na mě nezaútočí první.</text>
+</string>
+<string id="axr_phrase_companion_acknowledge_1">
+    <text>Máš to mít.</text>
+</string>
+<string id="axr_phrase_companion_acknowledge_2">
+    <text>Jistě, člověče.</text>
+</string>
+<string id="axr_phrase_companion_acknowledge_3">
+    <text>Jistě, co chcete, abych udělal?</text>
+</string>
+<string id="axr_phrase_companion_goodbye_1">
+    <text>Děkuji za společnost. Uvidíme se.</text>
+</string>
+<string id="axr_phrase_actor_give_command_nevermind">
+    <text>Nech to být.</text>
+</string>
+<string id="axr_phrase_actor_give_command_hide_in_cover">
+    <text>Rychle! Najdi nějaký kryt!</text>
+</string>
+<string id="axr_phrase_actor_give_command_patrol_menu">
+    <text>Chci, abys hlídkoval v nějaké oblasti.</text>
+</string>
+<string id="axr_phrase_actor_give_command_start_patrol">
+    <text>Začni hlídkovat.</text>
+</string>
+<string id="axr_phrase_actor_give_command_stop_patrol">
+    <text>Zastavit hlídkování.</text>
+</string>
+<string id="axr_phrase_actor_give_command_patrol_remove_waypoints">
+    <text>Zapomeňte na všechny waypointy.</text>
+</string>
+<string id="axr_phrase_actor_give_command_patrol_add_waypoints">
+    <text>Přidej toto místo k aktuální hlídce.</text>
+</string>
+<string id="axr_phrase_actor_gade_command_gather_items">
+    <text>Sebereš veškeré vybavení, na které narazíš; může se ti hodit.</text>
+</string>
+<string id="axr_phrase_actor_give_command_loot_corpses">
+    <text>Prohledej těla, jestli v nich nenajdeš něco užitečného.</text>
+</string>
+<string id="axr_phrase_actor_give_command_gather_items_stop">
+    <text>Vynechej veškeré vybavení, které uvidíš ležet kolem.</text>
+</string>
+<string id="axr_phrase_actor_give_command_loot_corpses_stop">
+    <text>Ignoruj mrtvé.</text>
+</string>
+<string id="axr_phrase_friend_companion_ask_join">
+    <text>Hej, pojďme to prozkoumat jako tým. Mohli bychom si navzájem pomáhat v Zóně.</text>
+</string>
+<string id="axr_phrase_friend_companion_answer_join">
+    <text>Jistě, to zní jako skvělý nápad! Vezmi nás.</text>
+</string>
+<string id="axr_phrase_friend_companion_ask_join_hostage">
+    <text>Půjdeš se mnou zachránit svého druha?</text>
+</string>
+<string id="axr_phrase_friend_companion_answer_join_hostage">
+    <text>Ano, potřebuje naši pomoc! Vezmi nás.</text>
+</string>
+</string_table>

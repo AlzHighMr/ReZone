@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<!-- ====================================================================
+	New Extensible RF Sources
+    Author: Catspaw
+    Source: https://www.moddb.com/members/catspawmods/addons
+
+    Permission granted to freely translate into any language.
+===================================================================== -->
+
+<string_table>
+	<string id="ui_mcm_menu_nerfs">
+		<text>Zdroje NERF</text>
+	</string>
+
+	<string id="ui_mcm_menu_nerfmain">
+		<text>Hlavní nastavení</text>
+	</string>
+
+	<string id="ui_mcm_menu_nerfwidget">
+		<text>Přístupnost</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_enable_rrfr">
+		<text>Povolit kompatibilitu přepracovaného RF přijímače</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_enable_rrfr_desc">
+		<text>Pokud máte nainstalovaný doplněk Coverdrave's Reworked RF Receiver, zaškrtnutím této možnosti přimějete NERFS použít nastavení MCM tohoto doplňku pro stav vybavení, pípání a změny frekvence. Všechna ostatní vylepšení RRFR jsou součástí NERFS.\n
+Vezměte prosím na vědomí, že pokud použijete Devices of Anomaly Červenéone, přepíše se nastavení, zda musí být RF přijímač vybaven, aby fungoval.</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_debuglogs">
+		<text>Povolit protokolování ladění</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_debuglogs_desc">
+		<text>Hlučné, ale obsahuje užitečné informace pro ladění. Pokud hlásíte problém, NEJPRVE:\n\n
+1. Povolte toto nastavení\n
+2. Úplně ukončete hru\n
+3. Znovu načtěte hru a reprodukujte problém – pokud možno bez dalších doplňků\n
+4. Ukončete hru\n\n
+Poté zazipujte herní protokol z [anomaly_folder]/appdata/logs a vložte jej někam online</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_max_freq">
+		<text>Maximální RF frekvence</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_max_freq_desc">
+		<text>Přijímač RF může zobrazit maximálně tři číslice, ale je přizpůsoben rozsahům VHF (30-300 MHz). Některé zdroje vanilkového signálu jsou však mimo tento rozsah. Toto nastavení rozšiřuje jak frekvenční rozsah detektoru, tak rozsah, který hra používá při zadávání úkolů.</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_header1">
+		<text>Nové rozšiřitelné RF zdroje vylepšují RF detektor několika způsoby:\n
+• Rozšiřuje frekvenční rozsah od 300 do 999 (konfigurovatelné níže)\n
+• Přidává zajímavé nové zdroje RF šumu\n
+• Přesouvá všechny RF zdroje do rozšiřitelného rámce založeného na LTX navrženém tak, aby byl modifikovatelný a bez konfliktů\n
+• Přidává lootovatelné poznámky (s doprovodnými články encyklopedie), které lze náhodně najít na mrtvých stalkerech, což hráčům umožňuje dozvědět se o užitečných frekvencích prostřednictvím hraní\n
+• Přidá volitelný HUD indikátor síly signálu pro usnadnění přístupu nebo preference\n
+• Zahrnuje podporu pro Reworked RF Receiver a TB RF Tasks</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_header2">
+		<text>Další informace naleznete na stránce Moddb:\nhttps://www.moddb.com/mods/stalker-anomaly/addons/new-extensible-rf-sources</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_scrolldown">
+		<text>** Přejděte dolů pro další nastavení **</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_show">
+		<text>Zobrazit widget pro usnadnění</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_show_desc">
+		<text>Widget usnadnění poskytuje vizuální indikátor HUD pro sílu RF signálu, který se zobrazí pouze tehdy, když je aktivní zařízení RF Detector. Je určen pro neslyšící a sluchově postižené osoby, ale může jej použít kdokoli, pro koho je obtížné identifikovat zvukové signály. Pozici a barvy indikátoru lze upravit podle preference nebo barvosleposti.</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_lo_header">
+		<text>\n\nIndikátor zobrazí tuto barvu, když je síla signálu nízká.\nVýchozí (šedá): 255,50,50,50\n\n</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_hi_header">
+		<text>\n\nIndikátor zobrazí tuto barvu, když je síla signálu vysoká.\nVýchozí (zelená): 255,0,250,0</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_em_header">
+		<text>\n\nIndikátor zobrazí tuto barvu během vysílání.\nVýchozí (červená): 128 200,0,0\n\n</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_clr_a">
+		<text>Alfa</text>
+	</string>	
+	<string id="ui_mcm_nerfs_nerfwidget_clr_r">
+		<text>Red</text>
+	</string>
+	<string id="ui_mcm_nerfs_nerfwidget_clr_g">
+		<text>Zelená</text>
+	</string>
+	<string id="ui_mcm_nerfs_nerfwidget_clr_b">
+		<text>Modrý</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_headerxy">
+		<text>XY pozice levého horního rohu widgetu:</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfwidget_headerxy_desc">
+		<text>0,0 je levý horní roh, 1024 768 je pravý dolní roh. Hra to převede na jakékoli vaše rozlišení. Výchozí (dolní střed) je 491 670.</text>
+	</string>
+	<string id="ui_mcm_nerfs_nerfwidget_pos_x">
+		<text>X (horizontální, zleva doprava) souřadnice</text>
+	</string>
+	<string id="ui_mcm_nerfs_nerfwidget_pos_y">
+		<text>Y (vertikální, shora dolů) souřadnice</text>
+	</string>
+
+<!-- Added in 1.2 -->
+
+	<string id="ui_mcm_nerfs_nerfmain_use_mwheel">
+		<text>Pomocí kolečka myši změňte frekvenci</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_use_mwheel_desc">
+		<text>Je-li povoleno, lze kolečkem myši posouvat nahoru a dolů a měnit frekvenci. Stejně jako ve vanilce podržením Shift nebo Alt změníte přírůstek na 10 nebo 50. Při posouvání ubíhají mnohem rychleji!\n
+Tato funkce vyžaduje modifikované binární soubory verze 20230701 nebo novější. V současné době není podporován GAMMA.</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_binaries">
+		<text>Modifikované binární soubory pomocí démonizace: https://github.com/themrdemonized/STALKER-Anomaly-modded-exes/</text>
+	</string>
+
+<!-- Added in 1.3 -->
+
+	<string id="ui_mcm_menu_nerfpresets">
+		<text>Předvolby</text>
+	</string>
+
+	<string id="ui_mcm_nerfpresets_header1">
+		<text>Můžete definovat až devět přednastavených frekvencí a ke každé přiřadit jinou klávesovou zkratku.</text>
+	</string>
+
+	<string id="ui_mcm_nerfpresets_header2">
+		<text>Pokud je povolena podpora kolečka myši, můžete také při posouvání podržet klávesu Ctrl, abyste mohli procházet níže uvedené předvolby.</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset1_freq">
+		<text>Přednastavená frekvence 1</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset1">
+		<text>Klávesnice pro předvolbu 1</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset2_freq">
+		<text>Přednastavená frekvence 2</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset2">
+		<text>Klávesnice pro předvolbu 2</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset3_freq">
+		<text>Přednastavená frekvence 3</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset3">
+		<text>Klávesnice pro předvolbu 3</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset4_freq">
+		<text>Přednastavená frekvence 4</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset4">
+		<text>Klávesnice pro předvolbu 4</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset5_freq">
+		<text>Přednastavená frekvence 5</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset5">
+		<text>Klávesnice pro předvolbu 5</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset6_freq">
+		<text>Přednastavená frekvence 6</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset6">
+		<text>Klávesnice pro předvolbu 6</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset7_freq">
+		<text>Přednastavená frekvence 7</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset7">
+		<text>Klávesnice pro předvolbu 7</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset8_freq">
+		<text>Přednastavená frekvence 8</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset8">
+		<text>Klávesnice pro předvolbu 8</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_preset9_freq">
+		<text>Přednastavená frekvence 9</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfpresets_kb_preset9">
+		<text>Klávesnice pro předvolbu 9</text>
+	</string>
+
+	<string id="st_nerfs_freq_preset">
+		<text>Přednastavená frekvence %s: %s Mhz</text>
+	</string>
+
+<!-- Added in 1.5 -->
+
+	<string id="ui_mcm_nerfs_nerfmain_loadfailed1">
+		<text>CHYBA: item_radio.script je chybný, NERFS není správně nainstalován!</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_loadfailed2">
+		<text>New Extensible RF Sources nalezly nainstalovanou nesprávnou kopii item_radio.script. To je téměř jistě způsobeno načtením dalšího doplňku po NERFS, který upravuje tento soubor.\nMUSÍTE nainstalovat NERFS po jakémkoli jiném doplňku, který upravuje item_radio.script. Pokud používáte Reworked RF Receiver, RF Tasks, Remote Controlled Explosives nebo Bizarre Interference, NERFS má možnosti kompatibility, které umožní těmto doplňkům fungovat normálně.\nPokud používáte Devices of Anomaly Redone, načtěte je před NERFS--to je v pořádku přepsat vestavěnou verzi NERFS, která je součástí.</text>
+	</string>
+
+<!-- Added in 1.6 -->
+
+	<string id="ui_mcm_nerfs_nerfwidget_preview_aspect">
+		<text>Poměr stran pro výše uvedený náhled obrazovky</text>
+	</string>
+
+	<string id="ui_mcm_lst_preview_aspect_4_3">
+		<text>4:3 (standardní rozlišení)</text>
+	</string>
+
+	<string id="ui_mcm_lst_preview_aspect_16_10">
+		<text>16:10 (1920x1200, 2560x1600)</text>
+	</string>
+
+	<string id="ui_mcm_lst_preview_aspect_16_9">
+		<text>16:9 (1080p, 1440p, 2160p)</text>
+	</string>
+
+	<string id="ui_mcm_lst_preview_aspect_21_9">
+		<text>21:9 (Ultraširoko)</text>
+	</string>
+	
+	<string id="ui_mcm_nerfs_nerfmain_header_complex1">
+		<text>$clr_def
+$clr_prpNew Extensible RF Sources$clr_def vylepšuje RF detektor několika způsoby:\n
+• $clr_gldRozšíří maximální frekvenční rozsah$clr_def z $clr_lbl300$clr_def na $clr_lbl999$clr_def (konfigurovatelné níže)\n
+• Přidá $clr_gld zajímavé nové zdroje$clr_def RF šumu\n
+• Přesune všechny RF zdroje do $clr_gldextensible frameworku založeného na LTX$clr_def navrženého tak, aby byl $clr_gldmoddable a bez konfliktů\n
+USD
+• Přidá $clr_gldvolitelný indikátor HUD$clr_def síly signálu pro usnadnění přístupu nebo preference\n
+• Zahrnuje podporu pro $clr_gldReworked RF Receiver$clr_def a $clr_gldTB RF Tasks</text>
+	</string>
+
+	<string id="ui_mcm_nerfs_nerfmain_header_complex2">
+		<text>$clr_def
+Další informace naleznete na stránce Moddb:\n$clr_lblhttps://www.moddb.com/mods/stalker-anomaly/addons/new-extensible-rf-sources</text>
+	</string>
+
+</string_table>

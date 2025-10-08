@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+
+	<string id="ui_mcm_menu_targetID">
+		<text>Nastavení Identifikace</text>
+	</string>
+
+	<string id="ui_mcm_targetID_deadID">
+		<text>Identifikujte mrtvé stalkery</text>
+	</string>
+
+	<string id="ui_mcm_targetID_nameID">
+		<text>Identifikujte jména stalkerů</text>
+	</string>
+
+	<string id="ui_mcm_targetID_timeID">
+		<text>Zpoždění identifikace podle vzdálenosti</text>
+	</string>
+	<string id="ui_mcm_targetID_timeID_desc">
+		<text>Je-li povoleno, identifikace bude vyžadovat, abyste se na stalkera dívali po určitou dobu na základě vzdálenosti, abyste je mohli identifikovat.</text>
+	</string>
+
+	<string id="ui_mcm_targetID_rankID">
+		<text>Identifikujte pozici stalkera</text>
+	</string>
+
+	<string id="ui_mcm_targetID_talkName">
+		<text>Musí se naučit jméno</text>
+	</string>
+	<string id="ui_mcm_targetID_talkName_desc">
+		<text>Je-li povoleno, hráč musí mluvit se stalkerem nebo jej ukořistit, než bude znát jeho jméno a hodnost.</text>
+	</string>
+
+	<string id="ui_mcm_targetID_speedID">
+		<text>Rychlost identifikace</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xo">
+		<text>Pozice X</text>
+	</string>
+	<string id="ui_mcm_targetID_yo">
+		<text>Pozice Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xp">
+		<text>Patch Offset X</text>
+	</string>
+	<string id="ui_mcm_targetID_yp">
+		<text>Patch Offset Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xn">
+		<text>Název Offset X</text>
+	</string>
+	<string id="ui_mcm_targetID_yn">
+		<text>Název Offset Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xr">
+		<text>Posun pořadí X</text>
+	</string>
+	<string id="ui_mcm_targetID_yr">
+		<text>Posun pořadí Y</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_flipAlign">
+		<text>Převrátit zarovnání textu</text>
+	</string>
+	<string id="ui_mcm_targetID_flipAlign_desc">
+		<text>Jméno a hodnost budou zarovnány doprava, takže HUD lze umístit na pravou stranu obrazovky.</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_colorR">
+		<text>Název Barva textu R</text>
+	</string>
+	<string id="ui_mcm_targetID_colorG">
+		<text>Název Barva textu G</text>
+	</string>
+	<string id="ui_mcm_targetID_colorB">
+		<text>Název Barva textu B</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_RcolorR">
+		<text>Barva textu pořadí R</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorG">
+		<text>Barva textu hodnocení G</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorB">
+		<text>Barva textu hodnocení B</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_targL">
+		<text>Cílení na Lenience</text>
+	</string>
+	<string id="ui_mcm_targetID_targL_desc">
+		<text>Jak daleko může být cíl od středu obrazovky a přesto být identifikován. Vyšší hodnota je méně shovívavá, nižší hodnoty výrazně usnadňují sledování cíle bez zvětšení. Hodnota 1,0 znamená, že se musíte dívat přímo na cíl.</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_unknown">
+		<text>Neznámý</text>
+	</string>
+	<string id="ui_mcm_targetID_scan">
+		<text>Identifikace...</text>
+	</string>
+	
+	
+</string_table>
