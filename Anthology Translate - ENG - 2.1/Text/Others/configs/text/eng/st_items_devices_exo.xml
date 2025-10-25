@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+<!--
+	Devices
+-->
+
+<string_table>
+
+<!-- Для 2.0  -->	
+	<string id="st_itm_exo_psu_name">
+	<text>Improvised Power Supply for Exoskeleton</text>
+</string>
+<string id="st_itm_exo_psu_descr">
+	<text>An improvised power source mounted on the exoskeleton frame. Popular among most stalkers given the rather inefficient power units that come with stock exoskeletons. Despite its low weight, it only offers a modest boost to energy capacity. It provides continuous power to the exoskeleton’s servos and motors, allowing the wearer to move and carry heavy loads with less effort. Power consumption depends on movement speed — the faster the servos work, the faster energy is drained. If the power supply is completely depleted, the exoskeleton will fall back to an auxiliary power source and will be able to do nothing except keep itself upright. Movement is possible but extremely taxing for the user, so it is recommended to keep the power pack charged at all times.\n This device appears to be a homemade model built from a used military battery connected to refurbished contacts with poor-quality wiring. It is light, but much energy is wasted due to low efficiency. To use this item, equip it as a backpack. Uses military batteries. \n \n
+	%c[ui_gray_3] CHARACTERISTICS: \n
+	%c[d_blue] • %c[ui_gray_2] technological item \n
+	%c[d_blue] • %c[ui_gray_2] high power consumption \n
+	%c[d_blue] • %c[ui_gray_2] increases power by 50%
+	</text>
+</string>
+
+<string id="st_itm_exo_psu_mili_name">
+	<text>Military-Grade Power Supply for Exoskeleton</text>
+</string>
+<string id="st_itm_exo_psu_mili_descr">
+	<text>A heavy, professionally manufactured battery pack mounted to the exoskeleton frame. Popular among most stalkers given the rather inefficient power units that come with stock exoskeletons. It provides continuous power to the exoskeleton’s servos and motors, allowing the wearer to move and carry heavy loads with less effort. Power consumption depends on movement speed — the faster the servos work, the faster energy is drained. If the power supply is completely depleted, the exoskeleton will fall back to an auxiliary power source and will be able to do nothing except keep itself upright. Movement is possible but extremely burdensome for the user, so it is recommended to keep the power pack charged at all times. \n This model appears to be produced at a military factory and is easily mounted to an exoskeleton. It is heavy but quite energy-efficient and of high quality. To use this item, equip it as a backpack. Uses military batteries. \n \n
+	%c[ui_gray_3] CHARACTERISTICS: \n
+	%c[d_blue] • %c[ui_gray_2] technological item \n
+	%c[d_blue] • %c[ui_gray_2] military-grade product \n
+	%c[d_blue] • %c[ui_gray_2] moderate power consumption \n
+	%c[d_blue] • %c[ui_gray_2] increases power by 100%\n
+	%c[d_blue] • %c[ui_gray_2] reduces power consumption by 30%\n
+	</text>
+</string>
+
+<string id="st_itm_exo_psu_sci_name">
+	<text>Prototype Exoskeleton Power Unit</text>
+</string>
+<string id="st_itm_exo_psu_sci_descr">
+	<text>A prototype battery pack mounted on the exoskeleton frame. Popular among most stalkers given the rather inefficient power units that come with stock exoskeletons. It is powered by a special artifact contained within it called the "Battery". It provides continuous power to the exoskeleton’s servos and motors, allowing the wearer to move and carry heavy loads with less effort. Power consumption depends on movement speed — the faster the servos work, the faster energy is drained. If the power supply is completely depleted, the exoskeleton will fall back to an auxiliary power source and will be able to do nothing except keep itself upright. Movement is possible but extremely burdensome for the user, so it is recommended to keep the power pack charged at all times. \n This model is an experimental prototype built from schematics you obtained from ecologists, using the capacitive properties of the "Battery" artifact to generate huge amounts of energy. The military battery here is used only to provide a steady current to activate the artifact. While this is an almost limitless energy source, the vast number of built-in components and safety systems makes the device unbearably heavy. To use this item, equip it as a backpack. Uses a military battery as a passive power source. \n \n
+	%c[ui_gray_3] CHARACTERISTICS: \n
+	%c[d_blue] • %c[ui_gray_2] technological item \n
+	%c[d_blue] • %c[ui_gray_2] low power consumption \n
+	%c[d_blue] • %c[ui_gray_2] prototype device\n
+	%c[d_blue] • %c[ui_gray_2] increases power by 200%\n
+	%c[d_blue] • %c[ui_gray_2] reduces power consumption by 80%\n
+	%c[d_blue] • %c[ui_gray_2] passively regenerates energy when standing still\n
+	%c[d_blue] • %c[ui_gray_2] double-tap $$ACTION_SPRINT_TOGGLE$$ to activate sprint mode\n
+	</text>
+</string>
+
+<string id="st_itm_exo_psu_tank_name">
+<text>Experimental Power Unit "Bastion"</text>
+</string>
+<string id="st_itm_exo_psu_tank_short">
+<text>"Bastion"</text>
+</string>	
+<string id="st_itm_exo_psu_tank_descr">
+	<text>An auxiliary power source fitted to exoskeletons to increase their energy capacity. To use, drag it onto the exoskeleton.\n \n This model is an experimental prototype built from schematics you obtained from ecologists. Developed as an add-on for military units that need to advance under heavy fire. This prototype uses the gravitational properties of the "Dummy" artifact to create a localized anomalous field when activated. The anomaly is centered on the user and effectively slows high-velocity projectiles and shrapnel, and also makes mutant attacks ineffective. However, the gravity field severely hampers movement. \n \n
+	%c[ui_gray_3] PROPERTIES:\n
+	%c[d_blue] • %c[ui_gray_2] technological item\n
+	%c[d_blue] • %c[ui_gray_2] prototype device\n
+	%c[d_blue] • %c[ui_gray_2] increases power by 100%\n
+	%c[d_blue] • %c[ui_gray_2] reduces power consumption by 30%\n
+	%c[d_blue] • %c[ui_gray_2] double-tap $$ACTION_SPRINT_TOGGLE$$ to activate significant damage reduction\n
+	%c[d_blue] • %c[ui_gray_2] uses 20 energy, duration 8 seconds, cooldown 20 seconds.\n
+	</text>
+</string>
+
+
+<string id="st_itm_exo_psu_sprint_name">
+	<text>Experimental Power Unit "Engine"</text>
+</string>
+<string id="st_itm_exo_psu_sprint_short">
+	<text>"Engine"</text>
+</string>	
+<string id="st_itm_exo_psu_sprint_descr">
+	<text>An auxiliary power source installed on exoskeletons to increase their energy capacity. To use, drag it onto the exoskeleton.\n \n This model is an experimental prototype based on schematics obtained from the ecologists. Designed to improve the mobility of assault units. This prototype uses the capacitive properties of the "Flash" artifact to power a personal set of servo motors. The "Flash" artifact can be temporarily activated to significantly enhance the user's mobility. The greatly increased movement speed also allows the wearer to inflict massive damage on any creature or human in their path.\n \n
+	%c[ui_gray_3]PROPERTIES:\n
+	%c[d_blue] • %c[ui_gray_2] technological device\n
+	%c[d_blue] • %c[ui_gray_2] high value\n
+	%c[d_blue] • %c[ui_gray_2] increases power by 100%\n
+	%c[d_blue] • %c[ui_gray_2] reduces energy consumption by 30%\n
+	%c[d_blue] • %c[ui_gray_2] moderate energy consumption\n
+	%c[d_blue] • %c[ui_gray_2] double-tap $$ACTION_SPRINT_TOGGLE$$ to activate speed boost\n
+	%c[d_blue] • %c[ui_gray_2] deals ramming damage to enemies while sprinting\n
+	%c[d_blue] • %c[ui_gray_2] uses 20 energy, duration 8 seconds, cooldown 20 seconds.\n
+	</text>
+</string>
+
+<string id="st_itm_exo_psu_invisibility_name">
+	<text>Experimental Power Unit "Invisibility"</text>
+</string>
+<string id="st_itm_exo_psu_invisibility_short">
+	<text>"Invisibility"</text>
+</string>	
+<string id="st_itm_exo_psu_invisibility_descr">
+	<text>An auxiliary power source that enables a temporary invisibility effect in exoskeletons. To use, drag it onto the exoskeleton.\n \n This model is an experimental prototype based on schematics obtained from scientists. Designed as an enhancement for military units that need to advance covertly, such as behind enemy lines. This prototype uses the gravitational properties of the "Dummy" artifact to create a localized anomalous field when activated. The anomaly is centered on the user and effectively bends light waves back in the direction they came from. This conceals the wearer even from infrared, ultraviolet, and thermal detection, functioning in any environment, any season, and at any time of day or night — something no other camouflage can achieve.\n \n	
+	%c[ui_gray_3]CHARACTERISTICS:\n
+	%c[d_blue] • %c[ui_gray_2] technological device\n
+	%c[d_blue] • %c[ui_gray_2] high value\n
+	%c[d_blue] • %c[ui_gray_2] duration: 25 sec.\n	
+	%c[d_blue] • %c[ui_gray_2] cooldown: 20 sec.\n			
+	</text>
+</string>	
+	
+<string id="st_itm_exo_psu_jump_name">
+	<text>Experimental Power Unit "Jump"</text>
+</string>
+<string id="st_itm_exo_psu_jump_short_name">
+	<text>"Jump"</text>
+</string>	
+<string id="st_itm_exo_psu_jump_descr">
+	<text>An auxiliary power source installed on exoskeletons to overcome high obstacles. To use, drag it onto the exoskeleton.\n \n This model is an experimental prototype based on schematics obtained from scientists. Designed to give the wearer the ability to reach higher ground. This prototype uses the capacitive properties of the "Flash" artifact to power a personal set of servo motors. The "Flash" artifact can be temporarily activated to greatly increase jump power, allowing the user to overcome barriers such as walls and similar obstacles.\n \n	
+	%c[ui_gray_3]CHARACTERISTICS:\n
+	%c[d_blue] • %c[ui_gray_2] technological device\n
+	%c[d_blue] • %c[ui_gray_2] high value\n
+	%c[d_blue] • %c[ui_gray_2] duration: 25 sec.\n	
+	%c[d_blue] • %c[ui_gray_2] cooldown: 20 sec.\n			
+	</text>
+</string>	
+
+<!-- Для 2.0  -->
+
+</string_table>

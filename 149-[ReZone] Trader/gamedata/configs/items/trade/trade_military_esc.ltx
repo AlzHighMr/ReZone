@@ -1,0 +1,387 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition =  trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(army:1600)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(army:1200)} supplies_4, {=actor_goodwill_ge(army:800)} supplies_3, {=actor_goodwill_ge(army:400)} supplies_2,  supplies_1
+buy_item_condition_factor = 0.80		;0.70
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_supplier
+
+[trade_generic_buy]:merchant
+
+[trade_generic_sell]:merchant
+
+
+
+
+
+
+;=========== SUPPLIES 1 ===============
+;======================================
+
+[supplies_1]:common_stock
+
+
+swiss_knife			= 2, 0.50
+detector_radio             = 1, 0.50
+detector_geiger             = 1, 0.50
+device_pda_1				= 1, 0.50
+bolts_pack				= 2, 0.50
+cooking	= 2, 1 ;               = 1, 0.50
+fieldcooker             = 1, 0.50
+kerosene	= 2, 1 ;                = 1, 0.50
+charcoal	= 2, 1 ;                = 1, 0.50
+explo_balon_gas	= 2, 1 ;         = 1, 0.50
+explo_jerrycan_fuel	= 2, 1 ;     = 1, 0.50
+itm_tent                = 1, 0.50
+
+;food
+meat_tushkano			= 6, 0.50
+meat_dog				= 6, 0.50
+meat_pseudodog			= 4, 0.50
+meat_flesh				= 4, 0.50
+meat_boar				= 4, 0.50
+meat_bloodsucker		= 2, 0.50
+meat_snork				= 4, 0.50
+meat_chimera			= 1, 0.50
+bread					= 4, 0.50
+breadold				= 6, 0.50
+kolbasa					= 4, 0.50
+tushonka                = 4, 0.50
+conserva				= 4, 0.50
+tomato					= 2, 0.50
+sausage					= 2, 0.50
+corn					= 2, 0.50
+beans			        = 2, 0.50
+chili                   = 2, 0.50
+salmon                  = 2, 0.50
+raisins                 = 2, 0.50
+chocolate               = 2, 0.50
+nuts                    = 2, 0.50
+mre                   = 1, 0.50
+ration_ru             = 1, 0.50
+ration_ukr			= 1, 0.50
+mint					= 4, 0.50
+mineral_water			= 2, 0.50
+caffeine				= 2, 0.50
+hand_rolling_tobacco  = 2, 0.50
+cigar                   = 1, 0.50
+cigarettes_lucky      = 3, 0.50
+cigarettes_russian    = 3, 0.50
+beer                    = 3, 0.50
+vodka                 = 3, 0.50
+vodka2                = 3, 0.50
+energy_drink            = 3, 0.50
+water_drink           = 2, 0.50
+cigarettes            = 4, 0.50
+tea                   = 2, 0.50
+akvatab               = 3, 0.50
+flask                 = 2, 0.50
+bottle_metal          = 2, 0.50
+vodka_quality         = 2, 0.50
+tobacco               = 2, 0.50
+marijuana               = 1, 0.50
+cigar1                = 2, 0.50
+cigar2                = 2, 0.50
+cigar3                = 2, 0.50
+glucose_s				= 3, 0.50
+glucose					= 2, 0.50
+drug_sleepingpills	= 3, 0.50
+bandage					= 8, 1
+medkit					= 6, 1
+medkit_ai1				= 3, 0.50
+medkit_ai2				= 3, 0.50
+medkit_ai3				= 3, 0.50
+antirad_cystamine		= 3, 0.50
+antibio_chlor			= 3, 0.50
+jgut					= 3, 0.50
+yadylin					= 3, 0.50
+analgetic				= 3, 0.50
+antirad_kalium			= 3, 0.50
+antibio_sulfad			= 3, 0.50
+antiemetic   			= 3, 0.50
+medkit_army				= 2, 0.50
+medkit_scientic			= 2, 0.50
+antirad					= 2, 0.50
+stimpack				= 3, 0.50
+stimpack_army			= 2, 0.50
+stimpack_scientic		= 1, 0.50
+caffeine				= 3, 0.50
+protein					= 2, 0.50
+survival_kit			= 1, 0.50
+akvatab				= 3, 0.50
+cocaine					= 3, 0.50
+tetanus					= 2, 0.50
+adrenalin				= 2, 0.50
+salicidic_acid			= 4, 0.50
+morphine				= 3, 0.50
+drug_anabiotic			= 2, 0.50
+drug_booster			= 2, 0.50
+drug_coagulant		= 3, 0.50
+drug_antidot			= 3, 0.50
+drug_radioprotector	= 2, 0.50
+drug_psy_blockade		= 2, 0.50
+
+;items
+batteries_dead			= 6, 0.50
+itm_sleepbag			= 1, 0.50
+compression_bag			= 1, 0.50
+itm_actor_backpack		= 1, 1
+itm_backpack			= 1, 1
+device_flashlight		= 1, 0.50
+device_torch_dummy		= 1, 0.50
+
+;pistol
+wpn_fort                = 1, 0.80
+wpn_gsh18               = 1, 0.80
+wpn_oc33                = 1, 0.80
+wpn_pm                  = 1, 0.80
+wpn_pb                  = 1, 0.80
+wpn_tt33	            = 1, 0.80
+wpn_pm_bas                 = 1, 1     ;BaS
+wpn_pb_bas                 = 1, 1     ;BaS
+wpn_aps_bas                = 1, 1     ;BaS
+
+;rifle
+wpn_ak74u               = 1, 0.80
+wpn_akms_alt              = 1, 0.80
+wpn_aek              = 1, 0.80
+wpn_akm               = 1, 0.80
+wpn_ak74                = 1, 0.80
+wpn_aks74                = 1, 0.80
+wpn_aks74_new                = 1, 0.80
+wpn_ak74m_alt                = 1, 0.80
+wpn_ak105_bas               = 1, 0.80
+wpn_groza               = 1, 0.80
+wpn_vsk94               = 1, 0.80
+wpn_abakan_n               = 1, 1     ;BaS
+wpn_akm_bas                = 1, 1     ;BaS
+wpn_akms_bas               = 1, 1     ;BaS
+wpn_ak74u_n1               = 1, 0.88  ;BaS 
+
+;misc
+wpn_knife               = 1, 0.50
+wpn_knife2              = 1, 0.50
+mine_new                    = 3, 0.50
+ied_rpg_new                 = 3, 0.50
+ied_new                     = 3, 0.50
+wpn_binoc_inv           = 1, 0.50
+
+
+helm_bandana            = 1, 0.50
+helm_rp_bala            = 1, 0.50
+helm_cloth_mask			= 1, 0.50
+helm_respirator 		= 1, 0.50
+helm_respirator_old     = 1, 0.50
+helm_respirator_gp5     = 1, 0.50
+army_outfit				= 1, 0.50
+helm_ach7				= 1, 0.50
+
+
+ammo_9x18_fmj                    = 16, 0.66
+ammo_9x18_ap                     = 14, 0.66
+ammo_9x18_pmm                    = 10, 0.66
+ammo_9x19_fmj                    = 14, 0.66
+ammo_9x19_ap                     = 12, 0.66
+ammo_9x19_pbp                    = 8, 0.66
+ammo_11.43x23_fmj                = 12, 0.66
+ammo_11.43x23_hydro              = 8, 0.66
+ammo_12x70_buck                  = 12, 0.66
+ammo_12x76_zhekan                = 9, 0.66
+ammo_5.45x39_fmj                 = 21, 0.66
+ammo_5.45x39_ep 					= 17, 0.66
+ammo_5.45x39_ap                  = 15, 0.66
+ammo_5.56x45_fmj 				= 3, 0.66	
+ammo_5.56x45_ss190               = 3, 0.66
+ammo_5.56x45_ap                  = 3, 0.66
+ammo_7.62x39_fmj                 = 12, 0.66
+ammo_7.62x39_ap                  = 10, 0.66
+ammo_7.62x51_fmj                 = 4, 0.66
+ammo_7.62x51_ap                  = 4, 0.66
+ammo_7.62x25_p                  = 12, 0.66
+ammo_7.62x25_ps                 = 10, 0.66
+ammo_9x39_pab9                   = 18, 0.66
+ammo_9x39_ap                     = 15, 0.66
+ammo_7.62x54_ap                  = 6, 0.66
+ammo_7.62x54_7h1                = 4, 0.66
+ammo_7.62x54_7h14                = 3, 0.66
+ammo_357_hp_mag                  = 4, 0.66
+ammo_magnum_300                  = 6, 0.66
+ammo_12.7x55_fmj                         = 3, 0.66
+ammo_12.7x55_ap          = 2, 0.66
+grenade_rgd5                    = 5, 0.66
+grenade_gd-05                   = 5, 0.66
+grenade_smoke                   = 3, 0.66
+grenade_f1                              = 5, 0.66
+ammo_og-7b                              = 1, 0.80
+ammo_vog-25                             = 7, 0.66
+ammo_m209                               = 3, 0.66
+ammo_9x21_sp10             = 8, 1     ;BaS
+ammo_20x70_buck            = 15, 1    ;BaS
+
+;optiky
+pka                        = 1, 1     ;BaS
+1p76                       = 1, 1     ;BaS
+ps01                       = 1, 1     ;BaS
+
+;tlumice
+wpn_sil_9mm				= 1, 0.80
+wpn_sil_pbs1				= 1, 0.80
+wpn_sil_pbs4				= 1, 0.80
+wpn_sil_tgp-a				= 1, 0.80
+wpn_sil_kzrzp				= 1, 0.80
+wpn_sil_atg				= 1, 0.80
+wpn_sil_aps				= 1, 0.80
+wpn_sil_9a91				= 1, 0.80
+wpn_sil_6p9				= 1, 0.80
+wpn_sil_vihr				= 1, 0.80
+wpn_sil_apb                = 1, 1     ;BaS
+
+
+kit_hunt				= 1, 0.50
+box_matches           = 3, 0.50
+
+
+
+
+
+
+
+;=========== SUPPLIES 2 ===============
+;======================================
+[supplies_2]:supplies_1
+
+
+
+device_torch_nv_1		= 1, 0.50
+equ_small_pack          = 1, 1
+
+
+wpn_mp153_bas                  = 1, 1     ;BaS
+
+wpn_aek               = 1, 0.80
+wpn_abakan          = 1, 0.80
+wpn_ak74_alt            = 1, 0.80
+wpn_ak74m_camo        = 1, 0.80
+wpn_ak103        = 1, 0.80
+wpn_val                 = 1, 0.80
+wpn_vintorez            = 1, 0.80
+wpn_svd                 = 1, 0.80
+wpn_sv98             = 1, 0.80
+wpn_svu                 = 1, 0.80
+wpn_rpk74               = 1, 0.80
+wpn_pkm                 = 1, 0.80
+wpn_ak74_n                 = 1, 1     ;BaS
+wpn_kiparis_s              = 1, 1     ;BaS
+
+wpn_knife3              = 1, 0.50
+wpn_axe                 = 1, 0.50
+wpn_axe2                = 1, 0.50
+
+wpn_addon_scope_po4x34				= 1, 0.80
+1p29				= 1, 0.80
+kobra				= 1, 0.80
+ps01				= 1, 0.80
+pso1m21				= 1, 0.80
+rakurs                     = 1, 1     ;BaS
+1pn93                      = 1, 1     ;BaS
+pgo7gs                     = 1, 1     ;BaS
+pso1m21                    = 1, 1     ;BaS
+
+af_kevlar				= 1, 0.50
+af_plates				= 1, 0.50
+af_frames				= 1, 0.50
+af_camelbak				= 1, 0.50
+
+detector_advanced		= 1, 0.50
+army_bowler             = 1, 0.50
+
+
+helm_m40				= 1, 0.50
+helm_hardhat			= 1, 0.50
+specops_outfit			= 1, 0.50
+helm_ach7ex				= 1, 0.50
+
+
+
+
+
+;=========== SUPPLIES 3 ===============
+;======================================
+[supplies_3]:supplies_2
+device_torch_nv_2		= 1, 0.50
+equ_small_military_pack = 1, 1
+device_pda_2			= 1, 0.50
+
+wpn_ks23                   = 1, 0.55  ;BaS
+
+ammo_vog-30                = 6, 1     ;BaS
+
+wpn_ak74m_n                = 1, 1     ;BaS
+
+wpn_pkm_siber              = 1, 1     ;BaS
+wpn_svd_m1                 = 1, 1     ;BaS
+
+wpn_rg-6				= 1, 0.50
+wpn_rpg7				= 1, 0.50
+
+wpn_knife4              = 1, 0.50
+
+wpn_addon_grenade_launcher				= 1, 0.80
+
+
+military_outfit			= 1, 0.50
+light_voen_outfit       = 1, 0.50
+helm_metro              = 1, 0.50
+helm_tactic				= 1, 0.50
+helm_battle				= 1, 0.50
+
+cortex					= 1, 1
+
+
+
+
+
+
+;=========== SUPPLIES 4 ===============
+;======================================
+[supplies_4]:supplies_3
+device_torch_nv_3		= 1, 0.50
+equ_military_pack       = 1, 1
+device_pda_3			= 1, 0.50
+
+wpn_knife5              = 1, 0.50
+wpn_m82					= 1, 0.80
+
+military_proto_exo_outfit = 1, 0.50
+military_exolight_outfit = 1, 0.50
+helm_exo                = 1, 0.50
+helm_protective			= 1, 0.50
+
+test_container          = 1, 0.50
+
+wpn_vintorez_n1            = 1, 0.88  ;BaS 
+wpn_ak105_bas                  = 1, 1     ;BaS
+
+
+
+
+
+
+;=========== SUPPLIES 5 ===============
+;======================================
+[supplies_5]:supplies_4
+
+wpn_rg-6				= 1, 0.50
+wpn_rpg7				= 1, 0.50
+
+
+military_exo_outfit		= 1, 0.50
+ghillie_outfit          = 1, 0.50
+
+wpn_sr2_veresk             = 1, 1     ;BaS
+wpn_ak12_bas               = 1, 1     ;BaS

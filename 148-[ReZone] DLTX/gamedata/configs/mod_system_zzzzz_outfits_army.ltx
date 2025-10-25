@@ -1,0 +1,317 @@
+;--------------------------------------------------------------------------
+
+![army_outfit]:outfit_base
+		cost                          = 20530
+		inv_weight                    = 8
+		additional_inventory_weight   = 11
+		additional_inventory_weight2  = 11
+		artefact_count                = 1
+
+		hit_fraction_actor            = 0.75
+		control_inertion_factor       = 1.2
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.04
+		shock_protection              = 0.25
+		radiation_protection          = 0
+		chemical_burn_protection      = 0.02
+		telepatic_protection          = 0
+		strike_protection             = 0.006
+		explosion_protection          = 0.25
+		wound_protection              = 0.35
+		fire_wound_protection         = 0.25
+
+![sect_army_outfit_immunities]
+		burn_immunity                 = 0.12
+		chemical_burn_immunity        = 0.05
+		explosion_immunity            = 0.25
+		fire_wound_immunity           = 0.05
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.014
+		strike_immunity               = 0
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.017
+ 
+;--------------------------------------------------------------------------
+
+![specops_outfit]:outfit_base
+        cost                          = 44600
+		inv_weight                    = 12
+		additional_inventory_weight   = 16
+		additional_inventory_weight2  = 16
+		artefact_count                = 1
+		hit_fraction_actor            = 0.4
+		control_inertion_factor       = 1.48
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.07
+		shock_protection              = 0.34
+		radiation_protection          = 0.0055
+		chemical_burn_protection      = 0.02
+		telepatic_protection          = 0
+		strike_protection             = 0.2
+		explosion_protection          = 0.5
+		wound_protection              = 0.75
+		fire_wound_protection         = 0.31
+
+![sect_specops_outfit_immunities]
+		burn_immunity                 = 0.1
+		chemical_burn_immunity        = 0.025
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.020
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.018
+		strike_immunity               = 0
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.020
+ 
+;--------------------------------------------------------------------------
+
+![dolg_specops_red_outfit]:outfit_base
+		cost                          = 65700
+		inv_weight                    = 8.5
+		additional_inventory_weight   = 11
+		additional_inventory_weight2  = 11
+		artefact_count                = 1
+		;repair_part_bonus             = 0.40
+		hit_fraction_actor            = 0.4
+		control_inertion_factor       = 1.48
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.15
+		shock_protection              = 0.25
+		radiation_protection          = 0.004
+		chemical_burn_protection      = 0.01
+		telepatic_protection          = 0
+		strike_protection             = 0.38
+		explosion_protection          = 0.55
+		wound_protection              = 0.85
+		fire_wound_protection         = 0.35
+
+![sect_dolg_specops_red_outfit_immunities]
+		burn_immunity                 = 0.09
+		chemical_burn_immunity        = 0.025
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.02
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.02
+		strike_immunity               = 0.015
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.05
+ 
+;--------------------------------------------------------------------------
+
+![specops_bandit_outfit]:outfit_base
+		cost                          = 48600
+		inv_weight                    = 13
+		additional_inventory_weight   = 18
+		additional_inventory_weight2  = 18
+		artefact_count                = 1
+
+
+		hit_fraction_actor            = 0.4
+		
+		control_inertion_factor       = 1.48
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.05
+		shock_protection              = 0.3
+		radiation_protection          = 0.0055
+		chemical_burn_protection      = 0.03
+		telepatic_protection          = 0
+		strike_protection             = 0.15
+		explosion_protection          = 0.4
+		wound_protection              = 0.65
+		fire_wound_protection         = 0.31
+
+;--------------------------------------------------------------------------
+
+![specops_dolg_outfit]:outfit_base
+		cost                          = 52600
+		inv_weight                    = 12
+		additional_inventory_weight   = 17
+		additional_inventory_weight2  = 17
+		artefact_count                = 1
+
+		hit_fraction_actor            = 0.4
+		
+		control_inertion_factor       = 1.48
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.06
+		shock_protection              = 0.44
+		radiation_protection          = 0.0055
+		chemical_burn_protection      = 0.03
+		telepatic_protection          = 0
+		strike_protection             = 0.23
+		explosion_protection          = 0.5
+		wound_protection              = 0.75
+		fire_wound_protection         = 0.31
+
+
+;--------------------------------------------------------------------------
+
+![specops_merc_outfit]:outfit_base
+
+		cost                          = 49600
+		inv_weight                    = 13
+		additional_inventory_weight   = 19
+		additional_inventory_weight2  = 19
+		artefact_count                = 1
+
+		hit_fraction_actor            = 0.4
+		
+		control_inertion_factor       = 1.48
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.07
+		shock_protection              = 0.31
+		radiation_protection          = 0.0055
+		chemical_burn_protection      = 0.03
+		telepatic_protection          = 0
+		strike_protection             = 0.33
+		explosion_protection          = 0.5
+		wound_protection              = 0.75
+		fire_wound_protection         = 0.31
+
+;--------------------------------------------------------------------------
+
+
+![military_exolight_outfit]:outfit_base,outfit_restrictions_1
+		community                     = army
+		kind                          = o_heavy
+		cost                          = 83480
+		inv_weight                    = 16
+		additional_inventory_weight   = 16
+		additional_inventory_weight2  = 16
+		artefact_count                = 1
+		immunities_sect               = sect_military_exolight_outfit_immunities
+		
+		;repair_part_bonus             = 0.38
+		hit_fraction_actor            = 0.25
+		bones_koeff_protection        = actor_armor_radiation
+		control_inertion_factor       = 1.76
+		power_loss                    = 0.1
+        
+		burn_protection               = 0.1
+		shock_protection              = 0.05
+		radiation_protection          = 0.0290
+		chemical_burn_protection      = 0.092
+		telepatic_protection          = 0.08
+		strike_protection             = 0.6
+		explosion_protection          = 0.74
+		wound_protection              = 0.66
+		fire_wound_protection         = 0.6
+
+![sect_military_exolight_outfit_immunities]
+		burn_immunity                 = 0.05
+		chemical_burn_immunity        = 0.017
+		explosion_immunity            = 0.08
+		fire_wound_immunity           = 0.01
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.015
+		strike_immunity               = 0
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.006
+
+
+		![military_exo_outfit]:outfit_base,outfit_restrictions_3
+		community                     = army
+		kind                          = o_heavy
+		cost                          = 139510
+		inv_weight                    = 44
+		additional_inventory_weight   = 109
+		additional_inventory_weight2  = 109
+		artefact_count                = 1
+		immunities_sect               = sect_exo_outfit_immunities
+		;repair_part_bonus             = 0.45
+		hit_fraction_actor            = 0.18
+		bones_koeff_protection        = actor_armor_military_exo
+		control_inertion_factor       = 1.76
+		power_loss                    = 0.1
+        
+		burn_protection               = 0.1
+		shock_protection              = 0.05
+		radiation_protection          = 0.0290
+		chemical_burn_protection      = 0.092
+		telepatic_protection          = 0.08
+		strike_protection             = 0.6
+		explosion_protection          = 0.84
+		wound_protection              = 0.66
+		fire_wound_protection         = 0.6
+
+
+		
+![army_nosorog_outfit]:outfit_base,outfit_restrictions_3
+		cost                          = 185000
+		inv_weight                    = 56
+		additional_inventory_weight   = 102
+		additional_inventory_weight2  = 102
+		artefact_count                = 2
+		
+		
+		
+		hit_fraction_actor            = 0.2
+		
+		control_inertion_factor       = 1.88
+		power_loss                    = 0.1
+        
+		burn_protection               = 0.1
+		shock_protection              = 0.05
+		radiation_protection          = 0.041
+		chemical_burn_protection      = 0.092
+		telepatic_protection          = 0.091
+		strike_protection             = 0.9
+		explosion_protection          = 0.95
+		wound_protection              = 0.75
+		fire_wound_protection         = 0.6
+
+![sect_nosorog_outfit_immunities]
+		burn_immunity                 = 0.02
+		chemical_burn_immunity        = 0.007
+		explosion_immunity            = 0.04
+		fire_wound_immunity           = 0.005
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.01
+		strike_immunity               = 0.0015
+		telepatic_immunity            = 0.00
+		wound_immunity                = 0.010
+ 
+
+
+		![military_proto_exo_outfit]:outfit_base,outfit_restrictions_4   
+		community                     = army
+		kind                          = o_heavy
+		cost                          = 74700
+		inv_weight                    = 31
+		additional_inventory_weight   = 106
+		additional_inventory_weight2  = 106
+		artefact_count                = 1
+		immunities_sect               = sect_military_proto_exo_outfit_immunities
+		
+		;repair_part_bonus             = 0.33
+		hit_fraction_actor            = 0.25
+		bones_koeff_protection        = actor_armor_skat
+		control_inertion_factor       = 1.54
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.4
+		shock_protection              = 1.5
+		radiation_protection          = 0.006
+		chemical_burn_protection      = 0.07
+		telepatic_protection          = 0
+		strike_protection             = 0.55
+		explosion_protection          = 0.70
+		wound_protection              = 0.43
+		fire_wound_protection         = 0.38
+
+![sect_military_proto_exo_outfit_immunities]
+		burn_immunity                 = 0.025
+		chemical_burn_immunity        = 0.03
+		explosion_immunity            = 0.08
+		fire_wound_immunity           = 0.016
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.021
+		strike_immunity               = 0
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.012
