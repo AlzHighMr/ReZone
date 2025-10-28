@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@explosive_spawn
+
+[sr_idle@explosive_spawn]
+on_info = {+labx7_quest_explosive_spawn_restr_1} sr_idle@start_timer
+
+[sr_idle@start_timer]
+on_game_timer = 15 | sr_timer
+
+[sr_timer]
+type = dec
+string = "Vylézt po žebøíku"
+start_value = 10000
+on_value = 0 | sr_idle@nil %=kill_actor%
+on_info = {+labx7_actor_go_to_station_digger} sr_idle@nil
+
+[sr_idle@nil]

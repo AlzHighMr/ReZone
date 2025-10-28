@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_a2_third_timer_begin -gar_a2_third_timer_start} sr_timer@first %+gar_a2_third_timer_start%
+
+[sr_timer@first]
+type = dec
+string = "”йти в бар"
+start_value = 65000
+on_value = 0 | sr_idle@nil %=start_surge +gar_a2_third_timer_end%
+on_info = {+sp_a2_hero_to_bar_come} sr_idle@nil
+
+[sr_idle@nil]
