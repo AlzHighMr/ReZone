@@ -138,7 +138,74 @@
 		wound_immunity                = 0.022
 
 
-		![svoboda_exolight_outfit]:outfit_base,outfit_restrictions_1
+
+;--------------------------------------------------------------------------
+
+![nbc_freedom_outfit]:outfit_base,outfit_restrictions_1
+		
+		cost                          = 68700
+		inv_weight                    = 10
+		additional_inventory_weight   = 28
+		additional_inventory_weight2  = 28
+		artefact_count                = 1
+		
+		
+		hit_fraction_actor            = 0.55
+		
+		control_inertion_factor       = 1.18
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.09
+		shock_protection              = 0.2
+		radiation_protection          = 0.0285
+		chemical_burn_protection      = 0.12
+		telepatic_protection          = 0
+		strike_protection             = 0.2
+		explosion_protection          = 0.21
+		wound_protection              = 0.32
+		fire_wound_protection         = 0.25
+
+![sect_nbc_freedom_outfit_immunities]
+		burn_immunity                 = 0.1
+		chemical_burn_immunity        = 0.045
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.03
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.027
+		strike_immunity               = 0
+		telepatic_immunity            = 0.0
+;--------------------------------------------------------------------------
+
+![svoboda_scientific_outfit]:outfit_base,outfit_restrictions_1     
+		community                     = freedom
+		kind                          = o_sci
+		cost                          = 78400
+		inv_weight                    = 12
+		additional_inventory_weight   = 19
+		additional_inventory_weight2  = 19
+		artefact_count                = 1
+		immunities_sect               = sect_scientific_outfit_immunities
+		
+		;repair_part_bonus             = 0.37
+		hit_fraction_actor            = 0.45
+		bones_koeff_protection        = actor_armor_seva
+		control_inertion_factor       = 1.42
+		power_loss                    = 0.1
+        
+		burn_protection               = 0.15
+		shock_protection              = 1.8
+		radiation_protection          = 0.029
+		chemical_burn_protection      = 0.12
+		telepatic_protection          = 0.115
+		strike_protection             = 0.25
+		explosion_protection          = 0.31
+		wound_protection              = 0.35
+		fire_wound_protection         = 0.27
+
+
+
+
+![svoboda_exolight_outfit]:outfit_base,outfit_restrictions_1
 		community                     = freedom
 		kind                          = o_heavy
 		cost                          = 88880

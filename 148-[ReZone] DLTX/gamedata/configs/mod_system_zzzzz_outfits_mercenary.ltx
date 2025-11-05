@@ -39,7 +39,7 @@
 		telepatic_immunity            = 0.0
 		wound_immunity                = 0.022
 
-        ;-------------------LCS outfits-------------------------------
+;-------------------LCS outfits-------------------------------
 
 ![merc_outfit]:outfit_base
         community                     = killer
@@ -262,7 +262,189 @@
 		wound_immunity                = 0.05
  
 
-		;--------------------------------------------------------------------------
+;--------------------------------------------------------------------------
+
+![merc_ace_outfit]:outfit_base,outfit_restrictions_1       
+		community                     = killer
+		kind                          = o_sci
+		cost                          = 135000
+		inv_weight                    = 9.9
+		additional_inventory_weight   = 22.7
+		additional_inventory_weight2  = 22.7
+		artefact_count                = 3
+		immunities_sect               = sect_ace_outfit_immunities
+		
+		;repair_part_bonus             = 0.50
+		hit_fraction_actor            = 0.4
+		bones_koeff_protection        = actor_armor_class3
+		control_inertion_factor       = 1.33
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.66
+		shock_protection              = 2.6
+		radiation_protection          = 0.033
+		chemical_burn_protection      = 0.187
+		telepatic_protection          = 0.145
+		strike_protection             = 0.32
+		explosion_protection          = 0.38
+		wound_protection              = 0.38
+		fire_wound_protection         = 0.38
+
+![sect_ace_outfit_immunities]
+		burn_immunity                 = 0.025
+		chemical_burn_immunity        = 0.005
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.02
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.03
+		strike_immunity               = 0.003
+		telepatic_immunity            = 0.00
+		wound_immunity                = 0.015
+ 
+;--------------------------------------------------------------------------
+
+![merc_combat_scientific_outfit]:outfit_base,outfit_restrictions_1      
+		community                     = killer
+		kind                          = o_sci
+		cost                          = 95000
+		inv_weight                    = 11.7
+		additional_inventory_weight   = 20
+		additional_inventory_weight2  = 20
+		artefact_count                = 2
+		immunities_sect               = sect_combat_scientific_outfit_immunities
+		
+		;repair_part_bonus             = 0.50
+		hit_fraction_actor            = 0.4
+		bones_koeff_protection        = actor_armor_class3
+		control_inertion_factor       = 1.42
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.5
+		shock_protection              = 2.2
+		radiation_protection          = 0.035
+		chemical_burn_protection      = 0.135
+		telepatic_protection          = 0.13
+		strike_protection             = 0.26
+		explosion_protection          = 0.38
+		wound_protection              = 0.38
+		fire_wound_protection         = 0.38
+
+![sect_combat_scientific_outfit_immunities]
+		burn_immunity                 = 0.025
+		chemical_burn_immunity        = 0.005
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.02
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.03
+		strike_immunity               = 0.003
+		telepatic_immunity            = 0.00
+		wound_immunity                = 0.015
+ 
+;--------------------------------------------------------------------------
+
+![merc_scientific_armored_outfit]:outfit_base,outfit_restrictions_1    
+		community                     = killer
+		kind                          = o_sci
+		cost                          = 89000
+		inv_weight                    = 15
+		additional_inventory_weight   = 22.7
+		additional_inventory_weight2  = 22.7
+		artefact_count                = 2
+		immunities_sect               = sect_merc_scientific_armored_outfit_immunities
+		
+		;repair_part_bonus             = 0.45
+		hit_fraction_actor            = 0.4
+		bones_koeff_protection        = actor_armor_class3
+		control_inertion_factor       = 1.42
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.3
+		shock_protection              = 0.45
+		radiation_protection          = 0.023
+		chemical_burn_protection      = 0.12
+		telepatic_protection          = 0.1
+		strike_protection             = 0.24
+		explosion_protection          = 0.34
+		wound_protection              = 0.34
+		fire_wound_protection         = 0.34
+
+![sect_merc_scientific_armored_outfit_immunities]
+		burn_immunity                 = 0.03
+		chemical_burn_immunity        = 0.0025
+		explosion_immunity            = 0.1
+		fire_wound_immunity           = 0.03
+		radiation_immunity            = 0.0
+		shock_immunity                = 0.03
+		strike_immunity               = 0.01
+		telepatic_immunity            = 0.0
+		wound_immunity                = 0.05
+ 
+;--------------------------------------------------------------------------
+
+![merc_scientific_outfit]:outfit_base,outfit_restrictions_1
+     	community                     = killer
+		kind                          = o_sci
+		cost                          = 76600
+		inv_weight                    = 14
+		additional_inventory_weight   = 21
+		additional_inventory_weight2  = 21
+		artefact_count                = 2
+		immunities_sect               = sect_scientific_outfit_immunities
+		
+		;repair_part_bonus             = 0.34
+		hit_fraction_actor            = 0.45
+		bones_koeff_protection        = actor_armor_seva
+		control_inertion_factor       = 1.42
+		power_loss                    = 0.1
+        
+		burn_protection               = 0.13
+		shock_protection              = 2
+		radiation_protection          = 0.033
+		chemical_burn_protection      = 0.125
+		telepatic_protection          = 0.09
+		strike_protection             = 0.25
+		explosion_protection          = 0.22
+		wound_protection              = 0.33
+		fire_wound_protection         = 0.32
+;--------------------------------------------------------------------------
+
+![nbc_merc_outfit]:outfit_base,outfit_restrictions_1
+
+		cost                          = 68280
+		inv_weight                    = 14
+		additional_inventory_weight   = 32
+		additional_inventory_weight2  = 32
+		artefact_count                = 1
+		
+		
+		hit_fraction_actor            = 0.28
+		
+		control_inertion_factor       = 1.35
+		power_loss                    = 0.05
+        
+		burn_protection               = 0.0327
+		shock_protection              = 0.5868
+		radiation_protection          = 0.0285
+		chemical_burn_protection      = 0.0222
+		telepatic_protection          = 0.0000
+		strike_protection             = 0.32
+		explosion_protection          = 0.4155
+		wound_protection              = 0.3125
+		fire_wound_protection         = 0.3224
+
+![sect_nbc_merc_outfit_immunities]
+		burn_immunity				= 0.1
+		strike_immunity				= 0.0
+		shock_immunity				= 0.02
+		wound_immunity				= 0.05
+		radiation_immunity			= 0.0
+		telepatic_immunity			= 0.0
+		chemical_burn_immunity		= 0.05
+		explosion_immunity			= 0.13
+		fire_wound_immunity			= 0.04
+
+
+;--------------------------------------------------------------------------
 
 ![merc_exolight_outfit]:outfit_base,outfit_restrictions_1       
 		community                     = killer
