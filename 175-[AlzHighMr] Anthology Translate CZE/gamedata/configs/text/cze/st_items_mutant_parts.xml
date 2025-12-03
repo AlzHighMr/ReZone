@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Mutant parts
+-->
+
+<string_table>
+	
+	<string id="st_meat_tushkano">
+		<text>Krysí špízy</text>
+	</string>
+	<string id="st_meat_tushkano_descr">
+		<text>Malé špízy tushkanos, grilované a ochucené solí a různými bylinkami. Nejlevnější teplé jídlo dostupné v zóně.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_dog">
+		<text>Psí kotlety</text>
+	</string>
+	<string id="st_meat_dog_descr">
+		<text>Malé teplé jídlo z grilovaných psích kotlet smíchaných s různými bylinkami. Levná alternativa k oblíbenějšímu kančímu hovězímu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_pseudodog">
+		<text>Pseudopsí kotlety</text>
+	</string>
+	<string id="st_meat_pseudodog_descr">
+		<text>Porce grilovaných pseudopsích kotlet. Dobrá výživová hodnota díky silné svalovině tohoto tvora.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_flesh">
+		<text>Slanina z Flaksy</text>
+	</string>
+	<string id="st_meat_flesh_descr">
+		<text>Kráječe mastné, tučné slaniny odřezané ze zmutovaných prasat v zóně, běžně označované jako "Flaksa".\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_boar">
+		<text>Kančí kotlety</text>
+	</string>
+	<string id="st_meat_boar_descr">
+		<text>Malá porce kančího masa, grilovaná a ochucená solí a různými bylinkami. Nejoblíbenější teplé jídlo mezi stalkery.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_bloodsucker">
+		<text>Upíří guláš</text>
+	</string>
+	<string id="st_meat_bloodsucker_descr">
+		<text>Malý teplý pokrm z masa Upírů, okořeněný různými bylinkami a houbami.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_psysucker">
+		<text>Guláš z Psysuckera</text>
+	</string>
+	<string id="st_meat_psysucker_descr">
+		<text>Malé teplé jídlo z psysucker masa, okořeněné různými bylinkami a houbami.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_snork">
+<text>Grilovaná ruka Snorka</text>
+	</string>
+	<string id="st_meat_snork_descr">
+		<text>Grilovaná šnorchlí ruka, připravená k jídlu.\n \nUpozornění: Většina stalkerů považuje konzumaci šnorchlího masa za kanibalismus a nemorálnost. Některé frakce, například bandité a žoldnéři, ho však zařazují do svých jídel, aby ukázali svou nadřazenost nad ostatními skupinami.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_chimera">
+<text>Maskulinní Chiméří pochoutka</text>
+	</string>
+	<string id="st_meat_chimera_descr">
+		<text>Porce grilovaného masa chiméry, podávaná s houbami a různým kořením. Drahé jídlo, které nejčastěji jedí veteráni Stalkerů na oslavu splnění náročných misí.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_lurker">
+		<text>Číhavčí kotlety</text>
+	</string>
+	<string id="st_meat_lurker_descr">
+		<text>Malá porce masa Číhavce, grilovaná a ochucená solí a různými bylinkami. Dobrá výživná hodnota díky silné svalovině mutantů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="mutant_flesh_meat">
+		<text>Maso z Flaksy</text>
+	</string>
+	<string id="mutant_flesh_meat_description">
+		<text>Oblíbená volba v Zóně. Maso má dobrou chuť a vysokou výživovou hodnotu. Vědci již mají dostatek vzorků, což omezuje jeho využití jako komodity. Může však také sloužit jako zdroj živočišného tuku pro mazání zbraní.\n \n
+		%c[d_red]UPOZORNĚNÍ: %c[ui_gray_2]Stálkerum doporučujeme, aby se zdrželi konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně vysoce kontaminovaní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_boar_chop">
+		<text>Kančí kotleta</text>
+	</string>
+	<string id="mutant_boar_chop_description">
+		<text>Nejoblíbenější maso v Zóně. Výživné a téměř nekontaminované. Vědci už mají dostatek vzorků, což omezuje jeho využití jako zboží. Může však také sloužit jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminovaní.\n \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_meat">
+		<text>Psí maso</text>
+	</string>
+	<string id="mutant_dog_meat_description">
+		<text>Maso zmutovaných psů se používá jako levná alternativa k oblíbenějšímu kančímu masu. Vědci již mají dostatek vzorků, což omezuje jeho využití jako zboží. Může však také sloužit jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stálkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně vysoce kontaminovaní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_psevdodog_meat">
+		<text>Pseudopsí maso</text>
+	</string>
+	<string id="mutant_psevdodog_meat_description">
+		<text>Pseudodogské maso je v Zóně běžnou součástí stravy. Je chutné, má vysokou výživovou hodnotu a mezi stalkery je oblíbené. Může být prodáváno vědcům. Kromě toho může sloužit také jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stálkerům se doporučuje, aby se zdrželi konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně vysoce kontaminovaní.\n \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_krovosos_meat">
+		<text>Upiří maso</text>
+	</string>
+	<string id="mutant_krovosos_meat_description">
+		<text>Maso Upirů je vláknité, a proto se nehodí k jídlu. Ačkoli jsou krvesajové obávanými bestiemi, cena masa není vzhledem k jeho omezenému využití příliš vysoká. Může být prodáno vědcům. Kromě toho může sloužit také jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stálkerům se doporučuje, aby se zdrželi konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminovaní.\n \n \n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů vysoké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+	
+	<string id="mutant_psysucker_meat">
+		<text>Maso z Psysuckera</text>
+	</string>
+	<string id="mutant_psysucker_meat_description">
+		<text>Podobně jako u Upirů je maso Psysuckerů vláknité, a proto se nehodí k jídlu. Cena masa není vzhledem k jeho omezenému využití příliš vysoká. Může být prodáno vědcům. Kromě toho může sloužit také jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminovaní.\n \n \n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů vysoké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_snork_hand">
+<text>Ruka Snorka</text>
+	</string>
+	<string id="mutant_snork_hand_description">
+		<text>Jak je všeobecně známo, snorkové pocházejí z lidí, takže pojídání jejich masa je považováno za kanibalismus a nemorální. Některé frakce, jako například bandité a žoldáci, je však zařazují do svých jídel, aby ukázali svou nadřazenost nad ostatními skupinami. Může být prodáno vědcům.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje, aby se zdrželi konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminovaní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_fracture_hand">
+<text>Ruka Izloma</text>
+	</string>
+	<string id="mutant_fracture_hand_description">
+		<text>Utržená ruka Izloma - extrémně deformovaného humanoidního mutanta. Je jisté, že tyto bytosti bývaly lidmi a jsou přímým důsledkem druhé Černobylské havárie. Ze zbytků jejich oděvů lze usuzovat, že zlomky pocházejí z vězňů, kteří byli umístěni ve vyloučené zóně a odsouzeni k nuceným pracím. Všechny dosud nalezené exempláře byly mužského pohlaví a sterilní. Lze tedy s jistotou předpokládat, že populace fraktur není schopna reprodukce a jejich počet v Zóně se bude neustále snižovat. Z tohoto důvodu zůstávají v současné době jedním z nejvzácnějších typů mutantů, se kterými se lze setkat.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_zombi_hand">
+		<text>Ruka Zombie</text>
+	</string>
+	<string id="mutant_zombi_hand_description">
+		<text>Ruka zombie, bývalé lidské bytosti, která žila nebo pracovala ve vyloučené zóně a byla vystavena extrémnímu množství radiace a psychického vlivu, když došlo k druhé černobylské havárii. Po mnoha letech připomínají oživlé mrtvoly, jsou však velmi živí a téměř neustále hladoví, a proto se mohou stát hrozbou, pokud se s nimi setkáte ve smečkách. Ruka zombie je nejen vědeckým výzkumným materiálem, ale v mnoha případech může být také použita k identifikaci osoby, které ruka patřila.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_meat">
+		<text>Kus masa chiméry</text>
+	</string>
+	<string id="mutant_chimera_meat_description">
+		<text>Těžký kus masa chiméry. Jelikož jsou chiméry považovány za jedny z nejnebezpečnějších tvorů, jejich maso je mezi zkušenými stalkery vysoce ceněno. Navíc poskytuje nejkvalitnější živočišný tuk dostupný v Zóně pro účely mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje, aby se zdrželi konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně vysoce kontaminovaní.\n \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů vysoké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+	
+	<string id="mutant_lurker_meat">
+		<text>Číhavčí maso</text>
+	</string>
+	<string id="mutant_lurker_meat_description">
+		<text>Kus číhajícího masa. Výživné a téměř nekontaminované. Může však také sloužit jako zdroj živočišného tuku pro mazání zbraní.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminováni.\n \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů vysoké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+
+
+	<string id="mutant_tushkano_meat">
+		<text>Maso z Tarbíka</text>
+	</string>
+	<string id="mutant_tushkano_meat_description">
+		<text>Malá porce masa hlodavců. Levná a běžně se vyskytující potravina.\n \n%c[d_red]VAROVÁNÍ: %c[ui_gray_2]Stalkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně silně kontaminovaní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_cyan] - %c[ui_gray_2] vařitelné\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		</text>
+	</string>
+
+	<string id="mutant_flesh_eye">
+		<text>Oko Flaksy</text>
+	</string>
+	<string id="mutant_flesh_eye_description">
+		<text>Mutované, oteklé oko masa, které má zázračnou schopnost opravit i těžké poškození, které orgán utrpěl. Objev mechanismu, který za tím stojí, by zcela jistě způsobil převrat v moderní medicíně tím, že by poskytl lék na mnoho nemocí.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_boar_leg">
+		<text>Kančí noha</text>
+	</string>
+	<string id="mutant_boar_leg_description">
+		<text>Kančí noha. Kopyta divočáků nalezená v této zóně se používají k výrobě různých léků, například sér proti radiaci.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_tail">
+		<text>Psí ocas</text>
+	</string>
+	<string id="mutant_dog_tail_description">
+		<text>Odolnost kůže mutantního psa vůči elektrickému proudu a chemickým látkám je předmětem vědeckého zájmu již dlouhou dobu. Díky absenci tukové tkáně je ocas obzvláště vhodný pro laboratorní testy.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_psevdodog_tail">
+		<text>Pseudopsí ocas</text>
+	</string>
+	<string id="mutant_psevdodog_tail_description">
+		<text>Povídá se, že v poslední době ovládl svět módy jistý trend: kožešiny z ocasů pseudopsů. Kožešina je údajně neuvěřitelně měkká a zahřeje vás i v těch nejkrutějších sněhových bouřích a vánicích. Z těchto důvodů je o pseudopsí ocasy velký zájem.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_krovosos_jaw">
+<text>Čelist Upíra</text>
+	</string>
+	<string id="mutant_krovosos_jaw_description">
+<text>Chapadla upíra obsahují speciální žlázu, která produkuje enzym schopný rozpouštět kůži a zároveň zabraňuje srážení krve. Objevení složení tohoto enzymu by mohlo být základním kamenem celé řady velkých lékařských pokroků. Někteří stalkeři používají zuby Upírů k výrobě náhrdelníků a přívěsků.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_snork_leg">
+<text>Noha Snorka</text>
+	</string>
+	<string id="mutant_snork_leg_description">
+		<text>Snorkovy nohy a chodidla obsahují obrovské množství vysoce elastických šlach. To vysvětluje schopnost tohoto zvířete provádět charakteristicky dlouhé skoky. Vědci ti budou vděční za každý exemplář, který jim přineseš na základnu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_cogot">
+		<text>Chimérský roh</text>
+	</string>
+	<string id="mutant_chimera_cogot_description">
+		<text>Rog chiméry. Jeho přesné molekulární složení není známo, ale jeho hrot je odolný a ostrý jako diamant. Tento předmět je velmi žádaný, protože se viditelně podobá rohu nosorožce.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_claw">
+<text>Chiméří pařát</text>
+	</string>
+	<string id="mutant_chimera_claw_description">
+		<text>Pařát chiméry. Jeho přesné molekulární složení neznáme, ale s jistotou víme, že je odolný a ostrý jako diamant, což vysvětluje, proč je zvíře schopné snadno proříznout brnění.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+	<string id="mutant_lurker_eye">
+		<text>Číhavčí oko</text>
+	</string>
+	<string id="mutant_lurker_eye_description">
+		<text>Zmutované oko Číhavče. Díky záři obklopující zornici se o Číhavčí oko zajímali místní lovci. Vědci stále hledají možnosti jeho využití.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+	<string id="mutant_lurker_tail">
+		<text>Číhavčí ocas</text>
+	</string>
+	<string id="mutant_lurker_tail_description">
+		<text>Vědecké studie naznačují, že vlastnosti Číhavce ocasu jsou důkazem, že se ve skutečnosti jedná o mutantní druh tarbíka.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+	<string id="mutant_psysucker_hand">
+<text>Psysuckeří ruka</text>
+	</string>
+	<string id="mutant_psysucker_hand_description">
+		<text>Psysuckeři jsou známí svýma hubenýma rukama a dlouhými prsty. Zdá se, že kůže kolem konečků prstů je silně potrhaná, což vysvětluje veškerou krev pokrývající prsty. Vědci ji rádi prozkoumají v naději, že najdou zdroj, který je zodpovědný za její schopnosti spojené s psy.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_tushkano_head">
+		<text>Hlava Tarbíka</text>
+	</string>
+	<string id="mutant_tushkano_head_description">
+		<text>Hlava Tarbíka. Vědci by ji rádi prozkoumali, aby zjistili, z jakého tvora nebo tvorů tarbíci pochází.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_part_controller_brain_tissue">
+		<text>Mozková tkáň kontrolora</text>
+	</string>
+	<string id="mutant_part_controller_brain_tissue_description">
+		<text>Kontroléři mají silné mentální schopnosti a dá se říci, že tyto schopnosti pocházejí z mozku. Vědecké studie zjistily, že každý mutant disponující schopnostmi souvisejícími s psychovlnami má mozek podobné struktury. Vědci za tuto tkáň bohatě zaplatí.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_controller_hand">
+<text>Ruka kontroléra</text>
+	</string>
+	<string id="mutant_controller_hand_description">
+		<text>Kontrolér zřejmě používá svou ruku, když mentálně útočí na svou kořist. Vědci ho rádi prozkoumají v naději, že najdou zdroj mutace, která je zodpovědná za jeho schopnosti spojené s psychikou.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_cat_tail">
+		<text>Kočičí ocas</text>
+	</string>
+	<string id="mutant_cat_tail_description">
+		<text>Kočky v Zóně jsou větší než jejich zvířecí příbuzní a jsou to velmi nebezpeční predátoři, kteří se dokáží pohybovat rychle a bez zvuku. V komunitě stalkerů je kočičí ocas symbolem uvědomělosti a kompetence.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_pseudogigant_hand">
+		<text>Pseudogigantská ruka</text>
+	</string>
+	<string id="mutant_pseudogigant_hand_description">
+		<text>Ruka pseudogiganta. Může být užitečná pro vědce v zóně. Vzhledem k nelidským fyzickým schopnostem těchto nebezpečných behemotů je pochopitelné, že se takový exemplář vyskytuje jen zřídka.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký exemplář\n
+		</text>
+	</string>
+
+	<string id="mutant_pseudogigant_eye">
+		<text>Pseudogigantní oko</text>
+	</string>
+	<string id="mutant_pseudogigant_eye_description">
+		<text>Oko pseudogiganta má vzhled lidského oka, i když je větší, ale má několik zásadních rozdílů; různobarevnou duhovku a výjimečně dobře vyvinuté slzné žlázy. Vědci by každopádně velmi toužili po tom, aby se jim dostalo do rukou, takže jsou ochotni zaplatit vysokou cenu za jakýkoli exemplář.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_burer_hand">
+		<text>Trpaslíkova ruka</text>
+	</string>
+	<string id="mutant_burer_hand_description">
+		<text>Trpasličí ruce zřejmě hrají zásadní roli při používání telekinetických schopností tohoto tvora. Vědci je rádi prozkoumají v naději, že najdou zdroj mutace.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+
+		</text>
+	</string>
+
+	<string id="st_mutant_part_crow_beak">
+		<text>Zmutovaný vraní zobák</text>
+	</string>
+	<string id="st_mutant_part_crow_beak_description">
+		<text>Ačkoli mnoho stalkerů nepovažuje vrány za nic víc než za škůdce, prozíravější jedinci uznávají jejich užitečnost při řešení mnoha problémů, které Zóna představuje. Zatímco vraždy vran se mohou ukázat jako neocenitelné při navigaci a vyhýbání se nebezpečí v liduprázdných ulicích Černobylu a Pripjati, včetně příchodu přicházejících emisních bouří, teprve po jejich smrti se projeví jejich skutečná hodnota: rozemleté zobáky lze použít k výrobě speciální směsi.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+
+		</text>
+	</string>
+
+	<string id="mutant_snork_mask">
+		<text>Maska Snorka</text>
+	</string>
+	<string id="mutant_snork_mask_description">
+		<text>Masky, které nosí snorkové, jsou zřejmě verzí sovětské plynové masky GP-5, kterou běžně používali vojáci i výzkumné a komunální týmy působící v Zóně, když došlo k druhé černobylské havárii. Tato maska, ačkoli je rozbitá tak, že se nedá použít, je stále žádaná vědeckou komunitou. Lze ji také použít k opravě částí výstroje, ale tento proces vede ke ztrátě veškerého zbývajícího organického materiálu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_liver">
+		<text>Psí játra</text>
+	</string>
+	<string id="mutant_dog_liver_description">
+		<text>Játra psa, která prošla vážnými změnami v důsledku toxické stravy a nedostatku čisté pitné vody v Zóně. Játra jsou pro vědce obzvláště zajímavá kvůli jejich potenciálu při výzkumu jaterních chorob v medicíně.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_heart">
+		<text>Psí srdce</text>
+	</string>
+	<string id="mutant_dog_heart_description">
+		<text>Při pronásledování může srdce slepeckého psa dosáhnout až 250 tepů za minutu, což je u neaterogenních zdravých jedinců stejné váhové kategorie nemyslitelné. Tato vytrvalost dělá z jejich srdce zajímavý objekt pro studium, ale vzhledem k jeho rozšířenosti je jeho hodnota mezi vědci velmi malá.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_cat_thyroid">
+		<text>Kočičí štítná žláza</text>
+	</string>
+	<string id="mutant_cat_thyroid_description">
+		<text>Štítná žláza místních koček se v důsledku trvalého pobytu v uzavřené zóně znásobila. To mělo za následek potřebu zvýšeného příjmu potravy, zvýšenou aktivitu, změny chování a vypadávání srsti. Tyto vlastnosti umožnily těmto zvířatům rychle vytlačit své zdravé příbuzné a zaujmout vyšší postavení v potravním řetězci.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_cat_claw">
+		<text>Kočičí dráp</text>
+	</string>
+	<string id="mutant_cat_claw_description">
+		<text>Kočičí drápy mají neznámou strukturu, ale je známo, že jsou velmi ostré. Vědci a armáda věří, že důkladné studium pomůže při vytváření nových, vysoce odolných materiálů a brnění.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_tusk_boar">
+		<text>Kančí tesák</text>
+	</string>
+	<string id="mutant_tusk_boar_description">
+		<text>Kančí tesák, který představuje značnou hrozbu pro vše, co se mu připlete do cesty, se ve vyloučené zóně rozprostírá v průměru na délku 30 centimetrů. Pro své nevýrazné složení a sílu není pro vědce v zóně nijak zvlášť zajímavý. Kly se běžně používají jako trofeje mezi stalkery a mimo Zónu se staly sběratelským artiklem.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký exemplář\n
+		</text>
+	</string>
+
+	<string id="mutant_heart_bloodsucker">
+		<text>Srdce upíra</text>
+	</string>
+	<string id="mutant_heart_bloodsucker_description">
+		<text>Srdce Bloodsucker vylučuje speciální enzymy, které zastavují proces srážení způsobený nekompatibilními krevními skupinami. Vědecké studium tohoto enzymu by mohlo vědcům umožnit vyřešit problém s dárci krve pro pacienty se vzácnými krevními skupinami.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+
+		</text>
+	</string>
+
+	<string id="mutant_fang_psevdodog">
+<text>Pseudopsí tesák</text>
+	</string>
+	<string id="mutant_fang_psevdodog_description">
+		<text>Pseudodogské tesáky nejsou nijak zvlášť silné a jsou během života běžně vyměňovány. Vědci se o ně nijak zvlášť nezajímají, ačkoli jsou v zóně často sbírány.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+
+	<string id="mutant_brain_burer">
+<text>Trpasličí Mozek</text>
+	</string>
+	<string id="mutant_brain_burer_description">
+		<text>Trpaslíci mají telepatické schopnosti, které dosud nebyly vědeckou komunitou prozkoumány. Hmotnost mozku je 1,5 až 2,5krát větší než lidský mozek. Ačkoli kvůli své velikosti a struktuře může být mozek při extrakci snadno poškozen. Ve vědecké komunitě jsou velmi žádané.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+
+	<string id="mutant_heart_chimera">
+		<text>Srdce Chiméry</text>
+	</string>
+	<string id="mutant_heart_chimera_description">
+		<text>Srdce chiméry se rozrostlo na dvojorgán, který může fungovat jako rezervní zásobárna krve. Pro vědce je zajímavá jeho neuvěřitelná rychlost regenerace, která poskytuje chiméře schopnost zůstat v boji i po utrpění těžkých zranění. Je vyhledáván jako pomůcka při studiu úmrtnosti siamských dvojčat.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+	
+	<!-- Doplněk Analogy-->
+	<string id="mutant_part_psy_dog_brain">
+		<text>Psi-psí mozek</text>
+	</string>
+	<string id="mutant_part_psy_dog_brain_description">
+		<text>Psi-Dogové mají mocné fyzikální schopnosti, například schopnost vyvolat u kořisti "halucinace". Tyto iluze jsou mimořádně přesvědčivé a často jsou schopny způsobit velmi reálná traumata v současnosti neznámými prostředky. Zajímavé je, že vědci tvrdí, že ačkoli identifikovali oblast mozku zodpovědnou za psionické schopnosti, je zřejmé, že tato oblast je "mladistvá" jak ve vývoji, tak v evolučním potenciálu. Za vzorky takových tkání si vědci nechají štědře zaplatit. \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+	<string id="st_meat_tark">
+		<text>Koní maso</text>
+	</string>
+	<string id="st_meat_descr_tark">
+		<text>Kus masa s vysokým obsahem živin a bohužel i radiace. Vědci už mají dostatek vzorků, což omezuje jeho využití jako zboží. Zdroj živočišného tuku pro mazání zbraní.\n \n
+		%c[d_red]UPOZORNĚNÍ: %c[ui_gray_2]Stalkerům se doporučuje zdržet se konzumace syrového masa, protože zvířata a mutanti v Zóně jsou pravděpodobně vysoce kontaminovaní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] maso mutantů nízké úrovně\n
+		%c[d_red] - %c[ui_gray_2] nelze vařit\n
+		%c[d_red] - %c[ui_gray_2] toxické jídlo\n
+		%c[d_red] - %c[ui_gray_2] otrava radiací: %c[ui_gray_2] +646 mSv\n
+		</text>
+	</string>
+	
+	<string id="mutant_tark_tail">
+		<text>Koní ocas</text>
+	</string>
+	<string id="mutant_tark_tail_description">
+		<text>Dlouhý roztřepený ocas, pravděpodobně z místního koně. Vědci už mají dostatek vzorků, což omezuje jeho využití jako zboží.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] vědecký vzorek\n
+		</text>
+	</string>
+	
+</string_table>

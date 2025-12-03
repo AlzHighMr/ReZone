@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons Attachments
+-->
+
+<string_table>
+
+<string id="st_addon_scope">
+<text>PSO-1M Mířidlo</text>
+</string>
+<string id="st_addon_scope_descr">
+<text>PSO (zkratka pro Pritsel Snaipersky Optichesky, „Optický odstřelovačský zaměřovač“) je série sovětských optických zaměřovačů vyráběných podnikem Novosibirsk Instrument-Making Plant (NPZ Optics State Plant). Je ve veřejném použití od roku 1964, kdy byl představen jako standardní zaměřovač pro odstřelovačskou pušku SVD. Později byl adaptován pro útočné pušky, jako je AK-74 nebo AN-94. Je známý pro svou odolnost, všestrannost a velmi dobře navržený vzor kříže zaměřovače s pohodlnou stupnicí pro měření vzdálenosti. Tento konkrétní typ má zvětšení 4,0x, což ho předurčuje k použití především při boji na velké vzdálenosti. Připevňuje se k zbraním pomocí drážkového montáže, který je standardní ve státech Varšavské smlouvy.\n \n
+%c[0,255,255,255]KOMPATIBILITA:\n
+%c[d_cyan] • %c[ui_gray_2]všechny pušky Varšavské smlouvy\n
+%c[0,255,255,255]VLASTNOSTI:\n
+%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]4,0x\n
+%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovače: %c[ui_gray_2]PSO-1
+</text>
+</string>
+
+<string id="st_addon_scope_1p29">
+	<text>1P29 „Tulipán“ Mířidlo</text>
+</string>
+<string id="st_addon_scope_1p29_descr">
+	<text>Záměrný bod USP-1 (index 1P29) má optické uspořádání s hranolem a zobrazovacím systémem. Úhly zaměření se nastavují mechanicky otáčením těla záměrného bodu vzhledem k držáku zbraně. Není vyžadováno žádné napájení bateriemi, protože je osvětlený tritiem. Stupnice pro měření vzdálenosti na okraji zorného pole poskytuje prostředek pro vizuální určení vzdálenosti cíle o výšce až 1,5 m až do vzdálenosti 1200 m.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2]všechny pušky Varšavské smlouvy\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]4,0x\n
+	%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovače: %c[ui_gray_2]PSU-1
+	</text>
+</string>
+<string id="st_addon_scope_ac10632">
+	<text>Barska Electro Sight AC10632</text>
+</string>
+<string id="st_addon_scope_ac10632_descr">
+	<text>Barska Electro Sight AC10632 je vícekřížový mířidlo s červeným bodem vyvinuté pro ty, kteří hledají vysoce kvalitní mířidla. Může být namontováno na zbraně NATO i na AK-12.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2]všechny pušky NATO\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+	</text>
+</string>
+<string id="st_addon_scope_acog">
+	<text>ACOG Mířidlo</text>
+</string>
+<string id="st_addon_scope_acog_descr">
+	<text>ACOG znamená Advanced Combat Optical Gunsights a odkazuje na rodinu zaměřovačů pro palné zbraně vyráběných společností Trijicon. Zaměřovače tohoto typu jsou obvykle vysoce kvalitní a mají vnitřní osvětlení kříže pomocí tritia.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2]všechny pušky NATO\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]4x\n
+	%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovače: %c[ui_gray_2]USMC
+	</text>
+</string>
+	
+	
+<string id="st_addon_scope_eotech">
+	<text>Mířidlo EOTech 553</text>
+</string>
+<string id="st_addon_scope_eotech_descr">
+	<text>Holografické mířidlo pro útočné pušky a samopaly NATO.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2]všechny pušky NATO\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+	</text>
+</string>
+<string id="st_addon_scope_kobra">
+	<text>Záměrný bod EKP 1S-03 "Kobra"</text>
+</string>
+<string id="st_addon_scope_kobra_descr">
+	<text>Záměrný bod Kobra je otevřené kolimační bojové mířidlo, které pomocí laserem generovaného HUD překrývá vzor zaměřovače na filtrovanou čočku. Je navržen pro zasahování rychle se pohybujících cílů a cílů, které se objevují na krátkou dobu v blízkém boji a městském boji za různých světelných podmínek. Poskytuje jasnou orientaci ve světle od 104 lx do 10-2 lx (denní světlo, soumrak a měsíční světlo) při zaměřování jedním nebo oběma očima. Účinný při střelbě z pohybujících se vozidel.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] všechny pušky Varšavské smlouvy\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+	</text>
+</string>
+<string id="st_addon_scope_pso-1m2-01">
+	<text>Mířidlo PSO-1M2-1</text>
+</string>
+<string id="st_addon_scope_pso-1m2-01_descr">
+	<text>Mířidlo PSO-1M2-O1 má velmi účinný a užitečný dálkoměr založený na výšce pro dvojí použití s postupnými stupnicemi pro odhad postav ve stoje a na zemi. Dálkoměr Simonov založený na výšce 400 metrů (ve tvaru klopenky) má šipku pro použití s puškami ráže 9x39 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] všechny pušky Varšavské smlouvy\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]4,0x\n
+	%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovače: %c[ui_gray_2]PSO-1-1
+	</text>
+</string>
+<string id="st_addon_scope_cmore">
+	<text>Taktický záměrný bod C-MORE</text>
+</string>
+<string id="st_addon_scope_cmore_descr">
+	<text>Výkonný kolimátorový zaměřovač, který poskytuje neomezený zorný úhel a eliminuje překážky a tunelové vidění běžné u zaměřovačů ve tvaru trubice. Série Railway má standardní montážní základnu pro připojení zaměřovače k většině montáží nebo přijímačů Weaver nebo Picatinny.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]žádné (kolimátor)\n
+	</text>
+</string>
+<string id="st_addon_sil_57">
+	<text>Tlumič 5.7x28</text>
+</string>
+<string id="st_addon_sil_57_descr">
+	<text>Tlumič pro PDW FN-P90 a pistoli FN Five-seveN.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 5.7 mm\n
+	</text>
+</string>
+			
+	
+<string id="st_addon_sil_9mm">
+	<text>Tlumič 9mm</text>
+</string>
+<string id="st_addon_sil_9mm_descr">
+	<text>Tlumič zvuku pro pistole a samopaly ráže 9 mm. Velmi účinný Tlumič zvuku pro zbraně ráže 9x18 mm. Je velmi archaický, ale zároveň poměrně účinný. Jeho tělo obsahuje pevně stočený plátek jemné mosazné sítě. Přední část jednotky je tvořena sadou gumových pružin s otvory odpovídajícími ráži střely. Obvykle se používá pro boj zblízka proti lehce obrněným nepřátelům a pro atentáty.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 9 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_atg">
+	<text>Tlumič ATG</text>
+</string>
+<string id="st_addon_sil_atg_descr">
+	<text>Tlumič ATG je navržený pro snížení zvuku a blesku hlavně při střelbě z útočných pušek AK74, AKS74, AK74M, AK105 ráže 5,45 mm; útočných pušek AK101 a AK102 ráže 5,56 mm, stejně jako útočných pušek AK103 a AK104 ráže 7,62 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] ráže 5,45, 5,56, 7,62\n
+	</text>
+</string>
+<string id="st_addon_sil_gemtech">
+	<text>Tlumič Gemtech</text>
+</string>
+<string id="st_addon_sil_gemtech_descr">
+	<text>Tlumič zvuku pro pistole Glock, FN-FNP, Walther atd.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 9 mm, .45\n	
+	</text>
+</string>
+<string id="st_addon_sil_kzrzp">
+	<text>Tlumič KZRZP</text>
+</string>
+<string id="st_addon_sil_kzrzp_descr">
+	<text>Tlumič zvuku pro odstřelovačskou pušku SVD.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 7,62 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_nato">
+	<text>Tlumič NATO</text>
+</string>
+<string id="st_addon_sil_nato_descr">
+	<text>Tlumič zvuku pro standardní pušky ráže NATO 5,56x45 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] ráže .45, 5,56, 7,62\n
+	</text>
+</string>
+<string id="st_addon_sil_pbs1">
+	<text>Tlumič PBS-1</text>
+</string>
+<string id="st_addon_sil_pbs1_descr">
+	<text>Tlumič zvuku a plamene pro bezzvukovou střelbu z pušek Kalashnikov ráže 7,62 mm.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 7,62 mm\n
+	</text>
+</string>
+<string id="st_addon_sil_pbs4">
+	<text>Tlumič PBS-4</text>
+</string>
+<string id="st_addon_sil_pbs4_descr">
+	<text>Tlumič zvuku a plamene pro bezzvukovou střelbu.\n \n 
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 5,45 mm\n
+	%c[ui_gray_2]Tlumič pro pušku AKS-74U\n
+	</text>
+</string>
+	
+<string id="st_addon_sil_tgp-a">
+	<text>Tlumič TGP-A</text>
+</string>
+<string id="st_addon_sil_tgp-a_descr">
+	<text>Tlumič zvuku pro sérii pušek AK a kulomety RPK-74.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 5,45 mm\n
+	</text>
+</string>
+<string id="st_addon_silencer">
+	<text>Tlumič malorážkových pušek US Army</text>
+</string>
+<string id="st_addon_silencer_descr">
+	<text>Pokročilý Tlumič zvuku pro pušky navržený a vyrobený v USA, který zřejmě „zmizel“ z jednoho z kontejnerů s dodávkami US Army. Skládá se z těla z vysoce kvalitní oceli, které je vyplněno čtyřmi prodlužovacími komorami, následovanými sérií bafleků z titanu typu Z. Jednotka téměř úplně eliminuje záblesk z hlavně a značně potlačuje zvuk vydávaný při střelbě. Vyžaduje také minimální údržbu. Tlumiče tohoto a podobného typu se běžně používají na všech malorážkových západních puškách a zůstávají v aktivní službě u západních ozbrojených sil.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] zbraně ráže 5,56x45 mm\n
+	</text>
+</string>
+<string id="st_addon_trijicon_acog">
+	<text>ACOG Zaměřovač</text>
+</string>
+<string id="st_addon_trijicon_acog_descr">
+	<text>Odlučitelný optický zaměřovač vyrobený speciálně pro pušky NATO. ACOG znamená Advanced Combat Optical Gunsights a odkazuje na rodinu puškových zaměřovačů vyrobených společností Trijicon. Zaměřovače tohoto typu obvykle patří k vysoce kvalitním a mají vnitřní iluminaci pomocí tritia. Tento konkrétní typ má moderní vzor zaměřovacího kříže 'trijicon' a pevné zvětšení 2,0x.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] vybrané pušky NATO\n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]2,0x\n
+	%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovacího kříže: %c[ui_gray_2]trijicon
+	</text>
+</string>
+<string id="st_addon_scope_okp-7">
+	<text>Záměrná pomůcka OKP-7 (pro lištu)</text>
+</string>
+<string id="st_addon_scope_okp-7_descr">
+	<text>Původní design lze použít za jakýchkoli podmínek a také při potřebě lze použít standardní mechanické zařízení. Hlavní funkcí zaměřovače je montáž reflexního zaměřovače bez mechanického rámu, který pokrývá podstatnou část střeleckého sektoru. Ochrana reflexního zaměřovače v extrémních podmínkách je zajištěna tenkým a odolným kovovým krytem, který téměř neovlivňuje střelbu.
+	</text>
+</string>
+<string id="st_addon_scope_rmr">
+	<text>Trijicon RMR Red Dot zaměřovač</text>
+</string>
+<string id="st_addon_scope_rmr_descr">
+	<text>Trijicon RMR (RMR) je kompaktní reflexní zaměřovač. RM07C je zaměřovač s LED osvětlením napájený standardní baterií CR2032. Je umístěn v odolném kovaném hliníku, je extrémně odolný, přesto lehký. Snadno použitelné nastavitelní prvky s hmatovými kliky umožňují rychlé nastavení větru a elevace. Reticule má osm dostupných nastavení jasu, které lze manuálně upravit stiskem tlačítek plus a minus na obou stranách jednotky. Pro přepnutí do režimu automatického nastavení stačí současně stisknout obě tlačítka a uvolnit.
+	</text>
+</string>
+<string id="st_addon_scope_aimpoint">
+	<text>Aimpoint Red Dot Sight (High Spacer)</text>
+</string>
+<string id="st_addon_scope_aimpoint_descr">
+	<text>
+	• Neomezené pole pohledu\n
+	• Bez paralaxy\n
+	• Neomezená vzdálenost oka\n
+	• Odolný v extrémních povětrnostních podmínkách\n
+	• Extrémně odolná a trvanlivá konstrukce\n
+	• Neobsahuje nebezpečné látky\n
+	• Nevyzařuje laserové paprsky, které by mohly poškodit oči\n
+	• Zvyšuje jistotu zaměřování a pravděpodobnost zásahu\n
+	• Snížení času potřebného pro výcvik a spotřeby munice\n
+	• Výdrž baterie měřená v letech\n
+	</text>
+</string>
+<string id="st_addon_scope_ekp8_02">
+	<text>Red Dot zaměřovač Cobra EKP 8-02</text>
+</string>
+<string id="st_addon_scope_ekp8_02_descr">
+	<text>Zaměřovač Cobra poskytuje jisté zaměření za přirozených světelných podmínek (jasný slunečný den, hluboký soumrak a měsíční noc) díky možnosti manuálního nastavení jasu zaměřovacího bodu ve 16 úrovních. Umístění zaměřovacího bodu a cíle ve stejné rovině umožňuje zaměřování jedním i oběma očima, což střelci poskytuje neomezené pole pohledu a umožňuje efektivní střelbu na rychle se pohybující, malé a náhle se objevující cíle na krátkou dobu.
+	</text>
+</string>
+<string id="st_addon_scope_specterDR">
+	<text>Optický zaměřovač ELCAN SpecterDR</text>
+</string>
+<string id="st_addon_scope_specterDR_descr">
+	<text>
+	Optický zaměřovač SpecterDR 4x/1x Dual Role představuje revoluci v designu optických zaměřovačů. Jedná se o první skutečně duální zaměřovač s dvěma zornými polemi pro bojové nasazení. SpecterDR se okamžitě přepíná mezi zaměřovačem s 4x zvětšením a zaměřovačem s 1x pro boj na krátkou vzdálenost jedním pohybem páky. Na rozdíl od zaměřovačů se zoomem SpecterDR nabízí optimalizovanou optickou dráhu a stejnou vzdálenost oka v obou režimech 4x a 1x. V závislosti na situaci může uživatel nastavit osvětlení kříže nebo pouze jasný červený bod uprostřed. V režimu 1x má SpecterDR největší zorné pole v průmyslu. V režimu 4x nabízí SpecterDR široké zorné pole, dlouhou vzdálenost oka a legendárně čistý obraz od společnosti ELCAN. SpecterDR 4x/1x poskytuje nejlepší jednořešení pro střelbu na střední vzdálenost i boj na krátkou vzdálenost a je navržen tak, aby odolal nárokům moderního profesionálního používání. (Zaměřovač má také záložní mechanická mířidla nahoře).\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]Nastavitelné od 1,0x do 4,0x\n
+	</text>
+</string>
+<string id="st_addon_scope_pso2">
+	<text>PSO-1Ě (bez ochranného víčka)</text>
+</string>
+<string id="st_addon_scope_pso2_descr">
+	<text>Optický zaměřovač PSO 1M2-1 vyráběný společností Zenit-Belomo je vojenským optickým zaměřovačem určeným pro přesné zaměření při střelbě se speciálními odstřelovačskými puškami (VSS) a odstřelovačskými puškami Dragunov (SVD) na různé cíle s 4x zvětšením a FOV 6 stupňů.
+	</text>
+</string>
+<string id="st_addon_scope_0kp2">
+	<text>OKP-7 (Pro lištu typu Picatinny/Weaver)</text>
+</string>
+<string id="st_addon_scope_0kp2_descr">
+	<text>Původní konstrukce zaměřovačů OKP umožňuje střelbu ze nestabilních pozic v rychle se měnících podmínkách, snižuje únavu střelce a v případě potřeby umožňuje volné používání základních mechanických mířidel. Klíčovou vlastností tohoto zaměřovače je bezrámový reflexní zobrazovač, který neblokuje žádnou část střeleckého sektoru; naopak, zobrazovač je chráněn tenkým a odolným víkem, které je při střelbě téměř nepostřehnutelné. Tato varianta je instalována na montáži typu dovetail (holubí ocas).
+	</text>
+</string>
+<string id="st_addon_scope_d0cter">
+	<text>Docter Sight III</text>
+</string>
+<string id="st_addon_scope_d0cter_descr">
+	<text>Docter jako značka vznikla v roce 1991, ale společnost začala psát svůj příběh mnohem dříve. Předtím se jmenovala Carl Zeiss Jena. V 80. letech to byla jedna z největších výrobců optiky na světě. Společnost začala působit před více než 100 lety a během let si vytvořila bezchybnou pověst. Po druhé světové válce společnost rychle rostla a rozkvétala, dokud se v roce 1991 nespojily Východní a Západní Německo. Tehdy došlo k první velké změně - společnost převzal Bernhard Docter. Překvapivě společnost zkrachovala. Analytická skupina Jena koupila Docter v roce 1997 a společnost začala znovu růst. V roce 2018 došlo k změně ve vedení. Společnost byla přejmenována z Docter na Noblex. Většina produktů zůstala v nabídce, ale Noblex přidal i některé nové. Zachovali slavný logo - sovu. Docter byl známý tím, že nabízel kvalitní německé výrobky za dostupnou cenu. Díky tomu si společnost získala mnoho příznivců, kteří jsou věrni značce. Od roku 2018, kdy Noblex převzal, společnost rozšířila své výrobní procesy i jinam.
+</text>
+</string>
+	
+	<string id="st_addon_scope_1p59">
+		<text>1P59 "Giperon" Pancratic Sniper Sight</text>
+	</string>
+	<string id="st_addon_scope_1p59_descr">
+		<text>Pankratický odstřelovačský zaměřovač Giperon je určen pro průzkum cíle a mířenou střelbu z odstřelovačských pušek a zajišťuje automatické zadávání úhlu zaměření při zaměřování cíle. V porovnání s organickým zaměřovačem PSO-1 zvyšuje pankratický zaměřovač 1P59 Giperon účinnost střelby z SVD 1,3-2krát (v závislosti na vzdálenosti a velikosti cíle) díky většímu zvětšení, přesnějšímu dálkoměru, kombinaci operací zaměřování cíle a zadávání úhlu zamíření a také díky stupnici zadávání úhlu zamíření zabudované v zorném poli zaměřovače.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[ui_gray_2] Zvětšení: %c[ui_gray_2]Nastavitelné 1,0x až 8,0x\n
+		</text>
+	</string>	
+	
+	<string id="st_addon_scope_1pn93">
+		<text>1PN93-4 Noční zaměřovač</text>
+	</string>
+	<string id="st_addon_scope_1pn93_descr">
+		<text>Noční zaměřovač 1PN93 SVD je určen k detekci a rozpoznání cíle a k mířené střelbě zblízka za podmínek přirozeného nočního osvětlení. 1PN93-4 je 3. generace nočního optického zaměřovače.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_pks">
+		<text>PKS-07 (NEPOUŽÍVÁ SE)</text>
+	</string>
+	<string id="st_addon_scope_pks_descr">
+		<text>PKS-07 Taktický odstřelovačský zaměřovač s dvojitou černou/červenou dálkoměrnou osnovou, univerzální verze AK/SKS/SVD je unikátní odstřelovačský zaměřovač založený na technologii kolimátoru. Puškohled byl vytvořen ve společnosti LOMO (Sankt Petěrburg, Rusko) speciálně pro odstřelovačskou platformu VSK-94. Protože byl technologicky vyspělejší a také lehčí, ruská armáda si jej vybrala místo PSO-3 jako standardní optiku pro SV-98. Nabízíme verzi AA s lineárně značenými elevačními věžičkami, kterou exkluzivně dováží firma Kalinka Optics Hodí se pro pušky AK a SVD a je optimalizována pro použití na puškách SVD, Tigr, PSL Mosin a podobných. Jeho plně potažený systém prizmatických čoček poskytuje pozoruhodný, vysoce kontrastní, širokoúhlý zorný úhel a nižší umístění okuláru pro pohodlné míření. Puškohled má osvětlenou dálkoměrnou osnovu. Puškohled má nastavení natočení a elevace ve stylu POSP (každé kliknutí na elevační věžičku posune POI o 4,5 cm na 100 m, každé kliknutí na natáčecí věžičku posune POI o 2,5 cm na 100 m). Speciální ochranné vrstvy čoček chrání zaměřovač před poškrábáním a znečištěním v extrémních podmínkách bojiště, pro které byl navržen. Všimněte si na tomto zaměřovači označení extrémních teplot, skončíte dříve než on. Dodává se s krycím pouzdrem a gumovým okulárem. Jednoznačně NEJLEPŠÍ VÝBĚR.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_leupold">
+		<text>Leupold Mark 8 CQBSS 1,1-8x24</text>
+	</string>
+	<string id="st_addon_scope_leupold_descr">
+		<text>Od blízké vzdálenosti až po střelbu na dlouhé cíle - Leupold Mark 8 CQBSS 1,1-8x24 mm zahrnuje vše, co potřebují vojenští střelci, strážci zákona a soutěžní střelci, v jednom extrémně univerzálním puškohledu. Osvětlená přední ohnisková rovina zaměřovače poskytuje přesný odhad vzdálenosti v celém rozsahu zvětšení. Osm nastavení jasu zajišťuje optimální viditelnost osvětlené osnovy za všech světelných podmínek a je kompatibilní s přístroji pro noční vidění. Vypínací poloha mezi jednotlivými číslovanými nastaveními jasu zajišťuje dlouhou výdrž baterií a téměř okamžitý návrat k požadované intenzitě zaměřovače.
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[ui_gray_2] Zvětšení: %c[ui_gray_2]Nastavitelné 1,0x až 8,0x\n</text>
+	</string>
+	
+	<string id="st_addon_scope_mepro">
+		<text>Meprolight M21</text>
+	</string>
+	<string id="st_addon_scope_mepro_descr">
+		<text>Meprolight Mepro M21 je v boji osvědčený zaměřovač s červeným bodem, testovaný v těch nejnáročnějších podmínkách, jaké si lze představit. Nefunguje na baterie, ale přes den je napájen systémem sběrače optických vláken a v noci tritiem - když všechny ostatní zaměřovače selžou, M21 bude fungovat dál. Díky odnímatelné montáži QD budete moci tento zaměřovač namontovat a demontovat z platformy Picatinny během několika sekund. Lze jej spárovat s brýlemi nočního vidění a dalekohledy, což výrazně zvyšuje jeho použitelnost. Meprolight je izraelská společnost založená v roce 1990. Její nabídka zahrnuje denní optické přístroje, přístroje pro noční vidění, termovizní přístroje, samosvítící noční zaměřovače atd. Jejich výrobky byly testovány tak, aby odolaly nejnáročnějším podmínkám, jaké si lze představit, a proto jsou oblíbené u armády a orgánů činných v trestním řízení. Společnost splňuje specifikace NATO a americké armády i mezinárodní normy MIL.
+		</text>
+	</string>
+
+	<string id="st_addon_scope_aim_low">
+		<text>Zaměřovací bod Micro T1 (nízký odstup)</text>
+	</string>
+	<string id="st_addon_scope_aim_low_descr">
+		<text>Nezáleží na tom, jaká je vaše mise, velikost a hmotnost vybavení je rozhodujícím faktorem. Se zaměřovačem Aimpoint® Micro T-1 představila společnost Aimpoint zaměřovací systém, který poskytuje výkon našich zaměřovačů plné velikosti v malém balení. Od svého uvedení na trh v roce 2007 se zaměřovač Aimpoint® Micro T-1 stal díky své velikosti, nízké hmotnosti a robustní kvalitě provedení velmi oblíbeným po celém světě.
+		</text>
+	</string>	
+
+	<string id="st_addon_scope_aimpoint_pro">
+		<text>Aimpoint PRO</text>
+	</string>
+	<string id="st_addon_scope_aimpoint_pro_descr">
+		<text>Optika pro hlídkové pušky Aimpoint je navržena za přispění významné skupiny současných i bývalých profesionálů. Optika Patrol Rifle Optic obsahuje mnoho dosud nevídaných funkcí, které maximalizují výkon tohoto zaměřovače v náročných podmínkách, jimž čelí moderní orgány činné v trestním řízení. Zaměřovač Aimpoint® PRO se dodává v sadě připravené k použití za příznivou cenu, což je koncept, který silně oslovuje jednotky prosazující právo.
+		</text>
+	</string>
+
+	<string id="st_addon_scope_1p76">
+		<text>1P76 "Rakurs-A" (pro Dovetail Mount)</text>
+	</string>
+	<string id="st_addon_scope_1p76_descr">
+		<text>Optický zaměřovač 1P76 určený pro sledování bojiště, výběr cíle, zaměřování cílů a mířenou palbu proti světelným a osvětleným cílům ve dne, za soumraku a v noci. Zaměřovač má široké zorné pole, které umožňuje rychlé pozorování terénu v rychle se pohybující bojové situaci současně pouhým okem i přes zaměřovač bez ztráty viditelnosti cíle.
+		</text>
+	</string>	
+
+	<string id="st_addon_scope_pka">
+		<text>PK-A Red Dot Sight</text>
+	</string>
+	<string id="st_addon_scope_pka_descr">
+		<text>Další dlouhodobě oblíbený optický zaměřovač PK-A je robustní a odolný tubusový optický zaměřovač s červeným bodem. Původně se zdálo, že jde o adaptaci původní optiky PSO SVD, PK-A má podobnou konstrukci a stejný styl povrchové úpravy v šedé barvě kladívka
+		</text>
+	</string>
+
+	<string id="st_addon_scope_ekp8_18">
+		<text>Kobra EKP 8-18 Red Dot Sight</text>
+	</string>
+	<string id="st_addon_scope_ekp8_18_descr">
+		<text>Kobra Military 8-18 Red Dot Weaver puškohled, šroubovací montáž. Světoznámý puškohled Kobra je bojový optický zaměřovač s otevřeným kolimátorem "red dot", který využívá technologii laserem generovaného "heads-up display" (HUD) k překrytí obrazce osnovy na filtrovanou čočku, která slouží střelci jako zaměřovací zařízení. Tento systém představuje nerušené zorné pole při výkonu 1x, což umožňuje mimořádně pohodlnou střelbu "s oběma očima otevřenýma". V průměru většina uživatelů zaznamená 1,5krát rychlejší zaměření cíle a o 50 % menší skupinu výstřelů na 100 metrů ve srovnání se železnými mířidly. Je určen pro zasahování rychle se pohybujících cílů a cílů objevujících se po krátkou dobu v blízkých a městských bojových situacích za různých světelných podmínek. Poskytuje jasné zaměření od 104 lx do 10-2 lx (denní světlo, soumrak a měsíční světlo), zaměření jedním nebo dvěma očima, je velmi účinný při střelbě z pohybujících se vozidel a umožňuje dokonalé zásahy na rychle se pohybující, malé a samovolně se objevující cíle.
+		</text>
+	</string>	
+
+    <string id="st_addon_sil_osprey">
+		<text>Ďđĺäěĺň áîëüřĺ íĺ čńďîëüçóĺňń˙ â ŕääîíĺ / The Item is no longer in use in the addon
+		</text>
+	</string>
+	<string id="st_addon_sil_osprey_descr">
+		<text>SilencerCo Osprey silencer modified to be used with 5.56 and 5.45mm rifles. In Zone usually used by Monolith veterans.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 5.45mm\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_salvo">
+<text>Salvo 12 tlumič</text>
+	</string>
+	<string id="st_addon_sil_salvo_descr">
+		<text>Tlumič Salvo 12 pro 12" brokovnice vyrobené společností SilencerCo. Tlumič Salvo 12 je navržen tak, aby fungoval s většinou pumpovacích a poloautomatických brokovnic a téměř veškerým komerčně dostupným střelivem, a při své plné délce 12" snižuje hluk na 136,8 dB na ústí hlavně při 7. výstřelu. Konfigurace 6", 8", 10" a 12" umožňují koncovému uživateli přizpůsobit Salvo 12 pro sportovní střelbu na hlínu, vodní ptactvo, lov krocanů, domácí obranu a mnoho dalších aplikací a přijmout vhodný kompromis mezi velikostí a snížením hluku.
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 12 ráží\n
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_deltapoint">
+		<text>Zaměřovač s červeným bodem Deltapoint PRO</text>
+	</string>
+	<string id="st_addon_scope_deltapoint_descr">
+		<text>DeltaPoint Pro je důkazem toho, že ani u malého zaměřovače nemusíte dělat kompromisy ve výkonu. Jeho neuvěřitelně široké zorné pole a křišťálově čisté sklo dominuje konkurenci, zatímco jeho robustní hliníkové pouzdro a ocelový plášť zajišťují, že bude fungovat i v těch nejnáročnějších podmínkách. Při navrhování tohoto elitního zaměřovače s červeným bodem jsme se zaměřili také na snadné používání, a proto jsme na horní stranu umístili snadno přístupný prostor pro baterie a pro větší přesnost jsme mu dali možnost nastavení kliknutím. A nejde jen o zaměřovač na pistole; DP Pro je stejně dobře použitelný i na zbraních AR, brokovnicích a prakticky na čemkoli jiném, co bouchá.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_e0t2">
+		<text>Zaměřovač EOTech XPS3-0</text>
+	</string>
+	<string id="st_addon_scope_e0t2_descr">
+		<text>Mířidla XPS3 jsou menší a lehčí než všechna ostatní holografická mířidla na zbraně, ale stejně rychlá.  Příslušníci orgánů činných v trestním řízení a lovci oceňují nízkou hmotnost a kompaktní rozměry pro pohodlné nošení v práci i v lese. XPS3 funguje na jedinou baterii 123. Konfigurace s jednou lithiovou baterií umožňuje větší prostor na liště, takže zbývá více místa pro zadní železné zaměřovače, lupy nebo montáž pro noční vidění.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_pn23">
+		<text>Noční zaměřovač PN-23</text>
+	</string>
+	<string id="st_addon_scope_pn23_descr">
+		<text>PN23 je specializovaný zaměřovač pro noční vidění. Vyznačuje se kompaktními rozměry v kombinaci s užitečným rozsahem zvětšení 3x. To poskytuje působivý rozpoznávací rozsah 400 metrů s velmi širokým zorným polem 12°. Osvětlený zaměřovač je navržen tak, aby poskytoval rychlost i přesnost.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_gauss_sight">
+		<text>Zaměřovač EOTS-62</text>
+	</string>
+	<string id="st_addon_scope_gauss_sight_descr">
+		<text>Elektroptický zaměřovací systém EOTS-62, byl vyvinut v tajných laboratořích uvnitř Zóny pro použití s ultrapřesnou zbraní známou jako "Typ 62". Lze jej namontovat na montáž typu "Picatinny rail". Má funkci detekce cíle.\n \n
+		%c[d_cyan] - %c[ui_gray_2] Zvětšení: %c[ui_gray_2]Nastavitelné 1,0x až 8,0x\n
+		</text>
+	</string>
+	
+	<string id="st_addon_sil_hexagon">
+<text>Tlumič Hexagon SKS 7,62x39</text>
+	</string>
+	<string id="st_addon_sil_hexagon_descr">
+		<text>Tlumič hluku výstřelu pro SKS od společnosti Hexagon.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 7,62 Cal.\n
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_marchf">
+		<text>March Tactical 3-24x42 FFP</text>
+	</string>
+	<string id="st_addon_scope_marchf_descr">
+		<text>Puškohled March Tactical 3-24x42 First Focal Plane, spolehlivý a přesný s municí libovolného výkonu. Vyrobeno japonskou společností DEON Optical Design Corporation. Puškohled March-F 3-24x42 Tactical je zaměřovačem pro lovce na dlouhé vzdálenosti i taktické střelce po celém světě. Puškohled má 42mm objektiv vyrobený z optického skla s mimořádně nízkým rozptylem, který umožňuje jasný a čistý obraz mířidel za většiny světelných podmínek. Puškohled je vybaven taktickými exponovanými věžičkami pro nastavení směru větru a výšky, korekcí paralaxy od 10 metrů do nekonečna a osvětlenou taktickou osnovou v první ohniskové rovině.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_pgo7gs">
+		<text>Zaměřovač PGO-7</text>
+	</string>
+	<string id="st_addon_scope_pgo7gs_descr">
+		<text>Optický zaměřovač PGO-7 je hlavním zaměřovačem ručního granátometu RPG-7. Slouží k zamíření granátometu při střelbě na cíle umístěné na různé vzdálenosti.
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_rakurs">
+		<text>1P76 "Rakurs-A" (pro Picatinny/Weaver)</text>
+	</string>
+	<string id="st_addon_scope_rakurs_descr">
+		<text>Optický zaměřovač 1P76 určený pro sledování bojiště, výběr cíle, zaměřování cílů a mířenou palbu proti světelným a osvětleným cílům ve dne, za soumraku a v noci. Zaměřovač má široké zorné pole, které umožňuje rychlé pozorování terénu v rychle se pohybující bojové situaci současně pouhým okem i přes zaměřovač bez ztráty viditelnosti cíle.</text>
+	</string>
+
+	<string id="st_addon_scope_compm4s">
+		<text>Mířidla CompM4s (pro Picatinny/Weaver)</text>
+	</string>
+	<string id="st_addon_scope_compm4s_descr">
+		<text>Mířidla Aimpoint® CompM4s s přihrádkou na slabé baterie patří do řady mířidel CompM4, která jsou nejlepšími mířidly, jaká kdy společnost Aimpoint vyrobila. Mezi vylepšení patří pokročilá energetická účinnost, která zajišťuje až 8 let nepřetržitého provozu na jedinou baterii AA!
+		</text>
+	</string>
+
+	<string id="st_addon_scope_susat">
+		<text>SUSAT (pro Picatinny/Weaver)</text>
+	</string>
+	<string id="st_addon_scope_susat_descr">
+		<text>SUSAT je čtyřnásobný optický zaměřovač vyvinutý ve Velké Británii v Královském výzkumném a vývojovém středisku pro zbraně. Vyrábí ho společnost Avimo a také United Scientific Instruments. Nejčastěji se používá k mířené střelbě z lehkých ručních zbraní na střední a velké vzdálenosti. (Puškohled má na sobě záložní železná mířidla).
+		</text>
+	</string>
+
+	<string id="st_addon_scope_1p78gs">
+		<text>1P78 Kaštan</text>
+	</string>
+	<string id="st_addon_scope_1p78gs_descr">
+		<text>1P78 je jednou z nejnovějších optik, která vstoupila do služby v ruských ozbrojených silách. Konstrukce je podobná koncepci ACOG s relativně malým zvětšením (2,8x) a možností zamířit a střílet bez nutnosti nastavovat jakékoliv ovládací prvky.
+		</text>
+	</string>
+
+	<string id="st_addon_scope_1pn93n2_1gs">
+	<text>1PN93-1 Noční zaměřovač</text>
+</string>
+<string id="st_addon_scope_1pn93n2_1gs_descr">
+	<text>Noční zaměřovač druhé generace s pevným zvětšením (4 dioptrie). Možnost 1PN93-1 je navržena pro boj v podmínkách špatné viditelnosti na střední vzdálenosti. Navržen pro montáž na zbraně se standardní montáží typu Warsaw Treaty (jako země Varšavské smlouvy).</text>
+</string>
+<string id="st_addon_scope_kemper">
+	<text>Reflexní zaměřovač Firefield Kemper XL-M</text>
+</string>
+<string id="st_addon_scope_kemper_descr">
+	<text>Kemper XL-M je panoramatický otevřený reflexní zaměřovač s červeným tečkou, ideální pro rychlou střelbu, střelbu z ruky a střelbu na pohybující se cíle. Na rozdíl od civilního modelu je "M" -armická varianta zaměřovače vyrobena z odolnější slitiny hliníku - tj. Speciálně navržena pro drsné prostředí. Instaluje se na Weaver/Picatinny lištu.</text>
+</string>
+<string id="st_addon_scope_usp1">
+	<text>1P29 "Tulpan" (Bez očního nálevu)</text>
+</string>
+<string id="st_addon_scope_usp1_descr">
+	<text>Zaměřovač USP-1 (index 1P29) má optické uspořádání s hranolovým svislým systémem. Svislé úhly zaměřování se nastavují mechanicky otáčením těla zaměřovače vzhledem k montážnímu držáku zbraně. Nepotřebuje baterie, protože je osvětlen tritiem. Měřicí stupnice na okraji pole pohledu zaměřovače umožňuje vizuálně nalézt vzdálenost až 1200 m k cíli výšky 1,5 m.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] všechny pušky Varšavské smlouvy\n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] Zvětšení: %c[ui_gray_2]4,0x\n
+		%c[d_cyan] • %c[ui_gray_2] Vzor zaměřovače: %c[ui_gray_2]PSU-1\n
+	</text>
+</string>
+<string id="st_addon_sil_rotor">
+	<text>Úsťová brzda Rotor 43 7,62x54</text>
+</string>
+<string id="st_addon_sil_rotor_descr">
+	<text>Úsťová brzda Rotor 43 je navržena pro instalaci na zbraň SVDS 7,62x54. I když je označena jako úsťová brzda, funguje také jako tlumič hluku.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 7,62 ráže\n
+	</text>
+</string>
+
+	<string id="st_addon_scope_trijicon_rmr">
+	<text>Trijicon taktický set</text>
+</string>
+<string id="st_addon_scope_trijicon_rmr_descr">
+	<text>Tento taktický set zahrnuje kombinaci dvou zaměřovačů od americké společnosti Trijicon. Set umožňuje instalaci dvou zaměřovačů Trijicon Acog BAC 5.56 BDC a Trijicon RMR na pušky s Picatinny nebo Weaver montáží. Tato konfigurace umožňuje střelci používat svou pušku na krátké i dlouhé vzdálenosti bez jakéhokoli nepohodlí.
+	</text>
+</string>
+<string id="st_addon_scope_mark8_rmr">
+	<text>Leupold taktický set RMR (pro Picatinny/Weaver)</text>
+</string>
+<string id="st_addon_scope_mark8_rmr_descr">
+	<text>Tento taktický set zahrnuje kombinaci dvou zaměřovačů od společností Leupold a Trijicon. Set umožňuje instalaci dvou zaměřovačů Leupold Mark 8 CQBSS a Trijicon RMR na pušky s Picatinny nebo Weaver montáží. Tato konfigurace umožňuje střelci používat svou pušku na krátké i dlouhé vzdálenosti bez jakéhokoli nepohodlí.
+	</text>
+</string>
+<string id="st_addon_scope_psicho_rmr">
+	<text>PSO taktický set RMR (pro dovetail a Picatinny/Weaver)</text>
+</string>
+<string id="st_addon_scope_psicho_rmr_descr">
+	<text>Tento taktický set zahrnuje kombinaci dvou zaměřovačů od běloruské společnosti ÁĺëÎĚÎ a americké společnosti Trijicon. Set umožňuje instalaci dvou zaměřovačů PSO-1Ě2-1 a Trijicon RMR na pušky s dovetail a Picatinny/Weaver montáží. Tato konfigurace umožňuje střelci používat svou pušku na krátké i dlouhé vzdálenosti bez jakéhokoli nepohodlí.
+	</text>
+</string>
+<string id="st_addon_scope_spec_alt">
+	<text>SpecterDR-RMR taktický set</text>
+</string>
+<string id="st_addon_scope_spec_alt_descr">
+	<text>Tento taktický set zahrnuje kombinaci dvou zaměřovačů od kanadské společnosti ELCAN a americké společnosti Trijicon. Set umožňuje instalaci dvou zaměřovačů SpecterDR DFOV14-C2 1-4x a Trijicon RMR na pušky s Picatinny nebo Weaver montáží. Tato konfigurace umožňuje střelci používat svou pušku na krátké i dlouhé vzdálenosti bez jakéhokoli nepohodlí.
+	</text>
+</string>
+<string id="st_addon_scope_kashtan_rmr">
+	<text>Kashtan taktický set RMR (pro dovetail a Picatinny/Weaver)</text>
+</string>
+<string id="st_addon_scope_kashtan_rmr_descr">
+	<text>Tento taktický set zahrnuje kombinaci dvou zaměřovačů od ruského Centrálního konstrukčního úřadu "Tochpribor" a americké společnosti Trijicon. Set umožňuje instalaci dvou zaměřovačů 1P78 Kashtan a Trijicon RMR na pušky s dovetail a Picatinny/Weaver montáží. Tato konfigurace umožňuje střelci používat svou pušku na krátké i dlouhé vzdálenosti bez jakéhokoli nepohodlí.
+	</text>
+</string>
+<string id="st_addon_sil_hex23">
+	<text>TLUMIČ HLUKU Swine-23</text>
+</string>
+<string id="st_addon_sil_hex23_descr">
+	<text>"Domácí" zařízení pro potlačení zvuku výstřelu u KS-23 Boar. Vyrobil několik puškařů v Zóně. Účelem tohoto zařízení je alespoň mírně snížit hlasitost výstřelu Boaru, aby nepřitahoval přílišnou pozornost. Konstrukce je hromová a těžká, což přidává určité nepohodlí při používání tlumiče.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_cyan] • %c[ui_gray_2] 23mm ráže\n
+	</text>
+</string>
+<string id="st_addon_scope_mono_kit">
+	<text>Taktický kit Monolith AK-12</text>
+</string>
+<string id="st_addon_scope_mono_kit_descr">
+	<text>Tento kit obsahuje: ergonomickou předpažbí umožňující instalaci granátometu ráže 30 mm pod hlavní, stejně jako mířidla pro krátké a středně dlouhé vzdálenosti: Trijicon Acog a AN/PEQ-16 LAM. Součástí je také sada zásobníků s vysokou kapacitou na 60 nábojů. Jedná se o nevratnou vylepšení.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n%c[d_cyan] • %c[ui_gray_2] Monolith AK-12\n
+	</text>
+</string>
+<string id="st_addon_sil_aac762">
+	<text>Tlumič hluku AAC 7.62 SDN-6</text>
+</string>
+<string id="st_addon_sil_aac762_descr">
+	<text>Tlumič hluku AAC 7.62 SDN-6 navržený pro použití s náboji 7.62x51 NATO, ale také funguje jako vynikající Tlumič hluku pro více kalibrů u různých zbraní, s vynikajícími výkony pro 7.62 NATO, .300 AAC, 6.8 SPC, 6.5 a 5.56mm NATO. Lze ho instalovat pouze na zařízení kompatibilní s "51T".\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 7.62 ráže\n
+	</text>
+</string>
+<string id="st_addon_sil_tgpv">
+	<text>Tlumič hluku TGP-V</text>
+</string>
+<string id="st_addon_sil_tgpv_descr">
+	<text>Taktický Tlumič hluku/bleskový hrot navržený speciálně pro použití na pušce SVDS.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 7.62 ráže\n
+	</text>
+</string>		
+<string id="st_addon_sil_osp9">
+	<text>Tlumič hluku Osprey-9</text>
+</string>
+<string id="st_addon_sil_osp9_descr">
+	<text>Lehký Tlumič hluku vyrobený firmou SilencerCo pro pistole ráže 9 mm.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 9mm ráže\n
+	</text>
+</string>
+<string id="st_addon_sil_pmm">
+	<text>Tlumič hluku PMM</text>
+</string>
+<string id="st_addon_sil_pmm_descr">
+	<text>Tlumič hluku pro pistole PMM. Lze jej také použít s jakýmkoli pistolemi ráže 9x18 s podobným závitem na hlavni.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] 9mm ráže\n
+	</text>
+</string>
+<string id="st_addon_scope_kit_aus_tri">
+	<text>Taktický kit "Scout" pro SA58 FAL AUS</text>
+</string>
+<string id="st_addon_scope_kit_aus_tri_descr">
+	<text>Kit, který přeměňuje zbraň na skvělou odstřelovačskou pušku. Součástí kitu je pistolová rukojeť Fab AG FAL, kryt závěru DS Arms Extreme Duty s Picatinny lištou, předpažbí Vltor CASV pro FAL, 21" hlaveň pro SA-58 ráže 7.62x51 a pažba DSA BRS. Součástí jsou také dvě puškohledy: Aimpoint T1 na NcStar 45 a Trijicon Acog. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] DS Arms SA-58 AUS "Austrian Style"\n
+	</text>
+</string>
+<string id="st_addon_scope_kit_fal_leup">
+	<text>Taktický kit "Marauder" pro SA58 FAL AUS</text>
+</string>
+<string id="st_addon_scope_kit_fal_leup_descr">
+	<text>Kit, který přeměňuje zbraň na skvělou odstřelovačskou pušku. Součástí kitu je pistolová rukojeť Fab AG FAL, kryt závěru DS Arms Extreme Duty s Picatinny lištou, předpažbí Vltor CASV pro FAL, 21" hlaveň pro SA-58 ráže 7.62x51 a pažba DSA BRS. Součástí jsou také dvě puškohledy: Aimpoint T1 na NcStar 45 a Leupold Mark 8 CQBSS. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] • %c[ui_gray_2] DS Arms SA-58 AUS "Austrian Style"\n
+	</text>
+</string>
+
+	<string id="st_addon_scope_kit_sa5x_spec">
+		<text>"Defender" taktická sada pro SA58 FAL AUS</text>
+	</string>
+	<string id="st_addon_scope_kit_sa5x_spec_descr">
+		<text>Sada přestavující zbraň na skvělou střeleckou pušku. Sada obsahuje: - puškohled, který se používá pro střelbu z pušky: Fab AG FAL pistolovou rukojeť, protiprachový kryt DS Arms Extreme Duty s lištou Picatinny, předpažbí Vltor CASV pro FAL, 21" hlaveň pro SA-58 7,62x51 a pažbu DSA BRS. K dispozici jsou také dva dalekohledy: Aimpoint T1 na NcStar 45 a ELCAN SpecterDR. Tato modernizace je nevratná.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] DS Arms SA-58 AUS "Austrian Style"\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_geks545">
+<text>Hexagonový tlumič 5,45/7,62x39</text>
+	</string>
+	<string id="st_addon_sil_geks545_descr">
+<text>Tlumič zvuku od společnosti Hexagon pro ráže 5,45x39 a 7,62x39.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 5.45, 7.62 Cal.\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_kek12">
+<text>Tlumič Hexagon 12K</text>
+	</string>
+	<string id="st_addon_sil_kek12_descr">
+		<text>Zvukový tlumič vyrobený společností Hexagon pro brokovnice a karabiny ráže 12ga.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 12 Cal.\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_black_box">
+		<text>AAC BLACK BOX</text>
+	</string>
+	<string id="st_addon_sil_black_box_descr">
+		<text>BLACK BOX tlumič hluku .45 vyrobený společností Advanced Armament Corp. Funguje s většinou pistolí ráže 9 mm a 45ACP se závitem na hlavni.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 9mm, .45 Cal.\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_226sig_kit">
+		<text>Taktická sada pro Sig Sauer P226R</text>
+	</string>
+	<string id="st_addon_scope_226sig_kit_descr">
+		<text>Sada obsahuje: Závitovou hlaveň pro použití s tlumičem, ergonomické úchopové destičky a zaměřovač Trijicon RMR Red Dot s montážní deskou. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Sig Sauer P226R pistole\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_mod9">
+		<text>Taktická sada pro Walther P99</text>
+	</string>
+	<string id="st_addon_scope_mod9_descr">
+		<text>Hlaveň se závitem pro použití s tlumičem, tritiová mířidla a laserový zaměřovač Viridian X5L. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Pistole Walther P99 \n
+		</text>
+		</string>
+
+
+	<string id="st_addon_scope_upg220">
+		<text>Taktická sada pro pistoli Sig Sauer P220</text>
+	</string>
+	<string id="st_addon_scope_upg220_descr">
+		<text>Závitovou hlaveň pro použití s tlumičem, tritiová mířidla a laserový zaměřovač Viridian X5L a vysokokapacitní zásobník na 12 nábojů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Sig Sauer P220 pistole\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_23_up">
+		<text>510mm hlaveň pro KS-23</text>
+	</string>
+	<string id="st_addon_scope_23_up_descr">
+		<text>Krátká a lehká hlaveň pro KS-23 Carabine. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] KS-23 Carabine\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_kab_up">
+		<text>"Kančí" taktická sada pro KS-23M Drozd</text>
+	</string>
+	<string id="st_addon_scope_kab_up_descr">
+		<text>Sada obsahuje: Hlaveň se závitem pro použití s tlumičem a zaměřovač Trijicon RMR s montážním modulem. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Carabine KS-23M Drozd\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_daniel">
+		<text>Tlumič Daniel Defence Wave QD</text>
+	</string>
+	<string id="st_addon_sil_daniel_descr">
+		<text>Daniel Defence Wave QD tlumič zvuku, který lze nainstalovat na Remington model 700.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington Model 700\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_archangel">
+		<text>Promag Archangel Polymerová pažba pro Remington M700</text>
+	</string>
+	<string id="st_addon_scope_archangel_descr">
+		<text>Polymerová pažba Archangel pro pušku Remington model 700. Součástí je sada zásobníků na 20 nábojů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington M700\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_magpul_pro">
+<text>Závěsné zařízení Magpul PRO 700 pro Remington M700</text>
+	</string>
+	<string id="st_addon_scope_magpul_pro_descr">
+		<text>PRO 700 je lehké, ergonomické šasi navržené pro Remington Model 700 od společnosti Magpul. Obsahuje sadu zásobníků na 12 nábojů a zaměřovač Trijicon RMR Red Dot Sight nainstalovaný na úhlové montáži 45 stupňů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington M700\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_mod_x_gen3">
+		<text>MOD X Gen.3 pro Remington M700</text>
+	</string>
+	<string id="st_addon_scope_mod_x_gen3_descr">
+		<text>Modulární puškový systém A*B Arms MOD X GEN III je lehký, ergonomický, zápustný podvozek určený pro Remington Model 700. Je určen pro pušky Remington. Obsahuje sadu 12 zásobníků a zaměřovač Leupold DeltaPoint PRO Red Dot Sight instalovaný na úhlové montáži 45 stupňů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington M700\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_sr1m">
+		<text>SR1MP tlumič 9x21</text>
+	</string>
+	<string id="st_addon_sil_sr1m_descr">
+		<text>Standardní tlumič pro pistoli SR-1MP. Vyžaduje instalaci taktické sady s dlouhou hlavní na zbraň.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Pistole SR1MP 9x21\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_sr1upgr1">
+		<text>Taktická sada pro SR1MP 9x21 Gyurza</text>
+	</string>
+	<string id="st_addon_scope_sr1upgr1_descr">
+		<text>Sada obsahuje tritiová železná mířidla, laserový zaměřovací modul a dlouhou hlaveň, která umožňuje instalaci tlumiče. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Pistole SR1MP 9x21\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_silen98">
+		<text>Supresorový adaptér pro Mauser 98k Forester</text>
+	</string>
+	<string id="st_addon_scope_silen98_descr">
+		<text>Adaptér nebo náhubkové zařízení, které umožňuje používat tlumič zvuku s odstřelovací puškou Mauser 98k Forester. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Mauser 98k Forester\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_forester">
+<text>Tlumič pro Mauser 98k Forester</text>
+	</string>
+	<string id="st_addon_sil_forester_descr">
+		<text>Podomácku vyrobený tlumič zvuku, který vyrobil Forester pro vlastní modifikaci odstřelovací pušky Mauser 98k. Pro upevnění na hlaveň pušky je třeba nainstalovat speciální adaptér.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Mauser 98k Forester\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_swamp">
+		<text>Sada "Swamp Thing" pro AK-105</text>
+	</string>
+	<string id="st_addon_scope_swamp_descr">
+		<text>Raritní a vzhledem ke své ceně nepříliš oblíbená sada karoserie pro AK-105. Velmi podobný kitu, který používá frakce Povinnost. Vyskytuje se především mezi veterány skupiny Jasné Povinnosti. Sada obsahuje: prodloužené předpažbí, ergonomickou pažbu a pohodlnější pistolovou rukojeť. Kromě toho sada obsahuje vylepšenou spoušť a tři zaměřovače, které ze zbraně dělají "ideálního společníka" na blízké a středně dlouhé vzdálenosti. Puškohledy (součástí dodávky): Elcan SpecterDR, kolimátorový zaměřovač Trijicon RMR namontovaný pod úhlem 45 stupňů a AN/PEQ-15 LAM. Součástí sady je také sada zásobníků na 45 nábojů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] AK-105\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_lapua700">
+		<text>Sada "Deer Hunter" .338 Remington M700</text>
+	</string>
+	<string id="st_addon_scope_lapua700_descr">
+		<text>Sada pro změnu ráže .308 Remington Model 700 na .338 Lapua Magnum pro zasahování cílů na mimořádně dlouhé vzdálenosti. Obsahuje hlaveň 338 se závitem pro tlumič .338, pažbu Magpul Pro včetně systému uzamčení hlavně, sadu zásobníků komorovaných pro 338LM a vylepšený zaměřovač Leupold. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington M700\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_gurza_up">
+		<text>Pokročilá taktická sada pro SR1MP 9x21 Gyurza</text>
+	</string>
+	<string id="st_addon_scope_gurza_up_descr">
+		<text>Sada obsahuje LAM, Trijicon RMR a čtyřramennou montáž. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] SR1MP 9x21 Gyurza\n
+		</text>
+	</string>
+
+
+	<string id="st_addon_scope_lazup_pl15">
+		<text>LAM pro pistoli Lebedev PL-15</text>
+	</string>
+	<string id="st_addon_scope_lazup_pl15_descr">
+		<text>Slouží k mířené střelbě z libovolné pozice.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Lebedev PL-15\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_pl15_scolaz">
+		<text>Pokročilá taktická sada "Tactic" pro pistoli PL-15</text>
+	</string>
+	<string id="st_addon_scope_pl15_scolaz_descr">
+		<text>Sada obsahuje LAM, zaměřovač Aimpoint T1 a montáž. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Lebedev PL-15\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_lapu7">
+		<text>Tlumič M700 .338LM</text>
+	</string>
+	<string id="st_addon_sil_lapu7_descr">
+		<text>Zvukový tlumič s protihlukovým pláštěm pro Remington M700 .338 Lapua Magnum.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Remington M700 .338 Lapua Magnum\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_pl15">
+<text> Tlumič Pl-15</text>
+	</string>
+	<string id="st_addon_sil_pl15_descr">
+		<text>Zvukový tlumič s pláštěm proti zahřívání pro pistoli Lebedev PL-15.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Lebedev PL-15\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_shakal">
+		<text>Sada "Shakal" pro AK-105</text>
+	</string>
+	<string id="st_addon_scope_shakal_descr">
+		<text>Vzácný a slyšitelný kit karoserie pro AK-105. Velmi podobný kitu používanému firmou Clear Sky. Vyskytuje se především mezi veterány skupiny Duty. Sada obsahuje: prodloužené předpažbí, ergonomickou pažbu a pohodlnější pistolovou rukojeť. Kromě toho sada obsahuje vylepšenou spoušť a tři zaměřovače, které ze zbraně dělají "ideálního společníka" na blízké a středně dlouhé vzdálenosti. Puškohledy (součástí dodávky): Trijicon Acog, kolimátorový zaměřovač Trijicon RMR namontovaný pod úhlem 45 stupňů a AN/PEQ-15 LAM. Součástí sady je také sada zásobníků na 45 nábojů. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] AK-105\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_spec_isg">
+		<text>Tlumič Rifle Dynamics ISG</text>
+	</string>
+	<string id="st_addon_sil_spec_isg_descr">
+		<text>Tlumič zvuku používaný jednotkami ISG v zóně. Vyrobeno americkou společností Rifle Dynamics.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Palné zbraně ISG: 5.45/7.62ěě\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_u2p2g0r">
+		<text>Sada "9" pro Sig Sauer P220</text>
+	</string>
+	<string id="st_addon_scope_u2p2g0r_descr">
+  <text>Hlaveň se závitem pro ráži 9x19 pro použití s tlumičem, tritiová mířidla a laserový zaměřovač Viridian X5L, vysokokapacitní zásobník na 19 nábojů a nahrazuje pilimer budy na Tan one. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Sig Sauer P220 pistole\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_apb">
+		<text>Tlumič APB </text>
+	</string>
+	<string id="st_addon_sil_apb_descr">
+		<text>Supresor pro modernizovanou pistoli APS.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] 9mm\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_apsabigo">
+		<text>Sada pro vylepšení pistole APS</text>
+	</string>
+	<string id="st_addon_scope_apsabigo_descr">
+		<text>Sada obsahuje: Závitovou hlaveň pro použití s tlumičem zvuku APB, tritiová mířidla a ergonomickou gumovou rukojeť pistole. Tento upgrade je nevratný.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] APS pistole\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_kp_sr2">
+		<text>KP SR-2 Reflexní zaměřovač</text>
+	</string>
+	<string id="st_addon_scope_kp_sr2_descr">
+		<text> Reflexní zaměřovač KP SR-2 je určen ke zvýšení účinnosti střelby ze samopalu SR-2M ráže 9x21 mm za jakýchkoli povětrnostních podmínek a viditelnosti.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] SR-2M SMG\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_veresk">
+		<text>Tlumič  GZV-SR2</text>
+	</string>
+	<string id="st_addon_sil_veresk_descr">
+		<text>Tlumič zvuku pro použití s SMG SR-2M.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] SR-2M SMG\n
+		</text>
+	</string>
+	
+	<string id="st_addon_scope_sr2_upkit">
+		<text>Upgrade Kit pro SR-2M Veresk SMG</text>
+	</string>
+	<string id="st_addon_scope_sr2_upkit_descr">
+		<text>Sada obsahuje: taktickou předpažbí s picatinny lištami, LAM a reflexní zaměřovač KP SR-2. Toto vylepšení je nevratné.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] SR-2M SMG\n
+		</text>
+	</string>	
+
+	<string id="st_grenade_launcher_monolit">
+		<text>"Strážní" granátomet</text>
+	</string>
+	<string id="st_grenade_launcher_monolit_descr">
+		<text>30mm lehký granátomet vyvinutý konstruktéry frakce Monolit, založený na speciálním tichém granátometu 6G17 Canaryka.\n \n 
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] AK-12 Monolith s nainstalovanou taktickou sadou.\n \n
+		%c[d_cyan] - %c[ui_gray_2] munice: %c[ui_gray_2]VOG-30 30mm granát\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_auga">
+		<text>Tlumič Steyr UMS</text>
+	</string>
+	<string id="st_addon_sil_auga_descr">
+		<text>Steyr UMS (Universal Military Suppressor) - tlumič zvuku pro použití s palnými zbraněmi Steyr 5,56 NATO Aug.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] Aug Steyr\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_5c_tik">
+		<text>Speciální ISG (AK 5C Kit)</text>
+	</string>
+	<string id="st_addon_scope_5c_tik_descr">
+		<text>Sada komponent pro AK 5C. Přeměňuje standardní AK 5C na zkrácenou verzi s holí pro všechny příležitosti. Sada se objevila v Zóně krátce po vzniku ISG.\n \n%c[d_cyan] - %c[ui_gray_2] Sada obsahuje: nízkoprofilové předpažbí, LA5 LAM, zaměřovače Leupold LCO a D'evo x6 a krátkou hlaveň se všemi potřebnými komponenty pro její instalaci. Součástí sady je také upravený plynový modul zvyšující rychlost střelby. (nevratný upgrade).\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] AK 5C Carabine\n
+		</text>
+	</string>
+
+	<string id="st_addon_sil_m42k">
+		<text>AAC M4-2000 Suppressor</text>
+	</string>
+	<string id="st_addon_sil_m42k_descr">
+		<text>Spolehlivý univerzální tlumič od Advanced Armament Corp pro karabiny AR-15.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] M4A1 RAS, L85\n
+		</text>
+	</string>
+
+	<string id="st_addon_scope_susatov">
+		<text>SUSAT pouze pro nativní montáž L85</text>
+	</string>
+	<string id="st_addon_scope_susatov_descr">
+		<text>SUSAT je čtyřnásobný optický zaměřovač vyvinutý ve Velké Británii v Královském výzkumném a vývojovém středisku pro zbraně. Vyrábí ho společnost Avimo a také United Scientific Instruments. Nejčastěji se používá k mířené střelbě z lehkých ručních zbraní na střední a velké vzdálenosti. Montuje se na speciální montáž pro L85 "Dovetail". (Puškohled má na sobě záložní železná mířidla).
+		</text>
+	</string>
+
+	<string id="st_addon_sil_surfire">
+		<text>Tlumič Surefire SOCOM556-MONSTER</text>
+	</string>
+	<string id="st_addon_sil_surfire_descr">
+		<text>Tlumič Surefire SOCOM556-MONSTER 5,56x45 a .223.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] M4 Tactical\n
+		</text>
+	</string>
+
+	<string id="st_grenade_launcher_scar">
+		<text>Granátomet FN40GL</text>
+	</string>
+	<string id="st_grenade_launcher_scar_descr">
+		<text>40mm granátomet vyvinutý belgickou společností FN Herstal pro útočnou pušku FN SCAR.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] FN SCAR\n
+		%c[d_cyan] - %c[ui_gray_2] munice: %c[ui_gray_2]M203 40mm granát\n
+		</text>
+	</string>
+
+	<string id="st_grenade_launcher_l85">
+		<text>M320 Granátomet</text>
+	</string>
+	<string id="st_grenade_launcher_l85_descr">
+		<text>Podhlavňový granátomet M320 vyvinutý společností Heckler and Koch v roce 2008 jako náhrada za granátomet M203.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2] L85\n
+		%c[d_cyan] - %c[ui_gray_2] munice: %c[ui_gray_2]M203 40mm granát\n
+		</text>
+	</string>	
+
+	<string id="st_addon_sil_kac4">
+		<text>KAC QDSS NT-4 5,56x45 Suppressor</text>
+	</string>
+	<string id="st_addon_sil_kac4_descr">
+		<text>Knights Armament QDSS NT-4 tlumič hluku 5,56x45 a .223.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_cyan] - %c[ui_gray_2]Howa typ 20\n	
+		</text>
+	</string>
+
+<string id="st_addon_scope_okep77">
+    <text>OKP-77 (Pro Picatinny/weaver)</text>
+</string>
+<string id="st_addon_scope_okep77_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]OTs-02 Kiparis\n \n%c[ui_gray_1]Tento zaměřovač se liší od OKP-7 méně objemným držákem, který umožňuje instalaci kolimátoru na krátkou picatinny lištu na pistoli Kiparis.\n </text>
+</string>
+
+<string id="st_addon_sil_kip">
+    <text>tlumič hluku ???-0217</text>
+</string>
+<string id="st_addon_sil_kip_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]OTs-02 Kiparis\n \n%c[ui_gray_1]TsKIB COO tula tlumič hluku pro samopal OTs-02 Kiparis.\n \n%c[d_purple] • %c[ui_gray_2] Potlačení zvuku: %c[ui_gray_1]střední</text>
+</string>
+
+<string id="st_addon_sil_scorp">
+    <text>Tlumič zvuku Scorpion</text>
+</string>
+<string id="st_addon_sil_scorp_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]Skorpion vz.61\n \n%c[ui_gray_1]Tlumič zvuku pro samopal Skorpion vz.61.\n \n%c[d_purple] • %c[ui_gray_2] Potlačení zvuku: %c[ui_gray_1]střední</text>
+</string>
+
+<string id="st_addon_sil_g28">
+    <text>HK G28 BT QD 7.62x51 tlumič zvuku</text>
+</string>
+<string id="st_addon_sil_g28_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]HK G28 7.62x51 odstřelovačská puška\n \n%c[ui_gray_1]Rychle odnímatelný tlumič zvuku ráže 7.62x51 vyráběný firmou Brugger and Thomet. Hodí se na dlouhý ohnivý ústředník HK.\n \n%c[d_purple] • %c[ui_gray_2] Potlačení zvuku: %c[ui_gray_1]střední</text>
+</string>
+
+
+		<string id="st_addon_sil_timberwolf">
+    <text>Tlumič zvuku PGW Defense Timberwolf .338 LM</text>
+</string>
+<string id="st_addon_sil_timberwolf_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]Remington 700 AICS, Remington 700 McMillan\n \n%c[ui_gray_1]Timberwolf je tlumič zvuku pro .338 odstřelovačské pušky. Vyráběný kanadskou firmou PGW Defense.\n \n%c[d_purple] • %c[ui_gray_2] Potlačení zvuku: %c[ui_gray_1]střední</text>
+</string>
+
+<string id="st_addon_scope_uptacppsh">
+    <text>Sada Bandolero pro upgrade PPSh-41</text>
+</string>
+<string id="st_addon_scope_uptacppsh_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]PPSh-41\n \n%c[ui_gray_1]Sada komponent pro upgrade PPSh-41.\n \n%c[d_purple] • %c[ui_gray_2] Sada zahrnuje: kolimátorový zaměřovač EKP-8-18 a vylepšený obal hlavně (rychlejší odvádění tepla), díky čemuž bylo možné zvýšit kadenci střelby ve srovnání s původním stavem. (Tento upgrade nelze vrátit zpět).</text>
+</string>
+
+<string id="st_addon_scope_pn23fore">
+    <text>Noční zaměřovač PN-23 "Trubice"</text>
+</string>
+<string id="st_addon_scope_pn23fore_descr">
+    <text>\n \n%c[ui_gray_2]KOMPATIBILITA:\n \n%c[d_cyan] • %c[ui_gray_2]Některé odstřelovačské pušky s integrovanými zaměřovači\n \n%c[ui_gray_1]Varianta zaměřovače PN-23, opakující funkčnost systémů jako STIC - tedy zaměřovač je připevněn před standardním zaměřovačem.\n</text>
+</string>
+
+
+</string_table>

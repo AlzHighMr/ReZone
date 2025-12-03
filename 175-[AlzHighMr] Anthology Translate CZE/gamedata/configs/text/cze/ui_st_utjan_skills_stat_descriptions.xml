@@ -1,0 +1,101 @@
+<string_table>
+
+
+    <!-- Medicine -->
+<string id="st_player_skills_hint_medicine">
+	<text>Nabízí krátkou dávku zlepšení zdraví a obnovy radiace na základì použitého lékaøského pøedmìtu.\n \nÚrovnì se získávají používáním lékù a drog.\n \n</text>
+</string>
+<string id="st_skills_stats_restore_boost_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Obnovení zvýšeno jako bonus: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_restore_boost_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Obnovení sníženo jako bonus: %c[d_red]$stat%</text>
+</string>
+
+<!-- Insanity -->
+<string id="st_player_skills_hint_insanity">
+	<text>Ztrácíš svùj rozum... ale získáváš regeneraci psychické energie a odolnost proti psychickému poškození.\nBonus regenerace psychické energie se zdvojnásobuje pøi hraní na hudební nástroj.\n \nÚrovnì se získávají pøi utrpìní psychického poškození a pøi hraní na hudební nástroj v boji.\n \n</text>
+</string>
+<string id="st_skills_stats_psy_regen_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Regenerace psychického zdraví zvýšena o: %c[d_green]$stat%/sek</text>
+</string>
+
+<string id="st_skills_stats_psy_hit_resistance_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení psychického poškození o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_psy_hit_resistance_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení psychického poškození o: %c[d_red]$stat%</text>
+</string>
+
+<!-- Tinkering -->
+<string id="st_player_skills_hint_tinkering">
+	<text>Nabízí šanci na nevyèerpání jednoho použití opravárenského sady.\n \nÚrovnì se získávají opravou vybavení pomocí opravárenských sad.\n \n</text>
+</string>
+<string id="st_skills_stats_refund_chance_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Šance na zdarma jedno použití opravárenské sady: %c[d_green]$stat%</text>
+</string>
+
+<!-- Bartering -->
+<string id="st_player_skills_hint_bartering">
+	<text>Nabízí lepší ceny pøi obchodování.\n \nÚrovnì se získávají prodejem a nákupem pøedmìtù.\n \n</text>
+</string>
+<string id="st_skills_stats_discount_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení ceny u obchodníka o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_discount_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení ceny u obchodníka o: %c[d_red]$stat%</text>
+</string>
+<string id="st_skills_stats_sell_bonus_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení prodejní ceny o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_sell_bonus_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení prodejní ceny o: %c[d_red]$stat%</text>
+</string>
+    <string id="st_skills_stats_task_bonus_positive">
+        <text>\n%c[255,138,43,226]-%c[ui_6] Penìžní odmìna za úkol se zvýšila o: %c[d_green]$stat%</text>
+    </string>
+    <string id="st_skills_stats_task_bonus_negative">
+        <text>\n%c[255,138,43,226]-%c[ui_6] Penìžní odmìna za úkol snížena o: %c[d_red]$stat%</text>
+    </string>
+	
+<!-- Magloading -->
+<string id="st_player_skills_hint_magloading">
+	<text>Nabízí rychlejší nabíjení a vykládání zásobníkù.\n \nÚrovnì se získávají nabíjením a vykládáním zásobníkù.\n(Maximální úroveò je omezena tvou silou a výdrží)\n \n</text>
+</string>
+<string id="st_skills_stats_loadspeed_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení rychlosti nabíjení zásobníku o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_loadspeed_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení rychlosti nabíjení zásobníku o: %c[d_red]$stat%</text>
+</string>
+
+<!-- Lockpicking -->
+<string id="st_player_skills_hint_lockpicking">
+	<text>Nabízí snížení obtížnosti odemykání truhel.\n \nÚrovnì se získávají otevíráním truhel.\n(Použití Kostièkového klíèe nedává žádnou zkušenost)\n \n</text>
+</string>
+<string id="st_skills_stats_lockpick_diff_reduc_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení obtížnosti truhly o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_lockpick_diff_reduc_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení obtížnosti truhly o: %c[d_red]$stat%</text>
+</string>
+
+<!-- Reloading -->
+<string id="st_player_skills_hint_reloading">
+	<text>Nabízí rychlejší pøebíjení zbraní a vyndávání/schovávání zbraní.\n \nÚrovnì se získávají obecným používáním zbraní.\n(Maximální úroveò je omezena tvou výdrží a pøežitím)\n \n</text>
+</string>
+<string id="st_skills_stats_reload_speed_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení rychlosti pøebíjení o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_reload_speed_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení rychlosti pøebíjení o: %c[d_red]$stat%</text>
+</string>
+
+<string id="st_skills_stats_equip_speed_positive">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Zvýšení rychlosti vyndávání/schovávání zbraní o: %c[d_green]$stat%</text>
+</string>
+<string id="st_skills_stats_equip_speed_negative">
+    <text>\n%c[255,138,43,226]•%c[ui_6] Snížení rychlosti vyndávání/schovávání zbraní o: %c[d_red]$stat%</text>
+</string>
+	
+</string_table>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--
+	Devices
+-->
+
+<string_table>
+
+<string id="st_pda_name">
+	<text>PDA</text>
+</string>
+<string id="st_pda_descr">
+	<text>PDA s informacemi o Zóně obsahující digitální záznamy, podrobné mapy a místa anomálií. Obchodní hodnota může být vysoká, pokud najdeš správného kupce.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]nízká spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_pda_1_name">
+	<text>PDA</text>
+</string>
+<string id="st_pda_1_descr">
+	<text>Kapesní elektronické zařízení určené k poskytování základních a nejdůležitějších funkcí počítače. PDA je nezbytné pro denní sdílení informací. Je vybaveno GPS modulem pro poskytování geolokačních a časových informací uživateli.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]nízká spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_pda_2_name">
+	<text>PDA (Verze 2.0) s KilTrakem™</text>
+</string>
+<string id="st_pda_2_descr">
+	<text>Kapesní elektronické zařízení určené k poskytování základních a nejdůležitějších funkcí počítače. PDA je nezbytné pro denní sdílení informací. Tato verze obsahuje předinstalovaný GPS modul pro poskytování geolokačních a časových informací uživateli. Modul v této verzi byl vylepšen tak, aby získával a zpracovával pozici ostatních modulů připojených k síti v poloměru 300 metrů, což činí toto PDA atraktivním mezi stalkery.\n \n
+	Toto konkrétní zařízení také dokáže lokalizovat těla cílů eliminovaných vlastníkem, protože ho někdo odemkl a nainstaloval na něj nelegální verzi softwaru IMI KilTrak.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]nízká spotřeba elektrické energie\n
+	%c[d_orange] • %c[ui_gray_2]ukazuje polohu blízkých skupin z vaší skupiny\n
+	</text>
+</string>
+
+<string id="st_pda_3_name">
+	<text>PDA (Verze 3.1)</text>
+</string>
+<string id="st_pda_3_descr">
+	<text>Kapesní elektronické zařízení určené k poskytování základních a nejdůležitějších funkcí počítače. PDA je nezbytné pro denní sdílení informací. Je vybaveno GPS modulem pro poskytování geolokačních a časových informací uživateli. Tato verze modulu byla výrazně vylepšena, aby získávala a zpracovávala pozici ostatních modulů připojených k síti, což činí toto PDA atraktivním mezi stalkery. Na rozdíl od běžných GPS modulů tento spoléhá na sadu kódů, které umožňují modulu získat speciální privilegia na připojené síti a získat více informací.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]nízká spotřeba elektrické energie\n
+	%c[d_orange] • %c[ui_gray_2]ukazuje polohu blízkých přírodních skupin\n
+	</text>
+</string>
+<string id="st_detector1">
+	<text>Echo Detektor (Třída I)</text>
+</string>
+<string id="st_detector1_descr">
+	<text>Tento zastaralý detektor anomálních jevů vyvolává poplašný signál, když se anomální částice dostanou do speciální komory při přiblížení k anomálii. Také dokáže zaznamenat přítomnost artefaktu a měřit vzdálenost k nejbližšímu z nich. Vzdálenost je indikována frekvencí zvuku, který detektor vydává. Pro přepnutí do režimu vyhledávání artefaktu otevřete přední kryt zařízení. Kvůli svému jednoduchému designu je určen pouze k lokalizaci nejčastějších artefaktů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_detector2">
+	<text>Detektor Bear (Třída II)</text>
+</string>
+<string id="st_detector2_descr">
+	<text>Tento detektor anomálních jevů poslední generace slouží k lokalizaci anomálních formací a má barevný diodový panel, který nejen indikuje směr k artefaktům, ale také měří jejich vzdálenost. Pro přepnutí do režimu vyhledávání artefaktu otevřete přední kryt zařízení. Bohužel, zařízení je naprogramováno s poměrně zastaralým seznamem detekovatelných artefaktů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_detector3">
+	<text>Detektor Veles (Třída III)</text>
+</string>
+<string id="st_detector3_descr">
+	<text>Vědecký detektor nové generace. Díky svým třem pokročilým detekčním komorám zobrazuje polohu artefaktu na speciálním LED displeji v reálném čase. Když je detektor zavřený, registruje pouze částice záření a anomálie. Pro přepnutí do režimu vyhledávání artefaktu otevřete přední LED displej. V režimu vyhledávání je detektor schopen lokalizovat všechny artefakty známé vědě.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]vysoká spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_detector4">
+	<text>Svarog Detektor (Třída IV)</text>
+</string>
+<string id="st_detector4_descr">
+	<text>Prototyp detektoru s rozšířenou funkcionalitou skeneru frekvencí anomálních jevů. Toto zařízení obsahuje program, který identifikuje statické oblasti anomální aktivity uložené v databázi, přičemž zachovává schopnost lokalizace artefaktu. Polohy jak anomálních oblastí, tak artefaktů jsou zobrazeny na speciálním LED displeji. Režim vyhledávání artefaktu, který lze aktivovat otevřením předního LED displeje, byl upraven tak, aby detekoval i anomální formace, které zatím nejsou vědě známé.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]vysoká spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_detector9">
+	<text>RF Přijímač</text>
+</string>
+<string id="st_detector9_descr">
+	<text>RF (Radio Frequency - Radiové frekvence) přijímač je malé zařízení s vysoko citlivým RF modulem, který se používá pro základní komunikaci. Je poměrně běžné mezi vojáky navzdory staré technologii. Jak název napovídá, dokáže interagovat s radiovými signály v dosahu 200 metrů. Zařízení je schopno zpracovávat radiové vlny v frekvenčním rozsahu mezi 30 a 300 MHz.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba elektrické energie\n
+	</text>
+</string>
+	
+
+<string id="st_detector8">
+	<text>Zařízení pro měření anomálií</text>
+</string>
+<string id="st_detector8_descr">
+	<text>První prototyp byl navržen v roce 2008 pod dohledem profesora Sakharova v mobilní laboratoři v Yantaru. Od té doby bylo vytvořeno více kopií po jeho prokázaném úspěchu při terénním výzkumu. Toto zařízení je schopno provádět a zaznamenávat měření anomálních polí. Díky vylepšené konstrukci a senzorům s vysokou citlivostí zajišťuje spolehlivý provoz i v nejpřátelštějších prostředích.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba  energie\n
+	</text>
+</string>
+<string id="st_broken_pda">
+	<text>Rozbité PDA</text>
+</string>
+<string id="st_broken_pda_descr">
+	<text>Toto PDA je silně poškozeno; polovina displeje je rozbitá a GPS modul nefunguje správně. Vnitřek je většinou stále v pořádku.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]srot\n
+	</text>
+</string>
+<string id="st_device_torch_name">
+	<text>Přilba s čelovkou</text>
+</string>
+<string id="st_device_torch_descr">
+	<text>Běžná čelová baterka, která se nosí na hlavě. Užitečná pro stalkery, kteří se pohybují venku po setmění, ale může přitahovat problémy, pokud se používá neuváženě. Umožňuje volné používání obou rukou při terénních operacích.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	</text>
+</string>
+
+<string id="st_device_torch_nv_1_name">
+	<text>Přilba s čelovkou a nočním viděním 1PN93-1</text>
+</string>
+<string id="st_device_torch_nv_1_descr">
+	<text>Běžná čelová baterka, která je plně funkční. Užitečná pro stalkery, kteří se pohybují venku po setmění, ale může přitahovat problémy, pokud se používá neuváženě. Tato čelová lampa je vybavena standardním nočním viděním 1PN93-1 ruských vojenských sil. Nabízí generaci 2+ zesílení obrazu, které je zvláště užitečné pro operace v noci nebo za podmínek s nízkým osvětlením.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	%c[d_orange] • %c[ui_gray_2]dlouhé stisknutí tlačítka "Zapnout" zapne noční vidění\n
+	%c[d_orange] • %c[ui_gray_2]krátké stisknutí tlačítka "Zapnout" nastaví jas nočního vidění\n
+	</text>
+</string>
+<string id="st_device_torch_nv_2_name">
+	<text>Přilba s čelovkou a nočním viděním PN21KL</text>
+</string>
+<string id="st_device_torch_nv_2_descr">
+	<text>Běžná čelová baterka, která je plně funkční. Užitečná pro stalkery, kteří se pohybují venku po setmění, ale může přitahovat problémy, pokud se používá neuváženě. Tato čelová lampa je vybavena generací 2+ zesílení obrazu, určenou pro provoz v noci za přirozeného osvětlení a v úplné tmě se zapnutým infračerveným osvětlením.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	%c[d_orange] • %c[ui_gray_2]dlouhé stisknutí tlačítka "Zapnout" zapne noční vidění\n
+	%c[d_orange] • %c[ui_gray_2]krátké stisknutí tlačítka "Zapnout" nastaví jas nočního vidění\n
+	</text>
+</string>
+	
+
+<string id="st_device_torch_nv_3_name">
+	<text>Přilba s čelovkou a nočním viděním Oracle Psi-stimulator</text>
+</string>
+<string id="st_device_torch_nv_3_descr">
+	<text>Běžná čelová baterka, která je plně funkční. Užitečná pro stalkery, kteří se pohybují venku po setmění, ale může přitahovat problémy, pokud se používá neuváženě. Tato čelová lampa je vybavena softwarem na zpracování obrazu, který odstraňuje šum z videa a zvyšuje schopnosti zesilování obrazu jednotky PN21K, čímž se stává plnohodnotným zařízením pro noční vidění generace 3+.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	%c[d_orange] • %c[ui_gray_2]dlouhé stisknutí tlačítka "Zapnout" zapne noční vidění\n
+	%c[d_orange] • %c[ui_gray_2]krátké stisknutí tlačítka "Zapnout" nastaví jas nočního vidění\n
+	</text>
+</string>
+<string id="st_device_flashlight">
+	<text>Svítilna</text>
+</string>
+<string id="st_device_flashlight_descr">
+	<text>Univerzální přenosná svítilna. Bohužel nelze ji používat společně s většinou zbraní, protože vyžaduje volnou ruku. Lze ji však používat současně s pistolemi a jiným jednoručním vybavením.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	</text>
+</string>
+
+<string id="st_batteries_dead">
+	<text>Staré baterie</text>
+</string>
+<string id="st_batteries_dead_descr">
+	<text>Pouze jedna z deseti baterií nalezených v Zóně je stále funkční. Stalkery je vyhazují, když se vybijí, protože je téměř nemožné najít nabíječku baterií. Jejich vnější vrstva je zkoro koroze a špíně, což je silným indikátorem, že jsou téměř vybité. Nicméně, jako všechno v Zóně, mají svůj účel a mohou být užitečné pro časté dobíjení elektrické energie.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]odpad\n
+	</text>
+</string>
+
+<string id="st_batteries">
+	<text>Baterie</text>
+</string>
+<string id="st_batteries_descr">
+	<text>Balík baterií určených pro použití ve svítilnách, PDA, nočním vidění a jiných elektronických zařízeních. Doporučuje se mít několik náhradních baterií v případě nouze.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]zdroj energie\n
+	</text>
+</string>
+
+<string id="st_batteries_ccell">
+	<text>Armádní bateriová jednotka</text>
+</string>
+<string id="st_batteries_ccell_descr">
+	<text>Balík plně nabitých armádních baterií. Velmi cenný a vysoce žádaný z důvodu relativního nedostatku baterií v Zóně. Používá se všemi frakcemi a stalkerem všech úrovní, od nováčků po zkušené stalkerem. Dodáváno obchodníkům korumpovanými vojenskými důstojníky, kteří se snaží v Zóně vydělat nějaké peníze navíc.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]zdroj energie\n
+	</text>
+</string>
+
+<string id="st_geiger_dead">
+	<text>Geigerův počítač</text>
+</string>
+<string id="st_geiger_dead_descr">
+	<text>Geigerův počítač měří ionizující záření. Detekuje emise alfa, beta a gama částic. Geigerův počítač byl vynalezen v roce 1908 a dodnes je populární a používá se k měření v oblasti zdraví, fyziky, průmyslu, geologie a dalších oblastí. Je složen z jednoduchých elektronických obvodů.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2]měří úroveň radioaktivní kontaminace\n
+	%c[d_cyan] • %c[ui_gray_2]střední spotřeba energie\n
+	</text>
+</string>
+
+<string id="st_electric power">
+	<text>Univerzální napájecí zařízení (elektrické)</text>
+</string>
+<string id="st_electric power_descr">
+	<text>Napájecí jednotka ze studené války o velikosti malého kapesního vysílačky. Přijímá téměř jakýkoli typ baterií. Využívá veškerou energii z vložených baterií a dodává elektronickým zařízením napájení vylepšeným proudem přes soubor mikrodrátů. Tyto dráty lze připojit k libovolnému zařízení, bez ohledu na jeho složitost nebo stáří. Stalkerům umožňuje používat a manipulovat s mnoha elektronickými zařízeními, i když mají pouze jednu baterii.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]přenosný zdroj energie\n
+	%c[d_cyan] • %c[ui_gray_2]přijímá všechny typy baterií\n
+	</text>
+</string>
+	
+<string id="extension_pda">
+	<text>Multimediální PDA</text>
+</string>
+<string id="exten_sion_pda">
+	<text>Drahý odolný PDA odolný proti vlhkosti a nárazům s chatovacím klientem a integrovaným přehrávačem hudby.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2]umožňuje přehrávání hudby a interakci v síti stalkerů\n
+	</text>
+</string>
+<string id="st_gps_tracker">
+	<text>Armádní GPS modul</text>
+</string>
+<string id="st_gps_tracker_descr">
+	<text>Prototyp navigačního zařízení GPS nové generace. Bylo vyrobeno pouze několik kusů. Přestože je distribuován výhradně mezi nejvyššími vojenskými hodnostáři, některá zařízení se dostala i do rukou jiných stran. Tento vylepšený modul s vylepšeným rámcem a vysoce citlivými senzory zaručuje spolehlivý provoz i v nejpřátelštějších prostředích. Na rozdíl od běžných GPS modulů se tento spoléhá na sady kódů, které umožňují modulu získat speciální privilegia v připojené síti. Získává polohu ostatních připojených modulů v poloměru 300 metrů. Na druhou stranu tento modul spotřebovává během provozu značné množství elektrické energie. Vnitřní automatický spínač v modulu ho vypíná po 20 sekundách nepřetržitého skenování pro úsporu energie.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]velmi vysoká spotřeba elektrické energie\n
+	</text>
+</string>
+<string id="st_musicplayer">
+	<text>Rádio</text>
+</string>
+<string id="st_musicplayer_desc">
+	<text>Upravené rádio navržené k komunikaci s ostatními rádii, s maximálním potlačením rušení.\n \n
+	</text>
+</string>
+<string id="st_weather_radar">
+	<text>Kompletní meteorologický radar</text>
+</string>
+<string id="st_weather_radar_descr">
+	<text>Pokročilý puls-Dopplerovský meteorologický radar ve formě mini-sady. Tato sada je považována za zázrak v oblasti meteorologie. Vysílá směrové pulsy mikrovlnného záření o rychlosti přenosu přibližně jednu mikrosekundu pomocí dutinové magnetronové trubice připojené vlnovodem k parabolické anténě pro sběr meteorologických dat.\n Dva vědci zjistili, že použití artefaktu "Meatchunk" poblíž antény může výrazně zvýšit výkon pulsu až do té míry, že mění ionty v troposférické vrstvě atmosféry a zcela mění její vlastnosti.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]napájení pomocí artefaktu Meatchunk\n
+	</text>
+</string>
+<string id="st_dosimeter_mode">
+	<text>Režim dozimetru</text>
+</string>
+<string id="st_actor_rads">
+	<text>Ozaření těla</text>
+</string>
+<string id="st_environment_rads">
+	<text>Ozařování prostředí</text>
+</string>
+</string_table>

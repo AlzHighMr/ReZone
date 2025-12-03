@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	
+	<string id="ui_mcm_better_stats_bars_title">
+		<text>Lepší pruhy statistik</text>
+	</string>
+	<string id="ui_mcm_menu_better_stats_bars">
+		<text>Lepší pruhy statistik</text>
+	</string>
+
+<string id="ui_mcm_better_stats_bars_positive_color_help">
+    <text>Barva zvýšeného pruhu statistik</text>
+</string>
+<string id="ui_mcm_better_stats_bars_positive_color_a">
+    <text>Průhlednost</text>
+</string>
+<string id="ui_mcm_better_stats_bars_positive_color_r">
+    <text>Červená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_positive_color_g">
+    <text>Zelená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_positive_color_b">
+    <text>Modrá</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_negative_color_help">
+    <text>Barva sníženého pruhu statistik</text>
+</string>
+<string id="ui_mcm_better_stats_bars_negative_color_a">
+    <text>Průhlednost</text>
+</string>
+<string id="ui_mcm_better_stats_bars_negative_color_r">
+    <text>Červená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_negative_color_g">
+    <text>Zelená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_negative_color_b">
+    <text>Modrá</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_neutral_color_help">
+    <text>Barva nezměněného pruhu statistik</text>
+</string>
+<string id="ui_mcm_better_stats_bars_neutral_color_a">
+    <text>Průhlednost</text>
+</string>
+<string id="ui_mcm_better_stats_bars_neutral_color_r">
+    <text>Červená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_neutral_color_g">
+    <text>Zelená</text>
+</string>
+<string id="ui_mcm_better_stats_bars_neutral_color_b">
+    <text>Modrá</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_position">
+    <text>Pozice</text>
+</string>
+<string id="ui_mcm_better_stats_bars_position_help">
+    <text>Pozice dodatečných pruhů ve vztahu k základním</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_bottom">
+    <text>Dole</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_top">
+    <text>Nahoře</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_justify">
+    <text>Vyplnit celou výšku</text>
+</string>
+
+	<string id="ui_mcm_better_stats_bars_use_game_values">
+    <text>Použít herní hodnoty</text>
+</string>
+<string id="ui_mcm_better_stats_bars_use_game_values_desc">
+    <text>Aktivování této možnosti způsobí, že pruhy budou reprezentovat ochranu před skutečnými hrozbami hry (NPC, mutanti, anomálie), na základě jejich hodnot poškození, typů elementů, a zahrnuje také korigované chování ochranné výbavy a helmy. Můžete si vybrat tyto možnosti \n \n Nic: zakázání možnosti \n \n Max: maximum pruhu reprezentuje maximální možné poškození, které lze obdržet. V tomto případě 1/3 pruhu obvykle reprezentuje ohnivé, kyselé a psychické pole, slabé mutanti a palné zbraně s pistolovým kalibrem. 2/3 pruhu reprezentuje anomálie jako elektrické, gravitační anomálie, hořáky a kyselinové bazény, útoky psychických psů, mutanti střední síly a středně silné palné zbraně. Plný pruh reprezentuje ochranu proti nejsilnějším minám, polím, útokům ovládačů, nejsilnějším mutantům a palným zbraním vysokého kalibru. \n \n Max (Bez Min): Stejné jako Max, ale anomální miny nejsou zahrnuty do výsledků. Užitečné, pokud chcete znát přesnou ochranu proti polím a plánujete se vyhnout minám spíše než vědět, kolik poškození od nich obdržíte.</text>
+</string>
+	<string id="ui_mcm_lst_better_stats_bars_use_game_values_none">
+    <text>Žádné</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_use_game_values_max">
+    <text>Max</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_use_game_values_max_no_mines">
+    <text>Max (Bez Min)</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_position">
+    <text>Pozice dodatečných pruhů ve vztahu k základním</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_bottom">
+    <text>Dole</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_top">
+    <text>Nahoře</text>
+</string>
+<string id="ui_mcm_lst_better_stats_bars_position_justify">
+    <text>Vyplnit celou výšku</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_efp_ui_compatibility">
+    <text>Kompatibilita s EFP UI (Moderní UI)</text>
+</string>
+<string id="ui_mcm_better_stats_bars_efp_ui_compatibility_desc">
+    <text>Lepší zobrazení pruhů při použití modpacku Escape From Pripyat (EFP). Také je doporučeno nastavit pozici na "Vyplnit celou výšku" a snížit průhlednost všech druhů pruhů.</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_gamma_ui_compatibility">
+    <text>Kompatibilita s G.A.M.M.A. UI (platí také pro staré módy Hunger, Thirst a Sleep bars)</text>
+</string>
+<string id="ui_mcm_better_stats_bars_gamma_ui_compatibility_desc">
+    <text>Lepší zobrazení pruhů při použití modpacku G.A.M.M.A. nebo staré verze módu Hunger, Thirst a Sleep bars</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_arx_compatibility">
+    <text>Kompatibilita s ARX</text>
+</string>
+<string id="ui_mcm_better_stats_bars_arx_compatibility_desc">
+    <text>Přesnější zobrazení statistik při použití módu ARX (Artefact Restoration eXperiment)</text>
+</string>
+
+<string id="ui_mcm_better_stats_bars_abf_compatibility">
+    <text>Kompatibilita s ABF</text>
+</string>
+<string id="ui_mcm_better_stats_bars_abf_compatibility_desc">
+    <text>Přesnější zobrazení statistik při použití módu ABF (Anomalous Balance Fix)</text>
+</string>
+
+
+	<string id="ui_mcm_better_stats_bars_acid_bar_fix">
+    <text>Alternativní Zobrazení Kyselinového Pruhu</text>
+</string>
+<string id="ui_mcm_better_stats_bars_acid_bar_fix_desc">
+    <text>V režimu "Použít Herní Hodnoty Max" zvyšuje použitelnost kyselinového pruhu s větším pokrytím tím, že uměle snižuje sílu zásahů min za cenu přesnosti zobrazení</text>
+</string>
+
+		
+</string_table>

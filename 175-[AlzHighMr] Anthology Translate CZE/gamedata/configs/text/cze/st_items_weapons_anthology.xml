@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	<string id="st_wpn_m16a4">
+	<text>M16A4</text>
+</string>
+<string id="st_wpn_m16a4_descr">
+	<text>
+		M16A4 je útočná puška ráže 5.56×45 mm, založená na plynovém mechanismu. Jedná se o nejnovější úpravu legendární pušky AR-15 používané ozbrojenými silami USA. Čtvrtá generace M16A4 je v podstatě M16A2 s horní částí přijímače typu flat-top s lištou MIL-STD-1913 a předpažbím, které lze volitelně vybavit systémem M5 Adapter Rail pro upevnění různých doplňků. M16A4 je standardní služební puškou U.S. Marine Corps a používají ji některé jednotky Armády USA. Zatímco většina amerických jednotek speciálních operací preferuje menší M4A1 nebo jiné karabiny ráže 5.56 mm, M16A4 je stále používána jednotkami jako USMC F.A.S.T. a podpůrnými skupinami jako MARSOC MSOSG.  
+
+	%c[ui_gray_2]DOPLŇKY:  
+	%c[d_purple] • %c[ui_gray_2] Tlumič NATO  
+	%c[d_purple] • %c[ui_gray_2] Optika: ACOG, Colt3x, pn23, Mark-4 CQ/T  
+	%c[d_purple] • %c[ui_gray_2] Granátomet M203 pod pažbou  
+	</text>
+</string>
+
+<string id="st_wpn_m16">
+	<text>M16</text>
+</string>
+<string id="st_wpn_m16_descr">
+	<text>
+		M16 (oficiální označení: Rifle, Caliber 5.56 mm, M16) je americká automatická puška ráže 5.56×45 mm vyvinutá z AR-15 a přijatá v 60. letech. V roce 1964 M16 oficiálně vstoupila do služby, nahrazující M14. Do roku 1966 byla standardní puškou všech jednotek USA ve Vietnamu. Zpočátku byla M16 velmi nespolehlivá, ale do počátku 70. let se stala schopnou bojovou zbraní s řadou významných výhod (a samozřejmě i nevýhod). Ve srovnání s hlavním globálním rivalem AKM nabízela M16 lepší přesnost při poloautomatické střelbě a byla pohodlnější a ergonomičtější. Nevýhodou byla vyšší náročnost údržby a potřeba kvalitnější munice. V extrémních podmínkách, jako je prach a špína, byla AKM spolehlivější. M16 a její varianty jsou dodnes standardní pěchotní zbraní americké armády. Bylo vyrobeno přes 8 milionů kusů, což z ní činí jednu z nejpoužívanějších pušek na světě.  
+
+	%c[ui_gray_2]DOPLŇKY:  
+	%c[d_purple] • %c[ui_gray_2] Tlumič NATO  
+	%c[d_purple] • %c[ui_gray_2] Optika: ACOG, ACOG-Trijicon, Colt, Mark-4 CQ/T  
+	%c[d_purple] • %c[ui_gray_2] Granátomet M203 pod pažbou  
+	</text>
+</string>
+
+<string id="st_wpn_kedr">
+	<text>PP-91-01 "Kedr-B" SMG</text>
+</string>
+<string id="st_wpn_kedr_descr">
+	<text>
+		PP-91-01 "Kedr-B" je samopal ráže 9×18 mm Makarov, vybavený integrovaným tlumičem. PP-91 neboli "Kedr" (navržený Evgenijem Dragunovem) byl vyvinut počátkem 90. let pro Ministerstvo vnitra SSSR, vycházel z předchozího PP-71. Má pevnou hlaveň 120 mm s chromovanou vložkou pro odolnost a ochranu proti korozi. Podporuje standardní i speciální náboje 9×18 mm. Se sklopenou pažbou a střelbou z opory dokáže PP-91 umístit čtyři jednotlivé rány do kruhu o průměru 50 mm na 25 m. Používá mechanismus spouště s kladívkem a umožňuje střelbu v poloautomatickém i plně automatickém režimu bez omezovače dávky. Volič střelby je kombinován s pojistkou a je navržen jako plochá páka, snadno ovladatelná i v rukavicích. Nejnižší poloha je pojistka, střední poloha poloautomat, horní plně automatická střelba. Kadence se pohybuje mezi 800–1000 ran/min. Účinný dostřel je 50 m, maximální kolem 100 m. Díky slabšímu náboji je energie výstřelu nízká, cca 295 J.  
+
+	%c[ui_gray_2]DOPLŇKY:  
+	%c[d_purple] • %c[ui_gray_2] Laserový zaměřovač "Pion-M"  
+	</text>
+</string>
+
+<string id="st_wpn_eft_rsh12">
+	<text>RSh-12 těžký revolver (12.7×55 mm)</text>
+</string>
+<string id="st_wpn_eft_rsh12_descr">
+	<text>
+		RSh-12 je vzácný velkorážní revolver vyvinutý pro speciální jednotky. Používá silný náboj 12.7×55 mm, schopný prorážet těžké brnění a způsobovat devastující poškození na blízko. I když trpí silným zpětným rázem, nízkou kadencí a značnou hmotností, jeho obrovská zastavovací síla tyto nevýhody kompenzuje. Ideální pro lov mutantů a boj na krátkou vzdálenost.  
+
+	%c[ui_gray_2]DOPLŇKY:  
+	%c[d_purple] • %c[ui_gray_2] Optika (vzácná): Micro T1, DeltaPoint nebo RMR — přes adaptér na horní rám (pokud mod implementuje)  
+	%c[d_purple] • %c[ui_gray_2] Tlumič PB-12.7 nebo vlastní "těžký tlumič"  
+	</text>
+</string>
+
+
+
+<!-- [WPN] Weapon Base — ???? ?????? ??? A.N.T.H.O.L.O.G.Y (Denis9x39) end -->
+
+
+
+<!-- 
+Grenades 
+-->
+
+<string id="st_grenade_f1">
+    <text>Granát F-1</text>
+</string>
+<string id="st_grenade_f1_short">
+    <text>F-1</text>
+</string>
+<string id="st_grenade_f1_descr">
+    <text>Obranný ruční granát proti osobám. Navržen k zasažení protivníka při obranném boji. Díky širokému rozptylu střepin musí být házen z krytu.\n\n
+%c[d_purple] • %c[ui_gray_2] Síla výbuchu: %c[ui_gray_1]Vysoká\n
+%c[d_purple] • %c[ui_gray_2] Poloměr exploze: %c[ui_gray_1]4.2 m\n
+%c[d_purple] • %c[ui_gray_2] Poloměr střepin: %c[ui_gray_1]48 m\n
+%c[d_purple] • %c[ui_gray_2] Počet střepin: %c[ui_gray_1]380 (jemné střepiny)\n
+%c[d_purple] • %c[ui_gray_2] Zpoždění zápalníku: %c[ui_gray_1]~4 sekundy</text>
+</string>
+
+<string id="st_grenade_rgd5">
+    <text>Granát RGD-5</text>
+</string>
+<string id="st_grenade_rgd5_short">
+    <text>RGD-5</text>
+</string>
+<string id="st_grenade_rgd5_descr">
+    <text>Sovětský útočný ruční granát. Patří mezi časované granáty proti osobám. Navržen k zranění nebo zabití nepřítele vysokorychlostními střepinami po explozi.\n\n
+%c[d_purple] • %c[ui_gray_2] Síla výbuchu: %c[ui_gray_1]Střední\n
+%c[d_purple] • %c[ui_gray_2] Poloměr exploze: %c[ui_gray_1]3.2 m\n
+%c[d_purple] • %c[ui_gray_2] Poloměr střepin: %c[ui_gray_1]43 m\n
+%c[d_purple] • %c[ui_gray_2] Počet střepin: %c[ui_gray_1]240 (jemné střepiny)\n
+%c[d_purple] • %c[ui_gray_2] Zpoždění zápalníku: %c[ui_gray_1]~4 sekundy</text>
+</string>
+
+<string id="st_grenade_smoke">
+    <text>Kouřový granát</text>
+</string>
+<string id="st_grenade_smoke_short">
+    <text>Kouř</text>
+</string>
+<string id="st_grenade_smoke_descr">
+    <text>Ruční kouřový granát. Určen k vytvoření kouřové clony. Doba nasazení: 10 sekund.</text>
+</string>
+
+<string id="st_grenade_thermite">
+    <text>Thermitový granát</text>
+</string>
+<string id="st_grenade_thermite_short">
+    <text>Thermit</text>
+</string>
+<string id="st_grenade_thermite_descr">
+    <text>Žáruvzdorný (thermitový) ruční granát, který při explozi uvolní extrémní teplo (2200°C) díky chemické reakci, kdy práškový hliník reaguje s oxidem železa a vytváří roztavené železo a oxid hlinitý. Naložen 600 nebo 800 gramy thermitové směsi.\n\n
+%c[d_purple] • %c[ui_gray_2] Síla výbuchu: %c[ui_gray_1]Střední (tepelná ztráta)\n
+%c[d_purple] • %c[ui_gray_2] Poloměr exploze: %c[ui_gray_1]4.6 m\n
+%c[d_purple] • %c[ui_gray_2] Poloměr střepin: %c[ui_gray_1]Žádný\n
+%c[d_purple] • %c[ui_gray_2] Počet střepin: %c[ui_gray_1]Žádný\n
+%c[d_purple] • %c[ui_gray_2] Zpoždění zápalníku: %c[ui_gray_1]~4 sekundy</text>
+</string>
+
+<string id="st_grenade_rgn_short">
+    <text>RGN</text>
+</string>	
+
+<string id="st_grenade_rgo_short">
+    <text>RGO</text>
+</string>
+
+
+
+	
+</string_table>

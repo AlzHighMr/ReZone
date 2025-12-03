@@ -1,0 +1,1272 @@
+
+;;--========================================
+;;--===== Artifact Properties Reference ====
+;;--========================================
+;; Basic Properties
+;------------------------------------------------------------
+;               (cost)                                (af_rank)                                              (tier)                                 (degrade_rate)	          
+;   Price of the artifact in game currency.   Artifact rarity or strength rank, usually 0-5.   Artifact tier, indicates general power level.      Artefact Degradation
+;----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                             
+;             (inv_weight)                            (breeding_type)                          (additional_inventory_weight)           (additional_inventory_weight2) 
+;  Inventory weight of the artifact.        Used for breeding/transmutating tiers.             Extra inventory weight capacity.        Secondary weight modifier.
+;----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+;  Immunity Properties - Only works in Absorbation section
+;------------------------------------------------------------
+; (burn_immunity)     (shock_immunity) (chemical_burn_immunity)  (fire_wound_immunity)    (explosion_immunity)   (telepatic_immunity)      (strike_immunity)    (wound_immunity) 
+;; 1%   = 0.00115      0.0389375           0.0002625                                                                                           0.010  
+;; 1.5% = 0.00173      0.058406            0.000394                                                                                            0.015
+;; 2%   = 0.00230      0.077875            0.000525                                                                                            0.020 
+;; 2.5% = 0.00288      0.097344            0.000656                                                                                            0.025   
+;; 5%   = 0.00575      0.194688            0.001312                                                                                            0.050  
+;;----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+;Restore Properties
+;------------------------------------------------------------
+;; (bleeding_restore_speed) (health_restore_speed)  (power_restore_speed)    (radiation_restore_speed)     (satiety_restore_speed)
+;; 1%   =  0.0000667             0.0001515              0.000200                     0.0000213
+;; 1.5% =  0.0001000             0.0002273              0.000300                     0.0000319
+;; 2%   =  0.0001333             0.0003030              0.000400                     0.0000426
+;; 2.5% =  0.0001667             0.0003788              0.000500                     0.0000533
+;; 5%   =  0.0003335             0.0007575              0.001000                     0.0001066
+;;-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+;;--==================================================================================
+;;--=============================| [Tier 0] JUNK  PBA Artefacts|======================
+;;--==================================================================================
+;;--====================[DRAGON_EYE]======================
+![af_dragon_eye]
+af_rank                             = 0
+tier                                = 1
+inv_weight                          = 1.46
+cost                                = 3000
+
+;;--=================[Stats]===================
+additional_inventory_weight         = 3
+additional_inventory_weight2        = 3
+fire_wound_immunity                 = 0.050 
+
+;========= [DRAGON_EYE Tier 1] ==============
+![af_dragon_eye_breeding_1]
+cost                                = 6000
+additional_inventory_weight         = 6
+additional_inventory_weight2        = 6
+radiation_restore_speed             = 0.0
+inv_weight                          = 0.1
+
+![af_dragon_eye_breeding_2]
+cost                                = 8000
+additional_inventory_weight         = 8
+additional_inventory_weight2        = 8
+inv_weight                          = 0.1
+
+![af_dragon_eye_breeding_3]
+cost                                = 12000
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+health_restore_speed                = 0
+power_restore_speed                 = 0
+inv_weight                          = 0.1
+;;--==================================================================================
+;;--=================================| [Tier 1] |=====================================
+;;--==================================================================================
+;;--=================================[GLASSBEADS]=====================================
+;; Higher tiers increase radiation
+;; but further while improving carry weight and stamina recovery. 
+
+![af_dummy_glassbeads]
+af_rank                             = 1
+degrade_rate					    = 0.50	          ;Artefact Degradation
+cost                                = 6000
+
+;;--=================[Stats]===================
+radiation_restore_speed             = 0.0000213      ; +1 mSv negative effect      
+bleeding_restore_speed              = 0 
+inv_weight                          = 1.50
+
+![af_dummy_glassbeads_absorbation]:af_base_absorbation
+burn_immunity                       = 0       
+shock_immunity                      = 0       
+wound_immunity                      = 0.0909         ;4%
+
+;========= [T1] =======
+![af_dummy_glassbeads_breeding_1]
+cost                                = 8000
+radiation_restore_speed             = 0.0000426      ; +2.0 mSv negative effect
+inv_weight                          = 1.50
+
+;========= [T2] =======
+![af_dummy_glassbeads_breeding_2]
+cost                                = 10000
+radiation_restore_speed             = 0.0000533      ; +2.5 mSv negative effect 
+power_restore_speed	                = 0.000500
+additional_inventory_weight         = 3
+additional_inventory_weight2        = 3
+inv_weight                          = 1.00
+
+;========= [T3] =======
+![af_dummy_glassbeads_breeding_3]
+cost                                = 12000
+radiation_restore_speed             = 0.0000642     
+health_restore_speed	            = 0.0
+power_restore_speed	                = 0.001000
+additional_inventory_weight         = 8
+additional_inventory_weight2        = 8
+inv_weight                          = 0.50
+
+
+
+
+
+;;--=================================[Meat chunk]====================================
+![af_mincer_meat]
+af_rank                             = 1
+cost                                = 31300
+radiation_restore_speed             = 0.0002132     
+
+
+![af_mincer_meat_absorbation]:af_base_absorbation
+chemical_burn_immunity              = 0.00057
+shock_immunity                      = 0.0623
+telepatic_immunity                  = -0.0072
+
+![af_mincer_meat_breeding_1]:af_mincer_meat
+power_restore_speed                 = 0.000200
+;inv_weight                         = 0.8
+
+![af_mincer_meat_breeding_2]:af_mincer_meat
+health_restore_speed                = 0.0003788
+power_restore_speed                 = 0.000400
+additional_inventory_weight         = 0
+additional_inventory_weight2        = 0
+;inv_weight                         = 0.8
+
+![af_mincer_meat_breeding_3]:af_mincer_meat
+health_restore_speed                = 0.0007575 
+power_restore_speed                 = 0.000500
+;inv_weight                         = 0.8
+
+
+
+
+
+
+
+
+;;--=================================|ELECTRA SPARKLER|===================================
+![af_electra_sparkler]
+cost                                = 21600
+radiation_restore_speed             = 0.00013
+af_rank                             = 1
+
+![af_electra_sparkler_absorbation]:af_base_absorbation
+shock_immunity                      = 0.1089
+chemical_burn_immunity              = -0.00021
+wound_immunity                      = 0.034
+
+![af_electra_sparkler_breeding_1]:af_electra_sparkler
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_electra_sparkler_breeding_2]:af_electra_sparkler
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_electra_sparkler_breeding_3]:af_electra_sparkler
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.005
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|CRYSTAL FLOWER|===============================
+![af_cristall_flower]
+cost                                = 22800
+radiation_restore_speed             = 0.00013
+af_rank                             = 1
+
+![af_cristall_flower_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00115
+telepatic_immunity                  = 0.0138
+chemical_burn_immunity              = 0.00021
+
+![af_cristall_flower_breeding_1]:af_cristall_flower
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_cristall_flower_breeding_2]:af_cristall_flower
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_cristall_flower_breeding_3]:af_cristall_flower
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--==================================================================================
+;;--=================================| [Tier 2] |=====================================
+;;--==================================================================================
+
+;;--=================================|DUMMY BATTERY|===========================
+![af_dummy_battery]
+af_rank                             = 1
+tier                                = 2
+inv_weight                          = 0.36
+cost                                = 27200
+radiation_restore_speed             = 0.00013
+power_restore_speed                 = 0.00088
+
+![af_dummy_battery_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00115
+shock_immunity                      = 0.0623
+strike_immunity                     = -0.034
+
+![af_dummy_battery_breeding_1]:af_dummy_battery
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_dummy_battery_breeding_2]:af_dummy_battery
+additional_inventory_weight         = 14
+additional_inventory_weight2        = 14
+;inv_weight                         = 0.8
+
+![af_dummy_battery_breeding_3]:af_dummy_battery
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00090
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|SOUL|================================================
+![af_soul]
+af_rank                             = 1
+tier                                = 2
+inv_weight                          = 1.34
+cost                                = 26200
+radiation_restore_speed             = 0.00013
+health_restore_speed                = 0.000075
+power_restore_speed                 = -0.00088
+
+![af_soul_absorbation]:af_base_absorbation
+telepatic_immunity                  = 0.0072
+radiation_immunity                  = -0.001
+
+![af_soul_breeding_1]:af_soul
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_soul_breeding_2]:af_soul
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_soul_breeding_3]:af_soul
+health_restore_speed                = 0.0008
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|NIGHTSTAR|================================================
+![af_night_star]
+af_rank                             = 1
+tier                                = 2
+inv_weight                          = 0.83
+cost                                = 33200
+radiation_restore_speed             = 0.00013
+additional_inventory_weight         = 5.23
+additional_inventory_weight2        = 5.23
+
+![af_night_star_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00115
+chemical_burn_immunity              = 0.00021
+
+![af_night_star_breeding_1]:af_night_star
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_night_star_breeding_2]:af_night_star
+additional_inventory_weight         = 15
+additional_inventory_weight2        = 15
+;inv_weight                         = 0.8
+
+![af_night_star_breeding_3]:af_night_star
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|MEDUSA|================================================
+![af_medusa]
+af_rank                             = 1
+tier                                = 2
+inv_weight                          = 3.25
+cost                                = 24900
+health_restore_speed                = -0.00043
+radiation_restore_speed             = -0.000043
+degrade_rate                        = 1
+
+![af_medusa_absorbation]:af_base_absorbation
+burn_immunity                       = 0.00115
+telepatic_immunity                  = -0.0172
+strike_immunity                     = 0.1
+wound_immunity                      = 0.11
+explosion_immunity                  = 0.089
+fire_wound_immunity                 = 0.097
+
+;;--=========|MEDUSA TIER 1|=====================
+![af_medusa_breeding_1]:af_medusa
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+;;--=========|MEDUSA TIER 2|=====================
+![af_medusa_breeding_2]:af_medusa
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+;;--=========|MEDUSA TIER 3|=====================
+![af_medusa_breeding_3]:af_medusa
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================[BLOOD]=========================================================
+![af_blood]
+af_rank                             = 1
+tier                                = 2
+cost                                = 22200
+radiation_restore_speed             = 0.00013
+bleeding_restore_speed              = 0.000124
+
+![af_blood_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00115
+chemical_burn_immunity              = 0.00039
+
+![af_blood_breeding_1]:af_blood
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_blood_breeding_2]:af_blood
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_blood_breeding_3]:af_blood
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+
+
+;;--==================================================================================
+;;--=================================| [Tier 3] |=====================================
+;;--==================================================================================
+;;--=================================[FUZZ KOLOBOK]===================================
+![af_fuzz_kolobok]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 1.40
+cost                                = 40600
+radiation_restore_speed             = 0.00025
+health_restore_speed                = 0.00015
+power_restore_speed                 = -0.00108
+
+![af_fuzz_kolobok_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00115
+radiation_immunity                  = -0.001
+
+![af_fuzz_kolobok_breeding_1]:af_fuzz_kolobok
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_fuzz_kolobok_breeding_2]:af_fuzz_kolobok
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_fuzz_kolobok_breeding_3]:af_fuzz_kolobok
+health_restore_speed                = 0.0009
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================[BATERRY]=========================================================
+![af_dummy_dummy]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 0.37
+cost                                = 37200
+health_restore_speed                = -0.00001
+radiation_restore_speed             = 0.0000077
+power_restore_speed                 = 0.00186
+bleeding_restore_speed              = -0.00066
+degrade_rate                        = 0.95
+
+![af_dummy_dummy_absorbation]:af_base_absorbation
+telepatic_immunity                  = 0.0072
+chemical_burn_immunity              = -0.00039
+wound_immunity                      = -0.034
+radiation_immunity                  = 0.002
+
+![af_dummy_dummy_breeding_1]:af_dummy_dummy
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_dummy_dummy_breeding_2]:af_dummy_dummy
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_dummy_dummy_breeding_3]:af_dummy_dummy
+health_restore_speed                = 0.00150
+power_restore_speed                 = 0.007
+;inv_weight                         = 0.8
+
+
+
+
+;;--=================================[GRAVI]========================================================
+![af_gravi]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 1.14
+cost                                = 47500
+radiation_restore_speed             = 0.00025
+additional_inventory_weight         = 8.41
+additional_inventory_weight2        = 8.41
+
+![af_gravi_absorbation]:af_base_absorbation
+shock_immunity                      = -0.0623
+telepatic_immunity                  = -0.0072
+explosion_immunity                  = 0.034
+
+;;--=========|GRAVI TIER 1|=====================
+![af_gravi_breeding_1]:af_gravi
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+;;--=========|GRAVI TIER 2|=====================
+![af_gravi_breeding_2]:af_gravi
+additional_inventory_weight         = 20
+additional_inventory_weight2        = 20
+;inv_weight                         = 0.8
+
+;;--=========|GRAVI TIER 3|=====================
+![af_gravi_breeding_3]:af_gravi
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+;;--=================================|VYVERT|================================================
+
+![af_vyvert]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 5.07
+cost                                = 35500
+radiation_restore_speed             = -0.000064
+
+![af_vyvert_absorbation]:af_base_absorbation
+chemical_burn_immunity              = 0.00021
+shock_immunity                      = -0.0623
+strike_immunity                     = 0.135
+wound_immunity                      = 0.124
+explosion_immunity                  = 0.128
+fire_wound_immunity                 = 0.117
+
+![af_vyvert_breeding_1]:af_vyvert
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_vyvert_breeding_2]:af_vyvert
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_vyvert_breeding_3]:af_vyvert
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|MOONLIGHT|=================
+
+![af_electra_moonlight]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 0.19
+cost                                = 43600
+radiation_restore_speed             = 0.00025
+
+![af_electra_moonlight_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00248
+telepatic_immunity                  = 0.0239
+shock_immunity                      = 0.0623
+
+![af_electra_moonlight_breeding_1]:af_electra_moonlight
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_electra_moonlight_breeding_2]:af_electra_moonlight
+additional_inventory_weight         = 11
+additional_inventory_weight2        = 11
+;inv_weight                         = 0.8
+
+![af_electra_moonlight_breeding_3]:af_electra_moonlight
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.007
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|CRYSTAL|======================================
+
+![af_cristall]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 2.73
+cost                                = 31800
+radiation_restore_speed             = 0.00025
+
+![af_cristall_absorbation]:af_base_absorbation
+burn_immunity                       = 0.004821
+shock_immunity                      = 0.0623
+strike_immunity                     = -0.034
+fire_wound_immunity                 = -0.034
+
+![af_cristall_breeding_1]:af_cristall
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_cristall_breeding_2]:af_cristall
+additional_inventory_weight         = 11
+additional_inventory_weight2        = 11
+;inv_weight                         = 0.8
+
+![af_cristall_breeding_3]:af_cristall
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|BALOON|===============================
+
+![af_baloon]
+af_rank                             = 3
+tier                                = 3
+cost                                = 47400
+radiation_restore_speed             = -0.000085
+
+![af_baloon_absorbation]:af_base_absorbation
+burn_immunity                       = 0.00115
+chemical_burn_immunity              = 0.00131
+telepatic_immunity                  = -0.0138
+wound_immunity                      = -0.034
+
+![af_baloon_breeding_1]:af_baloon
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_baloon_breeding_2]:af_baloon
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_baloon_breeding_3]:af_baloon
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|EYE|================================================
+
+![af_eye]
+af_rank                             = 2
+tier                                = 3
+inv_weight                          = 3.12
+cost                                = 36900
+radiation_restore_speed             = 0.00025
+bleeding_restore_speed              = 0.00278
+
+![af_eye_absorbation]:af_base_absorbation
+telepatic_immunity                  = 0.0072
+shock_immunity                      = -0.0623
+chemical_burn_immunity              = -0.00021
+
+![af_eye_breeding_1]:af_eye
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_eye_breeding_2]:af_eye
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_eye_breeding_3]:af_eye
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+
+
+
+
+;;--==================================================================================
+;;--=================================| [Tier 4] |=====================================
+;;--==================================================================================
+
+
+
+;;--=================================|GOLD FISH|================================================
+
+![af_gold_fish]
+af_rank                             = 3
+tier                                = 4
+cost                                = 66200
+radiation_restore_speed             = 0.00047
+additional_inventory_weight         = 13.3
+additional_inventory_weight2        = 13.3
+
+![af_gold_fish_absorbation]:af_base_absorbation
+strike_immunity                     = -0.034
+explosion_immunity                  = -0.034
+wound_immunity                      = -0.1
+
+![af_gold_fish_breeding_1]:af_gold_fish
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_gold_fish_breeding_2]:af_gold_fish
+additional_inventory_weight         = 30
+additional_inventory_weight2        = 30
+;inv_weight                         = 0.8
+
+![af_gold_fish_breeding_3]:af_gold_fish
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|ELECTRA FLASH|========================
+
+![af_electra_flash]
+af_rank                             = 3
+tier                                = 4
+cost                                = 48900
+radiation_restore_speed             = 0.00047
+
+![af_electra_flash_absorbation]:af_base_absorbation
+shock_immunity                      = 0.4206
+telepatic_immunity                  = 0.0072
+strike_immunity                     = -0.034
+fire_wound_immunity                 = -0.1
+
+![af_electra_flash_breeding_1]:af_electra_flash
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_electra_flash_breeding_2]:af_electra_flash
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_electra_flash_breeding_3]:af_electra_flash
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.006
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|[FIREBALL]|=========================
+
+![af_fireball]
+inv_weight                          = 3.67
+cost                                = 46800
+af_rank                             = 3
+tier                                = 4
+radiation_restore_speed             = 0.00047
+
+![af_fireball_absorbation]:af_base_absorbation
+burn_immunity                       = 0.005903
+shock_immunity                      = -0.1089
+strike_immunity                     = -0.034
+wound_immunity                      = 0.034
+
+![af_fireball_breeding_1]:af_fireball
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_fireball_breeding_2]:af_fireball
+additional_inventory_weight         = 11
+additional_inventory_weight2        = 11
+;inv_weight                         = 0.8
+
+![af_fireball_breeding_3]:af_fireball
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|GLASS|================================================
+
+![af_glass]
+af_rank                             = 3
+tier                                = 4
+inv_weight                          = 1.49
+cost                                = 54400
+radiation_restore_speed             = 0.00047
+health_restore_speed                = 0.0003
+power_restore_speed                 = -0.00186
+
+![af_glass_absorbation]:af_base_absorbation
+radiation_immunity                  = -0.002
+strike_immunity                     = -0.034
+wound_immunity                      = -0.034
+
+![af_glass_breeding_1]:af_glass
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_glass_breeding_2]:af_glass
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_glass_breeding_3]:af_glass
+health_restore_speed                = 0.0011
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+
+
+;;--=================================|FIRE|================================================
+
+![af_fire]
+af_rank                             = 3
+tier                                = 4
+inv_weight                          = 3.18
+cost                                = 46925
+radiation_restore_speed             = 0.00047
+bleeding_restore_speed              = 0.00435
+power_restore_speed                 = -0.00088
+
+![af_fire_absorbation]:af_base_absorbation
+telepatic_immunity                  = -0.0072
+strike_immunity                     = -0.034
+radiation_immunity                  = -0.002
+wound_immunity                      = 0.034
+
+![af_fire_breeding_1]:af_fire
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_fire_breeding_2]:af_fire
+additional_inventory_weight         = 11
+additional_inventory_weight2        = 11
+;inv_weight                         = 0.8
+
+![af_fire_breeding_3]:af_fire
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=================================|ICE|================================================
+
+![af_ice]
+af_rank                             = 3
+tier                                = 4
+inv_weight                          = 0.54
+cost                                = 51400
+radiation_restore_speed             = 0.00047
+power_restore_speed                 = 0.00186
+
+![af_ice_absorbation]:af_base_absorbation
+burn_immunity                       = -0.00248
+telepatic_immunity                  = -0.0072
+chemical_burn_immunity              = -0.00021
+
+;========= ICE ================
+![af_ice_breeding_1]:af_ice
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_ice_breeding_2]:af_ice
+additional_inventory_weight         = 10
+additional_inventory_weight2        = 10
+;inv_weight                         = 0.8
+
+![af_ice_breeding_3]:af_ice
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00186
+;inv_weight                         = 0.8
+
+
+;;--==================================================================================
+;;--=================================| [Tier 5] |=====================================
+;;--==================================================================================
+;;--============================================================================
+;;--=================================| Special |================================
+;;--============================================================================
+
+
+
+
+;;--=================================|MONOLITH|================================================
+
+![af_monolith]
+af_rank                             = 0
+tier                                = 5
+cost                                = 59850
+inv_weight                          = 0.95
+
+;can_trade                          = false
+;quest_item                         = false
+
+![af_monolith_absorbation]:af_base_absorbation
+burn_immunity                       = 0.004821
+shock_immunity                      = 0.31269
+telepatic_immunity                  = 0.0239
+chemical_burn_immunity              = 0.00092
+
+strike_immunity                     = -0.034
+wound_immunity                      = -0.034
+explosion_immunity                  = -0.034
+fire_wound_immunity                 = -0.034
+
+
+;========= MONOLIT ================
+![af_monolit_breeding_1]:af_monolit
+radiation_restore_speed             = 0.0
+;inv_weight                         = 0.8
+
+![af_monolit_breeding_2]:af_monolit
+additional_inventory_weight         = 20
+additional_inventory_weight2        = 20
+;inv_weight                         = 0.8
+
+![af_monolit_breeding_3]:af_monolit
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+
+
+
+
+
+
+
+;;--==========================================
+;;--=================================| SGM |==
+;;--==========================================
+;;--=======================================
+;;--===============| SEAEJ |===============
+;;--=======================================
+
+![af_seaej]
+cost                                = 50000
+breeding_type                       = 1
+
+health_restore_speed                = 0
+radiation_restore_speed             = -0.00047
+satiety_restore_speed               = 0
+power_restore_speed                 = 0
+bleeding_restore_speed              = -0.00278
+additional_inventory_weight         = 0
+additional_inventory_weight2        = 0
+
+![af_seaej_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = 0
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= SEAEJ ================
+![af_seaej_breeding_1]:af_seaej
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_seaej_breeding_2]:af_seaej
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_seaej_breeding_3]:af_seaej
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+
+;;--=======================================
+;;--===============| MAYATNIK |============
+;;--=======================================
+;========= MAYATNIK ================
+![af_mayatnik_breeding_1]:af_mayatnik
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_mayatnik_breeding_2]:af_mayatnik
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_mayatnik_breeding_3]:af_mayatnik
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=======================================
+;;--===============| OBLIVION |============
+;;--=======================================
+
+![af_oblivion]
+inv_weight                          = 0.5
+cost                                = 13500
+af_rank                             = 2
+breeding_type                       = 2
+
+health_restore_speed                = 0
+radiation_restore_speed             = 0.00047
+satiety_restore_speed               = 0
+power_restore_speed                 = 0.00088
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 1
+additional_inventory_weight2        = 1
+
+![af_oblivion_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = 0.01
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0.02
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= OBLIVION ================
+![af_oblivion_breeding_1]:af_oblivion
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_oblivion_breeding_2]:af_oblivion
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_oblivion_breeding_3]:af_oblivion
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+;;--=======================================
+;;--===============| RAIBLOKO |============
+;;--=======================================
+
+![af_raibloko]
+inv_weight                          = 0.4
+cost                                = 25000
+af_rank                             = 3
+breeding_type                       = 3
+
+health_restore_speed                = 0
+radiation_restore_speed             = 0.00025
+satiety_restore_speed               = 0
+power_restore_speed                 = 0
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 3
+additional_inventory_weight2        = 3
+
+![af_raibloko_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = 0
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0.0138
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= RAIBLOKO ================
+![af_raibloko_breeding_1]:af_raibloko
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_raibloko_breeding_2]:af_raibloko
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_raibloko_breeding_3]:af_raibloko
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+
+;;--=======================================
+;;--===============| POIPRUZ |=============
+;;--=======================================
+
+![af_poipruz]
+inv_weight                          = 0.5
+cost                                = 8000
+af_rank                             = 1
+breeding_type                       = 1
+
+health_restore_speed                = 0
+radiation_restore_speed             = -0.00047
+satiety_restore_speed               = 0
+power_restore_speed                 = 0
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 5
+additional_inventory_weight2        = 5
+
+![af_poipruz_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = 0
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= POIPRUZ ================
+![af_poipruz_breeding_1]:af_poipruz
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_poipruz_breeding_2]:af_poipruz
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_poipruz_breeding_3]:af_poipruz
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+;;--=======================================
+;;--===============| LIFEKAM |============
+;;--=======================================
+
+![af_lifekam]
+inv_weight                          = 0.5
+cost                                = 80000
+impulse_threshold                   = 10
+radius                              = 10
+strike_impulse                       = 20
+af_rank                             = 1
+breeding_type                       = 1
+
+health_restore_speed                = 0.0005
+radiation_restore_speed             = 0
+satiety_restore_speed               = 0.04
+power_restore_speed                 = 0.00088
+bleeding_restore_speed              = 0
+additional_inventory_weight         = -20
+additional_inventory_weight2        = -20
+
+![af_lifekam_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = -0.02
+wound_immunity                      = 0.1
+radiation_immunity                  = 0
+telepatic_immunity                  = -0.03
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0.25
+
+;========= LIFEKAM ================
+![af_lifekam_breeding_1]:af_lifekam
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_lifekam_breeding_2]:af_lifekam
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_lifekam_breeding_3]:af_lifekam
+health_restore_speed                = 0.0006
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+;;--=======================================
+;;--===============| VEDSLEZA |============
+;;--=======================================
+
+![af_vedsleza]
+inv_weight                          = 0.5
+cost                                = 25000
+af_rank                             = 1
+breeding_type                       = 1
+
+health_restore_speed                = 0
+radiation_restore_speed             = 0.00047
+satiety_restore_speed               = 0
+power_restore_speed                 = 0
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 0
+additional_inventory_weight2        = 0
+
+![af_vedsleza_absorbation]
+burn_immunity                       = 0.00388
+strike_immunity                     = 0
+shock_immunity                      = 0
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0
+chemical_burn_immunity              = 0.00057
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= VEDSLEZA ================
+![af_vedsleza_breeding_1]:af_vedsleza
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_vedsleza_breeding_2]:af_vedsleza
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_vedsleza_breeding_3]:af_vedsleza
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+;;--=======================================
+;;--===============| VASELISK |============
+;;--=======================================
+
+![af_vaselisk]
+inv_weight                          = 0.5
+cost                                = 50000
+af_rank                             = 3
+breeding_type                       = 2
+
+health_restore_speed                = 0
+radiation_restore_speed             = 0.00025
+satiety_restore_speed               = 0
+power_restore_speed                 = 0
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 2
+additional_inventory_weight2        = 2
+
+![af_vaselisk_absorbation]
+burn_immunity                       = 0.00115
+strike_immunity                     = 0.034
+shock_immunity                      = 0.0623
+wound_immunity                      = 0.034
+radiation_immunity                  = 0.002
+telepatic_immunity                  = 0.0072
+chemical_burn_immunity              = 0.00021
+explosion_immunity                  = 0.034
+fire_wound_immunity                 = 0.0
+
+;========= VASELISK ================
+![af_vaselisk_breeding_1]:af_vaselisk
+radiation_restore_speed             = -0.00047
+;inv_weight                         = 0.8
+
+![af_vaselisk_breeding_2]:af_vaselisk
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+;inv_weight                         = 0.8
+
+![af_vaselisk_breeding_3]:af_vaselisk
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00088
+;inv_weight                         = 0.8
+
+
+;;--=======================================
+;;--===============| GELIY |===============
+;;--=======================================
+
+![af_geliy]
+inv_weight                          = 0.5
+cost                                = 45000
+af_rank                             = 3
+breeding_type                       = 3
+
+health_restore_speed                = 0
+radiation_restore_speed             = 0.00047
+satiety_restore_speed               = 0
+power_restore_speed                 = 0.00088
+bleeding_restore_speed              = 0
+additional_inventory_weight         = 12
+additional_inventory_weight2        = 12
+
+![af_geliy_absorbation]
+burn_immunity                       = 0
+strike_immunity                     = 0
+shock_immunity                      = 0
+wound_immunity                      = 0
+radiation_immunity                  = 0
+telepatic_immunity                  = 0
+chemical_burn_immunity              = 0
+explosion_immunity                  = 0
+fire_wound_immunity                 = 0
+
+;========= GELIY ================
+![af_geliy_breeding_1]:af_geliy
+radiation_restore_speed             = 0.0
+;inv_weight                         = 0.8
+
+![af_geliy_breeding_2]:af_geliy
+additional_inventory_weight         = 22
+additional_inventory_weight2        = 22
+;inv_weight                         = 0.8
+
+![af_geliy_breeding_3]:af_geliy
+health_restore_speed                = 0.0005
+power_restore_speed                 = 0.00099
+;inv_weight                         = 0.8
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Ammunition
+-->
+
+<string id="ammo_23x75_shrapnel">
+	<text>"Shrapnel-25" 23x75mm</text>
+</string>
+<string id="ammo_23x75_shrapnel_descr">
+	<text>Náboj s brokovnicovou náplní. Dosah aplikace až 25 metrů. Používá se pro střelbu z karabiny KS-23. Díky tomu, že hlaveň karabiny KS-23 má žlábky, broky létají po velké ploše, což umožňuje střílet bez přesného zaměření.\n \n
+	%c[d_cyan] • %c[0,255,255,255] Průraznost pancíře: %c[ui_gray_2]BR3 (6 x 6)\n
+	%c[d_cyan] • %c[0,255,255,255] Poškození tkání: %c[ui_gray_2]285 (47.5 x 6)
+	</text>
+</string>
+<string id="ammo_23x75_barrikada">
+	<text>"Barrikada" 23x75mm</text>
+</string>
+<string id="ammo_23x75_barrikada_descr">
+	<text>Náboj s ocelovou bodcovou střelou. Používá se k násilnému zastavení vozidel jejich poškozením. Dosah aplikace až 100 metrů. Používá se pro střelbu z karabiny KS-23.\n \n
+	%c[d_cyan] • %c[0,255,255,255] Průraznost pancíře: %c[ui_gray_2]BR5 (51)\n
+	%c[d_cyan] • %c[0,255,255,255] Poškození tkání: %c[ui_gray_2]133
+	</text>
+</string>
+<string id="ammo_9x21_sp10">
+	<text>9x21mm SP10</text>
+</string>
+<string id="ammo_9x21_sp10_descr">
+	<text>Pistolový náboj s projektilu zvýšenou průrazností. Navržen pro ničení osob s osobní ochrannou výbavou. Nosná část tepelně zpevněné ocelové jádra vystupuje z náboje, čímž se dosahuje vysokého průrazného efektu střely.\n \n
+	%c[d_cyan] • %c[0,255,255,255] Průraznost pancíře: %c[ui_gray_2]BR4 (36)\n
+	%c[d_cyan] • %c[0,255,255,255] Poškození tkání: %c[ui_gray_2]24
+	</text>
+</string>
+<string id="ammo_20x70_buck">
+	<text>20x70 Broky</text>
+</string>
+<string id="ammo_20x70_buck_descr">
+	<text>Standardní 20kaliberní náboj naplněný brokem o průměru 6 mm. Velmi smrtící na krátkou vzdálenost. Pouze vhodný pro použití se zbraněmi s hladkou hlavní.\n%c[d_purple] • %c[ui_gray_2]Nejvyšší třída průraznosti pancíře: %c[ui_gray_2]žádná\n%c[d_purple] • %c[ui_gray_2]Hodnocení poškození tkáně: %c[ui_gray_2]střední • vysoké\n%c[ui_gray_2]SPECIÁLNÍ:\n%c[d_purple] • %c[ui_gray_2] expanzní oblak broků, krátký efektivní dostřel\n
+	%c[d_cyan] • %c[0,255,255,255] Průraznost pancíře: %c[ui_gray_2]Žádná (3 x 9)\n
+	%c[d_cyan] • %c[0,255,255,255] Poškození tkání: %c[ui_gray_2]143 (16 x 9)
+	</text>
+</string>
+<string id="ammo_20x70_buck_s">
+	<text>20x70 Broky</text>
+</string>
+<string id="ammo_23_eco">
+	<text>Ekolog-23 Náboj</text>
+</string>
+<string id="ammo_23_eco_descr">
+	<text>Speciální náboj navržený pro potřeby vědeckého personálu umístěného v Zóně. V závislosti na úkolu je naplněn různými typy roztoků. Vyžaduje velmi opatrné zacházení. Jak použít: velmi pomalu vložte do zbraně.\n \n
+	%c[d_cyan] • %c[0,255,255,255] Nejvyšší třída průraznosti pancíře: %c[ui_gray_2]žádná\n
+	%c[d_cyan] • %c[0,255,255,255] Hodnocení poškození tkání: %c[ui_gray_2]žádné\n
+	%c[0,255,255,255]UNIKÁTNÍ: %c[0,250,250,0] Pomocí tenkého wolframového jehly proniká kůží pro injekci roztoku.
+	</text>
+</string>
+<string id="ammo_23_eco_s">
+	<text>Ekolog-23</text>
+</string>
+<string id="ammo_vog_30">
+	<text>VOG-30 Granát</text>
+</string>
+<string id="ammo_vog_30_descr">
+	<text>Fragmentační granát VOG-30 je navržen pro ničení nepřátelských osob a palných zbraní umístěných na otevřených prostranstvích. Vylepšená verze ve srovnání s analogiemi vyvinutými v 80. letech má silnější fragmentační efekt a také autonomní utěsnění pohonné náplně v nábojnici.\n \n
+	</text>
+</string>
+<string id="ammo_vog_30_s">
+	<text>VOG-30</text>
+</string>
+<string id="ammo_338_federal">
+	<text>.338 Federal</text>
+</string>
+<string id="ammo_338_federal_descr">
+	<text>.338 Federal je kulový náboj založený na .308 Winchester s krkem rozšířeným na kalibr .33. Byl vytvořen společností Federal Cartridge a Sako v roce 2006 a byl určen jako náboj pro velkou zvěř s rozumným zpětným rázem pro lehké pušky.\n \n
+	%c[d_cyan] • %c[0,255,255,255] Nejvyšší třída průraznosti pancíře: %c[ui_gray_2]BR6 (75)\n
+	%c[d_cyan] • %c[0,255,255,255] Hodnocení poškození tkání: %c[ui_gray_2]56
+	</text>
+</string>
+<string id="ammo_338_federal_s">
+	<text>.338 Federal</text>
+</string>
+	
+</string_table>

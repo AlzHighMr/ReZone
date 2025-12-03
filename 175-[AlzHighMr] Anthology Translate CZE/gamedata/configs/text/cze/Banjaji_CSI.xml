@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	
+	<!-- Workshop crafting tab title in component window -->
+	<string id="st_cap_tools">
+		<text>Nástroj</text>
+	</string>
+	
+	<!-- Workshop crafting tab bottom tips -->
+	<string id="st_ui_workshop_info_craft_warning_2_banjaji">
+		<text>Zatím nevíš, jak to vyrobit. Chybí ti následující poznámky: %s</text>
+	</string>
+	<string id="st_ui_workshop_info_craft_warning_4_banjaji">
+		<text>Ve tvém inventáři chybí některé potřebné součásti nebo nástroje pro výrobu tohoto předmětu</text>.
+	</string>
+	<string id="st_ui_workshop_info_craft_tip_5_banjaji">
+		<text>Všechny potřebné komponenty k výrobě tohoto máš, pokud chceš pokračovat, vyber tlačítko "Vyrobit".</text>
+	</string>
+
+	
+	
+	<!-- ui_pda_encyclopedia new article strings -->
+	<string id="encyclopedia__notes__known_recipes">
+		<text>Známé recepty</text>
+	</string>
+	<string id="encyclopedia__notes__known_recipes_text">
+		<text>Tyto řemeslné recepty zná každý spolu s těmi, které ses se naučil z poznámek a knih.</text>
+	</string>
+	
+	<!-- Subtitle in encyclopedia note -->
+	<string id="pda_encyclopedia_content_banjaji">
+		<text>Naučené recepty</text>
+	</string>
+	
+	
+	<!-- item_recipe.script -->
+	<string id="st_note_deleted">
+		<text>Poznámka se ti v ruce rozpadla na prach</text>
+	</string>
+	
+	
+	<!-- One word stuff -->
+	<string id="st_notes">
+		<text>Poznámky</text>
+	</string>
+	<string id="st_tools">
+		<text>Nástroje</text>
+	</string>
+	<string id="st_results">
+		<text>Výsledek</text>
+	</string>
+	<string id="st_components">
+		<text>Komponenty</text>
+	</string>
+	<string id="st_nothing">
+		<text>Nic</text>
+	</string>
+	<string id="st_common_knowledge">
+		<text>Běžná znalost</text>
+	</string>
+	<string id="st_learned_recipes">
+		<text>Naučené recepty</text>
+	</string>
+	<string id="st_page">
+		<text>Stránka</text>
+	</string>
+	<string id="st_pages">
+		<text>Stránky</text>
+	</string>
+	
+	<!-- MCM -->
+	<string id="ui_mcm_menu_banjajis_csi">
+		<text>Výrobní system</text>
+	</string>
+	<string id="banjajis_csi">
+		<text>Výrobní system</text>
+	</string>
+	<string id="banjajis_csi_title">
+		<text>Nastavení výroby</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_delete_recipe">
+		<text>Odstranit poznámku k receptu po prvním přečtení</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_delete_letter">
+		<text>Odstranit poznámku k dopisu po prvním přečtení</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_min_craft_item_cond">
+		<text>Minimální podmínka % pro výrobu</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_min_craft_item_cond_desc">
+		<text>Pokud má komponent nebo nástroj podmínku nižší než tato úroveň, pak není považován za dostupný při výrobě.</text>
+	</string>
+
+	
+</string_table>

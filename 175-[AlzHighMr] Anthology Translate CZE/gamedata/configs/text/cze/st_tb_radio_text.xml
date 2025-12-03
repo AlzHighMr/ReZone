@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+
+	<!-- PDA UI -->
+	
+	<string id="cb_pda_cancel">
+		<text>Zrušit balíček RF</text>
+	</string>
+
+	<string id="cb_cancel_package_inactive">
+		<text>Nemáš aktivní RF balíček, který můžeš zrušit.</text>
+	</string>
+	
+	<string id="cb_cancel_package_underground">
+		<text>Signál nemůže dosáhnout z podzemí.</text>
+	</string>
+	
+	<string id="cb_cancel_package_success">
+		<text>Nechceš to? Pošleme tedy někoho, aby ho vyzvedl.</text>
+	</string>
+
+	
+	<!-- PDA MESSAGES -->
+
+	<string id="tb_anon_sender">
+		<text>"Anonymní"</text>
+	</string>
+
+	<!-- PDA MESSAGES -->
+
+	<string id="tb_sooner_rf">
+		<text>Čím dříve získáš RF přijímač, tím dříve ti pomůžeme... pokud to půjde.</text>
+	</string>
+
+
+	<string id="tb_package_can_be_found">
+		<text>Balíček lze nalézt někde v </text>.
+	</string>
+
+	<string id="tb_use_rf_on_freq">
+		<text>, použij RF přijímač na frekvenci </text>
+	</string>
+
+	<string id="tb_mhz_to_search">
+		<text> MHz k vyhledávání.</text>
+	</string>
+
+
+	<string id="tb_dont_forget">
+		<text>Nezapomeň na tento balíček v </text>.
+	</string>
+
+	<string id="tb_freq_was_on">
+		<text>, frekvence byla zapnutá </text>
+	</string>
+
+	<string id="tb_the_mhz">
+		<text> MHz.</text>
+	</string>
+
+	<!-- ROUGH LOCATION TEXTS -->
+
+	<string id="tb_loc_n_r">
+		<text>severní oblast </text>
+	</string>
+	<string id="tb_loc_ne_r">
+		<text>severovýchodní region </text>
+	</string>
+	<string id="tb_loc_e_r">
+		<text>východní region </text>
+	</string>
+	<string id="tb_loc_se_r">
+		<text>jihovýchodní oblast </text>
+	</string>
+	<string id="tb_loc_s_r">
+		<text>jižním regionu </text>
+	</string>
+	<string id="tb_loc_sw_r">
+		<text>jihozápadní oblast </text>
+	</string>
+	<string id="tb_loc_w_r">
+		<text>západní oblast </text>
+	</string>
+	<string id="tb_loc_nw_r">
+		<text>severozápadní oblast </text>
+	</string>
+
+	<!-- LEVEL NAMES -->
+
+	<string id="tb_loc_mar">
+		<text>Velkých bažin</text>
+	</string>
+	<string id="tb_loc_dsc">
+		<text>Temné kotliny</text>
+	</string>
+	<string id="tb_loc_esc">
+		<text>Kordonu</text>
+	</string>
+	<string id="tb_loc_gar">
+    <text>Smetiště</text>
+	</string>
+	<string id="tb_loc_agr">
+		<text>Agropromu</text>
+	</string>
+	<string id="tb_loc_val">
+		<text>Temného údolí</text>
+	</string>
+	<string id="tb_loc_bar">
+		<text>Rostoku</text>
+	</string>
+	<string id="tb_loc_ros">
+		<text>Divoké oblasti</text>
+	</string>
+	<string id="tb_loc_mil">
+<text>Armádního skladiště</text>
+	</string>
+	<string id="tb_loc_yan">
+		<text>Yantaru</text>
+	</string>
+	<string id="tb_loc_cit">
+		<text>Mrtvém městě</text>
+	</string>
+	<string id="tb_loc_lim">
+		<text>Limansku</text>
+	</string>
+	<string id="tb_loc_rad">
+		<text>Radaru</text>
+	</string>
+	<string id="tb_loc_red">
+		<text>Rudého lesa</text>
+	</string>
+	<string id="tb_loc_pri">
+		<text>Pripyati</text>
+	</string>
+	<string id="tb_loc_aes1">
+		<text>Elektrárny</text>
+	</string>
+	<string id="tb_loc_aes2">
+		<text>Elektrárny</text>
+	</string>
+	<string id="tb_loc_gen">
+		<text>Generátorů</text>
+	</string>
+	<string id="tb_loc_zat">
+		<text>Zatonu</text>
+	</string>
+	<string id="tb_loc_jup">
+		<text>Jupiteru</text>
+	</string>
+	<string id="tb_loc_out">
+<text>Předměstí</text>
+	</string>
+	<string id="tb_loc_trc">
+		<text>Hřbitov nákladních aut</text>
+	</string>
+	<string id="tb_loc_pol">
+		<text>Louky</text>
+	</string>
+	<string id="tb_loc_dbg">
+		<text>the Debug Level</text>
+	</string>
+
+</string_table>

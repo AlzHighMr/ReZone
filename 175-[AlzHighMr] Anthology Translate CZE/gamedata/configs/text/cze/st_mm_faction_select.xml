@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+
+	<!-- Description - Factions -->
+<string id="st_faction_stalker">
+    <text>Samotář</text>
+</string>
+<string id="st_faction_stalker_desc">
+    <text>%c[0,150,150,150]Samotáři, nebo také "Svobodní stalkeři" dávají přednost zůstat mimo spojenectví s různými frakcemi operujícími v Zóně.\nVelká většina obyvatel Zóny patří do této neoficiální bratrské organizace a vybírá si život bez zapletení se do cizích ideálů.\n \n%c[0,255,255,255]Doporučeno pro: Nové hráče</text>
+</string>
+<string id="st_faction_bandit">
+    <text>Bandita</text>
+</string>
+<string id="st_faction_bandit_desc">
+    <text>%c[0,150,150,150]Zákony opuštěním Černobylu ví, že i když Ukrajina a Bělorusko na papíře kontrolují Zónu, ve skutečnosti je to místo bez zákona.\n \nBandité jsou vrazi, zloději a další členové kriminálního podsvětí, kteří toho využívají, zneužívají anarchického stavu Zóny k úkrytu před zákonem a pokračování v nelegálních aktivitách.</text>
+</string>
+<string id="st_faction_dolg">
+    <text>Povinnost</text>
+</string>
+<string id="st_faction_dolg_desc">
+    <text>%c[0,150,150,150]Povinnost je paramilitární frakce, která vedla válku proti samotné Zóně, považuje ji za inkubátor nevyslovitelných hrůz, které by ohrožovaly celý svět, kdyby se jim nezabránilo.\n \nDíky rozdílným ideálům jsou dlouhodobě ve tvrdém konfliktu se Svobodou.</text>
+</string>
+<string id="st_faction_freedom">
+    <text>Svoboda</text>
+</string>
+<string id="st_faction_freedom_desc">
+    <text>%c[0,150,150,150]Svoboda jsou anarchisté a odvážlivci, kteří bojují za neomezený přístup do Zóny. Vidí Zónu jako zázrak, který by měl být sdílen, a proto se neustále dostávají do konfliktu se Skupinou Povinnost.</text>
+</string>
+<string id="st_faction_army">
+    <text>Armáda</text>
+</string>
+<string id="st_faction_army_desc">
+    <text>%c[0,150,150,150]Armáda se odkazuje na vnitřní jednotky Ukrajinské vlády, jednotky Spetsnaz a najaté stalkery.\n \nPřistupují k zabezpečování hranice mezi Zónou a vnějším světem s tvrdým přístupem a mají povolení střílet na všechny neautorizované osoby bez varování.</text>
+</string>
+<string id="st_faction_ecolog">
+    <text>Ekologové</text>
+</string>
+<string id="st_faction_ecolog_desc">
+    <text>%c[0,150,150,150]Ekologové jsou sponzorováni ukrajinskou vládou a jsou oficiálním sborem vědců a smluvních terénních asistentů, kteří zkoumají Zónu s nadějí, že využijí její potenciál pro dobro lidstva.\n \n%c[0,255,255,255] Doporučeno pro pacifistické hráče</text>
+</string>
+<string id="st_faction_killer">
+    <text>Žoldáci</text>
+</string>
+<string id="st_faction_killer_desc">
+    <text>%c[0,150,150,150]Žoldáci v Zóně obvykle patří do pololehce organizované společnosti profesionálních bojovníků.\nTito nepravidelníci pocházejí z různých národností a prostředí a prodávají své služby jako zkušení vojáci každému, kdo je ochoten zaplatit.\n \nJe neznámo, kdo je najal, aby vstoupili do Zóny, a proč mají zájem o ni.</text>
+</string>
+<string id="st_faction_monolith">
+    <text>Monolit</text>
+</string>
+<string id="st_faction_monolith_desc">
+    <text>%c[0,150,150,150]Monolit je fanatický kult, nepřátelský vůči všem kromě vlastních členů.\n \nPřestože došlo k zničení C-Vědomí, nedávno zaznamenali znepokojující nárůst počtu. Od té doby znovu získali mnoho svých bývalých území.\n \n%c[0,255,255,255]Doporučeno pro: Pokročilé hráče </text>
+</string>
+<string id="st_faction_csky">
+    <text>Jasná Obloha</text>
+</string>
+<string id="st_faction_csky_desc">
+    <text>%c[0,150,150,150]Jasná Obloha je nezávislá vědecká a paramilitární organizace, jejímž cílem je zvýšit obecné porozumění Zóně a zároveň chránit její nejnebezpečnější tajemství.\n \nPřestože skupina efektivně zkolabovala po nezdařené expedici do CNPP před sedmi lety, několik zbývajících přeživších postupně obnovilo frakci do její původní podoby.\n \n%c[0,255,255,255]Doporučeno pro: Nové hráče</text>
+</string>
+<string id="st_faction_renegade">
+    <text>Odpadlíci</text>
+</string>
+<string id="st_faction_renegade_desc">
+    <text>%c[0,150,150,150]Odpadlíci složení z nejopovrženihodnějších stalkerů ve Zóně.\n \nKaždý člen spáchal tak závažné přestupky, že žádná skupina je nepřijme a dokonce je jen těžko snáší bandité.\n \n%c[0,255,255,255]Doporučeno pro: Pouze pokročilé hráče</text>
+</string>
+<string id="st_faction_greh">
+    <text>Hřích</text>
+</string>
+<string id="st_faction_greh_desc">
+    <text>%c[0,150,150,150]Hřích jsou extrémně nepřátelským kultem mutantních stalkerů, kteří věří v božskou podstatu Zóny.\n \nRůzně popisováni jako zombifikovaní, mutovaní nebo posedlí, "Temní Stalkeři" ze zlověstné frakce Hřích usilují o rozšíření Zóny, aby zahrnula celý svět - a nezastaví se před ničím, aby dosáhli tohoto ambiciózního cíle.\n \n%c[0,255,255,255]Doporučeno pro: Pouze pokročilé hráče</text>
+</string>
+<string id="st_faction_isg">
+    <text>UNISG</text>
+</string>
+<string id="st_faction_isg_desc">
+    <text>%c[0,150,150,150]United Nations International Scientific Group (UNISG) (Mezinárodní vědecká skupina OSN) je jednotka speciálních sil s velkým zájmem o Zónu.\n \nBez ohledu na jejich cíl jsou jejich terénní agenti daleko od bezbrannosti a většina by raději vystřelila jako první, než aby riskovali unik informací o svých pohybech.\n \n%c[0,255,255,255]Doporučeno pro: Pouze pokročilé hráče</text>
+</string>
+<string id="st_faction_zombied">
+    <text>Zombifikovaní</text>
+</string>
+<string id="st_faction_zombied_desc">
+    <text>%c[0,150,150,150]Mooo zzz kyyýýý!!!\n \nZombifikovaní stalkeři jsou bezduché lůzy svých původních podob, snížení na své nejzákladnější instinkty podobné zvířatům a zautoci na téměř cokoli, co se příliš přiblíží.\n \n%c[0,255,255,255]Doporučeno pro: Pouze pokročilé hráče</text>
+</string>
+	
+	<!-- Hint -->
+<string id="st_mm_box_faction_desc">
+<text>
+%c[0,150,150,150]%s styl.
+</text>
+</string>
+<string id="st_mm_box_icon_desc">
+<text>
+%c[0,150,150,150]Portrét vaší postavy.
+</text>
+</string>
+<string id="st_mm_list_map_desc">
+<text>
+%c[0,150,150,150]Vyberte počáteční umístění pro novou hru.
+</text>
+</string>
+<string id="st_mm_ck_reset_desc">
+<text>
+%c[0,150,150,150]Resetovat inventář.
+</text>
+</string>
+<string id="st_mm_list_economy_desc">
+<text>
+%c[0,150,150,150]Obtížnost ekonomie má velký vliv na ekonomiku, která ovlivňuje hráčův postup během jeho cesty v Zóně.
+\nOvlivněné aspekty zahrnují ceny prodeje/nákupu u obchodníků, ceny oprav/upgrade u mechaniků, vzácnost kořisti, peníze a příznivost získané za splnění úkolů a další.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Můžete ovládat každý z těchto aspektů ve svém průchodu hrou kdykoli.
+\nViz "Extra možnosti -> Obtížnost ekonomie".
+</text>
+</string>
+<string id="st_mm_list_difficulty_desc">
+<text>
+%c[0,150,150,150]Obtížnost hry ovlivňuje aspekty související s hráčem, jako je ochrana proti zdrojům poškození, ztráta vytrvalosti a nosnost. Kromě toho také ovlivňuje další aspekty, jako je nedostatek vody a spánku.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Můžete kdykoli během hraní upravit tyto aspekty.
+\nViz "Extra možnosti -> Obtížnost hry".
+</text>
+</string>
+<string id="st_mm_ck_story_desc">
+<text>
+%c[0,150,150,150]Režim příběhu umožňuje hráči zažít unikátní soubor příběhových úkolů a dynamických dějových linek.
+\n
+\nPříběhové úkoly jako "Žijící legenda", "Smrtelný hřích" a "Operace Západní Vítr" jsou dostupné pouze pro frakce Samotáři, Povinnost, Svoboda, Ekologové, Armáda a Jasná obloha.
+\n
+\nDynamické dějové linie však mohou být vychutnány všemi hratelnými frakcemi. V obou případech se obraťte na vůdce své frakce, abyste je zahájili. Přejeme vám hodně zábavy!
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Warfare.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Přežití.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Azazel.
+</text>
+</string>
+<string id="st_mm_ck_drx_desc">
+<text>
+%c[0,150,150,150]Dynamická sada různorodých úkolů, které vás provedou Zónou.
+\nNekonečná přehravitelnost; každé nové hraní bude jiné, i když hrajete za stejnou frakci.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem příběhu.
+\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Azazel.
+</text>
+</string>
+<string id="st_mm_ck_hardcore_desc">
+<text>
+%c[0,150,150,150]Režim Ironman je funkce, která po smrti odstraní vaše uložené hry.\n
+\nMůžete si vytvořit libovolný počet uložených her, ale smrt povede ke smazání všech uložených her vytvořených s touto postavou.
+</text>
+</string>
+<string id="st_mm_ck_hardcore_aim_desc">
+<text>
+%c[0,150,150,150]Funkce Hardcore AI Aim maximalizuje předvídatelnost zaměřování umělé inteligence, což ztěžuje hráči vyhýbat se zásahům při pohybu.
+</text>
+</string>
+<string id="st_mm_ck_survival_desc">
+	<text>
+		%c[0,150,150,150]Režim Přežití je funkce, která nahrazuje všechny spawny zombíky.
+		\n
+		\nTyto hordy se budou blížit k tvojí pozici - buď připraven! Uvidíme, jak dlouho dokážeš přežít!
+		\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Warfare.
+	</text>
+</string>
+<string id="st_mm_ck_azazel_mode_desc">
+	<text>
+		%c[0,150,150,150]V režimu Azazel smrt není koncem.
+		\n
+		\nJako démon Azazel získáte nové tělo po smrti; převezmete podobu jiného náhodného stalkera, který skutečně existuje ve Zóně.
+		\n
+		\nPokud máte společníky, stanete se jedním z nich. Tato funkce se velmi dobře doplňuje s režimem Ironman a/nebo Přežití.
+		\n
+		\n%c[200,200,50,50]• %c[0,150,150,150]Ve všech mapách budou odemčeny v režimu Azazel.
+		\n
+		\n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem příběhu.
+	</text>
+</string>
+<string id="st_mm_ck_warfare_desc">
+	<text>
+		%c[0,150,150,150]Tento režim poskytuje systému A-Life více svobody, což vytváří dynamičtější Zónu.
+		\n \nVlastnictví základen a území frakcí je náchylnější k změnám. Lékaři, obchodníci a mechanici jsou nyní také nahraditelní.
+		\n \nMáte také schopnost vést svou frakci a pomoci jim při ovládnutí okolních oblastí, dosažení dominance ve Zóně.
+		\n \n%c[200,150,50,200]• %c[0,150,150,150]Vedete svou frakci prostřednictvím mapy na PDA!
+		\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem příběhu.
+		\n \n%c[200,200,50,50]• %c[0,150,150,150]Nehratelné s režimem Přežití.
+	</text>
+</string>
+<string id="st_mm_ck_campfire_desc">
+	<text>
+		%c[0,150,150,150]V režimu Campfire save nemůžete ukládat váš postup, pokud nestojíte poblíž táborového ohně. Tábory s ohněmi lze najít po celé Zóně a představují shromáždiště stalkerů všude.
+		\n \n%c[200,50,200,50]• %c[0,150,150,150]Všechny režimy s hardcore ukládáním jsou vzájemně kompatibilní.
+	</text>
+</string>
+<string id="st_mm_ck_conditions_desc">
+	<text>
+		%c[0,150,150,150]Režim Agony vám zabrání ukládat váš postup, pokud jste:
+		\n%c[200,200,200,50]• %c[0,150,150,150]Zranění
+		\n%c[200,200,200,50]• %c[0,150,150,150]Krvácení
+		\n%c[200,200,200,50]• %c[0,150,150,150]Ozáření
+		\n%c[200,200,200,50]• %c[0,150,150,150]Ve střetu s nepřáteli
+		\n%c[200,200,200,50]• %c[0,150,150,150]V době trvání emise nebo psi-bouře
+		\n \n%c[200,50,200,50]• %c[0,150,150,150]Všechny režimy s hardcore ukládáním jsou vzájemně kompatibilní.
+	</text>
+</string>
+<string id="st_mm_list_timer_desc">
+	<text>
+		%c[0,150,150,150]V režimu časovače můžete hru ukládat každý určitý čas. 
+		\nJakmile hru uložíte, nemůžete provést další uložení ještě jednou, dokud časovač neskončí.
+		\n \n%c[200,50,200,50]- %c[0,150,150,150]Všechny režimy ukládání hardcore jsou vzájemně kompatibilní.
+	</text>
+</string>
+<string id="st_mm_ck_routes_desc">
+		<text>
+			%c[0,150,150,150]Mnoho úrovní není ve výchozím nastavení přístupných. Skryté trasy lze objevit různými způsoby během hraní. 
+			\n \nZapnutím této možnosti se při spuštění nové hry odemknou všechny úrovně.
+		</text>
+	</string>
+<string id="st_mm_list_hardcore_lives_desc">
+    <text>
+        %c[0,150,150,150]Dodatečná funkce pro režim Ironman, která vám umožňuje nastavit, kolik životů máte na začátku nové hry.
+        \nPokaždé, kdy zemřete, ztratíte jeden život.
+        \nJakmile vám dojdou životy, budou odstraněny všechny uložené hry související s vaším průchodem.
+        \n
+        %c[200,200,50,50]• %c[0,150,150,150]Režim Ironman musí být aktivní.
+    </text>
+</string>
+
+<string id="st_mm_list_hardcore_regen_desc">
+    <text>
+        %c[0,150,150,150]Dodatečná funkce pro režim Ironman, která vám umožňuje nastavit, kolik dní to potrvá, než obdržíte další život.
+        \n%c[200,200,50,50]• %c[0,150,150,150]Spaní nepomůže.
+        \n%c[200,200,50,50]• %c[0,150,150,150]Režim Ironman musí být aktivní.
+    </text>
+</string>
+
+
+	
+	<!-- Static Text -->
+<string id="st_mm_new_game_character">
+<text>Postava</text>
+</string>
+<string id="st_mm_new_game_faction">
+<text>Vyber frakci</text>
+</string>
+<string id="st_mm_new_game_icon">
+<text>Vyber portrét</text>
+</string>
+<string id="st_mm_new_game_options">
+<text>Možnosti</text>
+</string>
+<string id="st_mm_new_game_inventory">
+<text>Inventář</text>
+</string>
+<string id="st_mm_new_game_loadout">
+<text>Výbava</text>
+</string>
+<string id="st_mm_new_game_name">
+<text>Jméno:</text>
+</string>
+<string id="st_mm_new_game_faction_2">
+<text>Frakce:</text>
+</string>
+<string id="st_mm_new_game_money">
+<text>Peníze:</text>
+</string>
+<string id="st_mm_new_game_points_left">
+<text>Zbývající body:</text>
+</string>
+<string id="st_mm_new_game_points_used">
+<text>Použité body:</text>
+</string>
+<string id="ui_st_random_location">
+<text>Vyběr spawnů a příběhů</text>
+</string>
+
+<!-- Description elements -->
+
+<string id="st_mm_new_game_relations">
+    <text>Vztahy</text>
+</string>
+<string id="st_mm_new_game_description">
+    <text>Stručná historie</text>
+</string>
+<string id="st_mm_new_game_points">
+    <text>Body</text>
+</string>
+<string id="st_mm_new_game_essential">
+    <text>Zásadní</text>
+</string>
+	<!-- Hint -->
+	<string id="st_mm_itm_desc_unknown">
+		<text>Žádné dostupné info</text>
+	</string>
+	
+	<!-- Options -->
+
+<string id="st_cap_check_warfare">
+	<text>Warfare</text>
+</string>
+<string id="st_cap_check_drx">
+	<text>DoctorX Questlines</text>
+</string>
+<string id="st_cap_check_campfire">
+	<text>Nezapínat.</text>
+</string>
+<string id="st_cap_check_conditions">
+	<text>Režim Agony</text>
+</string>
+<string id="st_cap_list_timer">
+	<text>Režim časovače</text>
+</string>
+<string id="st_cap_check_routes">
+	<text>Přístupná zona</text>
+</string>
+<string id="st_cap_list_hardcore_lives">
+	<text>Ironman životy</text>
+</string>
+<string id="st_cap_list_hardcore_regen">
+	<text>Dárce života</text>
+</string>
+<string id="st_cap_list_economy">
+	<text>Ekonomie</text>
+</string>
+<string id="st_cap_list_difficulty">
+	<text>Obtížnost</text>
+</string>
+<string id="st_econ_1">
+	<text>Turista</text>
+</string>
+<string id="st_econ_2">
+	<text>Mrchožrout</text>
+</string>
+<string id="st_econ_3">
+	<text>Přeživší</text>
+</string>
+<string id="st_diff_1">
+	<text>Snadná</text>
+</string>
+<string id="st_diff_2">
+	<text>Střední</text>
+</string>
+<string id="st_diff_3">
+	<text>Těžká</text>
+</string>
+<string id="st_diff_4">
+	<text>Hardcore</text>
+</string>
+<string id="st_off">
+	<text>vypnuto</text>
+</string>
+<string id="st_new_game_min">
+	<text>min.</text>
+</string>
+<string id="st_new_game_mins">
+	<text>min.</text>
+</string>
+<string id="st_new_game_hour">
+	<text>hodina</text>
+</string>
+<string id="st_new_game_hours">
+	<text>hodiny</text>
+</string>
+<string id="st_new_game_day">
+	<text>den</text>
+</string>
+<string id="st_new_game_days">
+	<text>dny</text>
+</string>
+<string id="st_new_game_life">
+	<text>život</text>
+</string>
+<string id="st_new_game_lives">
+	<text>životy</text>
+</string>
+	
+	<!-- Buttons -->
+<string id="st_mm_btn_new_game_faction">
+	<text>Frakce</text>
+</string>
+<string id="st_mm_btn_new_game_icon">
+	<text>Portrét</text>
+</string>
+<string id="st_mm_btn_new_game_back">
+	<text>Zpět</text>
+</string>
+<string id="st_mm_btn_new_game_submit">
+	<text>Start</text>
+</string>
+<string id="st_mm_btn_new_game_rand">
+	<text>Náhodně</text>
+</string>
+
+<!-- Discord -->
+<string id="st_hardcore_lives_left">
+	<text>Zbývající životy</text>
+</string>
+<string id="st_hardcore_lives_left_single">
+	<text>Zbývající život</text>
+</string>
+<string id="st_player_dead">
+	<text>Mrtvý</text>
+</string>
+<string id="st_main_menu">
+	<text>Hlavní menu</text>
+</string>
+<string id="st_loading">
+	<text>Načítání</text> 
+</string>
+<string id="st_pause_menu">
+	<text>Pauza</text>
+</string>
+<string id="st_cap_check_freeplay">
+	<text>Režim volné hry</text>
+</string>
+<string id="st_azazel_lives_possessed">
+	<text>Obsazené životy</text>
+</string>
+<string id="st_azazel_lives_possessed_single">
+	<text>Obsazený život</text>
+</string>
+<string id="st_godmode">
+	<text>Nesmrtelnost</text>
+</string>
+</string_table>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_sig229">
+		<text>SIG P229 LEGION</text>
+	</string>
+	<string id="st_wpn_sig229_descr">
+		<text>Pistole P229 je vylepšená pistole P228 kompaktních rozměrů s komorou ráže 9 mm určená pro policejní službu a skryté nošení. Jelikož se jedná o variantu "LEGION", lze předpokládat, že se jedná o zázrak mezi západními frakcemi, jako jsou žoldáci. Přestože je komorována do slabší ráže 9 mm namísto silnější .45 ACP, stále se jedná o relativně dobrou, malou pistoli pro ty, kteří dávají přednost SIG-Saueru, který střílí 9 mm namísto .45 ACP.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Německo, Švýcarsko\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]SIG Sauer\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1992\n
+		</text>
+	</string>
+
+	<string id="st_wpn_sig320">
+		<text>SIG Sauer P320 RXP</text>
+	</string>
+	<string id="st_wpn_sig320_descr">
+		<text>Nejnovější přírůstek do řady pistolí SIG-Sauer s komorou 9 mm. Používá mechanismus "Strike-Action", který by měl silně snížit zpětný ráz i v případě překomorování na .45 ACP. Má bezkonkurenční spolehlivost, velmi dobrou přesnost a perfektní zpětný ráz. Úžasná pistole do terénu.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Německo, Švýcarsko\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]SIG Sauer\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2017\n
+		</text>
+	</string>
+	<string id="st_up_p320_c7_name">
+		<text>Změna ráže na .45 ACP</text>
+	</string>
+	<string id="st_up_p320_c7_descr">
+<text>Složitá, pravděpodobně nelegální a podomácku provedená změna hlavně a střelného mechanismu, aby bylo možné použítí ráže .45 ACP</text>.
+	</string>
+
+
+</string_table>

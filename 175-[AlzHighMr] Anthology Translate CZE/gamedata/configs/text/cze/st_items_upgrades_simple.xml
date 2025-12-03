@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Upgrading Parts
+-->
+
+<string_table>
+
+<!-- Outfits -->
+	<string id="st_upgr_o_physical">
+		<text>Sada pro vylepšení obleku</text>
+	</string>
+	<string id="st_upgr_o_physical_desc">
+		<text>Tento balíček obsahuje různé typy pancéřových plátů a součástek, jako je kevlar a titan, ve všech tvarech a velikostech, a spoustu menších součástek k jejich připevnění a instalaci. S touto sadou byste měli být schopni nainstalovat na výstroj jakékoli vylepšení související se zlepšením jejích fyzikálních vlastností.\n \n
+            %c[d_orange]Lze použít k vylepšení:\n
+            %c[d_cyan] - %c[ui_gray_2] Balistická odolnost.\n
+            %c[d_cyan] - %c[ui_gray_2] Nárazová odolnost \n
+            %c[d_cyan] - %c[ui_gray_2] Trhání.\n
+            %c[d_cyan] - %c[ui_gray_2] Trvanlivost obleku\n
+            %c[d_cyan] - %c[ui_gray_2] Snížení hmotnosti\n
+            %c[d_cyan] - %c[ui_gray_2] Výbušná rez.
+        </text>
+    </string>
+	<string id="st_upgr_o_magical">
+		<text>Sada pro vylepšení ochrany životního prostředí obleku</text>
+	</string>
+	<string id="st_upgr_o_magical_desc">
+		<text>Tento balíček obsahuje různé typy materiálů odolných vůči extrémním fyzikálním, biologickým a chemickým podmínkám. S touto sadou byste měli být schopni nainstalovat na výstroj jakékoli vylepšení související se zlepšením její ochrany životního prostředí.\n \n
+            %c[d_orange]Lze použít k vylepšení:\n
+            %c[d_cyan] - %c[ui_gray_2] Radiační odolnost.\n
+            %c[d_cyan] - %c[ui_gray_2] Chemická odolnost \n
+            %c[d_cyan] - %c[ui_gray_2] Popáleniny.\n
+            %c[d_cyan] - %c[ui_gray_2] Elektrická rezerva \n
+            %c[d_cyan] - %c[ui_gray_2] Psychická odolnost \n
+        </text>
+    </string>
+	<string id="st_upgr_o_utility">
+		<text>Sada pro vylepšení užitečnosti obleku</text>
+	</string>
+	<string id="st_upgr_o_utility_desc">
+		<text>Tento balíček obsahuje upevňovací popruhy, různá pouzdra, různá mechanická zařízení různé kvality a další drobnosti. S touto sadou byste měli být schopni nainstalovat na výstroj několik užitečných vylepšení.\n \n
+            %c[d_orange]Lze použít k vylepšení:\n
+            %c[d_cyan] - %c[ui_gray_2] Hmotnost nesená\n
+            %c[d_cyan] - %c[ui_gray_2] Opaskové sloty\n
+            %c[d_cyan] - %c[ui_gray_2] Obnovení výdrže\n
+            %c[d_cyan] - %c[ui_gray_2] Obnova zdraví\n
+            %c[d_cyan] - %c[ui_gray_2] Kontrola krvácení\n
+            %c[d_cyan] - %c[ui_gray_2] Posilovač servomotoru\n
+        </text>
+    </string>
+
+
+
+	<string id="st_upgr_w_internal">
+		<text>Sada pro vylepšení mechanismu zbraně</text>
+	</string>
+	<string id="st_upgr_w_internal_desc">
+		<text>Tento balíček obsahuje vysoce kvalitní součásti zbraní a nástroje sloužící k úpravě zbraňových mechanismů. S touto sadou byste měli být schopni provést řadu vnitřních vylepšení zbraně.\n \n
+            %c[d_orange]Lze použít k vylepšení:\n
+            %c[d_cyan] - %c[ui_gray_2] Spolehlivost\n
+            %c[d_cyan] - %c[ui_gray_2] Snížení zpětného rázu\n
+            %c[d_cyan] - %c[ui_gray_2] Rychlost střelby\n
+            %c[d_cyan] - %c[ui_gray_2] Změna ráže\n
+            %c[d_cyan] - %c[ui_gray_2] Způsoby palby\n</text>
+    </string>
+	<string id="st_upgr_w_external">
+		<text>Sada pro vylepšení těla zbraně</text>
+	</string>
+	<string id="st_upgr_w_external_desc">
+		<text>Tento balíček obsahuje nástroje používané k úpravě a údržbě hlavní zbraní, stejně jako taktické lišty, držáky a různé kusy zbraňového nábytku. S touto sadou byste měli být schopni provést různá vylepšení týkající se hlavní nebo těl zbraní.\n \n
+            %c[d_orange]Lze použít k vylepšení:\n
+            %c[d_cyan] - %c[ui_gray_2] Plocha\n
+            %c[d_cyan] - %c[ui_gray_2] Přesnost\n
+            %c[d_cyan] - %c[ui_gray_2] Ruční zpracování\n
+            %c[d_cyan] - %c[ui_gray_2] Hmotnost zbraně\n
+            %c[d_cyan] - %c[ui_gray_2] Body připevnění\n</text>
+    </string>
+	<string id="st_upgr_w_optical">
+		<text>Sada pro vylepšení optického zaměřovače</text>
+	</string>
+	<string id="st_upgr_w_optical_desc">
+		<text>Tento balíček obsahuje vysoce kvalitní čočky a optiku vhodné pro výměnu na dalekohledech a puškohledech. S touto sadou byste měli být schopni modernizovat jakýkoli optický přístroj.</text>
+    </string>
+
+	<string id="st_try_combine">
+		<text>Upgrade</text>
+	</string>
+	<string id="st_try_downgrade">
+		<text>Downgrade</text>
+	</string>
+	<string id="ui_mcm_menu_supgrades">
+		<text>Zjednodušené upgrady</text>
+	</string>
+	<string id="ui_mcm_supgrades_title">
+		<text>Streamlined Upgrades</text>
+	</string>
+
+	<string id="ui_mcm_supgrades_drop">
+    <text>Šance na spawn upgradů</text>
+	</string>
+	<string id="ui_mcm_supgrades_drop_desc">
+		<text>Šance, že stávající upgrade sady budou nahrazeny novými generickými sadami.</text>
+	</string>
+
+</string_table>

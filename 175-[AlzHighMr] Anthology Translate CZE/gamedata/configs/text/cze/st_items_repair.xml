@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Repair Kits
+-->
+
+<string_table>
+
+
+<string id="st_sharpening_stones">
+	<text>Třídílná sada brusných kamenů</text>
+</string>
+<string id="st_sharpening_stones_descr">
+	<text>Velmi praktická sada tří brusných kamenů pro ostření čepelí a nožů, zabalená v pěkném polyesterském obalu.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] vhodné pro nože a čepele\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] nástrojová sada\n
+	%c[d_orange] • %c[ui_gray_2] použitelné k opravám vybavení\n
+	</text>
+</string>
+<string id="st_gun_oil">
+	<text>Sprej "Brunox Gun Care" mazivo</text>
+</string>
+<string id="st_gun_oil_descr">
+	<text>Sprej obsahující olej určený k mazání a ochraně palných zbraní. Pravidelné používání zabrání závadám a korozi zbraní, zejména po dlouhodobém používání v bojových situacích. Nicméně mějte na paměti, že olej vyžaduje adekvátní nástroje pro správné rozprostření, aby mohl proniknout do vnitřních mechanismů zbraně. "Brunox" by tak měl být vnímán spíše jako doplněk než samostatný údržbový předmět.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] vhodné pro všechny zbraně\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] rozprašovací mazivo\n
+	%c[d_orange] • %c[ui_gray_2] použitelné k opravám vybavení\n
+	</text>
+</string>
+<string id="st_gun_oil_ru_d">
+	<text>Olej a čisticí rozpouštědlo "Dvojka" na zbraně</text>
+</string>
+<string id="st_gun_oil_ru_d_descr">
+	<text>Ikoničtí rudí vojáci používají tento olej již téměř 70 let. Kovová láhev je rozdělena na dvě oddělené části, jednu pro olej a druhou pro čisticí rozpouštědlo. Nicméně mějte na paměti, že olej vyžaduje adekvátní nástroje pro správné rozprostření, aby mohl proniknout do vnitřních mechanismů zbraně. "Dvojku" byste tedy měli vnímat spíše jako doplněk než samostatný údržbový předmět.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] vhodné pro všechny zbraně\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] kapalný zbraňový olej a čisticí rozpouštědlo\n
+	%c[d_orange] • %c[ui_gray_2] použitelné k opravám vybavení\n
+	</text>
+</string>
+<string id="st_gun_oil_ru">
+	<text>Ruský zbraňový olej "Rusak"</text>
+</string>
+<string id="st_gun_oil_ru_descr">
+	<text>Plastová láhev obsahující levný ruský minerální zbraňový olej. Navzdory své nízké ceně se může hodit k udržování palné zbraně ve správném stavu, pokud se často nanáší. Nicméně mějte na paměti, že olej vyžaduje adekvátní nástroje pro správné rozprostření, aby mohl proniknout do vnitřních mechanismů zbraně. "Rusak" byste tedy měli vnímat spíše jako doplněk než samostatný údržbový předmět.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] vhodné pro všechny zbraně\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] kapalný zbraňový olej\n
+	%c[d_orange] • %c[ui_gray_2] použitelné k opravám vybavení\n
+	</text>
+</string>
+<string id="st_solvent">
+	<text>Čisticí rozpouštědlo Hoppe's "No. 9"</text>
+</string>
+<string id="st_solvent_descr">
+	<text>Západní kvalitní čisticí rozpouštědlo pro zbraně, speciálně přizpůsobené pro použití v drsných environmentálních podmínkách, Hoppe's No. 9 Bore Cleaning zůstává možná nejčastěji používaným řešením. Nicméně mějte na paměti, že olej vyžaduje adekvátní nástroje pro správné rozprostření, aby mohl proniknout do vnitřních mechanismů zbraně. "No. 9" byste tedy měli vnímat spíše jako doplněk než samostatný údržbový předmět.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] vhodné pro všechny zbraně\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] kapalné čisticí rozpouštědlo pro zbraně\n
+	%c[d_orange] • %c[ui_gray_2] použitelné k opravám vybavení\n
+	</text>
+</string>
+<string id="st_cleaning_kit_p">
+	<text>Sada "Progress" pro čištění ručních zbraní</text>
+</string>
+<string id="st_cleaning_kit_p_descr">
+	<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí palné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se při používání nahromadily. Tyto sady jsou v Zóně poměrně často používány k udržování palných zbraní v dobrém stavu. Je možné použít běžné nástroje pro lepší přístup ke vnitřním mechanismům nebo alkohol pro snadnější rozpouštění zbytků oleje. Tato konkrétní sada se hodí pro typické kalibry ručních zbraní.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] zbraně ráže 9 mm, .45 a .357\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k čištění znečištěných dílů (nad 60 stav) u zbraní. Klikněte pravým tlačítkem na zbraň > udržovat díly > čistit díl.\n
+	</text>
+</string>
+	
+
+<string id="st_cleaning_kit_s">
+	<text>"Aurora A108/12" 12 Gauge Cleaning Kit</text>
+</string>
+<string id="st_cleaning_kit_s_descr">
+	<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí palné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se při používání nahromadily. Tyto sady jsou v Zóně poměrně často používány k udržování palných zbraní v dobrém stavu. Je možné použít běžné nástroje pro lepší přístup ke vnitřním mechanismům nebo alkohol pro snadnější rozpouštění zbytků oleje. Tato konkrétní sada se hodí pro brokovnice ráže 12.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] brokovnice ráže 12\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k čištění znečištěných dílů (nad 60 stav) u zbraní. Klikněte pravým tlačítkem na zbraň > udržovat díly > čistit díl.\n
+	</text>
+</string>
+<string id="st_cleaning_kit_r5">
+	<text>"ValuPro III" Cleaning Kit pro střední úsťové ráže</text>
+</string>
+<string id="st_cleaning_kit_r5_descr">
+	<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí palné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se při používání nahromadily. Tyto sady jsou v Zóně poměrně často používány k udržování palných zbraní v dobrém stavu. Je možné použít běžné nástroje pro lepší přístup ke vnitřním mechanismům nebo alkohol pro snadnější rozpouštění zbytků oleje. Tato konkrétní sada se hodí pro střední úsťové ráže s dlouhými hlavněmi a je dodávána v pevném plastovém opakovaně použitelném obalu.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] zbraně ráže 5.45 a 5.56\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k čištění znečištěných dílů (nad 60 stav) u zbraní. Klikněte pravým tlačítkem na zbraň > udržovat díly > čistit díl.\n
+	</text>
+</string>
+<string id="st_cleaning_kit_r7">
+	<text>Sada na čištění pušek středních a velkých úsťových ráží</text>
+</string>
+<string id="st_cleaning_kit_r7_descr">
+	<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí palné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se při používání nahromadily. Tyto sady jsou v Zóně poměrně často používány k udržování palných zbraní v dobrém stavu. Je možné použít běžné nástroje pro lepší přístup ke vnitřním mechanismům nebo alkohol pro snadnější rozpouštění zbytků oleje. Lze je také použít k lepšímu rozmazání zbraňového oleje, avšak většina zkušených stalkerů používá jako alternativní mazivo tuk zvířat. Tato konkrétní sada se hodí pro pušky velkých ráží s velmi dlouhými hlavněmi. Výrobce není známý, ale jejich jednoduchý design a konstrukce a použití vysoce kvalitních materiálů naznačuje vojenský, pravděpodobně speciální původ.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] zbraně ráže 7.62, 7.92, 9x39 a .338\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k čištění znečištěných dílů (nad 60 stav) u zbraní. Klikněte pravým tlačítkem na zbraň > udržovat díly > čistit díl.\n
+	</text>
+</string>
+	
+<string id="st_cleaning_kit_u">
+<text>Univerzální sada na čištění zbraní</text>
+</string>
+<string id="st_cleaning_kit_u_descr">
+   <text>Pokročilá sada na čištění zbraní, která vyhovuje všem běžným kalibrům zbraní. Kromě čištění a údržby lze také použít jako účinný nástroj na opravy. Sada obsahuje malé množství účinného maziva a čisticího rozpouštědla, stejně jako některé lehké nástroje, které usnadňují přístup k vnitřním mechanismům palné zbraně. Pro maximální účinnost lze kombinovat s dalšími materiály nebo specializovanými sadami na opravy.\n \n
+      %c[0,255,255,255]KOMPATIBILITA:\n
+      %c[d_orange] • %c[ui_gray_2] všechny zbraně\n \n
+      %c[0,255,255,255]VLASTNOSTI:\n
+      %c[d_red] • Nelze použít k čištění částí zbraně uvnitř zbraní.\n
+   </text>
+</string>
+	
+<string id="st_repair_kit_p">
+	<text>Sada na opravu ručních pistolí</text>
+</string>
+<string id="st_repair_kit_p_descr">
+	<text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí vybavení a specializované nástroje používané k rozložení a údržbě mechanismů zbraní. Standardně je také dodávána sada základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale je nenahraditelná při pohybu hluboko do Zóny, protože lze v život ohrožujících situacích použít k obnovení použitelnosti palné zbraně. Kvůli rozdílům ve stavbě zbraní lze tuto konkrétní sadu použít pouze k rozložení a opravě zbraní s ručními kalibry. Je také možné zvýšit účinnost sady půjčením určitých materiálů nebo kombinací s jinými sadami během jedné údržbové seance.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] zbraně s kalibrem 9 mm, .45 a .357\n \n
+	 %c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k výměně dílů uvnitř zbraně. Klikněte pravým tlačítkem na zbraň > údržba dílů > výměna požadovaného dílu.\n
+	</text>
+</string>
+
+<string id="st_repair_kit_s">
+	<text>Sada na opravu brokovnic</text>
+</string>
+<string id="st_repair_kit_s_descr">
+	<text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí vybavení a specializované nástroje používané k rozložení a údržbě mechanismů zbraní. Standardně je také dodávána sada základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale je nenahraditelná při pohybu hluboko do Zóny, protože lze v život ohrožujících situacích použít k obnovení použitelnosti palné zbraně. Kvůli rozdílům ve stavbě zbraní lze tuto konkrétní sadu použít pouze k rozložení a opravě zbraní s brokovnicemi kalibru 12. Je také možné zvýšit účinnost sady půjčením určitých materiálů nebo kombinací s jinými sadami během jedné údržbové seance.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] brokovnice kalibru 12\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k výměně dílů uvnitř zbraně. Klikněte pravým tlačítkem na zbraň > údržba dílů > výměna požadovaného dílu.\n
+	</text>
+</string>
+
+<string id="st_repair_kit_r5">
+	<text>Sada na opravu pušek menšího kalibru</text>
+</string>
+<string id="st_repair_kit_r5_descr">
+	<text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí vybavení a specializované nástroje používané k rozložení a údržbě mechanismů zbraní. Standardně je také dodávána sada základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale je nenahraditelná při pohybu hluboko do Zóny, protože lze v život ohrožujících situacích použít k obnovení použitelnosti palné zbraně. Kvůli rozdílům ve stavbě zbraní lze tuto konkrétní sadu použít pouze k rozložení a opravě pušek středního kalibru. Je také možné zvýšit účinnost sady půjčením určitých materiálů nebo kombinací s jinými sadami během jedné údržbové seance.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] zbraně s kalibrem 5.45 a 5.56\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] Lze použít k výměně dílů uvnitř zbraně. Klikněte pravým tlačítkem na zbraň > údržba dílů > výměna požadovaného dílu.\n
+	</text>
+</string>
+	
+<string id="st_repair_kit_r7">
+		<text>Sada na opravu střelných zbraní středního a velkého kalibru</text>
+	</string>
+	<string id="st_repair_kit_r7_descr">
+		<text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí vybavení a specializované nástroje používané k rozložení a údržbě mechanismů zbraní. Standardně je také dodávána sada základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale je nenahraditelná při pohybu hluboko do Zóny, protože lze v život ohrožujících situacích použít k obnovení použitelnosti palné zbraně. Kvůli rozdílům ve stavbě zbraní lze tuto konkrétní sadu použít pouze k rozložení a opravě pušek velkého kalibru. Je také možné zvýšit účinnost sady půjčením určitých materiálů nebo kombinací s jinými sadami během jedné údržbové seance.\n \n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_orange] • %c[ui_gray_2] zbraně s kalibrem 7.62, 7.92, 9x39 a .338\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] • %c[ui_gray_2] Lze použít k výměně dílů uvnitř zbraně. Klikněte pravým tlačítkem na zbraň > údržba dílů > výměna požadovaného dílu.\n
+		</text>
+	</string>
+	
+<string id="st_repair_kit_p_empty">
+	<text>Sada na opravu pistole (prázdná krabice)</text>
+</string>
+<string id="st_repair_kit_p_empty_descr">
+	<text>Prázdná kovová krabice, která dříve obsahovala nástroje a náhradní díly použitelné pro údržbu palných zbraní kalibru 9mm, .45 a .357. I v jejím současném stavu může být užitečná při opravě kovových částí oblečení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+<string id="st_repair_kit_s_empty">
+	<text>Sada na opravu brokovnice (prázdná krabice)</text>
+</string>
+<string id="st_repair_kit_s_empty_descr">
+	<text>Prázdná kovová krabice, která dříve obsahovala nástroje a náhradní díly použitelné pro údržbu palných zbraní kalibru 12ga. I v jejím současném stavu může být užitečná při opravě kovových částí oblečení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+<string id="st_repair_kit_r5_empty">
+	<text>Sada na opravu malorážkové pušky (prázdná krabice)</text>
+</string>
+<string id="st_repair_kit_r5_empty_descr">
+	<text>Prázdná kovová krabice, která dříve obsahovala nástroje a náhradní díly použitelné pro údržbu palných zbraní kalibru 5.45 a 5.56. I v jejím současném stavu může být užitečná při opravě kovových částí oblečení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+	
+<string id="st_repair_kit_r7_empty">
+<text>Střední a velký kalibr opravní sada pro pušky (prázdná krabice)</text>
+</string>
+<string id="st_repair_kit_r7_empty_descr">
+<text>Prázdná kovová krabice, která dříve obsahovala nástroje a náhradní díly použitelné k údržbě pušek velkého kalibru. I v současném stavu se může hodit k opravě kovových částí oděvů.\n \n
+%c[0,255,255,255]VLASTNOSTI:\n
+</text>
+</string>
+	
+<string id="st_sewing_kit_b">
+	<text>Základní šicí sada</text>
+</string>
+<string id="st_sewing_kit_b_descr">
+	<text>Lehká šicí sada skládající se z cívky s nití, několika ocelových jehel a páru nůžek. Může se použít k zacelování střelných děr nebo prasklin v měkkých tkaninách oděvů. Její praktické využití je omezeno krátkou délkou nitě a nedostatečnou odolností jehel, takže sada je k ničemu v případě vážnějších poškození. Z toho důvodu je kompatibilní pouze s několika málo materiály. Nicméně vždy se doporučuje použít cokoli, co je k dispozici, aby byla sada účinnější.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a lehké sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+
+<string id="st_sewing_kit_a">
+	<text>Pokročilá šicí sada</text>
+</string>
+<string id="st_sewing_kit_a_descr">
+	<text>Tato pokročilá sada obsahuje více a lepších šicích příslušenství než její základní protějšek. Dvojité cívky nylonové nitě a široký výběr vyšší kvality jehel ji činí vhodnou pro práci s tlustými a tvrdými materiály, včetně lehkých mutantních kůží a umělých vláken. Také dokáže opravit více poškozené oděvy.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a lehké sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+
+<string id="st_sewing_kit_h">
+	<text>Těžká šicí sada</text>
+</string>
+<string id="st_sewing_kit_h_descr">
+	<text>Tato vojenská třída těžké šicí sady je navržena pro opravu prasklin v ochranných plátech moderních bojových zbrojí. Obsahuje dostatek kovové nitě k sestavení oděvů, které byly doslova roztrhány. Dokáže přišít i nejtvrdší mutantí kůže k vybrané zbroji. Další výhodou sady jsou základní mechanické nástroje, které lze použít k rozebrání oděvů a ochranných přileb za účelem získání materiálů pro opravu. Jedná se o nejkvalitnější šicí sestavu dostupnou v Zóně.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a lehké sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+	
+<string id="st_glue_b">
+<text>Lepicí tuba "Zviezda"</text>
+</string>
+<string id="st_glue_b_descr">
+<text>Nejlevnější syntetická lepidla dostupná v Zóně, toto epoxidové řešení lze použít k slepení mírně roztržených kusů látky nebo k zakrytí malé díry na vaší přilbě, ale je zbytečné v případě vážného poškození. Při pravidelném používání však dokáže udržet váš oděv v dobrém stavu. Doporučuje se používat jakýkoli běžně dostupný materiál k výraznému zvýšení účinnosti opravy. Lepidlo však nepodporuje mutantí kůže. Lze jej také použít k usnadnění šití.\n \n
+%c[0,255,255,255]KOMPATIBILITA:\n
+%c[d_orange] • %c[ui_gray_2] všechny oděvy a lehké sady na hlavu\n \n
+%c[0,255,255,255]VLASTNOSTI:\n
+%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+</text>
+</string>
+
+<string id="st_glue_a">
+	<text>Lepicí tuba "Tur"</text>
+</string>
+<string id="st_glue_a_descr">
+	<text>Pokročilé lepidlo vyrobené ukrajinským chemickým průmyslem, modifikované epoxidové lepidlo "Tur" dokáže rychle spojit většinu pevných materiálů. Všestrannost a snadnost použití jsou dva důvody, proč je "Tur" tak ceněno mezi stalkery, zejména vzhledem k omezenosti náhradních materiálů. Lepidlo spojuje jak textilní látky, tak lehčí ochranné materiály jako Kevlar, ale je zbytečné při práci s kovy.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+
+<string id="st_glue_e">
+	<text>Lepicí tuba "M17"</text>
+</string>
+<string id="st_glue_e_descr">
+	<text>M17 je výsledkem sovětského vojensko-průmyslového výzkumného projektu zaměřeného na vytvoření extrémně účinného lepidla, které by bylo použitelné v jakékoli situaci bez ohledu na účel a materiály zapojené. Téměř neexistuje poškození, které by lepidlo ve spojení s odpovídajícími materiály nedokázalo opravit. Lze jej použít se všemi materiály dostupnými v Zóně.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+
+<string id="st_armor_repair_fa">
+	<text>Sada pro nouzovou opravu zbroje</text>
+</string>
+<string id="st_armor_repair_fa_descr">
+	<text>Sada pro opravu umožňuje uživateli provádět nouzové opravy oděvů. Obsahuje vojenskou pásku a připravené listy silné textilie v různých tvarech a velikostech, které umožňují rychlé zakrytí jakéhokoli poškození oděvu. Toto je zvláště užitečné pro zabránění dalšího strukturálního poškození již poškozených obleků. Kvůli relativně nízké odolnosti poskytovaných materiálů je sada použitelná pouze pro drobné opravy a není účinná při práci s tvrdými materiály jako Kevlar nebo kov. Z tohoto důvodu má sada velmi omezené použití při údržbě hlavového oděvu.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] všechny oděvy a lehké sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] lepící páska\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+
+<string id="st_helmet_repair_kit">
+	<text>Sada pro opravu helmy</text>
+</string>
+<string id="st_helmet_repair_kit_descr">
+	<text>Tato sada obsahuje všechno potřebné pro efektivní opravu moderních bojových přileb. Obsahuje těžké nástroje, které umožní práci s tvrdými materiály jako Kevlar, ocel nebo titan, stejně jako velmi silné lepidlo na methakrylátové bázi. Jelikož sada neobsahuje žádné šicí vybavení, není efektivně využitelná pro opravy flexibilních materiálů oděvů, ale může být použita k rozložení sad na hlavu pro výrazné zlepšení účinnosti opravy.\n \n
+	%c[0,255,255,255]KOMPATIBILITA:\n
+	%c[d_orange] • %c[ui_gray_2] středně těžké a těžké sady na hlavu\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+	</text>
+</string>
+	
+<string id="st_repair_kit">
+    <text>Těžká sada pro opravu oděvu</text>
+</string>
+<string id="st_repair_kit_descr">
+    <text>Tato komplexní a těžká sada obsahuje všechno potřebné pro provádění kompletních oprav na jakémkoli hi-tech oděvu. Obsahuje vysoce odolné nitě a jehly, stejně jako polymerní záplaty, které umožňují opravy bez ohledu na použité materiály, ať už se jedná o těžkou tkaninu nebo kevlarové pláty vojenské kvality. Další nástroje a sady zvyšují účinnost oprav.\n \n
+    %c[0,255,255,255]KOMPATIBILITA:\n
+    %c[d_orange] • %c[ui_gray_2] všechny oděvy a sady na hlavu\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení\n
+    </text>
+</string>
+<string id="st_light_repair_kit">
+    <text>Sada pro opravu lehké zbroje</text>
+</string>
+<string id="st_light_repair_kit_descr">
+    <text>Tato komplexní a těžká sada obsahuje všechno potřebné pro provádění kompletních oprav na jakékoli hi-tech lehké zbroji. Obsahuje vysoce odolné nitě a jehly, stejně jako polymerní záplaty, které umožňují opravy bez ohledu na použité materiály, ať už se jedná o těžkou tkaninu nebo kevlarové pláty vojenské kvality. Další nástroje a sady zvyšují účinnost oprav.\n \n
+    %c[0,255,255,255]KOMPATIBILITA:\n
+    %c[d_orange] • %c[ui_gray_2] velmi lehká a lehká zbroj\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_orange] • %c[ui_gray_2] použitelná k opravě lehké zbroje\n
+    </text>
+</string>
+<string id="st_medium_repair_kit">
+    <text>Sada pro opravu středně těžké zbroje</text>
+</string>
+<string id="st_medium_repair_kit_descr">
+    <text>Tato komplexní a těžká sada obsahuje všechno potřebné pro provádění kompletních oprav na jakékoli hi-tech středně těžké zbroji. Obsahuje vysoce odolné nitě a jehly, stejně jako polymerní záplaty, které umožňují opravy bez ohledu na použité materiály, ať už se jedná o těžkou tkaninu nebo kevlarové pláty vojenské kvality. Další nástroje a sady zvyšují účinnost oprav.\n \n
+    %c[0,255,255,255]KOMPATIBILITA:\n
+    %c[d_orange] • %c[ui_gray_2] středně těžká zbroj\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_orange] • %c[ui_gray_2] použitelná k opravě středně těžké zbroje\n
+    </text>
+</string>
+<string id="st_exolight_repair_kit">
+    <text>Sada pro opravu těžké zbroje</text>
+</string>
+<string id="st_exolight_repair_kit_descr">
+    <text>Tato komplexní a těžká sada obsahuje všechno potřebné pro provádění kompletních oprav na jakékoli hi-tech těžké zbroji. Obsahuje vysoce odolné nitě a jehly, stejně jako polymerní záplaty, které umožňují opravy bez ohledu na použité materiály, ať už se jedná o těžkou tkaninu nebo kevlarové pláty vojenské kvality. Další nástroje a sady zvyšují účinnost oprav.\n \n
+    %c[0,255,255,255]KOMPATIBILITA:\n
+    %c[d_orange] • %c[ui_gray_2] těžká zbroj\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_orange] • %c[ui_gray_2] použitelná k opravě těžké zbroje\n
+    </text>
+</string>
+<string id="st_exo_repair_kit">
+    <text>Sada pro opravu exoskeletonu</text>
+</string>
+<string id="st_exo_repair_kit_descr">
+    <text>Tato komplexní a těžká sada obsahuje všechno potřebné pro provádění kompletních oprav na jakémkoli hi-tech exoskeletonu. Obsahuje vysoce odolné nitě a jehly, stejně jako polymerní záplaty, které umožňují opravy bez ohledu na použité materiály, ať už se jedná o těžkou tkaninu nebo kevlarové pláty vojenské kvality. Další nástroje a sady zvyšují účinnost oprav.\n \n
+    %c[0,255,255,255]KOMPATIBILITA:\n
+    %c[d_orange] • %c[ui_gray_2] jakýkoli exoskeleton\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_orange] • %c[ui_gray_2] použitelná k opravě vybavení exoskeletonu\n
+    </text>
+</string>
+<string id="st_leatherman_tool">
+    <text>Víceúčelový nástroj</text>
+</string>
+<string id="st_leatherman_tool_descr">
+    <text>Obyčejný, ale funkční víceúčelový nástroj, používaný k rozložení zbraní a zbrojí na jednotlivé díly a k údržbě opotřebovaných a rezavých spoušťových mechanismů.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_purple] • %c[ui_gray_2] nástroj pro demontáž\n
+    %c[d_cyan] • %c[ui_gray_2] sada nástrojů\n
+    %c[d_orange] • %c[ui_gray_2] použitelný k údržbě součástí zbraní\n
+    </text>
+</string>
+<string id="st_rasp_tool">
+    <text>Pilník</text>
+</string>
+<string id="st_rasp_tool_descr">
+    <text>Pilník, používaný k obnovení součástí zbraní, jako jsou opotřebované nebo rezavé hlavně nebo závěry.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] sada nástrojů\n
+    %c[d_orange] • %c[ui_gray_2] použitelný k údržbě součástí zbraní\n
+    </text>
+</string>
+<string id="st_ramrod_tool">
+    <text>Sada na čištění hlavní</text>
+</string>
+<string id="st_ramrod_tool_descr">
+    <text>Starý ramrod skládající se ze tří dřevěných částí, používaný k obnovení součástí, jako jsou opotřebované nebo rezavé hlavně a plynové trubky.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] sada nástrojů\n
+    %c[d_orange] • %c[ui_gray_2] použitelný k údržbě součástek zbraní\n
+    </text>
+</string>
+
+<string id="st_sewing_thread">
+    <text>Základní nit na šití</text>
+</string>
+<string id="st_sewing_thread_descr">
+    <text>Tato nit na šití je vyrobena z různých materiálů, včetně bavlny, lnu, nylonu a hedvábí. Každý Stalker ví, že není snadné se vyhnout roztržení látky v důsledku drsného prostředí v Zóně. Uložit si pár nití na dlouhé výpravy je moudrý nápad.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] běžný předmět\n
+    %c[d_orange] • %c[ui_gray_2] použitelný k údržbě dílů oděvu\n
+    </text>
+</string>
+<string id="st_heavy_sewing_thread">
+    <text>Sada pro opravu brnění</text>
+</string>
+<string id="st_heavy_sewing_thread_descr">
+    <text>Pokročilá sada nástrojů pro šití a utěsnění retardantů. Obsahuje kevlarovou nit, jednu z nejsilnějších a nejodolnějších komerčně dostupných nití vůči teplu. Je asi 2,5krát silnější než nylon a polyester, téměř se natahuje, neroztavuje se a rozkládá se při teplotě 800 °F (426 °C). To z ní činí skvělou volbu pro aplikace s vysokým namáháním, včetně šití švů na oděvech pro těžké podmínky.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] sada nástrojů\n
+    %c[d_orange] • %c[ui_gray_2] použitelný k údržbě dílů oděvu\n
+    </text>
+</string>
+</string_table>

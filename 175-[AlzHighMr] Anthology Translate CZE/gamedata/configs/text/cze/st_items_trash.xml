@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	odpad/Misc Items
+-->
+
+<string_table>
+	<string id="st_jar">
+<text>Plastová dóza</text>
+	</string>
+	<string id="st_jar_descr">
+		<text>
+Malá plastová dóza. Takové dózy se vždy hodí k bezpečnému uchovávání drobných předmětů, zejména léků a drog. Chrání obsah před vlhkostí nebo jinými nečistotami přenášenými vzduchem.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_e_syringe">
+		<text>Prázdná injekční stříkačka</text>
+	</string>
+	<string id="st_e_syringe_descr">
+		<text>Lékařská injekční stříkačka o objemu 12 ml. Se sadou na výrobu léků a správnými znalostmi se tato stříkačka může hodit k výrobě různých druhů drog.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_rope">
+		<text>Lano</text>
+	</string>
+	<string id="st_rope_descr">
+		<text>
+		Dobré lano slouží k mnoha účelům, zejména na místě, jako je Zóna. Mnoho stalkerů ho může dobře využít, což přináší poměrně vysokou obchodní hodnotu. Je dlouhé asi 10 metrů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_porn">
+		<text>Ruský PLAYBOY</text>
+	</string>
+	<string id="st_porn_descr">
+		<text>100 stran prvotřídních nahých ruských dívek. Běžný kontraband mezi branci, zločinci a dalšími nešťastníky, kteří proti své vůli uvízli v Zóně. Někteří lidé ze Západu o tom žertují a říkají: "Z Ruska s láskou".\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_survivalguide">
+		<text>Příručka pro přežití ukrajinských speciálních jednotek</text>
+	</string>
+	<string id="st_survivalguide_descr">
+		<text>Tuto příručku pro přežití jste studovali již mnohokrát. Z tohoto důvodu nemá žádnou vzdělávací hodnotu, ale měli byste ji být schopni prodat za nějakou rychlou hotovost. Někteří pronásledovatelé se na ni možná budou chtít podívat.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_guitar_name">
+		<text>Kytara</text>
+	</string>
+	<string id="st_guitar_descr">
+		<text>Kytara je strunný nástroj hojně používaný stalkery všech frakcí v celé Zóně za účelem zvýšení nálady a sbratření. Stalkery lze často vidět hrát na kytaru v táborech, na základnách nebo na jiných místech relativního bezpečí - obvykle u ohně.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] hudební zábava\n
+		%c[d_orange] - %c[ui_gray_2] lze hrát\n
+		</text>
+	</string>
+
+	<string id="st_harmonica_name">
+		<text>Harmonika</text>
+	</string>
+	<string id="st_harmonica_descr">
+		<text>Pro milovníky blues a vězeňské romantiky.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] hudební zábava\n
+		%c[d_orange] - %c[ui_gray_2] lze hrát\n
+		</text>
+	</string>
+
+	<string id="st_steel_wool">
+		<text>Ocelová vlna</text>
+	</string>
+	<string id="st_steel_wool_descr">
+		<text>Ocelová vlna, známá také jako drátěná vlna nebo drátěná houba, je svazek vláken z velmi jemných měkkých ocelových vláken. Používá se jako brusivo při dokončovacích a opravárenských pracích při leštění dřevěných nebo kovových předmětů, čištění nádobí pro domácnost a broušení při lehkém malování. Ocelová vlna se vyrábí z nízkouhlíkové oceli (obsah uhlíku je natolik nízký, že se blíží obyčejnému železu). Nevyrábí se protahováním "drátu ocelové vlny" kuželovou matricí, ale spíše procesem podobným protahování, kdy se těžký ocelový drát protahuje ozubenou matricí, která odstraňuje tenkou drátěnou hoblinu. Svazky ocelové vlny lze použít při přesném čištění zařízení a ke zlepšení roztírání maziv a čisticích rozpouštědel.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		</text>
+	</string>
+	
+	<string id="st_grease">
+		<text>Průmyslové mazivo</text>
+	</string>
+	<string id="st_grease_descr">
+		<text>Mazivo je polotuhé mazivo. Obvykle se skládá z mýdla emulgovaného s minerálním nebo rostlinným olejem. Maziva se používají na mechanismy, které nelze mazat trvale nebo kde by typický mazací olej nezůstal na svém místě. Fungují také jako těsnicí prostředky, které zabraňují pronikání vody a nestlačitelných materiálů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		</text>
+	</string>
+	
+	<string id="st_shovel_old">
+<text>Kovová lopatka</text>
+	</string>
+	<string id="st_shovel_old_descr">
+<text>Stará kovová lopatka používaná k různým polním účelům. Málokdo má ve skutečnosti lopatu v batohu, protože se v Zóně, zejména v průmyslových oblastech, vyskytuje zcela běžně.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_shovel_mili">
+		<text>Vojenská polní lopata</text>
+	</string>
+	<string id="st_shovel_mili_descr">
+		<text>Vysoce kvalitní vojenská lopata. Používá se k mnoha polním účelům.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_meinkampf">
+		<text>Mein Kampf</text>
+	</string>
+	<string id="st_meinkampf_descr">
+		<text>Strategické paměti Adolfa Hitlera shromážděné v jedné knize. Knihu a vše, co představuje, mnozí nenávidí, což z ní činí předmět vysoké symbolické hodnoty.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_journal">
+		<text>Osobní deník</text>
+	</string>
+	<string id="st_journal_descr">
+		<text>Deník vázaný v kůži. Některé stránky nejsou ještě použité, a proto mohou na trhu vynést nějakou minci.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+
+	
+	<string id="st_maps_kit">
+		<text>Sada pro tvorbu map</text>
+	</string>
+	<string id="st_maps_kit_descr">
+		<text>Sada pro tvorbu map obsahující sadu per a měřicích přístrojů. Vše ve voděodolném a maskovaném obalu vysoké kvality. Používaná a vydávaná ukrajinským dělostřeleckým personálem. Některé mapy ještě nebyly dokončeny. Váš PDA je mnohem užitečnější než cokoli z toho.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_welding_goggles">
+		<text>Svařovací brýle</text>
+	</string>
+	<string id="st_welding_goggles_descr">
+		<text>Svářečské brýle se starým koženým páskem. Svářečské brýle jsou určeny k ochraně očí při svařování nebo řezání. V současném stavu jsou nepoužitelné a mají malou hodnotu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_survival_kit">
+		<text>Malá sada pro přežití</text>
+	</string>
+	<string id="st_survival_kit_descr">
+		<text>Sada pro přežití obsahující látku, šicí jehly a několik kožených proužků. Primárně se používá jako prostředek k zastavení krvácení a ošetření tržných ran, v rukou zkušeného uživatele se však tato malá souprava pro přežití může ukázat jako nezbytná při delších výpravách do Zóny. Lze ji také použít k opravě výstroje i při nejtěžších poškozeních.\n \n
+		%c[0,255,255,255]HEALING:\n
+		%c[d_green] - %c[ui_gray_2] Obnovuje 3,6 %hp/s, celkem 162 %\n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_green] - %c[ui_gray_2] okamžitě zastaví silné krvácení\n
+		%c[d_red] - %c[ui_gray_2] prodlužuje dobu zotavení těla\n
+		%c[d_cyan] - %c[ui_gray_2] po uzdravení %c[ui_gray_2] T%c[0,250,250,0]-------- %c[ui_gray_2]A%c[0,250,250,0]--- %c[ui_gray_2]L%c[0,250,250,0]--- \n
+		</text>
+	</string>
+	
+	<string id="st_jewelry_box">
+		<text>Zdobená šperkovnice</text>
+	</string>
+	<string id="st_jewelry_box_descr">
+		<text>Malá krabička, která obsahuje precizně zpracované šperky. Ačkoli není neobvyklé, že slídilové pytlačí kopyta, rohy nebo zuby mutantů v Zóně, jen pár vyvolených je natolik zručných, aby z takových materiálů vyrobili takovýto poklad. Jen málo slídilů však o takové cetky stojí a jen málo obchodníků se zabývá vývozem takových ozdob.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_book1">
+		<text>Příručka pro mechaniky</text>
+	</string>
+	<string id="st_book1_descr">
+		<text>Příručka strojního inženýrství. Někteří lidé čtou takové knihy, aby si rozšířili své odborné znalosti a dozvěděli se více o zařízeních a továrnách v zóně. Nízká prodejní hodnota.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_book2">
+		<text>Inženýrská příručka</text>
+	</string>
+	<string id="st_book2_descr">
+		<text>Příručka průmyslového inženýrství. Někteří lidé čtou takové knihy, aby si rozšířili své odborné znalosti a dozvěděli se více o zařízeních a továrnách v zóně. Nízká prodejní hodnota.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_drugnotes">
+		<text>Poznámky k distribuci léčiv</text>
+	</string>
+	<string id="st_drugnotes_descr">
+		<text>Tento zápisník podrobně popisuje různé obchody s drogami. Konkrétní přezdívky, místa a časy schůzek. Některé obchody jsou realizovány prostřednictvím výměny vybavení a jiné jsou placeny velkým množstvím rublů. Při prohlížení stránek je zřejmé, že Svoboda je hlavním distributorem přírodních drog, například marihuany. Bandité jsou výrobci a distributoři silnějších (a nebezpečnějších) syntetických drog, jako je kyselina salicylová a kokain. Těchto obchodů se zjevně účastní všechny frakce v Zóně. Zdá se, že zejména Monolit odebírá velké množství drog výměnou za dražší druhy munice a vybavení.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		</text>
+	</string>
+	
+	<string id="st_picture_woman">
+		<text>Fotografie milované</text>
+	</string>
+	<string id="st_picture_woman_descr">
+		<text>Tato fotografie obsahuje jemně vykreslenou postavu, která se na vás povzbudivě usmívá. Velká pozornost byla věnována osvětlení a atmosféře kolem osoby v záběru, což dokládá promyšlenou, pozorovací něhu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_porn2">
+		<text>Ukrajinský MAXIM</text>
+	</string>
+	<string id="st_porn2_descr">
+		<text>Tento časopis je dobře opotřebovaný, ale stále obsahuje několik lesklých příloh krásných slovanských dívek. Mnoho stránek bylo vytrženo. Někteří slídilové se přou, zda je vtipné, nebo smutné, že nováčci přinášejí takové věci na místo tak smrtící a vznešené, jako je Zóna.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_boots">
+		<text>Kožené boty</text>
+	</string>
+	<string id="st_boots_descr">
+		<text>Každý si je vědom důležitosti kvalitní výstroje. Pár bot navíc se může ukázat jako velmi užitečný a může být předmětem závisti ostatních slídilů, protože je takovou vzácností.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_dead_empty">
+		<text>Staré baterie (Prázdné)</text>
+	</string>
+	<string id="st_batteries_dead_empty_descr">
+		<text>Tyto baterie byly zcela vyčerpány bez ohledu na energii, kterou kdysi měly. Jejich jedinou hodnotou je množství kovu, ze kterého jsou vyrobeny.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_empty">
+		<text>Baterie (Prázdné)</text>
+	</string>
+	<string id="st_batteries_empty_descr">
+		<text>Tyto baterie byly zcela vyčerpány bez ohledu na energii, kterou kdysi měly. Jejich jedinou hodnotou je množství kovu, ze kterého jsou vyrobeny.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_ccell_empty">
+		<text>Vojenská bateriová jednotka (Prázdná)</text>
+	</string>
+	<string id="st_batteries_ccell_empty_descr">
+		<text>Prázdná jednotka vojenské baterie. Pokud jsou plné, jsou velmi cenné a je po nich vysoká poptávka vzhledem k relativnímu nedostatku baterií v Zóně. Tato je bohužel vybitá a nemá téměř žádnou hodnotu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_flashlight_broken">
+		<text>Rozbitá svítilna</text>
+	</string>
+	<string id="st_flashlight_broken_descr">
+		<text>Sklo je prasklé a ani lepicí páska by nedokázala udržet baterie na místě. Tato baterie již nemá žádnou hodnotu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_underwear">
+		<text>Spodní prádlo</text>
+	</string>
+	<string id="st_underwear_descr">
+		<text>Přídavný pár spodního prádla může podstatně zvýšit vaše pohodlí. Historie tohoto páru je bohužel neznámá. Ačkoli se mohou zdát bezcenné, materiál, z něhož je spodní prádlo vyrobeno, může být použit při údržbě zbroje a zbraní.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_spareparts">
+		<text>Náhradní díly ke zbraním</text>
+	</string>
+	<string id="st_wpn_spareparts_descr">
+		<text>Náhradní díly pro něco, co vypadá jako útočná puška AKM. Dřevěné díly nejsou v příliš dobrém stavu a totéž lze říci o kovových prvcích. O jejich koupi by měli zájem pouze začátečníci. Zdá se však, že mohou být užitečné pro opravy vybavení.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_beadspread">
+		<text>Postelový rošt</text>
+	</string>
+	<string id="st_beadspread_descr">
+		<text>Luxusní položka v zóně. Vzhledem k tomu, že v bezpečných domech v Zóně je jen několik postelí, může se ukázat, že mít spací pytel a přehoz je nezbytné, pokud nechceš narazit do zdi za těch nejnevhodnějších okolností. Postelové rošty jsou součástí vybavení některých vojenských jednotek.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_walkie">
+		<text>Ruční vysílačka</text>
+	</string>
+	<string id="st_walkie_descr">
+		<text>Displej je mrtvý a z reproduktoru se neustále ozývá syčení, které naznačuje, že je to k ničemu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_cards">
+<text>Balíček karet</text>
+	</string>
+	<string id="st_cards_descr">
+		<text>Hraní karet je oblíbenou zábavou, ale balíček karet lze použít i pro třídění speciálních obchodů. Na obálce je vyobrazen hrdý architektonický návrh moskevského metra.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_mili_maps">
+		<text>Armádní mapy</text>
+	</string>
+	<string id="st_mili_maps_descr">
+		<text>Mapy zobrazující umístění vojenských táborů v okolí Zóny. Každý PDA je dodáván s těmito mapami, takže tato položka je pro někoho málo užitečná.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_headlamp">
+		<text>Stará čelovka</text>
+	</string>
+	<string id="st_headlamp_descr">
+		<text>Ačkoli se málokdo odváží prozkoumávat Zónu v noci, existují okolnosti, kdy je čelová lampa nezbytná. Bohužel tato konkrétní jednotka už dávno dosloužila a nyní může sloužit pouze jako zdroj levných náhradních dílů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_mirror">
+		<text>Teleskopické zrcadlo</text>
+	</string>
+	<string id="st_mirror_descr">
+		<text>Malé zrcátko upevněné na teleskopické železné trubce. Šikovný předmět používaný bojovníky zběhlými v umění městského boje, protože umožňuje nahlédnout za roh, aniž by byl postřelen.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_hammer">
+		<text>Staré kladivo</text>
+	</string>
+	<string id="st_hammer_descr">
+		<text>Kladivo s dřevěnou rukojetí a železnou hlavou. Častý jev v průmyslových oblastech Zóny. Navzdory své velké hmotnosti se často nosí v batohu kvůli své univerzálnosti.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+
+	<string id="st_tarpaulin">
+<text>Kamuflážní plachta</text>
+	</string>
+	<string id="st_tarpaulin_descr">
+		<text>
+		Plachta (nebo také hootch) je velká plachta z pevného, pružného, voděodolného nebo nepromokavého materiálu, často z látky, jako je plátno nebo polyester potažený uretanem, nebo z plastu, jako je polyethylen. V rozích a po stranách má zesílené průchodky, které tvoří upevňovací body pro lana a umožňují jejich přivázání nebo zavěšení. Slouží k mnoha účelům, ale používá se hlavně k vytváření malých a jednoduchých úkrytů podobných stanům. Obchodní hodnota je nízká vzhledem ke snadno dostupným alternativám.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_synthrope">
+		<text>Syntetická lana</text>
+	</string>
+	<string id="st_synthrope_descr">
+		<text>
+		Syntetická lana se běžně vyskytují ve vojenských skladech. Z nějakého důvodu je však jen málo vojenských slídilů skutečně nosí. Dobré lano slouží k mnoha účelům, zejména na místě, jako je Zóna. Mnoho slídilů ho může dobře využít, což vytváří poměrně vysokou obchodní hodnotu. Každé z nich je dlouhé asi 5 metrů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_cutlery">
+		<text>Polní příbory</text>
+	</string>
+	<string id="st_cutlery_descr">
+		<text>
+		Lžíce, nůž a vidlička z těžké oceli. Robustní a přiměřeně lehká sada příborů, ideální pro putování s batohem a průzkum v terénu. Příbor drží pohromadě měděná šňůrka.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_radio">
+<text>Rozbité rádio</text>
+	</string>
+	<string id="st_radio_descr">
+		<text>
+		Malé rádio ve špatném stavu. Špinavé a poškozené vlhkostí. Vnitřek se zdá být v dost špatném stavu, protože rádio při pohybu chrastí. Žádná až malá hodnota.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_radio2">
+		<text>Malý kazeťák</text>
+	</string>
+	<string id="st_radio2_descr">
+		<text>
+		Hudba je dobrý způsob, jak uklidnit nervy. ale s rozbitou anténou je tento kazeťák málo platný. Hodí se hlavně na náhradní díly.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_broken_detector">
+<text>Rozbitý detektor</text>
+	</string>
+	<string id="st_broken_detector_descr">
+		<text>
+		Rozbitý detektor Bear. Obrazovka je rozbitá a vnitřek se zdá být v dost špatném stavu. Některé elektronické součástky uvnitř jsou stále bezpečné. Mohou být znovu použity pro účely opravy nebo možná i při výrobě." \n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_gloves">
+		<text>Kožené rukavice</text>
+	</string>
+	<string id="st_gloves_descr">
+		<text>
+		Pár kožených rukavic. Působí příjemně na dotek a voní, jako by byly zakoupeny nedávno. Když se ochladí, je důležité mít ruce v teple a připravené.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_hand_watch">
+		<text>Ruční hodinky</text>
+	</string>
+	<string id="st_hand_watch_descr">
+		<text>
+		Staré, klasické sovětské hodinky "raketa3". Vypadají, že jsou stále v dobrém stavu. Není divu, že mnoho stalkerů dává pro obvyklou kontrolu času přednost mechanickým hodinkám před PDA. Vzhledem k tomu, že tyto hodinky jsou spolehlivé a odolné i v těch nejhorších situacích, hodí se tam, kde PDA selhávají kvůli silným elektromagnetickým vlnám pocházejícím z emisí nebo blízkých anomálních polí. Někteří je však prostě nosí jako stylový doplněk.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] lze použít ke kontrole času\n
+		</text>
+	</string>
+	
+	<string id="st_ball_hammer">
+<text>Kladivo</text>
+	</string>
+	<string id="st_ball_hammer_descr">
+		<text>
+		Známé také jako strojnické kladivo. Kuličkové kladivo je typ kuličkového kladiva používaný při obrábění kovů. Jeho pořízením pro drobné opravy nikdy nic nezkazíte.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+	
+	<string id="st_duct_tape">
+		<text>Izolační páska</text>
+	</string>
+	<string id="st_duct_tape_descr">
+		<text>
+		Lepicí páska se běžně používá v situacích, které vyžadují pevnou, pružnou a velmi lepivou pásku. Snadné a dočasné řešení pro rychlé opravy. Tento typ má také dlouhotrvající lepidlo a odolnost vůči povětrnostním vlivům.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] základní materiál\n
+		%c[d_cyan] - %c[ui_gray_2] odpad\n
+		</text>
+	</string>
+
+
+	
+<!-- unused -->
+	<string id="ammo12x70_base_name">
+		<text>Ammo components for 12x70 shot rounds</text>
+	</string>
+	<string id="ammo12x70_base_descr">
+		<text>Powder, shells and shot - everything needed to make 12x70 buckshot rounds. Has enough to make 40 rounds.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]used for crafting ammunition\n%c[0,253,155,155] • %c[0,240,140,140]requires tools</text>
+	</string>
+	<string id="ammo12x70_tools_name">
+		<text>Tools for manufacturing 12x70 shot rounds</text>
+	</string>
+	<string id="ammo12x70_tools_descr">
+		<text>Tools necessary for making 12x70 buckshot rounds. 12x70.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]used for crafting ammunition\n
+		%c[d_cyan] • %c[ui_gray_2]odpad\n</text>
+	</string>
+	<string id="sew_tools_name">
+		<text>Sewing kit</text>
+	</string>
+	<string id="sew_tools_descr">
+		<text>Needles and cloth scraps. Everything you need to make cloth items.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]Crafting Tools\n
+		%c[d_cyan] • %c[ui_gray_2]Common</text>
+	</string>
+	<string id="sleepbag_base_name">
+		<text>Sleeping bag components</text>
+	</string>
+	<string id="sleepbag_base_descr">
+		<text>Everything needed to make a sleeping bag.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]Crafted Items\n
+		%c[0,253,155,155] • %c[0,240,140,140]Sewing kit needed</text>
+	</string>
+	<string id="backpack_base_name">
+		<text>Backpack components</text>
+	</string>
+	<string id="backpack_base_descr">
+		<text>Rubberized fabric, zippers and rivets. Everything needed to craft a backpack.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]Crafted Items\n
+		%c[0,253,155,155] • %c[0,240,140,140]Sewing kit needed</text>
+	</string>
+	<string id="selfroll_1_name">
+		<text>Tobacco rolls</text>
+	</string>
+	<string id="selfroll_1_descr">
+		<text>Loose tobacco, filters and paper.\n \n
+		%c[ui_gray_2]VLASTNOSTI:\n
+		%c[0,253,155,155] • %c[0,240,140,140]May cause cancer\n
+		%c[d_cyan] • %c[ui_gray_2]Homemade</text>
+	</string>
+	<string id="st_itm_cutting_tools">
+		<text>Master disassembly tools</text>
+	</string>
+	<string id="st_itm_cutting_tools_descr">
+		<text>Factory made tools designed to disassemble anything.\n \n%c[ui_gray_3]VLASTNOSTI:\n%c[0,155,155,155] • %c[ui_gray_2]Crafting Tools\n%c[0,255,1,1] • %c[0,100,250,100]Works on high tech gear</text>
+	</string>
+	<string id="st_itm_cutting_tools_2">
+		<text>Journeyman disassembly tools</text>
+	</string>
+	<string id="st_itm_cutting_tools_2_descr">
+		<text>A rusted set of tools for medium armor disassembly.\n \n%c[ui_gray_3]VLASTNOSTI:\n%c[0,155,155,155] • %c[ui_gray_2]Crafting Tools\n%c[0,255,1,1] • %c[0,100,250,100]Works on medium armor</text>
+	</string>
+	<string id="st_itm_cutting_tools_3">
+		<text>Basic disassembly tools</text>
+	</string>
+	<string id="st_itm_cutting_tools_3_descr">
+		<text>Improvised tools designed for fabric or light gas masks.\n \n%c[ui_gray_3]VLASTNOSTI:\n%c[0,155,155,155] • %c[ui_gray_2]Crafting Tools\n%c[0,255,1,1] • %c[0,100,250,100]Works on light armor and gas masks</text>
+	</string>
+	<string id="plate_seva_name">
+		<text>SEVA plate</text>
+	</string>
+	<string id="plate_seva_descr">
+		<text>An armoured plate carved from a SEVA suit. Able to stop small bullets and gives some elemental resistance. Can be used for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_heavy_name">
+		<text>Heavy "ESAPI" plate</text>
+	</string>
+	<string id="plate_heavy_descr">
+		<text>A ceramic-composite plate that provides class 4 protection. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_medium_name">
+		<text>Medium "SAPI" plate</text>
+	</string>
+	<string id="plate_medium_descr">
+		<text>An armoured plate that provides class 3 protection. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_light_name">
+		<text>Homemade plate</text>
+	</string>
+	<string id="plate_light_descr">
+		<text>Hand-made armoured plate using Kevlar and aramid. Provides class 2 protection. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_cloth_name">
+		<text>Light cloth plate</text>
+	</string>
+	<string id="plate_cloth_descr">
+		<text>Hand made Kevlar and fabric plate. Provides class 1 protection. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_military_name">
+		<text>Granite-4M plate</text>
+	</string>
+	<string id="plate_military_descr">
+		<text>Military heavy armoured plate composed of ceramics. Provides class 5 protection. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_monolith_name">
+		<text>Unknown plate</text>
+	</string>
+	<string id="plate_monolith_descr">
+		<text>An armoured plate composed of unknown materials. Seems to be made of solid alloy and some fabric. Extremely heavy. Provides class 5 protection (in field tests). Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_unload_name">
+		<text>Ammo pouch</text>
+	</string>
+	<string id="plate_unload_descr">
+		<text>A cut out ammo pouch, used to store magazines. Made of dense and high-quality fabric.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="plate_small_name">
+		<text>Small armoured plate</text>
+	</string>
+	<string id="plate_small_descr">
+		<text>A small homemade armoured plate, likely made of melted down scrap. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="cloth_green_name">
+		<text>Green cloth</text>
+	</string>
+	<string id="cloth_green_descr">
+		<text>Green fabric, cut from a green suit. Very high quality and dense fabric. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="cloth_black_name">
+		<text>Black cloth</text>
+	</string>
+	<string id="cloth_black_descr">
+		<text>Black fabric, cut from a black suit. Very high quality and dense fabric. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="cloth_brown_name">
+		<text>Brown cloth</text>
+	</string>
+	<string id="cloth_brown_descr">
+		<text>Brown fabric, cut from a brown suit. Very high quality and dense fabric. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="cloth_white_name">
+		<text>White cloth</text>
+	</string>
+	<string id="cloth_white_descr">
+		<text>White fabric, cut from a white suit. Very high quality and dense fabric. Can be used as a repair material.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="servomotor_name">
+		<text>Servo drive</text>
+	</string>
+	<string id="servomotor_descr">
+		<text>A servo taken from an exoskeleton. Looks like it could be replaced with a repair kit.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] âűńîęîtechnological item\n
+		</text>
+	</string>
+	<string id="plastic_pieces_name">
+		<text>Plastic scraps</text>
+	</string>
+	<string id="plastic_pieces_descr">
+		<text>Bits and pieces of dense plastic, carved from a suit. Can be used for patches or repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="glass_pieces_name">
+		<text>Glass</text>
+	</string>
+	<string id="glass_pieces_descr">
+		<text>Pieces of glass cur from gas masks or helmets. Can replace broken glass in almost any helmet with the right tools.\n \n%c[ui_gray_3]VLASTNOSTI:\n \n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_spareparts">
+		<text>Old shotgun parts</text>
+	</string>
+	<string id="st_spareparts_descr">
+		<text>Old wood and metal parts from various smooth bore rifles, all in varying condition. Some of this could be useful for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_sov_r_spareparts">
+		<text>Soviet automatic rifle parts</text>
+	</string>
+	<string id="st_sov_r_spareparts_descr">
+		<text>Old springs, barrels and stocks from various soviet rifles, all in varying condition. Some of this could be useful for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_nato_r_spareparts">
+		<text>NATO automatic rifle parts</text>
+	</string>
+	<string id="st_nato_r_spareparts_descr">
+		<text>Old barrels, frames and stocks for various NATO automatic rifles, all in varying condition. Some of this could be useful for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_sov_p_spareparts">
+		<text>Soviet pistol parts</text>
+	</string>
+	<string id="st_sov_p_spareparts_descr">
+		<text>Old springs, hammers and frames from various soviet pistols. Some of this could be useful for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_nato_p_spareparts">
+		<text>NATO pistol parts</text>
+	</string>
+	<string id="st_nato_p_spareparts_descr">
+		<text>Old springs, hammers and frames from various NATO pistols. Some of this could be useful for repairs.\n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_sov_s_spareparts">
+		<text>Soviet sniper rifle parts</text>
+	</string>
+	<string id="st_sov_s_spareparts_descr">
+		<text>Old soviet long rifle parts. Some of this could be used for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_nato_s_spareparts">
+		<text>NATO sniper rifle parts</text>
+	</string>
+	<string id="st_nato_s_spareparts_descr">
+		<text>Old NATO sniper rifle parts. Some of this could be used for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_shot_spareparts">
+		<text>Shotgun parts</text>
+	</string>
+	<string id="st_shot_spareparts_descr">
+		<text>Relatively new parts designed for smooth barrel rifles. This could be used for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_pp_spareparts">
+		<text>Submachine Gun Parts</text>
+	</string>
+	<string id="st_pp_spareparts_descr">
+		<text>Springs, frames and stocks designed for submachineguns. This could be used for repairs.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n
+		</text>
+	</string>
+	<string id="st_deactivate_mix">
+		<text>Homemade Antiseptic</text>
+	</string>
+	<string id="st_deactivate_mix_descr">
+		<text>A mixture of tablets and solvents proven effective in neutralising radiation and bio-hazardous materials. Good for decontaminating items.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]Decontaminates items\n
+		%c[d_cyan] • %c[ui_gray_2]Homemade</text>
+	</string>
+	<string id="st_barrelkit_shotgun">
+		<text>Shotgun Barrel Replacement</text>
+	</string>
+	<string id="st_barrelkit_shotgun_descr">
+		<text>Specialised kit for replacing shotgun barrels in the field. Includes all tools and barrels.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] technological item\n</text>
+	</string>
+	<string id="st_vodka_4">
+		<text>Jagermeister Liqueur</text>
+	</string>
+	<string id="st_vodka_4_descr">
+		<text>A German strong herbal liqueur. Made with 56 components and aged for 12 months in oak barrels. The label of the bottle depicts a deer with a cross on it's horns. According to legend, the deer was seen by Saint Hubert, the patron saint of hunters.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2] Strong alcoholic beverage\n
+		%c[d_cyan] • %c[ui_gray_2] Causes dizziness</text>
+	</string>
+	<string id="st_selfroll_base_1_name">
+		<text>Paper, tobacco and filters.</text>
+	</string>
+	<string id="st_selfroll_base_1_descr">
+		<text>Tobacco, filters and paper, everything needed to make cigarettes. This should make about six to seven.\n \n%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_cyan] • %c[ui_gray_2]Crafted Items</text>
+	</string>
+</string_table>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+<!-- Griffith (Mercs leader in the Bookstore) -->
+<string id="grifon_meet_dialog_0">
+	<text>Viděl jsem vaši zprávu. Jak to, že se z tebe stal takový dobrák?</text>
+</string>
+<string id="grifon_meet_dialog_1">
+	<text>...Nepokoušej štěstí. Jediný důvod, proč tady vůbec stojíš, je ten, že se všechno posralo. Ztratili jsme několik důležitých lidí, kteří se tu potulovali, a nebyli jsme schopni najít pro nás potřebné informace. Kdybychom se vrátili k Dushmanovi, utrhne nám koule a nacpe je přímo do chřtánu, a proto jsme se prozatím usadili tady. V tuhle chvíli nevidím důvod, proč bojovat s náhodnými stalkery.</text>
+</string>
+<string id="grifon_meet_dialog_2">
+	<text>Jakou pomoc potřebujete?</text>
+</string>
+<string id="grifon_meet_dialog_3">
+	<text>Jakoukoli. Nemáme tu žádné zásoby, žádné standardní vybavení - jen to, co se nám podaří najít po úspěšných operacích. Můžeš si také promluvit s naším dodavatelem; za poplatek se stebou podělí o nějaké přebytečné vybavení.</text>
+</string>
+
+<string id="task_find_inf_inx_8_mlr_1_0">
+	<text>Máš nějaké speciální úkoly?</text>
+</string>
+<string id="task_find_inf_inx_8_mlr_1_1">
+	<text>Vlastně jsme sem přišli získat informace z laboratoře X8, která se nachází poblíž servisního centra Yubileiny severně odsud; uvnitř byl výtah, který nám umožnil sjet do "mínus prvního patra", ale vyrušila nás ta zasraná armáda. To kvůli nim jsme skončili takhle hluboko ve sráčích. Dushman nás stejně zabije, ale třeba tam zůstalo pár dokumentů... alespoň bychom měli něco užitečného, s čím bychom mohli odejít. Vydal bych se tam s klukama znovu, ale už nás moc nezbývá a bylo by toho na nás moc, protože bychom raději neutráceli víc lidí, než je nutné, abychom se nějak dostali z centra té zasrané Zóny. Možná bys mohl zamířit dolů do X8 - tam by mohlo něco zbýt, no a... zároveň si vyděláš nějaké slušné peníze. Chceš tam jít?</text>
+</string>
+<string id="task_find_inf_inx_8_mlr_1_2">
+	<text>Jdu.</text>
+</string>
+<string id="task_find_inf_inx_8_mlr_1_3">
+	<text>Ne, díky.</text>
+</string>
+
+<string id="task_find_inf_inx_8_mlr_2_0">
+	<text>Tady je to, co se mi podařilo najít.</text>
+</string>
+<string id="task_find_inf_inx_8_mlr_2_1">
+	<text>Strom papíru se nezdá být příliš tlustý... Přesto je zde několik zajímavých bodů. Nebude těžké najít kupce pro takový nález. Tady je váš podíl.</text>
+</string>
+
+
+
+
+
+<string id="tech_a18_meet_dialog_0">
+	<text>Jsi místní technik, že? Jaké služby nabízíš?</text>
+</string>
+<string id="tech_a18_meet_dialog_1">
+	<text>To je správně. Mohu poskytnout opravárenský servis a munici, kterou naši hoši čas od času najdou při náletech, výměnou za cizí munici, kterou nám kdo přinese. Máme i nějakou zahraniční a poměr výměny za všechno kromě hlavic RPG je jedna ku jedné. Zbraně, které máme, jsou všechny v pořádku, ale pár lidí raději používá domácí střelné zbraně, do kterých je munice víc - mít čím střílet nám pomáhá udržet se naživu a v pohodě. Mohu vám také poskytnout projektily RPG a podhlavní granáty M209, které jsme dostali v hojném počtu pro plnění úkolů, i když bohužel k nim nemáme žádné další granátomety. Zdravotnickou pomoc mohu také poskytnout.</text>
+</string>
+
+<string id="tech_a18_meet_dialog_1_0">
+	<text>Jaké druhy munice vyměňuješ?</text>
+</string>
+<string id="tech_a18_meet_dialog_1_1">
+	<text>Mám dvě stě nábojů 9x19, které mohu vyměnit za stejný počet nábojů 9x18 +P+, asi tři sta nábojů 5,56x45 výměnou za náboje 5,45x39, dvacet granátů F1 za stejné množství granátů M209 a deset granátů RGD-5 výměnou za tři hlavice RPG.</text>
+</string>
+
+<string id="tech_a18_meet_dialog_2_0">
+	<text>Myslím, že provedu výměnu.</text>
+</string>
+<string id="tech_a18_meet_dialog_2_1">
+	<text>Skvěle. Co máš?</text>
+</string>
+<string id="tech_a18_meet_dialog_2_2">
+	<text>Vezmu si sto nábojů 9x19 výměnou za sto nábojů 9x18 +P+.</text>
+</string>
+<string id="tech_a18_meet_dialog_2_3">
+	<text>Přijmu sto nábojů 5,56x45 výměnou za sto nábojů 5,45x39.</text>
+</string>
+<string id="tech_a18_meet_dialog_2_4">
+	<text>Vezmu dvacet granátů F1 výměnou za dvacet granátů M209.</text>
+</string>
+<string id="tech_a18_meet_dialog_2_5">
+	<text>Přijmu deset granátů RGD-5 výměnou za tři hlavice RPG.</text>
+</string>
+<string id="tech_a18_meet_dialog_2_6">
+	<text>Změnil jsem názor.</text>
+</string>
+
+<!-- Meeker -->
+
+	<string id="pri_special_trader_mlr1_0">
+    <text>Kdo jsi?</text>
+</string>
+<string id="pri_special_trader_mlr1_1">
+    <text>Nový klient... Chápej, že mě nezajímá, kdo jsi a odkud jsi - ty si vybereš, co potřebuješ z nabídky, a počkáš přesně jeden den, dokud nedostanu zboží. Navíc nepřijímám rozbité kousky a ostatní hovadiny - nemám čas na hry, a pracování bez záloh. Všechno bude přesně na čas, a můžeš si objednat maximálně jeden kus.</text>
+</string>
+
+<string id="pri_special_trader_mlr4_0">
+    <text>Jak spolupracujete s Monolitem a jak se vám daří získat tak jedinečnou zbroj a zbraně?</text>
+</string>
+<string id="pri_special_trader_mlr4_1">
+    <text>Pokud mě nezajímáš, měla by to být vzájemná pohoda, že ano? Řeknu ti to jen pro tvoje uklidnění: Jsem zprostředkovatel. Máš štěstí, že jsem se rozhodl s tebou spolupracovat, protože si mohu vybírat své klienty. Věř mi.</text>
+</string>
+
+<string id="pri_special_trader_mlr2_0">
+    <text>Chci vytvořit objednávku.</text>
+</string>
+<string id="pri_special_trader_mlr2_1">
+    <text>Vyber si, co tě zajímá.</text>
+</string>
+<string id="pri_special_trader_mlr2_2">
+    <text>Pistole.</text>
+</string>
+<string id="pri_special_trader_mlr2_7">
+    <text>Pamatuj, můžeš si vybrat pouze jednu. Tady.</text>
+</string>
+<string id="pri_special_trader_mlr2_8">
+    <text>Steppe Eagle - ručně vyrobená pistole na základě designu Desert Eagle. Jemně naladěna pro dosažení neuvěřitelné přesnosti. Bude tě stát osm tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_11">
+    <text>Dostaneš ode mě zprávu na svůj PDA přesně za dvacet čtyři hodin.</text>
+</string>
+<string id="pri_special_trader_mlr2_9">
+    <text>Alpine - upravený SIG P220 s prodlouženým zásobníkem. Bude tě stát šedesát pět tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_10">
+    <text>March - upravený UDP Compact, velký kalibr a rychlopalba. Bude tě stát sedm tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_3">
+    <text>Kulomety a samopaly.</text>
+</string>
+<string id="pri_special_trader_mlr2_28">
+    <text>Dobře. Vyber si jednu z následujících.</text>
+</string>
+<string id="pri_special_trader_mlr2_12">
+    <text>Frasier - ručně vyrobený samopal na základě MP5. Zvětšený kalibr, vylepšené vlastnosti oproti standardnímu modelu. Bude tě stát devět tisíc pět set.</text>
+</string>
+<string id="pri_special_trader_mlr2_13">
+    <text>Carabiner - armádně upravený SPAS-12 s redukovaným zpětným rázem a automatickým režimem střelby. Bude tě stát jedenáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_14">
+    <text>Armsel Protecta - brokovnice na základě konstrukce brokovnice Striker. Bude tě stát sedmnáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_15">
+    <text>Nenašel jsem, co jsem hledal.</text>
+</string>
+<string id="pri_special_trader_mlr2_4">
+    <text>Odstřelovací a útočné pušky.</text>
+</string>
+<string id="pri_special_trader_mlr2_29">
+    <text>Tady je, co mám - vyber si jednu.</text>
+</string>
+<string id="pri_special_trader_mlr2_16">
+    <text>Storm - upravený OTs-14 Groza vyráběný pro speciální jednotky Spetsnaz, tajně pronikl mezi širokou veřejnost. Jednou z výhod je zvýšená kapacita zásobníku. Bude tě stát devatenáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_17">
+    <text>HK G36 - vzácný pohled v Zóně. Bude tě stát čtrnáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_18">
+    <text>FN F2000. Belgičská rarita a slušná útočná puška. Bude tě stát sedmnáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_19">
+    <text>The Tide - exkluzivní úprava VSS Vintorez. Nižší kadence, ale zvýšená zastavovací síla. Bude tě stát dvacet tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_20">
+    <text>SVU2-A - evoluce odstřelovací pušky SVUmk-2. Tato zbraň patřila Maxovi, legendárnímu strážci svobody. Bude tě stát dvacet čtyři tisíce.</text>
+</string>
+<string id="pri_special_trader_mlr2_21">
+    <text>SVD Lynx - armádní modifikace kombinující zvýšenou přesnost a zastavovací sílu. Bude tě stát osmnáct tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_27">
+    <text>Gaussova puška. Trofejní zbraň - počet těchto kousků v Zóně můžete spočítat na prstech jedné ruky. Absolutní přesnost a poškození s téměř žádným zpětným rázem v ceně. Cena je sto padesát tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_5">
+    <text>Obleky.</text>
+</string>
+<string id="pri_special_trader_mlr2_30">
+    <text>Dobře, vyberte si jeden.</text>
+</string>
+<string id="pri_special_trader_mlr2_22">
+    <text>Exoskelet Monolitu - nejlepší kombinace ochranných vlastností. Navíc to nezískáte nikde jinde, pokud nejste určitým zástupcem bratrstva. Cena je sto tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_23">
+    <text>Exoskelet žoldáků - možná jedno z nejspolehlivějších prostředků ochrany. Bude tě stát sedmdesát pět tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_24">
+    <text>Exoskelet bandity. Exkluzivita v čisté podobě. Bude tě stát šedesát pět tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_25">
+    <text>Oblek Monolitu s uzavřeným dýchacím systémem; stejně jako exoskelet, je málo pravděpodobné, že ho uvidíš jinde. Cena je sedmdesát tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_26">
+    <text>Žoldácký oblek s uzavřeným dýchacím systémem. Vynikající ochrana před anomáliemi a skutečná rarita pro průměrného stalkera. Bude tě stát padesát tisíc.</text>
+</string>
+<string id="pri_special_trader_mlr2_6">
+    <text>Rozmyslel jsem si to.</text>
+</string>
+
+
+	<string id="pri_special_trader_mlr3_0">
+    <text>Obdržel jsem tvou zprávu, je moje objednávka připravena?</text>
+</string>
+<string id="pri_special_trader_mlr3_1">
+    <text>Ano, doufám, že máš peníze na to, abys sis to mohl dovolit. [%s RU], pokud si nepamatuji.</text>
+</string>
+<string id="pri_special_trader_mlr3_2">
+    <text>Ano, dej mi Steppe Eagle. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_20">
+    <text>Přijďte zase.</text>
+</string>
+<string id="pri_special_trader_mlr3_3">
+    <text>Vezmu si SIG-220 Alpine. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_4">
+    <text>Dejte mi USP March. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_5">
+    <text>Rád bych MP-5 Frasier. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_6">
+    <text>Dám si objednat Carabiner. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_7">
+    <text>Dovol mi se stát majitelem Protecty. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_8">
+    <text>Dám objednávku na OT-14 Storm. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_9">
+    <text>Nechtěl bych HK G36. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_10">
+    <text>FN-2000 zní jako pěkná volba. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_11">
+    <text>Určitě chci VSS Tide. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_12">
+    <text>SVU2-A, hm? Jistě. Tady máš peníze.</text>
+</string>
+
+		<string id="pri_special_trader_mlr3_13">
+    <text>Dám si tu SVD Lynx. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_14">
+    <text>Vezmu ten exoskelet Monolitu. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_15">
+    <text>Dejte mi žoldácký exoskelet. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_16">
+    <text>Hodím nějaké peníze na ten exoskelet banditů. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_17">
+    <text>Potřeboval jsem ten Monolith SEVA oblek. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_18">
+    <text>Dejte mi žoldácký SEVA oblek. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_19">
+    <text>Gaussova puška. Hned teď. Tady máš peníze.</text>
+</string>
+<string id="pri_special_trader_mlr3_21">
+    <text>Ehm... Ještě ne. Pracuji na tom.</text>
+</string>
+
+
+
+
+<!-- Monolith Mechanic in the Yubileiny service center -->
+<string id="mechanic_monolith_kbo_start_0">
+	<text>Zdravím tě, bratře. Plním Jeho vůli tím, že zachovávám vybavení našeho bratrstva.</text>
+</string>
+
+<string id="meet_guid_prikbo_mon_0">
+	<text>Na která místa mohu cestovat, bratře?</text>
+</string>
+<string id="meet_guid_prikbo_mon_1">
+	<text>Já osobně tě doprovodit nemohu, ale naši bratři ti mohou ukázat, kam máš jít - za poplatek. Máme připravené pozice v Rudém lese, Jupiteru a Pripyati. Rádi ti kdykoli pomůžeme.</text>
+</string>
+
+<string id="meet_guid_prikbo_mon_list_0">
+	<text>Kam mě mohou průvodci zavést?</text>
+</string>
+<string id="meet_guid_prikbo_mon_list_1">
+	<text>Do Rudého lesa za pět tisíc rublů, Jupiteru za dva tisíce a Pripyati za tisíc.</text>
+</string>
+
+<string id="travel_guid_prikbo_mon_0">
+	<text>Rád bych někam cestoval.</text>
+</string>
+<string id="travel_guid_prikbo_mon_mon_1">
+	<text>Jistě. Kam bys chtěl, aby tě průvodci vzali?</text>
+</string>
+<string id="travel_guid_prikbo_mon_mon_2">
+	<text>Do Rudého lesa. %c[d_orange][5000 RU]</text>
+</string>
+<string id="travel_guid_prikbo_mon_mon_3">
+	<text>K Jupiteru. %c[d_orange][2000 RU]</text>
+</string>
+<string id="travel_guid_prikbo_mon_mon_4">
+	<text>Do Pripyati. %c[d_orange][1000 RU]</text>
+</string>
+<string id="travel_guid_prikbo_mon_mon_5">
+	<text>Rozmyslel jsem si to.</text>
+</string>
+
+
+
+	
+<!---- Charon, in the basement of the Palace of Culture --->
+<string id="meet_guid_l11pri_mon_haron_0">
+	<text>Mohu někam cestovat, bratře?</text>
+</string>
+<string id="meet_guid_l11pri_mon_haron_1">
+	<text>Jistě. Mohu požádat naše bratry, aby tě vedli - výměnou za dar bratrstvu. Mohou tě vzít na předměstí Pripjati východně odtud, na Jupiter na západě a do Rudého lesa, který se nachází na jihozápadě.</text>
+</string>
+
+<string id="meet_guid_l11pri_mon_haron_list_0">
+	<text>Na která místa mohu cestovat, bratře?</text>
+</string>
+<string id="meet_guid_l11pri_mon_haron_list_1">
+	<text>Jsou cesty do Předměstí na východ odsud, na Jupiter na západě a do Rudého lesa, který se nachází na jihozápadě.</text>
+</string>
+
+<string id="travel_guid_l11pri_mon_haron_0">
+	<text>Rád bych někam cestoval.</text>
+</string>
+<string id="travel_guid_l11pri_mon_haron_1">
+	<text>Na jaké místo se chceš vydat, bratre?</text>
+</string>
+<string id="travel_guid_l11pri_mon_haron_2">
+	<text>Na Předměstí. %c[d_orange][1000 RU]</text>
+</string>
+<string id="travel_guid_l11pri_mon_haron_3">
+	<text>Na Jupiter. %c[d_orange][1000 RU]</text>
+</string>
+<string id="travel_guid_l11pri_mon_haron_4">
+	<text>Do Rudého lesa. %c[d_orange][5000 RU]</text>
+</string>
+<string id="travel_guid_l11pri_mon_haron_5">
+	<text>Změnil jsem názor.</text>
+</string>
+
+<string id="find_blackbox_mlr_reward_haron_0">
+	<text>Bratre, pod troskami vrtulníku jsem našel zařízení pro záznam letu.</text>
+</string>
+<string id="find_blackbox_mlr_reward_haron_1">
+	<text>Těší mě to. S tímhle budou nevěřící hořet.</text>
+</string>
+
+
+
+<!-- Guide in eastern Pripyat -->
+<string id="meet_guid_pri_stalker_0">
+	<text>Jsi průvodce, že?</text>
+</string>
+<string id="meet_guid_pri_stalker_1">
+	<text>Ano, říkají mi Turista. Rád se toulám po špatně zmapovaných oblastech a hledám tajné stezky, o kterých ostatní stalkerové nevědí. Každopádně tady je, kam tě mohu vzít: do Jaderné elektrárny za dvanáct tisíc rublů, do Pripjati za tři tisíce, na stanici Janov v Jupiteru za čtyři tisíce, do Radaru za osm tisíc, do Jupiterova podzemí za pouhý jeden tisíc a do Zatonu přes Garryho za čtyři tisíce.</text>
+</string>
+
+<string id="meet_guid_pri_stalker_list_0">
+	<text>Kam že cestuješ?</text>
+</string>
+<string id="meet_guid_pri_stalker_list_1">
+	<text>Do Jaderné elektrárny za dvanáct tisíc rublů, do Pripyati za tři tisíce, na stanici Janov v Jupiteru za čtyři tisíce, do Radaru za osm tisíc, do Jupiterova podzemí jen za tisíc a do Zatonu přes Garryho za čtyři tisíce.</text>
+</string>
+
+<string id="travel_guid_pri_stalker_0">
+	<text>Chci využít tvých služeb.</text>
+</string>
+<string id="travel_guid_pri_stalker_1">
+	<text>Kam?</text>
+</string>
+<string id="travel_guid_pri_stalker_2">
+	<text>Do černobylské jaderné elektrárny. %c[d_orange][12000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_3">
+	<text>Do Pripyati. %c[d_orange][3000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_4">
+	<text>K Radaru. %c[d_orange][8000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_5">
+	<text>K Jupiteru. %c[d_orange][4000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_6">
+	<text>Do podzemí Jupiteru. %c[d_orange][1000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_7">
+	<text>Do Zatonu. %c[d_orange][4000 RU]</text>
+</string>
+<string id="travel_guid_pri_stalker_8">
+	<text>Změnil jsem názor.</text>
+</string>
+
+
+<string id="monolith_eidolon_st_1">
+	<text>Jsem Eidolon. Vyvolený Monolitú. Byl jsem to já, kdo obnovil funkci vypalovače mozku. Pod vedením Monolitu. Žádal jsem o audienci a bylo mi vyhověno. Obdarován darém. Jasné vidění, krystal. Chranit, trestat. Sloužit té největší věci. Prohledávám Zónu a hledám nebezpečné nevěřníky. Nevědomé blázny, kteří nás chtějí zničit, zničit vsemocný Monolit. Učím je, kážu. Svými zbraněmi. Svou požehnanou myslí. Vnímám je, jak utíkají a skrývají se. Marně. Marně, neboť vnímám. Pronásleduji je. Níčím, abych chránil ve jménu Monolitu.</text>
+</string>
+
+</string_table>

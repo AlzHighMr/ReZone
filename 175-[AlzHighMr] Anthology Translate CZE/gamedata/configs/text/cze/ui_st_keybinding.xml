@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	
+<string id="kb_grp_direction">
+	<text>Směr</text>
+</string>
+<string id="kb_left">
+	<text>Vlevo</text>
+</string>
+<string id="kb_right">
+	<text>Vpravo</text>
+</string>
+<string id="kb_up">
+	<text>Nahoru</text>
+</string>
+<string id="kb_down">
+	<text>Dolu</text>
+</string>
+<string id="kb_grp_movement">
+	<text>Pohyb</text>
+</string>
+<string id="kb_forward">
+	<text>Dopředu</text>
+</string>
+<string id="kb_backward">
+	<text>Zpět</text>
+</string>
+<string id="kb_left_strafe">
+	<text>Doleva</text>
+</string>
+<string id="kb_right_strafe">
+	<text>Doprava</text>
+</string>
+<string id="kb_jump">
+	<text>Skok</text>
+</string>
+<string id="kb_crouch">
+	<text>Přikrčit se</text>
+</string>
+<string id="kb_walk">
+	<text>Chůze/nízké přikrčení</text>
+</string>
+<string id="kb_sprint">
+	<text>Běh</text>
+</string>
+<string id="kb_left_lookout">
+	<text>Vyklopení vlevo</text>
+</string>
+<string id="kb_right_lookout">
+	<text>Vyklopení vpravo</text>
+</string>
+<string id="kb_freelook">
+	<text>Volný pohled</text>
+</string>
+	
+<string id="kb_grp_weapons">
+	<text>Zbraně</text>
+</string>
+<string id="kb_weapon1">
+	<text>Zbraň 1</text>
+</string>
+<string id="kb_weapon2">
+	<text>Zbraň 2</text>
+</string>
+<string id="kb_weapon3">
+	<text>Zbraň 3</text>
+</string>
+<string id="kb_weapon4">
+	<text>Granát</text>
+</string>
+<string id="kb_weapon5">
+	<text>Dalekohled</text>
+</string>
+<string id="kb_weapon6">
+	<text>Šroub</text>
+</string>
+<string id="kb_wpn_next">
+	<text>Výběr munice</text>
+</string>
+<string id="kb_next_slot">
+	<text>Další zbraň</text>
+</string>
+<string id="kb_prev_slot">
+	<text>Předchozí zbraň</text>
+</string>
+<string id="kb_fire">
+	<text>Střelba</text>
+</string>
+<string id="kb_zoom">
+	<text>Přiblížit</text>
+</string>
+<string id="kb_reload">
+	<text>Přebít</text>
+</string>
+<string id="kb_func">
+	<text>Podhlavňový granátomet</text>
+</string>
+<string id="kb_firemode_next">
+	<text>Další režim střelby</text>
+</string>
+<string id="kb_firemode_prev">
+	<text>Předchozí režim střelby</text>
+</string>
+<string id="kb_suppressor">
+	<text>Tlumič</text>
+</string>
+<string id="kb_grenade_throw">
+	<text>Rychlý hod granátem</text>
+</string>
+<string id="kb_unload_all">
+	<text>Vybít všechny zbraně</text>
+</string>
+<string id="kb_lower_weapon">
+	<text>Snížit/zvednout zbraň</text>
+</string>
+<string id="kb_grp_inventory">
+	<text>Inventář</text>
+</string>
+<string id="kb_inventory">
+	<text>Inventář</text>
+</string>
+<string id="kb_torch">
+	<text>Svítilna</text>
+</string>
+<string id="kb_detector">
+	<text>Detektor</text>
+</string>
+<string id="kb_night_vision">
+	<text>Noční vidění</text>
+</string>
+<string id="kb_geiger">
+	<text>Geigerův Počítač</text>
+</string>
+<string id="kb_mask_clean">
+	<text>Očistit masku</text>
+</string>
+<string id="kb_drop">
+	<text>Zahodit předmět</text>
+</string>
+<string id="kb_quick_use_1">
+	<text>Rychlý slot (1)</text>
+</string>
+<string id="kb_quick_use_2">
+	<text>Rychlý slot (2)</text>
+</string>
+<string id="kb_quick_use_3">
+	<text>Rychlý slot (3)</text>
+</string>
+<string id="kb_quick_use_4">
+	<text>Rychlý slot (4)</text>
+</string>
+	<string id="kb_item_anim">
+		<text>Animace</text>
+	</string>
+
+<string id="kb_grp_pda">
+	<text>PDA</text>
+</string>
+<string id="kb_active_jobs">
+	<text>PDA</text>
+</string>
+<string id="kb_scores">
+	<text>Informace o úkolu</text>
+</string>
+<string id="kb_radio">
+	<text>Spustit/zastavit rádio</text>
+</string>
+<string id="kb_music_player">
+	<text>Spustit/zastavit přehrávač</text>
+</string>
+<string id="kb_volume_up">
+	<text>Hlasitost +</text>
+</string>
+<string id="kb_volume_down">
+	<text>Hlasitost -</text>
+</string>
+<string id="kb_next_track">
+	<text>Následující stopa</text>
+</string>
+<string id="kb_prev_track">
+	<text>Předchozí skladba</text>
+</string>
+<string id="kb_switch_playlist">
+	<text>Přepnutí kanálu/playlistu</text>
+</string>
+<string id="kb_grp_companions">
+	<text>Společníci</text>
+</string>
+<string id="kb_companion_wheel">
+	<text>Kolečko společníků</text>
+</string>
+<string id="kb_companion_combat">
+	<text>Režim boje</text>
+</string>
+<string id="kb_companion_movement">
+	<text>Režim pohybu</text>
+</string>
+<string id="kb_companion_move">
+	<text>Přesun k bodu</text>
+</string>
+<string id="kb_companion_cover">
+	<text>Režim krytí</text>
+</string>
+<string id="kb_companion_loot">
+	<text>Režim lootování</text>
+</string>
+
+<string id="kb_grp_common">
+	<text>Všeobecný</text>
+</string>
+<string id="kb_use">
+	<text>Použití</text>
+</string>
+<string id="kb_hud">
+	<text>Přepnout HUD</text>
+</string>
+<string id="kb_cam_1">
+	<text>Pohled první osoby</text>
+</string>
+<string id="kb_cam_2">
+	<text>Pohled třetí osoby (1)</text>
+</string>
+<string id="kb_cam_3">
+	<text>Pohled třetí osoby (2)</text>
+</string>
+<string id="kb_cam_autoaim">
+	<text>3. osoba auto-aim</text>
+</string>
+<string id="kb_console">
+	<text>Konzole</text>
+</string>
+<string id="kb_debugger">
+	<text>Debugger</text>
+</string>
+<string id="kb_pause">
+	<text>Pauza</text>
+</string>
+<string id="kb_quit">
+	<text>Ukončit</text>
+</string>
+<string id="kb_screenshot">
+	<text>Snímek obrazovky</text>
+</string>
+	
+<!-- Not used -->
+
+<string id="kb_contacts">
+	<text>Kontakty v PDA</text>
+</string>
+<string id="kb_grp_multiplayer">
+	<text>Multiplayer</text>
+</string>
+<string id="kb_map">
+	<text>Mapa</text>
+</string>
+<string id="kb_pda">
+	<text>PDA</text>
+</string>
+<string id="kb_repair">
+	<text>Oprava</text>
+</string>
+<string id="kb_skin_menu">
+	<text>Nabídka pro výběr modelu</text>
+</string>
+<string id="kb_team_menu">
+	<text>Menu pro výběr týmu</text>
+</string>
+<string id="kb_turn_engine">
+	<text>Aktivovat</text>
+</string>
+<string id="kb_use_bandage">
+	<text>Rychlé obvázání</text>
+</string>
+<string id="kb_use_medkit">
+	<text>Rychlá lékárnička</text>
+</string>
+<string id="kb_vote_begin">
+	<text>Začít hlasování</text>
+</string>
+<string id="kb_vote_menu">
+	<text>Hlasovat</text>
+</string>
+<string id="kb_vote_no">
+	<text>Volit "Ne"</text>
+</string>
+<string id="kb_vote_yes">
+	<text>Volit "Ano"</text>
+</string>
+<string id="speech_menu_group">
+	<text>Hlasové zprávy (1)</text>
+</string>
+<string id="speech_menu_personal">
+	<text>Hlasové zprávy (2)</text>
+</string>
+<string id="kb_buy_menu">
+	<text>Nákupní menu</text>
+</string>
+<string id="kb_chat">
+	<text>Chat</text>
+</string>
+<string id="kb_chat_team">
+	<text>Týmový chat</text>
+</string>
+<string id="kb_crouch_toggle">
+	<text>Přepínač přikrčení</text>
+</string>
+<string id="kb_wpn_prev">
+	<text>Předchozí zbraň tohoto typu</text>
+</string>
+<string id="kb_alife_command">
+	<text>Příkaz k útoku</text>
+</string>
+<string id="kb_artefakt">
+	<text>Artefakt</text>
+</string>
+<string id="kb_binoculars">
+	<text>Binokulární dalekohled</text>
+</string>
+
+</string_table>
