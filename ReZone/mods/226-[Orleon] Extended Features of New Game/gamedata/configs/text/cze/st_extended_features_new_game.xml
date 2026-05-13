@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+	<string id="st_cap_check_blackroad_mode">
+		<text>Režim Blackroad</text>
+	</string>
+	<string id="st_mm_ck_blackroad_mode_desc">
+		<text>
+			%c[0,150,150,150]Kdo jsem a kde to jsem?\n
+			\nV tomto režimu se objevíš na náhodném nebezpečném místě, v noci a skoro bez vybavení.\n
+			\nTato volba se dobře doplňuje s režimy Ironman, Survival nebo Příběhový režim.\n
+			\n \n%c[200,200,50,50]• %c[0,150,150,150]Nekompatibilní s režimem Warfare.
+			\n \n%c[200,200,50,50]• %c[0,150,150,150]Nekompatibilní s režimem Azazel.
+		</text>
+	</string>
+	<string id="st_cap_check_treasurehunt_mode">
+		<text>Režim Honba za pokladem</text>
+	</string>
+	<string id="st_mm_ck_treasurehunt_mode_desc">
+		<text>
+			%c[0,150,150,150]
+			\nV tomto režimu budou vybavení a předměty v „neoznačených“ skrýších chybět, stejně jako ve Shadow of Chernobyl, ale obsah „označených“ skrýší bude bohatší.\n
+			\n%c[d_orange]• %c[0,150,150,150]Značně ztěžuje hru v rané fázi!
+		</text>
+	</string>
+	<string id="st_cap_check_fortuneswheel_mode">
+		<text>Režim Kola štěstí</text>
+	</string>
+	<string id="st_mm_ck_fortuneswheel_mode_desc">
+		<text>
+			\n%c[0,150,150,150]V tomto režimu svěříte svůj osud náhodě, bohyni štěstí - Fortuně. Čas od času vám přinese radost a bohatství, nebo naopak bolest a utrpení.\n
+			\n%c[d_green]• %c[0,150,150,150]Kompatibilní se všemi herními režimy!
+		</text>
+	</string>
+
+	<string id="st_cap_list_fortuneswheel_interval">
+		<text>Interval</text>
+	</string>
+	<string id="st_mm_list_fortuneswheel_interval_desc">
+		<text>
+			%c[0,150,150,150]Povinná funkce pro režim Kolo štěstí, která nastavuje časový interval, po jehož uplynutí Fortuna pokaždé rozhodne o vašem osudu.
+			\n%c[200,200,50,50]• %c[0,150,150,150]Herní režim Kolo štěstí musí být aktivován.
+		</text>
+	</string>
+	
+	<string id="st_achievement_25_name">
+		<text>True STALKER</text>
+	</string>
+	<string id="st_achievement_25_hint">
+		<text>Prošel jsi ohněm, vodou a měděnými trubkami...</text>
+	</string>
+	<string id="st_achievement_25_descr">
+		<text>JSI ĎÁBEL Z PEKLA!!! Jsi ten, kdo v tomto světě vzdoroval smrti a nezastavil se před ničím. Dokonce i tvůj osud ti leží u nohou, jen abys přežil! Gratulujeme!</text>
+	</string>
+	<string id="st_achievement_25_unlock">
+		<text>Odemknul jsi achievement „True STALKER“.</text>
+	</string>
+	<string id="ui_mm_prst_gameplay_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mm_prst_economy_suicide">
+		<text>Hardcore</text>
+	</string>
+	
+	<string id="st_af_belial_name">
+		<text>Belial</text>
+	</string>
+	<string id="st_af_belial_descr">
+		<text>Tento artefakt pochází přímo z pekla!!! Jsi první, komu se sám Ďábel rozhodl darovat nesmrtelnost! Teď tě nic nezastaví a nikdo se ti nevyrovná silou. Artefakt prostupuje celou tvou duší slabým hlasem, a tento hlas opakuje jen jedno slovo... \n \nBELIAL... \n \n</text>
+	</string>
+	
+	<string id="st_fortuneswheel_header">
+		<text>Časovač:</text>
+	</string>
+	<string id="st_fortuneswheel_gift_1">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- ZDRAVÍ %c[red]SNÍŽENO!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_2">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- JSI %c[green]UZDRAVEN!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_3">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- PENÍZE %c[red]UKRADENY!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_4">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[green]- DOSTAL JSI PENÍZE!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_5">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- PŘEDMĚTY %c[red]UKRADENY!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_6">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- ZÍSKAL JSI %c[green]PŘEDMĚTY!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_7">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[red]- V BLÍZKOSTI SE OBJEVILI NEPŘÁTELÉ!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_71">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[red]- V BLÍZKOSTI SE OBJEVILI MUTANTI!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_8">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[red]- ZTRATIL JSI VĚDOMÍ!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_9">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[red]- NĚCO STRAŠNÉHO SE BLÍŽÍ...
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_10">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- JSI %c[red]OPILÝ!
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_11">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- STAV VYBAVENÍ %c[green]ZVÝŠEN NA:
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_111">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO!%c[default] \n
+		- STAV VYBAVENÍ %c[red]SNÍŽEN NA:
+		</text>
+	</string>
+	<string id="st_fortuneswheel_gift_12">
+		<text>%c[orange]KOLO ŠTĚSTÍ SE ROZTOČILO! \n
+		%c[green]- BYLY UDĚLENY KOORDINÁTY SKRÝŠÍ V POČTU:
+		</text>
+	</string>
+
+	<string id="st_econ_4">
+		<text>Hardcore
+		</text>
+	</string>
+
+
+</string_table>
