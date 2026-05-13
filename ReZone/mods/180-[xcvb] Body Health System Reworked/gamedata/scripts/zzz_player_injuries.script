@@ -1,0 +1,909 @@
+
+local damagescale = zzz_player_injuries_mcm.get_config("damage_scale")
+local regen = zzz_player_injuries_mcm.get_config("regen") 	-- Automatic blue health regeneration (in game minutes, each tick will heal 1 random limb for 1 hp)
+local enable_display = zzz_player_injuries_mcm.get_config("enable_display")
+local display_numeric_at = zzz_player_injuries_mcm.get_config("numeric_at")				-- if medicine heal for this value or more then show it as number
+local show_numeric_always = zzz_player_injuries_mcm.get_config("numeric_always")		-- always show medicine values as numbers
+
+local hud_type = zzz_player_injuries_mcm.get_config("hud_type")
+local alt_mode_health = zzz_player_injuries_mcm.get_config("alt_mode_health")
+local mcm_pos_x = zzz_player_injuries_mcm.get_config("position_x")
+local mcm_pos_y = zzz_player_injuries_mcm.get_config("position_y")
+local vanilla_bars = zzz_player_injuries_mcm.get_config("vanilla_bars")
+
+local custom_colors = zzz_player_injuries_mcm.get_config("custom_colors")
+local clr_main_r = zzz_player_injuries_mcm.get_config("clr_main_r")
+local clr_main_g = zzz_player_injuries_mcm.get_config("clr_main_g")
+local clr_main_b = zzz_player_injuries_mcm.get_config("clr_main_b")
+
+local clr_timed_r = zzz_player_injuries_mcm.get_config("clr_timed_r")
+local clr_timed_g = zzz_player_injuries_mcm.get_config("clr_timed_g")
+local clr_timed_b = zzz_player_injuries_mcm.get_config("clr_timed_b")
+
+local def_clr_t = {
+	["default"] = { main = { 90, 140, 215 }, timed = { 230, 200, 15 } },
+	["eft"] = { main = { 255, 255, 255 }, timed = { 50, 255, 50 } },
+}
+
+local ctime_to_t = utils_data.CTime_to_table
+local t_to_ctime = utils_data.CTime_from_table
+
+local prev_health
+local damaged_limb
+local preview_sec
+local timedhp_timer
+local heal_timer
+
+
+maxhp = {
+	head = 11,
+	torso = 11,
+	leftarm = 5,
+	rightarm = 5,
+	leftleg = 5,
+	rightleg = 5
+}
+
+health = {
+	head = maxhp.head,
+	torso = maxhp.torso,
+	leftarm = maxhp.leftarm,
+	rightarm = maxhp.rightarm,
+	leftleg = maxhp.leftleg,
+	rightleg = maxhp.rightleg
+}
+
+timedhp = {
+	head = 0,
+	torso = 0,
+	leftarm = 0,
+	rightarm = 0,
+	leftleg = 0,
+	rightleg = 0,
+}
+
+--TIMED
+medkits = {
+
+	eft_cmskit =       {head = 11, torso = 11},
+	eft_survkit =      {rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	eft_alusplint =    {rightarm = 3, leftarm = 3},
+	eft_splint =       {rightleg = 3, leftleg = 3},
+	eft_afak =         {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+
+--	medkit =            {head = 1, torso = 1},
+	medkit_army =       {head = 1, torso = 1},
+--	medkit_scientic =   {head = 4, torso = 4},
+	caffeine =          {head = 2},
+	morphine =          {head = 8, torso = 5, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	rebirth =           {head = 11, torso = 11, rightleg = 5, leftleg = 5, rightarm = 5, leftarm = 5},
+	adrenalin =         {head = 10, torso = 10, rightleg = 5, leftleg = 5, rightarm = 5, leftarm = 5},
+	cocaine =           {head = 8, torso = 4, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	analgetic =         {head = 3, torso = 3, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+	salicidic_acid =    {head = 5, torso = 5, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	stimpack =          {head = 5, torso = 5, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	stimpack_army =     {head = 5, torso = 7, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	stimpack_scientic = {head = 6, torso = 9, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	
+--    yadylin =            {rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+--    akvatab =            {head = 3, torso = 3},
+    drug_sleepingpills = {head = 5},
+}
+
+-- fullhealth
+healhelp = {
+
+	eft_cmskit =       {head = 11, torso = 11},
+	eft_survkit =      {rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	eft_alusplint =    {rightarm = 1, leftarm = 1},
+	eft_splint =       {rightleg = 1, leftleg = 1},
+	eft_afak =         {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+
+--	medkit =            {head = 5, torso = 5, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	medkit_army =       {head = 1, torso = 1, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+--	medkit_scientic =   {head = 10, torso = 8, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+
+    caffeine =         {head = 2},
+
+	drug_antidot =      {head = 4, torso = 2},
+	drug_booster =      {torso = 6},
+	drug_coagulant =    {torso = 3},
+	drug_psy_blockade = {head = 5, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+	drug_sleepingpills = {head = 5},
+	drug_anabiotic =    {head = 11, torso = 11, rightleg = 11, leftleg = 11, rightarm = 11, leftarm = 11},
+	drug_radioprotector = {head = 1, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	
+	stimpack =       {head = 5, torso = 5, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
+	stimpack_army =  {head = 2, torso = 2, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	stimpack_scientic = {head = 3, torso = 6, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	rebirth =        {head = 8, torso = 8, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	salicidic_acid = {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+	analgetic =      {torso = 2, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	tetanus =        {head = 3, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+
+	yadylin =        {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+    akvatab =        {head = 3, torso = 3},
+
+	vinca =          {torso = 2},
+	antibio_sulfad = {torso = 2, rightarm = 1, leftarm = 1},
+--  bandage =        {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+
+--	antirad =        {head = 1, torso = 2, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+
+}
+
+HUD = nil
+
+function activate_hud()
+	if HUD == nil then
+		HUD = BHS()
+		get_hud():AddDialogToRender(HUD)
+	end
+end
+
+function deactivate_hud()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+end
+
+function actor_on_first_update()
+	-- disable vanilla health / stamina / psi bars
+	if not vanilla_bars then
+		ActorMenu.get_maingame().m_ui_hud_states.m_ui_health_bar:SetWndPos(vector2():set(9999, 9999))
+		ActorMenu.get_maingame().m_ui_hud_states.m_ui_stamina_bar:SetWndPos(vector2():set(9999, 9999))
+		ActorMenu.get_maingame().m_ui_hud_states.m_ui_psy_bar:SetWndPos(vector2():set(9999, 9999))
+		ActorMenu.get_maingame().m_ui_hud_states.m_back:SetWndPos(vector2():set(9999, 9999))
+	end
+
+	activate_hud()
+end
+------------------------------------------------------------------------------
+---------------------------------- HUD -------------------------------------
+------------------------------------------------------------------------------
+class "BHS" (CUIScriptWnd)
+
+function BHS:__init() super()
+	self:InitControls()
+end
+
+function BHS:InitControls()
+	self:SetWndRect(Frect():set(0, 0, 1024, 768))
+	self:SetAutoDelete(true)
+
+	if hud_type == "text" then
+		self:BuildTextHUD()
+	elseif hud_type == "liz" then
+		self:BuildLizHUD()
+	else
+		self:BuildGraphicalHUD()
+	end
+
+	self:UpdatePos()
+	self:UpdateBars()
+end
+
+function BHS:BuildGraphicalHUD()
+	self.xml = CScriptXmlInit()
+	local xml = self.xml
+	-- local xml_name = (hud_type == "eft" and "ui_bhs_eft\\ui_bhs_eft.xml") or "ui_bhs\\ui_bhs.xml"
+	local xml_name = "ui_bhs_" .. hud_type .. "\\ui_bhs.xml"
+	xml:ParseFile(xml_name)
+
+	-- backgrounds
+	self.bg = xml:InitStatic("body_health_system", self)
+	self.hud_bg = xml:InitStatic("body_health_system_hud", self.bg)
+
+	-- bars
+	self.health_bar_bg = xml:InitStatic("bhs_health_bar_bg", self.hud_bg)
+	self.health_bar = xml:InitProgressBar("bhs_health", self.health_bar_bg)
+	self.health_bar:SetProgressPos(0.0)
+
+	self.stamina_bar_bg = xml:InitStatic("bhs_stamina_bar_bg", self.hud_bg)
+	self.stamina_bar = xml:InitProgressBar("bhs_stamina", self.stamina_bar_bg)
+	self.stamina_bar:SetProgressPos(0.0)
+
+	self.psi_bar = xml:InitProgressBar("bhs_psi", self.hud_bg)
+	self.psi_bar:SetProgressPos(0.0)
+
+	for limb, _ in pairs(maxhp) do
+		self[limb .. "_bg"] = xml:InitStatic("bhs_health_" .. limb .. "_bar_bg", self.hud_bg)
+		self[limb .. "_green"] = xml:InitProgressBar("bhs_health_bodypart_green", self[limb .. "_bg"])
+		self[limb .. "_green"]:SetProgressPos(0.0)
+		self[limb] = xml:InitProgressBar("bhs_health_bodypart", self[limb .. "_bg"])
+		self[limb]:SetProgressPos(0.0)
+	end
+
+
+	-- colors
+	local main_r, main_g, main_b, timed_r, timed_g, timed_b = 255, 255, 255, 255, 255, 255
+	if def_clr_t[hud_type] then
+		local t = def_clr_t[hud_type]
+		main_r, main_g, main_b = t.main[1], t.main[2], t.main[3]
+		timed_r, timed_g, timed_b = t.timed[1], t.timed[2], t.timed[3]
+	end
+
+	if custom_colors then
+		main_r, main_g, main_b = clr_main_r, clr_main_g, clr_main_b
+		timed_r, timed_g, timed_b = clr_timed_r, clr_timed_g, clr_timed_b
+	end
+
+	self.health_bar:SetColor(GetARGB(255, main_r, main_g, main_b))
+	self.stamina_bar:SetColor(GetARGB(255, main_r, main_g, main_b))
+	self.psi_bar:SetColor(GetARGB(255, main_r, main_g, main_b))
+	for limb, _ in pairs(maxhp) do
+		self[limb .. "_green"]:SetColor(GetARGB(255, timed_r, timed_g, timed_b))
+		self[limb]:SetColor(GetARGB(255, main_r, main_g, main_b))
+	end
+
+end
+
+function BHS:BuildTextHUD()
+	self.xml = CScriptXmlInit()
+	local xml = self.xml
+	-- xml:ParseFile("ui_bhs_alt\\ui_bhs_alt.xml")
+	xml:ParseFile("ui_bhs_" .. hud_type .. "\\ui_bhs.xml")
+
+	-- background
+	self.bg = xml:InitStatic("bhs_alt", self)
+
+	for limb, _ in pairs(maxhp) do
+		self[limb .. "_cont"] = xml:InitStatic("bhs_alt:" .. limb .. "_cont", self.bg)
+		self[limb .. "_bg"] = xml:InitStatic("bhs_alt:" .. limb .. "_cont:bar_bg", self[limb .."_cont"])
+		self[limb .. "_green"] = xml:InitProgressBar("bhs_alt:" .. limb .. "_cont:bar_green", self[limb .. "_bg"])
+		self[limb .. "_green"]:SetProgressPos(0.0)
+		self[limb] = xml:InitProgressBar("bhs_alt:" .. limb .. "_cont:bar", self[limb .. "_bg"])
+		self[limb]:SetProgressPos(0.0)
+	end
+
+	-- text
+	self.head_text = xml:InitTextWnd("bhs_alt:head_cont:head_text", self.head_cont)
+	self.torso_text = xml:InitTextWnd("bhs_alt:torso_cont:torso_text", self.torso_cont)
+	self.arms_text = xml:InitTextWnd("bhs_alt:text_arms", self.bg)
+	self.legs_text = xml:InitTextWnd("bhs_alt:text_legs", self.bg)
+
+	-- psi/hp/stamina
+	if alt_mode_health then
+		self.main_cont = xml:InitStatic("bhs_alt:main_cont", self.bg)
+
+		self.psi_bar = xml:InitProgressBar("bhs_alt:main_cont:psi_bar", self.main_cont)
+		self.psi_bar:SetProgressPos(0.0)
+
+		self.health_bar_bg = xml:InitStatic("bhs_alt:main_cont:health_bar_bg", self.main_cont)
+		self.health_bar = xml:InitProgressBar("bhs_alt:main_cont:health_bar", self.health_bar_bg)
+		self.health_bar:SetProgressPos(0.0)
+
+		self.stamina_bar_bg = xml:InitStatic("bhs_alt:main_cont:stamina_bar_bg", self.main_cont)
+		self.stamina_bar = xml:InitProgressBar("bhs_alt:main_cont:stamina_bar", self.stamina_bar_bg)
+		self.stamina_bar:SetProgressPos(0.0)
+	end
+
+end
+
+function BHS:BuildLizHUD()
+	self.xml = CScriptXmlInit()
+	local xml = self.xml
+	-- local xml_name = (hud_type == "eft" and "ui_bhs_eft\\ui_bhs_eft.xml") or "ui_bhs\\ui_bhs.xml"
+	local xml_name = "ui_bhs_" .. hud_type .. "\\ui_bhs.xml"
+	xml:ParseFile(xml_name)
+
+	-- backgrounds
+	self.bg = xml:InitStatic("body_health_system", self)
+	self.hud_bg = xml:InitStatic("body_health_system_hud", self.bg)
+
+	-- bars
+	self.health_bar_bg = xml:InitStatic("bhs_health_bar_bg", self.hud_bg)
+	self.health_bar = xml:InitProgressBar("bhs_health", self.health_bar_bg)
+	self.health_bar:SetProgressPos(0.0)
+
+	self.stamina_bar_bg = xml:InitStatic("bhs_stamina_bar_bg", self.hud_bg)
+	self.stamina_bar = xml:InitProgressBar("bhs_stamina", self.stamina_bar_bg)
+	self.stamina_bar:SetProgressPos(0.0)
+
+	self.psi_bar_bg = xml:InitStatic("bhs_psi_bar_bg", self.hud_bg)
+	self.psi_bar = xml:InitProgressBar("bhs_psi", self.psi_bar_bg)
+	self.psi_bar:SetProgressPos(0.0)
+	
+	for limb, _ in pairs(maxhp) do
+		self[limb .. "_bg"] = xml:InitStatic("bhs_health_" .. limb .. "_bar_bg", self.hud_bg)
+		self[limb .. "_green"] = xml:InitProgressBar("bhs_health_" .. limb .. "_green", self[limb .. "_bg"])
+		self[limb .. "_green"]:SetProgressPos(0.0)
+		self[limb] = xml:InitProgressBar("bhs_health_" .. limb .. "_bar", self[limb .. "_bg"])
+		self[limb]:SetProgressPos(0.0)
+	end
+
+end
+
+function BHS:UpdatePos()
+	local add_x = hud_type ~= "text" and -7 or 0		-- to compensate how bhs grabs texture
+	local add_y = hud_type ~= "text" and -15 or 0
+	self.bg:SetWndPos(vector2():set(mcm_pos_x + add_x, mcm_pos_y + add_y))
+end
+
+function BHS:UpdateBars()
+	if self.health_bar then
+		self.health_bar:SetProgressPos(db.actor.health)
+		self.stamina_bar:SetProgressPos(db.actor.power)
+		self.psi_bar:SetProgressPos(arszi_psy and arszi_psy.get_psy_health() or 0)
+	end
+
+	for limb, val in pairs(health) do
+
+		local timed_preview_val = 0
+		local preview_val = 0
+		if preview_sec then
+			-- no need to clamp, xml settings handle it
+			timed_preview_val = medkits[preview_sec] and medkits[preview_sec][limb] or 0
+			preview_val = healhelp[preview_sec] and healhelp[preview_sec][limb] or 0
+		end
+
+		self[limb .. "_green"]:SetProgressPos( (val + timedhp[limb] + timed_preview_val) / maxhp[limb])
+		self[limb]:SetProgressPos( (val + preview_val) / maxhp[limb])
+
+	end
+end
+
+function BHS:Update()
+	CUIScriptWnd.Update(self)
+
+	self:UpdateBars()
+
+	local hide_cond = actor_menu.last_mode == 1 or main_hud_shown()
+	self.bg:Show(hide_cond)
+end
+
+function BHS:__finalize()
+end
+
+
+------------------------------------------------------------------------------
+----------------------------- Events / Updates -------------------------------
+------------------------------------------------------------------------------
+local hitboxes = {
+	[14] = "head", [15] = "head", [16] = "head", [17] = "head", [18] = "head", [19] = "head",
+
+	[2] = "torso", [11] = "torso", [12] = "torso", [13] = "torso", [20] = "torso", [33] = "torso",
+
+	[21] = "leftarm", [22] = "leftarm", [23] = "leftarm", [24] = "leftarm", [25] = "leftarm", [26] = "leftarm",
+	[27] = "leftarm", [28] = "leftarm", [29] = "leftarm", [30] = "leftarm", [31] = "leftarm", [32] = "leftarm",
+
+	[34] = "rightarm", [35] = "rightarm", [36] = "rightarm", [37] = "rightarm", [38] = "rightarm", [39] = "rightarm",
+	[40] = "rightarm", [41] = "rightarm", [42] = "rightarm", [43] = "rightarm", [44] = "rightarm", [45] = "rightarm",
+
+	[3] = "leftleg", [4] = "leftleg", [5] = "leftleg", [6] = "leftleg",
+
+	[7] = "rightleg", [8] = "rightleg", [9] = "rightleg", [10] = "rightleg",
+}
+
+local anomalies_hit = {
+	[hit.burn] = { "torso", "leftarm", "rightarm", "leftleg", "rightleg" },
+	[hit.strike] = { "torso", "leftarm", "rightarm", "leftleg", "rightleg" },
+	[hit.wound] = { "torso", "leftarm", "rightarm", "leftleg", "rightleg" },
+	[hit.shock] = { "torso", "leftarm", "rightarm", "leftleg", "rightleg" },
+	[hit.chemical_burn] = { "leftleg", "rightleg" },
+}
+
+local limb_msg = {
+	head = "Hlava fatalne", torso = "Telo fatalne", leftarm = "Leva ruka",
+	rightarm = "Prava ruka", leftleg = "Leva noha", rightleg = "Prava noha",
+}
+
+function actor_on_before_hit(s_hit, bone_id)
+	local draft = s_hit.draftsman
+
+	-- if none
+	if bone_id == 65535 then
+		return
+	end
+
+	-- if anomaly
+	if draft and IsAnomaly(draft) and bone_id == 0 and anomalies_hit[s_hit.type] then
+		local ar = anomalies_hit[s_hit.type]
+		damaged_limb = ar[math.random(1, #ar)]
+		return
+	end
+
+	-- if mutant
+	if draft and IsMonster(draft) and bone_id == 0 then
+		local near_bone_id = get_nearest_actor_bone_id(draft)
+		if near_bone_id and hitboxes[near_bone_id] then
+			damaged_limb = hitboxes[near_bone_id]
+		end
+		return
+	end
+
+	-- if fall
+	if s_hit.type == hit.strike and draft and draft:id() == 0 then
+		damaged_limb = math.random(2) == 1 and "leftleg" or "rightleg"
+		return
+	end
+
+	-- if bullet
+	if hitboxes[bone_id] then
+		damaged_limb = hitboxes[bone_id]
+	end
+end
+
+function hit_on_update()
+	-- skip first update
+	if not prev_health then
+		prev_health = db.actor.health
+		return
+	end
+
+	local old_hp = prev_health
+	prev_health = db.actor.health
+
+	-- register only_on_hit
+	if not damaged_limb then
+		return
+	end
+
+	local limb = damaged_limb
+	damaged_limb = nil
+
+	-- same check as old BHS for compatibility with ballistics etc
+	local amount = old_hp - db.actor.health
+	if amount <= 0.0293 then
+		return
+	end
+
+	local head_mult = limb == "head" and 2 or 1
+	local damage = math.ceil((amount * head_mult * 100) / 11 * damagescale)
+
+	health[limb] = health[limb] - damage
+	if health[limb] <= 0 then
+
+		-- reduce remnant from timedhp
+		timedhp[limb] = timedhp[limb] + health[limb]
+
+		-- clamp timedhp and send msg if health at 0 and timedhp at 0
+		if timedhp[limb] <= 0 then
+			timedhp[limb] = 0
+			actor_menu.set_msg(1, limb_msg[limb] .. " poskozeno!", 8)
+		end
+
+		-- clamp health
+		health[limb] = 0
+	end
+
+	-- for concussion
+	if limb == "head" and (health["head"] + timedhp["head"]) > 0 then
+		zzz_player_injuries_effects.head_concussion_start(damage)
+	end
+
+end
+
+function actor_on_item_use(obj, sec)
+	local g_pairs = pairs
+	if medkits[sec] then
+		for limb, val in g_pairs(medkits[sec]) do
+			timedhp[limb] = timedhp[limb] + val
+			local diff = health[limb] + timedhp[limb] - maxhp[limb]
+			-- clamp timedhp
+			if diff > 0 then
+				timedhp[limb] = timedhp[limb] - diff
+			end
+		end
+		timedhp_timer = nil
+	end
+
+
+	if healhelp[sec] then
+		for limb, val in g_pairs(healhelp[sec]) do
+			-- restore only timedhp
+			if val > timedhp[limb] then
+				health[limb] = health[limb] + timedhp[limb]
+				timedhp[limb] = 0
+			-- restore val
+			else
+				health[limb] = health[limb] + val
+				timedhp[limb] = timedhp[limb] - val
+			end
+
+		end
+		timedhp_timer = nil
+	end
+
+end
+
+local med_tmr = 0
+function medicine_on_update()
+	local tg = time_global()
+	if med_tmr > tg then return end
+	med_tmr = tg + 5000
+
+	local cur_time = game.get_game_time()
+	if not timedhp_timer then
+		timedhp_timer = ctime_to_t(cur_time)
+	end
+
+	local diff = cur_time:diffSec(t_to_ctime(timedhp_timer)) / 600		-- each per 10 game minutes
+
+	if diff >= 1 then
+		timedhp_timer = ctime_to_t(cur_time)
+
+		for limb, val in pairs(timedhp) do
+			timedhp[limb] = timedhp[limb] - (math.floor(diff))
+			if timedhp[limb] < 0 then
+				timedhp[limb] = 0
+			end
+		end
+	end
+
+end
+
+local heal_tmr = 0
+function heal_on_update()
+	if regen <= 0 then return end
+
+	local tg = time_global()
+	if heal_tmr > tg then return end
+	heal_tmr = tg + 3000
+
+	local cur_time = game.get_game_time()
+	if not heal_timer then
+		heal_timer = ctime_to_t(cur_time)
+	end
+
+	local diff = cur_time:diffSec(t_to_ctime(heal_timer)) / (regen * 60)		-- each per "regen" game minutes
+
+	if diff >= 1 then
+		heal_timer = ctime_to_t(cur_time)
+
+		for i = 1, math.floor(diff) do
+			heal_random_limb()
+		end
+	end
+
+end
+
+function kill_on_update()
+	if (health.torso + timedhp.torso) <= 0 or (health.head + timedhp.head) <= 0 then
+		db.actor.health = -1
+	end
+end
+
+function heal_random_limb()
+	local t = dup_table(health)
+	local t_size = size_table(t)
+
+	-- keep picking randomly until we find limb that needs healing
+	for i = 1, t_size do
+		local rnd_limb = random_key_table(t)
+		if t[rnd_limb] < maxhp[rnd_limb] then
+			health[rnd_limb] = health[rnd_limb] + 1
+			if timedhp[rnd_limb] > 0 then
+				timedhp[rnd_limb] = timedhp[rnd_limb] - 1
+			end
+			break
+		end
+		t[rnd_limb] = nil
+	end
+end
+
+-- preview
+function ActorMenu_on_item_focus_receive(obj)
+	if not preview_sec then
+		preview_sec = obj:section()
+	end
+end
+
+function ActorMenu_on_item_focus_lost(obj)
+	if preview_sec == obj:section() then
+		preview_sec = nil
+	end
+end
+
+function ActorMenu_on_mode_changed(mode, last_mode)
+	if last_mode == 1 or last_mode == 4 then
+		preview_sec = nil
+	end
+end
+
+
+------------------------------------------------------------------------------
+------------------------------- Utils / Misc ----------------------------------
+------------------------------------------------------------------------------
+function get_nearest_actor_bone_id(npc)
+	local head_bone_name = ini_sys:r_string_ex(npc:section(), "bone_head")
+	local head_bone_pos = head_bone_name and vector():set(npc:bone_position(head_bone_name))
+	if not head_bone_pos then return end
+
+	local min_dist = 99
+	local picked_bone_id
+	for bone_id, _ in pairs(hitboxes) do
+		local bone_name = db.actor:bone_name(bone_id)
+		local bone_pos = bone_name and vector():set(db.actor:bone_position(bone_name))
+		local dist = bone_pos and head_bone_pos:distance_to(bone_pos)
+		if dist and dist < min_dist then
+			min_dist = dist
+			picked_bone_id = bone_id
+		end
+	end
+
+	return picked_bone_id
+end
+
+-- item descr
+local gt = game.translate_string
+BuildHeaderBHS = ui_item.build_desc_header
+function ui_item.build_desc_header(obj, sec, str)
+	str = str or gt(ini_sys:r_string_ex(sec, "description"))
+	if (not str) then return "" end
+
+	if not enable_display then
+		return BuildHeaderBHS(obj, sec, str)
+	end
+
+	local _str = ""
+	local blue_main = utils_xml.get_color("d_blue")
+	local blue_clr = strformat("%c[%s,%s,%s,%s]", 255, 74, 134, 232)
+	local yel_clr = strformat("%c[%s,%s,%s,%s]", 0, 252, 186, 3)
+	local grey_clr = utils_xml.get_color("ui_gray_2")
+	local obj_sec = obj and obj:section()
+
+	-- get circles/number for string
+	local function val_to_fkn_circles(val)
+		local circles = ""
+		if val >= display_numeric_at or show_numeric_always then
+			return val
+		elseif val > 0 then
+			for i = 1, val do
+				circles = circles .. gt("st_bhs_mihail_krug")
+			end
+		end
+		return circles
+	end
+
+	-- get string
+	local function build_string(t_name, sec, color)
+		local head_str = ""
+		local torso_str = ""
+		local arm_str = ""
+		local leg_str = ""
+		local timeregen_str = ""
+		if sec and t_name[sec] then
+			for limb, val in pairs(t_name[sec]) do
+				if limb == "head" then
+					head_str = grey_clr .. gt("st_bhs_head_str") .. color .. val_to_fkn_circles(val) .. " "
+				elseif limb == "torso" then
+					torso_str = grey_clr .. gt("st_bhs_torso_str") .. color .. val_to_fkn_circles(val) .. " "
+				elseif limb == "rightarm" then
+					arm_str = grey_clr .. gt("st_bhs_rightarm_str") .. color .. val_to_fkn_circles(val) .. " "
+				elseif limb == "rightleg" then
+					leg_str = grey_clr .. gt("st_bhs_rightleg_str") .. color .. val_to_fkn_circles(val) .. " "
+			--	elseif limb == "timeregen" and show_timed_heal_time then
+			--		timeregen_str = grey_clr .. gt("st_bhs_timeregen") .. color .. (val / 1000) .. " "
+				end
+			end
+		end
+		local main_string = head_str .. torso_str .. arm_str .. leg_str .. (timeregen_str ~= "" and (" " .. timeregen_str) or "")
+		return main_string
+	end
+
+	local medkits_pre = "  " .. yel_clr .. gt("st_bhs_mihail_krug") .. " " .. yel_clr .. " " .. gt("st_bhs_timed_heal") .. "  "
+	local medkits_str = build_string(medkits, obj_sec, yel_clr)
+	local healhelp_pre = "  " .. blue_main .. gt("st_bhs_mihail_krug") .. " " .. blue_clr .. " " .. gt("st_bhs_full_heal") .. "  "
+	local healhelp_str = build_string(healhelp, obj_sec, blue_clr)
+
+	if obj_sec then
+		if medkits_str ~= "" and healhelp_str ~= "" then
+			_str = medkits_pre .. medkits_str .. "\\n" .. healhelp_pre .. healhelp_str .. "\\n" .. utils_xml.get_color("ui_gray_1")
+			return BuildHeaderBHS(obj, sec, str) .. _str
+		elseif medkits_str ~= "" then
+			_str = medkits_pre .. medkits_str .. "\\n" .. utils_xml.get_color("ui_gray_1")
+			return BuildHeaderBHS(obj, sec, str) .. _str
+		elseif healhelp_str ~= "" then
+			_str = healhelp_pre .. healhelp_str .. "\\n" .. utils_xml.get_color("ui_gray_1")
+			return BuildHeaderBHS(obj, sec, str) .. _str
+		else
+			return BuildHeaderBHS(obj, sec, str)
+		end
+	else
+		return BuildHeaderBHS(obj, sec, str)
+	end
+
+end
+
+-- dialogues
+function limb_is_damaged()
+	for k, v in pairs(health) do
+		if health[k] < maxhp[k] then
+			return true
+		end
+	end
+end
+
+function heal_all_limbs()
+	for k, v in pairs(health) do
+		health[k] = maxhp[k]
+		timedhp[k] = 0
+	end
+end
+
+base_not_healthy = dialogs.is_actor_not_healthy
+function dialogs.is_actor_not_healthy(a, b)
+	if base_not_healthy(a, b) or limb_is_damaged() then
+		return true
+	end
+end
+
+base_actor_injured = dialogs.is_actor_injured
+function dialogs.is_actor_injured(a, b)
+	if base_actor_injured(a, b) or (db.actor:money() >= 1850 and limb_is_damaged()) then
+		return true
+	end
+end
+
+base_actor_injured_irradiated = dialogs.is_actor_injured_irradiated
+function dialogs.is_actor_injured_irradiated(a, b)
+	if base_actor_injured_irradiated(a, b) or (db.actor:money() >= 3350 and limb_is_damaged()) then
+		return true
+	end
+end
+
+base_heal_injury = dialogs.heal_actor_injury
+function dialogs.heal_actor_injury(a, b)
+	base_heal_injury(a, b)
+	heal_all_limbs()
+end
+
+base_heal_injury_radiation = dialogs.heal_actor_injury_radiation
+function dialogs.heal_actor_injury_radiation(a, b)
+	base_heal_injury_radiation(a, b)
+	heal_all_limbs()
+end
+
+-- items use override
+function itms_manager.actor_on_item_before_use(obj, flags)
+	local sec = obj:section()
+
+	local ini_eff = ini_file("items\\items\\animations_settings.ltx")
+
+	-- headgear anims
+	if z_headgear_animations_fdda_strict_helmets and headgear_animations_mcm and headgear_animations_mcm.get_config("strict_helmets") then
+        if ini_eff:r_bool_ex(sec, "helm") == false then
+            if z_headgear_animations_fdda_strict_helmets.is_have_helmet() then
+                actor_menu.set_msg(1, game.translate_string("liz_ha_text_cant_consume_item"), 3)
+                flags.ret_value = false
+                return
+            end
+        end
+	end
+	---------
+
+	if IsItem("tool",sec) then
+		flags.ret_value = true
+		return
+	end
+
+	local pass = true
+
+	local require_tool = ini_sys:r_string_ex(sec, "required_tool")
+	local obj_tool = require_tool and ini_sys:section_exist(require_tool) and db.actor:object(require_tool)
+	if require_tool and (not obj_tool) then
+		str = strformat(game.translate_string("st_itm_manager_missing_requirements"), ui_item.get_sec_name(require_tool))
+		pass = false
+	end
+
+	if pass then
+		flags.ret_value = true
+		if obj_tool then
+			utils_item.discharge(obj_tool)
+		end
+	else
+		flags.ret_value = false
+		utils_xml.hide_menu()
+		actor_menu.set_msg(1, str, 3)
+	end
+
+	-- fdda
+	if enhanced_animations then
+		if IsMoveState("mcClimb") then
+			actor_menu.set_msg(1, game.translate_string("st_EA_ladder_item_not_allowed"), 3)
+			flags.ret_value = false
+			return
+		end
+
+		local enable_animations = ui_mcm and ui_mcm.get("EA_settings/enable_animations") or ui_options.get("video/player/animations")
+		if ini_eff:r_string_ex(sec, "snd") and enable_animations and flags.ret_value then
+			enhanced_animations.use_item(obj)
+			flags.ret_value = false
+			return
+		end
+	end
+	---------
+
+end
+--------------------------------------
+
+
+function bhs_dbg_hit(limb, dmg)
+	-- zzz_player_injuries.bhs_dbg_hit("head", 0.3)
+	dmg = dmg >= db.actor.health and db.actor.health - 0.01 or dmg
+	damaged_limb = limb
+	db.actor:set_health_ex(db.actor.health - dmg)
+end
+
+function bhs_dbg_heal()
+	-- zzz_player_injuries.bhs_dbg_heal()
+	for k, _ in pairs(health) do
+		health[k] = maxhp[k]
+		timedhp[k] = 0
+	end
+end
+
+function bhs_dbg_set_health(limb, val)
+	-- zzz_player_injuries.bhs_dbg_set_health("head", 3)
+	val = (val > maxhp[limb] and maxhp[limb]) or (val <= 0 and 0) or val
+	health[limb] = val
+end
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+function actor_on_update()
+	hit_on_update()
+	medicine_on_update()
+	heal_on_update()
+	kill_on_update()
+end
+
+function save_state(m_data)
+	m_data.bhs_health = health
+	m_data.bhs_timedhp = timedhp
+	m_data.bhs_timedhp_timer = timedhp_timer
+	m_data.bhs_heal_timer = heal_timer
+end
+
+function load_state(m_data)
+	health = m_data.bhs_health or health
+	timedhp = m_data.bhs_timedhp or timedhp
+	timedhp_timer = m_data.bhs_timedhp_timer
+	heal_timer = m_data.bhs_heal_timer
+end
+
+function on_option_change()
+	damagescale = zzz_player_injuries_mcm.get_config("damage_scale")
+	regen = zzz_player_injuries_mcm.get_config("regen")
+
+	enable_display = zzz_player_injuries_mcm.get_config("enable_display")
+	display_numeric_at = zzz_player_injuries_mcm.get_config("numeric_at")
+	show_numeric_always = zzz_player_injuries_mcm.get_config("numeric_always")
+
+	hud_type = zzz_player_injuries_mcm.get_config("hud_type")
+	alt_mode_health = zzz_player_injuries_mcm.get_config("alt_mode_health")
+	mcm_pos_x = zzz_player_injuries_mcm.get_config("position_x")
+	mcm_pos_y = zzz_player_injuries_mcm.get_config("position_y")
+	vanilla_bars = zzz_player_injuries_mcm.get_config("vanilla_bars")
+
+	custom_colors = zzz_player_injuries_mcm.get_config("custom_colors")
+	clr_main_r = zzz_player_injuries_mcm.get_config("clr_main_r")
+	clr_main_g = zzz_player_injuries_mcm.get_config("clr_main_g")
+	clr_main_b = zzz_player_injuries_mcm.get_config("clr_main_b")
+
+	clr_timed_r = zzz_player_injuries_mcm.get_config("clr_timed_r")
+	clr_timed_g = zzz_player_injuries_mcm.get_config("clr_timed_g")
+	clr_timed_b = zzz_player_injuries_mcm.get_config("clr_timed_b")
+
+	deactivate_hud()
+	activate_hud()
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+	RegisterScriptCallback("actor_on_net_destroy", deactivate_hud)
+	RegisterScriptCallback("actor_on_before_death", deactivate_hud)
+	RegisterScriptCallback("actor_on_before_hit", actor_on_before_hit)
+	RegisterScriptCallback("actor_on_item_use", actor_on_item_use)
+	RegisterScriptCallback("ActorMenu_on_item_focus_receive", ActorMenu_on_item_focus_receive)
+	RegisterScriptCallback("ActorMenu_on_item_focus_lost", ActorMenu_on_item_focus_lost)
+	RegisterScriptCallback("ActorMenu_on_mode_changed", ActorMenu_on_mode_changed)
+	RegisterScriptCallback("save_state", save_state)
+	RegisterScriptCallback("load_state", load_state)
+	RegisterScriptCallback("actor_on_update", actor_on_update)
+	RegisterScriptCallback("on_option_change", on_option_change)
+end
