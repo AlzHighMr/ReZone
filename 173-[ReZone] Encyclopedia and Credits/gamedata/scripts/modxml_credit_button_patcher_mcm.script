@@ -1,0 +1,25 @@
+local patched = false
+function on_xml_read()
+	if not patched then
+		patched = true
+		RegisterScriptCallback("main_menu_on_init", function(self) 
+				self:AddCallback("btn_credits",	    ui_events.BUTTON_CLICKED,				self.OnButton_credits_clicked,	    self)
+				end)
+	end
+end
+
+function on_mcm_load()
+	if not patched then
+		patched = true
+		RegisterScriptCallback("main_menu_on_init", function(self) 
+				self:AddCallback("btn_credits",	    ui_events.BUTTON_CLICKED,				self.OnButton_credits_clicked,	    self)
+				end)
+	end
+end
+	
+
+function ui_main_menu.main_menu:OnButton_credits_clicked()
+--	local console = get_console()
+--	console:execute("main_menu off")
+	game.start_tutorial("credits_seq")
+end

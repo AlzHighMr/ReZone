@@ -1,0 +1,24 @@
+[logic]
+active = ph_idle@check_actor
+
+[ph_idle@check_actor]
+on_info = {=actor_true_community(monolith:greh)} ph_button@deactivate %+lim_deactivate_duga_done%, ph_button@active %-lim_deactivate_duga_done%
+
+[ph_button@active]
+on_info = %=stop_sound%  
+anim = lab_primary_switcher_idle
+anim_blend  = true
+tooltip = dug_lim_tip_switcher_off
+on_press = ph_button@deactivate %=stop_sound +lim_deactivate_duga_done =play_sound(duga_switch_sound)%
+
+[ph_button@deactivate]  
+on_info = %=play_sound(duga_antenna_control_off)% 
+anim = lab_primary_switcher_off
+anim_blend  = true
+tooltip = dug_lim_tip_switcher_on 
+on_press = ph_button@active %-lim_deactivate_duga_done =play_sound(duga_switch_sound)%
+
+[collide]
+ignore_static
+
+

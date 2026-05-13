@@ -1,0 +1,178 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition =  trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(ecolog:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(ecolog:1500)} supplies_4, {=actor_goodwill_ge(ecolog:1000)} supplies_3, {=actor_goodwill_ge(ecolog:500)} supplies_2,  supplies_1
+buy_item_condition_factor = 0.90
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_scientist
+
+[trade_generic_buy]:scientist,artefacts_h
+
+[trade_generic_sell]:scientist,artefacts_h
+
+
+
+
+
+;============================================================================;
+;                    [SUPPLIES 1]
+;============================================================================;
+[supplies_1]:common_stock
+;========================================================
+;  Misc
+;========================================================
+batteries_dead		= 9, 0.50
+lead_box		    = 3, 0.50
+af_iam			    = 3, 0.50
+af_camelbak		   = 1, 0.50
+af_cooler		   = 1, 0.50
+af_surge		   = 1, 0.50
+af_freon           = 1, 0.50
+af_frames          = 1, 0.50
+af_grid            = 1, 0.50
+;========================================================
+;  Devices
+;========================================================
+detector_radio      = 1, 0.70
+detector_geiger     = 1, 0.70
+detector_simple     = 1, 0.80
+device_pda_1		= 1, 0.50
+device_torch_dummy 	= 1, 0.50
+device_flashlight   = 1, 0.50
+
+;========================================================
+;  Meds
+;========================================================
+bolts_pack		   = 3, 0.50
+medkit			   = 6, 1
+medkit_ai1		   = 4, 1
+medkit_ai2		   = 4, 1
+medkit_ai3		   = 4, 1
+antirad_kalium	   = 2, 0.50
+antirad_cystamine  = 2, 0.50
+antibio_sulfad	   = 2, 0.50
+antiemetic		   = 2, 0.50
+antibio_chlor	   = 2, 0.50
+jgut			   = 2, 0.50
+yadylin			   = 2, 0.50
+analgetic		   = 2, 0.50
+medkit_scientic	   = 2, 0.50
+bandage			   = 10, 1
+antirad			   = 2, 0.50
+stimpack_army	   = 3, 0.50
+stimpack_scientic  = 2, 0.50
+survival_kit	   = 2, 0.50
+salicidic_acid	   = 2, 0.50
+morphine		   = 2, 0.50
+tetanus			   = 3, 0.50
+adrenalin		   = 3, 0.50
+drug_booster	   = 3, 0.50
+drug_coagulant	   = 3, 0.50
+drug_antidot	   = 3, 0.50
+drug_radioprotector	= 3, 0.50
+drug_psy_blockade	= 3, 0.50
+drug_sleepingpills	= 3, 0.50
+;========================================================
+;  Headgear
+;========================================================
+helm_respirator      = 1, 0.50
+;============================================================================;
+;                    [SUPPLIES 2]
+;============================================================================;
+[supplies_2]:supplies_1
+;========================================================
+;  Misc
+;========================================================
+equ_small_pack            = 1, 1
+;========================================================
+;  Devices
+;========================================================
+detector_advanced         = 1, 0.50
+device_torch_nv_1 	      = 1, 0.50
+;========================================================
+;  Headgear
+;========================================================
+helm_protective           = 1, 0.50
+;========================================================
+;  Outfits
+;========================================================
+ecolog_outfit_green       = 1, 0.50
+ecolog_guard_outfit       = 1, 0.50
+ecolog_outfit_orange      = 1, 0.50
+exo_power_supply	      = 1, 0.50
+
+;============================================================================;
+;                    [SUPPLIES 3]
+;============================================================================;
+[supplies_3]:supplies_2
+;========================================================
+;  Misc
+;========================================================
+af_aac				      = 3, 0.50
+equ_small_military_pack   = 1, 1
+drug_anabiotic			  = 2, 0.50
+;========================================================
+;  Devices
+;========================================================
+device_torch_nv_2		  = 1, 0.50
+device_pda_2			  = 1, 0.50
+detector_elite            = 2, 0.50
+exo_power_supply_military = 1, 0.50
+exo_power_supply_proto	  = 1, 0.50
+
+;========================================================
+;  Outfits
+;========================================================
+ecolog_outfit_white		= 1, 0.50
+;========================================================
+;  Headgear
+;========================================================
+helm_protective			= 1, 0.50
+;============================================================================;
+;                    [SUPPLIES 4]
+;============================================================================;
+[supplies_4]:supplies_3
+;========================================================
+;  Misc
+;========================================================
+equ_military_pack       = 1, 1
+af_aam				    = 3, 0.50
+af_cooler_up            = 1, 0.50
+af_camelbak_up          = 1, 0.50
+af_freon_up             = 1, 0.50
+af_frames_up            = 1, 0.50
+af_grid_up              = 1, 0.50
+af_surge_up             = 1, 0.50
+;========================================================
+;  Devices
+;========================================================
+device_torch_nv_3		= 1, 0.50
+device_pda_3			= 1, 0.50
+exo_power_supply_sprint	= 1, 0.50
+;========================================================
+;  Outfits
+;========================================================
+ecolog_outfit_blue		= 1, 0.50
+ecolog_outfit_red		= 1, 0.50
+ecolog_outfit_yello		= 1, 0.50
+scientific_outfit		= 1, 0.40
+ecolog_proto_exo_outfit = 1, 0.30
+;============================================================================;
+;                    [SUPPLIES 5]
+;============================================================================;
+[supplies_5]:supplies_4
+;========================================================
+;  Devices
+;========================================================
+detector_scientific		= 1, 0.50
+exo_power_supply_tank	= 1, 0.50
+;========================================================
+;  Outfits
+;========================================================
+ecolog_exo_outfit		= 1, 0.50
+

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<!--------------------------------------------
+
+Colors:
+-------
+Gray			- %c[ui_gray_2]
+Gray (Light)	- %c[ui_gray_1]		
+Blue			- %c[d_cyan]	
+Orange			- %c[d_orange]
+Red				- %c[d_red]
+Purple			- %c[d_purple]	
+Green			- %c[d_green]	
+Yellow			- %c[0,250,250,0]	
+White 			- %c[0,255,255,255]	
+
+-------------------------------------------->
+
+
+	<string id="st_rezone_sms_name">
+		<text>%c[255,248,153,26]AlzHighMr:\n%c[default]Vítej v zóně Stalkere! Rozhodně se podivej do PDA najdeš tam spoustu důležitých informací! PDA --> Průvodce --> Re:Zone Manual</text>
+	</string>
+
+	<string id="encyclopedia__rezone">
+		<text>Re:Zone Manual</text>
+	</string>
+
+<string id="encyclopedia__rezone_modpack">
+    <text>Tips for Beginners</text>
+</string>
+
+<string id="encyclopedia__rezone_modpack_text">
+    <text>Welcome to the Zone, Stalker! I see you managed to get past the Army checkpoint into the Zone...
+    \nHere you'll find lots of important information that could be useful on your journey north through the Zone.
+        \n%c[d_green]==========================================================================================%c[d_green]
+        \n%c[d_green]==========================================================================================%c[d_green]
+        \n\n%c[255,248,153,26]Survival Tips:
+        \nTo survive as a beginner, you will really need to conserve the resources you brought with you.
+        \nIf you're in the Cordon, don't forget to visit Fanatic, who will guide you through a small tutorial and give you some gear to survive another day.
+        \nAlso, make sure to thoroughly search the area, even looking into roofs and basements of houses!
+        \nIn the beginning, you won't be able to buy much from traders. No one trusts you here yet! You'll need to earn their trust first, and once you reach supply level 2, you might be able to buy at least a pistol.
+        \nRemember that you'll need to gain trust from each friendly faction - what they sell varies depending on whether their suppliers are NATO or WP (Warsaw Pact).
+        \nIf you encounter someone causing trouble, be sure to thoroughly search them and take all the ammo from their magazines.
+        \nBut be careful - there are various checkpoints throughout the Zone that you'll need to avoid until you have enough equipment to take them all down!
+        \nSearch the area - you can find many items lying around the world, including armor and weapons, and even crafting recipes in every location.
+        \nAfter an emission ends, go artifact hunting - you can later transmute artifacts once you get the recipes and the necessary anomaly tools.
+        \n%c[d_green]==========================================================================================%c[d_green]
+        \n%c[d_green]==========================================================================================%c[d_green]
+        \n\n%c[255,248,153,26]How to Progress:
+        \nComplete tasks, hunt mutants, and collect their parts, which you can use to complete tasks for stalkers.
+        \nObtain coordinates for stashes, explore the surroundings, and carefully look for valuable loot. Find tools so you can repair the things you find - you'll read more about this in crafting.
+        \nKeep completing tasks, increasing your reputation with factions to get better gear, as each faction has unique weapons at the highest supply levels.
+        \n%c[d_green]==========================================================================================%c[d_green]
+        \n%c[d_green]==========================================================================================%c[d_green]
+    </text>
+</string>
+
+<string id="encyclopedia__rezone_keybinds">
+    <text>Keybinds</text>
+</string>
+
+<string id="encyclopedia__rezone_keybinds_text">
+    <text>
+\n%c[d_green]Character Skills ====> H
+\nCharacter Stats Overview ====> J
+\nPDA ====> Caps Lock
+\nInventory ====> Tab
+\nUnload Weapon ====> Hold R
+\nToggle HUD ====> Page Up
+\nToggle Compass Only ====> Page Down
+\nQuick Action Wheel ====> Button under ESC, normally for console ';'
+\nActivate Exoskeleton Drive and use PSU special features ====> P
+\nCheck Ammo ====> Upper side mouse button
+\nChange Firing Mode ====> Lower side mouse button
+\nClean Mask ====> T
+\nPut On/Take Off Mask ====> Hold T
+\nZoom Iron Sights ====> + on Numlock
+\nUnzoom Iron Sights ====> - on Numlock
+\nInspect Weapon ====> I
+\nAlternative Aim ====> V
+\nConsole ====> Scroll Lock
+\nDebug Menu ====> Pause Break%c[d_green]</text>
+</string>
+
+
+	<string id="encyclopedia__rezone_bhs">
+    <text>Body Health System</text>
+</string>
+
+<string id="encyclopedia__rezone_bhs_text">
+    <text>
+    \n%c[d_green]About the Body Health System:
+    \n%c[d_green]It’s almost the same as Grok’s Body Health System from GAMMA, but now it changes:
+
+\n%c[d_green]Improved damage calculation from mutants/falls/anomalies:
+\n%c[d_green]In the original BHS, mutants mostly damaged legs (even if they jumped straight into your face), now they damage the closest limb to them.
+\n%c[d_green]Fall damage previously didn’t harm anything, now it damages legs.
+\n%c[d_green]Anomalies randomly damaged any limb, now it’s still random except for the head, and toxic anomalies only damage the legs.
+\n%c[d_green]Now only hits reduce limb health (passive damage, food, and medicine no longer reduce it).
+\n%c[d_green]If you take limb damage, simply hover your mouse over healing items and watch the BHS HUD.
+\n%c[0,250,250,0]There are 3 types of medicines.
+\n%c[0,255,255,255]=============================INSTRUCTIONS FOR HEALING LIMBS===============================%c[0,255,255,255]
+\n%c[d_cyan]Types of healing:
+\n%c[d_green]1st type ===> Medicines that give you a boost or stop bleeding like a regular bandage, but these medicines do not heal limbs.
+\n%c[d_green]2nd type ===> Temporary ---> It heals your limbs but only temporarily, as the name suggests,
+\nso you will always need to use the 3rd type to fully heal.
+\n%c[d_green]3rd type ===> Health restoring ---> If you used the correct temporary medicine (you can tell by the striped marking on your limbs),
+\nthen just use the health-restoring medicine to fully heal your limbs.
+\n%c[d_green]Another option is to sit by a lit campfire for a while or go to sleep.
+
+    </text>
+</string>
+
+<string id="encyclopedia__rezone_balistika">
+    <text>Ballistics Explanation</text>
+</string>
+
+<string id="encyclopedia__rezone_balistika_text">
+    <text>
+\n%c[d_cyan]The types of ammunition are divided into variants %c[0,250,250,0]FMJ / HP / AP.%c[0,250,250,0]
+\n%c[d_cyan]Inferior ammunition has been converted into stronger "very good" ammo, roughly in line with the Anomaly baseline.
+\n%c[d_cyan]"Very good" ammunition generally trades faster weapon wear for higher damage, penetration, etc., within reasonable limits.
+\n%c[d_cyan]The percentage occurrence of new types of ammunition is controlled by automatic replacement at traders and in ammo left by NPCs.
+\n%c[d_green]==========================================================================================%c[d_green]
+\n%c[d_green]==========================================================================================%c[d_green]
+\nGeneral properties of the new ammunition:
+
+\n|%c[ui_gray_2]Ammunition|%c[d_green] Effects |
+\n%c[d_green]| FMJ         %c[0,250,250,0]====> %c[d_cyan]Standard ammunition, good damage, spread, and penetration.
+\n%c[d_green]| HP          %c[0,250,250,0]====> %c[d_cyan]Expanding bullets with a damage multiplier if they fully penetrate. Great against mutants.
+\n%c[d_green]| AP          %c[0,250,250,0]====> %c[d_cyan]Armor-piercing ammunition, causing reduced damage to lightly armored NPCs.
+\n%c[d_green]| Buckshot    %c[0,250,250,0]====> %c[d_cyan]Low penetration. Ignores some armor when hitting limbs.
+\n%c[d_green]==========================================================================================%c[d_green]
+\n%c[d_green]==========================================================================================%c[d_green]
+\n%c[0,250,250,0]Ballistics classes:
+\n%c[d_orange]I     %c[0,250,250,0]====> %c[d_cyan]Light suits
+\n%c[d_orange]IIA   %c[0,250,250,0]====> %c[d_cyan]Medium suits
+\n%c[d_orange]II    %c[0,250,250,0]====> %c[d_cyan]PS5 suits, medium suits
+\n%c[d_orange]III   %c[0,250,250,0]====> %c[d_cyan]Berill-5M
+\n%c[d_orange]IV    %c[0,250,250,0]====> %c[d_cyan]SKAT-9
+\n%c[d_orange]V     %c[0,250,250,0]====> %c[d_cyan]Exo vests
+\n%c[d_orange]VI+   %c[0,250,250,0]====> %c[d_cyan]Exoskeletons
+    </text>
+</string>
+
+
+
+
+	<string id="encyclopedia__rezone_crafting">
+    <text>Crafting</text>
+</string>
+
+<string id="encyclopedia__rezone_crafting_text">
+    <text>To craft or repair, you will need three things:
+    \n1. Find recipes that will tell you how much and what you need.
+    \n2. Various toolkits are required for crafting; you need the right tools to create something.
+    \n3. Materials - a lot of materials.
+    \n\n%c[0,250,250,0]WHERE TO GET EVERYTHING:
+    \n\n%c[d_orange]Recipes - You can find them by searching the world, as they have predetermined locations, and some are rewards for completing tasks. 
+    \nThere is also a chance to find them in stashes for which you will receive coordinates as a reward for completing jobs for Stalkers.
+    \n\n%c[d_green]Toolkits - Only found in stashes for which you must first obtain coordinates – the further north you go, the better the items, and stashes are color-coded accordingly.
+    </text>
+</string>
+
+<string id="encyclopedia__rezone_repair">
+    <text>Repairs</text>
+</string>
+
+<string id="encyclopedia__rezone_repair_text">
+    <text>DESCRIPTION OF REPAIRS</text>
+</string>
+
+<string id="encyclopedia__rezone_magazines">
+    <text>Magazines</text>
+</string>
+
+<string id="encyclopedia__rezone_magazines_text">
+    <text>
+    \n
+    \nTo add magazines, right-click on the magazine and select "add to equipment" from the context menu.
+    \n
+    \nHere is information regarding magazine variations:
+    \n• Magazine sizes
+    \n• Magazines for weapons are divided into three sizes (small, medium, large). You need to consider whether the armor you're wearing can carry the magazine(s) you want to add to your loadout.
+    \nTo check the size of a magazine, hover your cursor over the armor/magazine, and it will show in the tooltip.
+    \n• Small - All pistols and some SMGs (PP200, Kiparis, etc.).
+    \n• Medium - All rifles and SMGs (AK, M4, Fal, Scar, MP7, etc.).
+    \n• Large - Machine guns, sniper rifles, generally large/extended magazines.
+    \n\n 
+    • Equipment
+    \nMagazines must be added to your loadout to reload equipped weapons.
+    </text>
+</string>
+
+
+<string id="encyclopedia__rezone_story">
+    <text>Storylines</text>
+</string>
+
+<string id="encyclopedia__rezone_story_text">
+    <text>
+    \nSTORYLINES
+    \n• Visit Cold and Spore in the Great Swamps.
+    \n• You can also meet scientists who will need your help with their research.
+    \n%c[d_green]==========================================================================================
+    \n%c[d_green]==========================================================================================
+    \nBrotherhood
+    \n• A lot of new NPCs and storylines, as well as random events.
+    \n%c[d_green]==========================================================================================
+    \n%c[d_green]==========================================================================================
+    \nLost to the Zone: Director's Cut
+    \nLTTZ DC includes several improvements and modifications to the main story.
+    \nThis addon is based on four major changes:
+    \n• Living Legend: The Monolith Champion has been slightly reworked in hopes that Eidolon now fulfills expectations as a boss.
+    \n• Mortal Sin: The endgame has been reworked according to the original vision of the quest, which should provide a much more interesting and satisfying conclusion to the story than the previous time trial.
+    \n• Dark Presence: The Voice of the Noosphere is a new post-OA quest based on player choices.
+    \nSeveral messages in the PDA from story characters have been added at various points to improve the flow of the story progression.
+    \n%c[d_green]==========================================================================================
+    \n%c[d_green]==========================================================================================
+    \nDUTY EXPANSION
+    \nBetrayed by their own, loss of territory, and suffering heavy casualties.
+    \nDuty was once the most feared and respected stalker faction in the Zone, but now they lick their wounds in the shadows.
+    \nAfter recovering from the fall, hardened by battle and well-equipped, what will Duty do to regain the reputation they once deserved?
+    \n• To start the storyline, you must be friendly with the Duty faction and find Anna from Duty in Rostok - also, you need to have disabled the %c[d_green]Brain Scorcher%c[d_green] and the %c[d_green]Miracle Machine%c[d_green] beforehand.
+    \n%c[d_green]==========================================================================================
+    \n%c[d_green]==========================================================================================
+    \nWESTERN GOODS
+    \n"Delivered by Helicopter"
+    \n• 3 missions – start at the bookstore, Pripyat Suburbs
+    \n• Investigate the crash of a Mercenary helicopter that was carrying valuable goods.
+    \n\n
+    \n"Work on Order"
+    \n• 2 missions – start at the Mercenary base, Dead City
+    \n• After gaining Dushman's trust, he will connect you with a mysterious client for a special job.
+    \n\n
+    \n"The Chernenko Brothers"
+    \n• 4 missions – start at the flea market, Garbage
+    \n• Help a former soldier-turned-mercenary trader find his lost brother.
+\n%c[d_green]==========================================================================================
+\n%c[d_green]==========================================================================================
+\nNEW LEVELS
+\n• 3 new locations and a storyline. Visit Sakharov and ask him about the new places.
+\n%c[d_green]==========================================================================================
+\n%c[d_green]==========================================================================================
+\n• NEW TASK ADDON
+\n\n
+\nStorylines (much longer than regular tasks described below):
+\n
+\n"Living Fire" \n•  The storyline begins in the Bar and is taken from Práskač in a similar way as a regular task. Requirements: completed task *Living Legend* and disabled *Miracle Machine*.
+\nCurrently available tasks with short descriptions (deeper story found in conversation with NPCs):
+\n
+\n\n"From important NPCs:"
+\n
+\n\nPETRENKO:
+\n"Hold the position" \n•  defend the flea market from a bandit invasion. 
+\n\nLUKASH:
+\n"Fall from the sky" \n•  destroy a military helicopter.  
+\n\nDUSHMAN:
+\n"Not a step back" \n•  retake part of Limansk and hold against Monolith's attacking forces.
+\n\nSAKHAROV:
+\n"Brain play" \n•  kill a controller without damaging its head.  
+\n"Stolen specimen" \n•  retrieve a rare artifact needed for further research from the Sinners.  
+\n\nVORONIN:
+\n"Urgent orders" \n•  this task is automatically assigned to Duty members (original Duty members – disguises don’t work)
+\nto give the faction more of an Army feel. Head to Yantar and bring back a scientific team to save an injured soldier with a limited time (5 in-game hours).  
+\n\nKUZNETSOV:
+\n"Urgent orders" \n•  same as Voronin’s task, but for the army.  
+\n"Enforce embargo" \n•  Retrieve an artifact from a stalker.  
+\n\nSIDOROVICH:
+\n"Dead night" \n•  investigate the disappearance of stalkers in the Dark Hollow at night.  
+\n"Cold-blooded betrayal" \n•  retrieve an artifact from an exile. 
+\n\nBARMAN:
+\n"Baba Yaga" \n•  investigate the disappearance of stalkers at the Junkyard at night.  
+\n\nMRAZ:
+\n"House of horrors" \n•  a scout was found torn apart at the seemingly safe Clear Sky base. You must investigate this case. Take a lot of ammunition with you!  
+\n\nFOUSEK:
+\n"Mirage" \n•  an artifact hunter barely survived being shot by someone who looked exactly like him. You must investigate this place.  
+\n\nHUNTER:
+\n"Big game" \n•  a pack of pseudogiants has taken shelter in the train tunnel at Jupiter. The hunter asks you to eliminate this threat.  
+\n\nOLIVIUS:
+\n"Extortion" \n•  retrieve an artifact from a group of scientists who entered bandit territory.  
+\n\nTREASURER:
+\n"Blood coin" \n•  the treasurer was robbed of a rare artifact just before a deal with a stalker. You must recover it.  
+\n\nHAWAIIAN:
+\n"Memento" \n•  a stalker lost his real brother during their last contract in the north before leaving the Zone for good. He wants the contract's target as a keepsake.  
+\nFREEDOM:
+\n"Life gamble" \n•  kill a healthy Vampire with only a knife.  
+\nBANDITS:
+\n"Enhanced revenge" \n•  kill a chimera with an axe (it can be damaged beforehand by anyone with any weapon).
+\n\n%c[d_green]\nMore info soon...
+    </text>
+	</string>
+
+
+
+
+
+
+
+</string_table>

@@ -1,0 +1,1271 @@
+
+--[[
+	foo:start(...)
+	foo.start(self,...)
+	Those are the same thing. Colon (:) is just syntax
+	Also see: https://igigog.github.io/anomaly-modding-book/
+	
+	2022.04.14 
+	Banjaji's Crafting system improvements v3.0
+	* Recipes can have a defined output amount of the crafted item. Eg. 10 lead containers in one crafting.
+	* Recipes can require no tool kit, no recipe and/or no components (this example would be a free spawner).
+	* Tool kit can be any item in the game. Smash scrap metal into roubles with your rpk or cook stuff with a field cooker and 4 components.
+	* Vanilla code is less hardcoded and more forgiving to sloppy crafting recipe format in LTX. Eg. comma in the end of the line doesn't give a crash anymore.
+	* You can make quick recipes like "a_detector_geiger = ,," (won't need anything to craft).
+	* You can have infinite amount of components for future updates of Anomaly/this mod but currently only the first 4 are considered.
+	* Crafting window stays open after crafting (inspiration from TheMrDemonized but implemented differently).
+	* A new recipe section (square brackets) can have any number from -10 000 to 10 000 (-500, -400, ..., 0 are original recipes now) instead of just next number from last one.
+	* Changed crafting section names from eg. [1] into more specific [craft_1]. This avoids potential conflicts if in a distant future someone wants to index some sections also with numbers. You'll need to write all new sections that way.
+	* For the crafting recipe layout in LTX see the test file included with this mod. I commented everything there.
+	* Contains Thisisntmysteamid's "Fixed Crafting With Multi-Use Items v2.5" main file
+	
+	2023.11.09 
+	Banjaji's Crafting system improvements v4.0
+	Overview:
+	* Reworked crafting recipe format and crafting window UI. Modified almost all of crafting system code.
+	* Since I hijacked almost the whole UIWorkshopCraft class then I copied all its functions here and monkeypatched these. In other words, if you want to do something inside UIWorkshopCraft class then all the code is here.
+	General features:
+	* 3 columns: components, tools and results, each has separate frame and scroller. Previously there was one frame with 4 hardcoded items.
+	* Possible infinite (or 0) different crafting components
+	* Possible infinite (or 0) required tools
+	* Possible infinite (or 0) different output items
+	* Can have any note as the recipe note (or none)
+	* Can output fraction of item. When item has e.g. 5 uses (or box 5 bullets) and you output 0.33 items, then you get 2 uses (bullets) (minimum 1). For normal items fraction results in below 100% condition item.
+	* Possibility to deny a tool or component if it's below certain condition (MCM support)
+	* Workshop bottom tip says which notes you need to read to unlock the clicked recipe
+	v4.1
+	* Wrote code more monkeypatchable, sent new callbacks
+	* Lowest condtition items are used first in crafting (inspiration from Utjan's QoL mod)
+	* Renamed functions shorter. Now only functions that have to be ui_workshop.UIWorkshopCraft.* are directly UIWorkshopCraft monkeypatches. Lobotomized other original ui_workshop.UIWorkshopCraft functions.
+	
+--]]
+
+-------------------------------------------------------------------
+-- Global constants
+-------------------------------------------------------------------
+
+-- MCM option: what condition items (greater or equal) to consider as components and tools. Full condition is 1.
+min_craft_item_cond = -1
+
+
+-------------------------------------------------------------------
+-- Functions from script load phase in the order they are called
+-------------------------------------------------------------------
+
+-- Registers callbacks. Called on script load
+function on_game_start()
+	AddScriptCallback("craft_finished")
+end
+
+
+-------------------------------------------------------------------
+-- Monkeypatches
+-------------------------------------------------------------------
+
+-- Is run when the class instance is created
+ui_workshop.UIWorkshopCraft.__init = function(self, xml, owner, x, y) super(xml, owner, x, y)
+	self.owner = owner -- UIWorkshop class
+	self.xml = xml
+	
+	-- Variables that are't initialized in current class. Another script can influence the functions by using these variables.
+	self.intercept_workshop = nil -- to indicate to ui_workshop functions that they are accessed from outside their class. Currently not used
+	self.intercept_draw = nil -- true/false. don't draw gray overlay on icons
+	self.itm_name_color = nil -- color number to use for item names (e.g. GetARGB(200, 50, 255, 50))
+	self.itm_name_size = nil -- whether to use ordinary (nil), small ("small") or medium ("medium") font for item names
+	self.itm_num_color = nil -- color number to use for caption numbers (e.g. GetARGB(200, 50, 255, 50))
+	self.cap_color = nil -- color number to use for caption names (e.g. GetARGB(200, 50, 255, 50))
+	
+	
+	-- Init clicked indexes
+	self.last_index = nil -- clicked element index, vanilla comment: little trick to get clicked item from inv
+	self.last_tab = nil -- clicked recipe tab index
+	self.selected_index = nil -- also clicked element index
+	
+	-- Init tables
+	self.itm_icos = {} -- Save component window icons for self:update() function
+	self.UI_default_comp = {} -- Holder list for component window static textures.
+	self.UI_other_comp = {} -- Holder list for other component window elements. These can be used e.g. by other scripts to resize the component window to new frame
+	self.UI_dynamic_comp = {} -- Holder list for dynamic component window elements. These can be used e.g. by other scripts to resize the component window to new frame
+	self.component_ids = {} -- Table for holding component item ids and uses for crafting discharge
+	
+	-- Init other stuff
+	self.craft_allow = true -- whether crafting is allowed
+	self.min_item_cond = min_craft_item_cond -- Minimum condition for item that is still accepted as crafting component or tool (full cond is 1)
+	
+	
+	-- init recipes
+	self.recipes = {} -- Table of all crafting recipes
+	self.recipes_tab = {} -- Table of all crafting recipes' tab names
+	
+--[[ Comment
+	Output: recipes_table[recipe_tab_index][recipe_index_in_tab] = {
+		["identificator"] = item_section
+		["results"] = {[result_section1] = amount_needed, [result_section2] = amount_needed...}, 
+		["notes"] = {[note_section1] = 1, [note_section2] = 1...},
+		["tools"] = {[tool_section1] = amount_needed, [tool_section2] = amount_needed...}, 
+		["components"] = {[component_section1] = amount_needed, [component_section2] = amount_needed...}
+	}
+
+	Example (8 and 12 are random numbers for the example)
+	self.recipe_tabs[8] = "st_ui_craft_medical"
+	self.recipes[8][12]["identificator"] = "yadylin"
+	self.recipes[8][12]["results"]["yadylin"] = 1
+	self.recipes[8][12]["notes"]["recipe_drug_1"] = 1
+	self.recipes[8][12]["tools"]["itm_drugkit"] = 1
+	self.recipes[8][12]["components"]["drug_sleepingpills"] = 3
+	self.recipes[8][12]["components"]["protein"] = 1
+	self.recipes[8][12]["jar"]["protein"] = 1
+--]]
+	-- Get recipes and recipe tab titles, gives already formated and corrected amounts for crafting. Required amounts (e.g. components) are integers (minimum 1) of uses.
+	-- Results are float (condition, minimum 0) for normal items and integer of uses for multiuse items and ammo (minimum 1).
+	self.recipes = aa_load_recipes_Banjaji_CSI.get_recipes()
+	self.recipes_tab = aa_load_recipes_Banjaji_CSI.get_recipe_tabs()
+	
+	
+	-- Run next functions, draw UI and wait for user input
+	InitControls(self, x, y)
+	InitCallBacks(self)
+	
+	SetTip("craft_intro", nil, nil, nil, true, self.info_text)
+end
+
+-- Reset stuff back to starting position before recipe tab was clicked. Gets run in parent class UIWorkshop after initializing UIWorkshopCraft
+ui_workshop.UIWorkshopCraft.Reset = function(self)
+	self.toolkits_workshop = dup_table(self.owner.toolkits_workshop or {}) -- get the table from parent
+	
+	-- Show/Hide recipes
+	ListRecipes(self)
+	
+	-- Hide listed items
+	self.CC["list"]:Reset()
+	
+	-- Clear component window graphics
+	Clear_component_window(self)
+	
+	empty_table(self.itm_icos) -- Empty icons list
+	self.craft_allow = true -- reset craft flag
+	self.btn_craft:Enable(true) -- reset the craft button
+	
+	empty_table(self.component_ids) -- reset discharge itemIDs
+	empty_table(self.UI_dynamic_comp) -- Empty holder list for dynamic component window elements.
+	
+	-- Show starting text
+	SetTip("craft_intro", nil, nil, nil, true, self.info_text)
+	
+	--self.pos_helper = utils_ui.UIHint(self, 0) -- shows mouse location for debugging XML coordinates
+end
+
+-- Show tooltips when hovering over items
+ui_workshop.UIWorkshopCraft.Update = function(self)
+	CUIScriptWnd.Update(self)
+	local info_box = self.owner.item_info
+	
+	-- Item of active recipe
+	local recipe = self.last_tab and self.last_index and self.recipes[self.last_tab] and self.recipes[self.last_tab][self.selected_index]
+	
+	-- For code injection
+	local to_return
+	to_return, info_box, recipe = monkeypatch_update1(self, info_box, recipe)
+	if to_return then return end
+	
+	if recipe then -- item exists
+		for id_item_obj,name in pairs(self.itm_icos) do 
+			if id_item_obj and name and id_item_obj:IsCursorOverWindow() then
+				
+				info_box:Update(nil,name)
+				return
+			end
+		end
+	end
+	
+	-- For code injection
+	to_return, info_box = monkeypatch_update2(self, info_box)
+	if to_return then return end
+	
+	-- Item cells
+	local found_cell = false
+	for name,cc in pairs(self.CC) do
+		found_cell = cc:Update(info_box) or found_cell
+	end
+	if found_cell then
+		return
+	end
+	
+	-- For code injection
+	to_return, info_box = monkeypatch_update3(self, info_box)
+	if to_return then return end
+	
+	info_box:Update()
+	
+	-- UIWorkshopCraft class draws workshop window background: self.owner.dialog
+	-- self coordinates in XML are relative to self.owner.dialog
+	-- self.component_frame
+	-- self.itm_b
+	--debug_position(self.pos_helper, self.owner.dialog, 0, 0) -- Show cursor coordinates
+end 
+
+-- Process mouse press for cells and escape key for exiting
+ui_workshop.UIWorkshopCraft.OnKeyboard = function(self, dik, keyboard_action)
+	local res = CUIScriptWnd.OnKeyboard(self,dik,keyboard_action)
+	if (res == false) then
+		-- For code injection
+		local to_return
+		to_return, dik, keyboard_action, res = monkeypatch_keyboard1(self, dik, keyboard_action, res) 
+		if to_return then return end
+		
+		for name,cc in pairs(self.CC) do
+			cc:OnKeyboard(dik, keyboard_action)
+		end
+		
+		-- For code injection
+		to_return, dik, keyboard_action, res = monkeypatch_keyboard2(self, dik, keyboard_action, res) 
+		if to_return then return end
+		
+		--local bind = dik_to_bind(dik)
+		if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+			if dik == DIK_keys.DIK_ESCAPE then
+				Close(self)
+			end
+		end
+	end
+	return res
+end
+
+-- Do something when player clicks on container cell
+ui_workshop.UIWorkshopCraft.On_CC_Mouse1 = function(self, cont, idx)
+	if cont ~= "list" then
+		return
+	end
+	
+	local ci = self.CC["list"].cell[idx]
+	if (not ci) then
+		return
+	end
+	
+	self.last_index = ci.flags.info
+	if (not self.last_index) then
+		return
+	end
+	
+	-- Draw component window and check if crafting is possible
+	Recipe_clicked(self)
+end
+
+ui_workshop.UIWorkshopCraft.__finalize = function(self)
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions from __init phase in the order they are called
+-------------------------------------------------------------------
+
+-- Initializes static UI elements and stuff before registering them in callbacks
+-- self coordinates are at top left of screen x=0,y=0, self.owner.dialog (craft window) coordinates should be x=27,y=50 (frame in XML) but actually are x=124,y=50
+function InitControls(self, x, y)
+	local xml = self.xml
+	
+	-- Second XML file that holds component window data
+	self.xml_comp = CScriptXmlInit()
+	self.xml_comp:ParseFile("Banjaji_CSI_workshop.xml")
+	local xml_comp = self.xml_comp
+	
+	self:SetWndPos(vector2():set(x,y))
+	--self:SetAutoDelete(true)
+
+	-- Base titles and layout
+	xml:InitStatic("workshop:craft:cap_menu", self)
+	xml:InitStatic("workshop:craft:cap_list", self)
+	xml:InitStatic("workshop:craft:cap_recipes", self)
+	xml:InitStatic("workshop:craft:pic_menu_b", self)
+	xml:InitStatic("workshop:craft:pic_recipe_b", self)
+	xml:InitStatic("workshop:craft:pic_inv_b", self)
+	
+	-- Bottom info
+	self.info_text = xml:InitTextWnd("workshop:text_info" , self)
+	
+	-- List to components line
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_list_h", self)
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_list_v", self)
+	
+	-- Component window frame
+	self.mainframe = self.xml_comp:InitStatic("workshop:craft:component_window:mainframe", self)
+	
+	-- Initialize static UI elements for component window
+	InitControls_comp_win(self, self.mainframe, xml_comp)
+	
+	-- Enable crafting button
+	self:Register(self.btn_craft, "button_craft") -- don't know where the function comes from, maybe engine
+	self.btn_craft:Enable(true) -- allow clicking the craft button
+	
+	-- Hide component window stuff
+	Show_static(self, false)
+	self.line_lone_tool:Show(false)
+	self.arrow_lone_tool:Show(false)
+	
+	-- Recipe tab list
+	self.list_menu = xml:InitListBox("workshop:craft:list_menu",self)
+	self.list_menu:ShowSelectedItem(true)
+	self.list_menu:Show(true)
+	self:Register(self.list_menu, "list_menu") -- don't know where the function comes from, maybe engine
+	
+	-- Draw recipe tabs to upper left window
+	for i=1,#self.recipes_tab do
+		local _itm = ui_workshop.list_element(i, self.recipes_tab[i])
+		self.list_menu:AddExistingItem(_itm)
+	end
+	
+	-- Container scrolls
+	self.CC = {
+		["list"] = utils_ui.UICellContainer("list", self, nil, "workshop:craft:cont_list", self), -- clickable recipe list in the center
+		["recipe"] = utils_ui.UICellContainer("recipe", self, nil, "workshop:craft:cont_recipe", self), -- notes list in bottom left
+	}
+	
+	self.CC["list"].can_select = true -- allow clicking on recipe
+	
+	for name,cc in pairs(self.CC) do
+		cc.showcase  = true
+		cc.disable_drag  = true
+		cc.disable_stack = true -- vanilla comment: important, to sync indexes with meals table
+		cc:SetGridSpecs(35, 2)
+	end
+end
+
+-- Initialize static UI elements for component window. It's also used by item_recipe.script
+function InitControls_comp_win(self, mainframe, xml_comp)
+	-- Titles
+	local cap_c = xml_comp:InitTextWnd("workshop:craft:component_window:cap_components", mainframe)
+	local cap_t = xml_comp:InitTextWnd("workshop:craft:component_window:cap_tools", mainframe)
+	local cap_r = xml_comp:InitTextWnd("workshop:craft:component_window:cap_result", mainframe)
+	
+	-- if color is defined from another script then this can be used
+	if self.cap_color then 
+		cap_c:SetTextColor(self.cap_color)
+		cap_t:SetTextColor(self.cap_color)
+		cap_r:SetTextColor(self.cap_color)
+	end
+	self.UI_default_comp[#self.UI_default_comp+1] = cap_c
+	self.UI_default_comp[#self.UI_default_comp+1] = cap_t
+	self.UI_default_comp[#self.UI_default_comp+1] = cap_r
+	
+	-- Lines, if an element is created later (e.g. component_frame) then that is drawn on top
+	-- List to components
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_arrow_down_c", mainframe)
+	
+	-- Components to tools
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_c_h", mainframe)
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_c_v", mainframe)
+	self.arrow_tool = xml_comp:InitStatic("workshop:craft:component_window:line_arrow_up_t", mainframe)
+	self.UI_default_comp[#self.UI_default_comp+1] = self.arrow_tool
+	-- show if only one tool
+	self.line_lone_tool = xml_comp:InitStatic("workshop:craft:component_window:line_lone_tool", mainframe) 
+	self.arrow_lone_tool = xml_comp:InitStatic("workshop:craft:component_window:arrow_lone_tool", mainframe)
+	self.UI_other_comp[#self.UI_other_comp+1] = self.line_lone_tool
+	self.UI_other_comp[#self.UI_other_comp+1] = self.arrow_lone_tool
+	
+	-- Tools to results
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_t_h", mainframe)
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_t_v", mainframe)
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:line_arrow_down_r", mainframe)
+	
+	
+	-- create three areas for a scrollbar, set self class instance as parent (coordinate origin is self.owner.dialog origin)
+	self.component_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_c", mainframe)
+	self.tool_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_t", mainframe)
+	self.result_frame = xml_comp:InitStatic("workshop:craft:component_window:frame_r", mainframe)
+	
+	-- Vertical scroll lines
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:vert_line_scr", self.component_frame)
+	self.UI_default_comp[#self.UI_default_comp+1] = xml_comp:InitStatic("workshop:craft:component_window:vert_line_scr", self.tool_frame)
+	
+	-- Scrollbar frames
+	self.UI_default_comp[#self.UI_default_comp+1] = self.component_frame
+	self.UI_default_comp[#self.UI_default_comp+1] = self.tool_frame
+	self.UI_default_comp[#self.UI_default_comp+1] = self.result_frame
+	
+	-- Create three scrollbars, set corresponding frame as parent. 
+	-- This has to be after vertical scroll lines, so that they are rendered under scrollbars
+	-- Need to create the scrollbars here as semi-static objects because only scrollbar:Clear() works 
+	self.scrollbar_comp = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.component_frame)
+	self.scrollbar_tool = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.tool_frame)
+	self.scrollbar_res = xml_comp:InitScrollView("workshop:craft:component_window:scrollbar", self.result_frame)
+	self.scrollbar_res:SetFixedScrollBar(false) -- don't always show scrollbar (e.g. without items)
+	self.UI_other_comp[#self.UI_other_comp+1] = self.scrollbar_comp
+	self.UI_other_comp[#self.UI_other_comp+1] = self.scrollbar_tool
+	self.UI_other_comp[#self.UI_other_comp+1] = self.scrollbar_res
+	
+	-- Button
+	self.btn_craft = xml_comp:Init3tButton("workshop:craft:component_window:btn_craft", mainframe)
+	self.UI_default_comp[#self.UI_default_comp+1] = self.btn_craft
+end
+
+-- Toggle components window static images. Also used by item_recipe.script
+function Show_static(self, to_show)
+	for _,image in pairs(self.UI_default_comp) do
+		image:Show(to_show)
+	end
+end
+
+-- Register callbacks. Registers craft and cancel button and recipe tab list. There's no cancel button, so that callback doesn't do anything right now
+function InitCallBacks(self)
+	self:AddCallback("button_cancel",	ui_events.BUTTON_CLICKED,		Close,		self) -- don't know where the function comes from, maybe engine
+	self:AddCallback("button_craft",	ui_events.BUTTON_CLICKED,		Craft,		self) -- don't know where the function comes from, maybe engine
+	self:AddCallback("list_menu",		ui_events.LIST_ITEM_CLICKED,	ListItems,	self) -- don't know where the function comes from, maybe engine
+end
+
+-- Modify the original ui_workshop.script function to take also multiple strings for multiple string injections
+function SetTip(tip, warning, solution, str_list, pass, XMLtxt, allow_nonSecs)
+	local str = "" -- "• "
+	local name = ""
+	
+	-- Find names to sections
+	if type(str_list) == "string" then -- Convert string to table (backwards compatibility)
+		if allow_nonSecs then -- pass already formated names
+			str_list = {str_list or ""} -- prevent nil values
+		else
+			str_list = {str_list and ui_item.get_sec_name(str_list) or ""}
+		end
+	end
+	
+	str_list = str_list or {} -- prevent nil value
+	-- Iterate over passed strings and get section names
+	for i,sec in ipairs(str_list) do
+		if allow_nonSecs then -- pass already formated names
+			str_list[i] = sec or "" -- prevent nil values
+		else
+			str_list[i] = sec and ui_item.get_sec_name(sec) or ""
+		end
+	end
+	
+	
+	if tip and pass then
+		local str_tip = game.translate_string("st_ui_workshop_info_" .. tip)
+		str = str .. utils_xml.get_color("ui_gray_2") .. strformat(str_tip, unpack(str_list)) -- variable amount of arguments for strformat, Xray has "old LUA"
+	else
+		if warning then
+			local str_warning = game.translate_string("st_ui_workshop_info_" .. warning)
+			str = str .. utils_xml.get_color("d_orange") .. strformat(str_warning, unpack(str_list)) -- variable amount of arguments for strformat, Xray has "old LUA"
+		end
+		if solution then
+			local str_solution = game.translate_string("st_ui_workshop_info_" .. solution)
+			str = str .. utils_xml.get_color("ui_gray_2") .. " \\n" .. strformat(str_solution, unpack(str_list)) -- variable amount of arguments for strformat, Xray has "old LUA"
+		end
+	end
+	
+	XMLtxt:SetText(str)
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions from Reset phase in the order they are called
+-------------------------------------------------------------------
+
+-- Draw recipe note icons in lower left window
+function ListRecipes(self)
+	
+	-- Recipes showcase
+	if is_empty(self.CC["recipe"].cell) then
+		local inv, size_t = {}, 0
+		for recipe,_ in pairs(GetItemList("recipe")) do
+			size_t = size_t + 1
+			inv[size_t] = recipe
+		end
+		inv = monkeypatch_listRecipes1(self, inv)
+		self.CC["recipe"]:Reinit(inv)
+	end
+	
+	local recipe_notes_table = get_unlocked_recipes(self)
+	
+	-- Show/hide unlocked/locked recipes items
+	for idx,ci in pairs(self.CC["recipe"].cell) do
+		if ci:IsShown() then
+			if recipe_notes_table[ci.section] then
+				ci:Colorize("def")
+			else
+				ci:Colorize("hide")
+			end
+		end
+	end
+end
+
+-- Get table of unlocked/locked recipes items
+function get_unlocked_recipes(self)
+	local recipe_notes_table = {}
+	for recipe,_ in pairs(GetItemList("recipe")) do
+		local state = false
+		if ui_pda_encyclopedia_tab.is_unlocked_note("encyclopedia__notes_" .. recipe) then
+			state = true
+		end
+		recipe_notes_table[recipe] = state
+	end
+	return recipe_notes_table
+end
+
+-- Clears or hides component window graphics objects. Also used by item_recipe.script
+-- Don't use self:function(), so that this function can be used in other scripts
+function Clear_component_window(self)
+	Show_static(self, false)
+	self.line_lone_tool:Show(false)
+	self.arrow_lone_tool:Show(false)
+	
+	-- self.component_frame:DetachAll() -- not exported to LUA
+	self.scrollbar_comp:Clear()
+	self.scrollbar_tool:Clear()
+	self.scrollbar_res:Clear()
+	empty_table(self.UI_dynamic_comp) -- Empty holder list for dynamic component window elements.
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions that require player input
+-------------------------------------------------------------------
+
+-- Close the GUI
+function Close(self)
+	self.owner:Close()
+end
+
+-- Recipe tab was clicked, draw recipe icons in the central window
+function ListItems(self)
+	local xml = self.xml
+	
+	-- Clear component window
+	Reset_icons(self)
+	
+	utils_obj.play_sound("interface\\inv_page")
+	
+	-- Get selected tab index
+	local menu = self.list_menu:GetSelectedItem()
+	if (not menu) then return end
+	self.last_tab = menu.idx
+	
+	-- Get recipe identificators
+	local r = self.recipes[self.last_tab] -- tab section chosen
+	local inv, ind, size_t = {},{}, 0
+	for k,v in pairs(r) do -- iterate over recipes in tab
+		size_t = size_t + 1
+		inv[size_t] = v.identificator -- save identificator section
+		ind[size_t] = k -- save original index
+	end
+	
+	inv, ind = monkeypatch_listItems1(self, inv, ind)
+	self.CC["list"]:Reinit(inv, ind) -- draw the recipe icons in central window
+	
+	-- Iterate over recipe icons
+	for i,ci in pairs(self.CC["list"].cell) do
+		if ci:IsShown() then
+			local ii = ci.flags.info
+			
+			-- Check read notes and whether recipe is available
+			local is_known,_ = is_recipe_known(r[ii].notes)
+			
+			-- Color unknown recipes grey
+			if is_known then
+				ci:Colorize("def")
+			else
+				ci:Colorize("hide")
+			end
+		end
+	end
+	
+	-- Show text after recipe tab was clicked
+	SetTip("craft_tip_1", nil, nil, nil, true, self.info_text)
+end
+
+-- Reset shown items in component window
+function Reset_icons(self)
+
+	self.itm_icos = {} -- Empty icons list
+	self.component_ids = {} -- empty crafting discharge components
+	
+	-- Clear component window graphics
+	Clear_component_window(self)
+	
+	self.craft_allow = true
+	self.btn_craft:Enable(true) -- reset the craft button
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions from On_CC_Mouse1 phase in the order they are called
+-------------------------------------------------------------------
+
+-- Draw component window and check if crafting is possible
+function Recipe_clicked(self)
+	
+	-- Load the recipe
+	local recipe = self.last_tab and self.last_index and self.recipes[self.last_tab] and self.recipes[self.last_tab][self.last_index]
+	if (not recipe) then
+		return
+	end
+	
+	self.selected_index = self.last_index
+	
+	-- Clear component window
+	Reset_icons(self)
+	
+	-- check whether recipe is unlocked and return list of unknown required notes
+	local is_unlocked, unread_list = is_recipe_known(recipe.notes)
+	is_unlocked, unread_list = monkeypatch_recipeClicked1(self, is_unlocked, unread_list)
+	
+	-- a click on a recipe that isn't unlocked
+	if (not is_unlocked) then 
+		-- Show tip which notes still need to be read
+		recipe_locked(self, unread_list)
+		return
+	end
+	
+	-- Play recipe opening sound, draw component window for the recipe and set new tip
+	recipe_unlocked(self, recipe)
+end
+
+-- Show tip which notes still need to be read
+function recipe_locked(self, unread_list)
+	local _unknown_recipes_parts = {}
+	
+	-- iterate over required notes
+	for i,note in ipairs(unread_list) do
+		note = note and ui_item.get_sec_name(note) or "" -- section to name
+		
+		if i ~= 1 then -- 2nd+ component has comma
+			_unknown_recipes_parts[#_unknown_recipes_parts+1] = ", "
+		end
+		_unknown_recipes_parts[#_unknown_recipes_parts+1] = note
+	end
+	local unknown_recipes = table.concat(_unknown_recipes_parts)
+	
+	unknown_recipes = monkeypatch_recipeLocked1(self, unknown_recipes) -- to intercept unknown recipes tip
+	
+	-- Lacking notes, explain that in tooltip and provide missing note names
+	SetTip(nil, "craft_warning_2_banjaji", "craft_solution_2", {unknown_recipes}, false, self.info_text, true) -- intercepted function
+	--self.btn_craft:Enable(true) -- reset the craft button (still doesn't show)
+end
+
+-- Play recipe opening sound, draw component window for the recipe and set new tip
+function recipe_unlocked(self, recipe)
+	utils_obj.play_sound("interface\\items\\inv_items_cloth_" .. tostring(math.random(2,3)))
+	
+	-- Draw component window
+	Draw_icons(self, recipe)
+	
+	-- Set bottom text
+	if self.craft_allow then
+		-- can craft
+		SetTip("craft_tip_5_banjaji", nil, nil, "this", true, self.info_text,true) -- intercepted function
+	else
+		-- Not enough components or tools
+		SetTip(nil, "craft_warning_4_banjaji", "craft_solution_4", nil, false, self.info_text)
+	end
+end
+
+-- Check if necessary notes are unlocked and recipe is available
+function is_recipe_known(notes_table, extra_known_notes)
+	local recipe_known = true
+	local unread_list = {}
+	
+	-- check if all necessary notes have been read
+	for note,_ in pairs(notes_table)do 
+		local note_known = is_note_known(note, extra_known_notes)
+		recipe_known = recipe_known and note_known -- check for all unlocked notes
+		if not note_known then
+			unread_list[#unread_list+1] = note
+		end
+	end
+	
+	return recipe_known, unread_list
+end
+
+-- Check if the note is read and unlocked. It's accessed in ui_pda_encyclopedia_tab_monkeypatch_Banjaji_CSI.script
+function is_note_known(note_item_sec, extra_known_notes)
+	if type(extra_known_notes) ~= "table" then -- create correct format
+		extra_known_notes = {extra_known_notes} -- if nil then empty, if string then contains 1 element
+	end
+	
+	local is_default = is_in_table(aa_load_recipes_Banjaji_CSI.default_recipe_notes, note_item_sec) -- is it default note (unlocked but not in ui_pda_encyclopedia_tab)
+	local is_unlocked = ui_pda_encyclopedia_tab.is_unlocked_note("encyclopedia__notes_" .. note_item_sec) -- is the note read and in encyclopedia
+	local is_known = (is_default or is_unlocked or is_in_table(extra_known_notes,note_item_sec)) and true or false
+	return is_known
+end
+
+-- Iterate over table values and if section is in values return true. For some weird reason the script doesn't recognize this function at the end of the file anymore.
+function is_in_table(table, section)
+	for _, value in pairs(table) do
+		if (section == value) then
+			return true
+		end
+	end
+	return false
+end
+
+-- Draws components, tools, results and static images according to item recipe.
+-- Don't use self:function(), so that this function can be used in other scripts. This function is accessed also from item_recipe.script
+function Draw_icons(self, recipe)
+	--utils_data.print_table(recipe.components)
+	--tableLength(recipe.components)
+	
+	-- Draw scrollbars and fill with content
+	Draw_scrollbar(self, self.scrollbar_comp, recipe, "components") -- checks self.craft_allow
+	Draw_scrollbar(self, self.scrollbar_tool, recipe, "tools") -- checks self.craft_allow
+	Draw_scrollbar(self, self.scrollbar_res, recipe, "results") -- Results scrollbar has to be last because it reads self.craft_allow
+	
+	Show_static(self, true) -- show static UI elements
+	
+	monkeypatch_drawCraftBtn1(self) -- to intercept craft button enabling
+	self.btn_craft:Enable(self.craft_allow) -- Allow/block the craft button
+	
+	-- if there's only one tool, show extra line and arrow
+	if (tableLength(recipe.tools) == 1) then 
+		self.line_lone_tool:Show(true)
+		self.arrow_lone_tool:Show(true)
+		self.arrow_tool:Show(false) -- hide default arrow
+	end
+end
+
+-- Gets table length. For some weird reason the script doesn't recognize this function at the end of the file anymore.
+function tableLength(table)
+	local count = 0
+	if type(table) == "table" then
+		for _ in pairs(table) do count = count + 1 end
+	end
+	return count
+end
+
+
+-- Draws scrollbar contents
+-- Don't use self:function(), so that this function can be used in other scripts.
+function Draw_scrollbar(self, scrollbar, recipe, scrollbar_type)
+	local draw_lines = (scrollbar_type ~= "results") and true or false -- don't draw for results
+	
+	-- Iterate over items in the list
+	for item,amount in pairs(recipe[scrollbar_type]) do
+		
+		-- Create frame for item background, icon, amount etc in the scrollable window
+		local frame = self.xml_comp:InitStatic("workshop:craft:component_window:frame_component", scrollbar)
+		frame:SetAutoDelete(true) -- I guess for garbage collection in Xray
+		
+		local background = self.xml_comp:InitStatic("workshop:craft:component_window:pic_item_b", frame) -- item background, frame is parent
+		local itm_name = self.xml_comp:InitTextWnd("workshop:craft:component_window:text_item_name", frame) -- item name text, frame is parent
+		local itm_num = self.xml_comp:InitTextWnd("workshop:craft:component_window:text_item_num", background) -- item amount text, background is parent
+		local itm_ico = self.xml_comp:InitStatic("workshop:craft:component_window:pic_icon", background) -- item icon, background is parent
+		--self.itm_ico_temp = self.xml_comp:InitStatic("workshop:craft:component_window:pic_icon", background) -- item icon, background is parent
+		
+		-- Save dynamic elements
+		self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = frame
+		self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = background
+		self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = itm_name
+		self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = itm_num
+		self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = itm_ico
+		
+		if draw_lines then
+			local itm_line = self.xml_comp:InitStatic("workshop:craft:component_window:pic_line", background) -- horizontal line, background is parent
+			self.UI_dynamic_comp[#self.UI_dynamic_comp+1] = itm_line
+		end
+		
+		-- save icons for self:update() function. Saves with icon as key to avoid clashes of same item
+		self.itm_icos[itm_ico] = item
+		
+		-- Writes text into itm_name image
+		local name = ui_item.get_sec_name(item) or item
+		itm_name:SetText(name)
+		
+		-- If another script uses these functions then these variables can be intercepted
+		if self.itm_name_color then -- if color is defined from another script
+			itm_name:SetTextColor(self.itm_name_color)
+		end 
+		if self.itm_name_size == "small" then -- if font is defined from another script
+			itm_name:SetFont(GetFontSmall())
+		elseif self.itm_name_size == "medium" then
+			itm_name:SetFont(GetFontMedium())
+		end
+		
+		-- Writes item amount and whether crafting is possible, updates graphics
+		UpdateItem(self, recipe, scrollbar_type, item, itm_ico, itm_num)
+	end
+end
+
+-- Show correct amount of items and color text/icons
+-- Don't use self:function(), so that this function can be used in other scripts.
+function UpdateItem(self, recipe, scrollbar_type, item_sec, itm_ico_UI, itm_num_UI)
+
+	if scrollbar_type == "results" then -- result
+		update_result(self, recipe, scrollbar_type, item_sec, itm_ico_UI, itm_num_UI)
+	else -- component or tool
+		update_non_result(self, recipe, scrollbar_type, item_sec, itm_ico_UI, itm_num_UI)
+	end
+end
+
+-- Draw result item icon, number and potentially get intercepted by another script
+function update_result(self, recipe, scrollbar_type, item_sec, itm_ico_UI, itm_num_UI)
+	local amount = recipe[scrollbar_type][item_sec] -- how many uses required/gained, amount is already corrected for item type in aa_load_recipes_Banjaji_CSI.script
+	
+	-- Draw output item number
+	itm_num_UI:SetText(tostring(amount))
+	
+	-- Change output item number color
+	if self.craft_allow or self.intercept_draw then -- can craft or outside script requests it
+		itm_num_UI:SetTextColor(GetARGB(200, 50, 255, 50)) -- green color
+	else
+		itm_num_UI:SetTextColor(GetARGB(250, 255, 50, 50)) -- red color
+	end
+	
+	-- If this function is intercepted from another script, allow for custom number color
+	if self.itm_num_color then
+		itm_num_UI:SetTextColor(self.itm_num_color)
+	end
+	
+	local grey_out_item = (not self.craft_allow)
+	
+	-- If this function is intercepted from another script, allow for non-greyed icons
+	if self.intercept_draw then
+		grey_out_item = false
+	end
+	
+	-- Draw item icon. craft_allow controls whether is greyed out
+	utils_xml.set_icon(item_sec, grey_out_item, itm_ico_UI, itm_ico_UI) -- first is temp_itm_ico, then actual itm_ico
+end
+
+-- Draw tool/component item icon, number and potentially get intercepted by another script
+function update_non_result(self, recipe, scrollbar_type, item_sec, itm_ico_UI, itm_num_UI)
+	local amount = recipe[scrollbar_type][item_sec] -- how many uses required/gained, amount is already corrected for item type in aa_load_recipes_Banjaji_CSI.script
+	local req_comp_amt = recipe.components[item_sec] or 0 -- item amount for components
+	
+	local has_amount, id_table = has_how_many(item_sec, self.min_item_cond) -- how many item uses in inventory
+	has_amount,id_table,amount,req_comp_amt = monkeypatch_updateNonresult1(self, has_amount,id_table,amount,req_comp_amt) -- for intercepting values
+	self.component_ids[item_sec] = id_table
+	
+	-- same item in components and tools, reconsider required amount
+	if (scrollbar_type == "tools") then
+		has_amount = update_tool(self,item_sec,has_amount,req_comp_amt)
+	end
+	
+	-- Draw number text
+	itm_num_UI:SetText(tostring(has_amount) .. "/" .. tostring(amount))
+	local is_greyed = false
+	if (has_amount >= amount) then -- enough items
+		itm_num_UI:SetTextColor(GetARGB(200, 50, 255, 50)) -- green color
+		is_greyed = false
+	else -- missing items
+		itm_num_UI:SetTextColor(GetARGB(250, 255, 50, 50)) -- red color
+		self.craft_allow = false -- block crafting if even one component/tool is missing
+		is_greyed = true
+	end
+	
+	-- In case this function is intercepted from another script, allow for custom variables
+	if self.itm_num_color then -- if it's defined by another script then use custom number color
+		itm_num_UI:SetTextColor(self.itm_num_color)
+	end
+	if self.intercept_draw then -- if it's defined by another script then use non-greyed icons
+		is_greyed = false
+	end
+	
+	-- Draw item icon. craft_allow controls whether is clear or greyed out
+	utils_xml.set_icon(item_sec, is_greyed, itm_ico_UI, itm_ico_UI) -- first is temp_itm_ico, then actual itm_ico
+end
+
+-- Count how many item uses you have in inventory and save itemIDs and corresponding amounts into table
+function has_how_many(item_sec, min_item_cond)
+	min_item_cond = min_item_cond or -1
+	local has_amount = 0
+	
+	-- Iterate over inventory and collect valid items
+	local parts_id = {} -- register every object once
+	local function search(temp, item_obj)
+		local id = item_obj:id()
+		
+		-- item exists and isn't already in table and condition is larger than minimum accepted condition (full cond is 1), 
+		if (item_obj:section() == item_sec) and (not parts_id[id]) and (item_obj:condition() >= min_item_cond) then 
+			
+			-- Find item uses left or ammo count left for that box
+			local uses = 1
+			if IsItem("ammo",item_sec) then -- ammo box
+				local ammo = get_object_by_id(id)
+				if ammo then -- object exists
+					uses = ammo:ammo_get_count() -- actual ammo count in object
+				end
+			
+			else -- normal item
+				uses = IsItem("multiuse",nil,item_obj) and item_obj:get_remaining_uses() or 1 -- count item uses
+			end
+			parts_id[id] = uses -- saves both components and tools here but who cares
+			has_amount = has_amount + uses
+		end
+	end
+	db.actor:iterate_inventory(search,nil) -- run the function over every item in inventory
+	
+	return has_amount, parts_id
+end
+
+-- Check if mechanic has the required item (toolkit) and "fill" components number first if same item for component and tool
+function update_tool(self,item_sec,has_amount,req_comp_amt)
+	
+	-- Iterate over mechanic's tool kits and add it to has_amount
+	for i,workshop_toolkit in ipairs(ui_workshop.workshop_toolkits) do -- iterate over standard toolkits
+		if (workshop_toolkit == item_sec) then -- standard toolkit required
+			local has_tool = self.toolkits_workshop[i] and true or false -- if mechanic has the toolkit
+			if has_tool then
+				has_amount = has_amount + 1
+			end
+			break
+		end
+	end
+	
+	has_amount = has_amount - req_comp_amt -- first fill components and then tools (ignores for components)
+	has_amount = math.max(has_amount, 0) -- can't go negative
+	
+	return has_amount
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions from Craft phase in the order they are called
+-------------------------------------------------------------------
+
+-- Run once craft button has been enabled and player clicked it
+function Craft(self)
+	monkeypatch_craft1(self) -- for intercepting craft
+	if (not self.craft_allow) then -- extra check
+		return 
+	end
+	
+	-- Load the recipe
+	local recipe = self.last_tab and self.last_index and self.recipes[self.last_tab] and self.recipes[self.last_tab][self.selected_index]
+	
+	-- Iterate over components and remove them from inventory
+	remove_components(self, recipe)
+	
+	-- Spawn every result item for specified amount in inventory. Amount already is corrected to the item type in aa_load_recipes_Banjaji_CSI.script
+	give_results(self, recipe)
+	
+	-- Effect
+	actor_effects.play_item_fx("craft_dummy")
+	
+	-- Send callback that crafting finished
+	SendScriptCallback("craft_finished", recipe, self) -- pass recipe for easy access and self table to read all values
+	
+	-- Reset to the point you clicked the recipe after a pause for the previous items to discharge. Keeps the window open.
+	local function after_pause_for_crafting()
+		Reset_icons(self)-- Reset component window
+		
+		-- Draw and calculate everything again like you clicked on the same recipe
+		local recipe = self.last_tab and self.last_index and self.recipes[self.last_tab] and self.recipes[self.last_tab][self.last_index]
+		Draw_icons(self, recipe)
+		
+		return true -- for the TimeEvent to stop
+	end
+	
+	-- Pause before continuing with the code. Otherwise new part isn't spawned before it is checked
+	local pause_seconds = 0.01
+	CreateTimeEvent("pause_ID","Pause_for_item_creation_craft",pause_seconds,after_pause_for_crafting)
+end
+
+-- Iterate over components and remove them from inventory
+function remove_components(self, recipe)
+	for item_sec,amount in pairs(recipe["components"]) do
+		
+		-- iterate over saved itemIDs in inventory
+		local ordered_id_table = order_comp_by_cond(item_sec, self.component_ids[item_sec]) -- order items from low to high condition/uses
+		for index,id_cnt in ipairs(ordered_id_table) do
+			
+			if amount <= 0 then break end -- all components used up
+			
+			-- Get id and count from ordered table
+			local id = id_cnt.id
+			local count = id_cnt.count
+			
+			item_sec,amount,id,count = monkeypatch_removeComponents1(self,item_sec,amount,id,count) -- for intercepting values
+			
+			if amount >= count then -- not enough, delete item
+				alife_release_id(id)
+				amount = amount - count
+			else -- some is left over, discharge uses from item
+				local obj_itm = get_object_by_id(id)
+				if obj_itm then -- object exists
+					if IsItem("ammo",item_sec) then -- ammo box
+						obj_itm:ammo_set_count((count - amount)) -- change the ammo count in box
+					else -- normal item
+						utils_item.discharge(obj_itm, amount) -- discharge remaining amount
+					end
+					amount = 0
+				end
+			end
+		end
+		if amount > 0 then -- just in case
+			-- printe("! UIWorkshopCraft.Craft() | amount is [%s] after iterating over component_ids!", tostring(amount))
+		end
+	end
+end
+
+-- Creates a list of item IDs that go in the order of item condition/uses (lowest first)
+-- Inspiration from Utjan's QoL mod
+-- table = {[1] = {["id"] = id1, ["count"] = count1}, [2] = {["id"] = id2, ["count"] = count2},...}
+function order_comp_by_cond(item_sec, component_id_count)
+	local ordering_table = {}
+	local output_table = {}
+	
+	-- Function for passing to spairs() for sorting order
+	local function value_sort_ascending(t, a, b)
+		return t[a] < t[b]
+	end
+	
+	-- multiuse item
+	if IsItem("multiuse",item_sec) then 
+		
+		-- iterate over all saved item IDs, save uses
+		for id,count in pairs(component_id_count) do 
+			local obj = get_object_by_id(id)
+			ordering_table[id] = obj and utils_item.get_item_remaining_uses(obj) -- write id,uses pairs
+		end
+		
+		-- Sort item list by uses (lowest first)
+		for id, uses in spairs(ordering_table, value_sort_ascending) do
+			output_table[#output_table+1] = {["id"] = id, ["count"] = component_id_count[id]} -- pass original table in new form
+		end
+	
+	-- normal item that has condition (not bullets)
+	elseif utils_item.is_degradable(nil, item_sec) then 
+		
+		-- iterate over all saved item IDs, save conditions
+		for id,count in pairs(component_id_count) do 
+			local obj = get_object_by_id(id)
+			ordering_table[id] = obj and obj:condition() -- write id,condition pairs
+		end
+		
+		-- Sort item list by condition (lowest first)
+		for id, cond in spairs(ordering_table, value_sort_ascending) do
+			output_table[#output_table+1] = {["id"] = id, ["count"] = component_id_count[id]} -- pass original table in new form
+		end
+	
+	-- other items (e.g. bullets or notes)
+	else 
+		for id,count in pairs(component_id_count) do
+			output_table[#output_table+1] = {["id"] = id, ["count"] = count} -- pass original table in new form
+		end
+	end
+	
+	return output_table
+end
+
+-- Spawn every result item for specified amount in inventory. Amount already is corrected to the item type in aa_load_recipes_Banjaji_CSI.script
+function give_results(self, recipe)
+	for item_sec,amount in pairs(recipe["results"]) do
+		
+		item_sec,amount = monkeypatch_giveResults1(self,item_sec,amount) -- for intercepting values
+		
+		if IsItem("ammo",item_sec) then -- ammo boxes
+			alife_create_item(item_sec, db.actor, {["ammo"] = amount}) -- automatically creates full boxes and partial box
+		else -- other items
+			give_other(self,item_sec,amount)
+		end
+		
+		-- Increase Statistic for every different item
+		game_statistics.increment_statistic("items_crafted")
+	end
+end
+
+-- Spawn non-ammo item
+function give_other(self,item_sec,amount)
+	
+	-- create full items
+	local max_uses = get_max_uses(item_sec) -- get max uses for the item
+	local full_n = math.floor(amount / max_uses) -- full use items
+	for i = 1, full_n do
+		alife_create_item(item_sec, db.actor,  {["uses"] = max_uses})
+	end
+	
+	-- create partial item
+	create_partial(self,item_sec,amount,max_uses,full_n)
+end
+
+-- Find max item uses (multiuse item or ammo box ammo count) or return 1
+function get_max_uses(item_sec)
+	local max_uses = 1
+	
+	if IsItem("ammo",item_sec) then -- ammo box
+		max_uses = IsItem("ammo",item_sec) or 1
+	elseif IsItem("multiuse",item_sec) then -- multi-use item
+		max_uses = ini_sys:r_float_ex(item_sec,"max_uses") or 1
+	end
+	
+	return max_uses
+end
+
+-- create partial or below 100% condition item
+function create_partial(self,item_sec,amount,max_uses,full_n)
+	if IsItem("multiuse",item_sec) then -- multi-use item, give some uses
+		local partial_uses = (amount - full_n * max_uses)
+		if partial_uses >= 1 then -- don't create items with 0 uses
+			alife_create_item(item_sec, db.actor,  {["uses"] = partial_uses})
+		end
+	else -- normal items, give item with below 100% condition
+		create_partial_cond(self,item_sec,amount)
+	end
+end
+
+function create_partial_cond(self,item_sec,amount)
+	local condition = amount - math.floor(amount) -- gets fraction of the float
+	if condition > 0 then
+		local server_item = alife_create_item(item_sec, db.actor,  {["cond"] = condition}) -- spawn last item with partial condition (doesn't work!?), also takes time to excecute
+		
+		-- Set spawned part condition as the removed part condition after a pause
+		local function after_pause_for_item_creation(id,cond)
+			local item = get_object_by_id(id)
+			item:set_condition(cond)
+			return true -- stop TimeEvent
+		end
+		
+		-- Pause before continuing with the code. Otherwise new part (eg headgear) isn't spawned before its condition is modified
+		local pause_seconds = 0.01
+		CreateTimeEvent("pause_ID","Pause_for_item_creation",pause_seconds,after_pause_for_item_creation,server_item.id,condition)
+	end
+end
+
+
+
+-------------------------------------------------------------------
+-- Functions for monkeypatching current script
+-------------------------------------------------------------------
+
+function monkeypatch_update1(self, info_box, recipe) 
+	return false, info_box, recipe
+end
+function monkeypatch_update2(self, info_box) 
+	return false, info_box
+end
+function monkeypatch_update3(self, info_box)
+	return false, info_box
+end
+function monkeypatch_keyboard1(self, dik, keyboard_action, res)
+	return false, dik, keyboard_action, res
+end
+function monkeypatch_keyboard2(self, dik, keyboard_action, res)
+	return false, dik, keyboard_action, res
+end
+function monkeypatch_listRecipes1(self, inv)
+	return inv
+end
+function monkeypatch_listItems1(self, inv, ind)
+	return inv, ind
+end
+function monkeypatch_recipeClicked1(self, is_unlocked, unread_list)
+	return is_unlocked, unread_list 
+end
+function monkeypatch_recipeLocked1(self, unknown_recipes)
+	return unknown_recipes
+end
+function monkeypatch_drawCraftBtn1(self)
+	return
+end
+function monkeypatch_updateNonresult1(self, has_amount,id_table,amount,req_comp_amt)
+	return has_amount,id_table,amount,req_comp_amt
+end
+function monkeypatch_craft1(self)
+	return 
+end
+function monkeypatch_removeComponents1(self,item_sec,amount,id,count)
+	return item_sec,amount,id,count
+end
+function monkeypatch_giveResults1(self,item_sec,amount)
+	return item_sec,amount
+end
+
+
+
+-------------------------------------------------------------------
+-- Lobotomized UIWorkshopCraft class functions
+-------------------------------------------------------------------
+-- These functions serve no purpose but if other mods access them then they could mess things up, so now they're empty
+
+ui_workshop.UIWorkshopCraft.ShowComponents = function() end
+ui_workshop.UIWorkshopCraft.InitControls = function() end
+ui_workshop.UIWorkshopCraft.InitCallBacks = function() end
+ui_workshop.UIWorkshopCraft.LoadRecipes = function() end
+ui_workshop.UIWorkshopCraft.ListRecipes = function() end
+ui_workshop.UIWorkshopCraft.ListItems = function() end
+ui_workshop.UIWorkshopCraft.UpdateItem = function() end
+ui_workshop.UIWorkshopCraft.ShowComponents = function() end
+ui_workshop.UIWorkshopCraft.Craft = function() end
+ui_workshop.UIWorkshopCraft.Close = function(self) -- Okay, this one can stay, closes entire workshop GUI
+	self.owner:Close()
+end
+
+
+-------------------------------------------------------------------
+-- Debug functions
+-------------------------------------------------------------------
+
+-- Draws cursor coodinates at cursor location with utils_ui.UIHint
+function debug_position(UI, reference_UI, sub_x, sub_y)
+	
+	if not UI then return end
+
+	-- Get cursor coordinates
+	local pos = GetCursorPosition()
+	local x = pos.x
+	local y = pos.y
+	
+	-- Correct coordinates by reference
+	local pos_ref
+	local ref_str = ""
+	local par_str = ""
+	if reference_UI and reference_UI.GetWndPos then
+		pos_ref = reference_UI:GetWndPos()
+		x = x - pos_ref.x
+		y = y - pos_ref.y
+		
+		ref_str = "Parent cursor: x=" .. round_string(x) .. ", y=" .. round_string(y) .. "                    "
+		par_str = "Parent: x= " .. round_string(pos_ref.x) .. ", y=" .. round_string(pos_ref.y)
+	end
+	
+	-- Correct coordinates manually
+	if sub_x and tonumber(sub_x) then
+		x = x - sub_x
+	end
+	if sub_y and tonumber(sub_y) then
+		y = y - sub_y
+	end
+	
+	-- Compile string, UI ignores newline characters
+	-- utils_ui.UIHint window fits 41 numbers onto one line but letters have different spacing, so I can't automatically format line length
+	local output = "Corrected cursor: x=" .. round_string(x) .. ", y=" .. round_string(y) .. "                 "
+	output = output .. "Original cursor: x=" .. round_string(pos.x) .. ", y=" .. round_string(pos.y) .. "                 "
+	output = output .. ref_str
+	output = output .. par_str
+	
+	-- Draw coordinates
+	UI:Update(output)
+end
+
+-------------------------------------------------------------------
+-- Utility functions. For some weird reason the script doesn't recognize these function here anymore and need to be closer to where they're called from.
+-------------------------------------------------------------------
+
+-- Iterate over table keys and if section is in keys return true
+function is_in_table_keys(table, section)
+	for key, _ in pairs(table) do
+		if (section == key) then
+			return true
+		end
+	end
+	return false
+end
+
+-- Round to precision, if precision is not defined, round to integer
+function round(number, precision)
+	local str
+	if precision then
+		local fmtStr = string.format('%%0.%sf',precision)
+		str = string.format(fmtStr,number)
+	else
+		str = string.format("%.0f",number)
+	end
+	
+	return tonumber(str)
+end
+-- Round to integer and convert to string
+function round_string(x)
+	return tostring(round(x))
+end

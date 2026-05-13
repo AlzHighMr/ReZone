@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_aek972">
+		<text>AEK-972</text>
+	</string>
+	<string id="st_wpn_aek972_descr">
+		<text>The AEK-972 is a 5.56x45mm version of the AEK-971. It is compatible with the various magazines of the AK-100 rifle family such as the AK-101, AK-102 carbine and AK-108. Its purpose of being an export for Western Countries came short in The Zone, for some expensive black markets were able to acquire this variant and sell it around.\n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 Kobra, 1P29, PSO-1 scopes\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A suppressor\n
+		%c[d_purple] • %c[ui_gray_2] GP-25 grenade launcher\n \n</text>
+	</string>
+	
+	<string id="st_wpn_a545">
+		<text>A-545</text>
+	</string>
+	<string id="st_wpn_a545_descr">
+		<text>The A-545 is a successor of the AEK-971 that saw limited service in the Russian Army, making it very rare even in The Zone. Other than its subtle improvements, which includes a more compact yet ergonomic sliding stock, a rotatory rear drum aperture sight and a two-round burst instead of three, the most obvious would be the lack of a dovetail mount in favour of a Picatinny rail, allowing it to use NATO scopes. \n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] ACOG, Barska ES AC10632, C-More, EOTech scopes\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A suppressor\n
+		%c[d_purple] • %c[ui_gray_2] GP-25 grenade launcher\n \n</text>
+	</string>
+	
+	<string id="st_up_aekkit_silencer_name">
+		<text>Custom Muzzle Modification</text>
+	</string>
+	<string id="st_up_aekkit_silencer_descr">
+		<text>Changing of the muzzle allows the gun to attach a silencer, but also slightly reduces fire-rate, accuracy and reliability overall.</text>
+	</string>
+	
+	<string id="st_up_aekkit_rpm_name">
+		<text>Original Experimental Cyclic Rate</text>
+	</string>
+	<string id="st_up_aekkit_rpm_descr">
+		<text>Restores the prototype cyclic rate back to 1500 RPM, but also decreases reliability.</text>
+	</string>
+	
+	<string id="st_up_aekkit_recoil_name">
+		<text>Lead-Based Recoil Buffer</text>
+	</string>
+	<string id="st_up_aekkit_recoil_descr">
+		<text>Installs a very heavy recoil buffer, heavily reducing recoil but also adding a lot of weight and reducing RPM.</text>
+	</string>
+	
+	<string id="st_up_a545_unique_name">
+		<text>3-round Hyperburst</text>
+	</string>
+	<string id="st_up_a545_unique_descr">
+		<text>Custom cyclic system lets the gun fire at 1600 RPM on the first three rounds.</text>
+	</string>
+	
+</string_table>

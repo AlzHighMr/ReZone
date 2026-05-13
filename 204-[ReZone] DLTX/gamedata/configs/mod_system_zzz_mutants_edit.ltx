@@ -1,0 +1,404 @@
+;===========================================================================
+;	BLOODSUCKER
+;===========================================================================
+![bloodsucker_weak]:m_bloodsucker_e
+MaxHealthValue         = 0.75              
+skin_armor = 0.10
+
+![bloodsucker_normal]:m_bloodsucker_e
+MaxHealthValue         = 1.0             
+skin_armor = 0.15
+
+![bloodsucker_strong]:m_bloodsucker_e
+MaxHealthValue         = 1.5              
+skin_armor = 0.20
+
+; Attack Animation Parameters
+![m_bloodsucker_attack_params]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim                    | time[0..1] | hit_power | impulse | impulse_dir (x,y,z)  | Field of hit_test  (left,right, top, bottom) |  Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+;Left hand Strike
+stand_attack_0 =           0.30,   0.75,       30,        3.0, 2.0, 0.5,     -0.6, 0.6, -0.6, 0.6,          2.2
+;Both hands Strike
+stand_attack_1 =           0.30,   0.90,       35,        0.0, 2.0, 4.0,     -0.6, 0.6, -0.6, 0.6,          2.2
+;Right hand Strike
+stand_attack_2 =           0.30,   0.75,       30,       -4.0, 2.5, 0.50,    -0.6, 0.6, -0.6, 0.6,          2.2
+;Right hand Strike
+vampire_2   =     	       0.60,   0.80,       35,        0.0, 2.5, 4.50,    -1.2, 1.2, -1.2, 1.2,	        4.5
+stand_run_attack_left_0  = 0.30,   0.7,        40,        3.0, 2.0, 0.5,     -1.0, 1.0, -1.0, 1.0,          2.5
+stand_run_attack_right_0 = 0.30,   0.7,        35,        3.0, 2.0, 0.5,     -1.0, 1.0, -1.0, 1.0,          2.5
+
+
+
+
+
+;===========================================================================
+;	CROWS
+;===========================================================================
+![m_crow]
+min_height              = 19                            ;25
+
+;===========================================================================
+;	BOAR
+;===========================================================================
+;=========================================================================== 
+; BOAR (NERFED BALANCE PASS)
+;===========================================================================
+
+![boar_attack_params_normal]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim | time | hit_power | impulse | impulse_dir | hit_test | dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+
+; Bite
+stand_attack_0 =        0.30, 0.40, 45, 0.0, 0.45, 0.45,   -1.0, 1.0, -1.0, 1.0,   2.3
+; Bite2
+stand_attack_1 =        0.30, 0.40, 45, 0.0, 0.45, 0.45,   -1.0, 1.0, -1.0, 1.0,   2.3
+; Right Leg Attack
+stand_attack_2 =        0.30, 0.42, 45, 0.0, 0.9, 1.6,    -0.8, 0.8, -1.0, 1.0,   2.5
+
+; Run attacks 
+stand_attack_run_0 =          0.40, 0.60, 210, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+stand_attack_run_left_0 =      0.40, 0.55, 210, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+stand_attack_run_right_0 =     0.40, 0.55, 210, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+
+
+![boar_attack_params_strong]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim | time | hit_power | impulse | impulse_dir | hit_test | dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+
+; Bite
+stand_attack_0 =        0.20, 0.52, 45, 0.0, 0.45, 0.45,   -1.0, 1.0, -1.0, 1.0,   2.3
+; Bite2
+stand_attack_1 =        0.20, 0.52, 45, 0.0, 0.45, 0.45,   -1.0, 1.0, -1.0, 1.0,   2.3
+; Right Leg Attack
+stand_attack_2 =        0.20, 0.55, 45, 0.0, 0.9, 1.6,    -0.8, 0.8, -1.0, 1.0,   2.5
+
+; Run attacks 
+stand_attack_run_0 =          0.40, 0.72, 240, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+stand_attack_run_left_0 =      0.40, 0.68, 240, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+stand_attack_run_right_0 =     0.40, 0.68, 240, 0.0, 0.9, 1.6,   -1.0, 1.0, -1.0, 1.0,   3.0
+
+
+![m_boar_e]:monster_base
+MinAttackDist			= 2.4
+MaxAttackDist			= 2.9
+aom_attack_radius		= 0.45
+aom_prediction_factor	= 0.95
+
+
+![m_boar_step_params]
+stand_run_fwd_0	 	=  	  1,	0.01,   2.2,	     0.05,    2.2,    0.2,    2.2,     0.2,   2.2
+stand_run_dmg_0		=	  4,	0.2,    2.2,	     0.25,    2.2,    0.7,    2.2,     0.7,   2.2
+
+
+![boar_02a_weak]:boar_01a_weak
+MaxHealthValue         = 0.75
+MinAttackDist			= 2.4
+MaxAttackDist			= 2.9
+aom_attack_radius		= 0.45
+aom_prediction_factor	= 0.95
+
+
+![boar_02a_strong]:boar_strong
+MaxHealthValue         = 1.10
+MinAttackDist			= 2.4
+MaxAttackDist			= 2.9
+aom_attack_radius		= 0.45
+aom_prediction_factor	= 0.95
+
+
+![boar_01a_hard]:m_boar_e
+MaxHealthValue         = 1.20
+MinAttackDist			= 2.4
+MaxAttackDist			= 2.9
+aom_attack_radius		= 0.45
+aom_prediction_factor	= 0.95
+
+
+![boar_02a_hard]:boar_01a_hard
+MaxHealthValue         = 1.25
+MinAttackDist			= 2.4
+MaxAttackDist			= 2.9
+aom_attack_radius		= 0.45
+aom_prediction_factor	= 0.95
+
+;===========================================================================
+;	SNORK
+;===========================================================================
+![snork_protections]
+skin_armor = 0.25
+hit_fraction_monster = 0.4
+
+![m_snork_e]
+Health							= 115
+MaxHealthValue					= 105
+max_hear_dist					= 55
+
+jump_factor 					= 1.15
+jump_delay						= 6200
+jump_ground_trace_range			= 1.2
+jump_hit_trace_range			= 1.6
+jump_build_line_distance		= 5.0
+jump_min_distance				= 2.5
+jump_max_distance				= 7.0
+jump_max_angle					= 0.45
+jump_max_height					= 11
+
+MinSpeed						= 0.9
+MaxSpeed						= 3.5
+
+MinAttackDist			    	= 0.2
+MaxAttackDist			    	= 2.4
+
+![snork_weak2]:m_snork_e
+MaxHealthValue					= 0.50
+
+![snork_weak3]:m_snork_e
+MaxHealthValue					= 0.60
+
+![snork_normal2]:m_snork_e
+MaxHealthValue					= 0.72
+
+![snork_normal3]:m_snork_e
+MaxHealthValue					= 0.82
+
+![snork_strong2]:m_snork_e
+MaxHealthValue					= 0.92
+
+![snork_strong3]:m_snork_e
+MaxHealthValue					= 1.0
+
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim                     | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | hit_test | dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+![snork_attack_params_weak]
+stand_attack_0 =            0.30,       0.30,        18,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.5
+stand_attack_2_1 =          0.30,       0.36,        22,       0.0, 0.8, 1.5,        -1.5, 1.5, -1.5, 1.5,        2.5
+stand_run_attack_left_0  =  0.40,       0.40,        20,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.5
+stand_run_attack_right_0 =  0.40,       0.40,        20,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.5
+
+
+![snork_attack_params_normal]
+stand_attack_0 =            0.30,       0.41,        22,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.7
+stand_attack_2_1 =          0.30,       0.45,        26,       0.0, 0.8, 1.6,        -1.5, 1.5, -1.5, 1.5,        2.7
+stand_run_attack_left_0  =  0.40,       0.45,        24,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.7
+stand_run_attack_right_0 =  0.40,       0.45,        24,       0.0, 0.4, 0.4,        -1.5, 1.5, -1.5, 1.5,        2.7
+
+
+![snork_attack_params_strong]
+stand_attack_0 =            0.30,       0.50,        28,       0.0, 0.5, 0.5,        -1.6, 1.6, -1.6, 1.6,        2.9
+stand_attack_2_1 =          0.30,       0.54,        32,       0.0, 0.9, 1.8,        -1.6, 1.6, -1.6, 1.6,        2.9
+stand_run_attack_left_0  =  0.40,       0.54,        28,       0.0, 0.5, 0.5,        -1.6, 1.6, -1.6, 1.6,        2.9
+stand_run_attack_right_0 =  0.40,       0.54,        28,       0.0, 0.5, 0.5,        -1.6, 1.6, -1.6, 1.6,        2.9
+
+
+
+
+;===========================================================================
+;	PSEUDODOG
+;===========================================================================
+![m_pseudodog_e]
+jump_auto_aim_factor = 0
+
+;----------------------------------------------------------------------------
+; Movement::Velocities & Acceleration
+;----------------------------------------------------------------------------
+; speed factors            linear | angular_real | angular_path | min  | max
+
+Velocity_Stand             = 0.0,  1.4,            1.4,            1.0,   1.0
+Velocity_RunFwdNormal      = 6.5,  2.0,            2.0,            0.05,  1.0
+Velocity_RunFwdDamaged     = 4.5,  2.0,            2.0,            0.5,   1.0
+Velocity_WalkFwdNormal     = 4.8,  2.0,            2.0,            0.1,   1.0
+Velocity_WalkFwdDamaged    = 2.2,  2.5,            2.5,            0.1,   2.0
+Velocity_Drag              = 0.6,  0.8,            0.8,            1.0,   1.0
+Velocity_Steal             = 1.4,  2.5,            2.5,            1.0,   1.0
+
+; acceleration
+Accel_Generic              = 1.5
+Accel_Calm                 = 2.0
+Accel_Aggressive           = 15.0
+
+![psy_dog_attack_params]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim            | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | Field of hit_test (left,right,top,bottom) | Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; Bite
+stand_attack_0 =   0.25,  0.40,  24,  0.0, 1.0, 1.0,   -1.0, 1.0, -1.0, 1.0,   1.5
+
+; Jump attack
+run_jamp_1    =    0.55,  0.65,  55,  0.0, 1.0, 3.0,   -1.6, 1.6, -1.6, 1.6,   1.0
+
+
+![m_pseudodog_attack_params]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim            | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | Field of hit_test (left,right,top,bottom) | Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; Bite
+stand_attack_0 =   0.20,  0.38,  24,  0.0, 1.0, 1.0,   -1.0, 1.0, -1.0, 1.0,   2.0
+
+; Jump attack
+run_jamp_1    =    0.55,  0.60,  55,  0.0, 1.0, 3.0,   -1.6, 1.6, -1.6, 1.6,   1.0
+
+
+![pseudodog_attack_params_weak]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim            | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | Field of hit_test (left,right,top,bottom) | Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; Bite
+stand_attack_0 =   0.20,  0.32,  20,  0.0, 1.0, 1.0,   -1.0, 1.0, -1.0, 1.0,   2.0
+
+; Jump attack
+run_jamp_1    =    0.50,  0.52,  45,  0.0, 1.0, 2.5,   -1.6, 1.6, -1.6, 1.6,   1.0
+
+
+![pseudodog_attack_params_normal]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim            | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | Field of hit_test (left,right,top,bottom) | Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+
+; Bite
+stand_attack_0 =   0.25,  0.38,  24,  0.0, 1.0, 1.0,   -1.0, 1.0, -1.0, 1.0,   1.5
+
+; Jump attack
+run_jamp_1    =    0.55,  0.65,  55,  0.0, 1.0, 3.0,   -1.6, 1.6, -1.6, 1.6,   1.0
+
+
+![pseudodog_attack_params_strong]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+; anim            | time[0..1] | hit_power | impulse | impulse_dir (x,y,z) | Field of hit_test (left,right,top,bottom) | Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+
+; Bite
+stand_attack_0 =   0.20,  0.48,  28,  0.0, 1.0, 1.0,   -1.0, 1.0, -1.0, 1.0,   2.0
+
+; Jump attack
+run_jamp_1    =    0.55,  0.78,  70,  0.0, 1.0, 3.5,   -1.7, 1.7, -1.7, 1.7,   1.0
+
+
+
+;===========================================================================
+;	CAT
+;===========================================================================
+![cat_test]
+jump_auto_aim_factor = 0
+
+![cat_attack_params]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+;	anim			| time[0..1] | hit_power | impulse | impulse_dir (x,y,z)  |	Field of hit_test  (left,right, top, bottom) |	Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+;Left leg strike
+stand_attack_0 =	  	0.25,		0.30,		    30,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.5
+;Both leg strike
+stand_attack_1 =	  	0.30,		0.30,		    30,       	0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						3.5
+stand_attack_rat_0  =	0.40,		0.32,			30,			0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+jump_attack_2		=	0.50,		0.40,			70,			0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+;Run attack
+stand_run_attack_0 =  	0.25,		0.30,		    60,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.0
+
+
+
+
+
+;===========================================================================
+;	FRACTURE (IZLOM)
+;===========================================================================
+
+![fracture_normal]:monster_base
+hit_type = wound
+hit_power			= 30.0
+ImpulseMin			= 450.0
+ImpulseMax			= 500.0
+MinAttackDist		= 1.8
+MaxAttackDist		= 2.6
+
+![fracture_normal_attack_params]
+;---------------------------------------------------------------------------------------------------------------------------------------------
+;	anim			| time![0..1] | hit_power | impulse | impulse_dir (x,y,z)  |	Field of hit_test  (left,right, bottom, top ) |	Test Dist
+;---------------------------------------------------------------------------------------------------------------------------------------------
+stand_attack_0 =	  	0.45,		0.40,		    13,        0.0, 1.0, 0.0,		 -1.6, 1.6, -1.6, 1.6,							  3.5
+stand_attack_1 =	  	0.45,		0.50,		    16,        0.0, 1.0, 0.0,		 -1.6, 1.6, -1.6, 1.6,							  3.5
+stand_attack_2 =	  	0.45,		0.60,		    15,        0.0, 1.0, 0.0,		 -1.6, 1.6, -1.6, 1.6,							  3.5
+
+
+; IMMUNITIES
+![fracture_normal_immunities]
+burn_immunity = 0.8				
+strike_immunity = 0.8
+shock_immunity = 0.8
+wound_immunity = 0.50	;0.75	;1.0
+radiation_immunity = 0.5
+telepatic_immunity = 1.0
+chemical_burn_immunity = 0.2
+explosion_immunity = 0.8
+fire_wound_immunity  = 6
+
+![fracture_weak]:fracture_normal
+skin_armor				= 0.01
+hit_fraction_monster = 0.6
+
+![fracture_strong]:fracture_normal
+skin_armor				= 0.015
+hit_fraction_monster = 0.9
+
+![fracture_2]:fracture_normal
+skin_armor				= 0.01
+hit_fraction_monster = 0.7
+
+
+![fracture_3]:fracture_normal
+skin_armor				= 0.01
+hit_fraction_monster = 0.7
+
+;===========================================================================
+;	BORYA
+;===========================================================================
+![m_borya_e]
+jump_auto_aim_factor = 0.0
+
+
+;===========================================================================
+;	CONTROLLER
+;===========================================================================
+
+![m_controller_e]:monster_base
+spawn_phantom 		= m_phantom_controller
+can_spawn_phantom 	= true
+
+
+;===========================================================================
+;	PHANTOMS
+;===========================================================================
+![m_phantom]
+contact_hit				= 0.14
+speed                   = 1.7
+;===========================================================================
+;	Zombie
+;===========================================================================
+![m_zombie_e]
+MinSpeed        = 1.5
+MaxSpeed        = 5.5
+
+![zombie_protections]
+skin_armor           = 0.1
+hit_fraction_monster = 0.5
+
+; speed factors     linear | angular_real | angular_path | min  |  max
+Velocity_Stand          = 0,    1.4,    1.4,    1,    1
+Velocity_WalkFwdNormal  = 1.2,  0.8,    0.8,    0.05, 2.2
+Velocity_RunFwdNormal   = 2.2,  3.5,    3.5,    0.5,  1.2
+Velocity_WalkFwdDamaged = 0.9,  3.0,    1.0,    0.3,  2.0
+Velocity_RunFwdDamaged  = 1.8,  3.2,    3.2,    0.3,  1.1
+Velocity_Drag           = 1.2,  3.0,    3.0,    1,    1
+Velocity_Steal          = 1.8,  3.0,    3.0,    1,    1
+
+; acceleration
+Accel_Generic      = 2.0
+Accel_Calm         = 3.0
+Accel_Aggressive   = 9.0
+
+;attack parameters
+MinAttackDist      = 1.6
+MaxAttackDist      = 2.2

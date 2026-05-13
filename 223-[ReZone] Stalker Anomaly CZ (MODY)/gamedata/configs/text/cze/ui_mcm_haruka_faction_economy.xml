@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+<string id="ui_mcm_faction_economy_title">
+	<text>Ekonomika frakcí</text>
+</string>
+<string id="ui_mcm_menu_faction_economy">
+	<text>Faction Based Economy</text>
+</string>
+<string id="ui_mcm_faction_economy_use_faction_discounts">
+	<text>Násobitel slev frakce</text>
+</string>
+<string id="ui_mcm_faction_economy_use_faction_discounts_desc">
+	<text>Povoluje násobitel založený na vztazích mezi frakcemi.</text>
+</string>
+<string id="ui_mcm_faction_economy_use_goodwill_mul">
+	<text>Násobitel dobré vůle</text>
+</string>
+<string id="ui_mcm_faction_economy_use_goodwill_mul_desc">
+	<text>Povoluje násobitel založený na dobré vůli. (výchozí nastavení platí pouze pro vaši frakci)</text>
+</string>
+<string id="ui_mcm_faction_economy_use_ignore_faction_goodwill">
+	<text>Ignorovat frakci pro násobitel dobré vůle</text>
+</string>
+<string id="ui_mcm_faction_economy_use_ignore_faction_goodwill_desc">
+	<text>Umožňuje, aby násobitel dobré vůle fungoval pro všechny frakce.</text>
+</string>
+<string id="ui_mcm_faction_economy_use_reputation_mul">
+	<text>Násobitel pověsti</text>
+</string>
+<string id="ui_mcm_faction_economy_use_reputation_mul_desc">
+	<text>Povoluje násobitel založený na reputaci postav.</text>
+</string>
+<string id="ui_mcm_faction_economy_use_north_level_mul">
+	<text>Vyšší ceny na severu</text>
+</string>
+<string id="ui_mcm_faction_economy_use_north_level_mul_desc">
+	<text>Způsobuje, že ceny na severu jsou vyšší kvůli nedostatku.</text>
+</string>
+<string id="ui_mcm_faction_economy_chance_for_extra_item">
+	<text>Pravděpodobnost dalšího předmětu u obchodníka vaší frakce</text>
+</string>
+<string id="ui_mcm_faction_economy_required_supply_level">
+	<text>Požadovaná úroveň dobré vůle pro ostatní frakce</text>
+</string>
+<string id="ui_mcm_faction_economy_required_supply_level_desc">
+	<text>Úroveň dobré vůle, při které obchodníci z ostatních frakcí začnou prodávat výbavu frakce.</text>
+</string>
+<string id="ui_mcm_faction_economy_goodwill_mul">
+	<text>Násobící faktor ceny dobré vůle</text>
+</string>
+<string id="ui_mcm_faction_economy_rep_mul">
+	<text>Násobící faktor ceny reputace</text>
+</string>
+<string id="ui_mcm_faction_economy_ammo_amount_special">
+	<text>Množství speciální munice</text>
+</string>
+<string id="ui_mcm_faction_economy_ammo_amount">
+	<text>Množství normální munice</text>
+</string>
+<string id="ui_mcm_faction_economy_ammo_amount_special_desc">
+	<text>Množství speciální (AP, HP, náboje s broky, šipky atd.) munice, která bude vygenerována na základě prodávaných zbraní obchodníka.</text>
+</string>
+<string id="ui_mcm_faction_economy_ammo_amount_desc">
+	<text>Množství normální munice, která bude vygenerována na základě prodávaných zbraní obchodníka.</text>
+</string>
+<string id="ui_mcm_faction_economy_use_trade_GUI">
+	<text>Povolit další informace v obchodním menu</text>
+</string>
+<string id="ui_mcm_faction_economy_use_special_ammo_spawns">
+	<text>Použít speciální spawnování munice</text>
+</string>
+<string id="ui_mcm_faction_economy_use_trade_GUI_desc">
+	<text>Povoluje další informace vedle portrétu obchodníka s informacemi o aktuálním násobiteli a úrovni zásob.</text>
+</string>
+<string id="ui_mcm_faction_economy_use_special_ammo_spawns_desc">
+	<text>Povoluje pravidla pro speciální spawnování munice u obchodníků. Namísto použití obchodních souborů se munice místo toho generuje na základě prodávaných zbraní.</text>
+</string>
+<string id="st_haruka_sulpplies_level">
+	<text>Level zásob</text>
+</string>
+<string id="st_haruka_multiplier">
+	<text>Násobitel</text>
+</string>
+</string_table>

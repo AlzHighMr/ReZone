@@ -1,0 +1,72 @@
+
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_companion_anti_awol_title">
+		<text>Companion Anti Awol</text>
+	</string>
+	<string id="ui_mcm_menu_companion_anti_awol">
+		<text>Companion Anti Awol</text>
+	</string>
+
+	<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol">
+	<text>Povolit, aby spoleèník ignoroval boj podle vzdálenosti od hráèe</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_desc">
+	<text>Povolení/zakázání ignorování boje spoleèníkem podle vzdálenosti od hráèe</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_player_distance">
+	<text>Vzdálenost pro ignorování boje (sledovat)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_player_distance_desc">
+	<text>Spoleèník bude ignorovat boj, když dosáhne zadané vzdálenosti od hráèe (v metrech)</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_allow_combat_player_distance">
+	<text>Vzdálenost pro opìtovný boj (sledovat)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_allow_combat_player_distance_desc">
+	<text>Spoleèník se znovu zapojí do boje, když dosáhne zadané vzdálenosti od hráèe (v metrech)</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_distance">
+	<text>Vzdálenost pro ignorování boje (jít k markeru)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_distance_desc">
+	<text>Spoleèník bude ignorovat boj, když dosáhne zadané vzdálenosti od markeru (v metrech)</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_allow_combat_goto_distance">
+	<text>Vzdálenost pro opìtovný boj (jít k markeru)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_allow_combat_goto_distance_desc">
+	<text>Spoleèník se znovu zapojí do boje, když dosáhne zadané vzdálenosti od markeru (v metrech)</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_enemy">
+	<text>Povolit, aby spoleèník ignoroval boj podle vzdálenosti nepøítele</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_enemy_desc">
+	<text>Povolení/zakázání ignorování boje spoleèníkem podle vzdálenosti mezi hráèem a nepøítelem</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_enemy_distance">
+	<text>Vzdálenost pro ignorování boje (sledovat)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_enemy_distance_desc">
+	<text>Spoleèník bude ignorovat boj, pokud je nepøítel mimo zadanou vzdálenost od hráèe (v metrech)</text>
+</string>
+
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_enemy_distance">
+	<text>Vzdálenost pro ignorování boje (jít k markeru)</text>
+</string>
+<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_enemy_distance_desc">
+	<text>Spoleèník bude ignorovat boj, pokud je nepøítel mimo zadanou vzdálenost od markeru (v metrech)</text>
+</string>
+
+</string_table>

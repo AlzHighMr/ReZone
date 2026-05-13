@@ -1,0 +1,33 @@
+[logic]
+active = ph_idle@check_actor
+
+[ph_idle@check_actor]
+on_info = {=actor_true_community(monolith:greh)} ph_idle@stop_2, ph_idle@play
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@play]:ph_idle@base
+on_info = %+monolith_lim_outpost_megafone_1%
+tips = Turn:Off
+on_use = %=stop_sound% ph_idle@stop
+
+[ph_idle@stop]:ph_idle@base
+on_info = %-monolith_lim_outpost_megafone_1%
+on_info2 = {-lim_monolith_commander_dead} ph_idle@reset, ph_idle@stop %=stop_sound%
+tips = Turn:On
+on_use = ph_idle@play
+
+[ph_idle@stop_2]:ph_idle@base
+on_info = %-monolith_lim_outpost_megafone_1%
+on_info2 = {-lim_monolith_commander_dead} ph_idle@play
+tips = Turn:On
+on_use = ph_idle@play
+
+[ph_idle@reset]:ph_idle@base
+tips = Turn:On
+on_use = ph_idle@play
+on_game_timer = 15500 | ph_idle@play
+
+[collide]
+ignore_static

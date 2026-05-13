@@ -1,0 +1,236 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy 
+sell_condition = trade_generic_sell
+buy_supplies = {=toolkit_task_done(3)} supplies_4, {=toolkit_task_done(2)} supplies_3, {=toolkit_task_done(1)} supplies_2, supplies_1
+buy_item_condition_factor = 0.60
+buy_item_exponent = 1.75
+sell_item_exponent = 0.75
+
+discounts = discount_mechanic
+
+[trade_generic_buy]:mechanic, toolkits_h
+itm_pda_common                           ;NO TRADE
+itm_pda_rare                             ;NO TRADE
+itm_pda_uncommon                         ;NO TRADE
+pri_a25_explosive_charge_item            ;NO TRADE
+
+[trade_generic_sell]:mechanic, toolkits_h
+
+
+
+;========================================================;
+;                    SUPPLIES 1 (no tools)
+;========================================================;
+[supplies_1]:common_stock	
+;========================================================
+;  Recipes
+;========================================================
+recipe_basic_1          = 1, 1
+recipe_advanced_1       = 1, 1
+recipe_cooking_1        = 1, 1
+recipe_ammo_pistol      = 1, 1
+recipe_ammo_shotgun     = 1, 1
+
+;========================================================
+;  Tools
+;========================================================
+swiss_knife             = 1, 1
+leatherman_tool         = 1, 0.50
+rasp_tool               = 1, 0.50
+ramrod_tool             = 1, 0.50
+;========================================================
+;  Junk
+;========================================================
+ball_hammer                     = 1, 0.25
+duct_tape                       = 1, 0.30
+grease                          = 1, 0.25
+steel_wool                      = 1, 0.30
+sharpening_stones               = 1, 0.20
+rope                            = 1, 0.25
+
+prt_i_paper                     = 1, 0.80
+prt_i_textolite                 = 1, 0.85
+prt_i_capacitors                = 1, 0.80
+prt_i_transistors               = 1, 0.80
+prt_i_resistors                 = 1, 0.80
+prt_i_copper                    = 1, 0.85
+prt_i_wood                      = 1, 0.80
+prt_i_scrap                     = 1, 0.80
+prt_i_fasteners                 = 1, 0.80
+prt_i_rubber                    = 1, 0.85
+prt_i_plastic                   = 1, 0.85
+
+stalker_patch                   = 1, 0.65
+jar                             = 1, 0.60
+beadspread                      = 1, 0.65
+walkie                          = 1, 0.65
+cards                           = 1, 0.60
+boots                           = 1, 0.60
+headlamp                        = 1, 0.50
+welding_goggles                 = 1, 0.40
+flashlight_broken               = 1, 0.40
+tarpaulin                       = 1, 0.50
+synthrope                       = 1, 0.50
+casing_p                        = 10, 0.80
+casing_s                        = 10, 0.80
+casing_r5                       = 10, 0.80
+casing_r7                       = 10, 0.80
+powder_1                        = 10, 0.80
+powder_2                        = 10, 0.80
+powder_3                        = 10, 0.80
+bullet_pistol                   = 10, 0.80
+bullet_pistol_ap                = 10, 0.80
+bullet_shotgun                  = 10, 0.80
+bullet_shotgun_ap               = 10, 0.80
+bullet_r5                       = 10, 0.80
+bullet_r5_ap                    = 10, 0.80
+bullet_r7                       = 10, 0.80
+bullet_r7_ap                    = 10, 0.80
+;========================================================
+;  Repair
+;========================================================
+gun_oil                 = 1, 0.60
+gun_oil_ru_d            = 1, 0.60
+gun_oil_ru              = 1, 0.60
+solvent                 = 1, 0.60
+
+cleaning_kit_p          = 1, 0.60
+cleaning_kit_s          = 1, 0.60
+toolkit_p               = 1, 0.60
+toolkit_s               = 1, 0.60
+
+sewing_kit_b            = 1, 0.60
+sewing_kit_a            = 1, 0.60
+sewing_kit_h            = 1, 0.60
+
+glue_b                  = 1, 0.60
+glue_a                  = 1, 0.60
+glue_e                  = 1, 0.60
+
+armor_repair_fa         = 1, 0.60
+sewing_thread           = 3, 0.60
+light_repair_kit        = 1, 0.60
+heavy_sewing_thread     = 1, 0.60
+
+
+
+;========================================================;
+;                    SUPPLIES 2 (basic tools delivered)
+;========================================================;
+[supplies_2]:supplies_1		
+;========================================================
+;  Recipes
+;========================================================
+recipe_basic_2          = 1, 1
+recipe_advanced_2       = 1, 1
+;recipe_ammo_2           = 1, 1
+;recipe_cooking_2        = 1, 1
+recipe_expert_1         = 1, 1
+recipe_ammo_ru1         = 1, 1
+recipe_ammo_nato        = 1, 1
+;========================================================
+;  Tools & Junk (boost)
+;========================================================
+swiss_knife             = 1, 0.70
+ball_hammer             = 2, 0.70
+duct_tape               = 2, 0.70
+grease                  = 2, 0.70
+steel_wool              = 3, 0.70
+sharpening_stones       = 1, 0.70
+
+
+;========================================================
+;  Parts
+;========================================================
+prt_o_fabrics_1                 = 1, 0.25
+prt_o_fabrics_2                 = 1, 0.20
+prt_o_fabrics_3                 = 1, 0.15
+prt_o_fabrics_4                 = 1, 0.12
+
+prt_o_ballistic_1               = 1, 0.20
+prt_o_ballistic_2               = 1, 0.18
+prt_o_ballistic_3               = 1, 0.16
+prt_o_ballistic_4               = 1, 0.14
+prt_o_ballistic_5               = 1, 0.12
+prt_o_ballistic_6               = 1, 0.10
+prt_o_ballistic_7               = 1, 0.08
+prt_o_ballistic_8               = 1, 0.08
+prt_o_ballistic_9               = 1, 0.06
+prt_o_ballistic_10              = 1, 0.05
+
+prt_w_p_trigger_1               = 1, 0.20
+prt_w_p_trigger_2               = 1, 0.18
+prt_w_p_trigger_3               = 1, 0.15
+prt_w_p_trigger_4               = 1, 0.12
+
+prt_w_p_trigger_components_1    = 1, 0.20
+prt_w_p_trigger_components_2    = 1, 0.18
+prt_w_p_trigger_components_3    = 1, 0.14
+prt_w_p_trigger_components_4    = 1, 0.12
+
+prt_o_retardant_1               = 1, 0.12
+prt_o_retardant_2               = 1, 0.10
+prt_o_retardant_3               = 1, 0.08
+prt_o_retardant_4               = 1, 0.06
+prt_o_retardant_5               = 1, 0.05
+
+;========================================================
+;  Repair 
+;========================================================
+cleaning_kit_r5         = 1, 0.70
+cleaning_kit_u          = 1, 0.70
+toolkit_r5              = 1, 0.70
+;upgr_w_1_firemode       = 1, 0.50
+;upgr_w_1_rpm            = 1, 0.50
+
+;========================================================;
+;                    SUPPLIES 3 (advanced tools)
+;========================================================;
+[supplies_3]:supplies_2
+;========================================================
+;  Recipes
+;========================================================
+recipe_basic_3          = 1, 1
+recipe_advanced_3       = 1, 1
+;recipe_ammo_3           = 1, 1
+recipe_expert_2         = 1, 1
+recipe_expert_3         = 1, 1
+recipe_exo_2            = 1, 1
+recipe_ammo_ru2         = 1, 1
+recipe_ammo_fire        = 1, 1
+recipe_ammo_nato2       = 1, 1
+recipe_ammo_powder      = 1, 1
+
+
+
+toolkit_r7              = 1, 0.70		
+cleaning_kit_r7         = 1, 0.70
+medium_repair_kit       = 1, 0.70
+helmet_repair_kit       = 1, 0.50
+;upgr_w_2_firemode       = 1, 0.75
+;upgr_w_2_rpm            = 1, 0.75
+
+;========================================================;
+;                    SUPPLIES 4 (expert tools)
+;========================================================;
+[supplies_4]:supplies_3		
+;========================================================
+;  Recipes
+;========================================================
+recipe_basic_4          = 1, 0.70
+recipe_advanced_4       = 1, 0.70
+recipe_ammo_4           = 1, 0.70
+recipe_expert_4         = 1, 0.70
+recipe_exo_3            = 1, 0.70
+recipe_ammo_bullet      = 1, 0.70
+
+
+
+heavy_repair_kit        = 1, 0.70
+exo_repair_kit          = 1, 0.70
+
+;upgr_w_3_firemode       = 1, 0.50
+;upgr_w_3_rpm            = 1, 0.50

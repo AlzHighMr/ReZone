@@ -1,0 +1,18 @@
+[logic]
+active = ph_idle@stop
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@play]:ph_idle@base
+on_info = %+monolith_lim_outpost_megafone_2%
+tips = Turn:off
+on_use = %=stop_sound% ph_idle@stop
+
+[ph_idle@stop]:ph_idle@base
+on_info = %-monolith_lim_outpost_megafone_2%
+tips = Turn:on
+on_use = ph_idle@play
+
+[collide]
+ignore_static

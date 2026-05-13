@@ -1,0 +1,148 @@
+[wpn_scorpion]:wpn_vz61
+GroupControlSection                      = spawn_group
+$npc                                     = on
+$prefetch                                = 8
+$spawn                                   = "weapons\vz61"
+scheduled                                = off
+cform                                    = skeleton
+hud                                      = wpn_scorpion_hud
+hud_fov                                  = 0.65
+parent_section                           = wpn_scorpion
+
+class                                    = WP_LR300
+slot                                     = 2
+animation_slot                           = 8
+ef_main_weapon_type                      = 2
+ef_weapon_type                           = 6
+hand_dependence                          = 1
+single_handed                            = 0
+
+default_to_ruck                          = false
+sprint_allowed                           = true
+
+inv_name                                 = st_wpn_scorpion
+inv_name_short                           = st_wpn_scorpion
+description                              = st_wpn_scorpion_descr
+
+scope_status                             = 0
+scope_zoom_factor                        = 0
+
+snd_draw                                 = weapons\mp5\mp5_draw
+snd_holster                              = weapons\pistol_holster
+snd_reload                               = weapons\scorpion\ump45_reload
+snd_reload_empty                         = weapons\scorpion\ump45_reload_empty
+snd_reload_misfire                       = weapons\scorpion\mp5_revival
+snd_switch_mode                          = weapons\scorpion\l85_firemode
+snd_shoot                                = weapons\scorpion\ump45_shoot
+snd_shoot_sil                            = weapons\scorpion\ump45_shoot_sil
+snd_bore                                 = $no_sound
+
+silencer_status                          = 1
+
+use_alt_aim_hud = false
+
+[wpn_scorpion_hud]:hud_base
+item_visual                              = anomaly_weapons\w_scorpion\wpn_scorpion_hud.ogf
+attach_place_idx                         = 0
+zoom_hide_crosshair                      = true
+
+item_position                            = 0, 0, 0
+item_orientation                         = 0, 0, 0
+
+        aim_hud_offset_pos               = 0.024119, -0.029154, 0.085765
+        aim_hud_offset_pos_16x9          = 0.024119, -0.029154, 0.085765
+        aim_hud_offset_rot               = -0.01289, 0.040606, 0
+        aim_hud_offset_rot_16x9          = -0.01289, 0.040606, 0
+        hands_orientation                = 1.429, -0.450385, 0.006667
+        hands_orientation_16x9           = 1.429, -0.450385, 0.006667
+        hands_position                   = -0.03362, 0.017448, -0.05685
+        hands_position_16x9              = -0.03362, 0.017448, -0.05685
+		lowered_hud_offset_pos           = 0.112558, -0.022031, 0
+        lowered_hud_offset_pos_16x9      = 0.112558, -0.022031, 0
+
+gl_hud_offset_pos                        = 0, 0, 0
+gl_hud_offset_pos_16x9                   = 0, 0, 0
+gl_hud_offset_rot                        = 0, 0, 0
+gl_hud_offset_rot_16x9                   = 0, 0, 0
+
+lean_hud_offset_pos                      = 0, 0, 0
+lean_hud_offset_rot                      = 0, 0, 0
+
+anm_hide                                 = scor_hide, idle
+anm_idle                                 = scor_idle, idle
+anm_idle_aim                             = scor_aim, idle
+anm_idle_aim_moving                      = scor_walk, idle
+anm_idle_aim_moving_crouch               = scor_walk, idle, 0.75
+anm_idle_moving                          = scor_walk, idle
+anm_idle_moving_crouch                   = scor_walk, idle
+anm_idle_sprint                          = scor_sprint, idle
+anm_reload                               = scor_reload, ump_reload
+anm_reload_empty                         = scor_reload_empty, ump_reload_empty
+anm_shots                                = scor_shoot, ump_shoot
+anm_shot_l                               = scor_shoot, ump_shoot_last
+anm_show                                 = scor_draw, idle
+anm_reload_misfire                       = scor_misfire, ump_revival
+anm_shots_aim                            = scor_aim_shoot, ump_shoot
+anm_shots_aim_l                          = scor_aim_shoot, ump_shoot_last
+anm_idle_aim_start                       = scor_aim_start, idle
+anm_idle_aim_end                         = scor_aim_end, idle
+anm_switch_mode                          = scor_fire_select, idle
+anm_bore                                 = scor_dry, idle
+
+anm_hide_jammed                        = scor_hide, ump_idle_jammed       
+anm_idle_jammed                        = scor_idle, ump_idle_jammed
+anm_idle_aim_jammed                    = scor_aim, ump_idle_jammed
+anm_idle_aim_moving_jammed             = scor_walk, ump_idle_jammed, 0.75
+anm_idle_aim_moving_crouch_jammed      = scor_walk, ump_idle_jammed,  0.7
+anm_idle_moving_jammed                 = scor_walk, ump_idle_jammed
+anm_idle_moving_crouch_jammed          = scor_walk, ump_idle_jammed, 0.7
+anm_idle_sprint_jammed                 = scor_sprint, ump_idle_jammed
+anm_show_jammed                        = scor_draw, ump_idle_jammed
+anm_idle_aim_start_jammed              = scor_aim_start, ump_idle_jammed  
+anm_idle_aim_end_jammed                = scor_aim_end, ump_idle_jammed 
+anm_switch_mode_jammed                 = scor_fire_select, ump_idle_jammed
+anm_bore_jammed                        = scor_dry, ump_idle_jammed
+
+anm_hide_empty                        = scor_hide, ump_idle_empty       
+anm_idle_empty                        = scor_idle, ump_idle_empty
+anm_idle_aim_empty                    = scor_aim, ump_idle_empty
+anm_idle_aim_moving_empty             = scor_walk, ump_idle_empty, 0.75
+anm_idle_aim_moving_crouch_empty      = scor_walk, ump_idle_empty,  0.7
+anm_idle_moving_empty                 = scor_walk, ump_idle_empty
+anm_idle_moving_crouch_empty          = scor_walk, ump_idle_empty, 0.7
+anm_idle_sprint_empty                 = scor_sprint, ump_idle_empty
+anm_show_empty                        = scor_draw, ump_idle_empty
+anm_idle_aim_start_empty              = scor_aim_start, ump_idle_empty  
+anm_idle_aim_end_empty                = scor_aim_end, ump_idle_empty 
+anm_switch_mode_empty                 = scor_fire_mode, ump_idle_empty
+anm_bore_empty                        = scor_dry, ump_idle_empty
+
+;--- Переходы спринта---
+
+        anm_sprint_start             = scor_sprint_start
+        anm_sprint_end               = scor_sprint_end
+		anm_sprint_start_jammed      = scor_sprint_start, ump_idle_jammed  
+		anm_sprint_end_jammed        = scor_sprint_end, ump_idle_jammed
+		anm_sprint_start_empty       = scor_sprint_start, ump_idle_empty
+        anm_sprint_end_empty         = scor_sprint_end, ump_idle_empty
+		
+		
+
+;--- Паттерны спринта---
+
+        ts_pattern_sprint_start      = .+, anm_idle_sprint, anm_sprint_start, 1
+        ts_pattern_sprint_end        = anm_idle_sprint, ^anm_idle.*, anm_sprint_end
+        ts_strict_sprint_end_move    = anm_sprint_start, anm_idle_moving, anm_sprint_end  
+
+shell_bone                               = wpn_body
+shell_dir                                = 0, 1, 0
+shell_point                      = 0, -0.03, 0.1
+
+fire_bone                                = wpn_body
+fire_bone2                               = wpn_body
+fire_point                       = 0, 0, 0.35
+fire_point2                              = 0, 0, 0.35
+
+
+freelook_z_offset_mul                    = 0.3
+

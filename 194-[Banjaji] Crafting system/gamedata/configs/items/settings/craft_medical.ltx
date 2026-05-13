@@ -1,0 +1,66 @@
+
+
+;===============================================================
+;===============================================================
+;==========================< Leky >=============================
+
+[craft_-100]
+title						= st_ui_craft_medical
+
+;x_bandage_army               = 4, recipe_drug_0, bandage,2,vodka,1
+;x_tourniquet				 = 4, recipe_drug_0, jgut,1,prt_o_fabrics_2,1
+;x_hemostatic				 = 4, recipe_drug_0, jgut,1,prt_o_fabrics_2,3
+
+
+x_bandage				    = 4, recipe_drug_0, yadylin,1,           prt_o_fabrics_1,1
+x_medkit				    = 4, recipe_drug_0, akvatab,1,           prt_i_plastic,1       e_syringe,3,  
+
+x_medkit_army			     = 4, recipe_drug_0, medkit,200,bandage,2,prt_i_plastic,2
+x_medkit_scientic		     = 4, recipe_drug_0, medkit_army,200,antirad_kalium,1,prt_i_plastic,2
+;x_medkit_car				 = 4, recipe_drug_0, medkit,200,bandage,1
+;x_medkit_salewa				 = 4, recipe_drug_0, medkit,400,bandage,2,jgut,1
+;x_medkit_ifak				 = 4, recipe_drug_0, medkit,400,bandage_army,1,tourniquet,1
+;x_medkit_afak				 = 4, recipe_drug_0, medkit,400,bandage_army,1,hemostatic,1
+
+;==========================< Limbs >============================= 
+;x_alu_splint                 = 4, recipe_drug_0, splint,1,prt_i_fasteners,2,prt_i_scrap,2
+;x_splint                     = 4, recipe_drug_0, prt_i_scrap,1,prt_o_fabrics_2,2
+;x_cms                        = 4, recipe_drug_0, medkit_car,220,prt_i_scrap,1
+;x_surv12					 = 4, recipe_drug_0, cms,10,splint,5,prt_o_fabrics_2,5
+;==========================< Prasky na bolest >=============================
+x_yadylin	     	        = 4, recipe_drug_0, drug_sleepingpills,1, protein,1,            jar,1                     
+x_akvatab	     	        = 4, recipe_drug_0, drug_sleepingpills,2, protein,2,            jar,1  
+x_drug_charcoal               = 4, recipe_drug_0, charcoal,1,           yadylin,1,            akvatab,1  
+;==================================================================
+x_survival_kit       	    = 4, recipe_drug_0, surginst,3,          antirad_cystamine,3,       medkit,3,       bandage,5                                  ;-- SurvKit (Arms)
+x_jgut		       	        = 4, recipe_drug_0, surginst,3,          bandage,5,                 medkit,3,       prt_o_fabrics_4,3                          ;-- SurvKit (TorsoHead)
+
+;==========================< Injekce >=============================
+
+x_morphine                  = 4, recipe_drug_0, salicidic_acid,1,    drug_booster,1,  e_syringe,2             	         
+x_adrenalin       	        = 4, recipe_drug_0, drug_booster,2,      e_syringe,1,     prt_i_plastic,2                    
+x_salicidic_acid    	    = 4, recipe_drug_0, protein,1,           drug_booster,1,  e_syringe,1                    	 
+x_rebirth				    = 4, recipe_drug_0, medkit_scientic,3,   yadylin,2,       e_syringe,2
+
+x_glucose      		        = 4, recipe_drug_0, glucose_s,2,         e_syringe,1                                  	 ;-- jidlo injekce  
+x_glucose_s			        = 4, recipe_drug_0, protein,1,           e_syringe,1
+;==========================< Fillable canteens addon >=============================
+x_purification_tablet		= 4, recipe_drug_0, yadylin,2,           antibio_chlor,3
+;==========================< Antirad >=============================
+x_antirad		            = 4, recipe_drug_0, antibio_chlor,2,     prt_i_plastic,1                                 ;-- (Antirad) slaba protekce radiace
+;==========================< Drugs >=============================
+x_drug_booster		        = 4, recipe_drug_0, joint,1,             vodka,1,              jar,1	              ;-- (Hercules)
+x_drug_coagulant 	        = 4, recipe_drug_0, antibio_chlor,1,     drug_sleepingpills,5, prt_i_plastic,1	      ;-- (Vinca) pomaly bleeding heal
+x_drug_psy_blockade       	= 4, recipe_drug_0, marijuana,1,         joint,1,              prt_i_plastic,1			              
+x_drug_antidot	 		    = 4, recipe_drug_0, antiemetic,3,        prt_i_plastic,2			                  ;-- (Antidote) toxic protection strong
+x_drug_anabiotic		    = 4, recipe_drug_0, drug_psy_blockade,5, drug_booster,2,       prt_i_plastic,1        ;-- (Antibiotika) 
+x_drug_radioprotector	    = 4, recipe_drug_0, antibio_sulfad,1,    antirad,2,            prt_i_plastic,1	      ;-- (Radioprotectant) radiation protection strong                  
+;==========================< Ostatni >=============================
+x_tetanus	     	        = 4, recipe_drug_0, antibio_chlor,1,     antibio_sulfad,1,      e_syringe,1            	;-- masticka
+x_cocaine	     	        = 4, recipe_drug_0, drug_booster,1,      prt_i_plastic,2                              
+x_analgetic	     	        = 4, recipe_drug_0, yadylin,1,           bandage,1,             e_syringe,1                             
+x_antiemetic	     	    = 4, recipe_drug_0, tetanus,1,           prt_i_plastic,1                                  
+
+;x_augmentin					 = 4, recipe_drug_0, analgin,1,prt_i_plastic,1,jar,1
+;x_ibuprofen					 = 4, recipe_drug_0, analgin,1,augmentin,1,prt_i_plastic,1
+;x_vaseline					 = 4, recipe_drug_0, analgin,1,vodka,1,prt_i_plastic,1,jar,1

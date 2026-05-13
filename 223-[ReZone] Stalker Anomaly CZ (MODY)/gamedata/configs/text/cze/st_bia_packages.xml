@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="st_bia_package1">
+    <text>Základní balíček.</text>
+</string>
+<string id="st_bia_package1_descr">
+    <text>Základní balíček. Sotva obsahuje dost věcí na přežití jednoho dne v Zóně. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Neobsahuje munici\n
+	</text>
+</string>
+
+<string id="st_bia_package2">
+    <text>Základní balíček (WP munice).</text>
+</string>
+<string id="st_bia_package2_descr">
+    <text>Základní balíček. Sotva obsahuje dost věcí na přežití jednoho dne v Zóně, ale alespoň má nějakou munici. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Základní množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package3">
+    <text>Základní balíček (NATO munice).</text>
+</string>
+<string id="st_bia_package3_descr">
+    <text>Základní balíček. Sotva obsahuje dost věcí na přežití jednoho dne v Zóně, ale alespoň má nějakou munici a lepší cigarety. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Základní množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package4">
+    <text>Denní balíček přežití.</text>
+</string>
+<string id="st_bia_package4_descr">
+    <text>Denní balíček přežití vydávaný všem členům. Obsahuje základní zásoby na klidný den v Zóně. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Neobsahuje munici\n
+	</text>
+</string>
+
+<string id="st_bia_package5">
+    <text>Denní balíček přežití (WP munice)</text>
+</string>
+<string id="st_bia_package5_descr">
+    <text>Denní balíček přežití vydávaný všem členům. Obsahuje základní zásoby na klidný den v Zóně a umožní ulovit pár fleshů, když přijde hlad.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Základní množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package6">
+    <text>Denní balíček přežití (NATO munice)</text>
+</string>
+<string id="st_bia_package6_descr">
+    <text>Denní balíček přežití vydávaný všem členům. Obsahuje základní zásoby na klidný den v Zóně a umožní ulovit pár fleshů, když přijde hlad. Navíc obsahuje lepší cigarety. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nízká úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Základní množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package7">
+    <text>Balíček pro polní operace</text>
+</string>
+<string id="st_bia_package7_descr">
+    <text>Balíček pro polní operace. Obsahuje dost zásob na menší přestřelku nebo jednodenní pobyt mimo základnu.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Neobsahuje munici\n
+	</text>
+</string>
+
+<string id="st_bia_package8">
+    <text>Balíček pro polní operace (WP munice)</text>
+</string>
+<string id="st_bia_package8_descr">
+    <text>Balíček pro polní operace. Obsahuje dost zásob na menší přestřelku nebo jednodenní pobyt mimo základnu. Obsahuje kvalitnější munici.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Lepší množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package9">
+    <text>Balíček pro polní operace (NATO munice)</text>
+</string>
+<string id="st_bia_package9_descr">
+    <text>Balíček pro polní operace. Obsahuje dost zásob na menší přestřelku nebo jednodenní pobyt mimo základnu. Obsahuje kvalitnější munici.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Lepší množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package10">
+    <text>Balíček přežití pro hluboké operace v Zóně.</text>
+</string>
+<string id="st_bia_package10_descr">
+    <text>Balíček přežití obsahující dost zásob pro hluboké operace v Zóně. Dostávají ho jen ti, kteří se osvědčili.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Neobsahuje munici\n
+	</text>
+</string>
+
+<string id="st_bia_package11">
+    <text>Balíček přežití pro hluboké operace (WP munice)</text>
+</string>
+<string id="st_bia_package11_descr">
+    <text>Balíček přežití obsahující dost zásob pro hluboké operace v Zóně. Dostávají ho jen ti, kteří se osvědčili. Obsahuje špičkovou munici. \n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Lepší množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package12">
+    <text>Balíček přežití pro hluboké operace (NATO munice)</text>
+</string>
+<string id="st_bia_package12_descr">
+    <text>Balíček přežití obsahující dost zásob pro hluboké operace v Zóně. Dostávají ho jen ti, kteří se osvědčili. Obsahuje špičkovou munici, včetně několika nábojů .338 Lapua.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Střední úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Lepší množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package13">
+    <text>VIP balíček přežití pro stalkery</text>
+</string>
+<string id="st_bia_package13_descr">
+    <text>Velký balíček určený pro elitní stalkery, kteří prokázali loajalitu frakci. Tyto balíčky jsou připravovány jako první, a proto obsahují špičkové zásoby.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nejvyšší úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Neobsahuje munici\n
+	</text>
+</string>
+
+<string id="st_bia_package14">
+    <text>VIP balíček přežití pro stalkery (WP munice)</text>
+</string>
+<string id="st_bia_package14_descr">
+    <text>Velký balíček určený pro elitní stalkery, kteří prokázali loajalitu frakci. Tyto balíčky jsou připravovány jako první, a proto obsahují špičkové zásoby i munici.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nejvyšší úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Velké množství munice\n
+	</text>
+</string>
+
+<string id="st_bia_package15">
+    <text>VIP balíček přežití pro stalkery (NATO munice)</text>
+</string>
+<string id="st_bia_package15_descr">
+    <text>Velký balíček určený pro elitní stalkery, kteří prokázali loajalitu frakci. Tyto balíčky jsou připravovány jako první, a proto obsahují špičkové zásoby i munici, včetně většího množství nábojů .338 Lapua.\n \n
+	%c[ui_gray_2]BALÍČEK:\n
+	%c[d_cyan] • %c[ui_gray_2] Nejvyšší úroveň zásob\n
+	%c[d_cyan] • %c[ui_gray_2] Velké množství munice\n
+	</text>
+</string>
+</string_table>

@@ -1,0 +1,122 @@
+
+--[[
+	Banjaji's Crafting system improvements v4.0
+	2023.12.22
+	* Drag-drop recipes take only one use from multi-use items and bullets
+	* Crafting statistic increases with drag-drop crafting
+	* Modders can define (or modify through scripts) whether recipe gives one use or full item and whether recipe takes one use or full item
+	* Callbacks for drag-drop start and end
+
+--]]
+
+-------------------------------------------------------------------
+-- Global constants
+-------------------------------------------------------------------
+
+-- These are not MCM variables to give modder more freedom over recipes. Otherwise player will override recipe component amounts with these values
+single_use_taken = true -- whether to delete entire object or only one use
+single_use_given = false -- whether to give entire object or only one use
+
+-------------------------------------------------------------------
+-- Monkeypatches
+-------------------------------------------------------------------
+
+-- Remove drag-drop components and give the result
+itms_manager.dropdrop_Basic_Combination = function(obj_1, obj_2, sec_1, sec_2)
+	-- Send callback that crafting starts
+	local callback_table = {[1] = obj_1, [2] = obj_2, [3] = sec_1, [4] = sec_2} -- table, so that functions accessing the callback could directly modify these values
+	SendScriptCallback("craft_dragdrop_start", callback_table)
+	
+	
+	local function after_pause_for_callback()
+		local tostr = tostring
+		-- read values from callback_table
+		obj_1 = callback_table[1]
+		obj_2 = callback_table[2]
+		sec_1 = callback_table[3]
+		sec_2 = callback_table[4]
+		
+		-- Check that all values exist
+		if (not obj_1) or (not obj_2) or (not sec_1) or (not sec_2) then 
+			-- printe("! itms_manager_monkeypatch_Banjaji_CSI.dropdrop_Basic_Combination() | At least one object or section doesn't exist. Item sections: [%s] and [%s]; objects: [%s] and [%s]", tostr(sec_1), tostr(sec_2), tostr(obj_1), tostr(obj_2))
+			return 
+		end
+		
+		-- Remove items and give items
+		local sec_new = itms_manager.item_combine[sec_1][sec_2]
+		remove_components(obj_1, obj_2)
+		give_results(sec_new)
+		actor_effects.play_item_fx("item_combination")
+		
+		-- Send callback that crafting finished
+		SendScriptCallback("craft_dragdrop_finished", sec_1, sec_2, sec_new)
+		
+		return true -- stop TimeEvent
+	end
+	
+	-- Pause before continuing with the code in case something wants to intercept with callback.
+	local pause_seconds = 0.05
+	CreateTimeEvent("pause_ID","Pause_for_dragdrop",pause_seconds,after_pause_for_callback)
+end
+
+-------------------------------------------------------------------
+-- Normal functions
+-------------------------------------------------------------------
+
+-- Iterate over components and remove them from inventory or subtract one use
+function remove_components(obj_1, obj_2)
+	if single_use_taken then -- subtract one use
+
+		-- discharge one use from item
+		local iteration_table = {obj_1, obj_2}
+		for _, obj_itm in ipairs(iteration_table) do -- do for both objects
+			if obj_itm then -- object exists
+				
+				if IsItem("ammo", nil, obj_itm) then -- ammo box
+					local remaining = obj_itm:ammo_get_count() -- bullets in box
+					if remaining > 1 then -- keep object
+						obj_itm:ammo_set_count(remaining - 1) -- change the ammo count in box
+					else -- delete object
+						alife_release(obj_itm)
+					end
+				
+				else -- normal item or multiuse item
+					utils_item.discharge(obj_itm, 1) -- discharge one use
+				end
+			end
+		end
+		
+	else -- delete entire objects
+		alife_release(obj_1)
+		alife_release(obj_2)
+	end
+end
+
+-- Give the resulting item
+function give_results(item_sec)
+	if single_use_given then -- give one use
+		
+		if IsItem("ammo",item_sec) then -- ammo boxes
+			alife_create_item(item_sec, db.actor, {["ammo"] = 1})
+		
+		else -- other items (normal and multiuse)
+			alife_create_item(item_sec, db.actor,  {["uses"] = 1})
+		end
+	
+	else -- give full uses item
+		alife_create_item(item_sec, db.actor)
+	end
+	
+	-- Increase Statistic for every different item
+	game_statistics.increment_statistic("items_crafted")
+end
+
+-------------------------------------------------------------------
+-- Callbacks
+-------------------------------------------------------------------
+
+-- Registers callbacks. Called on script load
+function on_game_start()
+	AddScriptCallback("craft_dragdrop_start")
+	AddScriptCallback("craft_dragdrop_finished")
+end

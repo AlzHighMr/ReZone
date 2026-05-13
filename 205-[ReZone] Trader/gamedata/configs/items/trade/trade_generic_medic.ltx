@@ -1,0 +1,91 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy 
+sell_condition = trade_generic_sell
+buy_supplies = {=drugkit_task_done()} supplies_2, supplies_1
+buy_item_condition_factor = 0.90
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_medic
+
+[trade_generic_buy]:medic
+itm_pda_common                           ;NO TRADE
+itm_pda_rare                             ;NO TRADE
+itm_pda_uncommon                         ;NO TRADE
+pri_a25_explosive_charge_item            ;NO TRADE
+itm_drugkit				= 2.0, 2.0
+
+[trade_generic_sell]:medic
+itm_drugkit				= 2.0, 2.0
+
+
+;========================================================;
+;                    [SUPPLIES 1]
+;========================================================;
+[supplies_1]:common_stock
+glucose_s                = 2, 0.50
+glucose                  = 2, 0.50
+drug_sleepingpills       = 6, 0.45
+bandage                  = 15, 1
+medkit                   = 10, 1
+medkit_army              = 5, 0.50
+medkit_ai1               = 2, 1
+antibio_chlor            = 2, 0.50
+jgut                     = 2, 0.50
+yadylin                  = 4, 0.70
+akvatab                  = 4, 0.70
+analgetic                = 2, 0.50
+antibio_sulfad           = 2, 0.50
+antiemetic               = 2, 0.50
+antirad                  = 2, 0.50
+stimpack                 = 1, 0.50
+caffeine                 = 4, 0.50
+protein                  = 1, 0.50
+cocaine                  = 1, 0.60
+tetanus                  = 1, 0.30
+adrenalin                = 1, 0.30
+salicidic_acid           = 1, 0.30
+morphine                 = 1, 0.30
+drug_anabiotic           = 2, 0.50
+drug_booster             = 2, 0.50
+drug_coagulant           = 2, 0.50
+drug_antidot             = 2, 0.50
+drug_radioprotector      = 2, 0.50
+drug_psy_blockade        = 2, 0.50
+;========================================================;
+;                    [SUPPLIES 2]
+;========================================================;
+[supplies_2]:supplies_1
+antirad_cystamine        = 5, 0.85
+antirad_kalium           = 5, 0.85
+bandage                  = 15, 0.85
+survival_kit             = 6, 0.45
+stimpack                 = 3, 0.50
+stimpack_scientic        = 1, 0.50
+stimpack_army            = 2, 0.50
+medkit_ai1               = 5, 1
+medkit_ai2               = 5, 1
+medkit_ai3               = 5, 1
+medkit                   = 5, 0.50
+medkit_army              = 5, 0.50
+medkit_scientic          = 3, 0.50
+drug_psy_blockade        = 3, 0.50
+antirad                  = 3, 0.80
+salicidic_acid           = 4, 0.50
+morphine                 = 3, 0.50
+drug_coagulant           = 3, 0.50
+drug_antidot             = 3, 0.50
+akvatab                  = 3, 0.50
+cocaine                  = 3, 0.50
+caffeine                 = 3, 0.50
+antibio_chlor            = 3, 0.50
+jgut                     = 3, 0.50
+yadylin                  = 3, 0.50
+analgetic                = 3, 0.50
+antibio_sulfad           = 3, 0.50
+antiemetic               = 3, 0.50
+glucose_s                = 3, 0.50
+

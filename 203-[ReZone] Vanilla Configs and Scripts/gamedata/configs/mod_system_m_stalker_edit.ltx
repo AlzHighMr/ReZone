@@ -1,0 +1,183 @@
+![stalker]
+
+time_to_search_for_artefacts	= 300000 ;in milliseconds
+distance_to_search_for_artefacts = 150.0	 ;in meters
+
+;---FIRE DISPERSIONS--------------------------------------------------
+disp_walk_stand			= 1.4
+disp_walk_crouch		= 1.1
+disp_run_stand			= 1.6
+disp_run_crouch			= 1.4
+disp_stand_stand		= 1.2
+disp_stand_crouch		= 1.0
+disp_stand_stand_zoom		= 0.42
+disp_stand_crouch_zoom		= 0.24 
+
+FireRandomMin 		 = 1
+FireRandomMax 		 = 3
+NoFireTimeMin 		 = 0.01
+NoFireTimeMax 		 = 0.1
+MinMissDistance		 = 0.3
+MinMissFactor		 = 0.01
+MaxMissDistance		 = 2.0
+MaxMissFactor		 = 0.03
+
+![stalker_movement_speeds]
+; danger
+	;; crouch
+	;;; walk
+	danger_crouch_walk_forward 	= 1.8
+	danger_crouch_walk_backward	= 1.4
+	danger_crouch_walk_left		= 1.8
+	danger_crouch_walk_right 	= 1.8
+	;;; run
+	danger_crouch_run_forward   = 3.7
+	danger_crouch_run_backward	= 2.4
+	danger_crouch_run_left		= 2.9
+	danger_crouch_run_right		= 2.9
+	;; stand
+	;;; walk
+	danger_stand_walk_forward	= 3.6
+	danger_stand_walk_backward	= 2.4
+	danger_stand_walk_left		= 2.9
+	danger_stand_walk_right		= 2.9
+	;;; run
+	danger_stand_run_forward	= 5.1
+	danger_stand_run_backward	= 2.4
+	danger_stand_run_left		= 3.4
+	danger_stand_run_right		= 3.4
+	; free
+	;; stand
+	;;; forward
+	free_stand_walk_forward		= 1.0
+	free_stand_run_forward		= 2.9
+	; panic
+	;; stand
+	;;; run
+	;;;; forward
+	panic_stand_run_forward		= 5.9
+
+
+	![fire_queue_params]  ; min < 15 < medium < 30 < max
+	; ef_weapon_type = 5
+	pstl_min_queue_size_far		= 1
+	pstl_max_queue_size_far		= 2
+	pstl_min_queue_interval_far	= 500
+	pstl_max_queue_interval_far	= 750
+	
+	pstl_min_queue_size_medium	= 1
+	pstl_max_queue_size_medium	= 4
+	pstl_min_queue_interval_medium	= 400
+	pstl_max_queue_interval_medium	= 500
+	
+	pstl_min_queue_size_close	= 1
+	pstl_max_queue_size_close	= 8
+	pstl_min_queue_interval_close	= 350
+	pstl_max_queue_interval_close	= 400
+	
+	;-------------------------------
+	; ef_weapon_type = 9
+	shtg_min_queue_size_far		= 1
+	shtg_max_queue_size_far		= 1
+	shtg_min_queue_interval_far	= 1000
+	shtg_max_queue_interval_far	= 2000
+	
+	shtg_min_queue_size_medium	= 1
+	shtg_max_queue_size_medium	= 4
+	shtg_min_queue_interval_medium	= 600
+	shtg_max_queue_interval_medium	= 750
+	
+	shtg_min_queue_size_close	= 1
+	shtg_max_queue_size_close	= 6
+	shtg_min_queue_interval_close	= 600
+	shtg_max_queue_interval_close	= 750
+	
+	;-------------------------------
+	; ef_weapon_type = 11 & 12 ; 
+	snp_min_queue_size_far		= 1
+	snp_max_queue_size_far		= 1
+	snp_min_queue_interval_far	= 2000
+	snp_max_queue_interval_far	= 3000
+	
+	snp_min_queue_size_medium	= 1
+	snp_max_queue_size_medium	= 1
+	snp_min_queue_interval_medium	= 1500
+	snp_max_queue_interval_medium	= 2000
+	
+	snp_min_queue_size_close	= 1
+	snp_max_queue_size_close	= 1
+	snp_min_queue_interval_close	= 1000
+	snp_max_queue_interval_close	= 1100
+	
+	;-------------------------------
+	; default
+	auto_min_queue_size_far		= 1
+	auto_max_queue_size_far		= 3
+	auto_min_queue_interval_far	= 400
+	auto_max_queue_interval_far	= 800
+	
+	auto_min_queue_size_medium	= 1
+	auto_max_queue_size_medium	= 6
+	auto_min_queue_interval_medium	= 350
+	auto_max_queue_interval_medium	= 600
+	
+	auto_min_queue_size_close	= 2
+	auto_max_queue_size_close	= 9
+	auto_min_queue_interval_close	= 250
+	auto_max_queue_interval_close	= 500
+	
+	;-------------------------------
+	; ef_weapon_type = 6, 7, 8, 10
+	mchg_min_queue_size_far		= 1
+	mchg_max_queue_size_far		= 6
+	mchg_min_queue_interval_far	= 300
+	mchg_max_queue_interval_far	= 600
+	
+	mchg_min_queue_size_medium	= 2
+	mchg_max_queue_size_medium	= 12
+	mchg_min_queue_interval_medium	= 300
+	mchg_max_queue_interval_medium	= 500
+	
+	mchg_min_queue_size_close	= 2
+	mchg_max_queue_size_close	= 15
+	mchg_min_queue_interval_close	= 200
+	mchg_max_queue_interval_close	= 400
+
+
+	
+[isg_movement_speeds]
+	; danger
+	;; crouch
+	;;; walk
+	danger_crouch_walk_forward 	= 2.47
+	danger_crouch_walk_backward	= 1.95
+	danger_crouch_walk_left		= 2.47
+	danger_crouch_walk_right 	= 2.47
+	;;; run
+	danger_crouch_run_forward   = 4.94
+	danger_crouch_run_backward	= 3.25
+	danger_crouch_run_left		= 4.1
+	danger_crouch_run_right		= 4.1
+	;; stand
+	;;; walk
+	danger_stand_walk_forward	= 4.94
+	danger_stand_walk_backward	= 3.25
+	danger_stand_walk_left		= 4.1
+	danger_stand_walk_right		= 4.1
+	;;; run
+	danger_stand_run_forward	= 6.76
+	danger_stand_run_backward	= 3.25
+	danger_stand_run_left		= 4.55
+	danger_stand_run_right		= 4.55
+	; free
+	;; stand
+	;;; forward
+	free_stand_walk_forward		= 1.43
+	free_stand_run_forward		= 4.1
+	; panic
+	;; stand
+	;;; run
+	;;;; forward
+	panic_stand_run_forward		= 7.8
+ 
+

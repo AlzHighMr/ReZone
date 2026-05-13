@@ -1,0 +1,18 @@
+[logic]
+active = {+monolith_pri_base_megafone} ph_idle@play, ph_idle@stop %=stop_sound%
+
+[ph_idle@play]
+nonscript_usable = false
+on_info = {+monolith_pri_base_megafone} %=play_sound(monolith_pri_base_speech)%, %=stop_sound% ph_idle@stop
+
+[ph_idle@stop]
+nonscript_usable = false
+on_info = {+monolith_pri_base_megafone} ph_idle@play
+
+[collide]
+ignore_static
+
+
+
+
+

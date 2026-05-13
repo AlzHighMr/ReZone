@@ -1,0 +1,15 @@
+<credits_seq>
+  <over_main_menu>1</over_main_menu>
+  <persistent>1</persistent>
+  <global_wnd width="1920" height="1080">
+
+<auto_static x="0" y="0" width="1024" height="768" stretch="1">
+	<texture x="0" y="0" width="1920" height="1080">ui\ui_background_credits</texture>
+</auto_static>
+
+
+    <function_on_stop>xr_effects.after_credits</function_on_stop>
+  </global_wnd>
+
+#include "ui\ui_credits_base.xml"
+</credits_seq>

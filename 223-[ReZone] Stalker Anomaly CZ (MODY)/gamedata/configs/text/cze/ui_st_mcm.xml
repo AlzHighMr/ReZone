@@ -1,0 +1,186 @@
+<!-- 
+	Anomaly Mod Configuration Menu strings
+	
+-->
+
+<string_table>
+
+<string id="ui_mcm_desc_mcm">
+    <text>Vítejte v Anomaly Mod Konfiguraèním Menu. Samotné MCM nic nedìlá. MCM poskytuje prostor pro ostatní mody/doplòky k zobrazení uživatelského nastavení.
+    \nVlevo uvidíte seznam modù/doplòkù, které používají MCM k tomu úèelu.</text>
+</string>
+<string id="ui_mcm_desc_mcm2">
+    <text>Chyby v MCM nebo pády s ui_mcm.script v logu jsou pravdìpodobnì zpùsobeny nìkterým z modù/doplòkù používajících MCM a mìly by být hlášeny autorovi toho mod/doplnìk.</text>
+</string>
+<string id="ui_mm_menu_mcm">
+    <text>Menu konfigurace modù</text>
+</string>
+
+<string id="ui_mcm_menu_mcm">
+    <text>MCM</text>
+</string>
+<string id="ui_mcm_menu_mcm_about">
+    <text>O MCM</text>
+</string>
+<string id="ui_mcm_mcm_mcm_about_dxml">
+    <text>Vynucené anglické názvy pro doplòky.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_about_dxml_desc">
+    <text>Toto nastavení neovlivní nic, pokud jazyk není nastaven na ruštinu.</text>
+</string>
+
+<string id="ui_mcm_menu_mcm_log">
+    <text>Logování</text>
+</string>
+<string id="ui_mcm_mcm_desc_log">
+    <text>Toto je nástroj pro tvùrce doplòkù, který jim umožòuje pøesunout jejich logování mimo xray log a herní konzoli.
+    \nProtože respektuji vaše obavy ohlednì zpoždìní a životnosti SSD, poskytl jsem nìkolik možností, jak upravit chování logování.
+    \nLogy budou pojmenovány podle skriptu, který je vytvoøil, a èísla MCM session ID. Budou vytvoøeny v appdata/logs/mcm/</text>
+</string>
+
+<string id="ui_mcm_mcm_mcm_log_enable">
+    <text>Povolit MCM logovací nástroj.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_enable_desc">
+    <text>Odškrtnutím nebude možné vytváøet nebo aktualizovat nové logy. (Poznámka: zmìny se mohou projevit až po naètení nové uložené hry.)</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_numlogs">
+    <text>Poèet logovacích relací k uchování.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_numlogs_desc">
+    <text>Když poèet logù vytvoøených skriptem pøekroèí tuto hodnotu, starší logy budou smazány. (Poznámka: mazání logù se neprovede, pokud hra spadne.)</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_continuous">
+    <text>Povolit prùbìžné zapisování do souborù.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_continuous_desc">
+    <text>Logy jsou obvykle aktualizovány po dávkách. To mùže zpùsobit ztrátu nìkterých informací pøi pádu hry. Tvùrce doplòku mùže požádat o zaškrtnutí této volby, aby se log ihned aktualizoval.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_savefreq">
+    <text>Interval automatického ukládání logù (ms)</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_savefreq_desc">
+    <text>Bez ohledu na nastavení se logy stále ukládají pøi vstupu do rùzných UI obrazovek a pøi ukládání/naèítání hry.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_timestamp">
+    <text>Frekvence èasových znaèek v Xray logu.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_timestamp_desc">
+    <text>MCM pøidává èasové znaèky do xray logu pro snadnìjší koordinaci událostí mezi MCM logy a xray logem. Toto je minimální interval mezi tìmito èasovými znaèkami. Pokud nic jiného nezapisuje do konzole, ani MCM.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_debug_logging2">
+    <text>Povolit debug logování.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_log_debug_logging2_desc">
+    <text>Tím se aktivuje vlastní debug logování MCM a mìlo by být povoleno pøed hlášením chyb s MCM. Ostatní doplòky mohou také použít tuto volbu pro aktivaci vlastního logování.</text>
+</string>
+
+<string id="ui_mcm_menu_mcm_kb">
+    <text>MCM klávesové zkratky</text>
+</string>
+<string id="ui_mcm_menu_mcm_kb_main">
+    <text>Hlavní</text>
+</string>
+
+<string id="ui_mcm_mcm_desc_kb">
+    <text>MCM klávesové zkratky fungují "Minecraft style": kliknìte na políèko a pak stisknìte klávesu. Kliknutí nebo Esc zruší.
+    \nPokud klávesa, kterou vidíte, neodpovídá klávese, kterou jste stiskli, nebo MCM ignoruje nìkteré klávesy, je pravdìpodobnì potøeba upravit mcm_key_localization.ltx podle vaší klávesnice.
+    \nKlávesy pøiøazené více než jedné MCM zkratce nebo enginové klávese budou zvýraznìny èervenì.</text>
+</string>
+<string id="ui_mcm_mcm_desc_kb2">
+    <text>Nìkolik poznámek k èervenému zvýraznìní konfliktù kláves.
+    \n1. Nemusí to vadit. Pokud jsou klávesy použity ve dvou rùzných UI, nebo pokud jedna zkratka funguje jen pøi držení shiftu, použití klávesy dvakrát nevadí.
+    \n2. MCM neví, co doplnìk dìlá s klávesou. VY musíte pochopit, jak doplnìk klávesu používá, abyste vìdìli, zda je konflikt relevantní.
+    \n3. Pro jednu èekající zmìnu se barva aktualizuje správnì, pro více zmìn nemusí. Aplikujte zmìny a znovu otevøete MCM pro ovìøení správného stavu konfliktu.</text>
+</string>
+
+<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_presstime">
+    <text>Násobitel dlouhého stisku</text>
+</string>
+<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_presstime_desc">
+    <text>Násobitel použitý na okno dvojitého stisku pro urèení, jak dlouho musí být klávesa držena, aby se poèítala jako dlouhý stisk. Platí pouze pro doplòky, které používají MCM k rozpoznání dlouhých stiskù kláves.</text>
+</string>
+<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_dtaptime2">
+    <text>Okno dvojitého stisku</text>
+</string>
+<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_dtaptime2_desc">
+    <text>Jak rychle musí následovat druhý stisk klávesy po prvním, aby se poèítal jako dvojitý stisk. Platí pouze pro doplòky, které používají MCM k rozpoznání dvojitých stiskù. Toto nastavení mùže ovlivnit zpoždìní vstupu nìkterých událostí s jednotlivým stiskem a mìlo by být nastaveno co nejnižší.</text>
+</string>
+
+<string id="ui_mcm_menu_mcm_all_kb">
+    <text>Všechny klávesové zkratky</text>
+</string>
+<string id="ui_mcm_mcm_desc_kb_all">
+    <text>Tento panel shromažïuje všechny MCM klávesové zkratky na jednom místì, ve stejném poøadí, jak se doplòky zobrazují vlevo.
+    \nTento seznam však nemùže zahrnovat další nastavení z panelu doplòkù, která mohou ovlivnit chování klávesy.
+    \nVždy zkontrolujte panel doplòkù, odkud byla zkratka pøevzata, a také dokumentaci doplòku.</text>
+</string>
+<string id="ui_mcm_mcm_desc_kb_all2">
+    <text>Èekající zmìny na jiných panelech se na tomto panelu neprojeví a naopak. 
+    \nAplikujte své zmìny pøed a po použití tohoto panelu. Nepoužití mùže vést k nežádoucímu chování.
+    \n\nPoznámky k èervenému zvýraznìní konfliktních kláves:
+    \n1. Nìkdy to nevadí. Pokud jsou klávesy použity ve dvou rùzných UI nebo pokud zkratka funguje jen pøi držení shiftu, použití klávesy dvakrát nevadí.
+    \n2. MCM neví, co doplnìk dìlá s klávesou. VY musíte pochopit, jak doplnìk klávesu používá, abyste vìdìli, zda je konflikt relevantní.
+    \n3. Pro jednu èekající zmìnu se barva aktualizuje správnì, pro více zmìn nemusí. Aplikujte zmìny a znovu otevøete MCM pro ovìøení správného stavu konfliktu.</text>
+</string>
+
+<string id="ui_mcm_menu_mcm_kb_conflicts">
+    <text>Konflikty klávesových zkratek</text>
+</string>
+<string id="ui_mcm_mcm_desc_kb_conflicts">
+    <text>Tento panel shromažïuje všechny MCM klávesové zkratky oznaèené jako konfliktní, seøazené podle kláves.
+    \nPokud se klávesa v seznamu objeví pouze jednou, pravdìpodobnì konfliktuje s enginovou zkratkou. Ty jsou uvedeny v bìžných Anomaly nastaveních.
+    \nTento seznam však nemùže zahrnovat další nastavení z panelu doplòkù, která mohou ovlivnit chování klávesy.
+    \nVždy zkontrolujte panel doplòkù, odkud byla zkratka pøevzata, a dokumentaci doplòku.</text>
+</string>
+
+<string id="ui_mcm_mcm_kb_modifier">
+    <text>S modifikaèní klávesou</text>
+</string>
+<string id="ui_mcm_mcm_kb_modifier_desc">
+    <text>Výše uvedená zkratka se aktivuje pouze pokud je tato klávesa držena zároveò.</text>
+</string>
+
+	<string id="ui_mcm_lst_mcm_kb_mod_none">
+    <text>Žádná modifikaèní klávesa</text>
+</string>
+<string id="ui_mcm_lst_mcm_kb_mod_ctrl">
+    <text>Klávesa Control</text>
+</string>
+<string id="ui_mcm_lst_mcm_kb_mod_shift">
+    <text>Klávesa Shift</text>
+</string>
+<string id="ui_mcm_lst_mcm_kb_mod_alt">
+    <text>Klávesa Alt</text>
+</string>
+
+<string id="ui_mcm_mcm_kb_mode">
+    <text>Režim vstupu</text>
+</string>
+<string id="ui_mcm_mcm_kb_mode_desc">
+    <text>Výše uvedená zkratka se aktivuje, pokud je klávesa použita tímto zpùsobem.</text>
+</string>
+
+<string id="ui_mcm_lst_mcm_kb_mode_press">
+    <text>Jednoduchý stisk</text>
+</string>
+<string id="ui_mcm_lst_mcm_kb_mode_dtap">
+    <text>Dvojitý stisk</text>
+</string>
+<string id="ui_mcm_lst_mcm_kb_mode_hold">
+    <text>Dlouhý stisk</text>
+</string>
+
+<string id="ui_mcm_menu_search">
+    <text>Vyhledat…</text>
+</string>
+<string id="ui_mcm_menu_search_clear">
+    <text>Pravým tlaèítkem vymazat</text>
+</string>
+
+
+
+
+</string_table>
+
+

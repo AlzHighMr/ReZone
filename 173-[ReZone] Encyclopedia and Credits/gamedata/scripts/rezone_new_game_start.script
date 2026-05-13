@@ -1,0 +1,40 @@
+local game_start_weather_set = false
+
+-- =========================
+-- WEATHER OVERRIDE SYSTEM
+-- =========================
+local _get_random_weather = level_weathers.get_random_weather
+
+level_weathers.get_random_weather = function()
+    return game_start_weather_set and _get_random_weather() or "clear"
+end
+
+function save_state(m_data)
+    m_data.game_start_weather_set = game_start_weather_set
+end
+
+function load_state(m_data)
+    game_start_weather_set = m_data.game_start_weather_set or false
+end
+
+
+local function sms_rezone()
+    if (not has_alife_info("dynamic_news_welcome_sms")) then
+        local sms = game.translate_string("st_rezone_welcome_name")
+        dynamic_news_helper.send_tip(sms, Se, 60, 30, "communication", "welcome", "gr")
+        db.actor:give_info_portion("dynamic_news_welcome_sms")
+    end
+end
+
+
+-- =========================
+-- GAME START INIT
+-- =========================
+function on_game_start()
+    -- weather system callbacks
+    RegisterScriptCallback("save_state", save_state)
+    RegisterScriptCallback("load_state", load_state)
+
+    -- sms trigger on loading screen dismissed
+    RegisterScriptCallback("on_loading_screen_dismissed", sms_rezone)
+end

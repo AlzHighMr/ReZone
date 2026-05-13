@@ -1,0 +1,52 @@
+local KEY = DIK_keys.DIK_PERIOD
+
+function on_mcm_load()
+    local options = {
+        id = "inspectWeapon",
+        sh = true,
+        gr = {
+            {id = "inspectWeapon", type = "slide", link = "ui_options_slider_disguise", text = "ui_mcm_menu_inspectWeapon", size = {512, 50}, spacing = 20},
+            {id = "keybind", type = "key_bind", val = 2, def = KEY}
+        }
+    }
+
+    return options
+end
+
+function on_option_change(mcm)
+    if mcm then
+        KEY = ui_mcm.get("inspectWeapon/keybind") or KEY
+    end
+end
+
+function on_key_press(key)
+    if key == KEY then
+        inspect_weapon()
+    end
+end
+
+function inspect_weapon()
+    local weapon = db.actor:active_item()
+
+    if weapon == nil or not IsWeapon(weapon) then
+        return
+    end
+
+    local sec = weapon:section()
+    local idle_section = utils_item.addon_attached(weapon ,"gl") and (weapon:weapon_in_grenade_mode() and "anm_bore_g" or "anm_bore_w_gl") or "anm_bore"
+    local hud = ini_sys:r_string_ex(sec, "hud")
+    local bored_anim = hud and ini_sys:r_string_ex(hud,idle_section)
+    if bored_anim then
+        local sound = ini_sys:r_string_ex(sec, "snd_bore") or "$no_sound"
+        weapon:play_hud_motion(idle_section, true, 0, 1, 0)
+        if sound then
+            utils_obj.play_sound(sound)
+        end
+    end
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_option_change", on_option_change)
+    RegisterScriptCallback("on_key_press", on_key_press)
+    on_option_change(ui_mcm)
+end

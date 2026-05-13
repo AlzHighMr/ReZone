@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<!--
+
+Colors:
+
+Gray			- %c[ui_gray_2]
+Gray (Light)	- %c[ui_gray_1]		
+Blue			- %c[d_cyan]	
+Orange			- %c[d_orange]
+Red				- %c[d_red]
+Purple			- %c[d_purple]	
+Green			- %c[d_green]	
+Yellow			- %c[0,250,250,0]	
+White 			- %c[0,255,255,255]	
+
+-->
+
+
+<string id="st_rezone_welcome_name">
+		<text>%c[d_green]Vítej v zóně Stalkere! Rozhodně se podivej do PDA najdeš tam spoustu důležitých informací! %c[0,250,250,0] PDA --> Průvodce --> Re:Zone Manual %c[0,250,250,0]</text>
+</string>
+
+
+
+	<string id="encyclopedia__rezone">
+		<text>Re:Zone Manual</text>
+	</string>
+<string id="encyclopedia____rezone_modpack">
+    <text>Tipy pro nováčky</text>
+</string>
+
+<string id="encyclopedia____rezone_modpack_text">
+    <text>
+%c[pda_green]Vítej v Zóně, stalkere.%c[pda_white]\n
+\n
+Jestli tohle čteš, znamená to, že ses dostal přes armádní checkpoint živý.\n
+To ale ještě nic neznamená.\n
+Zóna si bere každého, kdo podcení pravidla přežití.\n
+\n
+%c[pda_green]TIPY PRO PŘEŽITÍ%c[pda_white]\n
+\n
+- Šetři vybavením.\n
+  Každý náboj, obvaz nebo jídlo může rozhodnout,\n
+  jestli se vrátíš živý.\n
+\n
+- Pokud jsi v Kordonu, vyhledej Fanatika.\n
+  Provede tě základním výcvikem a dá ti nějakou výbavu na začátek.\n
+\n
+- Prohledávej všechno.\n
+  Domy, sklepy, střechy i vraky.\n
+  Zóna odměňuje zvědavé stalkery.\n
+\n
+- Obchodníci ti ze začátku moc neprodají.\n
+  Nejdřív si musíš vybudovat reputaci.\n
+\n
+- Každá frakce má vlastní důvěru.\n
+  Nabídka vybavení se liší podle jejich dodavatelů.\n
+\n
+- Padlé nepřátele vždy prohledej.\n
+  Munice v zásobnících se počítá.\n
+\n
+- Ne každý boj stojí za to riziko.\n
+  Někdy je lepší se nepřátelským táborům vyhnout.\n
+\n
+- Sleduj okolí.\n
+  Ve světě můžeš najít zbraně, obleky,\n
+  recepty nebo ukryté zásoby.\n
+\n
+- Po emisi vyrážej hledat artefakty.\n
+  Později je můžeš transmutovat pomocí receptů.\n
+\n
+%c[pda_green]POSTUP ZÓNOU%c[pda_white]\n
+\n
+- Plň úkoly a lov mutanty.\n
+  Jejich části se hodí na obchod i další zakázky.\n
+\n
+- Sbírej souřadnice skrýší.\n
+  Cenné věci bývají dobře ukryté.\n
+\n
+- Sháněj nářadí.\n
+  Bez něj neopravíš vybavení ani nevyužiješ\n
+  nalezenou výbavu naplno.\n
+\n
+- Zvyšuj reputaci u frakcí.\n
+  Každá nabízí unikátní vybavení na vyšších úrovních.\n
+    </text>
+</string>
+
+
+<string id="encyclopedia__rezone_keybinds">
+    <text>Keybindy</text>
+</string>
+
+<string id="encyclopedia__rezone_keybinds_text">
+    <text>
+%c[pda_green]OVLÁDÁNÍ A KLÁVESY%c[pda_white]\n
+\n
+%c[pda_green]POSTAVA%c[pda_white]\n
+\n
+- Dovednosti postavy %c[ui_gray_1]»%c[pda_white] H\n
+- Přehled statistik %c[ui_gray_1]»%c[pda_white] J\n
+\n
+%c[pda_green]ROZHRANÍ%c[pda_white]\n
+\n
+- PDA %c[ui_gray_1]»%c[pda_white] Caps Lock\n
+- Inventář %c[ui_gray_1]»%c[pda_white] Tab\n
+- Konzole %c[ui_gray_1]»%c[pda_white] Scroll Lock\n
+- Debug menu %c[ui_gray_1]»%c[pda_white] Pause Break\n
+\n
+%c[pda_green]ZBRANĚ A BOJ%c[pda_white]\n
+\n
+- Odseknutí zbraně %c[ui_gray_1]»%c[pda_white] Podržet R\n
+- Kontrola munice %c[ui_gray_1]»%c[pda_white] Horní boční tlačítko myši\n
+- Změna režimu střelby %c[ui_gray_1]»%c[pda_white] Dolní boční tlačítko myši\n
+- Inspekce zbraně %c[ui_gray_1]»%c[pda_white] I\n
+- Alternativní míření %c[ui_gray_1]»%c[pda_white] V\n
+\n
+%c[pda_green]VYBAVENÍ%c[pda_white]\n
+\n
+- Očištění masky %c[ui_gray_1]»%c[pda_white] T\n
+- Nasazení / sundání masky %c[ui_gray_1]»%c[pda_white] Podržet T\n
+- Zapnutí Exoskeletonu / PSU %c[ui_gray_1]»%c[pda_white] P\n
+- Reboot PDA %c[ui_gray_1]»%c[pda_white] P\n
+\n
+%c[pda_green]HUD A UTILITY%c[pda_white]\n
+\n
+- Vypnutí HUD %c[ui_gray_1]»%c[pda_white] Page Up\n
+- Vypnutí kompasu %c[ui_gray_1]»%c[pda_white] Page Down\n
+- Kruh rychlých akcí %c[ui_gray_1]»%c[pda_white] ;\n
+\n
+%c[pda_green]MÍŘENÍ%c[pda_white]\n
+\n
+- Alternativní míření %c[ui_gray_1]»%c[pda_white] V\n
+    </text>
+</string>
+
+<string id="encyclopedia__rezone_bhs">
+    <text>Body Health System</text>
+</string>
+
+<string id="encyclopedia__rezone_bhs_text">
+    <text>
+%c[pda_green]BODY HEALTH SYSTEM%c[pda_white]\n
+\n
+Tento systém je inspirován BHS z GAMMA,\n
+ale obsahuje několik následujicích změn.\n
+\n
+%c[pda_green]POŠKOZENÍ%c[pda_white]\n
+\n
+- Mutanti poškozují nejbližší končetinu z jejich směru\n
+  místo náhodné části těla.\n
+\n
+- Pád nově poškozuje nohy.\n
+\n
+- Anomálie poškozují náhodné části těla.\n
+  Toxické anomálie zasahují hlavně nohy.\n
+\n
+- Pouze přímé zásahy snižují zdraví končetin.\n
+\n
+%c[pda_green]LÉČENÍ%c[pda_white]\n
+\n
+Existují 3 typy léčiv.\n
+\n
+%c[pda_green]PODPŮRNÉ%c[pda_white]\n
+\n
+- Zastaví krvácení nebo poskytnou boost.\n
+- Neléčí poškozené končetiny.\n
+\n
+%c[pda_green]DOČASNÉ%c[pda_white]\n
+\n
+- Dočasně obnoví funkci končetin.\n
+- Je nutné je kombinovat s regenerační léčbou.\n
+\n
+%c[pda_green]REGENERAČNÍ%c[pda_white]\n
+\n
+- Plně obnovují poškozené končetiny.\n
+- Fungují správně pouze po použití\n
+  dočasného léku.\n
+\n
+%c[pda_green]TIPY%c[pda_white]\n
+\n
+- Sleduj BHS HUD při používání léčiv.\n
+\n
+- Alternativou je spánek nebo odpočinek\n
+  u táborového ohně.\n
+    </text>
+</string>
+
+
+<string id="encyclopedia__rezone_balistika">
+    <text>Vysvětlení balistiky</text>
+</string>
+
+<string id="encyclopedia__rezone_balistika_text">
+    <text>
+%c[pda_green]BALISTIKA A MUNICE%c[pda_white]\n
+\n
+V Zóně záleží na typu munice stejně\n
+jako na samotné zbrani.\n
+\n
+%c[pda_green]TYPY MUNICE%c[pda_white]\n
+\n
+- %c[pda_green]FMJ%c[pda_white]\n
+  Standardní univerzální munice.\n
+  Vyvážený výkon.\n
+\n
+- %c[pda_green]HP%c[pda_white]\n
+  Vysoké poškození.\n
+  Ideální proti mutantům a lehkým cílům.\n
+\n
+- %c[pda_green]AP%c[pda_white]\n
+  Průbojná munice proti těžkému brnění.\n
+\n
+- %c[pda_green]Buckshot%c[pda_white]\n
+  Nízká průbojnost.\n
+  Velmi účinné na krátkou vzdálenost.\n
+\n
+%c[pda_green]POZNÁMKY%c[pda_white]\n
+\n
+- Starou munici je lepší rozebrat.\n
+\n
+- Nová a kvalitní munice má výrazně\n
+  lepší vlastnosti.\n
+\n
+%c[pda_green]BALISTICKÉ TŘÍDY%c[pda_white]\n
+\n
+- %c[pda_green]I%c[pda_white]\n
+  Lehké obleky.\n
+\n
+- %c[pda_green]IIA%c[pda_white]\n
+  Střední ochrana.\n
+\n
+- %c[pda_green]II%c[pda_white]\n
+  PS5 a podobné obleky.\n
+\n
+- %c[pda_green]III%c[pda_white]\n
+  Berill-5M.\n
+\n
+- %c[pda_green]IV%c[pda_white]\n
+  SKAT-9.\n
+\n
+- %c[pda_green]V%c[pda_white]\n
+  Těžké vesty a exo pláty.\n
+\n
+- %c[pda_green]VI+%c[pda_white]\n
+  Exoskeletony.\n
+    </text>
+</string>
+
+
+
+
+
+
+<string id="encyclopedia__rezone_magazines">
+    <text>Zásobníky</text>
+</string>
+<string id="encyclopedia__rezone_magazines_text">
+    <text>
+%c[pda_green]SYSTÉM ZÁSOBNÍKŮ%c[pda_white]\n
+\n
+Zásobníky musíš mít vybavené.\n
+Bez nich nebude možné přebíjet zbraně.\n
+\n
+%c[pda_green]JAK PŘIDAT ZÁSOBNÍK%c[pda_white]\n
+\n
+- Klikni pravým tlačítkem na zásobník.\n
+\n
+- Vyber možnost\n
+\n%c[pda_green]"Přidat do výbavy"%c[pda_white]\n
+\n
+\n%c[pda_green]VELIKOSTI ZÁSOBNÍKŮ%c[pda_white]\n
+\n
+- %c[pda_green]Malé%c[pda_white]\n
+  Pistole a některé SMG.\n
+  Například Kiparis nebo PP-2000.\n
+\n
+- %c[pda_green]Střední%c[pda_white]\n
+  Pušky a většina SMG.\n
+  AK, M4, FAL, SCAR nebo MP7.\n
+\n
+- %c[pda_green]Velké%c[pda_white]\n
+  Kulomety a odstřelovací pušky.\n
+\n
+%c[pda_green]DŮLEŽITÉ%c[pda_white]\n
+\n
+- Oblek má omezenou kapacitu\n
+  pro zásobníky.\n
+- Ne každý oblek podporuje všechny typy.\n
+- Kapacitu i velikost zjistíš v popisku u obleku.\n
+    </text>
+</string>
+
+
+
+<string id="encyclopedia___rezone_story">
+    <text>Příběhové linky</text>
+</string>
+<string id="encyclopedia___rezone_story_text">
+    <text>
+%c[pda_green]PŘÍBĚHOVÉ LINKY%c[pda_white]\n
+\n
+V Zóně na tebe čeká mnoho příběhů,\n
+nových úkolů a vedlejších linií.\n
+\n
+%c[pda_green]ZAČÁTEK%c[pda_white]\n
+\n
+- Navštiv Mráze a Spora\n
+  ve Velkých bažinách.\n
+\n
+- Pomáhej vědcům s výzkumem.\n
+\n
+%c[pda_green]BROTHERHOOD%c[pda_white]\n
+\n
+- Nová NPC.\n
+- Nové příběhové linky.\n
+- Náhodné události v Zóně.\n
+\n
+%c[pda_green]LOST TO THE ZONE: DIRECTOR'S CUT%c[pda_white]\n
+\n
+- Rozšířený hlavní příběh.\n
+\n
+- Upravený boss Eidolon.\n
+\n
+- Přepracovaný konec\n
+  „Smrtelný hřích“.\n
+\n
+- Nový quest\n
+  „Temná přítomnost“.\n
+\n
+- Více PDA zpráv pro lepší návaznost.\n
+\n
+%c[pda_green]DUTY EXPANSION%c[pda_white]\n
+\n
+Povinnost se snaží znovu získat\n
+svou bývalou slávu.\n
+\n
+Požadavky:\n
+- Přátelský vztah s Povinností.\n
+- Najít Annu v Rostoku.\n
+- Vypnout Vypalovač mozku.\n
+- Vypnout Zázračnou mašinu.\n
+\n
+%c[pda_green]WESTERN GOODS%c[pda_white]\n
+\n
+"Doručeno vrtulníkem"\n
+- Vyšetři havárii vrtulníku.\n
+- Start: Předměstí Pripyati.\n
+\n
+"Práce na zakázku"\n
+- Speciální mise od Dushmana.\n
+- Start: Mrtvé město.\n
+\n
+"Bratři Černenkovi"\n
+- Najdi ztraceného bratra.\n
+- Start: Smetiště.\n
+\n
+%c[pda_green]NOVÉ LOKACE%c[pda_white]\n
+\n
+- 3 nové mapy a vlastní storyline.\n
+- Více informací u Sakharova.\n
+\n
+%c[pda_green]NEW TASK ADDON%c[pda_white]\n
+\n
+%c[pda_green]DELŠÍ MISE%c[pda_white]\n
+\n
+"Živý oheň"\n
+- Start: Bar (Práskač).\n
+- Nutná dokončená\n
+  „Živá legenda“.\n
+\n
+%c[pda_green]ÚKOLY OD NPC%c[pda_white]\n
+\n
+%c[pda_green]Petrenko%c[pda_white]\n
+- Udržet pozici.\n
+\n
+%c[pda_green]Lukash%c[pda_white]\n
+- Pád z nebes.\n
+\n
+%c[pda_green]Dushman%c[pda_white]\n
+- Ani krok zpět.\n
+\n
+%c[pda_green]Sakharov%c[pda_white]\n
+- Hra s mozky.\n
+- Ukradený exemplář.\n
+\n
+%c[pda_green]Voronin%c[pda_white]\n
+- Naléhavé rozkazy.\n
+\n
+%c[pda_green]Kuzněcov%c[pda_white]\n
+- Naléhavé rozkazy.\n
+- Prosazení embarga.\n
+\n
+%c[pda_green]Sidorovič%c[pda_white]\n
+- Mrtvá noc.\n
+- Chladnokrevná zrada.\n
+\n
+%c[pda_green]Barman%c[pda_white]\n
+- Baba yaga.\n
+\n
+%c[pda_green]Mráz%c[pda_white]\n
+- Dům hrůzy.\n
+\n
+%c[pda_green]Fousek%c[pda_white]\n
+- Miráž.\n
+\n
+%c[pda_green]Lovec%c[pda_white]\n
+- Velká zvěř.\n
+\n
+%c[pda_green]Olivius%c[pda_white]\n
+- Výpalné.\n
+\n
+%c[pda_green]Knihovník%c[pda_white]\n
+- Krvavá mince.\n
+\n
+%c[pda_green]Hawajec%c[pda_white]\n
+- Památka.\n
+\n
+%c[pda_green]Svoboda%c[pda_white]\n
+- Hazard se životem.\n
+\n
+%c[pda_green]Banditi%c[pda_white]\n
+- Zesílená pomsta.\n
+\n
+%c[ui_gray_1]Další obsah bude přidán později.\n
+    </text>
+</string>
+
+<string id="encyclopedia_guide_fatal_error">
+    <text>Fatal Error</text>
+</string>
+
+<string id="encyclopedia_guide_fatal_error_text">
+    <text>
+%c[pda_green]FATAL ERROR%c[pda_white]\n
+\n
+Tento addon upravuje PDA a elektroniku v Zóně.\n
+Zaměřuje se na přežití, poruchy zařízení a správu energie.\n
+\n
+%c[pda_green]JAK TO FUNGUJE%c[pda_white]\n
+\n
+- PDA a elektronika se mohou poškodit během:\n
+  • emisí a psy-bouří\n
+  • radiace\n
+  • elektrických anomálií\n
+  • zásahů a fyzického poškození\n
+\n
+- Poškozené zařízení může:\n
+  • přestat fungovat\n
+  • vykazovat BSOD\n
+  • mít rozbitý displej\n
+\n
+%c[pda_green]BATERIE%c[pda_white]\n
+\n
+- Zařízení fungují na různé typy baterií\n
+- Každé PDA má vlastní spotřebu\n
+- UPD baterie umožňují nabíjení a přenos energie\n
+\n
+%c[pda_green]BIOS%c[pda_white]\n
+\n
+- Přístup do BIOSu přímo ve hře\n
+- Nastavení výkonu, zvuků a UI\n
+- Možnost přetaktování zařízení\n
+\n
+%c[pda_green]BSOD%c[pda_white]\n
+\n
+- PDA může selhat (BSOD / restart / vypnutí)\n
+- Nejčastěji během emisí nebo v rizikových oblastech\n
+- Restart systému trvá určitou dobu\n
+\n
+%c[pda_green]REBOOT%c[pda_white]\n
+\n
+- Ruční restart PDA:\n
+  %c[ui_gray_1]»%c[pda_white] P\n
+\n
+- Použij, pokud se zařízení zasekne nebo přestane reagovat\n
+\n
+%c[pda_green]SHRNUTÍ%c[pda_white]\n
+\n
+Fatal Error dělá z elektroniky v Zóně křehký nástroj.\n
+Musíš sledovat energii, stav zařízení a reagovat na poruchy.\n
+\n
+%c[ui_gray_1]Více informací:%c[pda_white]\n
+https://www.moddb.com/mods/stalker-anomaly/addons/fatal-error-by-ncenka\n
+    </text>
+</string>
+
+
+<string id="encyclopedia_features_map_spots">
+    <text>Značky na mapě</text>
+</string>
+
+<string id="encyclopedia_features_map_spots_text">
+    <text>
+%c[pda_white]ZNAČKY NA MAPĚ%c[ui_gray_1] jsou ikony na mapě, které označují důležité body zájmu.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+Mapové body jsou přiřazeny většině lokací a entit v Zóně.\n
+Usnadňují orientaci bez nutnosti pamatovat si detaily.\n
+\n
+%c[pda_blue]PŘEPÍNÁNÍ%c[ui_gray_1]\n
+\n
+Anomálie, důležité osoby, objekty (obchodníci, technici, lůžka), skrýše i úkolové body lze zapínat a vypínat v PDA.\n
+\n
+Tlačítka se nachází v horní části mapové karty.\n
+\n
+Nezávisle na těchto nastaveních zůstávají na minimapě vždy viditelné pohyblivé entity.\n
+U nich není zaručeno, že zůstanou na stejném místě.\n
+    </text>
+</string>
+
+
+<string id="encyclopedia_features_hud">
+    <text>HUD</text>
+</string>
+
+<string id="encyclopedia_features_hud_text">
+    <text>
+%c[pda_white]HUD%c[ui_gray_1] zobrazuje stav postavy a vybavení v reálném čase.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+%c[pda_white]Indikátory stavu%c[ui_gray_1] ukazují zdraví a stav vybavení.\n
+\n
+- Šedá: lehké poškození.\n
+- Žlutá: pozor.\n
+- Oranžová: vážný stav.\n
+- Červená: kritický stav.\n
+\n
+%c[pda_white]Nebezpečí%c[ui_gray_1] se zobrazí při vstupu do nebezpečných oblastí.\n
+Čím silnější barva, tím vyšší ztráta zdraví.\n
+\n
+%c[pda_white]Posílení%c[ui_gray_1] ukazují aktivní buffy.\n
+\n
+Zahrnují léčení, ochranu nebo regeneraci.\n
+Zmizí po skončení efektu.\n
+    </text>
+</string>
+
+
+<string id="encyclopedia_features_rank">
+    <text>Rank</text>
+</string>
+
+<string id="encyclopedia_features_rank_text">
+    <text>
+%c[pda_white]RANK%c[ui_gray_1] je systém hodnocení založený na aktivitě v Zóně.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+Každá akce ve hře uděluje body.\n
+Tyto body určují tvůj postup v rank systému.\n
+\n
+Každý milník vyžaduje o 1 000 bodů více než předchozí.\n
+\n
+Data se ukládají v PDA statistikách.\n
+Součástí je i žebříček top 100 stalkerů.\n
+\n
+Vyšší rank znamená větší vliv v Zóně.\n
+Získáš přístup k lepším společníkům,\n
+ale zároveň se stáváš cílem pro silnější nepřátele.\n
+\n
+%c[pda_blue]RANKY%c[ui_gray_1]\n
+\n
+- Nováček: 0+\n
+- Zkušený: 4 000\n
+- Profesionál: 7 000\n
+- Veterán: 10 000\n
+- Expert: 15 000\n
+- Mistr: 21 000\n
+- Legenda: 28 000+\n
+    </text>
+</string>
+<string id="encyclopedia_features_reputation">
+    <text>Reputace</text>
+</string>
+
+<string id="encyclopedia_features_reputation_text">
+    <text>
+%c[pda_white]REPUTACE%c[ui_gray_1] je odraz toho, jak tě v Zóně vnímají ostatní.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+Reputace funguje podobně jako hodnost,\n
+ale není pevně lineární.\n
+Může stoupat i klesat v závislosti na tvých činech.\n
+\n
+Zatímco rank odráží postup ve hře,\n
+reputace je postavená hlavně na interakcích\n
+s ostatními stalkery.\n
+\n
+Nejčastější způsoby zvýšení reputace:\n
+- Plnění úkolů.\n
+- Poskytování pomoci zraněným.\n
+- Eliminace nepřátel frakce.\n
+\n
+Nejčastější způsoby snížení reputace:\n
+- Selhání nebo odmítnutí úkolů.\n
+- Zabíjení neutrálních nebo přátelských stalkerů.\n
+\n
+Reputace má i imerzní funkci.\n
+Nejde o čistý herní systém výkonu,\n
+ale o vztahy v rámci Zóny.\n
+\n
+Čím nižší reputace, tím větší nenávist\n
+ze strany frakce a jejich spojenců.\n
+V extrémních případech se můžeš stát cílem likvidace.\n
+\n
+%c[pda_blue]STUPNĚ REPUTACE%c[ui_gray_1]\n
+\n
+- Hrozná: -2000\n
+- Děsná: -1500\n
+- Příšerná: -1000\n
+- Špatná: -500\n
+- Neutrální: 0\n
+- Dobrá: 500\n
+- Skvělá: 1000\n
+- Brilantní: 1500\n
+- Výborná: 2000\n
+    </text>
+</string>
+
+
+<string id="encyclopedia_features_stashes">
+    <text>Skrýše</text>
+</string>
+
+<string id="encyclopedia_features_stashes_text">
+    <text>
+%c[pda_white]SKRÝŠE%c[ui_gray_1] jsou ukryté zásoby stalkerů v Zóně.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+Většina stalkerů ukládá munici, jídlo a léky\n
+do batohů, kontejnerů a jiných úkrytů.\n
+\n
+Často umírají dřív, než si své skrýše vyzvednou.\n
+Výsledkem jsou zapomenuté zásoby v celé Zóně.\n
+\n
+Informace o skrýších získáš od obchodníků\n
+nebo za splněné úkoly.\n
+\n
+Skrýše můžeš také vytvářet sám:\n
+- Klikni pravým tlačítkem na batoh v inventáři.\n
+- Vyber možnost vytvoření skrýše.\n
+\n
+Vlastní skrýše nejsou ostatními stalkery vybírány.\n
+Tvůj obsah zůstává v bezpečí.\n
+\n
+%c[pda_blue]IDENTIFIKACE%c[ui_gray_1]\n
+\n
+Stav skrýše poznáš podle ikony na mapě\n
+nebo při najetí kurzoru.\n
+\n
+- Zelená: nedotčená\n
+- Žlutá: částečně vybraná\n
+- Fialová: opuštěná / stará\n
+- Zlatá: hráčská skrýš\n
+    </text>
+</string>
+
+
+
+
+
+	<string id="encyclopedia_features_workshop_craft">
+    <text>Výrobní dílna</text>
+</string>
+
+<string id="encyclopedia_features_workshop_craft_text">
+    <text>
+%c[pda_white]VÝROBNÍ DÍLNA%c[ui_gray_1] je nutná vybava pro použivaní komplexního systému pro opravy, úpravy a výrobu vybavení v Zóně.\n
+\n
+%c[pda_green]ZÁKLADNÍ PRINCIP%c[ui_gray_1]\n
+\n
+Výroba (dílna) nahrazuje práci mechaniků a umožňuje ti:\n
+- opravovat vybavení\n
+- vylepšovat zbraně a výstroj\n
+- vyrábět nové předměty\n
+a díky tomu ušetřit mnoho peněz.\n
+\n
+Vše závisí na nástrojích, materiálu a znalostech z receptů.\n
+\n
+%c[pda_green]ZÁKLADNÍ POŽADAVKY%c[ui_gray_1]\n
+\n
+- NÁSTROJE\n
+  Různé úrovně (základní až expertní), nutné pro práci.\n
+\n
+- KOMPONENTY\n
+  Získávají se rozebíráním vybavení, obchodem a nalezením v Zóně.\n
+\n
+- RECEPTY\n
+  Odemknou možnosti výroby a upgrady.\n
+\n
+%c[pda_green]OPRAVY%c[ui_gray_1]\n
+\n
+Vybavení je složeno z dílů, jejichž stav určuje celkovou kondici.\n
+Poškozené části lze nahradit lepšími kusy.\n
+\n
+- Každá výměna vyžaduje opravářskou sadu ale některé části zbraní můžeš vyměnit i v terénu.\n
+- Lepší díly získáš rozebíráním vybavení a následnou opravou těch co mají nad 60%.\n
+\n
+%c[pda_green]VYLEPŠENÍ%c[ui_gray_1]\n
+\n
+Instalace modulů a úprav vybavení.\n
+\n
+- vyžaduje specifické často i vzácné upgrade nástroje\n
+- funguje jako strom vylepšení\n
+\n
+%c[pda_green]Výroba%c[ui_gray_1]\n
+\n
+Výroba předmětů ze surovin a komponent.\n
+\n
+- některé recepty musíš najít a nebo zakoupit u mechaniků\n
+- některé se dají získat jako odměna za splněnou misi\n
+- výroba vyžaduje správné nástroje\n
+\n
+%c[pda_green]SHRNUTÍ%c[ui_gray_1]\n
+\n
+Dílna je jeden z klíčových survival systémů Zóny.\n
+Nahrazuje obchodní mechaniky a nutí tě pracovat s tím,\n
+co opravdu najdeš v terénu.\n
+    </text>
+</string>
+
+
+<string id="encyclopedia_features_disassembly">
+    <text>Demontáž předmětu</text>
+</string>
+
+<string id="encyclopedia_features_disassembly_text">
+    <text>
+%c[pda_white]DEMONTÁŽ%c[ui_gray_1] umožňuje rozebrání předmětů na základní komponenty.\n
+\n
+%c[pda_green]INFORMACE%c[ui_gray_1]\n
+\n
+Demontáž slouží k recyklaci nepotřebného vybavení.\n
+Získané materiály lze využít pro opravy a crafting.\n
+\n
+%c[pda_green]NÁSTROJE%c[ui_gray_1]\n
+\n
+Demontáž lze provést pomocí:\n
+\n
+- %c[pda_white]Švýcarský nůž%c[ui_gray_1]\n
+  (omezené použití)\n
+\n
+- %c[pda_white]Opravná sada%c[ui_gray_1]\n
+  (základní demontáž)\n
+\n
+- %c[pda_white]Multitool%c[ui_gray_1]\n
+  (univerzální nástroj)\n
+\n
+%c[pda_green]POSTUP%c[ui_gray_1]\n
+\n
+Předměty vhodné k demontáži se v inventáři zobrazí\n
+s označením „Demontovat [!]“.\n
+\n
+1. Vyber předmět v inventáři.\n
+\n
+2. Použij vhodný nástroj.\n
+\n
+3. Zvol možnost „Demontovat [!]“.\n
+\n
+%c[pda_yellow]POZNÁMKA%c[ui_gray_1]\n
+\n
+- ALT funguje jako bezpečnostní ochrana.\n
+\n
+- Lze jej vypnout či zapnout v nastavení.\n
+\n
+- Chrání před nechtěným rozebráním.\n
+    </text>
+</string>
+
+
+
+</string_table>
