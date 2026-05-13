@@ -1,0 +1,113 @@
+![actor_condition]
+;satiety_v				= 0.000037	 	                ;rychlost snižování sytosti èasem    ;0.000019 Predtim
+;satiety_power_v			= 0.00325			
+;satiety_health_v		= 0.00051   	;0.00001        
+;satiety_critical		= 0.3		    ;0.2            ;kritická hodnota sytosti (v procentech 0..1), kdy se zdraví zaèíná snižovat.
+
+
+;-----------PSI-------------;
+
+morale_v        = 0,0001                                       ;míra obnovy morálky 
+psy_health_v    = 0,001                   ;0,001              ;míra obnovy psy-health
+
+
+;-----------RADIACE-------------;
+;radiation_health_v		= 0.000112    ;0.00018           ; 0.0018  Snížení zdraví pøi vystavení záøení
+radiation_v				= 0.000003                       ; Snižovaní radiace
+
+;-----------BLEEDING-------------;
+
+bleeding_v 				= 0.0018                        ;ztráta krve za sekundu
+
+;wound_incarnation_v = 0.0002                            ;rychlost hojení rány
+;min_wound_size = 0.0062                                 ;minimální velikost rány, po které je rána považována za zhojenou 
+;bleed_speed_k = 0.86                                    ; TotalWounds * bleed_speed_k
+
+
+;-----------Getoutmyway-------------;
+stalker_restrictor_radius               = 0.0  
+stalker_small_restrictor_radius         = .0
+ph_mass                                 = 220
+
+
+
+
+
+;-----------Button sorting-------------;
+;![button_sort_tab_2]
+;kinds = w_base, w_pistol, w_shotgun, w_smg, w_rifle, w_sniper, w_melee, w_misc
+
+;![button_sort_tab_4]
+;kinds = w_ammo, w_explosive
+
+
+
+
+
+
+
+;-----------Imunita-------------;
+![actor_immunities_gd_novice]
+burn_immunity 				= 0.90
+strike_immunity 			= 0.60
+shock_immunity 				= 0.90
+wound_immunity				= 0.65
+burn_immunity               = 1.00
+radiation_immunity 			= 0.50
+telepatic_immunity 			= 1.15
+chemical_burn_immunity 		= 1.11
+explosion_immunity 			= 0.36
+fire_wound_immunity  		= 0.29
+
+![actor_immunities_gd_stalker]
+burn_immunity               = 1.15
+strike_immunity 			= 0.78
+shock_immunity 				= 1.00
+wound_immunity				= 0.82
+radiation_immunity 			= 0.70
+telepatic_immunity 			= 1.40
+chemical_burn_immunity 		= 1.40
+explosion_immunity 			= 0.48
+fire_wound_immunity  		= 0.36
+
+
+![actor_immunities_gd_veteran]
+burn_immunity               = 1.50
+strike_immunity 			= 1.00
+shock_immunity 				= 1.53
+wound_immunity				= 1.00
+radiation_immunity 			= 0.85
+telepatic_immunity 			= 2.00
+chemical_burn_immunity 		= 2.00
+explosion_immunity 			= 0.80
+fire_wound_immunity  		= 0.60
+
+
+
+![actor_immunities_gd_master]
+burn_immunity               = 2.00
+strike_immunity 			= 1.15
+shock_immunity 				= 1.80
+wound_immunity				= 1.25
+radiation_immunity 			= 1.00
+telepatic_immunity 			= 2.25
+chemical_burn_immunity 		= 2.25
+explosion_immunity 			= 0.85
+fire_wound_immunity  		= 0.7
+
+
+;![actor]
+;ph_box2_center                                                 = 0.0,  0.46,  0.0     ;Crouch
+;ph_box2_size                                                   = 0.23, 0.46,  0.23    ;Crouch
+
+
+;--------STAMINA-A-SPEED----------;
+jump_speed = 6.
+crouch_coef = 0.6
+climb_coef = 0.7
+run_coef = 1.85
+sprint_koef = 2.3
+run_back_coef = 1.8
+walk_back_coef = 0.65
+air_control_param = 0.15
+walk_accel = 17
