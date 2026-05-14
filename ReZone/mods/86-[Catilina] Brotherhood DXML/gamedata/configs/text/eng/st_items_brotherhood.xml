@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+	Stories from the Zone items
+-->
+
+<string_table>
+
+--- Hunters
+
+	<string id="quest_package_vybegallo_name">
+		<text>Bag of Tuna Conserves</text>
+	</string>
+	<string id="quest_package_vybegallo_desc">
+		<text>Heavy bag, filled with Tuna Conserves. Vybegallo will be happy.</text>
+	</string>
+	
+	<string id="st_wpn_saiga12s_mutanthammer_name">
+		<text>Saiga-12S "Mutanthammer"</text>
+	</string>
+	<string id="st_wpn_saiga12s_mutanthammer_descr">
+		<text>A modified version of the Saiga-12S. Someone etched "Mutanthammer" on the side.\n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 Kobra, 1P29, PSO-1 scopes\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1\n \n</text>
+	</string>
+	
+--- Strange Kolbosa ---
+	<string id="st_kolbasa_strange">
+		<text>Pack of unusual meat</text>
+	</string>
+	<string id="st_kolbasa_strange_descr">
+		<text>A package containing something looking like the usual pack of old meat: old bread and some smelly meat of unknown origin wrapped in scribbled paper. You don't recognise the look and smell...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] low quality\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_tried">
+		<text>Pack of half-eaten unusual meat</text>
+	</string>
+	<string id="st_kolbasa_strange_tried_descr">
+		<text>A package containing something looking like the usual pack of old meat: old bread and some smelly meat of unknown origin wrapped in scribbled paper. You already took a bite, and thought it tasted even more unusual than normally...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] low quality\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_unpacked">
+		<text>Unusual meat</text>
+	</string>
+	<string id="st_kolbasa_strange_unpacked_description">
+		<text>Smelly meat of unknown origin. You don't recognise the look and smell...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] low quality\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_tried_unpacked">
+		<text>Half-eaten unusual meat</text>
+	</string>
+	<string id="st_kolbasa_strange_tried_unpacked_description">
+		<text>Smelly meat of unknown origin. You already took a bite, and thought it tasted even more unusual than normally...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] low quality\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_paper_name">
+		<text>Scribbled paper</text>
+	</string>
+	<string id="st_kolbasa_strange_paper_descr">
+		<text>Smirched paper which was wrapped around the unusual meat. The page was fully written on, but most has been smirched and is unreadable. You recognise different words nevertheless, like "cold" "Chimera" "hiding" and "Lyoshik".</text>
+	</string>
+	
+	<string id="st_bullet_yak">
+		<text>Bullet inside Yak</text>
+	</string>
+	<string id="st_bullet_yak_descr">
+		<text>I found this bullet inside Yak's torso. Seems he was murdered.</text>
+	</string>
+	
+	<string id="st_bullet_yak_identify">
+		<text>Bullet inside Yak</text>
+	</string>
+	<string id="st_bullet_yak_identify_descr">
+		<text>I found this bullet inside Yak's torso. Seems he was murdered. Nitro identified it as a 7.62x51 ball bullet.</text>
+	</string>
+	
+	
+	
+---- Market Share	
+	
+	<string id="st_itm_usb_mercenary_1_name">
+		<text>USB decryption key</text>
+	</string>
+	<string id="st_itm_usb_mercenary_1_descr">
+		<text>The encryption and decryption key for the new mercenary communication encryption.</text>
+	</string>
+	
+	<string id="st_pda_mercenary_1_name">
+		<text>Lt. Harald Virtanen's PDA</text>
+	</string>
+	<string id="st_pda_mercenary_1_descr">
+		<text>PDA of Lt. Harald Virtanen with the decryption key for the mercenary's communication. \n \nWill be obsolete soon.</text>
+	</string>
+	
+	<string id="st_sakharov_order_vybegallo_descr">
+		<text>A strongly worded order from Sakharov telling Vybegallo to stop his experiments immediatly.</text>
+	</string>
+	<string id="st_sakharov_order_vybegallo_name">
+		<text>Sakharov's cease order to Vybegallo</text>
+	</string>
+	
+	<string id="st_vybegallo_order_mercenary_name">
+		<text>Mission description</text>
+	</string>
+	<string id="st_vybegallo_order_mercenary_descr">
+		<text>A scientist recently contacted us with an urgent order for some Pseudogiant parts. Organise a hunting party and send the parts to Dushman - he takes a keen interest in the success of the mission, so don't screw it up! Take some experencied guys with you! And no word about it, discretion is of essence.</text>
+	</string>
+	
+	<string id="st_af_grid_prototype_name">
+		<text>Prototype Titanium Grid</text>
+	</string>
+	<string id="st_af_grid_prototype_descr">
+		<text>A prototype version of the titanium grid. \nInstead of simply carrying a backpack secured by a pair of shoulder straps, one can attach it to the suit by means of a titanium grid, which optimises your carrying capabilities. The prototype grid is made of titanium which is the material of choice due to its light weight and high durability, and some external elements are made of plastic in order to attain desired flexibility while sprinting. The whole construction is equipped with a system of straps and webbing to provide a high degree of adjustability. This quality design allows the shoulder straps to be adjusted up or down so as to make wearing a backpack comfortable regardless of one's torso size. A single grid replaces only the main framework of your backpack, but it's possible to use more grids to further improve your carrying capabilities. Grids are created from very high quality titanium, thus disassembled grid can be used as an effective combat outfit or helmet repair supplement.\n \n
+		%c[ui_gray_2]PROPERTIES:\n
+		%c[d_cyan] • %c[ui_gray_2] everyday item\n
+		%c[d_cyan] • %c[ui_gray_2] high quality\n
+		%c[d_cyan] • %c[ui_gray_2] effectiveness of mult. units is stackable\n</text>
+	</string>
+
+
+	<string id="st_ms_owl_documents_1_name">
+		<text>[Documents for Owl]</text>
+	</string>
+	<string id="st_ms_owl_documents_1_desc">
+		<text>[to be done: proper name and description]</text>
+	</string>
+	
+	
+	<string id="st_trenchcoat_green_outfit_brotherhood_forester_name">
+		<text>Forester's old Trenchcoat</text>
+	</string>
+	<string id="st_trenchcoat_green_outfit_brotherhood_forester_descr">
+		<text>Forester's old trenchcoat. According to Forester, the coat was never washed and should smell strongly like him (in fact one could say it stinks). \n \n 
+			With the coat I should be able to attract Vlad and Drakul.</text>
+	</string>
+
+
+
+<string id="st_quest_package_mercenary_name">
+		<text>Supplies cache</text>
+	</string>
+	<string id="st_quest_package_mercenary_desc">
+		<text>A cache of supplies from the mercenaries. Chris will be happy to lay his hands on all these weapons and ammo.</text>
+	</string>
+
+
+<string id="quest_chimera_bait_brotherhood_name">
+		<text>Trapper's Chimera Bait</text>
+	</string>
+	<string id="quest_chimera_bait_brotherhood_desc">
+		<text>A bag filled with boar meat and a radio playing a boar's grunts. This should attract the Chimera.</text>
+	</string>
+<string id="st_radio_micro_quest">
+		<text>Trapper's recording device</text>
+	</string>
+	<string id="st_radio_micro_quest_descr">
+		<text>The radio has a microphone build into it. Works by dropping it to the ground.</text>
+	</string>
+
+<string id="quest_package_shlitzer_name">
+		<text>Shlitzer's bag</text>
+	</string>
+	<string id="quest_package_shlitzer_desc">
+		<text>A bag filled with weapons and ammunition.</text>
+	</string>
+
+<string id="st_quest_package_shlitzer_2_name">
+		<text>Ironchain's case</text>
+	</string>
+	<string id="st_quest_package_shlitzer_2_desc">
+		<text>A heavy - closed case. I should bring it to Shlitzer.</text>
+	</string>
+
+
+<string id="st_nr_starik_murdered_diary_name">
+		<text>Ded Tryasina's Diary</text>
+	</string>
+	<string id="st_nr_starik_murdered_diary_descr">
+		<text>Last entry: \n \nYesterday was a success. Some poor Stalker got mauled by dogs and he had some interesting stuff on him. 
+		Sadly I could not take everything with me and I hid the rest. Seems appropriate that the dead are guarding a dead man's belongings.</text>
+	</string>
+
+
+<string id="st_wpn_svd_cyclops_name">
+		<text>SVD 'Cyclops'</text>
+	</string>
+	<string id="st_wpn_svd_cyclops_descr">
+		<text>Butcher's old hunting rifle - a modified version of the SVD. \n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 Kobra, 1P29, PSO-1 scopes\n
+		%c[d_purple] • %c[ui_gray_2] KZRZP suppressor (after modification)\n \n</text>
+	</string>
+
+<string id="st_bh_mozgotlen_documents_name">
+		<text>Temperature measurement</text>
+	</string>
+	<string id="st_bh_mozgotlen_documents_descr">
+		<text>Charts recording different temperatures of an anomaly. Is this the document Alyosha was talking about?</text>
+	</string>
+
+<string id="st_hunter_orion_agr_underground_plans_name">
+		<text>Construction report</text>
+	</string>
+	<string id="st_hunter_orion_agr_underground_plans_descr">
+		<text>A report about the construction of the underground complex. It mentions a large tunnel connecting the Factory to the Research Complex to the South. 
+			\n \nAt some point the author tries to justify the delays and complains about some workers who got drunk and dug mutliple unplanned tunnels, surfacing to the east of the Research Complex. \n \nMaybe I can find one of them?</text>
+	</string>
+
+
+<string id="st_wpn_bm16_kroshka">
+		<text>Semyon Little's Sawed-Off</text>
+	</string>
+	<string id="st_wpn_bm16_kroshka_descr">
+		<text>Semyon Little's customized sawed-off.</text>
+	</string>
+
+
+
+
+
+	
+</string_table>

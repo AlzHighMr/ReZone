@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+<!--===========================================================
+<
+< TEXT STRINGS FOR STORIES FROM THE ZONE
+<	Anomaly 1.5.2 - 
+<
+<	Made by: Catilina
+<	Last revised: wip
+<
+<===========================================================-->
+
+<string_table>
+
+	---- Cordon ----
+
+<string id="give_sidorovich_railway_assault_name">
+		<text>Чёртов железнодорожный мост</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_1_descr">
+		<text>Сидорович нанял меня для участия в штурме перехода под Ж/Д мостом. Я должен связаться с лидером отряда "Чистого неба" Кастором на Свиноферме.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_descr">
+		<text>Сидорович нанял меня для участия в штурме перехода под Ж/Д мостом. Отряд "Чистого неба" на месте, осталось посетить Элеватор и найти отряд Одиночек под командованием Поллукса.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_3_descr">
+		<text>Все на месте, пора штурмовать переход!</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_4_descr">
+		<text>Мы отбили проход через Ж/Д мост, теперь нужно отразить подкрепление Бандитов!</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_5_descr">
+		<text>Мы отбили проход через Ж/Д мост, а подкрепление Бандитов разгромлено. Я должен доложить Сидоровичу о нашей победе.</text>
+	</string>
+
+<string id="give_sidorovich_railway_assault_2_name">
+		<text>Чёртов железнодорожный мост: Диверсия</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_1_descr">
+		<text>Сидорович нанял меня для участия в штурме перехода под Ж/Д мостом. Мне предстоит штурмовать АТП на востоке и уничтожить Бандитов там.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_2_descr">
+		<text>Я уничтожил Бандитов на АТП. Надо проверить, не нужна ли ребятам помощь с переходом.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_3_descr">
+		<text>Я уничтожил бандитов на АТП, а штурм Ж/Д моста прошёл успешно. Надо доложить об этом Сидоровичу.</text>
+	</string>
+
+	----Братство----
+	
+	<string id="give_task_kill_pack_dogs_1_name">
+		<text>Потеряно в пути</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_1_descr">
+		<text>Мне нужно вернуть посылку, утерянную из-за стаи собак. Она должна быть на Болоте, возле старой стройплощадки.
+Курьер прошёл мимо Насосной станции, держа слева от себя деревню с водонапорной башней, а справа - Механизаторский двор, который иногда используют военные.</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_2_descr">
+		<text>Я нашёл посылку. Я должен отнести её Выбегалло на Агропром, куда-то на территорию Завода.</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_3_descr">
+		<text>Я доставил посылку. Мне надо сообщить об этом Мяснику.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_boars_1_name">
+		<text>У кабана нет будущего</text>
+	</string>
+	<string id="give_task_kill_pack_boars_1_descr">
+		<text>В лесу, за аномалией "Газировка" в юго-восточной части Свалки, появилось стадо кабанов. Мясник хочет их смерти.</text>
+	</string>
+	<string id="give_task_kill_pack_boars_2_descr">
+		<text>Я должен доложить Мяснику что его проблема решена.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_snorks_1_name">
+		<text>Заблудившиеся Снорки</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_1_descr">
+		<text>К юго-западу от Ж/Д Ангара, недалеко от южного пути на Агропром, находится группа Снорков. Мясник хочет их смерти.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_descr">
+		<text>Я должен доложить Мяснику что его проблема решена.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_snorks_2_name">
+		<text>Великое сокращение</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_1_descr">
+		<text>Мясник хочет, чтобы я проверил, не слишком ли разрослась популяция Снорков на Агропроме на границе со Свалкой. Он велел мне взять с собой Беллерофона. Снорки могут находиться на холме между двумя проходами в сторону Свалки.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_2_descr">
+		<text>Снорки мертвы - я должен вернуться с Беллерофоном в Ж/Д Ангар и поговорить с ним.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_3_descr">
+		<text>Я должен доложить Мяснику что Снорки больше не должны быть проблемой.</text>
+	</string>
+	
+	<string id="give_rescue_orion_quest_name">
+		<text>Потерянный на Oхоте</text>
+	</string>
+	<string id="give_rescue_orion_quest_1_descr">
+		<text>Я получил срочную просьбу о помощи от Мясника - охотник по имени Орион потерялся, а Беллерофон ранен и ждёт на Заводе на Агропроме. Я должен помочь им.</text>
+	</string>
+	<string id="give_rescue_orion_quest_1_alt_descr">
+		<text>Я получил срочную просьбу о помощи от Мясника - охотник по имени Орион потерялся, а Сарпедон ранен и ждет на Заводе на Агропроме. Я должен помочь им.</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_descr">
+		<text>Орион заблудился где-то в Подземелье Агропрома. Я должен найти его и убить то, что создало все эти проблемы.</text>
+	</string>
+	<string id="give_rescue_orion_quest_3_descr">
+		<text>Я убил Контролёра, который стоял за нашествием Снорков. К сожалению, Орион мёртв. Я должен рассказать об этом Беллерофону.</text>
+	</string>
+	<string id="give_rescue_orion_quest_3_alt_descr">
+		<text>Я убил Контролёра, который стоял за нашествием Снорков. К сожалению, Орион мертв. Я должен рассказать об этом Сарпедону.</text>
+	</string>
+	
+	
+	
+---- Duty Hunter ----
+<string id="give_meet_aspirin_quest_1_name">
+		<text>Потенциальный клиент: Аспирин</text>
+	</string>
+	<string id="give_meet_aspirin_quest_1_descr">
+		<text>Мясник сказал, что у Аспирина, медика "Долга", может найтись для меня работа. Мне надо встретиться с ним.</text>
+	</string>
+
+<string id="give_meet_aspirin_quest_2_name">
+		<text>Приходите ко мне: Аспирин</text>
+	</string>
+	<string id="give_meet_aspirin_quest_2_descr">
+		<text>Аспирин написал мне, что у него может быть для меня работа. Мне надо увидеться с ним.</text>
+	</string>
+
+<string id="give_meet_voronin_quest_1_name">
+		<text>Приходите ко мне: Воронин</text>
+	</string>
+	<string id="give_meet_voronin_quest_1_descr">
+		<text>Воронин написал мне, что у него есть проблема. Мне надо встретиться с ним.</text>
+	</string>
+
+<string id="give_dolg_bloodsucker_village_1_name">
+		<text>Выселение жильцов</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_1_descr">
+		<text>Аспирин хочет, чтобы я убил всех Кровососов в Деревне Кровососов. Я должен сделать это до восхода солнца.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_2_descr">
+		<text>Кажется, что я убил всех Кровососов. Мне надо вернуться к Аспирину.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_3_descr">
+		<text>Кажется, что я убил всех Кровососов, но солнце уже взошло.</text>
+	</string>
+
+
+
+
+<string id="give_dolg_bloodsucker_village_2_name">
+		<text>Уборка</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_1_descr">
+		<text>Воронин хочет, чтобы я заменил нашивки "Долга" на нашивки Наёмников на телах бойцов в Деревне Кровососов.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_2_descr">
+		<text>Я заменил все нашивки "Долга" на нашивки Наёмников. Я должен доложить об этом Воронину.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_3_descr">
+		<text>Я заменил все нашивки "Долга" на нашивки Наёмников, но не успел сделать это до рассвета. Я должен доложить об этом Воронину.</text>
+	</string>
+	
+<string id="give_dolg_bloodsucker_village_3_name">
+		<text>Расплата!</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_3_1_descr">
+		<text>Бойцы "Долга" хотят отомстить Кровососам. Я должен встретиться с их отрядом на Армейских Cкладах в хуторе к югу от дороги на Росток.</text>
+	</string>	
+
+----- Bellerophon ----
+
+<string id="give_task_bellerophon_chimera_1_name">
+		<text>Беллерофон: зверь в ночи</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_1_descr">
+		<text>Беллерофон просил меня встретиться с ним в Бункере на Янтаре. Оттуда мы направимся убивать его Химеру.</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_2_descr">
+		<text>Нам нужно найти Химеру. Она должна скрываться где-то на севере, в промышленных районах Янтаря.</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_3_descr">
+		<text>Мы убили Химеру. Я должен сопроводить Беллерофона обратно в Бункер.</text>
+	</string>
+
+
+
+------ Trapper ------
+
+<string id="give_task_trapper_chimera_1_name">
+		<text>Нечестная конкуренция</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_1_descr">
+		<text>Зверобой попросил меня собрать 6 штук мяса Кабанов, чтобы сделать приманку для Химеры.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_2_descr">
+		<text>Зверобой попросил меня убить для него Химеру. Я должен разместить приманку к северу от Градирни, в ограждении перед воротами. Я должен узнать это место.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_3_descr">
+		<text>Наживка заброшена. Теперь мне остаётся ждать и молиться.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_4_descr">
+		<text>Химера мертва. Я должен сообщить об этом Зверобою.</text>
+	</string>
+
+<string id="nr_trapper_chimera_1_info">
+		<text>Это то место, о котором мне говорил Ловец. Я должен оставить приманку здесь.</text>
+	</string>
+	<string id="nr_trapper_chimera_2_info">
+		<text>Это то место, о котором мне говорил Зверобой, но ночь ещё не наступила.</text>
+	</string>
+
+<string id="give_task_trapper_chimera_2_name">
+		<text>Съёмки для канала Discovery</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_1_descr">
+		<text>В комплексе "Волхов" поселилась Химера. Мне нужно воспользоваться приманкой, чтобы выманить её, а затем пробраться внутрь и установить записывающее устройство. Приманка должна быть размещена на восточном входе в комплекс, рядом с КПП. Я должен узнать это место. И при этом Химера должна остаться в живых!</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_2_descr">
+		<text>Приманка заброшена! У меня мало времени - записывающее устройство необходимо установить.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_3_descr">
+		<text>Записывающее устройство на месте. Я должен сообщить об этом Зверобою.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_4_descr">
+		<text>Теперь мы ждём, когда Химера заполнит кассету.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_5_descr">
+		<text>Я могу возваращать запись. Химере не обязательно оставаться в живых.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_6_descr">
+		<text>Я случайно убил Химеру. Я должен рассказать об этом Зверобою.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_7_descr">
+		<text>По всей видимости, в комплексе "Волхов" снова обитает Химера. Миссия может быть продолжена. Нужно разместить новую приманку. Приманка должна быть размещена на восточном входе в комплекс, рядом с КПП. Я должен узнать это место. И при этом Химера должна остаться в живых!</text>
+	</string>
+	
+---- Legendary Hunts ----	
+
+
+<string id="give_forester_hunt_vlad_drakul_name">
+		<text>Великая охота: От заката до рассвета</text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_1_descr">
+		<text>Мне предстоит охота на Влада и Дракула - братьев-кровососов. Они будут сражаться со мной только ночью, и мне придётся надеть старый плащ Лесника. Их логово находится где-то возле старого танка. Сначала мне нужно пройти через старый Туннель, а затем на северо-восток, вглубь леса.</text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_2_descr">
+		<text>Влад и Дракул мертвы. Я должен встретиться с Лесником и сообщить ему эту новость.</text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_3_descr"> 
+		<text>Солнце уже взошло, а мне так и не удалось убить Влада и Дракула. Мне нужно вернуться к Леснику.</text>
+	</string>
+
+<string id="give_butcher_legendary_1_name">
+		<text>Великая охота: сезон охоты на кабана</text>
+	</string>
+	<string id="give_butcher_legendary_1_1_descr">
+		<text>Мясник сообщил мне, что сезон охоты на Калидонского вепря открыт. Чтобы привлечь его, я должен убить всех кабанов, которых найду в центре Болот - между Насосной станцией, деревней с водонапорной башней и машинным двором, который иногда используют военные.</text>
+	</string>
+	<string id="give_butcher_legendary_1_2_descr">
+		<text>Калидонский вепрь мёртв. Я должен сообщить эту новость Мяснику.</text>
+	</string>
+	
+---- Alyosha Shyogolov----
+
+<string id="give_alyosha_shyogolov_trouble_1_name">
+		<text>Крик о помощи</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_1_1_descr">
+		<text>Эколог по имени Алёша Щеглов осаждён Снорками в Ж/Д тонеле на Агропроме. Он отчянно зовёт на помощь.</text>
+	</string>	
+	<string id="give_alyosha_shyogolov_trouble_1_2_descr">
+		<text>Сопроводите Алёшу Щеглова до Завода Агропрома.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_1_3_descr">
+		<text>Сообщите Алёше Щеглову, что вы дошли до нужного места.</text>
+	</string>
+
+<string id="give_alyosha_shyogolov_trouble_2_name">
+		<text>Вопрос возвращения</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_2_1_descr">
+		<text>Алеша Щеглов доверил мне забрать несколько важных документов у Эколога, превратившегося в Зомби. Он должен находиться где-то на юге Агропрома или на севере Великих Болот.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_2_2_descr">
+		<text>Кажется, я нашёл документы. Я должен вернуть их Алёше на Агропром.</text>
+	</string>
+
+
+<string id="give_alyosha_shyogolov_trouble_3_name">
+		<text>Алёша Щеглов: Создавая проблемы</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_3_1_descr">
+		<text> Алёша Щеглов затеял разборки с каким-то бандитами. Он передал им, чтобы они встретились с ним к югу от станции Янов. Я должен поторопиться и вмешаться.</text>
+	</string>	
+	<string id="give_alyosha_shyogolov_trouble_3_2_descr">
+		<text>Мне нужно отбиться от бандитов, с которыми Алёша затеял драку.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_3_3_descr">
+		<text>Я справился с бандитами. Я должен найти Алёшу на станции.</text>
+	</string>
+
+	
+--- Vybegallo ---	
+	
+<string id="give_meet_vybegallo_quest_name">
+		<text>Выбегалло: наука зашла слишком далеко?</text>
+	</string>
+	<string id="give_meet_vybegallo_quest_descr">
+		<text>Выбегалло попросил меня о срочной помощи. Я должен его навестить.</text>
+	</string>	
+	
+<string id="give_vybegallo_satisfied_man_name">
+		<text>Наука вырывается на свободу</text>
+	</string>
+	<string id="give_vybegallo_satisfied_man_1_descr">
+		<text>Эксперимент Выбегалло вырвался наружу и скрывается где-то в Подземелье Агропрома. Найдите и ликвидируйте "Его".</text>
+	</string>	
+	<string id="give_vybegallo_satisfied_man_2_descr">
+		<text>Эксперимент Выбегалло мёртв. Я должен встретиться с ним.</text>
+	</string>	
+	
+<string id="bring_pseudogiant_vybegallo_name">
+		<text>Выбегалло: ради науки!</text>
+	</string>
+	<string id="bring_part_vybegallo_descr">
+		<text>Выбегалло хочет, чтобы я нашёл ему части мутантов: две руки Излома, одно сердце Кровососа и часть тела Псевдогиганта: глаз, лапу или шкуру.</text>
+	</string>
+
+<string id="give_sakharov_order_vybegallo_quest_name">
+		<text>Выбегалло: ради науки?</text>
+	</string>
+	<string id="give_sakharov_order_vybegallo_quest_1_descr">
+		<text>Сахаров объяснил мне опасность экспериментов Выбегалло и хотел, чтобы я передал ему распоряжение о прекращении их проведения.</text>
+	</string>	
+	<string id="give_sakharov_order_vybegallo_quest_2_descr">
+		<text>Я передал приказ Выбегалло, который отнёсся к этому несерьезно. Я должен вернуться к Сахарову.</text>
+	</string>	
+<string id="give_vybegallo_must_die_name">
+		<text>Tu quoque mon cher?</text>
+	</string>
+	<string id="give_vybegallo_must_die_1_descr">
+		<text>Сахаров хочет смерти Выбегалло. Это неофициальное задание, я должен быть осторожен.</text>
+	</string>	
+	<string id="give_vybegallo_must_die_2_descr">
+		<text>Выбегалло мёртв, мне надо доложить об этом Сахарову.</text>
+	</string>	
+
+
+----- Market Share-----
+<string id="give_meet_marlo_chris_quest_1_name">
+		<text>Приглашение</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_1_descr">
+		<text>Кто-то хочет встретиться со мной на Янове, в башне к северу от железнодорожного вокзала.</text>
+	</string>
+
+<string id="give_meet_marlo_chris_quest_2_name">
+		<text>Доля рынка - Курьеры</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_2_descr">
+		<text>Курьеры вот-вот отправятся в путь. Я должен присоединиться к Крису как можно скорее.</text>
+	</string>
+
+<string id="give_meet_marlo_chris_quest_3_name">
+		<text>Доля рынка - Пополнение</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_3_descr">
+		<text>Пополнение запасов вот-вот состоится. Я должен присоединиться к Крису как можно скорее.</text>
+	</string>
+
+<string id="give_marlo_pda_name">
+		<text>Стартап - корпоративный шпионаж</text>
+	</string>
+	<string id="bring_pda_marlo_3_descr">
+		<text>Харальд Виртанен мёртв, а я заполучил его КПК. Я должен отнести его Крису.</text>
+	</string>
+	<string id="bring_pda_marlo_2_descr">
+		<text>Харальд Виртанен мёртв. Теперь мне нужно забрать его КПК.</text>
+	</string>
+	<string id="bring_pda_marlo_1_descr">
+		<text>Крис хочет, чтобы я убил Наёмника по имени "Харальд Виртанен" на станции переработки отходов. \n \nПо слухам, он любит тайком выпивать поздно вечером, где-то в районе гаражей в восточно-южной части комплекса.</text>
+	</string>
+
+<string id="give_intercept_courrier_1_name">
+		<text>Стартап - непредвиденные сложности</text>
+	</string>
+	<string id="bring_usb_marlo_2_descr">
+		<text>Я получил USB. Теперь мне нужно отнести его Крису.</text>
+	</string>
+	<string id="bring_usb_marlo_1_descr">
+		<text>Крис хочет, чтобы я перехватил курьера Наёмников. Они будут искать убежище где-то в юго-западной части Янова - мне следует поискать там здание или строения.</text>
+	</string>
+
+<string id="give_intercept_courrier_2_name">
+		<text>Стартап - фальшивое резюме</text>
+	</string>
+	<string id="bring_usb_marlo_2_1_descr">
+		<text>Я должен замаскироваться под Наёмника, проникнуть на их базу на Затоне и доставить USB офицеру по имени "Айвар Кууск".</text>
+	</string>
+	<string id="bring_usb_marlo_2_2_descr">
+		<text>Мне удалось одурачить Наёмников. Надо доложить Крису, что всё проходит по плану.</text>
+	</string>
+	
+<string id="give_intercept_delivery_1_name">
+		<text>Стартап - перехват активов</text>
+	</string>
+	<string id="give_intercept_delivery_1_1_descr">
+		<text>Наёмники передадут припасы на свой северный форпост на Парковке к востоку от станции Янов. Монах и его отряд помогут мне - они ждут меня на станции Янов.</text>
+	</string>
+	<string id="give_intercept_delivery_1_2_descr">
+		<text>Охранники мертвы - я должен принести Крису ящики с припасами.</text>
+	</string>	
+	
+	
+---Fake Artifact---
+
+<string id="give_sidorovich_fake_artifact_1_name">
+		<text>Подделка</text>
+	</string>
+	<string id="give_sidorovich_fake_artifact_1_descr">
+		<text>Сидоровича обманули - узнайте, кто подделал липовый [Артефакт]</text>
+	</string>
+
+
+
+
+
+
+
+<string id="give_tambov_debt_1_name">
+		<text>Неоплаченный долг</text>
+	</string>
+	<string id="give_tambov_debt_1_descr">
+		<text>Разберитесь с бандитами, которым Тамбов задолжал деньги. Они ждут его на Свиноферме, в юго-западной части Тёмной долины.</text>
+	</string>
+	
+
+
+<string id="give_tambov_debt_2_name">
+		<text>Неоплаченный долг</text>
+	</string>
+	<string id="give_tambov_debt_2_1_descr">
+		<text>Разберитесь с бандитами, которым Тамбов задолжал деньги. Они поджидают его на Свиноферме, в юго-западной части Тёмной долины.</text>
+	</string>
+	<string id="give_tambov_debt_2_2_descr">
+		<text>Бандиты мертвы - я должен вернуться к Тамбову, чтобы получить свои деньги.</text>
+	</string>
+
+----- What a Night -----
+
+<string id="give_what_a_night_name">
+		<text>Что за ночь - что случилось?</text>
+	</string>
+	<string id="give_what_a_night_descr">
+		<text>Я проснулся в чёртовом нигде - что случилось прошлой ночью?</text>
+	</string>
+
+----- Rush to the North
+
+<string id="give_task_fanat_rookie_training_1_name">
+	<text>Тренировка новичков</text>
+	</string>
+<string id="give_task_fanat_rookie_training_1_1_descr">
+	<text>Фанат попросил меня обучить новичка по имени Илиаз. Он находится в кирпичном доме напротив Фаната. Я должен принести ему 20 патронов дроби, одну бытулку Немирофф, один детектор "Отклик" и контейнер для артефактов.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_2_descr">
+	<text>Сначала я покажу ему, азы охоты. К востоку от деревни водятся кабаны.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_3_descr">
+	<text>Теперь я расскажу ему, как находить артефакты. Я должен отвести Илиаза к аномалии "Мясорубка".</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_4_descr">
+	<text>Мы прибыли на место. Я должен объяснить Илиазу, как охотиться за артефактами.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_5_descr">
+	<text>Мы прибыли на место. Я должен объяснить Илиазу, как охотиться за артефактами.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_6_descr">
+	<text>Илиаз вернулся обратно. Я должен поговорить с ним.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_7_descr">
+	<text>Илиаз справился с трудностями. Я должен привести его обратно в деревню.</text>
+	</string>
+	
+
+<string id="give_task_escort_sorokin_1_name">
+	<text>Сопровождение до Янова</text>
+	</string>
+	<string id="give_task_escort_sorokin_1_1_descr">
+	<text>Сорокин попросил вас проводить его до станции Янов.</text>
+	</string>
+	<string id="give_task_escort_sorokin_1_2_descr">
+	<text>Скажите Сорокину, что вы прибыли в пункт назначения.</text>
+	</string>
+
+<string id="give_task_join_scamlok_1_name">
+	<text>Собирая команду</text>
+	</string>
+	<string id="give_task_join_scamlok_1_1_descr">
+	<text>Стрелок собирает команду. Первое испытание - добраться до станции Янов и найти его там.</text>
+	</string>
+	<string id="give_task_join_scamlok_1_2_descr">
+	<text>Я добрался до станции Янов. Я должен попытаться найти Стрелка.</text>
+	</string>
+
+<string id="give_task_bezsonik_1_name">
+	<text>Вой в ночи</text>
+	</string>
+	<string id="give_task_bezsonik_1_1_descr">
+	<text>Безсонник хочет, чтобы я убил стаю собак. Они должны быть к западу от базы, недалеко от тропы к Кладбищу техники. </text>
+	</string>
+	<string id="give_task_bezsonik_1_2_descr">
+	<text>Я убил собак. Я должен вернуться к Безсоннику.</text>
+	</string>	
+	
+	
+<string id="give_task_nr_strange_meat_name">
+	<text>Странное мясо</text>
+	</string>	
+	<string id="give_task_nr_strange_meat_1_descr">
+	<text>Гаваец хочет, чтобы я отыскал стоящего за появлением странного мяса. Мне предстоит сделать собственные выводы.</text>
+	</string>
+	
+	
+<string id="give_shlitzer_smuggling_1_name">
+	<text>It Fell of the Back of a Truck</text>
+	</string>
+	<string id="give_shlitzer_smuggling_1_1_descr">
+	<text>Shlitzer wants me to take delivery of some supplies - I only have 5 days for it. I have to give the signal to Badger who is on guard duty from midnight to 4am. The signal is three short flashes with a flashlight next to the Jeep wreackage.</text>
+	</string>
+	<string id="give_shlitzer_smuggling_1_2_descr">
+	<text>I gave the signal to Badger. Now he will meet me on the western end of the fence.</text>
+	</string>
+<string id="give_shlitzer_smuggling_1_3_descr">
+	<text>I took delivery of the bag. I should bring it to Shlitzer.</text>
+	</string>	
+	
+	
+<string id="st_bh_shlitzer_smuggling_1">
+	<text>That is one.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_2">
+	<text>That is two.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_3">
+	<text>Three - that should have been the signal.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_4">
+	<text>I somehow messed up the signal. I should wait a bit and start again.</text>
+	</string>
+
+<string id="give_shlitzer_smuggling_2_name">
+	<text>Pecunia non olet</text>
+	</string>	
+	
+	
+<string id="give_task_trapper_missing_hunter_1_name">
+	<text>Пропал на охоте: Серёга Лесун</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_1_descr">
+	<text>Я помогаю Зверобою отыскать охотников, погибших во время охоты, и ликвидировать их убийцу. Серёга отправился на Цементный завод - надо прочесать окрестности.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_2_descr">
+	<text>Я нашел тело Серёги. Теперь мне нужно ликвидировать его убийцу.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_3_descr">
+	<text>Я нашёл тело Серёги и ликвидировал его убийц. Я должен сообщить Зверобою.</text>
+	</string>
+
+<string id="give_task_trapper_missing_hunter_2_name">
+	<text>Пропал на охоте: Фазан Бедовый</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_1_descr">
+	<text>Я помогаю Зверобою отыскать охотников, погибших во время охоты, и ликвидировать их убийцу. Фазан отправился в Восточные туннели - надо прочесать окрестности.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_2_descr">
+	<text>Я нашёл тело Фазана. Теперь я должен уничтожить его убийцу.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_3_descr">
+	<text>Я ликвидировал убийц Фазана. Теперь я должен найти его тело.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_4_descr">
+	<text>Я нашёл тело Фазана и ликвидировал его убийц. Я должен сообщить Зверобою.</text>	
+	</string>
+<string id="give_task_trapper_missing_hunter_3_name">
+	<text>Пропал на охоте: Андрей Лопасть</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_1_descr">
+	<text>Я помогаю Зверобою отыскать охотников, погибших во время охоты, и ликвидировать их убийцу. Андрей отправился к Копачам - надо прочесать окрестности.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_2_descr">
+	<text>Я нашёл тело Андрея. Теперь мне нужно уничтожить его убийцу.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_3_descr">
+	<text>Я нашёл тело Андрея и ликвидировал его убийц. Я должен сообщить Зверобою.</text>
+	</string>	
+	
+<string id="give_task_bh_gutalin_1_name">
+		<text>Непрошеный проповедник</text>
+	</string>	
+	<string id="give_task_bh_gutalin_1_1_descr">
+		<text>Сидорович хочет, чтобы Гуталин исчез.</text>
+	</string>
+	<string id="give_task_bh_gutalin_1_2_descr">
+		<text>Гуталин больше не будет проповедовать. Сидорович будет рад это услышать.</text>
+	</string>
+
+--------------------------	
+----- Atomic Crusader ----	
+--------------------------
+<string id="give_task_father_charon_quest_1_name">
+		<text>Meet your Father</text>
+	</string>	
+	<string id="give_task_father_charon_quest_1_descr">
+		<text>I should report to Father Charon.</text>
+	</string>
+	
+<string id="give_task_blue_winter_quest_1_name">
+		<text>The spearhead of the Monolith</text>
+	</string>	
+	<string id="give_task_blue_winter_quest_1_1_descr">
+		<text>My chapter has been assigned the retaking of the Kindergarten. I should prepare and find Blue Winter to wait for nightfall.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_2_descr">
+		<text>We set out to join our Brothers Melchior and Caspar. They should be waiting north of the Kindergarten.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_3_descr">
+		<text>Clear the Kindergarten with Blue Winter and Balthazar.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_4_descr">
+		<text>The Kindergarden is cleared. I should talk to Blue Winter.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_5_descr">
+		<text>Blue Winter has given me the honour to report our victory to Father Charon.</text>
+	</string>
+	
+	
+	
+--------------------------	
+----- Atomic Crusader ----	
+--------------------------
+<string id="give_task_father_charon_quest_1_name">
+		<text>Meet your Father</text>
+	</string>	
+	<string id="give_task_father_charon_quest_1_descr">
+		<text>I should report to Father Charon.</text>
+	</string>
+	
+<string id="give_task_blue_winter_quest_1_name">
+		<text>The spearhead of the Monolith</text>
+	</string>	
+	<string id="give_task_blue_winter_quest_1_1_descr">
+		<text>My chapter has been assigned the retaking of the Kindergarten. I should prepare and find Blue Winter to wait for nightfall.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_2_descr">
+		<text>We set out to join our Brothers Melchior and Caspar. They should be waiting north of the Kindergarten.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_3_descr">
+		<text>Clear the Kindergarten with Blue Winter and Balthazar.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_4_descr">
+		<text>The Kindergarden is cleared. I should talk to Blue Winter.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_5_descr">
+		<text>Blue Winter has given me the honour to report our victory to Father Charon.</text>
+	</string>
+	
+	
+	
+	
+
+	
+</string_table>

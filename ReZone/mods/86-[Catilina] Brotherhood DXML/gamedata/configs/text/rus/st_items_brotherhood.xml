@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+	Stories from the Zone items
+-->
+
+<string_table>
+
+--- Охотники ---
+
+	<string id="quest_package_vybegallo_name">
+		<text>Сумка с консервами из тунца</text>
+	</string>
+	<string id="quest_package_vybegallo_desc">
+		<text>Тяжелая сумка, наполненная консервами из тунца. Выбегалло будет счастлив.</text>
+	</string>
+	
+	<string id="st_wpn_saiga12s_mutanthammer_name">
+		<text>Сайга-12С "Охотник на мутантов"</text>
+	</string>
+	<string id="st_wpn_saiga12s_mutanthammer_descr">
+		<text>Модифицированная версия Сайги-12С. Кто-то выгравировал на боку надпись "Охотник на мутантов".\n \n
+		%c[ui_gray_2]Модули: \n
+		%c[d_purple] • %c[ui_gray_2] ЭКП-8-02 Кобра, 1П29, ПСО-1 прицелы\n
+		%c[d_purple] • %c[ui_gray_2] ПБС-1\n \n</text>
+	</string>
+	
+--- Странная Колбаса ---
+
+	<string id="st_kolbasa_strange">
+		<text>Упаковка необычного мяса</text>
+	</string>
+	<string id="st_kolbasa_strange_descr">
+		<text>В пакете что-то похожее на обычную упаковку старого мяса: старый хлеб и какое-то пахучее мясо неизвестного происхождения, завернутое в исписанную бумагу. Вы не узнаете ни вида, ни запаха...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] Низкое качество\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_unpacked">
+		<text>Необычное мясо</text>
+	</string>
+	<string id="st_kolbasa_strange_unpacked_description">
+		<text>Пахучее мясо неизвестного происхождения. Вы не узнаете ни вида, ни запаха...\n \n
+		%c[ui_gray_3]PROPERTIES:\n
+		%c[d_red] • %c[ui_gray_2] Низкое качество\n</text>
+	</string>
+	
+	<string id="st_kolbasa_strange_paper_name">
+		<text>Исписанная бумага</text>
+	</string>
+	<string id="st_kolbasa_strange_paper_descr">
+		<text>Потрепанная бумага, в которую было завернуто необычное мясо. На ней было что-то написано, но вы мало что поняли. </text>
+	</string>
+	
+	<string id="st_bullet_yak">
+		<text>Пуля попавшая в Яка</text>
+	</string>
+	<string id="st_bullet_yak_descr">
+		<text>Я достал эту пулю из тела Яка. Похоже, его застрелили.</text>
+	</string>
+	
+	<string id="st_bullet_yak_identify">
+		<text>Пуля попавшая в Яка</text>
+	</string>
+	<string id="st_bullet_yak_identify_descr">
+		<text>Я достал эту пулю из тела Яка. Похоже, его застрелили. Нитро определил, что это оболочечная пуля со свинцовым сердечником калибра 7,62х51.</text>
+	</string>
+	
+	
+	
+---- Доля рынка ----	
+	
+	<string id="st_itm_usb_mercenary_1_name">
+		<text>USB-ключ для дешифровки</text>
+	</string>
+	<string id="st_itm_usb_mercenary_1_descr">
+		<text>Ключ шифровки и дешифровки для новой кодировки связи Наёмников.</text>
+	</string>
+	
+	<string id="st_pda_mercenary_1_name">
+		<text>КПК лейтенанта Харальда Виртанена</text>
+	</string>
+	<string id="st_pda_mercenary_1_descr">
+		<text>КПК лейтенанта Харальда Виртанена с ключом дешифровки связи Наёмников. \n \nВ скором времени устареет.</text>
+	</string>
+	
+	<string id="st_sakharov_order_vybegallo_descr">
+		<text>Приказ Сахарова в резкой форме, предписывающий Выбегалло немедленно прекратить эксперименты.</text>
+	</string>
+	<string id="st_sakharov_order_vybegallo_name">
+		<text>Приказ Сахарова о прекращении деятельности Выбегалло.</text>
+	</string>
+	
+	<string id="st_vybegallo_order_mercenary_name">
+		<text>Описание задания</text>
+	</string>
+	<string id="st_vybegallo_order_mercenary_descr">
+		<text>Недавно к нам обратился учёный со срочным заказом на части тела Псевдогиганта. Сформируйте охотничий отряд и отправьте части Душману - он очень заинтересован в успехе миссии, так что не облажайтесь! Возьмите с собой опытных людей! И ни слова об этом, осторожность превыше всего.</text>
+	</string>
+	
+	<string id="st_af_grid_prototype_name">
+		<text>Прототип титановой решетки</text>
+	</string>
+	<string id="st_af_grid_prototype_descr">
+		<text>Прототип титановой сетки. \nИ вместо того, чтобы просто носить рюкзак, закрепленный парой плечевых ремней, можно прикрепить его к костюму с помощью титановой сетки, что оптимизирует возможности переноски. Сетка прототипа изготовлена из титана, который является наиболее предпочтительным материалом из-за его легкого веса и высокой прочности, а некоторые внешние элементы сделаны из пластика, чтобы добиться необходимой гибкости во время спринта. Вся конструкция оснащена системой ремней и тесьмы, обеспечивающих высокую степень регулировки. Качественная конструкция позволяет регулировать плечевые ремни вверх или вниз, чтобы ношение рюкзака было комфортным независимо от размера туловища. Одна сетка заменяет только основной каркас рюкзака, но можно использовать несколько сеток, чтобы еще больше расширить возможности переноски. Сетки создаются из титана очень высокого качества, поэтому в разобранном виде сетку можно использовать как эффективное боевое снаряжение или дополнение для ремонта шлема.\n \n
+		%c[ui_gray_2]СВОЙСТВА:\n
+		%c[d_cyan] • %c[ui_gray_2] повседневный предмет\n
+		%c[d_cyan] • %c[ui_gray_2] высокое качество\n
+		%c[d_cyan] • %c[ui_gray_2] Эффективность нескольких устройств можно суммировать\n</text>
+	</string>
+
+
+	<string id="st_ms_owl_documents_1_name">
+		<text>[Документы для Филина]</text>
+	</string>
+	<string id="st_ms_owl_documents_1_desc">
+		<text>[to be done: proper name and description]</text>
+	</string>
+	
+	
+	<string id="st_trenchcoat_green_outfit_brotherhood_forester_name">
+		<text>Старый плащ Лесника</text>
+	</string>
+	<string id="st_trenchcoat_green_outfit_brotherhood_forester_descr">
+		<text>Старый плащ Лесника. По словам Лесника, плащ никогда не стирался и должен сильно пахнуть им (можно сказать, что он провонял). \n \nС помощью этого плаща я смогу привлечь Влада и Дракула.</text>
+	</string>
+
+
+
+<string id="st_quest_package_mercenary_name">
+		<text>Ящик с припасами</text>
+	</string>
+	<string id="st_quest_package_mercenary_desc">
+		<text>Ящик с припасами Наёмников. Крис будет рад заполучить всё это оружие и боеприпасы.</text>
+	</string>
+
+
+<string id="quest_chimera_bait_brotherhood_name">
+		<text>Наживка для Химер от Зверобоя</text>
+	</string>
+	<string id="quest_chimera_bait_brotherhood_desc">
+		<text>Сумка, наполненная мясом кабана, и радиоприёмник, воспроизводящий хрюканье. Это должно привлечь Химеру.</text>
+	</string>
+<string id="st_radio_micro_quest">
+		<text>Записывающее устройство Зверобоя</text>
+	</string>
+	<string id="st_radio_micro_quest_descr">
+		<text>В радиоприемник встроен микрофон. Работает, если бросить его на землю.</text>
+	</string>
+
+<string id="quest_package_shlitzer_name">
+		<text>Shlitzer's bag</text>
+	</string>
+	<string id="quest_package_shlitzer_desc">
+		<text>A bag filled with weapons and ammunition.</text>
+	</string>
+
+<string id="st_quest_package_shlitzer_2_name">
+		<text>Ironchain's case</text>
+	</string>
+	<string id="st_quest_package_shlitzer_2_desc">
+		<text>A heavy - closed case. I should bring it to Shlitzer.</text>
+	</string>
+
+<string id="st_nr_starik_murdered_diary_name">
+		<text>Дневник Деда Трясины</text>
+	</string>
+	<string id="st_nr_starik_murdered_diary_descr">
+		<text>Последняя запись: \n \nВчерашний день был удачным. Одного бедного Сталкера растерзали собаки, а у него было много интересных вещей. К сожалению, я не смог забрать все с собой и спрятал остальное. Кажется уместным, что мёртвые охраняют вещи мертвеца.</text>
+	</string>
+
+<string id="st_wpn_svd_cyclops_name">
+		<text>СВД 'Циклоп'</text>
+	</string>
+	<string id="st_wpn_svd_cyclops_descr">
+		<text>Старая охотничья винтовка Мясника - модифицированная версия СВД. \n \n
+		%c[ui_gray_2]Модули: \n
+		%c[d_purple] • %c[ui_gray_2] ЭКП-8-02 Кобра, 1П29, ПСО-1 прицелы\n
+		%c[d_purple] • %c[ui_gray_2] КЗРПЗ глушитель (после модификации)\n \n</text>
+	</string>
+
+<string id="st_bh_mozgotlen_documents_name">
+		<text>Температурные измерения</text>
+	</string>
+	<string id="st_bh_mozgotlen_documents_descr">
+		<text>Графики, фиксирующие различные температуры аномалии. Это тот документ, о котором говорил Алёша?</text>
+	</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</string_table>

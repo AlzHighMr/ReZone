@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+<!--===========================================================
+<
+< TEXT STRINGS FOR STORIES FROM THE ZONE
+<	Anomaly 1.5.2 - 
+<
+<	Made by: Catilina
+<	Last revised: wip
+<
+<===========================================================-->
+
+<string_table>
+
+	---- Cordon ----
+<string id="give_sidorovich_railway_assault_name">
+		<text>Bloody Railway Bridge</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_1_descr">
+		<text>Sidorovich hired me to take part in the assault on the railway bridge. 
+		I have to make contact with the Clear Sky leader "Castor" at the northern farm.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_descr">
+		<text>Sidorovich hired me to take part in the assault on the railway bridge. 
+		The Clear Sky squad is in place, I have to go back to the mill and find the Loner squad under "Pollux".</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_3_descr">
+		<text>Everyone is in place, time to assault the Railway Bridge!</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_4_descr">
+		<text>We took back the Railway Bridge, now we have to beat back the bandit reinforcement!</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_5_descr">
+		<text>We took back the Railway Bridge and the bandit reinforcment is defeated. I should report back to Sidorovich to report our victory.</text>
+	</string>
+
+<string id="give_sidorovich_railway_assault_2_name">
+		<text>Bloody Railway Bridge: Diversion</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_1_descr">
+		<text>Sidorovich hired me to take part in the assault on the railway bridge. 
+		I am to assault the vehicle part to the east and eliminate the bandits there.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_2_descr">
+		<text>I eliminated the bandits in the vehicle park. I should go see if the guys need assistance with the railway bridge.</text>
+	</string>
+	<string id="give_sidorovich_railway_assault_2_3_descr">
+		<text>I eliminated the bandits in the vehicle park and the assault on the railway bridge has been a success. I should report back to Sidorovich.</text>
+	</string>
+	----Brotherhood----
+	
+	<string id="give_task_kill_pack_dogs_1_name">
+		<text>Lost in transit</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_1_descr">
+		<text>I have to recover a package lost to a pack of dogs. It should be in the Great Swamp, near an old construction site. 
+		The delivery guy made his way past the Pump Station and kept the village with the water tower to his left, and the village the military sometimes uses to his right.</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_2_descr">
+		<text>I found the package. I should bring it to Vybegallo in Agroprom, somewhere in the factory.</text>
+	</string>
+	<string id="give_task_kill_pack_dogs_3_descr">
+		<text>I delivered the package. I should report back to Butcher.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_boars_1_name">
+		<text>No future for a boar</text>
+	</string>
+	<string id="give_task_kill_pack_boars_1_descr">
+		<text>There is a herd of boars in the wood, behind the Witches Jelly anomaly in the south eastern part of the sector. Butcher wants them dead.</text>
+	</string>
+	<string id="give_task_kill_pack_boars_2_descr">
+		<text>I should report to Butcher and tell him that his problem is solved.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_snorks_1_name">
+		<text>Lost snorks</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_1_descr">
+		<text>There is a group of snorks to the south west of the train hangar close to the southern path to Agroprom. Butcher wants them dead.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_descr">
+		<text>I should report to Butcher and tell him that his problem is solved.</text>
+	</string>
+	
+	<string id="give_task_kill_pack_snorks_2_name">
+		<text>The great culling</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_1_descr">
+		<text>Butcher wants me to check if the snork population in Agroprom on the border to Garbage has grown too large. He told me to take Bellerophon with me. The snorks might be on the hill between the two passages to Garbage.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_2_descr">
+		<text>The snorks are dead - I should return with Bellerophon to the Train Hangar and talk to him.</text>
+	</string>
+	<string id="give_task_kill_pack_snorks_2_3_descr">
+		<text>I should report to Butcher and tell him that the snorks shouldn't be a problem anymore.</text>
+	</string>
+	
+	<string id="give_rescue_orion_quest_name">
+		<text>Lost during a Hunt</text>
+	</string>
+	<string id="give_rescue_orion_quest_1_descr">
+		<text>I got an urgent help request from Butcher - Orion is lost and Bellerophon is wounded and waiting in the Agroprom Factory. I should go help them.</text>
+	</string>
+	<string id="give_rescue_orion_quest_1_alt_descr">
+		<text>I got an urgent help request from Butcher - Orion is lost and Sarpedon is wounded and waiting in the Agroprom Factory. I should go help them.</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_descr">
+		<text>Orion is lost somwhere in the Agroprom Underground. I should go find him and kill whatever causes all this trouble.</text>
+	</string>
+	<string id="give_rescue_orion_quest_3_descr">
+		<text>I found Orion... Something turned him into a Zombie... I should report back to Bellerophon.</text>
+	</string>
+	<string id="give_rescue_orion_quest_3_alt_descr">
+		<text>I found Orion... Something turned him into a Zombie... I should report back to Sarpedon.</text>
+	</string>
+	
+	<string id="give_rescue_orion_quest_2_name">
+		<text>Revenge for Orion</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_1_descr">
+		<text>Orion was victim of something nevarious. I have to find a way into that large chamber and bring an end to whatever got Orion.</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_2_descr">
+		<text>I found some old documents about the construction of the underground. Apparently there might be another entry somwhere to the east of the Research Complex.</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_3_descr">
+		<text>There was a Controller lurking down there. Surely it was him who turned Orion into a Zombie. Now that I slayed it, Orion's soul is avenged. I should report back to Bellerophon.</text>
+	</string>
+	<string id="give_rescue_orion_quest_2_4_descr">
+		<text>There was a Controller lurking down there. Surely it was him who turned Orion into a Zombie. Now that I slayed it, Orion's soul is avenged. I should report back to Sarpedon.</text>
+	</string>
+	
+---- Duty Hunter ----
+<string id="give_meet_aspirin_quest_1_name">
+		<text>A potential client: Aspirin</text>
+	</string>
+	<string id="give_meet_aspirin_quest_1_descr">
+		<text>Butcher said Aspirin, the Duty Medic, might have a job for me. I should go see him.</text>
+	</string>
+
+<string id="give_meet_aspirin_quest_2_name">
+		<text>Come see me: Aspirin</text>
+	</string>
+	<string id="give_meet_aspirin_quest_2_descr">
+		<text>Aspirin wrote me that he might have a job for me. I should go see him.</text>
+	</string>
+
+<string id="give_meet_voronin_quest_1_name">
+		<text>Come see me: Voronin</text>
+	</string>
+	<string id="give_meet_voronin_quest_1_descr">
+		<text>Voronin wrote me that he has a problem. I should go see him.</text>
+	</string>
+
+<string id="give_dolg_bloodsucker_village_1_name">
+		<text>Evicting the tenants</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_1_descr">
+		<text>Aspirin wants me to kill all Bloodsuckers in the Bloodsucker Village. I have to do it before sunrise.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_2_descr">
+		<text>I believed I killed all the Bloodsuckers. I should go back to Aspirin.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_1_3_descr">
+		<text>I believed I killed all the Bloodsuckers, but the sun is already up.</text>
+	</string>
+
+
+
+
+<string id="give_dolg_bloodsucker_village_2_name">
+		<text>Cleaning up</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_1_descr">
+		<text>Voronin wants me to replace the Duty patches with Mercenary ones on the dead soldiers in the Bloodsucker village.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_2_descr">
+		<text>I replaced all the Duty patches with Mercenary ones. I should report back to Voronin.</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_2_3_descr">
+		<text>I replaced all the Duty patches with Mercenary ones, but I wasn't able to do it before sunrise. I should report back to Voronin.</text>
+	</string>
+	
+<string id="give_dolg_bloodsucker_village_3_name">
+		<text>Payback!</text>
+	</string>
+	<string id="give_dolg_bloodsucker_village_3_1_descr">
+		<text>The Duty soldiers want to take vengeance on the Blooduscker. I should meet their squad in Army Warehouse in the farmstead south of the path to Rostok.</text>
+	</string>	
+
+----- Bellerophon ----
+
+<string id="give_task_bellerophon_chimera_1_name">
+		<text>Bellerophon: a beast in the night</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_1_descr">
+		<text>Bellerophon told me to meet him in the Yantar bunker. From there we will set out to kill his Chimera</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_2_descr">
+		<text>We need to find the Chimera. It should lurk somewhere in the north among the industrial parts of Yantar</text>
+	</string>
+	<string id="give_task_bellerophon_chimera_1_3_descr">
+		<text>We killed the Chimera. I should lead Bellerophon back to the bunker</text>
+	</string>
+
+
+
+------ Trapper ------
+
+<string id="give_task_trapper_chimera_1_name">
+		<text>Unfair competition</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_1_descr">
+		<text>Trapper asked me to gather 6 boar chops in order to fashion a bait for the Chimera.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_2_descr">
+		<text>Trapper asked me to kill a Chimera for him. I have to set up the bait, north of the cooling tower, inside the enclosure in front of the gate. I should recognise the spot.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_3_descr">
+		<text>The bait is set. Now I have to wait and pray.</text>
+	</string>
+	<string id="give_task_trapper_chimera_1_4_descr">
+		<text>The Chimera is dead. I should report back to Trapper.</text>
+	</string>
+
+<string id="nr_trapper_chimera_1_info">
+		<text>This is the spot Trapper told me. I should drop the bait here.</text>
+	</string>
+	<string id="nr_trapper_chimera_2_info">
+		<text>This is the spot Trapper told me, but it's not night.</text>
+	</string>
+
+<string id="give_task_trapper_chimera_2_name">
+		<text>Taping for the Discovery Channel</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_1_descr">
+		<text>A Chimera took up residence in the Volkhov Complex. I have to use the bait in order to lure her out and then sneak inside and set up the recording device. 
+		The bait should be placed on the eastern entry to the Complex, next to the checkpoint. I should recognise the spot. And the Chimera has to stay alive!</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_2_descr">
+		<text>The bait is set! I don't have a lot of time - the recorder has to be placed.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_3_descr">
+		<text>The recorder is in place. I should report back to Trapper.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_4_descr">
+		<text>Now we wait for the Chimera to fill the tape.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_5_descr">
+		<text>I can recover the tape. The Chimera does not need to survive.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_6_descr">
+		<text>I killed the Chimera by accident. I should tell Trapper about it.</text>
+	</string>
+	<string id="give_task_trapper_chimera_2_7_descr">
+		<text>Apparently there is a Chimera in the Volkhov complex again. The mission can continue. I have to set a new bait. The bait should be placed on the eastern entry to the Complex, next to the checkpoint. I should recognise the spot. And the Chimera has to stay alive!</text>
+	</string>
+	
+---- Legendary Hunts ----	
+
+
+<string id="give_forester_hunt_vlad_drakul_name">
+		<text>The Great Hunt: From Dusk till Dawn</text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_1_descr">
+		<text>I'm about to hunt Vlad and Drakul - the Bloodsucker brothers. They will only fight me during the night and I have to wear Forester's old coat. 
+		Their lair is somwhere near an old tank. I first have to go through and old mine tunnel and then north east, deep into the forest. </text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_2_descr">
+		<text>Vlad and Drakul are dead. I should go see Forester to bring him the news.</text>
+	</string>
+	<string id="give_forester_hunt_vlad_drakul_3_descr"> 
+		<text>The sun has risen and I failed to kill Vlad and Drakul today. I should go back to Forester.</text>
+	</string>
+
+<string id="give_butcher_legendary_1_name">
+		<text>The Great Hunt: Boar Hunting Season</text>
+	</string>
+	<string id="give_butcher_legendary_1_1_descr">
+		<text>Butcher wrote me that the hunting season for the Calydonian Boar is open. 
+		To attract him, I should kill all the boars I find in the middle of the marshes - between the Pump Station, the village with the water tower and the machine yard the military sometimes uses.</text>
+	</string>
+	<string id="give_butcher_legendary_1_2_descr">
+		<text>The Calydonian Boar is dead. I should bring the news to Butcher.</text>
+	</string>
+	
+---- Alyosha Shyogolov----
+<string id="give_alyosha_shyogolov_trouble_1_name">
+		<text>A cry for help</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_1_1_descr">
+		<text>An Ecologist called "Alyosha Shyogolov" is besieged by Snorks in the Agroprom train tunnel. He is calling for help.</text>
+	</string>	
+	<string id="give_alyosha_shyogolov_trouble_1_2_descr">
+		<text>Accompany Alyosha Shyogolov to the Agroprom Factory.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_1_3_descr">
+		<text>Tell Alyosha Shyogolov that you arrived.</text>
+	</string>
+	
+<string id="give_alyosha_shyogolov_trouble_2_name">
+		<text>A matter of recovery</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_2_1_descr">
+		<text>Alyosha Shyogolov tasked me to recover some important documents from an Ecologist turned Zombie. He should be somewhere in southern Agroprom or northern Great Swamps.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_2_2_descr">
+		<text>I think I found the documents. I should bring them back to Alyosha in Agroprom.</text>
+	</string>
+
+<string id="give_alyosha_shyogolov_trouble_3_name">
+		<text>Alyosha Shygolov: Making Trouble</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_3_1_descr">
+		<text>Alyosha Shyogolov is making trouble with some bandits. He told them to meet him to the south of the Yanov Station. I should hurry to intervene.</text>
+	</string>	
+	<string id="give_alyosha_shyogolov_trouble_3_2_descr">
+		<text>I have to fight off the bandits Alyosha picked a fight with.</text>
+	</string>
+	<string id="give_alyosha_shyogolov_trouble_3_3_descr">
+		<text>I fought the bandits off. I should find Alyosha at the Station.</text>
+	</string>
+
+	
+--- Vybegallo ---	
+	
+<string id="give_meet_vybegallo_quest_name">
+		<text>Meet Vybegallo: science gone too far?</text>
+	</string>
+	<string id="give_meet_vybegallo_quest_descr">
+		<text>Vybegallo requested my urgent help. I should go see him.</text>
+	</string>	
+	
+<string id="give_vybegallo_satisfied_man_name">
+		<text>Science breaking free</text>
+	</string>
+	<string id="give_vybegallo_satisfied_man_1_descr">
+		<text>Vybegallo's experiment broke out and is lurking somewhere in the Agroprom Underground. Find and liquidate "him".</text>
+	</string>	
+	<string id="give_vybegallo_satisfied_man_2_descr">
+		<text>Vybegallo's experiment is dead. I should go see him.</text>
+	</string>	
+	
+<string id="bring_pseudogiant_vybegallo_name">
+		<text>Vybegallo: for science!</text>
+	</string>
+	<string id="bring_part_vybegallo_descr">
+		<text>Vybegallo wants me to find him some mutant parts: two fracture hands, one bloodsucker heart and a pseudogiant body part: either an eye, an hand or it's hide</text>
+	</string>
+
+<string id="give_sakharov_order_vybegallo_quest_name">
+		<text>Vybegallo: for science?</text>
+	</string>
+	<string id="give_sakharov_order_vybegallo_quest_1_descr">
+		<text>Sakharov explained to me the danger of Vybegallo's experiments and he want me to bring him a cease order.</text>
+	</string>	
+	<string id="give_sakharov_order_vybegallo_quest_2_descr">
+		<text>I brought the order to Vybegallo who didn't take the news lightly. I should go see Sakharov.</text>
+	</string>	
+<string id="give_vybegallo_must_die_name">
+		<text>Tu quoque mon cher?</text>
+	</string>
+	<string id="give_vybegallo_must_die_1_descr">
+		<text>Sakharov wants Vybegallo dead. This mission is off the books, I have to be careful.</text>
+	</string>	
+	<string id="give_vybegallo_must_die_2_descr">
+		<text>Vybegallo is dead, I should report to Sakharov.</text>
+	</string>	
+
+
+----- Market Share-----
+<string id="give_meet_marlo_chris_quest_1_name">
+		<text>An invitation</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_1_descr">
+		<text>Someone wants to meet me in Yanov, in the tower north of the train station.</text>
+	</string>
+
+<string id="give_meet_marlo_chris_quest_2_name">
+		<text>Market Share - The courriers</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_2_descr">
+		<text>The courriers are about to set off. I should join Chris as soon as possible.</text>
+	</string>
+
+<string id="give_meet_marlo_chris_quest_3_name">
+		<text>Market Share - The resupply</text>
+	</string>
+	<string id="give_meet_marlo_chris_quest_3_descr">
+		<text>The resupply is about to happen. I should join Chris as soon as possible.</text>
+	</string>
+
+<string id="give_marlo_pda_name">
+		<text>Startup - Corporate Spying</text>
+	</string>
+	<string id="bring_pda_marlo_3_descr">
+		<text>Harald Virtanen is dead and I have his PDA. I should bring it to Chris.</text>
+	</string>
+	<string id="bring_pda_marlo_2_descr">
+		<text>Harald Virtanen is dead. I have to pick up his PDA now.</text>
+	</string>
+	<string id="bring_pda_marlo_1_descr">
+		<text>Chris wants me to kill a mercenary called "Harald Virtanen" in the Waste Processing Station. \n \nAllegedly he likes to sneak out to have a drink late night, somewhere around the garages in the east-southern part of the compound.</text>
+	</string>
+
+<string id="give_intercept_courrier_1_name">
+		<text>Startup - Unforseen Impediment</text>
+	</string>
+	<string id="bring_usb_marlo_2_descr">
+		<text>I got the USB. I should bring it to Chris now.</text>
+	</string>
+	<string id="bring_usb_marlo_1_descr">
+		<text>Chris wants me to intercept the mercenary courrier. They will seek shelter somewhere in the south western part of Yanov - I should look for building or structures there.</text>
+	</string>
+
+<string id="give_intercept_courrier_2_name">
+		<text>Startup - Fake CV </text>
+	</string>
+	<string id="bring_usb_marlo_2_1_descr">
+		<text>I have to disguise myself as a Mercenary, infiltrate their base in Zaton and deliver the USB to an officer called "Aivar Kuusk".</text>
+	</string>
+	<string id="bring_usb_marlo_2_2_descr">
+		<text>I managed to fool the mercenaries. I should report back to Chris and thell him that everything is going as planned.</text>
+	</string>
+	
+<string id="give_intercept_delivery_1_name">
+		<text>Startup - Asset Interception</text>
+	</string>
+	<string id="give_intercept_delivery_1_1_descr">
+		<text>The mercenaries will hand over supplies to their northern outpost in the car fortress to the east of the Yanov Station. Monk and his squad will assist me - they're waiting in the Yanov Station for me.</text>
+	</string>
+	<string id="give_intercept_delivery_1_2_descr">
+		<text>The guards are dead - I should bring Chris the supply crates.</text>
+	</string>	
+	
+	
+---Fake Artifact---
+
+<string id="give_sidorovich_fake_artifact_1_name">
+		<text>The Forgery</text>
+	</string>
+	<string id="give_sidorovich_fake_artifact_1_descr">
+		<text>Sidorovich got scammed - find out who forged the fake [Artifact]</text>
+	</string>
+
+
+
+
+
+
+
+<string id="give_tambov_debt_1_name">
+		<text>A debt unpaid</text>
+	</string>
+	<string id="give_tambov_debt_1_descr">
+		<text>Take care of the bandits who Tambov owes money. They are waiting for him in the pig farm, in the south western part of Dark Valley.</text>
+	</string>
+	
+
+
+<string id="give_tambov_debt_2_name">
+		<text>A debt unpaid</text>
+	</string>
+	<string id="give_tambov_debt_2_1_descr">
+		<text>Take care of the bandits who Tambov owes money. They are waiting for him in the pig farm, in the south western part of Dark Valley.</text>
+	</string>
+	<string id="give_tambov_debt_2_2_descr">
+		<text>The bandits are dead - I have to return to Tambov to get my money.</text>
+	</string>
+
+----- What a Night -----
+
+<string id="give_what_a_night_name">
+		<text>What a night - what happend?</text>
+	</string>
+	<string id="give_what_a_night_descr">
+		<text>I woke up in fucking no-where - what happend last night?</text>
+	</string>
+
+----- Rush to the North
+
+<string id="give_task_fanat_rookie_training_1_name">
+	<text>Training the rookies</text>
+	</string>
+<string id="give_task_fanat_rookie_training_1_1_descr">
+	<text>Fanatic asked me to train a rookie called Iliaz. He is in the brick house across Fanatic. I should bring him 20 buckshots, one Nemiroff, one Echo Detector and an Artifact container.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_2_descr">
+	<text>First I will show him how to hunt. There are boars to the east of the village.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_3_descr">
+	<text>Now I will show him how to find artifacts. I should bring him north of the anomaly field next to the village.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_4_descr">
+	<text>We arrived at the location. I should explain to Iliaz how to hunt for artifacts.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_5_descr">
+	<text>Iliaz set out to find an artifact. I should wait until he get's back.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_6_descr">
+	<text>Iliaz made his way back. I should speak to him.</text>
+	</string>
+	<string id="give_task_fanat_rookie_training_1_7_descr">
+	<text>Iliaz mastered the challenges. I should bring him back to the village.</text>
+	</string>
+	
+
+<string id="give_task_escort_sorokin_1_name">
+	<text>Escort to Yanov</text>
+	</string>
+	<string id="give_task_escort_sorokin_1_1_descr">
+	<text>Sorokin asked you to escort him to Yanov Station.</text>
+	</string>
+	<string id="give_task_escort_sorokin_1_2_descr">
+	<text>Tell Sorokin that you arrived at your destination.</text>
+	</string>
+
+<string id="give_task_join_scamlok_1_name">
+	<text>Gathering a team</text>
+	</string>
+	<string id="give_task_join_scamlok_1_1_descr">
+	<text>Strelok is gathering a team. The first test is to reach Yanov Station and find him there.</text>
+	</string>
+	<string id="give_task_join_scamlok_1_2_descr">
+	<text>I reached Yanov Station. I should try to find Strelok.</text>
+	</string>
+
+<string id="give_task_bezsonik_1_name">
+	<text>Howling in the Night</text>
+	</string>
+	<string id="give_task_bezsonik_1_1_descr">
+	<text>Bezsonik wants me to kill a pack of dogs. They should be to the west of the base, close to the path to the Truck Cemetery. </text>
+	</string>
+	<string id="give_task_bezsonik_1_2_descr">
+	<text>I killed the dogs. I should go back to Bezsonik</text>
+	</string>	
+	
+	
+<string id="give_task_nr_strange_meat_name">
+	<text>Strange Meat</text>
+	</string>	
+	<string id="give_task_nr_strange_meat_1_descr">
+	<text>Hawaiian wants me to find the culprit behind the strange meat. I will have to take my own notes.</text>
+	</string>
+	
+	
+<string id="give_shlitzer_smuggling_1_name">
+	<text>It Fell of the Back of a Truck</text>
+	</string>
+	<string id="give_shlitzer_smuggling_1_1_descr">
+	<text>Shlitzer wants me to take delivery of some supplies - I only have 5 days for it. I have to give the signal to Badger who is on guard duty from midnight to 4am. The signal is three short flashes with a flashlight next to the Jeep wreackage.</text>
+	</string>
+	<string id="give_shlitzer_smuggling_1_2_descr">
+	<text>I gave the signal to Badger. Now he will meet me on the western end of the fence.</text>
+	</string>
+<string id="give_shlitzer_smuggling_1_3_descr">
+	<text>I took delivery of the bag. I should bring it to Shlitzer.</text>
+	</string>	
+	
+	
+<string id="st_bh_shlitzer_smuggling_1">
+	<text>That is one.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_2">
+	<text>That is two.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_3">
+	<text>Three - that should have been the signal.</text>
+	</string>
+	<string id="st_bh_shlitzer_smuggling_4">
+	<text>I somehow messed up the signal. I should wait a bit and start again.</text>
+	</string>
+
+<string id="give_shlitzer_smuggling_2_name">
+	<text>Pecunia non olet</text>
+	</string>	
+	
+	
+<string id="give_task_trapper_missing_hunter_1_name">
+	<text>Lost during the hunt: Seryoga Lesun</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_1_descr">
+	<text>I'm helping Trapper find hunters who died during their hunt and liquidate their killer. Seryoga went to the Cement Factory - I should search the vicinity.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_2_descr">
+	<text>I found Seryoga's body. Now I have to eliminate his killer.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_1_3_descr">
+	<text>I found Seryoga's body and liquidated his killers. I should report back to Trapper.</text>
+	</string>
+
+<string id="give_task_trapper_missing_hunter_2_name">
+	<text>Lost during the hunt: Fasan Bedovy</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_1_descr">
+	<text>I'm helping Trapper find hunters who died during their hunt and liquidate their killer. Fasan went to the Eastern tunnels - I should search the vicinity.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_2_descr">
+	<text>I found Fasan's body. Now I have to eliminate his killer.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_3_descr">
+	<text>I liquidated Fasan's killers. Now I have to find his body.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_2_4_descr">
+	<text>I found Fasan's body and liquidated his killers. I should report back to Trapper.</text>	
+	</string>
+<string id="give_task_trapper_missing_hunter_3_name">
+	<text>Lost during the hunt: Andrey Lopast</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_1_descr">
+	<text>I'm helping Trapper find hunters who died during their hunt and liquidate their killer. Andrey went to the Kopachy - I should search the vicinity.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_2_descr">
+	<text>I found Andrey's body. Now I have to eliminate his killer.</text>
+	</string>
+	<string id="give_task_trapper_missing_hunter_3_3_descr">
+	<text>I found Andrey's body and liquidated his killers. I should report back to Trapper.</text>
+	</string>	
+	
+<string id="give_task_bh_gutalin_1_name">
+		<text>The unwanted preacher</text>
+	</string>	
+	<string id="give_task_bh_gutalin_1_1_descr">
+		<text>Sidorovich wants Gutalin gone.</text>
+	</string>
+	<string id="give_task_bh_gutalin_1_2_descr">
+		<text>Gutalin will preach no longer. Sidorovich will be happy to hear it.</text>
+	</string>
+	
+<string id="give_like_rats_trap_1_name">
+		<text>Like Rats in a Trap</text>
+	</string>
+	<string id="give_like_rats_trap_1_1_descr">
+		<text>Some Stalkers pursued a group of Bandits who are trapped in the Agroprom underground. He's ready to pay if I get rid of the pest.</text>
+	</string>
+	<string id="give_like_rats_trap_1_2_descr">
+		<text>I managed to convince Naruchnik to let the bandits go. I should bring the news to them.</text>
+	</string>
+	<string id="give_like_rats_trap_1_3_descr">
+		<text>The Bandit leader wants me to negotiate for them with the Stalkers.</text>
+	</string>
+	<string id="give_like_rats_trap_1_4_descr">
+		<text>The Stalkers don't want to negotiate. I should bring the news to the Bandits or get rid of them...</text>
+	</string>
+	<string id="give_like_rats_trap_1_5_descr">
+		<text>The Bandit leader proposed me a deal: if I can fight free a way to an exit to help them escape, they are ready to pay me well. </text>
+	</string>
+	<string id="give_like_rats_trap_1_6_descr">
+		<text>I found an exit. I should tell the Bandit leader that the way is free.</text>
+	</string>
+	<string id="give_like_rats_trap_1_7_descr">
+		<text>I fooled the bandits and they ran straight into the Army base. I should tell Naruchnik that I solved his problem.</text>
+	</string>
+	<string id="give_like_rats_trap_1_8_descr">
+		<text>I killed the bandits. I should tell Naruchnik that I solved his problem.</text>
+	</string>
+	<string id="give_like_rats_trap_1_9_descr">
+		<text>Naruchnik is not interested in a siege himself, but he wants to be paid off. Maybe I can convinve the bandits, or I could still solve this the violent way.</text>
+	</string>
+	<string id="give_like_rats_trap_1_10_descr">
+		<text>I convinced the bandits to pay for their lifes. I should bring the news to Naruchnik.</text>
+	</string>
+	<string id="give_like_rats_trap_1_11_descr">
+		<text>The bandits want me to show them the way to freedom. I'm not allowed to take my weapon out or they will shoot me.</text>
+	</string>
+	<string id="give_like_rats_trap_1_12_descr">
+		<text>I told Naruchnik that I will get rid of the bandits for him.</text>
+	</string>
+	
+	
+<string id="give_bh_pervert_tourist_1_name">
+		<text>To Taste the Fruits of the Zone</text>
+	</string>	
+	<string id="give_bh_pervert_tourist_1_descr">
+		<text>Shlitzer wants me to pick up a client from the Southern Checkpoint, between 22h and midnight. I should wait for him at the jeep wreackage.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_2_descr">
+		<text>I should escort the tourist to the Northern Farm.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_3_descr">
+		<text>I have to wait until the tourist is done.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_4_descr">
+		<text>I should bring the tourist back to the jeep wreackage.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_5_descr">
+		<text>The client is dead. I should inform Shlitzer about it.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_6_descr">
+		<text>I brought the client back to the Southern Checkpoint. I should report to Shlitzer.</text>
+	</string>
+
+<string id="give_bh_pervert_tourist_2_name">
+		<text>The Usual Suspects</text>
+	</string>
+	<string id="give_bh_pervert_tourist_2_1_descr">
+		<text>Shlitzer wants me to hide the clients corpse in the Vehicle Station in order to frame the bandits. I should either try to sneak in the corpse during the night or disguise myself as a bandit. 
+			I should recognise a good hiding spot when I see one.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_2_2_descr">
+		<text>I should report back to Shlitzer that the corpse is hidden away in the bandit base.</text>
+	</string>
+	<string id="give_bh_pervert_tourist_2_3_descr">
+		<text>The bandits from the Vehicle Station are dead... I should let Shlitzer know of this development...</text>
+	</string>
+
+<string id="give_bh_shlitzer_dead_man_name">
+		<text>Dead Man Walking</text>
+	</string>
+	<string id="give_bh_shlitzer_dead_man_1_descr">
+		<text>Shlitzer says I'm a dead man for not telling him about the tourist's death.</text>
+	</string>
+	<string id="give_bh_shlitzer_dead_man_2_descr">
+		<text>Shlitzer says I'm a dead man for not managing the cleanup in time.</text>
+	</string>
+	<string id="give_bh_shlitzer_dead_man_3_descr">
+		<text>Nussknacker says I'm a dead man for not meeting him.</text>
+	</string>
+
+	
+<string id="give_bh_pervert_tourist_3_name">
+		<text>Gone with the Gopniks</text>
+	</string>		
+	
+	
+<string id="give_bh_shlitzer_gulag_1_name">
+		<text>To Harvest the Fruits of the Zone</text>
+	</string>
+	<string id="give_bh_shlitzer_gulag_1_descr">
+		<text>I'm supposed to meet Shlitzer's acquaintances for guard duty near the Vehicle Graveyard in Garbage between 8 a.m. and 14 p.m.</text>
+	</string>
+	<string id="give_bh_shlitzer_gulag_2_descr">
+		<text>I'm supposed to guard the western hole in the fence until new orders.</text>
+	</string>
+	<string id="give_bh_shlitzer_gulag_3_descr">
+		<text>Prikazov wants to talk to me...</text>
+	</string>
+	<string id="give_bh_shlitzer_gulag_4_descr">
+		<text>The job is finished. I should talk to Prikazov.</text>
+	</string>
+	<string id="give_bh_shlitzer_gulag_5_descr">
+		<text>I have to talk to Shlitzer about my payment.</text>
+	</string>
+	
+	
+<string id="give_nr_mihal_1_name">
+		<text>A Stalker in need of help</text>
+	</string>	
+	<string id="give_nr_mihal_1_1_descr">
+		<text>I should escort Mihal back to the Laundromat.</text>
+	</string>
+	<string id="give_nr_mihal_1_2_descr">
+		<text>I should tell Mihal that we arrived.</text>
+	</string>
+	
+	
+	
+	
+	
+	
+	
+	
+--------------------------	
+----- Atomic Crusader ----	
+--------------------------
+<string id="give_task_father_charon_quest_1_name">
+		<text>Meet your Father</text>
+	</string>	
+	<string id="give_task_father_charon_quest_1_descr">
+		<text>I should report to Father Charon.</text>
+	</string>
+	
+<string id="give_task_blue_winter_quest_1_name">
+		<text>The spearhead of the Monolith</text>
+	</string>	
+	<string id="give_task_blue_winter_quest_1_1_descr">
+		<text>My chapter has been assigned the retaking of the Kindergarten. I should prepare and find Blue Winter to wait for nightfall.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_2_descr">
+		<text>We set out to join our Brothers Melchior and Caspar. They should be waiting north of the Kindergarten.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_3_descr">
+		<text>Clear the Kindergarten with Blue Winter and Balthazar.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_4_descr">
+		<text>The Kindergarden is cleared. I should talk to Blue Winter.</text>
+	</string>
+	<string id="give_task_blue_winter_quest_1_5_descr">
+		<text>Blue Winter has given me the honour to report our victory to Father Charon.</text>
+	</string>
+	
+	
+	
+	
+</string_table>
