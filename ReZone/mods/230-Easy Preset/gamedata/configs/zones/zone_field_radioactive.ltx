@@ -42,58 +42,62 @@ blowout_wind		= off
 shape_transp_color		= 200, 200, 0, 60
 shape_edge_color		= 32, 32, 32, 255
 
-;########################################################
+;====================================================
+;              RADIOACTIVE FIELDS
+;====================================================
 [zone_field_radioactive_very_weak]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_very_weak"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.013
+max_start_power		= 0.010
 
 ;########################################################
 [zone_field_radioactive_weak]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_weak"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.022
+max_start_power		= 0.015
 
 ;########################################################
 [zone_field_radioactive_below_average]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_below_average"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.027
+max_start_power		= 0.020
 
 ;########################################################
 [zone_field_radioactive_average]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_average"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.031
+max_start_power		= 0.025
 
 ;########################################################
 [zone_field_radioactive_above_average]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_above_average"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.039
+max_start_power		= 0.030
 
 ;########################################################
 [zone_field_radioactive_strong]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_strong"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.043
+max_start_power		= 0.035
 
 ;########################################################
 [zone_field_radioactive_lethal]:zone_field_radioactive
 $spawn 			= "zones\field_radioactive_lethal"
 
 ;----------- Anomaly settings -----------------------
-max_start_power		= 0.04
+max_start_power		= 0.045
 
 
 
-
+;====================================================
+;              RADIOACTIVE HOTSPOTS  
+;====================================================
 [zone_radioactive]:zone_field_radioactive
 GroupControlSection	= spawn_group_zone
 $def_sphere = 1
@@ -102,28 +106,28 @@ attenuation			= 0.1
 
 [zone_radioactive_very_weak]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_very_weak"
-max_start_power		= 0.0078
+max_start_power		= 0.0065
 
 [zone_radioactive_weak]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_weak"
-max_start_power		= 0.017
+max_start_power		= 0.015
 
 [zone_radioactive_below_average]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_below_average"
-max_start_power		= 0.032
+max_start_power		= 0.025
 
 [zone_radioactive_average]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_average"
-max_start_power		= 0.043
+max_start_power		= 0.035
 
 [zone_radioactive_above_average]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_above_average"
-max_start_power		= 0.054
+max_start_power		= 0.040
 
 [zone_radioactive_strong]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_strong"
-max_start_power		= 0.069
+max_start_power		= 0.050
 
 [zone_radioactive_lethal]:zone_radioactive
 $spawn 			= "zones\mp\radioactive_lethal"
-max_start_power		= 0.085
+max_start_power		= 0.060
