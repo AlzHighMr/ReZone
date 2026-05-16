@@ -71,9 +71,9 @@ medkits = {
 	eft_splint =       {rightleg = 3, leftleg = 3},
 	eft_afak =         {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
 
---	medkit =            {head = 1, torso = 1},
-	medkit_army =       {head = 1, torso = 1},
---	medkit_scientic =   {head = 4, torso = 4},
+	medkit =            {head = 1, torso = 1, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	medkit_army =       {head = 2, torso = 2, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+	medkit_scientic =   {head = 3, torso = 3, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
 	caffeine =          {head = 2},
 	morphine =          {head = 8, torso = 5, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
 	rebirth =           {head = 11, torso = 11, rightleg = 5, leftleg = 5, rightarm = 5, leftarm = 5},
@@ -99,9 +99,9 @@ healhelp = {
 	eft_splint =       {rightleg = 1, leftleg = 1},
 	eft_afak =         {rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
 
---	medkit =            {head = 5, torso = 5, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
-	medkit_army =       {head = 1, torso = 1, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
---	medkit_scientic =   {head = 10, torso = 8, rightleg = 4, leftleg = 4, rightarm = 4, leftarm = 4},
+	medkit =            {head = 1, torso = 1, rightleg = 1, leftleg = 1, rightarm = 1, leftarm = 1},
+	medkit_army =       {head = 2, torso = 2, rightleg = 2, leftleg = 2, rightarm = 2, leftarm = 2},
+	medkit_scientic =   {head = 3, torso = 3, rightleg = 3, leftleg = 3, rightarm = 3, leftarm = 3},
 
     caffeine =         {head = 2},
 
