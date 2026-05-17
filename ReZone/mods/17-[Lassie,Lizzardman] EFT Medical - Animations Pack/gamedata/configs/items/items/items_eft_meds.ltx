@@ -1,0 +1,214 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;; Anomaly ;;;;;;;;;;;;;;;;;;;;;;; Anomaly ;;;;;;;;;;;;;;;;;;;;;;; Anomaly ;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;- Model & Textures - ESCAPE FROM TARKOV
+;- Animation - ALUMINUM SPLINT Animation
+;- Adaptation - Lassie
+;- Animation remade from frame to frame, you can use these animations in your ModPack, custom models, but, 
+;- place the necessary credits for their use ლ(╹◡╹ლ).
+;--------------------------------------------------- AFAK ----------------------------------------------------
+[eft_afak]:booster
+$spawn 						                        = "food and drugs\bandage"
+visual						                        = dynamics\eft_medical\eft_afak\eft_afak.ogf
+kind			                               		= i_medical
+
+cost						                        = 2200
+
+inv_name					                        = st_eft_afak
+inv_name_short				                        = st_eft_afak
+description					                        = st_eft_afak_descr
+inv_weight					                        = 0.81
+
+icons_texture     									= ui_eft\ui_icon_eftafak
+inv_grid_width     									= 1
+inv_grid_height    									= 1
+inv_grid_x         									= 0
+inv_grid_y         									= 0
+
+upgr_icon_path								 	    = ui\actor_items\ui_actor_items_2
+upgr_icon_x								 	 	    = 0
+upgr_icon_y								 	 	    = 0
+upgr_icon_width						 	 	 	    = 150
+upgr_icon_height						 	 	    = 50
+
+boost_time 					                        = 10
+boost_bleeding_restore 		                       = 0.015
+eat_satiety 				                        = -0.029
+eat_alcohol					                        = 0.018
+eat_sleepiness				                        = 0.022
+
+use_sound					                       	= interface\eft_medical\eft_afak_use
+
+;--------------------------------------------------- Alu splint ----------------------------------------------------
+[eft_alusplint]:booster
+$spawn 						                        = "food and drugs\bandage"
+visual						                        = dynamics\eft_medical\eft_alusplint\eft_alusplint.ogf
+kind			                               		= i_medical
+
+cost						                        = 750
+
+inv_name					                        = st_eft_alusplint
+inv_name_short				                        = st_eft_alusplint
+description					                        = st_eft_alusplint_descr
+inv_weight					                        = 0.17
+
+icons_texture     									= ui_eft\ui_icon_alusplint
+inv_grid_width     									= 1
+inv_grid_height    									= 1
+inv_grid_x         									= 0
+inv_grid_y         									= 0
+
+tier												= 2
+
+use_sound					                       	= interface\eft_medical\eft_alusplint_use
+
+
+;--------------------------------------------------- SPLINT ----------------------------------------------------
+[eft_splint]:booster
+$spawn 						                        = "food and drugs\eft_splint"
+visual						                        = dynamics\eft_medical\eft_splint\eft_splint.ogf
+kind			                               		= i_medical
+
+cost						                        = 1850
+
+inv_name					                        = st_eft_splint
+inv_name_short				                        = st_eft_splint
+description					                        = st_eft_splint_descr
+inv_weight					                        = 0.17
+
+icons_texture     									= ui_eft\ui_icon_splint
+inv_grid_width     									= 1
+inv_grid_height    									= 1
+inv_grid_x         									= 0
+inv_grid_y         									= 0
+
+
+tier												= 2
+
+use_sound					                       	= interface\eft_medical\eft_splint_use
+
+;--------------------------------------------------- CMS KIT --------------------------------------------------------
+[eft_cmskit]:booster_multi
+$spawn 						                        = "food and drugs\eft_cmskit"
+visual						                        = dynamics\eft_medical\eft_cms_kit\eft_cms_kit.ogf
+kind			                               		= i_medical
+
+cost						                        = 8000
+
+inv_name					                        = st_eft_cmskit
+inv_name_short				                        = st_eft_cmskit
+description					                        = st_eft_cmskit_descr
+inv_weight					                        = 0.45
+
+icons_texture     									= ui_eft\ui_icon_cmskit
+inv_grid_width     									= 1
+inv_grid_height    									= 1
+inv_grid_x         									= 0
+inv_grid_y         									= 0
+
+
+max_uses											= 4
+
+repair_part_bonus									= 0.06
+tier												= 4
+
+use_sound					                       	= interface\eft_medical\eft_cmskit_use
+
+
+
+;--------------------------------------------------- SURV12 KIT----------------------------------------------------
+[eft_survkit]:booster_multi
+$spawn 						                        = "food and drugs\eft_cmskit"
+visual						                        = dynamics\eft_medical\eft_surv12\itm_surv12.ogf
+kind			                               		= i_medical
+
+cost						                        = 8000
+
+inv_name					                        = st_eft_survkit
+inv_name_short				                        = st_eft_survkit
+description					                        = st_eft_survkit_descr
+inv_weight					                        = 0.45
+
+icons_texture     									= ui_eft\ui_icon_survkit
+inv_grid_width     									= 1
+inv_grid_height    									= 2
+inv_grid_x         									= 0
+inv_grid_y         									= 0
+
+
+max_uses											= 4
+
+repair_part_bonus									= 0.06
+tier												= 4
+
+use_sound					                       	= interface\item_usage\liz_surgerykit
+
+;--------------------------------------------------- SURGINST----------------------------------------------------
+[surginst]:tch_junk
+visual				                               = dynamics\equipments\trade\cutlery.ogf
+description			                               = st_surginst_descr
+inv_name			                               = st_surginst
+inv_name_short			                           = st_surginst
+kind			                               	   = i_misc
+icons_texture									   = ui_eft\ui_eft_surginst
+inv_grid_width									   = 1
+inv_grid_height									   = 1
+inv_grid_x										   = 0
+inv_grid_y										   = 0
+cost				                               = 500
+inv_weight			                               = 0.15
+attach_angle_offset		                           = -0.287979, 1.560923, 1.544060
+attach_position_offset		                       = 0.096910, -0.013594, 0.107925
+attach_bone_name		                           = bip01_r_hand
+auto_attach				                           = false
+;required_tool				                       = bandage
+;boost_wound_immunity		                       = -0.05
+;use_sound					                       = actor\pain_6
+
+
+;--------------------------------------------------- Pills A----------------------------------------------------
+[eft_pills_a]:booster
+visual						                       = dynamics\equipments\medical\drug_coagulant.ogf
+description			                               = st_eft_pills_a_descr
+inv_name			                               = st_eft_pills_a
+inv_name_short			                           = st_eft_pills_a
+kind			                                   = i_medical
+icons_texture									   = ui_eft\ui_eft_pills
+inv_grid_width									   = 1
+inv_grid_height									   = 1
+inv_grid_x										   = 0
+inv_grid_y										   = 0
+cost				                               = 500
+inv_weight			                               = 0.15
+attach_angle_offset		                           = -0.287979, 1.560923, 1.544060
+attach_position_offset		                       = 0.096910, -0.013594, 0.107925
+attach_bone_name		                           = bip01_r_hand
+auto_attach				                           = false
+;required_tool				                       = bandage
+;boost_wound_immunity		                       = -0.05
+use_sound					                       = actor\pain_6
+
+
+;--------------------------------------------------- Pills B----------------------------------------------------
+[eft_pills_b]:booster
+visual						                       = dynamics\equipments\medical\drug_coagulant.ogf
+description			                               = st_eft_pills_b_descr
+inv_name			                               = st_eft_pills_b
+inv_name_short			                           = st_eft_pills_b
+kind			                                   = i_medical
+icons_texture									   = ui_eft\ui_eft_pills
+inv_grid_width									   = 1
+inv_grid_height									   = 1
+inv_grid_x										   = 0
+inv_grid_y										   = 0
+cost				                               = 500
+inv_weight			                               = 0.15
+attach_angle_offset		                           = -0.287979, 1.560923, 1.544060
+attach_position_offset		                       = 0.096910, -0.013594, 0.107925
+attach_bone_name		                           = bip01_r_hand
+auto_attach				                           = false
+;required_tool				                       = bandage
+;boost_wound_immunity		                       = -0.05
+use_sound					                       = actor\pain_6
+
+
