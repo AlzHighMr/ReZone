@@ -15,6 +15,7 @@
 	%c[d_cyan] • %c[ui_gray_2]nízká spotøeba elektrické energie\n
 	</text>
 </string>
+
 <string id="st_pda_1_name">
 	<text>PDA</text>
 </string>
@@ -56,7 +57,7 @@
 	</text>
 </string>
 <string id="st_detector2">
-	<text>Detektor Bear (Tøída II)</text>
+	<text>Detektor Medvìd (Tøída II)</text>
 </string>
 <string id="st_detector2_descr">
 	<text>Tento detektor anomálních jevù poslední generace slouží k lokalizaci anomálních formací a má barevný diodový panel, který nejen indikuje smìr k artefaktùm, ale také mìøí jejich vzdálenost. Pro pøepnutí do režimu vyhledávání artefaktu otevøete pøední kryt zaøízení. Bohužel, zaøízení je naprogramováno s pomìrnì zastaralým seznamem detekovatelných artefaktù.\n \n
@@ -112,7 +113,7 @@
 	</text>
 </string>
 <string id="st_device_torch_name">
-	<text>Pøilba s èelovkou</text>
+	<text>Èelovka</text>
 </string>
 <string id="st_device_torch_descr">
 	<text>Bìžná èelová baterka, která se nosí na hlavì. Užiteèná pro stalkery, kteøí se pohybují venku po setmìní, ale mùže pøitahovat problémy, pokud se používá neuváženì. Umožòuje volné používání obou rukou pøi terénních operacích.\n \n
@@ -122,7 +123,7 @@
 </string>
 
 <string id="st_device_torch_nv_1_name">
-	<text>Pøilba s èelovkou a noèním vidìním 1PN93-1</text>
+	<text>Èelovka s noèním vidìním 1PN93-1</text>
 </string>
 <string id="st_device_torch_nv_1_descr">
 	<text>Bìžná èelová baterka, která je plnì funkèní. Užiteèná pro stalkery, kteøí se pohybují venku po setmìní, ale mùže pøitahovat problémy, pokud se používá neuváženì. Tato èelová lampa je vybavena standardním noèním vidìním 1PN93-1 ruských vojenských sil. Nabízí generaci 2+ zesílení obrazu, které je zvláštì užiteèné pro operace v noci nebo za podmínek s nízkým osvìtlením.\n \n
@@ -133,7 +134,7 @@
 	</text>
 </string>
 <string id="st_device_torch_nv_2_name">
-	<text>Pøilba s èelovkou a noèním vidìním PN21KL</text>
+	<text>Èelovka s noèním vidìním PN21KL</text>
 </string>
 <string id="st_device_torch_nv_2_descr">
 	<text>Bìžná èelová baterka, která je plnì funkèní. Užiteèná pro stalkery, kteøí se pohybují venku po setmìní, ale mùže pøitahovat problémy, pokud se používá neuváženì. Tato èelová lampa je vybavena generací 2+ zesílení obrazu, urèenou pro provoz v noci za pøirozeného osvìtlení a v úplné tmì se zapnutým infraèerveným osvìtlením.\n \n
@@ -146,7 +147,7 @@
 	
 
 <string id="st_device_torch_nv_3_name">
-	<text>Pøilba s èelovkou a noèním vidìním Oracle Psi-stimulator</text>
+	<text>Èelovka s noèním vidìním Oracle Psi-stimulator</text>
 </string>
 <string id="st_device_torch_nv_3_descr">
 	<text>Bìžná èelová baterka, která je plnì funkèní. Užiteèná pro stalkery, kteøí se pohybují venku po setmìní, ale mùže pøitahovat problémy, pokud se používá neuváženì. Tato èelová lampa je vybavena softwarem na zpracování obrazu, který odstraòuje šum z videa a zvyšuje schopnosti zesilování obrazu jednotky PN21K, èímž se stává plnohodnotným zaøízením pro noèní vidìní generace 3+.\n \n
@@ -156,6 +157,9 @@
 	%c[d_orange] • %c[ui_gray_2]krátké stisknutí tlaèítka "Zapnout" nastaví jas noèního vidìní\n
 	</text>
 </string>
+
+
+
 <string id="st_device_flashlight">
 	<text>Svítilna</text>
 </string>
