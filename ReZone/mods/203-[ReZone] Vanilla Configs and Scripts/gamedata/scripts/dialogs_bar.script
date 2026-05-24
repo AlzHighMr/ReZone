@@ -201,7 +201,6 @@ function new_arena_give_reward(first_speaker, second_speaker)
 		m = 6000
 
 		dialogs.relocate_item_section(second_speaker, "akvatab", "in")
-		dialogs.relocate_item_section(second_speaker, "eft_survkit", "in")
 		dialogs.relocate_item_section(second_speaker, "antirad", "in")
 		dialogs.relocate_item_section(second_speaker, "device_pda_2", "in")
 	elseif has_alife_info("bar_arena_fight_6_reward") then
@@ -209,18 +208,17 @@ function new_arena_give_reward(first_speaker, second_speaker)
 		m = 8000
 
 		dialogs.relocate_item_section(second_speaker, "medkit_scientic", "in")
-		dialogs.relocate_item_section(second_speaker, "antirad", "in")
-
+		dialogs.relocate_item_section(second_speaker, "eft_survkit", "in")
+		dialogs.relocate_item_section(second_speaker, "medkit_army", "in")
 	elseif has_alife_info("bar_arena_fight_7_reward") then
 
 		m = 10000
 
-		dialogs.relocate_item_section(second_speaker, "antirad", "in")
-		dialogs.relocate_item_section(second_speaker, "itm_drug_kit", "in")
-
+		dialogs.relocate_item_section(second_speaker, "medkit_scientic", "in")
+		dialogs.relocate_item_section(second_speaker, "itm_drugkit", "in")
 	elseif has_alife_info("bar_arena_fight_8_reward") then
 
-		m = 15000
+		m = 10000
 
 		dialogs.relocate_item_section(second_speaker, "achievement_box_3", "in")
 		dialogs.relocate_item_section(second_speaker, "wpn_shiv", "in")
