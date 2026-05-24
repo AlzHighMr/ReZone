@@ -496,12 +496,15 @@ function xr_effects.bar_arena_teleport(actor, npc)
 end
 
 local arena_outfits = {
-	novice_outfit = true,
-	stalker_outfit = true,
-	svoboda_light_outfit = true,
-	outfit_nanosuit_asian = true,
-	outfit_nanosuit = true
+    novice_outfit = true,
+    stalker_outfit = true,
+    stalker_tigerstripe_outfit = true,
+    svoboda_light_outfit = true,
+    specops_outfit = true,
+    trenchcoat_brown_outfit = true,
+    exo_wood_outfit = true
 }
+
 
 function equip_outfit()
 	local current = db.actor:item_in_slot(7)
