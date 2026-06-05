@@ -18,9 +18,9 @@ spawn_squads = simulation_psy_dog, simulation_poltergeist_tele, simulation_karli
 spawn_num = 1
 
 [spawn_chimera]
-spawn_squads = simulation_chimera ;--spawn-chimera
-spawn_num = 1
+spawn_squads = simulation_chimera, simulation_respawn_north_strong, simulation_respawn_mix
+spawn_num = {-bar_deactivate_radar_done} 1, 0
 
 [spawn_gigant]
-spawn_squads = simulation_gigant ;--spawn-gigant
-spawn_num = 1
+spawn_squads = simulation_respawn_north_normal, simulation_gigant, simulation_respawn_north_strong, simulation_respawn_flying
+spawn_num = {-bar_deactivate_radar_done} 1, 0
