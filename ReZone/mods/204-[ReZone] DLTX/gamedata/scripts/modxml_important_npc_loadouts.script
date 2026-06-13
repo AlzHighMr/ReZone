@@ -1,0 +1,56 @@
+local npc_supplies = {
+----------------------------------------------------------------
+-- Sultan
+----------------------------------------------------------------
+["zat_b7_bandit_boss_sultan"] = [[
+[spawn]
+
+wpn_ak74 = 1
+ammo_5.45x39_fmj = 1
+wpn_sig220 = 1
+ammo_11.43x23_hydro = 1
+grenade_rgd5 = 2
+wpn_binoc = 1
+anomaly_scaner
+detector_advanced
+device_torch
+hand_radio
+]],
+
+----------------------------------------------------------------
+-- Bandit medic
+----------------------------------------------------------------
+["bandit_main_base_medic_mlr"] = [[
+[spawn]
+wpn_protecta
+ammo_12x70_buck = 5
+medkit = 10
+bandage = 10
+]],
+
+}
+
+--=============================================================
+-- CALLBACK
+--=============================================================
+local function on_specific_character_init(character_id, data)
+
+    local supplies = npc_supplies[character_id]
+    if not supplies then
+        for id, sp in pairs(npc_supplies) do
+            if character_id:find(id, 1, true) then
+                supplies = sp
+                break
+            end
+        end
+    end
+
+    if supplies then
+        data.supplies = supplies
+    end
+
+end
+
+function on_game_start()
+    RegisterScriptCallback("on_specific_character_init", on_specific_character_init)
+end
