@@ -7,19 +7,15 @@ respawn_idle = 86400
 
 
 [respawn@rad_bloodsucker] ;-- Type: spawn_mutants_rare + spawn_gigant
-spawn_zomboids
 spawn_mutants_rare 
 spawn_gigant 
 
 
-[spawn_zomboids]
-spawn_squads = zombied_sim_squad_novice, zombied_sim_squad_advanced, zombied_sim_squad_veteran, zombied_sim_squad_mix 
-spawn_num = {-bar_deactivate_radar_done} 1, 0
 
 [spawn_mutants_rare]
-spawn_squads = simulation_karlik
+spawn_squads = simulation_fracture, simulation_lurker, simulation_snork, simulation_bloodsucker, simulation_psysucker ;--spawn-mutants-rare
 spawn_num = 1
 
 [spawn_gigant]
-spawn_squads = simulation_gigant, simulation_respawn_boss, simulation_respawn_north_strong, simulation_bloodsucker, simulation_psysucker  
-spawn_num = {+bar_deactivate_radar_done} 1, 0
+spawn_squads = simulation_gigant ;--spawn-gigant
+spawn_num = 1

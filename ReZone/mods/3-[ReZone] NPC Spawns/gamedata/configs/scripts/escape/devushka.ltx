@@ -1,0 +1,180 @@
+[logic@devushka]
+suitable = {=target_squad_name(devushka_squad)} true
+prior = 140
+active = walker@devushka_walk_1
+level_spot = special
+
+[walker@devushka]
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+
+[walker@devushka_walk_1]:walker@devushka
+path_walk = guard_2_walk
+path_look = guard_2_look
+on_info = {=surge_started} walker@surge_1
+on_info2 = {=is_night} walker@sleeper_1
+on_info3 = {=is_rain} walker@rain_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 6500 | remark@smoking_stand_3
+
+[walker@devushka_walk_2]:walker@devushka
+path_walk = surge_hide_9_walk
+path_look = surge_hide_9_look
+on_info = {=surge_started} walker@surge_1
+on_info2 = {=is_night} walker@sleeper_1
+on_info3 = {=is_rain} walker@rain_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 500 | remark@smoking_stand_1
+
+[walker@devushka_walk_3]:walker@devushka
+path_walk = surge_hide_11_walk
+path_look = surge_hide_11_look
+on_info = {=surge_started} walker@surge_1
+on_info2 = {=is_night} walker@sleeper_1
+on_info3 = {=is_rain} walker@rain_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 150 | remark@smoking_stand_1
+
+[walker@devushka_home_1]:walker@devushka
+path_walk = hide_2_walk
+path_look = hide_1_look
+on_info = {=surge_started} walker@surge_1
+on_info2 = {=is_night} walker@sleeper_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = true
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 8000 | remark@sit_ass
+
+[walker@devushka_home_2]:walker@devushka
+path_walk = hide_2_walk
+path_look = hide_1_look
+on_info = {=surge_started} walker@surge_1
+on_info2 = {=is_night} walker@sleeper_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = true
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 1500 | remark@eat_bread
+
+[walker@devushka_home_3]:walker@devushka
+path_walk = hide_2_walk
+path_look = hide_1_look
+on_info = {=surge_started} walker@surge_1
+;on_info2 = {=is_night} walker@sleeper_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+reach_distance = 5
+gather_items_enabled = true
+help_wounded_enabled = true
+corpse_detection_enabled = true
+invulnerable = false
+on_game_timer = 3500 | walker@sleeper_1
+
+[remark@sit_ass]:walker@devushka
+anim = sit_ass
+on_info = {=surge_started} walker@surge 
+on_game_timer = 10500 | walker@devushka_walk_2
+
+[remark@eat_bread]:walker@devushka
+anim = eat_bread
+on_info = {=surge_started} walker@surge
+on_game_timer = 800 | remark@use_pda
+
+[remark@use_pda]:walker@devushka
+anim = use_pda
+on_info = {=surge_started} walker@surge
+on_game_timer = 500 | walker@devushka_walk_1
+
+[remark@smoking_stand_1]:walker@devushka
+anim = smoking_stand
+on_info = {=surge_started} walker@surge
+on_game_timer = 900 | walker@devushka_home_2
+
+[remark@smoking_stand_2]:walker@devushka
+anim = smoking_stand
+on_info = {=surge_started} walker@surge
+on_game_timer = 900 | sleeper@sleeper_2     
+
+[remark@smoking_stand_3]:walker@devushka
+anim = smoking_stand
+on_info = {=surge_started} walker@surge
+on_game_timer = 900 | campfire_point@devushka
+
+[campfire_point@devushka]:walker@devushka
+smart = esc_smart_terrain_2_12
+use_camp = true
+anim = idle, guard
+on_game_timer = 10500 | walker@devushka_home_1
+
+[walker@rain_1]
+path_walk = hide_2_walk
+path_look = hide_1_look
+on_info = {!is_rain} walker@devushka_home_1
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+
+[walker@surge_1]
+path_walk = hide_2_walk
+path_look = hide_1_look
+on_info = {!surge_started} walker@devushka_home_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+
+[walker@sleeper_1]
+path_walk = guardermlr_2_walk
+path_look  = guardermlr_2_look
+on_info = {=surge_started} walker@surge_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+;on_info = {!is_night} walker@devushka_home_2
+on_game_timer = 12500 | remark@smoking_stand_2
+
+[sleeper@sleeper_2]
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+path_main = hide_2_walk
+meet = no_meet
+on_info = {!is_night} remark@eat_bread
+
