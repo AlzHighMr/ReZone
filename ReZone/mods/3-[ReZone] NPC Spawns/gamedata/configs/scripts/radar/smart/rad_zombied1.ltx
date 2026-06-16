@@ -6,10 +6,13 @@ respawn_idle = 86400
 
 
 [respawn@rad_zombied1]
+spawn_zomboid
 spawn_chimera
 
-
+[spawn_zomboid]
+spawn_squads = zombied_sim_squad_novice, zombied_sim_squad_advanced, zombied_sim_squad_veteran, zombied_sim_squad_mix 
+spawn_num = {-bar_deactivate_radar_done} 1, 0
 
 [spawn_chimera]
-spawn_squads = simulation_chimera
-spawn_num = 1
+spawn_squads = simulation_chimera, simulation_respawn_north_normal, simulation_respawn_north_strong
+spawn_num = {+bar_deactivate_radar_done} 1, 0
