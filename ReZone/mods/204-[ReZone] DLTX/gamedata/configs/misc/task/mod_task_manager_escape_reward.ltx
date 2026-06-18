@@ -12,32 +12,3 @@ on_init = %=create_squad(esc_5_12_boars_training_squad:esc_smart_terrain_5_12)%
 on_complete = %=reward_item(recipe_ammo_1) =reward_item(cooking) =reward_random_item(antirad_cystamine:antirad_kalium:survival_kit:akvatab:yadylin:tushonka::meat_boar_b:conserva:ammo_9x18_ap:ammo_9x18_pmm)%
 condlist_0 = {+fanat_training_back_to_village_done} complete, {+esc_2_12_stalker_fanat_death} fail
 
-
-;------------------------------------------------------------------------------------------
-; FANATIC TRAINING NEW
-;------------------------------------------------------------------------------------------
-
-
-
-[esc_2_12_stalker_fanat_task_3]
-icon = ui_icons_black_chimera17
-storyline = false
-prior = 80
-repeat_timeout = 86400 ;1 day
-precondition = {=mutants_in_map_ge(y04_pole:2)} true, false
-
-title = esc_2_12_stalker_fanat_task_3_name
-descr = esc_2_12_stalker_fanat_task_3_text
-job_descr = esc_2_12_stalker_fanat_task_3_fetch_about
-task_complete_descr = esc_2_12_stalker_fanat_task_3_fetch_finish
-stage_complete = 1
-target_functor = mutants_in_map_target
-
-;abusing this to pass map name as argument for target functor
-target = y04_pole
-
-on_complete = %=reward_random_money(6500:7500) =complete_task_inc_goodwill(75:stalker) =reward_stash(true) %
-condlist_0 = {=task_stage_is_not(esc_2_12_stalker_fanat_task_3:1) !mutants_in_map(y04_pole)} %=set_task_stage(esc_2_12_stalker_fanat_task_3:1)%
-
-
-
