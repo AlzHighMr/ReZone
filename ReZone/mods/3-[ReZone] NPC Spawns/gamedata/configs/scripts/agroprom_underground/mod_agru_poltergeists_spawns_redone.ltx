@@ -1,0 +1,18 @@
+![logic]
+!active = active = sr_idle@line_0
+active = sr_idle@spawn_burer
+
+[sr_idle@spawn_burer]
+on_game_timer = 5 | sr_idle@wait_actor %=create_squad(simulation_burer:agr_u_monsters) =create_squad(simulation_karlik:agr_u_monsters) =create_squad(simulation_snork_2_5:agr_u_monsters)%
+
+[sr_idle@wait_actor]
+on_actor_in_zone = kat_gunslinger_cache_room | sr_idle@spawn_snork 
+
+[sr_idle@spawn_snork] 
+on_info = sr_idle@timer %=create_squad(simulation_snork_2_3:agr_u_bloodsucker_2)%
+
+[sr_idle@timer] 
+on_game_timer = 20 | sr_idle@spawn_army
+
+[sr_idle@spawn_army] 
+on_info = sr_idle@line_1 %=create_squad(agr_u_monster_soldiers_squad:agr_u_monsters) =create_squad(agr_u_bandits_soldiers_squad:agr_u_bandits)%

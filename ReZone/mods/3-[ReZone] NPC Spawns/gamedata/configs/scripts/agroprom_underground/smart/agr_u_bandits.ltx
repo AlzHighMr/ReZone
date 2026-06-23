@@ -1,6 +1,29 @@
 [smart_terrain]
 squad_id = 1
-max_population = 1
+max_population = 2
+;respawn_params = respawn@agr_u_bandits
+;respawn_only_smart = false
+;respawn_idle = 259200
+;respawn_radius = 1000
+;arrive_dist = 0
+;smart_control = nil
+;att_restr = nil
+;def_restr = nil
+;safe_restr = nil
+;spawn_point = nil
+
+;[respawn@agr_u_bandits] ;-- Type:
+;spawn_all_hard
+
+
+;[spawn_all_hard]	;-- Hard mutants - Rates of groups: ( 1 tushkano + 1 snork + 1 bloodsucker + 1 psysucker + 2 zombie )
+;spawn_squads = simulation_tushkano_7_10, simulation_snork_2_3, simulation_bloodsucker, simulation_psysucker, simulation_zombie_blind, simulation_zombie_blind_3zomb
+;spawn_num = {+strelok_notes ~20} 1, 0
+
+
+;[on_changing_level]
+
+;[smart_control]
 
 [exclusive]
 agr_u_bandits_squad_1 = agroprom_underground\agr_u_bandits_logic.ltx

@@ -1,0 +1,16 @@
+![logic]
+!active = sr_idle@nil
+active = sr_idle@spawn_zombie
+
+[sr_idle@spawn_zombie]
+on_game_timer = 5 | sr_idle@wait_actor %=create_squad(simulation_zombie_3_6:agr_u_bloodsucker_2)%
+
+[sr_idle@wait_actor]
+on_actor_in_zone = agr_u_zombie_rest | sr_idle@spawn_bloodsucker 
+
+[sr_idle@spawn_bloodsucker] 
+on_info = sr_idle@timer %=create_squad(agr_u_bloodsucker_3_squad:agr_u_bloodsucker) =play_snd_from_obj(396:monsters\bloodsucker\bloodsucker_script_attack_0)%
+
+[sr_idle@timer] 
+
+

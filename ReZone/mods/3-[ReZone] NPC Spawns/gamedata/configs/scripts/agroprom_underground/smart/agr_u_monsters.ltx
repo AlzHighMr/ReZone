@@ -1,20 +1,33 @@
 [smart_terrain]
 squad_id = 4
-max_population = 2
+max_population = 4
 respawn_params = respawn@agr_u_monsters
-respawn_idle = 60000
-respawn_radius = 300
+respawn_only_smart = false
+respawn_idle = 345600
+respawn_radius = 1000
+;arrive_dist = 0
+;smart_control = nil
+;att_restr = nil
+;def_restr = nil
+;safe_restr = nil
+spawn_point = agr_u_monsters_spawn_point
 
-[respawn@agr_u_monsters]
-spawn_controller
+[respawn@agr_u_monsters] ;-- Type:
+spawn_all_worst
 
-[spawn_controller]
-spawn_squads = simulation_contr_3sn_3gzomb, simulation_bur_5rat_day, simulation_respawn_underground, simulation_poltergeist_flame
-spawn_num = {+agru_controller_death} 1, 0
 
- [exclusive]
- agr_u_monsters_controller = agroprom_underground\agru_controller_1.ltx
-; agru_poltergeist_squad_1 = agroprom_underground\agru_poltergeist_1.ltx
-; agru_poltergeist_squad_2 = agroprom_underground\agru_poltergeist_2.ltx
-; agru_poltergeist_squad_3 = agroprom_underground\agru_poltergeist_3.ltx
-; agru_poltergeist_squad_4 = agroprom_underground\agru_poltergeist_4.ltx
+[spawn_all_worst]	;-- Worst mutants - Rates of groups:( 1 bloodsucker + 1 psysucker + 1 burer + 2 controller ) 
+spawn_squads = simulation_bloodsucker_1_2, simulation_psysucker_1_2, simulation_bur_5rat_day, simulation_contr_3sn_3gzomb, simulation_contr_5rat_3tush
+spawn_num = {+strelok_notes} 1, 0
+
+
+;[on_changing_level]
+
+;[smart_control]
+
+;[exclusive]
+;agr_u_monsters_controller = agroprom_underground\agru_controller_1.ltx
+;agru_poltergeist_squad_1 = agroprom_underground\agru_poltergeist_1.ltx
+;agru_poltergeist_squad_2 = agroprom_underground\agru_poltergeist_2.ltx
+;agru_poltergeist_squad_3 = agroprom_underground\agru_poltergeist_3.ltx
+;agru_poltergeist_squad_4 = agroprom_underground\agru_poltergeist_4.ltx

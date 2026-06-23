@@ -1,0 +1,13 @@
+![logic]
+!active = sr_idle@line_0
+active = sr_idle@wait_actor
+
+[sr_idle@wait_actor]
+on_actor_in_zone = agru_spawn_polter_zone | sr_idle@spawn_mutants 
+
+[sr_idle@spawn_mutants] 
+on_info = sr_idle@timer %=create_squad(simulation_snork_2_5:agr_u_monsters) =create_squad(simulation_zombie_3_6:agr_u_monsters) =create_squad(simulation_zombie_blind:agr_u_monsters)%
+
+[sr_idle@timer] 
+
+
