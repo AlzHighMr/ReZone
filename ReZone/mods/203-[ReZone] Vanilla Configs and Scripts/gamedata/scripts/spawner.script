@@ -1,0 +1,133 @@
+local ini_world = ini_file_ex([[plugins\secrets\base_secrets.ltx]])
+
+local spawns = {
+    world = {},
+    done  = false
+}
+
+local function split(str, sep)
+    if not str then return {} end
+
+    local t = {}
+    for v in string.gmatch(str, "([^" .. sep .. "]+)") do
+        t[#t + 1] = v
+    end
+
+    return t
+end
+
+local function roll(chance)
+    if not chance then return true end
+    if type(chance) ~= "number" then return true end
+    return math.random() < chance
+end
+
+local function parse_pos(str)
+    local t = split(str, ",")
+
+    if #t < 5 then return nil end
+
+    return {
+        pos = {
+            tonumber(t[1]) or 0,
+            tonumber(t[2]) or 0,
+            tonumber(t[3]) or 0
+        },
+        lvid = tonumber(t[4]) or 0,
+        gvid = tonumber(t[5]) or 0
+    }
+end
+
+--------------------------------------------------
+-- WORLD SPAWN
+--------------------------------------------------
+
+local function spawn_world(data)
+    if not data or not data.pos then return end
+    if not roll(data.chance) then return end
+
+    local se_obj = alife_create_item(
+        data.item,
+        {
+            vector():set(unpack(data.pos.pos)),
+            data.pos.lvid,
+            data.pos.gvid
+        }
+    )
+
+
+    if se_obj and data.cond then
+
+        local c1 = data.cond[1]
+        local c2 = data.cond[2] or c1
+
+        local value = math.random(c1 * 100, c2 * 100) / 100
+
+        if IsWeapon(se_obj) then
+            local d = utils_stpk.get_weapon_data(se_obj)
+            d.condition = value
+            utils_stpk.set_weapon_data(d, se_obj)
+
+        elseif IsOutfit(se_obj) then
+            local d = utils_stpk.get_item_data(se_obj)
+            d.condition = value
+            utils_stpk.set_item_data(d, se_obj)
+        end
+    end
+end
+
+
+function on_game_load()
+
+    for _, section in pairs(ini_world:get_sections()) do
+
+        if ini_world:r_string_ex(section, "type") == "world" then
+
+            local cond = ini_world:r_string_ex(section, "cond")
+            local cond_t = nil
+
+            if cond then
+                local c = split(cond, ",")
+                cond_t = {
+                    tonumber(c[1]),
+                    tonumber(c[2] or c[1])
+                }
+            end
+
+            spawns.world[#spawns.world + 1] = {
+                item   = ini_world:r_string_ex(section, "item"),
+                pos    = parse_pos(ini_world:r_string_ex(section, "pos")),
+                chance = tonumber(ini_world:r_string_ex(section, "chance")) or 1,
+                cond   = cond_t
+            }
+        end
+    end
+end
+
+
+function actor_on_first_update()
+
+    if spawns.done then return end
+
+    for _, data in ipairs(spawns.world) do
+        spawn_world(data)
+    end
+
+    spawns.done = true
+end
+
+
+function save_state(m_data)
+    m_data.world_spawn_done = spawns.done
+end
+
+function load_state(m_data)
+    spawns.done = m_data.world_spawn_done
+end
+
+function on_game_start()
+    RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+    RegisterScriptCallback("on_game_load", on_game_load)
+    RegisterScriptCallback("save_state", save_state)
+    RegisterScriptCallback("load_state", load_state)
+end
