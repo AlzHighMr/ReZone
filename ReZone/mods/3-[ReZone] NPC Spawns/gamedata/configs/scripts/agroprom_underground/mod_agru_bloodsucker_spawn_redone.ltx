@@ -3,13 +3,13 @@
 active = sr_idle@spawn_snork
 
 [sr_idle@spawn_snork]
-on_game_timer = 5 | sr_idle@wait_actor % =create_squad(simulation_snork:agr_u_bloodsucker)%
+on_game_timer = 5 | sr_idle@wait_actor % =create_squad(simulation_respawn_flying:agr_u_bloodsucker)%
 
 [sr_idle@wait_actor]
 on_actor_in_zone = agru_go_out_zone | sr_idle@spawn_snork_2
 
 [sr_idle@spawn_snork_2] 
-on_info = sr_idle@timer %=create_squad(simulation_snork_2_3:agr_u_bloodsucker_2)%
+on_info = sr_idle@timer %=create_squad(simulation_respawn_underground:agr_u_bloodsucker_2)%
 
 [sr_idle@timer] 
 
