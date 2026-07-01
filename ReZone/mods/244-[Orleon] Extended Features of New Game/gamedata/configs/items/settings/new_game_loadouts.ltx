@@ -1,0 +1,305 @@
+
+;; ===========================< Loadout >=============================
+;; To add items in the item lists:
+;; -------------------------------
+;; add a new line: "item_section			= value_1,value_2,value3" under the correct section below
+;; "item_section": is the section name of the your item. NOTE: don't make lines with the same "item_section", only the last one will be read
+;; "value_1": (boolean  value, must be true or false) determines wether this item should be added to player's inventory list (false) or to the loadout pick list (true)
+;; "value_2": (number) the amount of the said item
+;; "value_3": (number) how many points it requires
+;; "value_4": (number) what progression difficulty is this item locked at (2 means it's available for difficulty 1 and 2) [no value means its available for all difficulties]
+;; ========================================================
+;; put your custom items under "custom" section, they will always appear to pick from
+;; NOTE: you will get a single bolt only no matter how many you put in here, due to technical engine reasons
+
+
+[points] ;aka money
+total_points_eco_1 = 5000
+total_points_eco_2 = 3000
+total_points_eco_3 = 2000
+total_points_eco_4 = 1000
+
+
+	
+;====================================================================
+; SHARED ITEMS
+;====================================================================
+[custom]
+[shared]:custom
+;------------------------------
+; (FREE) 
+;------------------------------
+cash                     = false,1,0
+cigarettes_russian       = false,1,0
+bandage                  = false,4,0
+box_matches              = false,1,0
+device_pda_1             = false,1,0,3
+detector_radio           = false,1,0,3
+detector_geiger          = false,1,0,3
+flask                    = false,1,0,3
+grooming                 = false,1,0,3
+itm_backpack             = false,1,0,3
+itm_actor_backpack       = false,1,0,3
+
+
+;------------------------------
+; (TOOLS)
+;------------------------------
+batteries_dead           = true,1,75,3
+device_glowstick         = true,1,100
+swiss_knife              = true,1,125,3
+cooking                  = true,1,250,3
+device_flashlight        = true,1,500,3
+detector_simple          = true,1,500,3
+cleaning_kit_u           = true,1,2500
+lead_box                 = true,1,500,3
+armor_repair_fa          = true,1,500,3
+;------------------------------
+; (MEDICAL)
+;------------------------------
+medkit                   = true,3,250,3
+antirad                  = true,1,250,3
+drug_anabiotic           = true,1,250,3
+drug_psy_blockade        = true,1,250,3
+drug_sleepingpills       = true,1,250,3
+yadylin                  = true,1,250,3
+akvatab                  = true,1,250,3
+drug_charcoal            = true,1,250,3
+purification_tablet      = true,1,250,3
+
+;------------------------------
+; (FOOD and DRINKS)
+;------------------------------
+vodka                    = true,1,75,3
+energy_drink             = true,1,75,3
+bread                    = true,1,50,3
+kolbasa                  = true,1,50,3
+tushonka                 = true,1,75,3
+;------------------------------
+; (WEAPONS)
+;------------------------------
+wpn_axe                  = true,1,500,3
+wpn_pb                   = true,1,250,4
+wpn_cz52                 = true,1,250,4
+wpn_colt1911_duty        = true,1,500,4
+wpn_mp443                = true,1,500,4
+wpn_mp412                = true,1,500,4
+
+wpn_toz34_obrez          = true,1,500,3
+wpn_toz106_m1            = true,1,750,3
+wpn_toz34                = true,1,750,3
+wpn_ithacam37_stakeout   = true,1,1000,3
+
+wpn_mp5                  = true,1,2500,3
+wpn_kiparis_s            = true,1,1500,3
+
+grenade_web              = true,1,500,3
+
+army_patch               = true,1,250
+bandit_patch             = true,1,250
+dolg_patch               = true,1,250
+ecolog_patch             = true,1,250
+freedom_patch            = true,1,250
+greh_patch               = true,1,250
+isg_patch                = true,1,250
+killer_patch             = true,1,250
+monolith_patch           = true,1,250
+stalker_patch            = true,1,250
+renegade_patch           = true,1,250
+
+;====================================================================
+; LONERS (STALKERS)
+;====================================================================
+[stalker_loadout]:shared
+stalker_patch            = false,1,0
+bolt                     = false,1,0
+wpn_knife                = false,1,0
+helm_resp                = false,1,0
+stalker_outfit           = false,1,0
+
+;====================================================================
+; BANDITS
+;====================================================================
+[bandit_loadout]:shared
+bandit_patch             = false,1,0
+wpn_knife                = false,1,0
+bolt_bullet              = false,1,0
+vodka                    = false,1,0
+helm_cloth_mask          = false,1,0
+trenchcoat_brown_outfit  = false,1,0
+
+
+;====================================================================
+; ECOLOGISTS
+;====================================================================
+[ecolog_loadout]:shared
+ecolog_patch             = false,1,0
+bolt                     = false,1,0
+detector_advanced        = false,1,0
+device_torch_dummy       = false,1,0
+wpn_knife                = false,1,0
+antirad                  = false,1,0
+medkit_scientific        = false,2,0
+lead_box                 = false,1,0,3
+helm_respirator_gp5      = false,1,0
+ecolog_guard_outfit      = false,1,0
+;====================================================================
+; DUTY
+;====================================================================
+[dolg_loadout]:shared
+dolg_patch               = false,1,0
+bolt_bullet              = false,1,0
+helm_resp                = false,1,0
+nbc_dolg_outfit          = false,1,0
+wpn_knife2               = false,1,0
+stimpack                 = false,1,0
+;====================================================================
+; FREEDOM
+;====================================================================
+[freedom_loadout]:shared
+freedom_patch            = false,1,0
+bolt_bullet              = false,1,0
+nbc_freedom_outfit       = false,1,0
+wpn_knife                = false,1,0
+marijuana                = false,1,0
+
+
+;====================================================================
+; MERCENARIES
+;====================================================================
+[killer_loadout]:shared
+killer_patch             = false,1,0
+bolt                     = false,1,0
+helm_rp_bala             = false,1,0
+merc_wolven_outfit       = false,1,0
+wpn_knife                = false,1,0
+
+;====================================================================
+; MILITARY
+;====================================================================
+[army_loadout]:shared
+army_patch               = false,1,0
+bolt_bullet              = false,1,0
+helm_bandana             = false,1,0
+army_outfit              = false,1,0
+af_kevlar                = false,1,0
+;====================================================================
+; MONOLITH
+;====================================================================
+[monolith_loadout]:shared
+monolith_patch           = false,1,0
+bolt                     = false,1,0
+helm_ranger              = false,1,0
+monolith_trenchcoat_outfit = false,1,0
+wpn_knife2               = false,1,0
+
+
+;====================================================================
+; CLEAR SKY
+;====================================================================
+[csky_loadout]:shared
+csky_patch               = false,1,0
+bolt                     = false,1,0
+helm_cloth_mask          = false,1,0
+cs_light_outfit          = false,1,0
+wpn_knife                = false,1,0
+device_torch_dummy       = false,1,0
+af_kevlar                = false,1,0
+;====================================================================
+; RENEGADE
+;====================================================================
+[renegade_loadout]:shared
+renegade_patch           = false,1,0
+bolt_bullet              = false,1,0
+helm_cloth_mask          = false,1,0
+renegademerc_outfit      = false,1,0
+wpn_knife                = false,1,0
+
+;====================================================================
+; SIN
+;====================================================================
+[greh_loadout]:shared
+greh_patch               = false,1,0
+bolt                     = false,1,0
+helm_ranger              = false,1,0
+greh_trenchcoat_outfit   = false,1,0
+wpn_knife                = false,1,0
+hide_pseudodog           = false,1,0
+elixir                   = false,1,0
+
+;====================================================================
+; ISG (UNISG)
+;====================================================================
+[isg_loadout]:shared
+isg_patch                = false,1,0
+bolt_bullet              = false,1,0
+helm_respirator_gp5      = false,1,0
+isg_outfit               = false,1,0
+wpn_knife                = false,1,0
+mre                      = false,1,0
+af_plates                = false,1,0
+
+[zombied_loadout]:shared,stalker_loadout
+
+
+;; ===========================< (AMMO) >=============================
+;-- defined (AMMO) type per weapon here (weapon section = (AMMO) section) - Example: wpn_glock = ammo_9x19_fmj_bad
+;-- when a weapon in this section found in your inventory, you will be given the (AMMO) stated for it
+;-- otherwise, (AMMO) type will be the first one define in weapon's config
+[ammo_type_per_wpn]
+wpn_cz52 = ammo_7.62x25_ps
+wpn_ppsh41_bas = ammo_7.62x25_ps
+wpn_kar98 = ammo_7.62x39_fmj
+wpn_toz106_m1 = ammo_20x70_buck
+
+;-- define (AMMO) count per (AMMO) section (section = count) here - Example: ammo_9x19_fmj_bad = 60
+;-- When an (AMMO) type is picked for a weapon in your inventory, it will be given to player by the count defined here
+;-- otherwise, (AMMO)'s count will be a full box size
+[ammo_count]
+ammo_9x18_fmj = 60
+ammo_9x19_fmj = 60
+ammo_7.62x25_ps = 60
+ammo_11.43x23_fmj = 20
+ammo_12x70_buck = 20
+ammo_7.92x33_fmj = 20
+ammo_357_hp_mag = 30
+ammo_20x70_buck = 40
+;; ===========================< (Unused!)Money >=============================
+;[stalker_money]
+;money = 1000
+
+;[bandit_money]
+;money = 1000
+
+;[ecolog_money]
+;money = 1600
+
+;[dolg_money]
+;money = 1400
+
+;[freedom_money]
+;money = 1400
+
+;[killer_money]
+;money = 2000
+
+;[army_money]
+;money = 1200
+
+;[monolith_money]
+;money = 1600
+
+;[csky_money]
+;money = 1400
+
+;[renegade_money]
+;money = 800
+
+;[greh_money]
+;money = 0
+
+;[isg_money]
+;money = 3000
+
+;[zombied_money]
+;money = 1000
