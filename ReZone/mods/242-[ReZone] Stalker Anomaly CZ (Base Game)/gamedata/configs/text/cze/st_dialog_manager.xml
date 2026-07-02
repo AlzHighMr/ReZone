@@ -10,56 +10,55 @@
 <
 <===========================================================-->
 
-
-
 <string_table>
+<!-- Hráè: Setkání s šéfem poté, co ho poslal jinı šéf. -->
+<string id="st_drx_sl_meet_honcho">
+	<text>Jsem tu kvùli práci.</text>
+</string>
 
-	<!-- Hráè:  Setkání s šéfem poté, co ho poslal jinı šéf.: -->
-	<string id="st_drx_sl_meet_honcho">
-		<text>Pøišel jsem za tebou.</text>
-	</string>
+<!-- Hráè: Pøijímá dìjovı úkol od šéfa -->
+<string id="st_drx_sl_accept_task">
+	<text>Beru to.</text>
+</string>
 
-	<!-- Hráè: Pøijímá dìjovı úkol od šéfa: -->
-	<string id="st_drx_sl_accept_task">
-		<text>Dobøe.</text>
-	</string>
+<!-- Šéf: Potvrzení pøijetí úkolu -->
+<string id="st_drx_sl_task_accepted">
+	<text>Dobøe, stalkere.</text>
+</string>
 
-	<!-- Šef: Potvrzení pøijetí úkolu: -->
-	<string id="st_drx_sl_task_accepted">
-		<text>Dobøe stalkere.</text>
-	</string>
+<!-- Hráè: Listy honoráøe -->
+<string id="st_drx_sl_actor_exit">
+	<text>Díky.</text>
+</string>
 
-	<!-- Hráè:  Listy honoráøe: -->
-	<string id="st_drx_sl_actor_exit">
-		<text>Díky.</text>
-	</string>
-
-	<!-- VİCHOZÍ TEXT NA KONCI HRY: -->
-	<string id="drx_sl_default_endgame">
-		<text>Plniè pøání tì volá a tvùj èas se blíí ke konci. Jdi za ním a dostaneš, co si zaslouíš.</text>
-	</string>
+<!-- VİCHOZÍ TEXT NA KONCI HRY -->
+<string id="drx_sl_default_endgame">
+	<text>Plniè pøání tì volá. Tvoje cesta se blíí ke konci. Jdi za ním a dostaneš, co si zaslouíš.</text>
+</string>
 
 
 	<!-- ============================================================================================================-->
 	<!--               SIDOROVIÈ START/KONEC                                                                         -->
 	<!-- ============================================================================================================-->
 	<string id="drx_sl_start_msg_stalker">
-		<text>Stalkere, mám pøipravenou zajímavou práci, na kterou bys ses mohl chtít podívat. Máš zájem o dobrodruství? O slávu? O peníze? Pøijï ke mnì do vesnice nováèkù a pokecáme si.</text>
-	</string>
-	
-	<string id="sidorovich_questlines_about_dialog_0">
-		<text>Slyšel jsem, e slibuješ dobrodruství, slávu a peníze. Pomùeš mi najít Plniè pøání?</text>
-	</string>
-	<string id="sidorovich_questlines_about_dialog_1">
-		<text>Jistì, snadno, je to nahoøe v Èernobylu. Další autobus jede za dvacet minut, hehe...\nPoslouchej stalkere, u mnoho lidí pøed tebou sem pøišlo hledat Plniè pøání. Víš, co mají dnes všichni spoleèného? Všichni jsou potravou pro èervy... moná kromì Støelce. V kadém pøípadì je Plniè pøání jen legenda, mıtus. Ale peníze, které nabízím, jsou skuteèné. Pracuj tvrdì, hraj chytøe a zbohatneš raz dva.</text>
-	</string>
-	
-	<string id="drx_sl_esc_m_trader_game_start_dialog_1_0">
-		<text>Jak tedy zbohatnout?</text>
-	</string>
-	<string id="drx_sl_esc_m_trader_game_start_dialog_1_1">
-		<text>Tady mi dej své PDA...tam. Pokud nìkdy zjistíš, e máš problém s prací, nebo si jen chceš trochu pøivydìlat, zajdi za tìmito kontakty. Jsou dobøe placené a cestou získáš dobré kontakty. Je to poctivá práce, nebo alespoò tak poctivá, jak jen to v Zónì jde. Nezklam mì.</text>
-	</string>
+	<text>Stalkere, mám pro tebe práci. Zajímavou. Nebudeš se nudit – a moná si i vydìláš. Pøijï do vesnice nováèkù, kdy budeš chtít poslouchat.</text>
+</string>
+
+<string id="sidorovich_questlines_about_dialog_0">
+	<text>Slyšel jsem, e mluvíš o slávì, penìzích a Plnièi pøání. Tak co, jdeš ho hledat?</text>
+</string>
+
+<string id="sidorovich_questlines_about_dialog_1">
+	<text>Jasnì. Rovnou do Èernobylu, e? Autobus jede za dvacet minut...\n\nPoslouchej, stalkere. Spousta lidí ho hledala. Všichni skonèili stejnì – v zemi. Moná kromì Støelce. Plniè pøání? Legenda. Pohádka pro zelenáèe. Ale peníze, co nabízím já, jsou skuteènı. Pracuj, pøeij a moná si vydìláš víc ne ostatní.</text>
+</string>
+
+<string id="drx_sl_esc_m_trader_game_start_dialog_1_0">
+	<text>Jak se tu dá vydìlat?</text>
+</string>
+
+<string id="drx_sl_esc_m_trader_game_start_dialog_1_1">
+	<text>Dej mi své PDA.\n\nKdy nebudeš mít práci, nebo budeš chtít víc prachù, zajdi za kontakty, co ti dám. Nejsou špatnì placené a dostaneš se k lepším kšeftùm. Je to jednoduchı: práce, prachy, pøeití. Ale nezklam mì.</text>
+</string>
 	
 
 	<!-- Sidoroviè Pøíbìh 1 KONEC -->
@@ -73,27 +72,28 @@
 
 
 	<string id="drx_sl_start_msg_dolg">
-		<text>Dùleitı úkol je k dispozici. Potøebuji stateèné dobrovolníky, kteøí se budou hlásit u plukovníka Petøenka a dostanou další rozkazy.</text>
-	</string>
-	
-	<string id="petrenko_questlines_about_dialog_0">
-		<text>Pøipraven a schopen, pane. Jaké jsou vaše rozkazy?</text>
-	</string>
-	<string id="petrenko_questlines_about_dialog_1">
-		<text>Souèasné priority Povinnosti jsou dvojího druhu. Zaprvé potøebujeme dobrovolníky, kteøí by splnili seznam dùleitıch úkolù a splnili naši povinnost pomáhat tìm, kteøí s naší pomocí poèítají. Za druhé máme dùvod se domnívat, e se vrátil vlivnı Stalker, a generál chce, aby ho odvání mui vypátrali. O první prioritì si mùete promluvit se mnou a o druhé s generálem Voroninem.</text>
-	</string>
-	
-	<string id="drx_sl_bar_dolg_general_petrenko_stalker_game_start_dialog_1_0">
-		<text>Jsem pøipraven pomoci splatit Povinnosti dluh. Kdo potøebuje naši pomoc?</text>
-	</string>
-	<string id="drx_sl_bar_dolg_general_petrenko_stalker_game_start_dialog_1_1">
-    <text>Pøenesu všechny dùleité informace do tvého PDA. Máš naši dùvìru, vojáku. Vzal jsi na svá bedra velkou odpovìdnost. Nes ji dobøe.</text>
-	</string>
+	<text>Je k dispozici dùleitı úkol. Hledáme dobrovolníky. Hlaste se u plukovníka Petrenka pro další rozkazy.</text>
+</string>
 
->
-	<string id="drx_sl_bar_dolg_general_petrenko_stalker_start_game_1_endgame_1">
-<text>Tvé vytrvalé plnìní povinností je obdivuhodné. Nicménì i kdy se nám daøí zastavit pøíliv hrùz Zóny, stále jsme ještì daleko od toho, abychom ji nechali nadobro zmizet. Prozatím pokraèuj v ochranì nevinnıch pøed Zónou, jak uznáš za vhodné. Vìøím, e a se naskytne pøíleitost Zónu zcela znièit, nebudeš váhat a rozhodneš se správnì.</text>
-	</string>
+<string id="petrenko_questlines_about_dialog_0">
+	<text>Jsem pøipraven, pane. Jaké jsou rozkazy?</text>
+</string>
+
+<string id="petrenko_questlines_about_dialog_1">
+	<text>Priority Povinnosti jsou jasné. Zaprvé plníme úkoly na podporu tìch, kteøí na nás spoléhají. Zadruhé sledujeme návrat jednoho vlivného stalkera – generál Voronin chce jeho dopadení. Detaily první linie u mì, druhé u generála.</text>
+</string>
+
+<string id="drx_sl_bar_dolg_general_petrenko_stalker_game_start_dialog_1_0">
+	<text>Jsem pøipraven splnit povinnost. Jakı je úkol?</text>
+</string>
+
+<string id="drx_sl_bar_dolg_general_petrenko_stalker_game_start_dialog_1_1">
+	<text>Data budou nahrána do tvého PDA. Máš dùvìru Povinnosti, vojáku. Tohle je odpovìdnost – nezklam ji.</text>
+</string>
+
+<string id="drx_sl_bar_dolg_general_petrenko_stalker_start_game_1_endgame_1">
+	<text>Tvé plnìní povinností je uspokojivé. Ale boj proti Zónì zdaleka nekonèí. Nadále plò úkoly a chraò civilisty pøed jejími hrozbami. A pøijde monost Zónu skuteènì zasáhnout, Povinnost bude pøipravena.</text>
+</string>
 
 	<!-- ============================================================================================================-->
 	<!--                LUKÁŠ START/KONEC                                                                            -->
@@ -182,27 +182,24 @@
 	<!-- ============================================================================================================-->
 	
 
-	<string id="drx_sl_start_msg_killer">
-		<text>Vıznamnı zamìstnavatel nabízí novou smlouvu. Peníze jsou dobré, to je vše, co zatím potøebuješ vìdìt. Pøijï na základnu v Mrtvém mìstì.. Další podrobnosti se dozvíš po setkání.</text>
-	</string>
-	
-	<string id="dushman_questlines_about_dialog_0">
-		<text>Pøijal jsem tvoji zprávu, mùeš mì informovat o aktuální situaci?</text>
-	</string>
-	<string id="dushman_questlines_about_dialog_1">
-		<text>Nová zakázka je k dispozici u vıznamného zamìstnavatele. Naši agenti také hlásí, e se znovu objevil nechvalnì známı stalker jménem Støelok, a já potøebuji nìkoho, kdo se vydá po jeho stopách. Oba úkoly budou velmi dobøe placené.</text>
-	</string>
-	
-	<string id="drx_sl_cit_killers_merc_trader_stalker_game_start_dialog_1_0">
-    <text>Tak co mi mùeš øíct o našem zamìstnavateli?</text>
-	</string>
-	<string id="drx_sl_cit_killers_merc_trader_stalker_game_start_dialog_1_1">
-		<text> Ani já ti nedokáu pøesnì øíct, kdo, co nebo kde jsou. Jen to, e mají peníze, a to hodnì. Bez ohledu na to nás tento zamìstnavatel poádal, abychom vykonali slubu pro seznam "zainteresovanıch stran". Tvé PDA bude podle potøeby aktualizováno o jejich údaje. Zùstaò v klidu a hlídej si tam záda - Zóna je moná nesmírnì lukrativní, ale je to také peklo a nic z toho, co jsem zatím vidìl, mì nepøesvìdèilo o opaku.</text>
-	</string>
-
-	<string id="drx_sl_cit_killers_merc_trader_stalker_start_game_1_endgame_1">
-		<text>Dìkuji. Poslyš, mám pro tebe vzkaz. Pochází pøímo od tvého zamìstnavatele. Zdá se, e jsi na nìj udìlal velkı dojem. Má pro tebe a pouze pro tebe zvláštní úkol. Musíš najít nìjakı Plniè pøání. Jakmile se ti to podaøí, musíš vyslovit následující vìtu: "princeps magis opulentus". Udìlej pøesnì tuto vìc a tvùj princ tì bohatì odmìní.</text>
-	</string>
+<string id="drx_sl_start_msg_killer">
+	<text>Máme nabídku od vıznamného klienta. Peníze jsou dobré – to je vše, co potøebuješ vìdìt. Dostav se do Mrtvého mìsta. Detaily na místì.</text>
+</string>
+<string id="dushman_questlines_about_dialog_0">
+	<text>Zprávu jsem pøijal. Jaká je aktuální situace?</text>
+</string>
+<string id="dushman_questlines_about_dialog_1">
+	<text>Novı kontrakt od našeho klienta je pøipraven. Zároveò se objevily zprávy o návratu Støelce. Chci nìkoho, kdo ovìøí jeho stopu. Obì zakázky jsou nadstandardnì placené.</text>
+</string>
+<string id="drx_sl_cit_killers_merc_trader_stalker_game_start_dialog_1_0">
+	<text>Co víš o našem klientovi?</text>
+</string>
+<string id="drx_sl_cit_killers_merc_trader_stalker_game_start_dialog_1_1">
+	<text>Ne mnoho. Ani já pøesnì nevím, kdo stojí za tímhle financováním. Ale platí vèas a dobøe. Naše úkoly pøicházejí skrze jejich seznam „zájmù“. Tvé PDA bude aktualizováno podle potøeby. Zóna je vınosná – ale poøád stejnì smrtelná jako vdy. Nezapomínej na to.</text>
+</string>
+<string id="drx_sl_cit_killers_merc_trader_stalker_start_game_1_endgame_1">
+	<text>Mám pro tebe zprávu od klienta. Zdá se, e jsi na nìj udìlal dojem. Nabízí ti speciální zakázku – osobní. Plniè pøání. Pokud ho najdeš, musíš zopakovat frázi: „princeps magis opulentus“. Pak údajnì dostaneš svou odmìnu.</text>
+</string>
 
 
 	<!-- ============================================================================================================-->
@@ -213,14 +210,12 @@
 	<string id="drx_sl_start_msg_army">
 		<text>Vojáci, obdreli jsme dùleité informace od SSU. Všichni Armádní stalkeøi se mají okamitì hlásit na velitelství, aby jim bylo pøidìleno jejich pøidìlení.</text>
 	</string>
-	
 	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_game_start_dialog_1_0">
 		<text>Hlásím se do sluby, pane.</text>
 	</string>
 	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_game_start_dialog_1_1">
 		<text>Vítejte v pekle, vojáku. Poslouchej mì a zùstaneš naivu. Mìj hlavu na šopkách. Jak u bys mìl vìdìt, všichni a všechno tam venku se tì snaí zabít. Nikomu nevìø. Bìhem operací se k vám nesmí pøiblíit ádnı nepovolanı personál. Pokud nedokáete identifikovat, kdo pøichází, nejdøíve støílejte a potom se ptejte. Vaše sluba vás zavede do celé Zóny a vìtšinou vám nikdo nepomùe.\n\nMusíte se spolehnout na svùj vıcvik pøeití, abyste zùstali naivu a splnili své úkoly jakımikoliv prostøedky. Setkejte se s kontakty nahranımi ve vašem PDA a oni vám dají rozkazy. Staèí splnit úkoly, udret srdce v chodu a mùete se vrátit domù s tuènım balíkem penìz v kapse. Jste propuštìni.</text>
 	</string>
-
 	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_start_game_1_endgame_1">
 		<text>Dìkuji, vojáku. Udìlal jsi pro mì dobøe, teï udìlám nìco já pro tebe, i kdy to moná nebudeš chtít slyšet. Oèekáváš, e se odsud brzy vystøídáš, e? Obávám se, e nejvyšší velení má jiné pøedstavy. Kordon se uzavøel a byl uzamèen, nic a nikdo se u nemùe dostat do Zóny ani z ní ven, vèetnì vojákù. Nechali tì tu zemøít, a dokonce i tvoje mrtvola bude ponechána jako potrava pro èervy. Nemùeš utéct ani v pytli na mrtvoly. Pokud si však troufáš, není pro tebe všechna nadìje ztracena. Zbıvá ti jen jedna cesta, jak se odsud dostat, a ta leí v Èernobylu. Hluboko uvnitø jaderné elektrárny je pohøbenı Plniè pøání. Pokud ho najdeš a pøeiješ, mùeš ho pouít a pøát si cestu ven. Je to tvá jediná nadìje, vojáku. Hodnì štìstí.</text>
 	</string>
@@ -273,7 +268,7 @@
 	<!-- ============================================================================================================-->
 
 	<string id="drx_sl_start_msg_greh">
-		<text>Èernobog promluvil. Je èas nechat tento svìt osvítit. Vrate se ke mnì, bratøi. Budu vás informovat o vašich úkolech.</text>
+		<text>Chernobog promluvil. Je èas nechat tento svìt osvítit. Vrate se ke mnì, bratøi. Budu vás informovat o vašich úkolech.</text>
 	</string>
 	
 	<string id="drx_sl_red_greh_trader_game_start_dialog_1_0">

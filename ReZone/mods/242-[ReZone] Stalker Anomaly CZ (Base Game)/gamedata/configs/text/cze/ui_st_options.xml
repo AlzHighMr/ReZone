@@ -12,13 +12,14 @@
 		<text>Originální hry</text>
 	</string>
 <string id="ui_mm_disclaimer">
-    <text>S.T.A.L.K.E.R.: Anomaly je fanouškovská modifikace pro hry S.T.A.L.K.E.R. od GSC Game World.\nS.T.A.L.K.E.R.: Anomaly není oficiálním produktem GSC Game World a je odvozeným dílem založeném na jejich pùvodních hrách S.T.A.L.K.E.R.</text>
+    <text>S.T.A.L.K.E.R.: Anomaly Re:Zone je fanouškovská modifikace pro hry S.T.A.L.K.E.R. od GSC Game World.
+	 \nS.T.A.L.K.E.R.: Anomaly není oficiálním produktem GSC Game World a je odvozeným dílem založeném na jejich pùvodních hrách S.T.A.L.K.E.R.</text>
 </string>
 
 
 	
 <!-- Options menu -->
-	<string id="ui_mm_menu_video">
+<string id="ui_mm_menu_video">
 		<text>Video</text>
 	</string>
 		
@@ -68,7 +69,7 @@
 	<text>Obtížnost hry</text>
 </string>
 <string id="ui_mm_menu_disguise">
-	<text>Maskování</text>
+	<text>Pøevlek za jinou frakci</text>
 </string>
 <string id="ui_mm_menu_fast_travel">
 	<text>Rychlé cestování</text>
@@ -455,10 +456,10 @@
 	<text>Základní intenzita sluneèních paprskù</text>
 </string>
 <string id="ui_mm_video_advanced_ssao_mode">
-	<text>Režim SSAO (Nezapínat dùvod : Øìší to addon SSS)</text>
+	<text>Režim SSAO</text>
 </string>
 <string id="ui_mm_video_advanced_ssao">
-	<text>SSAO kvalita (Nezapínat dùvod : Øìší to addon SSS)</text>
+	<text>SSAO kvalita</text>
 </string>
 <string id="ui_mm_video_advanced_volumetric_lights">
 	<text>Volumetrické svìtlo</text>
@@ -542,7 +543,7 @@
 	<text>Zobrazit Minimapu</text>
 </string>
 <string id="ui_mm_video_hud_show_enemy_health">
-	<text>Zobrazit zdraví nepøítele</text>
+	<text>Zobrazit zdraví nepøátel (Nestabilní)</text>
 </string>
 <string id="ui_mm_video_hud_show_identity">
 	<text>Zobrazit identifikaci NPC</text>
@@ -601,7 +602,7 @@
 	<text>Èástice prachu</text>
 </string>
 <string id="ui_mm_video_player_fog_pfx">
-	<text>Dynamická mlha dýchání</text>
+	<text>Efekt dýchaní</text>
 </string>
 <string id="ui_mm_video_player_rain_droplets">
 	<text>Kapky deštì</text>
