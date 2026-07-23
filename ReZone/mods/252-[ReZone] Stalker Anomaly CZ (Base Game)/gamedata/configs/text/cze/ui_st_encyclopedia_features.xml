@@ -165,11 +165,11 @@
 </string>
 
 <string id="encyclopedia_features_map_spots">
-	<text>Mapa spotù</text>
+	<text>Znaèky na mapì</text>
 </string>
 <string id="encyclopedia_features_map_spots_text">
 	<text>
-		%c[pda_white]Map spoty%c[ui_gray_1] jsou ikony, které se zobrazují na mapì a upozoròují na body zvláštního zájmu.\n
+		%c[pda_white]Znaèky na mapì%c[ui_gray_1] jsou ikony, které se zobrazují na mapì a upozoròují na body zvláštního zájmu.\n
 		\n%c[pda_green]Informace%c[ui_gray_1]
 		\nK mnoha místùm a entitám jsou pøiøazeny mapové body, které usnadòují ètení mapy na první pohled, aniz byste si museli pamatovat spoustu informací.\n
 		\n%c[pda_blue]Toggles%c[ui_gray_1]
@@ -237,7 +237,7 @@ tlaèítkem myši a výbìrem pøíslušné možnosti na libovolném batohu v inventáøi.\n
     <text>
         %c[pda_white]Mechanická dílna%c[ui_gray_1] umožòuje hráèi opravovat/vylepšovat a vyrábìt vybavení vlastními silami.
         \n \n%c[pda_green]Informace%c[ui_gray_1]
-        \nKaždý mechanik v Zónì používá svou dílnu/slžbu pro øádné opravy a vylepšení. Nìkteøí zkušení stopaøi si takové práce radìji dìlají sami. Proto si mnozí dílnu od jejího majitele doèasnì pronajímají, aby si mohli vylepšit vlastní vybavení. A vy nejste výjimkou.
+        \nKaždý mechanik v Zónì používá svou dílnu/slžbu pro øádné opravy a vylepšení. Nìkteøí zkušení stalkeøi si takové práce radìji dìlají sami. Proto si mnozí dílnu od jejího majitele doèasnì pronajímají, aby si mohli vylepšit vlastní vybavení. A vy nejste výjimkou.
         \nDíky nezabydlené dílnì a vhodnému náøadí mùžete provádìt následující èinnosti:
         \n%c[pda_white]- Opravy (výmìna dílù): %c[ui_gray_1]Každá zbraò nebo výstroj se skládá ze specifických dílù a souèástí. Když se poškodí, mùžete pomocí protìjšku nahradit staré, poškozené a zlepšit tak stav svého vybavení.
         \n%c[pda_white]- Vylepšování: %c[ui_gray_1]Správnými nástroji mùžete instalovat vylepšení svého vybavení a zlepšit jeho stav.
@@ -255,9 +255,7 @@ tlaèítkem myši a výbìrem pøíslušné možnosti na libovolném batohu v inventáøi.\n
         %c[pda_white]Mechanická dílna%c[ui_gray_1] mùže být použita k opravì poškozené zbranì nebo výstroje nahrazením poškozených dílù protìjškem v lepším stavu.
         \n \n%c[pda_green]Informace%c[ui_gray_1]
         \nKaždá zbraò nebo výstroj se skládá ze sady souèástek/dílù. Celkový stav vybavení se sèítá podle stavu jeho jednotlivých èástí.
-        \nDíly mají obecnì 4 stavy stavu:
-        \n- Stav souèásti zbranì od nejhoršího po nejlepší: %c[d_red]Deformovaný%c[ui_gray_1], %c[d_orange]Poškozený%c[ui_gray_1], %c[0,250,250,0]Poškrábaný%c[ui_gray_1], %c[d_green]Funkèní%c[ui_gray_1].
-        \n- Stav èásti výstroje od nejhoršího po nejlepší: %c[d_red]Potrhaný%c[ui_gray_1], %c[d_orange]Poškozený%c[ui_gray_1], %c[0,250,250,0]Poškrábaný%c[ui_gray_1], %c[d_green]Èistý%c[ui_gray_1].
+        \nDíly mají obecnì 4 stavy stavu.
         \n\nChcete-li opravit zaøízení, musíte mít k dispozici následující položky:
         \n %c[pda_white]- Vhodnou sadu nástrojù pro opravu%c[ui_gray_1] (záleží na zbrani/výstroji, kterou se snažíte opravit): tyto sady prodávají pøímo mechanici.
         \n %c[pda_white]- Identické protìjšky s lepším stavem%c[ui_gray_1], než mají vaše vybavení. Ty lze získat rozebráním zbraní a výstroje.
@@ -269,7 +267,7 @@ tlaèítkem myši a výbìrem pøíslušné možnosti na libovolném batohu v inventáøi.\n
         \n5- Když jste koneènì hotovi, stisknìte tlaèítko "Opravit".
         \n \n%c[pda_yellow]Notes:%c[ui_gray_1]
         \n- Šedé souèástky znamenají, že v inventáøi nemáte náhradní protìjšky v lepším stavu, a proto s nimi nemùžete pracovat.
-        \n- Pokud máte protìjšky, které mùžete použít pøi výmìnì dílù vybavení, ale jejich stav není dostateèný, mùžete pøed použitím dílny použít k opravì tìchto dílù nejprve specifické sady nástrojù, jako napø.: %c[pda_white]Multitool, Pilník, Beranidlo, Základní šicí nit, Sada polní zbroje s kevlarovou nití%c[ui_gray_1].
+        \n- Pokud máte protìjšky, které mùžete použít pøi výmìnì dílù vybavení, ale jejich stav není dostateèný, mùžete pøed použitím dílny použít k opravì tìchto dílù nejprve specifické sady nástrojù, jako napø.: %c[pda_white]Víceúèelový nástroj, Pilník, Základní šicí nit, Sada na opravu zbroje s kevlarovou nití%c[ui_gray_1].
         \n- Každá výmìna dílu vyžaduje jedno použití vhodné opraváøské sady.
     </text>
 </string>

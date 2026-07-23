@@ -1,97 +1,93 @@
 <?xml version="1.0" encoding="windows-1250"?>
-	<string id="ui_mcm_menu_21_game">
-		<text>Blackjack</text>
-	</string>
-	
-	<string id="ui_mcm_21_game_card_game_21_minimum_rate">
-		<text>Nastavení minimální sázky</text>
-	</string>
-	
-	<string id="ui_mcm_21_game_value_card_21_max_rate">
-		<text>Nastavení maximální sázky</text>
-	</string>	
-	
-	
-<string id="st_unique_treasure_spot_descr">
-    <text>Skrýš. Přístupový kód</text>
+<string id="ui_mcm_menu_21_game">
+	<text>Blackjack</text>
 </string>
-<string id="st_question_game_reward_advice">
-    <text>Získané rady:</text>
+
+<string id="ui_mcm_21_game_card_game_21_minimum_rate">
+	<text>Minimální sázka</text>
 </string>
-<string id="st_question_game_reward_money">
-    <text>Dodatečně získané peníze:</text>
+
+<string id="ui_mcm_21_game_value_card_21_max_rate">
+	<text>Maximální sázka</text>
 </string>
-<string id="st_remote_charge_delay_deactivated">
-    <text>Časovač: vypnutý</text>
-</string>
-<string id="st_remote_charge_delay_timer">
-    <text>Časovač:</text>
-</string>
-<string id="st_remote_charge_delay_value">
-    <text>sek.</text>
-</string>
-<string id="st_remote_charge_spot">
-    <text>Nabíjecí RS-15</text>
-</string>
+
+
 <string id="st_21_point_your_card_value">
-    <text>Ty:</text>
+	<text>Ty:</text>
 </string>
+
 <string id="st_21_point_enemy_card_value">
-    <text>Protivník:</text>
+	<text>Soupeř:</text>
 </string>
+
 <string id="st_21_point_rate_field">
-    <text>Tvá sázka na výhru:</text>
+	<text>Tvoje sázka:</text>
 </string>
+
 <string id="st_21_point_infoline_1">
-    <text>V peněžence:</text>
+	<text>Hotovost:</text>
 </string>
+
 <string id="st_21_point_infoline_2">
-    <text>Minimální sázka - 50, maximální sázka -</text>
+	<text>Minimální sázka - 50, maximální sázka -</text>
 </string>
+
 <string id="st_21_point_money">
-    <text>rublů.</text>
+	<text>rublů</text>
 </string>
+
 <string id="st_21_point_info_about_your">
-    <text>Degtyarev: hodnocení</text>
+	<text>Degtyarev: hodnocení</text>
 </string>
+
 <string id="st_21_point_info_about_enemy">
-    <text>: hodnocení</text>
+	<text>: hodnocení</text>
 </string>
+
 <string id="st_21_point_web_money">
-    <text>elektronické rubly.</text>
+	<text>elektronické rubly</text>
 </string>
+
 <string id="st_21_point_winner_your_1">
-    <text>Vyhrál jsi. Výhra činila -</text>
+	<text>Vyhrál jsi! Výhra:</text>
 </string>
+
 <string id="st_21_point_winner_your_2">
-    <text>rublů. Celkový počet bodů: ty -</text>
+	<text>rublů. Výsledné skóre: ty -</text>
 </string>
+
 <string id="st_21_point_winner_your_3">
-    <text>, protivník -</text>
+	<text>, soupeř -</text>
 </string>
+
 <string id="st_21_point_winner_enemy_1">
-    <text>Prohrál jsi. Ztráta činila -</text>
+	<text>Prohrál jsi! Prohraná částka:</text>
 </string>
+
 <string id="st_21_point_winner_enemy_2">
-    <text>rublů. Celkový počet bodů: ty -</text>
+	<text>rublů. Výsledné skóre: ty -</text>
 </string>
+
 <string id="st_21_point_winner_enemy_3">
-    <text>, protivník -</text>
+	<text>, soupeř -</text>
 </string>
+
 <string id="st_21_point_winner_equally_1">
-    <text>Přátelství vyhrálo. Celkový počet bodů: ty -</text>
+	<text>Remíza! Výsledné skóre: ty -</text>
 </string>
+
 <string id="st_21_point_winner_equally_2">
-    <text>, protivník -</text>
+	<text>, soupeř -</text>
 </string>
+
 <string id="st_help_wounded_payment">
-    <text>Obdrželi jste peníze za záchranu</text>
+    <text>Obdržel jsi odměnu za záchranu</text>
 </string>
 <string id="st_mechanic_stripping_count">
-    <text>Počet krabic s díly</text>
+    <text>Počet beden s díly</text>
 </string>
 <string id="st_rank_event_present">
-    <text>Byl povýšen rank</text>
+    <text>Hodnost zvýšena</text>
 </string>
 <string id="st_bankir_web_money_course_1">
     <text>Kurz:</text>
@@ -100,177 +96,186 @@
     <text>Tvé elektronické peníze:</text>
 </string>
 <string id="st_bankir_web_money_course_3">
-    <text>1 elektronický rubl -</text>
+    <text>1 elektronický rubl =</text>
 </string>
 <string id="st_bankir_web_money_course_4">
-    <text>kopějky v hotovostních rublech.</text>
+    <text>kopějek v hotovosti.</text>
 </string>
 <string id="st_bankir_web_money_course_5">
-    <text>rublů.</text>
+    <text>rublů</text>
 </string>
 <string id="st_event_headshot">
-    <text>Získal jsi zásah do hlavy</text>
+    <text>Zásah do hlavy</text>
 </string>
 <string id="st_event_iam_find">
     <text>Nalezl jsi</text>
 </string>
 <string id="st_event_find_secret">
-    <text>-tou SGM skrýš.</text>
+    <text>-tou skrýš SGM</text>
 </string>
 <string id="st_event_find_deserve">
-    <text>-tou osobní skrýš.</text>
+    <text>-tou osobní skrýš</text>
 </string>
 <string id="st_custom_goods_need_rank">
-    <text>Požadovaný rank:</text>
+    <text>Požadovaná hodnost:</text>
 </string>
 <string id="st_booty_count">
     <text>Počet trofejí</text>
 </string>
 <string id="st_booty_costs">
-    <text>Za částku:</text>
+    <text>Hodnota:</text>
 </string>
 <string id="st_add_damage">
-    <text>přidat poškození</text>
+    <text>Přidat poškození</text>
 </string>
 <string id="st_booty_shtuk">
-    <text>kusů.</text>
+    <text>ks</text>
 </string>
 <string id="st_need_rank">
-    <text>Požadovaný rank >=</text>
+    <text>Požadovaná hodnost >=</text>
 </string>
 <string id="st_currert_rank">
-    <text>Aktuální rank:</text>
+    <text>Aktuální hodnost:</text>
 </string>
 <string id="st_af_type_1">
-    <text>Podporuje: 1. typ anomálie</text>
+    <text>Podporuje: 1. typ anomálií</text>
 </string>
 <string id="st_af_type_2">
-    <text>Podporuje: 2. typ anomálie</text>
+    <text>Podporuje: 2. typ anomálií</text>
 </string>
 <string id="st_af_type_3">
-    <text>Podporuje: 3. typ anomálie</text>
+    <text>Podporuje: 3. typ anomálií</text>
 </string>
 <string id="st_af_type_all">
-    <text>Podporuje: 1., 2. a 3. typ anomálií</text>
+    <text>Podporuje: 1., 2. i 3. typ anomálií</text>
 </string>
 <string id="st_bodyguard_price">
-    <text>Náklady na službu:</text>
+    <text>Cena služby:</text>
 </string>
 <string id="st_bankir_deposit_title">
-    <text>Částka vkladu: </text>
+    <text>Výše vkladu:</text>
 </string>
 	<string id="st_bankir_percent_title">
-		<text>Výnosy z vkladů: </text>
-	</string>
-	<string id="st_bankir_money">
-		<text>V peněžence =</text>
-	</string>
-	<string id="st_bankir_counter">
-		<text>Na spořicím účtu :</text>
-	</string>
-	<string id="st_bankir_counter2">
-		<text>Vkladový účet :</text>
-	</string>
-	<string id="st_bankir_ru">
-<text>rubly</text>
-	</string>
-	<string id="st_bankir_last">
-		<text>Poslední vložený kapitál :</text>
-	</string>
-	<string id="st_bankir_result">
-		<text>Celkem =</text>
-	</string>
-	<string id="st_bankir_percent">
-		<text>Celkové procento zítra :</text>
-	</string>
-	<string id="st_bankir_procenta_dnes">
-		<text>Celkové procento dnes :</text>
-	</string>
-	<string id="st_trader_order_count">
-		<text>Položky na skladě: </text>
-	</string>
-	<string id="st_order_cost">
-		<text>Cena objednávky:</text>
-	</string>
-	<string id="st_statistic_value_of">
-		<text>od</text>
-	</string>
-	<string id="st_weapon_damage">
-		<text>Způsobené poškození </text>
-	</string>
-	<string id="st_weapon_distance">
-		<text>Dosah </text>
-	</string>
-	<string id="st_detonation_radius">
-<text>Rádius výbuchu </text>
-	</string>
-	<string id="st_detonation_scraps">
-		<text>Rozptyl fragmentů </text>
-	</string>
-	<string id="st_def_meters">
-		<text>m</text>
-	</string>
-	<string id="st_detonation_time">
-		<text>Čas akce </text>
-	</string>
+	<text>Úrok z vkladu:</text>
+</string>
+<string id="st_bankir_money">
+	<text>Hotovost =</text>
+</string>
+<string id="st_bankir_counter">
+	<text>Na účtu:</text>
+</string>
+<string id="st_bankir_counter2">
+	<text>Vklad:</text>
+</string>
+<string id="st_bankir_ru">
+	<text>rublů</text>
+</string>
+<string id="st_bankir_last">
+	<text>Poslední vklad:</text>
+</string>
+<string id="st_bankir_result">
+	<text>Celkem =</text>
+</string>
+<string id="st_bankir_percent">
+	<text>Celkový úrok zítra:</text>
+</string>
+<string id="st_bankir_procenta_dnes">
+	<text>Celkový úrok dnes:</text>
+</string>
 
-	<string id="st_def_second">
-		<text>ń</text>
-	</string>
-	<string id="st_actor_box_currert_weight">
-		<text>Množství věcí v osobním boxu je =</text>
-	</string>
-	<string id="st_actor_box_currert_mass">
-		<text>Objem =</text>
-	</string>
-	<string id="st_actor_box_transportation_cost">
-		<text>|náklady =</text>
-	</string>
-	<string id="st_mod_verze_název">
-		<text>Verze</text>
-	</string>
-	<string id="st_sigerous_mod_successfully_started">
-		<text>Sigerous Mod se úspěšně načetl...</text>
-	</string>
-    <string id="st_pri_zone_cleaning_add">
-		<text>Zombifikováno vlevo:</text>
-	</string>
-	<string id="st_pri_zone_cleaning_add2">
-		<text>Lidský</text>
-	</string>
-	<string id="st_task_execution_time_add1">
-		<text>(vlevo</text>
-	</string>
-	<string id="st_task_execution_time_add2">
-		<text>minut)</text>
-	</string>
-	<string id="st_task_execution_time_add3">
-		<text>Bonusové minuty)</text>
-	</string>
-	<string id="st_get_employer_kill_stalker">
-		<text>Samotář</text>
-	</string>
-	<string id="st_get_employer_kill_bandit">
-		<text>Bandita</text>
-	</string>
-	<string id="st_get_employer_kill_merc">
-		<text>Žoldák</text>
-	</string>
-	<string id="st_get_employer_kill_army">
-		<text>Armáda</text>
-	</string>
-	<string id="st_get_employer_kill_monolith">
-		<text>Monolit</text>
-	</string>
-	<string id="st_get_employer_kill_dolg">
-		<text>Povinnost</text>
-	</string>
-	<string id="st_get_employer_kill_freedom">
-		<text>Svoboda</text>
-	</string>
-	<string id="st_get_employer_kill_renegade">
-		<text>Odpadlík</text>
-	</string>
+<string id="st_trader_order_count">
+	<text>Položky na skladě:</text>
+</string>
+<string id="st_order_cost">
+	<text>Cena objednávky:</text>
+</string>
+
+<string id="st_statistic_value_of">
+	<text>z</text>
+</string>
+
+<string id="st_weapon_damage">
+	<text>Způsobené poškození:</text>
+</string>
+<string id="st_weapon_distance">
+	<text>Dosah:</text>
+</string>
+<string id="st_detonation_radius">
+	<text>Poloměr výbuchu:</text>
+</string>
+<string id="st_detonation_scraps">
+	<text>Rozptyl střepin:</text>
+</string>
+<string id="st_def_meters">
+	<text>m</text>
+</string>
+<string id="st_detonation_time">
+	<text>Doba účinku:</text>
+</string>
+
+<string id="st_def_second">
+	<text>s</text>
+</string>
+
+<string id="st_actor_box_currert_weight">
+	<text>Počet předmětů v osobní bedně =</text>
+</string>
+<string id="st_actor_box_currert_mass">
+	<text>Hmotnost =</text>
+</string>
+<string id="st_actor_box_transportation_cost">
+	<text>Náklady na přepravu =</text>
+</string>
+
+<string id="st_mod_verze_název">
+	<text>Verze</text>
+</string>
+
+<string id="st_sigerous_mod_successfully_started">
+	<text>Sigerous Mod byl úspěšně načten...</text>
+</string>
+
+<string id="st_pri_zone_cleaning_add">
+	<text>Zbývá zombifikovaných:</text>
+</string>
+<string id="st_pri_zone_cleaning_add2">
+	<text>Lidé</text>
+</string>
+
+<string id="st_task_execution_time_add1">
+	<text>(zbývá</text>
+</string>
+<string id="st_task_execution_time_add2">
+	<text>minut)</text>
+</string>
+<string id="st_task_execution_time_add3">
+	<text>Bonusové minuty)</text>
+</string>
+
+<string id="st_get_employer_kill_stalker">
+	<text>Samotář</text>
+</string>
+<string id="st_get_employer_kill_bandit">
+	<text>Bandita</text>
+</string>
+<string id="st_get_employer_kill_merc">
+	<text>Žoldák</text>
+</string>
+<string id="st_get_employer_kill_army">
+	<text>Voják</text>
+</string>
+<string id="st_get_employer_kill_monolith">
+	<text>Monolit</text>
+</string>
+<string id="st_get_employer_kill_dolg">
+	<text>Povinnost</text>
+</string>
+<string id="st_get_employer_kill_freedom">
+	<text>Svoboda</text>
+</string>
+<string id="st_get_employer_kill_renegade">
+	<text>Odpadlík</text>
+</string>
 
 
 	<string id="st_minigames_21_point_accept_step">
