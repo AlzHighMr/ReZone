@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <!-- ==================== LOOT CLAIM TIPS ==================== -->
+ <string id="st_ap_loot_claim_warn_001">
+    <text>Ten zářez je můj. Nech ho být.</text>
+</string>
+<string id="st_ap_loot_claim_warn_002">
+    <text>Odstup od té mrtvoly, kámo.</text>
+</string>
+<string id="st_ap_loot_claim_warn_003">
+    <text>Složil jsem ho já. Jeho výbava patří mně.</text>
+</string>
+<string id="st_ap_loot_claim_warn_004">
+    <text>Sáhni na tu mrtvolu a máme problém, #name#.</text>
+</string>
+<string id="st_ap_loot_claim_warn_005">
+    <text>Ustup, #name#. Ta kořist už má majitele.</text>
+</string>
+  <!-- Half A yield: an NPC leaves YOUR kill (seldom, the skipping stalker speaks) -->
+ <string id="st_ap_loot_reserve_yield_001">
+    <text>Toho nechám tobě, stalkere.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_002">
+    <text>Tvůj zářez, tvoje kořist. Sáhnout na ni nebudu.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_003">
+    <text>Ta mrtvola je tvoje. Porozhlédnu se jinde.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_004">
+    <text>Složil jsi ho ty, #name#. Tak si ho ober.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_005">
+    <text>To by mě ani nenapadlo brát ti tvůj zářez, #name#.</text>
+</string>
+  <!-- Flow C yield: you witness an NPC pass up another squad's kill (seldom, the passer speaks) -->
+ <string id="st_ap_loot_npcvnpc_yield_001">
+    <text>To není můj zářez. Nechám to být.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_002">
+    <text>Ten patří jiné skupině.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_003">
+    <text>Složil ho někdo jiný. Je to jejich kořist.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_004">
+    <text>To je zářez #name#'a, není na nás ho obírat.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_005">
+    <text>Nechte #name#ovi jeho zářez.</text>
+</string>
+</string_table>

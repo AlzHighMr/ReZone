@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+
+	<string id="pick_class_sniper_title">
+	<text>Sniper</text>
+</string>
+<string id="pick_class_sniper_descr">
+	<text>Specializuje se na boj na dlouhou vzdálenost a smrtící poškození. Dává přednost odstřelovacím puškám, pistolím a v menší míře i útočným puškám. Pro větší pohodlí používá střední a lehké brnění. Rychlý a hbitý, má vysokou odolnost vůči radiaci a poškození od anomálií, ale hůře snáší fyzické a psi poškození. \n \n
+		• Rychlost +10% \n
+		• Váha -10 kg</text>
+</string>
+
+<string id="pick_class_trooper_title">
+	<text>Voják</text>
+</string>
+<string id="pick_class_trooper_descr">
+	<text>Univerzální bojovník schopný boje na blízko i na dálku. Nejefektivnější volbou zbraní je útočná puška, samopal a výbušniny. I když není tak zručný, dokáže používat i brokovnici. Může nosit těžké, střední nebo vědecké brnění. Má střední odolnost vůči anomáliím a fyzickému poškození, ale nízkou vůči radiaci a psi poškození. \n \n
+		• Žádné bonusy ani postihy</text>
+</string>
+
+	<string id="pick_class_jugger_title">
+	<text>Těžká pěchota</text>
+</string>
+<string id="pick_class_jugger_descr">
+	<text>Bojovník na blízko. Specializuje se na absorbování fyzického poškození a demoralizování nepřítele. Nejlépe se uplatní s těžkými zbraněmi, jako jsou brokovnice a kulomety, stejně jako sbojovými zbraněmi na blízko. Pro jistotu může mít u sebe také samopal. Nosí těžké brnění a má vysokou odolnost vůči psi a fyzickému poškození, ale je zranitelnější vůči radiaci a anomáliím. \n \n
+		• Rychlost -10% \n
+		• Váha +10 kg</text>
+</string>
+
+<string id="pick_class_monster_hunter_title">
+	<text>Lovec mutantů</text>
+</string>
+<string id="pick_class_monster_hunter_descr">
+	<text>Specialista na likvidaci mutantů. Má průměrné dovednosti v používání jakéhokoli typu zbraní kromě výbušnin. Dokáže nosit jakékoli brnění, ale má malé bonusy navíc pro střední brnění. Vysoká ochrana proti roztržení, nárazu a psi poškození, průměrná proti anomáliím. Skvělá volba pro lov mutantů, ale v boji proti lidem nevyniká. \n \n
+		• Rychlost +5% \n
+		• Váha -5 kg</text>
+</string>
+
+<string id="pick_class_merc_title">
+	<text>Lovec odměn</text>
+</string>
+<string id="pick_class_merc_descr">
+	<text>Voják štěstěny s dobrými dovednostmi ve skoro všech typech zbraní. Kvůli množství přestřelek, kterými prochází, preferuje střední nebo těžké brnění. Vysoká ochrana proti balistickému a výbušnému poškození, průměrná proti anomáliím. Široká škála dovedností pro plnění kontraktů, od smrtícího poškození a výbušnin po převleky a překvapivé zabití. Skvělá volba pro lov stalkerů, ale není nijak zvlášť dobrý proti mutantům. \n \n
+		• Rychlost -5% \n
+		• Váha +5 kg</text>
+</string>
+
+<string id="pick_class_assassin_title">
+	<text>Asassín</text>
+</string>
+<string id="pick_class_assassin_descr">
+	<text>Obratný mistr převleků, plížení a tichých zabití. Jeho speciální dovednosti vyžadují jemný přístup a vhodné zbraně, proto dává přednost lehkým zbraním: samopalům, pistolím a zbraním na blízko. Dokáže používat střední nebo vědecké brnění, pokud se chce převléknout za nepřítele, nebo lehké, když se potřebuje nepozorovaně vplížit. Zaměřuje se na tiché, překvapivé útoky a smrtící bodnutí do zad. Není vhodný pro přímé střety na jakoukoli vzdálenost. \n \n
+		• Rychlost +10% \n
+		• Váha -10 kg \n
+		• Schopen získat zkušenosti „Defenzivní“ z plížení/převleku</text>
+</string>
+
+<string id="pick_class_pick_text">
+	<text>Vyber třídu</text>
+</string>
+
+<string id="pick_class_pick">
+	<text>Vybrat</text>
+</string>
+
+<string id="pick_class_picked">
+	<text>%s třída vybrána.</text>
+</string>
+
+<string id="talents_levelup">
+	<text>Postoupil jsi na další úroveň! %s %s.</text>
+</string>
+
+<string id="stat_weapons">
+	<text>Zbraně</text>
+</string>
+<string id="stat_assault_rifle">
+	<text>Útočná puška</text>
+</string>
+<string id="stat_sniper_rifle">
+	<text>Odstřelovací puška</text>
+</string>
+<string id="stat_shotgun">
+	<text>Brokovnice</text>
+</string>
+<string id="stat_machine_gun">
+	<text>Kulomet</text>
+</string>
+<string id="stat_pistol">
+	<text>Pistole</text>
+</string>
+<string id="stat_smg">
+	<text>Samopal</text>
+</string>
+<string id="stat_wpns_all">
+	<text>Všechny</text>
+</string>
+
+<string id="stat_outfits">
+	<text>Obleky</text>
+</string>
+<string id="stat_heavy">
+	<text>Těžký</text>
+</string>
+<string id="stat_medium">
+	<text>Střední</text>
+</string>
+<string id="stat_sci">
+	<text>Vědecký</text>
+</string>
+<string id="stat_light">
+	<text>Lehký</text>
+</string>
+
+<string id="stat_resists">
+	<text>Odolnost</text>
+</string>
+<string id="stat_burn">
+	<text>Popálení</text>
+</string>
+<string id="stat_chem">
+	<text>Chemické</text>
+</string>
+<string id="stat_shock">
+	<text>Šok</text>
+</string>
+<string id="stat_ballistic">
+	<text>Balistické</text>
+</string>
+<string id="stat_explosive">
+	<text>Výbušné</text>
+</string>
+<string id="stat_rupture">
+	<text>Tržnosti</text>
+</string>
+<string id="stat_strike">
+	<text>Úder</text>
+</string>
+<string id="stat_radiation">
+	<text>Radiace</text>
+</string>
+<string id="stat_psi">
+	<text>Psi</text>
+</string>
+<string id="stat_disguise">
+	<text>Převlek</text>
+</string>
+<string id="stat_stealth">
+	<text>Plížení</text>
+</string>
+<string id="stat_evade">
+	<text>Úhyb</text>
+</string>
+
+<string id="stat_special">
+	<text>Specialní</text>
+</string>
+<string id="stat_speed">
+	<text>Rychlost</text>
+</string>
+<string id="stat_weight">
+	<text>Váha</text>
+</string>
+<string id="stat_crit">
+	<text>Kritický</text>
+</string>
+<string id="stat_melee">
+	<text>Boj na blízko</text>
+</string>
+<string id="stat_expl">
+	<text>Výbušniny</text>
+</string>
+
+
+	<string id="stat_stamina">
+	<text>Stamina</text>
+</string>
+<string id="stat_stamina_per_sec">
+	<text>sek</text>
+</string>
+<string id="stat_weight_kg">
+	<text>kg</text>
+</string>
+
+<string id="tree_offensive">
+	<text>Útočné</text>
+</string>
+<string id="tree_defensive">
+	<text>Obranné</text>
+</string>
+<string id="tree_endurance">
+	<text>Výdrž</text>
+</string>
+<string id="tree_speech">
+	<text>Výřečnost</text>
+</string>
+
+<string id="tree_points">
+	<text>Dostupné body:</text>
+</string>
+<string id="tree_max_exp">
+	<text>Max</text>
+</string>
+
+<string id="talents_respec">
+	<text>Přerozdělit</text>
+</string>
+
+<string id="talents_respec_ver">
+	<text>Přerozdělení bude stát %s peněz a polovinu tvých úrovní. Třídy a talentové body budou resetovány. Jsi si jistý?</text>
+</string>
+
+<string id="talents_respec_yes">
+	<text>Ano</text>
+</string>
+<string id="talents_respec_no">
+	<text>Ne</text>
+</string>
+
+<string id="talents_respeced">
+	<text>Třída a talenty byly resetovány.</text>
+</string>
+
+<string id="talents_stats_text">
+	<text>Statistiky:</text>
+</string>
+<string id="talents_stats_damage">
+	<text>Poškození (max)</text>
+</string>
+<string id="talents_stats_crit">
+	<text>Kritický (max)</text>
+</string>
+
+<string id="talents_stats_def">
+	<text>Obrana (max)</text>
+</string>
+
+<string id="talents_stats_endur">
+	<text>Hodnota (max)</text>
+</string>
+
+<string id="talents_tooltip_req">
+	<text>Požadováno:</text>
+</string>
+<string id="talents_tooltip_req_all">
+	<text>Body ve stromu</text>
+</string>
+
+<string id="talents_cd_sec">
+	<text>sek</text>
+</string>
+<string id="talents_cd_min">
+	<text>min</text>
+</string>
+<string id="talents_cd_game_hours">
+	<text>herní hodiny</text>
+</string>
+
+<string id="cynical_coin_name">
+	<text>Mince štěstí</text>
+</string>
+<string id="cynical_coin_descr">
+	<text>Nemorální, ale praktické...</text>
+</string>
+
+<string id="talents_header_krug">
+	<text>•</text>
+</string>
+<string id="talents_header_w_sniper">
+	<text>Odstřelovací puška</text>
+</string>
+<string id="talents_header_w_rifle">
+	<text>Útočná puška</text>
+</string>
+<string id="talents_header_w_smg">
+	<text>Samopal</text>
+</string>
+<string id="talents_header_w_shotgun">
+	<text>Brokovnice</text>
+</string>
+<string id="talents_header_w_pistol">
+	<text>Pistole</text>
+</string>
+<string id="talents_header_w_machine_gun">
+	<text>Kulomet</text>
+</string>
+
+<string id="talents_header_o_light">
+	<text>Lehká zbroj</text>
+</string>
+<string id="talents_header_o_medium">
+	<text>Střední zbroj</text>
+</string>
+<string id="talents_header_o_sci">
+	<text>Vědecká zbroj</text>
+</string>
+<string id="talents_header_o_heavy">
+	<text>Těžká zbroj</text>
+</string>
+
+
+<string id="inv_update_item_name">
+	<text>Aktualizátor váhy postavy</text>
+</string>
+<string id="inv_update_item_descr">
+	<text>Řešení pro obcházení problému, kdy se váha postavy neaktualizuje po použití funkce set_weight pro předměty</text>
+</string>
+
+<string id="talents_charismatic_msg">
+	<text>Charismatický: %s obdrženo zdarma.</text>
+</string>
+<string id="talents_artistic_msg">
+	<text>Tvůj vztah s frakcí %s se zlepšil.</text>
+</string>
+<string id="talents_cynical_msg">
+	<text>Tvůj vztah s frakcí %s se zhoršil.</text>
+</string>
+<string id="talents_deceitful_msg">
+	<text>Podvodník: získal jsi navíc %s r. za %s.</text>
+</string>
+
+
+</string_table>

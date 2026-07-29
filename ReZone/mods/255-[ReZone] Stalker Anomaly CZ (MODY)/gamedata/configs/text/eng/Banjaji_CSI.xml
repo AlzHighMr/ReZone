@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	
+	<!-- Workshop crafting tab title in component window -->
+	<string id="st_cap_tools">
+		<text>Tool</text>
+	</string>
+	
+	<!-- Workshop crafting tab bottom tips -->
+	<string id="st_ui_workshop_info_craft_warning_2_banjaji">
+		<text>You don't know how to craft this yet. You are missing the following notes: %s</text>
+	</string>
+	<string id="st_ui_workshop_info_craft_warning_4_banjaji">
+		<text>Your inventory is lacking some necessary components or tools to craft this.</text>
+	</string>
+	<string id="st_ui_workshop_info_craft_tip_5_banjaji">
+		<text>You have all necessary components to craft this, select "Craft" button if you wish to continue.</text>
+	</string>
+	
+	
+	<!-- ui_pda_encyclopedia new article strings -->
+	<string id="encyclopedia__notes__known_recipes">
+		<text>Known recipes</text>
+	</string>
+	<string id="encyclopedia__notes__known_recipes_text">
+		<text>These are the crafting recipes everyone knows along with the ones you learned from notes and books.</text>
+	</string>
+	
+	<!-- Subtitle in encyclopedia note -->
+	<string id="pda_encyclopedia_content_banjaji">
+		<text>Learned recipes</text>
+	</string>
+	
+	
+	<!-- item_recipe.script -->
+	<string id="st_note_deleted">
+		<text>The note crumbled to dust in your hand</text>
+	</string>
+	
+	
+	<!-- One word stuff -->
+	<string id="st_notes">
+		<text>Notes</text>
+	</string>
+	<string id="st_tools">
+		<text>Tools</text>
+	</string>
+	<string id="st_results">
+		<text>Results</text>
+	</string>
+	<string id="st_components">
+		<text>Components</text>
+	</string>
+	<string id="st_nothing">
+		<text>Nothing</text>
+	</string>
+	<string id="st_common_knowledge">
+		<text>Common knowledge</text>
+	</string>
+	<string id="st_learned_recipes">
+		<text>Learned recipes</text>
+	</string>
+	<string id="st_page">
+		<text>Page</text>
+	</string>
+	<string id="st_pages">
+		<text>Pages</text>
+	</string>
+	
+	<!-- MCM -->
+	<string id="ui_mcm_menu_banjajis_csi">
+		<text>Banjaji's CSI</text>
+	</string>
+	<string id="banjajis_csi">
+		<text>Banjaji's CSI</text>
+	</string>
+	<string id="banjajis_csi_title">
+		<text>Banjaji's Crafting System Improvements</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_delete_recipe">
+		<text>Delete recipe note after reading for first time</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_delete_letter">
+		<text>Delete letter note after reading for first time</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_min_craft_item_cond">
+		<text>Minimum condition % for crafting</text>
+	</string>
+	<string id="ui_mcm_banjajis_csi_min_craft_item_cond_desc">
+		<text>If component or tool has condition below this level then it isn't considered available when crafting.</text>
+	</string>
+	
+</string_table>

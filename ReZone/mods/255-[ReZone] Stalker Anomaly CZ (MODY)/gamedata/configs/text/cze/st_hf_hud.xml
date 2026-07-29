@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<string id="st_hf_holding_msg">
+	<text>$key_interact - Umisteni objektu\n
+        \n
+        $key_collision - Prepnuti detekce kolize\n
+        $key_align - Prepnutí zaroveni povrchu\n
+        \n
+        $key_mode - Prepnuti do pokrocileho rezimu\n
+        ESCAPE - Zruseni umisteni\n
+    </text>
+</string>
+
+<string id="st_hf_advanced_msg">
+	<text>$key_interact - Umisteni objektu\n
+        \n
+        Transformace:\n
+        MOUSE1 - Pohyb ve vodorovne rovine\n
+        MOUSE2 - Otaceni kolem svisle osy\n
+        LSHIFT + MOUSE1 - Pohyb podle svisle osy\n
+        \n
+        Modifikatory:\n
+        LALT - Prichyceni\n
+        LCTRL - Doladeni ovladani\n
+        \n
+        $key_mode - Prepnuti do rezimu nahledu\n
+        ESCAPE - prepnuti do normalniho rezimu\n
+    </text>
+</string>
+
+<string id="st_hf_preview_msg">
+	<text>$key_interact - Umisteni objektu\n
+        \n
+        ESCAPE - Zruseni umisteni\n
+        $key_mode - Prepnuti do pokrocileho rezimu
+    </text>
+</string>
+
+
+
+</string_table>

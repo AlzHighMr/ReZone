@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons Attachments
+-->
+
+<string_table>
+	
+	<string id="st_addon_sil_ash12">
+		<text>CKIB ASH-12 Tlumič</text>
+	</string>
+	<string id="st_addon_sil_ash12_descr">
+		<text>CKIB ASH-12 Tlumič zvuku.\n \n
+		%c[0,255,255,255]KOMPATIBILNÍ:\n
+		%c[d_cyan] - %c[ui_gray_2] Zbraně ráže 12,7x55 mm</text>
+	</string>
+
+	<string id="st_addon_scope_specterup">
+		<text>Speciální balíček pro upgrade - SA-58</text>
+	</string>
+	<string id="st_addon_scope_specterup_descr">
+		<text>Speciální balíček pro upgrade, který obsahuje SpecterDR, Trijicon RMR a ANPEQ15 LAM. Tato kombinace poskytuje uživateli zaměřovače na dlouhou a krátkou vzdálenost a pomůcku ANPEQ15 pro pomoc při míření z boku.
+		</text>
+	</string>
+
+	<string id="st_addon_scope_sup">
+		<text>S.U.P. Special Upgrade Pack</text>
+	</string>
+	<string id="st_addon_scope_sup_descr">
+		<text>Speciální balíček pro upgrade, který obsahuje zaměřovač SpecterDR a zaměřovač Trijicon RMR. Tato kombinace poskytuje uživateli zaměřovače na dlouhou a krátkou vzdálenost pro pomoc při zaměřování palby.
+		</text>
+	</string>
+
+	<string id="st_addon_sil_silencerco">
+		<text>Tlumič CO Salvo 12</text>
+	</string>
+	<string id="st_addon_sil_silencerco_descr">
+		<text>Tlumič zvuku SilencerCO Salvo 12 .\n \n
+		%c[0,255,255,255]KOMPATIBILNÍ:\n
+		%c[d_cyan] - %c[ui_gray_2] zbraně ráže 12\n
+		</text>
+	</string>
+
+</string_table>

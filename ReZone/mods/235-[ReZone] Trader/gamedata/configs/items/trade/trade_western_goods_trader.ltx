@@ -1,0 +1,152 @@
+;;====================================================================================================================;;
+;;                                                                                                                    ;;
+;;    Original Author(s) : NLTP_ASHES                                                                                 ;;
+;;    Edited : N/A                                                                                                    ;;
+;;    Date : 17/05/2024                                                                                               ;;
+;;    License : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)             ;;
+;;                                                                                                                    ;;
+;;    Config file used to define the trade profile of the Williams Heades.                                            ;;
+;;                                                                                                                    ;;
+;;====================================================================================================================;;
+
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+;;====================================================================================================================;;
+;;==================| Profile |=======================================================================================;;
+;;====================================================================================================================;;
+
+[trader]
+discounts                                        = discount_supplier
+
+buy_condition                                    = trade_generic_buy
+buy_supplies                                     = {=heavy_pockets_functor()} supplies_3, {=actor_goodwill_ge(killer:1000)} supplies_3, {=actor_goodwill_ge(killer:500)} supplies_2,  supplies_1
+buy_item_condition_factor                        = 1.0
+buy_item_exponent                                = 3.00
+
+sell_condition                                   = trade_generic_sell
+sell_item_exponent                               = 1.0
+
+;;====================================================================================================================;;
+;;==================| Player -> Trader Blacklist |====================================================================;;
+;;====================================================================================================================;;
+
+[trade_generic_buy]                              ; friend factor    , foe factor
+
+;;====================================================================================================================;;
+;;==================| Trader -> Player Blacklist |====================================================================;;
+;;====================================================================================================================;;
+
+[trade_generic_sell]                             ; friend factor    , foe factor
+
+
+
+;;====================================================================================================================;;
+;;==================| Trade List |====================================================================================;;
+;;====================================================================================================================;;
+
+
+
+
+
+;=========== SUPPLIES 1 ===============
+;======================================
+[supplies_1]:common_stock                        ; qte  , prob
+
+
+;wpn_am17_rwap                                    = 3    , 0.8
+;wpn_amb17_rwap                                   = 3    , 0.8
+;wpn_bcm_rwap                                     = 3    , 0.8
+;wpn_g95k_rwap                                    = 3    , 0.8
+;wpn_gen12_rwap                                   = 3    , 0.8
+;wpn_hk416_rwap                                   = 3    , 0.8
+;wpn_hk416smr_rwap                                = 3    , 0.8 
+;wpn_krnk_rwap                                    = 3    , 0.8
+;wpn_ks1_rwap                                     = 3    , 0.8
+;wpn_mcx_rwap                                     = 3    , 0.8
+;wpn_mpx_rwap                                     = 3    , 0.8
+;wpn_sg553_rwap                                   = 3    , 0.8
+;wpn_sg553tac_rwap                                = 3    , 0.8
+
+
+;tech items
+wg_military_radio                                = 1    , 0.9
+
+;magazines
+wg_xbox_mag_1                                    = 1    , 0.85
+wg_strana_igr_mag_1                              = 1    , 0.70
+
+
+
+
+
+
+;=========== SUPPLIES 2 ===============
+;======================================
+[supplies_2]:supplies_1                          ; qte  , prob
+
+
+;wpn_am17_rwap                                    = 3    , 0.8
+;wpn_amb17_rwap                                   = 3    , 0.8
+;wpn_bcm_rwap                                     = 3    , 0.8
+;wpn_g95k_rwap                                    = 3    , 0.8
+;wpn_gen12_rwap                                   = 3    , 0.8
+;wpn_hk416_rwap                                   = 3    , 0.8
+;wpn_hk416smr_rwap                                = 3    , 0.8
+;wpn_krnk_rwap                                    = 3    , 0.8
+;wpn_ks1_rwap                                     = 3    , 0.8
+;wpn_mb47_rwap                                    = 3    , 0.8
+;wpn_mcx_rwap                                     = 3    , 0.8
+;wpn_mpx_rwap                                     = 3    , 0.8
+;wpn_rattler_rwap                                 = 3    , 0.8
+;wpn_sg553_rwap                                   = 3    , 0.8
+;wpn_sg553tac_rwap                                = 3    , 0.8
+;wpn_urgi_rwap                                    = 3    , 0.8
+
+
+;tech items
+wg_laptop                                        = 1    , 0.5
+wg_military_radio                                = 1    , 1.0
+
+;magazines
+wg_xbox_mag_1                                    = 5    , 0.9
+wg_xbox_mag_2                                    = 5    , 0.9
+wg_car_mag_1                                     = 1    , 0.75
+wg_car_mag_2                                     = 1    , 0.75
+
+outfit_nanosuit                                = 1    , 0.05
+nanosuit_defibrillator                         = 1    , 0.05
+
+
+;=========== SUPPLIES 3 ===============
+;======================================
+[supplies_3]:supplies_2                          ; qte  , prob
+
+;wpn_am17_rwap                                     = 3    , 0.8
+;wpn_amb17_rwap                                    = 3    , 0.8
+;wpn_bcm_rwap                                      = 3    , 0.8
+;wpn_cr7_rwap                                      = 3    , 0.8
+;wpn_g95k_rwap                                     = 3    , 0.8
+;wpn_gen12_rwap                                    = 3    , 0.8
+;wpn_hk416_rwap                                    = 3    , 0.8
+;wpn_hk416smr_rwap                                 = 3    , 0.8
+;wpn_krnk_rwap                                     = 3    , 0.8
+;wpn_ks1_rwap                                      = 3    , 0.8
+;wpn_l119a2_rwap                                   = 3    , 0.8
+;wpn_m110k1_rwap                                   = 3    , 0.8
+;wpn_mb47_rwap                                     = 3    , 0.8
+;wpn_mpx_rwap                                      = 3    , 0.8
+;wpn_n4_rwap                                       = 3    , 0.8
+;wpn_rattler_rwap                                  = 3    , 0.8
+;wpn_urgi_rwap                                     = 3    , 0.8
+;wpn_raptr                                         = 1, 0.33
+;tech items
+wg_gps                                           = 1    , 0.7
+
+;magazines
+wg_porn_mag_1                                    = 2    , 0.8
+wg_porn_mag_2                                    = 3    , 0.8
+wg_porn_mag_3                                    = 2    , 0.8
+
+outfit_nanosuit                                = 1    ,1
+nanosuit_defibrillator                         = 1    ,1

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+    Storyline: Hidden Threat
+	Version:   1.0
+    Autor:     Longreed
+	Last Edit: 26/10/2021
+-->
+<string_table>
+	<string id="st_sl_ht_accounting_report_name">
+		<text>Účetní výkazy</text>
+	</string>
+	<string id="st_sl_ht_accounting_report_desc">
+		<text>Těžká složka s doklady, finančními výkazy za aktuální měsíc, kterou u sebe čeká major Žurov od svého podřízeného, seržanta Ložkina.
+		</text>
+	</string>
+	<string id="st_sl_ht_spooner_quest_package_name">
+		<text>Parcelka</text>
+	</string>
+	<string id="st_sl_ht_spooner_quest_package_desc">
+		<text>Balíček předaný pronásledovatelem k doručení jeho známému. Obsah není znám. Kupodivu nemá žádnou ochranu proti manipulaci ze strany cizích osob.\n \n
+		</text>
+	</string>
+	<string id="st_sl_ht_walkie_talkie_name">
+		<text>Armádní Rádio</text>
+	</string>
+	<string id="st_sl_ht_walkie_talkie_desc">
+		<text>Přenosná VKV vysílačka R-002PP.</text>
+	</string>
+	<string id="st_sl_ht_pda_isg_leader_name">
+		<text>PDA velitele ISG</text>
+	</string>
+	<string id="st_sl_ht_pda_isg_leader_desc">
+		<text>Toto PDAčko je uzamčeno.</text>
+	</string>
+	<string id="st_sl_ht_usb_quest_task_4_name">
+		<text>USB Paměťová karta</text>
+	</string>
+	<string id="st_sl_ht_usb_quest_task_4_desc">
+		<text>Toto paměťové zařízení obsahuje malou část informací, které se Kirillovi podařilo zachránit.
+		</text>
+	</string>
+	<string id="st_sl_ht_case_quest_task_5_name">
+		<text>Kufřík agenta SSU</text>
+	</string>
+	<string id="st_sl_ht_case_quest_task_5_desc">
+		<text>Obsah tohoto případu je neznámý, pravděpodobně se jedná o informace o činnosti ISG.
+		</text>
+	</string>
+	<string id="st_sl_ht_voice_recorder_task_6_name">
+		<text>Záznamník</text>
+	</string>
+	<string id="st_sl_ht_voice_recorder_task_6_desc">
+		<text>Vypadá to jako obyčejný diktafon, který najdete všude. Ale tento byl vylepšen nadporučíkem Kirillovem, reaguje na zvuk a pořizuje záznam.
+		</text>
+	</string>
+	<!------------------- Tipy na předměty ------------------------->
+	<string id="st_sl_hidden_threat_locked_door_tips">
+	    <text>Najdi jinou cestu dovnitř.</text>
+	</string>
+	<string id="st_sl_hidden_threat_radio_tips_1">
+	    <text>Skryj záznamník($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_sl_hidden_threat_radio_tips_2">
+	    <text>Odstranit záznamník($$ACTION_USE$$)</text>
+	</string>
+
+</string_table>

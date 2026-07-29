@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<!--
+    messages are constructed based on scenarios -> parts -> variants
+    1. scenario is a message template, used to represent some sort of topic
+    2. parts are what construct the message
+    3. variants are a set of many strings for a single part, the script will use one of them to represent the part
+    
+    for message title <string id="st_msg_stash_title_scenario_variant">
+    for message itself <string id="st_msg_stash_scenario_part_variant">
+
+    You can have as many scenarios, parts and variants you want. Make sure to follow the numeric values without a break (1 followed by 3 will make the script ignore the 3)
+-->
+
+<!-- stash - found a stash by accident -->
+    <string id="st_msg_stash_title_1_1">
+    <text>Našel jsem skrýš.</text>
+</string>
+<string id="st_msg_stash_title_1_2">
+    <text>Skrýš!</text>
+</string>
+<string id="st_msg_stash_title_1_3">
+    <text>Našel jsem něco!</text>
+</string>
+<string id="st_msg_stash_title_1_4">
+    <text>Co by tam asi mohlo být?</text>
+</string>
+<string id="st_msg_stash_title_1_5">
+    <text>Skrytá kořist!</text>
+</string>
+<string id="st_msg_stash_title_1_6">
+    <text>Tohle by mohlo být naleziště zlata</text>
+</string>
+
+<string id="st_msg_stash_1_1_1">
+    <text>Připomenutí pro sebe, protože si vždycky zapomenu:</text>
+</string>
+<string id="st_msg_stash_1_1_2">
+    <text>Hej $c1_fname, hádej co!</text>
+</string>
+<string id="st_msg_stash_1_1_3">
+    <text>Dnes byl špatný den. Nic neobvyklého kromě jedné věci.</text>
+</string>
+<string id="st_msg_stash_1_1_4">
+    <text>Tady je něco, co by tě mohlo zajímat.</text>
+</string>
+<string id="st_msg_stash_1_1_5">
+    <text>Pouze upozornění.</text>
+</string>
+<string id="st_msg_stash_1_1_6">
+    <text>Mám pro tebe něco zajímavého.</text>
+</string>
+
+  
+<string id="st_msg_stash_1_2_1">
+    <text>Nalezl jsem tuto skrýš během svých cest, ale nebylo bezpečné ji otevřít.</text>
+</string>
+<string id="st_msg_stash_1_2_2">
+    <text>Viděl jsem tam nějaký batoh. Nevím jistě, jestli ho tam někdo schválně položil, ale rozhodně byl skrytý.</text>
+</string>
+<string id="st_msg_stash_1_2_3">
+    <text>Možná jsem našel starou skrýš. Uviděl jsem ji, když jsem se snažil uniknout tlupě hladových psů. Vypadá nedotčená.</text>
+</string>
+<string id="st_msg_stash_1_2_4">
+    <text>Dnes jsem našel skrýš, ale neměl jsem čas se zastavit a prozkoumat ji. Naštěstí je dobře skrytá.</text>
+</string>
+<string id="st_msg_stash_1_2_5">
+    <text>Je tam skrýš schovaná na místě $map. Zatím jsem neměl příležitost ji prozkoumat.</text>
+</string>
+<string id="st_msg_stash_1_3_1">
+    <text>Dám jí ještě jednou kontrolu, až budu mít příležitost. Něco mi říká, že tentokrát budu mít štěstí.</text>
+</string>
+<string id="st_msg_stash_1_3_2">
+    <text>Možná někdo chtěl schovat své lahůdky?</text>
+</string>
+<string id="st_msg_stash_1_3_3">
+    <text>Musím se tam podívat, až budu mít volný čas. Doufám, že to nikdo nenajde přede mnou.</text>
+</string>
+<string id="st_msg_stash_1_3_4">
+    <text>Zajímalo by mě, co tam asi je...</text>
+</string>
+<string id="st_msg_stash_1_3_5">
+    <text>Držím palce, aby tam nebyl jen nepoužitelný šrot.</text>
+</string>
+<string id="st_msg_stash_1_3_6">
+    <text>Určitě tam něco je. Počkejme, až se situace uklidní.</text>
+</string>
+<string id="st_msg_stash_1_3_7">
+    <text>Snad tam jsou drahé vybavení nebo artefakty.</text>
+</string>
+	
+	
+<!-- Death of a friend - buried stash or just mournful message -->
+	<string id="st_msg_death_title_1_1">
+    <text>Omlouvám se</text>
+</string>
+<string id="st_msg_death_title_1_2">
+    <text>Zase jeden ztracený v Zóně</text>
+</string>
+<string id="st_msg_death_title_1_3">
+    <text>Pohřbil jsem našeho přítele</text>
+</string>
+<string id="st_msg_death_title_1_4">
+    <text>Byl to dobrý Stalker</text>
+</string>
+<string id="st_msg_death_title_1_5">
+    <text>Zase jeden ulehl prachu...</text>
+</string>
+<string id="st_msg_death_title_1_6">
+    <text>Špatná zpráva</text>
+</string>
+<string id="st_msg_death_title_1_7">
+    <text>$fname zemřel</text>
+</string>
+<string id="st_msg_death_title_1_8">
+    <text>Zóna si vzala $fname</text>
+</string>
+
+<string id="st_msg_death_1_1_1">
+    <text>Omlouvám se, ale $fname právě zemřel.</text>
+</string>
+<string id="st_msg_death_1_1_2">
+    <text>$fname se vrátil zpět do bahna.</text>
+</string>
+<string id="st_msg_death_1_1_3">
+    <text>Ztratili jsme $fname.</text>
+</string>
+<string id="st_msg_death_1_1_4">
+    <text>$fname $lname to nedokázal.</text>
+</string>
+<string id="st_msg_death_1_1_5">
+    <text>$fname $lname dnes zemřel.</text>
+</string>
+
+	<string id="st_msg_death_1_2_1">
+    <text>Právě jsme dokončili lov a divoké prase se objevilo z ničeho nic a bodlo ho.</text>
+</string>
+<string id="st_msg_death_1_2_2">
+    <text>Byla to obvyklá cesta zpět do tábora, kterou jsme už absolvovali tisíckrát... ale vstoupil do Vířivky. Ta ho jednoduše vzala a vynesla do vzduchu.</text>
+</string>
+<string id="st_msg_death_1_2_3">
+    <text>Dostal kulku, když jsme byli na hlídce. Všechny to překvapilo.</text>
+</string>
+<string id="st_msg_death_1_2_4">
+    <text>Schovávali jsme se před emisí a byli jsme obklíčeni Tarbíky. Nebylo moc prostoru, jak se jim vyhnout, a $fname byl přemohl. Ti malí parchanti mu přímo překousli oblek.</text>
+</string>
+<string id="st_msg_death_1_2_5">
+    <text>Utíkal před smečkou psů a chytili ho právě dřív, než jsme je mohli zastrašit.</text>
+</string>
+<string id="st_msg_death_1_2_6">
+    <text>Nejsem si jistý, co se stalo, ale když jsme ho našli... no...</text>
+</string>
+<string id="st_msg_death_1_3_1">
+    <text>Dělali jsme, co jsme mohli, ale vykrvácel, když jsme se snažili zastavit krvácení.</text>
+</string>
+<string id="st_msg_death_1_3_2">
+    <text>Jeho zranění byla příliš vážná.</text>
+</string>
+<string id="st_msg_death_1_3_3">
+    <text>Jeho tělo to prostě nezvládlo.</text>
+</string>
+<string id="st_msg_death_1_3_4">
+    <text>Bylo to příliš mnoho zranění, příliš mnoho krve.</text>
+</string>
+<string id="st_msg_death_1_3_5">
+    <text>Neměli jsme dostatek lékařských prostředků...</text>
+</string>
+
+	<string id="st_msg_death_1_4_1">
+    <text>Měl jen smůlu.</text>
+</string>
+<string id="st_msg_death_1_4_2">
+    <text>Nemohli jsme udělat nic.</text>
+</string>
+<string id="st_msg_death_1_4_3">
+    <text>Omlouvám se.</text>
+</string>
+<string id="st_msg_death_1_4_4">
+    <text>Nedlouho trpěl.</text>
+</string>
+<string id="st_msg_death_1_4_5">
+    <text>Byl to dobrý stalker.</text>
+</string>
+<string id="st_msg_death_1_4_6">
+    <text>Dnes večer si otevřeme láhev vodky na jeho památku.</text>
+</string>
+
+<!-- map route - got info from someone on route-->
+    <string id="st_msg_map_title_1_1">
+    <text>Toto by mohlo být užitečné...</text>
+</string>
+<string id="st_msg_map_title_1_2">
+    <text>Vypadá to jako dobrý průchod.</text>
+</string>
+<string id="st_msg_map_title_1_3">
+    <text>Podívej se na tuto trasu.</text>
+</string>
+<string id="st_msg_map_title_1_4">
+    <text>Nalezl jsem novou trasu</text>
+</string>
+<string id="st_msg_map_title_1_5">
+    <text>Tajná cesta</text>
+</string>
+<string id="st_msg_map_1_1_1">
+    <text>Ahoj $fname, chceš slyšet něco zajímavého?</text>
+</string>
+<string id="st_msg_map_1_1_2">
+    <text>Ahoj $fname, jak se ti v poslední době daří?</text>
+</string>
+<string id="st_msg_map_1_1_3">
+    <text>Hej $fname, tady je $c1_fname. Mám pro tebe něco.</text>
+</string>
+<string id="st_msg_map_1_1_4">
+    <text>Podívej se, kdo má na sobě taťkovy kalhoty!</text>
+</string>
+<string id="st_msg_map_1_1_7">
+    <text>Jsem nejlepší přítel, kterého jsi nikdy neměl.</text>
+</string>
+<string id="st_msg_map_1_1_5">
+    <text>Hej $fname, tady je $c1_fname. Mám pro tebe něco.</text>
+</string>
+<string id="st_msg_map_1_1_6">
+    <text>No nazdar, $fname.</text>
+</string>
+
+   <string id="st_msg_map_1_2_1">
+    <text>Dostal jsem do rukou nějaké staré dokumenty od $trader. Obsahují podrobnosti o několika místech v Zóně. Vypadá to, že to napsala skupina výzkumníků.</text>
+</string>
+<string id="st_msg_map_1_2_2">
+    <text>Dnes jsem potkal $c2_lname a zná situaci. Ukázal mi jednoduchý průchod, kterým se lze bezpečně pohybovat mezi některými oblastmi v okolí Zóny.</text>
+</string>
+<string id="st_msg_map_1_2_3">
+    <text>Takže jsem si koupil nějaké informace od $tradera. Ten parchant chtěl za to hodně peněz.</text>
+</string>
+<string id="st_msg_map_1_2_4">
+    <text>Před pár dny mi pomohl starý přítel. Dříve býval průvodcem, ale teď to bere s klidem.</text>
+</string>
+<string id="st_msg_map_1_2_5">
+    <text>Dnes ráno mi jeden z veteránů ukázal svou mapu. Podařilo se mi pořídit nějaké poznámky.</text>
+</string>
+<string id="st_msg_map_1_2_6">
+    <text>Narazil jsem na Stalkera, který se dříve dostal do výbuchu. Snažil se najít úkryt, ale nebylo to dost. Každopádně, když jsem prohlížel jeho PDA, našel jsem nějaké užitečné informace.</text>
+</string>
+<string id="st_msg_map_1_2_7">
+    <text>Před chvílí jsem prohledával tělo a našel jsem PDA s několika neuvěřitelně zajímavými záznamy.</text>
+</string>
+<string id="st_msg_map_1_3_1">
+    <text>Podívej se na tyto trasy mezi $map_route_1 a $map_route_2. Možná je jednou budeš potřebovat použít.</text>
+</string>
+<string id="st_msg_map_1_3_2">
+    <text>Pamatuješ, když jsme celou noc diskutovali o tom, jak se dostat z $map_route_2 do $map_route_1? Tohle ti ukáže několik dobrých tras. Není zač!</text>
+</string>
+<string id="st_msg_map_1_3_3">
+    <text>Po našem pokusu o tu trasu jsem našel bezpečnější cestu.</text>
+</string>
+<string id="st_msg_map_1_3_4">
+    <text>Tady je cesta mezi $map_route_1 a $map_route_2. Dříve tam byly blokovány anomálie, ale teď by to mělo být volné.</text>
+</string>
+   <string id="st_msg_map_1_4_1">
+    <text>Nemohu ti opravdu slíbit, že tohle je nejbezpečnější možná cesta, ale zatím tohle mám. Možná se zeptám kolem, jestli někdo nemá lepší zdroje.</text>
+</string>
+<string id="st_msg_map_1_4_2">
+    <text>Vše v pořádku? Dej mi vědět, jestli něco potřebuješ. Uvidíme se.</text>
+</string>
+<string id="st_msg_map_1_4_3">
+    <text>Když se plánuješ někdy dostat na to místo, dej mi vědět. Měj se na pozoru.</text>
+</string>
+<string id="st_msg_map_1_4_4">
+    <text>Dej si pozor, když podnikneš cestu bez mě. Stále mi dlužíš pití za posledně.</text>
+</string>
+<string id="st_msg_map_1_4_5">
+    <text>Hodně štěstí! Dej mi vědět, kdyby ses sám objevil nějaké nové trasy.</text>
+</string>
+	
+<!-- RF source - caught a signal by accident -->
+   <string id="st_msg_rf_title_1_1">
+    <text>Radiové signály!</text>
+</string>
+<string id="st_msg_rf_title_1_2">
+    <text>Máš nějakou představu o tom?</text>
+</string>
+<string id="st_msg_rf_title_1_3">
+    <text>Přijal jsem zajímavý radiový signál.</text>
+</string>
+<string id="st_msg_rf_title_1_4">
+    <text>Něco vysílá signály!</text>
+</string>
+<string id="st_msg_rf_title_1_5">
+    <text>Šum na rádiu</text>
+</string>
+<string id="st_msg_rf_1_1_1">
+    <text>Ahoj kamaráde, znovu $c1_fname. Další nudný den. Dostali jsme další úkol od $leader, takže jsme museli zůstat ještě jeden den v $rf_map.</text>
+</string>
+<string id="st_msg_rf_1_1_2">
+    <text>Ahoj $fname, tady je $c1_fname. $trader chce další úkol splněn v $rf_map. Takže zatím se držím tohoto místa.</text>
+</string>
+<string id="st_msg_rf_1_1_3">
+    <text>Mluví $c1_fname. Jsem právě v $rf_map. Můj kamarád $c2_fname mi řekl, že zde je celkem dost artefaktů, takže jsme tady...</text>
+</string>
+   <string id="st_msg_rf_1_2_1">
+    <text>Pamatuješ ten hloupý RF přijímač, co jsi mi dal? Nevím, proč bys takovou věc používal, když máš PDA v kapse. Ale docela zábavné, když jsem si s ním hrál, najednou začal zařizovat a vydávat zvuky!</text>
+</string>
+<string id="st_msg_rf_1_2_2">
+    <text>Byl to dlouhý den. Začal jsem si hrát s tím RF přijímačem, který jsem měl používat jen v "nouzových případech". A po chvíli jsem začal slyšet něco...</text>
+</string>
+<string id="st_msg_rf_1_2_3">
+    <text>Zapomněl jsem vypnout RF přijímač, který obvykle nosím s sebou. Baterie skoro došla, ale jakmile jsem se přiblížil k cíli, zařízení začalo vydávat hlasité zvuky...</text>
+</string>
+<string id="st_msg_rf_1_2_4">
+    <text>A protože jsem tak zatraceně šťastný, můj RF přijímač a PDA se skoro spálily, když jsem procházel Elektro polem. Nemohu uvěřit, že jsem to přežil! A moje výbava stále funguje, což je fajn. A mimochodem, přijímač něco zjistil...</text>
+</string>
+<string id="st_msg_rf_1_2_5">
+    <text>Kromě toho RF přijímač dříve zachytil nějaké děsivé zvuky... Docela rušivé.</text>
+</string>
+<string id="st_msg_rf_1_2_6">
+    <text>Když tak, zas jsem slyšel ty zvuky na RF přijímači. Bylo to stejné jako minule.</text>
+</string>
+<string id="st_msg_rf_1_2_7">
+    <text>RF přijímač v poslední době zachytil nějaké zlověstné zvuky.</text>
+</string>
+    
+    
+<string id="st_msg_rf_1_3_1">
+    <text>Na frekvenci $rf_freq GHz jsem zachytil nějaký signál, myslím, že to přichází odtud někde okolo.</text>
+</string>
+<string id="st_msg_rf_1_3_2">
+    <text>Něco v $rf_map vysílá signály na frekvenci $rf_freq GHz a mám pocit, že je to dost blízko.</text>
+</string>
+<string id="st_msg_rf_1_3_3">
+    <text>Na frekvenci $rf_freq GHz se zvuk dostává dostatečně čistý.</text>
+</string>
+<string id="st_msg_rf_1_3_5">
+    <text>Je to jako by nějaká mutovaná bytost se snažila komunikovat přes rádio. Někdy ji můžete slyšet, když nastavíte přijímač na frekvenci $rf_freq GHz.</text>
+</string>
+<string id="st_msg_rf_1_3_4">
+    <text>Když naladíte přijímač na frekvenci $rf_freq GHz, můžete slyšet, co tím myslím. Kdo nebo co dělá ty zvuky - nezní příjemně ani zdravě.</text>
+</string>
+<string id="st_msg_rf_1_4_1">
+    <text>Půjdu se podívat kolem a sledovat tenhle signál.</text>
+</string>
+<string id="st_msg_rf_1_4_2">
+    <text>Co myslíš? Chci zjistit, o co jde, dej mi vědět, jestli se chceš přidat.</text>
+</string>
+<string id="st_msg_rf_1_4_3">
+    <text>Musím zjistit, o co jde. Přej mi štěstí.</text>
+</string>
+<string id="st_msg_rf_1_4_4">
+    <text>Rozhodli jsme se, že tyhle zvuky budeme zkoumat. Doufejme, že je to jen divný zvuk a nic víc.</text>
+</string>
+<string id="st_msg_rf_1_4_5">
+    <text>Půjdeme na obhlídku té oblasti a uvidíme, jestli najdeme zdroj těch zvuků. Uvidíme se později.</text>
+</string>
+
+<!-- Chitchat - you took stuff from me -->
+<string id="st_msg_chitchat_title_1_1">
+    <text>Kde jsou moje věci?</text>
+</string>
+<string id="st_msg_chitchat_title_1_2">
+    <text>Vím, že jsi to udělal ty.</text>
+</string>
+<string id="st_msg_chitchat_title_1_3">
+    <text>Do příště.</text>
+</string>
+<string id="st_msg_chitchat_title_1_4">
+    <text>Myslíš si, že je to vtipné?</text>
+</string>
+<string id="st_msg_chitchat_1_1_1">
+    <text>Ahoj $fname, tady je $c1_fname.</text>
+</string>
+<string id="st_msg_chitchat_1_1_2">
+    <text>$fname, ty malá mrcho!</text>
+</string>
+<string id="st_msg_chitchat_1_1_3">
+    <text>Ahoj</text>
+</string>
+<string id="st_msg_chitchat_1_1_4">
+    <text>$fname, já to věděl!</text>
+</string>
+<string id="st_msg_chitchat_1_2_1">
+    <text>Vzal jsi několik dietních klobás, které jsem si schoval, že ano?</text>
+</string>
+<string id="st_msg_chitchat_1_2_2">
+    <text>Kam se poděly všechny energetické nápoje z mého batohu?! Vím, že jsi to udělal, ty svině!</text>
+</string>
+<string id="st_msg_chitchat_1_2_3">
+    <text>Odešel jsi a ani jsi neřekl slovo. Bylo by to v pohodě, ale včera večer jsi mi vzal 3 láhve vodky!</text>
+</string>
+    
+   <string id="st_msg_chitchat_1_3_1">
+    <text>Příště, až se tady objevíš, měl bys mi přinést něco dobrého.</text>
+</string>
+<string id="st_msg_chitchat_1_3_2">
+    <text>Lepší, abys mi něco přinesl jako protislužbu. Měj to na paměti příště, až plánuješ se tady ukázat se svou ošklivou tváří.</text>
+</string>
+<string id="st_msg_chitchat_1_3_3">
+    <text>Nemysli si, že ti to projde bez povšimnutí.</text>
+</string>
+<string id="st_msg_chitchat_1_3_4">
+    <text>Mám už dost tvojí blbosti, člověče! Pojďme na to!</text>
+</string>
+<string id="st_msg_chitchat_1_3_5">
+    <text>Jsi fakt pěkný kamarád.</text>
+</string>
+
+<string id="st_msg_chitchat_1_4_1">
+    <text>Mimochodem, $trader tě chce vidět, tak si zkontroluj, co po tobě chce.</text>
+</string>
+<string id="st_msg_chitchat_1_4_2">
+    <text>$leader se ptal na tebe. Asi máš něco vážného na práci, dej mu zprávu, až se vrátíš.</text>
+</string>
+<string id="st_msg_chitchat_1_4_3">
+    <text>Dokonce i $c2_fname už měl dost tvé blbosti. $mechanic naopak tě chce kvůli něčemu důležitému, jdi se tam podívat.</text>
+</string>
+<string id="st_msg_chitchat_1_4_4">
+    <text>A který z vás idiotů mi píchal do spacáku?!</text>
+</string>
+<string id="st_msg_chitchat_1_4_5">
+    <text>Dlužíš mi vodku a balíček cigaret. Ty idiote.</text>
+</string>
+    
+<!-- Chitchat - trolling -->
+<string id="st_msg_joke_title_1_1">
+    <text>Někdo vypsával odměnu za tvou hlavu!</text>
+</string>
+<string id="st_msg_joke_title_1_2">
+    <text>Jsi terčem!</text>
+</string>
+<string id="st_msg_joke_title_1_3">
+    <text>Tvůj přítel nedávno zemřel.</text>
+</string>
+<string id="st_msg_joke_title_1_4">
+    <text>Přicházejí po tobě!</text>
+</string>
+<string id="st_msg_joke_1_1_1">
+    <text>Jen se snažím přilákat tvou pozornost.</text>
+</string>
+<string id="st_msg_joke_1_1_2">
+    <text>Jen žertuju, nezlob se, ok?</text>
+</string>
+<string id="st_msg_joke_1_1_3">
+    <text>Přilákán!</text>
+</string>
+<string id="st_msg_joke_1_1_4">
+    <text>Háček, šňůrka a váha! Haha!</text>
+</string>
+<string id="st_msg_joke_1_1_5">
+    <text>Ahhhahahahh! Rád bych teď viděl tvou tvář!</text>
+</string>
+    
+<string id="st_msg_joke_1_2_1">
+    <text>Můžeš na cestě zpátky přinést $c2_fname a mně nějakou Putinku?</text>
+</string>
+<string id="st_msg_joke_1_2_2">
+    <text>$c2_fname říká, že chce balení cigaret Lucky Strike. Pro mě... Marlboro, neboj, zaplatím ti zpět.</text>
+</string>
+<string id="st_msg_joke_1_2_3">
+    <text>Takže mi přijde hlad. Co takhle nějaké dietní klobásy?</text>
+</string>
+<string id="st_msg_joke_1_2_4">
+    <text>$c2_fname se vrátil naživu! Potkal nás dříve, takže dnes večer bychom měli oslavovat! Kup vodku a jídlo a můžeme se bavit jako v roce 1986!</text>
+</string>
+<string id="st_msg_joke_1_2_5">
+    <text>Kašli na jídlo z Zóny, až na těch divočákích kotletách. Mohl bys něco koupit?</text>
+</string>
+<string id="st_msg_joke_1_3_1">
+    <text>Už máme skoro za sebou směnu dne, tak se uvidíme za hodinu.</text>
+</string>
+<string id="st_msg_joke_1_3_2">
+    <text>Budu na tebe čekat. Do té doby se nepřiprav o život.</text>
+</string>
+<string id="st_msg_joke_1_3_3">
+    <text>Nepřijď zpátky s prázdnýma rukama, jinak jsi pro mě mrtvý. Zase.</text>
+</string>
+<string id="st_msg_joke_1_3_4">
+    <text>Uvidíme se zpátky v táboře, Stalkere!</text>
+</string>
+    
+<!-- Mission - target -->
+   <string id="st_msg_mission_target_title_1_1">
+    <text>Zpráva</text>
+</string>
+<string id="st_msg_mission_target_title_1_2">
+    <text>Cíl je blízko</text>
+</string>
+<string id="st_msg_mission_target_title_1_3">
+    <text>Týkající se cíle</text>
+</string>
+<string id="st_msg_mission_target_title_1_4">
+    <text>Jsem na pozici</text>
+</string>
+<string id="st_msg_mission_target_title_1_5">
+    <text>Připraven a čekám</text>
+</string>
+
+<string id="st_msg_mission_target_1_1_1">
+    <text>$leader, zde hovoří $fname $lname. Mám zprávu ohledně mise.</text>
+</string>
+<string id="st_msg_mission_target_1_1_2">
+    <text>Hovoří $fname $lname. Mám informace pro $leadera.</text>
+</string>
+<string id="st_msg_mission_target_1_1_3">
+    <text>Jmenuji se $fname $lname. Obdržel jsem rozkazy od $leadera týkající se důležitého cíle.</text>
+</string>
+<string id="st_msg_mission_target_1_1_4">
+    <text>Zde $fname $lname.</text>
+</string>
+    
+   <string id="st_msg_mission_target_1_2_1">
+    <text>Dorazil jsem na $map a zaujal pozici $directional $pointer. Mám jasný vizuální kontakt s cílem.</text>
+</string>
+<string id="st_msg_mission_target_1_2_2">
+    <text>Situace je u mě zatím klidná na $map. Váš cíl se pohybuje $directional $pointer. Budu sledovat jejich stopy za pár minut.</text>
+</string>
+
+<string id="st_msg_mission_target_1_3_1">
+    <text>Oblast je obklopena $enemy. Již dlouhou dobu neopouštějí své pozice. Vypadá to, že zde něco plánují.</text>
+</string>
+<string id="st_msg_mission_target_1_3_2">
+    <text>Měl bych také poznamenat, že jsem zpozoroval $enemy nedaleko odtud, ale nemělo by to být žádný problém. Nemám tušení, zda mají již nějaké spojení.</text>
+</string>
+<string id="st_msg_mission_target_1_3_3">
+    <text>Zpozoroval jsem $enemy v oblasti. Řekněte ostatním, aby byli opatrní, pokud se sem vydávají.</text>
+</string>
+<string id="st_msg_mission_target_1_3_4">
+    <text>Okolo těchto míst byli spatřeni $enemy. V oblasti byli docela aktivní.</text>
+</string>
+
+<string id="st_msg_mission_target_1_4_1">
+    <text>Jaké jsou vaše rozkazy?</text>
+</string>
+<string id="st_msg_mission_target_1_4_2">
+    <text>Rozkazy?</text>
+</string>
+<string id="st_msg_mission_target_1_4_3">
+    <text>Pokračovat budu v misi a hlásit jakékoli neobvyklé pohyby.</text>
+</string>
+<string id="st_msg_mission_target_1_4_4">
+    <text>To je vše zatím.</text>
+</string>
+<string id="st_msg_mission_target_1_4_5">
+    <text>Došlo ke změně plánů?</text>
+</string>
+    
+<!-- Mission - guard -->
+   <string id="st_msg_mission_guard_title_1_1">
+    <text>Vše je v pořádku</text>
+</string>
+<string id="st_msg_mission_guard_title_1_2">
+    <text>Klidný den</text>
+</string>
+<string id="st_msg_mission_guard_title_1_3">
+    <text>Strážím toto místo</text>
+</string>
+<string id="st_msg_mission_guard_title_1_4">
+    <text>Pošlete je sem</text>
+</string>
+<string id="st_msg_mission_guard_title_1_5">
+    <text>Držím tuto pozici</text>
+</string>
+<string id="st_msg_mission_guard_title_1_6">
+    <text>Zatím je to v pořádku</text>
+</string>
+
+<string id="st_msg_mission_guard_1_1_1">
+    <text>$leader, situace na $map je stejná jako obvykle. Kromě hladových slepých psů a tushkanů zde nejsou žádné velké hrozby. Měli jsme dost štěstí.</text>
+</string>
+<string id="st_msg_mission_guard_1_1_2">
+    <text>Před pár hodinami jsme zpozorovali $enemy $directional $pointer, ale pak se dostali pryč. Od té doby vypadá vše normálně.</text>
+</string>
+<string id="st_msg_mission_guard_1_1_3">
+    <text>Hovoří $fname. Zatím žádné novinky na $map. Už to takhle trvá nějakou dobu.</text>
+</string>
+<string id="st_msg_mission_guard_1_1_4">
+    <text>Hlásí se $fname. $map je klidné... tak nějak.</text>
+</string>
+<string id="st_msg_mission_guard_1_2_1">
+    <text>Můžete sem poslat skupinu $c1_fname, budeme na ně čekat.</text>
+</string>
+<string id="st_msg_mission_guard_1_2_2">
+    <text>Pokud chce skupina $c1_fname jít tímto směrem, je to bezpečné. Budeme dávat pozor na všechno, co by se mohlo stát.</text>
+</string>
+<string id="st_msg_mission_guard_1_2_3">
+    <text>Počkám, až skupina $c1_fname převezme další směnu.</text>
+</string>
+<string id="st_msg_mission_guard_1_2_4">
+    <text>Jsme připraveni, aby nás vystřídala další skupina.</text>
+</string>
+<string id="st_msg_mission_guard_1_3_1">
+    <text>$fname končí.</text>
+</string>
+<string id="st_msg_mission_guard_1_3_2">
+    <text>Do té doby budeme stát na stráži.</text>
+</string>
+<string id="st_msg_mission_guard_1_3_3">
+    <text>Lepší, aby se pospíchalo, než se zatmí.</text>
+</string>
+<string id="st_msg_mission_guard_1_3_4">
+    <text>Řekněte jim, aby se hnuli.</text>
+</string>
+
+
+<!-- Mission - mutant hunt -->
+<string id="st_msg_mission_hunt_title_1_1">
+    <text>Svobodné maso</text>
+</string>
+<string id="st_msg_mission_hunt_title_1_2">
+    <text>Na lov</text>
+</string>
+<string id="st_msg_mission_hunt_title_1_3">
+    <text>Výlet na lov</text>
+</string>
+<string id="st_msg_mission_hunt_title_1_4">
+    <text>Chtěl bys se přidat?</text>
+</string>
+<string id="st_msg_mission_hunt_1_1_1">
+    <text>Hej $fname, stále jsi poblíž $map?</text>
+</string>
+<string id="st_msg_mission_hunt_1_1_2">
+    <text>$fname, měl bys se na to podívat!</text>
+</string>
+<string id="st_msg_mission_hunt_1_1_3">
+    <text>Chystáme se na výlet na lov. Chybíš nám, $fname.</text>
+</string>
+<string id="st_msg_mission_hunt_1_1_4">
+    <text>Jdeme znovu na lov, chceš se přidat?</text>
+</string>
+<string id="st_msg_mission_hunt_1_2_1">
+    <text>$c2_fname zpozoroval skupinu Flešů $directional $pointer. Vypadají zdravě, na kostech spousta masa. Ještě nás nezpozorovali...</text>
+</string>
+<string id="st_msg_mission_hunt_1_2_2">
+    <text>Já a $c2_fname jsme viděli dva velké divoké prasata $directional $pointer. Větší než obvykle!</text>
+</string>
+<string id="st_msg_mission_hunt_1_2_3">
+    <text>Flaksy hodně Flaks, $directional $pointer. Teď spí.</text>
+</string>
+<string id="st_msg_mission_hunt_1_2_4">
+    <text>Dříve jsme viděli skupinu divočáků, jak se usazují ke spánku.</text>
+</string>
+
+   <string id="st_msg_mission_hunt_1_3_1">
+    <text>$c2_fname se chce je vylovit. Zdarma maso, když se mě zeptáš.</text>
+</string>
+<string id="st_msg_mission_hunt_1_3_2">
+    <text>Lepší, když sem dorazíš. Už nemůžeme čekat, jinak se někam schovají.</text>
+</string>
+<string id="st_msg_mission_hunt_1_3_3">
+    <text>Připravil jsem si svůj lovecký nůž a $c2_fname je sleduje pozorně.</text>
+</string>
+<string id="st_msg_mission_hunt_1_4_1">
+    <text>Počkáme 10 minut, tak mi dej vědět, jestli se přiblížíš, a můžeme to udělat společně.</text>
+</string>
+<string id="st_msg_mission_hunt_1_4_2">
+    <text>Tak ty sem přijdeš, nebo ne?</text>
+</string>
+<string id="st_msg_mission_hunt_1_4_3">
+    <text>Informuj zbytek skupiny, že se zpozdíme, ok?</text>
+</string>
+    
+<!-- Mission - raid -->
+<string id="st_msg_mission_raid_title_1_1">
+    <text>Příprava na útok</text>
+</string>
+<string id="st_msg_mission_raid_title_1_2">
+    <text>Zdarma</text>
+</string>
+<string id="st_msg_mission_raid_title_1_3">
+    <text>Jdeme do toho</text>
+</string>
+<string id="st_msg_mission_raid_title_1_4">
+    <text>Příprava na léčku</text>
+</string>
+<string id="st_msg_mission_raid_title_1_5">
+    <text>Pokračujeme v útoku</text>
+</string>
+<string id="st_msg_mission_raid_title_1_6">
+    <text>Máme párty</text>
+</string>
+<string id="st_msg_mission_raid_1_1_1">
+    <text>$fname, co se děje? Máme dnes něco na práci!</text>
+</string>
+<string id="st_msg_mission_raid_1_1_2">
+    <text>Tady je $c1_fname, jak se máš, $fname?</text>
+</string>
+<string id="st_msg_mission_raid_1_1_3">
+    <text>Slyšel jsem, že jsi hledal práci, $fname?</text>
+</string>
+<string id="st_msg_mission_raid_1_1_4">
+    <text>Mám pro tebe úkol, $fname.</text>
+</string>
+<string id="st_msg_mission_raid_1_2_1">
+    <text>Zpozorovali jsme pár nováčků bloudících $directional $pointer. Vypadá to, že se ztratili.</text>
+</string>
+<string id="st_msg_mission_raid_1_2_2">
+    <text>Na $map se potuluje pár "zdarmáčů". Právě teď táboří $directional $pointer.</text>
+</string>
+<string id="st_msg_mission_raid_1_2_3">
+    <text>Viděli jsme skupinu poblíž $directional $pointer, která měla těžké časy.</text>
+</string>
+    
+    <string id="st_msg_mission_raid_1_3_1">
+    <text>Jsem si jistý, že ti parchanti mají plné kapsy. Měli bychom počkat na nejlepší okamžik, abychom zaútočili.</text>
+</string>
+<string id="st_msg_mission_raid_1_3_2">
+    <text>Mám pocit, že dnes večer se zbohatneme...</text>
+</string>
+<string id="st_msg_mission_raid_1_3_3">
+    <text>Jejich batohy se zdají být plné a těžké. Tentokrát bychom mohli mít štěstí.</text>
+</string>
+<string id="st_msg_mission_raid_1_3_4">
+    <text>Mají nějaké dobré vybavení a byli na zajímavých místech.</text>
+</string>
+<string id="st_msg_mission_raid_1_4_1">
+    <text>Tak, jsi uvnitř nebo ne?</text>
+</string>
+<string id="st_msg_mission_raid_1_4_2">
+    <text>Brzy zaútočíme. Chceš se k nám přidat?</text>
+</string>
+<string id="st_msg_mission_raid_1_4_3">
+    <text>Pověz $c2_fname, že se zpozdíme, ať na nás nečeká.</text>
+</string>
+<string id="st_msg_mission_raid_1_4_4">
+    <text>Mohl bych využít spolehlivého člověka jako jsi ty. Co říkáš?</text>
+</string>
+    
+<!-- Mission - bounty -->
+   <string id="st_msg_mission_bounty_title_1_1">
+    <text>Odměna</text>
+</string>
+<string id="st_msg_mission_bounty_title_1_2">
+    <text>Mám něco.</text>
+</string>
+<string id="st_msg_mission_bounty_title_1_3">
+    <text>Nový úkol.</text>
+</string>
+<string id="st_msg_mission_bounty_title_1_4">
+    <text>Dostupná odměna</text>
+</string>
+<string id="st_msg_mission_bounty_1_1_1">
+    <text>Hej $c1_fname, máme co dělat.</text>
+</string>
+<string id="st_msg_mission_bounty_1_1_2">
+    <text>$fname, mám pro tebe něco.</text>
+</string>
+<string id="st_msg_mission_bounty_1_1_3">
+    <text>Probudi se, $fname, připrav si pušku. Máme úkol.</text>
+</string>
+<string id="st_msg_mission_bounty_1_1_4">
+    <text>Hej $fname. Seber si jídlo a munici.</text>
+</string>
+<string id="st_msg_mission_bounty_1_2_1">
+    <text>Před pár minutami jsem se setkal s $traderem a ten chce někoho mrtvého. Peníze jsou dobré tentokrát.</text>
+</string>
+<string id="st_msg_mission_bounty_1_2_2">
+    <text>$trader vyhlásil odměnu 10 000 RU za něčí hlavu. To zní dobře.</text>
+</string>
+<string id="st_msg_mission_bounty_1_2_3">
+    <text>$leader byl rozzuřený. Řekl, že někdo zabil dva naše lidi a chce toho viníka zlikvidovat. Odměna je velká, takže to musí být vážné.</text>
+</string>
+<string id="st_msg_mission_bounty_1_2_4">
+    <text>Takže jsem si kupoval munici od $tradera a zeptal jsem se ho, jestli pro mě má nějakou práci. Řekl, že někdo se mu vměšuje do obchodu a on ho chce na vždy umlčet. Nejlepší je, že nabízí Mořskou medúzu jako odměnu.</text>
+</string>
+    
+    <string id="st_msg_mission_bounty_1_3_1">
+    <text>Jmenuje se $c2_fname $c2_lname. Naposledy byli spatřeni bloudící v okolí $map, $directional $pointer.</text>
+</string>
+<string id="st_msg_mission_bounty_1_3_2">
+    <text>Zeptal jsem se několika lidí a řekli mi, že náš chlap se pohyboval v okolí $map. Přesněji $directional $pointer. Jeho jméno je $c2_fname $c2_lname. A jeden z našich zdrojů zmínil, že cestuje s $enemy, takže to může být tvrdý oříšek.</text>
+</string>
+<string id="st_msg_mission_bounty_1_3_3">
+    <text>$c2_fname $c2_lname je cíl. V poslední době naštval hodně lidí, takže by nemělo být těžké získat informace.</text>
+</string>
+<string id="st_msg_mission_bounty_1_4_1">
+    <text>Setkáme se tam a prozkoumáme okolí. Dej mi vědět, jestli můžeš získat více informací o něm.</text>
+</string>
+<string id="st_msg_mission_bounty_1_4_2">
+    <text>Říkám, že to zkusme dřív, než si někdo jiný vezme tu odměnu pro sebe. Dohoda?</text>
+</string>
+<string id="st_msg_mission_bounty_1_4_3">
+    <text>Když se mě ptáš, odměna stojí za to. Tak co kdybychom se setkali poblíž místa a rozhodli se, co dál?</text>
+</string>
+<string id="st_msg_mission_bounty_1_4_4">
+    <text>Připrav si svou výbavu a vyhledejme toho parchanta!</text>
+</string>
+<string id="st_msg_mission_bounty_1_4_5">
+    <text>Musíme se pohnout rychle.</text>
+</string>
+
+<!-- Mission - artefact -->
+<string id="st_msg_mission_artefact_title_1_1">
+    <text>Je to možné?</text>
+</string>
+<string id="st_msg_mission_artefact_title_1_2">
+    <text>Dostal jsem se k artefaktu</text>
+</string>
+<string id="st_msg_mission_artefact_title_1_3">
+    <text>Nalezl jsem něco zajímavého</text>
+</string>
+<string id="st_msg_mission_artefact_title_1_4">
+    <text>Nalezl jsem artefakt!</text>
+</string>
+<string id="st_msg_mission_artefact_title_1_5">
+    <text>Našel jsem artefakt!</text>
+</string>
+<string id="st_msg_mission_artefact_title_1_6">
+    <text>Výplata!</text>
+</string>
+<string id="st_msg_mission_artefact_1_1_1">
+    <text>Sakra, našel jsem Měsíční svit v $map. Jsem tak sakra šťastný.</text>
+</string>
+<string id="st_msg_mission_artefact_1_1_2">
+    <text>Woo! Právě jsem našel Bublinu!</text>
+</string>
+<string id="st_msg_mission_artefact_1_2_1">
+    <text>Téměř jsem se zabil všemi těmi Elektromi kolem, ale stálo to za to.</text>
+</string>
+<string id="st_msg_mission_artefact_1_2_2">
+    <text>Namáčel jsem hodně radiace při pokusu chytit tuhle krásku. Pořád se kutálela po zemi.</text>
+</string>
+<string id="st_msg_mission_artefact_1_3_1">
+    <text>Myslíš, že $trader bude o tohle mít zájem?</text>
+</string>
+    
+<!-- Mission - anomaly study -->
+<string id="st_msg_mission_anomaly_title_1_1">
+    <text>Dostal jsem se do pole anomálií</text>
+</string>
+<string id="st_msg_mission_anomaly_title_1_2">
+    <text>Normální anomálie!</text>
+</string>
+<string id="st_msg_mission_anomaly_title_1_3">
+    <text>Tohle je divné...</text>
+</string>
+<string id="st_msg_mission_anomaly_title_1_4">
+    <text>Neobvyklá anomální aktivita.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_1_1">
+    <text>Ahoj $c1_fname. Jsem právě v $map, $directional $pointer.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_1_2">
+    <text>$c1_fname, tady $fname. Tým výzkumníků se dostal do $map, $directional $pointer.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_1_3">
+    <text>Ok $c1_fname, dorazil jsem do $map před 15 minutami. Detektor ukazuje, že anomální aktivita $directional $pointer je silná.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_2_1">
+    <text>Jak se očekávalo, poslední emise měla vliv na anomální pole v této oblasti. Můj dávkový měřič dosahuje vysokých hodnot, zde je vysoká úroveň radiace.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_2_2">
+    <text>Oblast se zdá být jiná. Vedle sebe jsou tři nové Vortexové anomálie. Poslední psi-bouře byla opravdu silná.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_2_3">
+    <text>Anomálie se posunuly a situace se zhoršila.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_2_4">
+    <text>Mutanti se zdají vyhýbat této oblasti, i když jsme venku a zranitelní. Je to velmi zajímavé chování...</text>
+</string>
+
+<string id="st_msg_mission_anomaly_1_3_1">
+    <text>Stojím poblíž jedné z Vortexů a ta je v porovnání s tím, co jsme dosud viděli, neobvyklá. Gravitační pole je velmi silné, ale nejpodivnější je, že není stacionární! Ukazuje náhodný pohyb a poloměr se časem rozšiřuje. Zdá se však, že gravitační pole ztrácí svou sílu kvůli tomuto chování.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_3_2">
+    <text>Nyní je zajímavá část tohoto Masomlejnku. Gravitační pole je u této silné.</text>
+</string>
+<string id="st_msg_mission_anomaly_1_3_3">
+    <text>Ale co mě nejvíce zaujalo, je tato anomálie Trampolína. Na rozdíl od ostatních je poloměr kolem 5 metrů. Je obrovská!</text>
+</string>
+
+<string id="st_msg_mission_anomaly_1_4_1">
+    <text>Chceš, abych provedl měření?</text>
+</string>
+<string id="st_msg_mission_anomaly_1_4_2">
+    <text>Co kdybych umístil několik senzorů kolem pole, abys viděl artefakty sám?</text>
+</string>
+<string id="st_msg_mission_anomaly_1_4_3">
+    <text>Pokusím se získat více artefaktů a provést další pozorování. Po dokončení ti pošlu data.</text>
+</string>
+</string_table>
+
+

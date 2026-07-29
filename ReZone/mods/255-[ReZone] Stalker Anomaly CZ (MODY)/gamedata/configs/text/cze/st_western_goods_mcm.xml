@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+<!--=================================================================================================================-->
+<!--                                                                                                                 -->
+<!--    Original Author(s) : NLTP_ASHES                                                                              -->
+<!--    Edited : N/A                                                                                                 -->
+<!--    Date : 23/10/2024                                                                                            -->
+<!--    License : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)          -->
+<!--                                                                                                                 -->
+<!--    Translation file for Western Goods' tab in the Mod Configuration Menu.                                       -->
+<!--                                                                                                                 -->
+<!--=================================================================================================================-->
+<string_table>
+
+    <!--=============================================================================================================-->
+    <!--    MAIN STRINGS                                                                                             -->
+    <!--=============================================================================================================-->
+
+    <!-- Page Title -->
+    <string id="ui_mcm_western_goods_title">
+        <text>Západní zboží</text>
+    </string>
+
+    <!-- Menu Title -->
+    <string id="ui_mcm_menu_western_goods">
+        <text>Western Goods</text>
+    </string>
+
+    <!--=============================================================================================================-->
+    <!--    GENERAL SETTINGS                                                                                         -->
+    <!--=============================================================================================================-->
+
+    <!-- Section Title -->
+ <string id="ui_mcm_western_goods_general_settings_title">
+	<text>OBECNÉ NASTAVENÍ</text>
+</string>
+
+<!-- Řízené úkoly -->
+<string id="ui_mcm_western_goods_guided_tasks">
+	<text>Naváděné úkoly</text>
+</string>
+
+<string id="ui_mcm_western_goods_guided_tasks_desc">
+	<text>Část některých úkolů je záměrně bez navádění, aby podporovala průzkum a přemýšlení. Toto nastavení můžete kdykoliv změnit a zobrazit značku cíle v PDA.</text>
+</string>
+
+<!-- Regenerace PSI při čtení časopisů -->
+<string id="ui_mcm_western_goods_magazine_psi_regen">
+	<text>Koeficient regenerace PSI zdraví při čtení časopisů</text>
+</string>
+
+<string id="ui_mcm_western_goods_magazine_psi_regen_desc">
+	<text>Určuje násobitel regenerace PSI zdraví (psychického zdraví) během čtení časopisu.</text>
+</string>
+
+    <!--=============================================================================================================-->
+    <!--    DEVICES SETTINGS                                                                                         -->
+    <!--=============================================================================================================-->
+
+    <!-- Section Title -->
+   <string id="ui_mcm_western_goods_devices_settings_title">
+	<text>NASTAVENÍ ZAŘÍZENÍ</text>
+</string>
+
+<!-- GPS lokátor - řízené výboje -->
+<string id="ui_mcm_western_goods_guided_surge">
+	<text>GPS lokátor - naváděné emise/psi-bouře</text>
+</string>
+
+<string id="ui_mcm_western_goods_guided_surge_desc">
+	<text>Pokud je povoleno, při výskytu emise nebo psi-bouře obdržíte úkol v PDA, který vás nasměruje k nejbližšímu úkrytu. Pokud je zakázáno, úkol se stále zobrazí, ale nebude uvádět nejbližší úkryt. GPS lokátor lze použít k nalezení nejbližšího úkrytu.</text>
+</string>
+
+<!-- Kompas - uzamčení severu -->
+<string id="ui_mcm_western_goods_compass_north_lock">
+	<text>Kompas - uzamčení severu</text>
+</string>
+
+<string id="ui_mcm_western_goods_compass_north_lock_desc">
+	<text>Pokud je povoleno, pozadí kompasu bude vždy zobrazovat sever nahoře a ukazatel bude směřovat směrem, kterým hráč hledí. Pokud je zakázáno, ukazatel bude vždy směřovat nahoru a pozadí se bude otáčet podle směru pohledu hráče.</text>
+</string>
+
+<!-- Zapalovače - jas -->
+<string id="ui_mcm_western_goods_light_brightness_factor">
+	<text>Zapalovače - jas</text>
+</string>
+
+<string id="ui_mcm_western_goods_light_brightness_factor_desc">
+	<text>Nastavuje jas světla vyzařovaného zapalovači tohoto doplňku. Jedná se o násobitel, takže při hodnotě 2.0 budou zapalovače dvakrát jasnější než normálně. Vyžaduje načtení uložené hry.</text>
+</string>
+
+<!-- Zapalovače - dosah -->
+<string id="ui_mcm_western_goods_light_range_factor">
+	<text>Zapalovače - dosah</text>
+</string>
+
+<string id="ui_mcm_western_goods_light_range_factor_desc">
+	<text>Nastavuje dosah světla vyzařovaného zapalovači tohoto doplňku. Jedná se o násobitel, takže při hodnotě 2.0 budou mít zapalovače dvojnásobný dosah oproti normálu. Vyžaduje načtení uložené hry.</text>
+</string>
+
+    <!--=============================================================================================================-->
+    <!--    KEY-BINDINGS                                                                                             -->
+    <!--=============================================================================================================-->
+
+    <!-- Section Title -->
+ <string id="ui_mcm_western_goods_keybindings_title">
+	<text>NASTAVENÍ KLÁVES</text>
+</string>
+
+<!-- Příkaz k útoku vrtulníku -->
+<string id="ui_mcm_western_goods_heli_attack">
+	<text>Přikázat vrtulníku útok</text>
+</string>
+
+<string id="ui_mcm_western_goods_heli_attack_desc">
+	<text>Klávesa používaná k odeslání příkazu k útoku vrtulníku. Zaměřte cíl a použijte tuto klávesu k vydání rozkazu.</text>
+</string>
+
+<!-- Noční vidění dálkoměru -->
+<string id="ui_mcm_western_goods_rangefinder_nv">
+	<text>Přepnout barvu zaměřovače dálkoměru</text>
+</string>
+
+<string id="ui_mcm_western_goods_rangefinder_nv_desc">
+	<text>Klávesa používaná k přepnutí barvy zaměřovače (červená/zelená) dálkoměru SigSauer KILO5K.</text>
+</string>
+
+<!--=============================================================================================================-->
+<!--    NASTAVENÍ LOOTU                                                                                            -->
+<!--=============================================================================================================-->
+
+<!-- Název sekce -->
+<string id="ui_mcm_western_goods_loot_settings_title">
+	<text>NASTAVENÍ KOŘISTI</text>
+</string>
+
+<!-- Šance na loot u obchodníků -->
+<string id="ui_mcm_western_goods_trader_loot_factor">
+	<text>Koeficient lootu u obchodníků</text>
+</string>
+
+<string id="ui_mcm_western_goods_trader_loot_factor_desc">
+	<text>Určuje násobitel, kterým se ovlivňuje šance výskytu předmětů u obchodníků. Ovlivňuje pouze pravděpodobnost výskytu, nikoliv množství.</text>
+</string>
+
+<!-- Šance na loot u mrtvol -->
+<string id="ui_mcm_western_goods_corpse_loot_factor">
+	<text>Koeficient lootu z mrtvol</text>
+</string>
+
+<string id="ui_mcm_western_goods_corpse_loot_factor_desc">
+	<text>Určuje násobitel, kterým se ovlivňuje šance výskytu předmětů v mrtvolách. Ovlivňuje pouze pravděpodobnost výskytu, nikoliv množství.</text>
+</string>
+
+<!-- Předměty na mrtvolu -->
+<string id="ui_mcm_western_goods_max_item_per_corpse">
+	<text>Maximální počet předmětů na mrtvolu</text>
+</string>
+
+<string id="ui_mcm_western_goods_max_item_per_corpse_desc">
+	<text>Určuje maximální počet předmětů X, které se mohou objevit v jedné mrtvole. Hra nejprve vybere X předmětů k vytvoření a poté pro každý z nich vyhodnotí šanci na nalezení. Ve výsledku můžete získat od 0 do X předmětů.</text>
+</string>
+
+<!--=============================================================================================================-->
+<!--    COMPATIBILITY SETTINGS                                                                                   -->
+<!--=============================================================================================================-->
+
+ <!-- Název sekce -->
+<string id="ui_mcm_western_goods_compatibility_title">
+	<text>NASTAVENÍ KOMPATIBILITY</text>
+</string>
+
+<!--=============================================================================================================-->
+<!--     TECHNICAL SETTINGS                                                                                      -->
+<!--=============================================================================================================-->
+
+<!-- Název sekce -->
+<string id="ui_mcm_western_goods_technical_settings_title">
+	<text>TECHNICKÁ NASTAVENÍ</text>
+</string>
+
+<!-- Režim ladění -->
+<string id="ui_mcm_western_goods_debug_mode">
+	<text>Režim ladění</text>
+</string>
+
+<string id="ui_mcm_western_goods_debug_mode_desc">
+	<text>Umožní doplňku vypisovat informace do konzole/protokolů pro pozdější kontrolu při hledání problémů.</text>
+</string>
+
+<!-- Odstranění doplňku -->
+<string id="ui_mcm_western_goods_addon_removal">
+	<text>Odstranění doplňku</text>
+</string>
+
+<string id="ui_mcm_western_goods_addon_removal_desc">
+	<text>Umožňuje bezpečné odstranění doplňku. Aktivujte toto nastavení a poté uložte hru. Následně můžete doplněk odstranit, znovu načíst toto uložení a pokračovat ve hře bez Western Goods.</text>
+</string>
+
+</string_table>

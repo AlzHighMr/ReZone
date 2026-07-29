@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<string id="st_ignite_fire">
+	<text>Zapálit ($$ACTION_USE$$)</text>
+</string>
+<string id="st_ignite_wait">
+	<text>Musíš chvíli počkat, než znovu rozděláš oheň</text>
+</string>
+<string id="st_ignite_far">
+	<text>Musíš být blízko táboráku</text>
+</string>
+<string id="st_extinguish_fire">
+	<text>Uhasit ($$ACTION_USE$$)</text>
+</string>
+<string id="actor_inventory_box_use">
+	<text>Otevřít osobní schránku ($$ACTION_USE$$)</text>
+</string>
+<string id="cant_walk">
+	<text>Jsi příliš vyčerpaný na to, abys ses pohnul</text>
+</string>
+<string id="cant_walk_weight">
+	<text>Máš příliš velkou zátěž na to, abys ses pohnul</text>
+</string>
+<string id="car_character_use">
+	<text>Otevřít dveře ($$ACTION_USE$$)</text>
+</string>
+<string id="st_use_action_sit">
+	<text>Sednout si ($$ACTION_USE$$)</text>
+</string>
+<string id="character_use">
+	<text>Mluvit ($$ACTION_USE$$)</text>
+</string>
+<string id="dead_character_use">
+	<text>Prohledat tělo ($$ACTION_USE$$)</text>
+</string>
+<string id="dead_character_use_or_drag">
+	<text>Prohledat tělo ($$ACTION_USE$$)\nPřetáhnout tělo (SHIFT+$$ACTION_USE$$)</text>
+</string>
+<string id="general_complete_task">
+	<text>Mise dokončena:</text>
+</string>
+<string id="general_fail_task">
+	<text>Mise zrušena:</text>
+</string>
+<string id="general_in_item">
+	<text>Obdržen předmět:</text>
+</string>
+<string id="general_in_money">
+	<text>Přijaté peníze:</text>
+</string>
+<string id="general_new_task">
+	<text>Nová mise:</text>
+</string>
+<string id="general_out_item">
+	<text>Ztracený předmět:</text>
+</string>
+<string id="general_out_money">
+	<text>Ztracené peníze:</text>
+</string>
+<string id="general_reverse_task">
+	<text>Mise zrušena:</text>
+</string>
+<string id="general_update_task">
+	<text>Mise aktualizována:</text>
+</string>
+	<string id="gun_jammed">
+		<text>Zbraň se zasekla</text>
+	</string>
+	<string id="st_item_taken">
+		<text>%s</text>
+	</string>
+	<string id="inventory_box_use">
+		<text>Prohledat ($$ACTION_USE$$)</text>
+	</string>
+	<string id="inventory_item_use">
+		<text>Sebrat předmět ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b10_ufo_searching_tips">
+		<text>Prohledat ($$ACTION_USE$$)</text>
+	</string>
+<string id="jup_b1_bar_door">
+<text>Dveře jsou zaseknuté</text>
+</string>
+<string id="jup_b1_door_is_closed">
+<text>Dveře jsou zamčené zevnitř</text>
+</string>
+<string id="jup_b202_treasures_closed">
+<text>Sejf je zamčený</text>
+</string>
+<string id="jup_b205_tip_door_closed">
+<text>Potřebujete kód</text>
+</string>
+	<string id="jup_b205_tip_door_decode">
+		<text>Zadat kód($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b206_use_plant">
+		<text>Vezměte rostlinu ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b209_scanner_place_tips">
+		<text>Nastavit scanner ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b209_scanner_remove_tips">
+		<text>Vzít scanner ($$ACTION_USE$$)</text>
+	</string>
+	<string id="lx8_raduga">
+		<text>Potlačení agrese duhy\n
+		model komplexu vnějších emisí\n
+		měřítko 1:20</text>
+	</string>
+	<string id="pas_b400_tip_switcher">
+		<text>Aktivace spínače ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a18_use_idol">
+		<text>Prozkoumat zařízení ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a25_blow_up_enter_door">
+		<text>Položit výbušninu ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a28_talk_with_stupid_medic">
+		<text>Obnovit ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_b306_elevator_door_locked_used">
+		<text>Výtah nemá energii</text>
+	</string>
+	<string id="pri_b306_generator_use">
+		<text>Aktivovat generátor ($$ACTION_USE$$)</text>
+	</string>
+	<string id="sleep_ok_button">
+		<text>Spát</text>
+	</string>
+	<string id="sleep_warning_all_pleasures">
+		<text>Nemůžeš spát. Krvácíš a trpíš ozářením. Použij léky nebo vyhledej lékaře.</text>
+	</string>
+	<string id="sleep_warning_bleeding">
+		<text>Nemůžeš spát. Krvácíš. Použijte léky nebo vyhledejte lékaře.</text>
+	</string>
+	<string id="sleep_warning_radiation">
+		<text>Nemůžeš spát. Trpíš ozářením. Použij léky nebo vyhledej lékaře.</text>
+	</string>
+	<string id="sleep_zone_tip">
+		<text>Spát ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_autosave">
+		<text>Automatické ukládání...</text>
+	</string>
+	<string id="st_can_use_weapon_now">
+		<text>Nyní můžeš vyndat zbraň.</text>
+	</string>
+	<string id="st_codelock">
+		<text>Kódový zámek ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_detective_news">
+<text>V osobní schránce na Skadovsku byly uloženy lékařské potřeby pro vyřešení tajemství zmizelých stalkerů.</text>
+	</string>
+	<string id="st_duty_first_reward_news">
+<text>Do osobní schránky na Janově byl vložen univerzální ochranný oblek PS5-M za pomoc Povinnosti.</text>
+	</string>
+	<string id="st_duty_druha_odmena_news">
+<text>Do osobní schránky v Janově byl vložen pancéřový oblek PSZ-9d Duty za pomoc Povinnosti.</text>
+	</string>
+	<string id="st_freedom_first_reward_news">
+		<text>Do osobní schránky u Janova byl vložen oblek Wind of Freedom za pomoc Svobodě.</text>
+	</string>
+	<string id="st_freedom_second_reward_news">
+		<text>Do osobní schránky v Janově byl vložen oblek Strážce svobody za pomoc Svobodě.</text>
+	</string>
+	<string id="st_freeplay_text_ok">
+		<text>Nedostal ses k vrtulníkům a evakuační tým opustil Zónu bez tebe.</text>
+	</string>
+	<string id="st_freeplay_text_yes_no">
+<text>Jsi připraven opustit Zónu? Není cesty zpět.</text>
+	</string>
+
+	<string id="st_game_over">
+		<text> </text>
+	</string>
+	<string id="st_game_over_press_jump">
+		<text> </text>
+	</string>
+	<string id="st_game_paused">
+		<text>Pauza</text>
+	</string>
+	<string id="st_game_saved">
+		<text>Hra uložena</text>
+	</string>
+	<string id="st_herald_of_justice_news">
+<text>Do osobní schránky na Skadovsku byl vložen artefakt za pomoc při odhalení Magpie.</text>
+	</string>
+	<string id="st_jup_b41_door_locked">
+<text>Musíš počkat, až se dok utěsní</text>.
+	</string>
+	<string id="st_lx8_button_press_true">
+		<text>Přístup povolen</text>
+	</string>
+	<string id="st_lx8_lift_button">
+		<text>Vyjeď výtahem nahoru ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_pri_b306_go_down">
+		<text>Sjeď výtahem dolů ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_psy_danger">
+		<text>Nebezpečné úrovně psy-emisí. Pro další postup je nutná ochrana.</text>
+	</string>
+	<string id="st_helmet_countdown">
+		<text>Vypnutí ochrany</text>
+	</string>
+	<string id="st_radiation_danger">
+		<text>Nebezpečná úroveň radiace. Pro další postup je nutná lepší ochrana.</text>
+	</string>
+	<string id="st_search_helicopter">
+		<text>Prohledat Helikoptéru ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_search_treasure">
+		<text>Prohledat Skrýš ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_sleep_hours">
+		<text>h</text>
+	</string>
+	<string id="st_tip">
+		<text>Zpráva</text>
+	</string>
+	<string id="tip_door_blocked">
+		<text>Dveře jsou zablokovány</text>
+	</string>
+	<string id="tip_door_close">
+		<text>Zavřít dveře ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_door_closed_base_alarm">
+		<text>Dveře jsou zamčené - tábor je v pohotovosti</text>
+	</string>
+	<string id="tip_door_closed_hide_weapon">
+		<text>Dveře jsou zamčené - zbraň musíš uložit do pouzdra.</text>
+	</string>
+	<string id="tip_door_locked">
+		<text>Dveře jsou zamčené</text>
+	</string>
+	<string id="tip_door_no_electricity">
+		<text>Dveře nejsou napájeny</text>
+	</string>
+	<string id="tip_door_open">
+		<text>Otevřít dveře ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_gate_locked">
+		<text>Brána blokována</text>
+	</string>
+	<string id="tip_need_access_card">
+		<text>Použít přístupovou kartu ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_no_access_card">
+		<text>Vyžadována přístupová karta</text>
+	</string>
+	<string id="tip_open_another_site">
+		<text>Z této strany nelze dveře otevřít</text>
+	</string>
+	<string id="ui_st_mp_experience_grow">
+		<text>-</text>
+	</string>
+	<string id="ui_st_mp_create">
+		<text>Vytvořit</text>
+	</string>
+	<string id="zat_b12_conteiner_full_locked">
+		<text>Kontejner je uzamčen. K jeho otevření jsou potřeba dva klíče.</text>
+	</string>
+	<string id="zat_b12_conteiner_has_one_key">
+		<text>Použít klíč ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b12_conteiner_has_two_key">
+		<text>Použít klíč ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b12_conteiner_locked">
+		<text>Kontejner je uzamčen. K jeho otevření potřebujete druhý klíč.</text>
+	</string>
+	<string id="zat_b12_conteiner_open">
+		<text>Otevřít kontejner ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b14_door_locked_hint">
+		<text>Dveřní mechanismus byl zablokován zevnitř.</text>
+	</string>
+	<string id="zat_b57_balon_use_hint">
+		<text>Připojit plynovou nádrž ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b57_gas_warning">
+		<text>Upozornění! Chemické nebezpečí!</text>
+	</string>
+	<string id="zat_b57_vintil_press">
+    <text>Otáčet ventil ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b33_car_searching_tip">
+		<text>Prohledat auto ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_resupply_ready">
+		<text>Můžeš doplnit zásoby zdravotnického materiálu a munice návštěvou poručíka Rogovce a poručíka Kirillova.</text>
+	</string>
+	<string id="st_surge_while_asleep">
+		<text>V Zóně nedávno došlo k emisi</text>.
+	</string>
+	<string id="st_mutant_hunter_news">
+		<text>V osobní schránce v Janově byla umístěna munice pro likvidaci nebezpečných mutantů</text>.
+	</string>
+	<string id="st_found_old_treasure">
+		<text>Přijaté souřadnice již objevené skrýše</text>.
+	</string>
+	<string id="st_got_treasure">
+		<text>Nalezená skrýš</text>
+	</string>
+	<string id="st_found_new_treasure">
+		<text>Přijaté souřadnice skrýše</text>
+	</string>
+	<string id="st_press_any_key">
+		<text>Vstup do zóny</text>
+	</string>
+	<string id="tips_labx16switcher_press">
+		<text>Vypni zázračný stroj ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tips_rad_switcher_press">
+		<text>Vypni Vypalovač mozků ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_down_red_forest_tips">
+		<text>Dolní most ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_stop_red_forest_tips">
+		<text>Zastavení mostu ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_up_red_forest_tips">
+		<text>Zvednout most ($$ACTION_USE$$)</text>
+	</string>
+	<string id="drx_sl_tips_rad_switcher_press">
+<text>Aktivuj Vypalovač mozků ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_make_a_wish">
+		<text>Vyslovit přání ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_lx18_pda">
+		<text>Poslechnout si záznam z PDA</text>
+	</string>
+	<string id="dar_poltergeist_hold_the_door">
+		<text>Někdo drží dveře</text>
+	</string>
+	<string id="st_labx18_pass_to_1st_door">
+		<text>Vynikající, pane kolego. Jsem rád, že jste získal přístup do 2. úrovně. Konečně zjistíte, co se děje v naší laboratoři. Váš přístupový kód je 1243. Vedoucí laboratoře X18, Piotr Ilich Kalugin.</text>
+	</string>
+	<string id="st_labx18_pass_to_2nd_door">
+		<text>Vážený kolego, dovolte, abych vám připomněl, že od zítřka budete obsluhovat kontejner v centrální laboratorní místnosti. Každé dvě hodiny musíte kontejnery zkontrolovat. Všechno hlásejte přímo mně. Kód do centrální laboratorní místnosti je 9524. Vedoucí laboratoře X18, Piotr Iljič Kalugin.</text>
+	</string>
+	<string id="st_yan_saharov_message">
+		<text>Dobrý člověk, nakonec jste to přece jen zvládl. Je nesmírně důležité, abychom ten stroj v laboratoři prozkoumali. Zkus ho vypnout, abychom se na něj mohli podívat.</text>
+	</string>
+	<string id="st_yan_saharov_message_2">
+		<text>Poslouchej, tento prototyp tě před silnými emisemi dlouho neochrání. Očekával jsem to, takže při každém zjištění emise se aktivuje časovač. Jakmile čas vyprší, prototyp tě již nebude chránit, takže buď opatrní a hlídej si čas.</text>
+	</string>
+	<string id="st_yan_saharov_message_3">
+		<text>Skvělá práce. Emise byla vypnuta a ty jsi stále naživu. Mimochodem, občas se zastav v našem bunkru, ano?</text>.
+	</string>
+	<string id="tips_warlab_switcher_press">
+		<text>Vypni generátory ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_door_coded">
+		<text>Dveře jsou zamčené kódem</text>
+	</string>
+	<string id="tip_door_decode">
+		<text>Stisknutím ($$ACTION_USE$$) dekóduješ dveře</text>.
+	</string>
+	<string id="tip_door_decoding">
+		<text>Probíhá dekódování</text>
+	</string>
+	<string id="bar_arena_actor_afraid">
+		<text>Boj je odstartován! Vyzyvatel se zastyděl.</text>
+	</string>
+	<string id="bar_arena_fight_10">
+		<text>Uplynulo 10 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_20">
+		<text>Uplynulo 20 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_30">
+		<text>Uplynulo 30 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_40">
+		<text>Uplynulo 40 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_50">
+		<text>Uplynulo 50 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_60">
+		<text>Uplynula 1 minuta!</text>
+	</string>
+	<string id="bar_arena_fight_70">
+		<text>Uplynula 1 minuta a 10 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_80">
+		<text>Uplynula 1 minuta a 20 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_90">
+		<text>Uplynula 1 minuta a 30 sekund!</text>
+	</string>
+	<string id="bar_arena_fight_begin">
+		<text>Boj začal!</text>
+	</string>
+
+	<string id="bar_arena_fight_bloodsucker">
+		<text>Pozor! Pozor! V aréně právě začíná nový boj! V levém rohu - nejobávanější noční můra Zóny, věčně hladový Bloodsucker! A v pravém rohu... Člověk? Ano, je to člověk! Potlesk, prosím, pro pronásledovatele! </text>
+	</string>
+	<string id="bar_arena_fight_burer">
+		<text>Pozor! Pozor! V Aréně právě začíná nový boj! V levém rohu - sám mistr kung-fu ohýbající lžíce - trpaslík! A v pravém rohu - stalker, který je neustále ve střehu!</text>
+	</string>
+	<string id="bar_arena_fight_dead">
+		<text>Takže vyzyvatel byl zabit! Teď je tu překvapení!</text>
+	</string>
+	<string id="bar_arena_fight_lose">
+		<text>No, vyzyvatel zabil svého soupeře, ale nestihl to včas. Prohrál boj!</text>
+	</string>
+	<string id="bar_arena_fight_pseudodog">
+		<text>Pozor! Pozor! V Aréně právě začíná nový boj. V levém rohu - je to bílé, je to chlupaté a je to pekelně naštvané... Pseudopes! A v pravém rohu - přišel odnikud a přesně tam má namířeno.</text>
+	</string>
+	<string id="bar_arena_fight_savage">
+		<text>Pozor! Pozor! V Aréně právě začíná nový boj. V levém rohu - znáš ho, miluješ ho a on ti to hned oplácí nenávistí! Je to Bestie! A v pravém rohu - živý a zdravý, alespoň pro tuto chvíli - náš stalker!</text>
+	</string>
+	<string id="bar_arena_fight_snork">
+		<text>Pozor! Pozor! V Aréně právě začíná nový boj! V levém rohu - guru bojových umění a specialista na zdraví - šnorchl! A v pravém rohu - muž bez minulosti a budoucnosti.</text>
+	</string>
+	<string id="bar_arena_fight_timeout">
+		<text>Čas vypršel! Vyzyvatel prohrál, ale stále bojuje o život!</text>
+	</string>
+	<string id="bar_arena_fight_victory">
+		<text>Ho! Vyzyvatel zabil svého soupeře včas! Vyhrál!</text>
+	</string>
+	<string id="st_death_count">
+		<text>Zemřel jsi %s krát.</text>
+	</string>
+	<string id="st_msg_unlocked_routes">
+		<text>Nová místa označená na PDA</text>
+	</string>
+	<string id="st_zone_disappeared">
+		<text>Přání splněno!</text>
+	</string>
+	
+	<string id="st_screen_kick">
+<text>Kopnutí</text>
+	</string>
+	<string id="st_screen_field_dress">
+<text>Sebrat součástky</text>
+	</string>
+	<string id="st_nobody_left_to_replace">
+		<text>Nejsou žádné náhrady</text>
+	</string>
+	<string id="st_nothing_useful">
+		<text>Nenašlo se nic užitečného</text>
+	</string>
+	<string id="st_ui_heli">
+		<text>Helikoptéra</text>
+	</string>
+
+	<!-- AWR -->
+	<string id="st_tiski_no_info">
+		<text>Potřebuješ povolení k použití dílny</text>
+	</string>
+	<string id="st_tiski">
+		<text>Použít dílnu ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_awr_tiski">
+		<text>Oprava ($$ACTION_USE$$)</text>
+	</string>
+	
+	<!-- Lost to the Zone -->
+	<string id="st_impending_doom">
+<text>Bezprostředně hrozící emise</text>
+	</string>
+	
+	<!-- Ironman -->
+	<string id="st_ironman_new_life">
+		<text>ŽIVOT NAVÍC ZÍSKÁN!\n
+		Zemřel jsi v %s časech\n
+		Zbývá: %s</text>
+	</string>
+	
+	<!-- Přepínání animací -->
+	<string id="st_toggle_animation_on">
+<text>Animinace itemů zapnuty</text>
+	</string>
+	<string id="st_toggle_animation_off">
+		<text>Animace itemů vypnuty</text>
+	</string>
+	
+	<!-- Převlek -->
+	<string id="ui_st_disguse_disabled">
+<text>Systém maskování vypnut</text>
+	</string>
+	<string id="ui_st_disguse_back_to_default">
+		<text>Jsi nyní opět identifikováni jako člen %s</text>
+	</string>
+	<string id="ui_st_disguse_blacklisted_faction">
+		<text>Nemůžeš se maskovat jako člen %s</text>
+	</string>
+	<string id="ui_st_disguse_someone_saw">
+		<text>Byl jsi spatřen, jak měníš své oblečení. Každý si tě pamatuje jako člena %s</text>.
+	</string>
+	<string id="ui_st_disguse_someone_remember">
+		<text>Nedávno jsi byl viděn. Všichni si tě pamatují jako člena %s</text>.
+	</string>
+	<string id="ui_st_disguse_naked">
+		<text>Bez převleku stalker pozná, že jsi členem komunity %s</text>.
+	</string>
+	<string id="ui_st_disguse_patch_torn">
+		<text>Náplast tohoto oblečení je roztržená. Stalkeři si budou myslet, že patříš ke komunitě %s</text>.
+	</string>
+	<string id="ui_st_disguse_patch_torn_now">
+		<text>Na tomto oblečení jste roztrhli nášivku %s. Již jej nelze použít k maskování</text>.
+	</string>
+	<string id="ui_st_disguse_patch_attach_now">
+		<text>Připojil jsi %s na tento oděv, nyní jej lze použít k převleku</text>
+	</string>
+	<string id="ui_st_disguse_on">
+<text>S tímto oblečením bude většina stalkerů předpokládat, že patříš ke komunitě %s</text>.
+	</string>
+	<string id="st_disguse_actor_exposed">
+		<text>Byl jsi odhalen! Všichni vědí, že jsi převlečený člen %s</text>.
+	</string>
+	
+	<string id="st_news_disguse_enemy_expose_1">
+<text>Vetřelec!!!</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_2">
+		<text>ŠPION!!! STŘÍLEJ HO.</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_3">
+		<text>ŠPION!!! RYCHLE! ZAČNI STŘÍLET.</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_4">
+		<text>TENTO CHLAP JE NEPŘÍTEL!!! STŘÍLEJTE OKAMŽITĚ.</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_5">
+		<text>PŘESTAŇTE TADY, KRIMINÁLNÍ Šmejde! Zaplaťte soudu pokutu nebo si odpykejte trest. Vaše ukradené zboží nyní propadá.</text>
+	</string>
+	
+	<string id="st_news_disguse_natural_expose_1">
+		<text>Ty jsi někoho špehoval?! Kdo tě poslal? </text>
+	</string>
+	<string id="st_news_disguse_natural_expose_2">
+		<text>Podvod? Myslíš, že je to vtipné? </text>
+	</string>
+	<string id="st_news_disguse_natural_expose_3">
+		<text>Nikoho neoblbneš, blbečku.</text>
+	</string>
+	<string id="st_news_disguse_natural_expose_4">
+		<text>Odejdi.</text>
+	</string>
+	
+<!-- DoctorX Questlines -->
+    <string id="st_drx_questlines_and_this_one">
+<text>A tento...</text>
+    </string>
+    <string id="st_drx_questlines_joined">
+<text>Připojil ses k</text>
+    </string>
+    <string id="st_drx_questlines_faction">
+<text>Frakce.</text>
+    </string>
+	
+<!-- Bribe -->
+	<string id="st_bribe_expired">
+		<text>Příměří s %s vypršelo.</text>
+	</string>
+	<string id="st_bribe_broke">
+		<text>Porušil jsi pravidla. Dohoda s %s je zrušena.</text>
+	</string>
+	
+<!-- Goodwill -->
+	<string id="st_news_goodwill_update_title">
+		<text>Změna</text>
+	</string>
+	<string id="st_news_goodwill_intro_1">
+<text>Šíří se zvěsti o tvém nejnovějším úsilí.</text>
+	</string>
+	<string id="st_news_goodwill_intro_lose_1">
+<text>Šíří se zvěsti o tvých posledních neúspěších.</text>
+	</string>
+	<string id="st_news_goodwill_main_1">
+<text>Získal jsi větší důvěru mezi %s.</text>
+	</string>
+	<string id="st_news_goodwill_main_lose_1">
+<text>Ztratil jsi důvěru mezi %s.</text>
+	</string>
+	<string id="st_news_goodwill_enemy_1">
+		<text>%s to nepřijal dobře.</text>
+	</string>
+		
+<!-- Bad turn -->
+	<string id="st_bad_turn_into_bandit">
+<text>Jsi vyloučen ze skupiny</text>
+	</string>
+	<string id="st_bad_turn_into_bandit_news">
+		<text>%c[0,255,0,0]Jsi vyloučen ze skupiny</text>
+	</string>
+	<string id="st_bad_turn_into_zombie">
+		<text>Úroveň vyzařování psychiky je kritická; byl jsi zombifikován</text>
+	</string>
+	<string id="st_bad_turn_into_zombie_news">
+		<text>%c[0,255,64,0]Úroveň psy-záření je kritická; byl jsi zombifikován</text>
+	</string>
+	<string id="st_bad_turn_dezombification">
+		<text>Dezombifikace byla úspěšně dokončena</text>
+	</string>
+	<string id="st_bad_turn_dezombification_news">
+		<text>%c[0,255,64,0]Dezombifikace úspěšně dokončena</text>
+	</string>
+	
+<!-- Travel -->
+	<string id="st_travel_event">
+		<text>Cestování není bezpečné; nepřátelé v blízkosti</text>
+	</string>
+	<string id="st_travel_overloaded">
+<text>Jsi přetížen</text>
+	</string>
+	<string id="st_travel_already_here">
+<text>Jsi již na místě určení</text>
+	</string>
+	<string id="bp_to">
+<text>Přesouváš se</text>
+	</string>
+	<string id="bp_open">
+		<text>Otevřít batoh</text>
+	</string>
+	
+<!-- Stash placement -->
+	<string id="st_stash_created">
+<text>Skrýš vytvořena</text>
+	</string>
+	<string id="st_stash_placed">
+<text>Někde jsi již umístil skrýš</text>
+	</string>
+	<string id="st_stash_unsafe">
+		<text>Skrýš zde nelze umístit</text>
+	</string>
+	<string id="st_itm_stash">
+		<text>Skrýš</text>
+	</string>
+	<string id="st_itm_stash_of_character">
+		<text>%sova skrýš</text>
+	</string>
+	
+<!-- Sleep -->
+	<string id="st_sleep_awake">
+		<text>Nejsi dostatečně unavený, abys spal</text>
+	</string>
+	<string id="st_sleep_awake_woke_early">
+		<text>Probudil ses brzy po %s hodinách spánku</text>
+	</string>
+	<string id="st_sleep_awake_slept_for">
+		<text>Spal jsi %s hodin</text>
+	</string>
+	<string id="st_sleep_awake_slept_well">
+		<text>Spal jsi velmi dobře po dobu %s hodin</text>
+	</string>
+	<string id="st_sleep_awake_wired">
+		<text>Neschopen odpočinku kvůli přílišnému množství kofeinu</text>
+	</string>
+	<string id="st_sleep_bleeding">
+<text>Krvácíš; vyhledej lékařskou pomoc</text>
+	</string>
+	<string id="st_sleep_bleeding_irradiated">
+<text>Krvácíš a jsi ozářený; vyhledej lékařskou pomoc</text>
+	</string>
+	<string id="st_sleep_deprived">
+<text>Byl jsi zabit v bezvědomí</text>
+	</string>
+	<string id="st_sleep_event">
+<text>Během této události jsi nemohl odpočívat</text>
+	</string>
+	<string id="st_sleep_exhausted">
+<text>Jsi vyčerpaný</text>
+	</string>
+	<string id="st_sleep_exhausted_final">
+<text>Jsi extrémně vyčerpaný</text>
+	</string>
+	<string id="st_sleep_irradiated">
+<text>Jsi ozářen; vyhledej lékařskou pomoc</text>
+	</string>
+	<string id="st_cant_sleep_find_shelter_mlr">
+		<text>Je třeba najít bezpečnější místo ke spánku</text> 
+	</string>
+	<string id="st_cant_sleep_outside_tent_mlr">
+		<text>Potřebuješ jít spát dovnitř stanu</text> 
+	</string>
+	
+<!-- Skinning -->
+	<string id="st_body_decayed">
+		<text>Tělo příliš rozložené</text>
+	</string>
+	<string id="st_body_useless">
+		<text>Tělo nemá nic užitečného</text>
+	</string>
+	<string id="st_body_knife_needed">
+		<text>Potřebuješ nůž</text>
+	</string>
+	<string id="st_body_knife_bad">
+		<text>Nůž je příliš poškozený</text>
+	</string>
+	<string id="st_body_knife_weak">
+		<text>Pro tohoto mutanta je nutný ostřejší nůž</text>
+	</string>
+	
+<!-- Campfire -->
+	<string id="st_only_campfire_save">
+		<text>Ruční ukládání je zakázáno (pouze táboráky)</text>
+	</string>
+	<string id="st_only_campfire_load">
+		<text>Načítání za živa je zakázáno</text>
+	</string>
+	<string id="st_only_campfire_quit">
+		<text>Ukončení za živa je zakázáno</text>
+	</string>
+	<string id="st_swsh">
+		<text>K otevření plechovky je potřeba něco ostrého</text>
+	</string>
+	<string id="st_camp_m">
+		<text>K rozdělání ohně je potřeba zapalovač</text>
+	</string>
+	<string id="st_camp_help">
+		<text>Táborák úspěšně zapálen</text>
+	</string>
+	<string id="st_fail">
+		<text>Táborák se nepodařilo zapálit</text>
+	</string>
+	<string id="st_ui_no_save_campfire">
+<text>Táborák můžeš rozdělávat pouze v blízkosti %s</text>
+	</string>
+	<string id="st_ui_campfire_prereq">
+		<text>K zapálení táboráku jsou vyžadovány zápalky nebo sada podpalovačů</text>
+	</string>
+	
+<!-- Items -->
+	<string id="st_imm_smoke_fail">
+		<text>Potřebuješ zápalky</text>
+	</string>
+	<string id="st_imm_smoke_already_used">
+		<text>Podobný efekt s větší účinností je již aktivní</text>
+	</string>
+	<string id="st_imm_befor_swiss">
+<text>Potřebuješ něco ostrého</text>
+	</string>
+	<string id="st_imm_need_swiss">
+		<text>Potřebuješ švýcarský nůž</text>
+	</string>
+	<string id="st_imm_swiss_broken">
+		<text>Švýcarský nůž se rozbil</text>
+	</string>
+	<string id="st_stash_no_backpack_found">
+		<text>Není vybaven batohem</text>
+	</string>
+	
+	<string id="st_itm_manager_greater_effect">
+		<text>Podobný efekt s větší účinností je již aktivní: %s</text>
+	</string>
+	<string id="st_itm_manager_missing_requirements">
+		<text>%s je vyžadováno</text>
+	</string>
+	
+<!-- Notes -->
+	<string id="st_recipe_is_known">
+		<text>Je již přečteno</text>
+	</string>
+	<string id="st_letter_is_known">
+		<text>Již přečteno</text>
+	</string>
+	
+<!-- Hardcore Saving -->
+	<string id="st_ui_no_save_timer">
+		<text>Časovač je aktivní, zatím nelze %s</text>
+	</string>
+	
+	<string id="st_ui_no_save_combat">
+<text>Během boje nemůžeš %s</text>
+	</string>
+	<string id="st_ui_no_save_surge">
+		<text>Nemůžeš %s během emise nebo psi-bouře</text>
+	</string>
+	<string id="st_ui_no_save_bleed">
+		<text>Nemůžeš %s během krvácení</text>
+	</string>
+	<string id="st_ui_no_save_radiation">
+<text>Nemůžeš %s, když jsi ozářen</text>
+	</string>
+	<string id="st_ui_no_save_bleed_radiation">
+<text>Nemůžeš %s při krvácení nebo ozáření</text>
+	</string>
+	<string id="st_ui_no_save_injury_1">
+		<text>Nemůžeš %s, když trpíš středně těžkým zraněním</text>
+	</string>
+	<string id="st_ui_no_save_injury_2">
+<text>Nemůžeš %s, když trpíš vážným zraněním</text>
+	</string>
+	<string id="st_ui_no_save_injury_3">
+<text>Nemůžeš %s, když trpíš vážným zraněním</text>
+	</string>
+	<string id="st_ui_no_save_injury_4">
+<text>Nemůžeš %s, když trpíš kritickými zraněními</text>
+	</string>
+
+	<string id="st_pri_special_trader_mlr_message2">
+		<text>Meeker: Tvá objednávka dorazila, stalkere. Přijď si ji vyzvednout.</text>
+	</string>
+	<string id="st_pri_special_trader_mlr_message">
+		<text>Griffin: Stalkere, jsi na území Syndikátu. Nebudeš napaden, ale očekáváme od tebe slušné chování. Pokud hledáš práci, možná bych měl pár věcí.</text>
+	</string>
+	
+<!-- Lost to the Zone -->
+	<string id="st_lttz_eidolon_strelok_message">
+		<text>Průzkumný oddíl se zakousl do prachu. Je čas zahájit poslední útok na centrum Pripjati.</text>
+	</string>
+	<string id="st_lttz_stancia_strelok_message">
+		<text>Dalším krokem bude vstup do sarkofágu. Než se vydáme dál, popadni dech. Bude to těžké.</text>
+	</string>
+	<string id="st_lttz_mon_strelok_message">
+		<text>Střep je silně chráněn. Musíme zabít všechny stráže.</text>
+	</string>
+	<string id="st_lttz_limansk_rogue_message">
+		<text>Hej, drsňáku. Máme tady v Limansku problém. Budu potřebovat tvou pomoc. Tady jsou moje souřadnice.</text>
+	</string>
+	<string id="st_lttz_kat_rogue_message">
+		<text>Tohle nebude procházka růžovým sadem. Pomalý postup. Pozor na dveře a rohy.</text>
+	</string>
+	<string id="st_lttz_gen_stitch_message">
+		<text>Hej chlape, jsi to ty? Pojď sem, rychle!</text>
+	</string>
+	<string id="st_lttz_intercepted_transmission_message">
+		<text>...zatím se utáboř v opuštěných dílnách rozvodny. Lokalizovali jsme nepřátelskou jednotku SR a připravujeme se na...</text>
+	</string>
+	<string id="st_lttz_yanov_invitation_message">
+		<text>Vidím, že jste v oblasti. Co kdybys přišel na stanici Janov, abychom si mohli promluvit?</text>
+	</string>
+	<string id="st_lttz_yanov_invitation2_message">
+		<text>Ahoj, stalkere. Co kdybys přišel za mnou, abychom si mohli promluvit?</text>
+	</string>
+	<string id="st_lttz_pripyat_strelok_message">
+		<text>Začínám bojovat s monolitickými silami poblíž opuštěné nemocnice. Uvítám jakoukoli pomoc.</text>
+	</string>
+	<string id="st_lttz_pripyat_rogue_message">
+		<text>H-help... me... Pomozte mi někdo...</text>
+	</string>
+	<string id="st_lttz_pripyat_stitch_message">
+		<text>Hovno, hovno, hovno! Potřeboval bych pomoct! Je tu někdo?!</text>
+	</string>
+	<string id="st_lttz_pripyat_degtyarev_message">
+		<text>Tady plukovník Alexandr Alexandrovič Degťarev z SSU. Víme, že jsi tam, Střelče, a víš, proč jsme tady. Odložte zbraně a pomalu, po jednom, vyjděte ven. Pokud nám vyhovíte, můžeme to udělat bez použití násilí.</text>
+	</string>
+	<string id="st_lttz_pripyat_strelok_message2">
+		<text>Zónu nikdy nemůžete opustit, plukovníku, ať už přepadnete elektrárnu, nebo se schováte na druhé straně planety. Dokud existuje, ohrožuje celý svět. Tohle vaši nadřízení nemohou jen tak zamést pod koberec. Obávám se, že se k vám nepřidám.</text>
+	</string>
+	<string id="st_lttz_pripyat_unisg_message">
+		<text>Tohle je naposledy, co se nám pletete do práce, plukovníku. Pomodlete se.</text>
+	</string>
+	<string id="st_lttz_oa_army_degtyarev_jup_meet_msg">
+		<text>%s, tady je %s. Setkáme se v Jupiteru, chci s tebou něco probrat.</text>
+	</string>
+	<string id="st_oa_transmission_decryption">
+		<text>Dešifrování přenosu</text>
+	</string>
+
+</string_table>

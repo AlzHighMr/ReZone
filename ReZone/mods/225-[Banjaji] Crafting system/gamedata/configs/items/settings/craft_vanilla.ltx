@@ -1,0 +1,171 @@
+;[[
+; 	Tronex
+; 	Crafting recipes for workshop
+; 	Basic item combinations (drag-drop items to combine them into another)
+;
+;	File structure changed by Banjaji's Crafting system improvements
+;	( https://www.moddb.com/mods/stalker-anomaly/addons/151-banjajis-crafting-system-improvements )
+;	For instructions see the mod at Moddb and read the test LTX file for recipe format.
+;
+;]]
+
+;;--==========================< Crafting (Workshop) >=============================
+;[[
+; ATTENTION: the reason why there is a "x_" in the start of craft items names is to avoid an issue with configs reading by the scripts 
+; if you use 2 craft recipes for the exact same item for example, the reader will take one recipe and ignore the rest
+; to avoid this case, you put 2 strings of anything before the actual name, here i used "x_" and "y_"
+; example: if you want to use 3 recipes for the geiger counter in one section, do something like this: "x_geiger_dead" "y_geiger_dead" "z_geiger_dead"
+; Otherwise, put "x_" or anything and move along. Just always remember to use 2 digits only and nothing else
+; this is a stupid yet simple fix
+;]]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;==========================< Banjaji's Crafting System Improvements >============================= 
+;; NOTICE FOR MODDERS ;;
+; You can make a new file that defines your new recipe sections and is named "craft_*.ltx" where "*" can be anything without "_" character ("craft_mine.ltx" is okay but "craft_mine_craft.ltx" will crash the game).
+; It will be automatically included and won't be overwritten by other mods that add recipes (unless they do it by scripts on purpose). In order to add/change recipes to already existing categories you'll still need to modify craft_vanilla.ltx file, preferrably with DLTX.
+; Under each section add a variable for the tab name eg. like in the original "title = st_ui_craft_device". If no such variable exists in xml files then the variable name itself gets written.
+; You can create a new recipe tab by creating a new section here. the section name needs to be craft_x, where x is a number between -10000 and 10000. Original sections are now -500, -400, ..., 0. The tabs are ordered in the ascending number order.
+; When creating a new section USE A RANDOM NUMBER GENERATOR!! That minimizes the chance that your number is the same as in some other mod. You can't have 2 sections with the same name or xray crashes.
+
+; Recipes:
+; Vanilla recipe format (compatible): a_craftable_item = toolkit_number, recipe, component1, component1_amount,  component2, component2_amount...
+; New recipe format: a_recipe_id_item = result_item1, result_item1_amount, result_item2, result_item2_amount... \ recipe_note1, recipe_note2... \ tool1, tool1_amount, tool2, tool2_amount... \ component1, component1_amount, component2, component2_amount...
+
+
+; New format has recipe identification and icon (item section after 2 first characters) on the left side of the equation and 4 categories on the right side of the equation.
+; Spaces don't matter in the recipe.
+
+; The categories are: results \ notes \ tools \ components. 
+; "\" is important and must be exactly that backward slash, not forward slash (stupid Xray). This separates results, notes, tools and components, so that the lists in categories can be as long as you want. Each category can also be empty.
+; You don't have to write "\"-s if you don't want to use later fields. E.g. if you want only result but nothing else then "a_recipe_id_item = result_item1" is valid.
+; But if you want to use e.g. result and tool but not recipe note then you have to leave notes' "\" in. E.g. "a_recipe_id_item = result_item1 \ \ tool1" is valid.
+
+; In each category you have a list: item1,item1_amount, item2,item2_amount... The list can be any length (0 to infinity).
+; Item amount can always be omitted (left out). In that case the amount defaults to 1.
+; E.g. "a_recipe_id_item = result_item1,result_item2,result_item3 \ \ tool1,tool_2 \ " is valid.
+; If you have duplicate items in a list in one category then the duplicate amounts are added together and the item is shown only one time. 
+
+; The first 2 characters before recipe_id_item are to distinguish recipes for the same item. It's the same as in the vanilla format. It doesn't matter what the characters are.
+; recipe_id_item is an item section. The recipe will show that item icon for the recipe and that item name and description where possible (e.g. tooltip and PDA encyclopedia articles).
+; You are encouraged to create new (item) sections for recipe_id_item (identificators). If you use existing item and e.g. someone changes recipes through script (aa_load_recipes_Banjaji_CSI.script) then your recipe might be overwritten unintentionally.
+
+; result_item is an item section. You will get this item after crafting.
+; result_item_amount is how many result_items you get. 1 is one item with full uses (multiuse item), full ammo (ammo box) or full condition (normal item). You don't need to write it, then it defaults to 1 (full uses).
+; Integer is item with full uses (e.g mineral_water has 3 uses) but you can result_item_amount can be a fraction. 
+; E.g. mineral_water has 3 uses when full. "mineral_water,0.8" gives round(3*0.8) = 2 uses and "mineral_water,1.5" gives round(3*1.5) = 5 uses. Minimum output is 1 use. Same applies to bullets in bullet box item.
+; Fraction result_item_amount for other items results in rounded down full condition items and the remaining fraction will determine the last item's condition. E.g. "wpn_rpk,1.3" gives 100% rpk and 30% rpk.
+
+; recipe_note is recipe note item section that has to be read for the recipe to unlock. If there are multiple in the list then you have to read all of them.
+; You don't need to (but may) append note_amount to the list because it's not used.
+
+; tool is a tool that needs to be in your inventory for crafting. This item won't be used up.
+; tool_amount is the amount of tool you need to have in your inventory. It counts item uses, so e.g. full mineral_water has 3 uses. You don't need to write it, then it defaults to 1 use.
+
+; component is a component that needs to be in your inventory for crafting. This item (or some uses) will be used up.
+; component_amount is the amount of component uses you need to have in your inventory. It counts item uses, so e.g. full mineral_water has 3 uses. You don't need to write it, then it defaults to 1 use.
+; If you use same item for tool and component then you need to have (tool_amount + component_amount) of uses for the item.
+
+
+
+;======================================================================================================
+;================================< Recepty >===========================================================
+;======================================================================================================
+
+
+
+;==================================================================
+;==================================================================
+;==========================< Devices >=============================
+[craft_-500]
+title						= st_ui_craft_device
+;==================================================================
+x_device_torch_dummy		= 1, recipe_basic_0,       flashlight_broken,1,         headlamp,1,                               prt_i_resistors, 3,        prt_i_capacitors,3,   prt_i_copper, 3
+x_device_torch_nv_1			= 1, recipe_basic_0,       device_torch_dummy,1,        prt_i_resistors,6,                        prt_i_capacitors,6,        prt_i_copper,4
+x_device_torch_nv_2			= 2, recipe_advanced_2,    device_torch_nv_1,1,         prt_i_resistors,9,                        prt_i_capacitors,9,        prt_i_transistors,5
+x_device_torch_nv_3			= 3, recipe_expert_2,      device_torch_nv_2,1,         prt_i_resistors,10,                       prt_i_capacitors,10,       prt_i_transistors,6
+    
+;==============================HEATVISION===================================
+;x_device_torch_nv_4		= 3, recipe_expert_4,      device_torch_nv_3,1,          prt_i_resistors,35,                      prt_i_capacitors,35,       prt_i_transistors,35
+
+;==================================================================
+x_detector_simple		    = 1, recipe_basic_0,       broken_detector,1,            prt_i_resistors,8,                       prt_i_transistors,7,       prt_i_capacitors,8
+x_detector_geiger			= 1, recipe_basic_0,       broken_detector,1,            prt_i_resistors,6,                       prt_i_capacitors,6,        prt_i_transistors,5
+x_detector_advanced         = 2, recipe_advanced_0,    detector_simple,1,            prt_i_resistors,8,                       prt_i_transistors,12,      prt_i_capacitors,10
+x_detector_radio			= 2, recipe_advanced_1,    walkie,3,                     prt_i_resistors,5,                       prt_i_capacitors,6,        prt_i_transistors,5
+x_detector_elite            = 3, recipe_expert_2,      detector_advanced,1,          prt_i_resistors,20,                      prt_i_transistors,17,      prt_i_capacitors,15
+x_detector_scientific       = 3, recipe_expert_4,      detector_elite,1,             prt_i_resistors,28,                      prt_i_transistors,31,      prt_i_capacitors,23
+;==================================================================
+x_device_pda_2				= 3, recipe_expert_1,      device_pda_1,1,               prt_i_resistors,8,                       prt_i_transistors,10,      prt_i_capacitors,8
+x_device_pda_3				= 3, recipe_expert_4,      device_pda_2,1,               prt_i_resistors,13,                      prt_i_transistors,15,      prt_i_capacitors,16
+;==================================================================
+x_af_aac                    = 3, recipe_expert_0,      af_iam,1,                     prt_i_resistors,3,                       prt_i_transistors,6,       prt_i_capacitors,4
+x_af_iam                    = 2, recipe_advanced_0,    lead_box,1,                   prt_i_resistors,5,                       prt_i_transistors,4,       prt_i_capacitors,3
+x_af_aam                    = 3, recipe_expert_1,      af_aac,1,                     prt_i_resistors,8,                       prt_i_transistors,7,       prt_i_capacitors,5
+;==========================POWERED EXOS ADDON=================================
+x_exo_power_supply          = 1, recipe_basic_3,       batteries_exo,1,              itm_backpack,1,                         prt_i_copper,4,             prt_i_scrap,4
+x_exo_power_supply_military = 1, recipe_advanced_1,    exo_power_supply,1,           af_electra_sparkler_af_iam,1,           prt_i_copper,8,             prt_i_scrap,8
+x_exo_power_supply_proto    = 2, recipe_exo_1,         exo_power_supply_military,1,  af_surge,1,                             af_dummy_battery_af_aam,1,  prt_i_transistors,4
+x_exo_power_supply_tank     = 2, recipe_exo_2,         exo_power_supply_military,1,  af_surge,1,                             af_full_empty_af_aam,1,     prt_i_resistors,4
+x_exo_power_supply_sprint   = 3, recipe_exo_3,         exo_power_supply_military,1,  af_cooler,1,                            af_electra_flash_af_aam,1,  prt_i_capacitors,4
+x_batteries_exo             = 3, recipe_exo_3,         batteries_dead,5              prt_i_resistors,8,                      prt_i_transistors,7,       prt_i_capacitors,5
+
+
+
+
+
+
+
+;=================================================================
+;=================================================================
+;==========================< Vybava >=============================
+[craft_-400]
+title						= st_ui_craft_equipment
+
+x_ac10632                  = 1, recipe_basic_0, prt_i_glass,4,   prt_i_scrap,4
+x_wpn_addon_scope_pu       = 1, recipe_basic_0, prt_i_glass,6,   prt_i_scrap,6,  mirror,1
+x_acog                     = 1, recipe_basic_0, prt_i_glass,8,   prt_i_scrap,8,  mirror,2
+x_specter                  = 1, recipe_basic_0, prt_i_glass,12,  prt_i_scrap,12, mirror,4
+;==========================< Vareni >=============================
+x_fieldcooker               = 3, recipe_expert_0,army_bowler,1,explo_balon_gas,6,prt_i_scrap,10,prt_i_fasteners,8
+x_cooking			        = 1, recipe_basic_0, cutlery,3,prt_i_scrap,3
+x_army_bowler	            = 1, recipe_basic_0, cooking,3,prt_i_scrap,5,prt_i_fasteners,3,cutlery,3
+
+;==========================< Ostatni >=============================
+x_leatherman_tool			= 1, recipe_basic_0, prt_i_scrap,3,prt_i_fasteners,2,swiss_knife,1,ball_hammer,1
+x_wpn_binoc_inv             = 1, recipe_basic_0, welding_goggles, 1, mirror,3
+x_wpn_axe			        = 1, recipe_basic_1, prt_i_scrap,5,prt_i_wood,4,ball_hammer,2
+x_wpn_axe3			        = 1, recipe_basic_1, prt_i_scrap,6,prt_i_wood,6,ball_hammer,3
+x_lead_box			        = 1, recipe_basic_0, prt_i_scrap,8,prt_i_fasteners,4,ball_hammer,1
+x_prt_o_support_1           = 3, recipe_advanced_4, prt_i_scrap, 10, af_grid, 1, heavy_sewing_thread,1
+
+;==========================< Attachmenty na obleky >==============
+;=================================================================
+x_af_freon       = 2, recipe_advanced_1, detector_advanced, 1, prt_i_scrap,        5, prt_i_fasteners, 4, af_iam,  1
+x_af_freon_up    = 3, recipe_expert_1,   af_freon,          3, af_baloon,          1
+;=================================================================
+x_af_plates		  = 2, recipe_advanced_1, prt_o_ballistic_13, 4, prt_o_ballistic_9, 3, prt_i_scrap, 3, prt_i_fasteners, 3
+x_af_kevlar		  = 2, recipe_advanced_3, prt_o_ballistic_1,  2, prt_o_ballistic_3, 3, prt_o_ballistic_5, 3, prt_o_ballistic_7, 4
+;=================================================================
+x_af_surge		 = 2, recipe_advanced_0, prt_i_resistors,6,prt_i_scrap,4,prt_i_fasteners,4,prt_o_retardant_17,3
+x_af_surge_up    = 3, recipe_expert_3,   af_surge,          1, af_electra_sparkler,1
+;=================================================================
+x_af_frames		 = 2, recipe_advanced_0, prt_i_scrap,6,prt_o_ballistic_15,3,prt_i_fasteners,4,prt_o_fabrics_3,6
+x_af_frames_up   = 3, recipe_expert_1,   af_frames, 1, af_night_star,  1
+;=================================================================
+x_af_grid		 = 2, recipe_advanced_0, prt_o_ballistic_5, 2,prt_i_scrap,         4,prt_i_fasteners,  4,prt_o_fabrics_3,  4
+x_af_grid_up     = 3, recipe_expert_1,   af_grid,           2, af_gravi,           1
+;=================================================================
+x_af_cooler      = 2, recipe_advanced_2, e_syringe,         2, detector_geiger,    1, af_camelbak,     1, prt_i_plastic,   3
+x_af_cooler_up   = 3, recipe_expert_1,   af_cooler,         2, af_fuzz_kolobok,    1
+;=================================================================
+x_af_camelbak	= 2, recipe_advanced_4, prt_i_scrap,       5,prt_o_ballistic_9,    4,prt_o_ballistic_13,3,prt_o_retardant_13,3
+x_af_camelbak_up = 3, recipe_expert_2,  af_camelbak,       1, af_dummy_battery,    1
+
+
+
+
+
+
+
+

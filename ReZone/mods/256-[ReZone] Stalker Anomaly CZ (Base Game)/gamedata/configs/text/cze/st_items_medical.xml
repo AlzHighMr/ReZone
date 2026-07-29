@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Medical Items + Drugs
+-->
+
+<string_table>
+	
+<string id="st_antirad">
+    <text>Protiradiační léky</text>
+</string>
+<string id="st_antirad_descr">
+    <text>Mexaminum léky na ochranu před radiací jsou běžné ve Zóně. Při užívání těchto léků dochází k zúžení periferních krevních cév a nedostatku kyslíku, což slouží k léčbě a prevenci vystavení radiaci. Lék nemá vážné vedlejší účinky, i když byly hlášeny izolované případy mírné nevolnosti, závratí, křečí a bolesti žaludku. Obsahuje také deriváty opiatů k tlumení bolesti.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    </text>
+</string>
+<string id="st_bandage">
+    <text>Obvaz</text>
+</string>
+<string id="st_bandage_descr">
+    <text>Běžný elastický obvaz používaný k zastavení krvácení a prevenci infekce ran. Při běžném krvácení pečlivě přiložte obvaz na ránu. Při arteriálním krvácení okamžitě přivažte obvaz kolem postižené oblasti.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    </text>
+</string>
+<string id="st_drug_coagulant">
+    <text>Vinca</text>
+</string>
+<string id="st_drug_coagulant_descr">
+    <text>Ukrajinské Vikasolum - umělá obdoba vitamínu K. Hlavním účelem tohoto léku je zvýšení rychlosti srážení krve. Velkou poptávkou se těší mezi stalkerů, kteří chtějí, aby se pomalu hojící rány a trhliny způsobené mutacemi uzavřely rychleji. Účinky léku jsou dlouhodobé. Užívejte najednou dvě tablety.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    </text>
+</string>
+<string id="st_drug_anabiotic">
+    <text>Anabiotika</text>
+</string>
+<string id="st_drug_anabiotic_descr">
+    <text>Experimentální lék vyvinutý profesorem Ozerským pro vědecké výzkumné týmy pracující ve Zóně. Lék obsahuje tetrodotoxin, známý běžně jako "prášek zombie", který způsobuje úplné vypnutí centrálního nervového systému těla, což může umožnit lidem přežít emise mimo kryt. Po šesti letech terénních testů si uvědomení stalkerové raději uchovávají několik tablet pro neočekávané havárie.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_red] • %c[ui_gray_2]Způsobuje dočasnou ztrátu vědomí\n
+    %c[d_green] • %c[pda_white]dokončení hojení %c[0,255,255,255]100% celého těla\n
+    </text>
+</string>
+<string id="st_drug_psy_blockade">
+    <text>Psy-blokátor</text>
+</string>
+<string id="st_drug_psy_blockade_descr">
+    <text>Lék, který blokuje lavinovité nervové impulsy. Při užívání způsobuje krátkodobou ztrátu veškerých emocí. Používá se výhradně ve Zóně k neutralizaci účinků anomálních psy-pole. Účinky léku jsou dlouhodobé. Užívejte najednou dvě tablety.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_green] • %c[ui_gray_2]Zlepšuje morálku a ochranu mysli proti hrůzám Zóny\n
+    %c[d_red] • %c[ui_gray_2]Způsobuje silné závratě\n
+    </text>
+</string>
+<string id="st_drug_antidot">
+    <text>Antidotum</text>
+</string>
+<string id="st_drug_antidot_descr">
+    <text>Antitoxin IP2 je složitý lék obsahující několik protijedů, včetně metoklopramidu, pyridoxinu, thiaminu, riboxinu a dalších farmaceutik. Lék slouží k injekci škály antibiotik ke neutralizaci přírodních jedů spolu s syntetickými látkami absorbovateli jedů do krevního oběhu. IP2 není ve Zóně příliš oblíbený, protože většina stalkerů se spoléhá na plynovou masku a ochranný oblek. Nicméně stále existují tací, kteří mají pár jednotek tohoto protijedu schovalých pro nouzové situace. Účinky léku jsou dlouhodobé. Užívejte najednou jednu kapsli.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    </text>
+</string>
+<string id="st_drug_booster">
+    <text>Herkules</text>
+</string>
+<string id="st_drug_booster_descr">
+    <text>Hlavní složkou tohoto výrobku je anabolický androgen, umělý steroid, jehož chemické složení připomíná testosteron. Často používaný stalkery během dlouhých výprav k redukci únavy svalů. Významně zvyšuje nosnost. Účinky léku jsou dlouhodobé.\n \n
+    %c[0,255,255,255]VLASTNOSTI:\n
+    %c[d_green] • %c[ui_gray_2]odstranění mírných závratí\n
+    </text>
+</string>
+<string id="st_drug_radioprotector">
+    <text>Radioprotektor</text>
+</string>
+<string id="st_drug_radioprotector_descr">
+    <text>B190 Indraline radioprotektor, součást medkitů vydávaných personálu jaderných elektráren. Používá se v Zóně místo nadměrně toxického hydrochloridu cysteaminu PC1, jehož opakované užívání často způsobovalo smrt. Snížuje účinky gama záření na živou tkáň. Nejlépe užívat před vystavením, protože účinky nejsou okamžité, ale lék vydrží dlouho. Užívejte jednu tobolku najednou.\n \n
+    %c[0,255,255,255]Vlastnosti:\n
+    </text>
+</string>
+<string id="st_akvatab">
+    <text>Ibuprofen</text>
+</string>
+<string id="st_akvatab_descr">
+    <text>Ibuprofen je lék ze třídy nesteroidních protizánětlivých léků (NSAID), který se používá k léčbě bolesti, horečky a zánětu. Používá se jako obecné analgetikum.\n \n
+    %c[0,255,255,255]Vlastnosti:\n
+    %c[d_red] • %c[ui_gray_2]Způsobuje mírné závratě\n
+    </text>
+</string>
+<string id="st_medkit_ai1">
+    <text>Základní lékařský balíček</text>
+</string>
+<string id="st_medkit_ai1_descr">
+    <text>Lékařský balíček obsahující různé vybavení pro léčbu drobných zranění.\n \n
+    %c[ui_gray_3]Obsah:\n
+    %c[d_cyan] • %c[default] obvaz (4)\n
+    %c[d_cyan] • %c[default] diklofenak sodný\n
+    %c[d_cyan] • %c[default] improvizovaný stimpack\n
+    %c[d_cyan] • %c[default] metamizolová ampule\n
+    %c[d_cyan] • %c[default] minerální voda\n
+    %c[d_cyan] • %c[default] sulfadimethoxin\n
+    %c[d_cyan] • %c[default] turniket\n
+    %c[d_cyan] • %c[default] yadulin\n \n
+    %c[0,255,255,255]Vlastnosti:\n
+    %c[d_cyan] • %c[ui_gray_2]úložiště pro lékařské vybavení\n</text>
+</string>
+<string id="st_medkit_ai2">
+    <text>Armádní lékařský balíček</text>
+</string>
+<string id="st_medkit_ai2_descr">
+    <text>Armádní lékařský balíček obsahující velké množství stimulačních léků.\n \n
+    %c[ui_gray_3]Obsah:\n
+    %c[d_cyan] • %c[default] obvaz (4)\n
+    %c[d_cyan] • %c[default] tablety s kofeinem\n
+    %c[d_cyan] • %c[default] diklofenak sodný\n
+    %c[d_cyan] • %c[default] fentanyl\n
+    %c[d_cyan] • %c[default] ibuprofen\n
+    %c[d_cyan] • %c[default] vojenský stimpack\n
+    %c[d_cyan] • %c[default] minerální voda\n
+    %c[d_cyan] • %c[default] minerální voda\n
+    %c[d_cyan] • %c[default] morfinová ampule\n
+    %c[d_cyan] • %c[default] prášky na spaní\n
+    %c[d_cyan] • %c[default] turniket (2)\n \n
+    %c[0,255,255,255]Vlastnosti:\n
+    %c[d_cyan] • %c[ui_gray_2]úložiště pro lékařské vybavení\n</text>
+</string>
+<string id="st_medkit_ai3">
+    <text>Vědecký lékařský balíček</text>
+</string>
+<string id="st_medkit_ai3_descr">
+    <text>Lékařský balíček navržený speciálně pro použití v Zóně. Obsahuje velké množství léků pro boj proti chemickým, psy- a radioaktivním hrozbám.\n \n
+    %c[ui_gray_3]Obsah:\n
+    %c[d_cyan] • %c[default] protiradiční lék (2)\n
+    %c[d_cyan] • %c[default] antidotum\n
+    %c[d_cyan] • %c[default] antioxidant IP2\n
+    %c[d_cyan] • %c[default] chlortetracyklin\n		
+    %c[d_cyan] • %c[default] cystamin (2)\n
+    %c[d_cyan] • %c[default] diklofenak sodný\n		
+    %c[d_cyan] • %c[default] adrenalinová injekce\n
+    %c[d_cyan] • %c[default] glukózová injekce (2)\n
+    %c[d_cyan] • %c[default] minerální voda\n
+    %c[d_cyan] • %c[default] psi-blokátor\n
+    %c[d_cyan] • %c[default] radioprotektor\n
+    %c[d_cyan] • %c[default] vědecký stimpack (2)\n \n
+    %c[d_cyan] • %c[default] sulfadimethoxin\n		
+    %c[d_cyan] • %c[default] škrtidlo\n \n
+    %c[0,255,255,255]Vlastnosti:\n
+    %c[d_cyan] • %c[ui_gray_2]úložiště pro lékařské vybavení\n
+    </text>
+</string>
+	
+<string id="st_analgetic">
+	<text>Diklofenak sodný</text>
+</string>
+<string id="st_analgetic_descr">
+	<text>Nesteroidní protizánětlivý lék ze skupiny derivátů fenylacetové kyseliny. Účinek léku ztlumuje nervovou aktivitu uživatele. Kvůli obrovskému množství vedlejších účinků, jako jsou bolesti hlavy, závratě, ospalost a v některých případech poruchy paměti, dezorientace, podrážděnost, se ve většině zemí nepoužívá pro léčebné účely. Nicméně v Zóně se stal populárním díky vedlejšímu účinku projevujícímu se porušením citlivosti centrálního nervového systému, což mu umožňuje odolávat těžkým zraněním, jako jsou střelné a střepinové rány.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_purple] • %c[pda_white]Průměrný bonus odolnosti proti poškození (5%)\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje mírné závratě\n
+	</text>
+</string>
+
+
+<string id="st_jgut_zhgut">
+	<text>Turniket</text>
+</string>
+<string id="st_jgut_descr">
+	<text>Hemostatický gumový turniket umožňující uživateli zastavit krvácení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+
+<string id="st_yadylin">
+	<text>Yadulin</text>
+</string>
+<string id="st_yadylin_descr">
+	<text>Pololék na bázi morfinu. Umožňuje uživateli rychle utlumit bolest a zvýšit produkci adrenalinu, což pomáhá uživateli vydržet i nejnáročnější boje. Je populární mezi stopaři, často se užívá jako rekreační droga mezi kriminálními skupinami a údajně se dodává k Monolitu.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje silné závratě\n
+	</text>
+</string>
+
+<string id="st_medkit">
+	<text>Lékarnička AI-2</text>
+</string>
+<string id="st_medkit_descr">
+	<text>Lékarnička AI-2 byl vyvinut jako standardní servisní lékárnička pro různé obranné a bezpečnostní složky a civilní obranné síly SSSR. Užitečná při ošetřování zranění, ran, chemických a tepelných popálenin a různých typů otrav.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+<string id="st_medkit_army">
+	<text>Armádní lékárnička</text>
+</string>
+<string id="st_medkit_army_descr">
+	<text>Specializovaná lékárnička pro poskytování první pomoci při bojových zraněních. Sada obsahuje krevní srážlivé látky na bázi menadionu, analgetika, antibiotika a imunostimulanty, stejně jako sadu pro odstraňování střel a střepin z těla. Tuto lékárničku obdrží převážně vojáci, jako jsou jednotky speciálního určení Spetsnaz, vydávaná jim při průniku hluboko do Zóny, a je populární mezi silami Povinnosti.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+
+<string id="st_medkit_science">
+	<text>Vědecká lékárnička</text>
+</string>
+<string id="st_medkit_science_descr">
+	<text>Lékárnička navržená speciálně pro použití v Zóně. Sada obsahuje prostředky pro ošetřování ran a také pro prevenci vývoje radiace a snížení nahromaděné radiace v těle. Na rozdíl od jiných lékárenských sestav obsahuje Vikasolum, Batilolum a Nafazolin.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+<string id="st_glucose_s">
+	<text>Gluokózová injekce</text>
+</string>
+<string id="st_glucose_s_descr">
+	<text>Gluokózové injekce se používají při silném diabetickém hypoglykémii, ale také jako stimulant. Okamžité podání sacharidů způsobuje rychlý náběh energie, což umožňuje uživateli vyvinout zvýšenou fyzickou námahu a odolat stresu. Díky své pohodlné způsobu aplikace lze tyto injekce použít i v bojových situacích. To z nich činí velmi dobrý způsob, jak urychlit hojení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[pda_white]průměrné odstranění závratě\n
+	</text>
+</string>
+
+<string id="st_glucose">
+	<text>Velká glukózová injekce</text>
+</string>
+<string id="st_glucose_descr">
+	<text>Velké glukózové injekce se používají při silném diabetickém hypoglykémii, ale také jako stimulant. Okamžité podání sacharidů způsobuje rychlý náběh energie, což umožňuje uživateli vyvinout zvýšenou fyzickou námahu a odolat stresu. Díky své pohodlné způsobu aplikace lze tyto injekce použít i v bojových situacích. To z nich činí velmi dobrý způsob, jak urychlit hojení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2]Silné odstranění závratě\n
+	</text>
+</string>
+
+<string id="st_stim_impro">
+	<text>Improvizovaná stimulantní injekce</text>
+</string>
+<string id="st_stim_impro_descr">
+	<text>Improvizované stimulantní injekce obsahují kombinaci různých chemických látek, které zvyšují fyzickou výkonnost a zlepšují reakční schopnosti. Tato injekce je často vyráběna v terénu pomocí dostupných chemikálií a zdrojů, což z ní činí cenný zdroj energie pro stalkerů v bojových situacích. Nicméně, jejich používání může mít vedlejší účinky, jako je zvýšená srdeční frekvence, pocit neklidu a zvýšená agresivita.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_red] • %c[pda_white]Silné zvýšení srdeční frekvence\n
+	</text>
+</string>
+
+<string id="st_stim">
+	<text>Stimulanty</text>
+</string>
+<string id="st_stim_descr">
+	<text>Stimulanty jsou chemické látky, které stimulují nervový systém a zvyšují fyzickou a duševní aktivitu. Používají se k boji proti únavě a vyčerpání a zlepšení reakčních schopností. Tyto látky se běžně používají v Zóně, zejména během dlouhých expedic nebo intenzivních bojových situací. Nicméně, jejich dlouhodobé užívání může mít negativní účinky na zdraví a závislost.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2]odstranění únavy\n
+	%c[d_red] • %c[ui_gray_2]může způsobit závratě\n
+	</text>
+</string>
+	
+<string id="st_stim_military">
+	<text>Armádní stimulant</text>
+</string>
+<string id="st_stim_military_descr">
+	<text>Armádní stimulanty představují součást standardní výbavy vojáků pro terénní operace v Zóně. Snadno dostupné na trhu za střední cenu. Oblíbené mezi zkušenými Stalkery. Jsou výrazně silnější a rychleji působící než jejich improvizované protějšky, což je činí ideálními pro použití v život ohrožujících situacích. Vyrábějí se z hustých surovin, které mohou tělu zatěžovat. Vedlejší účinky zahrnují šok, extrémní závratě a zvýšený hlad.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+
+<string id="st_stim_scientic">
+	<text>Vědecký stimulant</text>
+</string>
+<string id="st_stim_scientic_descr">
+	<text>Vytvořeno stejným obranným výzkumným ústavem v Kyjevě, který vyvinul známý oblek SEVA, tato nejmodernější metoda představuje nejsilnější dostupný stabilizátor zdraví v Zóně. Nejkvalitnější ingredience a dokonalý recept umožňují téměř okamžité zotavení a zajišťují rychlé odstranění radiace. Vedlejší účinky jsou minimalizovány. Extrémně vysoké náklady prakticky omezují cílovou skupinu tohoto léku na nejzručnější a nejúspěšnější Stalkery.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+
+<string id="st_sleepingpills">
+	<text>Prášky na spaní</text>
+</string>
+<string id="st_sleepingpills_descr">
+	<text>Balíček malých uspávacích pilulek, které okamžitě způsobí ospalost a pomáhají snížit nervové impulsy po určitou dobu. Spolkněte nějakou dobu před tím, než si chcete odpočinout, a následně vypijte pár doušků vody pro maximální účinek. Užijte dvě tablety najednou.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2]Zlepšuje morálku a ochranu mysli před hrůzami Zóny\n
+	%c[d_green] • %c[ui_gray_2]Způsobuje ospalost\n
+	</text>
+</string>
+
+<string id="st_cocaine">
+	<text>Kokain</text>
+</string>
+<string id="st_cocaine_descr">
+	<text>Malý hliníkový pouzdro obsahující kokain a nástroje usnadňující jeho užívání. Kokain je silný stimulant nervového systému. Jeho účinky mohou trvat od 15-30 minut do jedné hodiny v závislosti na způsobu podání. Kokain zvyšuje bdělost, vyvolává pocit pohody, kompetence a sexuality. Běžnými vedlejšími účinky jsou úzkost, paranoia a neklid. Při nadměrném dávkování se mohou objevit třesy, křeče a zvýšená tělesná teplota. Bandité jsou známí tím, že si tento lék nasávají přímo před zahájením útoku nebo úkladu.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]Velmi silný stimulant\n
+	%c[d_green] • %c[ui_gray_2]Velmi silné odstranění závratě\n
+	</text>
+</string>
+
+<string id="st_adrenalin">
+	<text>Injekce epinefrinu</text>
+</string>
+<string id="st_adrenalin_descr">
+	<text>Epinefrin (také známý jako adrenalin) je hormon a neurotransmiter. Epinefrin má v těle mnoho funkcí, okamžitě reguluje srdeční tep, průměry krevních cév a průchod vzduchu a provádí metabolické změny. Uvolňování epinefrinu je klíčovou složkou boj-či-uteč reakce sympatického nervového systému. Jeho účinky vedou k zvýšené hladině glukózy a mastných kyselin, které poskytují substráty pro okamžitou energetickou produkci ve všech buňkách těla.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]Velmi silný stimulant\n
+	%c[d_green] • %c[ui_gray_2]Velmi silné odstranění závratě\n
+	</text>
+</string>
+
+<string id="st_morphine">
+	<text>Ampule s morfinem</text>
+</string>
+<string id="st_morphine_descr">
+	<text>Železná ampule navržená jako polní vybavení pro vojenský personál pro okamžité snížení bolesti. Tato ampule obsahuje silnou dávku morfinu. V klinické medicíně je morfin považován za zlatý standard opioidních analgetik používaných k úlevě od silné nebo trýznivé bolesti. Stejně jako další opioidy, jako je oxycodon, hydromorfon a diacetylmorfin (heroin), morfin působí přímo na centrální nervový systém (CNS) k úlevě od bolesti. Podává se injekcí do paže nebo stehna.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_purple] • %c[ui_gray_2]extrémně velký bonus na odolnost proti poškození (15%)\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje mírnou závratě\n
+	</text>
+</string>
+	
+<string id="st_salicidic_acid">
+	<text>Ampule metamizolu</text>
+</string>
+<string id="st_salicidic_acid_descr">
+	<text>Železná ampule navržená jako terénní vybavení pro vojenský personál v terénu k okamžitému snížení bolesti. Obsahuje silnou dávku metamizolu smíchaného s antihemoragickým lékem. Metamizol je jedním z nejsilnějších nesteroidních protizánětlivých léků (NSAID), které jsou zejména účinné při zmírnění bolesti a snížení horečky. Je také užitečný jako protizánětlivý lék při vyšších dávkách. Může způsobit některé opožděné vedlejší účinky, jako je leukopenie nebo agranulocytóza, proto by se měl používat s mírou. Podává se injekcí do paže nebo stehen. Jeho dostupnost v Zóně je omezena kvůli obtížnosti pašování léku přes vojenská omezení.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_purple] • %c[pda_white]Velký bonus odolnosti proti poškození (10%)\n
+	</text>
+</string>
+
+<string id="st_caffeine">
+	<text>Kofeinové tablety</text>
+</string>
+<string id="st_caffeine_descr">
+	<text>Kofein a sodný benzoát, které způsobují nejvyšší možnou účinnost centrálního nervového systému v daný čas. Výrazně snižují ospalost. Užijte dvě tablety najednou.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2]Stimulant\n
+	%c[d_cyan] • %c[ui_gray_2]odstranění závratě\n
+	</text>
+</string>
+
+<string id="st_antirad_cystamine">
+	<text>Cystamin</text>
+</string>
+<string id="st_antirad_cystamine_descr">
+	<text>Látka působící jako radioprotektor, používaná k oslabení účinků záření na tělo. Radioprotektivní účinek cystaminu spočívá v jeho schopnosti vázat volné radikály - ionizované a excitované molekuly vytvořené v tkáních při ozáření - stejně jako v jeho schopnosti interagovat s určitými enzymy a poskytovat odolnost proti ionizujícímu záření. Účinky cystaminu neodstraňují již nahromaděné záření. Obsahuje také léky proti bolesti a protizánětlivé sloučeniny.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	</text>
+</string>
+
+<string id="st_antibio_sulfad">
+	<text>Sulfadimethoxin</text>
+</string>
+<string id="st_antibio_sulfad_descr">
+	<text>Sulfonamidový lék účinný proti gram-pozitivním a gram-negativním bakteriím. Působí na pneumokoky, streptokoky, stafylokoky, E. coli, Klebsiellu (Friedlanderův bacil), původce úplavice; je méně účinný proti bílkovinám; působí proti viru trachomu (infekční oční onemocnění, které může vést ke slepotě); neúčinkuje na kmeny bakterií odolné vůči jiným sulfonamidovým přípravkům. Mezi nežádoucí účinky patří bolesti hlavy, poruchy trávení, vyrážky na kůži, horečka a leukopenie. Účinky léku jsou dlouhodobé.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje mírnou závratě\n
+	</text>
+</string>
+
+<string id="st_antibio_chlor">
+	<text>Chlortetracyklin</text>
+</string>
+<string id="st_antibio_chlor_descr">
+	<text>Antibiotikum. Krystalický prášek zlatě žluté barvy, hořké chuti, rozpustný ve vodě. Jedná se o jeden z prvních dostupných antibiotik (po penicilinu).\n Chlorotetracyklin hydrochlorid má bakteriostatický účinek na gram-pozitivní a gram-negativní mikroby, rickettsie a některé velké viry.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje mírnou závratě\n
+	</text>
+</string>
+
+<string id="st_antiemetic">
+	<text>Etperazin</text>
+</string>
+<string id="st_antiemetic_descr">
+	<text>Tablety potažené obalem obsahující 4,6 a 10 mg perfenazinu. Lék je neuroleptikum - antipsychotikum, které má antialergické, sedativní, miorelaxační, antiemetické, slabé anticholinergní, hypotenční a hypotermické účinky. Účinnost Etperazinu je způsobena blokádou receptorů D2 v mezokortikálním a mezolimbickém systému. V Zóně se zřídka používá.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2] mírně Zlepšuje morálku a ochranu mysli před hrůzami Zóny\n
+	%c[d_green] • %c[ui_gray_2] mírně odstraňuje závratě\n
+	</text>
+</string>
+<string id="st_joint">
+	<text>Joint</text>
+</string>
+<string id="st_joint_descr">
+	<text>Jsou známé svými relaxačními účinky, jointy jsou používány stalkerama rekreačně, zejména těmi, kteří často navštěvují Barrieru nebo Rudý les za ní. Pokud se kombinují s alkoholem, vyvolávají uklidňující účinek. Zvyšuje chuť k jídlu.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2] Zlepšuje morálku a ochranu mysli před hrůzami Zóny\n
+	%c[d_cyan] • %c[ui_gray_2] mírně odstraňuje závratě\n
+	</text>
+</string>
+
+<string id="st_rebirth">
+	<text>Axyltallisal "znovuzrození"</text>
+</string>
+<string id="st_rebirth_descr">
+	<text>Varování! Nepoužívejte ve spojení s jiným lékem, protože může být smrtelné. Tato silná směs obsažená v malé stříkačce vás přivede do bezvědomí. Ale když se probudíte (jestli se probudíte), budete se cítit znovuzrozeni. Injikujte stříkačku do stehna, když sedíte, abyste se zabránili pádu při ztrátě vědomí.\n \n
+	%c[0,255,255,255]VLASTNOSTI:\n
+	%c[d_green] • %c[ui_gray_2] okamžitě zvyšuje morálku a fyzické vlastnosti\n
+	</text>
+</string>
+	
+<string id="st_tetanus">
+	<text>Fentanyl</text>
+</string>
+<string id="st_tetanus_descr">
+	<text>Fentanyl je silný opioid používaný jako lék proti bolesti. Je také užíván rekreačně, někdy smíchaný s heroinem, kokainem nebo metamfetaminem, a jeho potenciálně smrtelné předávkování může být neutralizováno naloxonem. Fentanyl působí především aktivací ?-opioidních receptorů.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	%c[d_red] • %c[ui_gray_2]Způsobuje mírné závratě\n
+	</text>
+</string>
+
+<string id="st_antirad_kalium">
+	<text>Jodid draselný</text>
+</string>
+<string id="st_antirad_kalium_descr">
+	<text>Farmakologická sloučenina používaná v Zóně jako levný prostředek k potlačení účinků záření na tělo. Způsobuje řadu vedlejších účinků, zejména puchýře v trávicím traktu, znecitlivění na bolest a poruchy štítné žlázy.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	</text>
+</string>
+
+<string id="st_marijuana">
+	<text>Ganja</text>
+</string>
+<string id="st_marijuana_descr">
+	<text>Samě pěstovaná konopí. Kouření je populární zábava, zejména mezi členy skupiny Svoboda, kteří sloužili u Bariéry. V Zóně lze občas zakoupit sáčky s marihuanou. Někteří věří, že droga pomáhá udržovat duševní rovnováhu.\n \n
+	%c[0,255,255,255]Vlastnosti:\n
+	%c[d_green] • %c[ui_gray_2]Zlepšuje morálku a ochranu mysli před hrůzami Zóny\n
+	%c[d_green] • %c[ui_gray_2]účinně odstraňuje závratě\n
+	</text>
+</string>
+	
+</string_table>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<string_table>
+
+<string id="encyclopedia__notes_rfpackages">
+    <text>Radiofrekvenční balíčky</text>
+</string>
+
+<string id="encyclopedia__notes_rfpackages_text">
+    <text>
+    %c[pda_white]Fakce pro tebe schovají balíčky, které máš najít pomocí přijímače pro radiofrekvenční signály.%c[ui_gray_1] Tyto balíčky obsahují sadu buď léků, opravných předmětů nebo munice, spolu s možností některých bonusových předmětů, které mohou zahrnovat další léky, cenné předměty, výbušniny, vylepšovací předměty nebo "odpadní" artefakty.
+    \n
+    \n%c[pda_white]Balíčky fungují ve frontovém systému, kde se balíčky zařazují do fronty každých 250 dobrých vztahů, které získáš s fakcí.%c[ui_gray_1] Místo, kam je balíček zařazen do fronty, bude jedním z vnějších prostorů přímo spojených s oblastí, ve které jsi byl, když jsi dosáhl 250 dobrých vztahů, aby se spustil.
+    \n
+    \n%c[pda_white]Můžeš mít aktivní balíček najednou.%c[ui_gray_1] Můžeš si vybrat, zda balíček sebereš, nebo ho můžeš zrušit pomocí možnosti "zrušit rf balíček" v pravém kontextovém menu na svém PDA. Zrušení balíčku ho odstraní z fronty, takže pokud to byl tvůj jediný zařazený balíček, musíš dosáhnout dalších 250 dobrých vztahů, než obdržíš další.
+    \n
+    \n%c[pda_white]Můžeš také změnit, jak často dostáváš připomínky o balíčcích, zda se balíčky automaticky rozbalí při sebrání a zda dostáváš upgradovací předměty v originálním nebo upraveném provedení v menu s konfigurací modifikace pod "Možnosti přijímače pro radiofrekvenční signály" nebo upravením výchozích hodnot v hlavním skriptu TB_RF_Receiver_Packages, pokud nemáš menu s konfigurací modifikace.%c[ui_gray_1]
+    </text>
+</string>
+
+</string_table>

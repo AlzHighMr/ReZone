@@ -1,0 +1,233 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition                            = trade_generic_buy
+buy_item_condition_factor                = 0.50
+buy_item_exponent = 2.5
+sell_item_exponent = 1.1
+buy_supplies                             = supplies_generic
+price_profile                            = default
+sell_condition                           = trade_generic_sell
+discounts = discount_trasher
+
+[trade_generic_buy]:trasher
+
+[trade_generic_sell]:trasher
+
+itm_basickit	;NO TRADE
+itm_pda_common ;NO TRADE
+itm_pda_rare ;NO TRADE 
+itm_pda_uncommon ;NO TRADE 
+
+
+;ITEMS
+mutant_part_krovosos_jaw ;NO_TRADE
+mutant_part_boar_leg ;NO_TRADE
+mutant_part_chimera_kogot ;NO_TRADE
+mutant_part_chimera_claw ;NO_TRADE
+mutant_part_dog_tail ;NO_TRADE
+mutant_part_flesh_eye ;NO_TRADE
+mutant_part_psevdodog_tail ;NO_TRADE
+mutant_part_snork_leg ;NO_TRADE
+mutant_part_snork_hand ;NO_TRADE
+mutant_part_tushkano_head ;NO_TRADE
+mutant_part_pseudogigant_hand ;NO_TRADE
+mutant_part_pseudogigant_eye ;NO_TRADE
+mutant_part_controller_glass ;NO_TRADE
+mutant_part_controller_hand ;NO_TRADE
+mutant_part_burer_hand ;NO_TRADE
+mutant_part_cat_tail ;NO_TRADE
+mutant_part_fracture_hand ;NO_TRADE
+mutant_part_zombi_hand ;NO_TRADE
+mutant_part_boar_chop ;NO_TRADE
+mutant_part_general_meat ;NO_TRADE
+mutant_part_psevdodog_meat ;NO_TRADE
+mutant_part_flesh_meat ;NO_TRADE
+mutant_part_tushkano_meat ;NO_TRADE
+mutant_part_chimera_meat ;NO_TRADE
+mutant_part_krovosos_meat ;NO_TRADE
+mutant_part_dog_meat ;NO_TRADE
+
+;=========== SUPPLIES 1 ===============
+;======================================
+[supplies_generic]
+;[Tier 1]
+;========================================================
+;  AMMO T1
+;========================================================
+ammo_9x18_fmj           = 5, 1
+ammo_9x18_pmm           = 5, 1
+
+ammo_9x19_pbp           = 5, 1
+ammo_9x19_fmj           = 5, 1
+ammo_7.62x25_p          = 5, 1
+ammo_357_hp_mag         = 5, 1
+ammo_11.43x23_fmj       = 5, 1
+ammo_12x70_buck         = 5, 1
+ammo_5.45x39_fmj        = 5, 1
+ammo_5.56x45_fmj        = 5, 1
+ammo_7.62x39_fmj        = 5, 1
+ammo_7.92x33_fmj 	    = 5, 0.75
+
+
+swiss_knife             = 3, 0.60
+itm_actor_backpack      = 3, 1
+cigar1                  = 3, 0.60
+;tobacco items
+tobacco                 = 3, 0.60
+hand_rolling_tobacco    = 3, 0.60
+flask                   = 3, 0.60
+water_drink             = 3, 0.60
+mineral_water           = 3, 0.60
+vodka                   = 3, 0.60
+vodka2                  = 3, 0.60
+energy_drink            = 3, 0.60
+bread                   = 4, 0.60
+kolbasa                 = 4, 0.60
+conserva                = 4, 0.60
+batteries_dead          = 10, 0.60
+
+guitar_a                = 1, 0.60
+harmonica_a             = 1, 0.60
+
+bandage                 = 10, 1
+antirad                 = 3, 0.40
+medkit                  = 8, 1
+
+jar                     = 4, 0.60
+welding_goggles         = 1, 0.60
+boots                   = 2, 0.60
+headlamp                = 2, 0.60
+beadspread              = 2, 0.60
+walkie                  = 1, 0.60
+mirror                  = 2, 0.60
+tarpaulin               = 2, 0.60
+rope                    = 2, 0.60
+synthrope               = 2, 0.60
+cutlery                 = 4, 0.60
+radio                   = 1, 0.60
+lead_box                = 3, 0.50
+grease                  = 3, 0.60
+steel_wool              = 2, 0.60
+gun_oil                 = 1, 0.50
+gun_oil_ru_d            = 1, 0.50
+gun_oil_ru              = 1, 0.50
+solvent                 = 1, 0.50
+sewing_kit_b            = 1, 0.50
+sewing_kit_a            = 1, 0.50
+sewing_kit_h            = 1, 0.50
+cleaning_kit_p          = 1, 0.50
+cleaning_kit_s          = 1, 0.50
+itm_sleepbag            = 3, 0.60
+itm_backpack            = 3, 1
+itm_tent                = 3, 0.60
+duct_tape               = 3, 0.60
+grease                  = 3, 0.60
+hand_watch              = 3, 0.60
+leatherman_tool         = 1, 0.40
+rasp_tool               = 3, 0.40        
+ramrod_tool             = 3, 0.40
+sewing_thread           = 4, 0.40
+heavy_sewing_thread     = 2, 0.40
+
+detector_simple         = 1, 0.60
+
+trenchcoat_outfit       = 1, 0.50
+dolg_novice_outfit      = 1, 0.20
+bandit_novice_outfit    = 1, 0.50
+novice_outfit           = 1, 0.60
+cs_novice_outfit        = 1, 0.50
+helm_respirator         = 1, 0.50
+helm_bandana            = 1, 0.50
+helm_cloth_mask         = 1, 0.60
+
+af_kevlar               = 2, 0.50
+af_plates               = 2, 0.50
+
+kerosene                = 2, 1 
+charcoal                = 2, 1 
+explo_balon_gas         = 2, 1 
+explo_jerrycan_fuel     = 2, 1 
+
+
+light_repair_kit        = 3, 0.60
+;itm_basickit           = 1, 0.50
+;itm_ammokit            = 1, 0.50
+
+
+
+;=========== SUPPLIES 2 ===============
+;======================================
+;[Tier 2]
+;========================================================
+;  AMMO T2
+;========================================================
+ammo_9x21_sp10        = 10, 1        
+ammo_23x75_shrapnel   = 10, 1        
+ammo_23x75_barrikada  = 10, 1        
+ammo_20x70_buck       = 10, 1        
+ammo_7.62x54_7h1      = 5,  1
+ammo_9x39_pab9        = 10, 1
+ammo_m209             = 3,  0.65
+ammo_vog-25           = 3,  0.65
+ammo_7.92x33_ap       = 5,  0.75
+ammo_7.62x25_ps       = 10, 1
+ammo_12x76_zhekan     = 10, 1
+
+nbc_outfit              = 1, 0.30
+helm_respirator_gp5     = 1, 0.40
+helm_hardhat            = 1, 0.30
+helm_m40                = 1, 0.30
+ghillie_outfit          = 1, 0.20
+banditmerc_outfit       = 1, 0.30
+cs_light_outfit         = 1, 0.25
+svoboda_light_outfit    = 1, 0.20
+stalker_outfit          = 1, 0.40
+
+equ_small_pack          = 2, 1
+equ_small_military_pack = 1, 1
+equ_military_pack       = 1, 1
+equ_tourist_pack        = 1, 1
+
+wpn_axe                 = 1, 0.40
+wpn_axe2                = 1, 0.40
+wpn_axe3                = 1, 0.40
+
+;itm_advancedkit        = 1, 0.30
+
+
+;=========== SUPPLIES 3 ===============
+;======================================
+;[Tier 3]
+;========================================================
+;  AMMO T3
+;========================================================
+ammo_7.62x54_7h14     = 20, 1
+ammo_7.62x51_fmj      = 20, 1
+ammo_12x76_dart       = 10, 1
+ammo_magnum_300       = 5,  1      
+
+wpn_krissvektor               = 1, 0.40
+helm_battle               = 1, 0.10
+helm_m40                  = 1, 0.10
+
+military_outfit            = 1, 0.30
+merc_outfit                = 1, 0.30
+nomad_outfit               = 1, 0.25
+travel_outfit              = 1, 0.25
+exo_wood_outfit            = 1, 0.15
+stalker_bear_outfit        = 1, 0.20
+stalker_salamander_outfit  = 1, 0.20
+stalker_graphite_outfit    = 1, 0.20
+stalker_drought_outfit     = 1, 0.20
+stalker_predator_outfit    = 1, 0.20
+stalker_autumn_outfit      = 1, 0.20
+stalker_vineleaf_outfit    = 1, 0.20
+stalker_tigerstripe_outfit = 1, 0.20
+
+
+
+
+
+

@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<!-- Bandits -->
+	<string id="cc_generic-bandit-meet_hello_1">
+		<text>Zacni mluvit, kamarade.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hello_2">
+		<text>Jsem jedno ucho, kamo.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hello_3">
+		<text>No, ahoj!</text>
+	</string>
+
+	<string id="cc_generic-bandit-meet_hide_weapon_1">
+		<text>Prestan s tou veci mavat!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hide_weapon_2">
+		<text>Prestan mi tu vec strkat z obliceje!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hide_weapon_3">
+		<text>Myslis si, ze jsi tvrdy nebo co? Schovej tu strilecku do pouzdra!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hide_weapon_4">
+		<text>Pokud se chces vratit v jednom kuse, schovej ten kus!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hide_weapon_5">
+		<text>Podivej, ja si taky vytahnu svuj!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_hide_weapon_6">
+		<text>Nevyhrozuj nam tim ohrivacem! Mame dost vlastnich!</text>
+	</string>
+
+	<string id="cc_generic-bandit-meet_use_no_default_1">
+		<text>Jdi, najdi si nekoho jineho, kdo te bude otravovat, kamo.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_default_2">
+		<text>Nemam ted naladu mluvit.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_default_3">
+		<text>Prejeme vam to!</text>
+	</string>
+
+	<string id="cc_generic-bandit-meet_use_no_fight_1">
+		<text>Co to s tebou sakra je?</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_fight_2">
+		<text>Mene zvaneni, vice strileni!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_fight_3">
+		<text>Vybral sis vhodnou chvili na rozhovor...</text>
+	</string>
+
+	<string id="cc_generic-bandit-meet_use_no_talk_leader_1">
+		<text>Promluv si s velkym zlym sefem.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_talk_leader_2">
+		<text>Nejsem placeny za to, abych poslouchal tvoje kecy. To dela sef.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_talk_leader_3">
+		<text>Pokud neco potrebujes, sef je tamhle.</text>
+	</string>
+
+	<string id="cc_generic-bandit-meet_use_no_weapon_1">
+		<text>Nemluvim s tebou, kdyz mas tu vec v mem obliceji!</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_weapon_2">
+		<text>Odloz tu strilecku, pak si promluvime.</text>
+	</string>
+	<string id="cc_generic-bandit-meet_use_no_weapon_3">
+		<text>Odloz tu strilecku, nebo se ztratis!</text>
+	</string>
+
+	<!-- Clear Sky -->
+	<string id="cc_generic-csky-meet_hello_1">
+		<text>Co potrebujes, stalkere? </text>
+	</string>
+	<string id="cc_generic-csky-meet_hello_2">
+		<text>Stalkere, co chces?</text>
+	</string>
+	<string id="cc_generic-csky-meet_hello_3">
+		<text>Co potrebujes? </text>
+	</string>
+
+	<string id="cc_generic-csky-meet_hide_weapon_1">
+		<text>Odloz zbran, clovece.</text>
+	</string>
+	<string id="cc_generic-csky-meet_hide_weapon_2">
+		<text>Prestan se tu pitvorit! Schovej si zbran do pouzdra!</text>
+	</string>
+	<string id="cc_generic-csky-meet_hide_weapon_3">
+		<text>Delej, chlape, schovej tu zbran!</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_use_no_talk_leader_1">
+		<text>Promluv si s sefem, jestli neco potrebujes...</text>
+	</string>
+	<string id="cc_generic-csky-meet_use_no_talk_leader_2">
+		<text>Mluvte se sefem.</text>
+	</string>
+	<string id="cc_generic-csky-meet_use_no_talk_leader_3">
+		<text>Sef je tamhle. Jdi a promluv si s nim.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_use_no_weapon_1">
+		<text>Odloz tu zbran, pak si promluvime.</text>
+	</string>
+	<string id="cc_generic-csky-meet_use_no_weapon_2">
+		<text>Zapomen tu zbran, jestli si chces promluvit.</text>
+	</string>
+	<string id="cc_generic-csky-meet_use_no_weapon_3">
+		<text>Nejdriv odloz tu zbran.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_weapon_start_1">
+		<text>Odloz tu zbran, pak si promluvime.</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_start_2">
+		<text>Odloz tu zbran, jestli si chces promluvit.</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_start_3">
+		<text>Nejdriv odloz tu zbran.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_weapon_wait_1">
+		<text>Odloz ten kus pryc!</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_wait_2">
+		<text>Zaloz zbran.</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_wait_3">
+		<text>Skryj tuto zbran!</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_wait_4">
+		<text>Rekl jsem, abyste toho strelce schovali za zada!</text>
+	</string>
+	<string id="cc_generic-csky-meet_weapon_wait_5">
+		<text>Zadna legrace. Schovej tu vec do pouzdra.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_stop_1">
+		<text>V posledni dobe se zda, ze do Zony prichazeji ti nejhorsi lide.</text>
+	</string>
+	<string id="cc_generic-csky-meet_stop_2">
+		<text>Aha, no, jak myslis... nebo nerikej.</text>
+	</string>
+	<string id="cc_generic-csky-meet_stop_3">
+		<text>Aha, vidim, ze ses nikdy nenaucil anglicky.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_general_wait_1">
+		<text>Jak dlouho jeste budu muset cekat?</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_wait_2">Jaky je text?
+		<text>Tamhle si zdrimnes?</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_wait_3">
+		<text>Jo, vstavej!</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_wait_4">
+		<text>Vole, pust brzdu.</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_wait_5">
+		<text>Chces neco?</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_general_stop_1">
+		<text>Jsi pomaly nebo co?</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_stop_2">
+		<text>Jsi jazykovy sprt, to jsi.</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_stop_3">
+		<text>O ne! Dalsi nemy uz ne.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_general_start_1">
+		<text>Takze, co potrebujete?</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_start_2">
+		<text>Co vlastne chcete?</text>
+	</string>
+	<string id="cc_generic-csky-meet_general_start_3">
+		<text>Co se deje, stalkere? </text>
+	</string>
+
+	<string id="cc_generic-csky-meet_comander_wait_1">
+		<text>Rekni mi uz, co chces.</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_wait_2">
+		<text>Rekni neco, ano!</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_wait_3">
+		<text>Mas pro me nejakou praci nebo co?</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_wait_4">
+		<text>Co je to za zdrzovani? </text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_wait_5">
+		<text>Na co cekas?</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_comander_stop_1">
+		<text>V posledni dobe se zda, ze do Zony prichazeji ti nejhorsi lide.</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_stop_2">
+		<text>Aha, no, cokoli reknes... nebo nereknes.</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_stop_3">
+		<text>Aha, vidim, ze ses nikdy nenaucil anglicky.</text>
+	</string>
+
+	<string id="cc_generic-csky-meet_comander_start_1">
+		<text>Co potrebujes stalkere? </text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_start_2">
+		<text>Stalkere, co chces?</text>
+	</string>
+	<string id="cc_generic-csky-meet_comander_start_3">
+		<text>Co potrebujes? </text>
+	</string>
+
+	<!-- Duty -->
+	<string id="cc_generic-dolg-meet_hello_1">
+		<text>Co je noveho?</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hello_2">
+		<text>Zdravim a vitam vas!</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hello_3">
+		<text>Cas je penezi. Dejte se do reci!</text>
+	</string>
+
+	<string id="cc_generic-dolg-meet_hide_weapon_1">
+		<text>Priprav tu zbran, priteli.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_2">
+		<text>Priprav si zbran.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_3">
+		<text>Odloz tu zbran, sefe.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_7">
+		<text>Priprav tu zbran do pouzdra, chlape.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_8">
+		<text>Hned tu zbran odlozte!</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_9">
+		<text>Odloz tu zbran, clovece!</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_10">
+		<text>Potrebujes pomoct zbavit se te zbrane?</text>
+	</string>
+	<string id="cc_generic-dolg-meet_hide_weapon_11">
+		<text>Kamo... Odloz tu strelnou zbran.</text>
+	</string>
+
+	<string id="cc_generic-dolg-meet_use_no_default_1">
+		<text>Ne, nechce se mi mluvit.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_default_2">
+		<text>Promin, ale nemam naladu si povidat.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_default_3">
+		<text>Momentalne nemohu mluvit.</text>
+	</string>
+
+	<string id="cc_generic-dolg-meet_use_no_fight_1">
+		<text>Promluvime si jindy.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_fight_2">
+		<text>Pozdeji. Promluvime si pozdeji.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_fight_3">
+		<text>Neni vhodna doba na zvaneni.</text>
+	</string>
+
+	<string id="cc_generic-dolg-meet_use_no_talk_leader_1">
+		<text>Mluvte s velitelem druzstva, pokud neco chcete.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_talk_leader_2">
+		<text>Stalkere, sve dotazy smeruj na velitele oddilu.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_talk_leader_3">
+		<text>Jdi za velitelem.</text>
+	</string>
+
+	<string id="cc_generic-dolg-meet_use_no_weapon_1">
+		<text>Muzeme si popovidat, az tu zbran nebudu mit pred oblicejem.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_weapon_2">
+		<text>Bud tu strelnou zbran odloz, nebo proste odejdi!</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_weapon_3">
+		<text>Promluvime si, az odlozis zbran do pouzdra.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_weapon_6">
+		<text>Zapomnel jsi, jak se zbran uklada do pouzdra?</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_weapon_7">
+		<text>Takovou konverzaci vest nebudeme.</text>
+	</string>
+	<string id="cc_generic-dolg-meet_use_no_weapon_8">
+		<text>Pokud si neulozis zbran do pouzdra, bude to jedina vec, se kterou se da mluvit!</text>
+	</string>
+
+	<!-- Ecologists -->
+	<string id="cc_generic-ecolog-meet_hello_1">
+		<text>Co na to rikate?</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_hello_2">
+		<text>Posloucham.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_hello_3">
+		<text>Dobry den.</text>
+	</string>
+
+	<string id="cc_generic-ecolog-meet_hide_weapon_1">
+		<text>Hej, tak tohle uz nepujde. Nemirme na nas zadnymi zbranemi.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_hide_weapon_2">
+		<text>Tu zbran si muzes nejdriv schovat do pouzdra.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_hide_weapon_3">
+		<text>Nejdrive odlozte svou zbran.</text>
+	</string>
+
+	<string id="cc_generic-ecolog-meet_use_no_default_1">
+		<text>Nemam ted o cem mluvit, jasny?</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_default_2">
+		<text>Prominte, radeji bych ted nemluvil.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_default_3">
+		<text>Neobtezujte me zadnym tlachanim, prosim.</text>
+	</string>
+
+	<string id="cc_generic-ecolog-meet_use_no_fight_1">
+		<text>Chces si vazne promluvit? Slez dolu, idiote!</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_fight_2">
+		<text>Pozdeji! Promluvime si pozdeji!</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_fight_3">
+		<text>Mas hlavu na svych ramenou? Ted ne!</text>
+	</string>
+
+	<string id="cc_generic-ecolog-meet_use_no_talk_leader_1">
+		<text>Nemam ted o cem mluvit, jasny?</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_talk_leader_2">
+		<text>Pardon, ale neni o cem mluvit.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_talk_leader_3">
+		<text>Usetrete me kecu.</text>
+	</string>
+
+	<string id="cc_generic-ecolog-meet_use_no_weapon_1">
+		<text>Chces-li si promluvit, odloz tu zbran.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_weapon_2">
+		<text>Schovej toho strelce, clovece. Jinak s tebou nemam co delat.</text>
+	</string>
+	<string id="cc_generic-ecolog-meet_use_no_weapon_3">
+		<text>Hej, tak tohle uz nepujde. Nemirme zadnymi zbranemi.</text>
+	</string>
+
+	<!-- Freedom -->
+	<string id="cc_generic-freedom-meet_hello_1">
+		<text>No, vysyp to!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hello_2">
+		<text>Posloucham, clovece.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hello_3">
+		<text>Co je, bracho?</text>
+	</string>
+
+	<string id="cc_generic-freedom-meet_hide_weapon_1">
+		<text>Nehraj si na hrdinu. Nech tu strelbu v pouzdre.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_2">
+		<text>Zapni si strilecku do pouzdra, sakra!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_3">
+		<text>Klid, clovece! Schovej si ten svuj kanon do pouzdra.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_9">
+		<text>Nic netahej. A schovej tu strelkyni, ano?</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_10">
+		<text>To staci! Prestan s tim mavat kolem sebe.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_11">
+		<text>Hned schovej svou hracku!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_hide_weapon_12">
+		<text>Schovej tu zatracenou strilecku.</text>
+	</string>
+
+	<string id="cc_generic-freedom-meet_use_no_default_1">
+		<text>Scram!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_default_2">
+		<text>Tato konverzace se nekona a tim to konci!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_default_3">
+		<text>Nemuzu se ted obtezovat s konverzaci.</text>
+	</string>
+
+	<string id="cc_generic-freedom-meet_use_no_fight_1">
+		<text>Kamo, jsi blazen!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_fight_2">
+		<text>Tam se jako strili a tak, vis?</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_fight_3">
+		<text>Tezko se o tom da mluvit.</text>
+	</string>
+
+	<string id="cc_generic-freedom-meet_use_no_talk_leader_1">
+		<text>Jdi si promluvit se sefem, chlape!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_talk_leader_2">
+		<text>Pochybuji, ze ti mohu rict neco uzitecneho. Jdi za sefem.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_talk_leader_3">
+		<text>Nech me na pokoji, clovece. Promluv si se sefem, je tamhle.</text>
+	</string>
+
+	<string id="cc_generic-freedom-meet_use_no_weapon_1">
+		<text>Mas v planu strilet, nebo mluvit? Schovej tu zbran do pouzdra!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_weapon_2">
+		<text>Nemam chut mluvit s lidmi, kteri na me miri zbrani.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_weapon_3">
+		<text>Promluvime si, az bude ten strelec v pouzdre.</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_weapon_6">
+		<text>Jste tu, abyste si zastrileli, nebo abyste si promluvili?</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_weapon_7">
+		<text>Typek. To tvoje kovove presvedceni, to musi jit!</text>
+	</string>
+	<string id="cc_generic-freedom-meet_use_no_weapon_8">
+		<text>Pouzivas tu velkou hracku, abys neco kompenzoval?</text>
+	</string>
+
+
+	<!-- Mercenaries -->
+	<string id="cc_generic-killer-meet_hello_1">
+		<text>Prijdte sem. Nekousnu.</text>
+	</string>
+	<string id="cc_generic-killer-meet_hello_2">
+		<text>Hej, bracho!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hello_3">
+		<text>Kdo jsi?</text>
+	</string>
+
+	<string id="cc_generic-killer-meet_hide_weapon_1">
+		<text>Tu zbran schovej ty!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hide_weapon_2">
+		<text>Chces-li mluvit, sklon tu zbran a pomalu se pribliz!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hide_weapon_3">
+		<text>Chces-li mluvit, sklon tu zbran a pomalu se pribliz!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hide_weapon_4">
+		<text>Schovej tu zbran!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hide_weapon_5">
+		<text>Chces-li mluvit, sklon tu zbran a pomalu se pribliz!</text>
+	</string>
+	<string id="cc_generic-killer-meet_hide_weapon_6">
+		<text>Schovej tu zbran!</text>
+	</string>
+
+	<string id="cc_generic-killer-meet_use_no_default_1">
+		<text>Nemluvim s tebou.</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_default_2">
+		<text>Nemam chut si s vami povidat.</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_default_3">
+		<text>Nemam naladu na mlaceni zvykacek.</text>
+	</string>
+
+	<string id="cc_generic-killer-meet_use_no_fight_1">
+		<text>Ted ne!</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_fight_2">
+		<text>Jsi blazen? Ted ne!</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_fight_3">
+		<text>Nevidis, ze jsme v boji? </text>
+	</string>
+
+	<string id="cc_generic-killer-meet_use_no_talk_leader_1">
+		<text>Nechce se mi zvanit. Jdi si promluvit s velitelem.</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_talk_leader_2">
+		<text>Pokud neco potrebujes, jdi za velitelem. Promluvte si s nim.</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_talk_leader_3">
+		<text>Nemam chut si povidat. Jdi si promluvit s velitelem.</text>
+	</string>
+
+	<string id="cc_generic-killer-meet_use_no_weapon_1">
+		<text>Nebudu se s tebou bavit, kdyz mas tu vec u meho obliceje!</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_weapon_2">
+		<text>Odloz tu strilecku, pak si promluvime.</text>
+	</string>
+	<string id="cc_generic-killer-meet_use_no_weapon_3">
+		<text>Odloz tu strilecku, nebo se ztratis!</text>
+	</string>
+
+
+	<!-- Military -->
+	<string id="cc_generic-military-meet_hello_1">
+		<text>Howdy?</text>
+	</string>
+	<string id="cc_generic-military-meet_hello_2">
+		<text>Co si prejete?</text>
+	</string>
+	<string id="cc_generic-military-meet_hello_3">
+		<text>No a co? Posloucham...</text>
+	</string>
+
+	<string id="cc_generic-military-meet_hide_weapon_1">
+		<text>Sklopte zbran.</text>
+	</string>
+	<string id="cc_generic-military-meet_hide_weapon_2">
+		<text>Odloz zbran!</text>
+	</string>
+	<string id="cc_generic-military-meet_hide_weapon_3">
+		<text>Zahod zbran.</text>
+	</string>
+
+	<string id="cc_generic-military-meet_use_no_default_1">
+		<text>Nemam cas na reci.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_default_2">
+		<text>Nemuzu vam pomoci.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_default_3">
+		<text>Dejte mi pokoj, majore.</text>
+	</string>
+
+	<string id="cc_generic-military-meet_use_no_fight_1">
+		<text>Promluvime si, az bude po boji.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_fight_2">
+		<text>Prestan zvanit a soustred se!</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_fight_3">
+		<text>Neni vhodna doba na reci, clovece.</text>
+	</string>
+
+	<string id="cc_generic-military-meet_use_no_talk_leader_1">
+		<text>Jdi za velitelem.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_talk_leader_2">
+		<text>Velitel vam odpovi na vase otazky.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_talk_leader_3">
+		<text>Vykonavam strelbu. Velitel dela sezeni Q&amp;A.</text>
+	</string>
+
+	<string id="cc_generic-military-meet_use_no_weapon_1">
+		<text>Chces-li mluvit, schovej si zbran do pouzdra.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_weapon_2">
+		<text>Nebudu mluvit, kdyz na me miris tou veci.</text>
+	</string>
+	<string id="cc_generic-military-meet_use_no_weapon_3">
+		<text>Pokud si chces promluvit, schovej zbran.</text>
+	</string>
+
+
+	<!-- Monolith -->
+	<string id="cc_generic-monolith-meet_hello_1">
+		<text>Neduverujte nikomu jinemu nez Monolitu a svym spolubratrum. Nikomu.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_hello_2">
+		<text>Je tu prilis ticho.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_hello_3">
+		<text>Myslim, ze uz jsem tu nekdy byl. Nemohu si vzpomenout.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_hello_4">
+		<text>Podivne... Vsechno je tu divne.</text>
+	</string>
+
+	<string id="cc_generic-monolith-meet_use_no_fight_1">
+		<text>Monolit... Velky monolit.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_use_no_fight_2">
+		<text>Pratele jsou blizko... Takova je vule Monolitu.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_use_no_fight_3">
+		<text>Monolit... Jsem tvuj verny sluzebnik.</text>
+	</string>
+
+	<string id="cc_generic-monolith-meet_use_no_talk_leader_1">
+		<text>Zustanme sami sebou.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_use_no_talk_leader_2">
+		<text>Nema cenu mluvit zbytecne.</text>
+	</string>
+	<string id="cc_generic-monolith-meet_use_no_talk_leader_3">
+		<text>Nechci ted mluvit.</text>
+	</string>
+
+	<!-- Loners -->
+	<string id="cc_generic-stalker-meet_hello_1">
+		<text>Howdy-ho? </text>
+	</string>
+	<string id="cc_generic-stalker-meet_hello_2">
+		<text>Hej, bracho!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hello_3">
+		<text>Posloucham...</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_hide_weapon_1">
+		<text>Odloz zbran, clovece.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hide_weapon_2">
+		<text>Prestan se tady pitvorit! Schovej si zbran do pouzdra!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hide_weapon_3">
+		<text>Delej, chlape, schovej tu zbran!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hide_weapon_7">
+		<text>Hned schovej zbran!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hide_weapon_6">
+		<text>Prestan na me mavat tou popovou pistoli!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_hide_weapon_8">
+		<text>Co je s tim strelcem?</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_use_no_default_1">
+		<text>Nemluvim s tebou.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_default_2">
+		<text>Nemam chut si s vami povidat.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_default_3">
+		<text>Nemam naladu na mlaceni zvykacek.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_use_no_fight_1">
+		<text>Na zvaneni neni cas, chlape.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_fight_2">
+		<text>Jsi blazen? Promluvime si potom!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_fight_3">
+		<text>Jsi si jisty, ze si chces povidat, kdyz se deji tyhle sracky? </text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_use_no_talk_leader_1">
+		<text>Promluv si s sefem, jestli neco potrebujes...</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_talk_leader_2">
+		<text>Promluvte si se sefem.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_talk_leader_3">
+		<text>Sef je tamhle. Jdi a promluv si s nim.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_use_no_weapon_1">
+		<text>Odloz tu strilecku a pak si promluvime.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_weapon_2">
+		<text>Nejsem zrovna hovorny, kdyz mi nekdo mava zbrani pred oblicejem. Sokujici, co? </text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_weapon_3">
+		<text>Nemam chut mluvit, kdyz me mas na musce.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_use_no_weapon_9">
+		<text>Delej, chlape! Odloz tu zbran.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_weapon_start_1">
+		<text>Nebud blbec, schovej si zbran do pouzdra.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_start_2">
+		<text>Prestan mavat tou zbrani, upoutal jsi mou pozornost.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_start_3">
+		<text>Mohli bychom si popovidat, kdyz schovas tu zbran.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_weapon_wait_1">
+		<text>Proc drzis tu zbran? </text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_wait_2">
+		<text>Co je s tim strelcem? </text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_wait_3">
+		<text>Se zbranemi se nemluvi!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_wait_4">
+		<text>Prestan na me mavat tou popovou pistoli!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_weapon_wait_5">
+		<text>Hned schovej svou zbran!</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_wait_1">
+		<text>Posloucham.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_2">
+		<text>Dobre, vyklop to.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_3">
+		<text>Nevidis, ze mam praci? Prejdi k veci.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_4">
+		<text>Jsi stydlivy nebo co? No tak, mluv se mnou.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_5">
+		<text>Nechovej se stydlive a promluv.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_6">
+		<text>Jestlize jsi prisel mluvit o obchodu, tak to udelej.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_7">
+		<text>Dobre, uz dost ticha, mluvte!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_8">
+		<text>Probud se a ucitis vuni kavy.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_9">
+		<text>Delej, uz se ozvi.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_10">
+		<text>Delej, zacni se delit.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_11">
+		<text>No, chces neco, nebo nechces?</text>
+	</string>
+	<string id="cc_generic-stalker-meet_wait_12">
+		<text>Musim tu mluvit za nas oba?</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_stop_1">
+		<text>Mluvit s nemym je sporne.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_stop_2">
+		<text>Vrat se, az se naucis mluvit.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_stop_3">
+		<text>Tenhle rozhovor si vylozene uzivam. Ne.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_stop_4">
+		<text>Huh. Pekny rozhovor to byl.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_stop_5">
+		<text>Je tohle soutez v mlceni? Dobre, vyhral jsi.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_stop_6">
+		<text>K certu, jestli vim, co po mne chces.</text>
+	</string>
+
+
+	<string id="cc_generic-stalker-meet_general_wait_1">
+		<text>Probud se a ucitis vuni kavy!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_wait_2">
+		<text>Dobre, uz se ozvi.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_wait_3">
+		<text>Delej, zacni se delit.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_wait_4">
+		<text>No, chces neco, nebo nechces?</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_wait_5">
+		<text>Musim tu mluvit za nas oba?</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_general_stop_1">
+		<text>Pekny rozhovor to byl.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_stop_2">
+		<text>Je tohle soutez v mlceni? Dobre, vyhral jsi.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_stop_3">
+		<text>K certu, jestli vim, co po mne chces.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_general_start_1">
+		<text>Pokud chces neco rict, tak to rekni.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_start_2">
+		<text>Jsem jedno ucho.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_general_start_3">
+		<text>Posloucham.</text>
+	</string>
+
+	<string id="cc_generic-stalker-meet_comander_wait_1">
+		<text>Nevidis, ze mam praci? Prejdi k veci.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_comander_wait_2">
+		<text>Jsi stydlivy nebo co? No tak, mluv se mnou!</text>
+	</string>
+	<string id="cc_generic-stalker-meet_comander_wait_3">
+		<text>Nechovej se stydlive a promluv.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_comander_wait_4">
+		<text>Jestlize jsi prisel mluvit o obchodu, tak to udelej.</text>
+	</string>
+	<string id="cc_generic-stalker-meet_comander_wait_5">
+		<text>Kamo, uz dost, mluv!</text>
+	</string>
+</string_table>

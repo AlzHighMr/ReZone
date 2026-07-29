@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON YANTAR MAP
+<	CoC 1.4.08 - DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+
+<string_table>
+
+	<!-- Sakharov (Ecologist) Default Storyline Task -->
+
+<string id="drx_sl_yan_stalker_sakharov_default_task_name">
+    <text>Získej další úkol</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_default_task_text">
+    <text>Přijmi další úkol.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_default_task_about">
+    <text>Cože? Ano, skvěle! Stalkere, potřebuji, abys pomohl jednomu z mých kolegů. Běž za ním rychle! Potřebuje tě!</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_default_task_finish">
+    <text>Hodně štěstí stalkere.</text>
+</string>
+
+<string id="drx_sl_yan_stalker_sakharov_task_1_name">
+    <text>Sakharovovy výzkumné dokumenty</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_1_text">
+    <text>Některé výzkumné dokumenty profesora Sacharova zůstaly, když jeho vědec utekl před útokem mutantů. Získejte tyto dokumenty a vraťte je Sacharovovi.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_1_about">
+    <text>Aha, ano, jsem rád, že jsi tady. Jeden z mych výzkumníků se právě vrátil z terénu. Musel opustit své poznámky poté, co ho napadli mutanti. Má strach se tam vrátit. Potřebuji ten výzkum, stalkere. Prosím, získejte ho pro mě zpět, rád vám za vaši námahu zaplatím.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_1_finish">
+    <text>Děkuji ti stalkere! Prosím, ber to jako svou platbu.</text>
+</string>
+
+
+<string id="drx_sl_yan_stalker_sakharov_task_2_name">
+    <text>Abnormální měření</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_text_0">
+    <text>Profesor Sacharov tě požádal o pomoc při měření abnormální anomálie, ale nejdříve musíš získat zpět ztracený $predmet_1.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_text_1">
+    <text>Profesor Sacharov tě požádal o pomoc při měření abnormální anomálie.\nZamíří k označenému místu.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_text_2">
+    <text>Profesor Sacharov tě požádal o pomoc při měření abnormální anomálie.\nPoužij $polozku_1 k měření.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_text_3">
+    <text>Profesor Sacharov vás požádal o pomoc při měření abnormální anomálie.\nVraťte se k němu s $item_1 a zaznamenanými výsledky.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_text_4">
+    <text>Aha, ano, dobře! Čekal jsem tě. Naše skenery ukazují zajímavé údaje pocházející z určité anomálie. Potřebuji zkušeného stalkera, který by se tam vydal a provedl podrobná měření. Mám pro vás to správné zařízení, mladý muži. Hodně štěstí.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_2_finish">
+    <text>Ano, dobře, dobře! Teď může můj výzkum začít! Děkuji stalkerovi. Vedl jsi se dobře.</text>
+</string>
+
+<string id="drx_sl_yan_stalker_sakharov_task_3_name">
+    <text>Pátrání v laboratoři X-18</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_3_text">
+    <text>Profesor Sacharov potřebuje výzkumné dokumenty obsažené v laboratoři X-18 v Temném údolí.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_3_about">
+    <text>Aha, ano. Dobře! Mám pro tebe důležitý úkol. V laboratoři X-18 byl proveden důležitý výzkum, ale nepodařilo se nám získat přístup k jeho analýze. Myslíš, že se nám ho můžeš pokusit získat? Dobře vám zaplatím, pokud to dokážete.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_3_finish">
+    <text>Vynikající! Děkuji, stalkere!</text>
+</string>
+
+
+<string id="drx_sl_yan_stalker_sakharov_task_4_name">
+    <text>Postav skener poblíž anomalie Symbiontu</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text0">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.\nPředtím získej skener anomalii.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text1_0">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.\nDones skener k anomálnímu poli.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text1_1">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.\nDones skener k anomálnímu poli.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text2">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.\nUmísti skener.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_text3">
+    <text>Profesor Sacharov chce, aby byl skener anomalii umístěn poblíž anomalie Symbiontu v Rudém lese.\nPodej zprávu o realizaci.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_about">
+    <text>Skvěle! Podívejte se prosím na tento nový skener. Tato zařízení používáme ke skenování anomálních aktivit během našich vědeckých expedic. Jednou z nejzajímavějších anomalii v Zóně je anomálie Symbiont, která se nachází hluboko v Rudém lese. Chceme, aby byl tento skener nainstalován v blízkosti této anomalie. Pomůže nám zjistit více o její aktivitě.
+    \Místo je nebezpečné, ale doufáme, že pro schopného stalkera, jako jsi ty, to nebude problém. Prosím, nainstalujte mi ho tam, rád vám za to zaplatím.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_task_4_finish">
+    <text>Děkuji! Nyní můžeme tento jev studovat!</text>
+</string>
+
+
+<string id="drx_sl_yan_stalker_sakharov_cf_task_1_name">
+    <text>Věda a byrokracie</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_cf_task_1_text">
+    <text>Sakharov chce, abych mu dal 17 000 RU, aby mohl předložit všechny vládní papíry potřebné k tomu, abych se mohl stát oficiálním ekologem.</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_cf_task_1_about">
+    <text>Aha, no, jsem si jistý, že bys byl skvělý terénní asistent, ale jde o to, že vyřídit všechny potřebné papíry není zrovna levná záležitost a bez nějaké, ehm, motivace to nejde ani rychle. Víš, jak to s těmi vládními typy bývá.\n \nTrvalé smlouvy, licence, průkazy... Budu od tebe potřebovat nejméně 17 000 RU, abych to všechno zaplatil, zvlášť pokud chceš vidět výsledky ještě za svého života. Pokud jste však ochotni se s takovými penězi rozloučit, budeme rádi, když nám je dáte!</text>
+</string>
+<string id="drx_sl_yan_stalker_sakharov_cf_task_1_finish">
+    <text>Báječné! Vynikající! Prosím, chovej se tu jako doma, kolego ekologu.</text>
+</string>
+
+<string id="yan_ecolog_semenov_task_1_name">
+    <text>Lov na výzkum Semenova</text>
+</string>
+<string id="yan_ecolog_semenov_task_1_text">
+    <text>Asistent Semenov mě požádal, abych ho doprovodil po místní oblasti, aby mohl získat čerstvé vzorky tkání mutantů a analyzovat jejich mrtvoly pomocí skenovacího zařízení.</text>
+</string>
+<string id="yan_ecolog_semenov_task_1_about">
+    <text>Mohl bys mi pomoci zlikvidovat několik mutantů, abych mohl odebrat údaje a vzorky tkání? Řekněme... asi pět různých mutantů. Vložím do tvých rukou svůj život a ty bys musel zajistit mou bezpečnost. Za vaše úsilí vám poskytnu kompenzaci.</text>
+</string>
+<string id="yan_ecolog_semenov_task_1_finish">
+    <text>Děkuji ti za pomoc, příteli. Mám všechny potřebné vzorky tkání. Zde je vaše platba. Přijďte se za mnou zase někdy podívat.</text>
+</string>
+
+<string id="yan_stalker_sakharov_task_1_name">
+    <text>Zajistit %s pro bunkr Yantar</text>
+</string>
+<string id="yan_stalker_sakharov_task_1_text">
+    <text>Nejnovější experimenty profesora Sacharova vyžadují čerstvý vzorek tkáně z %s. Měl bych mu ho přinést, jakmile ho najdu.</text>
+</string>
+<string id="yan_stalker_sakharov_task_1_about">
+    <text>Potřebuji zkušeného stalkera nebo lovce mutantů. Jste to někdo? </text>
+</string>
+<string id="yan_stalker_sakharov_task_1_fetch_about">
+    <text>Potřebuji odebrat čerstvé buňky z %s vzorku tkáně. K tomu budu potřebovat, abys, ehm, obstaral vzorek a přinesl ho sem do mého bunkru. Vím, že zoologové tomu nebudou nakloněni, ale tohle místo není zoologická zahrada, to se musí uznat. Každopádně se ujistěte, že se ke mne vrátíte, jakmile budete mít požadovaný vzorek - mohl by poskytnout cenné poznatky o biologii zmutovaných divokých zvířat!"</text>
+</string>
+<string id="yan_stalker_sakharov_task_1_fetch_finish">
+    <text>Děkuji vám, milý kolego. To mi nesmírně pomůže v mé práci a výzkumu.</text>
+</string>
+
+	
+<string id="yan_stalker_sakharov_task_2_name">
+    <text>Anomální výzkum</text>
+</string>
+<string id="yan_stalker_sakharov_task_2_text">
+    <text>Profesor Sacharov mě požádal, abych našel artefakt %s, který by pomohl financovat jeho výzkum.</text>
+</string>
+<string id="yan_stalker_sakharov_task_2_about">
+    <text>Chcete mi pomoci s nějakým výzkumem? Za tvé úsilí ti zaplatím.</text>
+</string>
+<string id="yan_stalker_sakharov_task_2_fetch_about">
+    <text>Náš výzkumný tým je blízko dalšího významného objevu, ale zoufale potřebuje další materiály, aby si udržel financování a mohl pokračovat v experimentech! Prosím, najdete a doručte nám jeden artefakt %s. Budeme z něj potřebovat odebrat vzorky, pokud doufáme, že budeme moci pokračovat v našem výzkumu a zajistit suroviny pro naše dodavatele.</text>
+</string>
+<string id="yan_stalker_sakharov_task_2_fetch_finish">
+    <text>Za celou vědeckou komunitu vám děkuji. Zde je vaše odměna, jak bylo slíbeno.</text>
+</string>
+
+<!-- Úkol týkající se utajovaných informací -->
+<string id="classified_information_task_name">
+    <text>Utajované informace</text>
+</string>
+<string id="classified_information_task_text">
+    <text>Profesor mě požádal, abych pro něj získal nějaké citlivé výzkumné dokumenty.</text>
+</string>
+<string id="classified_information_task_about">
+    <text>Neznámí lupiči přepadli jeden z našich výzkumných týmů. Část výpravy se naštěstí vrátila živá a zdravá. Bohužel museli při svém útěku zanechat poněkud citlivý výzkum.\n \nV zájmu vědeckého pokroku i budoucího blaha mých kolegů si nepřeji, aby tato data zůstala ztracena - nebo ještě hůře, aby se dostala do rukou té záhadné skupiny, která mé výzkumníky napadla. Prosím, jděte ke skrýši na těchto souřadnicích: pokud si pospíšíte, dokumenty, které si přeji získat zpět, by tam ještě měly být.  Za vaši diskrétnost, stejně jako za doručení těchto dokumentů do mé kanceláře zde, nabízím přiměřenou odměnu. Jako další projev mého vděku si můžete také pomoci jakýmikoliv zásobami, které můj tým v této skrýši zanechal.</text>
+</string>
+<string id="classified_information_task_finish">
+    <text>Děkuji ti, milý společníku. Nebo bych měl spíše říct kolego? Výzkum nyní může plynule pokračovat - doufejme, že bez dalších zádrhelů, které se objeví za rohem.</text>
+</string>
+
+<!-- yan_stalker_sakharov -->
+<string id="yan_stalker_sakharov_psi_helmet_upgrade_name">
+    <text>Vyzvedni si Psy-Helmu</text>
+</string>
+<string id="yan_stalker_sakharov_psi_helmet_upgrade_text">
+    <text>Profesor Sacharov souhlasil s úplnou kalibrací tvé psycho-ochranné přilby. Požádal tě, abys ses pro ni vrátil asi za dva dny.</text>
+</string>
+
+
+<string id="brain_machine_deactivate_name">
+    <text>Deaktivovat zázračný stroj</text>
+</string>
+<string id="brain_machine_deactivate_text">
+    <text>Zázračný stroj může způsobit problémy vědcům v Jantaru, pokud bude ponechán bez kontroly příliš dlouho. Profesor Sacharov by jistě ocenil jeho deaktivaci.</text>
+</string>
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<!-- Peregrine (Military Mechanic) Find Level 1 Toolkit Task -->
+
+<string id="mechanic_army_yan_mlr_task_1_name">
+    <text>Najít %s pro Peregrina</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_1_text">
+    <text>%s potřebuje Peregrine k instalaci základních vylepšení vybavení, měl bych mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_1_about">
+    <text>Oh, jistě. Velitelství nás informovalo o tom, že do našeho bunkru dorazilo nářadí přes Kordon, ale balíček se tam nedostal. A kde tato zásilka skončila? To ví jen Zóna. Situace se však nezměnila a my stále potřebujeme další nástroje. Velitelství je teď opravdu tvrdohlavé, pokud jde o to, aby nám jich zařídilo víc, takže vám řeknu co. Jestli se ti podaří najít nějaké nástroje v přírodě - třeba jen základní - osobně ti zaplatím, abys je sem přivezl.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_1_fetch_about">
+    <text>Brilantní. Zatím se soustřeď jen na přinesení sady základních nástrojů - pokročilejší věci jsou bez nich k ničemu. Dobrý lov venku, stalkere.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_1_fetch_finish">
+    <text>Dobře, pojďme se na to podívat. Jo, tyhle budou stačit. Teď bych možná mohl dělat něco jiného než údržbu. Tady máš odměnu. Díky za pomoc.</text>
+</string>
+
+<string id="mechanic_army_yan_mlr_task_2_name">
+    <text>Najít %s pro Peregrina</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_2_text">
+    <text>%s potřebuje Peregrine k instalaci pokročilých vylepšení vybavení, měl bych mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_2_about">
+    <text>No, rozhodně jsi podnikavější než moji obvyklí dodavatelé, takže ti řeknu co - sežeň mi pokročilejší sadu nářadí. Udelej to a budeš mít peníze v kapse.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_2_fetch_about">
+    <text>Fantastické. Sacharov to určitě taky ocení. Jsem si jistý, že jakmile mi přineseš tyhle nástroje, má technická práce mu pomůže financovat jeho bunkr dřív, než stihneš mrknout.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_2_fetch_finish">
+    <text>Skvěle! Kdybyste potřebovali, abych se podíval na vaše vybavení, přijďte kdykoli. Díky tobě ted budu schopen udělat nějaké alespoň trochu slušné úpravy.</text>
+</string>
+
+
+<string id="mechanic_army_yan_mlr_task_3_name">
+    <text>Najdi %s pro Peregrína</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_3_text">
+    <text>%s jsou vyžadovány Peregrínem pro instalaci vylepšení odborného vybavení, mám mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_3_about">
+    <text>Nejsem si jistý, jestli ti to řekl, ale Sacharov je docela rád, že mi takhle pomáháš. Chtěl, abych ti vyřídil, že vyčlenil zdravou sumu rublů pro toho stopaře, který mi přinese sadu odborného nářadí. Mělo by nám to umožnit co nejlépe využít vědecké vybavení, které tu máme - zejména naše ochranné obleky a exoskelety. Takže jsi ochotný se pro mě naposledy vydat na lov sad nářadí?</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_3_fetch_about">
+    <text>Jsem za to upřímně vděčný. Až se vrátíš s nářadím, ukážu ti také jeden nebo dva triky, jak správně provádět údržbu v terénu - pokud tě to ovšem už nenaučil jiný technik. Bude to můj způsob, jak ti poděkovat. Hodně štěstí venku.</text>
+</string>
+<string id="mechanic_army_yan_mlr_task_3_fetch_finish">
+    <text>Hm. Škoda, že nepracuješ u zásobovacího sboru. Možná teď konečně opravím ten zatracený přijímač. Co se týče tebe, zasloužíš si můj vděk. Jménem tohoto bunkru vám posílám platbu.</text>
+</string>
+
+<string id="yan_stalker_sakharov_task_4_name">
+    <text>Získání sledovacího zařízení</text>
+</string>
+<string id="yan_stalker_sakharov_task_4_about">
+    <text>Mutantům jsme implantovali několik zařízení, která měří různé údaje - srdeční tep, stravovací návyky, spánkové cykly, dobu cestování a podobně. Od posledního výbuchu však jedno ze zařízení začalo špatně fungovat - stále sleduje pohyb, ale jinak přestalo přenášet další užitečné údaje. Jelikož jsou tyto sledovací přístroje obzvláště vyspělé konstrukce, musíme vadný přístroj získat zpět ke kontrole a případné opravě.  Získejte zařízení od mutanta jakýmkoli dostupným způsobem a pak nám ho přineste zpět.</text>
+</string>
+<string id="yan_stalker_sakharov_task_4_stage_0">
+    <text>Zastavte mutanta se sledovacím zařízením</text>
+</string>
+<string id="yan_stalker_sakharov_task_4_stage_1">
+    <text>Získat zpět sledovací zařízení</text>
+</string>
+<string id="yan_stalker_sakharov_task_4_stage_2">
+    <text>Vrátit sledovací zařízení</text>
+</string>
+<string id="recover_mutant_data_device_desc">
+    <text>Odolné zařízení, které bylo mutantovi nasazeno za účelem sledování jeho pohybu, zvyků a životních funkcí. Vykazuje známky koroze a je pokryto četnými stopami po kousnutí a poškrábání.</text>
+</string>
+<string id="recover_mutant_data_device_name">
+    <text>Sledovací zařízení</text>
+</string>
+
+
+</string_table>

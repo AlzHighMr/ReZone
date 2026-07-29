@@ -1,0 +1,23 @@
+![logic]
+!active = sr_idle@line_0
+active = sr_idle@spawn_tushkanchik
+
+[sr_idle@spawn_tushkanchik]
+on_actor_in_zone = agru_go_out_zone | sr_idle@timer %=spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_1:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_2:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_3:0)%
+
+[sr_idle@timer]
+on_game_timer = 1 | sr_idle@spawn_tushkanchik_2
+
+[sr_idle@spawn_tushkanchik_2]
+on_game_timer = 1 | sr_idle@timer_2 %=spawn_object(agru_tushkanchik_2:agru_tushkanchiks_spawn_1:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_1:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_2:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_3:0)%
+
+[sr_idle@timer_2]
+on_game_timer = 1 | sr_idle@spawn_tushkanchik_3
+
+[sr_idle@spawn_tushkanchik_3]
+on_game_timer = 1 | sr_idle@timer_3 %=spawn_object(agru_tushkanchik_3:agru_tushkanchiks_spawn_3:0) =spawn_object(agru_tushkanchik_1:agru_tushkanchiks_spawn_1:0)%
+
+[sr_idle@timer_3]
+
+
+ 

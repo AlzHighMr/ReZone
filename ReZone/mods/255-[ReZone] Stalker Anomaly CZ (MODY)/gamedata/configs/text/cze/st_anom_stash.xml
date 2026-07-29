@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<string id="st_anombp_desc">
+    <text>Zvláštní batoh, který vydává energie podobné anomálnímu poli. Jeho textilie byly změněny artefakty, čímž z něj činí nadpřirozeně těžký.\nVědec vám řekl, že používání batohů jako úložišť vám umožní vidět stejné předměty uvnitř, bez ohledu na to, kde jste.\n \n
+        %c[ui_gray_1]VLASTNOSTI:\n
+        %c[d_blue] • %c[ui_gray_2] záhadný předmět\n
+        %c[d_blue] • %c[ui_gray_2] úložiště předmětů\n
+        %c[0,100,255,150] • %c[ui_gray_2] použitelný jako úložiště\n
+    </text>
+</string>
+<string id="st_anombp_name">
+    <text>Anomální Batoh</text>
+</string>
+<string id="st_anombp_stash">
+    <text>Anomální Úložiště</text>
+</string>
+<string id="st_anombp_pickup">
+    <text>Sebrat</text>
+</string>
+<string id="st_anombp_cantsprint">
+    <text>Nemůžeš běhat, když máš u sebe Anomální Batoh</text>
+</string>
+<string id="ui_st_anom_pickup_hit">
+    <text>Sebrat batoh</text>
+</string>
+<string id="ui_st_anom_pickup_warning">
+    <text>Toto je poslední Anomální Úložiště. Vyprázdni jeho obsah, než ho můžeš zvednout!</text>
+</string>
+<string id="st_fetch_count_in_anom_stash">
+    <text>%sMáš %sx%s %s ve svém Anomálním batohu</text>
+</string>
+
+
+
+
+</string_table>

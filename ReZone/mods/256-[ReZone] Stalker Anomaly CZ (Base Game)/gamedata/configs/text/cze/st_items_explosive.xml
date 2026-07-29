@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Explosive items + Mines
+-->
+
+<string_table>
+
+<string id="st_mine_name">
+<text>PFM-1 rozptylná protipěchotní mina</text>
+</string>
+<string id="st_mine_descr">
+<text>PFM-1 ("Zelený papoušek") bývala standardní protipechotní mina Rudé armády, používaná zejména během sovětské invaze do Afghánistánu. Její rozsáhlé použití během konfliktu vedlo k vysokým civilním obětem, zejména mezi dětmi, protože náhodně rozptýlené miny byly pro svůj známý tvar a barvu často zaměňovány za hračky. Z tohoto důvodu si PFM-1 vysloužila zlověstnou přezdívku: "Zabiják dětí". Od té doby byla mina nahrazena novějšími modely. Nicméně, stejně jako tomu bylo v případě řady jiných "vysloužilých" zbraní, velké množství těchto min se nějakým způsobem dostalo do Zóny a stalo se její hlavní nastraženou výbušninou. Mina je vysoce ceněna především pro svou funkčnost, uživatelskou přívětivost, kompaktní rozměry a nízkou hmotnost, zatímco její hlavní nevýhodou je relativně malé množství výbušného materiálu: její síla často nestačí k tomu, aby jediným výbuchem zabila silně obrněného stalkera. Z tohoto důvodu by se mina měla používat v kombinaci s jinými výbušnými materiály a působí jako rozbuška. Pokud není odjištěna, mina nevybuchne, ani když je zasažena zbraní.\n \n
+%c[ui_gray_3]VLASTNOSTI:\n
+%c[d_blue] - %c[ui_gray_2] výbušnina\n
+%c[d_blue] - %c[ui_gray_2] vojenský předmět\n
+%c[d_blue] - %c[ui_gray_2] protipechotní mina\n
+%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1]tlak\n
+%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1]malý\n
+%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1]2,2 m\n
+%c[d_purple] - %c[ui_gray_2] vzdálenost fragmentu: %c[ui_gray_1]žádný\n
+%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1]žádný\n
+%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1]žádné\n
+</text>
+</string>
+<string id="st_ied_rpg">
+<text>Improvizované výbušné zařízení (založené na hlavici OG-7V)</text>
+</string>
+<string id="st_ied_rpg_descr">
+<text>Improvizované výbušné zařízení založené na hlavici OG-7V a částech autobaterie. Vypadá to, jako by ho někdo nosil u sebe už delší dobu a mohlo by každou chvíli vybuchnout. Naštěstí spouštěcí mechanismus zajistí, že se tak nestane, pokud výbušninu přímo nezasáhne kulka nebo na ni nepůsobí jiná silná fyzikální síla. V Zóně jsou IED poměrně oblíbené a Zonerové je používají k různým účelům, od získání přístupu do uzavřených oblastí až po přepadnutí. Často se také umisťují vedle min, aby výrazně zesílily sílu výbuchu. IED lze účinně skrýt, takže jsou pro ostatní prakticky neviditelné.\n \n
+%c[ui_gray_3]VLASTNOSTI:\n
+%c[d_blue] - %c[ui_gray_2] výbušnina\n
+%c[d_blue] - %c[ui_gray_2] vojenský předmět\n
+%c[d_blue] - %c[ui_gray_2] NPC nezjisti při umístění na zemi\n
+%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1]proximity\n
+%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1]vysoký\n
+%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1]7,8 m\n
+%c[d_purple] - %c[ui_gray_2] vzdálenost fragmentu: %c[ui_gray_1]56 m\n
+%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1]440 (střepiny)\n
+%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1]žádné\n
+</text>
+</string>
+	
+<string id="st_ied">
+	<text>Silně výbušné zařízení (na bázi chemických látek)</text>
+</string>
+<string id="st_ied_descr">
+	<text>Improvizované výbušné zařízení vyrobené z různých chemických látek, s rozbitym elektrickým zapalovačem a v ocelové kulové nádobě. Chemické látky použité v zařízení produkojí intenzivní zápach a jsou silně toxické. Toto IED je výrazně silnější než běžnější verze OG-7V. V Zóně jsou IED poměrně oblíbené a zonerové je používají k různým účelům, od získání přístupu do uzavřených oblastí až po přepadnutí. Často se také umisťují vedle min, aby výrazně zesílily sílu výbuchu. IED lze účinně skrýt, takže jsou pro ostatní prakticky neviditelné.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výbušnina\n
+	%c[d_blue] - %c[ui_gray_2] vojenský předmět\n
+	%c[d_blue] - %c[ui_gray_2] NPC nezjisti při umístění na zemi\n
+	%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1]proximity\n
+	%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1]velmi vysoká\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1]12,9 m\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost fragmentu: %c[ui_gray_1]74 m\n
+	%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1]580 (ocelové kuličky)\n
+	%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1]none\n
+</text>
+</string>
+<string id="st_balon_gas">
+	<text>Plynový balón
+	</text>
+</string>
+<string id="st_balon_gas_descr">
+	<text>\n \n
+	%c[d_red]VAROVÁNÍ: Při nárazu exploduje\n \n
+	%c[ui_gray_1]Těžký kovový plynový balónek impregnován zevnitř kompatibilním polymerem a zvenku Hypalonem pro odolnost proti oděru a UV záření. Tento balónek na plyn je skládací, meziskladovací nádrž na jakýkoli průmyslový plyn před stlačením do lahví pod tlakem. V zóně takové kanystry nejčastěji obsahují složení metanu, propanu, ethanu a butanu a lze je použít k vaření nebo vytápění i k bojovým účelům. Při přímé střelbě se kanystr může vzňat a po krátké chvíli může následovat rychlé uvolnění značného množství energie, což způsobí okamžitou expanzi plynu v balónu a následnou opožděnou, ale silnou explozi s kovovými střepinami rozeletajícími se ve všech směrech. Takové kanystry byly použity jako zbraně ve sporech mezi frakcemi v Zóně, které zabily mnoho lidí a ještě více jich zmrzačily. Pokud je balónek vyprázdněn, lze jej použít k opravě pancíře.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výbušnina\n
+	%c[d_blue] - %c[ui_gray_2] technologický předmět\n
+	%c[d_blue] - %c[ui_gray_2] obsahuje: %c[ui_gray_1] rafinovaný zemní plyn\n
+	%c[d_green] - %c[ui_gray_2] vysokostupňové palivo na vaření\n
+	%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1]náraz kulky nebo výbuch\n
+	%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1]velmi vysoká\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1]6,4 m\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost fragmentu: %c[ui_gray_1]36 m\n
+	%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1]28 (fragmenty těžkých kovů)\n
+	%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1]~2 sekundy\n
+</text>
+</string>
+
+<string id="st_balon_gas_empty">
+	<text>Plynový balón (prázdný)</text>
+</string>
+<string id="st_balon_gas_empty_descr">
+	<text>Vyprázdněný těžký kovový plynový balónek impregnovaný zevnitř kompatibilním polymerem a zvenku Hypalonem pro odolnost proti oděru a UV záření. Tento balónek s držákem plynu je skládací, meziskladovací nádrž pro jakýkoli průmyslový plyn před stlačením do lahví pod tlakem. V zóně takové kanystry nejčastěji obsahují složení metanu, propanu, ethanu a butanu a lze je použít k vaření nebo vytápění i k bojovým účelům. Nyní je prázdná, ale stále ji můžete dobře využít při údržbě výstroje.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] technologický předmět\n
+</text>
+</string>
+
+<string id="st_metalcan_powder">
+	<text>Plechovka střelného prachu</text>
+</string>
+<string id="st_metalcan_powder_descr">
+	<text>\n \n
+	%c[d_red]VAROVÁNÍ: Při nárazu exploduje\n \n
+	%c[ui_gray_1]Malá a středně těžká kovová plechovka naplněná směsí výbušných průmyslových chemikálií, kovových šroubů a matic a černého střelného prachu získaného ze staré munice. Notoricky známá smrtící past, kterou zkonstruovala skupina ruských banditů známá jako "Swireksters" a prodávala ji různým banditským skupinám působícím v Zóně. Při přímém výstřelu plechovka okamžitě exploduje a kovové šrouby a žíravé chemikálie se rozletí do všech stran. Nikdo se zdravým rozumem by neměl polevit v ostražitosti, když plánuje použít tuto smrtící zbraň. Kovové části plechovky můžete také použít k nouzové údržbě výstroje.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výbušnina\n
+	%c[d_blue] - %c[ui_gray_2] technologický předmět\n
+	%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1]náraz kulky nebo výbuch\n
+	%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1]nízká\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1]1,8 m\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost fragmentu: %c[ui_gray_1]14 m\n
+	%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1]77 (malé kovové kousky)\n
+	%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1]none\n
+</text>
+</string>
+
+<string id="st_jerrycan_item">
+	<text>Jerrycan</text>
+</string>
+	
+<string id="st_jerrycan_fuel">
+	<text>Jerrycan</text>
+</string>
+<string id="st_jerrycan_fuel_descr">
+	<text>\n \n
+	%c[d_red]VAROVÁNÍ: Při nárazu exploduje\n \n
+	%c[ui_gray_1]Velký kovový kanyst naplněný benzínem E95. Kanysty ve velkém množství přivezla do zóny ukrajinská armáda pro svá obrněná vozidla. Zpočátku sloužily svému účelu, ale po druhé černobylské havárii vozidla z dosud neznámých důvodů přestala být provozuschopná. Zatímco někteří obyvatelé Zóny se stále snaží vraky znovu zprovoznit, jiní našli alternativní způsoby využití kanystu, a to jako improvizované výbušniny. Při přímém zásahu se kanyst vznítí a po mírném zpoždění exploduje. Ackoli je kanyst těžký a těžkopádný, je mimořádně silný a dobře umístěný kanyst může být smrtící, i když má cíl na sobě nejtěžší neprůstřelnou vestu. Na druhou stranu je výbuch často tak silný, že se vrah sám stane obětí, takže je lepší používat tyto kanysty s opatrností. Kolovaly zvěsti, že veterán stalker jménem Yuya si kdysi zachránil kůži tím, že nalákal pseudogiganta do pasti s kanystrem. Vyprázdnil poslední zásobník Makarova a obr s revem, který byl slyšet po celém Jupiteru, vzplál.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výbušnina\n
+	%c[d_blue] - %c[ui_gray_2] technologický předmět\n
+	%c[d_blue] - %c[ui_gray_2] obsahuje: %c[ui_gray_1] benzín E95\n
+	%c[d_green] - %c[ui_gray_2] vysokostupňové palivo na vaření\n
+	%c[d_purple] - %c[ui_gray_2] spouštěcí mechanismus: %c[ui_gray_1] náraz kulky nebo výbuch\n
+	%c[d_purple] - %c[ui_gray_2] síla výbuchu: %c[ui_gray_1] vysoká\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost výbuchu: %c[ui_gray_1] 5,6 m\n
+	%c[d_purple] - %c[ui_gray_2] vzdálenost odletu fragmentu: %c[ui_gray_1] 28 m\n
+	%c[d_purple] - %c[ui_gray_2] průměrný počet fragmentů: %c[ui_gray_1] 39 (fragmenty těžkých kovů)\n
+	%c[d_purple] - %c[ui_gray_2] zpoždění výbuchu: %c[ui_gray_1] ~3 sekundy\n
+</text>
+</string>
+
+<string id="st_jerrycan_item">
+	<text>Kanystr</text>
+</string>
+
+<string id="st_jerrycan_fuel_empty">
+	<text>Kanystr (prázdný)</text>
+</string>
+<string id="st_jerrycan_fuel_empty_descr">
+	<text>Prázdný kovový kanystr. Lze jej použít pouze jako materiál pro účely základních oprav výstroje nebo prodat obchodníkům.\n \n
+	%c[ui_gray_3]VLASTNOSTI:\n
+	%c[d_blue] - %c[ui_gray_2] výbušnina\n
+	%c[d_blue] - %c[ui_gray_2] technologický předmět\n
+</text>
+</string>
+	
+</string_table>

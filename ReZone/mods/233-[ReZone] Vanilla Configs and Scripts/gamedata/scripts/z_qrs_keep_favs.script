@@ -1,0 +1,43 @@
+--[[
+	=====================================================================
+	Addon      : Tosox Mini Mods Repo: Keep Favorites on Quick Release
+	Link       : https://www.moddb.com/mods/stalker-anomaly/addons/tosox-mini-mods-repo/
+	Author     : Tosox
+	Date       : 17.11.2023
+	Last Edit  : 27.01.2024
+	=====================================================================
+--]]
+
+orig_keep_items = nil
+
+keep_items_script = nil
+if actor_stash_patch then
+	keep_items_script = actor_stash_patch
+else
+	keep_items_script = item_backpack
+end
+
+orig_item_backpack_actor_on_item_use = item_backpack.actor_on_item_use
+item_backpack.actor_on_item_use = function(obj)
+	-- Check if we should keep favs
+	if (not obj) or (obj:section() ~= "itm_actor_backpack") or (not zzz_rax_sortingplus_mcm) then
+		orig_item_backpack_actor_on_item_use(obj)
+		return
+	end
+
+	-- Insert original keep items once
+	if not orig_keep_items then
+		orig_keep_items = {}
+		copy_table(orig_keep_items, keep_items_script.keep_items)
+	end
+
+	-- Assign original keep items
+	keep_items_script.keep_items = dup_table(orig_keep_items)
+
+	-- Add current favorites
+	for k, _ in pairs(zzz_rax_sortingplus_mcm.favorite_itms) do
+		keep_items_script.keep_items[k] = true
+	end
+
+	orig_item_backpack_actor_on_item_use(obj)
+end

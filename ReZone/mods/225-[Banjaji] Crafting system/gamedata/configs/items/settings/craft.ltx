@@ -1,0 +1,97 @@
+;[[
+; 	Tronex
+; 	Crafting recipes for workshop
+; 	Basic item combinations (drag-drop items to combine them into another)
+;
+;	File structure changed by Banjaji's Crafting system improvements
+;	( https://www.moddb.com/mods/stalker-anomaly/addons/151-banjajis-crafting-system-improvements )
+;	For instructions see the mod at Moddb and read the test LTX file for recipe format.
+;
+;]]
+
+;;--==========================< Crafting (Workshop) >=============================
+;[[
+; ATTENTION: the reason why there is a "x_" in the start of craft items names is to avoid an issue with configs reading by the scripts 
+; if you use 2 craft recipes for the exact same item for example, the reader will take one recipe and ignore the rest
+; to avoid this case, you put 2 strings of anything before the actual name, here i used "x_" and "y_"
+; example: if you want to use 3 recipes for the geiger counter in one section, do something like this: "x_geiger_dead" "y_geiger_dead" "z_geiger_dead"
+; Otherwise, put "x_" or anything and move along. Just always remember to use 2 digits only and nothing else
+; this is a stupid yet simple fix
+;]]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;==========================< Banjaji's Crafting System Improvements >============================= 
+;; NOTICE FOR MODDERS ;;
+; You can make a new file that defines your new recipe sections and is named "craft_*.ltx" where "*" can be anything without "_" character ("craft_mine.ltx" is okay but "craft_mine_craft.ltx" will crash the game).
+; It will be automatically included and won't be overwritten by other mods that add recipes (unless they do it by scripts on purpose). In order to add/change recipes to already existing categories you'll still need to modify craft_vanilla.ltx file, preferrably with DLTX.
+; Under each section add a variable for the tab name eg. like in the original "title = st_ui_craft_device". If no such variable exists in xml files then the variable name itself gets written.
+; You can create a new recipe tab by creating a new section here. the section name needs to be craft_x, where x is a number between -10000 and 10000. Original sections are now -500, -400, ..., 0. The tabs are ordered in the ascending number order.
+; When creating a new section USE A RANDOM NUMBER GENERATOR!! That minimizes the chance that your number is the same as in some other mod. You can't have 2 sections with the same name or xray crashes.
+
+; Recipes:
+; Vanilla recipe format (compatible): a_craftable_item = toolkit_number, recipe, component1, component1_amount,  component2, component2_amount...
+; New recipe format: a_recipe_id_item = result_item1, result_item1_amount, result_item2, result_item2_amount... \ recipe_note1, recipe_note2... \ tool1, tool1_amount, tool2, tool2_amount... \ component1, component1_amount, component2, component2_amount...
+
+
+; New format has recipe identification and icon (item section after 2 first characters) on the left side of the equation and 4 categories on the right side of the equation.
+; Spaces don't matter in the recipe.
+
+; The categories are: results \ notes \ tools \ components. 
+; "\" is important and must be exactly that backward slash, not forward slash (stupid Xray). This separates results, notes, tools and components, so that the lists in categories can be as long as you want. Each category can also be empty.
+; You don't have to write "\"-s if you don't want to use later fields. E.g. if you want only result but nothing else then "a_recipe_id_item = result_item1" is valid.
+; But if you want to use e.g. result and tool but not recipe note then you have to leave notes' "\" in. E.g. "a_recipe_id_item = result_item1 \ \ tool1" is valid.
+
+; In each category you have a list: item1,item1_amount, item2,item2_amount... The list can be any length (0 to infinity).
+; Item amount can always be omitted (left out). In that case the amount defaults to 1.
+; E.g. "a_recipe_id_item = result_item1,result_item2,result_item3 \ \ tool1,tool_2 \ " is valid.
+; If you have duplicate items in a list in one category then the duplicate amounts are added together and the item is shown only one time. 
+
+; The first 2 characters before recipe_id_item are to distinguish recipes for the same item. It's the same as in the vanilla format. It doesn't matter what the characters are.
+; recipe_id_item is an item section. The recipe will show that item icon for the recipe and that item name and description where possible (e.g. tooltip and PDA encyclopedia articles).
+; You are encouraged to create new (item) sections for recipe_id_item (identificators). If you use existing item and e.g. someone changes recipes through script (aa_load_recipes_Banjaji_CSI.script) then your recipe might be overwritten unintentionally.
+
+; result_item is an item section. You will get this item after crafting.
+; result_item_amount is how many result_items you get. 1 is one item with full uses (multiuse item), full ammo (ammo box) or full condition (normal item). You don't need to write it, then it defaults to 1 (full uses).
+; Integer is item with full uses (e.g mineral_water has 3 uses) but you can result_item_amount can be a fraction. 
+; E.g. mineral_water has 3 uses when full. "mineral_water,0.8" gives round(3*0.8) = 2 uses and "mineral_water,1.5" gives round(3*1.5) = 5 uses. Minimum output is 1 use. Same applies to bullets in bullet box item.
+; Fraction result_item_amount for other items results in rounded down full condition items and the remaining fraction will determine the last item's condition. E.g. "wpn_rpk,1.3" gives 100% rpk and 30% rpk.
+
+; recipe_note is recipe note item section that has to be read for the recipe to unlock. If there are multiple in the list then you have to read all of them.
+; You don't need to (but may) append note_amount to the list because it's not used.
+
+; tool is a tool that needs to be in your inventory for crafting. This item won't be used up.
+; tool_amount is the amount of tool you need to have in your inventory. It counts item uses, so e.g. full mineral_water has 3 uses. You don't need to write it, then it defaults to 1 use.
+
+; component is a component that needs to be in your inventory for crafting. This item (or some uses) will be used up.
+; component_amount is the amount of component uses you need to have in your inventory. It counts item uses, so e.g. full mineral_water has 3 uses. You don't need to write it, then it defaults to 1 use.
+; If you use same item for tool and component then you need to have (tool_amount + component_amount) of uses for the item.
+
+
+
+
+;==========================< Recipes >============================= 
+; Vanilla recipes moved to craft_vanilla.ltx
+
+#include "craft_*.ltx"	; this makes it possible to add new sections in new files without the need to modify this one. However, if you need to modify vanilla recipes you'll still need to operate here.
+
+
+;;--==========================< Item combinations >=============================
+;[[
+; you can combine 2 items you define here into one
+; Example: vodka (item from) + cloth sheet (item to) = bandage (result)
+; 		vodka:prt_o_fabrics_4 = bandage
+; If you want to combine those 2 without caring about drag-drop order, add another line with opposite set
+;	    prt_o_fabrics_4:vodka = bandage
+;]]
+
+[item_combination]
+itm_sleepbag:beadspread = prop_bed_1
+beadspread:itm_sleepbag = prop_bed_1
+
+porn:prt_i_scrap = prop_poster_vertical_item
+prt_i_scrap:porn = prop_poster_vertical_item
+
+porn2:prt_i_scrap = prop_poster_vertical_item
+prt_i_scrap:porn2 = prop_poster_vertical_item
+
+;vodka:prt_o_fabrics_4 = bandage

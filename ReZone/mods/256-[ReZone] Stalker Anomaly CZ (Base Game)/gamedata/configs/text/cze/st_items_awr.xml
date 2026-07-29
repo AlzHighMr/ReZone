@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--
+	Advanced Weapon Repair Mod 0.3 by Faustle (2017)
+-->
+
+<string_table>
+	<!--
+		Interface
+	-->
+	<string id="st_current_condition">
+	<text>Aktuální stav: </text>
+</string>
+<string id="st_detail_success">
+	<text>+++ Díl [%s] byl úspěšně nainstalován</text>
+</string>
+<string id="st_detail_fail">
+	<text>--- Díl [%s] byl poškozen během výměny</text>
+</string>
+<string id="st_quality_worn">
+	<text>++++ Jeden nebo více dílů bylo nahrazeno opotřebovanými. Kvalita zbraně byla změněna na opotřebovanou.</text>
+</string>
+<string id="st_quality_good">
+	<text>++++ Všechny díly byly nahrazeny funkčními. Zbraň je nyní v novém stavu.</text>
+</string>
+<string id="st_quality_wgood">
+	<text>++++ Všechny díly byly nahrazeny. Kvalita zbraně zůstala stejná.</text>
+</string>
+<string id="st_already_repair">
+	<text>--- Postup výměny dílu byl dokončen. Pro zvýšení kvality zbraně musí být stav na 100 %</text>
+</string>
+<string id="st_no_barrel">
+	<text>--- Před výměnou dílů není možné vyměnit hlaveň</text>
+</string>
+<string id="st_bar_no_need_new">
+	<text>--- Hlaveň této zbraně nevyžaduje žádnou výměnu</text>
+</string>
+<string id="st_part_no_need_new">
+	<text>--- Díly zbraně nevyžadují žádnou výměnu</text>
+</string>
+<string id="st_bar_no_need_old">
+	<text>--- Hlaveň této zbraně nevyžaduje žádnou výměnu. Pro zvýšení kvality zbraně musí být stav na 100 %</text>
+</string>
+<string id="st_part_no_need_old">
+	<text>--- Díly zbraně nevyžadují žádnou výměnu. Pro zvýšení kvality zbraně musí být stav na 100 %</text>
+</string>
+<string id="st_no_barrel_to_kit">
+	<text>--- Neexistují kompatibilní hlavně kalibru [%s]</text>
+</string>
+<string id="st_no_details">
+	<text>--- Pro [%s] nejsou k dispozici žádné dostupné díly</text>
+</string>
+<string id="st_selected_worn">
+	<text>--- Vybrano%s: [%s] Šance na úspěšnou opravu: %i%% Pro opravu obnovte díl</text>
+</string>
+<string id="st_selected_good">
+	<text>--- Vybrano%s: [%s] Šance na úspěšnou opravu: %i%%</text>
+</string>
+<string id="st_selected_r_kit">
+	<text>--- Vybrano: [%s]</text>
+</string>
+	<string id="st_sel_detail">
+	<text>--- Klikni na obrázek odpovídajícího dílu pro zahájení výměny</text>
+</string>
+<string id="st_cond_grow">
+	<text>Stav: %i%%</text>
+</string>
+<string id="st_awr_back">
+	<text>Zpět</text>
+</string>
+<string id="st_awr_exit">
+	<text>Ukončit</text>
+</string>
+<string id="st_awr_ctrl">
+	<text>%sPro zabránění nechtěnému rozmontování položek\npostup lze provést pouze tehdy, je-li stisknuta klávesa ALT%s</text>
+</string>
+<string id="st_unload">
+	<text>Zbraň musí být vybitá a bez příslušenství před údržbou</text>
+</string>
+<string id="st_no_weap">
+	<text>K použití je nutné mít vytaženou zbraň</text>
+</string>
+<string id="st_handsfree">
+	<text>Máš plné ruce</text>
+</string>
+<string id="st_stolen_1">
+	<text>Mechanismus spouště byl během tvé nepřítomnosti odcizen ze zbraně. Stav byl zhoršen</text>
+</string>
+<string id="st_stolen_2">
+	<text>Hlava závěru byla během tvé nepřítomnosti odcizena ze zbraně. Stav byl zhoršen</text>
+</string>
+<string id="st_stolen_3">
+	<text>Závěr byl během tvé nepřítomnosti odcizen ze zbraně. Stav byl zhoršen</text>
+</string>
+<string id="st_not_in_list">
+	<text>Nemáš dostatečné znalosti k opravě této zbraně</text>
+</string>
+<string id="st_awr_timer_msg_on">
+	<text>%sMáš pět minut%s</text>
+</string>
+<string id="st_awr_timer_msg_off">
+	<text>%sČas vypršel%s</text>
+</string>
+<string id="st_awr_dead_mechanic">
+	<text>%sTechnik %s byl zabit %s.%s \nNemusíš již žádat o povolení k použití jeho pracovního stolu.</text>
+</string>
+<string id="st_by_unknown">
+	<text>Neznámé</text>
+</string>
+	<string id="st_mech_tiski">
+		<text>technický svěrák</text>
+	</string>
+	<string id="st_mech_tiski_w">
+		<text>Svěrák technika s %s</text>
+	</string>
+	<!-- ListBox status texts -->
+	<string id="st_ending_1">
+		<text>ű</text>
+	</string>
+	<string id="st_ending_2">
+		<text>ŕ</text>
+	</string>
+	<string id="st_ending_3">
+		<text>î</text>
+	</string>
+	<string id="st_text_status">
+		<text>[STAV]:%s%s%%</text>
+	</string>
+	<string id="st_text_wpn">
+		<text>[ZBRAŇ]:%s%s</text>
+	</string>
+	<string id="st_text_mode">
+		<text>[MOD]:%s%s</text>
+	</string>
+	<string id="st_text_mode_1">
+<text>OBNOVENÍ</text>
+	</string>
+	<string id="st_text_mode_2">
+		<text>REPARACE S MOŽNOSTÍ OBNOVY</text>
+	</string>
+	<string id="st_text_mode_3">
+		<text>NENÍ DOSTUPNÉ</text>
+	</string>
+	<string id="st_text_warning_mode_1_4">
+		<text>%sPo vylepšení bude stav zbraně %s%% a kvalita - nová</text>.
+	</string>
+	<string id="st_text_warning_mode_1_3">
+		<text>%sPři vylepšování je možné použít pouze opravitelné díly</text>
+	</string>
+	<string id="st_text_warning_mode_1_1">
+		<text>[Pozor]: V tomto režimu je možné vylepšovat pouze zrezivělé a opotřebované zbraně</text>
+	</string>
+	<string id="st_text_warning_mode_2_5">
+		<text>%Po dokončení opravy pomocí upgradu: %i%% pro opotřebované a %i%% pro nové</text>.
+	</string>
+	<string id="st_text_warning_mode_2_4">
+		<text>%Po dokončení opravy bez vylepšení bude stav zbraně roven %i%%</text>.
+	</string>
+	<string id="st_text_warning_mode_2_3">
+		<text>%sKvalita zbraně bude zároveň odpovídat vyměněné části nejnižší kvality</text>.
+	</string>
+	<string id="st_text_warning_mode_2_1">
+		<text>[Pozor]: V tomto režimu je možné opravovat a vylepšovat zbraně</text>
+	</string>
+	<string id="st_text_warning_mode_3_3">
+		<text>%sVylepšení není možné, dokud se stav nezvýší na 100%</text>
+	</string>
+	<string id="st_text_warning_mode_3_2">
+		<text>[VAROVÁNÍ]: Oprava této zbraně není možná, protože stav kvality zbraně je na maximu.</text>
+	</string>
+	<string id="st_text_warning_mode_3_1">
+		<text>[VAROVÁNÍ]: Podmínka kvality zbraně je již na maximu. Další obnova není možná.</text>
+	</string>
+	<string id="st_text_warning_mode_help">
+		<text>Pro nápovědu stiskni klávesu F1</text>
+	</string>
+	<!-- Disassembly -->
+	<string id="st_dis_news">
+		<text>[AWR]</text>
+	</string>
+	<string id="st_dis_count">
+		<text>řň.</text>
+	</string>
+	<string id="st_dis_text_1">
+    <text>%s%s %s%s bylo rozebráno</text>
+</string>
+<string id="st_dis_text_2">
+    <text>%sZkoušel jsi rozebrat %s %s, ale nepodařilo se získat žádné díly.</text>
+</string>
+<string id="st_dis_text_3">
+    <text>%sChybí požadované nástroje %s %s</text>
+</string>
+<string id="st_dis_text_4">
+    <text>\nKartuše byly odstraněny: %iTyp počítače %s\nPřijaté položky: </text>
+</string>
+<string id="st_dis_text_5">
+    <text>%sPodařilo se ti obnovit díl %s\n%s</text>
+</string>
+<string id="st_dis_text_6">
+    <text>%sNepodařilo se ti obnovit díl %s</text>
+</string>
+<string id="st_dis_text_7">
+    <text>%s%s %s %s%s</text> <!--text>%s %s %s %s bylo rozebráno</text-->
+</string>
+<string id="st_dis_text_8">
+    <text>%s%s %s %s%s bylo odstraněno</text>
+</string>
+<string id="st_dis_text_9">
+    <text>\nZískané díly: </text>
+</string>
+<string id="st_dis_text_10">
+    <text>%sDemontoval jsi %s%s, ale nezískal jsi žádné díly.</text>
+</string>
+	<string id="st_dis_text_11">
+		<text>%s%s %s %s%s</text>
+	</string>
+	<!-- Dialogues -->
+	<string id="st_awr_dialog_1">
+<text>Můžu použít tvůj svěrák? Potřebuji něco opravit.</text>
+	</string>
+	<string id="st_awr_dialog_2">
+		<text>Dobře... Je tvůj za tisíc rublů.</text>
+	</string>
+	<string id="st_awr_dialog_3">
+		<text>Tady.</text>
+	</string>
+	<string id="st_awr_dialog_4">
+		<text>Skvělé. Na chvíli si odpočinu. Mezitím si pospěš. Dnes musím dokončit další práci.</text>
+	</string>
+	<string id="st_awr_dialog_5">
+		<text>Tolik toho nemám.</text>
+	</string>
+	<string id="st_awr_dialog_6">
+		<text>Mám to.</text>
+	</string>
+	<string id="st_awr_dialog_7">
+		<text>Po tom všem, co jsi pro mě udělal? Samozřejmě! Přesto se snaž být rychlý. Dnes musím dokončit další práci.</text>
+	</string>
+
+	<!-- Sell dialog -->
+	<string id="st_awr_sell_dialog_1">
+		<text>Mám náhradní díly. Nevíš, kdo by je koupil?</text>
+	</string>
+	<string id="st_awr_sell_dialog_2">
+<text>Technici jako já skladují všelijaké harampádí, na které si vzpomeneš. Možná bych koupil to, co máš ty. Samozřejmě za správnou cenu.</text>
+	</string>
+	<string id="st_awr_sell_dialog_3">
+<text>A co mi můžeš nabídnout?</text>
+	</string>
+	<string id="st_awr_sell_dialog_4">
+<text>No, za funkční díly ti mohu dát 300 RU za nový díl. Opotřebované za 150. Co se týče ostatního harampádí, dostaneš 250 za nové díly a 125 za opotřebované díly. Eh, 60 by mělo stačit na rezavé díly. Ty nejsou tak užitečné, víš? </text>
+	</string>
+	<string id="st_awr_sell_dialog_5">
+		<text>Hmm... No, tvoje nabídka je taková. Ale ve skutečnosti pro ně nemám žádné využití. Tady, dej mi ty peníze.</text>
+	</string>
+	<string id="st_awr_sell_dialog_6">
+		<text>To je pro mě trochu laciné. Asi o tom budu přemýšlet.</text>
+	</string>
+	<string id="st_awr_sell_dialog_7">
+<text>Rád jsem s tebou obchodoval. Kdybys sehnal další náhradní díly, víš, kde mě najdeš.</text>
+	</string>
+	<string id="st_awr_sell_dialog_8">
+		<text>Uh, budu na to pamatovat. Díky.</text>
+	</string>
+
+	<!-- Help -->
+	<string id="st_awr_help_0">
+		<text>Instrukce</text>
+	</string>
+	<string id="st_awr_help_1">
+		<text>Postup opravy je ovlivněn celkovou kvalitou zbraně a jejím aktuálním stavem. Navíc pojmy 0-65, 0-75 a 0-85 určují stav zbraně pro každý z typů kvality: 0-65% pro zrezivělé zbraně, 0-75% pro opotřebované zbraně a 0-85% pro nové zbraně.</text>
+	</string>
+	<string id="st_awr_help_2">
+		<text>Postup opravy a vylepšení (zbraně se stavem 0-65/0-75/0-85):</text>
+	</string>
+	<string id="st_awr_help_3">
+		<text>1. Vyber opravnou sadu pro výměnu hlavně zbraně za jinou hlaveň stejné ráže se stavem zbraně od 0-20/0-25/0-30 nebo pomocí sady pro vylepšení zbraně ve stavu od 20-65/25-75/30-85 dvojitým kliknutím na název sady se seznamem.\n2. Jedním kliknutím myši vyberte součást v seznamu. Výměna dílů při opravě zbraní s nízkým stavem probíhá v určitém pořadí:\n \nPři stavu 0-20/0-25/0-30%: Výměna hlavně\nPři stavu 20-35/25-45/30-55%: \nPři stavu 35-45/45-60/55-70%: Při stavu 45-55/60-70/70-80%: Výměna plynové trubice\nPři stavu 55-65/70-75/80-85%: Výměna předního bloku\n \n3. Klikni na obrázek aktuálně vyměňovaného dílu (díl vybraný pro výměnu, který je k dispozici pro výměnu, je označen zeleným světlem). Pokus o výměnu jednoho dílu spotřebuje jedno nabití pásu. set\n4. V případě úspěšné výměny se tento postup opakuje pro všechny díly v uvedeném pořadí\n5. V případě, že byl díl poškozen, zkuste to znovu, pokud je k dispozici opravná sada a další díly zbraně.\n6. Všechny vyměněné díly se uchovávají, dokud se nesníží stav zbraně. V takovém případě bude pro zlepšení kvality nutné díly vyměnit znovu.\n7. Po výměně všech pěti dílů se kvalita zbraně změní na odpovídající. V této souvislosti je třeba poznamenat, že pokud byl alespoň jeden z vyměněných dílů opotřebovaný, kvalita zbraně se změní na "opotřebovaná", i když jsou ostatní díly zbraně nahrazeny novými.</text>
+	</string>
+	<string id="st_awr_help_4">
+		<text>Předem stanovené pořadí výměny dílů zbraně je způsobeno nutností sladit díly se stavem zbraně, protože všechny vyměněné díly pro každou zbraň, které byly kdy částečně opraveny ve svěráku, jsou uloženy v paměti hry. To umožňuje pokračovat v opravách ze stejného místa, aniž by bylo nutné díly znovu vyměňovat, za předpokladu, že stav zbraně nebyl po opravě snížen.</text>
+	</string>
+	<string id="st_awr_help_5">
+		<text>Postup vylepšení zbraně je dostupný pouze při stavu 95-100 % u zrezivělých nebo opotřebovaných zbraní:</text>
+	</string>
+	<string id="st_awr_help_6">
+		<text>1. Vyber opravnou sadu pro výměnu hlavně nebo sadu pro vylepšení zbraně v seznamu dvojitým kliknutím na název sady v seznamu. Objednávka výměny není k dispozici pro vylepšení.\n2. Jedním kliknutím myši vyberte díl odpovídající opravné sadě v seznamu. Při vylepšování lze použít pouze funkční díly.\n3. Klikněte na obrázek dílu, který je právě vyměňován\n4. V případě, že je výměna úspěšná, zůstává tento postup stejný pro všechny ostatní díly zbraně.\n5. V případě, že byl díl poškozen, zkus to znovu, pokud je k dispozici opravná sada a další díly zbraně.\n6. Všechny vyměněné díly jsou zachovány, dokud není stav zbraně snížen. V takovém případě bude pro zlepšení kvality nutné díly dále vyměnit.\n7. Po výměně všech pěti dílů za nové se kvalita zbraně změní na "novou".</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,40 @@
+[smart_terrain];esc_smart_terrain_2_14
+squad_id = 3
+max_population = 1
+
+respawn_params = respawn@esc_smart_terrain_2_14
+respawn_idle = 86400
+
+
+[respawn@esc_smart_terrain_2_14]
+spawn_early
+spawn_mid
+spawn_late
+spawn_chaos
+
+
+[spawn_early]
+spawn_squads = simulation_tushkano, simulation_respawn_weak, simulation_dog
+spawn_num = {=actor_week_in_zone(2)} 1, 0
+
+
+[spawn_mid]
+spawn_squads = simulation_dog, simulation_mix_dogs, simulation_flesh
+spawn_num = {=actor_week_in_zone(3)} 1, 0
+
+
+[spawn_late]
+spawn_squads = simulation_flesh, 
+               simulation_boar, 
+               simulation_lurker_1_2
+spawn_num = {=actor_week_in_zone(4)} 1, 0
+
+
+[spawn_chaos]
+spawn_squads =
+    simulation_bloodsucker_2weak,
+    simulation_psysucker_1_2,
+    simulation_karlik,
+    simulation_poltergeist_tele,
+    simulation_respawn_flying
+spawn_num = {=actor_week_in_zone(5)} 1, 0

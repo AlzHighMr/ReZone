@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+	<!-- Tukarev  (Ecologist Mechanic) Default Storyline Task -->
+
+<string id="drx_sl_jup_b6_scientist_tech_default_task_name">
+	<text>Získej další úkol</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_default_task_text">
+	<text>Přijmout svůj další úkol.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_default_task_about">
+	<text>Ano, jeden můj kolega potřebuje tvou pomoc.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_default_task_finish">
+	<text>Dobře stalkere.</text>
+</string>
+
+	<!-- Tukarev (ekologicky mechanik) Dejova uloha experimentu s mutantni tkani -->
+
+<string id="drx_sl_jup_b6_scientist_tech_task_1_name">
+	<text>Tukarevův experiment %s</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_1_text">
+	<text>Získej %s a vrať ho Tukarevovi.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_1_about">
+	<text>Potřebuji provést experiment na konkrétním mutantovi. Potřebuji, abys pro mě jednoho ulovil.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_1_fetch_about">
+	<text>Najdi mi %s. Pokud se ti to podaří, dobře tě odměním.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_1_fetch_finish">
+	<text>Vykonal jsi to dobře. Tohle je přesně to, co jsem potřeboval. Vezmi si to jako odměnu.</text>
+</string>
+
+	<!-- Tukarev  (Ecologist Mechanic) Find Missing Scientist Storyline Task -->
+
+<string id="drx_sl_jup_b6_scientist_tech_task_2_name">
+	<text>Najít pohřešovaného vědce</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_2_text">
+	<text>Pátrej po chybějícím vědci.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_2_about">
+	<text>Jeden z mých vědců se ztratil. Vyrazil na výzkumnou expedici a už se nevrátil. Zde je oblast, kterou zkoumal, prohledej ji a zkus ho najít.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_2_finish">
+	<text>Děkuji ti, stalkere.</text>
+</string>
+
+<!-- Tukarev (Mechanik ekolog) Znovuzískání ukradeného PDA Storyline Task -->
+
+<string id="drx_sl_jup_b6_scientist_tech_task_3_name">
+	<text>Získání ukradeného PDA pro Tukareva</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_3_text">
+	<text>Tukarevovi bylo ukradeno PDA, které obsahovalo důležitý výzkum. Najdi ho a vrať mu ho.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_3_about">
+	<text>Zloději se vloupali do jedné z našich mobilních laboratoří a vykradli ji. Jednou z věcí, které vzali, bylo PDA, na kterém jsou velmi důležitá výzkumná data. Dostal jsem tip, kam ho mohli schovat. Podívejte se na to. Pokud to PDA najdete, odměním vás za jeho vrácení.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_3_finish">
+	<text>Vynikající! Vedl sis dobře.</text>
+</string>
+
+	<!-- Tukarev  (Ecologist Mechanic) Search Jupiter Underground Storyline Task -->
+
+<string id="drx_sl_jup_b6_scientist_tech_task_4_name">
+	<text>Prohledat podzemí Jupiteru</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_4_text">
+	<text>Získat zpět výzkumné dokumenty ztracené v Jupiterském podzemí.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_4_about">
+	<text>Jeden z našich špičkových vědců byl zabit v podzemní chodbě, když se vracel z Pripjati. Nesl s sebou důležitý výzkum. Potřebuji, abys ho našel a přinesl mi ho.</text>
+</string>
+<string id="drx_sl_jup_b6_scientist_tech_task_4_finish">
+	<text>Výborná práce. Odvedl jsi dobrou práci.</text>
+</string>
+
+<!-- Loki (Freedom Honcho) Výchozí příběhový úkol -->
+
+<string id="drx_sl_jup_a6_freedom_leader_default_task_name">
+	<text>Získej další úkol</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_default_task_text">
+	<text>Přijmout svůj další úkol.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_default_task_about">
+	<text>Potřebuji, abys navštívil jednoho Stalkera. Zeptej se, co pro něj můžeš udělat. Dobře ti zaplatí.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_default_task_finish">
+	<text>Dobrá práce, stalkere.</text>
+</string>
+	<!-- Loki  (Freedom Honcho) Arms Dealer Storyline Task -->
+
+<string id="drx_sl_jup_a6_freedom_leader_task_1_name">
+	<text>%s Obchodník se zbraněmi</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_1_text">
+	<text>Loki potřebuje, aby mu bylo doručeno %s.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_1_about">
+	<text>Svoboda má potíže udržet se nahoře. Potřebují zbraně. Hodně zbraní.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_1_fetch_about">
+	<text>Potřebuji několik %s. Jestli najdeš způsob, jak je sem dostat přes Mozkomora, budu ochoten zaplatit.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_1_fetch_finish">
+	<text>Dobře jsi si vedl. Čím víc pušek mám, tím lépe se mi spí. Přijmi tuto platbu.</text>
+</string>
+
+<!-- Loki (Freedom Honcho) Vyčištění monolitických předmostí Příběhový úkol -->
+
+<string id="drx_sl_jup_a6_freedom_leader_task_2_name">
+	<text>Vyčistit předmostí monolitu</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_2_text">
+	<text>Vyčistěte určenou oblast od všech monolitických bojovníků v rámci přípravy na hlavní útok Svobody.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_2_about">
+	<text>Připravujeme invazi na monolitické území. Chci, abys nám vyčistil oblast, aby se tam mohly přesunout naše hlavní útočné síly.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_2_finish">
+	<text>Dobře provedeno! Nyní můžeme zahájit invazi! No, ne teď, později dnes... možná zítra. Každopádně díky, brácho.</text>
+</string>
+
+<!-- Loki  (Freedom Honcho) Hunt Artefact Příběhový úkol -->
+
+<string id="drx_sl_jup_a6_freedom_leader_task_3_name">
+	<text>Hledání po artefaktu "%s" pro Lokiho</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_3_text">
+	<text>Loki si vyžádal předmět "%s" na ochranu jednoho ze svých mužů.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_3_about">
+	<text>Vysílám jednoho z chlapců na misi, která od něj bude vyžadovat větší ochranu, než jakou mu mohou poskytnout naše nejlepší obleky. K jeho ochraně potřebuji zvláštní artefakt.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_3_fetch_about">
+	<text>Přines mi artefakt "%s". Pokud nějaký najdeš, dobře ti za něj odměním.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_3_fetch_finish">
+	<text>Aha, perfektní. Dobrá práce, brácho.</text>
+</string>
+	<!-- Loki (Freedom Honcho) Hledani ridiciho centra monolitu (Cernobyl) Pribehovy ukol -->
+
+<string id="drx_sl_jup_a6_freedom_leader_task_4_name">
+	<text>Prohledej řídící centrum monolitu</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_4_text">
+	<text>Prohledejte tajnou laboratoř v černobylské jaderné elektrárně a vyhledejte dokumenty týkající se prototypu zbraně.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_4_about">
+	<text>Existují zvěsti, že v tajné laboratoři uvnitř černobylské jaderné elektrárny existují plány na novou zbraň. Pokud chceme mít proti nim šanci, musíme je z monolitu získat zpět. Vím, jak vážné je riziko, ale pokud jsi ochoten dokumenty získat, odměním tě.</text>
+</string>
+<string id="drx_sl_jup_a6_freedom_leader_task_4_finish">
+	<text>Vyborná práce. Odvedl jsi dobrou práci.</text>
+</string>
+
+<!-- Klenov (Bandit Trader) Default Storyline Task -->
+
+<string id="drx_sl_jup_cont_trader_bandit_default_task_name">
+	<text>Získat další úkol</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_default_task_text">
+	<text>Přijmout svůj další úkol.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_default_task_about">
+	<text>Někdo pro tebe má úkol. Jdeš za ním a uděláš, co ti řekne. Jasné?"</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_default_task_finish">
+	<text>Dobrou chuť.</text>
+</string>
+
+<!-- Klenov (Bandit Trader) Získat zásilku zbraní Příběhová úloha -->
+
+<string id="drx_sl_jup_cont_trader_bandit_task_1_name">
+	<text>Získat zásilku zbraní</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_1_text">
+	<text>Klenov tě pověřil, abys našel a dopravil zásilku zbraní do kontejnerového skladu na Jupiteru.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_1_about">
+	<text>Dnes jsme měli dostat zásilku zbraní, ale Sultanovi muži ji kvůli vojenské hlídce ukryli. Místo by teď mělo být jasné, jdi si pro ni.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_1_finish">
+	<text>Jsi spolehlivý muž. Dobrá práce!</text>
+</string>
+
+	<!-- Klenov (Bandit Trader) Kill the Enemy Scout Storyline Task -->
+
+<string id="drx_sl_jup_cont_trader_bandit_task_2_name">
+	<text>Zabij nepřátelského zvěda</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_2_text">
+	<text>Máš za úkol od Klenova najít a zabít nepřátelského zvěda za každou cenu.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_2_about">
+	<text>Jeden z nepřátelských zvědů informoval skupinu pronásledovatelů o připravovaném nájezdu. Výsledek: tři mrtví muži. Nemůžeme riskovat další neúspěch, takže chci, abys toho zmrda našel a zabil.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_2_finish">
+	<text>Konečně! Teď se můžeme připravit na další zásah. Zde je tvá odměna.</text>
+</string>
+
+<!-- Klenov (banditský obchodník) Eskorta bandity - špionský příběhový úkol -->
+
+<string id="drx_sl_jup_cont_trader_bandit_task_3_name">
+	<text>Eskortujte banditského špiona</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_3_text">
+	<text>Z nepřátelských jednotek je třeba vyprostit tajného banditu, zabít ostatní členy oddílu a eskortovat ho zpět do Klenova. Špion má SVD.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_3_about">
+	<text>Poslouchejte. Máme zdroj mezi nepřátelskými jednotkami. Už nějakou dobu nás informuje o jejich pohybu. V poslední době se však od něj nic nedozvídáme. Musel si v poslední době projít nějakým hlubokým průšvihem. Někdo by mohl vyhodit do povětří jeho převlek, pokud mu brzy nezachráníme jeho ubohý zadek.
+	Potřebuju, abys ho přivedl zpátky v jednom kuse. Měj na paměti, že je s dalšími pronásledovateli, musíš je nejdřív zabít. Poznáš ho podle jeho pušky, SVD, bude ti muset střelbu oplatit, až na skupinu zaútočíš, tak na to pamatuj. A teď běžte!</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_3_finish">
+	<text>Obe jste se nakonec vrátily v pořádku, co? Dělám si legraci. Vezmi si své peníze.</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_3_msg_join">
+	<text>KURVA... Nestřílejte! NESTŘÍLEJTE! Všichni jsou mrtví! Vypadneme, kurva, ven a vrátíme se do Klenova. No tak, chlape...</text>
+</string>
+<string id="drx_sl_jup_cont_trader_bandit_task_3_msg_leave">
+	<text>Dokázali jsme to... sakra! Díky, kámo, už půjdu.</text>
+</string>
+	
+	<!-- Tukarev (Ecog Mechanic) Escort Jupiter Scientists Task -->
+
+<string id="jup_b6_scientist_tech_task_1_name">
+	<text>Escortovat ekology</text>
+</string>
+<string id="jup_b6_scientist_tech_task_1_text">
+	<text>Vědci si tě najali, abys je zavedl na určité místo, které mají prozkoumat. Po úspěšném provedení jejich výzkumu je bezpečně vrať do tábora.</text>
+</string>
+<string id="jup_b6_scientist_tech_task_1_about">
+	<text>Potřebujeme zkušeného stalkera, který by vyvedl několik našich kolegů do terénu za účelem výzkumu. Jsi pro tento úkol?</text>
+</string>
+<string id="jup_b6_scientist_tech_task_1_fetch_finish">
+	<text>Děkuji za ochranu, stalkere. Ber to prosím jako projev naší vděčnosti.</text>
+</string>
+
+<string id="jup_b6_scientist_tech_task_2_name">
+	<text>Najdi artefakt %s</text>
+</string>
+<string id="jup_b6_scientist_tech_task_2_text">
+	<text>Byl jste požádán o vyhledání artefaktu %s. Přineste jej zpět k Tukarevovi, pokud se vám náhodou dostane do rukou.</text>
+</string>
+<string id="jup_b6_scientist_tech_task_2_about">
+	<text>Hledáme určité druhy artefaktů. Pokud máš zájem, řeknu ti, co potřebujeme.</text>
+</string>
+<string id="jup_b6_scientist_tech_task_2_fetch_about">
+	<text>Potřebuji, abys nám přinesl artefakt %s Slyšel jsi o něm někdy?</text>
+</string>
+<string id="jup_b6_scientist_tech_task_2_fetch_finish">
+	<text>Skvěle! Našli jste přesně to, co hledáme. Vezmi si tento oblek; nabízí skvělou ochranu proti Zóně a jsem si jistý, že za něj budeš moci získat dobrou cenu.</text>
+</string>
+
+	<!-- Tukarev (Ecog Mechanic) Brains vs Brawn Dynamic Task -->
+
+<string id="jup_b6_scientist_tech_task_3_name">
+	<text>Mozky vs. síly</text>
+</string>
+<string id="jup_b6_scientist_tech_task_3_text">
+	<text>Vedeš skupinu ekologických strážců do boje proti banditům.</text>
+</string>
+<string id="jup_b6_scientist_tech_task_3_about">
+	<text>Moji výzkumníci jsou v neustálém nebezpečí. Všude v okolí jsou bandité a zdá se, že s tím nikdo nic nedělá. Chci, abys s několika mými muži vyčistil oblast. Nenech se zmást jejich jedničkami, tihle chlapci vědí, jak bojovat. Teď vyražte a dovedte je k vítězství!"</text>
+</string>
+<string id="jup_b6_scientist_tech_task_3_finish">
+	<text>Výborná práce. Děkuji.</text>
+</string>
+
+<!-- Trapper (Loner Honcho) Lead Mutant Hunt Task -->
+
+<string id="jup_b220_trapper_task_1_name">
+	<text>Vyčistit oblast od mutantů</text>
+</string>
+<string id="jup_b220_trapper_task_1_text">
+	<text>Blízko tohoto místa byli spatřeni mutanti, takže oblast je pro některé místní obyvatele nebezpečná. Byl jsi pověřen vedením lovecké skupiny, která má snížit hrozbu mutantů v této oblasti. Po splnění úkolu podějte zprávu Traperovi.</text>
+</string>
+<string id="jup_b220_trapper_task_1_about">
+	<text>Zorganizoval jsem lov, abych pomohl udržet oblast kolem Janova o něco bezpečnější tím, že vylidním různá doupata mutantů, která se v oblasti nacházejí. Potřebuji někoho zkušeného, kdo by je vedl. Chtěl bys tu práci?</text>
+</string>
+<string id="jup_b220_trapper_task_1_finish">
+	<text>Děkuji, stalkere. Díky tobě bude oblast pro ostatní mnohem bezpečnější. Tady je tvá platba.</text>
+</string>
+
+<string id="jup_b220_trapper_task_2_name">
+	<text>Zabít cíl</text>
+</string>
+<string id="jup_b220_trapper_task_2_text">
+	<text>Trapper má cíl s vysokou hodnotou, který je třeba zlikvidovat.</text>
+</string>
+<string id="jup_b220_trapper_task_2_about">
+	<text>Mám nebezpečnou hrozbu, kterou je třeba eliminovat. Tentokrát to není mutant, ale člověk. Nebude snadné se k němu dostat, ale slibuji, že ti dobře zaplatím. Jsi pro tuhle práci?</text>
+</string>
+<string id="jup_b220_trapper_task_2_finish">
+	<text>Výborná práce, stalkere. Tady je tvá výplata.</text>
+</string>
+
+<!-- NAJDI ZBRAN PRO UKOL LOVEC -->
+<string id="jup_b220_trapper_task_3_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_b220_trapper_task_3_text">
+	<text>Trapper hledá konkrétní střelnou zbraň v perfektním stavu. Vrať mu ji, pokud ji najdeš.</text>
+</string>
+<string id="jup_b220_trapper_task_3_about">
+	<text>Jeden z mých traperů shání konkrétní střelnou zbraň, kterou nemám k dispozici. Byl bys schopen mi ji dohledat?</text>
+</string>
+<string id="jup_b220_trapper_task_3_fetch_about">
+	<text>Potřebuji %s. Trapper, který ho chce, chodí po nebezpečné zvěři, takže potřebuje, aby byl ve výborném stavu. Pokud ji najdeš, dobře ti zaplatím.</text>
+</string>
+<string id="jup_b220_trapper_task_3_fetch_finish">
+	<text>Aha, perfektní. Tohle bude stačit. Tady jsou peníze, které jsem ti slíbil.</text>
+</string>
+
+	<!-- NAJDI MUTANTNI KUSY PRO UKOL LOVCE -->
+<string id="jup_b220_trapper_task_4_name">
+	<text>Zajisti %s</text>
+</string>
+<string id="jup_b220_trapper_task_4_text">
+	<text>Trapper říká, že dobře zaplatí, když mu přivedeš %s.</text>
+</string>
+<string id="jup_b220_trapper_task_4_about">
+	<text>Mám vyhlášenou odměnu na určitý typ mutanta. Máš zájem?</text>
+</string>
+<string id="jup_b220_trapper_task_4_fetch_about">
+	<text>Zabij tohoto mutanta a přines mi jeho %s a já ti dobře zaplatím, stalkere.</text>
+</string>
+<string id="jup_b220_trapper_task_4_fetch_finish">
+	<text>Aha, další eliminovaná hrozba a nová ozdoba tábora. Dobrá práce, stalkeru.</text>
+</string>
+
+	<!--- Call of Chernobyl -->
+
+<string id="jup_b217_stalker_tech_task_1_name">
+	<text>Najít %s</text>
+</string>
+<string id="jup_b217_stalker_tech_task_1_text">
+	<text>%s jsou vyžadovány Nitrem k instalaci základních vylepšení vybavení, pokud je najdeš, měl bys mu je přinést zpět.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_1_about">
+	<text>Potřebuji nové nástroje, stalkere, něco, co se v Zóně těžko sehná. Pokud máš zájem mi pomoci, řeknu ti, co potřebuji.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_1_fetch_about">
+	<text>Potřebuji sadu základních nástrojů. Měla by obsahovat to, co potřebuji. Pokud mi nějaké přivezeš, budu ti vděčný; od této chvíle ti dokonce nabízím slevu.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_1_fetch_finish">
+	<text>Perfektní! Tohle je přesně to, co potřebuji, stalkere. Pokud potřebuješ doladit nějaké své vybavení, teď to můžu udělat pořádně.</text>
+</string>
+
+<string id="jup_b217_stalker_tech_task_2_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_b217_stalker_tech_task_2_text">
+	<text>%s potřebuje Nitro k instalaci pokročilých vylepšení vybavení, měl bys mu je přinést, pokud nějaké najdeš.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_2_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale není v ní všechno, co potřebuji. Myslíš, že bys mi mohl najít lepší sadu?</text>
+</string>
+<string id="jup_b217_stalker_tech_task_2_fetch_about">
+	<text>Potřebuji %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebuji ho.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_2_fetch_finish">
+	<text>Když se to stane! Našel jsi pro mě pěknou sadu nástrojů. Tady, slíbil jsem ti za to nějaké peníze.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_3_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_b217_stalker_tech_task_3_text">
+	<text>%s jsou vyžadovány Nitrem k instalaci vylepšení expertního vybavení, pokud je najdeš, měl bys mu je přinést zpět.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_3_about">
+	<text>Sada nástrojů, kterou jsi mi přinesl, je skvělá, ale není v ní všechno, co potřebuji. Myslíš, že bys mi mohl najít lepší sadu?</text>
+</string>
+<string id="jup_b217_stalker_tech_task_3_fetch_about">
+	<text>Potřebuji %s. Nejsem si jistý, kde se dá takový sehnat, ale jestli ho najdeš, tak ho potřebuju.</text>
+</string>
+<string id="jup_b217_stalker_tech_task_3_fetch_finish">
+	<text>Když se to stane! Našel jsi pro mě pěknou sadu nástrojů. Tady, slíbil jsem ti za to nějaké peníze.</text>
+</string>
+
+	<!-- Jup A6 Yar -->
+<string id="jup_b19_freedom_yar_task_1_name">
+	<text>Speciální dodávka</text>
+</string>
+<string id="jup_b19_freedom_yar_task_1_text">
+	<text>Je třeba doručit zprávu. Jak se stalo, že jsi se dostal do středu dne?"</text>.
+</string>
+<string id="jup_b19_freedom_yar_task_1_about">
+	<text>Pravda, mám pro tebe velmi jednoduchý úkol. Potřebuji, abys doručil zprávu mému kamarádovi Asotovi. Potřebuje opravit své PDA - řekni mu, ať ho přinese sem.</text>
+</string>
+<string id="jup_b19_freedom_yar_task_1_finish">
+	<text>Haha, jen jsme si z tebe dělali legraci, stalkere. Nemůžu uvěřit, že jsi to tak dlouho snesl.</text>
+</string>
+<string id="jup_b19_freedom_yar_task_1_dm_query">
+	<text>Přišel jsem ti doručit zprávu.</text>
+</string>
+
+<!-- (Ekologove) -->
+<string id="jup_b6_scientist_nuclear_physicist_task_1_name">
+	<text>Skenující pole</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_text0">
+	<text>Získat anomální skener.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_text1_0">
+	<text>Vezmi skener do anomálního pole.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_text1_1">
+	<text>Vezmete skener k anomálnímu poli.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_text2">
+	<text>Umístěte skener.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_text3">
+	<text>Zpracujte zprávu o realizaci.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_about">
+	<text>Naše skupina se ze všech sil snaží zjistit, jaký vztah mají emise a artefakty, a to prováděním experimentů na anomálních útvarech. Náš výzkumný tým však není úplně nejkvalifikovanější, a proto naléhavě potřebujeme dobrovolníka pro naši misi. Potřebuji, abys vzal tento pokročilý skener a umístil ho do blízkosti označených anomálií, data budou odeslána do našich počítačů.</text>
+</string>
+<string id="jup_b6_scientist_nuclear_physicist_task_1_finish">
+	<text>Vidím, že skener funguje, jak má. Děkuji, stalkere, jsem ti velmi vděčný.</text>
+</string>
+	
+<!-- (Monolith Mechanic) -->
+<string id="mechanic_monolith_jup_depo_task_1_name">
+	<text>Najdi %s</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_1_text">
+	<text>Technik v depu mě požádal, abych přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_1_about">
+	<text>Naši základnu jsme zde zřídili nedávno, ale nedostatek nářadí pro naše bratry byl akutní. Našel bys pro bratrstvo sadu základního nářadí? Bylo by to neocenitelné.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_1_fetch_about">
+	<text>Naši základnu jsme zde zřídili nedávno, ale nedostatek nářadí pro naše bratry byl akutní. Našel bys pro bratrstvo sadu základního nářadí? Bylo by to neocenitelné.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_1_fetch_finish">
+	<text>Vynikající. Pomůže nám to získat oporu a posílit se... Myslím, že si zasloužíte slevu.</text>
+</string>
+
+<string id="mechanic_monolith_jup_depo_task_2_name">
+	<text>Najdi %s</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_2_text">
+	<text>Technik v depu mě požádal, abych přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_2_about">
+	<text>Boj ukázal, že naše zbraně jsou nepatrně horší než zbraně nevěřících, mezi nimiž existují schopní technici. Vyžadují nástroje pro jemnou práci, abychom naše bratry před takovou podlostí zachránili. Pomůžeš mi, bratre?"</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_2_fetch_about">
+	<text>Boj ukázal, že naše zbraně jsou nepatrně horší než zbraně nevěřících, mezi nimiž existují schopní technici. Potřebuji nástroje pro jemnou práci, abychom naše bratry zachránili před takovou podlostí. Pomůžeš mi, bratre?"</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_2_fetch_finish">
+	<text>Dobrá práce. Vybavení dodané našim bratrum se ukáže jako dominantní nad všemi ostatními v oblasti... Dostaneš dodatečné snížení poplatku.</text>
+</string>
+
+<string id="mechanic_monolith_jup_depo_task_name">
+	<text>Najdi %s</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_3_text">
+	<text>Technik v depu mě požádal, abych přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_3_about">
+	<text>Překonáme je všechny, bratre! Abychom toho dosáhli, potřebuji nástroje pro kalibraci našich zbraní. Prosím, najdi sadu a přines mi ji.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_3_fetch_about">
+	<text>Budeme schopni je všechny překonat, bratre! Abychom toho dosáhli, potřebuji nástroje pro kalibraci našich zbraní. Prosím, najdi sadu a přines mi ji.</text>
+</string>
+<string id="mechanic_monolith_jup_depo_task_3_fetch_finish">
+	<text>Je vyřízeno. S těmito nedávnými objevy dobudeme okolní oblasti. Od této chvíle pro vás budu poskytovat své služby, jak nejlépe budu umět.</text>
+</string>
+	
+<!-- (Bandits Mechanic) -->
+<string id="jup_cont_mech_bandit_task_1_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_cont_mech_bandit_task_1_text">
+	<text>Technický gangster mě požádal, abych mu přivedl %s.</text>
+</string>
+<string id="jup_cont_mech_bandit_task_1_about">
+	<text>Stalkeři všechno ukradli a postavili obranu v Janově, ti parchanti. Nemáme ani hovno! Potřebujeme nějaké nářadí, kámo. Sežeň mi nějaké, jo?</text>
+</string>
+<string id="jup_cont_mech_bandit_task_1_fetch_about">
+	<text>Stalkeři všechno ukradli a postavili obranu v Janově, ti parchanti. Nemáme ani hovno! Potřebujeme nějaké nářadí, kámo. Sežeň mi nějaké, jo?</text>
+</string>
+<string id="jup_cont_mech_bandit_task_1_fetch_finish">
+	<text>Aha, nádhera! Někdo dostal slevu.</text>
+</string>
+
+<string id="jup_cont_mech_bandit_task_2_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_cont_mech_bandit_task_2_text">
+	<text>Technický gangster mě požádal, abych mu přivedl %s.</text>
+</string>
+<string id="jup_cont_mech_bandit_task_2_about">
+	<text>Poslouchej, nechci tě moc otravovat a tak, ale mohl bys sem přinést ještě jednu soupravu? Potřebujeme lepší soupravu, abychom vylepšili naše šraňky, víš? Bez těch správných vylepšení je to tu pro nás těžké, heh.</text>
+</string>
+<string id="jup_cont_mech_bandit_task_2_fetch_about">
+	<text>Poslouchej, nechci tě moc otravovat a tak, ale mohl bys sem přinést ještě jednu soupravu? Potřebujeme lepší soupravu, abychom vylepšili naše šraňky, víš? Bez těch správných vylepšení je to tu pro nás těžké, heh.</text>
+</string>
+<string id="jup_cont_mech_bandit_task_2_fetch_finish">
+	<text>Díky, kámo. Jsi fakt borec, víš to?</text>
+</string>
+
+<string id="jup_cont_mech_bandit_task_3_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_cont_mech_bandit_task_3_text">
+	<text>Technik od Banditů mě požádal, abych mu sehnal %s.</text>
+</string>
+<string id="jup_cont_mech_bandit_task_3_about">
+	<text>Hej, kámo, ty dvě další sady nářadí, co jsi nám přinesl, nám fakt pomáhají, ale já potřebuju to nejlepší z nejlepšího. Však víš... takové, po kterých si řeknou: "Jeeee, jeee..."</text>
+</string>
+<string id="jup_cont_mech_bandit_task_3_fetch_about">
+	<text>Hej, kámo, ty dvě další sady nástrojů, co jsi nám přinesl, nám fakt pomáhají, ale já potřebuju to nejlepší z nejlepšího. Však víš... takové, po kterých budou říkat: "Jeeee, jeee..."</text>
+</string>
+<string id="jup_cont_mech_bandit_task_3_fetch_finish">
+	<text>No tak to mě poser bokem! To je ale vzácnost... opravdová vzácnost. Dám ti další slevu, zasloužíš si ji. Díky, brácho.</text>
+</string>
+	
+	<!-- Bonesetter (Loner Medic) -->
+<string id="jup_a6_stalker_medik_task_1_name">
+	<text>Najdi %s</text>
+</string>
+<string id="jup_a6_stalker_medik_task_1_text">
+	<text>%s je vyžádán Kostějem pro práci na zdravotnických potřebách. Měl bys mu je přinést, pokud nějaké najdeš.</text>
+</string>
+<string id="jup_a6_stalker_medik_task_1_about">
+	<text>Udržovat to, co zbylo ze skladu zdravotnických potřeb, při tom množství zranění, která musím denně ošetřovat, je znepokojující. Obvazy a lékárničky mi brzy nebo později dojdou. Potřebuji, abys mi našel jednu z těch starých lékárniček. Určitě se budou hodit.</text>
+</string>
+<string id="jup_a6_stalker_medik_task_1_fetch_about">
+	<text>Tady je. Hledal jsem všude možné %s. Měly by v něm být nějaké tablety a ampule, které potřebuji k práci na zdravotnických potřebách. Zaplatím ti za jednu z těchto sad, pokud mi přineseš celou sadu zpět.</text>
+</string>
+<string id="jup_a6_stalker_medik_task_1_fetch_finish">
+	<text>Skvělá práce! Patříš mi ve velkém.</text>
+</string>
+
+</string_table>

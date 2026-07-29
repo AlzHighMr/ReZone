@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+<!-- 95% -->
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Rabbit (Monolith Trader) Default Storyline Task -->
+
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_name">
+	<text>Získej další úlohu</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_text">
+	<text>Přijmout další úkol.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_about">
+	<text>Musíš se setkat s jedním ze starších Monolitu. Jdi za ním hned teď.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_finish">
+	<text>Dobrá práce.</text>
+</string>
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Kralik (monoliticky obchodnik) Znicte neverici Pribehovy ukol -->
+
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_name">
+	<text>Zničte neveřící</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_text">
+	<text>Vede útok monolitu proti neveřícím.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_about">
+	<text>Nadšel čas, můj synu. Musíš vést své bratry do boje. Bojuj srdnatě a nepřijímej žádné kapitulace. Poraz nevěřící pro dobro Monolitu.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_finish">
+	<text>Výborná práce. Jsi skvělý bojovník.</text>
+</string>
+
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Rabbit (Monolith Trader) Collect Supplies Storyline Task -->
+
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_name">
+	<text>Sehnat %s pro Monolit</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_text">
+	<text>Králik mě požádal, abych mu přinesl %s.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_about">
+	<text>Můj synu, tví bratři potřebují, abys sesbral zásoby.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_fetch_about">
+	<text>Přines nám %s.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_fetch_finish">
+	<text>Vykonal jsi dobře.</text>
+</string>
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Kralik (monoliticky obchodnik) Vydejte se do zony Pribehovy ukol -->
+
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_name">
+	<text>Výprava do Zóny</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_text">
+	<text>Musíš prokázat svou hodnotu tím, že přežiješ cestu do Zóny.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_about">
+	<text>Můj synu, musíš se prokázat všemocnému Monolitu. Musíš sám cestovat hluboko do Zóny. Postav se všem výzvám, které před tebou stojí. Znič všechny nepřátele, na které narazíš. Udělej to pro dobro Monolitu.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_finish">
+	<text>Dobře sis vedl, můj synu.</text>
+</string>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Klerik (monoliticky mechanik) Vychozi pribehovy ukol -->
+
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_name">
+	<text>Získat další úlohu</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_text">
+	<text>Přijmout další úkol.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_about">
+	<text>Můj synu, Monolitu sloužíš dobře. Promluv si s jedním ze starších a zeptej se, čím můžeš ještě více pomoci naší velké věci.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_finish">
+	<text>Dobrá práce.</text>
+</string>
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Cleric (Monolith Mechanic) Recover Stolen Equipment Storyline Task -->
+
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_name">
+	<text>Získej zpět ukradené monolitické vybavení</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_text">
+	<text>Stalker sabotoval Vypalovač mozků. Obnov vybavení, které odstranil.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_about">
+	<text>Stalker ukradl důležitou část vybavení z Vypalovače. Musíš ho získat zpět pro dobro všemocného Monolitu.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_finish">
+	<text>Dobře jsi si vedl.</text>
+</string>
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Klerik (monoliticky mechanik) Lov na jidlo Pribehovy ukol -->
+
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_name">
+	<text>Lov na jídlo</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_text">
+	<text>Vede lov do Zóny, aby sklidil maso pro své Monolitické bratry.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_about">
+	<text>Synu, musíme doplnit zásoby jídla. Povedeš lov, aby tvoji bratři mohli hodovat?</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_finish">
+	<text>Všichni jste Monolitu dobře sloužili. Maso, které jsi přinesl, se bude podávat na dnešní hostině. Jako odměnu ti vyhradíme oční bulvy.</text>
+</string>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Klerik (Mechanik Monolitu) Dejovy ukol pro monoliticky arzenal zbrani -->
+
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_name">
+	<text>Monolitický arzenál: %s</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_text">
+	<text>Klerik chce, aby %s rozšířil mocný Monolitický arzenál.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_about">
+	<text>Můj synu, musíme vybudovat náš mocný arzenál, abychom mohli dosáhnout našich slavných cílů.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_fetch_about">
+	<text>Musíš mi přinést %s. Tvůj úspěch velmi poslouží věci Monolitu.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_fetch_finish">
+	<text>Dobře sis vedl, můj synu.</text>
+</string>
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Olivar (Monolith Trader) Default Storyline Task -->
+
+<string id="drx_sl_trader_monolith_kbo_default_task_name">
+	<text>Získat další úlohu</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_default_task_text">
+	<text>Přijmout další úkol.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_default_task_about">
+	<text>Musíš se setkat s jedním z vůdců Monolitu. Jdi za ním hned.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_default_task_finish">
+	<text>Dobrá práce.</text>
+</string>
+	
+
+	<!-- Olivar (obchodnik s monolity) Eliminujte vetrelce Pribehovy ukol -->
+
+<string id="drx_sl_trader_monolith_kbo_task_1_name">
+	<text>Eliminuj větřelce</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_1_text">
+	<text>Olivar tě informoval o skupině větřelců. Je třeba je zlikvidovat za každou cenu.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_1_about">
+	<text>V oblasti byla spatřena skupina větřelců. Nemůžeme je nechat přežít. Zlikviduj je.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_1_finish">
+	<text>Dobře provedeno. Osvědčil ses.</text>
+</string>
+	
+
+	<!-- Olivar (obchodnik s monolity) Prozkoumej polohu zvedu Pribehovy ukol -->
+
+<string id="drx_sl_trader_monolith_kbo_task_2_name">
+	<text>Prozkoumat lokaci zvědů</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text">
+	<text>Olivar tě pověřil úkolem najít zmizelé zvědy</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text_0">
+	<text>Olivar ti zadal úkol najít chybějící zvědy, ale k hledání je potřeba $item_1.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text_1">
+	<text>Olivar ti zadal úkol najít chybějící zvědy.\nZajdi na $map.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text_2">
+	<text>Olivar ti zadal úkol najít chybějící průzkumníky.\nPoužij $item_1 a nastav frekvenci na $freq MHz. Vyhledej v okolí dobrý signál.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text_3">
+	<text>Musíš získat nalezený signál $item_2 a ukázat ho Olivarovi.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_text_4">
+	<text>Vrať se se svými nálezy k Olivarovi.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_about">
+	<text>Mám pro tebe důležitý úkol, bratře. Vyslali jsme oddíl našich zvědů, aby pozorovali neobvyklé aktivity v oblasti. Uplynul den a oni nejsou nikde k nalezení. Jejich selhání nám všem přineslo ostudu! Je na nás, abychom zjistili, zda se ještě mohou vykoupit. Zde je frekvence signálu PDA jednoho ze zvědů. Vystopuj ji a zjisti, co se s nimi stalo.</text>
+</string>
+<string id="drx_sl_trader_monolith_kbo_task_2_finish">
+	<text>Tato informace bude užitečná. Děkuji, bratře.</text>
+</string>
+
+
+	<!-- ----------------------------------------------------------------------------------------- -->
+	<!-- Griffith (Mercenary Operator) Default Storyline Task -->
+
+<string id="drx_sl_merc_pri_grifon_mlr_default_task_name">
+	<text>Získat další úlohu</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_default_task_text">
+	<text>Přijmout další úkol.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_default_task_about">
+	<text>Je zde kontakt, který je ochoten dobře zaplatit za naše služby. Zajdi za ním.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_default_task_finish">
+	<text>Dobrá práce.</text>
+</string>
+	
+
+	<!-- Griffith (Operator zoldneru) Ulovte nebezpecneho mutanta Pribehovy ukol -->
+
+<string id="drx_sl_merc_pri_grifon_mlr_task_1_name">
+	<text>Ulovit nebezpečného mutanta</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_1_text">
+	<text>Griffith a jeho žoldáci začínají být unavení z nočních nájezdů neodbytného mutanta. Souhlasil jsem, že ho vystopuji a zabiju.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_1_about">
+	<text>Tahle zatracená příšera se každou noc vrací a útočí na naše stráže. Nemůžeme ho nechat déle vyklouznout. Najdi ji a zabij ji.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_1_finish">
+	<text>Konečně! Můžeme odpočívat v pokoji. Zde je vaše odměna.</text>
+</string>
+	
+
+	<!-- Griffith (Operator zoldneru) prohledani lokace laboratore X-8 Storyline Task -->
+
+<string id="drx_sl_merc_pri_grifon_mlr_task_2_name">
+	<text>Pátrání po laboratoři X-8</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_2_text">
+	<text>Griffith se nevrátí k Dushmanoj s prázdnýma rukama. Prohledej laboratoř X-8 a najdi všechny dokumenty, které najdeš.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_2_about">
+	<text>Přišli jsme sem získat informace z laboratoře X8, která se nachází poblíž servisního střediska Yubileiny severně odtud. Alespoň bychom měli něco užitečného, s čím bychom mohli odejít. Vydal bych se tam s klukama znovu, ale už nás moc nezbývá a bylo by toho na nás moc, protože bychom raději neutráceli víc lidí, než je nutné, abychom se nějak dostali pryč z centra Zkurvené zóny. Vydej se dolů do X8 - tam by mohlo něco zbyt.</text>
+</string>
+<string id="drx_sl_merc_pri_grifon_mlr_task_2_finish">
+	<text>Velmi zajímavé... tyto dokumenty by mohly být pro správné lidi velmi cenné. Odvedli jsi skvělou práci.</text>
+</string>
+	
+	<!-- Rabbit (Monolith Trader) Payoff Change Factions Task -->
+
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_name">
+	<text>Připojit se k Monolithu pomocí platby za přebírání peněz</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_text">
+	<text>Když se stanu Monolitem, budu mít malou potřebu peněz. Králík žádá pouze mizerných 1 000 RU, aby mi umožnil připojit se k všemocnému Monolitu.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_about">
+	<text>Je dobře, že jsi přišel k rozumu, mé dítě. Přijmeme tě do řad Monolitu, ale nejprve se musíš vzdát znaku svého pozemského majetku v podobě 1000 RU.</text>
+</string>
+<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_finish">
+	<text>Dobře. Vítej v bratrstvu Monolitu.</text>
+</string>
+	
+	<!-- Eidolon (Elite Monolith Soldier) Purge the Infidels Task -->
+<string id="monolith_eidolon_task_1_name">
+	<text>Najdi neveřící</text>
+</string>
+<string id="monolith_eidolon_task_1_text">
+	<text>Eidolon chce sebrat nějaké %s.</text>
+</string>
+<string id="monolith_eidolon_task_1_about">
+	<text>Jsme v obléhání. Neveřící chtějí využít všemocný Monolit. Hnáni chamtivosti. Nevědomosti. Přízemní touhy. Jménem Monolitu. Jednáme my, strážci. Vyčisti neveřící. Sbíráme jejich nášivky. Jako trofej. Znamení naší nezpochybnitelné nadvlády. Jdi, bratře. Znič je všechny.</text>
+</string>
+<string id="monolith_eidolon_task_1_fetch_about">
+	<text>Jsme v obléhání. Neveřící chtějí zneužít všemocný Monolit. Hnáni chamtivosti. Nevědomosti. Přízemní touhy. Jménem Monolitu. Jednáme my, strážci. Vyčisti neveřící. Sbíráme jejich nášivky. Jako trofej. Znamení naší nezpochybnitelné nadvlády. Jdi, bratře. Znič je všechny. Získej %s na své misi.</text>
+</string>
+<string id="monolith_eidolon_task_1_fetch_finish">
+	<text>Taková oddanost. Naší slavné věci. Oddanost bude odměněna.</text>
+</string>		
+
+
+
+
+<string id="monolith_eidolon_task_2_name">
+	<text>Největší bojovník</text>
+</string>	
+<string id="monolith_eidolon_task_2_text">
+	<text>Sbírej %s trofejí pro Eidolona.</text>
+</string>		
+<string id="monolith_eidolon_task_2_about">
+	<text>Nebezpečné. Smrtící bestie. Dar Zóny, abychom je mohli spatřit. Pro nás, abychom si je vzali. Strážci, poskytovatelé i milník. Způsob, jak vyzkoušet naši sílu. Odvahu a bojovou zdatnost. Do toho, bratře. Lov mocného lovce, muže proti zvířeti.</text>
+</string>		
+<string id="monolith_eidolon_task_2_fetch_about">
+	<text>Nebezpečné. Smrtící bestie. Dar Zóny, abychom je mohli spatřit. Pro nás, abychom si je vzali. Strážci, poskytovatelé i milník. Způsob, jak vyzkoušet naši sílu. Odvahu a bojovou zdatnost. Do toho, bratře. Lov mocného lovce, muže proti zvířeti. Sbírej %s, abys prokázal svou hodnotu.</text>
+</string>	
+<string id="monolith_eidolon_task_2_fetch_finish">
+	<text>Velkolepá trofej. Monolit je na tebe hrdý. Já také. Odměna pro tebe.</text>
+</string>
+
+
+<string id="monolith_eidolon_task_3_name">
+	<text>Sklidit ovoce</text>
+</string>
+<string id="monolith_eidolon_task_3_text">
+	<text>Eidolon chce nasbírat artefakt "%s".</text>
+</string>
+<string id="monolith_eidolon_task_3_about">
+	<text>Chraníme monolit. Monolit chrání nás. My sloužíme a Zona dodává. Skvostné ovoce, zářící svým nepřekonatelným leskem. Mocné, aby nás posílilo. Jdi a sklízej ovoce, bratře.</text>
+</string>
+<string id="monolith_eidolon_task_3_fetch_about">
+	<text>Chraníme monolit. Monolit chrání nás. My sloužíme a Zona dodává. Skvostné ovoce, zářící svým nepřekonatelným leskem. Mocné, aby nás posílilo. Jdi a sklízej ovoce, bratře. Sklid artefakt "%s", aby posílil naši sílu.</text>
+</string>
+<string id="monolith_eidolon_task_3_fetch_finish">
+	<text>Vynikající. Úžasné. Pohled, na který se dá dívat. Máš můj vděk, věrný bratře.</text>
+</string>
+
+	<!-- Eidolon (Elite Monolith Soldier) Keeper of Secrets Task -->
+<string id="monolith_eidolon_task_4_name">
+	<text>Strážce tajemství</text>
+</string>
+<string id="monolith_eidolon_task_4_text">
+	<text>Získat dokumenty, které obsahují tajemství Zóny, a přinést je zpět do Eidolona.</text>
+</string>
+<string id="monolith_eidolon_task_4_about">
+	<text>Existují dokumenty, které hovoří o zázracích Zóny. Podrobně. Tajné znalosti. Neveřící se o nich nesmí dozvědět. Získej ty dokumenty zpět. Přines mi je a já tě odměním.</text>
+</string>
+<string id="monolith_eidolon_task_4_finish">
+	<text>Zóna je v bezpečí. Díky tobě.</text>
+</string>
+
+
+
+<string id="pri_monolith_monolith_trader_stalker_task_1_name">
+	<text>Zabíj nepřítele</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_1_text">
+	<text>Byl jsi pověřen vyčistit oblast pro dobro všemocného Monolitu. Po dokončení práce se ohlas u Králíka.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_1_about">
+	<text>Mám pro tebe důležitý úkol. Musíš se vydat do Zóny a vyčistit oblast, aby se tam mohly přesunout naše síly. Jsi připraven?</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_1_finish">
+	<text>Úkol je splněn? Dobře. Pochval Monolit.</text>
+</string>
+
+<string id="pri_monolith_monolith_trader_stalker_task_2_name">
+	<text>Zabij plánovače</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_2_text">
+	<text>Stalker se snaží deaktivovat Vypalovač mozku. Zabij ho.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_2_about">
+	<text>Velká díla Zóny jsou ohrožena mnoha hrozbami. Je tu jeden, který se opět chystá deaktivovat Vypalovač mozku. Je třeba ho zastavit. Musíš ho najít a zničit.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_2_finish">
+	<text>Dobře sis vedl. Kolektiv je spokojen.</text>
+</string>
+
+<string id="pri_monolith_monolith_trader_stalker_task_3_name">
+	<text>Zajisti %s pro Králíka</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_3_text">
+	<text>Králík si vyžádal novou pušku do arzenálu Monolitu.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_3_about">
+	<text>Každým dnem jsme stále mocnější. Potřebujeme více zbraní, abychom mohli i nadále dosahovat svých cílů. Musíte pro nás najít novou zbraň, abychom mohli pokračovat v rozšiřování našeho arzenálu.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_3_fetch_about">
+	<text>Najdi nové %s a přines mi je.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_3_fetch_finish">
+	<text>Toto se povede dobře.</text>
+</string>
+
+
+	<!-- FIND MUTANT MEAT FOR MONOLITH TASK -->
+<string id="pri_monolith_monolith_trader_stalker_task_4_name">
+	<text>Ulovit %s pro Králíka</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_4_text">
+	<text>Ulov %s. A dones maso Králíkovi, aby ho mohl připravit hostinu.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_4_about">
+	<text>Nášim zásobám dochází. Musíš se vydat do Zóny a ulovit maso, aby tvoji monolitickí bratři mohli hodo­vat.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_4_fetch_about">
+	<text>Ulov a přines nám %s. Nezapomeň, že tito tvorové jsou dar Zóny. Rychle je zabij a poděkuj za ně. Až se ti to podaří, dones mi maso.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_4_fetch_finish">
+	<text>Uspěl jsi ve svém úkolu. Dobrá práce.</text>
+</string>
+
+<string id="pri_monolith_monolith_trader_stalker_task_5_name">
+	<text>Sbírej %s pro Králíka</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_5_text">
+	<text>Získej %s a vrať je Králíkovi.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_5_about">
+	<text>Musíš pro nás obstarat další zásoby, abychom mohli pokračovat v našich velkých dilech.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_5_fetch_about">
+	<text>Získej %s a přines mi je.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_5_fetch_finish">
+	<text>Sloužil jsi Monolitu dobře.</text>
+</string>
+
+<string id="pri_monolith_monolith_trader_stalker_task_6_name">
+	<text>Najdi artefakt %s pro Králíka</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_6_text">
+	<text>Najdi artefakt %s. Přines ho zpět Králíkovi, aby ho mohl připravit jako oběť.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_6_about">
+	<text>Musíme najít další artefakt, který bychom mohli dát jako oběť. Pomůžeš sloužit dobru Monolitu?</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_6_fetch_about">
+	<text>Najdi artefakt %s. Až se ti to podaří, přines mi ho, abychom mohli provést obřad.</text>
+</string>
+<string id="pri_monolith_monolith_trader_stalker_task_6_fetch_finish">
+	<text>Sloužíš Monolitu dobře. Připoj se k nám dnes večer při obřadní oběti. Bude se zpívat.</text>
+</string>
+
+	<!-- Cleric (Monolith Mechanic) Find Level 1 Toolkit Task -->
+
+<string id="pri_monolith_monolith_mechanic_stalker_task_1_name">
+    <text>Najít %s pro Klerika</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_1_text">
+    <text>%s potřebuje Klerik k instalaci základních vylepšení vybavení, měl bys mu je přinést, pokud nějaké najdeš.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_1_about">
+    <text>Potřebuji, abys pro mě něco udělal. Potřebuji specifické nástroje na seřízení našich zbraní.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_1_fetch_about">
+    <text>Okay, potřebuji %s. Jdi, hned.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_1_fetch_finish">
+    <text>Vykonal jsi to dobře.</text>
+</string>
+
+<string id="pri_monolith_monolith_mechanic_stalker_task_2_name">
+    <text>Najdi %s pro Klerika</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_2_text">
+    <text>%s potřebuje Klerik k instalaci pokročilých vylepšení vybavení, měl bys mu je přinést, pokud nějaké najdeš.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_2_about">
+    <text>Potřebuji další nástroje; lepší nástroje. Můžeš najít to, o co tě žádám, ještě jednou?</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_2_fetch_about">
+    <text>Potřebuji sadu pokročilých nástrojů. Měla by obsahovat to, co potřebuji. Pokud mi nějaké přineseš, budu ti vděčný, dokonce ti od této chvíle nabídnů slevu.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_2_fetch_finish">
+    <text>Dobře. Přinesl jsi mi je.</text>
+</string>
+
+
+<string id="pri_monolith_monolith_mechanic_stalker_task_3_name">
+    <text>Najdi %s pro Klerika</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_3_text">
+    <text>%s potřebuje Klerik k instalaci vylepšení expertního vybavení, měl bys mu je přinést, pokud nějaké najdeš.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_3_about">
+    <text>Potřebuji další nástroje; lepší nástroje. Můžeš najít to, o co tě žádám, ještě jednou?"</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_3_fetch_about">
+    <text>Potřebuji sadu odborných nástrojů. Měla by obsahovat to, co potřebuji. Pokud mi nějaké přineseš, budu ti vděčný, dokonce ti od této chvíle nabídnů slevu.</text>
+</string>
+<string id="pri_monolith_monolith_mechanic_stalker_task_3_fetch_finish">
+    <text>Dobře. Přinesl jsi mi je.</text>
+</string>
+
+
+<string id="lider_monolith_haron_task_1_name">
+    <text>Zničit nepřítele</text>
+</string>
+<string id="lider_monolith_haron_task_1_text">
+    <text>Charon mě požádal, abych osvobodil klíčovou pozici v Zóně.</text>
+</string>
+<string id="lider_monolith_haron_task_1_about">
+    <text>Můj bratře, je třeba tvé pomoci při ničení nevěřících.</text>
+</string>
+<string id="lider_monolith_haron_task_1_finish">
+    <text>Blahodáření ti Monolit, bratre! Vezmi si, co si zasloužíš.</text>
+</string>
+
+
+<string id="lider_monolith_haron_task_2_name">
+    <text>Sbírej %s</text>
+</string>
+<string id="lider_monolith_haron_task_2_text">
+    <text>Charon mě požádal, abych přinesl %s.</text>
+</string>
+<string id="lider_monolith_haron_task_2_about">
+    <text>Velký Monolit nabídne odměnu všem bratřím, kteří pomohou očistit naši svatou zemi od nevěřících. Ukaž mi insignie těchto červů jako důkaz svých činů.</text>
+</string>
+<string id="lider_monolith_haron_task_2_fetch_about">
+    <text>Velký Monolit nabídne odměnu všem bratřím, kteří pomohou očistit naši svatou zemi od nevěřících. Přines mi %s jako důkaz svých činů.</text>
+</string>
+<string id="lider_monolith_haron_task_2_fetch_finish">
+    <text>Vynikající, bratre. Tohle je pro tebe, od Monolitu.</text>
+</string>
+
+	
+<!-- Griffith -->
+<string id="merc_pri_grifon_mlr_task_1_name">
+	<text>Sbírat %s</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_1_text">
+	<text>Griffin mě požádal, abych shromáždil %s.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_1_about">
+	<text>Je tu příliš mnoho fanatiků, kteří se tu potulují, než abychom mohli efektivně pracovat. Chtěl bych, abys jim zkrvavil nos, donutil je trochu se stáhnout a jako důkaz jim strhl nášivky. Někde tady mám schovaný tučný balík peněz. Je tvůj, když mi přineseš %s.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_1_fetch_about">
+	<text>Je tu příliš mnoho fanatiků, kteří se tu potulují, než abychom mohli efektivně pracovat. Chtěl bych, abys jim zkrvavil nos, donutil je trochu se stáhnout a jako důkaz jim strhl nášivky. Někde tady mám schovaný tučný balík peněz. Je tvůj, když mi přineseš %s.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_1_fetch_finish">
+	<text>Díky, stalkeru. Tady máš ty prachy, co jsem ti slíbil.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_2_name">
+	<text>Najdi artefakt duše</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_2_text">
+	<text>Griffin mě požádal, abych našel a vrátil artefakt Duše.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_2_fetch_about">
+	<text>Není tu žádný doktor a musíme nějak přežít. Obyčejné lékařské vybavení nám prostě nestačí a málokdo z mužů ho umí správně používat. Už tak je dost těžké se tady o všechny postarat. Proto vás chci požádat o pomoc. Slyšel jsem o artefaktu zvaném Duše, který prý má schopnost léčit zranění lidí. Mohl bys ho najít a přinést nám ho sem?</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_2_fetch_finish">
+	<text>Ty jsi ho opravdu našel? Tomu nemůžu uvěřit... Děkuji ti, stalkeru! Tohle pomůže ostatním. A neodcházej bez odměny.</text>
+</string>
+
+
+
+<string id="merc_pri_grifon_mlr_task_3_name">
+	<text>Vyčistit obchod s potravinami</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_3_text">
+	<text>Žoldáci chtějí, aby bylo postaráno o psi v nejbližším obchodě s potravinami.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_3_about">
+	<text>Ahoj. Máme další problém - v obchodě s potravinami se usadili psi, a to pro nás není dobré. Nepřetržitě na nás štěkají, a to přitahuje nežádoucí pozornost. Byl bych ti vděčný, kdybys je odtamtud vykázal.</text>
+</string>
+<string id="merc_pri_grifon_mlr_task_3_finish">
+	<text>Děkuji, skvělá práce. Tady máš nějaké peníze za svou namahu.</text>
+</string>
+
+<string id="merc_pri_a18_mech_mlr_task_1_name">
+	<text>Najdi %s pro Žoldáckého mechanika na Předměstí</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_1_text">
+	<text>Žoldácký mechanik na Předměstí mě požádal, abych našel %s.</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_1_about">
+	<text>Tady v Pripyati už sedíme na zadku tak dlouho, že se nám to zdá být zbytečné... Jistě jsi slyšel náš příběh od Griffina. Hledal jsem nástroje na vysoké nože, ale podařilo se mi najít jen ty nižší úrovně, které nejsou vhodné pro rozsáhlou údržbu a úpravy. To je nehorázné. Jsem technik a k optimální práci potřebuji pořádné nástroje. Můžeš mi pomoci?</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_1_fetch_about">
+	<text>Tady v Pripyati už sedíme na zadku tak dlouho, že se nám to ani nehodí... Jistě jsi slyšel náš příběh od Griffina. Hledal jsem nástroje na vysoké nože, ale podařilo se mi najít jen ty nižší úrovně, které nejsou vhodné pro rozsáhlou údržbu a úpravy. To je nehorázné. Jsem technik a k optimální práci potřebuji pořádné nástroje. Můžeš mi pomoci?</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_1_fetch_finish">
+	<text>Děkuji - už to pro zdejší kluky nebude tak stresující. Dám ti slevu.</text>
+</string>
+
+<string id="merc_pri_a18_mech_mlr_task_2_name">
+	<text>Najdi %s pro žoldáckou mechaniku na Předměstí</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_2_text">
+	<text>Žoldácký mechanik na Předměstí mě požádal, abych našel %s.</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_2_about">
+	<text>No, pár problémů jsme vyřešili, ale stále zbývá hodně práce. Potřebujeme lepší nástroje pro ještě větší vylepšení. Nevadilo by ti, kdybys nám zase pomohl?</text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_2_fetch_about">
+	<text>No, vyřešili jsme pár problémů, ale stále zbývá hodně práce. Potřebujeme lepší nástroje pro ještě větší vylepšení. Mohl bys nám znovu pomoci? </text>
+</string>
+<string id="merc_pri_a18_mech_mlr_task_2_fetch_finish">
+	<text>Dobře hotovo. Teď mám kompletní sadu a ty můžeš mít všechny slevy, na které máš nárok.</text>
+</string>
+	
+	
+<!-- (Monolith Mechanic) -->
+<string id="mechanic_monolith_kbo_task_1_name">
+	<text>Najít %s pro technika Monolitu</text>
+</string>
+<string id="mechanic_monolith_kbo_task_1_text">
+	<text>Technik v servisním středisku Yubileiny mě požádal, abych mu přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_1_about">
+	<text>Potřebuji tvou pomoc, bratře. Potřebuji nástroje pro naše vybavení, aby naši bratři mohli účinněji šířit slovo Monolit.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_1_fetch_about">
+	<text>Potřebuji tvou pomoc, bratře. Potřebuji nástroje pro naše vybavení, aby naši bratři mohli účinněji šířit slovo o Monolitu.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_1_fetch_finish">
+	<text>Výborná práce, bratře. Vše, co získáme z budoucích vylepšení, půjde na naši charitu a tvůj příspěvek ti poskytne malou slevu.</text>
+</string>
+
+<string id="mechanic_monolith_kbo_task_2_name">
+	<text>Najdi %s pro technika Monolitu</text>
+</string>
+<string id="mechanic_monolith_kbo_task_2_text">
+	<text>Technik v servisním středisku Yubileiny mě požádal, abych mu přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_2_about">
+	<text>Sada nářadí, kterou jsi dříve umístil, nestačí. Pro rozsáhlejší práci jsou zapotřebí jemnější nástroje, aby naši bratři mohli pokračovat v šíření Jeho vůle. Budeš opět sloužit naší věci?</text>
+</string>
+<string id="mechanic_monolith_kbo_task_2_fetch_about">
+	<text>Sada nástrojů, kterou jsi dříve umístil, nestačí. Pro rozsáhlejší práci jsou zapotřebí jemnější nástroje, aby naši bratři mohli pokračovat v šíření Její vůle. Budeš opět sloužit naší věci?</text>
+</string>
+<string id="mechanic_monolith_kbo_task_2_fetch_finish">
+	<text>Výborná práce, bratře. Vše, co získáme z budoucích vylepšení, půjde na naši charitu a tvůj příspěvek ti poskytne dodatečnou slevu.</text>
+</string>
+
+<string id="mechanic_monolith_kbo_task_3_name">
+	<text>Najdi %s pro technika Monolitu</text>
+</string>
+<string id="mechanic_monolith_kbo_task_3_text">
+	<text>Technik v servisním středisku Yubileiny mě požádal, abych mu přinesl %s.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_3_about">
+	<text>Poslední sada nářadí, kterou jsi sem přivezl, byla... dostačující, ale proč se zastavit u toho, čeho bylo dosaženo, když můžeme dosáhnout něčeho ještě lepšího? Potřebujeme ty nejlepší nástroje v Zóně. Žádám tě, abys naposledy posloužil Její vůli, můj bratře.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_3_fetch_about">
+	<text>Poslední sada nástrojů, kterou jsi sem přinesl, byla... dostačující, ale proč se zastavovat u toho, čeho bylo dosaženo, když můžeme dosáhnout něčeho ještě lepšího? Potřebujeme ty nejlepší nástroje v Zóně. Žádám tě, abys naposledy posloužil Její vůli, můj bratře.</text>
+</string>
+<string id="mechanic_monolith_kbo_task_3_fetch_finish">
+	<text>Vynikající práce, bratře. Buď si jistý, že se o tvém příspěvku zmíním našim bratřím... a slibuji, že v rámci svých možností poskytnu jakoukoli pomoc.</text>
+</string>
+
+</string_table>

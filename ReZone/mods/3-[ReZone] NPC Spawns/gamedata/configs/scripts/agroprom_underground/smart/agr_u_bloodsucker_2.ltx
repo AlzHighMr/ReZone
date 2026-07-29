@@ -1,0 +1,25 @@
+[smart_terrain]
+squad_id = 3
+max_population = 2
+respawn_params = respawn@agr_u_bloodsucker_2
+respawn_only_smart = false
+respawn_idle = 259200
+respawn_radius = 1000
+;arrive_dist = 0
+;smart_control = nil
+;att_restr = nil
+;def_restr = nil
+;safe_restr = nil
+spawn_point = agr_u_bloodsucker_2_walk
+
+[respawn@agr_u_bloodsucker_2] ;-- Type:
+spawn_all_hard
+
+
+[spawn_all_hard]	;-- Hard mutants - Rates of groups: ( 1 snork + 1 bloodsucker + 1 psysucker + 2 zombie + 1 karlik )
+spawn_squads = simulation_respawn_underground, simulation_bloodsucker, simulation_psysucker, zombied_sim_squad_advanced, zombied_sim_squad_novice, simulation_karlik
+spawn_num = {+strelok_notes} 1, 0
+
+
+[exclusive]
+agr_u_bloodsucker_2 = agroprom_underground\agru_bloodsucker.ltx

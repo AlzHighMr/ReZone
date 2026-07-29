@@ -1,0 +1,183 @@
+--[[
+ui_enemy_health allows the ability to show health progress of last hit enemy if they have db.storage[id].show_health = true
+
+author: Alundaio
+--]]
+
+local progress = nil
+local last_id = nil
+
+local function is_enabled()
+    if not ui_options then return false end
+    return ui_options.get("video/hud/show_enemy_health") ~= false
+end
+
+function on_game_start()
+    -- registruj jen pokud je feature zapnut?
+    if not is_enabled() then return end
+
+    RegisterScriptCallback("monster_on_hit_callback",on_hit)
+    RegisterScriptCallback("npc_on_hit_callback",on_hit)
+    RegisterScriptCallback("heli_on_hit_callback",on_hit)
+end 
+
+function on_hit(obj,power,dir,who,bi)
+    if not is_enabled() then return end
+    if not obj then return end
+
+    local st = db and db.storage and db.storage[obj:id()]
+    if not st then return end 
+    
+    if not (st.show_health) then
+        if (ui_options.get("video/hud/show_enemy_health") == false) then
+            return 
+        end
+    end
+    
+    -- smrt targetu
+    if (last_id and last_id == obj:id()) then 
+        local cls = obj:clsid()
+        local is_heli = IsHelicopter and IsHelicopter(nil,cls)
+        local v = is_heli and obj:get_helicopter():GetfHealth() or obj.health or 0
+        if (v <= 0.005) then
+            cs_remove()
+        end
+    end
+    
+    -- jen actor
+    if (who == nil or who:id() ~= 0) then 
+        return 
+    end
+    
+    local hud = get_hud and get_hud()
+    if not hud then return end
+    
+    CreateTimeEvent(math.random(),math.random(),0,hbar,bi,obj:id())
+end
+
+local strings = {
+	dog = "encyclopedia_mutants_blind_dog",
+	bloodsucker = "encyclopedia_mutants_bloodsucker",
+	boar = "encyclopedia_mutants_boar",
+	burer = "encyclopedia_mutants_burer",
+	cat = "encyclopedia_mutants_cat",
+	chimera = "encyclopedia_mutants_chimera",
+	controller = "encyclopedia_mutants_controller",
+	bird = "encyclopedia_mutants_crow",
+	flesh = "encyclopedia_mutants_flesh",
+	fracture = "encyclopedia_mutants_fracture",
+	pseudodog = "encyclopedia_mutants_pseudodog",
+	giant = "encyclopedia_mutants_pseudogiant",
+	snork = "encyclopedia_mutants_snork",
+	tushkano = "encyclopedia_mutants_tushkano",
+	zombie = "encyclopedia_mutants_zombie",
+	SM_KARLIK = "encyclopedia_mutants_karlik",
+	SM_LURKER = "encyclopedia_mutants_lurker",
+	SM_POLTER_G	= "encyclopedia_mutants_poltergeist",
+	SM_PYRO_G = "encyclopedia_mutants_pyrogeist",
+	SM_PSEUDO_G	= "encyclopedia_mutants_pseudogeist",
+	SM_PSYSUCKER = "encyclopedia_mutants_psysucker",
+}
+
+function hbar(bi,id)
+
+    -- ?? absolutn? guard
+    if not is_enabled() then return true end
+
+    local hud = get_hud and get_hud()
+    if not hud then return true end
+
+    local cs = hud:GetCustomStatic("cs_enemy_health") 
+
+    if (cs == nil) then 
+        hud:AddCustomStatic("cs_enemy_health", true)
+
+        local xml = CScriptXmlInit()
+        if not xml then return true end
+
+        xml:ParseFile("ui_enemy_health.xml")
+
+        cs = hud:GetCustomStatic("cs_enemy_health")
+        if not cs then return true end
+
+        local w = cs:wnd()
+        if not w then return true end
+
+        progress = xml:InitProgressBar("enemy_health", w)
+        if not progress then return true end
+    end
+    
+    if (bi == "from_death_callback") then
+        cs_remove()
+        return true
+    end
+    
+    local obj = level.object_by_id(id)
+    if not obj then return true end
+
+    local cls = obj:clsid()
+    local is_heli = IsHelicopter and IsHelicopter(nil,cls)
+    local v = is_heli and obj:get_helicopter():GetfHealth() or obj.health or 0
+
+    if (v > 0.005 and progress) then 
+        progress:Show(true)
+        progress:SetProgressPos(v*100)
+
+        local text = ""
+
+        if (is_heli) then 
+            text = game.translate_string("st_ui_heli")
+
+        elseif (IsStalker and IsStalker(nil,cls)) then 
+            text = obj:character_name() or ""
+
+        elseif (IsMonster and IsMonster(nil,cls)) then 
+
+            if string.find(obj:section() or "","rotan") then
+                text = "encyclopedia_mutants_rat"
+            elseif string.find(obj:section() or "","psy_dog") then
+                text = "encyclopedia_mutants_psydog"
+            else
+                local what = ini_sys and (ini_sys:r_string_ex(obj:section(),"kind") or ini_sys:r_string_ex(obj:section(),"species"))
+                text = what and game.translate_string(strings[what]) or ""
+            end
+
+        else 
+            local sid = get_object_story_id and get_object_story_id(obj:id())
+            if (sid) then 
+                text = game.translate_string(sid)
+            end
+        end
+
+        if cs and cs:wnd() and cs:wnd():TextControl() then
+            cs:wnd():TextControl():SetText(text)
+        end
+        
+        -- auto remove
+        RemoveTimeEvent(0,"enemy_health_remove")
+        local function remove_me()
+            cs_remove()
+        end
+        CreateTimeEvent(0,"enemy_health_remove",30,remove_me)
+
+        last_id = obj:id()
+
+    else
+        cs_remove()
+    end
+
+    return true
+end
+
+function cs_remove()
+    last_id = nil
+    progress = nil
+
+    local hud = get_hud and get_hud()
+    if not hud then return end
+
+    local cs = hud:GetCustomStatic("cs_enemy_health") 
+    if (cs) then
+        hud:RemoveCustomStatic("cs_enemy_health")
+    end
+end

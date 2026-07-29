@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+
+<string_table>
+
+  <string id="passinc_salary_started">
+    <text>Začal jsi nový výplatní kontrakt.</text>
+</string>
+
+<string id="passinc_salary_stopped_basic">
+    <text>Výplatní kontrakt ukončen. Nový můžeš zahájit až za jeden den.</text>
+</string>
+
+<string id="passinc_salary_ready">
+    <text>Výplata od %s je připravena k vyzvednutí.</text>
+</string>
+
+<string id="passinc_salary_stopped_lazy">
+    <text>Příliš jsi flákal práci a zaměstnavatel toho má dost. Kontrakt byl ukončen.</text>
+</string>
+
+<string id="passinc_salary_stopped_death">
+    <text>Zaměstnavatel zemřel. Tvůj kontrakt byl zrušen.</text>
+</string>
+
+<string id="passinc_lazy_warning_1">
+    <text>Hej! Co ta tvoje práce? Dneska jsi toho moc neudělal. Jestli v tom budeš pokračovat, o výplatu přijdeš.</text>
+</string>
+
+<string id="passinc_lazy_warning_2">
+    <text>Jestli chceš výplatu udržet, musíš začít makat. No tak.</text>
+</string>
+
+<string id="passinc_lazy_warning_3">
+    <text>Poslední varování. Jestli budeš dál nic nedělat, zítra žádná výplata nebude.</text>
+</string>
+
+<string id="passinc_promotion">
+    <text>Dostal jsi povýšení! Podrobnosti najdeš v PDA.</text>
+</string>
+
+<string id="passinc_demotion">
+    <text>Byl jsi degradován za nesplnění podmínek kontraktu. Podrobnosti v PDA.</text>
+</string>
+
+<string id="passinc_gfcmod_salary_share">
+    <text>Podělil ses o výplatu s členy skupiny. Reputace a soudržnost týmu vzrostla.</text>
+</string>
+
+<string id="passinc_salary_share">
+    <text>Podělil ses o výplatu s členy skupiny. Reputace vzrostla.</text>
+</string>
+
+<string id="passinc_accumulate_complete_task">
+    <text>\nSplněné úkoly: %s</text>
+</string>
+
+<string id="passinc_accumulate_monster_killed">
+    <text>\nZabito mutantů: %s</text>
+</string>
+
+<string id="passinc_accumulate_npc_killed">
+    <text>\nZabito nepřátel frakce: %s</text>
+</string>
+
+<string id="passinc_accumulate_arti_found">
+    <text>\nNalezené artefakty: %s</text>
+</string>
+
+<string id="passinc_accumulate_money">
+    <text>\nDenní výdělek: %s</text>
+</string>
+
+<string id="passinc_transfer_contract_message">
+    <text>Kontrakt převeden na nového zaměstnavatele.</text>
+</string>
+
+</string_table>

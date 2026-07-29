@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<!-- 100% -->
+ <!-- Dusman (Vůdce žoldáků) -->
+<string id="find_blackbox_mlr_reward_killer_0">
+	<text>Dushmane, podívej se na tohle, našel jsem letový záznamník. Předpokládám, že obsahuje poznatky, za které by tahle organizace zaplatila pěkný balík, hmm?</text>
+</string>
+<string id="find_blackbox_mlr_reward_killer_1">
+	<text>Armádní? Skvěle. To je vlastně pěkná věčička, co tam máš - vezmu si ji od tebe za nějaký papír.</text>
+</string>
+
+<!-- (Průvodce) -->
+<string id="meet_ds_killer_guide_main_base_0">
+	<text>Jak se odsud dostanu?</text>
+</string>
+<string id="meet_ds_killer_guide_main_base_1">
+	<text>Toto místo je obklopeno různými druhy nebezpečí, ale máme tu podzemní kanalizační síť. Je tu průvodce, který tě může dostat z města na jednu z našich malých základen, která se nachází v jižním Zatonu.</text>
+</string>
+
+<string id="meet_ds_killer_guide_main_base_list_0">
+	<text>Připomeň mi, kudy vedou cesty?</text>
+</string>
+<string id="meet_ds_killer_guide_main_base_list_1">
+	<text>Jedinou možností je závod na zpracování odpadu v jihovýchodním Zatonu. Bude tě to stát osm tisíc rublů.</text>
+</string>
+
+<string id="travel_ds_killer_guide_main_base_0">
+	<text>Chci opustit město.</text>
+</string>
+<string id="travel_ds_killer_guide_main_base_1">
+	<text>Jsi si jistý? Naše jediná možnost je na sever - přijedeme do stanice na zpracování odpadu v jižním Zatonu. Osm tisíc rublů.</text>
+</string>
+<string id="travel_ds_killer_guide_main_base_2">
+	<text>Jsem připraven, vyrazíme do Zatonu. %c[d_orange][8000 RU]</text>
+</string>
+<string id="travel_ds_killer_guide_main_base_3">
+	<text>Změnil jsem názor.</text>
+</string>
+	
+	
+ <!-- Aslan (Žoldácky barman) -->
+<string id="talk_to_aslan_on_main_base_merk_0">
+	<text>Řekni mi něco o sobě.</text>
+</string>
+<string id="talk_to_aslan_on_main_base_merk_1">
+	<text>Co je tu k povídání? Jsem místní barman - ale kdo to má mezi těmi kecy říct, že? Trčíme tu už několik dní a sotva se udržíme na nohou. Tehdy jsem se účastnil obrany prezidentského paláce, migroval jsem do Švýcarska. Pak jsem přišel do Zóny. Rád jsem navštěvoval Bar s přáteli, popíjel a vzpomínal na starší časy... Při jedné z takových návštěv mi bylo nabídnuto místo v Syndikátu. Tehdy se sotva udržel, takže jsme v tom s Dushmanem tak trochu průkopníci. No a co? Kolotoče se hodí, jsou lidé, kteří byli v Afghánistánu a Gruzii. Ale lidem z Pobaltí se moc nechce, natož do zemí prvního světa.</text>
+</string>
+
+
+<string id="talk_to_aslan_about_lottery_0">
+	<text>Slyšel jsem, že máš zájem o frakční nášivky.</text>
+</string>
+<string id="talk_to_aslan_about_lottery_1">
+	<text>Jak to mám zapsat? Osobně ne, nemám o ně "zájem" - nicméně vzhledem k tomu, že morálka je v poslední době dost nízká, je to optimální metoda, jak si naši kluci mohou vydělat nějakou tu válečnou kořist. Navíc je chtějí ti nahoře. Funguje to takhle: přineseš mi zaplacené od šlídilů, dostaneš nějakou výbavu nebo vůbec nic - někdy musí být zásobník prázdný, co? Za pětadvacet zaplacených jakékoliv frakce, kromě těch od Ekologů a Monolitu, máš šanci získat podřadný artefakt, nebo nedostaneš ani hovno. Při padesáti zaplacených máš šanci získat slušný artefakt a poměrně solidní výbavu, ale také je šance, že nedostaneš nic. A za pětadvacet patchů Monolitu nebo Ekologa získáš docela dobrý artefakt se stejnou šancí jako za padesát patchů jakékoliv jiné frakce. Padesát monolitických nebo ekologických zaplacených ti zaručí vynikající předmět a dobrou výbavu určenou jen těm nejzkušenějším stalkerům, bez šance na prohru. Možná se ptáš, "proč tak štědře?"... Protože mnoho lidí si raději nechává nášivky pro sebe jako bojové trofeje.</text>
+</string>
+<string id="talk_to_aslan_about_lottery_2">
+	<text>A co ty? Co s nimi všemi děláš?</text>
+</string>
+<string id="talk_to_aslan_about_lottery_3">
+	<text>To není tvoje věc. prostě mi sežeň ty zaplacené a doufej v něco dobrého. Takhle funguje loterie, konec příběhu.</text>
+</string>
+
+<string id="lottery_ds_aslan_mlr_0">
+	<text>Mám nějaké nášivky.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_1">
+	<text>Vynikající, které?</text>
+</string>
+<string id="lottery_ds_aslan_mlr_2">
+	<text>Jasné nebe, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_3">
+	<text>Svoboda, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_4">
+	<text>Vyvolení, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_5">
+	<text>Ekologové, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_6">
+	<text>Bandité, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_7">
+	<text>Důstojníci, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_8">
+	<text>Monolit, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_9">
+	<text>Armáda, dvacet pět políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_11">
+	<text>Jasná obloha, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_12">
+	<text>Svoboda, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_13">
+	<text>Vyvolení, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_14">
+	<text>Ekologové. Dokonce dostal padesát.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_15">
+	<text>Bandité, padesát zaplacených.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_16">
+	<text>Důstojníci, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_17">
+	<text>Monolit, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_18">
+	<text>Militantní, padesát políček.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_10">
+	<text>Změnil jsem názor.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_19">
+	<text>Tady si vezmi svůj artefakt.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_20">
+	<text>Tady.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_21">
+	<text>Tady si to vezmete.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_22">
+	<text>Tady máš svůj artefakt.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_23">
+	<text>Někdo měl dnes večer štěstí.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_24">
+	<text>Dostal jsi pěkný dárek.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_25">
+	<text>Tady máš solidní artefakt.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_26">
+	<text>Jsi šťastný člověk! Tady máš něco na ozáření.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_27">
+	<text>Krásný artefakt. Tady máš.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_28">
+	<text>Dva artefakty! Máš štěstí.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_29">
+	<text>A tady je jackpot!</text>
+</string>
+<string id="lottery_ds_aslan_mlr_30">
+	<text>Máš štěstí.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_31">
+	<text>Vynikající sada pro lovce artefaktů!</text>
+</string>
+<string id="lottery_ds_aslan_mlr_34">
+	<text>Vzácný a nádherný artefakt.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_35">
+	<text>Propaná, ty máš ale štěstí!</text>
+</string>
+<string id="lottery_ds_aslan_mlr_36">
+	<text>Jackpot!</text>
+</string>
+<string id="lottery_ds_aslan_mlr_37">
+	<text>Bohužel jste nic nezískali.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_38">
+	<text>Hups! Tahali jste za kratší konec! Příště budete mít více štěstí.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_39">
+	<text>Příště více štěstí.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_40">
+	<text>Vynikající vybavení pro vynikajícího střelce.</text>
+</string>
+<string id="lottery_ds_aslan_mlr_41">
+	<text>Ideální pro útoky na velkou vzdálenost.</text>
+</string>
+
+<string id="aslan_st_0">
+	<text>Jaká je současná situace?</text>
+</string>
+<string id="aslan_st_1">
+	<text>No, Syndikát má v Zóně jen jednu centrální základnu, a ta je právě tady. Cesta do Yantaru je odříznuta kvůli psy-instalaci a občas odtamtud vycházejí davy zombíků a mutantů. Limansk sel do háje - je to bludiště plné nebezpečí. Rudý les je ještě nebezpečnější, protože u mostu do Limansku se usadili monolititčí bojovníci, zatímco zbytek oblasti se hemží mutanty. U armádních skladů na východě je to všechno území Svobody.</text>
+</string>
+<string id="aslan_st_2">
+	<text>Pokračuj.</text>
+</string>
+<string id="aslan_st_3">
+	<text>Co se týče případných nebezpečí, o těch se přesvědčíš sám. Měj však na paměti, že při plnění rozkazu máš práci a jakékoli emoce tě budou jen rozptylovat. Odlož je stranou... Není tu místo pro emoce, není tu místo pro morálku - jen intelekt a kalkulace. A pokud jde o další cesty, nejbezpečnější cesta vede přes Limansk. Je tam spousta uzavřených prostor, kde budeš v bezpečí před palbou odstřelovačů, a je tam ukryt, kde se můžeš schovat před přestřelkami, stejně jako před anomáliemi. Oblast je však dost nepředvídatelná - nikdy nebudeš vědět, co přesně je za rohem.</text>
+</string>
+<string id="aslan_st_4">
+	<text>Říkáš, že základna je centrální. Znamená to, že tam jsou nějaké další základny?</text>
+</string>
+<string id="aslan_st_5">
+	<text>Jsou tam dvě menší, o kterých vím. První je v Zatonu, na okraji severních bažin. Druhý je v jihozápadní části Přípjaťského předměstí. Máme také skupinu umístěnou v Divokém území a naše oddíly můžete najít v různých částech Zóny, když plní zakázky.</text>
+</string>
+<string id="aslan_st_6">
+	<text>Takže cokoli na sever od Limansku je území Monolitu.</text>
+</string>
+<string id="aslan_st_7">
+	<text>Pravda. Nedaleko Limansku je stará nemocnice. Nemá smysl tam chodit - cesta k Černobylské JE i ta vedoucí do Jantaru jsou odříznuty psi-emisemi.</text>
+</string>
+<string id="aslan_st_8">
+	<text>Rozumím, díky za informace.</text>
+</string>
+
+<string id="information_about_stash_aslan_0">
+	<text>Slyšel jsem, že máš informace o skrýších.</text>
+</string>
+<string id="information_about_stash_aslan_1">
+	<text>Slyšel jsi správně. Po nájezdech si vždycky hlídáme kořist. Je tvá za šest a půl tisíce rublů.</text>
+</string>
+
+<string id="information_about_stash_aslan1_0">
+	<text>Tady. %c[d_orange][6500 RU]</text>
+</string>
+<string id="information_about_stash_aslan1_1">
+	<text>Super. Užij si to.</text>
+</string>
+</string_table>

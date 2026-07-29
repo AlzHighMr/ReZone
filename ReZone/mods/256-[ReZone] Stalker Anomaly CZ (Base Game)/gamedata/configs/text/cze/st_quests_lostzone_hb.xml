@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+
+<!--===========================================================
+<
+< TEX-T STRINGS FOR LOST TO THE ZONE: Hluboké hranice TASKS
+<	Anomaly 1.5 - Lost to the Zone: Hluboké hranice
+<
+<	Made by: Tronex
+<	Last revised: 10 September 2019
+<
+<===========================================================-->
+
+<string_table>
+
+	<!-- Dushman intel -->
+	<string id="st_hb_isg_dushman_intel_name">
+		<text>Dushmanova inteligence</text>
+	</string>
+	<string id="st_hb_isg_dushman_intel_desc">
+		<text>Pokud Dushman dodržel slovo, obsahuje tento kufřík vypracované mapy a poznámky, které budou pro UNISG neocenitelné. Měl by drasticky snížit riziko, které s sebou ponesou budoucí mise UNISG.</text>
+	</string>
+
+
+	<!-- Oblouk 1 Duté hranice -->
+	<string id="lttz_hb_task_1_1_dushman_intel_name">
+		<text>Hluboké hranice: Inteligence</text>
+	</string>
+	<string id="lttz_hb_task_1_1_dushman_intel_desc">
+		<text>Major Hernandez mě pověřil, abych našel muže známého jako "Dushman" a získal důležité zpravodajské informace, za které mu OSN zaplatila.</text>
+	</string>
+	
+	<string id="lttz_hb_task_1_2_recruit_name">
+		<text>Hluboké hranice: Rendevous</text>
+	</string>
+	<string id="lttz_hb_task_1_2_recruit_desc">
+		<text>Major Hernandez a jeho oddíl se usadili na místě, kterému místní říkají "Jupiter". Musím přivést zpravodajské informace na určené místo.</text>
+	</string>
+
+	
+	<!-- Hluboké hranice Arc 2 -->
+	<string id="lttz_hb_task_2_1_guarded_secrets_name_1">
+    <text>Hluboké hranice: Prozkoumat továrnu Jupiter</text>
+</string>
+<string id="lttz_hb_task_2_1_guarded_secrets_name_2">
+    <text>Hluboké hranice: Návrat k Hernandezovi</text>
+</string>
+<string id="lttz_hb_task_2_1_guarded_secrets_desc_1">
+    <text>Musíme prohledat Jupiterovu továrnu a najít kufr. Svědci by měli být eliminováni.</text>
+</string>
+<string id="lttz_hb_task_2_1_guarded_secrets_desc_2">
+    <text>Jakmile se ujistíme, že je oblast bezpečná, měl bych tento kufr předat majoru Hernandezovi.</text>
+</string>
+
+<string id="lttz_hb_task_2_2_breakthrough_name_1">
+    <text>Hluboké hranice: Průlom</text>
+</string>
+<string id="lttz_hb_task_2_2_breakthrough_name_2">
+    <text>Hluboké hranice: Promluv si s Hernandezem</text>
+</string>
+<string id="lttz_hb_task_2_2_breakthrough_desc_1">
+    <text>Byl jsem pověřen, abych provedl bod Jupiterským podzemím. Major mě bude následovat se zbytkem svého oddílu. Rozkaz zní: postupovat vpřed a dávat pozor na všechny papíry, které by tu dole ještě mohly být.</text>
+</string>
+<string id="lttz_hb_task_2_2_breakthrough_desc_2">
+    <text>Našel jsem nějaké dokumenty. Měl bych je ukázat majoru Hernandezovi.</text>
+</string>
+	
+	<!-- Hluboké hranice Arc 3 -->
+	<string id="st_lttz_hb_task_3_1_search_agr_ug_name">
+    <text>Prozkoumat podzemí Agropromu</text>
+</string>
+<string id="st_lttz_hb_task_3_1_search_agr_ug_text">
+    <text>Prozkoumejte podzemí Agropromu a hledejte pádné důkazy o spiknutí.</text>
+</string>
+<string id="st_lttz_hb_task_3_2_search_labx18_name">
+    <text>Prozkoumat laboratoř X-18</text>
+</string>
+<string id="st_lttz_hb_task_3_2_search_labx18_text">
+    <text>Byl jsem pověřen prozkoumáním laboratoře X-18 a hledáním nezvratných důkazů o spiknutí.</text>
+</string>
+<string id="st_lttz_hb_task_3_3_search_labx16_name">
+    <text>Prozkoumej laboratoř X-16</text>
+</string>
+<string id="st_lttz_hb_task_3_3_search_labx16_text">
+    <text>Byl jsem pověřen prozkoumáním laboratoře X-16 a hledáním nezvratných důkazů o spiknutí.</text>
+</string>
+<string id="st_lttz_hb_task_3_4_search_labx10_name">
+    <text>Prozkoumej laboratoř X-19</text>
+</string>
+<string id="st_lttz_hb_task_3_4_search_labx10_text">
+    <text>Byl jsem pověřen prozkoumáním laboratoře X-19 a hledáním nezvratných důkazů o spiknutí.</text>
+</string>
+<string id="st_lttz_hb_task_3_5_search_labx8_name">
+    <text>Prozkoumej laboratoř X-8</text>
+</string>
+<string id="st_lttz_hb_task_3_5_search_labx8_text">
+    <text>Byl jsem pověřen prozkoumáním laboratoře X-8 a hledáním nezvratných důkazů o spiknutí.</text>
+</string>
+
+<string id="lttz_hb_task_3_8_handle_docs_name">
+    <text>Záhada odhalena</text>
+</string>
+<string id="lttz_hb_task_3_8_handle_docs_text">
+    <text>Nalezl jsem dostatečné důkazy o velkém spiknutí. Měl bych se se svými zjištěními vrátit k majorovi - bude mít radost, když uvidí, co jsem odhalil.</text>
+</string>
+
+	<!-- Hluboké hranice Arc 4 -->
+<string id="lttz_hb_task_4_1_crossfire_1_name">
+    <text>Crossfire: Eliminuj vojenské síly</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_2_name">
+    <text>Crossfire: Vypořádej se se Střelcem</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_3_name">
+    <text>Crossfire: Doprovod Střelce</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_4_name">
+    <text>Crossfire: Promluv si se Střelcem</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_5_name">
+    <text>Crossfire: Zabíj Střelce</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_6_name">
+    <text>Crossfire: Prohledej Střelcovu mrtvolu</text>.
+</string>
+<string id="lttz_hb_task_4_1_crossfire_7_name">
+    <text>Crossfire: Vrať se k majoru Hernandézovi</text>
+</string>
+
+<string id="lttz_hb_task_4_1_crossfire_1_desc">
+    <text>Major Hernandez mě pověřil získáním informací od Střelce, ale nejprve musím zlikvidovat vojenské jednotky, které ho pronásledují na předměstí Pripyati.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_2_desc">
+    <text>Vojenský oddíl byl zlikvidován. Je čas získat Střelcovo tajemství, ať tak či onak.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_3_desc">
+    <text>Můžu Střelcovi pomoci tím, že ho doprovodím do Rudého lesa. Případně ho mohu zajmout tak, že ho vylákám na základnu ISG v Jupiterském podzemí.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_4_desc">
+    <text>Střelec a já jsme bezpečně dorazili do Rudého lesa, jak jsme slíbili. Možná je teď připraven mluvit.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_5_desc">
+    <text>Střelec nám teď nemůže uniknout. Je čas ho zneškodnit.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_6_desc">
+    <text>Střelec je mrtvý. Měl bych prohledat jeho tělo, jestli u sebe nemá nějaké užitečné informace.</text>
+</string>
+<string id="lttz_hb_task_4_1_crossfire_7_desc">
+    <text>Mezi Střelcovými věcmi jsem našel flashdisk. Major Hernandez by to měl co nejdříve vidět.</text>
+</string>
+
+
+	
+	<!-- Maus (ISG Mechanic) Find Level 1 Toolkit Task -->
+<string id="jup_depo_isg_tech_task_1_name">
+    <text>Najít %s pro Mause</text>
+</string>
+<string id="jup_depo_isg_tech_task_1_text">
+    <text>Sady %s jsou požadovány pro Maus pro instalaci základních upgradů zařízení. Měl bych mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="jup_depo_isg_tech_task_1_about">
+    <text>Mám pro vás návrh. Pokud mi přineseš nějaké nové nástroje, dostaneš zaplaceno. Jsi pro?</text>
+</string>
+<string id="jup_depo_isg_tech_task_1_fetch_about">
+    <text>Je to tak. Hledal jsem všude možné sadu %s. Měla by obsahovat nějaký olej a nástroje, které potřebuji k práci na střelných zbraních. Zaplatím ti za jednu z těch sad nářadí, pokud mi přineseš kompletní sadu.</text>
+</string>
+<string id="jup_depo_isg_tech_task_1_fetch_finish">
+    <text>Brilantní! Přesně tohle jsem hledal. Díky!</text>
+</string>
+
+
+<!-- Maus (ISG Mechanic) Find Level 2 Toolkit Task -->
+<string id="jup_depo_isg_tech_task_2_name">
+    <text>Najít %s pro Mause</text>
+</string>
+<string id="jup_depo_isg_tech_task_2_text">
+    <text>%s potřebuje Maus k instalaci pokročilých vylepšení vybavení, mám mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="jup_depo_isg_tech_task_2_about">
+    <text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuju. Myslíš, že bys mi mohl najít lepší sadu?</text>
+</string>
+<string id="jup_depo_isg_tech_task_2_fetch_about">
+    <text>Potřebuji %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebuji ho.</text>
+</string>
+<string id="jup_depo_isg_tech_task_2_fetch_finish">
+    <text>Má to všechno, co potřebuju. Děkuji.</text>
+</string>
+
+<!-- Maus (ISG Mechanic) Find Level 3 Toolkit Task -->
+<string id="jup_depo_isg_tech_task_3_name">
+    <text>Najít %s pro Mause</text>
+</string>
+<string id="jup_depo_isg_tech_task_3_text">
+    <text>%s jsou požadovány Maus pro instalaci aktualizací odborného vybavení. Měl bych mu je přinést, pokud nějaké najdu.</text>
+</string>
+<string id="jup_depo_isg_tech_task_3_about">
+    <text>Mám další návrh. Sada nástrojů, kterou jsi mi přinesl, funguje dobře, ale nemá všechno, co potřebuju. Myslíš, že bys mi mohl najít lepší sadu?</text>
+</string>
+<string id="jup_depo_isg_tech_task_3_fetch_about">
+    <text>Potřebuji %s. Nejsem si jistý, kde se dá takový sehnat, ale pokud ho najdeš, potřebuji ho.</text>
+</string>
+<string id="jup_depo_isg_tech_task_3_fetch_finish">
+    <text>Má to všechno, co potřebuju. Děkuji.</text>
+</string>
+	
+</string_table>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <!-- Ammo_Check Messages -->
+ <string id="st_ac_overfull">
+    <text>Plné</text>
+</string>
+<string id="st_ac_plus1">
+    <text>Plné + 1</text>
+</string>
+<string id="st_ac_oitc">
+    <text>1 v komoře</text>
+</string>
+<string id="st_ac_just_one">
+    <text>Jenom jeden</text>
+</string>
+<string id="st_ac_full">
+    <text>Plné</text>
+</string>
+<string id="st_ac_nearly_full">
+    <text>Téměř plné</text>
+</string>
+<string id="st_ac_more_half">
+    <text>Více než polovina</text>
+</string>
+<string id="st_ac_about_half">
+    <text>Zhruba polovina</text>
+</string>
+<string id="st_ac_less_half">
+    <text>Méně než polovina</text>
+</string>
+<string id="st_ac_near_empty">
+    <text>Téměř prázdné</text>
+</string>
+<string id="st_ac_empty">
+    <text>Prázdné</text>
+</string>
+<string id="st_ac_jammed">
+    <text>Zaseknutá zbraň</text>
+</string>
+<string id="st_ac_noMag">
+    <text>Není uvnitř žádný zásobník</text>
+</string>
+<string id="st_ac_grenade">
+    <text>Nálož granátu</text>
+</string>
+<string id="st_ac_noAmmo">
+    <text>Tohle nepotřebuje munici!</text>
+</string>
+<string id="st_ac_ammoLeft">
+    <text>zbylo</text>
+</string>
+<string id="ui_mcm_menu_rax_ammo_check">
+    <text>Magazines Check</text>
+</string>
+<string id="ui_mm_title_rax_ammo_check">
+    <text>Kontrola munice</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_usecolor">
+    <text>Používat barevné zprávy.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hidecounter">
+    <text>Skrýt počítadlo munice.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hideicon">
+    <text>Skrýt ikonu munice.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_busy_hands_fix">
+    <text>Oprava "Busy Hands".</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_busy_hands_fix_desc">
+    <text>Zaškrtněte tuto volbu, pokud se "animace" kontroly munice zasekne. Pravděpodobně se to stane, pokud je nainstalován FDDA.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_keybind">
+    <text>Klávesové nastavení kontroly munice.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_keybind_desc">
+    <text>Toto klávesové nastavení lze konfigurovat tak, aby vyžadovalo další modifikační klávesy k minimalizaci konfliktů.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_update_mcm">
+    <text>Aktualizujte MCM, abyste zde změnili klávesové nastavení. Výchozí klávesa je T.</text>
+</string>
+
+</string_table>

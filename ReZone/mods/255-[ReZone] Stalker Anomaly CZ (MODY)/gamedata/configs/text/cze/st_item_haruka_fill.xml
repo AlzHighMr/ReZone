@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+<string id="st_empty_canteen">
+    <text>Prázdná lahev</text>
+</string>
+<string id="st_empty_canteen_descr">
+    <text>Tato prázdná lahev není zrovna oku lahodící. Máte divný pocit, že by její zahodí zlepšilo estetiku nějakého místa; raději byste ji nejdříve něčím naplnili. \n \n</text>
+</string>
+<string id="st_dirty_water">
+    <text>Špinavá voda</text>
+</string>
+<string id="st_dirty_water_descr">
+    <text>Vojenská lahev naplněná špinavou vodou. Můžete ji vyčistit čistícími pilulkami nebo vařením. \n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] pití\n</text>
+</string>
+<string id="st_boiled_water">
+    <text>Uvařená voda</text>
+</string>
+<string id="st_boiled_water_descr">
+    <text>Vojenská lahev naplněná uvařenou vodou. Můžete ji vyčistit čistícími pilulkami. \n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] pití\n</text>
+</string>
+<string id="st_haruka_fill">
+    <text>Naplnit vodu</text>
+</string>
+<string id="st_akvatab2">
+    <text>Čistící pilulky</text>
+</string>
+<string id="st_akvatab2_descr">
+    <text>Malý plastová doza s pilulkami určenými k dezinfekci vody obsahující škodlivé bakterie a viry. Použijte dvě tablety najednou.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_red] • %c[ui_gray_2] pomalé použití (rozpustné tablety)\n
+    </text>
+</string>
+
+</string_table>

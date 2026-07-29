@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+	<string id="st_itms_campfire_name">
+		<text>Ohniště</text>
+	</string>
+	<string id="st_itms_campfire_descr">
+		<text>Dřevo vhodné na táborák.\n
+		Pomáhá udržet teplo v noci a poskytuje možnost vařit jídlo.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] použitelné k rozdělávání ohně".
+		%c[d_orange] - %c[ui_gray_2] kliknutí pravým tlačítkem myši na sekeru v blízkosti stromu > 'sekat dřevo'		
+		%c[d_cyan] - %c[ui_gray_2] lze nasekat sekerou
+		</text>
+	</string>
+
+	<string id="st_bad_surface">
+		<text>Špatný povrch</text>
+	</string>
+
+	<string id="st_gather_wood">
+		<text>Nasekat dřevo</text>
+	</string>
+
+</string_table>

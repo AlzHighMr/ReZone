@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	
+	<string id="st_not_in_use">
+        <text>Ďđĺäěĺň íĺ čńďîëüçóĺňń˙/The Item is not in use</text>
+    </string>
+    <string id="st_not_in_use_descr">
+        <text>Ďđĺäěĺň íĺ čńďîëüçóĺňń˙/The Item is not in use </text>
+    </string>
+
+	<string id="st_knifebf4">
+    <text>Bojový nůž „OTs-04“</text>
+</string>
+<string id="st_knifebf4_descr">
+    <text>Nůž OTs-04 byl vyvinut v Tula Central Design Research Bureau (TsKIB) koncem 80. let - začátkem 90. let a byl určen pro speciální jednotky ministerstva vnitra. </text>
+</string>
+
+<string id="st_kukri">
+    <text>Kukri</text>
+</string>
+<string id="st_kukri_descr">
+    <text>Jedná se o speciální čepel vyrobenou z vysokouhlíkové pružinové oceli z autobusu, který stál mnoho let v anomálním poli a má proto vynikající střihací a sekací vlastnosti. Ideální pro řezání mutanti všech druhů a k jejich ochraně. </text>
+</string>
+
+<string id="st_wpn_ak12_custom">
+    <text>AK-12 Monolith</text>
+</string>
+<string id="st_wpn_ak12_custom_descr">
+    <text>Vzácná věc. Upravená verze AK-12 z roku 2012. Hlavně používána funkcí Monolith. Má několik režimů střelby: automatický, jednotlivý a tříranový.\n \n
+    %c[0,140,140,140]PŘÍSLUŠENSTVÍ: \n
+    %c[0,93,0,116] • %c[0,140,140,140] Zbraň lze vylepšit pomocí taktického kitu\n
+    %c[0,93,0,116] • %c[0,140,140,140] Hledí: Všechny hledí pro picatinny\n
+    %c[0,93,0,116] • %c[0,140,140,140] TLUMIČ: 5,45/7,62 Hexagon Sound Suppressor\n</text>
+</string>
+
+<string id="st_wpn_ak12_mono_kit">
+    <text>AK-12 Monolith Upgraded</text>
+</string>
+<string id="st_wpn_ak12_mono_kit_descr">
+    <text>Vzácný kousek. Upravená verze AK-12 Monolith. Hlavně používána funkcí Monolith. Má několik režimů střelby: automatický, jednotlivý a tříranový. Díky nové spoušťové skupině je to pokročilejší a výkonnější zbraň než originál. Zvýšená rychlost střelby a zlepšená vyváženost. 
+    Toto je nevratný upgrade.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[0,93,0,116] • %c[0,140,140,140] Zbraň byla vylepšena pomocí "Monolith" taktického kitu\n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Trijicon Acog a AN/PEQ-16 LAM (vestavěný).\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet "Guard".\n
+    %c[d_purple] • %c[ui_gray_2] TLUMIČ: Hexagon 5,45/7,62 Sound Suppressor.\n</text>
+</string>
+
+<string id="st_wpn_ak12_m1">
+    <text>AK-12 (2016)</text>
+</string>
+<string id="st_wpn_ak12_m1_descr">
+    <text>Verze AK-12 představená veřejnosti v roce 2016. Liší se poměrně významně vzhledem a konstrukcí některých důležitých částí od předchozí verze AK-12 představené v roce 2015. Konstrukce stroje byla přepracována jak pro odstranění řady zjištěných nedostatků a problémů, tak i ve směru zlepšení výrobnosti s ohledem na přání vojenských představitelů.\n 
+    %c[0,140,140,140]PŘÍSLUŠENSTVÍ: \n
+    %c[0,93,0,116] • %c[0,140,140,140] Hledí: Všechny hledí pro picatinny\n
+    %c[0,93,0,116] • %c[0,140,140,140] Granátomet GP-25\n
+    %c[0,93,0,116] • %c[0,140,140,140] TLUMIČ: 5,45/7,62 Hexagon Sound Suppressor\n</text>
+</string>
+
+		<string id="st_wpn_usp_tac">
+    <text>HK USP Match Tactical</text>
+</string>
+<string id="st_wpn_usp_tac_descr">
+    <text>Toto je modifikace pistole HK USP Match speciálně vyvinutá pro vědce na osobní objednávku profesora Sakhorova, určená pro použití v sestavě "Specialista-Vědec". Provoz mechanismů byl vylepšen pomocí artefaktů. Rozdíl oproti standardnímu modelu USP Match spočívá v možnosti instalace tlumiče. Zbraň je vybavena zvětšeným zásobníkem na 22 nábojů ráže 9 mm. (Sestava Specialista-Vědec zahrnuje: BCC Savant, HK USP Match Tactical, Monolithh Blade).\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Součástí sestavy je laserový cílový modul a montáž pro červené bodyové zaměřovače.\n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Docter Sight, Aimpoint T1 (nízká montáž), Trijicon RMR, Leupold DeltaPoint PRO.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC Black Box\n </text>
+</string>
+
+<string id="st_wpn_vintorez_m1">
+    <text>VSS "Savant"</text>
+</string>
+<string id="st_wpn_vintorez_m1_descr">
+    <text>Jedná se o raný prototyp modelu VSS Savant. Tato verze je mezi pro-stalkery oblíbená kvůli nižší ceně než finální verze. \n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna s výjimkou modelu EOTS-62 a taktických sad (dvě hledí)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič VSS (vestavěný)\n </text>
+</string>
+
+<string id="st_wpn_vintorez_m2">
+    <text>VSS "Merc"</text>
+</string>
+<string id="st_wpn_vintorez_m2_descr">
+    <text>Na žádost Syndikátu žoldáků se tým nadšených vědců vedený profesorem Sakhorovem zapojil do dokončení prototypu. Pro vývoj a provádění terénních testů bylo zapotřebí přibližně 20 artefaktů z gravitačních anomálií. Výsledkem bylo umožnění instalace Picatiniho lišty na závěru bez ztráty přesnosti a zlepšení mechaniky, což vedlo ke zvýšení spolehlivosti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Advanced Target Pointer Illuminator Aiming Laser) od společnosti L3 Insight Technologies. Taktické zařízení, které kombinuje laserové zaměřovače jak v viditelném, tak i v infračerveném pásmu, s infračerveným reflektorem. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna s výjimkou modelu 1P59 Giperon\n
+    %c[d_purple] • %c[ui_gray_2] Pažba a předpažbí od společnosti Fab Defense jsou nainstalovány\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: VSS (vestavěný)\n </text>
+</string>
+
+	
+	
+<string id="st_tactical_knife">
+    <text>Monolithův nůž</text>
+</string>
+<string id="st_tactical_knife_descr">
+    <text>[RUSSIAN ACCENT "ON"] Kolují zvěsti, že tyto čepele vyrábějí velmi málo mistrů ze skupiny Monolit. Skládá se z neznámé slitiny - říká se, že ji lze získat pouze uvnitř sarkofágu.[RUSSIAN ACCENT "OFF"]</text>
+</string>
+
+<string id="st_wpn_saiga12s_m1">
+    <text>Saiga-12 "Nerd"</text>
+</string>
+<string id="st_wpn_saiga12s_m1_descr">
+    <text>Nerd - je důkazem péče profesora o své svěřence. Tato verze Saigy byla zakoupena speciálně pro personál. Používá se při "jednáních" s obzvláště nebezpečnými mutanti ohledně předání svých orgánů jako dávky vědě.. Zkušení lovci na "nerdy" ozbrojení tímto modelem pohlížejí s poměrně velkým závistí.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna červená tečková hledí pro montáž na Dovetail.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Hexagon 12K\n </text>
+</string>
+
+<string id="st_wpn_m4_ru556">
+    <text>Ruger SR-556</text>
+</string>
+<string id="st_wpn_m4_ru556_descr">
+    <text>Několik těchto pušek vstoupilo do Zóny skrze vědce. Podle legendy profesor Sakharov obdržel 6 malých kontejnerů s těmito zbraněmi od zahraničních sponzorů, ale 5 z nich se ztratily během přepravy. Ruger SR-556 je americká poloautomatická karabina vyráběná firmou Sturm, Ruger and Company, Inc. stala se prvním Rugerem z rodiny AR-10. Ruger SR-762 ráže .308. Patří k několika vzorkům pušek AR-15 používajících odvádění střelného prachu pístem. Výroba byla zastavena v lednu 2016 po zavedení lehkého systému Keymod.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Univerzální montáž od NcStar s namontovaným červeným tečkovým zaměřovačem Trijicon RMR. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechny pro picatinny/weaver (s výjimkou červených tečkových hledí s nízkou montáží: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight, 1P76 Rakurs (nízká montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: NATO\n </text>
+</string>
+
+<string id="st_wpn_saiga12s_m2">
+    <text>Dushmanova Saiga</text>
+</string>
+<string id="st_wpn_saiga12s_m2_descr">
+    <text>Saiga upravena na žádost žoldáků. Namontována Picatinny lišta a masivní tlumič s výrazným snížením zpětného rázu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna červená tečková hledí pro picatinny/weaver a pro montáž na Dovetail s výjimkou OKP-7, Kobra EKP-1S-03, Kobra EKP-8-02.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: SilencerCo Salvo® 12\n </text>
+</string>
+
+	
+	
+	
+	<string id="st_wpn_ak74m_beard">
+    <text>AK-74M Beard</text>
+</string>
+<string id="st_wpn_ak74m_beard_descr">
+    <text>Toto AK je jakýmsi "vousatým" jedem (neměňte ho za čaj). Lehké a přizpůsobené tvrdým podmínkám Zóny. Neposkytuje možnost montáže granátometu. Vyrábí se ve Skadovsku a na stanici Yanov, odkud se rozšiřuje po celé Zóně.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: všechna hledí pro montáž na Dovetail (kromě 1p59 Giperon a PSO hledí s ochranným okem) a všechny červené tečkové zaměřovače (kromě Aimpoint PRO a Aimpoint T1 s vysokou montáží a Barska 11090). Použití PSO hledí s ochranným okem na této zbrani není doporučeno.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-A. Pro tuto model není dostupný granátomet\n </text>
+</string>
+
+<string id="st_wpn_ak105_sp">
+    <text>AK-105 Specialist</text>
+</string>
+<string id="st_wpn_ak105_sp_descr">
+    <text>Tato modifikace vychází z běžného modelu AK-105, který se díky zručnosti žoldnéřských řemeslníků stal dlouholetým favoritem těchto chlapců. Je to velmi vyvážená zbraň s nízkým zpětným rázem, dobrou přesností a vysokou odolností proti opotřebení.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Červený tečkový zaměřovač Leupold Deltapoint Pro je předem nainstalován na montáži NcStar 45.\n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž na Dovetail s výjimkou PSO hledí s ochranným okem, 1P59 Giperon a červené tečkové zaměřovače.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-A.\n </text>
+</string>
+
+<string id="st_wpn_akm_isg">
+    <text>Rifle Dynamics RD-47 ISG</text>
+</string>
+<string id="st_wpn_akm_isg_descr">
+    <text>Speciální model vyvinutý na základě AKM americkou společností Rifle Dynamics. Jedná se o jednu z nejmodernějších zbraní v Zóně. Používá se jednotkami ISG (International Stalker Group - Mezinárodní skupina Stalkerů).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Advanced Target Pointer Illuminator Aiming Laser) AN/PEQ-15 od společnosti L3 Insight Technologies. Taktické zařízení kombinující laserové zaměřovače jak ve viditelném, tak v infračerveném pásmu s infračerveným vyhledávacím světlem. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor\n </text>
+</string>
+
+	
+	
+	<string id="st_wpn_ak74u_isg">
+    <text>Rifle Dynamics RD-74U ISG</text>
+</string>
+<string id="st_wpn_ak74u_isg_descr">
+    <text>Upravený model vyvinutý na základě AKSU americkou společností Rifle Dynamics. Jedná se o jednu z nejmodernějších zbraní v Zóně. Používá se jednotkami ISG (International Stalker Group - Mezinárodní skupina Stalkerů).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor\n </text>
+</string>
+
+<string id="st_wpn_ak74u_m1_isg">
+    <text>Rifle Dynamics RD-74U ISG Tactic</text>
+</string>
+<string id="st_wpn_ak74u_m1_isg_descr">
+    <text>Modifikace RD-74U ISG vyvinutá americkou společností Rifle Dynamics. Jedná se o jednu z nejmodernějších zbraní v Zóně. Používá se jednotkami ISG (International Stalker Group - Mezinárodní skupina Stalkerů).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Advanced Target Pointer Illuminator Aiming Laser) AN/PEQ-15 od společnosti L3 Insight Technologies. Taktické zařízení kombinující laserové zaměřovače jak ve viditelném, tak v infračerveném pásmu s infračerveným vyhledávacím světlem. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor\n </text>
+</string>
+
+<string id="st_wpn_ak74_isg">
+    <text>Rifle Dynamics RD-74M ISG</text>
+</string>
+<string id="st_wpn_ak74_isg_descr">
+    <text>Pokročilá verze AK-74M vyvinutá americkou společností Rifle Dynamics. Jedná se o jednu z nejmodernějších zbraní v Zóně. Používá se jednotkami ISG (International Stalker Group - Mezinárodní skupina Stalkerů).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Advanced Target Pointer Illuminator Aiming Laser) AN/PEQ-15 od společnosti L3 Insight Technologies. Taktické zařízení kombinující laserové zaměřovače jak ve viditelném, tak v infračerveném pásmu s infračerveným vyhledávacím světlem. \n
+    %c[d_purple] • %c[ui_gray_2] Univerzální montáž od NcStar s červeným tečkovým zaměřovačem Trijicon RMR nainstalovaným na ní. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor\n </text>
+</string>
+
+	
+	
+<string id="st_wpn_vintorez_isg">
+    <text>Rifle Dynamics RD-9x39 ISG</text>
+</string>
+<string id="st_wpn_vintorez_isg_descr">
+    <text>Dílo zakladatele společnosti Rifle Dynamics, Jima Fullera. Tento model je vyvinut na základě známé a dobře osvědčené zbraně VSS Vintorez. Jednou z hlavních odlišností od původní verze je přítomnost speciálního mechanismu umožňujícího střelbu i při selhání dvou nábojů a montáž picatinny rail podél celé délky zbraně. Používá se jednotkami ISG (International Stalker Group - Mezinárodní skupina Stalkerů).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Advanced Target Pointer Illuminator Aiming Laser) AN/PEQ-15 od společnosti L3 Insight Technologies. Taktické zařízení kombinující laserové zaměřovače jak ve viditelném, tak v infračerveném pásmu s infračerveným vyhledávacím světlem. \n
+    %c[d_purple] • %c[ui_gray_2] Univerzální montáž od NcStar s červeným tečkovým zaměřovačem Trijicon RMR nainstalovaným na ní. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver a dovetail kromě 1P78 Kashtan.\n
+    %c[d_purple] • %c[ui_gray_2] Některé zvěsti tvrdí, že tuto zbraň lze používat s podvěsným granátometem.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Vestavěný \n </text>
+</string>
+
+<string id="st_wpn_sks_tac">
+    <text>SKS Tactical</text>
+</string>
+<string id="st_wpn_sks_tac_descr">
+    <text>Karabina Molot OP-SKS je navržena pro použití náboje 7,62x39, což je velmi populární střelivo v Zóně. Hmotnost a rozměry této karabiny ji činí ergonomickou pro střelce jakéhokoli věku a výšky. Taktická verze se liší od původní verze přítomností montáže pro instalaci zaměřovačů v oblasti předpažbí a také možností instalace tlumiče. Tato verze má nový lehký spoušťový mechanismus, který výrazně zvýšil kadenci střelby.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] SKS SOCOM Rail: Vestavěný \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž na Dovetail a všechny červené tečkové zaměřovače (kromě Aimpoint PRO a Aimpoint T1 s vysokou montáží)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Hexagon SKS 7,62x39 tlumič hluku \n</text>
+</string>
+
+<string id="st_wpn_sks_molot">
+    <text>SKS Molot</text>
+</string>
+<string id="st_wpn_sks_molot_descr">
+    <text>Karabina Molot OP-SKS je navržena pro použití náboje 7,62x39, což je velmi populární střelivo v Zóně. Hmotnost a rozměry této karabiny ji činí ergonomickou pro střelce jakéhokoli věku a výšky.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž na Dovetail\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+	
+	
+	<string id="st_wpn_ks23">
+    <text>KS-23</text>
+</string>
+<string id="st_wpn_ks23_descr">
+    <text>Speciální karabina ráže 23 mm - Sovětský víceúčelový policejní pumpovací brokový brokový náboj určený k potlačení nepokojů, selektivního násilí a působení na pachatele mentálně a chemicky. Zajímavé je, že má ráži větší než 20 mm a drážkovanou hlaveň, KS-23 by neměla být klasifikována jako malé zbraně, ale jako malokaliberní dělostřelectvo.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: Dlouhá 700mm hlaveň lze nahradit kratší 510mm verzí pro snížení hmotnosti zbraně.\n</text>
+</string>
+
+<string id="st_wpn_ks23_kaban">
+    <text>KS-23M Drozd</text>
+</string>
+<string id="st_wpn_ks23_kaban_descr">
+    <text>Zkrácená verze KS-23 s odnímatelnou kovovou pažbou. 23 mm - Sovětský víceúčelový policejní pumpovací brokový brokový náboj určený k potlačení nepokojů, selektivního násilí a působení na pachatele mentálně a chemicky. Zajímavé je, že má ráži větší než 20 mm a drážkovanou hlaveň, KS-23 by neměla být klasifikována jako malé zbraně, ale jako malokaliberní dělostřelectvo.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: Boar Tactical Kit pro KS-23M Drozd.\n</text>
+</string>	
+
+<string id="st_tomahawk">
+    <text>Gerber Downrange Tomahawk</text>
+</string>
+<string id="st_tomahawk_descr">
+    <text>Taktická palice, multitool a průlomový nástroj, vše v jednom řešení.</text>
+</string>
+
+<string id="st_wpn_dvl10_m1">
+    <text>DVL-10 Saboteur</text>
+</string>
+<string id="st_wpn_dvl10_m1_descr">
+    <text>DVL-10 je lehká, kompaktní a tlumená puška v patentovaných a současných vojenských podzvukových rážích, která byla vyvinuta pro speciální služební a bojové mise, kde je zapotřebí mimořádná přesnost a dostřel.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver kromě červených tečkových zaměřovačů.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Vestavěný \n</text>
+</string>
+
+<string id="st_wpn_dvl10">
+    <text>DVL-10 Urbana</text>
+</string>
+<string id="st_wpn_dvl10_descr">
+    <text>DVL-10 je lehká a kompaktní odstřelovačská puška v patentovaných a současných vojenských podzvukových rážích, která byla vyvinuta pro speciální služební a bojové mise, kde je zapotřebí mimořádná přesnost a dostřel.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver kromě červených tečkových zaměřovačů.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_saiga12s_isg">
+    <text>Kalashnikov USA Saiga-12 ISG</text>
+</string>
+<string id="st_wpn_saiga12s_isg_descr">
+    <text>Model vyvinutý společností Kalashnikov USA na základě polomatné pušky Komrad 12 pro lov a ochranu členů výzkumných týmů ISG před mutanti. Zbraň má jak montáž na Dovetail, tak picatinny lištu pro použití různých typů zaměřovačů. Tato verze má nový typ spoušťového mechanismu, který umožňuje dvě střely za jedno stisknutí spouště.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechny červené tečkové zaměřovače pro picatinny/weaver. \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič hluku SilencerCo Salvo® 12 \n</text>
+</string>
+
+
+
+	<string id="st_wpn_ak74_pmc">
+    <text>AK-74 PMC</text>
+</string>
+<string id="st_wpn_ak74_pmc_descr">
+    <text>Modifikace útočné pušky Kalashnikov vyvinutá v roce 1970 pro náboj 5,45x39. Liší se od standardní verze instalovaným tělovým kitem, který zahrnuje taktickou rukojeť, rukojeť s picatinny lištami a skládací teleskopickou pažbou, což výrazně zlepšuje ergonomii zbraně. K tomu náleží také laserové cílovací zařízení, taktická svítilna a adaptérová montáž pro mířidla. V Zóně jsou podobné modely obvykle používány žoldáky, ukrajinskými speciálními jednotkami, různými soukromými vojenskými společnostmi a dalšími mocenskými strukturami pro provádění speciálních operací.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] ATPIAL (Pokročilý cílový ukazovatel osvětlovače) AN/PEQ-15 vyráběný společností L3 Insight Technologies. Taktické zařízení, které kombinuje laserové zaměřovače v obou viditelných a IR pásmech s IR vyhledávačem. \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechny hledí pro picatinny/weaver a pro montáž Dovetail kromě hledí PSO s okulárovou krytkou, EOTS-62 a 1P59 Giperon. \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ATG \n</text>
+</string>
+
+<string id="st_wpn_svds_pmc">
+    <text>SVDS PMC</text>
+</string>
+<string id="st_wpn_svds_pmc_descr">
+    <text>Odstřelovačská puška Dragunov s skládací pažbou - varianta SVDS. Byla speciálně navržena pro ruské výsadkáře a jednotky speciálního určení. V Zóně jsou podobné modely obvykle používány žoldáky, ukrajinskými speciálními jednotkami, různými soukromými vojenskými společnostmi a dalšími mocenskými strukturami pro provádění speciálních operací.\n 
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro picatinny/weaver kromě červených tečkových zaměřovačů. \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rotor 43 \n
+    %c[ui_gray_2]Součástí balení jsou:\n
+    %c[d_purple] • %c[ui_gray_2] Adaptér závitu Rotor 43 pro SVD-S,  \n
+    %c[d_purple] • %c[ui_gray_2] SAG MK1 Freefloat šasi pro SVD, \n
+    %c[d_purple] • %c[ui_gray_2] Zenit předpažbí RK-5 (krátké) pro velmi dobrou kontrolu zpětného rázu\n
+    %c[d_purple] • %c[ui_gray_2] Vlastní kryt SVDS,\n
+    %c[d_purple] • %c[ui_gray_2] Zenit pistole grip RK3, \n
+    %c[d_purple] • %c[ui_gray_2] Univerzální montáž od NcStar, která umožňuje instalaci pomocného zaměřovače pod úhlem 45 stupňů s nainstalovaným červeným tečkovým zaměřovačem Trijicon RMR. \n</text>
+</string>
+
+<string id="st_wpn_val_tac">
+    <text>AS Val Tactic</text>
+</string>
+<string id="st_wpn_val_tac_descr">
+    <text>AS Val je široce používána ruskými armádními průzkumnými jednotkami, stejně jako jednotkami MVD (Ministerstva vnitra) a FSB (Federální bezpečnostní služby). AS-VAL je plynem ovládaná, integrovaně tlumená zbraň. Přijímač je obráběn z ocelového kování pro zvýšení pevnosti. Má standardní postranní montážní lištu pro optické, noční nebo červené tečkové zaměřovače, ale nemá možnost montáže bodáku nebo granátometu. Integrovaný tlumič by mohl být snadno odstraněn pro údržbu, opravy nebo kompaktní skladování, ale zbraň by neměla být střílená s odstraněným tlumičem kvůli bezpečnostním a spolehlivostním problémům.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž Dovetail\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: VSS (integrovaný)\n </text>
+</string>
+
+
+<string id="st_wpn_vintorez_n1">
+    <text>VSS Vintorez</text>
+</string>
+<string id="st_wpn_vintorez_n1_descr">
+    <text>Vytvořeno v TsNIITochMash Petrem Serdyukovem a jeho týmem, nová puška byla určena pro různé jednotky sovětské armády, KGB a MVD Spetsnaz. VSS je mezi svými uživateli velmi populární díky svým schopnostem skrytí a vysoké účinnosti těžkých nábojů ráže 9x39 mm. Efektivní dosah VSS je omezen na 300-400 metrů. Standardní výzbroj pro míření obsahuje boční lištu na přijímači, která obvykle nese zaměřovač 4x PSO-1M2-1. Na vhodnou montáž lze umístit jakýkoli jiný zaměřovač nebo noční vidění. Záložní hledí se skládá z hledí na zadní části a čepele na přední části. Zadní hledí je gradované až na 400 metrů.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž Dovetail\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: VSS (integrovaný)\n </text>
+</string>
+
+<string id="st_wpn_ak74u_n1">
+    <text>AKS-74U</text>
+</string>
+<string id="st_wpn_ak74u_n1_descr">
+    <text>AKS-74U byla primárně určena pro použití jednotkami Spetsnaz, výsadkovými jednotkami, jednotkami podpory na zadní frontě a osádkami obrněných vozidel, které potřebují kompaktní, ale relativně výkonnou automatickou zbraň. AKS-74U je výrazně více obratná v těsných prostorách než AKS-74, ale výrazný pokles úsťové rychlosti vedl k poklesu účinného dosahu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž Dovetail (kromě hledí PSO s okulárovou krytkou a 1P59 Giperon). Používání hledí PSO s okulárovou krytkou na této zbrani není doporučeno.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič PBS-4\n </text>
+</string>
+
+<string id="st_wpn_ak74u_tac">
+    <text>AKS-74U Tactical</text>
+</string>
+<string id="st_wpn_ak74u_tac_descr">
+    <text>AKS-74U byla primárně určena pro použití jednotkami Spetsnaz, výsadkovými jednotkami, jednotkami podpory na zadní frontě a osádkami obrněných vozidel, které potřebují kompaktní, ale relativně výkonnou automatickou zbraň. AKS-74U je výrazně více obratná v těsných prostorách než AKS-74, ale výrazný pokles úsťové rychlosti vedl k poklesu účinného dosahu. Tato speciální varianta má zásobník RPK na 45 nábojů.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí pro montáž Dovetail (kromě hledí PSO s okulárovou krytkou a 1P59 Giperon) a všechny červené tečkové zaměřovače s výjimkou Aimpoint PRO a Aimpoint T1 s vysokou montáží.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič PBS-4\n </text>
+</string>
+
+<string id="st_wpn_m4_tac">
+    <text>M4 Tactical</text>
+</string>
+<string id="st_wpn_m4_tac_descr">
+    <text>Colt M4A1 - útočná puška (karabina), navržená v USA na základě platformy AR-15 pro náboj 5,56x45 NATO. Byla vyvinuta především pro použití operačníky vozidel a týmy požáru, kteří potřebovali kompaktnější a lehčí zbraň než standardní plně dlouhá puška, ale s použitím stejné munice. Nicméně, US SOCOM (United States Special Operations Command) brzy přijala M4A1 pro všechny podřízené jednotky, následované všeobecným zavedením M4A1 do služby v US Army a Marine Corps.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí:  Všechny pro picatinny/weaver (kromě červených tečkových zaměřovačů s nízkou montáží: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight, 1P76 Rakurs (nízká montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič Surefire SOCOM556-MONSTER\n </text>
+</string>
+
+<string id="st_wpn_m4_butcher">
+    <text>M4 Butcher</text>
+</string>
+<string id="st_wpn_m4_butcher_descr">
+    <text>Modernizovaný model Colt M4A1 Commando (CQBR) je útočná puška, navržená v USA na základě platformy AR-15 pro náboj 5,56x45 NATO. Byla vyvinuta především pro použití operačníky vozidel a týmy požáru, kteří potřebovali kompaktnější a lehčí zbraň než standardní plně dlouhá puška, ale s použitím stejné munice. Nicméně, US SOCOM (United States Special Operations Command) brzy přijala M4A1 pro všechny podřízené jednotky, následované všeobecným zavedením M4A1 do služby v US Army a Marine Corps.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí:  Všechny pro picatinny/weaver (kromě červených tečkových zaměřovačů s nízkou montáží: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight, 1P76 Rakurs (nízká montáž) a OKP-7.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: NATO\n </text>
+</string>
+
+
+   <string id="st_wpn_mp153_m1">
+    <text>Carabineer</text>
+</string>
+<string id="st_wpn_mp153_m1_descr">
+    <text>Přizpůsobená verze brokovnice MP-153. Schopná poloautomatické střelby jako její předchůdce, ale poskytuje lepší kompenzaci zpětného rázu díky účinnému tlumiči úsťové rychlosti. Má také Picatinny lištu, která umožňuje použití reflexních a holografických zaměřovačů a možnost použití tlumiče zvuku.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Kvůli pozici pažby je možné instalovat zaměřovače pouze s velmi nízkou montáží: Barska AC10632, C-More, Docter Sight, Aimpoint T1, Trijicon RMR, Leupold DeltaPoint PRO, OKP-7, 1P76 Rakurs. \n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič úsťové rychlosti SilencerCo Salvo® 12 \n</text>
+</string>
+
+<string id="st_wpn_fal_sa58_osw">
+    <text>DS ARMS SA-58</text>
+</string>
+<string id="st_wpn_fal_sa58_osw_descr">
+    <text>SA-58 OSW (Operations Specialist Weapon) vyráběný americkou společností DSA (David Selvaggio Arms) je legální kopií FAL, vyrobenou stejnými výrobními linkami Steyr-Daimler-Puch jako StG-58. Může mít odlišnou délku hlavně, spodní pažbu z hliníkové slitiny a vylepšený nábytek z plněného skelného nylonu. Civilní modely jsou poloautomatické, ale vojenské a tajné služby mohou zakoupit modely se selektivní střelbou, které mají plně automatickou kadenci 750 ran za minutu. DSA-58 může používat jakékoliv metrické zásobníky FAL.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechny zaměřovače pro montáž picatinny/weaver\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič zvuku AAC 7.62 SDN-6\n </text>
+</string>
+
+<string id="st_wpn_toz106_m1">
+    <text>TOZ-106</text>
+</string>
+<string id="st_wpn_toz106_m1_descr">
+    <text>Jednohlavňová brokovnice ráže 20 s posuvným závěrem. Široce známá svým hovorovým názvem Smrt předsedy kvůli svým kompaktním rozměrům.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Kvůli pozici pažby je možné instalovat zaměřovače pouze s velmi nízkou montáží: Barska AC10632, C-More, Docter Sight, Aimpoint T1, Trijicon RMR, Leupold DeltaPoint PRO, OKP-7, 1P76 Rakurs. \n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_toz106">
+    <text>TOZ-106 (Složená pažba)</text>
+</string>
+<string id="st_wpn_toz106_descr">
+    <text>Jednohlavňová brokovnice ráže 20 s posuvným závěrem. Široce známá svým hovorovým názvem Smrt předsedy kvůli svým kompaktním rozměrům.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Žádné \n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+
+  <string id="st_wpn_fal_aus">
+    <text>DS ARMS SA-58 AUS "Rakouský styl"</text>
+</string>
+<string id="st_wpn_fal_aus_descr">
+    <text>SA-58 vyráběný americkou společností DSA (David Selvaggio Arms) je legální kopií FAL, je vyroben stejným výrobním zařízením Steyr-Daimler-Puch jako StG-58. Tento model má délku hlavně 21" a další prvky ve "rakouském stylu", jako je originální rakouská předpažbí pro FAL, spodní pažba z hliníkové slitiny a vylepšený nábytek z plněného skelného nylonu. Tento model je používán vojenskými a tajnými službami a může střílet plně automaticky. DSA-58 může používat jakékoli metrické zásobníky FAL.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Žádné \n \n
+    %c[d_purple] • %c[ui_gray_2] Lze vylepšit pomocí taktických sestav \n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič zvuku AAC 7.62 SDN-6\n</text>
+</string>
+
+<string id="st_wpn_glock17">
+    <text>Glock 17</text>
+</string>
+<string id="st_wpn_glock17_descr">
+    <text>Glock 17 je polymerní samočinná pistole s krátkým zákluzovým rázem a uzamykatelným závěrem, navržená a vyrobená rakouským výrobcem Glock Ges.m.b.H.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Žádné\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_glock17_m1">
+    <text>Glock 17 Taktická</text>
+</string>
+<string id="st_wpn_glock17_m1_descr">
+    <text>Glock 17 je polymerní samočinná pistole s krátkým zákluzovým rázem a uzamykatelným závěrem, navržená a vyrobená rakouským výrobcem Glock Ges.m.b.H. Taktická varianta Glocku 17 má některé další funkce: integrovaný základní blok Aimtech pro Red Dot zaměřovače, instalovaný taktický gumový střenkový grip Pachmayr a závitovou hlaveň vyráběnou společností Double Diamond.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Docter Sight, Aimpoint T1 (pouze nízká montáž), Trijicon RMR, Leupold Deltapoint PRO\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Osprey 9mm \n</text>
+</string>
+
+<string id="st_wpn_pm_bas_actor">
+    <text>Unic Makarov PM</text>
+</string>
+<string id="st_wpn_pm_bas_actor_descr">
+    <text>Semi-mytická PM s prodlouženou hlavní a závitem pro tlumič. Někteří tvrdí, že byla vyráběna v omezené sérii v Bulharsku, jiní trvají na DDR, a někteří si myslí, že se jedná o ručně vyráběný upgrade. Jak se dostala do Zóny, to už nikdo neví...\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič 9mm\n</text>
+</string>
+
+	
+	<string id="st_wpn_pm_bas_custom">
+    <text>PM (upravený)</text>
+</string>
+<string id="st_wpn_pm_bas_custom_descr">
+    <text>Upravená verze Makarov PM s prodlouženou závitem hlavně pro použití s tlumičem PMM. Tento sovětský odkaz je nejběžnější pistolí v Zóně a patří k nejlepším kompaktním samoobranným pistolím. Je malý, velmi spolehlivý, snadno použitelný a udržovatelný v pracovním stavu. Má však několik nevýhod, včetně krátkého dosahu, nízké přesnosti střelby a nízké zastavitelné síly, zatímco také zaostává za moderními pistolemi ve své třídě co do váhy a velikosti zásobníku. V roce 1951 byla pistole Makarova vybrána pro svou jednoduchost, snadnou výrobu, přesnost a rozumnou zastavitelnou sílu.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič PMM\n</text>
+</string>
+
+<string id="st_wpn_pm_bas">
+    <text>PM</text>
+</string>
+<string id="st_wpn_pm_bas_descr">
+    <text>Tento sovětský odkaz je nejběžnější pistolí v Zóně a patří k nejlepším kompaktním samoobranným pistolím. Je malý, velmi spolehlivý, snadno použitelný a udržovatelný v pracovním stavu. Má však několik nevýhod, včetně krátkého dosahu, nízké přesnosti střelby a nízké zastavitelné síly, zatímco také zaostává za moderními pistolemi ve své třídě co do váhy a velikosti zásobníku. V roce 1951 byla pistole Makarova vybrána pro svou jednoduchost, snadnou výrobu, přesnost a rozumnou zastavitelnou sílu.</text>
+</string>
+
+<string id="st_wpn_pmm_bas">
+    <text>PMM</text>
+</string>
+<string id="st_wpn_pmm_bas_descr">
+    <text>Nejznámější variantou, Makarov PMM byl přepracováním původní pistole. V roce 1990 skupina inženýrů přepracovala původní Makarov, především zvýšením nábojové náplně pro střelu. Výsledkem je o 25% vyšší tlak v hlavni, což zvyšuje úsťovou rychlost. Zásobník PMM má kapacitu 12 nábojů, na rozdíl od PM, který má kapacitu 8 nábojů.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič PMM\n</text>
+</string>
+
+<string id="st_wpn_fal_aus_kit_aus_tri">
+    <text>DS Arms SA-58 AUS "Hlídková"</text>
+</string>
+<string id="st_wpn_fal_aus_kit_aus_tri_descr">
+    <text>FAL SA58 AUS modernizovaný pomocí taktické sestavy DS Arms. Po této úpravě lze tuto zbraň používat velmi efektivně na dlouhé a střední vzdálenosti. SA-58 vyráběný americkou společností DSA (David Selvaggio Arms) je legální kopií FAL, je vyroben stejným výrobním zařízením Steyr-Daimler-Puch jako StG-58. Tento model má délku hlavně 21" a další prvky ve "rakouském stylu", jako je originální rakouská předpažbí pro FAL, spodní pažba z hliníkové slitiny a vylepšený nábytek z plněného skelného nylonu. Tento model je používán vojenskými a tajnými službami a může střílet plně automaticky. DSA-58 může používat jakékoli metrické zásobníky FAL.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Trijicon Acog a Aimpoint T1 (integrované)\n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič zvuku AAC 7.62 SDN-6\n</text>
+</string>
+
+<string id="st_wpn_fal_aus_kit_sa5x_spec">
+    <text>DS Arms SA-58 AUS "Obránce"</text>
+</string>
+<string id="st_wpn_fal_aus_kit_sa5x_spec_descr">
+    <text>FAL SA58 AUS modernizovaný pomocí taktické sestavy DS Arms. Po této úpravě lze tuto zbraň používat velmi efektivně na dlouhé a střední vzdálenosti. SA-58 vyráběný americkou společností DSA (David Selvaggio Arms) je legální kopií FAL, je vyroben stejným výrobním zařízením Steyr-Daimler-Puch jako StG-58. Tento model má délku hlavně 21" a další prvky ve "rakouském stylu", jako je originální rakouská předpažbí pro FAL, spodní pažba z hliníkové slitiny a vylepšený nábytek z plněného skelného nylonu. Tento model je používán vojenskými a tajnými službami a může střílet plně automaticky. DSA-58 může používat jakékoli metrické zásobníky FAL.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: ELCAN SpecterDr a Aimpoint T1 (integrované)\n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič zvuku AAC 7.62 SDN-6\n</text>
+</string>
+
+
+	<string id="st_wpn_fal_aus_kit_fal_leup">
+    <text>DS Arms SA-58 AUS "Loupežník"</text>
+</string>
+<string id="st_wpn_fal_aus_kit_fal_leup_descr">
+    <text>FAL SA58 AUS modernizovaný pomocí taktické sestavy DS Arms. Po této úpravě lze tuto zbraň používat velmi efektivně na dlouhé a střední vzdálenosti. SA-58 vyráběný americkou společností DSA (David Selvaggio Arms) je legální kopií FAL, je vyroben stejným výrobním zařízením Steyr-Daimler-Puch jako StG-58. Tento model má délku hlavně 21" a další prvky ve "rakouském stylu", jako je originální rakouská předpažbí pro FAL, spodní pažba z hliníkové slitiny a vylepšený nábytek z plněného skelného nylonu. Tento model je používán vojenskými a tajnými službami a může střílet plně automaticky. DSA-58 může používat jakékoli metrické zásobníky FAL.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Leupold Mark 8 a Aimpoint T1 (integrované)\n \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič zvuku AAC 7.62 SDN-6\n</text>
+</string>
+
+<string id="st_wpn_ak12_bas">
+    <text>AK-12 2012</text>
+</string>
+<string id="st_wpn_ak12_bas_descr">
+    <text>Samopal Kalashnikov AK-12 je nejnovějším výtvorem závodu IZMASH. Je určen k nahrazení starších samopalů Kalashnikov AK-74M a AK-100 pro domácí použití i pro export. Samopal je poháněný plynem, střelba je volitelná, používá tradiční akci "typu Kalashnikov" s pístem s dlouhým zdvihem a uzamykáním otáčivým zámkem. Skupina zámku je zřetelně lehčí, aby se snížil zpětný ráz a zvýšila přesnost při automatické střelbě.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Všechny hledí pro montáž Picatinny/Weaver\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet GP-25\n
+    %c[d_purple] • %c[ui_gray_2] 5.45/7.62x39 tlumič hluku Hexagon\n</text>
+</string>
+
+<string id="st_wpn_ak104_alfa">
+    <text>AK-104 Alfa</text>
+</string>
+<string id="st_wpn_ak104_alfa_descr">
+    <text>Upravená verze samopalu AK-104 ráže 7.62 mm. Vypadá jako špička prstu některých operátorů z Blízkého východu...\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Všechny hledí pro montáž Picatinny/Weaver\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič hluku 5.45/7.62x39 Hexagon\n</text>
+</string>
+
+<string id="st_wpn_ak74_n">
+    <text>AK-74</text>
+</string>
+<string id="st_wpn_ak74_n_descr">
+    <text>Samopal AK-74 ráže 5.45x45 mm byl vyvinut na začátku 70. let Michaelem Kalashnikovem jako náhrada za starší samopal AKM. Byl představen v roce 1974 a poprvé byl nasazen sovětskými jednotkami během afghánského konfliktu. Samopal AKM byl adaptován pro střelbu menším nábojem 5.45x45 mm a byl vybaven velkým tlumičem na ústí hlavně.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Granátomet GP-25 (po úpravě)\n
+    %c[d_purple] • %c[ui_gray_2] Všechny hledí na drážce mimo hledí PSO s oční čočkou kvůli nepohodlnosti používání těchto hledí na samopalech typu AK a 1P59 Giperon.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič ATG\n</text>
+</string>
+
+
+	<string id="st_wpn_svd_m1">
+    <text>SVD</text>
+</string>
+<string id="st_wpn_svd_m1_descr">
+    <text>Původně určen pro označené střelce v každé základní sovětské pěchotní jednotce, Dragunov SVD nebyl navržen pro specializované odstřelovačské týmy. Je relativně lehký pro odstřelovačskou pušku, ale dobře vyvážený a má poloautomatickou střelbu. Jeho přesnost je dobrá, ale ne výjimečná. Má účinný dostřel až 800 metrů.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí na drážce kromě hledí s bodovými hledími.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič KZRZP (po úpravě)\n </text>
+</string>
+
+<string id="st_wpn_svds">
+    <text>SVDS</text>
+</string>
+<string id="st_wpn_svds_descr">
+    <text>Odstřelovačská puška Dragunov se skládací pažbou - varianta SVDS. Byla speciálně navržena pro ruské výsadkáře a jednotky speciálních sil.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: Všechna hledí na drážce kromě hledí s bodovými hledími.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič TGP-V\n </text>
+</string>
+
+<string id="st_wpn_rpg7">
+    <text>RPG-7</text>
+</string>
+<string id="st_wpn_rpg7_descr">
+    <text>RPG-7 je dalším vývojem předchozího protitankového granátometu RPG-2. RPG-7, ve své první verzi známé jako RPG-7V, byl přijat sovětskou armádou v roce 1961 a dodnes je ve výzbroji v Rusku a více než 50 dalších zemích. RPG-7 lze jednoznačně považovat za jeden z nejúspěšnějších protitankových granátometů vůbec. Původně určený jako protitanková zbraň, byl později přijat pro jiné úkoly díky zavedení dalších typů granátů, jako jsou proti-pěchotní HE-FRAG a víceúčelové termobarické/FAE. RPG-7 je ramenem střílený, jednorázový, hladkostěnný bezodstřikový granátomet, granáty se nabíjejí z přední části a zadní část hlavně je vybavena venturi tryskou. Kvůli bezodstřikové konstrukci je zpětný ráz nebezpečný. RPG-7 je obvykle vybaven jednoduchým a cenově dostupným optickým zaměřovačem s pevnou 2,7násobnou zvětšeninou, označovaným jako PGO-7. Je to jednoduchá a levná, ale hrozí moderním tankům a může sloužit i v několika dalších rolích, což z něj činí flexibilní zbraň.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Hledí: PGO-7V\n </text>
+</string>
+
+<string id="st_wpn_ak74m_n">
+    <text>AK-74M</text>
+</string>
+<string id="st_wpn_ak74m_n_descr">
+    <text>V roce 1991 začala továrna Izhmash výrobu vylepšeného samopalu AK-74 - samopalu AK-74M. Kromě několika menších výrobních vylepšení má samopal také novou skládací syntetickou pažbu vyrobenou z černého skelně plněného polyamidu. AK-74M používá také zesílené zařízení na konci hlavně a kryt proti prachu. Každý AK-74M je vybaven bočním lištovým držákem pro montáž optiky. AK-74M byl přijat jako nový služební samopal Ruské federace.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Granátomet GP-25 (po úpravě)\n
+    %c[d_purple] • %c[ui_gray_2] Všechna hledí na drážce kromě hledí PSO s oční čočkou kvůli nepohodlnosti používání těchto hledí na samopalech typu AK a 1P59 Giperon.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Tlumič TGP-A\n </text>
+</string>
+
+<string id="st_wpn_colt1911_n">
+    <text>Colt M1911</text>
+</string>
+<string id="st_wpn_colt1911_n_descr">
+    <text>Vylepšená verze klasické automatické pistole, která zdárně prošla všemi hlavními ozbrojenými konflikty 20. století a s jistotou vstoupila do nového tisíciletí. Vyrábí se desítkami, ba i stovkami zbrojovek po celém světě v běžných i upravených konfiguracích. Jedinou nevýhodou této zbraně je střední kapacita zásobníku, která je však významně kompenzována silnou střelivem, které používá.\n </text>
+</string>
+
+
+	<string id="st_wpn_sig226">
+    <text>Sig Sauer P226R</text>
+</string>
+<string id="st_wpn_sig226_descr">
+    <text>PISTOLE SIG Sauer P226R je plně rozměrná služební pistole vyrobena firmou SIG Sauer, standardní služební zbraň Navy SEALs. Komora pro náboje 9x19mm Parabellum, disponuje montážní lištou Picatinny na spodní straně rámu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktického kitu.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: žádný\n </text>
+</string>
+
+<string id="st_wpn_sig220_n">
+    <text>Sig Sauer P220</text>
+</string>
+<string id="st_wpn_sig220_n_descr">
+    <text>PISTOLE SIG-Sauer P220, vyráběná koncem 70. let firmou J.P. Sauer andamp; Son, je často považována za nejlepší pistoli ráže .45 kalibr pro dvojí akci přímo z krabice. Okamžitý úspěch P220 byl přijat Švýcarskými a Japonskými SDF a mnoha evropskými policejními organizacemi. Tato pistole také našla cestu do USA, nejprve prostřednictvím společnosti Browning Arms Company z Utahu a od 80. let přes společnost SIGARMS z New Hampshiru.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktického kitu.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: žádný\n </text>
+</string>
+
+<string id="st_wpn_walther_p99">
+    <text>Walther P99</text>
+</string>
+<string id="st_wpn_walther_p99_descr">
+    <text>ERGONOMIE byla klíčovým zaměřením při jejím návrhu. Pistole Walther P99 je zdvihová pistole s rámem z vláknového polymeru. Vyvinuta pro potřeby zákoníků a civilní střelecký trh, je využívána policejními jednotkami v několika zemích.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktického kitu.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: žádný\n </text>
+</string>
+
+<string id="st_wpn_sig226_226sig_kit">
+    <text>Sig Sauer P226R Custom</text>
+</string>
+<string id="st_wpn_sig226_226sig_kit_descr">
+    <text>PISTOLE SIG Sauer P226R je plně rozměrná služební pistole vyrobena firmou SIG Sauer, standardní služební zbraň Navy SEALs. Komora pro náboje 9x19mm Parabellum, disponuje montážní lištou Picatinny na spodní straně rámu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalovaný taktický kit: Závitová hlaveň pro použití s tlumičem, ergonomické gripy a RMR Red Dot zaměřovač Trijicon s montážní deskou. Toto vylepšení je nevratné.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Osprey 9mm\n\n</text>
+</string>
+
+<string id="st_wpn_sig220_n_upg220">
+    <text>Sig Sauer P220 Custom</text>
+</string>
+<string id="st_wpn_sig220_n_upg220_descr">
+    <text>PISTOLE SIG-Sauer P220, vyráběná koncem 70. let firmou J.P. Sauer andamp; Son, je často považována za nejlepší pistoli ráže .45 kalibr pro dvojí akci přímo z krabice. Okamžitý úspěch P220 byl přijat Švýcarskými a Japonskými SDF a mnoha evropskými policejními organizacemi. Tato pistole také našla cestu do USA, nejprve prostřednictvím společnosti Browning Arms Company z Utahu a od 80. let přes společnost SIGARMS z New Hampshiru.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalovaný taktický kit: Závitová hlaveň pro použití s tlumičem, Tritium mířidla a laserový mířidel Viridian X5L a vysokokapacitní zásobník na 12 nábojů. Toto vylepšení je nevratné.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: BLACK BOX .45\n </text>
+</string>
+
+
+	<string id="st_wpn_walther_p99_mod9">
+    <text>Walther P99 Custom</text>
+</string>
+<string id="st_wpn_walther_p99_mod9_descr">
+    <text>S ergonomií jako klíčovým prvkem ve svém designu je pistole Walther P99 poháněná zpětným rázem s rámem z vláknového polymeru. Vyvinuta pro účely výkonu práva a civilní střelecký trh, používá se policejními jednotkami v několika zemích.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalovaný taktický kit: Závitová hlaveň pro použití s tlumičem, Tritium mířidla a laserový mířidel Viridian X5L. Toto vylepšení je nevratné.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Gemtech\n </text>
+</string>
+
+<string id="st_wpn_rpk74_16">
+    <text>RPK-16 5.45x39 lehký kulomet</text>
+</string>
+<string id="st_wpn_rpk74_16_descr">
+    <text>Nejnovější ruský lehký kulomet - RPK-16 ráže 5,45x39mm. Klíčové rysy tohoto druhu zbraně jsou rychle odnímatelné hlavně, zlepšená ergonomie, lišty weaver na rukojeti a víkendu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Všechny zaměřovače pro lištu picatinny/weaver\n
+    %c[d_purple] • %c[ui_gray_2] 5.45/7.62x39 Hexagon tlumič hluku\n </text>
+</string>
+
+<string id="st_wpn_fn57_bas">
+    <text>FN Five-seveN</text>
+</string>
+<string id="st_wpn_fn57_bas_descr">
+    <text>Pistole Five-seveN je poháněna zpětným rázem, polomatná palná zbraň. Pistole Five-seveN byla navržena společností FN Herstal jako doplněk ke kompaktnímu samopalu P90. P90 a Five-seveN sdílejí stejný střelivo, a to střelivo SS190 ráže 5.7x28mm. Myšlenkou za střelivem a zbraní je poskytovat dobrou průnikovou schopnost proti cílům chráněným balistickými vestami, přičemž se udržuje hmotnost, rozměry a zpětný ráz zbraně na rozumné úrovni.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Kit obsahuje laserový zaměřovač a montáž pro Red Dot zaměřovače\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Docter Sight, Aimpoint T1 (nízký mount), Trijicon RMR, Leupold DeltaPoint PRO.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 5.7x28 tlumič hluku\n </text>
+</string>
+
+<string id="st_wpn_abakan_n">
+    <text>AN-94 Abakan</text>
+</string>
+<string id="st_wpn_abakan_n_descr">
+    <text>Klíčovou vylepšenou funkcí AN-94 oproti AK-74 je zavedení dodatečného režimu dvou ran na jeden stisk spouště. Nikonovův design oddaluje sílu zpětného rázu až do doby, kdy vystřelené náboje opustí hlaveň, což spolu s jedinečným režimem dvou ran s rychlostí 1800 ran za minutu zvyšuje průnikové schopnosti této zbraně proti balistickým vestám. Používá se operátory speciálních jednotek Spetsnaz a také členy frakce Duty k likvidaci pancéřových cílů na relativně dlouhé vzdálenosti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] GP-25 granátomet (po modifikaci)\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny zaměřovače pro lištu s drážkami, kromě zaměřovačů PSO s oční ochranou kvůli nepohodlnému používání těchto zaměřovačů na puškách typu AK a zaměřovačů 1P59 Giperon.\n </text>
+</string>
+
+<string id="st_wpn_ks23_kaban_kab_up">
+    <text>KS-23 Kaban</text>
+</string>
+<string id="st_wpn_ks23_kaban_kab_up_descr">
+    <text>Zkrácená verze s namontovaným reflexním zaměřovačem Trijicon RMR. 23mm - Sovětský multifunkční policejní pumpovací brokovnice, navržená k potlačení nepokojů, selektivní síly, duševního a chemického působení na pachatele. Zajímavé je, že přestože má ráži více než 20 mm a drážkovanou hlaveň, KS-23 by nemělo být klasifikováno jako malé zbraně, ale jako malokaliberní dělostřelectví. Tato verze má také závit pro tlumič hluku, který lze najít na jihovýchodních místech Zóny.\n </text>
+</string>
+
+
+<string id="st_wpn_ks23_23_up">
+    <text>KS-23 Short Barrel</text>
+</string>
+<string id="st_wpn_ks23_23_up_descr">
+    <text>Speciální karabina, 23 mm - Sovětská multifunkční policejní pumpovací brokovnice, navržená k potlačení nepokojů, selektivní síly, duševního a chemického působení na pachatele. Zajímavé je, že přestože má ráži více než 20 mm a drážkovanou hlaveň, KS-23 by nemělo být klasifikováno jako malé zbraně, ale jako malokaliberní dělostřelectví. Tato modifikace modelu KS-23 má namontovanou krátkou hlaveň o délce 510 mm namísto standardní dlouhé hlavně o délce 700 mm.\n </text>
+</string>
+
+<string id="st_wpn_remington700_bas">
+    <text>Remington 700</text>
+</string>
+<string id="st_wpn_remington700_bas_descr">
+    <text>Model Remington 700 je série opakovacích kulovnic vyráběných firmou Remington Arms od roku 1962.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí: MOD X Gen.3 podvozek, Magpul "PRO 700", polymerní pažba Promag Archangel a sada The Deer Hunter .338\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič Daniel Defence Wave QD \n </text>
+</string>
+
+<string id="st_wpn_remington700_bas_archangel">
+    <text>Remington 700 Archangel</text>
+</string>
+<string id="st_wpn_remington700_bas_archangel_descr">
+    <text>Model Remington 700 je série opakovacích kulovnic vyráběných firmou Remington Arms od roku 1962. Tento model má namontovanou polymerní pažbu Promag Archangel.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Namontovaná polymerní pažba Promag Archangel\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič Daniel Defence Wave QD \n </text>
+</string>
+
+<string id="st_wpn_remington700_bas_magpul_pro">
+    <text>Remington 700 Magpul PRO</text>
+</string>
+<string id="st_wpn_remington700_bas_magpul_pro_descr">
+    <text>Model Remington 700 je série opakovacích kulovnic vyráběných firmou Remington Arms od roku 1962. Tento model má podvozek Magpul PRO 700 a navíc namontovaný red dot zaměřovač Trijicon RMR.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Namontovaný podvozek Magpul "PRO 700"\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič Daniel Defence Wave QD \n </text>
+</string>
+
+<string id="st_wpn_remington700_bas_mod_x_gen3">
+    <text>Remington 700 Modular Rifle System</text>
+</string>
+<string id="st_wpn_remington700_bas_mod_x_gen3_descr">
+    <text>Model Remington 700 je série opakovacích kulovnic vyráběných firmou Remington Arms od roku 1962. Tento model má systém MOD X GEN III Modular Rifle System a navíc namontovaný red dot zaměřovač Leupold DeltaPoint PRO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Namontovaný MOD X Gen.3 podvozek\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič Daniel Defence Wave QD \n </text>
+</string>
+
+		<string id="st_wpn_sr1m">
+    <text>9x21 Serdyukov SR1MP Gyurza</text>
+</string>
+<string id="st_wpn_sr1m_descr">
+    <text>Pistole Serdyukov - také známá jako SPS a Gyurza ("Viper"), GRAU Index 6P53. Pistole navržená pro potřeby ruských speciálních sil, P. Serdyukovem a I. Belyaevem, pro náboj 9x21 mm.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktického kitu.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: žádný \n</text>
+</string>
+
+<string id="st_wpn_sr1m_sr1upgr1">
+    <text>9x21 Serdyukov SR1MP Gyurza</text>
+</string>
+<string id="st_wpn_sr1m_sr1upgr1_descr">
+    <text>Pistole Serdyukov - také známá jako SPS a Gyurza ("Viper"), GRAU Index 6P53. Pistole navržená pro potřeby ruských speciálních sil, P. Serdyukovem a I. Belyaevem, pro náboj 9x21 mm.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Pistole byla upgradována pomocí taktického kitu.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: SR1MP tlumič 9x21 \n</text>
+</string>
+
+<string id="st_wpn_k98_mod">
+    <text>Mauser 98k Forester</text>
+</string>
+<string id="st_wpn_k98_mod_descr">
+    <text>Upravená verze německé odstřelovací pušky Mauser Karabiner 98k z období druhé světové války. Dřevěná pažba byla nahrazena ergonomičtější polymerovou. Puška je vybavena vynikajícím puškohledem vyráběným firmou March v Japonsku. V Zóně se tato puška používá především k lovu mutantů na dlouhé a extrémně dlouhé vzdálenosti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Puškohled: March (vestavěný)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: K98 Forester (nutný adaptér na hlavně pro montáž tlumiče) \n </text>
+</string>
+
+<string id="st_wpn_k98_mod_silen98">
+    <text>Mauser 98k Forester (s adaptérem na tlumič)</text>
+</string>
+<string id="st_wpn_k98_mod_silen98_descr">
+    <text>Upravená verze německé odstřelovací pušky Mauser Karabiner 98k z období druhé světové války. Dřevěná pažba byla nahrazena ergonomičtější polymerovou. Puška je vybavena vynikajícím puškohledem vyráběným firmou March v Japonsku. V Zóně se tato puška používá především k lovu mutantů na dlouhé a extrémně dlouhé vzdálenosti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Puškohled: March (vestavěný)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: K98 Forester\n </text>
+</string>
+
+<string id="st_wpn_ks23_ecolog">
+    <text>KS-23 Ecolog</text>
+</string>
+<string id="st_wpn_ks23_ecolog_descr">
+    <text>Modifikace pušky KS-23, vyvinutá pro potřeby vědeckého personálu nacházejícího se v Zóně.\n </text>
+</string>
+
+<string id="st_wpn_ak105_bas">
+    <text>AK-105</text>
+</string>
+<string id="st_wpn_ak105_bas_descr">
+    <text>AK-105 je karabina ráže 5,45x39 mm odvozená z pušky AK-74M. AK-105 nahrazuje karabiny AKS-74U ve výzbroji ruské armády. Je ideální pro boj na krátkou vzdálenost (close quarters combat) a není určena pro střelbu na dlouhé vzdálenosti. Závěr pušky je vyroben ze stříhané oceli; zásobník je vyroben z vyztuženého sklolaminátu a pažba je vyrobena z dutého plastu, což ji činí lehčí, odolnější a umožňuje uchovávat sadu pro pole uvnitř.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Puškohledy: všechny puškohledy pro montáž na lištu Dovetail, s výjimkou puškohledů PSO s oční gumou kvůli nepohodlnému používání těchto puškohledů na puškách typu AK a 1P59 Giperon.\n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktického kitu.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-A tlumič\n </text>
+</string>
+
+
+	<string id="st_wpn_ak105_bas_swamp">
+    <text>AK-105 Swamp Thing</text>
+</string>
+<string id="st_wpn_ak105_bas_swamp_descr">
+    <text>AK-105 je karabina ráže 5,45x39 mm odvozená z pušky AK-74M. AK-105 nahrazuje karabiny AKS-74U ve výzbroji ruské armády. Velmi vzácná varianta AK-105. Najdeme ji především mezi veterány skupiny Clear Sky. Díky přítomnosti několika zaměřovacích zařízení je ideální pro boj na krátkou a středně dlouhou vzdálenost.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí taktického kitu "Swamp Thing"\n
+    %c[d_purple] • %c[ui_gray_2] Puškohledy: Elcan SpecterDr, Trijicon RMR a AN/PEQ-15 LAM (vestavěný)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 5.45/7.62x39 Hexagon Sound Suppressor\n </text>
+</string>
+
+<string id="st_wpn_remington700_bas_lapua700">
+    <text>M700 The Deer Hunter</text>
+</string>
+<string id="st_wpn_remington700_bas_lapua700_descr">
+    <text>The Deer Hunter je modifikace pušky Remington Model 700 určená pro přesnou střelbu na velmi dlouhé vzdálenosti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí kitu The Deer Hunter .338\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: M700 .338LM \n </text>
+</string>
+
+<string id="st_wpn_pl15">
+    <text>Lebedev PL-15 Pistol</text>
+</string>
+<string id="st_wpn_pl15_descr">
+    <text>Ruská samočinná pistole PL-15-01 ráže 9x19 mm Parabellum. Rozdíl mezi touto pistolí a jejími analogiemi spočívá v ergonomii a vyvážení, které odpovídá současným představám o biomechanice člověka. Metody výpočtu automatizace použité při jejím vytvoření přispívají k velké střelecké kapacitě a ve spojení s použitými ergonomickými řešeními dělají z pistole pohodlnou z hlediska zpětného rázu, vrhu po výstřelu a rychlého návratu na mířící čáru. To vše přispívá k rychlému opakovanému výstřelu a rychlému přenesení palby. Ergonomická rukojeť s velkým úhlem náklonu usnadňuje střelbu z "ruky".\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň lze vylepšit pomocí kitu "Tactic"\n 
+    %c[d_purple] • %c[ui_gray_2] LAM pro PL-15 lze nainstalovat\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PL-15 Sound Suppressor \n</text>
+</string>
+
+<string id="st_wpn_pl15_pl15_scolaz">
+    <text>Lebedev PL-15 "Tactic"</text>
+</string>
+<string id="st_wpn_pl15_pl15_scolaz_descr">
+    <text>Ruská samočinná pistole PL-15-01 ráže 9x19 mm Parabellum. Rozdíl mezi touto pistolí a jejími analogiemi spočívá v ergonomii a vyvážení, které odpovídá současným představám o biomechanice člověka. Metody výpočtu automatizace použité při jejím vytvoření přispívají k velké střelecké kapacitě a ve spojení s použitými ergonomickými řešeními dělají z pistole pohodlnou z hlediska zpětného rázu, vrhu po výstřelu a rychlého návratu na mířící čáru. To vše přispívá k rychlému opakovanému výstřelu a rychlému přenesení palby. Ergonomická rukojeť s velkým úhlem náklonu usnadňuje střelbu z "ruky".\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí kitu "Tactic" (LAM, puškohled Aimpoint T1).\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PL-15 Sound Suppressor\n</text>
+</string>
+
+<string id="st_wpn_ak105_bas_shakal">
+    <text>AK-105 Shakal</text>
+</string>
+<string id="st_wpn_ak105_bas_shakal_descr">
+    <text>AK-105 je karabina ráže 5,45x39 mm odvozená z pušky AK-74M. AK-105 nahrazuje karabiny AKS-74U ve výzbroji ruské armády. Velmi vzácná varianta AK-105. Najdeme ji především mezi veterány skupiny Duty. Díky přítomnosti několika zaměřovacích zařízení je ideální pro boj na krátkou a středně dlouhou vzdálenost.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí kitu "Shakal"\n
+    %c[d_purple] • %c[ui_gray_2] Puškohledy: Trijicon Acog, Trijicon RMR a AN/PEQ-15 LAM (vestavěný)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 5.45/7.62x39 Hexagon Sound Suppressor\n </text>
+</string>
+
+<string id="st_wpn_sig220_n_u2p2g0r">
+    <text>Sig Sauer P220 Custom Nine</text>
+</string>
+<string id="st_wpn_sig220_n_u2p2g0r_descr">
+    <text>PIG-Sauer P220, vyrobená na konci 70. let společností J.P. Sauer and Son Company, je často považována za nejlepší pistoli ráže .45 calibre přímo z krabice. Okamžitým úspěchem byla P220 přijata Švýcarskem, Japonskými ozbrojenými silami a mnoha evropskými policejními organizacemi. Tato pistole se také dostala do USA, nejprve prostřednictvím společnosti Browning Arms Company z Utahu a od 80. let prostřednictvím společnosti SIGARMS z New Hampshiru.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaný taktický kit: Závitová hlaveň 9x19 pro použití se standardním tlumičem BLACK BOX .45, Tritium mířidla a laserový mířidel Viridian X5L a zásobník s vysokou kapacitou na 19 nábojů. Tato aktualizace je nevratná.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: BLACK BOX .45\n </text>
+</string>
+
+
+	<string id="st_wpn_aps_bas">
+    <text>APS</text>
+</string>
+<string id="st_wpn_aps_bas_descr">
+    <text>Stechkin APS je ruská samonabíjecí kalašniková pistole s možností volby režimu střelby, nesoucí jméno svého konstruktéra Igora Stechkina. Stechkinova automatická pistole byla původně ráže 7,62x25 mm Tokarev, ale později byla převedena na ráži 9x18 mm, která byla použita i u nové pistole Makarov, protože bylo jasné, že tento náboj se stane novým služebním nábojem pro pistole v sovětské armádě. V roce 1951 byly jak Makarov, tak Stechkin, zavedeny do arzenálu sovětské armády, nahrazujíce zastaralou TT-33.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Lze vylepšit pomocí taktického kitu.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_aps_bas_apsabigo">
+    <text>APS Vylepšená</text>
+</string>
+<string id="st_wpn_aps_bas_apsabigo_descr">
+    <text>Stechkin APS je ruská samonabíjecí kalašniková pistole s možností volby režimu střelby, nesoucí jméno svého konstruktéra Igora Stechkina. Stechkinova automatická pistole byla původně ráže 7,62x25 mm Tokarev, ale později byla převedena na ráži 9x18 mm, která byla použita i u nové pistole Makarov, protože bylo jasné, že tento náboj se stane novým služebním nábojem pro pistole v sovětské armádě. V roce 1951 byly jak Makarov, tak Stechkin, zavedeny do arzenálu sovětské armády, nahrazujíce zastaralou TT-33.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalován taktický kit: Závitová hlaveň pro použití s tlumičem APB, Tritium mířidla a ergonomická rukojeť pistole s gripem z gumy.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: APB \n</text>
+</string>
+
+<string id="st_wpn_mp133_bas">
+    <text>MP-133</text>
+</string>
+<string id="st_wpn_mp133_bas_descr">
+    <text>MP-133 je výrobek zbrojovky Izhevsk Mechanical Plant. Tato brokovnice je evolucí dřívější brokovnice IZh-81 s pumpovacím mechanismem a je určena pro civilní a bezpečnostní trhy. Vyrábí se ve dvou základních verzích: standardní MP-133 s trubkovým zásobníkem a MP-133K s odnímatelným boxovým zásobníkem. Obe verze se mohou lišit v délce a stylu hlavně, dřevěnou nebo polymerovou pažbou, pevnou nebo bočně skládací polymerovou pažbou nebo jen pistolovou pažbou. Brokovnice MP-133 používá tradiční pumpovací mechanismus s posuvným předpažbím, které má dvě akční tyče. Uzamčení zajišťuje sklopný uzamykací kousek instalovaný v závěru, který zasahuje do drážky v prodloužení hlavně, když je zbraň v základní poloze. Zásobník je trubkový pod hlavní, který pojme 4 náboje, i když kapacitu lze zvýšit instalací prodlužovacích trubek zásobníku.\n </text>
+</string>
+
+<string id="st_wpn_mp153_bas">
+    <text>MP-153</text>
+</string>
+<string id="st_wpn_mp153_bas_descr">
+    <text>Samonabíjecí brokovnice MP-153 byla první poloautomatickou brokovnicí navrženou a vyrobenou v zbrojovce Izhevsk Mechanical Plant. Byla vyvinuta společně s pumpovou brokovnicí MP-133 a sdílí mnoho součástí a montáží s ní. MP-153 je jednou z nejoblíbenějších poloautomatických brokovic ruského původu a je široce používána k lovu různých druhů divočiny v Rusku. Je také prodávána do zahraničí, kde je známa jako samonabíjecí brokovnice Remington "Spartan" SPR-453. Brokovnice MP-153 jsou známé pro svou pevnou, ačkoli poměrně těžkou konstrukci a spolehlivost.\n </text>
+</string>
+
+<string id="st_wpn_gauss_bas">
+    <text>Gaussova puška</text>
+</string>
+<string id="st_wpn_gauss_bas_descr">
+    <text>Velmi experimentální, artefaktem poháněná superpřesná zbraň vyrobena neznámou stranou v Zóně. Její výstřel je téměř nečitelný, protože místo střelného prachu používá magnety k zrychlení střely na neuvěřitelnou rychlost. Navzdory obrovské palbě gaussovy pušky je zpětný ráz nepatrný. Přesnost a síla této zbraně překračují všechny ostatní malé zbraně.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Vylepšený počítačový puškohled EOTS-62 (vestavěný)</text>
+</string>
+
+<string id="st_wpn_umirotvoritel_bas">
+    <text>Neidentifikovaná zbraň</text>
+</string>
+<string id="st_wpn_umirotvoritel_bas_descr">
+    <text>Neznámá zbraň, jejíž střelecký mechanismus nebyl zjištěn. Zbraň se jeví jako vadná - stisk spouště nic nedělá. Je velmi těžká a určitě vysokotechnologická. Pozoruhodné je, že se zdá, že nevystřeluje náboje na základě zapálení. Nejpravděpodobněji jsou střely poháněny elektromagnetickými silami. Nelze než podezírat, jaký má ničivý potenciál.</text>
+</string>
+
+<string id="st_wpn_pb_bas">
+    <text>PB</text>
+</string>
+<string id="st_wpn_pb_bas_custom">
+    <text>PB (modern)</text>
+</string>
+<string id="st_wpn_pb_bas_descr">
+    <text>PB (Pistolet Besshumnyj or Silent Pistol), také známá v sovětské armádě jako 6P9, byla vyvinuta v roce 1967 pro jednotky Spetsnaz sovětské armády a také pro operativce KGB. Pistole je založena na upravené pistoli Makarov PM a má jedinečný integrovaný dvoudílný tlumič. Vydána do služby v roce 1967, PB (GRAU index 6P9) je sovětská tlumená pistole založená na pistoli Makarov PM. Byla určena k použití KGB a armádními průzkumnými skupinami. Přední část tlumiče je odnímatelná, takže pistole lze rozdělit na dvě části pro pohodlné nošení. Integrovaný tlumič PB také snižuje rychlost střely pod zvukovou rychlost.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič 6P9 (vestavěný)</text>
+</string>
+
+<string id="st_wpn_akm_alfa">
+    <text>CAA AK-Alfa</text>
+</string>
+<string id="st_wpn_akm_alfa_descr">
+    <text>Vyvinutá v Izraeli společností Command Arms and Acessories (CAA), útočná puška AK-Alfa byla poprvé představena veřejnosti v roce 2016. Tato zbraň je prodávána pod dvěma značkami - "Kalashnikov USA" a "Kalashnikov Israel". Zřejmě se tato zbraň dostala do Zóny s funkcí ISG. Útočná puška AK-Alpha je pokusem o zlepšení ergonomie pušky AK při zachování jejích hlavních výhod - vysoké spolehlivosti a snadné údržby.
+    Základem pro AK-Alphu je receiver, hlaveň s plynovým potrubím, závěrová skupina a hlavní části spouště ruské karabiny Saiga.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Mířidla: Všechna pro picatinny/weaver kromě mířidel s velmi nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight.\n		
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 5.45/7.62x39 Hexagon Sound Suppressor\n </text>
+</string>
+
+<string id="st_wpn_sr2_veresk">
+    <text>SR-2M Veresk</text>
+</string>
+<string id="st_wpn_sr2_veresk_descr">
+    <text>SR-2 "Veresk" je ruský samopal (vyráběný TsNIITOCHMASH), navržený pro boj s nepřátelským personálem v těsném boji (na vzdálenost až 200 m) s použitím individuálního pancéřování. Hlavní výhodou SR-2 je jeho vysoký palebný výkon, vysoká přesnost střelby a ničivý efekt střely na krátkou vzdálenost. \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Mířidla: KP SR-2 Reflex Sight\n	
+    %c[d_purple] • %c[ui_gray_2] Lze vylepšit pomocí taktického kitu.\n 		
+    %c[d_purple] • %c[ui_gray_2] Tlumič: GZV-SR2\n </text>
+</string>
+
+<string id="st_wpn_sr2_veresk_sr2_upkit">
+    <text>SR-2M Veresk (vylepšený)(BaS)</text>
+</string>
+<string id="st_wpn_sr2_veresk_sr2_upkit_descr">
+    <text>SR-2 "Veresk" je ruský samopal (vyráběný TsNIITOCHMASH), navržený pro boj s nepřátelským personálem v těsném boji (na vzdálenost až 200 m) s použitím individuálního pancéřování. Hlavní výhodou SR-2 je jeho vysoký palebný výkon, vysoká přesnost střelby a ničivý efekt střely na krátkou vzdálenost. \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n		
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí taktického vylepšovacího kitu. (Nepřestavitelný upgrade) \n	
+    %c[d_purple] • %c[ui_gray_2] Tlumič: GZV-SR2\n </text>
+</string>
+
+<string id="st_wpn_sr2_m1">
+    <text>SR-2M Veresk (modernizovaný)(BaS)</text>
+</string>
+<string id="st_wpn_sr2_m1_descr">
+    <text>SR-2 "Veresk" je ruský samopal (vyráběný TsNIITOCHMASH), navržený pro boj s nepřátelským personálem v těsném boji (na vzdálenost až 200 m) s použitím individuálního pancéřování. Hlavní výhodou SR-2 je jeho vysoký palebný výkon, vysoká přesnost střelby a ničivý efekt střely na krátkou vzdálenost. \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n		
+    %c[d_purple] • %c[ui_gray_2] Všechny kolimátory pro picatinny/weaver a dvě puškohledy s přiblížením: PN-23 a Leupold Mark 8 CQBSS 1.1-8x24. \n	
+    %c[d_purple] • %c[ui_gray_2] Tlumič: GZV-SR2\n </text>
+</string>
+
+
+<string id="st_wpn_aug_a1_bas">
+    <text>Steyr AUG A1</text>
+</string>
+<string id="st_wpn_aug_a1_bas_descr">
+    <text>Steyr AUG A1 v standardní konfiguraci pušky (vojenská zelená barva). AUG je rakouská bullpup útočná puška ráže 5,56 mm, navržená v 60. letech firmou Steyr Mannlicher GmbH andamp; Co KG (dříve Steyr-Daimler-Puch). AUG (Armee-Universal-Gewehr "univerzální armádní puška") byl přijat Rakouskou armádou jako StG 77 (Sturmgewehr 77) v roce 1978, kde nahradil samonabíjecí pušku ráže 7,62 mm StG 58 (licence k FN FAL). Vyrábí se od roku 1978 a je standardní zbraní Rakouského Bundesheer a různých národních policejních jednotek.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] 1,5x puškohled (vestavěný).\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Steyr UMS \n</text>
+</string>
+
+<string id="st_wpn_aug_a3_bas">
+    <text>Steyr AUG A3</text>
+</string>
+<string id="st_wpn_aug_a3_bas_descr">
+    <text>Steyr AUG (Armee Universal Gewehr - Univerzální armádní puška) je rakouská bullpup útočná puška ráže 5,56x45 mm NATO, navržená v 60. letech společností Steyr-Daimler-Puch a nyní vyráběná společností Steyr Mannlicher GmbH and Co KG. Steyr AUG A3 se liší od základního modelu přítomností čtyř Picatinny lišt: horní slouží k připojení zaměřovačů, spodní slouží k připojení granátometu nebo vertikální rukojeti a bokem lze připojit laserový ukazovatel nebo jiné potřebné doplňky.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver kromě zaměřovačů s velmi nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Steyr UMS \n</text>
+</string>
+
+<string id="st_wpn_aug_a1_custom_bas">
+    <text>Steyr AUG A1 CQB</text>
+</string>
+<string id="st_wpn_aug_a1_custom_bas_descr">
+    <text>Steyr AUG A1 v standardní konfiguraci pušky (vojenská zelená barva). AUG je rakouská bullpup útočná puška ráže 5,56 mm, navržená v 60. letech firmou Steyr Mannlicher GmbHandCo KG (dříve Steyr-Daimler-Puch). AUG (Armee-Universal-Gewehr "univerzální armádní puška") byl přijat Rakouskou armádou jako StG 77 (Sturmgewehr 77) v roce 1978, kde nahradil samonabíjecí pušku ráže 7,62 mm StG 58 (licence k FN FAL). Vyrábí se od roku 1978 a je standardní zbraní Rakouského Bundesheer a různých národních policejních jednotek. CQB - má nižší hmotnost a zvýšenou rychlost střelby ve srovnání s originálem.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] 1,5x puškohled (vestavěný).\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Steyr UMS \n</text>
+</string>
+
+<string id="st_wpn_aug_a3_custom_bas">
+    <text>Steyr AUG A3 Commando</text>
+</string>
+<string id="st_wpn_aug_a3_custom_bas_descr">
+    <text>Steyr AUG (Armee Universal Gewehr - Univerzální armádní puška) je rakouská bullpup útočná puška ráže 5,56x45 mm NATO, navržená v 60. letech společností Steyr-Daimler-Puch a nyní vyráběná společností Steyr Mannlicher GmbH and Co KG. Steyr AUG A3 se liší od základního modelu přítomností čtyř Picatinny lišt: horní slouží k připojení zaměřovačů, spodní slouží k připojení granátometu nebo vertikální rukojeti a bokem lze připojit laserový ukazovatel nebo jiné potřebné doplňky.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalované zaměřovače: Trijicon Acog (x4) a PEQ LA5 LAM.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Steyr UMS \n</text>
+</string>
+
+<string id="st_wpn_ak5c_bas">
+    <text>AK 5C</text>
+</string>
+<string id="st_wpn_ak5c_bas_descr">
+    <text>Ak 5 nebo Automatkarbin 5 ("automatická karabina 5", "automatická karabina" je švédský termín pro útočnou pušku) je švédská verze útočné pušky FN FNC s určitými úpravami, zejména k přizpůsobení zbraně částečně subarktickému švédskému klimatu. Ak 5 je služební puškou švédských ozbrojených sil. Bofors Ak 5C je modernizovanou verzí původního Ak 5, která sleduje trend modulárních zbraní. Jedním z nejvýznamnějších vylepšení je systém MIL-STD-1913, ke kterému lze připojit různé optiky, světla a zaměřovače, jako jsou puškohledy a noční vidění. Byly zrušeny dvě polohy plynu, mířidla a záchytný závěr původní rodiny pušek Ak 5.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Lze vylepšit pomocí taktického koutu.\n 
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: NATO \n</text>
+</string>
+
+<string id="st_wpn_ak5c_bas_5c_tik">
+    <text>AK 5C ISG Special</text>
+</string>
+<string id="st_wpn_ak5c_bas_5c_tik_descr">
+    <text>Ak 5 nebo Automatkarbin 5 ("automatická karabina 5", "automatická karabina" je švédský termín pro útočnou pušku) je švédská verze útočné pušky FN FNC s určitými úpravami, zejména k přizpůsobení zbraně částečně subarktickému švédskému klimatu. Ak 5 je služební puškou švédských ozbrojených sil. Bofors Ak 5C je modernizovanou verzí původního Ak 5, která sleduje trend modulárních zbraní. Jedním z nejvýznamnějších vylepšení je systém MIL-STD-1913, ke kterému lze připojit různé optiky, světla a zaměřovače, jako jsou puškohledy a noční vidění. Byly zrušeny dvě polohy plynu, mířidla a záchytný závěr původní rodiny pušek Ak 5.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň byla vylepšena pomocí taktického vylepšovacího sady. Díly v sadě: nízký přední úchop, LA5 LAM, puškohledy Leupold LCO+D'evo a krátká hlaveň. (Neměnné vylepšení).\n 
+    %c[d_purple] • %c[ui_gray_2] Nainstalované zaměřovače: Leupold (LCO), Leupold D'evo x6 a LA5 Laser Aim Module.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor \n </text>
+</string>
+
+
+<string id="st_wpn_ak5c_isg">
+    <text>AK 5C ISG</text>
+</string>
+<string id="st_wpn_ak5c_isg_descr">
+    <text>Modifikace ISG švédského AK5C. V Zóně vzácná zbraň. Rádo používaná některými jednotkami ISG. Ak 5 nebo Automatkarbin 5 ("automatická karabina 5", "automatická karabina" je švédský termín pro útočnou pušku) je švédskou verzí útočné pušky FN FNC s určitými úpravami, zejména k přizpůsobení zbraně částečně subarktickému švédskému klimatu. Ak 5 je služební puškou švédských ozbrojených sil. Bofors Ak 5C je modernizovanou verzí původního Ak 5, která sleduje trend modulárních zbraní. Jedním z nejvýznamnějších vylepšení je systém MIL-STD-1913, ke kterému lze připojit různé optiky, světla a zaměřovače, jako jsou puškohledy a noční vidění. Byly zrušeny dvě polohy plynu, mířidla a záchytný závěr původní rodiny pušek Ak 5.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver. LA5 LAM (nainstalováno).\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor \n</text>
+</string>
+
+<string id="st_wpn_m4a1_siber">
+    <text>M4A1 RAS</text>
+</string>
+<string id="st_wpn_m4a1_siber_descr">
+    <text>Karabina M4 pochází z rodiny palných zbraní, které mají své kořeny ve dřívějších karabinových verzích M16, vycházejících z původního modelu AR-15 od společnosti ArmaLite. Jedná se o kratší a lehčí verzi útočné pušky M16, která sdílí 80 % svých dílů. M4 střílí střelivo 5,56x45mm NATO, je plynem poháněná, vzduchem chlazená, zásobníková palná zbraň s volitelným režimem střelby a čtyřpolohovou teleskopickou pažbou. Stejně jako mnoho karabinů je M4 praktičtější a pohodlnější na nošení než plnohodnotná puška. Byla přijata Ústředním velitelstvím speciálních operací Spojených států (USSOCOM) a je preferovanou zbraní speciálních jednotek Armády Spojených států a Navy SEALs.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž) a OKP-7.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000 \n
+    %c[d_purple] • %c[ui_gray_2] Granátomet M203\n</text>
+</string>
+
+<string id="st_wpn_akm_bas">
+    <text>AKM</text>
+</string>
+<string id="st_wpn_akm_bas_descr">
+    <text>AKM je útočná puška ráže 7,62x39mm navržená Michaelem Kalashnikovem. Jedná se o vylepšenou verzi pušky AK-47 a byla vyvinuta v 50. letech. Byla zavedena do výzbroje Rudé armády v roce 1959 a stala se nejběžnější variantou rodiny pušek AK. Byla široce používána v zemích Varšavské smlouvy a jejich afrických a asijských spojencích. Výroba pušek AKM probíhala v arsenálu v Tule a strojírenském závodu v Izhevsku.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: žádné\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PBS-1\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet GP-25 (po úpravě)\n</text>
+</string>
+
+<string id="st_wpn_akms_bas">
+    <text>AKMS</text>
+</string>
+<string id="st_wpn_akms_bas_descr">
+    <text>Variantou AKM je AKMS, která je vybavena sklopnou kovovou pažbou místo pevné dřevěné pažby. Kovová pažba AKMS se liší od sklopné pažby předchozího modelu AK-47, protože má upravený zámkový mechanismus, který zamyká obě podpůrné paže pažby AKMS, nikoliv pouze jednu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n        
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: žádné\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PBS-1\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet GP-25 (po úpravě)\n</text>
+</string>
+
+<string id="st_wpn_sks_b">
+    <text>SKS</text>
+</string>
+<string id="st_wpn_sks_b_descr">
+    <text>SKS byla jednou z prvních zbraní používající střelivo 7,62x39mm. Byla nahrazena puškou AK-47 v první linii výzbroje Sovětské armády na počátku 50. let, ale stále byla používána v druhé linii výzbroje po desetiletí a dodnes se používá jako ceremoniální zbraň.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n%c[d_purple]• %c[ui_gray_2] žádné\n</text>
+</string>
+
+<string id="st_wpn_l85_m1">
+    <text>L85 A2</text>
+</string>
+<string id="st_wpn_l85_m1_descr">
+    <text>Vývoj systému SA80, který zahrnoval dvě zbraně - útočnou pušku SA80 IW a lehký kulomet SA80 LSW, začal koncem 60. let, kdy britská armáda rozhodla vyvinout novou pušku, která by nahradila stárnoucí britskou pušku FN FAL ráže 7,62x51mm. Standardní individuální zbraní britských ozbrojených sil je L85 (v původní verzi A1) měla řadu výkonnostních problémů. Verze A2 byla významně vylepšena na počátku 21. století firmou Heckler and Koch a stále je v provozu k roku 2020. L85A2 je extrémně spolehlivá v různých klimatických podmínkách pro různé operační scénáře. Současné pušky L85A2 jsou považovány za spolehlivé a přesné, zejména při použití standardních puškohledů SUSAT.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n        
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Susat s montáží L85\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+	
+	<string id="st_wpn_l85_m2">
+    <text>L85 A2 Modernized</text>
+</string>
+<string id="st_wpn_l85_m2_descr">
+    <text>Vývoj systému SA80, který zahrnoval dvě zbraně - útočnou pušku SA80 IW a lehký kulomet SA80 LSW, začal koncem 60. let, kdy britská armáda rozhodla vyvinout novou pušku, která by nahradila stárnoucí britskou pušku FN FAL ráže 7,62x51mm. Standardní individuální zbraní britských ozbrojených sil, L85 (v původní verzi A1), měla řadu výkonnostních problémů. Verze A2 vznikla v důsledku významného vylepšení na začátku 21. století firmou Heckler and Koch a stále je v provozu k roku 2020. L85A2 je extrémně spolehlivá v různých klimatických podmínkách pro různé operační scénáře. Současné pušky L85A2 jsou považovány za spolehlivé a přesné, zejména při použití standardního puškohledu SUSAT.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Vylepšeno: Picatinny lišta nainstalována nahoře na původní dovetail montáži\n        
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+<string id="st_wpn_l85_m3">
+    <text>L85 A2 Tactic</text>
+</string>
+<string id="st_wpn_l85_m3_descr">
+    <text>Vývoj systému SA80, který zahrnoval dvě zbraně - útočnou pušku SA80 IW a lehký kulomet SA80 LSW, začal koncem 60. let, kdy britská armáda rozhodla vyvinout novou pušku, která by nahradila stárnoucí britskou pušku FN FAL ráže 7,62x51mm. Standardní individuální zbraní britských ozbrojených sil, L85 (v původní verzi A1), měla řadu výkonnostních problémů. Verze A2 vznikla v důsledku významného vylepšení na začátku 21. století firmou Heckler and Koch a stále je v provozu k roku 2020. L85A2 je extrémně spolehlivá v různých klimatických podmínkách pro různé operační scénáře. Současné pušky L85A2 jsou považovány za spolehlivé a přesné, zejména při použití standardního puškohledu SUSAT.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Vylepšeno: Picatinny lišta nainstalována nahoře na původní dovetail montáži, quadrail předpažbí, předpažbí a B.E. MEYERS MAWL-C1 taktický zelený laserový cílový modul.\n        
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: HecklerandKoch M320\n</text>
+</string>
+
+<string id="st_wpn_scar_siber">
+    <text>FN SCAR-H</text>
+</string>
+<string id="st_wpn_scar_siber_descr">
+    <text>Puška Special Operations Forces Combat Assault Rifle (SCAR) je modulární puška vyrobena společností FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: FN HERSTAL FN40GL Mk2\n</text>
+</string>
+
+<string id="st_wpn_scar_siber_black">
+    <text>FN SCAR-H (Black)</text>
+</string>
+<string id="st_wpn_scar_siber_black_descr">
+    <text>Puška Special Operations Forces Combat Assault Rifle (SCAR) je modulární puška vyrobena společností FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: FN HERSTAL FN40GL Mk2\n</text>
+</string>
+
+<string id="st_wpn_scar_siber_m1">
+    <text>FN SCAR-H Tactical</text>
+</string>
+<string id="st_wpn_scar_siber_m1_descr">
+    <text>Modulární puška Special Operations Forces Combat Assault Rifle (SCAR) vyrobená firmou FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaná vylepšení: Taktická předpažbí Magpul, Tritium mířidla\n        
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+<string id="st_wpn_scar_siber_m1_black">
+    <text>FN SCAR-H Tactical Black</text>
+</string>
+<string id="st_wpn_scar_siber_m1_black_descr">
+    <text>Modulární puška Special Operations Forces Combat Assault Rifle (SCAR) vyrobená firmou FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaná vylepšení: Taktická předpažbí Magpul, Tritium mířidla\n    
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+<string id="st_wpn_scar_siber_m2">
+    <text>FN SCAR-H Expert Operator</text>
+</string>
+<string id="st_wpn_scar_siber_m2_descr">
+    <text>Modulární puška Special Operations Forces Combat Assault Rifle (SCAR) vyrobená firmou FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaná vylepšení: Taktická předpažbí Magpul, Tritium mířidla, taktický zelený laserový cílový modul B.E. MEYERS MAWL-C1\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro picatinny/weaver (kromě zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízký montáž), Docter Sight, 1P76 Rakurs (nízký montáž).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+<string id="st_wpn_scar_siber_m2_custom">
+    <text>FN SCAR-H Specialist Operator</text>
+</string>
+<string id="st_wpn_scar_siber_m2_custom_descr">
+    <text>Modulární puška Special Operations Forces Combat Assault Rifle (SCAR) vyrobená firmou FN Herstal pro SOCOM, aby vyhověla požadavkům soutěže SCAR. Tato rodina pušek se skládá ze dvou typů, SCAR-H a SCAR-L. SCAR-H (Heavy) je ráže 7,62x51mm NATO.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaná vylepšení: Taktický zelený laserový cílový modul B.E. MEYERS MAWL-C1\n
+    %c[d_purple] • %c[ui_gray_2] Nainstalované zaměřovače: Vortex RAZOR UH-1 a EOTech G33.STS zvětšovací modul.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: AAC 7.62 SDN-6\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet: žádný\n</text>
+</string>
+
+
+	<string id="st_wpn_korth">
+    <text>Korth 4" Barrel</text>
+</string>
+<string id="st_wpn_korth_descr">
+    <text>Korth je vysoce kvalitní výrobce palných zbraní se sídlem v Lollaru, Hesensku, Německo. Korth. Pro některé nadšence do zbraní to stačí. Výrobci v tradici ultimátních evropských luxusních značek je Korth nejlépe známý pro revolvery s cenovkami, které by většina lidí spíše spojovala s německými auty než s německými zbraněmi. Ale tato pověst o mimořádně vysokých cenách, která je lákadlem pro nákupy na stojanu s puškami po celém světě, pochází z jejich plně upravených produktů; vstupní cena je mnohem dostupnější. Výchozím bodem pro Korth je cena kolem výchozí ceny za Rolex: pět tisíc dolarů vám do rukou dá něco z té evropské kvality a jistě to bude nezapomenutelné. Zbraně Korth jsou legendární.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n        
+    %c[d_purple] • %c[ui_gray_2] Tlumič: žádný\n </text>
+</string>
+
+<string id="st_wpn_korth_custom">
+    <text>Korth 6" Barrel</text>
+</string>
+<string id="st_wpn_korth_custom_descr">
+    <text>Korth je vysoce kvalitní výrobce palných zbraní se sídlem v Lollaru, Hesensku, Německo. Korth je vysoce kvalitní výrobce palných zbraní se sídlem v Lollaru, Hesensku, Německo. Korth. Pro některé nadšence do zbraní to stačí. Výrobci v tradici ultimátních evropských luxusních značek je Korth nejlépe známý pro revolvery s cenovkami, které by většina lidí spíše spojovala s německými auty než s německými zbraněmi. Ale tato pověst o mimořádně vysokých cenách, která je lákadlem pro nákupy na stojanu s puškami po celém světě, pochází z jejich plně upravených produktů; vstupní cena je mnohem dostupnější. Výchozím bodem pro Korth je cena kolem výchozí ceny za Rolex: pět tisíc dolarů vám do rukou dá něco z té evropské kvality a jistě to bude nezapomenutelné. Zbraně Korth jsou legendární.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Nainstalovaná dlouhá 6 palcová závitová hlaveň.\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Docter Sight\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: BLACK BOX .45\n </text>
+</string>
+
+<string id="st_grenade_launcher">
+    <text>GP-25 "Kostyor" granátomet (BaS+Van)</text>
+</string>
+<string id="st_grenade_launcher_descr">
+    <text>Jednostranný, přední, s hladkou hlavní, podvěsný granátomet pro útočné pušky vyrobený v zemích Varšavské smlouvy. Navržen tak, aby výrazně zvýšil palebnou sílu základního pěšího oddílu. Mechanismus střelby je samospínací, s manuálním bezpečnostním zámkem a automatickým zamezením výstřelu při nesprávném nainstalování na pušku.\n \n
+    %c[d_purple] • %c[ui_gray_2] Úsťová rychlost: %c[ui_gray_1]~76 m/s\n
+    %c[d_purple] • %c[ui_gray_2] Dostřel: %c[ui_gray_1]~300 m\n
+    %c[d_purple] • %c[ui_gray_2] Doba nabíjení: %c[ui_gray_1]pomalé\n
+    %c[d_purple] • %c[ui_gray_2] Munice: %c[ui_gray_1]VOG-25 granát 40mm</text>
+</string>
+
+<string id="st_grenade_launcher_m203">
+    <text>M203 granátomet (BaS+Van)</text>
+</string>
+<string id="st_grenade_launcher_m203_descr">
+    <text>Upravený granátomet M203, jehož délka byla zkrácena o tři palce a který lze připevnit na zbraně pomocí lišty Picatinny. Díky změněnému montážnímu systému je tento granátomet široce používán po celém světě a lze jej instalovat na většinu v současnosti vyráběných pušek. I když je modernějšího designu, má téměř stejné vlastnosti jako jeho sovětský protějšek - granátomet GP-25.\n \n
+    %c[d_purple] • %c[ui_gray_2] Úsťová rychlost: %c[ui_gray_1]~76 m/s\n
+    %c[d_purple] • %c[ui_gray_2] Dostřel: %c[ui_gray_1]~300 m\n
+    %c[d_purple] • %c[ui_gray_2] Doba nabíjení: %c[ui_gray_1]pomalé\n
+    %c[d_purple] • %c[ui_gray_2] Munice: %c[ui_gray_1]granát M203 40mm</text>
+</string>
+
+
+	<string id="st_wpn_howa20">
+    <text>Howa Type 20</text>
+</string>
+<string id="st_wpn_howa20_descr">
+    <text>Útočná puška byla oficiálně představena veřejnosti v květnu 2020. Tato zbraň je určena k nahrazení útočné pušky Type 89, která sloužila asi 30 let. Novou pušku japonských ozbrojených sil, stejně jako tu předchozí, vyvinula společnost Howa Machinery Co, a používá střelivo ráže 5,56 mm. Vývoj nové pušky k nahrazení Type 89 začal na žádost japonských ozbrojených sil v roce 2014. Nová puška Type 20 je z vnějšku a konstrukčně jakýmsi průměrem mnoha moderních pušek, jako jsou například HK433 nebo CZ BREN II, a zjevně nemá žádné originální prvky. To však není problém, protože od armádní zbraně se nevyžaduje originalita designu, ale spíše spolehlivost, nízká cena a splnění požadavků zákazníka. Zůstává záhadou, jak a v jakém množství se tato puška dostala účastníkům vědecké expedice do Zóny.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Obsahuje: MARCH Shorty puškohled a AN/PEQ-15A DBAL-A2 Laserové zařízení\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: KAC QDSS NT-4 5.56ő45\n </text>
+</string>
+
+<string id="st_wpn_ar15_freedom">
+    <text>AR-15 HERA</text>
+</string>
+<string id="st_wpn_ar15_freedom_descr">
+    <text>Velmi modernizovaná puška AR15, obvykle ve službách veteránů Freedom. Nástavbový kit nainstalovaný na zbraně vám umožní cítit se sebejistě na jakékoliv střelnici, ale zároveň se zbraň vyznačuje vysokou cenou kvůli použití velmi drahých komponent v kitu.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Instalované Upgrady: B.E. MEYERS MAWL-C1 taktický zelený laserový zaměřovač a Here Arms předpažbí (pomáhá při ovládání zpětného rázu) a pažba.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Surefire SOCOM556-MONSTER\n </text>
+</string>
+
+<string id="st_wpn_m4_skryaga">
+    <text>AR od Skryagy</text>
+</string>
+<string id="st_wpn_m4_skryaga_descr">
+    <text>Stejně jako Beard, obchodník ze Zatonu, se i Skryaga rozhodl vydělávat peníze prodejem karabin ve "svém" nástavbovém kitu. Výsledkem byla dobrá, lehká a velmi ergonomická hlaveň na základě M4.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight, 1P76 Rakurs (nízký montáž) a MarchF).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: KAC QDSS NT-4 5.56ő45\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet M203\n </text>
+</string>
+
+<string id="st_wpn_ak12_mono_com">
+    <text>AK-12 kazatel</text>
+</string>
+<string id="st_wpn_ak12_mono_com_descr">
+    <text>Vzácný kousek. Upravená verze AK-12 z roku 2012. Hlavně používána velitelůmi skupiny Monolith. Má několik režimů střelby: automatický, jednotlivý a tříranový.\n \n
+    %c[0,140,140,140]PŘÍSLUŠENSTVÍ: \n
+    %c[0,93,0,116] • %c[0,140,140,140] Zaměřovače: Všechny pro lištu Picatinny\n
+    %c[0,93,0,116] • %c[0,140,140,140] Tlumič: 5.45/7.62 Hxagon tlumič hluku\n</text>
+</string>
+
+
+	<string id="st_wpn_sig550_siber">
+    <text>SIG SG550</text>
+</string>
+<string id="st_wpn_sig550_siber_descr">
+    <text>Proslavená svou vysokou kvalitou výroby a dobrým výkonem je SG 550 často označována za nejlepší pušku ráže 5,56 mm, která kdy byla vyrobena. Má bočně skládací skeletovou pažbu a lehký hliníkový bipod, který se skládá do drážek na dolní rukojeti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n</text>
+</string>
+
+<string id="st_wpn_sig550_tac_siber">
+    <text>SIG SG550 Tactical</text>
+</string>
+<string id="st_wpn_sig550_tac_siber_descr">
+    <text>Proslavená svou vysokou kvalitou výroby a dobrým výkonem je SG 550 často označována za nejlepší pušku ráže 5,56 mm, která kdy byla vyrobena. Má bočně skládací skeletovou pažbu a lehký hliníkový bipod, který se skládá do drážek na dolní rukojeti.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalované Upgrady: Taktická rukojeť, Vertikální grip, Laserový zaměřovač AN/PEQ-16 a Tritiové mířidla.\n 
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n
+    %c[d_purple] • %c[ui_gray_2] Granátomet M203\n</text>
+</string>
+
+<string id="st_wpn_sig552_siber">
+    <text>SIG SG552 Commando</text>
+</string>
+<string id="st_wpn_sig552_siber_descr">
+    <text>SG 552 Commando je navržena pro boj ve městě, což ji činí nejkompaktnějším členem proslulé rodiny SG 550 od SIG, což zvyšuje její schopnosti v blízkém boji (CQC).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n</text>
+</string>
+
+<string id="st_wpn_sig552_tac_siber">
+    <text>SIG SG552 Tac Commando</text>
+</string>
+<string id="st_wpn_sig552_tac_siber_descr">
+    <text>SG 552 Commando je navržena pro boj ve městě, což ji činí nejkompaktnějším členem proslulé rodiny SG 550 od SIG, což zvyšuje její schopnosti v blízkém boji (CQC).\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalované Upgrady: Vertikální grip, Laserový zaměřovač AN/PEQ-16 a Tritiové mířidla.\n 
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n</text>
+</string>
+
+
+	<string id="st_wpn_sig552_isg_siber">
+    <text>SIG SG552 Commando ISG</text>
+</string>
+<string id="st_wpn_sig552_isg_siber_descr">
+    <text>SG 552 Commando je navržena pro boj ve městě, což ji činí nejkompaktnějším členem proslulé rodiny SG 550 od SIG, což zvyšuje její schopnosti v blízkém boji (CQC). Tato verze SG552 byla pozorována v používání týmy infiltrace ISG.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Instalované Upgrady: Taktická pažba Magpul a mířidla, taktický zelený laserový modul B.E. MEYERS MAWL-C1.\n 		
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkým montážem: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight a 1P76 Rakurs (Picatinny).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Rifle Dynamics ISG Sound Suppressor\n</text>
+</string>	
+
+<string id="st_wpn_kiparis_s">
+    <text>OTs-02 Kiparis</text>
+</string>
+<string id="st_wpn_kiparis_s_descr">
+    <text>OTs-02 "Kiparis" (Cypress) je samopal vyvinutý v roce 1972 na zakázku Ministerstva obrany SSSR konstruktéry z TsKIB COO v Tule. Rozložení je založeno na československém samopalu Scorpion Vz.61 (verze z roku 1961). Automatický mechanismus OTs-02 "Kiparis" je poháněn zpětným pohybem volné závory. Výstřely jsou vypalovány z uzavřené závory, což zvyšuje přesnost palby. Pro zvýšení stability zbraně se používá skládací pažba, která je v kompaktní poloze složena na horní stranu pažbičky. V Zóně není tato zbraň neobvyklá a obvykle ji používají bandité a osamělí stalkerové, kteří si nemohou dovolit lepší zbraň.\n \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 0217 Sound Suppressor.\n</text>
+</string>
+
+<string id="st_wpn_kiparis_m1">
+    <text>OTs-02 Kiparis "Nonpro"</text>
+</string>
+<string id="st_wpn_kiparis_m1_descr">
+    <text>OTs-02 "Kiparis" (Cypress) je samopal vyvinutý v roce 1972 na zakázku Ministerstva obrany SSSR konstruktéry z TsKIB COO v Tule. Rozložení je založeno na československém samopalu Scorpion Vz.61 (verze z roku 1961). Automatický mechanismus OTs-02 "Kiparis" je poháněn zpětným pohybem volné závory. Výstřely jsou vypalovány z uzavřené závory, což zvyšuje přesnost palby. Pro zvýšení stability zbraně se používá skládací pažba, která je v kompaktní poloze složena na horní stranu pažbičky. V Zóně není tato zbraň neobvyklá a obvykle ji používají bandité a osamělí stalkerové, kteří si nemohou dovolit lepší zbraň.\n 
+    Mechanik Polymer se ukázal být pravým fanouškem staré, ale velmi dostupné náboje 9x18 v jižních oblastech Zóny. Linie levných samopalů, které vyvinul, je velmi oblíbená mezi stalkery ve všech funkcích v Zóně. Tato verze se od standardní verze liší především některými jednoduchými příslušenstvími a mírně zvýšenou kadencí palby. \n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň je vybavena nejlevnějším laserovým zaměřovačem a lištou Picatinny pro připojení některých malých zaměřovačů. (Polymer vám také dává jako bonus sadu 40ranných zásobníků při nákupu).\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny Red Dot zaměřovače pro lištu Picatinny/Weaver s výjimkou zaměřovačů s dlouhým montážem, jako jsou Eotech 553/XPS, C-More, OKP-7, Meprolight M21, EKP-8-18 a Kemper.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 0217 Sound Suppressor.\n</text>
+</string>
+
+<string id="st_wpn_kiparis_m2">
+    <text>OTs-02 Kiparis "Obligor"</text>
+</string>
+<string id="st_wpn_kiparis_m2_descr">
+    <text>OTs-02 "Kiparis" (Cypress) je samopal vyvinutý v roce 1972 na zakázku Ministerstva obrany SSSR konstruktéry z TsKIB COO v Tule. Rozložení je založeno na československém samopalu Scorpion Vz.61 (verze z roku 1961). Automatický mechanismus OTs-02 "Kiparis" je poháněn zpětným pohybem volné závory. Výstřely jsou vypalovány z uzavřené závory, což zvyšuje přesnost palby. Pro zvýšení stability zbraně se používá skládací pažba, která je v kompaktní poloze složena na horní stranu pažbičky. V Zóně není tato zbraň neobvyklá a obvykle ji používají bandité a osamělí stalkerové, kteří si nemohou dovolit lepší zbraň.\n 
+    Mechanik Polymer se ukázal být pravým fanouškem staré, ale velmi dostupné náboje 9x18 v jižních oblastech Zóny. Linie levných samopalů, které vyvinul, je velmi oblíbená mezi stalkery ve všech funkcích v Zóně. Tato verze byla vyrobena Polymerem pro frakci Duty.\n
+    Tato verze se od standardní verze liší především některými jednoduchými příslušenstvími a mírně zvýšenou kadencí palby. Navíc tato verze obsahuje ručně vyráběnou bakelitovou rukojeť, která zvyšuje kontrolu zpětného rázu. Bakelitová rukojeť je připevněna k ocelovému podpěrnému ramenu připojenému k dolní části předpažbí Kiparis a zpevněná třemi titanovými šrouby.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň je vybavena laserovým zaměřovačem a lištou Picatinny pro připojení některých malých zaměřovačů a ručně vyráběnou bakelitovou rukojeťí. (Polymer vám také dává jako bonus sadu 40ranných zásobníků při nákupu).\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Trijicon Acog a Red Dot zaměřovače pro lištu Picatinny/Weaver s výjimkou zaměřovačů s dlouhým montážem, jako jsou Eotech 553, C-More, Meprolight M21, EKP-8-18.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 0217 Sound Suppressor.\n</text>
+</string>
+
+	
+<string id="st_wpn_kiparis_m3">
+    <text>OTs-02 Kiparis "Zhmich (Oilcake)"</text>
+</string>
+<string id="st_wpn_kiparis_m3_descr">
+    <text>OTs-02 "Kiparis" (Cypress) je samopal vyvinutý v roce 1972 na zakázku Ministerstva obrany SSSR konstruktéry z TsKIB COO v Tule. Rozložení je založeno na československém samopalu Scorpion Vz.61 (verze z roku 1961). Automatický mechanismus OTs-02 "Kiparis" je poháněn zpětným pohybem volné závory. Výstřely jsou vypalovány z uzavřené závory, což zvyšuje přesnost palby. Pro zvýšení stability zbraně se používá skládací pažba, která je v kompaktní poloze složena na horní stranu pažbičky. V Zóně není tato zbraň neobvyklá a obvykle ji používají bandité a osamělí stalkerové, kteří si nemohou dovolit lepší zbraň.\n 
+    Mechanik Polimer se ukázal být pravým fanouškem staré, ale velmi dostupné náboje 9x18 v jižních oblastech Zóny. Linie levných samopalů, které vyvinul, je velmi oblíbená mezi stalkery ve všech funkcích v Zóně. Tato verze byla vyrobena Polymerem pro frakci Clear Sky.\n
+    Tato verze se od standardní verze liší především některými jednoduchými příslušenstvími a mírně zvýšenou kadencí palby. Navíc tato verze obsahuje ručně vyráběnou bakelitovou rukojeť, která zvyšuje kontrolu zpětného rázu. Bakelitová rukojeť je připevněna k ocelovému podpěrnému ramenu připojenému k dolní části předpažbí Kiparis a zpevněná třemi titanovými šrouby.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň je vybavena laserovým zaměřovačem a lištou Picatinny pro připojení některých malých zaměřovačů a ručně vyráběnou bakelitovou rukojeťí. Součástí balení je sada bubnových zásobníků na 81 nábojů.\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Trijicon Acog a Red Dot zaměřovače pro lištu Picatinny/Weaver s výjimkou zaměřovačů s dlouhým montážem, jako jsou Eotech 553, C-More, Meprolight M21, EKP-8-18.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: 0217 Sound Suppressor.\n</text>
+</string>
+
+<string id="st_wpn_vz61_scorpion">
+    <text>Skorpion vz.61</text>
+</string>
+<string id="st_wpn_vz61_scorpion_descr">
+    <text>Skorpion vz. 61 (nebo Sa vz. 61 Skorpion) je československý samopal vyvinutý v roce 1959 Miroslavem Rybarem (1924–1970) a vyráběný pod oficiálním označením Samopal vzor 61 ("samopal model 1961") továrnou na zbraně Ceska zbrojovka v Uherském Brodě od roku 1963 do roku 1979.
+    I když byl vyvinut pro použití u bezpečnostních sil, zbraň byla také přijata do výzbroje Československé armády jako osobní zbraň pro nižší důstojníky, řidiče vozidel, personál obrněných vozidel a speciální jednotky. V současnosti je zbraň v použití ozbrojených sil několika zemí jako osobní zbraň. Původně byl ráže .32 ACP, ale většina modelů, které se dostaly do Zóny, byla vz. 65, vz. 82 ráže 9x18mm Makarov.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Scorpion supressor\n</text>
+</string>
+
+<string id="st_wpn_vz61_scorpion_m1">
+    <text>Skorpion vz.61 Vylepšený</text>
+</string>
+<string id="st_wpn_vz61_scorpion_m1_descr">
+    <text>Skorpion vz. 61 (nebo Sa vz. 61 Skorpion) je československý samopal vyvinutý v roce 1959 Miroslavem Rybarem (1924–1970) a vyráběný pod oficiálním označením Samopal vzor 61 ("samopal model 1961") továrnou na zbraně Ceska zbrojovka v Uherském Brodě od roku 1963 do roku 1979.
+    I když byl vyvinut pro použití u bezpečnostních sil, zbraň byla také přijata do výzbroje Československé armády jako osobní zbraň pro nižší důstojníky, řidiče vozidel, personál obrněných vozidel a speciální jednotky. V současnosti je zbraň v použití ozbrojených sil několika zemí jako osobní zbraň. Původně byl ráže .32 ACP, ale většina modelů, které se dostaly do Zóny, byla vz. 65, vz. 82 ráže 9x18mm Makarov.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň je vybavena laserovým zaměřovačem a montáží pro malé Red Dot zaměřovače. Součástí balení je sada zásobníků na 30 nábojů.\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Trijicon RMR, Leupold Deltapoint PRO, Aimpoint T1 (nízká montáž) a Docter Sight.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Scorpion supressor.\n</text>
+</string>
+
+<string id="st_wpn_vz61_scorpion_m2">
+    <text>Skorpion vz.61 Polymer's</text>
+</string>
+<string id="st_wpn_vz61_scorpion_m2_descr">
+    <text>Skorpion vz. 61 (nebo Sa vz. 61 Skorpion) je československý samopal vyvinutý v roce 1959 Miroslavem Rybarem (1924–1970) a vyráběný pod oficiálním označením Samopal vzor 61 ("samopal model 1961") továrnou na zbraně Ceska zbrojovka v Uherském Brodě od roku 1963 do roku 1979.
+    I když byl vyvinut pro použití u bezpečnostních sil, zbraň byla také přijata do výzbroje Československé armády jako osobní zbraň pro nižší důstojníky, řidiče vozidel, personál obrněných vozidel a speciální jednotky. V současnosti je zbraň v použití ozbrojených sil několika zemí jako osobní zbraň. Původně byl ráže .32 ACP, ale většina modelů, které se dostaly do Zóny, byla vz. 65, vz. 82 ráže 9x18mm Makarov.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zbraň je vybavena laserovým zaměřovačem od společnosti Zenit, kompaktní předpažbím a montáží pro malé Red Dot zaměřovače. Součástí balení je sada bubnových zásobníků na 60 nábojů.\n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Trijicon RMR, Leupold Deltapoint PRO, Aimpoint T1 (nízká montáž) a Docter Sight.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Scorpion supressor.\n</text>
+</string>
+
+
+	<string id="st_wpn_pkm_siber">
+    <text>PKM</text>
+</string>
+<string id="st_wpn_pkm_siber_descr">
+    <text>Modifikace armádní kulometu se zásobníkem na náboje. Navzdory vysoké hmotnosti a nedostatečné přesnosti našel široké uplatnění v Zóně. Hlavně se používá k potlačení nepřítele ve značné přesile a k vyčišťování obydlí mutantů.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Žádné \n</text>
+</string>
+
+<string id="st_wpn_g28">
+    <text>HK G28 7.62x51 odstřelovací puška</text>
+</string>
+<string id="st_wpn_g28_descr">
+    <text>Odstřelovací puška HK G28 byla vyvinuta společností Heckler and Koch speciálně pro Bundeswehr jako podpůrná zbraň pro malé pěší jednotky. G28 je založeno na pušce HK MR308, která je civilní verzí automatické pušky HK 417. Navzdory několika rozdílům je HK G28 75% vzájemně vyměnitelný s HK 417. Tato puška byla navržena pro střelbu na vzdálenosti nedosažitelné pro standardní útočné pušky ráže 5.56mm.\n
+    Puškohled Schmidt and Bender PM II 3-12x50 byl původně vytvořen pro elitní vojenské jednotky pro vysoce kvalitní zaměřování a přesnou střelbu. Puškohled je vybaven osvětleným hledím Tremor2, které nabízí různé značky pro výpočet přesných střel zohledňující vzdálenost a boční vítr.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Puškohled Schmidt and Bender PM II 3-12x50 a Aimpoint T1 jsou součástí balení.\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: HK G28 BandT QD 7.62x51 tlumič hluku.\n</text>
+</string>
+
+<string id="st_wpn_adar2_15">
+    <text>ADAR 2-15</text>
+</string>
+<string id="st_wpn_adar2_15_descr">
+    <text>ADAR 2-15 je ruská civilní karabina založená na konstrukci AR-15. Karabina je vyráběna v Petrohradě s využitím izraelských komponent a chromových hlavní vyráběných společností Molot Arms.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny pro lištu Picatinny/Weaver (kromě Red Dot zaměřovačů s nízkou montáží: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (nízká montáž), Docter Sight, 1P76 Rakurs (nízká montáž) a OKP-7).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n</text>
+</string>
+
+<string id="st_wpn_sr2_m2">
+    <text>SR-2M "Veresk" od Manguna</text>
+</string>
+<string id="st_wpn_sr2_m2_descr">
+    <text>SR.2 "Veresk" je ruský samopal (vyráběný TsNIITOCHMASH), navržený pro boj proti nepřátelské pěchotě v těsném boji (na vzdálenost až 200 m) s použitím individuálního pancéřování. Hlavní výhodou SR-2 je jeho vysoká palebná síla, vysoká přesnost střelby a destruktivní účinek střely na krátkou vzdálenost.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Verze SR-2M vylepšená mechanikem frakce Duty, Sergejem "Mangun" Gromovem. Vylepšení zahrnovalo: lehkou skupinu závory, která zvyšuje kadenci palby, pažbu Magpul pro lepší ergonomii, lištu Picatinny pro montáž zaměřovačů Red Dot/magnifikace a laserový modul LA5 Aim Module (s zeleným paprskem).\n		
+    %c[d_purple] • %c[ui_gray_2] Vše pro lištu Picatinny/Weaver, s výjimkou MarchF, Leupold Mark 8, Susat a EOTS-62.\n	
+    %c[d_purple] • %c[ui_gray_2] Tlumič: GZV-SR2\n</text>
+</string>
+
+<string id="st_wpn_pk_siber">
+    <text>PK</text>
+</string>
+<string id="st_wpn_pk_siber_descr">
+    <text>PK (Pulemyot Kalashnikova, nebo "Kalašnikovův kulomet") je pásem podávaný univerzální kulomet ráže 7.62x54mmR. Byl navržen v Sovětském svazu a je v současné době vyráběn v Rusku. Původní kulomet PK byl představen v roce 1961 a vylepšená varianta PKM byla představena v roce 1969. PK byl navržen k nahrazení kulometů SGM a RP-46, které byly dříve ve službě Sovětského svazu. Zbraň zůstává využívána jako pěchotní a vozidlová zbraň v ruských ozbrojených silách a byla také rozsáhle exportována a vyráběna pod licencí v několika dalších zemích.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Žádné \n</text>
+</string>
+
+<string id="st_wpn_ppsh_bas">
+    <text>PPSh-41</text>
+</string>
+<string id="st_wpn_ppsh_bas_descr">
+    <text>Hlavní pěchotní zbraň Sovětských ozbrojených sil během druhé světové války, PPSh-41 byla odolná, nízkoúdržbová zbraň vyrobená z levných, snadno dostupných komponent. Používá náboje 7.62x25mm.\n 
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšen pomocí taktického sady.\n 
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Žádné \n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_ppsh_bas_uptacppsh">
+    <text>PPSh-41 Bandolero</text>
+</string>
+<string id="st_wpn_ppsh_bas_uptacppsh_descr">
+    <text>Hlavní pěchotní zbraň Sovětských ozbrojených sil během druhé světové války, PPSh-41 byla odolná, nízkoúdržbová zbraň vyrobená z levných, snadno dostupných komponent. Používá náboje 7.62x25mm.\n 
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Na zbraní je instalována taktická sada "Bandolero", která zahrnuje kolimátorový zaměřovač EKP-8-18 a vylepšený kryt hlavně (odvádí teplo rychleji), což umožnilo zvýšit kadenci střelby oproti původnímu stavu. (Toto vylepšení je nevratné).\n 
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Reflexní zaměřovač Axion Kobra EKP-8-18 - součást balení.\n 
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný \n</text>
+</string>
+
+<string id="st_wpn_karabiner98k">
+    <text>Karabiner 98 Kurz</text>
+</string>
+<string id="st_wpn_karabiner98k_descr">
+    <text>Během druhé světové války byly určité pušky Karabiner 98k vybrány pro svou výjimečnou přesnost a byly vybaveny dalekohledem ZF39. Tyto pušky byly používány nacistickým Německem jako odstřelovací pušky. Ve zručných rukou měly efektivní dosah až 1000 metrů.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Může být vylepšena pomocí taktické sady (adaptér pro tlumič).\n 		
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: ZF-4 (součást balení).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: Žádný (potřebný je adaptér hlavně pro montáž tlumiče) \n</text>
+</string>
+
+<string id="st_wpn_karabiner98k_silen98">
+    <text>Karabiner 98 Kurz (s adaptérem na tlumič)</text>
+</string>
+<string id="st_wpn_karabiner98k_silen98_descr">
+    <text>Během druhé světové války byly určité pušky Karabiner 98k vybrány pro svou výjimečnou přesnost a byly vybaveny dalekohledem ZF39. Tyto pušky byly používány nacistickým Německem jako odstřelovací pušky. Ve zručných rukou měly efektivní dosah až 1000 metrů.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: ZF-4 (součást balení).\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: K98 Forester.\n </text>
+</string>
+
+<string id="st_wpn_kar98_retrotac">
+    <text>Karabiner 98 Forest Hunter</text>
+</string>
+<string id="st_wpn_kar98_retrotac_descr">
+    <text>Upravená verze německé odstřelovací pušky Mauser Karabiner 98k z období druhé světové války - další dílo lesníka, známého svou láskou k obnově a modernizaci starých ukořistěných zbraní z období druhé světové války. Původní dřevěná pažba byla mírně zlehčena; na přední části pažby je instalován rukojetník, umožňující montáž další nočního zaměřovače. Puška je vybavena vynikajícím odstřelovacím zaměřovačem vyráběným japonskou firmou March. Podle lesníka je tato puška vhodnější k lovu vetřelců v Červeném lese než mutantů.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: March (součást balení), PN-23 "Nozzle" \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: K98 Forester.\n </text>
+</string>
+
+<string id="st_wpn_rem700_mcmillan">
+    <text>Remington 700 McMillan</text>
+</string>
+<string id="st_wpn_rem700_mcmillan_descr">
+    <text>Model 700 pušky jsou vyráběny v USA firmou Remington od roku 1962. Je to pravděpodobně nejběžněji používaná odstřelovací a lovecká puška s kličkou ve Spojených státech. Je to špičkový produkt společnosti Remington Arms. Existuje mnoho variant pušky pro různé náboje, avšak pro tento model byl vybrán náboj .338 Lapua Magnum pro střelbu na dlouhé a velmi dlouhé vzdálenosti. Puška je vybavena pažbou McMillan A5, hlavní PGW Defense C14 s drážkami a kompenzátorem tlaku na hlavně, stejně jako výstředním předním rielem Badger Ordanance pro další noční zaměřovače.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: SchmidtandBender PM II 3-12x50 (součást balení), PN-23 "Nozzle" \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PGW Defense C14 Timberwolf.\n </text>
+</string>
+
+<string id="st_wpn_rem700_aics">
+    <text>Remington 700 AICS</text>
+</string>
+<string id="st_wpn_rem700_aics_descr">
+    <text>Model 700 pušky jsou vyráběny v USA firmou Remington od roku 1962. Je to pravděpodobně nejběžněji používaná odstřelovací a lovecká puška s kličkou ve Spojených státech. Je to špičkový produkt společnosti Remington Arms. Existuje mnoho variant pušky pro různé náboje, avšak pro tento model byl vybrán náboj .338 Lapua Magnum pro střelbu na dlouhé a velmi dlouhé vzdálenosti. Puška je vybavena pažbou AICS (Accuracy International Chassis Systems), hlavní PGW Defense C14 s drážkami a kompenzátorem tlaku na hlavně, stejně jako výstředním předním rielem Badger Ordanance pro další noční zaměřovače.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: SchmidtandBender PM II 3-12x50 (součást balení), PN-23 "Nozzle" \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: PGW Defense C14 Timberwolf.\n </text>
+</string>
+
+<string id="st_wpn_pkm_zenit_shorty">
+    <text>Shorty</text>
+</string>
+<string id="st_wpn_pkm_zenit_shorty_descr">
+    <text>Lehčí a vylepšená modifikace kulometu PKM v tělovém krytu od společnosti Zenitka. Díky krátké hlavni má model zlepšenou ergonomii, což ho činí vhodnějším pro boj ve městech. Model má nainstalovanou šikmou přední rukojeť pro lepší kontrolu zpětného rázu. V Zóně je používán především vojenskými jednotkami (speciálními jednotkami).\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny zaměřovače pro picatinny/weaver, taktické zařízení Zenit Perst-3 s červeným laserem (součást balení) \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-V Supresor\n </text>
+</string>
+
+<string id="st_wpn_pkm_zenit_siber">
+    <text>PKM Zenit</text>
+</string>
+<string id="st_wpn_pkm_zenit_siber_descr">
+    <text>Vylepšená modifikace kulometu PKM v tělovém krytu od společnosti Zenitka. Model má nainstalovanou šikmou přední rukojeť pro lepší kontrolu zpětného rázu. V Zóně je používán především vojenskými jednotkami (speciálními jednotkami).\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny zaměřovače pro picatinny/weaver, taktické zařízení Zenit Perst-3 s červeným laserem (součást balení) \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-V Supresor\n </text>
+</string>
+
+<string id="st_wpn_scar_l_tac">
+    <text>Scar-L CQB</text>
+</string>
+<string id="st_wpn_scar_l_tac_descr">
+    <text>Útočná puška FN SCAR-L (Special Operation Forces Combat Assault Rifle - Light) ráže 5,56x45 NATO byla přijata USSOCOM (United States Special Operations Command) jako Mk 16. Má bočně sklopnou polymerovou pažbu a volně visící, studeně kladivem kovanou hlaveň dle vojenských specifikací s chromovaným vývrtem. Plně ambidextrózní ovládací prvky okamžitě přizpůsobí SCAR jakémukoli uživateli nebo jakékoliv střelecké pozici. V integrovaném přijímači je optický lišta a tři příslušenství umožňují montáž různých zaměřovačů, elektronických zaměřovačů, taktických svítilen a laserů. Vyráběno společností Fabrique Nationale Herstal. Dostupné v černé a pískové barvě.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny zaměřovače pro picatinny/weaver, taktický zelený laserový modul B.E. MEYERS MAWL-C1 (součást balení) \n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: ADVANCED ARMAMENT (AAC) M4-2000\n </text>
+</string>
+
+<string id="st_wpn_pkp_siber">
+    <text>PKP Pecheneg</text>
+</string>
+<string id="st_wpn_pkp_siber_descr">
+    <text>PKP "Pecheneg" je ruský lehký kulomet ráže 7,62x54mmR. Jedná se o modernizovaný kulomet PKM. Pecheneg je řečen být přesnější než všechny jeho předchůdci díky těžší, neodnímatelné hlavni s nuceným chlazením vzduchem a radiálními žebry chlazení a rukojetí, která eliminuje efekt mlhy od horkých plynů a udržuje hlaveň chladnější, což činí zbraň spolehlivější.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: všechny zaměřovače pro montáž na drážku\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-V Supresor\n </text>
+</string>
+
+<string id="st_wpn_pkp_tac_siber">
+    <text>PKP Pecheneg Tactical</text>
+</string>
+<string id="st_wpn_pkp_tac_siber_descr">
+    <text>Lehčí a vylepšená modifikace kulometu PKP. Díky krátké hlavni má model zlepšenou ergonomii, což ho činí vhodnějším pro boj ve městech. Model má nainstalovanou šikmou přední rukojeť pro lepší kontrolu zpětného rázu. V Zóně je používán především vojenskými jednotkami (speciálními jednotkami) a žoldáků.\n
+    %c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+    %c[d_purple] • %c[ui_gray_2] Zaměřovače: Všechny zaměřovače pro picatinny/weaver, taktické zařízení Zenit Perst-3 s červeným laserem (součást balení)\n
+    %c[d_purple] • %c[ui_gray_2] Tlumič: TGP-V Supresor\n</text>
+</string>
+
+	
+</string_table>
