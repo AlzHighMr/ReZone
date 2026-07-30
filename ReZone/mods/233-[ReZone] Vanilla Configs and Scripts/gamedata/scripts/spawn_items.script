@@ -3,6 +3,19 @@ local poss = {
 	-- =========================================================
 	-- KORDON
 	-- =========================================================
+    -- Kordon - vytah 
+ 	{-14.917474, 2.960025, 61.544621, 20328, 362,
+	{
+      		"stash_note_1",
+		}
+	},
+	
+    -- Kordon - bagl na tunelu do bazin 
+ 	{-267.519531, -17.466713, -286.665039, 20328, 362,
+	{
+      		"stash_note_2",
+		}
+	},
 
 	-- Kordon - pod mostem
 	{70.7588, 2.9086, 156.6009,20328, 362,
@@ -16,7 +29,7 @@ local poss = {
 	},
 
 	-- Kordon - box na stanovisti u vchodu na Smetiste
-	{29.3552, 17.5472, 682.9547,20328, 362,
+	{29.3552, 17.5472, 682.9547, 20328, 362,
 		{
 			"ammo_5.45x39_fmj",
 			"ammo_5.45x39_fmj",
@@ -212,6 +225,13 @@ local function round_pos(value)
 	return round_idp(value, 1)
 end
 
+local function get_stash_id(p)
+	return tostring(p[1]) .. "_" ..
+	       tostring(p[2]) .. "_" ..
+	       tostring(p[3]) .. "_" ..
+	       tostring(p[4]) .. "_" ..
+	       tostring(p[5])
+end
 
 
 local function spawn_stash_items()
@@ -219,6 +239,7 @@ local function spawn_stash_items()
 	for i = 1, 65534 do
 
 		local se_obj = alife_object(i)
+
 		if se_obj and IsInvbox(se_obj) then
 
 			local obj_pos = se_obj.position
@@ -226,9 +247,12 @@ local function spawn_stash_items()
 			local obj_gvid = se_obj.m_game_vertex_id
 
 			for j = 1, #poss do
-				if not spawned_poss[j] then
 
-					local p = poss[j]
+				local p = poss[j]
+				local stash_id = get_stash_id(p)
+
+				if not spawned_poss[stash_id] then
+
 					local pos_check =
 						round_pos(obj_pos.x) == round_pos(p[1])
 						and
@@ -240,17 +264,25 @@ local function spawn_stash_items()
 						obj_lvid == p[4]
 						and
 						obj_gvid == p[5]
+
 					if pos_check and vertex_check then
+
 						for n = 1, #p[6] do
-							alife_create_item(p[6][n],se_obj)
+							alife_create_item(p[6][n], se_obj)
 						end
-						spawned_poss[j] = true
+
+						spawned_poss[stash_id] = true
 
 					end
+
 				end
+
 			end
+
 		end
+
 	end
+
 end
 
 local function spawn_world_items()
