@@ -1,0 +1,17 @@
+[logic]
+active = ph_idle@stop
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@play]:ph_idle@base
+on_info = %=play_sound(monolith_lim_combat_chattering)%
+tips = Turn:Off
+on_use = ph_idle@stop %=stop_sound% 
+
+[ph_idle@stop]:ph_idle@base
+tips = Turn:On
+on_use = ph_idle@play
+
+[collide]
+ignore_static

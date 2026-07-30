@@ -1,0 +1,22 @@
+[logic]
+active = ph_idle@wait_actor
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@wait_actor]:ph_idle@base
+tips = Climb:Up
+on_use = ph_idle@reset %+kat_climb_ladder%
+
+[ph_idle@reset]
+on_info = ph_idle@end %-kat_climb_ladder%
+
+[ph_idle@climb_sound_1]:ph_idle@base
+on_info = %=play_sound(kat_climb_sound)%
+on_signal = sound_end | ph_idle@end
+
+[ph_idle@end]
+on_timer = 2000 | ph_idle@wait_actor
+
+[collide]
+ignore_static

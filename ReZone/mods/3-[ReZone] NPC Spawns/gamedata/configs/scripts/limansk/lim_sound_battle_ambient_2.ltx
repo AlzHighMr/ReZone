@@ -1,0 +1,16 @@
+[logic]
+active = ph_idle@play
+
+[ph_idle@play]
+on_info = %=play_sound(lim_battle_ambient_2)%
+on_signal = sound_end | ph_idle@delay 
+
+[ph_idle@delay]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 1260 | ph_idle@play
+
+[ph_idle@stop]
+on_info = {-monolith_eidolon_dead} ph_idle@play
+
+[collide]
+ignore_static

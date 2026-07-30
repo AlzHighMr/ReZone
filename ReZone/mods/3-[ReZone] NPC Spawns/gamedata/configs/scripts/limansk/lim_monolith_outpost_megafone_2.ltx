@@ -1,0 +1,15 @@
+[logic]
+active = {+monolith_lim_outpost_megafone_2} ph_idle@delay, ph_idle@stop %=stop_sound%
+
+[ph_idle@delay]
+on_info = {-monolith_lim_outpost_megafone_2} ph_idle@stop %=stop_sound% 
+on_game_timer = 550 | ph_idle@play %=stop_sound% 
+
+[ph_idle@play]
+nonscript_usable = false
+on_info = {+monolith_lim_outpost_megafone_2} %=play_sound(monolith_lim_outpost_speech_2)%, %=stop_sound% ph_idle@stop
+on_signal = sound_end | ph_idle@delay
+
+[ph_idle@stop]
+nonscript_usable = false
+on_info = {+monolith_lim_outpost_megafone_2} ph_idle@play

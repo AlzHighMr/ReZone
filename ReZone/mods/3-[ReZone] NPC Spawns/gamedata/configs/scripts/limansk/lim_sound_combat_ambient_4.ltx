@@ -1,0 +1,44 @@
+[logic]
+active = ph_idle@delay
+
+[ph_idle@delay]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 680 | ph_idle@play
+
+[ph_idle@play]
+on_info = %=play_sound(lim_combat_ambient_4)%
+on_signal = sound_end | ph_idle@wait
+
+[ph_idle@wait]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 1620 | ph_idle@play_2
+
+[ph_idle@play_2]
+on_info = %=play_sound(lim_combat_ambient_3)%
+on_signal = sound_end | ph_idle@wait_2
+
+[ph_idle@wait_2]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 580 | ph_idle@play_3
+
+[ph_idle@play_3]
+on_info = %=play_sound(lim_combat_ambient_2)%
+on_signal = sound_end | ph_idle@wait_3
+
+[ph_idle@wait_3]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 1620 | ph_idle@play_4
+
+[ph_idle@play_4]
+on_info = %=play_sound(lim_combat_ambient_1)%
+on_signal = sound_end | ph_idle@wait_4
+
+[ph_idle@wait_4]
+on_info = {+monolith_eidolon_dead} ph_idle@stop %=stop_sound%
+on_game_timer = 580 | ph_idle@play
+
+[ph_idle@stop]
+on_info = {-monolith_eidolon_dead} ph_idle@delay
+
+[collide]
+ignore_static

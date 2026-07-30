@@ -1,0 +1,30 @@
+;![kovalsky_surge_phase_1] ;-- agr_blowout_siren
+;type = 3d ;actor
+;npc_prefix = false
+;path = characters_voice\scenario\agroprom\kovalsky_surge_phase_1
+;shuffle = rnd
+;idle = 3,5,100
+;levels = l03_agroprom
+
+;![agr_army_alarm] ;-- needs to be converted to the game engine.
+;type = 3d
+;path = ambient\siren_1 ;-- test sound
+;shuffle = rnd
+;idle = 0,0,100
+;levels = l03_agroprom
+
+;[agr_blowout_siren] ;-- added, change path, sound looped?!
+;type = 3d
+;path = ambient\blowout\blowout_siren_agr
+;shuffle = rnd
+;idle = 0,0,100
+;levels = l03_agroprom
+
+![kovalsky_surge_phase_1] ;-- agr_blowout_siren
+type = 3d
+actor_stereo = false
+npc_prefix = false
+path = characters_voice\scenario\agroprom\kovalsky_surge_phase_1
+shuffle = seq
+idle = 0,0,0
+levels = l03_agroprom

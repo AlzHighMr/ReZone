@@ -1,0 +1,17 @@
+![logic]
+!active = ph_sound
+active = ph_idle@music
+
+[ph_idle@music]
+on_info = %=play_sound(mar_smart_terrain_base_radio_mlr)%
+on_info2 = {=is_night} ph_idle@night
+on_info3 = {=surge_started} ph_idle@surge
+
+[ph_idle@night]
+on_info = %=play_sound(no_sound_mlr)%
+on_info2 = {!is_night} ph_idle@music
+
+[ph_idle@surge]
+on_info = %=play_sound(broken_radio_mlr)%
+on_info2 = {!surge_started} ph_idle@music
+

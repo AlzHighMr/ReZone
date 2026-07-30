@@ -1,0 +1,27 @@
+[logic]
+active = ph_idle@check
+
+[ph_idle@check]
+on_info = {+story_mode_disabled} ph_idle@stop, {+bar_deactivate_radar_done} ph_idle@stop, ph_idle@play
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@play]:ph_idle@base
+on_info = %+monolith_red_outpost_megafone%
+tips = Turn:Off
+on_use = ph_idle@stop %=stop_sound%
+
+[ph_idle@stop]:ph_idle@base
+on_info = %-monolith_red_outpost_megafone%
+on_info2 = {-bar_deactivate_radar_done} ph_idle@reset
+tips = Turn:On
+on_use = ph_idle@play
+
+[ph_idle@reset]:ph_idle@base
+tips = Turn:On
+on_use = ph_idle@play
+on_game_timer = 15500 | ph_idle@play
+
+[collide]
+ignore_static

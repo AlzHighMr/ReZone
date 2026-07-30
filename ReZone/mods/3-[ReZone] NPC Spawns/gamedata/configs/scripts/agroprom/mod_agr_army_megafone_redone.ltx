@@ -1,0 +1,58 @@
+![logic]
+!active = ph_idle@wait
+active = ph_idle@wait_for_actor
+
+[ph_idle@wait_for_actor]
+on_info = {=surge_started} ph_idle@surge, {+agr_military_colonel_kovalski_dead} ph_idle@nil, {=actor_in_zone(agr_army_base_zone)} ph_idle@check_conditions, {=actor_near_smart(agr_smart_terrain_1_6_near_1)} ph_idle@check_conditions, {=actor_near_smart(agr_smart_terrain_1_6_near_2)} ph_idle@check_conditions, ph_idle@start_humor   
+
+[ph_idle@check_conditions]
+on_info = {=is_actor_enemy_to_faction(army)} ph_idle@alarm, ph_idle@start_humor
+
+[ph_idle@check_conditions_2]
+on_info = {=is_actor_enemy_to_faction(army)} ph_idle@alarm
+on_info2 = {=surge_started} ph_idle@surge
+on_game_timer = 800 | ph_idle@wait_for_actor
+
+![ph_idle@wait]
+!on_info = {=actor_in_zone(agr_army_base_zone)} ph_idle@start_humor
+!on_info2 = {=check_smart_alarm_status(agr_smart_terrain_1_6_near_1)} ph_idle@alarm
+!on_info3 = {=check_smart_alarm_status(agr_smart_terrain_1_6)} ph_idle@alarm
+!on_info4 = {=check_smart_alarm_status(agr_smart_terrain_1_6_near_2)} ph_idle@alarm
+
+![ph_idle@start_humor]
+on_info = %=play_sound(agr_army_comandir_megafon) +agr_military_colonel_kovalski_talk% ph_idle@sound_idle
+on_info2 = {=check_smart_alarm_status(agr_smart_terrain_1_6_near_1)} ph_idle@alarm
+on_info3 = {=check_smart_alarm_status(agr_smart_terrain_1_6)} ph_idle@alarm
+on_info4 = {=check_smart_alarm_status(agr_smart_terrain_1_6_near_2)} ph_idle@alarm
+on_info5 = {=check_smart_alarm_status(agr_smart_terrain_1_3)} ph_idle@alarm
+on_info6 = {=check_smart_alarm_status(agr_smart_terrain_4_6)} ph_idle@alarm
+on_info7 = {=surge_started} ph_idle@surge
+
+![ph_idle@alarm]
+on_info = %=play_sound(agr_army_alarm) -agr_military_colonel_kovalski_talk%
+on_timer = 33000 | ph_idle@wait_for_actor
+on_info2 = {!check_smart_alarm_status(agr_smart_terrain_1_6_near_1)} ph_idle@wait_for_actor
+on_info3 = {!check_smart_alarm_status(agr_smart_terrain_1_6)} ph_idle@wait_for_actor
+on_info4 = {!check_smart_alarm_status(agr_smart_terrain_1_6_near_2)} ph_idle@wait_for_actor
+on_info5 = {!check_smart_alarm_status(agr_smart_terrain_1_3)} ph_idle@wait_for_actor
+on_info6 = {!check_smart_alarm_status(agr_smart_terrain_4_6)} ph_idle@wait_for_actor
+on_info7 = {=surge_started} ph_idle@surge
+
+[ph_idle@sound_idle]
+on_info = {=surge_started} ph_idle@surge
+on_info2 = {+agr_military_colonel_kovalski_dead} ph_idle@nil
+on_info3 = {=actor_in_zone(agr_army_base_zone)} ph_idle@check_conditions_2, {=actor_near_smart(agr_smart_terrain_1_6_near_1)} ph_idle@check_conditions_2, {=actor_near_smart(agr_smart_terrain_1_6_near_2)} ph_idle@check_conditions_2
+on_game_timer = 800 | ph_idle@wait_for_actor
+
+[ph_idle@surge]
+on_info = %-agr_military_colonel_kovalski_talk =stop_sound%
+on_game_timer = 160 | ph_idle@surge_started
+
+[ph_idle@surge_started] 
+on_info = %=play_sound(kovalsky_surge_phase_1)%  ;-- agr_blowout_siren, quick fix, looped sound.
+on_signal = sound_end | ph_idle@surge_act_idle 
+
+[ph_idle@surge_act_idle]
+on_game_timer = 460 | ph_idle@start_humor 
+
+[ph_idle@nil]

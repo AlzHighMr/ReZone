@@ -1,0 +1,15 @@
+[logic]
+active = ph_idle@sound
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@sound]:ph_idle@base
+on_info = %=play_sound(pri_monolith_antenna)%
+on_info2 = {+pri_a25_antenna_destroyed} ph_idle@broken
+
+[ph_idle@broken]:ph_idle@base
+on_info = nil %=stop_sound%
+
+[collide]
+ignore_static

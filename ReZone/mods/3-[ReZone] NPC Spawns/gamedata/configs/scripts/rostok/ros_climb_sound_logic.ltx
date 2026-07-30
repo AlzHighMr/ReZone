@@ -1,0 +1,34 @@
+[logic]
+active = ph_idle@wait_actor
+
+[ph_idle@base]
+nonscript_usable = true
+
+[ph_idle@wait_actor]:ph_idle@base
+tips = Climb:Ladder
+on_use = ph_idle@reset %+ros_climb_ladder%
+
+[ph_idle@reset]
+on_info = {+ladder_sound} ph_idle@ladder_sound_1 %-ros_climb_ladder%
+
+[ph_idle@ladder_sound_1]:ph_idle@base
+on_info = %=play_sound(ros_climb_sound_1)%
+on_signal = sound_end | ph_idle@ladder_sound_2
+
+[ph_idle@ladder_sound_2]:ph_idle@base
+on_info = %=play_sound(ros_climb_sound_2)%
+on_signal = sound_end | ph_idle@ladder_sound_3
+
+[ph_idle@ladder_sound_3]:ph_idle@base
+on_info = %=play_sound(ros_climb_sound_3)%
+on_signal = sound_end | ph_idle@ladder_sound_4
+
+[ph_idle@ladder_sound_4]:ph_idle@base
+on_info = %=play_sound(ros_climb_sound_4)%
+on_signal = sound_end | ph_idle@end
+
+[ph_idle@end]
+on_timer = 2000 | ph_idle@wait_actor
+
+[collide]
+ignore_static
