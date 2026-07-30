@@ -23,26 +23,3 @@ on_info7 = {+bar_arena_start_introduce} ph_idle@idle
 on_info8 = {=surge_started} ph_idle@surge
 on_timer = 5000 | ph_idle@default
 
-;[ph_idle@warn]
-;on_info = %=play_sound(bar_dolg_warn)%
-;on_info2 = {!actor_has_weapon} ph_idle@default
-;on_info3 = {+bar_arena_start_introduce} ph_idle@idle
-;on_info4 = {=surge_started} ph_idle@surge
-;on_timer = 5000 | ph_idle@default 
-
-[ph_idle@surge]
-on_game_timer = 100 | ph_idle@surge_started 
-
-[ph_idle@surge_started] 
-on_info = %=play_sound(bar_blowout_siren_1)%
-;on_info2 = {!surge_started} ph_idle@default	
-on_game_timer = 370 | ph_idle@surge_siren_end
-
-[ph_idle@surge_siren_end]						
-on_info = %=play_sound(bar_blowout_siren_2)%
-on_signal = sound_end | ph_idle@surge_act_idle 
-
-[ph_idle@surge_act_idle]
-on_info = {+bar_arena_start_introduce} ph_idle@idle
-on_info2 = {=surge_started} ph_idle@surge
-on_game_timer = 1240 | ph_idle@default
