@@ -1,10 +1,44 @@
 local poss = {
-    { 70.7588, 2.9086, 156.6009, 20328, 362, { "purification_tablet", "bandage", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "grenade_rgd5" } }, -- kordon pod mostem
-    { 29.3552, 17.5472, 682.9547, 20328, 362, { "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "medkit" } },  -- box na stanovisti u vchodu na smetiste kordon
-    { 110.0372, -2.2368, 3.1693, 20328, 362, { "ammo_12x70_buck", "ammo_12x70_buck", "ammo_12x70_buck", "bandage", "bandage", "bandage", "glucose_s" } }, -- ATP
-    { -141.0125, -23.4271, -358.4380, 20328, 362, { "army_outfit", "helm_bandana", "wpn_ak74u_camo", "ammo_5.45x39_fmj", "mag_ak_5.45x39_default", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "kobra", "wpn_sil_pbs4" } }, -- armadni zakladna kordon
+	-- kordon pod mostem
+    { 70.7588, 2.9086, 156.6009, 20328, 362, { "purification_tablet", "bandage", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "grenade_rgd5" } }, 
+
+	-- box na stanovisti u vchodu na smetiste kordon
+    { 29.3552, 17.5472, 682.9547, 20328, 362, { "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "medkit" } },  
+
+	-- ATP
+    { 110.0372, -2.2368, 3.1693, 20328, 362, { "ammo_12x70_buck", "ammo_12x70_buck", "ammo_12x70_buck", "bandage", "bandage", "bandage", "glucose_s" } }, 
+	
+	-- Armadni zakladna kordon
+    { -141.0125, -23.4271, -358.4380, 20328, 362, { "army_outfit", "helm_bandana", "wpn_ak74u_camo", "ammo_5.45x39_fmj", "mag_ak_5.45x39_default", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "kobra", "wpn_sil_pbs4" } },
+
+	-- Podzemi Agropromu (bloodsucker room)
 	{ 2.800000, -8.510000, 116.239998, 230, 3616, { "wpn_beretta", "mag_ak_5.45x39_default", "ammo_9x19_ap", "ammo_9x19_ap", "ammo_9x19_ap", "mag_beretta_9x19_default","mag_beretta_9x19_default","mag_beretta_9x19_default", "wpn_sil_pbs4" } },
-    { 276.7520, 12.3299, 311.894, 470434, 4891, { "cs_deshefrator" } }, -- last dawn fix
+    
+	-- Podzemi Agropromu (batoh u mrtvoli u schodiste)
+	{ 98.776566, -16.126129, 60.492626, 230, 3616, { "ammo_9x39_pab9", "ammo_9x39_pab9", "ammo_9x39_pab9", "ammo_9x39_pab9", "medkit_army", "pso2" } },  
+	
+	-- Yuzhniy ketaminuv batoh na dne rokle
+	{ -503.642090, -26.214197, -399.140717, 904052, 5724, { "wpn_toz34_bull", "ammo_12x76_bull", "ammo_12x76_bull", "ammo_12x76_bull", "eft_survkit" } },
+    
+	-- Smetiste modra skrinka pobliz flea market
+	{99.573196, -0.199999, 139.243256, 186053, 641, { "achievement_box_1" } },
+
+	-- Smetiste skrinka na boku kopce smeti
+	{52.190620, 5.703464, -30.852692, 186053, 641, { "achievement_box_1" } },
+
+    --Velke baziny (strojovy vuz)
+	{423.506470, 3.168000, 245.400497, 174958, 0, { "achievement_box_1" } },
+    --Velke baziny (cerpaci stanice)
+	{2.302933, 3.261074, 8.932654, 174958, 0, { "achievement_box_1" } },
+	--Velke baziny (vypalena vesnice)
+	{274.119537, 4.625999, 45.265034, 174958, 0, { "achievement_box_2" } },
+	-- Bar prvni checkpoint od smetiste
+	{216.250473, 0.050844, -22.175142, 78786, 1672, { "achievement_box_1" } },
+
+	-- Bar (Nevim jak to popsat)
+	{216.250473, 0.050844, -22.175142, 78786, 1672, { "device_torch_dummy" } },
+	-- Last dawn Pripyat fix
+	{ 276.7520, 12.3299, 311.894, 470434, 4891, { "cs_deshefrator" } }, 
 }
 
 local world_poss = {
