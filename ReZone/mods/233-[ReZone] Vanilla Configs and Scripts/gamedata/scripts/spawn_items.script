@@ -1,117 +1,300 @@
 local poss = {
-	-- kordon pod mostem
-    { 70.7588, 2.9086, 156.6009, 20328, 362, { "purification_tablet", "bandage", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "grenade_rgd5" } }, 
 
-	-- box na stanovisti u vchodu na smetiste kordon
-    { 29.3552, 17.5472, 682.9547, 20328, 362, { "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "medkit" } },  
+	-- =========================================================
+	-- KORDON
+	-- =========================================================
 
-	-- ATP
-    { 110.0372, -2.2368, 3.1693, 20328, 362, { "ammo_12x70_buck", "ammo_12x70_buck", "ammo_12x70_buck", "bandage", "bandage", "bandage", "glucose_s" } }, 
-	
-	-- Armadni zakladna kordon
-    { -141.0125, -23.4271, -358.4380, 20328, 362, { "army_outfit", "helm_bandana", "wpn_ak74u_camo", "ammo_5.45x39_fmj", "mag_ak_5.45x39_default", "ammo_5.45x39_fmj", "ammo_5.45x39_fmj", "kobra", "wpn_sil_pbs4" } },
+	-- Kordon - pod mostem
+	{70.7588, 2.9086, 156.6009,20328, 362,
+	{
+			"purification_tablet",
+			"bandage",
+			"ammo_5.45x39_fmj",
+			"ammo_5.45x39_fmj",
+			"grenade_rgd5",
+		}
+	},
 
-	-- Podzemi Agropromu (bloodsucker room)
-	{ 2.800000, -8.510000, 116.239998, 230, 3616, { "wpn_beretta", "mag_ak_5.45x39_default", "ammo_9x19_ap", "ammo_9x19_ap", "ammo_9x19_ap", "mag_beretta_9x19_default","mag_beretta_9x19_default","mag_beretta_9x19_default", "wpn_sil_pbs4" } },
-    
-	-- Podzemi Agropromu (batoh u mrtvoli u schodiste)
-	{ 98.776566, -16.126129, 60.492626, 230, 3616, { "ammo_9x39_pab9", "ammo_9x39_pab9", "ammo_9x39_pab9", "ammo_9x39_pab9", "medkit_army", "pso2" } },  
-	
-	-- Yuzhniy ketaminuv batoh na dne rokle
-	{ -503.642090, -26.214197, -399.140717, 904052, 5724, { "wpn_toz34_bull", "ammo_12x76_bull", "ammo_12x76_bull", "ammo_12x76_bull", "eft_survkit" } },
-    
-	-- Smetiste modra skrinka pobliz flea market
-	{99.573196, -0.199999, 139.243256, 186053, 641, { "achievement_box_1" } },
+	-- Kordon - box na stanovisti u vchodu na Smetiste
+	{29.3552, 17.5472, 682.9547,20328, 362,
+		{
+			"ammo_5.45x39_fmj",
+			"ammo_5.45x39_fmj",
+			"medkit",
+		}
+	},
 
-	-- Smetiste skrinka na boku kopce smeti
-	{52.190620, 5.703464, -30.852692, 186053, 641, { "achievement_box_1" } },
+	-- Kordon - ATP
+	{110.0372, -2.2368, 3.1693, 20328, 362,
+		{
+			"ammo_12x70_buck",
+			"ammo_12x70_buck",
+			"ammo_12x70_buck",
+			"bandage",
+			"bandage",
+			"bandage",
+			"glucose_s",
+		}
+	},
 
-    --Velke baziny (strojovy vuz)
-	{423.506470, 3.168000, 245.400497, 174958, 0, { "achievement_box_1" } },
-    --Velke baziny (cerpaci stanice)
-	{2.302933, 3.261074, 8.932654, 174958, 0, { "achievement_box_1" } },
-	--Velke baziny (vypalena vesnice)
-	{274.119537, 4.625999, 45.265034, 174958, 0, { "achievement_box_2" } },
-	-- Bar prvni checkpoint od smetiste
-	{216.250473, 0.050844, -22.175142, 78786, 1672, { "achievement_box_1" } },
+	-- Kordon - armadni zakladna
+	{-141.0125, -23.4271, -358.4380, 20328, 362,
+		{
+			"army_outfit",
+			"helm_bandana",
+			"wpn_ak74u_camo",
+			"ammo_5.45x39_fmj",
+			"mag_ak_5.45x39_default",
+			"ammo_5.45x39_fmj",
+			"ammo_5.45x39_fmj",
+			"kobra",
+			"wpn_sil_pbs4",
+		}
+	},
 
-	-- Bar (Nevim jak to popsat)
-	{216.250473, 0.050844, -22.175142, 78786, 1672, { "device_torch_dummy" } },
-	-- Last dawn Pripyat fix
-	{ 276.7520, 12.3299, 311.894, 470434, 4891, { "cs_deshefrator" } }, 
+
+	-- =========================================================
+	-- AGROPROM
+	-- =========================================================
+
+	-- Podzemi Agropromu - bloodsucker room
+	{2.800000, -8.510000, 116.239998, 230, 3616,
+		{
+			"wpn_beretta",
+			"mag_ak_5.45x39_default",
+			"ammo_9x19_ap",
+			"ammo_9x19_ap",
+			"ammo_9x19_ap",
+			"mag_beretta_9x19_default",
+			"mag_beretta_9x19_default",
+			"mag_beretta_9x19_default",
+			"wpn_sil_pbs4",
+		}
+	},
+
+	-- Podzemi Agropromu - batoh u mrtvoly u schodiste
+	{
+		98.776566, -16.126129, 60.492626,
+		230, 3616,
+		{
+			"ammo_9x39_pab9",
+			"ammo_9x39_pab9",
+			"ammo_9x39_pab9",
+			"ammo_9x39_pab9",
+			"medkit_army",
+			"pso2",
+		}
+	},
+
+
+	-- =========================================================
+	-- YUZHNIY
+	-- =========================================================
+
+	-- Yuzhniy - batoh na dne rokle
+	{
+		-503.642090, -26.214197, -399.140717,
+		904052, 5724,
+		{
+			"wpn_toz34_bull",
+			"ammo_12x76_bull",
+			"ammo_12x76_bull",
+			"ammo_12x76_bull",
+			"eft_survkit",
+		}
+	},
+
+
+	-- =========================================================
+	-- SMETIsTe
+	-- =========================================================
+
+	-- Smetiste - modra skrinka pobliz flea market
+	{
+		99.573196, -0.199999, 139.243256,
+		186053, 641,
+		{
+			"achievement_box_1",
+		}
+	},
+
+	-- Smetiste - skrinka na boku kopce smeti
+	{
+		52.190620, 5.703464, -30.852692,
+		186053, 641,
+		{
+			"achievement_box_1",
+		}
+	},
+
+
+	-- =========================================================
+	-- VELKE BAZINY
+	-- =========================================================
+
+	-- Velk? baziny - strojovy vuz
+	{
+		423.506470, 3.168000, 245.400497,
+		174958, 0,
+		{
+			"achievement_box_1",
+		}
+	},
+
+	-- Velk? baziny - cerpaci stanice
+	{
+		2.302933, 3.261074, 8.932654,
+		174958, 0,
+		{
+			"achievement_box_1",
+		}
+	},
+
+	-- Velk? baziny - vypalena vesnice
+	{
+		274.119537, 4.625999, 45.265034,
+		174958, 0,
+		{
+			"achievement_box_2",
+		}
+	},
+
+
+	-- =========================================================
+	-- BAR
+	-- =========================================================
+
+	-- Bar - prvni checkpoint od Smetiste
+	{
+		216.250473, 0.050844, -22.175142,
+		78786, 1672,
+		{
+			"achievement_box_1",
+		}
+	},
+
+
+	-- =========================================================
+	-- LAST DAWN FIX
+	-- =========================================================
+
+	-- Last Dawn - Pripyat fix
+	{
+		276.7520, 12.3299, 311.8940,
+		470434, 4891,
+		{
+			"cs_deshefrator",
+		}
+	},
 }
+
+
+
 
 local world_poss = {
-	-- Kordon 
-	{ "helm_respirator", 338.6276550293, 18.372943878174, 238.10443115234, 43603, 364 },
-	--{ "device_torch_dummy", 7.0371055603027, 14.310089111328, 92.86848449707, 310994, 455; },				
+
+	-- Kordon
+	{
+		"helm_respirator",
+		338.6276550293,
+		18.372943878174,
+		238.10443115234,
+		43603,
+		364,
+	},
 }
 
-local items_spawned			
 
-function actor_on_first_update()
-    if items_spawned then return end		
+local spawned_poss = {}
+local spawned_world_poss = {}
 
-	CreateTimeEvent("some_itms_spawn_e", "some_itms_spawn_a", 2, delay_items_spawn)		
-
+local function round_pos(value)
+	return round_idp(value, 1)
 end
 
-function delay_items_spawn()			
 
-	local function r(v)		
-		v = round_idp(v, 1)
-		return v
-	end
 
-	-- spawning in stash
-    for i = 1, 65534 do		
-        local se_obj = alife_object(i)
-        if se_obj and IsInvbox(se_obj) then		
-			local obj_pos, obj_lvid, obj_gvid = se_obj.position, se_obj.m_level_vertex_id, se_obj.m_game_vertex_id
+local function spawn_stash_items()
 
-			for j = 1, #poss do			
-				local p = poss[j]		
-				local pos_check = r(obj_pos.x) == r(p[1]) and r(obj_pos.y) == r(p[2]) and r(obj_pos.z) == r(p[3])
-				local lvid_gvid_check = obj_lvid == p[4] and obj_gvid == p[5]
-				if pos_check and lvid_gvid_check then
+	for i = 1, 65534 do
 
-					--spawning items into stash
-					for n = 1, #p[6] do
-						alife_create_item(p[6][n], se_obj)
+		local se_obj = alife_object(i)
+		if se_obj and IsInvbox(se_obj) then
+
+			local obj_pos = se_obj.position
+			local obj_lvid = se_obj.m_level_vertex_id
+			local obj_gvid = se_obj.m_game_vertex_id
+
+			for j = 1, #poss do
+				if not spawned_poss[j] then
+
+					local p = poss[j]
+					local pos_check =
+						round_pos(obj_pos.x) == round_pos(p[1])
+						and
+						round_pos(obj_pos.y) == round_pos(p[2])
+						and
+						round_pos(obj_pos.z) == round_pos(p[3])
+
+					local vertex_check =
+						obj_lvid == p[4]
+						and
+						obj_gvid == p[5]
+					if pos_check and vertex_check then
+						for n = 1, #p[6] do
+							alife_create_item(p[6][n],se_obj)
+						end
+						spawned_poss[j] = true
+
 					end
-
 				end
 			end
-
 		end
 	end
+end
 
-
+local function spawn_world_items()
 	for i = 1, #world_poss do
-		local w = world_poss[i]
-		local sec = w[1]
-		local pos = vector():set(w[2], w[3], w[4])
-		local lvid, gvid = w[5], w[6]
-		if sec and pos and lvid and gvid then
-			alife_create_item(sec, {pos, lvid, gvid})
+		if not spawned_world_poss[i] then
+			local w = world_poss[i]
+			local sec = w[1]
+			local pos = vector():set(w[2],w[3],w[4])
+			local lvid = w[5]
+			local gvid = w[6]
+
+			if sec and pos and lvid and gvid then
+
+				alife_create_item(sec,{pos,lvid,gvid})
+				spawned_world_poss[i] = true
+
+			end
 		end
 	end
+end
 
-	items_spawned = true			
 
+function delay_items_spawn()
+	spawn_stash_items()
+	spawn_world_items()
 	return true
 end
 
-function save_state(m_data)					
-    m_data.items_spawned = items_spawned
+function actor_on_first_update()
+	CreateTimeEvent("some_itms_spawn_e","some_itms_spawn_a",2,delay_items_spawn)
+end
+
+function save_state(m_data)
+	m_data.spawned_poss = spawned_poss
+	m_data.spawned_world_poss = spawned_world_poss
 end
 
 function load_state(m_data)
-    items_spawned = m_data.items_spawned
+	spawned_poss = m_data.spawned_poss or {}
+	spawned_world_poss = m_data.spawned_world_poss or {}
 end
 
-function on_game_start()				
-    RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
-    RegisterScriptCallback("save_state", save_state)
-    RegisterScriptCallback("load_state", load_state)
+function on_game_start()
+	RegisterScriptCallback("actor_on_first_update",actor_on_first_update)
+	RegisterScriptCallback("save_state",save_state)
+	RegisterScriptCallback("load_state",load_state)
 end
