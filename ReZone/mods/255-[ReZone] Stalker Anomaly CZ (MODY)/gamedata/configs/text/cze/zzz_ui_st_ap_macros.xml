@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+  <!-- ==== #ago# phrases ==== -->
+```xml
+<string id="st_ap_macros_ago_recent">
+    <text>právě teď</text>
+</string>
+<string id="st_ap_macros_ago_hours">
+    <text>před pár hodinami</text>
+</string>
+
+<!-- ==== #subject_species# / #other_species# množné číslo (malými písmeny). id odpovídá xcreature.get_mutant_species, před který se přidává "st_ap_macros_species_". ==== -->
+<string id="st_ap_macros_species_bloodsucker"><text>upíři</text></string>
+<string id="st_ap_macros_species_boar"><text>divočáci</text></string>
+<string id="st_ap_macros_species_burer"><text>bureři</text></string>
+<string id="st_ap_macros_species_chimera"><text>chiméry</text></string>
+<string id="st_ap_macros_species_controller"><text>kontroloři</text></string>
+<string id="st_ap_macros_species_dog"><text>divocí psi</text></string>
+<string id="st_ap_macros_species_flesh"><text>flaksy</text></string>
+<string id="st_ap_macros_species_gigant"><text>pseudogiganti</text></string>
+<string id="st_ap_macros_species_psy_dog"><text>psi</text></string>
+<string id="st_ap_macros_species_pseudodog"><text>pseudopsi</text></string>
+<string id="st_ap_macros_species_snork"><text>snorci</text></string>
+<string id="st_ap_macros_species_tushkano"><text>tarbíci</text></string>
+<string id="st_ap_macros_species_cat"><text>kočky</text></string>
+<string id="st_ap_macros_species_fracture"><text>izlomy</text></string>
+<string id="st_ap_macros_species_zombie"><text>zombíci</text></string>
+<string id="st_ap_macros_species_poltergeist"><text>poltergeisté</text></string>
+<string id="st_ap_macros_species_rat"><text>krysy</text></string>
+<string id="st_ap_macros_species_karlik"><text>trpaslíci</text></string>
+<string id="st_ap_macros_species_psysucker"><text>psysuckeři</text></string>
+<string id="st_ap_macros_species_lurker"><text>čmuchalové</text></string>
+```
+
+</string_table>

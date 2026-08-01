@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+<!-- =========================================================================
+ ŠABLONY PRO JEDNOTLIVÉ NÁSLEDKY
+
+ Vzor ID: st_ap_news_tpl_[consequence]_NNN, kde NNN začíná 001 a pokračuje
+ až do 020.
+ Loader (ap_ext_news.script _load_pool) prochází čísla NNN od 001
+ a zastaví se u prvního chybějícího ID, takže čísla MUSÍ být souvislá -
+ mezera v číslování ukončí načítání poolu. Maximální počet variant určuje
+ MAX_TEMPLATE_VARIANTS v ap_ext_news.script.
+
+ Výběr: kód pro každou událost náhodně vybere JEDNU variantu z poolu
+ rovnoměrným výběrem (po vyřazení variant, jejichž požadovaný placeholder
+ je prázdný, např. když není dostupné #subject_name#). Přípona
+ _001/_002/... slouží pouze jako index pro loader - kód ji nepoužívá
+ k výběru varianty.
+
+ Následujících 5 slotů slouží jako doporučení pro pestrost, aby se zprávy
+ neopakovaly stále stejným způsobem. Autoři by měli jednotlivé řádky
+ formulovat odlišně:
+   _001 doslech    - `Heard X` (krátká zpráva)
+   _002 svědek     - `Saw X` (středně dlouhá)
+   _003 přeživší   - `I was with...` / `I crossed...` (dlouhá)
+   _004 stopař     - `Tracks at X show...` / `Looks like...` (středně dlouhá)
+   _005 jmenovaná  - používá #subject_name# (krátká) | u mutantů:
+                     přímé konstatování
+   Každý řádek může použít libovolný styl - loader to neřeší, ale pestrost
+   pomáhá, aby zprávy hráči nezněly jednotvárně.
+
+ Dostupné placeholdery (nahrazují se při sestavování zprávy):
+   #subject_faction# - frakce hlavního aktéra (Samotáři, Bandité, ...)
+   #subject_name#    - jméno / označení hlavního aktéra, pokud je dostupné
+   #subject_species# - druh hlavního mutanta (flaksa, snork, ...)
+   #other_faction#   - frakce druhé strany (pouze u událostí se dvěma stranami)
+   #other_name#      - jméno / označení druhé strany, pokud je dostupné
+   #other_species#   - druh mutanta druhé strany
+   #location#        - zobrazovaný název smart terénu; pokud není dostupný,
+                      použije se název lokace
+   #level#           - název lokace (Smetiště, Kordon, ...)
+   #ago#             - `nedávno` nebo `před N hodinami`
+   To, které placeholdery jsou naplněné, závisí na typu následku. Komentář
+   nad každým poolem popisuje role jednotlivých stran (např. TWO-PARTY:
+   subject = záchranná skupina, other = útočník).
+
+ Povinné pravidlo: každá varianta musí sama o sobě jasně sdělovat,
+ k jakému následku došlo - z textu musí být možné poznat herní událost
+ (vyzvednutí těl, rabování, sběr kořisti, pomsta, posily, útěk atd.).
+
+ Varianta, která odkazuje na prázdný placeholder, je před samotným výběrem
+ vyřazena. Neznámé tokeny (např. #dragons#) zůstanou v textu doslova -
+ překlepy se tak projeví přímo ve zpravodajském kanálu místo toho,
+ aby způsobily pád hry.
+
+ ========================================================================= -->
+<!-- massacre_investigate (TWO-PARTY: subject = recovery crew, other = killer) -->
+
+<string id="st_ap_news_tpl_massacre_investigate_001">
+    <text>Slyšel jsem, že parta frakce #subject_faction# přišla na #location# vyzvednout své mrtvé poté, co #other_faction# odešla.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_investigate_002">
+    <text>Viděl jsem partu frakce #subject_faction# přijít na #location# #ago# vyzvednout své mrtvé po masakru od #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_investigate_003">
+    <text>Byl jsem poblíž #location# #ago#, když tam hlídka frakce #subject_faction# přišla identifikovat své mrtvé. Odnesli si známky a těla nechali být.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_investigate_004">
+    <text>Stopy u #location# ukazují, že #other_faction# po masakru odešla a parta frakce #subject_faction# pak dorazila vyzvednout mrtvé.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_investigate_005">
+    <text>#subject_name# přivedl partu frakce #subject_faction# na #location# #ago#, aby vyzvedli mrtvé po masakru od #other_faction#.</text>
+</string>
+
+<!-- massacre_scavenge (DVA ÚČASTNÍCI: subject = mrchožrout, other = oběť) -->
+<string id="st_ap_news_tpl_massacre_scavenge_001">
+    <text>Slyšel jsem, že smečka #subject_species# se dostala k mrtvým z frakce #other_faction# na #location# #ago#.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_scavenge_002">
+    <text>Viděl jsem #subject_species# požírat mrtvé z frakce #other_faction# na #location#, než tam dorazila záchranná skupina.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_scavenge_003">
+    <text>Byl jsem po větru od #location# #ago#, když se na těla frakce #other_faction# vrhla smečka #subject_species#. Nezbylo nic, podle čeho by se dali identifikovat.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_scavenge_004">
+    <text>Stopy u #location# ukazují, že na mrtvé frakce #other_faction# dorazila smečka #subject_species#, dřív než je někdo stihl vyzvednout.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_scavenge_005">
+    <text>Smečka #subject_species# se na #location# #ago# krmila mrtvými z frakce #other_faction#, dokud z nich nezbyly jen ohlodané kosti.</text>
+</string>
+
+<!-- massacre_loot (DVA ÚČASTNÍCI: subject = lupič, other = oběť) -->
+<string id="st_ap_news_tpl_massacre_loot_001">
+    <text>Slyšel jsem, že parta frakce #subject_faction# dorazila na #location# #ago# k mrtvým z frakce #other_faction# a všechno z nich obrala.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_loot_002">
+    <text>Viděl jsem #subject_faction# tahat zbraně a výbavu z těl frakce #other_faction# na #location#, ještě než dorazila záchranná skupina.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_loot_003">
+    <text>Byl jsem poblíž #location# #ago#, když tam dorazila parta frakce #subject_faction# k mrtvým z #other_faction#. Vzali všechno, co nebylo přišroubované k tělu.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_loot_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# dorazila k mrtvým z #other_faction# a odešla s plnými batohy.</text>
+</string>
+<string id="st_ap_news_tpl_massacre_loot_005">
+    <text>#subject_faction# obrala mrtvé z #other_faction# na #location# #ago#. Nezbylo tam nic, co by stálo za vyzvednutí.</text>
+</string>
+
+<!-- squadkill_revenge (DVA ÚČASTNÍCI: subject = mstitel, other = vrah) -->
+<string id="st_ap_news_tpl_squadkill_revenge_001">
+    <text>Slyšel jsem, že parta frakce #subject_faction# opustila #location# #ago# a vydala se po #other_faction# poté, co jim někdo postřílel spřátelenou družinu.</text>
+</string>
+<string id="st_ap_news_tpl_squadkill_revenge_002">
+    <text>Viděl jsem mstící partu frakce #subject_faction# mířit na východ po stopách #other_faction# #ago#, poté co jejich družina padla na #location#.</text>
+</string>
+<string id="st_ap_news_tpl_squadkill_revenge_003">
+    <text>Byl jsem poblíž #location#, když #other_faction# #ago# napadla družinu frakce #subject_faction#. Mstitelé, kteří se za nimi vydali, se už nevrátili.</text>
+</string>
+<string id="st_ap_news_tpl_squadkill_revenge_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# po sobě nechala masakr a vydala se na východ po stopách #other_faction#, ještě než těla vychladla.</text>
+</string>
+<string id="st_ap_news_tpl_squadkill_revenge_005">
+    <text>#subject_name# vedl z #location# #ago# mstící skupinu frakce #subject_faction# proti #other_faction#.</text>
+</string>
+
+<!-- basekill_support (DVA ÚČASTNÍCI: subject = posily, other = útočník) -->
+<string id="st_ap_news_tpl_basekill_support_001">
+    <text>Slyšel jsem, že posily frakce #subject_faction# dorazily #ago# znovu dobýt #location# od #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_support_002">
+    <text>Viděl jsem partu frakce #subject_faction# uhánět k #location# #ago#, aby podpořila chlapy, kteří u brány drželi pozice proti #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_support_003">
+    <text>Byl jsem poblíž #location# #ago#, když tam dorazila parta frakce #subject_faction# na pomoc obráncům brány. Zaútočili na #other_faction#, ale zeď už byla prolomena.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_support_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# přivedla další partu, aby po pádu zdi znovu získala bránu od #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_support_005">
+    <text>#subject_name# vedl #ago# u #location# posily frakce #subject_faction# proti #other_faction#, ale zeď stejně padla.</text>
+</string>
+
+
+  <!-- basekill_flee (TWO-PARTY: subject = defender, other = attacker took base) -->
+<string id="st_ap_news_tpl_basekill_flee_001">
+    <text>Slyšel jsem, že #subject_faction# se #ago# stáhla z #location#. Bránu teď drží #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_flee_002">
+    <text>Viděl jsem poslední chlapy z #subject_faction# odcházet z #location# #ago#, ještě než #other_faction# pronikla dovnitř.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_flee_003">
+    <text>Procházel jsem #location# #ago#, zrovna když #other_faction# obsadila zeď. #subject_faction# se stáhla dřív, než padla brána, a cestou spálila záznamy.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_flee_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# odešla ještě před příchodem #other_faction#, která pak získala bránu téměř bez boje.</text>
+</string>
+<string id="st_ap_news_tpl_basekill_flee_005">
+    <text>#subject_name# vedl poslední chlapy z #subject_faction# z #location# #ago#, ještě než bránu obsadila #other_faction#.</text>
+</string>
+
+<!-- alpha_promote (JEDEN MUTANT: nový vůdce smečky) -->
+<string id="st_ap_news_tpl_alpha_promote_001">
+    <text>Slyšel jsem, že na #location# #ago# převzal smečku nový alfa #subject_species#. Ten starý je mrtvý.</text>
+</string>
+<string id="st_ap_news_tpl_alpha_promote_002">
+    <text>Viděl jsem na #location# #ago# nového samce #subject_species#, jak převzal smečku. Je větší než ten předchozí.</text>
+</string>
+<string id="st_ap_news_tpl_alpha_promote_003">
+    <text>Byl jsem na hřebeni nad #location# #ago#, když smečka #subject_species# změnila vůdce. Nový alfa ještě před polednem zahnal dva stalkery.</text>
+</string>
+<string id="st_ap_news_tpl_alpha_promote_004">
+    <text>Stopy u #location# ukazují, že smečka #subject_species# změnila vůdce #ago#. Nový alfa je mohutnější než ten předchozí.</text>
+</string>
+<string id="st_ap_news_tpl_alpha_promote_005">
+    <text>Na #location# #ago# převzal smečku nový alfa #subject_species#.</text>
+</string>
+
+<!-- alphakill_targeted (DVA ÚČASTNÍCI: subject = smečka, other = lidský lovec) -->
+<string id="st_ap_news_tpl_alphakill_targeted_001">
+    <text>Slyšel jsem, že alfa smečky #subject_species# na #location# #ago# padl pod palbou #other_faction#.</text>
+</string>
+<string id="st_ap_news_tpl_alphakill_targeted_002">
+    <text>Viděl jsem partu z #other_faction# sundat alfu #subject_species# na #location# #ago#, ještě než se smečka přehnala přes hřeben.</text>
+</string>
+<string id="st_ap_news_tpl_alphakill_targeted_003">
+    <text>Byl jsem na stejném hřebeni jako #other_faction#, když na #location# #ago# sundali alfu #subject_species#. Smečka dorazila dřív, než se stihli stáhnout.</text>
+</string>
+<string id="st_ap_news_tpl_alphakill_targeted_004">
+    <text>Stopy u #location# ukazují, že #other_faction# sundala alfu #subject_species# a smečka je pak hnala přes hřeben.</text>
+</string>
+<string id="st_ap_news_tpl_alphakill_targeted_005">
+    <text>#other_faction# zabila alfu #subject_species# na #location# #ago#. Smečka je teď loví.</text>
+</string>
+
+<!-- wounded_hunt (DVA ÚČASTNÍCI: subject = predátor, other = krvácející stalker) -->
+<string id="st_ap_news_tpl_wounded_hunt_001">
+    <text>Slyšel jsem, že smečka #subject_species# #ago# zachytila krvavou stopu #other_faction# u #location#.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_hunt_002">
+    <text>Viděl jsem smečku #subject_species# #ago# vyrazit po zraněném z #other_faction# poblíž #location#. Stopa byla ještě čerstvá.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_hunt_003">
+    <text>Byl jsem po větru od #location# #ago#, když smečka #subject_species# narazila na zraněného z #other_faction#. Dostali se k němu jako první.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_hunt_004">
+    <text>Stopy u #location# ukazují, že smečka #subject_species# pronásledovala zraněného z #other_faction# přes hřeben.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_hunt_005">
+    <text>Smečka #subject_species# #ago# dostihla zraněného z #other_faction# poblíž #location#.</text>
+</string>
+
+<!-- wounded_help (DVA ÚČASTNÍCI: subject = zdravotník, other = zraněná družina) -->
+<string id="st_ap_news_tpl_wounded_help_001">
+    <text>Slyšel jsem, že zdravotnická skupina z #subject_faction# vyrazila z #location# #ago# pro zraněného druha.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_help_002">
+    <text>Viděl jsem zdravotnickou skupinu z #subject_faction# běžet k #location# #ago#, poté co se zraněný druh ozval přes vysílačku.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_help_003">
+    <text>Procházel jsem #location# #ago#, když zdravotnická skupina z #subject_faction# vyrazila pro zraněného druha. Vykrvácel dřív, než ho stihli odnést.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_help_004">
+    <text>Stopy u #location# ukazují, že zdravotnická skupina z #subject_faction# dorazila ke zraněnému, který krvácel v křoví.</text>
+</string>
+<string id="st_ap_news_tpl_wounded_help_005">
+    <text>#subject_name# vedl zdravotnickou skupinu z #subject_faction# ke zraněnému druhovi na #location# #ago#.</text>
+</string>
+
+<!-- harvest_rob (DVA ÚČASTNÍCI: subject = lovci, other = nosič artefaktu) -->
+<string id="st_ap_news_tpl_harvest_rob_001">
+    <text>Slyšel jsem, že parta z #subject_faction# #ago# pronásledovala nosiče z #other_faction# z #location#.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_rob_002">
+    <text>Viděl jsem partu z #subject_faction# #ago# honit stalkera z #other_faction#, který odnášel artefakt z #location#.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_rob_003">
+    <text>Byl jsem u obchodníka, když se #subject_faction# #ago# vydala po nosiči z #other_faction# z #location#. Artefakt se k obchodníkovi nikdy nedostal.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_rob_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# doháněla stalkera z #other_faction#, který odtamtud vyšel s artefaktem.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_rob_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# po stopách nosiče z #other_faction#, který vyšel z #location#.</text>
+</string>
+
+
+  <!-- harvest_haunt (TWO-PARTY mutant: subject = aberrant, other = artefact carrier) -->
+
+<string id="st_ap_news_tpl_harvest_haunt_001">
+    <text>Slyšel jsem, že smečka #subject_species# #ago# vyrazila po nosiči z #other_faction# poblíž #location#.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_haunt_002">
+    <text>Viděl jsem smečku #subject_species# #ago# pronásledovat stalkera z #other_faction#, který odnášel artefakt z #location#.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_haunt_003">
+    <text>Byl jsem po větru od #location# #ago#, když smečka #subject_species# zachytila pach artefaktu u nosiče z #other_faction# a potichu se k němu přiblížila.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_haunt_004">
+    <text>Stopy u #location# ukazují, že smečka #subject_species# dostihla nosiče z #other_faction#, který odcházel s artefaktem.</text>
+</string>
+<string id="st_ap_news_tpl_harvest_haunt_005">
+    <text>Smečka #subject_species# #ago# sledovala nosiče artefaktu z #other_faction# z #location#.</text>
+</string>
+
+<!-- stash_loot (JEDEN STALKER) -->
+<string id="st_ap_news_tpl_stash_loot_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# vybrala skrýš poblíž #location#.</text>
+</string>
+<string id="st_ap_news_tpl_stash_loot_002">
+    <text>Viděl jsem #subject_faction# odcházet z #location# #ago# s mnohem těžšími batohy, než s jakými přišli.</text>
+</string>
+<string id="st_ap_news_tpl_stash_loot_003">
+    <text>Prohledával jsem vlastní skrýš, když kolem #location# #ago# prošli lidé z #subject_faction# s výbavou, kterou si nezasloužili. Potom byla skrýš prázdná.</text>
+</string>
+<string id="st_ap_news_tpl_stash_loot_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# odešla z cesty se skrýší, která je teď prázdná.</text>
+</string>
+<string id="st_ap_news_tpl_stash_loot_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# ke skrýši na #location# a vybral ji.</text>
+</string>
+
+<!-- stash_ambush (JEDEN STALKER) -->
+<string id="st_ap_news_tpl_stash_ambush_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# číhala u skrýše na #location# a čekala, až se její majitel vrátí.</text>
+</string>
+<string id="st_ap_news_tpl_stash_ambush_002">
+    <text>Viděl jsem #subject_faction# na #location# s puškami namířenými na skrýš, u které si připravili přepad.</text>
+</string>
+<string id="st_ap_news_tpl_stash_ambush_003">
+    <text>Málem jsem na ně narazil na #location# #ago#, když jsem uviděl #subject_faction# hlídat skrýš. Stáhl jsem se, než si mě všimli.</text>
+</string>
+<string id="st_ap_news_tpl_stash_ambush_004">
+    <text>Vypadá to, že #subject_faction# nastražila léčku u skrýše na #location# a sundala prvního rabujícího, který dorazil po cestě.</text>
+</string>
+<string id="st_ap_news_tpl_stash_ambush_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# k přepadení u skrýše na #location# a zastřelil prvního, kdo po cestě dorazil.</text>
+</string>
+
+<!-- stash_fill (JEDEN STALKER) -->
+<string id="st_ap_news_tpl_stash_fill_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# zakopala čerstvou skrýš poblíž #location#.</text>
+</string>
+<string id="st_ap_news_tpl_stash_fill_002">
+    <text>Viděl jsem #subject_faction# #ago# zakopávat výbavu poblíž #location# na trase, kterou nikdo jiný nepoužíval.</text>
+</string>
+<string id="st_ap_news_tpl_stash_fill_003">
+    <text>U #location# #ago# jsem narazil na stopy #subject_faction# vedoucí k čerstvě vykopané jámě. Přišli sem oklikou s těžkými batohy.</text>
+</string>
+<string id="st_ap_news_tpl_stash_fill_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# přišla s plnými batohy a zakopala čerstvou skrýš v křoví.</text>
+</string>
+<string id="st_ap_news_tpl_stash_fill_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# zakopat čerstvou skrýš poblíž #location#.</text>
+</string>
+
+<!-- area_conquer (lidé obsadí prázdný smart) -->
+<string id="st_ap_news_tpl_area_conquer_001">
+    <text>Slyšel jsem, že #subject_faction# se #ago# přesunula na #location# a zakopala se tam.</text>
+</string>
+<string id="st_ap_news_tpl_area_conquer_002">
+    <text>Viděl jsem #subject_faction# přijít na #location# #ago# a udržet si ho, než je kdokoli stihl vytlačit.</text>
+</string>
+<string id="st_ap_news_tpl_area_conquer_003">
+    <text>Byl jsem na vyvýšenině nad #location# #ago#, když tam #subject_faction# přišla a obsadila to místo. Mapa #level# se změnila.</text>
+</string>
+<string id="st_ap_news_tpl_area_conquer_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# dorazila #ago# a zavedla hlídky, které od té doby nepřestaly.</text>
+</string>
+<string id="st_ap_news_tpl_area_conquer_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# na #location# a od té doby ho drží.</text>
+</string>
+
+<!-- area_swarm (mutanti obsadí prázdný smart) -->
+<string id="st_ap_news_tpl_area_swarm_001">
+    <text>Slyšel jsem, že #subject_species# se #ago# přesunuli na #location# a zabydleli se tam.</text>
+</string>
+<string id="st_ap_news_tpl_area_swarm_002">
+    <text>Viděl jsem #subject_species# přijít na #location# #ago# a udržet si ho, než je kdokoli stihl vyhnat.</text>
+</string>
+<string id="st_ap_news_tpl_area_swarm_003">
+    <text>Byl jsem na hřebeni nad #location# #ago#, když tam #subject_species# dorazili a zabrali si ho. Tahle část #level# teď patří jim.</text>
+</string>
+<string id="st_ap_news_tpl_area_swarm_004">
+    <text>Stopy u #location# ukazují, že #subject_species# dorazili #ago# a od té doby se nepohnuli.</text>
+</string>
+<string id="st_ap_news_tpl_area_swarm_005">
+    <text>Smečka #subject_species# zabrala #location# #ago# a od té doby ho drží.</text>
+</string>
+
+
+  <!-- hunger_campfire (SINGLE STALKER need: cooking) -->
+
+<string id="st_ap_news_tpl_hunger_campfire_001">
+    <text>Slyšel jsem, že #subject_faction# si na #location# #ago# rozdělala kotlík.</text>
+</string>
+<string id="st_ap_news_tpl_hunger_campfire_002">
+    <text>Viděl jsem #subject_faction# #ago# u ohně na #location# jíst po dlouhé cestě.</text>
+</string>
+<string id="st_ap_news_tpl_hunger_campfire_003">
+    <text>Hledal jsem něco k jídlu, když jsem #ago# ucítil kouř od #location#. #subject_faction# tam vařila guláš z čerstvě uloveného masa.</text>
+</string>
+<string id="st_ap_news_tpl_hunger_campfire_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# sešla z cesty a rozdělala oheň na vaření, ještě než postavila hlídku.</text>
+</string>
+<string id="st_ap_news_tpl_hunger_campfire_005">
+    <text>#subject_name# #ago# odvedl partu z #subject_faction# z cesty, aby se najedli na #location#.</text>
+</string>
+
+<!-- sleep_campfire (JEDEN STALKER: potřeba spánku) -->
+<string id="st_ap_news_tpl_sleep_campfire_001">
+    <text>Slyšel jsem, že #subject_faction# si #ago# ustlala na #location# po dlouhém pochodu.</text>
+</string>
+<string id="st_ap_news_tpl_sleep_campfire_002">
+    <text>Viděl jsem #subject_faction# spát na #location# #ago# po dvou dnech na cestě bez jídla.</text>
+</string>
+<string id="st_ap_news_tpl_sleep_campfire_003">
+    <text>Hledal jsem úkryt, když jsem #ago# narazil na #subject_faction#, která už spala na #location#. Byli na cestě dva dny.</text>
+</string>
+<string id="st_ap_news_tpl_sleep_campfire_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# dorazila vyčerpaná a šla spát, aniž by se obtěžovala postavit hlídku.</text>
+</string>
+<string id="st_ap_news_tpl_sleep_campfire_005">
+    <text>#subject_name# #ago# dovedl partu z #subject_faction# na #location# ke spánku po nuceném pochodu.</text>
+</string>
+
+<!-- rest_campfire (JEDEN STALKER: krátký odpočinek) -->
+<string id="st_ap_news_tpl_rest_campfire_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# sešla z cesty a na #location# si dala pauzu.</text>
+</string>
+<string id="st_ap_news_tpl_rest_campfire_002">
+    <text>Viděl jsem #subject_faction# #ago# odpočívat na #location# pár minut, než znovu vyrazili.</text>
+</string>
+<string id="st_ap_news_tpl_rest_campfire_003">
+    <text>#ago# jsem na dlouhé cestě narazil na #subject_faction#, jak odpočívá na #location#. Než jsem stihl dokouřit cigaretu, byli zase na cestě.</text>
+</string>
+<string id="st_ap_news_tpl_rest_campfire_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# si na chvíli odpočinula a pokračovala dál, než stopa vychladla.</text>
+</string>
+<string id="st_ap_news_tpl_rest_campfire_005">
+    <text>#subject_name# #ago# nařídil partě z #subject_faction# zastavit na #location#.</text>
+</string>
+
+<!-- heal_shelter (JEDEN STALKER: zdravotník + zranění) -->
+<string id="st_ap_news_tpl_heal_shelter_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# přinesla zraněné na #location# k felčarovi.</text>
+</string>
+<string id="st_ap_news_tpl_heal_shelter_002">
+    <text>Viděl jsem #subject_faction# #ago# nést krvácející na #location#, kde už na ně čekal zdravotník.</text>
+</string>
+<string id="st_ap_news_tpl_heal_shelter_003">
+    <text>Přišel jsem na obchod a #ago# jsem narazil přímo doprostřed toho všeho. #subject_faction# měla na podlaze #location# samé zraněné. Dva to nepřežili.</text>
+</string>
+<string id="st_ap_news_tpl_heal_shelter_004">
+    <text>Krvavá stopa vedoucí k #location# ukazuje, že #subject_faction# #ago# odnesla své raněné dovnitř.</text>
+</string>
+<string id="st_ap_news_tpl_heal_shelter_005">
+    <text>#subject_name# #ago# přivedl zraněné z #subject_faction# na #location#, kde se jich ujal zdravotník.</text>
+</string>
+
+<!-- shelter_indoor (JEDEN STALKER: potřeba úkrytu uvnitř) -->
+<string id="st_ap_news_tpl_shelter_indoor_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# na #location# zabarikádovala dveře a stáhla se dovnitř.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_indoor_002">
+    <text>Viděl jsem #subject_faction# #ago# zalézt dovnitř na #location#, než se přes hřeben přihnala bouře.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_indoor_003">
+    <text>Hledal jsem úkryt, když jsem #ago# našel #subject_faction# už uvnitř na #location#. Za zabarikádovanými dveřmi měli zatopená kamna.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_indoor_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# #ago# zalezla dovnitř a od té doby nevyšla.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_indoor_005">
+    <text>#subject_name# #ago# zavedl partu z #subject_faction# dovnitř na #location#.</text>
+</string>
+
+<!-- shelter_outdoor (JEDEN STALKER: zakopání v terénu) -->
+<string id="st_ap_news_tpl_shelter_outdoor_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# vykopala okopy na hřebeni nad #location# a nehodlá slézt dolů.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_outdoor_002">
+    <text>Viděl jsem #subject_faction# #ago# zakopanou na hřebeni nad #location#, poté co ztratila stopu těch, kteří ji sledovali.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_outdoor_003">
+    <text>Málem jsem #ago# vlezl do okopu #subject_faction# na hřebeni nad #location#. Byli tam zakopaní už dva dny bez ohně.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_outdoor_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# se zakopala na hřebeni a od té doby se ani nehnula.</text>
+</string>
+<string id="st_ap_news_tpl_shelter_outdoor_005">
+    <text>#subject_name# #ago# rozmístil partu z #subject_faction# do okopů na hřebeni nad #location#.</text>
+</string>
+
+<!-- money_harvest (JEDEN STALKER: pole anomálií) -->
+<string id="st_ap_news_tpl_money_harvest_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# prošla pole anomálií na #location#, krok za krokem se šrouby v ruce.</text>
+</string>
+<string id="st_ap_news_tpl_money_harvest_002">
+    <text>Viděl jsem #subject_faction# #ago# v anomáliích na #location# s detektory a šrouby v rukou.</text>
+</string>
+<string id="st_ap_news_tpl_money_harvest_003">
+    <text>Byl jsem na hřebeni nad #location# #ago#, když #subject_faction# procházela polem. Dva šrouby spustily anomálii a jeden stalker se nevrátil.</text>
+</string>
+<string id="st_ap_news_tpl_money_harvest_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# prošla každý kout pole se šroubem v ruce, než se vybil detektor.</text>
+</string>
+<string id="st_ap_news_tpl_money_harvest_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# skrz anomálie na #location#, krok za krokem se šrouby v ruce.</text>
+</string>
+
+
+  <!-- money_hunt (SINGLE STALKER need: hunting) -->
+
+<string id="st_ap_news_tpl_money_hunt_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# vyrazila na lov poblíž #location# za tím, co za úlovek obchodník zaplatí.</text>
+</string>
+<string id="st_ap_news_tpl_money_hunt_002">
+    <text>Viděl jsem #subject_faction# #ago# vycházet z #location# s kůžemi staženými z čerstvě zabité zvěře.</text>
+</string>
+<string id="st_ap_news_tpl_money_hunt_003">
+    <text>Šel jsem po stejné stopě kance, když mě #subject_faction# #ago# předběhla u #location#. V trávě po nich zůstala krev a vnitřnosti.</text>
+</string>
+<string id="st_ap_news_tpl_money_hunt_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# vystopovala kance a dostala ho před západem slunce.</text>
+</string>
+<string id="st_ap_news_tpl_money_hunt_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# na lov za kůžemi poblíž #location#.</text>
+</string>
+
+<!-- supply_trader (JEDEN STALKER: potřeba obchodníka) -->
+<string id="st_ap_news_tpl_supply_trader_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# obsadila obchodníka na #location#.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_002">
+    <text>Viděl jsem #subject_faction# #ago# házet batohy na pult obchodníka na #location#, dokud mu málem nedošly peníze.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_003">
+    <text>#ago# jsem stál ve frontě u obchodníka na #location#, když dorazila #subject_faction#. Celou hodinu prodávali výbavu. Já čekal ještě déle.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_004">
+    <text>Stopy u #location# ukazují, že parta z #subject_faction# #ago# vyložila u obchodníka plné batohy.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_005">
+    <text>#subject_name# #ago# přivedl partu z #subject_faction# k obchodníkovi na #location#.</text>
+</string>
+
+<!-- job_outpost (JEDEN STALKER: hlídka/stanoviště) -->
+<string id="st_ap_news_tpl_job_outpost_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# obsadila stanoviště na #location# a drží tam dvojitou hlídku.</text>
+</string>
+<string id="st_ap_news_tpl_job_outpost_002">
+    <text>Viděl jsem #subject_faction# #ago# dorazit na stanoviště na #location# s připravenými puškami a postavenými hlídkami.</text>
+</string>
+<string id="st_ap_news_tpl_job_outpost_003">
+    <text>Chtěl jsem projít kolem, když jsem #ago# uviděl #subject_faction# na stanovišti na #location#. Dvě hlídky za sebou, tak jsem to vzal oklikou.</text>
+</string>
+<string id="st_ap_news_tpl_job_outpost_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# dorazila na stanoviště a od té doby ho drží.</text>
+</string>
+<string id="st_ap_news_tpl_job_outpost_005">
+    <text>#subject_name# #ago# rozmístil partu z #subject_faction# na stanovišti na #location#.</text>
+</string>
+
+<!-- job_explore (JEDEN STALKER: průzkum) -->
+<string id="st_ap_news_tpl_job_explore_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# vyslala průzkumnou hlídku za #location#.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_002">
+    <text>Viděl jsem hlídku z #subject_faction# #ago# procházet kolem #location# po dlouhé trase, o kterou je nikdo nežádal.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_003">
+    <text>#ago# jsem narazil na hlídku z #subject_faction# za #location#, jak mapovala úsek, který nikdo neměl zmapovaný. Vrátili se se dvěma vybitými bateriemi.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_004">
+    <text>Stopy za #location# ukazují, že hlídka z #subject_faction# #ago# udělala dlouhou obchůzku neprozkoumaným terénem.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_005">
+    <text>#subject_name# #ago# vyslal hlídku z #subject_faction# za #location# na dlouhý průzkum.</text>
+</string>
+
+<!-- job_research (JEDEN STALKER: přístroje) -->
+<string id="st_ap_news_tpl_job_research_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# rozmístila kolem #location# přístroje a dlouho do noci zaznamenávala údaje.</text>
+</string>
+<string id="st_ap_news_tpl_job_research_002">
+    <text>Viděl jsem #subject_faction# #ago# na #location# s vytaženými senzory a dozimetr celou noc cvakal.</text>
+</string>
+<string id="st_ap_news_tpl_job_research_003">
+    <text>#ago# jsem prošel kolem vědeckého tábora na #location#, když #subject_faction# prováděla měření. Výsledky byly natolik divné, že kvůli nim museli přepsat poslední zprávu.</text>
+</string>
+<string id="st_ap_news_tpl_job_research_004">
+    <text>Stopy vedoucí k #location# ukazují, že #subject_faction# tam #ago# přinesla přístroje a od té doby je neodnesla.</text>
+</string>
+<string id="st_ap_news_tpl_job_research_005">
+    <text>#subject_name# #ago# vedl vědeckou skupinu z #subject_faction# na #location#.</text>
+</string>
+
+<!-- social_campfire (JEDEN STALKER: společenský život u ohně) -->
+<string id="st_ap_news_tpl_social_campfire_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# zůstala u ohně na #location# s lahví v ruce.</text>
+</string>
+<string id="st_ap_news_tpl_social_campfire_002">
+    <text>Viděl jsem #subject_faction# #ago# u ohně na #location# a jejich zpěv se nesl přes půlku #level#.</text>
+</string>
+<string id="st_ap_news_tpl_social_campfire_003">
+    <text>Hledal jsem úkryt, když jsem #ago# zaslechl hudbu od #location#. #subject_faction# měla venku láhev a zůstala tam, dokud nedozněly písně.</text>
+</string>
+<string id="st_ap_news_tpl_social_campfire_004">
+    <text>Stopy u #location# ukazují, že #subject_faction# zůstala u ohně dlouho do noci. Lahve po nich zůstaly prázdné na místě.</text>
+</string>
+<string id="st_ap_news_tpl_social_campfire_005">
+    <text>#subject_name# #ago# nechal partu z #subject_faction# posedávat u ohně na #location# a láhev kolovala.</text>
+</string>
+
+
+  <!-- social_base (SINGLE STALKER need: base social) -->
+<string id="st_ap_news_tpl_social_base_001">
+    <text>Slyšel jsem, že #subject_faction# #ago# na #location# vytáhla vodku na výplatní večer.</text>
+</string>
+<string id="st_ap_news_tpl_social_base_002">
+    <text>Viděl jsem #subject_faction# #ago# na #location# s kartami na stole a napůl prázdnou lahví vodky.</text>
+</string>
+<string id="st_ap_news_tpl_social_base_003">
+    <text>Přišel jsem na obchod a #ago# jsem narazil na výplatní večer na #location#. #subject_faction# už byla hluboko v lahvi a karty byly v plném proudu.</text>
+</string>
+<string id="st_ap_news_tpl_social_base_004">
+    <text>Hudba nesoucí se od #location# #ago# prozradila, že #subject_faction# si užívala výplatní večer s vodkou na stole.</text>
+</string>
+<string id="st_ap_news_tpl_social_base_005">
+    <text>#subject_name# #ago# vedl partu z #subject_faction# na výplatní večer na #location#.</text>
+</string>
+
+<!-- feed (JEDEN MUTANT: instinkt) -->
+<string id="st_ap_news_tpl_feed_001">
+    <text>Slyšel jsem, že smečka #subject_species# #ago# dorazila k mršině na #location#.</text>
+</string>
+<string id="st_ap_news_tpl_feed_002">
+    <text>Viděl jsem smečku #subject_species# #ago# žrát na #location#, poté co něco uštvala v křoví.</text>
+</string>
+<string id="st_ap_news_tpl_feed_003">
+    <text>Byl jsem po větru od #location# #ago#, když se smečka #subject_species# vrhla na kořist. Nejdřív se nesl křik, pak bylo ticho.</text>
+</string>
+<string id="st_ap_news_tpl_feed_004">
+    <text>Stopy u #location# ukazují, že smečka #subject_species# něco uštvala, nakrmila se a pak pokračovala dál.</text>
+</string>
+<string id="st_ap_news_tpl_feed_005">
+    <text>Smečka #subject_species# #ago# hodovala na mršině na #location#.</text>
+</string>
+
+<!-- slumber_lair (JEDEN MUTANT: instinkt) -->
+<string id="st_ap_news_tpl_slumber_lair_001">
+    <text>Slyšel jsem, že #subject_species# se #ago# stáhli do doupěte na #location#.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_lair_002">
+    <text>Viděl jsem smečku #subject_species# #ago# za svítání zalézt zpátky do doupěte na #location#.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_lair_003">
+    <text>#ago# za svítání jsem procházel kolem #location# a smečka #subject_species# už byla zpátky v doupěti. Zůstala tam až do soumraku.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_lair_004">
+    <text>Stopy u #location# ukazují, že smečka #subject_species# zalezla do doupěte a od té doby se ani nehnula.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_lair_005">
+    <text>Smečka #subject_species# se #ago# uložila ke spánku v doupěti na #location#.</text>
+</string>
+
+<!-- slumber_field (zbabělí mutanti odpočívající na otevřeném prostranství) -->
+<string id="st_ap_news_tpl_slumber_field_001">
+    <text>Slyšel jsem, že #subject_species# si #ago# ustlali v trávě na #location#, aniž by se obtěžovali najít úkryt.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_field_002">
+    <text>Viděl jsem stádo #subject_species# #ago# ulehnout na otevřeném prostranství na #location# a už se nepohnout.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_field_003">
+    <text>Vyšel jsem #ago# na kopec nad #location# a pode mnou si stádo #subject_species# ustlalo v trávě. Ať už spali, nebo ne, nehýbali se.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_field_004">
+    <text>Stopy u #location# ukazují, že stádo #subject_species# se usadilo na otevřeném prostranství a zůstalo tam celé hodiny.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_field_005">
+    <text>Stádo #subject_species# si #ago# ustlalo na #location#.</text>
+</string>
+
+<!-- slumber_surge (abnormální mutanti + predátoři ukrývající se před Emisí) -->
+<string id="st_ap_news_tpl_slumber_surge_001">
+    <text>Slyšel jsem, že #subject_species# se #ago# schovali v úkrytu na #location# a nehodlali vylézt.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_surge_002">
+    <text>Viděl jsem #subject_species# #ago# zmizet v úkrytu na #location# a od té doby se za dveřmi nic neozvalo.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_surge_003">
+    <text>#ago# jsem procházel kolem #location# a v tamním úkrytu byli #subject_species#. Ať už tam bylo cokoli, ven kvůli mně rozhodně nevylezlo.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_surge_004">
+    <text>Stopy u #location# ukazují, že #subject_species# zalezli do úkrytu a zůstali tam.</text>
+</string>
+<string id="st_ap_news_tpl_slumber_surge_005">
+    <text>Smečka #subject_species# se #ago# ukryla před Emisí v úkrytu na #location#.</text>
+</string>
+
+<!-- roam (JEDEN MUTANT: instinkt) -->
+<string id="st_ap_news_tpl_roam_001">
+    <text>Slyšel jsem, že #subject_species# #ago# prošli dlouhou trasou přes #location# bez jasného směru.</text>
+</string>
+<string id="st_ap_news_tpl_roam_002">
+    <text>Viděl jsem smečku #subject_species# #ago# procházet kolem #location# rozptýlenou do šířky a bez jediné stopy, které by se držela.</text>
+</string>
+<string id="st_ap_news_tpl_roam_003">
+    <text>Vracíval jsem se zpátky, když jsem #ago# u #location# narazil na stopy #subject_species#. Smečka prošla dlouhou trasou bez jakéhokoli řádu, kterému by se dalo rozumět.</text>
+</string>
+<string id="st_ap_news_tpl_roam_004">
+    <text>Čerstvé stopy #subject_species# u #location# #ago# vedou dlouhou trasou, ze které nejde poznat směr ani pohyb smečky.</text>
+</string>
+<string id="st_ap_news_tpl_roam_005">
+    <text>Smečka #subject_species# se #ago# potulovala po #location#.</text>
+</string>
+
+<!-- pack (JEDEN MUTANT: instinkt) -->
+<string id="st_ap_news_tpl_pack_001">
+    <text>Slyšel jsem, že #subject_species# se #ago# shromáždili na #location# v počtu, který nevypadá jako náhoda.</text>
+</string>
+<string id="st_ap_news_tpl_pack_002">
+    <text>Viděl jsem smečku #subject_species# #ago# sbíhat se na #location# ze všech stran.</text>
+</string>
+<string id="st_ap_news_tpl_pack_003">
+    <text>Byl jsem na vyvýšenině, když se #ago# od #location# začalo ozývat vytí a volání. #subject_species# se spojili do větší smečky, než je obvyklé.</text>
+</string>
+<string id="st_ap_news_tpl_pack_004">
+    <text>Stopy u #location# ukazují, že se smečka #subject_species# #ago# seběhla ze tří směrů a potom zůstala pohromadě.</text>
+</string>
+<string id="st_ap_news_tpl_pack_005">
+    <text>Smečka #subject_species# se #ago# shromáždila na #location#.</text>
+</string>
+
+
+  <!-- scatter (SINGLE MUTANT instinct) -->
+<string id="st_ap_news_tpl_scatter_001">
+  <text>Slyšel jsem, že se #subject_species# před #ago# rozprchli od #location# a nezastavili se. Ať je vyděsilo cokoli, pořád tam je.</text>
+</string>
+<string id="st_ap_news_tpl_scatter_002">
+  <text>Viděl jsem #subject_species#, jak před #ago# vyděšeně prchali kolem #location#. Strachy ani nedbali, kam šlapou.</text>
+</string>
+<string id="st_ap_news_tpl_scatter_003">
+  <text>Šel jsem po stezce, když kolem mě před #ago# proběhla smečka #subject_species#. Prchali od #location#, jako by jim šlo o život.</text>
+</string>
+<string id="st_ap_news_tpl_scatter_004">
+  <text>Stopy u #location# ukazují, že se smečka #subject_species# rozprchla na všechny strany. Ať je vyhnalo cokoli, pořád tam je.</text>
+</string>
+<string id="st_ap_news_tpl_scatter_005">
+  <text>Smečka #subject_species# se před #ago# rozprchla od #location# na všechny strany.</text>
+</string>
+
+<!-- area_infest (AREA-family mutant opportunity: territory claim) -->
+<string id="st_ap_news_tpl_area_infest_001">
+  <text>Slyšel jsem, že si #subject_species# před #ago# zabrali #location# jako doupě. Smečka roste.</text>
+</string>
+<string id="st_ap_news_tpl_area_infest_002">
+  <text>Viděl jsem #subject_species#, jak se před #ago# nastěhovali do #location# v takovém počtu, že odsud jen tak nezmizí.</text>
+</string>
+<string id="st_ap_news_tpl_area_infest_003">
+  <text>Průzkum okolí mě zavedl k #location#, kde se před #ago# objevili #subject_species# a zabydleli se tam. Tahle část #level# teď patří jim.</text>
+</string>
+<string id="st_ap_news_tpl_area_infest_004">
+  <text>Stopy u #location# ukazují, že se tam smečka #subject_species# usadila a od té doby se rozmnožuje.</text>
+</string>
+<string id="st_ap_news_tpl_area_infest_005">
+  <text>Smečka #subject_species# si před #ago# zabrala #location# jako doupě.</text>
+</string>
+
+<string id="st_ap_news_tpl_job_explore_offmap_001">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# vydali přes přechod prozkoumat neobsazený kus Zóny kolem #location#.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_offmap_002">
+  <text>Viděl jsem #subject_faction#, jak před #ago# opustili základnu nalehko. S mapami v rukou. Mluvili o území kolem #location#, které nikdo nemá zmapované.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_offmap_003">
+  <text>Byl jsem na hřebeni, když #subject_faction# před #ago# přešli z jihu směrem k #location#. Označovali okolí neobsazeného smartu. Prý mají v mapě díru.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_offmap_004">
+  <text>Stopy u přechodu ukazují, že #subject_faction# před #ago# vyrazili za úsvitu. Jejich vlastní území mají zmapované už roky. Chtěli něco nového.</text>
+</string>
+<string id="st_ap_news_tpl_job_explore_offmap_005">
+  <text>#subject_name# před #ago# vzal #subject_faction# do #location#, aby zmapovali prázdný sektor.</text>
+</string>
+
+<string id="st_ap_news_tpl_social_offmap_001">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# vydali na základnu v #location# za místním pitím.</text>
+</string>
+<string id="st_ap_news_tpl_social_offmap_002">
+  <text>Viděl jsem #subject_faction#, jak před #ago# vyrazili s lahví v ruce. Prý je na jejich základně mrtvo, tak se vydali do #location# za pořádnou společností.</text>
+</string>
+<string id="st_ap_news_tpl_social_offmap_003">
+  <text>Byl jsem před #ago# na základně v #location#, když dorazili #subject_faction# z jihu. Dva dny cesty, málem je cestou roztrhali mutanti. To všechno kvůli kartám a lahvi. Odcházeli s úsměvem.</text>
+</string>
+<string id="st_ap_news_tpl_social_offmap_004">
+  <text>Stopy na hranici ukazují, že #subject_faction# před #ago# vyrazili v noci na východ. Lehká výbava, žádné služební krámy. Mířili na základnu v #location#.</text>
+</string>
+<string id="st_ap_news_tpl_social_offmap_005">
+  <text>#subject_name# před #ago# vzal #subject_faction# na základnu v #location# na večer po výplatě.</text>
+</string>
+
+<string id="st_ap_news_tpl_supply_trader_offmap_001">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# vydali na základnu v #location#, aby tam u obchodníka vyložili, co měli v báglech.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_offmap_002">
+  <text>Viděl jsem #subject_faction#, jak před #ago# vyrazili s těžkými batohy. Prý místní překupník vyschl, tak se vydali přes dvě lokace až do #location#.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_offmap_003">
+  <text>Před #ago# jsem šel kus cesty s #subject_faction#. Tři kontroly, jeden přechod pod palbou, až k obchodníkovi v #location#. Vrátili se s náboji a obvazy. Stálo to za to.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_offmap_004">
+  <text>Stopy na hranici ukazují, že #subject_faction# před #ago# vyrazili s těžkými batohy. Místní obchodník je už týdny bez zásob.</text>
+</string>
+<string id="st_ap_news_tpl_supply_trader_offmap_005">
+  <text>#subject_name# před #ago# vzal #subject_faction# do #location# za tamním obchodníkem.</text>
+</string>
+
+<!-- barter (SINGLE STALKER need: peer swap) -->
+<string id="st_ap_news_tpl_barter_001">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# sešli v #location# a mezi sebou si vyměňovali výbavu. Bez jediného rublu.</text>
+</string>
+<string id="st_ap_news_tpl_barter_002">
+  <text>Viděl jsem #subject_faction#, jak si před #ago# v #location# přehazovali batohy a řešili, komu co chybí.</text>
+</string>
+<string id="st_ap_news_tpl_barter_003">
+  <text>Před #ago# jsem v #location# narazil na #subject_faction#. Posílali si mezi sebou přebytečné zbraně a léky podle toho, kdo co potřeboval.</text>
+</string>
+<string id="st_ap_news_tpl_barter_004">
+  <text>Prý #subject_name# před #ago# nechal #subject_faction# v #location# složit všechnu výbavu na jednu hromadu a rozdělit ji podle potřeby.</text>
+</string>
+<string id="st_ap_news_tpl_barter_005">
+  <text>#subject_faction# si před #ago# v #location# rozdělovali kořist. Lepší puška sem, krabice nábojů tam.</text>
+</string>
+
+<!-- barter_offmap (peer swap on another map) -->
+<string id="st_ap_news_tpl_barter_offmap_001">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# vydali do #location#, aby si tam s vlastními lidmi vyměnili výbavu.</text>
+</string>
+<string id="st_ap_news_tpl_barter_offmap_002">
+  <text>Prý #subject_faction# před #ago# cestovali do #location#, aby si s přátelskou skupinou vyměnili výbavu. Žádné peníze v tom nebyly.</text>
+</string>
+<string id="st_ap_news_tpl_barter_offmap_003">
+  <text>Někdo říkal, že #subject_name# před #ago# vzal #subject_faction# do #location#, aby tam se svými lidmi přerozdělili přebytečnou výbavu.</text>
+</string>
+<string id="st_ap_news_tpl_barter_offmap_004">
+  <text>#subject_faction# před #ago# podnikli cestu do #location#, aby tam svým lidem předali přebytečnou výbavu.</text>
+</string>
+<string id="st_ap_news_tpl_barter_offmap_005">
+  <text>Slyšel jsem, že se #subject_faction# před #ago# setkali se svými lidmi v #location# a rozdávali si zbraně a léky.</text>
+</string>
+
+
+</string_table>

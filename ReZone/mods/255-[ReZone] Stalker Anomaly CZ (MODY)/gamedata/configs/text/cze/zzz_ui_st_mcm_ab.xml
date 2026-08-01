@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <string id="ui_mcm_menu_ab">
+        <text>AlifeBalance</text>
+    </string>
+
+       <string id="ui_mcm_menu_general">
+        <text>Obecné</text>
+    </string>
+    <string id="ui_mcm_menu_pacing">
+        <text>Tempo obnovy</text>
+    </string>
+    <string id="ui_mcm_menu_spawn_size">
+        <text>Velikost spawnu</text>
+    </string>
+    <string id="ui_mcm_menu_squad_refill">
+        <text>Doplnění jednotek</text>
+    </string>
+    <string id="ui_mcm_menu_development">
+        <text>Vývoj</text>
+    </string>
+
+    <string id="ui_mcm_ab_title">
+        <text>AlifeBalance</text>
+    </string>
+
+    <string id="ui_mcm_ab_general_desc">
+        <text>Chytré vyvažování udržuje počet obyvatel na každé mapě přibližně na hodnotě, kterou pro ni stanovuje samotná hra. Čte vlastní záznamy spawnerů hry: kolik jednotek může každý spawner vytvořit a kolik jich právě žije, podle frakce a mapy, přičemž všichni mutanti jsou bráni jako jedna skupina. Zcela vyhlazené skupiny se vracejí dříve a dorazí v silnějším počtu, oslabené jednotky se doplňují a přerostlé skupiny čekají déle. Úpravy se vyhýbají již přeplněným oblastem, zdravé skupiny jsou ponechány zcela bez zásahu a o samotném spawnu stále rozhoduje herní engine.</text>
+    </string>
+    <string id="ui_mcm_ab_general_enabled">
+        <text>Zapnout chytré vyvažování</text>
+    </string>
+    <string id="ui_mcm_ab_general_enabled_desc">
+        <text>Hlavní přepínač. Pokud je vypnutý, nic se neměří ani neupravuje.</text>
+    </string>
+    <string id="ui_mcm_ab_general_crowd_threshold">
+        <text>Limit přeplněné oblasti</text>
+    </string>
+    <string id="ui_mcm_ab_general_crowd_threshold_desc">
+        <text>Kolik NPC mimo dohled hráče musí oblast obsahovat, aby byla považována za přeplněnou. Přeplněné oblasti nedostávají zrychlený respawn ani doplňování jednotek a jejich spawnery jsou odkládány, takže obnova směřuje do prázdných částí mapy místo dalšího posilování již nahromaděných skupin. Nižší hodnoty rozptýlí populaci více, vyšší hodnoty umožní hustší ohniska.</text>
+    </string>
+
+    <string id="ui_mcm_ab_pacing_desc">
+        <text>Tempo obnovy urychluje nebo odkládá cooldown každého spawneru podle toho, jak moc se počet jednotek jeho frakce liší od hodnoty stanovené pro danou mapu. Zcela vyhlazená frakce se vrací plnou rychlostí, mírně oslabená dostane menší podporu a přerostlá frakce čeká. Spawny nejsou nikdy zablokovány ani vytvářeny přímo; upravuje se pouze načasování vlastního respawnu hry v rámci níže uvedených limitů.</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_pacing">
+        <text>Zapnout tempo obnovy</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_pacing_desc">
+        <text>Přepínač úprav cooldownu. Pokud je vypnutý, hodnoty se stále vyhodnocují (Velikost spawnu a Doplnění jednotek je nadále používají), ale cooldown se nijak nemění.</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_advances">
+        <text>Počet korekčních kroků</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_advances_desc">
+        <text>Kolik měřicích cyklů je potřeba k posunutí cooldownu jednoho spawneru z plné hodnoty až na minimum při maximálním vyčerpání populace (jeden cyklus zahrnuje všechny sledované jednotky a trvá několik minut reálného času). Při hodnotě 1 se celá korekce provede během jediného cyklu, vyšší hodnoty ji rozloží do více kroků. Částečné vyčerpání úměrně snižuje velikost každé úpravy. Odklady používají stejný krok v opačném směru.</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_min_minutes">
+        <text>Minimální zbývající cooldown (herní minuty)</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_min_minutes_desc">
+        <text>Cooldown, který musí po urychlení vždy zůstat, v herních minutách. Engine nechá poslední čekací dobu odpočítat podle vlastních hodin a odtud spustí respawn. Spawner, který je již blíže spuštění než tato hodnota, se přirozeně přeskočí. Vyšší hodnota ponechá mezi vyčerpáním a doplněním větší prodlevu, nižší urychlí obnovu.</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_max_minutes">
+        <text>Maximální zbývající cooldown (herní minuty)</text>
+    </string>
+    <string id="ui_mcm_ab_pacing_max_minutes_desc">
+        <text>Horní limit zbývajícího cooldownu po odložení, v herních minutách. Odklad se zastaví na této hodnotě, i když je nainstalovaný respawn cooldown delší; pokud je kratší, jeho plný čas zůstává limitem. Vyšší hodnota nechá přerostlé frakce čekat déle, nižší udržuje obnovu v pohybu všude.</text>
+    </string>
+
+    <string id="ui_mcm_ab_spawn_size_desc">
+        <text>Velikost spawnu způsobí, že nové jednotky frakce, která prohrává v rámci celé Zóny, dorazí s větším počtem členů, až po jejich vlastní nastavené maximum. Frakce, která utrpěla ztráty pouze na jedné mapě, vytváří běžně velké jednotky; kolaps celé Zóny přivolá posily v plné síle. Nikdy nepřekročí vlastní rozsah jednotky, nikdy se neaktivuje na mapě, kde je daná frakce přerostlá, a nikdy nevytvoří jednotku v přeplněné oblasti.</text>
+    </string>
+    <string id="ui_mcm_ab_spawn_size_spawn_size">
+        <text>Zapnout velikost spawnu</text>
+    </string>
+    <string id="ui_mcm_ab_spawn_size_spawn_size_desc">
+        <text>Přepínač reakce na sílu spawnu. Pokud je vypnutý, každá jednotka se vytvoří s náhodnou velikostí jako ve vanille.</text>
+    </string>
+    <string id="ui_mcm_ab_spawn_size_spawn_size_strength">
+        <text>Síla</text>
+    </string>
+    <string id="ui_mcm_ab_spawn_size_spawn_size_strength_desc">
+        <text>Určuje sílu, s jakou vyčerpání frakce v rámci celé Zóny zvyšuje velikost nových jednotek. Při hodnotě 100 vytvoří zcela vyčerpaná frakce jednotky v jejich nastavené maximální velikosti; při 50 dosáhne poloviny svého rozsahu; při 0 je reakce vypnutá.</text>
+    </string>
+
+    <string id="ui_mcm_ab_squad_refill_desc">
+        <text>Doplnění jednotek obnovuje jednotky, které ztratily členy a klesly pod vlastní minimální velikost. Hra sama nijak neobnovuje oslabené jednotky a jediný přeživší tak může navždy blokovat slot svého spawneru. Doplnění přidá jednoho člena za každý cyklus, pouze pokud je jednotka mimo dohled hráče, pouze do její vlastní nastavené minimální velikosti a nikdy v přeplněných oblastech. Jednotky s pevně daným složením a příběhové jednotky zůstávají beze změny.</text>
+    </string>
+    <string id="ui_mcm_ab_squad_refill_refill">
+        <text>Zapnout doplnění jednotek</text>
+    </string>
+    <string id="ui_mcm_ab_squad_refill_refill_desc">
+        <text>Přepínač obnovy jednotek. Pokud je vypnutý, oslabené jednotky zůstanou v počtu, na který je zredukoval boj.</text>
+    </string>
+
+    <string id="ui_mcm_ab_development_desc">
+        <text>Diagnostické nástroje pro ladění a hledání problémů. Zvýšením úrovně logování lze sledovat každý cyklus, vyhodnocení, posun, odklad, doplnění a zvýšení velikosti spawnu v souboru alifebalance.log (při DEBUG dochází k mírnému dopadu na výkon).</text>
+    </string>
+    <string id="ui_mcm_ab_hdr_logging">
+        <text>Logování</text>
+    </string>
+    <string id="ui_mcm_ab_development_log_level">
+        <text>Úroveň logování</text>
+    </string>
+    <string id="ui_mcm_ab_development_log_level_desc">
+        <text>Určuje podrobnost souboru alifebalance.log. ERROR zaznamenává pouze chyby. WARN přidává neočekávané stavy. INFO přidává události při spuštění, konfiguraci a resetování. DEBUG zaznamenává každý cyklus, vyhodnocení, korekci, doplnění a zvýšení velikosti spawnu. Výchozí WARN je při běžném hraní téměř bez výpisů; DEBUG slouží k ladění nebo tvorbě hlášení o chybách.</text>
+    </string>
+    <string id="ab_development_log_level_lst_error">
+        <text>Chyby</text>
+    </string>
+    <string id="ab_development_log_level_lst_warn">
+        <text>Varování</text>
+    </string>
+    <string id="ab_development_log_level_lst_info">
+        <text>Informace</text>
+    </string>
+    <string id="ab_development_log_level_lst_debug">
+        <text>Debug</text>
+    </string>
+    <string id="ui_mcm_ab_hdr_diagnostics">
+        <text>Diagnostika</text>
+    </string>
+    <string id="ui_mcm_ab_development_show_markers">
+        <text>Zobrazovat značky na mapě</text>
+    </string>
+    <string id="ui_mcm_ab_development_show_markers_desc">
+        <text>Umístí na mapu PDA zelenou značku na každý smart terrain, u kterého došlo k urychlení nebo odložení cooldownu. Značka zůstane zobrazena pět minut reálného času a poté se sama odstraní. Kliknutím pravým tlačítkem na značku se můžete teleportovat k danému smart terrainu nebo zobrazit kompletní historii jeho korekcí. Nezávislé na úrovni logování.</text>
+    </string>
+    <string id="ui_mcm_ab_development_btn_reset_all">
+        <text>Obnovit výchozí nastavení</text>
+    </string>
+    <string id="ui_mcm_ab_development_btn_reset_all_desc">
+        <text>Obnoví všechna nastavení AlifeBalance v MCM na výchozí hodnoty. Použijte po aktualizaci z verze s odlišnou strukturou MCM (stará nastavení zůstanou v souboru MCM jako osiřelé klíče, ale již se nepoužívají).</text>
+    </string>
+    <string id="ui_mcm_ab_development_reset_warning">
+        <text>Varování: nejprve uložte nebo zrušte neuložené změny v MCM, jinak při dalším potvrzení přepíšou obnovené výchozí nastavení.</text>
+    </string>
+
+    <string id="st_ab_smart_map_teleport_to">
+        <text>Teleportovat na</text>
+    </string>
+    <string id="st_ab_smart_map_show_stats">
+        <text>Zobrazit statistiky pro</text>
+    </string>
+    <string id="st_ab_reset_all_done">
+        <text>AlifeBalance: všechna nastavení byla obnovena na výchozí hodnoty.</text>
+    </string>
+</string_table>

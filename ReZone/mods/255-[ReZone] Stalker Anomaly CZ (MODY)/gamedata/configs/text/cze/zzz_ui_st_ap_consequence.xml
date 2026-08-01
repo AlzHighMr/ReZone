@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+  <!-- Consequence display strings. Resolved via game.translate_string at render time.
+         id matches the Lua enum value (ap_core_const.CONSEQUENCE / ACTION):
+           consequence:<key>  short caption     (config / debug context, marker bracket)
+           action:<key>       full action       (PDA marker, warfare tooltip, news)
+         Both id sets must stay in parity (eng <-> rus). -->
+  <!-- Short captions (consequence names) -->
+
+<string id="consequence:alpha_promote">
+    <text>Povýšení Alfy</text>
+</string>
+<string id="consequence:alphakill_targeted">
+    <text>Lov Alfy</text>
+</string>
+<string id="consequence:massacre_scavenge">
+    <text>Prohledání masakru</text>
+</string>
+<string id="consequence:massacre_investigate">
+    <text>Vyšetření masakru</text>
+</string>
+<string id="consequence:massacre_loot">
+    <text>Kořist z masakru</text>
+</string>
+<string id="consequence:stash_ambush">
+    <text>Přepadení u skrýše</text>
+</string>
+<string id="consequence:stash_loot">
+    <text>Kořist ze skrýše</text>
+</string>
+<string id="consequence:stash_fill">
+    <text>Naplnění skrýše</text>
+</string>
+<string id="consequence:squadkill_revenge">
+    <text>Pomsta za družstvo</text>
+</string>
+<string id="consequence:basekill_support">
+    <text>Podpora útoku na základnu</text>
+</string>
+<string id="consequence:basekill_flee">
+    <text>Útěk ze základny</text>
+</string>
+<string id="consequence:wounded_hunt">
+    <text>Lov zraněného</text>
+</string>
+<string id="consequence:wounded_help">
+    <text>Pomoc zraněnému</text>
+</string>
+<string id="consequence:area_conquer">
+    <text>Obsazení oblasti</text>
+</string>
+<string id="consequence:area_swarm">
+    <text>Nájezd na oblast</text>
+</string>
+<string id="consequence:area_infest">
+    <text>Zamoření oblasti</text>
+</string>
+<string id="consequence:harvest_rob">
+    <text>Okradení sběrače</text>
+</string>
+<string id="consequence:harvest_haunt">
+    <text>Pronásledování sběrače</text>
+</string>
+<string id="consequence:hunger_campfire">
+    <text>Hlad u ohně</text>
+</string>
+<string id="consequence:sleep_campfire">
+    <text>Spánek u ohně</text>
+</string>
+<string id="consequence:rest_campfire">
+    <text>Odpočinek u ohně</text>
+</string>
+<string id="consequence:heal_shelter">
+    <text>Léčení v úkrytu</text>
+</string>
+<string id="consequence:shelter_indoor">
+    <text>Úkryt uvnitř</text>
+</string>
+<string id="consequence:shelter_outdoor">
+    <text>Úkryt venku</text>
+</string>
+<string id="consequence:money_harvest">
+    <text>Výdělek sběrem</text>
+</string>
+<string id="consequence:money_hunt">
+    <text>Honba za penězi</text>
+</string>
+<string id="consequence:supply_trader">
+    <text>Zásobování obchodníka</text>
+</string>
+<string id="consequence:job_outpost">
+    <text>Úkol na základně</text>
+</string>
+<string id="consequence:job_explore">
+    <text>Průzkumný úkol</text>
+</string>
+<string id="consequence:job_research">
+    <text>Výzkumný úkol</text>
+</string>
+<string id="consequence:social_campfire">
+    <text>Společenský život u ohně</text>
+</string>
+<string id="consequence:social_base">
+    <text>Společenský život na základně</text>
+</string>
+<string id="consequence:feed">
+    <text>Krmení</text>
+</string>
+<string id="consequence:slumber_field">
+    <text>Spánek v terénu</text>
+</string>
+<string id="consequence:slumber_lair">
+    <text>Spánek v doupěti</text>
+</string>
+<string id="consequence:slumber_surge">
+    <text>Spánek během Výboje</text>
+</string>
+<string id="consequence:roam">
+    <text>Toulání</text>
+</string>
+<string id="consequence:pack">
+    <text>Seskupení</text>
+</string>
+<string id="consequence:scatter">
+    <text>Rozptýlení</text>
+</string>
+
+
+  <!-- Full action phrases (named after consequence concept; spans travel + arrival) -->
+<string id="action:alpha_promote">
+    <text>Stal se alfou</text>
+</string>
+<string id="action:alphakill_targeted">
+    <text>Pronásleduje lovce Alfy</text>
+</string>
+<string id="action:massacre_scavenge">
+    <text>Prohledává místo masakru</text>
+</string>
+<string id="action:massacre_investigate">
+    <text>Vyšetřuje místo masakru</text>
+</string>
+<string id="action:massacre_loot">
+    <text>Okrádá místo masakru</text>
+</string>
+<string id="action:stash_ambush">
+    <text>Číhá u skrýše</text>
+</string>
+<string id="action:stash_loot">
+    <text>Rabuje skrýš</text>
+</string>
+<string id="action:stash_fill">
+    <text>Plní skrýš</text>
+</string>
+<string id="action:squadkill_revenge">
+    <text>Pronásleduje vraha družstva</text>
+</string>
+<string id="action:basekill_support">
+    <text>Posiluje napadenou základnu</text>
+</string>
+<string id="action:basekill_flee">
+    <text>Evakuuje napadenou základnu</text>
+</string>
+<string id="action:wounded_hunt">
+    <text>Loví zraněné</text>
+</string>
+<string id="action:wounded_help">
+    <text>Pomáhá zraněnému</text>
+</string>
+<string id="action:area_conquer">
+    <text>Dobývá oblast</text>
+</string>
+<string id="action:area_swarm">
+    <text>Rojí se v oblasti</text>
+</string>
+<string id="action:area_infest">
+    <text>Zamořuje oblast</text>
+</string>
+<string id="action:harvest_rob">
+    <text>Pronásleduje lovce artefaktů</text>
+</string>
+<string id="action:harvest_haunt">
+    <text>Hlídá naleziště artefaktu</text>
+</string>
+<string id="action:hunger_campfire">
+    <text>Míří k ohni najíst se</text>
+</string>
+<string id="action:sleep_campfire">
+    <text>Míří k ohni vyspat se</text>
+</string>
+<string id="action:rest_campfire">
+    <text>Míří k ohni odpočinout si</text>
+</string>
+<string id="action:heal_shelter">
+    <text>Míří do úkrytu na léčení</text>
+</string>
+<string id="action:shelter_indoor">
+    <text>Míří do vnitřního úkrytu</text>
+</string>
+<string id="action:shelter_outdoor">
+    <text>Míří do venkovního úkrytu</text>
+</string>
+<string id="action:money_harvest">
+    <text>Hledá artefakty</text>
+</string>
+<string id="action:money_hunt">
+    <text>Loví mutanty</text>
+</string>
+<string id="action:supply_trader">
+    <text>Doplňuje zásoby u obchodníka</text>
+</string>
+<string id="action:job_outpost">
+    <text>Hlídá stanoviště</text>
+</string>
+<string id="action:job_explore">
+    <text>Provádí průzkum</text>
+</string>
+<string id="action:job_research">
+    <text>Zkoumá anomálie</text>
+</string>
+<string id="action:social_campfire">
+    <text>Hledá ohniště ke společnosti</text>
+</string>
+<string id="action:social_base">
+    <text>Hledá základnu ke společnosti</text>
+</string>
+<string id="action:feed">
+    <text>Hledá potravu</text>
+</string>
+<string id="action:slumber_field">
+    <text>Ulehává ke spánku v terénu</text>
+</string>
+<string id="action:slumber_lair">
+    <text>Vrací se do doupěte</text>
+</string>
+<string id="action:slumber_surge">
+    <text>Hledá úkryt před Výbojem</text>
+</string>
+<string id="action:roam">
+    <text>Toulá se po teritoriu</text>
+</string>
+<string id="action:pack">
+    <text>Připojuje se ke smečce</text>
+</string>
+<string id="action:scatter">
+    <text>Utíká před predátory</text>
+</string>
+<string id="action:job_explore_offmap">
+    <text>Provádí průzkum v jiné oblasti</text>
+</string>
+<string id="action:social_offmap">
+    <text>Navštěvuje základnu v jiné oblasti</text>
+</string>
+<string id="action:supply_trader_offmap">
+    <text>Doplňuje zásoby v jiné oblasti</text>
+</string>
+<string id="consequence:job_explore_offmap">
+    <text>Průzkum jiné oblasti</text>
+</string>
+<string id="consequence:social_offmap">
+    <text>Společenský život v jiné oblasti</text>
+</string>
+<string id="consequence:supply_trader_offmap">
+    <text>Zásobování v jiné oblasti</text>
+</string>
+<string id="consequence:barter">
+    <text>Směnný obchod</text>
+</string>
+<string id="action:barter">
+    <text>Obchod se stalkery</text>
+</string>
+<string id="consequence:barter_offmap">
+    <text>Směnný obchod v jiné oblasti</text>
+</string>
+<string id="action:barter_offmap">
+    <text>Obchod v jiné oblasti</text>
+</string>
+
+
+</string_table>

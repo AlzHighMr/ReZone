@@ -1,0 +1,2366 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <!-- ==================== MAIN MENU ==================== -->
+  <string id="ui_mcm_menu_ap">
+    <text>AlifePlus</text>
+  </string>
+  <!-- ==================== LEVEL 2 MENU NAMES ==================== -->
+  <string id="ui_mcm_menu_framework">
+    <text>Framework</text>
+  </string>
+  <string id="ui_mcm_menu_world">
+    <text>Svět</text>
+  </string>
+  <string id="ui_mcm_menu_news">
+    <text>Novinky</text>
+  </string>
+  <string id="ui_mcm_menu_causes">
+    <text>Příčiny</text>
+  </string>
+  <string id="ui_mcm_menu_consequences">
+    <text>Důsledky</text>
+  </string>
+  <string id="ui_mcm_menu_development">
+    <text>Vývoj</text>
+  </string>
+  <string id="ui_mcm_menu_economy">
+    <text>Ekonomika</text>
+  </string>
+  <string id="ui_mcm_menu_creatures">
+    <text>Tvorové</text>
+  </string>
+  <string id="ui_mcm_menu_loot">
+    <text>Správa kořisti</text>
+  </string>
+  <string id="ui_mcm_menu_loot_policy">
+    <text>Pravidla kořisti</text>
+  </string>
+  <string id="ui_mcm_menu_trade">
+    <text>Obchod</text>
+  </string>
+  <string id="ui_mcm_menu_market">
+    <text>Trh</text>
+  </string>
+  <!-- ==================== LEVEL 3 MENU NAMES (CAUSE CATEGORIES) ==================== -->
+ <string id="ui_mcm_menu_reactions">
+  <text>Reakce</text>
+</string>
+<string id="ui_mcm_menu_opportunities">
+  <text>Příležitosti</text>
+</string>
+  <!-- ==================== LEVEL 4 MENU NAMES (CAUSE FAMILIES) ==================== -->
+ <string id="ui_mcm_menu_alpha">
+  <text>Alfa</text>
+</string>
+<string id="ui_mcm_menu_alphakill">
+  <text>AlphaKill</text>
+</string>
+<string id="ui_mcm_menu_massacre">
+  <text>Masakr</text>
+</string>
+<string id="ui_mcm_menu_stash">
+  <text>Skrýš</text>
+</string>
+<string id="ui_mcm_menu_squadkill">
+  <text>SquadKill</text>
+</string>
+<string id="ui_mcm_menu_basekill">
+  <text>BaseKill</text>
+</string>
+<string id="ui_mcm_menu_wounded">
+  <text>Zranění</text>
+</string>
+<string id="ui_mcm_menu_area">
+  <text>Oblast</text>
+</string>
+<string id="ui_mcm_menu_harvest">
+  <text>Sběr</text>
+</string>
+<string id="ui_mcm_menu_needs">
+  <text>Potřeby</text>
+</string>
+<string id="ui_mcm_menu_offmap">
+  <text>Mimo mapu</text>
+</string>
+<string id="ui_mcm_menu_instincts">
+  <text>Instinkty</text>
+</string>
+<string id="ui_mcm_menu_scatter">
+  <text>Rozptýlení</text>
+</string>
+<string id="ui_mcm_menu_feed">
+  <text>Krmení</text>
+</string>
+<string id="ui_mcm_menu_slumber_field">
+  <text>Spánek\nPole</text>
+</string>
+<string id="ui_mcm_menu_slumber_lair">
+  <text>Spánek\nDoupě</text>
+</string>
+<string id="ui_mcm_menu_slumber_surge">
+  <text>Spánek\nEmise</text>
+</string>
+<string id="ui_mcm_menu_roam">
+  <text>Toulání</text>
+</string>
+<string id="ui_mcm_menu_pack">
+  <text>Smečka</text>
+</string>
+<string id="ui_mcm_menu_area_infest">
+  <text>Zamoření\noblasti</text>
+</string>
+  <!-- ==================== LEVEL 3 MENU NAMES (CONSEQUENCES) ==================== -->
+ <string id="ui_mcm_menu_alpha_promote">
+  <text>Alfa\nPovýšení</text>
+</string>
+<string id="ui_mcm_menu_alphakill_targeted">
+  <text>AlphaKill\nCílené</text>
+</string>
+<string id="ui_mcm_menu_mutators">
+  <text>Teritorium</text>
+</string>
+<string id="ui_mcm_menu_conquest">
+  <text>Dobývání</text>
+</string>
+<string id="ui_mcm_menu_swarm">
+  <text>Roj</text>
+</string>
+<string id="ui_mcm_menu_infest">
+  <text>Zamoření</text>
+</string>
+<string id="ui_mcm_menu_massacre_scavenge">
+  <text>Masakr\nProhledávání</text>
+</string>
+<string id="ui_mcm_menu_massacre_investigate">
+  <text>Masakr\nVyšetřování</text>
+</string>
+<string id="ui_mcm_menu_massacre_loot">
+  <text>Masakr\nKořist</text>
+</string>
+<string id="ui_mcm_menu_stash_ambush">
+  <text>Skrýš\nPřepadení</text>
+</string>
+<string id="ui_mcm_menu_stash_loot">
+  <text>Skrýš\nKořist</text>
+</string>
+<string id="ui_mcm_menu_stash_fill">
+  <text>Skrýš\nDoplnění</text>
+</string>
+<string id="ui_mcm_menu_squadkill_revenge">
+  <text>SquadKill\nPomsta</text>
+</string>
+<string id="ui_mcm_menu_basekill_support">
+  <text>BaseKill\nPodpora</text>
+</string>
+<string id="ui_mcm_menu_basekill_flee">
+  <text>BaseKill\nÚstup</text>
+</string>
+<string id="ui_mcm_menu_wounded_hunt">
+  <text>Zranění\nLov</text>
+</string>
+<string id="ui_mcm_menu_wounded_help">
+  <text>Zranění\nPomoc</text>
+</string>
+<string id="ui_mcm_menu_area_conquer">
+  <text>Oblast\nDobývání</text>
+</string>
+<string id="ui_mcm_menu_area_swarm">
+  <text>Oblast\nRoj</text>
+</string>
+<string id="ui_mcm_menu_harvest_rob">
+  <text>Sběr\nLoupení</text>
+</string>
+<string id="ui_mcm_menu_harvest_haunt">
+  <text>Sběr\nStrašení</text>
+</string>
+<string id="ui_mcm_menu_hunger_campfire">
+  <text>Hlad\nTáborák</text>
+</string>
+<string id="ui_mcm_menu_sleep_campfire">
+  <text>Spánek\nTáborák</text>
+</string>
+<string id="ui_mcm_menu_rest_campfire">
+  <text>Odpočinek\nTáborák</text>
+</string>
+<string id="ui_mcm_menu_heal_shelter">
+  <text>Léčení\nSkrýš</text>
+</string>
+<string id="ui_mcm_menu_shelter_indoor">
+  <text>Skrýš\nUvnitř</text>
+</string>
+<string id="ui_mcm_menu_shelter_outdoor">
+  <text>Skrýš\nVenku</text>
+</string>
+<string id="ui_mcm_menu_money_harvest">
+  <text>Peníze\nSběr</text>
+</string>
+<string id="ui_mcm_menu_money_hunt">
+  <text>Peníze\nLov</text>
+</string>
+<string id="ui_mcm_menu_supply_trader">
+  <text>Zásoby\nObchodník</text>
+</string>
+<string id="ui_mcm_menu_supply_trader_offmap">
+  <text>Zásoby obchodníka\nMimo mapu</text>
+</string>
+<string id="ui_mcm_menu_barter">
+  <text>Směnný obchod</text>
+</string>
+<string id="ui_mcm_menu_barter_offmap">
+  <text>Směnný obchod\nMimo mapu</text>
+</string>
+<string id="ui_mcm_menu_job_outpost">
+  <text>Úkol\nVýspa</text>
+</string>
+<string id="ui_mcm_menu_job_explore">
+  <text>Úkol\nPrůzkum</text>
+</string>
+<string id="ui_mcm_menu_job_explore_offmap">
+  <text>Úkol průzkumu\nMimo mapu</text>
+</string>
+<string id="ui_mcm_menu_job_research">
+  <text>Úkol\nVýzkum</text>
+</string>
+<string id="ui_mcm_menu_social_campfire">
+  <text>Společenské\nTáborák</text>
+</string>
+<string id="ui_mcm_menu_social_base">
+  <text>Společenské\nZákladna</text>
+</string>
+<string id="ui_mcm_menu_social_offmap">
+  <text>Společenské\nMimo mapu</text>
+</string>
+  <!-- ==================== FRAMEWORK TAB ==================== -->
+ <string id="ui_mcm_ap_framework_title">
+  <text>Framework</text>
+</string>
+<string id="ui_mcm_ap_framework_desc">
+  <text>Řízení systému událostí. Proces ap_squad_on_change vytváří události přesně podle nastavené frekvence A-Life a rozděluje je mezi hráčovu a vzdálené mapy podle poměru A-Life. Limity Příčin a Důsledků určují, jaký dopad mohou tyto události mít na svět.</text>
+</string>
+<string id="ui_mcm_ap_framework_alife_ratio">
+  <text>Poměr A-Life</text>
+</string>
+<string id="ui_mcm_ap_framework_alife_ratio_desc">
+  <text>Určuje, jak se vytvořené události rozdělí mezi hráčovu mapu a vzdálené mapy, podobně jako původní rychlost simulace v X-Ray. Vyšší hodnoty upřednostňují hráčovu mapu (hodnota 8 přidělí přibližně 4 z 5 událostí hráčově mapě). Nula rozděluje události rovnoměrně. Záporné hodnoty upřednostňují vzdálené mapy.</text>
+</string>
+<string id="ui_mcm_ap_framework_alife_rate">
+  <text>Frekvence A-Life</text>
+</string>
+<string id="ui_mcm_ap_framework_alife_rate_desc">
+  <text>[událostí za minutu]\nUrčuje, kolik skupin dostane každou minutu pozornost napříč všemi mapami. Událost není akce – jde o jedno vyhodnocení jedné skutečné skupiny v aktivní simulaci. Zda skupina následně něco udělá a co přesně, závisí na jejím aktuálním stavu: hladu, strachu, ztrátách, území a příležitostech v okolí. Většina vyhodnocení skončí tím, že skupina pokračuje ve své dosavadní činnosti. Skupiny, jejichž situace se skutečně změnila, jsou vyhodnocovány přednostně, klidnější skupiny přicházejí na řadu postupně. Toto nastavení určuje tempo simulace, nikoli její průběh. Přímé reaktivní události (úmrtí, použití předmětů) jsou řešeny samostatně.</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_reactions">
+  <text>Limit reakcí</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_reactions_desc">
+  <text>Maximální počet reakcí za 60 sekund (masakr, SquadKill, BaseKill, zranění, sběr, alfa, AlphaKill).</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_per_causer">
+  <text>Reakce na zdroj</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_per_causer_desc">
+  <text>Maximální počet reakcí, které může jeden zdrojový subjekt vyvolat během 1 herní hodiny. Zdrojem může být zabiják, zraněný NPC nebo ten, kdo sebral artefakt (hráč či NPC). Zabraňuje situacím, kdy jeden zdroj ovládne většinu reakcí: například na nepřátelské mapě, kde je jediným nepřítelem hráč, u osamělého predátora likvidujícího celé doupě nebo u jediné skupiny, která se vydá na dlouhé vražedné řádění.</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_needs">
+  <text>Limit potřeb</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_needs_desc">
+  <text>Maximální počet událostí potřeb stalkerů za 60 sekund (hlad, spánek, odpočinek, léčení, Skrýš, peníze, zásoby, úkol, společnost).</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_instincts">
+  <text>Limit instinktů</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_instincts_desc">
+  <text>Maximální počet událostí mutantích instinktů za 60 sekund (rozptýlení, krmení, spánek, průzkum, společenské chování, zamoření).</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_opportunities">
+  <text>Limit příležitostí</text>
+</string>
+<string id="ui_mcm_ap_framework_cause_max_opportunities_desc">
+  <text>Maximální počet událostí územních příležitostí za 60 sekund (interakce s Skrýšy, dobývání oblastí).</text>
+</string>
+<string id="ui_mcm_ap_framework_consequence_max_events">
+  <text>Limit důsledků</text>
+</string>
+<string id="ui_mcm_ap_framework_consequence_max_events_desc">
+  <text>[počet]\nMaximální počet aktivací jednotlivých typů důsledků za 60 sekund. Zabraňuje příliš častému spouštění jednoho důsledku.</text>
+</string>
+<string id="ui_mcm_ap_framework_global_consequence_max_events">
+  <text>Globální limit důsledků</text>
+</string>
+<string id="ui_mcm_ap_framework_global_consequence_max_events_desc">
+  <text>[počet]\nMaximální celkový počet aktivací důsledků napříč všemi typy za 60 sekund. Zabraňuje zahlcení důsledky, pokud je během krátké doby vyvolá více příčin.</text>
+</string>
+<string id="ui_mcm_ap_framework_allow_external_ownership">
+  <text>Povolit externí vlastnictví</text>
+</string>
+<string id="ui_mcm_ap_framework_allow_external_ownership_desc">
+  <text>Pokud je povoleno, mohou jiné mody registrovat vlastnictví skupin. AP nebude zasahovat do skupin vlastněných jinými mody (Warfare, BAO apod.). Pokud je zakázáno, AP ignoruje nároky na externí vlastnictví a převezme kontrolu nad všemi způsobilými skupinami.</text>
+</string>
+  <!-- ==================== NEWS ==================== -->
+  <string id="ui_mcm_ap_news_title">
+  <text>Novinky</text>
+</string>
+<string id="ui_mcm_ap_news_desc">
+  <text>Systém zpráv v PDA. Události v Zóně (zabití, dobývání, nájezdy, aktivita mutantů) se zaznamenávají v okamžiku, kdy k nim dojde, a následně se v pravidelných intervalech převádějí do rádiových hlášek, které jsou prostřednictvím PDA doručovány stalkerem spojeným s danou událostí.</text>
+</string>
+<string id="ui_mcm_ap_news_news_enabled">
+  <text>Povolit novinky</text>
+</string>
+<string id="ui_mcm_ap_news_news_enabled_desc">
+  <text>Hlavní přepínač systému zpráv v PDA. Pokud je vypnutý, nebudou se rozesílat žádné zprávy. Zaznamenávání událostí pokračuje i nadále.</text>
+</string>
+<string id="ui_mcm_ap_news_chatter_enabled">
+  <text>Povolit rádiové hlášky</text>
+</string>
+<string id="ui_mcm_ap_news_chatter_enabled_desc">
+  <text>Místní a okamžité hlášky o tom, co se právě děje ve vašem okolí. Jakmile k události dojde, blízký stalker ji oznámí prostřednictvím PDA. Vypnutím se tyto hlášky ztlumí.</text>
+</string>
+<string id="ui_mcm_ap_news_chatter_interval_sec">
+  <text>Interval hlášek (sekundy)</text>
+</string>
+<string id="ui_mcm_ap_news_chatter_interval_sec_desc">
+  <text>Minimální počet skutečných sekund mezi jednotlivými rádiovými hláškami. Pokud dojde k více událostem najednou, přebytečné hlášky se přeskočí, aby nedošlo k zahlcení kanálu.</text>
+</string>
+<string id="ui_mcm_ap_news_news_interval_min_sec">
+  <text>Minimální interval zpráv</text>
+</string>
+<string id="ui_mcm_ap_news_news_interval_min_sec_desc">
+  <text>[sekundy]\nMinimální prodleva mezi zprávami v PDA. Při každém spuštění se náhodně zvolí prodleva mezi minimální a maximální hodnotou, takže frekvence působí přirozeněji a ne mechanicky.</text>
+</string>
+<string id="ui_mcm_ap_news_news_interval_max_sec">
+  <text>Maximální interval zpráv</text>
+</string>
+<string id="ui_mcm_ap_news_news_interval_max_sec_desc">
+  <text>[sekundy]\nMaximální prodleva mezi zprávami v PDA. Vyšší hodnota znamená celkově klidnější Zónu. Nastavením stejné hodnoty minima a maxima získáte pevný interval.</text>
+</string>
+<string id="ui_mcm_ap_news_news_scope">
+  <text>Okruh zpráv</text>
+</string>
+<string id="ui_mcm_ap_news_news_scope_desc">
+  <text>Určuje, do jakých frakčních rádiových kanálů se můžete zapojit. Vlastní: mluví pouze vaše frakce. Spojenci: vaše frakce a frakce, které jsou vám přátelské. Svět: jakýkoli stalker, který není nepřátelský. Tajné frakční kanály (Monolit, Armáda, Greh, ISG) zůstávají dostupné pouze jejich členům.</text>
+</string>
+<string id="ap_news_news_scope_lst_own">
+  <text>Pouze vlastní frakce</text>
+</string>
+<string id="ap_news_news_scope_lst_allies">
+  <text>Vlastní frakce a spojenci</text>
+</string>
+<string id="ap_news_news_scope_lst_world">
+  <text>Kdokoli, kdo není nepřítel</text>
+</string>
+<string id="ui_mcm_ap_news_news_max_age_game_hours">
+  <text>Maximální stáří zpráv</text>
+</string>
+<string id="ui_mcm_ap_news_news_max_age_game_hours_desc">
+  <text>[herní hodiny]\nUrčuje, jak stará může událost být, aby se o ní stále šířily zprávy. Při každém vytvoření zprávy se náhodně vybere událost z posledních N herních hodin. Nižší hodnota znamená aktuálnější zprávy, vyšší hodnota širší výběr událostí.</text>
+</string>
+  <!-- ==================== CAUSES / REACTIONS (page banner) ==================== -->
+  <string id="ui_mcm_ap_causes_reactions_title">
+  <text>Reakce</text>
+</string>
+  <!-- ==================== CAUSES / OPPORTUNITIES (page banner) ==================== -->
+<string id="ui_mcm_ap_causes_opportunities_title">
+  <text>Příležitosti</text>
+</string>
+  <!-- ==================== CAUSES / ALPHA ==================== -->
+  <string id="ui_mcm_ap_causes_alpha_tag">
+  <text>Příčina: Alfa\nPopis: Mutant nasbíral dostatek zabití, aby postoupil na vyšší úroveň alfy. Celkem 10 úrovní, přičemž každá vyžaduje více zabití. Stalkeři místo toho používají hodnost z herního enginu.\nPravidla: limit zabití</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alpha_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alpha_enabled_desc">
+  <text>Spustí příčinu „alfa“, když mutant dosáhne nové úrovně alfy.</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alpha_kills_per_level">
+  <text>Zabití na úroveň</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alpha_kills_per_level_desc">
+  <text>Počet zabití potřebných pro každou úroveň alfy. Při hodnotě 2: úroveň 1 po 2 zabitích, úroveň 10 po 20 zabitích.</text>
+</string>
+  <!-- ==================== CAUSES / ALPHAKILL ==================== -->
+ <string id="ui_mcm_ap_causes_alphakill_tag">
+  <text>Příčina: AlphaKill\nPopis: Alfa mutant byl zabit.\nPravidla: alfa zemřel</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alphakill_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_alphakill_enabled_desc">
+  <text>Spustí událost „AlphaKill“, když je zabit alfa mutant. Vyžadováno pro cílený lov smečky.</text>
+</string>
+  <!-- ==================== CAUSES / MASSACRE ==================== -->
+ <string id="ui_mcm_ap_causes_massacre_tag">
+  <text>Příčina: Masakr\nPopis: Na chytrém terénu se hromadí úmrtí.\nPravidla: více úmrtí lidí; mimo základnu</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_enabled_desc">
+  <text>Sleduje hromadění úmrtí a při dosažení stanoveného limitu spustí událost masakru.</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_threshold">
+  <text>Limit úmrtí</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_threshold_desc">
+  <text>Počet úmrtí v oblasti potřebný ke spuštění události masakru.</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_decay_time">
+  <text>Doba započítávání</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_massacre_decay_time_desc">
+  <text>[sekundy]\nČasové období, během kterého se úmrtí započítávají. Úmrtí starší než tato hodnota se již nezapočítávají.</text>
+</string>
+  <!-- ==================== CAUSES / STASH ==================== -->
+ <string id="ui_mcm_ap_causes_stash_loot_tag">
+  <text>Příčina: Dostupná kořist v Skrýšu\nPopis: Skupina objeví Skrýš, který není prázdný, a vyrabuje ho.\nPravidla: dohledová vzdálenost; den; stalkeři hledající kořist; osobnost (chamtivost, vnímavost); Skrýš není prázdný; cíl mimo základnu; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_stash_ambush_tag">
+  <text>Příčina: Dostupné přepadení Skrýšu\nPopis: Skupina psanců číhá u dobře zásobeného Skrýšu.\nPravidla: dohledová vzdálenost; den; stalkeři z řad psanců; osobnost (chamtivost, agresivita); počet předmětů &gt;= minimum; cíl mimo základnu; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_stash_fill_tag">
+  <text>Příčina: Dostupné doplnění Skrýšu\nPopis: Skupina objeví prázdný Skrýš a zásobí ho.\nPravidla: dohledová vzdálenost; den; libovolní stalkeři; osobnost (chamtivost, vztahy); Skrýš je prázdný; cíl mimo základnu; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_loot_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_loot_enabled_desc">
+  <text>Povolí vytváření příčin pro rabování Skrýšů.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_enabled_desc">
+  <text>Povolí vytváření příčin pro přepadení Skrýšů.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_fill_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_fill_enabled_desc">
+  <text>Povolí vytváření příčin pro doplňování Skrýšů.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_loot_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_loot_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o rabování. Doba obnovy MVT.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o přepadení. Doba obnovy MVT.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_fill_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_fill_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o doplnění Skrýšu. Doba obnovy MVT.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_min_items">
+  <text>Min. počet předmětů</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_stash_ambush_min_items_desc">
+  <text>Minimální počet předmětů v Skrýšu, aby u něj psanci číhali. Pokud je jich méně, Skrýš místo toho rovnou vyrabují.</text>
+</string>
+  <!-- ==================== CAUSES / SQUADKILL ==================== -->
+ <string id="ui_mcm_ap_causes_squadkill_tag">
+  <text>Příčina: SquadKill\nPopis: Celá skupina byla zlikvidována.\nPravidla: lidská skupina zlikvidována; mimo základnu</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_squadkill_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_squadkill_enabled_desc">
+  <text>Spustí událost „SquadKill“, když zemře poslední člen skupiny.</text>
+</string>
+  <!-- ==================== CAUSES / BASEKILL ==================== -->
+ <string id="ui_mcm_ap_causes_basekill_tag">
+  <text>Příčina: BaseKill\nPopis: Na základně frakce se hromadí úmrtí.\nPravidla: více úmrtí lidí; na základně</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_enabled_desc">
+  <text>Sleduje úmrtí na základnách frakcí a při dosažení stanoveného limitu spustí událost.</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_threshold">
+  <text>Limit úmrtí</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_threshold_desc">
+  <text>Počet úmrtí na základně potřebný ke spuštění události.</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_decay_time">
+  <text>Doba započítávání</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_basekill_decay_time_desc">
+  <text>[sekundy]\nČasové období, během kterého se úmrtí na základně započítávají.</text>
+</string>
+  <!-- ==================== CAUSES / WOUNDED ==================== -->
+ <string id="ui_mcm_ap_causes_wounded_tag">
+  <text>Příčina: Zranění\nPopis: NPC nebo hráč použil léčivý předmět.\nPravidla: použití léčivého předmětu; mimo základnu</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_wounded_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_wounded_enabled_desc">
+  <text>Spustí událost, když NPC nebo hráč použije léčivý předmět.</text>
+</string>
+  <!-- ==================== CAUSES / AREA ==================== -->
+<string id="ui_mcm_ap_causes_area_conquer_tag">
+  <text>Příčina: Dostupné dobytí oblasti\nPopis: Stalkerská skupina obsadí prázdný chytrý terén.\nPravidla: dohledová vzdálenost; den; stalkeři mimo Ekology; osobnost (území, agresivita); prázdný chytrý terén; mimo základnu; maximum chytrých terénů frakce na úrovni; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_area_swarm_tag">
+  <text>Příčina: Dostupný roj v oblasti\nPopis: Skupina mutantů obsadí prázdný chytrý terén.\nPravidla: dohledová vzdálenost; den; ne-zbabělí mutanti; osobnost (území, agresivita); prázdný chytrý terén; mimo základnu; maximum chytrých terénů frakce na úrovni; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_area_infest_tag">
+  <text>Příčina: Dostupné zamoření oblasti\nPopis: Mutant obsadí doupě nebo Skrýš před emisí.\nPravidla: dohledová vzdálenost; den; ne-zbabělí mutanti; osobnost (území, přežití); Skrýš podle druhu; mimo základnu; nezamořeno; přítomnost alfy; limit na úroveň; taktika; MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_enabled_desc">
+  <text>Povolí vytváření příčin pro dobývání oblastí.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o dobytí. Doba obnovy MVT.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_max_faction_smarts_per_level">
+  <text>Max. chytrých terénů frakce na úroveň</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_conquer_max_faction_smarts_per_level_desc">
+  <text>Frakce přestane na dané úrovni dobývat, jakmile její skupiny drží tento počet chytrých terénů. Započítávají se všechny chytré terény obsazené frakcí, nejen ty, které dobyla. Dominantní frakce se tak zastaví a nově příchozí mohou volně expandovat.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_enabled_desc">
+  <text>Povolí vytváření příčin pro rojení.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o rojení. Doba obnovy MVT.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_max_faction_smarts_per_level">
+  <text>Max. chytrých terénů mutantů na úroveň</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_swarm_max_faction_smarts_per_level_desc">
+  <text>Mutanti přestanou na dané úrovni rojit, jakmile mutantí skupiny jakéhokoli druhu drží tento počet chytrých terénů. Všechny druhy mutantů se počítají jako jedna strana.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_infest_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_infest_enabled_desc">
+  <text>Povolí vytváření příčin pro zamoření.</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_infest_threshold">
+  <text>Limit MVT</text>
+</string>
+<string id="ui_mcm_ap_causes_opportunities_cause_area_infest_threshold_desc">
+  <text>Počet herních hodin na skupinu před dalším pokusem o zamoření. Doba obnovy MVT.</text>
+</string>
+  <!-- ==================== CAUSES / HARVEST ==================== -->
+<string id="ui_mcm_ap_causes_harvest_tag">
+  <text>Příčina: Sběr\nPopis: NPC nebo hráč sebral artefakt.\nPravidla: sebrání artefaktu</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_harvest_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_reactions_cause_harvest_enabled_desc">
+  <text>Spustí příčinu „sběr“, když je sebrán artefakt.</text>
+</string>
+  <!-- ==================== CAUSES / NEEDS ==================== -->
+  <string id="ui_mcm_ap_causes_needs_title">
+  <text>Potřeby</text>
+</string>
+  <!-- Per-cause tags (14 sub-causes) -->
+  <string id="ui_mcm_ap_causes_needs_hunger_campfire_tag">
+  <text>Příčina: Dostupný táborák pro hlad\nPopis: Hladová skupina zamíří k táboráku, aby se najedla.\nPravidla: dosah rádia; libovolní stalkeři; osobnost (přežití); táborák; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_sleep_campfire_tag">
+  <text>Příčina: Dostupný táborák pro spánek\nPopis: Unavená skupina se uloží ke spánku u táboráku.\nPravidla: dosah rádia; noc; libovolní stalkeři; osobnost (přežití); táborák; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_rest_campfire_tag">
+  <text>Příčina: Dostupný táborák pro odpočinek\nPopis: Vyčerpaná skupina si dá pauzu u táboráku.\nPravidla: dosah rádia; libovolní stalkeři; osobnost (přežití); táborák; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_heal_shelter_tag">
+  <text>Příčina: Dostupný Skrýš pro léčení\nPopis: Zraněná skupina hledá Skrýš před emisí.\nPravidla: dosah rádia; libovolní stalkeři; osobnost (území, přežití); Skrýš před emisí; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_shelter_indoor_tag">
+  <text>Příčina: Dostupný vnitřní Skrýš\nPopis: Skupina se ukryje uvnitř před emisí.\nPravidla: dosah rádia; noc; libovolní stalkeři; osobnost (území, disciplína); Skrýš před emisí; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_shelter_outdoor_tag">
+  <text>Příčina: Dostupný venkovní Skrýš\nPopis: Skupina využije táborák jako venkovní Skrýš.\nPravidla: dosah rádia; noc; libovolní stalkeři; osobnost (vnímavost); táborák; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_supply_trader_tag">
+  <text>Příčina: Dostupný obchodník se zásobami\nPopis: Skupina zamíří k chytrému terénu s vybraným obchodníkem, medikem nebo mechanikem, aby doplnila zásoby.\nPravidla: dosah rádia; den; libovolní stalkeři; osobnost (chamtivost, vztahy); servisní NPC na chytrém terénu; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_supply_trader_offmap_tag">
+  <text>Příčina: Dostupný obchodník se zásobami mimo mapu\nPopis: Skupina zamíří na chytrý terén na jiné mapě s vybraným obchodníkem, medikem nebo mechanikem. Protějšek supply_trader; mírumilovné a chamtivé frakce cestují za obchodem.\nPravidla: kontrola všech úrovní; vynechání zdrojové úrovně; platí limit rovnováhy pro vzdálené mapy; cestující mimo mapu; osobnost (chamtivost, potlačená agresivita); servisní NPC na chytrém terénu; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_barter_tag">
+  <text>Příčina: Dostupný směnný obchod\nPopis: Skupina zamíří na chytrý terén vlastní frakce, aby u místního stalkera směnila přebytečné předměty za to, co jí chybí, bez použití peněz. Sdílí systém zásobování s příčinami pro návštěvu obchodníka.\nPravidla: dosah rádia; den; přítomnost vlastní frakce; osobnost (chamtivost, vztahy); nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_barter_offmap_tag">
+  <text>Příčina: Dostupný směnný obchod mimo mapu\nPopis: Skupina zamíří na chytrý terén vlastní frakce na jiné mapě, aby směňovala. Protějšek barter; mírumilovné a chamtivé frakce cestují za směnou.\nPravidla: kontrola všech úrovní; vynechání zdrojové úrovně; platí limit rovnováhy pro vzdálené mapy; cestující mimo mapu; osobnost (chamtivost, potlačená agresivita); přítomnost vlastní frakce; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_money_harvest_tag">
+  <text>Příčina: Dostupný sběr peněz\nPopis: Skupina zamíří k anomálii, aby získala artefakty.\nPravidla: dosah rádia; den; stalkeři zaměření na vlastní prospěch; osobnost (chamtivost, vnímavost); anomálie; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_money_hunt_tag">
+  <text>Příčina: Dostupný lov pro peníze\nPopis: Skupina zamíří do doupěte lovit mutanty.\nPravidla: dosah rádia; den; stalkeři přírodovědci; osobnost (chamtivost, vnímavost); doupě; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_job_outpost_tag">
+  <text>Příčina: Dostupná služba na výspě\nPopis: Skupina obsadí vzdálené stanoviště a drží zde hlídku.\nPravidla: dosah rádia; den; zásadoví stalkeři; osobnost (území, disciplína); mimo základnu; mimo doupě; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_job_explore_tag">
+  <text>Příčina: Dostupný průzkum\nPopis: Skupina prozkoumá neobsazený chytrý terén.\nPravidla: dosah rádia; den; stalkeři zaměření na vlastní prospěch; osobnost (vnímavost, území); neobsazeno; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_job_explore_offmap_tag">
+  <text>Příčina: Dostupný průzkum mimo mapu\nPopis: Skupina prozkoumá neobsazený chytrý terén na jiné mapě. Protějšek job_explore; mírumilovné a zvídavé frakce prozkoumávají sousední mapy.\nPravidla: kontrola všech úrovní; vynechání zdrojové úrovně; platí limit rovnováhy pro vzdálené mapy; cestující mimo mapu; osobnost (vnímavost, potlačená agresivita); neobsazená frakce; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_job_research_tag">
+  <text>Příčina: Dostupný výzkum\nPopis: Skupina Ekologů odebírá vzorky z anomálního pole.\nPravidla: dosah rádia; den; Ekologové; osobnost (vnímavost, disciplína); anomálie; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_social_campfire_tag">
+  <text>Příčina: Dostupné společenské setkání u táboráku\nPopis: Skupina se schází u táboráku, aby popíjela.\nPravidla: dosah rádia; libovolní stalkeři; osobnost (vztahy); táborák; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_social_base_tag">
+  <text>Příčina: Dostupná návštěva základny\nPopis: Skupina se vrací na základnu za účelem odpočinku a volného času.\nPravidla: dosah rádia; zásadoví stalkeři; osobnost (vztahy, území); základna; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_social_offmap_tag">
+  <text>Příčina: Dostupná návštěva mimo mapu\nPopis: Skupina navštíví základnu na jiné mapě kvůli společnosti. Protějšek social_base; mírumilovné a společenské frakce navštěvují jiné tábory.\nPravidla: kontrola všech úrovní; vynechání zdrojové úrovně; platí limit rovnováhy pro vzdálené mapy; cestující mimo mapu; osobnost (vztahy, potlačená agresivita); základna; nepřátelství ne; taktika; Hull</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_hunger_threshold">
+  <text>Limit hladu</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_hunger_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi hladu.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_sleep_threshold">
+  <text>Limit spánku</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_sleep_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi spánku. Aktivní pouze v noci (20:00–05:00).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_rest_threshold">
+  <text>Limit odpočinku</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_rest_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi odpočinku (kouření, pití, relaxace).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_heal_threshold">
+  <text>Limit léčení</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_heal_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi léčení.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_threshold">
+  <text>Limit Skrýšu</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi Skrýšu.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_threshold">
+  <text>Limit peněz</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi hledání peněz.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_threshold">
+  <text>Limit zásob</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_threshold_desc">
+  <text>[herní hodiny]\nČas mezi událostmi zásobování (návštěva obchodníka, uložení předmětů do Skrýšu).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_threshold">
+  <text>Limit práce</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_threshold_desc">
+  <text>[herní hodiny]\nČas mezi pracovními událostmi (hlídka, průzkum, výzkum).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_threshold">
+  <text>Limit společenských aktivit</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_threshold_desc">
+  <text>[herní hodiny]\nČas mezi společenskými událostmi (setkání u táboráku, návštěva základny).</text>
+</string>
+  <!-- Per-cause enable labels (uniform "Enabled") -->
+ <string id="ui_mcm_ap_causes_needs_cause_hunger_campfire_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_hunger_campfire_enabled_desc">
+  <text>Povolí vytváření příčiny hunger_campfire.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_sleep_campfire_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_sleep_campfire_enabled_desc">
+  <text>Povolí vytváření příčiny sleep_campfire.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_rest_campfire_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_rest_campfire_enabled_desc">
+  <text>Povolí vytváření příčiny rest_campfire.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_heal_shelter_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_heal_shelter_enabled_desc">
+  <text>Povolí vytváření příčiny heal_shelter.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_indoor_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_indoor_enabled_desc">
+  <text>Povolí vytváření příčiny shelter_indoor.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_outdoor_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_shelter_outdoor_enabled_desc">
+  <text>Povolí vytváření příčiny shelter_outdoor.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_trader_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_trader_enabled_desc">
+  <text>Povolí vytváření příčiny supply_trader.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_harvest_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_harvest_enabled_desc">
+  <text>Povolí vytváření příčiny money_harvest.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_hunt_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_money_hunt_enabled_desc">
+  <text>Povolí vytváření příčiny money_hunt.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_outpost_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_outpost_enabled_desc">
+  <text>Povolí vytváření příčiny job_outpost.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_explore_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_explore_enabled_desc">
+  <text>Povolí vytváření příčiny job_explore.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_research_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_research_enabled_desc">
+  <text>Povolí vytváření příčiny job_research.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_campfire_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_campfire_enabled_desc">
+  <text>Povolí vytváření příčiny social_campfire.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_base_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_base_enabled_desc">
+  <text>Povolí vytváření příčiny social_base.</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_offmap_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_social_offmap_enabled_desc">
+  <text>Povolí vytváření příčiny social_offmap (protějšek social_base; mírumilovné a společenské frakce navštěvují jiné tábory).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_trader_offmap_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_supply_trader_offmap_enabled_desc">
+  <text>Povolí vytváření příčiny supply_trader_offmap (protějšek supply_trader; mírumilovné a chamtivé frakce cestují za obchodem).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_barter_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_barter_enabled_desc">
+  <text>Povolí vytváření příčiny barter (stalkeři směňují přebytečné předměty za to, co jim chybí, s vlastní frakcí bez použití peněz).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_barter_offmap_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_barter_offmap_enabled_desc">
+  <text>Povolí vytváření příčiny barter_offmap (protějšek barter; mírumilovné a chamtivé frakce cestují na chytrý terén vlastní frakce na jiné mapě, aby směňovaly).</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_explore_offmap_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_causes_needs_cause_job_explore_offmap_enabled_desc">
+  <text>Povolí vytváření příčiny job_explore_offmap (protějšek job_explore; mírumilovné a zvídavé frakce prozkoumávají sousední mapy).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / ALPHA PROMOTE ==================== -->
+ <string id="ui_mcm_ap_consequences_alpha_promote_title">
+  <text>Alfa\nPovýšení</text>
+</string>
+<string id="ui_mcm_ap_consequences_alpha_promote_tag">
+  <text>Popis: Zaregistruje novou alfu nebo zvýší její úroveň\nPříčina: Alfa\nPravidla: mutant; limit úmrtí</text>
+</string>
+<string id="ui_mcm_ap_consequences_alpha_promote_consequence_alpha_promote_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_alpha_promote_consequence_alpha_promote_enabled_desc">
+  <text>Registruje mutanty jako alfy, když postoupí na vyšší úroveň díky zabitým nepřátelům.</text>
+</string>
+<string id="ui_mcm_ap_consequences_alpha_promote_consequence_alpha_promote_max_alphas">
+  <text>Maximum alf</text>
+</string>
+<string id="ui_mcm_ap_consequences_alpha_promote_consequence_alpha_promote_max_alphas_desc">
+  <text>Maximální počet alf povolených v celé Zóně. Blokuje pouze vznik nových alf, nikoli zvyšování jejich úrovně.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / ALPHAKILL TARGETED ==================== -->
+ <string id="ui_mcm_ap_consequences_alphakill_targeted_title">
+  <text>Cílený lov alfy</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_tag">
+  <text>Popis: Mutanti stejného druhu pronásledují vraha\nPříčina: AlphaKill\nPravidla: dosah pachu; stejný druh; osobnost (agresivita)</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_enabled_desc">
+  <text>Mutanti stejného druhu na dané úrovni pronásledují vraha.</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_alphakill_targeted_consequence_alphakill_targeted_max_squads_desc">
+  <text>Maximální počet alfa skupin, které pronásledují vraha.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / MASSACRE SCAVENGE ==================== -->
+ <string id="ui_mcm_ap_consequences_massacre_scavenge_title">
+  <text>Rabování po masakru</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_tag">
+  <text>Popis: Zbabělí mutanti rabují mrtvoly\nPříčina: Masakr\nPravidla: dosah pachu; zbabělí mutanti; osobnost (přežití, vnímavost)</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_enabled_desc">
+  <text>Psanci a zbabělí mutanti se stahují na místa masakrů.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_scavenge_consequence_massacre_scavenge_max_squads_desc">
+  <text>Maximální počet skupin mrchožroutů, které reagují na masakr.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / MASSACRE INVESTIGATE ==================== -->
+<string id="ui_mcm_ap_consequences_massacre_investigate_title">
+  <text>Masakr\nVyšetřování</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_tag">
+  <text>Popis: Stalkeři frakce obětí zamíří na místo zabití\nPříčina: Masakr\nPravidla: dosah rádia; stalkeři mimo Renegáty; osobnost (vnímavost, vztahy)</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_enabled_desc">
+  <text>Stalkerské frakce vyšetřují masakry, při kterých byli zabiti jejich vlastní členové.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_investigate_consequence_massacre_investigate_max_squads_desc">
+  <text>Maximální počet skupin frakce, které vyšetřují masakr (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / MASSACRE LOOT ==================== -->
+ <string id="ui_mcm_ap_consequences_massacre_loot_title">
+  <text>Masakr\nRabování</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_tag">
+  <text>Popis: Psanci oberou mrtvoly\nPříčina: Masakr\nPravidla: dosah rádia; stalkeři z řad psanců; osobnost (chamtivost, vnímavost)</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_enabled_desc">
+  <text>Psanci oberou mrtvoly na místech masakrů.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_massacre_loot_consequence_massacre_loot_max_squads_desc">
+  <text>Maximální počet skupin psanců, které zamíří vyrabovat místo masakru.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / STASH AMBUSH ==================== -->
+ <string id="ui_mcm_ap_consequences_stash_ambush_title">
+  <text>Skrýš\nPřepadení</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_ambush_tag">
+  <text>Popis: Skupina dorazí a čeká na přepadení lupiče\nPříčina: Dostupné přepadení Skrýšu</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_ambush_consequence_stash_ambush_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_ambush_consequence_stash_ambush_enabled_desc">
+  <text>Bandité se utáboří u odhalených Skrýšů a čekají.</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_ambush_consequence_stash_ambush_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_ambush_consequence_stash_ambush_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / STASH LOOT ==================== -->
+<string id="ui_mcm_ap_consequences_stash_loot_title">
+  <text>Skrýš\nRabování</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_tag">
+  <text>Popis: Skupina ze skrýše odebere určité množství předmětů z jednotlivých kategorií (munice odpovídající vybaveným zbraním, lékárničky, obvazy, jídlo, nápoje, antirad, granáty). Úkolové předměty se ze skrýše neodebírají. Volitelné nastavení MCM umožňuje vynechat skrýše s předměty pro výrobu.\nPříčina: Dostupné rabování skrýše</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_enabled_desc">
+  <text>Mrchožrouti spěchají k odhaleným skrýším, aby je vyrabovali dříve, než dorazí hráč.</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_skip_crafting">
+  <text>Vynechat skrýše s předměty pro výrobu</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_loot_consequence_stash_loot_skip_crafting_desc">
+  <text>Pokud skrýš obsahuje jakýkoli předmět potřebný pro výrobu (nástroje, sady, součástky zbraní, vylepšení), skupina ji celou ponechá nedotčenou. Zachová tak hráči zásoby potřebné pro výrobu. Vypnutím umožníte skupinám rabovat všechny skrýše bez ohledu na jejich obsah.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / STASH FILL ==================== -->
+ <string id="ui_mcm_ap_consequences_stash_fill_title">
+  <text>Skrýš\nDoplnění</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_fill_tag">
+  <text>Popis: Skupina uloží do skrýše přebytečné zásoby nad maximální limit jednotlivých kategorií, s omezením množství na jednu událost.\nPříčina: Dostupné doplnění skrýše</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_fill_consequence_stash_fill_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_fill_consequence_stash_fill_enabled_desc">
+  <text>Stalkeři ukrývají zásoby ve skrýších, které objeví.</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_fill_consequence_stash_fill_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_stash_fill_consequence_stash_fill_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / SQUADKILL REVENGE ==================== -->
+ <string id="ui_mcm_ap_consequences_squadkill_revenge_title">
+  <text>Odplata za vyhlazení skupiny</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_tag">
+  <text>Popis: Skupiny frakce obětí pronásledují vraha\nPříčina: Vyhlazení skupiny\nPravidla: dosah rádia; bez zásad nebo psanci; osobnost (agresivita, vztahy)</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_enabled_desc">
+  <text>Blízké spřátelené skupiny pronásledují vrahy, když je celá skupina vyhlazena.</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_squadkill_revenge_consequence_squadkill_revenge_max_squads_desc">
+  <text>Maximální počet skupin mstících se za oběti, které pronásledují vraha (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / BASEKILL SUPPORT ==================== -->
+ <string id="ui_mcm_ap_consequences_basekill_support_title">
+  <text>Podpora při útoku na základnu</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_tag">
+  <text>Popis: Skupiny frakce obětí spěchají bránit základnu\nPříčina: Útok na základnu\nPravidla: dosah rádia; stalkeři mimo Renegáty; osobnost (disciplína, vztahy)</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_enabled_desc">
+  <text>Blízké skupiny spěchají posílit základnu pod útokem.</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_support_consequence_basekill_support_max_squads_desc">
+  <text>Maximální počet posil vyslaných k obraně základny (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / BASEKILL FLEE ==================== -->
+ <string id="ui_mcm_ap_consequences_basekill_flee_title">
+  <text>Útok na základnu\nÚstup</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_tag">
+  <text>Popis: Blízké skupiny prchají na vzdálenou spřátelenou základnu\nPříčina: Útok na základnu\nPravidla: dosah zraku; bez zásad; osobnost (nedisciplinovanost, územní chování); základna v dané úrovni</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_enabled_desc">
+  <text>Skupiny opouštějí základnu pod silným útokem a ustupují do bezpečí.</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_basekill_flee_consequence_basekill_flee_max_squads_desc">
+  <text>Maximální počet skupin, které prchnou během jedné události (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / WOUNDED HUNT ==================== -->
+ <string id="ui_mcm_ap_consequences_wounded_hunt_title">
+  <text>Zraněný\nLov</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_tag">
+  <text>Popis: Predátoři a zmutovaní mutanti se stahují ke zraněnému\nPříčina: Zraněný\nPravidla: dosah rádia; predátoří nebo abnormální druhy; osobnost (agresivita, vnímavost)</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_enabled_desc">
+  <text>Predátoři a abnormální mutanti loví zraněné.</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_hunt_consequence_wounded_hunt_max_squads_desc">
+  <text>Maximální počet skupin mutantů, které se stáhnou ke zraněnému (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / WOUNDED FACTION HELP ==================== -->
+ <string id="ui_mcm_ap_consequences_wounded_help_title">
+  <text>Zraněný\nPomoc</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_tag">
+  <text>Popis: Zdravotníci stejné frakce se stahují ke zraněnému\nPříčina: Zraněný\nPravidla: dosah rádia; stalkeři mimo Psance; osobnost (vztahy, disciplína)</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_enabled_desc">
+  <text>Členové frakce spěchají na pomoc zraněným spolubojovníkům.</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_max_squads">
+  <text>Max. skupin na událost</text>
+</string>
+<string id="ui_mcm_ap_consequences_wounded_help_consequence_wounded_help_max_squads_desc">
+  <text>Maximální počet pomocných skupin vyslaných během jedné události (náhodně 1 až N).</text>
+</string>
+  <!-- ==================== CONSEQUENCES / AREA CONQUER ==================== -->
+ <string id="ui_mcm_ap_consequences_area_conquer_title">
+  <text>Oblast\nDobytí</text>
+</string>
+<string id="ui_mcm_ap_consequences_area_conquer_tag">
+  <text>Popis: Skupina stalkerů dorazí a přidá svou frakci do seznamu pro spawn\nPříčina: Dostupné dobytí oblasti</text>
+</string>
+<string id="ui_mcm_ap_consequences_area_conquer_consequence_area_conquer_enabled">
+  <text>Povoleno</text>
+</string>
+<string id="ui_mcm_ap_consequences_area_conquer_consequence_area_conquer_enabled_desc">
+  <text>Vysílá lidské skupiny, aby obsadily prázdné oblasti.</text>
+</string>
+<string id="ui_mcm_ap_consequences_area_conquer_consequence_area_conquer_rush">
+  <text>Režim spěchu</text>
+</string>
+<string id="ui_mcm_ap_consequences_area_conquer_consequence_area_conquer_rush_desc">
+  <text>Skriptované skupiny se pohybují maximální rychlostí. Vypnutím získáte pomalejší a realističtější pohyb.</text>
+</string>
+  <!-- ==================== CONSEQUENCES / AREA SWARM ==================== -->
+<string id="ui_mcm_ap_consequences_area_swarm_title">
+    <text>Roje v\noblasti</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_swarm_tag">
+    <text>Popis: Dorazí smečka mutantů a přidá svůj druh do seznamu spawnování\nPříčina: Roj v oblasti k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_swarm_consequence_area_swarm_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_swarm_consequence_area_swarm_enabled_desc">
+    <text>Vysílejte skupiny mutantů, aby obsadily prázdné oblasti.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_swarm_consequence_area_swarm_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_swarm_consequence_area_swarm_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / HARVEST ROB ==================== -->
+  <string id="ui_mcm_ap_consequences_harvest_rob_title">
+    <text>Sklizeň\nLoupež</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_tag">
+    <text>Popis: Bandité pronásledují lovce artefaktů\nPříčina: Sklizeň\nPravidla: dosah rádia; stalkerští bandité; osobnost(chamtivost, agresivita)</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_enabled_desc">
+    <text>Bandité pronásledují lovce artefaktů.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_max_squads">
+    <text>Max. počet skupin na událost</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_rob_consequence_harvest_rob_max_squads_desc">
+    <text>Maximální počet skupin lovců, které pronásledují lovce artefaktů (náhodně 1 až N).</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / HARVEST HAUNT ==================== -->
+  <string id="ui_mcm_ap_consequences_harvest_haunt_title">
+    <text>Sklizeň\nPronásledování</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_tag">
+    <text>Popis: Zmutovaní tvorové se shromažďují na místě, kde byl artefakt sebrán\nPříčina: Sklizeň\nPravidla: dosah pachu; abnormální druhy; osobnost(vnímání, teritorium)</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_enabled_desc">
+    <text>Abnormální mutanti se stahují k místům, kde byly sebrány artefakty.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_max_squads">
+    <text>Max. počet skupin na událost</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_harvest_haunt_consequence_harvest_haunt_max_squads_desc">
+    <text>Maximální počet skupin abnormálních mutantů, které se stáhnou k místu vyzvednutí (náhodně 1 až N).</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / HUNGER CAMPFIRE ==================== -->
+  <string id="ui_mcm_ap_consequences_hunger_campfire_title">
+    <text>Hlad u ohniště</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_hunger_campfire_tag">
+    <text>Popis: Skupina míří k ohništi, aby se najedla\nPříčina: Hlad u ohniště k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_hunger_campfire_consequence_hunger_campfire_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_hunger_campfire_consequence_hunger_campfire_enabled_desc">
+    <text>Hladoví stalkery vyhledávají ohniště, kde se mohou najíst.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_hunger_campfire_consequence_hunger_campfire_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_hunger_campfire_consequence_hunger_campfire_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SLEEP CAMPFIRE ==================== -->
+  <string id="ui_mcm_ap_consequences_sleep_campfire_title">
+    <text>Spánek u ohniště</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_sleep_campfire_tag">
+    <text>Popis: Skupina míří k ohništi, aby se vyspala\nPříčina: Spánek u ohniště k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_sleep_campfire_consequence_sleep_campfire_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_sleep_campfire_consequence_sleep_campfire_enabled_desc">
+    <text>Unavení stalkery vyhledávají v noci ohniště, kde mohou spát.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_sleep_campfire_consequence_sleep_campfire_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_sleep_campfire_consequence_sleep_campfire_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / REST CAMPFIRE ==================== -->
+  <string id="ui_mcm_ap_consequences_rest_campfire_title">
+    <text>Odpočinek u ohniště</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_rest_campfire_tag">
+    <text>Popis: Skupina míří k ohništi, aby si odpočinula\nPříčina: Odpočinek u ohniště k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_rest_campfire_consequence_rest_campfire_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_rest_campfire_consequence_rest_campfire_enabled_desc">
+    <text>Unavení stalkery vyhledávají ohniště, kde si mohou odpočinout.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_rest_campfire_consequence_rest_campfire_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_rest_campfire_consequence_rest_campfire_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+
+  <!-- ==================== CONSEQUENCES / HEAL SHELTER ==================== -->
+<string id="ui_mcm_ap_consequences_heal_shelter_title">
+    <text>Léčení v úkrytu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_heal_shelter_tag">
+    <text>Popis: Skupina míří do úkrytu, aby se vyléčila\nPříčina: Léčení v úkrytu k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_heal_shelter_consequence_heal_shelter_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_heal_shelter_consequence_heal_shelter_enabled_desc">
+    <text>Zranění stalkery vyhledávají chráněná místa, kde se mohou vyléčit.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_heal_shelter_consequence_heal_shelter_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_heal_shelter_consequence_heal_shelter_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SHELTER ==================== -->
+  <string id="ui_mcm_ap_consequences_shelter_indoor_title">
+    <text>Úkryt</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_indoor_tag">
+    <text>Popis: Skupina se během výboje ukryje uvnitř\nPříčina: Úkryt k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_indoor_consequence_shelter_indoor_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_indoor_consequence_shelter_indoor_enabled_desc">
+    <text>Stalkery vystavení výboji vyhledávají místa chráněná před výbojem.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_indoor_consequence_shelter_indoor_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_indoor_consequence_shelter_indoor_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SHELTER OUTDOOR ==================== -->
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_title">
+    <text>Venkovní úkryt</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_tag">
+    <text>Popis: Skupina se během výboje ukryje venku\nPříčina: Venkovní úkryt k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_consequence_shelter_outdoor_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_consequence_shelter_outdoor_enabled_desc">
+    <text>Stalkery vystavení výboji vyhledávají ohniště, pokud poblíž není žádný úkryt před výbojem.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_consequence_shelter_outdoor_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_shelter_outdoor_consequence_shelter_outdoor_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / MONEY HARVEST ==================== -->
+  <string id="ui_mcm_ap_consequences_money_harvest_title">
+    <text>Výdělek z artefaktů</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_harvest_tag">
+    <text>Popis: Skupina míří do anomálního pole, aby získala artefakty\nPříčina: Výdělek z artefaktů k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_harvest_consequence_money_harvest_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_harvest_consequence_money_harvest_enabled_desc">
+    <text>Stalkeři vyhledávají anomální zóny, když potřebují peníze.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_harvest_consequence_money_harvest_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_harvest_consequence_money_harvest_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / MONEY HUNT ==================== -->
+  <string id="ui_mcm_ap_consequences_money_hunt_title">
+    <text>Honba za penězi</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_hunt_tag">
+    <text>Popis: Skupina míří do doupěte lovit trofeje\nPříčina: Honba za penězi k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_hunt_consequence_money_hunt_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_hunt_consequence_money_hunt_enabled_desc">
+    <text>Stalkeři loví mutanty, když potřebují peníze.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_hunt_consequence_money_hunt_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_money_hunt_consequence_money_hunt_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SUPPLY TRADER ==================== -->
+  <string id="ui_mcm_ap_consequences_supply_trader_title">
+    <text>Zásobování u obchodníka</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_tag">
+    <text>Popis: Skupina míří k obchodníkovi, prodá přebytečné vybavení a doplní zásoby podle pravidel pro svou hodnost. Nováčci nosí základní munici, lékárničky a obvazy. Veteráni mají navíc prémiovou munici a granáty.\nPříčina: Zásobování u obchodníka k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_enabled_desc">
+    <text>Stalkeři navštěvují obchodníky, když potřebují zásoby.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_arrive_action_enabled">
+    <text>Akce po příchodu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_consequence_supply_trader_arrive_action_enabled_desc">
+    <text>Ve fázi prodeje se zbaví všeho, čeho má skupina více, než dovoluje maximální limit dané kategorie. Vybavené předměty, úkolové předměty a peníze zůstávají nedotčené. Ve fázi nákupu doplní každou kategorii, jejíž počet klesl pod minimum, munici podle vybavených zbraní a jejich úrovně a spotřební předměty od nejlevnějších. Veteráni mají navíc prémiovou munici a granáty. Limit zisku z obchodu (Ekonomika > Obchodování) omezuje čistý příjem peněz za jednu událost.</text>
+  </string>
+
+
+  <!-- ==================== CONSEQUENCES / SUPPLY TRADER OFF-MAP ==================== -->
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_title">
+    <text>Zásobování u obchodníka mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_tag">
+    <text>Popis: Skupina míří na základnu na jiné mapě, aby doplnila zásoby\nPříčina: Zásobování u obchodníka mimo mapu k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_enabled_desc">
+    <text>Stalkeři přecházejí na základnu na jiné mapě, aby doplnili zásoby, pokud na aktuální mapě není k dispozici žádný obchodník.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_arrive_action_enabled">
+    <text>Akce po příchodu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_supply_trader_offmap_consequence_supply_trader_offmap_arrive_action_enabled_desc">
+    <text>Ve fázi prodeje se zbaví všeho, čeho má skupina více, než dovoluje maximální limit dané kategorie. Vybavené předměty, úkolové předměty a peníze zůstávají nedotčené. Ve fázi nákupu doplní každou kategorii, jejíž počet klesl pod minimum, munici podle vybavených zbraní a jejich úrovně a spotřební předměty od nejlevnějších. Veteráni mají navíc prémiovou munici a granáty. Limit zisku z obchodu (Ekonomika &gt; Obchodování) omezuje čistý příjem peněz za jednu událost.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / BARTER ==================== -->
+  <string id="ui_mcm_ap_consequences_barter_title">
+    <text>Směna</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_tag">
+    <text>Popis: Skupina míří ke smartu své frakce a vymění si předměty se stalkerem, který se tam nachází, bez použití peněz. Každý předá přebytečné zásoby, které druhému chybí, a náhradní zbraň, oblek nebo helmu, která je lepší než vybavení druhého.\nPříčina: Směna k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_enabled_desc">
+    <text>Stalkeři se setkávají se skupinou stejné frakce a vyměňují si zásoby, když potřebují doplnit vybavení.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_arrive_action_enabled">
+    <text>Akce po příchodu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_consequence_barter_arrive_action_enabled_desc">
+    <text>Po příchodu si každý stalker předá přebytečné zásoby (nad svůj maximální limit), které druhému chybí (pod jeho minimálním limitem), a náhradní zbraň, oblek nebo helmu, která je hodnotnější než vybavení druhého. Peníze se nepoužívají. Vybavené a úkolové předměty zůstávají nedotčené. Limit předmětů (Ekonomika &gt; Směna) určuje, kolik předmětů si mohou při jednom setkání vyměnit.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / BARTER OFF-MAP ==================== -->
+  <string id="ui_mcm_ap_consequences_barter_offmap_title">
+    <text>Směna mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_tag">
+    <text>Popis: Skupina míří ke smartu stejné frakce na jiné mapě, aby si se stalkerem vyměnila předměty bez použití peněz\nPříčina: Směna mimo mapu k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_enabled_desc">
+    <text>Stalkeři přecházejí ke skupině stejné frakce na jiné mapě, aby si vyměnili zásoby, pokud na aktuální mapě není k dispozici žádná vhodná skupina.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_arrive_action_enabled">
+    <text>Akce po příchodu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_barter_offmap_consequence_barter_offmap_arrive_action_enabled_desc">
+    <text>Po příchodu si každý stalker předá přebytečné zásoby (nad svůj maximální limit), které druhému chybí (pod jeho minimálním limitem), a náhradní zbraň, oblek nebo helmu, která je hodnotnější než vybavení druhého. Peníze se nepoužívají. Vybavené a úkolové předměty zůstávají nedotčené. Limit předmětů (Ekonomika &gt; Směna) určuje, kolik předmětů si mohou při jednom setkání vyměnit.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / JOB OUTPOST ==================== -->
+  <string id="ui_mcm_ap_consequences_job_outpost_title">
+    <text>Strážní služba</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_outpost_tag">
+    <text>Popis: Skupina míří na stanoviště, aby ho střežila\nPříčina: Strážní služba k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_outpost_consequence_job_outpost_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_outpost_consequence_job_outpost_enabled_desc">
+    <text>Stalkeři střeží stanoviště a kontrolní body, když je potřeba.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_outpost_consequence_job_outpost_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_outpost_consequence_job_outpost_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / JOB EXPLORE ==================== -->
+  <string id="ui_mcm_ap_consequences_job_explore_title">
+    <text>Průzkum oblasti</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_tag">
+    <text>Popis: Skupina míří do neobsazeného území na průzkum\nPříčina: Průzkum oblasti k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_consequence_job_explore_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_consequence_job_explore_enabled_desc">
+    <text>Stalkeři prozkoumávají neznámé oblasti, když je potřeba.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_consequence_job_explore_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_consequence_job_explore_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / JOB EXPLORE OFF-MAP ==================== -->
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_title">
+    <text>Průzkum oblasti mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_tag">
+    <text>Popis: Skupina míří do neobsazeného území na jiné mapě\nPříčina: Průzkum oblasti mimo mapu k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_consequence_job_explore_offmap_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_consequence_job_explore_offmap_enabled_desc">
+    <text>Stalkeři přecházejí do neobsazeného území na jiné mapě, pokud na aktuální mapě není k dispozici žádný neobsazený smart.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_consequence_job_explore_offmap_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_explore_offmap_consequence_job_explore_offmap_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / JOB RESEARCH ==================== -->
+  <string id="ui_mcm_ap_consequences_job_research_title">
+    <text>Výzkum</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_research_tag">
+    <text>Popis: Skupina míří do anomálního pole, aby ho prozkoumala\nPříčina: Výzkum k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_research_consequence_job_research_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_research_consequence_job_research_enabled_desc">
+    <text>Stalkeři zkoumají anomální zóny, když je potřeba.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_research_consequence_job_research_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_job_research_consequence_job_research_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+
+  <!-- ==================== CONSEQUENCES / JOB RESEARCH OFF-MAP ==================== -->
+  <!-- ==================== CONSEQUENCES / SOCIAL CAMPFIRE ==================== -->
+  <string id="ui_mcm_ap_consequences_social_campfire_title">
+    <text>Společenské ohniště</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_campfire_tag">
+    <text>Popis: Skupina míří k ohništi, aby se společensky zabavila\nPříčina: Společenské ohniště k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_campfire_consequence_social_campfire_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_campfire_consequence_social_campfire_enabled_desc">
+    <text>Osamělí stalkeři vyhledávají společnost u ohnišť.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_campfire_consequence_social_campfire_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_campfire_consequence_social_campfire_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SOCIAL BASE ==================== -->
+  <string id="ui_mcm_ap_consequences_social_base_title">
+    <text>Společenská základna</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_base_tag">
+    <text>Popis: Skupina míří na základnu, aby strávila čas ve společnosti\nPříčina: Společenská základna k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_base_consequence_social_base_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_base_consequence_social_base_enabled_desc">
+    <text>Osamělí stalkeři se vracejí na základnu za společností ostatních.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_base_consequence_social_base_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_base_consequence_social_base_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== CONSEQUENCES / SOCIAL OFF-MAP ==================== -->
+  <string id="ui_mcm_ap_consequences_social_offmap_title">
+    <text>Společenský život mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_offmap_tag">
+    <text>Popis: Skupina míří na základnu na jiné mapě, aby si odpočinula; cestovatelé mimo mapu\nPříčina: Společenský život mimo mapu k dispozici</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_offmap_consequence_social_offmap_enabled">
+    <text>Zapnuto</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_offmap_consequence_social_offmap_enabled_desc">
+    <text>Stalkeři přecházejí na základnu na jiné mapě, aby si odpočinuli, pokud na aktuální mapě není žádná základna k dispozici. Vztahuje se na cestovatele mimo mapu (armáda, Monolit a zombíci jsou vyloučeni).</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_offmap_consequence_social_offmap_rush">
+    <text>Režim spěchu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_social_offmap_consequence_social_offmap_rush_desc">
+    <text>Skriptované skupiny se pohybují maximální rychlostí. Vypněte pro pomalejší a realističtější pohyb.</text>
+  </string>
+
+  <!-- ==================== MUTATORS / AREA CONQUEST ==================== -->
+  <string id="ui_mcm_ap_mutators_conquest_title">
+    <text>Dobytí oblasti</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_desc">
+    <text>Vítězná frakce získá výhradní kontrolu nad dobytou oblastí: obnovují se v ní pouze skupiny dobyvatelské frakce, původní spawnování je potlačeno a oblast se během držení rychleji znovu osidluje. Úroveň skupin odpovídá nebezpečnosti lokace: na úrovních pro nováčky se objevují pouze nováčci, v počátečních úrovních se přidávají pokročilé skupiny a ve středních a severních oblastech se mohou objevit všechny úrovně. Vypnutím zachováte pohyb skupin (důsledek dobytí oblasti), aniž by se měnily herní tabulky spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_mutate_smart">
+    <text>Upravit spawnování</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_mutate_smart_desc">
+    <text>V dobytých oblastech se objevují výhradně skupiny dobyvatelské frakce a nahrazují původní spawnování. Vypnutím zachováte pohyb skupin bez změn spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_spawn_num">
+    <text>Počet skupin na oblast</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_spawn_num_desc">
+    <text>Počet skupin dobyvatelské frakce, které se v dobyté oblasti znovu objeví. Dobyvatelská frakce získá výhradní kontrolu a původní spawnování oblasti je potlačeno.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_decay_hours">
+    <text>Úpadek oblasti (hodiny)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_decay_hours_desc">
+    <text>Po uplynutí tohoto počtu herních hodin se dobytá oblast vrátí k původnímu spawnování. Nastavte 0 pro vypnutí úpadku.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_respawn_minutes">
+    <text>Obnova oblasti (minuty)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_respawn_minutes_desc">
+    <text>Jak rychle se dobytá oblast znovu zaplní skupinami dané frakce, v herních minutách. Nižší hodnota znamená rychlejší zaplnění oblasti.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_grow_services">
+    <text>Rozšířit služby</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_grow_services_desc">
+    <text>V dobyté oblasti se může objevit jednoho NPC poskytujícího služby podle herních mechanismů: obchodník, který na středu oblasti zřídí skutečné obchodní stanoviště a funguje jako plnohodnotný obchodník, u kterého lze nakupovat a prodávat, nebo barman, mechanik či medik, který obchoduje, opravuje nebo léčí. Všichni jsou chráněni skupinami dané frakce a stávají se součástí jejího trhu. Vypnuto ponechá dobývání pouze jako bojovou aktivitu.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_services_max_per_level">
+    <text>Max. počet služeb na úroveň</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_services_max_per_level_desc">
+    <text>Celkový počet NPC poskytujících služby, kteří mohou být na jedné úrovni, bez ohledu na frakci.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_services_max_per_faction_role">
+    <text>Max. stejných služeb frakce na úroveň</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_services_max_per_faction_role_desc">
+    <text>Počet dobytých oblastí jedné frakce, které mohou na jedné úrovni mít stejnou službu. Nižší hodnota rozloží služby frakce mezi obchodníky, barmany, mechaniky a mediky.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_trader_supplies_penalty">
+    <text>Úrovně zásob pod základnou</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_trader_supplies_penalty_desc">
+    <text>O kolik úrovní zásob má obchodník v oblasti méně než hlavní obchodník frakce při vašem aktuálním vztahu s frakcí. Jeho nabídka se stejně jako u hlavního obchodníka řídí vaší reputací a majetkem, ale o tento počet úrovní je snížena. Obchodník v oblasti tak vždy zaostává za hlavním obchodníkem a zároveň se přizpůsobuje vašemu postupu. Hodnota 0 znamená stejnou úroveň nabídky.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_trader_supplies_tier">
+    <text>Max. úroveň zásob</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_conquest_mutator_area_conquest_trader_supplies_tier_desc">
+    <text>Absolutní maximum úrovně zásob obchodníka v oblasti, které se použije po odečtení úrovní pod hlavním obchodníkem. Obchodníci mimo dobyté oblasti nejsou ovlivněni.</text>
+  </string>
+
+  <!-- ==================== MUTATORS / AREA SWARM ==================== -->
+  <string id="ui_mcm_ap_mutators_swarm_title">
+    <text>Roj v oblasti</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_desc">
+    <text>Druh, který oblast zaplavil, získá nad ní výhradní kontrolu: objevují se v ní pouze mutanti tohoto druhu a původní spawnování z LTX je potlačeno. Funguje stejně jako dobytí oblasti, pouze místo frakce oblast převezmou mutanti. Vypnutím zachováte pohyb skupin (důsledek roje v oblasti), aniž by se měnily herní tabulky spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_mutate_smart">
+    <text>Upravit spawnování</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_mutate_smart_desc">
+    <text>V oblastech zamořených rojem se objevují výhradně mutanti daného druhu a nahrazují původní spawnování. Vypnutím zachováte pohyb skupin bez změn spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_spawn_num">
+    <text>Počet skupin na oblast</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_spawn_num_desc">
+    <text>Počet skupin daného druhu mutantů, které se v oblasti zamořené rojem znovu objeví. Tento druh získá výhradní kontrolu a původní spawnování oblasti je potlačeno.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_decay_hours">
+    <text>Úpadek oblasti (hodiny)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_decay_hours_desc">
+    <text>Po uplynutí tohoto počtu herních hodin se oblast zamořená rojem vrátí k původnímu spawnování. Nastavte 0 pro vypnutí úpadku.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_respawn_minutes">
+    <text>Obnova oblasti (minuty)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_swarm_mutator_area_swarm_respawn_minutes_desc">
+    <text>Jak rychle se oblast zamořená rojem znovu zaplní mutanty daného druhu, v herních minutách. Nižší hodnota znamená rychlejší zaplnění.</text>
+  </string>
+
+  <!-- ==================== MUTATORS / AREA INFEST ==================== -->
+<string id="ui_mcm_ap_mutators_infest_title">
+    <text>Zamoření oblasti</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_desc">
+    <text>Druh, který oblast zamořil, výhradně nahrazuje původní spawnování oblasti z LTX. Limit určuje, kolik oblastí může být na každé úrovni zamořeno. Vypnutím zachováte pohyb skupin (důsledek zamoření oblasti), aniž by se měnily herní tabulky spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_mutate_smart">
+    <text>Upravit spawnování</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_mutate_smart_desc">
+    <text>V zamořených oblastech se objevují výhradně mutanti daného druhu a nahrazují původní spawnování. Vypnutím zachováte pohyb skupin bez změn spawnování.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_max_per_level">
+    <text>Max. zamořených oblastí na úroveň</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_max_per_level_desc">
+    <text>[1-5]\nMaximální počet zamořených oblastí na jedné úrovni.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_spawn_num">
+    <text>Počet skupin na oblast</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_spawn_num_desc">
+    <text>[1-5]\nPočet skupin, které může zamořený spawn vytvořit.</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_decay_hours">
+    <text>Úpadek oblasti (hodiny)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_decay_hours_desc">
+    <text>[0-168]\nPočet herních hodin, než zamoření vyprší. 0 = trvalé zamoření (bez úpadku).</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_respawn_minutes">
+    <text>Obnova oblasti (minuty)</text>
+  </string>
+  <string id="ui_mcm_ap_mutators_infest_mutator_area_infest_respawn_minutes_desc">
+    <text>Jak rychle se zamořená oblast znovu zaplní mutanty daného druhu, v herních minutách. Nižší hodnota znamená rychlejší růst hnízda.</text>
+  </string>
+
+
+  <!-- ==================== CREATURES TAB ==================== -->
+<string id="ui_mcm_ap_creatures_alpha_title">
+    <text>Alfa</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_desc">
+    <text>Mutant povýšený díky svým zabitím. Každá úroveň Alfy zvyšuje způsobené poškození a snižuje obdržené poškození až do níže uvedených limitů, přičemž účinek lineárně roste od 1. úrovně. Alfa získává imunitu vůči panice a po smrti zanechává kůži svého druhu a trofejní části. Nastavením hodnoty na 0 daný efekt vypnete.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_dealt_enabled">
+    <text>Bonus k poškození proti NPC a mutantům</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_dealt_enabled_desc">
+    <text>Alfy způsobují NPC a mutantům dodatečné poškození, které se zvyšuje podle úrovně Alfy až po níže nastavený limit. Zásahy hráče mají vlastní nastavení níže.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_dealt_max_pct">
+    <text>Limit bonusu k poškození (%)</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_dealt_max_pct_desc">
+    <text>Dodatečné poškození, které způsobí Alfa na maximální úrovni, vyjádřené jako procento běžného zásahu. Nižší úrovně Alfy se lineárně snižují. Ani při maximálním nastavení není zásah násobně silnější, pouze o část silnější.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_taken_enabled">
+    <text>Odolnost proti poškození</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_taken_enabled_desc">
+    <text>Alfy utrpí z každého zásahu menší poškození, přičemž odolnost se zvyšuje podle jejich úrovně.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_taken_max_pct">
+    <text>Limit odolnosti proti poškození (%)</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_hit_power_taken_max_pct_desc">
+    <text>Snížení poškození, které získá Alfa na maximální úrovni, vyjádřené v procentech. Nižší úrovně se lineárně snižují.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_vs_player">
+    <text>Bonus k poškození proti hráči</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_vs_player_desc">
+    <text>Bonus k poškození Alfy se vztahuje také na zásahy proti hráči a řídí se stejným limitem. Vypnutím zachováte běžné poškození způsobované hráči, zatímco NPC a mutanti budou stále ovlivněni Alfami.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_panic_immunity_enabled">
+    <text>Imunita vůči panice</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_panic_immunity_enabled_desc">
+    <text>Alfy nikdy neutečou kvůli utrženému poškození.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_loot_enabled">
+    <text>Trofejní kořist</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_loot_enabled_desc">
+    <text>Mrtvá Alfa zanechá kůži svého druhu a další části. S vyšší úrovní Alfy je kořisti více.</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_mark_enabled">
+    <text>Vizuální označení</text>
+  </string>
+  <string id="ui_mcm_ap_creatures_alpha_mutator_alpha_mark_enabled_desc">
+    <text>Alfa má na těle viditelný třpytivý prach. Jedná se pouze o vizuální efekt.</text>
+  </string>
+
+
+  <!-- ==================== WORLD TAB ==================== -->
+<string id="ui_mcm_ap_world_offmap_title">
+    <text>Mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_desc">
+    <text>Výpravy mimo mapu využívají propojení map z běžného A-Life. Každá skupina začíná se základním dosahem nastaveným níže (výchozí hodnota 0; zvýšením lze umožnit výpravy ještě před splněním příběhových podmínek). Každý milník postupu (deaktivace X-16, deaktivace Spalovače mozku) a velitel s hodností mistra přidává možnost překonat o jednu mapu více. Limit vyvažování omezuje celkový počet výprav ze zdrojové mapy během pohyblivého období 48 herních hodin.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_cause_max_offmap">
+    <text>Limit výprav mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_cause_max_offmap_desc">
+    <text>[1-10]\nMaximální počet výprav mimo mapu z jedné úrovně během 48 herních hodin. Nezávisí na frakci ani cílové mapě; všechny příčiny výprav mimo mapu sdílejí jeden společný limit.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_base_hops">
+    <text>Základní dosah mimo mapu</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_base_hops_desc">
+    <text>[0-3]\nZákladní počet přechodů mezi sousedními mapami dostupný každé skupině před získáním bonusů za příběh nebo hodnost. Hodnota 0 ponechá skupiny na jejich domovské mapě, dokud milník neodemkne další dosah. Hodnota 1 umožní novým stalkerům okamžitě prozkoumat jednu sousední mapu.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_x16">
+    <text>Další mapy po deaktivaci X-16 v Jantaru</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_x16_desc">
+    <text>[0-3]\nDalší přechody mezi sousedními mapami po aktivaci yan_labx16_switcher_primary_off (psy-emitor v X-16 v Jantaru byl deaktivován). Hodnota 0 tuto podmínku vypne.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_radar">
+    <text>Další mapy po deaktivaci Spalovače mozku na Radaru</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_radar_desc">
+    <text>[0-3]\nDalší přechody mezi sousedními mapami po aktivaci bar_deactivate_radar_done (Spalovač mozku na Radaru byl deaktivován). Hodnota 0 tuto podmínku vypne.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_rank">
+    <text>Další mapy pro velitele s hodností mistra</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_extra_map_rank_desc">
+    <text>[0-3]\nDalší přechody mezi sousedními mapami, pokud má velitel skupiny hodnost mistra nebo vyšší (character_rank &gt;= 17499). Hodnota 0 tuto podmínku vypne.</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_despawn_hours">
+    <text>Bezpečnostní limit odstranění (hodiny)</text>
+  </string>
+  <string id="ui_mcm_ap_world_offmap_offmap_despawn_hours_desc">
+    <text>[24-720 herních hodin]\nMaximální doba, po kterou může skupina zůstat mimo mapu, než bude z bezpečnostních důvodů odstraněna. Aktivuje se pouze tehdy, když je skupina offline a není chráněna (příběhem / úkolem / společníkem / válkou frakcí).</text>
+  </string>
+
+
+  <!-- ==================== DEVELOPMENT TAB ==================== -->
+<string id="ui_mcm_ap_development_title">
+    <text>Vývoj a nástroje</text>
+  </string>
+  <string id="ui_mcm_ap_development_btn_reset_all">
+    <text>Obnovit VŠE na výchozí hodnoty</text>
+  </string>
+  <string id="ui_mcm_ap_development_btn_reset_all_desc">
+    <text>Vrátí všechna nastavení AlifePlus na výchozí hodnoty. Změny se projeví okamžitě; zavřete a znovu otevřete MCM, aby se zobrazily aktualizované posuvníky. Užitečné po experimentování nebo při přechodu na novou verzi s upravenými výchozími hodnotami.</text>
+  </string>
+  <string id="ui_mcm_ap_development_btn_reset_stateless">
+    <text>Obnovit VŠE na výchozí bez změn světa</text>
+  </string>
+  <string id="ui_mcm_ap_development_btn_reset_stateless_desc">
+    <text>Vrátí všechna nastavení na výchozí hodnoty a následně vypne všechny funkce, které mění inventář, obchodování nebo spawnování ve světě, například obchodování, spotřebu předmětů, plnění a vykrádání skrýší nebo vlastnictví smartů.</text>
+  </string>
+  <string id="ui_mcm_ap_development_reset_warning">
+    <text>Varování: Nejprve uložte nebo zahoďte neuložené změny v MCM, jinak při dalším potvrzení přepíšou obnovené hodnoty.</text>
+  </string>
+  <string id="ui_mcm_ap_development_desc">
+    <text>Ladění a vývoj. DEBUG aktivuje trasování, měření výkonu a podrobné logování. Ladicí značky zobrazují cíle skupin na mapě PDA.</text>
+  </string>
+  <string id="ui_mcm_ap_development_log_level">
+    <text>Úroveň logování</text>
+  </string>
+  <string id="ui_mcm_ap_development_log_level_desc">
+    <text>Určuje podrobnost logování a ladicí funkce. DEBUG aktivuje trasování ve stylu OTel, měření výkonu a podrobné logování. Má dopad na výkon.</text>
+  </string>
+  <string id="ap_development_log_level_lst_error">
+    <text>Chyby</text>
+  </string>
+  <string id="ap_development_log_level_lst_warn">
+    <text>Varování</text>
+  </string>
+  <string id="ap_development_log_level_lst_info">
+    <text>Informace</text>
+  </string>
+  <string id="ap_development_log_level_lst_debug">
+    <text>Ladění</text>
+  </string>
+  <string id="ui_mcm_ap_development_map_markers">
+    <text>Ladicí značky</text>
+  </string>
+  <string id="ui_mcm_ap_development_map_markers_desc">
+    <text>Zobrazí značky cílů skupin na mapě PDA. Pozice jsou přibližné a slouží ke sledování pohybu A-Life, nejde o přesné umístění. Pro použití změn načtěte uloženou pozici znovu.</text>
+  </string>
+  <string id="st_ap_teleport_to_squad">
+    <text>Teleportovat ke skupině</text>
+  </string>
+  <string id="st_ap_map_subject">
+    <text>Subjekt</text>
+  </string>
+  <string id="st_ap_map_other">
+    <text>Ostatní</text>
+  </string>
+  <string id="st_ap_map_target">
+    <text>Cíl</text>
+  </string>
+  <string id="st_ap_map_started">
+    <text>Spuštěno</text>
+  </string>
+  <string id="ui_mcm_ap_development_statistics_position">
+    <text>Umístění statistického panelu</text>
+  </string>
+  <string id="ui_mcm_ap_development_statistics_position_desc">
+    <text>Zobrazí statistiky systému na obrazovce a každých 10 sekund je zapíše do logu. Vyberte umístění nebo vypnuto. Při vypnutí nemá žádný dopad na výkon.</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_off">
+    <text>Vypnuto</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_top_left">
+    <text>Vlevo nahoře</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_top_right">
+    <text>Vpravo nahoře</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_center_left">
+    <text>Vlevo uprostřed</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_center_right">
+    <text>Vpravo uprostřed</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_bottom_left">
+    <text>Vlevo dole</text>
+  </string>
+  <string id="ap_development_statistics_position_lst_bottom_right">
+    <text>Vpravo dole</text>
+  </string>
+
+
+  <!-- Cause: Instincts (5 drives + 7 answers, multi-answer drive: slumber splits 3 ways) -->
+
+<string id="ui_mcm_ap_causes_instincts_title">
+    <text>Instinkty</text>
+  </string>
+
+
+  <!-- Per-cause tags (7 sub-causes) -->
+<string id="ui_mcm_ap_causes_instincts_scatter_tag">
+    <text>Příčina: Rozptýlení dostupné\nPopis: Mutant prchá před hrozbou vyšší úrovně.\nPravidla: dosah pachu; libovolná denní doba; kořistní mutanti; osobnost(INV_aggression, přežití); hrozba v okolí; bezpečný smart terrain; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_feed_tag">
+    <text>Příčina: Krmení dostupné\nPopis: Mutant se vydává na místo, kde se může nakrmit.\nPravidla: dosah pachu; den; libovolný mutant; osobnost(přežití, vnímání); teritorium; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_slumber_field_tag">
+    <text>Příčina: Spánek v terénu dostupný\nPopis: Mutant spí v otevřeném terénu.\nPravidla: dosah pachu; noc; bázliví mutanti; osobnost(přežití); teritorium; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_slumber_lair_tag">
+    <text>Příčina: Spánek v doupěti dostupný\nPopis: Mutant se stahuje do svého doupěte.\nPravidla: dosah pachu; noc; divocí nebo predátoři; osobnost(přežití); doupě; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_slumber_surge_tag">
+    <text>Příčina: Úkryt před výbojem dostupný\nPopis: Mutant se ukrývá před anomáliemi.\nPravidla: dosah pachu; noc; aberantní nebo predátoři; osobnost(přežití); úkryt před výbojem; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_roam_tag">
+    <text>Příčina: Toulání dostupné\nPopis: Mutant se vydává na nové území.\nPravidla: dosah pachu; den; neaberantní mutanti; osobnost(vnímání, teritorium); teritorium nebo doupě; mimo základnu; taktika; Hull</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_pack_tag">
+    <text>Příčina: Smečka dostupná\nPopis: Mutant se přidává ke svým druhům v okolí.\nPravidla: dosah pachu; den; divocí nebo predátoři; osobnost(vztahy); přítomnost příbuzných; mimo základnu; taktika; Hull</text>
+  </string>
+
+  <!-- Povolení jednotlivých příčin -->
+  <string id="ui_mcm_ap_causes_instincts_cause_scatter_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_scatter_enabled_desc">
+    <text>Povolit aktivaci příčiny Rozptýlení.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_feed_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_feed_enabled_desc">
+    <text>Povolit aktivaci příčiny Krmení.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_roam_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_roam_enabled_desc">
+    <text>Povolit aktivaci příčiny Toulání.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_pack_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_pack_enabled_desc">
+    <text>Povolit aktivaci příčiny Smečka.</text>
+  </string>
+
+  <!-- Prahové hodnoty instinktů -->
+  <string id="ui_mcm_ap_causes_instincts_cause_scatter_threshold">
+    <text>Práh rozptýlení</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_scatter_threshold_desc">
+    <text>[herní hodiny]\nDoba obnovy Hull pro instinkt rozptýlení.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_feed_threshold">
+    <text>Práh krmení</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_feed_threshold_desc">
+    <text>[herní hodiny]\nDoba obnovy Hull pro instinkt krmení.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_threshold">
+    <text>Práh spánku</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_threshold_desc">
+    <text>[herní hodiny]\nDoba obnovy Hull pro instinkt spánku (sdílená všemi 3 možnostmi; aktivace kterékoli možnosti resetuje časovač).</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_roam_threshold">
+    <text>Práh toulání</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_roam_threshold_desc">
+    <text>[herní hodiny]\nDoba obnovy Hull pro instinkt toulání.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_pack_threshold">
+    <text>Práh smečky</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_pack_threshold_desc">
+    <text>[herní hodiny]\nDoba obnovy Hull pro instinkt smečky.</text>
+  </string>
+
+  <!-- Povolení jednotlivých možností spánku -->
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_field_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_field_enabled_desc">
+    <text>Povolit aktivaci příčiny Spánek v terénu.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_lair_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_lair_enabled_desc">
+    <text>Povolit aktivaci příčiny Spánek v doupěti.</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_surge_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_causes_instincts_cause_slumber_surge_enabled_desc">
+    <text>Povolit aktivaci příčiny Úkryt před výbojem.</text>
+  </string>
+
+  <!-- Důsledek: Rozptýlení -->
+  <string id="ui_mcm_ap_consequences_scatter_title">
+    <text>Rozptýlení</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_scatter_tag">
+    <text>Popis: Smečka prchá před predátorem vyšší úrovně\nPříčina: Rozptýlení dostupné</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_scatter_consequence_scatter_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_scatter_consequence_scatter_enabled_desc">
+    <text>Odvede mutanty nižší úrovně od blízkých predátorů vyšší úrovně do bezpečného smart terrainu.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_scatter_consequence_scatter_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_scatter_consequence_scatter_rush_desc">
+    <text>Mutanti při ústupu před predátory sprintují.</text>
+  </string>
+
+  <!-- Důsledek: Krmení -->
+  <string id="ui_mcm_ap_consequences_feed_title">
+    <text>Krmení</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_feed_tag">
+    <text>Popis: Smečka se vydává na loviště, aby se nakrmila\nPříčina: Krmení dostupné</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_feed_consequence_feed_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_feed_consequence_feed_enabled_desc">
+    <text>Odvede mutanty do otevřeného terénu, kde se mohou nakrmit.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_feed_consequence_feed_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_feed_consequence_feed_rush_desc">
+    <text>Mutanti sprintují na loviště.</text>
+  </string>
+
+  <!-- Důsledek: Spánek v terénu (bázliví mutanti na otevřeném území) -->
+  <string id="ui_mcm_ap_consequences_slumber_field_title">
+    <text>Spánek\nv terénu</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_field_tag">
+    <text>Popis: Bázlivá smečka se ukládá ke spánku na svém teritoriu\nPříčina: Spánek v terénu dostupný</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_field_consequence_slumber_field_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_field_consequence_slumber_field_enabled_desc">
+    <text>Odvede bázlivé mutanty do smart terrainů v otevřeném terénu.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_field_consequence_slumber_field_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_field_consequence_slumber_field_rush_desc">
+    <text>Mutanti sprintují na místo k odpočinku.</text>
+  </string>
+
+
+  <!-- Consequence: Slumber Lair (feral + predator returning to lair) -->
+  <string id="ui_mcm_ap_consequences_slumber_lair_title">
+    <text>Spánek\ndoupě</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_lair_tag">
+    <text>Popis: Smečka divokých mutantů nebo predátorů se stahuje do doupěte ke spánku\nPříčina: Spánek v doupěti dostupný</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_lair_consequence_slumber_lair_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_lair_consequence_slumber_lair_enabled_desc">
+    <text>Odvede divoké mutanty a predátory do smart terrainů sloužících jako doupata.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_lair_consequence_slumber_lair_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_lair_consequence_slumber_lair_rush_desc">
+    <text>Mutanti sprintují do doupěte.</text>
+  </string>
+
+  <!-- Důsledek: Spánek během výboje (aberantní mutanti + predátoři se stahují do úkrytu před výbojem) -->
+  <string id="ui_mcm_ap_consequences_slumber_surge_title">
+    <text>Spánek\nvýboj</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_surge_tag">
+    <text>Popis: Smečka predátorů nebo aberantních mutantů se ukrývá před výbojem\nPříčina: Úkryt před výbojem dostupný</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_surge_consequence_slumber_surge_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_surge_consequence_slumber_surge_enabled_desc">
+    <text>Odvede aberantní mutanty a predátory do úkrytů před výbojem.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_surge_consequence_slumber_surge_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_slumber_surge_consequence_slumber_surge_rush_desc">
+    <text>Mutanti sprintují do úkrytu.</text>
+  </string>
+
+  <!-- Důsledek: Toulání -->
+  <string id="ui_mcm_ap_consequences_roam_title">
+    <text>Toulání</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_roam_tag">
+    <text>Popis: Smečka se toulá neobsazeným územím\nPříčina: Toulání dostupné</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_roam_consequence_roam_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_roam_consequence_roam_enabled_desc">
+    <text>Odvede mutanty na blízké teritorium nebo do doupěte za účelem průzkumu.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_roam_consequence_roam_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_roam_consequence_roam_rush_desc">
+    <text>Mutanti při průzkumu sprintují.</text>
+  </string>
+
+  <!-- Důsledek: Smečka -->
+  <string id="ui_mcm_ap_consequences_pack_title">
+    <text>Smečka</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_pack_tag">
+    <text>Popis: Smečka se spojuje se svými druhy\nPříčina: Smečka dostupná</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_pack_consequence_pack_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_pack_consequence_pack_enabled_desc">
+    <text>Směřuje mutanty ke smečkám stejného druhu.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_pack_consequence_pack_rush">
+    <text>Spěch</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_pack_consequence_pack_rush_desc">
+    <text>Mutanti sprintují ke své smečce.</text>
+  </string>
+
+  <!-- ==================== DŮSLEDEK: ZAMOŘENÍ OBLASTI ==================== -->
+  <string id="ui_mcm_ap_consequences_area_infest_title">
+    <text>Zamoření oblasti</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_infest_tag">
+    <text>Popis: Smečka mutantů dorazí a nahradí původní spawn svým druhem\nPříčina: Zamoření oblasti dostupné</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_infest_consequence_area_infest_enabled">
+    <text>Povoleno</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_infest_consequence_area_infest_enabled_desc">
+    <text>Povolit důsledek Zamoření oblasti. Mutanti si obsadí smart terrainy jako svá hnízda.</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_infest_consequence_area_infest_rush">
+    <text>Rychlý pohyb</text>
+  </string>
+  <string id="ui_mcm_ap_consequences_area_infest_consequence_area_infest_rush_desc">
+    <text>Pokud je povoleno, smečky se při obsazování svého hnízda pohybují maximální rychlostí.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_loot_title">
+    <text>Rezervace kořisti</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_desc">
+    <text>Kořist zůstává tomu, kdo ji získal zabitím, dokud se její majitel drží poblíž těla. Stejné pravidlo platí pro všechny strany: tvé kořisti jsou chráněny před NPC, kořist NPC skupin je chráněna před tebou a soupeřící skupiny si navzájem nepřebírají kořist. Každý směr má vlastní dosah a dobu trvání. Žádná strana nemá výhodu.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_enabled">
+    <text>Rezervovat tvou kořist před NPC</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_enabled_desc">
+    <text>NPC nepřevezmou tělo, které jsi zabil, dokud zůstáváš v dosahu rezervace. Pokud odejdeš, může ho sebrat kolemjdoucí stalker.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_include_companions">
+    <text>Rezervovat tvou kořist před společníky</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_include_companions_desc">
+    <text>Tví společníci nebudou moci získat tělo, které jsi zabil, stejně jako ostatní NPC. Vypnutím umožníš společníkovi prohledat nebo obrat tvé kořisti.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_radius">
+    <text>Dosah rezervace (m)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_radius_desc">
+    <text>Jak blízko musíš být u těla, aby rezervace zůstala aktivní.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_ttl">
+    <text>Doba rezervace (h)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_reserve_own_ttl_desc">
+    <text>Počet herních hodin, než rezervace vyprší.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_enabled">
+    <text>Blokovat kořist NPC</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_enabled_desc">
+    <text>Tělo, které zabila NPC skupina, nelze otevřít, dokud jeho živý člen zůstává poblíž. Při pokusu se zobrazí tip v PDA s informací o vlastníkovi kořisti.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_radius">
+    <text>Dosah blokace (m)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_radius_desc">
+    <text>Jak blízko musí být skupina, která kořist získala, aby ji udržela rezervovanou.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_ttl">
+    <text>Doba blokace (h)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_ttl_desc">
+    <text>Počet herních hodin, než rezervace vyprší.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_enabled">
+    <text>Blokovat NPC před vzájemným přebíráním kořisti</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_enabled_desc">
+    <text>Stalker obejde kořist, kterou získala jiná skupina, dokud tato skupina zůstává poblíž těla. Kořist si vyzvednou její vlastníci.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_radius">
+    <text>Dosah NPC vs. NPC (m)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_radius_desc">
+    <text>Jak blízko musí být skupina, která kořist vlastní, aby ji udržela rezervovanou.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_ttl">
+    <text>Doba NPC vs. NPC (h)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_loot_block_npc_vs_npc_ttl_desc">
+    <text>Počet herních hodin, než rezervace vyprší.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_loot_policy_title">
+    <text>Pravidla kořisti</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_policy_desc">
+    <text>Pravidla určují, co si NPC ponechá z těla. Uchovává munici vhodnou pro své vlastní zbraně a nejcennější předměty z každé kategorie až do stanoveného limitu a vše ostatní zničí. Stalker tak odchází s funkční výbavou namísto zásob, které by zabraly celé tělo. Těla, ke kterým se dostaneš později, budou méně přeplněná. Dlouhé hraní tak zůstane bez hromadící se kořisti, která zpomaluje hru a může ji časem rozbít. Limity jsou uloženy v upravitelném souboru pravidel se stejnou strukturou jako obchodování a skrýše, takže celou ekonomiku řídí jednotná sada pravidel.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_policy_loot_select_enabled">
+    <text>Používat pravidla kořisti</text>
+  </string>
+  <string id="ui_mcm_ap_economy_loot_policy_loot_select_enabled_desc">
+    <text>NPC si ponechají munici pro své vlastní zbraně a nejcennější předměty z jednotlivých kategorií a přebytek, který by se u nich jinak hromadil, zničí. Vypnutím se obnoví původní systém získávání kořisti NPC.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_trade_title">
+    <text>Obchodování</text>
+  </string>
+  <string id="ui_mcm_ap_economy_trade_desc">
+    <text>Když stalker dorazí k obchodníkovi, prodá přebytečné zásoby a poté doplní munici a vybavení podle své hodnosti: nováčci základní zásoby, veteráni kvalitnější munici a granáty. Limity nákupu a prodeje jsou uloženy v upravitelném souboru pravidel se stejnou strukturou jako kořist a skrýše, takže celou ekonomiku řídí jednotná sada pravidel. Níže uvedený limit určuje, kolik rublů může NPC během jedné návštěvy čistě získat, bez ohledu na hodnost. Obchodování se aktivuje v části Zásobování v nastavení příčin.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_trade_trade_profit_max">
+    <text>Max. zisk z obchodu (rubly)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_trade_trade_profit_max_desc">
+    <text>Počet rublů, které může NPC čistě získat během jedné návštěvy obchodníka, bez ohledu na hodnost. 0 = bez zisku.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_barter_title">
+    <text>Směna</text>
+  </string>
+  <string id="ui_mcm_ap_economy_barter_desc">
+    <text>Když stalker dorazí ke skupině stejné frakce, vyměňuje si s místním stalkerem předměty bez použití peněz. Každý předá přebytek z kategorií, kterých má více než povolené maximum a kterých má druhý nedostatek, a také náhradní zbraň, oblek nebo helmu, pokud má vyšší hodnotu než vybavení druhého stalkera. Limity směny jsou uloženy v upravitelném souboru pravidel se stejnou strukturou jako obchodování. Níže uvedený limit určuje počet předmětů, které se mohou během jednoho setkání přesunout. Směna se aktivuje v části Zásobování v nastavení příčin.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_barter_barter_max_items">
+    <text>Max. předmětů na směnu</text>
+  </string>
+  <string id="ui_mcm_ap_economy_barter_barter_max_items_desc">
+    <text>Počet předmětů přesunutých během jednoho setkání, v obou směrech dohromady. 0 = směna vypnuta.</text>
+  </string>
+
+  <string id="ui_mcm_ap_economy_market_title">
+    <text>Frakční trh</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_desc">
+    <text>Ve výchozím nastavení má obchodník vlastní zásoby z konfigurace, které se při doplnění obnoví a nesouvisí s tím, co obchodují stalkerové jeho frakce. Tento systém propojuje jejich obchodování se zásobami obchodníka. Hlavní obchodníci frakce krátce nabídnou část předmětů, které stalkerové dané frakce v poslední době prodali: předměty se objeví při doplnění zásob, jejich dostupnost závisí na tvé hodnosti, mají zvýšenou cenu a po krátké době zmizí. Vyprodávání funguje opačně: část zboží, které obchodník nedávno prodal stalkerům své frakce, při dalším doplnění zásob zmizí z jeho čerstvé nabídky. Které předměty se mohou objevit nebo vyprodat, jejich limity a požadovaná hodnost jsou určeny v upravitelném souboru pravidel. Násobitel ceny, stav předmětů a podíl vyprodaných zásob obchodníka lze nastavit níže.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_enabled">
+    <text>Povolit frakční trh</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_enabled_desc">
+    <text>Hlavním obchodníkům přidá nabídku předmětů, které jejich frakce nedávno prodala, s omezením podle hodnosti a za vyšší cenu. Vypnutím se obnoví původní zásoby obchodníků.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_items_per_trader">
+    <text>Předmětů na obchodníka</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_items_per_trader_desc">
+    <text>Počet tržních předmětů, které obchodník přidá při každém doplnění zásob. 0 = žádné. Limity jednotlivých kategorií a požadované hodnosti jsou uloženy v upravitelném souboru pravidel.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_window_hours">
+    <text>Doba nabídky trhu (herní hodiny)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_window_hours_desc">
+    <text>Počet herních hodin, po které vložený předmět zůstane v nabídce, než bude odstraněn. Další doplnění zásob obchodníka jej také odstraní.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_premium">
+    <text>Násobitel ceny</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_premium_desc">
+    <text>Násobitel ceny tržních zásob: plná základní cena předmětu při 100% stavu vynásobená touto hodnotou. Slevy za vztahy a ekonomiku se stále uplatňují, sleva za stav předmětu se však ignoruje.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_item_condition">
+    <text>Stav předmětu</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_item_condition_desc">
+    <text>Stav, ve kterém se zboží na frakčním trhu objeví. 1.00 = plný stav; nižší hodnoty znamenají větší opotřebení.</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_trader_sell_percent">
+    <text>Vyprodání obchodníka (%)</text>
+  </string>
+  <string id="ui_mcm_ap_economy_market_market_trader_sell_percent_desc">
+    <text>Podíl čerstvých zásob, který se při doplnění odstraní u zboží, které obchodník nedávno prodal stalkerům své frakce. Podle souboru pravidel se vztahuje na munici a zdravotnické zásoby, na nic jiného. Při nízkých hodnotách zůstane vzácné zboží dostupné; při 100 % bude obchodník zcela vyprodán.</text>
+  </string>
+
+  <string id="st_ap_reset_all_done">
+    <text>AlifePlus: všechna nastavení byla obnovena na výchozí hodnoty.</text>
+  </string>
+  <string id="st_ap_reset_stateless_done">
+    <text>AlifePlus: byla použita výchozí nastavení bez změn herního světa.</text>
+  </string>
+
+
+</string_table>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<string_table>
+  <!-- =========================================================================
+ CHATTER TEMPLATES
+
+ Immediate, local lines pushed by a producer (the market today), spoken by a nearby
+ stalker on the PDA feed. Id pattern: st_ap_chatter_[type]_NNN, NNN runs 001..020.
+ Slots: #trader# (trader name), #item# (item name), #location# (level name).
+ ========================================================================== -->
+
+
+<string id="st_ap_chatter_market_001">
+    <text>Slyšel jsem, že #trader# sehnal #item#.</text>
+</string>
+<string id="st_ap_chatter_market_002">
+    <text>Říká se, že #trader# vzal #item# a dlouho mu to nevydrží.</text>
+</string>
+<string id="st_ap_chatter_market_003">
+    <text>Někdo říkal, že #trader# má teď u sebe #item#.</text>
+</string>
+<string id="st_ap_chatter_market_004">
+    <text>Prý #trader# v lokaci #location# dostal #item#.</text>
+</string>
+<string id="st_ap_chatter_market_005">
+    <text>#trader# sehnal #item#. Stojí za to se tam podívat, než bude pryč.</text>
+</string>
+
+<string id="st_ap_chatter_market_short_001">
+    <text>Slyšel jsem, že #trader# už má málo #item#.</text>
+</string>
+<string id="st_ap_chatter_market_short_002">
+    <text>Říká se, že #trader# už své #item# vyprodal.</text>
+</string>
+<string id="st_ap_chatter_market_short_003">
+    <text>Někdo říkal, že #trader# má teď #item# nedostatek.</text>
+</string>
+<string id="st_ap_chatter_market_short_004">
+    <text>Prý #trader# v lokaci #location# už nemá #item#.</text>
+</string>
+<string id="st_ap_chatter_market_short_005">
+    <text>#trader# už má #item# skoro vyprodané. Zkus zásoby jinde.</text>
+</string>
+
+</string_table>
