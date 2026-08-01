@@ -27,10 +27,10 @@
     <text>Ekonomika</text>
   </string>
   <string id="ui_mcm_menu_creatures">
-    <text>Tvorové</text>
+    <text>Mutanti</text>
   </string>
   <string id="ui_mcm_menu_loot">
-    <text>Správa koøisti</text>
+    <text>Koøist</text>
   </string>
   <string id="ui_mcm_menu_loot_policy">
     <text>Pravidla koøisti</text>
@@ -39,7 +39,7 @@
     <text>Obchod</text>
   </string>
   <string id="ui_mcm_menu_market">
-    <text>Trh</text>
+    <text>Obchodovaní</text>
   </string>
   <!-- ==================== LEVEL 3 MENU NAMES (CAUSE CATEGORIES) ==================== -->
  <string id="ui_mcm_menu_reactions">
@@ -101,7 +101,7 @@
   <text>Spánek\nEmise</text>
 </string>
 <string id="ui_mcm_menu_roam">
-  <text>Toulání</text>
+  <text>Cestovaní</text>
 </string>
 <string id="ui_mcm_menu_pack">
   <text>Smeèka</text>
@@ -1805,7 +1805,7 @@
     <text>Mimo mapu</text>
   </string>
   <string id="ui_mcm_ap_world_offmap_desc">
-    <text>Výpravy mimo mapu využívají propojení map z bìžného A-Life. Každá skupina zaèíná se základním dosahem nastaveným níže (výchozí hodnota 0; zvýšením lze umožnit výpravy ještì pøed splnìním pøíbìhových podmínek). Každý milník postupu (deaktivace X-16, deaktivace Spalovaèe mozku) a velitel s hodností mistra pøidává možnost pøekonat o jednu mapu více. Limit vyvažování omezuje celkový poèet výprav ze zdrojové mapy bìhem pohyblivého období 48 herních hodin.</text>
+    <text>Výpravy mimo mapu využívají propojení map z bìžného A-Life. Každá skupina zaèíná se základním dosahem nastaveným níže (výchozí hodnota 0; zvýšením lze umožnit výpravy ještì pøed splnìním pøíbìhových podmínek). Každý milník postupu (deaktivace X-16, deaktivace Vypalovaèe mozku) a velitel s hodností mistra pøidává možnost pøekonat o jednu mapu více. Limit vyvažování omezuje celkový poèet výprav ze zdrojové mapy bìhem pohyblivého období 48 herních hodin.</text>
   </string>
   <string id="ui_mcm_ap_world_offmap_cause_max_offmap">
     <text>Limit výprav mimo mapu</text>
@@ -1820,10 +1820,10 @@
     <text>[0-3]\nZákladní poèet pøechodù mezi sousedními mapami dostupný každé skupinì pøed získáním bonusù za pøíbìh nebo hodnost. Hodnota 0 ponechá skupiny na jejich domovské mapì, dokud milník neodemkne další dosah. Hodnota 1 umožní novým stalkerùm okamžitì prozkoumat jednu sousední mapu.</text>
   </string>
   <string id="ui_mcm_ap_world_offmap_offmap_extra_map_x16">
-    <text>Další mapy po deaktivaci X-16 v Jantaru</text>
+    <text>Další mapy po deaktivaci X-16 v Yantaru</text>
   </string>
   <string id="ui_mcm_ap_world_offmap_offmap_extra_map_x16_desc">
-    <text>[0-3]\nDalší pøechody mezi sousedními mapami po aktivaci yan_labx16_switcher_primary_off (psy-emitor v X-16 v Jantaru byl deaktivován). Hodnota 0 tuto podmínku vypne.</text>
+    <text>[0-3]\nDalší pøechody mezi sousedními mapami po aktivaci yan_labx16_switcher_primary_off (psy-emitor v X-16 v Yantaru byl deaktivován). Hodnota 0 tuto podmínku vypne.</text>
   </string>
   <string id="ui_mcm_ap_world_offmap_offmap_extra_map_radar">
     <text>Další mapy po deaktivaci Spalovaèe mozku na Radaru</text>
