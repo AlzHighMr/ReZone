@@ -1,83 +1,1194 @@
 <?xml version="1.0" encoding="windows-1250"?>
 <string_table>
-    <!-- Ammo_Check Messages -->
- <string id="st_ac_overfull">
-    <text>Plné</text>
+
+  <!-- Ammo_Check Messages -->
+    <string id="st_ac_overfull">
+        <text>Přeplňeno</text>
+    </string>
+    <string id="st_ac_plus1">
+        <text>Plný zásobník + 1</text>
+    </string>
+    <string id="st_ac_oitc">
+        <text>1 náboj v komoře</text>
+    </string>
+    <string id="st_ac_empty_mag_oitc">
+        <text>Prázdný zásobník + 1 náboj v komoře</text>
+    </string>
+    <string id="st_ac_no_mag_oitc">
+        <text>Bez zásobníku + 1 náboj v komoře</text>
+    </string>
+    <string id="st_ac_empty_mag_prefix">
+        <text>Prázdný zásobník</text>
+    </string>
+    <string id="st_ac_no_mag_prefix">
+        <text>Bez zásobníku</text>
+    </string>
+    <string id="st_ac_just_one">
+        <text>Jen jeden</text>
+    </string>
+    <string id="st_ac_full">
+        <text>Plný</text>
+    </string>
+    <string id="st_ac_approx">
+        <text>Přibližně</text>
+    </string>
+    <string id="st_ac_chamber">
+        <text>Komora</text>
+    </string>
+    <string id="st_ac_nearly_full">
+        <text>Téměř plný</text>
+    </string>
+    <string id="st_ac_more_half">
+        <text>Více než polovina</text>
+    </string>
+    <string id="st_ac_about_half">
+        <text>Přibližně polovina</text>
+    </string>
+    <string id="st_ac_nearly_empty">
+        <text>Téměř prázdný</text>
+    </string>
+    <string id="st_ac_less_half">
+        <text>Méně než polovina</text>
+    </string>
+    <string id="st_ac_near_empty">
+        <text>Téměř prázdný</text>
+    </string>
+    <string id="st_ac_empty">
+        <text>Prázdný</text>
+    </string>
+    <string id="st_ac_jammed">
+        <text>Zaseknutá zbraň</text>
+    </string>
+    <string id="st_ac_noMag">
+        <text>Bez zásobníku</text>
+    </string>
+    <string id="st_ac_grenade">
+        <text>Granát nabit</text>
+    </string>
+    <string id="st_ac_no_grenade">
+        <text>Žádný granát</text>
+    </string>
+    <string id="st_ac_loaded">
+        <text>Nabito</text>
+    </string>
+    <string id="st_ac_noAmmo">
+        <text>Tato zbraň nepoužívá munici!</text>
+    </string>
+    <string id="st_ac_ammoLeft">
+        <text>zbývá</text>
+    </string>
+    <string id="st_ac_magsredux_update">
+        <text>Používáte starší verzi MagsRedux. Pro nejlepší zážitek aktualizujte na verzi z GitHubu.</text>
+    </string>
+
+
+
+    <!-- MCM Menu Header -->
+    <string id="ui_mcm_menu_rax_ammo_check">
+        <text>Ammo Check</text>
+    </string>
+    <string id="ui_mm_title_rax_ammo_check">
+        <text>Kontrola munice</text>
+    </string>
+
+    <!-- Section Titles -->
+      <string id="ui_mcm_rax_ammo_check_title_display">
+        <text>Nastavení zobrazení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_hud">
+        <text>Nastavení HUD</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_hud_behavior">
+        <text>HUD / Chování</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_behavior">
+        <text>Nastavení chování</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_anim">
+        <text>Nastavení animací</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_keys">
+        <text>Nastavení kláves</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_title_debug">
+        <text>Nastavení ladění</text>
+    </string>
+
+    <!-- Nastavení zobrazení -->
+    <string id="ui_mcm_rax_ammo_check_display_show_message">
+        <text>Zobrazovat zprávu o munici</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_message_desc">
+        <text>Po kontrole zobrazí textový stav munice. Vypnutím se přehraje pouze animace bez zobrazení zprávy na obrazovce.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_hide_msg_on_inspect">
+        <text>Skrýt zprávu pouze při inspekční animaci</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_hide_msg_on_inspect_desc">
+        <text>Pokud je zapnuto, zpráva o munici se skryje POUZE u zbraní, které používají správnou inspekční animaci (anm_ammo_check). U zbraní, které použijí náhradní přebití, natažení závěru, spuštění zbraně nebo její skrytí/zobrazení, se zpráva stále zobrazí. Vyžaduje zapnutou možnost „Zobrazovat zprávu o munici“.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_usecolor">
+        <text>Barevné zprávy</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_usecolor_desc">
+        <text>Používá barvy zpráv podle množství munice (červená = málo, bílá = plný zásobník).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_color_ammo_type">
+        <text>Barevný typ/štítek munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_color_ammo_type_desc">
+        <text>Obarví také název typu munice a její štítek podle vlastní barvy munice (AP, HP, FMJ atd.). Pokud je vypnuto, typ/štítek munice zůstane všude bílý, zatímco zpráva o množství munice si zachová svou barvu. Vyžaduje zapnuté barevné zprávy.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_color_intensity">
+        <text>Intenzita barev</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_color_intensity_desc">
+        <text>Nastavuje jas barevných zpráv. Nižší hodnoty vytvářejí tlumenější barvy.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_display_mode">
+        <text>Režim zobrazení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_display_mode_desc">
+        <text>Zvolí způsob zobrazení množství munice: textový popis, číselný počet, obojí, nebo styl podobný Tarkovu (přibližný počet zaokrouhlený na nejbližších 5, případně „Plný“ / „Prázdný“).</text>
+    </string>
+
+    <!-- Možnosti režimu zobrazení -->
+    <string id="rax_ammo_check_display_display_mode_lst_dm_text">
+        <text>Pouze text</text>
+    </string>
+    <string id="rax_ammo_check_display_display_mode_lst_dm_numeric">
+        <text>Pouze číslo</text>
+    </string>
+    <string id="rax_ammo_check_display_display_mode_lst_dm_both">
+        <text>Text + číslo</text>
+    </string>
+    <string id="rax_ammo_check_display_display_mode_lst_dm_tarkov">
+        <text>Styl Tarkovu (přibližně)</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_minimalist_bar">
+        <text>Minimalistický ukazatel</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_minimalist_bar_desc">
+        <text>Nahradí zprávu o munici minimalistickým ukazatelem z 6 bloků (vyplněné bloky představují zbývající munici) místo textu nebo čísel. Podporuje také „1 v komoře“ (+), prázdný zásobník / bez zásobníku (X______), zaseknutou zbraň (X) a granát (o). Přepisuje nastavení režimu zobrazení. Barevné zprávy stále mění barvu ukazatele podle množství munice.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_custom_render">
+        <text>Vlastní vykreslování textu</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_custom_render_desc">
+        <text>Zobrazí zprávu o munici jako stylizovaný HUD prvek (volitelné písmo, velikost a pozice na obrazovce s vrženým stínem) namísto výchozího řádku v levém horním rohu. Funguje s barevnými zprávami, režimem zobrazení, minimalistickým ukazatelem, typem/štítkem munice a druhým zvýrazněným řádkem.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_render_font_family">
+        <text>Písmo</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_render_font_family_desc">
+        <text>Písmo používané při vlastním vykreslování textu.</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_family_lst_ff_graffiti">
+        <text>Graffiti</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_family_lst_ff_letterica">
+        <text>Letterica</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_family_lst_ff_system">
+        <text>Systémové</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_family_lst_ff_letterica_pure">
+        <text>Letterica (čisté)</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_render_font_size">
+        <text>Velikost písma</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_render_font_size_desc">
+        <text>Velikost písma používaného při vlastním vykreslování textu.</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_size_lst_fs_small">
+        <text>Malé</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_size_lst_fs_medium">
+        <text>Střední</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_size_lst_fs_large">
+        <text>Velké</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_size_lst_fs_large_plus">
+        <text>Velké+</text>
+    </string>
+    <string id="rax_ammo_check_display_render_font_size_lst_fs_xlarge">
+        <text>Extra velké</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_render_position">
+        <text>Pozice zobrazení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_render_position_desc">
+        <text>Určuje, kde se zpráva vlastního vykreslování zobrazí na obrazovce.</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_tl">
+        <text>Vlevo nahoře</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_tr">
+        <text>Vpravo nahoře</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_center">
+        <text>Uprostřed</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_bottom">
+        <text>Dole uprostřed</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_br">
+        <text>Vpravo dole</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_bl">
+        <text>Vlevo dole</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_cursor_left">
+        <text>U kurzoru – vlevo</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_cursor_top">
+        <text>U kurzoru – nahoře</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_cursor_right">
+        <text>U kurzoru – vpravo</text>
+    </string>
+    <string id="rax_ammo_check_display_render_position_lst_rp_cursor_bottom">
+        <text>U kurzoru – dole</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_render_cursor_gap">
+        <text>Vzdálenost od kurzoru</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_render_cursor_gap_desc">
+        <text>Vzdálenost (v pixelech) mezi zaměřovacím bodem a zprávou pro pozice „U kurzoru“. Na ostatní pozice nemá vliv.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_show_ammo_type">
+        <text>Zobrazovat typ munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_ammo_type_desc">
+        <text>Zobrazí v rámci zprávy název typu munice (např. „9x19 BP“, „5.45x39 PS“).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_ammo_tag">
+        <text>Zobrazovat štítek munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_ammo_tag_desc">
+        <text>Přidá ke zprávě klasifikační štítek munice (např. (AP), (HP), (FMJ), (SL), (BK)).</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_show_chamber_ammo">
+        <text>Zobrazovat typ náboje v komoře</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_chamber_ammo_desc">
+        <text>U zprávy „1 v komoře“ (zůstal pouze náboj v komoře, bez zásobníku nebo s prázdným zásobníkem) zobrazí také typ náboje v komoře. Vyžaduje Magazines Redux s aktivovanou možností „ponechat náboj v komoře“.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_show_chamber_mismatch">
+        <text>Zobrazovat odlišný náboj v komoře</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_show_chamber_mismatch_desc">
+        <text>Pokud je náboj v komoře jiného typu než náboj v horní části zásobníku, zobrazí oba typy při jakémkoli množství jako „&lt;množství&gt; (zásobník) + 1 (komora)“, např. „Plný (9x18 FMJ) + 1 (9x18 AP)“ nebo „Asi polovina (9x18 FMJ) + 1 (9x18 AP)“. V režimu podobném Tarkovu se u náboje v komoře zobrazí pouze jeho štítek, např. „Asi polovina (9x18 FMJ) + 1 (AP)“. Pokud jsou oba typy stejné, zobrazí se běžná zpráva. Vyžaduje Magazines Redux s aktivovanou možností „ponechat náboj v komoře“.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_display_highlight_ammo_mode">
+        <text>Zvýraznění typu munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_highlight_ammo_mode_desc">
+        <text>Obarví zprávu podle typu munice. Žádné: použije barvu podle množství munice. Celá zpráva: obarví celý řádek podle typu munice. Samostatné řádky: zobrazí štítek munice na druhém řádku v jeho vlastní barvě. Kombinované: hlavní text/ukazatel ponechá barvu podle množství munice A typ/štítek munice obarví podle jeho vlastní barvy (v jednom řádku při vlastním vykreslování textu, jinak na druhém řádku).</text>
+    </string>
+    <!-- Highlight Ammo Mode List Options (no ui_mcm_ prefix for list values) -->
+       <string id="rax_ammo_check_display_highlight_ammo_mode_lst_ham_none">
+        <text>Žádné</text>
+    </string>
+    <string id="rax_ammo_check_display_highlight_ammo_mode_lst_ham_whole">
+        <text>Celá zpráva</text>
+    </string>
+    <string id="rax_ammo_check_display_highlight_ammo_mode_lst_ham_separate">
+        <text>Samostatné řádky</text>
+    </string>
+    <string id="rax_ammo_check_display_highlight_ammo_mode_lst_ham_combined">
+        <text>Kombinované</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_msg_duration">
+        <text>Doba zobrazení zprávy</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_display_msg_duration_desc">
+        <text>Jak dlouho zůstane zpráva o stavu munice zobrazena na obrazovce (v sekundách).</text>
+    </string>
+
+    <!-- Nastavení HUD -->
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hidecounter">
+        <text>Skrýt počítadlo munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hidecounter_desc">
+        <text>Skryje výchozí počítadlo munice v HUD pro realističtější zážitek.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hideicon">
+        <text>Skrýt ikonu munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hideicon_desc">
+        <text>Skryje ikonu typu munice z HUD.</text>
+    </string>
+
+    <!-- Nastavení chování -->
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_check_grenade_mode">
+        <text>Kontrola v režimu granátometu</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_check_grenade_mode_desc">
+        <text>Umožní kontrolu munice, když je zbraň v režimu granátometu.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_auto_check_reload">
+        <text>Automatická kontrola po přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_auto_check_reload_desc">
+        <text>Po dokončení přebití automaticky zobrazí stav munice.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_wpo_mode">
+        <text>Chování nezaseknuté zbraně</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_wpo_mode_desc">
+        <text>Určuje, jak se tento mod chová u nezaseknuté zbraně společně s Weapon Parts Overhaul. „Bez inspekce při odblokování“: stisknutí tlačítka pro odblokování u nezaseknuté zbraně pouze oznámí její stav (funkční / chybějící součásti), bez zbytečné inspekční animace a bez bezplatného výstřelu bez zaseknutí (ten je místo toho znovu udělen inspekční a kontrolní animací munice). „Inspekce nezaseknuté zbraně při přebití“: stisknutí tlačítka přebití v situaci, kdy by se nic nestalo (plný zásobník nebo není co nabíjet), spustí kontrolní inspekci zbraně a udělí bezplatný výstřel bez zaseknutí. Skutečně zaseknutá zbraň se vždy odblokuje běžným způsobem. Vyžaduje Weapon Parts Overhaul (arti_jamming).</text>
+    </string>
+    <string id="rax_ammo_check_hud_behavior_wpo_mode_lst_wpo_no_inspect">
+        <text>Bez inspekce při odblokování (nezaseknutá)</text>
+    </string>
+    <string id="rax_ammo_check_hud_behavior_wpo_mode_lst_wpo_inspect_reload">
+        <text>Inspekce nezaseknuté zbraně při přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_no_jam_after_check">
+        <text>Bezplatný výstřel bez zaseknutí po kontrole munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_no_jam_after_check_desc">
+        <text>Pokud je zapnuto, provedení jedné z kontrolních animací munice tohoto modu udělí stejný bezplatný výstřel bez zaseknutí, jaký Weapon Parts Overhaul běžně poskytuje při inspekci zbraně (fyzická kontrola munice se počítá jako manipulace se zbraní). Inspekční animace z One-Key a Fire Mode také tento výstřel udělí, pokud je výše uvedené chování nastaveno na „Bez inspekce při odblokování“. Platí pouze tehdy, když se animace skutečně přehraje (animace jsou povolené a zbraň není zaneprázdněná). Vyžaduje Weapon Parts Overhaul (arti_jamming).</text>
+    </string>
+
+    <!-- Nastavení animací -->
+    <string id="ui_mcm_rax_ammo_check_animation_enable_animations">
+        <text>Povolit animace</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_enable_animations_desc">
+        <text>Hlavní přepínač pro všechny animace. Pokud je vypnuto, zobrazí se pouze textová zpráva (bez animace zbraně).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_anim_mode">
+        <text>Alternativní animace kontroly zásobníku</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_anim_mode_desc">
+        <text>Animace pro zbraně BEZ správné animace kontroly zásobníku. Výchozí: skrytí/zobrazení zbraně. Spuštění zbraně: zbraň se na chvíli sklopí. Falešné přebití: přehraje animaci přebití u zbraní se zásobníkem a speciální animace u zbraní s vestavěným zásobníkem.</text>
+    </string>
+
+    <!-- Možnosti režimu animace -->
+    <string id="rax_ammo_check_animation_anim_mode_lst_anim_mode_default">
+        <text>Výchozí (skrýt/zobrazit)</text>
+    </string>
+    <string id="rax_ammo_check_animation_anim_mode_lst_anim_mode_lower">
+        <text>Sklopit zbraň</text>
+    </string>
+    <string id="rax_ammo_check_animation_anim_mode_lst_anim_mode_fake_reload">
+        <text>Falešné přebití</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_grenade_anim_mode">
+        <text>Animace kontroly v režimu granátometu</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_grenade_anim_mode_desc">
+        <text>Animace použitá při kontrole munice v režimu granátometu. Výchozí je „Sklopit zbraň“, protože běžná cesta přehraje animaci nabíjení granátu, což může působit matoucím dojmem. Vyžaduje zapnutou možnost „Kontrola v režimu granátometu“.</text>
+    </string>
+    <string id="rax_ammo_check_animation_grenade_anim_mode_lst_gren_lower">
+        <text>Sklopit zbraň</text>
+    </string>
+    <string id="rax_ammo_check_animation_grenade_anim_mode_lst_gren_hide_show">
+        <text>Skrýt/zobrazit</text>
+    </string>
+    <string id="rax_ammo_check_animation_grenade_anim_mode_lst_gren_message">
+        <text>Pouze zpráva</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_no_magazine_fallback">
+        <text>Náhradní animace bez zásobníku</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_no_magazine_fallback_desc">
+        <text>Animace při kontrole munice BEZ vloženého zásobníku (pouze zbraně s odnímatelným zásobníkem MagsRedux). Skrýt/zobrazit: přepne zbraň. Zatřesení/sklopení: krátce zatřese zbraní (nebo ji sklopí u zbraní bez inspekční animace). Žádná: zobrazí pouze zprávu.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_fallback">
+        <text>Náhradní animace vestavěného zásobníku</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_fallback_desc">
+        <text>Náhradní animace pro zbraně s vestavěným zásobníkem (brokovnice, revolvery atd.), které nejsou uvedeny ve speciálních seznamech při použití režimu falešného přebití.</text>
+    </string>
+
+    <string id="rax_ammo_check_animation_no_magazine_fallback_lst_fallback_hide_show">
+        <text>Skrýt/zobrazit zbraň</text>
+    </string>
+    <string id="rax_ammo_check_animation_no_magazine_fallback_lst_fallback_lower">
+        <text>Zatřást/sklopit zbraň</text>
+    </string>
+    <string id="rax_ammo_check_animation_no_magazine_fallback_lst_fallback_none">
+        <text>Žádná (pouze zpráva)</text>
+    </string>
+    <string id="rax_ammo_check_animation_fake_reload_fallback_lst_fallback_hide_show">
+        <text>Skrýt/zobrazit zbraň</text>
+    </string>
+    <string id="rax_ammo_check_animation_fake_reload_fallback_lst_fallback_lower">
+        <text>Sklopit zbraň</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_empty_mag_fallback">
+        <text>Náhradní animace prázdného zásobníku</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_empty_mag_fallback_desc">
+        <text>Animace přehrávaná při kontrole munice s vloženým prázdným zásobníkem. „Animace přebití“ přehraje celou animaci přebití bez skutečného vložení munice. „Animovat“ se pokusí použít anm_bore/anm_idle. „Zatřást/sklopit zbraň“ provede krátké zatřesení zbraní (nebo její sklopení u zbraní bez inspekční animace), stejně jako možnost bez zásobníku.</text>
+    </string>
+    <string id="rax_ammo_check_animation_empty_mag_fallback_lst_empty_mag_reload_anim">
+        <text>Animace přebití</text>
+    </string>
+    <string id="rax_ammo_check_animation_empty_mag_fallback_lst_empty_mag_animate">
+        <text>Animovat (anm_bore/idle)</text>
+    </string>
+    <string id="rax_ammo_check_animation_empty_mag_fallback_lst_empty_mag_lower">
+        <text>Zatřást/sklopit zbraň</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_treat_one_chamber_as_non_empty">
+        <text>Považovat 1 náboj v komoře za neprázdný zásobník</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_treat_one_chamber_as_non_empty_desc">
+        <text>Ve výchozím nastavení (VYPNUTO) zbraň s posledním 1 nábojem (pouze náboj v komoře, samotný zásobník je prázdný) přehraje anm_ammo_check_empty – zásobník je koneckonců prázdný. Zapnutím se obnoví výchozí chování enginu: anm_ammo_check (plná inspekce) se stále přehraje, protože celkové množství munice je větší než 0. Ovlivňuje pouze zbraně, které mají ve své konfiguraci HUD definovanou anm_ammo_check_empty.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_bolt_cycle">
+        <text>Závěrová puška: přetáhnout závěr</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_bolt_cycle_desc">
+        <text>U pušek se závěrem a VESTAVĚNÝM zásobníkem (Kar98, Mosin atd.) přehraje animaci otevření/zavření závěru namísto náhradní animace. Nemá vliv na varianty s odnímatelným zásobníkem (viz možnost níže).</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_force_bolt_cycle_external_mag">
+        <text>Vynutit přetažení závěru u pušek s odnímatelným zásobníkem</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_force_bolt_cycle_external_mag_desc">
+        <text>Ve výchozím nastavení pušky se závěrem a odnímatelným zásobníkem (L96A1, Remington 700, K98 Mauser Kit atd.) přehrají falešné přebití (anm_reload). Zapnutím se místo toho vynutí explicitní animace přetažení závěru (anm_open/anm_close). Užitečné, pokud preferujete jednotné přetahování závěru u všech pušek se závěrem bez ohledu na typ zásobníku.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_bolt_eject">
+        <text>Závěrová puška: vyhodit náboj</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_bolt_eject_desc">
+        <text>Stejně jako ve skutečnosti. Při přetažení závěru vyhodí jeden náboj ze zásobníku (přidá ho do inventáře). Vyžaduje zapnutou možnost „Přetáhnout závěr“. Nepodporují všechny závěrové pušky.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_pump_rack">
+        <text>Pumpovací brokovnice: přetáhnout předpažbí</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_pump_rack_desc">
+        <text>U pumpovacích brokovnic (Remington 870 atd.) přehraje animaci otevření/zavření předpažbí namísto náhradní animace.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_pump_eject">
+        <text>Pumpovací brokovnice: vyhodit nábojnici</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_pump_eject_desc">
+        <text>Stejně jako ve skutečnosti. Při přetažení předpažbí vyhodí jednu nábojnici ze zásobníku (přidá ji do inventáře). Vyžaduje zapnutou možnost „Přetáhnout předpažbí“. Nepodporují všechny pumpovací brokovnice.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_ignore_list">
+        <text>Vynechat některé zbraně u falešného přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_fake_reload_ignore_list_desc">
+        <text>Použije černou listinu pro vynechání animací falešného přebití u zbraní s neimmersivními nebo nefunkčními animacemi. Ovlivněné zbraně místo toho použijí náhradní animaci. Seznam lze upravit v ammo_check_weapons.script.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_busy_hands_delay">
+        <text>Zpoždění zprávy</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_busy_hands_delay_desc">
+        <text>Zpoždění před zobrazením zprávy (v sekundách).</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_animation_block_reload_during_check">
+        <text>Blokovat přebití během kontroly</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_animation_block_reload_during_check_desc">
+        <text>Zabrání tlačítku přebití přerušit probíhající animaci kontroly munice. Vypnutím umožníte zrušit kontrolu pomocí přebití.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_dof_on_check">
+        <text>Hloubka ostrosti během kontroly</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_dof_on_check_desc">
+        <text>Během kontrolní animace rozmaže pozadí a zaostří na zbraň, po jejím skončení se efekt plynule vrátí do původního stavu. Používá efekt hloubky ostrosti zbraně ze Screen Space Shaders a nastavenou intenzitu rozmazání. Pokud Screen Space Shaders není nainstalován, nemá žádný účinek.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_dof_on_inspect">
+        <text>Hloubka ostrosti během inspekce</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_dof_on_inspect_desc">
+        <text>Stejné jako výše, ale pouze pro čistě kosmetickou akci „Inspekce zbraně“ (inspekční animace bez zobrazení stavu munice) spuštěnou přes One-Key nebo Fire Mode Check. Nezávislé na možnosti „Hloubka ostrosti během kontroly“. Používá efekt hloubky ostrosti zbraně ze Screen Space Shaders. Pokud Screen Space Shaders není nainstalován, nemá žádný účinek.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_keybind_reload_warn">
+        <text>Klávesa pro kontrolu munice nemůže být stejná jako klávesa pro přebití – byla vymazána. Pro kontroly spuštěné přebitím použijte One-Key Weapon Controls.</text>
+    </string>
+
+    <!-- Keybind Settings -->
+      <string id="ui_mcm_rax_ammo_check_keybind_keybind">
+        <text>Klávesa pro kontrolu munice</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_keybind_keybind_desc">
+        <text>Klávesa pro kontrolu munice. Lze kombinovat s modifikačními klávesami. Nemůže být stejná jako klávesa pro přebití, protože by se kontrola spouštěla při každém přebití a animace by se navzájem rušily. Pokud chcete kontrolovat munici pomocí klávesy pro přebití, zapněte One-Key Weapon Controls.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_update_mcm">
+        <text>Pro změnu klávesy zde aktualizujte MCM. Výchozí klávesa je T.</text>
+    </string>
+
+    <!-- Nastavení ladění -->
+    <string id="ui_mcm_rax_ammo_check_debug_debug_mode">
+        <text>Režim ladění</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_debug_debug_mode_desc">
+        <text>Zapne režim ladění pro testování animací. Pokud je zapnuto: numerická klávesnice 0–9 testuje stavy zbraně, numerická klávesnice * vypíše seznam animací zbraně. Slouží k určení, který stav spouští přetažení závěru.</text>
+    </string>
+
+    <!-- ### One Key Weapon Controls (volitelná funkce) -->
+    <string id="ui_mcm_menu_rax_ammo_check_onekey">
+        <text>Kontrola munice – Jedna klávesa</text>
+    </string>
+    <string id="ui_mm_title_rax_ammo_check_fastreload">
+        <text>Rychlé přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_desc">
+        <text>Podržením modifikační klávesy a stisknutím klávesy pro přebití provedete rychlejší přebití, při kterém STARÝ ZÁSOBNÍK upustíte na zem místo jeho ponechání (taktické rychlé přebití).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_mags_note">
+        <text>Vyžaduje mod Magazines (ATHI's Mags Reloaded) A Dynamic Reload Speeds. Dynamic Reload Speeds zrychluje animaci a udržuje zvuk přebití synchronizovaný; bez něj rychlé přebití nebude fungovat.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_enable">
+        <text>Povolit rychlé přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_enable_desc">
+        <text>Hlavní přepínač zkratky pro rychlé přebití. Ve výchozím nastavení je vypnuto. Automaticky se deaktivuje, pokud je zapnuto One-Key Weapon Controls (to přebírá klávesu pro přebití).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_modifier">
+        <text>Modifikační klávesa rychlého přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_modifier_desc">
+        <text>Podržte tuto klávesu společně s klávesou pro přebití pro provedení rychlého přebití. Samotné přebití bez modifikační klávesy zůstane normální.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_speed_mult">
+        <text>Rychlost přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_speed_mult_desc">
+        <text>Násobitel rychlosti animace při rychlém přebití (1,25 = o 25 % rychlejší). Hodnota je záměrně umírněná, protože zvuk přebití se spolu s animací nezrychluje.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_max_combined_speed">
+        <text>Max. rychlost s rychlým zásobníkem</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_max_combined_speed_desc">
+        <text>Při použití „rychlého zásobníku“ z Mags Madness (který již sám zrychluje přebití až přibližně o 35 %) se zvýšení rychlosti rychlého přebití omezí tak, aby KOMBINOVANÁ rychlost přebití nepřekročila tento násobitel (1,5 = maximálně o 50 % rychlejší celkem). Naše zvýšení nikdy nesníží rychlost pod vlastní rychlost rychlého zásobníku; pokud je tato hodnota nižší než násobitel rychlého zásobníku, rychlé přebití jednoduše nepřidá žádné další zrychlení. Na běžné zásobníky nemá vliv.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_keep_last_mag">
+        <text>Ponechat poslední zásobník</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_keep_last_mag_desc">
+        <text>Zablokuje rychlé přebití, pokud nemáte vybavený žádný další zásobník, takže nikdy neodhodíte svůj jediný zásobník. Pokud je vypnuto, rychlé přebití bez náhradního zásobníku stále odhodí vložený zásobník. Normální přebití není ovlivněno.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_throw_direction">
+        <text>Směr odhození</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_throw_direction_desc">
+        <text>Určuje směr, kterým bude odhozený zásobník vržen vzhledem ke směru, kterým se díváte. „Položit“ vypne odhození (zásobník jednoduše spadne k nohám).</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_drop">
+        <text>Položit (bez odhození)</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_forward">
+        <text>Dopředu</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_right">
+        <text>Doprava</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_left">
+        <text>Doleva</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_back">
+        <text>Dozadu</text>
+    </string>
+    <string id="rax_ammo_check_fastreload_throw_direction_lst_td_down">
+        <text>Dolů</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_throw_force">
+        <text>Síla odhození</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_throw_force_desc">
+        <text>Jak silně bude zásobník odhozen (0 = pouze spadne, 100 = silné odhození). Nemá vliv, pokud je směr odhození nastaven na „Položit“.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_slowdown_enable">
+        <text>Zpomalit normální přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_slowdown_enable_desc">
+        <text>Opak rychlého přebití: zpomalí každou normální animaci přebití (nikoli rychlé přebití). Ve výchozím nastavení je vypnuto.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_slowdown_pct">
+        <text>Zpomalení přebití</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_fastreload_slowdown_pct_desc">
+        <text>O kolik procent pomaleji se přehraje normální přebití (0 = beze změny, 25 = o 25 % pomaleji). Vyžaduje zapnutou možnost „Zpomalit normální přebití“. Doporučené maximum je 10–15 %: vyšší hodnoty způsobují rozpojení animace a zvuku přebití, který se stále přehrává původní rychlostí.</text>
+    </string>
+
+    <string id="ui_mm_title_rax_ammo_check_onekey">
+        <text>Ovládání zbraně jednou klávesou</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_desc">
+        <text>Využívá jednu klávesu pro několik akcí zbraně: stisknutí přebije, stisknutí + modifikační klávesa odblokuje zbraň, dvojité stisknutí přepne typ munice a podržení provede kontrolu munice. Akce se zásobníkem používají ATHI's Mags Reloaded, pokud je nainstalován, jinak se použije běžné přebití enginu.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_enable">
+        <text>Povolit ovládání jednou klávesou</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_enable_desc">
+        <text>Hlavní přepínač této funkce. Ve výchozím nastavení je vypnuto, takže klávesa pro přebití funguje normálně. Zapnutím přesměrujete přebití, odblokování zbraně, přepínání munice a kontrolu munice na jednu klávesu.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_key_reload">
+        <text>Akční klávesa</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_key_reload_desc">
+        <text>Klávesa ovládající všechny akce One Key. Může být stejná jako výchozí klávesa pro přebití (R): One Key tuto klávesu automaticky převezme a provede přebití samo, takže se akce nespustí dvakrát. Funguje i jakákoli jiná klávesa, přičemž výchozí ovládání přebití zůstane nedotčené.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_reload_key_unjams">
+        <text>Stisknutí odblokuje zaseknutou zbraň</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_reload_key_unjams_desc">
+        <text>Pokud je zapnuto, krátké stisknutí u zaseknuté zbraně ji odblokuje místo přebití (bez nutnosti modifikační klávesy). Pokud zbraň není zaseknutá, stisknutí provede běžné přebití. Vyžaduje Weapon Parts Overhaul (arti_jamming).</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_focuses_pda">
+        <text>Akční klávesa zvedá/spouští PDA</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_focuses_pda_desc">
+        <text>Pokud je zapnuto, stisknutí akční klávesy při držení PDA zvedne nebo spustí PDA, takže stejná klávesa zařízení přepíná.</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_onekey_tap_behavior">
+        <text>Akce při stisknutí</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_tap_behavior_desc">
+        <text>Určuje akci při jednom stisknutí. Podržení modifikační klávesy a stisknutí vždy odblokuje zbraň (má přednost před touto volbou). Situační: kolečko munice při 3 a více dostupných typech, přepnutí na další typ při přesně 2 typech, přebití při menším počtu. Další typ munice: přepne na další dostupný typ. Kolečko munice: vždy otevře kolečko. Přebití: pouze přebije. Rychlé přebití: rychlé přebití s odhozením starého zásobníku. Kontrola munice: přehraje inspekční/kontrolní animaci. Inspekce zbraně: přehraje stejnou animaci, ale bez zobrazení stavu munice.</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_none">
+        <text>Žádná (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_reload">
+        <text>Přebití</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_fast_reload">
+        <text>Rychlé přebití (odhodit starý zásobník)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_next">
+        <text>Další typ munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_wheel">
+        <text>Kolečko munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_check">
+        <text>Kontrola munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_inspect">
+        <text>Inspekce zbraně</text>
+    </string>
+    <string id="rax_ammo_check_onekey_tap_behavior_lst_tp_situational">
+        <text>Situační</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_onekey_doubletap_behavior">
+        <text>Akce při dvojitém stisknutí</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_doubletap_behavior_desc">
+        <text>Určuje akci při dvojitém stisknutí. Situační: kolečko munice při 3 a více dostupných typech, přepnutí na další typ při přesně 2 typech, přebití při menším počtu. Další typ munice: přepne na další dostupný typ. Kolečko munice: vždy otevře kolečko. Přebití: pouze přebije. Kontrola munice: přehraje inspekční/kontrolní animaci. Inspekce zbraně: přehraje stejnou animaci, ale bez zobrazení stavu munice.</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_none">
+        <text>Žádná (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_reload">
+        <text>Přebití</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_fast_reload">
+        <text>Rychlé přebití (odhodit starý zásobník)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_next">
+        <text>Další typ munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_wheel">
+        <text>Kolečko munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_check">
+        <text>Kontrola munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_inspect">
+        <text>Inspekce zbraně</text>
+    </string>
+    <string id="rax_ammo_check_onekey_doubletap_behavior_lst_dt_situational">
+        <text>Situační</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_onekey_hold_behavior">
+        <text>Akce při podržení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_hold_behavior_desc">
+        <text>Určuje akci při podržení klávesy. Kontrola munice: přehraje inspekční/kontrolní animaci. Inspekce zbraně: přehraje stejnou animaci, ale bez zobrazení stavu munice. Přebití: pouze přebije. Rychlé přebití: rychlé přebití s odhozením starého zásobníku. Další typ munice: přepne na další typ. Kolečko munice: otevře kolečko. Situační: kolečko/přepnutí/přebití podle počtu dostupných typů. Žádná: podržení nic neudělá, při uvolnění se stále provede akce nastavená pro stisknutí.</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_none">
+        <text>Žádná (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_reload">
+        <text>Přebití</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_fast_reload">
+        <text>Rychlé přebití (odhodit starý zásobník)</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_next">
+        <text>Další typ munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_wheel">
+        <text>Kolečko munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_check">
+        <text>Kontrola munice</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_inspect">
+        <text>Inspekce zbraně</text>
+    </string>
+    <string id="rax_ammo_check_onekey_hold_behavior_lst_ho_situational">
+        <text>Situační</text>
+    </string>
+
+    <string id="ui_mcm_rax_ammo_check_onekey_hold_ms">
+        <text>Doba podržení (ms)</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_hold_ms_desc">
+        <text>Jak dlouho je nutné držet klávesu, než se místo přebití spustí kontrola munice. Nižší hodnota působí svižněji; příliš nízká hodnota může spustit kontrolu při o něco delším krátkém stisknutí. Výchozí hodnota: 200.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_doubletap_ms">
+        <text>Časové okno dvojitého stisknutí (ms)</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_doubletap_ms_desc">
+        <text>Časové okno, během kterého se druhé stisknutí počítá jako dvojité stisknutí. Určuje také, jak dlouho jediné stisknutí přebití čeká před jeho provedením, aby rychlé druhé stisknutí mohlo přepnout typ munice. Nižší hodnota zrychlí přebití, ale zkrátí časové okno pro dvojité stisknutí. Výchozí hodnota: 200.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_busy_instant_tap">
+        <text>Okamžitá akce během animace (legacy)</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_busy_instant_tap_desc">
+        <text>Obnovuje původní chování OneKey Weapon Controls: když zbraň právě provádí animaci (zaměřování, střelba, vytahování), stisknutí klávesy okamžitě provede akci při stisknutí místo čekání na rozlišení mezi krátkým stisknutím, podržením a dvojitým stisknutím. Umožňuje co nejrychlejší přebití během animací, ale akce při podržení a dvojitém stisknutí nejsou dostupné, dokud zbraň nedokončí animaci. Pokud je vypnuto, krátké stisknutí, dvojité stisknutí i podržení fungují stejně ve všech stavech zbraně.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_onekey_update_mcm">
+        <text>Pro změnu akční klávesy zde aktualizujte MCM na verzi 1.6.0 nebo novější. Výchozí klávesa je R.</text>
+    </string>
+
+    <!-- ### Fire Mode Controls -->
+    <string id="ui_mcm_rax_ammo_check_title_firemode">
+        <text>Ovládání režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_desc">
+        <text>Jedna klávesa pro ovládání režimu střelby. Klepnutí, dvojité klepnutí a podržení lze samostatně nastavit na stejné akce: Přepnout (další režim, modifikátor přepne na předchozí), Kontrola (zobrazí aktuální režim), Prohlédnout (prohlédne zbraň) nebo Nic. Výchozí nastavení: klepnutí přepíná režim, podržení zobrazí aktuální režim. Používá vlastní klávesu (výchozí X), oddělenou od přebíjení.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_enable">
+        <text>Zapnout klávesu režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_enable_desc">
+        <text>Hlavní přepínač klávesy pro režim střelby. Ve výchozím nastavení vypnuto.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_key">
+        <text>Klávesa režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_key_desc">
+        <text>Klávesa pro přepínání režimu střelby. Klepnutím přepnete na další režim, modifikátor + klepnutí přepne na předchozí a podržení zobrazí aktuální režim.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hide_hud">
+        <text>Skrýt výchozí HUD režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_hud_behavior_hide_hud_desc">
+        <text>Skryje výchozí indikátor režimu střelby na obrazovce, takže režim zobrazuje pouze tento mod. Pro zobrazení zprávy je nutná funkce ovládání režimu střelby jednou klávesou.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_color_text">
+        <text>Obarvit text režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_color_text_desc">
+        <text>Obarví text režimu střelby podle režimu: zeleně pro jednotlivé výstřely, oranžově pro dávku a červeně pro plně automatickou střelbu. Pokud je zapnuté vlastní vykreslování textu, použije se i zde. Při vypnutí zůstane text bílý. Obarvení se týká stylů Text a Nic a také přidaného písmene u stylů Tečky; samotné tečky zůstávají bílé. U stylů Ready or Not se při zapnutí použije červená grafika přepínače a při vypnutí bílá.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_display_style">
+        <text>Styl zobrazení režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_display_style_desc">
+        <text>Určuje způsob zobrazení režimu střelby. Text: slovní označení. Nic: nic se nezobrazí (v kombinaci s volbou Zobrazit písmeno režimu lze zobrazit pouze písmeno). Tečky: čtyři tečky, aktivní jsou bílé a neaktivní tmavé (jednotlivá 1, dávka N, automatická 4). Alternativní tečky: zobrazí pouze aktivní bílé tečky bez prázdných míst. Vlastní textura: grafika přepínače střelby zvolená níže. Dvoubarevné tmavé tečky vyžadují vlastní vykreslování textu; bez něj se prázdné tečky zobrazí jako „o“.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_display_style_lst_ds_text">
+        <text>Text</text>
+    </string>
+    <string id="rax_ammo_check_firemode_display_style_lst_ds_none">
+        <text>Nic</text>
+    </string>
+    <string id="rax_ammo_check_firemode_display_style_lst_ds_dots">
+        <text>Tečky</text>
+    </string>
+    <string id="rax_ammo_check_firemode_display_style_lst_ds_dots_alt">
+        <text>Alternativní tečky</text>
+    </string>
+    <string id="rax_ammo_check_firemode_display_style_lst_ds_custom">
+        <text>Vlastní textura</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_texture">
+        <text>Textura režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_texture_desc">
+        <text>Určuje grafiku přepínače, která se použije při stylu zobrazení Vlastní textura. Ready or Not: přepínač střelby s integrovaným textem režimu. Ready or Not (bez textu): stejná grafika bez textu. Při zapnutém obarvení je grafika červená, při vypnutém bílá. BWais's Firemode: používá atlas přepínače střelby od BWais (je součástí modu, není potřeba instalovat další mod) a jeho odstín a průhlednost lze upravit níže. Tělo přepínače (s pozicí dávky nebo bez ní) se určuje podle režimů střelby dané zbraně, takže funguje s libovolnou zbraní. Používá se pouze při nastavení stylu zobrazení na Vlastní textura.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_texture_lst_tx_ron_text">
+        <text>Ready or Not</text>
+    </string>
+    <string id="rax_ammo_check_firemode_texture_lst_tx_ron_notext">
+        <text>Ready or Not (bez textu)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_texture_lst_tx_bwais">
+        <text>BWais's Firemode</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_position">
+        <text>Pozice zobrazení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_position_desc">
+        <text>Určuje, kde se zobrazí režim střelby. Výchozí: použije pozici zprávy AmmoCheck (nastavení zobrazení). Spodní okraj obrazovky: připevní indikátor úplně ke spodnímu okraji, pod spodní střed. Platí pro všechny styly včetně Ready or Not. Styly textu a teček lze přesouvat pouze při zapnutém vlastním vykreslování textu; běžný řádek zprávy zůstává vždy dole.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_position_lst_pos_default">
+        <text>Výchozí</text>
+    </string>
+    <string id="rax_ammo_check_firemode_position_lst_pos_bottom">
+        <text>Spodní okraj obrazovky</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_show_letter">
+        <text>Zobrazit písmeno režimu střelby</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_show_letter_desc">
+        <text>Přidá k hlášce písmeno režimu: [S] jednotlivé výstřely, [B] dávka, [A] automatická střelba. Funguje u stylů Text, Nic a Tečky. U stylu Nic se zobrazí pouze toto písmeno.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_tap_action">
+        <text>Akce při klepnutí</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_tap_action_desc">
+        <text>Určuje akci při jednom klepnutí. Přepnout: přepne na další režim střelby (podržením modifikátoru předchozí). Nastavit jednotlivé: okamžitě přepne na jednotlivé výstřely. Nastavit automatickou (nebo dávku): přepne na plně automatickou střelbu, případně na dávku, pokud zbraň automatickou střelbu nemá; jinak režim nezmění. Kontrola: zobrazí aktuální režim střelby na obrazovce. Prohlédnout: spustí animaci prohlédnutí zbraně. Nic: neudělá nic.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_none">
+        <text>Nic (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_switch">
+        <text>Přepnout režim střelby (další/předchozí)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_single">
+        <text>Nastavit jednotlivé výstřely</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_auto">
+        <text>Nastavit automatickou střelbu (nebo dávku)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_check">
+        <text>Kontrola režimu střelby</text>
+    </string>
+    <string id="rax_ammo_check_firemode_tap_action_lst_fa_inspect">
+        <text>Prohlédnout zbraň</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_doubletap_action">
+        <text>Akce při dvojitém klepnutí</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_doubletap_action_desc">
+        <text>Určuje akci při dvojitém klepnutí. Přepnout: přepne na další režim střelby (modifikátor směr obrátí). Nastavit jednotlivé: okamžitě přepne na jednotlivé výstřely. Nastavit automatickou (nebo dávku): přepne na plně automatickou střelbu, případně na dávku, pokud automatická střelba není dostupná; jinak režim nezmění. Kontrola: zobrazí aktuální režim střelby. Prohlédnout: spustí animaci prohlédnutí zbraně. Nic: dvojité klepnutí nic neudělá, takže akce při klepnutí se spustí okamžitě bez čekání.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_none">
+        <text>Nic (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_switch">
+        <text>Přepnout režim střelby (další/předchozí)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_single">
+        <text>Nastavit jednotlivé výstřely</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_auto">
+        <text>Nastavit automatickou střelbu (nebo dávku)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_check">
+        <text>Kontrola režimu střelby</text>
+    </string>
+    <string id="rax_ammo_check_firemode_doubletap_action_lst_fa_inspect">
+        <text>Prohlédnout zbraň</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_hold_action">
+        <text>Akce při podržení</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_hold_action_desc">
+        <text>Určuje akci při podržení klávesy. Kontrola: zobrazí aktuální režim střelby. Přepnout: přepne na další režim střelby (modifikátor směr obrátí). Nastavit jednotlivé: přepne na jednotlivé výstřely. Nastavit automatickou (nebo dávku): přepne na plně automatickou střelbu, případně na dávku, pokud automatická střelba není dostupná; jinak režim nezmění. Prohlédnout: spustí animaci prohlédnutí zbraně. Nic: podržení nic neudělá a po uvolnění se spustí akce při klepnutí.</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_none">
+        <text>Nic (vypnuto)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_switch">
+        <text>Přepnout režim střelby (další/předchozí)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_single">
+        <text>Nastavit jednotlivé výstřely</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_auto">
+        <text>Nastavit automatickou střelbu (nebo dávku)</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_check">
+        <text>Kontrola režimu střelby</text>
+    </string>
+    <string id="rax_ammo_check_firemode_hold_action_lst_fa_inspect">
+        <text>Prohlédnout zbraň</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_hold_ms">
+        <text>Doba podržení (ms)</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_hold_ms_desc">
+        <text>Jak dlouho je nutné držet klávesu, než se místo akce při klepnutí spustí akce při podržení. Nižší hodnota působí rychleji, ale příliš nízká může spustit akci při podržení i při nepatrně delším klepnutí. Výchozí: 200.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_doubletap_ms">
+        <text>Časové okno dvojitého klepnutí (ms)</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_doubletap_ms_desc">
+        <text>Časový limit, během kterého se druhé klepnutí počítá jako dvojité klepnutí. Určuje také, jak dlouho se čeká se spuštěním akce při jednom klepnutí, aby druhé rychlé klepnutí mohlo aktivovat akci dvojitého klepnutí. Nižší hodnota zrychlí reakci na klepnutí, ale zkrátí časové okno pro dvojité klepnutí. Výchozí: 200.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_opacity">
+        <text>Průhlednost vlastní textury</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_opacity_desc">
+        <text>Průhlednost vybrané textury režimu střelby. 255 znamená zcela neprůhlednou, 0 zcela neviditelnou. Platí pouze pro styl zobrazení Vlastní textura.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_hue">
+        <text>Odstín vlastní textury</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_hue_desc">
+        <text>Barevný odstín vybrané textury režimu střelby. 0 zachová původní barvu textury. Hodnoty 1–360 použijí příslušný odstín. Pro čisté obarvení použijte variantu bez textu (bílou); červená textura může s barevným odstínem vytvářet nežádoucí efekt. Platí pouze pro styl zobrazení Vlastní textura.</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_y_offset">
+        <text>Posun vlastní textury na ose Y</text>
+    </string>
+    <string id="ui_mcm_rax_ammo_check_firemode_ron_y_offset_desc">
+        <text>Posune vlastní texturu nahoru nebo dolů. Záporná hodnota ji posune nahoru, kladná dolů (v pixelech v rozhraní 1024x768). Použijte pro přesné doladění pozice, například pro posunutí grafiky až ke spodnímu okraji obrazovky. Platí pouze pro styl zobrazení Vlastní textura.</text>
+    </string>
+    <string id="st_ac_fm_fullauto">
+        <text>Automatická střelba</text>
+    </string>
+    <string id="st_ac_fm_single">
+        <text>Jednotlivé výstřely</text>
+    </string>
+    <string id="st_ac_fm_burst">
+        <text>Dávka</text>
+    </string>
+
+
+
+    <!-- modifier option labels -->
+<string id="ui_mcm_rax_ammo_check_onekey_modifier_unjam">
+    <text>Modifikátor pro odstraňování závady</text>
 </string>
-<string id="st_ac_plus1">
-    <text>Plné + 1</text>
+<string id="ui_mcm_rax_ammo_check_onekey_modifier_unjam_desc">
+    <text>Podržte tento modifikátor a klepněte na klávesu One Key pro odstranění závady zbraně místo přebíjení. Vyžaduje Weapon Parts Overhaul (arti_jamming).</text>
 </string>
-<string id="st_ac_oitc">
-    <text>1 v komoře</text>
+<string id="ui_mcm_rax_ammo_check_onekey_force_wpo_inspect">
+    <text>Vynutit kontrolu zbraně WPO pomocí modifikátoru</text>
 </string>
-<string id="st_ac_just_one">
-    <text>Jenom jeden</text>
+<string id="ui_mcm_rax_ammo_check_onekey_force_wpo_inspect_desc">
+    <text>Pokud je zapnuto, podržení modifikátoru pro odstranění závady a klepnutí na klávesu One Key u zbraně BEZ závady vynutí řádnou kontrolu zbraně pomocí Weapon Parts Overhaul (kontrolní animace a volný výstřel bez závady), i když je chování zbraně bez závady nastaveno na „Nekontrolovat při odstraňování závady“. Platí pouze pro stisk s modifikátorem; u skutečně zaseknuté zbraně proběhne odstranění závady standardně. Vyžaduje Weapon Parts Overhaul (arti_jamming).</text>
 </string>
-<string id="st_ac_full">
-    <text>Plné</text>
+<string id="ui_mcm_rax_ammo_check_firemode_modifier_prev">
+    <text>Modifikátor předchozího režimu</text>
 </string>
-<string id="st_ac_nearly_full">
-    <text>Téměř plné</text>
+<string id="ui_mcm_rax_ammo_check_firemode_modifier_prev_desc">
+    <text>Podržte tento modifikátor a klepněte na klávesu režimu střelby pro přepnutí na PŘEDCHOZÍ režim střelby místo následujícího.</text>
 </string>
-<string id="st_ac_more_half">
-    <text>Více než polovina</text>
+<string id="ui_mcm_rax_ammo_check_keybind_modifier">
+    <text>Modifikátor kontroly munice</text>
 </string>
-<string id="st_ac_about_half">
-    <text>Zhruba polovina</text>
+<string id="ui_mcm_rax_ammo_check_keybind_modifier_desc">
+    <text>Volitelný modifikátor, který lze podržet společně s klávesou kontroly munice. „Nic“ znamená, že klávesa funguje samostatně.</text>
 </string>
-<string id="st_ac_less_half">
-    <text>Méně než polovina</text>
+<string id="ui_mcm_rax_ammo_check_keybind_mode">
+    <text>Režim aktivace</text>
 </string>
-<string id="st_ac_near_empty">
-    <text>Téměř prázdné</text>
+<string id="ui_mcm_rax_ammo_check_keybind_mode_desc">
+    <text>Jak se aktivuje kontrola munice: Stisk (jedno klepnutí), Dvojité klepnutí nebo Podržení.</text>
 </string>
-<string id="st_ac_empty">
-    <text>Prázdné</text>
+
+<!-- Eject Chambered Round -->
+<string id="ui_mm_title_rax_ammo_check_eject">
+    <text>Vyhození náboje z komory</text>
 </string>
-<string id="st_ac_jammed">
-    <text>Zaseknutá zbraň</text>
+<string id="ui_mcm_rax_ammo_check_eject_desc">
+    <text>Jedna klávesa vyhodí náboj aktuálně v komoře zpět do inventáře a zasune další náboj ze zásobníku. Užitečné po výměně zásobníku s 1 nábojem v komoře: starý náboj se vyhodí a další výstřel tak použije náboj z nového zásobníku. Pušky s odsuvným závěrem a pumpovací zbraně přehrají animaci přebití závěru.</text>
 </string>
-<string id="st_ac_noMag">
-    <text>Není uvnitř žádný zásobník</text>
+<string id="ui_mcm_rax_ammo_check_eject_mags_note">
+    <text>Zbraně se zásobníkem vyžadují ATHI's Mags Reloaded s aktivovanou volbou „1 náboj v komoře“. Zbraně mimo systém zásobníků (například pušky s vnitřním zásobníkem jako Mosin) náboj vždy vyhodí přímo.</text>
 </string>
-<string id="st_ac_grenade">
-    <text>Nálož granátu</text>
+<string id="ui_mcm_rax_ammo_check_eject_enable">
+    <text>Zapnout</text>
 </string>
-<string id="st_ac_noAmmo">
-    <text>Tohle nepotřebuje munici!</text>
+<string id="ui_mcm_rax_ammo_check_eject_enable_desc">
+    <text>Hlavní přepínač funkce vyhození náboje z komory.</text>
 </string>
-<string id="st_ac_ammoLeft">
-    <text>zbylo</text>
+<string id="ui_mcm_rax_ammo_check_eject_key">
+    <text>Klávesa pro vyhození náboje</text>
 </string>
-<string id="ui_mcm_menu_rax_ammo_check">
-    <text>Magazines Check</text>
+<string id="ui_mcm_rax_ammo_check_eject_key_desc">
+    <text>Klávesa, která vyhodí náboj z komory. Ve výchozím nastavení není přiřazena. Nepřiřazujte ji ke klávese přebíjení.</text>
 </string>
-<string id="ui_mm_title_rax_ammo_check">
-    <text>Kontrola munice</text>
+<string id="ui_mcm_rax_ammo_check_eject_modifier">
+    <text>Modifikátor</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_usecolor">
-    <text>Používat barevné zprávy.</text>
+<string id="ui_mcm_rax_ammo_check_eject_modifier_desc">
+    <text>Volitelný modifikátor, který lze podržet společně s klávesou pro vyhození náboje. „Nic“ znamená, že klávesa funguje samostatně.</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_hidecounter">
-    <text>Skrýt počítadlo munice.</text>
+<string id="ui_mcm_rax_ammo_check_eject_mode">
+    <text>Režim aktivace</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_hideicon">
-    <text>Skrýt ikonu munice.</text>
+<string id="ui_mcm_rax_ammo_check_eject_mode_desc">
+    <text>Jak se aktivuje klávesa pro vyhození náboje: Stisk (jedno klepnutí), Dvojité klepnutí nebo Podržení.</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_busy_hands_fix">
-    <text>Oprava "Busy Hands".</text>
+<string id="ui_mcm_rax_ammo_check_eject_camera_anim">
+    <text>Pohyb kamery u ostatních zbraní</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_busy_hands_fix_desc">
-    <text>Zaškrtněte tuto volbu, pokud se "animace" kontroly munice zasekne. Pravděpodobně se to stane, pokud je nainstalován FDDA.</text>
+<string id="ui_mcm_rax_ammo_check_eject_camera_anim_desc">
+    <text>Zbraně bez animace přebití závěru přehrají krátký pohyb kamery z Camera Reanimation Project (pokud je nainstalován) a zvuk manipulace se závěrem. Při vypnutí se přehraje pouze zvuk.</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_keybind">
-    <text>Klávesové nastavení kontroly munice.</text>
+<string id="ui_mcm_rax_ammo_check_eject_auto_eject">
+    <text>Automaticky vyhodit odlišný náboj po přebití</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_keybind_desc">
-    <text>Toto klávesové nastavení lze konfigurovat tak, aby vyžadovalo další modifikační klávesy k minimalizaci konfliktů.</text>
+<string id="ui_mcm_rax_ammo_check_eject_auto_eject_desc">
+    <text>Po přebití, pokud se náboj ponechaný v komoře liší od prvního náboje v novém zásobníku (například starý náboj FMJ před novým zásobníkem AP), zbraň jej automaticky vyhodí do inventáře, takže další výstřel použije náboj z nového zásobníku. Tip: přebití s prázdnou komorou přehraje standardní kompletní animaci přebití, takže vyhození náboje klávesou před přebitím umožní dosáhnout stejného výsledku ručně.</text>
 </string>
-<string id="ui_mcm_rax_ammo_check_update_mcm">
-    <text>Aktualizujte MCM, abyste zde změnili klávesové nastavení. Výchozí klávesa je T.</text>
+
+<!-- ### Floating Mag HUD -->
+<string id="ui_mm_title_rax_ammo_check_maghud">
+    <text>Plovoucí HUD zásobníku</text>
 </string>
+<string id="ui_mcm_rax_ammo_check_maghud_req_note">
+    <text>Vyžaduje nainstalovaný mod „Immersive Ammo Check“. (Výjimka: „Použít text a barvy AmmoCheck“ vykresluje údaje samostatně a funguje i bez něj.)</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_desc">
+    <text>Během animace kontroly zásobníku zobrazí na obrazovce malý údaj o munici přímo u zásobníku zbraně, takže počet nábojů vidíte přímo na zbrani místo zprávy v rohu obrazovky. Podporuje zbraně s vlastní kontrolní animací i zbraně s falešným přebitím. Pokud je „Použít text a barvy AmmoCheck“ vypnuto, používá vlastní číselný údaj a ukazatel modu „Immersive Ammo Check“ (mod musí být nainstalován). Pokud je zapnuto, vykresluje vlastní stylizovaný text tohoto modu přímo u zásobníku a žádný další mod není potřeba.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_enable">
+    <text>Zapnout plovoucí HUD zásobníku</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_enable_desc">
+    <text>Hlavní přepínač plovoucího HUD zásobníku. Ve výchozím nastavení vypnuto. Výchozí režim vyžaduje mod „Immersive Ammo Check“; pro použití bez něj zapněte „Použít text a barvy AmmoCheck“.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_use_our_text">
+    <text>Použít text a barvy AmmoCheck</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_use_our_text_desc">
+    <text>Pokud je zapnuto, plovoucí HUD zobrazí kompletní stavový text tohoto modu u zásobníku pomocí vlastního vykreslování textu: režim zobrazení, barvy, typ munice/štítek, všechny režimy zvýraznění (včetně dvoubarevného zobrazení a řádku s nesprávným nábojem) a zvolené písmo, velikost a stín. Funguje s modem Immersive Ammo Check i bez něj. Pokud je vypnuto, zobrazí se vlastní číselný údaj a ukazatel druhého modu (tento mod musí být nainstalován).</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_show_bar">
+    <text>Zobrazit ukazatel naplnění (s textem AmmoCheck)</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_show_bar_desc">
+    <text>Pokud je zapnuto, zobrazí pod plovoucím údajem ukazatel naplnění zásobníku vycentrovaný podle textu. Platí pouze při zapnuté volbě „Použít text a barvy AmmoCheck“ (v druhém režimu je ukazatel zobrazen automaticky). Funguje s modem Immersive Ammo Check i bez něj.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_gray">
+    <text>Ukazatel naplnění vždy šedý</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_gray_desc">
+    <text>Pokud je zapnuto, ukazatel naplnění bude vždy šedý. Pokud je vypnuto, jeho barva se mění podle množství zbývající munice: šedá při plném zásobníku, oranžová přibližně v polovině a červená při téměř prázdném zásobníku.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_height">
+    <text>Výška ukazatele naplnění</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_height_desc">
+    <text>Tloušťka plovoucího ukazatele naplnění v pixelech.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_alpha">
+    <text>Průhlednost ukazatele naplnění</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_alpha_desc">
+    <text>Průhlednost plovoucího ukazatele naplnění v procentech. Nižší hodnota = větší průhlednost.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_y_1line">
+    <text>Posun ukazatele Y (1 řádek)</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_y_1line_desc">
+    <text>Svislý posun ukazatele, pokud se údaj zobrazuje na jednom řádku. Nižší hodnota = ukazatel bude výše.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_y_2line">
+    <text>Posun ukazatele Y (2 řádky)</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_maghud_bar_y_2line_desc">
+    <text>Svislý posun ukazatele, pokud se údaj zobrazuje na dvou řádcích. Nižší hodnota = ukazatel bude výše.</text>
+</string>
+
+<!-- ### MCM section headers -->
+<string id="ui_mcm_rax_ammo_check_hdr_message">
+    <text>Zpráva</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_color">
+    <text>Barva</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_content">
+    <text>Obsah</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_render">
+    <text>Vlastní vykreslování</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_hud">
+    <text>Prvky HUD</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_behavior">
+    <text>Chování</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_wpo">
+    <text>WPO (Weapon Parts Overhaul)</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_mode">
+    <text>Režim</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_fallback">
+    <text>Náhradní možnosti</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_fakereload">
+    <text>Mechanika falešného přebití</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_timing">
+    <text>Načasování</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_controls">
+    <text>Ovládání</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_display">
+    <text>Zobrazení</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_texture">
+    <text>Vlastní textura</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_speed">
+    <text>Ovládání a rychlost</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_throw">
+    <text>Vyhození zásobníku</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_hdr_trigger">
+    <text>Ovládání</text>
+</string>
+
+<!-- ### MCM notes -->
+<string id="ui_mcm_rax_ammo_check_doubletap_delay_note">
+    <text>Zapnutí této funkce přidá malé zpoždění vstupu, které je nutné pro rozlišení mezi klepnutím a dvojitým klepnutím. Pro okamžité akce nastavte akci při dvojitém klepnutí na „Nic“ – akce při klepnutí se pak spustí okamžitě.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_keybind_note">
+    <text>Tato klávesa funguje společně s ovládáním zbraně jednou klávesou nebo samostatně. Možná je libovolná kombinace.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_debug_bone_debug">
+    <text>Protokolování sledování kosti</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_debug_bone_debug_desc">
+    <text>Zapíše do herního logu (xray_*.log) při každé kontrole kost zásobníku, na kterou se plovoucí HUD ukotvuje, a její pozici na obrazovce. Použijte pro zjištění, proč se údaj u konkrétní zbraně nepřichytí: řádky označené [AC-BONE] zobrazují nalezený název kosti (nebo NO_BONE, pokud zbraň nemá rozpoznanou kost zásobníku/náboje). Platí pouze pro překryv „Použít text a barvy AmmoCheck“. Pro běžné hraní ponechte vypnuté.</text>
+</string>
+<string id="ui_mcm_rax_ammo_check_debug_bone_dump_note">
+    <text>Pokud je zapnutý režim ladění, stisknutím klávesy / (lomítko) zapíšete do logu názvy všech kostí zbraně v ruce. Řádky jsou označeny [AC-BONE]. Použijte pro nalezení kosti zásobníku nebo náboje u zbraní, ke kterým se Plovoucí HUD zásobníku nepřichytí (revolvery, nestandardní zásobníky), a následně ji nastavte jako výjimku pro konkrétní zbraň.</text>
+</string>
+
 
 </string_table>
