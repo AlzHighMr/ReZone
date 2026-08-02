@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <string id="ui_mcm_menu_animated">
+        <text>Animated Magazine Loading</text>
+    </string>
+    
+<string id="ui_mcm_animated_mag_loading_title">
+    <text>Nastavení animovaného nabíjení zásobníků</text>
+</string>
+
+<!-- Direct Loading -->
+<string id="ui_mcm_animated_mag_loading_direct_load_title">
+    <text>Přímé nabíjení zásobníku</text>
+</string>
+<string id="ui_mcm_magazines_animated_enable_direct_load">
+    <text>Povolit přímé nabíjení</text>
+</string>
+<string id="ui_mcm_magazines_animated_keybind_direct_load">
+    <text>Klávesa pro přímé nabíjení</text>
+</string>
+<string id="ui_mcm_magazines_animated_modifier_direct_load">
+    <text>Modifikátor přímého nabíjení</text>
+</string>
+
+<!-- Ammo Wheel -->
+<string id="ui_mcm_animated_mag_loading_ammo_wheel_title">
+    <text>Kolečko výběru munice</text>
+</string>
+<string id="ui_mcm_magazines_animated_enable_ammo_wheel">
+    <text>Povolit kolečko munice</text>
+</string>
+<string id="ui_mcm_magazines_animated_keybind_ammo_wheel">
+    <text>Klávesa kolečka munice</text>
+</string>
+<string id="ui_mcm_magazines_animated_modifier_ammo_wheel">
+    <text>Modifikátor kolečka munice</text>
+</string>
+
+<!-- Camera effects -->
+<string id="ui_mcm_magazines_animated_aml_camera_effects">
+    <text>Chvění kamery při nabíjení</text>
+</string>
+<string id="ui_mcm_magazines_animated_aml_camera_effects_desc">
+    <text>Po vypnutí odstraní pohyb kamery z pohledu první osoby během nabíjení zásobníku, ale zachová animaci rukou a zásobníku v HUDu i zvuky.</text>
+</string>
+
+<!-- Debug -->
+<string id="ui_mcm_animated_mag_loading_debug_title">
+    <text>Řešení problémů</text>
+</string>
+<string id="ui_mcm_magazines_animated_aml_debug">
+    <text>Režim ladění</text>
+</string>
+<string id="ui_mcm_magazines_animated_aml_debug_desc">
+    <text>Vypisuje zprávy o AML a opravách kompatibility do konzole (klávesa ~).</text>
+</string>
+
+
+</string_table>
