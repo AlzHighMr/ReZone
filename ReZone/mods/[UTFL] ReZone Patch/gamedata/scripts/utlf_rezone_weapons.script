@@ -1,37 +1,6 @@
 local PACK_NAME = "UTFL ReZone Weapons"
 
 local PROFILES = {
-    {
-        sections = {
-            "wpn_vintorez_isg",
-        },
-        mode = "modular",
-        attachment_groups = { "utlf_rifles" },
-        mount = {
-            class = "rifle_side",
-            bone = 0,
-            position = { -0.018, 0.01, 0.206 },
-            rotation = { -180, -1.499985, 85.600006 },
-            scale = 0.49,
-            light_direction = { 180, 0, 0 }
-        }
-    },
-    {
-        sections = {
-            "wpn_ak74u_isg",
-        },
-        mode = "modular",
-        attachment_groups = { "utlf_rifles" },
-        mount = {
-          class = "rifle_side", 
-          position = { 0.015, 0.038, 0.317 }, 
-          rotation = { 180, 0, -90 }, 
-          scale = 0.75,
-          bone = 0, 
-          light_direction = { 180, 0, 0 } 
-        }
-    },
-
 -------------------
 -- [SeDzhiMol] AR-15 reanimation and remodel
 -------------------    
@@ -183,6 +152,39 @@ local PROFILES = {
             light_direction = { 180, 0, 0 }
         }
     },
+-------------------
+-- Boomstick and Sharpstick AR's
+-------------------
+    {
+        sections = {
+            "wpn_vintorez_isg",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side",
+            bone = 0,
+            position = { -0.018, 0.01, 0.206 },
+            rotation = { -180, -1.499985, 85.600006 },
+            scale = 0.49,
+            light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_ak74u_isg",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.015, 0.038, 0.317 }, 
+          rotation = { 180, 0, -90 }, 
+          scale = 0.75,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },    
     {
         sections = {
             "wpn_scar_siber_m1",
