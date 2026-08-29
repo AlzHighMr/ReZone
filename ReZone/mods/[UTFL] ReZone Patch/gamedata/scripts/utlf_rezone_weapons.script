@@ -31,17 +31,62 @@ local PROFILES = {
           light_direction = { 180, 0, 0 } 
         }
     },
+
+-------------------
+-- [SeDzhiMol] AR-15 reanimation and remodel
+-------------------    
     {
         sections = {
-            "wpn_hk416",
             "wpn_m4",
             "wpn_m4_butcher",
-            "wpn_m4_skryaga",
-            "wpn_m4_tac",
-            "wpn_m4a1",
+
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.038, -0.004, -0.162 }, 
+          rotation = { -1.499985, 0, 87.300018 }, 
+          scale = 0.462,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
+           "wpn_m4_tac",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.029, -0.022, -0.288 }, 
+          rotation = { -1.499985, 0, 87.300018 }, 
+          scale = 0.351, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
             "wpn_m4a1_custom",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.029, -0.022, -0.283 }, 
+          rotation = { -1.499985, 0, 87.300018 }, 
+          scale = 0.434,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+
+    {
+        sections = {
+            "wpn_m4_ru556",
             "wpn_m4a1_siber",
-            "wpn_ru556",
         },
         mode = "modular",
         attachment_groups = { "utlf_rifles" },
@@ -54,10 +99,46 @@ local PROFILES = {
           light_direction = { 180, 0, 0 } 
         }
     },
+    {
+        sections = {
+            "wpn_m4_skryaga",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.05, -0.004, -0.195 }, 
+          rotation = { -1.499985, 0, 87.300018 }, 
+          scale = 0.309,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
 
-    ---------------
-    -- Snipers/DMR
-    ---------------
+    {
+        sections = {
+            "wpn_hk416",
+            "wpn_hk416_custom",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.027, 0.024, -0.26 }, 
+          rotation = { 1.000015, 0, -92 }, 
+          scale = 0.42,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+
+
+
+
+
+-------------------
+-- Snipers/DMR
+-------------------
     {
         sections = {
             "wpn_sr25",
@@ -102,18 +183,71 @@ local PROFILES = {
             light_direction = { 180, 0, 0 }
         }
     },
-
-    ---------------
-    -- Others
-    ---------------
+    {
+        sections = {
+            "wpn_scar_siber_m1",
+            "wpn_scar_siber_m1_black",
+            "wpn_scar_siber_m2",
+            "wpn_scar_siber_m2_custom",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side", 
+            position = { 0.019, 0.057, 0.257 }, 
+            rotation = { 180, 0, -90 }, 
+            scale = 0.75, 
+            bone = 0, 
+            light_direction = { 180, 0, 0 }
+        }
+    },
     {
         sections = {
             "wpn_sks_tac",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side", 
+            position = { 0.029, 0.029, 0.443 }, 
+            rotation = { 180, 0, -90 }, 
+            scale = 0.75, 
+            bone = 0, 
+            light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
             "wpn_svds_pmc",
-            "wpn_ak12_m1",
-            "wpn_a104_alfa",
-            "wpn_scar_siber_m1",
-            "wpn_scar_siber_m1_black",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side", 
+            position = { -0.018, 0.033, 0.41 }, 
+            rotation = { 180, 0, 88.899994 }, 
+            scale = 0.609, 
+            bone = 0, 
+            light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
+            "wpn_ak12_bas",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side", 
+            position = { -0.018, 0.033, 0.41 }, 
+            rotation = { 180, 0, 88.899994 }, 
+            scale = 0.609, 
+            bone = 0, 
+            light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
             "wpn_sig552_tac_siber",
             "wpn_sig550_tac_siber",
         },
@@ -121,11 +255,11 @@ local PROFILES = {
         attachment_groups = { "utlf_rifles" },
         mount = {
             class = "rifle_side",
-            bone = 0,
-            position = { 0.01, 0.05, 0.28 },
-            rotation = { 180, 0, -90 },
-            scale = 0.75,
-            light_direction = { 180, 0, 0 }
+            position = { 0.029, 0.061, 0.392 },
+            rotation = { 180, 0, -87.799995 }, 
+            scale = 0.672, 
+            bone = 0, 
+            light_direction = { 180, 0, 0 } 
         }
     }
 }
