@@ -1,0 +1,139 @@
+local PACK_NAME = "UTFL ReZone Weapons"
+
+local PROFILES = {
+    {
+        sections = {
+            "wpn_vintorez_isg",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side",
+            bone = 0,
+            position = { -0.018, 0.01, 0.206 },
+            rotation = { -180, -1.499985, 85.600006 },
+            scale = 0.49,
+            light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_ak74u_isg",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.015, 0.038, 0.317 }, 
+          rotation = { 180, 0, -90 }, 
+          scale = 0.75,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
+            "wpn_hk416",
+            "wpn_m4",
+            "wpn_m4_butcher",
+            "wpn_m4_skryaga",
+            "wpn_m4_tac",
+            "wpn_m4a1",
+            "wpn_m4a1_custom",
+            "wpn_m4a1_siber",
+            "wpn_ru556",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.038, -0.004, -0.162 }, 
+          rotation = { -1.499985, 0, 87.300018 }, 
+          scale = 0.462,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+
+    ---------------
+    -- Snipers/DMR
+    ---------------
+    {
+        sections = {
+            "wpn_sr25",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side",
+            position = { 0.024, 0.052, 0.368 },
+            rotation = { 180, 0, -102 },
+            scale = 0.595,
+            bone = 0,
+            light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_kar98_retrotac",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side",
+            position = { 0.019, 0.05, 0.578 },
+            rotation = { 180, 0, -90 },
+            scale = 0.75,
+            bone = 0, 
+            light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_g28",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side", 
+            position = { 0.029, 0.061, 0.341 }, 
+            rotation = { 180, 0, -90 }, 
+            scale = 0.75, bone = 0, 
+            light_direction = { 180, 0, 0 }
+        }
+    },
+
+    ---------------
+    -- Others
+    ---------------
+    {
+        sections = {
+            "wpn_sks_tac",
+            "wpn_svds_pmc",
+            "wpn_ak12_m1",
+            "wpn_a104_alfa",
+            "wpn_scar_siber_m1",
+            "wpn_scar_siber_m1_black",
+            "wpn_sig552_tac_siber",
+            "wpn_sig550_tac_siber",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+            class = "rifle_side",
+            bone = 0,
+            position = { 0.01, 0.05, 0.28 },
+            rotation = { 180, 0, -90 },
+            scale = 0.75,
+            light_direction = { 180, 0, 0 }
+        }
+    }
+}
+
+function on_game_start()
+    if utlf and utlf.register_pack then
+        utlf.register_pack(PACK_NAME, PROFILES)
+    else
+        printf("[UTFL] Universal Tactical Light Framework not found!")
+    end
+end
