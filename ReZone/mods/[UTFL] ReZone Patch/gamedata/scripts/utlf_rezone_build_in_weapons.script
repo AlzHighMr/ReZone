@@ -1,0 +1,68 @@
+local range = utlf.get_mcm_number("utlf/utfl_rezone_built_in/range", 26, 5, 80)
+local cone_deg = utlf.get_mcm_number("utlf/utfl_rezone_built_in/cone_deg", 24, 8, 60)
+
+local PACK_NAME = "utfl_rezone_built_in"
+local PROFILE = {
+    sections = {
+        "wpn_walther",
+        "wpn_walther_p99",
+        "wpn_walther_p99_mod9",
+        "wpn_sig220_n_upg220",
+        "wpn_sig220_n_u2p2g0r",
+        "wpn_pl15_pl15_scolaz",
+        "wpn_pl15_tan_pl15_scolaz",
+        "wpn_sr1m_gurza_up",
+        "wpn_sr1m_sr1upgr1",
+        "wpn_usp_tac",
+        "wpn_ak74m_beard",
+        "wpn_pkm_zenit_siber",
+        "wpn_ak12_custom_mono_kit",
+        "wpn_aug_a3_custom_bas",
+        "wpn_ak74_isg",
+        "wpn_akm_isg",
+        "wpn_ak74u_m1_isg",
+        "wpn_ak74_pmc",
+        "wpn_pkm_zenit_shorty",
+        "wpn_pkp_tac_siber",
+        "wpn_l85_m3",
+        "wpn_howa20",
+        "wpn_krissvektor",
+        "wpn_sr2_m2",
+        "wpn_saiga12s_isg",
+        "wpn_ak74u_tac",
+        "wpn_ak105_bas_shakal",
+        "wpn_ak105_bas_swamp",
+    },
+
+    mode = "built_in",
+    fire_bone = "wpn_body",
+    fire_point = "0, 0, 0.035",
+}
+
+local CONFIG = {
+    page = "utfl_rezone_built_in",
+    numbers = {
+        range = { def = 26, min = 5, max = 80 },
+        cone_deg = { def = 24, min = 8, max = 60 },
+    },
+}
+
+function on_mcm_load()
+    return {
+        id = CONFIG.page,
+        sh = true,
+        gr = {
+            { id = "range", type = "track", val = 2, min = 5, max = 80, step = 1, def = 26 },
+            { id = "cone_deg", type = "track", val = 2, min = 8, max = 60, step = 1, def = 24 },
+        },
+    }, "utlf"
+end
+
+
+function on_game_start()
+    if utlf and utlf.setup_builtin_light_pack then
+        utlf.setup_builtin_light_pack(PACK_NAME, PROFILE, CONFIG)
+    else
+        printf("[UTFL] compatible framework script not available")
+    end
+end
