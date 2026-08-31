@@ -241,13 +241,15 @@ local PROFILES = {
         attachment_groups = { "utlf_rifles" },
         mount = {
             class = "rifle_side", 
-            position = { -0.018, 0.033, 0.41 }, 
-            rotation = { 180, 0, 88.899994 }, 
-            scale = 0.609, 
+            position = { 0.017, 0.029, 0.33 }, 
+            rotation = { 180, -0.699997, -88.599998 }, 
+            scale = 0.511, 
             bone = 0, 
             light_direction = { 180, 0, 0 } 
         }
     },
+
+    
     {
         sections = {
             "wpn_sig552_tac_siber",
