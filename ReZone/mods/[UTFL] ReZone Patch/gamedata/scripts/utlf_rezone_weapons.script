@@ -1,6 +1,191 @@
 local PACK_NAME = "UTFL ReZone Weapons"
 
 local PROFILES = {
+
+    {
+        sections = {
+            "wpn_mp5",
+            "wpn_mp5_alt",
+            "wpn_mp5_custom",
+            "wpn_mp5_nimble",
+            "wpn_mp5sd",
+            "wpn_mp5sd_custom",
+            "wpn_mp5sd_new",
+
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.015, -0.004, 0.033 }, 
+          rotation = { 179.400024, 0, -88.599998 }, 
+          scale = 0.392,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+
+    {
+        sections = {
+            "wpn_sr2_m1",
+            "wpn_sr2_m2",
+            "wpn_sr2_veresk",
+            "wpn_sr2_veresk_sr2_upkit",
+
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.019, -0.004, 0.052 }, 
+          rotation = { 179.400024, 0, -88.5999988 }, 
+          scale = 0.469,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+        {
+        sections = {
+            "wpn_pp2000",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.015, 0.033, 0.052 }, 
+          rotation = { 179.400024, 0, -88.599999 }, 
+          scale = 0.469,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+
+        {
+        sections = {
+            "wpn_pp2000_operator",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.008, -0.078, 0.168 }, 
+          rotation = { 179.400024, 0, -88.599999 }, 
+          scale = 0.469,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
+    {
+        sections = {
+            "wpn_spas12",
+            "wpn_spas12_custom",
+            "wpn_spas12_nimble",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.027, 0.01, 0.322 },
+          rotation = { -180, 0, 88.100006 }, 
+          scale = 0.595, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+
+
+
+    {
+        sections = {
+            "wpn_usas12",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.022, 0.066, 0.322 },
+          rotation = { -180, -0.699997, 88.100006 }, 
+          scale = 0.818, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_protecta_aim",
+            "wpn_protecta_custom",
+            "wpn_protecta_nimble",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.024, 0.071, 0.234  },
+          rotation = { -180, -0.699997, -88.599998 }, 
+          scale = 0.448, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+
+-------------------
+-- [JMerc75]  MP40 
+-------------------    
+    {
+        sections = {
+            "wpn_mp40_j",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.019, 0.061, 0.126 },
+          rotation = { -180, -0.699997, -88.599998 }, 
+          scale = 0.588, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+
+-------------------
+-- [Strogglet15]  PP-19 Vityaz Virilized
+-------------------    
+    {
+        sections = {
+            "wpn_vityaz",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.019, 0.006, 0.182 },
+          rotation = { -180, -0.699997, -88.599998 }, 
+          scale = 0.448, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+
+-------------------
+-- [kRePiN]  MP7 Re-Imagined
+-------------------    
+    {
+        sections = {
+            "wpn_mp7",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.019, 0.061, 0.126 },
+          rotation = { -180, -0.699997, -88.599998 }, 
+          scale = 0.588, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+
+
 -------------------
 -- [SeDzhiMol] AR-15 reanimation and remodel
 -------------------    
@@ -102,8 +287,26 @@ local PROFILES = {
     },
 
 
+-------------------
+-- BAS AK12
+-------------------
 
-
+    {
+        sections = {
+            "wpn_ak12_bas",
+            "wpn_ak12_custom",
+        },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { 0.019, 0.033, 0.327 }, 
+          rotation = { 180, 0, -88 }, 
+          scale = 0.609,
+          bone = 0, 
+          light_direction = { 180, 0, 0 } 
+        }
+    },
 
 -------------------
 -- Snipers/DMR
@@ -241,11 +444,11 @@ local PROFILES = {
         attachment_groups = { "utlf_rifles" },
         mount = {
             class = "rifle_side", 
-            position = { 0.015, 0.033, 0.341 },
-            rotation = { 180, 0, -96.199997 },
-            scale = 0.616,
+            position = { -0.018, 0.033, 0.41 }, 
+            rotation = { 180, 0, 88.899994 }, 
+            scale = 0.609, 
             bone = 0, 
-            light_direction = { 180, 0, 0 }
+            light_direction = { 180, 0, 0 } 
         }
     },
     {
