@@ -1,0 +1,11 @@
+local original_can_repair_item = inventory_upgrades.can_repair_item
+
+function inventory_upgrades.can_repair_item(section)
+	if section and ini_sys:section_exist(section) then
+		if ini_sys:r_string_ex(section, "class") == "EQU_STLK" then
+			return true
+		end
+	end
+
+	return original_can_repair_item(section)
+end

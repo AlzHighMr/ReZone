@@ -4,6 +4,36 @@ local PROFILES = {
 
     {
         sections = {
+            "wpn_ump45",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.017, 0.001, 0.047  },
+          rotation = { -180, -0.699997, 88.100006 }, 
+          scale = 0.448, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
+            "wpn_ump45_custom",
+    },
+        mode = "modular",
+        attachment_groups = { "utlf_rifles" },
+        mount = {
+          class = "rifle_side", 
+          position = { -0.022, -0.008, 0.131 },
+          rotation = { -180, -0.699997, 88.100006 }, 
+          scale = 0.699, 
+          bone = 0, 
+          light_direction = { 180, 0, 0 }
+        }
+    },
+    {
+        sections = {
             "wpn_mp5",
             "wpn_mp5_alt",
             "wpn_mp5_custom",
