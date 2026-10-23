@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Soubory hry se ukladaji presne tak, jak jsou (bez prevodu koncu radku).
+# Launcher porovnava otisky souboru s GitHubem, prevod CRLF/LF by zpusobil zbytecne aktualizace.
+* -text

@@ -6,6 +6,24 @@ Launcher bere volitelné mody ze tří míst a spojí je dohromady:
 2. **Složky na Google Drive** (Volitelné mody, NPC modely, Zbraně, Ostatní) – dají se stáhnout.
 3. **`optional.json`** – přidá jim název, autora, popis, kategorii a číslo priority.
 
+Stejně fungují **sezóny** (stránka SEZÓNY): mody pod separátorem `Jaro`, `Léto`, `Podzim`
+nebo `Zima` v MO2 (na `=` a závorkách nezáleží, jde i `Spring`, `Summer`, `Autumn`, `Winter`),
+mody ze složek sezón na Google Drive a mody s polem `season` v `optional.json`.
+Sezóny nejsou součástí modpacku. Hráč vybere jednu sezónu: její mody se stáhnou (jen poprvé)
+a zapnou, mody ostatních sezón se vypnou. Stažené sezóny zůstanou v MO2, takže přepnutí je
+okamžité. Stahují se jen vybrané možnosti.
+
+Jedna sezóna může mít víc možností na výběr – stačí modům dát stejné `group`:
+
+```json
+{ "name": "C Consciousness Grass and Trees Overhaul – Spring", "title": "C Consciousness – jarní tráva",
+  "season": "Jaro", "group": "Tráva", "default": true, "priority": 10 },
+{ "name": "Jiná jarní tráva", "season": "Jaro", "group": "Tráva", "priority": 11 },
+{ "name": "Jarní počasí", "season": "Jaro", "priority": 20 }
+```
+
+Na stránce Jaro pak hráč vybere jednu ze dvou trav a jarní počasí si může zapnout nebo vypnout. Separátory sezón dej ideálně mimo sekci Optionals.
+
 Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen bez popisu.
 
 ## Pole
@@ -17,6 +35,9 @@ Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen
 | `author` | ne | Autor, zobrazí se v okně INFO. Prázdný = z názvu modu `Mod (Autor)` nebo `[Autor] Mod`. |
 | `link` | ne | Odkaz na stránku modu (ModDB, GitHub…), v okně INFO. |
 | `category` | ne | Kategorie = tlačítko filtru na stránce Volitelné (`Addony`, `Zbraně`, `NPC modely`, `Ostatní` nebo vlastní). U modů z Drive se doplní sama podle složky, u modů z MO2 podle podsekce. |
+| `season` | ne | `Jaro`, `Léto`, `Podzim` nebo `Zima` – mod patří na stránku SEZÓNY místo Volitelné. Nemusíš vyplňovat, když je mod pod separátorem sezóny nebo ve složce sezóny na Drive. Po stažení se zařadí pod separátor své sezóny (podle `priority`). |
+| `group` | ne | Jen u sezón: **skupina možností**, např. `Tráva` nebo `Počasí`. Z modů se stejnou sezónou a skupinou má hráč zapnutý vždy jen jeden (výběr kolečkem). Mody bez skupiny jdou zapnout/vypnout zaškrtnutím. |
+| `default` | ne | Jen u sezón: `true` = doporučená možnost ve skupině, zapne se, dokud si hráč nevybere jinou. Bez `default` se vezme první mod ve skupině. |
 | `description` | ne | Text v okně INFO. Nový řádek = `\n`. |
 | `priority` | ne | Číslo priority – podle něj se mod po stažení zařadí v sekci Optionals, stejně jako sloupec Priority v MO2: **větší číslo = v MO2 níž = vyšší priorita** (přepíše mody s menším číslem). Mod se dá hned pod poslední mod s menším nebo stejným číslem. Bez `priority` se použije číslo před názvem modu (`250- Addon`), a když ani to není, jde mod na konec sekce Optionals. |
 | `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). |
@@ -33,6 +54,9 @@ Priorita se použije, když hráč mod stáhne přes launcher. Mody, které už 
   "author": "",
   "link": "",
   "category": "",
+  "season": "",
+  "group": "",
+  "default": false,
   "description": "",
   "priority": 100
 }

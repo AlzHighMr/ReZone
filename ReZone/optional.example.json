@@ -1,0 +1,51 @@
+{
+  "mods": [
+    {
+      "name": "Better HUD (Ncenka)",
+      "title": "Better HUD",
+      "author": "Ncenka",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/",
+      "category": "Addony",
+      "priority": 150,
+      "description": "Krátký popis, co mod dělá.\n\nNa nový řádek se píše \\n. Napiš sem i to, jestli je potřeba nová hra nebo s čím mod nejde dohromady."
+    },
+    {
+      "name": "BaS Weapons Pack",
+      "author": "Autor zbraní",
+      "category": "Zbraně",
+      "priority": 300,
+      "description": "Popis zbraňového modu."
+    },
+    {
+      "name": "NPC Model Pack",
+      "category": "NPC modely",
+      "description": "Bez priority: launcher použije číslo před názvem modu (např. 250- NPC Model Pack), jinak ho dá na konec sekce Optionals. Autor se vezme z názvu modu, pokud je v závorce nebo v [hranatých] závorkách na začátku."
+    },
+    {
+      "name": "C Consciousness Grass and Trees Overhaul – Spring",
+      "title": "Tráva a stromy – jaro",
+      "season": "Jaro",
+      "priority": 10,
+      "description": "Mod sezóny Jaro, skupina Tráva: hráč vybere jednu z možností ve skupině.",
+      "group": "Tráva",
+      "default": true
+    },
+    {
+      "name": "Jiná jarní tráva",
+      "title": "Jiná jarní tráva",
+      "season": "Jaro",
+      "group": "Tráva",
+      "priority": 11,
+      "description": "Druhá možnost ve skupině Tráva."
+    },
+    {
+      "name": "Mod mimo Google Drive",
+      "title": "Mod s vlastním odkazem",
+      "author": "Autor",
+      "category": "Ostatní",
+      "description": "Jen pro mody, které nejsou na Google Drive ani v repozitáři.",
+      "url": "https://example.com/mod.zip",
+      "version": "1.0"
+    }
+  ]
+}

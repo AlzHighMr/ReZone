@@ -1,4 +1,6 @@
-# Re:Zone 1.1
-- PLACEHOLDER
-## Launcher Updaty
-- PLACEHOLDER
+# Re:Zone 1.0 – 2026-09-30
+- Placeholder
+
+
+## Launcher
+- Placeholder
