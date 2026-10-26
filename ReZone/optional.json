@@ -368,7 +368,8 @@
       "image": "https://media.moddb.com/images/downloads/1/247/246657/INVERNO.2.jpg",
       "file": "Project_INVERNO_1.09.11.7z",
       "size": 4476508054,
-      "description": "Kompletní zima do Zóny: sněžení a vánice, namrzající obrazovka, omrzliny a teplota vzduchu na HUD. Obleky, helmy i kůže mutantů v batohu hřejí různě, voda a pivo v batohu zamrzají a rozmrazíš je u ohně. Ohně, bunkry a hřejivé nápoje omrzlinám brání; vše jde vypnout nebo doladit v MCM.\n\nINSTALACE:\n1. Stahuje se z ModDB (4,2 GB). Když ModDB launcheru stažení nepovolí, launcher otevře stránku – stáhni Project_INVERNO_1.09.11.7z do Stažených souborů a zapni sezónu Zima znovu, launcher si soubor najde sám.\n2. Vyžaduje modded exes a DX11 (na DX8 chybí sněhová vrstva terénu). Doporučené Screen Space Shaders.\n3. NENÍ kompatibilní s jinými mody na počasí – při zapnuté zimě je vypni.\n4. Starou verzi INVERNO před aktualizací smaž (launcher to udělá sám).\n5. Po instalaci smaž shader cache (Nastavení » OVĚŘIT SOUBORY » Smazat shader cache).\n6. Problémy s mlhou: vypni v nastavení dynamickou mlhu.\n\nDoporučené nastavení konzole od autora: r2_sun_lumscale 2, r2_sun_lumscale_hemi 1, r2_sun_lumscale_amb 1.85, r2_tonemap on, r2_tonemap_adaptation 3, r2_tonemap_amount 0.7, r2_tonemap_lowlum 0.5, r2_tonemap_middlegray 1.2."
+      "description": "Kompletní zima do Zóny: sněžení a vánice, namrzající obrazovka, omrzliny a teplota vzduchu na HUD. Obleky, helmy i kůže mutantů v batohu hřejí různě, voda a pivo v batohu zamrzají a rozmrazíš je u ohně. Ohně, bunkry a hřejivé nápoje omrzlinám brání; vše jde vypnout nebo doladit v MCM.\n\nJen nabídka – stáhne se, až si ho v sezóně Zima zaškrtneš.\n\nINSTALACE:\n1. Stahuje se z ModDB (4,2 GB). Když ModDB launcheru stažení nepovolí, launcher otevře stránku – stáhni Project_INVERNO_1.09.11.7z do Stažených souborů a zaškrtni ho znovu, launcher si soubor najde sám.\n2. Vyžaduje modded exes a DX11 (na DX8 chybí sněhová vrstva terénu). Doporučené Screen Space Shaders.\n3. NENÍ kompatibilní s jinými mody na počasí – při zapnuté zimě je vypni.\n4. Starou verzi INVERNO před aktualizací smaž (launcher to udělá sám).\n5. Po instalaci smaž shader cache (Nastavení » OVĚŘIT SOUBORY » Smazat shader cache).\n6. Problémy s mlhou: vypni v nastavení dynamickou mlhu.\n\nDoporučené nastavení konzole od autora: r2_sun_lumscale 2, r2_sun_lumscale_hemi 1, r2_sun_lumscale_amb 1.85, r2_tonemap on, r2_tonemap_adaptation 3, r2_tonemap_amount 0.7, r2_tonemap_lowlum 0.5, r2_tonemap_middlegray 1.2.",
+      "optional": true
     },
     {
       "name": "[sulikz] Wearable Devices",
@@ -450,29 +451,21 @@
       "description": "Nahradí hlasy stalkerů všech frakcí hlášky z vývojového buildu 2205 – syrovější, „buildová“ atmosféra. NPC mluví častěji (pokřiky, „sklop zbraň“) a původní hlášky se už nemíchají s buildovými. Patří na konec load orderu (launcher ho tam dá sám)."
     },
     {
-      "name": "[Flooduh] Weapon Parts Overhaul Overhauled",
+      "name": "Weapon Parts Overhaul Overhauled",
       "title": "Weapon Parts Overhaul Overhauled",
       "author": "Flooduh",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/weapon-parts-overhaul-overhauled",
-      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/weapon-parts-overhaul-overhauled",
       "category": "Zbraně",
-      "priority": 276,
       "image": "https://media.moddb.com/images/downloads/1/316/315615/IntrolMDB.gif",
-      "file": "W.P.O.Overhaul_1_0_7.zip",
-      "size": 3302037,
       "description": "Rozšíření Weapon Parts Overhaul (WPO je potřeba): opotřebení dílů zbraní podle karbonu, tření a tepla, ikona mazání na HUD, diagnostika zbraně klávesou L, stav dílů slovně, závady v inventáři a čištění/mazání jedním klikem. Modulární závady (zasekávání závěru, ztráta tlaku plynu, selhání spouště), přehřívání hlavně s kouřem a tetelením vzduchu, zvuky opotřebované zbraně. Volba Standard / Advanced opotřebení, Cinematic režim jen s efekty a od 1.07 limit opravitelnosti dílů. Vše nastavitelné v MCM."
     },
     {
-      "name": "[_Serious] Intro Screen Animation",
-      "title": "Intro Screen Animation",
+      "name": "Intro Screen",
+      "title": "Intro Screen",
       "author": "_Serious, Catspaw",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/intro-screen-animation",
-      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/intro-screen-animation",
       "category": "Vizuál a animace",
-      "priority": 250,
       "image": "https://media.moddb.com/images/downloads/1/289/288732/IntroScreenPreview.jpg",
-      "file": "IntroScreen.zip",
-      "size": 14259,
       "description": "Po načtení hry se na chvíli objeví animovaný úvodní text jako ve filmu: název mapy, čas ve hře, jméno, hodnost a frakce hráče. Rychlost animace jde nastavit v MCM (Default / Slow), klávesa Esc úvod přeskočí. Vyžaduje modded exes."
     }
   ]
