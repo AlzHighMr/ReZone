@@ -145,7 +145,7 @@
       "description": ""
     },
     {
-      "name": "[GSC x ReZone] CoP Assets",
+      "name": "CoP Assets",
       "title": "Call of Pripyat Assets",
       "author": "GSC",
       "category": "Gameplay",
@@ -154,7 +154,7 @@
       "description": ""
     },
     {
-      "name": "[GSC x ReZone] CoP",
+      "name": "CoP",
       "title": "Call of Pripyat",
       "author": "GSC",
       "category": "Gameplay",
@@ -176,7 +176,11 @@
       "category": "Textury",
       "version": "1",
       "url": "https://drive.google.com/file/d/1s15gkBUvxdrwCGfXaTlN71AcrCHVUdbn/view?usp=sharing",
-      "description": "Přepracované textury prostředí v rozlišení 1K – ostřejší a detailnější svět při malé zátěži grafické karty."
+      "description": "Přepracované textury prostředí v rozlišení 1K - ostřejší a detailnější svět při malé zátěži grafické karty.",
+      "group": "IXR",
+      "author": "diolator",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ixrtr",
+      "image": "https://media.moddb.com/images/downloads/1/294/293850/S.T.A.L.K.E.R._Anomaly_23.07.20.jpg"
     },
     {
       "name": "252-Dux's Innumerable Character Kit",
@@ -186,7 +190,9 @@
       "group": "NPC Models",
       "image": "https://media.moddb.com/images/downloads/1/209/208861/modpreview.png",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/dick",
-      "description": "Přidává zhruba 3 500 nových modelů NPC ve stylu původní hry pro všech 12 frakcí i zombifikované stalkery. Obsahuje také vlastní skupiny s vlastní výbavou, obchodníky, nové textury a vylepšené verze některých původních modelů. Nepřidává obleky.\n\nPoznámka: Není určený pro HD modely. Doporučena nová hra (není nutná). Ze skupiny NPC Models může být zapnutý jen jeden."
+      "description": "Přidává zhruba 3 500 nových modelů NPC ve stylu původní hry pro všech 12 frakcí i zombifikované stalkery. Obsahuje také vlastní skupiny s vlastní výbavou, obchodníky, nové textury a vylepšené verze některých původních modelů. Nepřidává obleky.\n\nPoznámka: Není určený pro HD modely. Doporučena nová hra (není nutná). Ze skupiny NPC Models může být zapnutý jen jeden.",
+      "section": "== NPC Models HERE! ==",
+      "after": "[Isthar] Old Dog Sleeves Hand Pack"
     },
     {
       "name": "252-KVMA",
@@ -199,7 +205,9 @@
       "description": "Přepracovává celé frakce – nové textury, vybavení a velké množství nových modelů postav postavených na X-Ray HD Models. Každá frakce má vlastní výstroj a maskování (Svoboda flecktarn a starší NATO výbavu), banditi a samotáři vypadají individuálněji, armáda jednotněji.\n\nPoznámka: Vyžaduje novou hru. Ze skupiny NPC Models může být zapnutý jen jeden.\n\nPři zapnutí se vypne Old Dog Sleeves Hand Pack (vlastní ruce), po vypnutí se zase zapne.",
       "disables": [
         "[Isthar] Old Dog Sleeves Hand Pack"
-      ]
+      ],
+      "section": "== NPC Models HERE! ==",
+      "after": "[Isthar] Old Dog Sleeves Hand Pack"
     },
     {
       "name": "252-GFY 1.06 DXML",
@@ -209,10 +217,133 @@
       "group": "NPC Models",
       "image": "https://media.moddb.com/cache/images/mods/1/62/61560/thumb_620x2000/jwdIUae6W4U.jpg",
       "link": "https://www.moddb.com/mods/gfya-by-nestandart-5443",
-      "description": "NPC modely ve stylu S.T.A.L.K.E.R. 2: nahrazuje téměř všechny modely NPC, technici a medici na základnách mají vlastní vzhled. Většina mutantů je ze S2 a přibývá nový mutant – jelen. Dále nové modely obleků a helem na zemi, HUD ruce, ikony frakcí a některé menší předměty (detektory, šrouby).\n\nPoznámka: Musí být v load orderu úplně dole. Nejde dohromady s DUX's Innumerable a podobnými mody. Ze skupiny NPC Models může být zapnutý jen jeden.\n\nPři zapnutí se vypne Old Dog Sleeves Hand Pack (vlastní ruce), po vypnutí se zase zapne.",
+      "description": "NPC modely ve stylu S.T.A.L.K.E.R. 2: nahrazuje téměř všechny modely NPC, technici a medici na základnách mají vlastní vzhled. Většina mutantů je ze S2 a přibývá nový mutant – jelen. Dále nové modely obleků a helem na zemi, HUD ruce, ikony frakcí a některé menší předměty (detektory, šrouby).\n\nPoznámka: Nejde dohromady s DUX's Innumerable a podobnými mody. Ze skupiny NPC Models může být zapnutý jen jeden.\n\nPři zapnutí se vypne Old Dog Sleeves Hand Pack (vlastní ruce), po vypnutí se zase zapne.",
       "disables": [
         "[Isthar] Old Dog Sleeves Hand Pack"
-      ]
+      ],
+      "section": "== NPC Models HERE! ==",
+      "after": "[Isthar] Old Dog Sleeves Hand Pack"
+    },
+    {
+      "name": "[YuriVernadsky] Misery Based Terrain Textures",
+      "title": "Misery Based Terrain Textures (MBTT)",
+      "author": "YuriVernadsky",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/misery-based-terrain-textures-mbtt-v-10",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/misery-based-terrain-textures-mbtt-v-10",
+      "category": "Terén",
+      "group": "Teren",
+      "image": "https://media.moddb.com/images/downloads/1/262/261741/ss_computador_06-25-24_00-15-12.jpg",
+      "description": "Textury terénu ve stylu Misery – špinavější a pochmurnější hlína, tráva, bláto a kamení. Mod má instalátor s volbami (FOMOD) a vyžaduje Screen Space Shaders. Terén má vždy přednost před texture packy i sezonami."
+    },
+    {
+      "name": "[YuriVernadsky] Misery Based Terrain Textures - RS",
+      "title": "MBTT – Rotten Summer",
+      "author": "YuriVernadsky",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/misery-based-terrain-textures-rotten-summer-mbtt-rs-v-10-fomod",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/misery-based-terrain-textures-rotten-summer-mbtt-rs-v-10-fomod",
+      "category": "Terén",
+      "group": "Teren",
+      "image": "https://media.moddb.com/images/downloads/1/280/279094/ss_computador_10-20-24_22-34-29.jpg",
+      "description": "Varianta MBTT laděná do „shnilého léta“ – vybledlá, nažloutlá tráva a vyprahlá zem. Instalátor s volbami (FOMOD). Terén má vždy přednost před texture packy i sezonami."
+    },
+    {
+      "name": "[FabioConte] Terrain Renovation Project (Léto)",
+      "title": "Terrain Renovation Project – Léto",
+      "author": "FabioConte",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-renovation-summer",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-renovation-summer",
+      "category": "Terén",
+      "group": "Teren",
+      "image": "https://media.moddb.com/images/downloads/1/294/293701/Terrain_Renovation_Project.3.png",
+      "description": "Kompletně nové letní textury terénu ve vysokém rozlišení – sytě zelená tráva, detailní cesty a kameny. Jen DX11; po zapnutí smaž shader cache."
+    },
+    {
+      "name": "[FabioConte] Terrain Renovation Project (Podzim)",
+      "title": "Terrain Renovation Project – Podzim",
+      "author": "FabioConte",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-renovation-fall",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-renovation-fall",
+      "category": "Terén",
+      "group": "Teren",
+      "image": "https://media.moddb.com/images/downloads/1/299/298809/ss_player_10-28-25_17-26-36_l01.1.png",
+      "description": "Podzimní verze Terrain Renovation Project – zlatavá a rezavá tráva, listí a blátivé cesty. Jen DX11; po zapnutí smaž shader cache."
+    },
+    {
+      "name": "[kmack] Terrain Textures Redone",
+      "title": "Terrain Textures Redone",
+      "author": "kmack",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-textures-redone",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/terrain-textures-redone",
+      "category": "Terén",
+      "group": "Teren",
+      "image": "https://media.moddb.com/images/downloads/1/294/293939/5.png",
+      "description": "Přepracované textury terénu všech map v 2K/4K/8K s realistickou hlínou, trávou a štěrkem. Instalátor s volbami (FOMOD), vyžaduje Screen Space Shaders."
+    },
+    {
+      "name": "[0scoar] Rotten Life 3.0",
+      "title": "Rotten Life 3.0",
+      "author": "0scoar",
+      "link": "https://www.moddb.com/addons/rotten-life-30",
+      "url": "https://drive.google.com/file/d/15rCFn7rXCspPAVPfaoQceL00UGRXOymk/view",
+      "version": "1",
+      "category": "Textury",
+      "image": "https://media.moddb.com/images/downloads/1/297/296461/Screenshot_2025-09-06_152437.jpg",
+      "description": "Ponurý, zrezivělý a zatuchlý vzhled celé Zóny – přepracované textury budov, terénu i objektů. Vyžaduje Screen Space Shaders a Enhanced Shaders."
+    },
+    {
+      "name": "[Paul8558] Anomaly Texture Overhaul 5 (4k)",
+      "title": "ATO 5 – 4K",
+      "author": "Paul8558",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ato-5",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ato-5",
+      "category": "Textury",
+      "group": "ATO",
+      "image": "https://media.moddb.com/images/downloads/1/287/286936/anomalydx11avx.exe_Screenshot_20.png",
+      "description": "Největší texture overhaul pro Anomaly v rozlišení 4K – budovy, terén, vozidla i předměty. Stažení 4,6 GB, po instalaci cca 16 GB; doporučeno 8 GB VRAM a víc."
+    },
+    {
+      "name": "[Paul8558] Anomaly Texture Overhaul 5 (2k)",
+      "title": "ATO 5 – 2K",
+      "author": "Paul8558",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ato-5",
+      "url": "https://drive.google.com/file/d/1pLO-QyXnYnjkQCtWIiEifMljeVQMtvox/view",
+      "version": "1",
+      "category": "Textury",
+      "group": "ATO",
+      "image": "https://media.moddb.com/images/downloads/1/287/286936/anomalydx11avx.exe_Screenshot_20.png",
+      "description": "ATO 5 zmenšený na 2K – skoro stejný vzhled jako 4K při mnohem menší zátěži VRAM a disku. Vhodné pro karty se 4–6 GB VRAM."
+    },
+    {
+      "name": "[Raph55] ATO 4 2k Overhaul",
+      "title": "ATO 4 – 2K",
+      "author": "Raph55",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ato-4-2k-overhaul",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ato-4-2k-overhaul",
+      "category": "Textury",
+      "group": "ATO",
+      "image": "https://media.moddb.com/images/downloads/1/281/280291/Screenshot_128.png",
+      "description": "Starší ATO 4 převedený do 2K – lehčí texture pack pro slabší sestavy."
+    },
+    {
+      "name": "[diolator] IXR Texture Rework",
+      "title": "IXR Texture Rework",
+      "author": "diolator",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ixrtr",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ixrtr",
+      "category": "Textury",
+      "group": "IXR",
+      "image": "https://media.moddb.com/images/downloads/1/294/293850/S.T.A.L.K.E.R._Anomaly_23.07.20.jpg",
+      "description": "Plná verze IXR Texture Rework – přepracované textury prostředí ve vysokém rozlišení, věrné původnímu stylu hry."
+    },
+    {
+      "name": "[danila_] Cordon Update",
+      "title": "Cordon Update",
+      "author": "danila_",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/cordon-update",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/cordon-update",
+      "category": "Textury",
+      "image": "https://media.moddb.com/images/downloads/1/261/260820/ss_danya_11-13-23_16-58-48_l01.jpg",
+      "description": "Přepracovaný Kordon – nová geometrie, vegetace a textury celé mapy (5,3 GB). Může se tlouct s mody na trávu a stromy."
     }
   ]
 }

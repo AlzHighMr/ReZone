@@ -34,17 +34,19 @@ Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen
 | `title` | ne | Název v launcheru. Prázdný = název modu bez čísla a autora. |
 | `author` | ne | Autor, zobrazí se v okně INFO. Prázdný = z názvu modu `Mod (Autor)` nebo `[Autor] Mod`. |
 | `link` | ne | Odkaz na stránku modu (ModDB, GitHub…), v okně INFO. |
-| `category` | ne | Kategorie = tlačítko filtru na stránce Volitelné (`Addony`, `Zbraně`, `NPC Models`, `Ostatní` nebo vlastní). Kategorie **`Textury`** = texture pack na stránce TEXTURY (např. IXR Texture Rework). U modů z Drive se doplní sama podle složky, u modů z MO2 podle podsekce. |
+| `category` | ne | Kategorie = tlačítko filtru na stránce Volitelné (`Addony`, `Zbraně`, `NPC Models`, `Ostatní` nebo vlastní). Kategorie **`Textury`** = texture pack na stránce TEXTURY (např. IXR Texture Rework). Kategorie **`Terén`** = textury terénu v sekci TERÉN nad texture packy – terén má **vždy přednost** v load orderu před texture packy i sezonami (launcher ho sám posune). Pro výběr jen jednoho terénu dej všem stejnou `group`. U modů z Drive se doplní sama podle složky, u modů z MO2 podle podsekce. |
 | `season` | ne | `Jaro`, `Léto`, `Podzim` nebo `Zima` – mod patří na stránku SEZÓNY místo Volitelné. Nemusíš vyplňovat, když je mod pod separátorem sezóny nebo ve složce sezóny na Drive. Po stažení se zařadí pod separátor své sezóny (podle `priority`). |
 | `group` | ne | U sezón: skupina variant. U volitelných modů a texture packů: **mody se stejnou skupinou se vylučují** (zapnutí jednoho vypne ostatní, např. `NPC Models`). U sezón: **skupina možností**, např. `Tráva` nebo `Počasí`. Z modů se stejnou sezónou a skupinou má hráč zapnutý vždy jen jeden (výběr kolečkem). Mody bez skupiny jdou zapnout/vypnout zaškrtnutím. |
 | `default` | ne | Jen u sezón: `true` = doporučená možnost ve skupině, zapne se, dokud si hráč nevybere jinou. Bez `default` se vezme první mod ve skupině. |
 | `bundle` | ne | **Balíček**: mody se stejným `bundle` se na stránce Volitelné ukážou jako jeden řádek (název = název balíčku), stahují se a zapínají/vypínají společně. Pořadí v load orderu určuje `priority` (bez ní pořadí záznamů v souboru). Popis stačí vyplnit u jednoho z modů. |
 | `image` / `images` | ne | Obrázek / seznam obrázků do okna INFO (šipkami se přepíná). Přímý odkaz na obrázek (`.jpg`, `.png`, `.webp`), odkaz na soubor na Google Drive (`drive.google.com/file/d/…/view`, sdílený „kdokoli s odkazem“), Imgur (`imgur.com/ID`) nebo Dropbox. Funguje u volitelných modů i sezón. |
 | `disables` | ne | Seznam modů, které se při **zapnutí** tohoto modu vypnou a po jeho **vypnutí** zase zapnou (např. GFY → `["[Isthar] Old Dog Sleeves Hand Pack"]`). Název bez ohledu na číslo na začátku. |
+| `after` | ne | Umístění v MO2: mod se po stažení dá **hned pod** tento mod (přepíše ho), např. `"[Isthar] Old Dog Sleeves Hand Pack"`. Název bez ohledu na číslo. |
+| `section` | ne | Umístění v MO2: na konec sekce pod tímto separátorem, např. `"== NPC Models HERE! =="` (použije se, když `after` v load orderu není). |
 | `gallery` | ne | Odkaz na celou galerii (album Imgur, složka Drive…), v INFO jako odkaz „Galerie“. |
 | `description` | ne | Text v okně INFO. Nový řádek = `\n`. |
 | `priority` | ne | Číslo priority – podle něj se mod po stažení zařadí v sekci Optionals, stejně jako sloupec Priority v MO2: **větší číslo = v MO2 níž = vyšší priorita** (přepíše mody s menším číslem). Mod se dá hned pod poslední mod s menším nebo stejným číslem. Bez `priority` se použije číslo před názvem modu (`250- Addon`), a když ani to není, jde mod na konec sekce Optionals. |
-| `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). |
+| `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). `url` může být i **stránka addonu na ModDB** – launcher stáhne aktuální soubor a verzi hlídá sám (`version` netřeba). Mody s instalátorem s volbami (**FOMOD**) launcher nainstalovat neumí: archiv uloží do MO2 downloads, ať ho hráč nainstaluje v MO2 – lepší je nahrát na Drive už nainstalovanou verzi. |
 
 Priorita se použije, když hráč mod stáhne přes launcher. Mody, které už má, launcher nepřesouvá.
 Čísla nemusí jít po jedné – nech si mezi nimi mezery (100, 150, 200…), ať jde nový mod vložit mezi.
@@ -100,3 +102,9 @@ orderu změní, stačí je přepsat tady.
 `name` nemusí přesně odpovídat názvu archivu na Drive: launcher najde archiv i bez ohledu na
 číslo na začátku, autora, velikost písmen a HTML znaky (`Pizza&#39;s` = `Pizza's`). Když by
 odpovídalo víc archivů, použije se jen přesná shoda.
+
+## Mody bez záznamu (vlastní odkazy hráčů)
+
+Mod, který launcher najde na Google Drive (třeba z odkazu, který si hráč přidal v Nastavení), ale
+v `optional.json` nemá popis ani `priority`, se po stažení dá pod separátor
+**`== Custom addons HERE! ==`**. Hráč tak může stahovat vlastní addony bez úprav na GitHubu.
