@@ -16,7 +16,8 @@
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/dynamic-zone-transitions",
       "category": "Gameplay",
       "priority": 238,
-      "description": "Tento addon přidává dynamické přechody mezi lokacemi podle příběhového pozadí známého z CoP. Některé známé trasy se stanou neprůchodnými nebo příliš nebezpečnými, zatímco jiné se mohou znovu stát bezpečnými.\n\nCestování s pomocí průvodců nebo využívání alternativních, méně frekventovaných tras bude důležitější. Zóna bude blokována anomálními jevy. Kolují zvěsti, že fanatici Monolitu to považují za projev Jeho vůle...\n\nNevědomé vykročení na takovou cestu může zpečetit tvůj osud… Stav tras můžeš na velkou vzdálenost ověřovat pomocí dalekohledu. Informace o stavu tras si navíc mezi sebou předávají i samotní stalkeři.\n\nTento addon je navržen s důrazem na imerzi, a proto na sebe nebude příliš upozorňovat. Měl by působit jako přirozená součást základní hry."
+      "description": "Tento addon přidává dynamické přechody mezi lokacemi podle příběhového pozadí známého z CoP. Některé známé trasy se stanou neprůchodnými nebo příliš nebezpečnými, zatímco jiné se mohou znovu stát bezpečnými.\n\nCestování s pomocí průvodců nebo využívání alternativních, méně frekventovaných tras bude důležitější. Zóna bude blokována anomálními jevy. Kolují zvěsti, že fanatici Monolitu to považují za projev Jeho vůle...\n\nNevědomé vykročení na takovou cestu může zpečetit tvůj osud… Stav tras můžeš na velkou vzdálenost ověřovat pomocí dalekohledu. Informace o stavu tras si navíc mezi sebou předávají i samotní stalkeři.\n\nTento addon je navržen s důrazem na imerzi, a proto na sebe nebude příliš upozorňovat. Měl by působit jako přirozená součást základní hry.",
+      "image": "https://media.moddb.com/images/downloads/1/283/282664/dzt_thumbnail_new.1.gif"
     },
     {
       "name": "240-[Priler] Looting takes time REDUX",
@@ -34,7 +35,8 @@
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/tactical-compass",
       "category": "HUD a rozhraní",
       "priority": 241,
-      "description": "Přidává přehledný kompas na obrazovku s ukazateli úkolů, skrýší, přechodů mezi lokacemi, unikátních NPC a dalších bodů zájmu z PDA. Nabízí dva vizuální styly, nastavitelné ikony, zobrazení vzdálenosti i výškových rozdílů a široké možnosti přizpůsobení přes MCM.\n\nPoznámka: Může snížit výkon (FPS)."
+      "description": "Kompas nahoře na obrazovce (styl S.T.A.L.K.E.R. 2 nebo klasický, přepíná se v MCM) se značkami úkolů, unikátních NPC, míst na spaní, skrýší, přechodů mezi lokacemi, skupin NPC, mrtvol, ohnišť a pump na vodu. U každé kategorie jde nastavit dosah nebo trvalé zobrazení; při pohledu na značku ukáže vzdálenost a šipkou, jestli je cíl nad tebou nebo pod tebou. Klávesa M kompas skryje.\n\nVýkon: ve velkých bitvách a na mapách s hodně NPC může ubrat pár FPS – když ti to vadí, vypni v MCM značky skupin NPC a mrtvol, nebo celý addon.",
+      "image": "https://media.moddb.com/images/downloads/1/278/277556/preview.png"
     },
     {
       "name": "242-[Catspaw] Interaction Dot Marks (Rare Busy Hands Crash)",
@@ -148,27 +150,32 @@
       "name": "CoP Assets",
       "title": "Call of Pripyat Assets",
       "author": "GSC",
-      "category": "Gameplay",
+      "category": "Work in Progress",
       "bundle": "Call of Pripyat",
       "priority": 295,
-      "description": ""
+      "description": "",
+      "image": "https://m.media-amazon.com/images/I/71cPk1JqfLL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       "name": "CoP",
       "title": "Call of Pripyat",
       "author": "GSC",
-      "category": "Gameplay",
+      "category": "Work in Progress",
       "bundle": "Call of Pripyat",
       "priority": 296,
-      "description": "BETA verze portu Call of Pripyat.\n\nBalíček: Call of Pripyat Assets a Call of Pripyat se stahují a zapínají společně (Assets je v load orderu nad hlavním modem)."
+      "description": "WORK IN PROGRESS – BETA verze portu questů z Call of Pripyat do Anomaly. Může obsahovat chyby a nedokončené úkoly.\n\nBalíček: Call of Pripyat Assets a Call of Pripyat se stahují a zapínají společně (Assets je v load orderu nad hlavním modem).",
+      "url": "https://drive.google.com/file/d/1b_3eOC1tI13t9nZRYiL668AJsY-9dxb9/view?usp=sharing",
+      "version": "1",
+      "image": "https://m.media-amazon.com/images/I/71cPk1JqfLL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       "name": "[GeJorge x ReZone] SGM",
       "title": "SGM",
       "author": "GeJorge",
-      "category": "Gameplay",
+      "category": "Work in Progress",
       "priority": 297,
-      "description": "Port různých vedlejších questů z SGM 2.2"
+      "description": "WORK IN PROGRESS – port různých vedlejších questů z SGM 2.2 (Sigerous Mod) do Anomaly. Rozpracované: počítej s chybami a nedokončenými úkoly.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfEY8U1HXoz-v14Yp_BcEl9qN-5RIFiaXbW-BsnZl0AehtZuloR9pTjfY&s=10"
     },
     {
       "name": "IXRTR_1K_FIXED",
@@ -350,6 +357,123 @@
       "description": "Plná verze IXR Texture Rework – přepracované textury prostředí ve vysokém rozlišení, věrné původnímu stylu hry.",
       "file": "IXRTR.1.zip",
       "size": 3573462577
+    },
+    {
+      "name": "[FabioConte] Project INVERNO",
+      "title": "Project: INVERNO (zima)",
+      "author": "FabioConte",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/inverno-fx",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/inverno-fx",
+      "season": "Zima",
+      "image": "https://media.moddb.com/images/downloads/1/247/246657/INVERNO.2.jpg",
+      "file": "Project_INVERNO_1.09.11.7z",
+      "size": 4476508054,
+      "description": "Kompletní zima do Zóny: sněžení a vánice, namrzající obrazovka, omrzliny a teplota vzduchu na HUD. Obleky, helmy i kůže mutantů v batohu hřejí různě, voda a pivo v batohu zamrzají a rozmrazíš je u ohně. Ohně, bunkry a hřejivé nápoje omrzlinám brání; vše jde vypnout nebo doladit v MCM.\n\nINSTALACE:\n1. Stahuje se z ModDB (4,2 GB). Když ModDB launcheru stažení nepovolí, launcher otevře stránku – stáhni Project_INVERNO_1.09.11.7z do Stažených souborů a zapni sezónu Zima znovu, launcher si soubor najde sám.\n2. Vyžaduje modded exes a DX11 (na DX8 chybí sněhová vrstva terénu). Doporučené Screen Space Shaders.\n3. NENÍ kompatibilní s jinými mody na počasí – při zapnuté zimě je vypni.\n4. Starou verzi INVERNO před aktualizací smaž (launcher to udělá sám).\n5. Po instalaci smaž shader cache (Nastavení » OVĚŘIT SOUBORY » Smazat shader cache).\n6. Problémy s mlhou: vypni v nastavení dynamickou mlhu.\n\nDoporučené nastavení konzole od autora: r2_sun_lumscale 2, r2_sun_lumscale_hemi 1, r2_sun_lumscale_amb 1.85, r2_tonemap on, r2_tonemap_adaptation 3, r2_tonemap_amount 0.7, r2_tonemap_lowlum 0.5, r2_tonemap_middlegray 1.2."
+    },
+    {
+      "name": "[sulikz] Wearable Devices",
+      "title": "Wearable Devices",
+      "author": "sulikz, Jeremussy, Wiarubane",
+      "link": "https://github.com/sulikz/st-wearable-devices",
+      "url": "https://github.com/sulikz/st-wearable-devices",
+      "category": "HUD a rozhraní",
+      "priority": 265,
+      "image": "https://raw.githubusercontent.com/sulikz/st-wearable-devices/main/fomod/images/06.%20SECTION%20B.3%20-%20PROMIN%20UI.png",
+      "description": "Nositelná elektronika na předloktí: látkový návlek (bracer) s úchyty, na který si připneš zařízení. Vojenský tablet Promin hlídá zdraví a s rozšiřujícími moduly umí GPS a mapy Zóny, chytré hodinky Vektor mají navigaci k bodům a kompas, k tomu Ulmanovy hodinky z Metra a chemická světla. Zařízení mají vlastní rozhraní, baterie a animace, dají se vyrobit a najít u mrtvých. Příručka autorů: https://www.figma.com/deck/4DU6ARNuRGBRN4s1Zjt77S\n\nStahuje se přímo z oficiálního GitHubu autorů (nejnovější release, aktualizace hlídá launcher sám), instalátor projde launcher automaticky.\n\nPo instalaci SMAŽ SHADER CACHE.\nAddon je dělaný hlavně pro GAMMA – v ReZone jde o zkušební zařazení.\nMáš-li zapnuté GFY (NPC Models) a v exoskeletu vidíš „plovoucí“ rozhraní, nainstaluj addon v MO2 ručně s volbou „Disable Exo UI Screen“.",
+      "images": [
+        "https://raw.githubusercontent.com/sulikz/st-wearable-devices/main/fomod/images/wd_ahhh.png"
+      ]
+    },
+    {
+      "name": "[Ser_Nailus] On The Fly Attachments",
+      "title": "On The Fly Attachments",
+      "author": "Ser_Nailus",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/on-the-fly-attachments",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/on-the-fly-attachments",
+      "category": "Zbraně",
+      "priority": 280,
+      "image": "https://media.moddb.com/images/downloads/1/320/319746/ss_crysis-attachment-menu_3.1.png",
+      "file": "On_The_Fly_Attachments_v0.5.7.zip",
+      "size": 92212,
+      "description": "Výměna příslušenství zbraně za pochodu ve stylu Crysis: zvedni zbraň a přímo na ní uvidíš úchyty. Kolečkem nebo klepnutím přepínáš mířidla, tlumiče, munici, podhlavňové doplňky a lasery – bez inventáře, za chůze (ne ve sprintu). Ukazuje zvětšení optik a počet kusů, nabízí jen to, co na zbraň pasuje. Umí i výměnu typu munice, vybití a s Mags Redux plnění zásobníků.\n\nFunguje s Modular Attachment System i BaS. Výchozí klávesa J (v MCM jde změnit), Shift+S = editor pozice zbraně. Vyžaduje modded exes 2026.02.22 nebo novější."
+    },
+    {
+      "name": "[Schizoid_GREK] Renegade Restoration",
+      "title": "Renegade Restoration",
+      "author": "Schizoid_GREK",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/renegade-restoration",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/renegade-restoration",
+      "category": "Questy",
+      "priority": 290,
+      "image": "https://media.moddb.com/images/downloads/1/317/316571/rr.png",
+      "file": "Renegade_Restoration_V4_4.7z",
+      "size": 129386997,
+      "description": "Vlastní příběhová linie za frakci Renegátů (dvě dějové linky) s novými příběhovými i vedlejšími questy, unikátními postavami, základnami, hlídkami a obchodníky, techniky a průvodci. Přidává otroctví zajatých stalkerů, nájezdy na základny a stanoviště a rozšiřuje vybavení a obleky frakce.\n\nUpozornění: otevřená beta – může obsahovat chyby, pády a rozbité questy. Určeno hlavně pro hru za Renegáty; pokud za ně hrát nechceš, nezapínej ho.\nVyžaduje NOVOU HRU."
+    },
+    {
+      "name": "[GhenTuong] GT - Urban Tactics",
+      "title": "GT – Urban Tactics",
+      "author": "GhenTuong",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/gt-urban-tactics",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/gt-urban-tactics",
+      "category": "Gameplay",
+      "priority": 285,
+      "image": "https://media.moddb.com/images/downloads/1/278/277700/ut.png",
+      "file": "GT_urban_tactics.3.zip",
+      "size": 9787214,
+      "description": "Taktické vybavení: kouřové granáty (M18, RGD-2), které opravdu blokují výhled stalkerům i mutantům, světlice do granátometů (VG-40OP, M662) na osvětlení noci, nástražné dráty (jdou zneškodnit a sebrat, vyrobit v kategorii munice) a silnější demoliční nálož. Ukazatel dráhy hodu granátu (vypnutelný v MCM). Vše prodávají obchodníci a přežije uložení i přechod mezi mapami.\n\nVyžaduje modded exes a MCM. Světlice svítí jen na DX9 a výš."
+    },
+    {
+      "name": "[S.e.m.i.t.o.n.e.] Arrival - Anomalies",
+      "title": "Arrival – Anomalies (Performance hit)",
+      "author": "S.e.m.i.t.o.n.e.",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/arrival-anomalies",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/arrival-anomalies",
+      "category": "Vizuál a animace",
+      "priority": 299,
+      "image": "https://media.moddb.com/images/downloads/1/251/250539/Moddb_GIF_Video.gif",
+      "file": "Arrival.10_-_ARG.7z",
+      "size": 257616223,
+      "description": "Kompletně přepracované anomálie: nový vzhled, zvuky a chování, nové (i skryté) anomálie, přes 700 částicových efektů, poletující semínka a listí, rozšířená encyklopedie anomálií.\n\nPOZOR – VÝKON: jeden z nejnáročnějších addonů vůbec – hodně částic a jednovláknový engine umí na slabších PC výrazně srazit FPS. Když se hra seká, nastav v MCM Anomaly Zone Radius na 130 a Minimum Distance Between Anomalies na 25, nebo addon vypni.\n\nInstalace: vyžaduje modded exes; launcher ho dá v load orderu úplně dolů (nejvyšší priorita). Pokud máš Dynamic Anomalies Overhaul, nejdřív v jeho MCM odstraň staré anomálie, ulož hru a DAO vypni. Doporučená nová hra nebo čistá pozice."
+    },
+    {
+      "name": "[Pipisto667] Stalkers voices from build",
+      "title": "Hlasy stalkerů z buildů",
+      "author": "Pipisto667",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/stalkers-voices-from-build-for-anomaly-153",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/stalkers-voices-from-build-for-anomaly-153",
+      "category": "Audio",
+      "priority": 298,
+      "image": "https://media.moddb.com/images/downloads/1/319/318022/1.jpg",
+      "file": "Build-like_NPCs_voice.7z",
+      "size": 222407424,
+      "description": "Nahradí hlasy stalkerů všech frakcí hlášky z vývojového buildu 2205 – syrovější, „buildová“ atmosféra. NPC mluví častěji (pokřiky, „sklop zbraň“) a původní hlášky se už nemíchají s buildovými. Patří na konec load orderu (launcher ho tam dá sám)."
+    },
+    {
+      "name": "[Flooduh] Weapon Parts Overhaul Overhauled",
+      "title": "Weapon Parts Overhaul Overhauled",
+      "author": "Flooduh",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/weapon-parts-overhaul-overhauled",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/weapon-parts-overhaul-overhauled",
+      "category": "Zbraně",
+      "priority": 276,
+      "image": "https://media.moddb.com/images/downloads/1/316/315615/IntrolMDB.gif",
+      "file": "W.P.O.Overhaul_1_0_7.zip",
+      "size": 3302037,
+      "description": "Rozšíření Weapon Parts Overhaul (WPO je potřeba): opotřebení dílů zbraní podle karbonu, tření a tepla, ikona mazání na HUD, diagnostika zbraně klávesou L, stav dílů slovně, závady v inventáři a čištění/mazání jedním klikem. Modulární závady (zasekávání závěru, ztráta tlaku plynu, selhání spouště), přehřívání hlavně s kouřem a tetelením vzduchu, zvuky opotřebované zbraně. Volba Standard / Advanced opotřebení, Cinematic režim jen s efekty a od 1.07 limit opravitelnosti dílů. Vše nastavitelné v MCM."
+    },
+    {
+      "name": "[_Serious] Intro Screen Animation",
+      "title": "Intro Screen Animation",
+      "author": "_Serious, Catspaw",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/intro-screen-animation",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/intro-screen-animation",
+      "category": "Vizuál a animace",
+      "priority": 250,
+      "image": "https://media.moddb.com/images/downloads/1/289/288732/IntroScreenPreview.jpg",
+      "file": "IntroScreen.zip",
+      "size": 14259,
+      "description": "Po načtení hry se na chvíli objeví animovaný úvodní text jako ve filmu: název mapy, čas ve hře, jméno, hodnost a frakce hráče. Rychlost animace jde nastavit v MCM (Default / Slow), klávesa Esc úvod přeskočí. Vyžaduje modded exes."
     }
   ]
 }
