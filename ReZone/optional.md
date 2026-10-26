@@ -46,6 +46,7 @@ Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen
 | `gallery` | ne | Odkaz na celou galerii (album Imgur, složka Drive…), v INFO jako odkaz „Galerie“. |
 | `description` | ne | Text v okně INFO. Nový řádek = `\n`. |
 | `priority` | ne | Číslo priority – podle něj se mod po stažení zařadí v sekci Optionals, stejně jako sloupec Priority v MO2: **větší číslo = v MO2 níž = vyšší priorita** (přepíše mody s menším číslem). Mod se dá hned pod poslední mod s menším nebo stejným číslem. Bez `priority` se použije číslo před názvem modu (`250- Addon`), a když ani to není, jde mod na konec sekce Optionals. |
+| `file`, `size` | ne | Jen u modů z ModDB: přesný název archivu na ModDB (např. `ATO_5.7z`) a velikost v bajtech. Když ModDB launcheru stažení nepovolí, hráč archiv stáhne v prohlížeči do Stažených souborů a launcher ho tam podle `file` najde (stejně jako Anomaly). |
 | `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). `url` může být i **stránka addonu na ModDB** – launcher stáhne aktuální soubor a verzi hlídá sám (`version` netřeba). Mody s instalátorem s volbami (**FOMOD**) launcher nainstalovat neumí: archiv uloží do MO2 downloads, ať ho hráč nainstaluje v MO2 – lepší je nahrát na Drive už nainstalovanou verzi. |
 
 Priorita se použije, když hráč mod stáhne přes launcher. Mody, které už má, launcher nepřesouvá.
