@@ -112,7 +112,9 @@
       "category": "Zbraně",
       "priority": 171,
       "description": "Přepracovaný model zbraně MP5 s novými animacemi nabíjení a vyprazdňování zásobníků a 3DSS.",
-      "images": ["https://media.discordapp.net/attachments/1499407668366807102/1499416922691862692/Screenshot_2026-04-30_102613.png?ex=6ade11d4&is=6adcc054&hm=a38c02fc3e9230046519d08c0ac9656f27cc186eaf9ee7fa6da75b5646e32bb1&=&format=webp&quality=lossless&width=1536&height=864"]
+      "images": [
+        "https://media.discordapp.net/attachments/1499407668366807102/1499416922691862692/Screenshot_2026-04-30_102613.png?ex=6ade11d4&is=6adcc054&hm=a38c02fc3e9230046519d08c0ac9656f27cc186eaf9ee7fa6da75b5646e32bb1&=&format=webp&quality=lossless&width=1536&height=864"
+      ]
     },
     {
       "name": "[Party50] Modular Attachment System",
@@ -143,29 +145,29 @@
       "description": ""
     },
     {
-      "name": "[GSC x ReZone] Call of Pripyat",
-      "title": "Call of Pripyat",
-      "author": "GSC",
-      "category": "Gameplay",
-      "bundle": "Call of Pripyat",
-      "priority": 295,
-      "description": "BETA verze portu Call of Pripyat"
-    },
-    {
       "name": "[GSC x ReZone] Call of Pripyat Assets",
       "title": "Call of Pripyat Assets",
       "author": "GSC",
       "category": "Gameplay",
       "bundle": "Call of Pripyat",
       "priority": 295,
-      "description": "BETA verze portu Call of Pripyat (Assets)"
+      "description": ""
+    },
+    {
+      "name": "[GSC x ReZone] Call of Pripyat",
+      "title": "Call of Pripyat",
+      "author": "GSC",
+      "category": "Gameplay",
+      "bundle": "Call of Pripyat",
+      "priority": 296,
+      "description": "BETA verze portu Call of Pripyat.\n\nBalíček: Call of Pripyat Assets a Call of Pripyat se stahují a zapínají společně (Assets je v load orderu nad hlavním modem)."
     },
     {
       "name": "[GeJorge x ReZone] SGM",
       "title": "SGM",
       "author": "GeJorge",
       "category": "Gameplay",
-      "priority": 296,
+      "priority": 297,
       "description": "Port různých vedlejších questů z SGM 2.2"
     }
   ]
