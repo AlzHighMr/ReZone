@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<!-- Čtvrtá revize: 8.10.2009 | 12:33 -->
+<string_table>
+<string id="jup_a10_actor_agree_back_vano_duties_name">
+<text>Dluhy: Předání peněz</text>
+</string>
+<string id="jup_a10_actor_agree_back_vano_duties_text">
+<text>Váňa potřebuje banditům splatit dluh, ale bojí se tam ukázat. Proto mi dal peníze a požádal mě, jestli bych mohl tuhle nepříjemnou situaci vyřešit místo něho.</text>
+</string>
+<string id="jup_a10_actor_back_vano_duties_name">
+<text>Dluhy: Návrat k Váňovi</text>
+</string>
+<string id="jup_a10_actor_back_vano_duties_text">
+<text>V tuhle chvíli už zůstává jenom jedno, a to informovat Váňu.</text>
+</string>
+<string id="jup_a10_kill_all_bandit_name">
+<text>Dluhy: Eliminace banditů</text>
+</string>
+<string id="jup_a10_kill_all_bandit_text">
+<text>Vyrovnání s bandity se vyostřilo. Bude potřeba všechny zabít.</text>
+</string>
+<string id="jup_a12_free_prisoner_get_reward_name">
+<text>Rukojmí: Vyzvednutí odměny</text>
+</string>
+<string id="jup_a12_free_prisoner_get_reward_text">
+<text>Mitaj byl propuštěn. Měl bych jít zpátky do baru a říct si o odměnu.</text>
+</string>
+<string id="jup_a12_free_prisoner_name">
+<text>Rukojmí: Osvobození Mitaje</text>
+</string>
+<string id="jup_a12_free_prisoner_not_ready_name">
+<text>Rukojmí: Rozhovor s Medvědem</text>
+</string>
+<string id="jup_a12_free_prisoner_not_ready_text">
+<text>Je potřeba si promluvit s Medvědem dřív, než banditi popraví Mitaje.</text>
+</string>
+<string id="jup_a12_free_prisoner_power_name">
+<text>Rukojmí: Osvobození Mitaje hrubou silou</text>
+</string>
+<string id="jup_a12_free_prisoner_power_text">
+<text>Budu muset zabít bandity, kteří zajali Mitaje.</text>
+</string>
+<string id="jup_a12_free_prisoner_power_wait_name">
+<text>Rukojmí: Setkání se stalkery</text>
+</string>
+<string id="jup_a12_free_prisoner_power_wait_text">
+<text>Stalkeři se vydali osvobodit jejich vězněného přítele Mitaje. Setkám se s nimi na smluveném místě a pomůžu jim.</text>
+</string>
+<string id="jup_a12_free_prisoner_ransom_name">
+<text>Rukojmí: Výše výkupného</text>
+</string>
+<string id="jup_a12_free_prisoner_ransom_text">
+<text>Budu se muset dohodnout s velitelem banditů na podmínkách, týkajících se propuštění Mitaje.</text>
+</string>
+<string id="jup_a12_free_prisoner_text">
+<text>Rád bych osvobodil Mitaje.</text>
+</string>
+<string id="jup_a12_guide_prisoner_name">
+<text>Rukojmí: Propuštění Mitaje</text>
+</string>
+<string id="jup_a12_guide_prisoner_text">
+<text>V táboře je příliš nebezpečné se na něčem dohadovat - doprovodím Mitaje mimo oblast.</text>
+</string>
+<string id="jup_a12_talk_with_prisoner_name">
+<text>Rukojmí: Rozhovor s Mitajem</text>
+</string>
+<string id="jup_a12_talk_with_prisoner_text">
+<text>Mitaj je relativně v bezpečí. Bylo by vhodné si s ním ještě promluvit.</text>
+</string>
+<string id="jup_a9_way_to_pripyat_tech_name">
+<text>Cesta do Pripjatě: Rozhovor s technikem</text>
+</string>
+<string id="jup_a9_way_to_pripyat_tech_text">
+<text>Z dokumentů je jasně patrné, že pod továrnou Jupiter vede podzemní cesta přímo do Pripjatě. Cesta je bohužel zamořená radioaktivním plynem a bez proudu. Je proto nutné zjistit, jak do tunelu znovu zavést elektřinu a otevřít vstupní bránu. </text>
+</string>
+<string id="jup_b10_ufo_memory_at_text">
+<text>Paměťový modul už je v rukou profesionála. Teď už zbývá jenom počkat si, než Ašot získá přístup k informacím.</text>
+</string>
+<string id="jup_b10_ufo_memory_name">
+<text>Průzkum: Odemčení paměťového modulu</text>
+</string>
+<string id="jup_b10_ufo_memory_nitro_name">
+<text>Průzkum: Donesení modulu Ašotovi</text>
+</string>
+<string id="jup_b10_ufo_memory_novikov_name">
+<text>Průzkum: Donesení modulu Novikovovi</text>
+</string>
+<string id="jup_b10_ufo_memory_repaired_by_nitro_text">
+<text>Ašot se dostal k informacím z paměťového modulu. Zajdu za ním a budu se snažit zjistit, co v něm vlastně vůbec bylo.</text>
+</string>
+<string id="jup_b10_ufo_memory_repaired_by_novikov_text">
+<text>Novikov získal přístup k vnitřní paměti. Je potřeba vzít celý modul k prozkoumání. </text>
+</string>
+<string id="jup_b10_ufo_memory_started_text">
+<text>Podařilo se mi získat modul z jednoho zvláštního letounu. K získání informací je však nutné dostat se k vnitřní paměti.</text>
+</string>
+<string id="jup_b10_ufo_memory_wait_name">
+<text>Průzkum: Čekání</text>
+</string>
+<string id="jup_b16_oasis_art_name">
+<text> Oáza: Hledání důkazů</text>
+</string>
+<string id="jup_b16_oasis_art_text">
+<text>Nález Oázy: Tohle místo skutečně má léčivé schopnosti. Teď už jenom zbývá najít důkazy, které by se mohly hodit vědcům.</text>
+</string>
+<string id="jup_b16_oasis_artifact_back_name">
+<text>Oáza: Informování vědců</text>
+</string>
+<string id="jup_b16_oasis_artifact_back_text">
+<text>Nález Oázy: Tohle místo skutečně má léčivé schopnosti. Je potřeba najít a přinést artefakt k vědcům na prozkoumání.</text>
+</string>
+<string id="jup_b16_oasis_name">
+<text> Oáza: Boření mýtů</text>
+</string>
+<string id="jup_b16_oasis_text">
+<text>Ozersky, jeden z vědeckých pracovníků, mě informoval o oblasti zvané Oáza. Pokud bych teď legendám věřil, měl by se v ní nacházet zdroj léčivé vody. Bohužel nikdo neví, jestli je Oáza skutečná, nebo jenom výmysl.</text>
+</string>
+<string id="jup_b19_agreed_to_go_name">
+<text>Kopači: Průnik do vesnice</text>
+</string>
+<string id="jup_b19_agreed_to_go_text">
+<text>Strejda Jar potřebuje doprovodit ke staré vesnici Kopači.</text>
+</string>
+<string id="jup_b19_destroy_mercs_name">
+<text>Kopači: Likvidace žoldáků</text>
+</string>
+<string id="jup_b19_destroy_mercs_text">
+<text>Vypadá to, že Jar má problém se skupinou žoldáků. Postarám se o ně.</text>
+</string>
+<string id="jup_b19_following_yar_name">
+<text>Kopači: Následování Jara</text>
+</string>
+<string id="jup_b19_following_yar_text">
+<text>Strejda Jar mě požádal, abych zůstal u něj a nedělal rozruch.</text>
+</string>
+<string id="jup_b19_talk_to_yar_name">
+<text>Kopači: Rozhovor s Jarem</text>
+</string>
+<string id="jup_b19_talk_to_yar_text">
+<text>Žoldáci jsou mrtví. Teď už si stačí promluvit s Jarem. </text>
+</string>
+<string id="jup_b1_bring_art_back_name">
+<text>Psionická aktivita: Informování vědců</text>
+</string>
+<string id="jup_b1_bring_art_back_text">
+<text>S profesorem Hermanem jsem se dohodl na přinešení vzorku artefaktu, který by měl mít na svědomí zvýšenou kolísavou psionickou aktivitu v oblasti.</text>
+</string>
+<string id="jup_b1_get_art_name">
+<text>Psionická aktivita: Zdroj záření</text>
+</string>
+<string id="jup_b1_get_art_text">
+<text>Prozkoumám tunel a pokusím se objevit zdroj zvýšeného záření. Vědci věří, že záření má na svědomí zvláštní a dosud neprozkoumaný artefakt.</text>
+</string>
+<string id="jup_b1_join_squad_name">
+<text>Psionická aktivita: Setkání s Topolem</text>
+</string>
+<string id="jup_b1_join_squad_text">
+<text>Topol se zajímá o průzkum tunelu se zvýšenou psionickou aktivitou. Možná by mi k tomu mohl říct víc.</text>
+</string>
+<string id="jup_b1_meet_squad_name">
+<text>Psionická aktivita: Rozhovor s Topolem</text>
+</string>
+<string id="jup_b1_meet_squad_text">
+<text>Přidám se k Topolovi a společně prozkoumáme tunel se zvýšeným psionickým zářením. Jak už bylo dohodnuto, zbytek jeho družiny bude zajišťovat palebnou podporu. Úkolem stále zůstává najít artefakt a přinést ho vědcům na prozkoumání.</text>
+</string>
+<string id="jup_b200_tech_materials_brought_all_text">
+<text>Ašot po mě chce najít a dodat všechny součástky.</text>
+</string>
+<string id="jup_b200_tech_materials_brought_some_text">
+<text>Ašot potřebuje elektronické součástky. Je možné zajít k němu a zeptat se ho na podrobnosti, nebo pátrat na vlastní pěst. </text>
+</string>
+<string id="jup_b200_tech_materials_name">
+<text>Materiály: Donesení součástek Ašotovi</text>
+</string>
+<string id="jup_b200_tech_materials_text">
+<text>Ašot nutně potřebuje všechny elektronické součástky. Podle jeho informací bych měl zkusit hledat v okolí staré cementárny.</text>
+</string>
+<string id="jup_b202_actor_items_stolen_01_name">
+<text>Krádež: Pátrání po zlodějovi</text>
+</string>
+<string id="jup_b202_actor_items_stolen_01_text">
+<text>Zeptám se stalkerů v železniční stanici Janov, jestli náhodou neviděli podezřelou osobu, která mi mohla ukrást všechnu výbavu.</text>
+</string>
+<string id="jup_b202_actor_items_stolen_02_name">
+<text>Krádež: Hledání stop</text>
+</string>
+<string id="jup_b202_actor_items_stolen_02_text">
+<text>Měl bych zkontrolovat všechny stopy, směřující k odhalení zlodějů. Je možné, že jsou pořád někde poblíž.</text>
+</string>
+<string id="jup_b202_actor_items_stolen_03_name">
+<text>Krádež: Vyzvednutí výbavy</text>
+</string>
+<string id="jup_b202_actor_items_stolen_03_text">
+<text>Všechny nakradené věci by se měly nacházet v tajné skrýši pod kanalizačním poklopem.</text>
+</string>
+<string id="jup_b206_anomalous_grove_get_plant_name">
+<text>Neznámá rostlina: Přinést vzorek vegetace</text>
+</string>
+<string id="jup_b206_anomalous_grove_get_plant_text">
+<text>Na okraji anomálie byla nedávno pozorována nová forma vegetace. Profesor Ozersky mě proto požádal o přinešení vzorku rostliny.</text>
+</string>
+<string id="jup_b206_anomalous_grove_have_plant_name">
+<text>Neznámá rostlina: Donesení vzorku</text>
+</string>
+<string id="jup_b206_anomalous_grove_have_plant_text">
+<text>Musím získat vzorek rostliny, kterou chce prostudovat profesor Ozersky. Výměnou za to se Ozersky pokusí přesvědčit Hermana, aby pro mě uvolnil jednu vědeckou vestu.</text>
+</string>
+<string id="jup_b208_burers_hunt_kill_burers_name">
+<text>Lovecká sezóna: Likvidace mutantů</text>
+</string>
+<string id="jup_b208_burers_hunt_kill_burers_text">
+<text>Skupina stalkerů našla v tunelech severně od továrny Jupiter dosud neznámé mutanty. Měl bych to tam jít zkontrolovat a mutanty zabít.</text>
+</string>
+<string id="jup_b208_burers_hunt_take_reward_name">
+<text>Lovecká sezóna: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b208_burers_hunt_take_reward_text">
+<text>Mutanti v tunelu byli zabiti. Jdu se ohlásit na stalkerskou základnu a vyzvednout si odměnu.</text>
+</string>
+<string id="jup_b209_hypotheses_1_name">
+<text>Hypotéza: Umístění skeneru</text>
+</string>
+<string id="jup_b209_hypotheses_1_text">
+<text>K ověření Ozerskyho teorie je nutné umístit skener do centra anomálie.</text>
+</string>
+<string id="jup_b209_hypotheses_2_name">
+<text>Hypotéza: Čekání na konec experimentu</text>
+</string>
+<string id="jup_b209_hypotheses_2_text">
+<text>Skenery byly přepnuty do aktivního režimu. Teď už zbývá si jenom počkat, než vědci zajistí dostatek informací pro potvrzení svých teorií.</text>
+</string>
+<string id="jup_b209_hypotheses_3_name">
+<text>Hypotéza: Umístění skeneru</text>
+</string>
+<string id="jup_b209_hypotheses_3_text">
+<text>Vědcům se podařilo zajistit dostatek dat k ověření teorie. Teď vezmu skener zpátky.</text>
+</string>
+<string id="jup_b209_hypotheses_4_name">
+<text>Hypotéza: Vrácení skeneru</text>
+</string>
+<string id="jup_b209_hypotheses_4_text">
+<text>Skener je zpátky u profesora - teď už by měl mít dostatek informací k potvrzení svojí teorie.</text>
+</string>
+<string id="jup_b211_kill_bloodsuckers_name">
+<text>Lovecká sezóna: Likvidace upírů</text>
+</string>
+<string id="jup_b211_kill_bloodsuckers_text">
+<text>Poblíž staré cementárny se usadila smečka bažinných upírů. Měl bych se jich zbavit dřív, než vylezou z bažiny a budou chtít někoho zabít. </text>
+</string>
+<string id="jup_b211_take_reward_name">
+<text>Lovecká sezóna: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b211_take_reward_text">
+<text>Hejno bažinných upírů bylo zničeno. Teď už jen stačí dojít si pro odměnu.</text>
+</string>
+<string id="jup_b212_jupiter_kill_chimera_name">
+<text>Noční lov: Likvidace Chiméry</text>
+</string>
+<string id="jup_b212_jupiter_kill_chimera_text">
+<text>Chiméra je krvežíznivý predátor se svým vlastním denním režimem. Není o ní známo příliš informací, ale jedno je jisté - musí být zneškodněna.</text>
+</string>
+<string id="jup_b212_jupiter_tell_animalboy_about_chimera_name">
+<text>Noční lov: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b212_jupiter_tell_animalboy_about_chimera_text">
+<text>Chiméra je mrtvá a společně s ní jsem pomstil Lišákovu smrt. Teď zajdu ke stalkerům do Janova.</text>
+</string>
+<string id="jup_b217_get_tools_1_2_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_1_2_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_get_tools_1_3_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_1_3_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_get_tools_1_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_1_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_get_tools_2_3_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_2_3_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_get_tools_2_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_2_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_get_tools_3_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_get_tools_3_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b217_mechanic_toolkit_search_name">
+<text>Nástroje: Výbava pro Ašota</text>
+</string>
+<string id="jup_b217_mechanic_toolkit_search_text">
+<text>Ašot mě požádal o nalezení dvou sad s výbavou: Jedna je pro precizní práci, druhá pro hrubou. Za donešení mi nedá odměnu, ale na oplátku si u něj budu moci lépe vylepšovat výzbroj.</text>
+</string>
+<string id="jup_b218_actor_outfit_name">
+<text> Dlouhá cesta: Hledání obleku s uzavřeným systémem dýchání</text>
+</string>
+<string id="jup_b218_actor_outfit_text">
+<text>K překonání podzemního tunelu vedoucího do Pripjatě potřebuju kombinézu s uzavřeným dýchacím systémem a pokročilou ochranou vůči chemikáliím.</text>
+</string>
+<string id="jup_b218_monolith_guide_to_zulus_name">
+<text> Dlouhá cesta: Rozhovor s Gaunerem </text>
+</string>
+<string id="jup_b218_monolith_guide_to_zulus_text">
+<text>V tuto chvíli je nutné zformovat novou skupinu. Zulus se pochopitelně nechce do Pripjatě vydávat jen s jedním společníkem.</text>
+</string>
+<string id="jup_b218_monolith_name">
+<text> Dlouhá cesta: Pár slov o ochranné vestě</text>
+</string>
+<string id="jup_b218_monolith_text">
+<text>K překonání podzemního tunelu vedoucího do Pripjatě potřebuju kombinézu s uzavřeným dýchacím systémem a pokročilou ochranou vůči chemikáliím.</text>
+</string>
+<string id="jup_b218_pripyat_group_gathering_name">
+<text> Dlouhá cesta: Nezbytné vybavení</text>
+</string>
+<string id="jup_b218_pripyat_group_gathering_text">
+<text>Ašot je schopen otevřít bránu k Pripjati, ale bez ochranné vesty a pár dalších společníků je nemožné se do podzemí dostat. Tenhle problém může vyřešit Zulus - zajdu za ním a dohodnu se na vhodných členech do skupiny.</text>
+</string>
+<string id="jup_b218_pripyat_group_zulus_talk_name">
+<text>Dlouhá cesta: Pár slov o Pripjati</text>
+</string>
+<string id="jup_b218_pripyat_group_zulus_talk_text">
+<text>Ašot je schopen otevřít bránu k Pripjati, ale odmítl vydat se do továrny Jupiter bez ochranné vesty a bez pár dalších společníků. Tenhle problém může vyřešit Zulus - zajdu za ním a dohodnu se na vhodných členech do skupiny.</text>
+</string>
+<string id="jup_b218_soldier_guide_to_zulus_name">
+<text> Dlouhá cesta: Pár slov o Sokolovi</text>
+</string>
+<string id="jup_b218_soldier_guide_to_zulus_text">
+<text>Sokolov souhlasil, že mi pomůže s průchodem skrz tunel do Pripjati - od vědců je slíbená protichemická vesta, takže už stačí jenom dojít za Zulusem a říct mu o dalším společníkovi. </text>
+</string>
+<string id="jup_b218_soldier_name">
+<text> Dlouhá cesta: Vesta pro Sokolova</text>
+</string>
+<string id="jup_b218_soldier_talk_to_scientist_name">
+<text> Dlouhá cesta: Protichemická vesta pro Sokolova</text>
+</string>
+<string id="jup_b218_soldier_talk_to_scientist_text">
+<text>Sokolov od vědců potřebuje protichemický oblek, ale profesor Herman se nechce žádného vzdát. Zkusím si promluvit s Ozerskym. Tenhle vědec je mnohem vstřícnější a možná by mohl Hermana přesvědčit.</text>
+</string>
+<string id="jup_b218_soldier_tell_outfit_name">
+<text> Dlouhá cesta: Vesta pro Sokolova</text>
+</string>
+<string id="jup_b218_soldier_tell_outfit_text">
+<text>Ozersky se na důkaz díků za nalezení vzorku místní vegetace rozhodl dát mi za odměnu protichemickou vestu pro Sokolova. Problémem je však profesor Herman.</text>
+</string>
+<string id="jup_b218_soldier_text">
+<text>Tunel vedoucí do Pripjati je k mé nelibosti zaplněn kysličníkem uhličitým s neznámou příměsí. Vydat se skrz něj sám je neuskutečnitelné, proto je potřeba najít pro sebe vestu s uzavřeným dýchacím systémem - to samé i pro Sokolova.</text>
+</string>
+<string id="jup_b218_stalker_bring_money_name">
+<text> Dlouhá cesta: Peníze pro Váňu</text>
+</string>
+<string id="jup_b218_stalker_bring_money_text">
+<text>Oblek s uzavřeným dýchacím systémem, který je teď potřeba na průchod zamořeným tunelem, mají u sebe banditi jako splátku Váňova dluhu. Teď je však potřeba sehnat 3000 rublů a oblek vykoupit zpátky.</text>
+</string>
+<string id="jup_b218_stalker_guide_to_zulus_name">
+<text>Dlouhá cesta: Rozhovor s Váňou</text>
+</string>
+<string id="jup_b218_stalker_guide_to_zulus_text">
+<text>Váňa souhlasil s cestou do Pripjati. Teď už stačí jen informovat Zuluse.</text>
+</string>
+<string id="jup_b218_stalker_name">
+<text> Dlouhá cesta: Pár slov o obleku</text>
+</string>
+<string id="jup_b218_stalker_text">
+<text>Tunel, vedoucí do Pripjatě, je k mé nelibosti zaplněn kysličníkem uhličitým s neznámou příměsí. Vydat se skrz něj sám je neuskutečnitelné, proto je potřeba najít pro sebe vestu s uzavřeným dýchacím systémem - to samé i pro Váňu.</text>
+</string>
+<string id="jup_b25_accuse_flint_end_text">
+<text>Flint, jak se konečně ukázalo, byl dřív Straka - přesně ten Straka, který zradil stalkery v Zatonu. Půjdu to ohlásit Gontovi.</text>
+</string>
+<string id="jup_b25_accuse_flint_first_text">
+<text>Flint se jako obvykle hrozně přechvaluje a mluví o věcech, co se nikdy nestaly. Bylo by vhodné donutit ho říct pravdu.</text>
+</string>
+<string id="jup_b25_accuse_flint_name">
+<text>Cizí zásluhy: Flintovy lži</text>
+</string>
+<string id="jup_b25_accuse_flint_second_text">
+<text>Flint s nebetyčnou radostí přisuzuje výsledky cizí práce sobě. Bylo by záhodno mu trochu spravit pohled na svět a dění v něm.</text>
+</string>
+<string id="jup_b25_accuse_flint_third_text">
+<text>Flint už tou věčnou lží překročil hranice - je potřeba si s ním promluvit a říct mu, jak se věci skutečně odehrály. </text>
+</string>
+<string id="jup_b25_senya_accuse_flint_text">
+<text>Flint (alias Straka) je člověk, zodpovědný za problémy stalkerů ze Skadovsku. Je potřeba za nimi zajít a všechno jim říct.</text>
+</string>
+<string id="jup_b32_get_scanners_task_name">
+<text>Studium anomálií: Zisk skenerů</text>
+</string>
+<string id="jup_b32_get_scanners_task_text">
+<text>Zajdu si k Novikovi pro skenery a rozmístím je do středu anomálií. Profesor Herman chce s jejich pomocí sesbírat co nejvíc užitečných informací nejen o anomáliích samotných, ale i o tvořících se artefaktech.</text>
+</string>
+<string id="jup_b32_task_name">
+<text>Studium anomálií: Umístění skenerů</text>
+</string>
+<string id="jup_b32_task_reward_name">
+<text>Studium anomálií: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b32_task_reward_text">
+<text>Vědci mi za umístění skenerů do anomálií slíbili odměnu. Profesor Herman může s jejich pomocí shromažďovat data potřebná k výzkumu.</text>
+</string>
+<string id="jup_b32_task_text">
+<text>Umístím skenery do středu anomálií - díky nim může profesor Herman shromažďovat veškerá potřebná data a zjistit tak nové informace nejen o anomáliích, ale i o tvořících se artefaktech.</text>
+</string>
+<string id="jup_b43_bring_fuzz_kolobok_name">
+<text>Smlouva s vědci: Artefakt pro Garika.</text>
+</string>
+<string id="jup_b43_bring_fuzz_kolobok_text">
+<text>Garik by rád uzavřel smlouvu s vědci, ale k tomu potřebuje artefakt Koblížek. Zkusím mu nějaký obstarat.</text>
+</string>
+<string id="jup_b43_bring_mincer_meat_name">
+<text>Smlouva s vědci: Artefakt pro Garika</text>
+</string>
+<string id="jup_b43_bring_mincer_meat_text">
+<text>Garik by rád uzavřel smlouvu s vědci, ale k tomu potřebuje artefakt Masová kulička. Zkusím mu nějaký obstarat.</text>
+</string>
+<string id="jup_b43_contract_started_name">
+<text>Smlouva s vědci: Artefakty pro Garika</text>
+</string>
+<string id="jup_b43_contract_started_text">
+<text>Garik by rád uzavřel smlouvu s vědci, ale k tomu potřebuje artefakt Koblížek a Masová kulička. Zkusím mu je obstarat.</text>
+</string>
+<string id="jup_b43_thanks_for_2_artifacts_name">
+<text>Smlouva s vědci: Nález artefaktů</text>
+</string>
+<string id="jup_b43_thanks_for_2_artifacts_text">
+<text>Garik donesl vědcům oba artefakty a společně tak mohli uzavřít smlouvu.</text>
+</string>
+<string id="jup_b46_duty_founder_pda_name">
+<text>Historie družiny: Vrácení PDA k veliteli Povinnosti</text>
+</string>
+<string id="jup_b46_duty_founder_pda_text">
+<text>Zakladatel frakce Povinnost zemřel v anomálii - jak se ukázalo, měl někde svoje osobní PDA. Zkusím ho najít a vrátit ho Šulgovi, veliteli Povinnosti.</text>
+</string>
+<string id="jup_b46_spatial_bubble_name">
+<text>Anomální aktivita: Průzkum oblasti s modifikovaným detektorem</text>
+</string>
+<string id="jup_b46_spatial_bubble_text">
+<text>Skenery ve vědecké laboratoři zachytily podivnou aktivitu poblíž severního tunelu. Měl bych tam zajít a detektorem Svarog prozkoumat, co se to tam vlastně děje.</text>
+</string>
+<string id="jup_b47_bunker_guards_01_name">
+<text>Ochrana vědců: Hledání spolehlivých stalkerů</text>
+</string>
+<string id="jup_b47_bunker_guards_01_text">
+<text>Vědecká laboratoř je v tuto chvíli bez ochrany. Měl bych najít spolehlivé stalkery a poslat je k vědcům.</text>
+</string>
+<string id="jup_b47_bunker_guards_02_name">
+<text>Ochrana vědců: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b47_bunker_guards_02_text">
+<text>Našel jsem stalkery, ochotné chránit vědeckou laboratoř. Teď už je nutné jenom zajít za Hermanem a domluvit se na výši odměny.</text>
+</string>
+<string id="jup_b47_jupiter_products_01_name">
+<text>Nejnovější vývoj: Dokumenty z továrny</text>
+</string>
+<string id="jup_b47_jupiter_products_01_text">
+<text>Profesora Hermana zajímají nejnovější poznatky ze staré továrny Jupiter. Je proto potřeba najít v administračním křídle továrny všechny náležité dokumenty.</text>
+</string>
+<string id="jup_b47_jupiter_products_02_name">
+<text>Nejnovější vývoj: Donesení dokumentů</text>
+</string>
+<string id="jup_b47_jupiter_products_02_text">
+<text>Nalezené písemnosti objasnily jen to, že veškerá technická dokumentace byla přemístěná mimo závod. Informuju profesora Hermana alespoň o tomhle.</text>
+</string>
+<string id="jup_b47_jupiter_products_03_name">
+<text>Nejnovější vývoj: Tajná dokumentace a Čerňákovo PDA</text>
+</string>
+<string id="jup_b47_jupiter_products_03_text">
+<text>Během hledání dokumentace do továrny vniklo pár žoldáků. Podle záznamů v PDA jejich velitele, žoldáka Čerňáka, bylo hledání dokumentace pozastaveno. V PDA se dál uvádí, že veškerá technická dokumentace byla přesunuta mimo oblast továrny. Doufám, že Hermana bude zajímat alespoň tahle dokumentace společně s žoldákovým PDA.</text>
+</string>
+<string id="jup_b4_monolith_squad_help_name">
+<text>Přeživší Monolit: Informování stalkerů v Janově</text>
+</string>
+<string id="jup_b4_monolith_squad_help_text">
+<text>Jedna ze skupin frakce Monolit nutně hledá úkryt před blížícím se blowoutem. Napadlo je, že by mohli využít prostoru ve stanici Janov. Musí s tím však souhlasit i přítomní stalkeři.</text>
+</string>
+<string id="jup_b4_stalkers_come_duty_text">
+<text>Stalkeři souhlasí s poskytnutím přístřeší pro jednu ze skupin frakce Monolit, ale pouze pod podmínkou, že se připojí ke Svobodě. Pokud na nabídku Monolit přistoupí, nic jim nebrání se v Janově ukrýt.</text>
+</string>
+<string id="jup_b4_stalkers_come_freedom_text">
+<text>Stalkeři souhlasí s poskytnutím přístřeší pro jednu ze skupin frakce Monolit, ale pouze pod podmínkou, že se připojí ke Svobodě. Pokud na nabídku Monolit přistoupí, nic jim nebrání se v Janově ukrýt.</text>
+</string>
+<string id="jup_b4_stalkers_come_name">
+<text>Přeživší Monolit: Hledání rekrutů v řadách Monolitu</text>
+</string>
+<string id="jup_b6_anom_1_guard_name">
+<text>Studium anomálií: Ochrana stalkerů</text>
+</string>
+<string id="jup_b6_anom_1_guard_text">
+<text>Zdá se, že stalkeři s detektory přitahují pozornost mutantů. Je proto nutné stalkery chránit po celou dobu měření.</text>
+</string>
+<string id="jup_b6_anom_2_guard_name">
+<text>Studium anomálií: Ochrana stalkerů</text>
+</string>
+<string id="jup_b6_anom_2_guard_text">
+<text>Zdá se, že stalkeři s detektory přitahují pozornost zombií. Je proto nutné stalkery chránit po celou dobu měření.</text>
+</string>
+<string id="jup_b6_get_reward_name">
+<text>Studium anomálií: Rozhovor s Hermanem</text>
+</string>
+<string id="jup_b6_get_reward_text">
+<text>Tak, měření je u konce. Informuju vědce a vyzvednu si slíbenou odměnu. </text>
+</string>
+<string id="jup_b6_get_to_anomal_place_name">
+<text>Studium anomálií: Rozhovor se stalkery</text>
+</string>
+<string id="jup_b6_get_to_anomal_place_text">
+<text>Promluvím si se stalkery, kteří mají provést měření. Pak se rozhodnu, kam se vypravíme.</text>
+</string>
+<string id="jup_b6_travel_home_name">
+<text>Studium anomálií: Rozhovor se stalkery</text>
+</string>
+<string id="jup_b6_travel_home_text">
+<text>Všechna měření jsou u konce. Teď půjdu zpátky do laboratoře a informuju vědce.</text>
+</string>
+<string id="jup_b6_travel_name">
+<text>Studium anomálií: Rozhovor se stalkery</text>
+</string>
+<string id="jup_b6_travel_text">
+<text>Měření je u konce. Zajdu si promluvit se stalkery a vydám se s nimi na zbývající pozici.</text>
+</string>
+<string id="jup_b6_watch_topol_squad_six_name">
+<text>Studium anomálií: Ochrana stalkerů</text>
+</string>
+<string id="jup_b6_watch_topol_squad_six_text">
+<text>Herman má pro mě další úkol: Krýt stalkery, než se jim podaří provést měření anomálií.</text>
+</string>
+<string id="jup_b8_heli_4_crash_name">
+<text>«SCAT-4»: Průzkum místa dopadu</text>
+</string>
+<string id="jup_b8_heli_4_crash_name_2">
+<text>«SCAT-4»: Objasnění příčiny vyhořelé palubní elektroniky</text>
+</string>
+<string id="jup_b8_heli_4_crash_text">
+<text>Potřebuju důkladně prozkoumat oblast, kam se zřítil vrtulník «SCAT-4». </text>
+</string>
+<string id="jup_b8_heli_4_crash_text_2">
+<text>Je potřeba vypátrat zdroj energie, který spálil elektroniku ve vrtulníku «SCAT-4» </text>
+</string>
+<string id="jup_b9_blackbox_decrypting_name">
+<text> «SCAT-1»: Informace z černé skříňky</text>
+</string>
+<string id="jup_b9_blackbox_decrypting_text">
+<text>Černá skříňka z vrtulníku se zdá být neporušená. Donesu ji k technikovi, který by se mohl dostat do vnitřní paměti a objasnit tak příčinu zřícení vrtulníku.</text>
+</string>
+<string id="jup_b9_blackbox_descrypted_after_3_name">
+<text> «SCAT-1»: Čekání</text>
+</string>
+<string id="jup_b9_blackbox_descrypted_after_3_text">
+<text>Ašot se údajně může dostat k datům z černé skříňky, ale zabere to zhruba tři hodiny. Je proto potřeba počkat a pak za ním zase zajít.</text>
+</string>
+<string id="jup_b9_go_for_blackbox_descryption_name">
+<text> «SCAT-1»: Návrat k Ašotovi</text>
+</string>
+<string id="jup_b9_go_for_blackbox_descryption_text">
+<text>Už se konečně můžu vrátit k Ašotovi a zeptat se ho na výsledek dekódování černé skříňky. </text>
+</string>
+<string id="jup_b9_heli_1_crash_name">
+<text>«SCAT-1»: Průzkum místa dopadu</text>
+</string>
+<string id="jup_b9_heli_1_crash_text">
+<text>Je potřeba prozkoumat místo, kam se zřítil vrtulník «SCAT-1».</text>
+</string>
+<string id="pas_b400_pripyat_name">
+<text>Dlouhá cesta: Průnik do Pripjatě</text>
+</string>
+<string id="pas_b400_pripyat_text">
+<text>Potřebuju se dostat do Pripjatě a přesunout se k evakuačnímu bodu.</text>
+</string>
+<string id="zat_a9_way_gases_check_chemistry_workshop_name">
+<text>Dlouhá cesta: Prohledání továrního komplexu</text>
+</string>
+<string id="zat_a9_way_gases_check_chemistry_workshop_text">
+<text>V chemickém závodě Jupiter by se měly nacházet informace o složení plynů v podzemním traktu, vedoucímu do města Pripjať.</text>
+</string>
+<string id="zat_a9_way_gates_check_corps_name">
+<text>Dlouhá cesta: Kontrola administračního křídla</text>
+</string>
+<string id="zat_a9_way_gates_check_corps_text">
+<text>Průvodce bezpečnou cestu do Pripjatě nezná, ale jak mě informoval, stačilo by najít informace o podzemním tunelu, kterým už by bylo možné se do města dostat. Měl by se nacházet někde pod továrnou Jupiter, ale nejprve je třeba poohlédnout se po administračních dokumentech.</text>
+</string>
+<string id="zat_a9_way_gates_check_electrical_workshop_name">
+<text>Dlouhá cesta: Průzkum laboratorního křídla</text>
+</string>
+<string id="zat_a9_way_gates_check_electrical_workshop_text">
+<text>V nalezených administrativních dokumentech se psalo o evakuaci z industriálního komplexu. Další informace by bylo vhodné hledat v laboratorním křídle. </text>
+</string>
+<string id="zat_a9_way_gates_check_transport_workshop_name">
+<text>Dlouhá cesta: Transportní brána</text>
+</string>
+<string id="zat_a9_way_gates_check_transport_workshop_text">
+<text>Vchod do podzemí tvoří transportní brána - budu muset prozkoumat okolí a zjistit jakoukoliv informaci, která by mi mohla pomoci v dalším postupu. </text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_archives_name">
+<text>Dlouhá cesta: Průzkum první části továrny</text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_archives_text">
+<text>První sekce obsahovala informace o podzemním tunelu, vedoucího do města Pripjať.</text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_delivery_department_name">
+<text>Dlouhá cesta: Průzkum doručovací části továrny</text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_delivery_department_text">
+<text> Podle záznamů z laboratorního křídla komplexu vyplynulo, že by se další informace mohly nacházet v doručovací části továrny.</text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_repair_workshop_name">
+<text>Dlouhá cesta: Průzkum opravárenské haly</text>
+</string>
+<string id="zat_a9_way_to_pripyat_check_repair_workshop_text">
+<text>Oddělení informovalo v dokumentaci o jistých ztrátách při přepravě kontejneru číslo 62. Podle záznamů se to stalo v opravárenské části, tudíž by bylo vhodné ji prohledat.</text>
+</string>
+<string id="zat_a9_way_to_pripyat_tell_stalker_guide_name">
+<text>Dlouhá cesta: Rozhovor s průvodcem</text>
+</string>
+<string id="zat_a9_way_to_pripyat_tell_stalker_guide_text">
+<text>Soudě podle záznamů z černé skříňky měl vrtulník přistát na evakuačním bodu B28, který se nachází v Pripjati. Bylo by vhodné zeptat se na to průvodce.</text>
+</string>
+<string id="zat_b207_depot_reward_task_name">
+<text>Skladiště: Kradená výbava</text>
+</string>
+<string id="zat_b207_morgan_depot_task_name">
+<text>Skladiště: Setkání s Morganem</text>
+</string>
+<string id="zat_b207_morgan_depot_task_text">
+<text> Jako zálohu k mojí mlčenlivosti jsem se s Morganem dohodl na tom, že mi věnuje nějakou výbavu z frakčního skladu. Dohodli jsme se i na místě setkání... </text>
+</string>
+<string id="pas_b400_pripyat_gate_text">
+<text>Pro další postup je potřeba otevřít bránu.</text>
+</string>
+<string id="pas_b400_pripyat_door_text">
+<text>Pro další postup je potřeba otevřít bránu.</text>
+</string>
+<string id="pas_b400_pripyat_hall_door_text">
+<text>Je potřeba obnovit napájení vstupní brány, jinak se přes ni nedostaneš.</text>
+</string>
+<string id="pas_b400_pripyat_control_text">
+<text>Pro další postup je potřeba otevřít bránu. To by zřejmě šlo z řícící kóje.</text>
+</string>
+<string id="jup_b6_employ_stalkers_name">
+<text>Výzkumná skupina: Nábor stalkerů</text>
+</string>
+<string id="jup_b6_employ_stalkers_text">
+<text>Původní vědecký tým, pracující na jednom projektu, zemřel. Je proto nutné najít jiné vědce, kteří by v práci mohli pokračovat. </text>
+</string>
+<string id="jup_b6_employ_stalkers_reward_name">
+<text>Výzkumná skupina: Vyzvednutí odměny</text>
+</string>
+<string id="jup_b6_employ_stalkers_reward_text">
+<text>Byli vybráni lidé, kteří by mohli pokračovat ve vědeckém výzkumu dřívější skupiny. Teď zbývá vrátit se k Hermanovi a vzít si odměnu. </text>
+</string>
+<string id="jup_b218_soldier_do_scientist_quest_name">
+<text> Dlouhá cesta: Ozerskyho úkol</text>
+</string>
+<string id="jup_b218_soldier_do_scientist_quest_text">
+<text>Pokud je nutné zajistit Sokolovovi protichemický oblek, není jiná možnost, než splnit úkol pro profesora Ozerskyho a donést mu vzorek rostliny z anomálního pole.</text>
+</string>
+<string id="jup_b200_tech_materials_inside_text">
+<text>Ašot potřebuje elektronické součástky - ty by mohly být v budově u cementárny. </text>
+</string>
+<string id="jup_b25_flint_and_senya_text">
+<text>Třískovu smrt v anomálii má na svědomí Flint. Je potřeba si s ním promluvit a zjistit, proč ho tam nechal. </text>
+</string>
+<string id="jup_b25_revenge_senya_name">
+<text>Odplata: Pomstit Třísku</text>
+</string>
+<string id="jup_b25_revenge_senya_text">
+<text>Je potřeba najít stalkera, co nechal Třísku v anomálii, vzal artefakt a utekl. Bohužel ke vší smůle Tříska před svou smrtí už nestihl říct, kdo ho tam nechal - jediná informace je, že je to někdo z řad Svobody. </text>
+</string>
+<string id="zat_b207_depot_reward_task_duty_text">
+<text>Plukovník Šulga dovolil vzít si ze skladu jakoukoliv potřebnou výbavu. Problémem však je skupina Svobody, hlídkující v oblasti.</text>
+</string>
+<string id="zat_b207_depot_reward_task_freedom_text">
+<text>Loki dovolil vzít si ze skladu jakoukoliv potřebnou výbavu. Oblast bohužel obklíčila jednotka Povinnosti. </text>
+</string>
+</string_table> 
