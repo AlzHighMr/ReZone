@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_glock17">
+		<text>Glock 17, Gen 4</text>
+	</string>
+	<string id="st_wpn_glock17_short">
+		<text>Glock 17</text>
+	</string>
+	<string id="st_wpn_glock17_descr">
+		<text>Klasická pistole s polymerovým rámem a krátkým zpětným rázem. Tato střelná zbraň, navržená a vyráběná rakouským výrobcem Glock Ges.m.b.H., vstoupila do rakouské vojenské a policejní služby v roce 1982 poté, co dosáhla nejlepších výsledků v testech spolehlivosti a bezpečnosti. Od té doby se vyváží do mnoha dalších zemí, včetně Ukrajiny pro speciální jednotky. Díky své nízké hmotnosti, velmi dobrému zpětnému rázu a ráži 9 mm je velmi oblíbenou pistolí u všech frakcí, a to právem.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Rakousko\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Glock Ges.m.b.H.\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2010\n
+		</text>
+	</string>
+
+	<string id="st_up_glock17_45acp_name">
+		<text>Změna ráže na .45 ACP</text>
+	</string>
+
+	<string id="st_wpn_xd9">
+		<text>Springfield Armory XD9</text>
+	</string>
+	<string id="st_wpn_xd9_short">
+		<text>XD9</text>
+	</string>
+	<string id="st_wpn_xd9_descr">
+		<text>Springfield Armory XD je americká obdoba pistole HS2000 s polymerovým rámem a úderníkem, kterou vyrábí chorvatská společnost HS Produkt. Tento model je verze Mod.2, varianta Sub-Compact, mnohem menší verze HS2000 určená pro skryté nošení. Jednou z významných změn, které tento model oproti původnímu má, je "Grip Zone" představující neuvěřitelně ergonomické vylepšení. Přestože se jedná o malou pistoli s malou kapacitou zásobníku, je to velmi vítaný doplněk pro ty, kteří chtějí přesnou pistoli s co nejmenším zpětným rázem.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Chorvatsko\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]HS Produkt Springfield Armory, Inc.\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2002\n
+		</text>
+	</string>
+
+
+</string_table>

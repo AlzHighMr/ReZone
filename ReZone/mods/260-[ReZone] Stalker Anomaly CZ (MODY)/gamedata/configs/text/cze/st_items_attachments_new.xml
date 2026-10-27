@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <string id="st_af_new_surge_name">
+    <text>Ochránce proti přepětí</text>
+</string>
+<string id="st_af_new_surge_descr">
+    <text>Jednoduché zařízení složené z velkého množství rezistorů a vyměnitelných pojistek. Chrání uživatele tím, že omezuje efektivní množství elektricity, která přímo přichází do kontaktu s tělem, přesměrováním k rezistorovo-pojistkovému komplexu, čímž se zmírňuje většina šoku na úkor vyhoření pojistek. To z něj činí téměř bezchybný proti elektrickým anomáliím, ale může vydržet pouze omezený počet silných elektrických šoků, než všechny pojistky vyhoří. Většina stalkerů tyto zařízení konstruuje ze zbytkového elektronického odpadu, kterého v Zóně není nedostatek. I když je zařízení těžké a jednorázové, je extrémně užitečné pro navigaci v elektrických anomáliích. Jako všechny kovové předměty, lze jej použít jako zdroj materiálu na opravu, pokud máte vhodné nástroje a dostatečné dovednosti.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním zařízením pro řízení prostředí\n
+    %c[d_cyan] • %c[ui_gray_2] opravitelný s elektronickými komponenty\n
+    </text>
+</string>
+
+<string id="st_af_new_surge_up_name">
+    <text>Vylepšený ochránce proti přepětí</text>
+</string>
+<string id="st_af_new_surge_up_descr">
+    <text>Vylepšený Ochránce proti přepětí využívající artefakt k lepší disperzi elektrického šoku. Bloudící elektrické přepětí je směrováno stejnou cestou, ale díky přítomnosti artefaktu je částečně absorbován nějaký šok a celkové poškození komponent je sníženo. Navíc artefakt neustále vydává mírný proud uvolňující svaly, což pomáhá při bolestech a únavě. \n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]Je třeba poznamenat, že takový modul nebude schopen správně fungovat a poskytnout dostatečnou ochranu, pokud váš oblek nesplňuje minimální požadavky na ochranu v neobvyklém poli.\n \n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním zařízením pro řízení prostředí\n
+    %c[d_cyan] • %c[ui_gray_2] opravitelný s elektronickými komponenty\n
+    </text>
+</string>
+	
+<string id="st_ass_name">
+    <text>Systém potlačení anomálií</text>
+</string>
+<string id="st_ass_descr">
+    <text>
+        Pokročilé zařízení s několika skenery, vysílači a emitory pro rádiové vlny, elektromagnetické vlny a vysokofrekvenční sonarové vlny. Jedno z prvních zařízení navržených Ministerstvem vědy k ochraně svých terénních agentů, tato sofistikovaná mašina ztělesňuje Suslova teorii "klepání do rybníka", kde určité anomálie mohou být dočasně narušeny, pokud je do prostředí zavedeno dostatečné množství rušení. Zařízení automaticky skenuje místní anomálie a v reakci na aktivaci anomálie vysílá kombinovaný neutralizační puls, efektivně ji dočasně vypíná a neguje všechna rizika. Zařízení jako je toto tvoří hlavní část aktivních anomálních obranných systémů v oblecích SSP a SEVA, které oba obsahují integrované verze tohoto zařízení. Zařízení je vybaveno dobíjecí baterií pro potlačovací puls, avšak palubní počítač potřebuje čas na recalibraci a přepočítání změn pole, které nastanou po každém pulsaci. Zařízení lze kombinovat s palubními podpůrnými systémy obleků SSP a SEVA k zvýšení jeho účinnosti a dobíjecího času.
+        \n \n
+        %c[ui_gray_2]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+        %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+        %c[d_cyan] • %c[ui_gray_2] mediánové dobíjení 60 sekund\n
+        %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním prvkem pro kontrolu prostředí\n
+    </text>
+</string>
+
+<string id="st_ass_up_name">
+    <text>Pokročilý systém potlačení anomálií</text>
+</string>
+<string id="st_ass_up_descr">
+    <text>
+        Zařízení pro potlačení anomálií další generace, které začleňuje telemetrická data z vzácných vzorků artefaktů k rychlejšímu výpočtu potlačovacích řešení. Toto zařízení je vrcholem systémů ochrany proti anomáliím a je v extrémně vysoké poptávce mezi všemi vědeckými pracovníky, natož stalkerů samotných. Dodatečná data z inkorporovaného vzorku artefaktu umožňují vysílat pulsy s menším rušením prostředí, což umožňuje častější rekalační cykly. Kromě toho zařízení emituje konstantní pole, které pasivně snižuje sílu blízkých anomálních polí. Zařízení lze kombinovat s palubními podpůrnými systémy obleků SSP a SEVA k zvýšení jeho účinnosti a dobíjecího času.
+        \n \n
+        %c[ui_gray_2]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+        %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+        %c[d_cyan] • %c[ui_gray_2] mediánové dobíjení 40 sekund\n
+        %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním prvkem pro kontrolu prostředí\n
+    </text>
+</string>
+
+
+	<string id="st_lsm">
+    <text>Modul Autodoktora SLSA 0.06.8 EM</text>
+</string>
+<string id="st_lsm_desc">
+    <text>Zastaralý vojenský modul automatického autodoktora SLSA (Systém životní podpory, automatický). Krátkou dobu po Druhém černobylském incidentu investovala ukrajinská SSU do vývoje přenosného automatického lékařského systému pro zlepšení účinnosti svých terénních personálů. Tyto jednotky terénního lékaře byly vybaveny několika bojovými a průzkumnými prapory a i když jsou účinné, jsou docela nepopulární mezi stojícími ozbrojenými silami. \n
+        SLSA má tři nádrže, jednu pro stabilizátor, analgetika a antiradikály. Autodoktor je programován tak, aby dávky aplikoval v odstupech nejméně 15 sekund, aby nedošlo k předávkování a smrti uživatele.
+        \n \n
+        %c[ui_gray_2]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+        %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+        %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním prvkem pro kontrolu prostředí\n
+    </text>
+</string>
+
+<string id="st_lsm_up">
+    <text>Modul Autodoktora SLSA 0.06.9 EM Vylepšený</text>
+</string>
+<string id="st_lsm_up_desc">
+    <text>Vylepšený modul Autodoktora vylepšený technologií Zóny. Založen na původním designu Autodoktora, tyto pokročilé moduly byly navrženy pomocí výzkumu a vzorků shromážděných ve Zóně. Aplikace pečlivě uzavřených léčivých artefaktů zvýšila účinnost podávané medicíny a pasivně podporuje růst buněk. Malé množství těchto modulů Autodoktora bylo vyrobeno zejména kvůli obtížím se získáním správných výrobních materiálů. Přesto jsou velmi populární a vyhledávané mezi jednotkami Spetsnaz a ekology, i když bolest vstřikovače do předloktí je pravděpodobně horší než dříve.\n
+        SLSA má tři nádrže, jednu pro stabilizátor, analgetika a antiradikály. Autodoktor je programován tak, aby dávky aplikoval v odstupech nejméně 15 sekund, aby nedošlo k předávkování a smrti uživatele.
+        \n \n
+        %c[ui_gray_2]VLASTNOSTI:\n
+        %c[d_cyan] • %c[ui_gray_2] technologický předmět\n
+        %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+        %c[d_cyan] • %c[ui_gray_2] kompatibilita: standardní, armádní stimulátory\n
+        %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním prvkem pro kontrolu prostředí\n
+    </text>
+</string>
+
+	
+<string id="st_af_new_frames_name">
+    <text>Hliníkové rámy</text>
+</string>
+<string id="st_af_new_frames_descr">
+    <text>Kvalitní hliníkový rám používaný k efektivnější distribuci váhy vaší výbavy. Hliník je relativně lehký a pevný kov, který dobře slouží k rozložení váhy na úkor toho, že uživatele více vystavuje vodivosti elektřiny. Nastavitelné popruhy a postroje umožňují rám nastavit na libovolnou velikost trupu, a flexibilní plastové prvky použité v klíčových částech konstrukce umožňují překvapivou flexibilitu při sprintování. Mřížka nahrazuje hlavní rám vašeho batohu a musí být proto namontována do batohu. I když je systém vyroben z lehkého hliníku, některé části se mohou stále ukázat jako užitečné při drobných opravách oděvu.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] každodenní předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden zadní rám\n
+    %c[d_cyan] • %c[ui_gray_2] instaluje se přímo do batohů\n
+    </text>
+</string>
+
+<string id="st_af_new_frames_up_name">
+    <text>Vylepšené hliníkové rámy</text>
+</string>
+<string id="st_af_new_frames_up_descr">
+    <text>Vylepšení hliníkových rámových částí zvýšilo celkový komfort a distribuci váhy. Kvalitní hliníkový rám používaný k efektivnější distribuci váhy vaší výbavy. Hliník je relativně lehký a pevný kov, který dobře slouží k rozložení váhy na úkor toho, že uživatele více vystavuje vodivosti elektřiny. Nastavitelné popruhy a postroje umožňují rám nastavit na libovolnou velikost trupu, a flexibilní plastové prvky použité v klíčových částech konstrukce umožňují překvapivou flexibilitu při sprintování. Mřížka nahrazuje hlavní rám vašeho batohu a musí být proto namontována do batohu. I když je systém vyroben z lehkého hliníku, některé části se mohou stále ukázat jako užitečné při drobných opravách oděvu.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] každodenní předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden zadní rám\n
+    %c[d_cyan] • %c[ui_gray_2] instaluje se přímo do batohů\n
+    </text>
+</string>
+
+
+<string id="st_af_new_grid_name">
+    <text>Titanová mřížka</text>
+</string>
+<string id="st_af_new_grid_descr">
+    <text>Vysokokvalitní titanová mřížka používaná k efektivnější distribuci váhy vaší výbavy. Lehkost a vysoká pevnost titanu činí z něj nadřazenou alternativu k zadním rámům vyrobeným z hliníku, i když sdílí stejné vodivé vlastnosti jako ostatní kovové rámy. Nastavitelné popruhy a postroje umožňují mřížku nastavit na libovolnou velikost trupu, a flexibilní plastové prvky použité v klíčových částech konstrukce umožňují překvapivou flexibilitu při sprintování. Mřížka nahrazuje hlavní rám vašeho batohu a musí být proto namontována do batohu. Mřížky jsou vyrobeny z velmi vysoké kvality titanu, takže rozložená mřížka může být použita jako účinný doplněk k opravě bojového oděvu nebo přilby.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] každodenní předmět\n
+    %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden zadní rám\n
+    %c[d_cyan] • %c[ui_gray_2] instaluje se přímo do batohů\n
+    </text>
+</string>
+
+	
+<string id="st_af_new_grid_up_name">
+    <text>Vylepšená titanová mřížka</text>
+</string>
+<string id="st_af_new_grid_up_descr">
+    <text>Vylepšení titanové mřížky zvýšilo celkový komfort a distribuci váhy. Vysokokvalitní titanová mřížka používaná k efektivnější distribuci váhy vaší výbavy. Lehkost a vysoká pevnost titanu činí z něj nadřazenou alternativu k zadním rámům vyrobeným z hliníku, i když sdílí stejné vodivé vlastnosti jako ostatní kovové rámy. Nastavitelné popruhy a postroje umožňují mřížku nastavit na libovolnou velikost trupu, a flexibilní plastové prvky použité v klíčových částech konstrukce umožňují překvapivou flexibilitu při sprintování. Mřížka nahrazuje hlavní rám vašeho batohu a musí být proto namontována do batohu. Mřížky jsou vyrobeny z velmi vysoké kvality titanu, takže rozložená mřížka může být použita jako účinný doplněk k opravě bojového oděvu nebo přilby.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] každodenní předmět\n
+    %c[d_cyan] • %c[ui_gray_2] vysoká kvalita\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden zadní rám\n
+    %c[d_cyan] • %c[ui_gray_2] instaluje se přímo do batohů\n
+    </text>
+</string>
+
+
+<string id="st_af_new_camelbak_name">
+    <text>Camelbak</text>
+</string>
+<string id="st_af_new_camelbak_descr">
+    <text>Jméno si vypůjčuje od mýtu, že velbloudi uchovávají vodu ve svých hrbotech. Camelbak je batoh nošený na zádech nebo kolem pasu uživatele, který obsahuje nádrž naplněnou vodou, aby udržel uživatele hydratovaného. Flexibilní trubice s dlahou usnadňuje použití i v nejnáročnějších situacích. Tento model je maskovaný a integrovaný do obleku, aby chránil systém před poškozením z jakéhokoli zdroje, ať už jde o boj nebo anomálii. Protože je kontejner vyroben z vysokokvalitní textilie, zkušení stalkerové někdy znovu využívají vyřazené camelbaky pro kvalitní materiály k opravě svých terénních oděvů.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]I když má voda nízkou elektrickou vodivost, její blízkost k tělu vás může činit zranitelnějšími vůči elektrickým proudům. Z tohoto důvodu je doporučeno věnovat zvláštní pozornost vašemu okolí, pokud máte camelbak u sebe.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden camelbak\n
+    </text>
+</string>
+
+<string id="st_af_new_camelbak_up_name">
+    <text>Mrazivě studený Camelbak</text>
+</string>
+<string id="st_af_new_camelbak_up_descr">
+    <text>Vylepšení Camelbaku udržuje uloženou vodu osvěžujícě studenou, pasivně chladící uživatele jak při pití, tak i po něm. Jméno si vypůjčuje od mýtu, že velbloudi uchovávají vodu ve svých hrbotech, camelbak je batoh nošený na zádech nebo kolem pasu uživatele, který obsahuje nádrž naplněnou vodou, aby udržel uživatele hydratovaného. Flexibilní trubice s dlahou usnadňuje použití i v nejnáročnějších situacích. Tento model je maskovaný a integrovaný do obleku, aby chránil systém před poškozením z jakéhokoli zdroje, ať už jde o boj nebo anomálii. Protože je kontejner vyroben z vysokokvalitní textilie, zkušení stalkerové někdy znovu využívají vyřazené camelbaky pro kvalitní materiály k opravě svých terénních oděvů.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]I když má voda nízkou elektrickou vodivost, její blízkost k tělu vás může činit zranitelnějšími vůči elektrickým proudům. Z tohoto důvodu je doporučeno věnovat zvláštní pozornost vašemu okolí, pokud máte camelbak u sebe.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] lze nosit pouze jeden camelbak\n
+    </text>
+</string>
+<string id="st_af_huntkit_name">
+    <text>Sada na ošetřování zvěře</text>
+</string>
+<string id="st_af_new_camelbak_up_descr">
+    <text>Kompaktní bederní taška s háčky, různými noži, nástroji a pevnými koženými rukavicemi používaná k efektivnímu zpracování a přípravě těl anomal. Může být nošena na opasku.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    </text>
+</string>
+
+</string_table>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="st_interact">
+		<text>Interakce ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_place_popup">
+		<text>Umístit předmět ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_far_popup">
+		<text>To je příliš daleko na to, abych to mohl umístit.</text>
+	</string>
+	<string id="st_collision_warning">
+		<text>Nemůžu umístit objekt - s něčím se blokuje</text>
+	</string>
+    <string id="st_reject_pickup_world_obj">
+		<text>Nejsem schopen sebrat tento předmět </text>.
+	</string>
+	<string id="st_enable_collision">
+		<text>Povolena kolize</text>
+	</string>
+    <string id="st_disable_collision">
+        <text>Zakázaná kolize</text>
+    </string>
+	<string id="st_align_actor">
+		<text>Zarovnání vzhledem k hráči</text>
+	</string>
+    <string id="st_align_surface">
+		<text>Zarovnání vzhledem k povrchu</text>
+	</string>
+
+</string_table>

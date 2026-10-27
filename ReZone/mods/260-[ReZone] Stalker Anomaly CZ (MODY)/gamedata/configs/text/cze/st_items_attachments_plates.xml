@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+	<string id="st_plate_cap_0">
+	<text>%c[d_red]Nemá místo pro další vložky</text>
+</string>
+<string id="st_plate_cap_1">
+	<text>Může podporovat další kevlarovou vložku</text>
+</string>
+<string id="st_plate_cap_2">
+	<text>Může podporovat další balistickou vložku</text>
+</string>
+<string id="st_plate_in">
+	<text>Nasazená vložka:</text>
+</string>
+<string id="st_remove_plate">
+	<text>Odebrat vložku</text>
+</string>
+<string id="st_insert_plate">
+	<text>Přidat do obleku</text>
+</string>
+
+<string id="st_af_kevlar_name">
+	<text>Kevlarové vložky</text>
+</string>
+<string id="st_af_kevlar_descr">
+	<text>Měkké kevlarové desky navržené k nošení jako lehký těžký pancíř nebo použití jako doplňková ochrana pod těžšími deskami. Kevlar je široce známý svou ochrannou schopností a je vysoce ceněn pro svůj úžasný poměr pevnosti ku hmotnosti. Plní širokou škálu funkcí, nejdůležitější z nich je absorpce dopadu střelného projektilu na přední a zadní části trupu. Ačkoli jsou neuvěřitelně lehké a účinné proti malorážovým pistolovým střelám, jsou snadno poraženy jakoukoli puškovou střelou.\n \n
+	%c[ui_gray_2]VLASTNOSTI:\n
+	%c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+	%c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy II / BR3\n
+	%c[d_cyan] • %c[ui_gray_2] může být vybavena pouze jednou vložkou</text>
+</string>
+
+	
+<string id="st_af_plates_name">
+    <text>Ocelová pancéřová deska</text>
+</string>
+<string id="st_af_plates_descr">
+    <text>Tyto ocelové desky jsou speciálně vyráběny, tepelně ošetřeny a tvarovány pro balistické vlastnosti, které se hodí do široké škály ochranných aplikací. Jsou navrženy tak, aby odolaly balistickým dopadům na přední i zadní části trupu. Tato ochrana však přichází za cenu, jelikož tlusté ocelové desky jsou neuvěřitelně těžké. Objemná velikost také omezuje pohyblivost, ale ochrana je vynikající.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]Ocel je vodič a její blízkost ke kůži činí tělo citlivějším na elektřinu. Z tohoto důvodu se doporučuje postupovat opatrně v blízkosti elektrických anomálií nebo jiných zdrojů elektřiny.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy III+ / BR4\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    %c[d_cyan] • %c[ui_gray_2] snižuje rychlost pohybu při vybavení\n
+    </text>
+</string>
+<string id="st_af_ceramic_name">
+    <text>Keramická balistická vložka</text>
+</string>
+<string id="st_af_ceramic_descr">
+    <text>Vyrobeno z tvrdé keramiky z boronkarbidu, toto typické vložení do obleku je používáno ozbrojenými silami po celém světě díky své schopnosti chránit před hrozbami vysoce kalibrovaných projektilů. Známý jako SAPI na západě, rozptyluje energii přicházejících projektilů tím, že rozdrtí keramiku na kusy, chrání nositele. Tento mechanismus však také činí jeho ochranu před opakovaným zásahem špatnou. Keramické vložky také bývají poměrně tlusté, což omezuje pohyb.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy IV / BR5\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    %c[d_cyan] • %c[ui_gray_2] snižuje rychlost pohybu při vybavení\n
+    </text>
+</string><string id="st_af_polymer_name">
+    <text>Balistická vložka UHMWPE</text>
+</string>
+<string id="st_af_polymer_descr">
+    <text>Polyethylen (PE) je široce používán v různých průmyslových a obchodních produktech díky své jednoduché nechemické struktuře a všestranným vlastnostem. Ultra-vysokomolekulární hmotnostní polyethylen (UHMWPE), který tvoří tato vložení do obleku, poskytuje neuvěřitelnou ochrannou sílu při nízké hmotnosti. Přicházející projektily místně rozpouštějí polymer třením, uvězněním střely uvnitř vložky. Tento mechanismus dává PE deskám nevyrovnatelnou schopnost ochrany před opakovaným zásahem. Nicméně, UHMWPE je velmi drahý a sám o sobě nedokáže plně zastavit projektily vyššího kalibru.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]Balistická vložení z UHMWPE jsou velmi citlivá na teplo a selžou při vystavení vysokým teplotám. Z tohoto důvodu buďte velmi opatrní při navigaci anomálií termálního charakteru.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy III / BR4\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    </text>
+</string>
+
+<string id="st_af_new_kevlar_up_name">
+    <text>Kevlar-aramidová vložka</text>
+</string>
+<string id="st_af_new_kevlar_up_descr">
+    <text>Kevlarové desky jsou široce známé svými ochrannými schopnostmi a jsou velmi ceněny pro svůj neuvěřitelný poměr pevnosti k hmotnosti. Plní řadu funkcí, nejdůležitější z nich je absorpce úderu střelných projektily na přední a zadní části trupu. Zatímco jsou neuvěřitelně lehké a účinné proti střelám malého kalibru, jsou snadno porazitelné jakýmkoli střelivem pušky.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy II / BR3\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    </text>
+</string>
+<string id="st_af_plates_up_name">
+    <text>Uhelníková ocelová pancéřová deska</text>
+</string>
+<string id="st_af_plates_up_descr">
+    <text>Sada extrémně těžkých pancéřových vložek z kalené oceli. Zatímco budou chránit před některými střelami vysoce kalibrovaných, mají dobrou schopnost odolat opakovanému zásahu a jsou relativně levné, tyto výhody přicházejí za cenu vysoké hmotnosti. Z tohoto důvodu se vojáci armád rozhodli pro lehčí keramické vložky, zatímco ocelové vložky jako tyto jsou hlavně kupovány civilisty. V Zóně jsou ocelové desky jako tyto hlavní součástí pancířů exoskeletonů, jelikož nosná konstrukce snadno vyvažuje velkou váhu. Tyto desky lze také nosit k doplnění běžného obleku, ale takové jednání je extrémně obtěžující.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]Ocel je vodič a její blízkost ke kůži činí tělo citlivějším na elektřinu. Z tohoto důvodu se doporučuje postupovat opatrně v blízkosti elektrických anomálií nebo jiných zdrojů elektřiny.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy IV / BR5\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    %c[d_cyan] • %c[ui_gray_2] snižuje rychlost pohybu při vybavení\n
+    </text>
+</string>
+<string id="st_af_ceramic_up_name">
+    <text>Ocelově vyztužená keramická vložka</text>
+</string>
+<string id="st_af_ceramic_up_descr">
+    <text>Následující generace keramické balistické desky integrovaná s kovovým zářezem pro zlepšení schopnosti odolat opakovaným zásahům. Takové desky byly vyvinuty jak americkými, tak ruskými ozbrojenými silami, aby čelily silně ozbrojeným hrozbám. Navzdory schopnosti absorbovat dopady střel s vysoce kalibrovaným průbojným střelivem nikdy nebyla široce přijata kvůli dodatečné váze a nedostatku hrozeb využívajících takovou palbu.\n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy IV / BR6\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    %c[d_cyan] • %c[ui_gray_2] snižuje rychlost pohybu při vybavení\n
+    </text>
+</string>
+<string id="st_af_polymer_up_name">
+    <text>Balistická vložka UHMWPE/Keramika</text>
+</string>
+<string id="st_af_polymer_up_descr">
+    <text>Jedním z nejnovějších pokroků v osobním pancíři je kompozitní vložení složené z tvrdé keramické nárazové vrstvy podložené ultra-vysokomolekulárním hmotnostním polyethylenem (UHMWPE), která zabrání průniku. Zatímco není tak ochranné proti vysokým kalibrům jako tlustší plně keramické desky, ani tak schopné ochrany proti opakovaným zásahům jako desky pouze z UHMWPE, dokáže chránit před většinou hrozeb a zároveň je lehčí než většina vložek. Nicméně, její vysoké náklady způsobily zpoždění masového přijetí světovými ozbrojenými silami.\n \n%c[d_red]\n\n%c[d_red]VAROVÁNÍ:%c[ui_gray_2]\n \n%c[default]Balistická vložení UHWMPE jsou velmi citlivá na teplo a selžou při vystavení vysokým teplotám. Z tohoto důvodu buďte velmi opatrní při navigaci anomálií termálního charakteru. \n \n
+    %c[ui_gray_2]VLASTNOSTI:\n
+    %c[d_cyan] • %c[ui_gray_2] vojenský předmět\n
+    %c[d_cyan] • %c[ui_gray_2] poskytuje ochranu třídy IV / BR5\n
+    %c[d_cyan] • %c[ui_gray_2] lze vybavit pouze jedním vložením do obleku\n
+    </text>
+</string>
+	
+</string_table>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <!-- ==================== LOOT CLAIM TIPS ==================== -->
+<string id="st_ap_loot_claim_warn_001">
+    <text>Toho jsem sundal já. Ruce pryč.</text>
+</string>
+<string id="st_ap_loot_claim_warn_002">
+    <text>Nech to tělo být, kamaráde.</text>
+</string>
+<string id="st_ap_loot_claim_warn_003">
+    <text>Já ho dostal. Jeho výbava patří mě.</text>
+</string>
+<string id="st_ap_loot_claim_warn_004">
+    <text>Sáhneš na to tělo a bude problém, #name#.</text>
+</string>
+<string id="st_ap_loot_claim_warn_005">
+    <text>Dej ruce pryč, #name#. Tohle už má svého majitele.</text>
+</string>
+
+<!-- Poloviční A: NPC nechá TVŮJ úlovek být (zřídka, promluví ustupující stalker) -->
+<string id="st_ap_loot_reserve_yield_001">
+    <text>Tohohle ti nechám, stalkere.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_002">
+    <text>Tvoje kořist, tvoje zásluha.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_003">
+    <text>Ta mrtvola patří tobě.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_004">
+    <text>Ty jsi ho sundal, #name#. Tak si ho ober.</text>
+</string>
+<string id="st_ap_loot_reserve_yield_005">
+    <text>Ani ve snu bych ti nebral kořist, #name#.</text>
+</string>
+
+<!-- Tok C: sleduješ NPC, jak nechá být kořist jiné družiny (zřídka, promluví ustupující NPC) -->
+<string id="st_ap_loot_npcvnpc_yield_001">
+    <text>To není můj úlovek. Nechám to být.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_002">
+    <text>Tohle patří jiné družině.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_003">
+    <text>Sundal ho někdo jiný. Je to jejich kořist.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_004">
+    <text>Tohle je kořist #name#, nemáme na ni nárok.</text>
+</string>
+<string id="st_ap_loot_npcvnpc_yield_005">
+    <text>Nech #name#, ať si svou kořist vezme.</text>
+</string>
+
+
+</string_table>

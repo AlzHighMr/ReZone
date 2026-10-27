@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_usp_compact">
+		<text>USP45 Compact</text>
+	</string>
+	<string id="st_wpn_usp_compact_descr">
+		<text>Konečný klasický favorit každého veterána v Zóně ať už je z jakékoliv frakce. Použití ráže vhodné pro boj na krátkou vzdálenost, snadné ukrytí, velmi spolehlivá a sotva nějaká hmotnost na 8 nábojů, lze ji snadno použít místo průměrného USP.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Německo\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Heckler &amp; Koch, EAS\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1996\n \n
+		</text>
+	</string>
+
+	<string id="st_wpn_usp_tactical">
+		<text>USP45 Tactical</text>
+	</string>
+	<string id="st_wpn_usp_tactical_descr">
+		<text>Považován za vylepšení modelu USP, USP Tactical obsahuje prodlouženou hlaveň se závitem a O-kroužkem, což zvyšuje přesnost a snižuje zpětný ráz a také umožňuje standardní integraci tlumiče. Dalšími doplňky jsou nastavitelná mikrometrická zadní muška a tritiová přední a zadní mířidla. Díky všem těmto vylepšením je jasné, že byla upravena nejspíše prostřednictvím černého trhu. Každopádně je to stále důstojná a spolehlivá pistole.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Německo\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Heckler &amp; Koch, EAS\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1996\n \n
+		</text>
+	</string>
+
+	<string id="st_wpn_mk23">
+		<text>HK MK23</text>
+	</string>
+	<string id="st_wpn_mk23_descr">
+		<text>Tato pistole, známá spíše jako USSOCOM MARK 23, je pistole vyrobená společností Heckler &amp; Koch pro USSOCOM, speciální operační tým USA. Má úžasnou odolnost, ať už jde o drsné prostředí, vodu nebo korozi, a také dobrou přesnost a zpětný ráz díky polygonální konstrukci hlavně. Používá také výkonnější náboj .45 ACP namísto 9mm. Přestože se ukázala jako docela užitečná, zejména pro USSOCOM, byla kvůli své neoblíbenosti mimo Spec Ops vyřazena. V Zóně je tato zbraň populární jen díky legendárně neoblíbenému bývalému slídilovi ze Specnaz, Boleslavu "Šiškovi" Tarčíkovi.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Spojené státy, Německo\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1991\n \n
+		</text>
+	</string>
+	
+</string_table>

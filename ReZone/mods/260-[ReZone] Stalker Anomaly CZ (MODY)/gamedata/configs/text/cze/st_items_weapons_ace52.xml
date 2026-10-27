@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_ace52">
+		<text>IWI ACE 52</text>
+	</string>
+	<string id="st_wpn_ace52_descr">
+		<text>Zbraň ACE 52 v ráži 7,62x51 byla zkonstruována tak, aby vyhovovala potřebám moderního bojiště, takže je přesvědčivou volbou pro armády a agenty, kteří hledají moderní pušky. Tato puška, vyhlášená jako dokonalá útočná zbraň, byla prověřena v boji v těch nejnepříznivějších a nejextrémnějších podmínkách. Ačkoli vychází ze starých IMI Galils, pokročilá konstrukce a výkonné mechanismy proměnily ACE 52 ve spolehlivější a vysoce přesnou zbraň pro bojové akce. Tyto nové varianty ACE se vyznačují lepší ergonomií a přesností díky integraci oceli s polymerem namísto použití obrobeného masivního ocelového polotovaru.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Israel\n
+		%c[d_cyan] - %c[0,255,255,255,255]Výrobce: %c[ui_gray_1]Israel Weapon Industries\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2008\n
+		</text>
+	</string>
+
+	<string id="st_up_ace52_a5_name">
+		<text>Instalace těžší hlavně</text>
+	</string>
+	<string id="st_up_ace52_a5_descr">
+		<text>Instalace těžší hlavně pro další zlepšení zpětného rázu </text>.
+	</string>
+	<string id="st_up_ace52_b1_name">
+		<text>Instalace Cheek Piece</text>
+	</string>
+	<string id="st_up_ace52_b1_descr">
+		<text>Instalace Cheek Piece na pažbu pro pohodlnější míření. Mohlo by výrazně snížit zpětný ráz při míření.</text>
+	</string>
+	<string id="st_up_ace52_c1_name">
+		<text>Překomorování zbraně na 7,62x54</text>
+	</string>
+	<string id="st_up_ace52_c1_descr">
+		<text>Předělá zbraň na ráži, která je v zóně běžněji dostupná.</text>
+	</string>
+
+</string_table>

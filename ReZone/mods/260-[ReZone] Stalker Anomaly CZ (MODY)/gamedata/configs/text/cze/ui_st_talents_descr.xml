@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+
+	<!-- ---------------------------------- -->
+	<!-- ----- SNIPER OFFENSIVE ---- -->
+	<!-- ---------------------------------- -->
+	<string id="sniper_rifles_descr">
+    <text>Odstrelovaci puska: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="assault_rifles_novice_descr">
+    <text>Utocna puska: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="pistols_descr">
+    <text>Pistole: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="experienced_sniper_descr">
+    <text>Pokud mas na sobe Stredni/Lehkou zbroj \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="steady_descr">
+    <text>Pokud jsi prikrceny ve Stredni/Lehke zbroji \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="convenience_descr">
+    <text>Pokud mas na sobe Lehkou zbroj \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="gunslinger_descr">
+    <text>Pokud mas pistoli v jednom z hlavnich slotu zbrani \n \n
+    Pistole: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s% \n
+    • Nabijeni +%s%</text>
+</string>
+
+<string id="sharpshooter_descr">
+    <text>Za kazdy 1 metr od cile \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="ambush_descr">
+    <text>Pokud te cil nevidi a mas na sobe Lehkou zbroj \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="deep_wound_descr">
+    <text>Odstrelovaci puska: \n
+    • Krvacive poskozeni +%s%</text>
+</string>
+
+<string id="loner_descr">
+    <text>Pokud jsi sam \n \n
+    Odstrelovaci puska / Utocna puska: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="soft_spot_descr">
+    <text>Pokud jsi za cilem (90+ stupnu od smeru cile) \n \n
+    Odstrelovaci puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="nocturnal_descr">
+    <text>Behem noci (18:00 - 6:00) \n \n
+    Odstrelovaci puska / Pistole: \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="carnage_descr">
+    <text>Odstrelovaci puska: \n
+    • Poskozeni +%s% \n
+    • Kriticke poskozeni +%s%</text>
+</string>
+
+
+
+	<!-- ---------------------------------- -->
+	<!-- --- TROOPER OFFENSIVE --- -->
+	<!-- ---------------------------------- -->
+<string id="assault_rifles_descr">
+    <text>Utocna puska: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="shotguns_novice_descr">
+    <text>Brokovnice: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="submachine_guns_descr">
+    <text>SMG: \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="experienced_rifleman_descr">
+    <text>Utocna puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="demolition_expert_descr">
+    <text>Vybusniny: \n
+    • Poskozeni +%s% \n
+    • Hmotnost -%s%</text>
+</string>
+
+<string id="duelist_descr">
+    <text>Pokud te cil vidi \n \n
+    Utocna puska: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="focus_descr">
+    <text>Za kazde 1% staminy ve Stredni/Vedecke zbroji \n \n
+    Utocna puska: \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="thrill_descr">
+    <text>Nasledujici zasah po zabiti \n \n
+    Utocna puska: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="precision_descr">
+    <text>Pokud nestrilis po dobu %s - dalsi zasah bude mit \n \n
+    Utocna puska: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+<string id="barrage_descr">
+    <text>Po dobu %s sekund po zasahu \n \n
+    SMG: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="reckless_descr">
+    <text>Za kazde 1% tveho chybejiciho zdravi \n \n
+    Utocna puska / Brokovnice: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="veteran_rifleman_descr">
+    <text>Utocna puska / SMG: \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+
+<string id="collector_descr">
+    <text>Ziskavani "Collector" stacku za kazde zabiti (max 1500 stacku). Kazdy stack dava \n \n
+    Utocna puska: \n
+    • Poskozeni +%s% \n \n
+    Stacky za zabiti: \n
+    • 1 = Tarbik / Flaksa / Zombie / Pes \n
+    • 2 = Izlom / Dena / Kocour / Pseudopes \n
+    • 2 = Novacci /  Stalkeri \n
+    • 3 = Cihavec / Snork / Karlik \n
+    • 3 = Zkuseni / Profesionalove \n
+    • 4 = Poltergeist / Burer / Upir / Psysucker \n
+    • 4 = Veteran / Experti \n
+    • 5 = Master / Legendy \n
+    • 7 = Chimera / Kontroler \n
+    • 10 = Pseudogianti \n \n
+    Soucasne stacky: %s</text>
+</string>
+
+
+	<!-- ---------------------------------- -->
+	<!-- ----- JUGGER OFFENSIVE ---- -->
+	<!-- ---------------------------------- -->
+	<string id="shotguns_descr">
+    <text>Brokovnice: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="machine_guns_descr">
+    <text>Kulomet: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="submachine_descr">
+    <text>Samopal: \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="hunter_descr">
+    <text>Proti mutantum \n \n
+    Brokovnice / Kulomet / Samopal: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="bounty_hunter_descr">
+    <text>Proti stalkerum \n \n
+    Brokovnice / Kulomet / Samopal: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="mangle_descr">
+    <text>Zbrane na blizko: \n
+    • Poskozeni +%s% \n
+    • Kriticky zasah +%s%</text>
+</string>
+
+<string id="heavy_guns_expert_descr">
+    <text>Brokovnice / Kulomet: \n
+    • Poskozeni +%s% \n
+    • Nabití +%s%</text>
+</string>
+
+<string id="merciless_descr">
+    <text>Pokud mas vice procent zdravi nez cil \n \n
+    Brokovnice / Kulomet: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="fury_descr">
+    <text>Na %s sec po zasazeni stalkerem nebo mutantem \n \n
+    Vsechny zbrane: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="bloodthirst_descr">
+    <text>Zbrane na blizko: \n
+    • Kriticke poskozeni +%s%</text>
+</string>
+
+
+<string id="execution_descr">
+    <text>Pokud cil ma mene nez %s% zdravi \n \n
+    Brokovnice / Kulomet: \n
+    • Poskozeni +%s%</text>
+</string>
+<string id="frightening_descr">
+    <text>Cile v radiusu %sm od tebe dostavaji \n \n
+    • Poskozeni +%s% ze vsech zdroju</text>
+</string>
+<string id="selective_descr">
+    <text>Pokud mas pouze jednu zbran v hlavnich slotech \n \n
+    Brokovnice / Kulomet: \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="mastery_descr">
+    <text>Brokovnice / Kulomet: \n
+    • Nabití +%s% \n \n
+    Vylepseni talentu: \n
+    • Poskozeni u talentu "Nemilosrdny" +5% \n
+    • Hranice zdravi cile u talentu "Poprava" zvysena na 55% \n
+    • Poskozeni u talentu "Vzteklost" +5% \n
+    • Radius u talentu "Desivy" zvysen na 100 metru</text>
+</string>
+
+
+
+	<!-- ---------------------------------- -->
+	<!-- ----- SNIPER DEFENSIVE ---- -->
+	<!-- ---------------------------------- -->
+<string id="adaptive_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s%</text>
+</string>
+<string id="mild_descr">
+    <text>Poskozeni pri padu: \n
+    • -45% ve stredni zbroji \n
+    • -70% v lehke zbroji</text>
+</string>
+<string id="iron_stomach_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Radiace +%s% \n \n
+    %s% mene radiace z jidla</text>
+</string>
+
+<string id="plastic_pads_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s%</text>
+</string>
+<string id="aluminum_plates_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+<string id="nature_resistance_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n
+    • Radiace +%s% \n</text>
+</string>
+<string id="rad_resistant_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Radiace +%s% \n \n
+    Lekarenske prostredky okamzite odstrani o 35% vice radiace nez je jejich bezna obnova</text>
+</string>
+
+<string id="technician_descr">
+    <text>Stredni / Lehka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n
+    • Radiace +%s% \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Vsechny stredni zbroje dostavaji nahodne prvni vylepseni pri vyzvednuti (pokud jeste nemaji zadne vylepseni)</text>
+</string>
+<string id="inventor_descr">
+    <text>Vsechny bonusy z talentu jsou zdvojnasobeny pro lehkou zbroj</text>
+</string>
+
+<string id="expert_technician_descr">
+    <text>Za kazde 1% stavu zbroje \n \n
+    Stredni / Lehka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n
+    • Radiace +%s%</text>
+</string>
+<string id="agile_descr">
+    <text>Pri pohybu \n \n
+    Lehka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n
+    • Radiace +%s% \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Talent "Reflexy" uhyb +%s% (neni vyzadovan pohyb pro tento bonus)</text>
+</string>
+
+<string id="reflexes_descr">
+    <text>35% sance na uhyb proti nepasivnimu poskozeni ve stredni / lehke zbroji</text>
+</string>
+
+
+
+	<!-- ---------------------------------- -->
+	<!-- --- TROOPER DEFENSIVE --- -->
+	<!-- ---------------------------------- -->
+<string id="ceramic_plates_descr">
+    <text>Tezka / Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Odolnosti x2 pro Stredni/Vedeckou</text>
+</string>
+<string id="first_aid_descr">
+    <text>Lekarenske prostredky, ktere obnovuji zdravi - okamzite obnovi extra %s% z jejich celkove hodnoty</text>
+</string>
+<string id="isolated_descr">
+    <text>Tezka / Stredni / Vedecka zbroj: \n
+    • Sok +%s% \n \n
+    Odolnosti x2 pro Stredni/Vedeckou</text>
+</string>
+
+<string id="armorer_descr">
+    <text>Tezka / Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Odolnosti x2 pro Stredni/Vedeckou</text>
+</string>
+<string id="chem_resistant_descr">
+    <text>Tezka / Stredni / Vedecka zbroj: \n
+    • Chemie +%s% \n \n
+    Odolnosti x2 pro Stredni/Vedeckou</text>
+</string>
+
+<string id="suppresion_fire_descr">
+    <text>Na %s sec po kazdem tvem zasahu \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+<string id="cautious_descr">
+    <text>Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Bonusy jsou zdvojnasobeny pri dalsim fyzickem zasahu na tebe \n
+    (Cooldown %s)</text>
+</string>
+<string id="fireproof_descr">
+    <text>Tezka / Stredni / Vedecka zbroj: \n
+    • Popaleni +%s% \n \n
+    Odolnosti x2 pro Stredni/Vedeckou</text>
+</string>
+
+<string id="composure_descr">
+    <text>Zmírnene poskozeni touto bonusem je zdvojnasobeno a zasahem postihne vytrvalost misto zdravi (bonusy jsou aktivni pouze pokud je vytrvalost nad 50%) \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+<string id="enduring_descr">
+    <text>Stredni / Vedecka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n \n
+    Skok z talentu "Skok" spotrebuje o 50% mene vytrvalosti</text>
+</string>
+
+<string id="adorned_descr">
+    <text>Za kazde prislusenstvi nebo artefakt na opasku \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n \n
+    (Max 10%)</text>
+</string>
+<string id="expert_armorer_descr">
+    <text>Za kazde instalovane vylepseni na zbroji \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n \n
+    (Max 10%)</text>
+</string>
+<string id="last_stand_descr">
+    <text>Kdyz je zdravi pod 35% \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Popaleni +%s% \n
+    • Chemie +%s% \n
+    • Sok +%s% \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+	<string id="leap_descr">
+    <text>Kdyz beziš do strany, stiskni tlacitko Sprint pro skok. Skok spotrebuje 20% vytrvalosti a poskytne snizeni poskozeni na %s sekund \n \n
+    Tezka / Stredni / Vedecka zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+
+	<!-- ---------------------------------- -->
+	<!-- ----- JUGGER DEFENSIVE ---- -->
+	<!-- ---------------------------------- -->
+	<string id="steel_plates_descr">
+    <text>Tezka / Stredni zbroj: \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+<string id="steel_pads_descr">
+    <text>Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s%</text>
+</string>
+<string id="regenerative_descr">
+    <text>Pasivni regenerace zdravi +100%</text>
+</string>
+
+<string id="heavy_armor_expert_descr">
+    <text>Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n
+    • Psi +%s% \n
+    • Vaha zbroje -%s%</text>
+</string>
+
+<string id="dismorale_descr">
+    <text>Na %s sekund po zabiti nepritele \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+<string id="sturdy_descr">
+    <text>Na %s sekund po zasahu \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+<string id="sanity_descr">
+    <text>Tezka / Stredni zbroj: \n
+    • Psi +%s%</text>
+</string>
+
+<string id="anxiety_descr">
+    <text>Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Zdvojnasobeni bonusu talentu "Dismorale" a prodlouzeni jeho trvani na 30 sekund</text>
+</string>
+
+<string id="turmoil_descr">
+    <text>Ty a tvoji spojenci obdrzite \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    Proti vsem nepratelum v dosahu %sm od tebe</text>
+</string>
+
+<string id="bulky_descr">
+    <text>Zbroj te zpomaluje o 15% na vymenu za \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+<string id="secure_descr">
+    <text>Za kazdeho spolecnika \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    (Max 15%)</text>
+</string>
+
+<string id="lucid_descr">
+    <text>Za kazde 1% psi zdravi \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s%</text>
+</string>
+
+<string id="robust_descr">
+    <text>Na dalsi fyzicky utok \n \n
+    Tezka / Stredni zbroj: \n
+    • Trzeni +%s% \n
+    • Uder +%s% \n
+    • Balisticka ochrana +%s% \n
+    • Explozivni ochrana +%s% \n \n
+    (Cooldown %s)</text>
+</string>
+
+
+
+	<!-- ---------------------------------- -->
+	<!-- --------- ENDURANCE -------- -->
+	<!-- ---------------------------------- -->
+<string id="ease_descr">
+    <text>Pokud nemas v rukou dvourucni zbrane \n \n
+    • Rychlost +%s%</text>
+</string>
+
+<string id="refreshing_descr">
+    <text>Napiti vody obnovi \n \n
+    • Stamina +%s%</text>
+</string>
+
+<string id="hiker_descr">
+    <text>Jidlo \n \n
+    • Vaha -%s%</text>
+</string>
+
+<string id="resting_descr">
+    <text>Pokud se nehybes \n \n
+    • Stamina +%s%/sec</text>
+</string>
+
+<string id="prudent_descr">
+    <text>Leky \n \n
+    • Vaha -%s%</text>
+</string>
+
+<string id="swifty_descr">
+    <text>• Rychlost +%s%</text>
+</string>
+
+<string id="tireless_descr">
+    <text>• Stamina +%s%/sec</text>
+</string>
+
+<string id="hoarder_descr">
+    <text>• Vaha +%s kg</text>
+</string>
+
+<string id="adrenaline_rush_descr">
+    <text>Na %s sekund po stredne silnem zasahu \n \n
+    • Rychlost +%s% \n \n
+    (Cooldown %s)</text>
+</string>
+
+<string id="second_wind_descr">
+    <text>Pokud stamina klesne pod 5% \n \n
+    • Stamina +%s% \n \n
+    (Cooldown %s)</text>
+</string>
+
+<string id="organizer_descr">
+    <text>Vsechny predmety s vahou 0.2+ kg (krome zbrani) \n \n
+    • Vaha -0.1 kg</text>
+</string>
+
+<string id="insomnia_descr">
+    <text>Behem noci (18:00 - 6:00) \n \n
+    • Rychlost +%s%</text>
+</string>
+
+<string id="courage_descr">
+    <text>Na %s sekund po tvem zasahu \n \n
+    • Stamina +%s%/sec</text>
+</string>
+
+<string id="belt_braces_descr">
+    <text>Prislusenstvi a artefakty na opasku \n \n
+    • Vaha -%s%</text>
+</string>
+
+<string id="athletic_descr">
+    <text>Za kazde 1% stamin \n \n
+    Lehka zbroj: \n
+    • Rychlost +%s%  (polovina pro Stredni / Sci zbroj)</text>
+</string>
+
+<string id="iron_spine_descr">
+    <text>Za kazde 1% zdravi \n \n
+    Tezka zbroj: \n
+    • Vaha +%s kg  (polovina pro Stredni / Sci zbroj)</text>
+</string>
+
+
+
+	<!-- ---------------------------------- -->
+	<!-- ------------ SPEECH ----------- -->
+	<!-- ---------------------------------- -->
+<string id="preparation_descr">
+    <text>Jidlo a voda \n
+    • Koupit +%s%</text>
+</string>
+
+<string id="confidence_descr">
+    <text>Spolecnici \n
+    • Odolnosti +%s%</text>
+</string>
+
+<string id="supplier_descr">
+    <text>Maso, mutantni casti a mutantni kuze \n
+    • Prodat +%s%</text>
+</string>
+
+<string id="observant_descr">
+    <text>Zbrane a munice \n
+    • Koupit +%s%</text>
+</string>
+
+<string id="smuggler_descr">
+    <text>Leky, alkohol, artefakty \n
+    • Prodat +%s%  (polovina pro artefakty)</text>
+</string>
+
+<string id="gregarious_descr">
+    <text>• Koupit +%s%</text>
+</string>
+
+<string id="encouragement_descr">
+    <text>Spolecnici \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="persuasion_descr">
+    <text>• Prodat +%s%</text>
+</string>
+
+<string id="charismatic_descr">
+    <text>%s% na koupi polozky 1. urovne zdarma</text>
+</string>
+
+<string id="shady_descr">
+    <text>Vsichni stalkeri obdrzi %s rublu a \n \n
+    • Prodat stalkerum +%s%</text>
+</string>
+
+<string id="artistic_descr">
+    <text>Hranim na kytaru nebo harmoniku pobliz stalkeru zvysis naklonost k jejich frakci. \n
+    (Cooldown %s)</text>
+</string>
+
+<string id="rally_descr">
+    <text>Spolecnici \n
+    • Kriticke zasahy +%s%</text>
+</string>
+
+<string id="cynical_descr">
+    <text>Jednou denne ziskas "stastnou minci" (muzes mit jen jednu). Kdyz je mince na opasku, pristi nepotrebny predmet, ktery prodas zacatecnickemu stalkerovi, bude mit x20 svoji hodnoty. Mince zmizi a dostanes postih naklonosti s jejich frakci.</text>
+</string>
+
+<string id="well_liked_descr">
+    <text>Sleva zalozena na naklonosti s frakci obchodnika, (naklonost/200) procent \n
+    (Max -8%)</text>
+</string>
+
+<string id="deceitful_descr">
+    <text>2% sance na prodej predmetu za x2.5 jeho ceny</text>
+</string>
+
+
+
+	<!-- -------------------------------------- -->
+	<!-- MONSTER HUNTER OFFENSIVE -->
+	<!-- -------------------------------------- -->
+	<string id="dog_hunter_descr">
+    <text>Proti pes/pseudopes/psi-pes/kocka \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="boar_hunter_descr">
+    <text>Proti kanec/Flaksa/Cihavec \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="zombie_hunter_descr">
+    <text>Proti zombie/Izlom/snork \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="trophies_descr">
+    <text>Za kazdy typ mutanta, ktereho zabijes poprve - trvale zvyseni proti mutantum \n
+    • Poskozeni +%s% \n
+    (Aktualni bonus: +%s%) \n \n
+    Zbyli mutanti: \n
+    %s</text>
+</string>
+
+<string id="deep_cut_descr">
+    <text>Boj zblizka: \n
+    • Poskozeni +%s% \n
+    • Kriticke zasahy +%s%</text>
+</string>
+
+<string id="beast_anatomy_descr">
+    <text>Proti bestiim \n
+    • Poskozeni +%s% \n \n
+    Bestie: %s</text>
+</string>
+
+<string id="humanoid_anatomy_descr">
+    <text>Proti humanoidum \n
+    • Poskozeni +%s% \n \n
+    Humanoidi: %s</text>
+</string>
+
+<string id="expert_hunter_descr">
+    <text>Proti krvopijec/psysucker/burer/poltergeist \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="beast_rivalry_descr">
+    <text>Proti bestiim \n
+    • Kriticke zasahy +%s%</text>
+</string>
+
+<string id="humanoid_rivalry_descr">
+    <text>Proti humanoidum \n
+    • Kriticke zasahy +%s%</text>
+</string>
+
+<string id="master_hunter_descr">
+    <text>Proti chimera/Kontroler/obr \n
+    • Poskozeni +%s%</text>
+</string>
+
+<string id="fierce_descr">
+    <text>Na %s sec po zasahu mutanta \n
+    • Poskozeni +%s% \n \n
+    Stackuje se az 5x</text>
+</string>
+
+<string id="ranger_descr">
+    <text>Ve stredni zbroji \n
+    • Kriticke zasahy +%s%</text>
+</string>
+
+<string id="deadly_blow_descr">
+    <text>1% sance okamzite zabit jakehokoli mutanta (5% pro boj zblizka)</text>
+</string>
+
+
+
+	<!-- -------------------------------------- -->
+	<!-- MONSTER HUNTER DEFENSIVE -->
+	<!-- -------------------------------------- -->
+<string id="shoulder_pads_descr">
+	<text>• Trzeni +%s% \n
+	• Uder +%s% \n \n
+	Odolnost x2 pro stredni brneni</text>
+</string>
+<string id="careful_descr">
+	<text>• Popaleni +%s% \n
+	• Chemicke +%s% \n
+	• Sok +%s% \n \n
+	Odolnost x2 pro stredni brneni</text>
+</string>
+
+<string id="melee_defense_descr">
+	<text>Kdyz je v rukou zbran na blizko \n
+	• Trzeni +%s% \n
+	• Uder +%s%</text>
+</string>
+<string id="special_diet_descr">
+	<text>Na %s sec po snedeni mutanta nebo masa mutanta \n
+	• Popaleni +%s% \n
+	• Chemicke +%s% \n
+	• Sok +%s% \n
+	• Psi +%s%</text>
+</string>
+<string id="clarity_descr">
+	<text>• Psi +%s% \n \n
+	Odolnost x2 pro stredni brneni</text>
+</string>
+
+<string id="tracker_descr">
+	<text>Zacnes citit stopu upira</text>
+</string>
+<string id="soft_armor_descr">
+	<text>• Trzeni +%s% \n
+	• Uder +%s% \n \n
+	Odolnost x2 pro stredni brneni</text>
+</string>
+<string id="stable_mind_descr">
+	<text>35% sance odolat psi poskozeni z utoku Kontrolera a \n
+	• Psi +%s%</text>
+</string>
+
+<string id="beast_demeanor_descr">
+	<text>Proti bestiim \n
+	• Trzeni +%s% \n
+	• Uder +%s%</text>
+</string>
+<string id="humanoid_demeanor_descr">
+	<text>Proti humanoidum \n
+	• Trzeni +%s% \n
+	• Uder +%s%</text>
+</string>
+
+<string id="second_skin_descr">
+	<text>Za kazdou mutantni kuzi na opasku \n
+	• Trzeni +%s% \n
+	• Uder +%s%</text>
+</string>
+<string id="custom_fit_descr">
+	<text>Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s% \n
+	• Trzeni +%s% \n
+	• Uder +%s% \n
+	• Popaleni +%s% \n
+	• Chemicke +%s% \n
+	• Sok +%s% \n
+	• Psi +%s%</text>
+</string>
+
+<string id="kindred_descr">
+	<text>Kazde 2 dny po probuzeni - se objevi dva silni pseudopsi, aby te ochranili (objevi se jen pokud zadni predchozi pseudopsi neziji). Jsou imunni vuci anomaliim, ignoruji tve spojence a utoci na tve nepritele (krome ostatnich psu). \n \n
+	Kdyz alespon jeden z techto pseudopsu zije - vsichni ostatni psi tebe a tve spojence nenapadaji.</text>
+</string>
+
+
+	<!-- -------------------------------------- -->
+	<!-- ------- MERC OFFENSIVE -------- -->
+	<!-- -------------------------------------- -->
+	<string id="firearm_enthusiast_descr">
+	<text>Vsechny zbrane: \n
+	• Poskozeni +%s%</text>
+</string>
+<string id="combat_engineer_descr">
+	<text>Vybusniny: \n
+	• Poskozeni +%s% \n
+	• Rychlost hazeni granatu +%s%</text>
+</string>
+<string id="overdrive_descr">
+	<text>Na %s sec po pouziti stimpacku nebo kokainu \n \n
+	Vsechny zbrane: \n
+	• Poskozeni +%s% \n
+	• Krit +%s%</text>
+</string>
+
+<string id="head_hunter_descr">
+	<text>Za kazdeho clena frakce, ktereho zabijes poprve \n \n
+	Proti stalkerum: \n
+	• Poskozeni +%s% \n
+	(Soucasny bonus: +%s%) \n \n
+	Zbyvajici frakce: \n
+	%s</text>
+</string>
+<string id="arrogance_descr">
+	<text>Za kazdy cil s nizsim hodnocenim nez mas ty \n \n
+	Proti stalkerum: \n
+	• Poskozeni +%s% za hodnost</text>
+</string>
+
+<string id="aim_torso_descr">
+	<text>Na trup \n \n
+	Proti stalkerum: \n
+	• Poskozeni +%s%</text>
+</string>
+<string id="aim_limbs_descr">
+	<text>Na koncetiny a hlavu \n \n
+	Proti stalkerum: \n
+	• Krit +%s%</text>
+</string>
+
+<string id="modified_bullets_descr">
+	<text>Na %s sec po zasahu do trupu stalkera ztrati %s% sveho zdravi za sekundu</text>
+</string>
+<string id="bullseye_descr">
+	<text>Na %s sec po zabiti stalkera strelou do hlavy \n \n
+	Vsechny zbrane: \n
+	• Krit +%s%</text>
+</string>
+<string id="searcher_descr">
+	<text>Stalkeri zabiti tebou budou mit vice penez u sebe</text>
+</string>
+
+<string id="assault_rifles_expert_descr">
+	<text>Utocna puska: \n
+	• Poskozeni +%s% \n
+	• Krit +%s% \n
+	• Prebijeni +%s%</text>
+</string>
+<string id="light_guns_expert_descr">
+	<text>Pistole / SMG: \n
+	• Poskozeni +%s% \n
+	• Krit +%s% \n
+	• Prebijeni +%s%</text>
+</string>
+<string id="sniper_rifles_expert_descr">
+	<text>Sniperka: \n
+	• Poskozeni +%s% \n
+	• Krit +%s%</text>
+</string>
+
+<string id="liquidator_descr">
+	<text>1% sance na okamzite zabiti jakehokoliv stalkera a \n \n
+	Vsechny zbrane: \n
+	• Kriticke poskozeni +%s%</text>
+</string>
+
+
+
+	<!-- -------------------------------------- -->
+	<!-- ------- MERC DEFENSIVE -------- -->
+	<!-- -------------------------------------- -->
+<string id="mercenary_vest_descr">
+	<text>Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+<string id="insensitive_descr">
+	<text>Stredni brneni: \n
+	• Popaleni +%s% \n
+	• Chemicke +%s% \n
+	• Sok +%s%</text>
+</string>
+<string id="chem_reliant_descr">
+	<text>Na %s sec po pouziti stimpacku nebo morfinu \n \n
+	Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+
+<string id="grenadier_descr">
+	<text>Na %s sec po hozeni granatu \n \n
+	Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+
+<string id="confusion_descr">
+	<text>Pokud nosis oblek frakce cile (nebo jejich spojence) \n \n
+	Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+<string id="addictive_descr">
+	<text>Pridavek k "Chem reliant" bonusu \n \n
+	Stredni brneni: \n
+	• Popaleni +%s% \n
+	• Chemicke +%s% \n
+	• Sok +%s%</text>
+</string>
+
+<string id="direct_descr">
+	<text>Tezke brneni obdrzi %s% vsech odolnostnich bonusu</text>
+</string>
+<string id="disguise_master_descr">
+	<text>Stredni brneni zvysuje ucinnost maskovani o %s%</text>
+</string>
+
+<string id="flurry_descr">
+	<text>Na %s sec po strelbe \n \n
+	Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+<string id="loose_fit_descr">
+	<text>Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s% \n
+	• Trzeni +%s% \n
+	• Uder +%s%</text>
+</string>
+
+<string id="reposition_descr">
+	<text>Po 2 sec pohybu v boji - na dalsich %s sec ziskas \n \n
+	Stredni brneni: \n
+	• Balisticke +%s% \n
+	• Explozivni +%s%</text>
+</string>
+
+
+
+	<!-- -------------------------------------- -->
+	<!-- ---- ASSASSIN OFFENSIVE ----- -->
+	<!-- -------------------------------------- -->
+<string id="smg_novice_descr">
+	<text>SMG: \n
+	• Poskozeni +%s% \n
+	• Krit +%s%</text>
+</string>
+<string id="handgun_novice_descr">
+	<text>Pistole: \n
+	• Poskozeni +%s% \n
+	• Krit +%s%</text>
+</string>
+<string id="knifeman_descr">
+	<text>Zbran na blizko: \n
+	• Poskozeni +%s% \n
+	• Krit +%s% \n
+	• Rychlost utoku +%s%</text>
+</string>
+
+<string id="spot_weakness_descr">
+	<text>Pokud je nepritel ve vzdalenosti 20 metru a neni v boji s tebou - kazdou sekundu ziskas 1 zasobu "Spot weakness" (max 10 zasob). Za kazdou zasobu na dalsi utok \n \n
+	SMG / Pistole / Zbran na blizko: \n
+	• Krit +%s% \n</text>
+</string>
+
+<string id="undercover_descr">
+	<text>Pokud mas oblek frakce cile (nebo jejich spojence) \n \n
+	SMG / Pistole: \n
+	• Poskozeni +%s%</text>
+</string>
+<string id="tactical_descr">
+	<text>Pokud ma zbran tlumic \n \n
+	SMG / Pistole: \n
+	• Krit +%s%</text>
+</string>
+<string id="backstab_descr">
+	<text>Zasahy zezadu \n \n
+	Zbran na blizko: \n
+	• Krit +%s% \n
+	• Kriticke poskozeni +%s%</text>
+</string>
+
+<string id="saboteur_descr">
+	<text>SMG / Pistole: \n
+	• Poskozeni +%s% \n \n
+	Za kazdy 1 metr od cile se poskozeni snizuje o -0.1% (min 0% bonus)</text>
+</string>
+<string id="surprise_attack_descr">
+	<text>Pokud cil neni v boji nebo v nebezpeci \n \n
+	SMG / Pistole: \n
+	• Krit +%s% \n
+	• Kriticke poskozeni +%s%</text>
+</string>
+<string id="assassination_descr">
+	<text>Zasahy zezadu, pokud cil neni v boji nebo v nebezpeci \n \n
+	Zbran na blizko: \n
+	• Kriticke poskozeni +%s%</text>
+</string>
+
+<string id="vile_descr">
+	<text>Zasahy zezadu \n \n
+	SMG: \n
+	• Poskozeni +%s%</text>
+</string>
+<string id="pragmatic_descr">
+	<text>Pokud je pistole v hlavnim slotu a druhy hlavni slot je prazdny \n \n
+	Pistole: \n
+	• Krit +%s% \n
+	• Kriticke poskozeni +%s%</text>
+</string>
+
+<string id="assassin_observant_descr">
+	<text>"Spot weakness" talent okamzite ziskava maximalni pocet zasob</text>
+</string>
+
+
+
+	<!-- -------------------------------------- -->
+	<!-- ---- ASSASSIN DEFENSIVE ----- -->
+	<!-- -------------------------------------- -->
+<string id="ordinary_descr">
+	<text>Kdyz jdes \n \n
+	Vsechny brneni: \n
+	• Prestrojeni +%s%</text>
+</string>
+<string id="acrobatic_descr">
+	<text>Vyska skoku \n \n
+	Stredni / Sci / Lehká brneni: \n
+	• +30%</text>
+</string>
+<string id="quiet_descr">
+	<text>Pokud nemas zadne aktivni predmety v rukach \n \n
+	Vsechny brneni: \n
+	• Plizeni +%s%</text>
+</string>
+
+<string id="evanescent_descr">
+	<text>"Ordinary" bonus zustava pri kazdem pohybu a \n \n
+	Vsechny brneni: \n
+	• Prestrojeni +%s%</text>
+</string>
+<string id="lurking_descr">
+	<text>Behem noci (18:00 - 06:00) \n \n
+	Vsechny brneni: \n
+	• Prestrojeni +%s% \n
+	• Plizeni +%s%</text>
+</string>
+<string id="subtle_descr">
+	<text>"Quiet" bonus zustava s jakymikoli predmety v rukach a \n \n
+	Vsechny brneni: \n
+	• Plizeni +%s%</text>
+</string>
+
+<string id="covert_descr">
+	<text>Vsechny bonusy prestrojení +1,5 pro Stredni/Sci brneni a \n \n
+	Stredni / Sci brneni: \n
+	• Balisticka ochrana +%s% \n
+	• Explozivni ochrana +%s% \n
+	• Trhliny +%s% \n
+	• Udery +%s%
+	</text>
+</string>
+<string id="cunning_descr">
+	<text>Vsechny bonusy plizeni +1,5 pro Lehká brneni a \n \n
+	Lehka brneni: \n
+	• Vyhybani +%s% \n
+	• Padovy poskozeni -40%</text>
+</string>
+
+<string id="deception_descr">
+	<text>Proti nepratelum v dosahu 50 metru \n \n
+	Vsechny brneni: \n
+	• Prestrojeni +%s%</text>
+</string>
+<string id="vague_descr">
+	<text>Bonus z deste (pri maximalni intenzite deste) \n \n
+	Vsechny brneni: \n
+	• Prestrojeni +%s% \n
+	• Plizeni +%s%</text>
+</string>
+<string id="sneaky_descr">
+	<text>Vsechny brneni: \n
+	• Plizeni +%s% \n \n
+	Bonus x2 kdyz se prikracujes</text>
+</string>
+
+<string id="incognito_descr">
+	<text>Stredni / Sci brneni: \n
+	• Prestrojeni +%s% \n
+	• Balisticka ochrana +%s% \n
+	• Explozivni ochrana +%s% \n
+	• Trhliny +%s% \n
+	• Udery +%s%</text>
+</string>
+<string id="ghost_descr">
+	<text>Lehka brneni: \n
+	• Plizeni +%s% \n
+	• Vyhybani +%s% \n
+	• Popaleniny +%s% \n
+	• Chemicka ochrana +%s% \n
+	• Elektricky sok +%s%</text>
+</string>
+
+<string id="elusive_descr">
+	<text>Stredni / Sci / Lehka brneni: \n
+	• Prestrojeni +%s% \n
+	• Plizeni +%s% \n
+	• Rychlost +15% v boji</text>
+</string>
+
+
+</string_table>

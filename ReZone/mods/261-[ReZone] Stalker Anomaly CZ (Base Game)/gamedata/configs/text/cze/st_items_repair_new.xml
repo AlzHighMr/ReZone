@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Repair Kits
+-->
+
+<string_table>
+    
+	<string id="st_cleaning_kit_s_new">
+		<text>"Aurora A108/12" sada na čištění loveckých zbraní</text>
+	</string>
+	<string id="st_cleaning_kit_s_new_descr">
+		<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí střelné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se nahromadily během používání. Je možné využít běžné nástroje, které mají lepší přístup k vnitřním mechanismům zbraně, nebo alkohol, který snáze rozpustí zbytky oleje. Tato konkrétní sada je vhodná pro použití v loveckých a historických zbraních, jako jsou kulovnice a většina ručně ovládaných brokovnic. Sada "Aurora" se dodává se třemi specializovanými typy kartáčů, z nichž jeden je určen pro čištění po výstřelu, respektive pro roztírání maziva a odstraňování rzi. Udržuje vaši oblíbenou střelnici v dobré kondici za všech okolností.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - Lze použít k čištění znečištěných částí uvnitř zbraně. (stav nad 60)\n
+		Klikněte pravým tlačítkem myši na zbraň > udržovat díly > vyčistit díl.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_orange] - %c[ui_gray_2] historické zbraně\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r5_new">
+		<text>"ValuPro III" armádní čisticí souprava na pušky</text>
+	</string>
+	<string id="st_cleaning_kit_r5_new_descr">
+		<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí střelné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se nahromadily během používání. Takové sady se v zóně používají zcela běžně, aby byly střelné zbraně stále v dobré kondici. Je možné využít běžné nářadí pro lepší přístup k vnitřním mechanismům zbraně nebo alkohol pro snadnější rozpouštění zbytků oleje. Lze také použít k lepšímu roztírání oleje na zbraně, avšak úspornější metoda používaná většinou zkušených slídilů zahrnuje aplikaci živočišného tuku na kartáče jako alternativního maziva. Toto konkrétní balení je standardním vybavením Ukrajinských ozbrojených sil a dodává se v tvrdém plastovém obalu pro opakované použití.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] Lze použít k čištění znečištěných částí (nad 60 stavů) uvnitř zbraní. Klikněte pravým tlačítkem myši na zbraň > udržovat části > vyčistit požadovanou část.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_orange] - %c[ui_gray_2] standardní vojenské zbraně\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r7_new">
+		<text>Sada pro pokročilé čištění zbraní GM308AR</text>
+	</string>
+	<string id="st_cleaning_kit_r7_new_descr">
+		<text>Sada specializovaných kartáčů, které lze použít k čištění hlavně a dalších částí střelné zbraně od nečistot, písku, vlhkosti, zbytků maziva a dalších cizích materiálů, které se nahromadily během používání. Takové sady se v zóně používají zcela běžně, aby byly střelné zbraně stále v dobré kondici. Je možné využít běžné nářadí pro lepší přístup k vnitřním mechanismům zbraně nebo alkohol pro snadnější rozpouštění zbytků oleje. Lze také použít k lepšímu roztírání oleje na zbraně, avšak úspornější metoda používaná většinou zkušených slídilů zahrnuje aplikaci živočišného tuku na kartáče jako alternativního maziva. Tato konkrétní sada má určitá hluboko pronikající rozpouštědla a speciálně tvarované kartáče, které uživateli umožňují čistit velmi vnitřně komplikované zbraně, stejně jako čistit přesné pušky, aniž by byla ovlivněna jejich přesnost. Výrobce není znám, ale její jednoduchý design a konstrukce, stejně jako použité velmi kvalitní materiály, naznačují vojenský, pravděpodobně speciální původ.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] Lze použít k čištění znečištěných částí (stav nad 60) uvnitř zbraní. Klikněte pravým tlačítkem myši na zbraň > udržovat části > vyčistit požadovanou část.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_orange] - %c[ui_gray_2] složité a přesné těžké zbraně\n
+		</text>
+	</string>
+
+    <string id="st_toolkit_s_new">
+        <text>Sada na opravu historických zbraní</text>
+    </string>
+    <string id="st_toolkit_s_new_descr">
+        <text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí prostředky a specializované nástroje používané k demontáži a údržbě mechanismů zbraní. Standardně se dodává také se sadou základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale při výpravách do hlubin Zóny je nepostradatelná, protože ji lze použít v situacích, kdy jde o život, aby byla střelná zbraň opět použitelná. Jedná se o poměrně běžnou sadu s nástroji a součástkami vhodnými pro většinu brokovnic a historických zbraní z Velké války. Tyto typy souprav lze běžně nalézt u lovců a puškařů, kteří přicházejí do Zóny provozovat své řemeslo. Je také možné dodatečně zvýšit účinnost soupravy zapůjčením určitých materiálů z jiných souprav nebo kombinací s nimi během jedné údržby.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] Lze použít k výměně dílů ve zbrani. Klikněte pravým tlačítkem myši na zbraň > zachovat díly > vyměnit požadovaný díl.\n
+        %c[0,255,255,255]KOMPATIBILITA:\n
+        %c[d_orange] - %c[ui_gray_2] historické a brokové zbraně\n
+        </text>
+    </string>
+
+    <string id="st_toolkit_r5_new">
+        <text>Sada na opravu armádních pušek</text>
+    </string>
+    <string id="st_toolkit_r5_new_descr">
+        <text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí prostředky a specializované nástroje používané pro demontáž a údržbu mechanismů zbraní. Standardně se dodává také se sadou základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale při výpravách do hlubin Zóny je nepostradatelná, protože ji lze použít v situacích, kdy jde o život, aby byla střelná zbraň opět použitelná. Jedná se o standardní opravárenské soupravy ukrajinské armády, které se používají k údržbě jejich standardních zbraní - Služba udržuje s armádou obchodní dohodu o těchto soupravách, ale obvykle je tu a tam nějaký bezohledný voják ochoten vyměnit jednu z nich za artefakt nebo bednu vodky. Je také možné dodatečně zvýšit účinnost soupravy zapůjčením určitých materiálů z jiných souprav nebo jejich kombinací s jinými soupravami během jedné údržby.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] Lze použít k výměně dílů ve zbrani. Klikněte pravým tlačítkem myši na zbraň > zachovat díly > vyměnit požadovaný díl.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+		%c[d_orange] - %c[ui_gray_2] standardní vojenské zbraně\n
+        </text>
+    </string>
+
+    <string id="st_toolkit_r7_new">
+        <text>Sada pro opravu pokročilých zbraní</text>
+    </string>
+    <string id="st_toolkit_r7_new_descr">
+        <text>Tato sada obsahuje oleje, rozpouštědla, základní čisticí prostředky a specializované nástroje používané k demontáži a údržbě mechanismů zbraní. Standardně se dodává také se sadou základních náhradních dílů pro palné zbraně. Sada je poměrně těžká, ale při výpravách do hlubin Zóny je nepostradatelná, protože ji lze použít v situacích, kdy jde o život, aby byla střelná zbraň opět použitelná. Jedná se o specializovanou sadu, která se používá k údržbě vysoce přesných zbraní, jako jsou odstřelovací pušky a bojové pušky, a také některých zbraní se složitými vnitřními mechanismy, jako jsou lehké kulomety a některé útočné pušky. Takové sady jsou poměrně vzácné a obvykle se vyskytují v omezené míře i mezi nejlépe vyzbrojenými frakcemi Zóny. Účinnost soupravy je také možné dodatečně zvýšit zapůjčením určitých materiálů z jiných souprav nebo jejich kombinací s jinými soupravami během jedné údržby.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_orange] - %c[ui_gray_2] Lze použít k výměně dílů ve zbrani.\n
+		%c[d_orange] - %c[ui_gray_2] Klikněte pravým tlačítkem myši na zbraň > zachovat části > vyměnit požadovanou část.\n
+		%c[0,255,255,255]KOMPATIBILITA:\n
+        %c[d_orange] - %c[ui_gray_2] složité a/nebo přesné zbraně\n
+        </text>
+    </string>
+
+</string_table>

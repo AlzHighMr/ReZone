@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+
+<!-- Miscellaneous gear -->
+<string id="st_psy_helmet_name">
+    <text>Psy-helma (Kalibrovaná)</text>
+</string>
+<string id="st_psy_helmet_desc">
+       <text>Vyvinuta byl pod Sacharovovým vedením na výzkumné stanici poblíž Jantaru. Unikátní uspořádání přilby, tvořené elektrickými artefakty spolu s namontovanými anténami zařízení, funguje na principu štítů. Při aktivaci promítá skrz přilbu v blízkosti uživatele neviditelnou kopuli, která působí na vybuzené částice uvolněné artefaktem Shell, díky čemuž je většina záření zničena, zbytky pak odráží ochranný systém zabudovaný přímo v těle přilby. Jedinečnost této psy-helmy spočívá v její schopnosti odolávat neobvyklým frekvencím psy-vln různých zářičů DUGA v oblasti Černobylu.</text>
+</string>
+	
+<string id="st_bad_psy_helmet_name">
+    <text>Psy-helma (Nekalibrovaná)</text>
+</string>
+<string id="st_bad_psy_helmet_desc">
+       <text>Vyvinuta byl pod Sacharovovým vedením na výzkumné stanici poblíž Jantaru. Unikátní uspořádání přilby, tvořené elektrickými artefakty spolu s namontovanými anténami zařízení, funguje na principu štítů. Při aktivaci promítá skrz přilbu v blízkosti uživatele neviditelnou kopuli, která působí na vybuzené částice uvolněné artefaktem Shell, díky čemuž je většina záření zničena, zbytky pak odráží ochranný systém zabudovaný přímo v těle přilby. Jedinečnost této psy-helmy spočívá v její schopnosti odolávat neobvyklým frekvencím psy-vln různých zářičů DUGA v oblasti Černobylu.</text>
+</string>
+	
+
+<!-- Headgear -->
+	<string id="st_helm_exo_name">
+		<text>ExoHelma</text>
+	</string>
+	<string id="st_helm_exo_descr">
+<text>Exohelma, pojmenovaná podle svého běžného vzhledu vedle exoskeletové zbroje, je silná ocelová přilba vyráběná ve stejných ukrajinských továrnách jako exoskeletová zbroj. Doprovodnou plynovou maskou je britská SF10, kterou lze snadno sehnat na trzích s přebytky poté, co byla nahrazena respirátorem General Service Respirator (GSR). Přestože je plynová maska poněkud zastaralá, těžká ocelová přilba poskytuje dobrou ochranu před střelbou z ručních zbraní a kulkami.</text>
+	</string>
+
+	<string id="st_helm_battle">
+		<text>Helma «Sphere M12» </text>
+	</string>
+	<string id="st_helm_battle_dolg">
+		<text>Povinnostni «Sphere M12» Helma</text>
+	</string>
+	<string id="st_helm_battle_freedom">
+		<text>Helma «Sphere M12» Svobody</text>
+	</string>
+	<string id="st_helm_battle_descr">
+<text>Hliníková/titanová přilba s lamelovým povrchem pro maskování. Dodává se s kapsami, které lze naplnit dalšími kusy zbroje. Tuto přilbu běžně používají vojenské jednotky Sliders a Spetsnaz, které ji obvykle používají ve spojení s neprůstřelnou vestou řady PSZ. Celkově vzato poskytuje přilba M12 Sphere jednu z nejlepších bojově orientovaných ochran v Zóně a je nezbytnou součástí výbavy každého bohatého stalkera, který očekává, že se dostane do vážné bitvy.</text>
+	</string>
+
+	<string id="st_helm_hardhat">
+		<text>Ocelova helma</text>
+	</string>
+	<string id="st_helm_hardhat_descr">
+<text>Zoufale zastaralá ocelová vojenská přilba se stahovacím hledím pro oči a nic moc jiného. Poskytuje zanedbatelnou ochranu proti anomáliím nebo radiací, ale dokáže odrážet střely. Tato přilba nebyla v Zóně nikdy zvlášť oblíbená, kromě použití v krátkých ozbrojených konfliktech mezi frakcemi.\n \n</text>
+</string>
+
+<string id="st_helm_protective">
+<text>Helma SSP-99</text>
+</string>
+
+<string id="st_helm_protective_descr">
+<text>Vysoce kvalitní přilba vyrobená stejným výzkumným ústavem jako SSP-99 a SEVA Bodysuits a určená ke standardnímu použití spolu s oběma. Má hermetickou konstrukci a umožňuje úplnou izolaci od podmínek anomálního prostředí. Systém filtrace vzduchu s uzavřeným cyklem dodává uživateli trvalé chladivý, čistý vzduch, takže je pohodlnější než typické plynové masky.\n \n</text>
+</string>
+
+<string id="st_helm_respirator">
+<text>Refitovana sada plynove masky PBF</text>
+</string>
+
+<string id="st_helm_respirator_freedom">
+<text>Sada plynove masky PBF Svobody</text>
+</string>
+
+<string id="st_helm_respirator_dolg">
+<text>Sada plynove masky PBF pro Povinnost</text>
+</string>
+
+<string id="st_helm_respirator_descr">
+<text>Plynova maska ShMB dovybavena vnějšími 40mm filtry pro větší funkčnost. Protože však proces přestavby ze starých vnitřních "vepro-knedlo-zelo" filtru nebyl nikdy standardizován, existují mezi jednotlivými maskami mírné rozdíly v hmotnosti a radiační ochraně. Obecně platí, že masky tohoto typu poskytují slušnou ochranu v oblastech se zvýšenou radioaktivitou, ale trpí vysokou mírou poruchovosti v toxickém prostředí a mají zanedbatelnou ochranu proti fyzickým nárazům a při vystaveni takovým podmínkám se rychle rozbiji.\n \n</text>
+</string>
+
+<string id="st_helm_resp">
+		<text>Respirátor</text>
+	</string>
+	<string id="st_helm_resp_descr">
+<text>Zakladni plastový a pryžový respirátor, který se používá k ochraně uživatele před vdechováním škodlivých prachu, výparů, par nebo plynů. Hojně používaný nováčky a dokonce i některými veterány ze všech frakcí díky své nízké hmotnosti a úsporné ochraně životního prostředí. Poskytuje však zanedbatelnou fyzickou ochranu a v silněji ozářených oblastech prakticky zaručené selze.\n \n</text>
+</string>
+
+	<string id="st_helm_respirator_gp5">
+		<text>Plynova maska GP-5</text>
+	</string>
+	<string id="st_helm_respirator_gp5_descr">
+<text>Plynova maska GP-5, která se původně vyráběla v letech 1962-1989, byla zkonstruována s cílem chránit sovětské obyvatelstvo před radioaktivním spadem. Jedná se o prilbu-masku vyrobenou z bílé a černé pryže, jejíž čočky drží na místě lisovací obroučka. Filtry však byly s velkou pečlivostí obnoveny nebo vyměněny. Ve srovnání se soupravami plynových masek podobné ceny a dostupnosti, jako je PBF, se tento repasovaný dýchací přístroj může pochlubit větší ochranou proti radiaci, ale ještě větší mírou selhání v toxickém prostredi.\n \n
+</text>
+	</string>
+
+	<string id="st_helm_bandana">
+		<text>Bandana</text>
+	</string>
+	<string id="st_helm_bandana_descr">
+<text>Obyčejný látkový šátek, který nosí branci, podpůrné sbory a vojáci v týlu v armádě. Obvykle se nosí na hlavě, ale vojáci si ho často místo toho obepínají kolem úst a nosu, aby se vyhnuli vdechování toxických nebo radioaktivních částic. I když je to lepší než nic, není to samozřejmě příliš účinné a takto používané šátky je třeba často vymenovat.\n \n
+</text>
+	</string>
+
+	<string id="st_helm_rp_bala">
+		<text>Kukla</text>
+	</string>
+	<string id="st_helm_rp_bala_descr">
+<text>Obyčejná černá látková kukla. Když už nic jiného, pomůže vám udržet obličej v teple v mrazivých zimách východní Evropy. Látka masky sice pomáhá filtrovat některé toxické a radioaktivní částice ze vzduchu, který dýcháte, ale tato ochrana je přinejlepším nespolehlivá a takto používané kukly bude brzy nutné vymenit.\n \n
+</text>
+	</string>
+
+	<string id="st_helm_cloth_mask">
+		<text>Latkova maska</text>
+	</string>
+	<string id="st_helm_cloth_mask_descr">
+<text>Jednoduchy kus látky složený do masky. Často ji používají stalkeři, aby zabránili vniknutí nebezpečných částic do těla, jako preventivní opatření. Při dlouhodobém používání se v ní však mohou hromadit toxiny, proto je vždy žádoucí mít náhradní pro rychlou výměnu.\n \n
+</text>
+	</string>
+
+	<string id="st_helm_m40">
+		<text>Plynova maska «M40»</text>
+	</string>
+	<string id="st_helm_m40_descr">
+<text>Tato «M40» je vybavena vícevrstvým 40milimetrovym dýchacím filtrem umístěným vlevo. Tato maska poskytuje slušnou radiační a chemickou ochranu po delší dobu, a to i po poškození. Tato plynová maska se sériově vyrábí pro ozbrojené síly USA a nachází velké uplatnění u Žoldáku.\n \n
+</text>
+	</string>
+
+<string id="st_helm_metro">
+    <text>Apokalyptická přilba</text>
+</string>
+<string id="st_helm_metro_descr">
+    <text>Věří se, že tuto přilbu poprvé vytvořila frakce známá jako "Final Day". Tato přilba připomíná Českou plynovou masku «M10» s těžkou pancéřovou úpravou. Zatímco je pro většinu nepohodlně těžká, stále se vyznačuje dobrými ochrannými vlastnostmi proti chemickým, radioaktivním a fyzickým hrozbám. Když byli lídři Final Day zavražděni a frakce se rozpadla kvůli stalkerovi jménem Duch, tyto přilby postupně pronikly mezi dobře situované stalkery, zejména mezi ty, kteří zamýšleli napadnout rozmanité podzemní laboratoře v Zóně.\n \n
+    </text>
+</string>
+<string id="st_helm_tactic">
+    <text>Přilba «Sphere-08»</text>
+</string>
+<string id="st_helm_tactic_descr">
+    <text>Moderní, vysokokvalitní přilba s vestavěným systémem pro filtrace vzduchu, která je založena na západních modelech. Design se skládá z několika vrstev Kevlaru, které chrání nositele před vážným fyzickým poškozením. Přilba je také vyrobena z kompozitních dielektrických materiálů, což poskytuje nositeli větší izolaci od nárazu než většina podobných modelů. Nejčastěji používaná operátory Spetsnaz ve Zóně, zejména ve spojení se zbrojí PS5.\n \n
+    </text>
+</string>
+<string id="helm_spartan">
+    <text>Přilba «Cz-M10 Spartan»</text>
+</string>
+<string id="helm_spartan_descr">
+    <text>Přilba objednaná extrémně vlivnými stalkery, založená na designu přileb Apokalypsy, které dříve používal "Final Day". V porovnání s Apokalypsou je však tato přilba nejen lehčí, ale všestranněji ochranná. Srovnává se velmi příznivě s moderními bojovými přilbami, jako jsou přilby ze série "Sphere", a také se vyznačuje úžasnou ochranou proti anomáliím. Oblíbená volba mezi stalkeri, kteří se ji mohou dostat do rukou.\n \n
+    </text>
+</string>
+<string id="helm_dolg_battle">
+    <text>Přilba Povinnosti «Sphere M12»</text>
+</string>
+<string id="helm_dolg_battle_descr">
+    <text>ODSTRANĚNO Z HRY. Jedna ze dvou verzí přilby «Sphere M12» používaná frakcí Povinnost. Tato verze je častěji používaná a vylepšuje původní M12 co se týče fyzické ochrany a ochrany proti psy útokům, avšak za cenu mírně vyšší hmotnosti a horší odolnosti proti živlům. Měla by být nošena s pancířem PSZ-9d, stejně jako původní M12 s pancířem Bulat.\n \n
+    </text>
+</string>
+
+
+
+
+
+<string id="helm_dolg_battle_redline">
+    <text>Přilba Povinnosti «Sphere M12» «Red Line»</text>
+</string>
+<string id="helm_dolg_battle_redline_descr">
+    <text>ODSTRANĚNO Z HRY. Ze dvou verzí přilby «Sphere M12» frakce Povinnosti je tato verze technologicky pokročilejší a tím pádem jak ochrannější, tak lehčí. Stejně jako PSZ-9d "Red Line" je tato taktická sluchátka udělována pouze nejznámějším vojákům Povinnosti, kteří pro svou frakci dosáhli významných věcí. Tato přilba je nejen mistrovským dílem bojového designu, ale také znamením velkého uznání a vysokého postavení uvnitř řad Povinnosti.\n \n
+    </text>
+</string>
+	<string id="helm_dolg_vintage">
+		<text> «PSM-4» Combat Helmet</text>
+	</string>
+	<string id="helm_dolg_vintage_descr">
+		<text>REMOVED FROM GAME. PSM-4 is a heavy and bulky, but very durable combat helmet. It has an integrated, tough gas mask reinforced with a number of metal parts and fit for popular EO-19 filters. It also has a class IIIA anti-ballistic visor. The helmet is very heavy due to its mostly metal construction and very slight use of modern synthetic materials. It is very uncomfortable, but thanks to its thickness it is not only very physically resistant, but also capable of shielding the wearer from a considerable amount of external psy-influence. It should be noted, that this thickness, compared with mostly metal build, make the inside of helmet heat up really quickly, possibly posing a threat to the wearer. It is therefore highly advised to take the helmet off when in proximity of thermal anomalies. Even though the PSM-4 cannot be count among more optimal helmets, it is still used by some Povinnost soldiers who require solid protection, but lack the money to afford high-end gear. There also are some old military equipment enthusiasts, who wear the PSM-4 just for its characteristic, vintage look.\n \n
+		</text>
+	</string>
+		<string id="helm_eo21">
+		<text>EO-21 PBFM Gas Mask</text>
+	</string>
+	<string id="helm_eo21_descr">
+		<text>REMOVED FROM GAME. Even further modernized version of EO-20 PBF gas mask, designed by Stalker craftsmen. It is both more protective and resistant, and it uses filters that are slightly lighter and guarantee a bit better protection from irradiated particles and toxins. Its visor is wider and more impact-resistant; the apparatus was also made less susceptible to any sources of physical damage.\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_eo21_red">
+		<text>EO-21 PBFM Krasnyy</text>
+	</string>
+	<string id="helm_dolg_eo21_red_descr">
+		<text>REMOVED FROM GAME. EO-21 PBFM gas mask modified by Povinnost for enhanced physical protection. It is at the point of highest, most optimal and budget-friendly defence/weight ratio. This is the Krasnyy series model, designed for use with the modified PS5-2M; regular version of this mask used by Povinnost is simply an original EO-21 with red filters.\n \n
+		</text>
+	</string>
+	
+	<string id="helm_eo21sawnoff">
+		<text>EO-21 PBFL Gas Mask</text>
+	</string>
+	<string id="helm_eo21sawnoff_descr">
+		<text>REMOVED FROM GAME. The most compact, the lightest gas mask in the Zone. It is commonly known as the "sawn-off EO-21", as it looks like if someone took the original mask and cut off its upper half. In truth, this mask was designed this way and is meant for use in less contaminated areas. Its main goal, aside of protection of course, is to make using it as comfortable as possible. It can be used both by itself or with an oxygen tank, which can be attached by a pipe to a socket present on the left side of the mask, just above one of its filters. It uses the exact same filter type as full sized EO-21.\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_eo21sawnoff">
+		<text>Povinnost EO-21 PBFL</text>
+	</string>
+	<string id="helm_dolg_eo21sawnoff_descr">
+		<text>REMOVED FROM GAME. Compact version of EO-21 gas mask used by low-ranking Povinnost members in the least contaminated areas of the Zone. Compared to its original version, the mask was made just slightly more resistant, optimizing it for combat performance to minimize the risk of any heavy damage. Even though it still doesn't stand much of a chance against pistol bullets, it won't crack after receiving a strong punch, and will save the wearer's teeth as well.\n \n
+		</text>
+	</string>
+		<string id="helm_gp5">
+		<text>«GP-5» Gas Mask</text>
+	</string>
+	<string id="helm_gp5_descr">
+		<text>DUPLICATE. REMOVED FROM GAME. Originally manufactured from 1962 to 1989, the GP-5 gas mask was built with the intention to protect the Soviet people from radioactive fallout. It is a helmet-mask made of white and black rubber, with the lenses held in place by a crimping rim. The filters, however, have been restored or replaced with a great deal of care. Compared to gas mask kits of similar price and availability, such as the PBF, this reconditioned respiratory device boasts greater protection against radiation, but an even greater failure rate in toxic environments.\n \n
+		</text>
+	</string>
+		<string id="helm_dolg_tactic_red">
+		<text>Povinnost Sphere 08 Krasnyy</text>
+	</string>
+	<string id="helm_dolg_tactic_red_descr">
+		<text>REMOVED FROM GAME. Sphere 08 headgear set modified and used by Povinnosti, usually paired with their version of Berill armoured suit. Same as the rest of Povinnosti's Krasnyy series gear, this helmet is supposed to serve as a combat gear protecting from both human and mutant threat; it is therefore even more vulnerable to environmental threats than the original, but in turn provides more physical and psy-protection.\n \n
+		</text>
+	</string>
+	
+	
+	
+	
+	
+<string id="helm_ach7">
+<text>Helma «ACH-7»</text>
+</string>
+<string id="helm_ach7_descr">
+<text>«ACH-7» (Advanced Compound Headgear, 7 dílů) je modernější verze nadbytečné ocelové přilby. Je mírně lepší v zastavení střepin. Jeho hlavní výhodou je však jeho překvapivá odolnost vůči psychickým útokům spolu s nečekaně nízkou cenou. Nicméně vzhledem k absenci dýchacího zařízení je to extrémně špatná volba pro podmínky Zóny a obvykle si ho kupují pouze nováčci, kteří jsou dost odvážní na to, aby tak brzy ve své stalkerské kariéře zkoumali psy-anomálie.\n \n
+</text>
+</string>
+
+<string id="helm_ach7ex">
+	<text>Helma «ACH-7EX»</text>
+</string>
+<string id="helm_ach7ex_descr">
+	<text>«ACH-7EX» je "Rozšířená" verze původního setu hlavového příslušenství «ACH-7». Samotné začlenění dýchacího systému činí tuto verzi značně vylepšenou oproti svému předchůdci. S nabízenou chemickou a radiologickou ochranou někde mezi GP-5 a PBF sadou, spolu s respektovatelnou fyzickou ochranou, je toto hlavové příslušenství atraktivní volbou pro mnoho stalkerů, kteří hledají dobrou, ale ekonomicky vyváženou ochranu proti anomáliím a boji.\n \n
+	</text>
+</string>
+	
+<string id="helm_ppm88">
+	<text>Plynová maska «PPM-88»</text>
+</string>
+<string id="helm_ppm88_descr">
+	<text>Ruská plynová maska dobře přizpůsobená pro ekologická rizika CBRN. V Zóně může být považována za funkčního a duchovního nástupce masky GP-5 s podobnými celkovými vlastnostmi a významným zlepšením ochrany proti chemickým a radiologickým hrozbám. Je to dobrá volba, kterou většina stalkerů může používat po celou svou kariéru, pokud se příliš neúčastní bojů nebo nedělají něco podobně pošetilého.\n \n
+	</text>
+</string>
+<string id="helm_m50">
+	<text>Plynová maska «M50z»</text>
+</string>
+<string id="helm_m50_descr">
+	<text>M50z plynová maska upravená pro lepší funkčnost ve Zóně. Ačkoli některé z jejích ochranných vlastností jsou výsledkem toho skutečně trochu horší, tuto nevýhodu kompenzuje potřebným zvýšením ochrany před psychickými a radioaktivními jevy. Celkově se tato maska považuje za vylepšení oproti M40. Na rozdíl od M40 je však tato maska zakoupena přímo soukromými vojenskými společnostmi s výslovným účelem zásobování zóny žoldáky.\n \n
+	</text>
+</string>
+<string id="helm_ranger">
+	<text>Plynová maska «GP-10z» Ranger</text>
+</string>
+<string id="helm_ranger_descr">
+	<text>S využitím modelu «GP-10» byla tato plynová maska navržena především k ochraně nositele před Kontrolory a Poltergeisty. Úspěšnost je poněkud smíšená, ale tento model zůstává vynikající volbou pro ty, kteří potřebují ochranu před psychickými, tepelnými a střepinovými útoky.\n \n
+	</text>
+</string>
+	
+
+
+
+<!-- Novice outfits -->
+	<string id="novice_outfit_name">
+	<text>Kožená bunda</text>
+</string>
+<string id="novice_outfit_description">
+	<text>Zateplená kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a turistických bot. Oblékání volby mezi naivními nebo nezkušenými stalkery, veteráni ji považují za jen o málo lepší než chodit po Zóně jen v trenýrkách.\n \n
+	</text>
+</string>
+<string id="novice_outfit_camo_name">
+	<text>Bunda pro nadšence palných zbraní</text>
+</string>
+<string id="novice_outfit_camo_description">
+	<text>Zateplená kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a turistických bot. Dříve vlastněná typickým nadšencem do palných zbraní, má několik výhod oproti obyčejné bundě - konkrétně kamuflážní vzor a vyšší kvalitu materiálu spolu s lépe propracovaným systémem rovnoměrného rozložení váhy. Stále je však naprosto nedostačující pro drsné podmínky Zóny.\n \n
+	</text>
+</string>
+<string id="novice_outfit_tourist_name">
+	<text>Turistická bunda</text>
+</string>
+<string id="novice_outfit_tourist_description">
+	<text>Zateplená kožená bunda s integrovaným batohem, nošená přes útulný rolák, zasunutá do pevných džínů a turistických bot. Vypadá to, že předchozí majitel byl opravdovým milovníkem výletů. Prošlá volba materiálů a systém řízení hmotnosti dělají z této bundy užitečnější kus než většina kožených bund, ale stále není vhodná na nic víc než klidné procházky po hranicích Zóny.\n \n
+	</text>
+</string>
+<string id="csky_novice_outfit_name">
+	<text>Kožená bunda Jasné oblohy </text>
+</string>
+<string id="csky_novice_outfit_description">
+	<text>Lehce modrá kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a turistických bot. Tyto jednoduché obleky jsou ve velkém množství sestavovány švadlenami Jasné oblohy pro použití ve frakci. Není doporučeno nosit je mimo nejjižnější části Zóny.\n \n
+	</text>
+</string>
+<string id="dolg_novice_outfit_name">
+	<text>Kožená bunda Povinnosti</text>
+</string>
+<string id="dolg_novice_outfit_description">
+	<text>Tmavá kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a bojových bot. Původně používána pouze jako volnočasový oděv pro příslušníky Povinnosti, tyto jednoduché obleky nebyly určeny pro použití při aktivní službě. Zoufalé časy však občas vyžadují zoufalá opatření.\n \n
+	</text>
+</string>
+<string id="bandit_novice_outfit_name">
+	<text>Černá kožená bunda</text>
+</string>
+<string id="bandit_novice_outfit_description">
+	<text>Černá kožená bunda běžně spojovaná s bandity a zločinci Zóny. Většinou nošená k zastrašování nováčků z jiných frakcí, poskytuje velmi malou ochranu proti čemukoli víc než proti prudkému větru nebo občasným létajícím lahvím vodky.\n \n
+	</text>
+</string>
+<string id="bandit_novice_alt_outfit_name">
+	<text>Pancéřovaná kožená bunda</text>
+</string>
+<string id="bandit_novice_alt_outfit_description">
+	<text>Bundy jako tato se poprvé dostaly do oběhu mezi bandity díky zásobovateli Morganovi, zkorumpovanému dodavateli, který dříve patřil do frakce Povinnost. Poskytuje ochranu srovnatelnou se standardním vojenským oblečením. Stále to však není skvělá ochrana v Zóně, zejména ne při boji proti rozzuřeným nebo mstivým příslušníkům Povinnost.\n \n
+	</text>
+</string>
+<string id="redline_novice_outfit_name">
+	<text>Kožená bunda Redline</text>
+</string>
+<string id="redline_novice_outfit_description">
+	<text>Křiklavě červená kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a turistických bot. Samotná barva by měla být dostatečným důvodem, proč se vyhnout jejímu používání v Zóně.\n \n
+	</text>
+</string>
+<string id="svoboda_novice_outfit_name">
+	<text>Kožená bunda Svobody</text>
+</string>
+<string id="svoboda_novice_outfit_description">
+	<text>Kamuflážní kožená bunda nošená přes útulný rolák, zasunutá do pevných džínů a bojových bot. Tento oděv je typicky nošený příslušníky Svobody, když se cítí absolutně bezpečně - jinými slovy téměř nikdy.\n \n
+	</text>
+</string>
+
+
+<!-- Overcoats -->
+
+
+<string id="monolith_trenchcoat_outfit_name">
+	<text>Plášť frakce «Monolit»</text>
+</string>
+<string id="trenchcoat_freedom_brown_outfit_name">
+	<text>Těžký plášť frakce «Svoboda»</text>
+</string>
+<string id="trenchcoat_dolg_brown_outfit_name">
+	<text>Těžký plášť frakce «Povinnost»</text>
+</string>
+<string id="trenchcoat_outfit_name">
+	<text>Plášť</text>
+</string>
+<string id="trenchcoat_outfit_description">
+	<text>Dlouhý, tlustý plášť. Ochrana poskytovaná tímto oblečením se může velmi lišit v závislosti na ševci, ale obecně je jen o trochu méně zbytečná než kožená bunda. Přesto mnoho nových stalkerů na ni přísahá jen proto, že vypadá tak překrásně cool.\n \n
+	</text>
+</string>
+<string id="trenchcoat_brown_outfit_name">
+	<text>Těžký hnědý plášť</text>
+</string>
+<string id="trenchcoat_brown_outfit_description">
+	<text>Dlouhý, tlustý plášť nošený přes pozměněný vědecký oblek. Přestože se zdá, že byly z nějakého důvodu odebrány uzavřený cyklusový systém a několik dalších funkcí, výsledek je stále srovnatelný s mnoha základními stalkerskými obleky.\n \n
+	</text>
+</string>
+<string id="trenchcoat_green_outfit_name">
+	<text>Těžký zelený plášť</text>
+</string>
+<string id="trenchcoat_green_outfit_description">
+	<text>Dlouhý, tlustý zelený plášť nošený přes pozměněný vědecký oblek. Přestože se zdá, že byly z nějakého důvodu odebrány uzavřený cyklusový systém a několik dalších funkcí, výsledek je stále srovnatelný s mnoha základními stalkerskými obleky.\n \n
+	</text>
+</string>
+<string id="greh_trenchcoat_outfit_name">
+	<text>Těžký plášť frakce «Hřích»</text>
+</string>
+<string id="greh_trenchcoat_outfit_description">
+	<text>Dlouhý, tlustý, potřísněný krví plášť nošený přes pozměněný vědecký oblek. Přestože se zdá, že byly z nějakého důvodu odebrány uzavřený cyklusový systém a několik dalších funkcí, výsledek je stále srovnatelný s mnoha základními stalkerskými obleky.\n \n
+	</text>
+</string>
+	
+
+<!-- Exploration -->
+<string id="travel_outfit_name">
+    <text>Oblek «Voyager»</text>
+</string>
+<string id="travel_outfit_description">
+    <text>Stalkerský Oblek «Voyager» je sestavený v Zóně a byla vyrobena ručně místními řemeslníky jako prostředek přežití. Tato konkrétní vesta je vysoce kvalitní a určena pro dlouhodobý průzkum - disponuje překvapivě sofistikovaným systémem rozložení váhy a poskytuje nadměrnou ochranu proti životním faktorům Zóny, zejména radiologickým a chemickým hrozbám. Je oblíbenou volbou mnoha lovců artefaktů a dokonce i některých lovců mutantů. Její nejvýznamnější nevýhodou - kromě vysoké ceny ve srovnání s jinými stalker obleky - je naprostá beznadějnost v přestřelce. Je nepravděpodobné, že její předchozí majitel se s ní dobrovolně rozloučil.\n\n
+    </text>
+</string>
+
+<string id="nomad_outfit_name">
+    <text>Oblek «Nomad»</text>
+</string>
+<string id="nomad_outfit_description">
+    <text>Stalkerský Oblek «Nomad» je sestavený v Zóně a byla vyrobena ručně místními řemeslníky jako prostředek přežití. Tato konkrétní verze je vysoce kvalitní a přestože je celkově mnohem ochrannější než ostatní stalker obleky, cítí se mimořádně lehká a pohodlná při nošení. Je zřejmé, že ten, kdo tuto zbroj sestavil, byl velmi obeznámený s povahou Zóny a evidentně vložil do své práce velký důraz a péči - něco, co nemuselo platit o předchozím vlastníkovi. V každém případě je její kvalita vyrovnána pouze její cenou.\n\n
+    </text>
+</string>
+	<string id="antirad_outfit_name">
+    <text>Oblek «GP-5MvC»</text>
+</string>
+<string id="antirad_outfit_description">
+    <text>Antiradiační oblek «GP-5MvC» byl navržen ještě před objevením Mozkomorče a byl skutečně nošen samotnými Stalkery, kteří přinesli zprávy o neobvykle silných psi-vlnách na severu Armádních skladů. Oblek byl vyvinut některými častými návštěvníky 100 Rads a samotným Hostinským, který projekt finančně podporoval a později vydělal hodně peněz prodejem sad tohoto obleku. Od té doby byl oblek několikrát vylepšen, ale základní design (založený na obleku Sunrise) zůstal stejný. V jeho současné, modernizované verzi (GP-5M) jsou hlavními komponentami oblek Sunrise s speciálně ošetřenými tkaninami a více pryžovými částmi, stejně jako s větším počtem kapes. Běžná a stará, ale stále spolehlivá plynová maska GP-5 je integrována s lehkými kyslíkovými nádržemi nesenými na zádech. Hlavním cílem této výbavy bylo poskytnout mnohem větší ochranu proti radiaci než běžný Sunrise, aby byly cesty na severu méně nebezpečné. I když je často nazýván rozpočtovým oblekem SEVA, nedosahuje ani zdaleka jeho úrovně anomální ochrany. Oblek je určen k nošení v silně ozářených oblastech, ale nemá příliš velkou šanci proti silnějším anomálním polím. Verze C této výbavy navíc nese kamuflážní vzor různých odstínů zelené, umožňující nositeli snadno se skrýt v hustém porostu.\n\n
+    </text>
+</string>
+
+<string id="hybrid_outfit_name">
+    <text>Hybridní pancéřový oblek</text>
+</string>
+<string id="hybrid_outfit_description">
+    <text>Tento oblek, trochu neohrabané káčátko, byl vytvořen jedním z obranných výzkumných institutů v Kyjevě za účelem ochrany výzkumníků ve Zóně. Je zřejmé, že oblek byl vytvořen s omezeným rozpočtem, protože balistická zbroj v tkanině obleku zároveň způsobuje jeho slabší odolnost vůči anomálním jevům a poskytuje méně ochrany v přestřelce než vesta z berylia. Z tohoto důvodu žádné z těchto obleků nikdy nebylo oficiálně objednáno ukrajinskou vládou, ačkoli několik z nich se přesto dostalo do Zóny prostřednictvím podezřelých prostředků. Oblíbená volba Stalkerů, kteří chtějí slušnou obecnou ochranu, ale nemohou si dovolit něco lepšího.\n\n
+    </text>
+</string>
+
+<string id="wastelander_outfit_name">
+    <text>Oblek «Wastelander»</text>
+</string>
+<string id="wastelander_outfit_description">
+    <text>Oblek «Wastelander» je sestavený v Zóně a byl vyroben ručně místními řemeslníky jako prostředek pro přežití. Tato konkrétní výbava je neobvykle lehká ve srovnání s průměrnými Stalker obleky, ale disponuje prostornou vestou třídy IIIA a lehkými vložkami. Jedná se v podstatě o pohyblivější Stalker verzi obleku Berill-5M.\n\n
+    </text>
+</string>
+
+<!-- CS outfits -->
+	<string id="csky_light_novice_outfit_name">
+		<text>Lehké brnění «CS-1»</text>
+	</string>
+	<string id="csky_light_novice_outfit_description">
+<text>Lehké brnění , který nosí začínající výzkumníci frakce Jasná obloha. Poskytuje více než dostatečnou ochranu před anomálními jevy v bažinách, ale jen málo chrání před fyzickými hrozbami nebo radiologickými jevy.\n \n
+		</text>
+	</string>
+	
+	<string id="csky_light_outfit_name">
+<text>Pancéřová zbroj «CS-2a»</text>
+	</string>
+	<string id="csky_light_outfit_description">
+		<text>Modrá tělesná kombinéza určená k provádění rychlých pátracích operací v oblastech s nízkým rizikem - anomálních či jiných. Není určen pro boj v terénu nebo intenzivní přestřelky, i když by si v takových scénářích pravděpodobně stále vedl lépe než «CS-1».\n \n
+		</text>
+	</string>
+
+	<string id="csky_medium_outfit_name">
+		<text>Zbroj «CS-3a»</text>
+	</string>
+	<string id="csky_medium_outfit_description">
+		<text>Těžší, ale stále pohodlná výstroj, kterou nosí členové Jasné Oblohy a která poskytuje více než dostatečnou všeobecnou ochranu, zejména v boji. Brnění je však také vysoce vodivé a náchylné ke korozi.\n \n
+		</text>
+	</string>
+
+	<string id="csky_heavy_outfit_name">
+		<text>Zbroj «CS-3b»</text>
+	</string>
+	<string id="csky_heavy_outfit_description">
+		<text>Dříve standardní výstroj vydávaná útočným oddílům Jasné oblohy, po neslavném neúspěchu frakce proti NPP v roce 2011 slouží tato zbroj jako připomínka, že ani vynikající ochranný Bodysuit nezaručí bezpečnost na špatné straně perimetru. Brnění je schopné zastavit kulku z pistole a zároveň je jeho nositel přiměřeně chráněn před anomáliemi.\n \n
+		</text>
+	</string>
+
+	
+<!-- NBC outfits -->
+	<string id="nbc_outfit_name">
+		<text>Taktický oblek</text>
+	</string>
+	<string id="nbc_outfit_description">
+		<text>Oblek «Sunrise», jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+	
+	<string id="monolith_nbc_outfit_name">
+		<text>Taktický oblek Monolitu</text>
+	</string>
+	<string id="monolith_nbc_outfit_description">
+		<text>Oblek frakce Monolit, jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+
+	<string id="cs_nbc_outfit_name">
+		<text>Oblek «CS-2b»</text>
+	</string>
+	<string id="cs_nbc_outfit_description">
+		<text>Stalkerský oblek «CS-2b» jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+
+	<string id="nbc_merc_outfit_name">
+		<text>Taktický oblek «Twilight»</text>
+	</string>
+	<string id="nbc_merc_outfit_description">
+		<text>Žoldácký oblek «Twilight», jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+
+	<string id="nbc_freedom_outfit_name">
+		<text>«Strážce Svobody»</text>
+	</string>
+	<string id="nbc_freedom_outfit_description">
+		<text>Oblek «Strážce Svobody» jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+
+	<string id="nbc_dolg_outfit_name">
+		<text>Oblek «PS5-M»</text>
+	</string>
+	<string id="nbc_dolg_outfit_description">
+		<text>Oblek «PS5-M» jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli je jeho ochrana proti anomáliím nízká, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+
+	<string id="bandit_nbc_outfit_name">
+		<text>Taktický oblek «Sunset»</text>
+	</string>
+	<string id="bandit_nbc_outfit_description">
+		<text>Banditský oblek «Sunset», jehož vesta byla vyměněna za speciální kapsovou zátěžovou vestu. Ačkoli jeho balistická ochrana i ochrana proti anomáliím jsou nízké, je to solidní oblek pro mrchožrouta s omezeným rozpočtem.\n \n
+		</text>
+	</string>
+	
+	
+<!-- Assault vest -->
+	<string id="light_loner_outfit_name">
+		<text>Oblek «Interceptor»</text>
+	</string>
+	<string id="light_loner_outfit_description">
+		<text>Starý oblek «IBAz» dovezený ze Západu a upravený pro podmínky Zóny. Je trochu těžký, ale poskytuje slušnou ochranu proti anomáliím spolu s dobrými antibalistickými vlastnostmi. Tento oblek, který někdy nosí stalkerové najímaní jako pomocníci v boji mezi frakcemi, výrazně zvyšuje šanci na přežití v potyčce ve srovnání s běžnou stalkerskou výstrojí.\n \n
+		</text>
+	</string>
+	
+	<string id="light_freedom_outfit_name">
+<text>Obránce Svobody</text>
+	</string>
+	<string id="light_freedom_outfit_description">
+		<text>Tento oblek, o němž se říká, že je dodáván frakci Svoboda přímo z neznámého zdroje, vychází z poněkud zastaralého systému IBA, ale je upraven pro větší pohodlí při práci v podmínkách Zóny. Jedná se o slušnou neprůstřelnou vestu, jejíž zamýšlené použití v Zóně může být vhodnou ochranou jednotek, které mají napadnout lehce zakopané nepřátelské pozice.\n \n
+		</text>
+	</string>
+
+	<string id="light_voen_outfit_name">
+		<text>Armádní oblek «IBAz»</text>
+	</string>
+	<string id="light_voen_outfit_description">
+<text>Záchytný anomální systém tělesné zbroje, který patřil armádnímu Stalkerovi. Oproti standardnímu modelu je tento oblek pohodlnější na nošení a vyznačuje se celkově lepší ochranou proti anomáliím. Obvykle se nevydává odvedencům ani operátorům Spetsnaz, Vojenští stalkeři, kteří chtějí tento oblek používat, si jej obvykle musí objednat sami.\n \n
+		</text>
+	</string>
+
+	<string id="light_monolit_outfit_name">
+		<text>Útočný oblek Monolit «IBAz»</text>
+	</string>
+	<string id="light_monolit_outfit_description">
+		<text>Záchytný anomální systém tělesné zbroje, který se nějakým způsobem dostal do rukou Monolitu. Oproti standardnímu modelu je tento oblek o něco ergonomičtější a může se pochlubit větší ochranou proti psychickému rušení. Tyto vesty se do frakce obvykle dostávají prostřednictvím nešťastných pronásledovatelů, kteří uvíznou při pokusu o překročení Bariéry. Nejčastěji se s nimi Zóna setká až při další invazi Monolitu do Skladišť.\n \n
+		</text>
+	</string>
+
+	<string id="light_dolg_outfit_name">
+		<text>Univerzální ochranný oblek «IBAz» </text>
+	</string>
+	<string id="light_dolg_outfit_description">
+		<text>Starý oblek IBA dovezený ze Západu a upravený pro podmínky Zóny. Nepohodlně těžký na nošení i přenášení, varianta pro Povinnost zřejmě prošla rozsáhlými vylepšeními na ochranu proti chemickým zbraním. Je však nepravděpodobné, že by si Povinnost tyto obleky objednávala z vnějšího světa sama. Spíše se má za to, že jsou jednoduše renovovány a obnovovány poté, co byly zachráněny z těl poražených anarchistů.\n \n
+		</text>
+	</string>
+
+	<string id="light_merc_outfit_name">
+		<text>Žoldácký oblek «IBAz»</text>
+	</string>
+	<string id="light_merc_outfit_description">
+		<text>Dobře udržovaný systém anomální neprůstřelné vesty Interceptor prodávaný přímo žoldákům z různých západních zdrojů. Tento oblek je sice trochu nepohodlný, ale celkově lepší než standardní model kolující po Zóně. Je určen k tomu, aby Žoldnéři mohli plnit kontrakty, které vyžadují lehké útoky na opevněné nepřátelské pozice v Zóně.\n \n
+		</text>
+	</string>
+	
+	<string id="light_isg_outfit_name">
+		<text>Oblek UNISG «IBAz»</text>
+	</string>
+	<string id="light_isg_outfit_description">
+		<text>Silný, ale poněkud zastaralý bojový oblek upravený tak, aby svému nositeli navíc poskytoval odpovídající anomální ochranu. Tento oblek je naprosté minimum, které by měl člověk nosit v situacích, kdy se konflikt s ozbrojenými silami SSU zdá nevyhnutelný. Není také špatnou volbou pro průzkumníky OSN, kteří hodlají podnikat lehké nájezdy do nesčetných laboratoří Zóny.\n \n
+		</text>
+	</string>
+
+<!-- Sunrise suits «  » -->
+	<string id="stalker_outfit_name">  
+		<text>Oblek «Sunrise»</text>
+	</string>
+	<string id="stalker_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Oblek Sunrise, vyrobený z dvouvrstvé pogumované látky s podšívkou z plexiskla a integrovaným pancířem, je jedním z nejstarších existujících stalkerských obleků. Je také všeobecně považován za MINIMUM ochrany, které by měl stalker mít pro vážné výpravy do Zóny. 
+		      Navzdory tomu se těší obrovské oblibě mezi nováčky i zkušenými stalkery díky svému ekonomickému využití a velkému potenciálu úprav.\n \n
+			  \n%c[d_purple] - %c[ui_gray_2] Frakce : Samotáři </text>
+	</string>
+
+	
+	<string id="stalker_outfit_camo_name">
+		<text>Oblek «Chameleon»</text>
+	</string>
+	<string id="stalker_outfit_camo_description">
+		<text>NOT IN GAME. Camouflaged during assembly, this DIY stalker Bodysuit is a combination of twin-layered rubberized cloth with Plexiglas lining and built-in body armor. Despite the fact that the body armor is often strained by anything beyond even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential.\n \n
+		</text>
+	</string>
+
+	<string id="stalker_outfit_alt_name">
+		<text>Oblek «Hipster»</text>
+	</string>
+	<string id="stalker_outfit_alt_description">
+		<text>NOT IN GAME. This DIY stalker Bodysuit is a combination of twin-layered rubberized cloth with Plexiglas lining and built-in body armor. Despite the fact that the body armor is often strained by anything beyond even pistol bullets, the suit enjoys great popularity due to its low cost and modification potential.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_drought_outfit_name">
+		<text>Oblek «Drought» </text>
+	</string>
+	<string id="stalker_drought_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Na stalkerský oblek disponuje «Drought» nepatrně lepší balistickou ochranou, než je průměr, ale je také podstatně méně pohodlný při nošení. Na druhou stranu je vybaven několika otvory na opasek. Tyto otvory jsou sice určeny pro artefakty, ale nejčastěji se zaplňují velbloudy, aby se kompenzovala zvýšená hmotnost obleku, což mu částečně vysloužilo ironickou přezdívku "Sucho". Stejně jako Sunrise je nesmírně oblíbený pro svou relativně nízkou cenu a velký modifikační potenciál.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_predator_outfit_name">
+		<text>Oblek «Predator»</text>
+	</string>
+	<string id="stalker_predator_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Oblek «Predator», který je celkovým vylepšením obleku «Drought», se vyznačuje podobnou ochranou při přestřelce a zároveň je výrazně pohodlnější na nošení. Z tohoto důvodu může být oblíbenou volbou mezi všemi stalkery, kteří potřebují o něco větší ochranu a mnohem větší mobilitu, než jakou jim může poskytnout průměrný stalkerský oblek. Stejně jako většina stalkerských obleků se těší oblibě mezi zelenáči i experty díky nízkým nákladům na údržbu a velkému potenciálu úprav.
+		</text>
+	</string>
+	
+	<string id="stalker_autumn_outfit_name">
+		<text>Oblek «Autumn»</text>
+	</string>
+	<string id="stalker_autumn_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Tento oblek je oblíbený mezi novějšími lovci artefaktů a kreativními nájemnými vrahy, protože umožňuje buď procházet chemickými anomálními poli - nebo se v nich ukrývat - s mnohem větší lehkostí, než by to normálně umožňoval stalkerský oblek. Je také o něco pohodlnější na nošení než průměrný stalkerský oblek, přestože má navíc zvýšenou balistickou ochranu. Jelikož je jen o něco málo dražší než oblek Sunrise, je dobrou volbou pro stalkery, kteří chtějí za své rubly utratit trochu víc.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_vineleaf_outfit_name">
+		<text>Oblek «Vineleaf»</text>
+	</string>
+	<string id="stalker_vineleaf_outfit_description">
+		<text>NOT IN GAME. A higher quality version of the regular Sunrise Bodysuit, made of more resistant and expensive materials. The main build of the suit is pretty much the same as that of basic Sunrise, but the use of higher quality materials lead to increased protective qualities without a significant increase in weight. The suit is also more durable and has a potential for more advanced modifications. The "Vineleaf" version is mainly focused of increasing the wearer's mobility and comfort without reducing its protective qualities. It achieves this goal by the use of a more flexible, thermoactive fabric; the outfit slightly shrinks when exposed to a high heat. Stalkers who just bought the outfit make their way to the nearest thermal anomaly and stand next to it for a while - the outfit then shrinks and fits their body perfectly as a result. Even though it sounds dangerous, nobody ever reported the suit disturbing their blood flow. This fabric also seems to be a bit more difficult to cut, therefore making the suit grant more protection from attacks of weaker mutants. One last quality of this suit is that its inner layer is treated with a compound which slightly cools the body, increasing comfort. As its name suggests, "Vineleaf" bears a camouflage in colors similar to that of a vine or ivy leaves. The pattern consists of large, irregularly shaped spots of lighter and darker shades of the colour.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_bear_outfit_name">
+<text>"Bear" Stalkerský oblek</text>
+	</string>
+	<string id="stalker_bear_outfit_description">
+		<text>Oblek sestavený v Zóně, ručně vyrobený místními řemeslníky v rámci přežití. Je o něco těžší než jiné stalkerské obleky, přesto si ho někteří berou s sebou kvůli lepší ochraně proti balistice a silné izolaci proti tepelným hrozbám. Bohužel této izolace není dosaženo pomocí běžných látek, ale spíše pomocí nejmenované podomácku vyrobené anomální směsi vytvořené metodou pokusů a omylů. Vedlejším účinkem je, že tělo nositele je mnohem náchylnější k přetížení elektrickými výboji. Nejčastěji ji používají stalkerové pracující v anomáliích Burner poblíž Yantaru.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_salamander_outfit_name">
+		<text>Stalkerský oblek "Salamander"</text>
+	</string>
+	<string id="stalker_salamander_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Tento oblek byl navržen pro stalkery, kteří kladou důraz na pozorování a průzkum - na stalkerský oblek má přibližně průměrnou ochranu v boji (kterému se lze vyhnout) nebo proti anomáliím (které lze spatřit), ale poskytuje výjimečnou obranu proti radiaci. Dobrá volba pro ty, kteří si velmi dobře uvědomují své okolí a jednoduše potřebují něco, co by odvrátilo neviditelného zabijáka. Ironií je, že na to, že se mu přezdívá "Salamandr", vykazuje slabou schopnost bezpečně odvádět teplo. Stejně jako všechny stalkerské obleky je však ekonomickou volbou s velkým potenciálem vylepšení.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_graphite_outfit_name">
+<text>Oblek "Graphite"</text>
+	</string>
+	<string id="stalker_graphite_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Byl nezávisle navržen několika optimistickými stalkery, kteří očekávali, že budou provádět měření psy-storm v otevřeném prostoru. Tato snaha samozřejmě ztroskotala, ale jejich návrhy byly později obnoveny a použity k výrobě stalkerského obleku, který je schopen chránit nervovou soustavu svého nositele. Poněkud náchylný k přehřátí a nepříliš dobrý proti úniku chemikálií. Mezi moderními stalkery se často a poněkud zastarale vtipkuje, že oblek hodí na zem a pak dělají, že tam není.\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_tigerstripe_outfit_name">
+		<text>Oblek "Tigerstripe" </text>
+	</string>
+	<string id="stalker_tigerstripe_outfit_description">
+		<text>Oblek sestavený v Zóně, který byl ručně vyroben místními řemeslníky v rámci přežití. Tento oblek, jeden z těžších dostupných stalkerských obleků, byl navržen pro ty, kteří si raději vydělávají jako nájemní vrazi nebo bojovníci, než aby plenili artefakty nebo stahovali mutanty z kůže. Ve srovnání s průměrným stalkerským oblekem poskytuje nepatrně lepší ochranu proti balistice a skutečně lepší obranu proti střepinám, řezným a tupým nárazům. Ve srovnání s mnoha jinými bojovými obleky však hlavní předností tohoto oděvu je prostě to, jak levná je jeho údržba.\n \n
+		</text>
+	</string>
+
+	<string id="ecologist_guard_outfit_name">
+		<text>ISRIT Guard Jumpsuit</text>
+	</string>
+	<string id="ecologist_guard_outfit_description">
+		<text>Základní oblek původně určený jako náhradní vybavení pro "Vědecký výzkumný a vyšetřovací tým Iskra" profesora Hermanna, od té doby se stal relativně levnou ochrannou kombinézou pro strážce Ekologů pracující po celé Zóně. Na svou cenu se může pochlubit více než dostatečnou ochranou proti anomáliím, ale obecně má problém zastavit více než kulku z pistole. Většina strážců si raději pořídí SEVA nebo SSP-99M, když mohou. Ti, kteří se chtějí účastnit vážných bojových akcí, si raději pořídí pořádné vojenské bojové obleky.\n \n
+		</text>
+	</string>
+
+	<string id="cs_stalker_outfit_name">
+		<text>Brnění CS-2b</text>
+	</string>
+	<string id="cs_stalker_outfit_description">
+    <text>Na rozdíl od ostatních obleků ze série CS-1, 2 a 3 byla tato balistická vesta vytvořena až po masivních ztrátách frakce v jaderné elektrárně v Černobylu. Je široce považována za první skutečného nástupce obleku CS-1, protože se zaměřuje na ochranu nositele před anomálním prostředím spíše než na vyzbrojení pro boj. Poskytuje dostatečnou fyzickou ochranu a dobrou odolnost vůči prostředí.\n\n</text>
+	</string>
+
+
+<!-- STS (Special Tactical Suits) -->
+<string id="svoboda_light_outfit_name">
+    <text>Vítr svobody</text>
+</string>
+<string id="svoboda_light_outfit_description">
+    <text>Tento pohodlný oděv pro stalkery byl vyroben řemeslníky z Frakce Svobody. Tkanina obleku je ošetřena přípravkem Horizon, speciálním řešením vyvinutým frakcí metodou pokusů a omylů, aby zvýšila odolnost vůči chemickým anomáliím. Jaké by mohly být vedlejší účinky, lze pouze odhadovat.\n\n
+    </text>
+</string>
+
+<string id="monolith_outfit_name">
+    <text>Oblek Monolith X-18</text>
+</string>
+<string id="monolith_outfit_description">
+    <text>Tajemný oděv spojený s frakcí Monolith. Skládá se z oděvu proti prostředí, který poskytuje více než dostatečnou chemickou a radiační ochranu, pod pancéřovou vestou schopnou zastavit slabé pistolové náboje. Jeho ochrana proti anomáliím je však podprůměrná. Dříve neznámého původu bylo mnoho těchto obleků nalezeno v kontejnerech a skříních pod zařízením X18 v Dark Valley. I když všichni stalkři, kteří tuto zásobu našli, od té doby záhadně zmizeli, toto objevení přesto vyvolalo tisíce konspiračních teorií mezi stalkři jiných frakcí, z nichž mnohé tvrdí, že tyto obleky pocházejí ještě před vznikem Zóny samotné.\n\n
+    </text>
+</string>
+
+<string id="bandit_sun_outfit_name">
+    <text>Taktický oblek "Západ slunce"</text>
+</string>
+<string id="bandit_sun_outfit_description">
+    <text>Oblek sestavený v Zóně, vyrobený místními řemeslníky jako prostředek přežití. Jeho design se zdá být inspirován Speciálním taktickým oblekem, ale nese zvlášť znepokojující podobnost s oblekem Monolith X-18, který byl zbaven běžných NBC vlastností ve prospěch lepší izolace před tepelnými a elektrickými hrozbami. Většinou ho používají Bandité v Dark Valley k likvidaci poltergeistů, kteří občas uniknou z místní laboratoře.\n\n
+    </text>
+</string>
+
+<string id="merc_sun_outfit_name">
+    <text>Taktický oblek "Soumrak" </text>
+</string>
+<string id="merc_sun_outfit_description">
+    <text>Oblek sestavený v Zóně, vyrobený místními řemeslníky jako prostředek přežití. Je zřejmé, že zdejší žoldáci se inspirovali u Svobodných Stalkerů a začali vyrábět vlastní oděvy. Projevuje známky inspirace oděvem Monolith X-18 - oblekem, který si žoldáci bezesporu snaží získat ze svých nákladných střetů v Limansku. Celkově je to kvalitní oblek, většina žoldáků ho považuje za více než dostatečný pro operace střední úrovně na jihu u Radaru.\n\n
+    </text>
+</string>
+
+	<string id="merc_nighthunter_outfit_name">
+    <text>Žoldácká těžká taktická vesta STS-N</text>
+</string>
+<string id="merc_nighthunter_outfit_description">
+    <text>Někdy přezdívaná "Nighthunter", tato výbava je mírně těžký speciální taktický oblek, používaný žoldáky jak v nočních, tak ve městských bojových scénářích. Co se týče designu a výkonu, dokáže dobře vyvážit typickou výzbroj Spetsnaz a běžný stalker oblek. Má více než dostatečnou ochranu pro potyčky, ale je obecně považován za průměrný těmi, kteří dávají přednost smlouvám na lov artefaktů před plněním odstřelovačských úkolů.\n\n
+    </text>
+</string>
+
+<string id="merc_wolven_outfit_name">
+    <text>Žoldácká pohodlná taktická vesta STS-W</text>
+</string>
+<string id="merc_wolven_outfit_description">
+    <text>Někdy přezdívaná "Wolven", tato výbava je pohodlný speciální taktický oblek, používaný žoldáky jak při průzkumných expedicích, tak při tajných operacích. Tento oblek má dobrou ochranu proti anomáliím ve své třídě, což umožňuje nositeli pohybovat se - nebo se skrývat - v nebezpečných anomálních polích v relativní bezpečí. Přirozeně se hodí pro lov artefaktů, tato ochrana také umožňuje velkým skupinám žoldáků uskutečnit překvapivé přepady na nečekaných místech, což jim umožňuje eliminovat cíle, které jsou považovány za příliš obtížné pro běžné metody.\n\n
+    </text>
+</string>
+
+<string id="isg_outfit_name">
+    <text>UNISG Mk1 taktická ochranná vesta</text>
+</string>
+<string id="isg_outfit_description">
+    <text>Založený na poměrně standardním designu obleku používaném západními speciálními jednotkami, takovéto výbavy jsou běžné v mnoha armádách po celém světě. To je to nejmenší, co může očekávat operátor UNISG. Ve srovnání s dokonce základním žoldáckým oblekem LC je tato těžká výzbroj jakoby méně ochranná a lze ji považovat za sotva dostatečnou pro podmínky v Zóně. Přesto je to obrovský krok kupředu oproti uniformám nalezeným u ukrajinských branců.\n\n
+    </text>
+</string>
+
+<string id="isg_merc_outfit_name">
+    <text>UNISG Mk2 taktická ochranná vesta</text>
+</string>
+<string id="isg_merc_outfit_description">
+    <text>Vylepšení původního designu Mk-1, tato výbava je mnohem lépe přizpůsobena podmínkám v Zóně. Celková ochrana proti anomáliím je více než dostatečná a poskytuje zvláště vysokou ochranu proti chemickým, toxickým nebo tepelným hrozbám. Tato vylepšení byla objednána UNISG na základě omezených údajů, které se podařilo získat o jejich méně šťastných předchůdcích. Přesto se nositelé jsou vyzýváni, aby se co nejvíce vyhýbali kontaktu s místními stalkery.\n\n
+    </text>
+</string>
+	
+	
+<!-- LCS (Light Combat Suit) -->
+<string id="merc_outfit_name">
+    <text>Žoldácký oblek LC</text>
+</string>
+<string id="merc_outfit_description">
+    <text>Oblek "Light Combat Suit" je jedním z nejběžnějších oděvů používaných žoldáky v Zóně. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. Díky speciálnímu zpracování látky má zbroj posílenou stabilitu při fyzickém pohybu svých plátů. Dostačující pro základní operace, ale ve srovnání se standardní výzbrojí Spetsnaz je kvalitou velmi slabý a zřejmě nebyl navržen s ohledem na existenci anomálií.\n\n
+    </text>
+</string>
+
+<string id="merc_fighter_outfit_name">
+    <text>Žoldácký oblek LC-F</text>
+</string>
+<string id="merc_fighter_outfit_description">
+    <text>Někdy ho sarkasticky označují jako "Fighter", tento oblek je variací standardního LC obleku, který obětoval velkou část ochrany za zvýšenou mobilitu, lepší tepelnou ochranu a pás pro artefakty. Dokáže se překvapivě dobře uplatnit při operacích, kde je třeba tichosti a rychlosti, a proto ho používají omezeným způsobem průzkumníci a nájemní zabijáci žoldáků, kteří působí v méně radioaktivních částech Zóny.\n\n
+    </text>
+</string>
+
+<string id="banditmerc_outfit_name">
+    <text>Oblek LC s plotem</text>
+</string>
+<string id="banditmerc_outfit_description">
+    <text>Lehký bojový oblek získaný nekalými prostředky, který pomáhá ozbrojit místní bandy Banditů. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. Ironií osudu však vypadá, že ten, kdo tyto obleky dodával, své zákazníky ošidil. Celková ochrana této výzbroje je pro podmínky v Zóně extrémně slabá a výrazně horší než lehké bojové obleky používané žoldáky v Zóně. Přesto je alespoň pohodlný na nošení a lze ho považovat za lepší než to, co dostávají ukrajinští branci. Arguably.\n\n
+    </text>
+</string>
+
+<string id="renegademerc_outfit_name">
+    <text>Oblek LC Renegade</text>
+</string>
+<string id="renegademerc_outfit_description">
+    <text>Lehký bojový oblek získaný nekalými prostředky, který pomáhá ozbrojit místní skupiny Renegátů. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. Překvapivě příjemný na nošení, tento oblek poskytuje více než dostatečnou ochranu proti ručním zbraním, tržným ranám a errantním střepinám. Přesto není skutečně určen k použití v oblastech s vysokou radioaktivitou nebo anomální aktivitou, a proto se jen málo nositelů běžně objevuje hluboko v Zóně.\n\n
+    </text>
+</string>
+
+<string id="merc_sunset_outfit_name">
+    <text>Žoldácký oblek LCz</text>
+</string>
+<string id="merc_sunset_outfit_description">
+    <text>Žoldácký lehký bojový oblek upravený pro lepší použití v Zóně. S celkovými vylepšeními oproti standardnímu LC obleku je obecně považován za více než dostatečný pro lehké bojové střety, ale v anomálních oblastech je trochu nepohodlný. Přesto je to celkové zlepšení pro většinu nových žoldáků a - pro běžné použití - není špatnou alternativou k oblečení speciálních taktických obleků této frakce.\n\n
+    </text>
+</string>
+
+	<string id="merc_scout_outfit_name">
+    <text>Žoldácký oblek LC-S</text>
+</string>
+<string id="merc_scout_outfit_description">
+    <text>Přezdívaný "Scout", tento oblek je v podstatě upravený LC-F oblek, který slouží k vyplnění více specializovaného prostoru. I když je o něco těžší a méně ochranný v boji než LC-F, stále je to velmi pohodlný oblek. Díky levné ochraně prostředí je tento oblek dobrou volbou pro žoldáky, kteří chtějí prozkoumávat Zónu a její anomálie s omezeným rozpočtem.\n\n
+    </text>
+</string>
+
+<string id="merc_jackal_outfit_name">
+    <text>Žoldácký LTS-J bodysuit</text>
+</string>
+<string id="merc_jackal_outfit_description">
+    <text>Lehký taktický oblek, přezdívaný "Jackal" podle již mrtvého vůdce žoldáků, který byl před více než šesti lety pověřen prolomením laboratoře s názvem X-8. Tento oblek poskytuje více nebo méně dostatečnou ochranu před nebezpečími Zóny, ale to, co ho odlišuje, je nesmírně pohodlný pocit na těle a poměrně sofistikovaný systém distribuce váhy. To, spolu s relativně dostupnou cenou, ho činí oblíbeným mezi mírně zkušenými žoldáky.\n\n
+    </text>
+</string>
+
+<string id="merc_coyote_outfit_name">
+    <text>Žoldácký MTS-C bodysuit</text>
+</string>
+<string id="merc_coyote_outfit_description">
+    <text>Středně taktický oblek, přezdívaný "Coyote". Je široce považován za nástupce obleku LTS-J. Tento oblek se pyšní lepší fyzickou ochranou a je vybaven ještě lepším systémem distribuce váhy. Přirozeně je jeho cena vyšší než u svého předchůdce, ale to nezabrání většině žoldáků, aby si ho pořídili, jakmile na to budou mít možnost.\n\n
+    </text>
+</string>
+
+<string id="greh_armored_outfit_name">
+    <text>Flakové brnění Irij</text>
+</string>
+<string id="greh_armored_outfit_description">
+    <text>Pohodlný a ergonomický zbrojní oblek používaný pro výzbroj následovníků frakce «Hřích» hromadně. Skládá se z balistické vesty přes environmentální oblek. Poskytuje dostatečnou ochranu před anomáliemi a dobrou ochranu před střelnou palbou, což z nich činí dobrou posilu již tak odolných válečníků frakce «Hřích».\n\n
+    </text>
+</string>
+
+<string id="greh_armored_camo_outfit_name">
+    <text>Flakové brnění Vyriy</text>
+</string>
+<string id="greh_armored_camo_outfit_description">
+    <text>Pokročilejší varianta běžného flakového brnění frakce «Hřích» obvykle určená pro více loajální a oddané členy frakce. Oproti běžnému brnění poskytuje tento oblek zvýšenou ochranu před anomáliemi a posiluje sílu nositele nad rámec již často značného limitu.\n\n
+    </text>
+</string>
+
+<string id="dolg_voin_outfit_name">
+    <text>Oblek válečníka PS6-V</text>
+</string>
+<string id="dolg_voin_outfit_description">
+    <text>Moderní aktualizovaná varianta původního univerzálního ochranného bodysuitu PS5-M. Je více než dostatečný pro všechny podmínky Zóny a zároveň je pohodlný pro oblečení od Povinnosti. Původně měl nahradit svého předchůdce zcela, ale jeho vyšší výrobní náklady tento cíl zdržely vzhledem k množství nedávných ztrát frakce Povinnost.\n\n
+    </text>
+</string>
+	
+<string id="isg_lcs_outfit_name">
+    <text>UNISG LC Zbroj</text>
+</string>
+<string id="isg_lcs_outfit_description">
+    <text>Model "Light Combat Suit" upravený pro použití jednotkami UNISG. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. Ve srovnání s variantou žoldáků poskytuje lepší ochranu před anomáliemi, ale horší bojovou ochranu. Je vybaven vestou s vestavěnou zbrojí a moduly pro připojení dalšího pancíře, ale celkově je průměrný mimo základní operace ve Zóně.\n\n
+    </text>
+</string>
+
+<string id="isg_lcs_camo_outfit_name">
+    <text>UNISG LC-C Zbroj</text>
+</string>
+<string id="isg_lcs_camo_outfit_description">
+    <text>Upravený model "Light Combat Suit" přizpůsobený pro použití ve Zóně jednotkami UNISG. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. Přes svou lehkost a obecnou pohodlnost tento oblek poskytuje více než dostatečnou ochranu proti anomáliím a při přestřelkách s lehce ozbrojenými protivníky. Bohužel, proti střepinám, úderům nebo bodným ranám není příliš účinný.\n\n
+    </text>
+</string>
+
+<string id="isg_lcs_urban_outfit_name">
+    <text>UNISG LC-UC Zbroj</text>
+</string>
+<string id="isg_lcs_urban_outfit_description">
+    <text>Upravený model "Light Combat Suit" přizpůsobený pro použití v boji jednotkami UNISG. Jeho design je založen na obleku používaném speciálními jednotkami západních armád. V porovnání s mnoha dalšími obleky ve své třídě je v boji příznivější, ale stále nedosahuje úrovně, kterou by měl operátor Spetsnazu. Není doporučován pro použití v oblastech s vysokou anomální nebo radiologickou aktivitou.\n\n
+    </text>
+</string>
+
+
+<!-- Berill-5M Armoured Suits -->
+<string id="army_outfit_name">
+    <text>Armádní služební oblek</text>
+</string>
+<string id="army_outfit_description">
+    <text>Ochranný oblek s nízkou úrovní ochrany, který získává vládní byrokracie na zakázku nejnižšího uchazeče. Obvykle vydaný pilotům vrtulníků, řidičům tanků, personálu v zadní části bojového pole, brancům a vojákům. Poskytuje adekvátní ochranu před malými mutanti. I když je celková bojová ochrana lepší než kůžečky, které často nosí nováčci v jiných frakcích, to opravdu není mnoho.\n\n
+    </text>
+</string>
+
+<string id="specops_outfit_name">
+    <text>Obraná Vesta Berill-5M</text>
+</string>
+<string id="specops_outfit_description">
+    <text>Tento oděv zahrnuje vojenskou zbroj z řady PS5 s povlakem z berylla upravený pro použití v Zóně. Navržený pro intenzivní rychlé útočné operace, je to standardní výbava většiny operátorů Spetsnazu ve Zóně, ale vyžaduje kvalitní respirátor, aby vyrovnal své slabiny vůči radiaci a anomáliím. Občas bude tento oblek prodán obyčejným stalkerům výměnou za různé "služby".\n\n
+    </text>
+</string>
+
+<string id="specops_dolg_outfit_name">
+    <text>Bitevní zbroj PS5-B</text>
+</string>
+<string id="specops_dolg_outfit_description">
+    <text>Tento oděv zahrnuje vojenskou zbroj z řady PS5 s povlakem z berylla upravený pro použití v Zóně. Ve srovnání se standardním univerzálním ochranným oděvem PS5-M je tento oděv celkově ergonomičtější a ochrannější, ale je o něco méně izolovaný a poskytuje mnohem menší ochranu proti silným nárazům, jako je telekinetický útok poltergeista.\n\n
+    </text>
+</string>
+
+<string id="specops_merc_outfit_name">
+    <text>Žoldácký B-5M pancéřový oblek </text>
+</string>
+<string id="specops_merc_outfit_description">
+    <text>Spetsnazská zbroj "získaná" a upravená pro použití Žoldáky v Zóně. Poskytuje dobré fyzické zabezpečení a zároveň je mimořádně pohodlný na nošení, i když jeho slabiny vůči environmentálním nebezpečím vyžadují použití kvalitního plynové masky a helmy. Často ho nosí žoldáci, kteří dříve pracovali pro SSU.\n\n
+    </text>
+</string>
+
+<string id="specops_bandit_outfit_name">
+    <text>Pancéřový oblek B-5M</text>
+</string>
+<string id="specops_bandit_outfit_description">
+    <text>Sada zbroje řady PS5 s povlakem z berylla, získaná nekalými prostředky bandity ve Zóně. I když oblek ukazuje viditelné známky nenapravitelného opotřebení, je stále vynikající volbou pro boj, když je potřeba jak ochrana, tak pohyblivost. Nicméně není příliš doporučován pro použití v blízkosti anomálií.\n\n
+    </text>
+</string>
+
+<string id="svoboda_heavy_outfit_name">
+    <text>Strážce svobody</text>
+</string>
+<string id="svoboda_heavy_outfit_description">
+    <text>Sada Spetsnazské zbroje, která byla "osvobozena" pro použití ve frakci Svobody. Tento oblek byl upraven "Sovereignem", anomální sloučeninou vynalezenou frakcí zkoušením a omyly. Poskytuje rozumnou ochranu proti nebezpečím ve Zóně a zároveň je vhodný pro boj. Každý člen frakce Svobody, který se má podílet na obraně Barikády, se bude snažit získat tento oblek, nebo alespoň něco podobného.\n\n
+    </text>
+</string>
+
+	<string id="dolg_specops_red_outfit_name">
+<text>Veteránský bojový oblek BS5-B2</text>
+	</string>
+	<string id="dolg_specops_red_outfit_description">
+		<text>Tento oblek je souprava bývalé zbroje Spetsnaz, posílená o výraznější ochranu životně důležitých orgánů. Vynikající bojová kombinéza, ačkoli má nechvalně známou poruchovost v oblastech s extrémní anomální aktivitou. Navzdory tomu se veteráni služby tomuto obleku nevyhýbají a tvrdí, že když víte, jak anomálie rozpoznat, nepotřebujete velkou ochranu před nimi.\n \n
+		</text>
+	</string>
+
+<!-- PS5-M Universal protection suit -->
+	<string id="dolg_outfit_name">
+		<text>Univerzální ochranný oblek PS5-M</text>
+	</string>
+	<string id="dolg_outfit_description">
+<text>Tato starší verze služebního obleku je vhodnější pro rekruty, kteří mohou dávat přednost známosti stalkerských obleků před frontovou bojovou zbrojí. Na rozdíl od řady PSZ oblek poskytuje přiměřenou ochranu proti anomáliím a zároveň je schopen zastavit kulku z pistole.\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_scout_outfit_name">
+		<text>Vesta pro průzkumníky PS5-R</text>
+	</string>
+	<string id="dolg_scout_outfit_description">
+<text>Starý oblek Povinnosti, který byl vyvinut spolu s univerzálním ochranným oblečením PS5-M. Tato zbroj byla určena k ochraně průzkumníků Povinnosti v počátcích existence Zóny. V dnešní době jsou však jediné části Zóny, které zůstaly k prozkoumání, příliš nebezpečné pro lehký oblek, jako je tento. Proto jsou nyní tyto obleky většinou vyřazeny a jsou uchovávány v záloze pouze pro vystrojení rekrutů Povinnosti v zoufalých situacích.\n \n
+		</text>
+	</string>
+
+	<string id="dolg_red_outfit_name">
+		<text>Lovecký oblek PS5-M</text>
+	</string>
+	<string id="dolg_red_outfit_description">
+		<text>Mírně těžší varianta univerzálního ochranného obleku PS5-M, speciálně navržená pro Povinnost, kteří hodlají lovit mutanty. Malá část balistické ochrany je obětována ve prospěch mnohem lepší ochrany proti běžným útokům mutantů spolu s větší ochranou před prostředím, ve kterém se takoví mutanti pravděpodobně vyskytují. Srovnatelná i s moderními obleky pro službu.
+		</text>
+	</string>
+
+	<string id="svoboda_heavy_outfit_2_name">
+		<text>Strážce svobody</text>
+	</string>
+	<string id="svoboda_heavy_outfit_2_description">
+		<text>Zastaralá, o něco těžší stalkerská kombinéza vyrobená kdysi dávno řemeslníky Svobody. Ačkoli oblek zjevně získal místy opotřebení, i dnes se zhruba vyrovná většině ostatních základních stalkerských obleků. Polopravidelně se vyskytuje u veteránů Svobody. Přesto mladší Svobodní zaplatí za získání jednoho z těchto obleků i přes nos, a to jen kvůli úžasným příběhům, které tyto úctyhodné obleky za ta léta získaly.\n \n
+		</text>
+	</string>
+	
+	<string id="bandit_ps5_outfit_name">
+		<text>Univerzální ochranný oblek PS5-M</text>
+	</string>
+	<string id="bandit_ps5_outfit_description">
+<text>Zbroj jako tato se poprvé dostala do oběhu mezi bandity díky kvartýrmistru Morganovi, zkorumpovanému dodavateli, který dříve patřil k frakci Povinnost. Vzdává se části své fyzické ochrany ve prospěch většího pohodlí a obrany proti anomáliím. Tyto obleky jsou pro frakci Povinnost velkou bolestí a dostat je z rukou anarchistů, zločinců a vrahů je nevyřčenou prioritou.\n \n
+		</text>
+	</string>
+	
+	<string id="greh_ps5_outfit_name">
+		<text>Pancéřová zbroj Volos</text>
+	</string>
+	<string id="greh_ps5_outfit_description">
+		<text>Design této výstroje vychází z univerzální ochranné kombinézy PS5-M. Není známo, jak se tato zbroj dostala do vlastnictví frakce «Hřích». Nicméně Povinnost by neměl radost, kdyby věděl, že si jeho design brnění přivlastňují fanatici uctívající zónu, a pravděpodobně by z navrácení těchto obleků učinil nevyslovenou prioritu. Oblek sám o sobě je kvalitní a pro podmínky Zóny více než vhodný.\n \n
+		</text>
+	</string>
+
+		
+<!-- Skat-9 Military Armoured Suits -->
+	<string id="military_outfit_name">
+		<text>Pancéřový oblek Skat-9</text>
+	</string>
+	<string id="military_merc_outfit_name">
+		<text>Žoldácký Skat-9</text>
+	</string>
+	<string id="military_monolit_outfit_name">
+		<text> Skat-9 Frakce Monolit</text>
+	</string>
+	<string id="military_freedom_outfit_name">
+		<text>Skat-9 Frakce Svoboda</text>
+	</string>
+	<string id="military_sky_outfit_name">
+		<text>Pancéřový oblek CS-4b</text>
+	</string>
+	<string id="military_bandit_outfit_name">
+		<text>Armádní Pancéřový oblek Skat-9</text>
+	</string>
+	
+	<string id="military_outfit_description">
+		<text>Vynikající ochranný oblek pro Zónu. Toto těžké vojenské brnění je určeno pro velké bojové operace v anomálních oblastech. Skládá se z těžkého vojenského obrněného obleku PSZ-12p, vestavěného kompenzačního obleku a anomálního ochranného obleku Bodysuit. Brnění poskytuje vynikající ochranu proti poškození střelou a střepinami, aniž by výrazně omezovalo pohyblivost nositele. Ačkoli bylo toto brnění původně určeno výhradně pro vojenské stalkery a zkušené operátory Spetsnaz, občas se neznámou cestou dostane i do frakcí mimo armádu.\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_outfit_name">
+		<text>Brnění PSZ-9d </text>
+	</string>
+	<string id="dolg_heavy_outfit_description">
+		<text>První iterace tohoto brnění, vyvinutá obrannými výzkumnými ústavy v Kyjevě, začala jako jednoduchá stará souprava Spetsnaz PSZ-9 body armor, upravená pro Zónu. Její konstrukce byla od té doby v průběhu let neustále vylepšována, přesto kupodivu nikdy nepřevzala nové označení. V dnešní době je tato zbroj v nejnovějším provedení schopna zastavit kulku z pušky a obecně se může pochlubit skvělou ochranou proti nesčetným hrůzám Zóny. Hlavními nevýhodami jsou - přirozeně - jeho objemnost i cena. Je neobvyklé, že tak ceněná zbroj jako tato je vydávána každému chlapovi z Povinnosti, který se nějakým významným způsobem neprokázal.\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_pantsir_outfit_name">
+		<text>PSZ-7p Plášťová zbroj</text>
+	</string>
+	<string id="dolg_pantsir_outfit_description">
+		<text>Oblek "mezi", který je více ochranný než běžný univerzální ochranný oblek Povinnosti PS5, a přitom je levnější a jednodušší na výrobu než pořádná sada neprůstřelné vesty PSZ-9d. Je ideální pro střety, zachovává si balistickou a tepelnou ochranu plnohodnotného obleku PSZ, ale jinak je za většiny ostatních okolností horší. Přesto je jeho relativně snadná údržba a oprava velkým přínosem pro Povinnost daleko od přátelského území, jako jsou vyšetřovatelé, kteří se vydávají do Janova nebo dál. Celkově je to skvělý oblek, i když vykazuje vysokou míru selhání při elektrických nehodách, bouřkách a útocích poltergeistů.\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_redline_outfit_name">
+		<text>PSZ-9kl Velitelská zbroj</text>
+	</string>
+	<string id="dolg_heavy_redline_outfit_description">
+		<text>Varianta zbroje řady PSZ, která obětuje část ochrany proti anomáliím za výrazně zvýšenou bezpečnost proti výbuchům a extrémním tupým nárazům. Tento oblek si oblíbil zesnulý podplukovník Shulga, který se jen zřídkakdy vydával mimo svou operační základnu v Janově, přesto se neustále obával atentátu z rukou Svobody. Těžká ochrana, jako je tato, tedy dokonale vyhovovala jeho potřebám. Osud tomu chtěl, že místo toho byl později považován za mrtvého poté, co vedl se svým kontingentem vojáků hromadný útok na Pripyat, a už ho nikdy nikdo nespatřil. Sympatizanti Povinnost nezřídka tvrdí, že jeho oběť získala Zóně drahocenný čas, protože zpomalila náhlé oživení Monolitu, a veteráni Povinnosti občas nosí podobné obleky do bitvy na jeho počest.\n \n
+		</text>
+	</string>
+
+
+
+<!-- Scientific outfits -->
+	<string id="scientific_outfit_name">
+<text>SEVA oblek</text>
+</string>
+<string id="scientific_outfit_description">
+<text>Tento oblek byl navržen a vyroben jedním z obranných výzkumných institutů v Kyjevě a představuje vynikající alternativu k ručně vyráběným stalkerovým oblekům. Kombinuje CBRN skafandr s vestou z kevlaru třídy II, která byla speciálně upravena. Díky použitým kvalitním materiálům má tento tělový oblek dobrou odolnost v prostředí anomálních polí. Nicméně je drahý a není tak účinný jako modernější brnění nebo CBRN systémy.\n \n
+</text>
+</string>
+
+<string id="svoboda_scientific_outfit_name">
+	<text>Strážce Svobody</text>
+</string>
+<string id="svoboda_scientific_outfit_description">
+	<text>Vyrobeno svobodskými řemeslníky speciálně pro pozorování anomálních jevů v Zóně. Speciálně upravené materiály poskytují dobrou ochranu a odolnost obleku při dlouhodobém pohybu v anomálních polích. Nicméně vestavěná zbroj "Strážce" není účinná proti střelám středního a vysokého kalibru.\n \n
+	</text>
+</string>
+<string id="monolith_scientific_outfit_name">
+	<text>Vědecký oblek Monolitu</text>
+</string>
+<string id="monolith_scientific_outfit_description">
+	<text>Vědecký oblek Monolitu zahrnuje balistickou vestu neznámého původu a také obsahuje jedinečné modifikace pro větší odolnost proti radiaci na úkor zvýšené zranitelnosti vůči psychickým polím. Ochrana před anomáliemi a odolnost obleku jinak odpovídají standardnímu tělovému obleku SEVA. Podle některých legend jsou tyto obleky nejčastěji nošeny vojáky, kteří brání Mysliscatele v Radaru, ale nikdo mimo frakci Monolit nemůže snadno potvrdit tuto informaci.\n \n
+	</text>
+</string>
+<string id="cs_scientific_outfit_name">
+	<text>CS-4a SEVA oblek</text>
+</string>
+<string id="cs_scientific_outfit_description">
+	<text>Neoficiální verze vědeckého obleku SEVA, který je nově získáván pašováním. Typicky používán průzkumnými skupinami frakce Jasná obloha. Poskytuje dobrou ochranu před radiací, ale jinak je průměrné kvality pro oblek SEVA.\n \n
+	</text>
+</string>
+<string id="cs_scientific_outfit_good_name">
+	<text>CS-4a Pathfinder</text>
+</string>
+<string id="cs_scientific_outfit_good_description">
+	<text>Neoficiální verze vědeckého obleku SEVA, který byl podstatně vylepšen Novikovem, technikem frakce Jasná obloha. Kromě vynikající ochrany a odolnosti v anomálních polích je také extrémně pohodlný při pohybu. Tyto vlastnosti z něj udělaly vysoce žádaný oblek mezi členy frakce Jasná obloha a dalšími frakcemi.\n \n
+	</text>
+</string>
+<string id="bandit_scientific_outfit_name">
+	<text>Uloupený SEVA oblek</text>
+</string>
+<string id="bandit_scientific_outfit_description">
+	<text>Bandity nikdy nezajímala věda a výzkum anomálních polí, ale přesto používají ochranné obleky jako tento k organizování přepadení a útoků na stalkery tam, kde je nikdo nečeká: v anomálních polích a radiacích. Oblek má vnější izolační povlak, který poskytuje dobrou ochranu proti všem druhům anomálních účinků. Kvůli absenci ochrany proti fyzickým nárazům se oblek ideálně používá k přepadení nepodezřívajících obětí.\n \n
+	</text>
+</string>
+
+	<string id="isg_scientific_outfit_name">
+<text>UNISG SEVA Oblek</text>
+</string>
+<string id="isg_scientific_outfit_description">
+<text>Původně vytvořen první iterací UNISG v jednom z obranných výzkumných institutů v Kyjevě pro výzkum v Zóně. Speciální materiály poskytují vylepšenou ochranu a odolnost proti radiaci a anomálním účinkům. Nicméně vestavěná balistická ochrana je snadno překonána většinou druhů střeliva.\n \n
+</text>
+</string>
+
+<string id="merc_scientific_outfit_name">
+    <text>Žoldácká SEVA</text>
+</string>
+<string id="merc_scientific_outfit_description">
+    <text>Variantu obleku SEVA, kterou objednali Žoldáky. Používána zkušenými veterány Mercs při smluvním sběru artefaktů, tento oblek poskytuje dobrou ochranu proti anomáliím pro SEVA. Nicméně mu chybí některé z nejnovějších vylepšení proti psy-účinkům.\n \n
+    </text>
+</string>
+<string id="merc_combat_scientific_outfit_name">
+    <text>Žoldácký Pathfinder</text>
+</string>
+<string id="merc_combat_scientific_outfit_description">
+    <text>Jako gesto dobroty (a k pokrytí nákladů na výzkum) Jasná obloha občas vyrábí žádané obleky "Pathfinder" na zakázku pro použití mezi Žoldáky v Zóně. Ve srovnání se standardním oblekem SEVA je tento model přesnější ve všech směrech. Ve srovnání s původním modelu CS-4a Pathfinder tento oblek obětuje ochranu proti chemickým anomáliím a radiaci za výměnu za balistickou vestu třídy IIIA.\n \n
+    </text>
+</string>
+<string id="dolg_scientific_outfit_name">
+    <text>Univerzální vědecký oblek PS5-9Md</text>
+</string>
+<string id="dolg_scientific_outfit_description">
+    <text>Verze obleku frakce Povinnost základního modelu obleku SEVA. Stejně jako standardní varianta obleku se skládá z odolného skafandru odolného proti anomáliím CBRN a speciálně ošetřené vesty z Kevlaru třídy II. Solidní oblek pro dlouhé ponoření do anomálních polí.\n \n
+    </text>
+</string>
+<string id="dolg_scientific_red_outfit_name">
+    <text>Lehký vědecký oblek PS5-9Md</text>
+</string>
+<string id="dolg_scientific_red_outfit_description">
+    <text>Lehčí varianta vědeckého obleku frakce Povinnost, která ztratila téměř polovinu své hmotnosti na úkor mírně snížené ochrany. Balistická zbroj byla nahrazena vestou třídy IIA s několika kapsami.\n \n
+    </text>
+</string>
+<string id="dolg_scientific_wood_outfit_name">
+    <text>Lehký Pathfinder PS5-9Md</text>
+</string>
+<string id="dolg_scientific_wood_outfit_description">
+    <text>Jako gesto dobroty (a k pokrytí nákladů na výzkum) Jasná obloha občas vyrábí žádané obleky "Pathfinder" na zakázku pro použití mezi členy frakce Povinnost. Tento oblek byl upraven podle potřeb Povinnost a má několik rozdílů ve srovnání s modelem CS-4a Pathfinder. Jeho váha byla snížena téměř o polovinu na úkor části ochrany. Přesto je vynikajícím a pohodlným oblečením pro zvídavější členy Povinnosti.\n \n
+    </text>
+</string>
+	
+	<string id="bandit_scientific_dark_outfit_name">
+		<text>Patchworkový oblek pro anomálie</text>
+	</string>
+<string id="bandit_scientific_dark_outfit_description">
+    <text>Oblek podobný obleku SEVA, který byl prakticky vytvořen od základu jedním z talentovaných řemeslníků Banditů. Ve srovnání s obleky SEVA, které jsou uloupeny a opraveny, tento remízkový oblek se pyšní průměrnou ochranou proti anomáliím při překvapivě nízké váze. Navíc je poměrně stylový a pohodlný, což mu umožnilo stát se hitem mezi hladkými zločinci, kteří si jej mohou dovolit.\n \n
+    </text>
+</string>
+<string id="renegade_scientific_outfit_name">
+    <text>SEVA oblek Odpalíků</text>
+</string>
+<string id="renegade_scientific_outfit_description">
+    <text>Tento pohodlný skafandr, původně určený pro výzkum v Zóně, je skvělou alternativou k různým lehkým bojovým nebo ručně vyrobeným oblekům, ke kterým by mohl mít člověk přístup. Ve srovnání se standardním oblekem SEVA poskytuje lepší ochranu proti tepelným nebezpečím a tupým poraněním. Nicméně jeho další ochranné vlastnosti jsou horší než u původního obleku SEVA.\n \n
+    </text>
+</string>
+<string id="merc_scientific_armored_outfit_name">
+    <text>Pancéřový SEVA oblek</text>
+</string>
+<string id="merc_scientific_armored_outfit_description">
+    <text>Variant obleku SEVA, který byl objednán od Žoldáků. Některé z jeho systémů ochrany proti životnímu prostředí byly redukovány, aby se vešly desky třídy IIIA. Používají ho zkušení najatí vojáci, kteří mají za úkol vést výzkumníky a lovce artefaktů v nebezpečnějších částech Zóny.\n \n
+    </text>
+</string>
+<string id="monolith_scientific_light_outfit_name">
+    <text>Patchworkový vědecký oblek Monolithu</text>
+</string>
+<string id="monolith_scientific_light_outfit_description">
+    <text>Oblek podobný obleku SEVA, který byl prakticky vytvořen neznámým řemeslníkem. Ve srovnání s obyčejným vědeckým oblekem Monolithu je tento oblek lehčí a poskytuje lepší ochranu proti chemickým popáleninám a radiaci. Nicméně jeho další vlastnosti utrpěly. Je neznámo, jakou roli tento oblek plní v rámci frakce Monolith jako celku, ačkoli se spekuluje, že je převážně ceremoniálního charakteru.\n \n
+    </text>
+</string>
+<string id="ace_outfit_name">
+    <text>Oblek ACE Scientific</text>
+</string>
+<string id="ace_outfit_description">
+    <text>Jedna z nejtechnologicky vyspělých skafandrů v Zóně. Systém pancíře ACE zahrnuje nejmodernější CBRN a kapsářskou vestu z kevlaru s vložkami třídy III. Díky použití materiálů jako jsou selektivně propustné povlaky tento oblek zajišťuje maximální ochranu proti anomáliím a zároveň pohodlí uživatele. Tento oblek používají pouze nejbohatší a nejzkoumavější Mercenáři, kvůli relativně nízké balistické ochraně, kterou poskytuje ve své cenové kategorii.\n \n
+    </text>
+</string>
+
+
+<!-- SSP-99 -->
+	<string id="st_ecologist_outfit_orange_name">
+		<text>Oblek SSP-99</text>
+	</string>
+	<string id="st_ecologist_outfit_orange_description">
+		<text>SSP-99 je CBRN oblek současné generace speciálně navržený pro podmínky Zóny. Je používán vědeckými expedicemi při delších výpravách do anomálních oblastí. V kombinaci se stínící přilbou SSP-99 obsahuje integrovaný systém filtrace a klimatizace vzduchu. Samotný oblek je tepelně a elektricky odolný a poskytuje dobrou ochranu před radiací a biologickými anomáliemi. Jeho konstrukce je speciálně uzpůsobena pro maximální odolnost v tepelných, chemických a elektrických polích. Neposkytuje však ochranu proti střelám ani střepinám.\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_grn_name">
+		<text>Oblek SSP-99M</text>
+	</string>
+	<string id="st_ecologist_outfit_grn_description">
+		<text>Vysoce kvalitní modifikovaný oblek SSP-99. Do obleku byla přidána kevlarová spodní vrstva, která snižuje riziko propíchnutí obleku nepřátelskými mutanty. Ve srovnání s oblekem SSP-99 poskytuje lepší ochranu před biologickými anomáliemi.\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_white_name">
+<text>SSP-99 Diamant</text>
+	</string>
+	<string id="st_ecologist_outfit_white_description">
+		<text>SSP-99 je oblek CBRN současné generace speciálně navržený pro podmínky zóny. Je používán vědeckými expedicemi při delších výpravách do anomálních oblastí. V kombinaci s doprovodnou přilbou SSP-99 obsahuje integrovaný systém filtrace a klimatizace vzduchu. Varianta Diamond poskytuje vynikající ochranu před elektrickým proudem.\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_blue_name">
+		<text>SSP-99M Sapphire</text>
+	</string>
+	<string id="st_ecologist_outfit_blue_description">
+		<text>Vysoce kvalitní modifikovaný oblek SSP-99. Do obleku byla přidána kevlarová spodní vrstva, která snižuje riziko propíchnutí obleku nepřátelskými mutanty. Safírový model poskytuje vynikající ochranu proti psi-emisím krátkého dosahu.\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_red_name">
+		<text>SSP-99Ě Rubín</text>
+	</string>
+	<string id="st_ecolog_outfit_red_description">
+		<text>Vysoce kvalitní modifikovaný oblek SSP-99. Do obleku byla přidána kevlarová spodní vrstva, která snižuje riziko propíchnutí obleku nepřátelskými mutanty. Model "Ruby" poskytuje lepší ochranu proti útokům zblízka a obsahuje integrovaný systém hojení zranění.\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_yello_name">
+		<text>SSP-99 Topaz</text>
+	</string>
+	<string id="st_ecologist_outfit_yello_description">
+		<text>SSP-99 je oblek CBRN současné generace speciálně navržený pro podmínky Zóny. Je používán vědeckými expedicemi při delších výpravách do anomálních oblastí. V kombinaci s doprovodnou přilbou SSP-99 obsahuje integrovaný systém filtrace a klimatizace vzduchu. Varianta Topaz poskytuje zvýšenou ochranu před radiací.\n \n
+		</text>
+	</string>
+
+<!-- Heavy combat suits -->
+	<string id="exolight_outfit_name">
+    <text>Exovesta</text>
+</string>
+<string id="exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím.\n \n
+    </text>
+</string>
+<string id="dolg_exolight_outfit_name">
+    <text>PSZ-10d Bojový oblek Povinnosti</text>
+</string>
+<string id="dolg_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Tento oblek se obvykle nachází v rukou elitních bojovníků frakce Povinnost, zejména těch, kteří mají na starosti ochranu VIP nebo provádění mimořádně nebezpečných nájezdů na nepřátelské stalkery.\n \n
+    </text>
+</string>
+<string id="svoboda_exolight_outfit_name">
+    <text>Bojovník Svobody (Warrior of Freedom)</text>
+</string>
+<string id="svoboda_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Pouze nejrespektovanější členové frakce Svoboda si mohou dovolit nosit podobný oblek, a to pouze při útocích na nepřátelský personál.\n \n
+    </text>
+</string>
+<string id="merc_exolight_outfit_name">
+    <text>Žoldácká Exovesta</text>
+</string>
+<string id="merc_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Tento oblek je oblíben mezi kapitány a osobními strážci žoldnéřských společností, které vyžadují nejlepší balistickou ochranu.\n \n
+    </text>
+</string>
+<string id="bandit_exolight_outfit_name">
+    <text>Uloupená Exovesta</text>
+</string>
+<string id="bandit_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Toto činí tento oblek skvělou volbou pro nájezdy na ostatní stalkery. Vzhledem k jeho imponujícímu a vysoce zastrašujícímu vzhledu je tento oblek oblíbený mezi nejmocnějšími zločinci v Zóně.\n \n
+    </text>
+</string>
+<string id="monolith_exolight_outfit_name">
+    <text>Exovesta Monolitu</text>
+</string>
+<string id="monolith_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Tento oblek je oblíbený mezi bojovými kazateli a taktickými mistry Monolithu, kteří tvrdí, že se v obleku cítí tak komfortně jako v Sarcophagu samotném.\n \n
+    </text>
+</string>
+<string id="military_exolight_outfit_name">
+    <text>Exovesta Armády</text>
+</string>
+<string id="military_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Tento oblek je považován za příliš těžkopádný ukrajinskou vládou a nikdy není vydáván žádné jednotce ani jednotlivci. Takže vojáci, nejčastěji vojenští stalkerové a občasní starší veteráni, si jej musí vždy najít a zaplatit ze svých vlastních prostředků.\n \n
+    </text>
+</string>
+<string id="cs_exolight_outfit_name">
+    <text>CS-5 Exovesta</text>
+</string>
+<string id="cs_exolight_outfit_description">
+    <text>Tato výbava, známá také jako "Radsuit" (Radiační oblek), je v podstatě těžký balistický vesta obsahující pláty třídy IV zesílené ocelí. Obsahuje také mnoho přípojných bodů potřebných pro tuhou exoskeleton. Nicméně bez poháněného exoskeletonu, je tato zbroj obtížná na nošení po delší dobu. Navíc je použitelná pouze v soubojích na blízko a na dálku, protože nezajišťuje žádnou ochranu proti anomáliím. Tyto obleky jsou pašovány z ukrajinských továren poblíž hranic s Zónou a jsou oblíbené mezi stalkerem organizací Clear Sky, která je známá svou snahou o očištění Zóny od anomálií.\n \n
+    </text>
+</string>
+	
+	<string id="exo_wood_outfit_name">
+<text>Woodland Exovesta</text>
+	</string>
+	<string id="exo_wood_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty třídy IV vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Tento model obsahuje kombinézu CBRN rané generace s kevlarovou podšívkou.\n \n
+		</text>
+	</string>
+	
+	<string id="bandit_exo_earth_outfit_name">
+		<text>Opláštěná exovesta</text>
+	</string>
+	<string id="bandit_exo_earth_outfit_description">
+		<text>NENÍ VE HŘE. "Spodní prádlo" exoskeletu, někdy mylně nazývané "Radsuit". Toto oblečení poskytuje téměř veškerou ochranu, kterou lze očekávat od plnohodnotného exoskeletu, ale vzhledem k tomu, že je zbaveno serv a baterií, neposkytuje žádné zvýšení síly. Pozitivní je, že oblek se nyní snadněji udržuje a na rozdíl od plného exoskeletu nebrání svému nositeli ve sprintu. Skládá se z integrované taktické přilby, těžké pancéřové vesty a zesílené kombinézy pro ochranu životního prostředí.\n \n
+		</text>
+	</string>
+	
+	<string id="freedom_exo_vineleaf_outfit_name">
+		<text>Hrdina svobody</text>
+	</string>
+	<string id="freedom_exo_vineleaf_outfit_description">
+		<text>Tento oděv, známý také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Tato varianta obsahuje starou CBRN kombinézu s kevlarovou podšívkou a další otvor pro upevnění.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_outfit_name">
+		<text>PSZ-10d Bojový oblek Povinnosti</text>
+	</string>
+	<string id="exo_dolg_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty třídy IV vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Navíc je užitečné pouze v boji zblízka a na dálku, protože neposkytuje žádnou ochranu proti anomáliím. Tento oblek se obvykle nachází v rukou elitních bojovníků ve službě, zejména těch, kteří mají za úkol střežit VIP osoby nebo podnikat mimořádně nebezpečné nájezdy.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_red_outfit_name">
+		<text>PSZ-10d Venator Bojový oblek</text>
+	</string>
+	<string id="exo_dolg_red_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Navíc je užitečné pouze v boji zblízka a na dálku, protože neposkytuje žádnou ochranu proti anomáliím. Tuto konkrétní variantu obvykle najdeme v rukou elitních lovců ve službě, kde se využívá její větší ochrana proti mutantům.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_wood_outfit_name">
+		<text>PSZ-10l Lesní bojový oblek</text>
+	</string>
+	<string id="exo_dolg_wood_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Tato varianta obsahuje starší CBRN kombinézu s kevlarovým výpletem a dodatečným ocelovým vyztužením. Obvykle se vyskytuje u příslušníků elitní jednotky Povinnost, zejména u těch, kteří provádějí krátké operace v severních oblastech Zóny.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_urban_outfit_name">
+		<text>PSZ-10g Městský bojový oblek</text>
+	</string>
+	<string id="exo_dolg_urban_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Navíc je užitečná pouze v boji zblízka a na dálku, protože neposkytuje žádnou ochranu proti anomáliím. Je možné, že staré a mimořádně těžké obleky tohoto typu používala frakce Povinnost při nájezdu na Pripjať a střetu se Svobodou v roce 2012.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_outfit_name">
+		<text>Těžká zbroj Mercenary TB-1</text>
+	</string>
+	<string id="exo_merc_outfit_description">
+		<text>NENÍ VE HŘE. Tento těžký pancéřový oblek, známý jako TB-1, disponuje vysokou fyzickou ochranou ve srovnání s původními těžkými brněními. U všech ostatních parametrů je totožný s exoskeletem, až na o něco nižší balistickou ochranu a ochranu proti protržení. Skládá se ze tří prvků; taktické přilby, těžké pancéřové vesty a vyztužené kombinézy. Používána zkušenými žoldáky na misích na severu, k likvidaci elitních oddílů Monolitu. Je opatřena standardním žoldáckým tmavě modrým maskovacím vzorem, vhodným pro operace v městském prostředí (nebo kdekoli jinde, ale pouze v noci).\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_urban_outfit_name">
+		<text>Žoldácka městká Exovesta</text>
+	</string>
+	<string id="exo_merc_urban_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Navíc je užitečné pouze v boji zblízka a na dálku, protože neposkytuje žádnou ochranu proti anomáliím. Oblečení, které si vybírají kapitáni a osobní strážci žoldnéřských společností operujících v oblastech, jako je Limansk nebo Pripjať.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_wood_outfit_name">
+		<text>Žoldácká Woodland Exovesta</text>
+	</string>
+	<string id="exo_merc_wood_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty třídy IV vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Tato varianta obsahuje staré CBRN, které bohužel nebylo upraveno pro Zónu.\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_grass_outfit_name">
+		<text>Žoldácká Grassland Exovesta</text>
+	</string>
+	<string id="exo_merc_grass_outfit_description">
+		<text>Tato výstroj, známá také jako "Radsuit", je v podstatě těžká balistická vesta obsahující pláty IV. třídy vyztužené ocelí. Obsahuje také mnoho upevňovacích bodů potřebných pro pevný exoskelet. Bez poháněného exoskeletu, který by ulehčil zátěž, je však toto brnění těžkopádné při delším nošení. Součástí této varianty je kombinéza s azbestovou tkaninou, kterou nositel obléká na vlastní nebezpečí.\n \n
+		</text>
+	</string>
+
+
+<!-- Proptotype Exoskeleton -->
+	<string id="stalker_proto_exo_outfit_name">
+		<text>Exoskeleton «Sunrise»</text>
+	</string>
+	<string id="stalker_proto_exo_outfit_description">
+		<text>Tělesný oblek stalkera, speciálně navržený tak, aby byl vybaven servy a bateriemi exoskeletu, což jeho nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale postrádá brnění řádného exovesta. Ve srovnání s plnohodnotným exoskeletem poskytuje méně ochrany, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_light_proto_exo_outfit_name">
+		<text>Exoskeleton «Vítr svobody»</text>
+	</string>
+	<string id="svoboda_light_proto_exo_outfit_description">
+		<text>Oblek Vítr svobody, který byl speciálně upraven tak, aby se do něj vešly serva a baterie exoskeletu, což nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale chybí mu brnění jako správnému exovestu. Ve srovnání s plnohodnotným exoskeletem poskytuje méně ochrany, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+
+	<string id="dolg_proto_exo_outfit_name">
+		<text>Exoskeleton «PS5-M»</text>
+	</string>
+	<string id="dolg_proto_exo_outfit_description">
+		<text>Univerzální ochranný oblek PS5-M, který byl speciálně upraven tak, aby se do něj vešly serva a baterie exoskeletu, což nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale chybí mu brnění jako správnému exovestu. Ve srovnání s plnohodnotným exoskeletem poskytuje méně ochrany, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_proto_exo_outfit_name">
+		<text>Exoskeleton «PSZ-9d»</text>
+	</string>
+	<string id="dolg_heavy_proto_exo_outfit_description">
+		<text>Pancéřový oblek PSZ-9d, který byl speciálně upraven tak, aby se do něj vešly serva a baterie exoskeletu, což nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností. Ve srovnání s plnohodnotným exoskeletem obětuje hrubou balistickou ochranu ve prospěch větší funkčnosti v anomálních polích.\n \n
+		</text>
+	</string>
+
+	<string id="military_proto_exo_outfit_name">
+		<text>Exoskeleton «Skat-9»</text>
+	</string>
+	<string id="military_proto_exo_outfit_description">
+		<text>Úplně první iterací vojenského exoskeletu byl tento obrněný oblek Skat-9 upravený tak, aby se do něj vešly servořízení a baterie exoskeletu. Ve srovnání s exoskeletem třetí generace obětoval hrubou balistickou ochranu ve prospěch větší funkčnosti v anomálních polích.\n \n
+		</text>
+	</string>
+
+	<string id="monolith_proto_exo_outfit_name">
+		<text>Exoskeleton «X-18»</text>
+	</string>
+	<string id="monolith_proto_exo_outfit_description">
+		<text>Pancéř vyrobený buď monolitiky, nebo neznámým výrobcem. Bylo speciálně upraveno tak, aby se do něj vešly servořízení a baterie exoskeletu, což nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale chybí mu brnění pravého Exovesta. Ve srovnání s plnohodnotným exoskeletem poskytuje menší ochranu, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+
+	<string id="cs_stalker_proto_exo_outfit_name">
+		<text>Exoskeleton «CS-2b»</text>
+	</string>
+	<string id="cs_stalker_proto_exo_outfit_description">
+		<text>Souprava tělesné zbroje CS-2b, která byla speciálně upravena tak, aby se do ní vešly servořízení a baterie exoskeletu, což nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale chybí mu brnění řádného exovesta. Ve srovnání s plnohodnotným exoskeletem poskytuje menší ochranu, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+	
+	<string id="ecolog_proto_exo_outfit_name">
+		<text>Exoskeleton «SSP-99M»</text>
+	</string>
+	<string id="ecolog_proto_exo_outfit_description">
+		<text>Jedinečný pancéřový systém složený z kombinézy SSP-99M poháněné exoskeletem a navrch umístěné kevlarové vesty odolné proti anomáliím třídy IIA. Odolný exorám je schopen poskytnout mechanickou podporu pro přenášení těžkých nákladů i přes anomální pole, takže je ideální pro pomoc výzkumníkům při hlubokých průnicích do Zóny.\n \n
+		</text>
+	</string>
+	
+	<string id="isg_proto_exo_outfit_name">
+		<text>Taktický exoskelet UNISG</text>
+	</string>
+	<string id="isg_proto_exo_outfit_description">
+		<text>Speciální taktický oblek značky UN, který byl speciálně upraven tak, aby se do něj vešly serva a baterie exoskeletu, což jeho nositeli umožňuje nést podstatně více vybavení, než by mohl za jiných okolností, ale postrádá brnění řádného exovesta. Ve srovnání s plnohodnotným exoskeletem poskytuje méně ochrany, ale je také podstatně lehčí.\n \n
+		</text>
+	</string>
+
+	
+<!-- Exoskeletons -->
+	<string id="exo_outfit_name">
+		<text>Exoskeleton</text>
+	</string>
+	<string id="exo_outfit_description">
+		<text>Experimentální vzorek vojenského exoskeletu. Nikdy nebyl sériově vyráběn kvůli mimořádným nákladům a některým konstrukčním vadám. Přesto je po něm poptávka díky jeho schopnosti unést váhu veškerého neseného vybavení, a proto se malé série vyrábějí v podzemních zařízeních mimo Ukrajinu. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, vše nesené pomocí poháněných končetin a servomotorů.\n \n
+		</text>
+	</string>
+
+	<string id="dolg_exo_outfit_name">
+		<text>Exoskelet PSZ-10d</text>
+	</string>
+	<string id="dolg_exo_outfit_description">
+		<text>Vynikající high-tech brnění. Vyvinuto v tuzemsku jedním z výzkumných ústavů, speciálně pro frakci Povinnost. Přesto je tato zbroj pomalu vyřazována ve prospěch levnějších a praktičtějších obleků a těch několik málo Exovest v aktivní službě bývá v rukou nejstarších veteránů Povinnost. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, vše nesené poháněnými končetinami a servomotory.\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_exo_outfit_name">
+		<text>Paragon svobody</text>
+	</string>
+	<string id="svoboda_exo_outfit_description">
+		<text>Vyrobeno nejlepšími řemeslníky Svobody. Experimentovali s různými úpravami a po mnoha pokusech se jim podařilo vytvořit opravdu zdařilý design. Ačkoli není vždy nejpraktičtější na údržbu, je nepopiratelně mocný, a jako takový je svěřován pouze nejlepším válečníkům a gardistům Svobody. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, to vše nesené poháněnými končetinami a servomotory.\n \n
+		</text>
+	</string>
+
+	<string id="merc_exo_outfit_name">
+		<text>Exoskeleton žoldáka</text>
+	</string>
+	<string id="merc_exo_outfit_description">
+		<text>Experimentální vzorek vojenského exoskeletu západní výroby pro vybavení žoldáků a dalších ozbrojených skupin. Ačkoli není vždy nejpraktičtějším oblekem pro údržbu v Zóně, umožňuje svému nositeli být současně silně vyzbrojen a extrémně dobře obrněn, přičemž má dostatečnou sílu, aby unesl zásoby na celé týdny. Nejčastěji jej nosí jako morální podporu a vysoce ochranný užitkový oblek kapitáni žoldnéřských veteránů, od nichž se očekává, že povedou své muže pekelnými podmínkami. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, vše nesené poháněnými končetinami a servomotory.\n \n
+		</text>
+	</string>
+
+	<string id="monolith_exo_outfit_name">
+		<text>Exoskeleton monolitu</text>
+	</string>
+	<string id="monolith_exo_outfit_description">
+		<text>Vysoce technologické brnění, vyrobené na základě vojenského exoskeletu. Studijní vzorky však odhalily, že jeho serva jsou vyrobena ze slitin a materiálů, které nezná žádný vědní obor v žádné jiné části světa. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, vše nesené poháněnými končetinami a servomotory. Při nošení tohoto obleku se cítíte, jako byste byli pohřbeni pod betonem samotného sarkofágu - pro většinu stalkerů je to děsivě klaustrofobické, ale pro opravdové služebníky Monolitu je to strašidelně uklidňující.\n \n
+		</text>
+	</string>
+
+	<string id="bandit_exo_outfit_name">
+		<text>Ukořistěný Exoskelet</text>
+	</string>
+	<string id="bandit_exo_outfit_description">
+		<text>Kradený vojenský exoskelet upravený bandity k útokům na dobře střežená zařízení a k plenění dobře vyzbrojených pronásledovatelů. Bojovněji naladění ctižádostiví lordi banditů mají tuto zbroj obvykle v oblibě a používají ji jako výrazný a nezpochybnitelný symbol své síly a autority nad menšími zločinci. Koneckonců, aby člověk mohl nosit takovýto vytoužený oblek mezi vrahy a zloději, musí mít nutně velkou sílu a lstivost.\n \n
+		</text>
+	</string>
+
+	<string id="military_exo_outfit_name">
+		<text>Armádní Exoskeleton</text>
+	</string>
+	<string id="military_exo_outfit_description">
+		<text>Oficiální verze vojenského exoskeletu. Vydává se v omezeném množství na zvláštní objednávku pro Military Stalkery, kteří si ho musí zaplatit sami. Navržen tak, aby unesl těžké zbraně, jako jsou granátomety a kulomety, spolu s dostatečným množstvím munice, jídla a léků, které jednotku zásobují na dlouhou dobu. Příležitostně se nasazuje místo lehkých vozidel.\n \n
+		</text>
+	</string>
+
+	<string id="cs_exo_outfit_name">
+		<text>Exoskelet CS-5</text>
+	</string>
+	<string id="cs_exo_outfit_description">
+		<text>Experimentální verze armádního exoskeletu propašovaná do Zóny z ukrajinských továren předtím, než ji technici Jasné oblohy zrenovovali. Obvykle jsou obleky tohoto typu drženy v záloze, aby mohly být nasazeny pouze v době skutečné krize. Nicméně zvláště důvěryhodní kamarádi a spolupracovníci frakce mohou nakonec získat povolení pořídit si takový oblek pro vlastní potřebu, i když ne bez velkých nákladů.\n \n
+		</text>
+	</string>
+
+	<string id="ecolog_exo_outfit_name">
+		<text>Vědecký exoskelet</text>
+	</string>
+	<string id="ecolog_exo_outfit_description">
+		<text>Oficiální verze vojenského exoskeletu, určená pro použití strážci Ekologů. Oblek se cítí téměř nepropustný pro ruční zbraně a jeho pokročilé servomotory z něj dělají vynikající volbu pro ty, kteří se nacházejí v zakopaných obranných pozicích, protože výrazně napomáhá při používání těžkých obranných zbraní. Při pobytu v terénu jsou nositelé tohoto obleku častěji zvyklí nosit směšné množství baterií, LLMC, AAM a dalších zásob, které může doprovodný vědec při průzkumu Zóny potřebovat.\n \n
+		</text>
+	</string>
+
+	<string id="renegade_exo_outfit_name">
+		<text>Exoskeleton Odpadlíků</text>
+	</string>
+	<string id="renegade_exo_outfit_description">
+		<text>Jeden z několika exoskeletů, které Renegáti sestavili v roce 2011, aby jim pomohli zajistit závěrečný útok na základnu Clear Sky. Bohužel byli prakticky zničeni dříve, než vůbec došlo k jejich konečnému vítězství, a to díky zásahu žoldáka v plášti a se střelnou puškou. Moderní Renegáti, kteří nosí tuto zbroj, jdou vždy do boje jako posedlí a touží se pomstít svým nejnenáviděnějším nepřátelům. Tedy téměř všechny ostatní.\n \n
+		</text>
+	</string>
+
+	<string id="isg_exo_outfit_name">
+		<text>Exoskeleton UNISG</text>
+	</string>
+	<string id="isg_exo_outfit_description">
+		<text>Oficiální verze exoskeletu UNISG. Vydáno v omezeném množství na zvláštní objednávku OSN. I když má stále mnoho konstrukčních nedostatků jiných exoskeletů, je přesto považován za skvělou alternativu k lehkým velitelským a průzkumným vozidlům, která by měla stejně velké problémy s pohybem v Zóně, a proto je nasazován místo nich.\n \n
+		</text>
+	</string>
+	
+	<string id="greh_exo_outfit_name">
+		<text>Silová zbroj frakce «Hřích»</text>
+	</string>
+	<string id="greh_exo_outfit_description">
+		<text>Vysoce technologická zbroj, založená na původních experimentálních vojenských návrzích. Pokud však někdo vidí, jsou jeho servy vyrobeny ze slitin a materiálů, které nezná žádný vědní obor v žádné jiné části světa. Skládá se z kevlarové kombinézy vyztužené ocelí a taktické vesty s vložkami IV. třídy, vše nesené poháněnými končetinami a servomotory. Nošení této kombinézy vyvolává v uživateli nepřirozený pocit blaženosti a klidu, i když se teprve ukáže, zda je tento pocit bezpečí opravdový, nebo ne.\n \n
+		</text>
+	</string>
+<!-- Nosorog exskeletal armor -->
+	<string id="dolg_nosorog_outfit_name">
+		<text>«PSZ-10d Nosorog»</text>
+	</string>
+	<string id="merc_nosorog_outfit_name">
+		<text>Žoldácký Nosorog</text>
+	</string>
+	<string id="army_nosorog_outfit_name">
+		<text>Armádní Nosorog</text>
+	</string>
+	<string id="monolith_nosorog_outfit_name">
+		<text>Monolit Nosorog</text>
+	</string>
+	<string id="isg_nosorog_outfit_name">
+		<text>UNISG Nosorog</text>
+	</string>
+	
+	<string id="nosorog_outfit_description">
+		<text>Exoskelet nové generace, který se skládá z dvojitě vyztuženého Exovesta. Proslýchá se, že byl dítětem dnes již zesnulého stalkera jménem "Tesák", na jehož návrhy si později činily nárok nejrůznější mocné frakce napříč Zónou. Jestliže běžné exoskelety umožňují stalkerům cítit se jako lehké vozidlo, Nosorog je téměř nutí věřit, že jsou hlavním bojovým tankem, který dokáže vydržet neuvěřitelnou zátěž a zároveň unese ohromnou munici. Obvykle je k dispozici pouze nejcennějším členům frakce, a to ještě jen během výjimečně nebezpečných misí.\n \n
+		</text>
+	</string>
+	
+	<string id="freedom_nosorog_outfit_name">
+<text>Šampion svobody</text>
+	</string>
+	<string id="freedom_nosorog_outfit_desc">
+		<text>Exoskelet nové generace, který se skládá z dvojitě vyztuženého Exovesta. Proslýchá se, že je dítětem dnes již zesnulého stalkera jménem "Tesák", na jehož návrhy si později činily nárok nejrůznější mocné frakce napříč Zónou. Jestliže běžné exoskelety umožňují stalkerům cítit se jako lehké vozidlo, Šampion svobody je téměř přesvědčuje, že jsou hlavním bojovým tankem, který dokáže vydržet neuvěřitelnou zátěž a zároveň unese obrovskou munici. Obvykle je k dispozici pouze nejcennějším členům frakce, a to ještě jen během výjimečně nebezpečných misí.\n \n
+		</text>
+	</string>
+
+
+<!-- No group -->	
+	<string id="ghillie_outfit_name">
+		<text>Oblek Hejkal</text>
+	</string>
+	<string id="ghillie_outfit_description">
+		<text>Tento oblek je navržen tak, aby simuloval "hromadu listí". Tento typ obleku obvykle nosí odstřelovači a lovci, aby splynuli s prostředím a skryli se před nepřáteli. Ghillie obleky se vyrábějí komerčně, ale obvykle si je vojáci i civilisté upravují a vylepšují podle svých potřeb. Navzdory své vysoké účinnosti může být velmi nepraktický: i v mírném podnebí se časem zahřeje a je velmi těžký. \n \n
+		</text>
+	</string>
+
+	<string id="ghillie_outfit_name_1">
+		<text>Střelcův Hejkal</text>
+	</string>
+	<string id="ghillie_outfit_description_1">
+		<text>%c[ui_gray_1]Tento jedinečný ghillie oblek osobně vyrobil a nosil Střelec, legendární střelec a survivalista známý svými výjimečnými schopnostmi v těch nejnáročnějších prostředích. Střelcův oblek Hejkal je mistrovský maskovací kousek určený pro elitní odstřelovače a speciální agenty. Stojí však za zmínku, že i přes svou bezkonkurenční účinnost může být Střelcův oblek Hejkal náročný na nošení. Dokonce i v mírném podnebí má díky svým izolačním vlastnostem tendenci časem nepříjemně hřát.\n \n
+		</text>
+	</string>
+
+</string_table>

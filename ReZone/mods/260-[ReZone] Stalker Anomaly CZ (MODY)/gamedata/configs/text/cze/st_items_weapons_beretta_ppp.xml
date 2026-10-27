@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+<string id="st_wpn_beretta92fs">
+		<text>Beretta 92FS</text>
+	</string>
+
+	<string id="st_wpn_beretta92fs_descr">
+		<text>Pistole 92FS je nejnovější evolucí modelu Beretta 92, italské poloautomatické pistole ráže 9x19, kterou v roce 1975 vyrobila společnost Fabbrica d'Armi Pietro Beretta. Jedním z jejích nejdůležitějších konstrukčních prvků je skutečnost, že nemá žádnou podávací rampu, na svou dobu má masivní železná mířidla a používá zásobníky s dvojitým zásobníkem, což je v jejím případě 15 nábojů v každém zásobníku. Používá se v mnoha zemích, ať už pro vojenské, policejní nebo dokonce civilní použití, a bude to jedna z nejspolehlivějších velkokapacitních pistolí 9x19, kterou kdy uvidíte a budete používat v Zóně.\n \n
+%c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+		%c[d_purple] - %c[ui_gray_2] 9x19 kompatibilní tlumič (po úpravě)</text>
+	</string>
+
+<string id="st_wpn_beretta92fs_inox">
+		<text>Beretta 92FS INOX</text>
+	</string>
+
+	<string id="st_wpn_beretta92fs_inox_descr">
+		<text>Pistole 92FS je nejnovější evolucí modelu Beretta 92, italské poloautomatické pistole ráže 9x19, kterou v roce 1975 vyrobila společnost Fabbrica d'Armi Pietro Beretta. Jedním z jejích nejdůležitějších konstrukčních prvků je skutečnost, že nemá žádnou podávací rampu, na svou dobu má masivní železná mířidla a používá zásobníky s dvojitým zásobníkem, což je v jejím případě 15 nábojů v každém zásobníku. Používá se v mnoha zemích, ať už pro vojenské, policejní, nebo dokonce civilní použití, a bude to jedna z nejspolehlivějších velkokapacitních pistolí 9x19, kterou kdy v Zóně uvidíte a budete používat. Varianta Inox má konstrukci z nerezové oceli namísto modré konstrukce z uhlíkové oceli a má také namalované červené tečky na mířidlech.\n \n
+%c[ui_gray_2]PŘÍSLUŠENSTVÍ: \n
+		%c[d_purple] - %c[ui_gray_2] 9x19 kompatibilní tlumič (po úpravě)</text>
+	</string>
+
+
+	<string id="st_wpn_beretta_m9">
+		<text>Beretta M9</text>
+	</string>
+	<string id="st_wpn_beretta_m9_descr">
+		<text>Jedná se o verzi italské Beretty 92FS pro americkou námořní pěchotu, vyrobenou na základě požadavku zmíněné frakce. Jelikož se jedná o verzi před M9A1, změn je málo, ale viditelně je zkosený zásobník, má rovnou hranatou spoušťovou spoušť a agresivnější mířidla s tritiovým povrchem. Vzhledem k tomu, že se proslavila v okolí Žoldáků, Svobody a nějaké podivně zmíněné nedávné frakce, lze s jistotou říci, že způsob, jakým se tento "poloprototyp" dostal do Zóny, je prostřednictvím dezertérů ze západních armád a bývalých příslušníků PMC.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Itálie, Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Fabbrica d'Armi Pietro Beretta\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1985\n
+		</text>
+	</string>
+
+	<string id="st_wpn_beretta_px4">
+		<text>Beretta Px4 Storm</text>
+	</string>
+	<string id="st_wpn_beretta_px4_descr">
+		<text>Px4 Storm je vylepšenou verzí modelu Beretta 8000, která má být náhradou modelu 92FS pro osobní obranu a použití při prosazování práva. Její otočná hlaveň umožňuje lepší kontrolu zpětného rázu a souvislé výstřely. Lehký rám rovněž pomáhá snižovat hmotnost. Tento konkrétní model je dodáván s tritiovými mířidly.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Itálie\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Fabbrica d'Armi Pietro Beretta\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]2004\n
+		</text>
+	</string>
+	
+	<string id="st_up_px4_a1_name">
+		<text>Změna ráže na .45 ACP</text>
+	</string>
+	<string id="st_up_px4_a1_descr">
+		<text>Komplexní integrovaná úprava mechanických a automatických částí zbraně, která umožňuje změnu její ráže na úkor spolehlivosti.\n</text>
+	</string>
+
+
+</string_table>

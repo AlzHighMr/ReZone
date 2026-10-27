@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!-- 
+	WARFARE STRINGS
+-->
+
+<string_table>
+<string id="st_wrfr_opt_presets">
+	<text>Předvolby</text>
+</string>
+<string id="st_wrfr_opt_apply_to_all">
+	<text>Pro všechny</text>
+</string>
+<string id="st_wrfr_opt_general">
+	<text>Všeobecně</text>
+</string>
+<string id="st_wrfr_opt_azazel_respawn">
+	<text>Azazel Respawn</text>
+</string>
+<string id="st_wrfr_opt_rand_settings">
+	<text>Randomizovat nastavení</text>
+</string>
+
+<string id="st_wrfr_influnence_points">
+	<text>Body vlivu</text>
+</string>
+<string id="st_wrfr_release_control_faction">
+	<text>Uvolnění kontroly nad frakcí</text>
+</string>
+<string id="st_wrfr_take_control_faction">
+	<text>Převzít kontrolu nad frakcí</text>
+</string>
+<string id="st_wrfr_show_points">
+	<text>Zobrazit body / inteligentní terén</text>
+</string>
+<string id="st_wrfr_hide_points">
+	<text>Skryt body / inteligentní terén</text>
+</string>
+<string id="st_wrfr_display_faction_info">
+	<text>Zobrazit informace o frakci</text>
+</string>
+<string id="st_wrfr_unselect_squad">
+	<text>Zrušit výběr oddílu</text>
+</string>
+<string id="st_wrfr_select_squad">
+	<text>Vybrat oddíl</text>
+</string>
+<string id="st_wrfr_unselect_point">
+	<text>Zrušit výběr bodu</text>
+</string>
+<string id="st_wrfr_select_point">
+	<text>Výběr bodu</text>
+</string>
+<string id="st_wrfr_select_obj">
+	<text>Vybraný objekt</text>
+</string>
+<string id="st_wrfr_add_influ">
+	<text>Přidat vliv</text>
+</string>
+<string id="st_wrfr_remove_influ">
+	<text>Odstranit vliv</text>
+</string>
+	
+<string id="st_wrfr_cap_point">
+	<text>Bod záchytu</text>
+</string>
+<string id="st_wrfr_buy_novice_squad">
+	<text>Koupit družstvo nováčků</text>
+</string>
+<string id="st_wrfr_buy_adv_squad">
+	<text>Koupit družstvo pro pokročilé</text>
+</string>
+<string id="st_wrfr_buy_veteran_squad">
+	<text>Koupit družstvo veteránů</text>
+</string>
+<string id="st_wrfr_buy_heli">
+	<text>Koupit vrtulník</text>
+</string>
+<string id="st_wrfr_declare_war">
+	<text>Vyhlásit válku</text>
+</string>
+<string id="st_wrfr_possess_leader">
+	<text>Posadit velitele oddílu</text>
+</string>
+<string id="st_wrfr_follow">
+	<text>Sledovat</text>
+</string>
+<string id="st_wrfr_attack">
+	<text>Útok</text>
+</string>
+<string id="st_wrfr_target">
+	<text>Cíl</text>
+</string>
+<string id="st_wrfr_move_here">
+	<text>Přesunout sem</text>
+</string>
+<string id="st_wrfr_send_squad">
+	<text>Vyslat četu</text>
+</string>
+<string id="st_wrfr_send_all_squad">
+	<text>Odeslat všechna družstva</text>
+</string>
+<string id="st_wrfr_take_squad">
+	<text>Převzít družstvo</text>
+</string>
+<string id="st_wrfr_take_all_squads">
+	<text>Převzít všechna družstva</text>
+</string>
+<string id="st_wrfr_attack_with_all">
+	<text>Útok se všemi</text>
+</string>
+<string id="st_wrfr_send_heli_to_point">
+	<text>Vyslat vrtulník na bod</text>
+</string>
+<string id="st_wrfr_send_heli_to_squad">
+	<text>Vyslat vrtulník k jednotce</text>
+</string>
+<string id="st_wrfr_remove_heli">
+	<text>Odstranit vrtulník</text>
+</string>
+<string id="st_wrfr_heli_route">
+	<text>Helikoptéra na cestě</text>
+</string>
+<string id="st_wrfr_order_1">
+	<text>Vysílá %s na %s</text>
+</string>
+<string id="st_wrfr_order_2">
+	<text>Odeslání %s na útok %s</text>
+</string>
+<string id="st_wrfr_order_3">
+	<text>%s nyní sleduje %s</text>
+</string>
+<string id="st_wrfr_order_4">
+	<text>Vysílá jedno obranné družstvo z družstva %s za hráčem.</text>
+</string>
+<string id="st_wrfr_order_5">
+	<text>Vyslání všech obranných družstev z družstva %s za hráčem.</text>
+</string>
+<string id="st_wrfr_order_6">
+	<text>Vyslání jednoho obranného družstva z družstva %s k útoku na družstvo %s.</text>
+</string>
+<string id="st_wrfr_order_7">
+	<text>Vyslání všech obranných družstev z družstva %s do útoku na družstvo %s.</text>
+</string>
+<string id="st_wrfr_order_8">
+	<text>Vyslání jednoho obranného družstva z družstva %s k následování družstva %s.</text>
+</string>
+<string id="st_wrfr_order_9">
+	<text>Vyslání všech obranných družstev z družstva %s, aby následovala družstvo %s.</text>
+</string>
+<string id="st_wrfr_order_10">
+	<text>Přidání %s k cílům %s</text>
+</string>
+<string id="st_wrfr_order_11">
+	<text>Vyslání jednoho družstva z %s k útoku na %s.</text>
+</string>
+<string id="st_wrfr_order_12">
+	<text>Vyslání všech družstev z %s do útoku na %s.</text>
+</string>
+<string id="st_wrfr_order_13">
+	<text>Přesun jednoho družstva z %s do útoku na %s.</text>
+</string>
+<string id="st_wrfr_order_14">
+	<text>Přesun všech družstev z %s do útoku %s.</text>
+</string>
+<string id="st_wrfr_order_15">
+	<text>Vyslání jednoho družstva z %s do %s.</text>
+</string>
+<string id="st_wrfr_order_16">
+	<text>Vyslání všech družstev z %s do %s.</text>
+</string>
+<string id="st_wrfr_order_17">
+	<text>Odeslání vrtulníku do %s.</text>
+</string>
+<string id="st_wrfr_heli_removed">
+	<text>Helikoptéra odstraněna</text>
+</string>
+<string id="st_wrfr_heli_already_spawned">
+	<text>Helikoptéra se již na úrovni zrodila!</text>
+</string>
+
+
+<string id="st_wrfr_smrt_auto_capture">
+	<text>Auto záchyt %s!</text>
+</string>
+<string id="st_wrfr_prop_base">
+	<text>Základna</text>
+</string>
+<string id="st_wrfr_prop_resource">
+	<text>Zdroj</text>
+</string>
+<string id="st_wrfr_prop_territory">
+	<text>Territorium</text>
+</string>
+<string id="st_wrfr_prop_lair">
+	<text>Hnízdo</text>
+</string>
+<string id="st_wrfr_prop_faction">
+	<text>Frakce</text>
+</string>
+<string id="st_wrfr_prop_curr_popu">
+	<text>Aktuální počet obyvatel</text>
+</string>
+<string id="st_wrfr_prop_max_popu">
+	<text>Max. počet obyvatel</text>
+</string>
+<string id="st_wrfr_prop_resource_count">
+	<text>Počet zdrojů</text>
+</string>
+<string id="st_wrfr_prop_time_capture">
+	<text>Čas do záchytu</text>
+</string>
+<string id="st_wrfr_prop_next_defense">
+	<text>Následující obrana</text>
+</string>
+<string id="st_wrfr_prop_next_patrol">
+	<text>Další hlídka</text>
+</string>
+<string id="st_wrfr_prop_time_culc_hr">
+	<text>%sh + %smin</text>
+</string>
+<string id="st_wrfr_prop_time_culc_min">
+	<text>%smin</text>
+</string>
+<string id="st_wrfr_prop_target">
+	<text>Cíl</text>
+</string>
+<string id="st_wrfr_prop_invasion_size">
+	<text>Velikost invaze</text>
+</string>
+<string id="st_wrfr_prop_targets">
+	<text>--Cíle--</text>
+</string>
+<string id="st_wrfr_prop_invaze">
+	<text>--Invaze--</text>
+</string>
+<string id="st_wrfr_smart_count_warning">
+	<text>Chytrý (%s) má %s oddílů!</text>
+</string>
+	
+<string id="st_wrfr_heli">
+	<text>Vrtulník</text>
+</string>
+<string id="st_wrfr_you">
+	<text>vy</text>
+</string>
+<string id="st_wrfr_mutant">
+	<text>mutant</text>
+</string>
+<string id="st_wrfr_none">
+	<text>žádný</text>
+</string>
+
+<string id="st_wrfr_sim_1">
+	<text>Družina %s</text>
+</string>
+<string id="st_wrfr_sim_2">
+	<text>Člen</text>
+</string>
+<string id="st_wrfr_sim_3">
+	<text>Sekce</text>
+</string>
+<string id="st_wrfr_sim_4">
+	<text>ID</text>
+</string>
+<string id="st_wrfr_sim_5">
+	<text>V boji</text>
+</string>
+<string id="st_wrfr_sim_6">
+	<text>Na cestě k cíli</text>
+</string>
+<string id="st_wrfr_sim_7">
+	<text>Čekání v cíli</text>
+</string>
+<string id="st_wrfr_sim_8">
+	<text>Celkový výkon</text>
+</string>
+<string id="st_wrfr_sim_9">
+	<text>Výkon</text>
+</string>
+<string id="st_wrfr_sim_10">
+	<text>Vlastní základna</text>
+</string>
+<string id="st_wrfr_sim_11">
+	<text>Doba klidu</text>
+</string>
+<string id="st_wrfr_sim_12">
+	<text>Cílová úroveň</text>
+</string>
+	
+</string_table>

@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <!-- ==================== MAIN MENU ==================== -->
+  <string id="ui_mcm_menu_at">
+    <text>AlifeTactics</text>
+  </string>
+  <!-- ==================== CATEGORY FOLDERS ==================== -->
+  <string id="ui_mcm_menu_combat">
+    <text>Boj</text>
+  </string>
+  <string id="ui_mcm_menu_effectiveness">
+    <text>Efektivita</text>
+  </string>
+  <string id="ui_mcm_menu_mechanics">
+    <text>Mechaniky</text>
+  </string>
+  <string id="ui_mcm_menu_effects">
+    <text>Efekty</text>
+  </string>
+  <string id="ui_mcm_menu_mutants">
+    <text>Mutanti</text>
+  </string>
+  <!-- ==================== NÁZVY STRÁNEK ==================== -->
+  <string id="ui_mcm_menu_maneuvers">
+    <text>Manévry</text>
+  </string>
+  <string id="ui_mcm_menu_accuracy">
+    <text>Přesnost</text>
+  </string>
+  <string id="ui_mcm_menu_disclosure">
+    <text>Odhalení</text>
+  </string>
+  <string id="ui_mcm_menu_danger">
+    <text>Nebezpečí</text>
+  </string>
+  <string id="ui_mcm_menu_sound">
+    <text>Zvuk</text>
+  </string>
+  <string id="ui_mcm_menu_hit">
+    <text>Zásah</text>
+  </string>
+  <string id="ui_mcm_menu_fixes">
+    <text>Opravy</text>
+  </string>
+  <string id="ui_mcm_menu_crossfire">
+    <text>Křížová palba</text>
+  </string>
+  <string id="ui_mcm_menu_healing">
+    <text>Léčení</text>
+  </string>
+  <string id="ui_mcm_menu_jam">
+    <text>Zaseknutí zbraně</text>
+  </string>
+  <string id="ui_mcm_menu_ammo">
+    <text>Munice</text>
+  </string>
+  <string id="ui_mcm_menu_development">
+    <text>Vývoj</text>
+  </string>
+  <!-- ==================== PLÁNOVANÉ PODSTRÁNKY ==================== -->
+  <string id="ui_mcm_menu_behaviors">
+    <text>Chování</text>
+  </string>
+  <string id="ui_mcm_menu_commitment">
+    <text>Vytrvalost</text>
+  </string>
+  <string id="ui_mcm_menu_conduct">
+    <text>Jednání</text>
+  </string>
+  <string id="ui_mcm_menu_reaction">
+    <text>Reakce</text>
+  </string>
+  <string id="ui_mcm_menu_range">
+    <text>Dosah</text>
+  </string>
+  <string id="ui_mcm_menu_resistance">
+    <text>Odolnost</text>
+  </string>
+  <!-- ==================== POPIS PLÁNOVANÝCH STRÁNEK ==================== -->
+  <string id="ui_mcm_at_behaviors_desc">
+    <text>Plánováno: nové bojové akce, které základní plánovač hry postrádá, nejprve boj zblízka. Zatím není co nastavovat.</text>
+  </string>
+  <string id="ui_mcm_at_commitment_desc">
+    <text>Vanilla stalkerové neustále přehodnocují svůj postup v boji, takže i malá změna – o něco lepší pozice za krytem, krátkodobá ztráta výhledu nebo spoluhráč přebíhající palebnou linií – způsobí, že stalker opustí to, co právě dělal, a zvolí jiný postup. Toto neustálé přehodnocování vede k trhavému přebíhání ze strany na stranu a neustálému hledání krytu, které během přestřelky vidíš. Vytrvalost tomu zabrání, aniž by stalkera převzala pod kontrolu: dokud jeho současný postup stále dává smysl, pokračuje v něm místo toho, aby ho kvůli nepatrně lepší možnosti měnil. Jakmile přestane dávat smysl, okamžitě přejde na jiný postup (ztratí cíl z dohledu, střela je zablokována nebo nepřítel zmizí). Zároveň zafixuje jeho pozici za krytem: stalker, který má čistý výhled a střílí, zůstane na místě místo přesunu k nepatrně lepšímu krytu, takže přebíhání je zastaveno už v jeho základu. Výsledkem je stalker, který své rozhodnutí dotáhne do konce – pokračuje v palbě, tlačí na křídlo nebo dokončí přebíjení na místě – místo aby každý okamžik své rozhodnutí znovu zpochybňoval. Vyžaduje novější sestavení enginu; na starších verzích nemá toto nastavení žádný účinek a používá se standardní chování hry.</text>
+  </string>
+  <string id="ui_mcm_at_conduct_desc">
+    <text>Drobné bojové návyky aplikované na stalkery, jejichž chování řídí základní engine hry – bez převzetí kontroly, pouze lepší rozhodování v okamžicích, kdy engine už sám rozhoduje. Vyžaduje novější sestavení enginu; na starších verzích nemá tato stránka žádný účinek a používá se standardní chování hry.</text>
+  </string>
+  <string id="ui_mcm_at_conduct_conduct_posture">
+    <text>Postoj za krytem</text>
+  </string>
+  <string id="ui_mcm_at_conduct_conduct_posture_desc">
+    <text>Zkušení střelci a odstřelovači se skrčí, pokud mezi nimi a nepřítelem stojí skutečný kryt ve výšce hrudníku, a postaví se, pokud tam žádný není. Vanilla hra volí bojový postoj bez ohledu na okolí, takže stalkerové se skrčí za náhodnými nerovnostmi a střílejí do nich, nebo naopak stojí vzpřímeně hned vedle krytu, který by mohli využít. Rozhodnutí vychází z herní mapy krytů ve směru k nepříteli. Střelci s krátkými zbraněmi a nezkušení stalkerové si zachovávají standardní chování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_desc">
+    <text>Hodnost stalkera určuje, jak přesně jeho zbraň sleduje pohybující se cíl a jak rychle dokáže na dálku cíl zpozorovat. Rychlost sledování ovlivňuje ovládání zbraně při mířící na pohybující se cíl; neurychluje první výstřel. Předvídání pohybu cíle a spouštěcí křivka podle hodnosti jsou plánovány. Vyžaduje novější sestavení enginu s podporou individuálního míření a vidění stalkerů; na starších verzích nemá tato stránka žádný účinek a používá se standardní chování hry.</text>
+  </string>
+  <string id="ui_mcm_at_range_desc">
+    <text>Plánováno: vzdálenost střetu. Hra ukončuje přestřelky NPC na pevně stanoveném limitu bez ohledu na použitou zbraň, takže odstřelovač nikdy nestřílí na vzdálenosti, pro které je jeho puška určena. Stalker, kterého odstřelovač zasáhne zpoza tohoto limitu, může podle reakce na nebezpečí zalézt do krytu, ale nikdy palbu neopětuje. Tato stránka umožní NPC s dlouhým dostřelem reagovat a zahajovat boj na skutečný dosah jejich zbraní. Zatím není co nastavovat.</text>
+  </string>
+  <string id="ui_mcm_at_resistance_desc">
+    <text>Plánováno: odolnost NPC podle jejich vybavení – brnění a výstroje, prostředků snižujících poškození a artefaktů. Zatím není co nastavovat.</text>
+  </string>
+  <string id="ui_mcm_at_effects_desc">
+    <text>Plánováno: zpětná vazba pro hráče během boje, jako první otřes mozku. Zatím není co nastavovat.</text>
+  </string>
+  <string id="ui_mcm_at_mutants_desc">
+    <text>Plánováno: bojové chování mutantů. Zatím není co nastavovat.</text>
+  </string>
+
+
+  <!-- ==================== SHARED ==================== -->
+  <string id="ui_mcm_at_title">
+    <text>AlifeTactics</text>
+  </string>
+  <!-- ==================== DISCLOSURE PAGE ==================== -->
+  <string id="ui_mcm_at_disclosure_desc">
+    <text>Zranění jednoho člena družstva okamžitě upozorní celé družstvo na střelce, včetně členů hlídky mimo doslech a při použití tlumené zbraně. Vanilla hra předává informaci o střelci pouze členům družstva, kteří výstřel slyšeli. AlifeTactics zapíše střelce do paměti každého člena a uvede družstvo do bojového stavu, načež ji dále šíří samotný engine. Na novější verzi enginu se střelec zároveň zapíše do paměti spatřených nepřátel, což je kategorie, která má při výběru cíle nejvyšší prioritu. Družstvo se tak skutečně zaměří na tebe, místo aby zůstalo zaměřené na jiného vzdáleného nepřítele, kterého už vidí. Žádné vztahy mezi frakcemi se uměle nemění. Níže uvedená podmínka přeživšího zachovává tiché okamžité zabití a družstvo stále může později najít tělo.</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_enabled">
+    <text>Povolit odhalení</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_enabled_desc">
+    <text>Pokud je vypnuto, používá se beze změn standardní chování hry: členové družstva se o střelci dozvědí pouze tehdy, pokud výstřel slyší, a vzdálení členové hlídky se o něm nedozvědí.</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_turn">
+    <text>Zaměřit se na střelce</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_turn_desc">
+    <text>Odhalený střelec se zapíše do paměti spatřených nepřátel každého člena družstva, což je kategorie s nejvyšší prioritou při výběru cíle. Družstvo se tak skutečně zaměří na něj, místo aby zůstalo zaměřené na jiného vzdáleného nepřítele, kterého už vidí. Pokud je vypnuto, zůstává zachováno mírnější odhalení: členové znají polohu střelce a mohou na něj zaútočit, ale spatřený nepřítel má stále vyšší prioritu. Vyžaduje novější verzi enginu; na starších verzích není funkce aktivní.</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_hdr_survivor">
+    <text>Utajení</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_survivor_gate">
+    <text>Potlačit odhalení při zabití</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_survivor_gate_desc">
+    <text>Pokud zásah oběť okamžitě zabije, střelec nebude odhalen. Umírající stalker tak nestihne informaci předat ostatním, takže tiché výstřely a útoky zezadu zůstanou utajené. Družstvo tě však stále může odhalit jiným způsobem – podle zvuku, zraku nebo nalezeného těla. Zásah, který oběť pouze zraní, odhalení vyvolá jako obvykle.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_retention">
+    <text>Zapamatování</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_retention_min">
+    <text>Zapomenout střelce po (herní min.)</text>
+  </string>
+  <string id="ui_mcm_at_disclosure_disclosure_retention_min_desc">
+    <text>Počet herních minut bez nového zásahu, po kterých družstvo zapomene na střelce. Další zásah znovu aktivuje upozornění celého družstva. Počítá se herní čas, nikoli skutečný čas.</text>
+  </string>
+
+
+  <!-- ==================== HEALING PAGE ==================== -->
+  <string id="ui_mcm_at_healing_desc">
+    <text>Zranění stalkerové se léčí pomocí lékárniček a obvazů, které nosí u sebe, a můžeš to sledovat: zraněný muž kulhá, při léčení přehraje příslušné gesto, a to pouze mimo boj. Vanilla hra má seznamy léčivých předmětů prázdné, takže nesené lékárničky nebyly nikdy použity a krvácející stalkerové umírali s plnými kapsami. AlifeTactics tyto seznamy obnoví při spuštění hry. Níže lze nastavit rychlost léčení, jednorázovou šanci na léčení podle hodnosti při absenci léčiv a animace.</text>
+  </string>
+  <string id="ui_mcm_at_healing_healing_enabled">
+    <text>Povolit léčení</text>
+  </string>
+  <string id="ui_mcm_at_healing_healing_enabled_desc">
+    <text>Hlavní přepínač pro systém léčení: ovlivňuje rychlost léčení a jednorázovou šanci na léčení podle hodnosti. Pokud je vypnuto, používá se beze změn standardní chování hry. Pro změnu je nutné restartovat hru. Obnovení seznamu léčivých předmětů probíhá při spuštění hry a je vždy aktivní.</text>
+  </string>
+  <!-- Léčení - Rychlost léčení -->
+  <string id="ui_mcm_at_hdr_heal_rate">
+    <text>Rychlost léčení</text>
+  </string>
+  <string id="ui_mcm_at_healing_heal_rate_multiplier">
+    <text>Násobitel rychlosti léčení</text>
+  </string>
+  <string id="ui_mcm_at_healing_heal_rate_multiplier_desc">
+    <text>Určuje, kolik zdraví se obnoví při každém cyklu samoléčení. Při hodnotě 2,0 lékárnička léčí dvakrát rychleji, při 0,5 poloviční rychlostí. Počet léčivých cyklů je pevně daný enginem.</text>
+  </string>
+  <!-- Léčení - Šance na léčení -->
+  <string id="ui_mcm_at_hdr_healing_charge">
+    <text>Šance na léčení</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_novice">
+    <text>Šance na léčení – nováček (%)</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_novice_desc">
+    <text>Šance, že stalker hodnosti nováček získá při prvním spawnu jednorázovou možnost léčení. Tato možnost se aktivuje jednou, jakmile jeho zdraví klesne pod hranici léčení a nemá v inventáři lékárničku. Vanilla hra používá pro všechny hodnosti pevnou šanci 50 %.</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_experienced">
+    <text>Šance na léčení – zkušený (%)</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_experienced_desc">
+    <text>Šance na léčení pro stalkery hodnosti zkušený.</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_veteran">
+    <text>Šance na léčení – veterán (%)</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_veteran_desc">
+    <text>Šance na léčení pro stalkery hodnosti veterán.</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_master">
+    <text>Šance na léčení – mistr (%)</text>
+  </string>
+  <string id="ui_mcm_at_healing_charge_chance_master_desc">
+    <text>Šance na léčení pro stalkery hodnosti mistr.</text>
+  </string>
+  <!-- Léčení - Vizuální vrstva -->
+  <string id="ui_mcm_at_hdr_visuals">
+    <text>Vizuální vrstva</text>
+  </string>
+  <string id="ui_mcm_at_healing_limping_anim_enabled">
+    <text>Animace kulhání</text>
+  </string>
+  <string id="ui_mcm_at_healing_limping_anim_enabled_desc">
+    <text>Stalkerové mimo boj, kteří mají zdraví pod stanovenou hranicí, viditelně kulhají: při stání používají zraněnou nečinnou animaci a při pohybu zraněnou chůzi, přičemž animace odpovídá nesené zbrani. Stalkerové v boji jsou vynecháni, aby nebyl narušen jejich bojový postoj.</text>
+  </string>
+  <string id="ui_mcm_at_healing_limping_health_threshold">
+    <text>Hranice zdraví pro kulhání</text>
+  </string>
+  <string id="ui_mcm_at_healing_limping_health_threshold_desc">
+    <text>Podíl zdraví, pod kterým začne příslušný stalker kulhat. Nižší hodnota způsobí, že se kulhání projeví až při vážnějším zranění.</text>
+  </string>
+  <string id="ui_mcm_at_healing_healing_anim_enabled">
+    <text>Animace léčení</text>
+  </string>
+  <string id="ui_mcm_at_healing_healing_anim_enabled_desc">
+    <text>Při zahájení cyklu léčení přehraje stalker gesto použití lékárničky nebo obvazu, pouze mimo boj. Po dokončení gesta jej engine automaticky ukončí.</text>
+  </string>
+  <!-- ==================== STRÁNKA PŘESNOSTI ==================== -->
+  <string id="ui_mcm_at_accuracy_desc">
+    <text>Přesnost stalkera se odvíjí od jeho hodnosti. Mistr střílí přesněji než nováček a každou úroveň lze níže samostatně nastavit. Engine obsahuje rozptylovou křivku podle hodnosti, ale hodnoty hodností v Anomaly ji nechávají plochou, takže všichni stalkerové střílejí se stejným rozptylem. AlifeTactics ovládá tuto křivku prostřednictvím vlastního rozptylového callbacku enginu. Rozptyl zbraně ani hlavně zůstává beze změny. Upravuje se pouze schopnost samotného stalkera.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_disp_enabled">
+    <text>Povolit křivku rozptylu</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_disp_enabled_desc">
+    <text>Určuje šířku rozptylu míření pro jednotlivé hodnosti. Nižší hodnosti mají větší rozptyl, zatímco nejvyšší hodnosti střílejí přesněji. Pokud je vypnuto, engine používá původní jednotný rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_move_enabled">
+    <text>Povolit střelbu za pohybu</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_move_enabled_desc">
+    <text>Určuje, jak moc jednotlivé hodnosti potlačují postih přesnosti při střelbě za pohybu. Vyšší hodnosti si při pohybu zachovávají větší přesnost. Pokud je vypnuto, zůstává zachován plný postih za pohyb.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_accuracy_curve">
+    <text>Křivka podle hodnosti</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_novice">
+    <text>Rozptyl – nováček</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_novice_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti nováček. Nižší hodnota znamená menší rozptyl a vyšší smrtící účinek. Hodnota 1,00 odpovídá standardnímu rozptylu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_trainee">
+    <text>Rozptyl – učeň</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_trainee_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti učeň. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_experienced">
+    <text>Rozptyl – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_experienced_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti zkušený. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_professional">
+    <text>Rozptyl – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_professional_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti profesionál. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_veteran">
+    <text>Rozptyl – veterán</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_veteran_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti veterán. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_expert">
+    <text>Rozptyl – expert</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_expert_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti expert. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_master">
+    <text>Rozptyl – mistr</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_master_desc">
+    <text>Velikost rozptylu střel pro stalkery hodnosti mistr. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_legend">
+    <text>Rozptyl – legenda</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_disp_legend_desc">
+    <text>Velikost rozptylu střel pro stalkery nejvyšší hodnosti – legenda. Nižší hodnota znamená menší rozptyl.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_accuracy_move">
+    <text>Křivka střelby za pohybu</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_novice">
+    <text>Střelba za pohybu – nováček</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_novice_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti nováček zachovává při střelbě za pohybu. Hodnota 1,00 znamená plný standardní postih; nižší hodnota znamená stabilnější střelbu za pohybu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_trainee">
+    <text>Střelba za pohybu – učeň</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_trainee_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti učeň zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_experienced">
+    <text>Střelba za pohybu – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_experienced_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti zkušený zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_professional">
+    <text>Střelba za pohybu – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_professional_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti profesionál zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_veteran">
+    <text>Střelba za pohybu – veterán</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_veteran_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti veterán zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_expert">
+    <text>Střelba za pohybu – expert</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_expert_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti expert zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_master">
+    <text>Střelba za pohybu – mistr</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_master_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker hodnosti mistr zachovává při střelbě za pohybu. Nižší hodnota znamená stabilnější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_legend">
+    <text>Střelba za pohybu – legenda</text>
+  </string>
+  <string id="ui_mcm_at_accuracy_acc_move_legend_desc">
+    <text>Určuje, jak velkou část postihu za rozptyl při pohybu si stalker nejvyšší hodnosti – legenda – zachovává při střelbě za pohybu. Hodnota 0,50 znamená, že jeho střelba za pohybu bude stejně stabilní jako střelba z místa.</text>
+  </string>
+
+
+  <!-- ==================== REACTION PAGE ==================== -->
+  <string id="ui_mcm_at_reaction_aim_enabled">
+    <text>Povolit rychlost sledování</text>
+  </string>
+  <string id="ui_mcm_at_reaction_aim_enabled_desc">
+    <text>Určuje, jak přesně hlaveň stalkera sleduje pohybující se cíl podle jeho hodnosti. Nižší hodnosti za pohybujícím se cílem zaostávají, zatímco nejvyšší hodnosti ho dokážou přesně sledovat. Pokud je vypnuto, engine používá jednotnou rychlost.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_reaction_aim">
+    <text>Rychlost sledování</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_novice">
+    <text>Rychlost sledování – nováček</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_novice_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti nováček sleduje pohybující se cíl, v radiánech za sekundu. Hodnota 0,24 odpovídá standardnímu enginu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_trainee">
+    <text>Rychlost sledování – učeň</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_trainee_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti učeň sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_experienced">
+    <text>Rychlost sledování – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_experienced_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti zkušený sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_professional">
+    <text>Rychlost sledování – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_professional_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti profesionál sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_veteran">
+    <text>Rychlost sledování – veterán</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_veteran_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti veterán sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_expert">
+    <text>Rychlost sledování – expert</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_expert_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti expert sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_master">
+    <text>Rychlost sledování – mistr</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_master_desc">
+    <text>Jak přesně hlaveň stalkera hodnosti mistr sleduje pohybující se cíl. Vyšší hodnota znamená přesnější sledování.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_legend">
+    <text>Rychlost sledování – legenda</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_aim_legend_desc">
+    <text>Jak přesně hlaveň stalkera nejvyšší hodnosti – legenda – sleduje pohybující se cíl. Hodnota 2,50 odpovídá možnosti hardcore míření AI ve hře.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_reaction_lead">
+    <text>Předvídání cíle</text>
+  </string>
+  <string id="ui_mcm_at_reaction_lead_enabled">
+    <text>Povolit předvídání cíle</text>
+  </string>
+  <string id="ui_mcm_at_reaction_lead_enabled_desc">
+    <text>Určuje, jak daleko před pohybující se cíl stalker míří na základě skutečné doby letu střely. Nejvyšší hodnosti předvídají správně a dokážou zasáhnout pohybující se cíle, zatímco nižší hodnosti míří příliš daleko před cíl. Pokud je vypnuto, engine používá pevnou hodnotu předvídání.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_novice">
+    <text>Předvídání cíle – nováček</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_novice_desc">
+    <text>Chyba předvídání pro hodnost nováček, která se násobí správně vypočítaným předstihem. Hodnota 2,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_trainee">
+    <text>Předvídání cíle – učeň</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_trainee_desc">
+    <text>Chyba předvídání pro hodnost učeň. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_experienced">
+    <text>Předvídání cíle – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_experienced_desc">
+    <text>Chyba předvídání pro hodnost zkušený. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_professional">
+    <text>Předvídání cíle – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_professional_desc">
+    <text>Chyba předvídání pro hodnost profesionál. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_veteran">
+    <text>Předvídání cíle – veterán</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_veteran_desc">
+    <text>Chyba předvídání pro hodnost veterán. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_expert">
+    <text>Předvídání cíle – expert</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_expert_desc">
+    <text>Chyba předvídání pro hodnost expert. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_master">
+    <text>Předvídání cíle – mistr</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_master_desc">
+    <text>Chyba předvídání pro hodnost mistr. Hodnota vyšší než 1,00 znamená příliš velký předstih, 1,00 znamená správný předstih.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_legend">
+    <text>Předvídání cíle – legenda</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_lead_legend_desc">
+    <text>Chyba předvídání pro nejvyšší hodnost – legenda. Hodnota 1,00 znamená správný předstih a umožňuje přesně zasahovat pohybující se cíle.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_reaction_vision">
+    <text>Křivka rychlosti vidění</text>
+  </string>
+  <string id="ui_mcm_at_reaction_vision_enabled">
+    <text>Povolit rychlost vidění</text>
+  </string>
+  <string id="ui_mcm_at_reaction_vision_enabled_desc">
+    <text>Určuje, jak rychle stalker zaznamená cíl na dálku podle své hodnosti, nad rámec tvého nastavení detekce. Vyšší hodnosti tě zaznamenají dříve. Pokud je vypnuto, zůstává zachována jednotná rychlost detekce.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_reaction_trigger">
+    <text>Disciplína střelby (délka dávky)</text>
+  </string>
+  <string id="ui_mcm_at_reaction_discipline_enabled">
+    <text>Povolit disciplínu střelby</text>
+  </string>
+  <string id="ui_mcm_at_reaction_discipline_enabled_desc">
+    <text>Upravuje délku dávek a jejich frekvenci podle hodnosti. Vyšší hodnosti střílejí častěji kratší a přesnější dávky, zatímco nižší hodnosti používají standardní chování. Výchozí hodnoty udržují násobitel délky dávky na stejné nebo vyšší úrovni než násobitel intervalu, takže počet zásahů za minutu nikdy neklesne pod standardní hodnotu. Vypnuto = standardní dávky.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_novice">
+    <text>Délka dávky – nováček</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_novice_desc">
+    <text>Násobitel délky dávky pro hodnost nováček. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_trainee">
+    <text>Délka dávky – učeň</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_trainee_desc">
+    <text>Násobitel délky dávky pro hodnost učeň. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_experienced">
+    <text>Délka dávky – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_experienced_desc">
+    <text>Násobitel délky dávky pro hodnost zkušený. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_professional">
+    <text>Délka dávky – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_professional_desc">
+    <text>Násobitel délky dávky pro hodnost profesionál. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_veteran">
+    <text>Délka dávky – veterán</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_veteran_desc">
+    <text>Násobitel délky dávky pro hodnost veterán. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_expert">
+    <text>Délka dávky – expert</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_expert_desc">
+    <text>Násobitel délky dávky pro hodnost expert. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_master">
+    <text>Délka dávky – mistr</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_master_desc">
+    <text>Násobitel délky dávky pro hodnost mistr. 1,00 = standardní hodnota; méně než 1 zkracuje dávku směrem k přesnějším prvním ranám.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_legend">
+    <text>Délka dávky – legenda</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qsize_legend_desc">
+    <text>Násobitel délky dávky pro nejvyšší hodnost – legenda. Méně než 1 = krátké a přesné dávky. Udržuj hodnotu na stejné nebo vyšší úrovni než násobitel intervalu, aby zůstala zachována intenzita palby.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_reaction_qinterval">
+    <text>Tempo střelby (interval)</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_novice">
+    <text>Tempo střelby – nováček</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_novice_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost nováček. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_trainee">
+    <text>Tempo střelby – učeň</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_trainee_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost učeň. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_experienced">
+    <text>Tempo střelby – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_experienced_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost zkušený. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_professional">
+    <text>Tempo střelby – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_professional_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost profesionál. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_veteran">
+    <text>Tempo střelby – veterán</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_veteran_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost veterán. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_expert">
+    <text>Tempo střelby – expert</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_expert_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost expert. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_master">
+    <text>Tempo střelby – mistr</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_master_desc">
+    <text>Násobitel prodlevy mezi dávkami pro hodnost mistr. 1,00 = standardní hodnota; méně než 1 znamená častější střelbu.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_legend">
+    <text>Tempo střelby – legenda</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_qinterval_legend_desc">
+    <text>Násobitel prodlevy mezi dávkami pro nejvyšší hodnost – legenda. Méně než 1 = kratší intervaly a vyšší intenzita palby.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_novice">
+    <text>Rychlost vidění – nováček</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_novice_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti nováček. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku; hodnota 1,00 ponechává detekci beze změny podle tvého nastavení. Detekce z bezprostřední blízkosti není ovlivněna.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_trainee">
+    <text>Rychlost vidění – učeň</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_trainee_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti učeň. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_experienced">
+    <text>Rychlost vidění – zkušený</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_experienced_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti zkušený. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_professional">
+    <text>Rychlost vidění – profesionál</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_professional_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti profesionál. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_veteran">
+    <text>Rychlost vidění – veterán</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_veteran_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti veterán. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_expert">
+    <text>Rychlost vidění – expert</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_expert_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti expert. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_master">
+    <text>Rychlost vidění – mistr</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_master_desc">
+    <text>Faktor rychlosti detekce pro stalkery hodnosti mistr. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku.</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_legend">
+    <text>Rychlost vidění – legenda</text>
+  </string>
+  <string id="ui_mcm_at_reaction_rct_vision_legend_desc">
+    <text>Faktor rychlosti detekce pro stalkery nejvyšší hodnosti – legenda. Vyšší hodnota znamená rychlejší zaznamenání cílů na dálku. Hodnota 2,00 znamená, že cíle zaznamená dvakrát rychleji než základní hodnota tvého nastavení.</text>
+  </string>
+
+
+  <!-- ==================== COMMITMENT PAGE ==================== -->
+ ```xml id="m5k2qa"
+  <string id="ui_mcm_at_commitment_commitment_cover_pin">
+    <text>Fixace pozice za krytem</text>
+  </string>
+  <string id="ui_mcm_at_commitment_commitment_cover_pin_desc">
+    <text>Stalker, který střílí na jasně viditelný cíl, zůstane za svým krytem místo přesunu na nepatrně lepší pozici – přebíhání během přestřelky je tak zastaveno už v jeho základu, ještě před samotnou změnou akce, kterou Vytrvalost již drží. Pokud je pozice ohrožena (nepřítel se dostane přímo k ní nebo je výstřel zablokován), stalker ji opustí. Vyžaduje novější verzi enginu; na starších verzích není funkce aktivní.</text>
+  </string>
+  <string id="ui_mcm_at_commitment_commitment_enabled">
+    <text>Povolit vytrvalost</text>
+  </string>
+  <string id="ui_mcm_at_commitment_commitment_enabled_desc">
+    <text>Pokud je vypnuto, stalkerové se chovají jako ve vanilla hře: jakmile engine při novém vyhodnocení najde nepatrně lepší možnost, stalker okamžitě opustí právě prováděnou akci a zvolí jinou. To způsobuje neustálé přebíhání mezi kryty během přestřelky.</text>
+  </string>
+  <string id="ui_mcm_at_hdr_commitment_hold">
+    <text>Limit vytrvalosti</text>
+  </string>
+  <string id="ui_mcm_at_commitment_commitment_hold_s">
+    <text>Max. doba setrvání</text>
+  </string>
+  <string id="ui_mcm_at_commitment_commitment_hold_s_desc">
+    <text>Jak dlouho může stalker setrvat u jedné akce, než engine dostane možnost znovu změnit jeho chování. Jde o maximální limit, nikoli pevně stanovenou dobu: dokud důvod pro setrvání stále trvá, stalker zůstává na místě. Tato hodnota pouze omezuje délku jednoho nepřerušeného setrvání, aby se po čase mohl znovu zohlednit výběr kvalitnějšího krytu. Jakmile důvod pomine (ztratí cíl z dohledu nebo výstřel přestane být možný), stalker akci okamžitě ukončí. Vyšší hodnota znamená delší setrvání.</text>
+  </string>
+
+
+  <string id="ui_mcm_at_combat_desc">
+    <text>Manévr představuje úplné a přímé převzetí kontroly nad jedním stalkerem za účelem provedení akce, kterou vanilla engine nedokáže – ať už kvůli chybějící mechanice, nebo proto, že takové rozhodnutí nikdy neprovádí. Systém sleduje události v boji, statistiky NPC a hráče i stav okolního světa a následně ve prospěch bojovníka provede vhodné rozhodnutí s ohledem na družstvo a frakci, stav družstva a nepřítele, vzdálenost, úhel, kryt a použité zbraně. Návrh jde dále než jen k jednotlivým stalkerům: celá družstva mohou koordinovat pohyb a palbu, přičemž každá frakce bojuje vlastním stylem a upřednostňuje manévry, které jí vyhovují. Nezasahuje do bojových skriptů, takže funguje společně s ostatními bojovými AI. Každý manévr lze zapnout samostatně.</text>
+  </string>
+  <string id="ui_mcm_at_combat_combat_enabled">
+    <text>Povolit převzetí boje</text>
+  </string>
+  <string id="ui_mcm_at_combat_combat_enabled_desc">
+    <text>Pokud je vypnuto, AlifeTactics nikdy nezasahuje do boje a všechny přestřelky řídí tvoje stávající AI. Pokud je zapnuto, může AlifeTactics na krátkou dobu převzít stalkera za účelem provedení jednoho manévru.</text>
+  </string>
+  <string id="ui_mcm_at_combat_combat_ignore_companions">
+    <text>Ignorovat společníky</text>
+  </string>
+  <string id="ui_mcm_at_combat_combat_ignore_companions_desc">
+    <text>Pokud je zapnuto, AlifeTactics nikdy nepřevezme kontrolu nad tvými společníky, takže jejich AI pro následování a boj i tvoje příkazy zůstávají plně pod kontrolou. Vypnutím umožníš systému provádět manévry i s nimi.</text>
+  </string>
+  <string id="ui_mcm_at_combat_hdr_maneuvers">
+    <text>Manévry</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_counterflank">
+    <text>Protiútok na křídlo</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_counterflank_desc">
+    <text>Stalker, který střílí na vzdálený cíl, se otočí a zaútočí na bližší hrozbu, pokud se nepřátelský hráč dostane do bezprostřední blízkosti. Nebude tak vystaven útoku zezadu.</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_reload_cover">
+    <text>Přebití v krytu</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_reload_cover_desc">
+    <text>Stalker přistižený při přebíjení v tvé palebné linii uteče k nejbližšímu krytu místo toho, aby zůstal stát na otevřeném prostranství. Jeho zbraň přitom pokračuje v přebíjení i během přesunu. Pokud přebíjí mimo tvůj dohled nebo mimo tvoje míření, zůstane na místě. Vyžaduje novější verzi enginu.</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_kite">
+    <text>Odstupování</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_kite_desc">
+    <text>Nepřítel se dostal pod minimální účinný dostřel stalkerovy zbraně. Stalker ustoupí zpět na vhodnou vzdálenost a přitom pokračuje ve střelbě po trase, kterou si předem ověřil jako bezpečnou.</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_retreat">
+    <text>Ústup</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_retreat_desc">
+    <text>Těžce zraněný stalker, který má střelce stále v dosahu, ustoupí ke krytu za sebou a přitom pokračuje ve střelbě. Zvolené krytí vždy zvětší vzdálenost od střelce a dva stalkerové nikdy nezaberou stejné místo.</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_flee">
+    <text>Útěk</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_flee_desc">
+    <text>Poslední člen rozprášeného družstva se dá na útěk směrem ke vzdálené spřátelené základně, se zbraní zavěšenou. Nejprve počká na přestávku v palbě. Pouze pro opatrné frakce; fanatici nikdy neustupují.</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_pickoff">
+    <text>Odstřelení</text>
+  </string>
+  <string id="ui_mcm_at_combat_maneuver_pickoff_desc">
+    <text>Stalker, který má v přestřelce výhodu delšího dostřelu, zůstane na místě a systematicky likviduje nepřítele jednotlivými přesnými výstřely. Zaujme pozici pohodlně za hranicí účinného dostřelu nepřítele, přestane okamžitě, jakmile se k němu nepřítel přiblíží, a nikdy nezůstane stát na místě, pokud je sám pod palbou nebo v zaměřovači hráče.</text>
+  </string>
+
+
+  <string id="ui_mcm_at_crossfire_desc">
+    <text>Bojovníci stejné frakce se již nebudou při křížové palbě navzájem kosit. Zásah mezi dvěma NPC stejné frakce způsobí snížené poškození podle níže nastaveného násobitele. Rozhoduje jejich skutečný vztah, takže skutečně nepřátelské frakce si nadále způsobují plné poškození. Tvoje vlastní střelba není nijak ovlivněna.</text>
+  </string>
+  <string id="ui_mcm_at_crossfire_crossfire_enabled">
+    <text>Omezit palbu do vlastních řad</text>
+  </string>
+  <string id="ui_mcm_at_crossfire_crossfire_enabled_desc">
+    <text>Pokud je vypnuto, platí plné poškození přátelskou palbou jako ve vanilla hře.</text>
+  </string>
+  <string id="ui_mcm_at_crossfire_crossfire_factor">
+    <text>Násobitel poškození vlastní frakce</text>
+  </string>
+  <string id="ui_mcm_at_crossfire_crossfire_factor_desc">
+    <text>Určuje, jaké poškození způsobí zásah mezi členy stejné frakce. 0,00 znamená, že si spoluhráči navzájem nezpůsobí žádné poškození. 1,00 znamená plné poškození jako ve vanilla hře.</text>
+  </string>
+
+
+  <string id="ui_mcm_at_danger_sound_desc">
+    <text>Určuje, jak stalkerové reagují na to, co slyší. Reakce na střelbu používají vzdálenosti z nastavení nebezpečí tvého modpacku; vlastní hluk hráče (pohyb, manipulace se zbraní) používá krátké vzdálenosti zabudované přímo v systému. Za běhu se upraví skript nebezpečí, který tvůj modpack používá – funguje společně s ostatními bojovými AI a nic nenahrazuje. Je kompatibilní se stealth mody: stealth je založen na tom, zda tě NPC VIDÍ (světlo, kryt, postoj), a zvukový systém nijak nezasahuje do vidění ani detekce – pouze přidává krátký dosah sluchu, který vanilla hra postrádá. Pohyb v podřepu je tichý, takže plížení funguje přesně podle nastavení tvého stealth systému.</text>
+  </string>
+  <string id="ui_mcm_at_danger_hdr_gunfire">
+    <text>Střelba</text>
+  </string>
+  <string id="ui_mcm_at_danger_hdr_noise">
+    <text>Tvůj hluk</text>
+  </string>
+  <string id="ui_mcm_at_danger_hit_desc">
+    <text>Určuje, jak stalkerové reagují na zásah. Vzdálenosti reakcí pocházejí z nastavení nebezpečí tvého modpacku; AlifeTactics přidává samotné reakce, nikoli jejich nastavení.</text>
+  </string>
+  <string id="ui_mcm_at_danger_fixes_desc">
+    <text>Opravy kontroly nebezpečí a vyšetřování těl jsou vždy aktivní, spolu s jedním nastavitelným přepínačem. Opravy nelze vypnout; odstraňují dlouhodobé pády a chybné vyhodnocování. AlifeTactics se instaluje jako úprava za běhu na skript nebezpečí, který tvůj modpack používá.</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_hit_bypass">
+    <text>Vzdálené zásahy</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_hit_bypass_desc">
+    <text>Vanilla stalkerové ignorují vzdálené střelce, protože reakci omezuje vzdálenostní limit. Po zapnutí se přímý zásah vždy zaregistruje, takže stalker zasažený odstřelovačem ze 200 metrů se otočí a hledá kryt místo toho, aby jen stál na místě.</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_attack_sound">
+    <text>Palba nepřítele</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_attack_sound_desc">
+    <text>Vanilla NPC ignorují střelbu, kterou slyší, ale nevidí. Tato funkce způsobí, že stalker zareaguje na palbu NEPŘÍTELE i bez přímého výhledu: otočí se směrem ke střelci a zaujme postoj připravený k boji. Jakmile střelce uvidí, přesune se do krytu. Reaguje na zvuk, nikoli na to, že tě vidí. Střelba neutrálních nebo přátelských stalkerů, včetně tvé vlastní, je nevyplaší – to odpovídá pravidlům vztahů enginu stejně jako ve vanilla hře. Vzdálenost reakce se řídí nastavením nebezpečí tvého modpacku.</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_neutral_gunfire">
+    <text>Upozornění na neutrální střelbu</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_neutral_gunfire_desc">
+    <text>Neutrální a přátelští stalkerové se při tvé střelbě v jejich blízkosti uvedou do pohotovosti – připraví zbraň a otočí se směrem k výstřelům – místo aby ignorovali střelbu těsně vedle sebe. Jde pouze o upozornění: nestanou se nepřátelskými, nepřemísťují se a po skončení střelby se uklidní. Dosah je krátký a zdaleka nedosahuje vzdáleností používaných pro bojovou detekci.</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_move_noise">
+    <text>Hluk při pohybu</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_move_noise_desc">
+    <text>Nepřátelští stalkerové tě mohou slyšet při pohybu. Každý krok vytváří dosah hluku podle postoje, povrchu a počasí: základní dosah chůze je 5 m, sprint jej násobí 1,6×, dopad po skoku má dosah 10 m a pohyb v podřepu je zcela tichý, takže plížení zůstává otázkou světla a krytu. Povrchy: kov ×1,25, dřevo ×1,15, voda ×1,35, tráva ×0,7, hlína a písek ×0,8; déšť snižuje dosah až o 40 %. Reakce odpovídá typu zvuku: slyšená chůze způsobí, že stalker připraví zbraň a otočí se směrem ke zvuku, zatímco sprint nebo dopad po skoku ho pošle místo prověřit. Zvuk nikdy není považován za potvrzeného nepřítele – stalker místo prověřuje chůzí, nikdy nevyrazí do útoku a magicky neví, kde přesně jsi. Reagují pouze stalkerové, kteří jsou k tobě již nepřátelští, a pouze mimo boj. Plížení tak zůstává hrou vzdálenosti a postoje, místo aby NPC byla jednoduše hluchá.</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_heard_actions">
+    <text>Hluk při manipulaci</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_heard_actions_desc">
+    <text>Nepřátelští stalkerové reagují, pokud poblíž uslyší přebití zbraně, cvaknutí prázdného zásobníku nebo použití předmětu. Dosah je kratší než u hluku pohybu a započítávají se pouze zvuky, které skutečně zaslechli. Zvuk přebití nebo cvaknutí prázdné zbraně způsobí, že stalker místo prověří chůzí, zatímco použití předmětu ho přiměje připravit zbraň a otočit se směrem ke zvuku.</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_noise_mult">
+    <text>Dosah hluku</text>
+  </string>
+  <string id="ui_mcm_at_danger_danger_noise_mult_desc">
+    <text>Upravuje vzdálenost, na kterou se šíří hluk tvého pohybu a manipulace se zbraní. Hodnota pod 1 usnadňuje plížení, hodnota nad 1 znamená citlivější sluch stalkerů.</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_actor_tables">
+    <text>Dosahy hráče</text>
+  </string>
+  <string id="ui_mcm_at_fixes_danger_danger_actor_tables_desc">
+    <text>Nebezpečí způsobené hráčem používá samostatné tabulky pro hráče, pokud je tvůj systém nebezpečí rozlišuje (některé bojové AI mody to dělají). Použije se pouze tehdy, pokud je samotný nainstalovaný skript nebezpečí skutečně využívá – pokud jsou tabulky v konfiguraci nevyužité nebo totožné, zachová se jejich vlastní nastavení.</text>
+  </string>
+  <string id="ui_mcm_at_danger_hdr_fixes">
+    <text>Opravy chyb vždy aktivní (nelze vypnout)</text>
+  </string>
+  <string id="ui_mcm_at_danger_fixes_list">
+    <text>1. Tři kategorie nebezpečí načítaly nesprávné řádky konfigurace kvůli kolizi názvů. Nyní každá používá vlastní řádek. \n2. Mrtvola mutanta způsobovala pád při kontrole času nebezpečí. \n3. Zrušený odkaz na NPC způsoboval pád vyhodnocování nebezpečí. \n4. Neplatná hodnota času nebezpečí způsobovala pád vyhodnocování. \n5. Callback zásahu po každém zásahu poškozoval paměť nebezpečí kvůli chybějícímu střelci. \n6. Přechody mezi stavy nebezpečí ponechávaly aktivní zastaralou animaci spodní části těla. \n7. Opuštění stavu nebezpečí rušilo rezervaci krytu všech stalkerů místo pouze vlastního krytu. \n8. Zmizení mrtvoly během vyšetřování způsobovalo pád vyšetřujícího NPC. \n9. Vyšetřování mrtvoly vedlo nesprávného člena družstva jednotlivými fázemi. \n10. Vyšetřující stalker šel na vyčištěné místo místo ke krytu, který nalezl. \n11. Kontrola nebezpečí znovu analyzovala stejné konfigurační řetězce při každém vyhodnocení. Nyní se analyzují pouze jednou (lepší výkon). \n12. Skriptované nebezpečí mrtvého stalkera již nezůstává viset na jeho ID, takže NPC, které stejné ID později znovu použije, začíná v čistém stavu. \n13. Reakce na mrtvolu způsobovala pád hry, pokud byla spuštěna před nastavením fáze jejího vyšetřování.</text>
+  </string>
+
+
+  <string id="ui_mcm_at_jam_desc">
+    <text>Zbraně NPC se nyní zasekávají pouze skutečně a přebíjejí pouze tehdy, když je zásobník prázdný. Na upravených EXE verzích hry každý NPC hází falešnou šanci na zaseknutí podle hodnosti a množství vystřílené munice, takže i zbraň v perfektním stavu se může zaseknout a přebíjet každých několik ran. Anomaly navíc nemá animaci zaseknutí zbraně, která by to zobrazila. AlifeTactics tento hod nepřátelským NPC vypíná. Tvoje vlastní zaseknutí zbraní zůstávají beze změny.</text>
+  </string>
+  <string id="ui_mcm_at_fixes_jam_jam_enabled">
+    <text>Potlačit zaseknutí zbraní NPC</text>
+  </string>
+  <string id="ui_mcm_at_fixes_jam_jam_enabled_desc">
+    <text>Zapnuto: zbraně NPC se nikdy nezaseknou kvůli náhodnému hodu z upravených EXE. Vypnuto: používá se výchozí chování upravených EXE. Zaseknutí tvé vlastní zbraně není ovlivněno ani v jednom případě.</text>
+  </string>
+
+
+  <!-- ==================== AMMO PAGE ==================== -->
+<string id="ui_mcm_at_ammo_desc">
+    <text>Stalkeři používají munici, kterou skutečně nosí u sebe. Veteráni a vyšší hodnosti používají průbojné náboje ze svého inventáře s reálnou balistikou a po jejich vyčerpání přejdou zpět na standardní munici. V každém boji existuje šance, že spotřebují jednu krabičku průbojné munice, přičemž rychlejší zbraně a nižší hodnosti ji spotřebovávají rychleji. Průbojná munice pochází ze světa prostřednictvím obchodování a kořisti, takže to, co stalker najde, ovlivňuje jeho nebezpečnost. Tato munice z něj však jako kořist nevypadává. Prahová hodnost a rychlost spotřeby se nastavují v configs/alifetactics/at_ammo.ltx.</text>
+</string>
+<string id="ui_mcm_at_fixes_ammo_ammo_enabled">
+    <text>Průbojná munice NPC</text>
+</string>
+<string id="ui_mcm_at_fixes_ammo_ammo_enabled_desc">
+    <text>Zapnuto: Stalkeři s odpovídající hodností používají průbojnou munici, kterou mají u sebe, a během boje ji spotřebovávají. Vypnuto: Všichni stalkeři používají standardní munici jako ve vanille a žádná munice z jejich inventáře se nespotřebovává.</text>
+</string>
+
+
+  <!-- ==================== DEVELOPMENT PAGE ==================== -->
+  <string id="ui_mcm_at_development_desc">
+   <text>Debugovací a vývojářské nástroje. Úroveň logování DEBUG sleduje všechny systémy včetně časování: rozhodování o manévrech, vyhodnocování nebezpečí, odhalení střelce, léčení a spotřebované předměty, přesnost jednotlivých výstřelů, munici a přebíjení. Záznamy se ukládají do alifetactics.log. Podrobné trasování má určitý dopad na výkon, proto pro běžné hraní ponechte úroveň WARN.</text>
+   </string>
+  <!-- Development - Logging -->
+ <string id="ui_mcm_at_hdr_logging">
+    <text>Protokolování</text>
+  </string>
+  <string id="ui_mcm_at_development_log_level">
+    <text>Úroveň logování</text>
+  </string>
+  <string id="ui_mcm_at_development_log_level_desc">
+    <text>Podrobnost logování. ERROR: pouze chyby. WARN: neobvyklé stavy. INFO: inicializace modulů a instalace oprav. DEBUG: kompletní trasování jednotlivých událostí včetně jejich trvání.</text>
+  </string>
+  <string id="at_development_log_level_lst_error">
+    <text>Chyby</text>
+  </string>
+  <string id="at_development_log_level_lst_warn">
+    <text>Varování</text>
+  </string>
+  <string id="at_development_log_level_lst_info">
+    <text>Informace</text>
+  </string>
+  <string id="at_development_log_level_lst_debug">
+    <text>Debug</text>
+  </string>
+  <!-- Development - Debug HUD -->
+  <string id="ui_mcm_at_hdr_hud">
+    <text>Debug HUD</text>
+  </string>
+  <string id="ui_mcm_at_development_hud_position">
+    <text>Pozice</text>
+  </string>
+  <string id="ui_mcm_at_development_hud_position_desc">
+    <text>Živý přehled okolních stalkerů: hodnost a jméno, zdraví, logické schéma, psychický stav a aktuální cíl včetně vzdálenosti. Zelený řádek s názvem manévru zeleně označuje stalkera, kterého právě ovládá AlifeTactics, a to po celou dobu trvání manévru. Aktualizuje se dvakrát za sekundu a při otevřeném PDA se skryje. Vyberte roh obrazovky, ve kterém se má zobrazovat.</text>
+  </string>
+  <string id="at_development_hud_position_lst_off">
+    <text>Vypnuto</text>
+  </string>
+  <string id="at_development_hud_position_lst_topleft">
+    <text>Vlevo nahoře</text>
+  </string>
+  <string id="at_development_hud_position_lst_topright">
+    <text>Vpravo nahoře</text>
+  </string>
+  <string id="at_development_hud_position_lst_centerleft">
+    <text>Vlevo uprostřed</text>
+  </string>
+  <string id="at_development_hud_position_lst_centerright">
+    <text>Vpravo uprostřed</text>
+  </string>
+  <string id="at_development_hud_position_lst_bottomleft">
+    <text>Vlevo dole</text>
+  </string>
+  <string id="at_development_hud_position_lst_bottomright">
+    <text>Vpravo dole</text>
+  </string>
+  <!-- Development - Ballistics -->
+  <string id="ui_mcm_at_development_ballistics_enabled">
+    <text>Debug balistiky</text>
+  </string>
+  <string id="ui_mcm_at_development_ballistics_enabled_desc">
+    <text>Debugovací záznam výsledků střelby ve vašem okolí: poměr zásahů podle hodnosti rozdělený podle pohybu střelce, způsobené poškození, těsné minutí a délka dávek podle typu zbraně, vždy včetně systému, který střelce řídí (manévr, Commitment nebo vanilla). Tabulky se jednou za minutu zapisují do alifetactics_world.log. Při vypnutí nemá žádný dopad na výkon.</text>
+  </string>
+  <!-- Development - World trace -->
+  <string id="ui_mcm_at_development_world_trace_enabled">
+    <text>Debug chování světa</text>
+  </string>
+  <string id="ui_mcm_at_development_world_trace_enabled_desc">
+    <text>Debugovací dohled nad bojovými NPC ve vašem okolí, který zaznamenává případy, kdy se tělo posouvá: skutečnou uraženou vzdálenost bez animace chůze nebo běhu, včetně odstrčení bezprostředně po zásahu. Každý záznam uvádí systém, který dané NPC řídí (manévr, Commitment nebo vanilla). Záznamy se zapisují do alifetactics_world.log. Při vypnutí nemá žádný dopad na výkon.</text>
+  </string>
+  <!-- Development - Reset -->
+  <string id="ui_mcm_at_development_btn_reset_all">
+    <text>Obnovit výchozí nastavení</text>
+  </string>
+  <string id="ui_mcm_at_development_btn_reset_all_desc">
+    <text>Obnoví všechna nastavení AlifeTactics v MCM na výchozí hodnoty. Použijte po aktualizaci z verze s odlišnou strukturou MCM.</text>
+  </string>
+  <string id="ui_mcm_at_development_reset_warning">
+    <text>Varování: nejprve uložte nebo zrušte neuložené změny v MCM, jinak při dalším potvrzení přepíšou obnovené výchozí nastavení.</text>
+  </string>
+  <string id="st_at_reset_all_done">
+    <text>AlifeTactics: všechna nastavení byla obnovena na výchozí hodnoty.</text>
+  </string>
+</string_table>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+<string_table>
+<string id="ui_mcm_menu_faction_tweaks">
+	<text>Úpravy frakcí</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_general_title">
+	<text>Obecné</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_enabled">
+	<text>Povolit specifické efekty frakcí</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_enabled_desc">
+	<text>Hlavní přepínač pro níže uvedené možnosti specifické pro jednotlivé frakce.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_placeholder_desc">
+	<text>Pro tuto frakci zatím nejsou k dispozici žádné možnosti.</text>
+</string>
+
+<string id="ui_mcm_menu_loners">
+	<text>Samotáři</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_title">
+	<text>Samotáři</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_disable_vanilla_payment_recruitment">
+	<text>Zakázat placené najímání z vanilly</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_disable_vanilla_payment_recruitment_desc">
+	<text>Brání velitelům neutrálních skupin Samotářů v nabídnutí dialogu pro placený doprovod z vanilly. Bezplatné najímání společníků při přátelských vztazích zůstává beze změny.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_teamup_requests_desc">
+	<text>Samotáři nízké hodnosti, kteří cestují sami, mohou přes PDA vysílat žádost o společnost. Najděte je na mapě a najměte je prostřednictvím dialogu. Standardní najímání na základě dobrých vztahů zůstává beze změny.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_teamup_requests_enabled">
+	<text>Žádosti Samotářů o spolupráci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_teamup_requests_interval">
+	<text>Interval kontroly žádosti (s)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_teamup_requests_chance">
+	<text>Šance na žádost při kontrole</text>
+</string>
+
+<string id="st_ztc_loners_teamup_pda_1">
+	<text>Je někdo na této frekvenci? Jsem poblíž %s a nechce se mi pokračovat samotnému. — %s</text>
+</string>
+
+<string id="st_ztc_loners_teamup_pda_2">
+	<text>Je někdo poblíž? Jsem u %s a bez posily se mi tahle cesta nezdá. — %s</text>
+</string>
+
+<string id="st_ztc_loners_teamup_ask">
+	<text>Viděl jsem tvoji zprávu. Nemusíš jít sám.</text>
+</string>
+
+<string id="st_ztc_loners_teamup_agree">
+	<text>Díky, stalkere. Půjdu s tebou.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_share_quest_rewards_enabled">
+	<text>Rozdělovat odměny za úkoly</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_share_quest_rewards_enabled_desc">
+	<text>Po dokončení úkolu s peněžní odměnou rozdělí odměnu rovným dílem mezi vás a vaše živé společníky z řad Samotářů. Váš podíl se sníží; společníci obdrží informaci o svém podílu prostřednictvím tipu v PDA (peníze se jim nepřičtou do peněženky).</text>
+</string>
+
+<string id="st_ztc_loners_quest_reward_share_one">
+	<text>Odměna za úkol rozdělena rovným dílem: %d RU pro vás, %d RU pro %s.</text>
+</string>
+
+<string id="st_ztc_loners_quest_reward_share_many">
+	<text>Odměna za úkol rozdělena rovným dílem: %d RU pro vás a vašich %d společníků (celkem rozděleno %d RU).</text>
+</string>
+
+<string id="ui_mcm_menu_bandits">
+	<text>Bandité</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandits_title">
+	<text>Bandité</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_enabled">
+	<text>Placený nábor doprovodu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_enabled_desc">
+	<text>Velitele neutrálních skupin Banditů lze najmout jako placený časově omezený doprovod (smlouvy na 24 h / 48 h). Přátelské vztahy stále umožňují bezplatné najímání společníků.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_price_24h">
+	<text>Základní cena doprovodu na 24 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_price_24h_desc">
+	<text>Základní cena v rublech za 24hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (500–15000, vanilla 1500).</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_price_48h">
+	<text>Základní cena doprovodu na 48 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandit_paid_escort_price_48h_desc">
+	<text>Základní cena v rublech za 48hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (1000–30000, vanilla 3000).</text>
+</string>
+
+<string id="ui_mcm_menu_csky">
+	<text>Jasná Obloha</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_csky_title">
+	<text>Jasná Obloha</text>
+</string>
+
+<string id="ui_mcm_menu_dolg">
+	<text>Povinnost</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_dolg_title">
+	<text>Povinnost</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_dolg_disable_fleeing">
+	<text>Zakázat útěk</text>
+</string>
+
+<string id="ui_mcm_menu_freedom">
+	<text>Svoboda</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_freedom_title">
+	<text>Svoboda</text>
+</string>
+
+
+<string id="ui_mcm_menu_mercenary">
+	<text>Žoldáci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_title">
+	<text>Žoldáci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_disable_fleeing">
+	<text>Zakázat útěk</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_enabled">
+	<text>Placený nábor doprovodu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_enabled_desc">
+	<text>Velitele neutrálních skupin Žoldáků lze najmout jako placený časově omezený doprovod (smlouvy na 24 h / 48 h). Přátelské vztahy stále umožňují bezplatné najímání společníků. Vyžaduje povolené Úpravy frakcí.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_price_24h">
+	<text>Základní cena doprovodu na 24 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_price_24h_desc">
+	<text>Základní cena v rublech za 24hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (500–15000, vanilla 1500).</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_price_48h">
+	<text>Základní cena doprovodu na 48 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_mercenary_paid_escort_price_48h_desc">
+	<text>Základní cena v rublech za 48hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (1000–30000, vanilla 3000).</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_freedom_disable_vanilla_payment_recruitment">
+	<text>Zakázat placené najímání z vanilly</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_freedom_disable_vanilla_payment_recruitment_desc">
+	<text>Brání velitelům neutrálních skupin Svobody v nabídnutí dialogu pro placený doprovod z vanilly. Bezplatné najímání společníků při přátelských vztazích zůstává beze změny.</text>
+</string>
+
+<string id="ui_mcm_menu_military">
+	<text>Armáda</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_military_title">
+	<text>Armáda</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_military_disable_fleeing">
+	<text>Zakázat útěk</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_disable_fleeing_desc">
+	<text>Pokud je povoleno, blokuje ústup z boje a panický útěk u všech NPC této frakce. Platí při vytvoření NPC i po změně nastavení v MCM. Vypnutí obnoví výchozí práh paniky u živých NPC; blokování ústupu se odstraní při respawnu.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_disable_high_rank_fleeing_desc">
+	<text>Blokuje ústup z boje a panický útěk u NPC této frakce od hodnosti Veterán výše (Veterán, Expert, Mistr, Legenda). Nižší hodnosti si zachovávají standardní chování při útěku.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_loners_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_bandits_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_csky_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_freedom_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_ecologist_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_disable_high_rank_fleeing">
+	<text>Zakázat útěk NPC vysokých hodností</text>
+</string>
+
+<string id="ui_mcm_menu_ecologist">
+	<text>Vědci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_ecologist_title">
+	<text>Vědci</text>
+</string>
+
+<string id="ui_mcm_menu_monolith">
+	<text>Monolit</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_title">
+	<text>Monolit</text>
+</string>
+
+<string id="ui_mcm_menu_renegade">
+	<text>Odpadlíci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_title">
+	<text>Odpadlíci</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_enabled">
+	<text>Placený nábor doprovodu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_enabled_desc">
+	<text>Velitele neutrálních skupin Odpadlíků lze najmout jako placený časově omezený doprovod (smlouvy na 24 h / 48 h). Přátelské vztahy stále umožňují bezplatné najímání společníků.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_price_24h">
+	<text>Základní cena doprovodu na 24 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_price_24h_desc">
+	<text>Základní cena v rublech za 24hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (500–15000, vanilla 1500).</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_price_48h">
+	<text>Základní cena doprovodu na 48 h (RU)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_renegade_paid_escort_price_48h_desc">
+	<text>Základní cena v rublech za 48hodinovou smlouvu placeného doprovodu před započtením škálování podle hodnosti skupiny (1000–30000, vanilla 3000).</text>
+</string>
+
+<string id="ui_mcm_menu_sin">
+	<text>Hřích</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_title">
+	<text>Hřích</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_disable_fleeing">
+	<text>Zakázat útěk</text>
+</string>
+
+<string id="ui_mcm_menu_isg">
+	<text>UNISG</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_isg_title">
+	<text>UNISG</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_isg_disable_fleeing">
+	<text>Zakázat útěk</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_psy_immunity">
+	<text>Imunita Monolitu vůči psi-poli</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_easier_companion_recruit">
+	<text>Pravé bratrstvo Monolitu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_easier_companion_recruit_desc">
+	<text>Hráči za Monolit mohou verbovat spřátelené skupiny Monolitu prostřednictvím dialogu bratrstva. Vyžaduje velitele skupiny z běžné hry, který není součástí příběhu (nelze použít debugem vytvořené Samotáře). Limit počtu členů skupiny zůstává beze změny.</text>
+</string>
+
+<string id="st_ztc_monolith_companion_recruit_ask">
+	<text>Bratře, kráčej se mnou. Cesta je ve dvou bezpečnější.</text>
+</string>
+
+<string id="st_ztc_monolith_companion_recruit_agree">
+	<text>Monolit poskytuje. Budu tě následovat, bratře.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_rupture_resistance_desc">
+	<text>Snížení poškození od útoků zblízka, řezných útoků a výbuchů pro stalkery Monolitu (0–50 %)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_rupture_resistance_actor_enabled">
+	<text>Odolnost hráče vůči tržným zraněním</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_rupture_resistance_actor">
+	<text>Odolnost hráče vůči tržným zraněním (%)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_rupture_resistance_npc_enabled">
+	<text>Odolnost NPC Monolitu vůči tržným zraněním</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_monolith_rupture_resistance_npc">
+	<text>Odolnost NPC Monolitu vůči tržným zraněním (%)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_mutant_alliance_enabled">
+	<text>Aliance Hříchu s mutanty</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_mutant_alliance_enabled_desc">
+	<text>Stalkeři Hříchu ignorují divoké mutanty, dokud na ně nezaútočíte. Nepřátelství si pamatují po dobu 6 hodin herního času. Pokud je tato možnost povolena, nejsou nabízeny úkoly Hříchu na lov mutantů (včetně uložených úkolů DRX).</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_max_companions">
+	<text>Max. počet mutantích společníků (Hřích)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_max_companions_desc">
+	<text>Maximální počet ochočených mutantích společníků pro frakci Hřích (1–10)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_companion_teleport_dist">
+	<text>Vzdálenost teleportace společníka (m)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_companion_teleport_dist_desc">
+	<text>Jak daleko může ochočený mutant zaostávat, než se teleportuje k vám (5–50 m)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_squad_escorts_enabled">
+	<text>Mutantí doprovod skupin Hříchu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_squad_escort_chance">
+	<text>Šance na vytvoření doprovodu (%)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_squad_escort_chance_desc">
+	<text>Šance, že způsobilé bojové skupiny Hříchu budou mít jako doprovod slepého psa (0–100 %)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_squad_escorts_max_per_squad">
+	<text>Max. počet doprovodných mutantů na skupinu</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_sin_squad_escorts_max_active">
+	<text>Max. počet aktivních doprovodů (úroveň)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_actor_enabled">
+	<text>Cicatrix hráče</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_actor_enabled_desc">
+	<text>Udělí hráčům frakce Hřích artefakt Cicatrix, který při nabití snižuje poškození od kulek a postupně se dobíjí.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_npc_enabled">
+	<text>Cicatrix NPC</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_npc_enabled_desc">
+	<text>Vybaví NPC frakce Hřích artefaktem Cicatrix a sníží poškození, které utrpí od kulek.</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_player_bullet_reduction">
+	<text>Snížení poškození od kulek u hráče (%)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_npc_bullet_reduction">
+	<text>Snížení poškození od kulek u NPC Hříchu (%)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_recharge_normal_sec">
+	<text>Normální nabíjení: sekund na 1 %</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_recharge_normal_sec_desc">
+	<text>Jak dlouho trvá artefaktu Cicatrix získat 1 % náboje v normálním stavu (1–60 s)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_recharge_broken_sec">
+	<text>Nabíjení po vyčerpání: sekund na 1 %</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_recharge_broken_sec_desc">
+	<text>Jak dlouho trvá artefaktu Cicatrix získat 1 % náboje po vyčerpání (1–30 s)</text>
+</string>
+
+<string id="ui_mcm_ztc_faction_force_shield_debug_log">
+	<text>Debug log silového štítu</text>
+</string>
+
+
+</string_table>

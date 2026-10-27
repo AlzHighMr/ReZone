@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+<string_table>
+<string id="ui_mcm_menu_general">
+	<text>Obecné</text>
+</string>
+
+<string id="ui_mcm_ztc_general_title">
+	<text>Obecné</text>
+</string>
+
+<string id="ui_mcm_ztc_general_disable_wounded_state">
+	<text>Zakázat stav zranění</text>
+</string>
+
+<string id="ui_mcm_ztc_general_disable_wounded_state_desc">
+	<text>Stalkeři zůstanou při nízkém zdraví stát, místo aby padli zranění k zemi.</text>
+</string>
+
+<string id="ui_mcm_ztc_general_exclude_story_npcs">
+	<text>Vyloučit příběhová NPC (zachovat chování při zranění)</text>
+</string>
+
+<string id="ui_mcm_ztc_general_exclude_monolith">
+	<text>Vyloučit Monolit (zachovat chování při zranění)</text>
+</string>
+
+<string id="ui_mcm_ztc_general_exclude_companions">
+	<text>Vyloučit společníky (zachovat chování při zranění)</text>
+</string>
+
+<string id="ui_mcm_ztc_general_wounded_compat_desc">
+	<text>Zrušení vyloučení příběhových NPC může způsobit konflikty s úkolovými skripty, které spoléhají na stav zranění. Vyloučení Monolitu zachovává jejich chování při sebevražedném použití granátu po zranění. Vyloučení společníků zachovává jejich oživování skupinou a mechanismy zranění společníků.</text>
+</string>
+
+<string id="ui_mcm_ztc_general_disable_weapon_warnings">
+	<text>Zakázat varování kvůli zbrani</text>
+</string>
+
+<string id="ui_mcm_ztc_general_disable_weapon_warnings_desc">
+	<text>Stalkeři vás při kontrole setkání a varování považují za neozbrojeného, i když máte zbraň v ruce. Vypnutí se projeví okamžitě prostřednictvím MCM.</text>
+</string>
+</string_table>

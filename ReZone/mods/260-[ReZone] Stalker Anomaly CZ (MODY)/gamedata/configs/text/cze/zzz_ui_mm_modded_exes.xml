@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	<string id="ui_mm_title_modded_exes">
+		<text>Modded Exes</text>
+	</string>
+	<string id="ui_mm_menu_modded_exes">
+		<text>Modded Exes</text>
+	</string>
+
+<string id="ui_mm_video_basic_monitor">
+	<text>Monitor</text>
+</string>
+
+<string id="ui_mm_video_weather_persistent_weather">
+	<text>Trvalé počasí</text>
+</string>
+<string id="ui_mm_video_weather_persistent_weather_desc">
+	<text>Ukládá aktuální povětrnostní podmínky, aby byly při načtení hry přesně obnoveny</text>
+</string>
+
+<string id="ui_mm_lst_ON">
+	<text>ZAPNUTO</text>
+</string>
+<string id="ui_mm_lst_OFF">
+	<text>VYPNUTO</text>
+</string>
+
+<string id="ui_mm_modded_exes_color_a">
+	<text>Průhlednost</text>
+</string>
+<string id="ui_mm_modded_exes_color_r">
+	<text>Červená</text>
+</string>
+<string id="ui_mm_modded_exes_color_g">
+	<text>Zelená</text>
+</string>
+<string id="ui_mm_modded_exes_color_b">
+	<text>Modrá</text>
+</string>
+
+	<!-- Visual -->
+	<string id="ui_mm_menu_visual">
+		<text>Vizual</text>
+	</string>
+
+	<!-- Graphics -->
+	<string id="ui_mm_menu_graphics">
+	<text>Grafika</text>
+</string>
+<string id="ui_mm_graphics_modded_exes">
+	<text>Grafika</text>
+</string>
+<string id="ui_mm_ssfx_grass_shadows_x">
+	<text>Kaskády stínů trávy</text>
+</string>
+<string id="ui_mm_ssfx_grass_shadows_y">
+	<text>Vzdálenost útlumu stínů trávy</text>
+</string>
+<string id="ui_mm_ssfx_grass_shadows_z">
+	<text>Vykreslovací vzdálenost stínů trávy</text>
+</string>
+<string id="ui_mm_ssfx_grass_shadows_w">
+	<text>Nepoužito</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_g_wallmark_range_static">
+	<text>Dosah stop na statických objektech (g_wallmark_range_static)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_g_wallmark_range_skeleton">
+	<text>Dosah stop na kostrách (g_wallmark_range_skeleton)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r_wallmarks_ssa_k">
+	<text>Limit plochy stop na obrazovce (r_wallmarks_ssa_k)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r_wallmarks_ssa_k_desc">
+	<text>VYŠŠÍ hodnota znamená MENŠÍ vykreslovací vzdálenost</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r_wallmarks_static">
+	<text>Stopy na statických objektech (r_wallmarks_static)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r_wallmarks_dynamic">
+	<text>Stopy na dynamických objektech (r_wallmarks_dynamic)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__blood_decals_on_objects">
+	<text>Dodatečné krvavé stopy na živých objektech (r__blood_decals_on_objects)</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_r__rain_exp">
+	<text>Usazování deště (r__rain_exp)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__rain_exp_desc">
+	<text>Jak rychle se bude zvyšovat hustota kapek v závislosti na intenzitě deště. VYŠŠÍ hodnota znamená MENŠÍ usazování</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__rain_k">
+	<text>Modifikátor hustoty deště (r__rain_k)</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard">
+	<text>Limit plochy objektů na obrazovce (r__ssa_discard)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard_desc">
+	<text>VYŠŠÍ hodnota znamená MENŠÍ vykreslovací vzdálenost objektů</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard_exp">
+	<text>Exponent limitu plochy objektů na obrazovce (r__ssa_discard_exp)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard_exp_desc">
+	<text>Jemně upravuje hranici vykreslovací vzdálenosti. Nižší hodnota zvýší hustotu objektů v blízkosti, vyšší hodnota ji sníží. NEOVLIVŇUJE celkovou vykreslovací vzdálenost</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard_fade_k">
+	<text>Koeficient útlumu limitu plochy objektů (r__ssa_discard_fade_k)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r__ssa_discard_fade_k_desc">
+	<text>Jemně upravuje hranici vykreslovací vzdálenosti. Vyšší hodnota zvýší „postupné mizení“ objektů, takže větší objekty se přestanou vykreslovat dříve. OVLIVŇUJE celkovou vykreslovací vzdálenost</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r2_shadow_lod_min">
+	<text>Hranice vykreslování světel (r2_shadow_lod_min)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_r2_shadow_lod_min_desc">
+	<text>Vyšší hodnota způsobí, že se světla přestanou vykreslovat dříve</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_r__actor_shadow_in_demo_record">
+	<text>Povolit stín postavy v demo záznamu (r__actor_shadow_in_demo_record)</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_g_use_non_linear_inertia">
+	<text>Nelineární setrvačnost animací při pohybu (g_use_non_linear_inertia)</text>
+</string>
+
+<string id="ui_mm_modded_exes_visual_graphics_pfx_volumetric_mode">
+	<text>Objemová světla .PEAK (pfx_volumetric_mode)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_graphics_pfx_volumetric_mode_desc">
+	<text>Vyžaduje shader mod .peak, odkaz: https://www.moddb.com/mods/stalker-anomaly/addons/peak-volumetrics-1-1</text>
+</string>
+
+	<!-- UI/HUD -->
+
+<string id="ui_mm_menu_ui_hud">
+	<text>UI/HUD</text>
+</string>
+
+<string id="ui_mm_ui_hud_modded_exes">
+	<text>UI/HUD</text>
+</string>
+	
+<string id="ui_mm_modded_exes_visual_ui_hud_g_draw_pickup_item_names">
+	<text>Zobrazovat názvy předmětů při sebrání (g_draw_pickup_item_names)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_ui_hud_use_english_text_for_missing_translations">
+	<text>Používat anglický text pro chybějící překlady (use_english_text_for_missing_translations)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_ui_hud_pda_show_map_labels">
+	<text>Zobrazovat názvy lokací na globální mapě (pda_show_map_labels)</text>
+</string>
+
+	<!-- Crosshair -->
+	<string id="ui_mm_crosshair_modded_exes">
+	<text>Mířidlo</text>
+</string>
+<string id="ui_mm_menu_crosshair">
+	<text>Mířidlo</text>
+</string>
+
+<string id="ui_mm_camera_modded_exes">
+	<text>Kamera</text>
+</string>
+
+<string id="ui_mm_weapon_modded_exes">
+	<text>Zbraň</text>
+</string>
+
+<string id="ui_mm_device_modded_exes">
+	<text>Zařízení</text>
+</string>
+
+<string id="ui_mm_near_modded_exes">
+	<text>Blízko</text>
+</string>
+
+<string id="ui_mm_far_modded_exes">
+	<text>Daleko</text>
+</string>
+	
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_show_always">
+	<text>Vždy zobrazovat mířidlo (g_crosshair_show_always)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_independent">
+	<text>Vykreslovat samostatná mířidla (g_crosshair_*_independent)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_show">
+	<text>Zobrazovat mířidlo (g_crosshair_*)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_recon">
+	<text>Zobrazovat průzkum (g_crosshair_*_recon)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_recon_max_opacity">
+	<text>Maximální neprůhlednost průzkumu (g_crosshair_*_recon_max_opacity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_line">
+	<text>Zobrazovat linii míření (g_crosshair_*_line)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_use_shader">
+	<text>Používat shaderové mířidlo (g_crosshair_*_use_shader)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_shader">
+	<text>Shader mířidla (g_crosshair_*_shader)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_texture">
+	<text>Textura mířidla (g_crosshair_*_texture)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_size">
+	<text>Velikost mířidla (g_crosshair_*_size)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_depth">
+	<text>Limit vzdálenosti pro změnu velikosti (g_crosshair_*_depth)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_distance_lerp">
+	<text>Animovat pozici mířidla (g_crosshair_*_distance_lerp)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_distance_lerp_rate">
+	<text>Rychlost animace pozice mířidla (g_crosshair_*_distance_lerp_rate)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_occluded_opacity">
+	<text>Neprůhlednost mířidla při zakrytí objektem (g_crosshair_*_occluded_opacity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_crosshair_g_crosshair_occlusion_fade_rate">
+	<text>Rychlost animace neprůhlednosti mířidla (g_crosshair_*_occlusion_fade_rate)</text>
+</string>
+
+	<!-- Shader Scopes -->
+<string id="ui_mm_menu_3d_scopes">
+	<text>Shaderové zaměřovače</text>
+</string>
+<string id="ui_mm_3d_scopes_modded_exes">
+	<text>Shaderové zaměřovače</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_r__3Dfakescope">
+	<text>Povolit 3D shaderové zaměřovače (r__3Dfakescope)</text>
+</string>
+<string id="ui_mm_2d_scopes_modded_exes">
+	<text>2D shaderové zaměřovače</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_sds_enable">
+	<text>Povolit 2D shaderové zaměřovače (sds_enable)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_sds_speed_enable">
+	<text>Měnit citlivost myši při přiblížení (sds_speed_enable)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_sds_zoom_enable">
+	<text>Opravit faktor přiblížení (sds_zoom_enable)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_new_zoom_enable">
+	<text>Plynulá změna přiblížení (new_zoom_enable)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_new_zoom_delta_algorithm">
+	<text>Nový algoritmus změny přiblížení (new_zoom_delta_algorithm)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_new_zoom_delta_algorithm_desc">
+	<text>Mění úrovně přiblížení zaměřovače tak, aby byla vizuální změna přiblížení mezi jednotlivými úrovněmi stejná</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_zoom_step_count">
+	<text>Počet kroků plynulého přiblížení (zoom_step_count)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_blur_inner">
+	<text>Rozmazání uvnitř zaměřovače (scope_blur_inner)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_blur_outer">
+	<text>Rozmazání mimo zaměřovač (scope_blur_outer)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_brightness">
+	<text>Jas mimo zaměřovač (scope_brightness)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_ca">
+	<text>Chromatická aberace (scope_ca)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_radius">
+	<text>Poloměr mlhy (scope_fog_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_interp">
+	<text>Rychlost pohybu mlhy (scope_fog_interp)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_sharp">
+	<text>Ostrost mlhy (scope_fog_sharp)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_swayAim">
+	<text>Pohyb mlhy při pohybu myší (scope_fog_swayAim)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_swayMove">
+	<text>Pohyb mlhy při pohybu postavy (scope_fog_swayMove)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_3d_scopes_scope_fog_travel">
+	<text>Maximální vzdálenost pohybu mlhy (scope_fog_travel)</text>
+</string>
+
+	<!-- Particles -->
+	<string id="ui_mm_particles_modded_exes">
+	<text>Částice</text>
+</string>
+<string id="ui_mm_menu_particles">
+	<text>Částice</text>
+</string>
+<string id="ui_mm_modded_exes_visual_particles_particle_update_mod">
+	<text>Frekvence aktualizace částic (1 - 30 Hz, 0,5 - 60 Hz atd.) (particle_update_mod)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_particles_render_short_tracers">
+	<text>Vždy vykreslovat krátké trasovací střely (render_short_tracers)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_particles_allow_silencer_hide_tracer">
+	<text>Povolit tlumičům skrývat trasovací střely (allow_silencer_hide_tracer)</text>
+</string>
+	
+	<!-- HDR10 -->
+<string id="ui_mm_menu_hdr10">
+	<text>HDR 10</text>
+</string>
+<string id="ui_mm_hdr10_modded_exes">
+	<text>HDR 10</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_enabled">
+	<text>Povolit HDR10 (vyžaduje restart) (r4_hdr10_on)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_enabled_desc">
+	<text>HDR10 není kompatibilní s MSAA, aktivace HDR deaktivuje MSAA</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_whitepoint_nits">
+	<text>Bílý bod (nity) (r4_hdr10_whitepoint_nits)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_whitepoint_nits_desc">
+	<text>Maximální jas vašeho monitoru. DisplayHDR 400 = 400 nitů, HDR Peak 1000 = 1000 nitů</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_ui_nits">
+	<text>Jas UI (nity) (r4_hdr10_ui_nits)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_ui_nits_desc">
+	<text>Maximální jas uživatelského rozhraní. Použijte hodnotu rovnou nebo nižší než maximální jas monitoru, která je pro vás příjemná.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_pda_intensity">
+	<text>Intenzita PDA (r4_hdr10_pda_intensity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_pda_intensity_desc">
+	<text>Intenzita (1 = 100 %, 0 = 0 %) displeje PDA. Upravte, pokud je displej PDA příliš jasný.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_colorspace">
+	<text>Barevný prostor (r4_hdr10_colorspace)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_colorspace_desc">
+	<text>Cílový barevný prostor, do kterého se obraz vykresluje. Pokud váš monitor dobře pokrývá širší barevný prostor (DCI-P3 nebo Rec.2020), použijte raději jeden z nich než sRGB.</text>
+</string>
+<string id="ui_mm_lst_hdr10_colorspace_rec709">
+	<text>Rec.709 (sRGB)</text>
+</string>
+<string id="ui_mm_lst_hdr10_colorspace_p3d65">
+	<text>P3-D65 (DCI-P3)</text>
+</string>
+<string id="ui_mm_lst_hdr10_colorspace_rec2020">
+	<text>Rec.2020</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_tonemapper">
+	<text>Tonemapping (r4_hdr10_tonemapper)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_tonemapper_desc">
+	<text>Operátor tonemappingu, který se použije. Tonemapping určuje vzhled a kontrast obrazu.</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_aces_narkowicz">
+	<text>ACES (Narkowicz)</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_aces_hill">
+	<text>ACES (Hill)</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_agx_normal">
+	<text>AgX (Normální)</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_agx_punchy">
+	<text>AgX (Výrazný)</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_uchimura">
+	<text>Uchimura</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_stevem">
+	<text>SteveM</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_uncharted2">
+	<text>Uncharted 2</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_reinhard1">
+	<text>Reinhard (Lw = 2.0)</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemapper_reinhard2">
+	<text>Reinhard (Lw = 3.0)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_tonemap_mode">
+	<text>Režim tonemappingu (r4_hdr10_tonemap_mode)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_tonemap_mode_desc">
+	<text>Určuje, zda tonemapping pracuje s barvou nebo jasem. Režim jasu zabraňuje posunům odstínu, ale ve srovnání s barevným režimem může působit plošeji.</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemap_mode_luminance">
+	<text>Jas</text>
+</string>
+<string id="ui_mm_lst_hdr10_tonemap_mode_color">
+	<text>Barva</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_brightness">
+	<text>Jas (r4_hdr10_brightness)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_brightness_desc">
+	<text>Upravuje základní úroveň obrazu. Ovlivňuje především stíny. Upravte, pokud je obraz příliš světlý nebo tmavý.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_gamma">
+	<text>Gama (r4_hdr10_gamma)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_gamma_desc">
+	<text>Upravuje gamu obrazu. Ovlivňuje především střední tóny. Upravte, pokud je obraz příliš světlý nebo tmavý.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_exposure">
+	<text>Expozice (r4_hdr10_exposure)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_exposure_desc">
+	<text>Upravuje zesílení obrazu. Ovlivňuje především světlá místa. Upravte, pokud je obraz příliš světlý nebo tmavý.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_contrast">
+	<text>Kontrast (r4_hdr10_contrast)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_contrast_desc">
+	<text>Upravuje kontrast obrazu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_contrast_middle_gray">
+	<text>Střední šedá kontrastu (r4_hdr10_contrast_middle_gray)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_contrast_middle_gray_desc">
+	<text>Pevný bod pro úpravu kontrastu. Nižší hodnoty způsobí, že nastavení kontrastu bude méně ovlivňovat tmavé oblasti a více světlé oblasti, vyšší hodnoty mají opačný efekt.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_saturation">
+	<text>Sytost (r4_hdr10_saturation)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_saturation_desc">
+	<text>Upravuje sytost obrazu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_ui_saturation">
+	<text>Sytost UI (r4_hdr10_ui_saturation)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_ui_saturation_desc">
+	<text>Upravuje sytost UI v závislosti na průhlednosti. Jedná se o korekční faktor úměrný průhlednosti prvku.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_on">
+	<text>Bloom (r4_hdr10_bloom_on)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_on_desc">
+	<text>Zapíná nebo vypíná HDR bloom. Starý bloom deaktivujete pomocí „r2_ls_bloom_threshold 1“. Může ovlivnit výkon.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_blur_passes">
+	<text>Počet průchodů rozmazání bloom efektu (r4_hdr10_bloom_blur_passes)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_blur_passes_desc">
+	<text>Určuje velikost bloom efektu. Vyšší hodnoty zvětšují jeho rozsah. Může ovlivnit výkon.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_blur_scale">
+	<text>Měřítko rozmazání bloom efektu (r4_hdr10_bloom_blur_scale)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_blur_scale_desc">
+	<text>Jemné nastavení poloměru bloom efektu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_intensity">
+	<text>Intenzita bloom efektu (r4_hdr10_bloom_intensity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_bloom_intensity_desc">
+	<text>Upravuje sílu bloom efektu. Vyšší hodnoty vytvářejí výraznější mlhavý efekt.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_on">
+	<text>Odlesk objektivu (r4_hdr10_flare_on)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_on_desc">
+	<text>Zapíná nebo vypíná HDR odlesk objektivu. Může ovlivnit výkon.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_threshold">
+	<text>Práh odlesku objektivu (r4_hdr10_flare_threshold)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_threshold_desc">
+	<text>Nastavuje minimální jas, kterého musí objekt dosáhnout, aby vytvořil odlesk objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_power">
+	<text>Intenzita odlesku objektivu (r4_hdr10_flare_power)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_power_desc">
+	<text>Upravuje celkovou sílu efektu odlesku objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghosts">
+	<text>Odrazy odlesku objektivu (r4_hdr10_flare_ghosts)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghosts_desc">
+	<text>Upravuje počet odrazů vytvořených efektem odlesku objektivu. Může ovlivnit výkon.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_dispersal">
+	<text>Rozptyl odrazů odlesku objektivu (r4_hdr10_flare_ghost_dispersal)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_dispersal_desc">
+	<text>Upravuje měřítko a rozestupy odrazů vytvořených efektem odlesku objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_center_falloff">
+	<text>Útlum odlesku objektivu od středu (r4_hdr10_flare_center_falloff)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_center_falloff_desc">
+	<text>Upravuje poloměr útlumu od středu obrazovky, který určuje vliv obrazu na odlesky objektivu. Menší hodnoty způsobí, že větší část obrazu bude vytvářet intenzivní odlesky.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_scale">
+	<text>Měřítko halo odlesku objektivu (r4_hdr10_flare_halo_scale)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_scale_desc">
+	<text>Upravuje měřítko halo odlesků objektivu. Vyšší hodnoty mohou umístit halo mimo hranice obrazovky.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_ca">
+	<text>Chromatická aberace halo odlesku objektivu (r4_hdr10_flare_halo_ca)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_ca_desc">
+	<text>Upravuje míru chromatické aberace u halo odlesků objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_ca">
+	<text>Chromatická aberace odrazů odlesku objektivu (r4_hdr10_flare_ghost_ca)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_ca_desc">
+	<text>Upravuje míru chromatické aberace u odrazů odlesku objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_blur_passes">
+	<text>Počet průchodů rozmazání odlesku objektivu (r4_hdr10_flare_blur_passes)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_blur_passes_desc">
+	<text>Upravuje míru rozmazání aplikovaného na odlesky objektivu. Může ovlivnit výkon.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_blur_scale">
+	<text>Měřítko rozmazání odlesku objektivu (r4_hdr10_flare_blur_scale)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_blur_scale_desc">
+	<text>Jemné nastavení poloměru rozmazání odlesku objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_intensity">
+	<text>Intenzita odrazů odlesku objektivu (r4_hdr10_flare_ghost_intensity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_ghost_intensity_desc">
+	<text>Upravuje sílu odrazů odlesku objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_intensity">
+	<text>Intenzita halo odlesku objektivu (r4_hdr10_flare_halo_intensity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_flare_halo_intensity_desc">
+	<text>Upravuje sílu halo odlesků objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_on">
+	<text>Slunce (r4_hdr10_sun_on)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_on_desc">
+	<text>Zapíná nebo vypíná HDR vykreslování slunce, které lépe využívá bloom a odlesky objektivu.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_intensity">
+	<text>Intenzita slunce (r4_hdr10_sun_intensity)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_intensity_desc">
+	<text>Upravuje jas HDR slunce.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_inner_radius">
+	<text>Vnitřní poloměr slunce (r4_hdr10_sun_inner_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_inner_radius_desc">
+	<text>Upravuje vnitřní poloměr HDR vykreslování slunce. Vnitřní poloměr představuje oblast s plnou intenzitou.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_outer_radius">
+	<text>Vnější poloměr slunce (r4_hdr10_sun_outer_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_sun_outer_radius_desc">
+	<text>Upravuje vnější poloměr HDR vykreslování slunce. Vnější poloměr určuje přechod od plné intenzity k nulové.</text>
+</string>
+<string id="ui_mm_modded_exes_visual_hdr10_live_editing">
+	<text>Nastavení</text>
+</string>
+
+	<!-- Sound -->
+<string id="ui_mm_menu_sound">
+	<text>Zvuk</text>
+</string>
+<string id="ui_mm_sound_modded_exes">
+	<text>Zvuk</text>
+</string>
+	
+<string id="ui_mm_menu_doppler">
+	<text>Dopplerův efekt</text>
+</string>
+<string id="ui_mm_doppler_modded_exes">
+	<text>Dopplerův efekt</text>
+</string>
+	
+<string id="ui_mm_modded_exes_sound_doppler_snd_doppler_power">
+	<text>Síla Dopplerova efektu (snd_doppler_power)</text>
+</string>
+<string id="ui_mm_modded_exes_sound_doppler_snd_doppler_smoothing">
+	<text>Vyhlazení Dopplerova efektu (snd_doppler_smoothing)</text>
+</string>
+
+<string id="ui_mm_menu_sound_delay">
+	<text>Zpoždění podle vzdálenosti</text>
+</string>
+<string id="ui_mm_sound_delay_modded_exes">
+	<text>Zpoždění podle vzdálenosti</text>
+</string>
+<string id="ui_mm_modded_exes_sound_sound_delay_snd_distance_based_delay_power">
+	<text>Síla zpoždění podle vzdálenosti (snd_distance_based_delay_power)</text>
+</string>
+<string id="ui_mm_modded_exes_sound_sound_delay_snd_distance_based_delay_min_distance">
+	<text>Minimální vzdálenost pro aktivaci zpoždění (snd_distance_based_delay_min_distance)</text>
+</string>
+<string id="ui_mm_modded_exes_sound_sound_delay_snd_pitch_variation_power">
+	<text>Síla změny výšky tónu (snd_pitch_variation_power)</text>
+</string>
+<string id="ui_mm_modded_exes_sound_sound_delay_snd_efx_environment_change_time">
+	<text>Doba změny zvukového prostředí (snd_efx_environment_change_time)</text>
+</string>
+
+<!-- Ovládání -->
+<string id="ui_mm_menu_control">
+	<text>Ovládání</text>
+</string>
+	
+<!-- Klávesnice -->
+<string id="ui_mm_menu_keyboard">
+	<text>Klávesnice</text>
+</string>
+<string id="ui_mm_keyboard_modded_exes">
+	<text>Klávesnice</text>
+</string>
+
+<string id="ui_mm_modded_exes_control_keyboard_use_separate_ubgl_keybind">
+	<text>Používat samostatnou klávesu pro podvěsný granátomet (use_separate_ubgl_keybind)</text>
+</string>
+	
+<!-- Myš -->
+<string id="ui_mm_menu_mouse">
+	<text>Myš</text>
+</string>
+<string id="ui_mm_mouse_modded_exes">
+	<text>Myš</text>
+</string>
+	
+<string id="ui_mm_modded_exes_control_mouse_mouse_sens_vertical">
+	<text>Koeficient vertikální citlivosti myši (mouse_sens_vertical)</text>
+</string>
+<string id="ui_mm_modded_exes_control_mouse_mouse_wheel_change_weapon">
+	<text>Přepínat zbraně kolečkem myši (mouse_wheel_change_weapon)</text>
+</string>
+<string id="ui_mm_modded_exes_control_mouse_mouse_wheel_invert_zoom">
+	<text>Invertovat přiblížení kolečkem myši (mouse_wheel_invert_zoom)</text>
+</string>
+<string id="ui_mm_modded_exes_control_mouse_mouse_wheel_invert_change_weapon">
+	<text>Invertovat přepínání zbraní kolečkem myši (mouse_wheel_invert_change_weapon)</text>
+</string>
+
+<!-- Kamera -->
+<string id="ui_mm_menu_camera">
+	<text>Kamera</text>
+</string>
+<string id="ui_mm_camera_modded_exes">
+	<text>Kamera</text>
+</string>
+	
+<string id="ui_mm_modded_exes_control_camera_freelook_cam_limit">
+	<text>Limit úhlu volného pohledu (freelook_cam_limit)</text>
+</string>
+<string id="ui_mm_modded_exes_control_camera_freelook_while_reloading">
+	<text>Povolit volný pohled během animace přebíjení (freelook_while_reloading)</text>
+</string>
+
+<!-- PDA -->
+<string id="ui_mm_menu_pda">
+	<text>PDA</text>
+</string>
+<string id="ui_mm_pda_modded_exes">
+	<text>PDA</text>
+</string>
+
+<string id="ui_mm_modded_exes_control_pda_pda_map_zoom_in_to_mouse">
+	<text>Přiblížení mapy směrem k pozici myši (pda_map_zoom_in_to_mouse)</text>
+</string>
+<string id="ui_mm_modded_exes_control_pda_pda_map_zoom_out_to_mouse">
+	<text>Oddálení mapy směrem od pozice myši (pda_map_zoom_out_to_mouse)</text>
+</string>
+
+<!-- Hratelnost -->
+<string id="ui_mm_menu_gameplay">
+	<text>Hratelnost</text>
+</string>
+<string id="ui_mm_gameplay_modded_exes">
+	<text>Hratelnost</text>
+</string>
+
+	<!-- Gameplay General -->
+<string id="ui_mm_menu_gameplay_general">
+	<text>Obecné</text>
+</string>
+<string id="ui_mm_gameplay_general_modded_exes">
+	<text>Obecné</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_progressive_stamina_cost">
+	<text>Postupná spotřeba výdrže (g_progressive_stamina_cost)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_progressive_stamina_cost_desc">
+	<text>Výdrž se bude snižovat lineárně podle aktuální hmotnosti místo pevně stanoveného limitu</text>
+</string>
+
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_first_person_death">
+	<text>Kamera smrti z pohledu první osoby (first_person_death)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_first_person_death_position_smoothing">
+	<text>Vyhlazení změny pozice kamery při smrti (first_person_death_position_smoothing)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_first_person_death_direction_smoothing">
+	<text>Vyhlazení změny směru kamery při smrti (first_person_death_direction_smoothing)</text>
+</string>
+
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs">
+	<text>Nohy postavy z pohledu první osoby (g_legs)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs_in_demo_record">
+	<text>Zobrazovat při aktivním demo_record (g_legs_in_demo_record)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs_in_low_crouch">
+	<text>Zobrazovat při hlubokém podřepu (g_legs_in_low_crouch)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs_render_attachments_shadow">
+	<text>Vykreslovat stíny připevněných předmětů (g_legs_render_attachments_shadow)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs_fwd_offset">
+	<text>Úprava pozice vpřed/vzad (g_legs_fwd_offset)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_g_legs_spine_offset_y">
+	<text>Úprava vertikální pozice páteře (g_legs_spine_offset_y)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_gameplay_general_disable_actor_body_rotation_delay">
+	<text>Vypnout zpoždění otáčení těla postavy (disable_actor_body_rotation_delay)</text>
+</string>
+
+<!-- Míření -->
+<string id="ui_mm_menu_aim">
+	<text>Míření</text>
+</string>
+<string id="ui_mm_aim_modded_exes">
+	<text>Míření</text>
+</string>
+	
+<string id="ui_mm_modded_exes_gameplay_aim_aimmode_remember">
+	<text>Zapamatovat režim míření (aimmode_remember)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_allow_outfit_control_inertion_factor">
+	<text>Povolit vliv obleku na citlivost myši (allow_outfit_control_inertion_factor)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_allow_weapon_control_inertion_factor">
+	<text>Povolit vliv zbraně na citlivost myši (allow_weapon_control_inertion_factor)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_fix_avelocity_spread">
+	<text>Opravit vliv pohybu kamery na přesnost (fix_avelocity_spread)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_apply_pdm_to_ads">
+	<text>Používat hodnoty PDM (ovladatelnosti) při ADS (apply_pdm_to_ads)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_smooth_ads_transition">
+	<text>Plynule aplikovat bonus přesnosti při ADS (smooth_ads_transition)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_binoculars_dynamic_zoom_check">
+	<text>Povolit vypnutí dynamického zoomu dalekohledu v konfiguraci (binoculars_dynamic_zoom_check)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_binoculars_dynamic_zoom_check_desc">
+	<text>Hra bude u dalekohledu kontrolovat parametr „scope_dynamic_zoom“ v souboru LTX</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_g_interrupt_fire_on_aim_toggle">
+	<text>Přerušit střelbu při zahájení míření (g_interrupt_fire_on_aim_toggle)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_aim_binoculars_dynamic_zoom_check_desc">
+	<text>Zbraň přeruší střelbu při zahájení míření, takže pro pokračování ve střelbě je nutné znovu stisknout tlačítko střelby. Netýká se zbraní s animací přechodu při zahájení a ukončení míření – u těchto zbraní se střelba vždy přeruší</text>
+</string>
+
+<!-- 3D balistika -->
+<string id="ui_mm_menu_3d_ballistics">
+	<text>3D balistika</text>
+</string>
+<string id="ui_mm_3d_ballistics_modded_exes">
+	<text>3D balistika</text>
+</string>
+	
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_firepos">
+	<text>Střílet náboje z hlavně zbraně bez míření (g_firepos)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_firepos_zoom">
+	<text>Střílet náboje z hlavně zbraně při míření (g_firepos_zoom)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_aimpos">
+	<text>Mířit náboje podél hlavně zbraně bez míření (g_aimpos)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_aimpos_zoom">
+	<text>Mířit náboje podél hlavně zbraně při míření (g_aimpos_zoom)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_firedir_third_person">
+	<text>Používat směr střelby z pohledu první osoby ve třetí osobě (g_firedir_third_person)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_launcher_dynamic_range_zoom">
+	<text>Při přiblížení zakřivit trajektorii střel podvěsného granátometu k mířidlu (g_launcher_dynamic_range_zoom)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_nearwall">
+	<text>Chování zbraně v blízkosti zdi (g_nearwall)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_3d_ballistics_g_nearwall_trace">
+	<text>Počáteční bod detekce blízké zdi (g_nearwall_trace)</text>
+</string>
+
+<string id="ui_mm_lst_nearwall_hud_fov">
+	<text>Zorné pole HUD</text>
+</string>
+<string id="ui_mm_lst_nearwall_position">
+	<text>Pozice</text>
+</string>
+<string id="ui_mm_lst_nearwall_camera">
+	<text>Kamera</text>
+</string>
+<string id="ui_mm_lst_nearwall_item">
+	<text>Předmět</text>
+</string>
+
+	<!-- Weapons -->
+<string id="ui_mm_menu_weapons">
+	<text>Zbraně</text>
+</string>
+<string id="ui_mm_weapons_modded_exes">
+	<text>Zbraně</text>
+</string>
+
+<string id="ui_mm_modded_exes_gameplay_weapons_g_auto_reload">
+	<text>Automaticky nabít zbraň po vyčerpání munice (g_auto_reload)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_weapons_g_decouple_horz_recoil">
+	<text>Horizontální zpětný ráz je nezávislý na vertikálním (g_decouple_horz_recoil)</text>
+</string>
+	
+<string id="ui_mm_modded_exes_gameplay_weapons_g_fire_reloads_ubgl">
+	<text>Nabíjet podvěsné granátomety pomocí tlačítka střelby (g_fire_reloads_ubgl)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_weapons_g_launcher_dynamic_range">
+	<text>Používat asistenci granátometu bez míření (g_launcher_dynamic_range)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_weapons_g_launcher_dynamic_range_zoom">
+	<text>Používat asistenci granátometu při míření (g_launcher_dynamic_range_zoom)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_weapons_g_launcher_dynamic_range_mode">
+	<text>Zaměřovat dynamické objekty pomocí asistence granátometu (g_launcher_dynamic_range_mode)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_weapons_g_launcher_dynamic_range_max">
+	<text>Maximální dosah asistence granátometu (g_launcher_dynamic_range_max)</text>
+</string>
+
+	<!-- Stalkers -->
+<string id="ui_mm_menu_stalkers">
+	<text>Stalkeři</text>
+</string>
+<string id="ui_mm_stalkers_modded_exes">
+	<text>Stalkeři</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_g_npcs_look_at_actor">
+	<text>Stalkeři se při přiblížení dívají na hráče (g_npcs_look_at_actor)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_g_npcs_look_at_actor_min_distance">
+	<text>Minimální vzdálenost pro zahájení sledování pohledem (g_npcs_look_at_actor_min_distance)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_vision_speed_boost">
+	<text>Násobitel rychlosti vnímání stalkerů (ai_vision_speed_boost)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_vision_speed_boost_desc">
+	<text>Násobí rychlost, jakou NPC rozpoznávají cíle, které vstoupí do jejich zorného pole.\n \nVyšší hodnoty (např. 2,0×) způsobí, že NPC spatří nepřátele mnohem rychleji. Nižší hodnoty dají hráči více času schovat se zpět do krytu, než bude zcela odhalen.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_reload_threshold">
+	<text>Hranice pro ústup/nabíjení stalkerů (ai_reload_threshold)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_reload_threshold_desc">
+	<text>Procento kapacity zásobníku, které musí zbývat, než se NPC rozhodne ustoupit, najít kryt nebo přestat střílet a přebít.\n \nNižší hodnota (např. 0,2 = 20 %) způsobí, že NPC budou agresivnější a budou s větší pravděpodobností vystřílet většinu zásobníku před ústupem.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_fire_angle">
+	<text>Úhel reakční střelby stalkerů (radiány) (ai_aim_fire_angle)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_fire_angle_desc">
+	<text>Maximální úhel (v radiánech), o který musí být NPC natočeno směrem k cíli, než začne střílet.\n \nReferenční hodnoty:\n - 0,17 (10°)\n - 0,35 (20°)\n - 0,39 (22,5° – výchozí)\n - 0,52 (30°)\n - 0,70 (40°)\n - 1,04 (60°)\n - 1,57 (90°)\n \nVyšší hodnoty způsobí výrazně rychlejší reakce NPC, která tak mohou začít střílet během otáčení místo čekání na přesné zaměření cíle.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_somebody">
+	<text>Setrvačnost zaměření stalkerů: na ostatní (ms) (ai_enemy_inertia_time_to_somebody)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_somebody_desc">
+	<text>Určuje, jak dlouho NPC setrvá u svého současného NPC cíle, než mu bude dovoleno přepnout na jiného NPC.\n \nVysoké hodnoty zabraňují NPC v rychlém přepínání cílů během velkých přestřelek mezi skupinami (blikání mezi cíli). Nízké hodnoty způsobí výrazně rychlejší reakce na nové hrozby od ostatních NPC.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_actor">
+	<text>Setrvačnost zaměření stalkerů: na hráče (ms) (ai_enemy_inertia_time_to_actor)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_actor_desc">
+	<text>Určuje prodlevu, než NPC může přepnout pozornost z jiného cíle na hráče.\n \nHodnota 0 (výchozí) znamená, že NPC okamžitě přestane řešit ostatní cíle a začne střílet na hráče, jakmile ho odhalí. Zvýšení této hodnoty poskytne hráči krátký časový prostor, pokud je NPC již zaneprázdněno bojem s někým jiným.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_from_actor">
+	<text>Setrvačnost zaměření stalkerů: od hráče (ms) (ai_enemy_inertia_time_from_actor)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_from_actor_desc">
+	<text>Určuje, jak dlouho NPC zůstane zaměřeno na hráče, než bude ochotno přepnout na jinou hrozbu (například mutanta nebo jiné NPC).\n \nVysoké hodnoty způsobí, že NPC budou hráčem „posedlé“ a budou ignorovat ostatní nepřátele, dokud hráč nezemře nebo se na dlouhou dobu neschová. Nízké hodnoty umožní NPC snadněji odvést pozornost jinými boji.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_search_inertia_time">
+	<text>Setrvačnost hledání stalkerů (ms) (ai_search_inertia_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_search_inertia_time_desc">
+	<text>Určuje dobu, po kterou NPC zůstane ve stavu „Hledání/Záloha“ po ztrátě vizuálního kontaktu s cílem.\n \nVysoké hodnoty (výchozích 15 s) způsobí, že NPC zůstanou dlouho ve střehu a budou hlídat rohy nebo kryty. Nízké hodnoty způsobí, že se rychleji vzdají hledání a vrátí se do nečinnosti nebo hlídkování.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_hold_position_inertia_base">
+	<text>Základní setrvačnost držení pozice stalkerů (ms) (ai_hold_position_inertia_base)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_hold_position_inertia_base_desc">
+	<text>Minimální základní doba, po kterou NPC během boje setrvá na své pozici, než se rozhodne přesunout, obejít nepřítele z boku nebo ustoupit.\n \nVýchozí: 1000.\n \nNižší hodnoty způsobí, že NPC budou svou taktickou pozici přehodnocovat mnohem rychleji, což vede k dynamičtějším a méně statickým přestřelkám.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_hold_position_inertia_random">
+	<text>Náhodná setrvačnost držení pozice stalkerů (ms) (ai_hold_position_inertia_random)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_hold_position_inertia_random_desc">
+	<text>Náhodná doba přidaná k základní setrvačnosti, která činí dobu setrvání NPC na pozici nepředvídatelnou.\n \nVýchozí: 2000.\n \nNižší hodnoty způsobí konzistentně agresivnější chování NPC, zatímco vyšší hodnoty přidají více variability (někteří zaútočí rychle, jiní zůstanou déle na pozici).</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_grenade_throw_delay_base">
+	<text>Základní prodleva před hodem granátu stalkerů (ms) (ai_grenade_throw_delay_base)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_grenade_throw_delay_base_desc">
+	<text>Základní doba setrvačnosti (v milisekundách), kterou NPC potřebuje k odhození granátu, pokud je cíl blízko (do 15 m).\n \nVýchozí: 1000.\n \nNižší hodnoty výrazně urychlí házení granátů a zkrátí dobu, po kterou je NPC vystaveno nepřátelské palbě.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_grenade_throw_delay_step">
+	<text>Krok prodlevy hodu granátu stalkerů (ms) (ai_grenade_throw_delay_step)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_grenade_throw_delay_step_desc">
+	<text>Dodatečná prodleva přidaná za každou hranici vzdálenosti 15 m (např. 15–30 m, 30–45 m, 45 m+).\n \nVýchozí: 500.\n \nSimuluje dodatečný čas potřebný k zamíření a přípravě delšího hodu.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_inertia_time">
+	<text>Rychlost míření stalkerů (ms) (ai_aim_inertia_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_inertia_time_desc">
+	<text>Doba setrvačnosti potřebná k zamíření zbraně NPC před zahájením střelby.\n \nVýchozí: 500.\n \nNižší hodnoty umožní NPC rychleji zvednout zbraň a zahájit střelbu.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_queue_inertia_time">
+	<text>Prodleva mezi dávkami stalkerů (ms) (ai_aim_queue_inertia_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_aim_queue_inertia_time_desc">
+	<text>Prodleva mezi jednotlivými dávkami při střelbě NPC.\n \nVýchozí: 300.\n \nNižší hodnoty způsobí výrazně rychlejší střelbu v dávkách.</text>
+</string>
+
+<!-- Bojová AI – logika střelby/potlačování -->
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_make_sense_interval">
+	<text>Paměť potlačovací palby stalkerů (ms) (ai_fire_make_sense_interval)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_make_sense_interval_desc">
+	<text>Jak dlouho NPC pokračují ve střelbě na poslední známou pozici nepřítele po ztrátě výhledu.\n \nVýchozí: 10000. Nastavte na 0, pokud chcete, aby NPC střílely pouze tehdy, když je nepřítel viditelný.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_range_extension">
+	<text>Prodloužení dosahu potlačovací palby stalkerů (m) (ai_fire_range_extension)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_range_extension_desc">
+	<text>Dodatečná vzdálenost za hranicí dosahu zbraně, při které má potlačovací palba stále smysl.\n \nVýchozí: 2,5.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_max_height_diff">
+	<text>Maximální výškový rozdíl při střelbě stalkerů (m) (ai_fire_max_height_diff)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_max_height_diff_desc">
+	<text>Maximální vertikální rozdíl mezi NPC a jeho nepřítelem, při kterém má střelba stále smysl.\n \nVýchozí: 2,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_min_dist">
+	<text>Minimální vzdálenost pro střelbu stalkerů (m) (ai_fire_min_dist)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_fire_min_dist_desc">
+	<text>Minimální vzdálenost pro výběr cíle zbraní, při které NPC považuje střelbu za smysluplnou.\n \nVýchozí: 2,5.</text>
+</string>
+
+	<!-- Combat AI - cover danger zones -->
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_danger_radius">
+	<text>Poloměr nebezpečí krytu po zásahu stalkera (m) (ai_cover_danger_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_danger_radius_desc">
+	<text>Poloměr označený jako nebezpečný poté, co je NPC zasaženo při použití krytu.\n \nVýchozí: 3,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_danger_time">
+	<text>Doba nebezpečí krytu po zásahu stalkera (ms) (ai_cover_danger_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_danger_time_desc">
+	<text>Jak dlouho zůstane kryt označený jako nebezpečný poté, co je v něm NPC zasaženo.\n \nVýchozí: 120000.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_detour_radius">
+	<text>Poloměr nebezpečí krytu při obchvatu stalkera (m) (ai_cover_detour_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_detour_radius_desc">
+	<text>Poloměr označený jako nebezpečný, když se NPC rozhodne obejít nepřítele z boku.\n \nVýchozí: 5,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_detour_time">
+	<text>Doba nebezpečí krytu při obchvatu stalkera (ms) (ai_cover_detour_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_detour_time_desc">
+	<text>Jak dlouho zůstane oblast krytu označená jako nebezpečná po provedení obchvatu.\n \nVýchozí: 120000.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_unknown_radius">
+	<text>Poloměr nebezpečí krytu při neznámé hrozbě (m) (ai_cover_unknown_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_unknown_radius_desc">
+	<text>Poloměr nebezpečné zóny kolem krytu vytvořené kvůli neznámé hrozbě.\n \nVýchozí: 5,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_unknown_time">
+	<text>Doba nebezpečí krytu při neznámé hrozbě (ms) (ai_cover_unknown_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_unknown_time_desc">
+	<text>Jak dlouho zůstane nebezpečná zóna krytu vytvořená kvůli neznámé hrozbě aktivní.\n \nVýchozí: 120000.</text>
+</string>
+
+<!-- Bojová AI – vzdálenosti pro výběr krytu -->
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_search_near_radius">
+	<text>Poloměr hledání blízkého krytu stalkerů (m) (ai_cover_search_near_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_search_near_radius_desc">
+	<text>Poloměr použitý při prvním hledání krytu.\n \nVýchozí: 10,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_search_far_radius">
+	<text>Poloměr hledání vzdáleného krytu stalkerů (m) (ai_cover_search_far_radius)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_search_far_radius_desc">
+	<text>Poloměr použitý při náhradním hledání krytu, pokud není vhodný blízký kryt.\n \nVýchozí: 30,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_pistol_max_dist">
+	<text>Maximální vzdálenost krytu pro pistole (m) (ai_cover_pistol_max_dist)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_pistol_max_dist_desc">
+	<text>Maximální preferovaná vzdálenost krytu pro NPC používající pistole.\n \nVýchozí: 10,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_shotgun_max_dist">
+	<text>Maximální vzdálenost krytu pro brokovnice (m) (ai_cover_shotgun_max_dist)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_shotgun_max_dist_desc">
+	<text>Maximální preferovaná vzdálenost krytu pro NPC používající brokovnice.\n \nVýchozí: 5,0.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_sniper_min_dist">
+	<text>Minimální vzdálenost krytu pro odstřelovače (m) (ai_cover_sniper_min_dist)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_sniper_min_dist_desc">
+	<text>Minimální preferovaná vzdálenost krytu pro NPC používající odstřelovací zbraně.\n \nVýchozí: 20,0. Nastavením na 0 minimální vzdálenost vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_default_max_dist">
+	<text>Výchozí maximální vzdálenost krytu stalkerů (m) (ai_cover_default_max_dist)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_cover_default_max_dist_desc">
+	<text>Maximální preferovaná vzdálenost krytu pro NPC používající všechny ostatní typy zbraní.\n \nVýchozí: 20,0.</text>
+</string>
+
+<!-- Bojová AI – načasování a pohyb -->
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_close_move_distance">
+	<text>Vzdálenost pohybu stalkera k blízkému krytu (m) (ai_close_move_distance)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_close_move_distance_desc">
+	<text>Vzdálenost od cílového místa, při které TakeCover přepne z běhu na pohyb na místě.\n \nVýchozí: 1,5.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_crouch_look_out_delta">
+	<text>Interval změny postoje při vyhlížení stalkera (ms) (ai_crouch_look_out_delta)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_crouch_look_out_delta_desc">
+	<text>Interval náhodného přepínání mezi vyhlížením v podřepu a ve stoje.\n \nVýchozí: 5000.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_wait_in_smart_cover_time">
+	<text>Doba čekání stalkera v chytrém krytu (ms) (ai_wait_in_smart_cover_time)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_wait_in_smart_cover_time_desc">
+	<text>Jak dlouho NPC čeká v chytrém krytu, než jej přestane považovat za vhodný.\n \nVýchozí: 30000.</text>
+</string>
+
+<!-- Bojová AI – násobitele vnímání nebezpečí -->
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_ricochet_mult">
+	<text>Násobitel nebezpečí odrazů střel pro stalkery (ai_danger_ricochet_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_ricochet_mult_desc">
+	<text>Násobitel naléhavosti při blízkých odrazech střel.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_attack_sound_mult">
+	<text>Násobitel nebezpečí výstřelů pro stalkery (ai_danger_attack_sound_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_attack_sound_mult_desc">
+	<text>Násobitel naléhavosti při zvuku výstřelů.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_entity_attacked_mult">
+	<text>Násobitel nebezpečí zasaženého spojence (ai_danger_entity_attacked_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_entity_attacked_mult_desc">
+	<text>Násobitel naléhavosti, když je napadena jiná entita.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_entity_death_mult">
+	<text>Násobitel nebezpečí smrti entity (ai_danger_entity_death_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_entity_death_mult_desc">
+	<text>Násobitel naléhavosti při svědectví nebo odhalení smrti entity.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_corpse_mult">
+	<text>Násobitel nebezpečí mrtvoly (ai_danger_corpse_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_corpse_mult_desc">
+	<text>Násobitel naléhavosti při nalezení čerstvé mrtvoly.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_attacked_mult">
+	<text>Násobitel nebezpečí při napadení stalkera (ai_danger_attacked_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_attacked_mult_desc">
+	<text>Násobitel naléhavosti, když je napadeno samotné NPC.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_grenade_mult">
+	<text>Násobitel nebezpečí granátů (ai_danger_grenade_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_grenade_mult_desc">
+	<text>Násobitel naléhavosti při detekci hrozby granátu.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_enemy_sound_mult">
+	<text>Násobitel nebezpečí zvuků nepřítele (ai_danger_enemy_sound_mult)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_danger_enemy_sound_mult_desc">
+	<text>Násobitel naléhavosti při zvucích vydávaných nepřáteli.\n \nVýchozí: 1,0. Nastavením na 0 tento typ nebezpečí vypnete.</text>
+</string>
+
+<string id="ui_mm_modded_exes_gameplay_stalkers_g_ai_unlimited_ammo">
+	<text>Neomezená munice stalkerů (g_ai_unlimited_ammo)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_g_ai_unlimited_ammo_desc">
+	<text>Pokud je povoleno, NPC používají neomezenou munici stejně jako v původní hře. Vypnutím budou NPC spotřebovávat munici běžným způsobem.\n \nVýchozí: Zapnuto.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_move_to_cover_run">
+	<text>Stalkeři běží do krytu (ai_move_to_cover_run)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_move_to_cover_run_desc">
+	<text>Pokud je povoleno, NPC budou během boje při přesunu do krytu běžet místo chůze. Přestřelky tak budou dynamičtější a NPC nebudou pod palbou pomalu kráčet.</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enhanced_vision">
+	<text>Vylepšené vidění stalkerů (ai_enhanced_vision)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_stalkers_ai_enhanced_vision_desc">
+	<text>Pokud je povoleno, NPC budou mít méně omezení při určování, zda je nepřítel viditelný, což může vést k vidění skrz zdi.</text>
+</string>
+
+<!-- Monstra -->
+<string id="ui_mm_menu_monsters">
+	<text>Monstra</text>
+</string>
+<string id="ui_mm_monsters_modded_exes">
+	<text>Monstra</text>
+</string>
+	
+<string id="ui_mm_modded_exes_gameplay_monsters_heat_vision_zombie_cold">
+	<text>Studení zombie v termovizi (heat_vision_zombie_cold)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_monsters_pseudogiant_can_damage_objects_on_stomp">
+	<text>Poškozování objektů dupnutím pseudobra (pseudogiant_can_damage_objects_on_stomp)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_monsters_pseudogiant_dodge_stomp_while_falling">
+	<text>Uhýbání dupnutí pseudobra během pádu (pseudogiant_dodge_stomp_while_falling)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_monsters_telekinetic_objects_include_corpses">
+	<text>Poltergeisté a bureři házejí mrtvolami (telekinetic_objects_include_corpses)</text>
+</string>
+<string id="ui_mm_modded_exes_gameplay_monsters_monster_stuck_fix">
+	<text>Oprava zaseknutí monster (ŠPATNÉ PRO FPS) (monster_stuck_fix)</text>
+</string>
+
+<!-- Ukládání -->
+<string id="ui_mm_saves_modded_exes">
+	<text>Ukládání</text>
+</string>
+<string id="ui_mm_menu_saves">
+	<text>Ukládání</text>
+</string>
+
+<!-- Uložení při pádu hry -->
+<string id="ui_mm_crash_saves_modded_exes">
+	<text>Uložení při pádu hry</text>
+</string>
+<string id="ui_mm_menu_crash_saves">
+	<text>Uložení při pádu hry</text>
+</string>
+	
+<string id="ui_mm_modded_exes_saves_crash_saves_crash_save">
+	<text>Povolit ukládání při pádu hry (crash_save)</text>
+</string>
+<string id="ui_mm_modded_exes_saves_crash_saves_crash_save_count">
+	<text>Počet uložení při pádu hry (crash_save_count)</text>
+</string>
+
+	<!-- Debugging -->
+<string id="ui_mm_menu_debug">
+	<text>Debug</text>
+</string>
+<string id="ui_mm_debug_modded_exes">
+	<text>Debug</text>
+</string>
+
+<!-- Logging -->
+<string id="ui_mm_menu_logging">
+	<text>Protokolování</text>
+</string>
+<string id="ui_mm_logging_modded_exes">
+	<text>Protokolování</text>
+</string>
+
+<string id="ui_mm_modded_exes_debug_logging_string_table_error_msg">
+	<text>Protokolovat chybějící překlady (string_table_error_msg)</text>
+</string>
+<string id="ui_mm_modded_exes_debug_logging_log_timestamps">
+	<text>Časová razítka v protokolech (log_timestamps)</text>
+</string>
+<string id="ui_mm_modded_exes_debug_logging_print_bone_warnings">
+	<text>Vypisovat varování o neplatných kostech (print_bone_warnings)</text>
+</string>
+<string id="ui_mm_modded_exes_debug_logging_print_dltx_warnings">
+	<text>Vypisovat varování o neúspěšných přepisech DLTX (print_dltx_warnings)</text>
+</string>
+
+<!-- Errors -->
+<string id="ui_mm_menu_errors">
+	<text>Chyby</text>
+</string>
+<string id="ui_mm_errors_modded_exes">
+	<text>Chyby</text>
+</string>
+
+<string id="ui_mm_modded_exes_debug_errors_hanging_lamp_ignore_match_configuration">
+	<text>Nespadnout při chybě „no renderer type set for hanging-lamp“ (hanging_lamp_ignore_match_configuration)</text>
+</string>
+<string id="ui_mm_modded_exes_debug_errors_lua_busy_hands_debug">
+	<text>Ladění Lua „Busy Hands“ (lua_busy_hands_debug)</text>
+</string>
+<string id="ui_mm_modded_exes_debug_errors_duplicate_story_id_crash">
+	<text>Spadnout při chybě „Specified story object is already in the Story registry!“ (duplicate_story_id_crash)</text>
+</string>
+
+<!-- Optimizations -->
+<string id="ui_mm_menu_optimizations">
+	<text>Optimalizace</text>
+</string>
+<string id="ui_mm_optimizations_modded_exes">
+	<text>Optimalizace</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_g_enemy_manager_useful_cache_time">
+	<text>Doba uložení výsledku CEnemyManager::useful (g_enemy_manager_useful_cache_time)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_g_enemy_manager_useful_cache_time_desc">
+	<text>Ukládá výsledek volání CEnemyManager::useful na krátkou dobu v ms, aby se zabránilo pomalému volání Lua v každém snímku a výrazně se zvýšilo FPS během přestřelek. Nastavením na -1 funkci deaktivujete.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_r2_mt">
+	<text>Vícevláknové testování viditelnosti a vykreslování trávy (r2_mt)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_bullets">
+	<text>Vícevláknový výpočet střel (mt_bullets)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_particles">
+	<text>Vícevláknové částice (mt_particles)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_scheduler">
+	<text>Vícevláknový plánovač (mt_scheduler)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_schedulerRT">
+	<text>Vícevláknový plánovač objektů v reálném čase (mt_schedulerRT)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_scheduler_batch_size">
+	<text>Velikost dávky plánovače (scheduler_batch_size)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_calc_bones">
+	<text>Vícevláknový výpočet kostí (mt_calc_bones)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_task_manager">
+	<text>Vícevlávcový Správce úloh (mt_task_manager)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_ui">
+	<text>Vícevláknová aktualizace rozhraní (mt_ui)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_mt_update_weapon_sounds">
+	<text>Vícevláknová aktualizace zvuků zbraní (mt_update_weapon_sounds)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__optimize_torch">
+	<text>Optimalizace aktualizace svítilen (r__optimize_torch)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__optimize_torch_desc">
+	<text>Vzdálení stalkerů budou aktualizováni méně často.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r2_shadow_omnipart_vischeck">
+	<text>Kontrola viditelnosti pro všesměrová světla (r2_shadow_omnipart_vischeck)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r2_shadow_omnipart_vischeck_desc">
+	<text>Zvyšuje výkon kontrolou viditelnosti světel vytvořených z bodových světel a přeskočením těch, která nejsou viditelná.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__hom_dynamic">
+	<text>Testování viditelnosti dynamických objektů pomocí HOM (r__hom_dynamic)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__hom_dynamic_desc">
+	<text>Může zvýšit výkon kontrolou viditelnosti dynamických objektů pomocí HOM.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_spawn_antifreeze">
+	<text>Omezení zamrzání při spawnu (spawn_antifreeze)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_spawn_antifreeze_desc">
+	<text>Přesouvá proces spawnování entit do samostatného vlákna. Zamrzání zcela neodstraní, ale snaží se je minimalizovat.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_spawn_antifreeze_batch">
+	<text>Velikost dávky spawnu (spawn_antifreeze_batch)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_spawn_antifreeze_batch_desc">
+	<text>Počet spawnovacích událostí zpracovaných během jednoho snímku.</text>
+</string>
+
+
+
+<string id="ui_mm_modded_exes_optimizations_r__optimize_calculate_bones">
+	<text>Optimalizace výpočtu kostí (r__optimize_calculate_bones)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__optimize_calculate_bones_desc">
+	<text>Modelům postav, které nejsou v zorném poli hráče nebo jsou od něj daleko, se nebudou aktualizovat animace, aby se snížilo zatížení CPU.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_ik_calc_ssa">
+	<text>Maximální plocha na obrazovce (ik_calc_ssa)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_ik_calc_ssa_desc">
+	<text>Objekty s plochou menší než tato hodnota budou optimalizovány. Vyšší hodnota vede k agresivnější optimalizaci a může způsobit vizuální chyby.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_ik_always_calc_dist">
+	<text>Vzdálenost pro vždy prováděný výpočet kostí (ik_always_calc_dist)</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_mt_level_call">
+	<text>Paralelní provádění Lua CreateTimeEvent a AddUniqueCall (mt_level_call)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_lua_use_functor_cache">
+	<text>Ukládání objektů Lua funkcí do cache na straně enginu (lua_use_functor_cache)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_lua_gcstep">
+	<text>Krok uvolňování paměti Lua (lua_gcstep)</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gc">
+	<text>Paralelní uvolňování paměti Lua (lua_parallel_gc)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gc_desc">
+	<text>Opakovaně spouští uvolňování paměti Lua v samostatném vlákně s níže uvedenými parametry, aby se uvolňovala nepotřebná paměť během vykreslování snímku enginem.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gcstep">
+	<text>Krok paralelního uvolňování paměti Lua (lua_parallel_gcstep)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gcstep_desc">
+	<text>Určuje množství dat uvolněných během jednoho volání. DOPORUČENÍ: Pro nalezení optimální hodnoty, při které je doba vykreslování snímku stabilní a paralelní GC zbytečně nezatěžuje CPU, zadejte do konzole „lua_parallel_gc_debug 1“ a sledujte využití paměti. Mělo by zůstat stabilní na určité hodnotě, obvykle kolem 45–50 MB. Pro ZVÝŠENÍ efektivity paralelního GC nejprve zvyšte GC Step a POTÉ počet volání. Pokud si můžete dovolit méně agresivní GC, pro jeho SNÍŽENÍ nejprve snižte počet volání a POTÉ GC Step. Upřednostňujte vyšší hodnotu GC Step před počtem volání, abyste snížili režii při přístupu k Lua. Výchozí hodnoty jsou velmi dobré pro vanilla (mohou fungovat i s nižšími hodnotami) a dobré pro Gamma.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gc_call_amount">
+	<text>Počet volání paralelního GC Lua (lua_parallel_gc_call_amount)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gc_call_amount_desc">
+	<text>Určuje počet volání provedených za účelem uvolnění paměti. Tento počet NENÍ zaručen, pokud jsou snímky vykreslovány příliš rychle. DOPORUČENÍ: Pro nalezení optimální hodnoty, při které je doba vykreslování snímku stabilní a paralelní GC zbytečně nezatěžuje CPU, zadejte do konzole „lua_parallel_gc_debug 1“ a sledujte využití paměti. Mělo by zůstat stabilní na určité hodnotě, obvykle kolem 45–50 MB. Pro ZVÝŠENÍ efektivity paralelního GC nejprve zvyšte GC Step a POTÉ počet volání. Pokud si můžete dovolit méně agresivní GC, pro jeho SNÍŽENÍ nejprve snižte počet volání a POTÉ GC Step. Upřednostňujte vyšší hodnotu GC Step před počtem volání, abyste snížili režii při přístupu k Lua. Výchozí hodnoty jsou velmi dobré pro vanilla (mohou fungovat i s nižšími hodnotami) a dobré pro Gamma.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_lua_parallel_gc_debug">
+	<text>Ladění paralelního GC Lua (lua_parallel_gc_debug)</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_r__clear_resources_on_unload">
+	<text>Uvolnit prostředky při opuštění lokace (r__clear_resources_on_unload)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__clear_resources_on_unload_desc">
+	<text>Snižuje využití RAM a VRAM, ale prodlužuje dobu načítání.</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__tex_evict_enabled">
+	<text>Pravidelně uvolňovat nepoužívané textury (r__tex_evict_enabled)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__tex_evict_age_frames">
+	<text>Počet snímků před uvolněním (r__tex_evict_age_frames)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_r__tex_evict_batch_size">
+	<text>Velikost dávky uvolňovaných textur (r__tex_evict_batch_size)</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_dltx_use_cache">
+	<text>Cache DLTX (dltx_use_cache)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_dltx_use_cache_desc">
+	<text>Ukládá soubory a sekce do cache, aby bylo možné při příštím načtení souboru rychle načíst vyhodnocená data bez čtení z disku a zpracování DLTX. Spotřebovává přibližně 50 MB v Anomaly a 150 MB v Gamma.</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_mouse_buffer_size">
+	<text>Velikost bufferu vstupu myši (mouse_buffer_size)</text>
+</string>
+<string id="ui_mm_modded_exes_optimizations_keyboard_buffer_size">
+	<text>Velikost bufferu vstupu klávesnice (keyboard_buffer_size)</text>
+</string>
+
+<string id="ui_mm_modded_exes_optimizations_unstable_text">
+	<text>Níže uvedené možnosti jsou nestabilní a mohou způsobovat chyby a pády hry. Jejich zapnutí se nedoporučuje.</text>
+</string>
+
+
+</string_table>

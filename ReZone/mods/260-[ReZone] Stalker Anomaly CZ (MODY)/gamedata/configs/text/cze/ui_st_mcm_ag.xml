@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+    <!-- ==================== MAIN MENU ==================== -->
+    <string id="ui_mcm_menu_ag">
+        <text>AlifeGuard</text>
+    </string>
+
+    <!-- ==================== TAB NAMES ==================== -->
+    <string id="ui_mcm_menu_online_guard">
+        <text>Online Guard</text>
+    </string>
+    <string id="ui_mcm_menu_offline_guard">
+        <text>Offline Guard</text>
+    </string>
+    <string id="ui_mcm_menu_smart_sanitizer">
+        <text>Smart Sanitizer</text>
+    </string>
+    <string id="ui_mcm_menu_inventory_guard">
+        <text>Inventory Guard</text>
+    </string>
+    <string id="ui_mcm_menu_development">
+        <text>Vývoj</text>
+    </string>
+
+    <!-- ==================== ONLINE GUARD TAB ==================== -->
+    <string id="ui_mcm_ag_title">
+        <text>AlifeGuard</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_info">
+        <text>V pozdější fázi hry se v A-Life hromadí příliš mnoho aktivních entit. AlifeGuard řídí online populaci pomocí odstraňování členů čet, spravedlivého střídání mezi frakcemi a hystereze, která zabraňuje neustálému kolísání počtu entit. Čety přežívají a smart terény zůstávají konzistentní.</text>
+    </string>
+
+    <!-- Online Guard - Entity limits -->
+    <string id="ui_mcm_ag_hdr_online">
+        <text>Limity entit</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_enabled">
+        <text>Povolit Online Guard</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_enabled_desc">
+        <text>Omezuje počet aktivních entit ve vašem okolí. Nejvzdálenější se nejprve přepnou do offline stavu. Obchodníci, společníci a cíle úkolů jsou chráněni.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_max">
+        <text>Maximum online</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_max_desc">
+        <text>Kolik stalkerů a mutantů může být současně aktivních. Nižší hodnota znamená lepší FPS v hustě zalidněných oblastech.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_buffer">
+        <text>Hysterezní rezerva</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_buffer_desc">
+        <text>Cílový počet po odstranění je maximum mínus rezerva. Zabraňuje kolísání počtu entit: čištění se spustí méně často, protože populace musí znovu překročit maximum, než se aktivuje další cyklus. 0 vypíná.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_check_interval">
+        <text>Interval kontroly</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_check_interval_desc">
+        <text>[sekundy]\nJak často kontrolovat počet entit. Nižší hodnota znamená rychlejší reakci, ale mírně vyšší nároky na výkon. 30 je vyvážená hodnota.</text>
+    </string>
+
+    <!-- Online Guard - Protection -->
+    <string id="ui_mcm_ag_hdr_protection">
+        <text>Pravidla Guardu</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_check_tasks">
+        <text>Guard NPC úkolů</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_check_tasks_desc">
+        <text>NPC související s úkoly (zadavatelé úkolů, cíle lovu a rukojmí) jsou během aktivního úkolu chráněni. Příběhové postavy, obchodníci, pojmenovaní NPC a společníci jsou chráněni vždy, bez ohledu na toto nastavení.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_prioritize_distant">
+        <text>Odstraňovat nejvzdálenější</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_prioritize_distant_desc">
+        <text>Nejprve odstraňuje vzdálené entity. Pokud je vypnuto, výběr probíhá náhodně.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_squad_culling">
+        <text>Odstraňování po četách</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_squad_culling_desc">
+        <text>Nejprve odstraňuje členy čety, než sáhne na velitele. Udržuje čety naživu a zabraňuje opakovanému respawnu. Pokud je vypnuto, všechny entity se uvolňují jednotlivě jako ve verzi 1.0.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_round_robin">
+        <text>Spravedlivé střídání</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_round_robin_desc">
+        <text>Rozděluje odstraňování rovnoměrně mezi frakce a druhy mutantů. Pokud je vypnuto, odstraňují se nejvzdálenější entity bez ohledu na frakci.</text>
+    </string>
+
+    <!-- Online Guard - Notifications -->
+    <string id="ui_mcm_ag_hdr_notifications">
+        <text>Oznámení</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_pda">
+        <text>Zprávy v PDA</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_pda_desc">
+        <text>Zobrazí krátkou zprávu v PDA, když se počet entit v Zóně sníží. Zprávy jsou stylizované podle světa hry a záměrně neurčité.</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_pda_sound">
+        <text>Zvuk oznámení</text>
+    </string>
+    <string id="ui_mcm_ag_online_guard_pda_sound_desc">
+        <text>Při zobrazení oznámení přehraje krátký zvuk s psychickým nádechem. Nenápadné. Vypněte pro tichá oznámení.</text>
+    </string>
+
+    <!-- ==================== OFFLINE GUARD TAB ==================== -->
+    <string id="ui_mcm_ag_offline_guard_info">
+        <text>Online Guard vidí pouze entity ve vašem okolí. Centrum na jiné úrovni může obsahovat desítky offline čet, které se najednou aktivují a prudce zvýší počet entit. Tato kontrola rozděluje offline čety podle jejich pozice do oblastí a zredukuje každou oblast, která překročí stanovený limit, na cílový počet. Velitelé a chráněné čety se nikdy neodstraňují, takže každá četa přežije. Funguje nezávisle na Online Guardu a má vlastní spouštěcí limit, cíl i ochranu NPC úkolů.</text>
+    </string>
+    <string id="ui_mcm_ag_hdr_density">
+        <text>Offline hustota</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_enabled">
+        <text>Povolit Offline Guard</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_enabled_desc">
+        <text>Redukuje přeplněné offline oblasti na úrovních, kde se právě nenacházíte. Čety přežívají a velitelé ani chráněná NPC se nikdy neodstraňují.</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_trigger">
+        <text>Spouštěcí limit</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_trigger_desc">
+        <text>Počet offline entit, při kterém je oblast označena jako přeplněná. Oblast se redukuje pouze tehdy, pokud obsahuje více entit, než je tato hodnota. Nižší hodnota znamená redukci více oblastí.</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_target">
+        <text>Cílový počet</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_target_desc">
+        <text>Počet entit, na který se označená oblast zredukuje. Nižší hodnota znamená výraznější redukci. 0 ponechá v oblasti pouze velitele čet. Funguje nezávisle na online maximu. Pokud je nastavena vyšší hodnota, omezí se na spouštěcí limit.</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_check_tasks">
+        <text>Guard NPC úkolů</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_check_tasks_desc">
+        <text>NPC související s úkoly (zadavatelé úkolů, cíle lovu a rukojmí) jsou během aktivního úkolu chráněni. Příběhové postavy, obchodníci, pojmenovaní NPC a společníci jsou chráněni vždy, bez ohledu na toto nastavení.</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_interval">
+        <text>Interval kontroly</text>
+    </string>
+    <string id="ui_mcm_ag_offline_guard_density_interval_desc">
+        <text>[sekundy]\nČas mezi jednotlivými kroky kontroly. Každý krok prozkoumá menší dávku čet, takže kompletní průchod Zónou trvá několik kroků. Nižší hodnota znamená aktuálnější údaje o hustotě za cenu mírně vyšší zátěže.</text>
+    </string>
+
+    <!-- ==================== SMART SANITIZER TAB ==================== -->
+    <string id="ui_mcm_ag_smart_sanitizer_info">
+        <text>Opravuje poškozené počítadlo already_spawned na smart terénech. Zabraňuje pádům při ukládání a nekonečným spawnovacím smyčkám způsobeným tím, že spawnovací a despawnovací mody soupeří s enginem při odečítání v on_unregister.</text>
+    </string>
+    <string id="ui_mcm_ag_hdr_sanitize">
+        <text>Smart Sanitizer</text>
+    </string>
+    <string id="ui_mcm_ag_smart_sanitizer_sanitize_smarts">
+        <text>Čistit smart terény</text>
+    </string>
+    <string id="ui_mcm_ag_smart_sanitizer_sanitize_smarts_desc">
+        <text>Opravuje poškozená počítadla already_spawned na smart terénech. Záporné nebo nečíselné hodnoty způsobují pády při ukládání (zápis u8 v smart_terrain.script:955) a nekonečné spawnovací smyčky (max &gt; num je vždy pravda). Časté při používání despawnovacích systémů pro jednotlivá NPC, které soupeří s odečtem enginu v on_unregister. Čištění se provede jednou při načtení hry/úrovně (před alife pump) a poté pravidelně během hry. Je bezpečné ponechat zapnuté. Výchozí: zapnuto.</text>
+    </string>
+    <string id="ui_mcm_ag_smart_sanitizer_sanitize_interval">
+        <text>Interval čištění (s)</text>
+    </string>
+    <string id="ui_mcm_ag_smart_sanitizer_sanitize_interval_desc">
+        <text>Počet sekund reálného času mezi pravidelnými kontrolami. Bez ohledu na interval trvá kontrola méně než milisekundu (čistý průchod Lua tabulkou SIMBOARD.smarts). 300 s je rozumná výchozí hodnota; snižte ji pouze tehdy, pokud pozorujete rychlé poškozování dat jiným modem. Výchozí: 300.</text>
+    </string>
+
+
+    <!-- ==================== INVENTORY GUARD TAB ==================== -->
+    <string id="ui_mcm_ag_inventory_guard_desc">
+        <text>Inventory Guard odstraňuje přebytečný loot z dlouhodobě přežívajících NPC. Lehký skener prochází online stalkery po jednom snímku, odstraňuje přebytky nad limity jednotlivých kategorií a každé NPC znovu kontroluje nejvýše dvakrát za herní den. Společníci, příběhové postavy a pojmenovaná NPC zůstávají vždy nedotčena; obchodníci mají vlastní čištění zásob, které odstraňuje opotřebované vybavení. Bez tohoto systému každý uloupený předmět zabírá jeden z přibližně 65 000 A-Life slotů enginu a uložené hry se postupně blíží pádu.</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_enabled_inventory">
+        <text>Povolit Inventory Guard</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_enabled_inventory_desc">
+        <text>Hlavní přepínač pro Inventory Guard. Skener prochází vhodná online NPC v malých dávkách rozložených mezi jednotlivé snímky a každé NPC znovu kontroluje nejvýše dvakrát za herní den. Limity jednotlivých kategorií se načítají z configs/alifeguard/ag_inventory_policy.ltx (lze přepsat pomocí DLTX). Kontrolují se: munice pro vybavené zbraně (počítaná v nábojích), granáty, spotřební předměty (lékárničky, obvazy, antirad, stimulanty, pilulky, jídlo, nápoje) a vybavení (zbraně, obleky, helmy, artefakty, předměty pro výrobu a zařízení). Úkolové předměty, vybavené vybavení, předměty se story_id, dárky pro společníky a zbraně připnuté hráčem jsou vždy zachovány. Společníci, příběhové postavy a pojmenovaná NPC jsou vyřazeni už při plánování a nikdy se nekontrolují; obchodníci a ostatní servisní NPC řeší pouze níže uvedené čištění zásob obchodníků. Po vypnutí stále funguje vanilkové ořezávání, ale online inventáře se mohou hromadit bez omezení.</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_npcs_per_frame">
+        <text>NPC za snímek</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_npcs_per_frame_desc">
+        <text>Kolik NPC skener odstraní ze zásob za jeden snímek během cyklu. Výchozí hodnota 1 udržuje každý snímek nenáročný a provádí vždy pouze jednu kontrolu inventáře. Zvyšujte pouze tehdy, pokud skener nestíhá zpracovávat vhodná NPC ve velmi rozsáhlých uložených hrách. Interval opětovné kontroly každého NPC už rozkládá celkovou zátěž na dlouhé úseky herního času, takže tento posuvník obvykle není potřeba měnit.</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_scan_cooldown_h">
+        <text>Interval opětovné kontroly NPC (herní hodiny)</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_scan_cooldown_h_desc">
+        <text>NPC nebude znovu kontrolováno, dokud od poslední kontroly neuplyne tento počet herních hodin. Výchozí hodnota 12 znamená dvě kontroly za herní den. Nižší hodnoty odstraňují přebytky agresivněji a lépe brání rychlému hromadění zásob. Vyšší hodnoty snižují celkovou zátěž a umožní NPC déle uchovávat menší zásoby mezi kontrolami. Tento interval určuje frekvenci celého systému.</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_enabled_trader_purge">
+        <text>Povolit čištění zásob obchodníků</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_enabled_trader_purge_desc">
+        <text>Odstraňuje opotřebované zbraně, obleky a helmy z inventářů obchodníků (obchodníci, mechanici, medici, barmani) ve stejném cyklu skenování a s použitím stejného intervalu opětovné kontroly jako u čištění NPC. Zásoby prodané obchodníkovi se mezi doplněními hromadí; každý předmět zabírá jeden z přibližně 65 000 A-Life slotů enginu a nekvalitní vybavení je zboží, které už nikdo nevykoupí. Úkolové předměty a vlastní vybavené vybavení obchodníka jsou vždy zachovány; spotřební předměty, munice a peníze se nikdy nemění.</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_trader_condition_min">
+        <text>Čistit pod stavem</text>
+    </string>
+    <string id="ui_mcm_ag_inventory_guard_trader_condition_min_desc">
+        <text>Zbraně, obleky a helmy v zásobách obchodníka pod touto hodnotou stavu budou odstraněny; předměty na této hodnotě nebo nad ní zůstanou v nabídce. Pokud jiný mod přidává zboží do zásob obchodníka s nastaveným stavem, ponechte tento limit pod touto hodnotou, aby nově přidané zboží nebylo nikdy odstraněno.</text>
+    </string>
+
+    <!-- ==================== DEVELOPMENT TAB ==================== -->
+    <string id="ui_mcm_ag_development_desc">
+        <text>Debugovací a vývojové nástroje. DEBUG umožňuje podrobné sledování pomocí ID trasování, měření času jednotlivých fází a záznamů o odstranění jednotlivých entit. Záznamy se zapisují do alifeguard.log. Má vliv na výkon.</text>
+    </string>
+
+    <!-- Development - Reset -->
+    <string id="ui_mcm_ag_development_btn_reset_all">
+        <text>Obnovit výchozí nastavení</text>
+    </string>
+    <string id="ui_mcm_ag_development_btn_reset_all_desc">
+        <text>Obnoví všechna nastavení AlifeGuard MCM na výchozí hodnoty. Použijte po aktualizaci z verze s odlišnou strukturou MCM (stará nastavení zůstanou jako osiřelé klíče v úložném souboru MCM, ale již se nepoužijí).</text>
+    </string>
+    <string id="ui_mcm_ag_development_reset_warning">
+        <text>Varování: nejprve uložte nebo zahoďte čekající změny MCM, jinak při příštím potvrzení přepíšou obnovené nastavení.</text>
+    </string>
+
+    <!-- Development - Logging -->
+    <string id="ui_mcm_ag_hdr_logging">
+        <text>Logování</text>
+    </string>
+    <string id="ui_mcm_ag_development_log_level">
+        <text>Úroveň logování</text>
+    </string>
+    <string id="ui_mcm_ag_development_log_level_desc">
+        <text>Určuje podrobnost logování. ERROR: pouze pády. WARN: nestandardní stavy. INFO: souhrny cyklů a konfigurace. DEBUG: kompletní trasování včetně měření času pro každou entitu.</text>
+    </string>
+    <string id="ag_development_log_level_lst_error">
+        <text>Chyby</text>
+    </string>
+    <string id="ag_development_log_level_lst_warn">
+        <text>Varování</text>
+    </string>
+    <string id="ag_development_log_level_lst_info">
+        <text>Informace</text>
+    </string>
+    <string id="ag_development_log_level_lst_debug">
+        <text>Debug</text>
+    </string>
+
+    <!-- ==================== IN-WORLD CLEANUP TIPS ==================== -->
+    <string id="st_ag_cleanup_1">
+        <text>Zóna se trochu vyčistila. Na chvíli se ti bude lépe dýchat.</text>
+    </string>
+    <string id="st_ag_cleanup_2">
+        <text>Zóna přeskupuje své síly. Někteří stalkeři zmizeli v mlze.</text>
+    </string>
+    <string id="st_ag_cleanup_3">
+        <text>Zóna vydechla. Vzdálené ozvěny utichají.</text>
+    </string>
+    <string id="st_ag_reset_all_done">
+        <text>AlifeGuard: všechna nastavení byla obnovena na výchozí hodnoty.</text>
+    </string>
+
+
+</string_table>

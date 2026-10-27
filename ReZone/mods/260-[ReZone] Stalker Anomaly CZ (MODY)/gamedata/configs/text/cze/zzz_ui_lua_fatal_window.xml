@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+<string id="st_lua_fatal_error">
+	<text>VAROVÁNÍ: NESTABILNÍ STAV HRY\n \nDošlo ke kritické chybě Lua, která způsobila poškození skriptovacího enginu, například stav „Busy Hands“.\nVaše hra byla uložena do souboru „tempsave“. Doporučujeme se okamžitě vrátit do hlavního menu nebo načíst uloženou hru.\nPokračování od tohoto okamžiku může vést k dalšímu poškození hry a potenciálně způsobit její pád.\n \nSkript: %s\n \nChyba byla zaznamenána se zprávou [BusyHandsDebug].\nOdešlete log a nahlaste problém příslušnému autorovi skriptu nebo autorům modpacku.</text>
+</string>
+<string id="st_disconnect">
+	<text>Vrátit se do hlavního menu</text>
+</string>
+<string id="st_reload_save">
+	<text>Načíst uloženou hru</text>
+</string>
+<string id="st_continue">
+	<text>Pokračovat</text>
+</string>
+</string_table>

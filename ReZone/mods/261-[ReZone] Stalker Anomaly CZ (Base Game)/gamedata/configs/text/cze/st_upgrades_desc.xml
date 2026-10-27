@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Upgrades descriptions
+-->
+
+<string_table>
+
+<!--
+	Outfits upgrades
+-->
+<string id="st_up_armor_1_name">
+    <text>Kevlarové desky</text>
+</string>
+<string id="st_up_armor_1_descr">
+    <text>Zesílené pláty, které vydrží déle, ale nejsou odolnější.</text>
+</string>
+<string id="st_up_armor_2_name">
+    <text>Polykarbonátové desky</text>
+</string>
+<string id="st_up_armor_2_descr">
+    <text>Polykarbonátové pláty nemají dlouhou životnost, ale jsou spolehlivější než kevlarové díky lepší negaci impulsu střely.</text>
+</string>
+<string id="st_up_armor_3_name">
+    <text>Duplicitní ochranná vrstva plátu</text>
+</string>
+<string id="st_up_armor_3_descr">
+    <text>Pancéř s vnitřní vrstvou, která rozkládá náraz na větší plochu.</text>
+</string>
+<string id="st_up_armor_4_name">
+    <text>Instalace mobilních ochranných desek na klouby</text>
+</string>
+<string id="st_up_armor_4_descr">
+    <text>Mobilní destičky chránící klouby před střelnými ranami.</text>
+</string>
+
+
+<string id="st_up_damage_1_name">
+    <text>Segmentovaná ochrana</text>
+</string>
+<string id="st_up_damage_1_descr">
+    <text>Tenčí pláty pancíře jsou vrstvené, aby se zvýšila odolnost pancíře proti opotřebení.</text>
+</string>
+<string id="st_up_damage_2_name">
+    <text>Přídavné hliníkové/titanové pláty</text>
+</string>
+<string id="st_up_damage_2_descr">
+    <text>Zvýšený počet titanových plátů výrazně zlepšuje odolnost pancíře.</text>
+</string>
+<string id="st_up_damage_3_name">
+    <text>Záložní mobilní vrstva</text>
+</string>
+<string id="st_up_damage_3_descr">
+    <text>Mobilní desky chrání klouby před poraněním.</text>
+</string>
+
+	
+	
+<string id="st_up_durability_1_name">
+    <text>Zesilující kožené vložky</text>
+</string>
+<string id="st_up_durability_1_descr">
+    <text>Ačkoliv tyto vložky neznamenají lepší ochranu, zaručují lepší odolnost.</text>
+</string>
+<string id="st_up_durability_2_name">
+    <text>Ochranný rám s vysokou odolností</text>
+</string>
+<string id="st_up_durability_2_descr">
+    <text>Používá se v oblečení pro zvýšení odolnosti výstroje.</text>
+</string>
+<string id="st_up_durability_3_name">
+    <text>Zesílené kevlarové pláty a vložky</text>
+</string>
+<string id="st_up_durability_3_descr">
+    <text>Vyztužené destičky, které mají delší životnost a zlepšují tak odolnost výstroje.</text>
+</string>
+
+
+<string id="st_up_weight_1_name">
+    <text>Tvrdé uhlíkové komponenty</text>
+</string>
+<string id="st_up_weight_1_descr">
+    <text>Záměna kovu za uhlíková vlákna umožňuje snížit hmotnost neprůstřelné vesty bez ztráty spolehlivosti.</text>
+</string>
+<string id="st_up_weight_2_name">
+    <text>Lehčí hliníkový rám</text>
+</string>
+<string id="st_up_weight_2_descr">
+    <text>Lehčí hliníkový rám pro desky, který nahrazuje ocelový rám. Snižuje hmotnost pancíře.</text>
+</string>
+<string id="st_up_weight_3_name">
+    <text>Instalace lehčích syntetických a plastových součástí</text>
+</string>
+<string id="st_up_weight_3_descr">
+    <text>Použití lehčích materiálů ke snížení hmotnosti pancíře.</text>
+</string>
+<string id="st_up_weight_4_name">
+    <text>Lehčí, syntetické a polymerní materiály</text>
+</string>
+<string id="st_up_weight_4_descr">
+    <text>Tkanina, spony a zahušťovadla jsou nahrazeny lehčími syntetickými materiály, aby se snížila hmotnost pancíře.</text>
+</string>
+
+
+<string id="st_up_carry_1_name">
+    <text>System uchycení pro rozložení hmotnosti</text>
+</string>
+<string id="st_up_carry_1_descr">
+    <text>System uchycení umožňuje rovnoměrnější rozložení hmotnosti na celé tělo.</text>
+</string>
+<string id="st_up_carry_2_name">
+    <text>Zadní rám s rozložením hmotnosti</text>
+</string>
+<string id="st_up_carry_2_descr">
+    <text>Zadní rám odlehčuje soustředěné zatížení ramen od nesené hmotnosti tím, že ji rozkládá po těle, čímž zvyšuje maximální zatížení.</text>
+</string>
+<string id="st_up_carry_3_name">
+    <text>Přídavné servomotory</text>
+</string>
+<string id="st_up_carry_3_descr">
+    <text>Přídavná pohybová zařízení umožňují zvýšit maximální nesené zatížení.</text>
+</string>
+
+	
+	
+<string id="st_up_shock_1_name">
+    <text>Vnitřní vrstva na bázi konstantanu pro izolaci</text>
+</string>
+<string id="st_up_shock_1_descr">
+    <text>Tenká vrstva z konstantanu je schopná izolovat proti elektrině.</text>
+</string>
+<string id="st_up_shock_2_name">
+    <text>Konstantanové tepelné izolační vložky</text>
+</string>
+<string id="st_up_shock_2_descr">
+    <text>Constantan je schopen izolovat proti elektrině a má velmi vysoký bod tání.</text>
+</string>
+<string id="st_up_shock_3_name">
+    <text>Izolační tělesný oblek s manganinovými vložkami</text>
+</string>
+<string id="st_up_shock_3_descr">
+    <text>Tato slitina niklu a hořčíku se používá ve zbroji, aby se zabránilo elektrickým šokům.</text>
+</string>
+
+
+		
+<string id="st_up_burn_1_name">
+    <text>Tkanina ošetřena nehořlavou látkou</text>
+</string>
+<string id="st_up_burn_1_descr">
+    <text>Tkanina ošetřena ohnivzdornou látkou je oblíbená mezi slidingy, kteří hledají ohnivé artefakty.</text>
+</string>
+<string id="st_up_burn_2_name">
+    <text>Vložky z hořčíkových desek</text>
+</string>
+<string id="st_up_burn_2_descr">
+    <text>Magneziové vložky chrání uživatele před tepelným nebezpečím.</text>
+</string>
+<string id="st_up_burn_3_name">
+    <text>Termická ochrana ze skelných vláken </text>
+</string>
+<string id="st_up_burn_3_descr">
+    <text>Skelné vlákno se používá v ochranných oděvech, které nosí týmy zasahující při přírodních katastrofách </text>.
+</string>
+<string id="st_up_burn_4_name">
+    <text>Oblek odolný proti požáru s niklovými vložkami</text>
+</string>
+<string id="st_up_burn_4_descr">
+    <text>Nikl je dostatečně ohnivzdorný, aby mohl být použit pro vložky do nepřístřelné vesty</text>
+</string>
+<string id="st_up_helm_burn_1_name">
+    <text>Hromotlučka Konstantanova čelní zbroj</text>
+</string>
+<string id="st_up_helm_burn_1_descr">
+    <text>Ochranný rám ze slitiny, který zabrání tepelnému a elektrickému poškození.</text>
+</string>
+
+	
+	
+<string id="st_up_rad_1_name">
+    <text>Pogumovaná tkanina obleku</text>
+</string>
+<string id="st_up_rad_1_descr">
+    <text>Pogumovaná látka je základním způsobem ochrany před krátkodobým ozářením.</text>
+</string>
+<string id="st_up_rad_2_name">
+    <text>Vnitřní vrstva z plexiskla pro ochranu před zářením</text>
+</string>
+<string id="st_up_rad_2_descr">
+    <text>Plexisklo pohlcuje dva druhy záření a zároveň je mnohem lehčí než olovo.</text>
+</string>
+<string id="st_up_rad_3_name">
+    <text>Přidání olova do tělesného obleku</text>
+</string>
+<string id="st_up_rad_3_descr">
+    <text>Olovo je spolehlivou obranou proti záření, protože pohlcuje všechny tři jeho druhy.</text>
+</string>
+<string id="st_up_helm_rad_1_name">
+    <text>Aktivní filtry</text>
+</string>
+<string id="st_up_helm_rad_1_descr">
+    <text>Aktivní filtry dokáží odolat radioaktivním částicím.</text>
+</string>
+<string id="st_up_helm_rad_2_name">
+    <text>Povlak z plexiskla</text>
+</string>
+<string id="st_up_helm_rad_2_descr">
+    <text>Maska z plexiskla může poskytovat částečnou ochranu před zářením.</text>
+</string>
+<string id="st_up_helm_rad_3_name">
+    <text>Zesílená respirační maska pro extrémní podmínky</text>
+</string>
+<string id="st_up_helm_rad_3_descr">
+    <text>Filtr s dodatečným čistícím povlakem a systémem pro odstranění jedu.</text>
+</string>
+
+	
+	
+<string id="st_up_chem_1_name">
+    <text>Tělový oblek z plátna</text>
+</string>
+<string id="st_up_chem_1_descr">
+    <text>Základní ochrana proti dešti a žíravým látkám, které se dostanou do kontaktu s pokožkou.</text>
+</string>
+<string id="st_up_chem_2_name">
+    <text>Vnitřní vrstva z nepropustného plastu</text>
+</string>
+<string id="st_up_chem_2_descr">
+    <text>Jednoduchá plastová vnitřní vrstva může chránit uživatele před chemickým nebezpečím.</text>
+</string>
+<string id="st_up_chem_3_name">
+    <text>Impregnovaná tkanina obleku</text>
+</string>
+<string id="st_up_chem_3_descr">
+    <text>Impregnovaná tkanina by měla zabránit otravě chemickými látkami.</text>
+</string>
+<string id="st_up_chem_4_name">
+    <text>Záchranný obleček z plexiskla s pružnou olovenou sítí</text>
+</string>
+<string id="st_up_chem_4_descr">
+    <text>Olovená síť vytváří nepřekonatelnou chemickou ochranu, aniž by byla obětována pohyblivost.</text>
+</string>
+<string id="st_up_helm_chem_1_name">
+    <text>Filtr pro práci v kontaminovaných oblastech</text>
+</string>
+<string id="st_up_helm_chem_1_descr">
+    <text>Filtr se zesíleným antikorozním povlakem s další preventivní vrstvou pro odstranění jedu.</text>
+</string>
+<string id="st_up_helm_chem_2_name">
+    <text>Impregnovaná dýchací maska</text>
+</string>
+<string id="st_up_helm_chem_2_descr">
+    <text>Respirátor pro úplné blokování jedu.</text>
+</string>
+
+	
+
+
+	
+<string id="st_up_tele_1_name">
+    <text>Pásmo psychické ochrany z párových ocelových mřížek</text>
+</string>
+<string id="st_up_tele_1_descr">
+    <text>Bylo prokázáno, že uzavřené pásmo poskytuje částečnou ochranu před přímým psy-zářením.</text>
+</string>
+<string id="st_up_helm_tele_1_name">
+    <text>Instalace pásma Psy-Dome</text>
+</string>
+<string id="st_up_helm_tele_1_descr">
+    <text>Hi-tech psy-ochrana, kterou údajně vynalezl vědec Sacharov.</text>
+</string>
+
+
+<string id="st_up_arty_1_name">
+    <text>Primární modul pro připevnění brnění</text>
+</string>
+<string id="st_up_arty_1_descr">
+    <text>Instalace modulu pro připevnění pancíře.</text>
+</string>
+<string id="st_up_arty_2_name">
+    <text>Dodatečný modul pro připevnění pancíře</text>
+</string>
+<string id="st_up_arty_2_descr">
+    <text>Instalace přídavného modulu pro upevnění pancíře.</text>
+</string>
+<string id="st_up_arty_3_name">
+    <text>Dvoukomorový modul pro upevnění pancíře</text>
+</string>
+<string id="st_up_arty_3_descr">
+    <text>Instalace dvoukomorového modulu pro upevnění pancíře.</text>
+</string>
+
+
+<string id="st_up_stamina_1_name">
+    <text>Vnitřní systém tepelné regulace</text>
+</string>
+<string id="st_up_stamina_1_descr">
+    <text>Ergonomické vylepšení: speciální úchytky připevněné k obleku umožňují, aby nesená hmotnost byla pocitově nižší.</text>
+</string>
+<string id="st_up_stamina_2_name">
+    <text>Zabudovaný systém pro sportovce</text>
+</string>
+<string id="st_up_stamina_2_descr">
+    <text>Experimentální model běžeckého systému, který se mimo Zónu nepoužívá kvůli vysoké ceně a pochybnému využití.</text>
+</string>
+<string id="st_up_helm_stamina_1_name">
+    <text>Filtry pro čištění páry a dýchání</text>
+</string>
+<string id="st_up_helm_stamina_1_descr">
+    <text>Sada filtrů, která se používá při znečištěném vzduchu nebo při kritických teplotách vzduchu, které jsou příliš nízké nebo příliš vysoké pro dýchání.</text>
+</string>
+
+	
+	
+<string id="st_up_bleed_1_name">
+    <text>Rayův hemostimulátor</text>
+</string>
+<string id="st_up_bleed_1_descr">
+    <text>Tento malý vysílač vln je umístěn na zádech a při trvalém nošení účinně zvyšuje rychlost srážení krve.</text>
+</string>
+<string id="st_up_bleed_2_name">
+    <text>Vstřikovač hemoglobinu Hydra</text>
+</string>
+<string id="st_up_bleed_2_descr">
+    <text>Injektor generace B, který při výrazném poklesu krevního tlaku pravidelně zavádí do krevního oběhu koagulační činidlo.</text>
+</string>
+
+
+<string id="st_up_health_1_name">
+    <text>Adrenalinový injektor Fury</text>
+</string>
+<string id="st_up_health_1_descr">
+    <text>Injektor generace A, vyvinutý jedním z kyjevských výzkumných ústavů, pravidelně vstřikuje do krevního oběhu malé dávky adrenalinu, které mohou být nebezpečné, ale v případě nouze vám také mohou zachránit život.</text>
+</string>
+<string id="st_up_health_2_name">
+    <text>Obnovovací systém Fenix</text>
+</string>
+<string id="st_up_health_2_descr">
+    <text>Integrovaný systém, který monitoruje zdravotní stav nositele a podle potřeby dodává vitamíny, adrenalin nebo anabolické látky.</text>
+</string>
+<string id="st_up_health_3_name">
+    <text>Instalace systému podpory života</text>
+</string>
+<string id="st_up_health_3_descr">
+    <text>Tento vysílač vln je připevněn na krku, a přestože jeho mechanismus a způsob fungování nejsou jasné, má silný uklidňující účinek.</text>
+</string>
+
+
+<string id="st_up_run_1_name">
+    <text>Přidání hydraulických posilovačů</text>
+</string>
+<string id="st_up_run_1_descr">
+    <text>Instalace hydraulických posilovačů je úprava, která se používá u exoskeletu čtvrté generace. Umožňuje sprintovat v exoframu.</text>
+</string>
+
+
+
+</string_table>

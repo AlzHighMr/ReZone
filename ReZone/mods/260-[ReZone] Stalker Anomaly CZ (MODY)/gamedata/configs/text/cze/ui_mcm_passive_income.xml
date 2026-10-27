@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+    <string id="ui_mcm_menu_passive_income">
+    <text>Pasivní příjem Zóny</text>
+</string>
+
+<string id="ui_mcm_passinc_title">
+    <text>Nastavení pasivního příjmu Zóny</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_salary_mult">
+    <text>Násobič výplaty</text>
+</string>
+<string id="ui_mcm_passive_income_salary_mult_desc">
+    <text>Uprav násobič výplaty. Použij pro doladění balancu podle vlastních preferencí.</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_max_money_mult">
+    <text>Maximální denní násobič peněz</text>
+</string>
+<string id="ui_mcm_passive_income_max_money_mult_desc">
+    <text>Uprav násobič maximální částky, kterou můžeš denně získat z výplaty.</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_progress_mult">
+    <text>Násobič postupu kontraktu</text>
+</string>
+<string id="ui_mcm_passive_income_progress_mult_desc">
+    <text>Ovlivňuje rychlost postupu v kontraktu – rychlejší povýšení a méně práce.</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_give_promo_prizes">
+    <text>Odměny za povýšení</text>
+</string>
+<string id="ui_mcm_passive_income_give_promo_prizes_desc">
+    <text>Při povýšení získáš bonusovou výbavu (zbraně, obleky, zařízení). Každá frakce má vlastní seznam odměn, které se s vyšší hodností zlepšují.</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_debug_mode">
+    <text>Debug režim</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_paytime_start">
+    <text>Čas výplaty</text>
+</string>
+<string id="ui_mcm_passive_income_paytime_start_desc">
+    <text>Nastav čas dne, kdy budeš dostávat výplatu (24h formát) [Výchozí: 10]</text>
+</string>
+
+
+<string id="ui_mcm_passive_income_max_lazy_days">
+    <text>Nemocenská</text>
+</string>
+<string id="ui_mcm_passive_income_max_lazy_days_desc">
+    <text>Počet dostupných dnů „nemocenské“ [ui_mcm_Passive_income_max_lazy_days] [Výchozí: 3]</text>
+</string>
+
+</string_table>

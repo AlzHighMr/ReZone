@@ -1,0 +1,2283 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons Upgrades
+-->
+
+<string_table>
+	<string id="st_upgr_required_materials">
+    <text>Vyžadované materiály</text>
+</string>
+<string id="st_upgr_enough_materials">
+    <text>Nedostatečné materiály</text>
+</string>
+<string id="st_prop_bullet_speed">
+    <text>Rychlost kulky</text>
+</string>
+<string id="st_prop_calibre">
+    <text>Kalibr</text>
+</string>
+<string id="st_prop_recoil">
+    <text>Zpětný ráz</text>
+</string>
+<string id="st_prop_reliability">
+    <text>Spolehlivost</text>
+</string>
+<string id="st_prop_scope_1.6x">
+    <text>Záměrná reflexní optika 1.6x</text>
+</string>
+<string id="st_prop_scope_4x">
+    <text>Optický puškohled 4x</text>
+</string>
+<string id="st_prop_silencer">
+    <text>Možnost tlumiče</text>
+</string>
+<string id="st_prop_underbarrel_slot">
+    <text>Podvěsný granátomet</text>
+</string>
+<string id="st_prop_weight">
+    <text>Hmotnost</text>
+</string>
+<string id="st_up_add_a1_descr">
+    <text>Externí závit umožňuje instalaci tlumiče zvuku.</text>
+</string>
+<string id="st_up_add_a1_name">
+    <text>Externí závit hlavně</text>
+</string>
+<string id="st_up_add_a2_descr">
+    <text>Instalace držáku pro upevnění optického puškohledu.</text>
+</string>
+<string id="st_up_add_a2_name">
+    <text>Optický držák</text>
+</string>
+<string id="st_up_add_a3_descr">
+    <text>Instalace držáku pro upevnění podvěsného granátometu.</text>
+</string>
+<string id="st_up_add_a3_name">
+    <text>Držák podvěsného granátometu</text>
+</string>
+<string id="st_up_add_a4_descr">
+    <text>Nahrazení standardního zásobníku za větší.</text>
+</string>
+<string id="st_up_add_a4_name">
+    <text>Zvýšení kapacity zásobníku</text>
+</string>
+<string id="st_up_add_b1_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b1_name">
+    <text>Změna kalibru na 5,45x39</text>
+</string>
+<string id="st_up_add_b2_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b2_name">
+    <text>Změna kalibru na 5,56x45</text>
+</string>
+<string id="st_up_add_b3_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b3_name">
+    <text>Změna kalibru na 9x18</text>
+</string>
+<string id="st_up_add_b4_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b4_name">
+    <text>Změna kalibru na 9x19</text>
+</string>
+<string id="st_up_add_b5_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b5_name">
+    <text>Změna kalibru na 7,62x39</text>
+</string>
+<string id="st_up_add_b6_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b6_name">
+    <text>Změna kalibru na 7,62x51</text>
+</string>
+<string id="st_up_add_b7_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu kalibru za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_add_b7_name">
+    <text>Změna kalibru na 7,62x54</text>
+</string>
+<string id="st_up_addd_a1_descr">
+    <text>Zvýšení kapacity zásobníku bez zvětšení délky části zbraně.</text>
+</string>
+<string id="st_up_addd_a1_name">
+    <text>Zvýšení kapacity zásobníku</text>
+</string>
+
+	<string id="st_up_addh_a1_descr">
+    <text>Lehčí, ale vyšší kapacita polycarbonátové boxové zásobníkové schránky, která částečně vyvažuje zvýšení hmotnosti.</text>
+</string>
+<string id="st_up_addh_a1_name">
+    <text>Zvýšená kapacita boxového zásobníku</text>
+</string>
+<string id="st_up_autd_a1_descr">
+    <text>Úprava komponent umožňuje zbrani déle fungovat bez zaseknutí.</text>
+</string>
+<string id="st_up_autd_a1_name">
+    <text>Úprava komponent</text>
+</string>
+<string id="st_up_autd_a2_descr">
+    <text>Uprava pro plastové komponenty se nejen vyplatila, ale také se stala poměrně oblíbeným vylepšením.</text>
+</string>
+<string id="st_up_autd_a2_name">
+    <text>Komponenty z poly-materiálů</text>
+</string>
+<string id="st_up_autd_b1_descr">
+    <text>Nízký impuls mechanismu střelby zajišťuje menší zpětný ráz než u starších verzí.</text>
+</string>
+<string id="st_up_autd_b1_name">
+    <text>Nízký impuls mechanismu střelby</text>
+</string>
+<string id="st_up_autd_b2_descr">
+    <text>Díky pevnému umístění náboje při výstřelu pokračuje střela po přímé dráze a zasáhne cíl.</text>
+</string>
+<string id="st_up_autd_b2_name">
+    <text>Instalace jednotky pro pozicování náboje</text>
+</string>
+<string id="st_up_autd_b3_descr">
+    <text>Často používaný ve zbraních, systém válečkového zamykání snižuje zpětný ráz a zlepšuje seskupení.</text>
+</string>
+<string id="st_up_autd_b3_name">
+    <text>Poloautomatická závora se systémem válečků</text>
+</string>
+<string id="st_up_autd_b4_descr">
+    <text>Instalace dalšího plynového válce snižuje zatížení zbraně, což umožňuje výrazně zvýšit rychlost střelby.</text>
+</string>
+<string id="st_up_autd_b4_name">
+    <text>Instalace dalšího plynového válce</text>
+</string>
+<string id="st_up_autd_b5_descr">
+    <text>Plynový motor se používá v samočinných brokovnicích pro poloautomatickou střelbu.</text>
+</string>
+<string id="st_up_autd_b5_name">
+    <text>Instalace plynového motoru</text>
+</string>
+<string id="st_up_autd_c1_descr">
+    <text>Ochranné pokovování zabraňuje selhání mechanismu z důvodu poruchy.</text>
+</string>
+<string id="st_up_autd_c1_name">
+    <text>Ochranný komponent pokovování</text>
+</string>
+<string id="st_up_autd_c2_descr">
+    <text>Když je výstřel vypálen, komponent otevře cestu do hlavně a pomocí podélného kluzného pohybu rukojeti se vrátí do uzavřené pozice.</text>
+</string>
+<string id="st_up_autd_c2_name">
+    <text>Systém zavírání hlavně</text>
+</string>
+<string id="st_up_autd_c3_descr">
+    <text>Inerciální automatický systém umožňuje převést mechanismus pumpování u běžných brokovnic na samočinný.</text>
+</string>
+<string id="st_up_autd_c3_name">
+    <text>Instalace inerciálního automatického systému</text>
+</string>
+<string id="st_up_autd_c4_descr">
+    <text>Jednotný modul zpětného rázu je jedním z nejlepších technologických řešení pro snížení zpětného rázu.</text>
+</string>
+<string id="st_up_autd_c4_name">
+    <text>Jednotný modul zpětného rázu</text>
+</string>
+<string id="st_up_autd_c5_descr">
+    <text>Automatická pohonná tyč zlepšuje přesnost zbraně.</text>
+</string>
+<string id="st_up_autd_c5_name">
+    <text>Instalace automatické pohonné tyče</text>
+</string>
+<string id="st_up_auth_a1_descr">
+    <text>Aktivní vyvažovací hmotnost se pohybuje z rámového mechanismu závory, částečně kompenzující zpětný ráz.</text>
+</string>
+<string id="st_up_auth_a1_name">
+    <text>Přidání aktivní vyvažovací hmotnosti</text>
+</string>
+<string id="st_up_auth_b1_descr">
+    <text>Instalace dalších válečkových dílů snižuje zpětný ráz.</text>
+</string>
+<string id="st_up_auth_b1_name">
+    <text>Instalace systému kompenzace zpětného rázu pomocí válečků</text>
+</string>
+<string id="st_up_auth_c1_descr">
+    <text>Výměna mechanismu závory zbraně za vhodnější konstrukci, která zlepšuje rychlost střelby.</text>
+</string>
+<string id="st_up_auth_c1_name">
+    <text>Systémy střelby s otevřenou závorou</text>
+</string>
+
+	<string id="st_up_auth_c2_descr">
+    <text>Při výstřelu zbraňí se hmotnost vyvažovacího rámu závory pohybuje v opačném směru k závoře, což umožňuje pohodlnější střelbu kulometu.</text>
+</string>
+<string id="st_up_auth_c2_name">
+    <text>Instalace samočinné vyvažovací hmotnosti</text>
+</string>
+<string id="st_up_auto_a1_descr">
+    <text>Do přijímače je instalována vyvažovací hmotnost jako další komponenta k redukci zpětného rázu pomocí protisíly.</text>
+</string>
+<string id="st_up_auto_a1_name">
+    <text>Přidání pohyblivé vyvažovací hmotnosti</text>
+</string>
+<string id="st_up_auto_a2_descr">
+    <text>Móda pro polymerové komponenty nejen zaplatila, ale také se stala poměrně oblíbeným vylepšením.</text>
+</string>
+<string id="st_up_auto_a2_name">
+    <text>Otrhově odolné polymerové komponenty pro automatické části</text>
+</string>
+<string id="st_up_auto_b1_descr">
+    <text>Instalace speciálního mechanismu na ochranu zbraně před nečistotami.</text>
+</string>
+<string id="st_up_auto_b1_name">
+    <text>Automatický dvoupoložkový regulátor plynu</text>
+</string>
+<string id="st_up_auto_b2_descr">
+    <text>Speciální komponent těsní hlaveň vzduchotěsně, aby se při výstřelu zvýšil tlak.</text>
+</string>
+<string id="st_up_auto_b2_name">
+    <text>Instalace zařízení pro zavírání hlavně</text>
+</string>
+<string id="st_up_auto_b3_descr">
+    <text>Synchronizace je dosažena pomocí ozubení, což umožňuje zvýšení rovnosti střelby.</text>
+</string>
+<string id="st_up_auto_b3_name">
+    <text>Synchronizace pohybu tyče</text>
+</string>
+<string id="st_up_auto_b4_descr">
+    <text>Komponent umístěný na zadní straně přijímače, který snižuje rychlost závory. Instalován k zlepšení účinnosti mířené palby.</text>
+</string>
+<string id="st_up_auto_b4_name">
+    <text>Mechanismus zpoždění inercie</text>
+</string>
+<string id="st_up_auto_c1_descr">
+    <text>Speciální komponent instalovaný do mechanismu závory pro zmírnění pohybu závory a snížení zpětného rázu.</text>
+</string>
+<string id="st_up_auto_c1_name">
+    <text>Přidání zařízení pro snížení rychlosti zpětného rázu</text>
+</string>
+<string id="st_up_auto_c2_descr">
+    <text>Integrované zlepšení, které se obvykle používá u odstřelovačských pušek s ohledem na značný nárůst hmotnosti zbraně.</text>
+</string>
+<string id="st_up_auto_c2_name">
+    <text>Vestavěný systém tlumení zpětného rázu</text>
+</string>
+<string id="st_up_auto_c3_descr">
+    <text>Instalace mechanismu s pohyblivými komponenty, které zvyšují rychlost podávání náboje při výstřelu zbraně.</text>
+</string>
+<string id="st_up_auto_c3_name">
+    <text>Automatické podávání náboje</text>
+</string>
+<string id="st_up_auto_c4_descr">
+    <text>Modernizace automatických komponent zbraně, která vyžaduje výměnu několika součástí. Zlepšuje přesnost.</text>
+</string>
+<string id="st_up_auto_c4_name">
+    <text>Vyvážený systém bez vlivu na úder</text>
+</string>
+<string id="st_up_auto_c5_descr">
+    <text>Syntetická komponenta bezprostředně před oblastí pohybu závory, která ji výrazně stlačuje a zlepšuje tak přesnost střelby.</text>
+</string>
+<string id="st_up_auto_c5_name">
+    <text>Přidání zastavovacího zařízení</text>
+</string>
+<string id="st_up_auto_c6_descr">
+    <text>Článek fixuje polohu hlavně a pokud se hlaveň pohybuje, otevřou se další kompenzační otvory.</text>
+</string>
+<string id="st_up_auto_c6_name">
+    <text>Instalace komponentu "chytré kompenzace"</text>
+</string>
+<string id="st_up_auts_a1_descr">
+    <text>Modernizace, která umožňuje hladší mechanismus spouště, což je důležité pro odstřelovače.</text>
+</string>
+<string id="st_up_auts_a1_name">
+    <text>Instalace mechanismu pro regulaci uvolnění spouště</text>
+</string>
+
+	<string id="st_up_auts_a2_descr">
+    <text>Tato komponenta umožňuje střelci získat pocit okamžiku, kdy je výstřel vypálen, což zlepšuje přesnost střelby.</text>
+</string>
+<string id="st_up_auts_a2_name">
+    <text>Instalace spouště s předvídáním</text>
+</string>
+<string id="st_up_auts_b1_descr">
+    <text>Často používaný v západní zbrojovce, systém zámkového válce snižuje zpětný ráz a zlepšuje skupinovost střelby.</text>
+</string>
+<string id="st_up_auts_b1_name">
+    <text>Poloautomatická závora s válcovým systémem</text>
+</string>
+<string id="st_up_auts_b2_descr">
+    <text>Speciální mechanismus přebírá některý z dopadů při výstřelu, což činí střelbu zbraní pohodlnější.</text>
+</string>
+<string id="st_up_auts_b2_name">
+    <text>Systém tlumení střelby</text>
+</string>
+<string id="st_up_auts_b3_descr">
+    <text>Jelikož odstřelovačské pušky vyžadují více údržby než běžné zbraně, lze je vylepšit třípolohovými zařízeními pro regulaci plynu.</text>
+</string>
+<string id="st_up_auts_b3_name">
+    <text>Instalace automatického třípolohového zařízení pro regulaci plynu</text>
+</string>
+<string id="st_up_auts_c1_descr">
+    <text>Vstřik brání energii v rozptýlení, což zvyšuje impulz střely.</text>
+</string>
+<string id="st_up_auts_c1_name">
+    <text>Zakládání automatických částí pomocí vstřiku</text>
+</string>
+<string id="st_up_auts_c2_descr">
+    <text>Instalace dlouhé tyče mechanismu střelby umožňuje střílet odstřelovačskou puškou v automatickém režimu.</text>
+</string>
+<string id="st_up_auts_c2_name">
+    <text>System dlouhé tyče mechanismu střelby</text>
+</string>
+<string id="st_up_auts_c3_descr">
+    <text>Zastavovací zařízení ovlivňuje mechanismus zpětného rázu, zlepšuje přesnost střelby.</text>
+</string>
+<string id="st_up_auts_c3_name">
+    <text>Instalace zastavovacího zařízení</text>
+</string>
+<string id="st_up_bar_a1_descr">
+    <text>Výměna běžné hlavně za delší zlepšuje přesnost a rovnost střelby.</text>
+</string>
+<string id="st_up_bar_a1_name">
+    <text>Delší hlaveň</text>
+</string>
+<string id="st_up_bar_a2_descr">
+    <text>Chybějící velké plynové komory a uchycení hlavně na pažbě má pozitivní vliv na přesnost střelby.</text>
+</string>
+<string id="st_up_bar_a2_name">
+    <text>Instalace "plavající" hlavně</text>
+</string>
+<string id="st_up_bar_a3_descr">
+    <text>Tato úprava slouží k snížení škod způsobených nadměrnými úpravami rychlosti střelby.</text>
+</string>
+<string id="st_up_bar_a3_name">
+    <text>Instalace hlavně s chladicími žebry</text>
+</string>
+<string id="st_up_bar_b1_descr">
+    <text>Výměna zastaralé součásti za modernější snižuje zpětný ráz</text>
+</string>
+<string id="st_up_bar_b1_name">
+    <text>Optimalizovaná kompenzační mědlice</text>
+</string>
+<string id="st_up_bar_b2_descr">
+    <text>Instalace hlavně s dalšími závitovými kanály zvyšuje rychlost střelby a přesnost zbraně za cenu značného zvýšení zpětného rázu.</text>
+</string>
+<string id="st_up_bar_b2_name">
+    <text>Další závitové kanály v hlavni</text>
+</string>
+<string id="st_up_bar_b3_descr">
+    <text>Tato hlaveň slouží ke zvětšení zóny zabití v blízkém boji a není proto vhodná pro přesnou střelbu. Zlepšuje rychlost střelby díky zjednodušení žlábku v hlavní části hlavně.</text>
+</string>
+<string id="st_up_bar_b3_name">
+    <text>Instalace hlavně s jednodušším žlábkem</text>
+</string>
+<string id="st_up_bar_c1_descr">
+    <text>Polygonální žlábkování se obvykle provádí pro zlepšení přesnosti.</text>
+</string>
+<string id="st_up_bar_c1_name">
+    <text>Instalace hlavně s polygonálním žlábkováním</text>
+</string>
+<string id="st_up_bar_c2_descr">
+    <text>Umožňuje snížení teploty hlavně a zvyšuje rychlost střelby.</text>
+</string>
+
+	<string id="st_up_bar_c2_name">
+    <text>Sinusoidalní žlábkování hlavňové komory</text>
+</string>
+<string id="st_up_bar_c3_descr">
+    <text>Zvláštní výměna hlavně pro zbraně s dobrými charakteristikami rovnosti, která zlepšuje jejich přesnost.</text>
+</string>
+<string id="st_up_bar_c3_name">
+    <text>Žlábkování odstřelovačské pušky</text>
+</string>
+<string id="st_up_bard_a1_descr">
+    <text>Materiály s vysokou odolností zpomalují opotřebení hlavně zbraně.</text>
+</string>
+<string id="st_up_bard_a1_name">
+    <text>Hlaveň z slitiny s vysokou odolností</text>
+</string>
+<string id="st_up_bard_b1_descr">
+    <text>Ošetření vnitřní plochy hlavně ji chrání před mechanickým poškozením.</text>
+</string>
+<string id="st_up_bard_b1_name">
+    <text>Ošetření hlavně</text>
+</string>
+<string id="st_up_bard_b2_descr">
+    <text>Syntetické zahuštění dutiny hlavně způsobuje značné zlepšení skupinovosti střelby.</text>
+</string>
+<string id="st_up_bard_b2_name">
+    <text>Syntetické zahušťovače hlavně</text>
+</string>
+<string id="st_up_bard_b3_descr">
+    <text>Výměna běžné hlavně za delší zlepšuje rovnost střelby.</text>
+</string>
+<string id="st_up_bard_b3_name">
+    <text>Dlouhé úseky hlavně</text>
+</string>
+<string id="st_up_bard_b4_descr">
+    <text>Zavedení kanálků pro odvádění plynu do hlavně nejen brání jeho znečištění, ale také částečně přesměrovává zpětný ráz do samotné hlavně.</text>
+</string>
+<string id="st_up_bard_b4_name">
+    <text>Podélné kanály pro odvádění plynu</text>
+</string>
+<string id="st_up_bard_b5_descr">
+    <text>Výměna běžné hlavně za delší zlepšuje rovnost střelby.</text>
+</string>
+<string id="st_up_bard_b5_name">
+    <text>Dlouhý úsek hlavně</text>
+</string>
+<string id="st_up_bard_b6_descr">
+    <text>Toto stříkání brání přehřátí hlavně, odstraňuje výrobní vady a výrazně prodlužuje životnost hlavně.</text>
+</string>
+<string id="st_up_bard_b6_name">
+    <text>Aplikace ochranného stříkání do vnitřní části hlavně</text>
+</string>
+<string id="st_up_bard_c1_descr">
+    <text>Systém vyvažování hlavně zahrnuje několik pohyblivých pístů, které činí zbraň stabilnější při držení.</text>
+</string>
+<string id="st_up_bard_c1_name">
+    <text>Systém vyvažování hlavně</text>
+</string>
+<string id="st_up_bard_c2_descr">
+    <text>Žlábkovaná část hlavně znemožňuje střelbu brokovými střelami, ale dosažená přesnost převažuje nad tímto nedostatkem.</text>
+</string>
+<string id="st_up_bard_c2_name">
+    <text>Žlábkové hlavně</text>
+</string>
+<string id="st_up_bard_c3_descr">
+    <text>Zahuštění poly-materiály umožňuje zvýšení tlaku v hlavni, což zlepšuje rychlost střelby.</text>
+</string>
+<string id="st_up_bard_c3_name">
+    <text>Dynamické zahušťovače hlavně</text>
+</string>
+<string id="st_up_bard_c4_descr">
+    <text>Vřetenové vrtání hlavně pomáhá zlepšit rychlost střelby zbraně, aniž by to ovlivnilo přesnost.</text>
+</string>
+<string id="st_up_bard_c4_name">
+    <text>Vřetenové vrtání hlavně</text>
+</string>
+<string id="st_up_bard_c5_descr">
+    <text>Při výstřelu se aktivní protizávaží současně posune k ústí hlavně, čímž částečně kompenzuje zpětný ráz.</text>
+</string>
+<string id="st_up_bard_c5_name">
+    <text>Přidání aktivního protizávaží k plášti hlavně</text>
+</string>
+
+<string id="st_up_bard_c6_descr">
+    <text>Komplexní integrovaná úprava mechanických a automatizovaných částí zbraně, která umožňuje změnu ráže za cenu spolehlivosti.</text>
+</string>
+<string id="st_up_bard_c6_name">
+    <text>Změna ráže na 7.62x54</text>
+</string>
+<string id="st_up_barp_a1_descr">
+    <text>Výměna běžné hlavně za delší zlepšuje přesnost a rovnost, ale snižuje rychlost střelby.</text>
+</string>
+<string id="st_up_barp_a1_name">
+    <text>Dlouhý úsek hlavně</text>
+</string>
+<string id="st_up_barp_a2_descr">
+    <text>Perforace hlavně způsobuje snížení zpětného rázu plyny unikají skrze speciální otvory.</text>
+</string>
+<string id="st_up_barp_a2_name">
+    <text>Perforovaný úsek hlavně</text>
+</string>
+<string id="st_up_barp_a3_descr">
+    <text>Technologičtější zkrácená hlaveň zlepšuje rychlost střelby zbraně, aniž by to obětovalo rovnost a přesnost.</text>
+</string>
+<string id="st_up_barp_a3_name">
+    <text>Zkrácený úsek hlavně</text>
+</string>
+<string id="st_up_barp_b1_descr">
+    <text>Chromování zlepšuje životnost hlavně.</text>
+</string>
+<string id="st_up_barp_b1_name">
+    <text>Chromování vnitřní strany hlavně</text>
+</string>
+<string id="st_up_barp_b2_descr">
+    <text>Separátory přebírají část zpětného rázu.</text>
+</string>
+<string id="st_up_barp_b2_name">
+    <text>Přidání gumových separátorů</text>
+</string>
+<string id="st_up_barp_b3_descr">
+    <text>Zjednodušená žlábkovaná část je užitečná pro boj zblízka, kde se důraz klade na rychlost střelby spíše než na přesnost.</text>
+</string>
+<string id="st_up_barp_b3_name">
+    <text>Instalace hlavně s jednodušší žlábkovanou částí</text>
+</string>
+<string id="st_up_barp_b4_descr">
+    <text>Instalace hlavně s dodatečnými závitovými kanály zlepšuje rychlost střelby a přesnost zbraně za cenu značného zvýšení zpětného rázu.</text>
+</string>
+<string id="st_up_barp_b4_name">
+    <text>Dodatečné závitové kanály v hlavní</text>
+</string>
+<string id="st_up_barp_b5_descr">
+    <text>Vyjmutí hlavně umožňuje výrazně snížit zpětný ráz.</text>
+</string>
+<string id="st_up_barp_b5_name">
+    <text>Přesunutí kompenzátoru zpětného rázu/útlumovače záblesku na rám</text>
+</string>
+<string id="st_up_barp_c1_descr">
+    <text>Umístění sinusoidálního žlábkování hlavně umožňuje snížení teploty hlavně a zvýšení rychlosti střelby bez obětování rovnosti.</text>
+</string>
+<string id="st_up_barp_c1_name">
+    <text>Sinusoidální žlábkování hlavně</text>
+</string>
+
+<string id="st_up_barp_c2_descr">
+    <text>Obvykle se provádí žlábkování hlavně ve formě mnohoúhelníku, aby se zlepšila přesnost odstřelovačských pušek.</text>
+</string>
+<string id="st_up_barp_c2_name">
+    <text>Instalace hlavně s polygonálně žlábkovanou částí</text>
+</string>
+<string id="st_up_barp_c3_descr">
+    <text>Pneumatický zesilovač umožňuje část zpětného rázu přeměnit na vyšší tlak v hlavni, což zvyšuje rychlost ústní střely.</text>
+</string>
+<string id="st_up_barp_c3_name">
+    <text>Instalace pneumatického zesilovače</text>
+</string>
+<string id="st_up_opt_a1_descr">
+    <text>Montáž útočného zaměřovače pro boj na krátkou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a1_name">
+    <text>1.6x reflexní zaměřovač</text>
+</string>
+<string id="st_up_opt_a2_descr">
+    <text>Montáž optického zaměřovače pro boj na střední a dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a2_name">
+    <text>4.0x optický zaměřovač</text>
+</string>
+<string id="st_up_opt_a3_descr">
+    <text>Montáž zaměřovače POSP 8x42 W pro boj na dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a3_name">
+    <text>8.0x optický zaměřovač POSP 8x42 W</text>
+</string>
+<string id="st_up_opt_a4_descr">
+    <text>Úprava optického zaměřovače pro boj na dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a4_name">
+    <text>Zvýšení zvětšení na 12.0x</text>
+</string>
+<string id="st_up_opt_a5_descr">
+    <text>Úprava optického zaměřovače pro boj na dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a5_name">
+    <text>Zvýšení zvětšení na 15.0x</text>
+</string>
+<string id="st_up_opt_a6_descr">
+    <text>Úprava optického zaměřovače pro boj na dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_opt_a6_name">
+    <text>Zvýšení zvětšení na 10.0x</text>
+</string>
+<string id="st_up_opt_b1_descr">
+    <text>Modifikace provedená na útočných zbraních se reflexními zaměřovači znamená jednoduché zlepšení kontrastu v oblasti žluté. Důležité pro boj v podmínkách soumraku a špatně osvětlených budov.</text>
+</string>
+<string id="st_up_opt_b1_name">
+    <text>Zlepšení kontrastu zaměřovače</text>
+</string>
+<string id="st_up_opt_c1_descr">
+    <text>Termovizní zaměřovač umožňuje uživateli detekovat a identifikovat odpovídající zdroje tepla.</text>
+</string>
+<string id="st_up_opt_c1_name">
+    <text>Automatické optické zaměřování cíle</text>
+</string>
+<string id="st_up_opt_c2_descr">
+    <text>Noční vidění zachránilo mnoho odstřelovačů od svého vzniku. Zvýšení hmotnosti o 0,27 kg.</text>
+</string>
+<string id="st_up_opt_c2_name">
+    <text>Instalace zařízení nočního vidění</text>
+</string>
+<string id="st_up_opt_c3_descr">
+    <text>Tato modifikace umožňuje zaměřovač snadno nastavit na střelbu na určitou vzdálenost.</text>
+</string>
+<string id="st_up_opt_c3_name">
+    <text>Nastavitelný dálkoměrný zaměřovač</text>
+</string>
+<string id="st_up_opt_binoc1_descr">
+    <text>Kontrastní filtry integrované do binokulárních čoček zlepšují viditelnost ve městských oblastech a za podmínek nízkého osvětlení.</text>
+</string>
+<string id="st_up_opt_binoc1_name">
+    <text>Překrytí zaměřovače zvýrazňující kontrast</text>
+</string>
+<string id="st_up_opt_binoc2_descr">
+    <text>Výměna binokulárních čoček pro lepší zvětšení. Zvětšení zvýšeno na 5.0x</text>
+</string>
+
+	<string id="st_up_opt_binoc2_name">
+    <text>Zvýšení zvětšení na 5.0x</text>
+</string>
+<string id="st_up_opt_binoc3_descr">
+    <text>Výměna optického zařízení dalekohledu pro nastavitelné zvětšení. Malé zvýšení hmotnosti díky instalaci složitějšího mechanismu.</text>
+</string>
+<string id="st_up_opt_binoc3_name">
+    <text>Objektiv s nastavitelným zvětšením</text>
+</string>
+<string id="st_up_stk_binoc1_descr">
+    <text>Výměna metalické rukojeti za polymerní protějšek, což výrazně snižuje váhu.</text>
+</string>
+<string id="st_up_stk_binoc1_name">
+    <text>Polymerní rukojeť</text>
+</string>
+<string id="st_up_stk_binoc2_descr">
+    <text>Výměna binokulárního rámu za hliníkový protějšek. Snížení váhy, značně zvyšuje pohodlí při používání.</text>
+</string>
+<string id="st_up_stk_binoc2_name">
+    <text>Hliníkový rám</text>
+</string>
+<string id="st_up_stk_binoc3_descr">
+    <text>Výměna pohyblivých částí za titánové protějšky. Snížení váhy a zvýšení funkčnosti.</text>
+</string>
+<string id="st_up_stk_binoc3_name">
+    <text>Mechanický aparát na bázi titánu</text>
+</string>
+<string id="st_up_opt_dynamo_hand3_name">
+    <text>Dodatečné magnety</text>
+</string>
+<string id="st_up_pri_a1_descr">
+    <text>Pneumatická pažba je používána k redukci zpětného rázu během dávkové palby.</text>
+</string>
+<string id="st_up_pri_a1_name">
+    <text>Pneumatická pažba</text>
+</string>
+<string id="st_up_pri_b1_descr">
+    <text>Pohyblivá opěrka na rameno výrazně snižuje dopad zpětného rázu na tělo.</text>
+</string>
+<string id="st_up_pri_b1_name">
+    <text>Instalace odpružené opěrky na rameno</text>
+</string>
+<string id="st_up_pri_b2_descr">
+    <text>Moderní pažba, která bere v úvahu specifickou povahu lidské fyziologie.</text>
+</string>
+<string id="st_up_pri_b2_name">
+    <text>Ergonomická pažba</text>
+</string>
+<string id="st_up_pri_c1_descr">
+    <text>Když je zbraň vystřelena, některé z pachův stlačeného prachu jsou odstraněny z hlavně do dutiny za závěrem, což zajistí, že se plynule zastaví na cestě zpět.</text>
+</string>
+<string id="st_up_pri_c1_name">
+    <text>Instalace plynného tlumícího závěru</text>
+</string>
+<string id="st_up_pri_c2_descr">
+    <text>Částečné prodloužení rámce závěru do pažby umožňuje zvýšit rovinnost za cenu více zpětného rázu.</text>
+</string>
+<string id="st_up_pri_c2_name">
+    <text>Prodloužení tlumícího rámu závěru</text>
+</string>
+<string id="st_up_pri_c3_descr">
+    <text>Instalace pohyblivé součásti do pažby, která vytváří protiúčinek při výstřelu zbraně.</text>
+</string>
+<string id="st_up_pri_c3_name">
+    <text>Pohyblivá protihmotnost</text>
+</string>
+<string id="st_up_prih_a1_descr">
+    <text>Větší opěrka umožňuje přesnou střelbu.</text>
+</string>
+<string id="st_up_prih_a1_name">
+    <text>Zvětšená opěrka</text>
+</string>
+<string id="st_up_prih_b1_descr">
+    <text>Odpružená opěrka odpružená pružinou částečně odstraňuje nepříjemné pocity při střelbě z rychlopalného kulometu.</text>
+</string>
+<string id="st_up_prih_b1_name">
+    <text>Vestavěný tlumič zpětného rázu na pružinové bázi</text>
+</string>
+<string id="st_up_prih_c1_descr">
+    <text>Tlumič závěru umístěný ve vestě přebírá a absorbuje většinu zpětného rázu.</text>
+</string>
+<string id="st_up_prih_c1_name">
+    <text>Dodatečný tlumící závěr</text>
+</string>
+<string id="st_up_pris_a1_descr">
+    <text>Gumová součást amortizující ráz může být často použita na továrně vyrobených pažbách odstřelovačských pušek velkého kalibru.</text>
+</string>
+<string id="st_up_pris_a1_name">
+    <text>Amortizační součást pažby</text>
+</string>
+<string id="st_up_pris_b1_descr">
+    <text>Stavitelná pažba s lícní podložkou je užitečná pro střelbu z pohodlných i nepohodlných pozic.</text>
+</string>
+<string id="st_up_pris_b1_name">
+    <text>Stavitelná pažba s lícní podložkou</text>
+</string>
+<string id="st_up_pris_c1_descr">
+    <text>Součást pro zbraně velkého kalibru s výrazným zpětným rázem instalovaná do pažby.</text>
+</string>
+<string id="st_up_pris_c1_name">
+    <text>Hydraulický tlumící závěr pažby</text>
+</string>
+<string id="st_up_ret_a1_descr">
+    <text>Zesílená pružina se používá k zvýšení rychlosti střely.</text>
+</string>
+<string id="st_up_ret_a1_name">
+    <text>Zesílená pružina návratového mechanismu</text>
+</string>
+<string id="st_up_ret_a2_descr">
+    <text>Instalace zesilovačů na pohyblivé části mechanismu zajistí, že se hlaveň při střelbě méně odchyluje od cíle.</text>
+</string>
+<string id="st_up_ret_a2_name">
+    <text>Amortizace návratového mechanismu</text>
+</string>
+<string id="st_up_ret_a3_descr">
+    <text>Instalace dodatečné pružiny s opačným vinutím k redukci zpětného rázu bez obětování rovinnosti.</text>
+</string>
+<string id="st_up_ret_a3_name">
+    <text>Dodatečná pružina návratového mechanismu</text>
+</string>
+<string id="st_up_ret_b1_descr">
+    <text>Ochranný sputter zvyšuje spolehlivost a, co je důležitější, zajistí těsnost, což brání ztrátě energie.</text>
+</string>
+<string id="st_up_ret_b1_name">
+    <text>Ochranná součást sputteru návratového mechanismu</text>
+</string>
+<string id="st_up_ret_b2_descr">
+    <text>Titanové tyče jsou odolné vůči mnohem vyšší rychlosti střelby než běžné tyče.</text>
+</string>
+<string id="st_up_ret_b2_name">
+    <text>Titanové tyče návratového mechanismu</text>
+</string>
+<string id="st_up_ret_b3_descr">
+    <text>Syntetický prvek instalovaný na tyče zajišťuje, že se pohybují přesně podle záměru, což zvyšuje přesnost.</text>
+</string>
+
+	<string id="st_up_ret_b3_name">
+    <text>Přidání vyvažovacího prvku</text>
+</string>
+<string id="st_up_ret_c1_descr">
+    <text>Zahuštění pouzdra umožňuje zvýšení tlaku v hlavni, což zlepšuje rychlost střely.</text>
+</string>
+<string id="st_up_ret_c1_name">
+    <text>Zahušťovač návratového mechanismu</text>
+</string>
+<string id="st_up_ret_c2_descr">
+    <text>Článek, který je otevřený plynem a zavřený návratovým mechanismem sám, což umožňuje využití části energie plynu k provozu návratového mechanismu.</text>
+</string>
+<string id="st_up_ret_c2_name">
+    <text>Instalace distribučního článku</text>
+</string>
+<string id="st_up_ret_c3_descr">
+    <text>Výměna návratového mechanismu za výkonnější verzi s dvěma vodicími tyčemi a návratovými pružinami. Zvyšuje rychlost střelby zbraně.</text>
+</string>
+<string id="st_up_ret_c3_name">
+    <text>Konverze na systém se dvěma tyčemi</text>
+</string>
+<string id="st_up_roun_a1_descr">
+    <text>Zvláštní plynové výstupní kanály kolem bubnové části zbraně, které snižují zpětný ráz.</text>
+</string>
+<string id="st_up_roun_a1_name">
+    <text>Využití energie plynu</text>
+</string>
+<string id="st_up_roun_a2_descr">
+    <text>Přidání diagonálních hranových drážek na bubnu, které zrychlují otáčení mechanismu, který využívá energii plynu.</text>
+</string>
+<string id="st_up_roun_a2_name">
+    <text>Přidání diagonálních hranových drážek na bubnu</text>
+</string>
+<string id="st_up_stk_a1_descr">
+    <text>Výhodou této evropské standardní úpravy je snížená hmotnost bez poklesu spolehlivosti.</text>
+</string>
+<string id="st_up_stk_a1_name">
+    <text>Oprávněná polymerová pažba</text>
+</string>
+<string id="st_up_stk_a2_descr">
+    <text>Vysoce odolný receiver pomáhá útočným puškám vydržet bojové podmínky každodenně.</text>
+</string>
+<string id="st_up_stk_a2_name">
+    <text>Receiver z vysoce odolné slitiny</text>
+</string>
+<string id="st_up_stk_a3_descr">
+    <text>Jednoduché přidání hmotnosti vpředu na receiver k redukci zpětného rázu.</text>
+</string>
+<string id="st_up_stk_a3_name">
+    <text>Přidání vyvažovací hmoty do ocelového boxu</text>
+</string>
+<string id="st_up_stk_b1_descr">
+    <text>Instalace chladičů pomáhá řešit zvýšení rychlosti střelby zbraně, které produkují další teplo, které je třeba kontrolovat.</text>
+</string>
+<string id="st_up_stk_b1_name">
+    <text>Dodatečný chladič</text>
+</string>
+<string id="st_up_stk_b2_descr">
+    <text>Modernější tvar rukojeti, který umožňuje lepší manipulaci se zbraní při střelbě na pohybu.</text>
+</string>
+<string id="st_up_stk_b2_name">
+    <text>Moderní tvar receiveru</text>
+</string>
+<string id="st_up_stk_c1_descr">
+    <text>Úprava používaná výhradně pro hlavně se solidními receivery bullpup, která zjednodušuje údržbu zbraně.</text>
+</string>
+<string id="st_up_stk_c1_name">
+    <text>Modulární receiver</text>
+</string>
+<string id="st_up_stk_c2_descr">
+    <text>Tento sputter brání přehřátí hlavně, odstraňuje výrobní vady a významně zvyšuje životnost hlavně.</text>
+</string>
+<string id="st_up_stk_c2_name">
+    <text>Hladký drážkový sputter receiveru</text>
+</string>
+<string id="st_up_stk_c3_descr">
+    <text>V nakloněné rukojeti je instalován lehký pohyblivý komponent, který stabilizuje zbraň tím, že při střelbě vytváří protiúčinek zpětnému rázu.</text>
+</string>
+<string id="st_up_stk_c3_name">
+    <text>Nakloněná rukojeť</text>
+</string>
+<string id="st_up_stvd_a1_descr">
+    <text>Dutina uvnitř rukojeti umožňuje snížení hmotnosti zbraně.</text>
+</string>
+<string id="st_up_stvd_a1_name">
+    <text>Nakloněná rukojeť</text>
+</string>
+<string id="st_up_stvd_a2_descr">
+    <text>Lehčí verze standardní pažby.</text>
+</string>
+<string id="st_up_stvd_a2_name">
+    <text>Lehčí pažba</text>
+</string>
+<string id="st_up_stvd_a3_descr">
+    <text>Lehčí poly-materiál umožňuje snížení hmotnosti zbraně.</text>
+</string>
+<string id="st_up_stvd_a3_name">
+    <text>Oprávněná polymerová pažba</text>
+</string>
+<string id="st_up_stvd_b1_descr">
+    <text>Přidání hmotnostního komponentu k zbrani k redukci zpětného rázu.</text>
+</string>
+<string id="st_up_stvd_b1_name">
+    <text>Přidání protihmoty</text>
+</string>
+<string id="st_up_stvd_b2_descr">
+    <text>Modernější a pohodlnější rukojeť zjednodušuje manipulaci se zbraní.</text>
+</string>
+<string id="st_up_stvd_b2_name">
+    <text>Moderní rukojeť</text>
+</string>
+<string id="st_up_stvd_b3_descr">
+    <text>Amortizační rukojeť snižuje zpětný ráz.</text>
+</string>
+<string id="st_up_stvd_b3_name">
+    <text>Amortizační rukojeť</text>
+</string>
+<string id="st_up_stvd_b4_descr">
+    <text>Modernější a pohodlnější pažba zjednodušuje manipulaci se zbraní.</text>
+</string>
+<string id="st_up_stvd_b4_name">
+    <text>Moderní pažba</text>
+</string>
+<string id="st_up_stvd_b5_descr">
+    <text>Speciální povlak chrání zbraň před vlivem živlů.</text>
+</string>
+<string id="st_up_stvd_b5_name">
+    <text>Antikorozní povlak</text>
+</string>
+<string id="st_up_stvd_c1_descr">
+    <text>V zásobníku zbraně je umístěn tlumič zpětného rázu s rtutí, který částečně spotřebovává něco ze zpětného rázu při střelbě zbraně.</text>
+</string>
+<string id="st_up_stvd_c1_name">
+    <text>Tlumič zpětného rázu s rtutí</text>
+</string>
+<string id="st_up_stvd_c2_descr">
+    <text>Volně pohyblivý komponent impulsu protihmoty, který se pohybuje z čepu, když je zbraň střelena, a částečně pohlcuje něco ze zpětného rázu.</text>
+</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<string id="st_up_stvd_c2_name">
+    <text>Přidání impulsového vyvažovacího závaží</text>
+</string>
+<string id="st_up_stvh_a1_descr">
+    <text>Změna materiálu snižuje poškození hlavně způsobené nerovnoměrným ohřevem během střelby, což umožňuje zvýšit rychlost palby zbraně.</text>
+</string>
+<string id="st_up_stvh_a1_name">
+    <text>Vysokopevnostní slitiny odolné vůči teplotě</text>
+</string>
+<string id="st_up_stvh_b1_descr">
+    <text>Důležitá úprava, která chrání zbraň před vlivy teploty vzduchu během střelby.</text>
+</string>
+<string id="st_up_stvh_b1_name">
+    <text>Přidání izolačních obalů pro regulaci teploty</text>
+</string>
+<string id="st_up_stvh_b2_descr">
+    <text>Technologické zlepšení, žebrání vyžaduje extrémní přesnost, aby se zabránilo vytváření přehřátých míst na hlavni.</text>
+</string>
+<string id="st_up_stvh_b2_name">
+    <text>Vnější žebrání hlavně</text>
+</string>
+<string id="st_up_stvh_c1_descr">
+    <text>Výměna hlavně za modernější verzi umožňuje významné zvýšení přesnosti.</text>
+</string>
+<string id="st_up_stvh_c1_name">
+    <text>Změna geometrie hlavně</text>
+</string>
+<string id="st_up_stvp_a1_descr">
+    <text>Drahý rám pro zbraň, která bude sloužit dlouho.</text>
+</string>
+<string id="st_up_stvp_a1_name">
+    <text>Titanový rám</text>
+</string>
+<string id="st_up_stvp_a2_descr">
+    <text>V tomto případě je rám spolehlivější než kompozitní.</text>
+</string>
+<string id="st_up_stvp_a2_name">
+    <text>Massivní ocelový rám</text>
+</string>
+<string id="st_up_stvp_b1_descr">
+    <text>Technická výměna rámu pistole za lehčí neovlivní spolehlivost zbraně.</text>
+</string>
+<string id="st_up_stvp_b1_name">
+    <text>Polymerový rám pistole</text>
+</string>
+<string id="st_up_stvp_b2_descr">
+    <text>Modernější a pohodlnější rukojeť usnadňuje manipulaci se zbraní.</text>
+</string>
+<string id="st_up_stvp_b2_name">
+    <text>Ergonomická rukojeť</text>
+</string>
+<string id="st_up_stvp_b3_descr">
+    <text>Amortizační rukojeť snižuje zpětný ráz.</text>
+</string>
+<string id="st_up_stvp_b3_name">
+    <text>Amortizační rukojeť</text>
+</string>
+<string id="st_up_stvp_b4_descr">
+    <text>Ochranné zesílení plášťů by mělo chránit zbraň před nečistotou a nárazy.</text>
+</string>
+<string id="st_up_stvp_b4_name">
+    <text>Ochranné zesílení těla</text>
+</string>
+<string id="st_up_stvp_b5_descr">
+    <text>Změna zadní části vytvoří ergonomičtější tvar rukojeti.</text>
+</string>
+
+	<string id="st_up_stvp_b5_name">
+    <text>Změna tvaru rukojeti s přímou zadní částí</text>
+</string>
+<string id="st_up_stvp_b6_descr">
+    <text>Možnost volby vhodné délky rukojeti vytváří ergonomičtější tvar rukojeti.</text>
+</string>
+<string id="st_up_stvp_b6_name">
+    <text>Nastavitelná rukojeť</text>
+</string>
+<string id="st_up_stvp_c1_descr">
+    <text>Tato úprava je možná pouze tehdy, pokud byla do rukojeti nainstalována návratová pružina.</text>
+</string>
+<string id="st_up_stvp_c1_name">
+    <text>Instalace návratové pružiny amortizační součásti</text>
+</string>
+<string id="st_up_stvp_c2_descr">
+    <text>Možnost volby vhodného plátu vytváří ergonomičtější tvar rukojeti.</text>
+</string>
+<string id="st_up_stvp_c2_name">
+    <text>Rukojeť s změněným tvarem s vyměnitelnými pláty</text>
+</string>
+<string id="st_up_stvs_a1_descr">
+    <text>Určeno pro zbraně, které jsou často používány, plášť je chrání před brzkým opotřebením.</text>
+</string>
+<string id="st_up_stvs_a1_name">
+    <text>Instalace perforované ocelové pochvy</text>
+</string>
+<string id="st_up_stvs_b1_descr">
+    <text>Technologicky pokročilejší a účinnější kompenzátor zpětného rázu než u běžných automatických zbraní.</text>
+</string>
+<string id="st_up_stvs_b1_name">
+    <text>Účinný kompenzátor úsťové brzdy</text>
+</string>
+<string id="st_up_stvs_b2_descr">
+    <text>Modernější a vhodnější hlaveň pro střelbu odstřelovače na velmi dlouhou vzdálenost.</text>
+</string>
+<string id="st_up_stvs_b2_name">
+    <text>Instalace těžké části hlavně s polygonálním závitem</text>
+</string>
+<string id="st_up_stvs_b3_descr">
+    <text>Podélné drážky na části hlavně zabrání přehřívání hlavně a znečištění nečistotami.</text>
+</string>
+<string id="st_up_stvs_b3_name">
+    <text>Podélné drážky na části hlavně</text>
+</string>
+<string id="st_up_stvs_c1_descr">
+    <text>Integrovaný tlumič a potlačovač záblesku, nezbytný pro tichou střelbu.</text>
+</string>
+<string id="st_up_stvs_c1_name">
+    <text>Instalace integrovaného tlumiče</text>
+</string>
+<string id="st_up_stvs_c2_descr">
+    <text>Sinusoidální drážkování v hlavni se obvykle provádí u útočných zbraní k zvýšení jejich rychlosti palby.</text>
+</string>
+<string id="st_up_stvs_c2_name">
+    <text>Sinusoidální drážkování hlavňové komory</text>
+</string>
+<string id="st_up_usm_a1_descr">
+    <text>Cílem kompenzátoru kladiva závitu je absorbovat část zpětného rázu, zlepšující seskupení při střelbě dávka střel.</text>
+</string>
+<string id="st_up_usm_a1_name">
+    <text>Kompenzátor kladiva závitu</text>
+</string>
+
+	<string id="st_up_usm_a2_descr">
+    <text>Jedna z nejjednodušších a nejoblíbenějších úprav, která umožňuje snížit odpor spouště. Jednoduchá a praktická.</text>
+</string>
+<string id="st_up_usm_a2_name">
+    <text>Měkké uvolnění</text>
+</string>
+<string id="st_up_usm_b1_descr">
+    <text>Speciální výběr komponent vyrobených z různých materiálů specifických pro tuto zbraň. Nemusí být levný, ale zvyšuje životnost vaší zbraně.</text>
+</string>
+<string id="st_up_usm_b1_name">
+    <text>Kompozitní komponenty spoušťového mechanismu</text>
+</string>
+<string id="st_up_usm_b2_descr">
+    <text>Umožňuje zvýšit rychlost palby na úkor přesnosti a spolehlivosti.</text>
+</string>
+<string id="st_up_usm_b2_name">
+    <text>Násilný spoušťový zpožďovací zařízení</text>
+</string>
+<string id="st_up_usm_b3_descr">
+    <text>Odstranění bojové pružiny umožňuje vystřelit první ránu o půl sekundy dříve. Nemusí to být mnoho, ale může vám zachránit život.</text>
+</string>
+<string id="st_up_usm_b3_name">
+    <text>Bezpérkový mechanismus uvolnění</text>
+</string>
+<string id="st_up_usm_c1_descr">
+    <text>Ochranná výstřelková deska zabraňuje selhání způsobenému poruchou spoušťového mechanismu.</text>
+</string>
+<string id="st_up_usm_c1_name">
+    <text>Ochranná komponenta spoušťového mechanismu výstřelky</text>
+</string>
+<string id="st_up_usm_c2_descr">
+    <text>Bezpérkové uchycení umožňuje zvýšit automatické nabití a výrazně zlepšit rychlost palby zbraně.</text>
+</string>
+<string id="st_up_usm_c2_name">
+    <text>Bezpérkové uchycení spoušťového mechanismu</text>
+</string>
+<string id="st_up_usm_c3_descr">
+    <text>Bezpaměťový systém proráží střelu pomocí speciálního kladiva místo toho, aby ji zasáhl, což činí střelecký proces značně jemnějším.</text>
+</string>
+<string id="st_up_usm_c3_name">
+    <text>Instalace bezpaměťového systému spoušťového mechanismu</text>
+</string>
+<string id="st_up_usmp_a1_descr">
+    <text>Spoušť je napnuta prvním výstřelem, přičemž všechny další střely probíhají během automatického napínání spouště.</text>
+</string>
+<string id="st_up_usmp_a1_name">
+    <text>Dvojitý spoušťový mechanismus</text>
+</string>
+<string id="st_up_usmp_b1_descr">
+    <text>Jedna z nejjednodušších a nejoblíbenějších úprav, která umožňuje snížit odpor spouště. Jednoduchá a praktická.</text>
+</string>
+<string id="st_up_usmp_b1_name">
+    <text>Měkké uvolnění</text>
+</string>
+
+	<string id="st_up_usmp_b2_descr">
+    <text>Částečné napnutí umožňuje zlepšit přesnost střelby.</text>
+</string>
+<string id="st_up_usmp_b2_name">
+    <text>Spoušťový mechanismus s částečným přednapnutím</text>
+</string>
+<string id="st_up_usmp_b3_descr">
+    <text>Umožňuje použít stejný tlak na spoušti od prvního do posledního výstřelu, což má pozitivní vliv na snadné použití.</text>
+</string>
+<string id="st_up_usmp_b3_name">
+    <text>Bezpečnostní uvolňovací zařízení</text>
+</string>
+<string id="st_up_usmp_b4_descr">
+    <text>Moderní úprava, která zabrání oddělení části závěru zbraně.</text>
+</string>
+<string id="st_up_usmp_b4_name">
+    <text>Zvýšená hlava spouště</text>
+</string>
+<string id="st_up_usmp_b5_descr">
+    <text>Modulární spoušťový mechanismus umožňuje snazší údržbu a výměnu dílů, stejně jako určité zlepšení v použitelnosti.</text>
+</string>
+<string id="st_up_usmp_b5_name">
+    <text>Modulární spoušťový mechanismus</text>
+</string>
+<string id="st_up_usmp_c1_descr">
+    <text>Spoušťový komponent výrazně snižuje tlak potřebný na spoušti, což zlepšuje přesnost.</text>
+</string>
+<string id="st_up_usmp_c1_name">
+    <text>Instalace spoušťového komponentu</text>
+</string>
+<string id="st_up_usmp_c2_descr">
+    <text>Nový technologický vývoj umožňuje jednoduchou úpravu režimu spoušťového mechanismu - další krok směrem k lepší ergonomii a snadnému nastavení zbraně.</text>
+</string>
+<string id="st_up_usmp_c2_name">
+    <text>Režim "Dvojitá" spoušť</text>
+</string>
+<string id="st_up_usmp_c3_descr">
+    <text>Po výstřelu první rány je potřeba jen polovina pohybu spouště k provedení následujících výstřelů.</text>
+</string>
+<string id="st_up_usmp_c3_name">
+    <text>Krátký pohyb spoušťového mechanismu</text>
+</string>
+<string id="st_up_zat_a1_descr">
+    <text>Tato poměrně drahá úprava je ve skutečnosti běžná pro zbraně nové generace.</text>
+</string>
+<string id="st_up_zat_a1_name">
+    <text>Montáž pevného závěru</text>
+</string>
+<string id="st_up_zat_a2_descr">
+    <text>Zesílení části závěru brání rozptýlení energie, což zlepšuje plošnost střelby.</text>
+</string>
+<string id="st_up_zat_a2_name">
+    <text>Zesílení části závěru s syntetickými vložkami</text>
+</string>
+<string id="st_up_zat_a3_descr">
+    <text>Navzdory názvu se vyměňuje závěr, protože musí vydržet důsledky zlepšené rychlosti palby.</text>
+</string>
+<string id="st_up_zat_a3_name">
+    <text>Rychlé automatické uvolnění</text>
+</string>
+<string id="st_up_zat_b1_descr">
+    <text>Výstup plynu je vybaven blokem, který se pohybuje stejnou rychlostí, přebírající část zpětného rázu.</text>
+</string>
+<string id="st_up_zat_b1_name">
+    <text>Instalace výduchového otvoru s pohyblivým blokem</text>
+</string>
+<string id="st_up_zat_b2_descr">
+    <text>Druhý píst pohybuje vyvažovací hmotou, kompenzující impuls mechanismu závěru.</text>
+</string>
+<string id="st_up_zat_b2_name">
+    <text>Instalace dalšího pístu s plyny</text>
+</string>
+<string id="st_up_zat_b3_descr">
+    <text>Ochranná výstřelková deska zvyšuje spolehlivost a, co je důležitější, zajistí vzduchotěsnost, což zabrání nadměrnému rozptylu energie.</text>
+</string>
+<string id="st_up_zat_b3_name">
+    <text>Ochranná část závěru výstřelky</text>
+</string>
+<string id="st_up_zat_b4_descr">
+    <text>Hlavním účelem natočených drážek na přijímači je snížení tření a zachycení malých částic, což brání znečištění části závěru.</text>
+</string>
+<string id="st_up_zat_b4_name">
+    <text>Přidání podélných drážek</text>
+</string>
+<string id="st_up_zat_b5_descr">
+    <text>Snížení průměru plynové komory prostřednictvím syntetických zesílení výrazně zvýší rychlost střely.</text>
+</string>
+<string id="st_up_zat_b5_name">
+    <text>Směrová energie plynu</text>
+</string>
+<string id="st_up_zat_b6_descr">
+    <text>Při návratu na výchozí pozici přesměrovává závěr proud vzduchu přes hlavňovou komoru, což ji chladí.</text>
+</string>
+
+<string id="st_up_zat_b6_name">
+    <text>Donucené chlazení</text>
+</string>
+<string id="st_up_zat_c1_descr">
+    <text>Závěr zbraně se posunuje podél hlavně, což brání zdvihu části hlavně nahoru.</text>
+</string>
+<string id="st_up_zat_c1_name">
+    <text>Montáž plazícího závěru</text>
+</string>
+<string id="st_up_zat_c2_descr">
+    <text>Instalace plynové pistole zabraňuje vstupu plynů do rámu závěru, což výrazně snižuje zašpinění zbraně.</text>
+</string>
+<string id="st_up_zat_c2_name">
+    <text>Montáž plynové pístole</text>
+</string>
+<string id="st_up_zat_c3_descr">
+    <text>Tento systém shromažďuje část plynů pomocí závěru zbraně, aby zlepšil jeho pohyb.</text>
+</string>
+<string id="st_up_zat_c3_name">
+    <text>Systém sběru plynné energie</text>
+</string>
+<string id="st_up_zat_c4_descr">
+    <text>Výměna automatických dílů je spíše optimalizací než zlepšením plynové pístole. Poskytuje výrazný nárůst rychlosti palby zbraně.</text>
+</string>
+<string id="st_up_zat_c4_name">
+    <text>krátký pohyb plynové pístole</text>
+</string>
+<string id="st_up_zat_c5_descr">
+    <text>Často používaný v moderní výzbroji, systém s válečky snižuje zpětný ráz a zlepšuje střelbu.</text>
+</string>
+<string id="st_up_zat_c5_name">
+    <text>Změna na systém s válečky s polofresem závěrem</text>
+</string>
+<string id="st_up_zath_a1_descr">
+    <text>Při absorbci části tepla snižují tyto komponenty změny teploty zbraně během střelby.</text>
+</string>
+<string id="st_up_zath_a1_name">
+    <text>Komponenty absorbující teplo</text>
+</string>
+<string id="st_up_zath_b1_descr">
+    <text>Délka pohybu plynové pístole mírně zvyšuje délku zbraně, s vážným zlepšením plošnosti střelby.</text>
+</string>
+<string id="st_up_zath_b1_name">
+    <text>Dlouhý pohyb plynové pístole</text>
+</string>
+<string id="st_up_zath_b2_descr">
+    <text>Pohyblivý odpružený mechanismus rovnoměrně rozděluje zpětný ráz po celé zbrani při střelbě, což jej činí méně patrným.</text>
+</string>
+<string id="st_up_zath_b2_name">
+    <text>Instalace speciálního pohyblivého odpruženého mechanismu</text>
+</string>
+<string id="st_up_zath_c1_descr">
+    <text>Symetrické nucené chlazení části hlavně se děje díky činnosti výhozu a brání přehřátí zbraně.</text>
+</string>
+<string id="st_up_zath_c1_name">
+    <text>Systém rovnoměrného nuceného chlazení</text>
+</string>
+<string id="st_up_zatp_a1_descr">
+    <text>Poskytuje zvýšení rychlosti palby bez přetěžování ostatních částí prostřednictvím dodatečného zpětného rázu.</text>
+</string>
+
+	<string id="st_up_zatp_a1_name">
+    <text>Pohyblivá část závěru</text>
+</string>
+<string id="st_up_zatp_b1_descr">
+    <text>Poskytuje zvýšení plošnosti díky zlepšenému přenosu impulsu na střelu.</text>
+</string>
+<string id="st_up_zatp_b1_name">
+    <text>Závěrový systém zavírání hlavně</text>
+</string>
+<string id="st_up_zatp_b2_descr">
+    <text>Sníží zpětný ráz tím, že zpomalí pohyb závěrové části.</text>
+</string>
+<string id="st_up_zatp_b2_name">
+    <text>Systém pomalého zpětného pohybu závěru</text>
+</string>
+<string id="st_up_zatp_b3_descr">
+    <text>Výstřelková deska chrání zbraně před předčasným opotřebením.</text>
+</string>
+<string id="st_up_zatp_b3_name">
+    <text>Chránící výstřelková deska závěru</text>
+</string>
+<string id="st_up_zatp_b4_descr">
+    <text>Zlepšuje plošnost díky zlepšenému přenosu impulsu na střelu.</text>
+</string>
+<string id="st_up_zatp_b4_name">
+    <text>Systém sklonu hlavně zavírání</text>
+</string>
+<string id="st_up_zatp_b5_descr">
+    <text>Těžší a uzavřený závěr brání závěrové části pistole před poruchami.</text>
+</string>
+<string id="st_up_zatp_b5_name">
+    <text>Zesílený a plně uzavřený závěr</text>
+</string>
+<string id="st_up_zatp_b6_descr">
+    <text>Malý tlumič, který přebírá část zpětného rázu.</text>
+</string>
+<string id="st_up_zatp_b6_name">
+    <text>Polymerní tlumič zpětného rázu</text>
+</string>
+<string id="st_up_zatp_b7_descr">
+    <text>Instalace ocelového vložku pomáhá snížit zpětný ráz.</text>
+</string>
+<string id="st_up_zatp_b7_name">
+    <text>Instalace zavíracího vložku s tvarovaným šroubovým žlábkem</text>
+</string>
+<string id="st_up_zatp_b8_descr">
+    <text>Zvýšením pohybu závěru a vhodným zesílením návratového mechanismu můžete zlepšit plošnost.</text>
+</string>
+<string id="st_up_zatp_b8_name">
+    <text>Zvýšený pohyb závěru</text>
+</string>
+<string id="st_up_zatp_c1_descr">
+    <text>Krátký pohyb výrazně zvyšuje rychlost palby zbraně bez ztráty plošnosti.</text>
+</string>
+<string id="st_up_zatp_c1_name">
+    <text>Montáž zařízení pro krátký pohyb závěru</text>
+</string>
+<string id="st_up_zatp_c2_descr">
+    <text>Dlouhý pohyb závěru dává střele větší energii.</text>
+</string>
+<string id="st_up_zatp_c2_name">
+    <text>Montáž zařízení pro dlouhý pohyb hlavně</text>
+</string>
+<string id="st_up_zatp_c3_descr">
+    <text>Výměna automatických dílů je spíše optimalizací než zlepšením plynové pístole. Tím se výrazně zlepšuje rychlost palby zbraně.</text>
+</string>
+<string id="st_up_zatp_c3_name">
+    <text>Montáž zařízení pro využití zpětné energie při krátkém pohybu</text>
+</string>
+<string id="st_up_zatp_c4_descr">
+    <text>Montáž tohoto modulu výrazně zlepšuje seskupení střelby bez ztráty rychlosti střelby.</text>
+</string>
+<string id="st_up_zatp_c4_name">
+    <text>Kombinovaný dvousměrný modul návratového pružení</text>
+</string>
+<string id="st_up_zatp_c5_descr">
+    <text>Zavedení dalších kompenzačních otvorů přináší významné snížení zpětného rázu.</text>
+</string>
+<string id="st_up_zatp_c5_name">
+    <text>Integrovaný kompenzátor zdvižení hlavně</text>
+</string>
+<string id="st_up_zatp_c6_descr">
+    <text>Modernizace automatických dílů pistole vhodná pro automatickou palbu.</text>
+</string>
+<string id="st_up_zatp_c6_name">
+    <text>Režim plně automatické střelby</text>
+</string>
+<string id="st_up_zatp_c7_descr">
+    <text>Zlepšení automatických dílů pistole vhodná pro tříranovou střelbu.</text>
+</string>
+<string id="st_up_zatp_c7_name">
+    <text>Režim střelby tří ran</text>
+</string>
+<string id="st_upgr_cost">
+    <text>Náklady</text>
+</string>
+
+	<string id="st_upgr_disable">
+    <text>Nelze nainstalovat</text>
+</string>
+<string id="st_upgr_installed">
+    <text>Nainstalováno</text>
+</string>
+<string id="st_upgrade_install">
+    <text>Jste si jistý, že chcete nainstalovat:</text>
+</string>
+<string id="st_prop_autolock">
+    <text>Systém automatického zaměřování cíle</text>
+</string>
+<string id="st_prop_autolockscope">
+    <text>Systém automatického zaměřování cíle</text>
+</string>
+<string id="st_prop_scope_5x">
+    <text>x5 optický zaměřovač</text>
+</string>
+<string id="st_prop_scope_6x">
+    <text>x6 optický zaměřovač</text>
+</string>
+<string id="st_prop_scope_12x">
+    <text>x12 optický zaměřovač</text>
+</string>
+<string id="st_prop_scope_15x">
+    <text>x15 optický zaměřovač</text>
+</string>
+<string id="st_prop_scanner">
+    <text>Infrakamerový skener</text>
+</string>
+<string id="st_prop_weightoutfit">
+    <text>Hmotnost balistické vesty</text>
+</string>
+<string id="st_prop_night_vision_2">
+    <text>Noční vidění PN21KL</text>
+</string>
+<string id="st_prop_night_vision_3">
+    <text>Upgrade nočního vidění PN21KL</text>
+</string>
+<string id="st_prop_night_vision_10">
+    <text>Upgrade nočního vidění PN21KL</text>
+</string>
+<string id="st_prop_scope_attach">
+    <text>Montáž pro optický zaměřovač</text>
+</string>
+<string id="st_int_silencer">
+    <text>Integrovaný tlumič hluku</text>
+</string>
+<string id="st_prop_grenade_launcher">
+    <text>Grenádomet pod hlavní</text>
+</string>
+<string id="st_prop_restore_bleeding">
+    <text>Léčení krvácení</text>
+</string>
+<string id="st_prop_restore_health">
+    <text>Obnova zdraví</text>
+</string>
+<string id="st_prop_night_vision">
+    <text>Noční vidění 1PN93-1</text>
+</string>
+<string id="st_prop_scope">
+    <text>Stavitelné mířidlo</text>
+</string>
+<string id="st_prop_contrast">
+    <text>Mířidlo s vysokým kontrastem</text>
+</string>
+<string id="st_prop_sprint">
+    <text>Servomotorické zesilovače</text>
+</string>
+<string id="st_prop_durability">
+    <text>Vytrvalost obleku</text>
+</string>
+<string id="st_prop_not_available">
+    <text>Požadovaný stupeň zbraně:</text>
+</string>
+<string id="st_prop_not_available_no_reason">
+    <text>Upgrade není podporován touto zbraní</text>
+</string>
+<string id="st_gauss_cannot_be_repaired">
+    <text>Není jasné, jak zbraň funguje. Nelze ji opravit bez dalších informací o jejím návrhu.</text>
+</string>
+
+	<string id="st_upgr_cant_do">
+    <text>Technik nemůže provést tuto úpravu</text>
+</string>
+<string id="st_upgr_group">
+    <text>Tato část již byla upravena</text>
+</string>
+<string id="st_upgr_enough_money">
+    <text>Nedostatek peněz</text>
+</string>
+<string id="st_no_buck">
+    <text>Nepoužívá střely</text>
+</string>
+<string id="st_auto_fire">
+    <text>Režim automatické střelby</text>
+</string>
+<string id="st_semi_auto_fire">
+    <text>Režim tříranové střelby</text>
+</string>
+<string id="st_prop_artefact">
+    <text>Počet modulů pro připevnění na zbroj</text>
+</string>
+<string id="st_upgr_vodka">
+    <text>Technik potřebuje vodku</text>
+</string>
+<string id="st_upgr_toolkit_1">
+    <text>Technik potřebuje nástroje pro základní práci</text>
+</string>
+<string id="st_upgr_toolkit_2">
+    <text>Technik potřebuje nástroje pro jemnou práci</text>
+</string>
+<string id="st_upgr_toolkit_3">
+    <text>Technik potřebuje nástroje pro kalibraci</text>
+</string>
+<string id="st_upgr_condlist">
+    <text>Technik potřebuje další nástroje</text>
+</string>
+<string id="st_upgr_parents">
+    <text>Je třeba předchozí úpravy</text>
+</string>
+<string id="st_upgr_rusty_profile">
+    <text>Zbraň je rezavá, mechanické úpravy nejsou možné</text>
+</string>
+<string id="st_upgr_worn_profile">
+    <text>Korozce brání úpravám nad základní úroveň</text>
+</string>
+<string id="st_upgr_standard_profile">
+    <text>Je třeba modernizovaný profil zbraně pro provedení úpravy</text>
+</string>
+<string id="st_upgr_no_reason">
+    <text>Pro tuto položku není možná úprava</text>
+</string>
+<string id="st_up_arm_c9_name">
+    <text>Brnění Armadillo založené na safírových krystalech</text>
+</string>
+<string id="st_up_arm_c5_name">
+    <text>Zpevněná titanová a beryliová matrice</text>
+</string>
+<string id="st_up_arm_c7_name">
+    <text>Extra vrstva z uhlíkových vláken</text>
+</string>
+<string id="st_up_kom_a5_name">
+    <text>Gumová podložka s textilním potahem</text>
+</string>
+<string id="st_up_upgrade_not_available_name">
+    <text>Úprava není k dispozici</text>
+</string>
+<string id="st_up_upgrade_not_available_descr">
+    <text>Tato možnost úpravy není k dispozici pro tuto položku.</text>
+</string>
+
+	
+	
+	<!-- Armour upgrade descriptions  -->	
+<string id="st_up_arm_a1_descr">
+    <text>Zvýšení počtu titanových desek výrazně zvyšuje odolnost brnění.</text>
+</string>
+<string id="st_up_arm_a1_name">
+    <text>Další hliníkové/titanové desky</text>
+</string>
+<string id="st_up_arm_a2_descr">
+    <text>Zpevněné desky, které vydrží déle, ale nejsou odolnější.</text>
+</string>
+<string id="st_up_arm_a2_name">
+    <text>Desky z kevlaru</text>
+</string>
+<string id="st_up_arm_a3_descr">
+    <text>Hliníková a titanová slitina umožňuje snížit váhu titanu pro použití v osobní ochranné výbavě.</text>
+</string>
+<string id="st_up_arm_a3_name">
+    <text>Hliníkové a titanové desky</text>
+</string>
+<string id="st_up_arm_a4_descr">
+    <text>Titan je obvykle příliš těžký na použití v osobní ochranné výbavě, ale někdy je využíván v exoskeletonu.</text>
+</string>
+<string id="st_up_arm_a4_name">
+    <text>Pečlivě zpracované titanové komponenty</text>
+</string>
+<string id="st_up_arm_a5_descr">
+    <text>Nahrazení kovu uhlíkovým vláknem umožňuje snížit váhu brnění bez ztráty spolehlivosti.</text>
+</string>
+<string id="st_up_arm_a5_name">
+    <text>Nahrazení kovových komponent brnění uhlíkovým vláknem</text>
+</string>
+<string id="st_up_arm_a6_descr">
+    <text>Kevlar je jedním z nejběžněji používaných materiálů v osobní ochranné výbavě.</text>
+</string>
+<string id="st_up_arm_a6_name">
+    <text>Desky z kevlaru</text>
+</string>
+<string id="st_up_arm_a7_descr">
+    <text>Polycarbonát je schopen zastavit pistolovou střelu, zatímco zůstává lehký jako plast.</text>
+</string>
+<string id="st_up_arm_a7_name">
+    <text>Polycarbonátové desky</text>
+</string>
+<string id="st_up_arm_a8_descr">
+    <text>Keramické desky nevydrží dlouho, ale jsou spolehlivější než Kevlar díky zlepšené negaci účinku střely.</text>
+</string>
+<string id="st_up_arm_a8_name">
+    <text>Instalace keramických desek</text>
+</string>
+<string id="st_up_arm_a9_descr">
+    <text>Jednoduché ocelové desky vsunuté do pláště.</text>
+</string>
+<string id="st_up_arm_a9_name">
+    <text>Ocelové desky</text>
+</string>
+<string id="st_up_arm_b1_descr">
+    <text>Keramická vnější vrstva může odrazit střely s průrazem pancíře, které dopadnou pod úhlem, a způsobí, že střely s průrazem pancíře, které dopadnou přímo, se rozpadnou na jemný prach.</text>
+</string>
+<string id="st_up_arm_b1_name">
+    <text>Keramická vnější vrstva brnění</text>
+</string>
+<string id="st_up_arm_b2_descr">
+    <text>Dodatečná vnitřní vrstva brnění v případě poškození vnější vrstvy.</text>
+</string>
+<string id="st_up_arm_b2_name">
+    <text>Duplicitní vrstva ochranných desek</text>
+</string>
+<string id="st_up_arm_b3_descr">
+    <text>Brnění s vnitřní vrstvou, která rozprostírá úder na větší plochu.</text>
+</string>
+<string id="st_up_arm_b3_name">
+    <text>Přidání kompenzačního prvku</text>
+</string>
+<string id="st_up_arm_b4_descr">
+    <text>Rám je schopen zastavit pistolovou střelu, pokud je hlavní brnění poškozeno.</text>
+</string>
+<string id="st_up_arm_b4_name">
+    <text>Dodatečný pancířový rám</text>
+</string>
+<string id="st_up_arm_b5_descr">
+    <text>Tyčky brnění jsou vrstveny tenčími deskami, aby se zvýšila odolnost brnění proti opotřebení.</text>
+</string>
+<string id="st_up_arm_b5_name">
+    <text>Segmentovaná ochrana</text>
+</string>
+<string id="st_up_arm_b6_descr">
+    <text>U více desek neznamená lepší ochranu, ale zaručuje lepší odolnost.</text>
+</string>
+<string id="st_up_arm_b6_name">
+    <text>Druhá, záložní vrstva</text>
+</string>
+<string id="st_up_arm_b7_descr">
+    <text>Pohyblivé desky chrání klouby před střelnými zraněními.</text>
+</string>
+<string id="st_up_arm_b7_name">
+    <text>Instalace pohyblivých ochranných desek pro klouby</text>
+</string>
+<string id="st_up_arm_b8_descr">
+    <text>Lehký hliníkový rám pro desky, který nahrazuje ocelový rám.</text>
+</string>
+<string id="st_up_arm_b8_name">
+    <text>Lehčí hliníkový rám</text>
+</string>
+<string id="st_up_arm_b9_descr">
+    <text>Zesílené vložky ke snížení síly úderů střel, které se cítí skrz brnění.</text>
+</string>
+<string id="st_up_arm_b9_name">
+    <text>Zesílení kožených vložek</text>
+</string>
+<string id="st_up_arm_c10_descr">
+    <text>Dodatečná keramická vrstva s křemíkovou amortizací.</text>
+</string>
+<string id="st_up_arm_c10_name">
+    <text>Posílené keramické desky</text>
+</string>
+<string id="st_up_arm_c11_descr">
+    <text>Použití lehčích materiálů pro snížení váhy brnění.</text>
+</string>
+<string id="st_up_arm_c11_name">
+    <text>Instalace lehčích syntetických a plastových komponent</text>
+</string>
+<string id="st_up_arm_c12_descr">
+    <text>Pečlivě zpracované titanové desky jsou pro pěšího vojáka příliš těžké, ale exoskeleton s jeho silnými servomotory dokáže váhu zvládnout.</text>
+</string>
+<string id="st_up_arm_c12_name">
+    <text>Kyrys titanové brnění</text>
+</string>
+<string id="st_up_arm_c13_descr">
+    <text>SBK-RKhZ.m.II - speciální radiologická ochranná bojová kombinéza, druhý typ.</text>
+</string>
+<string id="st_up_arm_c13_name">
+    <text>SBK-RKhZ.m.II vzduchotěsný radiologický ochranný oblek</text>
+</string>
+<string id="st_up_arm_c1_descr">
+    <text>Tato náročná a časově náročná úprava není příliš oblíbená, i když je známo, že zachraňuje životy.</text>
+</string>
+<string id="st_up_arm_c1_name">
+    <text>Všitý košile s kroužky</text>
+</string>
+<string id="st_up_arm_c2_descr">
+    <text>Šupina zahrnuje překrývající se keramické desky, které brání tomu, aby byl nositel zasažen dvakrát na stejném místě.</text>
+</string>
+<string id="st_up_arm_c2_name">
+    <text>Odkláněcí keramická šupina</text>
+</string>
+<string id="st_up_arm_c3_descr">
+    <text>Jednou ošetřený Sovereignem se overal stává téměř nezranitelným vůči mechanickému poškození a rozdělení tkaniny.</text>
+</string>
+<string id="st_up_arm_c3_name">
+    <text>Ošetření prostředkem Sovereign</text>
+</string>
+<string id="st_up_arm_c4_descr">
+    <text>Keramika výrazně zmírňuje úder střely tím, že ji odklání na fragmenty, které se odlamují.</text>
+</string>
+
+	<string id="st_up_arm_c4_name">
+    <text>Nanášení keramické vrstvy na desky</text>
+</string>
+<string id="st_up_arm_c5_descr">
+    <text>Posílená matrice, která používá berylium místo hliníku, je jedním z nejspolehlivějších způsobů ochrany pěších vojáků.</text>
+</string>
+<string id="st_up_arm_c6_descr">
+    <text>Keramika výrazně zmírňuje úder střely tím, že ji odklání na fragmenty, které se odlamují.</text>
+</string>
+<string id="st_up_arm_c6_name">
+    <text>Keramická vrstva na deskách</text>
+</string>
+<string id="st_up_arm_c7_descr">
+    <text>Uhlíkové vlákno je jedním z nejodolnějších a odolných materiálů a je dokonce používáno v leteckém stavitelství.</text>
+</string>
+<string id="st_up_arm_c8_descr">
+    <text>Kombinovaný vrstvený polymerový a keramický povlak.</text>
+</string>
+<string id="st_up_arm_c8_name">
+    <text>Obrazový kombinovaný plátový povlak</text>
+</string>
+<string id="st_up_arm_c9_descr">
+    <text>Domácí technologie a jeden z nejnovějších vývojů v oblasti osobní ochrany - pěstování umělých safírů.</text>
+</string>
+
+<string id="st_up_exo_a1_descr">
+    <text>Další pohybové zařízení umožňují zvýšit maximální nesené zatížení.</text>
+</string>
+<string id="st_up_exo_a1_name">
+    <text>Další servomotory</text>
+</string>
+<string id="st_up_exo_b1_descr">
+    <text>Vývoj techniků Svobody, kteří jako první nahradili kov uhlíkovým vláknem s ohledem na obrovskou hmotnost exoskeletonů.</text>
+</string>
+<string id="st_up_exo_b1_name">
+    <text>Nahrazení kovových komponent uhlíkovým vláknem</text>
+</string>
+<string id="st_up_exo_b2_descr">
+    <text>Pancéřování chrání klíčové části exoskeletonu před poškozením přesnou palbou.</text>
+</string>
+<string id="st_up_exo_b2_name">
+    <text>Pancéřování pohonných zařízení</text>
+</string>
+<string id="st_up_exo_c1_descr">
+    <text>Systém snadného pohybu používá zpevněné pružiny a klouby, které umožňují nositeli využívat váhu exoskeletonu k usnadnění motorických funkcí.</text>
+</string>
+<string id="st_up_exo_c1_name">
+    <text>Systém snadného pohybu Shagohod</text>
+</string>
+<string id="st_up_exo_c2_descr">
+    <text>Instalace hydraulických posilovačů je úprava, která odděluje exoskeletony třetí generace od čtvrté generace. Umožňuje sprintování v exoskeletonu.</text>
+</string>
+<string id="st_up_exo_c2_name">
+    <text>Přidání hydraulických posilovačů do pohonných zařízení</text>
+</string>
+
+	<string id="st_up_kom_a1_descr">
+    <text>Tkaninová vložka zabrání poškození měkkých tkání v případě nárazu na desku.</text>
+</string>
+<string id="st_up_kom_a1_name">
+    <text>Amortizační vrstva z tkaniny</text>
+</string>
+<string id="st_up_kom_a2_descr">
+    <text>Silikonové tlumiče jsou účinnější než jejich gumové protějšky a absorbuje náraz s menším poškozením nositele.</text>
+</string>
+<string id="st_up_kom_a2_name">
+    <text>Amortizační silikonové tlumiče</text>
+</string>
+<string id="st_up_kom_a3_descr">
+    <text>Tkanina, klipy a tlumiče jsou nahrazeny lehčími syntetickými materiály pro snížení hmotnosti brnění.</text>
+</string>
+<string id="st_up_kom_a3_name">
+    <text>Lehčí syntetické a polymerní materiály</text>
+</string>
+<string id="st_up_kom_a4_descr">
+    <text>Gumová vrstva brání poškození měkkých tkání v případě nárazu na desku.</text>
+</string>
+<string id="st_up_kom_a4_name">
+    <text>Gumová amortizační vrstva</text>
+</string>
+<string id="st_up_kom_a5_descr">
+    <text>Tato podložka pomůže, pokud je hlavní tkanina roztržena.</text>
+</string>
+<string id="st_up_kom_a6_descr">
+    <text>Vícevrstvý vložka z polykarbonátu, silikonu a uhlíkového vlákna v případě průniku hlavního brnění.</text>
+</string>
+<string id="st_up_kom_a6_name">
+    <text>Protipožární polymerní vložky</text>
+</string>
+<string id="st_up_kom_a7_descr">
+    <text>Nepropustný Expanse oblek Svobody používaný k nalezení artefaktů v anomálních oblastech.</text>
+</string>
+<string id="st_up_kom_a7_name">
+    <text>Expanse oblek pro ochranu před anomáliemi</text>
+</string>
+<string id="st_up_kom_a8_descr">
+    <text>Nepropustná vrstva syntetických materiálů v případě poškození vnější vrstvy.</text>
+</string>
+<string id="st_up_kom_a8_name">
+    <text>Syntetická vrstva</text>
+</string>
+<string id="st_up_kom_b10_descr">
+    <text>Několik ergonomických úprav, které využívají gumovou konstrukci, umožňují zachování mobility i při nošení objemného brnění.</text>
+</string>
+<string id="st_up_kom_b10_name">
+    <text>Gumový pohyblivý oblek</text>
+</string>
+<string id="st_up_kom_b11_descr">
+    <text>Constantan je schopen izolovat proti elektricitě a má velmi vysoký bod tání.</text>
+</string>
+<string id="st_up_kom_b11_name">
+    <text>Constantanové tepelně izolační vložky</text>
+</string>
+<string id="st_up_kom_b12_descr">
+    <text>Olovo je spolehlivou ochranou proti záření, protože absorbuje všechny tři jeho typy.</text>
+</string>
+<string id="st_up_kom_b12_name">
+    <text>Přidání olova do obleku</text>
+</string>
+<string id="st_up_kom_b1_descr">
+    <text>Základní ochrana před deštěm a žíravými látkami přicházejícími do styku s kůží</text>
+</string>
+<string id="st_up_kom_b1_name">
+    <text>Plátno oblek</text>
+</string>
+<string id="st_up_kom_b2_descr">
+    <text>Tkanina ošetřená hořlavým prostředkem je oblíbená mezi stopaři, kteří hledají artefakty ohně.</text>
+</string>
+<string id="st_up_kom_b2_name">
+    <text>Tkanina ošetřená hořlavým prostředkem</text>
+</string>
+<string id="st_up_kom_b3_descr">
+    <text>Hořčíkové vložky chrání nositele před tepelnými nebezpečími.</text>
+</string>
+<string id="st_up_kom_b3_name">
+    <text>Vložky z hořčíkového plechu</text>
+</string>
+<string id="st_up_kom_b4_descr">
+    <text>I jednoduchá plastová vnitřní vrstva může chránit nositele před chemickým a elektrickým nebezpečím.</text>
+</string>
+<string id="st_up_kom_b4_name">
+    <text>Vnější plastová vrstva s uzávěrem</text>
+</string>
+<string id="st_up_kom_b5_descr">
+    <text>Tkanina, klipy a tlumiče jsou nahrazeny lehčími syntetickými materiály pro snížení hmotnosti brnění.</text>
+</string>
+<string id="st_up_kom_b5_name">
+    <text>Nahrazení tkaniny syntetickými materiály</text>
+</string>
+<string id="st_up_kom_b6_descr">
+    <text>Plexisklo absorbuje dva typy záření a je mnohem lehčí než olovo.</text>
+</string>
+<string id="st_up_kom_b6_name">
+    <text>Plexisklová vnitřní vrstva pro ochranu před zářením</text>
+</string>
+<string id="st_up_kom_b7_descr">
+    <text>Spolehlivá ochrana před chemickým a elektrickým nebezpečím.</text>
+</string>
+<string id="st_up_kom_b7_name">
+    <text>Elastická nepropustná plastová vnitřní vrstva</text>
+</string>
+<string id="st_up_kom_b8_descr">
+    <text>Tenoučká vrstva constantanu je schopna izolovat proti elektricitě.</text>
+</string>
+<string id="st_up_kom_b8_name">
+    <text>Constantanová vnitřní vrstva pro izolaci</text>
+</string>
+
+	<string id="st_up_kom_b9_descr">
+	<text>Skelná vlákna se používají v kombinézách, které nosí týmy reagující na přírodní katastrofy.</text>
+</string>
+<string id="st_up_kom_b9_name">
+	<text>Termální ochrana ze skelných vláken</text>
+</string>
+<string id="st_up_kom_c1_descr">
+	<text>Impregnovaná látka by měla zabránit otravě chemikáliemi.</text>
+</string>
+<string id="st_up_kom_c1_name">
+	<text>Impregnovaná látka kombinézy</text>
+</string>
+<string id="st_up_kom_c2_descr">
+	<text>Guma je základním způsobem ochrany před krátkodobým ozářením.</text>
+</string>
+<string id="st_up_kom_c2_name">
+	<text>Gumová látka kombinézy</text>
+</string>
+<string id="st_up_kom_c3_descr">
+	<text>Používá se v oblecích stalkerů ke zvýšení odolnosti.</text>
+</string>
+<string id="st_up_kom_c3_name">
+	<text>Rám s vysokou odolností a ochranou kombinézy</text>
+</string>
+<string id="st_up_kom_c4_descr">
+	<text>Nikl je dostatečně odolný proti ohni a používá se pro vkládání do tělesného pancíře.</text>
+</string>
+<string id="st_up_kom_c4_name">
+	<text>Ohnivzdorná kombinéza s niklovými vklady</text>
+</string>
+<string id="st_up_kom_c5_descr">
+	<text>Tato slitina niklu a hořčíku se používá v pancířích k prevenci elektrických šoků.</text>
+</string>
+<string id="st_up_kom_c5_name">
+	<text>Izolační kombinéza s manganinovými vklady</text>
+</string>
+<string id="st_up_kom_c6_descr">
+	<text>Vzduchotěsná kombinéza s antikorozní vrstvou a pancířem z Kevlaru.</text>
+</string>
+<string id="st_up_kom_c6_name">
+	<text>Integrovaná pancéřovaná kombinéza Druhá kůže</text>
+</string>
+<string id="st_up_kom_c7_descr">
+	<text>Kombinéza vyrobená z nových nespecifikovaných polymerů, které byly dříve použity výzkumným ústavem v Kyjevě při vývoji kombinézy Ekolog s dutinami vyplněnými bizmutem.</text>
+</string>
+<string id="st_up_kom_c7_name">
+	<text>Ekologická polymerová kombinéza s bizmutovými vklady</text>
+</string>
+<string id="st_up_kom_c8_descr">
+	<text>Olověná síť vytváří neprostupnou radiaci a chemickou ochranu bez obětování pohyblivosti.</text>
+</string>
+<string id="st_up_kom_c8_name">
+	<text>Kombinéza z plexiskla s flexibilní olověnou sítí Život zachránce</text>
+</string>
+<string id="st_up_kom_c9_descr">
+	<text>Domácí vývoj, který se objevil po havárii v Černobylu. Používá se v exoskeletech k prevenci elektronických poruch.</text>
+</string>
+<string id="st_up_kom_c9_name">
+	<text>Kombinéza Evakuátor s olověnými vklady</text>
+</string>
+
+<string id="st_up_res_a1_name">
+	<text>Aktivní filtry</text>
+</string>
+<string id="st_up_res_a1_descr">
+	<text>Aktivní filtry odolají i korozivním chemikáliím.</text>
+</string>
+<string id="st_up_res_a2_descr">
+	<text>Bylo prokázáno, že uzavřený pás poskytuje částečnou ochranu před přímými psy-emisemi.</text>
+</string>
+<string id="st_up_res_a2_name">
+	<text>Psy-ochranný pás vyrobený z párových ocelových mřížek</text>
+</string>
+<string id="st_up_res_a3_descr">
+	<text>Maska používaná v znečištěném vzduchu nebo v kritických podmínkách teploty vzduchu, které jsou příliš nízké nebo příliš vysoké k dýchání.</text>
+</string>
+<string id="st_up_res_b1_descr">
+	<text>Nanesení ochranného nátěru.</text>
+</string>
+<string id="st_up_res_b1_name">
+	<text>Nanesení ochranného nátěru</text>
+</string>
+<string id="st_up_res_b2_descr">
+	<text>Filtr s posíleným protikorozním povlakem a dodatečnou vrstvou pro odstranění jedů.</text>
+</string>
+<string id="st_up_res_b2_name">
+	<text>Filtr pro práci v znečištěných oblastech</text>
+</string>
+<string id="st_up_res_b3_descr">
+	<text>Plexisklová maska může poskytovat částečnou ochranu před radiací.</text>
+</string>
+<string id="st_up_res_b3_name">
+	<text>Plexisklový povlak</text>
+</string>
+
+	<string id="st_up_res_b4_descr">
+	<text>Plexisklová maska může poskytovat částečnou ochranu před radiací.</text>
+</string>
+<string id="st_up_res_b4_name">
+	<text>Plexisklová dýchací maska</text>
+</string>
+<string id="st_up_res_b5_descr">
+	<text>Respirátor pro úplné blokování jedů.</text>
+</string>
+<string id="st_up_res_b5_name">
+	<text>Impregnovaná dýchací maska</text>
+</string>
+<string id="st_up_res_c1_descr">
+	<text>Tato matrice z berylia a hliníku poskytuje vynikající ochranu bez významného zvýšení hmotnosti přilby.</text>
+</string>
+<string id="st_up_res_c1_name">
+	<text>Berylové a hliníkové desky</text>
+</string>
+<string id="st_up_res_c2_descr">
+	<text>Matrice z berylia a titánu zajišťuje efektivnější ochranu bez významného zvýšení hmotnosti.</text>
+</string>
+<string id="st_up_res_c2_name">
+	<text>Berylové a titanové desky</text>
+</string>
+<string id="st_up_res_c3_descr">
+	<text>Vylepšené filtry udržují stejnou úroveň dodávky kyslíku bez ohledu na to, jak je oblast znečištěná.</text>
+</string>
+<string id="st_up_res_c3_name">
+	<text>Instalace vylepšených filtrů pro vědeckou práci</text>
+</string>
+<string id="st_up_res_c4_descr">
+	<text>Hi-tech psy-ochrana, kterou prý vynalezl vědec jménem Sakharov.</text>
+</string>
+<string id="st_up_res_c4_name">
+	<text>Instalace pásku Psy-Dome</text>
+</string>
+<string id="st_up_res_c5_descr">
+	<text>Ochranný slitinový rám pro prevenci tepelného a elektrického poškození.</text>
+</string>
+<string id="st_up_res_c5_name">
+	<text>Thunderbird konstantanový obličejový pancíř</text>
+</string>
+<string id="st_up_res_c6_descr">
+	<text>Další pancíř k zvýšení odolnosti přilby.</text>
+</string>
+<string id="st_up_res_c6_name">
+	<text>Zesílený pancíř těla přilby</text>
+</string>
+<string id="st_up_res_c7_descr">
+	<text>Filtr s dodatečným čistícím nátěrem a systémem pro odstranění jedů.</text>
+</string>
+<string id="st_up_res_c7_name">
+	<text>Zesílený respirátor pro extrémní podmínky</text>
+</string>
+
+<string id="st_up_resp_a1_descr">
+	<text>Standardní ruské vojenské noční vidění 1PN93-1. Tato upravená verze může být připevněna na bojovou přilbu. Nabízí zvýšení obrazu generace 2+, což je zvláště užitečné pro operace v noci nebo za nízkého osvětlení. Po odstranění bateriového oddělení a nahrazení UPD vstupem byla celková hmotnost snížena na snesitelných ~1,5 kg. Kromě toho se zakoupí a doručí jako kompletní sada, která obsahuje také montážní rozhraní, umožňující instalaci lepších zařízení v budoucnu. Rychle vyčerpává UPD.\n \n%c[d_cyan] • %c[default] vysoká spotřeba UPD</text>
+</string>
+<string id="st_up_resp_a1_name">
+	<text>Noční vidění 1PN93-1</text>
+</string>
+<string id="st_up_resp_a2_descr">
+	<text>Systém pro přechod na uzavřený cyklus dýchání v případě kritického znečištění vzduchu radioaktivními nebo chemickými částicemi.</text>
+</string>
+<string id="st_up_resp_a2_name">
+	<text>Prevence radioaktivního a chemického ohrožení</text>
+</string>
+<string id="st_up_resp_a3_name">
+	<text>Maska pro čištění páry a dýchání</text>
+</string>
+<string id="st_up_resp_b1_descr">
+	<text>Moderní noční vidění PN21KL generace IIT vyrobené Novosibirskou nástrojárnou. Připevněné na hlavu výrazně zlepšuje vidění za nízkého osvětlení. Obsahuje pokročilý software pro zpracování obrazu, který zobrazuje obrazy ve stupních šedi. Vyžaduje instalaci základního montážního rámu. S hmotností kolem 270 gramů je výrazně lehčí než jiné přilby. Lze ji vylepšit lepšími čočkami a sofistikovanějším softwarem pro zpracování obrazu pomocí upgradového kitu.\n \n%c[d_cyan] • %c[default] vysoká spotřeba UPD</text>
+</string>
+<string id="st_up_resp_b1_name">
+	<text>Noční vidění PN21KL</text>
+</string>
+<string id="st_up_resp_b2_descr">
+	<text>Tepelná viseř umožňuje nositeli detekovat a identifikovat odpovídající zdroje tepla.</text>
+</string>
+<string id="st_up_resp_b2_name">
+	<text>Systém automatického zaměřování cíle</text>
+</string>
+<string id="st_up_resp_b3_descr">
+	<text>Vědecké zařízení pracující na základě vln vyvinuté pro práci v anomálních oblastech s psy-emisemi.</text>
+</string>
+<string id="st_up_resp_b3_name">
+	<text>Psy-stimulátor Oracle</text>
+</string>
+<string id="st_up_resp_c1_descr">
+	<text>Aktualizace čoček a softwaru pro zpracování obrazu odstraní videorozházení a zlepší schopnosti zesilování obrazu jednotky PN21K, čímž se stane plnohodnotným nočním viděním generace 3+. Neovlivňuje hmotnost přilby ani rychlost vyčerpání UPD.</text>
+</string>
+
+	<string id="st_up_resp_c1_name">
+	<text>Vylepšené čočky a aktualizace softwaru pro noční vidění PN21K</text>
+</string>
+<string id="st_up_resp_c2_descr">
+	<text>Ionizované částice vzduchu se pohybují mezi elektrodami systému v opačném směru než elektrony s použitím elektřiny, vytvářejíce iontový vítr.</text>
+</string>
+<string id="st_up_resp_c2_name">
+	<text>Chlazení systému Ion Wind</text>
+</string>
+<string id="st_up_resp_c3_descr">
+	<text>Infrakamera umožňuje detekci blízkých lidí.</text>
+</string>
+<string id="st_up_resp_c3_name">
+	<text>Infrakamera</text>
+</string>
+<string id="st_up_resp_c4_descr">
+	<text>SPB - VPZ.m.IV Psychologický systém pro ochranu před psy vlnami, verze čtyři.</text>
+</string>
+<string id="st_up_resp_c4_name">
+	<text>Bojový systém SPB - VPZ.m.IV</text>
+</string>
+
+<string id="st_up_tch_a1_descr">
+	<text>Generace A injektor, vyvinutý jedním z kyjevských výzkumných ústavů, pravidelně vpichuje do krevního oběhu malé dávky adrenalinu, což může být nebezpečné, ale také vám může zachránit život v případě nouze.</text>
+</string>
+<string id="st_up_tch_a1_name">
+	<text>Injektor Fury adrenalinu</text>
+</string>
+<string id="st_up_tch_a2_descr">
+	<text>Systém pro odstranění kondenzátu s jedovatými látkami z čistícího filtru.</text>
+</string>
+<string id="st_up_tch_a2_name">
+	<text>Systém pro odstranění jedovatých látek</text>
+</string>
+<string id="st_up_tch_a3_descr">
+	<text>Vývoj Klidné oblohy, tento malý vlnový vysílač je umístěn na zádech a účinně zvyšuje rychlost srážení krve, když je nošen neustále.</text>
+</string>
+<string id="st_up_tch_a3_name">
+	<text>Ray hemostimulátor</text>
+</string>
+<string id="st_up_tch_a4_descr">
+	<text>Systém dodávající elektřinu na vnější stranu obleku, odpuzující radioaktivní a chemické částice.</text>
+</string>
+<string id="st_up_tch_a4_name">
+	<text>Vestavěný systém odpudivý proti prachu</text>
+</string>
+<string id="st_up_tch_b1_descr">
+	<text>Generace B injektor, který pravidelně do krevního oběhu vkládá koagulační látku, když krevní tlak dramaticky klesne.</text>
+</string>
+<string id="st_up_tch_b1_name">
+	<text>Injektor hemoglobinu Hydry</text>
+</string>
+<string id="st_up_tch_b2_descr">
+	<text>Tím, že udržuje optimální tělesnou teplotu, tento systém brání vyčerpání.</text>
+</string>
+<string id="st_up_tch_b2_name">
+	<text>Instalace systému termoregulace</text>
+</string>
+<string id="st_up_tch_b3_descr">
+	<text>Tento vlnový vysílač je umístěn na hrudi a výrazně zvyšuje rychlost hojení ran, sílu imunitního systému a práh bolesti nositele, když je používán neustále.</text>
+</string>
+<string id="st_up_tch_b3_name">
+	<text>Biostimulátor Sun</text>
+</string>
+<string id="st_up_tch_b4_descr">
+	<text>Vědecké zařízení pracující na základě vln vyvinuté pro práci v anomálních oblastech s psy-emisemi.</text>
+</string>
+<string id="st_up_tch_b4_name">
+	<text>Psy-stimulátor Oracle</text>
+</string>
+<string id="st_up_tch_c1_descr">
+	<text>Generace C injektor, který do krevního oběhu vkládá směs bojovníků pochybného obsahu, zlepšuje regeneraci tkání a odstraňuje bolest.</text>
+</string>
+<string id="st_up_tch_c1_name">
+	<text>Systém obnovy Phoenix</text>
+</string>
+<string id="st_up_tch_c2_descr">
+	<text>Integrovaný systém, který monitoruje zdraví nositele a dodává vitamíny, adrenalin nebo anabolické látky podle potřeby.</text>
+</string>
+<string id="st_up_tch_c2_name">
+	<text>Instalace systému životní podpory</text>
+</string>
+<string id="st_up_tch_c3_descr">
+	<text>Tento vlnový vysílač je umístěn na krku a ačkoli jeho mechanismus a způsob fungování nejsou zcela jasné, má silný uklidňující účinek.</text>
+</string>
+<string id="st_up_tch_c3_name">
+	<text>Neurostimulátor Reflexe</text>
+</string>
+
+	
+	<string id="st_up_uti_a1_descr">
+	<text>Dodatečná pohybová zařízení umožňují zvýšit maximální nesené zatížení.</text>
+</string>
+<string id="st_up_uti_a1_name">
+	<text>Dodatečné servomotory</text>
+</string>
+<string id="st_up_uti_a2_descr">
+	<text>Systém dodává látky proti tetanu, protizánětlivé látky a streptocid.</text>
+</string>
+<string id="st_up_uti_a2_name">
+	<text>Vestavěný systém polního lékaře</text>
+</string>
+<string id="st_up_uti_a3_descr">
+	<text>Ventilační systém obleku s prevenceovým filtrem pro práci v kontaminovaných oblastech.</text>
+</string>
+<string id="st_up_uti_a3_name">
+	<text>Vnitřní systém termoregulace</text>
+</string>
+<string id="st_up_uti_a4_descr">
+	<text>Ergonomické zlepšení: speciální držáky připevněné k obleku umožňují, aby nesená váha působila lehčí.</text>
+</string>
+<string id="st_up_uti_a4_name">
+	<text>Vest pro rozložení váhy</text>
+</string>
+<string id="st_up_uti_a5_descr">
+	<text>Kyslíková nádrž je vyžadována v oblastech s vzduchem kontaminovaným chemikáliemi nebo radioaktivními částicemi.</text>
+</string>
+<string id="st_up_uti_a5_name">
+	<text>Instalace kyslíkové nádrže</text>
+</string>
+<string id="st_up_uti_b1_descr">
+	<text>Instalace modulu pro dodatečné pancéřování.</text>
+</string>
+<string id="st_up_uti_b1_name">
+	<text>Modul pro dodatečné pancéřování</text>
+</string>
+<string id="st_up_uti_b2_descr">
+	<text>Systém držáků umožňuje rovnoměrně rozložit váhu po celém těle.</text>
+</string>
+<string id="st_up_uti_b2_name">
+	<text>Systém držáků pro rozložení váhy</text>
+</string>
+<string id="st_up_uti_b3_descr">
+	<text>Rámový systém na zádech uvolňuje koncentrovanou váhu neseného břemene tím, že ji rozloží po celém těle, což zvyšuje maximální zatížení.</text>
+</string>
+<string id="st_up_uti_b3_name">
+	<text>Rámový systém pro rozložení váhy</text>
+</string>
+<string id="st_up_uti_b4_descr">
+	<text>Systém pro dodávání antiseptických, protitetanových a stimulačních látek. Domácí výroba, ale zdá se, že tělu neškodí.</text>
+</string>
+<string id="st_up_uti_b4_name">
+	<text>Vestavěný systém péče</text>
+</string>
+<string id="st_up_uti_b5_descr">
+	<text>Tento systém nabíjí speciální mřížku identickým nábojem jako anomálie, aby snížil hrozbu.</text>
+</string>
+<string id="st_up_uti_b5_name">
+	<text>Systém elektrostatického protiopatření Stingray</text>
+</string>
+<string id="st_up_uti_b6_descr">
+	<text>Impregnovaná vnitřní vrstva by měla zabránit otravě chemikáliemi.</text>
+</string>
+<string id="st_up_uti_b6_name">
+	<text>Impregnovaná vnitřní vrstva pro chemickou ochranu</text>
+</string>
+<string id="st_up_uti_b7_descr">
+	<text>Experimentální model systému pro maratonský běh, který se mimo Zónu nepoužívá kvůli své vysoké ceně a pochybnému využití.</text>
+</string>
+
+	<string id="st_up_uti_b7_name">
+	<text>Vestavěný systém pro atlety</text>
+</string>
+<string id="st_up_uti_b8_descr">
+	<text>Tento systém společně s kondenzátem odstraňuje jedovaté látky z dutin respirátoru.</text>
+</string>
+<string id="st_up_uti_b8_name">
+	<text>Systém odstraňování jedů antidot</text>
+</string>
+<string id="st_up_uti_c1_descr">
+	<text>Instalace modulu pro dodatečné pancéřování.</text>
+</string>
+<string id="st_up_uti_c1_name">
+	<text>Dodatečný modul pro pancéřování s dvěma oddíly</text>
+</string>
+<string id="st_up_uti_c2_descr">
+	<text>Bojový podpůrný systém vestavený do celého obleku. Používá se zřídka, především jednotkami Spetsnaz. Je dodáván s vestavěnými systémy adrenalinu a srážení krve.</text>
+</string>
+<string id="st_up_uti_c2_name">
+	<text>Bojový podpůrný systém Varyag</text>
+</string>
+<string id="st_up_uti_c3_descr">
+	<text>Při návrhu tohoto prototypu bojového podpůrného systému se designéři rozhodli vyhnout se škodlivým injekcím adrenalinu a namísto toho do systému srážení krve zařadili hojivé látky.</text>
+</string>
+<string id="st_up_uti_c3_name">
+	<text>Bojový podpůrný systém Skif</text>
+</string>
+
+	
+
+
+	
+<!-- Binoculars -->
+
+	<string id="st_prop_binoc_zoom">
+    <text>Zvětšení</text>
+</string>
+<string id="st_prop_binoc_nightvision">
+    <text>Noční vidění</text>
+</string>
+<string id="st_prop_binoc_autolock">
+    <text>Detekce</text>
+</string>
+
+	<string id="st_prop_binoc_nightvision_1">
+    <text>Vysoký kontrast</text>
+</string>
+<string id="st_prop_binoc_nightvision_2">
+    <text>Noční vidění Tier 1</text>
+</string>
+<string id="st_prop_binoc_nightvision_3">
+    <text>Noční vidění Tier 2</text>
+</string>
+
+<string id="st_up_binoc_a1_name">
+    <text>Objektiv (zvětšení x10)</text>
+</string>
+<string id="st_up_binoc_a1_descr">
+    <text>Instalace nového sady čoček pro větší vzdálenosti, která nabízí zvětšení x10.</text>
+</string>
+<string id="st_up_binoc_a2_name">
+    <text>Objektiv (zvětšení x15)</text>
+</string>
+<string id="st_up_binoc_a2_descr">
+    <text>Instalace nového sady čoček pro větší vzdálenosti, která nabízí zvětšení x15.</text>
+</string>
+<string id="st_up_binoc_a3_name">
+    <text>Vysokokvalitní objektiv (zvětšení x20)</text>
+</string>
+<string id="st_up_binoc_a3_descr">
+    <text>Instalace nového sady čoček pro velké vzdálenosti, která nabízí zvětšení x20.</text>
+</string>
+<string id="st_up_binoc_b1_name">
+    <text>Zlepšení kontrastu zraku</text>
+</string>
+<string id="st_up_binoc_b1_descr">
+    <text>Instalace ED skla, které nahrazuje obyčejnou čočku a minimalizuje účinky chromatické aberace a sekundárního spektra, což vede k lepší vizuální kvalitě.</text>
+</string>
+<string id="st_up_binoc_b2_name">
+    <text>Noční vidění první generace</text>
+</string>
+<string id="st_up_binoc_b2_descr">
+    <text>Instalace technologie nočního vidění pro slabé světelné podmínky, která využívá spektrální a intenzitní techniky vhodné pro noční použití k detekci záření, které je pro lidského pozorovatele neviditelné.</text>
+</string>
+<string id="st_up_binoc_b3_name">
+    <text>Noční vidění druhé generace</text>
+</string>
+<string id="st_up_binoc_b3_descr">
+    <text>Upravená technologie nočního vidění, která zahrnuje lepší světelný zisk systému, rozlišení systému a fotosenzitivitu, což zvyšuje vizuální kvalitu.</text>
+</string>
+<string id="st_up_binoc_c1_name">
+    <text>Styl pouzdra</text>
+</string>
+<string id="st_up_binoc_c1_descr">
+    <text>Výměny stylu pouzdra s cílem snížit celkovou váhu implementací otevřeného mostu a šasi z hliníkové slitiny.</text>
+</string>
+<string id="st_up_binoc_d1_name">
+    <text>Detekce cílů</text>
+</string>
+<string id="st_up_binoc_d1_descr">
+    <text>Výměny stylu pouzdra s cílem snížit celkovou váhu implementací otevřeného mostu a šasi z hliníkové slitiny.</text>
+</string>
+
+	
+<!-- Dynamo -->
+	<string id="st_up_opt_dynamo_hand1_descr">
+    <text>Výměna redukčního převodu za nylon snižuje tření, což mírně zvyšuje spolehlivost a životnost mechanismu.</text>
+</string>
+<string id="st_up_opt_dynamo_hand1_name">
+    <text>Blokovací převod</text>
+</string>
+<string id="st_up_opt_dynamo_hand2_descr">
+    <text>Výměna ocelových částí rámu generátoru za duralumin výrazně snižuje váhu.</text>
+</string>
+<string id="st_up_opt_dynamo_hand2_name">
+    <text>Rám z duraluminu</text>
+</string>
+<string id="st_up_opt_dynamo_hand3_descr">
+    <text>Dodatečné nikodimovické magnety na rotoru motoru zvyšují účinnost generátoru.</text>
+</string>
+
+</string_table>

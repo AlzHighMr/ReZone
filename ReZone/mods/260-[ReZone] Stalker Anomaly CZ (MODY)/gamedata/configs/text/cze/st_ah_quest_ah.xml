@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+    <string id="ah_ecolog">
+<text>Průzkumníci</text>
+    </string>
+
+    <string id="Quest1_desc">
+        <text>Popis questu</text>
+    </string>
+    <string id="Quest1_title">
+        <text>Název prvního ukolu</text>
+    </string>
+    
+<string id="ah_redirect_to_kovalev_quest_title">
+    <text>Průzkumníci: Najdi profesora Kovalěva ve Velkých bažinách</text>
+</string>
+<string id="ah_redirect_to_kovalev_quest_desc">
+    <text>Dostal jsem informaci, že profesor Kovalev ve Velkých bažinách potřebuje pomoc při svém výzkumu. Mám ho hledat ve Starém kostele na jihu bažin.</text>
+</string>
+
+<string id="ah_redirect_to_markov_quest_title">
+    <text>Průzkumníci: Najdi profesora Markova v Yantaru</text>
+</string>
+<string id="ah_redirect_to_markov_quest_desc">
+    <text>Dále bych měl najít profesora Markova. Měl by být někde poblíž bunkru vědců v Janově.</text>
+</string>
+
+<string id="ah_redirect_to_pirogov_quest_title">
+    <text>Výzkumníci: Najdi doktora Pirogova</text>
+</string>
+<string id="ah_redirect_to_pirogov_quest_desc">
+    <text>Doktor Pirogov byl pověřen vyšetřováním Temného údolí. Měl bych zjistit, zda je stále naživu.</text>
+</string>
+
+<string id="ah_redirect_to_chernov_quest_title">
+    <text>Výzkumníci: Najdi profesora Černova</text>
+</string>
+<string id="ah_redirect_to_chernov_quest_desc">
+    <text>Ted musím najít staršího profesora Černova, který byl naposledy viděn v opuštěné chatrči na severu armádních skladů.</text>
+</string>
+
+<string id="ah_redirect_to_juk_quest_title">
+    <text>Průzkumníci: Najdi profesora Žuka</text>
+</string>
+<string id="ah_redirect_to_juk_quest_desc">
+    <text>Pro další práci bych si měl promluvit s profesorem Žukem. Najdu ho někde poblíž janovského nádraží v Jupiteru.</text>
+</string>
+
+<string id="ah_redirect_to_vorobushkin_quest_title">
+    <text>Průzkumníci: Najdi profesora Vorobuškina</text>
+</string>
+<string id="ah_redirect_to_vorobushkin_quest_desc">
+    <text>Profesor Vorobuškin je umístěn na stanici Strážců. Musím ho najít, abych mohl pokračovat v pomoci výzkumnému týmu.</text>
+</string>
+
+<string id="ah_redirect_to_skabinsky_quest_title">
+    <text>Výzkumníci: Najdi profesora Skabinského</text>
+</string>
+<string id="ah_redirect_to_skabinsky_quest_desc">
+    <text>Profesor Vorobuškin mi řekl, že vedoucí operace, profesor Skabinský, už postoupil dál a v současné době se nachází někde v severní části CNPP. Nevím, jak se mu tam podařilo dostat, ale musím ho rychle najít.</text>
+</string>
+
+<string id="ah_fail_skabinsky_quest_title">
+    <text>Výzkumníci: Najdi profesora Skabinského.</text>
+</string>
+<string id="ah_fail_skabinsky_quest_desc">
+    <text>Výpočty profesora Vorobuškina jsou stále plné děr, i když se zdá, že ukazují na anomálii Popel. Musím najít profesora Skabinského, který už šel napřed a čeká tam na mě.</text>
+</string>
+
+
+    
+   <string id="ah_kovalev_quest1_title">
+    <text>Výzkumníci: Přines profesoru Kovalěvovi tři anomální vzorky</text>
+</string>
+<string id="ah_kovalev_quest1_desc">
+    <text>Výzkumný tým v bažinách právě hledá vzorky z některých anomálních polí. Profesor Kovalěv mě požádal, abych tři z nich donesl. 
+     \n(Artefakty: Lehký,Magnet,Suvenýr)</text>
+</string>
+
+
+<string id="ah_bol_o1_title">
+    <text>Najít vzorek ve Fermiho anomálii.</text>
+</string>
+<string id="ah_bol_o1_desc">
+    <text>Jeden ze vzorků se nachází ve Fermiho anomálii.</text>
+</string>
+
+
+<string id="ah_bol_o2_title">
+    <text>Jeden ze vzorků se nachází v anomálii Boží hřbitov.</text>
+</string>
+<string id="ah_bol_o2_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Boží hřbitov.</text>
+</string>
+
+<string id="ah_bol_g1_title">
+    <text>Jeden vzorek se nachází v anomálii Bog Punder.</text>
+</string>
+<string id="ah_bol_g1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Bog Punder.</text>
+</string>    
+
+
+
+    <string id="ah_bol_e1_title">
+    <text>Najdi vzorek v anomálii Thunderclap</text>
+</string>
+<string id="ah_bol_e1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Thunderclap.</text>
+</string>
+
+
+
+
+<string id="ah_kovalev_quest2_title">
+    <text>Výzkumníci: Přines profesoru Kovalěvovi jeho notebook a tři anomální vzorky</text>
+</string>
+<string id="ah_kovalev_quest2_desc">
+    <text>Profesor Kovalěv prováděl terénní výzkum v Agropromu, ale jeho tým byl během práce přepaden. Potřebuji najít notebook, který zanechal na místě útoku, a zkontrolovat data na něm. Měl by mi říct, které anomálie mám prověřit kvůli vzorkům.</text>
+</string>
+<string id="ah_agr_pda_title">
+    <text>Najdi Kovalěvův notebook poblíž anomálie Nervový vrak</text>
+</string>
+<string id="ah_agr_pda_desc">
+    <text>Laptop by se měl nacházet ve druhém patře budovy, ve které byli vědci napadeni. Budu muset projít elektrickými anomáliemi a psy-polem, abych ho získal.</text>
+</string>
+<string id="ah_agr_none_title">
+    <text>Najdi vzorek. Poloha neznámá.</text>
+</string>
+<string id="ah_agr_none_desc">
+    <text>Přesné umístění lze nalézt na Kovalěvově notebooku.</text>
+</string>
+<string id="ah_agr_g1_title">
+    <text>Najdi vzorek v anomálii Bedrock Claws</text>
+</string>
+<string id="ah_agr_g1_desc">
+    <text>Podivná gravitační anomálie. Vypadá, že se na ni dá vylézt.</text>
+</string>
+<string id="ah_agr_g2_title">
+    <text>Najdi vzorek v anomálii Bushwacker</text>
+</string>
+<string id="ah_agr_g2_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Bushwacker.</text>
+</string>
+<string id="ah_agr_h1_title">
+    <text>Najdi vzorek v anomálii Dog Mincer</text>
+</string>
+<string id="ah_agr_h1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Dog Mincer.</text>
+</string>
+
+
+  <string id="ah_markov_quest1_title">
+    <text>Výzkumníci: Přines profesoru Markovovi tři anomální vzorky</text>
+</string>
+<string id="ah_markov_quest1_desc">
+    <text>Profesor Markov v Yantaru mě požádal, abych svým skenerem oskenoval tři anomálie a dával pozor na všechny neobvyklé artefakty, které najdu.</text>
+</string>
+<string id="ah_yan_o1_title">
+    <text>Najdi vzorek v anomálii Bonfire</text>
+</string>
+<string id="ah_yan_o1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Bonfire.</text>
+</string>
+<string id="ah_yan_h1_title">
+    <text>Jeden ze vzorků se nachází v anomálii Blackwater</text>
+</string>
+<string id="ah_yan_h1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Blackwater.</text>
+</string>
+<string id="ah_yan_h2_title">
+    <text>Jeden vzorek se nachází v anomálii Concrete Dump</text>
+</string>
+<string id="ah_yan_h2_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Concrete Dump. K jeho získání budu potřebovat nějakou ochranu před psy-polem v této oblasti.</text>
+</string>
+
+
+<string id="ah_markov_quest2_title">
+    <text>Průzkumníci: Přines Markovovi tři artefakty z Divokého území</text>
+</string>
+<string id="ah_markov_quest2_desc">
+    <text>Profesor Markov mě pověřil, abych rozšířil stávající oblast pátrání. Mám prohledat tři různá místa v Divoké Oblasti.</text>
+</string>
+<string id="ah_dt_o1_title">
+    <text>Najít vzorek v Radioactive Workshop</text>
+</string>
+<string id="ah_dt_o1_desc">
+    <text>Tato anomálie není uvedena na mapě. Dílnu najdu těsně před kontrolním bodem před Rostokem. Je vysoko radioaktivní.</text>
+</string>
+<string id="ah_dt_e1_title">
+    <text>Najdi vzorek v anomálii Crispy Train</text>
+</string>
+<string id="ah_dt_e1_desc">
+    <text>Jedná se o elektroanomálii, takže bych měl mít s sebou dostatek šroubů.</text>
+</string>
+<string id="ah_dt_e2_title">
+    <text>Najdi vzorek v Sparkle Deadlock anomálii</text>
+</string>
+<string id="ah_dt_e2_desc">
+    <text>Tato anomálie se nachází v podzemním tunelu. Slyšel jsem, že je přes ni bezpečná cesta...</text>
+</string>
+
+
+    <string id="ah_markov_quest3_title">
+    <text>Průzkumníci: Přines profesoru Markovovi tři artefakty z oblasti kolem laboratoře X16</text>
+</string>
+<string id="ah_markov_quest3_desc">
+    <text>Mám najít tři artefakty poblíž oblasti kolem staré laboratoře X16. Kvůli Zázračnému stroji to bude bez řádné psychické ochrany nemožné. Profesor Sacharov by mi s tím měl být schopen pomoci.</text>
+</string>
+<string id="ah_yan_e1_title">
+    <text>Najít vzorek v Teslově anomálii</text>
+</string>
+<string id="ah_yan_e1_desc">
+    <text>Jedná se o elektroanomálii, takže bych měl přinést dostatek šroubů.</text>
+</string>
+<string id="ah_yan_e2_title">
+    <text>Najdi vzorek v Edisonově anomálii</text>
+</string>
+<string id="ah_yan_e2_desc">
+    <text>Můj skener by mi měl pomoci ho najít.</text>
+</string>
+<string id="ah_yan_g1_title">
+    <text>Najdi vzorek někde v továrně</text>
+</string>
+<string id="ah_yan_g1_desc">
+    <text>Nikdo z výzkumníků se nedostal tak daleko do sloučeniny, nicméně skenování naznačuje silnou anomální aktivitu. Měl bych být opatrný.</text>
+</string>
+
+<string id="ah_pirogov_quest1_title">
+    <text>Výzkumníci: Přines kandidátovi Pirogovi tři anomální vzorky z Temného údolí</text>
+</string>
+<string id="ah_pirogov_quest1_desc">
+    <text>Profesor Pirogov mě požádal, abych pro něj prověřil tři různé anomálie v Temném údolí. Měl bych být opatrný, protože v této oblasti se často potulují mutanti a bandité.</text>
+</string>
+<string id="ah_td_o1_title">
+    <text>Najdi vzorek v tunelu s anomálií Kometa</text>
+</string>
+<string id="ah_td_o1_desc">
+    <text>Zajímavá anomálie, kterou prozkoumalo jen málo lidí. Nachází se na konci dlouhého tunelu s anomálií Kometa uvnitř. Vchod je blízko základny banditů na severu.</text>
+</string>
+<string id="ah_td_o2_title">
+    <text>Najdi artefakt v anomálii Zhnoucí jáma</text>
+</string>
+<string id="ah_td_o2_desc">
+    <text>Můj skener by mi měl pomoci ho najít.</text>
+</string>
+<string id="ah_td_e1_title">
+    <text>Najdi artefakt v anomálii Bublinková lázeň</text>
+</string>
+<string id="ah_td_e1_desc">
+    <text>Anomalie Bublinkové lázně se nachází v základně banditů, takže pokud nechci popudit všechny bandity, kteří tam jsou, měl bych se pokusit proplížit dovnitř.</text>
+</string>
+
+<string id="ah_pirogov_quest2_title">
+    <text>Výzkumníci: Přines kandidátovi Pirogovi tři vzorky z hřbitova nákladních automobilů</text>
+</string>
+<string id="ah_pirogov_quest2_desc">
+    <text>Pokračujeme dále na sever, Pirogov mě požádal, abych se podíval na Hřbitov nákladních aut. Stejně jako v Temném údolí se to tu hemží mutanti a bandité.</text>
+</string>
+<string id="ah_kt_g1_title">
+    <text>Najdi vzorek v anomálii Autobusové brázdy</text>
+</string>
+<string id="ah_kt_g1_desc">
+    <text>Můj skener by mi ho měl pomoci najít.</text>
+</string>
+<string id="ah_kt_o1_title">
+    <text>Najdi vzorek v anomálii Charcoal Abode</text>
+</string>
+<string id="ah_kt_o1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Charcoal Abode.</text>
+</string>
+<string id="ah_kt_h1_title">
+    <text>Vzorek se nachází v anomálii Trnová lázeň</text>
+</string>
+<string id="ah_kt_h1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Trnová lázeň.</text>
+</string>
+
+  <string id="ah_pirogov_quest3_title">
+    <text>Výzkumníci: Přines kandidátovi Pirogovovi asistentovo PDA a dva anomální vzorky</text>
+</string>
+<string id="ah_pirogov_quest3_desc">
+    <text>Pirogovův asistent, který přede mnou zkoumal anomálie v Odpadech, je nezvěstný. Na jeho PDA však byla data ze skenování všech anomálií v oblasti. Musím asistenta najít, získat data a získat vzorky z dotyčných anomálií.</text>
+</string>
+<string id="ah_sv_pda_title">
+    <text>Najít pohřešovaného Pirogovova asistenta</text>
+</string>
+<string id="ah_sv_pda_desc">
+    <text>S největší pravděpodobností ho pronásledovatelé přepadli bandité. Bylo mi řečeno, že jeho poslední rádiové volání bylo z Blešího trhu, takže bych měl začít pátrat tam.</text>
+</string>
+<string id="ah_sv_g1_title">
+    <text>Najít vzorek v anomálii Witch's Jelly</text>
+</string>
+<string id="ah_sv_g1_desc">
+    <text>Poměrně velká a toxická anomálie. Tahle bude záludná.</text>
+</string>
+<string id="ah_sv_h1_title">
+    <text>Najdi vzorek v anomálii Synapse</text>
+</string>
+<string id="ah_sv_h1_desc">
+    <text>Můj skener by mi ho měl pomoci najít.</text>
+</string>
+<string id="ah_sv_none_title">
+    <text>Získat data ze skeneru z PDA pohřešovaného stalkera</text>
+</string>
+<string id="ah_sv_none_desc">
+    <text>Skenovací data potřebná k nalezení předmětných anomalii se nacházejí v PDA pohřešovaného stalkera. Musím ho najít.</text>
+</string>
+
+<string id="ah_chernov_quest1_title">
+    <text>Průzkumníci: Přines profesoru Černovovi tři artefakty z armádních skladů</text>
+</string>
+<string id="ah_chernov_quest1_desc">
+    <text>Potřebuji najít tři různé artefakty a přinést je profesoru Černovovi. Bude to skutečná zkouška dovednosti, protože Armádní sklady jsou nebezpečnou oblastí.</text>
+</string>
+<string id="ah_mil_h1_title">
+    <text>Najdi vzorek v anomálii Likvidátor mrtvol</text>
+</string>
+<string id="ah_mil_h1_desc">
+    <text>Můj skener by mi ho měl pomoci najít.</text>
+</string>
+<string id="ah_mil_g1_title">
+    <text>Najít vzorek v anomálii Masher</text>
+</string>
+<string id="ah_mil_g1_desc">
+    <text>Jeden ze vzorků se nachází v anomálii Masher.</text>
+</string>
+<string id="ah_mil_o1_title">
+    <text>Najdi vzorek v jižní anomálii Pekelné stěny</text>
+</string>
+<string id="ah_mil_o1_desc">
+    <text>Silná anomálie, která vyzářuje silné teplo a je poseta hořícími minami. Měl bych se z ní dostat co nejrychleji, jakmile získám vzorek.</text>
+</string>
+
+    
+   <string id="ah_chernov_quest3_title">
+    <text>Průzkumníci: Přines Černovovi stalkerovo PDA a dva vzorky z Rudého lesa</text>
+</string>
+<string id="ah_chernov_quest3_desc">
+    <text>Profesor Černov pověřil konkrétního stalkera zmapováním anomalii v Rudém lese. Mapu dokončil, ale musel z oblasti uprchnout dříve, než mohl data vrátit. Mám najít jeho kapesní počítač, který zůstal někde v tunelech u mostu do Limanského.</text>
+</string>
+<string id="ah_les_pda_title">
+    <text>Najdi stalkerské PDA v tunelech na západě</text>
+</string>
+<string id="ah_les_pda_desc">
+    <text>Při útěku před monolitickými fanatiky nechal stalker své PDA se skenovacími daty někde v tunelech na západě. Potřebuji ho najít, abych věděl, které anomálie mám prozkoumat.</text>
+</string>
+<string id="ah_les_o1_title">
+    <text>Najdi vzorek v anomálii Symbiont</text>
+</string>
+<string id="ah_les_o1_desc">
+    <text>Po analýze dat ze skenování se zdá, že toto je jedno ze zajímavých míst.</text>
+</string>
+<string id="ah_les_e1_title">
+    <text>Najdi vzorek v podzemní elektroanomalii</text>
+</string>
+<string id="ah_les_e1_desc">
+    <text>Po analýze dat se zdá, že v severozápadních důlních šachtách je skrytá podzemní anomálie. Měl bych ji prozkoumat.</text>
+</string>
+<string id="ah_les_none_title">
+    <text>Najdi artefakt někde v Rudém lese</text>
+</string>
+<string id="ah_les_none_desc">
+    <text>Mám najít dva různé artefakty v Rudém lese. Abych však mohl určit jejich polohu, potřebuji najít PDA s naskenovanými daty, které stalker přede mnou ztratil někde v západních tunelech.</text>
+</string>
+
+<string id="ah_chernov_quest4_title">
+    <text>Průzkumníci: Najdi umělý artefakt</text>
+</string>
+<string id="ah_chernov_quest4_desc">
+    <text>Podle Černova se jemu a jeho kolegovi podařilo uměle vytvořit artefakt, a to ještě před katastrofou. Měl bych se vydat do domu jeho bývalého kolegy a zjistit, zda tam artefakt stále je. U jeho domu je nyní anomální pole, což asi není náhoda. Měl bych být opatrný.</text>
+</string>
+
+<string id="ah_chernov_quest5_title">
+    <text>Průzkumníci: Navštiv laboratoř X-19</text>
+</string>
+<string id="ah_chernov_quest5_desc">
+    <text>Laboratoř X-19, známá také jako "Bunkr", se zřejmě zabývala vytvářením umělých artefaktů. Laboratoř je nyní zničena, ale možná se mi podaří najít nějaké zbytky dokumentu. Mohly by nám právě prozradit, kde tyto "farmy artefaktů" najít.</text>
+</string>
+<string id="ah_rad_pda_title">
+    <text>Prohledej vchod do X-19</text>
+</string>
+<string id="ah_rad_pda_desc">
+    <text>Měl bych prohledat okolí a najít něco, co by mě mohlo nasměrovat k těmto "ložiskům artefaktů". Myslím, že jsem někde u vchodu viděl svazek dokumentů.</text>
+</string>
+<string id="ah_rad_r_title">
+    <text>Najdi tři vzorky artefaktu v Mrtvém lese, jižně od komplexu X19</text>
+</string>
+<string id="ah_rad_r_desc">
+    <text>Podle nalezených dokumentů rostly artefakty v lese jižně od komplexu. Bude to rozsáhlé pátrání, ale musím kvůli těmto vzorkům prohledat celý les.</text>
+</string>
+
+<string id="ah_chernov_quest6_title">
+    <text>Výzkumníci: Najdi dva artefakty v Mrtvém městě</text>
+</string>
+<string id="ah_chernov_quest6_desc">
+    <text>Profesor Černov mě požádal o pomoc při doplnění mapy anomalii v Zóně provedením skenu v neprozkoumaném Mrtvém městě. Dal mi přibližné souřadnice dvou anomalii, které ho zajímají.</text>
+</string>
+<string id="ah_mg_o1_title">
+    <text>Najdi vzorek ve správní budově</text>
+</string>
+<string id="ah_mg_o1_desc">
+    <text>Můj skener by mi měl pomoci ho najít.</text>
+</string>
+<string id="ah_mg_g1_title">
+    <text>Najdi ukázku v Domě kultury</text>
+</string>
+<string id="ah_mg_g1_desc">
+    <text>Můj skener by mi měl pomoci ho najít.</text>
+</string>
+
+
+<string id="ah_juk_quest1_title">
+    <text>Vyhledej: Najdi tři anomální vzorky na Jupiteru</text>
+</string>
+<string id="ah_juk_quest1_desc">
+    <text>Profesor Zhuk se snaží vytvořit spektrogram vzorku z různých druhů anomálií na Jupiteru. Dal mi za úkol najít vzorky ze tří různých anomálií.</text>
+</string>
+<string id="ah_up_g1_title">
+    <text>Najdi vzorek v bitumenové anomálii</text>
+</string>
+<string id="ah_up_g1_desc">
+    <text>Další tepelná anomálie, která bude potřebovat řádnou ochranu, abych se jí mohl přiblížit.</text>
+</string>
+<string id="ah_up_h1_title">
+    <text>Najdi vzorek v anomálii Betonová lázeň</text>
+</string>
+<string id="ah_up_h1_desc">
+    <text>Slyšel jsem, že stalkeri skáčou na cementové sloupy, aby se vyhnuli kyselinovým bazénkům pod nimi.</text>
+</string>
+<string id="ah_up_h2_title">
+    <text>Najdi vzorek v Anomálním háji</text>
+</string>
+<string id="ah_up_h2_desc">
+    <text>Tato toxická anomálie bude vyžadovat odpovídající ochranu.</text>
+</string>
+
+<string id="ah_juk_quest2_title">
+    <text>Výzkumníci: Najdi zbývající vzorky pro profesora Zhuka</text>
+</string>
+<string id="ah_juk_quest2_desc">
+    <text>Pro druhou várku vzorků musím prohledat zbytek anomálií v oblasti. Profesor Zhuk mi dal jejich přesné umístění.</text>
+</string>
+<string id="ah_up_e2_title">
+    <text>Najdi artefakt v anomálním vlaku</text>
+</string>
+<string id="ah_up_e2_desc">
+    <text>Tato neoznačená elektroanomalie se zdá být uvězněná ve vlakovém voze poblíž bunkru vědců. Vzpomínám si, že tyto vozy mají na střeše únikový poklop, kterým bych se mohl dostat dovnitř.</text>
+</string>
+<string id="ah_up_e1_title">
+    <text>Najdi artefakt v severozápadním tunelu</text>
+</string>
+<string id="ah_up_e1_desc">
+    <text>Tento tunel je málo prozkoumaný, proto je zvlášť zajímavý. Slyšel jsem však zvěsti, že se v těchto tunelech rádi potulují kontrolor</text>
+</string>
+<string id="ah_up_g2_title">
+    <text>Najdi artefakt v komplexu "Volchov"</text>
+</string>
+<string id="ah_up_g2_desc">
+    <text>Starý protiletadlový raketový komplex je opuštěný kvůli množství podzemních anomálií. Je to také horké místo pro mutanty, takže bych měl mít oči na stopkách.</text>
+</string>
+
+<string id="ah_juk_quest3_title">
+    <text>Průzkumníci: Najdi čtyři anomální vzorky v Pripyati a na předměstí</text>
+</string>
+<string id="ah_juk_quest3_desc">
+    <text>Město Pripjat je pro vědce prakticky neprůchodné kvůli přítomnosti Monolitu. Pro dokončení jejich výzkumu jsou však nezbytné vzorky z anomálií ve městě. Musím je najít.</text>
+</string>
+<string id="ah_p_h1_title">
+    <text>Najdi vzorek v anomálii ve Vině</text>
+</string>
+<string id="ah_p_h1_desc">
+    <text>"Vině" je nejzajímavější anomálie na okraji Pripyati. Mám na ni vylézt a hledat vzorek na vrcholu anomálie.</text>
+</string>
+<string id="ah_p_g1_title">
+    <text>Najdi vzorek ve škole</text>
+</string>
+<string id="ah_p_g1_desc">
+    <text>Uprostřed staré školy se nachází obří gravitační anomálie. Sáhá do několika pater, takže možná budu muset zkontrolovat vnitřek budovy.</text>
+</string>
+<string id="ah_p_g2_title">
+    <text>Najdi vzorek v anomálii Vanguard</text>
+</string>
+<string id="ah_p_g2_desc">
+    <text>Na tomto místě jsou hodnoty mimo tabulky. I na vzdálenost několika kilometrů dokázali vědci detekovat více druhů anomálií. Musím prohledat oblast a získat vzorek.</text>
+</string>
+<string id="ah_p_e1_title">
+    <text>Najdi vzorek v neoznačené elektroanomalii</text>
+</string>
+<string id="ah_p_e1_desc">
+    <text>V jižní části Pripyati se nachází další neoznačená anomálie. Měl bych ji také naskenovat.</text>
+</string>
+  
+<string id="ah_vorobushkin_quest1_title">
+    <text>Výzkumníci: Najdi Vorobuškinův paměťový modul a tři anomální vzorky</text>
+</string>
+<string id="ah_vorobushkin_quest1_desc">
+    <text>Profesoru Vorobuškinovi se podařilo opravit a použít část starého vybavení ze starého Kružova anténního komplexu. Zanechal tam svůj paměťový modul, který obsahuje umístění anomálií, z nichž potřebuji vzorky.</text>
+</string>   
+<string id="ah_zat_pda_title">
+    <text>Najít paměťový modul VNZ "Kruh"</text>
+</string>
+<string id="ah_zat_pda_desc">
+    <text>Profesor Vorobuškin při odchodu zanechal modul v podzemních částech komplexu. Potřebuji ho najít, pokud chci vědět, které anomálie mám skenovat.</text>
+</string>       
+<string id="ah_zat_h1_title">
+    <text>Najít vzorek v anomálii Bažina</text>
+</string>
+<string id="ah_zat_h1_desc">
+    <text>Podivné a velmi rozsáhlé pole gravitačních a toxických anomálií. Musím se v něm opatrně pohybovat, pokud si chci zachovat všechny končetiny.</text>
+</string>       
+<string id="ah_zat_h2_title">
+    <text>Najít vzorek v anomálii Oakpine</text>
+</string>
+<string id="ah_zat_h2_desc">
+    <text>Velká toxická anomálie, která se poněkud podobá anomálii Vine v Předměstí. Možná bych mohl vylézt i na tuhle?</text>
+</string>
+<string id="ah_zat_none_title">
+    <text>Najít artefakt někde v Zatonu</text>
+</string>
+<string id="ah_zat_none_desc">
+    <text>Pro zjištění přesné polohy anomálie, kterou je třeba prozkoumat, potřebuji získat data ze skenování z Vorobuškinova paměťového modulu.</text>
+</string>
+
+    <string id="ah_vorobushkin_quest2_title">
+    <text>Výzkumníci: Najdi pro docenta Vorobuškina další tři artefakty v Zatonu</text>
+</string>
+<string id="ah_vorobushkin_quest2_desc">
+    <text>Pro doplnění spektrogramu různých artefaktů mě profesor Vorobuškin požádal, abych oskenoval tři zbývající anomálie v Zatonu.</text>
+</string>   
+<string id="ah_zat_o1_title">
+    <text>Najít vzorek v kotelní anomálii</text>
+</string>
+<string id="ah_zat_o1_desc">
+    <text>Ošklivá tepelná anomálie, která připravila o život odvážné vědce. Budu potřebovat vhodnou ochranu nebo rychlé nohy, abych se v ní bezpečně pohyboval.</text>
+</string>       
+<string id="ah_zat_g1_title">
+    <text>Najít vzorek v anomálii Drap</text>
+</string>
+<string id="ah_zat_g1_desc">
+    <text>Tato gravitační anomálie je zřejmě spojena s řadou tunelů. Data ze skenování naznačují, že vzorek byl nějakým způsobem přemístěn do tunelu.</text>
+</string>       
+<string id="ah_zat_g2_title">
+    <text>Najdi vzorek na Preobrazenském mostě</text>
+</string>
+<string id="ah_zat_g2_desc">
+    <text>Tento napůl zřícený most je plný gravitačních anomálií. Dá se přes něj projít s velkou opatrností, měl bych si však vzít dostatek šroubů.</text>
+</string>
+
+<string id="ah_skabinsky_quest1_title">
+    <text>Výzkumníci: Přines akademiku Skabinskému mluvící kámen</text>
+</string>
+<string id="ah_skabinsky_quest1_desc">
+    <text>Toto je ono. Profesor Skabinský a jeho tým vážili celou cestu kvůli tomuto artefaktu. Vyzáří z něj podivná síla. Měl bych si pospíšit a ukázat mu ho. Čeká na mě v Zatonu.</text>
+</string>   
+<string id="ah_gen_f1_title">
+    <text>Najdi artefakt v anomálii Mlýnek na maso</text>
+</string>
+<string id="ah_gen_f1_desc">
+    <text>Možná by se toto místo dalo nazvat středem zóny. Právě tady začaly všechny poruchy Noosféry. Skeny naznačují podzemní aktivitu, takže bych měl začít hledáním cesty dolů. Měl bych být opatrný.</text>
+</string>
+    
+
+    <string id="cs_story_task0_name">
+    <text>Poslední rozbřesk: Dones skener do zpět základny</text>
+</string>
+<string id="cs_story_task0_name1">
+    <text>Poslední rozbřesk: Získej skener z anomálie v jihozápadním rohu bažin</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_name">
+    <text>Poslední rozbřesk: Návrat k Mrázovy</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_name1">
+    <text>Poslední rozbřesk: Odraz útok Odpadlíků</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_name3">
+    <text>Poslední rozbřesk: Návrat k Mrázovy</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_name4">
+    <text>Poslední rozbřesk: Vyčisti jihovýchodní usedlost od Odpadlíků.</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_descr">
+    <text>V pořádku jsem si pokecal s Odpadlíky a teď bych se měl vrátit se pochlubit Mrázovy.</text>
+</string>
+<string id="cs_task0_ambush_renegade_story_descr2">
+    <text>Pomoz útočnému oddílu Jasné Oblohy dobýt cestu ke Kordonu a pak se vrať za Mrázem.</text>
+</string>
+
+   <string id="cs_story_task0_descr">
+    <text>Skener se nachází v Archianomálii, severozápadně od základny Jasné Oblohy.</text>
+</string>
+<string id="cs_story_task2_name">
+    <text>Poslední rozbřesk: Dones PDA Sporovi.</text>
+</string>
+<string id="cs_story_task2_descr">
+    <text>Upíři dostali zvěda, ale mně se podařilo pomstít jeho smrt a získat jeho PDA.</text>
+</string>
+<string id="cs_story_task1_name">
+    <text>Poslední rozbřesk: Pátrání po zmizelém zvědovi</text>
+</string>
+<string id="cs_story_task1_descr">
+    <text>Potřebuji najít Crutche dřív, než ho nějaký tvor odnese do své nory. Spor hlásí, že poslední Crutchův signál přišel ze severu od bažinné cesty poblíž by mělo být ohniště. Musím si pospíšit.</text>
+</string>
+<string id="cs_story_task3_start_name">
+    <text>Poslední rozbřesk: Zastav se za Mrázem.</text>
+</string>
+<string id="cs_story_task3_start_descr">
+    <text>Mráz ohlásil, že PDA zvěda bylo rozluštěno a čeká na setkání se mnou.</text>
+</string>
+<string id="cs_task4_storytask_name">
+    <text>Poslední rozbřesk: Najdi žoldáka Jizvu</text>
+</string>
+<string id="cs_task4_storytask_descr">
+    <text>Podařilo se mi zjistit, kde je Jizva. Nyní je mým úkolem zjistit, co ví o zmizelých členech Jasné Oblohy.</text>
+</string>
+<string id="cs_task5_storytask_name">
+    <text>Poslední rozbřesk: Pomož zahnat mutanty</text>
+</string>
+<string id="cs_task5_storytask_name1">
+    <text>Poslední rozbřesk: Promluv si s Jizvou.</text>
+</string>
+<string id="cs_task5_storytask_descr">
+    <text>Je tu smečka pseudopsů, která zachytila můj pach. Přišel jsem sem, abych se jim postavil. Pomoz mi je vyprovodit ze světa a já ti řeknu, co chceš vědět.</text>
+</string>
+<string id="cs_task3_storytask_name">
+    <text>Poslední rozbřesk: Zjisti něco o Jizvě.</text>
+</string>
+<string id="cs_task3_storytask_descr">
+    <text>Potřebuji se informovat o žoldákovi jménem Jizva. Ten starý podvodník Sidorovič by měl být schopen nasměrovat správným směrem.</text>
+</string>
+<string id="cs_task9_storytask_name">
+    <text>Poslední rozbřesk: Promluv si se Striderem</text>
+</string>
+<string id="cs_task9_storytask_descr">
+    <text>Musíme dostat dekoder ke Striderovi. Jeho jednotka si zřídila malou operační základnu V Jupiteru, na starém kontrolním stanovišti jižně od stanice Janov.</text>
+</string>
+<string id="cs_task11_storytask_name">
+    <text>Poslední rozbřesk: Promluv si se Striderem</text>
+</string>
+<string id="cs_task11_storytask_descr">
+    <text>Jizva hlásí, že přeživší z Jasné Oblohy se možná přidali k Vyvržencům monolitu. Jejich vůdce se jmenuje Strider. Jeho jednotka se nachází V Jupiteru na starém kontrolním stanovišti jižně od stanice Janov. Musím ho najít a zeptat se ho, jestli neví o zmizelých stalkerech z Jasné Oblohy.</text>
+</string>
+<string id="cs_task10_storytask_name">
+    <text>Poslední rozbřesk: Promluv si s Mrázem.</text>
+</string>
+<string id="cs_task10_storytask_descr">
+    <text>Můj úkol je splněn. Musím se ohlásit Mrázovy a říct mu, že jeho muži jsou stále naživu.</text>
+</string>
+<string id="cs_task8_storytask_name">
+    <text>Poslední rozbřesk: Odraž protiútok Monolitu</text>
+</string>
+<string id="cs_task8_storytask_name1">
+    <text>Poslední rozbřesk: Promluv si s Gamayunem.</text>
+</string>
+<string id="cs_task8_storytask_descr">
+    <text>Podle Vyvrženců mají fanatici v říčním přístavu na severovýchodě Pripyati zařízení na dekódování šifrovaných rozhovorů. Potřebuji ho získat zpět.</text>
+</string>
+<string id="cs_task7_storytask_name">
+    <text>Poslední rozbřesk: Zajisti zařízení</text>
+</string>
+<string id="cs_task7_storytask_descr">
+    <text>Podle Vyvrženců mají fanatici v říčním přístavu zařízení na dekódování zašifrovaných rozhovorů. Buďto ho mají u sebe nebo někde v nějaké skrýši poblíž</text>
+</string>
+<string id="cs_task6_storytask_name1">
+    <text>Poslední rozbřesk: Promluv si s Gamayunem</text>
+</string>
+<string id="cs_task6_storytask_name">
+    <text>Poslední rozbřesk: Zachraň ztracený průzkumný oddíl</text>
+</string>
+<string id="cs_task6_storytask_descr">
+    <text>Ve východní části Pripyati, poblíž ubytovny, je uvězněn oddíl monolitických vyvrhelů. Je mezi nimi i jeden z přeživších členů oddílu Jasné Oblohy. Musím je zachránit, jinak bude má mise zbytečná.</text>
+</string>
+
+
+
+
+<string id="cs_anom_pribor_name">
+    <text>Skener anomalní aktivity</text>
+</string>
+<string id="cs_deshefrator_name">
+    <text>Dekodér</text>
+</string>
+<string id="cs_deshefrator_desc">
+    <text>Zařízení používané vyvrhelci z Monolitu k odposlouchávání rozhovorů fanatiků.</text>
+</string>
+<string id="st_wpn_bm16_ohotnik">
+    <text>Lovecká brokovnice BM-16</text>
+</string>
+<string id="st_wpn_bm16_ohotnik_descr">
+    <text>Stará brokovnice s několika označeními.</text>
+</string>
+<string id="pda_dragun_name">
+    <text>PDA Jizvy</text>
+</string>
+<string id="pda_dragun_desc">
+    <text>Mezi mnoha záznamy je jeden, který vyčnívá: "Strider sestavil novou skupinu pro boj s Monolitem. Proslyšela se, že mezi jeho muži jsou i bývalí členové Lebeděvovy úderové skupiny."</text>
+</string>
+<string id="bar_case_name">
+    <text>Těžký kufr</text>
+</string>
+<string id="bar_case_desc">
+    <text>Speciální kufr s kořistí pro barmana.</text>
+</string>
+<string id="cs_anom_pribor_desc">
+    <text>Speciální zařízení pro studium anomálních polí, patřící do skupiny Jasné Oblohy.</text>
+</string>
+<string id="cs_informer_pda_name">
+    <text>Crutchovo PDA</text>
+</string>
+<string id="cs_informer_pda_desc">
+    <text>V tomto PDA jsou uloženy zašifrované informace týkající se frakce Jasné Oblohy.</text>
+</string>
+<string id="crazy_stalker_flash_name">
+    <text>Flash Drive šíleného stalkera</text>
+</string>
+<string id="crazy_stalker_flash_desc">
+    <text>Informace jsou zašifrované.</text>
+</string>
+<string id="escape_docs_name">
+    <text>Dokumenty ze zátarasu</text>
+</string>
+<string id="escape_docs_desc">
+    <text>Zpráva o vojenské výpravě ze severu zóny.</text>
+</string>
+<string id="st_voen_scaner">
+    <text>Scanner anomalní aktivity</text>
+</string>
+<string id="st_voen_scaner_desc">
+    <text>Nejnovější a pohodlný model pro měření, vytvořený speciálně pro vojenské stalkery a vědecké skupiny. Pro obchodníky nemá žádnou zvláštní hodnotu, protože každý skener funguje pouze po zadání kódu specifického pro každé zařízení.</text>
+</string>
+
+<string id="prin_case_traders">
+    <text>Předej kufr obchodníkovi.</text>
+</string>
+<string id="tm_find_case_trader_1">
+    <text>Získej kufřík z Armádního zátarasu</text>
+</string>
+<string id="tm_find_case_trader_1_descr">
+    <text>Potřebuji přelézt zátaras a ukrást kufr se zprávou o vojenské expedici ze severu zóny.</text>
+</string>
+<string id="prinesi_military_docs_start_0">
+    <text>Takže, co musím udělat, abych získal informace o Jizvě?</text>
+</string>
+<string id="prinesi_military_docs_start_1">
+    <text>No, jde o tohle... Z hlubí Zóny byla zátarasu předána krabice se zprávou z jedné z výprav, která se vydala na sever. Přes den ji hlídají, jako by byla naplněna čistým plutoniem, ale z nějakého důvodu tam nechávají maximálně dva strážce. Proplíž se k zátarasu a tu krabici mi seber. Uděláš to, že jo? </text>
+</string>
+<string id="prinesi_military_docs_start_21">
+    <text>Já to udělám.</text>
+</string>
+<string id="prinesi_military_docs_start_22">
+    <text>Víte, já si to nemyslím. Cením si svého života.</text>
+</string>
+<string id="prinesi_military_docs_start_31">
+    <text>No, peníze mám připravené, ale nedělej žádný hluk, ano? Kdyby se armáda nastvala, tak by nás to všechny pěkně bolelo.</text>
+</string>
+<string id="prinesi_military_docs_done_0">
+    <text>Našel jsem je.</text>
+</string>
+
+
+<string id="cs_task0_ambush_renegade_story_descr3">
+    <text>Pomozte útočnému týmu Jasné Oblohy od vojska zničit strojovnu na severu bažin.</text>
+</string>
+
+<string id="cs_task0_ambush_renegade_story_name6">
+    <text>Poslední rozbřesk: Zmocni se Armádní základny na strojovém dvoře.</text>
+</string>
+
+
+<string id="kuznecov_find_document_1">
+    <text>Najdi dokumenty v kobce výzkumného ústavu Agroprom</text>.
+</string>
+<string id="kuznecov_find_document_1_descr">
+    <text>Najdi tajné dokumenty, které obsahují informace o studiích prováděných v ústavu, a odnes je plukovníku Kuzněcovovi.</text>
+</string>
+<string id="kuznecov_find_document_2">
+    <text>Najdi dokumenty v podzemní laboratoři X-18.</text>
+</string>
+<string id="kuznecov_find_document_2_descr">
+    <text>Plukovník Kuzněcov nařídil získat dokumenty z tajné laboratoře X-18. Vojenské velení chtělo informace o pokusech a experimentech, které v tomto laboratorním komplexu probíhaly.</text>
+</string>
+<string id="kuznecov_find_document_3">
+    <text>Najdi dokumenty v laboratoři X-16 a deaktivuj psi-instalaci</text>.
+</string>
+<string id="kuznecov_find_document_3_descr">
+    <text>Velitel vojenské jednotky ve výzkumném ústavu "Agroprom" mi nařídil, abych se vydal do laboratoře X-16, která se nachází na území bývalého jezera "Yantar". Potřebuji získat tajné dokumenty a vypnout psi-instalaci. Také mi poradil, abych si nejprve pořídil dobrou psi-ochranu. Podle něj vědci v mobilním bunkru právě vyvinuli nějaké prostředky ochrany proti psi-záření.</text>
+</string>
+<string id="kuznecov_find_document_4">
+    <text>Najdi dokumenty v laboratoři X-10 a vyřaď mozkový hořák.</text>
+</string>
+<string id="kuznecov_find_document_4_descr">
+    <text>Jsem připraven prorazit na sever. Mám ochranu proti působení psi. Zbývá jen prorazit radar, infiltrovat laboratoř, vzít dokumenty a vyřadit hlavní instalaci psi v Zóně.</text>
+</string>
+<string id="kuznecov_find_document_5">
+    <text>Najdi dokumenty v laboratoři X-8.</text>
+</string>
+<string id="kuznecov_find_document_5_descr">
+    <text>Pokračuji ve shromažďování všech záhad experimentů v laboratoři v Zóně pro vojenské velení. Tentokrát mě Kuzněcov posílá na procházku po Pripyati, abych našel jistou laboratoř X-8, která se zřejmě zabývala vytvářením vysoce přesných zbraní na bázi pulzní energie, a abych odtud získal všechny důležité dokumenty.</text>
+</string>
+<string id="kuznecov_find_document_6">
+    <text>Najdi dokumenty v kobkách Pripyati</text>
+</string>
+<string id="kuznecov_find_document_6_descr">
+    <text>Je třeba proniknout do tajného objektu "Pripjat-1", který stalkerům říká "Pripjatský zář". Potřebuji najít dokumenty o výzkumu, který tam byl proveden.</text>
+</string>
+<string id="kuznecov_find_document_7">
+    <text>Znič kontrolní místnost "Monolit" v Černobylu a získej veškerou dokumentaci</text>.
+</string>
+<string id="kuznecov_find_document_7_descr">
+    <text>Jdu na poslední cestu, abych získal poslední část dokumentace v Černobylu, do řídícího bunkru "Monolit". Tím možná odhalím největší záhadu Zóny: odkud se vzal Vykonač přání. Také jsem dostal příkaz zničit toto velitelské stanoviště, pokud to bude možné. Před odjezdem mi však plukovník poradil, abych v bazinách našel jistého poustevníka, protože by měl vědět, kde se nachází dekoder k otevření dveří do velitelského centra.</text>
+</string>
+<string id="kuznec_stry_doc">
+    <text>Vrať se k plukovníkovi Kuzněcovovi.</text>
+</string>
+
+<!-- Caaaaei ?a?o yoe oaiaoeeai! -->
+<string id="assault_gen_name">
+    <text>Operace Pomsta Monolitu: Dostaň se ke generátorům CNPP</text>
+</string>
+<string id="assault_gen_descr">
+    <text>Nastal čas zaútočit na generátory CNPP. Setkejte se s vojenským oddílem u Generátoru. Zaujali pozice ve staré vesnici.</text>
+</string>
+<string id="assault_gen_1_name">
+    <text>Dobytí základny</text>
+</string>
+<string id="st_vasil_nevezuchi">
+    <text>Vasil Nevežuchý</text>
+</string>
+<string id="st_kvartet">
+    <text>Kapitán Skrjabenko</text>
+</string>
+<string id="come_to_aes_name">
+    <text>Operace Pomsta Monolitu: útok na černobylskou jadernou elektrárnu</text>
+</string>
+<string id="come_to_aes_descr">
+    <text>Všem jednotkám operujícím v zóně je nařízeno přesunout se k jaderné elektrárně Černobyl. Velitel operace Monolit "Kvarteto" rozmístil polní velitelství poblíž brány vedoucí do Zatonu.</text>
+</string>
+<string id="army_assault_1_name">
+    <text>Operace Pomsta Monolitu: znič první kontrolní bod</text>.
+</string>
+<string id="army_assault_1_descr">
+    <text>Pomozttýmům Spetsnaz znič první zátaras</text>.
+</string>
+<string id="army_assault_2_name">
+    <text>Operace Pomsta Monolitu: znič druhý zátaras</text>
+</string>
+<string id="army_assault_2_descr">
+    <text>Pomoz týmům Spetsnaz znič druhý zátaras.</text>
+</string>
+<string id="army_assault_3_name">
+    <text>Operace Pomsta Monolitu: znič třetí kontrolní bod</text>
+</string>
+<string id="army_assault_3_descr">
+    <text>Pomoz týmům Spetsnaz znič třetí zátaras</text>.
+</string>
+
+    </string_table>

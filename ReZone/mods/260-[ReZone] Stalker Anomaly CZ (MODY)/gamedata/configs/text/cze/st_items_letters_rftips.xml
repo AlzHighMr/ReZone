@@ -1,0 +1,232 @@
+<!-- ====================================================================
+	Anomální RF signáls (included with New Extensible RF Sources)
+    Author: Catspaw
+    Source: https://www.moddb.com/members/catspawmods/addons
+    Version: 1.2
+
+    Permission granted to freely translate into any language.
+===================================================================== -->
+<?xml version="1.0" encoding="Windows-1250"?>
+
+<string_table>
+	<string id="st_note_rf_tip_name">
+		<text>Anomalous RF Signal</text>
+	</string>
+	<string id="st_note_rf_tip_desc">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo záznamu v deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.\n \n
+%c[ui_gray_2]VLASTNOSTI:\n
+%c[d_cyan] • ??%c[ui_gray_2] osobní věci\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_controller_name">
+		<text>Anomální RF signál: Ovladač</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_controller">
+		<text>Anomální RF signál: Ovladač</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_controller_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_controller_text2">
+		<text>\n \n"...řekl, že skrýš bude cvrlikat na 145 Mhz, ale nic se nestalo. Stala se však ta nejpodivnější věc. Začal jsem zaznamenávat rušení na RF přijímači - jednou to dokonce znělo jako hlas, nebo tóny, ale nic jasného.\n \n
+Nedlouho poté jsem začal pociťovat bolesti hlavy, rozmazané vidění, šepot, ztrátu barvy – všechny obvyklé známky toho, že je ovladač někde opravdu blízko. A jistě, pro jednou jsem toho parchanta zahlédl dřív, než on mě.\n \n
+A ten RF šum? Tu část, kterou jsem neměl halucinace, byla odříznuta, jakmile té věci explodovala hlava."\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_poltergeist_name">
+		<text>Anomální RF signál: Poltergeist</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_poltergeist">
+		<text>Anomální RF signál: Poltergeist</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_poltergeist_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_poltergeist_text2">
+		<text>\n \n"...řekl nám, že zachytíme signál na 219 Mhz, ale nic. Pak jsem najednou začal zaznamenat rušení na RF přijímači - jednou to dokonce znělo jako hlas, nebo tóny, ale nic neprošlo čistým.\n \n
+Nedlouho nato se mi v hlavě začal objevovat zvláštní zvonivý zvuk a můj zrak se zbarvil do modra, kolem se začaly vznášet sračky – pamatuješ, kdy se to stalo naposledy? Byl to další poltergeist a hned jsem odtamtud vyrazil, jakmile jsem to viděl.\n \n
+A ten RF šum? Jakmile jsem se dostal pár set metrů od budovy, prostě se zastavil."\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_burer_name">
+		<text>Anomální RF signál: Burer</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_burer">
+		<text>Anomální RF signál: Burer</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_burer_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_burer_text2">
+		<text>\n \n"...a nebylo tam nic jako to, co říkali na 106 Mhz. Místo toho jsem začal dostávat všechny druhy rušení na mém RF přijímači - jednou to dokonce znělo jako hlas nebo tóny, ale nic, co bych nedokázal rozeznat.\n \n
+Ale rozumíš, pamatuješ, když jsme narazili na ten burer na severu? Bylo to stejné, s podivným zabarvením zraku a halucinacemi, sračky létající vzduchem. Viděli jsme to jen jednou, ale dostali jsme se odtamtud, než si nás všimli.\n \n
+Ale ten RF šum? Vypadli, jakmile jsme se dostali dostatečně daleko, možná pár set metrů. Nikdy předtím jsem nic takového na skeneru neslyšel, ale včasné varování nás pravděpodobně zachránilo."\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_psydog_name">
+		<text>Anomální RF signál: Psydog</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_psydog">
+		<text>Anomální RF signál: Psydog</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_psydog_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_psydog_text2">
+		<text>\n \n"...víš, jak se má Vanya, řekl jsem mu, že skrýš je na 197 Mhz, ale ten blázen přísahal, že na 190, tak jsme oba vytáhli naše RF přijímače, abychom viděli, kdo má pravdu. To mě pravděpodobně zachránilo prdel, člověče.\n \n
+Tak blízko tábora byl zatracený psydog – věříš tomu sračku? Okamžitě jsme oba dostali bolesti hlavy, rozmazané vidění a začali jsme střílet na fantomové psy, kteří tam ve skutečnosti nebyli.\n \n
+Ale vezměte si tohle - kdykoli se jeden z fantomů přiblížil, můj RF přijímač začal šílet kvůli rušení. Vanya, však? Jen jednou zakňučel, když na něj skočil pravý. Chudák Vanya."\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_af_ring_name">
+		<text>Anomální RF signál: Prsten (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_ring">
+		<text>Anomální RF signál: Prsten (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_ring_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_ring_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast již byla vyčištěna, tak dlouho po emisi, a tak jsem se rozhodl zkusit vystopovat skrýš, o které se nováček zmínil.\n \n
+Možná 23 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí však muselo být při mně, protože jsem zachytil něco jiného – podivné EM interference nějakého druhu.\n \n
+Bylo to pěkně lokalizované, možná čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu Prstenu! Stále jsem musel vytáhnout Medvěda, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string>
+
+	<string id="st_note_rf_tip_af_electra_flash_name">
+		<text>Anomální RF signál: Flash (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_flash">
+		<text>Anomální RF signál: Flash (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_flash_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_flash_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast už byla vyčištěna, tak dlouho po emisi, tak jsem se rozhodl zkusit vystopovat tu skrýš, o které mi řekl můj kamarád.\n \n
+Možná 124 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí však muselo být při mně, protože jsem zachytil něco jiného – podivné EM interference nějakého druhu.\n \n
+Bylo to pěkně lokalizované, možná čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu Flash! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_electra_moonlight_name">
+		<text>Anomální RF signál: Měsíční svit (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_moonlight">
+		<text>Anomální RF signál: Měsíční svit (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_moonlight_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_electra_moonlight_text2">
+		<text>\n \n"...Přišel jsem na to, že po tom všem není nic k nalezení, a tak jsem se rozhodl zkusit skenovat na staré frekvenci mrtvých kapek.\n \n
+Možná 57 Mhz nebylo správné, protože nikde poblíž jsem nezaznamenal žádné skrýšové signály. Moje štěstí však muselo být při mně, protože jsem zachytil něco jiného – podivné EM interference nějakého druhu.\n \n
+Bylo to pěkně lokalizované, možná čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu Moonlight! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_black_spray_name">
+		<text>Anomální RF signál: Černý sprej (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_black_spray">
+		<text>Anomální RF signál: Černý sprej (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_black_spray_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_black_spray_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast již byla vyčištěna, tak dlouho po emisi, tak jsem se rozhodl zjistit, zda ztracený batoh starého muže stále vysílá.\n \n
+Možná 89 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí však muselo být při mně, protože jsem zachytil něco jiného – podivné EM interference nějakého druhu.\n \n
+Bylo to pěkně lokalizované, možná čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu Black Spray! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_full_empty_name">
+		<text>Anomální RF signál: Plně prázdný (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_full_empty">
+		<text>Anomální RF signál: Plně prázdný (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_full_empty_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_full_empty_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast už byla vyčištěna, tak dlouho po emisi, tak jsem se rozhodl zjistit, jestli nenajdu tu ztracenou skrýš, o které jsme slyšeli.\n \n
+Možná 236 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí muselo být při mně, protože jsem zachytil něco, nějaké silné EM rušení.\n \n
+Bylo to pěkně lokalizované, asi čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu Full Empty! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_ice_name">
+		<text>Anomální RF signál: led (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_ice">
+		<text>Anomální RF signál: led (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_ice_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_ice_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast už byla vyčištěna, tak dlouho po emisi, tak jsem šel hledat ten tip na skrýš, který jsem dostal od lékaře.\n \n
+Možná 178 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí muselo být se mnou, protože jsem zachytil něco jiného - nějaké elektromagnetické rušení, nevím co.\n \n
+Bylo to pěkně lokalizované, asi čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k ledovému artefaktu! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_soul_name">
+		<text>Anomální RF signál: Duše (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_soul">
+		<text>Anomální RF signál: Duše (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_soul_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_soul_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast už byla vyčištěna, tak dlouho po emisi, tak jsem se rozhodl zkusit najít tu skrýš, o které mi obchodník řekl.\n \n
+Možná 302 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí však muselo být se mnou, protože jsem zachytil něco jiného - nějaké elektromagnetické rušení, opravdu jen šum.\n \n
+Bylo to pěkně lokalizované, možná čtyřicet padesát metrů nebo tak nějak, ale to rušení mě zavedlo přímo k artefaktu duše! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale byl jsem opravdu rád, že jsem s sebou měl RF přijímač."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_compass_name">
+		<text>Anomální RF signál: Kompas (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_compass">
+		<text>Anomální RF signál: Kompas (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_compass_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_compass_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast již byla vyčištěna, tak dlouho po emisi, tak jsem se rozhodl zkusit vystopovat ten skrýšový signál, který jsem minule opustil.\n \n
+Možná 285 Mhz byla špatná frekvence, ale nikde poblíž nebyla žádná skrýš. Moje štěstí však muselo být při mně, protože jsem zachytil něco jiného - nějaké vážné EM rušení, nemohlo to vysvětlit.\n \n
+Chvíli mi trvalo, než jsem to lokalizoval, ale toto rušení mě zavedlo přímo k artefaktu kompasu! Stále jsem musel vytáhnout detektor, jakmile jsem byl dostatečně blízko, ale RF přijímač ho musel zachytit dobrých sto metrů."\n</text>
+	</string> 
+
+	<string id="st_note_rf_tip_af_death_lamp_name">
+		<text>Anomální RF signál: Smrtící lampa (artefakt)</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_rf_tip_af_death_lamp">
+		<text>Anomální RF signál: Smrtící lampa (artefakt)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_death_lamp_text">
+		<text>Útržek papíru, který vypadá jako úryvek z dopisu nebo zápisu do deníku, popisující RF frekvenci, kterou autor považoval za užitečnou.</text>
+	</string>
+	<string id="encyclopedia__notes_letter_rf_tip_af_death_lamp_text2">
+		<text>\n \n"...Přišel jsem na to, že oblast již byla vyčištěna, tak dlouho po emisi, a tak jsem se rozhodl zkusit vystopovat tu skrýš, o které jste mi řekli.\n \n
+Možná 321 Mhz byla špatná frekvence, ale přes to rušení jsem nemohl nic zachytit – bylo to, jako by někdo rušil signál v okruhu sto metrů kolem nějakého bodu.\n \n
+Jsem si docela jistý, že zdrojem byl artefakt Lampy smrti – nic jiného nemá tak nemocnou záři. Viděl jsem tu prokletou věc uprostřed ošklivého shluku anomálií a můj RF přijímač se zbláznil, čím víc jsem byl blíž. Neměl jsem ochranné vybavení, abych se tam odvážil, ale teď alespoň vím, co hledat.“\n</text>
+	</string> 
+
+<!-- Added by NERFS -->
+
+
+</string_table>

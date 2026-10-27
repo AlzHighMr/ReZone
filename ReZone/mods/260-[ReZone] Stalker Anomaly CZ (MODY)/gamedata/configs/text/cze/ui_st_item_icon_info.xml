@@ -1,0 +1,305 @@
+
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<!-- 
+		MCM
+	-->
+	<string id="ui_mcm_item_icon_info_title">
+		<text>Item UI Improvements</text>
+	</string>
+	<string id="ui_mcm_menu_item_icon_info">
+		<text>Item UI Improvements</text>
+	</string>
+
+	<string id="ui_mcm_menu_cond_text">
+    <text>Procento stavu</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_title">
+    <text>Procento stavu</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_enable_equipped">
+    <text>Zobrazit na vybavení</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_hide_bar">
+    <text>Skrýt stavový pruh</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_hide_bg">
+    <text>Bez pozadí procenta stavu</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_alt_artefact_pos">
+    <text>Pozice stavu na artefaktech</text>
+</string>
+
+<string id="ui_mcm_lst_alt_art_pos_lower_left">
+    <text>Dole vlevo</text>
+</string>
+
+<string id="ui_mcm_lst_alt_art_pos_lower_right">
+    <text>Dole vpravo</text>
+</string>
+
+<string id="ui_mcm_lst_alt_art_pos_top_left">
+    <text>Nahoře vlevo</text>
+</string>
+
+<string id="ui_mcm_lst_alt_art_pos_top_right">
+    <text>Nahoře vpravo</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_cond_text_padding">
+    <text>Odstup textu</text>
+</string>
+
+
+	<string id="ui_mcm_menu_part_dots">
+    <text>Indikátory částí</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_title">
+    <text>Indikátory stavu částí</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_show_on_equipped">
+    <text>Zobrazit na vybavení</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_show_on_wpn">
+    <text>Zobrazit na zbraních</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_show_on_armor">
+    <text>Zobrazit na brnění/šlemech</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_size_mult">
+    <text>Velikost</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_separator_width">
+    <text>Mezera mezi indikátory</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_position">
+    <text>Pozice</text>
+</string>
+
+<string id="ui_mcm_lst_part_dot_top">
+    <text>Nahoře nad stavovým pruhem</text>
+</string>
+
+<string id="ui_mcm_lst_part_dot_right">
+    <text>Vpravo od stavového pruhu</text>
+</string>
+
+<string id="ui_mcm_lst_part_dot_top_pistol">
+    <text>Nahoře nad stavovým pruhem (pouze krátké zbraně)</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_wpo_mode">
+    <text>Použít barevné prahy</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_wpo_green">
+    <text>Zelený barevný prah stavu</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_wpo_yellow">
+    <text>Žlutý barevný prah stavu</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_part_dots_wpo_orange">
+    <text>Oranžový barevný prah stavu</text>
+</string>
+
+
+	<string id="ui_mcm_menu_ammo_name">
+    <text>Název munice</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_title">
+    <text>Text zkratky názvu munice</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_bad_color">
+    <text>Barevný text podle kvality munice (špatná/stará)</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_show_expl">
+    <text>Povolit pro granáty M203/VOG a hlavice</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_expl_bad_color">
+    <text>Barevný text podle kvality munice (výbušné)</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_ammo_name_padding">
+    <text>Odstup textu</text>
+</string>
+
+
+	<string id="ui_mcm_menu_recipe_text">
+    <text>Přečteno/Nepřečteno</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_recipe_text_title">
+    <text>Zobrazení textu Přečteno/Nepřečteno receptů, poznámek a map</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_recipe_text_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_recipe_text_show_on_pda">
+    <text>Zobrazit nápovědu na PDA s informacemi o skrýši</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_recipe_text_padding">
+    <text>Odstup textu</text>
+</string>
+
+<string id="ui_mcm_menu_mag_info">
+    <text>Info o zásobnících</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_title">
+    <text>Počet nábojů v zásobníku a název náboje (pouze Mags Redux)</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_show_ammo_name">
+    <text>Zobrazit zkratku náboje</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_show_ammo_count">
+    <text>Zobrazit počet nábojů</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_hide_bar">
+    <text>Skrýt stavový pruh zásobníku</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_mag_info_padding">
+    <text>Odstup textu</text>
+</string>
+
+<string id="ui_mcm_menu_money_text">
+    <text>Peníze</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_money_text_title">
+    <text>Text peněz</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_money_text_enable">
+    <text>Povolit</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_money_text_hide_bg">
+    <text>Bez pozadí</text>
+</string>
+
+<string id="ui_mcm_item_icon_info_money_text_padding">
+    <text>Odstup textu</text>
+</string>
+
+
+<string id="ui_mcm_menu_armor_info">
+    <text>Informace o brnění</text>
+</string>
+<string id="ui_mcm_item_icon_info_armor_info_title">
+    <text>Typ nášivky a opravy brnění</text>
+</string>
+<string id="ui_mcm_item_icon_info_armor_info_show_patch">
+    <text>Zobrazit ikonu nášivky brnění</text>
+</string>
+<string id="ui_mcm_item_icon_info_armor_info_show_armor_type">
+    <text>Zobrazit typ opravy brnění</text>
+</string>
+<string id="ui_mcm_item_icon_info_armor_info_show_helmet_type">
+    <text>Zobrazit typ přilby</text>
+</string>
+
+
+	<string id="ui_mcm_menu_wpn_info">
+    <text>Informace o zbrani</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_title">
+    <text>Název zbraně a typ opravy</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_show_gun_repair_type">
+    <text>Zobrazit ikonu typu opravy zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_show_wpn_name">
+    <text>Zobrazit název zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_main_slots_only">
+    <text>Zobrazení pouze názvu na hlavní/vedlejší zbrani</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_show_grenade_name">
+    <text>Zobrazit název na granátech</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_info_show_melee">
+    <text>Zobrazit název na chladných zbraních</text>
+</string>
+
+<string id="ui_mcm_menu_wpn_scaling">
+    <text>Škálování zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_not_installed">
+    <text>Škálování zbraně není nainstalováno</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_title">
+    <text>Škálování a zarovnání zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_enable_equip_hor_scale">
+    <text>Škálovat a zarovnat horizontálně vybavené zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_enable_equip_vert_scale">
+    <text>Škálovat a zarovnat vertikálně vybavené zbraně</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_equip_vert_padding">
+    <text>Odsazení na škálovaných vertikálních zbraních</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_equip_hor_padding">
+    <text>Odsazení na škálovaných horizontálních zbraních</text>
+</string>
+<string id="ui_mcm_item_icon_info_wpn_scaling_enable_inv_scaling">
+    <text>Škálovat a zarovnat ikony potichých zbraní ve výbavě</text>
+</string>
+
+
+	<!-- 
+		Mods
+	-->
+	<string id="ui_utjan_recipe_read">
+    <text>přečteno</text>
+</string>
+<string id="ui_utjan_recipe_unread">
+    <text>nepřečteno</text>
+</string>
+<string id="ui_utjan_ruble">
+    <text>ru</text>
+</string>
+
+</string_table>
+                        

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+<!--=================================================================================================================-->
+<!--                                                                                                                 -->
+<!--	Original Author(s) : NLTP_ASHES																			     -->
+<!--	Edited : N/A																							     -->
+<!--	Date : 17/03/2023																						     -->
+<!--	License : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)		     -->
+<!--																											     -->
+<!--	Translation file for Western Goods' general purpose strings.											     -->
+<!--                                                                                                                 -->
+<!-- ================================================================================================================-->
+<string_table>
+
+	<!-- ============================================================================================================-->
+	<!--	Fatal Errors																					  		 -->
+	<!-- ============================================================================================================-->
+
+	<!-- Out-of-date game -->
+	<string id="st_err_outdated_game_title">
+		<text>Neplatná nebo zastaralá verze hry.</text>
+	</string>
+
+	<string id="st_err_outdated_game_what">
+		<text>Hra má neplatnou nebo zastaralou verzi. Nainstaluj prosím verzi S.T.A.L.K.E.R. Anomaly 1.5.2.</text>
+	</string>
+
+	<string id="st_err_outdated_game_why">
+		<text>Western Goods vyžaduje některé funkce přidané až ve verzi 1.5.2 a/nebo používá předběžné podmínky, které samy o sobě vyžadují verzi 1.5.2.</text>
+	</string>
+
+	<string id="st_err_outdated_game_where">
+		<text>S.T.A.L.K.E.R. Anomaly 1.5.2 si můžete stáhnout z ModDB : https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151-to-152</text>.
+	</string>
+
+
+	<!-- Missing DXML -->
+	<string id="st_err_missing_dxml_title">
+		<text>Něco chybí - DXML.</text>
+	</string>
+
+	<string id="st_err_missing_dxml_what">
+		<text>Chybí DXML. Před použitím Western Goods prosím nainstalujte nebo aktualizujte své modifikované exesy.</text>
+	</string>
+
+	<string id="st_err_missing_dxml_why">
+		<text>Western Goods vyžaduje DXML, aby se zvýšila kompatibilita s ostatními doplňky a zabránilo se přepisování vanilla souborů.</text>
+	</string>
+
+	<string id="st_err_missing_dxml_where">
+		<text>Nejnovější verzi si můžete stáhnout z Githubu : https://github.com/themrdemonized/STALKER-Anomaly-modded-exes</text>.
+	</string>
+
+)
+	<!-- Missing LUA unlocalizer -->
+	<string id="st_err_missing_unlocalizer_title">
+		<text>Něco chybí - LUA unlocalizer.</text>
+	</string>
+
+	<string id="st_err_missing_unlocalizer_what">
+		<text>Chybí LUA unlocalizer. Před použitím Western Goods prosím nainstalujte nebo aktualizujte své modifikované exesy.</text>
+	</string>
+
+	<string id="st_err_missing_unlocalizer_why">
+		<text>Western Goods vyžaduje LUA unlocalizer, aby se zvýšila kompatibilita s ostatními doplňky a zabránilo se přepisování vanilla souborů.</text>
+	</string>
+
+	<string id="st_err_missing_unlocalizer_where">
+		<text>Nejnovější verzi si můžete stáhnout z Githubu : https://github.com/themrdemonized/STALKER-Anomaly-modded-exes</text>
+	</string>
+
+
+	<!-- ============================================================================================================-->
+	<!--	Core Strings																					  		 -->
+	<!-- ============================================================================================================-->
+
+	<!-- Unpacking inventory string -->
+	<string id="st_wg_unpack">
+		<text>Rozbalit</text>
+	</string>
+
+	<!-- Čtení inventárního řetězce -->
+	<string id="st_wg_view">
+		<text>Zobrazit</text>
+	</string>
+
+	<!-- Řetězce pro použití GPS lokátoru -->
+	<string id="st_wg_gps_use_1">
+		<text>Lokalita :</text>
+	</string>
+
+	<string id="st_wg_gps_use_2">
+		<text>neznámé</text>
+	</string>
+
+	<string id="st_wg_gps_use_3">
+		<text>mimo dosah satelitů</text>
+	</string>
+
+	<string id="st_wg_gps_use_4">
+		<text>neznámé v databázi</text>
+	</string>
+
+	<!-- Řetězce pro lehčí použití -->
+	<string id="st_wg_use">
+		<text>Použití</text>
+	</string>
+
+	<string id="st_wg_fill">
+		<text>Výplň</text>
+	</string>
+
+	<string id="st_wg_bullet_point">
+		<text>-</text>
+	</string>
+
+	<string id="st_wg_missing_requirements_ext">
+		<text>Nástroj je vyžadován!</text>
+	</string>
+
+	<!-- Řetězce pro použití kufříku -->
+	<string id="st_wg_open">
+		<text>Otevřít</text>
+	</string>
+
+
+	<!-- Readable UI strings -->
+	<string id="ui_wg_dx8_retard_notice">
+		<text>Zdá se, že používáte vykreslovací rozhraní DirectX 8, může dojít k roztažení textur. Použijte modernější vykreslovač, abyste se vyhnuli problémům.</text>
+	</string>
+
+</string_table>

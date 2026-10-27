@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	<string id="st_wpn_browning_p35">
+		<text>Browning P-35</text>
+	</string>
+	<string id="st_wpn_browning_p35_descr">
+		<text>Browning Hi-Power je jednočinná poloautomatická pistole ráže 9 mm. Vychází z myšlenek amerického vynálezce střelných zbraní Johna Browninga, byla vytvořena a patentována v roce 1922 a později patentována společností FN Herstal. Browning zemřel v roce 1926, dříve než dokončil vývoj sériové verze, ale konstruktér zbraní FN Dieudonne Saive ji plně vyvinul. Pistole Hi-Power se vyznačovala kapacitou zásobníku na 13 nábojů, což bylo dvakrát více než u soudobých konstrukcí, jako byl Luger nebo Mauser 1910. Podle modré povrchové úpravy a "hlavňových mířidel" je zřejmé, že se jedná o klasickou, originální P-35 vyrobenou v Belgii.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Belgie, Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Browning Arms, FN Herstal\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1914\n
+		</text>
+	</string>
+
+	<string id="st_wpn_browning_mk3">
+		<text>Browning Hi-Power Mark III</text>
+	</string>
+	<string id="st_wpn_browning_mk3_descr">
+		<text>Browning Hi-Power Mark III je modernizací klasické pistole Browning HP, vyrobené v roce 1988. Je to také standardní zbraň australských obranných sil. Velkou změnou by zde byla lepší spolehlivost, kterou původní Browning postrádal, a také lepší železná mířidla, vylepšený chod a také lepší zpětný ráz. Pokud jde o zbraň The Zone, jedná se o klasickou zbraň; zbraň pro všechny případy. Téměř každá frakce měla tendenci ji používat ještě před Prvním obléháním Černobylu, ale kupodivu během Druhého obléhání Černobylu byla neuvěřitelně vzácná, dokud konečně nedorazil nový doplněk po cestě na Cestu na sever.\n \n
+		%c[0,255,255,255]PROPERTIES:\n
+		%c[d_cyan] - %c[0,255,255,255]Původ: %c[ui_gray_1]Belgie, Spojené státy\n
+		%c[d_cyan] - %c[0,255,255,255]Výrobce: %c[ui_gray_1]Browning Arms, FN Herstal\n
+		%c[d_cyan] - %c[0,255,255,255]Rok výroby: %c[ui_gray_1]1988\n
+		</text>
+	</string>
+
+
+</string_table>

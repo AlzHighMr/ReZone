@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<!-- Sorter -->
+<string id="st_ui_craft_artefacts_container">
+    <text>Artefakty (v kontejnerech)</text>
+</string>
+<string id="st_item_use_empower">
+    <text>posílit artefakty</text>
+</string>
+<string id="st_item_use_fuse">
+    <text>sloučit artefakty</text>
+</string>
+<string id="st_item_use_craft">
+    <text>otevřít pracovní stůl</text>
+</string>
+<string id="st_ui_itm_repair_support_grok_artefacts">
+    <text>Artefakt k roztavení</text>
+</string>
+<string id="st_ui_itm_repair_base_grok_artefacts">
+    <text>Artefakt k posílení</text>
+</string>
+<string id="st_melter">
+    <text>Tavič na artefakty</text>
+</string>
+<string id="st_melter_desc">
+    <text>Podivné a vyspělé zařízení vytvořené profesorem Sakharovem. Tavicí zařízení na artefakty (AM) umožňuje manipulaci s materiály artefaktů. Tento nástroj je napájen energií obsaženou v artefaktech, kterou lze získat a skladovat pro další použití roztavením artefaktů. Tavicí zařízení na artefakty také dokáže posílit artefakty stejného druhu nebo sloučit artefakty různého druhu a vytvořit nové. Chemické a fyzikální procesy, které se v něm odehrávají, nejsou dosud plně pochopeny. Nedávné výzkumy naznačují, že nástroj dokáže využít moc Noosféry. Další experimenty ukázaly, že Tavicí zařízení na artefakty funguje pouze v Zóně. Tyto poznatky rychle přiměly většinu vysoce postavených stopařů, aby si takový nástroj pořídili a vytvářeli tak silnější a dražší artefakty pro černý trh nebo pro vlastní použití.\n \n
+    %c[0,255,255,255]Charakteristiky operačního systému Tavicího zařízení na artefakty (AMOS) v2.15a, nainstalovaného v tomto zařízení:\n%c[d_cyan] • Tavení artefaktů: Držte bezpečnostní klávesu (Levý Alt) a přesouvejte Tavicí zařízení na artefakty nad libovolným artefaktem, abyste ho roztavili a znovu naplnili nádrž AM. Čím jedinečnější je artefakt, tím více energie se získá.\n
+    %c[d_cyan] • Posílení artefaktů: Vyberte možnost "posílit artefakty" v hlavním menu AMOS a sloučte artefakty stejného druhu, abyste je posílili.\n%c[d_cyan] • Sloučení artefaktů: Vyberte možnost "sloučit artefakty" v hlavním menu AMOS a otevřete podmenu receptů, abyste vytvořili nový artefakt ze 2 nebo více artefaktů. Výsledný artefakt bude mít průměrný stav svých složek. AMOS již obsahuje známé a *bezpečné* kombinace artefaktů.\n%c[d_cyan] • AMOS obsahuje vestavěné bezpečnostní protokoly, které zabrání jakýmkoli poruchám. Pokud nástroj odmítá pracovat, ujistěte se, že nádrž AM obsahuje více než 10 % (1 použití) své celkové kapacity.\n
+    </text>
+</string>
+<string id="st_grizzly">
+    <text>Detektor Grizzly</text>
+</string>
+<string id="st_grizzly_desc">
+    <text>Tento detektor anomální aktivity je vylepšenou verzí detektoru Medvěda a dokáže detekovat všechny známé signatury artefaktů stejně jako detektory Svarog nebo Veles. Tento vylepšený Medvěd je zejména oblíbený mezi stopaři, kteří loví artefakty v noci, protože jeho jednoduchý displej je kompatibilní s nočním viděním.\n \n
+    %c[ui_gray_3]VLASTNOSTI:\n
+    %c[d_blue] • %c[ui_gray_2] střední spotřeba elektrické energie\n
+    </text>
+</string>
+	
+</string_table>

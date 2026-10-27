@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+
+
+	<string id="st_experience_perks_bsp_author_option_name">
+		<text>Base Skills Pack v1.2</text>
+	</string>
+	
+	
+<!--
+
+			Strong Back
+
+-->
+	<string id="st_experience_perk_bsp_strong_back_name">
+	<text>Silná Záda</text>
+</string>
+<string id="st_experience_perk_bsp_strong_back_desc_1">
+	<text>Tvá záda jsou odolnější vůči těžkým břemenům. \n \n
+	%c[ui_gray_3]SCHOPNOST:\n
+	%c[d_blue] • %c[ui_gray_2] zvyšuje tvou maximální nosnost o %c[d_green]$weightkg
+	</text>
+</string>
+<string id="st_experience_perk_bsp_strong_back_desc_2">
+	<text>Tvá záda jsou odolnější vůči těžkým břemenům. \n \n
+	%c[ui_gray_3]SCHOPNOST:\n
+	%c[d_blue] • %c[ui_gray_2] zvyšuje tvou maximální nosnost o %c[d_green]$weightkg
+	</text>
+</string>
+<string id="st_experience_perk_bsp_strong_back_desc_3">
+	<text>Tvá záda jsou odolnější vůči těžkým břemenům. \n \n
+	%c[ui_gray_3]SCHOPNOST:\n
+	%c[d_blue] • %c[ui_gray_2] zvyšuje tvou maximální nosnost o %c[d_green]$weightkg
+	</text>
+</string>
+<string id="st_experience_perk_bsp_strong_back_desc_4">
+	<text>Tvá záda jsou odolnější vůči těžkým břemenům. \n \n
+	%c[ui_gray_3]SCHOPNOST:\n
+	%c[d_blue] • %c[ui_gray_2] zvyšuje tvou maximální nosnost o %c[d_green]$weightkg
+	</text>
+</string>
+<string id="st_experience_perk_bsp_strong_back_desc_5">
+	<text>Ani Muly by toho tolik nenosily! \n \n
+	%c[ui_gray_3]SCHOPNOST:\n
+	%c[d_blue] • %c[ui_gray_2] zvyšuje tvou maximální nosnost o %c[d_green]$weightkg
+	</text>
+</string>
+
+
+
+<!--
+
+			Expert Pistols
+
+-->
+<string id="st_experience_perk_bsp_expert_pistol_name">
+    <text>Expert s Pistolí</text>
+</string>
+<string id="st_experience_perk_bsp_expert_pistol_desc_1">
+    <text>Stal ses lepším v ovládání pistolí. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt pistolí o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_pistol_desc_2">
+    <text>Stal ses lepším v ovládání pistolí. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt pistolí o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_pistol_desc_3">
+    <text>Stal ses lepším v ovládání pistolí. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt pistolí o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_pistol_desc_4">
+    <text>Stal ses lepším v ovládání pistolí. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt pistolí o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_pistol_desc_5">
+    <text>Stal ses lepším v ovládání pistolí. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt pistolí o %c[d_green]$dmg_mult%\n
+    %c[d_blue] • %c[d_orange] při zásahu nepřátelům existuje šance, že jim vypadne z ruky jejich zbraň
+    </text>
+</string>
+
+
+
+<!--
+
+			Expert SMGs
+
+-->
+	<string id="st_experience_perk_bsp_expert_smg_name">
+    <text>Expert se Samopaly</text>
+</string>
+<string id="st_experience_perk_bsp_expert_smg_desc_1">
+    <text>Stal ses lepším v ovládání samopalů. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt ze samopalů o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_smg_desc_2">
+    <text>Stal ses lepším v ovládání samopalů. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt ze samopalů o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_smg_desc_3">
+    <text>Stal ses lepším v ovládání samopalů. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt ze samopalů o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_smg_desc_4">
+    <text>Stal ses lepším v ovládání samopalů. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt ze samopalů o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_smg_desc_5">
+    <text>Stal ses lepším v ovládání samopalů. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt ze samopalů o %c[d_green]$dmg_mult%\n
+    %c[d_blue] • %c[d_orange] při zásahu nepřátelům existuje šance, že jim vypadne z ruky jejich zbraň
+    </text>
+</string>
+
+
+<!--
+
+			Expert Shotguns
+
+-->
+	<string id="st_experience_perk_bsp_expert_shotgun_name">
+    <text>Expert na Brokovnice</text>
+</string>
+<string id="st_experience_perk_bsp_expert_shotgun_desc_1">
+    <text>Stal ses lepším v ovládání brokovek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z brokovek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_shotgun_desc_2">
+    <text>Stal ses lepším v ovládání brokovek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z brokovek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_shotgun_desc_3">
+    <text>Stal ses lepším v ovládání brokovek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z brokovek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_shotgun_desc_4">
+    <text>Stal ses lepším v ovládání brokovek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z brokovek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_shotgun_desc_5">
+    <text>Stal ses lepším v ovládání brokovek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z brokovek o %c[d_green]$dmg_mult%\n
+    %c[d_blue] • %c[d_orange] při zásahu nepřátelům existuje šance, že jim vypadne z ruky jejich zbraň
+    </text>
+</string>
+
+
+
+<!--
+
+			Expert Assault Rifles
+
+-->
+	<string id="st_experience_perk_bsp_expert_rifle_name">
+    <text>Expert na Útočné Pušky</text>
+</string>
+<string id="st_experience_perk_bsp_expert_rifle_desc_1">
+    <text>Stal ses lepším v ovládání útočných pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z útočných pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_rifle_desc_2">
+    <text>Stal ses lepším v ovládání útočných pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z útočných pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_rifle_desc_3">
+    <text>Stal ses lepším v ovládání útočných pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z útočných pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_rifle_desc_4">
+    <text>Stal ses lepším v ovládání útočných pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z útočných pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_rifle_desc_5">
+    <text>Stal ses lepším v ovládání útočných pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z útočných pušek o %c[d_green]$dmg_mult%\n
+    %c[d_blue] • %c[d_orange] při zásahu nepřátelům existuje šance, že jim vypadne z ruky jejich zbraň
+    </text>
+</string>
+
+
+
+<!--
+
+			Expert Sniper rifles
+
+-->
+<string id="st_experience_perk_bsp_expert_sniper_name">
+    <text>Expert na Odstřelovací Pušky</text>
+</string>
+<string id="st_experience_perk_bsp_expert_sniper_desc_1">
+    <text>Stal ses lepším v ovládání odstřelovacích pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z odstřelovacích pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_sniper_desc_2">
+    <text>Stal ses lepším v ovládání odstřelovacích pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z odstřelovacích pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_sniper_desc_3">
+    <text>Stal ses lepším v ovládání odstřelovacích pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z odstřelovacích pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_sniper_desc_4">
+    <text>Stal ses lepším v ovládání odstřelovacích pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z odstřelovacích pušek o %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_expert_sniper_desc_5">
+    <text>Stal ses lepším v ovládání odstřelovacích pušek. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvůj poškozující efekt z odstřelovacích pušek o %c[d_green]$dmg_mult%\n
+    %c[d_blue] • %c[d_orange] při zásahu nepřátelům existuje šance, že jim vypadne z ruky jejich zbraň
+    </text>
+</string>
+
+
+
+<!--
+
+			Master hunter
+
+-->
+	<string id="st_experience_perk_bsp_master_hunter_name">
+    <text>Mistr Lovec</text>
+</string>
+<string id="st_experience_perk_bsp_master_hunter_desc_1">
+    <text>Lovčí vybavení se stalo ještě užitečnější! S ním pečlivě zkoumáte těla mutantů před tím, než je rozřežete. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] při vybavení %c[d_orange]"Lovčího vybavení"%c[ui_gray_2], poprvé, kdy zkoumáte mutanta, máte %c[d_green]$part_chance% %c[ui_gray_2]šanci najít další část mutantního těla, kterou lze rozřezat
+    </text>
+</string>
+<string id="st_experience_perk_bsp_master_hunter_desc_2">
+    <text>Lovčí vybavení se stalo ještě užitečnější! S ním pečlivě zkoumáte těla mutantů před tím, než je rozřežete. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] při vybavení %c[d_orange]"Lovčího vybavení"%c[ui_gray_2], poprvé, kdy zkoumáte mutanta, máte %c[d_green]$part_chance% %c[ui_gray_2]šanci najít další část mutantního těla, kterou lze rozřezat
+    </text>
+</string>
+<string id="st_experience_perk_bsp_master_hunter_desc_3">
+    <text>Lovčí vybavení se stalo ještě užitečnější! S ním pečlivě zkoumáte těla mutantů před tím, než je rozřežete. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] při vybavení %c[d_orange]"Lovčího vybavení"%c[ui_gray_2], poprvé, kdy zkoumáte mutanta, máte %c[d_green]$part_chance% %c[ui_gray_2]šanci najít další část mutantního těla, kterou lze rozřežat
+    </text>
+</string>
+<string id="st_experience_perk_bsp_master_hunter_desc_4">
+    <text>Naučil jsi se všechny dovednosti lovu mutantů a stal ses nepřekonatelným lovčím! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] nyní není třeba %c[d_orange]"Lovčího vybavení" %c[ui_gray_2]pro %c[d_green]$part_chance% %c[ui_gray_2]šanci najít další část mutantního těla, kterou lze rozřezat
+    </text>
+</string>
+
+
+
+<!--
+
+			Lead stomach
+
+-->
+	<string id="st_experience_perk_bsp_lead_stomach_name">
+    <text>Olověný žaludek</text>
+</string>
+<string id="st_experience_perk_bsp_lead_stomach_desc_1">
+    <text>Jídlo syrové a kazné má menší škodlivý vliv na tvé zdraví. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] syrové maso a kazné jídlo, při konzumaci, způsobuje o %c[d_green]$reduce_dmg% %c[ui_gray_2]méně poškození a ozáření
+    </text>
+</string>
+<string id="st_experience_perk_bsp_lead_stomach_desc_2">
+    <text>Jídlo syrové a kazné má menší škodlivý vliv na tvé zdraví. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] syrové maso a kazné jídlo, při konzumaci, způsobuje o %c[d_green]$reduce_dmg% %c[ui_gray_2]méně poškození a ozáření
+    </text>
+</string>
+<string id="st_experience_perk_bsp_lead_stomach_desc_3">
+    <text>Jídlo syrové a kazné má menší škodlivý vliv na tvé zdraví. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] syrové maso a kazné jídlo, při konzumaci, způsobuje o %c[d_green]$reduce_dmg% %c[ui_gray_2]méně poškození a ozáření
+    </text>
+</string>
+<string id="st_experience_perk_bsp_lead_stomach_desc_4">
+    <text>Nyní je tvůj žaludek schopen strávit jaderný reaktor! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] syrové maso a kazné jídlo, při konzumaci, způsobuje o %c[d_green]$reduce_dmg% %c[ui_gray_2]méně poškození a ozáření
+    </text>
+</string>
+
+
+
+<!--
+
+			Adrenalin
+
+-->
+	<string id="st_experience_perk_bsp_adrenalin_name">
+    <text>Adrenalin</text>
+</string>
+<string id="st_experience_perk_bsp_adrenalin_desc_1">
+    <text>Když je tvůj život v ohrožení, vždy najdeš sílu uniknout z jakékoli situace. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když tvé zdraví klesne pod %c[d_red]$hp_limit% %c[ui_gray_2]- tvá rychlost pohybu se zvýší o %c[d_green]$speed_bonus%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_adrenalin_desc_2">
+    <text>Když je tvůj život v ohrožení, vždy najdeš sílu uniknout z jakékoli situace. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když tvé zdraví klesne pod %c[d_red]$hp_limit% %c[ui_gray_2]- tvá rychlost pohybu se zvýší o %c[d_green]$speed_bonus%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_adrenalin_desc_3">
+    <text>Když je tvůj život v ohrožení, vždy najdeš sílu uniknout z jakékoli situace. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když tvé zdraví klesne pod %c[d_red]$hp_limit% %c[ui_gray_2]- tvá rychlost pohybu se zvýší o %c[d_green]$speed_bonus%
+    </text>
+</string>
+
+
+
+<!--
+
+			Sniper
+
+-->
+	<string id="st_experience_perk_bsp_sniper_name">
+    <text>Odstřelovač</text>
+</string>
+<string id="st_experience_perk_bsp_sniper_desc_1">
+    <text>Když pohlížíš přes zaměřovač, lépe vidíš slabiny nepřátel a víš, kam střílet. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvé poškození při zaměření na %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_sniper_desc_2">
+    <text>Když pohlížíš přes zaměřovač, lépe vidíš slabiny nepřátel a víš, kam střílet. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvé poškození při zaměření na %c[d_green]$dmg_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_sniper_desc_3">
+    <text>Když pohlížíš přes zaměřovač, lépe vidíš slabiny nepřátel a víš, kam střílet. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje tvé poškození při zaměření na %c[d_green]$dmg_mult%
+    </text>
+</string>
+
+
+
+<!--
+
+			Toughness
+
+-->
+<string id="st_experience_perk_bsp_toughness_name">
+    <text>Tvrdost</text>
+</string>
+<string id="st_experience_perk_bsp_toughness_desc_1">
+    <text>Tvá kůže se stala tvrdá jako kámen. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] snižuje poškození, které přijmeš o %c[d_green]$reduce_dmg% %c[ui_gray_2]z úderů, popálenin a výbuchů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_toughness_desc_2">
+    <text>Tvá kůže se stala tvrdá jako kámen. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] snižuje poškození, které přijmeš o %c[d_green]$reduce_dmg% %c[ui_gray_2]z úderů, popálenin a výbuchů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_toughness_desc_3">
+    <text>Tvá kůže se stala tvrdá jako kámen. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] snižuje poškození, které přijmeš o %c[d_green]$reduce_dmg% %c[ui_gray_2]z úderů, popálenin a výbuchů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_toughness_desc_4">
+    <text>Tvá kůže se stala tvrdá jako kámen. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] snižuje poškození, které přijmeš o %c[d_green]$reduce_dmg% %c[ui_gray_2]z úderů, popálenin a výbuchů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_toughness_desc_5">
+    <text>Tvá kůže se stala tvrdá jako kámen. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] snižuje poškození, které přijmeš o %c[d_green]$reduce_dmg% %c[ui_gray_2]z úderů, popálenin a výbuchů
+    </text>
+</string>
+
+
+
+<!--
+
+			Skilled
+
+-->
+	<string id="st_experience_perk_bsp_skilled_name">
+    <text>Zkušený</text>
+</string>
+<string id="st_experience_perk_bsp_skilled_desc_1">
+    <text>Tvoje dovednosti jsou na bodě varu. Teď ti každá akce přináší ještě více zkušeností. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje množství zkušeností, které získáš ze všech zdrojů o %c[d_green]$xp_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_skilled_desc_2">
+    <text>Tvoje dovednosti jsou na bodě varu. Teď ti každá akce přináší ještě více zkušeností. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje množství zkušeností, které získáš ze všech zdrojů o %c[d_green]$xp_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_skilled_desc_3">
+    <text>Tvoje dovednosti jsou na bodě varu. Teď ti každá akce přináší ještě více zkušeností. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje množství zkušeností, které získáš ze všech zdrojů o %c[d_green]$xp_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_skilled_desc_4">
+    <text>Tvoje dovednosti jsou na bodě varu. Teď ti každá akce přináší ještě více zkušeností. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje množství zkušeností, které získáš ze všech zdrojů o %c[d_green]$xp_mult%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_skilled_desc_5">
+    <text>Tvoje dovednosti jsou na bodě varu. Teď ti každá akce přináší ještě více zkušeností. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje množství zkušeností, které získáš ze všech zdrojů o %c[d_green]$xp_mult% \n \n
+    %c[d_cyan] • %c[ui_gray_2] existuje malá šance na získání %c[d_orange]dvojnásobného %c[ui_gray_2]zkušenostního bonusu ze dovednosti za akci
+    </text>
+</string>
+
+
+
+<!--
+
+			Merchant
+
+-->
+	<string id="st_experience_perk_bsp_merchant_name">
+    <text>Obchodník</text>
+</string>
+<string id="st_experience_perk_bsp_merchant_desc_1">
+    <text>Stalkerové jsou s tebou vstřícnější při obchodování. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] ceny se zlepšují o %c[d_green]$reduce_price%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_merchant_desc_2">
+    <text>Stalkerové jsou s tebou vstřícnější při obchodování. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] ceny se zlepšují o %c[d_green]$reduce_price%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_merchant_desc_3">
+    <text>Stalkerové jsou s tebou vstřícnější při obchodování. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] ceny se zlepšují o %c[d_green]$reduce_price%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_merchant_desc_4">
+    <text>I Sidorovič nemůže odolat tvému charisma! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] ceny se zlepšují o %c[d_green]$reduce_price%
+    </text>
+</string>
+
+
+
+<!--
+
+			Scrounger
+
+-->
+	<string id="st_experience_perk_bsp_scrounger_name">
+    <text>Skrblík</text>
+</string>
+<string id="st_experience_perk_bsp_scrounger_desc_1">
+    <text>Pozorně prohledáváš skrýše a mrtvoly. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] můžeš najít až %c[d_green]dvě %c[ui_gray_2]dodatečné předměty v úkrytech a mrtvolách stalkerů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_scrounger_desc_2">
+    <text>Pozorně prohledáváš skrýše a mrtvoly. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] můžeš najít až %c[d_green]tři %c[ui_gray_2]dodatečné předměty v úkrytech a mrtvolách stalkerů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_scrounger_desc_3">
+    <text>Pozorně prohledáváš skrýše a mrtvoly. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] můžeš najít až %c[d_green]čtyři %c[ui_gray_2]dodatečné předměty v úkrytech a mrtvolách stalkerů
+    </text>
+</string>
+<string id="st_experience_perk_bsp_scrounger_desc_4">
+    <text>Pozorně prohledáváš skrýše a mrtvoly. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] můžeš najít až %c[d_green]pět %c[ui_gray_2]dodatečných předmětů v úkrytech a mrtvolách stalkerů
+    </text>
+</string>
+
+
+
+<!--
+
+			Tinkerer
+
+-->
+<string id="st_experience_perk_bsp_tinkerer_name">
+    <text>Řemeslník</text>
+</string>
+<string id="st_experience_perk_bsp_tinkerer_desc_1">
+    <text>Schopnost vytvářet věci z odpadu je užitečná věc. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] k vytvoření předmětu je potřeba o %c[d_green]$reduce_count %c[ui_gray_2]méně spotřebitelného předmětu
+    </text>
+</string>
+<string id="st_experience_perk_bsp_tinkerer_desc_2">
+    <text>Schopnost vytvářet věci z odpadu je užitečná věc. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] k vytvoření předmětu je potřeba o %c[d_green]$reduce_count %c[ui_gray_2]méně spotřebitelného předmětu
+    </text>
+</string>
+<string id="st_experience_perk_bsp_tinkerer_desc_3">
+    <text>Schopnost vytvářet věci z odpadu je užitečná věc. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] k vytvoření předmětu je potřeba o %c[d_green]$reduce_count %c[ui_gray_2]méně spotřebitelného předmětu
+    </text>
+</string>
+
+
+
+<!--
+
+			Vampirism
+
+-->
+	<string id="st_experience_perk_bsp_vampirism_name">
+    <text>Vampirismus</text>
+</string>
+<string id="st_experience_perk_bsp_vampirism_desc_1">
+    <text>Dlouhý pobyt v Zóně způsobil v tobě mutaci. Nyní, když způsobuješ bolest nepřátelům, živíš se jejich životní energií. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zadávání poškození nepřátelům v noci %c[d_orange](od 21 do 6 hodin)%c[ui_gray_2], tě léčí o %c[d_green]$hp_restore%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_vampirism_desc_2">
+    <text>Dlouhý pobyt v Zóně způsobil v tobě mutaci. Nyní, když způsobuješ bolest nepřátelům, živíš se jejich životní energií. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zadávání poškození nepřátelům v noci %c[d_orange](od 21 do 6 hodin)%c[ui_gray_2], tě léčí o %c[d_green]$hp_restore%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_vampirism_desc_3">
+    <text>Dlouhý pobyt v Zóně způsobil v tobě mutaci. Nyní, když způsobuješ bolest nepřátelům, živíš se jejich životní energií. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zadávání poškození nepřátelům v noci %c[d_orange](od 21 do 6 hodin)%c[ui_gray_2], tě léčí o %c[d_green]$hp_restore%
+    </text>
+</string>
+
+
+
+<!--
+
+			Medic
+
+-->
+	<string id="st_experience_perk_bsp_medic_name">
+    <text>Lékař</text>
+</string>
+<string id="st_experience_perk_bsp_medic_desc_1">
+    <text>V lékařství je vůle nejdůležitější. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[ui_gray_2]zvyšuje účinnost následujících léků: \n \n
+    %c[d_red] • %c[ui_gray_2] Obvazy/tourniquety o %c[d_green]5%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_medic_desc_2">
+    <text>V lékařství je vůle nejdůležitější. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[ui_gray_2]zvyšuje účinnost následujících léků: \n \n
+    %c[d_red] • %c[ui_gray_2] Obvazy/tourniquety o %c[d_green]10% \n
+    %c[d_orange] • %c[ui_gray_2] Medikity o %c[d_green]5%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_medic_desc_3">
+    <text>V lékařství je vůle nejdůležitější. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[ui_gray_2]zvyšuje účinnost následujících léků: \n \n
+    %c[d_red] • %c[ui_gray_2] Obvazy/tourniquety o %c[d_green]15% \n
+    %c[d_orange] • %c[ui_gray_2] Medikity o %c[d_green]10% \n
+    %c[d_cyan] • %c[ui_gray_2] Stimulanty o %c[d_green]5%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_medic_desc_4">
+    <text>V lékařství je vůle nejdůležitější. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[ui_gray_2]zvyšuje účinnost následujících léků: \n \n
+    %c[d_red] • %c[ui_gray_2] Obvazy/tourniquety o %c[d_green]20% \n
+    %c[d_orange] • %c[ui_gray_2] Medikity o %c[d_green]15% \n
+    %c[d_cyan] • %c[ui_gray_2] Stimulanty o %c[d_green]10%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_medic_desc_5">
+    <text>V lékařství je vůle nejdůležitější. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[ui_gray_2]zvyšuje účinnost následujících léků: \n \n
+    %c[d_red] • %c[ui_gray_2] Obvazy/tourniquety o %c[d_green]25% \n
+    %c[d_orange] • %c[ui_gray_2] Medikity o %c[d_green]20% \n
+    %c[d_cyan] • %c[ui_gray_2] Stimulanty o %c[d_green]15% \n
+    %c[d_blue] • %c[ui_gray_2] Malé přežití sady o %c[d_green]15%
+    </text>
+</string>
+
+
+
+<!--
+
+			No Rules
+
+-->
+	<string id="st_experience_perk_bsp_no_rules_name">
+    <text>Bez pravidel</text>
+</string>
+<string id="st_experience_perk_bsp_no_rules_desc_1">
+    <text>K čertu s pravidly! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když vystřelíš svůj poslední náboj, máš %c[d_green]$reload_chance% %c[ui_gray_2]šanci okamžitě znovu nabít svou zbraň \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] pokud nemáš typ munice, který zbraň právě používá, ve svém inventáři, zbraň bude nabitá jiným typem munice, kterou máš, ale pouze pokud je kvalitní!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_no_rules_desc_2">
+    <text>K čertu s pravidly! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když vystřelíš svůj poslední náboj, máš %c[d_green]$reload_chance% %c[ui_gray_2]šanci okamžitě znovu nabít svou zbraň \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] pokud nemáš typ munice, který zbraň právě používá, ve svém inventáři, zbraň bude nabitá jiným typem munice, kterou máš, ale pouze pokud je kvalitní!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_no_rules_desc_3">
+    <text>K čertu s pravidly! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] když vystřelíš svůj poslední náboj, máš %c[d_green]$reload_chance% %c[ui_gray_2]šanci okamžitě znovu nabít svou zbraň \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] pokud nemáš typ munice, který zbraň právě používá, ve svém inventáři, zbraň bude nabitá jiným typem munice, kterou máš, ale pouze pokud je kvalitní!
+    </text>
+</string>
+
+
+
+<!--
+
+			Not Today
+
+-->
+<string id="st_experience_perk_bsp_not_today_name">
+    <text>Dnes ne</text>
+</string>
+<string id="st_experience_perk_bsp_not_today_desc_1">
+    <text>DNES NE, SATANE! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] můžeš uniknout smrti \n
+    %c[d_red] • %c[ui_gray_2] doba dobytí: %c[d_orange]$cooldown v reálném čase (hodiny)
+    </text>
+</string>
+<string id="st_experience_perk_bsp_not_today_proc_tip">
+    <text>%c[d_orange]Unikl jsi smrti...</text>
+</string>
+<string id="st_experience_perk_bsp_not_today_ready_tip">
+    <text>%c[d_green]Dovednost: Není dnes - Připraveno!</text>
+</string>
+
+
+<!--
+
+			Knows his own worth
+
+-->
+	
+
+<string id="st_experience_perk_bsp_knows_his_own_worth_name">
+    <text>Jistí si svou hodnotu</text>
+</string>
+<string id="st_experience_perk_bsp_knows_his_own_worth_desc_1">
+    <text>K odpovídající práci by měla existovat odpovídající odměna. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] dostáváš %c[d_green]$money_reward% %c[ui_gray_2]více peněz za splnění úkolů \n
+    %c[d_blue] • %c[ui_gray_2] máš šanci získat souřadnice dalšího úkrytu \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] další úkryt lze získat pouze pro ty úkoly, pro které je původně možné získat úkryt, a šance na získání je vždy stejná jako úroveň postavy!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_knows_his_own_worth_desc_2">
+    <text>K odpovídající práci by měla existovat odpovídající odměna. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] dostáváš %c[d_green]$money_reward% %c[ui_gray_2]více peněz za splnění úkolů \n
+    %c[d_blue] • %c[ui_gray_2] máš šanci získat souřadnice dalšího úkrytu \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] další úkryt lze získat pouze pro ty úkoly, pro které je původně možné získat úkryt, a šance na získání je vždy stejná jako úroveň postavy!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_knows_his_own_worth_desc_3">
+    <text>K odpovídající práci by měla existovat odpovídající odměna. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] dostáváš %c[d_green]$money_reward% %c[ui_gray_2]více peněz za splnění úkolů \n
+    %c[d_blue] • %c[ui_gray_2] máš šanci získat souřadnice dalšího úkrytu \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] další úkryt lze získat pouze pro ty úkoly, pro které je původně možné získat úkryt, a šance na získání je vždy stejná jako úroveň postavy!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_knows_his_own_worth_desc_4">
+    <text>K odpovídající práci by měla existovat odpovídající odměna. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] dostáváš %c[d_green]$money_reward% %c[ui_gray_2]více peněz za splnění úkolů \n
+    %c[d_blue] • %c[ui_gray_2] máš šanci získat souřadnice dalšího úkrytu \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] další úkryt lze získat pouze pro ty úkoly, pro které je původně možné získat úkryt, a šance na získání je vždy stejná jako úroveň postavy!
+    </text>
+</string>
+<string id="st_experience_perk_bsp_knows_his_own_worth_desc_5">
+    <text>K odpovídající práci byla by měla existovat odpovídající odměna. \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] dostáváš %c[d_green]$money_reward% %c[ui_gray_2]více peněz za splnění úkolů \n
+    %c[d_blue] • %c[ui_gray_2] máš šanci získat souřadnice dalšího úkrytu \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] další úkryt lze získat pouze pro ty úkoly, pro které je původně možné získat úkryt, a šance na získání je vždy stejná jako úroveň postavy!
+    </text>
+</string>
+
+
+<!--
+
+			Hardy
+
+-->
+	
+
+<string id="st_experience_perk_bsp_hardy_name">
+    <text>Vytrvalý</text>
+</string>
+<string id="st_experience_perk_bsp_hardy_desc_1">
+    <text>Není čas ztrácet čas! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje obnovu vytrvalosti o %c[d_green]$bonus_power%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_hardy_desc_2">
+    <text>Není čas ztrácet čas! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje obnovu vytrvalosti o %c[d_green]$bonus_power%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_hardy_desc_3">
+    <text>Není čas ztrácet čas! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje obnovu vytrvalosti o %c[d_green]$bonus_power%
+    </text>
+</string>
+<string id="st_experience_perk_bsp_hardy_desc_4">
+    <text>Není čas ztrácet čas! \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] zvyšuje obnovu vytrvalosti o %c[d_green]$bonus_power%
+    </text>
+</string>
+
+<!--
+
+			Lucifer's wrath
+
+-->
+<string id="st_experience_perk_bsp_lucifers_wrath_name">
+    <text>Hněv Lucifera</text>
+</string>
+<string id="st_experience_perk_bsp_lucifers_wrath_desc_1">
+    <text>V každém z nás se skrývají démoni... \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] máš aktivní schopnost, po jejímž aktivování získáš následující efekty \n \n
+    %c[d_green]EFEKTY HNĚVU LUCIFERA:\n
+    %c[d_green] • %c[ui_gray_2] doba trvání: %c[d_green]$duration sekund \n
+    %c[d_green] • %c[ui_gray_2] regenerace zdraví: %c[d_green]+$hp_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] okamžitá %c[d_green]hojení ran \n
+    %c[d_green] • %c[ui_gray_2] regenerace psychického zdraví: %c[d_green]+$psy_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] regenerace staminu: %c[d_green]+$power_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] maximální nosnost: %c[d_green]+$weight kg \n
+    %c[d_green] • %c[ui_gray_2] snížení přijímaného poškození: %c[d_green]-$dmg_immun% \n
+    %c[d_green] • %c[ui_gray_2] máš %c[d_green]$kill_chance% šanci %c[ui_gray_2]vystřelit explozivní náboj, který exploduje a zasáhne všechny nepřátele v okruhu 3 metrů \n
+    %c[d_orange] • %c[ui_gray_2] doba do zbranění: %c[d_orange]$cooldown sekund \n
+    %c[d_red] • %c[ui_gray_2] po skončení schopnosti způsobí hněv zatemnění vědomí a snížení psychického zdraví o %c[d_red]-50% \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] Pro aktivaci schopnosti stiskni a podrž klávesu [$$ACTION_USE$$]. \n
+    %c[d_orange] • %c[ui_gray_2] Pokud máš artefakt %c[d_orange]"Lucifer"%c[ui_gray_2], doba trvání hněvu je %c[d_green]zdvojnásobena %c[d_red](VYŽADUJE MOD "ARTEFAKTY NA ZÁKLADĚ DOVEDNOSTÍ")
+    </text>
+</string>
+
+	<string id="st_experience_perk_bsp_lucifers_wrath_desc_2">
+    <text>V každém z nás se skrývají démoni... \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] máš aktivní schopnost, po jejímž aktivování získáš následující efekty \n \n
+    %c[d_green]EFEKTY HNĚVU LUCIFERA:\n
+    %c[d_green] • %c[ui_gray_2] doba trvání: %c[d_green]$duration sekund \n
+    %c[d_green] • %c[ui_gray_2] regenerace zdraví: %c[d_green]+$hp_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] okamžité %c[d_green]hojení ran \n
+    %c[d_green] • %c[ui_gray_2] regenerace psychického zdraví: %c[d_green]+$psy_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] regenerace staminu: %c[d_green]+$power_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] maximální nosnost: %c[d_green]+$weight kg \n
+    %c[d_green] • %c[ui_gray_2] snížení přijímaného poškození: %c[d_green]-$dmg_immun% \n
+    %c[d_green] • %c[ui_gray_2] máš %c[d_green]$kill_chance% šanci %c[ui_gray_2]vystřelit explozivní náboj, který exploduje a zasáhne všechny nepřátele v okruhu 3 metrů \n
+    %c[d_orange] • %c[ui_gray_2] doba do zbranění: %c[d_orange]$cooldown sekund \n
+    %c[d_red] • %c[ui_gray_2] po skončení schopnosti způsobí hněv zatemnění vědomí a snížení psychického zdraví o %c[d_red]-35% \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] Pro aktivaci schopnosti stiskni a podrž klávesu [$$ACTION_USE$$]. \n
+    %c[d_orange] • %c[ui_gray_2] Pokud máš artefakt %c[d_orange]"Lucifer"%c[ui_gray_2], doba trvání hněvu je %c[d_green]zdvojnásobena %c[d_red](VYŽADUJE MOD "ARTEFAKTY NA ZÁKLADĚ DOVEDNOSTÍ")
+    </text>
+</string>
+
+	<string id="st_experience_perk_bsp_lucifers_wrath_desc_3">
+    <text>V každém z nás se skrývají démoni... \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] máš aktivní schopnost, po jejímž aktivování získáš následující efekty \n \n
+    %c[d_green]EFEKTY HNĚVU LUCIFERA:\n
+    %c[d_green] • %c[ui_gray_2] doba trvání: %c[d_green]$duration sekund \n
+    %c[d_green] • %c[ui_gray_2] regenerace zdraví: %c[d_green]+$hp_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] okamžité %c[d_green]hojení ran \n
+    %c[d_green] • %c[ui_gray_2] regenerace psychického zdraví: %c[d_green]+$psy_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] regenerace staminu: %c[d_green]+$power_res%/sekundu \n
+    %c[d_green] • %c[ui_gray_2] maximální nosnost: %c[d_green]+$weight kg \n
+    %c[d_green] • %c[ui_gray_2] snížení přijímaného poškození: %c[d_green]-$dmg_immun% \n
+    %c[d_green] • %c[ui_gray_2] máš %c[d_green]$kill_chance% šanci %c[ui_gray_2]vystřelit explozivní náboj, který exploduje a zasáhne všechny nepřátele v okruhu 3 metrů \n
+    %c[d_orange] • %c[ui_gray_2] doba do zbranění: %c[d_orange]$cooldown sekund \n
+    %c[d_red] • %c[ui_gray_2] po skončení schopnosti způsobí hněv zatemnění vědomí a snížení psychického zdraví o %c[d_red]-20% \n \n
+    %c[ui_gray_3]POZNÁMKA:\n
+    %c[d_orange] • %c[ui_gray_2] Pro aktivaci schopnosti stiskni a podrž klávesu [$$ACTION_USE$$]. \n
+    %c[d_orange] • %c[ui_gray_2] Pokud máš artefakt %c[d_orange]"Lucifer"%c[ui_gray_2], doba trvání hněvu je %c[d_green]zdvojnásobena %c[d_red](VYŽADUJE MOD "ARTEFAKTY NA ZÁKLADĚ DOVEDNOSTÍ")
+</text>
+</string>
+<string id="st_experience_perk_bsp_lucifers_wrath_already_active_msg">
+    <text>"Hněv Lucifera" je již aktivován</text>
+</string>
+<string id="st_experience_perk_bsp_lucifers_wrath_is_on_cooldown_msg">
+    <text>"Hněv Lucifera" ještě není připraven</text>
+</string>
+
+
+
+<!--
+
+			Treasure Hunter
+
+-->
+	<string id="st_experience_perk_bsp_treasure_hunter_name">
+    <text>Lovec pokladů</text>
+</string>
+<string id="st_experience_perk_bsp_treasure_hunter_desc_1">
+    <text>Kde mám svoji lopatu? \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] pomocí kovového detektoru můžeš najít poklady zahrabané v zemi \n
+    %c[d_blue] • %c[ui_gray_2] násobitel šance najít předmět: %c[d_red]x0,5 \n \n
+    %c[ui_gray_3]VYTVOŘENÍ KOVOVÉHO DETEKTORU:\n
+    %c[d_orange] • %c[ui_gray_2] v inventáři přetáhni %c[d_orange]"RF přijímač" %c[ui_gray_2]na %c[d_orange]"Echo detektor" \n \n
+    %c[ui_gray_3]PRO HLEDÁNÍ POKLADŮ POTŘEBUJEŠ:\n
+    %c[yellow] • %c[ui_gray_2] jakoukoliv lopatu \n
+    %c[yellow] • %c[ui_gray_2] aktivovaný kovový detektor \n
+    %c[yellow] • %c[ui_gray_2] prozkoumat Vyloučenou Zónu
+    </text>
+</string>
+<string id="st_experience_perk_bsp_treasure_hunter_desc_2">
+    <text>Kde mám svoji lopatu? \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] pomocí kovového detektoru můžeš najít poklady zahrabané v zemi \n
+    %c[d_blue] • %c[ui_gray_2] násobitel šance najít předmět: %c[d_green]x1,0 \n \n
+    %c[ui_gray_3]VYTVOŘENÍ KOVOVÉHO DETEKTORU:\n
+    %c[d_orange] • %c[ui_gray_2] v inventáři přetáhni %c[d_orange]"RF přijímač" %c[ui_gray_2]na %c[d_orange]"Echo detektor" \n \n
+    %c[ui_gray_3]PRO HLEDÁNÍ POKLADŮ POTŘEBUJEŠ:\n
+    %c[yellow] • %c[ui_gray_2] jakoukoliv lopatu \n
+    %c[yellow] • %c[ui_gray_2] aktivovaný kovový detektor \n
+    %c[yellow] • %c[ui_gray_2] prozkoumat Vyloučenou Zónu
+    </text>
+</string>
+<string id="st_experience_perk_bsp_treasure_hunter_desc_3">
+    <text>Kde mám svoji lopatu? \n \n
+    %c[ui_gray_3]SCHOPNOST:\n
+    %c[d_blue] • %c[ui_gray_2] pomocí kovového detektoru můžeš najít poklady zahrabané v zemi \n
+    %c[d_blue] • %c[ui_gray_2] násobitel šance najít předmět: %c[d_cyan]x1,5 \n \n
+    %c[ui_gray_3]VYTVOŘENÍ KOVOVÉHO DETEKTORU:\n
+    %c[d_orange] • %c[ui_gray_2] v inventáři přetáhni %c[d_orange]"RF přijímač" %c[ui_gray_2]na %c[d_orange]"Echo detektor" \n \n
+    %c[ui_gray_3]PRO HLEDÁNÍ POKLADŮ POTŘEBUJEŠ:\n
+    %c[yellow] • %c[ui_gray_2] jakoukoliv lopatu \n
+    %c[yellow] • %c[ui_gray_2] aktivovaný kovový detektor \n
+    %c[yellow] • %c[ui_gray_2] prozkoumat Vyloučenou Zónu
+    </text>
+</string>
+
+
+
+</string_table>

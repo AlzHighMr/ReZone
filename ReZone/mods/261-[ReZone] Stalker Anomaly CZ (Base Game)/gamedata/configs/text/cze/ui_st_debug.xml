@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<string_table>
+	
+	<string id="st_ui_dbg_help">
+	<text>
+		%c[ui_gray_2]Dostupné klávesové zkratky hlavního menu v režimu ladění:
+		\n \n%c[d_orange]Pouze načtená hra:
+		\n%c[pda_blue]• %c[ui_gray_3]F7:%c[ui_gray_2] Spustit ladící nástroj Anomaly
+		\n%c[pda_blue]• %c[ui_gray_3]1:%c[ui_gray_2] Ladící HUD - Přepnout zobrazení informací levého panelu
+		\n%c[pda_blue]• %c[ui_gray_3]2:%c[ui_gray_2] Ladící HUD - Přepnout zobrazení informací středního panelu
+		\n%c[pda_blue]• %c[ui_gray_3]3:%c[ui_gray_2] Ladící HUD - Přepnout zobrazení informací pravého panelu
+		\n \n%c[d_orange]Bez načtené hry:
+		\n%c[pda_blue]• %c[ui_gray_3]F2:%c[ui_gray_2] Spustit testovací mapu
+		\n \n%c[d_orange]Obě situace:
+		\n%c[pda_blue]• %c[ui_gray_3]Numerická klávesa 0:%c[ui_gray_2] Znovu načíst system_ini()
+	</text>
+</string>
+
+
+	<!-- Debuggers -->
+	<string id="st_ui_dbg_weather_about">
+	<text>
+		%c[ui_gray_1]Tronex / Rezy
+		\nPřidáno: 2019/6/1
+		\nPoslední úprava: 2020/2/22
+		\nAnomaly Weather Editor 2.0
+		\n \n%c[pda_green]Informace%c[ui_gray_2]
+		\nEditor počasí vám umožňuje měnit hodnoty počasí v reálném čase s minutovou přesností.
+		\nGrafické rozhraní je interaktivní a snadno použitelné, s možností upravovat nebo vytvářet soubory s počasím na místě.
+		\nUpravené hodnoty jsou dočasně uloženy pro počasí a hodiny, na kterých pracujete.
+		\nMůžete se k nim vrátit, pokud vypnete editor (vyvarujte se vypnutí nebo načítání, pokud máte neuložené hodnoty).
+		\nV režimu prohlížeče můžete sledovat změny počasí pomocí posuvníku času.
+		\n \n%c[pda_blue]Klávesové zkratky%c[ui_gray_2]\n
+		\n%c[d_purple]• %c[ui_gray_3]Šipky: %c[ui_gray_2]navigace parametry.
+		\n%c[d_purple]• %c[ui_gray_3]LShift ( podržte): %c[ui_gray_2]krok x10 hodnoty / přechod na 2 parametry.
+		\n%c[d_purple]• %c[ui_gray_3]LAlt (podržte): %c[ui_gray_2]krok x50 hodnoty / přechod na 3 parametry.\n
+		\n%c[d_purple]• %c[ui_gray_3]R/F: %c[ui_gray_2]zvýšení/snížení vybrané hodnoty.
+		\n%c[d_purple]• %c[ui_gray_3]T/G: %c[ui_gray_2]zvýšení/snížení všech hodnot vybraného parametru.
+		\n%c[d_purple]• %c[ui_gray_3]Q/A: %c[ui_gray_2]vybrat předchozí/následující hodinu.
+		\n%c[d_purple]• %c[ui_gray_3]W/S: %c[ui_gray_2]vybrat předchozí/následující minutu.
+		\n%c[d_purple]• %c[ui_gray_3]E/D: %c[ui_gray_2]vybrat předchozí/následující uložený okamžik.\n
+		\n%c[d_purple]• %c[ui_gray_3]Z: %c[ui_gray_2]spustit režim prohlížeče.\n
+		\n%c[d_purple]• %c[ui_gray_3]C: %c[ui_gray_2]zkopírovat vybranou hodnotu parametru.
+		\n%c[d_purple]• %c[ui_gray_3]C + CTRL: %c[ui_gray_2]zkopírovat aktuální nastavení.
+		\n%c[d_purple]• %c[ui_gray_3]V: %c[ui_gray_2]vložit/použít zkopírovanou hodnotu parametru.
+		\n%c[d_purple]• %c[ui_gray_3]V + CTRL: %c[ui_gray_2]vložit/použít do aktuálního nastavení.\n
+		\n%c[d_purple]• %c[ui_gray_3]DELETE: %c[ui_gray_2]obnovit aktuální modifikovaný okamžik.
+		\n%c[d_purple]• %c[ui_gray_3]DELETE + CTRL: %c[ui_gray_2]obnovit všechny modifikované okamžiky.
+		\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]přepnout okno nápovědy.
+		\n%c[d_purple]• %c[ui_gray_3]Esc nebo Home: %c[ui_gray_2]vypnout editor.
+	</text>
+</string>
+
+	<string id="st_ui_dbg_weather_title">
+		<text>Weather Editor 2.0</text>
+	</string>
+	<string id="st_ui_dbg_weather_file">
+	<text>Vybrat soubor s počasím</text>
+</string>
+<string id="st_ui_dbg_weather_time">
+	<text>Vybrat čas</text>
+</string>
+<string id="st_ui_dbg_weather_copy">
+	<text>Zkopírovat nastavení</text>
+</string>
+<string id="st_ui_dbg_weather_paste">
+	<text>Vložit nastavení</text>
+</string>
+<string id="st_ui_dbg_weather_viewer">
+	<text>Režim prohlížeče</text>
+</string>
+<string id="st_ui_dbg_weather_save">
+	<text>Uložit do nového souboru, pokud jste uvedli název v poli níže, jinak uložit do aktuálního souboru.
+	\nNázev vlastních souborů musí začínat "w_".
+	</text>
+</string>
+<string id="st_ui_dbg_weather_resume">
+	<text>Obnovit počasí a ukončit</text>
+</string>
+<string id="st_ui_dbg_weather_clear">
+	<text>Vymazat uložené hodnoty</text>
+</string>
+<string id="st_ui_dbg_weather_help">
+	<text>Informace</text>
+</string>
+<string id="st_ui_dbg_weather_exit">
+	<text>Ukončit (počasí bude stále pozastaveno v enginu)</text>
+</string>
+<string id="st_ui_dbg_weather_save_msg_error">
+	<text>Soubor nový (%s) není platný.
+	\nNázev souboru musí začínat "w_"
+	\nTip: prázdný název uloží do aktuálního souboru
+	</text>
+</string>
+<string id="st_ui_dbg_weather_save_msg_old">
+	<text>Ukládat do existujícího souboru (%s), pokračovat?</text>
+</string>
+<string id="st_ui_dbg_weather_save_msg_new">
+	<text>Ukládat do nového souboru (%s), pokračovat?</text>
+</string>
+<string id="st_ui_dbg_weather_playing">
+	<text>Automatické přehrávání</text>
+</string>
+
+<string id="st_ui_dbg_lighting_title">
+	<text>Editor osvětlení</text>
+</string>
+
+<string id="st_ui_dbg_hud_title">
+	<text>Editor zbraní na HUD</text>
+</string>
+<string id="st_ui_dbg_hud_alignment">
+	<text>Přepnout zaměřovací křížek</text>
+</string>
+<string id="st_ui_dbg_hud_ratio">
+	<text>Platí pro parametry 4:3 a 16:9</text>
+</string>
+<string id="st_ui_dbg_hud_copy">
+	<text>Zkopírovat nastavení</text>
+</string>
+<string id="st_ui_dbg_hud_paste">
+	<text>Vložit nastavení</text>
+</string>
+<string id="st_ui_dbg_hud_current_file">
+	<text>Uložit do souboru</text>
+</string>
+<string id="st_ui_dbg_hud_resume">
+	<text>Obnovit</text>
+</string>
+
+	<string id="st_ui_dbg_hud_about">
+	<text>
+		%c[ui_gray_1]Tronex/Rezy
+		\n2019/9/15
+		\nEditor zbraní na HUD
+		\n \n%c[pda_green]O aplikaci%c[ui_gray_2]
+		\nEditor zbraní na HUD vám umožňuje měnit pozici a orientaci zobrazení zbraní na HUD v reálném čase.
+		\nGrafické rozhraní je interaktivní a snadno použitelné, umožňuje ukládat upravené pozice do dočasného souboru "temp_hud.ltx".
+		\nUpravené hodnoty jsou dočasně uloženy pro zbraně, na kterých pracujete. Můžete se k nim vrátit, pokud vypnete editor (vyvarujte se vypnutí nebo načítání, pokud máte neuložené hodnoty).
+		\n \n%c[pda_red]Pozor%c[ui_gray_2]
+		\nKonfigurace zbraní musí být rozbaleny před prací s editorem a musí být umístěny v (%c[ui_gray_3]gamedata/configs/items/weapons%c[ui_gray_2]).
+		\nZměny uložené v parametrech HUD se neprojeví okamžitě, dokud neznovu nenastartujete hru.
+		\nPro parametry ovlivňující pozici zaměření nejprve povolte přepínání zaměření v nastavení a zaměřte se s pistolí, poté použijte editor k zobrazení svých změn.
+		\nSoubor (%c[ui_gray_3]gamedata/configs/cache_dbg.ltx%c[ui_gray_2]) bude udržovat původní parametry po změně, takže je můžete obnovit pomocí tlačítka Obnovit.
+		\nNezapomeňte udělat zálohu konfigurací pro referenci.
+		\n \n%c[pda_blue]Klávesové zkratky%c[ui_gray_2]\n
+		\n%c[d_purple]• %c[ui_gray_3]Šipky: %c[ui_gray_2]navigace parametry.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 8/2: %c[ui_gray_2]zvýšení/snížení vybrané hodnoty.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 9/3: %c[ui_gray_2]zvýšení/snížení všech hodnot vybraného parametru.
+		\n%c[d_purple]• %c[ui_gray_3]LShift ( podržte): %c[ui_gray_2]krok x10 hodnoty / přechod na 2 parametry.
+		\n%c[d_purple]• %c[ui_gray_3]LAlt (podržte): %c[ui_gray_2]krok x50 hodnoty / přechod na 3 parametry.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 5: %c[ui_gray_2]kopírovat aktuální statistiky.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 6: %c[ui_gray_2]vložit uložené statistiky.
+		\n%c[d_purple]• %c[ui_gray_3]G: %c[ui_gray_2]Přepnout zaměřovací křížek.\n
+		\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]Zobrazit okno nápovědy.
+		\n%c[d_purple]• %c[ui_gray_3]Esc: %c[ui_gray_2]Vypnout editor.
+	</text>
+</string>
+
+	
+<string id="st_ui_dbg_launcher_console">
+	<text>Konzole</text>
+</string>
+<string id="st_ui_dbg_launcher_target">
+	<text>Spustit na cíli</text>
+</string>
+<string id="st_ui_dbg_launcher_action">
+	<text>Spustit akci</text>
+</string>
+<string id="st_ui_dbg_launcher_toggle">
+	<text>Přepnout příkaz</text>
+</string>
+<string id="st_ui_dbg_launcher_editor">
+	<text>Seznam editorů</text>
+</string>
+
+<string id="st_ui_dbg_spawn_type">
+	<text>Typ položky</text>
+</string>
+<string id="st_ui_dbg_spawn_list">
+	<text>Podle seznamu</text>
+</string>
+<string id="st_ui_dbg_spawn_icon">
+	<text>Podle ikony</text>
+</string>
+<string id="st_ui_dbg_spawn_btn">
+	<text>Vytvořit</text>
+</string>
+<string id="st_ui_dbg_spawn_name">
+	<text>Vytvořit podle sekce</text>
+</string>
+<string id="st_ui_dbg_spawn_smart">
+	<text>Vytvořit na chytrém terénu</text>
+</string>
+<string id="st_ui_dbg_spawn_smart_lvl">
+	<text>Vybrat úroveň</text>
+</string>
+<string id="st_ui_dbg_spawn_smart_list">
+	<text>Vybrat chytrý terén</text>
+</string>
+<string id="st_ui_dbg_spawn_point">
+	<text>Vytvořit na kurzoru</text>
+</string>
+<string id="st_ui_dbg_spawn_nearby">
+	<text>Vytvořit u hráče</text>
+</string>
+<string id="st_ui_dbg_spawn_inv">
+	<text>Vytvořit v inventáři</text>
+</string>
+<string id="st_ui_dbg_spawn_log">
+	<text>Záznam</text>
+</string>
+
+
+<string id="st_ui_dbg_logic">
+	<text>Logika NPC</text>
+</string>
+<string id="st_ui_dbg_logic_section">
+	<text>Aktivní sekce</text>
+</string>
+<string id="st_ui_dbg_logic_logic">
+	<text>Aktivní logika</text>
+</string>
+<string id="st_ui_dbg_logic_file">
+	<text>Název INI souboru</text>
+</string>
+<string id="st_ui_dbg_logic_set">
+	<text>Nastavit logiku</text>
+</string>
+<string id="st_ui_dbg_logic_revert">
+	<text>Obnovit logiku</text>
+</string>
+
+<string id="st_ui_dbg_exec">
+	<text>Spouštěč funkcí</text>
+</string>
+<string id="st_ui_dbg_exec_btn">
+	<text>Spustit</text>
+</string>
+
+<string id="st_ui_dbg_item_stats">
+	<text>Statistiky</text>
+</string>
+<string id="st_ui_dbg_item_list">
+	<text>Seznam</text>
+</string>
+<string id="st_ui_dbg_item_compare">
+	<text>Srovnání</text>
+</string>
+<string id="st_ui_dbg_item_btn_copy">
+	<text>Kopírovat</text>
+</string>
+<string id="st_ui_dbg_item_btn_paste">
+	<text>Vložit</text>
+</string>
+<string id="st_ui_dbg_item_btn_apply">
+	<text>Použít</text>
+</string>
+<string id="st_ui_dbg_item_btn_Reset">
+	<text>Obnovit</text>
+</string>
+
+	<string id="st_ui_dbg_item_about">
+	<text>
+		%c[ui_gray_1]Tronex
+		\n2019/10/8
+		\nEditor položek
+		\n \n%c[pda_green]O aplikaci%c[ui_gray_2]
+		\nEditor položek vám umožňuje upravovat konfigurace položek a ukládat/testovat své změny přímo v hře.
+		\nGrafické rozhraní je interaktivní a snadno použitelné a podporuje úpravy zbraní/výstroje/artefaktů.
+		\nMůžete vybrat relativní položku ze seznamu a porovnat její statistiky s vaší aktivní položkou.
+		\nUpravené hodnoty jsou dočasně ukládány pro položku, na které pracujete, a můžete se k nim vrátit, pokud vypnete editor.
+		\n \n%c[pda_red]Pozor%c[ui_gray_2]
+		\nKonfigurace položek musí být rozbaleny před prací s editorem a musí být umístěny v (%c[ui_gray_3]gamedata/configs/items%c[ui_gray_2]).
+		\nSoubor (%c[ui_gray_3]gamedata/configs/cache_dbg.ltx%c[ui_gray_2]) bude udržovat původní parametry po změně, takže je můžete obnovit pomocí tlačítka Obnovit.
+		\nNezapomeňte udělat zálohu konfigurací pro referenci.
+		\n \n%c[pda_blue]Klávesové zkratky%c[ui_gray_2]\n
+		\n%c[d_purple]• %c[ui_gray_3]Šipky: %c[ui_gray_2]navigace parametry.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 8/2: %c[ui_gray_2]zvýšení/snížení vybrané hodnoty.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 9/3: %c[ui_gray_2]zvýšení/snížení všech hodnot vybraného parametru.
+		\n%c[d_purple]• %c[ui_gray_3]LShift ( podržte): %c[ui_gray_2]krok x10 hodnoty / přechod na 2 parametry.
+		\n%c[d_purple]• %c[ui_gray_3]LAlt (podržte): %c[ui_gray_2]krok x50 hodnoty / přechod na 3 parametry.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 5: %c[ui_gray_2]kopírovat aktuální statistiky.
+		\n%c[d_purple]• %c[ui_gray_3]Numpad 6: %c[ui_gray_2]vložit uložené statistiky.\n
+		\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]Zobrazit okno nápovědy.
+		\n%c[d_purple]• %c[ui_gray_3]Esc: %c[ui_gray_2]Vypnout editor.
+	</text>
+</string>
+
+
+	<string id="st_desc_hit_power">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Množství poškození způsobeného střelou.
+		\n \n%c[pda_red]Rozsah
+		\n%c[ui_gray_2]$range
+		\n \n%c[d_cyan](!)%c[ui_gray_2] Toto je statistický parametr.
+		\n \n%c[pda_blue]Poznámky
+		\n%c[ui_gray_2]Každá hodnota tohoto parametru se používá pro různou obtížnost:
+		\nMistr -> Veterán -> Stalker -> Nováček
+		\nVe standardní obtížnosti Anomaly není používána, použijte stejnou hodnotu pro všechny.
+		</text>
+</string>
+
+	<string id="st_desc_hit_impulse">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Fyzická síla střely. Vyšší hodnoty způsobují dramatictější efekty ragdoll po smrti.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_fire_distance">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Vzdálenost v metrech, před kterou střela "zanikne" - všechno mimo tuto vzdálenost nebude zasaženo.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_bullet_speed">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Rychlost střely, v metrech za sekundu.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_rpm">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Rychlost střelby, v ranách za minutu.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_rpm_empty_click">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Rychlost, kterou se bude přehrávat zvuk "prázdného" výstřelu, pokud se pokusíte střílet, když je zbraň prázdná.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+
+	<!--string id="st_desc_time_to_aim">
+		<text>
+		\n \n%c[pda_green]Description
+		\n%c[ui_gray_2]
+		\n \n%c[pda_red]Range
+		\n%c[ui_gray_2]$range
+		</text>
+	</string-->
+	<string id="st_desc_zoom_dof">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Modifikátor hloubky pole při používání mířidel.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_reload_dof">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Hloubka pole během přebíjení.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_control_inertion_factor">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Množství "brzd," které se uplatňují na zbraň - jak obtížné je se rychle a spolehlivě otočit. Významné u PKm a SVD. Ovlivňuje statistiku ovladatelnosti.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+		\n \n%c[d_cyan](!)%c[ui_gray_2] Toto je statistický parametr.
+	</text>
+</string>
+<string id="st_desc_crosshair_inertion">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Množství setrvačnosti z pohybu kamery - jak pravděpodobné je, že míření se vyklouzne z cíle, pokud trhnete. Ovlivňuje statistiku ovladatelnosti.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+<string id="st_desc_fire_dispersion_base">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Základní kužel střelby v stupních - jak přesná bude první dávka zbraně. Ovlivňuje základní přesnost a zobrazenou statistiku přesnosti.
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+		\n \n%c[d_cyan](!)%c[ui_gray_2] Toto je statistický parametr.
+	</text>
+</string>
+<string id="st_desc_misfire_probability">
+	<text>
+		\n \n%c[pda_green]Popis
+		\n%c[ui_gray_2]Pravděpodobnost výskytu chybného výstřelu kdykoli (tento parametr se nepoužívá).
+		\n \n%c[pda_red]Dosah
+		\n%c[ui_gray_2]$dosah
+	</text>
+</string>
+
+
+
+
+
+
+
+
+
+<string id="st_desc_misfire_start_condition">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Stav zbraně, při kterém začíná stoupat šance na záseku.
+	\nK záseku nedojde při vyšším stavu.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet šance na zásek%c[ui_gray_2]
+	\n%c[ui_gray_3]Šance na zásek při výstřelu = startovní_podíl + ( (startovní_stav - stav) x (koncový_podíl - startovní_podíl) / faktor )
+	
+	\n \n%c[d_purple]• %c[ui_gray_3]stav:%c[ui_gray_2] aktuální stav zbraně
+	\n%c[d_purple]• %c[ui_gray_3]startovní_podíl:%c[ui_gray_2] hodnota "startovní_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_podíl:%c[ui_gray_2] hodnota "koncový_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]startovní_stav:%c[ui_gray_2] hodnota "startovní_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_stav:%c[ui_gray_2] hodnota "koncový_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]faktor:%c[ui_gray_2] (startovní_stav - koncový_stav) pokud jsou tyto hodnoty různé, nebo (startovní_stav) pouze pokud jsou shodné.
+	</text>
+</string>
+<string id="st_desc_misfire_end_condition">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Stav zbraně, při kterém šance na záseku přestane stoupat.
+	\nŠance na záseku bude omezena na "koncový_šance_na_zásek" při nižším stavu.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet šance na záseku%c[ui_gray_2]
+	\n%c[ui_gray_3]Šance na záseku při výstřelu = startovní_podíl + ( (startovní_stav - stav) x (koncový_podíl - startovní_podíl) / faktor )
+	
+	\n \n%c[d_purple]• %c[ui_gray_3]stav:%c[ui_gray_2] aktuální stav zbraně
+	\n%c[d_purple]• %c[ui_gray_3]startovní_podíl:%c[ui_gray_2] hodnota "startovní_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_podíl:%c[ui_gray_2] hodnota "koncový_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]startovní_stav:%c[ui_gray_2] hodnota "startovní_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_stav:%c[ui_gray_2] hodnota "koncový_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]faktor:%c[ui_gray_2] (startovní_stav - koncový_stav) pokud jsou tyto hodnoty různé, nebo (startovní_stav) pouze pokud jsou shodné.
+	</text>
+</string>
+
+<string id="st_desc_misfire_start_prob">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Počáteční šance na zásek.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet šance na zásek%c[ui_gray_2]
+	\n%c[ui_gray_3]Šance na záseku při výstřelu = startovní_podíl + ( (startovní_stav - stav) x (koncový_podíl - startovní_podíl) / faktor )
+		
+	\n \n%c[d_purple]• %c[ui_gray_3]stav:%c[ui_gray_2] aktuální stav zbraně
+	\n%c[d_purple]• %c[ui_gray_3]startovní_podíl:%c[ui_gray_2] hodnota "počáteční_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_podíl:%c[ui_gray_2] hodnota "koncový_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]startovní_stav:%c[ui_gray_2] hodnota "startovní_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_stav:%c[ui_gray_2] hodnota "koncový_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]faktor:%c[ui_gray_2] (startovní_stav - koncový_stav) pokud jsou tyto hodnoty různé, nebo (startovní_stav) pouze pokud jsou shodné.
+	</text>
+</string>
+<string id="st_desc_misfire_end_prob">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Konečná šance na zásek.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet šance na zásek%c[ui_gray_2]
+	\n%c[ui_gray_3]Šance na záseku při výstřelu = startovní_podíl + ( (startovní_stav - stav) x (koncový_podíl - startovní_podíl) / faktor )
+		
+	\n \n%c[d_purple]• %c[ui_gray_3]stav:%c[ui_gray_2] aktuální stav zbraně
+	\n%c[d_purple]• %c[ui_gray_3]startovní_podíl:%c[ui_gray_2] hodnota "počáteční_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_podíl:%c[ui_gray_2] hodnota "koncový_šance_na_zásek"
+	\n%c[d_purple]• %c[ui_gray_3]startovní_stav:%c[ui_gray_2] hodnota "startovní_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]koncový_stav:%c[ui_gray_2] hodnota "koncový_stav_záseku"
+	\n%c[d_purple]• %c[ui_gray_3]faktor:%c[ui_gray_2] (startovní_stav - koncový_stav) pokud jsou tyto hodnoty různé, nebo (startovní_stav) pouze pokud jsou shodné.
+	</text>
+</string>
+
+<string id="st_desc_condition_shot_dec">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Kolik stavu zbraně se ztratí za jeden výstřel.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet
+	\n%c[ui_gray_3]Ztráta stavu za jeden výstřel = (condition_shot_dec) x (zhoršení_zbraně) x (oslabení) x (condition_shot_dec_k)
+	\n \n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec"%c[ui_gray_2] je definováno pro každou část zbraně. Nastavte "condition_queue_shot_dec" na stejnou hodnotu.
+	\n%c[d_purple]• %c[ui_gray_3]"zhoršení_zbraně"%c[ui_gray_2] je příkazem konzole, umožňujícím v in-game nastavení zhoršení obecně (výchozí hodnota je 1)
+	\n%c[d_purple]• %c[ui_gray_3]"oslabení"%c[ui_gray_2] je parametr definovaný v sekci střeliva, které aktuálně zbraň používá
+	\n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec_k"%c[ui_gray_2] je parametr definovaný v sekci tlumiče, který je připojen k zbrani (výchozí hodnota je 1, pokud chybí)
+	</text>
+</string>
+<string id="st_desc_condition_queue_shot_dec">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Kolik stavu zbraně se ztratí za jeden výstřel v režimu plně automatické palby.
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	\n \n%c[pda_blue]Výpočet
+	\n%c[ui_gray_3]Ztráta stavu za jeden výstřel = (condition_shot_dec) x (zhoršení_zbraně) x (oslabení) x (condition_shot_dec_k)
+	\n \n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec"%c[ui_gray_2] je definováno pro každou část zbraně. Nastavte "condition_queue_shot_dec" na stejnou hodnotu.
+	\n%c[d_purple]• %c[ui_gray_3]"zhoršení_zbraně"%c[ui_gray_2] je příkazem konzole, umožňujícím v in-game nastavení zhoršení obecně (výchozí hodnota je 1)
+	\n%c[d_purple]• %c[ui_gray_3]"oslabení"%c[ui_gray_2] je parametr definovaný v sekci střeliva, které aktuálně zbraň používá
+	\n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec_k"%c[ui_gray_2] je parametr definovaný v sekci tlumiče, který je připojen k zbrani (výchozí hodnota je 1, pokud chybí)
+	</text>
+</string>
+<string id="st_desc_cam_return">
+	<text>
+	\n \n%c[pda_green]Popis
+	\n%c[ui_gray_2]Vrací se kameru zpět k vašemu cíli poté?
+	\n \n%c[pda_red]Rozsah
+	\n%c[ui_gray_2]$range
+	</text>
+</string>
+
+<string id="st_desc_cam_relax_speed">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Rychlost, jakou se vaše mířidla vracejí zpět do "neutrální" polohy
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    </text>
+</string>
+<string id="st_desc_cam_dispersion">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Rozptyl při střelbě (bez míření)
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Tato hodnota není omezena v engine, negativní hodnoty způsobí negativní zpětný ráz.
+    </text>
+</string>
+<string id="st_desc_cam_dispersion_inc">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Kolik se přidává k rozptylu s každou střelbou.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Tato hodnota není omezena v engine, negativní hodnoty způsobí negativní zpětný ráz.
+    </text>
+</string>
+<string id="st_desc_cam_dispersion_frac">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Další faktor ovlivňující rozptyl.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_cam_max_angle">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Maximální úhel, na který může zpětný ráz odnést vaše mířidla od výchozí polohy - v tomto případě 50 stupňů nahoru.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_cam_max_angle_horz">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Maximální horizontální posun
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+
+<string id="st_desc_cam_step_angle_horz">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Horizontální zpětný ráz způsobený střelbou. Hodnota 0 způsobí vertikální zpětný ráz, negativní hodnota bude zpětný ráz doleva.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_zoom_cam_relax_speed">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Rychlost, jakou se vaše mířidla/luneta vrací zpět do neutrální polohy.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_relax_speed" místo toho.
+    </text>
+</string>
+<string id="st_desc_zoom_cam_dispersion">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Rozptyl (ovlivňující pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_dispersion" místo toho.
+    \nTato hodnota není omezena v engine, negativní hodnoty způsobí negativní zpětný ráz.
+    </text>
+</string>
+
+<string id="st_desc_zoom_cam_dispersion_inc">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Kolik se přidává k rozptylu s každou střelbou (ovlivňuje pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range (stupně)
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_dispersion_inc" místo toho.
+    \nTato hodnota není omezena v engine, negativní hodnoty způsobí negativní zpětný ráz.
+    </text>
+</string>
+<string id="st_desc_zoom_cam_dispersion_frac">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Další faktor ovlivňující rozptyl (ovlivňuje pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_dispersion_frac" místo toho.
+    </text>
+</string>
+<string id="st_desc_zoom_cam_max_angle">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Maximální úhel, na který může zpětný ráz odnést vaše mířidla od výchozí polohy - v tomto případě 50 stupňů nahoru (ovlivňuje pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_max_angle" místo toho.
+    </text>
+</string>
+<string id="st_desc_zoom_cam_max_angle_horz">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Maximální horizontální posun (ovlivňuje pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_max_angle_horz" místo toho.
+    </text>
+</string>
+
+<string id="st_desc_zoom_cam_step_angle_horz">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Horizontální zpětný ráz způsobený střelbou. Hodnota 0 způsobí vertikální zpětný ráz, negativní hodnota bude zpětný ráz doleva (ovlivňuje pouze mířidla/lunetu).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    \n \n%c[pda_blue]Poznámky
+    \n%c[ui_gray_2]Pokud není tento parametr definován v sekci zbraně, engine použije hodnotu "cam_step_angle_horz" místo toho.
+    </text>
+</string>
+<string id="st_desc_PDM_disp_base">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Základní "PDM". Toto ovlivňuje přesnost podobně jako "fire_dispersion_base". Nižší hodnota znamená vyšší přesnost. Ovlivňuje také statistiku ovládání zbraně spolu s faktorem ovládací inerce.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    \n \n%c[d_cyan](!)%c[ui_gray_2] Toto je statistický parametr.
+    </text>
+</string>
+<string id="st_desc_PDM_disp_vel_factor">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Násobitel, který zvyšuje rozptyl střelby na základě rychlosti hráče.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_PDM_disp_accel_factor">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Násobitel, který zvyšuje rozptyl střelby s růstem rychlosti hráče.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_PDM_disp_crouch">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Násobitel, který ovlivňuje rozptyl střelby, když hráč klečí.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+
+<string id="st_desc_PDM_disp_crouch_no_acc">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Násobitel, který ovlivňuje rozptyl střelby, když hráč klečí a nehýbe se (v podstatě při nejvyšší přesnosti hráče).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_fire_dispersion_condition_factor">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Jaký vliv má stav na rozptyl - vyšší čísla způsobují dramatický pokles přesnosti.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_cam_relax_speed_ai">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Jak rychle se AI vrátí k cíli po výstřelu salvy.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_zoom_cam_relax_speed_ai">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Rychlost, jakou se AI vrací k cíli po výstřelu v mířidlech/lunetě.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_holder_range_modifier">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Efektivní viditelnost AI při nošení zbraně.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_holder_fov_modifier">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Úhel pohledu AI při nošení zbraně. Hodnota 1.0 dává přibližně 180° zorné pole.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+
+<string id="st_desc_min_radius">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Minimální poloměr, ve kterém můžete být viděni, v metrech. Může způsobit zajímavé peripetie.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_max_radius">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Maximální poloměr, ve kterém AI může rozeznat přítele nebo nepřítele.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_zoom_enabled">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Zda povolit nebo zakázat mířidla.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_zoom_rotate_time">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Jak dlouho trvá zamíření skrz mířidla.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_scope_zoom_factor">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Jak moc se zorné pole "zazoomuje" při zamíření skrz mířidla. 1 je výchozí hodnota.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_ammo_elapsed">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Velikost zásobníku.
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_ammo_mag_size">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Toto číslo musí být rovno proměnné 'elapsed' - jinak hodnota nemusí být správná!
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+<string id="st_desc_cost">
+    <text>
+    \n \n%c[pda_green]Popis
+    \n%c[ui_gray_2]Základní cena zbraně (pamatujte, že je ovlivněna mnoha ekonomickými faktory).
+    \n \n%c[pda_red]Rozsah
+    \n%c[ui_gray_2]$range
+    </text>
+</string>
+
+</string_table>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!--=================================================================================================================-->
+<!--                                                                                                                 -->
+<!--    Original Author(s) : NLTP_ASHES                                                                              -->
+<!--    Edited : N/A                                                                                                 -->
+<!--    Date : 05/12/2023                                                                                            -->
+<!--    License : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)          -->
+<!--                                                                                                                 -->
+<!--    Translation file for the radial quickslots labels.                                                           -->
+<!--                                                                                                                 -->
+<!--=================================================================================================================-->
+<string_table>
+
+    <!-- Core -->
+    <string id="st_rq_empty_slot">
+        <text>Nic</text>
+    </string>
+
+    <string id="st_rq_unknown_slot">
+        <text>Neznámé</text>
+    </string>
+
+    <!-- Slot titles -->
+    <string id="st_rq_knife_title">
+        <text>Nůž</text>
+    </string>
+
+    <string id="st_rq_secondary_title">
+        <text>Sekundární</text>
+    </string>
+
+    <string id="st_rq_primary_title">
+        <text>Primární</text>
+    </string>
+
+    <string id="st_rq_grenade_title">
+        <text>Granát</text>
+    </string>
+
+    <string id="st_rq_binoculars_title">
+        <text>Dalekohled</text>
+    </string>
+
+    <string id="st_rq_bolts_title">
+        <text>Šrouby</text>
+    </string>
+
+
+    <string id="st_rq_pda_title">
+        <text>PDA</text>
+    </string>
+
+    <!-- MCM -->
+    <string id="ui_mcm_menu_radial_quickslots">
+        <text>Radial Quickslots</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_title">
+        <text>Radial Quickslots</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_keybindings_title">
+        <text>KEY-BINDINGS</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_open_menu_key">
+        <text>Open radial menu</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_open_menu_key_desc">
+        <text>Key-bind used to open the radial menu.</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_technical_settings_title">
+        <text>TECHNICAL SETTINGS</text>
+    </string>
+
+    <!-- Debug mode -->
+    <string id="ui_mcm_radial_quickslots_debug_mode">
+        <text>Debug mode</text>
+    </string>
+
+    <string id="ui_mcm_radial_quickslots_debug_mode_desc">
+        <text>Makes the addon print out some information in the console/logs, for later reference when trying to identify problems.</text>
+    </string>
+
+</string_table>

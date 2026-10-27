@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="windows-1250" standalone="yes" ?>
+<string_table>
+	<string id="ui_mcm_menu_ztc">
+		<text>!Z.T.C</text>
+	</string>
+
+
+<string id="ui_mcm_menu_health_tweaks">
+	<text>Úpravy zdraví</text>
+</string>
+
+<string id="ui_mcm_menu_settings">
+	<text>Obecné</text>
+</string>
+
+<string id="ui_mcm_menu_stalker">
+	<text>Stalkeři</text>
+</string>
+
+<string id="ui_mcm_menu_mutants">
+	<text>Mutanti</text>
+</string>
+
+<string id="ui_mcm_ztc_health_title">
+	<text>Úpravy zdraví</text>
+</string>
+
+<string id="ui_mcm_ztc_health_stalker_title">
+	<text>Zdraví stalkerů</text>
+</string>
+
+<string id="ui_mcm_ztc_health_mutants_title">
+	<text>Zdraví mutantů</text>
+</string>
+
+<string id="ui_mcm_ztc_health_enabled">
+	<text>Zapnout úpravu zdraví</text>
+</string>
+
+<string id="ui_mcm_ztc_health_exclude_story_npcs">
+	<text>Vyloučit příběhové NPC</text>
+</string>
+
+<string id="ui_mcm_ztc_health_exclude_companions">
+	<text>Vyloučit společníky</text>
+</string>
+
+<string id="ui_mcm_ztc_health_exclude_traders">
+	<text>Vyloučit obchodníky</text>
+</string>
+
+<string id="ui_mcm_ztc_health_reapply_on_change">
+	<text>Znovu použít na živé entity při změně nastavení</text>
+</string>
+
+<string id="ui_mcm_ztc_health_stalkers_desc">
+	<text>Násobitel zdraví stalkerů podle hodnosti (0,25x - 3,0x). Hodnoty nad 1,0 snižují obdržené poškození; hodnoty pod 1,0 způsobí, že se stalkerové objeví se sníženým zdravím.</text>
+</string>
+
+<string id="ui_mcm_ztc_health_mutants_desc">
+	<text>Násobitel zdraví mutantů podle druhu (0,25x - 3,0x). Hodnoty nad 1,0 snižují obdržené poškození; hodnoty pod 1,0 způsobí, že se mutanti objeví se sníženým zdravím.</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_novice">
+	<text>Nováček</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_trainee">
+	<text>Učedník</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_experienced">
+	<text>Zkušený</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_professional">
+	<text>Profesionál</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_veteran">
+	<text>Veterán</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_expert">
+	<text>Expert</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_master">
+	<text>Mistr</text>
+</string>
+
+<string id="ui_mcm_ztc_health_rank_legend">
+	<text>Legendární</text>
+</string>
+
+<string id="ui_mcm_ztc_health_factions_desc">
+	<text>Násobitel zdraví frakce (0,25x - 3,0x). Sčítá se s výše uvedeným násobitelem hodnosti. Hodnoty nad 1,0 snižují obdržené poškození; hodnoty pod 1,0 způsobí, že se členové frakce objeví se sníženým zdravím.</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_stalker">
+	<text>Samotáři</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_bandit">
+	<text>Banditi</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_csky">
+	<text>Jasná obloha</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_dolg">
+	<text>Povinnost</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_freedom">
+	<text>Svoboda</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_killer">
+	<text>Žoldáci</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_army">
+	<text>Armáda</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_ecolog">
+	<text>Ekologové</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_monolith">
+	<text>Monolit</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_renegade">
+	<text>Odpadlíci</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_greh">
+	<text>Hřích</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_isg">
+	<text>UNISG</text>
+</string>
+
+<string id="ui_mcm_ztc_health_faction_zombied">
+	<text>Zombifikovaní</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_dog">
+	<text>Slepý pes</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_flesh">
+	<text>Flaksa</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_bloodsucker">
+	<text>Upír</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_boar">
+	<text>Kanec</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_burer">
+	<text>Burer</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_cat">
+	<text>Kočka</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_controller">
+	<text>Kontroler</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_fracture">
+	<text>Izlom</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_karlik">
+	<text>Karlík</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_pseudodog">
+	<text>Pseudopes</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_pseudo_gigant">
+	<text>Pseudogiant</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_snork">
+	<text>Snork</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_tushkano">
+	<text>Tarbík</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_zombie">
+	<text>Zombie</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_lurker">
+	<text>Číhavec</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_psysucker">
+	<text>Psysucker</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_chimera">
+	<text>Chiméra</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_poltergeist">
+	<text>Poltergeist</text>
+</string>
+
+<string id="ui_mcm_ztc_health_species_rat">
+	<text>Krysa</text>
+</string>
+
+</string_table>

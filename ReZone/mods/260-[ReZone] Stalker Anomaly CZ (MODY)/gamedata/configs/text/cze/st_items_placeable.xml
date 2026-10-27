@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="st_placeable_gas_lamp">
+		<text>Plynová lampa</text>
+	</string>
+	<string id="st_placeable_gas_lamp_descr">
+		<text>Vytváří světlo zapálením knotu zalitého petrolejem. Lampy jsou mezi slídiči neobvyklým zdrojem světla, protože palivo zabírá váhu a místo, které by jinak mohlo být využito pro munici nebo bezcenné artefakty. Zkušení slídiči, kteří se pravidelně pohybují po stezce méně troden, využívají tyto lampy pro své úkryty.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] nízká spotřeba paliva\n
+		%c[d_cyan] - %c[ui_gray_2] palivo: petrolej\n
+		</text>
+	</string>
+
+	<string id="st_placeable_metal_torch">
+		<text>Kovová pochodeň</text>
+	</string>
+	<string id="st_placeable_metal_torch_descr">
+		<text>Ruční svítilna ze sovětské éry. Toto konkrétní světlo lze zkonstruovat v terénu, i když jeho užitečnost je omezena malým rozptylem světla. Zkušení slídiči toho využívají ve svůj prospěch, když osvětlují potenciální narušitele a zároveň si zachovávají vlastní úkryt.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] nízká spotřeba elektrické energie\n
+		%c[d_cyan] - %c[ui_gray_2] palivo: baterie\n
+		</text>
+	</string>
+
+	<string id="st_placeable_light_altar">
+		<text>Kompaktní psi-světlo</text>
+	</string>
+	<string id="st_placeable_light_altar_descr">
+		<text>Předmět neznámého původu a účelu. Původně tento podivný předmět vysílal smrtící psi-vlny a byl příčinou smrti mnoha nic netušících stopařů, kteří se odvážili do severních oblastí. Tento byl Sacharovem upraven a s pomocí artefaktu Měsíční světlo se stal zdrojem neomezené světelné síly.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] nízká spotřeba elektrické energie\n
+		%c[d_cyan] - %c[ui_gray_2] palivo: gaussovy baterie\n
+		</text>
+	</string>
+
+	<string id="st_placeable_case">
+		<text>Pouzdro na zbraň</text>
+	</string>
+	<string id="st_placeable_case_descr">
+		<text>Prázdný kufřík na zbraně bez jakékoli výzbroje. Poskytuje více prostoru než běžné batohy za cenu snížení hmotnosti.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] skladování předmětů\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] mírná kapacita\n
+		%c[d_orange] - %c[ui_gray_2] použitelný jako skrýš\n
+		</text>
+	</string>
+
+	<string id="st_placeable_blue_box">
+		<text>Kovová bedna</text>
+	</string>
+	<string id="st_placeable_blue_box_descr">
+		<text>Prostorná kovová krabice určená k ukládání předmětů. V porovnání s alternativami poskytuje nejvíce prostoru, ale její velká hmotnost ztěžuje přepravu.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] skladování předmětů\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] vysoká kapacita\n
+		%c[d_orange] - %c[ui_gray_2] použitelný jako skrýš\n
+		</text>
+	</string>
+
+	<string id="st_placeable_exo_kit">
+		<text>Nepoužitelná sada na opravu exoskeletu</text>
+	</string>
+	<string id="st_placeable_exo_kit_descr">
+		<text>Prázdný kufřík zbavený všech užitečných předmětů. Mnoho stalkerů tyto opravárenské soupravy po ošetření svých špičkových obleků jednoduše odhodí, ačkoli kapacita a velikost této soupravy je užitečná při opětovném použití jako úložného prostoru.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] skladování předmětů\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] mírná kapacita\n
+		%c[d_orange] - %c[ui_gray_2] použitelný jako skrýš\n
+		</text>
+	</string>
+
+
+	<string id="st_placeable_sumka6">
+		<text>Malý pytel</text>
+	</string>
+	<string id="st_placeable_sumka6_descr">
+		<text>Malé pláty látky sešité dohromady tvořící jednoduchý pytel. Ačkoli není nijak zvlášť užitečný ve stálých základnách, najde svou niku při vytváření malé skrýše v nouzi.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] skladování předmětů\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		%c[d_cyan] - %c[ui_gray_2] nízká kapacita\n
+		%c[d_orange] - %c[ui_gray_2] použitelné jako skrýš\n
+		</text>
+	</string>
+
+	<string id="st_placeable_workshop">
+		<text>Přenosná dílna</text>
+	</string>
+	<string id="st_placeable_workshop_descr">
+		<text>Kombinace rozmístitelného stolu, dílenského nářadí a integrované skrýše. Umožňuje stalkerům být soběstačnější v méně přívětivých oblastech, ačkoli jeho hmotnost odrazuje od řemeslné práce na cestách.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] vysoká kapacita (integrovaná)\n
+		%c[d_orange] - %c[ui_gray_2] použitelný pro opravu zařízení\n
+		</text>
+	</string>
+
+	<string id="st_placeable_radio">
+		<text>Rádio</text>
+	</string>
+	<string id="st_placeable_radio_descr">
+		<text>Rádio ve funkčním stavu. Je schopno přijímat stejné signály, jaké jsou slyšet na mnoha základnách v celé Zóně.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n
+		%c[d_cyan] - %c[ui_gray_2] umístitelný předmět\n
+		</text>
+	</string>
+
+	<string id="st_placeable_piano">
+		<text>Přenosný Klavír</text>
+	</string>
+	<string id="st_placeable_piano_descr">
+		<text>Luxusní instalace, která se v Zóně často nevidí. Ačkoli neposkytuje žádnou ochranu před mutanty ani nepřátelskými pronásledovateli, může poskytnout krátký odpočinek před nepřátelskými akcemi v Zóně. Zdá se, že tato má mnoho notových záznamů různé obtížnosti a řadu synteticky znějících nástrojů.\n \n
+		%c[0,255,255,255]VLASTNOSTI:\n		
+		%c[d_cyan] - %c[ui_gray_2] umístitelná položka\n
+		%c[d_orange] - %c[ui_gray_2] lze přehrávat\n
+		</text>
+	</string>
+
+
+    <string id="st_place_furniture">
+<text>Umístit předmět</text>
+	</string>
+
+</string_table>

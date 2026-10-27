@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<!--
+	Faction Patches
+-->
+<string_table>
+	<string id="st_matches">
+		<text>Sada podpalovačů</text>
+	</string>
+	<string id="st_matches_descr">
+	<text>Jednoduchá sada tyčinek z borovicového dřeva napuštěného pryskyřicí. Každý, kdo se někdy pokoušel zapálit oheň v přírodě, ví, že náhodné poryvy větru mohou plameny velmi rychle uhasit. Sada podpalovačů umožňuje vytvořit malý, ale stabilní krbový oheň, jehož teplota je výrazně vyšší než teplota papíru nebo vosku. Je to nepostradatelná věc při každé kempovací výpravě, protože se snadno rozhřeje i za mokra.\n\n\n
+		%c[d_green] - %c[ui_gray_2] se používá k rozdělávání ohně</text>
+</string>
+<string id="st_wood_stove">
+	<text>Hexagonová kamínka na dřevo</text>
+</string>
+<string id="st_wood_stove_descr">
+	<text>Tato kompaktní skládací kamínka jsou určena k přípravě jednohubek na suchém dřevě. Protože je však dřevo, které se nachází v Zóně, příliš znečištěné na to, aby se dalo použít k tomuto účelu, spoléhají se stalkerové na dovážené dřevěné uhlí jako na nejlevnější a nejrozšířenější spalitelný materiál. Kamna dokáží vytvořit teplotu dostatečnou pro grilování méně otráveného zmutovaného masa, ale příprava toxiktejšího masa vyžaduje použití pokročilejšího vybavení. Je zapotřebí základních dovedností při práci s ohněm. Vyrobeno z nerezové oceli a ultralehkého titánu.\n \n
+		%c[ui_gray_3]POZNÁMKY:\n \n
+		%c[ui_gray_1]Přestože je dřevěné uhlí v Zóně k dostání za relativně nízké ceny, k přípravě jednoho jídla ho musíte použít značné množství. Z tohoto důvodu není dřevěné uhlí tak cenově výhodné, jak by se mohlo zdát. Na druhou stranu je poměrně lehké, což ho činí ideálním pro delší výlety hluboko v Zóně.\n \n
+		%c[ui_gray_1]Mutantní maso, které nevyžaduje k přípravě vysokou teplotu, se označuje jako "low-tier", zatímco to, které vyžaduje vysokou teplotu, jako "high-tier".\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_green] - %c[ui_gray_2] polní kuchyňské vybavení nízké úrovně\n
+		%c[d_green] - %c[ui_gray_2] palivo: %c[ui_gray_1] dřevěné uhlí\n
+		%c[d_green] - %c[ui_gray_2] použitelné pro vaření masa menších mutantů\n</text>
+</string>
+<string id="st_cooking">
+	<text>Souprava pro polní vaření</text>
+</string>
+<string id="st_cooking_descr">
+	<text>Cestovní souprava na vaření v terénu. Obsahuje příslušenství a náčiní na vaření pro použití při kempování a cestování. Vydává velký hluk a je těžkopádná kvůli své velké hmotnosti. Velmi oblíbená mezi většími skupinami stalkerů.\n \n
+		%c[ui_gray_3]POZNÁMKY:\n \n
+		%c[ui_gray_1]Ackoli je dřevěné uhlí v Zóně k dostání za relativně nízké ceny, k přípravě jednoho jídla ho potřebujete značné množství. Z tohoto důvodu není dřevěné uhlí tak cenově výhodné, jak by se mohlo zdát. Na druhou stranu je poměrně lehké, což ho činí ideálním pro delší výlety hluboko v Zóně.\n \n
+		%c[ui_gray_1]Mutantní maso, které nevyžaduje k přípravě vysokou teplotu, se označuje jako "low-tier", zatímco to, které vyžaduje vysokou teplotu, jako "high-tier".\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_green] - %c[ui_gray_2] polní kuchyňské vybavení nízké úrovně\n
+		%c[d_green] - %c[ui_gray_2] palivo: %c[ui_gray_1] dřevěné uhlí\n
+		%c[d_green] - %c[ui_gray_2] použitelné pro vaření masa menších mutantů\n
+		</text>
+</string>
+<string id="st_army_bowler">
+	<text>Armádní kotel</text>
+</string>
+<string id="st_army_bowler_descr">
+	<text>Tato armádní konvice má konvexně-konkávní profil dna, na jedné straně konkávní. Dodává se s drátěným poutkem s rukojetí pro zavěšení a přenášení. Při nošení na opasek by měla být konkávní strana umístěna k tělu. Kryt misky lze použít jako pánev při ohřívání nebo přípravě druhého pokrmu. Rukojeť pokličky je navržena tak, aby ji bylo možné přidržet, bezpečně uzavřít pokličku při přenášení a do speciálních otvorů na rukojeti se vkládá polévková lžíce.\n \n
+		%c[ui_gray_3]POZNÁMKY:\n \n
+		%c[ui_gray_1]Vzhledem k tomu, že paliva používaná ve vícepalivových kamnech jsou mnohem účinnějšími nosiči energie než dřevo nebo uhlí, jsou vícepalivová kamna z dlouhodobého hlediska výrazně úspornější než tradiční kamna na dřevo nebo uhlí. Na druhou stranu se tato paliva obvykle přenášejí v těžkých kovových nádobách, což je činí vhodnějšími pro použití na základnách než v polních operacích.\n \n
+		%c[ui_gray_1]Mutantí maso, které nevyžaduje k přípravě vysokou teplotu, se označuje jako "low-tier", zatímco to, které vyžaduje vysokou teplotu - "high-tier".\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_blue] - %c[ui_gray_2] vysoká kvalita\n
+		%c[d_green] - %c[ui_gray_2] polní kuchyňské vybavení střední úrovně\n
+		%c[d_green] - %c[ui_gray_2] palivo: %c[ui_gray_1] dřevěné uhlí\n
+		%c[d_green] - %c[ui_gray_2] použitelný na %c[ui_gray_1]ohniště%c[ui_gray_2]
+		%c[d_green] - %c[ui_gray_2] použitelný pro přípravu masa menších mutantů\n</text>
+</string>
+	
+	<string id="st_fieldcooker">
+	<text>Vícepálivový sporák</text>
+</string>
+<string id="st_fieldcooker_descr">
+	<text>Tento vícepálivový sporák byl intenzivně testován po mnoho let a byl použit na nesčetných expedicích. Je mimořádně robustní, spolehlivý a výkonný a byl navržen tak, aby zvládl náročné situace, extrémní nadmořské výšky a nízké i vysoké teploty. Má velmi vysoký výkon a lze jej používat prakticky s jakýmkoli druhem paliva, včetně butanu, benzínu, nafty, petroleje/parafínu a dokonce i leteckého paliva. Pomocí samostatného ovládacího knoflíku můžete nastavit plamen na požadovanou teplotu, i když máte na rukou rukavice.\n \n
+		%c[ui_gray_3]POZNÁMKY:\n \n
+		%c[ui_gray_1]Vzhledem k tomu, že paliva používaná ve vícepálivových kamnech jsou mnohem účinnějšími nosiči energie než dřevo nebo uhlí, jsou vícepálivová kamna z dlouhodobého hlediska výrazně úspornější než tradiční kamna na dřevo nebo uhlí. Na druhou stranu se tato paliva obvykle přenášejí v těžkých kovových nádobách, což je činí vhodnějšími pro použití na základnách než v polních operacích.\n \n
+		%c[ui_gray_1]Mutantí maso, které nevyžaduje k přípravě vysokou teplotu, se označuje jako "low-tier", zatímco to, které vyžaduje vysokou teplotu, jako "high-tier".\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_blue] - %c[ui_gray_2] vysoká kvalita\n
+		%c[d_green] - %c[ui_gray_2] vysoce kvalitní kuchyňské vybavení\n
+		%c[d_green] - %c[ui_gray_2] palivo: %c[ui_gray_1] benzin, zemní plyn, petrolej\n
+		%c[d_green] - %c[ui_gray_2] použitelné pro vaření masa všech mutantů\n</text>
+</string>
+<string id="st_box_matches">
+	<text>Zápalky</text>
+</string>
+<string id="st_box_matches_descr">
+	<text>Krabice zápalek je po zbrani druhým nejdůležitějším předmětem v Zóně. Pomocí zápalek lze rozdělat oheň, předat světlo příteli a osvětlit malé prostory. Tato konkrétní krabička byla vyrobena v neznámé podzemní továrně v oblasti Zóny, proto nelze očekávat vysokou kvalitu, i když cena také není vysoká. Krabička je trvale pomačkaná, rozpadá se v ní siré a rozbité mokré zápalky. Pouze čtvrtina jejího obsahu zůstává použitelná. I tak je zapálení ohně nebo cigarety pomocí krabičky od zápalek velmi obtížné - stalkerové si proto raději pořizují dražší, ale praktičtější zapalovač.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] každodenní předmět\n
+		%c[d_orange] - %c[ui_gray_2] použitelný pro: rozdělání ohně, zapálení cigarety\n</text>
+</string>
+<string id="st_kerosene">
+	<text>Kerosín</text>
+</string>
+<string id="st_kerosene_descr">
+	<text>Kerosín se široce používá například v letectví jako raketové palivo, dále jako palivo do sklenářských výrobků, svítil pro domácnost a topných zařízení. Je vynikajícím rozpouštědlem, snadno se dostává do vnitřních mechanismů, a proto se hojně používá při čištění a opravách různých součástí.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_green] - %c[ui_gray_2] palivo na vaření vysoké úrovně\n
+		</text>
+</string>
+<string id="st_charcoal">
+	<text>Uhlí</text>
+</string>
+<string id="st_charcoal_descr">
+	<text>Uhlí z tvrdého dřeva pro přípravu masa, ryb, zeleniny v pekáči a na grilu.\n \n
+		%c[ui_gray_3]VLASTNOSTI:\n
+		%c[d_blue] - %c[ui_gray_2] technologická položka\n
+		%c[d_green] - %c[ui_gray_2] nízkostupňové palivo na vaření\n</text>
+</string>
+<string id="st_fuel_tier_1">
+	<text>Všechny hořlaviny</text>
+</string>
+<string id="st_fuel_tier_1_desc">
+	<text>
+		%c[d_blue] - %c[ui_gray_2] Táborák\n
+		%c[d_blue] - %c[ui_gray_2] Dřevěné uhlí\n
+		%c[d_blue] - %c[ui_gray_2] Petrolej\n
+		%c[d_blue] - %c[ui_gray_2] Kanistr\n
+		%c[d_blue] - %c[ui_gray_2] Plyno-balón\n
+	</text>
+</string>
+<string id="st_fuel_tier_2">
+	<text>Pouze kapalné palivo</text>
+</string>
+<string id="st_fuel_tier_2_desc">
+	<text>
+		%c[d_blue] - %c[ui_gray_2] Nafta\n
+		%c[d_blue] - %c[ui_gray_2] Kanistr\n
+		%c[d_blue] - %c[ui_gray_2] Plyno-balón\n
+	</text>
+</string>
+
+</string_table>
