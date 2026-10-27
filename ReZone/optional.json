@@ -536,6 +536,144 @@
       "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): r__detail_density 0.46, r__detail_height 1.2, r__detail_radius 130. Hodí se k MBTT, ATO a Screen Space Shaders.\n\nStahuje se z Google Drive modpacku; originál na ModDB.",
       "priority": 216,
       "season": "Podzim"
+    },
+    {
+      "name": "[Huh_] CCon Grass n Trees - Jaro",
+      "title": "C-Con Grass & Trees – Jaro",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "season": "Jaro",
+      "optional": true,
+      "priority": 216,
+      "image": "https://media.moddb.com/images/downloads/1/299/298660/CCon.png",
+      "file": "CCon_0.71_Fomod.7z",
+      "size": 3555245227,
+      "requires": [
+        "Vasgen CCon Patch"
+      ],
+      "description": "C Consciousness Grass & Trees z ModDB, jarní varianta. Nové textury stromů a přepracovaná tráva (textury, modely i rozmístění) na většině map, textury v 8K (stažení 3,3 GB). Doporučené Screen Space Shaders s TAA; v nastavení hry vypni Detail Bump. Konzole: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere jarní variantu (Spring). Spolu s ním se stáhne a zapne Vasgen CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv (CCon_0.71_Fomod.7z) do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "Grizzlys Grass Tweaks - Jaro",
+      "title": "Grizzly's Grass Tweaks (C-Con) – Jaro",
+      "author": "Grizzly",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "season": "Jaro",
+      "optional": true,
+      "priority": 216,
+      "requires": [
+        "Vasgen Grizzly CCon Patch"
+      ],
+      "description": "Grizzly's Grass Tweaks – úprava trávy a vegetace postavená na C-Con, jarní varianta.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere jarní variantu (Spring). Spolu s ním se stáhne a zapne Vasgen Grizzly CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "[Huh_] CCon Grass n Trees - Léto",
+      "title": "C-Con Grass & Trees – Léto",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "season": "Léto",
+      "optional": true,
+      "priority": 216,
+      "image": "https://media.moddb.com/images/downloads/1/299/298660/CCon.png",
+      "file": "CCon_0.71_Fomod.7z",
+      "size": 3555245227,
+      "requires": [
+        "Vasgen CCon Patch"
+      ],
+      "description": "C Consciousness Grass & Trees z ModDB, letní varianta. Nové textury stromů a přepracovaná tráva (textury, modely i rozmístění) na většině map, textury v 8K (stažení 3,3 GB). Doporučené Screen Space Shaders s TAA; v nastavení hry vypni Detail Bump. Konzole: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere letní variantu (Summer). Spolu s ním se stáhne a zapne Vasgen CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv (CCon_0.71_Fomod.7z) do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "Grizzlys Grass Tweaks - Léto",
+      "title": "Grizzly's Grass Tweaks (C-Con) – Léto",
+      "author": "Grizzly",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "season": "Léto",
+      "optional": true,
+      "priority": 216,
+      "requires": [
+        "Vasgen Grizzly CCon Patch"
+      ],
+      "description": "Grizzly's Grass Tweaks – úprava trávy a vegetace postavená na C-Con, letní varianta.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere letní variantu (Summer). Spolu s ním se stáhne a zapne Vasgen Grizzly CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "[Huh_] CCon Grass n Trees - Podzim",
+      "title": "C-Con Grass & Trees – Podzim",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "season": "Podzim",
+      "optional": true,
+      "priority": 216,
+      "image": "https://media.moddb.com/images/downloads/1/299/298660/CCon.png",
+      "file": "CCon_0.71_Fomod.7z",
+      "size": 3555245227,
+      "requires": [
+        "Vasgen CCon Patch"
+      ],
+      "description": "C Consciousness Grass & Trees z ModDB, podzimní varianta. Nové textury stromů a přepracovaná tráva (textury, modely i rozmístění) na většině map, textury v 8K (stažení 3,3 GB). Doporučené Screen Space Shaders s TAA; v nastavení hry vypni Detail Bump. Konzole: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere podzimní variantu (Autumn). Spolu s ním se stáhne a zapne Vasgen CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv (CCon_0.71_Fomod.7z) do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "Grizzlys Grass Tweaks - Podzim",
+      "title": "Grizzly's Grass Tweaks (C-Con) – Podzim",
+      "author": "Grizzly",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "season": "Podzim",
+      "optional": true,
+      "priority": 216,
+      "requires": [
+        "Vasgen Grizzly CCon Patch"
+      ],
+      "description": "Grizzly's Grass Tweaks – úprava trávy a vegetace postavená na C-Con, podzimní varianta.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere podzimní variantu (Autumn). Spolu s ním se stáhne a zapne Vasgen Grizzly CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "[Huh_] CCon Grass n Trees - Zima",
+      "title": "C-Con Grass & Trees – Zima",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "season": "Zima",
+      "optional": true,
+      "priority": 216,
+      "image": "https://media.moddb.com/images/downloads/1/299/298660/CCon.png",
+      "file": "CCon_0.71_Fomod.7z",
+      "size": 3555245227,
+      "requires": [
+        "Vasgen CCon Patch"
+      ],
+      "description": "C Consciousness Grass & Trees z ModDB, zimní varianta. Nové textury stromů a přepracovaná tráva (textury, modely i rozmístění) na většině map, textury v 8K (stažení 3,3 GB). Doporučené Screen Space Shaders s TAA; v nastavení hry vypni Detail Bump. Konzole: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere zimní variantu (Winter). Spolu s ním se stáhne a zapne Vasgen CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv (CCon_0.71_Fomod.7z) do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "Grizzlys Grass Tweaks - Zima",
+      "title": "Grizzly's Grass Tweaks (C-Con) – Zima",
+      "author": "Grizzly",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
+      "season": "Zima",
+      "optional": true,
+      "priority": 216,
+      "requires": [
+        "Vasgen Grizzly CCon Patch"
+      ],
+      "description": "Grizzly's Grass Tweaks – úprava trávy a vegetace postavená na C-Con, zimní varianta.\n\nINSTALACE: stahuje se z ModDB, launcher sám projde instalátor (FOMOD) a vybere zimní variantu (Winter). Spolu s ním se stáhne a zapne Vasgen Grizzly CCon Patch z Google Drive modpacku (nutný pro správnou funkci) a dá se v load orderu hned pod něj. Když ModDB launcheru stažení nepovolí, otevře se stránka – stáhni archiv do Stažených souborů a zaškrtni mod znovu. Když instalátor nejde projít automaticky, archiv se uloží do Mod Organizeru 2 (záložka Downloads) k ruční instalaci. Mod jde na místo 216 jako ostatní trávy sezón."
+    },
+    {
+      "name": "Vasgen CCon Patch",
+      "title": "Vasgen CCon Patch",
+      "author": "Vasgen",
+      "hidden": true,
+      "description": "Patch pro C-Con Grass & Trees v ReZone. Stahuje a zapíná se automaticky spolu s C-Con, v load orderu hned pod ním."
+    },
+    {
+      "name": "Vasgen Grizzly CCon Patch",
+      "title": "Vasgen Grizzly CCon Patch",
+      "author": "Vasgen",
+      "hidden": true,
+      "description": "Patch pro Grizzly's Grass Tweaks (C-Con) v ReZone. Stahuje a zapíná se automaticky spolu s ním, v load orderu hned pod ním."
     }
   ]
 }
