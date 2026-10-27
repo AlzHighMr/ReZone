@@ -451,8 +451,8 @@
       "description": "Nahradí hlasy stalkerů všech frakcí hlášky z vývojového buildu 2205 – syrovější, „buildová“ atmosféra. NPC mluví častěji (pokřiky, „sklop zbraň“) a původní hlášky se už nemíchají s buildovými. Patří na konec load orderu (launcher ho tam dá sám)."
     },
     {
-      "name": "Weapon Parts Overhaul Overhauled",
-      "title": "Weapon Parts Overhaul Overhauled",
+      "name": "[Flooduh] W.P.O. Overhaul",
+      "title": "W.P.O. Overhaul (Weapon Parts Overhaul Overhauled)",
       "author": "Flooduh",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/weapon-parts-overhaul-overhauled",
       "category": "Zbraně",
@@ -467,6 +467,38 @@
       "category": "Vizuál a animace",
       "image": "https://media.moddb.com/images/downloads/1/289/288732/IntroScreenPreview.jpg",
       "description": "Po načtení hry se na chvíli objeví animovaný úvodní text jako ve filmu: název mapy, čas ve hře, jméno, hodnost a frakce hráče. Rychlost animace jde nastavit v MCM (Default / Slow), klávesa Esc úvod přeskočí. Vyžaduje modded exes."
+    },
+    {
+      "name": "CCON Spring",
+      "title": "C-Con Grass & Trees – Jaro",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "image": "https://media.moddb.com/images/members/5/4711/4710022/profile/AnomalyDX11AVX_2025-05-28_12-13-.png",
+      "description": "Jarní verze. Trávy a stromy C-Con (C Consciousness Grass & Trees): nové textury stromů, přepracovaná tráva (textury, modely i rozmístění) na většině map, květiny od Elinena. Textury v 8K.\n\nTip: v nastavení hry vypni Detail Bump (jinak divné stíny na kůře). Doporučené hodnoty v konzoli: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart. Když tráva mění barvu, zadej ssfx_floravariation 0,0,0,0. Doporučené Screen Space Shaders (TAA proti blikání).\n\nStahuje se z Google Drive modpacku; originál na ModDB."
+    },
+    {
+      "name": "CCON Summer",
+      "title": "C-Con Grass & Trees – Léto",
+      "author": "Huh_?",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
+      "image": "https://media.moddb.com/images/members/5/4711/4710022/profile/AnomalyDX11AVX_2025-05-28_12-17-.png",
+      "description": "Letní verze. Trávy a stromy C-Con (C Consciousness Grass & Trees): nové textury stromů, přepracovaná tráva (textury, modely i rozmístění) na většině map, květiny od Elinena. Textury v 8K.\n\nTip: v nastavení hry vypni Detail Bump (jinak divné stíny na kůře). Doporučené hodnoty v konzoli: r__detail_density 0.24–0.5, r__detail_height 0.7–1.2, r__detail_radius 100–180, potom vid_restart. Když tráva mění barvu, zadej ssfx_floravariation 0,0,0,0. Doporučené Screen Space Shaders (TAA proti blikání).\n\nStahuje se z Google Drive modpacku; originál na ModDB."
+    },
+    {
+      "name": "PanceRide",
+      "title": "Grass and Trees by PanceRide",
+      "author": "PanceRide",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/grass-and-trees-by-panceride-v10",
+      "image": "https://media.moddb.com/images/members/5/4594/4593768/profile/S.t.a.l.k.e.r._-_Anomaly_Screens.33.jpg",
+      "description": "Nové textury trávy, stromů a keřů v celé Zóně. Každá lokace vypadá jinak a čím hlouběji do Zóny, tím je tráva sušší; kůra stromů z ATO s ladícími větvemi, přepracovaný Rudý les. Na výkon skoro nemá vliv.\n\nV load orderu musí být za SSS a ATO (vyšší priorita). Doporučené hodnoty v konzoli: r__detail_density 0.28, r__detail_radius 210, r__detail_height 0.8.\n\nStahuje se z Google Drive modpacku; originál na ModDB."
+    },
+    {
+      "name": "Gardener",
+      "title": "Gardener of the Zone",
+      "author": "YuriVernadsky",
+      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/gardener-of-the-zone",
+      "image": "https://i.imgur.com/6YrilEW.jpg",
+      "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery – pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): r__detail_density 0.46, r__detail_height 1.2, r__detail_radius 130. Hodí se k MBTT, ATO a Screen Space Shaders.\n\nStahuje se z Google Drive modpacku; originál na ModDB."
     }
   ]
 }
