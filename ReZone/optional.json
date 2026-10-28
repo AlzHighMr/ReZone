@@ -498,26 +498,6 @@
       "description": "Po načtení hry se na chvíli objeví animovaný úvodní text jako ve filmu: název mapy, čas ve hře, jméno, hodnost a frakce hráče. Rychlost animace jde nastavit v MCM (Default / Slow), klávesa Esc úvod přeskočí. Vyžaduje modded exes."
     },
     {
-      "name": "CCON Spring",
-      "title": "C-Con Grass & Trees - Jaro",
-      "author": "Huh_?",
-      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
-      "image": "https://media.moddb.com/images/members/5/4711/4710022/profile/AnomalyDX11AVX_2025-05-28_12-13-.png",
-      "description": "Jarní verze. Trávy a stromy C-Con (C Consciousness Grass & Trees): nové textury stromů, přepracovaná tráva (textury, modely i rozmístění) na většině map, květiny od Elinena. Textury v 8K.\n\nTip: v nastavení hry vypni Detail Bump (jinak divné stíny na kůře). Doporučené hodnoty v konzoli: r__detail_density 0.24-0.5, r__detail_height 0.7-1.2, r__detail_radius 100-180, potom vid_restart. Když tráva mění barvu, zadej ssfx_floravariation 0,0,0,0. Doporučené Screen Space Shaders (TAA proti blikání).\n\nStahuje se z Google Drive modpacku; originál na ModDB.",
-      "priority": 216,
-      "season": "Jaro"
-    },
-    {
-      "name": "CCON Summer",
-      "title": "C-Con Grass & Trees - Léto",
-      "author": "Huh_?",
-      "link": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
-      "image": "https://media.moddb.com/images/members/5/4711/4710022/profile/AnomalyDX11AVX_2025-05-28_12-17-.png",
-      "description": "Letní verze. Trávy a stromy C-Con (C Consciousness Grass & Trees): nové textury stromů, přepracovaná tráva (textury, modely i rozmístění) na většině map, květiny od Elinena. Textury v 8K.\n\nTip: v nastavení hry vypni Detail Bump (jinak divné stíny na kůře). Doporučené hodnoty v konzoli: r__detail_density 0.24-0.5, r__detail_height 0.7-1.2, r__detail_radius 100-180, potom vid_restart. Když tráva mění barvu, zadej ssfx_floravariation 0,0,0,0. Doporučené Screen Space Shaders (TAA proti blikání).\n\nStahuje se z Google Drive modpacku; originál na ModDB.",
-      "priority": 216,
-      "season": "Léto"
-    },
-    {
       "name": "PanceRide",
       "title": "Grass and Trees by PanceRide",
       "author": "PanceRide",
@@ -533,9 +513,12 @@
       "author": "YuriVernadsky",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/gardener-of-the-zone",
       "image": "https://i.imgur.com/6YrilEW.jpg",
-      "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): r__detail_density 0.46, r__detail_height 1.2, r__detail_radius 130. Hodí se k MBTT, ATO a Screen Space Shaders.\n\nStahuje se z Google Drive modpacku; originál na ModDB.",
+      "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): r__detail_density 0.46, r__detail_height 1.2, r__detail_radius 130. Hodí se k MBTT, ATO a Screen Space Shaders.\n\nStahuje se z Google Drive modpacku spolu s GOTZ patchem (zapíná a vypíná se jen s Gardener of the Zone); originál na ModDB.",
       "priority": 216,
-      "season": "Podzim"
+      "season": "Podzim",
+      "requires": [
+        "GOTZ Patch"
+      ]
     },
     {
       "name": "[Huh_] CCon Grass n Trees - Jaro",
@@ -674,6 +657,23 @@
       "author": "Vasgen",
       "hidden": true,
       "description": "Patch pro Grizzly's Grass Tweaks (C-Con) v ReZone. Stahuje a zapíná se automaticky spolu s ním, v load orderu hned pod ním."
+    },
+    {
+      "name": "GOTZ Patch",
+      "title": "GOTZ Patch",
+      "author": "Vasgen",
+      "hidden": true,
+      "description": "Patch pro Gardener of the Zone v ReZone. Stahuje a zapíná se jen spolu s Gardener of the Zone, v load orderu hned pod ním."
+    },
+    {
+      "name": "CCON Spring",
+      "hidden": true,
+      "description": "Stará verze C-Con z Google Drive – nahrazena verzí z ModDB, v launcheru se neukazuje."
+    },
+    {
+      "name": "CCON Summer",
+      "hidden": true,
+      "description": "Stará verze C-Con z Google Drive – nahrazena verzí z ModDB, v launcheru se neukazuje."
     }
   ]
 }
