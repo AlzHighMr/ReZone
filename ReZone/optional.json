@@ -464,7 +464,20 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4e78-i1TOJhE9mC3lr6XHYroJtUMUugLwEHmUcUBrww&s=10",
       "file": "Arrival.10_-_ARG.7z",
       "size": 257616223,
-      "description": "Kompletně přepracované anomálie: nový vzhled, zvuky a chování, nové (i skryté) anomálie, přes 700 částicových efektů, poletující semínka a listí, rozšířená encyklopedie anomálií.\n\nPOZOR - VÝKON: jeden z nejnáročnějších addonů vůbec - hodně částic a jednovláknový engine umí na slabších PC výrazně srazit FPS. Když se hra seká, nastav v MCM Anomaly Zone Radius na 130 a Minimum Distance Between Anomalies na 25, nebo addon vypni.\n\nInstalace: vyžaduje modded exes; launcher ho dá v load orderu úplně dolů (nejvyšší priorita). Pokud máš Dynamic Anomalies Overhaul, nejdřív v jeho MCM odstraň staré anomálie, ulož hru a DAO vypni. Doporučená nová hra nebo čistá pozice."
+      "description": "Kompletně přepracované anomálie: nový vzhled, zvuky a chování, nové (i skryté) anomálie, přes 700 částicových efektů, poletující semínka a listí, rozšířená encyklopedie anomálií.\n\nPOZOR - VÝKON: jeden z nejnáročnějších addonů vůbec - hodně částic a jednovláknový engine umí na slabších PC výrazně srazit FPS. Když se hra seká, nastav v MCM Anomaly Zone Radius na 130 a Minimum Distance Between Anomalies na 25, nebo addon vypni.\n\nInstalace: vyžaduje modded exes; launcher ho dá v load orderu úplně dolů (nejvyšší priorita). Pokud máš Dynamic Anomalies Overhaul, nejdřív v jeho MCM odstraň staré anomálie, ulož hru a DAO vypni. Doporučená nová hra nebo čistá pozice.",
+      "requires": [
+        "[Joker1661] Arrival - Anomaly Update Dispatcher Optimization"
+      ]
+    },
+    {
+      "name": "[Joker1661] Arrival - Anomaly Update Dispatcher Optimization",
+      "title": "Arrival - Anomaly Update Dispatcher Optimization",
+      "author": "Joker1661",
+      "category": "Vizuál a animace",
+      "url": "https://drive.google.com/file/d/1LW96KgBnGYtIUJxmJNSdNSthtERgIRjo/view?usp=sharing",
+      "version": "1.2.0",
+      "description": "Optimalizace Arrivalu: odstraňuje stuttery (kousání) a pomáhá zachránit pár snímků (FPS). Instaluje a zapíná se automaticky spolu s Arrival - Anomalies, v load orderu hned pod ním (přepisuje ho).",
+      "hidden": true
     },
     {
       "name": "[Pipisto667] Stalkers voices from build",
