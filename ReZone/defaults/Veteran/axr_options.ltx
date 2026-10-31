@@ -4,6 +4,7 @@
         ui_debug_launcher\UIDebug_ObjSpawn\d13_input = true
  
 [character_creation]
+        ct_newgame                       =
         new_game_azazel_mode             =
         new_game_blackroad_mode          =
         new_game_campfire_mode           =
@@ -201,6 +202,9 @@
         yasc                             = 2
         zone_keeper                      = 13
         ztc                              = 15
+ 
+[cop_port]
+        legs_off                         = 0
  
 [global_keybinds]
         debug_demo_record                = DIK_NUMPAD0
@@ -1848,6 +1852,7 @@
         ballistics/debug                 = true
         ballistics/difficulty_scaling_ap = false
         ballistics/difficulty_scaling_damage = false
+        ballistics/hitnum                = false
         ballistics/npc_effect            = false
         ballistics/npc_use_special       = false
         ballistics/particles             = true
@@ -2112,6 +2117,8 @@
         blood/dismemberment/threshold_stalker = 3.4
         blood/explosives/bounce_angle    = 360
         blood/explosives/enable          = true
+        blood/explosives/enable_ground   = true
+        blood/explosives/enable_walls    = true
         blood/explosives/ray_count       = 10
         blood/explosives/size_mult       = 1.5
         blood/explosives/spread          = 5.5
@@ -2409,6 +2416,7 @@
         context_menu_overhaul/show_separators = true
         context_menu_overhaul/use_colors = false
         cop_port/autosave                = true
+        cop_port/hide_body_cutscene      = true
         cop_port/outro_end_game          = true
         cop_port/relocate_kardan         = true
         cop_port/relocate_sultan         = true
@@ -3324,6 +3332,114 @@
         eft_jump_sounds/volume           = 0.77
         eft_rattle/aim_rattle            = true
         eft_rattle/lower_raise_rattle    = false
+        efth/bhs_regen                   = 0
+        efth/damage_model                = efth
+        efth/eft_food                    = true
+        efth/efth_gen/bhs_regen          = 0
+        efth/efth_gen/damage_model       = efth
+        efth/efth_gen/difficulty         = 2
+        efth/efth_gen/eft_food           = true
+        efth/efth_gen/general_damage_multiplier = 1
+        efth/efth_gen/general_impact_effect = true
+        efth/efth_gen/vanilla_heal_limbs = false
+        efth/efth_heal/campfire_destroyed_maxhp = 1
+        efth/efth_heal/campfire_heal_amount = 0.3
+        efth/efth_heal/campfire_heal_destroyed = true
+        efth/efth_heal/campfire_heal_distance = 3
+        efth/efth_heal/general_campfire_heal = true
+        efth/efth_heal/maxhp_restore_sec = 60
+        efth/efth_heal/timed_decay_minutes = 10
+        efth/efth_hud/inv_bg_alpha       = 0.3
+        efth/efth_hud/inv_show_conditions = true
+        efth/efth_hud/inv_show_penalties = true
+        efth/efth_hud/items_dont_stack   = true
+        efth/efth_hud/items_names        = true
+        efth/efth_hud/overlay_autohide_delay = 3
+        efth/efth_hud/overlay_coloring   = 1
+        efth/efth_hud/overlay_offset_x   = 0
+        efth/efth_hud/overlay_offset_y   = 1
+        efth/efth_hud/overlay_scale      = 1.6
+        efth/efth_hud/overlay_visibility = 0
+        efth/efth_hud/vanilla_bars       = 2
+        efth/efth_limbs/bleed_chance     = 1
+        efth/efth_limbs/bleed_damage     = 1
+        efth/efth_limbs/concussion_chance = 0.3
+        efth/efth_limbs/destroyed_overflow = 0.5
+        efth/efth_limbs/dmg_arm_left     = 0.8
+        efth/efth_limbs/dmg_arm_right    = 0.8
+        efth/efth_limbs/dmg_head         = 0.8
+        efth/efth_limbs/dmg_leg_left     = 0.8
+        efth/efth_limbs/dmg_leg_right    = 0.8
+        efth/efth_limbs/dmg_stomach      = 0.8
+        efth/efth_limbs/dmg_torso        = 0.8
+        efth/efth_limbs/fracture_chance  = 1
+        efth/efth_limbs/fx_arm_left      = 1
+        efth/efth_limbs/fx_arm_right     = 1
+        efth/efth_limbs/fx_head          = 1
+        efth/efth_limbs/fx_leg_left      = 1
+        efth/efth_limbs/fx_leg_right     = 1
+        efth/efth_limbs/fx_stomach       = 1
+        efth/efth_limbs/fx_torso         = 1
+        efth/efth_limbs/leg_penalty_speed = 0.55
+        efth/efth_limbs/pain_chance      = 1
+        efth/efth_mech/acid_toxin        = true
+        efth/efth_mech/acid_toxin_chance = 1
+        efth/efth_mech/acid_toxin_max    = 180
+        efth/efth_mech/addiction         = true
+        efth/efth_mech/addiction_mult    = 1
+        efth/efth_mech/body_sounds       = true
+        efth/efth_mech/breath_hold_sec   = 4
+        efth/efth_mech/hold_breath_key   = 33
+        efth/efth_mech/medic_prices      = true
+        efth/efth_mech/rad_maxhp_loss    = 50
+        efth/efth_mech/rad_maxhp_speed   = 1
+        efth/efth_mech/radiation_maxhp   = true
+        efth/efth_mech/surgery_slow      = true
+        efth/efth_mech/surgery_tools     = true
+        efth/efth_mech/sway_enabled      = true
+        efth/efth_mech/sway_strength     = 1
+        efth/efth_mech/toxication        = true
+        efth/efth_mech/toxin_chance      = 1
+        efth/efth_mech/toxin_damage      = 1
+        efth/efth_mech/toxin_ppe         = true
+        efth/efth_mech/toxin_ppe_strength = 1
+        efth/efth_mech/tunnel_vision     = true
+        efth/efth_mech/withdrawal_hours  = 6
+        efth/efth_move/arm_stamina       = true
+        efth/efth_move/inertia           = true
+        efth/efth_move/loco_enabled      = true
+        efth/efth_move/loco_strength     = 0.5
+        efth/efth_move/sprint_turn       = true
+        efth/efth_move/stance_stamina    = true
+        efth/efth_move/turn_inertia      = false
+        efth/efth_move/walk_speed        = true
+        efth/efth_move/walk_speed_key    = 339
+        efth/efth_move/walk_speed_mode   = 0
+        efth/efth_screen/anomaly_ppe     = true
+        efth/efth_screen/blood_vignette  = true
+        efth/efth_screen/blood_vignette_strength = 0.5
+        efth/efth_screen/concussion_ppe  = true
+        efth/efth_screen/concussion_ppe_strength = 0.5
+        efth/efth_screen/electro_arcs    = true
+        efth/efth_screen/electro_arcs_strength = 0.5
+        efth/efth_screen/pain_vignette   = true
+        efth/efth_screen/pain_vignette_strength = 0.5
+        efth/efth_screen/poison_overlay  = true
+        efth/efth_screen/poison_overlay_strength = 0.5
+        efth/efth_screen/ppe_acid        = true
+        efth/efth_screen/ppe_acid_strength = 0.5
+        efth/efth_screen/ppe_electro     = true
+        efth/efth_screen/ppe_electro_strength = 0.5
+        efth/efth_screen/ppe_fire        = true
+        efth/efth_screen/ppe_fire_strength = 0.5
+        efth/efth_screen/ppe_gravi       = true
+        efth/efth_screen/ppe_gravi_strength = 0.5
+        efth/efth_screen/ppe_steam       = true
+        efth/efth_screen/ppe_steam_strength = 0.5
+        efth/efth_screen/toxin_ppe       = true
+        efth/efth_screen/toxin_ppe_strength = 0.5
+        efth/efth_screen/tunnel_vision   = true
+        efth/efth_screen/tunnel_vision_strength = 0.5
         efth/general_campfire_heal       = true
         efth/general_damage_multiplier   = 0.7
         efth/general_impact_effect       = true
@@ -3335,7 +3451,10 @@
         efth/overlay_coloring            = 0
         efth/overlay_offset_x            = 0
         efth/overlay_offset_y            = 1
+        efth/overlay_scale               = 1.8
         efth/overlay_visibility          = 1
+        efth/vanilla_bars                = 2
+        efth/vanilla_heal_limbs          = false
         efth_ws_compat/asymmetry_multiplier = 0.3
         efth_ws_compat/both_arms_destroyed_mult = 1.4
         efth_ws_compat/both_arms_fracture_mult = 1.3
@@ -4420,6 +4539,9 @@
         lower_weapon_sprint/reverse_blacklist = false
         magazines/animated/aml_camera_effects = true
         magazines/animated/aml_debug     = false
+        magazines/animated/aml_load_speed = 1
+        magazines/animated/aml_showhide_speed = 1
+        magazines/animated/aml_speed_mode = 0
         magazines/animated/enable_ammo_wheel = true
         magazines/animated/enable_direct_load = true
         magazines/animated/input_mode_ammo_wheel = 0
@@ -4796,6 +4918,27 @@
         npe/general/play_loop            = 10
         npe/general/sounds_set           = NPE_LOW
         npe_module/npe_welcome/introduction = true
+        otfa/color                       = own
+        otfa/dof                         = true
+        otfa/editor                      = false
+        otfa/keep_hud                    = false
+        otfa/key                         = 36
+        otfa/key_ammo                    = 3
+        otfa/key_gl                      = 4
+        otfa/key_laser                   = 5
+        otfa/key_scope                   = 2
+        otfa/key_sil                     = 1
+        otfa/left_drop                   = 1
+        otfa/left_hand                   = true
+        otfa/list_icons                  = none
+        otfa/mag_key                     = false
+        otfa/mode                        = 2
+        otfa/modifier                    = 0
+        otfa/scale                       = 1
+        otfa/show_missing                = false
+        otfa/snd_handling                = true
+        otfa/snd_ui                      = true
+        otfa/snd_volume                  = 0.8
         outfit/damage_1                  = 0.4
         outfit/damage_2                  = 0.5
         outfit/damage_3                  = 0.7
@@ -5135,7 +5278,7 @@
         rax_ammo_check/anim_mode         = 2
         rax_ammo_check/animation/anim_mode = 2
         rax_ammo_check/animation/block_reload_during_check = false
-        rax_ammo_check/animation/busy_hands_delay = 0
+        rax_ammo_check/animation/busy_hands_delay = 1
         rax_ammo_check/animation/empty_mag_fallback = 0
         rax_ammo_check/animation/enable_animations = true
         rax_ammo_check/animation/fake_reload_bolt_cycle = true
@@ -5149,8 +5292,8 @@
         rax_ammo_check/animation/no_magazine_fallback = 1
         rax_ammo_check/animation/treat_one_chamber_as_non_empty = false
         rax_ammo_check/auto_check_reload = false
-        rax_ammo_check/busy_hands_delay  = 0
-        rax_ammo_check/busy_hands_fix    = 0
+        rax_ammo_check/busy_hands_delay  = 1
+        rax_ammo_check/busy_hands_fix    =
         rax_ammo_check/check_grenade_mode = false
         rax_ammo_check/color_intensity   = 70
         rax_ammo_check/debug/bone_debug  = false
@@ -6316,6 +6459,7 @@
         utlf/modular_flashlights/m600df_battery_type = batteries_dead
         utlf/modular_flashlights/m600df_cone_deg = 62
         utlf/modular_flashlights/m600df_range = 40
+        ver_laser_attachment/always_show_lrf_ui = false
         ver_laser_attachment/debug       = false
         ver_laser_attachment/enable_keybinds = false
         ver_laser_attachment/keybind_copy = 28
@@ -6336,6 +6480,7 @@
         ver_laser_attachment/keybind_yup = 80
         ver_laser_attachment/keybind_zdown = 77
         ver_laser_attachment/keybind_zup = 81
+        ver_laser_attachment/show_lrf_ui_when_no_laser = false
         weapon_cover_tilt/animation_speed = 11.5
         weapon_cover_tilt/animation_weight_coeff = 1
         weapon_cover_tilt/consider_silencer = true
@@ -6836,7 +6981,7 @@
         ztc/player_tweaks/stamina/stamina_thirst_multiplier = 0
  
 [mcm_last_tab]
-        path                             = cop_port
+        path                             = efth/efth_screen
         scroll                           = 0
  
 [modded_exes]
@@ -6878,8 +7023,8 @@
         alife/event/psi_storm_state      = true
         alife/event/psi_storm_task       = true
         alife/event/psi_storm_warning    = siren
-        alife/general/alife_mutant_pop   = 0.5
-        alife/general/alife_stalker_pop  = 0.5
+        alife/general/alife_mutant_pop   = 0.65
+        alife/general/alife_stalker_pop  = 0.75
         alife/general/dynamic_anomalies  = true
         alife/general/dynamic_relations  = false
         alife/general/excl_dist          = 100
@@ -9348,8 +9493,8 @@
         modded_exes/zoom_step_count      = 8
         other/autosave_timer_new         = 0
         other/debug_error                = false
-        other/debug_hud                  = false
-        other/debug_map_hud              = true
+        other/debug_hud                  = true
+        other/debug_map_hud              = false
         other/quicksave_cnt              = 15
         sound/environment/ambient_volume = 1
         sound/environment/breathing_sound = false
@@ -9401,7 +9546,6 @@
         video/hud/ironsights_zoom_factor = 1.3
         video/hud/show_crosshair         = false
         video/hud/show_enemy_health      = false
-        video/hud/show_minimap           = false
         video/hud/show_slots             = true
         video/night/brightness           = dark
         video/night/moon_cycle           = 8
@@ -9431,6 +9575,21 @@
         video/weather/storm_occurrence   = 2
         video/weather/storm_period       = 4
  
+[otfa]
+        anchor_wpn_m4_ammo               = 0.0000, 0.0458, 0.0093
+        anchor_wpn_m4_gl                 = 0.0000, -0.0012, -0.0281
+        anchor_wpn_m4_scope              = -0.0000, -0.0318, 0.0486
+        anchor_wpn_m4_sil                = 0.0000, -0.0012, -0.3581
+        anchor_wpn_mp5_ammo              = 0.0016, -0.0196, 0.1051
+        anchor_wpn_mp5_scope             = -0.0013, 0.0940, 0.0439
+        anchor_wpn_mp5_sil               = 0.0000, 0.0539, 0.3297
+        anchor_wpn_vintorez_ammo         = 0.0001, -0.0409, 0.0651
+        blend_move_anims_saved           = false
+        blend_move_anims_value           = false
+        hud_crosshair_saved              = false
+        hud_crosshair_value              = false
+        migrated                         = true
+ 
 [pda_contacts]
         check_refresh                    = false
         check_show_known                 = true
@@ -9452,48 +9611,48 @@
         input4                           = give_info("esc_railway_assault_done")\s
  
 [ui_debug_launcher\uidebug_itemspawn\d14_input]
-        input1                           = wpn_mp5sd_drum
-        input10                          = kolbasa
-        input11                          = wpn_spas12
-        input12                          = wpn_protecta_camo
-        input13                          = wpn_saiga12s_isg
-        input14                          = wpn_protecta_custom
-        input15                          = medkit_scientic
-        input16                          = ammo_12x70_buck
-        input17                          = ammo_12x76_dart
-        input18                          = ration_ru
-        input19                          = brewed_coffee
-        input2                           = device_torch_nv_3
-        input20                          = wpn_m4_butcher
-        input3                           = wpn_vintorez_isg
-        input4                           = mag_valbas_9x39_extended
-        input5                           = ammo_9x39_ap
-        input6                           = laser_range_finder_att
-        input7                           = utlf_tactical_light
-        input8                           = tushonka
-        input9                           = sausage
+        input1                           = medkit_scientic
+        input10                          = eft_survkit
+        input11                          = bandage
+        input12                          = eft_alusplint
+        input13                          = eft_cmskit
+        input14                          = medkit
+        input15                          = purification_tablet
+        input16                          = achievement_box_3
+        input17                          = achievement_box_4
+        input18                          = eft_splint
+        input19                          = wpn_m4_butcher
+        input2                           = medkit_army
+        input20                          = wpn_m4a1_camo
+        input3                           = medkit_ai3
+        input4                           = eft_afak
+        input5                           = nuts
+        input6                           = ration_ru
+        input7                           = tushonka
+        input8                           = mineral_water
+        input9                           = brewed_coffee
  
 [ui_debug_launcher\uidebug_objspawn\d13_input]
-        input1                           = sim_default_killer_3
-        input10                          = tark_normal
-        input11                          = sim_default_zombied_1
-        input12                          = sim_default_zombied_4
-        input13                          = sim_default_bandit_1
-        input14                          = alghoul_strong
-        input15                          = alghoul_weak
-        input16                          = army_sim_squad_veteran
-        input17                          = army_sim_squad_novice
-        input18                          = isg_sim_squad_veteran
-        input19                          = sim_default_bandit_0
-        input2                           = sim_default_killer_4
-        input20                          = sim_default_bandit_2
-        input3                           = sim_default_killer_5
-        input4                           = sim_default_bandit_3
-        input5                           = duriel_weak
-        input6                           = fur
-        input7                           = gonchaya_normal
-        input8                           = obrazet_weak
-        input9                           = snork_strong
+        input1                           = sim_default_bandit_3
+        input10                          = sim_default_bandit_1
+        input11                          = alghoul_strong
+        input12                          = alghoul_weak
+        input13                          = army_sim_squad_veteran
+        input14                          = army_sim_squad_novice
+        input15                          = isg_sim_squad_veteran
+        input16                          = sim_default_bandit_0
+        input17                          = sim_default_bandit_2
+        input18                          = veh_btr
+        input19                          = veh_uaz_01
+        input2                           = duriel_weak
+        input20                          = zone_field_radioactive_average
+        input3                           = fur
+        input4                           = gonchaya_normal
+        input5                           = obrazet_weak
+        input6                           = snork_strong
+        input7                           = tark_normal
+        input8                           = sim_default_zombied_1
+        input9                           = sim_default_zombied_4
  
 [xrrazom]
         settings_migrated                = true
