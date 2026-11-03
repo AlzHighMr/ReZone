@@ -429,7 +429,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
 <header class="mast">
   <div class="mast-in">
     <a class="mast-logo" href="#rezone"><span class="ml-pre">S.T.A.L.K.E.R. Anomaly · modpack</span><span class="ml-name">Re<i>:</i>Zone</span><span class="ml-sub">Příručka · Databáze · Výroba</span></a>
-    <dl class="mast-meta"><div><dt>Re:Zone</dt><dd>2.2.0</dd></div><div><dt>Launcher</dt><dd>1.1.0</dd></div><div><dt>Jazyk</dt><dd>čeština</dd></div></dl>
+    <dl class="mast-meta"><div><dt>Re:Zone</dt><dd>2.3.0</dd></div><div><dt>Launcher</dt><dd>1.1.0</dd></div><div><dt>Jazyk</dt><dd>čeština</dd></div></dl>
   </div>
 </header>
 <header class="appbar">
@@ -489,7 +489,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <li><a href="#mo"><span>10</span>Mod Organizer</a></li>
       <li><a href="#savy"><span>11</span>Uložené hry</a></li>
       <li><a href="#coop"><span>12</span>COOP s přáteli</a></li>
-      <li><a href="#sdileni"><span>13</span>Sdílení modlistu a nastavení</a></li>
+      <li><a href="#sdileni"><span>13</span>Sestava: sdílení a porovnání</a></li>
       <li><a href="#zaloha"><span>14</span>Záloha hráče</a></li>
       <li><a href="#soubory"><span>15</span>Kde jsou soubory</a></li>
       <li><a href="#nastaveni"><span>16</span>Nastavení launcheru</a></li>
@@ -538,7 +538,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <a href="#coop" style="--c: var(--purple)"><span class="ht">Hra s přáteli <small>12</small></span><p>COOP krok za krokem: sestava, Steam nebo LAN, připojení.</p></a>
       <a href="#vyroba" style="--c: var(--amber)"><span class="ht">Výroba a recepty <small>25</small></span><p>Co v dílně vyrobíš, z čeho a s jakými nástroji.</p></a>
       <a href="#aktualizace" style="--c: var(--amber)"><span class="ht">Aktualizace a mody <small>06</small></span><p>Nové verze, volitelné mody, sezóny a textury.</p></a>
-      <a href="#zaloha" style="--c: var(--amber)"><span class="ht">Zálohy a sdílení <small>14</small></span><p>Ochraň nastavení a mody, pošli modlist kamarádovi.</p></a>
+      <a href="#sdileni" style="--c: var(--amber)"><span class="ht">Sestava a zálohy <small>13</small></span><p>Pošli modlist a nastavení, porovnej je s kamarádem, zálohuj.</p></a>
       <a href="#faq" style="--c: var(--red)"><span class="ht">Něco nefunguje <small>33</small></span><p>Pády hry, logy, ověření souborů a časté otázky.</p></a>
     </nav>
 
@@ -735,7 +735,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
         <li><b>Instalace vlastního modu</b> z archivu <b>.7z, .zip nebo .rar</b> – zařadí se pod <i>Custom addons HERE!</i></li>
         <li><b>Blesky u modů</b> ukazují konflikty: zelený = mod přepisuje jiný, červený = jiný mod přepisuje tento, žlutý = obojí, přeškrtnutý = mod je úplně přepsaný.</li>
         <li><b>Otevřít složku</b> – mody, overwrite, profil nebo stažené soubory.</li>
-        <li><b>Sdílet modlist</b> a <b>Sdílet nastavení</b> – viz <a href="#sdileni">Sdílení</a>.</li>
+        <li><b>Sestava</b> – sdílení, porovnání a zálohy, viz <a href="#sdileni">kap. 13</a>.</li>
       </ul>
       <p>Mod, který ručně zkopíruješ do složky <span class="path">mods</span>, launcher najde sám. Originální Mod Organizer 2 otevřeš ikonou <b>MO</b> vlevo dole.</p>
     </section>
@@ -819,47 +819,45 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
     </section>
 
     <section id="sdileni">
-      <h2><span class="n">13</span>Sdílení modlistu a nastavení</h2>
-      <p>Můžeš kamarádovi poslat dvě různé věci: <b>modlist</b> (jaké mody máš) a <b>nastavení</b> (jak máš nastavenou hru a MCM). Sdílí se kódem nebo malým souborem – samotné mody ani hra se neposílají.</p>
-
-      <h3>Sdílet modlist</h3>
-      <p class="where">Kde: <b>Mod Organizer › Sdílet modlist</b></p>
-      <p><b>Co obsahuje:</b></p>
+      <h2><span class="n">13</span>Sestava: sdílení a porovnání</h2>
+      <p><b>Sestava</b> je všechno, čím se tvoje hra liší od ostatních: <b>modlist</b> (profil, sezóna, volitelné a vlastní mody) a <b>nastavení</b> (user.ltx a MCM). Launcher s ní umí tři věci, všechny v jednom okně:</p>
       <ul>
-        <li>kód sestavy – profil, sezónu a zapnuté volitelné mody,</li>
-        <li>tvoje vlastní odkazy na Google Drive (pokud sis nějaké přidal v Nastavení › Zdroje),</li>
-        <li>tvoje vlastní mody pod <i>Custom addons HERE!</i> – název, pořadí, jestli je zapnutý, odkaz ke stažení, název archivu a verzi.</li>
+        <li><b>Uložit a sdílet</b> – pošli sestavu kamarádovi.</li>
+        <li><b>Načíst a porovnat</b> – podívej se, co se liší, a převezmi, co chceš.</li>
+        <li><b>Zálohy</b> – schovej si sestavu před velkým updatem (<a href="#zaloha">kap. 14</a>).</li>
       </ul>
-      <p><b>Jak poslat:</b></p>
-      <ol class="steps">
-        <li>Klikni na <span class="btn gray">KOPÍROVAT KÓD</span> – do schránky se zkopíruje text začínající <span class="path">RZM-</span>. Vlož ho kamarádovi na Discord.</li>
-        <li>Nebo klikni na <b>Uložit do souboru</b> a vyber, kam ho uložit. Vznikne soubor <span class="path">ReZone-modlist.rzmods</span>, který kamarádovi pošleš.</li>
-      </ol>
-      <p><b>Jak načíst modlist kamaráda:</b> v části <b>Modlist kamaráda</b> vlož kód a klikni na <span class="btn gray">NAČÍST</span>, nebo zvol <b>Ze souboru…</b> a vyber soubor .rzmods. Launcher pak:</p>
-      <ul>
-        <li>přepne profil a sezónu a zapne stejné volitelné mody (chybějící stáhne),</li>
-        <li>přidá kamarádovy odkazy na Google Drive (mody z nich najdeš ve Volitelných modech),</li>
-        <li>seřadí a zapne vlastní mody podle kamaráda – ty, které už máš.</li>
-      </ul>
-      <p>Vlastní mody, které ti chybí, launcher vypíše i s odkazem (<b>Otevřít odkaz</b>) a názvem archivu. Stáhni je, nainstaluj (Mod Organizer › instalace z archivu) a modlist načti znovu.</p>
-      <div class="box tip"><b class="t">Přidej k modům odkazy</b>Když posíláš modlist, kamarád uvidí odkaz jen u modů, které ho mají. Odkaz doplníš v Mod Organizeru 2: pravým tlačítkem na mod › Informace › Nexus Info / URL.</div>
+      <p class="where">Kde: <b>ikona sestavy vlevo dole</b> (vedle logů), <b>Mod Organizer › Sestava</b> nebo <b>Nastavení › MODPACK › Otevřít sestavu</b></p>
+      <p>Samotné mody ani hra se neposílají – jen jejich seznam a nastavení.</p>
 
-      <h3>Sdílet nastavení</h3>
-      <p class="where">Kde: <b>Mod Organizer › Sdílet nastavení</b> nebo <b>Nastavení › MODPACK › Sdílení nastavení</b></p>
-      <p><b>Co obsahuje:</b> tvoje <b>user.ltx</b> (grafika, zvuk, hra, klávesy) a <b>nastavení MCM</b> aktuálního profilu (soubor axr_options.ltx). Launcher vezme přesně ty soubory, které hra používá (kde jsou, najdeš v <a href="#soubory">Kde jsou soubory</a>).</p>
+      <h3>Uložit a sdílet</h3>
       <ol class="steps">
-        <li>V části <b>Moje nastavení</b> zaškrtni, co chceš poslat: user.ltx, MCM, nebo obojí.</li>
-        <li>Klikni na <span class="btn">ULOŽIT DO SOUBORU</span> a vyber místo. Vznikne soubor <span class="path">ReZone-nastaveni-&lt;profil&gt;.rzset</span>.</li>
-        <li>Soubor pošli kamarádovi – třeba ho přetáhni do Discordu. (Do zprávy jako kód se nevejde, je na to moc velký.)</li>
+        <li>Zaškrtni, co chceš poslat: <b>Modlist</b>, <b>Nastavení hry (user.ltx)</b> a <b>Nastavení MCM</b> aktuálního profilu.</li>
+        <li>Klikni na <span class="btn">ULOŽIT DO SOUBORU</span> a vyber místo. Vznikne jeden soubor <span class="path">ReZone-sestava-&lt;profil&gt;.rezone</span>.</li>
+        <li>Soubor pošli kamarádovi – třeba ho přetáhni do Discordu.</li>
       </ol>
-      <p><b>Jak načíst nastavení kamaráda:</b></p>
+      <p>Chceš poslat jen modlist do zprávy? <span class="btn gray">KOPÍROVAT KÓD MODLISTU</span> zkopíruje krátký text začínající <span class="path">RZM-</span>, který vložíš přímo do Discordu.</p>
+      <div class="box tip"><b class="t">Přidej k vlastním modům odkazy</b>U vlastních modů bez odkazu kamarád uvidí jen název a archiv – launcher tě na ně upozorní. Odkaz doplníš v Mod Organizeru 2: pravým tlačítkem na mod › Informace › Nexus Info / URL.</div>
+
+      <h3>Načíst a porovnat</h3>
       <ol class="steps">
-        <li>Zavři hru i Mod Organizer 2 – hra si při ukončení user.ltx přepisuje.</li>
-        <li>V části <b>Nastavení kamaráda</b> klikni na <span class="btn gray">NAČÍST SOUBOR…</span> a vyber .rzset. Launcher ukáže, co soubor obsahuje (počet nastavení a kláves, z jakého profilu je MCM a kdy vznikl).</li>
-        <li>Vyber, co převzít: <b>nastavení hry</b>, <b>ovládání (klávesy)</b>, <b>MCM</b>. Volba <b>Ponechat moje rozlišení, režim okna, monitor a zvukové zařízení</b> je zapnutá – kamarádovo rozlišení ti nemusí sedět.</li>
-        <li>Klikni na <span class="btn">POUŽÍT</span> a potvrď.</li>
+        <li>Vlož kód kamaráda a klikni na <span class="btn">NAČÍST KÓD</span>, nebo zvol <span class="btn gray">ZE SOUBORU…</span>. Funguje soubor <span class="path">.rezone</span>, starší <span class="path">.rzmods</span> a <span class="path">.rzset</span> i kód <span class="path">RZ-</span> z okna COOP.</li>
+        <li>Launcher ukáže <b>porovnání s tvojí hrou</b>:
+          <ul>
+            <li>u modlistu: jiný profil nebo sezónu, které mody zapne, stáhne nebo vypne, kolik vlastních modů máš a kolik ti chybí,</li>
+            <li>u každého nastavení: v kolika hodnotách se liší (nebo že je stejné).</li>
+          </ul>
+        </li>
+        <li>Vyber, co převzít:
+          <ul>
+            <li><b>Převzít modlist</b> – profil, sezóna, volitelné mody (chybějící stáhne) a pořadí vlastních modů,</li>
+            <li><b>nastavení hry</b>: Ponechat moje / Převzít (tvoje klávesy a rozlišení zůstanou) / Jen klávesy / Převzít vše,</li>
+            <li><b>MCM</b>: Ponechat moje / Převzít.</li>
+          </ul>
+        </li>
+        <li>Zavři hru i Mod Organizer 2 a klikni na <span class="btn">POUŽÍT</span>.</li>
       </ol>
-      <p>Tvoje původní soubory zůstanou vedle jako záloha s koncovkou <span class="path">.bak</span> (např. <span class="path">user.ltx.bak</span>). Když se ti nastavení kamaráda nelíbí, stačí soubor .bak přejmenovat zpátky – nebo použít Výchozí nastavení v Nastavení › MODPACK.</p>
+      <p>Vlastní mody, které ti chybí, launcher vypíše i s odkazem (<b>Otevřít odkaz</b>) a názvem archivu. Stáhni je, nainstaluj (Mod Organizer › instalace z archivu) a sestavu načti znovu. Tvoje původní soubory nastavení zůstanou vedle jako <span class="path">.bak</span> (např. <span class="path">user.ltx.bak</span>).</p>
+      <div class="box"><b class="t">Hrajete COOP?</b>Načtení sestavy hostitele je nejrychlejší cesta ke stejné sestavě – stačí převzít modlist. Kontrolní kód v okně COOP pak ukáže, jestli máte všichni stejnou.</div>
     </section>
 
     <section id="zaloha">
@@ -891,13 +889,14 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <p>Když launcher nezná nastavení, ze kterého jsi původně vycházel (třeba u starší instalace), sloučení je přibližné: u všeho, co máš, zůstane tvoje hodnota a z updatu se přidají jen nové volby. Okno na to upozorní. Bez internetu jde vybrat jen „Moje ze zálohy“.</p>
 
       <h3>Ruční záloha</h3>
-      <p class="where">Kde: <b>ikona zálohy vlevo dole</b> nebo <b>Nastavení › MODPACK › Záloha hráče</b></p>
+      <p class="where">Kde: <b>okno Sestava › záložka Zálohy</b> (ikona vlevo dole)</p>
       <ul>
-        <li><span class="btn">ZÁLOHOVAT NASTAVENÍ</span> – jen user.ltx a MCM, mody zůstanou na místě. Hodí se kdykoli, třeba před velkým laděním nastavení.</li>
-        <li><span class="btn">ZÁLOHOVAT VČETNĚ MODŮ</span> – i vlastní mody; ty jsou pak <b>mimo hru, dokud je neobnovíš</b>.</li>
-        <li><span class="btn gray">OBNOVIT ZE ZÁLOHY</span> – výběr ze všech záloh podle data a tlačítko <b>Otevřít složku</b>.</li>
+        <li><span class="btn">ZÁLOHOVAT</span> – nastavení (user.ltx, MCM všech profilů) a modlist; mody zůstanou na místě. Hodí se kdykoli, třeba před velkým laděním nastavení.</li>
+        <li><span class="btn">ZÁLOHOVAT VČETNĚ MODŮ</span> – navíc vlastní mody; ty jsou pak <b>mimo hru, dokud je neobnovíš</b>.</li>
+        <li><span class="btn gray">SLOŽKA ZÁLOH</span> – otevře složku se všemi zálohami.</li>
       </ul>
-      <div class="box warn"><b class="t">Oranžová tečka u ikony zálohy</b>Znamená, že záloha čeká na obnovení a tvoje vlastní mody jsou zrovna v ní, ne ve hře.</div>
+      <p>Pod tím je <b>Obnovit ze zálohy</b>: výběr zálohy podle data, u každého nastavení Sloučit / Moje / Nové z updatu, volba <b>Moje volitelné mody, profil a sezóna</b> (vrátí modlist jako při záloze) a <b>Vrátit moje vlastní mody</b>.</p>
+      <div class="box warn"><b class="t">Oranžová tečka u ikony sestavy</b>Znamená, že záloha čeká na obnovení a tvoje vlastní mody jsou zrovna v ní, ne ve hře.</div>
 
       <h3>Kde je záloha a co v ní je</h3>
       <p>Každá záloha je samostatná složka pojmenovaná podle data a času, uvnitř složky modpacku:</p>
@@ -943,7 +942,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
         <tr><td>Zálohy hráče</td><td><span class="path">ReZone Modpack\Zaloha hrace\&lt;datum a čas&gt;</span></td></tr>
         <tr><td>Záloha savů při odinstalaci</td><td><span class="path">Dokumenty\ReZone - zaloha savu\&lt;datum a čas&gt;</span></td></tr>
         <tr><td>Původní soubory po sdílení nebo výchozím nastavení</td><td>Vedle souboru s koncovkou <span class="path">.bak</span>, např. <span class="path">user.ltx.bak</span>.</td></tr>
-        <tr><td>Sdílené soubory</td><td>Kam je uložíš: <span class="path">.rzmods</span> (modlist), <span class="path">.rzset</span> (nastavení).</td></tr>
+        <tr><td>Sdílená sestava</td><td>Kam ji uložíš: soubor <span class="path">.rezone</span> (modlist i nastavení v jednom).</td></tr>
       </table></div>
     </section>
 
@@ -991,20 +990,20 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
 
     <section id="mcm">
       <h2><span class="n">18</span>Než vyrazíš (MCM)</h2>
-      <p>Skoro všechno se nastavuje v jednom menu: <span class="path">Esc › Nastavení › MCM › ReZone</span>. Má čtyři záložky: <b>Hlavní</b> (předvolba hry), <b>Gameplay</b> (boj, obchod, kořist, populace, výroba), <b>Zdraví</b> (poškození hráče, mutanti, artefakty) a <b>Ostatní</b> (efekty na obrazovce, pozadí menu). Zdravotní systém má vlastní stránku <b>EFT Health System</b>.</p>
+      <p>Skoro všechno se nastavuje v jednom menu: <span class="path">Esc › Nastavení › MCM › ReZone</span>. Má čtyři záložky: <b>Hlavní</b> (předvolba hry), <b>Gameplay</b> (boj, obchod, kořist, artefakty v anomáliích, populace, výroba), <b>Zdraví</b> (poškození hráče, mutanti, artefakty) a <b>Ostatní</b> (efekty na obrazovce, pozadí menu). Zdravotní systém má vlastní stránku <b>EFT Health System</b>.</p>
       <p>Všechno v MCM si můžeš upravit podle sebe. Dávej jen pozor při zapínání a vypínání <b>patchů kompatibility</b> – některé addony jsou na sobě závislé. Názvy modů jsou v MCM anglicky, abys je mohl případně vyhledat na internetu; samotné nastavení uvnitř modu je česky.</p>
 
       <h3>Nejrychlejší start: jeden přepínač</h3>
       <ol class="steps">
         <li>Otevři <span class="path">ReZone › Hlavní › Předvolba hry</span>.</li>
-        <li>Vyber <b>Call of Pripyat – pro nováčky</b>, <b>Trilogie – příběh</b> nebo <b>Hardcore</b> a dej <b>Použít</b>. Předvolba nastaví balistiku, obleky, poškození hráče, kořist, populaci i obtížnost EFT Health System.</li>
+        <li>Vyber <b>Call of Pripyat – pro nováčky</b>, <b>Trilogie – příběh</b> nebo <b>Hardcore</b> a dej <b>Použít</b>. Předvolba nastaví balistiku, obleky, poškození hráče, kořist, artefakty v anomáliích, populaci i obtížnost EFT Health System.</li>
         <li>Načti uloženou hru. Profil obleků se uplatní až na předměty načtené po změně.</li>
       </ol>
       <div class="tbl"><table>
         <tr><th>Předvolba hry</th><th>Co dostaneš</th></tr>
-        <tr><td><b>Call of Pripyat – pro nováčky</b></td><td>Kulky do tebe ×0,5, mutanti a výbuchy slabší, použitelné věci z mrtvol, klidnější Zóna.</td></tr>
-        <tr><td><b>Trilogie – příběh</b></td><td>Kulky ×0,7, ostatní jako ve vanilla, použitelné věci z mrtvol.</td></tr>
-        <tr><td><b>Hardcore</b></td><td>Všechno bolí víc, brnění se rozpadá, málo použitelné kořisti, nebezpečná Zóna.</td></tr>
+        <tr><td><b>Call of Pripyat – pro nováčky</b></td><td>Kulky do tebe ×0,5, mutanti a výbuchy slabší, použitelné věci z mrtvol, klidnější Zóna, artefakty jako v Call of Pripyat.</td></tr>
+        <tr><td><b>Trilogie – příběh</b></td><td>Kulky ×0,7, ostatní jako ve vanilla, použitelné věci z mrtvol, o něco méně artefaktů.</td></tr>
+        <tr><td><b>Hardcore</b></td><td>Všechno bolí víc, brnění se rozpadá, málo použitelné kořisti, nebezpečná Zóna, silné artefakty jen výjimečně.</td></tr>
         <tr><td>Vlastní</td><td>Nic se nemění, platí tvoje ruční nastavení.</td></tr>
       </table></div>
       <div class="box tip"><b class="t">Předvolba tvoje úpravy nepřepíše</b>Použije se jen ve chvíli, kdy ji změníš. Pak si můžeš cokoli doladit na jednotlivých stránkách. Nastavení se ukládají samy.</div>
@@ -1115,7 +1114,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
 
     <section id="artefakty">
       <h2><span class="n">24</span>Artefakty</h2>
-      <p class="where">Nastavení: <b>Zdraví › Artefakty</b></p>
+      <p class="where">Nastavení: <b>Zdraví › Artefakty</b> a <b>Gameplay › Artefakty v anomáliích</b></p>
       <p>Artefakty fungují jako v Call of Pripyat: každý má jeden hlavní efekt, většina vyzařuje radiaci a mnohé mají i <b>minus</b>, který vyrovná jiný artefakt. Medúza třeba odvádí radiaci, ale zhoršuje krvácení, takže se hodí do páru s Okem.</p>
       <ul>
         <li><b>Kontejnery</b> (olověná krabička, IAM, AAC, AAM) chrání před radiací artefaktu, když ho neseš v batohu.</li>
@@ -1123,6 +1122,26 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
         <li>Artefakty se opotřebovávají čtyřikrát pomaleji než ve vanilla.</li>
         <li>Nepotřebný artefakt můžeš v inventáři <b>rozdrtit na prášek</b> pro výrobu.</li>
       </ul>
+
+      <h3>Kde artefakty rostou</h3>
+      <p>Nové artefakty vyrostou v anomálních polích po <b>emisi</b> nebo <b>psí bouři</b>. Každé pole má podle místa vlastní nabídku – čím dál v Zóně, tím silnější artefakty:</p>
+      <div class="tbl"><table>
+        <tr><th>Oblast</th><th>Co tam roste</th></tr>
+        <tr><td>Kordon</td><td>Bezcenné artefakty – na začátek k prodeji.</td></tr>
+        <tr><td>Bažiny, Bar, Darkscape, Louka</td><td>Bezcenné a slabé.</td></tr>
+        <tr><td>Smetiště, Agroprom, Temné údolí, Jantar</td><td>Slabé, místy střední.</td></tr>
+        <tr><td>Zaton, Jupiter, Armádní sklady, Rostok, Mrtvé město, Hřbitov aut, X18</td><td>Střední, místy silné.</td></tr>
+        <tr><td>Rudý les, Pripyat, Limansk, Radar, X16</td><td>Silné, v Pripyati i velmi vzácné.</td></tr>
+        <tr><td>Generátory, Sarkofág, elektrárna</td><td>Velmi vzácné – i Lampa smrti.</td></tr>
+      </table></div>
+      <p>Síla odpovídá artefaktům ve stylu Call of Pripyat: <b>slabé</b> vyzařují jednu jednotku radiace, <b>střední</b> dvě, <b>silné</b> tři. Typ artefaktu (gravitační, ohnivý, chemický, elektrický) se řídí typem anomálie v poli.</p>
+      <div class="tbl"><table>
+        <tr><th>Nastavení</th><th>Co dělá</th></tr>
+        <tr><td>Šance na artefakt</td><td>Jak často v poli po obnově artefakt vyroste (1 = podle obtížnosti ekonomiky).</td></tr>
+        <tr><td>Po emisi / Po psí bouři</td><td>Kolikrát je šance vyšší nebo nižší po emisi a po psí bouři.</td></tr>
+        <tr><td>Vzácnost silných artefaktů</td><td><b>Rovnoměrně</b> (vanilla), <b>Call of Pripyat</b> – silné vzácně, <b>Vzácné</b> – silné jen výjimečně.</td></tr>
+      </table></div>
+      <div class="box tip"><b class="t">Choď po emisi</b>Hned po emisi se vyplatí obejít pole v pozdějších oblastech – silné artefakty rostou jen tam.</div>
     </section>
 
     <section id="vyroba">
@@ -1144,6 +1163,8 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <p class="where">Nastavení: <b>Gameplay › Obchod</b>, <b>Ceny</b>, <b>Kořist</b></p>
       <ul>
         <li><b>Zbraně u obchodníků</b> koupíš, až zvýšíš <b>úroveň zásob</b> – získáváním reputace u dané frakce. Každá úroveň zásob je 500 reputace.</li>
+        <li><b>Zbraně podle frakce:</b> obchodníci <b>NATO</b> (Svoboda, žoldáci, ISG) prodávají západní zbraně a doplňky, obchodníci <b>Varšavské smlouvy</b> (Povinnost, armáda, Monolit, banditi, Odpadlíci) východní. Samotáři a Jasná obloha mají od obou trochu.</li>
+        <li><b>Munice je stejná u všech</b> obchodníků se zbraněmi – lepší druhy přibývají s úrovní zásob. Frakční speciality (třeba AK Povinnosti nebo M4 Svobody) zůstávají jen u svých obchodníků.</li>
         <li><b>Hraj jako GAMMA:</b> volba, se kterou obchodníci zbraně vůbec nekupují ani neprodávají – vybavení získáváš z boje. Samostatně jde vypnout obchod s <b>helmami</b>.</li>
         <li><b>Prodej poškozených věcí:</b> načti poslední uloženou pozici a otevři <span class="path">Nastavení › Hra › Ekonomie</span> – hned první volba nastavuje prodej poškozeného vybavení.</li>
         <li><b>Omezení zásob:</b> obchodník má jen tolik zboží, kolik dává smysl, a doplňuje ho při každém doplnění zásob.</li>
@@ -1277,7 +1298,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <div class="box"><b class="t">Pořád nic?</b>Ozvi se na Discordu Re:Zone (ikona vlevo dole v launcheru). Přidej popis problému, screenshot a log.</div>
     </section>
 
-    <footer>Re:Zone 2.2.0 · Re:Zone Launcher 1.1.0 · EFT Health System 7.32. Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.</footer>
+    <footer>Re:Zone 2.3.0 · Re:Zone Launcher 1.1.0 · EFT Health System 7.32. Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.</footer>
   </main>
 </div>
 <script>
