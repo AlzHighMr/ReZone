@@ -6,7 +6,8 @@ Web modpacku Re:Zone pro S.T.A.L.K.E.R. Anomaly.
 |---|---|
 | `index.html` | Příručka: Informace, Instalace, Příručka, Databáze, Výroba |
 | `testy.html` | Test questů trilogie (zamčeno heslem) |
-| `changelog.html` | Changelog oprav trilogie (zamčeno heslem) |
+| `changelog.html` | Changelog oprav trilogie (zamčeno vlastním heslem) |
+| `preklad.html`, `tr/` | Editace překladu |
 | `.nojekyll` | GitHub Pages soubory nijak neupravuje |
 
 ## Zveřejnění na GitHub Pages
