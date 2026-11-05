@@ -161,19 +161,10 @@
       "image": "https://cdn.alza.cz/Foto/ImgGalery/Image/stalker-legends-of-the-zone-trilogy-logo.jpg",
       "requires": [
         "Stalker Trilogy Compat Patch",
-        "Stalker Trilogy Assets"
+        "Stalker Trilogy Assets",
+        "Clear Sky Smart Covers",
+        "CS Smart Covers"
       ]
-    },
-    {
-      "name": "ReZone Trilogy CS Smart Covers",
-      "title": "Clear Sky Smart Covers",
-      "author": "GSC",
-      "category": "Work in Progress",
-      "bundle": "Stalker Trilogy",
-      "priority": 293,
-      "description": "Smart covers z Clear Sky - Stalkeři používají ukryty a lehají si na zem při boji.",
-      "image": "https://media.moddb.com/images/mods/1/42/41087/Cover.jpg",
-      "url": "https://drive.google.com/file/d/13BOLTnzG67MgYtzjRZ393sYWZ8b7q3rK/view?usp=drive_link"
     },
     {
       "name": "SGM",
@@ -658,6 +649,14 @@
       "description": "Assety pro trilogii ",
       "priority": 293,
       "url": "https://drive.google.com/file/d/1Umgc81-hmX-f9ExQSX-2i39mqn-HW_QZ"
+    },
+    {
+      "name": "CS Smart Covers",
+      "title": "Clear Sky Smart covers",
+      "hidden": true,
+      "description": "Smart covers z Clear Sky - Stalkeři používají ukryty a lehají si na zem při boji.",
+      "url": "https://drive.google.com/file/d/13BOLTnzG67MgYtzjRZ393sYWZ8b7q3rK",
+      "priority": 294
     }
   ]
 }
