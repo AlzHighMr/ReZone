@@ -2333,8 +2333,9 @@ document.addEventListener('click', function (e) { if (!e.target.closest('.ab-sea
   var PROT = [['burn', 'burn_protection', 'Ochrana – oheň'], ['shock', 'shock_protection', 'Ochrana – elektřina'], ['chemical_burn', 'chemical_burn_protection', 'Ochrana – chemie'], ['radiation', 'radiation_protection', 'Ochrana – radiace'], ['telepatic', 'telepatic_protection', 'Ochrana – psi']];
   function fields(it) {
     var f = [['cost', 'Cena', it.cost], ['inv_weight', 'Hmotnost (kg)', it.w]];
-    if (it.cat === 'obleky') {
-      f.push(['artefact_count', 'Sloty na artefakty', it.art]);
+    if (it.cat === 'obleky') f.push(['artefact_count', 'Sloty na artefakty', it.art]);
+    // obleky i helmy: ochrany (hodnota z LTX, napr. burn_protection)
+    if (it.cat === 'obleky' || it.cat === 'helmy') {
       PROT.forEach(function (p) { var v = it.prot && it.prot[p[0]]; if (v) f.push([p[1], p[2], v[0]]); });
     }
     if (it.cat === 'zbrane') { f.push(['rpm', 'Kadence (ran/min)', it.rpm]); f.push(['ammo_mag_size', 'Zásobník', it.mag]); }
