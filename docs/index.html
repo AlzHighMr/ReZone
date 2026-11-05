@@ -326,7 +326,8 @@ table.dbt th { cursor: pointer; white-space: nowrap; }
 table.dbt td { padding: 6px 10px; vertical-align: middle; }
 table.dbt td.n { font-family: var(--mono); text-align: right; white-space: nowrap; }
 .nm { display: flex; align-items: center; gap: 10px; color: var(--amber); font-weight: 600; }
-.rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; }
+.rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)); gap: 12px; }
+.rgrid > *, .cards > * { min-width: 0; }
 .rcard { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; }
 .rcard .hd { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 .rcard .hd b { font: 600 16px var(--body); color: var(--amber); }
@@ -471,6 +472,8 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
   .wrap, .wrap.solo { padding: 0 16px 40px; margin-top: 12px; }
   nav.toc { position: static; max-height: none; }
 }
+@media (max-width: 600px) { .rcard .hd { flex-wrap: wrap; } .rcard .badge { white-space: normal; margin-left: 0; } }
+@media (max-width: 900px) { .ab-in { min-width: 0; } .ab-tabs { min-width: 0; max-width: 100%; overflow-x: auto; scrollbar-width: none; } .ab-tabs::-webkit-scrollbar { display: none; } }
 </style>
 </head>
 <body>
@@ -488,9 +491,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <a href="#start" data-view="install">Instalace</a>
       <a href="#ovladani" data-view="guide">Příručka</a>
       <a href="#db" data-view="db">Databáze</a>
-      <a href="#craft" data-view="craft">Výroba</a>
-      <a href="testy.html" class="ab-ext">Testeři</a>
-      <a href="preklad.html" class="ab-ext">Překlad</a>
+      <a href="testy.html" class="ab-ext" title="Test questů, changelog a překlad">Testeři</a>
     </nav>
     <label class="ab-search"><span aria-hidden="true">⌕</span><input id="gsearch" type="search" placeholder="Hledat předmět, náboj, recept, kapitolu…" autocomplete="off"><kbd>/</kbd></label>
   </div>
@@ -1864,6 +1865,9 @@ document.addEventListener('click', function (e) {
 document.addEventListener('keydown', function (e) { if ((e.key === 'Enter' || e.key === ' ') && e.target.dataset && e.target.dataset.fold && e.target.tagName !== 'BUTTON') { e.preventDefault(); e.target.click(); } });
 function dbSide() {
   var h = fgrp('db:Rychlý přístup', 'Rychlý přístup', '<a href="#db/fav" data-k="fav">Oblíbené <span class="c">' + Object.keys(favs).length + '</span></a>');
+  /* vyroba je soucast databaze: recepty podle zalozek dilny */
+  h += fgrp('db:Výroba', 'Výroba', fsub('dbc:craft', '<a href="#craft" class="craft-go">Všechny recepty <span class="c">' + DB.recipes.length + '</span></a>',
+    DB.tabs.map(function (t) { return '<a href="#craft/' + t[0] + '" class="sub">' + esc(t[1]) + ' <span class="c">' + t[2] + '</span></a>'; }).join(''), true));
   var grp = [], inner = {};
   CATS.forEach(function (c) {
     if (!(c.group in inner)) { grp.push(c.group); inner[c.group] = ''; }
@@ -1881,7 +1885,6 @@ function dbSide() {
   h += fgrp('db:Obchod', 'Obchod', fsub('dbc:obchod', tl, DB.traders.map(function (t) {
     return '<a href="#db/obchod/' + t.id + '" data-k="obchod/' + t.id + '" class="sub">' + esc(t.name) + ' <span class="c">' + t.items.length + '</span></a>';
   }).join(''), st.cat !== 'obchod'));
-  h += fgrp('db:Výroba', 'Výroba', '<a href="#craft">Recepty <span class="c">' + DB.recipes.length + '</span></a>');
   $('#db-side').innerHTML = h;
   var key = st.cat === 'fav' ? 'fav' : st.cat + (st.sub ? '/' + st.sub : '');
   [].forEach.call($('#db-side').querySelectorAll('a'), function (a) { a.classList.toggle('on', a.dataset.k === key); });
@@ -2193,7 +2196,7 @@ function show(view) {
     guide.classList.toggle('solo', view === 'info');
   }
   document.body.dataset.view = view;
-  [].forEach.call(document.querySelectorAll('.ab-tabs a'), function (a) { a.classList.toggle('on', a.dataset.view === view); });
+  [].forEach.call(document.querySelectorAll('.ab-tabs a'), function (a) { a.classList.toggle('on', a.dataset.view === view || (view === 'craft' && a.dataset.view === 'db')); });
 }
 function toTop() { var y = mast.offsetHeight; if (window.scrollY > y) window.scrollTo(0, y); }
 function route() {

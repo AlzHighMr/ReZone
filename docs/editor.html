@@ -29,7 +29,7 @@ a { color: var(--amber); }
 .appbar { position: sticky; top: 0; z-index: 50; background: #0b0b0bf2; border-top: 1px solid #ffffff14; box-shadow: 0 1px 0 var(--red2), 0 8px 24px #0008; }
 .ab-in { max-width: 1340px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 18px; min-height: 54px; }
 .ab-tabs { display: flex; gap: 2px; align-self: stretch; }
-.ab-tabs button { display: flex; align-items: center; padding: 0 20px; color: #b9b5ab; background: none; border: 0; cursor: pointer; font: 700 18px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; }
+.ab-tabs button { white-space: nowrap; display: flex; align-items: center; padding: 0 20px; color: #b9b5ab; background: none; border: 0; cursor: pointer; font: 700 18px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; }
 .ab-tabs button:hover { color: #fff; background: #ffffff0a; }
 .ab-tabs button.on { color: #fff; background: linear-gradient(180deg, var(--red), var(--red2)); clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px)); }
 .ab-tabs .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); margin-left: 7px; }
@@ -133,6 +133,7 @@ details.adv > .in { padding: 0 14px 14px; }
 <header class="appbar"><div class="ab-in">
   <nav class="ab-tabs" id="tabs" hidden>
     <button data-tab="news">Novinky</button>
+    <button data-tab="chlog" title="Changelog oprav trilogie na stránce pro testery">Changelog</button>
     <button data-tab="opt">Volitelné mody</button>
     <button data-tab="patch">Patche</button>
     <button data-tab="moddb">ModDB addony</button>
@@ -173,6 +174,22 @@ details.adv > .in { padding: 0 14px 14px; }
       <div class="news-prev" id="newsPrev"></div>
     </div>
     <div class="bar" data-save="news"></div>
+  </section>
+
+  <section class="card" id="tab-chlog" hidden>
+    <div class="eb">// docs/changelog.html · zamčeno heslem</div>
+    <h2>Changelog testerů</h2>
+    <p class="hint">Changelog oprav trilogie na stránce pro testery. <code>## Balík 3 · 5. 11. 2026</code> = nový záznam, <code>### Podnadpis</code>, <code>- bod</code>, <code>[SoC]</code> / <code>[CS]</code> / <code>[CoP]</code> na začátku bodu = štítek, <code>**tučně**</code>. Nové záznamy piš nahoru.</p>
+    <div id="clLock" class="row" style="margin-top:12px;align-items:flex-end">
+      <label class="f" style="flex:0 1 260px"><span>Heslo stránky pro testery</span><input type="password" id="clPass" class="mono" autocomplete="off"></label>
+      <button class="btn pri" id="clOpen" style="flex:0 0 auto">Odemknout</button>
+      <p class="msg" id="clMsg" style="flex:1 1 100%"></p>
+    </div>
+    <div class="grid2" id="clEdit" style="margin-top:12px" hidden>
+      <textarea id="clText" class="mono" style="min-height:460px" spellcheck="true" placeholder="## Balík 1 · 5. 11. 2026&#10;- [SoC] Opraven quest …&#10;- [CS] …"></textarea>
+      <div class="news-prev" id="clPrev" style="padding:0;overflow:auto;max-height:640px"></div>
+    </div>
+    <div class="bar" data-save="chlog"></div>
   </section>
 
   <section class="card" id="tab-opt" hidden>
@@ -280,11 +297,12 @@ details.adv > .in { padding: 0 14px 14px; }
   // soubor -> stav; zalozka -> soubor (Volitelne mody i Patche jsou v optional.json)
   var FILES = {
     news: { path: 'ReZone/changelog.md', sha: null, orig: '', dirty: false },
+    chlog: { path: 'docs/changelog.html', sha: null, orig: '', dirty: false },
     opt: { path: 'ReZone/optional.json', sha: null, orig: '', dirty: false },
     moddb: { path: 'ReZone/moddb.json', sha: null, orig: '', dirty: false },
     src: { path: 'ReZone/sources.json', sha: null, orig: '', dirty: false }
   };
-  var TAB_FILE = { news: 'news', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src' };
+  var TAB_FILE = { news: 'news', chlog: 'chlog', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src' };
   function api(path, opts) {
     opts = opts || {};
     opts.headers = Object.assign({ 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' }, opts.headers || {});
@@ -347,15 +365,19 @@ details.adv > .in { padding: 0 14px 14px; }
     var save = el('button', { class: 'btn pri', text: 'Uložit na GitHub' });
     var reload = el('button', { class: 'btn', text: 'Načíst znovu' });
     save.addEventListener('click', function () {
-      var r = validators[fk]();
+      save.disabled = true;
+      Promise.resolve().then(function () { return validators[fk](); }).then(function (r) {
+      save.disabled = false;
       if (r.errors.length) { status.className = 'msg err'; status.textContent = r.errors[0] + (r.errors.length > 1 ? ' (a další: ' + (r.errors.length - 1) + ')' : ''); return; }
-      if (r.text === FILES[fk].orig) { status.className = 'msg warn'; status.textContent = 'Nic se nezměnilo.'; return; }
+      if (r.same || r.text === FILES[fk].orig) { status.className = 'msg warn'; status.textContent = 'Nic se nezměnilo.'; return; }
       var m = msg.value.trim() || ('Editor: ' + FILES[fk].path.split('/').pop());
       save.disabled = true; status.className = 'msg'; status.textContent = 'Ukládám…';
-      putFile(fk, r.text, m + ' (editor, ' + S.user + ')').then(function () {
+      return putFile(fk, r.text, m + ' (editor, ' + S.user + ')').then(function () {
+        if (r.after) r.after();
         FILES[fk].dirty = false; markTabs(); msg.value = '';
-        status.className = 'msg ok'; status.textContent = 'Uloženo. Hráči změnu uvidí při další kontrole aktualizací v launcheru.';
-      }, function (e) { status.className = 'msg err'; status.textContent = friendly(e); })
+        status.className = 'msg ok'; status.textContent = fk === 'chlog' ? 'Uloženo. Testeři změnu uvidí na webu za pár minut (GitHub Pages web obnoví sám).' : 'Uloženo. Hráči změnu uvidí při další kontrole aktualizací v launcheru.';
+      }, function (e) { status.className = 'msg err'; status.textContent = friendly(e); });
+      }).catch(function (e) { status.className = 'msg err'; status.textContent = e && e.message ? e.message : String(e); })
         .then(function () { save.disabled = false; });
     });
     reload.addEventListener('click', function () {
@@ -421,6 +443,115 @@ details.adv > .in { padding: 0 14px 14px; }
     var t = $('newsText').value.replace(/\r\n/g, '\n');
     if (!/\n$/.test(t)) t += '\n';
     return { text: t, errors: t.trim() ? [] : ['Novinky nesmí být prázdné.'] };
+  };
+
+// Changelog oprav trilogie: spolecne vykresleni pro stranku changelog.html a editor.
+var CL_CSS = [
+  '.cl { max-width: 980px; margin: 26px auto 60px; padding: 0 24px; }',
+  '.cl-head .eb { font: 600 12px/1 "JetBrains Mono", Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; color: #c4492c; }',
+  '.cl-head h1 { font: 700 44px/1 "Barlow Condensed", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: .03em; color: #ecebe6; margin: 10px 0 6px; }',
+  '.cl-head p { color: #96938b; margin: 0 0 22px; }',
+  '.cl-entry { background: #101010f2; border: 1px solid #262626; position: relative; padding: 18px 22px 16px; margin: 0 0 16px; box-shadow: 0 14px 40px #0009; }',
+  '.cl-entry::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 3px; background: linear-gradient(90deg, #c4492c 0 120px, #e0a43a 120px 150px, #2a2a2a 150px); }',
+  '.cl-entry h2 { font: 700 26px/1.1 "Barlow Condensed", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: .04em; color: #e0a43a; margin: 0 0 10px; }',
+  '.cl-entry h3 { font: 700 18px/1.1 "Barlow Condensed", "Arial Narrow", sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #ecebe6; margin: 14px 0 6px; }',
+  '.cl-entry ul { margin: 4px 0 6px; padding-left: 20px; }',
+  '.cl-entry li { margin: 4px 0; color: #d8d6d0; }',
+  '.cl-entry p { margin: 6px 0; color: #d8d6d0; }',
+  '.cl-tag { display: inline-block; font: 600 11px/1 "JetBrains Mono", Consolas, monospace; letter-spacing: .06em; text-transform: uppercase; padding: 3px 6px 2px; margin-right: 6px; vertical-align: 1px; border: 1px solid #444; color: #bdb8ad; }',
+  '.cl-tag.soc { color: #8fbf6a; border-color: #8fbf6a66; } .cl-tag.cs { color: #6fa3c2; border-color: #6fa3c266; } .cl-tag.cop { color: #e0a43a; border-color: #e0a43a66; }',
+  '.cl-empty { color: #96938b; padding: 30px 0; text-align: center; border: 1px dashed #333; }',
+  '@media (max-width: 600px) { .cl { padding: 0 16px; } .cl-head h1 { font-size: 34px; } .cl-entry { padding: 16px; } }'
+].join('\n');
+
+function clEsc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+function clInline(s) {
+  var t = clEsc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+  return t.replace(/^\[(SoC|CS|CoP|[^\]]{1,20})\]\s*/i, function (m, tag) {
+    var k = tag.toLowerCase();
+    return '<span class="cl-tag ' + (k === 'soc' || k === 'cs' || k === 'cop' ? k : '') + '">' + tag + '</span>';
+  });
+}
+// # a ## = nadpis zaznamu (novy blok), ### = podnadpis, - = bod, [SoC]/[CS]/[CoP] na zacatku = stitek
+function clBody(md) {
+  var out = [], open = false, list = false;
+  var endList = function () { if (list) { out.push('</ul>'); list = false; } };
+  var endEntry = function () { endList(); if (open) { out.push('</article>'); open = false; } };
+  var ensure = function () { if (!open) { out.push('<article class="cl-entry">'); open = true; } };
+  String(md || '').split(/\r?\n/).forEach(function (line) {
+    var l = line.trim();
+    if (!l) { endList(); return; }
+    var m;
+    if ((m = /^#{1,2}\s+(.*)/.exec(l)) && !/^###/.test(l)) { endEntry(); ensure(); out.push('<h2>' + clInline(m[1]) + '</h2>'); return; }
+    if ((m = /^###\s+(.*)/.exec(l))) { ensure(); endList(); out.push('<h3>' + clInline(m[1]) + '</h3>'); return; }
+    if ((m = /^[-*•]\s+(.*)/.exec(l))) { ensure(); if (!list) { out.push('<ul>'); list = true; } out.push('<li>' + clInline(m[1]) + '</li>'); return; }
+    ensure(); endList(); out.push('<p>' + clInline(l) + '</p>');
+  });
+  endEntry();
+  return out.join('');
+}
+function clHtml(md) {
+  var body = clBody(md);
+  return '<section class="cl"><div class="cl-head"><div class="eb">// Jen pro testery</div><h1>Changelog oprav</h1>' +
+    '<p>ReZone Trilogy Story Port – co je opravené a co otestovat.</p></div>' +
+    (body || '<p class="cl-empty">Zatím žádné záznamy.</p>') + '</section>';
+}
+function clPage(md) {
+  return { title: 'Re:Zone · Changelog oprav', css: CL_CSS, html: clHtml(md), js: '', md: String(md || '') };
+}
+
+  // ---------- CHANGELOG TESTERU (sifrovana stranka) ----------
+  var CL = { file: '', pass: '', md: null };
+  var clStyle = document.createElement('style'); clStyle.textContent = CL_CSS; document.head.appendChild(clStyle);
+  function u8(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
+  function b64u8(a) { var s = ''; for (var i = 0; i < a.length; i += 0x8000) s += String.fromCharCode.apply(null, a.subarray(i, i + 0x8000)); return btoa(s); }
+  function clKey(pass, salt, n, use) {
+    return crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']).then(function (base) {
+      return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: salt, iterations: n, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, [use]);
+    });
+  }
+  function clP(text) { var m = /var P = (\{[^}]*\})/.exec(text); return m ? JSON.parse(m[1]) : null; }
+  function clDecrypt(text, pass) {
+    var P = clP(text); if (!P) return Promise.reject(new Error('Ve stránce changelog.html chybí zašifrovaný obsah.'));
+    return clKey(pass, u8(P.s), P.n, 'decrypt').then(function (k) { return crypto.subtle.decrypt({ name: 'AES-GCM', iv: u8(P.i) }, k, u8(P.c)); })
+      .then(function (b) { return JSON.parse(new TextDecoder().decode(b)); });
+  }
+  function clEncrypt(obj, pass) {
+    var salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), n = 250000;
+    return clKey(pass, salt, n, 'encrypt').then(function (k) { return crypto.subtle.encrypt({ name: 'AES-GCM', iv: iv }, k, new TextEncoder().encode(JSON.stringify(obj))); })
+      .then(function (ct) { return { s: b64u8(salt), i: b64u8(iv), c: b64u8(new Uint8Array(ct)), n: n }; });
+  }
+  function clPreview() { $('clPrev').innerHTML = clHtml($('clText').value); }
+  function clUnlock(pass, quiet) {
+    var msg = $('clMsg');
+    if (!(window.crypto && crypto.subtle)) { msg.className = 'msg err'; msg.textContent = 'Prohlížeč neumí šifrovat – otevři editor přes https.'; return; }
+    if (!quiet) { msg.className = 'msg'; msg.textContent = 'Odemykám…'; }
+    clDecrypt(CL.file, pass).then(function (pg) {
+      CL.pass = pass; CL.md = typeof pg.md === 'string' ? pg.md : '';
+      $('clLock').hidden = true; $('clEdit').hidden = false;
+      $('clText').value = CL.md; clPreview();
+      msg.textContent = typeof pg.md === 'string' ? '' : 'Stránka je ve starém formátu – changelog začne prázdný.';
+      try { sessionStorage.setItem('rz_test_pass', pass); } catch (e) { /* nic */ }
+    }, function () { if (!quiet) { msg.className = 'msg err'; msg.textContent = 'Špatné heslo.'; } });
+  }
+  builders.chlog = function (text) {
+    CL.file = text; CL.pass = ''; CL.md = null;
+    $('clLock').hidden = false; $('clEdit').hidden = true; $('clMsg').textContent = '';
+    if (!clP(text)) { $('clMsg').className = 'msg err'; $('clMsg').textContent = 'Ve stránce changelog.html chybí zašifrovaný obsah.'; return; }
+    $('clText').oninput = function () { clPreview(); setDirty('chlog'); };
+    $('clOpen').onclick = function () { clUnlock($('clPass').value.trim()); };
+    $('clPass').onkeydown = function (e) { if (e.key === 'Enter') $('clOpen').click(); };
+    var saved = load('rz_test_pass');
+    if (saved) { $('clPass').value = saved; clUnlock(saved, true); }
+  };
+  validators.chlog = function () {
+    if (CL.md == null) return { text: '', errors: ['Nejdřív stránku odemkni heslem.'] };
+    var md = $('clText').value.replace(/\r\n/g, '\n').replace(/\s+$/, '') + '\n';
+    if (md.trim() === CL.md.trim()) return { text: '', errors: [], same: true };
+    return clEncrypt(clPage(md), CL.pass).then(function (P) {
+      var text = CL.file.replace(/var P = \{[^}]*\}/, 'var P = ' + JSON.stringify(P));
+      return { text: text, errors: [], after: function () { CL.file = text; CL.md = md; } };
+    });
   };
 
   // ---------- definice poli ----------
