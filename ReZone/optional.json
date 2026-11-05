@@ -131,7 +131,6 @@
       "bundle": "Modular Attachment System",
       "priority": 271,
       "description": "Modulární systém příslušenství zbraní. Balíček tří modů, které se zapínají společně a v tomto pořadí: Modular Attachment System » MAS BaS » Pizza's Ultimate Sight Selection.",
-      "images": [],
       "image": "https://media.moddb.com/images/downloads/1/288/287005/untitled.gif",
       "link": "https://www.moddb.com/addons/modular-attachment-system"
     },
@@ -141,8 +140,7 @@
       "author": "MsPizza727",
       "category": "Zbraně",
       "bundle": "Modular Attachment System",
-      "priority": 272,
-      "description": ""
+      "priority": 272
     },
     {
       "name": "[MsPizza727] MsPizza Ultimate Sight Selection for Anomaly",
@@ -150,8 +148,7 @@
       "author": "MsPizza727",
       "category": "Zbraně",
       "bundle": "Modular Attachment System",
-      "priority": 273,
-      "description": ""
+      "priority": 273
     },
     {
       "name": "ReZone Trilogy",
@@ -509,12 +506,14 @@
       "author": "YuriVernadsky",
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/gardener-of-the-zone",
       "image": "https://i.imgur.com/6YrilEW.jpg",
-      "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): r__detail_density 0.46, r__detail_height 1.2, r__detail_radius 130. Hodí se k MBTT, ATO a Screen Space Shaders.\n\nStahuje se z Google Drive modpacku spolu s GOTZ patchem (zapíná a vypíná se jen s Gardener of the Zone); originál na ModDB.",
+      "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): \nr__detail_density 0.46\nr__detail_height 1.2\nr__detail_radius 130.\nHodí se k MBTT, ATO a Screen Space Shaders.",
       "priority": 216,
       "season": "Podzim",
       "requires": [
         "Vasgen GOTZ Patch"
-      ]
+      ],
+      "file": "GoTZ_6.2.1_fomod.rar",
+      "url": "https://www.moddb.com/downloads/mirror/230258"
     },
     {
       "name": "[Huh_] CCon Grass n Trees - Jaro",
