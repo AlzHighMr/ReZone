@@ -51,7 +51,7 @@ h3 { font: 700 20px/1.1 var(--cond); text-transform: uppercase; letter-spacing: 
 p.lead, .hint { color: var(--muted); }
 .hint { font-size: 13.5px; margin: 3px 0 0; }
 label.f { display: block; margin: 12px 0 0; }
-label.f > span { display: block; font: 600 12px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #bdb8ad; margin-bottom: 5px; }
+label.f > span { display: flex; align-items: center; min-height: 18px; font: 600 12px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #bdb8ad; margin-bottom: 5px; }
 input[type=text], input[type=number], input[type=password], input[type=search], select, textarea {
   width: 100%; background: var(--panel2); border: 1px solid var(--line2); color: #eee; font: 15px/1.45 "Source Sans 3", Arial, sans-serif; padding: 8px 10px; outline: none; }
 textarea { resize: vertical; min-height: 70px; }
@@ -107,6 +107,23 @@ dialog::backdrop { background: #000a; }
   .split, .grid2 { grid-template-columns: minmax(0, 1fr); } .list { max-height: 40vh; }
   .wrap { padding: 16px 16px 40px; }
 }
+.tip { display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px; border: 1px solid #555; border-radius: 50%; font: 600 11px/1 var(--mono); color: var(--muted); margin-left: 6px; cursor: help; position: relative; vertical-align: 1px; text-transform: none; letter-spacing: 0; }
+.tip:hover, .tip:focus { color: #111; background: var(--amber); border-color: var(--amber); outline: none; }
+.tip:hover::after, .tip:focus::after { content: attr(data-tip); position: absolute; left: 50%; top: 24px; transform: translateX(-50%); z-index: 20; width: max-content; max-width: min(320px, 80vw); white-space: normal; background: #1b1b1b; color: var(--text); border: 1px solid #444; padding: 8px 10px; font: 13.5px/1.4 "Source Sans 3", Arial, sans-serif; box-shadow: 0 10px 30px #000c; }
+details.adv { border: 1px solid var(--line); margin: 16px 0 0; }
+details.adv > summary { cursor: pointer; padding: 10px 14px; font: 700 16px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); list-style: none; }
+details.adv > summary::before { content: "▸ "; }
+details.adv[open] > summary::before { content: "▾ "; }
+details.adv > summary:hover { color: #fff; }
+details.adv > .in { padding: 0 14px 14px; }
+.locked { display: flex; gap: 8px; align-items: center; }
+.locked code { flex: 1; font: 14px/1.4 var(--mono); background: #0c0c0c; border: 1px solid var(--line); padding: 8px 10px; color: #bdb8ad; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.form-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+.picks { max-height: 260px; overflow: auto; border: 1px solid var(--line); background: #0c0c0c; padding: 4px 10px; }
+.picks label { display: flex; gap: 8px; align-items: center; padding: 3px 0; cursor: pointer; font-size: 14.5px; }
+.picks label input { accent-color: var(--red); }
+.picks .on { color: var(--amber); }
+.req { color: var(--red); }
 </style>
 </head>
 <body>
@@ -117,6 +134,7 @@ dialog::backdrop { background: #000a; }
   <nav class="ab-tabs" id="tabs" hidden>
     <button data-tab="news">Novinky</button>
     <button data-tab="opt">Volitelné mody</button>
+    <button data-tab="patch">Patche</button>
     <button data-tab="moddb">ModDB addony</button>
     <button data-tab="src">Odkazy</button>
   </nav>
@@ -128,7 +146,7 @@ dialog::backdrop { background: #000a; }
   <section class="card login" id="login">
     <div class="eb">// Jen pro tým Re:Zone</div>
     <h2>Přihlášení</h2>
-    <p class="lead">Editor mění soubory, ze kterých launcher hráčům čte novinky, volitelné mody a odkazy ke stažení. Uložení = commit na GitHub, hráči změnu uvidí při další kontrole aktualizací.</p>
+    <p class="lead">Editor mění soubory, ze kterých launcher hráčům čte novinky, volitelné mody, patche a odkazy ke stažení. Uložení = commit na GitHub, hráči změnu uvidí při další kontrole aktualizací.</p>
     <label class="f"><span>GitHub token</span><input type="password" id="token" class="mono" autocomplete="off" placeholder="github_pat_…"></label>
     <div class="row">
       <label class="f"><span>Repozitář</span><input type="text" id="repo" class="mono" value="AlzHighMr/ReZone"></label>
@@ -142,15 +160,14 @@ dialog::backdrop { background: #000a; }
       <li>Otevři <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub › Fine-grained token</a>.</li>
       <li>Repository access: <b>Only select repositories</b> → vyber repozitář Re:Zone.</li>
       <li>Permissions › Repository › <b>Contents: Read and write</b>. Nic dalšího není potřeba.</li>
-      <li>Vygeneruj token, zkopíruj ho sem. Token nikomu neposílej – posílá se jen na api.github.com.</li>
+      <li>Vygeneruj token a zkopíruj ho sem. Token nikomu neposílej – posílá se jen na api.github.com.</li>
     </ol>
   </section>
 
-  <!-- novinky -->
   <section class="card" id="tab-news" hidden>
     <div class="eb">// ReZone/changelog.md</div>
     <h2>Novinky</h2>
-    <p class="hint">Text, který launcher ukazuje na hlavní stránce. <code># Nadpis</code> = velký nadpis, <code>## Podnadpis</code>, <code>- bod</code> = odrážka. Vpravo je náhled.</p>
+    <p class="hint">Text na hlavní stránce launcheru. <code># Nadpis</code>, <code>## Podnadpis</code>, <code>- bod</code>. Vpravo je náhled.</p>
     <div class="grid2" style="margin-top:12px">
       <textarea id="newsText" class="mono" style="min-height:420px" spellcheck="true"></textarea>
       <div class="news-prev" id="newsPrev"></div>
@@ -158,21 +175,16 @@ dialog::backdrop { background: #000a; }
     <div class="bar" data-save="news"></div>
   </section>
 
-  <!-- volitelne mody -->
   <section class="card" id="tab-opt" hidden>
     <div class="eb">// ReZone/optional.json</div>
     <h2>Volitelné mody</h2>
-    <p class="hint">Katalog volitelných modů a sezón v launcheru. Archivy na Google Drive se spárují podle <b>názvu složky</b>, popis a obrázek se berou odsud.</p>
     <div class="split" style="margin-top:14px">
       <div>
         <div class="filters">
           <input type="search" id="optSearch" placeholder="Hledat…">
           <select id="optCat"><option value="">Všechny kategorie</option></select>
         </div>
-        <div class="row" style="gap:8px">
-          <button class="btn small" id="optAdd">+ Nový mod</button>
-          <button class="btn small" id="optDup">Duplikovat</button>
-        </div>
+        <button class="btn small" id="optAdd" style="width:100%">+ Nový mod</button>
         <div class="count" id="optCount"></div>
         <div class="list" id="optList"></div>
       </div>
@@ -181,14 +193,29 @@ dialog::backdrop { background: #000a; }
     <div class="bar" data-save="opt"></div>
   </section>
 
-  <!-- moddb -->
+  <section class="card" id="tab-patch" hidden>
+    <div class="eb">// ReZone/optional.json · patche</div>
+    <h2>Patche</h2>
+    <p class="hint">Patche se hráčům v seznamu neukazují – launcher je stáhne a zapne sám, když hráč zapne mod, ke kterému patří.</p>
+    <div class="split" style="margin-top:14px">
+      <div>
+        <input type="search" id="patchSearch" placeholder="Hledat…" style="margin-bottom:8px">
+        <button class="btn small" id="patchAdd" style="width:100%">+ Nový patch</button>
+        <div class="count" id="patchCount"></div>
+        <div class="list" id="patchList"></div>
+      </div>
+      <div id="patchForm"></div>
+    </div>
+    <div class="bar" data-save="patch"></div>
+  </section>
+
   <section class="card" id="tab-moddb" hidden>
     <div class="eb">// ReZone/moddb.json</div>
     <h2>ModDB addony</h2>
-    <p class="hint">Addony, které launcher stahuje přímo z ModDB. Název, obrázek a popis si launcher načte ze stránky addonu – sem patří jen odkaz a případné upozornění nebo návod.</p>
+    <p class="hint">Addony stahované přímo z ModDB. Název, obrázek a popis si launcher načte ze stránky addonu.</p>
     <div class="split" style="margin-top:14px">
       <div>
-        <div class="row" style="gap:8px"><button class="btn small" id="mdAdd">+ Nový addon</button></div>
+        <button class="btn small" id="mdAdd" style="width:100%">+ Nový addon</button>
         <div class="count" id="mdCount"></div>
         <div class="list" id="mdList"></div>
       </div>
@@ -197,11 +224,10 @@ dialog::backdrop { background: #000a; }
     <div class="bar" data-save="moddb"></div>
   </section>
 
-  <!-- odkazy -->
   <section class="card" id="tab-src" hidden>
     <div class="eb">// ReZone/sources.json</div>
     <h2>Odkazy ke stažení</h2>
-    <p class="hint">Složky na Google Drive (nebo GitHub release), odkud launcher stahuje. U seznamů je <b>jeden odkaz na řádek</b>, první je hlavní, další jsou zálohy. Složky musí být sdílené jako „Kdokoli s odkazem“.</p>
+    <p class="hint">Složky na Google Drive (nebo GitHub release). U seznamů <b>jeden odkaz na řádek</b> – první je hlavní. Složky musí být sdílené jako „Kdokoli s odkazem“.</p>
     <div id="srcForm"></div>
     <div class="bar" data-save="src"></div>
   </section>
@@ -212,15 +238,15 @@ dialog::backdrop { background: #000a; }
 <script>
 (function () {
   'use strict';
-  // ---------- pomocne ----------
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, attrs, kids) {
     var e = document.createElement(tag);
     if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (k === 'text') e.textContent = attrs[k];
-      else if (k === 'html') e.innerHTML = attrs[k];
-      else if (k.slice(0, 2) === 'on') e.addEventListener(k.slice(2), attrs[k]);
-      else if (attrs[k] !== false && attrs[k] != null) e.setAttribute(k, attrs[k] === true ? '' : attrs[k]);
+      var v = attrs[k];
+      if (k === 'text') e.textContent = v;
+      else if (k === 'html') e.innerHTML = v;
+      else if (k.slice(0, 2) === 'on') e.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) e.setAttribute(k, v === true ? '' : v);
     });
     (kids || []).forEach(function (c) { if (c != null) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
     return e;
@@ -230,7 +256,7 @@ dialog::backdrop { background: #000a; }
     try {
       if (v == null) { sessionStorage.removeItem(k); localStorage.removeItem(k); return; }
       (persist ? localStorage : sessionStorage).setItem(k, v);
-    } catch (e) { /* prohlizec bez uloziste */ }
+    } catch (e) { /* bez uloziste */ }
   }
   function load(k) { try { return sessionStorage.getItem(k) || localStorage.getItem(k); } catch (e) { return null; } }
   function b64decode(s) {
@@ -245,15 +271,20 @@ dialog::backdrop { background: #000a; }
   }
   function lines(t) { return String(t || '').split(/\r?\n/).map(function (x) { return x.trim(); }).filter(Boolean); }
   function isUrl(s) { return /^https?:\/\/\S+$/i.test(String(s || '').trim()); }
+  function filled(v) { return Array.isArray(v) ? v.length > 0 : v === true || (v != null && v !== false && String(v).trim() !== ''); }
+  function plural(n, w) { return n === 1 ? w[0] : n >= 2 && n <= 4 ? w[1] : w[2]; }
+  function tip(text) { return text ? el('span', { class: 'tip', tabindex: '0', 'data-tip': text, 'aria-label': text, text: 'i' }) : null; }
 
   // ---------- GitHub ----------
   var S = { token: '', repo: '', branch: 'main', user: '' };
+  // soubor -> stav; zalozka -> soubor (Volitelne mody i Patche jsou v optional.json)
   var FILES = {
     news: { path: 'ReZone/changelog.md', sha: null, orig: '', dirty: false },
     opt: { path: 'ReZone/optional.json', sha: null, orig: '', dirty: false },
     moddb: { path: 'ReZone/moddb.json', sha: null, orig: '', dirty: false },
     src: { path: 'ReZone/sources.json', sha: null, orig: '', dirty: false }
   };
+  var TAB_FILE = { news: 'news', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src' };
   function api(path, opts) {
     opts = opts || {};
     opts.headers = Object.assign({ 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' }, opts.headers || {});
@@ -265,14 +296,14 @@ dialog::backdrop { background: #000a; }
       });
     });
   }
-  function getFile(key) {
-    var f = FILES[key];
+  function getFile(fk) {
+    var f = FILES[fk];
     return api('/repos/' + S.repo + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now())
       .then(function (j) { f.sha = j.sha; f.orig = b64decode(j.content || ''); return f.orig; })
       .catch(function (e) { if (e.status === 404) { f.sha = null; f.orig = ''; return ''; } throw e; });
   }
-  function putFile(key, text, message) {
-    var f = FILES[key];
+  function putFile(fk, text, message) {
+    var f = FILES[fk];
     var body = { message: message, content: b64encode(text), branch: S.branch };
     if (f.sha) body.sha = f.sha;
     return api('/repos/' + S.repo + '/contents/' + f.path, { method: 'PUT', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' } })
@@ -282,56 +313,62 @@ dialog::backdrop { background: #000a; }
     if (e.status === 401) return 'Token je neplatný nebo vypršel.';
     if (e.status === 403) return 'GitHub odmítl přístup – token nemá právo zapisovat (Contents: Read and write), nebo je překročen limit dotazů.';
     if (e.status === 404) return 'Repozitář nebo soubor nebyl nalezen (nebo k němu token nemá přístup).';
-    if (e.status === 409 || e.status === 422) return 'Soubor mezitím změnil někdo jiný. Načti ho znovu (tlačítko NAČÍST ZNOVU) a změny udělej ještě jednou.';
+    if (e.status === 409 || e.status === 422) return 'Soubor mezitím změnil někdo jiný. Klikni na NAČÍST ZNOVU a změny udělej ještě jednou.';
     return e.message || String(e);
   }
 
   // ---------- dialog ----------
-  function ask(title, html, buttons) {
+  function dialog(title, content, buttons) {
     return new Promise(function (res) {
-      var d = $('dlg');
-      $('dlgBody').innerHTML = '<h2 style="font-size:28px">' + esc(title) + '</h2>' + html;
-      var bar = $('dlgBar'); bar.innerHTML = '';
+      var d = $('dlg'), body = $('dlgBody'), bar = $('dlgBar');
+      body.innerHTML = ''; bar.innerHTML = '';
+      body.appendChild(el('h2', { text: title, style: 'font-size:28px' }));
+      if (typeof content === 'string') body.appendChild(el('div', { html: content })); else body.appendChild(content);
+      var done = false;
+      var finish = function (v) { if (done) return; done = true; d.close(); res(v); };
       buttons.forEach(function (b) {
-        bar.appendChild(el('button', { class: 'btn ' + (b.cls || ''), text: b.label, onclick: function () { d.close(); res(b.value); } }));
+        bar.appendChild(el('button', { class: 'btn ' + (b.cls || ''), text: b.label, onclick: function () { var v = typeof b.value === 'function' ? b.value() : b.value; if (v === undefined) return; finish(v); } }));
       });
-      d.addEventListener('cancel', function h() { d.removeEventListener('cancel', h); res(null); });
+      d.oncancel = function () { finish(null); };
       d.showModal();
+      var first = body.querySelector('input, select, textarea'); if (first) first.focus();
     });
   }
+  function confirmBox(title, html, yes) { return dialog(title, html, [{ label: yes, value: true, cls: 'pri' }, { label: 'Zpět', value: false }]); }
 
-  // ---------- ukladaci listy ----------
-  var builders = {}, validators = {};
-  function saveBar(key) {
-    var bar = document.querySelector('[data-save="' + key + '"]');
+  // ---------- ukladani ----------
+  var builders = {}, validators = {}, onShow = {};
+  function saveBar(tab) {
+    var fk = TAB_FILE[tab];
+    var bar = document.querySelector('[data-save="' + tab + '"]');
     bar.innerHTML = '';
     var msg = el('input', { type: 'text', class: 'grow', placeholder: 'Popis změny (např. „Přidán mod XY“)' });
     var status = el('span', { class: 'msg' });
     var save = el('button', { class: 'btn pri', text: 'Uložit na GitHub' });
     var reload = el('button', { class: 'btn', text: 'Načíst znovu' });
     save.addEventListener('click', function () {
-      var r = validators[key]();
+      var r = validators[fk]();
       if (r.errors.length) { status.className = 'msg err'; status.textContent = r.errors[0] + (r.errors.length > 1 ? ' (a další: ' + (r.errors.length - 1) + ')' : ''); return; }
-      if (r.text === FILES[key].orig) { status.className = 'msg warn'; status.textContent = 'Nic se nezměnilo.'; return; }
-      var m = msg.value.trim() || ('Editor: ' + FILES[key].path.split('/').pop());
+      if (r.text === FILES[fk].orig) { status.className = 'msg warn'; status.textContent = 'Nic se nezměnilo.'; return; }
+      var m = msg.value.trim() || ('Editor: ' + FILES[fk].path.split('/').pop());
       save.disabled = true; status.className = 'msg'; status.textContent = 'Ukládám…';
-      putFile(key, r.text, m + ' (editor, ' + S.user + ')').then(function () {
-        FILES[key].dirty = false; markTabs(); msg.value = '';
+      putFile(fk, r.text, m + ' (editor, ' + S.user + ')').then(function () {
+        FILES[fk].dirty = false; markTabs(); msg.value = '';
         status.className = 'msg ok'; status.textContent = 'Uloženo. Hráči změnu uvidí při další kontrole aktualizací v launcheru.';
       }, function (e) { status.className = 'msg err'; status.textContent = friendly(e); })
         .then(function () { save.disabled = false; });
     });
     reload.addEventListener('click', function () {
-      var go = FILES[key].dirty ? ask('Zahodit změny?', '<p>Neuložené změny v této záložce se ztratí.</p>', [{ label: 'Zahodit a načíst', value: true, cls: 'pri' }, { label: 'Zpět', value: false }]) : Promise.resolve(true);
-      go.then(function (ok) { if (ok) openTab(key, true); });
+      (FILES[fk].dirty ? confirmBox('Zahodit změny?', '<p>Neuložené změny v souboru ' + esc(FILES[fk].path) + ' se ztratí.</p>', 'Zahodit a načíst') : Promise.resolve(true))
+        .then(function (ok) { if (ok) loadFile(fk, tab); });
     });
     bar.appendChild(msg); bar.appendChild(save); bar.appendChild(reload); bar.appendChild(status);
   }
-  function setDirty(key) { FILES[key].dirty = true; markTabs(); }
+  function setDirty(fk) { FILES[fk].dirty = true; markTabs(); }
   function markTabs() {
     document.querySelectorAll('#tabs button').forEach(function (b) {
       var d = b.querySelector('.dot'); if (d) d.remove();
-      if (FILES[b.dataset.tab].dirty) b.appendChild(el('span', { class: 'dot', title: 'Neuloženo' }));
+      if (FILES[TAB_FILE[b.dataset.tab]].dirty) b.appendChild(el('span', { class: 'dot', title: 'Neuloženo' }));
     });
   }
   window.addEventListener('beforeunload', function (e) {
@@ -339,27 +376,32 @@ dialog::backdrop { background: #000a; }
   });
 
   // ---------- zalozky ----------
-  var loaded = {};
-  function openTab(key, force) {
-    document.querySelectorAll('#tabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.tab === key); });
-    ['news', 'opt', 'moddb', 'src'].forEach(function (k) { $('tab-' + k).hidden = k !== key; });
-    try { sessionStorage.setItem('rzed_tab', key); } catch (e) { /* nic */ }
-    if (loaded[key] && !force) return;
-    var sec = $('tab-' + key);
-    var note = el('p', { class: 'msg', text: 'Načítám ' + FILES[key].path + '…' });
+  var loaded = {}, current = null;
+  function loadFile(fk, tab) {
+    var sec = $('tab-' + tab);
+    var note = el('p', { class: 'msg', text: 'Načítám ' + FILES[fk].path + '…' });
     sec.appendChild(note);
-    getFile(key).then(function (text) {
+    return getFile(fk).then(function (text) {
       note.remove();
-      builders[key](text); FILES[key].dirty = false; loaded[key] = true; markTabs(); saveBar(key);
+      builders[fk](text); FILES[fk].dirty = false; loaded[fk] = true; markTabs();
+      Object.keys(TAB_FILE).forEach(function (t) { if (TAB_FILE[t] === fk) saveBar(t); });
+      if (onShow[tab]) onShow[tab]();
     }, function (e) { note.className = 'msg err'; note.textContent = friendly(e); });
+  }
+  function openTab(tab) {
+    current = tab;
+    document.querySelectorAll('#tabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.tab === tab); });
+    Object.keys(TAB_FILE).forEach(function (t) { $('tab-' + t).hidden = t !== tab; });
+    try { sessionStorage.setItem('rzed_tab', tab); } catch (e) { /* nic */ }
+    var fk = TAB_FILE[tab];
+    if (!loaded[fk]) loadFile(fk, tab); else if (onShow[tab]) onShow[tab]();
   }
 
   // ---------- NOVINKY ----------
   function md(t) {
     var out = [], inList = false;
     String(t).split(/\r?\n/).forEach(function (line) {
-      var l = line.trim();
-      var li = /^[-*•]\s+(.*)/.exec(l);
+      var l = line.trim(), li = /^[-*•]\s+(.*)/.exec(l);
       if (li) { if (!inList) { out.push('<ul>'); inList = true; } out.push('<li>' + esc(li[1]) + '</li>'); return; }
       if (inList) { out.push('</ul>'); inList = false; }
       if (/^##\s+/.test(l)) out.push('<h2>' + esc(l.replace(/^##\s+/, '')) + '</h2>');
@@ -381,278 +423,410 @@ dialog::backdrop { background: #000a; }
     return { text: t, errors: t.trim() ? [] : ['Novinky nesmí být prázdné.'] };
   };
 
-  // ---------- spolecny editor seznamu (volitelne mody, ModDB) ----------
-  // pole: [klic, popisek, typ, napoveda, volby]
+  // ---------- definice poli ----------
+  // { k, label, type, tip, adv (pokrocile), show(it) (kdy pole dava smysl), half (pul radku) }
   var SEASONS = ['', 'Jaro', 'Léto', 'Podzim', 'Zima'];
-  var OPT_FIELDS = [
-    ['Základ', [
-      ['name', 'Název složky (přesně jako na Google Drive / v MO2)', 'text', 'Např. „241-[Autor] Název modu“. Podle něj launcher spáruje archiv s tímto popisem.'],
-      ['title', 'Název v launcheru', 'text', 'Hezký název pro hráče. Prázdné = použije se název složky.'],
-      ['author', 'Autor', 'text', ''],
-      ['category', 'Kategorie', 'cat', 'Záložka ve Volitelných modech.'],
-      ['season', 'Sezóna', 'select', 'Vyplň jen u modů sezón – pak je mod na stránce Textury a sezóny.', SEASONS],
-      ['priority', 'Priorita v load orderu', 'number', 'Jako číslo v MO2: větší = níž = vyšší priorita. Prázdné = podle čísla v názvu.']
-    ]],
-    ['Popis a obrázky', [
-      ['description', 'Popis', 'area', 'Prázdný řádek = nový odstavec.'],
-      ['image', 'Obrázek (odkaz)', 'url', 'Přímý odkaz na obrázek (ModDB, Discord, GitHub…).'],
-      ['images', 'Další obrázky (jeden odkaz na řádek)', 'list', ''],
-      ['link', 'Stránka modu', 'url', 'ModDB, GitHub… – tlačítko INFO v launcheru.'],
-      ['gallery', 'Galerie', 'url', 'Odkaz na galerii obrázků (otevře se v prohlížeči).']
-    ]],
-    ['Stažení', [
-      ['url', 'Odkaz ke stažení', 'url', 'Google Drive (soubor nebo složka), ModDB nebo přímý odkaz. Prázdné = archiv se hledá ve složkách z Odkazů.'],
-      ['file', 'Název archivu na ModDB', 'text', 'Když ModDB nepovolí automatické stažení, hráč archiv stáhne ručně a launcher ho najde podle tohoto názvu.'],
-      ['size', 'Velikost archivu (bajty)', 'number', 'Jen pro zobrazení, když ModDB nejde načíst.'],
-      ['version', 'Verze', 'text', 'Změna verze = launcher hráčům nabídne aktualizaci.'],
-      ['fomod', 'Volby instalátoru FOMOD (jedna na řádek)', 'list', 'Stačí část názvu volby, např. „2K“. Prázdné = výchozí volby.']
-    ]],
-    ['Load order a vazby', [
-      ['bundle', 'Balíček', 'text', 'Mody se stejným balíčkem se ukazují jako jeden a zapínají se spolu.'],
-      ['requires', 'Vyžaduje (patche, jeden na řádek)', 'list', 'Stáhnou a zapnou se spolu s tímto modem, v load orderu hned pod ním.'],
-      ['disables', 'Při zapnutí vypnout (jeden na řádek)', 'list', 'Název modu nebo jeho číslo v load orderu.'],
-      ['after', 'Umístit hned pod mod', 'text', 'Např. „[Isthar] Old Dog Sleeves Hand Pack“.'],
-      ['section', 'Umístit na konec sekce', 'text', 'Separator v MO2, např. „== NPC Models HERE! ==“.'],
-      ['group', 'Skupina v sezóně', 'text', 'Ze skupiny (např. „Tráva“) může být zapnutý jen jeden mod.'],
-      ['default', 'Výchozí volba ve skupině', 'bool', ''],
-      ['optional', 'Jen nabídka (ve výchozím stavu vypnutý)', 'bool', 'U modů sezón: stáhne se, až ho hráč zapne.'],
-      ['hidden', 'Skrytý v seznamech', 'bool', 'Např. patch, který se instaluje jen přes „Vyžaduje“.']
-    ]]
+  var isModdb = function (it) { return /moddb\.com/i.test(String(it.url || '') + ' ' + String(it.link || '')); };
+  var hasSeason = function (it) { return !!it.season; };
+  var MOD_FIELDS = [
+    { k: 'title', label: 'Název v launcheru', type: 'text', half: true, w: '40%', tip: 'Hezký název pro hráče. Prázdné = použije se název složky.' },
+    { k: 'author', label: 'Autor', type: 'text', half: true, w: '40%' },
+    { k: 'category', label: 'Kategorie', type: 'cat', half: true, w: '28%', tip: 'Záložka ve Volitelných modech.' },
+    { k: 'priority', label: 'Priorita', type: 'number', half: true, w: '28%', tip: 'Jako číslo v MO2: větší = níž = vyšší priorita (vyhraje konflikty). Prázdné = podle čísla v názvu složky.' },
+    { k: 'season', label: 'Sezóna', type: 'select', opts: SEASONS, half: true, w: '28%', tip: 'Jen u modů sezón – mod pak je na stránce Textury a sezóny.' },
+    { k: 'description', label: 'Popis', type: 'area', tip: 'Prázdný řádek = nový odstavec.' },
+    { k: 'image', label: 'Obrázek', type: 'url', tip: 'Přímý odkaz na obrázek (ModDB, Discord, GitHub…).' },
+    { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Google Drive (soubor nebo složka), ModDB nebo přímý odkaz. Prázdné = archiv se hledá ve složkách z Odkazů podle názvu složky.' },
+    { k: 'link', label: 'Stránka modu', type: 'url', tip: 'ModDB, GitHub… – otevře se z okna INFO v launcheru.' },
+    // sezony
+    { k: 'group', label: 'Skupina v sezóně', type: 'text', show: hasSeason, tip: 'Ze skupiny (např. „Tráva“) může být zapnutý jen jeden mod.' },
+    { k: 'default', label: 'Výchozí volba ve skupině', type: 'bool', show: hasSeason },
+    { k: 'optional', label: 'Jen nabídka – ve výchozím stavu vypnutý', type: 'bool', show: hasSeason, tip: 'Stáhne se, až ho hráč zapne.' },
+    // ModDB
+    { k: 'file', label: 'Název archivu na ModDB', type: 'text', show: isModdb, adv: true, tip: 'Když ModDB nepovolí automatické stažení, hráč archiv stáhne ručně a launcher ho najde podle tohoto názvu.' },
+    { k: 'size', label: 'Velikost archivu (bajty)', type: 'number', show: isModdb, adv: true, tip: 'Jen pro zobrazení, když ModDB nejde načíst.' },
+    // pokrocile
+    { k: 'version', label: 'Verze', type: 'text', adv: true, tip: 'Změna verze = launcher hráčům nabídne aktualizaci.' },
+    { k: 'requires', label: 'Vyžaduje patche', type: 'list', adv: true, tip: 'Jeden na řádek. Stáhnou a zapnou se spolu s tímto modem. Patche jde nastavit i v záložce Patche.' },
+    { k: 'disables', label: 'Při zapnutí vypnout', type: 'list', adv: true, tip: 'Jeden mod na řádek (název nebo číslo v load orderu).' },
+    { k: 'bundle', label: 'Balíček', type: 'text', adv: true, tip: 'Mody se stejným balíčkem se ukazují jako jeden a zapínají se spolu.' },
+    { k: 'after', label: 'Umístit hned pod mod', type: 'text', adv: true, tip: 'Např. „[Isthar] Old Dog Sleeves Hand Pack“.' },
+    { k: 'section', label: 'Umístit na konec sekce', type: 'text', adv: true, tip: 'Separator v MO2, např. „== NPC Models HERE! ==“.' },
+    { k: 'fomod', label: 'Volby instalátoru FOMOD', type: 'list', adv: true, tip: 'Jedna na řádek, stačí část názvu (např. „2K“). Prázdné = výchozí volby.' },
+    { k: 'images', label: 'Další obrázky', type: 'list', adv: true, tip: 'Jeden odkaz na řádek.' },
+    { k: 'gallery', label: 'Galerie', type: 'url', adv: true },
+    { k: 'hidden', label: 'Skrýt v seznamu volitelných modů', type: 'bool', adv: true }
+  ];
+  var PATCH_FIELDS = [
+    { k: 'title', label: 'Název', type: 'text', tip: 'Jen pro přehled, hráč patch v seznamu nevidí.' },
+    { k: 'description', label: 'Popis', type: 'area', tip: 'Co patch opravuje (pro moderátory).' },
+    { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Prázdné = patch se hledá ve složkách z Odkazů podle názvu složky.' },
+    { k: 'priority', label: 'Priorita v load orderu', type: 'number', tip: 'Jako číslo v MO2: větší = níž = vyšší priorita. Prázdné = hned pod modem, který patch vyžaduje.' },
+    { k: 'after', label: 'Umístit hned pod mod', type: 'text', adv: true },
+    { k: 'section', label: 'Umístit na konec sekce', type: 'text', adv: true },
+    { k: 'version', label: 'Verze', type: 'text', adv: true, tip: 'Změna verze = launcher nabídne aktualizaci.' },
+    { k: 'fomod', label: 'Volby instalátoru FOMOD', type: 'list', adv: true },
+    { k: 'file', label: 'Název archivu na ModDB', type: 'text', adv: true, show: isModdb },
+    { k: 'author', label: 'Autor', type: 'text', adv: true }
   ];
   var MD_FIELDS = [
-    ['Addon', [
-      ['url', 'Stránka addonu na ModDB', 'url', 'Např. https://www.moddb.com/mods/stalker-anomaly/addons/…'],
-      ['name', 'Název modu v MO2', 'text', 'Volitelné. Prázdné = název ze stránky ModDB.'],
-      ['warning', 'Upozornění (žlutě)', 'area', ''],
-      ['guide', 'Návod k instalaci', 'area', 'Každý krok na nový řádek.'],
-      ['below', 'Musí vyhrát load order (jeden na řádek)', 'list', 'Addon se zařadí pod tyto mody (nižší priorita).'],
-      ['fomod', 'Volby instalátoru FOMOD (jedna na řádek)', 'list', '']
-    ]]
+    { k: 'url', label: 'Stránka addonu na ModDB', type: 'url', tip: 'Např. https://www.moddb.com/mods/stalker-anomaly/addons/…' },
+    { k: 'name', label: 'Název modu v MO2', type: 'text', tip: 'Volitelné. Prázdné = název ze stránky ModDB.' },
+    { k: 'warning', label: 'Upozornění (žlutě)', type: 'area' },
+    { k: 'guide', label: 'Návod k instalaci', type: 'area', tip: 'Každý krok na nový řádek.' },
+    { k: 'below', label: 'Musí vyhrát load order', type: 'list', adv: true, tip: 'Jeden mod na řádek – addon se zařadí pod ně (nižší priorita).' },
+    { k: 'fomod', label: 'Volby instalátoru FOMOD', type: 'list', adv: true }
   ];
-  var KNOWN_OPT = {}; OPT_FIELDS.forEach(function (g) { g[1].forEach(function (f) { KNOWN_OPT[f[0]] = f[2]; }); });
-
-  function clean(obj, fields) {
-    // prazdne hodnoty z formulare do souboru nepsat (soubor zustane prehledny)
-    var types = {}; fields.forEach(function (g) { g[1].forEach(function (f) { types[f[0]] = f[2]; }); });
+  function typesOf(fields) { var t = { name: 'text' }; fields.forEach(function (f) { t[f.k] = f.type; }); return t; }
+  var ALL_MOD_TYPES = typesOf(MOD_FIELDS.concat(PATCH_FIELDS));
+  function clean(obj, types) {
     var out = {};
     Object.keys(obj).forEach(function (k) {
       var v = obj[k], t = types[k];
       if (t === 'list') { if (Array.isArray(v) && v.length) out[k] = v; return; }
       if (t === 'bool') { if (v === true) out[k] = true; return; }
       if (t === 'number') { if (v !== '' && v != null && !isNaN(v)) out[k] = Number(v); return; }
-      if (t) { if (String(v || '').trim() !== '') out[k] = String(v); return; }
+      if (t) { if (String(v == null ? '' : v).trim() !== '') out[k] = String(v); return; }
       out[k] = v; // nezname pole zachovat
     });
     return out;
   }
 
+  // ---------- jedno pole formulare ----------
+  function fieldInput(it, f, onChange) {
+    var k = f.k, type = f.type, v = it[k], input;
+    if (type === 'area') input = el('textarea', { rows: k === 'description' ? 7 : 4 });
+    else if (type === 'list') input = el('textarea', { rows: 3, class: 'mono' });
+    else if (type === 'select') { input = el('select'); f.opts.forEach(function (o) { input.appendChild(el('option', { value: o, text: o || '— žádná —' })); }); }
+    else if (type === 'cat') input = el('input', { type: 'text', list: 'cats' });
+    else if (type === 'bool') input = el('input', { type: 'checkbox' });
+    else input = el('input', { type: type === 'number' ? 'number' : 'text', class: type === 'url' ? 'mono' : null });
+    if (type === 'bool') input.checked = v === true;
+    else if (type === 'list') input.value = Array.isArray(v) ? v.join('\n') : (v || '');
+    else input.value = v == null ? '' : v;
+    var warn = el('p', { class: 'hint', style: 'color:var(--err)' });
+    var check = function () {
+      if (type !== 'url') return;
+      var s = String(input.value || '').trim();
+      warn.textContent = s && !isUrl(s) ? 'Tohle není odkaz – musí začínat https://' : '';
+    };
+    input.addEventListener(type === 'bool' || type === 'select' ? 'change' : 'input', function () {
+      if (type === 'bool') it[k] = input.checked;
+      else if (type === 'list') it[k] = lines(input.value);
+      else if (type === 'number') it[k] = input.value === '' ? '' : Number(input.value);
+      else it[k] = input.value;
+      check(); onChange(k);
+    });
+    check();
+    if (type === 'bool') return el('label', { class: 'check' }, [input, el('span', null, [el('b', { text: f.label }), tip(f.tip)])]);
+    var lab = el('span', null, [f.label, tip(f.tip)]);
+    return el('label', { class: 'f', style: f.half ? 'flex:1 1 ' + (f.w || '220px') + ';min-width:150px' : null }, [lab, input, warn]);
+  }
+
+  // ---------- editor seznamu ----------
+  // cfg: fk, items, fields, listEl, formEl, countEl, filter, title, sub, tags, bad, preview, extraTop(it, box), extraBottom(it, box), nameLabel, nameTip
   function listEditor(cfg) {
-    // cfg: key, items, fields, listEl, formEl, countEl, title(it), sub(it), tags(it), filter(it), preview(it)
-    var sel = cfg.items.length ? 0 : -1;
+    var sel = -1;
+    var known = typesOf(cfg.fields);
+    function visible() { var v = []; cfg.items.forEach(function (it, i) { if (!cfg.filter || cfg.filter(it)) v.push(i); }); return v; }
     function render() {
       var L = cfg.listEl; L.innerHTML = '';
-      var shown = 0;
-      cfg.items.forEach(function (it, i) {
-        if (cfg.filter && !cfg.filter(it)) return;
-        shown++;
-        var b = el('button', { class: 'item' + (i === sel ? ' on' : '') + (cfg.bad && cfg.bad(it, i) ? ' bad' : ''), onclick: function () { sel = i; render(); } }, [
+      var vis = visible();
+      if (vis.indexOf(sel) < 0) sel = vis.length ? vis[0] : -1;
+      vis.forEach(function (i) {
+        var it = cfg.items[i];
+        L.appendChild(el('button', { class: 'item' + (i === sel ? ' on' : '') + (cfg.bad && cfg.bad(it) ? ' bad' : ''), onclick: function () { sel = i; render(); } }, [
           el('span', { class: 't' }, [cfg.title(it) || '(bez názvu)'].concat((cfg.tags ? cfg.tags(it) : []).map(function (t) { return el('span', { class: 'tag', text: t }); }))),
           el('span', { class: 's', text: cfg.sub(it) })
-        ]);
-        L.appendChild(b);
+        ]));
       });
-      if (!shown) L.appendChild(el('div', { class: 'empty', text: 'Nic nenalezeno.' }));
-      cfg.countEl.textContent = shown === cfg.items.length ? cfg.items.length + ' položek' : shown + ' z ' + cfg.items.length + ' položek';
+      if (!vis.length) L.appendChild(el('div', { class: 'empty', text: 'Nic nenalezeno.' }));
+      cfg.countEl.textContent = vis.length + ' ' + (cfg.words ? plural(vis.length, cfg.words) : 'položek');
       form();
+    }
+    function relist(it) {
+      var b = cfg.listEl.querySelector('.item.on');
+      if (b) { b.querySelector('.t').firstChild.textContent = cfg.title(it) || '(bez názvu)'; b.querySelector('.s').textContent = cfg.sub(it); }
     }
     function form() {
       var F = cfg.formEl; F.innerHTML = '';
       if (sel < 0 || !cfg.items[sel]) { F.appendChild(el('div', { class: 'empty', text: 'Vyber položku vlevo, nebo přidej novou.' })); return; }
       var it = cfg.items[sel];
-      var prev = cfg.preview ? el('div', { class: 'preview' }) : null;
+      // nahled nahore
+      var prev = cfg.preview ? el('div', { class: 'preview', style: 'margin:0 0 4px' }) : null;
+      if (prev) F.appendChild(prev);
       var refresh = function () { if (prev) cfg.preview(it, prev); };
-      cfg.fields.forEach(function (g) {
-        var fs = el('fieldset', null, [el('legend', { text: g[0] })]);
-        g[1].forEach(function (f) {
-          var k = f[0], type = f[2], input;
-          var v = it[k];
-          if (type === 'area') input = el('textarea', { rows: k === 'description' ? 8 : 4 });
-          else if (type === 'list') input = el('textarea', { rows: 3, class: 'mono' });
-          else if (type === 'select') { input = el('select'); f[4].forEach(function (o) { input.appendChild(el('option', { value: o, text: o || '— žádná —' })); }); }
-          else if (type === 'cat') { input = el('input', { type: 'text', list: 'cats' }); }
-          else if (type === 'bool') input = el('input', { type: 'checkbox' });
-          else input = el('input', { type: type === 'number' ? 'number' : 'text', class: type === 'url' ? 'mono' : null });
-          if (type === 'bool') input.checked = v === true;
-          else if (type === 'list') input.value = Array.isArray(v) ? v.join('\n') : (v || '');
-          else input.value = v == null ? '' : v;
-          var ev = type === 'bool' || type === 'select' ? 'change' : 'input';
-          input.addEventListener(ev, function () {
-            if (type === 'bool') it[k] = input.checked;
-            else if (type === 'list') it[k] = lines(input.value);
-            else if (type === 'number') it[k] = input.value === '' ? '' : Number(input.value);
-            else it[k] = input.value;
-            setDirty(cfg.key); refresh();
-            if (k === 'name' || k === 'title' || k === 'category' || k === 'season' || k === 'url' || k === 'hidden') {
-              var b = cfg.listEl.querySelector('.item.on');
-              if (b) { b.querySelector('.t').firstChild.textContent = cfg.title(it) || '(bez názvu)'; b.querySelector('.s').textContent = cfg.sub(it); }
-            }
-          });
-          var warn = el('p', { class: 'hint' });
-          if (type === 'url') {
-            var chk = function () { var s = String(input.value || '').trim(); warn.textContent = s && !isUrl(s) ? 'Tohle nevypadá jako odkaz (musí začínat https://).' : (f[3] || ''); warn.style.color = s && !isUrl(s) ? 'var(--err)' : ''; };
-            input.addEventListener('input', chk); chk();
-          } else warn.textContent = f[3] || '';
-          if (type === 'bool') fs.appendChild(el('label', { class: 'check' }, [input, el('span', null, [el('b', { text: f[1] }), f[3] ? el('span', { class: 'hint', text: ' – ' + f[3] }) : null])]));
-          else fs.appendChild(el('label', { class: 'f' }, [el('span', { text: f[1] }), input, warn]));
-        });
-        F.appendChild(fs);
-      });
-      // nezname pole (nove funkce launcheru): ukazat jen pro informaci
-      var extra = Object.keys(it).filter(function (k) { return !cfg.known[k]; });
-      if (extra.length) {
-        var o = {}; extra.forEach(function (k) { o[k] = it[k]; });
-        F.appendChild(el('fieldset', null, [el('legend', { text: 'Další pole (zachovají se)' }), el('div', { class: 'code', text: JSON.stringify(o, null, 2) })]));
+      // nazev slozky: u existujici polozky zamceny
+      if (cfg.nameLabel) {
+        var box = el('label', { class: 'f' }, [el('span', null, [cfg.nameLabel, el('span', { class: 'req', text: ' *' }), tip(cfg.nameTip)])]);
+        var showLocked = function () {
+          box.querySelectorAll('.locked, input, .hint').forEach(function (x) { x.remove(); });
+          if (String(it.name || '').trim() && !it.__new) {
+            var ch = el('button', { class: 'btn small', type: 'button', text: 'Změnit' });
+            ch.addEventListener('click', function (e) {
+              e.preventDefault();
+              confirmBox('Změnit název složky?', '<p>Název musí přesně sedět se složkou (archivem) na Google Drive, jinak launcher mod nenajde. Měň ho, jen když jsi složku na Drive přejmenoval.</p>', 'Změnit').then(function (ok) { if (ok) { it.__new = true; showLocked(); var i = box.querySelector('input'); if (i) i.focus(); } });
+            });
+            box.appendChild(el('div', { class: 'locked' }, [el('code', { text: it.name, title: it.name }), ch]));
+          } else {
+            var inp = el('input', { type: 'text', class: 'mono', value: it.name || '', placeholder: 'Např. 241-[Autor] Název modu' });
+            inp.addEventListener('input', function () { it.name = inp.value; setDirty(cfg.fk); relist(it); refresh(); });
+            box.appendChild(inp);
+          }
+        };
+        showLocked();
+        F.appendChild(box);
       }
-      if (prev) { F.appendChild(prev); refresh(); }
-      var del = el('button', { class: 'btn danger', text: 'Smazat položku' });
+      if (cfg.extraTop) cfg.extraTop(it, F);
+      // zakladni a pokrocila pole
+      var basic = el('div', { class: 'row', style: 'gap:0 14px' });
+      var adv = el('details', { class: 'adv' }, [el('summary', { text: 'Pokročilé' })]);
+      var advIn = el('div', { class: 'in row', style: 'gap:0 14px' }); adv.appendChild(advIn);
+      var build = function () {
+        basic.innerHTML = ''; advIn.innerHTML = '';
+        var advFilled = false, advCount = 0;
+        cfg.fields.forEach(function (f) {
+          if (f.show && !f.show(it)) return;
+          var node = fieldInput(it, f, function (k) {
+            setDirty(cfg.fk); relist(it); refresh();
+            // zmena sezony / odkazu ukaze nebo schova souvisejici pole
+            if (k === 'season' || k === 'url' || k === 'link') { var open = adv.open; build(); adv.open = open; }
+          });
+          if (!f.half) node.style.flex = '1 1 100%';
+          if (f.adv) { advIn.appendChild(node); advCount++; if (filled(it[f.k])) advFilled = true; } else basic.appendChild(node);
+        });
+        adv.querySelector('summary').textContent = 'Pokročilé (' + advCount + ')' + (advFilled ? ' – něco je vyplněné' : '');
+        adv.hidden = advCount === 0;
+        return advFilled;
+      };
+      adv.open = build();
+      F.appendChild(basic); F.appendChild(adv);
+      if (cfg.extraBottom) cfg.extraBottom(it, F);
+      // pole, ktera editor nezna (nove funkce launcheru): zachovaji se
+      var extra = Object.keys(it).filter(function (k) { return k !== '__new' && !known[k] && !ALL_MOD_TYPES[k]; });
+      if (extra.length && cfg.fk === 'opt') {
+        var o = {}; extra.forEach(function (k) { o[k] = it[k]; });
+        F.appendChild(el('details', { class: 'adv' }, [el('summary', { text: 'Další pole (zachovají se)' }), el('div', { class: 'in' }, [el('div', { class: 'code', text: JSON.stringify(o, null, 2) })])]));
+      }
+      refresh();
+      var del = el('button', { class: 'btn danger', text: 'Smazat' });
       del.addEventListener('click', function () {
-        ask('Smazat?', '<p>Smazat <b>' + esc(cfg.title(it) || '(bez názvu)') + '</b> ze seznamu? Změna se projeví až po uložení na GitHub.</p>',
-          [{ label: 'Smazat', value: true, cls: 'pri' }, { label: 'Zpět', value: false }]).then(function (ok) {
+        confirmBox('Smazat?', '<p>Smazat <b>' + esc(cfg.title(it) || '(bez názvu)') + '</b>? Změna se projeví až po uložení na GitHub.</p>', 'Smazat').then(function (ok) {
           if (!ok) return;
-          cfg.items.splice(sel, 1); sel = Math.min(sel, cfg.items.length - 1); setDirty(cfg.key); render();
+          if (cfg.onDelete) cfg.onDelete(it);
+          cfg.items.splice(sel, 1); sel = -1; setDirty(cfg.fk); render();
         });
       });
-      F.appendChild(el('div', { class: 'bar' }, [del]));
+      var bar = el('div', { class: 'bar' }, [del]);
+      if (cfg.dup) bar.appendChild(el('button', { class: 'btn', text: 'Duplikovat', onclick: function () { var c = JSON.parse(JSON.stringify(it)); c.name = (c.name || '') + ' (kopie)'; c.__new = true; cfg.items.splice(sel + 1, 0, c); sel = sel + 1; setDirty(cfg.fk); render(); } }));
+      F.appendChild(bar);
     }
     return {
       render: render,
-      add: function (obj) { cfg.items.push(obj); sel = cfg.items.length - 1; setDirty(cfg.key); render(); var n = cfg.formEl.querySelector('input'); if (n) n.focus(); },
-      dup: function () { if (sel < 0) return; var c = JSON.parse(JSON.stringify(cfg.items[sel])); c.name = (c.name || '') + ' (kopie)'; cfg.items.splice(sel + 1, 0, c); sel++; setDirty(cfg.key); render(); },
-      sel: function () { return sel; }
+      add: function (obj) { obj.__new = true; cfg.items.push(obj); sel = cfg.items.length - 1; setDirty(cfg.fk); render(); },
+      select: function (i) { sel = i; render(); }
     };
   }
 
-  // ---------- VOLITELNE MODY ----------
-  var OPT = { root: null, items: [], ed: null };
+  // ---------- VOLITELNE MODY + PATCHE (optional.json) ----------
+  var OPT = { root: null, items: [], ed: null, ped: null };
+  function key(s) { return String(s || '').trim().toLowerCase(); }
+  function requiredSet() { var r = {}; OPT.items.forEach(function (m) { (m.requires || []).forEach(function (n) { r[key(n)] = 1; }); }); return r; }
+  function isPatch(m) {
+    if (m.__patch) return true;
+    if (requiredSet()[key(m.name)]) return true;
+    // skryty mod s "patch" v nazvu (viditelne mody s patch v nazvu jsou bezne mody)
+    return m.hidden === true && /patch/i.test(String(m.name || '') + ' ' + String(m.title || ''));
+  }
+  function usedBy(p) { var n = key(p.name); return OPT.items.filter(function (m) { return (m.requires || []).some(function (r) { return key(r) === n; }); }); }
+  function dupNames() { var n = {}; OPT.items.forEach(function (m) { var k = key(m.name); n[k] = (n[k] || 0) + 1; }); return n; }
+
+  function newItemDialog(isP) {
+    var name = el('input', { type: 'text', class: 'mono', placeholder: isP ? 'Např. Vasgen CCon Patch' : 'Např. 241-[Autor] Název modu' });
+    var cat = el('input', { type: 'text', list: 'cats', placeholder: 'Např. Gameplay' });
+    var box = el('div', null, [
+      el('p', { class: 'hint', text: 'Napiš přesný název složky (archivu) na Google Drive – podle něj launcher spáruje archiv s tímto popisem. Ostatní vyplníš potom.' }),
+      el('label', { class: 'f' }, [el('span', { text: 'Název složky' }), name]),
+      isP ? null : el('label', { class: 'f' }, [el('span', { text: 'Kategorie' }), cat]),
+      el('p', { class: 'msg err', id: 'newErr' })
+    ]);
+    return dialog(isP ? 'Nový patch' : 'Nový mod', box, [
+      { label: 'Vytvořit', cls: 'pri', value: function () {
+        var n = name.value.trim();
+        if (!n) { $('newErr').textContent = 'Vyplň název složky.'; return undefined; }
+        if (dupNames()[key(n)]) { $('newErr').textContent = 'Položka s tímto názvem už existuje.'; return undefined; }
+        return { name: n, category: cat.value.trim() };
+      } },
+      { label: 'Zrušit', value: null }
+    ]);
+  }
+
   builders.opt = function (text) {
     var root;
+    $('optForm').innerHTML = ''; $('patchForm').innerHTML = '';
     try { root = text.trim() ? JSON.parse(text) : { mods: [] }; }
-    catch (e) { $('optForm').innerHTML = '<p class="msg err">optional.json na GitHubu není platný JSON: ' + esc(e.message) + '</p>'; return; }
+    catch (e) { $('optForm').innerHTML = $('patchForm').innerHTML = '<p class="msg err">optional.json na GitHubu není platný JSON: ' + esc(e.message) + '</p>'; OPT.root = null; return; }
     if (Array.isArray(root)) root = { mods: root };
     OPT.root = root; OPT.items = Array.isArray(root.mods) ? root.mods : (root.mods = []);
-    // kategorie do nabidky
     var cats = {}; OPT.items.forEach(function (m) { if (m.category) cats[m.category] = 1; });
     var dl = $('cats') || document.body.appendChild(el('datalist', { id: 'cats' })); dl.innerHTML = '';
     Object.keys(cats).sort().forEach(function (c) { dl.appendChild(el('option', { value: c })); });
     var cs = $('optCat'); cs.innerHTML = '<option value="">Všechny kategorie</option><option value="@season">Sezóny</option><option value="@hidden">Skryté</option>';
     Object.keys(cats).sort().forEach(function (c) { cs.appendChild(el('option', { value: c, text: c })); });
-    var names = function () { var n = {}; OPT.items.forEach(function (m) { var k = String(m.name || '').trim().toLowerCase(); n[k] = (n[k] || 0) + 1; }); return n; };
+
+    var preview = function (m, box) {
+      box.innerHTML = '';
+      box.appendChild(el('div', { class: 'eb', text: 'Náhled v launcheru' }));
+      box.appendChild(el('div', { class: 'pt', text: m.title || m.name || '(bez názvu)' }));
+      if (m.season || m.category) box.appendChild(el('span', { class: 'pc', text: m.season ? 'Sezóna ' + m.season : m.category }));
+      if (m.author) box.appendChild(el('div', { class: 'hint', text: 'Autor: ' + m.author }));
+      var img = m.image || (Array.isArray(m.images) && m.images[0]);
+      if (img && isUrl(img)) box.appendChild(el('img', { src: img, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
+      var d = String(m.description || '');
+      box.appendChild(el('div', { class: 'pd', text: d ? (d.length > 420 ? d.slice(0, 420) + '…' : d) : 'Bez popisu.' }));
+    };
     OPT.ed = listEditor({
-      key: 'opt', items: OPT.items, fields: OPT_FIELDS, known: KNOWN_OPT,
-      listEl: $('optList'), formEl: $('optForm'), countEl: $('optCount'),
+      fk: 'opt', items: OPT.items, fields: MOD_FIELDS, listEl: $('optList'), formEl: $('optForm'), countEl: $('optCount'),
+      nameLabel: 'Název složky', nameTip: 'Přesně jako složka (archiv) na Google Drive a v MO2. Podle něj launcher spáruje archiv s popisem.',
       title: function (m) { return m.title || m.name; },
       sub: function (m) { return m.name || ''; },
       tags: function (m) { var t = []; if (m.season) t.push(m.season); else if (m.category) t.push(m.category); if (m.hidden) t.push('skrytý'); return t; },
-      bad: function (m) { var n = String(m.name || '').trim(); return !n || names()[n.toLowerCase()] > 1; },
+      bad: function (m) { return !key(m.name) || dupNames()[key(m.name)] > 1; },
       filter: function (m) {
+        if (isPatch(m)) return false;
         var q = $('optSearch').value.trim().toLowerCase(), c = $('optCat').value;
         if (c === '@season' && !m.season) return false;
         if (c === '@hidden' && !m.hidden) return false;
         if (c && c[0] !== '@' && m.category !== c) return false;
-        if (!q) return true;
-        return [m.name, m.title, m.author, m.description, m.category].join(' ').toLowerCase().indexOf(q) >= 0;
+        return !q || [m.name, m.title, m.author, m.description, m.category].join(' ').toLowerCase().indexOf(q) >= 0;
       },
-      preview: function (m, box) {
-        box.innerHTML = '';
-        box.appendChild(el('div', { class: 'eb', text: 'Náhled v launcheru' }));
-        box.appendChild(el('div', { class: 'pt', text: m.title || m.name || '(bez názvu)' }));
-        if (m.season || m.category) box.appendChild(el('span', { class: 'pc', text: m.season ? 'Sezóna ' + m.season : m.category }));
-        if (m.author) box.appendChild(el('div', { class: 'hint', text: 'Autor: ' + m.author }));
-        var img = m.image || (Array.isArray(m.images) && m.images[0]);
-        if (img && isUrl(img)) box.appendChild(el('img', { src: img, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
-        box.appendChild(el('div', { class: 'pd', text: m.description || 'Bez popisu.' }));
-      }
+      words: ['mod', 'mody', 'modů'],
+      preview: preview, dup: true
+    });
+    OPT.ped = listEditor({
+      fk: 'opt', items: OPT.items, fields: PATCH_FIELDS, listEl: $('patchList'), formEl: $('patchForm'), countEl: $('patchCount'),
+      nameLabel: 'Název složky patche', nameTip: 'Přesně jako složka (archiv) na Google Drive. Pod tímto názvem ho mody mají v poli „Vyžaduje“.',
+      title: function (m) { return m.title || m.name; },
+      sub: function (m) { var u = usedBy(m); return u.length ? 'pro: ' + u.map(function (x) { return x.title || x.name; }).join(', ') : 'nepoužitý – nepatří k žádnému modu'; },
+      tags: function (m) { return m.hidden ? [] : ['viditelný']; },
+      bad: function (m) { return !key(m.name) || dupNames()[key(m.name)] > 1 || !usedBy(m).length; },
+      filter: function (m) {
+        if (!isPatch(m)) return false;
+        var q = $('patchSearch').value.trim().toLowerCase();
+        return !q || [m.name, m.title, m.description].join(' ').toLowerCase().indexOf(q) >= 0;
+      },
+      words: ['patch', 'patche', 'patchů'],
+      extraTop: function (p, F) {
+        // ke kterym modum patch patri: zaskrtnout = patch se prida do jejich "Vyzaduje"
+        var wrap = el('div', { class: 'f', style: 'margin-top:12px' }, [el('span', { class: 'hint', style: 'display:block;font:600 12px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#bdb8ad;margin-bottom:5px' }, ['Patch pro mody', tip('Zaškrtni mody, ke kterým patch patří. Launcher ho stáhne a zapne, když hráč zapne některý z nich.')])]);
+        var q = el('input', { type: 'search', placeholder: 'Hledat mod…', style: 'margin-bottom:6px' });
+        var picks = el('div', { class: 'picks' });
+        var draw = function () {
+          picks.innerHTML = '';
+          var s = q.value.trim().toLowerCase();
+          var mods = OPT.items.filter(function (m) { return m !== p && !isPatch(m); });
+          var has = function (m) { return (m.requires || []).some(function (r) { return key(r) === key(p.name); }); };
+          mods.sort(function (a, b) { return (has(b) - has(a)) || String(a.title || a.name).localeCompare(String(b.title || b.name), 'cs'); });
+          mods.forEach(function (m) {
+            var on = has(m);
+            if (s && !on && [m.name, m.title].join(' ').toLowerCase().indexOf(s) < 0) return;
+            var cb = el('input', { type: 'checkbox' }); cb.checked = on;
+            cb.addEventListener('change', function () {
+              if (!key(p.name)) { cb.checked = false; return; }
+              var req = (m.requires || []).filter(function (r) { return key(r) !== key(p.name); });
+              if (cb.checked) req.push(p.name.trim());
+              m.requires = req; setDirty('opt'); draw();
+              var b = $('patchList').querySelector('.item.on'); if (b) b.querySelector('.s').textContent = OPT.ped && usedBy(p).length ? 'pro: ' + usedBy(p).map(function (x) { return x.title || x.name; }).join(', ') : 'nepoužitý – nepatří k žádnému modu';
+            });
+            picks.appendChild(el('label', { class: on ? 'on' : null }, [cb, (m.title || m.name) + (m.season ? ' (' + m.season + ')' : '')]));
+          });
+        };
+        q.addEventListener('input', draw); draw();
+        wrap.appendChild(q); wrap.appendChild(picks);
+        // viditelnost
+        var vis = el('input', { type: 'checkbox' }); vis.checked = p.hidden !== true;
+        vis.addEventListener('change', function () { p.hidden = !vis.checked; setDirty('opt'); });
+        wrap.appendChild(el('label', { class: 'check' }, [vis, el('span', null, [el('b', { text: 'Ukazovat hráčům v seznamu volitelných modů' }), tip('Běžně vypnuté – patch se instaluje sám s modem.')])]));
+        F.appendChild(wrap);
+      },
+      onDelete: function (p) { OPT.items.forEach(function (m) { if (m.requires) m.requires = m.requires.filter(function (r) { return key(r) !== key(p.name); }); }); }
     });
     $('optSearch').oninput = function () { OPT.ed.render(); };
     $('optCat').onchange = function () { OPT.ed.render(); };
-    $('optAdd').onclick = function () { OPT.ed.add({ name: '', title: '', author: '', category: '', description: '' }); };
-    $('optDup').onclick = function () { OPT.ed.dup(); };
-    OPT.ed.render();
+    $('patchSearch').oninput = function () { OPT.ped.render(); };
+    $('optAdd').onclick = function () { newItemDialog(false).then(function (r) { if (r) { $('optSearch').value = ''; $('optCat').value = ''; OPT.ed.add({ name: r.name, title: '', category: r.category, description: '' }); } }); };
+    $('patchAdd').onclick = function () { newItemDialog(true).then(function (r) { if (r) { $('patchSearch').value = ''; OPT.ped.add({ name: r.name, title: '', hidden: true, description: '', __patch: true }); } }); };
   };
+  onShow.opt = function () { if (OPT.ed) OPT.ed.render(); };
+  onShow.patch = function () { if (OPT.ped) OPT.ped.render(); };
   validators.opt = function () {
     var errs = [], seen = {};
     if (!OPT.root) return { text: '', errors: ['Soubor se nenačetl.'] };
     var mods = OPT.items.map(function (m, i) {
       var n = String(m.name || '').trim();
       if (!n) errs.push('Položka č. ' + (i + 1) + ' nemá název složky.');
-      else if (seen[n.toLowerCase()]) errs.push('Název „' + n + '“ je v seznamu dvakrát.');
-      seen[n.toLowerCase()] = 1;
+      else if (seen[key(n)]) errs.push('Název „' + n + '“ je v seznamu dvakrát.');
+      seen[key(n)] = 1;
       ['url', 'link', 'image', 'gallery'].forEach(function (k) { if (m[k] && String(m[k]).trim() && !isUrl(m[k])) errs.push((m.title || n) + ': pole „' + k + '“ není odkaz.'); });
       if (m.season && SEASONS.indexOf(m.season) < 0) errs.push((m.title || n) + ': neznámá sezóna „' + m.season + '“.');
-      var c = clean(m, OPT_FIELDS); c.name = n; return c;
+      var c = {}; Object.keys(m).forEach(function (k) { if (k !== '__new' && k !== '__patch') c[k] = m[k]; });
+      c = clean(c, ALL_MOD_TYPES); c.name = n; return c;
     });
-    var root = Object.assign({}, OPT.root, { mods: mods });
-    return { text: JSON.stringify(root, null, 2) + '\n', errors: errs };
+    return { text: JSON.stringify(Object.assign({}, OPT.root, { mods: mods }), null, 2) + '\n', errors: errs };
   };
 
   // ---------- MODDB ----------
   var MD = { items: [], ed: null };
-  var KNOWN_MD = {}; MD_FIELDS.forEach(function (g) { g[1].forEach(function (f) { KNOWN_MD[f[0]] = 1; }); });
   builders.moddb = function (text) {
+    $('mdForm').innerHTML = '';
     try { MD.items = text.trim() ? JSON.parse(text) : []; }
-    catch (e) { $('mdForm').innerHTML = '<p class="msg err">moddb.json na GitHubu není platný JSON: ' + esc(e.message) + '</p>'; return; }
+    catch (e) { $('mdForm').innerHTML = '<p class="msg err">moddb.json na GitHubu není platný JSON: ' + esc(e.message) + '</p>'; MD.items = null; return; }
     if (!Array.isArray(MD.items)) MD.items = [];
     MD.ed = listEditor({
-      key: 'moddb', items: MD.items, fields: MD_FIELDS, known: KNOWN_MD,
-      listEl: $('mdList'), formEl: $('mdForm'), countEl: $('mdCount'),
+      fk: 'moddb', items: MD.items, fields: MD_FIELDS, listEl: $('mdList'), formEl: $('mdForm'), countEl: $('mdCount'),
       title: function (m) { return m.name || String(m.url || '').split('/').filter(Boolean).pop(); },
       sub: function (m) { return m.url || ''; },
-      bad: function (m) { return !isUrl(m.url); }
+      bad: function (m) { return !isUrl(m.url); },
+      words: ['addon', 'addony', 'addonů']
     });
     $('mdAdd').onclick = function () { MD.ed.add({ url: '', name: '' }); };
     MD.ed.render();
   };
   validators.moddb = function () {
+    if (!MD.items) return { text: '', errors: ['Soubor se nenačetl.'] };
     var errs = [];
     var list = MD.items.map(function (m, i) {
       if (!isUrl(m.url)) errs.push('Addon č. ' + (i + 1) + ' nemá platný odkaz na ModDB.');
       else if (!/moddb\.com\//i.test(m.url)) errs.push((m.name || m.url) + ': odkaz nevede na moddb.com.');
-      return clean(m, MD_FIELDS);
+      var c = {}; Object.keys(m).forEach(function (k) { if (k !== '__new') c[k] = m[k]; });
+      return clean(c, typesOf(MD_FIELDS));
     });
     return { text: JSON.stringify(list, null, 2) + '\n', errors: errs };
   };
 
   // ---------- ODKAZY ----------
-  var SRC = { obj: null };
+  var SRC = { obj: null, raw: null };
   var SRC_FIELDS = [
-    ['Modpack', [
-      ['drive_main', 'Hlavní složka modpacku (Anomaly + ReZone)', 'one', 'Podsložka = jeden archiv z dílů (.7z.001…).'],
-      ['rezone_alt', 'Záložní složky modpacku', 'list', 'Použijí se, když hlavní nejde načíst.'],
-      ['drive_patch', 'Patche', 'list', 'První = hlavní složka patchů, další = zálohy.']
-    ]],
-    ['Volitelné mody', [
-      ['addons', 'Addony', 'list', ''],
-      ['npc', 'NPC Models', 'list', ''],
-      ['weapons', 'Zbraně', 'list', ''],
-      ['other', 'Ostatní', 'list', ''],
-      ['optional_alt', 'Další složky volitelných modů', 'list', 'Mody z nich jdou taky stáhnout.']
-    ]],
-    ['Sezóny', [
-      ['seasons_folder', 'Jedna složka se sezónami', 'list', 'Podsložky s „Spring/Summer/Autumn/Winter“ (nebo Jaro/Léto/Podzim/Zima) v názvu.'],
-      ['seasons.0', 'Jaro', 'list', ''],
-      ['seasons.1', 'Léto', 'list', ''],
-      ['seasons.2', 'Podzim', 'list', ''],
-      ['seasons.3', 'Zima', 'list', ''],
-      ['season_alt', 'Záložní složky sezón', 'list', '']
-    ]],
-    ['Poznámka k aktualizaci', [
-      ['update_note', 'Text, který hráč uvidí před aktualizací modpacku', 'area', 'Např. „Velký update questů trilogie.“ Prázdné = nic.'],
-      ['new_save', 'Tahle verze potřebuje novou hru', 'bool', 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.']
-    ]]
+    { k: 'drive_main', label: 'Modpack (Anomaly + ReZone)', type: 'one', tip: 'Hlavní složka. Podsložka = jeden archiv z dílů (.7z.001…).' },
+    { k: 'drive_patch', label: 'Patche', type: 'list', tip: 'První = hlavní složka patchů, další = zálohy.' },
+    { k: 'addons', label: 'Addony', type: 'list' },
+    { k: 'npc', label: 'NPC Models', type: 'list' },
+    { k: 'weapons', label: 'Zbraně', type: 'list' },
+    { k: 'seasons.0', label: 'Jaro', type: 'list', half: true },
+    { k: 'seasons.1', label: 'Léto', type: 'list', half: true },
+    { k: 'seasons.2', label: 'Podzim', type: 'list', half: true },
+    { k: 'seasons.3', label: 'Zima', type: 'list', half: true },
+    { k: 'update_note', label: 'Poznámka k aktualizaci', type: 'area', tip: 'Hráč ji uvidí v okně před aktualizací modpacku. Prázdné = nic.' },
+    { k: 'new_save', label: 'Tahle verze potřebuje novou hru', type: 'bool', tip: 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.' },
+    { k: 'other', label: 'Ostatní volitelné mody', type: 'list', adv: true },
+    { k: 'rezone_alt', label: 'Záložní složky modpacku', type: 'list', adv: true, tip: 'Použijí se, když hlavní nejde načíst.' },
+    { k: 'optional_alt', label: 'Další složky volitelných modů', type: 'list', adv: true },
+    { k: 'seasons_folder', label: 'Jedna složka se všemi sezónami', type: 'list', adv: true, tip: 'Podsložky se Spring/Summer/Autumn/Winter (nebo Jaro/Léto/Podzim/Zima) v názvu.' },
+    { k: 'season_alt', label: 'Záložní složky sezón', type: 'list', adv: true }
   ];
   function srcGet(o, k) { if (k.indexOf('seasons.') === 0) { var s = Array.isArray(o.seasons) ? o.seasons : []; return s[+k.slice(8)] || []; } return o[k]; }
   function srcSet(o, k, v) {
-    if (k.indexOf('seasons.') === 0) { if (!Array.isArray(o.seasons)) o.seasons = [[], [], [], []]; while (o.seasons.length < 4) o.seasons.push([]); o.seasons[+k.slice(8)] = v; }
+    if (k.indexOf('seasons.') === 0) { if (!Array.isArray(o.seasons)) o.seasons = []; while (o.seasons.length < 4) o.seasons.push([]); o.seasons[+k.slice(8)] = v; }
     else o[k] = v;
   }
   builders.src = function (text) {
@@ -660,51 +834,52 @@ dialog::backdrop { background: #000a; }
     var o;
     try { o = text.trim() ? JSON.parse(text) : {}; }
     catch (e) {
-      F.innerHTML = '<p class="msg err">sources.json na GitHubu není platný JSON (' + esc(e.message) + '). Launcher teď používá staré odkazy! Oprav ho tady: obsah se načetl jako text, po opravě ulož.</p>';
+      F.appendChild(el('p', { class: 'msg err', text: 'sources.json na GitHubu není platný JSON (' + e.message + '). Launcher teď používá staré odkazy! Oprav ho tady jako text a ulož.' }));
       var ta = el('textarea', { class: 'mono', rows: 22 }); ta.value = text; F.appendChild(ta);
       SRC.raw = ta; SRC.obj = null; ta.oninput = function () { setDirty('src'); };
       return;
     }
     SRC.obj = o; SRC.raw = null;
-    SRC_FIELDS.forEach(function (g) {
-      var fs = el('fieldset', null, [el('legend', { text: g[0] })]);
-      g[1].forEach(function (f) {
-        var k = f[0], type = f[2], v = srcGet(o, k), input;
-        if (type === 'bool') { input = el('input', { type: 'checkbox' }); input.checked = v === true; }
-        else if (type === 'area') { input = el('textarea', { rows: 3 }); input.value = v || ''; }
-        else if (type === 'one') { input = el('input', { type: 'text', class: 'mono' }); input.value = v || ''; }
-        else { input = el('textarea', { rows: 2, class: 'mono' }); input.value = Array.isArray(v) ? v.join('\n') : (v || ''); }
-        var hint = el('p', { class: 'hint', text: f[3] || '' });
-        var chk = function () {
-          if (type !== 'list' && type !== 'one') return;
-          var bad = (type === 'one' ? [input.value.trim()].filter(Boolean) : lines(input.value)).filter(function (l) { return !isUrl(l); });
-          hint.textContent = bad.length ? 'Není odkaz: ' + bad[0] : (f[3] || '');
-          hint.style.color = bad.length ? 'var(--err)' : '';
-        };
-        input.addEventListener(type === 'bool' ? 'change' : 'input', function () {
-          var val = type === 'bool' ? input.checked : type === 'list' ? lines(input.value) : input.value.trim();
-          srcSet(o, k, val); setDirty('src'); chk();
-        });
-        chk();
-        if (type === 'bool') fs.appendChild(el('label', { class: 'check' }, [input, el('span', null, [el('b', { text: f[1] }), el('span', { class: 'hint', text: ' – ' + f[3] })])]));
-        else fs.appendChild(el('label', { class: 'f' }, [el('span', { text: f[1] }), input, hint]));
+    var basic = el('div', { class: 'row', style: 'gap:0 14px' });
+    var adv = el('details', { class: 'adv' }, [el('summary', { text: 'Pokročilé – zálohy a další složky' })]);
+    var advIn = el('div', { class: 'in row', style: 'gap:0 14px' }); adv.appendChild(advIn);
+    var advFilled = false;
+    SRC_FIELDS.forEach(function (f) {
+      var k = f.k, type = f.type, v = srcGet(o, k), input;
+      if (type === 'bool') { input = el('input', { type: 'checkbox' }); input.checked = v === true; }
+      else if (type === 'area') { input = el('textarea', { rows: 2 }); input.value = v || ''; }
+      else if (type === 'one') { input = el('input', { type: 'text', class: 'mono' }); input.value = v || ''; }
+      else { input = el('textarea', { rows: 2, class: 'mono' }); input.value = Array.isArray(v) ? v.join('\n') : (v || ''); }
+      var warn = el('p', { class: 'hint', style: 'color:var(--err)' });
+      var chk = function () {
+        if (type !== 'list' && type !== 'one') return;
+        var bad = (type === 'one' ? [input.value.trim()].filter(Boolean) : lines(input.value)).filter(function (l) { return !isUrl(l); });
+        warn.textContent = bad.length ? 'Není odkaz: ' + bad[0] : '';
+      };
+      input.addEventListener(type === 'bool' ? 'change' : 'input', function () {
+        srcSet(o, k, type === 'bool' ? input.checked : type === 'list' ? lines(input.value) : input.value.trim());
+        setDirty('src'); chk();
       });
-      F.appendChild(fs);
+      chk();
+      var node = type === 'bool'
+        ? el('label', { class: 'check', style: 'flex:1 1 100%' }, [input, el('span', null, [el('b', { text: f.label }), tip(f.tip)])])
+        : el('label', { class: 'f', style: f.half ? 'flex:1 1 220px' : 'flex:1 1 100%' }, [el('span', null, [f.label, tip(f.tip)]), input, warn]);
+      if (f.adv) { advIn.appendChild(node); if (filled(v)) advFilled = true; } else basic.appendChild(node);
     });
+    F.appendChild(basic); F.appendChild(adv);
+    if (advFilled) adv.querySelector('summary').textContent += ' – něco je vyplněné';
   };
   validators.src = function () {
     if (SRC.raw) {
-      try { var o = JSON.parse(SRC.raw.value); return { text: JSON.stringify(o, null, 2) + '\n', errors: [] }; }
+      try { return { text: JSON.stringify(JSON.parse(SRC.raw.value), null, 2) + '\n', errors: [] }; }
       catch (e) { return { text: '', errors: ['Pořád to není platný JSON: ' + e.message] }; }
     }
     if (!SRC.obj) return { text: '', errors: ['Soubor se nenačetl.'] };
     var errs = [], o = JSON.parse(JSON.stringify(SRC.obj));
-    SRC_FIELDS.forEach(function (g) {
-      g[1].forEach(function (f) {
-        var v = srcGet(o, f[0]);
-        var arr = f[2] === 'list' ? (v || []) : f[2] === 'one' ? [v].filter(Boolean) : [];
-        arr.forEach(function (l) { if (!isUrl(l)) errs.push(f[1] + ': „' + l + '“ není odkaz.'); });
-      });
+    SRC_FIELDS.forEach(function (f) {
+      var v = srcGet(o, f.k);
+      var arr = f.type === 'list' ? (v || []) : f.type === 'one' ? [v].filter(Boolean) : [];
+      arr.forEach(function (l) { if (!isUrl(l)) errs.push(f.label + ': „' + l + '“ není odkaz.'); });
     });
     if (!o.update_note) delete o.update_note;
     if (o.new_save !== true) delete o.new_save;
@@ -717,14 +892,14 @@ dialog::backdrop { background: #000a; }
     $('login').hidden = true; $('tabs').hidden = false; $('logout').hidden = false;
     $('who').textContent = S.user + ' · ' + S.repo;
     var t = null; try { t = sessionStorage.getItem('rzed_tab'); } catch (e) { /* nic */ }
-    openTab(FILES[t] ? t : 'opt');
+    openTab(TAB_FILE[t] ? t : 'opt');
   }
   function login(token, repo, branch, persist, silent) {
     S.token = token; S.repo = repo.replace(/^https?:\/\/github\.com\//, '').replace(/\/+$/, ''); S.branch = branch || 'main';
     var m = $('loginMsg'); if (!silent) { m.className = 'msg'; m.textContent = 'Ověřuji…'; }
     return Promise.all([api('/user'), api('/repos/' + S.repo)]).then(function (r) {
       S.user = r[0].login;
-      if (!(r[1].permissions && r[1].permissions.push)) throw Object.assign(new Error('Účet ' + S.user + ' nemá do repozitáře právo zapisovat. Požádej správce, ať tě přidá jako Collaborator.'), { status: 0 });
+      if (!(r[1].permissions && r[1].permissions.push)) throw new Error('Účet ' + S.user + ' nemá do repozitáře právo zapisovat. Požádej správce, ať tě přidá jako Collaborator.');
       store('rzed_token', token, persist); store('rzed_repo', S.repo, persist); store('rzed_branch', S.branch, persist);
       m.textContent = ''; enter();
     }).catch(function (e) {
@@ -740,17 +915,20 @@ dialog::backdrop { background: #000a; }
   $('token').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('loginBtn').click(); });
   $('logout').addEventListener('click', function () {
     var dirty = Object.keys(FILES).some(function (k) { return FILES[k].dirty; });
-    (dirty ? ask('Odhlásit?', '<p>Máš neuložené změny – po odhlášení se ztratí.</p>', [{ label: 'Odhlásit', value: true, cls: 'pri' }, { label: 'Zpět', value: false }]) : Promise.resolve(true))
+    (dirty ? confirmBox('Odhlásit?', '<p>Máš neuložené změny – po odhlášení se ztratí.</p>', 'Odhlásit') : Promise.resolve(true))
       .then(function (ok) { if (!ok) return; Object.keys(FILES).forEach(function (k) { FILES[k].dirty = false; }); store('rzed_token', null); store('rzed_repo', null); store('rzed_branch', null); location.reload(); });
   });
   document.querySelectorAll('#tabs button').forEach(function (b) { b.addEventListener('click', function () { openTab(b.dataset.tab); }); });
   var saved = load('rzed_token');
   if (saved) {
     var rp = load('rzed_repo'), br = load('rzed_branch');
-    if (rp) $('repo').value = rp; if (br) $('branch').value = br;
-    login(saved, $('repo').value, $('branch').value, !!(function () { try { return localStorage.getItem('rzed_token'); } catch (e) { return null; } })(), true);
+    if (rp) $('repo').value = rp;
+    if (br) $('branch').value = br;
+    var persisted = false; try { persisted = !!localStorage.getItem('rzed_token'); } catch (e) { /* nic */ }
+    login(saved, $('repo').value, $('branch').value, persisted, true);
   }
 })();
 </script>
+
 </body>
 </html>

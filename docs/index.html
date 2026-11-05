@@ -2261,6 +2261,239 @@ document.addEventListener('keydown', function (e) {
   if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { e.preventDefault(); gi.focus(); gi.select(); }
 });
 document.addEventListener('click', function (e) { if (!e.target.closest('.ab-search') && !e.target.closest('#gres')) gr.hidden = true; });
+
+(function () {
+  'use strict';
+  // okno, tlacitko a nabidka ID (stranka je vytvori az tady, skript bezi pred koncem body)
+  var stl = document.createElement('style'); stl.textContent = "\n.nv-edit { display: inline-flex; align-items: center; gap: 6px; margin: 10px 0 0; padding: 6px 12px; background: none; border: 1.5px solid var(--amber); color: var(--amber); font: 600 14px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; border-radius: 2px; cursor: pointer; }\n.nv-edit:hover { background: #e0a43a1a; }\n.rcard .nv-edit { margin-top: 8px; font-size: 12.5px; padding: 4px 9px; }\n#nv-fab { position: fixed; right: 18px; bottom: 18px; z-index: 90; padding: 11px 16px; background: linear-gradient(180deg, #c4492c, #8e3320); color: #fff; border: 0; font: 700 16px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; box-shadow: 0 8px 24px #000a; border-radius: 3px; }\n#nv-fab[hidden] { display: none; }\n#nv-dlg { position: fixed; inset: 0; z-index: 120; background: #000b; display: flex; align-items: flex-start; justify-content: center; padding: 5vh 16px; }\n#nv-dlg[hidden] { display: none !important; }\n#nv-dlg .nv-p { position: relative; width: min(760px, 100%); max-height: 90vh; overflow-y: auto; background: #121212; border: 1px solid #333; box-shadow: 0 30px 80px #000; padding: 20px 22px; }\n#nv-dlg h3 { font: 700 26px/1.1 var(--display); text-transform: uppercase; letter-spacing: .04em; color: var(--amber); margin: 0 0 4px; }\n#nv-dlg .nv-sub { color: var(--muted); font-size: 14px; margin: 0 0 10px; }\n#nv-dlg label.nv-f { display: block; margin: 10px 0 0; }\n#nv-dlg label.nv-f > span { display: block; font: 600 12px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: #bdb8ad; margin-bottom: 4px; }\n#nv-dlg label.nv-f small { color: var(--muted); font: 12px var(--mono); text-transform: none; letter-spacing: 0; }\n#nv-dlg input, #nv-dlg select, #nv-dlg textarea { width: 100%; background: #1a1d1f; border: 1px solid #3a4044; color: #eee; font: 15px/1.4 var(--body); padding: 7px 9px; border-radius: 2px; }\n#nv-dlg input:focus, #nv-dlg select:focus, #nv-dlg textarea:focus { outline: none; border-color: var(--amber); }\n#nv-dlg .nv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0 12px; }\n#nv-dlg .nv-parts { display: grid; grid-template-columns: minmax(0, 1fr) 90px 34px; gap: 6px; align-items: center; margin-top: 6px; }\n#nv-dlg .nv-x { background: none; border: 1px solid #3a4044; color: var(--red); cursor: pointer; height: 34px; font-size: 16px; }\n#nv-dlg .nv-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; padding-top: 12px; border-top: 1px solid #2a2a2a; }\n#nv-dlg .nv-b { padding: 9px 14px; border: 1px solid #444; background: #1a1d1f; color: var(--text); font: 600 15px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }\n#nv-dlg .nv-b:hover { border-color: var(--amber); color: #fff; }\n#nv-dlg .nv-b.pri { background: linear-gradient(180deg, #c4492c, #8e3320); border-color: #8e3320; color: #fff; }\n#nv-dlg .nv-b.del { color: var(--red); }\n#nv-dlg .nv-chg { color: var(--amber); }\n#nv-dlg .nv-code { font: 12.5px/1.5 var(--mono); background: #0c0c0c; border: 1px solid #2a2a2a; padding: 10px; white-space: pre; overflow: auto; max-height: 300px; color: #cfd3cc; margin-top: 8px; }\n#nv-dlg .nv-list { list-style: none; padding: 0; margin: 8px 0 0; }\n#nv-dlg .nv-list li { display: flex; gap: 10px; align-items: center; padding: 7px 0; border-bottom: 1px solid #222; }\n#nv-dlg .nv-list li span { flex: 1; min-width: 0; }\n#nv-dlg .nv-list li small { display: block; color: var(--muted); font: 12px var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }\n#nv-dlg .nv-msg { color: var(--green); min-height: 1.3em; margin-top: 8px; font-size: 14px; }\n@media (max-width: 600px) { #nv-dlg .nv-p { padding: 16px; } #nv-dlg .nv-parts { grid-template-columns: minmax(0, 1fr) 70px 34px; } }\n"; document.head.appendChild(stl);
+  var nvd = document.createElement('div'); nvd.id = 'nv-dlg'; nvd.hidden = true; nvd.setAttribute('role', 'dialog'); nvd.setAttribute('aria-modal', 'true');
+  nvd.innerHTML = '<div class="nv-p" id="nv-body"></div>'; document.body.appendChild(nvd);
+  var nvf = document.createElement('button'); nvf.id = 'nv-fab'; nvf.hidden = true; document.body.appendChild(nvf);
+  var nvl = document.createElement('datalist'); nvl.id = 'nv-ids'; document.body.appendChild(nvl);
+  var KEY = 'rz_navrh';
+  var N = load();
+  function load() { try { var v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v && v.items && v.recipes) return v; } catch (e) { /* nic */ } return { nick: '', items: {}, recipes: {}, notes: {} }; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(N)); } catch (e) { /* nic */ } fab(); }
+  function h(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function num(v) { var n = Number(String(v).replace(',', '.').trim()); return isFinite(n) ? n : null; }
+  function name(id) { return (BYID[id] && BYID[id].name) || DB.names[id] || id; }
+  function count() { return Object.keys(N.items).length + Object.keys(N.recipes).length + Object.keys(N.notes).filter(function (k) { return N.notes[k]; }).length; }
+  function fab() { var b = $('#nv-fab'); var n = count(); b.hidden = !n; b.textContent = 'Můj návrh změn (' + n + ')'; }
+
+  // ---- co jde u predmetu upravit: [klic v LTX, popisek, aktualni hodnota, kroky]
+  var PROT = [['burn', 'burn_protection', 'Ochrana – oheň'], ['shock', 'shock_protection', 'Ochrana – elektřina'], ['chemical_burn', 'chemical_burn_protection', 'Ochrana – chemie'], ['radiation', 'radiation_protection', 'Ochrana – radiace'], ['telepatic', 'telepatic_protection', 'Ochrana – psi']];
+  function fields(it) {
+    var f = [['cost', 'Cena', it.cost], ['inv_weight', 'Hmotnost (kg)', it.w]];
+    if (it.cat === 'obleky') {
+      f.push(['artefact_count', 'Sloty na artefakty', it.art]);
+      PROT.forEach(function (p) { var v = it.prot && it.prot[p[0]]; if (v) f.push([p[1], p[2], v[0]]); });
+    }
+    if (it.cat === 'zbrane') { f.push(['rpm', 'Kadence (ran/min)', it.rpm]); f.push(['ammo_mag_size', 'Zásobník', it.mag]); }
+    return f;
+  }
+
+  // ---- okno
+  function open(html) { var d = $('#nv-dlg'); $('#nv-body').innerHTML = html; d.hidden = false; var i = d.querySelector('input, textarea, select'); if (i) i.focus(); }
+  function close() { $('#nv-dlg').hidden = true; }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('#nv-dlg').hidden) { e.stopPropagation(); close(); } }, true);
+  $('#nv-dlg').addEventListener('click', function (e) { if (e.target.id === 'nv-dlg') close(); });
+
+  // ---- uprava predmetu
+  function editItem(id) {
+    var it = BYID[id]; if (!it) return;
+    var cur = N.items[id] || {};
+    var f = fields(it);
+    var html = '<h3>' + h(it.name) + '</h3><p class="nv-sub">Navrhni změnu hodnot. Vznikne z toho DLTX soubor, který pošleš na Discord – moderátor ho může přidat do modpacku.</p><div class="nv-grid">';
+    f.forEach(function (x) {
+      var v = cur[x[0]] != null ? cur[x[0]] : x[2];
+      html += '<label class="nv-f"><span>' + h(x[1]) + ' <small>(teď ' + h(x[2] == null ? '–' : x[2]) + ')</small></span><input data-k="' + x[0] + '" data-orig="' + h(x[2]) + '" inputmode="decimal" value="' + h(v == null ? '' : v) + '"></label>';
+    });
+    html += '</div><label class="nv-f"><span>Poznámka pro moderátora <small>(co dalšího změnit a proč – např. poškození, brnění)</small></span><textarea id="nv-note" rows="3">' + h(N.notes[id] || '') + '</textarea></label>' +
+      '<div class="nv-bar"><button class="nv-b pri" id="nv-ok">Přidat do návrhu</button>' + (N.items[id] || N.notes[id] ? '<button class="nv-b del" id="nv-rm">Odebrat z návrhu</button>' : '') + '<button class="nv-b" id="nv-cancel">Zavřít</button></div><p class="nv-msg" id="nv-msg"></p>';
+    open(html);
+    $('#nv-cancel').onclick = close;
+    if ($('#nv-rm')) $('#nv-rm').onclick = function () { delete N.items[id]; delete N.notes[id]; save(); close(); };
+    $('#nv-ok').onclick = function () {
+      var ch = {}, bad = '';
+      [].forEach.call($('#nv-body').querySelectorAll('input[data-k]'), function (i) {
+        var v = num(i.value), o = num(i.dataset.orig);
+        if (i.value.trim() === '') return;
+        if (v == null) { bad = 'Hodnota „' + i.value + '“ není číslo.'; return; }
+        if (o == null || Math.abs(v - o) > 1e-9) ch[i.dataset.k] = v;
+      });
+      if (bad) { $('#nv-msg').style.color = 'var(--red)'; $('#nv-msg').textContent = bad; return; }
+      var note = $('#nv-note').value.trim();
+      if (Object.keys(ch).length) N.items[id] = ch; else delete N.items[id];
+      if (note) N.notes[id] = note; else delete N.notes[id];
+      save();
+      if (!Object.keys(ch).length && !note) { $('#nv-msg').style.color = 'var(--muted)'; $('#nv-msg').textContent = 'Nic se nezměnilo.'; return; }
+      close();
+    };
+  }
+
+  // ---- uprava receptu
+  function rkey(r) { return r.tab + '|' + r.id; }
+  function editRecipe(r) {
+    var k = rkey(r), cur = N.recipes[k] || { tool: r.tool, rec: r.rec || '', parts: r.parts.map(function (p) { return [p[0], p[2]]; }) };
+    var ids = $('#nv-ids');
+    if (!ids.childElementCount) Object.keys(DB.names).forEach(function (id) { ids.appendChild(Object.assign(document.createElement('option'), { value: id, label: DB.names[id] })); });
+    var tools = Object.keys(DB.tools).map(function (t) { return '<option value="' + t + '"' + (String(cur.tool) === t ? ' selected' : '') + '>' + t + ' · ' + h(DB.tools[t]) + '</option>'; }).join('');
+    var html = '<h3>Recept: ' + h(r.name) + '</h3><p class="nv-sub">Uprav suroviny, počty nebo potřebné nástroje. Surovinu zadej jejím ID (napiš název a vyber z nabídky).</p>' +
+      '<div class="nv-grid"><label class="nv-f"><span>Nástroje</span><select id="nv-tool">' + tools + '</select></label>' +
+      '<label class="nv-f"><span>Potřebný recept <small>(prázdné = umíš od začátku)</small></span><input id="nv-rec" list="nv-ids" value="' + h(cur.rec || '') + '"></label></div>' +
+      '<label class="nv-f"><span>Suroviny</span></label><div id="nv-parts"></div><button class="nv-b" id="nv-addp" style="margin-top:8px">+ Surovina</button>' +
+      '<label class="nv-f"><span>Poznámka pro moderátora</span><textarea id="nv-note" rows="2">' + h(N.notes['r:' + k] || '') + '</textarea></label>' +
+      '<div class="nv-bar"><button class="nv-b pri" id="nv-ok">Přidat do návrhu</button>' + (N.recipes[k] ? '<button class="nv-b del" id="nv-rm">Odebrat z návrhu</button>' : '') + '<button class="nv-b" id="nv-cancel">Zavřít</button></div><p class="nv-msg" id="nv-msg"></p>';
+    open(html);
+    var box = $('#nv-parts');
+    function row(id, n) {
+      var d = document.createElement('div'); d.className = 'nv-parts';
+      d.innerHTML = '<input class="nv-pid" list="nv-ids" value="' + h(id) + '" placeholder="ID suroviny"><input class="nv-pn" inputmode="numeric" value="' + h(n) + '"><button class="nv-x" title="Odebrat">✕</button>';
+      d.querySelector('.nv-x').onclick = function () { d.remove(); };
+      var hint = document.createElement('small'); hint.style.cssText = 'grid-column:1/-1;color:var(--muted);font:12px var(--mono);margin-top:-2px';
+      var upd = function () { var v = d.querySelector('.nv-pid').value.trim(); hint.textContent = v ? (DB.names[v] || BYID[v] ? name(v) : 'neznámé ID – zkontroluj') : ''; };
+      d.querySelector('.nv-pid').addEventListener('input', upd); upd();
+      d.appendChild(hint);
+      box.appendChild(d);
+    }
+    cur.parts.forEach(function (p) { row(p[0], p[1]); });
+    $('#nv-addp').onclick = function () { row('', 1); };
+    $('#nv-cancel').onclick = close;
+    if ($('#nv-rm')) $('#nv-rm').onclick = function () { delete N.recipes[k]; delete N.notes['r:' + k]; save(); close(); };
+    $('#nv-ok').onclick = function () {
+      var parts = [], bad = '';
+      [].forEach.call(box.querySelectorAll('.nv-parts'), function (d) {
+        var id = d.querySelector('.nv-pid').value.trim(), n = num(d.querySelector('.nv-pn').value);
+        if (!id) return;
+        if (!/^[\w.\-]+$/.test(id)) bad = '„' + id + '“ není platné ID suroviny.';
+        else if (n == null || n < 1 || n !== Math.floor(n)) bad = 'Počet u ' + name(id) + ' musí být celé číslo.';
+        parts.push([id, n]);
+      });
+      if (!parts.length) bad = 'Recept musí mít aspoň jednu surovinu.';
+      if (bad) { $('#nv-msg').style.color = 'var(--red)'; $('#nv-msg').textContent = bad; return; }
+      var nr = { tool: Number($('#nv-tool').value), rec: $('#nv-rec').value.trim(), parts: parts };
+      var orig = { tool: r.tool, rec: r.rec || '', parts: r.parts.map(function (p) { return [p[0], Number(p[2])]; }) };
+      var note = $('#nv-note').value.trim();
+      if (JSON.stringify(nr) !== JSON.stringify(orig)) N.recipes[k] = nr; else delete N.recipes[k];
+      if (note) N.notes['r:' + k] = note; else delete N.notes['r:' + k];
+      save(); close();
+    };
+  }
+
+  // ---- vystup: DLTX soubory
+  function slug(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '') || 'hrac'; }
+  function files() {
+    var nick = slug(N.nick), out = [];
+    var stamp = new Date().toISOString().slice(0, 10);
+    var head = function (what) { return '; Návrh změn – ' + what + '\n; Autor: ' + (N.nick || 'neuvedeno') + ', ' + stamp + ' (vytvořeno na webu Re:Zone)\n; Zkontroluj před přidáním do modpacku.\n'; };
+    var ids = Object.keys(N.items);
+    if (ids.length) {
+      var t = head('předměty (DLTX přes system.ltx)');
+      ids.forEach(function (id) {
+        var it = BYID[id], ch = N.items[id], f = {};
+        fields(it).forEach(function (x) { f[x[0]] = x; });
+        t += '\n; ' + (it ? it.name : id) + '\n![' + id + ']\n';
+        Object.keys(ch).forEach(function (k) { t += k + ' = ' + ch[k] + (f[k] ? '    ; bylo ' + f[k][2] : '') + '\n'; });
+        if (N.notes[id]) t += '; Poznámka: ' + N.notes[id].replace(/\n/g, ' ') + '\n';
+      });
+      out.push({ path: 'gamedata/configs/mod_system_rz_navrh_' + nick + '.ltx', text: t });
+    }
+    var rk = Object.keys(N.recipes);
+    if (rk.length) {
+      var byTab = {};
+      rk.forEach(function (k) { var tab = k.split('|')[0]; (byTab[tab] = byTab[tab] || []).push(k); });
+      var t2 = head('recepty výroby (DLTX přes craft.ltx)') + '; Formát řádku: předmět = nástroje, recept (x = bez receptu), surovina, počet, ...\n';
+      Object.keys(byTab).forEach(function (tab) {
+        var tn = (DB.tabs.filter(function (x) { return x[0] === tab; })[0] || [tab, tab])[1];
+        t2 += '\n; Záložka: ' + tn + '\n![' + tab + ']\n';
+        byTab[tab].forEach(function (k) {
+          var id = k.split('|')[1], r = N.recipes[k];
+          var orig = DB.recipes.filter(function (x) { return x.tab === tab && x.id === id; })[0];
+          t2 += '; ' + name(id) + (orig ? ' – bylo: nástroje ' + orig.tool + ', ' + (orig.rec || 'x') + ', ' + orig.parts.map(function (p) { return p[0] + ' ' + p[2]; }).join(', ') : '') + '\n';
+          t2 += id + ' = ' + r.tool + ', ' + (r.rec || 'x') + ', ' + r.parts.map(function (p) { return p[0] + ', ' + p[1]; }).join(', ') + '\n';
+          if (N.notes['r:' + k]) t2 += '; Poznámka: ' + N.notes['r:' + k].replace(/\n/g, ' ') + '\n';
+        });
+      });
+      out.push({ path: 'gamedata/configs/items/settings/mod_craft_rz_navrh_' + nick + '.ltx', text: t2 });
+    }
+    // poznamky bez zmeny hodnot
+    var lone = Object.keys(N.notes).filter(function (k) { return N.notes[k] && !(k in N.items) && !(k.slice(0, 2) === 'r:' && k.slice(2) in N.recipes); });
+    if (lone.length) {
+      var t3 = 'Návrhy bez konkrétních hodnot – ' + (N.nick || 'neuvedeno') + ', ' + stamp + '\n';
+      lone.forEach(function (k) { var id = k.slice(0, 2) === 'r:' ? k.split('|')[1] : k; t3 += '\n• ' + name(id) + ' (' + id + '): ' + N.notes[k] + '\n'; });
+      out.push({ path: 'poznamky.txt', text: t3 });
+    }
+    return out;
+  }
+  function download(name, text) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
+    a.download = name; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  function showBasket() {
+    var list = '';
+    Object.keys(N.items).forEach(function (id) { list += '<li><span><b>' + h(name(id)) + '</b><small>' + h(Object.keys(N.items[id]).map(function (k) { return k + ' = ' + N.items[id][k]; }).join(', ')) + '</small></span><button class="nv-b" data-ei="' + h(id) + '">Upravit</button></li>'; });
+    Object.keys(N.recipes).forEach(function (k) { var id = k.split('|')[1]; list += '<li><span><b>Recept: ' + h(name(id)) + '</b><small>' + h(N.recipes[k].parts.map(function (p) { return name(p[0]) + ' ×' + p[1]; }).join(', ')) + '</small></span><button class="nv-b" data-er="' + h(k) + '">Upravit</button></li>'; });
+    Object.keys(N.notes).forEach(function (k) {
+      if (!N.notes[k] || k in N.items || (k.slice(0, 2) === 'r:' && k.slice(2) in N.recipes)) return;
+      var id = k.slice(0, 2) === 'r:' ? k.split('|')[1] : k;
+      list += '<li><span><b>' + h(name(id)) + '</b><small>poznámka: ' + h(N.notes[k]) + '</small></span></li>';
+    });
+    var fs = files();
+    open('<h3>Můj návrh změn</h3><p class="nv-sub">Z návrhu vzniknou DLTX soubory. Pošli je na Discord (kanál s návrhy) – moderátor je zkontroluje a může je přidat do modpacku. Návrh se ukládá jen v tomhle prohlížeči.</p>' +
+      '<label class="nv-f"><span>Tvoje jméno na Discordu</span><input id="nv-nick" value="' + h(N.nick) + '" placeholder="např. Strelok"></label>' +
+      '<ul class="nv-list">' + (list || '<li>Návrh je prázdný.</li>') + '</ul>' +
+      fs.map(function (f) { return '<label class="nv-f"><span>' + h(f.path) + '</span></label><div class="nv-code">' + h(f.text) + '</div>'; }).join('') +
+      '<div class="nv-bar"><button class="nv-b pri" id="nv-copy">Kopírovat pro Discord</button><button class="nv-b" id="nv-dl">Stáhnout soubory</button><button class="nv-b del" id="nv-clear">Smazat návrh</button><button class="nv-b" id="nv-cancel">Zavřít</button></div><p class="nv-msg" id="nv-msg"></p>');
+    $('#nv-nick').addEventListener('change', function () { N.nick = this.value.trim(); save(); showBasket(); });
+    [].forEach.call($('#nv-body').querySelectorAll('[data-ei]'), function (b) { b.onclick = function () { editItem(b.dataset.ei); }; });
+    [].forEach.call($('#nv-body').querySelectorAll('[data-er]'), function (b) {
+      b.onclick = function () { var p = b.dataset.er.split('|'); var r = DB.recipes.filter(function (x) { return x.tab === p[0] && x.id === p[1]; })[0]; if (r) editRecipe(r); };
+    });
+    $('#nv-cancel').onclick = close;
+    $('#nv-copy').onclick = function () {
+      var txt = '**Návrh změn Re:Zone** – ' + (N.nick || 'bez jména') + '\n' + files().map(function (f) { return '`' + f.path + '`\n```ini\n' + f.text + '```'; }).join('\n');
+      var done = function () { $('#nv-msg').textContent = 'Zkopírováno – vlož to do zprávy na Discordu (Ctrl+V). Když je zpráva moc dlouhá, pošli raději stažené soubory.'; };
+      if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, function () { $('#nv-msg').textContent = 'Kopírování nejde – použij Stáhnout soubory.'; });
+    };
+    $('#nv-dl').onclick = function () { files().forEach(function (f, i) { setTimeout(function () { download(f.path.split('/').pop(), f.text); }, i * 400); }); $('#nv-msg').textContent = 'Soubory se stahují – pošli je na Discord.'; };
+    $('#nv-clear').onclick = function () { if (confirm('Smazat celý návrh?')) { N = { nick: N.nick, items: {}, recipes: {}, notes: {} }; save(); close(); } };
+  }
+  $('#nv-fab').onclick = showBasket;
+
+  // ---- napojeni na databazi a vyrobu
+  var _detail = detail;
+  detail = function (id) {
+    _detail(id);
+    var it = BYID[id], body = document.querySelector('#idlg .dbody');
+    if (!it || !body) return;
+    var b = document.createElement('button'); b.className = 'nv-edit';
+    b.textContent = N.items[id] || N.notes[id] ? 'Upravit můj návrh' : 'Navrhnout úpravu';
+    b.onclick = function () { closeDetail(); editItem(id); };
+    var big = body.querySelector('.card2.big'); (big || body).appendChild(b);
+  };
+  var _crRender = crRender;
+  crRender = function () {
+    _crRender();
+    var q = cr.q.toLowerCase();
+    var l = DB.recipes.filter(function (r) {
+      if (cr.tab && r.tab !== cr.tab) return false;
+      return !q || (r.name + ' ' + r.parts.map(function (p) { return p[1]; }).join(' ') + ' ' + (r.rec || '') + ' ' + r.toolname).toLowerCase().indexOf(q) >= 0;
+    });
+    var cards = document.querySelectorAll('#cr-list .rcard');
+    if (cards.length !== l.length) return;
+    l.forEach(function (r, i) {
+      var b = document.createElement('button'); b.className = 'nv-edit';
+      b.textContent = N.recipes[rkey(r)] ? 'Upravit můj návrh' : 'Navrhnout úpravu';
+      b.onclick = function () { editRecipe(r); };
+      cards[i].appendChild(b);
+    });
+  };
+  if (document.querySelector('#cr-list .rcard')) crRender();
+  fab();
+})();
+
 route();
 })();
 </script>
