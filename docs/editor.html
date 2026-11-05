@@ -100,6 +100,8 @@ legend { font: 700 16px/1 var(--cond); letter-spacing: .1em; text-transform: upp
 .code { font: 12.5px/1.5 var(--mono); background: #0c0c0c; border: 1px solid var(--line); padding: 10px; white-space: pre-wrap; max-height: 260px; overflow: auto; color: #bdb8ad; }
 dialog { background: #111; color: var(--text); border: 1px solid #333; padding: 22px 24px; max-width: 640px; width: calc(100% - 32px); box-shadow: 0 30px 80px #000; }
 dialog::backdrop { background: #000a; }
+.ab-in { flex-wrap: wrap; } .ab-sub { flex-wrap: wrap; justify-content: flex-end; padding: 6px 0; min-width: 0; }
+#who { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 900px) {
   .mast-in { min-height: 0; padding-top: 26px; } .ml-name { font-size: 58px; }
   .ab-in { flex-wrap: wrap; padding: 6px 12px; } .ab-tabs { overflow-x: auto; height: 44px; width: 100%; }
@@ -562,17 +564,15 @@ function clPage(md) {
   var MOD_FIELDS = [
     { k: 'title', label: 'Název v launcheru', type: 'text', half: true, w: '40%', tip: 'Hezký název pro hráče. Prázdné = použije se název složky.' },
     { k: 'author', label: 'Autor', type: 'text', half: true, w: '40%' },
-    { k: 'category', label: 'Kategorie', type: 'cat', half: true, w: '28%', tip: 'Záložka ve Volitelných modech.' },
+    { k: 'category', label: 'Kategorie', type: 'cat', half: true, w: '28%', tip: 'Záložka ve Volitelných modech. Vegetace, Terén a Textury = stránka Textury a vegetace.' },
     { k: 'priority', label: 'Priorita', type: 'number', half: true, w: '28%', tip: 'Jako číslo v MO2: větší = níž = vyšší priorita (vyhraje konflikty). Prázdné = podle čísla v názvu složky.' },
-    { k: 'season', label: 'Sezóna', type: 'select', opts: SEASONS, half: true, w: '28%', tip: 'Jen u modů sezón – mod pak je na stránce Textury a sezóny.' },
+    { k: 'season', label: 'Sezóna (už se nepoužívá)', type: 'select', opts: SEASONS, half: true, w: '28%', show: hasSeason, tip: 'Sezóny nahradila kategorie Vegetace – nastav „— žádná —“ a kategorii Vegetace.' },
     { k: 'description', label: 'Popis', type: 'area', tip: 'Prázdný řádek = nový odstavec.' },
     { k: 'image', label: 'Obrázek', type: 'url', tip: 'Přímý odkaz na obrázek (ModDB, Discord, GitHub…).' },
     { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Google Drive (soubor nebo složka), ModDB nebo přímý odkaz. Prázdné = archiv se hledá ve složkách z Odkazů podle názvu složky.' },
     { k: 'link', label: 'Stránka modu', type: 'url', tip: 'ModDB, GitHub… – otevře se z okna INFO v launcheru.' },
-    // sezony
-    { k: 'group', label: 'Skupina v sezóně', type: 'text', show: hasSeason, tip: 'Ze skupiny (např. „Tráva“) může být zapnutý jen jeden mod.' },
-    { k: 'default', label: 'Výchozí volba ve skupině', type: 'bool', show: hasSeason },
-    { k: 'optional', label: 'Jen nabídka – ve výchozím stavu vypnutý', type: 'bool', show: hasSeason, tip: 'Stáhne se, až ho hráč zapne.' },
+    // skupina: mody se stejnou skupinou se vylucuji
+    { k: 'group', label: 'Skupina (zapnutý jen jeden)', type: 'text', half: true, w: '40%', tip: 'Ze stejné skupiny může mít hráč zapnutý jen jeden mod – např. „Vegetace“ u trávy a stromů nebo „NPC Models“.' },
     // ModDB
     { k: 'file', label: 'Název archivu na ModDB', type: 'text', show: isModdb, adv: true, tip: 'Když ModDB nepovolí automatické stažení, hráč archiv stáhne ručně a launcher ho najde podle tohoto názvu.' },
     { k: 'size', label: 'Velikost archivu (bajty)', type: 'number', show: isModdb, adv: true, tip: 'Jen pro zobrazení, když ModDB nejde načíst.' },
@@ -802,7 +802,7 @@ function clPage(md) {
     var cats = {}; OPT.items.forEach(function (m) { if (m.category) cats[m.category] = 1; });
     var dl = $('cats') || document.body.appendChild(el('datalist', { id: 'cats' })); dl.innerHTML = '';
     Object.keys(cats).sort().forEach(function (c) { dl.appendChild(el('option', { value: c })); });
-    var cs = $('optCat'); cs.innerHTML = '<option value="">Všechny kategorie</option><option value="@season">Sezóny</option><option value="@hidden">Skryté</option>';
+    var cs = $('optCat'); cs.innerHTML = '<option value="">Všechny kategorie</option><option value="@hidden">Skryté</option>';
     Object.keys(cats).sort().forEach(function (c) { cs.appendChild(el('option', { value: c, text: c })); });
 
     var preview = function (m, box) {
@@ -899,7 +899,7 @@ function clPage(md) {
       else if (seen[key(n)]) errs.push('Název „' + n + '“ je v seznamu dvakrát.');
       seen[key(n)] = 1;
       ['url', 'link', 'image', 'gallery'].forEach(function (k) { if (m[k] && String(m[k]).trim() && !isUrl(m[k])) errs.push((m.title || n) + ': pole „' + k + '“ není odkaz.'); });
-      if (m.season && SEASONS.indexOf(m.season) < 0) errs.push((m.title || n) + ': neznámá sezóna „' + m.season + '“.');
+      if (m.season) errs.push((m.title || n) + ': sezóny už launcher nepoužívá – u pole Sezóna dej „— žádná —“ a kategorii „Vegetace“.');
       var c = {}; Object.keys(m).forEach(function (k) { if (k !== '__new' && k !== '__patch') c[k] = m[k]; });
       c = clean(c, ALL_MOD_TYPES); c.name = n; return c;
     });
@@ -943,17 +943,11 @@ function clPage(md) {
     { k: 'addons', label: 'Addony', type: 'list' },
     { k: 'npc', label: 'NPC Models', type: 'list' },
     { k: 'weapons', label: 'Zbraně', type: 'list' },
-    { k: 'seasons.0', label: 'Jaro', type: 'list', half: true },
-    { k: 'seasons.1', label: 'Léto', type: 'list', half: true },
-    { k: 'seasons.2', label: 'Podzim', type: 'list', half: true },
-    { k: 'seasons.3', label: 'Zima', type: 'list', half: true },
     { k: 'update_note', label: 'Poznámka k aktualizaci', type: 'area', tip: 'Hráč ji uvidí v okně před aktualizací modpacku. Prázdné = nic.' },
     { k: 'new_save', label: 'Tahle verze potřebuje novou hru', type: 'bool', tip: 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.' },
     { k: 'other', label: 'Ostatní volitelné mody', type: 'list', adv: true },
     { k: 'rezone_alt', label: 'Záložní složky modpacku', type: 'list', adv: true, tip: 'Použijí se, když hlavní nejde načíst.' },
     { k: 'optional_alt', label: 'Další složky volitelných modů', type: 'list', adv: true },
-    { k: 'seasons_folder', label: 'Jedna složka se všemi sezónami', type: 'list', adv: true, tip: 'Podsložky se Spring/Summer/Autumn/Winter (nebo Jaro/Léto/Podzim/Zima) v názvu.' },
-    { k: 'season_alt', label: 'Záložní složky sezón', type: 'list', adv: true }
   ];
   function srcGet(o, k) { if (k.indexOf('seasons.') === 0) { var s = Array.isArray(o.seasons) ? o.seasons : []; return s[+k.slice(8)] || []; } return o[k]; }
   function srcSet(o, k, v) {
