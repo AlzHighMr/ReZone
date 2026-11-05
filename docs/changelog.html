@@ -47,7 +47,7 @@ body { margin: 0; color: #d8d6d0; font: 16px/1.5 "Source Sans 3", "Segoe UI", Ar
   .ab-in { height: auto; flex-wrap: wrap; padding: 6px 12px; } .ab-tabs { overflow-x: auto; height: 44px; width: 100%; }
   .ab-tabs a { padding: 0 12px; font-size: 16px; } .appbar { position: static; } }
 .lock input { min-width: 0; } @media (max-width: 500px) { .lock { margin: 30px 16px; padding: 24px 20px; } .lock form { flex-wrap: wrap; } .lock form button { flex: 1 1 100%; } .ml-pre { letter-spacing: .2em; } }
-.ab-sub a, .ab-sub button { white-space: nowrap; } @media (max-width: 1280px) { .ab-in { flex-wrap: wrap; height: auto; min-height: 54px; } .ab-sub { flex-wrap: wrap; padding: 6px 0; } } @media (max-width: 900px) { .ab-sub { margin-left: 0; } }
+.ab-sub a, .ab-sub button { white-space: nowrap; } @media (max-width: 1440px) { .ab-in { flex-wrap: wrap; height: auto; min-height: 54px; } .ab-tabs { height: 54px; } .ab-sub { flex-wrap: wrap; padding: 6px 0; } } @media (max-width: 900px) { .ab-sub { margin-left: 0; } }
 </style>
 </head>
 <body>
@@ -56,7 +56,7 @@ body { margin: 0; color: #d8d6d0; font: 16px/1.5 "Source Sans 3", "Segoe UI", Ar
 </div></header>
 <header class="appbar"><div class="ab-in">
   <nav class="ab-tabs" aria-label="Části"><a href="index.html#rezone">Informace</a><a href="index.html#start">Instalace</a><a href="index.html#ovladani">Příručka</a><a href="index.html#db">Databáze</a><a href="testy.html" class="on">Testeři</a></nav>
-  <div class="ab-sub"><a href="testy.html">Test questů</a><a href="changelog.html" class="on">Changelog</a><a href="preklad.html">Překlad</a><button id="logout" hidden title="Zapomenout heslo v tomto prohlížeči">Odhlásit</button></div>
+  <div class="ab-sub"><a href="testy.html">Test questů</a><a href="changelog.html" class="on">Changelog</a><a href="preklad.html">Překlad</a><a href="editor.html" title="Editor pro moderátory (vyžaduje GitHub účet s přístupem)">Editor</a><button id="logout" hidden title="Zapomenout heslo v tomto prohlížeči">Odhlásit</button></div>
 </div></header>
 <section class="lock" id="lock">
   <div class="eb">// Jen pro testery</div>
