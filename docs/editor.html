@@ -571,6 +571,7 @@ function clPage(md) {
     { k: 'image', label: 'Obrázek', type: 'url', tip: 'Přímý odkaz na obrázek (ModDB, Discord, GitHub…).' },
     { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Google Drive (soubor nebo složka), ModDB nebo přímý odkaz. Prázdné = archiv se hledá ve složkách z Odkazů podle názvu složky.' },
     { k: 'link', label: 'Stránka modu', type: 'url', tip: 'ModDB, GitHub… – otevře se z okna INFO v launcheru.' },
+    { k: 'mirrors', label: 'Alternativní odkazy na stejný soubor', type: 'list', tip: 'Když hlavní odkaz nejde (limit Google Drive, výpadek), launcher stáhne stejný soubor odsud. Jeden na řádek: soubor na Google Drive, přímý odkaz (Dropbox, GitHub release…) nebo složka na Drive, ve které je archiv se stejným názvem. Funguje i pro mody z ModDB.' },
     // skupina: mody se stejnou skupinou se vylucuji
     { k: 'group', label: 'Skupina (zapnutý jen jeden)', type: 'text', half: true, w: '40%', tip: 'Ze stejné skupiny může mít hráč zapnutý jen jeden mod – např. „Vegetace“ u trávy a stromů nebo „NPC Models“.' },
     // ModDB
@@ -592,6 +593,7 @@ function clPage(md) {
     { k: 'title', label: 'Název', type: 'text', tip: 'Jen pro přehled, hráč patch v seznamu nevidí.' },
     { k: 'description', label: 'Popis', type: 'area', tip: 'Co patch opravuje (pro moderátory).' },
     { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Prázdné = patch se hledá ve složkách z Odkazů podle názvu složky.' },
+    { k: 'mirrors', label: 'Alternativní odkazy na stejný soubor', type: 'list', tip: 'Když hlavní odkaz nejde (limit Google Drive, výpadek), launcher stáhne stejný soubor odsud. Jeden na řádek: soubor na Google Drive, přímý odkaz (Dropbox, GitHub release…) nebo složka na Drive, ve které je archiv se stejným názvem. Funguje i pro mody z ModDB. U patche s variantami (Spring, Summer…) dej složku na Drive – archiv se v ní najde podle názvu.' },
     { k: 'priority', label: 'Priorita v load orderu', type: 'number', tip: 'Jako číslo v MO2: větší = níž = vyšší priorita. Prázdné = hned pod modem, který patch vyžaduje.' },
     { k: 'after', label: 'Umístit hned pod mod', type: 'text', adv: true },
     { k: 'section', label: 'Umístit na konec sekce', type: 'text', adv: true },
@@ -899,6 +901,7 @@ function clPage(md) {
       else if (seen[key(n)]) errs.push('Název „' + n + '“ je v seznamu dvakrát.');
       seen[key(n)] = 1;
       ['url', 'link', 'image', 'gallery'].forEach(function (k) { if (m[k] && String(m[k]).trim() && !isUrl(m[k])) errs.push((m.title || n) + ': pole „' + k + '“ není odkaz.'); });
+      (Array.isArray(m.mirrors) ? m.mirrors : []).forEach(function (u) { if (String(u).trim() && !isUrl(u)) errs.push((m.title || n) + ': alternativní odkaz „' + u + '“ není odkaz.'); });
       if (m.season) errs.push((m.title || n) + ': sezóny už launcher nepoužívá – u pole Sezóna dej „— žádná —“ a kategorii „Vegetace“.');
       var c = {}; Object.keys(m).forEach(function (k) { if (k !== '__new' && k !== '__patch') c[k] = m[k]; });
       c = clean(c, ALL_MOD_TYPES); c.name = n; return c;

@@ -20,7 +20,7 @@ variantu patche se stejným slovem (`Vasgen CCon Patch Spring`). Patch se stáhn
 jde hned pod ni (přepíše ji).
 
 ```json
-{ "name": "[Huh_] CCon Grass n Trees - Jaro", "title": "C-Con Grass & Trees - Jaro",
+{ "name": "CCon Grass n Trees", "title": "C-Con Grass & Trees",
   "category": "Vegetace", "group": "Vegetace", "priority": 216,
   "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
   "requires": ["Vasgen CCon Patch"] },
@@ -53,6 +53,7 @@ Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen
 | `fomod` | ne | Volby instalátoru FOMOD – seznam názvů možností (stačí část názvu), např. `["2K", "Rotten Summer"]`. Launcher instalátor FOMOD projde sám: bez `fomod` vybere povinné a doporučené volby a ve skupinách „vyber jednu“ první možnost. Když instalátor projít nejde, archiv dá do MO2 (Downloads). |
 | `file`, `size` | ne | Jen u modů z ModDB: přesný název archivu na ModDB (např. `ATO_5.7z`) a velikost v bajtech. Když ModDB launcheru stažení nepovolí, hráč archiv stáhne v prohlížeči do Stažených souborů a launcher ho tam podle `file` najde (stejně jako Anomaly). |
 | `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). `url` může být i **odkaz na GitHub** (repozitář nebo release – stáhne se archiv z nejnovějšího releasu, aktualizace podle releasu) nebo **stránka addonu na ModDB** – launcher stáhne aktuální soubor a verzi hlídá sám (`version` netřeba). Mody s instalátorem (**FOMOD**) launcher nainstaluje sám (viz `fomod`). |
+| `mirrors` | ne | **Alternativní odkazy na stejný soubor** (seznam). Když hlavní zdroj selže (limit Google Drive, výpadek, ModDB nepovolí stažení), launcher zkusí tyhle. Soubor na Google Drive, přímý odkaz (Dropbox, GitHub release…) nebo **složka na Drive**, ve které je archiv se stejným názvem. Funguje u modů z Drive, z `url` i z ModDB a u patchů; u patche s variantami (`Vasgen CCon Patch Spring`…) dej složku. |
 
 Priorita se použije, když hráč mod stáhne přes launcher. Mody, které už má, launcher nepřesouvá.
 Čísla nemusí jít po jedné – nech si mezi nimi mezery (100, 150, 200…), ať jde nový mod vložit mezi.
