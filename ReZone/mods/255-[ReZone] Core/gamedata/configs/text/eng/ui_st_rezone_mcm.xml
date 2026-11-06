@@ -909,6 +909,24 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Burer, karlik and psy dog.</text>
 	</string>
+	<string id="ui_mcm_rz_fx_hit_info">
+		<text>Hits on the player: the blood direction marker showing where a bullet came from, and the camera kick (aim punch) when you are hit.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark">
+		<text>Disable blood hit direction marker</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark_desc">
+		<text>The blood marker showing the hit direction disappears. Hit sound, damage and blood effects stay.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch">
+		<text>Disable camera kick on hit (aim punch)</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch_desc">
+		<text>Camera and weapon no longer jerk when you are hit by a bullet. The red screen flash stays.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hit_note">
+		<text>Camera kick applies right away. The marker disappears after loading a save or changing level (with both turned off it disappears right away). Requires modded exes.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_note">
 		<text>Applies to monsters and radiation fields loaded after the change - most reliably after loading a save. Requires modded exes. Game files are not changed.</text>
 	</string>

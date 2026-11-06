@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.18"
+VERSION = "2.5.19"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -382,6 +382,11 @@ local function ot_fx()
 		check("psy_other", false, "rz_fx_psy_other"),
 		line("l2"),
 		desc("n", "ui_mcm_rz_fx_note", CLR_NOTE),
+		line("l3"),
+		desc("dh", "ui_mcm_rz_fx_hit_info"),
+		check("hitmark", false, "rz_fx_hitmark"),
+		check("aimpunch", false, "rz_fx_aimpunch"),
+		desc("nh", "ui_mcm_rz_fx_hit_note", CLR_NOTE),
 	})
 end
 

@@ -909,6 +909,24 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Burer, karlík a psí pes.</text>
 	</string>
+	<string id="ui_mcm_rz_fx_hit_info">
+		<text>Zásahy hráèe: krvavá smìrovka, která ukazuje, odkud tì støela zasáhla, a cuknutí kamery (aim punch) pøi zásahu.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark">
+		<text>Vypnout krvavou smìrovku zásahu</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark_desc">
+		<text>Zmizí krvavý ukazatel smìru zásahu na obrazovce. Zvuk zásahu, poškození i krvavé efekty zùstanou.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch">
+		<text>Vypnout cuknutí kamery pøi zásahu</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch_desc">
+		<text>Kamera a zbraò sebou pøi zásahu støelou necuknou. Èervený záblesk obrazu zùstane.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hit_note">
+		<text>Cuknutí kamery platí hned. Smìrovka zmizí po naètení uložené hry nebo pøechodu do jiné lokace (když vypneš obojí, zmizí hned). Vyžaduje modded exes.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_note">
 		<text>Projeví se u monster a radiaèních polí, která se naètou po zmìnì – nejjistìji po naètení uložené hry. Vyžaduje modded exes. Soubory hry se nemìní.</text>
 	</string>

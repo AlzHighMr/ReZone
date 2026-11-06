@@ -1,0 +1,109 @@
+--[[
+	ReZone MCM - zasahy hrace: krvava smerovka zasahu a cuknuti kamery (aim punch)
+
+	Engine pri zasahu hrace strelou (CActor::HitMark) udela dve veci:
+	  - nakresli krvavou smerovku zasahu na HUD - textura z [hud_hitmark] hit_mark_texture (system.ltx)
+	  - prida kamerovy efekt [effector_fire_hit_0..7] cam_eff_name (postprocess.ltx) = cuknuti kamery
+	    podle strany, odkud zasah prisel (+ cerveny zablesk pp_eff_name, ten zustava)
+
+	Smerovka:   textura -> ui\ui_empty (prazdna textura hry). HUD si texturu nacte pri nacteni urovne,
+	            takze se projevi po nacteni savu / prechodu do jine lokace.
+	            Kdyz je vypnuta smerovka i cuknuti, vypne se navic cela HUD znacka zasahu hned
+	            (db.actor:disable_hit_marks), protoze tim zmizi obe veci zaroven.
+	Cuknuti:    cam_eff_name -> camera_effects\empty.anm (prazdna animace hry). Engine cte efekt
+	            pri kazdem zasahu, takze plati hned.
+	Hodnoty se meni jen v pameti hry (soubory zustanou), puvodni se pamatuji a pri vypnuti volby vrati.
+	Vyzaduje modded exes (ini_sys:set_readonly / w_string).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_fx"
+
+local HUD_SEC, HUD_KEY, HUD_OFF = "hud_hitmark", "hit_mark_texture", "ui\\ui_empty"
+local CAM_KEY, CAM_OFF = "cam_eff_name", "camera_effects\\empty.anm"
+local EMPTY = "<rz_empty>"
+
+local cfg = { mark = false, punch = false }
+local warned = false
+
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and true or false
+end
+
+local function write(sec, key, v)
+	local ok, err = pcall(ini_sys.w_string, ini_sys, sec, key, v, "")
+	if not ok then core.warn("zasahy: zapis [%s] %s: %s", sec, key, tostring(err)) end
+	return ok
+end
+
+-- want = true: nastavit off_value (puvodni si ulozit), false: vratit puvodni
+local function set(sec, key, off_value, want)
+	if not ini_sys:section_exist(sec) then return end
+	local okey = "rz_orig_" .. key
+	local has = ini_sys:line_exist(sec, okey)
+	local cur = ini_sys:line_exist(sec, key) and (ini_sys:r_string_ex(sec, key) or "") or false
+	if want then
+		if cur == false or cur == off_value then return end
+		if not has then write(sec, okey, cur == "" and EMPTY or cur) end
+		write(sec, key, off_value)
+	elseif has then
+		local ov = ini_sys:r_string_ex(sec, okey) or EMPTY
+		if ov == EMPTY then ov = "" end
+		if cur ~= ov then write(sec, key, ov) end
+	end
+end
+
+local function apply_ini()
+	if not can_write() then
+		if (cfg.mark or cfg.punch) and not warned then
+			warned = true
+			core.warn("zasahy: tato verze exe neumi menit nastaveni za behu (chybi modded exes)")
+		end
+		return
+	end
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		set(HUD_SEC, HUD_KEY, HUD_OFF, cfg.mark)
+		for i = 0, 7 do set("effector_fire_hit_" .. i, CAM_KEY, CAM_OFF, cfg.punch) end
+	end)
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("zasahy: %s", tostring(err)) end
+end
+
+-- obe vypnute: celou HUD znacku zasahu vypnout hned (hra ji po cutscenach zapina zpet -> hlidat)
+local marks_off = false
+local function apply_actor()
+	if not db.actor then return end
+	local want = cfg.mark and cfg.punch
+	if want or marks_off then
+		pcall(db.actor.disable_hit_marks, db.actor, want)
+		marks_off = want
+	end
+end
+
+local last = 0
+local function on_update()
+	if not (cfg.mark and cfg.punch) then return end
+	local t = time_global()
+	if t < last then return end
+	last = t + 1000
+	if not (db.actor and db.actor:disable_hit_marks()) then apply_actor() end
+end
+
+function load()
+	local g = core.page(PAGE)
+	cfg.mark  = g("hitmark") == true
+	cfg.punch = g("aimpunch") == true
+	apply_ini()
+	apply_actor()
+	core.log("zasahy: smerovka %s, cuknuti %s", cfg.mark and "vyp" or "zap", cfg.punch and "vyp" or "zap")
+end
+
+function on_game_start()
+	core.on_change(load)
+	RegisterScriptCallback("actor_on_first_update", load)
+	RegisterScriptCallback("actor_on_update", on_update)
+	load()	-- hned, at se smerovka nacte uz s nastavenou texturou
+end

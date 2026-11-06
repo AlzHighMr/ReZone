@@ -909,6 +909,24 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Бюрер, карлик и пси-собака.</text>
 	</string>
+	<string id="ui_mcm_rz_fx_hit_info">
+		<text>Попадания по игроку: кровавый указатель направления, откуда прилетела пуля, и рывок камеры (aim punch) при попадании.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark">
+		<text>Отключить кровавый указатель попадания</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hitmark_desc">
+		<text>Пропадает кровавый указатель направления попадания. Звук, урон и эффекты крови остаются.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch">
+		<text>Отключить рывок камеры при попадании</text>
+	</string>
+	<string id="ui_mcm_rz_fx_aimpunch_desc">
+		<text>Камера и оружие не дёргаются при попадании пули. Красная вспышка экрана остаётся.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_hit_note">
+		<text>Рывок камеры действует сразу. Указатель пропадает после загрузки сохранения или перехода на другую локацию (если отключить оба - сразу). Требуются modded exes.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_note">
 		<text>Действует на монстров и радиационные поля, загруженные после изменения - надёжнее всего после загрузки сохранения. Требуются modded exes. Файлы игры не меняются.</text>
 	</string>
