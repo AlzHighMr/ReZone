@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<game_dialogs>
+<!-- ReZone - selekce artefaktu (rezone_af_breed.script). Registrace pres DLTX. -->
+
+    <dialog id="rz_breed_dialog">
+        <precondition>rezone_af_breed.is_breeder</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>st_rz_brd_dlg_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <script_text>rezone_af_breed.text_intro</script_text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+                <next>18</next>
+                <next>19</next>
+                <next>20</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="11">
+                <precondition>rezone_af_breed.slot_1</precondition>
+                <script_text>rezone_af_breed.slot_text_1</script_text>
+                <action>rezone_af_breed.select_1</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="12">
+                <precondition>rezone_af_breed.slot_2</precondition>
+                <script_text>rezone_af_breed.slot_text_2</script_text>
+                <action>rezone_af_breed.select_2</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="13">
+                <precondition>rezone_af_breed.slot_3</precondition>
+                <script_text>rezone_af_breed.slot_text_3</script_text>
+                <action>rezone_af_breed.select_3</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="14">
+                <precondition>rezone_af_breed.slot_4</precondition>
+                <script_text>rezone_af_breed.slot_text_4</script_text>
+                <action>rezone_af_breed.select_4</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="15">
+                <precondition>rezone_af_breed.slot_5</precondition>
+                <script_text>rezone_af_breed.slot_text_5</script_text>
+                <action>rezone_af_breed.select_5</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="16">
+                <precondition>rezone_af_breed.slot_6</precondition>
+                <script_text>rezone_af_breed.slot_text_6</script_text>
+                <action>rezone_af_breed.select_6</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="17">
+                <precondition>rezone_af_breed.slot_7</precondition>
+                <script_text>rezone_af_breed.slot_text_7</script_text>
+                <action>rezone_af_breed.select_7</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="18">
+                <precondition>rezone_af_breed.slot_8</precondition>
+                <script_text>rezone_af_breed.slot_text_8</script_text>
+                <action>rezone_af_breed.select_8</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="19">
+                <precondition>rezone_af_breed.slot_9</precondition>
+                <script_text>rezone_af_breed.slot_text_9</script_text>
+                <action>rezone_af_breed.select_9</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="20">
+                <precondition>rezone_af_breed.slot_10</precondition>
+                <script_text>rezone_af_breed.slot_text_10</script_text>
+                <action>rezone_af_breed.select_10</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="29">
+                <text>st_rz_brd_dlg_29</text>
+            </phrase>
+            <phrase id="30">
+                <script_text>rezone_af_breed.text_offer</script_text>
+                <next>36</next>
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+                <next>35</next>
+                <next>39</next>
+            </phrase>
+            <phrase id="36">
+                <precondition>rezone_af_breed.can_tier</precondition>
+                <script_text>rezone_af_breed.opt_tier</script_text>
+                <action>rezone_af_breed.breed_tier</action>
+                <next>40</next>
+            </phrase>
+            <phrase id="31">
+                <precondition>rezone_af_breed.can_rad</precondition>
+                <script_text>rezone_af_breed.opt_rad</script_text>
+                <action>rezone_af_breed.breed_rad</action>
+                <next>40</next>
+            </phrase>
+            <phrase id="32">
+                <precondition>rezone_af_breed.can_cw</precondition>
+                <script_text>rezone_af_breed.opt_cw</script_text>
+                <action>rezone_af_breed.breed_cw</action>
+                <next>40</next>
+            </phrase>
+            <phrase id="33">
+                <precondition>rezone_af_breed.can_reg</precondition>
+                <script_text>rezone_af_breed.opt_reg</script_text>
+                <action>rezone_af_breed.breed_reg</action>
+                <next>40</next>
+            </phrase>
+            <phrase id="34">
+                <precondition>rezone_af_breed.can_next</precondition>
+                <script_text>rezone_af_breed.opt_next</script_text>
+                <action>rezone_af_breed.breed_next</action>
+                <next>40</next>
+            </phrase>
+            <phrase id="35">
+                <precondition>rezone_af_breed.no_money</precondition>
+                <text>st_rz_brd_dlg_35</text>
+            </phrase>
+            <phrase id="39">
+                <text>st_rz_brd_dlg_39</text>
+            </phrase>
+            <phrase id="40">
+                <script_text>rezone_af_breed.text_done</script_text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+</game_dialogs>

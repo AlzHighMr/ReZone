@@ -1,0 +1,51 @@
+--[[
+	ReZone MCM - odolnost mutantu
+	"Zdravi" se resi delenim prichoziho poskozeni (2.0 = vydrzi dvakrat vic).
+	Plati okamzite i pro mutanty ve hre, prezije save/load, nic se nedeje pri spawnu.
+	Vypnuto = handler se odregistruje.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_muthp"
+local EPS = 0.0001
+
+local by_species = {}
+local registered = false
+
+local function monster_on_before_hit(monster, shit, bone_id, flags)
+	if not (shit and shit.power and shit.power > 0) then return end
+	local s = core.species_of(monster)
+	local m = s and by_species[s] or 1
+	if math.abs(m - 1) > EPS then
+		shit.power = shit.power / m
+	end
+end
+
+local function set_registered(on)
+	if on == registered then return end
+	registered = on
+	if on then
+		RegisterScriptCallback("monster_on_before_hit", monster_on_before_hit)
+	else
+		UnregisterScriptCallback("monster_on_before_hit", monster_on_before_hit)
+	end
+	core.log("odolnost mutantu: %s", on and "zapnuto" or "vypnuto")
+end
+
+function load()
+	local g = core.page(PAGE)
+	local all = g("all") or 1
+	local changed = false
+	by_species = {}
+	for _, s in ipairs(rezone_mcm.ALL_SPECIES) do
+		local m = (g(s) or 1) * all
+		by_species[s] = m
+		if math.abs(m - 1) > EPS then changed = true end
+	end
+	set_registered(g("enabled") == true and changed)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

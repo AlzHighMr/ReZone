@@ -1,0 +1,44 @@
+; =====================================================================================
+; ReZone MCM - odkazy na nastaveni jinych modu
+; =====================================================================================
+; Kazda sekce = jeden odkaz. Odkaz se zobrazi jen kdyz cilovy mod v MCM existuje.
+; Nove odkazy pridavej radsi DLTX souborem vedle tohoto (stejna slozka):
+;     configs\rezone\mod_rezone_mcm_links_<nazev>.ltx
+;
+; Klice:
+;   tab    = gameplay | health | other      ; na ktere zalozce se odkaz objevi (Odkazy)
+;   target = cesta v MCM                    ; stranka (napr. ztc/faction_tweaks) nebo volba (napr. mod/stranka/volba)
+;   kind   = page | value                   ; page = tlacitko "Otevrit", value = primo hodnota ciziho modu
+;   label  = text nad odkazem               ; ID retezce z XML nebo rovnou text (bez diakritiky je jistota)
+;   order  = cislo                          ; poradi (mensi = vys), vychozi 100
+;   hint   = ID retezce bez "ui_mcm_"        ; volitelny vlastni popisek tlacitka/hodnoty
+;
+; Pro kind = value navic:
+;   type    = track | check | list
+;   min, max, step, prec                    ; pro track (musi sedet s puvodnim modem)
+;   content = 1,str_a;2,str_b               ; pro list - hodnoty a ID retezcu "ui_mcm_lst_..." z puvodniho modu
+;   def     = vychozi hodnota, kdyz cizi mod hodnotu jeste nema
+;
+; Cestu najdes v axr_options.ltx (sekce [mcm]) - je to cast pred " = ".
+; Napr. radek "demonized_cdm/wound = 0.6" ma cestu demonized_cdm/wound.
+; =====================================================================================
+
+; --- PRIKLAD: tlacitko, ktere otevre stranku jineho modu (odkomentuj a uprav)
+;[rz_link_example_page]
+;tab    = gameplay
+;target = nazev_modu
+;label  = Muj mod - nastaveni
+;order  = 10
+
+; --- PRIKLAD: primo zrcadlena hodnota jineho modu (odkomentuj a uprav)
+;[rz_link_example_value]
+;tab    = health
+;kind   = value
+;target = nejaky_mod/stranka/nasobic
+;label  = Nejaky mod - nasobic
+;type   = track
+;min    = 0
+;max    = 2
+;step   = 0.05
+;def    = 1
+

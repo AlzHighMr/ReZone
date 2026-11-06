@@ -1,0 +1,369 @@
+; ReZone Ballistics - k_ap of ammo for bullets that hit the PLAYER (engine formula vs ReZone Armor).
+; NPC damage from the player is scripted (rezone_ballistics.script) and uses configs\rezone\ammo.ltx.
+; Mapped from Arti AP to the GBO scale the armor rework was tuned for (5.45 FMJ 0.25, 7N10 0.47, 7.62x54 AP 0.65, 12.7 AP 1.5).
+
+![ammo_23x75_shrapnel]
+k_ap = 0.195 ; arti 0.12
+
+![ammo_23x75_barrikada]
+k_ap = 0.328 ; arti 0.195
+
+![ammo_20x70_buck]
+k_ap = 0.06 ; arti 0.02
+
+![ammo_23_eco]
+k_ap = 0.045 ; arti 0.01
+
+![ammo_9x21_sp10]
+k_ap = 0.357 ; arti 0.205
+
+![ammo_338_federal]
+k_ap = 0.65 ; arti 0.305
+
+![ammo_4.6x30_fmj]
+k_ap = 0.21 ; arti 0.135
+
+![ammo_4.6x30_fmj_bad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_50_bmg]
+k_ap = 1.9 ; arti 0.335
+
+![ammo_50_bmg_bad]
+k_ap = 1.9 ; arti 0.399
+
+![ammo_12x76_bull]
+k_ap = 0.525 ; arti 0.25
+
+![ammo_9x18_fmj]
+k_ap = 0.12 ; arti 0.06
+
+![ammo_9x18_fmj_bad]
+k_ap = 0.124 ; arti 0.0625
+
+![ammo_9x18_pmm]
+k_ap = 0.104 ; arti 0.049
+
+![ammo_9x18_pmm_bad]
+k_ap = 0.133 ; arti 0.069
+
+![ammo_9x18_ap]
+k_ap = 0.21 ; arti 0.135
+
+![ammo_9x18_ap_bad]
+k_ap = 0.343 ; arti 0.2
+
+![ammo_9x19_fmj]
+k_ap = 0.17 ; arti 0.095
+
+![ammo_9x19_fmj_bad]
+k_ap = 0.185 ; arti 0.11
+
+![ammo_9x19_pbp]
+k_ap = 0.113 ; arti 0.055
+
+![ammo_9x19_pbp_bad]
+k_ap = 0.175 ; arti 0.1
+
+![ammo_9x19_ap]
+k_ap = 0.328 ; arti 0.195
+
+![ammo_9x19_ap_bad]
+k_ap = 0.413 ; arti 0.225
+
+![ammo_11.43x23_fmj]
+k_ap = 0.163 ; arti 0.09
+
+![ammo_11.43x23_fmj_bad]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_11.43x23_hydro]
+k_ap = 0.074 ; arti 0.029
+
+![ammo_11.43x23_hydro_bad]
+k_ap = 0.133 ; arti 0.069
+
+![ammo_357_hp_mag]
+k_ap = 0.2 ; arti 0.125
+
+![ammo_357_hp_mag_bad]
+k_ap = 0.34 ; arti 0.199
+
+![ammo_7.62x25_p]
+k_ap = 0.215 ; arti 0.14
+
+![ammo_7.62x25_p_bad]
+k_ap = 0.24 ; arti 0.165
+
+![ammo_7.62x25_ps]
+k_ap = 0.141 ; arti 0.075
+
+![ammo_7.62x25_ps_bad]
+k_ap = 0.224 ; arti 0.149
+
+![ammo_5.7x28_ss190]
+k_ap = 0.24 ; arti 0.165
+
+![ammo_5.7x28_ss190_bad]
+k_ap = 0.413 ; arti 0.225
+
+![ammo_5.7x28_ss195]
+k_ap = 0.175 ; arti 0.1
+
+![ammo_5.7x28_ss195_bad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_9x18_fmj_verybad]
+k_ap = 0.12 ; arti 0.06
+
+![ammo_9x18_pmm_verybad]
+k_ap = 0.104 ; arti 0.049
+
+![ammo_9x18_ap_verybad]
+k_ap = 0.21 ; arti 0.135
+
+![ammo_9x19_fmj_verybad]
+k_ap = 0.17 ; arti 0.095
+
+![ammo_9x19_pbp_verybad]
+k_ap = 0.113 ; arti 0.055
+
+![ammo_9x19_ap_verybad]
+k_ap = 0.328 ; arti 0.195
+
+![ammo_5.7x28_ss190_verybad]
+k_ap = 0.24 ; arti 0.165
+
+![ammo_5.7x28_ss195_verybad]
+k_ap = 0.175 ; arti 0.1
+
+![ammo_7.62x25_p_verybad]
+k_ap = 0.215 ; arti 0.14
+
+![ammo_7.62x25_ps_verybad]
+k_ap = 0.141 ; arti 0.075
+
+![ammo_11.43x23_fmj_verybad]
+k_ap = 0.163 ; arti 0.09
+
+![ammo_11.43x23_hydro_verybad]
+k_ap = 0.133 ; arti 0.069
+
+![ammo_357_hp_mag_verybad]
+k_ap = 0.34 ; arti 0.199
+
+![ammo_5.45x39_fmj]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_5.45x39_fmj_bad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_5.45x39_ep]
+k_ap = 0.195 ; arti 0.12
+
+![ammo_5.45x39_ep_bad]
+k_ap = 0.225 ; arti 0.15
+
+![ammo_5.45x39_ap]
+k_ap = 0.47 ; arti 0.245
+
+![ammo_5.45x39_ap_bad]
+k_ap = 0.636 ; arti 0.295
+
+![ammo_5.56x45_fmj]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_5.56x45_fmj_bad]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_5.56x45_ss190]
+k_ap = 0.18 ; arti 0.105
+
+![ammo_5.56x45_ss190_bad]
+k_ap = 0.2 ; arti 0.125
+
+![ammo_5.56x45_ap]
+k_ap = 0.47 ; arti 0.245
+
+![ammo_5.56x45_ap_bad]
+k_ap = 0.594 ; arti 0.265
+
+![ammo_7.62x39_fmj]
+k_ap = 0.3 ; arti 0.185
+
+![ammo_7.62x39_fmj_bad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_7.62x39_ap]
+k_ap = 0.58 ; arti 0.255
+
+![ammo_7.62x39_ap_bad]
+k_ap = 0.608 ; arti 0.275
+
+![ammo_9x39_pab9]
+k_ap = 0.357 ; arti 0.205
+
+![ammo_9x39_pab9_bad]
+k_ap = 0.47 ; arti 0.245
+
+![ammo_9x39_ap]
+k_ap = 0.615 ; arti 0.28
+
+![ammo_9x39_ap_bad]
+k_ap = 0.608 ; arti 0.275
+
+![ammo_5.45x39_fmj_verybad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_5.45x39_ep_verybad]
+k_ap = 0.225 ; arti 0.15
+
+![ammo_5.45x39_ap_verybad]
+k_ap = 0.636 ; arti 0.295
+
+![ammo_5.56x45_fmj_verybad]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_5.56x45_ss190_verybad]
+k_ap = 0.2 ; arti 0.125
+
+![ammo_5.56x45_ap_verybad]
+k_ap = 0.594 ; arti 0.265
+
+![ammo_9x39_pab9_verybad]
+k_ap = 0.47 ; arti 0.245
+
+![ammo_9x39_ap_verybad]
+k_ap = 0.608 ; arti 0.275
+
+![ammo_7.62x39_fmj_verybad]
+k_ap = 0.25 ; arti 0.175
+
+![ammo_7.62x39_ap_verybad]
+k_ap = 0.608 ; arti 0.275
+
+![ammo_12x70_buck]
+k_ap = 0.068 ; arti 0.025
+
+![ammo_12x70_buck_bad]
+k_ap = 0.105 ; arti 0.05
+
+![ammo_12x76_zhekan]
+k_ap = 0.175 ; arti 0.1
+
+![ammo_12x76_zhekan_bad]
+k_ap = 0.343 ; arti 0.2
+
+![ammo_12x76_dart]
+k_ap = 0.175 ; arti 0.1
+
+![ammo_12x76_dart_bad]
+k_ap = 0.068 ; arti 0.025
+
+![ammo_12x70_buck_verybad]
+k_ap = 0.105 ; arti 0.05
+
+![ammo_12x76_zhekan_verybad]
+k_ap = 0.343 ; arti 0.2
+
+![ammo_12x76_dart_verybad]
+k_ap = 0.068 ; arti 0.025
+
+![ammo_7.62x54_7h1]
+k_ap = 0.3 ; arti 0.185
+
+![ammo_7.62x54_7h1_bad]
+k_ap = 0.3 ; arti 0.185
+
+![ammo_7.62x54_7h14]
+k_ap = 0.22 ; arti 0.145
+
+![ammo_7.62x54_7h14_bad]
+k_ap = 0.34 ; arti 0.199
+
+![ammo_7.62x54_ap]
+k_ap = 0.65 ; arti 0.305
+
+![ammo_7.62x54_ap_bad]
+k_ap = 0.697 ; arti 0.335
+
+![ammo_pkm_100]
+k_ap = 0.3 ; arti 0.185
+
+![ammo_pkm_100_bad]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_7.62x51_fmj]
+k_ap = 0.413 ; arti 0.225
+
+![ammo_7.62x51_fmj_bad]
+k_ap = 0.343 ; arti 0.2
+
+![ammo_7.62x51_ap]
+k_ap = 0.65 ; arti 0.305
+
+![ammo_7.62x51_ap_bad]
+k_ap = 0.792 ; arti 0.395
+
+![ammo_7.92x33_fmj]
+k_ap = 0.328 ; arti 0.195
+
+![ammo_7.92x33_fmj_bad]
+k_ap = 0.65 ; arti 0.305
+
+![ammo_7.92x33_ap]
+k_ap = 0.22 ; arti 0.145
+
+![ammo_7.92x33_ap_bad]
+k_ap = 0.798 ; arti 0.399
+
+![ammo_12.7x55_fmj]
+k_ap = 0.413 ; arti 0.225
+
+![ammo_12.7x55_fmj_bad]
+k_ap = 0.58 ; arti 0.255
+
+![ammo_12.7x55_ap]
+k_ap = 1.5 ; arti 0.305
+
+![ammo_12.7x55_ap_bad]
+k_ap = 1.2 ; arti 0.049
+
+![ammo_magnum_300]
+k_ap = 1.3 ; arti 0.335
+
+![ammo_magnum_300_bad]
+k_ap = 1.3 ; arti 0.399
+
+![ammo_7.92x33_fmj_verybad]
+k_ap = 0.65 ; arti 0.305
+
+![ammo_7.92x33_ap_verybad]
+k_ap = 0.798 ; arti 0.399
+
+![ammo_7.62x51_fmj_verybad]
+k_ap = 0.343 ; arti 0.2
+
+![ammo_7.62x51_ap_verybad]
+k_ap = 0.792 ; arti 0.395
+
+![ammo_pkm_100_verybad]
+k_ap = 0.23 ; arti 0.155
+
+![ammo_7.62x54_7h1_verybad]
+k_ap = 0.3 ; arti 0.185
+
+![ammo_7.62x54_ap_verybad]
+k_ap = 0.697 ; arti 0.335
+
+![ammo_7.62x54_7h14_verybad]
+k_ap = 0.34 ; arti 0.199
+
+![ammo_12.7x55_fmj_verybad]
+k_ap = 0.58 ; arti 0.255
+
+![ammo_12.7x55_ap_verybad]
+k_ap = 1.5 ; arti 0.049
+
+![ammo_magnum_300_verybad]
+k_ap = 1.3 ; arti 0.399

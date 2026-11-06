@@ -1,0 +1,87 @@
+--[[
+	ReZone MCM - opotrebeni obleku a helem (Gameplay > Balistika > Opotrebeni obleku a helem)
+
+	Kolik stavu oblek / helma ztrati pri zasahu, urcuje sekce immunities_sect predmetu.
+	Modul hodnoty vynasobi nasobicem z MCM (1 = vanilla, 0.33 = trikrat pomalejsi opotrebeni)
+	v pameti hry - soubory na disku zustanou beze zmeny. Nahrazuje DLTX
+	"armor_degradation_reduction" (vsechno x0.33 natvrdo).
+	Puvodni hodnoty si pamatuje primo v pameti hry (klice rz_orig_*), takze zmena funguje
+	i opakovane a po nacteni savu. Plati pro obleky a helmy nactene potom (nejjisteji po
+	nacteni savu). Vyzaduje modded exes (ini_sys:w_string).
+--]]
+
+local core = rezone_core
+local PATH = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_ball/wear"
+local CLASSES = { EQU_STLK = true, E_STLK = true, EQU_HLMET = true, E_HLMET = true }
+local KEYS = { "burn_immunity", "strike_immunity", "shock_immunity", "wound_immunity", "radiation_immunity",
+	"telepatic_immunity", "chemical_burn_immunity", "explosion_immunity", "fire_wound_immunity" }
+local MARK_SEC, MARK_KEY = "actor_condition", "rz_wear_mult"   -- znacka: jaky nasobic je ted v pameti
+
+local warned = false
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and true or false
+end
+
+local sects = nil
+local function collect()
+	if sects then return sects end
+	sects = {}
+	local seen = {}
+	ini_sys:section_for_each(function(sec)
+		local cls = ini_sys:r_string_ex(sec, "class")
+		if cls and CLASSES[cls] then
+			local im = ini_sys:r_string_ex(sec, "immunities_sect")
+			if im and not seen[im] and ini_sys:section_exist(im) then
+				seen[im] = true
+				sects[#sects + 1] = im
+			end
+		end
+		return false
+	end)
+	return sects
+end
+
+local function apply(mult)
+	local cur = ini_sys:section_exist(MARK_SEC) and tonumber(ini_sys:r_string_ex(MARK_SEC, MARK_KEY)) or 1
+	if math.abs(cur - mult) < 0.0001 then return end
+	if not can_write() then
+		if not warned then core.warn("opotrebeni: tato verze exe neumi menit hodnoty za behu (chybi modded exes)") end
+		warned = true
+		return
+	end
+	local n = 0
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		for _, sec in ipairs(collect()) do
+			for _, k in ipairs(KEYS) do
+				if ini_sys:line_exist(sec, k) then
+					local okey = "rz_orig_" .. k
+					local orig = tonumber(ini_sys:r_string_ex(sec, okey))
+					if not orig then
+						orig = tonumber(ini_sys:r_string_ex(sec, k)) or 0
+						ini_sys:w_string(sec, okey, tostring(orig), "")
+					end
+					ini_sys:w_string(sec, k, string.format("%.6f", orig * mult), "")
+					n = n + 1
+				end
+			end
+		end
+		ini_sys:w_string(MARK_SEC, MARK_KEY, tostring(mult), "")
+	end)
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("opotrebeni: %s", tostring(err)) end
+	core.log("opotrebeni obleku a helem: x%.2f (%d hodnot)", mult, n)
+end
+
+function load()
+	local m = tonumber(core.get(PATH)) or 1
+	if m < 0 then m = 0 end
+	apply(m)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()		-- hned, pred nactenim predmetu z ulozene hry
+end

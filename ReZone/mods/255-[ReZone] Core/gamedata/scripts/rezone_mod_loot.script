@@ -1,0 +1,138 @@
+--[[
+	ReZone MCM - stav koristi z mrtvol (zbrane, armory, helmy) a mnozstvi munice
+	Napad: Configurable loot condition (Diphenhydramine). Vlastni kod:
+	- neprepisuje death_manager.script, jen obali jeho funkce (funguje s jinymi upravami)
+	- misto 36 posuvniku: rozsah pro nejnizsi a nejvyssi hodnost, mezi nimi plynule
+	- zombie zvlast, munice nasobicem; vypnuto = vanilla
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_loot"
+
+RANKS = { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
+local RANK_IDX = {}
+for i, r in ipairs(RANKS) do RANK_IDX[r] = i end
+
+local cfg = { on = false }
+local cur_comm = nil		-- komunita NPC, ktere se prave zpracovava (kvuli zombie)
+local in_ammo = false		-- jsme uvnitr funkce, ktera vytvari munici z mrtvoly
+
+local function lerp(a, b, t) return a + (b - a) * t end
+
+-- rozsah (min, max) v procentech pro hodnost; kind = "w" zbrane, "o" armory a helmy
+local function range_for(kind, rank, comm)
+	if comm == "zombied" then
+		return cfg[kind .. "_zmin"], cfg[kind .. "_zmax"]
+	end
+	local i = RANK_IDX[rank] or 1
+	local t = (i - 1) / (#RANKS - 1)
+	local lo = lerp(cfg[kind .. "_lo_min"], cfg[kind .. "_hi_min"], t)
+	local hi = lerp(cfg[kind .. "_lo_max"], cfg[kind .. "_hi_max"], t)
+	if hi < lo then hi = lo end
+	return lo, hi
+end
+
+local function roll(lo, hi)
+	return clamp(math.random(math.floor(lo + 0.5), math.floor(hi + 0.5)), 1, 100) / 100
+end
+
+-- ---------------------------------------------------------------- patch
+local patched = false
+local function patch()
+	if patched then return end
+	local dm = death_manager
+	if not (dm and dm.set_weapon_drop_condition and dm.get_condition_by_rank) then
+		core.warn("korist: death_manager nema ocekavane funkce, stranka Korist nic nedela")
+		return
+	end
+	patched = true
+
+	-- zbrane: puvodni funkce nastavi stav a vytvori munici; stav prepiseme
+	local orig_wpn = dm.set_weapon_drop_condition
+	dm.set_weapon_drop_condition = function(npc, itm)
+		in_ammo = true
+		local ok, err = pcall(orig_wpn, npc, itm)
+		in_ammo = false
+		if not ok then core.warn("korist: %s", tostring(err)) end
+		if cfg.on and npc and itm then
+			local rank = ranks.get_obj_rank_name(npc)
+			local lo, hi = range_for("w", rank, npc:character_community())
+			itm:set_condition(roll(lo, hi))
+		end
+	end
+
+	-- munice navic z mrtvoly
+	if dm.try_spawn_ammo then
+		local orig_ammo = dm.try_spawn_ammo
+		dm.try_spawn_ammo = function(npc, ...)
+			in_ammo = true
+			local ok, r = pcall(orig_ammo, npc, ...)
+			in_ammo = false
+			if not ok then core.warn("korist: %s", tostring(r)) end
+			return r
+		end
+	end
+
+	-- alife_create_item jen pro death_manager (promenna modulu prekryje globalni funkci)
+	local g_create = rawget(dm, "alife_create_item") or _G.alife_create_item	-- zachovat i upravu z rezone_ammo
+	dm.alife_create_item = function(sec, obj, t, ...)
+		if cfg.on and in_ammo and t and t.ammo and sec then
+			if cfg.no_special and sec:find("_bad$") and ini_sys:section_exist(sec:sub(1, -5)) then
+				sec = sec:sub(1, -5)
+			end
+			if math.abs(cfg.ammo - 1) > 0.001 then
+				t.ammo = math.max(1, math.floor(t.ammo * cfg.ammo + 0.5))
+			end
+		end
+		return g_create(sec, obj, t, ...)
+	end
+
+	-- armory a helmy: vanilla bere stav z get_condition_by_rank (s vahou podle komunity)
+	local orig_cond = dm.get_condition_by_rank
+	dm.get_condition_by_rank = function(rank, coef)
+		if not cfg.on then return orig_cond(rank, coef) end
+		local lo, hi = range_for("o", rank, cur_comm)
+		return roll(lo, hi)
+	end
+
+	-- zjistit komunitu u funkci, ktere get_condition_by_rank volaji
+	if dm.spawn_cosmetics then
+		local orig_cos = dm.spawn_cosmetics
+		dm.spawn_cosmetics = function(npc, npc_id, npc_comm, ...)
+			cur_comm = npc_comm
+			local ok, r = pcall(orig_cos, npc, npc_id, npc_comm, ...)
+			cur_comm = nil
+			if not ok then core.warn("korist: %s", tostring(r)) return end
+			return r
+		end
+	end
+	if dm.keep_item then
+		local orig_keep = dm.keep_item
+		dm.keep_item = function(npc, item, ...)
+			cur_comm = npc and character_community and character_community(npc) or nil
+			local ok, r = pcall(orig_keep, npc, item, ...)
+			cur_comm = nil
+			if not ok then core.warn("korist: %s", tostring(r)) return end
+			return r
+		end
+	end
+	core.log("korist: patch nasazen")
+end
+
+function load()
+	local g = core.page(PAGE)
+	cfg.on = g("enabled") == true
+	for _, k in ipairs({ "w_lo_min", "w_lo_max", "w_hi_min", "w_hi_max", "w_zmin", "w_zmax",
+	                     "o_lo_min", "o_lo_max", "o_hi_min", "o_hi_max", "o_zmin", "o_zmax" }) do
+		cfg[k] = tonumber(g(k)) or 10
+	end
+	cfg.ammo = tonumber(g("ammo")) or 1
+	cfg.no_special = g("no_special") == true
+	if cfg.on then patch() end
+	core.log("korist: %s", cfg.on and "zapnuto" or "vypnuto")
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

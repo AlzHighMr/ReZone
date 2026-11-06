@@ -1,0 +1,39 @@
+ReZone - kde co upravit
+=======================
+
+Vsechno, co si muzes upravit sam, je v teto slozce (configs\rezone). Tyhle soubory cte jen
+skript ReZone (ini_file), engine je nevidi. Zmena se projevi po restartu hry, nic neprepisuji
+a nekoliduji s jinymi mody.
+
+  af_breeding.ltx        selekce artefaktu: selekcionari (kde, tridy, nejvyssi stupen), ceny, bonusy
+  af_breeding_bases.ltx  seznam selektovatelnych artefaktu (generuje tools\gen_breeding.py)
+  af_heal.ltx            vzacne artefakty, ktere s EFT Health System leci casti tela
+  af_powders.ltx         prasek z rozdrcenych artefaktu
+  ammo.ltx               data munice ReZone Ballistics (poskozeni, pruraznost, efekty)
+  ammo_parts.ltx         z ceho se munice sklada (rozebirani, vyroba)
+  ammo_sounds.ltx        zvuky efektu munice
+  armor_*.ltx            profily brneni (CoP / Anomaly / Hardcore, s helmou i bez)
+  helmets.ltx            ktera helma padne z uzavreneho obleku
+  rezone_mcm_links.ltx   odkazy na stranky jinych modu v MCM
+  rezone_species.ltx     urceni druhu mutanta pro MCM
+  wander.ltx             toulavi stalkeri: lokace, frakce, vynechana mista
+
+DLTX (configs\mod_system_*.ltx) je jen tam, kde to engine vyzaduje - predmety a jejich
+staty musi byt v systemovem configu hry, jinak je hra nezna:
+  artefakty CoP, kontejnery, postih artefaktu, vylepsene (selektovane) artefakty,
+  obleky a kosti brneni, upgrady, munice (balistika, dily), registrace dialogu/postav selekce.
+Tyhle soubory se generuji nebo jsou cista data - neupravuj je rucne, kdyz nemusis.
+
+Skupiny toulavych stalkeru jsou nove sekce v configs\misc\squad_descr\squad_descr_rezone_wander.ltx
+(vanilla je nacte sama pres #include "squad_descr_*.ltx", nic se neprepisuje).
+
+Balancni data (drive mod 237-[ReZone] DLTX) - ciste DLTX hodnoty, upravuj primo v souborech:
+  mod_system_zzz_medical_edit / zzzzzz_food_edit / zzzzzz_drink_edit / zzzzzz_ciga_edit  jidlo, piti, leky
+  mod_system_zzz_foodmonster_edit   maso mutantu, vareni     mod_system_zzz_mutants_edit   mutanti
+  mod_system_zzzz_actor_edit        hrac (psi, radiace, odolnosti podle obtiznosti)
+  mod_system_zzzz_repair_tools_edit opravarske sady          mod_system_zzzzz_outfits_attachments_oao  platy OAO
+  mod_system_zzzzzz_fe_cost / zzzzzzz_item_cost / zzzzzzzzzz_items_pelts   ceny PDA, receptu, kuzi
+  mod_system_zones_anomaly_edit     sila anomalii            mod_system_zzz_headlamps_edit  celovky
+  items\settings\mod_death_generic_*  korist z mrtvol     items\settings\mod_mutant_loot_rezone  korist z mutantu
+  items\settings\mod_cook_edit  vareni     plugins\mod_guaranteed_drops_rezone  zarucene predmety
+  misc\task\mod_task_manager_escape_reward  odmena ukolu    scripts\modxml_important_npc_loadouts  vybaveni NPC

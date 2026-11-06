@@ -1,0 +1,610 @@
+--[[
+	ReZone - munice: nazvy a popisky, statistiky v popisku, ceny, opotrebeni zbrane,
+	horsi naboje u NPC, MG pas, rozebirani munice, drceni artefaktu, suroviny na
+	mrtvolach / ve skryskach / u obchodniku, vynos vyroby a recepty na munici.
+
+	Data: configs\rezone\ammo.ltx (munice), ammo_parts.ltx (z ceho se sklada),
+	      af_powders.ltx (prasek z artefaktu).
+--]]
+
+local random, floor, max, min = math.random, math.floor, math.max, math.min
+local gc = game.translate_string
+local RB = rezone_ballistics
+local core = rezone_core
+
+local parts_ini = ini_file("rezone\\ammo_parts.ltx")
+local powder_ini = ini_file("rezone\\af_powders.ltx")
+local PACK = 5		-- suroviny se pocitaji v balenich po 5
+
+local function cfg(key, def)
+	local v = core.get(RB.PATH .. key)
+	if v == nil then return def end
+	return v
+end
+
+local function ammo_ini_has(sec) return sec and RB.ini:section_exist(sec) end
+local function aval(sec, key) return RB.ini:r_float_ex(sec, key) end
+local function astr(sec, key) return RB.ini:r_string_ex(sec, key) end
+
+-- ---------------------------------------------------------------- nazvy a popisky
+local function patch_names()
+	local first, short, footer = ui_item.build_name_first, ui_item.build_short_name_first, ui_item.build_desc_footer
+	function ui_item.build_name_first(obj, sec, str)
+		local n = ammo_ini_has(sec) and astr(sec, "name")
+		if n then return gc(n) end
+		return first(obj, sec, str)
+	end
+	function ui_item.build_short_name_first(obj, sec, str)
+		local n = ammo_ini_has(sec) and astr(sec, "name")
+		if n then return gc(n .. "_s") end
+		return short(obj, sec, str)
+	end
+	function ui_item.build_desc_footer(obj, sec, str)
+		local n = ammo_ini_has(sec) and astr(sec, "name")
+		if n then return gc(n .. "_descr") end
+		return footer(obj, sec, str)
+	end
+end
+
+-- ---------------------------------------------------------------- statistiky munice v popisku
+function stat_damage(obj, sec) return floor(100 * (aval(sec, "hit") or SYS_GetParam(2, sec, "k_hit") or 1)) end
+function stat_ap(obj, sec) return aval(sec, "ap") or 0 end
+function stat_hp(obj, sec) local h = aval(sec, "hp") or 1 return h > 1.01 and floor(100 * (h - 1)) or 0 end
+function stat_pellets(obj, sec) local p = SYS_GetParam(2, sec, "buck_shot") or 1 return p > 2 and p or 0 end
+function stat_radius(obj, sec) return aval(sec, "radius") or 0 end
+function stat_accuracy(obj, sec)
+	local a = SYS_GetParam(2, sec, "k_disp") or 1
+	return (math.abs(a - 1) > 0.01 and (SYS_GetParam(2, sec, "buck_shot") or 1) == 1) and floor(100 * (1 - a)) or 0
+end
+function stat_speed(obj, sec) local f = SYS_GetParam(2, sec, "k_bullet_speed") or 1 return f ~= 1 and floor(100 * (f - 1)) or 0 end
+function stat_recoil(obj, sec) local r = SYS_GetParam(2, sec, "k_cam_dispersion") or 1 return r ~= 1 and floor(100 * r) or 0 end
+function stat_wear(obj, sec) local w = aval(sec, "wear") or 1 return w ~= 1 and floor(100 * w) or 0 end
+function stat_tag(obj, sec) return astr(sec, "tag") and 1 or 0 end
+
+local function stat(index, typ, name, icon, unit, sign, always, fn)
+	return { index = index, typ = typ, name = name, icon_p = icon, icon_n = "", track = false, magnitude = 1,
+	         unit = unit, compare = false, sign = sign, show_always = always, value_functor = { "rezone_ammo", fn } }
+end
+
+local function ammo_stats()
+	return {
+		damage   = stat(1, "float", "st_prop_k_hit", "ui_wp_prop_damage", "st_perc", false, true, "stat_damage"),
+		ap       = stat(2, "string", "st_prop_k_ap", "ui_am_propery_01", "", false, false, "stat_ap"),
+		hp       = stat(3, "float", "st_prop_k_hp", "ui_am_prop_restore_bleeding", "st_perc", true, true, "stat_hp"),
+		pellets  = stat(4, "float", "st_prop_projectiles", "ui_wp_prop_skorostrelnost", "", false, true, "stat_pellets"),
+		accuracy = stat(5, "float", "st_prop_k_disp", "ui_wp_prop_tochnost", "st_perc", true, false, "stat_accuracy"),
+		speed    = stat(6, "float", "st_prop_k_vel", "ui_wp_prop_nastilnost", "st_perc", true, false, "stat_speed"),
+		recoil   = stat(7, "float", "st_prop_recoil", "ui_wp_prop_otdacha", "st_perc", false, false, "stat_recoil"),
+		wear     = stat(8, "float", "st_prop_impair", "ui_wp_prop_nadezhnost", "st_perc", false, true, "stat_wear"),
+		radius   = stat(9, "float", "st_prop_radius", "ui_am_prop_explo", "m", false, false, "stat_radius"),
+		tag      = stat(10, "float", "st_prop_special", "ui_am_condition", "", false, false, "stat_tag"),
+	}
+end
+
+local function patch_stats()
+	local U = utils_ui
+	local prep, get_tbl = U.prepare_stats_table, U.get_stats_table
+	function U.prepare_stats_table()
+		prep()
+		U.stats_table["ammo"] = ammo_stats()
+	end
+	function U.get_stats_table(sec)
+		if ammo_ini_has(sec) then
+			if not (U.stats_table and U.stats_table["ammo"]) then
+				U.stats_table = U.stats_table or {}
+				U.stats_table["ammo"] = ammo_stats()
+			end
+			return U.stats_table["ammo"]
+		end
+		return get_tbl(sec)
+	end
+	local get_type = U.UIInfoItem.GetType
+	function U.UIInfoItem:GetType(sec)
+		if ammo_ini_has(sec) then return "ammo" end
+		return get_type(self, sec)
+	end
+	-- texty misto cisel: trida pruraznosti, stitek zvlastniho naboje
+	local finale = U.UIInfoItem.Sync_Finale
+	function U.UIInfoItem:Sync_Finale(cond, syncer, resizer, adapter, offset)
+		local r = finale(self, cond, syncer, resizer, adapter, offset)
+		local sec = self.section
+		if not (syncer and sec and ammo_ini_has(sec) and self.stats) then return r end
+		local tag = astr(sec, "tag")
+		local cap_ap, cap_tag, cap_hit = gc("st_prop_k_ap"), gc("st_prop_special"), gc("st_prop_k_hit")
+		for i = 1, #self.stats do
+			local s = self.stats[i]
+			local cap = s.cap and s.cap:GetText()
+			if cap == cap_ap then
+				s.txt:SetText(tag == "chaos" and "I-V" or gc("st_prop_armor_" .. clamp(floor((aval(sec, "ap") or 0) * 20), 0, 7)))
+			elseif cap == cap_tag and tag then
+				s.txt:SetText(gc("st_ballistics_" .. tag))
+			elseif cap == cap_hit and tag == "chaos" then
+				s.txt:SetText("60-160%")
+			end
+		end
+		return r
+	end
+end
+
+-- ---------------------------------------------------------------- ceny
+local function on_cost(kind, obj, profile, calculated, ret)
+	if not (obj and profile) then return end
+	local sec = obj:section()
+	local box = IsItem("ammo", sec)
+	local price = box and ammo_ini_has(sec) and aval(sec, "price")
+	if price then
+		ret.new_cost = price * (profile.discount or 1) * (obj:ammo_get_count() / box)
+	end
+	-- suroviny obchodnik vykupuje za desetinu
+	if SYS_GetParam(1, sec, "is_component") and profile.mode == 1 then
+		ret.new_cost = (ret.new_cost or calculated) * 0.1
+	end
+end
+
+-- ---------------------------------------------------------------- vystrel: opotrebeni a efekty
+local shot_dec = { id = nil, v = 0 }
+local shot_list = { id = nil, list = nil, t = 0 }   -- seznam naboju zbrane (ne pri kazdem vystrelu znovu)
+local function on_fired(obj, wpn)
+	if not (wpn and IsWeapon(wpn)) then return end
+	local now = time_global()
+	if shot_list.id ~= wpn:id() or now - shot_list.t > 10000 then
+		shot_list.id, shot_list.list, shot_list.t = wpn:id(), utils_item.get_ammo(nil, wpn:id()), now
+	end
+	local list = shot_list.list
+	local sec = list and list[wpn:get_ammo_type() + 1]
+	if not ammo_ini_has(sec) then return end
+	local mine = aval(sec, "wear")
+	local base = SYS_GetParam(2, sec, "impair") or 1
+	if mine and mine ~= base then
+		if shot_dec.id ~= wpn:id() then
+			shot_dec.id, shot_dec.v = wpn:id(), SYS_GetParam(2, wpn:section(), "condition_shot_dec") or 0
+		end
+		wpn:set_condition(clamp(wpn:condition() - (mine - base) * shot_dec.v, 0.001, 0.999))
+	end
+	local f = astr(sec, "on_shoot")
+	if f then rezone_ammo_fx.shoot(f, wpn) end
+end
+
+-- ---------------------------------------------------------------- horsi naboje (NPC, obchodnici, korist)
+function downgrade(sec)
+	local d = ammo_ini_has(sec) and astr(sec, "downgrade")
+	if d and random() < (aval(sec, "downgrade_chance") or 0) then return d end
+	return sec
+end
+
+local function downgrade_weapon(wpn)
+	local list = utils_item.get_ammo(wpn:section(), wpn:id())
+	if not list or #list == 0 then return end
+	local cur = list[wpn:get_ammo_type() + 1]
+	local d = ammo_ini_has(cur) and astr(cur, "downgrade")
+	if not d then return end
+	for i, s in ipairs(list) do
+		if s == d and random() < (aval(cur, "downgrade_chance") or 0) then
+			-- bez unload_magazine(true): to by vratilo naboje do inventare NPC a mel by je dvakrat
+			local n = wpn:get_ammo_in_magazine()
+			wpn:set_ammo_elapsed(0)
+			wpn:set_ammo_type(i - 1)
+			wpn:set_ammo_elapsed(n)
+			return
+		end
+	end
+end
+
+local function on_npc_spawn(npc)
+	-- jen jednou za zivot NPC (ne pri kazdem prichodu online)
+	local id, name = npc:id(), npc:name()
+	if se_load_var(id, name, "rz_ammo_dg") then return end
+	se_save_var(id, name, "rz_ammo_dg", true)
+	CreateTimeEvent("rz_ammo_dg", "n" .. id, 0, function()
+		local o = level.object_by_id(id)
+		if o and o:alive() then
+			o:iterate_inventory(function(_, it) if IsWeapon(it) then pcall(downgrade_weapon, it) end end)
+		end
+		return true
+	end)
+end
+
+-- ---------------------------------------------------------------- suroviny (balení po 5)
+local parts_cache = {}
+function parts_of(sec)
+	local c = parts_cache[sec]
+	if c ~= nil then return c or nil end
+	c = false
+	if parts_ini:section_exist(sec) then
+		local p = parts_ini:r_string_ex(sec, "parts")
+		local t = p and str_explode(p, ",")
+		if t and #t >= 5 then c = { casing = t[1], powder = t[3], bullet = t[5], list = t } end
+	end
+	parts_cache[sec] = c
+	return c or nil
+end
+
+local ALL = {
+	casing = { "casing_p", "casing_s", "casing_r5", "casing_r7" },
+	powder = { "powder_1", "powder_2", "powder_3" },
+	bullet = { "bullet_pistol", "bullet_shotgun", "bullet_r5", "bullet_r7", "bullet_pistol_ap", "bullet_r5_ap" },
+}
+
+local function loot_mult() return tonumber(cfg("parts_loot", 1)) or 1 end
+
+local function give(sec, obj, packs)
+	packs = floor(packs + 0.5)
+	if packs <= 0 or not ini_sys:section_exist(sec) then return end
+	alife_create_item(sec, obj, { ammo = packs * PACK })
+end
+
+-- Mnozstvi (v2.0.4, snizeno): suroviny jsou doplnek k munici, ne hlavni zdroj.
+-- Jeden hod za mrtvolu (ne za kazdou zbran), baleni po 5 ks:
+--   naboje 35 % x 1-2, prach 25 % x 1, strely 20 % x 1-2   (pri "Suroviny na munici" = 1)
+local function parts_on_body(npc)
+	local m = loot_mult()
+	if m <= 0 then return end
+	local p
+	npc:iterate_inventory(function(_, it)
+		if p or not IsWeapon(it) or IsMelee(it) then return end
+		local list = parse_list(ini_sys, it:section(), "ammo_class")
+		p = list and list[1] and parts_of(list[1])
+	end)
+	if not p then return end
+	if random() < clamp(0.35 * m, 0, 1) then give(p.casing, npc, random(1, 2) * max(m, 1)) end
+	if random() < clamp(0.25 * m, 0, 1) then give(p.powder, npc, max(m, 1)) end
+	if random() < clamp(0.20 * m, 0, 1) then give(p.bullet, npc, random(1, 2) * max(m, 1)) end
+end
+
+-- Recepty: vanilla recipe_ammo_1..3 (jen ty odemykaji vyrobu v dilne, viz mod_craft_rezone_ballistics).
+-- Neobjevi se, kdyz uz recept znas. Stare predmety recipe_ammo_ru1 ... nic neodemykaly - uz se nespawnuji.
+local RECIPES = { "recipe_ammo_1", "recipe_ammo_2", "recipe_ammo_3" }
+local STASH_RECIPE = { 6, 3, 1 }		-- % sance ve skrysi (1 = zakladni ... 3 = pokrocily)
+local POWDERS = { "powder_gravi", "powder_fireball", "powder_nightstar", "powder_battery", "powder_blood" }
+
+local function recipe_known(sec)
+	return ui_pda_encyclopedia_tab and ui_pda_encyclopedia_tab.is_unlocked_note("encyclopedia__notes_" .. sec)
+end
+
+local function has_item(npc, sec)
+	local found = false
+	npc:iterate_inventory(function(_, it) if it:section() == sec then found = true end end)
+	return found
+end
+
+local function stash_extra(box)
+	local m = loot_mult()
+	if m > 0 and random() <= clamp(0.35 * m, 0, 1) then
+		local kinds = { "casing", "powder", "bullet" }
+		local l = ALL[kinds[random(#kinds)]]
+		give(l[random(#l)], box, random(1, 3) * max(m, 1))
+	end
+	for i, sec in ipairs(RECIPES) do
+		if random(100) <= STASH_RECIPE[i] and ini_sys:section_exist(sec) and not recipe_known(sec) then
+			alife_create_item(sec, box)
+			break
+		end
+	end
+	if random() < 0.05 then
+		local p = POWDERS[random(#POWDERS)]
+		if ini_sys:section_exist(p) then alife_create_item(p, box, { ammo = 1 }) end
+	end
+end
+
+local function on_restock(npc)
+	local kind = core.trader_kind(npc)
+	if kind ~= "supplier" and kind ~= "mechanic" then return end
+	-- horsi naboje v nabidce
+	local swap = {}
+	npc:iterate_inventory(function(_, it)
+		if IsAmmo(it) and not SYS_GetParam(1, it:section(), "is_component") then
+			local d = downgrade(it:section())
+			if d ~= it:section() then swap[it:id()] = { d, it:ammo_get_count() } end
+		end
+	end)
+	for id, v in pairs(swap) do
+		alife_release_id(id)
+		alife_create_item(v[1], npc, { ammo = v[2] })
+	end
+	if kind == "mechanic" then
+		if ini_sys:section_exist("powder_fire") and not has_item(npc, "powder_fire") then
+			alife_create_item("powder_fire", npc, { ammo = 5 })
+		end
+		return
+	end
+	local level = 1
+	pcall(function()
+		local p = trade_manager.get_trade_profile(npc:id(), "current_buy_supplies")
+		level = p and tonumber(string.match(p, "_(%d+)$")) or 1
+	end)
+	-- suroviny: kazdy druh 35 %, 1-2 baleni, jen kdyz ho obchodnik zrovna nema
+	local m = loot_mult()
+	if m > 0 then
+		for _, k in ipairs({ "casing", "powder", "bullet" }) do
+			for _, sec in ipairs(ALL[k]) do
+				if random() < clamp(0.35 * m, 0, 1) and not has_item(npc, sec) then give(sec, npc, random(1, 2) * max(m, 1)) end
+			end
+		end
+	end
+	-- recepty: lepsi obchodnik (vyssi uroven zasob) muze mit lepsi recept, sance 20 %, max. jeden
+	local sec = RECIPES[random(clamp(level, 1, #RECIPES))]
+	if random(100) <= 20 and ini_sys:section_exist(sec) and not recipe_known(sec) and not has_item(npc, sec) then
+		alife_create_item(sec, npc)
+	end
+end
+
+-- Ulozene hry z verzi <= 2.0.3: bezni NPC dostavali pri kazdem rozhovoru zasoby jako obchodnik
+-- (suroviny a nefunkcni recepty). Pri smrti se prebytek uklidi: stare recepty pryc,
+-- kazda surovina nejvys 2 baleni.
+local OLD_RECIPES = { recipe_ammo_ru1 = true, recipe_ammo_ru2 = true, recipe_ammo_pistol = true, recipe_ammo_shotgun = true,
+                      recipe_ammo_nato = true, recipe_ammo_arty1 = true, recipe_ammo_arty2 = true, recipe_ammo_fire = true }
+local IS_PART = {}
+for _, l in pairs(ALL) do for _, sec in ipairs(l) do IS_PART[sec] = true end end
+
+local function cleanup_body(npc)
+	if not npc or core.trader_kind(npc) ~= "generic" then return end
+	local seen, drop = {}, {}
+	npc:iterate_inventory(function(_, it)
+		local sec = it:section()
+		if OLD_RECIPES[sec] then
+			drop[#drop + 1] = it
+		elseif IS_PART[sec] then
+			seen[sec] = (seen[sec] or 0) + it:ammo_get_count()
+			if seen[sec] > 2 * PACK then drop[#drop + 1] = it end
+		end
+	end)
+	for _, it in ipairs(drop) do alife_release(it) end
+	if #drop > 0 then core.log("uklid mrtvoly %s: %d predmetu", npc:name(), #drop) end
+end
+
+-- stare hromadky surovin > 5 ks se rozdeli na baleni
+local function on_take(obj)
+	if not (obj and IsAmmo(obj)) or not SYS_GetParam(1, obj:section(), "is_component") then return end
+	local n, bs = obj:ammo_get_count(), obj:ammo_box_size()
+	if bs and bs > 0 and n > bs then
+		local sec = obj:section()
+		alife_release(obj)
+		alife_create_item(sec, db.actor, { ammo = n })
+	end
+end
+
+-- ---------------------------------------------------------------- vyroba: vynos bezne munice
+local function patch_craft_yield()
+	local W = ui_workshop and ui_workshop.UIWorkshopCraft
+	if not (W and W.Craft) then return end
+	local orig = W.Craft
+	function W:Craft()
+		local ok, r = self.craft_allow_r, self.craft_item_r
+		local sec, box = r and r[1], r and r[2]
+		orig(self)
+		if not (ok and sec and box) or not IsItem("ammo", sec) or sec:find("_bad$") or not parts_of(sec) then return end
+		local extra = max(1, floor((tonumber(cfg("craft_yield", 2)) or 2) + 0.5)) - 1
+		if extra > 0 then alife_create_item(sec, db.actor, { ammo = box * extra }) end
+	end
+end
+
+-- ---------------------------------------------------------------- rozebirani munice na suroviny
+local function salvage(sec)
+	local kind = parts_ini:r_string_ex(sec, "salvage") or "old"
+	return kind == "new" and 0.9 or 0.7		-- vratnost: nove naboje 90 %, stare 70 %
+end
+
+local PART_CHANCE = { casing = 0.5, powder = 1, bullet = 1 }	-- nabojnice se casto poskodi
+local function part_chance(part)
+	return PART_CHANCE[SYS_GetParam(0, part, "type") or "bullet"] or 1
+end
+
+local function breakdown(list, tool)
+	local out = {}
+	for _, box in ipairs(list) do
+		local sec = box:section()
+		local p = parts_of(sec)
+		if p then
+			local n, coef = box:ammo_get_count(), salvage(sec)
+			for i = 1, #p.list - 1, 2 do
+				local part, per = p.list[i], tonumber(p.list[i + 1]) or 1
+				local ch, got = coef * part_chance(part), 0
+				for _ = 1, n do if random() < ch then got = got + per end end
+				if got > 0 then out[part] = (out[part] or 0) + got end
+			end
+			utils_item.discharge(box)
+			if tool then utils_item.degrade(tool, tonumber(parts_ini:r_string_ex(sec, "degrade")) or 0.001) end
+		end
+	end
+	return out
+end
+
+local function give_parts(t, title)
+	local str = ""
+	for sec, n in pairs(t) do
+		create_ammo(sec, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), AC_ID, n)
+		str = str .. "\\n- " .. n .. " " .. ui_item.get_sec_name(sec)
+	end
+	actor_menu.set_item_news("success", "weapon_ammo", "st_dis_text_11", title or "", gc("st_dis_text_9"), str)
+end
+
+local function do_breakdown(obj, batch)
+	local tool = item_parts.get_suitable_dtool(obj)
+	if not item_parts.is_suitable_dtool(obj, tool) then
+		news_manager.send_tip(db.actor, gc("st_news_dis_items"), nil, "swiss_knife", 6000)
+		return
+	end
+	local sec = obj:section()
+	local list = { obj }
+	if batch then
+		list = {}
+		db.actor:iterate_ruck(function(_, it) if it:section() == sec then list[#list + 1] = it end end)
+	end
+	local name = ui_item.get_sec_name(sec)
+	local t = breakdown(list, tool)
+	game_statistics.increment_statistic("items_disassembled")
+	actor_effects.play_item_fx("disassemble_metal_fast")
+	CreateTimeEvent("rz_ammo", "bd" .. obj:id(), actor_effects.is_animations_on() and 3 or 0, function()
+		give_parts(t, name)
+		return true
+	end)
+end
+
+local function patch_disassembly()
+	local IP = item_parts
+	if not (IP and IP.disassembly_item) then return end
+	local orig_dis, orig_menu = IP.disassembly_item, IP.menu_disassembly
+	function IP.disassembly_item(obj, obj_d)
+		if obj and IsAmmo(obj) and parts_of(obj:section()) then return do_breakdown(obj, false) end
+		return orig_dis(obj, obj_d)
+	end
+	if orig_menu then
+		function IP.menu_disassembly(obj)
+			if obj and parts_ini:section_exist(obj:section()) and parts_ini:r_bool_ex(obj:section(), "disallow") then return end
+			return orig_menu(obj)
+		end
+	end
+end
+
+-- ---------------------------------------------------------------- menu: davka, MG pas, drceni, trideni
+local INV = { actor_bag = true, actor_equ = true, actor_belt = true }
+local function in_inv(bag, mode) return INV[bag] and mode == "inventory" end
+
+local powder_cache = nil
+local function powders_of(sec)
+	if not powder_cache then
+		powder_cache = {}
+		powder_ini:section_for_each(function(s)
+			local t = {}
+			for i = 0, (powder_ini:line_count(s) or 0) - 1 do
+				local _, k, v = powder_ini:r_line_ex(s, i)
+				local r = str_explode(v or "", "-")
+				t[k] = { tonumber(r[1]) or 0, tonumber(r[2]) or tonumber(r[1]) or 0 }
+			end
+			powder_cache[s] = t
+		end)
+	end
+	return powder_cache[sec]
+end
+
+local RANDOM_PARTS = {
+	{ "casing_p" }, { "casing_s", "casing_p", 20 }, { "casing_r5" }, { "casing_r7", "casing_r5", 20 },
+	{ "powder_1" }, { "powder_2" }, { "powder_3" },
+	{ "bullet_pistol_ap", "bullet_pistol", 75 }, { "bullet_shotgun_ap", "bullet_shotgun", 80 },
+	{ "bullet_r5_ap", "bullet_r5", 85 }, { "bullet_r7_ap", "bullet_r7", 90 },
+}
+local function sort_scrap(t)
+	t = t or {}
+	for _ = 1, random(5, 10) do
+		local p = RANDOM_PARTS[random(#RANDOM_PARTS)]
+		local s = (p[2] and random(100) < p[3]) and p[2] or p[1]
+		t[s] = (t[s] or 0) + 1
+	end
+	return t
+end
+
+local function count_sec(sec)
+	local n = 0
+	db.actor:iterate_inventory(function(_, it) if it:section() == sec then n = n + 1 end end)
+	return n
+end
+
+local function register_menus()
+	-- celou davku munice na suroviny
+	core.add_menu(function(obj, bag, mode)
+		if in_inv(bag, mode) and IsAmmo(obj) and parts_of(obj:section()) and not parts_ini:r_bool_ex(obj:section(), "disallow") then
+			return "st_batch_breakdown"
+		end
+	end, function(obj) do_breakdown(obj, true) end)
+
+	-- MG pas: 5 krabic 7N1 -> pas PKM a zpet
+	core.add_menu(function(obj, bag, mode)
+		if not in_inv(bag, mode) then return end
+		if obj:section() == "ammo_7.62x54_7h1" then return "st_link" end
+		if obj:section() == "ammo_pkm_100" then return "st_unlink" end
+	end, function(obj)
+		if obj:section() == "ammo_7.62x54_7h1" then
+			local ids, total = {}, 0
+			db.actor:iterate_inventory(function(_, it)
+				if it:section() == "ammo_7.62x54_7h1" and #ids < 5 then ids[#ids + 1] = it:id() total = total + it:ammo_get_count() end
+			end)
+			for _, id in ipairs(ids) do alife_release_id(id) end
+			if total > 0 then alife_create_item("ammo_pkm_100", db.actor, { ammo = total }) end
+		else
+			local n = obj:ammo_get_count()
+			create_ammo("ammo_7.62x54_7h1", db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), AC_ID, n)
+			alife_release(obj)
+		end
+	end)
+
+	-- rozdrtit artefakt na prasek pro zvlastni munici
+	core.add_menu(function(obj, bag, mode)
+		if in_inv(bag, mode) and powders_of(obj:section()) then return "st_crush" end
+	end, function(obj)
+		local cond = obj:condition() or 1
+		for p, r in pairs(powders_of(obj:section())) do
+			local n = math.ceil((r[1] + random(0, max(r[2] - r[1], 0))) * cond)
+			if n > 0 then create_ammo(p, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), AC_ID, n) end
+		end
+		alife_release(obj)
+	end)
+
+	-- roztridit smeti z munice (prt_i_ammo), jeden kus / vsechny
+	core.add_menu(function(obj, bag, mode)
+		if in_inv(bag, mode) and obj:section() == "prt_i_ammo" then return "st_item_disassemble" end
+	end, function(obj)
+		give_parts(sort_scrap(), ui_item.get_sec_name("prt_i_ammo"))
+		alife_release(obj)
+	end)
+	core.add_menu(function(obj, bag, mode)
+		if in_inv(bag, mode) and obj:section() == "prt_i_ammo" and count_sec("prt_i_ammo") > 1 then return "st_batch_breakdown" end
+	end, function(obj)
+		local t, ids = {}, {}
+		db.actor:iterate_inventory(function(_, it) if it:section() == "prt_i_ammo" then ids[#ids + 1] = it:id() end end)
+		for _, id in ipairs(ids) do t = sort_scrap(t) alife_release_id(id) end
+		give_parts(t, ui_item.get_sec_name("prt_i_ammo"))
+	end)
+end
+
+-- ---------------------------------------------------------------- start
+function on_game_start()
+	patch_names()
+	patch_stats()
+	patch_disassembly()
+	register_menus()
+
+	if death_manager then
+		local dm = death_manager
+		local dg = false
+		if dm.try_spawn_ammo then
+			local orig = dm.try_spawn_ammo
+			dm.try_spawn_ammo = function(npc, ...)
+				dg = true
+				local ok, r = pcall(orig, npc, ...)
+				dg = false
+				pcall(parts_on_body, npc)
+				if not ok then core.warn("munice z mrtvoly: %s", tostring(r)) end
+				return r
+			end
+		end
+		-- naboje vytvorene pro mrtvolu muzou byt horsi (stejne jako u ziveho NPC)
+		local prev = rawget(dm, "alife_create_item") or _G.alife_create_item
+		dm.alife_create_item = function(sec, obj, t, ...)
+			if dg and sec and IsItem("ammo", sec) and obj and obj.id and obj:id() ~= AC_ID then sec = downgrade(sec) end
+			return prev(sec, obj, t, ...)
+		end
+	end
+
+	if treasure_manager and treasure_manager.try_spawn_treasure then
+		local orig = treasure_manager.try_spawn_treasure
+		treasure_manager.try_spawn_treasure = function(box, ...)
+			local fresh = box and treasure_manager.caches and treasure_manager.caches[box:id()]
+			local r = orig(box, ...)
+			if fresh then pcall(stash_extra, box) end
+			return r
+		end
+	end
+
+	core.on_restock(on_restock)
+	RegisterScriptCallback("on_get_item_cost", on_cost)
+	RegisterScriptCallback("actor_on_weapon_fired", on_fired)
+	RegisterScriptCallback("npc_on_net_spawn", on_npc_spawn)
+	RegisterScriptCallback("actor_on_item_take", on_take)
+	RegisterScriptCallback("npc_on_death_callback", function(npc) pcall(cleanup_body, npc) end)
+	-- vynos az po vsech on_game_start (Keep crafting window open nahrazuje Craft cely)
+	local function late()
+		UnregisterScriptCallback("actor_on_first_update", late)
+		patch_craft_yield()
+	end
+	RegisterScriptCallback("actor_on_first_update", late)
+end

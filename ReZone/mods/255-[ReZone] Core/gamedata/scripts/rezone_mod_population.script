@@ -1,0 +1,392 @@
+--[[
+	ReZone MCM - populace Zony (vlastni reseni, bez dalsich modu)
+
+	Neprepisuje smart_terrain.script ani sim_board.script, jen obali tri vanilla funkce:
+	- se_smart_terrain:try_respawn       hustota (misto vanilla volby ALife), cas respawnu,
+	                                      nahodne skupiny navic
+	- simulation_board:fill_start_position hustota pri zacatku nove hry
+	- sim_squad_scripted:create_npc       velikost a rozptyl skupin / smecek,
+	                                      snizeni hodnosti na zacatecnich urovnich
+	- se_smart_terrain:target_precondition silne skupiny nechodi na zacatecni urovne
+
+	Hodnost generickych NPC = cislo na konci sekce sim_default_<frakce>_0..4
+	(0 novacek, 1 zacatecnik, 2 zkuseny/profesional, 3 veteran/expert, 4 mistr/legenda;
+	vyssi tridy nosi tezke obleky vcetne exoskeletu).
+
+	Meni jen bezne (common) skupiny, ktere vznikaji respawnem nebo na zacatku hry.
+	Pribehove skupiny, ukolove spawny a spawny jinych modu zustanou jak jsou.
+	Vypnuto = vanilla (zadna funkce se ani neobali).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_pop"
+
+MAX_MEMBERS = 12	-- strop velikosti jedne skupiny po zvetseni
+POP_STALKER = "alife/general/alife_stalker_pop"
+POP_MUTANT  = "alife/general/alife_mutant_pop"
+
+local cfg = { on = false }
+
+-- ---------------------------------------------------------------- predvolby
+NAMES = { [1] = "vanilla", [2] = "calm", [3] = "alive", [4] = "danger" }
+DEFAULT = 1
+
+PRESETS = {
+	-- vanilla Anomaly (hustota 1 = stejne jako vychozi volba ALife)
+	[1] = { st_pop = 1,   mu_pop = 1,   respawn = 1,    st_size = 1,   st_var = 0,   mu_size = 1,   mu_var = 0,
+	        st_random = false, st_random_ch = 10, mu_random = false, mu_random_ch = 10 },
+	-- klidna Zona: mene lidi i zvirat, pomalejsi respawn, mensi skupiny
+	[2] = { st_pop = 0.6, mu_pop = 0.5, respawn = 2,    st_size = 0.8, st_var = 0.2, mu_size = 0.8, mu_var = 0.2,
+	        st_random = false, st_random_ch = 10, mu_random = false, mu_random_ch = 10 },
+	-- ziva Zona: vic stalkeru, ruznorode skupiny, obcas nekdo navic
+	[3] = { st_pop = 1.3, mu_pop = 1,   respawn = 0.75, st_size = 1.2, st_var = 0.3, mu_size = 1.1, mu_var = 0.3,
+	        st_random = true,  st_random_ch = 15, mu_random = true,  mu_random_ch = 10 },
+	-- nebezpecna Zona: hodne mutantu, velke smecky, rychly respawn
+	[4] = { st_pop = 1.2, mu_pop = 1.6, respawn = 0.5,  st_size = 1.3, st_var = 0.4, mu_size = 1.5, mu_var = 0.5,
+	        st_random = true,  st_random_ch = 20, mu_random = true,  mu_random_ch = 25 },
+}
+
+-- ---------------------------------------------------------------- pomocne
+local active = 0		-- >0 = jsme uvnitr respawnu nebo pocatecniho naplneni
+local created = nil		-- skupiny vytvorene behem jednoho try_respawn
+
+local function is_mutant_faction(f)
+	return f and is_squad_monster and is_squad_monster[f] and true or false
+end
+
+local function squad_is_mutant(squad)
+	local f = squad.player_id or ini_sys:r_string_ex(squad:section_name(), "faction")
+	return is_mutant_faction(f)
+end
+
+-- cilova velikost: n * velikost * nahodne (1 +- rozptyl), aspon 1, nejvys MAX_MEMBERS
+function target_size(n, size, var, rnd)
+	local r = (rnd or math.random)() * 2 - 1
+	local f = size * (1 + r * var)
+	if f < 0 then f = 0 end
+	local t = math.floor(n * f + 0.5)
+	if t < 1 then t = 1 end
+	if t > MAX_MEMBERS then t = math.max(n, MAX_MEMBERS) end
+	return t
+end
+
+local function resize(squad)
+	local mu = squad_is_mutant(squad)
+	local size = mu and cfg.mu_size or cfg.st_size
+	local var  = mu and cfg.mu_var  or cfg.st_var
+	if math.abs(size - 1) < 0.001 and var < 0.001 then return end
+
+	local ids, n = {}, 0
+	for m in squad:squad_members() do
+		n = n + 1
+		ids[n] = m.id
+	end
+	if n == 0 then return end
+
+	local t = target_size(n, size, var)
+	if t > n then
+		-- novi clenove = kopie nahodnych stavajicich (stejna hodnost a vybava jako skupina)
+		for i = 1, t - n do
+			local se = alife_object(ids[math.random(n)])
+			if se then
+				squad:add_squad_member(se:section_name(), se.position, se.m_level_vertex_id, se.m_game_vertex_id)
+			end
+		end
+	elseif t < n then
+		-- odebrat nahodne cleny krome velitele
+		local cmd = squad:commander_id()
+		local pool = {}
+		for i = 1, n do
+			if ids[i] ~= cmd then pool[#pool + 1] = ids[i] end
+		end
+		for i = 1, n - t do
+			if #pool == 0 then break end
+			local k = math.random(#pool)
+			squad:remove_npc(pool[k], true)
+			table.remove(pool, k)
+		end
+	end
+	if core.DEBUG then core.log("populace: %s %d -> %d", squad:section_name(), n, t) end
+end
+
+-- skupiny, ktere se na dane urovni bezne respawnuji (pro nahodne skupiny navic)
+local level_pool = {}
+
+local function level_of(obj)
+	local gg = game_graph and game_graph()
+	if not (gg and obj and obj.m_game_vertex_id) then return end
+	return gg:vertex(obj.m_game_vertex_id):level_id()
+end
+
+local function pool_for(lvl)
+	local p = level_pool[lvl]
+	if p then return p end
+	p = { st = {}, mu = {} }
+	local seen = {}
+	for _, s in pairs(SIMBOARD and SIMBOARD.smarts or {}) do
+		local smrt = s.smrt
+		if smrt and smrt.respawn_params and level_of(smrt) == lvl then
+			for _, v in pairs(smrt.respawn_params) do
+				for _, sq in ipairs(v.squads or {}) do
+					if not seen[sq] and ini_sys:section_exist(sq) and ini_sys:r_bool_ex(sq, "common") then
+						seen[sq] = true
+						local t = is_mutant_faction(ini_sys:r_string_ex(sq, "faction")) and p.mu or p.st
+						t[#t + 1] = sq
+					end
+				end
+			end
+		end
+	end
+	level_pool[lvl] = p
+	return p
+end
+
+local function random_extra(smart)
+	if not (created and #created > 0) then return end
+	if smart.props and (smart.props.base or 0) > 0 then return end	-- ne na zakladnach frakci
+
+	local mu = squad_is_mutant(created[1])
+	local want = mu and cfg.mu_random or cfg.st_random
+	local ch   = mu and cfg.mu_random_ch or cfg.st_random_ch
+	if not want or math.random(100) > ch then return end
+
+	local lvl = level_of(smart)
+	if not lvl then return end
+	local list = pool_for(lvl)[mu and "mu" or "st"]
+	if #list == 0 then return end
+
+	local sec = list[math.random(#list)]
+	local ok, sq = pcall(SIMBOARD.create_squad, SIMBOARD, smart, sec)
+	if ok and sq then
+		-- respawn_point_id se nenastavuje: skupina navic se nepocita do limitu smartu
+		for m in sq:squad_members() do
+			if m.object then SIMBOARD:setup_squad_and_group(m.object) end
+		end
+		if core.DEBUG then core.log("populace: nahodna skupina %s na %s", sec, smart:name()) end
+	elseif not ok then
+		core.warn("populace: nahodna skupina %s: %s", sec, tostring(sq))
+	end
+end
+
+
+-- ---------------------------------------------------------------- hodnosti na zacatecnich urovnich
+-- id volby na strance -> nazev urovne
+RL_LEVELS = {
+	{ "rl_escape",    "l01_escape",    true },
+	{ "rl_marsh",     "k00_marsh",     true },
+	{ "rl_darkscape", "k01_darkscape", true },
+	{ "rl_pole",      "y04_pole",      true },
+	{ "rl_garbage",   "l02_garbage",   true },
+	{ "rl_agroprom",  "l03_agroprom",  false },
+}
+
+local function tier_of(sec)
+	local fac, n = string.match(sec or "", "^sim_default_([%a_]-)_(%d)$")
+	if n then return tonumber(n), fac end
+end
+
+local common_cache = {}
+local function is_common(sec)
+	local c = common_cache[sec]
+	if c == nil then
+		c = ini_sys:r_bool_ex(sec, "common") == true
+		common_cache[sec] = c
+	end
+	return c
+end
+
+local function level_name_of(gvid)
+	local gg = game_graph and game_graph()
+	local sim = alife and alife()
+	if not (gg and sim and gvid) then return end
+	return sim:level_name(gg:vertex(gvid):level_id())
+end
+
+-- je smart na omezene urovni? (cache podle id; vynuluje se pri zmene nastaveni)
+local restricted_cache = {}
+local function smart_restricted(smart)
+	local r = restricted_cache[smart.id]
+	if r == nil then
+		r = cfg.rl_levels[level_name_of(smart.m_game_vertex_id) or ""] == true
+		if r and cfg.rl_bases and smart.props and (smart.props.base or 0) > 0 then r = false end
+		restricted_cache[smart.id] = r
+	end
+	return r
+end
+
+-- nejvyssi trida clena skupiny (cache, prepocita se kdyz se zmeni pocet clenu)
+local tier_cache = {}
+local function squad_tier(squad)
+	local n = squad:npc_count()
+	local c = tier_cache[squad.id]
+	if c and c.n == n then return c.t end
+	local t = -1
+	for m in squad:squad_members() do
+		local se = m.object or alife_object(m.id)
+		local k = se and tier_of(se:section_name())
+		if k and k > t then t = k end
+	end
+	tier_cache[squad.id] = { n = n, t = t }
+	return t
+end
+
+local function lower_section(fac, max)
+	local want = math.random(math.max(0, max - 1), max)	-- trochu pestrosti: max nebo o tridu niz
+	for t = want, 0, -1 do
+		local s = "sim_default_" .. fac .. "_" .. t
+		if ini_sys:section_exist(s) then return s end
+	end
+end
+
+-- vymeni cleny nad limitem za slabsi verzi stejne frakce (stejne misto)
+function limit_ranks(squad)
+	local high = {}
+	for m in squad:squad_members() do
+		local se = m.object or alife_object(m.id)
+		if se then
+			local t, fac = tier_of(se:section_name())
+			if t and t > cfg.rl_max then high[#high + 1] = { se = se, fac = fac } end
+		end
+	end
+	if #high == 0 then return end
+	-- nejdriv pridat nahradu, pak odebrat (skupina nikdy nezustane prazdna)
+	for _, h in ipairs(high) do
+		local sec = lower_section(h.fac, cfg.rl_max)
+		if sec then
+			local se = h.se
+			squad:add_squad_member(sec, se.position, se.m_level_vertex_id, se.m_game_vertex_id)
+			h.ok = true
+		end
+	end
+	for _, h in ipairs(high) do
+		if h.ok then squad:remove_npc(h.se.id, true) end
+	end
+	if squad.id then tier_cache[squad.id] = nil end
+	if core.DEBUG then core.log("populace: %s - %d silnych clenu nahrazeno", squad:section_name(), #high) end
+end
+
+-- ---------------------------------------------------------------- patch
+local patched = false
+local function patch()
+	if patched then return end
+	local st = smart_terrain and smart_terrain.se_smart_terrain
+	local sb = sim_board and sim_board.simulation_board
+	local sq = sim_squad_scripted and sim_squad_scripted.sim_squad_scripted
+	if not (st and st.try_respawn and sb and sb.fill_start_position and sb.create_squad and st.target_precondition and sq and sq.create_npc and ui_options) then
+		core.warn("populace: vanilla funkce chybi (jiny mod je prepsal?), stranka Populace nic nedela")
+		return
+	end
+	patched = true
+
+	-- hustota: behem respawnu / naplneni vrati ui_options nase cisla misto volby ALife
+	local orig_get = ui_options.get
+	ui_options.get = function(path, ...)
+		if active > 0 and cfg.on then
+			if path == POP_STALKER then return cfg.st_pop end
+			if path == POP_MUTANT then return cfg.mu_pop end
+		end
+		return orig_get(path, ...)
+	end
+
+	local orig_respawn = st.try_respawn
+	st.try_respawn = function(self, ...)
+		if not cfg.on then return orig_respawn(self, ...) end
+		local idle = self.respawn_idle
+		if idle and idle > 0 then self.respawn_idle = idle * cfg.respawn end
+		active = active + 1
+		created = {}
+		local ok, err = pcall(orig_respawn, self, ...)
+		if ok then
+			ok, err = pcall(random_extra, self)
+		end
+		active = active - 1
+		created = nil
+		self.respawn_idle = idle
+		if not ok then core.warn("populace: %s", tostring(err)) end
+	end
+
+	local orig_fill = sb.fill_start_position
+	sb.fill_start_position = function(self, ...)
+		if not cfg.on then return orig_fill(self, ...) end
+		active = active + 1
+		local ok, err = pcall(orig_fill, self, ...)
+		active = active - 1
+		if not ok then core.warn("populace: %s", tostring(err)) end
+	end
+
+	local orig_create = sb.create_squad
+	sb.create_squad = function(self, smart, sq_id, ...)
+		local squad = orig_create(self, smart, sq_id, ...)
+		if squad and created then created[#created + 1] = squad end
+		return squad
+	end
+
+	local orig_npc = sq.create_npc
+	sq.create_npc = function(self, ...)
+		local r = orig_npc(self, ...)
+		if (cfg.on or cfg.rl) and is_common(self:section_name()) then
+			if cfg.rl and not is_mutant_faction(self.player_id) and cfg.rl_levels[level_name_of(self.m_game_vertex_id) or ""] then
+				local smart = self.smart_id and alife_object(self.smart_id)
+				if not (smart and cfg.rl_bases and smart.props and (smart.props.base or 0) > 0) then
+					local ok, err = pcall(limit_ranks, self)
+					if not ok then core.warn("populace: hodnosti: %s", tostring(err)) end
+				end
+			end
+			if cfg.on and active > 0 then
+				local ok, err = pcall(resize, self)
+				if not ok then core.warn("populace: velikost skupiny: %s", tostring(err)) end
+			end
+		end
+		return r
+	end
+
+	-- silne skupiny si za cil nevyberou smart na omezene urovni (ty, co uz tam jsou, casem odejdou)
+	local orig_pre = st.target_precondition
+	st.target_precondition = function(self, squad, ...)
+		if cfg.rl and squad and squad.player_id and not is_mutant_faction(squad.player_id)
+		   and smart_restricted(self) and is_common(squad:section_name()) and squad_tier(squad) > cfg.rl_max then
+			return false
+		end
+		return orig_pre(self, squad, ...)
+	end
+	core.log("populace: patch nasazen")
+end
+
+function zcp_present()
+	local fs = getFS and getFS()
+	return fs and fs:exist("$game_scripts$", "smr_amain_mcm.script") and true or false
+end
+
+local zcp_warned = false
+function load()
+	local g = core.page(PAGE)
+	cfg.on = g("enabled") == true
+	local d = PRESETS[DEFAULT]
+	for _, k in ipairs({ "st_pop", "mu_pop", "respawn", "st_size", "st_var", "mu_size", "mu_var", "st_random_ch", "mu_random_ch" }) do
+		cfg[k] = tonumber(g(k)) or d[k]
+	end
+	cfg.st_random = g("st_random") == true
+	cfg.mu_random = g("mu_random") == true
+	if cfg.respawn < 0.05 then cfg.respawn = 0.05 end
+
+	cfg.rl = g("rl_enabled") == true
+	cfg.rl_max = tonumber(g("rl_max")) or 2
+	cfg.rl_bases = g("rl_bases") ~= false
+	cfg.rl_levels = {}
+	for _, l in ipairs(RL_LEVELS) do
+		if g(l[1]) == true then cfg.rl_levels[l[2]] = true end
+	end
+	restricted_cache, tier_cache = {}, {}
+	if cfg.rl then patch() end
+
+	if cfg.on then
+		patch()
+		if zcp_present() and not zcp_warned then zcp_warned = true; core.warn("populace: je nainstalovany i Zone Customization Project - nastaveni se mohou nasobit") end
+	end
+	core.log("populace: %s, hodnosti na zacatku: %s", cfg.on and "zapnuto" or "vypnuto", cfg.rl and ("max " .. cfg.rl_max) or "vypnuto")
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

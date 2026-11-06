@@ -1,0 +1,116 @@
+--[[
+	ReZone MCM - artefakty v anomaliich (Gameplay > Artefakty v anomaliich)
+
+	Skupiny artefaktu (configs\items\settings\mod_artefacts_rezone.ltx) jsou podle sily v ReZone:
+	junk / low / mid / high / veryhigh. Pole maji v DLTX souborech, ktere skupiny v nich rostou.
+	Tady se nastavuje:
+	- sance, ze artefakt vubec vyroste (nasobi sanci z obtiznosti ekonomiky)
+	- nasobic po emisi a po psi bouri
+	- vzacnost: jak casto pole vybere slabsi nebo silnejsi skupinu (vanilla = vsechny stejne)
+	Vypnuto = vanilla chovani bind_anomaly_zone.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_afsp"
+
+-- vaha skupiny podle vzacnosti: { junk, low, mid, high, veryhigh }
+RARITY = {
+	[1] = { 1, 1, 1, 1, 1 },          -- rovnomerne (jako vanilla)
+	[2] = { 4, 4, 3, 2, 1 },          -- Call of Pripyat: silne artefakty vzacne
+	[3] = { 5, 4, 2, 1, 0.5 },        -- vzacne: silne jen vyjimecne
+}
+NAMES = { "even", "cop", "rare" }
+DEFAULT = 2
+local TIER_IDX = { junk = 1, low = 2, mid = 3, high = 4, veryhigh = 5 }
+
+-- predvolby stranky (pouziva i hlavni predvolba)
+PRESETS = {
+	[1] = { chance = 1.0,  surge = 1.4, psi = 0.7, rarity = 1 },
+	[2] = { chance = 1.0,  surge = 1.2, psi = 0.7, rarity = 2 },
+	[3] = { chance = 0.85, surge = 1.2, psi = 0.6, rarity = 2 },
+	[4] = { chance = 0.6,  surge = 1.0, psi = 0.5, rarity = 3 },
+}
+PRESET_NAMES = { "vanilla", "cop", "trilogy", "hardcore" }
+PRESET_DEFAULT = 2
+
+local cfg = { on = false, chance = 1, surge = 1.2, psi = 0.7, w = RARITY[DEFAULT] }
+
+local function tier_weight(group)
+	local t = group and group:match("_(%a+)$")
+	local i = TIER_IDX[t] or 3          -- puvodni skupiny bez urovne = stredni
+	return cfg.w[i] or 1
+end
+
+local function pick_group(list)
+	local total = 0
+	for i = 1, #list do total = total + tier_weight(list[i]) end
+	if total <= 0 then return list[math.random(#list)] end
+	local r = math.random() * total
+	for i = 1, #list do
+		r = r - tier_weight(list[i])
+		if r <= 0 then return list[i] end
+	end
+	return list[#list]
+end
+
+local function storm_mult()
+	local s = surge_manager and surge_manager.get_surge_manager and surge_manager.get_surge_manager()
+	if s and s.started then return cfg.surge end
+	local p = psi_storm_manager and psi_storm_manager.get_psi_storm_manager and psi_storm_manager.get_psi_storm_manager()
+	if p and p.started then return cfg.psi end
+	return 1
+end
+
+local patched = false
+local function patch()
+	if patched then return end
+	local cls = bind_anomaly_zone and bind_anomaly_zone.anomaly_zone_binder
+	if not (cls and cls.spawn_artefact_randomly and cls.respawn_artefacts_and_replace_anomaly_zone) then
+		core.warn("artefakty: bind_anomaly_zone nema ocekavane funkce, stranka Artefakty v anomaliich nic nedela")
+		return
+	end
+	patched = true
+
+	-- po vyronu / psi bouri: vlastni nasobic misto hodnot z artefacts.ltx (ulozi se do pole pred spawnem)
+	local orig_respawn = cls.respawn_artefacts_and_replace_anomaly_zone
+	cls.respawn_artefacts_and_replace_anomaly_zone = function(self, ...)
+		self.rz_storm = storm_mult()
+		return orig_respawn(self, ...)
+	end
+
+	-- vyber skupiny podle vzacnosti a nasobic sance
+	local orig_spawn = cls.spawn_artefact_randomly
+	cls.spawn_artefact_randomly = function(self, ...)
+		if not cfg.on or self.forced_spawn or self.forced_spawn_override then
+			return orig_spawn(self, ...)
+		end
+		local layer = self.cur_layer
+		local list = self.artefacts_table and self.artefacts_table[layer]
+		if not (list and #list > 0) then return orig_spawn(self, ...) end
+		local sc = self.s_chance or 1
+		self.artefacts_table[layer] = { pick_group(list) }
+		self.s_chance = (self.rz_storm or 1) * cfg.chance
+		local ok, r = pcall(orig_spawn, self, ...)
+		self.artefacts_table[layer] = list
+		self.s_chance = sc
+		if not ok then core.warn("artefakty: %s", tostring(r)) end
+		return r
+	end
+	core.log("artefakty v anomaliich: patch nasazen")
+end
+
+function load()
+	local g = core.page(PAGE)
+	cfg.on = g("enabled") == true
+	cfg.chance = tonumber(g("chance")) or 1
+	cfg.surge = tonumber(g("surge")) or 1.2
+	cfg.psi = tonumber(g("psi")) or 0.7
+	cfg.w = RARITY[tonumber(g("rarity")) or DEFAULT] or RARITY[DEFAULT]
+	if cfg.on then patch() end
+	core.log("artefakty v anomaliich: %s", cfg.on and "zapnuto" or "vypnuto")
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

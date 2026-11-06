@@ -1,0 +1,261 @@
+--[[
+	ReZone Crafting 1.2 (drive ReZone Dilna) - dalsi zalozky ve vanilla dilne + recepty zmizi po precteni
+	Nahrazuje Banjaji's Crafting System. Vlastni kod, neprepisuje zadny vanilla soubor.
+
+	Zalozky
+	- vanilla dilna, prohlizec receptu (item_recipe) i clanky receptu v PDA ctou recepty
+	  ze sekci [1], [2], ... v craft.ltx, dokud nektera chybi
+	- tento skript pri startu hry pripoji sekce z items\settings\rezone_craft_tabs.ltx
+	  do nactene craft.ltx (jen v pameti hry) jako dalsi cisla za posledni existujici
+	  zalozkou -> vsechny tri obrazovky je vidi bez dalsich uprav a nezalezi na tom,
+	  kolik zalozek pridaly jine mody (napr. ReZone Ballistics [7])
+
+	Znamé recepty (PDA > Encyklopedie > Poznamky)
+	- souhrnny clanek: vsechny recepty, ktere umis, podle zalozek dilny, se surovinami
+	- kazdy recept ma dal i svuj vlastni vanilla clanek
+
+	Kompatibilita
+	- Craft use in tooltip (zzz_craft_use_in_tooltip_mcm): vlastni getCraftableItems pro vanilla
+	  format, cte stejnou craft.ltx vcetne pridanych zalozek (nahrada Banjaji patche)
+
+	Recepty
+	- vanilla po precteni recept nechava v inventari; tady se po precteni odebere
+	  (volitelne: uz znamy recept si nechas na prodej)
+--]]
+
+VERSION = "1.2"
+TABS_FILE = "items\\settings\\rezone_craft_tabs.ltx"
+TABS_LIST = "rezone_craft_tabs"
+
+local OPT = "rezone/rz_gameplay/rz_craft/"
+local defaults = { remove_recipe = true, keep_known = false }
+
+local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy
+	if rezone_core and rezone_core.DEBUG then printf("[ReZone Crafting] " .. fmt, ...) end
+end
+
+local function opt(key)
+	if rezone_core and rezone_core.get and rezone_mcm then
+		local v = rezone_core.get(OPT .. key)
+		if v ~= nil then return v end
+	end
+	return defaults[key]
+end
+
+-- ---------------------------------------------------------------- zalozky
+local injected_into = nil		-- ini_craft, do ktereho uz jsme zalozky pridali
+
+local function tab_order(src)
+	local list = {}
+	if not src:section_exist(TABS_LIST) then return list end
+	for i = 0, src:line_count(TABS_LIST) - 1 do
+		local _, k, v = src:r_line(TABS_LIST, i, "", "")
+		if k and k ~= "" and src:section_exist(k) then
+			list[#list + 1] = { sec = k, ord = tonumber(v) or 1000 }
+		end
+	end
+	table.sort(list, function(a, b) if a.ord ~= b.ord then return a.ord < b.ord end return a.sec < b.sec end)
+	return list
+end
+
+function inject_tabs()
+	local ic = itms_manager and itms_manager.ini_craft
+	if not ic then log("! itms_manager.ini_craft chybi") return end
+	if injected_into == ic then return end
+	if not (ic.set_readonly and ic.w_string and ic.set_override_names) then
+		log("! tato verze exe neumi pridat zalozky (chybi modded exes)")
+		return
+	end
+	local src = ini_file(TABS_FILE)
+	local tabs = tab_order(src)
+
+	local n = 1
+	while ic:section_exist(tostring(n)) do n = n + 1 end
+	local first = n
+
+	ic:set_readonly(false)
+	ic:set_override_names(true)
+	local ok, err = pcall(function()
+		for _, t in ipairs(tabs) do
+			local cnt = src:line_count(t.sec)
+			if cnt > 0 then
+				local idx = tostring(n)
+				for i = 0, cnt - 1 do
+					local _, k, v = src:r_line(t.sec, i, "", "")
+					if k and k ~= "" then ic:w_string(idx, k, v or "", "") end
+				end
+				n = n + 1
+			end
+		end
+	end)
+	ic:set_override_names(false)
+	ic:set_readonly(true)
+	injected_into = ic
+	if not ok then log("! chyba pri pridavani zalozek: %s", tostring(err)) end
+	log("pridano %d zalozek (%d-%d)", n - first, first, n - 1)
+end
+
+-- ---------------------------------------------------------------- recepty
+local patched = false
+local function patch_recipe()
+	if patched or not (item_recipe and item_recipe.func_recipe) then return end
+	patched = true
+	local orig = item_recipe.func_recipe
+	item_recipe.func_recipe = function(obj, ...)
+		local sec = obj and obj:section()
+		local known = sec and ui_pda_encyclopedia_tab.is_unlocked_note("encyclopedia__notes_" .. sec)
+		local r = orig(obj, ...)
+		if sec and opt("remove_recipe") and IsItem("recipe", sec) and not (known and opt("keep_known")) then
+			local p = obj:parent()
+			if p and p:id() == AC_ID then
+				alife_release(obj)
+				if known then
+					actor_menu.set_msg(1, game.translate_string("st_rz_crafting_recipe_known_removed"), 3)
+				end
+			end
+		end
+		return r
+	end
+end
+
+-- ---------------------------------------------------------------- clanek Zname recepty
+ARTICLE = "encyclopedia__notes__rz_known_recipes"
+-- recepty, ktere vanilla dilna umi od zacatku (ui_workshop: recipes_items)
+DEFAULT_NOTES = { recipe_basic_0 = true, recipe_advanced_0 = true, recipe_expert_0 = true, recipe_drug_0 = true, recipe_ammo_0 = true }
+
+local function note_known(note)
+	if DEFAULT_NOTES[note] then return true end
+	return ui_pda_encyclopedia_tab.is_unlocked_note("encyclopedia__notes_" .. note)
+end
+
+local function name_of(sec)
+	return ui_item.get_sec_name(sec) or sec
+end
+
+function build_known_recipes()
+	local ic = itms_manager.ini_craft
+	local white, gray, yellow, green = utils_xml.get_color("pda_white"), utils_xml.get_color("ui_gray_1"),
+		utils_xml.get_color("pda_yellow"), utils_xml.get_color("pda_green")
+	local out, total = {}, 0
+	local ind = 1
+	while ic:section_exist(tostring(ind)) do
+		local idx = tostring(ind)
+		local title, learned, basic = nil, {}, {}
+		for i = 0, (ic:line_count(idx) or 0) - 1 do
+			local _, id, value = ic:r_line(idx, i, "", "")
+			if id == "title" then
+				title = value
+			elseif id and #id > 2 then
+				local sec = string.sub(id, 3)
+				local t = str_explode(value or "", ",")
+				if ini_sys:section_exist(sec) and #t >= 4 and note_known(t[2]) then
+					local parts = {}
+					for k = 3, #t - 1, 2 do
+						if ini_sys:section_exist(t[k]) then
+							parts[#parts + 1] = name_of(t[k]) .. " x" .. tostring(t[k + 1])
+						end
+					end
+					local line = gray .. "- " .. white .. name_of(sec) .. gray .. ": " .. table.concat(parts, ", ")
+					local list = DEFAULT_NOTES[t[2]] and basic or learned
+					list[#list + 1] = { n = name_of(sec), s = line }
+				end
+			end
+		end
+		if #learned + #basic > 0 then
+			local by_name = function(a, b) return a.n < b.n end
+			table.sort(learned, by_name)
+			table.sort(basic, by_name)
+			out[#out + 1] = "\\n \\n" .. yellow .. game.translate_string(title or idx) .. " (" .. (#learned + #basic) .. ")"
+			if #learned > 0 then
+				out[#out + 1] = "\\n" .. green .. game.translate_string("st_rz_crafting_learned")
+				for _, r in ipairs(learned) do out[#out + 1] = "\\n" .. r.s end
+			end
+			if #basic > 0 then
+				-- zakladnich receptu jsou stovky (Ukryt, Zasobniky): jen nazvy, suroviny ukaze dilna
+				local names = {}
+				for _, r in ipairs(basic) do names[#names + 1] = r.n end
+				out[#out + 1] = "\\n" .. green .. game.translate_string("st_rz_crafting_basic") .. " " .. gray .. table.concat(names, ", ")
+			end
+			total = total + #learned + #basic
+		end
+		ind = ind + 1
+	end
+	return table.concat(out), total
+end
+
+local function patch_encyclopedia()
+	local enc = ui_pda_encyclopedia_tab
+	if not (enc and enc.UpdateDescr) or enc.__rz_crafting then return end
+	enc.__rz_crafting = true
+	local orig_descr = enc.UpdateDescr
+	enc.UpdateDescr = function(section, str, ...)
+		if section == ARTICLE then
+			local ok, body, total = pcall(build_known_recipes)
+			if ok then
+				return str .. " " .. tostring(total) .. body
+			end
+			log("! clanek Zname recepty: %s", tostring(body))
+		end
+		return orig_descr(section, str, ...)
+	end
+	local orig_clr = enc.UpdateColor
+	if orig_clr then
+		enc.UpdateColor = function(section, ...)
+			if section == ARTICLE then return utils_xml.get_color("pda_white", true) end
+			return orig_clr(section, ...)
+		end
+	end
+end
+
+-- ---------------------------------------------------------------- Craft use in tooltip
+-- vysledek: { [sekce_vysledku] = true } pro recepty, kde je predmet surovinou, nebo ktere odemyka (recept)
+local tooltip_cache = {}
+
+function craftable_from(item_sec)
+	local c = tooltip_cache[item_sec]
+	if c then return c end
+	c = {}
+	local ic = itms_manager.ini_craft
+	local ind = 1
+	while ic:section_exist(tostring(ind)) do
+		local idx = tostring(ind)
+		for i = 0, (ic:line_count(idx) or 0) - 1 do
+			local _, id, value = ic:r_line(idx, i, "", "")
+			if id and id ~= "title" and #id > 2 then
+				local sec = string.sub(id, 3)
+				local t = str_explode(value or "", ",")
+				if #t >= 4 then
+					if t[2] == item_sec then
+						c[sec] = true
+					else
+						for k = 3, #t - 1, 2 do
+							if t[k] == item_sec then c[sec] = true break end
+						end
+					end
+				end
+			end
+		end
+		ind = ind + 1
+	end
+	tooltip_cache[item_sec] = c
+	return c
+end
+
+local function patch_tooltip()
+	local fs = getFS and getFS()
+	if not (fs and fs:exist("$game_scripts$", "zzz_craft_use_in_tooltip_mcm.script")) then return end
+	local m = zzz_craft_use_in_tooltip_mcm
+	if not (m and m.getCraftableItems) then return end
+	m.getCraftableItems = function(item_sec)
+		local ok, r = pcall(craftable_from, item_sec)
+		return ok and r or {}
+	end
+	log("Craft use in tooltip: recepty z vanilla dilny vcetne novych zalozek")
+end
+
+function on_game_start()
+	inject_tabs()
+	patch_recipe()
+	patch_encyclopedia()
+	patch_tooltip()
+end

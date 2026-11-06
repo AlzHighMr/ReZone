@@ -1,0 +1,529 @@
+--[[
+	ReZone - efekty munice (zvlastni naboje, dopad, vystrel, granaty)
+
+	Kazdy naboj v configs\rezone\ammo.ltx muze mit:
+	  effect     = efekt pri zasahu (pre = pred vypoctem, post = po nem)
+	  on_impact  = efekt pri dopadu strely kamkoli
+	  on_shoot   = efekt pri vystrelu
+	Seznam efektu je v tabulce EFFECTS niz. Vypocet poskozeni: rezone_ballistics.
+--]]
+
+local random, floor, max, min = math.random, math.floor, math.max, math.min
+local RB = rezone_ballistics
+
+-- ---------------------------------------------------------------- zvuky a castice
+local snd_ini = ini_file("rezone\\ammo_sounds.ltx")
+
+function sound(name, dist)
+	if not (name and snd_ini:section_exist(name)) then return end
+	dist = dist or 0
+	local which = (dist > 10 and snd_ini:r_string_ex(name, "far")) and "far" or "near"
+	local base = snd_ini:r_string_ex(name, which)
+	if not base then return end
+	local n = tonumber(snd_ini:r_string_ex(name, which .. "_amt") or 1) or 1
+	local s = xr_sound.get_safe_sound_object(base .. random(max(n, 1)))
+	if s then
+		s:play(db.actor, 0, sound_object.s2d)
+		s.volume = (dist > 10) and (0.3 + 0.7 * (1 - (clamp(dist, 2, 100) - 2) / 98)) or 1
+	end
+end
+
+local function sound_at(name, obj)
+	sound(name, db.actor:position():distance_to(obj:position()))
+end
+
+function particle_at(pos, name)
+	local p = particles_object(name)
+	if p then p:play_at_pos(pos) end
+	return p
+end
+
+function particle_bone(npc, bone_id, name)
+	local bn = RB.BONE[bone_id] or "bip01_spine"
+	local ok, pos = pcall(npc.bone_position, npc, bn)
+	particle_at(ok and pos or npc:position(), name)
+end
+
+-- ---------------------------------------------------------------- stav cilu
+local burns = {}		-- id -> { left, lo, hi }
+local stunned = {}		-- id -> konec
+local weakened = {}		-- id -> true (zirava mlha: cil dostava vic, dava min)
+local splode = {}		-- id -> true (hlava po smrti zmizi, kdyz zasah zabil)
+
+local function mark_splode(npc)
+	local id = npc:id()
+	splode[id] = true
+	CreateTimeEvent("rz_head", "c" .. id, 1, function() splode[id] = nil return true end)
+end
+
+function ignite(npc, lo, hi, seconds)
+	if not npc or npc:id() == AC_ID then return end
+	local b = burns[npc:id()]
+	if b then
+		b.left = max(b.left, seconds)
+	else
+		burns[npc:id()] = { left = seconds, lo = lo, hi = hi }
+	end
+	sound_at("incendiary", npc)
+	particle_bone(npc, 11, "damage_fx\\effects\\body_burn_01")
+end
+
+function stun(npc)
+	if not npc then return end
+	if npc:id() == AC_ID then
+		level.add_cam_effector("camera_effects\\fusker.anm", 959, false, "")
+		return
+	end
+	stunned[npc:id()] = time_global() + 2000
+	if IsStalker(npc) and npc.play_cycle then
+		pcall(function()
+			if npc:movement_type() ~= move.stand then npc:set_movement_type(move.stand) end
+			npc:play_cycle(random(2) == 1 and "norm_2_critical_hit_torso_0" or "norm_1_critical_hit_head_0", true)
+		end)
+	end
+end
+
+function nova(pos, radius, power)
+	local h = hit()
+	h.type = hit.shock
+	h.draftsman = db.actor
+	h.power = power
+	h.bone = "bip01_spine"
+	h.direction = vector():set(0, 0, 0)
+	level.iterate_nearest(pos, radius, function(obj)
+		if obj and obj.alive and obj:alive() and obj:id() ~= AC_ID then
+			obj:hit(h)
+			particle_at(obj:position(), "artefact\\effects\\af_electra_show_flash_00")
+		end
+	end)
+end
+
+local function blow_at(pos)
+	local se = alife_create_item("bullet_blow", { pos, db.actor:level_vertex_id(), db.actor:game_vertex_id() })
+	if not se then return end
+	CreateTimeEvent("rz_blow", "b" .. se.id, 0, function(id)
+		local o = level.object_by_id(id)
+		if o then o:explode(0) return true end
+		return false
+	end, se.id)
+end
+
+-- .health = x v enginu PRIDAVA (ChangeHealth); presne nastaveni pres set_health_ex (modded exes)
+local function set_hp(o, v)
+	v = clamp(v, 0, 1)
+	if o.set_health_ex then o:set_health_ex(v) else o.health = v - o.health end
+end
+
+local function heal_actor(power)
+	if power > 0.5 and db.actor.health < 1 then
+		local s = xr_sound.get_safe_sound_object("Soul_" .. random(5))
+		if s then s:play(db.actor, 0, sound_object.s2d) end
+	end
+	set_hp(db.actor, db.actor.health + 0.05 + 0.2 * power)
+end
+
+local function retype(ctx, t)
+	-- zivelny zasah: bez nasobice casti tela, ochranu resi engine
+	ctx.s_hit.type = t
+	if ctx.human and ctx.mult and ctx.mult > 0 then
+		ctx.s_hit.power = ctx.s_hit.power / ctx.mult
+	end
+end
+
+local function aval(ctx, key, def)
+	return RB.ini:r_float_ex(ctx.ammo.sec, key) or def
+end
+
+local function is_companion(npc)
+	return dialogs_axr_companion and dialogs_axr_companion.is_actor_companion and dialogs_axr_companion.is_actor_companion(db.actor, npc)
+end
+
+-- ---------------------------------------------------------------- efekty pri zasahu
+EFFECTS = {}
+
+-- otres: cil se zapotaci a chvili strili vedle
+EFFECTS.flinch = { post = function(ctx)
+	local ch = clamp(0.95 - (ctx.armor - ctx.ap) * 5, 0.01, 0.8)
+	if ctx.human and RB.HEAD[ctx.bone] then ch = min(ch + 0.1, 1) end
+	if random() < ch then stun(ctx.npc) end
+end }
+
+-- broky: koncetiny hure chranene, vic tupeho narazu
+EFFECTS.buckshot = { pre = function(ctx)
+	if ctx.human and RB.is_limb(ctx.bone) then
+		ctx.armor = max(ctx.armor - 0.1, ctx.armor / 2)
+		ctx.impact = ctx.impact + 0.15
+	end
+end }
+
+-- jednotna strela: na hlavu prorazi lehkou ochranu, na trup srazi
+EFFECTS.slug = { pre = function(ctx)
+	if not ctx.human then return end
+	if RB.HEAD[ctx.bone] then
+		if RB.npc_armor(ctx.npc, 11) <= ctx.ap * 3 then
+			ctx.armor = max(ctx.armor - ctx.ap, 0)
+			mark_splode(ctx.npc)
+		end
+	elseif RB.TORSO[ctx.bone] and random() < 0.9 then
+		ctx.slug_stun = true
+	end
+end, post = function(ctx)
+	if ctx.slug_stun then
+		stun(ctx.npc)
+		set_hp(ctx.npc, math.max(0.1, ctx.npc.health - 0.1))
+	end
+end }
+
+-- expanzni naboj: hlava bez tezke helmy = jista smrt
+EFFECTS.headshot = { pre = function(ctx)
+	if ctx.human and RB.HEAD[ctx.bone] and ctx.armor < 0.35 and not is_companion(ctx.npc) then
+		ctx.force_full = true
+		mark_splode(ctx.npc)
+	end
+end }
+
+-- varmint: proti mutantum vic
+EFFECTS.varma = { post = function(ctx)
+	if not ctx.human then ctx.s_hit.power = ctx.s_hit.power * aval(ctx, "v_mult", 1.5) end
+end }
+
+-- podzvukovy: z tlumene zbrane na nic netusiciho cil +20 % a lepsi pruraz
+EFFECTS.ambush = { pre = function(ctx)
+	local enemy = ctx.npc.best_enemy and ctx.npc:best_enemy()
+	if ctx.wpn:weapon_is_silencer() and not (enemy and enemy:id() == AC_ID) then
+		ctx.extra = ctx.extra * 1.2
+		ctx.ap = ctx.ap + 0.05
+	end
+end }
+
+-- match: bez ubytku na vzdalenost, pruraz roste se vzdalenosti (do 200 m)
+EFFECTS.match = { pre = function(ctx)
+	ctx.no_falloff = true
+	ctx.ap = clamp(ctx.ap * clamp(1 + ctx.dist / 200, 1, 2), 0, 0.399)
+end }
+
+-- terminal: do 10 m silnejsi, dal slabsi
+EFFECTS.terminal = { pre = function(ctx)
+	local k = clamp(1 - ctx.dist / 10, -1, 1)
+	ctx.impact = ctx.impact * (1 + 0.3 * k)
+	ctx.ap = clamp(ctx.ap * (1 + 0.06 * k), 0, 0.399)
+	ctx.extra = ctx.extra * (1 + 0.3 * k)
+end }
+
+EFFECTS.rip = { post = function(ctx) heal_actor(ctx.s_hit.power) end }
+EFFECTS.soulripper = { post = function(ctx)
+	if RB.HEAD[ctx.bone] then heal_actor(ctx.s_hit.power) end
+end }
+
+EFFECTS.incendiary = { post = function(ctx)
+	if random() < aval(ctx, "ignite", 0) then ignite(ctx.npc, 5, 15, random(5, 20)) end
+end }
+
+EFFECTS.dragonsbreath = { post = function(ctx)
+	if ctx.human then RB.set_armor(ctx.npc, ctx.bone, ctx.armor - 0.03) end
+	local k = ctx.human and 1 or (ctx.mult or 1)
+	ignite(ctx.npc, 5 * k, 12 * k, random(8, 16))
+	retype(ctx, hit.burn)
+end }
+
+EFFECTS.acid = { post = function(ctx)
+	local k = aval(ctx, "acid", 0.2)
+	if ctx.human then
+		RB.set_armor(ctx.npc, ctx.bone, ctx.armor * (1 - k))
+	else
+		local imm = SYS_GetParam(0, ctx.npc:section(), "immunities_sect")
+		local chem = imm and SYS_GetParam(2, imm, "chemical_burn_immunity") or 1
+		RB.set_armor(ctx.npc, 1, ctx.armor * (1 - k * chem))
+	end
+	particle_bone(ctx.npc, ctx.bone, "artefact\\effects\\af_acidic_idle_color")
+	sound_at("acid", ctx.npc)
+	retype(ctx, hit.chemical_burn)
+end }
+
+-- chaos: nahodna pruraz i sila, obcas nahodny efekt navic
+EFFECTS.chaos = { pre = function(ctx)
+	local r = random()
+	ctx.ap = clamp(ctx.ap + r / 9, 0, 1)
+	ctx.extra = ctx.extra * (0.6 + (1 - r))
+	ctx.chaos = random(15)
+	if ctx.chaos == 6 then ctx.force_full = true end
+end, post = function(ctx)
+	local c = ctx.chaos
+	if c == 3 then ignite(ctx.npc, 1, 20, 10)
+	elseif c == 4 and ctx.human then stun(ctx.npc)
+	elseif c == 5 then set_hp(db.actor, db.actor.health + 0.1 * ctx.s_hit.power)
+	elseif c == 7 then
+		RB.set_armor(ctx.npc, ctx.bone, ctx.armor * 0.8)
+		particle_bone(ctx.npc, ctx.bone, "artefact\\effects\\af_acidic_idle_color")
+		sound_at("acid", ctx.npc)
+	elseif c == 8 then blow_at(ctx.npc:position())
+	end
+end }
+
+-- elektro: cim tezsi kovove brneni, tim vic boli; tezke brneni vyboji okoli
+EFFECTS.shock = { pre = function(ctx)
+	if ctx.human then
+		ctx.shock_tier = clamp(floor(ctx.armor * 20), 0, 7)
+		ctx.extra = ctx.extra * (1 + ctx.shock_tier * 0.6)
+	end
+end, post = function(ctx)
+	local t = ctx.shock_tier or 0
+	if t > 3 then
+		particle_bone(ctx.npc, ctx.bone, "amik\\anomaly\\electra\\electra_dust_distort")
+		nova(ctx.npc:position(), t / 2, t * 0.3)
+		sound_at("electric_big", ctx.npc)
+	else
+		sound_at("electric", ctx.npc)
+	end
+	retype(ctx, hit.shock)
+end }
+
+EFFECTS.fragment = { post = function(ctx)
+	if ctx.penetrated and random(3) == 3 then
+		ctx.s_hit.power = ctx.s_hit.power * aval(ctx, "frag", 1.5)
+	end
+end }
+
+-- zirava mlha: cile v okoli 5 m dostavaji o 20 % vic a davaji o 30 % min
+EFFECTS.corrosive = { post = function(ctx)
+	particle_bone(ctx.npc, ctx.bone, "artefact\\effects\\af_acidic_show_01")
+	sound_at("acid", ctx.npc)
+	level.iterate_nearest(ctx.npc:position(), 5, function(o)
+		if o and o.alive and o:alive() and o:id() ~= AC_ID then
+			weakened[o:id()] = true
+			particle_at(o:position(), "artefact\\effects\\af_acidic_idle_color")
+		end
+	end)
+end }
+
+function pre(ctx)
+	local e = EFFECTS[ctx.ammo.effect]
+	if e and e.pre then e.pre(ctx) end
+end
+
+function post(ctx)
+	local e = EFFECTS[ctx.ammo.effect]
+	if e and e.post then e.post(ctx) end
+end
+
+-- ---------------------------------------------------------------- dopad a vystrel
+IMPACT = {}
+IMPACT.explode = function(b) blow_at(b.position) end
+IMPACT.shock_arc = function(b)
+	if b.target_id == 65535 and b.material and string.find(b.material, "metal") then
+		particle_at(b.position, "amik\\anomaly\\electra\\electra_dust_distort")
+		nova(b.position, 3, 0.5)
+		sound("electric_big", db.actor:position():distance_to(b.position))
+	end
+end
+
+local function on_impact(b)
+	if not (b and b.parent_id == 0 and b.section) then return end
+	local a = RB.ammo(b.section)
+	local f = a and a.on_impact and IMPACT[a.on_impact]
+	if f then pcall(f, b) end
+end
+
+local muzzle_n = 0
+local function muzzle(name, wpn)
+	if not wpn then return end
+	local hud = SYS_GetParam(0, wpn:section(), "hud")
+	local bone = hud and SYS_GetParam(0, hud, "fire_bone") or "wpn_body"
+	local ok, pos = pcall(wpn.bone_position, wpn, bone, true)
+	local p = particle_at(ok and pos or db.actor:position(), name)
+	if p then
+		muzzle_n = muzzle_n + 1
+		CreateTimeEvent("rz_muzzle", "m" .. muzzle_n, 0.7, function() p:stop() return true end)
+	end
+end
+
+SHOOT = {
+	wear_random = function(wpn) if random(4) == 1 then wpn:set_condition(clamp(wpn:condition() - 0.01, 0, 1)) end end,
+	muzzle_acid = function(wpn) muzzle("artefact\\effects\\af_acidic_idle_color_trail", wpn) end,
+	muzzle_shock = function(wpn) muzzle("anomaly2\\effects\\electra_entrance_small", wpn) end,
+	muzzle_grav = function(wpn) muzzle("anomaly2\\bloodsucker_shield", wpn) end,
+	muzzle_grav_snd = function(wpn) muzzle("anomaly2\\bloodsucker_shield", wpn) sound("soulripper", 0) end,
+	muzzle_fire = function(wpn) muzzle("artefact\\af_thermal_idle", wpn) end,
+}
+function shoot(name, wpn)
+	local f = name and SHOOT[name]
+	if f then pcall(f, wpn) end
+end
+
+-- ---------------------------------------------------------------- granaty z granatometu
+local last_launcher = nil
+local function remember_launcher()
+	local w = db.actor:active_item()
+	if not w then return end
+	if w:weapon_in_grenade_mode() or w:clsid() == clsid.wpn_rg6_s or w:clsid() == clsid.wpn_rg6 then
+		local list = utils_item.get_ammo(nil, w:id())
+		last_launcher = list and list[w:get_ammo_type() + 1] or "ammo_vog-25"
+	end
+end
+
+local function bomb_spawn(sec, pos)
+	return alife_create_item(sec, { pos, db.actor:level_vertex_id(), db.actor:game_vertex_id() })
+end
+
+BLAST = {}
+BLAST.launcher = function(pos, a)
+	local bomb = RB.ini:r_string_ex(a, "bomb")
+	local se = bomb and bomb_spawn(bomb, pos)
+	if not se then return end
+	CreateTimeEvent("rz_bomb", "b" .. se.id, 0, function(id)
+		local o = level.object_by_id(id)
+		if o then o:explode(0) return true end
+		return false
+	end, se.id)
+end
+BLAST.cluster = function(pos, a)
+	local bomb = RB.ini:r_string_ex(a, "bomb")
+	if not bomb then return end
+	particle_at(pos, "explosions\\explosion_03")
+	for i = 1, RB.ini:r_float_ex(a, "bombs") or 1 do
+		local p = vector():set(pos.x + random_float(-1, 1), pos.y + 1 + random(), pos.z + random_float(-1, 1))
+		local se = bomb_spawn(bomb, p)
+		if se then
+			CreateTimeEvent("rz_cluster", "c" .. se.id, 0, function(id)
+				local o = level.object_by_id(id)
+				if not o then return false end
+				local shell = o:get_physics_shell()
+				if shell then
+					shell:apply_force(2000 + random_float(-1, 1) * 20000, 2000 + random() * 20000, 2000 + random_float(-1, 1) * 20000)
+				end
+				CreateTimeEvent("rz_cluster", "d" .. id, 0.2 + 3 * random(), function(id2)
+					local o2 = level.object_by_id(id2)
+					if o2 then o2:explode(0) end
+					return true
+				end, id)
+				return true
+			end, se.id)
+		end
+	end
+end
+BLAST.firebomb = function(pos, a)
+	particle_at(pos, "explosions\\effects\\expl_smoke_big_veh")
+	particle_at(pos, "explosions\\effects\\expl_distortion")
+	sound("incendiary", db.actor:position():distance_to(pos))
+	level.iterate_nearest(pos, 10, function(o)
+		if o and o:id() ~= AC_ID and o.alive and o:alive() then ignite(o, 20, 40, 10) end
+	end)
+end
+
+class "rz_grenade_binder" (object_binder)
+function rz_grenade_binder:__init(obj) super(obj)
+	self.ray = ray_pick()
+	self.ray:set_ignore_object(obj)
+	self.ray:set_flags(1 + 2)
+	self.t = 0
+	self.object:set_fastcall(self.fastcall, self)
+end
+function rz_grenade_binder:fastcall()
+	if self.done then return true end
+	local obj = self.object
+	if obj:parent() then return end
+	local pos = obj:position()
+	if not self.last then
+		self.last = vector():set(pos)
+		return
+	end
+	self.t = self.t + device().time_delta
+	local dir = vector():set(pos):sub(self.last)
+	local len = dir:magnitude()
+	local hit_now = false
+	if len > 0.001 then
+		self.ray:set_position(self.last)
+		self.ray:set_direction(dir:normalize())
+		self.ray:set_range(len + 0.15)
+		hit_now = self.ray:query()
+	end
+	self.last = vector():set(pos)
+	if hit_now or self.t > 5000 then
+		local a = last_launcher or "ammo_vog-25"
+		local eff = RB.ini:r_string_ex(a, "effect") or "launcher"
+		local f = BLAST[eff] or BLAST.launcher
+		pcall(f, pos, a)
+		self.done = true                                   -- jen jeden vybuch
+		if obj.destroy_object then pcall(obj.destroy_object, obj)
+		else pcall(alife_release_id, obj:id()) end
+		return true
+	end
+end
+function rz_grenade_binder:net_spawn(se)
+	return object_binder.net_spawn(self, se)
+end
+
+function bind(obj)
+	if not alife_object(obj:id()) then
+		obj:bind_object(rz_grenade_binder(obj))
+	end
+end
+
+-- ---------------------------------------------------------------- casovac a callbacky
+local next_tick = 0
+local function on_update()
+	local now = time_global()
+	if now < next_tick then return end
+	next_tick = now + 1000
+	for id, b in pairs(burns) do
+		local o = level.object_by_id(id)
+		if o and o:alive() and b.left > 0 then
+			local h = hit()
+			h.type = hit.burn
+			h.draftsman = db.actor
+			h.power = random(floor(b.lo), max(floor(b.lo), floor(b.hi))) / 100
+			h.bone = "bip01_spine"
+			h.direction = vector():set(0, 0, 0)
+			o:hit(h)
+			b.left = b.left - 1
+		else
+			burns[id] = nil
+		end
+	end
+	for id, t in pairs(stunned) do
+		if now > t then stunned[id] = nil end
+	end
+end
+
+local function on_dispersion(obj, wpn, body_state, move_type, temp)
+	if stunned[obj:id()] then temp.dispersion = 1 end
+end
+
+local function on_npc_hit(npc, s_hit)
+	if weakened[npc:id()] then s_hit.power = s_hit.power * 1.2 end
+end
+
+local function on_actor_hit(s_hit)
+	local d = s_hit.draftsman
+	if d and weakened[d:id()] and s_hit.type == hit.wound then s_hit.power = s_hit.power * 0.7 end
+end
+
+local function on_death(npc)
+	if not npc then return end
+	local id = npc:id()
+	burns[id], stunned[id], weakened[id] = nil, nil, nil
+	if splode[id] then
+		splode[id] = nil
+		CreateTimeEvent("rz_head", "h" .. id, 0, function()
+			if not npc:alive() then
+				pcall(npc.set_bone_visible, npc, "bip01_head", false, true)
+				particle_bone(npc, 15, "anomaly2\\effects\\body_tear_blood_05")
+				particle_bone(npc, 15, "anomaly2\\effects\\body_tear_blood_01")
+				sound_at("headshot", npc)
+			end
+			return true
+		end)
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_update", on_update)
+	if rezone_core.has_callback("npc_shot_dispersion") then RegisterScriptCallback("npc_shot_dispersion", on_dispersion) end
+	RegisterScriptCallback("npc_on_before_hit", on_npc_hit)
+	RegisterScriptCallback("monster_on_before_hit", on_npc_hit)
+	RegisterScriptCallback("actor_on_before_hit", on_actor_hit)
+	RegisterScriptCallback("npc_on_death_callback", on_death)
+	RegisterScriptCallback("monster_on_death_callback", on_death)
+	if rezone_core.has_callback("bullet_on_impact") then RegisterScriptCallback("bullet_on_impact", on_impact) end
+	RegisterScriptCallback("actor_on_weapon_before_fire", remember_launcher)
+end

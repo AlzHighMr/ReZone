@@ -1,0 +1,59 @@
+--[[
+	ReZone Helmets - vlastni system oddelenych helem
+
+	- kazdy oblek ma slot na helmu (DLTX ..._rezone_armor_outfits.ltx), ochrana hlavy je jen z helmy
+	- uzavrene obleky (SEVA, exo, Nosorog, NBC, SSP...) prisly o vestavenou masku: cast ochrany
+	  proti radiaci, psi a chemii je ted v helme
+	- helmy maji pancir hlavy podle profilu obleku (CoP / Anomaly / Hardcore, rezone_armor.script)
+	- mrtve NPC v uzavrenem obleku, jehoz model nema samostatnou helmu, upusti i odpovidajici helmu
+	  (configs\rezone\helmets.ltx, MCM Gameplay > Balistika). Plati stejna pravidla dropu jako
+	  u obleku (postupny drop, stav podle ranku).
+--]]
+
+local core = rezone_core
+local PATH = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helm_drop"
+local PATH_ON = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helmets"
+
+local closed = nil
+
+local function load_table()
+	closed = {}
+	local ini = ini_file("rezone\\helmets.ltx")
+	if not (ini and ini:section_exist("closed_suits")) then return end
+	local n = ini:line_count("closed_suits")
+	for i = 0, n - 1 do
+		local _, k, v = ini:r_line_ex("closed_suits", i, "", "")
+		if k and v and v ~= "" and ini_sys:section_exist(v) then closed[k] = v end
+	end
+end
+
+-- helma pro oblek (nil = zadna)
+function helmet_for(outfit)
+	if not closed then load_table() end
+	return outfit and closed[outfit]
+end
+
+local function patch()
+	local dm = death_manager
+	if not (dm and dm.get_outfit_by_visual) then
+		core.warn("helmy: death_manager.get_outfit_by_visual chybi, drop helem z uzavrenych obleku nefunguje")
+		return
+	end
+	local orig = dm.get_outfit_by_visual
+	dm.get_outfit_by_visual = function(visual, ...)
+		local tbl = orig(visual, ...)
+		if tbl and tbl[1] and (not tbl[2] or tbl[2] == "") and core.get(PATH) ~= false and core.get(PATH_ON) ~= false then
+			local h = helmet_for(tbl[1])
+			if h then
+				local t = { tbl[1], h }
+				for i = 3, #tbl do t[i] = tbl[i] end
+				return t
+			end
+		end
+		return tbl
+	end
+end
+
+function on_game_start()
+	patch()
+end

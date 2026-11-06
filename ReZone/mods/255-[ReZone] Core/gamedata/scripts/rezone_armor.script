@@ -1,0 +1,90 @@
+--[[
+	ReZone - profil obleku hrace (Call of Pripyat / Anomaly / Hardcore)
+
+	Vychozi hodnoty obleku (DLTX mod_system_..._rezone_armor_outfits.ltx) jsou profil CoP.
+	Jiny profil se nacte z configs\rezone\armor_<profil>.ltx a zapise se do pameti hry
+	(system.ltx na disku zustane beze zmeny). Engine cte hodnoty obleku pri vytvoreni predmetu,
+	proto se zmena projevi az po nacteni savu (obleky v inventari i ve svete).
+	Vyzaduje modded exes (ini_sys:set_readonly / w_string), jinak zustane profil CoP.
+
+	ReZone helmy vypnute (MCM): uzavrene obleky zase bez slotu na helmu, s plnou ochranou masky
+	a s hlavou podle sve helmy (configs\rezone\armor_<profil>_closed.ltx).
+--]]
+
+local core = rezone_core
+-- profil obleku = predvolba balistiky (0 cop / 1 trilogy / 2 hardcore)
+local PATH = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/preset"
+local PATH_HELM = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helmets"
+local NAMES = { [0] = "cop", [1] = "trilogy", [2] = "hardcore" }
+
+-- co je ted v pameti hry: ini_sys prezije nacteni savu (Lua stav ne), proto se znacka pise
+-- primo do ini_sys (sekce exo_outfit, klic rz_armor_profile); bez znacky = DLTX = cop
+local MARK_SEC, MARK_KEY = "exo_outfit", "rz_armor_profile"
+local function applied_get()
+	return ini_sys and ini_sys:r_string_ex(MARK_SEC, MARK_KEY) or "cop"
+end
+
+local warned = false
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and true or false
+end
+
+local function write_file(file)
+	local ini = ini_file(file)
+	if not (ini and ini:section_exist("exo_outfit")) then
+		core.warn("obleky: chybi configs\\%s", file)
+		return 0, 0
+	end
+	local n, bad = 0, 0
+	ini:section_for_each(function(sec)
+		if ini_sys:section_exist(sec) then
+			for i = 0, ini:line_count(sec) - 1 do
+				local _, key, val = ini:r_line_ex(sec, i, "", "")
+				if key and key ~= "" and val and val ~= "" then
+					if pcall(ini_sys.w_string, ini_sys, sec, key, val, "") then n = n + 1 else bad = bad + 1 end
+				end
+			end
+		end
+		return false
+	end)
+	return n, bad
+end
+
+-- name = profil, helm = ReZone helmy zapnute
+local function apply(name, helm)
+	local key = name .. (helm and "" or "|closed")
+	local applied = applied_get()
+	if key == applied then return end
+	if not can_write() then
+		if not warned then core.warn("obleky: tato verze exe neumi menit hodnoty za behu (chybi modded exes) - zustava profil CoP") end
+		warned = true
+		return
+	end
+	local n, bad = 0, 0
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		-- profil (vychozi DLTX = cop + helmy zapnute: neni co psat, kdyz se nic nemenilo)
+		if not (name == "cop" and applied == "cop") then
+			local a, b = write_file("rezone\\armor_" .. name .. ".ltx"); n, bad = n + a, bad + b
+		end
+		if not helm then
+			local a, b = write_file("rezone\\armor_" .. name .. "_closed.ltx"); n, bad = n + a, bad + b
+		end
+		ini_sys:w_string(MARK_SEC, MARK_KEY, key, "")
+	end)
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("obleky: %s", tostring(err)) end
+	core.log("obleky: profil %s, helmy %s (%d hodnot, %d chyb) - plati pro obleky nactene od ted", name, helm and "zapnute" or "vypnute", n, bad)
+end
+
+function load()
+	local v = tonumber(core.get(PATH)) or 0
+	apply(NAMES[v] or "cop", core.get(PATH_HELM) ~= false)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()		-- hned, pred nactenim predmetu z ulozene hry
+end

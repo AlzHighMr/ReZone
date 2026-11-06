@@ -1,0 +1,349 @@
+--[[
+	ReZone - balistika (zasahy NPC a mutantu od strel)
+
+	Vlastni vypocet poskozeni misto engine vzorce. Data munice: configs\rezone\ammo.ltx.
+
+	Predvolby (ReZone MCM > Gameplay > Balistika):
+	  CoP (vychozi)  vzorec Call of Pripyat: kdyz prurazna sila (ap) prekona brneni casti
+	                 tela, poskozeni klesne v pomeru (ap - brneni) / ap; kdyz ne, projde jen
+	                 tupy naraz (hit_fraction_npc z brneni postavy). Nasobice casti tela
+	                 jsou vanilla (stalker_damage).
+	  Anomaly       stejny vzorec, NPC o neco mekci a tupy naraz silnejsi (story hra).
+	  Hardcore       plynula krivka bez skoku, smrtelnejsi zasahy do hlavy, brneni se
+	                 pod palbou postupne rozbiji.
+
+	Poradi: zakladni sila zbrane * nasobic naboje * vzdalenost * rychlost strely
+	        * cast tela * pruraz * rozsireni (hp) * efekt munice / odolnost NPC
+	Efekty munice (rezone_ammo_fx) se zapojuji pred a po vypoctu.
+--]]
+
+local floor, max, min, random = math.floor, math.max, math.min, math.random
+
+PATH = "rezone/rz_gameplay/rz_ball/"
+DEFAULTS = { preset = 0, npc_tough = 1 }
+
+function cfg(key)
+	local v = rezone_core and rezone_core.get(PATH .. key)
+	if v == nil then v = DEFAULTS[key] end
+	return v
+end
+
+-- ---------------------------------------------------------------- predvolby
+PRESETS = {
+	-- predvolba zaroven vybira profil obleku hrace (rezone_armor: 0 cop, 1 trilogy, 2 hardcore)
+	[0] = { name = "cop",      curve = "cop",    tough = 1.00, blunt_min = 0.10, bones = "vanilla", degrade = false },
+	[1] = { name = "trilogy",  curve = "cop",    tough = 0.85, blunt_min = 0.18, bones = "vanilla", degrade = false },
+	[2] = { name = "hardcore", curve = "smooth", tough = 1.00, blunt_min = 0.12, bones = "lethal",  degrade = true  },
+}
+function preset()
+	return PRESETS[tonumber(cfg("preset")) or 0] or PRESETS[0]
+end
+
+-- ---------------------------------------------------------------- data munice
+ini = ini_file("rezone\\ammo.ltx")
+local ammo_cache = {}
+
+function ammo(sec)
+	if not sec then return end
+	local a = ammo_cache[sec]
+	if a ~= nil then return a or nil end
+	if not ini:section_exist(sec) then ammo_cache[sec] = false return end
+	local function f(k, d) return ini:r_float_ex(sec, k) or d end
+	a = {
+		sec = sec,
+		hit = f("hit", SYS_GetParam(2, sec, "k_hit") or 1),
+		ap = f("ap", SYS_GetParam(2, sec, "k_ap") or 0),
+		impact = f("impact", 0.3),
+		pen = f("pen", 0),
+		hp = f("hp", 1),
+		effect = ini:r_string_ex(sec, "effect") or "none",
+		on_impact = ini:r_string_ex(sec, "on_impact"),
+		on_shoot = ini:r_string_ex(sec, "on_shoot"),
+		air = SYS_GetParam(2, sec, "k_air_resistance") or 0.05,
+	}
+	ammo_cache[sec] = a
+	return a
+end
+
+-- ---------------------------------------------------------------- casti tela
+BONE = {
+	[1] = "bip01_pelvis", [2] = "bip01_pelvis", [3] = "bip01_l_thigh", [4] = "bip01_l_calf",
+	[5] = "bip01_l_foot", [6] = "bip01_l_foot", [7] = "bip01_r_thigh", [8] = "bip01_r_calf",
+	[9] = "bip01_r_foot", [10] = "bip01_r_foot", [11] = "bip01_spine", [12] = "bip01_spine1",
+	[13] = "bip01_spine2", [14] = "bip01_neck", [15] = "bip01_head", [16] = "eye_left",
+	[17] = "eye_right", [18] = "eyelid_1", [19] = "jaw_1", [20] = "bip01_l_clavicle",
+	[21] = "bip01_l_upperarm", [22] = "bip01_l_forearm", [33] = "bip01_r_clavicle",
+	[34] = "bip01_r_upperarm", [35] = "bip01_r_forearm", [46] = "bip01_pelvis",
+}
+for i = 23, 32 do BONE[i] = "bip01_l_hand" end
+for i = 36, 45 do BONE[i] = "bip01_r_hand" end
+
+HEAD = { [14] = true, [15] = true, [16] = true, [17] = true, [18] = true, [19] = true }
+TORSO = { [1] = true, [2] = true, [11] = true, [12] = true, [13] = true, [20] = true, [33] = true, [46] = true }
+function is_limb(id) return not HEAD[id] and not TORSO[id] end
+
+-- Hardcore: smrtelnejsi hlava a krk, koncetiny slabsi (vlastni tabulka)
+local LETHAL = {
+	bip01_head = 3.6, eye_left = 4.5, eye_right = 4.5, eyelid_1 = 4.5, jaw_1 = 3.2, bip01_neck = 2.4,
+	bip01_spine = 1.1, bip01_spine1 = 1.1, bip01_spine2 = 1.15, bip01_pelvis = 0.95,
+	bip01_l_clavicle = 0.9, bip01_r_clavicle = 0.9, bip01_l_upperarm = 0.75, bip01_r_upperarm = 0.75,
+	bip01_l_forearm = 0.65, bip01_r_forearm = 0.65, bip01_l_hand = 0.5, bip01_r_hand = 0.5,
+	bip01_l_thigh = 0.75, bip01_r_thigh = 0.75, bip01_l_calf = 0.6, bip01_r_calf = 0.6,
+	bip01_l_foot = 0.45, bip01_r_foot = 0.45,
+}
+local vanilla_mult = {}
+function bone_mult(bone_id, table_name)
+	local name = BONE[bone_id] or "bip01_spine"
+	if table_name == "lethal" then return LETHAL[name] or 0.8 end
+	local v = vanilla_mult[name]
+	if v == nil then
+		local s = SYS_GetParam(0, "stalker_damage", name)
+		v = s and tonumber(str_explode(s, ",")[1]) or 1
+		vanilla_mult[name] = v
+	end
+	return v
+end
+
+-- brneni postavy: sekce bones_protection_sect z vizualu (stejne cte i engine)
+local prot_sect_by_visual = {}
+local prot_cache = {}
+local worn = {}			-- worn[npc_id][bone_id] = brneni po poskozeni (Hardcore)
+
+local function prot_sect(npc)
+	local vis = npc:get_visual_name()
+	local s = prot_sect_by_visual[vis]
+	if s == nil then
+		local ud = game.get_visual_userdata(vis)
+		s = ud and ud:r_string_ex("bone_protection", "bones_protection_sect") or "stalker_hero_1"
+		if ud then ud:close() end
+		prot_sect_by_visual[vis] = s
+	end
+	return s
+end
+
+function npc_armor(npc, bone_id)
+	local sect = prot_sect(npc)
+	local c = prot_cache[sect]
+	if not c then
+		c = { frac = SYS_GetParam(2, sect, "hit_fraction_npc") or 0.15 }
+		prot_cache[sect] = c
+	end
+	local w = worn[npc:id()]
+	if w and w[bone_id] then return w[bone_id], c.frac end
+	local a = c[bone_id]
+	if a == nil then
+		local s = SYS_GetParam(0, sect, BONE[bone_id] or "bip01_spine") or "0,0"
+		a = tonumber(str_explode(s, ",")[2]) or 0
+		c[bone_id] = a
+	end
+	return a, c.frac
+end
+
+function set_armor(npc, bone_id, value)
+	local id = npc:id()
+	worn[id] = worn[id] or {}
+	worn[id][bone_id] = clamp(value, 0, 1)
+end
+
+function npc_frac(npc)
+	local _, frac = npc_armor(npc, 11)
+	return frac or 0.15
+end
+
+function mutant_skin(npc)
+	local w = worn[npc:id()]
+	if w and w[1] then return w[1] end
+	local sec = npc:section()
+	local p = SYS_GetParam(0, sec, "protections_sect")
+	return SYS_GetParam(2, sec, "skin_armor") or (p and SYS_GetParam(2, p, "skin_armor")) or 0
+end
+
+-- ---------------------------------------------------------------- vzorce pruraznosti
+-- CoP: strela, ktera brneni prorazi, ztrati cast sily podle toho, jak tesne ho prekonala
+-- (ap = brneni -> 40 %, ap = 2x brneni -> 70 %, bez brneni 100 %). Kdyz neprorazi, projde
+-- jen tupy naraz; tesne pod hranici (75-100 % brneni) naraz roste k 40 %.
+function curve_cop(ap, armor, blunt)
+	if armor <= 0.001 then return 1 end
+	if ap >= armor then
+		return 1 - 0.6 * (armor / ap)
+	end
+	local near = clamp((ap / armor - 0.75) / 0.25, 0, 1)
+	return blunt + (max(0.4, blunt) - blunt) * near
+end
+
+-- Hardcore: plynule, bez skoku mezi tridami brneni
+function curve_smooth(ap, armor, blunt, impact, pen)
+	local r = ap - armor
+	if r >= 0 then
+		if r > 0.2 then return 1 - clamp((r - 0.2) * 2, 0, (pen or 0) * 0.5) end
+		return 1
+	end
+	if r > -0.1 then return 1 + r * 6.5 end
+	return max(blunt + 0.08 * (impact or 0.3), 0.35 * (1 + (r + 0.1) * 4))
+end
+
+-- ---------------------------------------------------------------- vzdalenost a rychlost
+local fired = { id = nil, vel = 0 }		-- bonus rychlosti strely z upgradu drzene zbrane
+function on_before_fire()
+	local w = db.actor and db.actor:active_item()
+	if not (w and IsWeapon(w)) then return end
+	local now = time_global()
+	-- stejna zbran: prepocet jen jednou za 20 s (upgrady u mechanika se tak projevi)
+	if fired.id == w:id() and fired.t and now - fired.t < 20000 then return end
+	fired.id, fired.t = w:id(), now
+	local sec = w:section()
+	local base = SYS_GetParam(2, sec, "bullet_speed") or 1
+	local add = 0
+	for _, up in pairs(utils_item.get_upgrades_installed(w) or {}) do
+		local s = ini_sys:r_string_ex(up, "section")
+		local v = s and ini_sys:r_string_ex(s, "bullet_speed")
+		if v then add = add + (tonumber(v) or 0) end
+	end
+	fired.vel = (base > 0) and add / base or 0
+end
+
+local function dist_mult(a, shooter, target)
+	if not (shooter and target) then return 1 end
+	local d = shooter:position():distance_to(target:position())
+	return clamp(1 / (1 + d * clamp(a.air, 0, 1) / 450), 0.3, 1), d
+end
+
+-- ---------------------------------------------------------------- jedna strela jen jednou na cil
+local seen, seen_n = {}, 0
+local function duplicate(s_hit, npc)
+	local bid = s_hit.bullet_id
+	if not bid then return false end
+	local key = bid .. ":" .. npc:id()
+	local now = time_global()
+	local t = seen[key]
+	seen[key] = now
+	seen_n = seen_n + 1
+	if seen_n > 256 then
+		seen_n = 0
+		for k, v in pairs(seen) do if now - v > 1000 then seen[k] = nil end end
+	end
+	return t ~= nil and (now - t) <= 15
+end
+
+-- ---------------------------------------------------------------- hlavni vypocet
+-- vraci ctx (s_hit.power je nova sila) nebo nil = nechat engine
+function compute(npc, s_hit, bone_id, human)
+	if s_hit.type ~= hit.fire_wound or (s_hit.power or 0) >= 50 then return end
+	local shooter = s_hit.draftsman
+	-- jen strely hrace; boje NPC mezi sebou pocita engine (stejne jako drive)
+	if not (shooter and shooter:id() == AC_ID) then return end
+	local wpn = s_hit.weapon_id and level.object_by_id(s_hit.weapon_id)
+	if not (wpn and IsWeapon(wpn)) or IsGrenade(wpn) then return end
+	local wsec = wpn:section()
+	if IsItem("fake_ammo_wpn", wsec) or ini_sys:r_string_ex(wsec, "class") == "S_EXPLO" then return end
+	local list = utils_item.get_ammo(nil, wpn:id())
+	local a = ammo(list and list[wpn:get_ammo_type() + 1])
+	if not a then return end
+
+	local p = preset()
+	local base = wpn:cast_Weapon():GetHitPower()
+	local dm, dist = dist_mult(a, shooter, npc)
+	local ctx = {
+		npc = npc, s_hit = s_hit, bone = bone_id, human = human, ammo = a, wpn = wpn,
+		shooter = shooter, by_actor = shooter and shooter:id() == AC_ID, preset = p,
+		dist = dist or 0, ap = a.ap, impact = a.impact, extra = 1, dist_mult = dm,
+	}
+	if human then
+		ctx.armor, ctx.frac = npc_armor(npc, bone_id)
+		ctx.mult = bone_mult(bone_id, p.bones)
+	else
+		ctx.armor, ctx.frac = mutant_skin(npc), 0.5
+		ctx.mult = 1
+	end
+	local vel = (ctx.by_actor) and (1 + (fired.vel or 0) * 0.25) or 1
+
+	rezone_ammo_fx.pre(ctx)
+
+	-- pruraz
+	local pm
+	if human then
+		local blunt = max(p.blunt_min, ctx.frac) + 0.1 * (ctx.impact - 0.3)
+		blunt = clamp(blunt, 0.05, 0.6)
+		if p.curve == "smooth" then
+			pm = curve_smooth(ctx.ap, ctx.armor, blunt, ctx.impact, a.pen)
+		else
+			pm = curve_cop(ctx.ap, ctx.armor, blunt)
+		end
+	else
+		-- mutanti: kuze zastavi jen slabe naboje, maso tlumi lehke strely
+		pm = clamp(1 - max(ctx.armor - 2 * ctx.ap, 0) * 1.5, 0.4, 1)
+	end
+	ctx.pen_mult = pm
+	ctx.penetrated = ctx.ap >= ctx.armor
+
+	-- rozsireni (hollow point): plne jen kdyz strela projde
+	local hp = a.hp or 1
+	if hp > 1 then
+		hp = ctx.penetrated and hp or (1 + (hp - 1) * 0.3)
+	end
+
+	local tough = human and (p.tough * (tonumber(cfg("npc_tough")) or 1)) or 1	-- mutanti: Zdravi > Odolnost mutantu
+	if ctx.force_full then pm = 1 end
+	s_hit.power = base * a.hit * (ctx.no_falloff and 1 or dm) * vel * ctx.mult * pm * hp * ctx.extra / max(tough, 0.1)
+	ctx.power = s_hit.power
+
+	-- Hardcore: brneni casti tela se pod palbou rozbiji
+	if human and p.degrade and not ctx.penetrated and ctx.armor > 0 then
+		set_armor(npc, bone_id, ctx.armor - a.ap * 0.35)
+	end
+
+	rezone_ammo_fx.post(ctx)
+	return ctx
+end
+
+-- ---------------------------------------------------------------- napojeni na engine
+local flags = { ret_value = true }
+local err_seen = {}
+local function err_once(r)          -- chyba za zasah by jinak zaplnila log
+	local m = tostring(r)
+	if err_seen[m] then return end
+	err_seen[m] = true
+	if rezone_core and rezone_core.DEBUG then printf("! ReZone balistika: %s", m) end
+end
+
+local function stalker_cb(npc, s_hit, bone_id)
+	flags.ret_value = true
+	local ctx
+	if duplicate(s_hit, npc) then
+		s_hit.power = 0.0001
+	else
+		local ok, r = pcall(compute, npc, s_hit, bone_id, true)
+		if ok then ctx = r else err_once(r) end
+	end
+	SendScriptCallback("npc_on_before_hit", npc, s_hit, bone_id, flags)
+	if flags.ret_value and ctx and s_hit.type == hit.fire_wound then
+		-- ubrat primo, at engine nepocita brneni podruhe
+		npc:set_health_ex(npc.health - s_hit.power)
+		s_hit.power = 0.0001
+	end
+	return flags.ret_value
+end
+
+local function monster_cb(monster, s_hit, bone_id)
+	flags.ret_value = true
+	if duplicate(s_hit, monster) then
+		s_hit.power = 0.0001
+	else
+		local ok, r = pcall(compute, monster, s_hit, bone_id, false)
+		if ok and r then s_hit.ap = 0 elseif not ok then err_once(r) end
+	end
+	SendScriptCallback("monster_on_before_hit", monster, s_hit, bone_id, flags)
+	return flags.ret_value
+end
+
+local function on_death(npc)
+	if npc then worn[npc:id()] = nil end
+end
+
+function on_game_start()
+	_G.CAI_Stalker__BeforeHitCallback = stalker_cb
+	_G.CBaseMonster__BeforeHitCallback = monster_cb
+	RegisterScriptCallback("actor_on_weapon_before_fire", on_before_fire)
+	RegisterScriptCallback("npc_on_death_callback", on_death)
+	RegisterScriptCallback("monster_on_death_callback", on_death)
+end

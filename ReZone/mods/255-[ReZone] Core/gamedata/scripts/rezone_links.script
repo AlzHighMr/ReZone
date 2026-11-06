@@ -1,0 +1,143 @@
+--[[
+	ReZone MCM - odkazy na nastaveni jinych modu
+	Definice: configs\rezone\rezone_mcm_links.ltx (+ DLTX mod_rezone_mcm_links_<cokoliv>.ltx)
+	kind = page  -> tlacitko, ktere ve stejnem okne MCM otevre stranku jineho modu
+	kind = value -> hodnota jineho modu primo na strance ReZone (cte a zapisuje jeho nastaveni)
+	Odkaz na mod, ktery neni nainstalovany, se nezobrazi.
+--]]
+
+local LTX = "rezone\\rezone_mcm_links.ltx"
+local CLR_DESC = { 255, 200, 200, 200 }
+local CLR_NOTE = { 255, 150, 150, 150 }
+local TABS = { gameplay = "rz_gameplay", health = "rz_health", zdravi = "rz_health", other = "rz_other", ostatni = "rz_other" }
+
+local cache = nil
+
+function reset() cache = nil end
+
+-- "1,str_a;2,str_b" -> { {1,"str_a"}, {2,"str_b"} }
+local function parse_content(s)
+	local t, numeric = {}, true
+	for pair in string.gmatch(s or "", "[^;]+") do
+		local k, txt = string.match(pair, "^%s*([^,]-)%s*,%s*(.-)%s*$")
+		if k and txt then
+			local n = tonumber(k)
+			if not n then numeric = false end
+			t[#t + 1] = { n or k, txt }
+		end
+	end
+	if not numeric then
+		for i = 1, #t do t[i][1] = tostring(t[i][1]) end
+	end
+	return t, numeric
+end
+
+function load()
+	if cache then return cache end
+	cache = { rz_gameplay = {}, rz_health = {}, rz_other = {} }
+
+	local ini = ini_file(LTX)
+	if not (ini and ini.section_for_each) then return cache end
+
+	ini:section_for_each(function(sec)
+		local target = ini:r_string_ex(sec, "target")
+		if not target or target == "" then return end
+		local list = cache[TABS[ini:r_string_ex(sec, "tab") or "other"] or "rz_other"]
+		list[#list + 1] = {
+			id      = sec,
+			target  = target,
+			kind    = ini:r_string_ex(sec, "kind") or "page",
+			label   = ini:r_string_ex(sec, "label") or sec,
+			hint    = ini:r_string_ex(sec, "hint"),
+			order   = ini:r_float_ex(sec, "order") or 100,
+			type    = ini:r_string_ex(sec, "type") or "track",
+			min     = ini:r_float_ex(sec, "min") or 0,
+			max     = ini:r_float_ex(sec, "max") or 1,
+			step    = ini:r_float_ex(sec, "step") or 0.05,
+			prec    = ini:r_float_ex(sec, "prec") or 2,
+			def     = ini:r_string_ex(sec, "def"),
+			content = ini:r_string_ex(sec, "content"),
+		}
+	end)
+
+	for _, list in pairs(cache) do
+		table.sort(list, function(a, b)
+			if a.order ~= b.order then return a.order < b.order end
+			return a.id < b.id
+		end)
+	end
+	return cache
+end
+
+------------------------------------------------------------
+-- Funkce volane z MCM (precondition / functor / curr)
+------------------------------------------------------------
+function exists(target)
+	return rezone_core.mcm_has(target)
+end
+
+function none_visible(tab)
+	local list = load()[tab]
+	for i = 1, #list do
+		if exists(list[i].target) then return false end
+	end
+	return true
+end
+
+function open(target, gui)
+	gui = gui or (ui_mcm.get_gui and ui_mcm.get_gui())
+	if gui and gui.Open_to then gui:Open_to(target) end
+end
+
+function get_value(target, def)
+	local v = rezone_core.foreign_get(target)
+	if v == nil then return def end
+	return v
+end
+
+function set_value(target, value)
+	if ui_mcm and ui_mcm.set and exists(target) then
+		ui_mcm.set(target, value)
+	end
+end
+
+------------------------------------------------------------
+-- Stranka "Odkazy" pro danou zalozku
+------------------------------------------------------------
+function build_page(tab)
+	local gr = {
+		{ id = "banner", type = "slide", link = "ui_options_slider_disguise", text = "ui_mcm_rz_links_title", size = { 512, 50 }, spacing = 20 },
+		{ id = "links_desc", type = "desc", text = "ui_mcm_rz_links_desc", clr = CLR_DESC },
+		{ id = "links_line", type = "line" },
+		{ id = "links_none", type = "desc", text = "ui_mcm_rz_links_none", clr = CLR_NOTE, precondition = { none_visible, tab } },
+	}
+
+	local list = load()[tab]
+	for i = 1, #list do
+		local l = list[i]
+		local pre = { exists, l.target }
+		gr[#gr + 1] = { id = l.id .. "_lbl", type = "desc", text = l.label, clr = CLR_DESC, precondition = pre }
+
+		if l.kind == "value" then
+			local o = { id = l.id, precondition = pre, hint = l.hint or "rz_link_value", functor = { set_value, l.target } }
+			if l.type == "check" then
+				o.type, o.val = "check", 1
+				o.curr = { get_value, l.target, l.def == "true" }
+			elseif l.type == "list" then
+				local content, numeric = parse_content(l.content)
+				o.type, o.val, o.content = "list", numeric and 2 or 0, content
+				o.curr = { get_value, l.target, numeric and tonumber(l.def) or l.def }
+			else
+				o.type, o.val = "track", 2
+				o.min, o.max, o.step, o.prec = l.min, l.max, l.step, l.prec
+				o.curr = { get_value, l.target, tonumber(l.def) or l.min }
+			end
+			gr[#gr + 1] = o
+		else
+			gr[#gr + 1] = { id = l.id, type = "button", hint = l.hint or "rz_link_open",
+			                functor_ui = { open, l.target }, precondition = pre }
+		end
+	end
+
+	return { id = "rz_links", sh = true, gr = gr }
+end

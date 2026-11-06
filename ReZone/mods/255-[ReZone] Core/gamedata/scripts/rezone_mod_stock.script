@@ -1,0 +1,192 @@
+--[[
+	ReZone MCM - omezeni zasob obchodniku (napad: Trader Destockifier, vlastni kod)
+
+	Po kazdem doplneni zasob (restock) obchodnik nechá jen omezeny pocet kusu z kazde
+	skupiny (puska, pistole, noze, granaty, doplnky zbrani, armory, helmy, batohy,
+	zasobniky, jidlo, leky, opravy) a cast munice; zbytek zmizi. Obchodnik tak neni
+	nekonecny obchod se vsim.
+
+	- doplneni zasob hlasi rezone_core.on_restock (nepotrebuje trader_autoinject)
+	- omezeni bezi az chvili po doplneni, takze zahrne i veci, ktere pridaji jine mody
+	- nesaha na spolecniky, na veci, ktere ma obchodnik na sobe (sloty), ani na questove veci
+	- -1 = bez omezeni pro skupinu; nahoda +- zadana procenta
+	- vypnuto = nic se neobali
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_trade"
+
+-- skupiny: id volby -> vychozi limit (rezone_mcm stavi posuvniky z tohoto seznamu)
+GROUPS = {
+	{ "st_guns",       4 },
+	{ "st_pistols",    3 },
+	{ "st_melee",      2 },
+	{ "st_explosives", 7 },
+	{ "st_attach",     3 },
+	{ "st_outfits",    3 },
+	{ "st_helmets",    2 },
+	{ "st_backpacks",  2 },
+	{ "st_mags",       6 },
+	{ "st_food",      16 },
+	{ "st_meds",      18 },
+	{ "st_repair",    20 },
+}
+AMMO_DEFAULT = 100		-- % krabic munice, ktere zustanou
+RANDOM_DEFAULT = 20		-- +- % k limitu
+
+local cfg = { on = false }
+
+-- ---------------------------------------------------------------- trideni predmetu
+local LONG = { w_rifle = true, w_smg = true, w_shotgun = true, w_sniper = true, w_explosive = true }	-- w_explosive = granatomety
+local EXPLOSIVE_CLS = { G_F1 = true, G_F1_S = true, G_RGD5 = true, G_RGD5_S = true,
+                        S_M209 = true, S_VOG25 = true, S_OG7B = true }
+local FOOD = { i_food = true, i_drink = true, i_mutant_cooked = true }
+local REPAIR = { i_repair = true, i_tool = true, i_kit = true }
+local NOT_ATTACH = { bolt = true, bolt_bullet = true }
+
+local group_cache = {}
+
+-- vraci id skupiny, "ammo", nebo false
+function group_of(sec)
+	local g = group_cache[sec]
+	if g ~= nil then return g end
+	local kind = SYS_GetParam(0, sec, "kind", "") or ""
+	local cls = SYS_GetParam(0, sec, "class", "") or ""
+	if SYS_GetParam(1, sec, "quest_item", false) or SYS_GetParam(1, sec, "is_component", false) then
+		g = false
+	elseif SYS_GetParam(1, sec, "is_mag", false) then
+		g = "st_mags"
+	elseif EXPLOSIVE_CLS[cls] then
+		g = "st_explosives"
+	elseif LONG[kind] then
+		g = "st_guns"
+	elseif kind == "w_pistol" then
+		g = "st_pistols"
+	elseif kind == "w_melee" then
+		g = "st_melee"
+	elseif kind == "w_misc" and not NOT_ATTACH[sec] then
+		g = "st_attach"
+	elseif kind == "o_helmet" or cls == "E_HLMET" or cls == "EQU_HLMET" then
+		g = "st_helmets"
+	elseif kind == "i_backpack" then
+		g = "st_backpacks"
+	elseif cls == "EQU_STLK" or cls == "E_STLK" or string.find(kind, "^o_") then
+		g = "st_outfits"
+	elseif kind == "ammo" or string.find(cls, "^AMMO") then
+		g = "ammo"
+	elseif FOOD[kind] then
+		g = "st_food"
+	elseif kind == "i_medical" then
+		g = "st_meds"
+	elseif REPAIR[kind] then
+		g = "st_repair"
+	else
+		g = false
+	end
+	group_cache[sec] = g
+	return g
+end
+
+-- ---------------------------------------------------------------- vyber
+local function shuffle(t)
+	for i = #t, 2, -1 do
+		local j = math.random(i)
+		t[i], t[j] = t[j], t[i]
+	end
+end
+
+local function limit_with_random(n)
+	local dev = cfg.random or 0
+	if dev <= 0 or n <= 0 then return n end
+	local d = math.floor(n * dev / 100 + 0.5)
+	return math.max(0, n + math.random(-d, d))
+end
+
+-- items = { [skupina] = { id, id, ... } } -> seznam id k odebrani
+function pick_removals(items)
+	local remove = {}
+	for grp, ids in pairs(items) do
+		local keep
+		if grp == "ammo" then
+			local pct = cfg.ammo or 100
+			keep = (pct < 0) and #ids or math.floor(#ids * pct / 100 + 0.5)
+		else
+			local lim = cfg.limits[grp]
+			keep = (lim == nil or lim < 0) and #ids or limit_with_random(lim)
+		end
+		if keep < #ids then
+			shuffle(ids)
+			for i = keep + 1, #ids do remove[#remove + 1] = ids[i] end
+		end
+	end
+	return remove
+end
+
+local function is_companion(npc)
+	local ltx = trade_manager.get_trade_profile and trade_manager.get_trade_profile(npc:id(), "cfg_ltx")
+	return ltx and string.find(ltx, "companion") and true or false
+end
+
+function destock(id)
+	if not cfg.on then return true end
+	local npc = level.object_by_id(id)
+	if not (npc and npc:alive()) or is_companion(npc) then return true end
+
+	-- veci, ktere ma na sobe
+	local worn = {}
+	for slot = 0, 14 do
+		local o = npc:item_in_slot(slot)
+		if o then worn[o:id()] = true end
+	end
+	local outfit = npc.get_current_outfit and npc:get_current_outfit()
+	if outfit then worn[outfit:id()] = true end
+	local act = npc:active_item()
+	if act then worn[act:id()] = true end
+
+	local items, total = {}, 0
+	npc:iterate_inventory(function(_, obj)
+		if obj and not worn[obj:id()] then
+			local g = group_of(obj:section())
+			if g then
+				items[g] = items[g] or {}
+				items[g][#items[g] + 1] = obj:id()
+				total = total + 1
+			end
+		end
+	end, npc)
+
+	local rem = pick_removals(items)
+	for _, rid in ipairs(rem) do
+		local o = level.object_by_id(rid)
+		if o then alife_release(o) end
+	end
+	if core.DEBUG then core.log("zasoby: %s - %d ze %d veci odebrano", npc:name(), #rem, total) end
+	return true
+end
+
+-- ---------------------------------------------------------------- doplneni zasob
+local registered = false
+local function patch()
+	if registered then return end
+	registered = true
+	core.on_restock(function(npc) destock(npc:id()) end)
+	core.log("zasoby: napojeno na doplneni zasob")
+end
+
+function load()
+	local g = core.page(PAGE)
+	cfg.on = g("stock") == true
+	cfg.limits = {}
+	for _, it in ipairs(GROUPS) do
+		cfg.limits[it[1]] = tonumber(g(it[1])) or it[2]
+	end
+	cfg.ammo = tonumber(g("st_ammo")) or AMMO_DEFAULT
+	cfg.random = tonumber(g("st_random")) or RANDOM_DEFAULT
+	if cfg.on then patch() end
+	core.log("zasoby obchodniku: %s", cfg.on and "omezene" or "vanilla")
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

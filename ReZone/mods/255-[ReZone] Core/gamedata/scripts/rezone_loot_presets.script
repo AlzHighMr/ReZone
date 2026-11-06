@@ -1,0 +1,18 @@
+--[[
+	ReZone MCM - predvolby stavu koristi (procenta). lo = nejnizsi hodnost (novacek),
+	hi = nejvyssi (legenda), mezi nimi plynule. z = zombie. Uprav si cisla podle sebe.
+--]]
+NAMES = { [1] = "vanilla", [2] = "trilogy", [3] = "hard" }
+DEFAULT = 1
+
+PRESETS = {
+	-- Vanilla Anomaly (death_generic.ltx)
+	[1] = { w_lo_min = 5,  w_lo_max = 20, w_hi_min = 20, w_hi_max = 45, w_zmin = 5,  w_zmax = 20,
+	        o_lo_min = 5,  o_lo_max = 15, o_hi_min = 15, o_hi_max = 30, o_zmin = 5,  o_zmax = 15, ammo = 1 },
+	-- Trilogie: veci z mrtvol jsou pouzitelne, jako v SoC/CS/CoP
+	[2] = { w_lo_min = 25, w_lo_max = 50, w_hi_min = 50, w_hi_max = 80, w_zmin = 15, w_zmax = 40,
+	        o_lo_min = 25, o_lo_max = 45, o_hi_min = 45, o_hi_max = 70, o_zmin = 10, o_zmax = 30, ammo = 1.5 },
+	-- Tvrda: skoro vse je k rozebrani, munice malo
+	[3] = { w_lo_min = 3,  w_lo_max = 12, w_hi_min = 10, w_hi_max = 30, w_zmin = 3,  w_zmax = 10,
+	        o_lo_min = 3,  o_lo_max = 10, o_hi_min = 10, o_hi_max = 20, o_zmin = 3,  o_zmax = 8,  ammo = 0.6 },
+}

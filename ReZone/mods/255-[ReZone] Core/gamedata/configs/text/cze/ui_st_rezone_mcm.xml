@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="ui_mcm_menu_rezone">
+		<text>ReZone</text>
+	</string>
+	<string id="ui_mcm_menu_rz_gameplay">
+		<text>Gameplay</text>
+	</string>
+	<string id="ui_mcm_menu_rz_health">
+		<text>Zdraví</text>
+	</string>
+	<string id="ui_mcm_menu_rz_other">
+		<text>Ostatní</text>
+	</string>
+	<string id="ui_mcm_menu_rz_links">
+		<text>Odkazy na jiné mody</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pdmg">
+		<text>Poškození hráče</text>
+	</string>
+	<string id="ui_mcm_menu_rz_muthp">
+		<text>Odolnost mutantů</text>
+	</string>
+	<string id="ui_mcm_menu_rz_debug">
+		<text>Ladění</text>
+	</string>
+	<string id="ui_mcm_rz_links_title">
+		<text>Odkazy na jiné mody</text>
+	</string>
+	<string id="ui_mcm_rz_links_desc">
+		<text>Nastavení z jiných modů na jednom místě. Odkazy se přidávají v configs\rezone\rezone_mcm_links.ltx a zobrazí se jen u nainstalovaných modů.</text>
+	</string>
+	<string id="ui_mcm_rz_links_none">
+		<text>Zatím tu nejsou žádné odkazy (nebo cílové mody nejsou nainstalované).</text>
+	</string>
+	<string id="ui_mcm_rz_link_open">
+		<text>Otevřít nastavení &gt;&gt;</text>
+	</string>
+	<string id="ui_mcm_rz_link_open_desc">
+		<text>Přejde na stránku MCM daného modu.</text>
+	</string>
+	<string id="ui_mcm_rz_link_value">
+		<text>Hodnota</text>
+	</string>
+	<string id="ui_mcm_rz_link_value_desc">
+		<text>Mění přímo nastavení původního modu.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_title">
+		<text>Poškození hráče</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_off_note">
+		<text>Vypnuto = ReZone se zásahů vůbec nedotkne. Platí vanilla poškození, nebo nastavení jiného modu.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_hits">
+		<text>Podle typu zásahu</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_mutants">
+		<text>Podle mutanta, který útočí (násobí se s typem zásahu)</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_enabled">
+		<text>Zapnout systém poškození ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_enabled_desc">
+		<text>Hlavní vypínač celé stránky.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_preset">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_all">
+		<text>Celkový násobič</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_all_desc">
+		<text>Násobí všechny typy zásahu (předvolba ho nemění).</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_mut_enabled">
+		<text>Zapnout násobiče podle mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_title">
+		<text>Odolnost mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_info">
+		<text>Kolik mutanti vydrží. 2.0 = vydrží dvakrát víc. Platí hned, i pro mutanty, kteří už jsou ve hře.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_enabled">
+		<text>Zapnout odolnost mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_enabled_desc">
+		<text>Vypnuto = vanilla odolnost.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_all">
+		<text>Všichni mutanti</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_all_desc">
+		<text>Násobí se s hodnotou druhu.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_title">
+		<text>Ladění</text>
+	</string>
+	<string id="ui_mcm_rz_about">
+		<text>ReZone MCM 1.0.0</text>
+	</string>
+	<string id="ui_mcm_rz_debug_debug">
+		<text>Výpis do konzole</text>
+	</string>
+	<string id="ui_mcm_rz_debug_debug_desc">
+		<text>Vypisuje, co ReZone MCM dělá. Jen pro testování.</text>
+	</string>
+	<string id="ui_mcm_rz_hit_fire_wound">
+		<text>Střelné zranění</text>
+	</string>
+	<string id="ui_mcm_rz_hit_wound">
+		<text>Zranění (sečné, drápy)</text>
+	</string>
+	<string id="ui_mcm_rz_hit_strike">
+		<text>Úder</text>
+	</string>
+	<string id="ui_mcm_rz_hit_explosion">
+		<text>Exploze</text>
+	</string>
+	<string id="ui_mcm_rz_hit_burn">
+		<text>Popálení</text>
+	</string>
+	<string id="ui_mcm_rz_hit_light_burn">
+		<text>Lehké popálení</text>
+	</string>
+	<string id="ui_mcm_rz_hit_shock">
+		<text>Elektrický šok</text>
+	</string>
+	<string id="ui_mcm_rz_hit_chemical_burn">
+		<text>Chemické popálení</text>
+	</string>
+	<string id="ui_mcm_rz_hit_radiation">
+		<text>Radiace</text>
+	</string>
+	<string id="ui_mcm_rz_hit_telepatic">
+		<text>Psy (telepatické)</text>
+	</string>
+	<string id="ui_mcm_rz_sp_dog">
+		<text>Slepý pes</text>
+	</string>
+	<string id="ui_mcm_rz_sp_pseudodog">
+		<text>Pseudopes / psí pes</text>
+	</string>
+	<string id="ui_mcm_rz_sp_flesh">
+		<text>Masák</text>
+	</string>
+	<string id="ui_mcm_rz_sp_boar">
+		<text>Kanec</text>
+	</string>
+	<string id="ui_mcm_rz_sp_snork">
+		<text>Snork</text>
+	</string>
+	<string id="ui_mcm_rz_sp_tushkano">
+		<text>Tuškan</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rat">
+		<text>Krysa</text>
+	</string>
+	<string id="ui_mcm_rz_sp_cat">
+		<text>Kočkodlak</text>
+	</string>
+	<string id="ui_mcm_rz_sp_zombie">
+		<text>Zombie</text>
+	</string>
+	<string id="ui_mcm_rz_sp_bloodsucker">
+		<text>Krvesaj</text>
+	</string>
+	<string id="ui_mcm_rz_sp_psysucker">
+		<text>Psysaj</text>
+	</string>
+	<string id="ui_mcm_rz_sp_lurker">
+		<text>Lurker</text>
+	</string>
+	<string id="ui_mcm_rz_sp_fracture">
+		<text>Zlom</text>
+	</string>
+	<string id="ui_mcm_rz_sp_karlik">
+		<text>Karlík</text>
+	</string>
+	<string id="ui_mcm_rz_sp_burer">
+		<text>Burer</text>
+	</string>
+	<string id="ui_mcm_rz_sp_controller">
+		<text>Kontrolér</text>
+	</string>
+	<string id="ui_mcm_rz_sp_poltergeist">
+		<text>Poltergeist</text>
+	</string>
+	<string id="ui_mcm_rz_sp_chimera">
+		<text>Chiméra</text>
+	</string>
+	<string id="ui_mcm_rz_sp_pseudo_gigant">
+		<text>Pseudogigant</text>
+	</string>
+	<string id="ui_mcm_rz_link_arti_hitnum">
+		<text>Arti balistika – čísla poškození</text>
+	</string>
+	<string id="ui_mcm_rz_link_arti_page">
+		<text>Arti balistika – nastavení</text>
+	</string>
+	<string id="ui_mcm_rz_link_ammomaker">
+		<text>Výroba munice – nastavení</text>
+	</string>
+	<string id="ui_mcm_menu_rz_trade">
+		<text>Obchod</text>
+	</string>
+	<string id="ui_mcm_rz_trade_title">
+		<text>Obchod jako v GAMMA</text>
+	</string>
+	<string id="ui_mcm_rz_trade_info">
+		<text>Obchodníci nekupují ani neprodávají zbraně. Zbraně získáš z mrtvol a od přátel, opravíš je a rozebereš na díly. Zbraně se nemažou, jen se v obchodním okně neukážou, takže vypnutím se vše vrátí.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_gamma">
+		<text>Hrát jako GAMMA</text>
+	</string>
+	<string id="ui_mcm_rz_trade_gamma_desc">
+		<text>Hlavní vypínač. Vypnuto = obchod jako dřív.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_sell">
+		<text>Obchodníci nekupují zbraně</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_sell_desc">
+		<text>Zbraně z tvého inventáře nejde prodat. V obchodním okně jsou označené jako neprodejné.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_buy">
+		<text>Obchodníci neprodávají zbraně</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_buy_desc">
+		<text>Zbraně zmizí z nabídky obchodníků.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_melee">
+		<text>Platí i pro nože</text>
+	</string>
+	<string id="ui_mcm_rz_trade_melee_desc">
+		<text>Vypnuto = nože jdou koupit a prodat dál. Granáty, munice a doplňky se neomezují nikdy.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_note">
+		<text>Týká se pistolí, samopalů, pušek, brokovnic a odstřelovaček.</text>
+	</string>
+	<string id="st_rz_trade_no_weapons">
+		<text>Obchodníci zbraně nekupují (ReZone: obchod jako GAMMA)</text>
+	</string>
+	<string id="ui_mcm_menu_rz_prices">
+		<text>Ceny</text>
+	</string>
+	<string id="ui_mcm_rz_prices_title">
+		<text>Ceny u obchodníků</text>
+	</string>
+	<string id="ui_mcm_rz_prices_info">
+		<text>Násobič ceny podle druhu předmětu. 1.0 = beze změny, 2.0 = dvojnásobek. Platí pro nákup i prodej, celkové násobiče zvlášť.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_warn">
+		<text>Pozor: je zapnutý i mod Configurable Item Cost Modifiers. Vypni ho, jinak se ceny násobí dvakrát.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_enabled">
+		<text>Zapnout úpravu cen</text>
+	</string>
+	<string id="ui_mcm_rz_prices_enabled_desc">
+		<text>Vypnuto = ceny jako bez modu (nebo podle jiného modu).</text>
+	</string>
+	<string id="ui_mcm_rz_prices_preset">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_rz_prices_preset_desc">
+		<text>Nastaví posuvníky níž. Pak je můžeš dál upravit.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_default">
+		<text>Výchozí (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_arty">
+		<text>Víc za artefakty a mutanty</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_helmets">
+		<text>Helmy a armory podle třídy</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_guns">
+		<text>Zbraně podle třídy</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_all">
+		<text>Všechno dohromady</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_gamma">
+		<text>ReZone: jako GAMMA</text>
+	</string>
+	<string id="ui_mcm_rz_prices_sell_all">
+		<text>Když prodáváš (celkem)</text>
+	</string>
+	<string id="ui_mcm_rz_prices_sell_all_desc">
+		<text>Kolik ti obchodník zaplatí. 0.6 = 60 % ceny.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_buy_all">
+		<text>Když kupuješ (celkem)</text>
+	</string>
+	<string id="ui_mcm_rz_prices_buy_all_desc">
+		<text>Kolik zaplatíš obchodníkovi. 1.2 = o 20 % dráž.</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_arty">
+		<text>Artefakty a mutanti</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_items">
+		<text>Vybavení a spotřební</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_armor">
+		<text>Helmy a armory</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_weap">
+		<text>Zbraně a munice</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_arty">
+		<text>Artefakty</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_mutant_belt">
+		<text>Mutantí trofeje na opasek</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_mutant_part">
+		<text>Části mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_backpack">
+		<text>Batohy</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_device">
+		<text>Přístroje (detektory, PDA…)</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_food">
+		<text>Jídlo a pití</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_medical">
+		<text>Léky</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_kit">
+		<text>Sady a nářadí</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_misc">
+		<text>Ostatní a harampádí</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_part">
+		<text>Díly</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_upgrade">
+		<text>Vylepšení</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet">
+		<text>Lehké helmy</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet_medium">
+		<text>Střední helmy</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet_heavy">
+		<text>Těžké helmy</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_light">
+		<text>Lehké armory</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_medium">
+		<text>Střední armory</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_sci">
+		<text>Vědecké armory</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_heavy">
+		<text>Těžké armory a exo</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_melee">
+		<text>Nože</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_pistol">
+		<text>Pistole</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_smg">
+		<text>Samopaly</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_shotgun">
+		<text>Brokovnice</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_rifle">
+		<text>Pušky</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_sniper">
+		<text>Odstřelovačky</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_misc">
+		<text>Doplňky zbraní</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_ammo">
+		<text>Munice</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_explosive">
+		<text>Granáty a výbušniny</text>
+	</string>
+	<string id="ui_mcm_menu_rz_loot">
+		<text>Kořist</text>
+	</string>
+	<string id="ui_mcm_rz_loot_title">
+		<text>Stav kořisti z mrtvol</text>
+	</string>
+	<string id="ui_mcm_rz_loot_info">
+		<text>V jakém stavu jsou zbraně, armory a helmy z mrtvých NPC a kolik u nich najdeš munice. Nastavíš rozsah pro nováčka a pro legendu, hodnosti mezi nimi se dopočítají.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_enabled">
+		<text>Zapnout</text>
+	</string>
+	<string id="ui_mcm_rz_loot_enabled_desc">
+		<text>Vypnuto = stav podle hry (death_generic.ltx).</text>
+	</string>
+	<string id="ui_mcm_rz_loot_preset">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_rz_loot_preset_desc">
+		<text>Nastaví posuvníky níž, pak je můžeš dál upravit.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_vanilla">
+		<text>Vanilla Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_trilogy">
+		<text>Trilogie (použitelné věci)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_hard">
+		<text>Tvrdá (skoro vše na díly)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_weapons">
+		<text>Zbraně (stav v %)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_outfits">
+		<text>Armory a helmy (stav v %)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo">
+		<text>Munice</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_lo_min">
+		<text>Nováček – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_lo_max">
+		<text>Nováček – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_hi_min">
+		<text>Legenda – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_hi_max">
+		<text>Legenda – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_zmin">
+		<text>Zombie – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_zmax">
+		<text>Zombie – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_lo_min">
+		<text>Nováček – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_lo_max">
+		<text>Nováček – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_hi_min">
+		<text>Legenda – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_hi_max">
+		<text>Legenda – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_zmin">
+		<text>Zombie – nejméně</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_zmax">
+		<text>Zombie – nejvíc</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_desc">
+		<text>Násobič munice, kterou najdeš u mrtvých. 1.0 = vanilla.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_no_special">
+		<text>Bez speciální munice</text>
+	</string>
+	<string id="ui_mcm_rz_loot_no_special_desc">
+		<text>Munice „_bad“ se změní na běžnou. S Arti balistikou / ReZone Ballistics jsou „_bad“ speciální náboje (7N22, zápalná, HP…), takže je tímhle z kořisti vyřadíš.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_h">
+		<text>Munice</text>
+	</string>
+	<string id="st_rz_trade_no_helmets">
+		<text>Obchodníci helmy nekupují (ReZone)</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pop">
+		<text>Populace</text>
+	</string>
+	<string id="ui_mcm_rz_pop_title">
+		<text>Populace Zóny</text>
+	</string>
+	<string id="ui_mcm_rz_pop_info">
+		<text>Kolik stalkerů a mutantů žije v Zóně, jak rychle se doplňují a jak velké jsou skupiny a smečky. Vlastní řešení ReZone, nepotřebuje žádný další mod. Mění jen běžné skupiny z respawnu a ze začátku hry, příběhové postavy a úkoly zůstanou beze změny.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_enabled">
+		<text>Zapnout populaci ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_pop_enabled_desc">
+		<text>Vypnuto = vanilla Anomaly (platí hustota z Možnosti > ALife).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset_desc">
+		<text>Nastaví všechny posuvníky najednou, pak si je můžeš doladit.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_vanilla">
+		<text>Vanilla</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_calm">
+		<text>Klidná Zóna</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_alive">
+		<text>Živá Zóna</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_danger">
+		<text>Nebezpečná Zóna</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset_note">
+		<text>Hustota a velikost skupin se projeví u nově vzniklých skupin. Na začátku nové hry platí hned pro celou Zónu.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_zone">
+		<text>Zóna</text>
+	</string>
+	<string id="ui_mcm_rz_pop_stalkers">
+		<text>Stalkeři</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mutants">
+		<text>Mutanti</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_pop">
+		<text>Hustota stalkerů</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_pop_desc">
+		<text>Kolik skupin stalkerů se objevuje na místech (1 = vanilla, 0 = žádné). Nahrazuje volbu v Možnosti > ALife.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_pop">
+		<text>Hustota mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_pop_desc">
+		<text>Kolik smeček mutantů se objevuje (1 = vanilla, 0 = žádné). Nahrazuje volbu v Možnosti > ALife.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_respawn">
+		<text>Doba respawnu</text>
+	</string>
+	<string id="ui_mcm_rz_pop_respawn_desc">
+		<text>Násobič času, za který místo znovu doplní obyvatele (1 = vanilla, obvykle 12 herních hodin; 2 = dvakrát déle, 0.5 = dvakrát rychleji).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_size">
+		<text>Velikost skupin</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_size_desc">
+		<text>Násobič počtu lidí ve skupině (1 = vanilla). Noví členové jsou kopie stávajících, velitel zůstává.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_var">
+		<text>Různorodost velikosti</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_var_desc">
+		<text>Náhodný rozptyl velikosti (0 = vždy stejně, 0.5 = od poloviny po jedenapůlnásobek).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random">
+		<text>Náhodné skupiny navíc</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random_desc">
+		<text>Při respawnu stalkerů se občas objeví ještě jedna skupina, která se na této úrovni běžně vyskytuje. Ne na základnách frakcí.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random_ch">
+		<text>Šance na skupinu navíc (%)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_size">
+		<text>Velikost smeček</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_size_desc">
+		<text>Násobič počtu mutantů ve smečce (1 = vanilla).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_var">
+		<text>Různorodost velikosti</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_var_desc">
+		<text>Náhodný rozptyl velikosti smečky (0 = vždy stejně).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random">
+		<text>Náhodné smečky navíc</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random_desc">
+		<text>Při respawnu mutantů se občas objeví ještě jedna smečka, která na této úrovni běžně žije.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random_ch">
+		<text>Šance na smečku navíc (%)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl">
+		<text>Hodnosti na začátečních úrovních</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_enabled">
+		<text>Bez silných stalkerů na začátku</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_enabled_desc">
+		<text>Generičtí stalkeři všech frakcí nad zvolenou hodností (veteráni a mistři v těžkých oblecích a exoskeletech) se na vybraných úrovních nespawnují – nahradí je slabší verze stejné frakce – a silné skupiny z jiných úrovní tam nechodí. Ty, co už tam jsou, časem odejdou. Příběhové postavy, obchodníci a mutanti beze změny. Funguje i bez zapnuté populace ReZone.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_max">
+		<text>Nejvyšší hodnost</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_max_desc">
+		<text>Do jaké třídy mohou být generičtí stalkeři na vybraných úrovních.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_1">
+		<text>Nováček / začátečník</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_2">
+		<text>Zkušený / profesionál</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_3">
+		<text>Veterán / expert</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_bases">
+		<text>Výjimka pro základny frakcí</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_bases_desc">
+		<text>Na základnách (např. Jasná obloha v Bažinách) zůstanou i silní členové.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_escape">
+		<text>Kordon</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_marsh">
+		<text>Bažiny</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_darkscape">
+		<text>Darkscape</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_pole">
+		<text>Louka (Meadow)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_garbage">
+		<text>Smetiště</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_agroprom">
+		<text>Agroprom</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helmets">
+		<text>Helmy</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_sell">
+		<text>Obchodníci nekupují helmy</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_sell_desc">
+		<text>Helmy jim neprodáš. Platí i bez zapnutého obchodu jako GAMMA.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_buy">
+		<text>Obchodníci neprodávají helmy</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_buy_desc">
+		<text>Helmy zmizí z jejich nabídky (nemažou se, po vypnutí jsou zpět).</text>
+	</string>
+	<string id="ui_mcm_rz_stock_info">
+		<text>Omezení zásob obchodníků: po každém doplnění zásob si obchodník nechá jen omezený počet kusů z každé skupiny, zbytek zmizí. -1 = bez omezení.</text>
+	</string>
+	<string id="ui_mcm_rz_stock">
+		<text>Omezit zásoby obchodníků</text>
+	</string>
+	<string id="ui_mcm_rz_stock_desc">
+		<text>Projeví se při příštím doplnění zásob (vanilla každých 24 h). Nesahá na společníky, na to, co má obchodník na sobě, ani na úkolové předměty.</text>
+	</string>
+	<string id="ui_mcm_rz_st_guns">
+		<text>Pušky, samopaly, brokovnice</text>
+	</string>
+	<string id="ui_mcm_rz_st_pistols">
+		<text>Pistole</text>
+	</string>
+	<string id="ui_mcm_rz_st_melee">
+		<text>Nože</text>
+	</string>
+	<string id="ui_mcm_rz_st_explosives">
+		<text>Granáty a náboje do granátometů</text>
+	</string>
+	<string id="ui_mcm_rz_st_attach">
+		<text>Doplňky zbraní (optika, tlumiče...)</text>
+	</string>
+	<string id="ui_mcm_rz_st_outfits">
+		<text>Obleky</text>
+	</string>
+	<string id="ui_mcm_rz_st_helmets">
+		<text>Helmy</text>
+	</string>
+	<string id="ui_mcm_rz_st_backpacks">
+		<text>Batohy</text>
+	</string>
+	<string id="ui_mcm_rz_st_mags">
+		<text>Zásobníky</text>
+	</string>
+	<string id="ui_mcm_rz_st_food">
+		<text>Jídlo a pití</text>
+	</string>
+	<string id="ui_mcm_rz_st_meds">
+		<text>Léky</text>
+	</string>
+	<string id="ui_mcm_rz_st_repair">
+		<text>Opravy a nářadí</text>
+	</string>
+	<string id="ui_mcm_rz_st_ammo">
+		<text>Munice (% krabic, které zůstanou)</text>
+	</string>
+	<string id="ui_mcm_rz_st_random">
+		<text>Náhoda (± % k limitu)</text>
+	</string>
+	<string id="ui_mcm_rz_stock_note">
+		<text>Počítají se kusy (krabice munice, balení). Tvoje prodané věci se do limitu nepočítají, dokud nepřijde další doplnění.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_ball">
+		<text>Balistika</text>
+	</string>
+	<string id="ui_mcm_rz_ball_title">
+		<text>ReZone balistika</text>
+	</string>
+	<string id="ui_mcm_rz_ball_info">
+		<text>Vlastní výpočet poškození NPC a mutantů od tvých střel. Data munice: configs\rezone\ammo.ltx. Boje NPC mezi sebou počítá hra jako dřív.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset">
+		<text>Předvolba poškození</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset_desc">
+		<text>Jak se počítají tvoje střely do NPC a zároveň profil obleků, které nosíš ty. CoP = Call of Pripyat, Anomaly = o kousek měkčí NPC, Hardcore = smrtící hlava a rozbíjení brnění. Profil obleků se projeví po načtení hry.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_cop">
+		<text>CoP (výchozí)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset_note">
+		<text>CoP: když náboj prorazí brnění, poškození klesne podle poměru (průraz - brnění) / průraz; když ne, projde jen tupý náraz. Proto AP munice proti obrněným a obyčejná proti neobrněným.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_npc_tough">
+		<text>Odolnost NPC</text>
+	</string>
+	<string id="ui_mcm_rz_ball_npc_tough_desc">
+		<text>Násobič navíc k předvolbě (2 = NPC vydrží dvakrát víc).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft">
+		<text>Suroviny a výroba munice</text>
+	</string>
+	<string id="ui_mcm_rz_ball_parts_loot">
+		<text>Suroviny na munici (množství)</text>
+	</string>
+	<string id="ui_mcm_rz_ball_parts_loot_desc">
+		<text>Nábojnice, prach a střely na mrtvolách, ve skrýších a u obchodníků (0 = nic, 1 = výchozí).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft_yield">
+		<text>Výnos výroby munice</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft_yield_desc">
+		<text>Kolik krabic dá jedna výroba běžné munice (zvláštní munice vždy 1).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_wear">
+		<text>Opotřebení obleků a helem</text>
+	</string>
+	<string id="ui_mcm_rz_ball_wear_desc">
+		<text>Kolik stavu ztratí oblek nebo helma při zásahu (1 = vanilla, 0.33 = třikrát pomaleji, 0 = vůbec). Nahrazuje DLTX armor_degradation_reduction – ten smaž, jinak se to násobí. Projeví se po načtení hry.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_info">
+		<text>Helmy (vlastní oddělené helmy ReZone): každý oblek má slot na helmu a hlavu chrání jen helma. Uzavřené obleky (SEVA, exo, Nosorog, NBC, SSP) ztratily vestavěnou masku – část ochrany proti radiaci, psí a chemii je teď v helmě. Pancíř helem se řídí profilem obleků výše. Samostatný mod Separated Helmets už nepotřebuješ.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helmets">
+		<text>Zapnout ReZone helmy</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helmets_desc">
+		<text>Vypnuto = jako vanilla: uzavřené obleky (SEVA, exo, Nosorog...) zase bez slotu na helmu, s plnou ochranou masky a hlavou chráněnou samotným oblekem. Helmy pro ostatní obleky zůstávají. Projeví se po načtení hry.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_drop">
+		<text>Uzavřené obleky upouštějí helmu</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_drop_desc">
+		<text>Mrtvý stalker v uzavřeném obleku (SEVA, exo, ...) upustí i odpovídající helmu, když ji jeho model nemá zvlášť. Platí stejná pravidla dropu jako u obleku. Seznam: configs\rezone\helmets.ltx.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_cop">
+		<text>Call of Pripyat – pro nováčky</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_normal">
+		<text>Normální (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_info">
+		<text>Kolik poškození dostáváš ty, podle typu zásahu. 1 = beze změny (vanilla).</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_preset_desc">
+		<text>Nastaví všechny typy zásahu najednou, pak je můžeš doladit.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_cop_note">
+		<text>Všechno poškození, které dostáváš, se nastavuje jen tady. Call of Pripyat (pro nováčky): kulky x0.35, mutanti x0.4, pády a údery x0.5, výbuchy x0.3, oheň x0.65, anomálie, radiace a psí x0.75. Anomaly: kulky x0.7. Hardcore: všechno silnější. Všechno na 1 = vanilla.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_craft">
+		<text>Crafting</text>
+	</string>
+	<string id="ui_mcm_rz_craft_title">
+		<text>ReZone Crafting</text>
+	</string>
+	<string id="ui_mcm_rz_craft_info">
+		<text>Recepty ve vanilla dílně a další záložky (Úkryt, Batohy, Zásobníky). Nastavení receptů po přečtení.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_remove_recipe">
+		<text>Recept po přečtení zmizí</text>
+	</string>
+	<string id="ui_mcm_rz_craft_remove_recipe_desc">
+		<text>Přečtený recept se odebere z inventáře. Recepty, které umíš, najdeš v PDA (Encyklopedie > Poznámky).</text>
+	</string>
+	<string id="ui_mcm_rz_craft_keep_known">
+		<text>Už známý recept nechat (na prodej)</text>
+	</string>
+	<string id="ui_mcm_rz_craft_keep_known_desc">
+		<text>Když čteš recept, který už znáš, zůstane ti v inventáři a můžeš ho prodat.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_menu">
+		<text>Hlavní menu</text>
+	</string>
+	<string id="ui_mcm_rz_menu_title">
+		<text>Hlavní menu</text>
+	</string>
+	<string id="ui_mcm_rz_menu_info">
+		<text>Video na pozadí hlavního menu a obrazovky nahrávání. Videa .ogm (Theora) vlož do gamedata\textures\ui\rz_mm_bg\ – každé se tu objeví pod svým jménem.</text>
+	</string>
+	<string id="ui_mcm_rz_menu_mm_bg_video">
+		<text>Pozadí menu (video)</text>
+	</string>
+	<string id="ui_mcm_rz_menu_mm_bg_video_desc">
+		<text>Výchozí = pozadí z tvých UI modů beze změny. Náhodné = při každém spuštění (a změně volby) jiné video.</text>
+	</string>
+	<string id="ui_mcm_rz_menu_note">
+		<text>Změna se projeví hned po Použít. Nová videa ve složce se v seznamu objeví po restartu hry. Názvy souborů malými písmeny, bez mezer a diakritiky (např. zaton_noc.ogm).</text>
+	</string>
+	<string id="ui_mcm_lst_rz_mm_bg_default">
+		<text>Výchozí</text>
+	</string>
+	<string id="ui_mcm_lst_rz_mm_bg_random">
+		<text>Náhodné</text>
+	</string>
+	<string id="ui_mcm_menu_rz_main">
+		<text>Hlavní</text>
+	</string>
+	<string id="ui_mcm_menu_rz_master">
+		<text>Předvolba hry</text>
+	</string>
+	<string id="ui_mcm_rz_master_title">
+		<text>Předvolba hry</text>
+	</string>
+	<string id="ui_mcm_rz_master_info">
+		<text>Jedna volba nastaví celé ReZone najednou podle stylu hry – balistiku, brnění a opotřebení, poškození hráče, odolnost mutantů, kořist, ceny, obchodníky a jejich zásoby, artefakty a populaci – a s EFT Health System i jeho obtížnost. Toulavé stalkery a zákazy obchodu (Hrát jako GAMMA, helmy) předvolba nezapíná, ty si zapneš sám.</text>
+	</string>
+	<string id="ui_mcm_rz_master">
+		<text>Předvolba hry</text>
+	</string>
+	<string id="ui_mcm_rz_master_desc">
+		<text>Vlastní = nic se nemění, platí tvoje nastavení na jednotlivých stránkách.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_custom">
+		<text>Vlastní (ruční nastavení)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_cop">
+		<text>Call of Pripyat – pro nováčky</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_master_cop_info">
+		<text>Call of Pripyat: kulky do hráče x0.35, anomálie a radiace x0.75, brnění CoP, pomalé opotřebení, slabší mutanti a výbuchy, artefakty a mutanti se dobře prodávají, obchodníci prodávají všechno, použitelné věci z mrtvol, klidnější Zóna, naučený recept zůstane, EFTH obtížnost Call of Pripyat.</text>
+	</string>
+	<string id="ui_mcm_rz_master_trilogy_info">
+		<text>Anomaly: kulky x0.7, brnění Anomaly, ceny a obchod jako vanilla Anomaly, mutanti vanilla, použitelné věci z mrtvol, populace vanilla, EFTH obtížnost Normální.</text>
+	</string>
+	<string id="ui_mcm_rz_master_hardcore_info">
+		<text>Hardcore: kulky x1.5 a všechno silnější, smrtící hlava, rozbíjení brnění, plné opotřebení, tužší mutanti, ekonomika jako GAMMA (výbava se prodává levně, omezené zásoby), málo použitelné kořisti, nebezpečná Zóna, EFTH obtížnost Hardcore.</text>
+	</string>
+	<string id="ui_mcm_rz_master_note">
+		<text>Po výběru se hned označí všechny volby, které předvolba změní (počet změn dole), a uloží se po Použít. Potom si můžeš cokoliv doladit ručně – předvolba to nepřepíše, dokud ji znovu nezměníš. Ceny, obchod a efekty nemění. Populace platí pro nově vzniklé skupiny.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_fx">
+		<text>Efekty</text>
+	</string>
+	<string id="ui_mcm_rz_fx_title">
+		<text>Obrazové efekty</text>
+	</string>
+	<string id="ui_mcm_rz_fx_info">
+		<text>Vypne zkreslení obrazu (PPE), které se objeví, když jsi blízko monstra nebo radiace. Zvuky, poškození, psí útoky i chování monster zůstanou stejné – zmizí jen efekt na obrazovce.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_rad">
+		<text>Vypnout efekt radiace</text>
+	</string>
+	<string id="ui_mcm_rz_fx_rad_desc">
+		<text>Radiační pole a radiační aura monster (např. poltergeist, controller, mutanti z radioaktivních míst).</text>
+	</string>
+	<string id="ui_mcm_rz_fx_polter">
+		<text>Vypnout efekty poltergeista</text>
+	</string>
+	<string id="ui_mcm_rz_fx_polter_desc">
+		<text>Psí aura a efekt „skenování“, když tě poltergeist zaměřuje.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_contr">
+		<text>Vypnout efekty controllera</text>
+	</string>
+	<string id="ui_mcm_rz_fx_contr_desc">
+		<text>Psí aura controllera (zkreslení obrazu v jeho blízkosti). Útok „tunelem“ zůstává.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psy_other">
+		<text>Vypnout psí auru ostatních</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psy_other_desc">
+		<text>Burer, karlík a psí pes.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_note">
+		<text>Projeví se u monster a radiačních polí, která se načtou po změně – nejjistěji po načtení uložené hry. Vyžaduje modded exes. Soubory hry se nemění.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_walk">
+		<text>Toulaví stalkeři</text>
+	</string>
+	<string id="ui_mcm_rz_walk_title">
+		<text>Toulaví stalkeři</text>
+	</string>
+	<string id="ui_mcm_rz_walk_info">
+		<text>Malé skupiny stalkerů procházejí lokací od místa k místu a chvíli na každém postojí, takže Zóna působí živěji i mimo tábory. Objevují se jen daleko od tebe, nikdy na základnách frakcí a nikdy v laboratořích a podzemí. Na noc, po čase nebo po vypnutí lokace zase zmizí – ale jen když jsou daleko nebo mimo dohled. Seznam lokací a frakcí je v configs\rezone\wander.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_enabled">
+		<text>Zapnout toulavé stalkery</text>
+	</string>
+	<string id="ui_mcm_rz_walk_enabled_desc">
+		<text>Vypnuto = nic se nespawnuje; skupiny, které už chodí, časem zmizí.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_max_squads">
+		<text>Nejvíc skupin na lokaci</text>
+	</string>
+	<string id="ui_mcm_rz_walk_max_squads_desc">
+		<text>Kolik toulavých skupin může být na jedné lokaci najednou.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_interval">
+		<text>Interval (herní minuty)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_interval_desc">
+		<text>Průměrný čas mezi novými skupinami (náhodně polovina až jedenapůlnásobek).</text>
+	</string>
+	<string id="ui_mcm_rz_walk_size">
+		<text>Velikost skupin</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_1">
+		<text>Jednotlivci (1–2)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_2">
+		<text>Malé skupiny (2–3)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_3">
+		<text>Skupiny (3–4)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lifetime">
+		<text>Jak dlouho zůstanou (herní hodiny)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lifetime_desc">
+		<text>Po této době skupina zmizí, jakmile bude daleko od tebe.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_radius">
+		<text>Vzdálenost od hráče (m)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_radius_desc">
+		<text>Blíž než tohle se skupina neobjeví ani nezmizí.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_only">
+		<text>Jen přes den</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_only_desc">
+		<text>V noci nové skupiny nevznikají a ty venku se postupně vytratí.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_start">
+		<text>Den začíná (hodina)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_end">
+		<text>Den končí (hodina)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_wipe">
+		<text>Smazat po odchodu z lokace</text>
+	</string>
+	<string id="ui_mcm_rz_walk_wipe_desc">
+		<text>Při přechodu na jinou lokaci toulavé skupiny zmizí (společníci zůstanou).</text>
+	</string>
+	<string id="ui_mcm_rz_walk_factions">
+		<text>Frakce</text>
+	</string>
+	<string id="ui_mcm_rz_walk_native">
+		<text>Jen frakce, které na lokaci žijí</text>
+	</string>
+	<string id="ui_mcm_rz_walk_native_desc">
+		<text>Skupina bude jen z frakce, která má na lokaci nějaké místo. Vypnuto = kterákoli zapnutá frakce.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_stalker">
+		<text>Samotáři</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_csky">
+		<text>Jasná obloha</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_dolg">
+		<text>Povinnost</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_freedom">
+		<text>Svoboda</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_bandit">
+		<text>Banditi</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_killer">
+		<text>Žoldáci</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_ecolog">
+		<text>Ekologové</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_army">
+		<text>Armáda</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_renegade">
+		<text>Odpadlíci</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_monolith">
+		<text>Monolit</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_isg">
+		<text>ISG</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_greh">
+		<text>Hřích</text>
+	</string>
+	<string id="ui_mcm_rz_walk_levels">
+		<text>Lokace (laboratoře a podzemí nikdy)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_escape">
+		<text>Kordon</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_marsh">
+		<text>Bažiny</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_darkscape">
+		<text>Darkscape</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pole">
+		<text>Louka</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_garbage">
+		<text>Smetiště</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_agroprom">
+		<text>Agroprom</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_darkvalley">
+		<text>Temné údolí</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_bar">
+		<text>Bar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_rostok">
+		<text>Divočina</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_trucks">
+		<text>Hřbitov aut</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_yantar">
+		<text>Jantar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_military">
+		<text>Armádní sklady</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_deadcity">
+		<text>Mrtvé město</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_red_forest">
+		<text>Rudý les</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_limansk">
+		<text>Limansk</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_hospital">
+		<text>Nemocnice</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_radar">
+		<text>Radar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_zaton">
+		<text>Zaton</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_jupiter">
+		<text>Jupiter</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pripyat">
+		<text>Pripyat (okraj)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pripyat_soc">
+		<text>Pripyat</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_stancia">
+		<text>ČAES</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_stancia_2">
+		<text>ČAES 2</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_generators">
+		<text>Generátory</text>
+	</string>
+	<string id="ui_mcm_menu_rz_afsp">
+		<text>Artefakty v anomáliích</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_title">
+		<text>Artefakty v anomáliích</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_info">
+		<text>Jak často v anomálních polích rostou artefakty a jak silné. Každé pole má podle místa své skupiny: na Kordonu hlavně bezcenné a slabé, dál v Zóně střední, v Pripyati, laboratořích a u elektrárny silné. Síla odpovídá artefaktům ReZone ve stylu Call of Pripyat (slabé, střední, silné). Nové artefakty rostou po emisi nebo psí bouři.</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_enabled">
+		<text>Zapnout artefakty ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_enabled_desc">
+		<text>Vypnuto = vanilla Anomaly výběr skupiny a šance. Rozdělení polí a skupin podle síly platí vždy.</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_preset">
+		<text>Předvolba</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_preset_desc">
+		<text>Nastaví posuvníky najednou, pak si je můžeš doladit.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_vanilla">
+		<text>Vanilla</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_cop">
+		<text>Call of Pripyat</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_chance">
+		<text>Šance na artefakt</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_chance_desc">
+		<text>Násobič šance, že při obnově pole artefakt vyroste (1 = podle obtížnosti ekonomiky, 0 = nikdy, 2 = dvakrát častěji).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_surge">
+		<text>Po emisi</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_surge_desc">
+		<text>Násobič šance po emisi (vanilla 1.4).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_psi">
+		<text>Po psí bouři</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_psi_desc">
+		<text>Násobič šance po psí bouři (vanilla 0.7).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_rarity">
+		<text>Vzácnost silných artefaktů</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_rarity_desc">
+		<text>Jak často pole vybere slabší nebo silnější skupinu, kterou nabízí.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_even">
+		<text>Rovnoměrně (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_cop">
+		<text>Call of Pripyat – silné vzácně</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_rare">
+		<text>Vzácné – silné jen výjimečně</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_note">
+		<text>Šance se projeví u polí, která se obnoví po změně (po další emisi nebo psí bouři).</text>
+	</string>
+	<string id="ui_mcm_menu_rz_af">
+		<text>Artefakty</text>
+	</string>
+	<string id="ui_mcm_menu_rz_mutdmg">
+		<text>Síla útoku mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_title">
+		<text>Síla útoku mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_info">
+		<text>Kolik poškození ti dá útok mutanta podle druhu. 0.5 = poloviční zásah, 2.0 = dvojnásobný. Násobí se s nastavením Poškození hráče (Mutanti).</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_enabled">
+		<text>Zapnout sílu útoku mutantů</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_enabled_desc">
+		<text>Vypnuto = útoky mutantů podle Poškození hráče.</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_all">
+		<text>Všichni mutanti</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_all_desc">
+		<text>Násobí se s hodnotou druhu.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_rs">
+		<text>ReSpawn Mutants – noví mutanti z modu</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_volk">
+		<text>Vlk</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_gonchaya">
+		<text>Gončaja (lovecký pes)</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_koyot">
+		<text>Kojot</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_shepherd">
+		<text>Pastevecký pes</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_burenka">
+		<text>Burenka</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_vebber">
+		<text>Vebber</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_ratking">
+		<text>Krysí král</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_zanoza">
+		<text>Zanoza</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_krisa">
+		<text>Obří krysa</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_tarakan">
+		<text>Šváb</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_zhaba">
+		<text>Žába</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_komar">
+		<text>Komár</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_letalka">
+		<text>Letalka</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_strekoza">
+		<text>Vážka</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_pyat">
+		<text>Pjať</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_duriel">
+		<text>Duriel</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_tark">
+		<text>Tark</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_obrazet">
+		<text>Obrazec</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_predadar">
+		<text>Predadar</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_jugger">
+		<text>Juggernaut</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_alghoul">
+		<text>Alghúl</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_vendigo">
+		<text>Wendigo</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_fur">
+		<text>Chlupáč (obr)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_zcp_warn">
+		<text>Je nainstalovaný Zone Customization Project. Obě nastavení populace by se násobila – používej jen jedno z nich.</text>
+	</string>
+</string_table>

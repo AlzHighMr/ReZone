@@ -1,0 +1,32 @@
+--[[
+	ReZone MCM - vlastni predvolby poskozeni hrace
+	Klic = hodnota v seznamu "preset" na strance Zdravi > Poskozeni hrace.
+	Hodnoty jsou nasobice poskozeni, ktere hrac dostane (1.0 = vanilla).
+	Uprav si cisla podle sebe - nic dalsiho menit nemusis.
+--]]
+
+-- poradi typu zasahu na strance (klice = jmena v tabulce hit.*)
+HIT_TYPES = {
+	"fire_wound", "wound", "strike", "explosion", "burn",
+	"light_burn", "shock", "chemical_burn", "radiation", "telepatic",
+}
+
+-- id predvolby -> nazev (string "ui_mcm_lst_rz_pd_<nazev>")
+NAMES = { [1] = "cop", [2] = "normal", [3] = "trilogy", [4] = "hardcore" }
+DEFAULT = 2
+
+--            strelne  secne  uder  exploze  ohen  l.ohen  sok   chemie  radiace  psy
+local function P(fw,    w,     st,   ex,      b,    lb,     sh,   cb,     r,       t)
+	return { fire_wound = fw, wound = w, strike = st, explosion = ex, burn = b,
+	         light_burn = lb, shock = sh, chemical_burn = cb, radiation = r, telepatic = t }
+end
+
+PRESETS = {
+	-- Call of Pripyat pro novacky: kulky x0.35 (zbrane NPC v Anomaly bijou silneji nez v CoP
+	-- a pruraz brneni CoP pusti plne poskozeni), mutanti x0.4, pady/udery x0.5, vybuchy x0.3, ohen x0.65,
+	-- anomalie (elektro, chemie, slaby ohen), radiace a psi x0.75
+	[1] = P(0.35, 0.40, 0.50, 0.30, 0.65, 0.75, 0.75, 0.75, 0.75, 0.75), -- Call of Pripyat
+	[2] = P(1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00), -- Normalni (vanilla)
+	[3] = P(0.70, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00), -- Anomaly: jen kulky mirnejsi
+	[4] = P(1.50, 1.60, 1.40, 1.80, 1.50, 1.40, 1.50, 1.50, 1.40, 1.50), -- Hardcore
+}

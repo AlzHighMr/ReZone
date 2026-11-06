@@ -1,0 +1,79 @@
+--[[
+	ReZone MCM - ceny u obchodniku podle druhu predmetu
+	Napad a druhy: Configurable Item Cost Modifiers (TheMrDemonized). Vlastni kod:
+	- jedna cache, handler se registruje jen kdyz je zapnuto a neco se meni
+	- zvlast celkovy nasobic pro prodej (hrac prodava) a nakup (hrac kupuje)
+	- helmy podle tridy (lehka / stredni / tezka)
+--]]
+
+local core = rezone_core
+local PR = rezone_prices
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_prices"
+local EPS = 0.0001
+
+local by_kind = {}
+local sell_all, buy_all = 1, 1
+local registered = false
+local kind_cache = {}
+
+local function kind_of(sec)
+	local k = kind_cache[sec]
+	if k then return k end
+	k = PR.HELMETS[sec]
+	if not k then
+		k = SYS_GetParam(0, sec, "kind", "") or ""
+		if k == "o_helmet" and SYS_GetParam(0, sec, "repair_type", "") == "helmet" then
+			k = "o_helmet_medium"
+		end
+		k = PR.EXTRA[k] or k
+	end
+	kind_cache[sec] = k
+	return k
+end
+
+-- profile.mode: 1 = predmet hrace (obchodnik kupuje), 2 = nabidka obchodnika
+local function on_get_item_cost(kind, obj, profile, calculated_cost, ret)
+	if not (obj and profile) then return end
+	local m = by_kind[kind_of(obj:section())] or 1
+	m = m * ((profile.mode == 1) and sell_all or buy_all)
+	if math.abs(m - 1) < EPS then return end
+	local old = tonumber(ret.new_cost) or calculated_cost or 0
+	ret.new_cost = math.floor(old * m + 0.5)
+end
+
+local function set_registered(on)
+	if on == registered then return end
+	registered = on
+	if on then
+		RegisterScriptCallback("on_get_item_cost", on_get_item_cost)
+	else
+		UnregisterScriptCallback("on_get_item_cost", on_get_item_cost)
+	end
+	core.log("ceny: %s", on and "zapnuto" or "vypnuto")
+end
+
+-- je nainstalovany puvodni mod? (pak by se ceny nasobily dvakrat)
+function demonized_present()
+	local fs = getFS and getFS()
+	return fs and fs:exist("$game_scripts$", "demonized_item_cost_modifiers.script") and true or false
+end
+
+function load()
+	local g = core.page(PAGE)
+	local changed = false
+	by_kind = {}
+	for _, k in ipairs(PR.KINDS) do
+		local v = g(k) or 1
+		by_kind[k] = v
+		if math.abs(v - 1) > EPS then changed = true end
+	end
+	sell_all = g("sell_all") or 1
+	buy_all = g("buy_all") or 1
+	if math.abs(sell_all - 1) > EPS or math.abs(buy_all - 1) > EPS then changed = true end
+	set_registered(g("enabled") == true and changed)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

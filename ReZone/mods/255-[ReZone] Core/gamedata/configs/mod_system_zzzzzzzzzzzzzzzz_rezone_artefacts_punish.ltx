@@ -1,0 +1,19 @@
+; =============================================================================
+; ReZone - postih za artefakty nesene bez kontejneru (rzaf_punish.script)
+;   chemicke artefakty (af_class_chem) obcas otravi, elektricke (af_class_electro)
+;   obcas kopnou. V olovene krabicce, IAM, AAC i AAM jsou bezpecne.
+;   Sance za kontrolu = chance_per_tier x tier artefaktu x MCM nasobic.
+; =============================================================================
+[rzaf_punish]
+check_sec            = 20       ; jak casto se kontroluje (realne sekundy)
+chance_per_tier      = 0.03     ; T2 6 %, T3 9 %, T4 12 % za kontrolu (na artefakt)
+cooldown_sec         = 90       ; po postihu stejneho druhu pauza
+chem_power_per_tier  = 0.012    ; sila chemickeho zasahu
+poison_s_base        = 20       ; delka otravy (efekt na obrazovce) = base + per_tier x tier
+poison_s_per_tier    = 8
+shock_power_per_tier = 0.02     ; sila elektrickeho zasahu
+; artefakty jinych modu (napr. SoC) - seznam oddeleny carkami
+chem_extra           = af_ameba_slime, af_ameba_slug, af_ameba_mica, af_rusty_thorn, af_rusty_kristall, af_rusty_sea
+electro_extra        = af_dummy_spring, af_dummy_pellicle
+chem_exclude         =
+electro_exclude      =

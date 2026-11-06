@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="ui_mcm_menu_rz_ballistics"><text>ReZone Ballistics</text></string>
+	<string id="ui_mcm_rz_ballistics_title"><text>ReZone Ballistics (Arti + GBO)</text></string>
+	<string id="ui_mcm_rz_ballistics_preset"><text>Damage preset</text></string>
+	<string id="ui_mcm_rz_ballistics_preset_desc"><text>Hardcore: GBO feel, armored NPCs need good ammo. Anomaly: NPCs die about 18 % faster and armor breaks sooner.</text></string>
+	<string id="ui_mcm_lst_rz_ball_hardcore"><text>Hardcore (GBO)</text></string>
+	<string id="ui_mcm_lst_rz_ball_trilogy"><text>Anomaly</text></string>
+	<string id="ui_mcm_rz_ballistics_npc_tough"><text>NPC toughness</text></string>
+	<string id="ui_mcm_rz_ballistics_npc_tough_desc"><text>Multiplies how much damage NPCs can take. 1.0 = preset value.</text></string>
+	<string id="ui_mcm_rz_ballistics_degrade"><text>Armor breaks under fire</text></string>
+	<string id="ui_mcm_rz_ballistics_degrade_desc"><text>Every bullet that does not penetrate weakens the armor of the bone it hit (GBO).</text></string>
+	<string id="st_ui_craft_ammo_special"><text>Special ammo</text></string>
+	<string id="ui_mcm_rz_ballistics_parts_loot"><text>Ammo crafting materials</text></string>
+	<string id="ui_mcm_rz_ballistics_parts_loot_desc"><text>How many casings, powder and bullets you find on bodies, in stashes and at traders. 0 = none, 1 = default, 2 = double.</text></string>
+	<string id="ui_mcm_rz_ballistics_craft_yield"><text>Ammo craft yield (boxes)</text></string>
+	<string id="ui_mcm_rz_ballistics_craft_yield_desc"><text>Boxes of standard ammo per craft. Special (Arti) ammo always 1.</text></string>
+</string_table>

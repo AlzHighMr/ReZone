@@ -1,0 +1,793 @@
+; =============================================================================
+; ReZone - artefakty ve stylu Call of Pripyat (DLTX) - v1.2
+; Hodnoty z CoP prevedene na jednotky Anomaly (stejny pomer jako v CoP).
+; Kazdy artefakt: hlavni efekt + radiace (1/2/3 jednotky podle sily) + jeden MINUS,
+; ktery vyrusi jiny artefakt (napr. Meduza odvadi radiaci, ale zhorsuje krvaceni -> Oko).
+; Meduza, Vyvert a Balon radiaci odvadi. Opotrebeni 4x pomalejsi. Perky: rzaf_pba_compat.script
+; =============================================================================
+
+; -- af_medusa (CoP)
+![af_medusa]
+radiation_restore_speed = -0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = -0.0007
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_medusa_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_cristall_flower (CoP)
+![af_cristall_flower]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_cristall_flower_absorbation]
+burn_immunity = -0.00115
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0.0138
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_night_star (CoP)
+![af_night_star]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 4
+degrade_rate = 0.25
+![af_night_star_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = -0.0072
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_vyvert (CoP)
+![af_vyvert]
+radiation_restore_speed = -0.00047
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = -0.0014
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_vyvert_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_gravi (CoP)
+![af_gravi]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 8
+degrade_rate = 0.25
+![af_gravi_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = -0.0138
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_gold_fish (CoP)
+![af_gold_fish]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 12
+degrade_rate = 0.25
+![af_gold_fish_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = -0.0189
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_cristall (CoP)
+![af_cristall]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_cristall_absorbation]
+burn_immunity = 0.00295
+shock_immunity = 0
+chemical_burn_immunity = -0.00021
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_fireball (CoP)
+![af_fireball]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_fireball_absorbation]
+burn_immunity = 0.0059
+shock_immunity = 0
+chemical_burn_immunity = -0.00039
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_dummy_glassbeads (CoP)
+![af_dummy_glassbeads]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0.00144
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_dummy_glassbeads_absorbation]
+burn_immunity = -0.00115
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_eye (CoP)
+![af_eye]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0.00278
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_eye_absorbation]
+burn_immunity = -0.00248
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_fire (CoP)
+![af_fire]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0.00435
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_fire_absorbation]
+burn_immunity = -0.00388
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_blood (CoP)
+![af_blood]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_blood_absorbation]
+burn_immunity = -0.00115
+shock_immunity = 0
+chemical_burn_immunity = 0.000654
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_mincer_meat (CoP)
+![af_mincer_meat]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_mincer_meat_absorbation]
+burn_immunity = -0.00248
+shock_immunity = 0
+chemical_burn_immunity = 0.001308
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_soul (CoP)
+![af_soul]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0.000075
+power_restore_speed = -0.00088
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_soul_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_fuzz_kolobok (CoP)
+![af_fuzz_kolobok]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0.00015
+power_restore_speed = -0.00108
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_fuzz_kolobok_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_baloon (CoP)
+![af_baloon]
+radiation_restore_speed = -0.0006
+health_restore_speed = 0
+power_restore_speed = -0.00088
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_baloon_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_glass (CoP)
+![af_glass]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0.0003
+power_restore_speed = -0.00142
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_glass_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_electra_sparkler (CoP)
+![af_electra_sparkler]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_electra_sparkler_absorbation]
+burn_immunity = 0
+shock_immunity = 0.21
+chemical_burn_immunity = -0.00021
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_electra_flash (CoP)
+![af_electra_flash]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_electra_flash_absorbation]
+burn_immunity = 0
+shock_immunity = 0.42
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = -0.034
+wound_immunity = -0.034
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_electra_moonlight (CoP)
+![af_electra_moonlight]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_electra_moonlight_absorbation]
+burn_immunity = -0.00248
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0.0276
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_dummy_battery (CoP)
+![af_dummy_battery]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0.00088
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_dummy_battery_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = -0.034
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_dummy_dummy (CoP)
+![af_dummy_dummy]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0.00142
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_dummy_dummy_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = -0.034
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_ice (CoP)
+![af_ice]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0
+power_restore_speed = 0.00186
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_ice_absorbation]
+burn_immunity = -0.00248
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_compass (CoP)
+![af_compass]
+radiation_restore_speed = 0.0006
+health_restore_speed = 0
+power_restore_speed = 0.00088
+bleeding_restore_speed = -0.0007
+satiety_restore_speed = 0
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_compass_absorbation]
+burn_immunity = 0.00295
+shock_immunity = 0.21
+chemical_burn_immunity = 0.000654
+radiation_immunity = 0
+telepatic_immunity = 0.0138
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_oasis_heart (CoP)
+![af_oasis_heart]
+radiation_restore_speed = 0.0006
+health_restore_speed = 0.000075
+power_restore_speed = 0.00088
+bleeding_restore_speed = 0.00144
+satiety_restore_speed = 0.00001
+additional_inventory_weight = 0
+degrade_rate = 0.25
+![af_oasis_heart_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_itcher (Anomaly (analog))
+![af_itcher]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_itcher_absorbation]
+burn_immunity = 0.00248
+shock_immunity = -0.0623
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_pin (Anomaly (analog))
+![af_pin]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_pin_absorbation]
+burn_immunity = 0.00388
+shock_immunity = 0
+chemical_burn_immunity = -0.00021
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_bracelet (Anomaly (analog))
+![af_bracelet]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_bracelet_absorbation]
+burn_immunity = 0
+shock_immunity = -0.0623
+chemical_burn_immunity = 0.00092
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_sponge (Anomaly (analog))
+![af_sponge]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_sponge_absorbation]
+burn_immunity = -0.00115
+shock_immunity = 0.2044
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_ring (Anomaly (analog))
+![af_ring]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = 0.00088
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_ring_absorbation]
+burn_immunity = -0.00248
+shock_immunity = 0.31269
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_lobster_eyes (Anomaly (analog))
+![af_lobster_eyes]
+radiation_restore_speed = 0.00013
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_lobster_eyes_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0.0189
+strike_immunity = 0
+wound_immunity = 0
+explosion_immunity = -0.034
+fire_wound_immunity = 0
+
+; -- af_black_spray (Anomaly (analog))
+![af_black_spray]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_black_spray_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0.0318
+strike_immunity = 0
+wound_immunity = -0.05
+explosion_immunity = 0
+fire_wound_immunity = 0
+
+; -- af_empty (Anomaly (analog))
+![af_empty]
+radiation_restore_speed = 0.00025
+health_restore_speed = 0
+power_restore_speed = -0.00088
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_empty_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0.16
+wound_immunity = 0.165
+explosion_immunity = 0.152
+fire_wound_immunity = 0.158
+
+; -- af_full_empty (Anomaly (analog))
+![af_full_empty]
+radiation_restore_speed = 0.00047
+health_restore_speed = 0
+power_restore_speed = -0.00113
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_full_empty_absorbation]
+burn_immunity = 0
+shock_immunity = 0
+chemical_burn_immunity = 0
+radiation_immunity = 0
+telepatic_immunity = 0
+strike_immunity = 0.21
+wound_immunity = 0.2
+explosion_immunity = 0.185
+fire_wound_immunity = 0.192
+
+; -- af_monolith (Anomaly (analog))
+![af_monolith]
+radiation_restore_speed = 0.0006
+health_restore_speed = 0
+power_restore_speed = 0
+bleeding_restore_speed = 0
+satiety_restore_speed = 0
+degrade_rate = 0.25
+![af_monolith_absorbation]
+burn_immunity = 0.004821
+shock_immunity = 0.31269
+chemical_burn_immunity = 0.00092
+radiation_immunity = 0
+telepatic_immunity = 0.0239
+strike_immunity = -0.034
+wound_immunity = -0.034
+explosion_immunity = -0.034
+fire_wound_immunity = -0.034
+
+; -- ostatni artefakty: jen pomalejsi opotrebeni
+![af_death_lamp]
+degrade_rate = 0.25
+![af_vaselisk]
+degrade_rate = 0.25
+![af_geliy]
+degrade_rate = 0.25
+![af_gimlet]
+degrade_rate = 0.25
+![af_quest_b14_twisted]
+degrade_rate = 0.25
+![af_misery_bread]
+degrade_rate = 0.25
+![af_black]
+degrade_rate = 0.25
+![af_dragon_eye]
+degrade_rate = 0.25
+![af_fire_loop]
+degrade_rate = 0.25
+![af_ball]
+degrade_rate = 0.25
+![af_fonar]
+degrade_rate = 0.25
+![af_tapeworm]
+degrade_rate = 0.25
+![af_moh]
+degrade_rate = 0.25
+![af_serofim]
+degrade_rate = 0.25
+![af_elektron]
+degrade_rate = 0.25
+![af_kogot]
+degrade_rate = 0.25
+![af_generator]
+degrade_rate = 0.25
+![af_black_angel]
+degrade_rate = 0.25
+![af_grapes]
+degrade_rate = 0.25
+![af_skull_miser]
+degrade_rate = 0.25
+![af_star_phantom]
+degrade_rate = 0.25
+![af_medallion]
+degrade_rate = 0.25
+![af_peas]
+degrade_rate = 0.25
+![af_kislushka]
+degrade_rate = 0.25
+![af_zhelch]
+degrade_rate = 0.25
+![af_sandstone]
+degrade_rate = 0.25
+![af_fountain]
+degrade_rate = 0.25
+![af_spaika]
+degrade_rate = 0.25
+![af_signet]
+degrade_rate = 0.25
+![af_repei]
+degrade_rate = 0.25
+![af_bat]
+degrade_rate = 0.25
+![af_sun]
+degrade_rate = 0.25
+![af_ear]
+degrade_rate = 0.25
+![af_chelust]
+degrade_rate = 0.25
+![af_atom]
+degrade_rate = 0.25
+![af_lighthouse]
+degrade_rate = 0.25
+![af_cell]
+degrade_rate = 0.25
+![af_cocoon]
+degrade_rate = 0.25
+![af_drops]
+degrade_rate = 0.25
+![af_ameba_slime]
+degrade_rate = 0.25
+![af_ameba_slug]
+degrade_rate = 0.25
+![af_ameba_mica]
+degrade_rate = 0.25
+![af_dummy_spring]
+degrade_rate = 0.25
+![af_dummy_pellicle]
+degrade_rate = 0.25
+![af_rusty_thorn]
+degrade_rate = 0.25
+![af_rusty_kristall]
+degrade_rate = 0.25
+![af_rusty_sea]
+degrade_rate = 0.25

@@ -1,0 +1,238 @@
+; ReZone Crafting - tvoje recepty z Banjaji (craft_vanilla/repair/upgrades/medical.ltx)
+; prevedene na vanilla zalozky craft.ltx. Zalozku [6] Munice resi ReZone Ballistics.
+
+![1]
+x_device_torch_dummy            = 1, recipe_basic_0,  flashlight_broken,1,  headlamp,1,  prt_i_resistors,3,  prt_i_capacitors,3
+x_device_torch_nv_1             = 1, recipe_basic_0,  device_torch_dummy,1,  prt_i_resistors,6,  prt_i_capacitors,6,  prt_i_copper,4
+x_device_torch_nv_2             = 2, recipe_advanced_2,  device_torch_nv_1,1,  prt_i_resistors,9,  prt_i_capacitors,9,  prt_i_transistors,5
+x_device_torch_nv_3             = 3, recipe_expert_2,  device_torch_nv_2,1,  prt_i_resistors,10,  prt_i_capacitors,10,  prt_i_transistors,6
+x_detector_simple               = 1, recipe_basic_0,  broken_detector,1,  prt_i_resistors,8,  prt_i_transistors,7,  prt_i_capacitors,8
+x_detector_geiger               = 1, recipe_basic_0,  broken_detector,1,  prt_i_resistors,6,  prt_i_capacitors,6,  prt_i_transistors,5
+x_detector_advanced             = 2, recipe_advanced_0,  detector_simple,1,  prt_i_resistors,8,  prt_i_transistors,12,  prt_i_capacitors,10
+x_detector_radio                = 2, recipe_advanced_1,  walkie,3,  prt_i_resistors,5,  prt_i_capacitors,6,  prt_i_transistors,5
+x_detector_elite                = 3, recipe_expert_2,  detector_advanced,1,  prt_i_resistors,20,  prt_i_transistors,17,  prt_i_capacitors,15
+x_detector_scientific           = 3, recipe_expert_4,  detector_elite,1,  prt_i_resistors,28,  prt_i_transistors,31,  prt_i_capacitors,23
+x_device_pda_2                  = 3, recipe_expert_1,  device_pda_1,1,  prt_i_resistors,8,  prt_i_transistors,10,  prt_i_capacitors,8
+x_device_pda_3                  = 3, recipe_expert_4,  device_pda_2,1,  prt_i_resistors,13,  prt_i_transistors,15,  prt_i_capacitors,16
+x_af_aac                        = 3, recipe_expert_0,  af_iam,1,  prt_i_resistors,3,  prt_i_transistors,6,  prt_i_capacitors,4
+x_af_iam                        = 2, recipe_advanced_0,  lead_box,1,  prt_i_resistors,5,  prt_i_transistors,4,  prt_i_capacitors,3
+x_af_aam                        = 3, recipe_expert_1,  af_aac,1,  prt_i_resistors,8,  prt_i_transistors,7,  prt_i_capacitors,5
+x_exo_power_supply              = 1, recipe_basic_3,  batteries_exo,1,  itm_backpack,1,  prt_i_copper,4,  prt_i_scrap,4
+x_exo_power_supply_military     = 1, recipe_advanced_1,  exo_power_supply,1,  af_electra_sparkler_af_iam,1,  prt_i_copper,8,  prt_i_scrap,8
+x_exo_power_supply_proto        = 2, recipe_exo_1,  exo_power_supply_military,1,  af_surge,1,  af_dummy_battery_af_aam,1,  prt_i_transistors,4
+x_exo_power_supply_tank         = 2, recipe_exo_2,  exo_power_supply_military,1,  af_surge,1,  af_full_empty_af_aam,1,  prt_i_resistors,4
+x_exo_power_supply_sprint       = 3, recipe_exo_3,  exo_power_supply_military,1,  af_cooler,1,  af_electra_flash_af_aam,1,  prt_i_capacitors,4
+x_batteries_exo                 = 3, recipe_exo_3,  batteries_dead,5,  prt_i_resistors,8,  prt_i_transistors,7,  prt_i_capacitors,5
+
+![2]
+!x_compression_bag
+!x_itm_backpack
+!x_equ_small_pack
+!x_equ_small_military_pack
+!x_equ_military_pack
+!x_equ_tourist_pack
+!x_itm_tent
+!x_itm_sleepbag
+!x_kit_hunt
+x_ac10632                       = 1, recipe_basic_0,  prt_i_glass,4,  prt_i_scrap,4
+x_wpn_addon_scope_pu            = 1, recipe_basic_0,  prt_i_glass,6,  prt_i_scrap,6,  mirror,1
+x_acog                          = 1, recipe_basic_0,  prt_i_glass,8,  prt_i_scrap,8,  mirror,2
+x_specter                       = 1, recipe_basic_0,  prt_i_glass,12,  prt_i_scrap,12,  mirror,4
+x_fieldcooker                   = 3, recipe_expert_0,  army_bowler,1,  explo_balon_gas,6,  prt_i_scrap,10,  prt_i_fasteners,8
+x_cooking                       = 1, recipe_basic_0,  cutlery,3,  prt_i_scrap,3
+x_army_bowler                   = 1, recipe_basic_0,  cooking,3,  prt_i_scrap,5,  prt_i_fasteners,3,  cutlery,3
+x_leatherman_tool               = 1, recipe_basic_0,  prt_i_scrap,3,  prt_i_fasteners,2,  swiss_knife,1,  ball_hammer,1
+x_wpn_binoc_inv                 = 1, recipe_basic_0,  welding_goggles,1,  mirror,3
+x_wpn_axe                       = 1, recipe_basic_1,  prt_i_scrap,5,  prt_i_wood,4,  ball_hammer,2
+x_wpn_axe3                      = 1, recipe_basic_1,  prt_i_scrap,6,  prt_i_wood,6,  ball_hammer,3
+x_lead_box                      = 1, recipe_basic_0,  prt_i_scrap,8,  prt_i_fasteners,4,  ball_hammer,1
+x_prt_o_support_1               = 3, recipe_advanced_4,  prt_i_scrap,10,  af_grid,1,  heavy_sewing_thread,1
+x_af_freon                      = 2, recipe_advanced_1,  detector_advanced,1,  prt_i_scrap,5,  prt_i_fasteners,4,  af_iam,1
+x_af_freon_up                   = 3, recipe_expert_1,  af_freon,3,  af_baloon,1
+x_af_plates                     = 2, recipe_advanced_1,  prt_o_ballistic_13,4,  prt_o_ballistic_9,3,  prt_i_scrap,3,  prt_i_fasteners,3
+x_af_kevlar                     = 2, recipe_advanced_3,  prt_o_ballistic_1,2,  prt_o_ballistic_3,3,  prt_o_ballistic_5,3,  prt_o_ballistic_7,4
+x_af_surge                      = 2, recipe_advanced_0,  prt_i_resistors,6,  prt_i_scrap,4,  prt_i_fasteners,4,  prt_o_retardant_17,3
+x_af_surge_up                   = 3, recipe_expert_3,  af_surge,1,  af_electra_sparkler,1
+x_af_frames                     = 2, recipe_advanced_0,  prt_i_scrap,6,  prt_o_ballistic_15,3,  prt_i_fasteners,4,  prt_o_fabrics_3,6
+x_af_frames_up                  = 3, recipe_expert_1,  af_frames,1,  af_night_star,1
+x_af_grid                       = 2, recipe_advanced_0,  prt_o_ballistic_5,2,  prt_i_scrap,4,  prt_i_fasteners,4,  prt_o_fabrics_3,4
+x_af_grid_up                    = 3, recipe_expert_1,  af_grid,2,  af_gravi,1
+x_af_cooler                     = 2, recipe_advanced_2,  e_syringe,2,  detector_geiger,1,  af_camelbak,1,  prt_i_plastic,3
+x_af_cooler_up                  = 3, recipe_expert_1,  af_cooler,2,  af_fuzz_kolobok,1
+x_af_camelbak                   = 2, recipe_advanced_4,  prt_i_scrap,5,  prt_o_ballistic_9,4,  prt_o_ballistic_13,3,  prt_o_retardant_13,3
+x_af_camelbak_up                = 3, recipe_expert_2,  af_camelbak,1,  af_dummy_battery,1
+
+![3]
+x_sharpening_stones             = 1, recipe_basic_0,  swiss_knife,1,  prt_i_scrap,2,  steel_wool,1
+x_heavy_sewing_thread           = 1, recipe_basic_0,  sewing_thread,4,  sewing_kit_b,3,  swiss_knife,1
+x_ramrod_tool                   = 1, recipe_basic_0,  prt_i_scrap,4,  prt_i_fasteners,4,  prt_i_wood,4,  swiss_knife,1
+x_rasp_tool                     = 1, recipe_basic_0,  grooming,1,  swiss_knife,1,  prt_i_scrap,6,  prt_i_fasteners,4
+x_solvent                       = 1, recipe_basic_0,  gun_oil_ru,2,  swiss_knife,3,  prt_o_fabrics_4,3
+x_cleaning_kit_p                = 1, recipe_basic_1,  gun_oil,3,  swiss_knife,3,  steel_wool,2,  prt_i_fasteners,3
+x_cleaning_kit_s                = 1, recipe_basic_2,  gun_oil_ru_d,3,  grooming,2,  steel_wool,2,  prt_i_fasteners,4
+x_cleaning_kit_r5               = 1, recipe_basic_3,  gun_oil_ru,3,  grooming,3,  steel_wool,3,  prt_i_fasteners,4
+x_cleaning_kit_r7               = 1, recipe_basic_3,  solvent,3,  swiss_knife,3,  steel_wool,4,  prt_i_fasteners,4
+x_cleaning_kit_u                = 1, recipe_basic_4,  gun_oil,4,  swiss_knife,3,  steel_wool,4,  prt_i_fasteners,6
+x_sewing_kit_b                  = 2, recipe_advanced_0,  glue_b,4,  sewing_thread,3,  swiss_knife,1,  prt_o_fabrics_4,3
+x_sewing_kit_a                  = 2, recipe_advanced_0,  glue_a,4,  sewing_thread,4,  swiss_knife,2,  prt_o_fabrics_4,4
+x_sewing_kit_h                  = 2, recipe_advanced_0,  glue_e,4,  sewing_thread,5,  swiss_knife,3,  prt_o_fabrics_4,5
+x_toolkit_p                     = 1, recipe_basic_1,  cleaning_kit_p,1,  gun_oil_ru_d,1,  grooming,2,  steel_wool,2
+x_toolkit_s                     = 1, recipe_basic_1,  cleaning_kit_s,1,  gun_oil,1,  grooming,3,  steel_wool,3
+x_toolkit_r5                    = 2, recipe_advanced_1,  cleaning_kit_r5,4,  gun_oil_ru,1,  grooming,3,  steel_wool,5
+x_toolkit_r7                    = 2, recipe_advanced_3,  cleaning_kit_r7,4,  gun_oil,1,  grooming,3,  steel_wool,6
+x_armor_repair_fa               = 1, recipe_expert_0,  sewing_kit_b,2,  sewing_thread,2,  duct_tape,4,  prt_o_fabrics_4,3
+x_light_repair_kit              = 1, recipe_expert_0,  glue_e,3,  glue_b,3,  sewing_thread,4,  swiss_knife,3
+x_helmet_repair_kit             = 2, recipe_expert_1,  heavy_sewing_thread,1,  sewing_kit_a,2,  glue_b,2,  duct_tape,3
+x_medium_repair_kit             = 2, recipe_expert_1,  sewing_kit_b,3,  heavy_sewing_thread,2,  glue_b,3,  grooming,3
+x_heavy_repair_kit              = 3, recipe_expert_4,  sewing_kit_a,4,  heavy_sewing_thread,2,  glue_a,3,  light_repair_kit,1
+x_exo_repair_kit                = 3, recipe_expert_4,  sewing_kit_h,5,  heavy_sewing_thread,4,  glue_e,4,  medium_repair_kit,1
+
+![4]
+!x_upgr_o_1_health
+!x_upgr_o_1_bleed
+!x_upgr_o_1_armor
+!x_upgr_o_1_damage
+!x_upgr_o_1_durability
+!x_upgr_o_1_power
+!x_upgr_o_1_chem
+!x_upgr_o_1_burn
+!x_upgr_o_1_shock
+!x_upgr_o_1_psi
+!x_upgr_o_1_rad
+!x_upgr_o_1_carry
+!x_upgr_o_1_arty
+!x_upgr_o_1_run
+!x_upgr_o_1_weight
+!x_upgr_o_2_health
+!x_upgr_o_2_bleed
+!x_upgr_o_2_armor
+!x_upgr_o_2_damage
+!x_upgr_o_2_durability
+!x_upgr_o_2_power
+!x_upgr_o_2_chem
+!x_upgr_o_2_burn
+!x_upgr_o_2_shock
+!x_upgr_o_2_psi
+!x_upgr_o_2_rad
+!x_upgr_o_2_carry
+!x_upgr_o_2_arty
+!x_upgr_o_2_run
+!x_upgr_o_2_weight
+!x_upgr_o_3_health
+!x_upgr_o_3_bleed
+!x_upgr_o_3_armor
+!x_upgr_o_3_damage
+!x_upgr_o_3_durability
+!x_upgr_o_3_power
+!x_upgr_o_3_chem
+!x_upgr_o_3_burn
+!x_upgr_o_3_shock
+!x_upgr_o_3_psi
+!x_upgr_o_3_rad
+!x_upgr_o_3_carry
+!x_upgr_o_3_arty
+!x_upgr_o_3_run
+!x_upgr_o_3_weight
+!x_upgr_w_1_weight
+!x_upgr_w_1_muffle
+!x_upgr_w_1_grenade_mount
+!x_upgr_w_1_reliability
+!x_upgr_w_1_speed
+!x_upgr_w_1_recoil
+!x_upgr_w_1_magazine
+!x_upgr_w_1_scope
+!x_upgr_w_1_dispersion
+!x_upgr_w_1_calibre
+!x_upgr_w_1_inertion
+!x_upgr_w_1_rpm
+!x_upgr_w_1_scope_mount
+!x_upgr_w_1_firemode
+!x_upgr_w_2_weight
+!x_upgr_w_2_muffle
+!x_upgr_w_2_grenade_mount
+!x_upgr_w_2_reliability
+!x_upgr_w_2_speed
+!x_upgr_w_2_recoil
+!x_upgr_w_2_magazine
+!x_upgr_w_2_scope
+!x_upgr_w_2_dispersion
+!x_upgr_w_2_calibre
+!x_upgr_w_2_inertion
+!x_upgr_w_2_rpm
+!x_upgr_w_2_scope_mount
+!x_upgr_w_2_firemode
+!x_upgr_w_3_weight
+!x_upgr_w_3_muffle
+!x_upgr_w_3_grenade_mount
+!x_upgr_w_3_reliability
+!x_upgr_w_3_speed
+!x_upgr_w_3_recoil
+!x_upgr_w_3_magazine
+!x_upgr_w_3_scope
+!x_upgr_w_3_dispersion
+!x_upgr_w_3_calibre
+!x_upgr_w_3_inertion
+!x_upgr_w_3_rpm
+!x_upgr_w_3_scope_mount
+!x_upgr_w_3_firemode
+x_upgr_o_1_magical              = 1, recipe_basic_1,  sewing_thread,6,  armor_repair_fa,3,  prt_i_copper,3,  prt_o_ballistic_1,3
+x_upgr_o_1_physical             = 1, recipe_basic_1,  sewing_kit_h,6,  prt_i_textolite,4,  prt_i_leather,3,  prt_o_ballistic_2,3
+x_upgr_o_1_utility              = 1, recipe_basic_1,  sewing_kit_b,6,  prt_o_retardant_1,3,  prt_i_transistors,5,  prt_o_ballistic_18,3
+x_upgr_o_2_magical              = 2, recipe_basic_2,  sewing_thread,10,  armor_repair_fa,6,  prt_i_copper,6,  prt_o_ballistic_1,6
+x_upgr_o_2_physical             = 2, recipe_basic_2,  sewing_kit_h,8,  prt_i_textolite,6,  prt_i_leather,6,  prt_o_ballistic_2,6
+x_upgr_o_2_utility              = 2, recipe_basic_2,  sewing_kit_b,5,  prt_o_retardant_1,6,  prt_i_transistors,8,  prt_o_ballistic_18,6
+x_upgr_o_3_magical              = 3, recipe_expert_1,  sewing_thread,10,  armor_repair_fa,8,  prt_i_copper,8,  prt_o_ballistic_1,9
+x_upgr_o_3_physical             = 3, recipe_expert_1,  sewing_kit_h,6,  prt_i_textolite,8,  prt_i_leather,8,  prt_o_ballistic_2,9
+x_upgr_o_3_utility              = 3, recipe_expert_1,  sewing_kit_b,8,  prt_o_retardant_1,8,  prt_i_transistors,12,  prt_o_ballistic_18,9
+x_upgr_w_1_internal             = 1, recipe_basic_1,  leatherman_tool,2,  gun_oil,3,  prt_i_scrap,8
+x_upgr_w_1_external             = 1, recipe_basic_1,  cleaning_kit_p,2,  solvent,2,  prt_i_fasteners,6
+x_upgr_w_1_optical              = 1, recipe_basic_1,  toolkit_p,2,  prt_i_glass,6,  duct_tape,6,  ac10632,1
+x_upgr_w_2_internal             = 2, recipe_basic_3,  leatherman_tool,4,  gun_oil,4,  prt_i_scrap,12
+x_upgr_w_2_external             = 2, recipe_basic_3,  cleaning_kit_p,4,  solvent,3,  prt_i_fasteners,8
+x_upgr_w_2_optical              = 2, recipe_basic_3,  toolkit_p,4,  prt_i_glass,10,  duct_tape,6,  kobra,1
+x_upgr_w_3_internal             = 3, recipe_expert_1,  leatherman_tool,6,  gun_oil,4,  prt_i_scrap,20
+x_upgr_w_3_external             = 3, recipe_expert_1,  rasp_tool,3,  armor_repair_fa,2,  prt_i_fasteners,12
+x_upgr_w_3_optical              = 3, recipe_expert_1,  toolkit_p,2,  prt_i_glass,15,  duct_tape,8,  1p29,1
+
+![5]
+!x_stimpack
+!x_stimpack_army
+!x_jgut
+!x_antirad_kalium
+!x_stimpack_scientic
+!x_antirad_cystamine
+!x_survival_kit
+x_bandage                       = 4, recipe_drug_0,  yadylin,1,  prt_o_fabrics_1,1
+x_bandage_army                  = 4, recipe_drug_0,  bandage,2,  vodka,1
+x_medkit                        = 4, recipe_drug_0,  yadylin,2,  e_syringe,2,  prt_i_plastic,2
+x_medkit_army                   = 4, recipe_drug_0,  medkit,2,  bandage,2,  prt_i_plastic,2
+x_medkit_scientic               = 4, recipe_drug_0,  medkit_army,1,  antirad_kalium,1,  prt_i_plastic,2
+x_yadylin                       = 4, recipe_drug_0,  drug_sleepingpills,1,  protein,1,  jar,1
+x_akvatab                       = 4, recipe_drug_0,  drug_sleepingpills,2,  protein,2,  jar,1
+x_drug_charcoal                 = 4, recipe_drug_0,  charcoal,1,  yadylin,1,  akvatab,1
+x_morphine                      = 4, recipe_drug_0,  salicidic_acid,1,  drug_booster,1,  e_syringe,2
+x_adrenalin                     = 4, recipe_drug_0,  drug_booster,2,  e_syringe,1,  prt_i_plastic,2
+x_salicidic_acid                = 4, recipe_drug_0,  protein,1,  drug_booster,1,  e_syringe,1
+x_rebirth                       = 4, recipe_drug_0,  medkit_scientic,3,  yadylin,2,  e_syringe,2
+x_glucose                       = 4, recipe_drug_0,  glucose_s,2,  e_syringe,1
+x_glucose_s                     = 4, recipe_drug_0,  protein,1,  e_syringe,1
+x_purification_tablet           = 4, recipe_drug_0,  yadylin,2,  antibio_chlor,3
+x_antirad                       = 4, recipe_drug_0,  antibio_chlor,2,  prt_i_plastic,1
+x_drug_booster                  = 4, recipe_drug_0,  joint,1,  vodka,1,  jar,1
+x_drug_coagulant                = 4, recipe_drug_0,  antibio_chlor,1,  drug_sleepingpills,5,  prt_i_plastic,1
+x_drug_psy_blockade             = 4, recipe_drug_0,  marijuana,1,  joint,1,  prt_i_plastic,1
+x_drug_antidot                  = 4, recipe_drug_0,  antiemetic,3,  prt_i_plastic,2
+x_drug_anabiotic                = 4, recipe_drug_0,  drug_psy_blockade,5,  drug_booster,2,  prt_i_plastic,1
+x_drug_radioprotector           = 4, recipe_drug_0,  antibio_sulfad,1,  antirad,2,  prt_i_plastic,1
+x_tetanus                       = 4, recipe_drug_0,  antibio_chlor,1,  antibio_sulfad,1,  e_syringe,1
+x_cocaine                       = 4, recipe_drug_0,  drug_booster,1,  prt_i_plastic,2
+x_analgetic                     = 4, recipe_drug_0,  yadylin,1,  bandage,1,  e_syringe,1
+x_antiemetic                    = 4, recipe_drug_0,  tetanus,1,  prt_i_plastic,1
+
+![item_combination]
+itm_sleepbag:beadspread = prop_bed_1
+beadspread:itm_sleepbag = prop_bed_1
+porn:prt_i_scrap = prop_poster_vertical_item
+prt_i_scrap:porn = prop_poster_vertical_item
+porn2:prt_i_scrap = prop_poster_vertical_item
+prt_i_scrap:porn2 = prop_poster_vertical_item

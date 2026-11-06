@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	<string id="ui_mcm_menu_ballistics">
+		<text>Balistika</text>
+	</string>
+	<string id="ui_mcm_ballistics_title">
+		<text>Balistický framework</text>
+	</string>
+	<string id="ui_mcm_ballistics_debug">
+		<text>Vývojářské logování.</text>
+	</string>
+	<string id="ui_mcm_ballistics_impair">
+		<text>Vlastní hodnoty opotřebení</text>
+	</string>
+	<string id="ui_mcm_ballistics_impair_desc">
+		<text>Použije úroveň opotřebení z vlastní konfigurace munice.</text>
+	</string>
+	<string id="ui_mcm_ballistics_cost">
+		<text>Vlastní ceny</text>
+	</string>
+	<string id="ui_mcm_ballistics_cost_desc">
+		<text>Použije základní cenu definovanou ve vlastní konfiguraci munice.</text>
+	</string>
+	<string id="ui_mcm_ballistics_hitnum">
+		<text>Čísla poškození</text>
+	</string>
+	<string id="ui_mcm_ballistics_mutant_desc">
+		<text>Zobrazuje čísla poškození. Vyžaduje Demonized hit numbers.</text>
+	</string>
+	<string id="ui_mcm_ballistics_incoming">
+		<text>Balistika platí i pro hráče</text>
+	</string>
+	<string id="ui_mcm_ballistics_incoming_desc">
+		<text>Použije vlastní výpočty i na příchozí balistické poškození. Kontrolou ID hráče lze vlastní efekty vypnout; čeká na refaktoring.</text>
+	</string>
+	<string id="ui_mcm_ballistics_burer">
+		<text>Odolnost burerů</text>
+	</string>
+	<string id="ui_mcm_ballistics_burer_desc">
+		<text>Mění odolnost burerů. Možnosti:
+		\n \n Klasika: jako dosud (silný pancíř, k zabití potřebujete puškovou munici)
+		\n \n Masitý: sníží pancíř zhruba na úroveň pseudopsa a ztrojnásobí zdraví. HP munice je účinnější.
+		\n \n Sith: sníží pancíř zhruba na úroveň pseudopsa a pasivně odráží pomalé střely.</text>
+	</string>
+	<string id="ui_mcm_lst_bclassic">
+		<text>Klasika</text>
+	</string>
+	<string id="ui_mcm_lst_bmeaty">
+		<text>Masitý</text>
+	</string>
+	<string id="ui_mcm_lst_bsith">
+		<text>Sith</text>
+	</string>
+	<string id="ui_mcm_ballistics_snork">
+		<text>Odolnost snorků</text>
+	</string>
+	<string id="ui_mcm_ballistics_snork_desc">
+		<text>Mění ochranu snorků. Snorci mají abnormálně silný pancíř, takže jsou v tomto systému otravní na boj. Možnosti:
+		\n \n Normální: jako dosud
+		\n \n Tlustý: dvojnásobné zdraví, poloviční pancíř.
+		\n \n THICC: trojnásobné zdraví, čtvrtinový pancíř.</text>
+	</string>
+	<string id="ui_mcm_lst_snormal">
+		<text>Normální</text>
+	</string>
+	<string id="ui_mcm_lst_sfat">
+		<text>Tlustý</text>
+	</string>
+	<string id="ui_mcm_lst_ssfat">
+		<text>THICC</text>
+	</string>
+	<string id="ui_mcm_ballistics_legs">
+		<text>Střelba na nohy</text>
+	</string>
+	<string id="ui_mcm_ballistics_legs_desc">
+		<text>Sníží pancíř končetin a poškození končetin na polovinu. Průbojnější munice ztratí na účinku, zatímco munice s dutou špičkou bude účinnější. Nabízí alternativní, na munici náročný způsob, jak skolit těžce obrněné nepřátele.</text>
+	</string>
+</string_table>

@@ -1,0 +1,399 @@
+--[[
+	ReZone - selekce artefaktu (selekcionari ze SGM 2.2), vlastni prepis
+
+	Vse se nastavuje v configs\rezone\af_breeding.ltx:
+	  [breeders]  kdo selektuje, kde stoji, tridy a nejvyssi stupen (T1..T4)
+	  [prices]    ceny kroku
+	Seznam artefaktu: configs\rezone\af_breeding_bases.ltx, staty: items_rezone_breeding*.ltx
+	(oboji generuje tools\gen_breeding.py).
+
+	Selekcionar vylepsi artefakt z inventare hrace:
+	  zaklad -> <art>_brd_<typ>1 (rad / cw / reg / tier) -> 2 -> 3 -> 4
+	Stav artefaktu zustava. Artefakty v kontejnerech se nenabizeji.
+	Zadny soubor hry se neprepisuje: dialog, postavy a profily se pridavaji pres DLTX,
+	Lesnikovi se dialog pripoji pres DXML (modxml_rezone).
+--]]
+
+local CFG = "rezone\\af_breeding.ltx"
+local BASES = "rezone\\af_breeding_bases.ltx"
+local SLOTS = 10
+local MAX_LVL = 4
+local TYPES = { "rad", "cw", "reg", "tier" }
+local FLAG = "sgmb_spawned_"		-- stejny jako puvodni SGM Selekce: nic se nespawnuje dvakrat
+
+local bases, breeders, order, price_mult, price_min
+local cand, sel = {}, nil
+
+local function log(fmt, ...)
+	if rezone_core and rezone_core.log then rezone_core.log("selekce: " .. fmt, ...) end
+end
+local function warn(fmt, ...)
+	if rezone_core and rezone_core.warn then rezone_core.warn("selekce: " .. fmt, ...) end
+end
+
+-----------------------------------------------------------------------
+-- nastaveni
+-----------------------------------------------------------------------
+local function nums(s)
+	local t = {}
+	for v in string.gmatch(s or "", "[^,%s]+") do t[#t + 1] = tonumber(v) end
+	return t
+end
+
+local function load()
+	if bases then return end
+	bases, breeders, order = {}, {}, {}
+	local bi = ini_file(BASES)
+	if bi and bi:section_exist("bases") then
+		for n = 0, bi:line_count("bases") - 1 do
+			local _, sec, v = bi:r_line_ex("bases", n, "", "")
+			local t = str_explode(v or "", ",")
+			if sec and ini_sys:section_exist(sec) and t[1] then
+				bases[sec] = { class = t[1], tier = tonumber(t[2]) or 2, cost = tonumber(t[3]) or 0 }
+			end
+		end
+	end
+	local ini = ini_file(CFG)
+	if ini and ini:section_exist("breeders") then
+		for n = 0, ini:line_count("breeders") - 1 do
+			local _, id = ini:r_line_ex("breeders", n, "", "")
+			if id and id ~= "" and ini:section_exist(id) then
+				local set = {}
+				for c in string.gmatch(ini:r_string_ex(id, "classes") or "all", "[%w_]+") do set[c] = true end
+				local b = { id = id, classes = set, max = clamp(ini:r_float_ex(id, "max_tier") or MAX_LVL, 1, MAX_LVL),
+				            spawn = ini:r_string_ex(id, "spawn") or "existing", wait_info = ini:r_string_ex(id, "wait_info") }
+				breeders[id] = b
+				order[#order + 1] = b
+			end
+		end
+	end
+	price_mult = nums(ini and ini:r_string_ex("prices", "mult") or "0.5,0.75,1.0,1.5")
+	price_min = ini and ini:r_float_ex("prices", "min") or 0
+end
+
+-----------------------------------------------------------------------
+-- artefakty
+-----------------------------------------------------------------------
+-- rozklad sekce: zaklad, typ, stupen (zaklad = stupen 0)
+function parse(sec)
+	load()
+	if bases[sec] then return sec, nil, 0 end
+	local b, t, l = string.match(sec, "^(.+)_brd_(%a+)(%d)$")
+	if b and bases[b] then return b, t, tonumber(l) end
+end
+
+function price(base, lvl)
+	load()
+	local d = bases[base]
+	local p = math.floor((d and d.cost or 0) * (price_mult[lvl] or 1) / 100 + 0.5) * 100
+	return math.max(p, price_min)
+end
+
+local function gs(id) return game.translate_string(id) end
+local function sec_name(sec) return gs(ini_sys:r_string_ex(sec, "inv_name") or sec) end
+
+local function talker()
+	return mob_trade and mob_trade.GetTalkingNpc and mob_trade.GetTalkingNpc()
+end
+
+-- selekcionar podle story_id, profilu nebo sekce postavy
+function breeder_of(npc)
+	load()
+	if not npc then return end
+	local sid = get_object_story_id and get_object_story_id(npc:id())
+	local prof = npc.profile_name and npc:profile_name()
+	return (sid and breeders[sid]) or (prof and breeders[prof]) or breeders[npc:section()]
+end
+
+local function accepts(b, base)
+	return b and (b.classes.all or b.classes[bases[base].class])
+end
+
+local function collect(npc)
+	cand = {}
+	local b = breeder_of(npc)
+	if not b then return cand end
+	db.actor:iterate_inventory(function(_, item)
+		local sec = item:section()
+		local base, typ, lvl = parse(sec)
+		if base and lvl < b.max and accepts(b, base) then
+			cand[#cand + 1] = { id = item:id(), sec = sec, base = base, typ = typ, lvl = lvl }
+		end
+	end, db.actor)
+	table.sort(cand, function(x, y)
+		if x.base ~= y.base then return sec_name(x.base) < sec_name(y.base) end
+		return x.lvl < y.lvl
+	end)
+	return cand
+end
+
+local function class_list(npc)
+	local b = breeder_of(npc or talker())
+	if not b then return "" end
+	local t = {}
+	if b.classes.all then
+		t[1] = gs("st_rz_brd_class_all")
+	else
+		for _, c in ipairs({ "gravi", "thermo", "chem", "electro" }) do
+			if b.classes[c] then t[#t + 1] = gs("st_rz_brd_class_" .. c) end
+		end
+	end
+	return string.format(gs("st_rz_brd_classes"), table.concat(t, ", "), b.max)
+end
+
+-----------------------------------------------------------------------
+-- dialog
+-----------------------------------------------------------------------
+function is_breeder(a, b) return breeder_of(dialogs.who_is_npc(a, b)) ~= nil end
+
+function text_intro()
+	collect(talker())
+	if #cand == 0 then return string.format(gs("st_rz_brd_none"), class_list()) end
+	return string.format(gs("st_rz_brd_intro"), class_list())
+end
+
+local function slot(i, a, b)
+	if i == 1 and a and b then collect(dialogs.who_is_npc(a, b)) end
+	return cand[i] ~= nil
+end
+local function slot_text(i) local c = cand[i]; return c and sec_name(c.sec) or "" end
+local function sel_valid()
+	return sel and db.actor:object(sel.sec) ~= nil
+end
+
+local function limit()
+	local b = breeder_of(talker())
+	return b and b.max or MAX_LVL
+end
+
+function text_offer()
+	if not sel then return "" end
+	local name = sec_name(sel.sec)
+	if sel.lvl == 0 then return string.format(gs("st_rz_brd_offer_base"), name) end
+	if sel.lvl < limit() then return string.format(gs("st_rz_brd_offer_next"), name) end
+	if sel.lvl < MAX_LVL then return string.format(gs("st_rz_brd_offer_limit"), name) end
+	return string.format(gs("st_rz_brd_offer_max"), name)
+end
+
+local function can_type(t)
+	return sel_valid() and sel.lvl == 0 and ini_sys:section_exist(sel.base .. "_brd_" .. t .. "1")
+		and db.actor:money() >= price(sel.base, 1)
+end
+
+function can_next()
+	return sel_valid() and sel.lvl > 0 and sel.lvl < limit()
+		and ini_sys:section_exist(sel.base .. "_brd_" .. sel.typ .. (sel.lvl + 1))
+		and db.actor:money() >= price(sel.base, sel.lvl + 1)
+end
+
+function no_money()
+	if not sel_valid() or sel.lvl >= limit() then return false end
+	return db.actor:money() < price(sel.base, sel.lvl + 1)
+end
+
+function opt_next()
+	if not sel then return "" end
+	return string.format(gs("st_rz_brd_opt_next"), sel.lvl + 1, price(sel.base, sel.lvl + 1))
+end
+
+function text_done() return gs("st_rz_brd_done") end
+
+local function breed(a, b, typ)
+	if not sel_valid() then return end
+	local npc = dialogs.who_is_npc(a, b)
+	local lvl = sel.lvl + 1
+	typ = typ or sel.typ
+	local new_sec = sel.base .. "_brd_" .. typ .. lvl
+	if not ini_sys:section_exist(new_sec) then
+		warn("sekce %s neexistuje (spustit tools\\gen_breeding.py)", new_sec)
+		return
+	end
+	local cost = price(sel.base, lvl)
+	if db.actor:money() < cost then return end
+	local item = level.object_by_id(sel.id) or db.actor:object(sel.sec)
+	if not item then return end
+	local cond = item:condition()
+	dialogs.relocate_money(npc, cost, "out")
+	alife_release_id(item:id())
+	alife_create_item(new_sec, db.actor, { cond = cond })
+	news_manager.send_tip(db.actor, string.format(gs("st_rz_brd_news"), sec_name(new_sec)), nil, nil, 6000)
+	log("%s -> %s za %s RU", sel.sec, new_sec, cost)
+	sel = nil
+end
+
+function breed_next(a, b) breed(a, b, nil) end
+
+-- funkce pro sloty a typy (dialog je vola jmenem)
+local M = getfenv and getfenv(1) or _G
+for i = 1, SLOTS do
+	M["slot_" .. i] = function(a, b) return slot(i, a, b) end
+	M["slot_text_" .. i] = function() return slot_text(i) end
+	M["select_" .. i] = function() sel = cand[i] end
+end
+for _, t in ipairs(TYPES) do
+	M["can_" .. t] = function() return can_type(t) end
+	M["opt_" .. t] = function()
+		if not sel then return "" end
+		return string.format(gs("st_rz_brd_opt"), gs("st_rz_brd_type_" .. t), 1, price(sel.base, 1))
+	end
+	M["breed_" .. t] = function(a, b) breed(a, b, t) end
+end
+
+-- chyba v dialogove funkci -> zapis do logu a bezpecna hodnota (dialog se nezasekne)
+do
+	local names = { "is_breeder", "text_intro", "text_offer", "text_done", "can_next", "no_money", "opt_next", "breed_next" }
+	for i = 1, SLOTS do
+		names[#names + 1] = "slot_" .. i; names[#names + 1] = "slot_text_" .. i; names[#names + 1] = "select_" .. i
+	end
+	for _, t in ipairs(TYPES) do
+		names[#names + 1] = "can_" .. t; names[#names + 1] = "opt_" .. t; names[#names + 1] = "breed_" .. t
+	end
+	for _, n in ipairs(names) do
+		local f = M[n]
+		local is_text = n:find("^text_") or n:find("^opt_") or n:find("^slot_text_")
+		M[n] = function(...)
+			local ok, r = pcall(f, ...)
+			if ok then return r end
+			warn("%s: %s", n, tostring(r))
+			return is_text and "..." or false
+		end
+	end
+end
+
+-----------------------------------------------------------------------
+-- spawn selekcionaru
+-----------------------------------------------------------------------
+local INVALID_VID = 4294967295
+
+local function cop_port()
+	return type(xr_conditions) == "table" and type(rawget(xr_conditions, "cop_port_enabled")) == "function"
+end
+
+local moving = {}		-- selekcionar uvolneny kvuli presunu, ceka na novy spawn
+
+local function can_spawn(b)
+	if moving[b.id] then
+		if time_global() < moving[b.id] then return false end
+		if get_story_object_id and get_story_object_id(b.id) then return false end	-- stary jeste neni pryc
+		moving[b.id] = nil
+		disable_info(FLAG .. b.id)
+	end
+	if has_alife_info(FLAG .. b.id) then return false end
+	if b.wait_info and cop_port() and not has_alife_info(b.wait_info) then return false end
+	if get_story_object_id and get_story_object_id(b.id) then		-- uz na svete (napr. z predchozi verze)
+		give_info(FLAG .. b.id)
+		return false
+	end
+	return ini_sys:section_exist(b.id)
+end
+
+local function nearest_gvid(pos)
+	local gg, sim, lname = game_graph(), alife(), level.name()
+	local best, best_d, g = nil, nil, 0
+	while gg:valid_vertex_id(g) do
+		local v = gg:vertex(g)
+		if sim:level_name(v:level_id()) == lname then
+			local d = v:level_point():distance_to_sqr(pos)
+			if not best_d or d < best_d then best, best_d = g, d end
+		end
+		g = g + 1
+	end
+	return best
+end
+
+-- smart: <jmeno>  - spawn u smart terrainu, funguje z libovolneho levelu
+local function spawn_smart(b, name)
+	local smart = SIMBOARD and SIMBOARD.smarts_by_names and SIMBOARD.smarts_by_names[name]
+	if not smart then
+		give_info(FLAG .. b.id)
+		warn("%s: smart %s neexistuje, nespawnuji", b.id, name)
+		return
+	end
+	give_info(FLAG .. b.id)
+	alife_create(b.id, smart.position, smart.m_level_vertex_id, smart.m_game_vertex_id)
+	log("spawn %s u %s", b.id, name)
+end
+
+-- pos: <level>, x, y, z, vertex  - spawn az na danem levelu (overeni vertexu)
+local function spawn_pos(b, args)
+	local t = str_explode(args, ",")
+	if t[1] ~= level.name() then return end
+	local pos = vector():set(tonumber(t[2]) or 0, tonumber(t[3]) or 0, tonumber(t[4]) or 0)
+	local lvid = level.vertex_id(pos)
+	if not (lvid and lvid < INVALID_VID) then lvid = tonumber(t[5]) or 0 end
+	local gvid = nearest_gvid(pos)
+	give_info(FLAG .. b.id)
+	if not gvid then warn("%s: level %s neni v game grafu", b.id, t[1]) return end
+	alife_create(b.id, pos, lvid, gvid)
+	log("spawn %s na %s", b.id, t[1])
+end
+
+-- pos: selekcionar uz stoji jinde (stary save, zmena pozice v configu) -> presun
+-- jen kdyz je hrac na cilovem levelu a selekcionar neni na ocich (dal nez 60 m)
+local function pos_args(args)
+	local t = str_explode(args, ",")
+	return t[1], vector():set(tonumber(t[2]) or 0, tonumber(t[3]) or 0, tonumber(t[4]) or 0)
+end
+
+local function relocate(b, args)
+	local lname, pos = pos_args(args)
+	if lname ~= level.name() or moving[b.id] then return end
+	local key = string.format("rz_brd_at_%s_%d_%d", b.id, math.floor(pos.x), math.floor(pos.z))
+	if has_alife_info(key) then return end
+	local id = get_story_object_id and get_story_object_id(b.id)
+	local se = id and alife_object(id)
+	if not se then give_info(key) return end
+	local here = alife():level_name(game_graph():vertex(se.m_game_vertex_id):level_id()) == lname
+	if here and se.position:distance_to(pos) < 5 then give_info(key) return end
+	local npc = level.object_by_id(id)
+	if npc and npc:position():distance_to(db.actor:position()) < 60 then return true end	-- zkusi pozdeji
+	give_info(key)
+	alife_release(se)
+	moving[b.id] = time_global() + 1000		-- novy spawn az v dalsim kole
+	log("presun %s na %s", b.id, lname)
+	return true
+end
+
+local pending = false
+local function spawn_all()
+	if not db.actor then return end
+	local co = rawget(_G, "XrrIsHost")				-- co-op: spawny ridi jen hostitel
+	if type(co) == "function" then
+		local ok, r = pcall(co)
+		if ok and r == false then return end
+	end
+	load()
+	pending = false
+	for _, b in ipairs(order) do
+		local kind, args = string.match(b.spawn, "^%s*(%a+)%s*:?%s*(.-)%s*$")
+		if kind == "pos" and has_alife_info(FLAG .. b.id) and not moving[b.id] then
+			if relocate(b, args) then pending = true end
+		end
+		if kind == "smart" or kind == "pos" then
+			if can_spawn(b) then
+				if kind == "smart" then spawn_smart(b, args) else spawn_pos(b, args) end
+				if not has_alife_info(FLAG .. b.id) then pending = true end
+			elseif not has_alife_info(FLAG .. b.id) then
+				pending = true	-- ceka na info (CoP port)
+			end
+		end
+	end
+end
+
+local next_upd = 0
+local function actor_on_update()
+	local t = time_global()
+	if t < next_upd then return end
+	next_upd = t + 5000
+	spawn_all()
+	if not pending then UnregisterScriptCallback("actor_on_update", actor_on_update) end
+end
+
+local function actor_on_first_update()
+	spawn_all()
+	if pending then RegisterScriptCallback("actor_on_update", actor_on_update) end
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end

@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="ui_mcm_menu_rezone">
+		<text>ReZone</text>
+	</string>
+	<string id="ui_mcm_menu_rz_gameplay">
+		<text>Gameplay</text>
+	</string>
+	<string id="ui_mcm_menu_rz_health">
+		<text>Health</text>
+	</string>
+	<string id="ui_mcm_menu_rz_other">
+		<text>Other</text>
+	</string>
+	<string id="ui_mcm_menu_rz_links">
+		<text>Links to other mods</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pdmg">
+		<text>Player damage</text>
+	</string>
+	<string id="ui_mcm_menu_rz_muthp">
+		<text>Mutant toughness</text>
+	</string>
+	<string id="ui_mcm_menu_rz_debug">
+		<text>Debug</text>
+	</string>
+	<string id="ui_mcm_rz_links_title">
+		<text>Links to other mods</text>
+	</string>
+	<string id="ui_mcm_rz_links_desc">
+		<text>Settings of other mods in one place. Links are defined in configs\rezone\rezone_mcm_links.ltx and only show for installed mods.</text>
+	</string>
+	<string id="ui_mcm_rz_links_none">
+		<text>No links yet (or the target mods are not installed).</text>
+	</string>
+	<string id="ui_mcm_rz_link_open">
+		<text>Open settings &gt;&gt;</text>
+	</string>
+	<string id="ui_mcm_rz_link_open_desc">
+		<text>Jumps to that mod's MCM page.</text>
+	</string>
+	<string id="ui_mcm_rz_link_value">
+		<text>Value</text>
+	</string>
+	<string id="ui_mcm_rz_link_value_desc">
+		<text>Changes the original mod's setting directly.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_title">
+		<text>Player damage</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_off_note">
+		<text>Off = ReZone does not touch hits at all. Vanilla damage or another mod applies.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_hits">
+		<text>By hit type</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_mutants">
+		<text>By attacking mutant (stacks with hit type)</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_enabled">
+		<text>Enable ReZone damage system</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_enabled_desc">
+		<text>Master switch for this page.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_preset">
+		<text>Preset</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_all">
+		<text>Overall multiplier</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_all_desc">
+		<text>Multiplies all hit types (presets don't change it).</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_mut_enabled">
+		<text>Enable per-mutant multipliers</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_title">
+		<text>Mutant toughness</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_info">
+		<text>How much mutants can take. 2.0 = twice as much. Applies instantly.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_enabled">
+		<text>Enable mutant toughness</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_enabled_desc">
+		<text>Off = vanilla.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_all">
+		<text>All mutants</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_all_desc">
+		<text>Stacks with species value.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_title">
+		<text>Debug</text>
+	</string>
+	<string id="ui_mcm_rz_about">
+		<text>ReZone MCM 1.0.0</text>
+	</string>
+	<string id="ui_mcm_rz_debug_debug">
+		<text>Debug log</text>
+	</string>
+	<string id="ui_mcm_rz_debug_debug_desc">
+		<text>Prints what ReZone MCM does. Testing only.</text>
+	</string>
+	<string id="ui_mcm_rz_hit_fire_wound">
+		<text>Bullet (fire wound)</text>
+	</string>
+	<string id="ui_mcm_rz_hit_wound">
+		<text>Wound (cuts, claws)</text>
+	</string>
+	<string id="ui_mcm_rz_hit_strike">
+		<text>Strike</text>
+	</string>
+	<string id="ui_mcm_rz_hit_explosion">
+		<text>Explosion</text>
+	</string>
+	<string id="ui_mcm_rz_hit_burn">
+		<text>Burn</text>
+	</string>
+	<string id="ui_mcm_rz_hit_light_burn">
+		<text>Light burn</text>
+	</string>
+	<string id="ui_mcm_rz_hit_shock">
+		<text>Shock</text>
+	</string>
+	<string id="ui_mcm_rz_hit_chemical_burn">
+		<text>Chemical burn</text>
+	</string>
+	<string id="ui_mcm_rz_hit_radiation">
+		<text>Radiation</text>
+	</string>
+	<string id="ui_mcm_rz_hit_telepatic">
+		<text>Psy (telepathic)</text>
+	</string>
+	<string id="ui_mcm_rz_sp_dog">
+		<text>Blind dog</text>
+	</string>
+	<string id="ui_mcm_rz_sp_pseudodog">
+		<text>Pseudodog / psy dog</text>
+	</string>
+	<string id="ui_mcm_rz_sp_flesh">
+		<text>Flesh</text>
+	</string>
+	<string id="ui_mcm_rz_sp_boar">
+		<text>Boar</text>
+	</string>
+	<string id="ui_mcm_rz_sp_snork">
+		<text>Snork</text>
+	</string>
+	<string id="ui_mcm_rz_sp_tushkano">
+		<text>Tushkano</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rat">
+		<text>Rat</text>
+	</string>
+	<string id="ui_mcm_rz_sp_cat">
+		<text>Cat</text>
+	</string>
+	<string id="ui_mcm_rz_sp_zombie">
+		<text>Zombie</text>
+	</string>
+	<string id="ui_mcm_rz_sp_bloodsucker">
+		<text>Bloodsucker</text>
+	</string>
+	<string id="ui_mcm_rz_sp_psysucker">
+		<text>Psysucker</text>
+	</string>
+	<string id="ui_mcm_rz_sp_lurker">
+		<text>Lurker</text>
+	</string>
+	<string id="ui_mcm_rz_sp_fracture">
+		<text>Fracture</text>
+	</string>
+	<string id="ui_mcm_rz_sp_karlik">
+		<text>Karlik</text>
+	</string>
+	<string id="ui_mcm_rz_sp_burer">
+		<text>Burer</text>
+	</string>
+	<string id="ui_mcm_rz_sp_controller">
+		<text>Controller</text>
+	</string>
+	<string id="ui_mcm_rz_sp_poltergeist">
+		<text>Poltergeist</text>
+	</string>
+	<string id="ui_mcm_rz_sp_chimera">
+		<text>Chimera</text>
+	</string>
+	<string id="ui_mcm_rz_sp_pseudo_gigant">
+		<text>Pseudogiant</text>
+	</string>
+	<string id="ui_mcm_rz_link_arti_hitnum">
+		<text>Arti ballistics - damage numbers</text>
+	</string>
+	<string id="ui_mcm_rz_link_arti_page">
+		<text>Arti ballistics - settings</text>
+	</string>
+	<string id="ui_mcm_rz_link_ammomaker">
+		<text>Ammo crafting - settings</text>
+	</string>
+	<string id="ui_mcm_menu_rz_trade">
+		<text>Trade</text>
+	</string>
+	<string id="ui_mcm_rz_trade_title">
+		<text>GAMMA-style trading</text>
+	</string>
+	<string id="ui_mcm_rz_trade_info">
+		<text>Traders neither buy nor sell weapons. Get weapons from bodies and friends, repair them and strip them for parts. Weapons are not deleted, only hidden in the trade window, so switching it off restores everything.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_gamma">
+		<text>Play like GAMMA</text>
+	</string>
+	<string id="ui_mcm_rz_trade_gamma_desc">
+		<text>Main switch. Off = trading as before.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_sell">
+		<text>Traders do not buy weapons</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_sell_desc">
+		<text>Weapons from your inventory cannot be sold. The trade window marks them as not tradable.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_buy">
+		<text>Traders do not sell weapons</text>
+	</string>
+	<string id="ui_mcm_rz_trade_no_buy_desc">
+		<text>Weapons disappear from traders' stock.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_melee">
+		<text>Knives too</text>
+	</string>
+	<string id="ui_mcm_rz_trade_melee_desc">
+		<text>Off = knives can still be bought and sold. Grenades, ammo and attachments are never restricted.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_note">
+		<text>Applies to pistols, SMGs, rifles, shotguns and sniper rifles.</text>
+	</string>
+	<string id="st_rz_trade_no_weapons">
+		<text>Traders do not buy weapons (ReZone: GAMMA-style trading)</text>
+	</string>
+	<string id="ui_mcm_menu_rz_prices">
+		<text>Prices</text>
+	</string>
+	<string id="ui_mcm_rz_prices_title">
+		<text>Trader prices</text>
+	</string>
+	<string id="ui_mcm_rz_prices_info">
+		<text>Price multiplier by item kind. 1.0 = unchanged, 2.0 = double. Applies to buying and selling, overall multipliers separately.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_warn">
+		<text>Warning: Configurable Item Cost Modifiers is also enabled. Disable it, otherwise prices are multiplied twice.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_enabled">
+		<text>Enable price changes</text>
+	</string>
+	<string id="ui_mcm_rz_prices_enabled_desc">
+		<text>Off = prices as without the mod (or by another mod).</text>
+	</string>
+	<string id="ui_mcm_rz_prices_preset">
+		<text>Preset</text>
+	</string>
+	<string id="ui_mcm_rz_prices_preset_desc">
+		<text>Sets the sliders below. You can tweak them afterwards.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_default">
+		<text>Default (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_arty">
+		<text>More for artefacts and mutants</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_helmets">
+		<text>Helmets and outfits by class</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_guns">
+		<text>Weapons by class</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_all">
+		<text>All of them</text>
+	</string>
+	<string id="ui_mcm_lst_rz_price_gamma">
+		<text>ReZone: like GAMMA</text>
+	</string>
+	<string id="ui_mcm_rz_prices_sell_all">
+		<text>When you sell (overall)</text>
+	</string>
+	<string id="ui_mcm_rz_prices_sell_all_desc">
+		<text>What the trader pays you. 0.6 = 60 % of the price.</text>
+	</string>
+	<string id="ui_mcm_rz_prices_buy_all">
+		<text>When you buy (overall)</text>
+	</string>
+	<string id="ui_mcm_rz_prices_buy_all_desc">
+		<text>What you pay the trader. 1.2 = 20 % more.</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_arty">
+		<text>Artefacts and mutants</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_items">
+		<text>Gear and consumables</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_armor">
+		<text>Helmets and outfits</text>
+	</string>
+	<string id="ui_mcm_rz_price_g_weap">
+		<text>Weapons and ammo</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_arty">
+		<text>Artefacts</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_mutant_belt">
+		<text>Mutant belt trophies</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_mutant_part">
+		<text>Mutant parts</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_backpack">
+		<text>Backpacks</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_device">
+		<text>Devices (detectors, PDA…)</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_food">
+		<text>Food and drinks</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_medical">
+		<text>Medicine</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_kit">
+		<text>Kits and tools</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_misc">
+		<text>Misc and junk</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_part">
+		<text>Parts</text>
+	</string>
+	<string id="ui_mcm_rz_price_i_upgrade">
+		<text>Upgrades</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet">
+		<text>Light helmets</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet_medium">
+		<text>Medium helmets</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_helmet_heavy">
+		<text>Heavy helmets</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_light">
+		<text>Light outfits</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_medium">
+		<text>Medium outfits</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_sci">
+		<text>Scientific outfits</text>
+	</string>
+	<string id="ui_mcm_rz_price_o_heavy">
+		<text>Heavy outfits and exos</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_melee">
+		<text>Melee</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_pistol">
+		<text>Pistols</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_smg">
+		<text>SMGs</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_shotgun">
+		<text>Shotguns</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_rifle">
+		<text>Rifles</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_sniper">
+		<text>Sniper rifles</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_misc">
+		<text>Weapon attachments</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_ammo">
+		<text>Ammo</text>
+	</string>
+	<string id="ui_mcm_rz_price_w_explosive">
+		<text>Grenades and explosives</text>
+	</string>
+	<string id="ui_mcm_menu_rz_loot">
+		<text>Loot</text>
+	</string>
+	<string id="ui_mcm_rz_loot_title">
+		<text>Loot condition from bodies</text>
+	</string>
+	<string id="ui_mcm_rz_loot_info">
+		<text>Condition of weapons, outfits and helmets dropped by dead NPCs and how much ammo they carry. Set a range for novices and for legends, ranks in between are interpolated.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_enabled">
+		<text>Enable</text>
+	</string>
+	<string id="ui_mcm_rz_loot_enabled_desc">
+		<text>Off = condition by the game (death_generic.ltx).</text>
+	</string>
+	<string id="ui_mcm_rz_loot_preset">
+		<text>Preset</text>
+	</string>
+	<string id="ui_mcm_rz_loot_preset_desc">
+		<text>Sets the sliders below, tweak them afterwards.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_vanilla">
+		<text>Vanilla Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_trilogy">
+		<text>Trilogy (usable gear)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_loot_hard">
+		<text>Hard (almost all for parts)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_weapons">
+		<text>Weapons (condition %)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_outfits">
+		<text>Outfits and helmets (condition %)</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo">
+		<text>Ammo</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_lo_min">
+		<text>Novice - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_lo_max">
+		<text>Novice - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_hi_min">
+		<text>Legend - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_hi_max">
+		<text>Legend - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_zmin">
+		<text>Zombie - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_w_zmax">
+		<text>Zombie - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_lo_min">
+		<text>Novice - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_lo_max">
+		<text>Novice - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_hi_min">
+		<text>Legend - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_hi_max">
+		<text>Legend - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_zmin">
+		<text>Zombie - min</text>
+	</string>
+	<string id="ui_mcm_rz_loot_o_zmax">
+		<text>Zombie - max</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_desc">
+		<text>Multiplier of ammo found on bodies. 1.0 = vanilla.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_no_special">
+		<text>No special ammo</text>
+	</string>
+	<string id="ui_mcm_rz_loot_no_special_desc">
+		<text>"_bad" ammo becomes regular. With Arti ballistics / ReZone Ballistics "_bad" are special rounds (7N22, incendiary, HP...), so this removes them from loot.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_h">
+		<text>Ammo</text>
+	</string>
+	<string id="st_rz_trade_no_helmets">
+		<text>Traders do not buy helmets (ReZone)</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pop">
+		<text>Population</text>
+	</string>
+	<string id="ui_mcm_rz_pop_title">
+		<text>Zone population</text>
+	</string>
+	<string id="ui_mcm_rz_pop_info">
+		<text>How many stalkers and mutants live in the Zone, how fast they come back and how big squads and packs are. ReZone's own system, no other mod needed. Only common squads from respawn and game start are changed; story characters and task spawns stay untouched.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_enabled">
+		<text>Enable ReZone population</text>
+	</string>
+	<string id="ui_mcm_rz_pop_enabled_desc">
+		<text>Off = vanilla Anomaly (density from Options > ALife applies).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset">
+		<text>Preset</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset_desc">
+		<text>Sets all sliders at once, you can fine-tune them afterwards.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_vanilla">
+		<text>Vanilla</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_calm">
+		<text>Calm Zone</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_alive">
+		<text>Living Zone</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_p_danger">
+		<text>Dangerous Zone</text>
+	</string>
+	<string id="ui_mcm_rz_pop_preset_note">
+		<text>Density and squad size apply to newly spawned squads. On a new game they apply to the whole Zone right away.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_zone">
+		<text>Zone</text>
+	</string>
+	<string id="ui_mcm_rz_pop_stalkers">
+		<text>Stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mutants">
+		<text>Mutants</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_pop">
+		<text>Stalker density</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_pop_desc">
+		<text>How many stalker squads appear at smart terrains (1 = vanilla, 0 = none). Replaces the setting in Options > ALife.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_pop">
+		<text>Mutant density</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_pop_desc">
+		<text>How many mutant packs appear (1 = vanilla, 0 = none). Replaces the setting in Options > ALife.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_respawn">
+		<text>Respawn time</text>
+	</string>
+	<string id="ui_mcm_rz_pop_respawn_desc">
+		<text>Multiplier of the time before a smart terrain respawns (1 = vanilla, usually 12 game hours; 2 = twice as long, 0.5 = twice as fast).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_size">
+		<text>Squad size</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_size_desc">
+		<text>Multiplier of people per squad (1 = vanilla). New members copy existing ones, the leader stays.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_var">
+		<text>Size variance</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_var_desc">
+		<text>Random spread of size (0 = always the same, 0.5 = from half to one and a half).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random">
+		<text>Extra random squads</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random_desc">
+		<text>When stalkers respawn, sometimes one more squad that normally appears on this level shows up. Not at faction bases.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_st_random_ch">
+		<text>Extra squad chance (%)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_size">
+		<text>Pack size</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_size_desc">
+		<text>Multiplier of mutants per pack (1 = vanilla).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_var">
+		<text>Size variance</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_var_desc">
+		<text>Random spread of pack size (0 = always the same).</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random">
+		<text>Extra random packs</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random_desc">
+		<text>When mutants respawn, sometimes one more pack that normally lives on this level shows up.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_mu_random_ch">
+		<text>Extra pack chance (%)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl">
+		<text>Ranks on starting levels</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_enabled">
+		<text>No strong stalkers on starting levels</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_enabled_desc">
+		<text>Generic stalkers of all factions above the chosen rank (veterans and masters in heavy suits and exoskeletons) don't spawn on the selected levels - a weaker version of the same faction replaces them - and strong squads from other levels don't travel there. Those already there leave over time. Story characters, traders and mutants unchanged. Works even without ReZone population enabled.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_max">
+		<text>Highest rank</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_max_desc">
+		<text>Up to which class generic stalkers may be on the selected levels.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_1">
+		<text>Novice / trainee</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_2">
+		<text>Experienced / professional</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pop_rl_max_3">
+		<text>Veteran / expert</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_bases">
+		<text>Exception for faction bases</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_bases_desc">
+		<text>Faction bases (e.g. Clear Sky in the Swamps) keep their strong members.</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_escape">
+		<text>Cordon</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_marsh">
+		<text>Great Swamps</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_darkscape">
+		<text>Darkscape</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_pole">
+		<text>Meadow</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_garbage">
+		<text>Garbage</text>
+	</string>
+	<string id="ui_mcm_rz_pop_rl_agroprom">
+		<text>Agroprom</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helmets">
+		<text>Helmets</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_sell">
+		<text>Traders do not buy helmets</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_sell_desc">
+		<text>You cannot sell helmets to them. Works even without GAMMA trading.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_buy">
+		<text>Traders do not sell helmets</text>
+	</string>
+	<string id="ui_mcm_rz_trade_helm_no_buy_desc">
+		<text>Helmets disappear from their offer (not deleted, back when turned off).</text>
+	</string>
+	<string id="ui_mcm_rz_stock_info">
+		<text>Trader stock limits: after every restock the trader keeps only a limited number of items from each group, the rest disappears. -1 = no limit.</text>
+	</string>
+	<string id="ui_mcm_rz_stock">
+		<text>Limit trader stock</text>
+	</string>
+	<string id="ui_mcm_rz_stock_desc">
+		<text>Applies at the next restock (vanilla every 24 h). Does not touch companions, what the trader wears, or quest items.</text>
+	</string>
+	<string id="ui_mcm_rz_st_guns">
+		<text>Rifles, SMGs, shotguns</text>
+	</string>
+	<string id="ui_mcm_rz_st_pistols">
+		<text>Pistols</text>
+	</string>
+	<string id="ui_mcm_rz_st_melee">
+		<text>Knives</text>
+	</string>
+	<string id="ui_mcm_rz_st_explosives">
+		<text>Grenades and launcher rounds</text>
+	</string>
+	<string id="ui_mcm_rz_st_attach">
+		<text>Weapon attachments (scopes, silencers...)</text>
+	</string>
+	<string id="ui_mcm_rz_st_outfits">
+		<text>Outfits</text>
+	</string>
+	<string id="ui_mcm_rz_st_helmets">
+		<text>Helmets</text>
+	</string>
+	<string id="ui_mcm_rz_st_backpacks">
+		<text>Backpacks</text>
+	</string>
+	<string id="ui_mcm_rz_st_mags">
+		<text>Magazines</text>
+	</string>
+	<string id="ui_mcm_rz_st_food">
+		<text>Food and drinks</text>
+	</string>
+	<string id="ui_mcm_rz_st_meds">
+		<text>Medicine</text>
+	</string>
+	<string id="ui_mcm_rz_st_repair">
+		<text>Repair items and tools</text>
+	</string>
+	<string id="ui_mcm_rz_st_ammo">
+		<text>Ammo (% of boxes kept)</text>
+	</string>
+	<string id="ui_mcm_rz_st_random">
+		<text>Randomness (± % of the limit)</text>
+	</string>
+	<string id="ui_mcm_rz_stock_note">
+		<text>Items are counted per piece (ammo boxes, packs). Items you sold are not limited until the next restock.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_ball">
+		<text>Ballistics</text>
+	</string>
+	<string id="ui_mcm_rz_ball_title">
+		<text>ReZone ballistics</text>
+	</string>
+	<string id="ui_mcm_rz_ball_info">
+		<text>Own damage calculation for NPCs and mutants hit by your bullets. Ammo data: configs\rezone\ammo.ltx. NPC vs NPC fights are calculated by the game as before.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset">
+		<text>Damage preset</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset_desc">
+		<text>How your shots on NPCs are calculated and also the profile of the suits you wear. CoP = Call of Pripyat, Anomaly = slightly softer NPCs, Hardcore = lethal headshots and armor breaking. The suit profile applies after loading a save.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_cop">
+		<text>CoP (default)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_ball_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_ball_preset_note">
+		<text>CoP: if the round beats the armor, damage drops by (AP - armor) / AP; if not, only blunt impact gets through. Use AP rounds against armored targets, regular ones against unarmored.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_npc_tough">
+		<text>NPC toughness</text>
+	</string>
+	<string id="ui_mcm_rz_ball_npc_tough_desc">
+		<text>Extra multiplier on top of the preset (2 = NPCs take twice as much).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft">
+		<text>Ammo materials and crafting</text>
+	</string>
+	<string id="ui_mcm_rz_ball_parts_loot">
+		<text>Ammo materials (amount)</text>
+	</string>
+	<string id="ui_mcm_rz_ball_parts_loot_desc">
+		<text>Casings, powder and bullets on bodies, in stashes and at traders (0 = none, 1 = default).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft_yield">
+		<text>Ammo crafting yield</text>
+	</string>
+	<string id="ui_mcm_rz_ball_craft_yield_desc">
+		<text>How many boxes one craft of regular ammo gives (special ammo always 1).</text>
+	</string>
+	<string id="ui_mcm_rz_ball_wear">
+		<text>Suit and helmet wear</text>
+	</string>
+	<string id="ui_mcm_rz_ball_wear_desc">
+		<text>How much condition a suit or helmet loses when hit (1 = vanilla, 0.33 = three times slower, 0 = none). Replaces the armor_degradation_reduction DLTX - delete it, otherwise it multiplies. Applies after loading a save.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_info">
+		<text>Helmets (ReZone's own separated helmets): every suit has a helmet slot and only the helmet protects the head. Closed suits (SEVA, exo, Nosorog, NBC, SSP) lost their built-in mask - part of their radiation, psy and chemical protection is now in the helmet. Helmet armor follows the suit profile above. The Separated Helmets mod is no longer needed.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helmets">
+		<text>Enable ReZone helmets</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helmets_desc">
+		<text>Off = like vanilla: closed suits (SEVA, exo, Nosorog...) have no helmet slot again, full mask protection and the head protected by the suit itself. Helmets for other suits stay. Applies after loading a save.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_drop">
+		<text>Closed suits drop a helmet</text>
+	</string>
+	<string id="ui_mcm_rz_ball_helm_drop_desc">
+		<text>A dead stalker in a closed suit (SEVA, exo, ...) also drops the matching helmet when his model has no separate one. Same drop rules as the suit. List: configs\rezone\helmets.ltx.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_cop">
+		<text>Call of Pripyat - beginners</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_normal">
+		<text>Normal (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_pd_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_info">
+		<text>How much damage you take, per hit type. 1 = no change (vanilla).</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_preset_desc">
+		<text>Sets all hit types at once, fine-tune afterwards.</text>
+	</string>
+	<string id="ui_mcm_rz_pdmg_cop_note">
+		<text>All damage you take is set only here. Call of Pripyat (beginners): bullets x0.35, mutants x0.4, falls and blows x0.5, explosions x0.3, fire x0.65, anomalies, radiation and psi x0.75. Anomaly: bullets x0.7. Hardcore: everything stronger. Everything at 1 = vanilla.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_craft">
+		<text>Crafting</text>
+	</string>
+	<string id="ui_mcm_rz_craft_title">
+		<text>ReZone Crafting</text>
+	</string>
+	<string id="ui_mcm_rz_craft_info">
+		<text>Recipes in the vanilla workshop and extra tabs (Hideout, Backpacks, Magazines). What happens to recipes after reading.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_remove_recipe">
+		<text>Recipe disappears after reading</text>
+	</string>
+	<string id="ui_mcm_rz_craft_remove_recipe_desc">
+		<text>The read recipe is removed from the inventory. Known recipes are in the PDA (Encyclopedia > Notes).</text>
+	</string>
+	<string id="ui_mcm_rz_craft_keep_known">
+		<text>Keep already known recipe (to sell)</text>
+	</string>
+	<string id="ui_mcm_rz_craft_keep_known_desc">
+		<text>When you read a recipe you already know, it stays in the inventory so you can sell it.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_menu">
+		<text>Main menu</text>
+	</string>
+	<string id="ui_mcm_rz_menu_title">
+		<text>Main menu</text>
+	</string>
+	<string id="ui_mcm_rz_menu_info">
+		<text>Video behind the main menu and the load screen. Put .ogm (Theora) videos into gamedata\textures\ui\rz_mm_bg\ - each one shows up here by its name.</text>
+	</string>
+	<string id="ui_mcm_rz_menu_mm_bg_video">
+		<text>Menu background (video)</text>
+	</string>
+	<string id="ui_mcm_rz_menu_mm_bg_video_desc">
+		<text>Default = background from your UI mods unchanged. Random = a different video on every start (and when changed).</text>
+	</string>
+	<string id="ui_mcm_rz_menu_note">
+		<text>Applies right after Apply. New videos in the folder show up in the list after restarting the game. File names in lower case without spaces (e.g. zaton_night.ogm).</text>
+	</string>
+	<string id="ui_mcm_lst_rz_mm_bg_default">
+		<text>Default</text>
+	</string>
+	<string id="ui_mcm_lst_rz_mm_bg_random">
+		<text>Random</text>
+	</string>
+	<string id="ui_mcm_menu_rz_main">
+		<text>Main</text>
+	</string>
+	<string id="ui_mcm_menu_rz_master">
+		<text>Game preset</text>
+	</string>
+	<string id="ui_mcm_rz_master_title">
+		<text>Game preset</text>
+	</string>
+	<string id="ui_mcm_rz_master_info">
+		<text>One choice sets all of ReZone for a play style - ballistics, armor and wear, player damage, mutant toughness, loot, prices, traders and their stock, artefacts and population - and with EFT Health System its difficulty too. Wandering stalkers and trade bans (Play like GAMMA, helmets) are never turned on by a preset, you enable them yourself.</text>
+	</string>
+	<string id="ui_mcm_rz_master">
+		<text>Game preset</text>
+	</string>
+	<string id="ui_mcm_rz_master_desc">
+		<text>Custom = nothing changes, your settings on the individual pages apply.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_custom">
+		<text>Custom (manual)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_cop">
+		<text>Call of Pripyat - beginners</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_master_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_master_cop_info">
+		<text>Call of Pripyat: bullets on the player x0.35, anomalies and radiation x0.75, CoP armor, slow wear, weaker mutants and explosions, artefacts and mutant parts sell well, traders sell everything, usable gear from bodies, calmer Zone, learned recipes are kept, EFTH difficulty Call of Pripyat.</text>
+	</string>
+	<string id="ui_mcm_rz_master_trilogy_info">
+		<text>Anomaly: bullets x0.7, Anomaly armor, prices and trade like vanilla Anomaly, vanilla mutants, usable gear from bodies, vanilla population, EFTH difficulty Normal.</text>
+	</string>
+	<string id="ui_mcm_rz_master_hardcore_info">
+		<text>Hardcore: bullets x1.5 and everything stronger, lethal headshots, armor breaking, full wear, tougher mutants, GAMMA-like economy (gear sells cheap, limited stock), little usable loot, dangerous Zone, EFTH difficulty Hardcore.</text>
+	</string>
+	<string id="ui_mcm_rz_master_note">
+		<text>All options the preset changes are marked right after you pick it (change count at the bottom) and saved on Apply. Afterwards you can fine-tune anything by hand - the preset won't overwrite it until you change it again. Prices, trade and effects are not changed. Population applies to newly spawned squads.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_fx">
+		<text>Effects</text>
+	</string>
+	<string id="ui_mcm_rz_fx_title">
+		<text>Screen effects</text>
+	</string>
+	<string id="ui_mcm_rz_fx_info">
+		<text>Turns off the screen distortion (PPE) that appears when you are near a monster or radiation. Sounds, damage, psy attacks and monster behaviour stay the same - only the on-screen effect is gone.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_rad">
+		<text>Disable radiation effect</text>
+	</string>
+	<string id="ui_mcm_rz_fx_rad_desc">
+		<text>Radiation fields and the radiation aura of monsters (e.g. poltergeist, controller, mutants from radioactive spots).</text>
+	</string>
+	<string id="ui_mcm_rz_fx_polter">
+		<text>Disable poltergeist effects</text>
+	</string>
+	<string id="ui_mcm_rz_fx_polter_desc">
+		<text>Psy aura and the 'scanning' effect when the poltergeist is detecting you.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_contr">
+		<text>Disable controller effects</text>
+	</string>
+	<string id="ui_mcm_rz_fx_contr_desc">
+		<text>The controller's psy aura (distortion near him). The 'tunnel' attack stays.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psy_other">
+		<text>Disable other psy auras</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psy_other_desc">
+		<text>Burer, karlik and psy dog.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_note">
+		<text>Applies to monsters and radiation fields loaded after the change - most reliably after loading a save. Requires modded exes. Game files are not changed.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_walk">
+		<text>Wandering stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_walk_title">
+		<text>Wandering stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_walk_info">
+		<text>Small stalker squads walk across the level from place to place and stay a while at each, so the Zone feels alive outside camps too. They appear only far from you, never at faction bases and never in labs or underground. At night, after a while or when the level is switched off they disappear again - only when far away or out of sight. Levels and factions are listed in configs\rezone\wander.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_enabled">
+		<text>Enable wandering stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_walk_enabled_desc">
+		<text>Off = nothing spawns; squads already walking disappear over time.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_max_squads">
+		<text>Max squads per level</text>
+	</string>
+	<string id="ui_mcm_rz_walk_max_squads_desc">
+		<text>How many wandering squads may be on one level at once.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_interval">
+		<text>Interval (game minutes)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_interval_desc">
+		<text>Average time between new squads (randomly half to one and a half).</text>
+	</string>
+	<string id="ui_mcm_rz_walk_size">
+		<text>Squad size</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_1">
+		<text>Loners (1-2)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_2">
+		<text>Small squads (2-3)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_walk_size_3">
+		<text>Squads (3-4)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lifetime">
+		<text>How long they stay (game hours)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lifetime_desc">
+		<text>After this time the squad disappears as soon as it is far from you.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_radius">
+		<text>Distance from player (m)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_radius_desc">
+		<text>A squad never appears or disappears closer than this.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_only">
+		<text>Daytime only</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_only_desc">
+		<text>At night no new squads appear and those outside fade away.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_start">
+		<text>Day starts (hour)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_day_end">
+		<text>Day ends (hour)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_wipe">
+		<text>Remove when leaving the level</text>
+	</string>
+	<string id="ui_mcm_rz_walk_wipe_desc">
+		<text>When you travel to another level the wandering squads are removed (companions stay).</text>
+	</string>
+	<string id="ui_mcm_rz_walk_factions">
+		<text>Factions</text>
+	</string>
+	<string id="ui_mcm_rz_walk_native">
+		<text>Only factions living on the level</text>
+	</string>
+	<string id="ui_mcm_rz_walk_native_desc">
+		<text>The squad is only from a faction that has a place on the level. Off = any enabled faction.</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_stalker">
+		<text>Loners</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_csky">
+		<text>Clear Sky</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_dolg">
+		<text>Duty</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_freedom">
+		<text>Freedom</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_bandit">
+		<text>Bandits</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_killer">
+		<text>Mercenaries</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_ecolog">
+		<text>Ecologists</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_army">
+		<text>Military</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_renegade">
+		<text>Renegades</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_monolith">
+		<text>Monolith</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_isg">
+		<text>ISG</text>
+	</string>
+	<string id="ui_mcm_rz_walk_f_greh">
+		<text>Sin</text>
+	</string>
+	<string id="ui_mcm_rz_walk_levels">
+		<text>Levels (never labs or underground)</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_escape">
+		<text>Cordon</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_marsh">
+		<text>Great Swamps</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_darkscape">
+		<text>Darkscape</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pole">
+		<text>Meadow</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_garbage">
+		<text>Garbage</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_agroprom">
+		<text>Agroprom</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_darkvalley">
+		<text>Dark Valley</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_bar">
+		<text>Bar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_rostok">
+		<text>Wild Territory</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_trucks">
+		<text>Truck Cemetery</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_yantar">
+		<text>Yantar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_military">
+		<text>Army Warehouses</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_deadcity">
+		<text>Dead City</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_red_forest">
+		<text>Red Forest</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_limansk">
+		<text>Limansk</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_hospital">
+		<text>Hospital</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_radar">
+		<text>Radar</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_zaton">
+		<text>Zaton</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_jupiter">
+		<text>Jupiter</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pripyat">
+		<text>Pripyat outskirts</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_pripyat_soc">
+		<text>Pripyat</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_stancia">
+		<text>Chernobyl NPP</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_stancia_2">
+		<text>Chernobyl NPP 2</text>
+	</string>
+	<string id="ui_mcm_rz_walk_lv_generators">
+		<text>Generators</text>
+	</string>
+	<string id="ui_mcm_menu_rz_afsp">
+		<text>Artefacts in anomalies</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_title">
+		<text>Artefacts in anomalies</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_info">
+		<text>How often artefacts grow in anomaly fields and how strong they are. Each field has its own groups by location: mostly junk and weak ones in Cordon, medium further in the Zone, strong ones in Pripyat, the labs and near the plant. Strength follows ReZone's Call of Pripyat style artefacts (weak, medium, strong). New artefacts grow after an emission or a psi storm.</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_enabled">
+		<text>Enable ReZone artefacts</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_enabled_desc">
+		<text>Off = vanilla Anomaly group choice and chance. The field and strength groups apply always.</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_preset">
+		<text>Preset</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_preset_desc">
+		<text>Sets the sliders at once, you can fine-tune them afterwards.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_vanilla">
+		<text>Vanilla</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_cop">
+		<text>Call of Pripyat</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_trilogy">
+		<text>Anomaly</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_p_hardcore">
+		<text>Hardcore</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_chance">
+		<text>Artefact chance</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_chance_desc">
+		<text>Multiplier of the chance that an artefact grows when a field renews (1 = by economy difficulty, 0 = never, 2 = twice as often).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_surge">
+		<text>After an emission</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_surge_desc">
+		<text>Chance multiplier after an emission (vanilla 1.4).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_psi">
+		<text>After a psi storm</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_psi_desc">
+		<text>Chance multiplier after a psi storm (vanilla 0.7).</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_rarity">
+		<text>Rarity of strong artefacts</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_rarity_desc">
+		<text>How often a field picks a weaker or stronger group it offers.</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_even">
+		<text>Even (vanilla)</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_cop">
+		<text>Call of Pripyat - strong ones rare</text>
+	</string>
+	<string id="ui_mcm_lst_rz_afsp_r_rare">
+		<text>Rare - strong ones only exceptionally</text>
+	</string>
+	<string id="ui_mcm_rz_afsp_note">
+		<text>Chances apply to fields that renew after the change (after the next emission or psi storm).</text>
+	</string>
+	<string id="ui_mcm_menu_rz_af">
+		<text>Artefacts</text>
+	</string>
+	<string id="ui_mcm_menu_rz_mutdmg">
+		<text>Mutant attack strength</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_title">
+		<text>Mutant attack strength</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_info">
+		<text>How much damage a mutant attack deals to you, by species. 0.5 = half, 2.0 = double. Multiplies with Player damage (Mutants).</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_enabled">
+		<text>Enable mutant attack strength</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_enabled_desc">
+		<text>Off = mutant attacks follow Player damage only.</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_all">
+		<text>All mutants</text>
+	</string>
+	<string id="ui_mcm_rz_mutdmg_all_desc">
+		<text>Multiplies with the species value.</text>
+	</string>
+	<string id="ui_mcm_rz_muthp_rs">
+		<text>ReSpawn Mutants - new mutants from the mod</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_volk">
+		<text>Wolf</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_gonchaya">
+		<text>Gonchaya (hound)</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_koyot">
+		<text>Coyote</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_shepherd">
+		<text>Shepherd dog</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_burenka">
+		<text>Burenka</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_vebber">
+		<text>Vebber</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_ratking">
+		<text>Rat king</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_zanoza">
+		<text>Zanoza</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_krisa">
+		<text>Giant rat</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_tarakan">
+		<text>Cockroach</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_zhaba">
+		<text>Toad</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_komar">
+		<text>Mosquito</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_letalka">
+		<text>Letalka</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_strekoza">
+		<text>Dragonfly</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_pyat">
+		<text>Pyat</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_duriel">
+		<text>Duriel</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_tark">
+		<text>Tark</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_obrazet">
+		<text>Obrazets</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_predadar">
+		<text>Predadar</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_jugger">
+		<text>Juggernaut</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_alghoul">
+		<text>Alghoul</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_vendigo">
+		<text>Wendigo</text>
+	</string>
+	<string id="ui_mcm_rz_sp_rs_fur">
+		<text>Fur (giant)</text>
+	</string>
+	<string id="ui_mcm_rz_pop_zcp_warn">
+		<text>Zone Customization Project is installed. Both population settings would stack - use only one of them.</text>
+	</string>
+</string_table>

@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<string_table>
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+	<string id="st_ball_properties">
+		<text>VLASTNOSTI:</text>
+	</string>
+	<string id="st_prop_k_hit">
+		<text>Násobič poškození</text>
+	</string>
+	<string id="st_prop_armor">
+		<text>Prorazí třídu ochrany: </text>
+	</string>
+	<string id="st_prop_k_ap">
+		<text>Prorazí třídu ochrany</text>
+	</string>
+	<string id="st_prop_k_hp">
+		<text>Bonus za deformaci</text>
+	</string>
+	<string id="st_prop_k_vel">
+		<text>Úprava rychlosti</text>
+	</string>
+	<string id="st_prop_k_disp">
+		<text>Úprava přesnosti</text>
+	</string>
+	<string id="st_prop_impair">
+		<text>Násobič opotřebení</text>
+	</string>
+	<string id="st_prop_projectiles">
+		<text>Projektily</text>
+	</string>
+	<string id="st_prop_special">
+		<text>Zvláštní</text>
+	</string>
+	<string id="st_prop_radius">
+		<text>Poloměr výbuchu</text>
+	</string>
+	<string id="st_prop_armor_0">
+		<text>žádná</text>
+	</string>
+	<string id="st_prop_armor_1">
+		<text>I</text>
+	</string>
+	<string id="st_prop_armor_2">
+		<text>IIA</text>
+	</string>
+	<string id="st_prop_armor_3">
+		<text>II</text>
+	</string>
+	<string id="st_prop_armor_4">
+		<text>III</text>
+	</string>
+	<string id="st_prop_armor_5">
+		<text>IV</text>
+	</string>
+	<string id="st_prop_armor_6">
+		<text>V</text>
+	</string>
+	<string id="st_prop_armor_7">
+		<text>VI+</text>
+	</string>
+	<string id="st_ballistics_flinch">
+		<text>šance zaskočit lidské nepřátele</text>
+	</string>
+	<string id="st_ballistics_frag">
+		<text>šance na fragmentaci s extra poškozením</text>
+	</string>
+	<string id="st_ballistics_hp">
+		<text>poškození deformací při úplném průstřelu</text>
+	</string>
+	<string id="st_ballistics_slug">
+		<text>zásahy do hlavy ignorují část ochrany, zásahy do trupu omračují</text>
+	</string>
+	<string id="st_ballistics_rip">
+		<text>při zásahu vysává život</text>
+	</string>
+	<string id="st_ballistics_varma">
+		<text>bonusové poškození proti mutantům</text>
+	</string>
+	<string id="st_ballistics_explodes">
+		<text>při dopadu exploduje</text>
+	</string>
+	<string id="st_ballistics_chaos">
+		<text>ano</text>
+	</string>
+	<string id="st_ballistics_acid">
+		<text>při zásahu snižuje ochranu</text>
+	</string>
+	<string id="st_ballistics_ambush">
+		<text>bonusové poškození a průraznost proti nic netušícím cílům</text>
+	</string>
+	<string id="st_ballistics_impair">
+		<text>rychle opotřebovává zbraň</text>
+	</string>
+	<string id="st_ballistics_head">
+		<text>zásahy do hlavy ignorují ochranu</text>
+	</string>
+	<string id="st_ballistics_headstun">
+		<text>zásahy do hlavy omračují a způsobují extra poškození</text>
+	</string>
+	<string id="st_ballistics_fire_melt">
+		<text>zapaluje cíle, snižuje ochranu</text>
+	</string>
+	<string id="st_ballistics_fire">
+		<text>šance zapálit cíle</text>
+	</string>
+	<string id="st_ballistics_split">
+		<text>vystřelí tři projektily</text>
+	</string>
+	<string id="st_ballistics_shock">
+		<text>poškození, plošný účinek roste s ochranou cíle</text>
+	</string>
+	<string id="st_ballistics_pierce">
+		<text>prostřelí kryt</text>
+	</string>
+	<string id="st_ballistics_soulripper">
+		<text>zásahy do hlavy léčí</text>
+	</string>
+	<string id="st_ballistics_terminal">
+		<text>vyšší poškození a průraznost na blízko</text>
+	</string>
+	<string id="st_ballistics_enrage">
+		<text>trvale rozzuří cíle</text>
+	</string>
+	<string id="st_ballistics_match">
+		<text>průraznost roste se vzdáleností</text>
+	</string>
+	<string id="st_ballistics_firebomb">
+		<text>zapálí všechny cíle</text>
+	</string>
+	<string id="st_ballistics_cluster">
+		<text>rozpadne se na 6 menších bomb</text>
+	</string>
+	<string id="st_link">
+		<text>připojit k pásu</text>
+	</string>
+	<string id="st_unlink">
+		<text>odpojit pás</text>
+	</string>
+	<string id="ammo_new_9x18_fmj">
+		<text>Náboje 9x18mm FMJ</text>
+	</string>
+	<string id="ammo_new_9x18_fmj_descr">
+		<text>Celoplášťový náboj s ocelovým penetrátorem a olověným jádrem pod kovovým pláštěm. Takové náboje jsou nejběžnějším pistolovým střelivem v celém bývalém Sovětském svazu. Má dobrou zastavovací sílu, ale proti těžké neprůstřelné vestě je neúčinný.</text>
+	</string>
+	<string id="ammo_new_9x18_fmj_s">
+		<text>9x18 FMJ</text>
+	</string>
+	<string id="ammo_new_9x18_plus">
+		<text>Náboje 9x18mm +P+ FMJ</text>
+	</string>
+	<string id="ammo_new_9x18_plus_descr">
+		<text>Celoplášťový náboj se zesílenou prachovou náplní. Zvyšuje úsťovou rychlost o 30 % a úměrně tomu i zastavovací sílu a účinnost proti ochraně, za cenu vyššího opotřebení zbraně.</text>
+	</string>
+	<string id="ammo_new_9x18_plus_s">
+		<text>9x18 +P+</text>
+	</string>
+	<string id="ammo_new_9x18_hp">
+		<text>Náboje 9x18mm HP</text>
+	</string>
+	<string id="ammo_new_9x18_hp_descr">
+		<text>Civilní náboj 9x18mm s dutou špičkou. Používá se hlavně k lovu drobné zvěře a k sebeobraně. Celkem častý nález u Samotářů, kteří si do Zóny přinesli vlastní zbraně.</text>
+	</string>
+	<string id="ammo_new_9x18_hp_s">
+		<text>9x18 HP</text>
+	</string>
+	<string id="ammo_new_9x18_sp7">
+		<text>Náboje 9x18mm SP-7</text>
+	</string>
+	<string id="ammo_new_9x18_sp7_descr">
+		<text>Vojenský poloplášťový náboj s dutou špičkou, plastovou zátkou a zvýšenou prachovou náplní. Nabízí vynikající balistiku a velmi plochou dráhu letu, proto je oblíbený u týlových jednotek. Spolehlivě zastaví člověka i mutanta, a proto jej SBU běžně používá v pistolích a samopalech.</text>
+	</string>
+	<string id="ammo_new_9x18_sp7_s">
+		<text>9x18 SP-7</text>
+	</string>
+	<string id="ammo_new_9x18_ap">
+		<text>Náboje 9x18mm RG028</text>
+	</string>
+	<string id="ammo_new_9x18_ap_descr">
+		<text>RG028 je náboj ceněný pro svou průraznost. Měl být odpovědí na neprůstřelné vesty, a proto má jádro z kalené oceli. Bohužel oproti standardnímu náboji příliš velké zlepšení nepřináší a spolehlivě prorazí jen měkkou balistickou ochranu.</text>
+	</string>
+	<string id="ammo_new_9x18_ap_s">
+		<text>9x18 RG028</text>
+	</string>
+	<string id="ammo_new_9x18_7n25">
+		<text>Náboje 9x18mm 7N25 AP</text>
+	</string>
+	<string id="ammo_new_9x18_7n25_descr">
+		<text>Moderní průbojný pistolový náboj 9x18 s jádrem z uhlíkové oceli a zvýšenou prachovou náplní. Na rozdíl od svého předchůdce RG028 spolehlivě prorazí měkkou balistickou ochranu a dokáže poškodit i puškové pláty, ale kvůli prachové náplni a tvaru penetrátoru má nižší zastavovací sílu a víc opotřebovává vnitřní součásti zbraně.</text>
+	</string>
+	<string id="ammo_new_9x18_7n25_s">
+		<text>9x18 7N25</text>
+	</string>
+	<string id="ammo_new_9x19_fmj">
+		<text>Náboje 9x19mm FMJ</text>
+	</string>
+	<string id="ammo_new_9x19_fmj_descr">
+		<text>Základní a všudypřítomný náboj ráže 9x19 s celoplášťovou střelou. Má dobré letové vlastnosti a slušnou zastavovací sílu a přitom se snadno vyrábí. Je oblíbený i proto, že mezinárodní úmluvy zakazují v boji používat deformační střelivo. Proti neprůstřelným vestám je neúčinný.</text>
+	</string>
+	<string id="ammo_new_9x19_fmj_s">
+		<text>9x19 FMJ</text>
+	</string>
+	<string id="ammo_new_9x19_plus">
+		<text>Náboje 9x19mm FMJ +P+</text>
+	</string>
+	<string id="ammo_new_9x19_plus_descr">
+		<text>Standardní náboj 9x19 Parabellum se zesílenou prachovou náplní. Zesílené náboje mají plošší dráhu a vyšší zastavovací sílu než běžné, ale víc kopou a víc opotřebovávají zbraň.</text>
+	</string>
+	<string id="ammo_new_9x19_plus_s">
+		<text>9x19 FMJ+</text>
+	</string>
+	<string id="ammo_new_9x19_pbp">
+		<text>Náboje 9x19mm JHP</text>
+	</string>
+	<string id="ammo_new_9x19_pbp_descr">
+		<text>Tato poloplášťová střela ráže 9x19 s dutou expanzní špičkou má vysokou zastavovací sílu a malý sklon k odrazům. Pro vysokou zastavovací sílu je oblíbená u policistů a při skrytém nošení zbraně. Kvůli nízké průraznosti je proti neprůstřelným vestám neúčinná.</text>
+	</string>
+	<string id="ammo_new_9x19_pbp_s">
+		<text>9x19 JHP</text>
+	</string>
+	<string id="ammo_new_9x19_pbps">
+		<text>Náboje 9x19mm Disruptor</text>
+	</string>
+	<string id="ammo_new_9x19_pbps_descr">
+		<text>Upravené ručně přebíjené náboje 9mm JSP. Kovový plášť na špičce je zkrácený jako u poloměkké střely a nábojnice i prachová náplň jsou upravené pro vyšší tlak. Špička střely je potažená tenkou vrstvou kaše z gravitačních artefaktů, která při dopadu vytváří mikrosingularity. Vznikly jako nekonvenční způsob, jak se mohou běžní stalkeři vypořádat s těžce obrněnými protivníky.</text>
+	</string>
+	<string id="ammo_new_9x19_pbps_s">
+		<text>9x19 JSP</text>
+	</string>
+	<string id="ammo_new_9x19_ap">
+		<text>Náboje 9x19mm AP</text>
+	</string>
+	<string id="ammo_new_9x19_ap_descr">
+		<text>Ruský průbojný pistolový náboj navržený pro nejnovější ruské pistole a samopaly. Má výrazně vyšší úsťovou rychlost než ostatní náboje 9x19mm a mnohem lépe prorazí ochranu. Jde o náboj se zvýšeným tlakem, takže je při střelbě nutná opatrnost. V Zóně je poměrně vzácný a obvykle ho sem dovážejí Žoldáci.</text>
+	</string>
+	<string id="ammo_new_9x19_ap_s">
+		<text>9x19 AP</text>
+	</string>
+	<string id="ammo_new_9x19_7n31">
+		<text>Náboje 9x19mm 7N31 AP</text>
+	</string>
+	<string id="ammo_new_9x19_7n31_descr">
+		<text>Vylepšený ruský průbojný náboj se silnější prachovou náplní a lehčí střelou. Nabízí mnohem lepší špičkový výkon a průraznost než jeho předchůdce, za cenu vyššího opotřebení. V Zóně je extrémně vzácný a dostávají ho jen specnaz nebo ruští Žoldáci.</text>
+	</string>
+	<string id="ammo_new_9x19_7n31_s">
+		<text>9x19 7N31 AP</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmj">
+		<text>Náboje .45 ACP</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmj_descr">
+		<text>Celoplášťový náboj ráže .45 je oblíbený už sto let díky své balistice a poměrně malé prachové náplni. Střela je proto relativně pomalá, ale velmi přesná a má značnou zastavovací sílu.</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmj_s">
+		<text>.45 ACP</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmjs">
+		<text>Náboje .45 ACP AP+P</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmjs_descr">
+		<text>Náboj .45 ACP se zesílenou náplní, který posouvá účinek střely .45 na moderní úroveň. Do velké střely byl přidán penetrátor z uhlíkové oceli, takže lépe prorazí ochranu, aniž by ztratila příliš zastavovací síly. Doporučuje se používat v moderní pistoli, která zvýšený tlak vydrží, jinak náboj ohrožuje samotného střelce.</text>
+	</string>
+	<string id="ammo_new_11.43x23_fmjs_s">
+		<text>.45 AP+P</text>
+	</string>
+	<string id="ammo_new_11.43x23_hp">
+		<text>Náboje .45 ACP JHP</text>
+	</string>
+	<string id="ammo_new_11.43x23_hp_descr">
+		<text>Standardní náboj .45 ACP se střelou s dutou špičkou. Proslulý svou účinností proti nechráněným lidským cílům a základní náboj většiny policejních složek. Překvapivě účinný i proti mutantům, a proto oblíbená volba k obraně před nimi.</text>
+	</string>
+	<string id="ammo_new_11.43x23_hp_s">
+		<text>.45 HP</text>
+	</string>
+	<string id="ammo_new_11.43x23_hydro">
+		<text>Náboje .45 ACP 'RIP'</text>
+	</string>
+	<string id="ammo_new_11.43x23_hydro_descr">
+		<text>Tento experimentální náboj .45 ACP vzniká z úlomku chemického artefaktu, kolem kterého se 'vypěstuje' olovo, vytvaruje se do podoby střely a pak se galvanicky poniklová. Střela se vyrábí na základě tajných experimentů Ministerstva vědy ve spolupráci s výzkumem dodaným Svobodou. Navzdory tvrdému kovovému povlaku se střela snadno rozpadá na několik 'drápů', což jí dává fenomenální zastavovací sílu za cenu nižší průraznosti. Zvláštní je, že střely zřejmě vytvářejí kolem místa výstřelu lokální anomálii, která působí na živé tvory v bezprostřední blízkosti. Spekuluje se, že neznámým způsobem přenášejí životní energii z oběti na střelce.</text>
+	</string>
+	<string id="ammo_new_11.43x23_hydro_s">
+		<text>.45 RIP</text>
+	</string>
+	<string id="ammo_new_357_hp">
+		<text>Náboje .357 HP</text>
+	</string>
+	<string id="ammo_new_357_hp_descr">
+		<text>Náboj .357 HP má střelu s dutou špičkou. Ta se má při dopadu zbrzdit, což snižuje průraznost, ale zároveň způsobuje rozsáhlejší poškození tkání. Díky vysoké zastavovací síle je extrémně oblíbený u členů Povinnosti, zejména proti těžším mutantům, jako jsou kanci.</text>
+	</string>
+	<string id="ammo_new_357_hp_s">
+		<text>.357 HP</text>
+	</string>
+	<string id="ammo_new_357_jfp">
+		<text>Ručně přebíjené náboje .357 JFP</text>
+	</string>
+	<string id="ammo_new_357_jfp_descr">
+		<text>Ručně přebíjený náboj .357 určený pro lovce a sportovní střelce. Střela má plochou špičku a měděný plášť. Zastavovací silou se sice nevyrovná střelám s dutou špičkou, ale letí rovněji a prorazí ochranu mnohem účinněji. Předává obrovskou nárazovou sílu.</text>
+	</string>
+	<string id="ammo_new_357_jfp_s">
+		<text>.357 JFP</text>
+	</string>
+	<string id="ammo_new_7.62x25_p">
+		<text>Náboje 7.62x25mm P</text>
+	</string>
+	<string id="ammo_new_7.62x25_p_descr">
+		<text>7.62x25mm je ruský lahvovitý pistolový náboj široce používaný v bývalých sovětských satelitech, Číně, Pákistánu a dalších zemích. Jde o vylepšenou ruskou verzi náboje 7.63x25mm Mauser. Má vynikající průraznost a snadno prorazí lehčí balistické vesty i kevlarové přilby, za cenu celkové zastavovací síly. Většina zbraní této ráže je sice zastaralá a vyřazená z armádní výzbroje, ale náboj se stále hojně používá díky velkým zásobám ve skladech.</text>
+	</string>
+	<string id="ammo_new_7.62x25_p_s">
+		<text>7.62x25 P</text>
+	</string>
+	<string id="ammo_new_7.62x25_ps">
+		<text>Náboje 7.62x25mm Pst</text>
+	</string>
+	<string id="ammo_new_7.62x25_ps_descr">
+		<text>7.62x25mm s ocelovým jádrem je ruský lahvovitý pistolový náboj široce používaný v bývalých sovětských satelitech, Číně, Pákistánu a dalších zemích. Díky ocelovému jádru je účinný proti lehce chráněným cílům a příliš neztrácí na zastavovací síle.</text>
+	</string>
+	<string id="ammo_new_7.62x25_ps_s">
+		<text>7.62x25 Pst</text>
+	</string>
+	<string id="ammo_new_7.62x25_hp">
+		<text>Náboje 7.62x25mm HP</text>
+	</string>
+	<string id="ammo_new_7.62x25_hp_descr">
+		<text>Náboj 7.62x25mm ve sportovním provedení s dutou špičkou. Díky štíhlé střele si stále zachovává slušnou průraznost a nabízí znatelné zvýšení zastavovací síly.</text>
+	</string>
+	<string id="ammo_new_7.62x25_hp_s">
+		<text>7.62x25 HP</text>
+	</string>
+	<string id="ammo_new_7.62x25_cor">
+		<text>Kyselinové náboje 7.62x25mm</text>
+	</string>
+	<string id="ammo_new_7.62x25_cor_descr">
+		<text>Experimentální náboje vyvinuté v utajené spolupráci části ukrajinského Ministerstva vědy a členů frakce Jasná obloha. Tyto střely s dutou špičkou jsou vyplněné tyrkysovou zátkou, která na dotek působí jako plast. Speciální úprava s využitím artefaktů Kamenná krev a katalýzy za přítomnosti rozprášeného čpavku vedla k výrobě korozivních špiček, které při vystavení žáru výbuchu střelného prachu reagují za vzniku látky, jež prudce taví a rozkládá kov, látku, dřevo, plast i kámen. V inertním stavu je materiál bezpečný a reaguje až po výstřelu ze zbraně.</text>
+	</string>
+	<string id="ammo_new_7.62x25_cor_s">
+		<text>7.62x25 Kys.</text>
+	</string>
+	<string id="ammo_new_5.7x28_fmj">
+		<text>Náboje 5.7x28 FMJ</text>
+	</string>
+	<string id="ammo_new_5.7x28_fmj_descr">
+		<text>Civilní náboj SS196SR 5.7x28 FMJ. Na rozdíl od SS190 není certifikován k průstřelu neprůstřelných vest. V praxi ale lehký kevlar stále prorazí, a proto se docela běžně používá. Je mnohem levnější a snáze dostupný než jeho vojenský průbojný bratříček a je dobrou volbou pro šetrného operátora, který chce terorizovat Samotáře.</text>
+	</string>
+	<string id="ammo_new_5.7x28_fmj_s">
+		<text>5.7x28 FMJ</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss190">
+		<text>Náboje 5.7x28 SS190</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss190_descr">
+		<text>FN 5.7x28mm je vysokorychlostní náboj navržený a vyráběný firmou FN Herstal. Jde o lahvovitý náboj se středovým zápalem, který se do jisté míry podobá nábojům .22 Hornet nebo .22 K-Hornet. Náboj 5.7x28mm byl vyvinut spolu s osobní obrannou zbraní (PDW) FN P90 a pistolí FN Five-seven v reakci na rostoucí hrozbu neprůstřelných vest. Tento typ střely proto snadno prorazí i puškové pláty, ale kvůli malé velikosti má výrazně nižší poškození.</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss190_s">
+		<text>5.7x28 AP</text>
+	</string>
+	<string id="ammo_new_5.7x28_chaos">
+		<text>5.7x28 Nestabilní jádro</text>
+	</string>
+	<string id="ammo_new_5.7x28_chaos_descr">
+		<text>Náboje 5.7x28mm SS190 se stopami neznámé anomální manipulace. Vzácně je používají Monolit a Hříšníci a nesou známky stejného typu úprav jako jiné experimentální střelivo. V klidu jsou inertní, ale náboje se rychle destabilizují (v realitě, ne za letu) a chovají se nevyzpytatelně, takže jsou velmi nepředvídatelné. Používejte opatrně.</text>
+	</string>
+	<string id="ammo_new_5.7x28_chaos_s">
+		<text>5.7x28 CHAOS</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss195">
+		<text>Náboje 5.7x28mm SS195</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss195_descr">
+		<text>SS195 FN 5.7x28mm je deformační náboj navržený a vyráběný firmou FN Herstal. Jde o lahvovitý náboj se středovým zápalem, který se do jisté míry podobá nábojům .22 Hornet nebo .22 K-Hornet. Na Západě oblíbený sportovní a lovecký náboj, který se do Zóny dostal díky některým nadšencům do pistole Five-seveN jako zbraně na obranu proti mutantům.</text>
+	</string>
+	<string id="ammo_new_5.7x28_ss195_s">
+		<text>5.7x28 HP</text>
+	</string>
+	<string id="ammo_new_12x70_buck">
+		<text>12x70 broky #00</text>
+	</string>
+	<string id="ammo_new_12x70_buck_descr">
+		<text>Standardní náboj ráže 12 plněný broky #00 o průměru 8mm. Na blízko vysoce smrtící, ale účinnost rychle klesá. V Zóně velmi běžný. Vhodný jen pro zbraně s hladkým vývrtem.</text>
+	</string>
+	<string id="ammo_new_12x70_buck_s">
+		<text>12x70 Broky</text>
+	</string>
+	<string id="ammo_new_12x70_magnum">
+		<text>12x70 broky Magnum</text>
+	</string>
+	<string id="ammo_new_12x70_magnum_descr">
+		<text>Broky #00 se zvýšenou prachovou náplní. Výrazně zvyšují zastavovací sílu a mírně zlepšují průraznost za cenu vyššího opotřebení zbraně. Skvělé na lov - samotná síla výstřelu dokáže vážně zranit i chráněné končetiny. Pokud chceš složit obludného mutanta, sáhni po brokách Magnum.</text>
+	</string>
+	<string id="ammo_new_12x70_magnum_s">
+		<text>12x70 Magnum</text>
+	</string>
+	<string id="ammo_new_12x70_zhekan">
+		<text>Náboje 12x76 Jednotná střela</text>
+	</string>
+	<string id="ammo_new_12x70_zhekan_descr">
+		<text>Tato těžká jednotná střela ráže 12 se běžně používá k lovu velké zvěře, ale hodí se i na levný lov lidí. Místo průstřelu dokáže tato mohutná střela drtit ochranu jako palcát. Díky obrovské nárazové síle je tento typ náboje mimořádně účinný při zastavování nepřátel.</text>
+	</string>
+	<string id="ammo_new_12x70_zhekan_s">
+		<text>12x76 Jednotná</text>
+	</string>
+	<string id="ammo_new_12x70_dart">
+		<text>Náboje 12x76 AP šipka</text>
+	</string>
+	<string id="ammo_new_12x70_dart_descr">
+		<text>Průbojný šipkový náboj ráže 12 z kalené oceli. Nabízí průraznost srovnatelnou s puškovými náboji a zároveň výrazně vyšší zastavovací sílu. Zvýšená prachová náplň pohání střelu tak, aby co nejvíce poškodila ochranu. </text>
+	</string>
+	<string id="ammo_new_12x70_dart_s">
+		<text>12x76 Šipka</text>
+	</string>
+	<string id="ammo_new_12x70_flechette">
+		<text>Náboje 12x70 Flechette</text>
+	</string>
+	<string id="ammo_new_12x70_flechette_descr">
+		<text>Brokový náboj ráže 12 plněný 9 hroty z kalené oceli. Oproti brokům nabízí těsnější rozptyl, delší účinný dostřel a dobrou průraznost, ale chybí mu hrubá zastavovací síla. Vhodný proti lehké balistické ochraně, proti těžší ochraně je však neúčinný, pokud nemíříte hlavně na končetiny.</text>
+	</string>
+	<string id="ammo_new_12x70_flechette_s">
+		<text>12x70 Flechette</text>
+	</string>
+	<string id="ammo_new_12x70_dragon">
+		<text>Náboje 12x70 'Dračí dech'</text>
+	</string>
+	<string id="ammo_new_12x70_dragon_descr">
+		<text>Brokový náboj ráže 12 plněný drobnými úlomky artefaktů Ohnivá koule a Noční hvězda. Při výstřelu spustí výbuch střelného prachu nekontrolovanou anomální reakci, která rozžhaví úlomky artefaktů na teplotu srovnatelnou se zapáleným termitem. Zásah má na tkáně zničující účinek a roztaví většinu ochranných obleků, ale extrémní žár silně poškozuje i zbraň, ze které se střílí. Úlomky artefaktů bohužel nemají velkou průraznost, takže hlavním zdrojem poškození je schopnost střeliva zapálit cíl.</text>
+	</string>
+	<string id="ammo_new_12x70_dragon_s">
+		<text>12x70 Dračí dech</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmj">
+		<text>Náboje 5.45x39mm FMJ</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmj_descr">
+		<text>Vojenský náboj ráže 5.45x39 s ocelovou nábojnicí, označení 7N6, byl prvním standardním nábojem pro automatické pušky zemí Varšavské smlouvy, které přešly na nový zkrácený puškový náboj. Díky nižšímu zpětnému rázu nabízí lepší přesnost než ráže 7.62 a o 100 metrů delší dostřel. Unikátní konstrukce střely zajišťuje spolehlivé překlápění při průniku tkání, a tím i stálou zastavovací sílu. Obvykle ho najdete v puškách týlových jednotek, zadních hlídek a ubožáků, kteří hlídají hranice Zóny odcizení.</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmj_s">
+		<text>5.45x39 FMJ</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmjs">
+		<text>Náboje 5.45x39mm Terminal</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmjs_descr">
+		<text>Upravené a ručně přebité náboje 5.45x39 7N6 od řemeslníků ze Zóny. Úprava je poměrně jednoduchá - špička střely nese úlomek gravitačního artefaktu, který se při výstřelu promění v krátce žijící plazma. Na blízko je celková účinnost výrazně vyšší, ale kvůli krátké době trvání reakce na větší vzdálenost prudce klesá.</text>
+	</string>
+	<string id="ammo_new_5.45x39_fmjs_s">
+		<text>5.45x39 Terminal</text>
+	</string>
+	<string id="ammo_new_5.45x39_sp">
+		<text>Náboje 5.45x39mm Disruptor</text>
+	</string>
+	<string id="ammo_new_5.45x39_sp_descr">
+		<text>Upravené náboje 5.45x39mm s dutou špičkou, které vyvinuli stalkeři při primitivních pokusech s artefakty. V duté špičce je zasazen úlomek běžného artefaktu, který při dopadu vytvoří mikrogravitační puls. Pokud zásah neprorazí ochranu, dezorientuje a vyruší nepřítele. Oblíbený lidový prostředek, jak se vyhnout dobře vyzbrojeným protivníkům - náboje sice nemusí zabít, ale rozptýlí nepřítele na dost dlouho, abyste stihli ustoupit do bezpečí.</text>
+	</string>
+	<string id="ammo_new_5.45x39_sp_s">
+		<text>5.45x39 Disruptor</text>
+	</string>
+	<string id="ammo_new_5.45x39_hp">
+		<text>Náboje 5.45x39mm HP</text>
+	</string>
+	<string id="ammo_new_5.45x39_hp_descr">
+		<text>Náboje 5.45x39mm s dutou špičkou, které používají civilisté ke sportovní střelbě a policie při speciálních zásazích. Při průchodu tělem se deformuje, což snižuje průraznost, ale zvyšuje zastavovací sílu. Proti neprůstřelným vestám je neúčinný, i když některou měkkou ochranu dokáže překonat hrubou silou.</text>
+	</string>
+	<string id="ammo_new_5.45x39_hp_s">
+		<text>5.45x39 HP</text>
+	</string>
+
+	<string id="ammo_new_5.45x39_ap">
+		<text>Náboje 5.45x39mm 7N10 EP</text>
+	</string>
+	<string id="ammo_new_5.45x39_ap_descr">
+		<text>Standardní náboj ráže 5.45x39 7N10 se zvýšenou průbojností pro automatické pušky zemí Varšavské smlouvy. Pro lepší průbojnost má tvrdší a štíhlejší ocelové jádro. Je to standardní munice moderních pozemních sil SSU, takže ji ve výbavě najdete u většiny vojáků. Lepší průbojnost znamená obrovský rozdíl v boji proti Žoldákům a jednotkám Monolitu.</text>
+	</string>
+	<string id="ammo_new_5.45x39_ap_s">
+		<text>5.45x39 EP</text>
+	</string>
+	<string id="ammo_new_5.45x39_aps">
+		<text>Náboje 5.45x39mm 7N22 AP</text>
+	</string>
+	<string id="ammo_new_5.45x39_aps_descr">
+		<text>Speciální průbojný náboj ráže 5.45x39 7N22 pro automatické pušky zemí Varšavské smlouvy. Střela obsahuje penetrátor z tvrdé slitiny, který je vysoce účinný proti neprůstřelným vestám. Vydává se jednotkám Specnaz nasazeným v přímých akcích proti nejnebezpečnějším a nejlépe vyzbrojeným protivníkům, ale hrstka těchto nábojů se občas dostane i do rukou členů Povinnosti.</text>
+	</string>
+	<string id="ammo_new_5.45x39_aps_s">
+		<text>5.45x39 AP</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmj">
+		<text>Náboje 5.56x45mm FMJ</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmj_descr">
+		<text>Standardní náboj NATO ráže 5.56x45 M193, který debutoval spolu s rodinou pušek AR-15 během války ve Vietnamu. Původní zásoby munice M193 sice americkým vojákům ve Vietnamu působily potíže, ale nově vyráběné náboje používají doporučený prach IMR a zachovávají si typickou zastavovací sílu M193 díky fragmentaci střely. Proti moderní ochraně je relativně slabý, přesto je v Zóně velmi oblíbený díky své všestrannosti a rozumné ceně.</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmj_s">
+		<text>5.56x45 FMJ</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmjs">
+		<text>Náboje 5.56x45mm Mk 262</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmjs_descr">
+		<text>Speciální náboje Mk. 262 optimalizované pro balistický výkon na velké vzdálenosti. Jsou určeny pro pušky přesných střelců a nabízejí menší rozptyl, lepší letové vlastnosti a vyšší účinnost na dlouhou vzdálenost.</text>
+	</string>
+	<string id="ammo_new_5.56x45_fmjs_s">
+		<text>5.56x45 Match</text>
+	</string>
+	<string id="ammo_new_5.56x45_hp">
+		<text>Náboje 5.56x45mm HP</text>
+	</string>
+	<string id="ammo_new_5.56x45_hp_descr">
+		<text>Náboj 5.56x45mm s dutou špičkou, běžně používaný k lovu a sportovní střelbě. Otevřená špička ho činí neúčinným proti ochraně, ale zvyšuje zastavovací sílu proti nechráněným cílům. Oblíbená munice na mutanty.</text>
+	</string>
+	<string id="ammo_new_5.56x45_hp_s">
+		<text>5.56x45 HP</text>
+	</string>
+	<string id="ammo_new_5.56x45_varma">
+		<text>Náboje 5.56x45mm 'Varmageddon'</text>
+	</string>
+	<string id="ammo_new_5.56x45_varma_descr">
+		<text>Dovážený lovecký náboj 5.56x45 navržený speciálně k zabíjení zvěře. Unikátní tvar střely jí umožňuje se v hustém svalstvu a mase zvířat výrazně roztáhnout a způsobit katastrofální poškození. Účinek na lidské cíle je ve srovnání přijatelný, ale ne tak výrazný. Díky těmto nábojům se mohou bojovníci Svobody postavit i těm nejodpornějším mutantům, kterých je na severu víc.</text>
+	</string>
+	<string id="ammo_new_5.56x45_varma_s">
+		<text>5.56x45 Varma</text>
+	</string>
+	<string id="ammo_new_5.56x45_ap">
+		<text>Náboje 5.56x45mm AP</text>
+	</string>
+	<string id="ammo_new_5.56x45_ap_descr">
+		<text>Nejnovější vojenský náboj NATO ráže 5.56x45 se zvýšenou průbojností, známý jako M855A1, používaný ozbrojenými silami USA. Selhání náboje M855 vedlo k vývoji jak Mk318, tak tohoto náboje, který při střelbě ze standardních pušek nabízí vyšší průbojnost i větší zastavovací sílu. Těžko k sehnání, ale mimořádně účinný, zejména proti ochraně na úrovni exoskeletu. Ve velkém ho dovážejí neznámí dodavatelé Žoldáků a patří k hlavním dováženým komoditám (vedle marihuany), za které Svoboda obchoduje.</text>
+	</string>
+	<string id="ammo_new_5.56x45_ap_s">
+		<text>5.56x45 AP</text>
+	</string>
+	<string id="ammo_new_5.56x45_ss190">
+		<text>Náboje 5.56x45mm EP</text>
+	</string>
+	<string id="ammo_new_5.56x45_ss190_descr">
+		<text>Poměrně zastaralý náboj NATO ráže 5.56x45 s ocelovým jádrem. Původně vyvinutý jako odpověď na neprůstřelné vesty, náboj s označením M855 ale přišel o fragmentační vlastnosti, které z M193 dělaly tak účinnou munici, a vyměnil tak velkou část zastavovací síly za slušnou průbojnost. Do Zóny se ho dostalo velké množství, protože většina armád se zásob této neefektivní munice zbavila. I přes jeho rozšíření ho většina stalkerů používá jen nerada.</text>
+	</string>
+	<string id="ammo_new_5.56x45_ss190_s">
+		<text>5.56x45 EP</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmj">
+		<text>Náboje 7.62x39mm FMJ</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmj_descr">
+		<text>Náboj 7.62x39 M43 FMJ s ocelovou nábojnicí, všudypřítomný v konfliktních zónách, povstáních a revolucích po celém světě. Nabízí vysokou zastavovací sílu a dobrou průbojnost, ale ve srovnání s modernějšími náboji 5.45 a 5.56 ho brzdí silný zpětný ráz, kratší dostřel a horší přesnost. V Zóně je mimořádně běžný, protože je velmi oblíbený i k lovu a rekreační střelbě.</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmj_s">
+		<text>7.62x39 FMJ</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmjs">
+		<text>Náboje 7.62x39mm Acid</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmjs_descr">
+		<text>Náboje 7.62x39 s dutou špičkou upravené zvětšeným artefaktovým hrotem, podobným tomu z experimentálních nábojů 7.62x25 Acid. Po úspěchu prvních pokusů se rychle našlo uplatnění i u větších ráží, což dává hůře zásobeným frakcím šanci na boj.</text>
+	</string>
+	<string id="ammo_new_7.62x39_fmjs_s">
+		<text>7.62x39 Acid</text>
+	</string>
+	<string id="ammo_new_7.62x39_ap">
+		<text>Náboje 7.62x39mm AP</text>
+	</string>
+	<string id="ammo_new_7.62x39_ap_descr">
+		<text>Náboj 7.62x39 7N23 s jádrem z uhlíkové oceli. Je určen k likvidaci nepřátel za lehkým krytem a k překonání moderních neprůstřelných vest, se kterými si náboj M43 běžně neporadí. Díky vyšší hmotnosti předá cíli víc energie než lehčí náboje 5.45, za cenu horší přesnosti a účinného dostřelu. V rámci dohody s ruskou vládou se stále častěji vydává jednotkám SSU k boji proti sílící přítomnosti Monolitu.</text>
+	</string>
+	<string id="ammo_new_7.62x39_ap_s">
+		<text>7.62x39 AP</text>
+	</string>
+	<string id="ammo_new_7.62x39_api">
+		<text>Náboje 7.62x39mm BZ API</text>
+	</string>
+	<string id="ammo_new_7.62x39_api_descr">
+		<text>Průbojné náboje 7.62x39 se zápalnou složkou u základny střely. Jsou určeny k ničení vozidel střelbou do palivových nádrží: penetrátor prorazí jakékoli pancéřování a zápalná složka při průchodu vytváří jiskry, které zapálí palivo. Obrněných vozidel je v Zóně sice extrémní nedostatek, ale tyto náboje skvěle poslouží jako nelidský způsob, jak zvýšit smrtelnost proti chráněným cílům. Kvůli zápalné složce vznikají vysoké teploty a zbraň se víc zahřívá.</text>
+	</string>
+	<string id="ammo_new_7.62x39_api_s">
+		<text>7.62x39 API</text>
+	</string>
+	<string id="ammo_new_9x39_sp5">
+		<text>Náboje 9x39mm SP-5</text>
+	</string>
+	<string id="ammo_new_9x39_sp5_descr">
+		<text>SP-5 je podzvukový puškový náboj s bimetalovou nábojnicí. Střela obsahuje ocelové jádro, za nímž je mezera vyplněná olovem. Typicky se používá ve VSS Vintorez, nabízí malý rozptyl a vysokou zastavovací sílu, ale brzdí ji strmá dráha letu a omezený dostřel. Pro tichou střelbu vyžaduje tlumič. Používají ho speciální služby zemí Varšavské smlouvy.</text>
+	</string>
+	<string id="ammo_new_9x39_sp5_s">
+		<text>9x39 SP-5</text>
+	</string>
+	<string id="ammo_new_9x39_spp">
+		<text>Náboje 9x39mm SPP</text>
+	</string>
+	<string id="ammo_new_9x39_spp_descr">
+		<text>Náboj 9x39 SPP je modernizovaný SP-5 s ocelovým penetrátorem. Vznikl jako přímý nástupce SP-5 a využívá a dále vylepšuje všechny vlastnosti, které z SP-5 dělají tak účinnou munici. Přepracovaná střela má ocelové penetrační jádro, díky kterému je proti ochraně účinnější než SP-5, a tvar i rozložení hmotnosti střely jsou vylepšené pro optimální aerodynamiku.</text>
+	</string>
+	<string id="ammo_new_9x39_spp_s">
+		<text>9x39 SPP</text>
+	</string>
+	<string id="ammo_new_9x39_pab9">
+		<text>Náboje 9x39mm PAB-9</text>
+	</string>
+	<string id="ammo_new_9x39_pab9_descr">
+		<text>Stará munice PAB-9, která se už nevyrábí. Ve snaze snížit náklady na výrobu nábojů SP-6 se penetrační jádro lisovalo místo obrábění a prach byl nahrazen levnější a špinavější směsí. Výsledkem je náboj s o něco lepším výkonem než SP-6, který je ale nestabilní za letu a zbraň, ze které se střílí, velmi rychle zničí.</text>
+	</string>
+	<string id="ammo_new_9x39_pab9_s">
+		<text>9x39 PAB-9</text>
+	</string>
+	<string id="ammo_new_9x39_ap">
+		<text>Náboje 9x39mm SP-6</text>
+	</string>
+	<string id="ammo_new_9x39_ap_descr">
+		<text>SP-6 je podzvukový průbojný náboj s plášťovanou střelou s měkkou špičkou a tvrdým ocelovým jádrem vyčnívajícím z pláště. Používají ho elitní jednotky Specnaz spolu se speciální útočnou puškou AS VAL. Pro tichou střelbu vyžaduje tlumič. Vysoce účinný proti neprůstřelným vestám.</text>
+	</string>
+	<string id="ammo_new_9x39_ap_s">
+		<text>9x39 SP-6</text>
+	</string>
+	<string id="ammo_new_7.62x54r">
+		<text>Náboje 7.62x54mm PP</text>
+	</string>
+	<string id="ammo_new_7.62x54r_descr">
+		<text>Přebytková munice 7.62x54mm 57-N-323S. Náboj 7.62x54mm je druhý nejstarší puškový náboj, který se dodnes používá; poprvé se vyráběl v roce 1891 pro pušku Mosin-Nagant. Základní konstrukce střely se od roku 1908 příliš nezměnila a dodnes je velmi oblíbená mezi lovci a sportovními střelci. Tyto náboje jsou volné, ale dají se spojit do pásu pro kulomet PK.</text>
+	</string>
+	<string id="ammo_new_7.62x54r_s">
+		<text>7.62x54 PP</text>
+	</string>
+	<string id="ammo_new_7.62x54_7n1">
+		<text>Náboje 7.62x54mm 7N1</text>
+	</string>
+	<string id="ammo_new_7.62x54_7n1_descr">
+		<text>Odstřelovačský náboj 7.62x54 pro přesnou střelbu na dálku. Navržen speciálně pro odstřelovačskou pušku SVD. Nabízí velmi malý rozptyl a stálou zastavovací sílu proti lehce chráněným cílům, proti těžké ochraně je ale o něco slabší. Oblíbený u všech přesných střelců. Je kompatibilní i s lehkými kulomety, ale cpát tak kvalitní munici do kulometu je upřímně čisté plýtvání.</text>
+	</string>
+	<string id="ammo_new_7.62x54_7n1_s">
+		<text>7.62x54 7N1</text>
+	</string>
+	<string id="ammo_new_7.62x54_hp">
+		<text>Náboje 7.62x54mm HP</text>
+	</string>
+	<string id="ammo_new_7.62x54_hp_descr">
+		<text>Civilní lovecké náboje 7.62x54. Dutá špička snižuje průbojnost a zvyšuje zastavovací sílu, takže jsou dobrou volbou pro lovce velké zvěře, kteří nechtějí prostřelit cennou kožešinu skrz naskrz. V Zóně jsou velmi běžné vzhledem k původu většiny Samotářů.</text>
+	</string>
+	<string id="ammo_new_7.62x54_hp_s">
+		<text>7.62x54 HP</text>
+	</string>
+	<string id="ammo_new_7.62x54_fp">
+		<text>Náboje 7.62x54mm 'Headhunter' Match</text>
+	</string>
+	<string id="ammo_new_7.62x54_fp_descr">
+		<text>Vysoce přesná varianta náboje 7.62x54mm s plochou špičkou, která zajišťuje malý rozptyl na střední a velké vzdálenosti. Tyto náboje se používají při soutěžní střelbě, kde jde hlavně o přesnost, a proto jsou všechny pečlivě vyrobené tak, aby byly naprosto stejné. Plochá špička zajišťuje lepší rozložení hmotnosti a čisté průstřely terčů a je opatřena plastovou zátkou pro maximální aerodynamiku. Průbojnost sice chybí, ale samotná síla dopadu ploché špičky stačí k smrtelnému otřesu. Odstřelovači v praxi uvádějí, že zásah do hlavy těmito náboji cíl smrtelně omráčí a téměř vždy zaručí zabití. Správné použití takové munice vyžaduje velkou zručnost.</text>
+	</string>
+	<string id="ammo_new_7.62x54_fp_s">
+		<text>7.62x54 FP</text>
+	</string>
+	<string id="ammo_new_7.62x54_ap">
+		<text>Náboje 7.62x54mm AP</text>
+	</string>
+	<string id="ammo_new_7.62x54_ap_descr">
+		<text>Průbojný náboj 7.62x54 7N13. Má kalené ocelové jádro a silnou výmetnou náplň. Je primárně určen pro kulomety, zejména ty nasazené proti lehce obrněné technice, ale i v odstřelovačských puškách si slušně poradí s těžkou ochranou na střední vzdálenost. Díky obrovské síle náboje zůstává poškození nechráněných cílů extrémně vysoké.</text>
+	</string>
+	<string id="ammo_new_7.62x54_ap_s">
+		<text>7.62x54 AP</text>
+	</string>
+	<string id="ammo_new_7.62x54_api">
+		<text>Náboje 7.62x54mm BZAPI</text>
+	</string>
+	<string id="ammo_new_7.62x54_api_descr">
+		<text>Průbojně-zápalný náboj 7.62x54 určený k vyřazení lehce obrněné techniky proražením vnějšího pancíře a zapálením palivových nádrží. Proti mutantům i lidem je mimořádně a děsivě účinný, protože průbojná špička překoná jakoukoli ochranu a zápalná složka způsobí katastrofální poškození tkání. V hlavni vytváří vysokou teplotu, takže při střelbě z kulometu je nutné hlaveň často měnit. Navíc jde v zásadě o kulometnou munici, která není stavěná na přesnost - při střelbě z pušky buďte opatrní.</text>
+	</string>
+	<string id="ammo_new_7.62x54_api_s">
+		<text>7.62x54 API</text>
+	</string>
+	<string id="ammo_new_7.62x54_ppr">
+		<text>Náboje 7.62x54mm PP (v pásu)</text>
+	</string>
+	<string id="ammo_new_7.62x54_ppr_descr">
+		<text>Přebytková munice 7.62x54mm. Náboj 7.62x54mm je druhý nejstarší puškový náboj, který se dodnes používá; poprvé se vyráběl v roce 1891 pro pušku Mosin-Nagant. Základní konstrukce střely se od roku 1908 příliš nezměnila a dodnes je velmi oblíbená mezi lovci a sportovními střelci. Tyto náboje jsou spojené do pásu pro kulomet PK, ale dají se pracně vyjmout a použít v jiných zbraních.</text>
+	</string>
+	<string id="ammo_new_7.62x54_ppr_s">
+		<text>7.62x54 PP pás</text>
+	</string>
+	<string id="ammo_new_7.62x54_split">
+		<text>Náboje 7.62x54mm Split Shot</text>
+	</string>
+	<string id="ammo_new_7.62x54_split_descr">
+		<text>Kulometné náboje 7.62x54mm, které se za letu rozdělí na tři projektily. Ty mají krátký účinný dostřel srovnatelný s pistolemi a některými brokovnicemi, ale vynahrazují to obrovskou hustotou palby. Náboje jsou anomálně upravené tak, aby byly na určitých místech extrémně křehké – natolik, že už samotné namáhání při výstřelu z hlavně je roztříští na kusy. Ač to zní nelogicky, členové Povinnosti je s velkým úspěchem používají jako zdroj ničivé palebné síly na krátkou vzdálenost proti hordám mutantů, takže fungují jako jakási těžká automatická brokovnice. Kvůli krátkému dostřelu nemá smysl je střílet z pušky.</text>
+	</string>
+	<string id="ammo_new_7.62x54_split_s">
+		<text>7.62x54 Split</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmj">
+		<text>Náboje 7.62x51mm M80 Ball</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmj_descr">
+		<text>Náboj 7.62x51 NATO je vojenská varianta náboje .308, který byl standardní municí sil NATO, dokud během války ve Vietnamu v 70. letech nepřišla munice 5.56. Dnes ho nejčastěji používají soukromé vojenské společnosti po celém světě. Náboj 7.62x51 je velmi rozšířená a všestranná kulometná ráže a lze ho použít i v bitevních a odstřelovačských puškách.</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmj_s">
+		<text>7.62x51 FMJ</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmjs">
+		<text>Náboje 7.62x51mm Mk316 Match</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmjs_descr">
+		<text>Speciální náboj 7.62x51 určený pro odstřelování na velké vzdálenosti. Špička je mírně vydutá a tvar střely je navržen pro maximální aerodynamiku při střelbě z pušek s dlouhou hlavní. Střílet ho z bitevní pušky je upřímně plýtvání, i tak si ale povede skvěle. Oblíbený u odstřelovačů Svobody, kteří za krabice těchto nábojů rádi vymění jakoukoli marihuanu, kterou mají.</text>
+	</string>
+	<string id="ammo_new_7.62x51_fmjs_s">
+		<text>7.62x51 Match</text>
+	</string>
+	<string id="ammo_new_7.62x51_ap">
+		<text>Náboje 7.62x51mm M61 AP</text>
+	</string>
+	<string id="ammo_new_7.62x51_ap_descr">
+		<text>Vojenský průbojný náboj ráže 7.62x51 M61 s kaleným ocelovým jádrem. Zachovává si vysoké poškození a zároveň výrazně lépe překonává neprůstřelné vesty. Odstřelovači Svobody ho často používají k likvidaci chráněných cílů Monolitu.</text>
+	</string>
+	<string id="ammo_new_7.62x51_ap_s">
+		<text>7.62x51 AP</text>
+	</string>
+	<string id="ammo_new_7.62x51_slap">
+		<text>Náboje 7.62x51mm M69 SLAP</text>
+	</string>
+	<string id="ammo_new_7.62x51_slap_descr">
+		<text>Speciální náboj 7.62x51 tvořený 4mm wolframovou šipkou uloženou v plastové zátce a krátkém kovovém sabotu. Plastová zátka zachovává tvar běžného náboje FMJ, takže se snadno podává, a po výstřelu hustá wolframová šipka čistě prorazí lehký i střední pancíř vozidel nebo jakoukoli neprůstřelnou vestu. Kvůli malé velikosti projektilu je ranivý účinek minimální. Průbojnost ale umožňuje střílet skrz kryt nebo zasáhnout několik cílů za sebou. Žoldáci ho v omezeném množství dovážejí proti obrněným jednotkám SSU a k likvidaci těžce chráněných hrozeb Monolitu.</text>
+	</string>
+	<string id="ammo_new_7.62x51_slap_s">
+		<text>7.62x51 SLAP</text>
+	</string>
+	<string id="ammo_new_7.92x33_fmj">
+		<text>Náboje 7.92x57mm Mauser</text>
+	</string>
+	<string id="ammo_new_7.92x33_fmj_descr">
+		<text>Náboj 7.92x57 Mauser přijalo Německé císařství a později Třetí říše. Patřil k nejoblíbenějším nábojům období obou světových válek. Dnes se ale používá hlavně k lovu a sportovní střelbě. Obrovské zásoby těchto nábojů byly zabaveny poražené straně druhé světové války a nakonec našly nové využití při střílení mutantů v Zóně.</text>
+	</string>
+	<string id="ammo_new_7.92x33_fmj_s">
+		<text>7.92x57 FMJ</text>
+	</string>
+	<string id="ammo_new_7.92x33_match">
+		<text>Ručně přebíjené náboje 7.92x57mm Match</text>
+	</string>
+	<string id="ammo_new_7.92x33_match_descr">
+		<text>Soutěžní náboj 7.92x57 s dutou špičkou a střelou se zúženou zádí. Moderní prachové náplně sice více namáhají historické pušky, ale na oplátku nabízejí výrazně lepší výkon. Lovci a sportovní střelci je oblibují pro plochou dráhu letu, malý rozptyl a spolehlivý účinek na střední a velkou zvěř.</text>
+	</string>
+	<string id="ammo_new_7.92x33_match_s">
+		<text>7.92x57 Match</text>
+	</string>
+	<string id="ammo_new_7.92x33_hp">
+		<text>Náboje 7.92x57mm HP</text>
+	</string>
+	<string id="ammo_new_7.92x33_hp_descr">
+		<text>Lovecký náboj 7.92x57 s dutou špičkou a střelou se zúženou zádí. Všudypřítomnost historických zbraní vytvořila druhotný trh s moderní loveckou municí. Lovci a sportovní střelci tyto náboje oblibují pro plochou dráhu letu, malý rozptyl a spolehlivý účinek na střední a velkou zvěř.</text>
+	</string>
+	<string id="ammo_new_7.92x33_hp_s">
+		<text>7.92x57 HP</text>
+	</string>
+	<string id="ammo_new_7.92x33_ap">
+		<text>Náboje 7.92x57mm SA</text>
+	</string>
+	<string id="ammo_new_7.92x33_ap_descr">
+		<text>7.92x57 SA je náboj, který původně vyvinula a používala britská armáda proti obrněným cílům. Má kalené ocelové jádro, které mu dodává vyšší průbojnost. Používá se hlavně pro střelbu na dlouhou vzdálenost a kvalita jeho prachu je vyšší než u standardní munice. Celkově nabízí lepší výkon než jeho protějšek z Wehrmachtu. Tento náboj podporuje několik odstřelovačských pušek.</text>
+	</string>
+	<string id="ammo_new_7.92x33_ap_s">
+		<text>7.92x57 AP</text>
+	</string>
+	<string id="ammo_new_7.92x33_shock">
+		<text>Náboje 7.92x57mm Lightning</text>
+	</string>
+	<string id="ammo_new_7.92x33_shock_descr">
+		<text>Náboj 7.92x57 se střelou z reaktivní slitiny elektrických artefaktů. Díky interakci tepla a úlomků elektrických artefaktů vytváří za letu obrovské množství elektrické energie, která se při zásahu vybije. Vysoce účinný proti kovové ochraně, kovovým povrchům a exoskeletům, ale do lehce chráněných nepřátel nebo mutantů se dokáže přenést jen minimum elektrické energie.</text>
+	</string>
+	<string id="ammo_new_7.92x33_shock_s">
+		<text>7.92x57 Shock</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmj">
+		<text>Náboje 12.7x55mm STs-130</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmj_descr">
+		<text>Plášťovaný podzvukový náboj 12.7x55mm se používá v odstřelovačské pušce VKS v uspořádání bullpup. Náboj může nést projektil o hmotnosti 59 gramů (911 grainů) až 76 g (1173 grainů), a má tak obrovskou kinetickou energii. Běžně ho používá Specnaz SSU, když akce vyžaduje tajný průzkum a likvidaci dobře chráněných a dobře vybavených protivníků.</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmj_s">
+		<text>12.7x55</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmjs">
+		<text>Náboje 12.7x55mm STs-130 PT2</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmjs_descr">
+		<text>Bronzový podzvukový náboj 12.7x55mm používaný v odstřelovačské pušce VKS v uspořádání bullpup. Náboj s označením PT2 je navržen pro vysokou přesnost, dobrou průbojnost a extrémní zastavovací sílu na krátkou až střední vzdálenost. Jde o poměrně nový vývoj, takže se dováží a nasazuje jen ve velmi omezeném množství. Generál Voronin drží zásobu těchto nábojů spolu s puškami VKS pro tajné likvidační mise.</text>
+	</string>
+	<string id="ammo_new_12.7x55_fmjs_s">
+		<text>12.7x55 PT2</text>
+	</string>
+	<string id="ammo_new_12.7x55_ap">
+		<text>Náboje 12.7x55 mm STs-130 VPS</text>
+	</string>
+	<string id="ammo_new_12.7x55_ap_descr">
+		<text>Průbojný podzvukový náboj 12.7x55mm se používá v odstřelovačské pušce VKS v uspořádání bullpup. Kalený penetrátor překoná většinu typů neprůstřelných vest, ale skutečná hodnota tohoto náboje spočívá v obrovské zastavovací síle na krátkou vzdálenost, kterou si zachovává i přes sníženou schopnost fragmentace a překlápění.</text>
+	</string>
+	<string id="ammo_new_12.7x55_ap_s">
+		<text>12.7x55 AP</text>
+	</string>
+	<string id="ammo_new_12.7x55_exp">
+		<text>Výbušné náboje 12.7x55mm</text>
+	</string>
+	<string id="ammo_new_12.7x55_exp_descr">
+		<text>Tyto experimentální náboje jsou poměrně novým a utajovaným vývojem. Obsahují malý úlomek destabilizovaného tepelného artefaktu obalený olovem a standardním kovovým pláštěm. Při zásahu většiny pevných povrchů náboj nevykazuje žádné anomální efekty, ale při zásahu tvrdého cíle uvolní artefaktové jádro obrovské množství energie. Olověný obal a kovový plášť se při výbuchu stanou střepinami, podobně jako obal granátu. Průbojnost je sice omezená, protože většina energie se šíří do stran, ale síla výbuchu způsobí vážné zranění a dezorientaci cíle i všech v jeho okolí.</text>
+	</string>
+	<string id="ammo_new_12.7x55_exp_s">
+		<text>12.7x55 EXP</text>
+	</string>
+	<string id="ammo_new_338_lapua">
+		<text>Náboje .338 Lapua Magnum</text>
+	</string>
+	<string id="ammo_new_338_lapua_descr">
+		<text>.338 Lapua Magnum je speciální lahvovitý náboj se středovým zápalem bez okraje, vyvinutý pro vojenské odstřelovačské pušky na velké vzdálenosti. Války v Afghánistánu a Iráku z něj udělaly bojem prověřený náboj se snadnou a hojnou dostupností munice. .338 Lapua je dvouúčelový náboj proti živé síle i technice, jeho potenciál proti technice je ale omezený.</text>
+	</string>
+	<string id="ammo_new_338_lapua_s">
+		<text>.338 Lapua Magnum</text>
+	</string>
+	<string id="ammo_new_338_ap">
+		<text>Náboje .338 'Soulripper' Sabot</text>
+	</string>
+	<string id="ammo_new_338_ap_descr">
+		<text>Náboj .338 tvořený penetrátorem z ochuzeného uranu v sabotu, vystřelovaným anomálně silnou náplní. Nese známky anomálních úprav, protože fyzikálně není možné, aby projektil této hmotnosti letěl takovou rychlostí a způsoboval takové poškození. Extrémně vzácný, silný a nebezpečný na manipulaci.</text>
+	</string>
+	<string id="ammo_new_338_ap_s">
+		<text>.338 DU AP</text>
+	</string>
+	<string id="ammo_new_gauss">
+		<text>Baterie</text>
+	</string>
+	<string id="ammo_new_gauss_descr">
+		<text>Baterie, které jako zdroj energie využívají zapouzdřený úlomek artefaktu „Záblesk“. Urychlí 2mm projektil na téměř relativistickou rychlost s nepřekonatelným účinkem v cíli. Vyrábějí se na high-tech zařízení.</text>
+	</string>
+	<string id="ammo_new_gauss_rage">
+		<text>Psionické baterie šílenství</text>
+	</string>
+	<string id="ammo_new_gauss_rage_descr">
+		<text>Baterie, které jako zdroj energie využívají zapouzdřený úlomek artefaktu „Měsíční svit“. Vyvinuty na základě studia psionických schopností ovladače. Vysílají koherentní puls psionické energie, který zahltí zrakovou kůru cíle děsivými audioprostorovými halucinacemi. Účinek je trvalý a trvá, dokud cíl nezemře nebo se nezhroutí vyčerpáním. Nezpůsobuje žádné fyzické poškození.</text>
+	</string>
+	<string id="ammo_new_vog25">
+		<text>Granát VOG-25</text>
+	</string>
+	<string id="ammo_new_vog25_descr">
+		<text>Běžný tříštivý granát pro podvěsný granátomet GP-25 Kostěr. Má smrtící zónu o poloměru 2,5 metru. Granát VOG-25 se používá také v OTs-14 Groza a v revolverovém granátometu RG6 / 6G30.</text>
+	</string>
+	<string id="ammo_new_vog25_s">
+		<text>Granát VOG-25</text>
+	</string>
+	<string id="ammo_new_vog25_cluster">
+		<text>Kazetový granát VOG-25</text>
+	</string>
+	<string id="ammo_new_vog25_cluster_descr">
+		<text>Upravený granát VOG-25 vyráběný v Zóně. Výbušná nálož je doplněná nestabilními úlomky artefaktů, které po krátké prodlevě způsobí několik sekundárních výbuchů. Primární výbuch nezraňuje, slouží jen k rozmetání submunice. Díky obrovskému nárůstu palebné síly je žádaný u všech frakcí. Buďte opatrní.</text>
+	</string>
+	<string id="ammo_new_vog25_cluster_s">
+		<text>VOG-25 kazetový</text>
+	</string>
+	<string id="ammo_new_vog25_berserk">
+		<text>Granát VOG-25 Berserk</text>
+	</string>
+	<string id="ammo_new_vog25_berserk_descr">
+		<text>Upravený granát VOG-25, vzniklý jako první pokus o využití psionických artefaktů. Při dopadu vyšle silný signál, který v malém okruhu vyvolá extrémní vztek a zmatení, takže zasažení tvorové i lidé na sebe začnou bez rozdílu útočit.</text>
+	</string>
+	<string id="ammo_new_vog25_berserk_s">
+		<text>VOG-25 Berserk</text>
+	</string>
+	<string id="ammo_new_m209">
+		<text>Granát 40x46 HE</text>
+	</string>
+	<string id="ammo_new_m209_descr">
+		<text>40mm granát M406 používaný v podvěsném granátometu M203 a jednoranném granátometu M79. Má smrtící zónu o poloměru 3,5 metru.</text>
+	</string>
+	<string id="ammo_new_m209_s">
+		<text>40mm HE</text>
+	</string>
+	<string id="ammo_new_m209_fire">
+		<text>Zápalný granát 40x46</text>
+	</string>
+	<string id="ammo_new_m209_fire_descr">
+		<text>40mm granát vyráběný ve speciálních výzkumných zařízeních zřízených ministerstvem vědy. Trhavina je nahrazena křehkou látkou vypěstovanou z tepelných artefaktů. Při primárním výbuchu se po velké ploše rozptýlí jemný oblak hořících částic, který zapálí živé tvory v okolí. Neživým předmětům nezpůsobuje žádné poškození.</text>
+	</string>
+	<string id="ammo_new_m209_fire_s">
+		<text>40mm zápalný</text>
+	</string>
+	<string id="ammo_new_m209_mine">
+		<text>Přibližovací granát 40x46</text>
+	</string>
+	<string id="ammo_new_m209_mine_descr">
+		<text>40mm samoaktivační přibližovací mina. Nárazový zapalovač byl nahrazen syntetickým artefaktovým výrůstkem, který se aktivuje v blízkosti živého tvora. Aby nevyhodil do vzduchu samotného střelce, odjistí se roznětný mechanismus plně až asi 1 sekundu po výstřelu a z bezpečnostních důvodů hlavici po 60 sekundách automaticky odpálí.</text>
+	</string>
+	<string id="ammo_new_m209_mine_s">
+		<text>40mm přibližovací</text>
+	</string>
+	<string id="ammo_new_50_bmg">
+		<text>Náboje .50 BMG M2 Ball</text>
+	</string>
+	<string id="ammo_new_50_bmg_descr">
+		<text>Náboj .50 Browning Machine Gun (12.7x99mm), představený v roce 1910 a přijatý roku 1921 spolu s těžkým kulometem Browning M2. Velmi často se používá jako přenosný prostředek proti technice – jediný zásah do bloku motoru stačí k vyřazení civilního vozidla nebo vážnému poškození lehce obrněného vojenského vozidla. Do Zóny se dováží jen zřídka, protože tu není potřeba – Zóna s ničením vozidel odvádí víc než dost práce sama.</text>
+	</string>
+	<string id="ammo_new_50_bmg_s">
+		<text>.50 Ball</text>
+	</string>
+	<string id="ammo_new_50_ap">
+		<text>Náboje .50 BMG M2 AP</text>
+	</string>
+	<string id="ammo_new_50_ap_descr">
+		<text>Náboj .50 M2 AP slouží k účinnému boji proti těžce obrněným vozidlům a živé síle. Dokáže si poradit s jakoukoli hrozbou v Zóně, ale používá se jen zřídka kvůli velké hmotnosti, vzácnosti a omezené kompatibilitě se zbraněmi. Říká se, že Svoboda má někde tajnou skrýš této munice, kterou používá k odrážení hrozeb Monolitu v oblasti Armádních skladů.</text>
+	</string>
+	<string id="ammo_new_50_ap_s">
+		<text>.50 AP</text>
+	</string>
+	<string id="ammo_new_4.6x30_fmj">
+		<text>Náboje 4.6x30mm FMJ</text>
+	</string>
+	<string id="ammo_new_4.6x30_fmj_descr">
+		<text>Lahvovitý náboj PDW 4.6x30mm vyvinutý pro MP7. Dokáže překonat měkké neprůstřelné vesty, ale na ochranu odolnou proti puškové munici nestačí. Tato plášťovaná střela má jádro ze slitiny olova a antimonu a je optimalizovaná pro poškození nechráněných cílů.</text>
+	</string>
+	<string id="ammo_new_4.6x30_fmj_s">
+		<text>4.6x30 FMJ</text>
+	</string>
+	<string id="ammo_new_4.6x30_ap">
+		<text>Náboje 4.6x30mm AP</text>
+	</string>
+	<string id="ammo_new_4.6x30_ap_descr">
+		<text>Německý náboj DM111 s kaleným jádrem. Lehčí a rychlejší, ale na oplátku ztrácí trochu zastavovací síly. Vzhledem k tomu, že standardní postup při použití MP7 je zasypat cíl hustou palbou náboji s nízkým zpětným rázem, to příliš nevadí.</text>
+	</string>
+	<string id="ammo_new_4.6x30_ap_s">
+		<text>4.6x30 AP</text>
+	</string>
+	<string id="ammo_new_12x76_bull">
+		<text>Jednotné střely 12x90 'Bull' Magnum</text>
+	</string>
+	<string id="ammo_new_12x76_bull_descr">
+		<text>Náboj ráže 12 se základnou z nerezové oceli a extrémně silnou prachovou náplní. Projektil tvoří hustá olověná jednotná střela s měděným pláštěm, obalující kužel z ochuzeného uranu. Absurdně těžký a silný náboj, který k bezpečné střelbě vyžaduje speciálně zesílenou brokovnici. Kdo tyto náboje vyrábí, kdo je kupuje a jaké brokovnice používá, zůstává záhadou.</text>
+	</string>
+	<string id="ammo_new_12x76_bull_s">
+		<text>12x90 Bull</text>
+	</string>
+</string_table>

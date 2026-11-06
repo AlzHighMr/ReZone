@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<!-- ReZone: texty, ktere pouziva JEN Discord (stav hry). Engine je pred odeslanim
+	     prevadi z cp1251 (azbuka), proto bez diakritiky - jinak by na Discordu byla azbuka.
+	     Soubor ma "zzzz" v nazvu, aby se nacetl jako posledni a prepsal preklad. -->
+	<string id="st_main_menu">
+		<text>Hlavni menu</text>
+	</string>
+	<string id="st_pause_menu">
+		<text>Pauza</text>
+	</string>
+	<string id="st_loading">
+		<text>Nacitani</text>
+	</string>
+	<string id="st_player_dead">
+		<text>Mrtvy</text>
+	</string>
+	<string id="st_cap_check_freeplay">
+		<text>Rezim volne hry</text>
+	</string>
+	<string id="st_hardcore_lives_left">
+		<text>Zbyvajici zivoty</text>
+	</string>
+	<string id="st_hardcore_lives_left_single">
+		<text>Zbyvajici zivot</text>
+	</string>
+	<string id="st_azazel_lives_possessed">
+		<text>Obsazene zivoty</text>
+	</string>
+	<string id="st_azazel_lives_possessed_single">
+		<text>Obsazeny zivot</text>
+	</string>
+</string_table>

@@ -1,0 +1,298 @@
+--[[
+	ReZone - jadro (spolecne pro vsechny casti ReZone)
+	- jedna cache pro vsechna nastaveni (ui_mcm.get se vola jen jednou na cestu, po zmene se cache smaze)
+	- vychozi hodnoty se berou primo ze stromu v rezone_mcm.script (jediny zdroj pravdy)
+	- jeden posluchac on_option_change, ktery rozesle zmenu modulum ve spravnem poradi
+	- doplneni zasob obchodniku (on_restock) - pozna se samo, bez trader_autoinject
+	- vlastni polozky v kontextovem menu inventare (add_menu)
+--]]
+
+ROOT = "rezone"
+
+local defs      = nil   -- [path] = default
+local cache     = {}    -- [path] = hodnota
+local listeners = {}    -- seznam funkci volanych po zmene nastaveni
+
+DEBUG = false
+
+------------------------------------------------------------
+-- Log
+------------------------------------------------------------
+function log(fmt, ...)
+	if DEBUG then
+		printf("[ReZone] " .. fmt, ...)
+	end
+end
+
+function warn(fmt, ...)
+	if not DEBUG then return end	-- jen se zapnutym Ladenim (log ma zustat cisty)
+	printf("! [ReZone] " .. fmt, ...)
+end
+
+------------------------------------------------------------
+-- Existuje callback v axr_main? (nektere pridavaji jen modded exes / jine mody)
+-- RegisterScriptCallback na neexistujici jmeno pise do logu chybu pri kazdem nacteni.
+------------------------------------------------------------
+local intercepts_ref = false
+function has_callback(name)
+	if intercepts_ref == false then
+		intercepts_ref = nil
+		local f = axr_main and axr_main.callback_set
+		if f and debug and debug.getupvalue then
+			for i = 1, 30 do
+				local n, v = debug.getupvalue(f, i)
+				if not n then break end
+				if n == "intercepts" and type(v) == "table" then intercepts_ref = v break end
+			end
+		end
+	end
+	if not intercepts_ref then return true end      -- nelze zjistit: zaregistrovat jako driv
+	return intercepts_ref[name] ~= nil
+end
+
+------------------------------------------------------------
+-- Vychozi hodnoty ze stromu MCM
+------------------------------------------------------------
+local function walk(t, path)
+	for i = 1, #(t.gr or {}) do
+		local v = t.gr[i]
+		local p = path .. "/" .. v.id
+		if v.gr then
+			walk(v, p)
+		elseif v.def ~= nil and v.curr == nil then
+			defs[p] = v.def
+		end
+	end
+end
+
+local function build_defs()
+	defs = {}
+	local ok, tree = pcall(rezone_mcm.build_tree)
+	if ok and tree then
+		walk(tree, tree.id)
+	else
+		warn("nelze sestavit strom MCM: %s", tostring(tree))
+	end
+end
+
+function default(path)
+	if not defs then build_defs() end
+	return defs[path]
+end
+
+------------------------------------------------------------
+-- Cteni nastaveni
+------------------------------------------------------------
+local function mcm_ready()
+	return ui_mcm and ui_mcm.get and not (ui_mcm.is_gathering and ui_mcm.is_gathering())
+end
+
+local NIL = {}       -- znacka "hodnota neni": neznama cesta se necte z MCM znovu (MCM by psal do logu)
+function get(path)
+	local v = cache[path]
+	if v ~= nil then
+		if v == NIL then return nil end
+		return v
+	end
+
+	if mcm_ready() then
+		v = ui_mcm.get(path)
+	end
+	if v == nil then
+		v = default(path)
+	end
+
+	cache[path] = (v == nil) and NIL or v
+	return v
+end
+
+-- getter pro jednu stranku: local g = rezone_core.page("rezone/rz_health/rz_pdmg"); g("enabled")
+function page(p)
+	return function(key) return get(p .. "/" .. key) end
+end
+
+-- existuje v MCM stranka nebo volba s touto cestou? (pro odkazy a kontroly kompatibility)
+function mcm_has(path)
+	if not (ui_mcm and path) then return false end
+	if ui_mcm.check_opt_table and ui_mcm.check_opt_table(path) then return true end
+	if ui_mcm.str_tr_explode then
+		local t = ui_mcm.str_tr_explode(path, true)
+		return t and #t > 0
+	end
+	return false
+end
+
+-- precte hodnotu ciziho modu bez chybove hlasky MCM, kdyz modul chybi
+function foreign_get(path)
+	if mcm_ready() and mcm_has(path) then
+		return ui_mcm.get(path)
+	end
+end
+
+------------------------------------------------------------
+-- Druh mutanta (configs\rezone\rezone_species.ltx, cache podle sekce)
+------------------------------------------------------------
+local species_cache = {}
+local sp_ini, sp_known = nil, nil
+
+local function species_ini()
+	if not sp_ini then
+		sp_ini = ini_file("rezone\\rezone_species.ltx")
+		sp_known = {}
+		for i = 1, #rezone_mcm.ALL_SPECIES do sp_known[rezone_mcm.ALL_SPECIES[i]] = true end
+	end
+	return sp_ini
+end
+
+local function normalize(s)
+	if not s or s == "" then return nil end
+	local ini = species_ini()
+	s = (ini and ini:r_string_ex("aliases", s)) or s
+	return sp_known[s] and s or nil
+end
+
+function species_of(obj)
+	local sec = obj:section()
+	local s = species_cache[sec]
+	if s == nil then
+		local ini = species_ini()
+		s = (ini and normalize(ini:r_string_ex("sections", sec)))
+			or normalize(ini_sys:r_string_ex(sec, "species"))
+			or normalize(ini_sys:r_string_ex(sec, "community"))
+			or false
+		species_cache[sec] = s
+		if not s then log("neznamy druh mutanta: %s", sec) end
+	end
+	return s or nil
+end
+
+------------------------------------------------------------
+-- Zmeny nastaveni
+------------------------------------------------------------
+function on_change(fn)
+	listeners[#listeners + 1] = fn
+end
+
+function reload()
+	cache = {}
+	DEBUG = get(ROOT .. "/rz_other/rz_debug/debug") == true
+	for i = 1, #listeners do
+		local ok, err = pcall(listeners[i])
+		if not ok then warn("chyba pri nacitani nastaveni: %s", tostring(err)) end
+	end
+	log("nastaveni nacteno (%d modulu)", #listeners)
+end
+
+local function on_option_change()
+	reload()
+end
+
+------------------------------------------------------------
+-- Obchodnici: druh a doplneni zasob
+------------------------------------------------------------
+-- "supplier", "mechanic", "barman", "medic", "companion" (podle obchodniho profilu)
+function trader_kind(npc)
+	local ltx = trade_manager and trade_manager.get_trade_profile and trade_manager.get_trade_profile(npc:id(), "cfg_ltx")
+	if not ltx then return end
+	ltx = string.lower(ltx):gsub("/", "\\")
+	-- bezni stalkeri: Anomaly da kazdemu NPC profil trade_generic (muzes s nim smenovat),
+	-- ale nejsou to obchodnici (stejny test jako release_npc_inventory.script)
+	if string.find(ltx, "trade_generic", 1, true) then return "generic" end
+	if string.find(ltx, "companion") then return "companion" end
+	if string.find(ltx, "mechanic") then return "mechanic" end
+	if string.find(ltx, "barman") then return "barman" end
+	if string.find(ltx, "medic") then return "medic" end
+	return "supplier"
+end
+
+local restock_fns = {}
+-- fn(npc) se zavola ~1 s po doplneni zasob obchodnika (az po pridanych vecech jinych modu)
+function on_restock(fn)
+	restock_fns[#restock_fns + 1] = fn
+	if #restock_fns == 1 then
+		local tm = trade_manager
+		if not (tm and tm.update and tm.get_trade_profile) then
+			warn("trade_manager nema ocekavane funkce, doplneni zasob se nesleduje")
+			return
+		end
+		local orig = tm.update
+		tm.update = function(npc, force_refresh, ...)
+			local id = npc and npc.id and npc:id()
+			local before = id and tm.get_trade_profile(id, "resupply_time")
+			local r = orig(npc, force_refresh, ...)
+			local after = id and tm.get_trade_profile(id, "resupply_time")
+			local kind = after and after ~= before and trader_kind(npc)
+			if kind and kind ~= "generic" then
+				CreateTimeEvent("rz_restock", "r" .. id, 1.0, function(nid)
+					local o = level.object_by_id(nid)
+					if o and o:alive() then
+						for i = 1, #restock_fns do
+							local ok, err = pcall(restock_fns[i], o)
+							if not ok then warn("doplneni zasob: %s", tostring(err)) end
+						end
+					end
+					return true
+				end, id)
+			end
+			return r
+		end
+	end
+end
+
+------------------------------------------------------------
+-- Kontextove menu inventare: vlastni polozky na volnych slotech 9 a 10
+------------------------------------------------------------
+-- add_menu(name_fn, action_fn): name_fn(obj, bag, mode) vrati id textu nebo nil
+local menus = {}
+local menu_patched = false
+
+local function slot_free(obj, i)
+	return not SYS_GetParam(0, obj:section(), "use" .. i .. "_functor")
+end
+
+-- vrati polozku, ktera pro predmet na danem slotu plati (slot 9 = prvni, 10 = druha)
+local function menu_for(ui, obj, bag, i)
+	local n = 0
+	for _, m in ipairs(menus) do
+		local ok, txt = pcall(m.name, obj, bag, ui.mode)
+		if ok and txt then
+			n = n + 1
+			if (i == 9 and n == 1) or (i == 10 and n == 2) then return m, txt end
+		end
+	end
+end
+
+function add_menu(name_fn, action_fn)
+	menus[#menus + 1] = { name = name_fn, action = action_fn }
+	if menu_patched or not (ui_inventory and ui_inventory.UIInventory) then return end
+	menu_patched = true
+	local UI = ui_inventory.UIInventory
+	local orig_name, orig_act = UI.Name_Custom, UI.Action_Custom
+	function UI:Name_Custom(obj, bag, temp, i)
+		local r = orig_name(self, obj, bag, temp, i)
+		if r or not (i == 9 or i == 10) then return r end
+		obj = self:CheckItem(obj, "Name_Custom " .. i)
+		if not (obj and slot_free(obj, i)) then return r end
+		local _, txt = menu_for(self, obj, bag, i)
+		return txt and game.translate_string(txt) or r
+	end
+	function UI:Action_Custom(obj, bag, temp, i)
+		obj = self:CheckItem(obj, "Action_Custom " .. i)
+		if obj and (i == 9 or i == 10) and slot_free(obj, i) then
+			local m = menu_for(self, obj, bag, i)
+			if m then
+				local ok, err = pcall(m.action, obj, bag, self.mode)
+				if not ok then warn("menu: %s", tostring(err)) end
+				self:On_Item_Update()
+				return
+			end
+		end
+		return orig_act(self, obj, bag, temp, i)
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("on_option_change", on_option_change)
+	-- moduly se zaregistruji ve svem on_game_start, prvni nacteni az po nich
+	RegisterScriptCallback("actor_on_first_update", reload)
+end

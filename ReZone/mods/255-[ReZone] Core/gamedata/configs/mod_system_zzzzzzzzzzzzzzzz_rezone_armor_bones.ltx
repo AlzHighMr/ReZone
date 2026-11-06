@@ -1,0 +1,1700 @@
+; =============================================================================
+; ReZone Armor - bone armor profiles (DLTX)
+; Bullets vs player (engine): bone armor (x condition) vs ammo k_ap.
+;   not penetrated: damage x hit_fraction_actor
+;   penetrated:     damage x (k_ap - armor) / (k_ap x ap_scale), at least hit_fraction_actor
+; rzc_* = Call of Pripyat (default): CoP bone armor on the ReZone k_ap scale, ap_scale 0.01 =
+;         a bullet that gets through does full damage (CoP single player)
+; rzt_* = Trilogie, rzh_* = Hardcore. Profile is chosen in ReZone MCM (rezone_armor.script).
+; =============================================================================
+
+[body_damage_rzc_007]
+bip01_pelvis             = 1, 0.07
+bip01_spine              = 1, 0.07
+bip01_spine1             = 1, 0.07
+bip01_spine2             = 1, 0.07
+bip01_l_clavicle         = 1, 0.07
+bip01_l_upperarm         = 1, 0.07
+bip01_l_forearm          = 1, 0.07
+bip01_l_hand             = 1, 0.07
+bip01_r_clavicle         = 1, 0.07
+bip01_r_upperarm         = 1, 0.07
+bip01_r_forearm          = 1, 0.07
+bip01_r_hand             = 1, 0.07
+bip01_l_thigh            = 1, 0.07
+bip01_l_calf             = 1, 0.07
+bip01_l_foot             = 1, 0.07
+bip01_r_thigh            = 1, 0.07
+bip01_r_calf             = 1, 0.07
+bip01_r_foot             = 1, 0.07
+
+[body_damage_rzc_010]
+bip01_pelvis             = 1, 0.1
+bip01_spine              = 1, 0.1
+bip01_spine1             = 1, 0.1
+bip01_spine2             = 1, 0.1
+bip01_l_clavicle         = 1, 0.1
+bip01_l_upperarm         = 1, 0.1
+bip01_l_forearm          = 1, 0.1
+bip01_l_hand             = 1, 0.1
+bip01_r_clavicle         = 1, 0.1
+bip01_r_upperarm         = 1, 0.1
+bip01_r_forearm          = 1, 0.1
+bip01_r_hand             = 1, 0.1
+bip01_l_thigh            = 1, 0.1
+bip01_l_calf             = 1, 0.1
+bip01_l_foot             = 1, 0.1
+bip01_r_thigh            = 1, 0.1
+bip01_r_calf             = 1, 0.1
+bip01_r_foot             = 1, 0.1
+
+[body_damage_rzc_018]
+bip01_pelvis             = 1, 0.18
+bip01_spine              = 1, 0.18
+bip01_spine1             = 1, 0.18
+bip01_spine2             = 1, 0.18
+bip01_l_clavicle         = 1, 0.18
+bip01_l_upperarm         = 1, 0.18
+bip01_l_forearm          = 1, 0.18
+bip01_l_hand             = 1, 0.18
+bip01_r_clavicle         = 1, 0.18
+bip01_r_upperarm         = 1, 0.18
+bip01_r_forearm          = 1, 0.18
+bip01_r_hand             = 1, 0.18
+bip01_l_thigh            = 1, 0.18
+bip01_l_calf             = 1, 0.18
+bip01_l_foot             = 1, 0.18
+bip01_r_thigh            = 1, 0.18
+bip01_r_calf             = 1, 0.18
+bip01_r_foot             = 1, 0.18
+
+[body_damage_rzc_021]
+bip01_pelvis             = 1, 0.21
+bip01_spine              = 1, 0.21
+bip01_spine1             = 1, 0.21
+bip01_spine2             = 1, 0.21
+bip01_l_clavicle         = 1, 0.21
+bip01_l_upperarm         = 1, 0.21
+bip01_l_forearm          = 1, 0.21
+bip01_l_hand             = 1, 0.21
+bip01_r_clavicle         = 1, 0.21
+bip01_r_upperarm         = 1, 0.21
+bip01_r_forearm          = 1, 0.21
+bip01_r_hand             = 1, 0.21
+bip01_l_thigh            = 1, 0.21
+bip01_l_calf             = 1, 0.21
+bip01_l_foot             = 1, 0.21
+bip01_r_thigh            = 1, 0.21
+bip01_r_calf             = 1, 0.21
+bip01_r_foot             = 1, 0.21
+
+[body_damage_rzc_040]
+bip01_pelvis             = 1, 0.4
+bip01_spine              = 1, 0.4
+bip01_spine1             = 1, 0.4
+bip01_spine2             = 1, 0.4
+bip01_l_clavicle         = 1, 0.4
+bip01_l_upperarm         = 1, 0.4
+bip01_l_forearm          = 1, 0.4
+bip01_l_hand             = 1, 0.4
+bip01_r_clavicle         = 1, 0.4
+bip01_r_upperarm         = 1, 0.4
+bip01_r_forearm          = 1, 0.4
+bip01_r_hand             = 1, 0.4
+bip01_l_thigh            = 1, 0.4
+bip01_l_calf             = 1, 0.4
+bip01_l_foot             = 1, 0.4
+bip01_r_thigh            = 1, 0.4
+bip01_r_calf             = 1, 0.4
+bip01_r_foot             = 1, 0.4
+
+[body_damage_rzc_044]
+bip01_pelvis             = 1, 0.44
+bip01_spine              = 1, 0.44
+bip01_spine1             = 1, 0.44
+bip01_spine2             = 1, 0.44
+bip01_l_clavicle         = 1, 0.44
+bip01_l_upperarm         = 1, 0.44
+bip01_l_forearm          = 1, 0.44
+bip01_l_hand             = 1, 0.44
+bip01_r_clavicle         = 1, 0.44
+bip01_r_upperarm         = 1, 0.44
+bip01_r_forearm          = 1, 0.44
+bip01_r_hand             = 1, 0.44
+bip01_l_thigh            = 1, 0.44
+bip01_l_calf             = 1, 0.44
+bip01_l_foot             = 1, 0.44
+bip01_r_thigh            = 1, 0.44
+bip01_r_calf             = 1, 0.44
+bip01_r_foot             = 1, 0.44
+
+[actor_armor_rzc_007_h00]:body_damage_rzc_007, head_damage_00
+ap_scale = 0.01
+
+[actor_armor_rzc_010_h00]:body_damage_rzc_010, head_damage_00
+ap_scale = 0.01
+
+[actor_armor_rzc_018_h00]:body_damage_rzc_018, head_damage_00
+ap_scale = 0.01
+
+[actor_armor_rzc_021_h00]:body_damage_rzc_021, head_damage_00
+ap_scale = 0.01
+
+[actor_armor_rzc_040_h00]:body_damage_rzc_040, head_damage_00
+ap_scale = 0.01
+
+[actor_armor_rzc_044_h00]:body_damage_rzc_044, head_damage_00
+ap_scale = 0.01
+
+; ---- Trilogie
+[body_damage_rzt_008]
+bip01_pelvis             = 1, 0.08
+bip01_spine              = 1, 0.08
+bip01_spine1             = 1, 0.08
+bip01_spine2             = 1, 0.08
+bip01_l_clavicle         = 1, 0.08
+bip01_l_upperarm         = 1, 0.08
+bip01_l_forearm          = 1, 0.08
+bip01_l_hand             = 1, 0.016
+bip01_r_clavicle         = 1, 0.08
+bip01_r_upperarm         = 1, 0.08
+bip01_r_forearm          = 1, 0.08
+bip01_r_hand             = 1, 0.016
+bip01_l_thigh            = 1, 0.08
+bip01_l_calf             = 1, 0.08
+bip01_l_foot             = 1, 0.016
+bip01_r_thigh            = 1, 0.08
+bip01_r_calf             = 1, 0.08
+bip01_r_foot             = 1, 0.016
+
+[body_damage_rzt_010]
+bip01_pelvis             = 1, 0.1
+bip01_spine              = 1, 0.1
+bip01_spine1             = 1, 0.1
+bip01_spine2             = 1, 0.1
+bip01_l_clavicle         = 1, 0.1
+bip01_l_upperarm         = 1, 0.1
+bip01_l_forearm          = 1, 0.1
+bip01_l_hand             = 1, 0.02
+bip01_r_clavicle         = 1, 0.1
+bip01_r_upperarm         = 1, 0.1
+bip01_r_forearm          = 1, 0.1
+bip01_r_hand             = 1, 0.02
+bip01_l_thigh            = 1, 0.1
+bip01_l_calf             = 1, 0.1
+bip01_l_foot             = 1, 0.02
+bip01_r_thigh            = 1, 0.1
+bip01_r_calf             = 1, 0.1
+bip01_r_foot             = 1, 0.02
+
+[body_damage_rzt_011]
+bip01_pelvis             = 1, 0.11
+bip01_spine              = 1, 0.11
+bip01_spine1             = 1, 0.11
+bip01_spine2             = 1, 0.11
+bip01_l_clavicle         = 1, 0.11
+bip01_l_upperarm         = 1, 0.11
+bip01_l_forearm          = 1, 0.11
+bip01_l_hand             = 1, 0.022
+bip01_r_clavicle         = 1, 0.11
+bip01_r_upperarm         = 1, 0.11
+bip01_r_forearm          = 1, 0.11
+bip01_r_hand             = 1, 0.022
+bip01_l_thigh            = 1, 0.11
+bip01_l_calf             = 1, 0.11
+bip01_l_foot             = 1, 0.022
+bip01_r_thigh            = 1, 0.11
+bip01_r_calf             = 1, 0.11
+bip01_r_foot             = 1, 0.022
+
+[body_damage_rzt_012]
+bip01_pelvis             = 1, 0.12
+bip01_spine              = 1, 0.12
+bip01_spine1             = 1, 0.12
+bip01_spine2             = 1, 0.12
+bip01_l_clavicle         = 1, 0.12
+bip01_l_upperarm         = 1, 0.12
+bip01_l_forearm          = 1, 0.12
+bip01_l_hand             = 1, 0.024
+bip01_r_clavicle         = 1, 0.12
+bip01_r_upperarm         = 1, 0.12
+bip01_r_forearm          = 1, 0.12
+bip01_r_hand             = 1, 0.024
+bip01_l_thigh            = 1, 0.12
+bip01_l_calf             = 1, 0.12
+bip01_l_foot             = 1, 0.024
+bip01_r_thigh            = 1, 0.12
+bip01_r_calf             = 1, 0.12
+bip01_r_foot             = 1, 0.024
+
+[body_damage_rzt_013]
+bip01_pelvis             = 1, 0.13
+bip01_spine              = 1, 0.13
+bip01_spine1             = 1, 0.13
+bip01_spine2             = 1, 0.13
+bip01_l_clavicle         = 1, 0.13
+bip01_l_upperarm         = 1, 0.13
+bip01_l_forearm          = 1, 0.13
+bip01_l_hand             = 1, 0.026
+bip01_r_clavicle         = 1, 0.13
+bip01_r_upperarm         = 1, 0.13
+bip01_r_forearm          = 1, 0.13
+bip01_r_hand             = 1, 0.026
+bip01_l_thigh            = 1, 0.13
+bip01_l_calf             = 1, 0.13
+bip01_l_foot             = 1, 0.026
+bip01_r_thigh            = 1, 0.13
+bip01_r_calf             = 1, 0.13
+bip01_r_foot             = 1, 0.026
+
+[body_damage_rzt_014]
+bip01_pelvis             = 1, 0.14
+bip01_spine              = 1, 0.14
+bip01_spine1             = 1, 0.14
+bip01_spine2             = 1, 0.14
+bip01_l_clavicle         = 1, 0.14
+bip01_l_upperarm         = 1, 0.14
+bip01_l_forearm          = 1, 0.14
+bip01_l_hand             = 1, 0.028
+bip01_r_clavicle         = 1, 0.14
+bip01_r_upperarm         = 1, 0.14
+bip01_r_forearm          = 1, 0.14
+bip01_r_hand             = 1, 0.028
+bip01_l_thigh            = 1, 0.14
+bip01_l_calf             = 1, 0.14
+bip01_l_foot             = 1, 0.028
+bip01_r_thigh            = 1, 0.14
+bip01_r_calf             = 1, 0.14
+bip01_r_foot             = 1, 0.028
+
+[body_damage_rzt_015]
+bip01_pelvis             = 1, 0.15
+bip01_spine              = 1, 0.15
+bip01_spine1             = 1, 0.15
+bip01_spine2             = 1, 0.15
+bip01_l_clavicle         = 1, 0.15
+bip01_l_upperarm         = 1, 0.15
+bip01_l_forearm          = 1, 0.15
+bip01_l_hand             = 1, 0.03
+bip01_r_clavicle         = 1, 0.15
+bip01_r_upperarm         = 1, 0.15
+bip01_r_forearm          = 1, 0.15
+bip01_r_hand             = 1, 0.03
+bip01_l_thigh            = 1, 0.15
+bip01_l_calf             = 1, 0.15
+bip01_l_foot             = 1, 0.03
+bip01_r_thigh            = 1, 0.15
+bip01_r_calf             = 1, 0.15
+bip01_r_foot             = 1, 0.03
+
+[body_damage_rzt_018]
+bip01_pelvis             = 1, 0.18
+bip01_spine              = 1, 0.18
+bip01_spine1             = 1, 0.18
+bip01_spine2             = 1, 0.18
+bip01_l_clavicle         = 1, 0.18
+bip01_l_upperarm         = 1, 0.18
+bip01_l_forearm          = 1, 0.18
+bip01_l_hand             = 1, 0.036
+bip01_r_clavicle         = 1, 0.18
+bip01_r_upperarm         = 1, 0.18
+bip01_r_forearm          = 1, 0.18
+bip01_r_hand             = 1, 0.036
+bip01_l_thigh            = 1, 0.18
+bip01_l_calf             = 1, 0.18
+bip01_l_foot             = 1, 0.036
+bip01_r_thigh            = 1, 0.18
+bip01_r_calf             = 1, 0.18
+bip01_r_foot             = 1, 0.036
+
+[body_damage_rzt_019]
+bip01_pelvis             = 1, 0.19
+bip01_spine              = 1, 0.19
+bip01_spine1             = 1, 0.19
+bip01_spine2             = 1, 0.19
+bip01_l_clavicle         = 1, 0.19
+bip01_l_upperarm         = 1, 0.19
+bip01_l_forearm          = 1, 0.19
+bip01_l_hand             = 1, 0.038
+bip01_r_clavicle         = 1, 0.19
+bip01_r_upperarm         = 1, 0.19
+bip01_r_forearm          = 1, 0.19
+bip01_r_hand             = 1, 0.038
+bip01_l_thigh            = 1, 0.19
+bip01_l_calf             = 1, 0.19
+bip01_l_foot             = 1, 0.038
+bip01_r_thigh            = 1, 0.19
+bip01_r_calf             = 1, 0.19
+bip01_r_foot             = 1, 0.038
+
+[body_damage_rzt_020]
+bip01_pelvis             = 1, 0.2
+bip01_spine              = 1, 0.2
+bip01_spine1             = 1, 0.2
+bip01_spine2             = 1, 0.2
+bip01_l_clavicle         = 1, 0.2
+bip01_l_upperarm         = 1, 0.2
+bip01_l_forearm          = 1, 0.2
+bip01_l_hand             = 1, 0.04
+bip01_r_clavicle         = 1, 0.2
+bip01_r_upperarm         = 1, 0.2
+bip01_r_forearm          = 1, 0.2
+bip01_r_hand             = 1, 0.04
+bip01_l_thigh            = 1, 0.2
+bip01_l_calf             = 1, 0.2
+bip01_l_foot             = 1, 0.04
+bip01_r_thigh            = 1, 0.2
+bip01_r_calf             = 1, 0.2
+bip01_r_foot             = 1, 0.04
+
+[body_damage_rzt_022]
+bip01_pelvis             = 1, 0.22
+bip01_spine              = 1, 0.22
+bip01_spine1             = 1, 0.22
+bip01_spine2             = 1, 0.22
+bip01_l_clavicle         = 1, 0.22
+bip01_l_upperarm         = 1, 0.22
+bip01_l_forearm          = 1, 0.22
+bip01_l_hand             = 1, 0.044
+bip01_r_clavicle         = 1, 0.22
+bip01_r_upperarm         = 1, 0.22
+bip01_r_forearm          = 1, 0.22
+bip01_r_hand             = 1, 0.044
+bip01_l_thigh            = 1, 0.22
+bip01_l_calf             = 1, 0.22
+bip01_l_foot             = 1, 0.044
+bip01_r_thigh            = 1, 0.22
+bip01_r_calf             = 1, 0.22
+bip01_r_foot             = 1, 0.044
+
+[body_damage_rzt_023]
+bip01_pelvis             = 1, 0.23
+bip01_spine              = 1, 0.23
+bip01_spine1             = 1, 0.23
+bip01_spine2             = 1, 0.23
+bip01_l_clavicle         = 1, 0.23
+bip01_l_upperarm         = 1, 0.23
+bip01_l_forearm          = 1, 0.23
+bip01_l_hand             = 1, 0.046
+bip01_r_clavicle         = 1, 0.23
+bip01_r_upperarm         = 1, 0.23
+bip01_r_forearm          = 1, 0.23
+bip01_r_hand             = 1, 0.046
+bip01_l_thigh            = 1, 0.23
+bip01_l_calf             = 1, 0.23
+bip01_l_foot             = 1, 0.046
+bip01_r_thigh            = 1, 0.23
+bip01_r_calf             = 1, 0.23
+bip01_r_foot             = 1, 0.046
+
+[body_damage_rzt_025]
+bip01_pelvis             = 1, 0.25
+bip01_spine              = 1, 0.25
+bip01_spine1             = 1, 0.25
+bip01_spine2             = 1, 0.25
+bip01_l_clavicle         = 1, 0.25
+bip01_l_upperarm         = 1, 0.25
+bip01_l_forearm          = 1, 0.25
+bip01_l_hand             = 1, 0.05
+bip01_r_clavicle         = 1, 0.25
+bip01_r_upperarm         = 1, 0.25
+bip01_r_forearm          = 1, 0.25
+bip01_r_hand             = 1, 0.05
+bip01_l_thigh            = 1, 0.25
+bip01_l_calf             = 1, 0.25
+bip01_l_foot             = 1, 0.05
+bip01_r_thigh            = 1, 0.25
+bip01_r_calf             = 1, 0.25
+bip01_r_foot             = 1, 0.05
+
+[body_damage_rzt_026]
+bip01_pelvis             = 1, 0.26
+bip01_spine              = 1, 0.26
+bip01_spine1             = 1, 0.26
+bip01_spine2             = 1, 0.26
+bip01_l_clavicle         = 1, 0.26
+bip01_l_upperarm         = 1, 0.26
+bip01_l_forearm          = 1, 0.26
+bip01_l_hand             = 1, 0.052
+bip01_r_clavicle         = 1, 0.26
+bip01_r_upperarm         = 1, 0.26
+bip01_r_forearm          = 1, 0.26
+bip01_r_hand             = 1, 0.052
+bip01_l_thigh            = 1, 0.26
+bip01_l_calf             = 1, 0.26
+bip01_l_foot             = 1, 0.052
+bip01_r_thigh            = 1, 0.26
+bip01_r_calf             = 1, 0.26
+bip01_r_foot             = 1, 0.052
+
+[body_damage_rzt_028]
+bip01_pelvis             = 1, 0.28
+bip01_spine              = 1, 0.28
+bip01_spine1             = 1, 0.28
+bip01_spine2             = 1, 0.28
+bip01_l_clavicle         = 1, 0.28
+bip01_l_upperarm         = 1, 0.28
+bip01_l_forearm          = 1, 0.28
+bip01_l_hand             = 1, 0.056
+bip01_r_clavicle         = 1, 0.28
+bip01_r_upperarm         = 1, 0.28
+bip01_r_forearm          = 1, 0.28
+bip01_r_hand             = 1, 0.056
+bip01_l_thigh            = 1, 0.28
+bip01_l_calf             = 1, 0.28
+bip01_l_foot             = 1, 0.056
+bip01_r_thigh            = 1, 0.28
+bip01_r_calf             = 1, 0.28
+bip01_r_foot             = 1, 0.056
+
+[body_damage_rzt_030]
+bip01_pelvis             = 1, 0.3
+bip01_spine              = 1, 0.3
+bip01_spine1             = 1, 0.3
+bip01_spine2             = 1, 0.3
+bip01_l_clavicle         = 1, 0.3
+bip01_l_upperarm         = 1, 0.3
+bip01_l_forearm          = 1, 0.3
+bip01_l_hand             = 1, 0.06
+bip01_r_clavicle         = 1, 0.3
+bip01_r_upperarm         = 1, 0.3
+bip01_r_forearm          = 1, 0.3
+bip01_r_hand             = 1, 0.06
+bip01_l_thigh            = 1, 0.3
+bip01_l_calf             = 1, 0.3
+bip01_l_foot             = 1, 0.06
+bip01_r_thigh            = 1, 0.3
+bip01_r_calf             = 1, 0.3
+bip01_r_foot             = 1, 0.06
+
+[body_damage_rzt_031]
+bip01_pelvis             = 1, 0.31
+bip01_spine              = 1, 0.31
+bip01_spine1             = 1, 0.31
+bip01_spine2             = 1, 0.31
+bip01_l_clavicle         = 1, 0.31
+bip01_l_upperarm         = 1, 0.31
+bip01_l_forearm          = 1, 0.31
+bip01_l_hand             = 1, 0.062
+bip01_r_clavicle         = 1, 0.31
+bip01_r_upperarm         = 1, 0.31
+bip01_r_forearm          = 1, 0.31
+bip01_r_hand             = 1, 0.062
+bip01_l_thigh            = 1, 0.31
+bip01_l_calf             = 1, 0.31
+bip01_l_foot             = 1, 0.062
+bip01_r_thigh            = 1, 0.31
+bip01_r_calf             = 1, 0.31
+bip01_r_foot             = 1, 0.062
+
+[body_damage_rzt_035]
+bip01_pelvis             = 1, 0.35
+bip01_spine              = 1, 0.35
+bip01_spine1             = 1, 0.35
+bip01_spine2             = 1, 0.35
+bip01_l_clavicle         = 1, 0.35
+bip01_l_upperarm         = 1, 0.35
+bip01_l_forearm          = 1, 0.35
+bip01_l_hand             = 1, 0.07
+bip01_r_clavicle         = 1, 0.35
+bip01_r_upperarm         = 1, 0.35
+bip01_r_forearm          = 1, 0.35
+bip01_r_hand             = 1, 0.07
+bip01_l_thigh            = 1, 0.35
+bip01_l_calf             = 1, 0.35
+bip01_l_foot             = 1, 0.07
+bip01_r_thigh            = 1, 0.35
+bip01_r_calf             = 1, 0.35
+bip01_r_foot             = 1, 0.07
+
+[body_damage_rzt_036]
+bip01_pelvis             = 1, 0.36
+bip01_spine              = 1, 0.36
+bip01_spine1             = 1, 0.36
+bip01_spine2             = 1, 0.36
+bip01_l_clavicle         = 1, 0.36
+bip01_l_upperarm         = 1, 0.36
+bip01_l_forearm          = 1, 0.36
+bip01_l_hand             = 1, 0.072
+bip01_r_clavicle         = 1, 0.36
+bip01_r_upperarm         = 1, 0.36
+bip01_r_forearm          = 1, 0.36
+bip01_r_hand             = 1, 0.072
+bip01_l_thigh            = 1, 0.36
+bip01_l_calf             = 1, 0.36
+bip01_l_foot             = 1, 0.072
+bip01_r_thigh            = 1, 0.36
+bip01_r_calf             = 1, 0.36
+bip01_r_foot             = 1, 0.072
+
+[body_damage_rzt_038]
+bip01_pelvis             = 1, 0.38
+bip01_spine              = 1, 0.38
+bip01_spine1             = 1, 0.38
+bip01_spine2             = 1, 0.38
+bip01_l_clavicle         = 1, 0.38
+bip01_l_upperarm         = 1, 0.38
+bip01_l_forearm          = 1, 0.38
+bip01_l_hand             = 1, 0.076
+bip01_r_clavicle         = 1, 0.38
+bip01_r_upperarm         = 1, 0.38
+bip01_r_forearm          = 1, 0.38
+bip01_r_hand             = 1, 0.076
+bip01_l_thigh            = 1, 0.38
+bip01_l_calf             = 1, 0.38
+bip01_l_foot             = 1, 0.076
+bip01_r_thigh            = 1, 0.38
+bip01_r_calf             = 1, 0.38
+bip01_r_foot             = 1, 0.076
+
+[body_damage_rzt_039]
+bip01_pelvis             = 1, 0.39
+bip01_spine              = 1, 0.39
+bip01_spine1             = 1, 0.39
+bip01_spine2             = 1, 0.39
+bip01_l_clavicle         = 1, 0.39
+bip01_l_upperarm         = 1, 0.39
+bip01_l_forearm          = 1, 0.39
+bip01_l_hand             = 1, 0.078
+bip01_r_clavicle         = 1, 0.39
+bip01_r_upperarm         = 1, 0.39
+bip01_r_forearm          = 1, 0.39
+bip01_r_hand             = 1, 0.078
+bip01_l_thigh            = 1, 0.39
+bip01_l_calf             = 1, 0.39
+bip01_l_foot             = 1, 0.078
+bip01_r_thigh            = 1, 0.39
+bip01_r_calf             = 1, 0.39
+bip01_r_foot             = 1, 0.078
+
+[body_damage_rzt_041]
+bip01_pelvis             = 1, 0.41
+bip01_spine              = 1, 0.41
+bip01_spine1             = 1, 0.41
+bip01_spine2             = 1, 0.41
+bip01_l_clavicle         = 1, 0.41
+bip01_l_upperarm         = 1, 0.41
+bip01_l_forearm          = 1, 0.41
+bip01_l_hand             = 1, 0.082
+bip01_r_clavicle         = 1, 0.41
+bip01_r_upperarm         = 1, 0.41
+bip01_r_forearm          = 1, 0.41
+bip01_r_hand             = 1, 0.082
+bip01_l_thigh            = 1, 0.41
+bip01_l_calf             = 1, 0.41
+bip01_l_foot             = 1, 0.082
+bip01_r_thigh            = 1, 0.41
+bip01_r_calf             = 1, 0.41
+bip01_r_foot             = 1, 0.082
+
+[body_damage_rzt_042]
+bip01_pelvis             = 1, 0.42
+bip01_spine              = 1, 0.42
+bip01_spine1             = 1, 0.42
+bip01_spine2             = 1, 0.42
+bip01_l_clavicle         = 1, 0.42
+bip01_l_upperarm         = 1, 0.42
+bip01_l_forearm          = 1, 0.42
+bip01_l_hand             = 1, 0.084
+bip01_r_clavicle         = 1, 0.42
+bip01_r_upperarm         = 1, 0.42
+bip01_r_forearm          = 1, 0.42
+bip01_r_hand             = 1, 0.084
+bip01_l_thigh            = 1, 0.42
+bip01_l_calf             = 1, 0.42
+bip01_l_foot             = 1, 0.084
+bip01_r_thigh            = 1, 0.42
+bip01_r_calf             = 1, 0.42
+bip01_r_foot             = 1, 0.084
+
+[body_damage_rzt_045]
+bip01_pelvis             = 1, 0.45
+bip01_spine              = 1, 0.45
+bip01_spine1             = 1, 0.45
+bip01_spine2             = 1, 0.45
+bip01_l_clavicle         = 1, 0.45
+bip01_l_upperarm         = 1, 0.45
+bip01_l_forearm          = 1, 0.45
+bip01_l_hand             = 1, 0.09
+bip01_r_clavicle         = 1, 0.45
+bip01_r_upperarm         = 1, 0.45
+bip01_r_forearm          = 1, 0.45
+bip01_r_hand             = 1, 0.09
+bip01_l_thigh            = 1, 0.45
+bip01_l_calf             = 1, 0.45
+bip01_l_foot             = 1, 0.09
+bip01_r_thigh            = 1, 0.45
+bip01_r_calf             = 1, 0.45
+bip01_r_foot             = 1, 0.09
+
+[actor_armor_rzt_008_h00]:body_damage_rzt_008, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_010_h00]:body_damage_rzt_010, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_011_h00]:body_damage_rzt_011, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_012_h00]:body_damage_rzt_012, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_013_h00]:body_damage_rzt_013, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_014_h00]:body_damage_rzt_014, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_015_h00]:body_damage_rzt_015, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_018_h00]:body_damage_rzt_018, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_019_h00]:body_damage_rzt_019, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_020_h00]:body_damage_rzt_020, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_022_h00]:body_damage_rzt_022, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_023_h00]:body_damage_rzt_023, head_damage_00
+ap_scale = 1.0
+
+[actor_armor_rzt_025_h00]:body_damage_rzt_025, head_damage_00
+ap_scale = 0.875
+
+[actor_armor_rzt_026_h00]:body_damage_rzt_026, head_damage_00
+ap_scale = 0.75
+
+[actor_armor_rzt_028_h00]:body_damage_rzt_028, head_damage_00
+ap_scale = 0.75
+
+[actor_armor_rzt_030_h00]:body_damage_rzt_030, head_damage_00
+ap_scale = 0.75
+
+[actor_armor_rzt_031_h00]:body_damage_rzt_031, head_damage_00
+ap_scale = 0.688
+
+[actor_armor_rzt_035_h00]:body_damage_rzt_035, head_damage_00
+ap_scale = 0.688
+
+[actor_armor_rzt_036_h00]:body_damage_rzt_036, head_damage_00
+ap_scale = 0.562
+
+[actor_armor_rzt_038_h00]:body_damage_rzt_038, head_damage_00
+ap_scale = 0.525
+
+[actor_armor_rzt_039_h00]:body_damage_rzt_039, head_damage_00
+ap_scale = 0.562
+
+[actor_armor_rzt_041_h00]:body_damage_rzt_041, head_damage_00
+ap_scale = 0.45
+
+[actor_armor_rzt_042_h00]:body_damage_rzt_042, head_damage_00
+ap_scale = 0.525
+
+[actor_armor_rzt_045_h00]:body_damage_rzt_045, head_damage_00
+ap_scale = 0.45
+
+; ---- Hardcore
+[body_damage_rzh_008]
+bip01_pelvis             = 1, 0.08
+bip01_spine              = 1, 0.08
+bip01_spine1             = 1, 0.08
+bip01_spine2             = 1, 0.08
+bip01_l_clavicle         = 1, 0.08
+bip01_l_upperarm         = 1, 0.08
+bip01_l_forearm          = 1, 0.08
+bip01_l_hand             = 1, 0.016
+bip01_r_clavicle         = 1, 0.08
+bip01_r_upperarm         = 1, 0.08
+bip01_r_forearm          = 1, 0.08
+bip01_r_hand             = 1, 0.016
+bip01_l_thigh            = 1, 0.08
+bip01_l_calf             = 1, 0.08
+bip01_l_foot             = 1, 0.016
+bip01_r_thigh            = 1, 0.08
+bip01_r_calf             = 1, 0.08
+bip01_r_foot             = 1, 0.016
+
+[body_damage_rzh_010]
+bip01_pelvis             = 1, 0.1
+bip01_spine              = 1, 0.1
+bip01_spine1             = 1, 0.1
+bip01_spine2             = 1, 0.1
+bip01_l_clavicle         = 1, 0.1
+bip01_l_upperarm         = 1, 0.1
+bip01_l_forearm          = 1, 0.1
+bip01_l_hand             = 1, 0.02
+bip01_r_clavicle         = 1, 0.1
+bip01_r_upperarm         = 1, 0.1
+bip01_r_forearm          = 1, 0.1
+bip01_r_hand             = 1, 0.02
+bip01_l_thigh            = 1, 0.1
+bip01_l_calf             = 1, 0.1
+bip01_l_foot             = 1, 0.02
+bip01_r_thigh            = 1, 0.1
+bip01_r_calf             = 1, 0.1
+bip01_r_foot             = 1, 0.02
+
+[body_damage_rzh_011]
+bip01_pelvis             = 1, 0.11
+bip01_spine              = 1, 0.11
+bip01_spine1             = 1, 0.11
+bip01_spine2             = 1, 0.11
+bip01_l_clavicle         = 1, 0.11
+bip01_l_upperarm         = 1, 0.11
+bip01_l_forearm          = 1, 0.11
+bip01_l_hand             = 1, 0.022
+bip01_r_clavicle         = 1, 0.11
+bip01_r_upperarm         = 1, 0.11
+bip01_r_forearm          = 1, 0.11
+bip01_r_hand             = 1, 0.022
+bip01_l_thigh            = 1, 0.11
+bip01_l_calf             = 1, 0.11
+bip01_l_foot             = 1, 0.022
+bip01_r_thigh            = 1, 0.11
+bip01_r_calf             = 1, 0.11
+bip01_r_foot             = 1, 0.022
+
+[body_damage_rzh_012]
+bip01_pelvis             = 1, 0.12
+bip01_spine              = 1, 0.12
+bip01_spine1             = 1, 0.12
+bip01_spine2             = 1, 0.12
+bip01_l_clavicle         = 1, 0.12
+bip01_l_upperarm         = 1, 0.12
+bip01_l_forearm          = 1, 0.12
+bip01_l_hand             = 1, 0.024
+bip01_r_clavicle         = 1, 0.12
+bip01_r_upperarm         = 1, 0.12
+bip01_r_forearm          = 1, 0.12
+bip01_r_hand             = 1, 0.024
+bip01_l_thigh            = 1, 0.12
+bip01_l_calf             = 1, 0.12
+bip01_l_foot             = 1, 0.024
+bip01_r_thigh            = 1, 0.12
+bip01_r_calf             = 1, 0.12
+bip01_r_foot             = 1, 0.024
+
+[body_damage_rzh_013]
+bip01_pelvis             = 1, 0.13
+bip01_spine              = 1, 0.13
+bip01_spine1             = 1, 0.13
+bip01_spine2             = 1, 0.13
+bip01_l_clavicle         = 1, 0.13
+bip01_l_upperarm         = 1, 0.13
+bip01_l_forearm          = 1, 0.13
+bip01_l_hand             = 1, 0.026
+bip01_r_clavicle         = 1, 0.13
+bip01_r_upperarm         = 1, 0.13
+bip01_r_forearm          = 1, 0.13
+bip01_r_hand             = 1, 0.026
+bip01_l_thigh            = 1, 0.13
+bip01_l_calf             = 1, 0.13
+bip01_l_foot             = 1, 0.026
+bip01_r_thigh            = 1, 0.13
+bip01_r_calf             = 1, 0.13
+bip01_r_foot             = 1, 0.026
+
+[body_damage_rzh_014]
+bip01_pelvis             = 1, 0.14
+bip01_spine              = 1, 0.14
+bip01_spine1             = 1, 0.14
+bip01_spine2             = 1, 0.14
+bip01_l_clavicle         = 1, 0.14
+bip01_l_upperarm         = 1, 0.14
+bip01_l_forearm          = 1, 0.14
+bip01_l_hand             = 1, 0.028
+bip01_r_clavicle         = 1, 0.14
+bip01_r_upperarm         = 1, 0.14
+bip01_r_forearm          = 1, 0.14
+bip01_r_hand             = 1, 0.028
+bip01_l_thigh            = 1, 0.14
+bip01_l_calf             = 1, 0.14
+bip01_l_foot             = 1, 0.028
+bip01_r_thigh            = 1, 0.14
+bip01_r_calf             = 1, 0.14
+bip01_r_foot             = 1, 0.028
+
+[body_damage_rzh_015]
+bip01_pelvis             = 1, 0.15
+bip01_spine              = 1, 0.15
+bip01_spine1             = 1, 0.15
+bip01_spine2             = 1, 0.15
+bip01_l_clavicle         = 1, 0.15
+bip01_l_upperarm         = 1, 0.15
+bip01_l_forearm          = 1, 0.15
+bip01_l_hand             = 1, 0.03
+bip01_r_clavicle         = 1, 0.15
+bip01_r_upperarm         = 1, 0.15
+bip01_r_forearm          = 1, 0.15
+bip01_r_hand             = 1, 0.03
+bip01_l_thigh            = 1, 0.15
+bip01_l_calf             = 1, 0.15
+bip01_l_foot             = 1, 0.03
+bip01_r_thigh            = 1, 0.15
+bip01_r_calf             = 1, 0.15
+bip01_r_foot             = 1, 0.03
+
+[body_damage_rzh_018]
+bip01_pelvis             = 1, 0.18
+bip01_spine              = 1, 0.18
+bip01_spine1             = 1, 0.18
+bip01_spine2             = 1, 0.18
+bip01_l_clavicle         = 1, 0.18
+bip01_l_upperarm         = 1, 0.18
+bip01_l_forearm          = 1, 0.18
+bip01_l_hand             = 1, 0.036
+bip01_r_clavicle         = 1, 0.18
+bip01_r_upperarm         = 1, 0.18
+bip01_r_forearm          = 1, 0.18
+bip01_r_hand             = 1, 0.036
+bip01_l_thigh            = 1, 0.18
+bip01_l_calf             = 1, 0.18
+bip01_l_foot             = 1, 0.036
+bip01_r_thigh            = 1, 0.18
+bip01_r_calf             = 1, 0.18
+bip01_r_foot             = 1, 0.036
+
+[body_damage_rzh_019]
+bip01_pelvis             = 1, 0.19
+bip01_spine              = 1, 0.19
+bip01_spine1             = 1, 0.19
+bip01_spine2             = 1, 0.19
+bip01_l_clavicle         = 1, 0.19
+bip01_l_upperarm         = 1, 0.19
+bip01_l_forearm          = 1, 0.19
+bip01_l_hand             = 1, 0.038
+bip01_r_clavicle         = 1, 0.19
+bip01_r_upperarm         = 1, 0.19
+bip01_r_forearm          = 1, 0.19
+bip01_r_hand             = 1, 0.038
+bip01_l_thigh            = 1, 0.19
+bip01_l_calf             = 1, 0.19
+bip01_l_foot             = 1, 0.038
+bip01_r_thigh            = 1, 0.19
+bip01_r_calf             = 1, 0.19
+bip01_r_foot             = 1, 0.038
+
+[body_damage_rzh_020]
+bip01_pelvis             = 1, 0.2
+bip01_spine              = 1, 0.2
+bip01_spine1             = 1, 0.2
+bip01_spine2             = 1, 0.2
+bip01_l_clavicle         = 1, 0.2
+bip01_l_upperarm         = 1, 0.2
+bip01_l_forearm          = 1, 0.2
+bip01_l_hand             = 1, 0.04
+bip01_r_clavicle         = 1, 0.2
+bip01_r_upperarm         = 1, 0.2
+bip01_r_forearm          = 1, 0.2
+bip01_r_hand             = 1, 0.04
+bip01_l_thigh            = 1, 0.2
+bip01_l_calf             = 1, 0.2
+bip01_l_foot             = 1, 0.04
+bip01_r_thigh            = 1, 0.2
+bip01_r_calf             = 1, 0.2
+bip01_r_foot             = 1, 0.04
+
+[body_damage_rzh_022]
+bip01_pelvis             = 1, 0.22
+bip01_spine              = 1, 0.22
+bip01_spine1             = 1, 0.22
+bip01_spine2             = 1, 0.22
+bip01_l_clavicle         = 1, 0.22
+bip01_l_upperarm         = 1, 0.22
+bip01_l_forearm          = 1, 0.22
+bip01_l_hand             = 1, 0.044
+bip01_r_clavicle         = 1, 0.22
+bip01_r_upperarm         = 1, 0.22
+bip01_r_forearm          = 1, 0.22
+bip01_r_hand             = 1, 0.044
+bip01_l_thigh            = 1, 0.22
+bip01_l_calf             = 1, 0.22
+bip01_l_foot             = 1, 0.044
+bip01_r_thigh            = 1, 0.22
+bip01_r_calf             = 1, 0.22
+bip01_r_foot             = 1, 0.044
+
+[body_damage_rzh_023]
+bip01_pelvis             = 1, 0.23
+bip01_spine              = 1, 0.23
+bip01_spine1             = 1, 0.23
+bip01_spine2             = 1, 0.23
+bip01_l_clavicle         = 1, 0.23
+bip01_l_upperarm         = 1, 0.23
+bip01_l_forearm          = 1, 0.23
+bip01_l_hand             = 1, 0.046
+bip01_r_clavicle         = 1, 0.23
+bip01_r_upperarm         = 1, 0.23
+bip01_r_forearm          = 1, 0.23
+bip01_r_hand             = 1, 0.046
+bip01_l_thigh            = 1, 0.23
+bip01_l_calf             = 1, 0.23
+bip01_l_foot             = 1, 0.046
+bip01_r_thigh            = 1, 0.23
+bip01_r_calf             = 1, 0.23
+bip01_r_foot             = 1, 0.046
+
+[body_damage_rzh_025]
+bip01_pelvis             = 1, 0.25
+bip01_spine              = 1, 0.25
+bip01_spine1             = 1, 0.25
+bip01_spine2             = 1, 0.25
+bip01_l_clavicle         = 1, 0.25
+bip01_l_upperarm         = 1, 0.25
+bip01_l_forearm          = 1, 0.25
+bip01_l_hand             = 1, 0.05
+bip01_r_clavicle         = 1, 0.25
+bip01_r_upperarm         = 1, 0.25
+bip01_r_forearm          = 1, 0.25
+bip01_r_hand             = 1, 0.05
+bip01_l_thigh            = 1, 0.25
+bip01_l_calf             = 1, 0.25
+bip01_l_foot             = 1, 0.05
+bip01_r_thigh            = 1, 0.25
+bip01_r_calf             = 1, 0.25
+bip01_r_foot             = 1, 0.05
+
+[body_damage_rzh_026]
+bip01_pelvis             = 1, 0.26
+bip01_spine              = 1, 0.26
+bip01_spine1             = 1, 0.26
+bip01_spine2             = 1, 0.26
+bip01_l_clavicle         = 1, 0.26
+bip01_l_upperarm         = 1, 0.26
+bip01_l_forearm          = 1, 0.26
+bip01_l_hand             = 1, 0.052
+bip01_r_clavicle         = 1, 0.26
+bip01_r_upperarm         = 1, 0.26
+bip01_r_forearm          = 1, 0.26
+bip01_r_hand             = 1, 0.052
+bip01_l_thigh            = 1, 0.26
+bip01_l_calf             = 1, 0.26
+bip01_l_foot             = 1, 0.052
+bip01_r_thigh            = 1, 0.26
+bip01_r_calf             = 1, 0.26
+bip01_r_foot             = 1, 0.052
+
+[body_damage_rzh_028]
+bip01_pelvis             = 1, 0.28
+bip01_spine              = 1, 0.28
+bip01_spine1             = 1, 0.28
+bip01_spine2             = 1, 0.28
+bip01_l_clavicle         = 1, 0.28
+bip01_l_upperarm         = 1, 0.28
+bip01_l_forearm          = 1, 0.28
+bip01_l_hand             = 1, 0.056
+bip01_r_clavicle         = 1, 0.28
+bip01_r_upperarm         = 1, 0.28
+bip01_r_forearm          = 1, 0.28
+bip01_r_hand             = 1, 0.056
+bip01_l_thigh            = 1, 0.28
+bip01_l_calf             = 1, 0.28
+bip01_l_foot             = 1, 0.056
+bip01_r_thigh            = 1, 0.28
+bip01_r_calf             = 1, 0.28
+bip01_r_foot             = 1, 0.056
+
+[body_damage_rzh_030]
+bip01_pelvis             = 1, 0.3
+bip01_spine              = 1, 0.3
+bip01_spine1             = 1, 0.3
+bip01_spine2             = 1, 0.3
+bip01_l_clavicle         = 1, 0.3
+bip01_l_upperarm         = 1, 0.3
+bip01_l_forearm          = 1, 0.3
+bip01_l_hand             = 1, 0.06
+bip01_r_clavicle         = 1, 0.3
+bip01_r_upperarm         = 1, 0.3
+bip01_r_forearm          = 1, 0.3
+bip01_r_hand             = 1, 0.06
+bip01_l_thigh            = 1, 0.3
+bip01_l_calf             = 1, 0.3
+bip01_l_foot             = 1, 0.06
+bip01_r_thigh            = 1, 0.3
+bip01_r_calf             = 1, 0.3
+bip01_r_foot             = 1, 0.06
+
+[body_damage_rzh_031]
+bip01_pelvis             = 1, 0.31
+bip01_spine              = 1, 0.31
+bip01_spine1             = 1, 0.31
+bip01_spine2             = 1, 0.31
+bip01_l_clavicle         = 1, 0.31
+bip01_l_upperarm         = 1, 0.31
+bip01_l_forearm          = 1, 0.31
+bip01_l_hand             = 1, 0.062
+bip01_r_clavicle         = 1, 0.31
+bip01_r_upperarm         = 1, 0.31
+bip01_r_forearm          = 1, 0.31
+bip01_r_hand             = 1, 0.062
+bip01_l_thigh            = 1, 0.31
+bip01_l_calf             = 1, 0.31
+bip01_l_foot             = 1, 0.062
+bip01_r_thigh            = 1, 0.31
+bip01_r_calf             = 1, 0.31
+bip01_r_foot             = 1, 0.062
+
+[body_damage_rzh_035]
+bip01_pelvis             = 1, 0.35
+bip01_spine              = 1, 0.35
+bip01_spine1             = 1, 0.35
+bip01_spine2             = 1, 0.35
+bip01_l_clavicle         = 1, 0.35
+bip01_l_upperarm         = 1, 0.35
+bip01_l_forearm          = 1, 0.35
+bip01_l_hand             = 1, 0.07
+bip01_r_clavicle         = 1, 0.35
+bip01_r_upperarm         = 1, 0.35
+bip01_r_forearm          = 1, 0.35
+bip01_r_hand             = 1, 0.07
+bip01_l_thigh            = 1, 0.35
+bip01_l_calf             = 1, 0.35
+bip01_l_foot             = 1, 0.07
+bip01_r_thigh            = 1, 0.35
+bip01_r_calf             = 1, 0.35
+bip01_r_foot             = 1, 0.07
+
+[body_damage_rzh_036]
+bip01_pelvis             = 1, 0.36
+bip01_spine              = 1, 0.36
+bip01_spine1             = 1, 0.36
+bip01_spine2             = 1, 0.36
+bip01_l_clavicle         = 1, 0.36
+bip01_l_upperarm         = 1, 0.36
+bip01_l_forearm          = 1, 0.36
+bip01_l_hand             = 1, 0.072
+bip01_r_clavicle         = 1, 0.36
+bip01_r_upperarm         = 1, 0.36
+bip01_r_forearm          = 1, 0.36
+bip01_r_hand             = 1, 0.072
+bip01_l_thigh            = 1, 0.36
+bip01_l_calf             = 1, 0.36
+bip01_l_foot             = 1, 0.072
+bip01_r_thigh            = 1, 0.36
+bip01_r_calf             = 1, 0.36
+bip01_r_foot             = 1, 0.072
+
+[body_damage_rzh_038]
+bip01_pelvis             = 1, 0.38
+bip01_spine              = 1, 0.38
+bip01_spine1             = 1, 0.38
+bip01_spine2             = 1, 0.38
+bip01_l_clavicle         = 1, 0.38
+bip01_l_upperarm         = 1, 0.38
+bip01_l_forearm          = 1, 0.38
+bip01_l_hand             = 1, 0.076
+bip01_r_clavicle         = 1, 0.38
+bip01_r_upperarm         = 1, 0.38
+bip01_r_forearm          = 1, 0.38
+bip01_r_hand             = 1, 0.076
+bip01_l_thigh            = 1, 0.38
+bip01_l_calf             = 1, 0.38
+bip01_l_foot             = 1, 0.076
+bip01_r_thigh            = 1, 0.38
+bip01_r_calf             = 1, 0.38
+bip01_r_foot             = 1, 0.076
+
+[body_damage_rzh_039]
+bip01_pelvis             = 1, 0.39
+bip01_spine              = 1, 0.39
+bip01_spine1             = 1, 0.39
+bip01_spine2             = 1, 0.39
+bip01_l_clavicle         = 1, 0.39
+bip01_l_upperarm         = 1, 0.39
+bip01_l_forearm          = 1, 0.39
+bip01_l_hand             = 1, 0.078
+bip01_r_clavicle         = 1, 0.39
+bip01_r_upperarm         = 1, 0.39
+bip01_r_forearm          = 1, 0.39
+bip01_r_hand             = 1, 0.078
+bip01_l_thigh            = 1, 0.39
+bip01_l_calf             = 1, 0.39
+bip01_l_foot             = 1, 0.078
+bip01_r_thigh            = 1, 0.39
+bip01_r_calf             = 1, 0.39
+bip01_r_foot             = 1, 0.078
+
+[body_damage_rzh_041]
+bip01_pelvis             = 1, 0.41
+bip01_spine              = 1, 0.41
+bip01_spine1             = 1, 0.41
+bip01_spine2             = 1, 0.41
+bip01_l_clavicle         = 1, 0.41
+bip01_l_upperarm         = 1, 0.41
+bip01_l_forearm          = 1, 0.41
+bip01_l_hand             = 1, 0.082
+bip01_r_clavicle         = 1, 0.41
+bip01_r_upperarm         = 1, 0.41
+bip01_r_forearm          = 1, 0.41
+bip01_r_hand             = 1, 0.082
+bip01_l_thigh            = 1, 0.41
+bip01_l_calf             = 1, 0.41
+bip01_l_foot             = 1, 0.082
+bip01_r_thigh            = 1, 0.41
+bip01_r_calf             = 1, 0.41
+bip01_r_foot             = 1, 0.082
+
+[body_damage_rzh_042]
+bip01_pelvis             = 1, 0.42
+bip01_spine              = 1, 0.42
+bip01_spine1             = 1, 0.42
+bip01_spine2             = 1, 0.42
+bip01_l_clavicle         = 1, 0.42
+bip01_l_upperarm         = 1, 0.42
+bip01_l_forearm          = 1, 0.42
+bip01_l_hand             = 1, 0.084
+bip01_r_clavicle         = 1, 0.42
+bip01_r_upperarm         = 1, 0.42
+bip01_r_forearm          = 1, 0.42
+bip01_r_hand             = 1, 0.084
+bip01_l_thigh            = 1, 0.42
+bip01_l_calf             = 1, 0.42
+bip01_l_foot             = 1, 0.084
+bip01_r_thigh            = 1, 0.42
+bip01_r_calf             = 1, 0.42
+bip01_r_foot             = 1, 0.084
+
+[body_damage_rzh_045]
+bip01_pelvis             = 1, 0.45
+bip01_spine              = 1, 0.45
+bip01_spine1             = 1, 0.45
+bip01_spine2             = 1, 0.45
+bip01_l_clavicle         = 1, 0.45
+bip01_l_upperarm         = 1, 0.45
+bip01_l_forearm          = 1, 0.45
+bip01_l_hand             = 1, 0.09
+bip01_r_clavicle         = 1, 0.45
+bip01_r_upperarm         = 1, 0.45
+bip01_r_forearm          = 1, 0.45
+bip01_r_hand             = 1, 0.09
+bip01_l_thigh            = 1, 0.45
+bip01_l_calf             = 1, 0.45
+bip01_l_foot             = 1, 0.09
+bip01_r_thigh            = 1, 0.45
+bip01_r_calf             = 1, 0.45
+bip01_r_foot             = 1, 0.09
+
+[actor_armor_rzh_008_h00]:body_damage_rzh_008, head_damage_00
+ap_scale = 0.9
+
+[actor_armor_rzh_010_h00]:body_damage_rzh_010, head_damage_00
+ap_scale = 0.9
+
+[actor_armor_rzh_011_h00]:body_damage_rzh_011, head_damage_00
+ap_scale = 0.85
+
+[actor_armor_rzh_012_h00]:body_damage_rzh_012, head_damage_00
+ap_scale = 0.9
+
+[actor_armor_rzh_013_h00]:body_damage_rzh_013, head_damage_00
+ap_scale = 0.85
+
+[actor_armor_rzh_014_h00]:body_damage_rzh_014, head_damage_00
+ap_scale = 0.9
+
+[actor_armor_rzh_015_h00]:body_damage_rzh_015, head_damage_00
+ap_scale = 0.85
+
+[actor_armor_rzh_018_h00]:body_damage_rzh_018, head_damage_00
+ap_scale = 0.8
+
+[actor_armor_rzh_019_h00]:body_damage_rzh_019, head_damage_00
+ap_scale = 0.8
+
+[actor_armor_rzh_020_h00]:body_damage_rzh_020, head_damage_00
+ap_scale = 0.8
+
+[actor_armor_rzh_022_h00]:body_damage_rzh_022, head_damage_00
+ap_scale = 0.8
+
+[actor_armor_rzh_023_h00]:body_damage_rzh_023, head_damage_00
+ap_scale = 0.8
+
+[actor_armor_rzh_025_h00]:body_damage_rzh_025, head_damage_00
+ap_scale = 0.7
+
+[actor_armor_rzh_026_h00]:body_damage_rzh_026, head_damage_00
+ap_scale = 0.6
+
+[actor_armor_rzh_028_h00]:body_damage_rzh_028, head_damage_00
+ap_scale = 0.6
+
+[actor_armor_rzh_030_h00]:body_damage_rzh_030, head_damage_00
+ap_scale = 0.6
+
+[actor_armor_rzh_031_h00]:body_damage_rzh_031, head_damage_00
+ap_scale = 0.55
+
+[actor_armor_rzh_035_h00]:body_damage_rzh_035, head_damage_00
+ap_scale = 0.55
+
+[actor_armor_rzh_036_h00]:body_damage_rzh_036, head_damage_00
+ap_scale = 0.45
+
+[actor_armor_rzh_038_h00]:body_damage_rzh_038, head_damage_00
+ap_scale = 0.42
+
+[actor_armor_rzh_039_h00]:body_damage_rzh_039, head_damage_00
+ap_scale = 0.45
+
+[actor_armor_rzh_041_h00]:body_damage_rzh_041, head_damage_00
+ap_scale = 0.36
+
+[actor_armor_rzh_042_h00]:body_damage_rzh_042, head_damage_00
+ap_scale = 0.42
+
+[actor_armor_rzh_045_h00]:body_damage_rzh_045, head_damage_00
+ap_scale = 0.36
+
+; ---- helmets cop (head only, body bones untouched)
+[head_damage_rzc_021]
+bip01_neck               = 1, 0.21
+bip01_head               = 1, 0.21
+eyelid_1                 = 1, 0.21
+eye_left                 = 1, 0.21
+eye_right                = 1, 0.21
+jaw_1                    = 1, 0.21
+
+[actor_helm_rzc_021_001]:body_damage_absent, head_damage_rzc_021
+ap_scale = 0.01
+
+[head_damage_rzc_000]
+bip01_neck               = 1, 0.0
+bip01_head               = 1, 0.0
+eyelid_1                 = 1, 0.0
+eye_left                 = 1, 0.0
+eye_right                = 1, 0.0
+jaw_1                    = 1, 0.0
+
+[actor_helm_rzc_000_001]:body_damage_absent, head_damage_rzc_000
+ap_scale = 0.01
+
+[head_damage_rzc_044]
+bip01_neck               = 1, 0.44
+bip01_head               = 1, 0.44
+eyelid_1                 = 1, 0.44
+eye_left                 = 1, 0.44
+eye_right                = 1, 0.44
+jaw_1                    = 1, 0.44
+
+[actor_helm_rzc_044_001]:body_damage_absent, head_damage_rzc_044
+ap_scale = 0.01
+
+[head_damage_rzc_018]
+bip01_neck               = 1, 0.18
+bip01_head               = 1, 0.18
+eyelid_1                 = 1, 0.18
+eye_left                 = 1, 0.18
+eye_right                = 1, 0.18
+jaw_1                    = 1, 0.18
+
+[actor_helm_rzc_018_001]:body_damage_absent, head_damage_rzc_018
+ap_scale = 0.01
+
+[head_damage_rzc_047]
+bip01_neck               = 1, 0.47
+bip01_head               = 1, 0.47
+eyelid_1                 = 1, 0.47
+eye_left                 = 1, 0.47
+eye_right                = 1, 0.47
+jaw_1                    = 1, 0.47
+
+[actor_helm_rzc_047_001]:body_damage_absent, head_damage_rzc_047
+ap_scale = 0.01
+
+[head_damage_rzc_040]
+bip01_neck               = 1, 0.4
+bip01_head               = 1, 0.4
+eyelid_1                 = 1, 0.4
+eye_left                 = 1, 0.4
+eye_right                = 1, 0.4
+jaw_1                    = 1, 0.4
+
+[actor_helm_rzc_040_001]:body_damage_absent, head_damage_rzc_040
+ap_scale = 0.01
+
+; ---- helmets trilogy (head only, body bones untouched)
+[head_damage_rzt_018]
+bip01_neck               = 1, 0.18
+bip01_head               = 1, 0.18
+eyelid_1                 = 1, 0.18
+eye_left                 = 1, 0.18
+eye_right                = 1, 0.18
+jaw_1                    = 1, 0.18
+
+[actor_helm_rzt_018_10]:body_damage_absent, head_damage_rzt_018
+ap_scale = 1.0
+
+[head_damage_rzt_000]
+bip01_neck               = 1, 0.0
+bip01_head               = 1, 0.0
+eyelid_1                 = 1, 0.0
+eye_left                 = 1, 0.0
+eye_right                = 1, 0.0
+jaw_1                    = 1, 0.0
+
+[actor_helm_rzt_000_10]:body_damage_absent, head_damage_rzt_000
+ap_scale = 1.0
+
+[head_damage_rzt_030]
+bip01_neck               = 1, 0.3
+bip01_head               = 1, 0.3
+eyelid_1                 = 1, 0.3
+eye_left                 = 1, 0.3
+eye_right                = 1, 0.3
+jaw_1                    = 1, 0.3
+
+[actor_helm_rzt_030_0938]:body_damage_absent, head_damage_rzt_030
+ap_scale = 0.938
+
+[head_damage_rzt_038]
+bip01_neck               = 1, 0.38
+bip01_head               = 1, 0.38
+eyelid_1                 = 1, 0.38
+eye_left                 = 1, 0.38
+eye_right                = 1, 0.38
+jaw_1                    = 1, 0.38
+
+[actor_helm_rzt_038_0875]:body_damage_absent, head_damage_rzt_038
+ap_scale = 0.875
+
+[head_damage_rzt_004]
+bip01_neck               = 1, 0.04
+bip01_head               = 1, 0.04
+eyelid_1                 = 1, 0.04
+eye_left                 = 1, 0.04
+eye_right                = 1, 0.04
+jaw_1                    = 1, 0.04
+
+[actor_helm_rzt_004_10]:body_damage_absent, head_damage_rzt_004
+ap_scale = 1.0
+
+[head_damage_rzt_012]
+bip01_neck               = 1, 0.12
+bip01_head               = 1, 0.12
+eyelid_1                 = 1, 0.12
+eye_left                 = 1, 0.12
+eye_right                = 1, 0.12
+jaw_1                    = 1, 0.12
+
+[actor_helm_rzt_012_10]:body_damage_absent, head_damage_rzt_012
+ap_scale = 1.0
+
+[head_damage_rzt_002]
+bip01_neck               = 1, 0.02
+bip01_head               = 1, 0.02
+eyelid_1                 = 1, 0.02
+eye_left                 = 1, 0.02
+eye_right                = 1, 0.02
+jaw_1                    = 1, 0.02
+
+[actor_helm_rzt_002_10]:body_damage_absent, head_damage_rzt_002
+ap_scale = 1.0
+
+[head_damage_rzt_044]
+bip01_neck               = 1, 0.44
+bip01_head               = 1, 0.44
+eyelid_1                 = 1, 0.44
+eye_left                 = 1, 0.44
+eye_right                = 1, 0.44
+jaw_1                    = 1, 0.44
+
+[actor_helm_rzt_044_0875]:body_damage_absent, head_damage_rzt_044
+ap_scale = 0.875
+
+[head_damage_rzt_026]
+bip01_neck               = 1, 0.26
+bip01_head               = 1, 0.26
+eyelid_1                 = 1, 0.26
+eye_left                 = 1, 0.26
+eye_right                = 1, 0.26
+jaw_1                    = 1, 0.26
+
+[actor_helm_rzt_026_0938]:body_damage_absent, head_damage_rzt_026
+ap_scale = 0.938
+
+; ---- helmets hardcore (head only, body bones untouched)
+[head_damage_rzh_018]
+bip01_neck               = 1, 0.18
+bip01_head               = 1, 0.18
+eyelid_1                 = 1, 0.18
+eye_left                 = 1, 0.18
+eye_right                = 1, 0.18
+jaw_1                    = 1, 0.18
+
+[actor_helm_rzh_018_08]:body_damage_absent, head_damage_rzh_018
+ap_scale = 0.8
+
+[head_damage_rzh_000]
+bip01_neck               = 1, 0.0
+bip01_head               = 1, 0.0
+eyelid_1                 = 1, 0.0
+eye_left                 = 1, 0.0
+eye_right                = 1, 0.0
+jaw_1                    = 1, 0.0
+
+[actor_helm_rzh_000_10]:body_damage_absent, head_damage_rzh_000
+ap_scale = 1.0
+
+[head_damage_rzh_030]
+bip01_neck               = 1, 0.3
+bip01_head               = 1, 0.3
+eyelid_1                 = 1, 0.3
+eye_left                 = 1, 0.3
+eye_right                = 1, 0.3
+jaw_1                    = 1, 0.3
+
+[actor_helm_rzh_030_075]:body_damage_absent, head_damage_rzh_030
+ap_scale = 0.75
+
+[head_damage_rzh_038]
+bip01_neck               = 1, 0.38
+bip01_head               = 1, 0.38
+eyelid_1                 = 1, 0.38
+eye_left                 = 1, 0.38
+eye_right                = 1, 0.38
+jaw_1                    = 1, 0.38
+
+[actor_helm_rzh_038_07]:body_damage_absent, head_damage_rzh_038
+ap_scale = 0.7
+
+[head_damage_rzh_004]
+bip01_neck               = 1, 0.04
+bip01_head               = 1, 0.04
+eyelid_1                 = 1, 0.04
+eye_left                 = 1, 0.04
+eye_right                = 1, 0.04
+jaw_1                    = 1, 0.04
+
+[actor_helm_rzh_004_09]:body_damage_absent, head_damage_rzh_004
+ap_scale = 0.9
+
+[head_damage_rzh_012]
+bip01_neck               = 1, 0.12
+bip01_head               = 1, 0.12
+eyelid_1                 = 1, 0.12
+eye_left                 = 1, 0.12
+eye_right                = 1, 0.12
+jaw_1                    = 1, 0.12
+
+[actor_helm_rzh_012_085]:body_damage_absent, head_damage_rzh_012
+ap_scale = 0.85
+
+[head_damage_rzh_002]
+bip01_neck               = 1, 0.02
+bip01_head               = 1, 0.02
+eyelid_1                 = 1, 0.02
+eye_left                 = 1, 0.02
+eye_right                = 1, 0.02
+jaw_1                    = 1, 0.02
+
+[actor_helm_rzh_002_09]:body_damage_absent, head_damage_rzh_002
+ap_scale = 0.9
+
+[head_damage_rzh_044]
+bip01_neck               = 1, 0.44
+bip01_head               = 1, 0.44
+eyelid_1                 = 1, 0.44
+eye_left                 = 1, 0.44
+eye_right                = 1, 0.44
+jaw_1                    = 1, 0.44
+
+[actor_helm_rzh_044_07]:body_damage_absent, head_damage_rzh_044
+ap_scale = 0.7
+
+[head_damage_rzh_026]
+bip01_neck               = 1, 0.26
+bip01_head               = 1, 0.26
+eyelid_1                 = 1, 0.26
+eye_left                 = 1, 0.26
+eye_right                = 1, 0.26
+jaw_1                    = 1, 0.26
+
+[actor_helm_rzh_026_075]:body_damage_absent, head_damage_rzh_026
+ap_scale = 0.75
+
+; ---- armor upgrades (all profiles)
+[rz_body_add_04]
+bip01_pelvis             = 0, 0.04
+bip01_spine              = 0, 0.04
+bip01_spine1             = 0, 0.04
+bip01_spine2             = 0, 0.04
+bip01_l_clavicle         = 0, 0.04
+bip01_l_upperarm         = 0, 0.04
+bip01_l_forearm          = 0, 0.04
+bip01_r_clavicle         = 0, 0.04
+bip01_r_upperarm         = 0, 0.04
+bip01_r_forearm          = 0, 0.04
+bip01_l_thigh            = 0, 0.04
+bip01_l_calf             = 0, 0.04
+bip01_r_thigh            = 0, 0.04
+bip01_r_calf             = 0, 0.04
+
+[rz_armor_add_04]:rz_body_add_04, actor_head_damage_zero
+
+[rz_body_add_06]
+bip01_pelvis             = 0, 0.06
+bip01_spine              = 0, 0.06
+bip01_spine1             = 0, 0.06
+bip01_spine2             = 0, 0.06
+bip01_l_clavicle         = 0, 0.06
+bip01_l_upperarm         = 0, 0.06
+bip01_l_forearm          = 0, 0.06
+bip01_r_clavicle         = 0, 0.06
+bip01_r_upperarm         = 0, 0.06
+bip01_r_forearm          = 0, 0.06
+bip01_l_thigh            = 0, 0.06
+bip01_l_calf             = 0, 0.06
+bip01_r_thigh            = 0, 0.06
+bip01_r_calf             = 0, 0.06
+
+[rz_armor_add_06]:rz_body_add_06, actor_head_damage_zero
+
+[rz_body_add_08]
+bip01_pelvis             = 0, 0.08
+bip01_spine              = 0, 0.08
+bip01_spine1             = 0, 0.08
+bip01_spine2             = 0, 0.08
+bip01_l_clavicle         = 0, 0.08
+bip01_l_upperarm         = 0, 0.08
+bip01_l_forearm          = 0, 0.08
+bip01_r_clavicle         = 0, 0.08
+bip01_r_upperarm         = 0, 0.08
+bip01_r_forearm          = 0, 0.08
+bip01_l_thigh            = 0, 0.08
+bip01_l_calf             = 0, 0.08
+bip01_r_thigh            = 0, 0.08
+bip01_r_calf             = 0, 0.08
+
+[rz_armor_add_08]:rz_body_add_08, actor_head_damage_zero
+
+[rz_body_add_10]
+bip01_pelvis             = 0, 0.1
+bip01_spine              = 0, 0.1
+bip01_spine1             = 0, 0.1
+bip01_spine2             = 0, 0.1
+bip01_l_clavicle         = 0, 0.1
+bip01_l_upperarm         = 0, 0.1
+bip01_l_forearm          = 0, 0.1
+bip01_r_clavicle         = 0, 0.1
+bip01_r_upperarm         = 0, 0.1
+bip01_r_forearm          = 0, 0.1
+bip01_l_thigh            = 0, 0.1
+bip01_l_calf             = 0, 0.1
+bip01_r_thigh            = 0, 0.1
+bip01_r_calf             = 0, 0.1
+
+[rz_armor_add_10]:rz_body_add_10, actor_head_damage_zero
+
+; ---- ReZone Helmets OFF: closed suits with the head of their helmet
+[actor_armor_rzc_044_helm_spartan]:body_damage_rzc_044, head_damage_rzc_047
+ap_scale = 0.01
+
+[actor_armor_rzc_044_helm_exo]:body_damage_rzc_044, head_damage_rzc_044
+ap_scale = 0.01
+
+[actor_armor_rzc_040_helm_battle]:body_damage_rzc_040, head_damage_rzc_044
+ap_scale = 0.01
+
+[actor_armor_rzc_018_helm_m50]:body_damage_rzc_018, head_damage_rzc_000
+ap_scale = 0.01
+
+[actor_armor_rzc_018_helm_protective]:body_damage_rzc_018, head_damage_rzc_018
+ap_scale = 0.01
+
+[actor_armor_rzc_021_helm_protective]:body_damage_rzc_021, head_damage_rzc_018
+ap_scale = 0.01
+
+[actor_armor_rzc_010_helm_m40]:body_damage_rzc_010, head_damage_rzc_000
+ap_scale = 0.01
+
+[actor_armor_rzt_041_helm_spartan]:body_damage_rzt_041, head_damage_rzt_044
+ap_scale = 0.45
+
+[actor_armor_rzt_038_helm_exo]:body_damage_rzt_038, head_damage_rzt_038
+ap_scale = 0.525
+
+[actor_armor_rzt_035_helm_battle]:body_damage_rzt_035, head_damage_rzt_030
+ap_scale = 0.562
+
+[actor_armor_rzt_015_helm_m50]:body_damage_rzt_015, head_damage_rzt_004
+ap_scale = 1.0
+
+[actor_armor_rzt_014_helm_protective]:body_damage_rzt_014, head_damage_rzt_012
+ap_scale = 1.0
+
+[actor_armor_rzt_015_helm_protective]:body_damage_rzt_015, head_damage_rzt_012
+ap_scale = 1.0
+
+[actor_armor_rzt_042_helm_exo]:body_damage_rzt_042, head_damage_rzt_038
+ap_scale = 0.525
+
+[actor_armor_rzt_039_helm_battle]:body_damage_rzt_039, head_damage_rzt_030
+ap_scale = 0.562
+
+[actor_armor_rzt_010_helm_protective]:body_damage_rzt_010, head_damage_rzt_012
+ap_scale = 1.0
+
+[actor_armor_rzt_008_helm_protective]:body_damage_rzt_008, head_damage_rzt_012
+ap_scale = 1.0
+
+[actor_armor_rzt_045_helm_spartan]:body_damage_rzt_045, head_damage_rzt_044
+ap_scale = 0.45
+
+[actor_armor_rzt_025_helm_protective]:body_damage_rzt_025, head_damage_rzt_012
+ap_scale = 0.875
+
+[actor_armor_rzt_011_helm_m50]:body_damage_rzt_011, head_damage_rzt_004
+ap_scale = 1.0
+
+[actor_armor_rzt_015_helm_m40]:body_damage_rzt_015, head_damage_rzt_004
+ap_scale = 1.0
+
+[actor_armor_rzh_041_helm_spartan]:body_damage_rzh_041, head_damage_rzh_044
+ap_scale = 0.36
+
+[actor_armor_rzh_038_helm_exo]:body_damage_rzh_038, head_damage_rzh_038
+ap_scale = 0.42
+
+[actor_armor_rzh_035_helm_battle]:body_damage_rzh_035, head_damage_rzh_030
+ap_scale = 0.45
+
+[actor_armor_rzh_015_helm_m50]:body_damage_rzh_015, head_damage_rzh_004
+ap_scale = 0.85
+
+[actor_armor_rzh_014_helm_protective]:body_damage_rzh_014, head_damage_rzh_012
+ap_scale = 0.85
+
+[actor_armor_rzh_015_helm_protective]:body_damage_rzh_015, head_damage_rzh_012
+ap_scale = 0.85
+
+[actor_armor_rzh_042_helm_exo]:body_damage_rzh_042, head_damage_rzh_038
+ap_scale = 0.42
+
+[actor_armor_rzh_039_helm_battle]:body_damage_rzh_039, head_damage_rzh_030
+ap_scale = 0.45
+
+[actor_armor_rzh_010_helm_protective]:body_damage_rzh_010, head_damage_rzh_012
+ap_scale = 0.9
+
+[actor_armor_rzh_008_helm_protective]:body_damage_rzh_008, head_damage_rzh_012
+ap_scale = 0.9
+
+[actor_armor_rzh_045_helm_spartan]:body_damage_rzh_045, head_damage_rzh_044
+ap_scale = 0.36
+
+[actor_armor_rzh_025_helm_protective]:body_damage_rzh_025, head_damage_rzh_012
+ap_scale = 0.7
+
+[actor_armor_rzh_011_helm_m50]:body_damage_rzh_011, head_damage_rzh_004
+ap_scale = 0.85
+
+[actor_armor_rzh_015_helm_m40]:body_damage_rzh_015, head_damage_rzh_004
+ap_scale = 0.85
+

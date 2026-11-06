@@ -1,0 +1,110 @@
+--[[
+	ReZone MCM - obchod "jako GAMMA"
+	Zapnuto: obchodnici nekupuji zbrane od hrace a/nebo je neprodavaji (zmizi z jejich nabidky).
+	Helmy maji vlastni dva vypinace (nezavisle na GAMMA).
+	Zbrane se nemazou - jen se v obchodnim okne skryji / nejdou presunout. Vypnutim se vse vrati.
+	Patch se nasazuje az v actor_on_first_update, aby obalil i upravy jinych modu (Barter apod.).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_trade"
+
+local on, no_sell, no_buy, melee = false, true, true, false
+local helm_no_sell, helm_no_buy = false, false
+local kind_cache = {}
+
+-- strelne zbrane (a volitelne noze); granaty, bolty, detektory apod. zustavaji
+local FIREARMS = { w_pistol = true, w_smg = true, w_rifle = true, w_shotgun = true, w_sniper = true }
+
+local function is_weapon(sec)
+	if not sec then return false end
+	local k = kind_cache[sec]
+	if k == nil then
+		k = SYS_GetParam(0, sec, "kind", "") or ""
+		kind_cache[sec] = k
+	end
+	return FIREARMS[k] or (melee and k == "w_melee") or false
+end
+
+local helm_cache = {}
+local function is_helmet(sec)
+	if not sec then return false end
+	local h = helm_cache[sec]
+	if h == nil then
+		local kind = SYS_GetParam(0, sec, "kind", "") or ""
+		local cls = SYS_GetParam(0, sec, "class", "") or ""
+		h = (kind == "o_helmet") or (cls == "E_HLMET") or (cls == "EQU_HLMET")
+		helm_cache[sec] = h
+	end
+	return h
+end
+
+-- mode 1 = veci hrace (prodej obchodnikovi), mode 2 = nabidka obchodnika
+-- vraci text duvodu (pro poznamku u predmetu) nebo nil
+local function blocked(sec, mode)
+	if (mode == 1 and helm_no_sell) or (mode == 2 and helm_no_buy) then
+		if is_helmet(sec) then return "st_rz_trade_no_helmets" end
+	end
+	if not on then return nil end
+	if mode == 1 and not no_sell then return nil end
+	if mode == 2 and not no_buy then return nil end
+	return is_weapon(sec) and "st_rz_trade_no_weapons" or nil
+end
+
+local patched = false
+local function patch()
+	if patched then return end
+	if not (utils_ui and utils_ui.UICellItem and utils_ui.UICellContainer) then
+		core.warn("obchod: utils_ui chybi, nelze zapnout")
+		return
+	end
+	patched = true
+
+	local orig_check = utils_ui.UICellItem.Check_TradeMode
+	function utils_ui.UICellItem:Check_TradeMode(obj, sec)
+		local r = orig_check(self, obj, sec)
+		if r then return r end
+		local profile = self.container and self.container.trade_profile
+		local mode = profile and profile.mode
+		local why = mode and blocked(sec, mode)
+		if why then
+			if mode == 2 then
+				return true -- skryt v nabidce obchodnika
+			end
+			self.flags.value = nil
+			self.flags.value_str = nil
+			self.flags.note = 1
+			self.flags.no_trade = true
+			self.flags.note_str = game.translate_string(why)
+		end
+		return false
+	end
+
+	local orig_tradable = utils_ui.UICellContainer.IsTradable
+	function utils_ui.UICellContainer:IsTradable(obj)
+		local profile = self.trade_profile
+		if obj and profile and profile.mode and blocked(obj:section(), profile.mode) then
+			return false
+		end
+		return orig_tradable(self, obj)
+	end
+	core.log("obchod: patch nasazen")
+end
+
+function load()
+	local g = core.page(PAGE)
+	on      = g("gamma") == true
+	no_sell = g("no_sell") ~= false
+	no_buy  = g("no_buy") ~= false
+	local m = g("melee") == true
+	if m ~= melee then melee = m end
+	helm_no_sell = g("helm_no_sell") == true
+	helm_no_buy  = g("helm_no_buy") == true
+	core.log("obchod jako GAMMA: %s (prodej %s, nakup %s, noze %s), helmy prodej %s nakup %s", tostring(on), tostring(no_sell), tostring(no_buy), tostring(melee), tostring(helm_no_sell), tostring(helm_no_buy))
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+	RegisterScriptCallback("actor_on_first_update", patch)
+end

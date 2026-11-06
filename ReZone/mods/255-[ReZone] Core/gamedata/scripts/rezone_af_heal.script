@@ -1,0 +1,165 @@
+--[[
+	ReZone - vzacne artefakty leci casti tela s EFT Health System (configs\rezone\af_heal.ltx)
+
+	EFT Health System (zzz_efth) ridi zdravi pres casti tela a vanilla regeneraci zahodi, takze
+	"leciva" artefakta by s nim nedelala nic. Tady se jejich leceni posle primo na casti tela.
+	Bez EFT Health System (nebo kdyz chybi ocekavane funkce) se nic neregistruje - zadny log, zadna chyba.
+	Nastaveni: ReZone MCM > Zdravi > Artefakty (Leceni casti tela, Sila).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_af"
+local CFG = "rezone\\af_heal.ltx"
+
+local cfg = { on = true, mult = 1 }
+local tick, bleed_chance = 5, 0.25
+local heal = {}          -- sekce -> { hp, bleed, destroyed } (cache vcetne vylepsenych variant)
+local base_tbl, tier_mult, reg_hp
+local active = false
+local next_t = 0
+
+local function efth_installed()
+	return getFS():exist("$game_scripts$", "zzz_efth.script")
+end
+
+local function body()
+	local b = rawget(_G, "Body")
+	if type(b) == "table" or type(b) == "userdata" then
+		if b.limbs then return b end
+	end
+end
+
+local function nums(s)
+	local t = {}
+	for v in string.gmatch(s or "", "[^,%s]+") do t[#t + 1] = tonumber(v) or 0 end
+	return t
+end
+
+local function load_cfg()
+	base_tbl, tier_mult, reg_hp = {}, {}, {}
+	local ini = ini_file(CFG)
+	if not ini then return end
+	tick = ini:r_float_ex("settings", "tick") or 5
+	bleed_chance = ini:r_float_ex("settings", "bleed_chance") or 0.25
+	if ini:section_exist("artefacts") then
+		for n = 0, ini:line_count("artefacts") - 1 do
+			local _, sec, v = ini:r_line_ex("artefacts", n, "", "")
+			local t = nums(v)
+			if sec and sec ~= "" then base_tbl[sec] = { hp = t[1] or 0, bleed = (t[2] or 0) > 0, destroyed = (t[3] or 0) > 0 } end
+		end
+	end
+	tier_mult = nums(ini:r_string_ex("tier", "mult") or "1.3,1.6,2,2.5")
+	reg_hp = nums(ini:r_string_ex("reg", "hp") or "0.5,1,1.5,2")
+end
+
+-- leceni pro sekci (zaklad, vylepsena varianta ze selekce, kontejner na pasu)
+local function heal_of(sec)
+	local h = heal[sec]
+	if h ~= nil then return h end
+	local base, typ, lvl = sec, nil, 0
+	local b, t, l = string.match(sec, "^(.-)_brd_(%a+)(%d)")
+	if b then base, typ, lvl = b, t, tonumber(l) end
+	if not base_tbl[base] then
+		local stripped = string.match(base, "^(.-)_af_a[ac]m$")		-- AAC / AAM na pasu
+		if stripped then base = stripped end
+	end
+	local d = base_tbl[base]
+	h = false
+	if d or typ == "reg" then
+		h = { hp = d and d.hp or 0, bleed = d and d.bleed or false, destroyed = d and d.destroyed or false }
+		if typ == "tier" then h.hp = h.hp * (tier_mult[lvl] or 1) end
+		if typ == "reg" then h.hp = h.hp + (reg_hp[lvl] or 0) end
+		if h.hp <= 0 and not h.bleed then h = false end
+	end
+	heal[sec] = h
+	return h
+end
+
+local function heal_limbs(bd, amount, allow_destroyed)
+	-- nejvic poskozena cast tela (podle podilu HP)
+	local best, best_r
+	for _, limb in pairs(bd.limbs) do
+		local max = limb.hp_max_current or limb.hp_max or 1
+		if limb.CanBeHealed and limb:CanBeHealed() and not limb:IsDestroyed() then
+			local r = limb:GetEffectiveHP() / math.max(max, 0.01)
+			if not best_r or r < best_r then best, best_r = limb, r end
+		end
+	end
+	if best then
+		local moved = math.min(amount, best.hp_timed or 0)
+		if moved > 0 then best:ConvertTimedHP(moved) end
+		local rest = math.min(amount - moved, (best.hp_max_current or best.hp_max) - best.hp)
+		if rest > 0 then best:ApplyHeal(rest) end
+		return
+	end
+	if allow_destroyed and bd.HealDestroyedAtCampfire then
+		for _, limb in pairs(bd.limbs) do
+			if limb:IsDestroyed() and bd:HealDestroyedAtCampfire(limb, amount) then return end
+		end
+	end
+end
+
+local function stop_light_bleed(bd)
+	local L, LT = rawget(_G, "CBuffBleedLight"), rawget(_G, "CBuffBleedLightTemporary")
+	if not L then return end
+	for _, limb in pairs(bd.limbs) do
+		if limb:HasBuff(L) or (LT and limb:HasBuff(LT)) then
+			limb:RemoveBuff(L)
+			if LT then limb:RemoveBuff(LT) end
+			return
+		end
+	end
+end
+
+local function update()
+	local t = time_global()
+	if t < next_t then return end
+	next_t = t + tick * 1000
+	if not (cfg.on and db.actor and db.actor:alive()) then return end
+	local bd = body()
+	if not bd then return end
+	local hp, bleed, destroyed = 0, false, false
+	db.actor:iterate_belt(function(_, obj)
+		local h = heal_of(obj:section())
+		if h then
+			local cond = obj:condition() or 1
+			hp = hp + h.hp * cond
+			bleed = bleed or h.bleed
+			destroyed = destroyed or h.destroyed
+		end
+	end, db.actor)
+	if hp <= 0 and not bleed then return end
+	local ok, err = pcall(function()
+		if hp > 0 then heal_limbs(bd, hp * cfg.mult * tick / 60, destroyed) end
+		if bleed and math.random() < bleed_chance then stop_light_bleed(bd) end
+	end)
+	if not ok then
+		-- jina verze EFT Health System: vypnout, jedna hlaska misto spamu
+		active = false
+		UnregisterScriptCallback("actor_on_update", update)
+		core.warn("leceni artefakty: EFT Health System ma jine funkce, vypinam (%s)", tostring(err))
+	end
+end
+
+local function load()
+	local g = core.page(PAGE)
+	cfg.on = g("efth_heal") ~= false
+	cfg.mult = tonumber(g("efth_heal_mult")) or 1
+	heal = {}
+end
+
+local function actor_on_first_update()
+	if active or not efth_installed() then return end
+	if not body() then return end
+	load_cfg()
+	active = true
+	RegisterScriptCallback("actor_on_update", update)
+	core.log("leceni artefakty: EFT Health System nalezen, zapnuto")
+end
+
+function on_game_start()
+	if not efth_installed() then return end		-- bez EFTH nic
+	core.on_change(load)
+	load()
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end

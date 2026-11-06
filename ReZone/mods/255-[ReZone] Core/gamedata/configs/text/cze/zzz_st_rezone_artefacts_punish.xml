@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+	<string id="st_rzaf_punish_chem">
+		<text>%s prosakuje – je ti zle od jedu. Dej ho do kontejneru.</text>
+	</string>
+	<string id="st_rzaf_punish_electro">
+		<text>%s do tebe vybil výboj. Dej ho do kontejneru.</text>
+	</string>
+	<string id="ui_mcm_menu_rzaf">
+		<text>ReZone artefakty</text>
+	</string>
+	<string id="ui_mcm_rzaf_desc">
+		<text>Chemické artefakty nesené bez kontejneru (na pásu i v batohu) tě občas otráví, elektrické tě kopnou. Chrání olověná krabička, IAM, AAC i AAM. Síla 0.5 = výchozí.</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish">
+		<text>Artefakty bez kontejneru škodí (chemie, elektřina)</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish_chance">
+		<text>Násobič šance</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish_strength">
+		<text>Násobič poškození</text>
+	</string>
+	<string id="ui_mcm_rzaf_poison_fx">
+		<text>Efekt otravy na obrazovce</text>
+	</string>
+	<string id="ui_mcm_rzaf_poison_fx_strength">
+		<text>Síla efektu otravy</text>
+	</string>
+	<string id="ui_mcm_rzaf_electro_fx">
+		<text>Elektrický efekt na obrazovce</text>
+	</string>
+	<string id="ui_mcm_rzaf_electro_fx_strength">
+		<text>Síla elektrického efektu</text>
+	</string>
+	<string id="ui_mcm_rzaf_heal_info">
+		<text>Léčení částmi těla (jen s EFT Health System): vzácné artefakty (Koblížek, Světluška, Srdce Oázy, Slída, Blána…) a vyšlechtěné artefakty typu Regenerace léčí na pásu poškozené části těla. Seznam je v configs\rezone\af_heal.ltx.</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal">
+		<text>Artefakty léčí části těla</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_desc">
+		<text>Bez EFT Health System nic nedělá (platí vanilla regenerace).</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_mult">
+		<text>Síla léčení</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_mult_desc">
+		<text>Násobič HP za minutu ze seznamu (1 = podle af_heal.ltx).</text>
+	</string>
+</string_table>

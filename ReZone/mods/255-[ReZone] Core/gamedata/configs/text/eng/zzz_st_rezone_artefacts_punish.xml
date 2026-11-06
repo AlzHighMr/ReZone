@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+	<string id="st_rzaf_punish_chem">
+		<text>%s is leaking - you feel poisoned. Put it in a container.</text>
+	</string>
+	<string id="st_rzaf_punish_electro">
+		<text>%s discharged into you. Put it in a container.</text>
+	</string>
+	<string id="ui_mcm_menu_rzaf">
+		<text>ReZone Artefacts</text>
+	</string>
+	<string id="ui_mcm_rzaf_desc">
+		<text>Chemical artefacts carried without a container (belt or backpack) now and then poison you, electric ones give you a shock. Lead box, IAM, AAC and AAM protect you. Strength 0.5 = default.</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish">
+		<text>Bare chemical / electric artefacts hurt you</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish_chance">
+		<text>Chance multiplier</text>
+	</string>
+	<string id="ui_mcm_rzaf_punish_strength">
+		<text>Damage multiplier</text>
+	</string>
+	<string id="ui_mcm_rzaf_poison_fx">
+		<text>Poison screen effect</text>
+	</string>
+	<string id="ui_mcm_rzaf_poison_fx_strength">
+		<text>Poison effect strength</text>
+	</string>
+	<string id="ui_mcm_rzaf_electro_fx">
+		<text>Electric screen effect</text>
+	</string>
+	<string id="ui_mcm_rzaf_electro_fx_strength">
+		<text>Electric effect strength</text>
+	</string>
+	<string id="ui_mcm_rzaf_heal_info">
+		<text>Body-part healing (EFT Health System only): rare artefacts (Kolobok, Glass, Heart of the Oasis, Ameba Mica...) and bred Regeneration artefacts heal damaged body parts while on the belt. The list is in configs\rezone\af_heal.ltx.</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal">
+		<text>Artefacts heal body parts</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_desc">
+		<text>Does nothing without EFT Health System (vanilla regeneration applies).</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_mult">
+		<text>Healing strength</text>
+	</string>
+	<string id="ui_mcm_rzaf_efth_heal_mult_desc">
+		<text>Multiplier of HP per minute from the list (1 = as in af_heal.ltx).</text>
+	</string>
+</string_table>

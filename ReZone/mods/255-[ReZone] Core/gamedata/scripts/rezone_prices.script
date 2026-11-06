@@ -1,0 +1,61 @@
+--[[
+	ReZone MCM - predvolby cen (podle Configurable Item Cost Modifiers od TheMrDemonized)
+	Klic = druh predmetu (kind z configu). 1.0 = beze zmeny.
+	Predvolba prepise jen druhy, ktere v ni jsou; zbytek zustane 1.0.
+--]]
+
+-- poradi a skupiny na strance
+GROUPS = {
+	{ "rz_price_g_arty",  { "i_arty", "i_mutant_belt", "i_mutant_part" } },
+	{ "rz_price_g_items", { "i_backpack", "i_device", "i_food", "i_medical", "i_kit", "i_misc", "i_part", "i_upgrade" } },
+	{ "rz_price_g_armor", { "o_helmet", "o_helmet_medium", "o_helmet_heavy", "o_light", "o_medium", "o_sci", "o_heavy" } },
+	{ "rz_price_g_weap",  { "w_melee", "w_pistol", "w_smg", "w_shotgun", "w_rifle", "w_sniper", "w_misc", "w_ammo", "w_explosive" } },
+}
+
+KINDS = {}
+for _, g in ipairs(GROUPS) do
+	for _, k in ipairs(g[2]) do KINDS[#KINDS + 1] = k end
+end
+
+-- druhy, ktere sdileji nasobic s jinym
+EXTRA = {
+	i_arty_junk = "i_arty", i_arty_cont = "i_arty", i_attach = "i_arty",
+	i_mutant_raw = "i_food", i_mutant_cooked = "i_food",
+	i_drink = "i_medical", i_letter = "i_misc",
+	i_repair = "i_kit", i_tool = "i_kit",
+}
+
+-- helmy podle tridy (vanilla ma vsechny helmy jako o_helmet)
+HELMETS = {
+	helm_ach7 = "o_helmet", helm_ach7ex = "o_helmet",
+	helm_exo = "o_helmet_heavy", helm_metro = "o_helmet_heavy", helm_spartan = "o_helmet_heavy",
+}
+
+NAMES = { [1] = "default", [2] = "arty", [3] = "helmets", [4] = "guns", [5] = "all", [6] = "gamma" }
+DEFAULT = 1
+
+local function P(t)
+	local r = { sell_all = 1, buy_all = 1 }
+	for _, k in ipairs(KINDS) do r[k] = 1 end
+	for k, v in pairs(t or {}) do r[k] = v end
+	return r
+end
+
+local ARTY    = { i_arty = 2.5, i_mutant_belt = 2.5, i_mutant_part = 2.5 }
+local HELM    = { o_helmet = 0.7, o_helmet_heavy = 1.5, o_light = 0.5, o_medium = 0.9, o_sci = 0.7, o_heavy = 1.5 }
+local GUNS    = { w_pistol = 0.5, w_smg = 0.7, w_sniper = 1.3, w_misc = 1.2, w_ammo = 0.7 }
+local function merge(...)
+	local r = {}
+	for _, t in ipairs({ ... }) do for k, v in pairs(t) do r[k] = v end end
+	return r
+end
+
+PRESETS = {
+	[1] = P(),                              -- Vychozi (vanilla)
+	[2] = P(ARTY),                          -- Vic za artefakty a mutanty
+	[3] = P(HELM),                          -- Helmy a armory podle tridy
+	[4] = P(GUNS),                          -- Zbrane podle tridy
+	[5] = P(merge(ARTY, HELM, GUNS)),       -- Vse dohromady
+	-- ReZone: obchod jako v GAMMA - vybaveni se prodava levne, artefakty a mutanti se vyplati
+	[6] = P(merge(ARTY, { sell_all = 0.6, buy_all = 1.2, w_ammo = 0.8 })),
+}

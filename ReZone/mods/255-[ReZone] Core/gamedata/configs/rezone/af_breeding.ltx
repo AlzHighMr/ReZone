@@ -1,0 +1,163 @@
+; =====================================================================================
+;  ReZone - selekce artefaktu (SGM "selekcionari") - VSE NA JEDNOM MISTE
+;
+;  [breeders]   kdo selektuje, kde stoji, ktere tridy a do jakeho stupne      <- upravuj tady
+;  [prices]     cena kroku = cena zakladu x mult[stupen] (zaokrouhleno na 100 RU)
+;  [bonus]      sila vylepseni na stupnich T1..T4
+;  [ladder]     zebricek hodnot podle tieru artefaktu (pro bonusy a prevod SoC artefaktu)
+;
+;  Skript cte [breeders] a [prices] za behu - zmena se projevi po nacteni hry.
+;  Staty vylepsenych artefaktu ([bonus], [ladder], [value]) jsou v items_rezone_breeding.ltx,
+;  po zmene je pregeneruj:  python tools/gen_breeding.py  (viz README).
+;
+;  Typy vylepseni: rad = odvod radiace, cw = nosnost, reg = regenerace (zdravi, vydrz;
+;                  s EFT Health System leci casti tela), tier = vyssi stupen artefaktu.
+;  Stupne T1 -> T4: kazdy dalsi jde jen z predchoziho (stejny typ).
+; =====================================================================================
+
+; -------------------------------------------------------------------------------------
+; Selekcionari. Radek v [breeders] = sekce selekcionare nize.
+;   classes  = gravi, thermo, chem, electro | all
+;   max_tier = do jakeho stupne umi (1..4)
+;   spawn    = smart: <smart terrain>              postava se objevi u smartu (na zacatku hry)
+;              pos: <level>, x, y, z, level_vertex  presna pozice (spawn pri prvnim prichodu na level;
+;                                                   kdo uz stoji jinde, presune se pri dalsim prichodu)
+;              existing                             postava uz ve hre je, dostane jen dialog
+;   wait_info = info, na ktere spawn ceka (jen s CoP Story Portem)
+;   Klic sekce = story_id / profil / sekce postavy. Novou postavu pridas i v items_rezone_breeders.ltx
+;   a character_desc_rezone_breeders.xml (staci zkopirovat existujici).
+; -------------------------------------------------------------------------------------
+[breeders]
+esc_stalker_breeder
+mar_csky_breeder
+agr_army_breeder
+bar_stalker_breeder
+mil_freedom_breeder
+red_forester_tech
+zat_stalker_breeder
+jup_stalker_breeder
+jup_ecolog_breeder
+pri_army_breeder
+
+[esc_stalker_breeder]          ; Kordon, severozapadne od vesnice novacku
+classes   = all
+max_tier  = 1
+spawn     = pos: l01_escape, -202.264, -22.420, -127.052, 50126
+
+[mar_csky_breeder]             ; Velke baziny, severovychodne od zakladny Jasne oblohy
+classes   = all
+max_tier  = 1
+spawn     = pos: k00_marsh, -136.210, 1.336, -272.203, 78033
+
+[agr_army_breeder]             ; Agroprom, zapadne od komplexu na jihu
+classes   = all
+max_tier  = 3
+spawn     = pos: l03_agroprom, -182.025, -0.002, -180.772, 41954
+
+[bar_stalker_breeder]          ; Bar, Rostok
+classes   = all
+max_tier  = 2
+spawn     = smart: bar_visitors
+
+[mil_freedom_breeder]          ; zakladna Svobody, Armadni sklady
+classes   = all
+max_tier  = 3
+spawn     = smart: mil_smart_terrain_7_7
+
+[red_forester_tech]            ; Lesnik, Rudy les
+classes   = all
+max_tier  = 4
+spawn     = existing
+
+[zat_stalker_breeder]          ; Makoveckij, Skadovsk
+classes   = gravi, electro
+max_tier  = 4
+spawn     = pos: zaton, 114.681, -7.348, 186.171, 1163606
+
+[jup_stalker_breeder]          ; Brunko, Janov
+classes   = thermo
+max_tier  = 4
+spawn     = pos: jupiter, -42.184, 3.486, 195.800, 648800
+
+[jup_ecolog_breeder]           ; Bozevskij, bunkr vedcu
+classes   = chem
+max_tier  = 4
+spawn     = pos: jupiter, -226.522, -3.569, 76.946, 332308
+
+[pri_army_breeder]             ; vojensky vedec, Pripyat
+classes   = all
+max_tier  = 4
+spawn     = pos: pripyat, 148.838, -0.098, -173.624, 378561
+wait_info = pri_a28_actor_in_zone_stay
+
+; -------------------------------------------------------------------------------------
+; Cena selekce = cena zakladniho artefaktu x nasobic stupne (zaokrouhleno na 100 RU), minimum min.
+; Meduza (24 900): T1 12 500, T2 18 700, T3 24 900, T4 37 400
+; -------------------------------------------------------------------------------------
+[prices]
+mult = 0.5, 0.75, 1.0, 1.5
+min  = 5000
+
+; -------------------------------------------------------------------------------------
+; Bonus vylepseni = ladder[tier artefaktu] x nasobic stupne (T1, T2, T3, T4).
+;   rad: radiace se SNIZI o nasobek zebricku (T1 = vlastni radiace zmizi, vys = odvadi)
+;   cw : pridana nosnost     reg: pridane zdravi i vydrz
+;   tier: vlastni efekty x nasobic, radiace x tier_rad; tier zvyseny jen u plusu, minus zustava
+; -------------------------------------------------------------------------------------
+[bonus]
+rad      = 1.0, 1.5, 2.0, 2.5
+cw       = 0.33, 0.66, 1.0, 1.33
+reg      = 0.25, 0.5, 0.75, 1.0
+tier     = 1.3, 1.6, 2.0, 2.5
+tier_rad = 0.75, 0.5, 0.25, 0.1
+
+; prodejni cena vylepseneho artefaktu = cena zakladu x nasobic stupne
+[value]
+mult = 1.25, 1.6, 2.0, 2.6
+
+; -------------------------------------------------------------------------------------
+; Zebricek hodnot podle tieru artefaktu (1..5), odvozeno z Anomaly 1.5.
+; -------------------------------------------------------------------------------------
+[ladder]
+radiation_restore_speed     = 0.00006, 0.00013, 0.00025, 0.00047, 0.0006
+health_restore_speed        = 0.00004, 0.000075, 0.00015, 0.0003, 0.0004
+power_restore_speed         = 0.0005, 0.00088, 0.00142, 0.00186, 0.0023
+bleeding_restore_speed      = 0.0007, 0.00144, 0.00278, 0.00435, 0.0055
+satiety_restore_speed       = 0.0003, 0.0006, 0.0009, 0.0012, 0.0015
+additional_inventory_weight = 3, 5.23, 8.41, 13.3, 16
+burn_immunity               = 0.0006, 0.00115, 0.00248, 0.00388, 0.0059
+shock_immunity              = 0.03, 0.0623, 0.1089, 0.2044, 0.31269
+chemical_burn_immunity      = 0.0001, 0.00021, 0.00039, 0.00057, 0.00092
+telepatic_immunity          = 0.0036, 0.0072, 0.0138, 0.0189, 0.0239
+radiation_immunity          = 0.0005, 0.001, 0.002, 0.003, 0.004
+strike_immunity             = 0.017, 0.034, 0.1, 0.135, 0.16
+wound_immunity              = 0.017, 0.034, 0.1, 0.124, 0.165
+explosion_immunity          = 0.017, 0.034, 0.089, 0.128, 0.152
+fire_wound_immunity         = 0.017, 0.034, 0.097, 0.117, 0.158
+; typicka cena podle tieru (prevod cizich artefaktu)
+cost                        = 15000, 25000, 38000, 52000, 66000
+
+
+; Artefakty mimo af_class_* (nebo trida navic): artefakt = trida
+[extra_artefacts]
+af_compass     = gravi
+af_oasis_heart = chem
+
+; Nikdy neselektovat (questove, unikatni)
+[exclude]
+jup_b1_half_artifact
+af_quest_b14_twisted
+af_monolith
+af_misery_bread
+
+; SoC artefakty z Anomaly (items_artefacts_soc.ltx): prevedou se na skalu Anomaly a daji se selektovat
+[foreign_class]
+af_drops           = thermo
+af_ameba_slime     = chem
+af_ameba_slug      = chem
+af_ameba_mica      = chem
+af_dummy_spring    = electro
+af_dummy_pellicle  = electro
+af_rusty_thorn     = chem
+af_rusty_kristall  = chem
+af_rusty_sea       = chem

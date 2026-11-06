@@ -1,0 +1,457 @@
+--[[
+	ReZone - definice stranky v MCM (vyzaduje MCM 1.7.1+)
+
+	ReZone
+	|- Hlavni   : Predvolba hry (nastavi vse najednou, rezone_master)
+	|- Gameplay : Obchod, Ceny, Korist, Artefakty v anomaliich, Populace, Balistika, Crafting, Odkazy
+	|- Zdravi   : Poskozeni hrace, Odolnost mutantu, Artefakty, Odkazy
+	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
+--]]
+
+VERSION = "2.5.18"
+
+ROOT   = "rezone"
+TAB_MAIN = "rz_main"
+TAB_GP = "rz_gameplay"
+TAB_HP = "rz_health"
+TAB_OT = "rz_other"
+
+MUTANT_SPECIES = {
+	"dog", "pseudodog", "flesh", "boar", "snork", "tushkano", "rat", "cat", "zombie",
+	"bloodsucker", "psysucker", "lurker", "fracture", "karlik", "burer",
+	"controller", "poltergeist", "chimera", "pseudo_gigant",
+}
+
+-- ReSpawn Mutants (Hades@DK): vlastni druhy, sekce prirazuje configs\rezone\rezone_species.ltx
+-- [2] = zakladni sekce modu - posuvnik se ukaze, jen kdyz je mod nainstalovany
+RS_SPECIES = {
+	{ "rs_volk", "m_volk_e" }, { "rs_gonchaya", "m_gonchaya_e" }, { "rs_koyot", "m_koyot_e" }, { "rs_shepherd", "m_shepherd_e" },
+	{ "rs_burenka", "m_burenka_e" }, { "rs_vebber", "m_vebber_e" }, { "rs_ratking", "m_ratking_e" }, { "rs_zanoza", "m_zanoza_e" },
+	{ "rs_krisa", "m_krisa_e" }, { "rs_tarakan", "m_tarakan_e" }, { "rs_zhaba", "m_zhaba_e" }, { "rs_komar", "m_komar_e" },
+	{ "rs_letalka", "m_letalka_e" }, { "rs_strekoza", "m_strekoza_e" }, { "rs_pyat", "m_pyat_e" }, { "rs_duriel", "m_duriel" },
+	{ "rs_tark", "m_tark_e" }, { "rs_obrazet", "m_obrazet_e" }, { "rs_predadar", "m_predadar_e" }, { "rs_jugger", "m_jugger_e" },
+	{ "rs_alghoul", "m_alghoul_e" }, { "rs_vendigo", "m_vendigo_e" }, { "rs_fur", "m_fur_e" },
+}
+-- vsechny druhy (vanilla + ReSpawn) - pro urceni druhu a nasobice
+ALL_SPECIES = {}
+for i = 1, #MUTANT_SPECIES do ALL_SPECIES[#ALL_SPECIES + 1] = MUTANT_SPECIES[i] end
+for i = 1, #RS_SPECIES do ALL_SPECIES[#ALL_SPECIES + 1] = RS_SPECIES[i][1] end
+
+local function rs_installed(base) return ini_sys:section_exist(base) end
+
+local CLR_DESC = { 255, 200, 200, 200 }
+local CLR_NOTE = { 255, 150, 150, 150 }
+
+------------------------------------------------------------
+-- Stavebni bloky
+------------------------------------------------------------
+local function slide(text)
+	return { id = "banner", type = "slide", link = "ui_options_slider_disguise", text = text, size = { 512, 50 }, spacing = 20 }
+end
+local function desc(id, text, clr) return { id = id, type = "desc", text = text, clr = clr or CLR_DESC } end
+local function line(id) return { id = id, type = "line" } end
+local function check(id, def, hint) return { id = id, type = "check", val = 1, def = def, hint = hint } end
+local function track(id, def, min, max, step, hint)
+	return { id = id, type = "track", val = 2, def = def, min = min, max = max, step = step, prec = 2, hint = hint }
+end
+local function page(id, gr) return { id = id, sh = true, gr = gr } end
+
+------------------------------------------------------------
+-- GAMEPLAY
+------------------------------------------------------------
+local function gp_craft()
+	return page("rz_craft", {
+		slide("ui_mcm_rz_craft_title"),
+		desc("d", "ui_mcm_rz_craft_info"),
+		line("l1"),
+		check("remove_recipe", true, "rz_craft_remove_recipe"),
+		check("keep_known", false, "rz_craft_keep_known"),
+	})
+end
+
+local function gp_ballistics()
+	return page("rz_ball", {
+		slide("ui_mcm_rz_ball_title"),
+		desc("d", "ui_mcm_rz_ball_info"),
+		line("l1"),
+		{ id = "preset", type = "list", val = 2, def = 0, hint = "rz_ball_preset",
+		  content = { { 0, "rz_ball_cop" }, { 1, "rz_ball_trilogy" }, { 2, "rz_ball_hardcore" } } },
+		desc("pn", "ui_mcm_rz_ball_preset_note", CLR_NOTE),
+		track("npc_tough", 1, 0.5, 2, 0.05, "rz_ball_npc_tough"),
+		line("l2"),
+		desc("dc", "ui_mcm_rz_ball_craft"),
+		track("parts_loot", 1, 0, 3, 0.1, "rz_ball_parts_loot"),
+		track("craft_yield", 2, 1, 3, 1, "rz_ball_craft_yield"),
+		line("l4"),
+		track("wear", 0.33, 0, 2, 0.01, "rz_ball_wear"),
+		desc("dh", "ui_mcm_rz_ball_helm_info"),
+		check("helmets", true, "rz_ball_helmets"),
+		check("helm_drop", true, "rz_ball_helm_drop"),
+	})
+end
+
+local function gp_trade()
+	local gr = {
+		slide("ui_mcm_rz_trade_title"),
+		desc("d", "ui_mcm_rz_trade_info"),
+		line("l1"),
+		check("gamma", false, "rz_trade_gamma"),
+		line("l2"),
+		check("no_sell", true, "rz_trade_no_sell"),
+		check("no_buy", true, "rz_trade_no_buy"),
+		check("melee", false, "rz_trade_melee"),
+		desc("n", "ui_mcm_rz_trade_note", CLR_NOTE),
+		line("l3"),
+		desc("dh", "ui_mcm_rz_trade_helmets"),
+		check("helm_no_sell", false, "rz_trade_helm_no_sell"),
+		check("helm_no_buy", false, "rz_trade_helm_no_buy"),
+		line("l4"),
+		desc("ds", "ui_mcm_rz_stock_info"),
+		check("stock", false, "rz_stock"),
+	}
+	-- posuvniky omezeni zasob (rezone_mod_stock)
+	local S = rezone_mod_stock
+	if S then
+		for _, it in ipairs(S.GROUPS) do
+			local mx = (it[2] >= 10) and 40 or 15
+			gr[#gr + 1] = track(it[1], it[2], -1, mx, 1, "rz_" .. it[1])
+		end
+		gr[#gr + 1] = track("st_ammo", S.AMMO_DEFAULT, 0, 100, 5, "rz_st_ammo")
+		gr[#gr + 1] = track("st_random", S.RANDOM_DEFAULT, 0, 100, 5, "rz_st_random")
+		gr[#gr + 1] = desc("sn", "ui_mcm_rz_stock_note", CLR_NOTE)
+	end
+	return page("rz_trade", gr)
+end
+
+local function gp_prices()
+	local pr = rezone_prices
+	local content = {}
+	for i = 1, #pr.NAMES do content[#content + 1] = { i, "rz_price_" .. pr.NAMES[i] } end
+	local gr = {
+		slide("ui_mcm_rz_prices_title"),
+		desc("d", "ui_mcm_rz_prices_info"),
+		{ id = "warn", type = "desc", text = "ui_mcm_rz_prices_warn", clr = { 255, 230, 120, 90 },
+		  precondition = { function() return rezone_mod_prices and rezone_mod_prices.demonized_present() end } },
+		line("l1"),
+		check("enabled", false, "rz_prices_enabled"),
+		{ id = "preset", type = "preset", val = 2, def = pr.DEFAULT, content = content, presets = pr.PRESETS, hint = "rz_prices_preset" },
+		track("sell_all", 1, 0.1, 3, 0.05, "rz_prices_sell_all"),
+		track("buy_all", 1, 0.1, 3, 0.05, "rz_prices_buy_all"),
+	}
+	for gi, g in ipairs(pr.GROUPS) do
+		gr[#gr + 1] = line("lg" .. gi)
+		gr[#gr + 1] = desc("dg" .. gi, "ui_mcm_" .. g[1])
+		for _, k in ipairs(g[2]) do
+			gr[#gr + 1] = track(k, 1, 0, 5, 0.05, "rz_price_" .. k)
+		end
+	end
+	return page("rz_prices", gr)
+end
+
+local function gp_loot()
+	local pr = rezone_loot_presets
+	local d = pr.PRESETS[pr.DEFAULT]
+	local content = {}
+	for i = 1, #pr.NAMES do content[#content + 1] = { i, "rz_loot_" .. pr.NAMES[i] } end
+	local function pct(id) return track(id, d[id], 1, 100, 1, "rz_loot_" .. id) end
+	return page("rz_loot", {
+		slide("ui_mcm_rz_loot_title"),
+		desc("d", "ui_mcm_rz_loot_info"),
+		line("l1"),
+		check("enabled", false, "rz_loot_enabled"),
+		{ id = "preset", type = "preset", val = 2, def = pr.DEFAULT, content = content, presets = pr.PRESETS, hint = "rz_loot_preset" },
+		line("l2"),
+		desc("dw", "ui_mcm_rz_loot_weapons"),
+		pct("w_lo_min"), pct("w_lo_max"), pct("w_hi_min"), pct("w_hi_max"), pct("w_zmin"), pct("w_zmax"),
+		line("l3"),
+		desc("do", "ui_mcm_rz_loot_outfits"),
+		pct("o_lo_min"), pct("o_lo_max"), pct("o_hi_min"), pct("o_hi_max"), pct("o_zmin"), pct("o_zmax"),
+		line("l4"),
+		desc("da", "ui_mcm_rz_loot_ammo_h"),
+		track("ammo", d.ammo, 0.25, 5, 0.05, "rz_loot_ammo"),
+		check("no_special", false, "rz_loot_no_special"),
+	})
+end
+
+-- Artefakty v anomaliich (rezone_mod_afspawn): sance, bourky, vzacnost silnych artefaktu
+local function gp_afspawn()
+	local A = rezone_mod_afspawn
+	local d = A.PRESETS[A.PRESET_DEFAULT]
+	local content, rar = {}, {}
+	for i = 1, #A.PRESET_NAMES do content[#content + 1] = { i, "rz_afsp_p_" .. A.PRESET_NAMES[i] } end
+	for i = 1, #A.NAMES do rar[#rar + 1] = { i, "rz_afsp_r_" .. A.NAMES[i] } end
+	return page("rz_afsp", {
+		slide("ui_mcm_rz_afsp_title"),
+		desc("d", "ui_mcm_rz_afsp_info"),
+		line("l1"),
+		check("enabled", true, "rz_afsp_enabled"),
+		{ id = "preset", type = "preset", val = 2, def = A.PRESET_DEFAULT, content = content, presets = A.PRESETS, hint = "rz_afsp_preset" },
+		line("l2"),
+		track("chance", d.chance, 0, 3, 0.05, "rz_afsp_chance"),
+		track("surge", d.surge, 0, 3, 0.05, "rz_afsp_surge"),
+		track("psi", d.psi, 0, 3, 0.05, "rz_afsp_psi"),
+		{ id = "rarity", type = "list", val = 2, def = d.rarity, content = rar, hint = "rz_afsp_rarity" },
+		line("l3"),
+		desc("n", "ui_mcm_rz_afsp_note", CLR_NOTE),
+	})
+end
+
+-- Populace = vlastni reseni (rezone_mod_population), zadny dalsi mod neni potreba
+local function gp_population()
+	local P = rezone_mod_population
+	local d = P.PRESETS[P.DEFAULT]
+	local content = {}
+	for i = 1, #P.NAMES do content[#content + 1] = { i, "rz_pop_p_" .. P.NAMES[i] } end
+	local function tr(id, min, max, step) return track(id, d[id], min, max, step, "rz_pop_" .. id) end
+	local gr = {
+		slide("ui_mcm_rz_pop_title"),
+		desc("d", "ui_mcm_rz_pop_info"),
+		line("l1"),
+		check("enabled", false, "rz_pop_enabled"),
+		{ id = "preset", type = "preset", val = 2, def = P.DEFAULT, content = content, presets = P.PRESETS, hint = "rz_pop_preset" },
+		desc("pn", "ui_mcm_rz_pop_preset_note", CLR_NOTE),
+		line("l2"),
+		desc("dz", "ui_mcm_rz_pop_zone"),
+		tr("st_pop", 0, 3, 0.05),
+		tr("mu_pop", 0, 3, 0.05),
+		tr("respawn", 0.25, 4, 0.05),
+		line("l3"),
+		desc("ds", "ui_mcm_rz_pop_stalkers"),
+		tr("st_size", 0.5, 3, 0.05),
+		tr("st_var", 0, 1, 0.05),
+		check("st_random", d.st_random, "rz_pop_st_random"),
+		tr("st_random_ch", 1, 100, 1),
+		line("l4"),
+		desc("dm", "ui_mcm_rz_pop_mutants"),
+		tr("mu_size", 0.5, 3, 0.05),
+		tr("mu_var", 0, 1, 0.05),
+		check("mu_random", d.mu_random, "rz_pop_mu_random"),
+		tr("mu_random_ch", 1, 100, 1),
+		line("l5"),
+		desc("dr", "ui_mcm_rz_pop_rl"),
+		check("rl_enabled", false, "rz_pop_rl_enabled"),
+		{ id = "rl_max", type = "list", val = 2, def = 2, hint = "rz_pop_rl_max",
+		  content = { { 1, "rz_pop_rl_max_1" }, { 2, "rz_pop_rl_max_2" }, { 3, "rz_pop_rl_max_3" } } },
+		check("rl_bases", true, "rz_pop_rl_bases"),
+	}
+	for _, l in ipairs(P.RL_LEVELS) do gr[#gr + 1] = check(l[1], l[3], "rz_pop_" .. l[1]) end
+	if P.zcp_present() then
+		gr[#gr + 1] = line("l6")
+		gr[#gr + 1] = desc("zcp", "ui_mcm_rz_pop_zcp_warn", { 255, 230, 150, 80 })
+	end
+	return page("rz_pop", gr)
+end
+
+
+-- Toulavi stalkeri (rezone_mod_wander): skupiny prochazejici lokaci, zapinani po lokacich
+local function gp_wander()
+	local W = rezone_mod_wander
+	local gr = {
+		slide("ui_mcm_rz_walk_title"),
+		desc("d", "ui_mcm_rz_walk_info"),
+		line("l1"),
+		check("enabled", false, "rz_walk_enabled"),
+		track("max_squads", 2, 1, 6, 1, "rz_walk_max_squads"),
+		track("interval", 45, 10, 240, 5, "rz_walk_interval"),
+		{ id = "size", type = "list", val = 2, def = 2, hint = "rz_walk_size",
+		  content = { { 1, "rz_walk_size_1" }, { 2, "rz_walk_size_2" }, { 3, "rz_walk_size_3" } } },
+		track("lifetime", 8, 1, 24, 1, "rz_walk_lifetime"),
+		track("radius", 120, 60, 250, 10, "rz_walk_radius"),
+		line("l2"),
+		check("day_only", true, "rz_walk_day_only"),
+		track("day_start", 6, 0, 23, 1, "rz_walk_day_start"),
+		track("day_end", 20, 0, 23, 1, "rz_walk_day_end"),
+		check("wipe", true, "rz_walk_wipe"),
+		line("l3"),
+		desc("df", "ui_mcm_rz_walk_factions"),
+		check("native", true, "rz_walk_native"),
+	}
+	for _, f in ipairs(W.FACTIONS) do gr[#gr + 1] = check(f[2], f[3], "rz_walk_" .. f[2]) end
+	gr[#gr + 1] = line("l4")
+	gr[#gr + 1] = desc("dl", "ui_mcm_rz_walk_levels")
+	for _, l in ipairs(W.LEVELS) do gr[#gr + 1] = check("lv_" .. l[2], l[3], "rz_walk_lv_" .. l[2]) end
+	return page("rz_walk", gr)
+end
+------------------------------------------------------------
+-- ZDRAVI
+------------------------------------------------------------
+-- Artefakty (rezone_af_punish, rezone_af_fx): chemicke a elektricke artefakty bez kontejneru
+local function hp_artefacts()
+	return page("rz_af", {
+		slide("ui_mcm_menu_rzaf"),
+		desc("d", "ui_mcm_rzaf_desc"),
+		line("l1"),
+		check("punish", true, "rzaf_punish"),
+		track("punish_chance", 1, 0, 3, 0.05, "rzaf_punish_chance"),
+		track("punish_strength", 1, 0, 3, 0.05, "rzaf_punish_strength"),
+		line("l2"),
+		check("poison_fx", true, "rzaf_poison_fx"),
+		track("poison_fx_strength", 0.5, 0, 1.5, 0.05, "rzaf_poison_fx_strength"),
+		check("electro_fx", true, "rzaf_electro_fx"),
+		track("electro_fx_strength", 0.5, 0, 1.5, 0.05, "rzaf_electro_fx_strength"),
+		line("l3"),
+		desc("dh", "ui_mcm_rzaf_heal_info"),
+		check("efth_heal", true, "rzaf_efth_heal"),
+		track("efth_heal_mult", 1, 0, 3, 0.05, "rzaf_efth_heal_mult"),
+	})
+end
+
+local function hp_damage()
+	local pr = rezone_presets
+	local content = {}
+	for i = 1, #pr.NAMES do
+		content[#content + 1] = { i, "rz_pd_" .. pr.NAMES[i] }
+	end
+
+	local gr = {
+		slide("ui_mcm_rz_pdmg_title"),
+		desc("d", "ui_mcm_rz_pdmg_info"),
+		line("l1"),
+		{ id = "preset", type = "preset", val = 2, def = pr.DEFAULT, content = content, presets = pr.PRESETS, hint = "rz_pdmg_preset" },
+		desc("cn", "ui_mcm_rz_pdmg_cop_note", CLR_NOTE),
+		line("l3"),
+		desc("d_hit", "ui_mcm_rz_pdmg_hits"),
+	}
+	for i = 1, #pr.HIT_TYPES do
+		local k = pr.HIT_TYPES[i]
+		local def = pr.PRESETS[pr.DEFAULT][k] or 1
+		gr[#gr + 1] = track(k, def, 0, 3, 0.05, "rz_hit_" .. k)
+	end
+	return page("rz_pdmg", gr)
+end
+
+local function hp_mutants()
+	local gr = {
+		slide("ui_mcm_rz_muthp_title"),
+		desc("d", "ui_mcm_rz_muthp_info"),
+		line("l1"),
+		check("enabled", false, "rz_muthp_enabled"),
+		track("all", 1, 0.25, 3, 0.05, "rz_muthp_all"),
+		line("l2"),
+	}
+	for i = 1, #MUTANT_SPECIES do
+		local s = MUTANT_SPECIES[i]
+		gr[#gr + 1] = track(s, 1, 0.25, 3, 0.05, "rz_sp_" .. s)
+	end
+	local rs = false
+	for i = 1, #RS_SPECIES do
+		if rs_installed(RS_SPECIES[i][2]) then
+			if not rs then rs = true; gr[#gr + 1] = line("l_rs"); gr[#gr + 1] = desc("d_rs", "ui_mcm_rz_muthp_rs") end
+			gr[#gr + 1] = track(RS_SPECIES[i][1], 1, 0.25, 3, 0.05, "rz_sp_" .. RS_SPECIES[i][1])
+		end
+	end
+	return page("rz_muthp", gr)
+end
+
+-- Sila utoku mutantu: nasobic poskozeni, ktere mutant da hraci (podle druhu)
+local function hp_mutdmg()
+	local gr = {
+		slide("ui_mcm_rz_mutdmg_title"),
+		desc("d", "ui_mcm_rz_mutdmg_info"),
+		line("l1"),
+		check("enabled", false, "rz_mutdmg_enabled"),
+		track("all", 1, 0.1, 3, 0.05, "rz_mutdmg_all"),
+		line("l2"),
+	}
+	for i = 1, #MUTANT_SPECIES do
+		local s = MUTANT_SPECIES[i]
+		gr[#gr + 1] = track(s, 1, 0.1, 3, 0.05, "rz_sp_" .. s)
+	end
+	local rs = false
+	for i = 1, #RS_SPECIES do
+		if rs_installed(RS_SPECIES[i][2]) then
+			if not rs then rs = true; gr[#gr + 1] = line("l_rs"); gr[#gr + 1] = desc("d_rs", "ui_mcm_rz_muthp_rs") end
+			gr[#gr + 1] = track(RS_SPECIES[i][1], 1, 0.1, 3, 0.05, "rz_sp_" .. RS_SPECIES[i][1])
+		end
+	end
+	return page("rz_mutdmg", gr)
+end
+
+------------------------------------------------------------
+-- OSTATNI
+------------------------------------------------------------
+-- Efekty: vypnuti obrazovych efektu (PPE) radiace, poltergeista a controllera (rezone_mod_fx)
+local function ot_fx()
+	return page("rz_fx", {
+		slide("ui_mcm_rz_fx_title"),
+		desc("d", "ui_mcm_rz_fx_info"),
+		line("l1"),
+		check("rad", false, "rz_fx_rad"),
+		check("polter", false, "rz_fx_polter"),
+		check("contr", false, "rz_fx_contr"),
+		check("psy_other", false, "rz_fx_psy_other"),
+		line("l2"),
+		desc("n", "ui_mcm_rz_fx_note", CLR_NOTE),
+	})
+end
+
+-- Hlavni menu: video na pozadi (modxml_rezone_mm_video)
+local function ot_menu()
+	local content = modxml_rezone_mm_video and modxml_rezone_mm_video.mcm_content() or { { "default", "default" } }
+	return page("rz_menu", {
+		slide("ui_mcm_rz_menu_title"),
+		desc("d", "ui_mcm_rz_menu_info"),
+		line("l1"),
+		{ id = "mm_bg_video", type = "list", val = 0, def = "default", content = content, no_str = true, hint = "rz_menu_mm_bg_video" },
+		desc("n", "ui_mcm_rz_menu_note", CLR_NOTE),
+	})
+end
+
+local function ot_debug()
+	return page("rz_debug", {
+		slide("ui_mcm_rz_debug_title"),
+		desc("ver", "ui_mcm_rz_about"),
+		line("l1"),
+		check("debug", false, "rz_debug_debug"),
+	})
+end
+
+------------------------------------------------------------
+-- HLAVNI: jedna predvolba pro vsechno (rezone_master)
+------------------------------------------------------------
+local function main_master()
+	local content = {}
+	for i = 0, #rezone_master.NAMES do content[#content + 1] = { i, "rz_master_" .. rezone_master.NAMES[i] } end
+	return page("rz_master", {
+		slide("ui_mcm_rz_master_title"),
+		desc("d", "ui_mcm_rz_master_info"),
+		line("l1"),
+		{ id = "master", type = "list", val = 2, def = 0, content = content, hint = "rz_master" },
+		line("l2"),
+		desc("d1", "ui_mcm_rz_master_cop_info"),
+		desc("d2", "ui_mcm_rz_master_trilogy_info"),
+		desc("d3", "ui_mcm_rz_master_hardcore_info"),
+		line("l3"),
+		desc("n", "ui_mcm_rz_master_note", CLR_NOTE),
+	})
+end
+
+------------------------------------------------------------
+function build_tree()
+	local L = rezone_links
+	local gp = { gp_trade(), gp_prices(), gp_loot() }
+	if rezone_mod_afspawn then gp[#gp + 1] = gp_afspawn() end
+	if rezone_mod_population then gp[#gp + 1] = gp_population() end
+	if rezone_mod_wander then rezone_mod_wander.read_cfg(); gp[#gp + 1] = gp_wander() end
+	gp[#gp + 1] = gp_ballistics()
+	gp[#gp + 1] = gp_craft()
+	gp[#gp + 1] = L.build_page(TAB_GP)
+	return {
+		id = ROOT,
+		gr = {
+			{ id = TAB_MAIN, gr = { main_master() } },
+			{ id = TAB_GP, gr = gp },
+			{ id = TAB_HP, gr = { hp_damage(), hp_mutants(), hp_mutdmg(), hp_artefacts(), L.build_page(TAB_HP) } },
+			{ id = TAB_OT, gr = { ot_fx(), ot_menu(), L.build_page(TAB_OT), ot_debug() } },
+		},
+	}
+end
+
+function on_mcm_load()
+	rezone_links.reset() -- znovu nacist LTX pri kazdem sestaveni MCM
+	-- predvolba hry musi oznacit vsechny volby i v hlavnim menu (on_game_start tam nebezi)
+	if rezone_master and rezone_master.hook_gui then pcall(rezone_master.hook_gui) end
+	-- video v hlavnim menu: zmena hned po Pouzit i bez nacteni hry
+	if modxml_rezone_mm_video and modxml_rezone_mm_video.ensure_live then pcall(modxml_rezone_mm_video.ensure_live) end
+	return build_tree()
+end

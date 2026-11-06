@@ -1,0 +1,312 @@
+--[[
+	ReZone MCM - toulavi stalkeri (Gameplay > Toulavi stalkeri)
+
+	Male skupiny stalkeru prochazeji lokaci od mista k mistu (vanilla "target_random_smart"
+	chovani skupin - zadny prepis sim_board ani smart_terrain). Vlastni reseni ReZone.
+	- spawnuji se jen na zapnutych lokacich z configs\rezone\wander.ltx (laboratore tam nejsou)
+	- nikdy blizko hrace a nikdy na zakladnach frakci nebo v [exclude_smarts]
+	- v noci (volitelne), po case nebo po vypnuti lokace zmizi - jen daleko od hrace / offline
+	- po odchodu z lokace se smazou (volitelne), pri emisi a psi bouri nevznikaji
+	- skupina, ktera se stane spolecnikem hrace, se uz nesleduje a zustane
+	Kontrola bezi jednou za 5 s realneho casu, jen kdyz je modul zapnuty.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_walk"
+local CFG_FILE = "rezone\\wander.ltx"
+local TICK = 5000
+
+-- ---------------------------------------------------------------- konfigurace z LTX
+LEVELS = {}      -- poradi pro MCM: { lvl, opt, def, tier }
+FACTIONS = {}    -- { fac, opt, def, prefix, prop }
+local LV, EXCL = {}, {}
+
+local function split(s)
+	local t = {}
+	for v in string.gmatch(s or "", "[^,]+") do t[#t + 1] = v:match("^%s*(.-)%s*$") end
+	return t
+end
+
+function read_cfg()
+	if #LEVELS > 0 then return end
+	local ini = ini_file(CFG_FILE)
+	if not ini then core.warn("toulavi stalkeri: chybi configs\\%s", CFG_FILE) return end
+	local function each(sec, fn)
+		if not ini:section_exist(sec) then return end
+		for i = 0, ini:line_count(sec) - 1 do
+			local _, k, v = ini:r_line(sec, i, "", "")
+			if k and k ~= "" then fn(k, v) end
+		end
+	end
+	each("levels", function(k, v)
+		local p = split(v)
+		if p[1] then
+			local e = { k, p[1], p[2] ~= "false", tonumber(p[3]) or 2 }
+			LEVELS[#LEVELS + 1] = e
+			LV[k] = e
+		end
+	end)
+	each("factions", function(k, v)
+		local p = split(v)
+		if p[1] and p[3] then FACTIONS[#FACTIONS + 1] = { k, p[1], p[2] ~= "false", p[3], p[4] or k } end
+	end)
+	each("exclude_smarts", function(k) EXCL[k] = true end)
+end
+
+-- ---------------------------------------------------------------- nastaveni
+local cfg = { on = false }
+
+function load()
+	read_cfg()
+	local g = core.page(PAGE)
+	cfg.on       = g("enabled") == true
+	cfg.max      = tonumber(g("max_squads")) or 2
+	cfg.interval = tonumber(g("interval")) or 45
+	cfg.size     = tonumber(g("size")) or 2
+	cfg.day_only = g("day_only") ~= false
+	cfg.day_s    = tonumber(g("day_start")) or 6
+	cfg.day_e    = tonumber(g("day_end")) or 20
+	cfg.radius   = tonumber(g("radius")) or 120
+	cfg.life     = tonumber(g("lifetime")) or 8
+	cfg.native   = g("native") ~= false
+	cfg.wipe     = g("wipe") ~= false
+	cfg.levels, cfg.factions = {}, {}
+	for _, l in ipairs(LEVELS) do cfg.levels[l[1]] = g("lv_" .. l[2]) == true end
+	for _, f in ipairs(FACTIONS) do
+		if g(f[2]) == true then cfg.factions[#cfg.factions + 1] = f end
+	end
+	core.log("toulavi stalkeri: %s", cfg.on and "zapnuto" or "vypnuto")
+end
+
+-- ---------------------------------------------------------------- stav (uklada se)
+local squads = {}        -- [id] = { lvl = nazev lokace, born = herni minuty, tg = { nazvy smartu } }
+local game_min = 0       -- herni minuty od nacteni (jen pro casovani)
+local next_spawn = nil
+local last_tg = nil
+
+local smart_cache = {}   -- [lvl] = { smarts = {...}, props = { [prop] = true } }
+
+local function level_name_of(se)
+	local gg, sim = game_graph(), alife()
+	if not (gg and sim and se and se.m_game_vertex_id) then return end
+	return sim:level_name(gg:vertex(se.m_game_vertex_id):level_id())
+end
+
+local function smarts_on(lvl)
+	local c = smart_cache[lvl]
+	if c then return c end
+	c = { list = {}, props = {} }
+	for id, s in pairs(SIMBOARD and SIMBOARD.smarts or {}) do
+		local smrt = s.smrt
+		if smrt and level_name_of(smrt) == lvl then
+			local props = smrt.props or {}
+			for k, v in pairs(props) do if (tonumber(v) or 0) > 0 then c.props[k] = true end end
+			local name = smrt:name()
+			if (tonumber(props.base) or 0) <= 0 and not EXCL[name] then
+				c.list[#c.list + 1] = { id = id, name = name, pos = smrt.position }
+			end
+		end
+	end
+	smart_cache[lvl] = c
+	return c
+end
+
+local function is_day()
+	local h = level.get_time_hours() + level.get_time_minutes() / 60
+	if cfg.day_s < cfg.day_e then return h >= cfg.day_s and h < cfg.day_e end
+	return h >= cfg.day_s or h < cfg.day_e
+end
+
+local function storm()
+	return (surge_manager and surge_manager.is_started and surge_manager.is_started())
+		or (psi_storm_manager and psi_storm_manager.is_started and psi_storm_manager.is_started())
+end
+
+-- daleko od hrace nebo offline = lze smazat / spawnout bez povsimnuti
+local function far(pos)
+	return db.actor:position():distance_to_xz(pos) > cfg.radius
+end
+
+local function removable(se)
+	if not se.online then return true end
+	for m in se:squad_members() do
+		local o = m.object or alife_object(m.id)
+		if o and not far(o.position) then return false end
+	end
+	return true
+end
+
+local function is_companion(id)
+	return axr_companions and axr_companions.companion_squads and axr_companions.companion_squads[id]
+end
+
+local function remove(id)
+	local se = alife_object(id)
+	if se and se.remove_squad then
+		local ok, err = pcall(se.remove_squad, se)
+		if not ok then core.warn("toulavi stalkeri: smazani %s: %s", id, tostring(err)) end
+	end
+	squads[id] = nil
+end
+
+-- vanilla chovani: skupina chodi po nahodnych smartech ze seznamu a na kazdem chvili postoji
+local function set_walk(se, d)
+	se.random_targets = d.tg
+	se.idle_time = math.random(10, 30) * 60
+	se.assigned_target_id = nil
+	se.current_action = 0
+end
+
+local npc_lists = {}
+local function npc_list(sec)
+	local l = npc_lists[sec]
+	if not l then
+		l = {}
+		for _, s in ipairs(split(ini_sys:r_string_ex(sec, "npc_random"))) do
+			if ini_sys:section_exist(s) then l[#l + 1] = s end
+		end
+		npc_lists[sec] = l
+	end
+	return l
+end
+
+local SIZES = { [1] = { 1, 2 }, [2] = { 2, 3 }, [3] = { 3, 4 } }
+
+local function spawn(lvl)
+	local L = LV[lvl]
+	local c = smarts_on(lvl)
+	if #c.list < 2 then return end
+
+	-- frakce: zapnute, volitelne jen ty, co na lokaci opravdu ziji
+	local fl = {}
+	for _, f in ipairs(cfg.factions) do
+		if not cfg.native or c.props[f[5]] then fl[#fl + 1] = f end
+	end
+	if #fl == 0 then return end
+	local f = fl[math.random(#fl)]
+	local sec = "rz_wander_" .. f[1] .. "_" .. math.min(3, math.max(1, L[4]))
+	if not ini_sys:section_exist(sec) then return end
+
+	-- start daleko od hrace, cile = 3-5 jinych mist na lokaci
+	local starts = {}
+	for _, s in ipairs(c.list) do if far(s.pos) then starts[#starts + 1] = s end end
+	if #starts == 0 then return end
+	local st = starts[math.random(#starts)]
+	local pool, tg = {}, {}
+	for _, s in ipairs(c.list) do if s.id ~= st.id then pool[#pool + 1] = s.name end end
+	for _ = 1, math.min(#pool, math.random(3, 5)) do
+		tg[#tg + 1] = table.remove(pool, math.random(#pool))
+	end
+
+	local smart = alife_object(st.id)
+	if not smart then return end
+	local ok, sq = pcall(SIMBOARD.create_squad, SIMBOARD, smart, sec)
+	if not (ok and sq) then
+		if not ok then core.warn("toulavi stalkeri: %s: %s", sec, tostring(sq)) end
+		return
+	end
+
+	local sz = SIZES[cfg.size] or SIZES[2]
+	local n = math.random(sz[1], sz[2])
+	local list = npc_list(sec)
+	for _ = 2, n do
+		if #list == 0 then break end
+		sq:add_squad_member(list[math.random(#list)], smart.position, smart.m_level_vertex_id, smart.m_game_vertex_id)
+	end
+	for m in sq:squad_members() do
+		local se = m.object or alife_object(m.id)
+		if se then SIMBOARD:setup_squad_and_group(se) end
+	end
+
+	local d = { lvl = lvl, born = game_min, tg = tg }
+	squads[sq.id] = d
+	set_walk(sq, d)
+	core.log("toulavi stalkeri: %s (%d) na %s -> %s", sec, n, st.name, table.concat(tg, ", "))
+end
+
+-- ---------------------------------------------------------------- hlavni smycka
+local function tick()
+	local tg = time_global()
+	if last_tg and tg - last_tg < TICK then return end
+	local dt = last_tg and (tg - last_tg) or 0
+	last_tg = tg
+	if not cfg.on and next(squads) == nil then return end
+	game_min = game_min + dt / 1000 * (level.get_time_factor() or 10) / 60
+
+	if not (db.actor and level.present()) then return end
+	local lvl = level.name()
+	local day = is_day()
+	local count = 0
+
+	for id, d in pairs(squads) do
+		local se = alife_object(id)
+		if not se or se:npc_count() == 0 then
+			squads[id] = nil
+		elseif is_companion(id) then
+			squads[id] = nil                                   -- spolecnik hrace zustane
+		elseif d.lvl ~= lvl then
+			remove(id)                                         -- hrac je jinde, skupina je offline
+		else
+			local leave = not cfg.on or not cfg.levels[lvl] or (cfg.day_only and not day)
+				or (game_min - (d.born or 0)) > cfg.life * 60
+			if leave and removable(se) then
+				remove(id)
+			else
+				count = count + 1
+			end
+		end
+	end
+
+	if not cfg.on or not cfg.levels[lvl] or not LV[lvl] then return end
+	if cfg.day_only and not day then return end
+	if storm() or count >= cfg.max then return end
+
+	if not next_spawn then next_spawn = game_min + cfg.interval * (0.25 + math.random() * 0.5) end
+	if game_min < next_spawn then return end
+	next_spawn = game_min + cfg.interval * (0.5 + math.random())
+	local ok, err = pcall(spawn, lvl)
+	if not ok then core.warn("toulavi stalkeri: %s", tostring(err)) end
+end
+
+local function on_first_update()
+	smart_cache = {}
+	for id, d in pairs(squads) do
+		local se = alife_object(id)
+		if se and d.tg then set_walk(se, d) end             -- random_targets se do savu neuklada
+	end
+end
+
+local function on_before_level_changing()
+	if not cfg.wipe then return end
+	for id in pairs(squads) do
+		if not is_companion(id) then remove(id) end
+	end
+end
+
+local function save_state(m)
+	local out, n = {}, 0
+	for id, d in pairs(squads) do
+		out[id] = { lvl = d.lvl, born = 0, tg = d.tg }   -- vek se po nacteni pocita znovu
+		n = n + 1
+	end
+	m.rz_wander = n > 0 and out or nil
+end
+
+local function load_state(m)
+	squads = {}
+	for id, d in pairs(m.rz_wander or {}) do
+		if type(d) == "table" and type(d.lvl) == "string" then
+			squads[tonumber(id) or id] = { lvl = d.lvl, born = 0, tg = type(d.tg) == "table" and d.tg or {} }
+		end
+	end
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+	RegisterScriptCallback("actor_on_update", tick)
+	RegisterScriptCallback("actor_on_first_update", on_first_update)
+	RegisterScriptCallback("on_before_level_changing", on_before_level_changing)
+	RegisterScriptCallback("save_state", save_state)
+	RegisterScriptCallback("load_state", load_state)
+end

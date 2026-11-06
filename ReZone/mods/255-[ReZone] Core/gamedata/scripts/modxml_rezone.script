@@ -1,0 +1,24 @@
+--[[
+	ReZone - DXML: pridani do vanilla XML pri nacteni (zadny soubor se neprepisuje)
+	- obrazek clanku Zname recepty v PDA (crafting)
+	- efekty na obrazovce od artefaktu (HUD)
+	- dialog selekce artefaktu pro Lesnika (Rudy les) - rezone_af_breed
+--]]
+
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		if xml_file_name == [[ui\textures_descr\ui_pda_encyclopedia.xml]] then
+			xml_obj:insertFromXMLString([[
+<file name="ui\guide\encyclopedia_notes">
+	<texture id="encyclopedia__notes__rz_known_recipes_image" x="512" y="256" width="512" height="256"/>
+</file>]])
+		elseif xml_file_name == [[ui\ui_custom_msgs.xml]] then
+			xml_obj:insertFromXMLFile([[ui\ui_rzaf_effects.xml]])
+		elseif xml_file_name == [[gameplay\character_desc_red_forest.xml]] then
+			local res = xml_obj:query("specific_character[id=red_forester_tech]")
+			if res and res[1] then
+				xml_obj:insertFromXMLString("<actor_dialog>rz_breed_dialog</actor_dialog>", res[1])
+			end
+		end
+	end)
+end

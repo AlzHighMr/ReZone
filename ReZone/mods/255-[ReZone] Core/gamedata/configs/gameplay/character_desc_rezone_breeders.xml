@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xml>
+<!-- ReZone - selekcionari artefaktu -->
+
+<specific_character id="zat_stalker_breeder" team_default="1">
+	<name>zat_stalker_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>zat_stalker_breeder</class>
+	<community>stalker</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\stalker\</snd_config>
+	<rank>35</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\stalker_ucheniy\stalker_ucheniy_1</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_pm \n
+		ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="jup_stalker_breeder" team_default="1">
+	<name>jup_stalker_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>jup_stalker_breeder</class>
+	<community>stalker</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_03\stalker\</snd_config>
+	<rank>700</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_3</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_beretta \n
+		ammo_9x19_pbp = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="jup_ecolog_breeder" team_default="1">
+	<name>jup_ecolog_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>jup_ecolog_breeder</class>
+	<community>ecolog</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\stalker\</snd_config>
+	<rank>700</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_4</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="pri_army_breeder" team_default="1">
+	<name>pri_army_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>pri_army_breeder</class>
+	<community>army</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\military\</snd_config>
+	<rank>700</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_1_strong</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_beretta \n
+		ammo_9x19_pbp = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="esc_stalker_breeder" team_default="1">
+	<name>esc_stalker_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>esc_stalker_breeder</class>
+	<community>stalker</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_01\stalker\</snd_config>
+	<rank>35</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\stalker_ucheniy\stalker_ucheniy_1</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_pm \n
+		ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="mar_csky_breeder" team_default="1">
+	<name>mar_csky_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>mar_csky_breeder</class>
+	<community>csky</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_01\stalker\</snd_config>
+	<rank>300</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_3</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_pm \n
+		ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="agr_army_breeder" team_default="1">
+	<name>agr_army_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>agr_army_breeder</class>
+	<community>army</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\military\</snd_config>
+	<rank>300</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_1_strong</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_pm \n
+		ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="bar_stalker_breeder" team_default="1">
+	<name>bar_stalker_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>bar_stalker_breeder</class>
+	<community>stalker</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\stalker\</snd_config>
+	<rank>300</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_4</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_pm \n
+		ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="mil_freedom_breeder" team_default="1">
+	<name>mil_freedom_breeder_name</name>
+	<icon>ui_inGame2_ecolog_military</icon>
+	<map_icon x="1" y="0"></map_icon>
+	<bio>st_rz_brd_bio</bio>
+	<class>mil_freedom_breeder</class>
+	<community>freedom</community>
+	<terrain_sect>stalker_terrain</terrain_sect>
+	<snd_config>characters_voice\human_02\freedom\</snd_config>
+	<rank>500</rank>
+	<reputation>0</reputation>
+	<money min="3400" max="3900" infinitive="0" />
+	<visual>actors\ucheniy\ucheniy_3</visual>
+	<supplies>
+		[spawn] \n
+		device_torch \n
+		wpn_beretta \n
+		ammo_9x19_pbp = 1 \n
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+	</supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>rz_breed_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+</xml>

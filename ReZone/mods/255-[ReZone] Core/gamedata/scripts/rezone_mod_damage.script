@@ -1,0 +1,55 @@
+--[[
+	ReZone MCM - poskozeni hrace (Zdravi > Poskozeni hrace)
+	- JEDINE misto, kde se meni poskozeni, ktere dostane hrac: nasobic podle typu zasahu
+	- vsechno na 1 = handler se odregistruje, ReZone se zasahu vubec nedotkne
+	- nasobi se v actor_on_before_hit, tedy pred brnenim a pred EFT Health System
+	  (poskozeni je v sile zasahu linearni, vysledek je stejny jako po brneni)
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_pdmg"
+local EPS = 0.0001
+
+local by_type = {}     -- [hit.<typ>] = nasobic
+local registered = false
+
+local HIT_ID = {}
+for _, k in ipairs(rezone_presets.HIT_TYPES) do
+	if hit[k] then HIT_ID[k] = hit[k] end
+end
+
+local function actor_on_before_hit(shit, bone_id, flags)
+	if not (shit and shit.power > 0) then return end
+	local m = by_type[shit.type]
+	if m then shit.power = shit.power * m end
+end
+
+local function set_registered(on)
+	if on == registered then return end
+	registered = on
+	if on then
+		RegisterScriptCallback("actor_on_before_hit", actor_on_before_hit)
+	else
+		UnregisterScriptCallback("actor_on_before_hit", actor_on_before_hit)
+	end
+	core.log("poskozeni hrace: %s", on and "zapnuto" or "vse x1, vypnuto")
+end
+
+function load()
+	local g = core.page(PAGE)
+	by_type = {}
+	local any = false
+	for k, id in pairs(HIT_ID) do
+		local m = tonumber(g(k)) or 1
+		if math.abs(m - 1) > EPS then
+			by_type[id] = m		-- v tabulce jen to, co se opravdu meni
+			any = true
+		end
+	end
+	set_registered(any)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

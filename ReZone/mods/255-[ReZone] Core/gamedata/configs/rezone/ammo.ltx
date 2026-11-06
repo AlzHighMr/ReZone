@@ -1,0 +1,984 @@
+; ReZone - data munice (vlastni format). Klice:
+;  hit     nasobic poskozeni      ap      pruraznost (0.05 = jedna trida brneni)
+;  impact  tupy naraz (kdyz neprorazi)  pen  ztrata pri prostrelu   hp  rozsireni (hollow point)
+;  effect  zvlastni efekt (rezone_ammo_fx)   on_impact / on_shoot  efekt pri dopadu / vystrelu
+;  wear    opotrebeni zbrane (1 = vanilla)   downgrade / downgrade_chance  horsi naboj u NPC a obchodniku
+;  price   cena krabice   name  textove id nazvu   tag  stitek v popisku
+
+[ammo_base]
+effect = none
+
+; ---------------- pistol
+
+[ammo_9x18_fmj]:ammo_base
+name     = ammo_new_9x18_fmj
+hit      = 1
+ap       = 0.06
+impact   = 0.3
+price    = 450
+
+[ammo_9x18_fmj_bad]:ammo_9x18_fmj
+name     = ammo_new_9x18_plus
+hit      = 1.3
+ap       = 0.0625
+impact   = 0.4
+wear     = 1.25
+price    = 900
+downgrade= ammo_9x18_fmj
+downgrade_chance= 0.3
+
+[ammo_9x18_pmm]:ammo_base
+name     = ammo_new_9x18_hp
+hit      = 1
+ap       = 0.049
+impact   = 0.27
+hp       = 1.5
+price    = 550
+tag      = hp
+
+[ammo_9x18_pmm_bad]:ammo_9x18_pmm
+name     = ammo_new_9x18_sp7
+hit      = 1.05
+ap       = 0.069
+impact   = 0.35
+hp       = 1.65
+varma    = 1.15
+wear     = 1.25
+price    = 1216
+tag      = varma
+downgrade= ammo_9x18_pmm
+downgrade_chance= 0.3
+
+[ammo_9x18_ap]:ammo_base
+name     = ammo_new_9x18_ap
+hit      = 0.95
+ap       = 0.135
+impact   = 0.3
+pen      = 0.3
+price    = 840
+downgrade= ammo_9x18_fmj
+downgrade_chance= 0.5
+
+[ammo_9x18_ap_bad]:ammo_9x18_ap
+name     = ammo_new_9x18_7n25
+hit      = 0.8
+ap       = 0.2
+pen      = 0.4
+wear     = 1.25
+price    = 1450
+downgrade= ammo_9x18_ap
+downgrade_chance= 0.6
+tag      = ambush
+
+[ammo_9x19_fmj]:ammo_base
+name     = ammo_new_9x19_fmj
+hit      = 1
+ap       = 0.095
+impact   = 0.35
+price    = 600
+
+[ammo_9x19_fmj_bad]:ammo_9x19_fmj
+name     = ammo_new_9x19_plus
+hit      = 1.2
+ap       = 0.11
+impact   = 0.4
+wear     = 1.25
+price    = 1125
+downgrade= ammo_9x19_fmj
+downgrade_chance= 0.3
+
+[ammo_9x19_pbp]:ammo_base
+name     = ammo_new_9x19_pbp
+hit      = 1
+ap       = 0.055
+impact   = 0.33
+hp       = 1.5
+price    = 750
+tag      = hp
+
+[ammo_9x19_pbp_bad]:ammo_9x19_pbp
+effect   = flinch
+name     = ammo_new_9x19_pbps
+hit      = 1
+ap       = 0.1
+impact   = 0.4
+hp       = 1.1
+flinch   = 1
+wear     = 1.1
+price    = 1759
+tag      = flinch
+downgrade= ammo_9x19_pbp
+downgrade_chance= 0.35
+
+[ammo_9x19_ap]:ammo_base
+name     = ammo_new_9x19_ap
+hit      = 0.9
+pen      = 0.4
+ap       = 0.195
+impact   = 0.4
+price    = 1350
+downgrade= ammo_9x19_fmj
+downgrade_chance= 0.6
+
+[ammo_9x19_ap_bad]:ammo_9x19_ap
+name     = ammo_new_9x19_7n31
+hit      = 0.85
+ap       = 0.225
+pen      = 0.5
+impact   = 0.4
+wear     = 1.25
+price    = 2250
+downgrade= ammo_9x19_ap
+downgrade_chance= 0.7
+
+[ammo_11.43x23_fmj]:ammo_base
+name     = ammo_new_11.43x23_fmj
+hit      = 1.3
+ap       = 0.09
+impact   = 0.45
+price    = 800
+
+[ammo_11.43x23_fmj_bad]:ammo_11.43x23_fmj
+name     = ammo_new_11.43x23_fmjs
+hit      = 1.1
+ap       = 0.155
+impact   = 0.5
+wear     = 1.15
+price    = 1300
+downgrade= ammo_11.43x23_fmj
+downgrade_chance= 0.6
+
+[ammo_11.43x23_hydro]:ammo_base
+effect   = varma
+name     = ammo_new_11.43x23_hp
+hit      = 1.2
+ap       = 0.029
+impact   = 0.4
+hp       = 1.5
+price    = 1000
+tag      = hp
+downgrade= ammo_11.43x23_fmj
+downgrade_chance= 0.4
+
+[ammo_11.43x23_hydro_bad]:ammo_11.43x23_hydro
+effect   = rip
+name     = ammo_new_11.43x23_hydro
+hit      = 0.75
+ap       = 0.069
+impact   = 0.45
+hp       = 3
+wear     = 1.3
+price    = 1669
+tag      = rip
+downgrade= ammo_11.43x23_hydro
+downgrade_chance= 0.7
+
+[ammo_357_hp_mag]:ammo_base
+name     = ammo_new_357_hp
+hit      = 1.35
+hp       = 1.6
+impact   = 0.6
+ap       = 0.125
+price    = 1430
+tag      = hp
+
+[ammo_357_hp_mag_bad]:ammo_357_hp_mag
+effect   = headshot
+name     = ammo_new_357_jfp
+hit      = 1.4
+ap       = 0.199
+impact   = 0.6
+hp       = 1.2
+wear     = 1.5
+price    = 2235
+tag      = head
+downgrade= ammo_357_hp_mag
+downgrade_chance= 0.8
+
+[ammo_7.62x25_p]:ammo_base
+name     = ammo_new_7.62x25_p
+hit      = 0.8
+impact   = 0.4
+ap       = 0.14
+price    = 650
+
+[ammo_7.62x25_p_bad]:ammo_7.62x25_p
+name     = ammo_new_7.62x25_ps
+hit      = 0.8
+ap       = 0.165
+price    = 1120
+downgrade= ammo_7.62x25_p
+downgrade_chance= 0.4
+
+[ammo_7.62x25_ps]:ammo_base
+name     = ammo_new_7.62x25_hp
+hit      = 0.8
+ap       = 0.075
+impact   = 0.35
+hp       = 1.6
+price    = 940
+tag      = hp
+
+[ammo_7.62x25_ps_bad]:ammo_7.62x25_ps
+effect   = acid
+name     = ammo_new_7.62x25_cor
+hit      = 0.8
+ap       = 0.149
+hp       = 1
+wear     = 1.5
+price    = 2700
+tag      = acid
+on_shoot = muzzle_acid
+downgrade= ammo_7.62x25_ps
+downgrade_chance= 0.7
+acid     = 0.2
+
+[ammo_5.7x28_ss190]:ammo_base
+name     = ammo_new_5.7x28_fmj
+hit      = 0.9
+ap       = 0.165
+impact   = 0.3
+pen      = 0.5
+price    = 940
+
+[ammo_5.7x28_ss190_bad]:ammo_5.7x28_ss190
+name     = ammo_new_5.7x28_ss190
+hit      = 0.75
+ap       = 0.225
+pen      = 0.7
+price    = 2200
+downgrade= ammo_5.7x28_ss190
+downgrade_chance= 0.6
+
+[ammo_5.7x28_ss195]:ammo_base
+name     = ammo_new_5.7x28_ss195
+hit      = 1
+ap       = 0.1
+impact   = 0.3
+hp       = 1.4
+price    = 1275
+tag      = hp
+
+[ammo_5.7x28_ss195_bad]:ammo_5.7x28_ss195
+effect   = chaos
+name     = ammo_new_5.7x28_chaos
+hit      = 0.8
+ap       = 0.175
+hp       = 1
+pen      = 0.5
+price    = 3125
+tag      = chaos
+on_shoot = muzzle_grav
+downgrade= ammo_5.7x28_ss190
+downgrade_chance= 0.7
+
+[ammo_9x18_fmj_verybad]:ammo_9x18_fmj
+downgrade= ammo_9x18_fmj
+downgrade_chance= 1
+
+[ammo_9x18_pmm_verybad]:ammo_9x18_pmm
+downgrade= ammo_9x18_pmm
+downgrade_chance= 1
+
+[ammo_9x18_ap_verybad]:ammo_9x18_ap
+downgrade= ammo_9x18_ap
+downgrade_chance= 1
+
+[ammo_9x19_fmj_verybad]:ammo_9x19_fmj
+downgrade= ammo_9x19_fmj
+downgrade_chance= 1
+
+[ammo_9x19_pbp_verybad]:ammo_9x19_pbp
+downgrade= ammo_9x19_pbp
+downgrade_chance= 1
+
+[ammo_9x19_ap_verybad]:ammo_9x19_ap
+downgrade= ammo_9x19_ap
+downgrade_chance= 1
+
+[ammo_5.7x28_ss190_verybad]:ammo_5.7x28_ss190
+downgrade= ammo_5.7x28_ss190
+downgrade_chance= 1
+
+[ammo_5.7x28_ss195_verybad]:ammo_5.7x28_ss195
+downgrade= ammo_5.7x28_ss195
+downgrade_chance= 1
+
+[ammo_7.62x25_p_verybad]:ammo_7.62x25_p
+downgrade= ammo_7.62x25_p
+downgrade_chance= 1
+
+[ammo_7.62x25_ps_verybad]:ammo_7.62x25_ps
+downgrade= ammo_7.62x25_ps
+downgrade_chance= 1
+
+[ammo_11.43x23_fmj_verybad]:ammo_11.43x23_fmj
+downgrade= ammo_11.43x23_fmj
+downgrade_chance= 1
+
+[ammo_11.43x23_hydro_verybad]:ammo_11.43x23_hydro_bad
+downgrade= ammo_11.43x23_hydro
+downgrade_chance= 1
+
+[ammo_357_hp_mag_verybad]:ammo_357_hp_mag_bad
+downgrade= ammo_357_hp_mag_bad
+downgrade_chance= 1
+; ---------------- rifle
+
+[ammo_5.45x39_fmj]:ammo_base
+name     = ammo_new_5.45x39_fmj
+hit      = 1
+hit_scale= 0.85
+ap       = 0.175
+pen      = 0.2
+impact   = 0.6
+wear     = 0.95
+price    = 1250
+
+[ammo_5.45x39_fmj_bad]:ammo_5.45x39_fmj
+effect   = terminal
+name     = ammo_new_5.45x39_fmjs
+hit      = 1
+ap       = 0.175
+price    = 1950
+downgrade= ammo_5.45x39_fmj
+downgrade_chance= 0.6
+tag      = terminal
+
+[ammo_5.45x39_ep]:ammo_base
+name     = ammo_new_5.45x39_hp
+hit      = 1
+hit_scale= 0.85
+ap       = 0.12
+impact   = 0.55
+hp       = 1.45
+wear     = 1
+price    = 1550
+tag      = hp
+
+[ammo_5.45x39_ep_bad]:ammo_5.45x39_ep
+effect   = flinch
+name     = ammo_new_5.45x39_sp
+hit      = 1
+ap       = 0.15
+impact   = 0.6
+hp       = 1.2
+wear     = 1.1
+tag      = flinch
+price    = 1750
+downgrade= ammo_5.45x39_ep
+downgrade_chance= 0.4
+
+[ammo_5.45x39_ap]:ammo_base
+name     = ammo_new_5.45x39_ap
+hit      = 0.93
+hit_scale= 0.85
+ap       = 0.245
+impact   = 0.6
+pen      = 0.5
+wear     = 1.1
+price    = 2210
+downgrade= ammo_5.45x39_fmj
+downgrade_chance= 0.2
+
+[ammo_5.45x39_ap_bad]:ammo_5.45x39_ap
+name     = ammo_new_5.45x39_aps
+hit      = 0.85
+ap       = 0.295
+pen      = 0.6
+wear     = 1.5
+price    = 2650
+downgrade= ammo_5.45x39_ap
+downgrade_chance= 0.75
+
+[ammo_5.56x45_fmj]:ammo_base
+effect   = fragment
+name     = ammo_new_5.56x45_fmj
+hit      = 1
+hit_scale= 0.85
+ap       = 0.155
+impact   = 0.6
+price    = 1500
+frag     = 1.5
+tag      = frag
+
+[ammo_5.56x45_fmj_bad]:ammo_5.56x45_fmj
+effect   = match
+name     = ammo_new_5.56x45_fmjs
+hit      = 1.05
+ap       = 0.155
+price    = 2200
+downgrade= ammo_5.56x45_fmj
+downgrade_chance= 0.7
+tag      = match
+
+[ammo_5.56x45_ss190]:ammo_base
+name     = ammo_new_5.56x45_hp
+hit      = 1
+hit_scale= 0.85
+ap       = 0.105
+impact   = 0.55
+hp       = 1.45
+price    = 1600
+
+[ammo_5.56x45_ss190_bad]:ammo_5.56x45_ss190
+effect   = varma
+name     = ammo_new_5.56x45_varma
+hit      = 1.05
+ap       = 0.125
+hp       = 1.3
+varma    = 1.2
+wear     = 1.1
+price    = 1900
+tag      = varma
+downgrade= ammo_5.56x45_ss190
+downgrade_chance= 0.6
+
+[ammo_5.56x45_ap]:ammo_base
+name     = ammo_new_5.56x45_ss190
+hit      = 0.75
+hit_scale= 0.85
+ap       = 0.245
+impact   = 0.6
+pen      = 0.6
+price    = 1600
+
+[ammo_5.56x45_ap_bad]:ammo_5.56x45_ap
+name     = ammo_new_5.56x45_ap
+hit      = 1
+ap       = 0.265
+pen      = 0.2
+price    = 2500
+downgrade= ammo_5.56x45_ap
+downgrade_chance= 0.8
+
+[ammo_7.62x39_fmj]:ammo_base
+name     = ammo_new_7.62x39_fmj
+hit      = 1.15
+ap       = 0.185
+impact   = 0.7
+price    = 1530
+
+[ammo_7.62x39_fmj_bad]:ammo_7.62x39_fmj
+effect   = acid
+name     = ammo_new_7.62x39_fmjs
+hit      = 1.2
+ap       = 0.175
+price    = 1730
+wear     = 1.5
+downgrade= ammo_7.62x39_fmj
+downgrade_chance= 1
+acid     = 0.35
+tag      = acid
+on_shoot = muzzle_acid
+
+[ammo_7.62x39_ap]:ammo_base
+name     = ammo_new_7.62x39_ap
+hit      = 1.1
+impact   = 0.7
+wear     = 1.15
+ap       = 0.255
+price    = 2530
+downgrade= ammo_7.62x39_fmj
+downgrade_chance= 0.6
+
+[ammo_7.62x39_ap_bad]:ammo_7.62x39_ap
+effect   = incendiary
+name     = ammo_new_7.62x39_api
+hit      = 1.2
+ap       = 0.275
+ignite   = 0.6
+wear     = 2
+price    = 3330
+tag      = fire
+downgrade= ammo_7.62x39_ap
+downgrade_chance= 0.6
+
+[ammo_9x39_pab9]:ammo_base
+name     = ammo_new_9x39_sp5
+hit      = 1.3
+ap       = 0.205
+impact   = 0.7
+wear     = 1
+price    = 2500
+
+[ammo_9x39_pab9_bad]:ammo_9x39_pab9
+effect   = ambush
+name     = ammo_new_9x39_spp
+hit      = 1.3
+ap       = 0.245
+price    = 3300
+downgrade= ammo_9x39_pab9
+downgrade_chance= 0.5
+tag      = ambush
+
+[ammo_9x39_ap]:ammo_base
+name     = ammo_new_9x39_pab9
+hit      = 1.3
+ap       = 0.28
+impact   = 0.7
+wear     = 2
+price    = 1900
+on_shoot = wear_random
+tag      = impair
+
+[ammo_9x39_ap_bad]:ammo_9x39_ap
+effect   = ambush
+hit      = 1.2
+name     = ammo_new_9x39_ap
+ap       = 0.275
+wear     = 1
+price    = 3500
+downgrade= ammo_9x39_ap
+downgrade_chance= 0.8
+tag      = ambush
+
+[ammo_5.45x39_fmj_verybad]:ammo_5.45x39_fmj_bad
+
+[ammo_5.45x39_ep_verybad]:ammo_5.45x39_ep_bad
+
+[ammo_5.45x39_ap_verybad]:ammo_5.45x39_ap_bad
+
+[ammo_5.56x45_fmj_verybad]:ammo_5.56x45_fmj_bad
+
+[ammo_5.56x45_ss190_verybad]:ammo_5.56x45_ss190_bad
+
+[ammo_5.56x45_ap_verybad]:ammo_5.56x45_ap_bad
+
+[ammo_9x39_pab9_verybad]:ammo_9x39_pab9_bad
+
+[ammo_9x39_ap_verybad]:ammo_9x39_ap_bad
+
+[ammo_7.62x39_fmj_verybad]:ammo_7.62x39_fmj_bad
+
+[ammo_7.62x39_ap_verybad]:ammo_7.62x39_ap_bad
+; ---------------- sniper
+
+[ammo_7.62x54_7h1]:ammo_base
+name     = ammo_new_7.62x54r
+hit      = 1
+ap       = 0.185
+impact   = 0.85
+price    = 800
+
+[ammo_7.62x54_7h1_bad]:ammo_7.62x54_7h1
+effect   = match
+name     = ammo_new_7.62x54_7n1
+hit      = 1.1
+ap       = 0.185
+price    = 1400
+downgrade= ammo_7.62x54_7h1
+downgrade_chance= 0.5
+tag      = match
+
+[ammo_7.62x54_7h14]:ammo_base
+name     = ammo_new_7.62x54_hp
+hit      = 1
+ap       = 0.145
+impact   = 0.8
+hp       = 1.65
+price    = 1000
+
+[ammo_7.62x54_7h14_bad]:ammo_7.62x54_7h14
+effect   = headshot
+name     = ammo_new_7.62x54_fp
+hit      = 1.05
+ap       = 0.199
+hp       = 1.3
+wear     = 1.3
+price    = 2450
+downgrade= ammo_7.62x54_7h14
+downgrade_chance= 0.8
+tag      = head
+
+[ammo_7.62x54_ap]:ammo_base
+name     = ammo_new_7.62x54_ap
+hit      = 0.95
+ap       = 0.305
+impact   = 0.85
+pen      = 0.5
+price    = 2100
+downgrade= ammo_7.62x54_7h1
+downgrade_chance= 0.5
+
+[ammo_7.62x54_ap_bad]:ammo_7.62x54_ap
+effect   = incendiary
+name     = ammo_new_7.62x54_api
+hit      = 1.2
+ap       = 0.335
+pen      = 0.375
+wear     = 1.5
+ignite   = 0.9
+tag      = fire
+price    = 2800
+downgrade= ammo_7.62x54_ap
+downgrade_chance= 0.8
+
+[ammo_pkm_100]:ammo_base
+name     = ammo_new_7.62x54_ppr
+hit      = 1
+ap       = 0.185
+impact   = 0.85
+wear     = 1
+price    = 4000
+
+[ammo_pkm_100_bad]:ammo_pkm_100
+effect   = buckshot
+name     = ammo_new_7.62x54_split
+hit      = 0.7
+ap       = 0.155
+hp       = 1.2
+wear     = 1.5
+price    = 6500
+downgrade= ammo_pkm_100
+downgrade_chance= 0.6
+
+[ammo_7.62x51_fmj]:ammo_base
+name     = ammo_new_7.62x51_fmj
+hit      = 1
+ap       = 0.225
+impact   = 0.85
+price    = 1800
+
+[ammo_7.62x51_fmj_bad]:ammo_7.62x51_fmj
+effect   = match
+name     = ammo_new_7.62x51_fmjs
+hit      = 1.05
+ap       = 0.2
+price    = 2600
+downgrade= ammo_7.62x51_fmj
+downgrade_chance= 0.4
+tag      = match
+
+[ammo_7.62x51_ap]:ammo_base
+name     = ammo_new_7.62x51_ap
+hit      = 0.9
+ap       = 0.305
+impact   = 0.85
+pen      = 0.6
+price    = 2500
+downgrade= ammo_7.62x51_fmj
+downgrade_chance= 0.5
+
+[ammo_7.62x51_ap_bad]:ammo_7.62x51_ap
+name     = ammo_new_7.62x51_slap
+hit      = 0.75
+ap       = 0.395
+pen      = 0.8
+price    = 2750
+downgrade= ammo_7.62x51_fmj
+downgrade_chance= 0.7
+tag      = pierce
+
+[ammo_7.92x33_fmj]:ammo_base
+name     = ammo_new_7.92x33_fmj
+hit      = 1
+ap       = 0.195
+impact   = 0.85
+price    = 900
+
+[ammo_7.92x33_fmj_bad]:ammo_7.92x33_fmj
+name     = ammo_new_7.92x33_ap
+hit      = 0.9
+ap       = 0.305
+impact   = 0.85
+wear     = 1.1
+price    = 2100
+downgrade_chance= 0.4
+
+[ammo_7.92x33_ap]:ammo_base
+name     = ammo_new_7.92x33_hp
+hit      = 1
+ap       = 0.145
+impact   = 0.85
+hp       = 1.6
+price    = 1200
+
+[ammo_7.92x33_ap_bad]:ammo_7.92x33_ap
+effect   = shock
+on_impact= shock_arc
+name     = ammo_new_7.92x33_shock
+hit      = 0.4
+ap       = 0.399
+wear     = 1.5
+price    = 3400
+on_shoot = muzzle_shock
+downgrade= ammo_7.92x33_ap
+downgrade_chance= 0.7
+tag      = shock
+
+[ammo_12.7x55_fmj]:ammo_base
+name     = ammo_new_12.7x55_fmj
+hit      = 1.5
+ap       = 0.225
+impact   = 0.95
+wear     = 1
+price    = 2200
+
+[ammo_12.7x55_fmj_bad]:ammo_12.7x55_fmj
+name     = ammo_new_12.7x55_fmjs
+hit      = 1.65
+ap       = 0.255
+price    = 3750
+downgrade= ammo_12.7x55_fmj
+downgrade_chance= 0.4
+
+[ammo_12.7x55_ap]:ammo_base
+name     = ammo_new_12.7x55_ap
+hit      = 1.5
+ap       = 0.305
+impact   = 0.95
+pen      = 0.2
+wear     = 1
+price    = 3500
+downgrade= ammo_12.7x55_fmj
+downgrade_chance= 0.4
+
+[ammo_12.7x55_ap_bad]:ammo_12.7x55_ap
+name     = ammo_new_12.7x55_exp
+on_impact= explode
+hit      = 0.5
+ap       = 0.049
+wear     = 1.3
+price    = 4560
+tag      = explodes
+downgrade= ammo_12.7x55_ap
+downgrade_chance= 0.6
+
+[ammo_magnum_300]:ammo_base
+name     = ammo_new_338_lapua
+hit      = 1
+ap       = 0.335
+impact   = 0.95
+wear     = 1
+price    = 3240
+
+[ammo_magnum_300_bad]:ammo_magnum_300
+effect   = soulripper
+name     = ammo_new_338_ap
+hit      = 1.3
+ap       = 0.399
+wear     = 2
+price    = 5540
+tag      = soulripper
+on_shoot = muzzle_grav_snd
+sound    = soulripper
+downgrade= ammo_magnum_300
+downgrade_chance= 0.8
+
+[ammo_7.92x33_fmj_verybad]:ammo_7.92x33_fmj_bad
+
+[ammo_7.92x33_ap_verybad]:ammo_7.92x33_ap_bad
+
+[ammo_7.62x51_fmj_verybad]:ammo_7.62x51_fmj_bad
+
+[ammo_7.62x51_ap_verybad]:ammo_7.62x51_ap_bad
+
+[ammo_pkm_100_verybad]:ammo_pkm_100_bad
+
+[ammo_7.62x54_7h1_verybad]:ammo_7.62x54_7h1_bad
+
+[ammo_7.62x54_ap_verybad]:ammo_7.62x54_ap_bad
+
+[ammo_7.62x54_7h14_verybad]:ammo_7.62x54_7h14_bad
+
+[ammo_12.7x55_fmj_verybad]:ammo_12.7x55_fmj_bad
+
+[ammo_12.7x55_ap_verybad]:ammo_12.7x55_ap_bad
+
+[ammo_magnum_300_verybad]:ammo_magnum_300_bad
+; ---------------- shotgun
+
+[ammo_12x70_buck]:ammo_base
+effect   = buckshot
+name     = ammo_new_12x70_buck
+hit      = 0.35
+ap       = 0.025
+impact   = 0.5
+wear     = 1
+price    = 800
+
+[ammo_12x70_buck_bad]:ammo_12x70_buck
+name     = ammo_new_12x70_magnum
+hit      = 0.42
+ap       = 0.05
+impact   = 0.6
+wear     = 1.3
+price    = 1300
+downgrade= ammo_12x70_buck
+downgrade_chance= 0.4
+
+[ammo_12x76_zhekan]:ammo_base
+effect   = slug
+name     = ammo_new_12x70_zhekan
+hit      = 2.5
+ap       = 0.1
+impact   = 0.8
+wear     = 1
+price    = 1250
+tag      = slug
+
+[ammo_12x76_zhekan_bad]:ammo_12x76_zhekan
+name     = ammo_new_12x70_dart
+hit      = 1.75
+ap       = 0.2
+impact   = 0.8
+wear     = 1.3
+price    = 1850
+downgrade= ammo_12x76_zhekan
+downgrade_chance= 0.5
+
+[ammo_12x76_dart]:ammo_base
+effect   = buckshot
+name     = ammo_new_12x70_flechette
+hit      = 0.28
+ap       = 0.1
+impact   = 0.5
+wear     = 1
+price    = 1000
+
+[ammo_12x76_dart_bad]
+effect   = dragonsbreath
+name     = ammo_new_12x70_dragon
+hit      = 0.25
+ap       = 0.025
+wear     = 2.5
+ignite   = 1
+price    = 3300
+downgrade= ammo_12x76_dart
+downgrade_chance= 0.95
+tag      = fire_melt
+on_shoot = muzzle_fire
+
+[ammo_12x70_buck_verybad]:ammo_12x70_buck_bad
+
+[ammo_12x76_zhekan_verybad]:ammo_12x76_zhekan_bad
+
+[ammo_12x76_dart_verybad]:ammo_12x76_dart_bad
+; ---------------- other
+
+[ammo_4.6x30_fmj]:ammo_base
+name     = ammo_new_4.6x30_fmj
+hit      = 1
+ap       = 0.135
+impact   = 0.3
+price    = 1600
+
+[ammo_4.6x30_fmj_bad]:ammo_4.6x30_fmj
+name     = ammo_new_4.6x30_ap
+hit      = 0.95
+ap       = 0.175
+price    = 2200
+
+[ammo_50_bmg]:ammo_base
+name     = ammo_new_50_bmg
+hit      = 1.6
+ap       = 0.335
+impact   = 0.9
+price    = 4500
+
+[ammo_50_bmg_bad]:ammo_50_bmg
+name     = ammo_new_50_ap
+hit      = 1.4
+ap       = 0.399
+price    = 7500
+
+[ammo_12x76_bull]:ammo_base
+effect   = slug
+name     = ammo_new_12x76_bull
+hit      = 3
+ap       = 0.25
+impact   = 0.9
+price    = 6000
+; ---------------- grenades
+
+[ammo_m209]:ammo_base
+name     = ammo_new_m209
+effect   = launcher
+radius   = 3.5
+price    = 2264
+bomb     = wpn_real_m209
+
+[ammo_m209_bad]:ammo_m209
+name     = ammo_new_m209_fire
+effect   = firebomb
+hit      = 0.2
+radius   = 8
+price    = 4069
+downgrade= ammo_m209
+downgrade_chance= 0.4
+tag      = firebomb
+
+[ammo_vog-25]:ammo_base
+name     = ammo_new_vog25
+effect   = launcher
+radius   = 2.5
+price    = 2180
+bomb     = wpn_real_vog25
+
+[ammo_vog-25_bad]:ammo_vog-25
+name     = ammo_new_vog25_cluster
+effect   = cluster
+hit      = 0.7
+price    = 4345
+radius   = 3
+bomb     = m209_sub
+bombs    = 10
+downgrade= ammo_vog-25
+downgrade_chance= 0.4
+tag      = cluster
+; ---------------- bas
+
+[ammo_23x75_shrapnel]:ammo_base
+effect   = buckshot
+name     = ammo_new_23x75_shrapnel
+hit      = 1
+ap       = 0.12
+impact   = 0.7
+wear     = 1
+price    = 2100
+
+[ammo_23x75_barrikada]:ammo_base
+effect   = slug
+name     = ammo_new_23x75_barrikada
+hit      = 6.9
+hp       = 3
+ap       = 0.195
+impact   = 0.99
+wear     = 1.5
+price    = 3500
+
+[ammo_20x70_buck]:ammo_base
+effect   = buckshot
+name     = ammo_new_20x70_buck
+hit      = 0.3
+ap       = 0.02
+impact   = 0.4
+wear     = 1
+price    = 450
+
+[ammo_23_eco]:ammo_base
+effect   = corrosive
+name     = ammo_new_23_eco
+hit      = 1
+ap       = 0.01
+impact   = 0.1
+wear     = 1
+price    = 5500
+tag      = toxic
+
+[ammo_9x21_sp10]:ammo_base
+name     = ammo_new_9x21_sp10
+hit      = 1
+ap       = 0.205
+impact   = 0.42
+wear     = 1
+price    = 3196
+
+[ammo_338_federal]:ammo_base
+name     = ammo_new_338_federal
+hit      = 1
+ap       = 0.305
+impact   = 0.88
+wear     = 1
+price    = 4100

@@ -1,0 +1,138 @@
+--[[
+	ReZone MCM - vypnuti obrazovych efektu (PPE) radiace, poltergeista a controllera
+
+	Engine (monster_aura) cte pri nacteni monstra z system.ltx klice
+	  psy_pp_effector_name, radiation_pp_effector_name  (aura - efekt, kdyz je monstrum blizko)
+	  detection_pp_effector_name                        (poltergeist - "skenovani" hrace)
+	a radiacni pole cte polomer efektu ze sekce [postprocess_rad].
+
+	Modul tyto hodnoty v pameti hry prepise (soubory na disku zustanou beze zmeny):
+	- jmeno efektu aury -> prazdne: engine pak efekt vubec neprida, zvuk aury, poskozeni
+	  a chovani monstra zustanou
+	- polomer efektu radiacnich poli -> 0
+	Puvodni hodnoty si pamatuje (v pameti hry, prezije nacteni savu) a pri vypnuti volby je vrati.
+	Projevi se u monster a poli, ktera se nactou potom (nejjisteji po nacteni savu).
+	Vyzaduje modded exes (ini_sys:set_readonly / w_string).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_fx"
+
+local KEY_PSY = "psy_pp_effector_name"
+local KEY_RAD = "radiation_pp_effector_name"
+local KEY_DET = "detection_pp_effector_name"
+local CLS_POLTER = "SM_POLTR"
+local CLS_CONTR  = "SM_CONTR"
+ZONE_PP = { "postprocess_rad" }		-- sekce efektu radiacnich poli
+
+local monsters = nil	-- { sec, cls, psy, rad, det }
+
+local warned = false
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and true or false
+end
+
+local function scan()
+	if monsters then return end
+	monsters = {}
+	ini_sys:section_for_each(function(sec)
+		local psy = ini_sys:line_exist(sec, KEY_PSY)
+		local rad = ini_sys:line_exist(sec, KEY_RAD)
+		local det = ini_sys:line_exist(sec, KEY_DET)
+		if psy or rad or det then
+			monsters[#monsters + 1] = { sec = sec, cls = ini_sys:r_string_ex(sec, "class"), psy = psy, rad = rad, det = det }
+		end
+		return false
+	end)
+	core.log("efekty: %d sekci monster s efekty aury", #monsters)
+end
+
+-- Puvodni hodnota se pise primo do ini_sys (klic rz_orig_<klic> ve stejne sekci): ini_sys
+-- prezije nacteni savu, Lua stav ne - jinak by se po loadu "puvodni" hodnotou stala prazdna.
+local EMPTY = "<rz_empty>"
+local function cur_value(sec, key)
+	if not ini_sys:line_exist(sec, key) then return false end
+	return ini_sys:r_string_ex(sec, key) or ""
+end
+
+-- want = true: efekt vypnout, false: vratit puvodni hodnotu
+local changed = 0
+local function write(sec, key, v)
+	local ok, err = pcall(ini_sys.w_string, ini_sys, sec, key, v, "")
+	if ok then changed = changed + 1 else core.warn("efekty: zapis [%s] %s: %s", sec, key, tostring(err)) end
+	return ok
+end
+
+local function set(sec, key, off_value, want)
+	local okey = "rz_orig_" .. key
+	local has = ini_sys:line_exist(sec, okey)
+	local cur = cur_value(sec, key)
+	if want then
+		if cur == false then return end                     -- radek neexistuje, neni co vypinat
+		if has and cur == off_value then return end         -- uz vypnuto
+		if not has then write(sec, okey, cur == "" and EMPTY or cur) end
+		write(sec, key, off_value)
+	else
+		if not has then return end                          -- nikdy jsme nemenili
+		local ov = ini_sys:r_string_ex(sec, okey) or EMPTY
+		if ov == EMPTY then ov = "" end
+		if cur ~= ov then write(sec, key, ov) end
+	end
+end
+
+local function apply(cfg)
+	if not can_write() then
+		if (cfg.rad or cfg.polter or cfg.contr or cfg.psy_other) and not warned then
+			warned = true
+			core.warn("efekty: tato verze exe neumi menit nastaveni za behu (chybi modded exes)")
+		end
+		return
+	end
+	-- nic zapnute a nikdy nic zmenene = neni co delat (neprochazet vsechny sekce hry pri kazdem loadu)
+	local any = cfg.rad or cfg.polter or cfg.contr or cfg.psy_other
+	local touched = ini_sys:section_exist(ZONE_PP[1]) and ini_sys:line_exist(ZONE_PP[1], "rz_fx_touched")
+	if not any and not touched then return end
+	scan()
+	changed = 0
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		for _, m in ipairs(monsters) do
+			local is_p, is_c = m.cls == CLS_POLTER, m.cls == CLS_CONTR
+			local own = (is_p and cfg.polter) or (is_c and cfg.contr)
+			-- psy aura: poltergeist / controller vlastnim prepinacem, ostatni (burer, karlik, psi pes) zvlast
+			if m.psy then
+				local want = own or (not is_p and not is_c and cfg.psy_other)
+				set(m.sec, KEY_PSY, "", want and true or false)
+			end
+			if m.rad then set(m.sec, KEY_RAD, "", (cfg.rad or own) and true or false) end
+			if m.det then set(m.sec, KEY_DET, "", (is_p and cfg.polter) and true or false) end
+		end
+		for _, z in ipairs(ZONE_PP) do
+			if ini_sys:section_exist(z) then
+				set(z, "radius_min", "0", cfg.rad)
+				set(z, "radius_max", "0", cfg.rad)
+			end
+		end
+	end)
+	if changed > 0 and ini_sys:section_exist(ZONE_PP[1]) then pcall(ini_sys.w_string, ini_sys, ZONE_PP[1], "rz_fx_touched", "1", "") end
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("efekty: %s", tostring(err)) end
+	if changed > 0 then core.log("efekty: zmeneno %d hodnot", changed) end
+end
+
+function load()
+	local g = core.page(PAGE)
+	apply({
+		rad       = g("rad") == true,
+		polter    = g("polter") == true,
+		contr     = g("contr") == true,
+		psy_other = g("psy_other") == true,
+	})
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()	-- hned, at to plati uz pro monstra a pole pri nacitani urovne
+end

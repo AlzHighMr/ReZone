@@ -1,0 +1,267 @@
+-- ======================================================================
+-- ReZone Artefacts CoP - screen effects (standalone, no EFTH needed)
+-- ----------------------------------------------------------------------
+--  Poison: green PPE (anims\rzaf\poison.ppe) + Hunt-style vignette and
+--          small slime drips at the screen edges. Smooth onset, lingers
+--          and fades slowly after the poison ends.
+--  Electro: short electric PPE (anims\rzaf\electro.ppe) + 3 soft electric
+--          arc flashes at the screen edges (max ~1 per second).
+--  All curves are smooth (no strobing) - safe for photosensitive players.
+--  Based on the EFT Health System ReZone effects, own ids and textures,
+--  so both mods can run at the same time.
+--
+--  API:  rezone_af_fx.Poison(seconds, strength)
+--        rezone_af_fx.Electro(strength)
+-- ======================================================================
+
+local PPE_LOOP   = "rzaf\\poison.ppe"
+local PPE_WAVE   = "rzaf\\poison_wave.ppe"
+local PPE_ELEC   = "rzaf\\electro.ppe"
+local ID_LOOP    = 99261
+local ID_WAVE    = 99262
+local ID_ELEC    = 99263
+
+local UPDATE_MS  = 50
+local FADE_IN    = 0.18          -- poison level per second
+local LINGER_S   = 30            -- after-effect length (s)
+
+local CFG_P = "rezone/rz_health/rz_af/"
+local function cfg(k, def)
+	local v = rezone_core.get(CFG_P .. k)
+	if v == nil then return def end
+	return v
+end
+
+local function argb(a, r, g, b)
+	return GetARGB(math.floor(clamp(a, 0, 1) * 255), r or 255, g or 255, b or 255)
+end
+
+-- ------------------------------------------------------------- decals
+local decals = {}
+
+local function decal(name, full)
+	local d = decals[name]
+	if (d) and (d.static) then return d end
+	local hud = get_hud()
+	if (not hud) then return nil end
+	local ok, st = pcall(function()
+		local w = hud:GetCustomStatic(name) or hud:AddCustomStatic(name, true)
+		return w and w:wnd()
+	end)
+	if (not ok) or (not st) then return nil end
+	st:SetTextureColor(argb(0))
+	st:Show(true)
+	if (full) then st:SetWndSize(vector2():set(device().width, device().height)) end
+	utils_xml.correct_ratio(st)
+	d = { static = st, alpha = -1, name = name }
+	decals[name] = d
+	return d
+end
+
+local function set_alpha(d, a)
+	if (not d) or (not d.static) then return end
+	a = clamp(a, 0, 1)
+	if (math.abs(a - d.alpha) < 0.01) then return end
+	d.alpha = a
+	d.static:SetTextureColor(argb(a))
+end
+
+local function remove_decals()
+	local hud = get_hud()
+	for name, d in pairs(decals) do
+		if (hud) then pcall(hud.RemoveCustomStatic, hud, name) end
+	end
+	decals = {}
+end
+
+-- ------------------------------------------------------------- poison
+local poison = { until_t = 0, strength = 0, factor = 0, fade_from = nil, fade_t = 0, loop = false, next_drip = 0, next_wave = 0 }
+local drips = {}		-- [1..3] = state
+
+function Poison(seconds, strength)
+	if (not cfg("poison_fx", true)) then return end
+	local now = time_global()
+	poison.until_t = math.max(poison.until_t, now + (seconds or 20) * 1000)
+	poison.strength = math.max(poison.strength, clamp(strength or 1, 0.2, 1))
+	poison.fade_from = nil
+	-- nausea wave right away (max once per 15 s)
+	if (now > poison.next_wave) then
+		poison.next_wave = now + 15000
+		pcall(level.add_pp_effector, PPE_WAVE, ID_WAVE, false)
+		pcall(level.set_pp_effector_factor, ID_WAVE, clamp(0.6 * cfg("poison_fx_strength", 0.5) * 2, 0, 1.5))
+	end
+	poison.next_drip = 0
+end
+
+function IsPoisoned()
+	return time_global() < poison.until_t
+end
+
+local DRIP_ZONES = { { 4, 150 }, { 874, 1020 } }		-- left / right edge (1024 px wide UI)
+
+local function start_drip(i, strength)
+	local z = DRIP_ZONES[math.random(1, #DRIP_ZONES)]
+	drips[i] = { t0 = time_global(), x = math.random(z[1], z[2]), dur = math.random(2600, 4200),
+		hold = math.random(1500, 3500), fade = 1800, a = strength }
+end
+
+local function update_drips()
+	for i = 1, 3 do
+		local d = decal("rzaf_poison_drip_" .. i, false)
+		local s = drips[i]
+		if (d) and (s) then
+			local h = d.static:GetHeight()
+			local t = time_global() - s.t0
+			local p = clamp(t / s.dur, 0, 1)
+			p = 1 - (1 - p) * (1 - p)
+			local a = s.a
+			if (t > s.dur + s.hold) then a = a * clamp(1 - (t - s.dur - s.hold) / s.fade, 0, 1) end
+			d.static:SetWndPos(vector2():set(s.x, -h + p * h * 0.95))
+			set_alpha(d, a)
+			if (t > s.dur + s.hold + s.fade) then
+				drips[i] = nil
+				set_alpha(d, 0)
+				d.static:SetWndPos(vector2():set(0, -h - 10))
+			end
+		end
+	end
+end
+
+local function update_poison(dt)
+	local now = time_global()
+	local target = (now < poison.until_t) and poison.strength or 0
+	if (target > 0) then
+		poison.fade_from = nil
+		if (poison.factor < target) then poison.factor = math.min(poison.factor + FADE_IN * dt, target)
+		else poison.factor = math.max(poison.factor - FADE_IN * dt, target) end
+	elseif (poison.factor > 0) then
+		if (not poison.fade_from) then poison.fade_from, poison.fade_t = poison.factor, 0 end
+		poison.fade_t = poison.fade_t + dt
+		local x = math.min(poison.fade_t / LINGER_S, 1)
+		poison.factor = poison.fade_from * 0.5 * (1 + math.cos(math.pi * x))
+		if (x >= 1) then poison.factor, poison.fade_from, poison.strength = 0, nil, 0 end
+	end
+
+	local s = clamp(cfg("poison_fx_strength", 0.5), 0, 1.5)
+	local on = cfg("poison_fx", true)
+	-- PPE loop
+	local f = on and poison.factor * s * 2 or 0			-- strength 0.5 = factor 1.0 of the ppe
+	if (f > 0.005) then
+		if (not poison.loop) then
+			pcall(level.add_pp_effector, PPE_LOOP, ID_LOOP, true)
+			poison.loop = true
+		end
+		pcall(level.set_pp_effector_factor, ID_LOOP, clamp(f, 0, 1.5))
+	elseif (poison.loop) then
+		pcall(level.remove_pp_effector, ID_LOOP)
+		poison.loop = false
+	end
+	-- vignette
+	local v = decal("rzaf_poison_vignette", true)
+	local pulse = 0.9 + 0.1 * math.sin(now / 1000 * 2.4)
+	set_alpha(v, on and poison.factor * 0.85 * pulse * s * 2 or 0)
+	-- drips only while poisoned
+	if (on) and (now < poison.until_t) and (now > poison.next_drip) then
+		poison.next_drip = now + math.random(2500, 5000)
+		for i = 1, 3 do
+			if (not drips[i]) then start_drip(i, clamp(0.55 * s * 2, 0, 1)) break end
+		end
+	end
+	update_drips()
+end
+
+-- ------------------------------------------------------------- electro
+-- arc flashes: start (s), strength, fade in / hold / fade out (ms)
+local ARC_FLASHES = { { 0.10, 1.0, 150, 120, 550 }, { 1.05, 0.6, 180, 100, 600 }, { 2.10, 0.35, 200, 100, 700 } }
+local arcs = { start = nil, strength = 1, frames = {} }
+
+function Electro(strength)
+	if (not cfg("electro_fx", true)) then return end
+	local s = clamp(cfg("electro_fx_strength", 0.5), 0, 1.5) * 2 * clamp(strength or 1, 0, 1)
+	pcall(level.remove_pp_effector, ID_ELEC)
+	pcall(level.add_pp_effector, PPE_ELEC, ID_ELEC, false)
+	pcall(level.set_pp_effector_factor, ID_ELEC, clamp(s, 0, 1.5))
+	arcs.start = time_global()
+	arcs.strength = clamp(s, 0, 1.5)
+	local prev = 0
+	for i = 1, #ARC_FLASHES do
+		local f
+		repeat f = math.random(1, 4) until f ~= prev
+		arcs.frames[i], prev = f, f
+	end
+end
+
+local function update_arcs()
+	local want = { 0, 0, 0, 0 }
+	if (arcs.start) then
+		local t = time_global() - arcs.start
+		local any = false
+		for i, fl in ipairs(ARC_FLASHES) do
+			local t0, fin, hold, fout = fl[1] * 1000, fl[3], fl[4], fl[5]
+			local te = t0 + fin + hold + fout
+			if (t >= t0) and (t < te) then
+				local dt, k = t - t0, 1
+				if (dt < fin) then k = 0.5 - 0.5 * math.cos(math.pi * dt / fin)
+				elseif (dt > fin + hold) then k = 0.5 + 0.5 * math.cos(math.pi * (dt - fin - hold) / fout) end
+				local f = arcs.frames[i] or 1
+				want[f] = math.max(want[f], fl[2] * k * arcs.strength)
+			end
+			if (t < te) then any = true end
+		end
+		if (not any) then arcs.start = nil end
+	end
+	for i = 1, 4 do
+		local d = decal("rzaf_electro_arc_" .. i, true)
+		set_alpha(d, want[i])
+	end
+end
+
+-- ------------------------------------------------------------- loop
+local last = 0
+local function actor_on_update()
+	local now = time_global()
+	if (now - last < UPDATE_MS) then return end
+	local dt = (last > 0) and math.min((now - last) / 1000, 0.5) or (UPDATE_MS / 1000)
+	last = now
+	if (not main_hud_shown()) then return end
+	update_poison(dt)
+	update_arcs()
+end
+
+local function actor_on_net_destroy()
+	pcall(level.remove_pp_effector, ID_LOOP)
+	pcall(level.remove_pp_effector, ID_WAVE)
+	pcall(level.remove_pp_effector, ID_ELEC)
+	poison.loop = false
+	remove_decals()
+end
+
+-- poison timer survives save / load
+local function save_state(m_data)
+	local left = poison.until_t - time_global()
+	m_data.rzaf_fx = (left > 1000) and { left = left, s = poison.strength } or nil
+end
+
+local function load_state(m_data)
+	local d = m_data.rzaf_fx
+	if (type(d) == "table") and (tonumber(d.left)) then
+		poison.pending = { left = tonumber(d.left), s = tonumber(d.s) or 0.5 }
+	end
+	m_data.rzaf_fx = nil
+end
+
+local function actor_on_first_update()
+	if (poison.pending) then
+		poison.until_t = time_global() + poison.pending.left
+		poison.strength = poison.pending.s
+		poison.pending = nil
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_update", actor_on_update)
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+	RegisterScriptCallback("actor_on_net_destroy", actor_on_net_destroy)
+	RegisterScriptCallback("save_state", save_state)
+	RegisterScriptCallback("load_state", load_state)
+end

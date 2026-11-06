@@ -1,0 +1,66 @@
+; ReZone - toulaví stalkeři (MCM › Gameplay › Toulaví stalkeři, skript rezone_mod_wander)
+; Malé skupiny stalkerů procházejí lokací od místa k místu. Na noc nebo po odchodu z lokace
+; zmizí, ale nikdy před očima hráče (jen daleko od něj nebo offline).
+; Laboratoře a podzemí v seznamu nejsou vůbec - tam se nikdy nic nespawnuje.
+;
+; [levels]   lokace = id volby v MCM, výchozí zapnuto (true/false), síla (1 jih, 2 střed, 3 sever)
+;            síla určuje hodnost: 1 = sim_default_*_0..2, 2 = _1..3, 3 = _2..4
+; [factions] frakce skupiny = id volby v MCM, výchozí, prefix NPC (sim_default_<prefix>_N), klíč v props smartu
+; [exclude_smarts] smarty, kam se nechodí a kde se nespawnuje (kromě základen - ty se vynechávají samy)
+; Skupiny (sekce rz_wander_<frakce>) jsou v configs\misc\squad_descr\squad_descr_rezone_wander.ltx.
+
+[levels]
+l01_escape           = escape, true, 1
+k00_marsh            = marsh, true, 1
+k01_darkscape        = darkscape, true, 1
+y04_pole             = pole, true, 1
+l02_garbage          = garbage, true, 1
+l03_agroprom         = agroprom, true, 1
+l04_darkvalley       = darkvalley, true, 2
+l05_bar              = bar, false, 2
+l06_rostok           = rostok, true, 2
+k02_trucks_cemetery  = trucks, true, 2
+l08_yantar           = yantar, true, 2
+l07_military         = military, true, 2
+l09_deadcity         = deadcity, true, 2
+l10_red_forest       = red_forest, false, 3
+l10_limansk          = limansk, false, 3
+l11_hospital         = hospital, false, 3
+l10_radar            = radar, false, 3
+zaton                = zaton, true, 3
+jupiter              = jupiter, true, 3
+pripyat              = pripyat, false, 3
+l11_pripyat          = pripyat_soc, false, 3
+l12_stancia          = stancia, false, 3
+l12_stancia_2        = stancia_2, false, 3
+l13_generators       = generators, false, 3
+
+[factions]
+stalker   = f_stalker, true, stalker, stalker
+csky      = f_csky, true, csky, csky
+dolg      = f_dolg, true, duty, dolg
+freedom   = f_freedom, true, freedom, freedom
+bandit    = f_bandit, true, bandit, bandit
+killer    = f_killer, true, killer, killer
+ecolog    = f_ecolog, false, ecolog, ecolog
+army      = f_army, false, military, army
+renegade  = f_renegade, false, renegade, renegade
+monolith  = f_monolith, false, monolith, monolith
+isg       = f_isg, false, isg, isg
+greh      = f_greh, false, greh, greh
+
+[exclude_smarts]
+; příběhová a úkolová místa, kde by cizí skupina překážela
+mar_smart_terrain_base
+esc_smart_terrain_2_12
+esc_smart_terrain_5_7
+bar_visitors
+bar_dolg_bunker
+bar_dolg_general
+mil_smart_terrain_7_7
+yan_smart_terrain_zombi_spawn
+yan_smart_terrain_snork_u
+x162_st_burer
+jup_b41
+zat_stalker_base_smart
+pri_monolith

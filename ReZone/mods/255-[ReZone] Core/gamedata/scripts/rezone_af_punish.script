@@ -1,0 +1,137 @@
+-- ======================================================================
+-- ReZone Artefacts CoP - punishment for carrying artefacts without a container
+-- ----------------------------------------------------------------------
+--  Chemical artefacts (af_class_chem) carried bare - on the belt or in the
+--  backpack - now and then poison you: small chemical hit + poison screen
+--  effect.  Electric artefacts (af_class_electro) now and then give you a
+--  small electric shock + electric screen effect.
+--  Artefacts in a lead box, IAM, AAC or AAM are safe.
+--  Chance and strength grow with the artefact tier. Settings: [rzaf_punish]
+--  in mod_system_zzzzzzzzzzzzzzzz_rezone_artefacts_punish.ltx and MCM.
+-- ======================================================================
+
+local S = "rzaf_punish"
+local CLASS = nil				-- [section] = "chem" | "electro"
+local next_check = 0
+local cooldown = { chem = 0, electro = 0 }
+
+local function num(key, def)
+	return ini_sys:r_float_ex(S, key) or def
+end
+
+local function cfg(k, def)
+	return (function() local v = rezone_core.get("rezone/rz_health/rz_af/" .. k) if v == nil then return def end return v end)()
+end
+
+local function load_classes()
+	if (CLASS) then return end
+	CLASS = {}
+	local ok, ini = pcall(ini_file, "items\\settings\\artefacts.ltx")
+	if (ok) and (ini) then
+		for _, c in ipairs({ "chem", "electro" }) do
+			local sec = "af_class_" .. c
+			if (ini:section_exist(sec)) then
+				for n = 0, ini:line_count(sec) - 1 do
+					local _, k = ini:r_line(sec, n, "", "")
+					if (k) and (k ~= "") then CLASS[k] = c end
+				end
+			end
+		end
+	end
+	-- extra artefacts from other mods (e.g. SoC artefacts)
+	for _, c in ipairs({ "chem", "electro" }) do
+		local list = ini_sys:r_string_ex(S, c .. "_extra")
+		for sec in string.gmatch(list or "", "[%w_]+") do CLASS[sec] = c end
+		local skip = ini_sys:r_string_ex(S, c .. "_exclude")
+		for sec in string.gmatch(skip or "", "[%w_]+") do CLASS[sec] = nil end
+	end
+end
+
+local CONTAINERS = { "_lead_box$", "_af_iam$", "_af_aac$", "_af_aam$" }
+
+-- returns base artefact section (or nil if contained / not an artefact of a class)
+local function bare_artefact(sec)
+	for _, p in ipairs(CONTAINERS) do
+		if (string.find(sec, p)) then return nil end
+	end
+	local base = string.gsub(sec, "_brd_%a+%d$", "")		-- SGM Selekce (vylepsene artefakty)
+	if (CLASS[base]) then return base end
+	return nil
+end
+
+local function make_hit(typ, power)
+	local h = hit()
+	h.type = typ
+	h.power = power
+	h.impulse = 0
+	h.direction = vector():set(0, 0, 1)
+	h.draftsman = db.actor
+	pcall(db.actor.hit, db.actor, h)
+end
+
+local function name_of(sec)
+	return game.translate_string(ini_sys:r_string_ex(sec, "inv_name") or sec)
+end
+
+local function punish(kind, sec, tier)
+	local mult = clamp(cfg("punish_strength", 1.0), 0, 3)
+	if (kind == "chem") then
+		make_hit(hit.chemical_burn, num("chem_power_per_tier", 0.012) * tier * mult)
+		if (rezone_af_fx) then
+			rezone_af_fx.Poison(num("poison_s_base", 20) + num("poison_s_per_tier", 8) * tier, clamp(0.35 + 0.15 * tier, 0.4, 1))
+		end
+		actor_menu.set_msg(1, string.format(game.translate_string("st_rzaf_punish_chem"), name_of(sec)), 5)
+	else
+		make_hit(hit.shock, num("shock_power_per_tier", 0.02) * tier * mult)
+		if (rezone_af_fx) then rezone_af_fx.Electro(clamp(0.4 + 0.15 * tier, 0.4, 1)) end
+		local ok, snd = pcall(sound_object, "anomaly\\electra_idle1")
+		if (ok) and (snd) then pcall(snd.play, snd, db.actor, 0, sound_object.s2d) end
+		actor_menu.set_msg(1, string.format(game.translate_string("st_rzaf_punish_electro"), name_of(sec)), 5)
+	end
+end
+
+local function check()
+	local now = time_global()
+	local roll = { chem = nil, electro = nil }		-- strongest artefact that triggered per kind
+	local chance_mult = clamp(cfg("punish_chance", 1.0), 0, 3)
+	local per_tier = num("chance_per_tier", 0.03)
+	db.actor:iterate_inventory(function(owner, item)
+		local sec = item:section()
+		local base = bare_artefact(sec)
+		if (not base) then return end
+		local kind = CLASS[base]
+		if (now < cooldown[kind]) then return end
+		local tier = clamp(ini_sys:r_float_ex(sec, "tier") or ini_sys:r_float_ex(base, "tier") or 2, 1, 5)
+		if (math.random() < per_tier * tier * chance_mult) then
+			if (not roll[kind]) or (tier > roll[kind].tier) then roll[kind] = { sec = sec, tier = tier } end
+		end
+	end, db.actor)
+	for kind, r in pairs(roll) do
+		if (r) then
+			cooldown[kind] = now + num("cooldown_sec", 90) * 1000
+			punish(kind, r.sec, r.tier)
+		end
+	end
+end
+
+local function actor_on_update()
+	local now = time_global()
+	if (now < next_check) then return end
+	next_check = now + num("check_sec", 20) * 1000
+	if (not cfg("punish", true)) then return end
+	if (not db.actor) or (not db.actor:alive()) then return end
+	if (get_console_cmd(1, "g_god")) then return end
+	load_classes()
+	check()
+end
+
+-- for other scripts / debug: is this item a bare chem / electro artefact
+function Kind(sec)
+	load_classes()
+	local base = bare_artefact(sec)
+	return base and CLASS[base] or nil
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_update", actor_on_update)
+end

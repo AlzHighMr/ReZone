@@ -1,0 +1,265 @@
+--[[
+	ReZone - video pozadi hlavniho menu (ReZone MCM > Ostatni > Hlavni menu)
+
+	Videa (.ogm, Theora) patri do gamedata\textures\ui\rz_mm_bg\ - kazde se v MCM objevi pod
+	svym jmenem. Volba nahradi celoobrazovkovy obrazek v pozadi hlavniho menu a nahravani hry
+	(bez ohledu na jmeno textury); engine hraje .ogm jako texturu dokola. "Vychozi" = nic se nemeni.
+	Zmena se projevi hned po "Pouzit" (otevrene menu si postavi pozadi znovu).
+	Vyrez textury = rozliseni videa (hlavicka Theora, jinak konec jmena _720/_1080/_1440/_2160,
+	jinak 1920x1080) - bez vyrezu UI video nevykresli.
+	(Drive soucast patche SOTA_Aydin, cesta efp_ui/main_settings/mm_bg_video.)
+--]]
+
+local DIR = "ui\\rz_mm_bg\\"
+local PATH = "rezone/rz_other/rz_menu/mm_bg_video"
+
+local cache
+
+local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy
+	if rezone_core and rezone_core.DEBUG then
+		printf("[ReZone video menu] " .. fmt, ...)
+	end
+end
+
+local function add(list, seen, name)
+	if not name then return end
+	local low = string.lower(name):gsub("/", "\\")
+	local short = low:match("([^\\]+)%.ogm$")
+	if not short then return end
+	-- jen soubory z nasi slozky (file_list_open_ex vraci cesty od textures\)
+	if low:find("\\", 1, true) and not low:find("rz_mm_bg\\", 1, true) then return end
+	if not seen[short] then
+		seen[short] = true
+		list[#list + 1] = short
+	end
+end
+
+-- seznam videi: { "jmeno", ... } (bez pripony, abecedne)
+function list_videos()
+	if cache then return cache end
+	cache = {}
+	local seen = {}
+	local fs = getFS and getFS()
+	if not fs then return cache end
+	-- 1) obsah slozky
+	if fs.file_list_open then
+		local ok, fl = pcall(fs.file_list_open, fs, "$game_textures$", DIR, bit_or(FS.FS_ListFiles, FS.FS_RootOnly))
+		if ok and fl then
+			for i = 0, fl:Size() - 1 do add(cache, seen, fl:GetAt(i)) end
+		end
+	end
+	-- 2) zaloha: vsechna .ogm v textures, filtr na nasi slozku
+	if #cache == 0 and fs.file_list_open_ex then
+		local ok, fl = pcall(fs.file_list_open_ex, fs, "$game_textures$", FS.FS_ListFiles, "*.ogm")
+		if ok and fl then
+			for i = 0, fl:Size() - 1 do
+				local f = fl:GetAt(i)
+				add(cache, seen, f and f:NameFull())
+			end
+		end
+	end
+	table.sort(cache)
+	log("nalezeno %d videi v textures\\%s", #cache, DIR)
+	return cache
+end
+
+-- obsah seznamu v MCM
+function mcm_content()
+	local gts = game.translate_string
+	local t = { { "default", gts("ui_mcm_lst_rz_mm_bg_default") }, { "random", gts("ui_mcm_lst_rz_mm_bg_random") } }
+	for _, v in ipairs(list_videos()) do
+		t[#t + 1] = { v, v }
+	end
+	return t
+end
+
+local function chosen()
+	local v = ui_mcm and ui_mcm.get(PATH) or "default"
+	if v == "random" then
+		local l = list_videos()
+		if #l == 0 then return nil end
+		return l[math.random(#l)]
+	end
+	if v == "default" or not v or v == "" then return nil end
+	for _, n in ipairs(list_videos()) do
+		if n == v then return v end
+	end
+	log("video '%s' uz ve slozce neni, zustava vychozi pozadi", tostring(v))
+	return nil
+end
+
+-- rozliseni videa: hlavicka Theora (sirka/vyska obrazu), jinak konec jmena, jinak 1920x1080
+local function video_size(name)
+	local ok, w, h = pcall(function()
+		local p = getFS():update_path("$game_textures$", DIR .. name .. ".ogm")
+		local f = io and io.open(p, "rb")
+		if not f then return end
+		local data = f:read(4096) or ""
+		f:close()
+		local i = data:find("\128theora", 1, true)
+		if not i then return end
+		local b = { data:byte(i + 7 + 3, i + 7 + 3 + 9) }	-- za verzi: FMBW(2) FMBH(2) PICW(3) PICH(3)
+		if #b < 10 then return end
+		local pw = b[5] * 65536 + b[6] * 256 + b[7]
+		local ph = b[8] * 65536 + b[9] * 256 + b[10]
+		if pw > 0 and ph > 0 then return pw, ph end
+	end)
+	if ok and w then return w, h, "hlavicka" end
+	local n = string.lower(name)
+	if n:find("_2160$") or n:find("_4k$") then return 3840, 2160, "jmeno" end
+	if n:find("_1440$") then return 2560, 1440, "jmeno" end
+	if n:find("_720$") then return 1280, 720, "jmeno" end
+	return 1920, 1080, "vychozi"
+end
+
+-- aktualni volba; u "nahodne" se video losuje jen jednou (pri spusteni / pri zmene volby)
+local setting		-- hodnota z MCM, pro kterou plati 'video'
+local video, vw, vh
+
+local function refresh()
+	local v = ui_mcm and ui_mcm.get(PATH) or "default"
+	if v == setting then return false end
+	local old = video
+	setting = v
+	video = chosen() or false
+	vw, vh = nil, nil
+	if video then
+		local src
+		vw, vh, src = video_size(video)
+		log("pozadi menu: %s (%dx%d, %s)", video, vw, vh, src)
+	else
+		log("pozadi menu: vychozi")
+	end
+	return old ~= video
+end
+
+local xml_has = {}	-- ktere prvky ma aktualni ui_mm_main (verze, upozorneni MCM)
+
+-- textury pozadi: celoobrazovkovy auto_static (nebo vlastni textura) v prvnim <background>
+-- (jmeno textury neresime - kazdy mod ho ma jine: ui_mm_main_bg, ui_background_new, ...)
+local function bg_textures(xml_obj)
+	local out = {}
+	local bg = xml_obj:query("background")[1]
+	if not bg then return out end
+	local function name(el) return xml_obj:isElement(el) and xml_obj:getElementName(el) end
+	for _, k in ipairs(bg.kids or {}) do
+		local n = name(k)
+		if n == "texture" then
+			out[#out + 1] = k
+		elseif n == "auto_static" then
+			local a = xml_obj:getElementAttr(k) or {}
+			if (tonumber(a.width) or 0) >= 1000 and (tonumber(a.height) or 0) >= 700 then
+				for _, t in ipairs(k.kids or {}) do
+					if name(t) == "texture" then out[#out + 1] = t end
+				end
+			end
+		end
+	end
+	return out
+end
+
+local live_cb	-- definovano nize (zmena za behu)
+
+function on_xml_read()
+	-- registrace hned pri startu (on_xml_read se vola drive nez vznikne prvni hlavni menu)
+	if live_cb then live_cb() end
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		local f = string.lower(xml_file_name)
+		if not (f:find("ui_mm_main", 1, true) or f:find("ui_mm_load_dlg", 1, true)) then return end
+		if setting == nil then refresh() end
+		if f:find("ui_mm_main", 1, true) then
+			xml_has.version = #xml_obj:query("static_version") > 0
+			xml_has.disclaimer = #xml_obj:query("static_disclaimer") > 0
+		end
+		if not video then return end
+		local n = 0
+		for _, el in ipairs(bg_textures(xml_obj)) do
+			xml_obj:setText(el, DIR .. video)
+			-- vyrez = cele video (bez nej UI video nevykresli)
+			xml_obj:setElementAttr(el, { x = 0, y = 0, width = vw, height = vh })
+			n = n + 1
+		end
+		if n == 0 then log("! %s: nenasel jsem texturu pozadi", xml_file_name) end
+	end)
+end
+
+------------------------------------------------------------------------------------------
+-- Zmena za behu
+-- Hlavni menu existuje, dokud je otevrene MCM (MCM je jeho podokno). Po "Pouzit" se nad
+-- puvodni pozadi postavi nove (z ui_mm_main.xml, uz s novym videem) a ovladaci prvky menu
+-- se presunou zpet nad nej. Puvodni pozadi zustane pod nim zakryte.
+------------------------------------------------------------------------------------------
+local mm	-- posledni vytvorene hlavni menu
+
+local function raise(wnd, auto_del)
+	if not wnd then return end
+	wnd:SetAutoDelete(false)		-- DetachChild by jinak okno smazal
+	mm:DetachChild(wnd)
+	mm:AttachChild(wnd)
+	wnd:SetAutoDelete(auto_del)
+end
+
+local function rebuild()
+	if not mm then return end
+	local ok, err = pcall(function()
+		if mm.rz_mm_bg then
+			mm:DetachChild(mm.rz_mm_bg)	-- auto-delete: stare nove pozadi se uvolni
+			mm.rz_mm_bg = nil
+		end
+		local xml = CScriptXmlInit()
+		xml:ParseFile("ui_mm_main.xml")	-- projde on_xml_read -> uz s novou volbou
+		mm.rz_mm_bg = xml:InitStatic("background", mm)
+
+		-- texty, ktere puvodne lezely primo v menu (jinak by byly pod novym pozadim)
+		if mm.rz_mm_ver then mm:DetachChild(mm.rz_mm_ver) mm.rz_mm_ver = nil end
+		if xml_has.version then
+			local flavor = anomaly_flavor and (" - " .. anomaly_flavor.get_flavor()) or ""
+			mm.rz_mm_ver = xml:InitStatic("static_version", mm)
+			mm.rz_mm_ver:TextControl():SetTextColor(GetARGB(190, 190, 190, 190))
+			mm.rz_mm_ver:TextControl():SetText(game.translate_string("ui_st_game_version") .. flavor
+				.. (DEV_DEBUG and " (Debug mode - Press F1 for help)" or ""))
+		end
+		if mm.rz_mm_disc then mm:DetachChild(mm.rz_mm_disc) mm.rz_mm_disc = nil end
+		if xml_has.disclaimer then
+			mm.rz_mm_disc = xml:InitStatic("static_disclaimer", mm)
+			mm.rz_mm_disc:TextControl():SetTextColor(GetARGB(223, 223, 223, 223))
+			mm.rz_mm_disc:TextControl():SetText(game.translate_string("ui_mm_disclaimer"))
+		end
+
+		-- ovladani menu zpet nahoru
+		raise(mm.shniaga, true)
+		raise(mm.msg_wnd, false)
+	end)
+	if not ok then log("! zmena pozadi za behu selhala: %s", tostring(err)) end
+end
+
+local function on_option_change()
+	if refresh() then
+		log("zmena pozadi za behu")
+		rebuild()
+	end
+end
+
+local function main_menu_on_init(wnd)
+	mm = wnd
+	refresh()
+end
+
+
+-- v hlavnim menu MCM posila jen mcm_option_change (on_option_change az ve hre). Ten callback
+-- ale vznikne az s nactenim ui_mcm (pri prvnim otevreni MCM), proto se registruje i odtud
+-- (rezone_mcm.on_mcm_load) - drive se v menu video zmenilo az po nacteni hry.
+local live_mcm = false
+function ensure_live()
+	if live_mcm then return end
+	if rezone_core and rezone_core.has_callback("mcm_option_change") then
+		RegisterScriptCallback("mcm_option_change", on_option_change)
+		live_mcm = true
+	end
+end
+
+live_cb = function()
+	RegisterScriptCallback("main_menu_on_init", main_menu_on_init)
+	RegisterScriptCallback("on_option_change", on_option_change)
+	ensure_live()
+end

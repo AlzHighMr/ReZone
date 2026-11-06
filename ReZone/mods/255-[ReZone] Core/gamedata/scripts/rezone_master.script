@@ -1,0 +1,180 @@
+--[[
+	ReZone - hlavni predvolba (ReZone MCM > Hlavni > Predvolba hry)
+
+	Jedna volba nastavi vsechny dulezite stranky ReZone (a obtiznost EFT Health System, kdyz je
+	nainstalovany), aby hrac nemusel nic nastavovat rucne. "Vlastni" = nic se nemeni.
+	Pouzije se jen pri ZMENE volby (po Pouzit). Pak si muzes cokoliv doladit na strankach -
+	predvolba to neprepise, dokud ji znovu nezmenis.
+
+	Klice v SET jsou cesty od "rezone/" (cizi mody celou cestou s "!" na zacatku).
+--]]
+
+local ROOT = "rezone/"
+MASTER = ROOT .. "rz_main/rz_master/master"
+local APPLIED = "rz_master_applied"		-- [rezone_internal] v axr_options: posledni pouzita predvolba
+
+NAMES = { [0] = "custom", [1] = "cop", [2] = "trilogy", [3] = "hardcore" }	-- "trilogy" = v MCM "Anomaly"
+
+local function copy_into(set, prefix, t)
+	for k, v in pairs(t) do set[prefix .. k] = v end
+end
+
+-- id predvolby -> { balistika (0/1/2, zaroven profil obleku), poskozeni hrace, korist, populace, EFTH, artefakty }
+local MAP = {
+	-- Call of Pripyat pro novacky: mekci, vic penez za artefakty, obchodnici prodavaji vse
+	[1] = { ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5, afsp = 2, tough = 0.9, wear = 0.33,
+	        prices = 2, prices_on = true, gamma = false, stock = false, mut = 0.8, punish = 0.5, walk = 0, keep_known = true },
+	-- Anomaly: vanilla ekonomika a mutanti
+	[2] = { ball = 1, pdmg = 3, loot = 2, pop = 1, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
+	        prices = 1, prices_on = false, gamma = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
+	-- Hardcore: ceny jako GAMMA, omezene zasoby, tuzsi mutanti. Zakazy obchodu a toulavi stalkeri
+	-- se predvolbou nezapinaji nikdy - hrac si je zapne sam.
+	[3] = { ball = 2, pdmg = 4, loot = 3, pop = 4, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
+	        prices = 6, prices_on = true, gamma = false, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
+}
+
+local function build(id)
+	local m = MAP[id]
+	if not m then return {} end
+	local s = {}
+	s["rz_gameplay/rz_ball/preset"] = m.ball
+	s["rz_gameplay/rz_ball/npc_tough"] = m.tough
+	s["rz_gameplay/rz_ball/wear"] = m.wear
+	-- ekonomika: ceny, obchod, zasoby
+	s["rz_gameplay/rz_prices/enabled"] = m.prices_on
+	s["rz_gameplay/rz_prices/preset"] = m.prices
+	if rezone_prices and rezone_prices.PRESETS[m.prices] then
+		copy_into(s, "rz_gameplay/rz_prices/", rezone_prices.PRESETS[m.prices])
+	end
+	s["rz_gameplay/rz_trade/gamma"] = m.gamma
+	s["rz_gameplay/rz_trade/stock"] = m.stock
+	-- zakazy obchodu vzdy vypnute (hrac si je zapne sam): "Hrat jako GAMMA" (gamma) a helmy
+	s["rz_gameplay/rz_trade/helm_no_sell"] = false
+	s["rz_gameplay/rz_trade/helm_no_buy"] = false
+	-- mutanti a artefakty
+	s["rz_health/rz_muthp/enabled"] = math.abs(m.mut - 1) > 0.001
+	s["rz_health/rz_muthp/all"] = m.mut
+	s["rz_health/rz_af/punish_chance"] = m.punish
+	s["rz_health/rz_af/punish_strength"] = m.punish
+	-- toulavi stalkeri
+	if rezone_mod_wander then
+		s["rz_gameplay/rz_walk/enabled"] = m.walk > 0
+		if m.walk > 0 then s["rz_gameplay/rz_walk/max_squads"] = m.walk end
+	end
+	-- crafting: znamy recept zustava i po vyrobe (CoP)
+	s["rz_gameplay/rz_craft/keep_known"] = m.keep_known
+	s["rz_health/rz_pdmg/preset"] = m.pdmg
+	copy_into(s, "rz_health/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
+	s["rz_gameplay/rz_loot/enabled"] = true
+	s["rz_gameplay/rz_loot/preset"] = m.loot
+	copy_into(s, "rz_gameplay/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
+	if rezone_mod_population then
+		s["rz_gameplay/rz_pop/enabled"] = true
+		s["rz_gameplay/rz_pop/preset"] = m.pop
+		copy_into(s, "rz_gameplay/rz_pop/", rezone_mod_population.PRESETS[m.pop])
+	end
+	if rezone_mod_afspawn then
+		s["rz_gameplay/rz_afsp/enabled"] = true
+		s["rz_gameplay/rz_afsp/preset"] = m.afsp
+		copy_into(s, "rz_gameplay/rz_afsp/", rezone_mod_afspawn.PRESETS[m.afsp])
+	end
+	s["!efth/efth_gen/difficulty"] = m.efth
+	return s
+end
+
+local function log(fmt, ...) if rezone_core and rezone_core.DEBUG then printf("[ReZone predvolba] " .. fmt, ...) end end
+
+local function applied_get()
+	local c = axr_main and axr_main.config
+	return c and tonumber(c:r_value("rezone_internal", APPLIED, 2, 0)) or 0
+end
+
+local function applied_set(id)
+	local c = axr_main and axr_main.config
+	if not c then return end
+	c:w_value("rezone_internal", APPLIED, id)
+	c:save()
+end
+
+function apply(id)
+	local set = build(id)
+	local n = 0
+	for k, v in pairs(set) do
+		local path = (k:sub(1, 1) == "!") and k:sub(2) or (ROOT .. k)
+		local okh, has = pcall(rezone_core.mcm_has, path)
+		if okh and has and pcall(ui_mcm.set, path, v) then n = n + 1 end
+	end
+	log("%s: nastaveno %d voleb", NAMES[id] or tostring(id), n)
+	return n
+end
+
+-- Vyber predvolby v MCM: hned oznacit (cachovat) vsechny volby, ktere predvolba zmeni,
+-- takze MCM ukaze skutecny pocet zmen a ulozi je sam po "Pouzit" (vcetne obtiznosti EFTH).
+-- Drive se zmenila jen volba predvolby a zbytek se prepsal az po ulozeni - MCM ukazoval 1 zmenu.
+function on_select(path, opt, value, v)
+	local id = tonumber(value) or 0
+	if id == 0 then return end
+	local gui = ui_mcm and ui_mcm.get_gui and ui_mcm.get_gui()
+	if not (gui and gui.CacheValue and gui.GetOption) then return end
+	local n = 0
+	for k, val in pairs(build(id)) do
+		local full = (k:sub(1, 1) == "!") and k:sub(2) or (ROOT .. k)
+		if rezone_core.mcm_has(full) then
+			local p, o = full:match("^(.*)/([^/]+)$")
+			local ov = p and gui:GetOption(full)
+			if ov and ov.type then
+				local ok = pcall(gui.CacheValue, gui, p, o, val, ov)
+				if ok then n = n + 1 end
+			end
+		end
+	end
+	if rezone_core.DEBUG then log("%s: oznaceno %d voleb", NAMES[id] or tostring(id), n) end
+end
+
+local busy = false
+local function on_option_change()
+	if busy or not (ui_mcm and ui_mcm.get and rezone_core.mcm_has(MASTER)) then return end
+	local id = tonumber(ui_mcm.get(MASTER)) or 0
+	if id == applied_get() then return end
+	applied_set(id)
+	if id == 0 then return end				-- Vlastni: nic neprepisovat
+	apply(id)
+	-- ostatni skripty (ReZone, EFTH) si nove hodnoty prectou znovu
+	busy = true
+	pcall(SendScriptCallback, "on_option_change", true)
+	busy = false
+end
+
+-- MCM: kdyz hrac vybere predvolbu, oznacit (cachovat) i vsechny ostatni volby -> MCM ukaze
+-- spravny pocet zmen a ulozi je sam. Primo pres UI_MCM.CacheValue, funguje v kazde verzi MCM 1.6+.
+function hook_gui()
+	local C = ui_mcm and ui_mcm.UI_MCM
+	if not (C and C.CacheValue) or C.__rz_master_hook then return end
+	local orig = C.CacheValue
+	C.__rz_master_hook = true
+	C.CacheValue = function(self, path, opt, value, v)
+		orig(self, path, opt, value, v)
+		if path and opt and (path .. "/" .. opt) == MASTER then
+			local id = tonumber(value) or 0
+			if id == 0 then return end
+			local n = 0
+			for k, val in pairs(build(id)) do
+				local full = (k:sub(1, 1) == "!") and k:sub(2) or (ROOT .. k)
+				local p, o = full:match("^(.*)/([^/]+)$")
+				local okh, has = pcall(rezone_core.mcm_has, full)
+				if p and okh and has then
+					local okg, ov = pcall(self.GetOption, self, full)
+					if okg and type(ov) == "table" and ov.type and pcall(orig, self, p, o, val, ov) then n = n + 1 end
+				end
+			end
+			log("%s: oznaceno %d voleb", NAMES[id] or tostring(id), n)
+		end
+	end
+end
+
+function on_game_start()
+	hook_gui()
+	RegisterScriptCallback("on_option_change", on_option_change)
+	-- predvolba zvolena v hlavnim menu: MCM tam on_option_change neposila -> pouzit po nacteni
+	RegisterScriptCallback("actor_on_first_update", on_option_change)
+end
