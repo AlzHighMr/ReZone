@@ -1179,7 +1179,7 @@ function clPage(md) {
     SRC_FIELDS.forEach(function (f) {
       var v = srcGet(o, f.k);
       var arr = f.type === 'list' ? (v || []) : f.type === 'one' ? [v].filter(Boolean) : [];
-      if (f.k === 'modlist_fixes') arr.forEach(function (l) { if (!/^(\s*[^+:\-][^:]*:\s*)?[+-]\s*\S/.test(l)) errs.push(f.label + ': „' + l + '“ – řádek musí začínat + (zapnout) nebo - (vypnout), případně „Profil: “.'); });
+      if (f.k === 'modlist_fixes') arr.forEach(function (l) { if (!/^(\s*[^+:\-][^:]*:\s*)?[+-]\s*\S/.test(l)) errs.push(f.label + ': „' + l + '“ – řádek musí začínat + (zapnout) nebo - (vypnout), případně „Profil: “. Mod ke smazání patří do pole „Smazat staré mody u hráčů“ pod ním.'); });
       if (f.plain) return;
       arr.forEach(function (l) { if (!isUrl(l)) errs.push(f.label + ': „' + l + '“ není odkaz.'); });
     });
