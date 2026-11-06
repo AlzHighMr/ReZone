@@ -32,7 +32,7 @@ jde hned pod ni (přepíše ji).
 
 - **Opravit load order u hráčů** (`modlist_fixes`): řádky jako v `modlist.txt` – `+Mod` zapnout, `-Mod` vypnout,
   `Veteran: -Mod` jen v profilu Veteran. Launcher je provede jednou ve všech profilech a hráči napíše, co změnil.
-- **Smazat staré mody u hráčů** (`remove_mods`): názvy modů, které launcher hráčům jednou odstraní.
+- **Smazat staré mody u hráčů** (`remove_mods`): názvy modů, které launcher hráčům jednou odstraní. Bez čísla se smaže mod s tím názvem pod jakýmkoli číslem; s číslem (`261-[ReZone] Mod`) jen přesně tahle složka.
 
 ## Kategorie
 
