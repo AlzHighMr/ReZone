@@ -42,7 +42,7 @@ ai_grenade_throw_delay_base 1000
 ai_grenade_throw_delay_step 500
 ai_hold_position_inertia_base 1000
 ai_hold_position_inertia_random 2000
-ai_move_to_cover_run 0
+ai_move_to_cover_run 1
 ai_reload_threshold 0.5
 ai_search_inertia_time 15000
 ai_use_old_vision 0
@@ -238,6 +238,7 @@ g_dispersion_base 2.6
 g_dispersion_factor 3.
 g_draw_pickup_item_names 1
 g_dynamic_music off
+g_end_modif 0.
 g_enemy_manager_useful_cache_time 200
 g_feel_grenade off
 g_firedir_third_person off
@@ -245,6 +246,7 @@ g_firepos off
 g_firepos_zoom off
 g_freelook_toggle off
 g_game_difficulty gd_novice
+g_god off
 g_hit_pwr_modif 1.
 g_important_save on
 g_interrupt_fire_on_aim_toggle 0
@@ -274,6 +276,7 @@ g_restriction_rebuild_frames 20
 g_simple_pda on
 g_sleep_time 1
 g_sprint_toggle on
+g_unlimitedammo off
 g_use_non_linear_inertia 1
 g_use_tracers off
 g_walk_toggle off
@@ -300,6 +303,7 @@ ik_calc_dist 100.
 ik_calc_ssa 0.006
 keyboard_buffer_size 128
 keypress_on_start on
+log_missing_ini off
 log_timestamps 0
 lua_busy_hands_debug 1
 lua_debug 0
@@ -324,11 +328,11 @@ mouse_wheel_invert_zoom 0
 movement_manager_move_along_path_query_pos_threshold 0.25
 mt_bullets on
 mt_calc_bones 1
-mt_level_call 0
+mt_level_call 1
 mt_particles on
 mt_scheduler 1
-mt_schedulerRT 0
-mt_task_manager 0
+mt_schedulerRT 1
+mt_task_manager 1
 mt_ui 0
 mt_update_weapon_sounds 1
 new_zoom_delta_algorithm 1
@@ -341,6 +345,7 @@ pda_map_zoom_out_to_mouse 1
 pda_show_map_labels 1
 pfx_volumetric_mode 0
 ph_frequency 100.00000
+ph_gravity 19.62
 ph_iterations 18
 poltergeist_spawn_corpse_on_death 1
 power_loss_bias 0.2
@@ -348,7 +353,7 @@ power_loss_factor 0.5
 print_bone_warnings 1
 print_dltx_warnings 0
 pseudogiant_can_damage_objects_on_stomp 1
-pseudogiant_dodge_stomp_while_falling 0
+pseudogiant_dodge_stomp_while_falling 1
 r1_detail_textures on
 r1_dlights on
 r1_dlights_clip 40.
@@ -392,7 +397,7 @@ r2_ls_dsm_kernel 0.7
 r2_ls_psm_kernel 0.7
 r2_ls_squality 1.
 r2_ls_ssm_kernel 0.7
-r2_mask_control (0.000000, 0.000000, 0.000000, 0.000000)
+r2_mask_control (1.000000, 1.000000, 0.000000, 1.000000)
 r2_mblur 0.
 r2_mblur_enabled off
 r2_mt on
@@ -426,9 +431,9 @@ r2_sun_details on
 r2_sun_far 100.
 r2_sun_focus on
 r2_sun_lumscale 2.6
-r2_sun_lumscale_amb 1.2
+r2_sun_lumscale_amb 1.25
 r2_sun_lumscale_color (1.000000, 1.000000, 1.000000)
-r2_sun_lumscale_hemi 1.
+r2_sun_lumscale_hemi 1.25
 r2_sun_near 20.
 r2_sun_near_border 0.75
 r2_sun_quality st_opt_medium
@@ -515,7 +520,7 @@ r4_hdr10_whitepoint_nits 400.
 r4_wireframe off
 r__3Dfakescope 1
 r__actor_shadow on
-r__actor_shadow_in_demo_record 1
+r__actor_shadow_in_demo_record 0
 r__blood_decals_on_objects 0
 r__bloom_thresh (0.700000, 0.800000, 0.900000, 0.000000)
 r__bloom_weight (0.330000, 0.330000, 0.330000, 0.000000)
@@ -580,9 +585,9 @@ rs_stats off
 rs_v_sync off
 rs_vis_distance 1.
 s3ds_param_1 (4.000000, 4.000000, 0.300000, 0.000000)
-s3ds_param_2 (0.550000, 1.400000, 0.000000, 1.500000)
+s3ds_param_2 (0.550000, 1.250000, 0.000000, 1.501000)
 s3ds_param_3 (0.000000, 0.000000, 0.200000, 0.030000)
-s3ds_param_4 (1.000000, 1.000000, 1.000000, 18.000000)
+s3ds_param_4 (1.000000, 1.000000, 1.000000, 16.000000)
 scale_hud_motion_marks_by_speed 0
 scheduler_batch_size 256
 scheduler_log 0
@@ -622,6 +627,7 @@ slot_3 stimpack
 smooth_ads_transition 0
 snd_acceleration on
 snd_cache_size 256
+snd_device Default Device
 snd_distance_based_delay_min_distance 50.
 snd_distance_based_delay_power 1.
 snd_doppler_power 1.8
@@ -667,15 +673,15 @@ ssfx_bloom_2 (3.000000, 1.500000, 1.500000, 1.000000)
 ssfx_bloom_use_presets 1
 ssfx_florafixes_1 (0.325000, 0.600000, 0.350000, 0.600000)
 ssfx_florafixes_2 (2.000000, 0.750000, 0.000000, 0.000000)
-ssfx_floravariation (0.025000, 0.100000, 0.025000, 0.050000)
+ssfx_floravariation (0.000000, 0.000000, 0.000000, 0.000000)
 ssfx_fog (20.000000, 1.400000, 0.030000, 0.000000)
 ssfx_fog_scattering 0.6
-ssfx_gloss_factor 0.96
+ssfx_gloss_factor 0.336
 ssfx_gloss_method 1
 ssfx_gloss_minmax (0.350000, 0.760000, 0.000000)
-ssfx_grass_interactive (1.000000, 5.000000, 1000.000000, 1.000000)
+ssfx_grass_interactive (1.000000, 8.000000, 2000.000000, 1.000000)
 ssfx_grass_shadows (1.000000, 0.350000, 30.000000, 0.000000)
-ssfx_hud_drops_1 (438.653320, 1.000000, 30.000000, 0.050000)
+ssfx_hud_drops_1 (0.000000, 0.000000, 30.000000, 0.050000)
 ssfx_hud_drops_2 (0.225000, 1.250000, 0.070000, 1.000000)
 ssfx_hud_hemi 0.1
 ssfx_il (6.666667, 1.250000, 0.600000, 5.000000)
@@ -686,8 +692,8 @@ ssfx_int_grass_params_2 (1.000000, 5.000000, 0.300000, 2.000000)
 ssfx_is_underground 0
 ssfx_lightsetup_1 (1.000000, 1.000000, 0.000000, 0.000000)
 ssfx_lut (1.000000, 0.000000, 0.000000, 0.000000)
-ssfx_motionblur (6.000000, 0.500000, 0.000000, 0.300000)
-ssfx_pom (24.000000, 12.000000, 0.035000, 0.500000)
+ssfx_motionblur (4.000000, 0.000000, 0.000000, 0.000000)
+ssfx_pom (16.000000, 12.000000, 0.035000, 0.500000)
 ssfx_pom_refine 0
 ssfx_rain_1 (2.000000, 0.060000, 1.000000, 2.000000)
 ssfx_rain_2 (0.150000, 0.700000, 7.000000, 1.000000)
@@ -701,11 +707,11 @@ ssfx_ssr_2 (1.000000, 1.400000, 0.130000, 0.300000)
 ssfx_ssr_quality 0
 ssfx_sss (1.000000, 1.000000, 0.000000, 0.000000)
 ssfx_sss_quality (12.000000, 4.000000, 1.000000, 1.000000)
-ssfx_taa (1.000000, 0.500000, 0.600000, 0.000000)
+ssfx_taa (1.000000, 0.000000, 0.600000, 0.000000)
 ssfx_terrain_grass_align 1
 ssfx_terrain_grass_slope 1.
 ssfx_terrain_offset (-0.100000, -0.050000, -0.100000, 0.000000)
-ssfx_terrain_pom (24.000000, 20.000000, 0.040000, 1.000000)
+ssfx_terrain_pom (12.000000, 20.000000, 0.040000, 1.000000)
 ssfx_terrain_pom_refine 1
 ssfx_terrain_quality (8.000000, 0.000000, 0.000000, 0.000000)
 ssfx_volumetric (1.000000, 0.800000, 4.000000, 1.000000)
@@ -723,7 +729,7 @@ ssfx_wpn_dof_2 1.
 step_particle_distance 50.
 step_sound_distance 50.
 string_table_error_msg 0
-telekinetic_objects_include_corpses 0
+telekinetic_objects_include_corpses 1
 texture_lod 0
 time_factor 1.000000
 use_english_text_for_missing_translations 1
@@ -732,7 +738,7 @@ vid_mode 1920x1080
 vid_monitor Auto
 viewport_near 0.2
 vignette_control (0.000000, 0.000000, 0.000000, 0.000000)
-weapon_sway on
+weapon_sway off
 wpn_aim_toggle on
 wpn_degradation 0.5
 zoom_step_count 3.
