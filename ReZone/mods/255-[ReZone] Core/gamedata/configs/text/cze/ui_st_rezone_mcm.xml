@@ -909,6 +909,93 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Burer, karlík a psí pes.</text>
 	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch">
+		<text>Šance na munici u zbranì</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch_desc">
+		<text>Jak èasto mrtvola má k zbrani i munici (1 = vždy jako ve vanille, 0.5 = u poloviny mrtvol). Množství urèuje posuvník nad tím.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_items">
+		<text>Vìci z mrtvol – šance (jak èasto) a poèet (kolik kusù). 1 = vanilla, 0 = nikdy, 2 = dvojnásobek. Kategorie podle druhu pøedmìtu; jisté vìci (pøedmìty pøíbìhových postav) se nemìní.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch">
+		<text>Léky – šance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch_desc">
+		<text>Lékárnièky, obvazy, antirad, stimulanty, dlahy a další léky.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n">
+		<text>Léky – poèet</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n_desc">
+		<text>Kolik kusù najednou, když padnou.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch">
+		<text>Jídlo a pití – šance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch_desc">
+		<text>Konzervy, chleba, voda, alkohol, cigarety…</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n">
+		<text>Jídlo a pití – poèet</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n_desc">
+		<text>Kolik kusù najednou, když padnou.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch">
+		<text>Granáty – šance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch_desc">
+		<text>Ruèní granáty a výbušniny.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n">
+		<text>Granáty – poèet</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n_desc">
+		<text>Kolik kusù najednou, když padnou.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch">
+		<text>Ostatní – šance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch_desc">
+		<text>Náøadí, souèástky, baterie, dokumenty, drobnosti a vše ostatní.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n">
+		<text>Ostatní – poèet</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n_desc">
+		<text>Kolik kusù najednou, když padnou.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_vision">
+		<text>Zrak NPC</text>
+	</string>
+	<string id="ui_mcm_rz_vision_title">
+		<text>Zrak NPC pøes vegetaci</text>
+	</string>
+	<string id="ui_mcm_rz_vision_info">
+		<text>Jak moc keøe, koruny stromù a jiné prùhledné pøekážky zakryjí hráèe pøed NPC. Ve vanille vidí stalkeøi pøes keøe skoro jako by tam nebyly. 0 = vanilla, 0.5 = hustší keø tì zakryje, 1 = cokoli prùhledného (i sklo) tì zakryje úplnì. Zdi a terén zakrývají vždy.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free">
+		<text>Stalkeøi – v klidu</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free_desc">
+		<text>Když o tobì stalker neví (hlídka, tábor). Tady má vegetace nejvìtší smysl pro plížení.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger">
+		<text>Stalkeøi – v boji</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger_desc">
+		<text>Když je stalker v poplachu nebo bojuje. Vyšší hodnota = snáz se mu ztratíš v køoví.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant">
+		<text>Mutanti</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant_desc">
+		<text>Všichni mutanti, i z modù (Re:Spawn apod.).</text>
+	</string>
+	<string id="ui_mcm_rz_vision_note">
+		<text>Tráva a rákosí na to nemají vliv – ve høe nemají kolizi, takže pohled NPC jimi vždy projde. Projeví se u NPC, která se naètou po zmìnì – nejjistìji po naètení uložené hry. Vyžaduje modded exes. Soubory hry se nemìní.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_hit_info">
 		<text>Zásahy hráèe: krvavá smìrovka, která ukazuje, odkud tì støela zasáhla, a cuknutí kamery (aim punch) pøi zásahu.</text>
 	</string>
@@ -922,7 +1009,7 @@
 		<text>Vypnout cuknutí kamery pøi zásahu</text>
 	</string>
 	<string id="ui_mcm_rz_fx_aimpunch_desc">
-		<text>Kamera a zbraò sebou pøi zásahu støelou necuknou. Èervený záblesk obrazu zùstane.</text>
+		<text>Kamera a zbraò sebou pøi zásahu necuknou – vypne cuknutí z enginu i animace kamery Anomaly pøi vìtším zranìní. Èervený záblesk a zvuk bolesti zùstanou.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_hit_note">
 		<text>Cuknutí kamery platí hned. Smìrovka zmizí po naètení uložené hry nebo pøechodu do jiné lokace (když vypneš obojí, zmizí hned). Vyžaduje modded exes.</text>

@@ -8,11 +8,14 @@ DEFAULT = 1
 PRESETS = {
 	-- Vanilla Anomaly (death_generic.ltx)
 	[1] = { w_lo_min = 5,  w_lo_max = 20, w_hi_min = 20, w_hi_max = 45, w_zmin = 5,  w_zmax = 20,
-	        o_lo_min = 5,  o_lo_max = 15, o_hi_min = 15, o_hi_max = 30, o_zmin = 5,  o_zmax = 15, ammo = 1 },
+	        o_lo_min = 5,  o_lo_max = 15, o_hi_min = 15, o_hi_max = 30, o_zmin = 5,  o_zmax = 15, ammo = 1,
+	        ammo_ch = 1, med_ch = 1, med_n = 1, food_ch = 1, food_n = 1, gren_ch = 1, gren_n = 1, oth_ch = 1, oth_n = 1 },
 	-- Trilogie: veci z mrtvol jsou pouzitelne, jako v SoC/CS/CoP
 	[2] = { w_lo_min = 25, w_lo_max = 50, w_hi_min = 50, w_hi_max = 80, w_zmin = 15, w_zmax = 40,
-	        o_lo_min = 25, o_lo_max = 45, o_hi_min = 45, o_hi_max = 70, o_zmin = 10, o_zmax = 30, ammo = 1.5 },
+	        o_lo_min = 25, o_lo_max = 45, o_hi_min = 45, o_hi_max = 70, o_zmin = 10, o_zmax = 30, ammo = 1.5,
+	        ammo_ch = 1, med_ch = 1.2, med_n = 1, food_ch = 1.2, food_n = 1, gren_ch = 1, gren_n = 1, oth_ch = 1, oth_n = 1 },
 	-- Tvrda: skoro vse je k rozebrani, munice malo
 	[3] = { w_lo_min = 3,  w_lo_max = 12, w_hi_min = 10, w_hi_max = 30, w_zmin = 3,  w_zmax = 10,
-	        o_lo_min = 3,  o_lo_max = 10, o_hi_min = 10, o_hi_max = 20, o_zmin = 3,  o_zmax = 8,  ammo = 0.6 },
+	        o_lo_min = 3,  o_lo_max = 10, o_hi_min = 10, o_hi_max = 20, o_zmin = 3,  o_zmax = 8,  ammo = 0.6,
+	        ammo_ch = 0.75, med_ch = 0.6, med_n = 1, food_ch = 0.7, food_n = 1, gren_ch = 0.6, gren_n = 1, oth_ch = 0.8, oth_n = 1 },
 }

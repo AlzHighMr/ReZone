@@ -12,6 +12,9 @@
 	            (db.actor:disable_hit_marks), protoze tim zmizi obe veci zaroven.
 	Cuknuti:    cam_eff_name -> camera_effects\empty.anm (prazdna animace hry). Engine cte efekt
 	            pri kazdem zasahu, takze plati hned.
+	            Navic skript Anomaly actor_effects.Update_Impact pri vetsim ubytku zdravi prehraje
+	            vlastni animace kamery (hit_front, hit_left, shell_shock, head_shot... - efekt id 999).
+	            Ty se pri vypnute volbe nepousti; cerveny zablesk, zvuk bolesti a ostatni zustanou.
 	Hodnoty se meni jen v pameti hry (soubory zustanou), puvodni se pamatuji a pri vypnuti volby vrati.
 	Vyzaduje modded exes (ini_sys:set_readonly / w_string).
 --]]
@@ -92,6 +95,25 @@ local function on_update()
 	if not (db.actor and db.actor:disable_hit_marks()) then apply_actor() end
 end
 
+-- skriptovy "aim punch" Anomaly: actor_effects.Update_Impact -> level.add_cam_effector(..., 999, ...)
+local IMPACT_CAM_ID = 999
+local function hook_impact()
+	if not (actor_effects and actor_effects.Update_Impact) or actor_effects.__rz_impact then return end
+	local orig = actor_effects.Update_Impact
+	actor_effects.__rz_impact = true
+	actor_effects.Update_Impact = function(actor)
+		if not cfg.punch then return orig(actor) end
+		local ace = level.add_cam_effector
+		level.add_cam_effector = function(anm, id, ...)
+			if id == IMPACT_CAM_ID then return end
+			return ace(anm, id, ...)
+		end
+		local ok, err = pcall(orig, actor)
+		level.add_cam_effector = ace
+		if not ok then core.warn("zasahy: actor_effects.Update_Impact: %s", tostring(err)) end
+	end
+end
+
 function load()
 	local g = core.page(PAGE)
 	cfg.mark  = g("hitmark") == true
@@ -103,6 +125,7 @@ end
 
 function on_game_start()
 	core.on_change(load)
+	hook_impact()
 	RegisterScriptCallback("actor_on_first_update", load)
 	RegisterScriptCallback("actor_on_update", on_update)
 	load()	-- hned, at se smerovka nacte uz s nastavenou texturou

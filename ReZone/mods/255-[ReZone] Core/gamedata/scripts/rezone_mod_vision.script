@@ -1,0 +1,112 @@
+--[[
+	ReZone MCM - zrak NPC pres vegetaci (keře, stromy a jine castecne pruhledne prekazky)
+
+	Engine (CVisualMemoryManager) pocita, kolik "pruhlednosti" zbude na paprsku od oci NPC k cili:
+	kazda prekazka ji snizi podle materialu (ker, koruna stromu, sklo... nechaji kus projit, zed nic).
+	Kdyz zbyla pruhlednost klesne pod transparency_threshold sekce zraku, NPC cil nevidi.
+	Anomaly ma prah nizky (stalkeri 0.25), proto vidi pres kere skoro jako by tam nebyly.
+
+	Modul prah zvedne:  novy = puvodni + (1 - puvodni) * posuvnik
+	  0   = vanilla
+	  0.5 = hustsi ker uz zakryje
+	  1   = cokoli castecne pruhledneho zakryje uplne (i sklo)
+	Zvlast stalkeri v klidu (vision_free), stalkeri v boji (vision_danger) a mutanti.
+	Sekce zraku se najdou samy (vision_free_section / vision_danger_section u vsech NPC a monster),
+	takze funguje i pro mutanty z modu (Re:Spawn apod.).
+	Tráva a rakosi jsou "detail objekty" bez kolize - paprsek je nevidi, na ne to neplati.
+	NPC si sekci zraku nacte, kdyz se objevi -> projevi se po nacteni savu / u nove nactenych NPC.
+	Hodnoty se meni jen v pameti hry. Vyzaduje modded exes.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_vision"
+local KEY = "transparency_threshold"
+local OKEY = "rz_orig_" .. KEY
+local STALKER_CLS = { AI_STL_S = true, ["AI_STL"] = true }
+
+local groups = nil	-- { st_free = {sec,...}, st_danger = {...}, mutant = {...} }
+local warned = false
+
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and true or false
+end
+
+local function scan()
+	if groups then return end
+	local seen = {}
+	groups = { st_free = {}, st_danger = {}, mutant = {} }
+	local function add(g, sec)
+		if sec and sec ~= "" and not seen[sec] and ini_sys:section_exist(sec) and ini_sys:line_exist(sec, KEY) then
+			seen[sec] = true
+			table.insert(groups[g], sec)
+		end
+	end
+	ini_sys:section_for_each(function(sec)
+		local vf = ini_sys:line_exist(sec, "vision_free_section") and ini_sys:r_string_ex(sec, "vision_free_section")
+		local vd = ini_sys:line_exist(sec, "vision_danger_section") and ini_sys:r_string_ex(sec, "vision_danger_section")
+		if vf or vd then
+			local cls = ini_sys:line_exist(sec, "class") and ini_sys:r_string_ex(sec, "class") or ""
+			if STALKER_CLS[cls] or (vf and string.find(vf, "^stalker")) then
+				add("st_free", vf); add("st_danger", vd)
+			elseif cls ~= "" and cls ~= "S_ACTOR" then
+				add("mutant", vf); add("mutant", vd)
+			end
+		end
+		return false
+	end)
+	core.log("zrak: sekci stalkeri klid %d, boj %d, mutanti %d", #groups.st_free, #groups.st_danger, #groups.mutant)
+end
+
+local function orig(sec)
+	if ini_sys:line_exist(sec, OKEY) then return ini_sys:r_float_ex(sec, OKEY) end
+	return ini_sys:r_float_ex(sec, KEY)
+end
+
+local changed = 0
+local function apply_group(list, k)
+	for _, sec in ipairs(list) do
+		local o = orig(sec)
+		if o then
+			local want = (k > 0) and (o + (1 - o) * k) or o
+			local cur = ini_sys:r_float_ex(sec, KEY) or o
+			if math.abs(cur - want) > 0.0005 then
+				if not ini_sys:line_exist(sec, OKEY) then pcall(ini_sys.w_string, ini_sys, sec, OKEY, tostring(o), "") end
+				if pcall(ini_sys.w_string, ini_sys, sec, KEY, string.format("%.3f", want), "") then changed = changed + 1 end
+			end
+		end
+	end
+end
+
+function load()
+	local g = core.page(PAGE)
+	local k = {
+		st_free   = clamp(tonumber(g("st_free")) or 0, 0, 1),
+		st_danger = clamp(tonumber(g("st_danger")) or 0, 0, 1),
+		mutant    = clamp(tonumber(g("mutant")) or 0, 0, 1),
+	}
+	local any = k.st_free > 0 or k.st_danger > 0 or k.mutant > 0
+	local touched = ini_sys:section_exist("stalker_vision_free") and ini_sys:line_exist("stalker_vision_free", OKEY)
+	if not any and not touched then return end
+	if not can_write() then
+		if not warned then warned = true; core.warn("zrak: tato verze exe neumi menit nastaveni za behu (chybi modded exes)") end
+		return
+	end
+	scan()
+	changed = 0
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		apply_group(groups.st_free, k.st_free)
+		apply_group(groups.st_danger, k.st_danger)
+		apply_group(groups.mutant, k.mutant)
+	end)
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("zrak: %s", tostring(err)) end
+	if changed > 0 then core.log("zrak: zmeneno %d sekci", changed) end
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()	-- hned, at to plati uz pro NPC pri nacitani urovne
+end

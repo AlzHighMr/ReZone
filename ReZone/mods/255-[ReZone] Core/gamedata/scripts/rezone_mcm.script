@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.19"
+VERSION = "2.5.21"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -59,6 +59,20 @@ local function page(id, gr) return { id = id, sh = true, gr = gr } end
 ------------------------------------------------------------
 -- GAMEPLAY
 ------------------------------------------------------------
+-- Zrak NPC pres vegetaci (rezone_mod_vision)
+local function gp_vision()
+	return page("rz_vision", {
+		slide("ui_mcm_rz_vision_title"),
+		desc("d", "ui_mcm_rz_vision_info"),
+		line("l1"),
+		track("st_free", 0, 0, 1, 0.05, "rz_vision_st_free"),
+		track("st_danger", 0, 0, 1, 0.05, "rz_vision_st_danger"),
+		track("mutant", 0, 0, 1, 0.05, "rz_vision_mutant"),
+		line("l2"),
+		desc("n", "ui_mcm_rz_vision_note", CLR_NOTE),
+	})
+end
+
 local function gp_craft()
 	return page("rz_craft", {
 		slide("ui_mcm_rz_craft_title"),
@@ -169,7 +183,18 @@ local function gp_loot()
 		line("l4"),
 		desc("da", "ui_mcm_rz_loot_ammo_h"),
 		track("ammo", d.ammo, 0.25, 5, 0.05, "rz_loot_ammo"),
+		track("ammo_ch", d.ammo_ch, 0, 1, 0.05, "rz_loot_ammo_ch"),
 		check("no_special", false, "rz_loot_no_special"),
+		line("l5"),
+		desc("di", "ui_mcm_rz_loot_items"),
+		track("med_ch", d.med_ch, 0, 3, 0.05, "rz_loot_med_ch"),
+		track("med_n", d.med_n, 0, 3, 0.05, "rz_loot_med_n"),
+		track("food_ch", d.food_ch, 0, 3, 0.05, "rz_loot_food_ch"),
+		track("food_n", d.food_n, 0, 3, 0.05, "rz_loot_food_n"),
+		track("gren_ch", d.gren_ch, 0, 3, 0.05, "rz_loot_gren_ch"),
+		track("gren_n", d.gren_n, 0, 3, 0.05, "rz_loot_gren_n"),
+		track("oth_ch", d.oth_ch, 0, 3, 0.05, "rz_loot_oth_ch"),
+		track("oth_n", d.oth_n, 0, 3, 0.05, "rz_loot_oth_n"),
 	})
 end
 
@@ -440,6 +465,7 @@ function build_tree()
 	if rezone_mod_wander then rezone_mod_wander.read_cfg(); gp[#gp + 1] = gp_wander() end
 	gp[#gp + 1] = gp_ballistics()
 	gp[#gp + 1] = gp_craft()
+	gp[#gp + 1] = gp_vision()
 	gp[#gp + 1] = L.build_page(TAB_GP)
 	return {
 		id = ROOT,

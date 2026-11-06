@@ -909,6 +909,93 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Бюрер, карлик и пси-собака.</text>
 	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch">
+		<text>Шанс патронов к оружию</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch_desc">
+		<text>Как часто у трупа есть патроны к оружию (1 = всегда, как в ванили, 0.5 = у половины). Количество задаёт ползунок выше.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_items">
+		<text>Вещи с трупов - шанс (как часто) и количество (сколько штук). 1 = ваниль, 0 = никогда, 2 = вдвое. Категории по типу предмета; гарантированные вещи (предметы сюжетных персонажей) не меняются.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch">
+		<text>Медикаменты - шанс</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch_desc">
+		<text>Аптечки, бинты, антирад, стимуляторы, шины и другие лекарства.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n">
+		<text>Медикаменты - количество</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n_desc">
+		<text>Сколько штук, если выпадут.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch">
+		<text>Еда и питьё - шанс</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch_desc">
+		<text>Консервы, хлеб, вода, алкоголь, сигареты...</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n">
+		<text>Еда и питьё - количество</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n_desc">
+		<text>Сколько штук, если выпадут.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch">
+		<text>Гранаты - шанс</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch_desc">
+		<text>Ручные гранаты и взрывчатка.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n">
+		<text>Гранаты - количество</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n_desc">
+		<text>Сколько штук, если выпадут.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch">
+		<text>Прочее - шанс</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch_desc">
+		<text>Инструменты, детали, батарейки, документы, мелочи и всё остальное.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n">
+		<text>Прочее - количество</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n_desc">
+		<text>Сколько штук, если выпадут.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_vision">
+		<text>Зрение NPC</text>
+	</string>
+	<string id="ui_mcm_rz_vision_title">
+		<text>Зрение NPC сквозь растительность</text>
+	</string>
+	<string id="ui_mcm_rz_vision_info">
+		<text>Насколько кусты, кроны деревьев и другие полупрозрачные препятствия скрывают игрока от NPC. В ванили сталкеры видят сквозь кусты почти как сквозь воздух. 0 = ваниль, 0.5 = густой куст скрывает, 1 = всё полупрозрачное (даже стекло) скрывает полностью. Стены и рельеф скрывают всегда.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free">
+		<text>Сталкеры - спокойно</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free_desc">
+		<text>Когда сталкер о тебе не знает (патруль, лагерь). Важнее всего для скрытности.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger">
+		<text>Сталкеры - в бою</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger_desc">
+		<text>Когда сталкер встревожен или в бою. Выше = легче скрыться от него в кустах.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant">
+		<text>Мутанты</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant_desc">
+		<text>Все мутанты, включая модовых (Re:Spawn и т.п.).</text>
+	</string>
+	<string id="ui_mcm_rz_vision_note">
+		<text>Трава и камыш не влияют - у них нет коллизии, взгляд NPC проходит сквозь них. Действует на NPC, загруженных после изменения - надёжнее всего после загрузки сохранения. Требуются modded exes. Файлы игры не меняются.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_hit_info">
 		<text>Попадания по игроку: кровавый указатель направления, откуда прилетела пуля, и рывок камеры (aim punch) при попадании.</text>
 	</string>
@@ -922,7 +1009,7 @@
 		<text>Отключить рывок камеры при попадании</text>
 	</string>
 	<string id="ui_mcm_rz_fx_aimpunch_desc">
-		<text>Камера и оружие не дёргаются при попадании пули. Красная вспышка экрана остаётся.</text>
+		<text>Камера и оружие не дёргаются при попадании - отключает и рывок движка, и анимации камеры Anomaly при сильном ранении. Красная вспышка и звук боли остаются.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_hit_note">
 		<text>Рывок камеры действует сразу. Указатель пропадает после загрузки сохранения или перехода на другую локацию (если отключить оба - сразу). Требуются modded exes.</text>

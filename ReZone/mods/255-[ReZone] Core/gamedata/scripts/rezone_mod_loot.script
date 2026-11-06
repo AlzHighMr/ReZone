@@ -4,6 +4,8 @@
 	- neprepisuje death_manager.script, jen obali jeho funkce (funguje s jinymi upravami)
 	- misto 36 posuvniku: rozsah pro nejnizsi a nejvyssi hodnost, mezi nimi plynule
 	- zombie zvlast, munice nasobicem; vypnuto = vanilla
+	- veci z mrtvol (death_manager.create_item): sance a pocet zvlast pro leky, jidlo a piti,
+	  granaty a ostatni (kategorie podle "kind" predmetu); munice: sance, ze se k zbrani vubec objevi
 --]]
 
 local core = rezone_core
@@ -34,6 +36,28 @@ end
 
 local function roll(lo, hi)
 	return clamp(math.random(math.floor(lo + 0.5), math.floor(hi + 0.5)), 1, 100) / 100
+end
+
+-- kategorie veci z mrtvoly podle "kind" v configu predmetu
+local CAT_CACHE = {}
+local function category(sec)
+	local c = CAT_CACHE[sec]
+	if c then return c end
+	local kind = ini_sys:section_exist(sec) and ini_sys:r_string_ex(sec, "kind") or ""
+	if kind == "i_medical" then c = "med"
+	elseif kind == "i_food" or kind == "i_drink" then c = "food"
+	elseif kind == "w_explosive" or sec:find("^grenade_") then c = "gren"
+	else c = "oth" end
+	CAT_CACHE[sec] = c
+	return c
+end
+
+-- pocet * nasobic, desetinna cast nahodne (1 kus * 0.5 = polovina mrtvol)
+local function scale_count(n, m)
+	local x = n * m
+	local f = math.floor(x)
+	if math.random() < x - f then f = f + 1 end
+	return f
 end
 
 -- ---------------------------------------------------------------- patch
@@ -73,10 +97,26 @@ local function patch()
 		end
 	end
 
+	-- veci z mrtvol (leky, jidlo, granaty, ostatni): create_item(npc, section, number, rnd, to_save)
+	if dm.create_item then
+		local orig_item = dm.create_item
+		dm.create_item = function(npc, section, number, rnd, ...)
+			-- rnd >= 1 = jista vec (predmety pribehovych postav, pevne dane veci) - nemenit
+			if cfg.on and section and type(number) == "number" and type(rnd) == "number" and rnd < 1 and not IsItem("ammo", section) then
+				local c = category(section)
+				number = scale_count(number, cfg[c .. "_n"] or 1)
+				rnd = math.min(1, rnd * (cfg[c .. "_ch"] or 1))
+				if number <= 0 or rnd <= 0 then return end
+			end
+			return orig_item(npc, section, number, rnd, ...)
+		end
+	end
+
 	-- alife_create_item jen pro death_manager (promenna modulu prekryje globalni funkci)
 	local g_create = rawget(dm, "alife_create_item") or _G.alife_create_item	-- zachovat i upravu z rezone_ammo
 	dm.alife_create_item = function(sec, obj, t, ...)
 		if cfg.on and in_ammo and t and t.ammo and sec then
+			if cfg.ammo_ch < 1 and math.random() > cfg.ammo_ch then return end	-- k zbrani tentokrat zadna munice
 			if cfg.no_special and sec:find("_bad$") and ini_sys:section_exist(sec:sub(1, -5)) then
 				sec = sec:sub(1, -5)
 			end
@@ -127,6 +167,11 @@ function load()
 		cfg[k] = tonumber(g(k)) or 10
 	end
 	cfg.ammo = tonumber(g("ammo")) or 1
+	cfg.ammo_ch = clamp(tonumber(g("ammo_ch")) or 1, 0, 1)
+	for _, c in ipairs({ "med", "food", "gren", "oth" }) do
+		cfg[c .. "_ch"] = tonumber(g(c .. "_ch")) or 1
+		cfg[c .. "_n"] = tonumber(g(c .. "_n")) or 1
+	end
 	cfg.no_special = g("no_special") == true
 	if cfg.on then patch() end
 	core.log("korist: %s", cfg.on and "zapnuto" or "vypnuto")

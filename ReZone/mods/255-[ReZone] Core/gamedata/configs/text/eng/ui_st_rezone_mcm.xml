@@ -909,6 +909,93 @@
 	<string id="ui_mcm_rz_fx_psy_other_desc">
 		<text>Burer, karlik and psy dog.</text>
 	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch">
+		<text>Chance of ammo with a weapon</text>
+	</string>
+	<string id="ui_mcm_rz_loot_ammo_ch_desc">
+		<text>How often a corpse also has ammo for its weapon (1 = always as in vanilla, 0.5 = half of corpses). The amount is set by the slider above.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_items">
+		<text>Items on corpses - chance (how often) and count (how many). 1 = vanilla, 0 = never, 2 = double. Categories by item kind; guaranteed items (story characters' items) are not changed.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch">
+		<text>Meds - chance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_ch_desc">
+		<text>Medkits, bandages, antirad, stimulants, splints and other meds.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n">
+		<text>Meds - count</text>
+	</string>
+	<string id="ui_mcm_rz_loot_med_n_desc">
+		<text>How many at once when they drop.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch">
+		<text>Food and drink - chance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_ch_desc">
+		<text>Cans, bread, water, alcohol, cigarettes...</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n">
+		<text>Food and drink - count</text>
+	</string>
+	<string id="ui_mcm_rz_loot_food_n_desc">
+		<text>How many at once when they drop.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch">
+		<text>Grenades - chance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_ch_desc">
+		<text>Hand grenades and explosives.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n">
+		<text>Grenades - count</text>
+	</string>
+	<string id="ui_mcm_rz_loot_gren_n_desc">
+		<text>How many at once when they drop.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch">
+		<text>Other - chance</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_ch_desc">
+		<text>Tools, parts, batteries, documents, trinkets and everything else.</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n">
+		<text>Other - count</text>
+	</string>
+	<string id="ui_mcm_rz_loot_oth_n_desc">
+		<text>How many at once when they drop.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_vision">
+		<text>NPC vision</text>
+	</string>
+	<string id="ui_mcm_rz_vision_title">
+		<text>NPC vision through foliage</text>
+	</string>
+	<string id="ui_mcm_rz_vision_info">
+		<text>How much bushes, tree crowns and other see-through obstacles hide the player from NPCs. In vanilla stalkers see through bushes almost as if they weren't there. 0 = vanilla, 0.5 = a denser bush hides you, 1 = anything see-through (even glass) hides you completely. Walls and terrain always block.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free">
+		<text>Stalkers - calm</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_free_desc">
+		<text>When the stalker doesn't know about you (patrol, camp). This matters most for sneaking.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger">
+		<text>Stalkers - in combat</text>
+	</string>
+	<string id="ui_mcm_rz_vision_st_danger_desc">
+		<text>When the stalker is alerted or fighting. Higher = easier to lose him in the bushes.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant">
+		<text>Mutants</text>
+	</string>
+	<string id="ui_mcm_rz_vision_mutant_desc">
+		<text>All mutants, including modded ones (Re:Spawn etc.).</text>
+	</string>
+	<string id="ui_mcm_rz_vision_note">
+		<text>Grass and reeds are not affected - they have no collision in the game, so NPC sight always passes through. Applies to NPCs loaded after the change - most reliably after loading a save. Requires modded exes. Game files are not changed.</text>
+	</string>
 	<string id="ui_mcm_rz_fx_hit_info">
 		<text>Hits on the player: the blood direction marker showing where a bullet came from, and the camera kick (aim punch) when you are hit.</text>
 	</string>
@@ -922,7 +1009,7 @@
 		<text>Disable camera kick on hit (aim punch)</text>
 	</string>
 	<string id="ui_mcm_rz_fx_aimpunch_desc">
-		<text>Camera and weapon no longer jerk when you are hit by a bullet. The red screen flash stays.</text>
+		<text>Camera and weapon no longer jerk when you are hit - turns off both the engine kick and Anomaly's camera animations on bigger wounds. The red flash and pain sound stay.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_hit_note">
 		<text>Camera kick applies right away. The marker disappears after loading a save or changing level (with both turned off it disappears right away). Requires modded exes.</text>
