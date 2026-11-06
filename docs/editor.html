@@ -948,6 +948,7 @@ function clPage(md) {
     { k: 'weapons', label: 'Zbraně', type: 'list' },
     { k: 'update_note', label: 'Poznámka k aktualizaci', type: 'area', tip: 'Hráč ji uvidí v okně před aktualizací modpacku. Prázdné = nic.' },
     { k: 'new_save', label: 'Tahle verze potřebuje novou hru', type: 'bool', tip: 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.' },
+    { k: 'remove_mods', label: 'Smazat staré mody u hráčů', type: 'list', tip: 'Jeden mod na řádek (název složky v MO2, číslo a autor můžou chybět). Launcher je hráčům při kontrole aktualizací přesune do zálohy (složka _Odstranene mody v modpacku) a vyřadí z load orderu všech profilů. Každý jen jednou – když si ho hráč později nainstaluje znovu, zůstane.' },
     { k: 'other', label: 'Ostatní volitelné mody', type: 'list', adv: true },
     { k: 'rezone_alt', label: 'Záložní složky modpacku', type: 'list', adv: true, tip: 'Použijí se, když hlavní nejde načíst.' },
     { k: 'optional_alt', label: 'Další složky volitelných modů', type: 'list', adv: true },

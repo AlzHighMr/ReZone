@@ -145,7 +145,7 @@
     {
       "name": "ReZone Trilogy",
       "title": "Stalker Trilogy",
-      "priority": 290,
+      "priority": 283,
       "description": "WORK IN PROGRESS\nBETA verze portu příběhů celé trilogie S.T.A.L.K.E.R. do Anomaly: Shadow of Chernobyl, Clear Sky a Call of Pripyat. \nHlavní dějové linie, postavy a úkoly původních her zasazené do otevřené Zóny Anomaly. \nRozpracované: počítej s chybami, nedokončenými úkoly a změnami mezi verzemi. \nDoporučená nová hra.\n\n",
       "author": "GSC",
       "category": "Work in Progress",
@@ -154,9 +154,10 @@
       "requires": [
         "Stalker Trilogy Compat Patch",
         "CS Smart Covers",
-        "Stalker Trilogy Assets"
+        "ReZone Trilogy Assets"
       ],
-      "url": "https://drive.google.com/file/d/1ZKRLM49qFmPbTosSR9rq10ZT9-U_LJFr"
+      "url": "https://drive.google.com/file/d/1ZKRLM49qFmPbTosSR9rq10ZT9-U_LJFr",
+      "after": "Smooth Sounds"
     },
     {
       "name": "SGM",
@@ -541,8 +542,8 @@
       "url": "https://drive.google.com/file/d/1tRJz_BKL6HrA4sVf25dKkoy6FQFNYjke"
     },
     {
-      "name": "Stalker Trilogy Assets",
-      "title": "Stalker Trilogy Assets",
+      "name": "ReZone Trilogy Assets",
+      "title": "ReZone Trilogy Assets",
       "hidden": true,
       "description": "Assety pro trilogii ",
       "priority": 293,
