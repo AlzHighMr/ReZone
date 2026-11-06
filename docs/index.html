@@ -274,16 +274,43 @@ section { scroll-margin-top: 112px; }
 .crumb { font: 12.5px/1.4 var(--mono); color: var(--muted); margin: 0 0 12px; min-height: 1em; }
 .crumb a { color: #bdb8ad; text-decoration: none; } .crumb a:hover { color: var(--amber); }
 .crumb i { font-style: normal; margin: 0 7px; color: #555; } .crumb b { color: #ecebe6; font-weight: 600; }
-.dbhome h3 { font: 700 15px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--amber); margin: 18px 0 8px; }
-.dbhome h3:first-child { margin-top: 4px; }
-.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(190px, 100%), 1fr)); gap: 8px; }
-.tile { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: #141414; border: 1px solid #262626; text-decoration: none; color: #ecebe6; min-height: 62px; }
+.dbhome { padding-bottom: 8px; }
+#view-db.home #db-crumb { display: none; }
+.dbh-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 6px 0 22px; border-bottom: 1px solid #262626; margin-bottom: 24px; }
+.dbh-head h2 { font: 700 34px/1 var(--display); letter-spacing: .02em; text-transform: uppercase; color: #ecebe6; margin: 0; }
+.dbh-head p { margin: 8px 0 0; color: var(--muted); font-size: 15px; max-width: 560px; }
+.dbh-stats { display: flex; gap: 0; border: 1px solid #262626; background: #121212; }
+.dbh-stats div { padding: 10px 18px; border-left: 1px solid #262626; }
+.dbh-stats div:first-child { border-left: 0; }
+.dbh-stats b { display: block; font: 700 22px/1 var(--display); color: #ecebe6; letter-spacing: .02em; }
+.dbh-stats span { font: 11px/1 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.dbh-sec { display: flex; align-items: baseline; gap: 12px; margin: 30px 0 12px; }
+.dbh-sec:first-of-type { margin-top: 0; }
+.dbh-sec h3 { font: 700 15px/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0; }
+.dbh-sec span { font: 12px var(--mono); color: #6f6f6f; }
+.dbh-sec::after { content: ""; flex: 1; height: 1px; background: #262626; align-self: center; }
+.feats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.feat { position: relative; display: flex; flex-direction: column; gap: 14px; padding: 18px 18px 16px; background: linear-gradient(180deg, #191919, #131313); border: 1px solid #2a2a2a; text-decoration: none; color: #ecebe6; transition: border-color .15s, transform .15s, background .15s; }
+.feat:hover { border-color: var(--amber); transform: translateY(-2px); background: linear-gradient(180deg, #1d1b17, #141310); }
+.feat .fi { width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #0e0e0e; border: 1px solid #262626; }
+.feat .fi svg { width: 28px; height: 28px; color: var(--amber); }
+.feat b { display: block; font: 700 20px/1.1 var(--display); letter-spacing: .03em; text-transform: uppercase; }
+.feat p { margin: 5px 0 0; color: var(--muted); font-size: 14px; line-height: 1.4; }
+.feat .fn { margin-top: auto; display: flex; justify-content: space-between; align-items: center; font: 12px var(--mono); color: #bdb8ad; padding-top: 12px; border-top: 1px solid #242424; }
+.feat .fn i { font-style: normal; color: var(--amber); transition: transform .15s; }
+.feat:hover .fn i { transform: translateX(3px); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 8px; }
+.tile { display: flex; align-items: center; gap: 12px; padding: 8px 12px 8px 8px; background: #151515; border: 1px solid #262626; text-decoration: none; color: #ecebe6; min-height: 64px; transition: border-color .15s, background .15s; }
 .tile:hover { border-color: var(--amber); background: #1a1814; }
-.tile .ti { width: 56px; height: 44px; flex: none; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.tile .ti { width: 64px; height: 48px; flex: none; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #0f0f0f; border: 1px solid #222; }
 .tile .ti .ico2 { transform: none; }
-.tile b { display: block; font-weight: 600; font-size: 15px; line-height: 1.2; }
+.tile > span:last-child { flex: 1; min-width: 0; }
+.tile b { display: block; font-weight: 600; font-size: 15px; line-height: 1.25; }
 .tile small { color: var(--muted); font: 12px var(--mono); }
-@media (max-width: 900px) { #view-db.home .side { display: none !important; } .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tile { padding: 8px; gap: 8px; } .tile .ti { width: 44px; } }
+.tile::after { content: "›"; color: #555; font-size: 20px; line-height: 1; transition: color .15s, transform .15s; }
+.tile:hover::after { color: var(--amber); transform: translateX(2px); }
+@media (max-width: 1100px) { .feats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { #view-db.home .side { display: none !important; } .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tile { padding: 6px; gap: 8px; } .tile .ti { width: 46px; height: 40px; } .tile::after { display: none; } .dbh-head h2 { font-size: 28px; } .dbh-stats { width: 100%; } .dbh-stats div { flex: 1; padding: 8px 10px; } .dbh-stats b { font-size: 19px; } .feat { padding: 14px; gap: 10px; } .feat b { font-size: 17px; } .feat p { display: none; } }
 .tb-filter { display: flex; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 0 10px; width: 320px; }
 .tb-filter input { flex: 1; background: none; border: 0; color: var(--text); font: 15px var(--body); padding: 8px 0; outline: none; }
 .tb-filter:focus-within { border-color: var(--amber); }
@@ -1980,22 +2007,36 @@ function crumb(id, parts) {
   }).join('<i>›</i>');
 }
 function dbHome() {
-  var grp = [], by = {};
+  var grp = [], by = {}, nItems = 0;
   CATS.forEach(function (c) { if (!by[c.group]) { by[c.group] = []; grp.push(c.group); } by[c.group].push(c); });
-  var tile = function (href, title, n, icoId) {
-    return '<a class="tile" href="' + href + '"><span class="ti">' + (icoId ? icon(icoId, 44, 56) : '') + '</span><span><b>' + esc(title) + '</b><small>' + n + '</small></span></a>';
+  var cnt = {}; DB.items.forEach(function (i) { cnt[i.cat] = (cnt[i.cat] || 0) + 1; });
+  CATS.forEach(function (c) { nItems += cnt[c.id] || 0; });
+  var num = function (n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+  var CRAFT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>';
+  var TRADE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></svg>';
+  var STAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
+  var feat = function (href, title, desc, n, ico) {
+    return '<a class="feat" href="' + href + '"><span class="fi">' + ico + '</span><span><b>' + esc(title) + '</b><p>' + esc(desc) + '</p></span>' +
+      '<span class="fn"><span>' + n + '</span><i>→</i></span></a>';
   };
-  var h = '<div class="dbhome"><h3>Rychlý přístup</h3><div class="tiles">' +
-    tile('#craft', 'Výroba', DB.recipes.length + ' receptů', DB.recipes[0] && DB.recipes[0].id) +
-    tile('#db/obchod', 'Obchodníci', DB.traders.length + ' obchodníků', 'device_pda_1') +
-    tile('#db/selekce', 'Šlechtění artefaktů', DB.breeders.length + ' selekcionářů', 'af_medusa') +
-    tile('#db/fav', 'Oblíbené', Object.keys(favs).length + ' položek', null) + '</div>';
+  var tile = function (href, title, n, icoId) {
+    return '<a class="tile" href="' + href + '"><span class="ti">' + (icoId ? icon(icoId, 42, 58) : '') + '</span><span><b>' + esc(title) + '</b><small>' + n + '</small></span></a>';
+  };
+  var nf = Object.keys(favs).length;
+  var h = '<div class="dbhome"><div class="dbh-head"><div><h2>Databáze</h2><p>Výstroj, zbraně, výroba a obchodníci z Re:Zone na jednom místě. Vyber kategorii nebo hledej nahoře.</p></div>' +
+    '<div class="dbh-stats"><div><b>' + num(nItems) + '</b><span>předmětů</span></div><div><b>' + num(DB.recipes.length) + '</b><span>receptů</span></div><div><b>' + DB.traders.length + '</b><span>obchodníků</span></div></div></div>' +
+    '<div class="dbh-sec"><h3>Rychlý přístup</h3></div><div class="feats">' +
+    feat('#craft', 'Výroba', 'Recepty, potřebné nástroje a suroviny.', num(DB.recipes.length) + ' receptů', CRAFT) +
+    feat('#db/obchod', 'Obchodníci', 'Kdo co prodává a za kolik.', DB.traders.length + ' obchodníků', TRADE) +
+    feat('#db/selekce', 'Šlechtění artefaktů', 'Selekcionáři a co z artefaktů vypěstují.', DB.breeders.length + ' selekcionářů', icon('af_medusa', 44, 48)) +
+    feat('#db/fav', 'Oblíbené', nf ? 'Tvoje uložené předměty.' : 'Hvězdičkou u předmětu si ho uložíš sem.', nf + ' položek', STAR) + '</div>';
   grp.forEach(function (g) {
-    h += '<h3>' + esc(g) + '</h3><div class="tiles">';
+    var tot = 0; by[g].forEach(function (c) { tot += cnt[c.id] || 0; });
+    h += '<div class="dbh-sec"><h3>' + esc(g) + '</h3><span>' + num(tot) + '</span></div><div class="tiles">';
     by[g].forEach(function (c) {
       var l = DB.items.filter(function (i) { return i.cat === c.id; });
       var ic = l.filter(function (i) { return DB.icons[i.id]; }).sort(function (a, b) { return (b.cost || 0) - (a.cost || 0); })[0];
-      h += tile('#db/' + c.id, c.title, l.length + ' položek', ic && ic.id);
+      h += tile('#db/' + c.id, c.title, num(l.length) + ' položek', ic && ic.id);
     });
     h += '</div>';
   });
@@ -2007,7 +2048,7 @@ function dbRender() {
   if (c0) store.set('lastcat', st.cat);
   var tb = document.querySelector('#view-db .toolbar'); if (tb) tb.hidden = st.cat === 'home';
   $('#view-db').classList.toggle('home', st.cat === 'home');
-  if (st.cat === 'home') { crumb('#db-crumb', [['Databáze']]); $('#db-list').innerHTML = dbHome(); dbSide(); return; }
+  if (st.cat === 'home') { crumb('#db-crumb', []); $('#db-list').innerHTML = dbHome(); dbSide(); return; }
   if (st.cat === 'selekce') { crumb('#db-crumb', [['Databáze', '#db'], ['Šlechtění artefaktů']]); $('#db-sort').innerHTML = ''; selRender(); dbSide(); return; }
   if (st.cat === 'obchod') {
     var tr = st.sub && DB.traders.filter(function (t) { return t.id === st.sub; })[0];
