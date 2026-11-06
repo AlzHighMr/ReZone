@@ -265,6 +265,25 @@ section { scroll-margin-top: 112px; }
 .side a .c { font: 600 12px var(--mono); color: var(--muted); background: #262b2f; border-radius: 10px; padding: 1px 7px; }
 .pane { padding: 18px 24px 80px; min-width: 0; }
 .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.toolbar[hidden] { display: none; }
+.dbtabs { display: flex; gap: 2px; margin: 0 0 10px; border-bottom: 1px solid #2a2a2a; overflow-x: auto; scrollbar-width: none; }
+.dbtabs::-webkit-scrollbar { display: none; }
+.dbtabs a { flex: none; padding: 9px 16px 8px; color: #bdb8ad; text-decoration: none; font: 600 15px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; border-bottom: 2px solid transparent; }
+.dbtabs a:hover { color: #ecebe6; }
+.dbtabs a.on { color: var(--amber); border-bottom-color: var(--amber); }
+.crumb { font: 12.5px/1.4 var(--mono); color: var(--muted); margin: 0 0 12px; min-height: 1em; }
+.crumb a { color: #bdb8ad; text-decoration: none; } .crumb a:hover { color: var(--amber); }
+.crumb i { font-style: normal; margin: 0 7px; color: #555; } .crumb b { color: #ecebe6; font-weight: 600; }
+.dbhome h3 { font: 700 15px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--amber); margin: 18px 0 8px; }
+.dbhome h3:first-child { margin-top: 4px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(190px, 100%), 1fr)); gap: 8px; }
+.tile { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: #141414; border: 1px solid #262626; text-decoration: none; color: #ecebe6; min-height: 62px; }
+.tile:hover { border-color: var(--amber); background: #1a1814; }
+.tile .ti { width: 56px; height: 44px; flex: none; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.tile .ti .ico2 { transform: none; }
+.tile b { display: block; font-weight: 600; font-size: 15px; line-height: 1.2; }
+.tile small { color: var(--muted); font: 12px var(--mono); }
+@media (max-width: 900px) { #view-db.home .side { display: none !important; } .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tile { padding: 8px; gap: 8px; } .tile .ti { width: 44px; } }
 .tb-filter { display: flex; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 0 10px; width: 320px; }
 .tb-filter input { flex: 1; background: none; border: 0; color: var(--text); font: 15px var(--body); padding: 8px 0; outline: none; }
 .tb-filter:focus-within { border-color: var(--amber); }
@@ -501,6 +520,8 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
 <section id="view-db" class="appview" hidden>
   <aside class="side" id="db-side"></aside>
   <div class="pane">
+    <nav class="dbtabs" aria-label="Databáze"><a href="#db" data-t="home">Přehled</a><a href="#db/obleky" data-t="items" class="dbt-items">Předměty</a><a href="#craft" data-t="craft">Výroba</a><a href="#db/obchod" data-t="obchod">Obchodníci</a><a href="#db/selekce" data-t="selekce">Šlechtění</a></nav>
+    <div class="crumb" id="db-crumb"></div>
     <div class="toolbar">
       <label class="tb-filter"><span aria-hidden="true">⌕</span><input id="db-filter" type="search" placeholder="Filtrovat…"></label>
       <select id="db-sort" aria-label="Řazení"></select>
@@ -513,6 +534,8 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
 <section id="view-craft" class="appview" hidden>
   <aside class="side" id="cr-side"></aside>
   <div class="pane">
+    <nav class="dbtabs" aria-label="Databáze"><a href="#db" data-t="home">Přehled</a><a href="#db/obleky" data-t="items" class="dbt-items">Předměty</a><a href="#craft" data-t="craft">Výroba</a><a href="#db/obchod" data-t="obchod">Obchodníci</a><a href="#db/selekce" data-t="selekce">Šlechtění</a></nav>
+    <div class="crumb" id="cr-crumb"></div>
     <div class="toolbar">
       <label class="tb-filter"><span aria-hidden="true">⌕</span><input id="cr-filter" type="search" placeholder="Filtrovat výsledek nebo surovinu…"></label>
       <span class="tb-count" id="cr-count"></span>
@@ -1818,7 +1841,7 @@ function dbSide() {
   var h = fgrp('db:Rychlý přístup', 'Rychlý přístup', '<a href="#db/fav" data-k="fav">Oblíbené <span class="c">' + Object.keys(favs).length + '</span></a>');
   /* vyroba je soucast databaze: recepty podle zalozek dilny */
   h += fgrp('db:Výroba', 'Výroba', fsub('dbc:craft', '<a href="#craft" class="craft-go">Všechny recepty <span class="c">' + DB.recipes.length + '</span></a>',
-    DB.tabs.map(function (t) { return '<a href="#craft/' + t[0] + '" class="sub">' + esc(t[1]) + ' <span class="c">' + t[2] + '</span></a>'; }).join(''), true));
+    DB.tabs.map(function (t) { return '<a href="#craft/' + t[0] + '" class="sub">' + esc(t[1]) + ' <span class="c">' + t[2] + '</span></a>'; }).join(''), true), true);
   var grp = [], inner = {};
   CATS.forEach(function (c) {
     if (!(c.group in inner)) { grp.push(c.group); inner[c.group] = ''; }
@@ -1832,11 +1855,16 @@ function dbSide() {
     }).join(''), st.cat !== c.id);
   });
   inner['Artefakty'] = (inner['Artefakty'] || '') + '<a href="#db/selekce" data-k="selekce">Šlechtění (selekce) <span class="c">' + DB.breeders.length + '</span></a>';
-  grp.forEach(function (g) { h += fgrp('db:' + g, g, inner[g]); });
+  /* skupiny sbalene, rozbalena je ta s aktualni kategorii */
+  grp.forEach(function (g) {
+    var act = CATS.some(function (c) { return c.group === g && c.id === st.cat; }) || (g === 'Artefakty' && st.cat === 'selekce');
+    if (act) delete fold['db:' + g];
+    h += fgrp('db:' + g, g, inner[g], !act);
+  });
   var tl = '<a href="#db/obchod" data-k="obchod">Všichni obchodníci <span class="c">' + DB.traders.length + '</span></a>';
   h += fgrp('db:Obchod', 'Obchod', fsub('dbc:obchod', tl, DB.traders.map(function (t) {
     return '<a href="#db/obchod/' + t.id + '" data-k="obchod/' + t.id + '" class="sub">' + esc(t.name) + ' <span class="c">' + t.items.length + '</span></a>';
-  }).join(''), st.cat !== 'obchod'));
+  }).join(''), st.cat !== 'obchod'), st.cat !== 'obchod');
   $('#db-side').innerHTML = h;
   var key = st.cat === 'fav' ? 'fav' : st.cat + (st.sub ? '/' + st.sub : '');
   [].forEach.call($('#db-side').querySelectorAll('a'), function (a) { a.classList.toggle('on', a.dataset.k === key); });
@@ -1940,9 +1968,54 @@ function table(l) {
   });
   return h + '</table></div>';
 }
+function dbTabs(t) {
+  [].forEach.call(document.querySelectorAll('.dbtabs a'), function (a) { a.classList.toggle('on', a.dataset.t === t); });
+  /* Predmety vede na posledni otevrenou kategorii */
+  var last = store.get('lastcat', 'obleky');
+  [].forEach.call(document.querySelectorAll('.dbt-items'), function (a) { a.setAttribute('href', '#db/' + last); });
+}
+function crumb(id, parts) {
+  $(id).innerHTML = parts.map(function (p, i) {
+    return i === parts.length - 1 ? '<b>' + esc(p[0]) + '</b>' : (p[1] ? '<a href="' + p[1] + '">' + esc(p[0]) + '</a>' : esc(p[0]));
+  }).join('<i>›</i>');
+}
+function dbHome() {
+  var grp = [], by = {};
+  CATS.forEach(function (c) { if (!by[c.group]) { by[c.group] = []; grp.push(c.group); } by[c.group].push(c); });
+  var tile = function (href, title, n, icoId) {
+    return '<a class="tile" href="' + href + '"><span class="ti">' + (icoId ? icon(icoId, 44, 56) : '') + '</span><span><b>' + esc(title) + '</b><small>' + n + '</small></span></a>';
+  };
+  var h = '<div class="dbhome"><h3>Rychlý přístup</h3><div class="tiles">' +
+    tile('#craft', 'Výroba', DB.recipes.length + ' receptů', DB.recipes[0] && DB.recipes[0].id) +
+    tile('#db/obchod', 'Obchodníci', DB.traders.length + ' obchodníků', 'device_pda_1') +
+    tile('#db/selekce', 'Šlechtění artefaktů', DB.breeders.length + ' selekcionářů', 'af_medusa') +
+    tile('#db/fav', 'Oblíbené', Object.keys(favs).length + ' položek', null) + '</div>';
+  grp.forEach(function (g) {
+    h += '<h3>' + esc(g) + '</h3><div class="tiles">';
+    by[g].forEach(function (c) {
+      var l = DB.items.filter(function (i) { return i.cat === c.id; });
+      var ic = l.filter(function (i) { return DB.icons[i.id]; }).sort(function (a, b) { return (b.cost || 0) - (a.cost || 0); })[0];
+      h += tile('#db/' + c.id, c.title, l.length + ' položek', ic && ic.id);
+    });
+    h += '</div>';
+  });
+  return h + '</div>';
+}
 function dbRender() {
-  if (st.cat === 'selekce') { $('#db-sort').innerHTML = ''; selRender(); dbSide(); return; }
-  if (st.cat === 'obchod') { $('#db-sort').innerHTML = ''; trRender(); dbSide(); return; }
+  var c0 = CATS.filter(function (x) { return x.id === st.cat; })[0];
+  dbTabs(st.cat === 'home' ? 'home' : st.cat === 'obchod' ? 'obchod' : st.cat === 'selekce' ? 'selekce' : 'items');
+  if (c0) store.set('lastcat', st.cat);
+  var tb = document.querySelector('#view-db .toolbar'); if (tb) tb.hidden = st.cat === 'home';
+  $('#view-db').classList.toggle('home', st.cat === 'home');
+  if (st.cat === 'home') { crumb('#db-crumb', [['Databáze']]); $('#db-list').innerHTML = dbHome(); dbSide(); return; }
+  if (st.cat === 'selekce') { crumb('#db-crumb', [['Databáze', '#db'], ['Šlechtění artefaktů']]); $('#db-sort').innerHTML = ''; selRender(); dbSide(); return; }
+  if (st.cat === 'obchod') {
+    var tr = st.sub && DB.traders.filter(function (t) { return t.id === st.sub; })[0];
+    crumb('#db-crumb', tr ? [['Databáze', '#db'], ['Obchodníci', '#db/obchod'], [tr.name]] : [['Databáze', '#db'], ['Obchodníci']]);
+    $('#db-sort').innerHTML = ''; trRender(); dbSide(); return;
+  }
+  if (st.cat === 'fav') crumb('#db-crumb', [['Databáze', '#db'], ['Oblíbené']]);
+  else if (c0) crumb('#db-crumb', [['Databáze', '#db'], [c0.group], [c0.title, st.sub ? '#db/' + c0.id : null]].concat(st.sub ? [[st.sub]] : []));
   var c = CATS.filter(function (x) { return x.id === st.cat; })[0] || CATS[0];
   var sel = $('#db-sort'); sel.innerHTML = c.sort.map(function (s) {
     var txt = /^(name|subo)$/.test(s[0]) ? [' (A–Z)', ' (Z–A)'] : [' (nejnižší)', ' (nejvyšší)'];
@@ -2172,11 +2245,14 @@ function route() {
   var changed = view !== last; last = view;
   show(view);
   if (view === 'db') {
-    var p = h.split('/'); var c = p[1] || st.cat || 'obleky';
+    var p = h.split('/'); var c = p[1] || 'home';
     if (c !== st.cat) { st.sort = (c === 'munice' || c === 'artefakty') ? 'subo' : 'name'; st.dir = 1; }
     st.cat = c; st.sub = p[2] || null; dbRender(); if (changed) toTop();
   } else if (view === 'craft') {
     cr.tab = h.split('/')[1] || null; if (cr.tab && !DB.tabs.some(function (t) { return t[0] === cr.tab; })) cr.tab = null; crRender(); if (changed) toTop();
+    dbTabs('craft');
+    var ct = cr.tab && DB.tabs.filter(function (t) { return t[0] === cr.tab; })[0];
+    crumb('#cr-crumb', ct ? [['Databáze', '#db'], ['Výroba', '#craft'], [ct[1]]] : [['Databáze', '#db'], ['Výroba']]);
   } else if (el && h !== FIRST[view]) { setTimeout(function () { el.scrollIntoView(); }, 0); }
   else if (changed || el) toTop();
 }
@@ -2385,7 +2461,7 @@ document.addEventListener('click', function (e) { if (!e.target.closest('.ab-sea
   }
 
   // ---- okno
-  function open(html) { var d = $('#nv-dlg'); $('#nv-body').innerHTML = html; d.hidden = false; var i = d.querySelector('input, textarea, select'); if (i) i.focus(); }
+  function open(html) { var d = $('#nv-dlg'); d.querySelector('.nv-p').classList.remove('wide'); $('#nv-body').innerHTML = html; d.hidden = false; var i = d.querySelector('input, textarea, select'); if (i) i.focus(); }
   function close() { popClose(); $('#nv-dlg').hidden = true; }
   document.addEventListener('keydown', function (e) {
     if (e.key !== 'Escape' || $('#nv-dlg').hidden) return;
@@ -2576,7 +2652,8 @@ document.addEventListener('click', function (e) { if (!e.target.closest('.ab-sea
         Object.keys(ch).forEach(function (k) { t += k + ' = ' + ch[k] + (f[k] ? '    ; bylo ' + f[k][2] : '') + '\n'; });
         if (N.notes[id]) t += '; Poznámka: ' + N.notes[id].replace(/\n/g, ' ') + '\n';
       });
-      out.push({ path: 'gamedata/configs/mod_system_rz_navrh_' + nick + '.ltx', text: t });
+      // zzz: nacte se az po ostatnich DLTX modech, takze zmeny vyhraji
+      out.push({ path: 'gamedata/configs/mod_system_zzz_rz_navrh_' + nick + '.ltx', text: t });
     }
     var rk = Object.keys(N.recipes);
     if (rk.length) {
@@ -2684,6 +2761,99 @@ document.addEventListener('click', function (e) { if (!e.target.closest('.ab-sea
       cards[i].appendChild(b);
     });
   };
+
+  // ---- hromadna uprava: vsechny predmety v aktualnim seznamu najednou (tabulka)
+  var stl3 = document.createElement('style'); stl3.textContent = [
+    '#nv-dlg .nv-p.wide { width: min(1400px, 100%); }',
+    '.nv-bulk-go { margin-left: auto; }',
+    '#nv-dlg .nv-btools { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; margin: 8px 0; padding: 10px; background: #0f0f0f; border: 1px solid #2a2a2a; }',
+    '#nv-dlg .nv-btools label { flex: 1 1 150px; min-width: 0; margin: 0; }',
+    '#nv-dlg .nv-btools .nv-b { flex: none; }',
+    '#nv-dlg .nv-bw { overflow: auto; max-height: 58vh; border: 1px solid #2a2a2a; }',
+    '#nv-dlg table.nv-bt { border-collapse: collapse; font-size: 13.5px; min-width: 100%; }',
+    '#nv-dlg .nv-bt th { position: sticky; top: 0; z-index: 2; background: #1b1b1b; color: #bdb8ad; font: 600 11px/1.2 var(--mono); letter-spacing: .04em; text-transform: uppercase; padding: 7px 6px; text-align: left; border-bottom: 1px solid #333; white-space: normal; min-width: 92px; vertical-align: bottom; }',
+    '#nv-dlg .nv-bt th:first-child, #nv-dlg .nv-bt td:first-child { position: sticky; left: 0; z-index: 1; background: #141414; min-width: 170px; max-width: 220px; }',
+    '#nv-dlg .nv-bt th:first-child { z-index: 3; }',
+    '#nv-dlg .nv-bt td { padding: 3px 4px; border-bottom: 1px solid #222; }',
+    '#nv-dlg .nv-bt td:first-child { padding-left: 8px; color: #ecebe6; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }',
+    '#nv-dlg .nv-bt input { width: 92px; padding: 4px 6px; font: 13px var(--mono); }',
+    '#nv-dlg .nv-bt input.chg { border-color: var(--amber); background: #2a2214; }',
+    '#nv-dlg .nv-bt tr[hidden] { display: none; }'
+  ].join('\n'); document.head.appendChild(stl3);
+  function bulkEdit(list) {
+    list = list.filter(function (it) { return it && fields(it).length; });
+    if (!list.length) return;
+    var cols = [], seen = {};
+    list.forEach(function (it) { fields(it).forEach(function (f) { if (!seen[f[0]]) { seen[f[0]] = 1; cols.push([f[0], f[1]]); } }); });
+    var cat = (CATS.filter(function (c) { return c.id === list[0].cat; })[0] || {}).title || 'předměty';
+    var html = '<h3>Hromadná úprava – ' + h(cat) + ' (' + list.length + ')</h3><p class="nv-sub">Uprav hodnoty přímo v tabulce, nebo použij nástroj nad ní na celý sloupec (jen na řádky, které jsou vidět po filtru). Změněné buňky svítí. Výsledek je jeden DLTX soubor se všemi změnami.</p>' +
+      '<div class="nv-btools"><label class="nv-f"><span>Filtr</span><input id="nv-bq" placeholder="název nebo ID"></label>' +
+      '<label class="nv-f"><span>Sloupec</span><select id="nv-bcol">' + cols.map(function (c) { return '<option value="' + c[0] + '">' + h(c[1]) + '</option>'; }).join('') + '</select></label>' +
+      '<label class="nv-f"><span>Operace</span><select id="nv-bop"><option value="set">nastavit na</option><option value="mul">vynásobit (%)</option><option value="add">přičíst</option></select></label>' +
+      '<label class="nv-f"><span>Hodnota</span><input id="nv-bval" inputmode="decimal" placeholder="např. 110"></label>' +
+      '<button class="nv-b" id="nv-bapply">Použít na sloupec</button><button class="nv-b" id="nv-breset">Vrátit vše</button></div>' +
+      '<div class="nv-bw"><table class="nv-bt"><tr><th>Předmět</th>' + cols.map(function (c) { return '<th>' + h(c[1]) + '</th>'; }).join('') + '</tr>' +
+      list.map(function (it) {
+        var f = {}; fields(it).forEach(function (x) { f[x[0]] = x; });
+        var cur = N.items[it.id] || {};
+        return '<tr data-id="' + h(it.id) + '"><td title="' + h(it.id) + '">' + h(it.name) + '</td>' + cols.map(function (c) {
+          if (!f[c[0]]) return '<td></td>';
+          var o = f[c[0]][2], v = cur[c[0]] != null ? cur[c[0]] : o;
+          return '<td><input data-k="' + c[0] + '" data-orig="' + h(o == null ? '' : o) + '" inputmode="decimal" value="' + h(v == null ? '' : v) + '"' + (cur[c[0]] != null ? ' class="chg"' : '') + '></td>';
+        }).join('') + '</tr>';
+      }).join('') + '</table></div>' +
+      '<div class="nv-bar"><button class="nv-b pri" id="nv-ok">Uložit do návrhu</button><button class="nv-b" id="nv-cancel">Zavřít</button><span class="nv-msg" id="nv-msg" style="margin:6px 0 0 auto"></span></div>';
+    open(html);
+    $('#nv-dlg .nv-p').classList.add('wide');
+    var body = $('#nv-body');
+    var mark = function (i) { var v = num(i.value), o = num(i.dataset.orig); i.classList.toggle('chg', i.value.trim() !== '' && v != null && (o == null || Math.abs(v - o) > 1e-9)); };
+    body.addEventListener('input', function (e) { if (e.target.dataset && e.target.dataset.k) mark(e.target); });
+    $('#nv-bq').addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      [].forEach.call(body.querySelectorAll('tr[data-id]'), function (tr) { tr.hidden = !!q && (tr.dataset.id + ' ' + tr.cells[0].textContent).toLowerCase().indexOf(q) < 0; });
+    });
+    $('#nv-bapply').onclick = function () {
+      var k = $('#nv-bcol').value, op = $('#nv-bop').value, x = num($('#nv-bval').value);
+      if (x == null) { $('#nv-msg').style.color = 'var(--red)'; $('#nv-msg').textContent = 'Zadej číslo.'; return; }
+      var n = 0;
+      [].forEach.call(body.querySelectorAll('tr[data-id]:not([hidden]) input[data-k="' + k + '"]'), function (i) {
+        var v = num(i.value); if (v == null) v = num(i.dataset.orig); if (v == null) v = 0;
+        var r = op === 'set' ? x : op === 'mul' ? v * x / 100 : v + x;
+        var o = String(i.dataset.orig), dec = o.indexOf('.') >= 0 ? Math.min(6, o.split('.')[1].length + 2) : (k === 'cost' || k === 'max_uses' || k === 'artefact_count' ? 0 : 4);
+        i.value = String(Math.round(r * Math.pow(10, dec)) / Math.pow(10, dec)); mark(i); n++;
+      });
+      $('#nv-msg').style.color = 'var(--green)'; $('#nv-msg').textContent = 'Upraveno ' + n + ' buněk.';
+    };
+    $('#nv-breset').onclick = function () { [].forEach.call(body.querySelectorAll('input[data-k]'), function (i) { i.value = i.dataset.orig; mark(i); }); };
+    $('#nv-cancel').onclick = close;
+    $('#nv-ok').onclick = function () {
+      var bad = '', nch = 0;
+      [].forEach.call(body.querySelectorAll('tr[data-id]'), function (tr) {
+        var id = tr.dataset.id, ch = {};
+        [].forEach.call(tr.querySelectorAll('input[data-k]'), function (i) {
+          if (i.value.trim() === '') return;
+          var v = num(i.value), o = num(i.dataset.orig);
+          if (v == null) { bad = bad || (tr.cells[0].textContent + ': „' + i.value + '“ není číslo.'); return; }
+          if (o == null || Math.abs(v - o) > 1e-9) ch[i.dataset.k] = v;
+        });
+        if (Object.keys(ch).length) { N.items[id] = ch; nch++; } else delete N.items[id];
+      });
+      if (bad) { $('#nv-msg').style.color = 'var(--red)'; $('#nv-msg').textContent = bad; return; }
+      save(); close();
+      if (nch) showBasket();
+    };
+  }
+  // tlacitko v liste databaze (jen u kategorii predmetu)
+  var bulkBtn = document.createElement('button'); bulkBtn.className = 'nv-edit nv-bulk-go'; bulkBtn.style.margin = '0';
+  bulkBtn.textContent = 'Hromadná úprava'; bulkBtn.title = 'Navrhnout změny pro všechny předměty v seznamu najednou';
+  bulkBtn.onclick = function () { bulkEdit(dbItems()); };
+  var tbar = document.querySelector('#view-db .toolbar'); if (tbar) tbar.appendChild(bulkBtn);
+  var _dbRender = dbRender;
+  dbRender = function () {
+    _dbRender();
+    bulkBtn.hidden = !CATS.some(function (c) { return c.id === st.cat; }) && st.cat !== 'fav';
+  };
+
   if (document.querySelector('#cr-list .rcard')) crRender();
   var _trRender = trRender;
   trRender = function () {

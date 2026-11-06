@@ -28,7 +28,7 @@ jde hned pod ni (přepíše ji).
   "url": "https://www.moddb.com/mods/stalker-anomaly/addons/inverno-fx" }
 ```
 
-## Opravy u hráčů (sources.json, editor → Odkazy)
+## Opravy u hráčů (sources.json, editor → Hráči › Opravy u hráčů)
 
 - **Opravit load order u hráčů** (`modlist_fixes`): řádky jako v `modlist.txt` – `+Mod` zapnout, `-Mod` vypnout,
   `Veteran: -Mod` jen v profilu Veteran. Launcher je provede jednou ve všech profilech a hráči napíše, co změnil.
@@ -136,3 +136,15 @@ odpovídalo víc archivů, použije se jen přesná shoda.
 Mod, který launcher najde na Google Drive (třeba z odkazu, který si hráč přidal v Nastavení), ale
 v `optional.json` nemá popis ani `priority`, se po stažení dá pod separátor
 **`== Custom addons HERE! ==`**. Hráč tak může stahovat vlastní addony bez úprav na GitHubu.
+
+## Modlist profilů (modlist.json, editor → Hráči › Modlist profilů)
+
+Které mody mají být v profilech Rookie a Veteran zapnuté. Launcher každou změnu provede hráči jen jednou.
+
+## Slovník překladu (docs/tr/glossary.json, editor → Překlad › Slovník)
+
+Pravidla „špatně → správně“ pro stránku s překlady (`*` = libovolná písmena). Stránka návrh se špatným výrazem zvýrazní a před uložením upozorní.
+
+## Uložit vše
+
+Tlačítko vpravo nahoře v editoru uloží všechny neuložené soubory najednou jedním commitem (web se tak nenasazuje několikrát za sebou).

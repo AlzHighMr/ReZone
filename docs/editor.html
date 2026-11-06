@@ -33,6 +33,21 @@ a { color: var(--amber); }
 .ab-tabs button:hover { color: #fff; background: #ffffff0a; }
 .ab-tabs button.on { color: #fff; background: linear-gradient(180deg, var(--red), var(--red2)); clip-path: polygon(0 0, 100% 0, 100% 100%, 12px 100%, 0 calc(100% - 12px)); }
 .ab-tabs .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); margin-left: 7px; }
+.ab-tabs .gd { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); margin-left: 7px; }
+.subtabs { max-width: 1340px; margin: 0 auto; padding: 0 24px; display: flex; gap: 4px; flex-wrap: wrap; border-top: 1px solid #ffffff0d; }
+.subtabs[hidden] { display: none; }
+.subtabs button { white-space: nowrap; padding: 9px 14px 8px; background: none; border: 0; border-bottom: 2px solid transparent; color: #a9a59b; cursor: pointer; font: 700 15px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; display: inline-flex; align-items: center; }
+.subtabs button:hover { color: #fff; }
+.subtabs button.on { color: #fff; border-bottom-color: var(--amber); }
+.subtabs button[hidden] { display: none; }
+.subtabs .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); margin-left: 7px; }
+#saveAll[hidden] { display: none; }
+.gl-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr) auto; gap: 8px; align-items: center; margin-bottom: 6px; }
+.gl-row input { min-width: 0; }
+.gl-head { margin-top: 14px; font: 600 12px/1 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.gl-test mark { background: #c4492c55; color: inherit; border-bottom: 2px solid var(--red); }
+.sa-list { margin: 8px 0 12px; padding-left: 20px; } .sa-list li { margin: 3px 0; } .sa-list code { font: 13px var(--mono); color: #bdb8ad; }
+@media (max-width: 700px) { .gl-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; } .gl-row .gl-pz { grid-column: 1 / 3; grid-row: 2; } .gl-row > button { grid-column: 3; grid-row: 1 / 3; align-self: stretch; } .gl-row:not(.gl-head) { padding-bottom: 8px; border-bottom: 1px solid #ffffff0d; } .gl-head .gl-pz { display: none; } .subtabs { padding: 0 8px; } .subtabs button { padding: 9px 10px 8px; font-size: 14px; } }
 .ab-sub { margin-left: auto; display: flex; gap: 8px; align-items: center; font: 600 12px/1 var(--mono); color: var(--muted); }
 .btn { font: 700 16px/1 var(--cond); letter-spacing: .1em; text-transform: uppercase; padding: 10px 16px; cursor: pointer; border: 1px solid var(--line2); background: var(--panel2); color: var(--text); }
 .btn:hover { border-color: var(--amber); color: #fff; }
@@ -113,6 +128,13 @@ dialog::backdrop { background: #000a; }
 .catrow .btn { width: 34px; height: 32px; min-width: 0; padding: 0; margin: 0; }
 .catrow input[type=text] { margin: 0; min-width: 0; }
 @media (max-width: 600px) { .catrow { grid-template-columns: minmax(0, 1fr) 34px 34px auto 34px; padding: 8px 0; border-bottom: 1px solid #ffffff10; } .catrow .cn { display: none; } .catrow input[type=text] { grid-column: 1 / -1; } }
+.mlp { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
+.mlt { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 6px; } .mlt input[type=search] { flex: 1 1 200px; min-width: 0; margin: 0; } .mlt select { flex: 0 1 140px; margin: 0; }
+.mll { max-height: 62vh; overflow-y: auto; border: 1px solid var(--line, #2a2a2a); }
+.mls { position: sticky; top: 0; background: #1b1b1b; color: #e0a43a; font: 600 12px/1.2 var(--mono, monospace); letter-spacing: .06em; text-transform: uppercase; padding: 7px 10px; border-bottom: 1px solid #2a2a2a; }
+.mlr { display: flex; gap: 10px; align-items: center; padding: 5px 10px; border-bottom: 1px solid #ffffff0a; cursor: pointer; margin: 0; }
+.mlr span { min-width: 0; overflow-wrap: anywhere; } .mlr input { margin: 0; flex: none; }
+.mlr.chg { background: #e0a43a14; } .mlr small { margin-left: auto; color: #e0a43a; font: 11px var(--mono, monospace); }
 .ab-in { flex-wrap: wrap; } .ab-sub { flex-wrap: wrap; justify-content: flex-end; padding: 6px 0; min-width: 0; }
 #who { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 900px) {
@@ -147,15 +169,25 @@ details.adv > .in { padding: 0 14px 14px; }
 </div></header>
 <header class="appbar"><div class="ab-in">
   <nav class="ab-tabs" id="tabs" hidden>
-    <button data-tab="news">Novinky</button>
-    <button data-tab="chlog" title="Changelog oprav trilogie na stránce pro testery">Changelog</button>
-    <button data-tab="opt">Volitelné mody</button>
-    <button data-tab="patch">Patche</button>
-    <button data-tab="moddb">ModDB addony</button>
-    <button data-tab="src">Odkazy</button>
+    <button data-grp="obsah" title="Novinky v launcheru a changelog pro testery">Obsah</button>
+    <button data-grp="mody" title="Volitelné mody, patche a ModDB addony v launcheru">Mody</button>
+    <button data-grp="hraci" title="Co launcher změní hráčům v modlistu a které mody smaže">Hráči</button>
+    <button data-grp="odkazy" title="Odkazy ke stažení modpacku">Odkazy</button>
+    <button data-grp="preklad" title="Slovník pro kontrolu překladů">Překlad</button>
   </nav>
-  <div class="ab-sub"><a class="btn small" href="testy.html" style="text-decoration:none">Testeři</a><a class="btn small" href="index.html" style="text-decoration:none">Web</a><span id="who"></span><button class="btn small" id="logout" hidden>Odhlásit</button></div>
-</div></header>
+  <div class="ab-sub"><a class="btn small" href="testy.html" style="text-decoration:none">Testeři</a><a class="btn small" href="index.html" style="text-decoration:none">Web</a><span id="who"></span><button class="btn small pri" id="saveAll" hidden title="Uloží všechny neuložené soubory najednou jedním commitem">Uložit vše</button><button class="btn small" id="logout" hidden>Odhlásit</button></div>
+</div>
+<nav class="subtabs" id="subtabs" hidden>
+    <button data-tab="news" data-g="obsah">Novinky</button>
+    <button data-tab="chlog" data-g="obsah" title="Changelog oprav trilogie na stránce pro testery">Changelog</button>
+    <button data-tab="opt" data-g="mody">Volitelné mody</button>
+    <button data-tab="patch" data-g="mody">Patche</button>
+    <button data-tab="moddb" data-g="mody">ModDB addony</button>
+    <button data-tab="ml" data-g="hraci">Modlist profilů</button>
+    <button data-tab="hrac" data-g="hraci">Opravy u hráčů</button>
+    <button data-tab="src" data-g="odkazy">Odkazy</button>
+    <button data-tab="gl" data-g="preklad">Slovník</button>
+</nav></header>
 
 <main class="wrap">
   <!-- prihlaseni -->
@@ -270,6 +302,27 @@ details.adv > .in { padding: 0 14px 14px; }
     <div id="srcForm"></div>
     <div class="bar" data-save="src"></div>
   </section>
+  <section class="card" id="tab-hrac" hidden>
+    <div class="eb">// ReZone/sources.json</div>
+    <h2>Opravy u hráčů</h2>
+    <p class="hint">Jednorázové zásahy, které launcher provede hráčům po kontrole aktualizací. Každý jen jednou – když si to hráč potom změní zpátky, launcher už na to nesahá.</p>
+    <div id="hracForm"></div>
+    <div class="bar" data-save="hrac"></div>
+  </section>
+  <section class="card" id="tab-gl" hidden>
+    <div class="eb">// docs/tr/glossary.json</div>
+    <h2>Slovník překladu</h2>
+    <p class="hint">Stránka pro překlady upozorní, když návrh obsahuje špatný výraz, a zvýrazní ho. <code>*</code> = libovolná písmena (koncovky), velikost písmen nehraje roli. Příklad: <code>výron*</code> najde výron, výronu, Výrony…</p>
+    <div id="glBody"></div>
+    <div class="bar" data-save="gl"></div>
+  </section>
+  <section class="card" id="tab-ml" hidden>
+    <div class="eb">// ReZone/modlist.json</div>
+    <h2>Modlist profilů</h2>
+    <p class="hint">Které mody mají být v profilech <b>Rookie</b> a <b>Veteran</b> zapnuté. Launcher to hráčům při kontrole aktualizací nastaví – každou změnu jen jednou, potom si to hráč může přepnout sám. Volitelné mody z launcheru (addony, textury, vegetace) se nemění, ty si hráč zapíná sám. Pořadí je jako v Mod Organizeru (nahoře = nejnižší priorita).</p>
+    <div id="mlBody"></div>
+    <div class="bar" data-save="ml"></div>
+  </section>
 </main>
 
 <dialog id="dlg"><div id="dlgBody"></div><div class="bar" id="dlgBar"></div></dialog>
@@ -322,9 +375,11 @@ details.adv > .in { padding: 0 14px 14px; }
     chlog: { path: 'docs/changelog.html', sha: null, orig: '', dirty: false },
     opt: { path: 'ReZone/optional.json', sha: null, orig: '', dirty: false },
     moddb: { path: 'ReZone/moddb.json', sha: null, orig: '', dirty: false },
-    src: { path: 'ReZone/sources.json', sha: null, orig: '', dirty: false }
+    src: { path: 'ReZone/sources.json', sha: null, orig: '', dirty: false },
+    ml: { path: 'ReZone/modlist.json', sha: null, orig: '', dirty: false },
+    gl: { path: 'docs/tr/glossary.json', sha: null, orig: '', dirty: false }
   };
-  var TAB_FILE = { news: 'news', chlog: 'chlog', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src' };
+  var TAB_FILE = { news: 'news', chlog: 'chlog', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src', ml: 'ml', hrac: 'src', gl: 'gl' };
   function api(path, opts) {
     opts = opts || {};
     opts.headers = Object.assign({ 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' }, opts.headers || {});
@@ -410,10 +465,17 @@ details.adv > .in { padding: 0 14px 14px; }
   }
   function setDirty(fk) { FILES[fk].dirty = true; markTabs(); }
   function markTabs() {
-    document.querySelectorAll('#tabs button').forEach(function (b) {
+    var gd = {};
+    document.querySelectorAll('#subtabs button').forEach(function (b) {
       var d = b.querySelector('.dot'); if (d) d.remove();
-      if (FILES[TAB_FILE[b.dataset.tab]].dirty) b.appendChild(el('span', { class: 'dot', title: 'Neuloženo' }));
+      if (FILES[TAB_FILE[b.dataset.tab]].dirty) { b.appendChild(el('span', { class: 'dot', title: 'Neuloženo' })); gd[b.dataset.g] = true; }
     });
+    document.querySelectorAll('#tabs button').forEach(function (b) {
+      var d = b.querySelector('.gd'); if (d) d.remove();
+      if (gd[b.dataset.grp]) b.appendChild(el('span', { class: 'gd', title: 'Neuloženo' }));
+    });
+    var n = Object.keys(FILES).filter(function (k) { return FILES[k].dirty; }).length;
+    var sa = $('saveAll'); if (sa) { sa.hidden = n < 1 || $('tabs').hidden; sa.textContent = n > 1 ? 'Uložit vše (' + n + ')' : 'Uložit vše'; }
   }
   window.addEventListener('beforeunload', function (e) {
     if (Object.keys(FILES).some(function (k) { return FILES[k].dirty; })) { e.preventDefault(); e.returnValue = ''; }
@@ -434,7 +496,11 @@ details.adv > .in { padding: 0 14px 14px; }
   }
   function openTab(tab) {
     current = tab;
-    document.querySelectorAll('#tabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.tab === tab); });
+    var g = document.querySelector('#subtabs [data-tab="' + tab + '"]').dataset.g, cnt = 0;
+    document.querySelectorAll('#subtabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.tab === tab); b.hidden = b.dataset.g !== g; if (!b.hidden) cnt++; });
+    document.querySelectorAll('#tabs button').forEach(function (b) { b.classList.toggle('on', b.dataset.grp === g); });
+    $('subtabs').hidden = cnt < 2 || $('tabs').hidden;
+    try { sessionStorage.setItem('rzed_tab_' + g, tab); } catch (e) { /* nic */ }
     Object.keys(TAB_FILE).forEach(function (t) { $('tab-' + t).hidden = t !== tab; });
     try { sessionStorage.setItem('rzed_tab', tab); } catch (e) { /* nic */ }
     var fk = TAB_FILE[tab];
@@ -1050,8 +1116,8 @@ function clPage(md) {
     { k: 'weapons', label: 'Zbraně', type: 'list' },
     { k: 'update_note', label: 'Poznámka k aktualizaci', type: 'area', tip: 'Hráč ji uvidí v okně před aktualizací modpacku. Prázdné = nic.' },
     { k: 'new_save', label: 'Tahle verze potřebuje novou hru', type: 'bool', tip: 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.' },
-    { k: 'modlist_fixes', label: 'Opravit load order u hráčů', type: 'list', plain: true, tip: 'Jedna oprava na řádek, zápis jako v modlist.txt: +Název modu = zapnout, -Název modu = vypnout. Jen pro jeden profil: Veteran: -Název modu. Číslo a autor můžou chybět. Launcher to u hráčů provede jednou po kontrole aktualizací (pak si to hráč může změnit).' },
-    { k: 'remove_mods', label: 'Smazat staré mody u hráčů', type: 'list', plain: true, tip: 'Jeden mod na řádek (název složky v MO2, číslo a autor můžou chybět). Launcher je hráčům při kontrole aktualizací přesune do zálohy (složka _Odstranene mody v modpacku) a vyřadí z load orderu všech profilů. Každý jen jednou – když si ho hráč později nainstaluje znovu, zůstane.' },
+    { k: 'modlist_fixes', label: 'Opravit load order u hráčů', type: 'list', plain: true, hrac: true, rows: 5, tip: 'Jedna oprava na řádek, zápis jako v modlist.txt: +Název modu = zapnout, -Název modu = vypnout. Jen pro jeden profil: Veteran: -Název modu. Číslo a autor můžou chybět. Launcher to u hráčů provede jednou po kontrole aktualizací (pak si to hráč může změnit).' },
+    { k: 'remove_mods', label: 'Smazat staré mody u hráčů', type: 'list', plain: true, hrac: true, rows: 5, tip: 'Jeden mod na řádek (název složky v MO2, číslo a autor můžou chybět). Launcher je hráčům při kontrole aktualizací přesune do zálohy (složka _Odstranene mody v modpacku) a vyřadí z load orderu všech profilů. Každý jen jednou – když si ho hráč později nainstaluje znovu, zůstane.' },
     { k: 'other', label: 'Ostatní volitelné mody', type: 'list', adv: true },
     { k: 'rezone_alt', label: 'Záložní složky modpacku', type: 'list', adv: true, tip: 'Použijí se, když hlavní nejde načíst.' },
     { k: 'optional_alt', label: 'Další složky volitelných modů', type: 'list', adv: true },
@@ -1062,13 +1128,14 @@ function clPage(md) {
     else o[k] = v;
   }
   builders.src = function (text) {
-    var F = $('srcForm'); F.innerHTML = '';
+    var F = $('srcForm'); F.innerHTML = ''; var H = $('hracForm'); H.innerHTML = '';
     var o;
     try { o = text.trim() ? JSON.parse(text) : {}; }
     catch (e) {
       F.appendChild(el('p', { class: 'msg err', text: 'sources.json na GitHubu není platný JSON (' + e.message + '). Launcher teď používá staré odkazy! Oprav ho tady jako text a ulož.' }));
       var ta = el('textarea', { class: 'mono', rows: 22 }); ta.value = text; F.appendChild(ta);
       SRC.raw = ta; SRC.obj = null; ta.oninput = function () { setDirty('src'); };
+      H.appendChild(el('p', { class: 'msg err', text: 'sources.json není platný JSON – oprav ho v záložce Odkazy.' }));
       return;
     }
     SRC.obj = o; SRC.raw = null;
@@ -1081,10 +1148,10 @@ function clPage(md) {
       if (type === 'bool') { input = el('input', { type: 'checkbox' }); input.checked = v === true; }
       else if (type === 'area') { input = el('textarea', { rows: 2 }); input.value = v || ''; }
       else if (type === 'one') { input = el('input', { type: 'text', class: 'mono' }); input.value = v || ''; }
-      else { input = el('textarea', { rows: 2, class: 'mono' }); input.value = Array.isArray(v) ? v.join('\n') : (v || ''); }
+      else { input = el('textarea', { rows: f.rows || 2, class: 'mono' }); input.value = Array.isArray(v) ? v.join('\n') : (v || ''); }
       var warn = el('p', { class: 'hint', style: 'color:var(--err)' });
       var chk = function () {
-        if (type !== 'list' && type !== 'one') return;
+        if ((type !== 'list' && type !== 'one') || f.plain) return;
         var bad = (type === 'one' ? [input.value.trim()].filter(Boolean) : lines(input.value)).filter(function (l) { return !isUrl(l); });
         warn.textContent = bad.length ? 'Není odkaz: ' + bad[0] : '';
       };
@@ -1096,6 +1163,7 @@ function clPage(md) {
       var node = type === 'bool'
         ? el('label', { class: 'check', style: 'flex:1 1 100%' }, [input, el('span', null, [el('b', { text: f.label }), tip(f.tip)])])
         : el('label', { class: 'f', style: f.half ? 'flex:1 1 220px' : 'flex:1 1 100%' }, [el('span', null, [f.label, tip(f.tip)]), input, warn]);
+      if (f.hrac) { H.appendChild(node); return; }
       if (f.adv) { advIn.appendChild(node); if (filled(v)) advFilled = true; } else basic.appendChild(node);
     });
     F.appendChild(basic); F.appendChild(adv);
@@ -1121,9 +1189,203 @@ function clPage(md) {
     return { text: JSON.stringify(o, null, 2) + '\n', errors: errs };
   };
 
+
+  // ---------- SLOVNIK PREKLADU ----------
+  var GL = { rules: null };
+  var GL_DEF = [
+    { spatne: 'Čist* neb*', spravne: 'Jasná obloha', pozn: 'frakce Clear Sky' },
+    { spatne: 'výron*', spravne: 'emise', pozn: 'blowout' },
+    { spatne: 'Pripja*', spravne: 'Pripyat' }
+  ];
+  function glRe(p) { return new RegExp('(?<![\\p{L}])' + String(p).replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '\\p{L}*') + '(?![\\p{L}])', 'giu'); }
+  function glDraw() {
+    var box = $('glBody'); box.innerHTML = '';
+    box.appendChild(el('div', { class: 'gl-row gl-head' }, [el('span', { text: 'Špatně' }), el('span', { text: 'Správně' }), el('span', { class: 'gl-pz', text: 'Poznámka' }), el('span', { text: '' })]));
+    GL.rules.forEach(function (r, i) {
+      var inp = function (k, ph, cls) {
+        var x = el('input', { type: 'text', placeholder: ph, class: cls || '' }); x.value = r[k] || '';
+        x.addEventListener('input', function () { r[k] = x.value; setDirty('gl'); test(); }); return x;
+      };
+      box.appendChild(el('div', { class: 'gl-row' }, [inp('spatne', 'např. výron*', 'mono'), inp('spravne', 'např. emise'), inp('pozn', 'nepovinné', 'gl-pz'),
+        el('button', { class: 'btn small', text: '✕', title: 'Smazat pravidlo', onclick: function () { GL.rules.splice(i, 1); setDirty('gl'); glDraw(); } })]));
+    });
+    box.appendChild(el('button', { class: 'btn small', text: '+ Přidat pravidlo', onclick: function () { GL.rules.push({ spatne: '', spravne: '', pozn: '' }); setDirty('gl'); glDraw(); var l = box.querySelectorAll('.gl-row input.mono'); l[l.length - 1].focus(); } }));
+    var ta = el('textarea', { rows: 2, placeholder: 'Vyzkoušej: napiš sem větu, např. „Frakce Čisté nebe čeká na výron v Pripjati.“' });
+    var out = el('p', { class: 'hint gl-test' });
+    var test = function () {
+      var h = esc(ta.value), n = 0;
+      GL.rules.forEach(function (r) { if (!r.spatne) return; try { h = h.replace(glRe(r.spatne), function (m) { n++; return '<mark title="Správně: ' + esc(r.spravne || '') + '">' + m + '</mark>'; }); } catch (e) { /* spatny vzor */ } });
+      out.innerHTML = ta.value ? (n ? 'Nalezeno ' + n + '× : ' + h : 'Nic nenalezeno.') : '';
+    };
+    ta.addEventListener('input', test);
+    box.appendChild(el('h3', { text: 'Vyzkoušet', style: 'margin-top:18px' })); box.appendChild(ta); box.appendChild(out);
+  }
+  builders.gl = function (text) {
+    var o = null; try { o = text.trim() ? JSON.parse(text) : null; } catch (e) { o = null; }
+    var l = Array.isArray(o) ? o : o && Array.isArray(o.rules) ? o.rules : null;
+    GL.rules = (l || GL_DEF).map(function (r) { return { spatne: r.spatne || '', spravne: r.spravne || '', pozn: r.pozn || '' }; });
+    glDraw();
+    if (!l) setTimeout(function () { setDirty('gl'); }, 0);   // soubor jeste neni na GitHubu -> vychozi pravidla k ulozeni
+  };
+  validators.gl = function () {
+    if (!GL.rules) return { text: '', errors: ['Soubor se nenačetl.'] };
+    var errs = [], out = [];
+    GL.rules.forEach(function (r, i) {
+      var a = (r.spatne || '').trim(), b = (r.spravne || '').trim(), p = (r.pozn || '').trim();
+      if (!a && !b) return;
+      if (!a || !b) { errs.push('Pravidlo č. ' + (i + 1) + ': vyplň špatný i správný výraz.'); return; }
+      if (!/\p{L}/u.test(a.replace(/\*/g, ''))) { errs.push('Pravidlo č. ' + (i + 1) + ': „' + a + '“ musí obsahovat písmena.'); return; }
+      try { glRe(a); } catch (e) { errs.push('Pravidlo č. ' + (i + 1) + ': neplatný vzor.'); return; }
+      var o = { spatne: a, spravne: b }; if (p) o.pozn = p; out.push(o);
+    });
+    return { text: JSON.stringify({ rules: out }, null, 2) + '\n', errors: errs };
+  };
+  onShow.gl = function () { if (GL.rules) glDraw(); };
+
+  // ---------- ULOZIT VSE (jeden commit) ----------
+  function gitBlobSha(text) {
+    var b = new TextEncoder().encode(text), h = new TextEncoder().encode('blob ' + b.length + '\0');
+    var all = new Uint8Array(h.length + b.length); all.set(h); all.set(b, h.length);
+    return crypto.subtle.digest('SHA-1', all).then(function (d) { return Array.prototype.map.call(new Uint8Array(d), function (x) { return ('0' + x.toString(16)).slice(-2); }).join(''); });
+  }
+  function saveAll() {
+    var fks = Object.keys(FILES).filter(function (k) { return FILES[k].dirty && loaded[k]; });
+    if (!fks.length) return;
+    var btn = $('saveAll'); btn.disabled = true;
+    Promise.all(fks.map(function (k) { return Promise.resolve().then(function () { return validators[k](); }).then(function (r) { return { fk: k, r: r }; }); }))
+      .then(function (res) {
+        btn.disabled = false;
+        var bad = res.filter(function (x) { return x.r.errors.length; });
+        if (bad.length) {
+          return dialog('Nejde uložit', '<p>Oprav nejdřív chyby:</p><ul class="sa-list">' + bad.map(function (x) { return '<li><code>' + esc(FILES[x.fk].path) + '</code>: ' + esc(x.r.errors[0]) + (x.r.errors.length > 1 ? ' (a další: ' + (x.r.errors.length - 1) + ')' : '') + '</li>'; }).join('') + '</ul>', [{ label: 'OK', value: true, cls: 'pri' }]);
+        }
+        var ch = res.filter(function (x) { return !(x.r.same || x.r.text === FILES[x.fk].orig); });
+        res.forEach(function (x) { if (ch.indexOf(x) < 0) FILES[x.fk].dirty = false; });
+        markTabs();
+        if (!ch.length) return dialog('Uložit vše', '<p>Nic se nezměnilo.</p>', [{ label: 'OK', value: true, cls: 'pri' }]);
+        var msgIn = el('input', { type: 'text', placeholder: 'Popis změny (např. „Nové patche + oprava modlistu“)', style: 'width:100%' });
+        var wrap = el('div', null, [el('p', { html: 'Tyhle soubory se uloží <b>jedním commitem</b>:' }),
+          el('ul', { class: 'sa-list', html: ch.map(function (x) { return '<li><code>' + esc(FILES[x.fk].path) + '</code></li>'; }).join('') }), msgIn]);
+        return dialog('Uložit vše', wrap, [{ label: 'Uložit na GitHub', cls: 'pri', value: function () { return msgIn.value.trim() || ('Editor: ' + ch.map(function (x) { return FILES[x.fk].path.split('/').pop(); }).join(', ')); } }, { label: 'Zpět', value: false }])
+          .then(function (m) { if (!m) return; return commitMany(ch, m + ' (editor, ' + S.user + ')'); });
+      })
+      .catch(function (e) { btn.disabled = false; dialog('Uložení se nepovedlo', '<p>' + esc(e && e.status ? friendly(e) : (e && e.message) || String(e)) + '</p>', [{ label: 'OK', value: true, cls: 'pri' }]); });
+  }
+  function commitMany(ch, message) {
+    var btn = $('saveAll'), R = '/repos/' + S.repo, head, base;
+    btn.disabled = true; btn.textContent = 'Ukládám…';
+    // kontrola, ze soubory mezitim nikdo nezmenil
+    return Promise.all(ch.map(function (x) {
+      var f = FILES[x.fk];
+      return api(R + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now())
+        .then(function (j) { return j.sha; }, function (e) { if (e.status === 404) return null; throw e; })
+        .then(function (sha) { if (sha !== f.sha) { var err = new Error('Soubor ' + f.path + ' mezitím změnil někdo jiný. Otevři jeho záložku, klikni na NAČÍST ZNOVU a změny udělej ještě jednou.'); throw err; } });
+    }))
+      .then(function () { return api(R + '/git/ref/heads/' + encodeURIComponent(S.branch)); })
+      .then(function (ref) { head = ref.object.sha; return api(R + '/git/commits/' + head); })
+      .then(function (c) {
+        base = c.tree.sha;
+        var tree = ch.map(function (x) { return { path: FILES[x.fk].path, mode: '100644', type: 'blob', content: x.r.text }; });
+        return api(R + '/git/trees', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ base_tree: base, tree: tree }) });
+      })
+      .then(function (t) { return api(R + '/git/commits', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: message, tree: t.sha, parents: [head] }) }); })
+      .then(function (c) { return api(R + '/git/refs/heads/' + encodeURIComponent(S.branch), { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ sha: c.sha }) }); })
+      .then(function () { return Promise.all(ch.map(function (x) { return gitBlobSha(x.r.text).then(function (sha) { var f = FILES[x.fk]; f.sha = sha; f.orig = x.r.text; f.dirty = false; if (x.r.after) x.r.after(); }); })); })
+      .then(function () {
+        btn.disabled = false; markTabs();
+        return dialog('Uloženo', '<p>Uloženo jedním commitem (' + ch.length + ' ' + (ch.length < 5 ? 'soubory' : 'souborů') + '). Hráči změny uvidí při další kontrole aktualizací, web se obnoví za pár minut.</p>', [{ label: 'OK', value: true, cls: 'pri' }]);
+      }, function (e) { btn.disabled = false; markTabs(); throw e; });
+  }
+
+  // ---------- MODLIST (zapnute / vypnute mody profilu) ----------
+  var ML = { obj: null, orig: {}, prof: '', q: '', show: 'all' };
+  function mlLines(p) { return (ML.obj.profiles[p] = ML.obj.profiles[p] || []); }
+  function mlName(l) { return String(l).slice(1); }
+  function mlIsSep(l) { return /_separator$/.test(l); }
+  function mlRender() {
+    var box = $('mlBody'); box.innerHTML = '';
+    var profs = Object.keys(ML.obj.profiles);
+    ['Rookie', 'Veteran'].forEach(function (p) { if (profs.indexOf(p) < 0) profs.push(p); });
+    if (!ML.prof || profs.indexOf(ML.prof) < 0) ML.prof = profs[0];
+    var pills = el('div', { class: 'mlp' });
+    profs.forEach(function (p) {
+      var n = (ML.obj.profiles[p] || []).filter(function (l) { return !mlIsSep(l) && /^[+-]/.test(l); }).length;
+      pills.appendChild(el('button', { class: 'btn small' + (p === ML.prof ? ' pri' : ''), text: p + (n ? ' (' + n + ')' : ' – prázdný'), onclick: function () { ML.prof = p; mlRender(); } }));
+    });
+    box.appendChild(pills);
+    var lines = mlLines(ML.prof);
+    var file = el('input', { type: 'file', accept: '.txt', style: 'display:none' });
+    file.addEventListener('change', function () {
+      var f = file.files[0]; if (!f) return;
+      f.text().then(function (t) {
+        var l = t.split(/\r?\n/).map(function (x) { return x.trim(); }).filter(function (x) { return /^[+\-*]/.test(x); });
+        if (!l.length) { $('mlMsg').className = 'msg err'; $('mlMsg').textContent = 'Tohle není modlist.txt z Mod Organizeru.'; return; }
+        ML.obj.profiles[ML.prof] = l; setDirty('ml'); $('mlMsg').className = 'msg ok';
+        $('mlMsg').textContent = 'Načteno ' + l.length + ' řádků do profilu ' + ML.prof + '. Uprav a ulož na GitHub.'; mlRender();
+      });
+    });
+    var tools = el('div', { class: 'mlt' }, [
+      el('button', { class: 'btn small', text: 'Načíst modlist.txt z PC', onclick: function () { file.click(); } }), file,
+      el('input', { type: 'search', placeholder: 'Hledat mod…', value: ML.q, oninput: function (e) { ML.q = e.target.value; mlDraw(); } }),
+      (function () { var s = el('select'); [['all', 'Vše'], ['on', 'Zapnuté'], ['off', 'Vypnuté'], ['chg', 'Změněné']].forEach(function (o) { s.appendChild(el('option', { value: o[0], text: o[1] })); }); s.value = ML.show; s.onchange = function () { ML.show = s.value; mlDraw(); }; return s; })()
+    ]);
+    box.appendChild(tools);
+    box.appendChild(el('p', { class: 'msg', id: 'mlMsg' }));
+    if (!lines.length) {
+      box.appendChild(el('p', { class: 'hint', html: 'Profil <b>' + esc(ML.prof) + '</b> je prázdný. Klikni na <b>Načíst modlist.txt z PC</b> a vyber soubor <code>profiles/' + esc(ML.prof) + '/modlist.txt</code> ze složky Mod Organizeru modpacku.' }));
+      return;
+    }
+    box.appendChild(el('div', { class: 'mll', id: 'mlList' }));
+    mlDraw();
+  }
+  function mlDraw() {
+    var L = $('mlList'); if (!L) return; L.innerHTML = '';
+    var lines = mlLines(ML.prof), orig = {}, q = ML.q.trim().toLowerCase(), shown = 0, chg = 0;
+    (ML.orig[ML.prof] || []).forEach(function (l) { orig[mlName(l)] = l[0]; });
+    var cur = null, buf = [];
+    var flush = function () { if (buf.length) { if (cur) L.appendChild(cur); buf.forEach(function (b) { L.appendChild(b); }); } buf = []; };
+    // v MO2 je posledni radek modlist.txt nahore
+    for (var i = lines.length - 1; i >= 0; i--) {
+      (function (i) {
+        var l = lines[i], n = mlName(l);
+        if (mlIsSep(l)) { flush(); cur = el('div', { class: 'mls', text: n.replace(/_separator$/, '') }); return; }
+        if (!/^[+-]/.test(l)) return;
+        var was = orig[n], ch = was && was !== l[0];
+        if (ch) chg++;
+        if (q && n.toLowerCase().indexOf(q) < 0) return;
+        if (ML.show === 'on' && l[0] !== '+') return;
+        if (ML.show === 'off' && l[0] !== '-') return;
+        if (ML.show === 'chg' && !ch) return;
+        var cb = el('input', { type: 'checkbox' }); cb.checked = l[0] === '+';
+        cb.addEventListener('change', function () { lines[i] = (cb.checked ? '+' : '-') + n; setDirty('ml'); mlDraw(); });
+        buf.push(el('label', { class: 'mlr' + (ch ? ' chg' : '') }, [cb, el('span', { text: n }), ch ? el('small', { text: 'změněno' }) : null]));
+        shown++;
+      })(i);
+    }
+    flush();
+    if (!shown) L.appendChild(el('div', { class: 'empty', text: 'Nic nenalezeno.' }));
+    $('mlMsg').className = chg ? 'msg warn' : 'msg';
+    if (chg) $('mlMsg').textContent = 'Změněno v profilu ' + ML.prof + ': ' + chg + ' (zatím neuloženo na GitHub, nebo oproti poslednímu uložení).';
+  }
+  builders.ml = function (text) {
+    var o;
+    try { o = text.trim() ? JSON.parse(text) : {}; } catch (e) { o = {}; }
+    if (!o || typeof o !== 'object') o = {};
+    if (!o.profiles || typeof o.profiles !== 'object') o.profiles = {};
+    ML.obj = o; ML.orig = JSON.parse(JSON.stringify(o.profiles));
+    mlRender();
+  };
+  onShow.ml = function () { if (ML.obj) mlRender(); };
+  validators.ml = function () {
+    if (!ML.obj) return { text: '', errors: ['Soubor se nenačetl.'] };
+    var out = { profiles: {} };
+    Object.keys(ML.obj.profiles).forEach(function (p) { if (ML.obj.profiles[p].length) out.profiles[p] = ML.obj.profiles[p]; });
+    return { text: JSON.stringify(out, null, 1) + '\n', errors: [], after: function () { ML.orig = JSON.parse(JSON.stringify(ML.obj.profiles)); mlDraw(); } };
+  };
+
   // ---------- prihlaseni ----------
   function enter() {
-    $('login').hidden = true; $('tabs').hidden = false; $('logout').hidden = false;
+    $('login').hidden = true; $('tabs').hidden = false; $('logout').hidden = false; markTabs();
     $('who').textContent = S.user + ' · ' + S.repo;
     var t = null; try { t = sessionStorage.getItem('rzed_tab'); } catch (e) { /* nic */ }
     openTab(TAB_FILE[t] ? t : 'opt');
@@ -1152,7 +1414,15 @@ function clPage(md) {
     (dirty ? confirmBox('Odhlásit?', '<p>Máš neuložené změny – po odhlášení se ztratí.</p>', 'Odhlásit') : Promise.resolve(true))
       .then(function (ok) { if (!ok) return; Object.keys(FILES).forEach(function (k) { FILES[k].dirty = false; }); store('rzed_token', null); store('rzed_repo', null); store('rzed_branch', null); location.reload(); });
   });
-  document.querySelectorAll('#tabs button').forEach(function (b) { b.addEventListener('click', function () { openTab(b.dataset.tab); }); });
+  document.querySelectorAll('#subtabs button').forEach(function (b) { b.addEventListener('click', function () { openTab(b.dataset.tab); }); });
+  document.querySelectorAll('#tabs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var g = b.dataset.grp, t = null; try { t = sessionStorage.getItem('rzed_tab_' + g); } catch (e) { /* nic */ }
+      if (!t || !document.querySelector('#subtabs [data-g="' + g + '"][data-tab="' + t + '"]')) t = document.querySelector('#subtabs [data-g="' + g + '"]').dataset.tab;
+      openTab(t);
+    });
+  });
+  $('saveAll').addEventListener('click', saveAll);
   var saved = load('rzed_token');
   if (saved) {
     var rp = load('rzed_repo'), br = load('rzed_branch');
