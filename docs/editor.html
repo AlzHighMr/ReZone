@@ -100,6 +100,19 @@ legend { font: 700 16px/1 var(--cond); letter-spacing: .1em; text-transform: upp
 .code { font: 12.5px/1.5 var(--mono); background: #0c0c0c; border: 1px solid var(--line); padding: 10px; white-space: pre-wrap; max-height: 260px; overflow: auto; color: #bdb8ad; }
 dialog { background: #111; color: var(--text); border: 1px solid #333; padding: 22px 24px; max-width: 640px; width: calc(100% - 32px); box-shadow: 0 30px 80px #000; }
 dialog::backdrop { background: #000a; }
+.catbox { margin: 12px 0 0; border: 1px solid var(--line, #2a2a2a); padding: 0 12px; }
+.catbox > summary { cursor: pointer; padding: 10px 0; font-weight: 600; color: #e0a43a; }
+.catbox[open] > summary { border-bottom: 1px solid var(--line, #2a2a2a); margin-bottom: 8px; }
+.catrow { display: grid; grid-template-columns: 28px minmax(0, 1fr) 70px 34px 34px auto 34px; gap: 6px; align-items: center; padding: 4px 0; }
+.catrow .cn { color: var(--muted, #96938b); font: 12px var(--mono, monospace); text-align: right; }
+.catrow .cc { color: var(--muted, #96938b); font-size: 13px; }
+.catrow .cl { display: flex; gap: 5px; align-items: center; font-size: 13px; white-space: nowrap; }
+.catrow button[disabled] { opacity: .35; cursor: not-allowed; }
+.catadd { display: flex; gap: 8px; margin: 10px 0 4px; flex-wrap: wrap; } .catadd input { flex: 1 1 220px; min-width: 0; }
+.catrow > *, .catrow .cl input { margin: 0 !important; } .catrow .cl input { width: auto; height: auto; }
+.catrow .btn { width: 34px; height: 32px; min-width: 0; padding: 0; margin: 0; }
+.catrow input[type=text] { margin: 0; min-width: 0; }
+@media (max-width: 600px) { .catrow { grid-template-columns: minmax(0, 1fr) 34px 34px auto 34px; padding: 8px 0; border-bottom: 1px solid #ffffff10; } .catrow .cn { display: none; } .catrow input[type=text] { grid-column: 1 / -1; } }
 .ab-in { flex-wrap: wrap; } .ab-sub { flex-wrap: wrap; justify-content: flex-end; padding: 6px 0; min-width: 0; }
 #who { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 900px) {
@@ -197,6 +210,13 @@ details.adv > .in { padding: 0 14px 14px; }
   <section class="card" id="tab-opt" hidden>
     <div class="eb">// ReZone/optional.json</div>
     <h2>Volitelné mody</h2>
+    <details class="catbox" id="catBox">
+      <summary>Kategorie <span class="hint" id="catSum"></span></summary>
+      <p class="hint">Pořadí, ve kterém launcher ukáže záložky ve Volitelných modech. Přejmenování změní kategorii u všech jejích modů. Kategorie <b>na konci</b> (např. rozpracované mody) jsou vždy až za ostatními. Vegetace, Terén a Textury jsou na stránce Textury a vegetace.</p>
+      <div id="catList"></div>
+      <div class="catadd"><input type="text" id="catNew" placeholder="Nová kategorie, např. Gameplay"><button class="btn small" id="catAddBtn">+ Přidat kategorii</button></div>
+      <p class="msg err" id="catErr"></p>
+    </details>
     <div class="split" style="margin-top:14px">
       <div>
         <div class="filters">
@@ -573,6 +593,7 @@ function clPage(md) {
     { k: 'link', label: 'Stránka modu', type: 'url', tip: 'ModDB, GitHub… – otevře se z okna INFO v launcheru.' },
     { k: 'mirrors', label: 'Alternativní odkazy na stejný soubor', type: 'list', tip: 'Když hlavní odkaz nejde (limit Google Drive, výpadek), launcher stáhne stejný soubor odsud. Jeden na řádek: soubor na Google Drive, přímý odkaz (Dropbox, GitHub release…) nebo složka na Drive, ve které je archiv se stejným názvem. Funguje i pro mody z ModDB.' },
     // skupina: mody se stejnou skupinou se vylucuji
+    { k: 'remove', label: 'Smazat u hráčů – mod už do modpacku nepatří', type: 'bool', tip: 'Launcher mod hráčům při kontrole aktualizací jednou odstraní (záloha jde do složky _Odstranene mody) a přestane ho nabízet. Záznam nech v seznamu, dokud ho nemají všichni smazaný.' },
     { k: 'group', label: 'Skupina (zapnutý jen jeden)', type: 'text', half: true, w: '40%', tip: 'Ze stejné skupiny může mít hráč zapnutý jen jeden mod – např. „Vegetace“ u trávy a stromů nebo „NPC Models“.' },
     // ModDB
     { k: 'file', label: 'Název archivu na ModDB', type: 'text', show: isModdb, adv: true, tip: 'Když ModDB nepovolí automatické stažení, hráč archiv stáhne ručně a launcher ho najde podle tohoto názvu.' },
@@ -631,7 +652,7 @@ function clPage(md) {
     if (type === 'area') input = el('textarea', { rows: k === 'description' ? 7 : 4 });
     else if (type === 'list') input = el('textarea', { rows: 3, class: 'mono' });
     else if (type === 'select') { input = el('select'); f.opts.forEach(function (o) { input.appendChild(el('option', { value: o, text: o || '— žádná —' })); }); }
-    else if (type === 'cat') input = el('input', { type: 'text', list: 'cats' });
+    else if (type === 'cat') input = catSelect(v);
     else if (type === 'bool') input = el('input', { type: 'checkbox' });
     else input = el('input', { type: type === 'number' ? 'number' : 'text', class: type === 'url' ? 'mono' : null });
     if (type === 'bool') input.checked = v === true;
@@ -643,7 +664,7 @@ function clPage(md) {
       var s = String(input.value || '').trim();
       warn.textContent = s && !isUrl(s) ? 'Tohle není odkaz – musí začínat https://' : '';
     };
-    input.addEventListener(type === 'bool' || type === 'select' ? 'change' : 'input', function () {
+    input.addEventListener(type === 'bool' || type === 'select' || type === 'cat' ? 'change' : 'input', function () {
       if (type === 'bool') it[k] = input.checked;
       else if (type === 'list') it[k] = lines(input.value);
       else if (type === 'number') it[k] = input.value === '' ? '' : Number(input.value);
@@ -774,9 +795,72 @@ function clPage(md) {
   function usedBy(p) { var n = key(p.name); return OPT.items.filter(function (m) { return (m.requires || []).some(function (r) { return key(r) === n; }); }); }
   function dupNames() { var n = {}; OPT.items.forEach(function (m) { var k = key(m.name); n[k] = (n[k] || 0) + 1; }); return n; }
 
+  // ---------- kategorie volitelnych modu ----------
+  function catFind(n) { n = String(n || '').trim().toLowerCase(); return (OPT.cats || []).filter(function (c) { return c.name.toLowerCase() === n; })[0]; }
+  function catCount(n) { return OPT.items.filter(function (m) { return !isPatch(m) && String(m.category || '').trim().toLowerCase() === n.toLowerCase(); }).length; }
+  // vyber kategorie: seznam z panelu Kategorie + "nova kategorie"
+  function catSelect(v) {
+    var s = el('select'), prev = v || '';
+    var fill = function (val) {
+      s.innerHTML = '';
+      s.appendChild(el('option', { value: '', text: '— bez kategorie (podle složky na Drive) —' }));
+      (OPT.cats || []).forEach(function (c) { s.appendChild(el('option', { value: c.name, text: c.name })); });
+      if (val && !catFind(val)) s.appendChild(el('option', { value: val, text: val }));
+      s.appendChild(el('option', { value: '@new', text: '+ Nová kategorie…' }));
+      s.value = val || '';
+    };
+    fill(prev);
+    s.addEventListener('change', function () {
+      if (s.value === '@new') {
+        var n = (window.prompt('Název nové kategorie:') || '').trim();
+        if (!n) { s.value = prev; return; }
+        var ex = catFind(n);
+        if (!ex) { OPT.cats.push({ name: n, last: false }); catRender(); }
+        fill(ex ? ex.name : n);
+      }
+      prev = s.value;
+    });
+    return s;
+  }
+  function catRender() {
+    var cs = $('optCat'), keep = cs.value;
+    cs.innerHTML = '<option value="">Všechny kategorie</option><option value="@hidden">Skryté</option><option value="@remove">Ke smazání</option>';
+    OPT.cats.forEach(function (c) { cs.appendChild(el('option', { value: c.name, text: c.name + ' (' + catCount(c.name) + ')' })); });
+    cs.value = catFind(keep) || keep === '@hidden' || keep === '@remove' ? keep : '';
+    $('catSum').textContent = '(' + OPT.cats.length + ')';
+    var L = $('catList'); L.innerHTML = '';
+    OPT.cats.forEach(function (c, i) {
+      var n = catCount(c.name);
+      var name = el('input', { type: 'text', value: c.name });
+      name.addEventListener('change', function () {
+        var nn = name.value.trim(), old = c.name; $('catErr').textContent = '';
+        if (!nn) { name.value = old; return; }
+        if (nn === old) return;
+        var ex = catFind(nn);
+        OPT.items.forEach(function (m) { if (String(m.category || '').trim().toLowerCase() === old.toLowerCase()) m.category = ex && ex !== c ? ex.name : nn; });
+        if (ex && ex !== c) OPT.cats.splice(OPT.cats.indexOf(c), 1); else c.name = nn;
+        setDirty('opt'); catRender(); if (OPT.ed) OPT.ed.render();
+      });
+      var mv = function (d) { return function () { var j = i + d; if (j < 0 || j >= OPT.cats.length) return; OPT.cats.splice(j, 0, OPT.cats.splice(i, 1)[0]); setDirty('opt'); catRender(); }; };
+      var last = el('input', { type: 'checkbox' }); last.checked = !!c.last;
+      last.addEventListener('change', function () { c.last = last.checked; setDirty('opt'); });
+      var del = el('button', { class: 'btn small ghost', text: '✕', title: n ? 'Kategorie má mody – nejdřív je přesuň jinam' : 'Smazat kategorii' });
+      del.disabled = n > 0;
+      del.onclick = function () { OPT.cats.splice(OPT.cats.indexOf(c), 1); setDirty('opt'); catRender(); };
+      L.appendChild(el('div', { class: 'catrow' }, [
+        el('span', { class: 'cn', text: (i + 1) + '.' }), name,
+        el('span', { class: 'cc', text: n + (n === 1 ? ' mod' : n >= 2 && n <= 4 ? ' mody' : ' modů') }),
+        el('button', { class: 'btn small ghost', text: '↑', title: 'Výš', onclick: mv(-1) }),
+        el('button', { class: 'btn small ghost', text: '↓', title: 'Níž', onclick: mv(1) }),
+        el('label', { class: 'cl', title: 'Vždy až za ostatními kategoriemi' }, [last, 'na konci']),
+        del
+      ]));
+    });
+  }
+
   function newItemDialog(isP) {
     var name = el('input', { type: 'text', class: 'mono', placeholder: isP ? 'Např. Vasgen CCon Patch' : 'Např. 241-[Autor] Název modu' });
-    var cat = el('input', { type: 'text', list: 'cats', placeholder: 'Např. Gameplay' });
+    var cat = catSelect('');
     var box = el('div', null, [
       el('p', { class: 'hint', text: 'Napiš přesný název složky (archivu) na Google Drive – podle něj launcher spáruje archiv s tímto popisem. Ostatní vyplníš potom.' }),
       el('label', { class: 'f' }, [el('span', { text: 'Název složky' }), name]),
@@ -801,11 +885,17 @@ function clPage(md) {
     catch (e) { $('optForm').innerHTML = $('patchForm').innerHTML = '<p class="msg err">optional.json na GitHubu není platný JSON: ' + esc(e.message) + '</p>'; OPT.root = null; return; }
     if (Array.isArray(root)) root = { mods: root };
     OPT.root = root; OPT.items = Array.isArray(root.mods) ? root.mods : (root.mods = []);
-    var cats = {}; OPT.items.forEach(function (m) { if (m.category) cats[m.category] = 1; });
-    var dl = $('cats') || document.body.appendChild(el('datalist', { id: 'cats' })); dl.innerHTML = '';
-    Object.keys(cats).sort().forEach(function (c) { dl.appendChild(el('option', { value: c })); });
-    var cs = $('optCat'); cs.innerHTML = '<option value="">Všechny kategorie</option><option value="@hidden">Skryté</option>';
-    Object.keys(cats).sort().forEach(function (c) { cs.appendChild(el('option', { value: c, text: c })); });
+    // kategorie: ulozene poradi (optional.json "categories") + pouzite u modu
+    OPT.cats = [];
+    (Array.isArray(root.categories) ? root.categories : []).forEach(function (c) {
+      var n = String(typeof c === 'string' ? c : (c && c.name) || '').trim();
+      if (n && !catFind(n)) OPT.cats.push({ name: n, last: !!(c && c.last) });
+    });
+    OPT.items.forEach(function (m) {
+      var n = String(m.category || '').trim();
+      if (n && !catFind(n)) OPT.cats.push({ name: n, last: /^(work in progress|wip)$/i.test(n) });
+    });
+    catRender();
 
     var preview = function (m, box) {
       box.innerHTML = '';
@@ -823,13 +913,14 @@ function clPage(md) {
       nameLabel: 'Název složky', nameTip: 'Přesně jako složka (archiv) na Google Drive a v MO2. Podle něj launcher spáruje archiv s popisem.',
       title: function (m) { return m.title || m.name; },
       sub: function (m) { return m.name || ''; },
-      tags: function (m) { var t = []; if (m.season) t.push(m.season); else if (m.category) t.push(m.category); if (m.hidden) t.push('skrytý'); return t; },
+      tags: function (m) { var t = []; if (m.remove) t.push('smazat u hráčů'); if (m.season) t.push(m.season); else if (m.category) t.push(m.category); if (m.hidden) t.push('skrytý'); return t; },
       bad: function (m) { return !key(m.name) || dupNames()[key(m.name)] > 1; },
       filter: function (m) {
         if (isPatch(m)) return false;
         var q = $('optSearch').value.trim().toLowerCase(), c = $('optCat').value;
         if (c === '@season' && !m.season) return false;
         if (c === '@hidden' && !m.hidden) return false;
+        if (c === '@remove' && !m.remove) return false;
         if (c && c[0] !== '@' && m.category !== c) return false;
         return !q || [m.name, m.title, m.author, m.description, m.category].join(' ').toLowerCase().indexOf(q) >= 0;
       },
@@ -886,6 +977,14 @@ function clPage(md) {
     });
     $('optSearch').oninput = function () { OPT.ed.render(); };
     $('optCat').onchange = function () { OPT.ed.render(); };
+    $('catAddBtn').onclick = function () {
+      var n = $('catNew').value.trim();
+      $('catErr').textContent = '';
+      if (!n) { $('catErr').textContent = 'Napiš název kategorie.'; return; }
+      if (catFind(n)) { $('catErr').textContent = 'Kategorie „' + n + '“ už existuje.'; return; }
+      OPT.cats.push({ name: n, last: false }); $('catNew').value = ''; setDirty('opt'); catRender();
+    };
+    $('catNew').onkeydown = function (e) { if (e.key === 'Enter') $('catAddBtn').click(); };
     $('patchSearch').oninput = function () { OPT.ped.render(); };
     $('optAdd').onclick = function () { newItemDialog(false).then(function (r) { if (r) { $('optSearch').value = ''; $('optCat').value = ''; OPT.ed.add({ name: r.name, title: '', category: r.category, description: '' }); } }); };
     $('patchAdd').onclick = function () { newItemDialog(true).then(function (r) { if (r) { $('patchSearch').value = ''; OPT.ped.add({ name: r.name, title: '', hidden: true, description: '', __patch: true }); } }); };
@@ -906,7 +1005,10 @@ function clPage(md) {
       var c = {}; Object.keys(m).forEach(function (k) { if (k !== '__new' && k !== '__patch') c[k] = m[k]; });
       c = clean(c, ALL_MOD_TYPES); c.name = n; return c;
     });
-    return { text: JSON.stringify(Object.assign({}, OPT.root, { mods: mods }), null, 2) + '\n', errors: errs };
+    var out = { categories: (OPT.cats || []).map(function (c) { return c.last ? { name: c.name, last: true } : { name: c.name }; }) };
+    Object.keys(OPT.root).forEach(function (k) { if (k !== 'categories' && k !== 'mods') out[k] = OPT.root[k]; });
+    out.mods = mods;
+    return { text: JSON.stringify(out, null, 2) + '\n', errors: errs };
   };
 
   // ---------- MODDB ----------
@@ -948,7 +1050,8 @@ function clPage(md) {
     { k: 'weapons', label: 'Zbraně', type: 'list' },
     { k: 'update_note', label: 'Poznámka k aktualizaci', type: 'area', tip: 'Hráč ji uvidí v okně před aktualizací modpacku. Prázdné = nic.' },
     { k: 'new_save', label: 'Tahle verze potřebuje novou hru', type: 'bool', tip: 'Launcher hráče před aktualizací upozorní, že rozehrané hry nemusí fungovat.' },
-    { k: 'remove_mods', label: 'Smazat staré mody u hráčů', type: 'list', tip: 'Jeden mod na řádek (název složky v MO2, číslo a autor můžou chybět). Launcher je hráčům při kontrole aktualizací přesune do zálohy (složka _Odstranene mody v modpacku) a vyřadí z load orderu všech profilů. Každý jen jednou – když si ho hráč později nainstaluje znovu, zůstane.' },
+    { k: 'modlist_fixes', label: 'Opravit load order u hráčů', type: 'list', plain: true, tip: 'Jedna oprava na řádek, zápis jako v modlist.txt: +Název modu = zapnout, -Název modu = vypnout. Jen pro jeden profil: Veteran: -Název modu. Číslo a autor můžou chybět. Launcher to u hráčů provede jednou po kontrole aktualizací (pak si to hráč může změnit).' },
+    { k: 'remove_mods', label: 'Smazat staré mody u hráčů', type: 'list', plain: true, tip: 'Jeden mod na řádek (název složky v MO2, číslo a autor můžou chybět). Launcher je hráčům při kontrole aktualizací přesune do zálohy (složka _Odstranene mody v modpacku) a vyřadí z load orderu všech profilů. Každý jen jednou – když si ho hráč později nainstaluje znovu, zůstane.' },
     { k: 'other', label: 'Ostatní volitelné mody', type: 'list', adv: true },
     { k: 'rezone_alt', label: 'Záložní složky modpacku', type: 'list', adv: true, tip: 'Použijí se, když hlavní nejde načíst.' },
     { k: 'optional_alt', label: 'Další složky volitelných modů', type: 'list', adv: true },
@@ -1008,6 +1111,8 @@ function clPage(md) {
     SRC_FIELDS.forEach(function (f) {
       var v = srcGet(o, f.k);
       var arr = f.type === 'list' ? (v || []) : f.type === 'one' ? [v].filter(Boolean) : [];
+      if (f.k === 'modlist_fixes') arr.forEach(function (l) { if (!/^(\s*[^+:\-][^:]*:\s*)?[+-]\s*\S/.test(l)) errs.push(f.label + ': „' + l + '“ – řádek musí začínat + (zapnout) nebo - (vypnout), případně „Profil: “.'); });
+      if (f.plain) return;
       arr.forEach(function (l) { if (!isUrl(l)) errs.push(f.label + ': „' + l + '“ není odkaz.'); });
     });
     if (!o.update_note) delete o.update_note;

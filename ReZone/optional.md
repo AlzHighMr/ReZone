@@ -28,6 +28,28 @@ jde hned pod ni (přepíše ji).
   "url": "https://www.moddb.com/mods/stalker-anomaly/addons/inverno-fx" }
 ```
 
+## Opravy u hráčů (sources.json, editor → Odkazy)
+
+- **Opravit load order u hráčů** (`modlist_fixes`): řádky jako v `modlist.txt` – `+Mod` zapnout, `-Mod` vypnout,
+  `Veteran: -Mod` jen v profilu Veteran. Launcher je provede jednou ve všech profilech a hráči napíše, co změnil.
+- **Smazat staré mody u hráčů** (`remove_mods`): názvy modů, které launcher hráčům jednou odstraní.
+
+## Kategorie
+
+Na začátku `optional.json` je seznam `categories` – pořadí záložek ve Volitelných modech v launcheru.
+Upravuje se v editoru (Volitelné mody → **Kategorie**): přejmenování změní kategorii u všech jejích modů,
+šipkami se mění pořadí, nová kategorie jde přidat i prázdná a **na konci** = vždy za ostatními
+(rozpracované mody). Kategorie u modu se vybírá ze seznamu. Mod bez kategorie dostane kategorii podle
+složky na Google Drive, ve které leží (Addony, NPC Models, Zbraně, Ostatní).
+
+```json
+"categories": [
+  { "name": "Gameplay" },
+  { "name": "HUD a rozhraní" },
+  { "name": "Work in Progress", "last": true }
+]
+```
+
 Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen bez popisu.
 
 ## Pole
@@ -54,6 +76,7 @@ Záznam v `optional.json` není povinný. Mod bez záznamu se zobrazí taky, jen
 | `file`, `size` | ne | Jen u modů z ModDB: přesný název archivu na ModDB (např. `ATO_5.7z`) a velikost v bajtech. Když ModDB launcheru stažení nepovolí, hráč archiv stáhne v prohlížeči do Stažených souborů a launcher ho tam podle `file` najde (stejně jako Anomaly). |
 | `url`, `version` | ne | Jen pro mody mimo Google Drive a repozitář: odkaz na archiv a verze (změna verze = nabídka aktualizace). `url` může být i **odkaz na GitHub** (repozitář nebo release – stáhne se archiv z nejnovějšího releasu, aktualizace podle releasu) nebo **stránka addonu na ModDB** – launcher stáhne aktuální soubor a verzi hlídá sám (`version` netřeba). Mody s instalátorem (**FOMOD**) launcher nainstaluje sám (viz `fomod`). |
 | `mirrors` | ne | **Alternativní odkazy na stejný soubor** (seznam). Když hlavní zdroj selže (limit Google Drive, výpadek, ModDB nepovolí stažení), launcher zkusí tyhle. Soubor na Google Drive, přímý odkaz (Dropbox, GitHub release…) nebo **složka na Drive**, ve které je archiv se stejným názvem. Funguje u modů z Drive, z `url` i z ModDB a u patchů; u patche s variantami (`Vasgen CCon Patch Spring`…) dej složku. |
+| `remove` | ne | `true` = **mod už do modpacku nepatří**: launcher ho hráčům při kontrole aktualizací jednou smaže (záloha do `_Odstranene mody`) a přestane ho nabízet. V editoru zaškrtávátko „Smazat u hráčů“. |
 
 Priorita se použije, když hráč mod stáhne přes launcher. Mody, které už má, launcher nepřesouvá.
 Čísla nemusí jít po jedné – nech si mezi nimi mezery (100, 150, 200…), ať jde nový mod vložit mezi.
