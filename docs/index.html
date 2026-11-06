@@ -139,6 +139,19 @@ th { font: 600 15px/1.2 var(--display); text-transform: uppercase; letter-spacin
 .hub .ht { font: 700 20px/1.15 var(--display); text-transform: uppercase; letter-spacing: .03em; color: #fff; display: flex; justify-content: space-between; gap: 8px; }
 .hub .ht small { font: 600 12px/1.6 var(--mono); color: var(--c, var(--amber)); letter-spacing: .1em; }
 .hub p { margin: 6px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
+.trailer { margin: 26px 0 0; max-width: 1060px; }
+.tr-play, .trailer iframe { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: #000; padding: 0; cursor: pointer; overflow: hidden; }
+.trailer iframe { cursor: auto; }
+.tr-play img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .85; transition: opacity .2s, transform .4s; }
+.tr-play::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, #000a); pointer-events: none; }
+.tr-play:hover img { opacity: 1; transform: scale(1.02); }
+.tr-btn { position: absolute; left: 50%; top: 50%; width: 82px; height: 82px; margin: -41px 0 0 -41px; border-radius: 50%; background: #c4492ce6; color: #fff; display: grid; place-items: center; box-shadow: 0 6px 30px #0008; transition: transform .2s, background .2s; z-index: 1; }
+.tr-btn svg { width: 36px; height: 36px; margin-left: 4px; }
+.tr-play:hover .tr-btn { transform: scale(1.08); background: #c4492c; }
+.tr-cap { position: absolute; left: 20px; bottom: 16px; z-index: 1; font: 700 22px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; color: #fff; }
+.trailer figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: 8px; font: 12.5px var(--mono); color: var(--muted); }
+.trailer figcaption a { color: var(--amber); text-decoration: none; }
+@media (max-width: 700px) { .tr-btn { width: 60px; height: 60px; margin: -30px 0 0 -30px; } .tr-btn svg { width: 26px; height: 26px; } .tr-cap { font-size: 17px; left: 12px; bottom: 10px; } }
 .hub-h { font: 600 13px/1 var(--mono); color: var(--amber); letter-spacing: .12em; text-transform: uppercase; margin: 30px 0 0; }
 
 footer { margin-top: 70px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
@@ -631,6 +644,15 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
       <p class="lead">Všechno na jednom místě: co je Re:Zone, jak používat launcher, jak hrát s přáteli a co je ve hře jinak než ve vanilla Anomaly. Bez technických řečí.</p>
     </header>
 
+    <figure class="trailer">
+      <button type="button" class="tr-play" data-yt="OQavP6U5x6s" aria-label="Přehrát trailer Re:Zone">
+        <img src="https://i.ytimg.com/vi/OQavP6U5x6s/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/OQavP6U5x6s/hqdefault.jpg'">
+        <span class="tr-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
+        <span class="tr-cap">Trailer Re:Zone</span>
+      </button>
+      <figcaption><span>Oficiální trailer</span><a href="https://www.youtube.com/watch?v=OQavP6U5x6s" target="_blank" rel="noopener">Otevřít na YouTube ↗</a></figcaption>
+    </figure>
+
     <div class="hub-h">Rozcestník – kam dál?</div>
     <nav class="hub" aria-label="Rozcestník">
       <a href="#start" style="--c: var(--green)"><span class="ht">Jsem tu poprvé <small>02</small></span><p>Nainstaluj hru a začni hrát ve čtyřech krocích.</p></a>
@@ -722,6 +744,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
     <section id="instalace">
       <h2><span class="n">04</span>Instalace hry</h2>
       <div class="box tip"><b class="t">Stažení launcheru</b>Stáhnout <a class="dl" href="https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe" download>AnomalyLauncher.exe</a> – jeden soubor, nic se neinstaluje. Dej ho tam, kde ho najdeš (třeba na plochu), a spusť.</div>
+      <div class="box warn"><b class="t">Antivirus hlásí virus?</b>Je to falešný poplach. Launcher nemá placený podpisový certifikát a dělá věci, kterým antiviry u neznámých programů nevěří: stahuje soubory, rozbaluje archivy a sám se aktualizuje. Stahuj ho jen z tohoto webu (GitHub) a případně ho přidej do výjimek antiviru.</div>
       <p>Launcher stáhne a nainstaluje všechno sám: hru Anomaly, modpack Re:Zone s Mod Organizerem 2, opravené spouštěcí soubory a doporučené nastavení.</p>
       <h3>Jak na to</h3>
       <ol class="steps">
@@ -1428,7 +1451,7 @@ table.dbt tr[data-item]:hover td { background: #1a1a1a; }
         <dd>Zavři Mod Organizer 2 i hru a akci zopakuj.</dd>
 
         <dt>Antivirus hlásí launcher</dt>
-        <dd>Falešný poplach – launcher stahuje a rozbaluje soubory a sám se aktualizuje, což některé antiviry podezírají. Přidej ho do výjimek a stahuj ho jen z tohoto webu.</dd>
+        <dd>Falešný poplach – launcher nemá placený podpisový certifikát, stahuje a rozbaluje soubory a sám se aktualizuje, což některé antiviry podezírají. Přidej ho do výjimek a stahuj ho jen z tohoto webu.</dd>
 
         <dt>Přidal jsem mod ručně a nevidím ho</dt>
         <dd>Launcher ho najde sám, stačí chvilku počkat nebo přepnout stránku. Objeví se pod <i>Custom addons HERE!</i></dd>
@@ -2911,6 +2934,15 @@ document.addEventListener('click', function (e) { if (!e.target.closest('.ab-sea
 })();
 route();
 })();
+</script>
+<script>
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('.tr-play'); if (!b) return;
+  var f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + b.dataset.yt + '?autoplay=1&rel=0';
+  f.title = 'Trailer Re:Zone'; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+  b.replaceWith(f);
+});
 </script>
 </body>
 </html>
