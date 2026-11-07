@@ -487,7 +487,7 @@
       "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grass-and-trees-by-panceride-v10",
       "image": "https://media.moddb.com/images/members/5/4594/4593768/profile/S.t.a.l.k.e.r._-_Anomaly_Screens.33.jpg",
       "description": "Nové textury trávy, stromů a keřů v celé Zóně. Každá lokace vypadá jinak a čím hlouběji do Zóny, tím je tráva sušší; kůra stromů z ATO s ladícími větvemi, přepracovaný Rudý les. Na výkon skoro nemá vliv.\n\nV load orderu musí být za SSS a ATO (vyšší priorita). \nDoporučené hodnoty v konzoli: \nr__detail_density 0.28\nr__detail_radius 210\nr__detail_height 0.8\n\nStahuje se z Google Drive modpacku; originál na ModDB.",
-      "priority": 216,
+      "priority": 280,
       "category": "Vegetace",
       "group": "Vegetace"
     },
@@ -498,7 +498,7 @@
       "link": "https://www.moddb.com/mods/stalker-anomaly/addons/gardener-of-the-zone",
       "image": "https://i.imgur.com/6YrilEW.jpg",
       "description": "Přepracovaná tráva, stromy a keře na většině map ve stylu Misery - pochmurnější, odumřelá vegetace, na jihu Zóny realističtější. Podporuje i mapy Anthology. Textury trávy nejsou ve 2K, takže výkon téměř nezatíží.\n\nDoporučené hodnoty v konzoli (víc vypadá chaoticky): \nr__detail_density 0.46\nr__detail_height 1.2\nr__detail_radius 130.\nHodí se k MBTT, ATO a Screen Space Shaders.",
-      "priority": 216,
+      "priority": 280,
       "category": "Vegetace",
       "group": "Vegetace",
       "requires": [
@@ -515,7 +515,7 @@
       "url": "https://www.moddb.com/mods/stalker-anomaly/addons/grizzlys-grass-tweaks",
       "category": "Vegetace",
       "group": "Vegetace",
-      "priority": 216,
+      "priority": 280,
       "requires": [
         "Vasgen Grizzly CCon Patch"
       ],
@@ -531,7 +531,7 @@
       "url": "https://www.moddb.com/mods/stalker-anomaly/addons/ccon-grass-n-trees",
       "category": "Vegetace",
       "group": "Vegetace",
-      "priority": 255,
+      "priority": 280,
       "image": "https://imgur.com/qxT9NrR",
       "file": "CCon_0.71_Fomod.7z",
       "size": 3555245227,
@@ -547,7 +547,7 @@
       "hidden": true,
       "description": "Patch pro C-Con Grass & Trees v ReZone. Stahuje a zapíná se automaticky spolu s C-Con, v load orderu hned pod ním.",
       "url": "https://drive.google.com/file/d/1NxvaZ69c9CKKLWEE72LxlpoqtD8JH_K4/view?usp=drive_link",
-      "priority": 256
+      "priority": 281
     },
     {
       "name": "Vasgen Grizzly CCon Patch",
@@ -555,7 +555,8 @@
       "author": "Vasgen",
       "hidden": true,
       "description": "Patch pro Grizzly's Grass Tweaks (C-Con) v ReZone. Stahuje a zapíná se automaticky spolu s ním, v load orderu hned pod ním.",
-      "url": "https://drive.google.com/file/d/1WWSVlGvtdv11bOtxusNPYvx4q79iS4In/view?usp=drive_link"
+      "url": "https://drive.google.com/file/d/1WWSVlGvtdv11bOtxusNPYvx4q79iS4In/view?usp=drive_link",
+      "priority": 281
     },
     {
       "name": "Vasgen GOTZ Patch",
@@ -563,7 +564,8 @@
       "author": "Vasgen",
       "hidden": true,
       "description": "Patch pro Gardener of the Zone v ReZone. Stahuje a zapíná se jen spolu s Gardener of the Zone, v load orderu hned pod ním.",
-      "url": "https://drive.google.com/file/d/18rr3hXLMRetgiVBcj6-WAhmfGYPyV_qW/view?usp=drive_link"
+      "url": "https://drive.google.com/file/d/18rr3hXLMRetgiVBcj6-WAhmfGYPyV_qW/view?usp=drive_link",
+      "priority": 281
     },
     {
       "name": "Stalker Trilogy Compat Patch",
