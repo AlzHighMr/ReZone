@@ -966,6 +966,30 @@
 	<string id="ui_mcm_rz_loot_oth_n_desc">
 		<text>How many at once when they drop.</text>
 	</string>
+	<string id="ui_mcm_rz_trade_buy_cond">
+		<text>Minimum condition of items to sell (%)</text>
+	</string>
+	<string id="ui_mcm_rz_trade_buy_cond_desc">
+		<text>Minimum condition at which traders buy weapons and gear. Replaces Anomaly's Gameplay > Economy > minimum item condition, which resets to 0 in every save - ReZone sets it to this value after loading. 0 = keep the save's value.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_meds">
+		<text>Meds and drugs</text>
+	</string>
+	<string id="ui_mcm_rz_meds_title">
+		<text>Meds and drugs limit</text>
+	</string>
+	<string id="ui_mcm_rz_meds_info">
+		<text>Anomaly won't let you use a med or drug while an earlier one with a stronger effect is still active (the 'stronger effect' message). This turns it off without editing itms_manager.script.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit">
+		<text>Disable meds and drugs limit</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit_desc">
+		<text>Meds, stimulants and drugs can be used any time, even while another is active.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_note">
+		<text>Other conditions stay: missing tool, anabiotic in combat, EFTH 'nothing to treat'. Applies right away.</text>
+	</string>
 	<string id="ui_mcm_menu_rz_vision">
 		<text>NPC vision</text>
 	</string>

@@ -1,0 +1,51 @@
+--[[
+	ReZone MCM - limit leku a drog (vanilla itms_manager)
+
+	Vanilla nedovoli pouzit lek / drogu, kdyz jeste pusobi predchozi s "silnejsim ucinkem"
+	(hlaska st_itm_manager_greater_effect). Pamatuje si posledni lek v lokalni tabulce old_booster,
+	kterou plni pres globalni copy_table(old_booster, curr_booster).
+
+	Kdyz je volba zapnuta, copy_table tenhle jediny zapis (tabulka s poli section, period, pwr, psy,
+	bld, hp, rad) preskoci -> old_booster zustane prazdny a kontrola se nikdy nespusti.
+	itms_manager.script se neprepisuje, takze to funguje s vanilla i upravenou verzi a s ostatnimi mody.
+	Ostatni podminky zustavaji (chybejici nastroj, anabiotikum v boji, EFTH "neni co osetrit").
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_meds"
+
+local no_limit = true
+local BOOSTER_KEYS = { section = "string", period = "number", pwr = "number", psy = "number", bld = "number", hp = "number", rad = "number" }
+
+local function is_booster_record(t)
+	if type(t) ~= "table" then return false end
+	local n = 0
+	for k, v in pairs(t) do
+		local want = BOOSTER_KEYS[k]
+		if not want or type(v) ~= want then return false end
+		n = n + 1
+	end
+	return n == 7
+end
+
+local patched = false
+local function patch()
+	if patched or type(_G.copy_table) ~= "function" then return end
+	patched = true
+	local orig = _G.copy_table
+	_G.copy_table = function(dest, src, ...)
+		if no_limit and is_booster_record(src) then return end
+		return orig(dest, src, ...)
+	end
+end
+
+function load()
+	no_limit = core.page(PAGE)("no_limit") ~= false
+	core.log("leky: limit leku a drog %s", no_limit and "vypnuty" or "vanilla")
+end
+
+function on_game_start()
+	patch()
+	core.on_change(load)
+	load()
+end

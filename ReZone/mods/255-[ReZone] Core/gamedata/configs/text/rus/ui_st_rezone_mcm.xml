@@ -966,6 +966,30 @@
 	<string id="ui_mcm_rz_loot_oth_n_desc">
 		<text>Сколько штук, если выпадут.</text>
 	</string>
+	<string id="ui_mcm_rz_trade_buy_cond">
+		<text>Минимальное состояние вещей на продажу (%)</text>
+	</string>
+	<string id="ui_mcm_rz_trade_buy_cond_desc">
+		<text>С какого состояния торговцы покупают оружие и снаряжение. Заменяет опцию Anomaly Геймплей > Экономика, которая в каждом сохранении сбрасывается на 0 - ReZone ставит это значение после загрузки. 0 = оставить значение сохранения.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_meds">
+		<text>Медикаменты</text>
+	</string>
+	<string id="ui_mcm_rz_meds_title">
+		<text>Ограничение медикаментов</text>
+	</string>
+	<string id="ui_mcm_rz_meds_info">
+		<text>Anomaly не даёт использовать лекарство, пока действует предыдущее с более сильным эффектом. Здесь это можно отключить без правки itms_manager.script.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit">
+		<text>Отключить ограничение медикаментов</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit_desc">
+		<text>Лекарства, стимуляторы и наркотики можно применять в любой момент, даже если действует другое.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_note">
+		<text>Остальные условия остаются: нет инструмента, анабиотик в бою, EFTH «нечего лечить». Действует сразу.</text>
+	</string>
 	<string id="ui_mcm_menu_rz_vision">
 		<text>Зрение NPC</text>
 	</string>

@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.21"
+VERSION = "2.5.23"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -59,6 +59,17 @@ local function page(id, gr) return { id = id, sh = true, gr = gr } end
 ------------------------------------------------------------
 -- GAMEPLAY
 ------------------------------------------------------------
+-- Limit leku a drog (rezone_mod_meds)
+local function gp_meds()
+	return page("rz_meds", {
+		slide("ui_mcm_rz_meds_title"),
+		desc("d", "ui_mcm_rz_meds_info"),
+		line("l1"),
+		check("no_limit", true, "rz_meds_no_limit"),
+		desc("n", "ui_mcm_rz_meds_note", CLR_NOTE),
+	})
+end
+
 -- Zrak NPC pres vegetaci (rezone_mod_vision)
 local function gp_vision()
 	return page("rz_vision", {
@@ -115,6 +126,8 @@ local function gp_trade()
 		check("no_buy", true, "rz_trade_no_buy"),
 		check("melee", false, "rz_trade_melee"),
 		desc("n", "ui_mcm_rz_trade_note", CLR_NOTE),
+		line("lb"),
+		track("buy_cond", 60, 0, 100, 1, "rz_trade_buy_cond"),
 		line("l3"),
 		desc("dh", "ui_mcm_rz_trade_helmets"),
 		check("helm_no_sell", false, "rz_trade_helm_no_sell"),
@@ -466,6 +479,7 @@ function build_tree()
 	gp[#gp + 1] = gp_ballistics()
 	gp[#gp + 1] = gp_craft()
 	gp[#gp + 1] = gp_vision()
+	gp[#gp + 1] = gp_meds()
 	gp[#gp + 1] = L.build_page(TAB_GP)
 	return {
 		id = ROOT,

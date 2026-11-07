@@ -91,8 +91,24 @@ local function patch()
 	core.log("obchod: patch nasazen")
 end
 
+-- Minimalni stav veci, ktere obchodnik vykoupi (Anomaly: Gameplay > Ekonomika > condition_buy_override).
+-- Anomaly ho uklada do kazdeho savu zvlast a vychozi je 0 (= hodnota z obchodniho souboru).
+-- ReZone ho po nacteni savu a po zmene v MCM nastavi na hodnotu z MCM (0 = nechat, jak je v savu).
+local buy_cond = 60
+local function apply_buy_cond()
+	if not (buy_cond and buy_cond > 0) then return end
+	local ok, st = pcall(alife_storage_manager.get_state)
+	if not (ok and st) then return end
+	if st.trader_buy_condition_override ~= buy_cond then
+		st.trader_buy_condition_override = buy_cond
+		core.log("obchod: minimalni stav vykupovanych veci %d %%", buy_cond)
+	end
+end
+
 function load()
 	local g = core.page(PAGE)
+	buy_cond = math.floor((tonumber(g("buy_cond")) or 60) + 0.5)
+	if db.actor then apply_buy_cond() end
 	on      = g("gamma") == true
 	no_sell = g("no_sell") ~= false
 	no_buy  = g("no_buy") ~= false
@@ -107,4 +123,5 @@ function on_game_start()
 	core.on_change(load)
 	load()
 	RegisterScriptCallback("actor_on_first_update", patch)
+	RegisterScriptCallback("actor_on_first_update", apply_buy_cond)
 end

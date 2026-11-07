@@ -966,6 +966,30 @@
 	<string id="ui_mcm_rz_loot_oth_n_desc">
 		<text>Kolik kusù najednou, když padnou.</text>
 	</string>
+	<string id="ui_mcm_rz_trade_buy_cond">
+		<text>Minimální stav vìcí k prodeji (%)</text>
+	</string>
+	<string id="ui_mcm_rz_trade_buy_cond_desc">
+		<text>Od jakého stavu obchodníci vykoupí zbranì a výstroj. Nahrazuje volbu Anomaly Gameplay › Ekonomika › Minimální stav položek na prodej, která se v každém savu resetuje na 0 – ReZone ji po naètení savu nastaví na tuhle hodnotu. 0 = nechat hodnotu ze savu.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_meds">
+		<text>Léky a drogy</text>
+	</string>
+	<string id="ui_mcm_rz_meds_title">
+		<text>Limit lékù a drog</text>
+	</string>
+	<string id="ui_mcm_rz_meds_info">
+		<text>Anomaly nedovolí použít lék nebo drogu, dokud pùsobí pøedchozí se silnìjším úèinkem (hláška „…má silnìjší úèinek“). Tady se to dá vypnout bez úpravy itms_manager.script.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit">
+		<text>Vypnout limit lékù a drog</text>
+	</string>
+	<string id="ui_mcm_rz_meds_no_limit_desc">
+		<text>Léky, stimulanty a drogy jdou použít kdykoli, i když ještì pùsobí jiný.</text>
+	</string>
+	<string id="ui_mcm_rz_meds_note">
+		<text>Ostatní podmínky zùstávají: chybìjící nástroj, anabiotikum v boji, EFTH „není co ošetøit“. Platí hned.</text>
+	</string>
 	<string id="ui_mcm_menu_rz_vision">
 		<text>Zrak NPC</text>
 	</string>
