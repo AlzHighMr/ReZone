@@ -653,7 +653,7 @@ function clPage(md) {
     { k: 'category', label: 'Kategorie', type: 'cat', half: true, w: '28%', tip: 'Záložka ve Volitelných modech. Vegetace, Terén a Textury = stránka Textury a vegetace.' },
     { k: 'priority', label: 'Priorita', type: 'number', half: true, w: '28%', tip: 'Jako číslo v MO2: větší = níž = vyšší priorita (vyhraje konflikty). Prázdné = podle čísla v názvu složky.' },
     { k: 'season', label: 'Sezóna (už se nepoužívá)', type: 'select', opts: SEASONS, half: true, w: '28%', show: hasSeason, tip: 'Sezóny nahradila kategorie Vegetace – nastav „— žádná —“ a kategorii Vegetace.' },
-    { k: 'description', label: 'Popis', type: 'area', tip: 'Prázdný řádek = nový odstavec.' },
+    { k: 'description', label: 'Popis', type: 'area', tip: 'Prázdný řádek = nový odstavec. Které mody balíčku a patche se stáhnou, připíše launcher pod popis sám.' },
     { k: 'image', label: 'Obrázek', type: 'url', tip: 'Přímý odkaz na obrázek (ModDB, Discord, GitHub…).' },
     { k: 'url', label: 'Odkaz ke stažení', type: 'url', tip: 'Google Drive (soubor nebo složka), ModDB nebo přímý odkaz. Prázdné = archiv se hledá ve složkách z Odkazů podle názvu složky.' },
     { k: 'link', label: 'Stránka modu', type: 'url', tip: 'ModDB, GitHub… – otevře se z okna INFO v launcheru.' },
@@ -973,7 +973,22 @@ function clPage(md) {
       if (img && isUrl(img)) box.appendChild(el('img', { src: img, alt: '', loading: 'lazy', referrerpolicy: 'no-referrer' }));
       var d = String(m.description || '');
       box.appendChild(el('div', { class: 'pd', text: d ? (d.length > 420 ? d.slice(0, 420) + '…' : d) : 'Bez popisu.' }));
+      var dl = dlText(m);
+      if (dl) box.appendChild(el('div', { class: 'pd', style: 'color:var(--amber);margin-top:6px', text: dl }));
     };
+    // stejne jako launcher: co vsechno se stahne (mody balicku + patche z „Vyžaduje patche“)
+    function dlText(m) {
+      var b = String(m.bundle || '').trim();
+      var mem = b ? OPT.items.filter(function (x) { return String(x.bundle || '').trim() === b; }) : [m];
+      mem = mem.slice().sort(function (x, y) { return (x.priority == null ? 1e15 : x.priority) - (y.priority == null ? 1e15 : y.priority); });
+      var tt = function (n) { var f = OPT.items.filter(function (x) { return key(x.name) === key(n); })[0]; return f ? (f.title || f.name) : n; };
+      var pat = [];
+      mem.forEach(function (x) { (x.requires || []).forEach(function (r) { r = String(r).trim(); if (!r || mem.some(function (y) { return key(y.name) === key(r); })) return; var t = tt(r); if (pat.indexOf(t) < 0) pat.push(t); }); });
+      var out = [];
+      if (mem.length > 1) out.push((mem.length <= 4 ? 'Stáhnou se ' + mem.length + ' mody' : 'Stáhne se ' + mem.length + ' modů') + ': ' + mem.map(function (x) { return x.title || x.name; }).join(', ') + '.');
+      if (pat.length) out.push((mem.length > 1 ? 'Spolu s nimi ' : 'Spolu s ním ') + (pat.length === 1 ? 'se stáhne patch' : pat.length <= 4 ? 'se stáhnou ' + pat.length + ' patche' : 'se stáhne ' + pat.length + ' patchů') + ': ' + pat.join(', ') + '.');
+      return out.join(' ');
+    }
     OPT.ed = listEditor({
       fk: 'opt', items: OPT.items, fields: MOD_FIELDS, listEl: $('optList'), formEl: $('optForm'), countEl: $('optCount'),
       nameLabel: 'Název složky', nameTip: 'Přesně jako složka (archiv) na Google Drive a v MO2. Podle něj launcher spáruje archiv s popisem.',
