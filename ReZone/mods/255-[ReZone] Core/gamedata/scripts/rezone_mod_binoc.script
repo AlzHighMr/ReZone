@@ -1,0 +1,108 @@
+--[[
+	ReZone MCM - detekce cilu v dalekohledu (Ostatni > Dalekohled)
+
+	Engine ma dve cesty, jak dalekohled / zamerovac oramuje a hlasi postavy a mutanty:
+	  - vision_present = true        (dalekohled wpn_binoc, wpn_binoc_inv a kopie z modu)
+	  - scope_alive_detector = <sekce> (upgrade "automaticke zachyceni cilu", nektere zamerovace)
+	Vypnuto: vsem sekcim, ktere to maji, se v pameti hry nastavi vision_present = false
+	a scope_alive_detector prazdny. Puvodni hodnoty se pamatuji (rz_orig_*) a pri zapnuti vrati.
+	Soubory hry se nemeni. Engine to cte pri nacteni predmetu -> projevi se po nacteni savu
+	(nebo u nove ziskaneho dalekohledu). Vyzaduje modded exes (ini_sys:w_string).
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_binoc"
+
+local EMPTY = "<rz_empty>"
+local KEYS = {
+	{ key = "vision_present", off = "false", is_on = function(v) return v == "true" or v == "1" or v == "on" or v == "yes" end },
+	{ key = "scope_alive_detector", off = "", is_on = function(v) return v ~= "" end },
+}
+
+local enabled = true	-- true = vanilla (detekce zapnuta)
+local touched = nil		-- { [sec] = true } sekce, ktere jsme zmenili v tomto behu hry
+local warned = false
+
+local function can_write()
+	return ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names and ini_sys.section_for_each and true or false
+end
+
+local function write(sec, key, v)
+	local ok, err = pcall(ini_sys.w_string, ini_sys, sec, key, v, "")
+	if not ok then core.warn("dalekohled: zapis [%s] %s: %s", sec, key, tostring(err)) end
+	return ok
+end
+
+local function read(sec, key)
+	if not ini_sys:line_exist(sec, key) then return nil end
+	local v = string.lower(ini_sys:r_string_ex(sec, key) or "")
+	return (v:gsub("^%s+", ""):gsub("%s+$", ""))
+end
+
+local function disable_all()
+	touched = touched or {}
+	local n = 0
+	-- nejdriv sebrat, pak zapisovat (nemenit ini behem prochazeni)
+	local todo = {}
+	ini_sys:section_for_each(function(sec)
+		for _, k in ipairs(KEYS) do
+			local v = read(sec, k.key)
+			if v and k.is_on(v) then todo[#todo + 1] = { sec, k } end
+		end
+	end)
+	for _, t in ipairs(todo) do
+		local sec, k = t[1], t[2]
+		local okey = "rz_orig_" .. k.key
+		if not ini_sys:line_exist(sec, okey) then
+			write(sec, okey, ini_sys:r_string_ex(sec, k.key) or EMPTY)
+		end
+		write(sec, k.key, k.off)
+		touched[sec] = true
+		n = n + 1
+	end
+	core.log("dalekohled: detekce cilu vypnuta (%d hodnot)", n)
+end
+
+local function restore_all()
+	if not touched then return end
+	for sec in pairs(touched) do
+		for _, k in ipairs(KEYS) do
+			local okey = "rz_orig_" .. k.key
+			if ini_sys:line_exist(sec, okey) then
+				local ov = ini_sys:r_string_ex(sec, okey) or EMPTY
+				write(sec, k.key, ov == EMPTY and "" or ov)
+			end
+		end
+	end
+	touched = nil
+	core.log("dalekohled: detekce cilu vracena (vanilla)")
+end
+
+local function apply()
+	if not can_write() then
+		if not enabled and not warned then
+			warned = true
+			core.warn("dalekohled: tato verze exe neumi menit nastaveni za behu (chybi modded exes)")
+		end
+		return
+	end
+	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
+	local ok, err = pcall(function()
+		if enabled then restore_all() else disable_all() end
+	end)
+	ini_sys:set_override_names(false)
+	ini_sys:set_readonly(true)
+	if not ok then core.warn("dalekohled: %s", tostring(err)) end
+end
+
+function load()
+	local v = core.page(PAGE)("detect")
+	enabled = (v ~= false)
+	apply()
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()	-- hned pri startu, aby se dalekohledy nacetly uz s novou hodnotou
+end

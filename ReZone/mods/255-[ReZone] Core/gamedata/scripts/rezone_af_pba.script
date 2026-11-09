@@ -49,9 +49,9 @@ function Inject()
 			end
 			add(top)
 			for _, t in ipairs(BREED_TYPES) do
-				for lv = 1, 3 do add(top .. "_brd_" .. t .. lv) end
+				for lv = 1, 4 do add(top .. "_brd_" .. t .. lv) end	-- rad/cw/reg a T4 = aliasy pro stare savy
 			end
-			for _, m in ipairs(f.members) do add(m .. "_brd_tier3") end
+			for _, m in ipairs(f.members) do add(m .. "_brd_tier3"); add(m .. "_brd_tier4") end
 		else
 			if rezone_core and rezone_core.DEBUG then printf("! ReZone Artefacts: PBA perk %s not found", f.perk) end
 		end
@@ -67,7 +67,7 @@ function GetPerk(sec)
 		local top = f.members[#f.members]
 		if (sec == top) or (string.find(sec, "^" .. top .. "_brd_")) then return f.perk end
 		for _, m in ipairs(f.members) do
-			if (sec == m .. "_brd_tier3") then return f.perk end
+			if (sec == m .. "_brd_tier3") or (sec == m .. "_brd_tier4") then return f.perk end
 		end
 	end
 end

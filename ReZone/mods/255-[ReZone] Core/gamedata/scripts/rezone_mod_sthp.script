@@ -1,0 +1,58 @@
+--[[
+	ReZone MCM - odolnost stalkeru podle hodnosti (Zdravi > Odolnost stalkeru)
+	Stejne jako u mutantu: prichozi poskozeni NPC se deli nasobicem pro jeho hodnost
+	(2.0 = vydrzi dvakrat vic, 0.5 = polovinu). Plati pro vsechny zasahy (hrac, NPC, mutanti,
+	anomalie, granaty), hned i pro NPC ve hre, nic se neuklada do savu.
+	Skriptove "smrtici" zasahy jinych modu (tichy kill, zabiti skriptem) se nemeni.
+	Vypnuto nebo vse na 1 = handler se odregistruje.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_sthp"
+local EPS = 0.0001
+local LETHAL = 50		-- vetsi sila = skriptove zabiti, nechat byt
+
+RANKS = { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
+DEFAULTS = { novice = 1, trainee = 1, experienced = 1, professional = 1, veteran = 1, expert = 1, master = 1, legend = 1 }
+
+local by_rank = {}
+local registered = false
+
+local function npc_on_before_hit(npc, shit, bone_id, flags)
+	if not (shit and shit.power and shit.power > 0 and shit.power < LETHAL) then return end
+	if flags and flags.ret_value == false then return end
+	local r = ranks and ranks.get_obj_rank_name and ranks.get_obj_rank_name(npc)
+	local m = r and by_rank[r]
+	if m and math.abs(m - 1) > EPS then
+		shit.power = shit.power / m
+	end
+end
+
+local function set_registered(on)
+	if on == registered then return end
+	registered = on
+	if on then
+		RegisterScriptCallback("npc_on_before_hit", npc_on_before_hit)
+	else
+		UnregisterScriptCallback("npc_on_before_hit", npc_on_before_hit)
+	end
+	core.log("odolnost stalkeru: %s", on and "zapnuto" or "vypnuto")
+end
+
+function load()
+	local g = core.page(PAGE)
+	local all = tonumber(g("all")) or 1
+	local changed = false
+	by_rank = {}
+	for _, r in ipairs(RANKS) do
+		local m = math.max(0.05, (tonumber(g(r)) or 1) * all)
+		by_rank[r] = m
+		if math.abs(m - 1) > EPS then changed = true end
+	end
+	set_registered(g("enabled") == true and changed)
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

@@ -1395,6 +1395,144 @@
 	<string id="ui_mcm_rz_sp_rs_fur">
 		<text>Chlupáè (obr)</text>
 	</string>
+	<string id="ui_mcm_menu_rz_needs">
+		<text>Hlad, žízeò a únava</text>
+	</string>
+	<string id="ui_mcm_rz_needs_title">
+		<text>Hlad, žízeò a únava</text>
+	</string>
+	<string id="ui_mcm_rz_needs_info">
+		<text>Jak rychle pøibývá hlad, žízeò a únava. 1 = vanilla Anomaly, 0.5 = dvakrát pomaleji, 2 = dvakrát rychleji, 0 = vùbec nepøibývá. Jídlo, pití, spánek a energetické nápoje fungují dál stejnì.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger">
+		<text>Hlad</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger_desc">
+		<text>Jak rychle ubývá sytost (u EFTH energie).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst">
+		<text>Žízeò</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst_desc">
+		<text>Jak rychle pøibývá žízeò, i bìhem spánku (u EFTH hydratace).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep">
+		<text>Únava</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep_desc">
+		<text>Jak rychle pøibývá potøeba spát. Kolik únavy spánek odbourá, zùstává stejné.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_note">
+		<text>Platí hned. Žízeò a únava fungují, jen když jsou zapnuté v Možnosti > Gameplay. Soubory hry se nemìní.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_sthp">
+		<text>Odolnost stalkerù</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_title">
+		<text>Odolnost stalkerù podle hodnosti</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_info">
+		<text>Kolik stalker vydrží podle své hodnosti. 1 = vanilla, 2 = vydrží dvakrát víc, 0.5 = polovinu. Platí na všechno poškození (hráè, NPC, mutanti, anomálie, granáty) a hned i pro NPC ve høe. Brnìní a zásahy do hlavy fungují dál stejnì – hodnota je násobek navíc.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled">
+		<text>Zapnout odolnost stalkerù</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled_desc">
+		<text>Vypnuto = vanilla Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all">
+		<text>Všichni stalkeøi</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice">
+		<text>Nováèek</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee">
+		<text>Uèeò</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced">
+		<text>Zkušený</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional">
+		<text>Profesionál</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran">
+		<text>Veterán</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert">
+		<text>Expert</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master">
+		<text>Mistr</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend">
+		<text>Legenda</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_note">
+		<text>Výsledek = hodnost x Všichni stalkeøi. Skriptová zabití jiných modù (tiché zabití, pøíbìh) se nemìní. Soubory hry se nemìní.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_binoc">
+		<text>Dalekohled</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_title">
+		<text>Detekce cílù v dalekohledu</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_info">
+		<text>Dalekohled (a zamìøovaèe s upgradem „automatické zachycení cílù“) orámuje stalkery a mutanty a pozná nepøátele. Tady se to dá vypnout – pak musíš cíle hledat jen oèima.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect">
+		<text>Detekce cílù v dalekohledu</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect_desc">
+		<text>Zapnuto = vanilla. Vypnuto = dalekohled jen pøibližuje.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_note">
+		<text>Projeví se po naètení uložené hry (nebo u novì získaného dalekohledu). Funguje i pro dalekohledy a zamìøovaèe z modù. Vyžaduje modded exes. Soubory hry se nemìní.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice_desc">
+		<text>Kolik vydrží nováèek. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee_desc">
+		<text>Kolik vydrží uèeò. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced_desc">
+		<text>Kolik vydrží zkušený stalker. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional_desc">
+		<text>Kolik vydrží profesionál. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran_desc">
+		<text>Kolik vydrží veterán. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert_desc">
+		<text>Kolik vydrží expert. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master_desc">
+		<text>Kolik vydrží mistr. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend_desc">
+		<text>Kolik vydrží legenda. 1 = vanilla, 2 = dvakrát víc zásahù, 0.5 = polovina. Dostane jen (poškození / tato hodnota). Celkem se ještì násobí volbou Všichni stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all_desc">
+		<text>Násobí všechny hodnosti najednou. Napø. Všichni 2 a Veterán 1.5 = veterán vydrží 3x víc než ve vanille.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pda">
+		<text>PDA</text>
+	</string>
+	<string id="ui_mcm_rz_pda_title">
+		<text>PDA – minimapa</text>
+	</string>
+	<string id="ui_mcm_rz_pda_info">
+		<text>Všechna PDA (1, 2, 3 i PDA z modù) ukazují na minimapì postavy v dosahu – PDA 1 asi 68 m, PDA 2 120 m, PDA 3 240 m. Když nìkdo zemøe, zùstane po nìm šedá teèka. Tady se dají mrtvoly na minimapì skrýt, takže je musíš najít sám.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses">
+		<text>Mrtvoly na minimapì</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_desc">
+		<text>Zapnuto = vanilla (šedé teèky mrtvých). Vypnuto = mrtvoly se na minimapì nezobrazí u žádného PDA. Živé postavy zùstanou.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_note">
+		<text>Projeví se po naètení uložené hry nebo pøechodu do jiné lokace. Soubory hry se nemìní.</text>
+	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Je nainstalovaný Zone Customization Project. Obì nastavení populace by se násobila – používej jen jedno z nich.</text>
 	</string>

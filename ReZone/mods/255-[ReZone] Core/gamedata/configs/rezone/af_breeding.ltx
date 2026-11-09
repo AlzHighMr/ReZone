@@ -3,22 +3,22 @@
 ;
 ;  [breeders]   kdo selektuje, kde stoji, ktere tridy a do jakeho stupne      <- upravuj tady
 ;  [prices]     cena kroku = cena zakladu x mult[stupen] (zaokrouhleno na 100 RU)
-;  [bonus]      sila vylepseni na stupnich T1..T4
+;  [bonus]      sila vylepseni na stupnich T1..T3
 ;  [ladder]     zebricek hodnot podle tieru artefaktu (pro bonusy a prevod SoC artefaktu)
 ;
 ;  Skript cte [breeders] a [prices] za behu - zmena se projevi po nacteni hry.
 ;  Staty vylepsenych artefaktu ([bonus], [ladder], [value]) jsou v items_rezone_breeding.ltx,
 ;  po zmene je pregeneruj:  python tools/gen_breeding.py  (viz README).
 ;
-;  Typy vylepseni: rad = odvod radiace, cw = nosnost, reg = regenerace (zdravi, vydrz;
-;                  s EFT Health System leci casti tela), tier = vyssi stupen artefaktu.
-;  Stupne T1 -> T4: kazdy dalsi jde jen z predchoziho (stejny typ).
+;  Vylepseni: jen vyssi stupen artefaktu (napr. Meduza -> Meduza T1 -> T2 -> T3) - vlastni
+;  efekty artefaktu silnejsi, radiace nizsi. Kazdy stupen jde jen z predchoziho.
+;  (Do 2.5.27 byly i typy rad/cw/reg a T4 - zustaly jen jako aliasy pro stare savy.)
 ; =====================================================================================
 
 ; -------------------------------------------------------------------------------------
 ; Selekcionari. Radek v [breeders] = sekce selekcionare nize.
 ;   classes  = gravi, thermo, chem, electro | all
-;   max_tier = do jakeho stupne umi (1..4)
+;   max_tier = do jakeho stupne umi (1..3)
 ;   spawn    = smart: <smart terrain>              postava se objevi u smartu (na zacatku hry)
 ;              pos: <level>, x, y, z, level_vertex  presna pozice (spawn pri prvnim prichodu na level;
 ;                                                   kdo uz stoji jinde, presune se pri dalsim prichodu)
@@ -66,40 +66,40 @@ spawn     = smart: mil_smart_terrain_7_7
 
 [red_forester_tech]            ; Lesnik, Rudy les
 classes   = all
-max_tier  = 4
+max_tier  = 3
 spawn     = existing
 
 [zat_stalker_breeder]          ; Makoveckij, Skadovsk
 classes   = gravi, electro
-max_tier  = 4
+max_tier  = 3
 spawn     = pos: zaton, 114.681, -7.348, 186.171, 1163606
 
 [jup_stalker_breeder]          ; Brunko, Janov
 classes   = thermo
-max_tier  = 4
+max_tier  = 3
 spawn     = pos: jupiter, -42.184, 3.486, 195.800, 648800
 
 [jup_ecolog_breeder]           ; Bozevskij, bunkr vedcu
 classes   = chem
-max_tier  = 4
+max_tier  = 3
 spawn     = pos: jupiter, -226.522, -3.569, 76.946, 332308
 
 [pri_army_breeder]             ; vojensky vedec, Pripyat
 classes   = all
-max_tier  = 4
+max_tier  = 3
 spawn     = pos: pripyat, 148.838, -0.098, -173.624, 378561
 wait_info = pri_a28_actor_in_zone_stay
 
 ; -------------------------------------------------------------------------------------
 ; Cena selekce = cena zakladniho artefaktu x nasobic stupne (zaokrouhleno na 100 RU), minimum min.
-; Meduza (24 900): T1 12 500, T2 18 700, T3 24 900, T4 37 400
+; Meduza (24 900): T1 12 500, T2 18 700, T3 24 900
 ; -------------------------------------------------------------------------------------
 [prices]
-mult = 0.5, 0.75, 1.0, 1.5
+mult = 0.5, 0.75, 1.0
 min  = 5000
 
 ; -------------------------------------------------------------------------------------
-; Bonus vylepseni = ladder[tier artefaktu] x nasobic stupne (T1, T2, T3, T4).
+; Bonus vylepseni = ladder[tier artefaktu] x nasobic stupne (T1, T2, T3). rad/cw/reg se uz nepouzivaji.
 ;   rad: radiace se SNIZI o nasobek zebricku (T1 = vlastni radiace zmizi, vys = odvadi)
 ;   cw : pridana nosnost     reg: pridane zdravi i vydrz
 ;   tier: vlastni efekty x nasobic, radiace x tier_rad; tier zvyseny jen u plusu, minus zustava
@@ -108,12 +108,12 @@ min  = 5000
 rad      = 1.0, 1.5, 2.0, 2.5
 cw       = 0.33, 0.66, 1.0, 1.33
 reg      = 0.25, 0.5, 0.75, 1.0
-tier     = 1.3, 1.6, 2.0, 2.5
-tier_rad = 0.75, 0.5, 0.25, 0.1
+tier     = 1.3, 1.6, 2.0
+tier_rad = 0.75, 0.5, 0.25
 
 ; prodejni cena vylepseneho artefaktu = cena zakladu x nasobic stupne
 [value]
-mult = 1.25, 1.6, 2.0, 2.6
+mult = 1.25, 1.6, 2.0
 
 ; -------------------------------------------------------------------------------------
 ; Zebricek hodnot podle tieru artefaktu (1..5), odvozeno z Anomaly 1.5.

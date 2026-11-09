@@ -1,0 +1,120 @@
+--[[
+	ReZone MCM - hlad, zizen a unava (jak rychle pribyvaji)
+
+	Hlad:  engine (actor_condition satiety_v). Skript sleduje, o kolik sytost klesla od minule,
+	       a pokles vynasobi koeficientem (vraci / ubira rozdil pres change_satiety). Jidlo,
+	       pripadne skokove zmeny z jinych modu (otrava, EFTH skilly...) se nemeni.
+	Zizen: vanilla actor_status_thirst - up_drink (prirustek kazdych 300 hernich s)
+	       a in_hour (prirustek za hodinu spanku).
+	Unava: vanilla actor_status_sleep - up_sleep (prirustek kazdych 300 hernich s).
+	       Kolik unavy spanek ubere, zustava vanilla.
+
+	Promenne zizne/unavy jsou v Anomaly lokalni: kdyz je nekdo "unlocalizoval" (EFTH up_drink),
+	nastavi se pole modulu, jinak se zmeni pres debug.setupvalue. Soubory hry se nemeni.
+	1 = vanilla, 0 = vubec nepribyva, 2 = dvakrat rychleji.
+--]]
+
+local core = rezone_core
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_needs"
+
+local k_hunger, k_thirst, k_sleep = 1, 1, 1
+
+------------------------------------------------------------
+-- lokalni promenne ciziho modulu
+------------------------------------------------------------
+local function find_upvalue(fn, name)
+	if type(fn) ~= "function" or not (debug and debug.getupvalue) then return nil end
+	local i = 1
+	while true do
+		local n, v = debug.getupvalue(fn, i)
+		if not n then return nil end
+		if n == name then return i, v end
+		i = i + 1
+	end
+end
+
+-- { modul, jmeno, funkce kde se pouziva }
+local VARS = {
+	thirst_step = { "actor_status_thirst", "up_drink", "actor_on_update" },
+	thirst_hour = { "actor_status_thirst", "in_hour", "actor_on_sleep" },
+	sleep_step  = { "actor_status_sleep",  "up_sleep", "actor_on_update" },
+}
+local orig = {}
+
+local function get_var(def)
+	local m = _G[def[1]]
+	if type(m) ~= "table" then return nil end
+	if type(rawget(m, def[2])) == "number" then return rawget(m, def[2]) end
+	local _, v = find_upvalue(m[def[3]], def[2])
+	return type(v) == "number" and v or nil
+end
+
+local function set_var(def, val)
+	local m = _G[def[1]]
+	if type(m) ~= "table" then return false end
+	if type(rawget(m, def[2])) == "number" then
+		m[def[2]] = val
+		return true
+	end
+	local i = find_upvalue(m[def[3]], def[2])
+	if i then
+		debug.setupvalue(m[def[3]], i, val)
+		return true
+	end
+	return false
+end
+
+local function apply_vars()
+	local mul = { thirst_step = k_thirst, thirst_hour = k_thirst, sleep_step = k_sleep }
+	for key, def in pairs(VARS) do
+		if orig[key] == nil then orig[key] = get_var(def) or false end
+		if orig[key] then
+			if not set_var(def, orig[key] * mul[key]) then
+				core.warn("potreby: nelze zmenit %s.%s", def[1], def[2])
+			end
+		else
+			core.log("potreby: %s.%s nenalezeno (jiny mod?)", def[1], def[2])
+		end
+	end
+end
+
+------------------------------------------------------------
+-- hlad
+------------------------------------------------------------
+local prev_sat = nil
+local MAX_STEP = 0.005	-- vetsi skok za jeden update = jidlo / jiny mod, ten se nemeni
+
+local function actor_on_update()
+	if k_hunger == 1 or not db.actor then prev_sat = nil return end
+	local sat = db.actor.satiety
+	if not sat then return end
+	if prev_sat and not get_console_cmd(1, "g_god") then
+		local d = sat - prev_sat
+		if d < 0 and d > -MAX_STEP then
+			db.actor:change_satiety(d * (k_hunger - 1))
+			sat = db.actor.satiety
+		end
+	end
+	prev_sat = sat
+end
+
+local function reset_hunger() prev_sat = nil end
+
+------------------------------------------------------------
+function load()
+	local g = core.page(PAGE)
+	k_hunger = tonumber(g("hunger")) or 1
+	k_thirst = tonumber(g("thirst")) or 1
+	k_sleep  = tonumber(g("sleep")) or 1
+	prev_sat = nil
+	apply_vars()
+	core.log("potreby: hlad x%.2f, zizen x%.2f, unava x%.2f", k_hunger, k_thirst, k_sleep)
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_update", actor_on_update)
+	RegisterScriptCallback("actor_on_first_update", reset_hunger)
+	RegisterScriptCallback("actor_on_sleep", reset_hunger)
+	core.on_change(load)
+	load()
+end

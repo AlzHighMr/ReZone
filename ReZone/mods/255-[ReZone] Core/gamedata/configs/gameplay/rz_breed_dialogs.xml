@@ -89,9 +89,6 @@
             <phrase id="30">
                 <script_text>rezone_af_breed.text_offer</script_text>
                 <next>36</next>
-                <next>31</next>
-                <next>32</next>
-                <next>33</next>
                 <next>34</next>
                 <next>35</next>
                 <next>39</next>
@@ -100,24 +97,6 @@
                 <precondition>rezone_af_breed.can_tier</precondition>
                 <script_text>rezone_af_breed.opt_tier</script_text>
                 <action>rezone_af_breed.breed_tier</action>
-                <next>40</next>
-            </phrase>
-            <phrase id="31">
-                <precondition>rezone_af_breed.can_rad</precondition>
-                <script_text>rezone_af_breed.opt_rad</script_text>
-                <action>rezone_af_breed.breed_rad</action>
-                <next>40</next>
-            </phrase>
-            <phrase id="32">
-                <precondition>rezone_af_breed.can_cw</precondition>
-                <script_text>rezone_af_breed.opt_cw</script_text>
-                <action>rezone_af_breed.breed_cw</action>
-                <next>40</next>
-            </phrase>
-            <phrase id="33">
-                <precondition>rezone_af_breed.can_reg</precondition>
-                <script_text>rezone_af_breed.opt_reg</script_text>
-                <action>rezone_af_breed.breed_reg</action>
                 <next>40</next>
             </phrase>
             <phrase id="34">

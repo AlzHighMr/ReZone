@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.23"
+VERSION = "2.5.28"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -67,6 +67,20 @@ local function gp_meds()
 		line("l1"),
 		check("no_limit", true, "rz_meds_no_limit"),
 		desc("n", "ui_mcm_rz_meds_note", CLR_NOTE),
+	})
+end
+
+-- Hlad, zizen a unava (rezone_mod_needs)
+local function gp_needs()
+	return page("rz_needs", {
+		slide("ui_mcm_rz_needs_title"),
+		desc("d", "ui_mcm_rz_needs_info"),
+		line("l1"),
+		track("hunger", 1, 0, 3, 0.05, "rz_needs_hunger"),
+		track("thirst", 1, 0, 3, 0.05, "rz_needs_thirst"),
+		track("sleep", 1, 0, 3, 0.05, "rz_needs_sleep"),
+		line("l2"),
+		desc("n", "ui_mcm_rz_needs_note", CLR_NOTE),
 	})
 end
 
@@ -358,6 +372,25 @@ local function hp_damage()
 	return page("rz_pdmg", gr)
 end
 
+-- Odolnost stalkeru podle hodnosti (rezone_mod_sthp)
+local function hp_stalkers()
+	local gr = {
+		slide("ui_mcm_rz_sthp_title"),
+		desc("d", "ui_mcm_rz_sthp_info"),
+		line("l1"),
+		check("enabled", false, "rz_sthp_enabled"),
+		track("all", 1, 0.25, 3, 0.05, "rz_sthp_all"),
+		line("l2"),
+	}
+	local R = rezone_mod_sthp and rezone_mod_sthp.RANKS or { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
+	for i = 1, #R do
+		gr[#gr + 1] = track(R[i], 1, 0.25, 4, 0.05, "rz_sthp_" .. R[i])
+	end
+	gr[#gr + 1] = line("l3")
+	gr[#gr + 1] = desc("n", "ui_mcm_rz_sthp_note", CLR_NOTE)
+	return page("rz_sthp", gr)
+end
+
 local function hp_mutants()
 	local gr = {
 		slide("ui_mcm_rz_muthp_title"),
@@ -409,6 +442,28 @@ end
 -- OSTATNI
 ------------------------------------------------------------
 -- Efekty: vypnuti obrazovych efektu (PPE) radiace, poltergeista a controllera (rezone_mod_fx)
+-- Detekce cilu v dalekohledu (rezone_mod_binoc)
+local function ot_binoc()
+	return page("rz_binoc", {
+		slide("ui_mcm_rz_binoc_title"),
+		desc("d", "ui_mcm_rz_binoc_info"),
+		line("l1"),
+		check("detect", true, "rz_binoc_detect"),
+		desc("n", "ui_mcm_rz_binoc_note", CLR_NOTE),
+	})
+end
+
+-- Mrtvoly na minimape (modxml_rezone_pda)
+local function ot_pda()
+	return page("rz_pda", {
+		slide("ui_mcm_rz_pda_title"),
+		desc("d", "ui_mcm_rz_pda_info"),
+		line("l1"),
+		check("corpses", true, "rz_pda_corpses"),
+		desc("n", "ui_mcm_rz_pda_note", CLR_NOTE),
+	})
+end
+
 local function ot_fx()
 	return page("rz_fx", {
 		slide("ui_mcm_rz_fx_title"),
@@ -480,14 +535,15 @@ function build_tree()
 	gp[#gp + 1] = gp_craft()
 	gp[#gp + 1] = gp_vision()
 	gp[#gp + 1] = gp_meds()
+	gp[#gp + 1] = gp_needs()
 	gp[#gp + 1] = L.build_page(TAB_GP)
 	return {
 		id = ROOT,
 		gr = {
 			{ id = TAB_MAIN, gr = { main_master() } },
 			{ id = TAB_GP, gr = gp },
-			{ id = TAB_HP, gr = { hp_damage(), hp_mutants(), hp_mutdmg(), hp_artefacts(), L.build_page(TAB_HP) } },
-			{ id = TAB_OT, gr = { ot_fx(), ot_menu(), L.build_page(TAB_OT), ot_debug() } },
+			{ id = TAB_HP, gr = { hp_damage(), hp_stalkers(), hp_mutants(), hp_mutdmg(), hp_artefacts(), L.build_page(TAB_HP) } },
+			{ id = TAB_OT, gr = { ot_fx(), ot_binoc(), ot_pda(), ot_menu(), L.build_page(TAB_OT), ot_debug() } },
 		},
 	}
 end

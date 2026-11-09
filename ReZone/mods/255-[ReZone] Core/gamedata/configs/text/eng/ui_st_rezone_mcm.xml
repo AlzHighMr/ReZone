@@ -1395,6 +1395,144 @@
 	<string id="ui_mcm_rz_sp_rs_fur">
 		<text>Fur (giant)</text>
 	</string>
+	<string id="ui_mcm_menu_rz_needs">
+		<text>Hunger, thirst and sleep</text>
+	</string>
+	<string id="ui_mcm_rz_needs_title">
+		<text>Hunger, thirst and sleep</text>
+	</string>
+	<string id="ui_mcm_rz_needs_info">
+		<text>How fast hunger, thirst and sleepiness grow. 1 = vanilla Anomaly, 0.5 = twice as slow, 2 = twice as fast, 0 = doesn't grow at all. Food, drinks, sleep and energy drinks work the same as before.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger">
+		<text>Hunger</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger_desc">
+		<text>How fast satiety drops (energy with EFTH).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst">
+		<text>Thirst</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst_desc">
+		<text>How fast thirst grows, also while sleeping (hydration with EFTH).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep">
+		<text>Sleepiness</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep_desc">
+		<text>How fast the need to sleep grows. How much sleep removes stays the same.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_note">
+		<text>Applies right away. Thirst and sleepiness only work when enabled in Options > Gameplay. Game files are not changed.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_sthp">
+		<text>Stalker toughness</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_title">
+		<text>Stalker toughness by rank</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_info">
+		<text>How much a stalker can take depending on his rank. 1 = vanilla, 2 = takes twice as much, 0.5 = half. Applies to all damage (player, NPCs, mutants, anomalies, grenades) and right away to NPCs already in the game. Armor and headshots work the same - the value is an extra multiplier.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled">
+		<text>Enable stalker toughness</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled_desc">
+		<text>Off = vanilla Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all">
+		<text>All stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice">
+		<text>Novice</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee">
+		<text>Trainee</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced">
+		<text>Experienced</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional">
+		<text>Professional</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran">
+		<text>Veteran</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert">
+		<text>Expert</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master">
+		<text>Master</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend">
+		<text>Legend</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_note">
+		<text>Result = rank x All stalkers. Scripted kills from other mods (silent kills, story) are not changed. Game files are not changed.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_binoc">
+		<text>Binoculars</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_title">
+		<text>Target detection in binoculars</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_info">
+		<text>Binoculars (and scopes with the 'auto target capture' upgrade) frame stalkers and mutants and mark enemies. You can turn it off here - then you have to spot targets with your own eyes.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect">
+		<text>Target detection in binoculars</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect_desc">
+		<text>On = vanilla. Off = binoculars only zoom.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_note">
+		<text>Applies after loading a save (or to newly acquired binoculars). Also works for binoculars and scopes from mods. Requires modded exes. Game files are not changed.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice_desc">
+		<text>How much a novice can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee_desc">
+		<text>How much a trainee can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced_desc">
+		<text>How much a experienced stalker can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional_desc">
+		<text>How much a professional can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran_desc">
+		<text>How much a veteran can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert_desc">
+		<text>How much a expert can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master_desc">
+		<text>How much a master can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend_desc">
+		<text>How much a legend can take. 1 = vanilla, 2 = twice as many hits, 0.5 = half. He only gets (damage / this value). The total is also multiplied by All stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all_desc">
+		<text>Multiplies all ranks at once. E.g. All 2 and Veteran 1.5 = a veteran takes 3x more than in vanilla.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pda">
+		<text>PDA</text>
+	</string>
+	<string id="ui_mcm_rz_pda_title">
+		<text>PDA - minimap</text>
+	</string>
+	<string id="ui_mcm_rz_pda_info">
+		<text>All PDAs (1, 2, 3 and PDAs from mods) show characters in range on the minimap - PDA 1 about 68 m, PDA 2 120 m, PDA 3 240 m. When someone dies, a grey dot stays. Here you can hide corpses on the minimap, so you have to find them yourself.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses">
+		<text>Corpses on minimap</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_desc">
+		<text>On = vanilla (grey dots of the dead). Off = corpses are not shown on the minimap with any PDA. Living characters stay.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_note">
+		<text>Applies after loading a save or changing level. Game files are not changed.</text>
+	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Zone Customization Project is installed. Both population settings would stack - use only one of them.</text>
 	</string>

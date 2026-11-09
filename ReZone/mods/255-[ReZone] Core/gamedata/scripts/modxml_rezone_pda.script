@@ -1,0 +1,32 @@
+--[[
+	ReZone - mrtvoly na minimape (ReZone MCM > Ostatni > PDA)
+
+	Kazde PDA (1, 2, 3 i PDA z modu) ukazuje na minimape postavy v dosahu (radius 68 / 120 / 240 m).
+	Kdyz NPC zemre, jeho znacka se zmeni na sedou "deadbody_location" (spot deadbody_mini_spot).
+	Vypnuto: DXML pri nacteni ui\map_spots.xml nastavi deadbody_mini_spot sirku a vysku 0
+	- stejne jako vanilla schovava nepratele (enemy_mini_spot). Zadny soubor se neprepisuje.
+	Engine cte map_spots.xml pri nacteni urovne -> projevi se po nacteni savu / prechodu do jine lokace.
+--]]
+
+local PATH = "rezone/rz_other/rz_pda/corpses"
+local FILES = { ["ui\\map_spots.xml"] = true, ["ui\\map_spots_16.xml"] = true }
+
+local function show_corpses()
+	if not ui_mcm then return true end
+	local ok, v = pcall(ui_mcm.get, PATH)
+	if not ok or v == nil then return true end
+	return v ~= false
+end
+
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		if not FILES[xml_file_name] or show_corpses() then return end
+		local res = xml_obj:query("deadbody_mini_spot")
+		for _, el in ipairs(res or {}) do
+			xml_obj:setElementAttr(el, { width = 0, height = 0 })
+		end
+		if rezone_core and rezone_core.DEBUG then
+			printf("[ReZone PDA] mrtvoly na minimape skryty (%s, %d)", xml_file_name, res and #res or 0)
+		end
+	end)
+end

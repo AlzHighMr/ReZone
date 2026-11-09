@@ -7,8 +7,10 @@
 	Seznam artefaktu: configs\rezone\af_breeding_bases.ltx, staty: items_rezone_breeding*.ltx
 	(oboji generuje tools\gen_breeding.py).
 
-	Selekcionar vylepsi artefakt z inventare hrace:
-	  zaklad -> <art>_brd_<typ>1 (rad / cw / reg / tier) -> 2 -> 3 -> 4
+	Selekcionar vylepsi artefakt z inventare hrace (od 2.5.28 jen stupen, napr. Meduza T1..T3):
+	  zaklad -> <art>_brd_tier1 -> tier2 -> tier3
+	Stare varianty (rad/cw/reg 1-4, tier4) jsou v items_rezone_breeding_zz_legacy.ltx jako aliasy
+	na tier1..3; v inventari hrace se pri nacteni hry vymeni za nove (stav zustava).
 	Stav artefaktu zustava. Artefakty v kontejnerech se nenabizeji.
 	Zadny soubor hry se neprepisuje: dialog, postavy a profily se pridavaji pres DLTX,
 	Lesnikovi se dialog pripoji pres DXML (modxml_rezone).
@@ -17,8 +19,9 @@
 local CFG = "rezone\\af_breeding.ltx"
 local BASES = "rezone\\af_breeding_bases.ltx"
 local SLOTS = 10
-local MAX_LVL = 4
-local TYPES = { "rad", "cw", "reg", "tier" }
+local MAX_LVL = 3
+local TYPES = { "tier" }
+local OLD_TYPES = { "rad", "cw", "reg" }	-- uz se nenabizi (dialog starsi verze je muze volat)
 local FLAG = "sgmb_spawned_"		-- stejny jako puvodni SGM Selekce: nic se nespawnuje dvakrat
 
 local bases, breeders, order, price_mult, price_min
@@ -79,7 +82,44 @@ function parse(sec)
 	load()
 	if bases[sec] then return sec, nil, 0 end
 	local b, t, l = string.match(sec, "^(.+)_brd_(%a+)(%d)$")
-	if b and bases[b] then return b, t, tonumber(l) end
+	if b and bases[b] then
+		l = tonumber(l)
+		if t ~= "tier" or l > MAX_LVL then return b, "tier", math.min(l, MAX_LVL), true end	-- stara varianta
+		return b, t, l
+	end
+end
+
+-- stara varianta (i v kontejneru) -> nova sekce tier, jinak nil
+local CONTS = { "lead_box", "af_iam", "af_aac", "af_aam" }
+function legacy_target(sec)
+	load()
+	local cont = ""
+	for _, c in ipairs(CONTS) do
+		local suf = "_" .. c
+		if sec:sub(-#suf) == suf then cont, sec = suf, sec:sub(1, -#suf - 1) break end
+	end
+	local b, t, l = string.match(sec, "^(.+)_brd_(%a+)(%d)$")
+	if not (b and bases[b]) then return end
+	l = tonumber(l)
+	if t == "tier" and l <= MAX_LVL then return end
+	local new = b .. "_brd_tier" .. math.min(l, MAX_LVL) .. cont
+	return ini_sys:section_exist(new) and new or nil
+end
+
+-- vymena starych variant v inventari hrace
+local function convert_inventory()
+	if not db.actor then return end
+	local todo = {}
+	db.actor:iterate_inventory(function(_, item)
+		local new = legacy_target(item:section())
+		if new then todo[#todo + 1] = { item = item, new = new } end
+	end, db.actor)
+	for _, t in ipairs(todo) do
+		local cond = t.item:condition()
+		log("stara varianta %s -> %s", t.item:section(), t.new)
+		alife_release_id(t.item:id())
+		alife_create_item(t.new, db.actor, { cond = cond })
+	end
 end
 
 function price(base, lvl)
@@ -182,7 +222,7 @@ end
 
 function can_next()
 	return sel_valid() and sel.lvl > 0 and sel.lvl < limit()
-		and ini_sys:section_exist(sel.base .. "_brd_" .. sel.typ .. (sel.lvl + 1))
+		and ini_sys:section_exist(sel.base .. "_brd_tier" .. (sel.lvl + 1))
 		and db.actor:money() >= price(sel.base, sel.lvl + 1)
 end
 
@@ -202,7 +242,7 @@ local function breed(a, b, typ)
 	if not sel_valid() then return end
 	local npc = dialogs.who_is_npc(a, b)
 	local lvl = sel.lvl + 1
-	typ = typ or sel.typ
+	typ = "tier"
 	local new_sec = sel.base .. "_brd_" .. typ .. lvl
 	if not ini_sys:section_exist(new_sec) then
 		warn("sekce %s neexistuje (spustit tools\\gen_breeding.py)", new_sec)
@@ -229,6 +269,11 @@ for i = 1, SLOTS do
 	M["slot_" .. i] = function(a, b) return slot(i, a, b) end
 	M["slot_text_" .. i] = function() return slot_text(i) end
 	M["select_" .. i] = function() sel = cand[i] end
+end
+for _, t in ipairs(OLD_TYPES) do
+	M["can_" .. t] = function() return false end
+	M["opt_" .. t] = function() return "" end
+	M["breed_" .. t] = function() end
 end
 for _, t in ipairs(TYPES) do
 	M["can_" .. t] = function() return can_type(t) end
@@ -390,6 +435,8 @@ local function actor_on_update()
 end
 
 local function actor_on_first_update()
+	local ok, err = pcall(convert_inventory)
+	if not ok then warn("prevod starych variant: %s", tostring(err)) end
 	spawn_all()
 	if pending then RegisterScriptCallback("actor_on_update", actor_on_update) end
 end

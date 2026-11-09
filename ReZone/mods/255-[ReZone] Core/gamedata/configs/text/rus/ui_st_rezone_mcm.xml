@@ -1395,6 +1395,144 @@
 	<string id="ui_mcm_rz_sp_rs_fur">
 		<text>Мохнач</text>
 	</string>
+	<string id="ui_mcm_menu_rz_needs">
+		<text>Голод, жажда и сон</text>
+	</string>
+	<string id="ui_mcm_rz_needs_title">
+		<text>Голод, жажда и сон</text>
+	</string>
+	<string id="ui_mcm_rz_needs_info">
+		<text>Как быстро растут голод, жажда и усталость. 1 = ванильная Anomaly, 0.5 = вдвое медленнее, 2 = вдвое быстрее, 0 = не растёт совсем. Еда, питьё, сон и энергетики работают как раньше.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger">
+		<text>Голод</text>
+	</string>
+	<string id="ui_mcm_rz_needs_hunger_desc">
+		<text>Как быстро падает сытость (энергия в EFTH).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst">
+		<text>Жажда</text>
+	</string>
+	<string id="ui_mcm_rz_needs_thirst_desc">
+		<text>Как быстро растёт жажда, в том числе во сне (гидратация в EFTH).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep">
+		<text>Усталость</text>
+	</string>
+	<string id="ui_mcm_rz_needs_sleep_desc">
+		<text>Как быстро растёт потребность во сне. Сколько усталости снимает сон, не меняется.</text>
+	</string>
+	<string id="ui_mcm_rz_needs_note">
+		<text>Действует сразу. Жажда и усталость работают, только если включены в Опции > Геймплей. Файлы игры не меняются.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_sthp">
+		<text>Живучесть сталкеров</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_title">
+		<text>Живучесть сталкеров по рангу</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_info">
+		<text>Сколько выдерживает сталкер в зависимости от ранга. 1 = ваниль, 2 = вдвое больше, 0.5 = вдвое меньше. Действует на любой урон (игрок, NPC, мутанты, аномалии, гранаты) и сразу на NPC в игре. Броня и попадания в голову работают как прежде - значение является дополнительным множителем.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled">
+		<text>Включить живучесть сталкеров</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_enabled_desc">
+		<text>Выкл = ванильная Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all">
+		<text>Все сталкеры</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice">
+		<text>Новичок</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee">
+		<text>Стажёр</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced">
+		<text>Опытный</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional">
+		<text>Профессионал</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran">
+		<text>Ветеран</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert">
+		<text>Эксперт</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master">
+		<text>Мастер</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend">
+		<text>Легенда</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_note">
+		<text>Итог = ранг x Все сталкеры. Скриптовые убийства других модов (тихие убийства, сюжет) не меняются. Файлы игры не меняются.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_binoc">
+		<text>Бинокль</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_title">
+		<text>Обнаружение целей в бинокле</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_info">
+		<text>Бинокль (и прицелы с апгрейдом «автозахват цели») обводят сталкеров и мутантов и отмечают врагов. Здесь это можно отключить - тогда цели придётся искать глазами.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect">
+		<text>Обнаружение целей в бинокле</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_detect_desc">
+		<text>Вкл = ваниль. Выкл = бинокль только приближает.</text>
+	</string>
+	<string id="ui_mcm_rz_binoc_note">
+		<text>Действует после загрузки сохранения (или для нового бинокля). Работает и для биноклей и прицелов из модов. Требуются modded exes. Файлы игры не меняются.</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_novice_desc">
+		<text>Сколько выдерживает новичок. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_trainee_desc">
+		<text>Сколько выдерживает стажёр. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_experienced_desc">
+		<text>Сколько выдерживает опытный сталкер. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_professional_desc">
+		<text>Сколько выдерживает профессионал. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_veteran_desc">
+		<text>Сколько выдерживает ветеран. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_expert_desc">
+		<text>Сколько выдерживает эксперт. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_master_desc">
+		<text>Сколько выдерживает мастер. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_legend_desc">
+		<text>Сколько выдерживает легенда. 1 = ваниль, 2 = вдвое больше попаданий, 0.5 = вдвое меньше. Получает только (урон / это значение). Итог ещё умножается на «Все сталкеры».</text>
+	</string>
+	<string id="ui_mcm_rz_sthp_all_desc">
+		<text>Умножает все ранги сразу. Напр. Все 2 и Ветеран 1.5 = ветеран выдерживает в 3 раза больше, чем в ванили.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_pda">
+		<text>КПК</text>
+	</string>
+	<string id="ui_mcm_rz_pda_title">
+		<text>КПК - мини-карта</text>
+	</string>
+	<string id="ui_mcm_rz_pda_info">
+		<text>Все КПК (1, 2, 3 и КПК из модов) показывают персонажей в радиусе на мини-карте - КПК 1 около 68 м, КПК 2 120 м, КПК 3 240 м. Когда кто-то умирает, остаётся серая точка. Здесь трупы на мини-карте можно скрыть.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses">
+		<text>Трупы на мини-карте</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_desc">
+		<text>Вкл = ваниль (серые точки мёртвых). Выкл = трупы не показываются на мини-карте ни у одного КПК. Живые остаются.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_note">
+		<text>Действует после загрузки сохранения или перехода на другую локацию. Файлы игры не меняются.</text>
+	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Установлен Zone Customization Project. Обе настройки популяции будут складываться - используй только одну.</text>
 	</string>
