@@ -1,0 +1,740 @@
+--[[
+	ReZone NPC Knife - NPC utoci na hrace, stalkery a mutanty nozem
+	scheme_type: generic  (jako axr_fight_from_cover)
+
+	Port rx_knife.script z AI Additions (Rulix aka Bak, 2010/2016), jak je v Anthology, pro cistou Anomaly 1.5.2:
+	 * bez rx_ai / rx_utils / rx_sound / rx_gl / rx_bandage (v Anomaly nejsou) - potrebne funkce jsou primo tady
+	 * registrace jako generic schema Anomaly (LoadScheme), ne pres rx_ai
+	 * state_mgr.lock (v Anomaly neni) -> akce je v state_mgr.combat_action_ids (state manager do ni nezasahuje)
+	 * hit_callback pres npc_on_hit_callback (rx_ai.subscribe_for_events v Anomaly neni)
+	 * zvuky z temat Anomaly (fight_attack), granat = npc:best_danger()
+	 * opravene chyby originalu: npc_id pred definici (nil), cls_id v is_low_target (nil),
+	   chybejici frakce v konfiguraci (pad pri indexovani nil), NPC uz neplati 300 RU za nuz
+	Nastaveni: configs\misc\rz_npc_knife.ltx
+--]]
+
+--------------------------------------
+evid_knife_attack = 188180
+actid_knife_attack = evid_knife_attack
+--------------------------------------
+local MELEE_SLOT     = 1                  -- slot noze v Anomaly
+local CHECK_PRD      = 1000
+local MAX_PURSUE_D2  = 70 * 70
+local COURAGE_MULT   = 1.1
+local ACTOR_HIT_PPE  = "bloody.ppe"       -- efekt na obrazovce pri zasahu nozem (je v Anomaly)
+local SND_THEME      = "fight_attack"     -- tema Anomaly (vykriky do utoku)
+local SND_PERIOD     = 4000
+
+local sneak_attack, close_attack, mutant_hunt, mutant_defend = 1, 2, 3, 4
+
+local function log(fmt, ...)
+	local ok, s = pcall(string.format, fmt, ...)
+	printf("[rz_npc_knife] %s", ok and s or fmt)
+end
+
+-------------------------------------------------------------------- konfigurace
+local creatures = {
+	actor = clsid.script_actor, stalker = clsid.script_stalker, dog = clsid.dog_s, boar = clsid.boar_s,
+	flesh = clsid.flesh_s, pseudodog = clsid.pseudodog_s, bloodsucker = clsid.bloodsucker_s, snork = clsid.snork_s,
+	tushkano = clsid.tushkano_s, zombie = clsid.zombie_s, giant = clsid.gigant_s, chimera = clsid.chimera_s,
+	burer = clsid.burer_s, controller = clsid.controller_s, poltergeist = clsid.poltergeist_s,
+	fracture = clsid.fracture_s, cat = clsid.cat_s, psy_dog = clsid.psy_dog_s, psy_dog_phantom = clsid.psy_dog_phantom_s,
+}
+local small_mutant = {}
+for _, c in ipairs({ clsid.dog_s, clsid.flesh_s, clsid.cat_s, clsid.snork_s, clsid.tushkano_s }) do
+	if c then small_mutant[c] = true end
+end
+
+local sets = {
+	weapon_to_spawn = "wpn_knife", spawn_chance = 0.35, skip_story = true, actor_mult = 1,
+	forbidden_factions = {}, forbidden_npcs = {}, ranks = {}, communities = {},
+	-- 1.3: zvuky na zacatku utoku nozem (nahodne jeden z nich)
+	start_sounds = { "rz_npc_knife\\knife_attack_1", "rz_npc_knife\\knife_attack_2" }, start_chance = 1, start_volume = 1,
+}
+local attack_clsids, defend_clsids = {}, {}
+local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }
+local DEF_COMM = { courage = 1, mutant_hunt = true }
+
+local function load_config()
+	local ini = ini_file("misc\\rz_npc_knife.ltx")
+	if not (ini and ini:section_exist("main")) then
+		log("! chybi configs\\misc\\rz_npc_knife.ltx - vychozi nastaveni")
+		ini = nil
+	end
+	local function str(sec, key, def) return ini and ini:line_exist(sec, key) and ini:r_string_ex(sec, key) or def end
+	local function num(sec, key, def) return tonumber(str(sec, key, nil)) or def end
+	local function bool(sec, key, def)
+		local v = str(sec, key, nil)
+		if v == nil then return def end
+		return v == "true" or v == "1"
+	end
+	local function keys(sec)
+		local t = {}
+		if ini and ini:section_exist(sec) then
+			for i = 0, ini:line_count(sec) - 1 do
+				local _, k, v = ini:r_line(sec, i, "", "")
+				if k and k ~= "" then t[k] = (v and v ~= "") and v or true end
+			end
+		end
+		return t
+	end
+	if ini then
+		sets.weapon_to_spawn = str("main", "weapon_to_spawn", sets.weapon_to_spawn)
+		sets.spawn_chance = num("main", "spawn_chance", sets.spawn_chance)
+		sets.skip_story = bool("main", "skip_story_npc", true)
+		sets.actor_mult = num("main", "actor_hit_mult", 1)
+		for f in string.gmatch(str("main", "forbidden_factions", ""), "[^,%s]+") do sets.forbidden_factions[f] = true end
+		sets.forbidden_npcs = keys("forbidden_npcs")
+		if ini:line_exist("sounds", "attack_start") then
+			sets.start_sounds = {}
+			for s in string.gmatch(str("sounds", "attack_start", ""), "[^,%s]+") do sets.start_sounds[#sets.start_sounds + 1] = s end
+		end
+		sets.start_chance = num("sounds", "attack_start_chance", sets.start_chance)
+		sets.start_volume = num("sounds", "attack_start_volume", sets.start_volume)
+		for name, v in pairs(keys("attack_courage")) do
+			if creatures[name] then attack_clsids[creatures[name]] = tonumber(v) end
+		end
+		for name in pairs(keys("mutant_defend")) do
+			if creatures[name] then defend_clsids[creatures[name]] = true end
+		end
+	end
+	for _, rn in ipairs({ "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }) do
+		sets.ranks[rn] = {
+			addhit_actor = num(rn, "addhit_actor", DEF_RANK.addhit_actor),
+			addhit_stalker = num(rn, "addhit_stalker", DEF_RANK.addhit_stalker),
+			addhit_mutant = math.max(num(rn, "addhit_mutant", DEF_RANK.addhit_mutant), 0.03),
+		}
+	end
+	if ini then
+		for _, comm in ipairs({ "stalker", "bandit", "freedom", "dolg", "killer", "army", "monolith", "ecolog", "greh",
+			"isg", "csky", "renegade", "army_npc", "greh_npc" }) do
+			if ini:section_exist(comm) then
+				sets.communities[comm] = { courage = num(comm, "courage", 1), mutant_hunt = bool(comm, "mutant_hunt", true) }
+			end
+		end
+	end
+	if sets.weapon_to_spawn and not ini_sys:section_exist(sets.weapon_to_spawn) then
+		log("! predmet %s neexistuje - noze se nerozdavaji", tostring(sets.weapon_to_spawn))
+		sets.spawn_chance = 0
+	end
+end
+
+-------------------------------------------------------------------- pomocne funkce (misto rx_utils)
+local function is_actor_cls(c) return c == clsid.script_actor or c == clsid.actor end
+local function is_firearm(o) return o and IsWeapon(o) and not IsMelee(o) and not (IsGrenade and IsGrenade(o)) end
+
+local bone_head, bone_torso = {}, {}
+local function fire_bone(sec, part)
+	if part == "head" then
+		bone_head[sec] = bone_head[sec] or ini_sys:r_string_ex(sec, "bone_head") or "bip01_head"
+		return bone_head[sec]
+	end
+	bone_torso[sec] = bone_torso[sec] or ini_sys:r_string_ex(sec, "bone_torso") or ini_sys:r_string_ex(sec, "bone_spin") or "bip01_spine"
+	return bone_torso[sec]
+end
+local function safe_bone_pos(o, bone)
+	local cls = o:clsid()
+	if cls == clsid.burer_s or cls == clsid.gigant_s then return o:center() end
+	if cls == clsid.chimera_s then return o:bone_position("neck_r") end
+	local ok, p = pcall(o.bone_position, o, bone or fire_bone(o:section(), "torso"))
+	return ok and p or o:center()
+end
+local function lying(o)
+	local ok, r = pcall(function() return o:bone_position("bip01_pelvis").y + 0.2 > o:bone_position("bip01_head").y end)
+	return ok and r
+end
+local function is_trader(npc)
+	if IsTrader(npc) or npc:character_community() == "trader" then return true end
+	local s, n = npc:section() or "", npc:name() or ""
+	if s:find("trader") or n:find("trader") then return true end
+	local st = db.storage[npc:id()]
+	return st and st.ini and st.section_logic and st.ini:section_exist(st.section_logic) and st.ini:line_exist(st.section_logic, "trade") or false
+end
+local function rank_frac(npc)
+	return math.min(1, math.max(0, (npc:character_rank() or 0) / 26999))   -- legend od 26999 (game_relations)
+end
+
+local last_snd = {}
+local function play_snd(npc_id)
+	local t = time_global()
+	if (last_snd[npc_id] or 0) > t then return end
+	last_snd[npc_id] = t + SND_PERIOD
+	if sound_theme and sound_theme.theme and sound_theme.theme[SND_THEME] then
+		pcall(xr_sound.set_sound_play, npc_id, SND_THEME)
+	end
+end
+
+-- 1.3: zvuk na zacatku utoku: nahodne jeden ze [sounds] attack_start, 3D u NPC. Objekt zvuku se drzi v tabulce
+-- (jinak ho Lua uklidi a zvuk utichne); chybejici soubor se preskoci.
+local start_snd_obj, start_snd_last = {}, {}
+local START_SND_PERIOD = 6000
+local function play_start_snd(npc)
+	local L = sets.start_sounds
+	if not (L and #L > 0) or math.random() > (sets.start_chance or 1) then return end
+	local id, t = npc:id(), time_global()
+	if (start_snd_last[id] or 0) > t then return end
+	local path = L[math.random(#L)]
+	if not getFS():exist("$game_sounds$", path .. ".ogg") then return end
+	local ok, snd = pcall(sound_object, path)
+	if not (ok and snd) then return end
+	start_snd_last[id] = t + START_SND_PERIOD
+	if start_snd_obj[id] and start_snd_obj[id]:playing() then start_snd_obj[id]:stop() end
+	start_snd_obj[id] = snd
+	pcall(function()
+		snd.volume = sets.start_volume or 1
+		snd:play_at_pos(npc, npc:position(), 0, sound_object.s3d)
+	end)
+	last_snd[id] = t + SND_PERIOD      -- vykrik Anomaly hned po tom ne
+end
+
+-------------------------------------------------------------------- cile
+targets = {}
+
+local function is_low_target(trg)
+	local cls = trg:clsid()
+	if IsStalker(trg) then
+		if trg:character_community() == "zombied" then return IsWounded(trg) end
+		return lying(trg)
+	end
+	if cls == clsid.zombie_s then return lying(trg) end
+	return small_mutant[cls] == true
+end
+
+local function is_easy_target(trg, cls)
+	return (cls == clsid.zombie_s and lying(trg))
+		or (cls == clsid.script_stalker and trg:character_community() == "zombied" and IsWounded(trg))
+end
+
+local function remove_target(npc_id, st, delay)
+	if st.target and targets[st.target] == npc_id then targets[st.target] = nil end
+	if delay then st.delay = time_global() + delay end
+	st.target = nil
+end
+
+local function knife_actions_permitted(id)
+	return id == stalker_ids.action_combat_planner or id == xr_actions_id.combat_monolith_base or id == actid_knife_attack
+end
+
+local function get_target(npc, be, st)
+	local be_id, be_pos, be_lvid = be:id(), be:position(), be:level_vertex_id()
+	local dist = npc:position():distance_to(be_pos)
+	if targets[be_id] or dist > 14 or not npc:accessible(be_lvid) or level.vertex_position(be_lvid):distance_to_sqr(be_pos) > 2 then
+		return false
+	end
+	local courage = st.eva.courage
+	local bec = be:clsid()
+	if not (attack_clsids[bec] or defend_clsids[bec]) then return false end
+	if is_easy_target(be, bec) then
+		courage = courage + 20
+	elseif IsWounded(be) then
+		return false
+	end
+	local knife_active = npc:active_slot() == MELEE_SLOT
+	local knife_only = false
+	if knife_active then
+		courage = courage + 15
+		local wa, wb = npc:active_item(), npc:best_weapon()
+		if wa and wb and wa:id() == wb:id() then
+			knife_only = true
+			courage = courage + 30
+		end
+	end
+	if is_actor_cls(bec) then
+		courage = courage + 5
+	elseif select(2, pcall(be.critically_wounded, be)) == true then
+		courage = courage + 5
+	end
+	local be_see_me = be:see(npc)
+	if be_see_me then courage = courage - 10 end
+	if not be_see_me and courage > 40 and npc:body_state() == move.crouch and dist < 6 and npc.health > 0.7 and npc:see(be) then
+		st.target, st.type = be_id, sneak_attack
+		return true
+	end
+	if IsStalker(nil, bec) or is_actor_cls(bec) then
+		local need = attack_clsids[bec]
+		if need and (dist > 4 or knife_active) and npc:see(be) and courage > need + 4 * dist then
+			local nw, bw = npc:active_item(), be:active_item()
+			local both_loaded = not knife_active and is_firearm(bw) and nw and IsWeapon(nw)
+				and nw:get_ammo_in_magazine() ~= 0 and bw:get_ammo_in_magazine() ~= 0
+			if courage > 75 or knife_only or not both_loaded then
+				st.target, st.type = be_id, close_attack
+				st.timer = st.timer + 6000
+				return true
+			end
+		end
+	else
+		if not knife_active and math.random() > 0.8 then return false end
+		local okb, bee = pcall(be.get_enemy, be)
+		bee = okb and bee and bee:id() == npc:id()
+		if st.eva.cmhunt and attack_clsids[bec] and be.health < npc.health and courage > attack_clsids[bec] + 3 * dist
+			and not (be_see_me and bee) and npc.health > 1 - courage / 150 then
+			st.target, st.type = be_id, mutant_hunt
+			st.timer = st.timer + 6000
+			return true
+		elseif bee and (knife_only or (defend_clsids[bec] and dist < 13 and npc.health > 0.5 and (knife_active or dist > 5) and courage > 37 + dist)) then
+			st.target, st.type = be_id, mutant_defend
+			st.timer = st.timer + 4000
+			return true
+		end
+	end
+	return false
+end
+
+local function spawn_knife(npc)
+	if sets.spawn_chance <= 0 or load_var(npc, "rz_knife_spawn") then return false end
+	save_var(npc, "rz_knife_spawn", true)
+	if npc:item_in_slot(MELEE_SLOT) or not npc:best_weapon() or is_trader(npc) then return false end
+	if math.random() >= sets.spawn_chance then return false end
+	alife_create_item(sets.weapon_to_spawn, npc)
+	return true
+end
+
+-------------------------------------------------------------------- evaluator
+class "evaluator_knife_attack" (property_evaluator)
+function evaluator_knife_attack:__init(npc, name, storage) super(nil, name)
+	self.st = storage
+	storage.delay = storage.delay or 0
+	storage.timer = 0
+	storage.eva = self
+	self.check_timer = 0
+	local comm = npc:character_community()
+	local courage = load_var(npc, "rz_knife_courage")
+	if not courage then
+		courage = math.random(25, math.floor(rank_frac(npc) * 23 + 53))   -- 25-53 .. 25-76
+		save_var(npc, "rz_knife_courage", courage)
+	end
+	local c = sets.communities[comm] or DEF_COMM
+	self.courage = courage * c.courage * COURAGE_MULT
+	self.cmhunt = c.mutant_hunt
+end
+
+function evaluator_knife_attack:evaluate()
+	local st = self.st
+	if st.delay > time_global() then return false end
+	local npc = self.object
+	if not npc:alive() then return false end
+	local npc_id = npc:id()
+	if not npc:item_in_slot(MELEE_SLOT) then
+		remove_target(npc_id, st, spawn_knife(npc) and 3000 or 30000)
+		return false
+	end
+	local be = npc:best_enemy()
+	if not be then
+		if st.target and level.object_by_id(st.target) then return true end
+		remove_target(npc_id, st, 2000)
+		return false
+	end
+	local mgr = npc:motivation_action_manager()
+	if not (mgr and mgr:initialized() and knife_actions_permitted(mgr:current_action_id())) then
+		remove_target(npc_id, st, 2500)
+		return false
+	end
+	local target = st.target and level.object_by_id(st.target)
+	if not target and st.target then remove_target(npc_id, st) end
+	if target then
+		local bd = npc:best_danger()
+		if bd and bd:type() == danger_object.grenade then
+			remove_target(npc_id, st, 3000)
+			return false
+		end
+		local dist = target:position():distance_to(npc:position())
+		if targets[st.target] then
+			if targets[st.target] ~= npc_id then
+				remove_target(npc_id, st)
+				target = nil
+			elseif st.target ~= be:id() and dist > 5 then
+				remove_target(npc_id, st, 6000)
+				return false
+			else
+				if st.type == sneak_attack and target:see(npc) then
+					if dist < self.courage / 9 then
+						st.type = close_attack
+					else
+						remove_target(npc_id, st, 15000)
+						return false
+					end
+				elseif st.type == close_attack and self.courage < 15 + 4 * dist then
+					remove_target(npc_id, st, 15000)
+					return false
+				elseif st.type == mutant_hunt and dist > 15 then
+					remove_target(npc_id, st, 12000)
+					return false
+				elseif (st.type == mutant_defend and dist > 16) or (npc.health < 0.2 and dist > (st.fire_dist or 1.5) * 1.2) then
+					remove_target(npc_id, st, 12000)
+					return false
+				end
+				return true
+			end
+		elseif dist > 15 then
+			remove_target(npc_id, st)
+			target = nil
+		end
+	end
+	local tg = time_global()
+	if self.check_timer > tg then return target ~= nil end
+	self.check_timer = tg + CHECK_PRD
+	if npc:critically_wounded() or npc.health < 0.35 then return false end
+	return get_target(npc, be, st)
+end
+
+-------------------------------------------------------------------- akce
+class "action_knife_attack" (action_base)
+function action_knife_attack:__init(npc, name, storage) super(nil, name)
+	self.st = storage
+	self.rankt = sets.ranks[ranks.get_obj_rank_name(npc)] or DEF_RANK
+end
+
+function action_knife_attack:hit_callback(amount, who)
+	local st = self.st
+	if who and st.type == mutant_defend and st.eva.cmhunt and st.target == who:id() and attack_clsids[who:clsid()] then
+		st.type = mutant_hunt
+		play_snd(self.object:id())
+	end
+end
+
+function action_knife_attack:initialize()
+	action_base.initialize(self)
+	local npc = self.object
+	local st = self.st
+	st.active_action = self
+	st.timer = time_global() + 80000
+	self.start_time = time_global()
+	self.fire_time = time_global()
+	self.mental_time = 0
+	npc:set_desired_position()
+	npc:set_desired_direction()
+	npc:set_mental_state(anim.danger)
+	npc:set_movement_type(move.run)
+	npc:set_path_type(game_object.level_path)
+	npc:set_detail_path_type(move.criteria)
+	npc:set_sight(look.path_dir, nil, 0)
+	if st.target then targets[st.target] = npc:id() end
+	self.ddr = math.random() > 0.5
+	self.start_point = npc:position()
+	local knife = npc:item_in_slot(MELEE_SLOT)
+	if not knife then
+		st.timer = 0
+		return
+	end
+	if knife:get_ammo_in_magazine() == 0 then knife:set_ammo_elapsed(1) end
+	play_start_snd(npc)
+	local sec = knife:section()
+	st.fire_dist = math.min(tonumber(ini_sys:r_string_ex(sec, "fire_distance") or "") or 1.5, 2)
+	self.hit_type = hit[ini_sys:r_string_ex(sec, "hit_type") or "wound"] or hit.wound
+end
+
+function action_knife_attack:execute()
+	action_base.execute(self)
+	local npc, tg, st = self.object, time_global(), self.st
+	local npc_id = npc:id()
+	if st.timer < tg then remove_target(npc_id, st, 10000) return end
+	local knife = npc:item_in_slot(MELEE_SLOT)
+	local target = st.target and level.object_by_id(st.target)
+	if not (target and knife) then remove_target(npc_id, st) return end
+
+	local target_pos = target:position()
+	if self.start_point:distance_to_sqr(target_pos) > MAX_PURSUE_D2 then remove_target(npc_id, st, 20000) return end
+	local dist = target_pos:distance_to(npc:position())
+
+	if not target:alive() then
+		if not self.relax_time then
+			if npc:best_enemy() then
+				remove_target(npc_id, st)
+				get_target(npc, npc:best_enemy(), st)
+			else
+				self.relax_time = tg + math.random(500, 1500)
+				if safe_bone_pos(target, "bip01_neck"):distance_to(npc:bone_position("bip01_neck")) < 1.5 then
+					npc:set_item(object.fire1, knife)
+				else
+					npc:set_item(object.aim1, knife)
+				end
+				npc:set_sight(target, true, true)
+				npc:set_dest_level_vertex_id(target:level_vertex_id())
+			end
+		elseif self.relax_time <= tg then
+			self.relax_time = nil
+			remove_target(npc_id, st)
+		end
+		return
+	end
+
+	if dist > 5 and not npc:best_enemy() then remove_target(npc_id, st) return end
+
+	local acti = npc:active_slot() == MELEE_SLOT
+	local fd = st.fire_dist or 1.5
+	if acti and dist < fd + (st.type == mutant_defend and 1.4 or 0.8) then
+		if self.fire_time < tg then
+			if self.fire_time ~= 0 and dist <= fd and npc:see(target) then self:additional_hit(target) end
+			self.fire_time = tg + 700
+		end
+		npc:set_item(object.fire1, knife, 5, 300)
+	else
+		if (st.type == close_attack and target:see(npc)) or st.type == mutant_defend or st.type == mutant_hunt then
+			play_snd(npc_id)
+		end
+		npc:set_body_state(move.standing)
+		npc:set_movement_type(move.run)
+		npc:set_item(object.aim1, knife)
+		self.fire_time = 0
+	end
+
+	if not acti then
+		if self.start_time + 4000 < tg then remove_target(npc_id, st, 15000) return end
+	elseif st.type == sneak_attack then
+		npc:set_body_state(move.crouch)
+		npc:set_mental_state(anim.danger)
+	elseif st.type == mutant_hunt then
+		if self.mental_time < tg then
+			if dist < 1.5 and self.mental ~= anim.danger then
+				self.mental_time, self.mental = tg + 1000, anim.danger
+			elseif dist > 3.5 and self.mental ~= anim.panic then
+				self.mental_time, self.mental = tg + 1200, anim.panic
+			end
+			if self.mental then npc:set_mental_state(self.mental) end
+		end
+	elseif st.type == close_attack then
+		if dist > 3 then
+			npc:set_mental_state(anim.panic)
+			npc:set_sight(look.path_dir, nil, 0)
+		elseif dist < 2 then
+			npc:set_mental_state(anim.danger)
+		end
+	elseif st.type == mutant_defend then
+		npc:set_body_state(move.standing)
+		npc:set_mental_state(anim.danger)
+		npc:set_movement_type(dist < 7 and move.run or move.walk)
+	end
+
+	local vertex = target:level_vertex_id()
+	local target_actor = is_actor_cls(target:clsid())
+	local on_target = dist + 0.3 < fd and self.tlvid == vertex
+	if on_target and is_low_target(target) then
+		npc:set_body_state(move.crouch)
+		npc:set_mental_state(anim.danger)
+	end
+	local dodge
+	self.tlvid = vertex
+	if on_target and (IsWounded(target) or is_easy_target(target, target:clsid())) then
+		npc:set_sight(look.fire_point, safe_bone_pos(target, "bip01_neck"))
+		npc:set_dest_level_vertex_id(npc:level_vertex_id())
+		return
+	elseif st.type == mutant_defend or (on_target and (st.type == mutant_hunt or (st.type == close_attack and target_actor))) then
+		vertex = self:get_dodge_vertex(target_pos, target:direction())
+		dodge = true
+	end
+	if target_actor and npc:path_completed() and dist > fd + 0.1 and self.start_time ~= tg then
+		remove_target(npc_id, st, 15000)
+		return
+	end
+	if npc:mental_state() == anim.panic and not on_target then
+		npc:set_sight(look.path_dir, nil, 0)
+	elseif dodge then
+		npc:set_sight(target, true, false)
+		if target_actor then npc:set_movement_type(move.walk) end
+	else
+		npc:set_sight(look.fire_point, safe_bone_pos(target, "bip01_neck"))
+	end
+	vertex = utils_obj.send_to_nearest_accessible_vertex(npc, vertex)
+	if st.type ~= mutant_defend and level.vertex_position(vertex):distance_to_sqr(target_pos) > (target_actor and 6.2 or 10) then
+		remove_target(npc_id, st, 10000)
+	end
+end
+
+function action_knife_attack:finalize()
+	action_base.finalize(self)
+	local npc = self.object
+	self.st.active_action = nil
+	remove_target(npc:id(), self.st)
+	self.mental, self.ddr, self.tlvid, self.relax_time, self.start_point = nil, nil, nil, nil, nil
+	if not npc:alive() then return end
+	npc:set_sight(look.direction, npc:direction(), 0)
+	npc:set_item(object.idle, npc:active_item())
+	npc:set_mental_state(anim.danger)
+	npc:set_movement_type(move.walk)
+end
+
+function action_knife_attack:additional_hit(target)
+	local npc = self.object
+	local cls = target:clsid()
+	local power
+	if cls == clsid.script_stalker then
+		power = self.rankt.addhit_stalker
+	elseif is_actor_cls(cls) then
+		power = self.rankt.addhit_actor * sets.actor_mult
+		pcall(level.add_pp_effector, ACTOR_HIT_PPE, 943, false)
+		pcall(level.set_pp_effector_factor, 943, 0.3)
+	else
+		power = self.rankt.addhit_mutant
+	end
+	if not power or power <= 0 then return end
+	local h = hit()
+	if math.random() < 0.1 or yaw(npc:direction(), target:direction()) < 0.6 then
+		h:bone(fire_bone(target:section(), "head"))
+	else
+		h:bone(fire_bone(target:section(), "torso"))
+	end
+	h.type = self.hit_type or hit.wound
+	h.power = power
+	h.impulse = 10
+	h.draftsman = npc
+	h.direction = vector():sub(target:center(), npc:center())
+	target:hit(h)
+end
+
+function action_knife_attack:get_dodge_vertex(o, d)
+	local npc = self.object
+	local trgdir = vector():sub(o, npc:position())
+	local lvid = npc:level_vertex_id()
+	if yaw(trgdir, d) < 0.6 then return lvid end
+	local dir = vector_rotate_y(trgdir, self.ddr and 60 or 300)
+	local res = npc:vertex_in_direction(lvid, dir, 2)
+	if res == lvid then
+		self.ddr = not self.ddr
+		dir = vector_rotate_y(trgdir, self.ddr and 60 or 300)
+		res = npc:vertex_in_direction(lvid, dir, 2)
+		if res ~= lvid and level.vertex_position(res):distance_to(level.vertex_position(lvid)) < 2.5 then res = lvid end
+	end
+	return res
+end
+
+-------------------------------------------------------------------- binder (generic schema Anomaly)
+local function forbidden(npc)
+	if not npc:alive() or sets.forbidden_factions[npc:character_community()] or is_trader(npc) then return true end
+	local ok, prof = pcall(npc.profile_name, npc)
+	if (ok and prof and sets.forbidden_npcs[prof]) or sets.forbidden_npcs[npc:name()] or sets.forbidden_npcs[npc:section()] then return true end
+	if npc:section() == "actor_visual_stalker" then return true end
+	if sets.skip_story and get_object_story_id and get_object_story_id(npc:id()) then return true end
+	return false
+end
+
+function setup_generic_scheme(npc, ini, scheme, section, stype, temp)
+	xr_logic.assign_storage_and_bind(npc, ini, scheme, section, temp)
+end
+
+function add_to_binder(npc, ini, scheme, section, storage, temp)
+	if not npc then return end
+	local manager = npc:motivation_action_manager()
+	if not manager then return end
+	if forbidden(npc) then
+		manager:add_evaluator(evid_knife_attack, property_evaluator_const(false))
+		temp.needs_configured = false
+		return
+	end
+	manager:add_evaluator(evid_knife_attack, evaluator_knife_attack(npc, "eva_rz_knife_attack", storage))
+	temp.action = action_knife_attack(npc, "act_rz_knife_attack", storage)
+	temp.action:add_precondition(world_property(stalker_ids.property_alive, true))
+	temp.action:add_precondition(world_property(evid_knife_attack, true))
+	temp.action:add_effect(world_property(evid_knife_attack, false))
+	manager:add_action(actid_knife_attack, temp.action)
+end
+
+function configure_actions(npc, ini, scheme, section, stype, temp)
+	local manager = npc and npc:motivation_action_manager()
+	if not (manager and temp.action) then return end
+	temp.action:add_precondition(world_property(xr_evaluators_id.sidor_wounded_base, false))
+	-- jine generic schemata Anomaly maji prednost (strelba pres spojence, granatomet...)
+	if rx_ff and rx_ff.evaid and _G.schemes and _G.schemes.rx_ff then
+		temp.action:add_precondition(world_property(rx_ff.evaid, false))
+	end
+	if rx_gl and rx_gl.evid_gl_fire then temp.action:add_precondition(world_property(rx_gl.evid_gl_fire, false)) end
+	for _, id in ipairs({ stalker_ids.action_combat_planner, stalker_ids.action_danger_planner, xr_actions_id.alife,
+		xr_danger and xr_danger.actid, axr_fight_from_cover and axr_fight_from_cover.actid }) do
+		local a = id and manager:action(id)
+		if a then a:add_precondition(world_property(evid_knife_attack, false)) end
+	end
+end
+
+-- can_use_knife = false v sekci schematu nebo v [logic] -> NPC nozem neutoci
+function reset_generic_scheme(npc, scheme, section, stype, st)
+	local s = st and st[scheme]
+	if not (s and st.ini) then return end
+	local enabled = true
+	if section and section ~= "nil" and st.ini:line_exist(section, "can_use_knife") then
+		enabled = st.ini:r_bool_ex(section, "can_use_knife", true)
+	elseif st.section_logic and st.ini:line_exist(st.section_logic, "can_use_knife") then
+		enabled = st.ini:r_bool_ex(st.section_logic, "can_use_knife", true)
+	end
+	if not enabled then
+		s.delay = math.huge
+	elseif s.delay == math.huge then
+		s.delay = time_global() + 4000
+	end
+end
+
+-- Anomaly vola pri kazde zmene logiky disable a hned zase setup -> stav cile se jen uvolni
+function disable_generic_scheme(npc, scheme, stype)
+	local st = db.storage[npc:id()] and db.storage[npc:id()][scheme]
+	if st and st.target then remove_target(npc:id(), st) end
+end
+
+function npc_add_precondition(action)
+	if action then action:add_precondition(world_property(evid_knife_attack, false)) end
+end
+
+local function on_hit(npc, amount, dir, who, bone)
+	local st = npc and db.storage[npc:id()]
+	local s = st and st.rz_knife
+	if s and s.active_action then pcall(s.active_action.hit_callback, s.active_action, amount, who) end
+end
+local function on_death(npc)
+	if not npc then return end
+	local id = npc:id()
+	last_snd[id] = nil
+	start_snd_last[id] = nil
+	start_snd_obj[id] = nil
+	for t, n in pairs(targets) do if n == id then targets[t] = nil end end
+end
+
+-- 1.1: xr_gather_items (Anomaly) po sebrani predmetu NPC pripojuje doplnky na best_weapon(); kdyz ma NPC jen nuz,
+-- je to wpn_knife a engine pise do logu "CWeaponMagazined [wpn_knife]: cannot access class member Weapon_AddonAttach!".
+-- Callback se obali: s nozem v ruce se jen odebere predmet ze seznamu sbirani (jako puvodni), doplnek se nepripojuje.
+local function find_upvalue(f, name)
+	if not (debug and debug.getupvalue and type(f) == "function") then return nil end
+	for i = 1, 200 do
+		local n, v = debug.getupvalue(f, i)
+		if n == nil then return nil end
+		if n == name then return v end
+	end
+end
+local function patch_gather_items()
+	if rawget(_G, "__rz_knife_gather") then return end
+	local intercepts = find_upvalue(axr_main and axr_main.callback_set, "intercepts")
+	local list = intercepts and intercepts.npc_on_item_take
+	if type(list) ~= "table" then return end
+	for f in pairs(list) do
+		local info = type(f) == "function" and debug.getinfo and debug.getinfo(f, "S")
+		if info and info.source and info.source:find("xr_gather_items") then
+			local items_tbl = find_upvalue(f, "Items")
+			local wrapped = function(npc, item)
+				local ok, w = pcall(npc.best_weapon, npc)
+				if ok and w and IsMelee and IsMelee(w) then
+					if type(items_tbl) == "table" and item then items_tbl[item:id()] = nil end
+					return
+				end
+				return f(npc, item)
+			end
+			-- 1.2: hodnota polozky = priorita callbacku (modded exes ji radi jako cislo) - musi zustat stejna,
+			-- "true" misto cisla shodilo hru (_g_patches spairs: attempt to compare boolean with number)
+			local prio = list[f]
+			list[f] = nil
+			list[wrapped] = prio
+			rawset(_G, "__rz_knife_gather", true)
+			log("xr_gather_items: doplnky se na nuz nepripojuji")
+			return
+		end
+	end
+end
+
+function on_game_start()
+	load_config()
+	if not (rawget(_G, "LoadScheme") and modules and modules.stype_stalker) then
+		log("! LoadScheme / modules nenalezeny - utoky nozem vypnuty")
+		return
+	end
+	LoadScheme("rz_npc_knife", "rz_knife", modules.stype_stalker)
+	-- akce ridi pohyb/zbran sama (jako boj) - state manager do ni nesmi zasahovat (v Anthology state_mgr.lock)
+	if state_mgr and state_mgr.combat_action_ids then state_mgr.combat_action_ids[actid_knife_attack] = true end
+	RegisterScriptCallback("npc_on_hit_callback", on_hit)
+	RegisterScriptCallback("npc_on_death_callback", on_death)
+	RegisterScriptCallback("actor_on_first_update", function() pcall(patch_gather_items) end)
+end

@@ -1,0 +1,134 @@
+;--------------------------------------------------------------------------------
+; ReZone NPC Knife - NPC utoci nozem (port rx_knife z AI Additions / Anthology pro Anomaly)
+; Puvodni autor: Rulix aka Bak
+;--------------------------------------------------------------------------------
+
+[main]
+weapon_to_spawn    = wpn_knife                  ; nuz, ktery se da NPC bez noze
+spawn_chance       = 0.35                       ; sance, ze NPC bez noze dostane nuz (0 = nedavat)
+forbidden_factions = zombied, ecolog, trader, monster ; frakce, ktere nozem neutoci
+skip_story_npc     = true                       ; story postavy (obchodnici, zadavatele ukolu...) nozem neutoci
+actor_hit_mult     = 1.0                        ; nasobic pridaneho zraneni hraci (addhit_actor)
+
+;--------------------------------------------------------------------------------
+; zvuky na zacatku utoku nozem: prehraje se nahodne jeden (cesta od gamedata\sounds, bez .ogg)
+[sounds]
+attack_start        = rz_npc_knife\knife_attack_1, rz_npc_knife\knife_attack_2
+attack_start_chance = 1.0      ; sance na zvuk pri kazdem utoku (0 = vypnuto)
+attack_start_volume = 1.0
+
+[forbidden_npcs]    ; jmeno, sekce nebo profil NPC, ktery nozem neutoci
+jup_a12_stalker_prisoner
+
+;--------------------------------------------------------------------------------
+; na koho NPC nozem utoci; hodnota = potrebna odvaha (courage), vyssi = mene casto
+[attack_courage]
+actor       = 45
+stalker     = 40
+bloodsucker = 60
+boar        = 40
+burer       = 60
+flesh       = 35
+giant       = 75
+pseudodog   = 55
+psy_dog     = 45
+
+;--------------------------------------------------------------------------------
+; mutanti, proti kterym se NPC brani nozem zblizka (mutant_defend)
+[mutant_defend]
+bloodsucker
+boar
+flesh
+pseudodog
+
+;--------------------------------------------------------------------------------
+; pridane zraneni pri zasahu nozem (k zraneni samotneho noze), podle hodnosti NPC
+; Anomaly: 1.0 u hrace = cele zdravi pred ochranou obleku - proto nizsi nez v Anthology (0.5-3)
+[novice]
+addhit_actor   = 0.10
+addhit_stalker = 0
+addhit_mutant  = 0.1
+
+[trainee]
+addhit_actor   = 0.10
+addhit_stalker = 0
+addhit_mutant  = 0.1
+
+[experienced]
+addhit_actor   = 0.15
+addhit_stalker = 0
+addhit_mutant  = 0.2
+
+[professional]
+addhit_actor   = 0.15
+addhit_stalker = 0
+addhit_mutant  = 0.2
+
+[veteran]
+addhit_actor   = 0.20
+addhit_stalker = 0.1
+addhit_mutant  = 0.4
+
+[expert]
+addhit_actor   = 0.20
+addhit_stalker = 0.1
+addhit_mutant  = 0.4
+
+[master]
+addhit_actor   = 0.25
+addhit_stalker = 0.5
+addhit_mutant  = 1
+
+[legend]
+addhit_actor   = 0.25
+addhit_stalker = 0.5
+addhit_mutant  = 1
+
+;--------------------------------------------------------------------------------
+; frakce: courage = nasobic odvahy (vic = casteji utoci nozem), mutant_hunt = lovi nozem i mutanty
+; frakce, ktera tu neni: courage = 1, mutant_hunt = true
+[stalker]
+courage = 0.95
+mutant_hunt = true
+
+[bandit]
+courage = 1.4
+mutant_hunt = true
+
+[freedom]
+courage = 1.3
+mutant_hunt = true
+
+[dolg]
+courage = 1
+mutant_hunt = true
+
+[killer]
+courage = 0.75
+mutant_hunt = true
+
+[army]
+courage = 0.8
+mutant_hunt = false
+
+[monolith]
+courage = 3.4
+mutant_hunt = true
+
+[greh]
+courage = 3.4
+mutant_hunt = true
+
+[isg]
+courage = 0.75
+mutant_hunt = true
+
+[csky]
+courage = 1
+mutant_hunt = true
+
+[renegade]
+courage = 3.4
+mutant_hunt = true
+
+; v logice NPC: can_use_knife = false (v sekci schematu nebo v [logic]) - NPC nozem neutoci
