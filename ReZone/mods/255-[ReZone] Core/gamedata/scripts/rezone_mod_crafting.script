@@ -28,7 +28,7 @@ TABS_FILE = "items\\settings\\rezone_craft_tabs.ltx"
 TABS_LIST = "rezone_craft_tabs"
 
 local OPT = "rezone/rz_gameplay/rz_craft/"
-local defaults = { remove_recipe = true, keep_known = false }
+local defaults = { remove_recipe = true, keep_known = false, keep_open = true }
 
 local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy
 	if rezone_core and rezone_core.DEBUG then printf("[ReZone Crafting] " .. fmt, ...) end
@@ -253,7 +253,55 @@ local function patch_tooltip()
 	log("Craft use in tooltip: recepty z vanilla dilny vcetne novych zalozek")
 end
 
+-- ---------------------------------------------------------------- dilna zustane otevrena
+-- Vanilla po vyrobeni zavre celou dilnu (UIWorkshopCraft:Craft -> self:Close()).
+-- Tady se zavreni behem vyroby preskoci a po chvili (az se spotrebovane dily opravdu
+-- smazou) se znovu vybere stejny recept, takze jde hned vyrobit dalsi kus.
+local ws_patched = false
+local function patch_workshop()
+	local C = ui_workshop and ui_workshop.UIWorkshopCraft
+	if ws_patched or not (C and C.Craft and C.Close) then return end
+	ws_patched = true
+	local orig_close, orig_craft = C.Close, C.Craft
+
+	function C:Close(...)
+		if self.__rz_crafting then return end
+		return orig_close(self, ...)
+	end
+
+	function C:Craft(...)
+		if not opt("keep_open") then return orig_craft(self, ...) end
+		local allowed = self.craft_allow_r
+		local sel = self.selected_index
+		self.__rz_crafting = true
+		local ok, err = pcall(orig_craft, self, ...)
+		self.__rz_crafting = nil
+		if not ok then
+			printf("! [ReZone Crafting] chyba pri vyrobe: %s", tostring(err))
+			return orig_close(self)
+		end
+		if not allowed then return end
+		if self.btn_craft then self.btn_craft:Enable(false) end
+		local wnd = self
+		CreateTimeEvent("rz_workshop", "reselect", 0.3, function()
+			if not (wnd and wnd.IsShown and wnd:IsShown()) then return true end
+			local cc = wnd.CC and wnd.CC["list"]
+			if cc and cc.cell and sel then
+				for idx, ci in pairs(cc.cell) do
+					if ci.flags and ci.flags.info == sel then
+						pcall(wnd.On_CC_Mouse1, wnd, "list", idx)
+						break
+					end
+				end
+			end
+			return true
+		end)
+	end
+	log("dilna: po vyrobe zustane otevrena")
+end
+
 function on_game_start()
+	RegisterScriptCallback("actor_on_first_update", patch_workshop)
 	inject_tabs()
 	patch_recipe()
 	patch_encyclopedia()

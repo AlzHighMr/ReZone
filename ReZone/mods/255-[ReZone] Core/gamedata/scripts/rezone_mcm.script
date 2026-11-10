@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.30"
+VERSION = "2.5.31"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -105,6 +105,7 @@ local function gp_craft()
 		line("l1"),
 		check("remove_recipe", true, "rz_craft_remove_recipe"),
 		check("keep_known", false, "rz_craft_keep_known"),
+		check("keep_open", true, "rz_craft_keep_open"),
 	})
 end
 
