@@ -253,55 +253,143 @@ local function patch_tooltip()
 	log("Craft use in tooltip: recepty z vanilla dilny vcetne novych zalozek")
 end
 
--- ---------------------------------------------------------------- dilna zustane otevrena
--- Vanilla po vyrobeni zavre celou dilnu (UIWorkshopCraft:Craft -> self:Close()).
--- Tady se zavreni behem vyroby preskoci a po chvili (az se spotrebovane dily opravdu
--- smazou) se znovu vybere stejny recept, takze jde hned vyrobit dalsi kus.
-local ws_patched = false
-local function patch_workshop()
-	local C = ui_workshop and ui_workshop.UIWorkshopCraft
-	if ws_patched or not (C and C.Craft and C.Close) then return end
-	ws_patched = true
-	local orig_close, orig_craft = C.Close, C.Craft
+-- ---------------------------------------------------------------- okna zustanou otevrena
+-- Vanilla po kazde akci zavre okno: dilna (vyroba / oprava / vylepseni), vareni, opravarenske sady.
+-- Behem akce se tu zavirani preskoci (i kdyz ho jiny mod vola pres owner:Close) a po chvilce,
+-- az se spotrebovane predmety opravdu smazou, se okno obnovi se stejnym vyberem.
+local KEEP_DELAY = 0.15
+local holding = false		-- prave probiha akce -> zadne zavirani
+local keep_patched = false
 
-	function C:Close(...)
-		if self.__rz_crafting then return end
-		return orig_close(self, ...)
+local function block_close(cls, name)
+	local orig = cls and cls[name]
+	if type(orig) ~= "function" then return nil end
+	cls[name] = function(self, ...)
+		if holding then return end
+		return orig(self, ...)
 	end
+	return orig		-- puvodni zavreni (pro pripad, ze obnova neni mozna)
+end
 
-	function C:Craft(...)
-		if not opt("keep_open") then return orig_craft(self, ...) end
-		local allowed = self.craft_allow_r
-		local sel = self.selected_index
-		self.__rz_crafting = true
-		local ok, err = pcall(orig_craft, self, ...)
-		self.__rz_crafting = nil
+local function obj_alive(id)
+	return id and level.object_by_id(id) ~= nil
+end
+
+-- akce: provest, okno nechat, pak obnovit; refresh(self) vraci false = zavrit
+local function keep_open(cls, action, refresh, close_fn, tag)
+	local orig = cls and cls[action]
+	if type(orig) ~= "function" then return end
+	cls[action] = function(self, ...)
+		if not opt("keep_open") then return orig(self, ...) end
+		holding = true
+		local ok, err = pcall(orig, self, ...)
+		holding = false
 		if not ok then
-			printf("! [ReZone Crafting] chyba pri vyrobe: %s", tostring(err))
-			return orig_close(self)
+			printf("! [ReZone Crafting] %s: %s", tag, tostring(err))
+			return
 		end
-		if not allowed then return end
-		if self.btn_craft then self.btn_craft:Enable(false) end
-		local wnd = self
-		CreateTimeEvent("rz_workshop", "reselect", 0.3, function()
-			if not (wnd and wnd.IsShown and wnd:IsShown()) then return true end
-			local cc = wnd.CC and wnd.CC["list"]
-			if cc and cc.cell and sel then
-				for idx, ci in pairs(cc.cell) do
-					if ci.flags and ci.flags.info == sel then
-						pcall(wnd.On_CC_Mouse1, wnd, "list", idx)
-						break
-					end
-				end
+		CreateTimeEvent("rz_keep_open", tag, KEEP_DELAY, function()
+			if not (self and self.IsShown and self:IsShown()) then return true end
+			local ok2, keep = pcall(refresh, self)
+			if not ok2 then printf("! [ReZone Crafting] obnova %s: %s", tag, tostring(keep)) end
+			if (not ok2) or keep == false then
+				if close_fn then pcall(close_fn, self) end
 			end
 			return true
 		end)
 	end
-	log("dilna: po vyrobe zustane otevrena")
+end
+
+local function remember_selection(cls, field, only_cont)
+	local orig = cls and cls.On_CC_Mouse1
+	if type(orig) ~= "function" then return end
+	cls.On_CC_Mouse1 = function(self, cont, idx, ...)
+		if (only_cont == nil) or cont == only_cont then self[field] = idx end
+		return orig(self, cont, idx, ...)
+	end
+end
+
+local function patch_keep_open()
+	if keep_patched then return end
+	keep_patched = true
+	local W = ui_workshop
+	if W and W.UIWorkshop then
+		block_close(W.UIWorkshop, "Close")
+		-- vyroba: znovu vypsat recepty zalozky a vybrat stejny
+		local C = W.UIWorkshopCraft
+		local c_close = block_close(C, "Close")
+		remember_selection(C, "__rz_idx", "list")
+		keep_open(C, "Craft", function(self)
+			if self.btn_craft then self.btn_craft:Enable(false) end
+			if self.list_menu and self.list_menu:GetSelectedItem() then self:ListItems() end
+			if self.__rz_idx and self.CC["list"].cell[self.__rz_idx] then
+				self:On_CC_Mouse1("list", self.__rz_idx)
+			end
+		end, c_close, "craft")
+		-- oprava a vylepseni: znovu nacist inventar
+		local R = W.UIWorkshopRepair
+		local r_close = block_close(R, "Close")
+		keep_open(R, "Repair", function(self) self:Reset() end, r_close, "ws_repair")
+		local U = W.UIWorkshopUpgrade
+		local u_close = block_close(U, "Close")
+		keep_open(U, "Upgrade", function(self) self:Reset() end, u_close, "ws_upgrade")
+	end
+
+	-- vareni
+	local K = item_cooking and item_cooking.UICook
+	if K then
+		local k_close = block_close(K, "Close")
+		remember_selection(K, "__rz_idx")
+		local orig_cook = K.OnCook
+		K.OnCook = function(self, ...)
+			self.__rz_kit = self.obj and self.obj:id()
+			return orig_cook(self, ...)
+		end
+		keep_open(K, "OnCook", function(self)
+			if self.cooking_limited and not obj_alive(self.__rz_kit) then return false end	-- varic dosel
+			self.obj = level.object_by_id(self.__rz_kit) or self.obj
+			empty_table(self.objs)
+			self:Load_ActorItems()
+			self:Load_MealList()
+			if self.__rz_idx and self.CC.cell[self.__rz_idx] then
+				self.CC:On_Select(self.__rz_idx)
+				self:On_CC_Mouse1(nil, self.__rz_idx)
+			else
+				self.btn_cook:Enable(false)
+			end
+		end, k_close, "cook")
+	end
+
+	-- opravarenske sady (sici sada, sada na zbrane...)
+	local P = item_repair and item_repair.UIRepair
+	if P then
+		local p_close = block_close(P, "OnCancel")
+		local orig_rep = P.OnRepair
+		P.OnRepair = function(self, ...)
+			self.__rz_kit = self.obj and self.obj:id()
+			return orig_rep(self, ...)
+		end
+		keep_open(P, "OnRepair", function(self)
+			if not obj_alive(self.__rz_kit) then return false end	-- sada dosla
+			self.obj = level.object_by_id(self.__rz_kit)
+			self.con_val = {}
+			self.CC[2]:Reset()
+			for i = 1, 2 do
+				self.text_item[i]:SetText("")
+				self.con_txt[i]:SetText("")
+				self.cell_item[i]:Reset()
+			end
+			self.con_txt_base:SetText("")
+			self.con_txt_new:SetText("")
+			self.btn_repair:Enable(false)
+			self:InitInventory(1)
+		end, p_close, "repair_kit")
+	end
+	log("okna dilny, vareni a oprav zustanou po akci otevrena")
 end
 
 function on_game_start()
-	RegisterScriptCallback("actor_on_first_update", patch_workshop)
+	RegisterScriptCallback("actor_on_first_update", patch_keep_open)
 	inject_tabs()
 	patch_recipe()
 	patch_encyclopedia()
