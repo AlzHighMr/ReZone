@@ -1,0 +1,47 @@
+--[[
+	ReZone fix: random_key_table(nil) uz neshodi hru.
+	Crash pri vareni: _g_patches.script random_key_table - "bad argument #1 to 'pairs'
+	(table expected, got nil)". Nektery skript (vareni / crafting) posle misto seznamu nil.
+	Obal: kdyz neprijde tabulka, vrati nil (jako prazdny seznam) a JEDNOU zapise do logu,
+	kdo to volal - podle toho se opravi skutecna pricina.
+--]]
+
+local reported = {}
+
+local function patch()
+	local orig = _G.random_key_table
+	if type(orig) ~= "function" or _G.__rz_rkt_patched then return end
+	_G.__rz_rkt_patched = true
+	_G.random_key_table = function(t, ...)
+		if type(t) ~= "table" then
+			local where = debug and debug.traceback and debug.traceback("", 2) or "?"
+			if not reported[where] then
+				reported[where] = true
+				printf("! [ReZone] random_key_table dostal %s misto tabulky - preskoceno. Volal:%s", type(t), where)
+			end
+			return nil
+		end
+		return orig(t, ...)
+	end
+end
+
+-- Vareni: pred uvarenim znovu nacist predmety z inventare (seznam z otevreni okna muze byt zastaraly
+-- - napr. palivo mezitim spotrebovane / presunute jinym modem). Pak uz OnCook nedostane nil.
+local function patch_cooking()
+	local C = item_cooking and item_cooking.UICook
+	if not (C and C.OnCook and C.Load_ActorItems) or item_cooking.__rz_cook_patched then return end
+	item_cooking.__rz_cook_patched = true
+	local orig = C.OnCook
+	function C:OnCook(...)
+		if self.objs then
+			empty_table(self.objs)
+			pcall(self.Load_ActorItems, self)
+		end
+		return orig(self, ...)
+	end
+end
+
+function on_game_start()
+	patch()
+	patch_cooking()
+end

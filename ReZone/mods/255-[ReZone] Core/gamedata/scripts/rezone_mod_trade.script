@@ -1,8 +1,8 @@
 --[[
 	ReZone MCM - obchod "jako GAMMA"
-	Zapnuto: obchodnici nekupuji zbrane od hrace a/nebo je neprodavaji (zmizi z jejich nabidky).
-	Helmy maji vlastni dva vypinace (nezavisle na GAMMA).
-	Zbrane se nemazou - jen se v obchodnim okne skryji / nejdou presunout. Vypnutim se vse vrati.
+	Zapnuto: obchodnici nekupuji zbrane, obleky a helmy od hrace a/nebo je neprodavaji (zmizi z nabidky).
+	Helmy maji navic vlastni dva vypinace (plati i bez GAMMA).
+	Nic se nemaze - jen se v obchodnim okne skryji / nejdou prodat. Vypnutim se vse vrati.
 	Patch se nasazuje az v actor_on_first_update, aby obalil i upravy jinych modu (Barter apod.).
 --]]
 
@@ -11,84 +11,116 @@ local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_trade"
 
 local on, no_sell, no_buy, melee = false, true, true, false
 local helm_no_sell, helm_no_buy = false, false
-local kind_cache = {}
 
 -- strelne zbrane (a volitelne noze); granaty, bolty, detektory apod. zustavaji
 local FIREARMS = { w_pistol = true, w_smg = true, w_rifle = true, w_shotgun = true, w_sniper = true }
+local outfits = true	-- GAMMA plati i na obleky a helmy
 
-local function is_weapon(sec)
+local cat_cache = {}
+-- "weapon" / "melee" / "outfit" / "helmet" / false
+local function category(sec)
 	if not sec then return false end
-	local k = kind_cache[sec]
-	if k == nil then
-		k = SYS_GetParam(0, sec, "kind", "") or ""
-		kind_cache[sec] = k
-	end
-	return FIREARMS[k] or (melee and k == "w_melee") or false
-end
-
-local helm_cache = {}
-local function is_helmet(sec)
-	if not sec then return false end
-	local h = helm_cache[sec]
-	if h == nil then
+	local c = cat_cache[sec]
+	if c == nil then
 		local kind = SYS_GetParam(0, sec, "kind", "") or ""
 		local cls = SYS_GetParam(0, sec, "class", "") or ""
-		h = (kind == "o_helmet") or (cls == "E_HLMET") or (cls == "EQU_HLMET")
-		helm_cache[sec] = h
+		if FIREARMS[kind] then c = "weapon"
+		elseif kind == "w_melee" then c = "melee"
+		elseif kind == "o_helmet" or cls == "E_HLMET" or cls == "EQU_HLMET" then c = "helmet"
+		elseif cls == "E_STLK" or cls == "EQU_STLK" or kind == "o_light" or kind == "o_medium" or kind == "o_heavy" or kind == "o_sci" then c = "outfit"
+		else c = false end
+		cat_cache[sec] = c
 	end
-	return h
+	return c
 end
 
 -- mode 1 = veci hrace (prodej obchodnikovi), mode 2 = nabidka obchodnika
--- vraci text duvodu (pro poznamku u predmetu) nebo nil
 local function blocked(sec, mode)
-	if (mode == 1 and helm_no_sell) or (mode == 2 and helm_no_buy) then
-		if is_helmet(sec) then return "st_rz_trade_no_helmets" end
+	local c = category(sec)
+	if not c then return false end
+	if c == "helmet" and ((mode == 1 and helm_no_sell) or (mode == 2 and helm_no_buy)) then return true end
+	if not on then return false end
+	if (mode == 1 and not no_sell) or (mode == 2 and not no_buy) then return false end
+	if c == "weapon" then return true end
+	if c == "melee" then return melee end
+	if c == "outfit" or c == "helmet" then return outfits end
+	return false
+end
+
+-- Vsechno obchodovani v Anomaly jde pres utils_item.get_item_trade_status
+-- (4 = da se obchodovat, 1 = obchodnik nema zajem, 3 = u obchodnika skryt).
+-- utils_ui si funkci kopiruje do lokalni promenne -> nahradi se i tam (debug.setupvalue).
+local function wrap_status(orig)
+	return function(obj, profile, ...)
+		local st = orig(obj, profile, ...)
+		if st == 4 and obj and profile and profile.mode and blocked(obj:section(), profile.mode) then
+			return (profile.mode == 2) and 3 or 1
+		end
+		return st
 	end
-	if not on then return nil end
-	if mode == 1 and not no_sell then return nil end
-	if mode == 2 and not no_buy then return nil end
-	return is_weapon(sec) and "st_rz_trade_no_weapons" or nil
+end
+
+local function replace_upvalue(fn, name, val)
+	if type(fn) ~= "function" or not (debug and debug.getupvalue) then return false end
+	local i = 1
+	while true do
+		local n = debug.getupvalue(fn, i)
+		if not n then return false end
+		if n == name then
+			debug.setupvalue(fn, i, val)
+			return true
+		end
+		i = i + 1
+	end
 end
 
 local patched = false
 local function patch()
 	if patched then return end
-	if not (utils_ui and utils_ui.UICellItem and utils_ui.UICellContainer) then
-		core.warn("obchod: utils_ui chybi, nelze zapnout")
+	if not (utils_item and utils_item.get_item_trade_status) then
+		core.warn("obchod: utils_item.get_item_trade_status chybi, nelze zapnout")
 		return
 	end
 	patched = true
+	local orig = utils_item.get_item_trade_status
+	local wrapped = wrap_status(orig)
+	utils_item.get_item_trade_status = wrapped
 
-	local orig_check = utils_ui.UICellItem.Check_TradeMode
-	function utils_ui.UICellItem:Check_TradeMode(obj, sec)
-		local r = orig_check(self, obj, sec)
-		if r then return r end
-		local profile = self.container and self.container.trade_profile
-		local mode = profile and profile.mode
-		local why = mode and blocked(sec, mode)
-		if why then
-			if mode == 2 then
-				return true -- skryt v nabidce obchodnika
-			end
-			self.flags.value = nil
-			self.flags.value_str = nil
-			self.flags.note = 1
-			self.flags.no_trade = true
-			self.flags.note_str = game.translate_string(why)
+	-- lokalni kopie v utils_ui (sdilena promenna -> staci jedna funkce, zkusi se vic)
+	local done = false
+	if utils_ui then
+		for _, f in ipairs({
+			utils_ui.UICellContainer and utils_ui.UICellContainer.IsTradable,
+			utils_ui.UICellItem and utils_ui.UICellItem.Check_TradeMode,
+			utils_ui.UICellItem and utils_ui.UICellItem.AddChild,
+		}) do
+			if replace_upvalue(f, "get_item_trade_status", wrapped) then done = true break end
 		end
-		return false
 	end
-
-	local orig_tradable = utils_ui.UICellContainer.IsTradable
-	function utils_ui.UICellContainer:IsTradable(obj)
-		local profile = self.trade_profile
-		if obj and profile and profile.mode and blocked(obj:section(), profile.mode) then
+	if not done and utils_ui and utils_ui.UICellContainer then
+		-- zaloha: obalit primo metody okna
+		local orig_tradable = utils_ui.UICellContainer.IsTradable
+		function utils_ui.UICellContainer:IsTradable(obj)
+			local p = self.trade_profile
+			if obj and p and p.mode and blocked(obj:section(), p.mode) then return false end
+			return orig_tradable(self, obj)
+		end
+		local orig_check = utils_ui.UICellItem.Check_TradeMode
+		function utils_ui.UICellItem:Check_TradeMode(obj, sec)
+			local r = orig_check(self, obj, sec)
+			if r then return r end
+			local p = self.container and self.container.trade_profile
+			if p and p.mode and blocked(sec, p.mode) then
+				if p.mode == 2 then return true end
+				self.flags.value, self.flags.value_str = nil, nil
+				self.flags.note, self.flags.no_trade = 1, true
+				self.flags.note_str = game.translate_string("st_no_trade_tip_1")
+			end
 			return false
 		end
-		return orig_tradable(self, obj)
+		core.warn("obchod: utils_ui lokalni funkce nenalezena, pouzita zaloha (metody okna)")
 	end
-	core.log("obchod: patch nasazen")
+	core.log("obchod: patch nasazen (%s)", done and "trade status" or "zaloha")
 end
 
 -- Minimalni stav veci, ktere obchodnik vykoupi (Anomaly: Gameplay > Ekonomika > condition_buy_override).
@@ -112,16 +144,18 @@ function load()
 	on      = g("gamma") == true
 	no_sell = g("no_sell") ~= false
 	no_buy  = g("no_buy") ~= false
-	local m = g("melee") == true
-	if m ~= melee then melee = m end
+	melee   = g("melee") == true
+	outfits = g("outfits") ~= false
 	helm_no_sell = g("helm_no_sell") == true
 	helm_no_buy  = g("helm_no_buy") == true
-	core.log("obchod jako GAMMA: %s (prodej %s, nakup %s, noze %s), helmy prodej %s nakup %s", tostring(on), tostring(no_sell), tostring(no_buy), tostring(melee), tostring(helm_no_sell), tostring(helm_no_buy))
+	core.log("obchod jako GAMMA: %s (prodej %s, nakup %s, noze %s, obleky+helmy %s), helmy prodej %s nakup %s",
+		tostring(on), tostring(no_sell), tostring(no_buy), tostring(melee), tostring(outfits), tostring(helm_no_sell), tostring(helm_no_buy))
 end
 
 function on_game_start()
 	core.on_change(load)
 	load()
 	RegisterScriptCallback("actor_on_first_update", patch)
+	RegisterScriptCallback("ActorMenu_on_before_init_mode", function(mode) if mode == "trade" then patch() end end)
 	RegisterScriptCallback("actor_on_first_update", apply_buy_cond)
 end

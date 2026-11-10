@@ -208,7 +208,7 @@
 		<text>GAMMA-style trading</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Traders neither buy nor sell weapons. Get weapons from bodies and friends, repair them and strip them for parts. Weapons are not deleted, only hidden in the trade window, so switching it off restores everything.</text>
+		<text>Traders neither buy nor sell weapons, outfits and helmets. You get gear from corpses, friends and stashes, repair it and strip it for parts. Nothing is deleted, it is just hidden in the trade window or can't be sold - turning it off brings everything back.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_gamma">
 		<text>Play like GAMMA</text>
@@ -217,16 +217,16 @@
 		<text>Main switch. Off = trading as before.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Traders do not buy weapons</text>
+		<text>Traders don't buy any of it</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Weapons from your inventory cannot be sold. The trade window marks them as not tradable.</text>
+		<text>Weapons (and outfits with helmets) from your inventory can't be sold - the trader isn't interested.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Traders do not sell weapons</text>
+		<text>Traders don't sell any of it</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Weapons disappear from traders' stock.</text>
+		<text>Weapons (and outfits with helmets) disappear from traders' stock.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_melee">
 		<text>Knives too</text>
@@ -235,7 +235,7 @@
 		<text>Off = knives can still be bought and sold. Grenades, ammo and attachments are never restricted.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Applies to pistols, SMGs, rifles, shotguns and sniper rifles.</text>
+		<text>Weapons = pistols, SMGs, rifles, shotguns and sniper rifles. Grenades, ammo, attachments and parts are never restricted.</text>
 	</string>
 	<string id="st_rz_trade_no_weapons">
 		<text>Traders do not buy weapons (ReZone: GAMMA-style trading)</text>
@@ -1535,5 +1535,11 @@
 	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Zone Customization Project is installed. Both population settings would stack - use only one of them.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits">
+		<text>Also outfits and helmets</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits_desc">
+		<text>On = like GAMMA, outfits and helmets can't be bought or sold either. Off = weapons only.</text>
 	</string>
 </string_table>

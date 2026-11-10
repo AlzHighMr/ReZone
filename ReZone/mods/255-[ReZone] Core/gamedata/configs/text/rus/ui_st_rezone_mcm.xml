@@ -208,7 +208,7 @@
 		<text>GAMMA-style trading</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Traders neither buy nor sell weapons. Get weapons from bodies and friends, repair them and strip them for parts. Weapons are not deleted, only hidden in the trade window, so switching it off restores everything.</text>
+		<text>Торговцы не покупают и не продают оружие, костюмы и шлемы. Снаряжение добывается с трупов, у друзей и в тайниках, его можно чинить и разбирать на детали. Ничего не удаляется, просто скрыто в окне торговли - при отключении всё вернётся.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_gamma">
 		<text>Play like GAMMA</text>
@@ -217,16 +217,16 @@
 		<text>Main switch. Off = trading as before.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Traders do not buy weapons</text>
+		<text>Торговцы ничего из этого не покупают</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Weapons from your inventory cannot be sold. The trade window marks them as not tradable.</text>
+		<text>Оружие (а также костюмы и шлемы) из инвентаря нельзя продать - торговцу это не интересно.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Traders do not sell weapons</text>
+		<text>Торговцы ничего из этого не продают</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Weapons disappear from traders' stock.</text>
+		<text>Оружие (а также костюмы и шлемы) исчезает из ассортимента торговцев.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_melee">
 		<text>Knives too</text>
@@ -235,7 +235,7 @@
 		<text>Off = knives can still be bought and sold. Grenades, ammo and attachments are never restricted.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Applies to pistols, SMGs, rifles, shotguns and sniper rifles.</text>
+		<text>Оружие = пистолеты, ПП, винтовки, дробовики и снайперские винтовки. Гранаты, патроны, обвесы и детали не ограничиваются.</text>
 	</string>
 	<string id="st_rz_trade_no_weapons">
 		<text>Traders do not buy weapons (ReZone: GAMMA-style trading)</text>
@@ -1535,5 +1535,11 @@
 	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Установлен Zone Customization Project. Обе настройки популяции будут складываться - используй только одну.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits">
+		<text>Также костюмы и шлемы</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits_desc">
+		<text>Вкл = как в GAMMA, костюмы и шлемы тоже нельзя купить или продать. Выкл = только оружие.</text>
 	</string>
 </string_table>

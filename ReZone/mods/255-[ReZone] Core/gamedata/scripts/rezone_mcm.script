@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.28"
+VERSION = "2.5.30"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -138,6 +138,7 @@ local function gp_trade()
 		line("l2"),
 		check("no_sell", true, "rz_trade_no_sell"),
 		check("no_buy", true, "rz_trade_no_buy"),
+		check("outfits", true, "rz_trade_outfits"),
 		check("melee", false, "rz_trade_melee"),
 		desc("n", "ui_mcm_rz_trade_note", CLR_NOTE),
 		line("lb"),

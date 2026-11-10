@@ -208,7 +208,7 @@
 		<text>Obchod jako v GAMMA</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Obchodníci nekupují ani neprodávají zbranì. Zbranì získáš z mrtvol a od pøátel, opravíš je a rozebereš na díly. Zbranì se nemažou, jen se v obchodním oknì neukážou, takže vypnutím se vše vrátí.</text>
+		<text>Obchodníci nekupují ani neprodávají zbranì, obleky a helmy. Výbavu získáš z mrtvol, od pøátel a ze skrýší, opravíš ji a rozebereš na díly. Nic se nemaže, jen se to v obchodním oknì neukáže nebo to nejde prodat – vypnutím se vše vrátí.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_gamma">
 		<text>Hrát jako GAMMA</text>
@@ -217,16 +217,16 @@
 		<text>Hlavní vypínaè. Vypnuto = obchod jako døív.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Obchodníci nekupují zbranì</text>
+		<text>Obchodníci nic z toho nekupují</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Zbranì z tvého inventáøe nejde prodat. V obchodním oknì jsou oznaèené jako neprodejné.</text>
+		<text>Zbranì (a obleky s helmami) z tvého inventáøe nejde prodat – obchodník o nì nemá zájem.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Obchodníci neprodávají zbranì</text>
+		<text>Obchodníci nic z toho neprodávají</text>
 	</string>
 	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Zbranì zmizí z nabídky obchodníkù.</text>
+		<text>Zbranì (a obleky s helmami) zmizí z nabídky obchodníkù.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_melee">
 		<text>Platí i pro nože</text>
@@ -235,7 +235,7 @@
 		<text>Vypnuto = nože jdou koupit a prodat dál. Granáty, munice a doplòky se neomezují nikdy.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Týká se pistolí, samopalù, pušek, brokovnic a odstøelovaèek.</text>
+		<text>Zbranì = pistole, samopaly, pušky, brokovnice a odstøelovaèky. Granáty, munice, doplòky a díly se neomezují nikdy.</text>
 	</string>
 	<string id="st_rz_trade_no_weapons">
 		<text>Obchodníci zbranì nekupují (ReZone: obchod jako GAMMA)</text>
@@ -1535,5 +1535,11 @@
 	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Je nainstalovaný Zone Customization Project. Obì nastavení populace by se násobila – používej jen jedno z nich.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits">
+		<text>Platí i pro obleky a helmy</text>
+	</string>
+	<string id="ui_mcm_rz_trade_outfits_desc">
+		<text>Zapnuto = jako v GAMMA, obleky a helmy se taky nedají koupit ani prodat. Vypnuto = omezení jen pro zbranì.</text>
 	</string>
 </string_table>
