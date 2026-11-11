@@ -742,7 +742,9 @@ local function patch_gather_items()
 			local items_tbl = find_upvalue(f, "Items")
 			local wrapped = function(npc, item)
 				local ok, w = pcall(npc.best_weapon, npc)
-				if ok and w and IsMelee and IsMelee(w) then
+				local melee = ok and w and ((IsMelee and IsMelee(w)) or w:section():find("knife", 1, true)
+					or ini_sys:r_string_ex(w:section(), "kind") == "w_melee")
+				if melee then
 					if type(items_tbl) == "table" and item then items_tbl[item:id()] = nil end
 					return
 				end
@@ -773,5 +775,11 @@ function on_game_start()
 	if state_mgr and state_mgr.combat_action_ids then state_mgr.combat_action_ids[actid_knife_attack] = true end
 	RegisterScriptCallback("npc_on_hit_callback", on_hit)
 	RegisterScriptCallback("npc_on_death_callback", on_death)
-	RegisterScriptCallback("actor_on_first_update", function() pcall(patch_gather_items) end)
+	-- 1.4 (ReZone 2.5.38): oprava musi byt hotova driv, nez se pri nacitani urovne zacnou NPC online plnit
+	-- predmety (spam vznikal behem nacitani, actor_on_first_update prisel pozde). xr_gather_items registruje
+	-- callback az ve svem on_game_start (bezi po tomto skriptu), proto actor_on_init = uplne prvni objekt.
+	local function try_patch() pcall(patch_gather_items) end
+	RegisterScriptCallback("actor_on_init", try_patch)
+	RegisterScriptCallback("on_game_load", try_patch)
+	RegisterScriptCallback("actor_on_first_update", try_patch)
 end
