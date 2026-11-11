@@ -19,7 +19,7 @@
 --]]
 
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_pop"
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_POP .. "/rz_pop"
 
 MAX_MEMBERS = 12	-- strop velikosti jedne skupiny po zvetseni
 POP_STALKER = "alife/general/alife_stalker_pop"

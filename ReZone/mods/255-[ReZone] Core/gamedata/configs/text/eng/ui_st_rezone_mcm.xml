@@ -1531,7 +1531,7 @@
 		<text>On = vanilla (grey dots of the dead). Off = corpses are not shown on the minimap with any PDA. Living characters stay.</text>
 	</string>
 	<string id="ui_mcm_rz_pda_note">
-		<text>Applies after loading a save or changing level. Game files are not changed.</text>
+		<text>Hiding corpses applies after loading a save or changing level. Persistent dots apply right away. Game files are not changed.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Zone Customization Project is installed. Both population settings would stack - use only one of them.</text>
@@ -1547,5 +1547,20 @@
 	</string>
 	<string id="ui_mcm_rz_craft_keep_open_desc">
 		<text>Vanilla closes the window after every action. On = workshop (craft, repair, upgrade), cooking and repair kits stay open with the same selection. The window closes when the cooker or repair kit runs out.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_keep">
+		<text>Persistent corpse dots</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_keep_desc">
+		<text>Every character and mutant that dies near you gets a minimap dot regardless of PDA range. The dot disappears once you search the body. Only works with corpses on minimap enabled.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_dis_yield">
+		<text>Ammo disassembly yield</text>
+	</string>
+	<string id="ui_mcm_rz_ball_dis_yield_desc">
+		<text>How much disassembled ammo gives back - a share of exactly the items it is crafted from in the workshop (0.5 = half). E.g. Dragon's Breath returns buckshot shells plus fire and star powder, not generic parts. Ammo without a recipe is disassembled the old way.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_population">
+		<text>Population</text>
 	</string>
 </string_table>

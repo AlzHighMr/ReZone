@@ -8,13 +8,14 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.31"
+VERSION = "2.5.34"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
 TAB_GP = "rz_gameplay"
 TAB_HP = "rz_health"
 TAB_OT = "rz_other"
+TAB_POP = "rz_population"	-- Populace (od 2.5.34; drive soucast Gameplay)
 
 MUTANT_SPECIES = {
 	"dog", "pseudodog", "flesh", "boar", "snork", "tushkano", "rat", "cat", "zombie",
@@ -122,6 +123,7 @@ local function gp_ballistics()
 		desc("dc", "ui_mcm_rz_ball_craft"),
 		track("parts_loot", 1, 0, 3, 0.1, "rz_ball_parts_loot"),
 		track("craft_yield", 2, 1, 3, 1, "rz_ball_craft_yield"),
+		track("dis_yield", 0.5, 0.1, 1, 0.05, "rz_ball_dis_yield"),
 		line("l4"),
 		track("wear", 0.33, 0, 2, 0.01, "rz_ball_wear"),
 		desc("dh", "ui_mcm_rz_ball_helm_info"),
@@ -462,6 +464,7 @@ local function ot_pda()
 		desc("d", "ui_mcm_rz_pda_info"),
 		line("l1"),
 		check("corpses", true, "rz_pda_corpses"),
+		check("corpses_keep", false, "rz_pda_corpses_keep"),
 		desc("n", "ui_mcm_rz_pda_note", CLR_NOTE),
 	})
 end
@@ -527,12 +530,40 @@ local function main_master()
 end
 
 ------------------------------------------------------------
+-- Prevod ulozenych hodnot: stranky Populace (rz_pop) a Toulavi stalkeri (rz_walk)
+-- byly do 2.5.33 pod Gameplay -> zkopirovat do nove zalozky, aby se nastaveni neztratilo.
+local function migrate_population(pages)
+	local c = axr_main and axr_main.config
+	if not c or c:r_value("rezone_internal", "pop_tab_moved", 1, false) then return end
+	local n = 0
+	for _, pg in ipairs(pages) do
+		for _, o in ipairs(pg.gr or {}) do
+			if o.id and o.type and o.type ~= "slide" and o.type ~= "desc" and o.type ~= "line" then
+				local old = ROOT .. "/" .. TAB_GP .. "/" .. pg.id .. "/" .. o.id
+				local new = ROOT .. "/" .. TAB_POP .. "/" .. pg.id .. "/" .. o.id
+				local typ = o.val or 0
+				local v = c:r_value("mcm", old, typ)
+				if v ~= nil and c:r_value("mcm", new, typ) == nil then
+					c:w_value("mcm", new, v)
+					n = n + 1
+				end
+			end
+		end
+	end
+	c:w_value("rezone_internal", "pop_tab_moved", true)
+	c:save()
+	if n > 0 then printf("[ReZone] Populace: prevedeno %d ulozenych voleb do nove zalozky", n) end
+end
+
 function build_tree()
 	local L = rezone_links
 	local gp = { gp_trade(), gp_prices(), gp_loot() }
 	if rezone_mod_afspawn then gp[#gp + 1] = gp_afspawn() end
-	if rezone_mod_population then gp[#gp + 1] = gp_population() end
-	if rezone_mod_wander then rezone_mod_wander.read_cfg(); gp[#gp + 1] = gp_wander() end
+	local pop = {}
+	if rezone_mod_population then pop[#pop + 1] = gp_population() end
+	if rezone_mod_wander then rezone_mod_wander.read_cfg(); pop[#pop + 1] = gp_wander() end
+	pop[#pop + 1] = L.build_page(TAB_POP)
+	pcall(migrate_population, pop)
 	gp[#gp + 1] = gp_ballistics()
 	gp[#gp + 1] = gp_craft()
 	gp[#gp + 1] = gp_vision()
@@ -544,6 +575,7 @@ function build_tree()
 		gr = {
 			{ id = TAB_MAIN, gr = { main_master() } },
 			{ id = TAB_GP, gr = gp },
+			{ id = TAB_POP, gr = pop },
 			{ id = TAB_HP, gr = { hp_damage(), hp_stalkers(), hp_mutants(), hp_mutdmg(), hp_artefacts(), L.build_page(TAB_HP) } },
 			{ id = TAB_OT, gr = { ot_fx(), ot_binoc(), ot_pda(), ot_menu(), L.build_page(TAB_OT), ot_debug() } },
 		},

@@ -58,8 +58,8 @@ local function build(id)
 	s["rz_health/rz_af/punish_strength"] = m.punish
 	-- toulavi stalkeri
 	if rezone_mod_wander then
-		s["rz_gameplay/rz_walk/enabled"] = m.walk > 0
-		if m.walk > 0 then s["rz_gameplay/rz_walk/max_squads"] = m.walk end
+		s["rz_population/rz_walk/enabled"] = m.walk > 0
+		if m.walk > 0 then s["rz_population/rz_walk/max_squads"] = m.walk end
 	end
 	-- crafting: znamy recept zustava i po vyrobe (CoP)
 	s["rz_gameplay/rz_craft/keep_known"] = m.keep_known
@@ -69,9 +69,9 @@ local function build(id)
 	s["rz_gameplay/rz_loot/preset"] = m.loot
 	copy_into(s, "rz_gameplay/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
 	if rezone_mod_population then
-		s["rz_gameplay/rz_pop/enabled"] = true
-		s["rz_gameplay/rz_pop/preset"] = m.pop
-		copy_into(s, "rz_gameplay/rz_pop/", rezone_mod_population.PRESETS[m.pop])
+		s["rz_population/rz_pop/enabled"] = true
+		s["rz_population/rz_pop/preset"] = m.pop
+		copy_into(s, "rz_population/rz_pop/", rezone_mod_population.PRESETS[m.pop])
 	end
 	if rezone_mod_afspawn then
 		s["rz_gameplay/rz_afsp/enabled"] = true

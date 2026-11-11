@@ -1531,7 +1531,7 @@
 		<text>Zapnuto = vanilla (šedé teèky mrtvých). Vypnuto = mrtvoly se na minimapì nezobrazí u žádného PDA. Živé postavy zùstanou.</text>
 	</string>
 	<string id="ui_mcm_rz_pda_note">
-		<text>Projeví se po naètení uložené hry nebo pøechodu do jiné lokace. Soubory hry se nemìní.</text>
+		<text>Skrytí mrtvol se projeví po naètení uložené hry nebo pøechodu do jiné lokace. Trvalé teèky platí hned. Soubory hry se nemìní.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Je nainstalovaný Zone Customization Project. Obì nastavení populace by se násobila – používej jen jedno z nich.</text>
@@ -1547,5 +1547,20 @@
 	</string>
 	<string id="ui_mcm_rz_craft_keep_open_desc">
 		<text>Vanilla po každé akci okno zavøe. Zapnuto = dílna (výroba, oprava, vylepšení), vaøení i opraváøské sady zùstanou otevøené a výbìr se zachová, takže mùžeš pokraèovat. Když dojde vaøiè nebo opraváøská sada, okno se zavøe.</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_keep">
+		<text>Trvalé teèky mrtvol</text>
+	</string>
+	<string id="ui_mcm_rz_pda_corpses_keep_desc">
+		<text>Každá postava i mutant, který zemøe ve tvém okolí, dostane na minimapì teèku bez ohledu na dosah PDA. Teèka zmizí, až mrtvolu prohledáš. Funguje jen se zapnutými mrtvolami na minimapì.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_dis_yield">
+		<text>Výtìžnost rozebírání munice</text>
+	</string>
+	<string id="ui_mcm_rz_ball_dis_yield_desc">
+		<text>Kolik surovin vrátí rozebraná munice – podíl pøesnì tìch vìcí, ze kterých se v dílnì vyrábí (0,5 = polovina). Napø. Draèí dech vrátí brokové náboje a ohnivý a hvìzdný prach, ne obecné díly. Munice bez receptu se rozebírá postaru.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_population">
+		<text>Populace</text>
 	</string>
 </string_table>

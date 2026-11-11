@@ -389,12 +389,73 @@ local function part_chance(part)
 	return PART_CHANCE[SYS_GetParam(0, part, "type") or "bullet"] or 1
 end
 
+-- Vratnost podle receptu z dilny: z rozebrane munice se vrati cast (MCM "dis_yield", vychozi 50 %)
+-- presne tech surovin, ze kterych se vyrabi (napr. Draci dech -> brokovy naboj + ohnivy a hvezdny prach).
+-- Recept: x_<munice> = sada, recept, surovina,pocet, ...  (pocet = cela baleni / krabicky)
+-- Vystup receptu = 1 krabicka x "Vynos vyroby" (craft_yield). Munice bez receptu -> stary zpusob (ammo_parts.ltx).
+local recipe_cache = nil
+local function box_of(sec) return SYS_GetParam(2, sec, "box_size", 1) or 1 end
+
+local function load_recipes()
+	recipe_cache = {}
+	local ini = itms_manager and itms_manager.ini_craft
+	if not ini then return end
+	local n = 1
+	while ini:section_exist(tostring(n)) do
+		local ss = tostring(n)
+		for i = 0, (ini:line_count(ss) or 0) - 1 do
+			local _, id, val = ini:r_line(ss, i, "", "")
+			if id and id:sub(1, 2) == "x_" and val then
+				local res = id:sub(3)
+				local t = str_explode(val, ",")
+				if IsItem("ammo", res) and #t >= 4 and not recipe_cache[res] then
+					local ing = {}
+					for j = 3, #t - 1, 2 do
+						local isec, cnt = t[j], tonumber(t[j + 1])
+						if isec and cnt and ini_sys:section_exist(isec) then
+							local units = IsItem("ammo", isec) and cnt * box_of(isec) or cnt
+							ing[#ing + 1] = { sec = isec, units = units, ammo = IsItem("ammo", isec) and true or false }
+						end
+					end
+					if #ing > 0 then recipe_cache[res] = ing end
+				end
+			end
+		end
+		n = n + 1
+	end
+end
+
+local function recipe_of(sec)
+	if not recipe_cache then load_recipes() end
+	return recipe_cache[sec]
+end
+
+local function round_rnd(x)
+	local f = floor(x)
+	return f + ((random() < (x - f)) and 1 or 0)
+end
+
 local function breakdown(list, tool)
 	local out = {}
+	local share = clamp(tonumber(cfg("dis_yield", 0.5)) or 0.5, 0, 1)
+	local craft_out = max(1, floor((tonumber(cfg("craft_yield", 2)) or 2) + 0.5))
 	for _, box in ipairs(list) do
 		local sec = box:section()
-		local p = parts_of(sec)
-		if p then
+		local rec = recipe_of(sec)
+		local p = (not rec) and parts_of(sec)
+		if rec then
+			-- 1 vyroba = craft_out krabicek; rozebrany pocet naboju / naboje na vyrobu x surovina x podil
+			local n = box:ammo_get_count()
+			-- vyssi vynos vyroby plati jen pro beznou munici (stejne jako patch_craft_yield)
+			local outs = (sec:find("_bad$") or not parts_of(sec)) and 1 or craft_out
+			local frac = n / (box_of(sec) * outs)
+			for _, ing in ipairs(rec) do
+				local got = round_rnd(ing.units * frac * share)
+				if got > 0 then out[ing.sec] = (out[ing.sec] or 0) + got end
+			end
+			utils_item.discharge(box)
+			if tool then utils_item.degrade(tool, tonumber(parts_ini:r_string_ex(sec, "degrade")) or 0.001) end
+		elseif p then
 			local n, coef = box:ammo_get_count(), salvage(sec)
 			for i = 1, #p.list - 1, 2 do
 				local part, per = p.list[i], tonumber(p.list[i + 1]) or 1
@@ -412,7 +473,11 @@ end
 local function give_parts(t, title)
 	local str = ""
 	for sec, n in pairs(t) do
-		create_ammo(sec, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), AC_ID, n)
+		if IsItem("ammo", sec) then
+			create_ammo(sec, db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), AC_ID, n)
+		else
+			for _ = 1, n do alife_create_item(sec, db.actor) end
+		end
 		str = str .. "\\n- " .. n .. " " .. ui_item.get_sec_name(sec)
 	end
 	actor_menu.set_item_news("success", "weapon_ammo", "st_dis_text_11", title or "", gc("st_dis_text_9"), str)
@@ -445,7 +510,7 @@ local function patch_disassembly()
 	if not (IP and IP.disassembly_item) then return end
 	local orig_dis, orig_menu = IP.disassembly_item, IP.menu_disassembly
 	function IP.disassembly_item(obj, obj_d)
-		if obj and IsAmmo(obj) and parts_of(obj:section()) then return do_breakdown(obj, false) end
+		if obj and IsAmmo(obj) and (parts_of(obj:section()) or recipe_of(obj:section())) then return do_breakdown(obj, false) end
 		return orig_dis(obj, obj_d)
 	end
 	if orig_menu then
@@ -502,7 +567,7 @@ end
 local function register_menus()
 	-- celou davku munice na suroviny
 	core.add_menu(function(obj, bag, mode)
-		if in_inv(bag, mode) and IsAmmo(obj) and parts_of(obj:section()) and not parts_ini:r_bool_ex(obj:section(), "disallow") then
+		if in_inv(bag, mode) and IsAmmo(obj) and (parts_of(obj:section()) or recipe_of(obj:section())) and not parts_ini:r_bool_ex(obj:section(), "disallow") then
 			return "st_batch_breakdown"
 		end
 	end, function(obj) do_breakdown(obj, true) end)

@@ -12,7 +12,7 @@
 --]]
 
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_walk"
+local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_POP .. "/rz_walk"
 local CFG_FILE = "rezone\\wander.ltx"
 local TICK = 5000
 
