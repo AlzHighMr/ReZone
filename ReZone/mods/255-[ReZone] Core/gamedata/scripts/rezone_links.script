@@ -9,7 +9,7 @@
 local LTX = "rezone\\rezone_mcm_links.ltx"
 local CLR_DESC = { 255, 200, 200, 200 }
 local CLR_NOTE = { 255, 150, 150, 150 }
-local TABS = { gameplay = "rz_gameplay", health = "rz_health", zdravi = "rz_health", other = "rz_other", ostatni = "rz_other" }
+local TABS = { gameplay = "rz_gameplay", health = "rz_health", zdravi = "rz_health", other = "rz_other", ostatni = "rz_other", population = "rz_population", populace = "rz_population" }
 
 local cache = nil
 
@@ -34,7 +34,7 @@ end
 
 function load()
 	if cache then return cache end
-	cache = { rz_gameplay = {}, rz_health = {}, rz_other = {} }
+	cache = { rz_gameplay = {}, rz_health = {}, rz_other = {}, rz_population = {} }
 
 	local ini = ini_file(LTX)
 	if not (ini and ini.section_for_each) then return cache end
@@ -77,7 +77,7 @@ function exists(target)
 end
 
 function none_visible(tab)
-	local list = load()[tab]
+	local list = load()[tab] or {}
 	for i = 1, #list do
 		if exists(list[i].target) then return false end
 	end
@@ -112,7 +112,7 @@ function build_page(tab)
 		{ id = "links_none", type = "desc", text = "ui_mcm_rz_links_none", clr = CLR_NOTE, precondition = { none_visible, tab } },
 	}
 
-	local list = load()[tab]
+	local list = load()[tab] or {}
 	for i = 1, #list do
 		local l = list[i]
 		local pre = { exists, l.target }

@@ -1563,4 +1563,58 @@
 	<string id="ui_mcm_menu_rz_population">
 		<text>Populace</text>
 	</string>
+	<string id="ui_mcm_menu_rz_knife">
+		<text>Útoky nožem</text>
+	</string>
+	<string id="ui_mcm_rz_knife_title">
+		<text>Útoky nožem (NPC)</text>
+	</string>
+	<string id="ui_mcm_rz_knife_info">
+		<text>NPC s nožem v boji obèas vybìhnou na hráèe, stalkera nebo mutanta a sekají nožem – pøepadení ze zálohy, útok zblízka, lov mutantù a obrana proti nim. Port rx_knife z AI Additions (Rulix aka Bak). Další podrobnosti v configs\misc\rz_npc_knife.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_knife_enabled">
+		<text>Zapnout útoky nožem</text>
+	</string>
+	<string id="ui_mcm_rz_knife_enabled_desc">
+		<text>Vypnuto = NPC nožem neútoèí a nože se nerozdávají (jako vanilla).</text>
+	</string>
+	<string id="ui_mcm_rz_knife_spawn_chance">
+		<text>Šance na nùž</text>
+	</string>
+	<string id="ui_mcm_rz_knife_spawn_chance_desc">
+		<text>Šance, že NPC bez nože dostane nùž (0 = nedávat, 0.35 = výchozí). Každé NPC se losuje jen jednou.</text>
+	</string>
+	<string id="ui_mcm_rz_knife_courage">
+		<text>Odvaha (jak èasto útoèí)</text>
+	</string>
+	<string id="ui_mcm_rz_knife_courage_desc">
+		<text>Násobiè odvahy NPC. Víc = èastìji se rozbìhnou s nožem i z vìtší dálky (1 = výchozí, frakce mají vlastní odvahu v LTX).</text>
+	</string>
+	<string id="ui_mcm_rz_knife_actor_dmg">
+		<text>Zranìní hráèi</text>
+	</string>
+	<string id="ui_mcm_rz_knife_actor_dmg_desc">
+		<text>Násobiè pøidaného zranìní, když tì NPC sekne nožem (k zranìní nože samotného; 1 = výchozí, 0 = jen nùž).</text>
+	</string>
+	<string id="ui_mcm_rz_knife_mutant_hunt">
+		<text>Lov mutantù nožem</text>
+	</string>
+	<string id="ui_mcm_rz_knife_mutant_hunt_desc">
+		<text>NPC sami vyrážejí na slabší mutanty s nožem. Obrana proti mutantùm zblízka funguje vždy.</text>
+	</string>
+	<string id="ui_mcm_rz_knife_skip_story">
+		<text>Bez pøíbìhových postav</text>
+	</string>
+	<string id="ui_mcm_rz_knife_skip_story_desc">
+		<text>Obchodníci, zadavatelé úkolù a jiné pøíbìhové postavy nožem neútoèí.</text>
+	</string>
+	<string id="ui_mcm_rz_knife_sound">
+		<text>Zvuk útoku</text>
+	</string>
+	<string id="ui_mcm_rz_knife_sound_desc">
+		<text>Na zaèátku útoku nožem NPC zakøièí (náhodnì jeden ze dvou zvukù).</text>
+	</string>
+	<string id="ui_mcm_rz_knife_note">
+		<text>Zmìny platí hned. Šance na nùž a pøíbìhové postavy se projeví u NPC, která se naètou po zmìnì. Konkrétní NPC lze vyøadit v jeho logice: can_use_knife = false.</text>
+	</string>
 </string_table>

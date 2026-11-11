@@ -11,6 +11,8 @@
 	 * opravene chyby originalu: npc_id pred definici (nil), cls_id v is_low_target (nil),
 	   chybejici frakce v konfiguraci (pad pri indexovani nil), NPC uz neplati 300 RU za nuz
 	Nastaveni: configs\misc\rz_npc_knife.ltx
+	Soucast ReZone (od 2.5.37): MCM ReZone > Gameplay > Utoky nozem (zapnuti, sance na nuz, odvaha,
+	zraneni hraci, lov mutantu, story postavy, zvuky). Bez ReZone plati jen hodnoty z LTX.
 --]]
 
 --------------------------------------
@@ -52,6 +54,11 @@ local sets = {
 	start_sounds = { "rz_npc_knife\\knife_attack_1", "rz_npc_knife\\knife_attack_2" }, start_chance = 1, start_volume = 1,
 }
 local attack_clsids, defend_clsids = {}, {}
+
+-- MCM ReZone (Gameplay > Utoky nozem): prepisuje / nasobi hodnoty z LTX
+local MCM_PAGE = "rezone/rz_gameplay/rz_knife"
+local mcm = { enabled = true, courage = 1, hunt = true }
+local ltx = {}		-- hodnoty z LTX pred upravou z MCM
 local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }
 local DEF_COMM = { courage = 1, mutant_hunt = true }
 
@@ -116,6 +123,30 @@ local function load_config()
 	if sets.weapon_to_spawn and not ini_sys:section_exist(sets.weapon_to_spawn) then
 		log("! predmet %s neexistuje - noze se nerozdavaji", tostring(sets.weapon_to_spawn))
 		sets.spawn_chance = 0
+		sets.no_weapon = true
+	end
+	ltx.spawn_chance, ltx.actor_mult, ltx.skip_story, ltx.start_chance =
+		sets.spawn_chance, sets.actor_mult, sets.skip_story, sets.start_chance
+end
+
+local function apply_mcm()
+	local core = rawget(_G, "rezone_core") and rezone_core
+	if not (core and core.page) then return end
+	local g = core.page(MCM_PAGE)
+	local function v(key, def)
+		local x = g(key)
+		if x == nil then return def end
+		return x
+	end
+	mcm.enabled = v("enabled", true) ~= false
+	mcm.courage = tonumber(v("courage", 1)) or 1
+	mcm.hunt = v("mutant_hunt", true) ~= false
+	sets.spawn_chance = sets.no_weapon and 0 or (tonumber(v("spawn_chance", ltx.spawn_chance)) or ltx.spawn_chance)
+	sets.actor_mult = (ltx.actor_mult or 1) * (tonumber(v("actor_dmg", 1)) or 1)
+	sets.skip_story = v("skip_story", ltx.skip_story) ~= false
+	sets.start_chance = (v("sound", true) ~= false) and ltx.start_chance or 0
+	if not mcm.enabled then
+		for t in pairs(targets or {}) do targets[t] = nil end
 	end
 end
 
@@ -221,7 +252,7 @@ local function get_target(npc, be, st)
 	if targets[be_id] or dist > 14 or not npc:accessible(be_lvid) or level.vertex_position(be_lvid):distance_to_sqr(be_pos) > 2 then
 		return false
 	end
-	local courage = st.eva.courage
+	local courage = st.eva.courage * mcm.courage
 	local bec = be:clsid()
 	if not (attack_clsids[bec] or defend_clsids[bec]) then return false end
 	if is_easy_target(be, bec) then
@@ -266,7 +297,7 @@ local function get_target(npc, be, st)
 		if not knife_active and math.random() > 0.8 then return false end
 		local okb, bee = pcall(be.get_enemy, be)
 		bee = okb and bee and bee:id() == npc:id()
-		if st.eva.cmhunt and attack_clsids[bec] and be.health < npc.health and courage > attack_clsids[bec] + 3 * dist
+		if st.eva.cmhunt and mcm.hunt and attack_clsids[bec] and be.health < npc.health and courage > attack_clsids[bec] + 3 * dist
 			and not (be_see_me and bee) and npc.health > 1 - courage / 150 then
 			st.target, st.type = be_id, mutant_hunt
 			st.timer = st.timer + 6000
@@ -310,6 +341,10 @@ end
 
 function evaluator_knife_attack:evaluate()
 	local st = self.st
+	if not mcm.enabled then
+		if st.target then remove_target(self.object:id(), st) end
+		return false
+	end
 	if st.delay > time_global() then return false end
 	local npc = self.object
 	if not npc:alive() then return false end
@@ -347,13 +382,13 @@ function evaluator_knife_attack:evaluate()
 				return false
 			else
 				if st.type == sneak_attack and target:see(npc) then
-					if dist < self.courage / 9 then
+					if dist < self.courage * mcm.courage / 9 then
 						st.type = close_attack
 					else
 						remove_target(npc_id, st, 15000)
 						return false
 					end
-				elseif st.type == close_attack and self.courage < 15 + 4 * dist then
+				elseif st.type == close_attack and self.courage * mcm.courage < 15 + 4 * dist then
 					remove_target(npc_id, st, 15000)
 					return false
 				elseif st.type == mutant_hunt and dist > 15 then
@@ -727,6 +762,8 @@ end
 
 function on_game_start()
 	load_config()
+	apply_mcm()
+	if rawget(_G, "rezone_core") and rezone_core.on_change then rezone_core.on_change(apply_mcm) end
 	if not (rawget(_G, "LoadScheme") and modules and modules.stype_stalker) then
 		log("! LoadScheme / modules nenalezeny - utoky nozem vypnuty")
 		return

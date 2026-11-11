@@ -8,7 +8,7 @@
 	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
 --]]
 
-VERSION = "2.5.34"
+VERSION = "2.5.37"
 
 ROOT   = "rezone"
 TAB_MAIN = "rz_main"
@@ -96,6 +96,25 @@ local function gp_vision()
 		track("mutant", 0, 0, 1, 0.05, "rz_vision_mutant"),
 		line("l2"),
 		desc("n", "ui_mcm_rz_vision_note", CLR_NOTE),
+	})
+end
+
+-- Utoky nozem NPC (rz_npc_knife, port rx_knife z AI Additions / Anthology)
+local function gp_knife()
+	return page("rz_knife", {
+		slide("ui_mcm_rz_knife_title"),
+		desc("d", "ui_mcm_rz_knife_info"),
+		line("l1"),
+		check("enabled", true, "rz_knife_enabled"),
+		track("spawn_chance", 0.35, 0, 1, 0.05, "rz_knife_spawn_chance"),
+		track("courage", 1, 0.25, 3, 0.05, "rz_knife_courage"),
+		track("actor_dmg", 1, 0, 3, 0.05, "rz_knife_actor_dmg"),
+		line("l2"),
+		check("mutant_hunt", true, "rz_knife_mutant_hunt"),
+		check("skip_story", true, "rz_knife_skip_story"),
+		check("sound", true, "rz_knife_sound"),
+		line("l3"),
+		desc("n", "ui_mcm_rz_knife_note", CLR_NOTE),
 	})
 end
 
@@ -562,11 +581,11 @@ function build_tree()
 	local pop = {}
 	if rezone_mod_population then pop[#pop + 1] = gp_population() end
 	if rezone_mod_wander then rezone_mod_wander.read_cfg(); pop[#pop + 1] = gp_wander() end
-	pop[#pop + 1] = L.build_page(TAB_POP)
 	pcall(migrate_population, pop)
 	gp[#gp + 1] = gp_ballistics()
 	gp[#gp + 1] = gp_craft()
 	gp[#gp + 1] = gp_vision()
+	if rz_npc_knife then gp[#gp + 1] = gp_knife() end
 	gp[#gp + 1] = gp_meds()
 	gp[#gp + 1] = gp_needs()
 	gp[#gp + 1] = L.build_page(TAB_GP)
