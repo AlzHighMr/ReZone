@@ -49,7 +49,29 @@ function load()
 	set_registered(any)
 end
 
+-- 2.5.40: predvolba Call of Pripyat mela mutanty x0.4 a udery x0.5 - s EFTH skoro nulove poskozeni.
+-- Kdo ma ulozenou CoP predvolbu se starymi cisly, dostane jednou nove (vlastni upravy zustanou).
+local function migrate_cop()
+	local c = axr_main and axr_main.config
+	if not c or c:r_value("rezone_internal", "pdmg_cop_v2", 1, false) then return end
+	local pre = tonumber(c:r_value("mcm", PAGE .. "/preset", 2)) or 0
+	if pre == 1 then
+		local function fix(key, old, new)
+			local v = tonumber(c:r_value("mcm", PAGE .. "/" .. key, 2))
+			if v and math.abs(v - old) < 0.001 then
+				c:w_value("mcm", PAGE .. "/" .. key, new)
+				if ui_mcm and ui_mcm.set then pcall(ui_mcm.set, PAGE .. "/" .. key, new) end
+			end
+		end
+		fix("wound", 0.4, 1.0)
+		fix("strike", 0.5, 0.75)
+	end
+	c:w_value("rezone_internal", "pdmg_cop_v2", true)
+	c:save()
+end
+
 function on_game_start()
+	pcall(migrate_cop)
 	core.on_change(load)
 	load()
 end

@@ -23,9 +23,10 @@ end
 
 PRESETS = {
 	-- Call of Pripyat pro novacky: kulky x0.35 (zbrane NPC v Anomaly bijou silneji nez v CoP
-	-- a pruraz brneni CoP pusti plne poskozeni), mutanti x0.4, pady/udery x0.5, vybuchy x0.3, ohen x0.65,
-	-- anomalie (elektro, chemie, slaby ohen), radiace a psi x0.75
-	[1] = P(0.35, 0.40, 0.50, 0.30, 0.65, 0.75, 0.75, 0.75, 0.75, 0.75), -- Call of Pripyat
+	-- a pruraz brneni CoP pusti plne poskozeni), mutanti x1 (kousnuti/drapy mutantu jsou v Anomaly
+	-- stejne jako v CoP; x0.4 spolu s EFTH x0.6 delalo skoro nulu), pady/udery x0.75, vybuchy x0.3,
+	-- ohen x0.65, anomalie (elektro, chemie, slaby ohen), radiace a psi x0.75
+	[1] = P(0.35, 1.00, 0.75, 0.30, 0.65, 0.75, 0.75, 0.75, 0.75, 0.75), -- Call of Pripyat
 	[2] = P(1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00), -- Normalni (vanilla)
 	[3] = P(0.70, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00), -- Anomaly: jen kulky mirnejsi
 	[4] = P(1.50, 1.60, 1.40, 1.80, 1.50, 1.40, 1.50, 1.50, 1.40, 1.50), -- Hardcore
