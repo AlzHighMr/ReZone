@@ -21,9 +21,9 @@ end
 
 -- id predvolby -> { balistika (0/1/2, zaroven profil obleku), poskozeni hrace, korist, populace, EFTH, artefakty }
 local MAP = {
-	-- Call of Pripyat pro novacky: mekci, vic penez za artefakty, obchodnici prodavaji vse
-	[1] = { ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5, afsp = 2, tough = 0.9, wear = 0.33,
-	        prices = 2, prices_on = true, gamma = false, stock = false, mut = 0.8, punish = 0.5, walk = 0, keep_known = true },
+	-- Call of Pripyat (puvodni predvolba z 2.2.0): jen balistika CoP, poskozeni hrace, korist,
+	-- populace a obtiznost EFTH. Ostatni stranky (ceny, mutanti, artefakty...) nemeni.
+	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5 },
 	-- Anomaly: vanilla ekonomika a mutanti
 	[2] = { ball = 1, pdmg = 3, loot = 2, pop = 1, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
 	        prices = 1, prices_on = false, gamma = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
@@ -37,6 +37,22 @@ local function build(id)
 	local m = MAP[id]
 	if not m then return {} end
 	local s = {}
+	if m.classic then
+		s["rz_gameplay/rz_ball/preset"] = m.ball
+		s["rz_gameplay/rz_ball/npc_tough"] = 1
+		s["rz_health/rz_pdmg/preset"] = m.pdmg
+		copy_into(s, "rz_health/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
+		s["rz_gameplay/rz_loot/enabled"] = true
+		s["rz_gameplay/rz_loot/preset"] = m.loot
+		copy_into(s, "rz_gameplay/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
+		if rezone_mod_population then
+			s["rz_population/rz_pop/enabled"] = true
+			s["rz_population/rz_pop/preset"] = m.pop
+			copy_into(s, "rz_population/rz_pop/", rezone_mod_population.PRESETS[m.pop])
+		end
+		s["!efth/efth_gen/difficulty"] = m.efth
+		return s
+	end
 	s["rz_gameplay/rz_ball/preset"] = m.ball
 	s["rz_gameplay/rz_ball/npc_tough"] = m.tough
 	s["rz_gameplay/rz_ball/wear"] = m.wear
