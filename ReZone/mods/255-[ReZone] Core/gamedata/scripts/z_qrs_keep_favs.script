@@ -1,0 +1,30 @@
+orig_keep_items = nil
+
+keep_items_script = nil
+if actor_stash_patch then
+	keep_items_script = actor_stash_patch
+else
+	keep_items_script = item_backpack
+end
+
+orig_item_backpack_actor_on_item_use = item_backpack.actor_on_item_use
+item_backpack.actor_on_item_use = function(obj)
+
+	if (not obj) or (obj:section() ~= "itm_actor_backpack") or (not zzz_rax_sortingplus_mcm) then
+		orig_item_backpack_actor_on_item_use(obj)
+		return
+	end
+
+	if not orig_keep_items then
+		orig_keep_items = {}
+		copy_table(orig_keep_items, keep_items_script.keep_items)
+	end
+
+	keep_items_script.keep_items = dup_table(orig_keep_items)
+
+	for k, _ in pairs(zzz_rax_sortingplus_mcm.favorite_itms) do
+		keep_items_script.keep_items[k] = true
+	end
+
+	orig_item_backpack_actor_on_item_use(obj)
+end
