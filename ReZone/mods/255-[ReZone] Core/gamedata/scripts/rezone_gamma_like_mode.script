@@ -1,0 +1,89 @@
+local CFG = "character_creation"
+local KEY = "new_game_rz_gamma"
+
+local function cfg_on()
+	local c = axr_main and axr_main.config
+	return c and c:r_value(CFG, KEY, 1) == true
+end
+
+-- je rezim zapnuty v teto hre?
+function enabled()
+	local ok, m = pcall(alife_storage_manager.get_state)
+	if ok and m then
+		if m.rz_gamma_mode then return true end
+		if m.rz_gamma_checked then return false end
+	end
+	return cfg_on()		-- prave zalozena hra: klic jeste nebyl presunut do savu
+end
+
+-------------------------------------------------------------------- menu Nova hra
+function patch_ui()
+	local cls = ui_mm_faction_select and ui_mm_faction_select.UINewGame
+	if not cls or cls.__rz_gamma then return end
+	cls.__rz_gamma = true
+
+	local base_controls = cls.Main_Controls
+	cls.Main_Controls = function(self, ...)
+		base_controls(self, ...)
+		if not (self.templ_options or self.dialog) then return end
+		local ck = modxml_rezone_newgame and modxml_rezone_newgame.init_option(self, "rz_gamma")
+		if not ck then return end
+		ck:SetCheck(false)		-- vychozi vypnuto
+		-- vysvetleni pri najeti mysi (vanilla Update: st_mm_ck_rz_gamma_desc)
+		if self.ck_states then self.ck_states["ck_rz_gamma"] = false end
+	end
+
+	local base_start = cls.OnStartGame
+	cls.OnStartGame = function(self, ...)
+		local c = axr_main and axr_main.config
+		if c then
+			c:w_value(CFG, KEY, (self.ck_rz_gamma and self.ck_rz_gamma:GetCheck()) and true or nil)
+		end
+		return base_start(self, ...)
+	end
+end
+
+-------------------------------------------------------------------- skryse
+local function patch_stashes()
+	local tm = treasure_manager
+	if not tm or tm.__rz_gamma then return end
+	tm.__rz_gamma = true
+	local base_create = tm.create_random_stash
+	if not base_create then return end
+	tm.create_random_stash = function(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
+		if no_spot == true and hint == "stash" and bonus_items == nil and spawn_local == nil and inv_box == nil
+			and enabled() then
+			return		-- prvni plneni beden na zacatku hry: v GAMMA rezimu nic
+		end
+		return base_create(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
+	end
+end
+
+-------------------------------------------------------------------- hra
+-- volba z menu plati jen pro prave zalozenou hru (save bez znacky rz_gamma_checked)
+local function on_game_load()
+	local ok, m = pcall(alife_storage_manager.get_state)
+	if not (ok and m) or m.rz_gamma_checked then return end
+	if cfg_on() then m.rz_gamma_mode = true end
+	-- klic se smaze az po prvni aktualizaci (treasure_manager ho muze cist ve stejnem on_game_load)
+end
+
+local function actor_on_first_update()
+	local ok, m = pcall(alife_storage_manager.get_state)
+	if ok and m and not m.rz_gamma_checked then
+		m.rz_gamma_checked = true
+		if cfg_on() then m.rz_gamma_mode = true end
+	end
+	if cfg_on() then
+		local c = axr_main.config
+		c:w_value(CFG, KEY)
+		c:save()
+	end
+	if rezone_mod_trade and rezone_mod_trade.load then pcall(rezone_mod_trade.load) end
+end
+
+function on_game_start()
+	pcall(patch_stashes)
+	RegisterScriptCallback("on_game_load", on_game_load)
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end

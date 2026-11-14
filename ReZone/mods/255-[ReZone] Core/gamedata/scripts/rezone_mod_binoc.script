@@ -1,15 +1,3 @@
---[[
-	ReZone MCM - detekce cilu v dalekohledu (Ostatni > Dalekohled)
-
-	Engine ma dve cesty, jak dalekohled / zamerovac oramuje a hlasi postavy a mutanty:
-	  - vision_present = true        (dalekohled wpn_binoc, wpn_binoc_inv a kopie z modu)
-	  - scope_alive_detector = <sekce> (upgrade "automaticke zachyceni cilu", nektere zamerovace)
-	Vypnuto: vsem sekcim, ktere to maji, se v pameti hry nastavi vision_present = false
-	a scope_alive_detector prazdny. Puvodni hodnoty se pamatuji (rz_orig_*) a pri zapnuti vrati.
-	Soubory hry se nemeni. Engine to cte pri nacteni predmetu -> projevi se po nacteni savu
-	(nebo u nove ziskaneho dalekohledu). Vyzaduje modded exes (ini_sys:w_string).
---]]
-
 local core = rezone_core
 local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_binoc"
 

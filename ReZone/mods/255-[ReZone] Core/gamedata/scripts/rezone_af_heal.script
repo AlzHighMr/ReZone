@@ -1,14 +1,5 @@
---[[
-	ReZone - vzacne artefakty leci casti tela s EFT Health System (configs\rezone\af_heal.ltx)
-
-	EFT Health System (zzz_efth) ridi zdravi pres casti tela a vanilla regeneraci zahodi, takze
-	"leciva" artefakta by s nim nedelala nic. Tady se jejich leceni posle primo na casti tela.
-	Bez EFT Health System (nebo kdyz chybi ocekavane funkce) se nic neregistruje - zadny log, zadna chyba.
-	Nastaveni: ReZone MCM > Zdravi > Artefakty (Leceni casti tela, Sila).
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_af"
+local PAGE = rezone_mcm.path("rz_af")
 local CFG = "rezone\\af_heal.ltx"
 
 local cfg = { on = true, mult = 1 }

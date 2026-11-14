@@ -1,14 +1,3 @@
---[[
-	ReZone - mrtvoly na minimape (ReZone MCM > Ostatni > PDA)
-
-	Kazde PDA (1, 2, 3 i PDA z modu) ukazuje na minimape postavy v dosahu (radius 68 / 120 / 240 m).
-	Kdyz NPC zemre, jeho znacka se zmeni na sedou "deadbody_location" (spot deadbody_mini_spot).
-	Vypnuto: DXML pri nacteni map_spots (vcetne ui\map_spots_relations.xml, kde je spot ve vanille)
-	nastavi deadbody_mini_spot sirku a vysku 0
-	- stejne jako vanilla schovava nepratele (enemy_mini_spot). Zadny soubor se neprepisuje.
-	Engine cte map_spots.xml pri nacteni urovne -> projevi se po nacteni savu / prechodu do jine lokace.
---]]
-
 local PATH = "rezone/rz_other/rz_pda/"
 local FILES = {
 	["ui\\map_spots.xml"] = true, ["ui\\map_spots_16.xml"] = true,

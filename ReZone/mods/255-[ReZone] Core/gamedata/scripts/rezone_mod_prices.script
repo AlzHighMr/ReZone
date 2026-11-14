@@ -1,14 +1,7 @@
---[[
-	ReZone MCM - ceny u obchodniku podle druhu predmetu
-	Napad a druhy: Configurable Item Cost Modifiers (TheMrDemonized). Vlastni kod:
-	- jedna cache, handler se registruje jen kdyz je zapnuto a neco se meni
-	- zvlast celkovy nasobic pro prodej (hrac prodava) a nakup (hrac kupuje)
-	- helmy podle tridy (lehka / stredni / tezka)
---]]
-
+-- napad: Configurable Item Cost Modifiers (TheMrDemonized), vlastni kod
 local core = rezone_core
 local PR = rezone_prices
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_prices"
+local PAGE = rezone_mcm.path("rz_prices")
 local EPS = 0.0001
 
 local by_kind = {}

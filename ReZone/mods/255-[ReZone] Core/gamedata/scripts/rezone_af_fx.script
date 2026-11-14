@@ -25,7 +25,7 @@ local UPDATE_MS  = 50
 local FADE_IN    = 0.18          -- poison level per second
 local LINGER_S   = 30            -- after-effect length (s)
 
-local CFG_P = "rezone/rz_health/rz_af/"
+local CFG_P = rezone_mcm.path("rz_af") .. "/"
 local function cfg(k, def)
 	local v = rezone_core.get(CFG_P .. k)
 	if v == nil then return def end

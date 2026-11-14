@@ -1,20 +1,5 @@
---[[
-	ReZone MCM - omezeni zasob obchodniku (napad: Trader Destockifier, vlastni kod)
-
-	Po kazdem doplneni zasob (restock) obchodnik nechá jen omezeny pocet kusu z kazde
-	skupiny (puska, pistole, noze, granaty, doplnky zbrani, armory, helmy, batohy,
-	zasobniky, jidlo, leky, opravy) a cast munice; zbytek zmizi. Obchodnik tak neni
-	nekonecny obchod se vsim.
-
-	- doplneni zasob hlasi rezone_core.on_restock (nepotrebuje trader_autoinject)
-	- omezeni bezi az chvili po doplneni, takze zahrne i veci, ktere pridaji jine mody
-	- nesaha na spolecniky, na veci, ktere ma obchodnik na sobe (sloty), ani na questove veci
-	- -1 = bez omezeni pro skupinu; nahoda +- zadana procenta
-	- vypnuto = nic se neobali
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_trade"
+local PAGE = rezone_mcm.path("rz_trade")
 
 -- skupiny: id volby -> vychozi limit (rezone_mcm stavi posuvniky z tohoto seznamu)
 GROUPS = {
@@ -175,7 +160,7 @@ end
 
 function load()
 	local g = core.page(PAGE)
-	cfg.on = g("stock") == true
+	cfg.on = g("enabled") ~= false and g("stock") == true
 	cfg.limits = {}
 	for _, it in ipairs(GROUPS) do
 		cfg.limits[it[1]] = tonumber(g(it[1])) or it[2]

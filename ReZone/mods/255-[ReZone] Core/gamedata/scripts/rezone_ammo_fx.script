@@ -1,13 +1,3 @@
---[[
-	ReZone - efekty munice (zvlastni naboje, dopad, vystrel, granaty)
-
-	Kazdy naboj v configs\rezone\ammo.ltx muze mit:
-	  effect     = efekt pri zasahu (pre = pred vypoctem, post = po nem)
-	  on_impact  = efekt pri dopadu strely kamkoli
-	  on_shoot   = efekt pri vystrelu
-	Seznam efektu je v tabulce EFFECTS niz. Vypocet poskozeni: rezone_ballistics.
---]]
-
 local random, floor, max, min = math.random, math.floor, math.max, math.min
 local RB = rezone_ballistics
 

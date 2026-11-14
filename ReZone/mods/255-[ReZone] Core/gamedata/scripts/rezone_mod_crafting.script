@@ -1,33 +1,8 @@
---[[
-	ReZone Crafting 1.2 (drive ReZone Dilna) - dalsi zalozky ve vanilla dilne + recepty zmizi po precteni
-	Nahrazuje Banjaji's Crafting System. Vlastni kod, neprepisuje zadny vanilla soubor.
-
-	Zalozky
-	- vanilla dilna, prohlizec receptu (item_recipe) i clanky receptu v PDA ctou recepty
-	  ze sekci [1], [2], ... v craft.ltx, dokud nektera chybi
-	- tento skript pri startu hry pripoji sekce z items\settings\rezone_craft_tabs.ltx
-	  do nactene craft.ltx (jen v pameti hry) jako dalsi cisla za posledni existujici
-	  zalozkou -> vsechny tri obrazovky je vidi bez dalsich uprav a nezalezi na tom,
-	  kolik zalozek pridaly jine mody (napr. ReZone Ballistics [7])
-
-	Znamé recepty (PDA > Encyklopedie > Poznamky)
-	- souhrnny clanek: vsechny recepty, ktere umis, podle zalozek dilny, se surovinami
-	- kazdy recept ma dal i svuj vlastni vanilla clanek
-
-	Kompatibilita
-	- Craft use in tooltip (zzz_craft_use_in_tooltip_mcm): vlastni getCraftableItems pro vanilla
-	  format, cte stejnou craft.ltx vcetne pridanych zalozek (nahrada Banjaji patche)
-
-	Recepty
-	- vanilla po precteni recept nechava v inventari; tady se po precteni odebere
-	  (volitelne: uz znamy recept si nechas na prodej)
---]]
-
 VERSION = "1.2"
 TABS_FILE = "items\\settings\\rezone_craft_tabs.ltx"
 TABS_LIST = "rezone_craft_tabs"
 
-local OPT = "rezone/rz_gameplay/rz_craft/"
+local OPT = rezone_mcm.path("rz_craft") .. "/"
 local defaults = { remove_recipe = true, keep_known = false, keep_open = true }
 
 local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy

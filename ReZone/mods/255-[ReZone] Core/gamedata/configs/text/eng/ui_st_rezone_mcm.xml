@@ -3,11 +3,17 @@
 	<string id="ui_mcm_menu_rezone">
 		<text>ReZone</text>
 	</string>
-	<string id="ui_mcm_menu_rz_gameplay">
-		<text>Gameplay</text>
+	<string id="ui_mcm_menu_rz_econ">
+		<text>Economy</text>
 	</string>
-	<string id="ui_mcm_menu_rz_health">
-		<text>Health</text>
+	<string id="ui_mcm_menu_rz_combat">
+		<text>Combat</text>
+	</string>
+	<string id="ui_mcm_menu_rz_world">
+		<text>World</text>
+	</string>
+	<string id="ui_mcm_menu_rz_survival">
+		<text>Survival</text>
 	</string>
 	<string id="ui_mcm_menu_rz_other">
 		<text>Other</text>
@@ -48,14 +54,8 @@
 	<string id="ui_mcm_rz_pdmg_title">
 		<text>Player damage</text>
 	</string>
-	<string id="ui_mcm_rz_pdmg_off_note">
-		<text>Off = ReZone does not touch hits at all. Vanilla damage or another mod applies.</text>
-	</string>
 	<string id="ui_mcm_rz_pdmg_hits">
 		<text>By hit type</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mutants">
-		<text>By attacking mutant (stacks with hit type)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_enabled">
 		<text>Enable ReZone damage system</text>
@@ -71,9 +71,6 @@
 	</string>
 	<string id="ui_mcm_rz_pdmg_all_desc">
 		<text>Multiplies all hit types (presets don't change it).</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mut_enabled">
-		<text>Enable per-mutant multipliers</text>
 	</string>
 	<string id="ui_mcm_rz_muthp_title">
 		<text>Mutant toughness</text>
@@ -192,53 +189,17 @@
 	<string id="ui_mcm_rz_sp_pseudo_gigant">
 		<text>Pseudogiant</text>
 	</string>
-	<string id="ui_mcm_rz_link_arti_hitnum">
-		<text>Arti ballistics - damage numbers</text>
-	</string>
-	<string id="ui_mcm_rz_link_arti_page">
-		<text>Arti ballistics - settings</text>
-	</string>
-	<string id="ui_mcm_rz_link_ammomaker">
-		<text>Ammo crafting - settings</text>
-	</string>
 	<string id="ui_mcm_menu_rz_trade">
 		<text>Trade</text>
 	</string>
 	<string id="ui_mcm_rz_trade_title">
-		<text>GAMMA-style trading</text>
+		<text>Trading</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Traders neither buy nor sell weapons, outfits and helmets. You get gear from corpses, friends and stashes, repair it and strip it for parts. Nothing is deleted, it is just hidden in the trade window or can't be sold - turning it off brings everything back.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma">
-		<text>Play like GAMMA</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma_desc">
-		<text>Main switch. Off = trading as before.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Traders don't buy any of it</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Weapons (and outfits with helmets) from your inventory can't be sold - the trader isn't interested.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Traders don't sell any of it</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Weapons (and outfits with helmets) disappear from traders' stock.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee">
-		<text>Knives too</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee_desc">
-		<text>Off = knives can still be bought and sold. Grenades, ammo and attachments are never restricted.</text>
+		<text>Buy-back, helmets and trader stock. "Play like GAMMA" (traders neither sell nor buy weapons, outfits and helmets, stashes only with coordinates) is now a game mode in the New Game menu - you tick it when starting a game and it applies to the whole playthrough.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Weapons = pistols, SMGs, rifles, shotguns and sniper rifles. Grenades, ammo, attachments and parts are never restricted.</text>
-	</string>
-	<string id="st_rz_trade_no_weapons">
-		<text>Traders do not buy weapons (ReZone: GAMMA-style trading)</text>
+		<text>Play like GAMMA is in New Game > Options (off by default). It is no longer switched here.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_prices">
 		<text>Prices</text>
@@ -474,9 +435,6 @@
 	<string id="ui_mcm_rz_loot_ammo_h">
 		<text>Ammo</text>
 	</string>
-	<string id="st_rz_trade_no_helmets">
-		<text>Traders do not buy helmets (ReZone)</text>
-	</string>
 	<string id="ui_mcm_menu_rz_pop">
 		<text>Population</text>
 	</string>
@@ -637,7 +595,7 @@
 		<text>Traders do not buy helmets</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_sell_desc">
-		<text>You cannot sell helmets to them. Works even without GAMMA trading.</text>
+		<text>You cannot sell them helmets. Works without Play like GAMMA too.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_buy">
 		<text>Traders do not sell helmets</text>
@@ -700,13 +658,13 @@
 		<text>Items are counted per piece (ammo boxes, packs). Items you sold are not limited until the next restock.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_ball">
-		<text>Ballistics</text>
+		<text>Ballistics and toughness</text>
 	</string>
 	<string id="ui_mcm_rz_ball_title">
-		<text>ReZone ballistics</text>
+		<text>ReZone ballistics and toughness</text>
 	</string>
 	<string id="ui_mcm_rz_ball_info">
-		<text>Own damage calculation for NPCs and mutants hit by your bullets. Ammo data: configs\rezone\ammo.ltx. NPC vs NPC fights are calculated by the game as before.</text>
+		<text>How NPCs and mutants take your bullets (ballistics preset) and how much stalkers can take overall (toughness by rank). Ammo data: configs\rezone\ammo.ltx. NPC vs NPC fights are calculated by the game as before.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset">
 		<text>Damage preset</text>
@@ -725,12 +683,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
 		<text>CoP: if the round beats the armor, damage drops by (AP - armor) / AP; if not, only blunt impact gets through. Use AP rounds against armored targets, regular ones against unarmored.</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough">
-		<text>NPC toughness</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough_desc">
-		<text>Extra multiplier on top of the preset (2 = NPCs take twice as much).</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Ammo materials and crafting</text>
@@ -1425,9 +1377,6 @@
 	<string id="ui_mcm_rz_needs_note">
 		<text>Applies right away. Thirst and sleepiness only work when enabled in Options > Gameplay. Game files are not changed.</text>
 	</string>
-	<string id="ui_mcm_menu_rz_sthp">
-		<text>Stalker toughness</text>
-	</string>
 	<string id="ui_mcm_rz_sthp_title">
 		<text>Stalker toughness by rank</text>
 	</string>
@@ -1536,12 +1485,6 @@
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Zone Customization Project is installed. Both population settings would stack - use only one of them.</text>
 	</string>
-	<string id="ui_mcm_rz_trade_outfits">
-		<text>Also outfits and helmets</text>
-	</string>
-	<string id="ui_mcm_rz_trade_outfits_desc">
-		<text>On = like GAMMA, outfits and helmets can't be bought or sold either. Off = weapons only.</text>
-	</string>
 	<string id="ui_mcm_rz_craft_keep_open">
 		<text>Keep windows open after use</text>
 	</string>
@@ -1559,9 +1502,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_dis_yield_desc">
 		<text>How much disassembled ammo gives back - a share of exactly the items it is crafted from in the workshop (0.5 = half). E.g. Dragon's Breath returns buckshot shells plus fire and star powder, not generic parts. Ammo without a recipe is disassembled the old way.</text>
-	</string>
-	<string id="ui_mcm_menu_rz_population">
-		<text>Population</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
 		<text>Knife attacks</text>
@@ -1616,5 +1556,32 @@
 	</string>
 	<string id="ui_mcm_rz_knife_note">
 		<text>Changes apply immediately. Knife chance and story characters apply to NPCs loaded after the change. A specific NPC can be excluded in its logic: can_use_knife = false.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_mut_link">
+		<text>Mutant toughness is on the next page, Mutant toughness.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled">
+		<text>Enable ReZone ballistics</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled_desc">
+		<text>Off = damage from your bullets is calculated by the game like vanilla Anomaly. Ammo and outfit data (penetration classes, outfit profile) and special ammo effects stay.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled">
+		<text>Enable trade settings</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled_desc">
+		<text>Off = minimum buy condition, helmet bans and stock limits do not apply (trade like Anomaly). The Play like GAMMA new game mode still applies.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled">
+		<text>Enable NPC vision changes</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled_desc">
+		<text>Off = stalker and mutant vision is like vanilla Anomaly (original values are restored right away).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled">
+		<text>Enable hunger, thirst and sleep changes</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled_desc">
+		<text>Off = hunger, thirst and sleepiness grow like vanilla Anomaly.</text>
 	</string>
 </string_table>

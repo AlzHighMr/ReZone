@@ -1,0 +1,414 @@
+local CFG = "character_creation"
+local KEY_BR = "new_game_blackroad_mode"
+local KEY_TH = "new_game_treasurehunt_mode"
+
+local BR_LOADOUT = "wpn_knife8,cash,device_flashlight,bolt_bullet,wpn_mp412,ammo_357_hp_mag,ammo_357_hp_mag,ammo_357_hp_mag,ammo_357_hp_mag,antirad,antirad,medkit,bandage,bandage,bandage,brewed_coffee"
+local BR_TOXIC = ",helm_resp,af_mask_filter_3"
+local BR_HOUR = 2
+
+-- Lov pokladu: o kolik vic "vahy" (= predmetu) dostane skrys
+local TH_COMMON_MIN, TH_COMMON_MAX = 500, 1000
+local TH_RARE_MIN, TH_RARE_MAX = 1000, 1500
+
+local function cfg_get(key)
+	local c = axr_main and axr_main.config
+	return c and c:r_value(CFG, key, 1) == true
+end
+
+local function storage()
+	return alife_storage_manager and alife_storage_manager.get_state()
+end
+
+function is_blackroad()
+	local m = storage()
+	return (m and m.enable_blackroad_mode) or cfg_get(KEY_BR)
+end
+
+-- Lov pokladu je soucast rezimu Hrat jako GAMMA (stare savy s vlastnim Lovem pokladu plati dal)
+function is_treasurehunt()
+	local m = storage()
+	if m and m.enable_treasurehunt_mode then return true end
+	return cfg_get(KEY_TH) or (rezone_gamma_like_mode and rezone_gamma_like_mode.enabled()) or false
+end
+
+-------------------------------------------------------------------- nova hra (UI)
+local function exist_item(sec)
+	return ini_sys and ini_sys:section_exist(sec)
+end
+
+local function blackroad_loadout()
+	local out = {}
+	for _, sec in ipairs(str_explode(BR_LOADOUT, ",")) do
+		if exist_item(sec) then out[#out + 1] = sec end
+	end
+	if rawget(_G, "toxic_air") then
+		for _, sec in ipairs(str_explode(BR_TOXIC:sub(2), ",")) do
+			if exist_item(sec) then out[#out + 1] = sec end
+		end
+	end
+	return table.concat(out, ",")
+end
+
+local function blackroad_location(story)
+	local ini = ini_file("plugins\\new_game_start_locations.ltx")
+	local list = ini:r_string_ex("rz_blackroad", story and "story" or "all") or "1,2,3,4,5,6,7"
+	local ok = {}
+	for _, n in ipairs(str_explode(list, ",")) do
+		local sec = "blackroad_start_location_" .. n
+		if ini:section_exist(sec) and ini:r_float_ex(sec, "lvid") then ok[#ok + 1] = sec end
+	end
+	if #ok == 0 then return nil end
+	return ok[math.random(#ok)]
+end
+
+local function uncheck(self, name)
+	local ck = self[name]
+	if ck then
+		ck:SetCheck(false)
+		if self.ck_states then self.ck_states[name] = false end
+	end
+end
+
+function patch_ui()
+	local cls = ui_mm_faction_select and ui_mm_faction_select.UINewGame
+	if not cls or cls.__rz_ngm then return end
+	cls.__rz_ngm = true
+
+	local base_controls = cls.Main_Controls
+	cls.Main_Controls = function(self, ...)
+		base_controls(self, ...)
+		if not (self.templ_options or self.dialog) then return end
+		-- volby, ktere uz vytvoril puvodni addon (Orleon New Game Extended), se nezdvojuji
+		self.__rz_own_br = not self.ck_blackroad_mode
+		if not self.__rz_own_br then printf("ReZone menu Nova hra: Black Road uz vytvoril jiny addon (Orleon?) - ReZone ho jen zarovna") end
+		self.__rz_own_th = false		-- Lov pokladu nema vlastni volbu, je v Hrat jako GAMMA
+		local ok = true
+		if self.__rz_own_br then
+			ok = modxml_rezone_newgame and modxml_rezone_newgame.init_option(self, "blackroad_mode") and true or false
+		end
+		if not ok then
+			printf("! ReZone rezimy: chybi XML prvky (DXML) - volby Black Road / Lov pokladu nejsou v menu")
+			if self.__rz_own_br then self.ck_blackroad_mode = nil end
+			if self.__rz_own_th then self.ck_treasurehunt_mode = nil end
+			self.__rz_own_br, self.__rz_own_th = false, false
+			return
+		end
+		-- hint pri najeti mysi (vanilla Update: st_mm_<nazev>_desc)
+		if self.ck_states then
+			if self.__rz_own_br then self.ck_states["ck_blackroad_mode"] = false end
+			if self.__rz_own_th then self.ck_states["ck_treasurehunt_mode"] = false end
+		end
+	end
+
+	local base_callbacks = cls.Main_CallBacks
+	cls.Main_CallBacks = function(self, ...)
+		base_callbacks(self, ...)
+		if self.ck_blackroad_mode and self.__rz_own_br then
+			self:AddCallback("check_blackroad_mode", ui_events.BUTTON_CLICKED, self.OnCheckSetBlackroad, self)
+		end
+		if self.ck_treasurehunt_mode and self.__rz_own_th then
+			self:AddCallback("check_treasurehunt_mode", ui_events.BUTTON_CLICKED, self.OnCheckSetTreasureHunt, self)
+		end
+	end
+
+	-- Black Road nejde s Warfare ani Azazel (vlastni funkce puvodniho addonu zustavaji)
+	if not cls.OnCheckSetBlackroad then function cls:OnCheckSetBlackroad()
+		if not self.access then return end
+		if self.ck_blackroad_mode and self.ck_blackroad_mode:GetCheck() then
+			uncheck(self, "ck_azazel_mode")
+			uncheck(self, "ck_warfare")
+		end
+		self:LoadMap()
+	end end
+
+	if not cls.OnCheckSetTreasureHunt then function cls:OnCheckSetTreasureHunt()
+		if not self.access then return end
+	end end
+
+	for _, fn in ipairs({ "OnCheckSetAzazel", "OnCheckSetWarfare" }) do
+		local base = cls[fn]
+		if base then
+			cls[fn] = function(self, ...)
+				local r = base(self, ...)
+				local name = fn == "OnCheckSetAzazel" and "ck_azazel_mode" or "ck_warfare"
+				if self[name] and self[name]:GetCheck() then uncheck(self, "ck_blackroad_mode") end
+				return r
+			end
+		end
+	end
+
+	-- Start hry: vanilla zapise volby, ulozi a zavola owner:StartGame(). Tesne pred StartGame
+	-- dopiseme rezimy (a u Black Road prepiseme misto, penize a vybavu).
+	local base_start = cls.OnStartGame
+	cls.OnStartGame = function(self, ...)
+		local owner = self.owner
+		local c = axr_main and axr_main.config
+		if not (owner and c) or not (self.__rz_own_br or self.__rz_own_th) then return base_start(self, ...) end
+		local br = self.ck_blackroad_mode and self.ck_blackroad_mode:GetCheck() or false
+		local th = self.ck_treasurehunt_mode and self.ck_treasurehunt_mode:GetCheck() or false
+		local story = self.ck_story and self.ck_story:GetCheck() or false
+		-- rezimy vanilla nezna, takze je neprepise
+		if self.__rz_own_br then c:w_value(CFG, KEY_BR, br and true or nil) end
+		if self.__rz_own_th then c:w_value(CFG, KEY_TH, th and true or nil) end
+		-- Black Road puvodniho addonu si misto a vybavu resi sam
+		if not (br and self.__rz_own_br) then return base_start(self, ...) end
+		-- Black Road: misto, penize a vybavu vanilla zapise sama -> prepsat tesne pred StartGame
+		local orig = owner.StartGame
+		local hooked = pcall(function()
+			owner.StartGame = function(o, ...)
+				pcall(function() owner.StartGame = nil end)
+				local loc = blackroad_location(story)
+				if loc then c:w_value(CFG, "new_game_map", loc) end
+				c:w_value(CFG, "new_game_money", 1)
+				c:w_value(CFG, "new_game_loadout", blackroad_loadout())
+				c:save()
+				return orig(o, ...)
+			end
+		end)
+		if not hooked then printf("! ReZone rezimy: nelze prepsat start - Black Road zacne na vybranem miste") end
+		local ok, err = pcall(base_start, self, ...)
+		pcall(function() owner.StartGame = nil end)
+		if not ok then printf("! ReZone rezimy: OnStartGame: %s", tostring(err)) end
+	end
+end
+
+-------------------------------------------------------------------- Lov pokladu
+local function find_upvalue(fn, name)
+	local i = 1
+	while true do
+		local n, v = debug.getupvalue(fn, i)
+		if not n then return nil end
+		if n == name then return v end
+		i = i + 1
+	end
+end
+
+-- zbrane, obleky a helmy do skrysi: seznam [rz_stash_gear] v treasure_manager.ltx (DLTX ReZone).
+-- Anomaly jim nedava "tier", takze by je treasure_manager preskocil - stupen 1-5 se urci podle ceny v ramci druhu.
+local GEAR_SEC = "rz_stash_gear"
+
+local function gear_eco()
+	local c = axr_main and axr_main.config
+	local eco = c and c:r_value("character_creation", "new_game_economy_treasure", 2)
+	if not eco then
+		local ok, m = pcall(alife_storage_manager.get_state)
+		eco = ok and m and m.diff_eco and m.diff_eco.type
+	end
+	return tonumber(eco) or 1
+end
+
+local function add_gear(items, eco)
+	local ini = treasure_manager.ini_treasure
+	if type(items) ~= "table" or not (ini and ini:section_exist(GEAR_SEC)) then return end
+	local have = {}
+	for _, tiers in pairs(items) do
+		for _, l in pairs(tiers) do
+			for i = 1, #l do have[l[i]] = true end
+		end
+	end
+	local by_kind = {}
+	for i = 0, ini:line_count(GEAR_SEC) - 1 do
+		local _, sec, val = ini:r_line(GEAR_SEC, i, "", "")
+		local ok = sec and sec ~= "" and not have[sec] and ini_sys:section_exist(sec)
+		if ok and val and val ~= "" then
+			for e in string.gmatch(val, "%d+") do
+				if tonumber(e) == eco then ok = false end
+			end
+		end
+		if ok then
+			local kind = ini_sys:r_string_ex(sec, "kind")
+			local cost = ini_sys:r_float_ex(sec, "cost") or 0
+			if kind and cost > 1 then
+				by_kind[kind] = by_kind[kind] or {}
+				local l = by_kind[kind]
+				l[#l + 1] = { sec = sec, cost = cost, tier = ini_sys:r_float_ex(sec, "tier") }
+				have[sec] = true
+			end
+		end
+	end
+	local n = 0
+	for kind, l in pairs(by_kind) do
+		table.sort(l, function(a, b) return a.cost < b.cost end)
+		items[kind] = items[kind] or {}
+		for i, e in ipairs(l) do
+			local t = e.tier and math.floor(e.tier) or (math.floor((i - 1) * 5 / #l) + 1)
+			t = math.max(1, math.min(5, t))
+			items[kind][t] = items[kind][t] or {}
+			table.insert(items[kind][t], e.sec)
+			n = n + 1
+		end
+	end
+	printf("ReZone skryse: %d zbrani, obleku a helem", n)
+end
+
+-- stupne predmetu podle mapy: [rz_map_tiers] mapa = vahy stupnu 1-5 (jih slabsi, sever a laboratore silnejsi)
+local MAP_SEC = "rz_map_tiers"
+local map_tiers
+
+local function load_map_tiers()
+	map_tiers = {}
+	local ini = treasure_manager.ini_treasure
+	if not (ini and ini:section_exist(MAP_SEC)) then return end
+	for i = 0, ini:line_count(MAP_SEC) - 1 do
+		local _, lvl, val = ini:r_line(MAP_SEC, i, "", "")
+		local v, t = {}, 0
+		for w in string.gmatch(val or "", "[%d%.]+") do
+			t = t + 1
+			for _ = 1, math.floor(tonumber(w) or 0) do v[#v + 1] = t end
+		end
+		if lvl and #v > 0 then map_tiers[lvl] = v end
+	end
+end
+
+local function tiers_for(id)
+	local se = id and alife_object(id)
+	if not se then return nil end
+	if not map_tiers then load_map_tiers() end
+	local lvl = alife():level_name(game_graph():vertex(se.m_game_vertex_id):level_id())
+	local v = map_tiers[lvl]
+	if not v then return nil end
+	local c = {}
+	for i = 1, #v do c[i] = v[i] end
+	return c
+end
+
+local function patch_treasure()
+	local tm = treasure_manager
+	if not tm or tm.__rz_th then return end
+	tm.__rz_th = true
+
+	local base_init = tm.init_settings
+	if not base_init then return end
+	local items = find_upvalue(base_init, "item_list")
+	-- treasure_manager s vestavenym Lovem pokladu (Orleon / GAMMA - Grok's Stash Overhaul) cte stejne klice
+	-- (new_game_treasurehunt_mode / enable_treasurehunt_mode) a vetsi skryse i prazdne bedny si dela sam:
+	-- ReZone pak nic nepridava, jinak by byl bonus skrysi dvojity
+	local builtin = find_upvalue(base_init, "treasure_common_min_weight_bonus") ~= nil
+	local common = not builtin and find_upvalue(base_init, "stash_common")
+	local rare = not builtin and find_upvalue(base_init, "stash_rare")
+	if builtin then
+		tm.__rz_th_builtin = true
+		printf("ReZone rezimy: treasure_manager ma vlastni Lov pokladu - ReZone ho jen zapina (bez zdvojeni)")
+	elseif not (common and rare) then
+		printf("! ReZone rezimy: treasure_manager bez stash_common/stash_rare - Lov pokladu nezvetsi skryse")
+	end
+	if not items then printf("! ReZone skryse: treasure_manager bez item_list - zbrane a obleky se do skrysi nepridaji") end
+
+	tm.init_settings = function(...)
+		local eco = gear_eco()
+		local r = base_init(...)
+		if items then
+			local ok, err = pcall(add_gear, items, eco)
+			if not ok then printf("! ReZone skryse: %s", tostring(err)) end
+		end
+		if is_treasurehunt() and common and rare then
+			if common.min_weight then
+				common.min_weight = common.min_weight + TH_COMMON_MIN
+				common.max_weight = common.max_weight + TH_COMMON_MAX
+			end
+			if rare.min_weight then
+				rare.min_weight = rare.min_weight + TH_RARE_MIN
+				rare.max_weight = rare.max_weight + TH_RARE_MAX
+			end
+		end
+		return r
+	end
+	if builtin then return end
+
+	-- obsah skryse podle mapy: stash_common/stash_rare.tier_list se na dobu plneni nahradi vahami mapy;
+	-- potom nejvys jedna sada naradi (itm_*kit) - vzacna skrys s odmenou nebo velka skrys v Lovu pokladu jich davala vic
+	local base_set = tm.set_random_stash
+	if base_set then
+		tm.set_random_stash = function(no_spot, hint, bonus_items, id, dbg, ...)
+			local v = (not dbg) and items and common and rare and tiers_for(id)
+			local oc, orr
+			if v then
+				-- init_settings plni tier_list pridavanim - musi probehnout pred nahrazenim
+				if next(items) == nil then tm.init_settings() end
+				oc, orr = common.tier_list, rare.tier_list
+				common.tier_list, rare.tier_list = v, v
+			end
+			local ok, a, b, c = pcall(base_set, no_spot, hint, bonus_items, id, dbg, ...)
+			if v then common.tier_list, rare.tier_list = oc, orr end
+			if not ok then printf("! ReZone skryse: %s", tostring(a)) return end
+			local s = id and tm.caches and tm.caches[id]
+			if type(s) == "string" then
+				local out, kit = {}, false
+				for sec in string.gmatch(s, "[^,]+") do
+					if string.find(sec, "^itm_%w*kit$") then
+						if not kit then out[#out + 1] = sec end
+						kit = true
+					else
+						out[#out + 1] = sec
+					end
+				end
+				tm.caches[id] = table.concat(out, ",")
+			end
+			return a, b, c
+		end
+	end
+
+	-- prvni naplneni beden na zacatku hry vola create_random_stash(true, "stash");
+	-- v Lovu pokladu se preskoci (neoznacene bedny prazdne jako v SoC)
+	local base_create = tm.create_random_stash
+	if base_create then
+		tm.create_random_stash = function(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
+			if no_spot == true and hint == "stash" and bonus_items == nil and spawn_local == nil and inv_box == nil
+				and is_treasurehunt() then
+				return
+			end
+			return base_create(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
+		end
+	end
+end
+
+-------------------------------------------------------------------- hra
+local function on_game_load()
+	local m = storage()
+	if not m then return end
+	local c = axr_main and axr_main.config
+	if not c then return end
+	-- volba z menu plati jen pro prave zalozenou hru: starsi uz hrany save (znacka rz_ngm_seen)
+	-- si rezim nevezme, ani kdyz v nastaveni zustal klic (pad hry pri nacitani nove hry)
+	if m.rz_ngm_seen then return end
+	local save = false
+	if cfg_get(KEY_BR) then
+		m.enable_blackroad_mode = true
+		m.rz_br_night = true		-- noc jen pro prave zalozenou hru (ne pro stare savy Black Road jineho addonu)
+		c:w_value(CFG, KEY_BR)
+		save = true
+	end
+	if cfg_get(KEY_TH) then
+		m.enable_treasurehunt_mode = true
+		-- klic smaze az actor_on_first_update: treasure_manager ho muze cist ve stejnem on_game_load
+		m.rz_th_clear = true
+	end
+	if save then c:save() end
+end
+
+local function actor_on_first_update()
+	local m = storage()
+	if not m then return end
+	m.rz_ngm_seen = true
+	if m.rz_th_clear then
+		m.rz_th_clear = nil
+		local c = axr_main.config
+		c:w_value(CFG, KEY_TH)
+		c:save()
+	end
+	-- Black Road: noc (jednou, po presunu na misto startu)
+	if m.rz_br_night and level.name() ~= "fake_start" then
+		m.rz_br_night = nil
+		m.blackroad_time = true
+		pcall(xr_effects.set_game_time, db.actor, nil, { BR_HOUR })
+	end
+end
+
+function on_game_start()
+	pcall(patch_treasure)
+	RegisterScriptCallback("on_game_load", on_game_load)
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end
+
+-- UI nove hry je v hlavnim menu jeste pred startem hry (on_game_start tam nebezi):
+-- patch_ui() vola modxml_rz_newgame_modes.on_xml_read() pri startu DXML.

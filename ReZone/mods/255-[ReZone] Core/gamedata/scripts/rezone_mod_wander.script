@@ -1,18 +1,5 @@
---[[
-	ReZone MCM - toulavi stalkeri (Gameplay > Toulavi stalkeri)
-
-	Male skupiny stalkeru prochazeji lokaci od mista k mistu (vanilla "target_random_smart"
-	chovani skupin - zadny prepis sim_board ani smart_terrain). Vlastni reseni ReZone.
-	- spawnuji se jen na zapnutych lokacich z configs\rezone\wander.ltx (laboratore tam nejsou)
-	- nikdy blizko hrace a nikdy na zakladnach frakci nebo v [exclude_smarts]
-	- v noci (volitelne), po case nebo po vypnuti lokace zmizi - jen daleko od hrace / offline
-	- po odchodu z lokace se smazou (volitelne), pri emisi a psi bouri nevznikaji
-	- skupina, ktera se stane spolecnikem hrace, se uz nesleduje a zustane
-	Kontrola bezi jednou za 5 s realneho casu, jen kdyz je modul zapnuty.
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_POP .. "/rz_walk"
+local PAGE = rezone_mcm.path("rz_walk")
 local CFG_FILE = "rezone\\wander.ltx"
 local TICK = 5000
 

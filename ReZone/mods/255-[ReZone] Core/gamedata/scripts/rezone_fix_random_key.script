@@ -1,11 +1,3 @@
---[[
-	ReZone fix: random_key_table(nil) uz neshodi hru.
-	Crash pri vareni: _g_patches.script random_key_table - "bad argument #1 to 'pairs'
-	(table expected, got nil)". Nektery skript (vareni / crafting) posle misto seznamu nil.
-	Obal: kdyz neprijde tabulka, vrati nil (jako prazdny seznam) a JEDNOU zapise do logu,
-	kdo to volal - podle toho se opravi skutecna pricina.
---]]
-
 local reported = {}
 
 local function patch()

@@ -1,9 +1,4 @@
---[[
-	ReZone MCM - predvolby cen (podle Configurable Item Cost Modifiers od TheMrDemonized)
-	Klic = druh predmetu (kind z configu). 1.0 = beze zmeny.
-	Predvolba prepise jen druhy, ktere v ni jsou; zbytek zustane 1.0.
---]]
-
+-- napad: Configurable Item Cost Modifiers (TheMrDemonized)
 -- poradi a skupiny na strance
 GROUPS = {
 	{ "rz_price_g_arty",  { "i_arty", "i_mutant_belt", "i_mutant_part" } },

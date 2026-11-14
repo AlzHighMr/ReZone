@@ -1,14 +1,3 @@
---[[
-	ReZone - hlavni predvolba (ReZone MCM > Hlavni > Predvolba hry)
-
-	Jedna volba nastavi vsechny dulezite stranky ReZone (a obtiznost EFT Health System, kdyz je
-	nainstalovany), aby hrac nemusel nic nastavovat rucne. "Vlastni" = nic se nemeni.
-	Pouzije se jen pri ZMENE volby (po Pouzit). Pak si muzes cokoliv doladit na strankach -
-	predvolba to neprepise, dokud ji znovu nezmenis.
-
-	Klice v SET jsou cesty od "rezone/" (cizi mody celou cestou s "!" na zacatku).
---]]
-
 local ROOT = "rezone/"
 MASTER = ROOT .. "rz_main/rz_master/master"
 local APPLIED = "rz_master_applied"		-- [rezone_internal] v axr_options: posledni pouzita predvolba
@@ -26,11 +15,11 @@ local MAP = {
 	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5 },
 	-- Anomaly: vanilla ekonomika a mutanti
 	[2] = { ball = 1, pdmg = 3, loot = 2, pop = 1, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
-	        prices = 1, prices_on = false, gamma = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
+	        prices = 1, prices_on = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
 	-- Hardcore: ceny jako GAMMA, omezene zasoby, tuzsi mutanti. Zakazy obchodu a toulavi stalkeri
 	-- se predvolbou nezapinaji nikdy - hrac si je zapne sam.
 	[3] = { ball = 2, pdmg = 4, loot = 3, pop = 4, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
-	        prices = 6, prices_on = true, gamma = false, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
+	        prices = 6, prices_on = true, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
 }
 
 local function build(id)
@@ -38,61 +27,66 @@ local function build(id)
 	if not m then return {} end
 	local s = {}
 	if m.classic then
-		s["rz_gameplay/rz_ball/preset"] = m.ball
-		s["rz_gameplay/rz_ball/npc_tough"] = 1
-		s["rz_health/rz_pdmg/preset"] = m.pdmg
-		copy_into(s, "rz_health/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
-		s["rz_gameplay/rz_loot/enabled"] = true
-		s["rz_gameplay/rz_loot/preset"] = m.loot
-		copy_into(s, "rz_gameplay/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
+		s["rz_combat/rz_ball/enabled"] = true
+		s["rz_combat/rz_ball/preset"] = m.ball
+		s["rz_combat/rz_ball/st_all"] = 1
+		s["rz_combat/rz_pdmg/enabled"] = true
+		s["rz_combat/rz_pdmg/preset"] = m.pdmg
+		copy_into(s, "rz_combat/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
+		s["rz_econ/rz_loot/enabled"] = true
+		s["rz_econ/rz_loot/preset"] = m.loot
+		copy_into(s, "rz_econ/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
 		if rezone_mod_population then
-			s["rz_population/rz_pop/enabled"] = true
-			s["rz_population/rz_pop/preset"] = m.pop
-			copy_into(s, "rz_population/rz_pop/", rezone_mod_population.PRESETS[m.pop])
+			s["rz_world/rz_pop/enabled"] = true
+			s["rz_world/rz_pop/preset"] = m.pop
+			copy_into(s, "rz_world/rz_pop/", rezone_mod_population.PRESETS[m.pop])
 		end
 		s["!efth/efth_gen/difficulty"] = m.efth
 		return s
 	end
-	s["rz_gameplay/rz_ball/preset"] = m.ball
-	s["rz_gameplay/rz_ball/npc_tough"] = m.tough
-	s["rz_gameplay/rz_ball/wear"] = m.wear
+	s["rz_combat/rz_ball/enabled"] = true
+	s["rz_combat/rz_ball/preset"] = m.ball
+	s["rz_combat/rz_ball/st_all"] = m.tough
+	if math.abs(m.tough - 1) > 0.001 then s["rz_combat/rz_ball/st_enabled"] = true end
+	s["rz_combat/rz_ball/wear"] = m.wear
 	-- ekonomika: ceny, obchod, zasoby
-	s["rz_gameplay/rz_prices/enabled"] = m.prices_on
-	s["rz_gameplay/rz_prices/preset"] = m.prices
+	s["rz_econ/rz_prices/enabled"] = m.prices_on
+	s["rz_econ/rz_prices/preset"] = m.prices
 	if rezone_prices and rezone_prices.PRESETS[m.prices] then
-		copy_into(s, "rz_gameplay/rz_prices/", rezone_prices.PRESETS[m.prices])
+		copy_into(s, "rz_econ/rz_prices/", rezone_prices.PRESETS[m.prices])
 	end
-	s["rz_gameplay/rz_trade/gamma"] = m.gamma
-	s["rz_gameplay/rz_trade/stock"] = m.stock
-	-- zakazy obchodu vzdy vypnute (hrac si je zapne sam): "Hrat jako GAMMA" (gamma) a helmy
-	s["rz_gameplay/rz_trade/helm_no_sell"] = false
-	s["rz_gameplay/rz_trade/helm_no_buy"] = false
+	s["rz_econ/rz_trade/enabled"] = true
+	s["rz_econ/rz_trade/stock"] = m.stock
+	-- zakazy obchodu vzdy vypnute (hrac si je zapne sam): helmy. "Hrat jako GAMMA" je rezim v menu Nova hra.
+	s["rz_econ/rz_trade/helm_no_sell"] = false
+	s["rz_econ/rz_trade/helm_no_buy"] = false
 	-- mutanti a artefakty
-	s["rz_health/rz_muthp/enabled"] = math.abs(m.mut - 1) > 0.001
-	s["rz_health/rz_muthp/all"] = m.mut
-	s["rz_health/rz_af/punish_chance"] = m.punish
-	s["rz_health/rz_af/punish_strength"] = m.punish
+	s["rz_combat/rz_muthp/enabled"] = math.abs(m.mut - 1) > 0.001
+	s["rz_combat/rz_muthp/all"] = m.mut
+	s["rz_survival/rz_af/punish_chance"] = m.punish
+	s["rz_survival/rz_af/punish_strength"] = m.punish
 	-- toulavi stalkeri
 	if rezone_mod_wander then
-		s["rz_population/rz_walk/enabled"] = m.walk > 0
-		if m.walk > 0 then s["rz_population/rz_walk/max_squads"] = m.walk end
+		s["rz_world/rz_walk/enabled"] = m.walk > 0
+		if m.walk > 0 then s["rz_world/rz_walk/max_squads"] = m.walk end
 	end
 	-- crafting: znamy recept zustava i po vyrobe (CoP)
-	s["rz_gameplay/rz_craft/keep_known"] = m.keep_known
-	s["rz_health/rz_pdmg/preset"] = m.pdmg
-	copy_into(s, "rz_health/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
-	s["rz_gameplay/rz_loot/enabled"] = true
-	s["rz_gameplay/rz_loot/preset"] = m.loot
-	copy_into(s, "rz_gameplay/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
+	s["rz_econ/rz_craft/keep_known"] = m.keep_known
+	s["rz_combat/rz_pdmg/enabled"] = true
+	s["rz_combat/rz_pdmg/preset"] = m.pdmg
+	copy_into(s, "rz_combat/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])
+	s["rz_econ/rz_loot/enabled"] = true
+	s["rz_econ/rz_loot/preset"] = m.loot
+	copy_into(s, "rz_econ/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
 	if rezone_mod_population then
-		s["rz_population/rz_pop/enabled"] = true
-		s["rz_population/rz_pop/preset"] = m.pop
-		copy_into(s, "rz_population/rz_pop/", rezone_mod_population.PRESETS[m.pop])
+		s["rz_world/rz_pop/enabled"] = true
+		s["rz_world/rz_pop/preset"] = m.pop
+		copy_into(s, "rz_world/rz_pop/", rezone_mod_population.PRESETS[m.pop])
 	end
 	if rezone_mod_afspawn then
-		s["rz_gameplay/rz_afsp/enabled"] = true
-		s["rz_gameplay/rz_afsp/preset"] = m.afsp
-		copy_into(s, "rz_gameplay/rz_afsp/", rezone_mod_afspawn.PRESETS[m.afsp])
+		s["rz_world/rz_afsp/enabled"] = true
+		s["rz_world/rz_afsp/preset"] = m.afsp
+		copy_into(s, "rz_world/rz_afsp/", rezone_mod_afspawn.PRESETS[m.afsp])
 	end
 	s["!efth/efth_gen/difficulty"] = m.efth
 	return s

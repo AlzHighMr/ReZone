@@ -1,26 +1,7 @@
---[[
-	ReZone - balistika (zasahy NPC a mutantu od strel)
-
-	Vlastni vypocet poskozeni misto engine vzorce. Data munice: configs\rezone\ammo.ltx.
-
-	Predvolby (ReZone MCM > Gameplay > Balistika):
-	  CoP (vychozi)  vzorec Call of Pripyat: kdyz prurazna sila (ap) prekona brneni casti
-	                 tela, poskozeni klesne v pomeru (ap - brneni) / ap; kdyz ne, projde jen
-	                 tupy naraz (hit_fraction_npc z brneni postavy). Nasobice casti tela
-	                 jsou vanilla (stalker_damage).
-	  Anomaly       stejny vzorec, NPC o neco mekci a tupy naraz silnejsi (story hra).
-	  Hardcore       plynula krivka bez skoku, smrtelnejsi zasahy do hlavy, brneni se
-	                 pod palbou postupne rozbiji.
-
-	Poradi: zakladni sila zbrane * nasobic naboje * vzdalenost * rychlost strely
-	        * cast tela * pruraz * rozsireni (hp) * efekt munice / odolnost NPC
-	Efekty munice (rezone_ammo_fx) se zapojuji pred a po vypoctu.
---]]
-
 local floor, max, min, random = math.floor, math.max, math.min, math.random
 
-PATH = "rezone/rz_gameplay/rz_ball/"
-DEFAULTS = { preset = 0, npc_tough = 1 }
+PATH = rezone_mcm.path("rz_ball") .. "/"
+DEFAULTS = { preset = 0 }
 
 function cfg(key)
 	local v = rezone_core and rezone_core.get(PATH .. key)
@@ -282,7 +263,7 @@ function compute(npc, s_hit, bone_id, human)
 		hp = ctx.penetrated and hp or (1 + (hp - 1) * 0.3)
 	end
 
-	local tough = human and (p.tough * (tonumber(cfg("npc_tough")) or 1)) or 1	-- mutanti: Zdravi > Odolnost mutantu
+	local tough = human and p.tough or 1	-- odolnost stalkeru/mutantu navic: rezone_mod_sthp / rezone_mod_toughness
 	if ctx.force_full then pm = 1 end
 	s_hit.power = base * a.hit * (ctx.no_falloff and 1 or dm) * vel * ctx.mult * pm * hp * ctx.extra / max(tough, 0.1)
 	ctx.power = s_hit.power
@@ -309,7 +290,9 @@ end
 local function stalker_cb(npc, s_hit, bone_id)
 	flags.ret_value = true
 	local ctx
-	if duplicate(s_hit, npc) then
+	if cfg("enabled") == false then
+		-- vypnuto: vanilla vypocet hry
+	elseif duplicate(s_hit, npc) then
 		s_hit.power = 0.0001
 	else
 		local ok, r = pcall(compute, npc, s_hit, bone_id, true)
@@ -326,7 +309,9 @@ end
 
 local function monster_cb(monster, s_hit, bone_id)
 	flags.ret_value = true
-	if duplicate(s_hit, monster) then
+	if cfg("enabled") == false then
+		-- vypnuto: vanilla vypocet hry
+	elseif duplicate(s_hit, monster) then
 		s_hit.power = 0.0001
 	else
 		local ok, r = pcall(compute, monster, s_hit, bone_id, false)

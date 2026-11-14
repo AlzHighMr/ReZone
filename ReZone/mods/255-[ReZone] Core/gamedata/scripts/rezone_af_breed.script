@@ -1,26 +1,8 @@
---[[
-	ReZone - selekce artefaktu (selekcionari ze SGM 2.2), vlastni prepis
-
-	Vse se nastavuje v configs\rezone\af_breeding.ltx:
-	  [breeders]  kdo selektuje, kde stoji, tridy a nejvyssi stupen (T1..T4)
-	  [prices]    ceny kroku
-	Seznam artefaktu: configs\rezone\af_breeding_bases.ltx, staty: items_rezone_breeding*.ltx
-	(oboji generuje tools\gen_breeding.py).
-
-	Selekcionar vylepsi artefakt z inventare hrace (od 2.5.28 jen stupen, napr. Meduza T1..T3):
-	  zaklad -> <art>_brd_tier1 -> tier2 -> tier3
-	(Stare varianty rad/cw/reg a T4 z verzi do 2.5.27 uz nejsou - aliasy odebrany v 2.5.36.)
-	Stav artefaktu zustava. Artefakty v kontejnerech se nenabizeji.
-	Zadny soubor hry se neprepisuje: dialog, postavy a profily se pridavaji pres DLTX,
-	Lesnikovi se dialog pripoji pres DXML (modxml_rezone).
---]]
-
 local CFG = "rezone\\af_breeding.ltx"
 local BASES = "rezone\\af_breeding_bases.ltx"
 local SLOTS = 10
 local MAX_LVL = 3
 local TYPES = { "tier" }
-local OLD_TYPES = { "rad", "cw", "reg" }	-- uz se nenabizi (dialog starsi verze je muze volat)
 local FLAG = "sgmb_spawned_"		-- stejny jako puvodni SGM Selekce: nic se nespawnuje dvakrat
 
 local bases, breeders, order, price_mult, price_min
@@ -236,11 +218,6 @@ for i = 1, SLOTS do
 	M["slot_" .. i] = function(a, b) return slot(i, a, b) end
 	M["slot_text_" .. i] = function() return slot_text(i) end
 	M["select_" .. i] = function() sel = cand[i] end
-end
-for _, t in ipairs(OLD_TYPES) do
-	M["can_" .. t] = function() return false end
-	M["opt_" .. t] = function() return "" end
-	M["breed_" .. t] = function() end
 end
 for _, t in ipairs(TYPES) do
 	M["can_" .. t] = function() return can_type(t) end

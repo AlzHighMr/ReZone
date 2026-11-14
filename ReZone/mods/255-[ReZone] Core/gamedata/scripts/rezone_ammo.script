@@ -1,12 +1,3 @@
---[[
-	ReZone - munice: nazvy a popisky, statistiky v popisku, ceny, opotrebeni zbrane,
-	horsi naboje u NPC, MG pas, rozebirani munice, drceni artefaktu, suroviny na
-	mrtvolach / ve skryskach / u obchodniku, vynos vyroby a recepty na munici.
-
-	Data: configs\rezone\ammo.ltx (munice), ammo_parts.ltx (z ceho se sklada),
-	      af_powders.ltx (prasek z artefaktu).
---]]
-
 local random, floor, max, min = math.random, math.floor, math.max, math.min
 local gc = game.translate_string
 local RB = rezone_ballistics
@@ -252,7 +243,7 @@ local function parts_on_body(npc)
 end
 
 -- Recepty: vanilla recipe_ammo_1..3 (jen ty odemykaji vyrobu v dilne, viz mod_craft_rezone_ballistics).
--- Neobjevi se, kdyz uz recept znas. Stare predmety recipe_ammo_ru1 ... nic neodemykaly - uz se nespawnuji.
+-- Neobjevi se, kdyz uz recept znas. Recepty z Anomaly Ballistics (recipe_ammo_ru1 ...) jsou odebrane.
 local RECIPES = { "recipe_ammo_1", "recipe_ammo_2", "recipe_ammo_3" }
 local STASH_RECIPE = { 6, 3, 1 }		-- % sance ve skrysi (1 = zakladni ... 3 = pokrocily)
 local POWDERS = { "powder_gravi", "powder_fireball", "powder_nightstar", "powder_battery", "powder_blood" }
@@ -328,31 +319,7 @@ local function on_restock(npc)
 	end
 end
 
--- Ulozene hry z verzi <= 2.0.3: bezni NPC dostavali pri kazdem rozhovoru zasoby jako obchodnik
--- (suroviny a nefunkcni recepty). Pri smrti se prebytek uklidi: stare recepty pryc,
--- kazda surovina nejvys 2 baleni.
-local OLD_RECIPES = { recipe_ammo_ru1 = true, recipe_ammo_ru2 = true, recipe_ammo_pistol = true, recipe_ammo_shotgun = true,
-                      recipe_ammo_nato = true, recipe_ammo_arty1 = true, recipe_ammo_arty2 = true, recipe_ammo_fire = true }
-local IS_PART = {}
-for _, l in pairs(ALL) do for _, sec in ipairs(l) do IS_PART[sec] = true end end
-
-local function cleanup_body(npc)
-	if not npc or core.trader_kind(npc) ~= "generic" then return end
-	local seen, drop = {}, {}
-	npc:iterate_inventory(function(_, it)
-		local sec = it:section()
-		if OLD_RECIPES[sec] then
-			drop[#drop + 1] = it
-		elseif IS_PART[sec] then
-			seen[sec] = (seen[sec] or 0) + it:ammo_get_count()
-			if seen[sec] > 2 * PACK then drop[#drop + 1] = it end
-		end
-	end)
-	for _, it in ipairs(drop) do alife_release(it) end
-	if #drop > 0 then core.log("uklid mrtvoly %s: %d predmetu", npc:name(), #drop) end
-end
-
--- stare hromadky surovin > 5 ks se rozdeli na baleni
+-- hromadky surovin vetsi nez baleni se rozdeli na baleni
 local function on_take(obj)
 	if not (obj and IsAmmo(obj)) or not SYS_GetParam(1, obj:section(), "is_component") then return end
 	local n, bs = obj:ammo_get_count(), obj:ammo_box_size()
@@ -665,7 +632,6 @@ function on_game_start()
 	RegisterScriptCallback("actor_on_weapon_fired", on_fired)
 	RegisterScriptCallback("npc_on_net_spawn", on_npc_spawn)
 	RegisterScriptCallback("actor_on_item_take", on_take)
-	RegisterScriptCallback("npc_on_death_callback", function(npc) pcall(cleanup_body, npc) end)
 	-- vynos az po vsech on_game_start (Keep crafting window open nahrazuje Craft cely)
 	local function late()
 		UnregisterScriptCallback("actor_on_first_update", late)

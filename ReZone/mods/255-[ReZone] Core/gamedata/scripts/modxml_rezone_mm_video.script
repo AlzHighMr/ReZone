@@ -1,15 +1,3 @@
---[[
-	ReZone - video pozadi hlavniho menu (ReZone MCM > Ostatni > Hlavni menu)
-
-	Videa (.ogm, Theora) patri do gamedata\textures\ui\rz_mm_bg\ - kazde se v MCM objevi pod
-	svym jmenem. Volba nahradi celoobrazovkovy obrazek v pozadi hlavniho menu a nahravani hry
-	(bez ohledu na jmeno textury); engine hraje .ogm jako texturu dokola. "Vychozi" = nic se nemeni.
-	Zmena se projevi hned po "Pouzit" (otevrene menu si postavi pozadi znovu).
-	Vyrez textury = rozliseni videa (hlavicka Theora, jinak konec jmena _720/_1080/_1440/_2160,
-	jinak 1920x1080) - bez vyrezu UI video nevykresli.
-	(Drive soucast patche SOTA_Aydin, cesta efp_ui/main_settings/mm_bg_video.)
---]]
-
 local DIR = "ui\\rz_mm_bg\\"
 local PATH = "rezone/rz_other/rz_menu/mm_bg_video"
 

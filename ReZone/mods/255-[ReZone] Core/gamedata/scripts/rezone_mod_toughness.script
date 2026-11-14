@@ -1,12 +1,5 @@
---[[
-	ReZone MCM - odolnost mutantu
-	"Zdravi" se resi delenim prichoziho poskozeni (2.0 = vydrzi dvakrat vic).
-	Plati okamzite i pro mutanty ve hre, prezije save/load, nic se nedeje pri spawnu.
-	Vypnuto = handler se odregistruje.
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_muthp"
+local PAGE = rezone_mcm.path("rz_muthp")
 local EPS = 0.0001
 
 local by_species = {}

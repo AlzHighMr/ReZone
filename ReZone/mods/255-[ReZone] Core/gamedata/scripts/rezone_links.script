@@ -1,15 +1,6 @@
---[[
-	ReZone MCM - odkazy na nastaveni jinych modu
-	Definice: configs\rezone\rezone_mcm_links.ltx (+ DLTX mod_rezone_mcm_links_<cokoliv>.ltx)
-	kind = page  -> tlacitko, ktere ve stejnem okne MCM otevre stranku jineho modu
-	kind = value -> hodnota jineho modu primo na strance ReZone (cte a zapisuje jeho nastaveni)
-	Odkaz na mod, ktery neni nainstalovany, se nezobrazi.
---]]
-
 local LTX = "rezone\\rezone_mcm_links.ltx"
 local CLR_DESC = { 255, 200, 200, 200 }
 local CLR_NOTE = { 255, 150, 150, 150 }
-local TABS = { gameplay = "rz_gameplay", health = "rz_health", zdravi = "rz_health", other = "rz_other", ostatni = "rz_other", population = "rz_population", populace = "rz_population" }
 
 local cache = nil
 
@@ -34,7 +25,7 @@ end
 
 function load()
 	if cache then return cache end
-	cache = { rz_gameplay = {}, rz_health = {}, rz_other = {}, rz_population = {} }
+	cache = {}
 
 	local ini = ini_file(LTX)
 	if not (ini and ini.section_for_each) then return cache end
@@ -42,8 +33,7 @@ function load()
 	ini:section_for_each(function(sec)
 		local target = ini:r_string_ex(sec, "target")
 		if not target or target == "" then return end
-		local list = cache[TABS[ini:r_string_ex(sec, "tab") or "other"] or "rz_other"]
-		list[#list + 1] = {
+		cache[#cache + 1] = {
 			id      = sec,
 			target  = target,
 			kind    = ini:r_string_ex(sec, "kind") or "page",
@@ -60,12 +50,10 @@ function load()
 		}
 	end)
 
-	for _, list in pairs(cache) do
-		table.sort(list, function(a, b)
-			if a.order ~= b.order then return a.order < b.order end
-			return a.id < b.id
-		end)
-	end
+	table.sort(cache, function(a, b)
+		if a.order ~= b.order then return a.order < b.order end
+		return a.id < b.id
+	end)
 	return cache
 end
 
@@ -76,8 +64,8 @@ function exists(target)
 	return rezone_core.mcm_has(target)
 end
 
-function none_visible(tab)
-	local list = load()[tab] or {}
+function none_visible()
+	local list = load()
 	for i = 1, #list do
 		if exists(list[i].target) then return false end
 	end
@@ -104,15 +92,15 @@ end
 ------------------------------------------------------------
 -- Stranka "Odkazy" pro danou zalozku
 ------------------------------------------------------------
-function build_page(tab)
+function build_page()
 	local gr = {
 		{ id = "banner", type = "slide", link = "ui_options_slider_disguise", text = "ui_mcm_rz_links_title", size = { 512, 50 }, spacing = 20 },
 		{ id = "links_desc", type = "desc", text = "ui_mcm_rz_links_desc", clr = CLR_DESC },
 		{ id = "links_line", type = "line" },
-		{ id = "links_none", type = "desc", text = "ui_mcm_rz_links_none", clr = CLR_NOTE, precondition = { none_visible, tab } },
+		{ id = "links_none", type = "desc", text = "ui_mcm_rz_links_none", clr = CLR_NOTE, precondition = { none_visible } },
 	}
 
-	local list = load()[tab] or {}
+	local list = load()
 	for i = 1, #list do
 		local l = list[i]
 		local pre = { exists, l.target }

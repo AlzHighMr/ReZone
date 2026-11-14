@@ -1,17 +1,5 @@
---[[
-	ReZone MCM - opotrebeni obleku a helem (Gameplay > Balistika > Opotrebeni obleku a helem)
-
-	Kolik stavu oblek / helma ztrati pri zasahu, urcuje sekce immunities_sect predmetu.
-	Modul hodnoty vynasobi nasobicem z MCM (1 = vanilla, 0.33 = trikrat pomalejsi opotrebeni)
-	v pameti hry - soubory na disku zustanou beze zmeny. Nahrazuje DLTX
-	"armor_degradation_reduction" (vsechno x0.33 natvrdo).
-	Puvodni hodnoty si pamatuje primo v pameti hry (klice rz_orig_*), takze zmena funguje
-	i opakovane a po nacteni savu. Plati pro obleky a helmy nactene potom (nejjisteji po
-	nacteni savu). Vyzaduje modded exes (ini_sys:w_string).
---]]
-
 local core = rezone_core
-local PATH = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_ball/wear"
+local PATH = rezone_mcm.path("rz_ball") .. "/wear"
 local CLASSES = { EQU_STLK = true, E_STLK = true, EQU_HLMET = true, E_HLMET = true }
 local KEYS = { "burn_immunity", "strike_immunity", "shock_immunity", "wound_immunity", "radiation_immunity",
 	"telepatic_immunity", "chemical_burn_immunity", "explosion_immunity", "fire_wound_immunity" }

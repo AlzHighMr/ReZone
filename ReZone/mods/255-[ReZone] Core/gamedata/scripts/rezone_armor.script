@@ -1,20 +1,7 @@
---[[
-	ReZone - profil obleku hrace (Call of Pripyat / Anomaly / Hardcore)
-
-	Vychozi hodnoty obleku (DLTX mod_system_..._rezone_armor_outfits.ltx) jsou profil CoP.
-	Jiny profil se nacte z configs\rezone\armor_<profil>.ltx a zapise se do pameti hry
-	(system.ltx na disku zustane beze zmeny). Engine cte hodnoty obleku pri vytvoreni predmetu,
-	proto se zmena projevi az po nacteni savu (obleky v inventari i ve svete).
-	Vyzaduje modded exes (ini_sys:set_readonly / w_string), jinak zustane profil CoP.
-
-	ReZone helmy vypnute (MCM): uzavrene obleky zase bez slotu na helmu, s plnou ochranou masky
-	a s hlavou podle sve helmy (configs\rezone\armor_<profil>_closed.ltx).
---]]
-
 local core = rezone_core
 -- profil obleku = predvolba balistiky (0 cop / 1 trilogy / 2 hardcore)
-local PATH = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/preset"
-local PATH_HELM = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helmets"
+local PATH = rezone_mcm.path("rz_ball") .. "/preset"
+local PATH_HELM = rezone_mcm.path("rz_ball") .. "/helmets"
 local NAMES = { [0] = "cop", [1] = "trilogy", [2] = "hardcore" }
 
 -- co je ted v pameti hry: ini_sys prezije nacteni savu (Lua stav ne), proto se znacka pise

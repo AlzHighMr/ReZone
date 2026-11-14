@@ -20,7 +20,7 @@ local function num(key, def)
 end
 
 local function cfg(k, def)
-	return (function() local v = rezone_core.get("rezone/rz_health/rz_af/" .. k) if v == nil then return def end return v end)()
+	return (function() local v = rezone_core.get(rezone_mcm.path("rz_af") .. "/" .. k) if v == nil then return def end return v end)()
 end
 
 local function load_classes()

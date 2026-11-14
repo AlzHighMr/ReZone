@@ -1,25 +1,5 @@
---[[
-	ReZone MCM - populace Zony (vlastni reseni, bez dalsich modu)
-
-	Neprepisuje smart_terrain.script ani sim_board.script, jen obali tri vanilla funkce:
-	- se_smart_terrain:try_respawn       hustota (misto vanilla volby ALife), cas respawnu,
-	                                      nahodne skupiny navic
-	- simulation_board:fill_start_position hustota pri zacatku nove hry
-	- sim_squad_scripted:create_npc       velikost a rozptyl skupin / smecek,
-	                                      snizeni hodnosti na zacatecnich urovnich
-	- se_smart_terrain:target_precondition silne skupiny nechodi na zacatecni urovne
-
-	Hodnost generickych NPC = cislo na konci sekce sim_default_<frakce>_0..4
-	(0 novacek, 1 zacatecnik, 2 zkuseny/profesional, 3 veteran/expert, 4 mistr/legenda;
-	vyssi tridy nosi tezke obleky vcetne exoskeletu).
-
-	Meni jen bezne (common) skupiny, ktere vznikaji respawnem nebo na zacatku hry.
-	Pribehove skupiny, ukolove spawny a spawny jinych modu zustanou jak jsou.
-	Vypnuto = vanilla (zadna funkce se ani neobali).
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_POP .. "/rz_pop"
+local PAGE = rezone_mcm.path("rz_pop")
 
 MAX_MEMBERS = 12	-- strop velikosti jedne skupiny po zvetseni
 POP_STALKER = "alife/general/alife_stalker_pop"

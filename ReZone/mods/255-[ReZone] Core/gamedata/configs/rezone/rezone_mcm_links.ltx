@@ -6,7 +6,6 @@
 ;     configs\rezone\mod_rezone_mcm_links_<nazev>.ltx
 ;
 ; Klice:
-;   tab    = gameplay | health | other      ; na ktere zalozce se odkaz objevi (Odkazy)
 ;   target = cesta v MCM                    ; stranka (napr. ztc/faction_tweaks) nebo volba (napr. mod/stranka/volba)
 ;   kind   = page | value                   ; page = tlacitko "Otevrit", value = primo hodnota ciziho modu
 ;   label  = text nad odkazem               ; ID retezce z XML nebo rovnou text (bez diakritiky je jistota)
@@ -25,14 +24,12 @@
 
 ; --- PRIKLAD: tlacitko, ktere otevre stranku jineho modu (odkomentuj a uprav)
 ;[rz_link_example_page]
-;tab    = gameplay
 ;target = nazev_modu
 ;label  = Muj mod - nastaveni
 ;order  = 10
 
 ; --- PRIKLAD: primo zrcadlena hodnota jineho modu (odkomentuj a uprav)
 ;[rz_link_example_value]
-;tab    = health
 ;kind   = value
 ;target = nejaky_mod/stranka/nasobic
 ;label  = Nejaky mod - nasobic

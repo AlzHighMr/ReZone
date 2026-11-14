@@ -1,21 +1,32 @@
---[[
-	ReZone - definice stranky v MCM (vyzaduje MCM 1.7.1+)
+VERSION = "2.5.60"
 
-	ReZone
-	|- Hlavni   : Predvolba hry (nastavi vse najednou, rezone_master)
-	|- Gameplay : Obchod, Ceny, Korist, Artefakty v anomaliich, Populace, Balistika, Crafting, Odkazy
-	|- Zdravi   : Poskozeni hrace, Odolnost mutantu, Artefakty, Odkazy
-	|- Ostatni  : Efekty, Hlavni menu, Odkazy, Ladeni
---]]
+ROOT = "rezone"
+TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
 
-VERSION = "2.5.40"
+-- stranka -> zalozka (poradi stranek je v build_tree)
+PAGE_TAB = {
+	rz_master = TAB_MAIN, rz_links = TAB_MAIN,
+	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
+	rz_ball = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
+	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT, rz_knife = TAB_COMBAT,
+	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD,
+	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
+	rz_fx = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
+}
 
-ROOT   = "rezone"
-TAB_MAIN = "rz_main"
-TAB_GP = "rz_gameplay"
-TAB_HP = "rz_health"
-TAB_OT = "rz_other"
-TAB_POP = "rz_population"	-- Populace (od 2.5.34; drive soucast Gameplay)
+-- "rz_ball" -> "rezone/rz_combat/rz_ball"
+function path(pg)
+	return ROOT .. "/" .. (PAGE_TAB[pg] or TAB_OT) .. "/" .. pg
+end
+
+-- zalozky do 2.5.45
+local OLD_TAB = {
+	rz_trade = "rz_gameplay", rz_prices = "rz_gameplay", rz_loot = "rz_gameplay", rz_craft = "rz_gameplay",
+	rz_ball = "rz_gameplay", rz_vision = "rz_gameplay", rz_knife = "rz_gameplay", rz_afsp = "rz_gameplay",
+	rz_meds = "rz_gameplay", rz_needs = "rz_gameplay",
+	rz_pdmg = "rz_health", rz_sthp = "rz_health", rz_muthp = "rz_health", rz_mutdmg = "rz_health", rz_af = "rz_health",
+	rz_pop = "rz_population", rz_walk = "rz_population",
+}
 
 MUTANT_SPECIES = {
 	"dog", "pseudodog", "flesh", "boar", "snork", "tushkano", "rat", "cat", "zombie",
@@ -77,6 +88,7 @@ local function gp_needs()
 		slide("ui_mcm_rz_needs_title"),
 		desc("d", "ui_mcm_rz_needs_info"),
 		line("l1"),
+		check("enabled", true, "rz_needs_enabled"),
 		track("hunger", 1, 0, 3, 0.05, "rz_needs_hunger"),
 		track("thirst", 1, 0, 3, 0.05, "rz_needs_thirst"),
 		track("sleep", 1, 0, 3, 0.05, "rz_needs_sleep"),
@@ -91,6 +103,7 @@ local function gp_vision()
 		slide("ui_mcm_rz_vision_title"),
 		desc("d", "ui_mcm_rz_vision_info"),
 		line("l1"),
+		check("enabled", true, "rz_vision_enabled"),
 		track("st_free", 0, 0, 1, 0.05, "rz_vision_st_free"),
 		track("st_danger", 0, 0, 1, 0.05, "rz_vision_st_danger"),
 		track("mutant", 0, 0, 1, 0.05, "rz_vision_mutant"),
@@ -130,14 +143,25 @@ local function gp_craft()
 end
 
 local function gp_ballistics()
-	return page("rz_ball", {
+	local R = rezone_mod_sthp and rezone_mod_sthp.RANKS or { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
+	local STHP_RANKS = {}
+	for i = 1, #R do STHP_RANKS[i] = track("st_" .. R[i], 1, 0.25, 4, 0.05, "rz_sthp_" .. R[i]) end
+	local gr = {
 		slide("ui_mcm_rz_ball_title"),
 		desc("d", "ui_mcm_rz_ball_info"),
 		line("l1"),
+		check("enabled", true, "rz_ball_enabled"),
 		{ id = "preset", type = "list", val = 2, def = 0, hint = "rz_ball_preset",
 		  content = { { 0, "rz_ball_cop" }, { 1, "rz_ball_trilogy" }, { 2, "rz_ball_hardcore" } } },
 		desc("pn", "ui_mcm_rz_ball_preset_note", CLR_NOTE),
-		track("npc_tough", 1, 0.5, 2, 0.05, "rz_ball_npc_tough"),
+		line("l_st"),
+		slide("ui_mcm_rz_sthp_title"),
+		desc("dst", "ui_mcm_rz_sthp_info"),
+		check("st_enabled", false, "rz_sthp_enabled"),
+		track("st_all", 1, 0.25, 3, 0.05, "rz_sthp_all"),
+		STHP_RANKS,
+		desc("nst", "ui_mcm_rz_sthp_note", CLR_NOTE),
+		desc("dmut", "ui_mcm_rz_ball_mut_link", CLR_NOTE),
 		line("l2"),
 		desc("dc", "ui_mcm_rz_ball_craft"),
 		track("parts_loot", 1, 0, 3, 0.1, "rz_ball_parts_loot"),
@@ -148,7 +172,16 @@ local function gp_ballistics()
 		desc("dh", "ui_mcm_rz_ball_helm_info"),
 		check("helmets", true, "rz_ball_helmets"),
 		check("helm_drop", true, "rz_ball_helm_drop"),
-	})
+	}
+	local out = {}
+	for _, v in ipairs(gr) do
+		if v == STHP_RANKS then
+			for _, r in ipairs(STHP_RANKS) do out[#out + 1] = r end
+		else
+			out[#out + 1] = v
+		end
+	end
+	return page("rz_ball", out)
 end
 
 local function gp_trade()
@@ -156,13 +189,8 @@ local function gp_trade()
 		slide("ui_mcm_rz_trade_title"),
 		desc("d", "ui_mcm_rz_trade_info"),
 		line("l1"),
-		check("gamma", false, "rz_trade_gamma"),
-		line("l2"),
-		check("no_sell", true, "rz_trade_no_sell"),
-		check("no_buy", true, "rz_trade_no_buy"),
-		check("outfits", true, "rz_trade_outfits"),
-		check("melee", false, "rz_trade_melee"),
 		desc("n", "ui_mcm_rz_trade_note", CLR_NOTE),
+		check("enabled", true, "rz_trade_enabled"),
 		line("lb"),
 		track("buy_cond", 60, 0, 100, 1, "rz_trade_buy_cond"),
 		line("l3"),
@@ -382,6 +410,7 @@ local function hp_damage()
 		slide("ui_mcm_rz_pdmg_title"),
 		desc("d", "ui_mcm_rz_pdmg_info"),
 		line("l1"),
+		check("enabled", true, "rz_pdmg_enabled"),
 		{ id = "preset", type = "preset", val = 2, def = pr.DEFAULT, content = content, presets = pr.PRESETS, hint = "rz_pdmg_preset" },
 		desc("cn", "ui_mcm_rz_pdmg_cop_note", CLR_NOTE),
 		line("l3"),
@@ -396,23 +425,6 @@ local function hp_damage()
 end
 
 -- Odolnost stalkeru podle hodnosti (rezone_mod_sthp)
-local function hp_stalkers()
-	local gr = {
-		slide("ui_mcm_rz_sthp_title"),
-		desc("d", "ui_mcm_rz_sthp_info"),
-		line("l1"),
-		check("enabled", false, "rz_sthp_enabled"),
-		track("all", 1, 0.25, 3, 0.05, "rz_sthp_all"),
-		line("l2"),
-	}
-	local R = rezone_mod_sthp and rezone_mod_sthp.RANKS or { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
-	for i = 1, #R do
-		gr[#gr + 1] = track(R[i], 1, 0.25, 4, 0.05, "rz_sthp_" .. R[i])
-	end
-	gr[#gr + 1] = line("l3")
-	gr[#gr + 1] = desc("n", "ui_mcm_rz_sthp_note", CLR_NOTE)
-	return page("rz_sthp", gr)
-end
 
 local function hp_mutants()
 	local gr = {
@@ -549,56 +561,98 @@ local function main_master()
 end
 
 ------------------------------------------------------------
--- Prevod ulozenych hodnot: stranky Populace (rz_pop) a Toulavi stalkeri (rz_walk)
--- byly do 2.5.33 pod Gameplay -> zkopirovat do nove zalozky, aby se nastaveni neztratilo.
-local function migrate_population(pages)
+-- prevod ulozenych voleb do novych zalozek (2.5.46)
+local function migrate_tabs(tabs)
 	local c = axr_main and axr_main.config
-	if not c or c:r_value("rezone_internal", "pop_tab_moved", 1, false) then return end
+	if not c or c:r_value("rezone_internal", "tabs_v246", 1, false) then return end
 	local n = 0
-	for _, pg in ipairs(pages) do
-		for _, o in ipairs(pg.gr or {}) do
-			if o.id and o.type and o.type ~= "slide" and o.type ~= "desc" and o.type ~= "line" then
-				local old = ROOT .. "/" .. TAB_GP .. "/" .. pg.id .. "/" .. o.id
-				local new = ROOT .. "/" .. TAB_POP .. "/" .. pg.id .. "/" .. o.id
-				local typ = o.val or 0
-				local v = c:r_value("mcm", old, typ)
-				if v ~= nil and c:r_value("mcm", new, typ) == nil then
-					c:w_value("mcm", new, v)
-					n = n + 1
+	for _, tab in ipairs(tabs) do
+		for _, pg in ipairs(tab.gr) do
+			local old = OLD_TAB[pg.id]
+			for _, o in ipairs(old and pg.gr or {}) do
+				if o.id and o.type and o.type ~= "slide" and o.type ~= "desc" and o.type ~= "line" and o.type ~= "button" then
+					local typ = o.val or 0
+					local v = c:r_value("mcm", ROOT .. "/" .. old .. "/" .. pg.id .. "/" .. o.id, typ)
+					local new = path(pg.id) .. "/" .. o.id
+					if v ~= nil and c:r_value("mcm", new, typ) == nil then
+						c:w_value("mcm", new, v)
+						n = n + 1
+					end
 				end
 			end
 		end
 	end
-	c:w_value("rezone_internal", "pop_tab_moved", true)
+	c:w_value("rezone_internal", "tabs_v246", true)
 	c:save()
-	if n > 0 then printf("[ReZone] Populace: prevedeno %d ulozenych voleb do nove zalozky", n) end
+	if n > 0 then printf("[ReZone] MCM: prevedeno %d ulozenych voleb do novych zalozek", n) end
+end
+
+-- odolnost stalkeru je od 2.5.57 na strance Balistika (st_*), "Odolnost NPC" z balistiky se do ni zapocita
+local STHP_IDS = { "enabled", "all", "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
+local function migrate_sthp()
+	local c = axr_main and axr_main.config
+	if not c or c:r_value("rezone_internal", "sthp_v257", 1, false) then return end
+	local function get(paths, typ)
+		for _, pth in ipairs(paths) do
+			local v = c:r_value("mcm", pth, typ)
+			if v ~= nil then return v end
+		end
+	end
+	local base = path("rz_ball") .. "/st_"
+	for _, id in ipairs(STHP_IDS) do
+		local typ = id == "enabled" and 1 or 2
+		local v = get({ ROOT .. "/" .. TAB_COMBAT .. "/rz_sthp/" .. id, ROOT .. "/rz_health/rz_sthp/" .. id }, typ)
+		if v ~= nil and c:r_value("mcm", base .. id, typ) == nil then c:w_value("mcm", base .. id, v) end
+	end
+	local nt = get({ path("rz_ball") .. "/npc_tough", ROOT .. "/rz_gameplay/rz_ball/npc_tough" }, 2)
+	if nt and math.abs(nt - 1) > 0.001 then
+		local all = c:r_value("mcm", base .. "all", 2) or 1
+		c:w_value("mcm", base .. "all", all * nt)
+		c:w_value("mcm", base .. "enabled", true)
+		printf("[ReZone] Odolnost NPC z balistiky (%.2f) prevedena do Odolnost stalkeru", nt)
+	end
+	c:w_value("rezone_internal", "sthp_v257", true)
+	c:save()
+end
+
+local function add(t, cond, fn)
+	if cond then t[#t + 1] = fn() end
 end
 
 function build_tree()
-	local L = rezone_links
-	local gp = { gp_trade(), gp_prices(), gp_loot() }
-	if rezone_mod_afspawn then gp[#gp + 1] = gp_afspawn() end
-	local pop = {}
-	if rezone_mod_population then pop[#pop + 1] = gp_population() end
-	if rezone_mod_wander then rezone_mod_wander.read_cfg(); pop[#pop + 1] = gp_wander() end
-	pcall(migrate_population, pop)
-	gp[#gp + 1] = gp_ballistics()
-	gp[#gp + 1] = gp_craft()
-	gp[#gp + 1] = gp_vision()
-	if rz_npc_knife then gp[#gp + 1] = gp_knife() end
-	gp[#gp + 1] = gp_meds()
-	gp[#gp + 1] = gp_needs()
-	gp[#gp + 1] = L.build_page(TAB_GP)
-	return {
-		id = ROOT,
-		gr = {
-			{ id = TAB_MAIN, gr = { main_master() } },
-			{ id = TAB_GP, gr = gp },
-			{ id = TAB_POP, gr = pop },
-			{ id = TAB_HP, gr = { hp_damage(), hp_stalkers(), hp_mutants(), hp_mutdmg(), hp_artefacts(), L.build_page(TAB_HP) } },
-			{ id = TAB_OT, gr = { ot_fx(), ot_binoc(), ot_pda(), ot_menu(), L.build_page(TAB_OT), ot_debug() } },
-		},
+	local eco, combat, world, surv = {}, {}, {}, {}
+	add(eco, true, gp_trade)
+	add(eco, true, gp_prices)
+	add(eco, true, gp_loot)
+	add(eco, true, gp_craft)
+
+	add(combat, true, gp_ballistics)
+	add(combat, true, hp_mutants)
+	add(combat, true, hp_damage)
+	add(combat, true, hp_mutdmg)
+	add(combat, true, gp_vision)
+	add(combat, rz_npc_knife, gp_knife)
+
+	add(world, rezone_mod_population, gp_population)
+	if rezone_mod_wander then rezone_mod_wander.read_cfg() end
+	add(world, rezone_mod_wander, gp_wander)
+	add(world, rezone_mod_afspawn, gp_afspawn)
+
+	add(surv, true, gp_meds)
+	add(surv, true, gp_needs)
+	add(surv, true, hp_artefacts)
+
+	local tabs = {
+		{ id = TAB_MAIN, gr = { main_master(), rezone_links.build_page() } },
+		{ id = TAB_ECO, gr = eco },
+		{ id = TAB_COMBAT, gr = combat },
+		{ id = TAB_WORLD, gr = world },
+		{ id = TAB_SURV, gr = surv },
+		{ id = TAB_OT, gr = { ot_fx(), ot_binoc(), ot_pda(), ot_menu(), ot_debug() } },
 	}
+	pcall(migrate_tabs, tabs)
+	pcall(migrate_sthp)
+	return { id = ROOT, gr = tabs }
 end
 
 function on_mcm_load()

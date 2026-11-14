@@ -1,24 +1,3 @@
---[[
-	ReZone MCM - zasahy hrace: krvava smerovka zasahu a cuknuti kamery (aim punch)
-
-	Engine pri zasahu hrace strelou (CActor::HitMark) udela dve veci:
-	  - nakresli krvavou smerovku zasahu na HUD - textura z [hud_hitmark] hit_mark_texture (system.ltx)
-	  - prida kamerovy efekt [effector_fire_hit_0..7] cam_eff_name (postprocess.ltx) = cuknuti kamery
-	    podle strany, odkud zasah prisel (+ cerveny zablesk pp_eff_name, ten zustava)
-
-	Smerovka:   textura -> ui\ui_empty (prazdna textura hry). HUD si texturu nacte pri nacteni urovne,
-	            takze se projevi po nacteni savu / prechodu do jine lokace.
-	            Kdyz je vypnuta smerovka i cuknuti, vypne se navic cela HUD znacka zasahu hned
-	            (db.actor:disable_hit_marks), protoze tim zmizi obe veci zaroven.
-	Cuknuti:    cam_eff_name -> camera_effects\empty.anm (prazdna animace hry). Engine cte efekt
-	            pri kazdem zasahu, takze plati hned.
-	            Navic skript Anomaly actor_effects.Update_Impact pri vetsim ubytku zdravi prehraje
-	            vlastni animace kamery (hit_front, hit_left, shell_shock, head_shot... - efekt id 999).
-	            Ty se pri vypnute volbe nepousti; cerveny zablesk, zvuk bolesti a ostatni zustanou.
-	Hodnoty se meni jen v pameti hry (soubory zustanou), puvodni se pamatuji a pri vypnuti volby vrati.
-	Vyzaduje modded exes (ini_sys:set_readonly / w_string).
---]]
-
 local core = rezone_core
 local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_fx"
 
@@ -120,6 +99,7 @@ function load()
 	cfg.punch = g("aimpunch") == true
 	apply_ini()
 	apply_actor()
+	core.toggle_cb("actor_on_update", on_update, cfg.mark and cfg.punch)
 	core.log("zasahy: smerovka %s, cuknuti %s", cfg.mark and "vyp" or "zap", cfg.punch and "vyp" or "zap")
 end
 
@@ -127,6 +107,5 @@ function on_game_start()
 	core.on_change(load)
 	hook_impact()
 	RegisterScriptCallback("actor_on_first_update", load)
-	RegisterScriptCallback("actor_on_update", on_update)
 	load()	-- hned, at se smerovka nacte uz s nastavenou texturou
 end

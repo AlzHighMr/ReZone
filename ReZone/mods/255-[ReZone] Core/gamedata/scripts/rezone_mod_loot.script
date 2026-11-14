@@ -1,15 +1,5 @@
---[[
-	ReZone MCM - stav koristi z mrtvol (zbrane, armory, helmy) a mnozstvi munice
-	Napad: Configurable loot condition (Diphenhydramine). Vlastni kod:
-	- neprepisuje death_manager.script, jen obali jeho funkce (funguje s jinymi upravami)
-	- misto 36 posuvniku: rozsah pro nejnizsi a nejvyssi hodnost, mezi nimi plynule
-	- zombie zvlast, munice nasobicem; vypnuto = vanilla
-	- veci z mrtvol (death_manager.create_item): sance a pocet zvlast pro leky, jidlo a piti,
-	  granaty a ostatni (kategorie podle "kind" predmetu); munice: sance, ze se k zbrani vubec objevi
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_loot"
+local PAGE = rezone_mcm.path("rz_loot")
 
 RANKS = { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
 local RANK_IDX = {}

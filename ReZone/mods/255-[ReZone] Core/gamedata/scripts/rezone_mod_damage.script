@@ -1,13 +1,5 @@
---[[
-	ReZone MCM - poskozeni hrace (Zdravi > Poskozeni hrace)
-	- JEDINE misto, kde se meni poskozeni, ktere dostane hrac: nasobic podle typu zasahu
-	- vsechno na 1 = handler se odregistruje, ReZone se zasahu vubec nedotkne
-	- nasobi se v actor_on_before_hit, tedy pred brnenim a pred EFT Health System
-	  (poskozeni je v sile zasahu linearni, vysledek je stejny jako po brneni)
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_pdmg"
+local PAGE = rezone_mcm.path("rz_pdmg")
 local EPS = 0.0001
 
 local by_type = {}     -- [hit.<typ>] = nasobic
@@ -46,7 +38,7 @@ function load()
 			any = true
 		end
 	end
-	set_registered(any)
+	set_registered(g("enabled") ~= false and any)
 end
 
 -- 2.5.40: predvolba Call of Pripyat mela mutanty x0.4 a udery x0.5 - s EFTH skoro nulove poskozeni.

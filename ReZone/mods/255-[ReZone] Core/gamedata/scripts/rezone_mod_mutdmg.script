@@ -1,12 +1,5 @@
---[[
-	ReZone MCM - sila utoku mutantu (Zdravi > Sila utoku mutantu)
-	- nasobic poskozeni, ktere mutant da hraci, podle druhu (vanilla i ReSpawn Mutants)
-	- nasobi se v actor_on_before_hit spolu s "Poskozeni hrace" (to je podle typu zasahu)
-	- vypnuto nebo vse na 1 = handler se odregistruje
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_HP .. "/rz_mutdmg"
+local PAGE = rezone_mcm.path("rz_mutdmg")
 local EPS = 0.0001
 
 local by_species = {}

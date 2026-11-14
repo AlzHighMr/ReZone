@@ -1,17 +1,5 @@
---[[
-	ReZone MCM - artefakty v anomaliich (Gameplay > Artefakty v anomaliich)
-
-	Skupiny artefaktu (configs\items\settings\mod_artefacts_rezone.ltx) jsou podle sily v ReZone:
-	junk / low / mid / high / veryhigh. Pole maji v DLTX souborech, ktere skupiny v nich rostou.
-	Tady se nastavuje:
-	- sance, ze artefakt vubec vyroste (nasobi sanci z obtiznosti ekonomiky)
-	- nasobic po emisi a po psi bouri
-	- vzacnost: jak casto pole vybere slabsi nebo silnejsi skupinu (vanilla = vsechny stejne)
-	Vypnuto = vanilla chovani bind_anomaly_zone.
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_afsp"
+local PAGE = rezone_mcm.path("rz_afsp")
 
 -- vaha skupiny podle vzacnosti: { junk, low, mid, high, veryhigh }
 RARITY = {

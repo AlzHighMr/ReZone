@@ -1,21 +1,5 @@
---[[
-	ReZone MCM - hlad, zizen a unava (jak rychle pribyvaji)
-
-	Hlad:  engine (actor_condition satiety_v). Skript sleduje, o kolik sytost klesla od minule,
-	       a pokles vynasobi koeficientem (vraci / ubira rozdil pres change_satiety). Jidlo,
-	       pripadne skokove zmeny z jinych modu (otrava, EFTH skilly...) se nemeni.
-	Zizen: vanilla actor_status_thirst - up_drink (prirustek kazdych 300 hernich s)
-	       a in_hour (prirustek za hodinu spanku).
-	Unava: vanilla actor_status_sleep - up_sleep (prirustek kazdych 300 hernich s).
-	       Kolik unavy spanek ubere, zustava vanilla.
-
-	Promenne zizne/unavy jsou v Anomaly lokalni: kdyz je nekdo "unlocalizoval" (EFTH up_drink),
-	nastavi se pole modulu, jinak se zmeni pres debug.setupvalue. Soubory hry se nemeni.
-	1 = vanilla, 0 = vubec nepribyva, 2 = dvakrat rychleji.
---]]
-
 local core = rezone_core
-local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_GP .. "/rz_needs"
+local PAGE = rezone_mcm.path("rz_needs")
 
 local k_hunger, k_thirst, k_sleep = 1, 1, 1
 
@@ -106,13 +90,14 @@ function load()
 	k_hunger = tonumber(g("hunger")) or 1
 	k_thirst = tonumber(g("thirst")) or 1
 	k_sleep  = tonumber(g("sleep")) or 1
+	if g("enabled") == false then k_hunger, k_thirst, k_sleep = 1, 1, 1 end		-- vypnuto = vanilla
 	prev_sat = nil
+	core.toggle_cb("actor_on_update", actor_on_update, k_hunger ~= 1)
 	apply_vars()
 	core.log("potreby: hlad x%.2f, zizen x%.2f, unava x%.2f", k_hunger, k_thirst, k_sleep)
 end
 
 function on_game_start()
-	RegisterScriptCallback("actor_on_update", actor_on_update)
 	RegisterScriptCallback("actor_on_first_update", reset_hunger)
 	RegisterScriptCallback("actor_on_sleep", reset_hunger)
 	core.on_change(load)

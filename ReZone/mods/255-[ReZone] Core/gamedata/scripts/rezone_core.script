@@ -1,12 +1,3 @@
---[[
-	ReZone - jadro (spolecne pro vsechny casti ReZone)
-	- jedna cache pro vsechna nastaveni (ui_mcm.get se vola jen jednou na cestu, po zmene se cache smaze)
-	- vychozi hodnoty se berou primo ze stromu v rezone_mcm.script (jediny zdroj pravdy)
-	- jeden posluchac on_option_change, ktery rozesle zmenu modulum ve spravnem poradi
-	- doplneni zasob obchodniku (on_restock) - pozna se samo, bez trader_autoinject
-	- vlastni polozky v kontextovem menu inventare (add_menu)
---]]
-
 ROOT = "rezone"
 
 local defs      = nil   -- [path] = default
@@ -106,7 +97,7 @@ function get(path)
 	return v
 end
 
--- getter pro jednu stranku: local g = rezone_core.page("rezone/rz_health/rz_pdmg"); g("enabled")
+-- getter pro jednu stranku: local g = rezone_core.page(rezone_mcm.path("rz_pdmg")); g("enabled")
 function page(p)
 	return function(key) return get(p .. "/" .. key) end
 end
@@ -171,6 +162,19 @@ end
 ------------------------------------------------------------
 function on_change(fn)
 	listeners[#listeners + 1] = fn
+end
+
+-- callback registrovat jen kdyz je potreba (want), jinak odregistrovat
+local active_cb = {}
+function toggle_cb(name, fn, want)
+	local k = active_cb[fn]
+	if want and not k then
+		RegisterScriptCallback(name, fn)
+		active_cb[fn] = name
+	elseif not want and k then
+		UnregisterScriptCallback(k, fn)
+		active_cb[fn] = nil
+	end
 end
 
 function reload()

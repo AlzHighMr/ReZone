@@ -1,0 +1,264 @@
+-- sloupce jako vanilla (zaskrtavatko / popisek), radek y = 149
+local POS = {
+	[ [[ui\ui_mm_faction_select.xml]] ]    = { c = { 60, 331, 639 }, t = { 100, 371, 679 }, w = 35, tw = 40 },
+	[ [[ui\ui_mm_faction_select_16.xml]] ] = { c = { 48, 264, 511 }, t = { 80, 296, 543 }, w = 28, tw = 32 },
+	[ [[ui\ui_mm_faction_select_21.xml]] ] = { c = { 48, 264, 511 }, t = { 80, 296, 543 }, w = 28, tw = 32 },
+}
+
+-- { nazev prvku, text popisku, sloupec }
+local OPTIONS = {
+	{ "blackroad_mode",    "st_cap_check_blackroad_mode",    1 },
+	{ "rz_gamma",          "st_cap_check_rz_gamma",          2 },
+}
+
+local CAP = [[<cap_check_%s x="%d" y="150" width="%d" height="20" stretch="1"><text r="170" g="170" b="170" font="letterica16" align="l" vert_align="c">%s</text></cap_check_%s>]]
+local CHK = [[<check_%s x="%d" y="149" width="%d" height="23" stretch="1"><texture>ui_inGame2_checkbox</texture></check_%s>]]
+
+-- volba v menu Nova hra: nejdriv z XML menu (DXML vlozeni), kdyz ho UI mod nema, z vlastniho ui_rz_newgame.xml
+local own_xml
+function init_option(self, name)
+	local cap, ck
+	local parent = self.templ_options or self.dialog
+	local ok = pcall(function()
+		cap = self.xml:InitStatic("main_dialog:options:cap_check_" .. name, parent)
+		ck = self.xml:InitCheck("main_dialog:options:check_" .. name, parent)
+	end)
+	if not (ok and ck) then
+		ok = pcall(function()
+			if not own_xml then
+				own_xml = CScriptXmlInit()
+				own_xml:ParseFile("ui_rz_newgame.xml")
+			end
+			cap = own_xml:InitStatic("cap_check_" .. name, parent)
+			ck = own_xml:InitCheck("check_" .. name, parent)
+		end)
+	end
+	if not (ok and ck) then
+		printf("! ReZone: menu Nova hra - nelze vytvorit volbu %s", name)
+		return nil
+	end
+	self["ck_" .. name .. "_cap"] = cap
+	self["ck_" .. name] = ck
+	self:Register(ck, "check_" .. name)
+	return ck
+end
+
+local function patch(mod)
+	local m = mod and _G[mod]
+	if m and m.patch_ui then
+		local ok, err = pcall(m.patch_ui)
+		if not ok then printf("! ReZone: menu Nova hra (%s): %s", mod, tostring(err)) end
+	end
+end
+
+-- rozlozeni menu se lisi podle UI modu (vanilla: tri sloupce dole, jine UI: jeden sloupec vpravo).
+-- Volby ReZone se proto po vytvoreni posunou do volnych radku sloupce, ve kterem je "Pribehovy rezim".
+local OWN = {
+	{ "ck_blackroad_mode", "ck_blackroad_mode_cap" },
+	{ "ck_rz_gamma", "ck_rz_gamma_cap" },
+}
+
+local EXTRA = {
+	"ck_story", "ck_survival", "ck_routes", "ck_azazel_mode", "ck_warfare", "ck_hardcore", "ck_campfire",
+	"ck_conditions", "ck_drx", "ck_agony", "ck_agony_mode", "ck_soulslike", "ck_soulslike_mode", "ck_souls",
+	"list_hardcore_lives", "list_hardcore_regen", "list_timer", "list_ironman", "list_lifebuoy",
+}
+
+local function layout(self)
+	local story, story_cap = self.ck_story, self.ck_story_cap
+	if not (story and story.GetWndPos) then
+		printf("ReZone menu Nova hra: chybi ck_story - volby se neposouvaji")
+		return
+	end
+	local sp = story:GetWndPos()
+	local cap_dx = story_cap and story_cap.GetWndPos and (story_cap:GetWndPos().x - sp.x) or 32
+	-- nase volby (i Black Road od jineho addonu, kdyz je mimo sloupec)
+	-- self je objekt luabind (pairs nejde): projdou se jmena z ck_states a zname seznamy/volby
+	local own = { list_difficulty = true, list_economy = true }		-- tyhle nejsou ve sloupci voleb
+	for _, o in ipairs(OWN) do own[o[1]] = true; own[o[2]] = true end
+	local names, seen = {}, {}
+	local function add(n)
+		if type(n) == "string" and not seen[n] and not own[n] and not n:find("_cap$") then
+			seen[n] = true
+			names[#names + 1] = n
+		end
+	end
+	if type(self.ck_states) == "table" then
+		for n in pairs(self.ck_states) do add(n) end
+	end
+	for _, n in ipairs(EXTRA) do add(n) end
+	-- viditelna zaskrtavatka a seznamy; ys = obsazene radky sloupce
+	local ys, all = {}, {}
+	for _, n in ipairs(names) do
+		local v = self[n]
+		if v then
+			local ok, p = pcall(v.GetWndPos, v)
+			local okv, vis = pcall(v.IsShown, v)
+			if ok and p and (not okv or vis) then
+				all[#all + 1] = p
+				if math.abs(p.x - sp.x) <= 20 then ys[#ys + 1] = p.y end
+			end
+		end
+	end
+	table.sort(ys)
+	local step
+	for i = 2, #ys do
+		local d = ys[i] - ys[i - 1]
+		if d > 5 and (not step or d < step) then step = d end
+	end
+	step = step or 30
+	-- pozice z XML sedi (vanilla: tri sloupce, volny radek) -> nechat; jinak (mimo panel / prekryti) presunout
+	local tw = 0
+	if self.templ_options and self.templ_options.GetWidth then
+		local okw, w = pcall(self.templ_options.GetWidth, self.templ_options)
+		tw = okw and w or 0
+	end
+	local bad = false
+	for _, o in ipairs(OWN) do
+		local ck = self[o[1]]
+		if ck then
+			local p = ck:GetWndPos()
+			if tw > 0 and p.x + 20 > tw then bad = true end
+			local col = false
+			for i = 1, #all do
+				if math.abs(all[i].x - p.x) <= 5 then
+					col = true
+					if math.abs(all[i].y - p.y) < step * 0.6 then bad = true end
+				end
+			end
+			if not col then bad = true end
+		end
+	end
+	printf("ReZone menu Nova hra: sloupec x=%s, %d radku, krok %s, BR=%s GAMMA=%s, presun=%s", tostring(sp.x), #ys, tostring(step),
+		tostring(self.ck_blackroad_mode ~= nil), tostring(self.ck_rz_gamma ~= nil), tostring(bad))
+	if not bad then return end
+	local function free(y)
+		for i = 1, #ys do
+			if math.abs(ys[i] - y) < step * 0.6 then return false end
+		end
+		return true
+	end
+	local slots, y, last = {}, ys[1] or sp.y, ys[#ys] or sp.y
+	while #slots < #OWN do
+		if free(y) then
+			slots[#slots + 1] = y
+			ys[#ys + 1] = y
+		end
+		y = y + step
+		if y > last + step * (#OWN + 1) then break end
+	end
+	local n = 0
+	for _, o in ipairs(OWN) do
+		local ck, cap = self[o[1]], self[o[2]]
+		if ck then
+			n = n + 1
+			local sy = slots[n]
+			if sy then
+				ck:SetWndPos(vector2():set(sp.x, sy))
+				if cap then cap:SetWndPos(vector2():set(sp.x + cap_dx, sy + 1)) end
+			end
+		end
+	end
+end
+
+local function patch_layout()
+	local cls = ui_mm_faction_select and ui_mm_faction_select.UINewGame
+	if not cls or cls.__rz_layout then return end
+	cls.__rz_layout = true
+	local base_controls = cls.Main_Controls
+	cls.Main_Controls = function(self, ...)
+		base_controls(self, ...)
+		local ok, err = pcall(layout, self)
+		if not ok then printf("! ReZone: rozlozeni voleb Nova hra: %s", tostring(err)) end
+	end
+end
+
+-- jeden sloupec voleb (SOTA UI apod.): rozmer a x podle "Pribehovy rezim", radek = volne misto ve sloupci
+local function num(v) return tonumber((string.gsub(tostring(v or ""), '"', ""))) end
+
+local function column_layout(xml_obj, opt)
+	local story, story_cap
+	local rows = {}
+	for _, k in ipairs(opt.kids or {}) do
+		if xml_obj:isElement(k) then
+			local name = xml_obj:getElementName(k)
+			local a = xml_obj:getElementAttr(k) or {}
+			if name == "check_story" then story = a end
+			if name == "cap_check_story" then story_cap = a end
+			if name:find("^check_") or name:find("^list_") then
+				rows[#rows + 1] = { x = num(a.x), y = num(a.y) }
+			end
+		end
+	end
+	if not (story and story_cap) then return nil end
+	local sx = num(story.x)
+	local ys = {}
+	for _, r in ipairs(rows) do
+		if r.x and r.y then
+			if math.abs(r.x - sx) > 20 then return nil end		-- vic sloupcu (vanilla) -> puvodni rozlozeni
+			ys[#ys + 1] = r.y
+		end
+	end
+	table.sort(ys)
+	local step
+	for i = 2, #ys do
+		local d = ys[i] - ys[i - 1]
+		if d > 5 and (not step or d < step) then step = d end
+	end
+	step = step or 30
+	local function free(y)
+		for i = 1, #ys do if math.abs(ys[i] - y) < step * 0.6 then return false end end
+		return true
+	end
+	local slots, y = {}, ys[1] or num(story.y)
+	while #slots < #OPTIONS do
+		if free(y) then slots[#slots + 1] = y; ys[#ys + 1] = y end
+		y = y + step
+	end
+	return {
+		slots = slots, x = sx, w = num(story.width) or 28, h = num(story.height) or 23,
+		cx = num(story_cap.x) or sx + 32, cw = num(story_cap.width) or 32, cdy = (num(story_cap.y) or 0) - (num(story.y) or 0),
+	}
+end
+
+local CAP2 = [[<cap_check_%s x="%s" y="%s" width="%s" height="18" stretch="1"><text r="170" g="170" b="170" font="letterica16" align="l" vert_align="c">%s</text></cap_check_%s>]]
+local CHK2 = [[<check_%s x="%s" y="%s" width="%s" height="%s" stretch="1"><texture>ui_inGame2_checkbox</texture></check_%s>]]
+
+function insert_options(xml_obj, opt, p)
+	local col = column_layout(xml_obj, opt)
+	for i, o in ipairs(OPTIONS) do
+		local have = xml_obj:query("check_" .. o[1], opt)
+		if not (have and have[1]) then		-- uz tam je (puvodni addon) -> nepridavat
+			if col then
+				local y = col.slots[i]
+				xml_obj:insertFromXMLString(string.format(CAP2, o[1], col.cx, y + col.cdy, col.cw, o[2], o[1]), opt)
+				xml_obj:insertFromXMLString(string.format(CHK2, o[1], col.x, y, col.w, col.h, o[1]), opt)
+			else
+				local c = o[3]
+				xml_obj:insertFromXMLString(string.format(CAP, o[1], p.t[c], p.tw, o[2], o[1]), opt)
+				xml_obj:insertFromXMLString(string.format(CHK, o[1], p.c[c], p.w, o[1]), opt)
+			end
+		end
+	end
+	if col then printf("ReZone menu Nova hra: volby do sloupce, radky %s", table.concat(col.slots, ", ")) end
+end
+
+function on_xml_read()
+	-- menu Nova hra bezi pred startem hry (on_game_start tam jeste nebezi) -> obalit UI uz tady
+	patch("rezone_newgame_modes")
+	patch("rezone_gamma_like_mode")
+	pcall(patch_layout)
+
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		local p = POS[xml_file_name]
+		if not p then return end
+		local dlg = xml_obj:query("main_dialog")
+		local opt = dlg and dlg[1] and xml_obj:query("options", dlg[1])
+		if not (opt and opt[1]) then
+			printf("! ReZone: %s bez main_dialog/options", xml_file_name)
+			return
+		end
+		local ok, err = pcall(insert_options, xml_obj, opt[1], p)
+		if not ok then printf("! ReZone: %s: %s", xml_file_name, tostring(err)) end
+	end)
+end

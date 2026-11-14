@@ -1,18 +1,6 @@
---[[
-	ReZone Helmets - vlastni system oddelenych helem
-
-	- kazdy oblek ma slot na helmu (DLTX ..._rezone_armor_outfits.ltx), ochrana hlavy je jen z helmy
-	- uzavrene obleky (SEVA, exo, Nosorog, NBC, SSP...) prisly o vestavenou masku: cast ochrany
-	  proti radiaci, psi a chemii je ted v helme
-	- helmy maji pancir hlavy podle profilu obleku (CoP / Anomaly / Hardcore, rezone_armor.script)
-	- mrtve NPC v uzavrenem obleku, jehoz model nema samostatnou helmu, upusti i odpovidajici helmu
-	  (configs\rezone\helmets.ltx, MCM Gameplay > Balistika). Plati stejna pravidla dropu jako
-	  u obleku (postupny drop, stav podle ranku).
---]]
-
 local core = rezone_core
-local PATH = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helm_drop"
-local PATH_ON = "rezone/" .. rezone_mcm.TAB_GP .. "/rz_ball/helmets"
+local PATH = rezone_mcm.path("rz_ball") .. "/helm_drop"
+local PATH_ON = rezone_mcm.path("rz_ball") .. "/helmets"
 
 local closed = nil
 

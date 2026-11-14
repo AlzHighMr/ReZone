@@ -3,14 +3,20 @@
 	<string id="ui_mcm_menu_rezone">
 		<text>ReZone</text>
 	</string>
-	<string id="ui_mcm_menu_rz_gameplay">
-		<text>Gameplay</text>
+	<string id="ui_mcm_menu_rz_econ">
+		<text>Экономика</text>
 	</string>
-	<string id="ui_mcm_menu_rz_health">
-		<text>Health</text>
+	<string id="ui_mcm_menu_rz_combat">
+		<text>Бой</text>
+	</string>
+	<string id="ui_mcm_menu_rz_world">
+		<text>Мир</text>
+	</string>
+	<string id="ui_mcm_menu_rz_survival">
+		<text>Выживание</text>
 	</string>
 	<string id="ui_mcm_menu_rz_other">
-		<text>Other</text>
+		<text>Прочее</text>
 	</string>
 	<string id="ui_mcm_menu_rz_links">
 		<text>Links to other mods</text>
@@ -48,14 +54,8 @@
 	<string id="ui_mcm_rz_pdmg_title">
 		<text>Player damage</text>
 	</string>
-	<string id="ui_mcm_rz_pdmg_off_note">
-		<text>Off = ReZone does not touch hits at all. Vanilla damage or another mod applies.</text>
-	</string>
 	<string id="ui_mcm_rz_pdmg_hits">
 		<text>By hit type</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mutants">
-		<text>By attacking mutant (stacks with hit type)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_enabled">
 		<text>Enable ReZone damage system</text>
@@ -71,9 +71,6 @@
 	</string>
 	<string id="ui_mcm_rz_pdmg_all_desc">
 		<text>Multiplies all hit types (presets don't change it).</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mut_enabled">
-		<text>Enable per-mutant multipliers</text>
 	</string>
 	<string id="ui_mcm_rz_muthp_title">
 		<text>Mutant toughness</text>
@@ -192,53 +189,17 @@
 	<string id="ui_mcm_rz_sp_pseudo_gigant">
 		<text>Pseudogiant</text>
 	</string>
-	<string id="ui_mcm_rz_link_arti_hitnum">
-		<text>Arti ballistics - damage numbers</text>
-	</string>
-	<string id="ui_mcm_rz_link_arti_page">
-		<text>Arti ballistics - settings</text>
-	</string>
-	<string id="ui_mcm_rz_link_ammomaker">
-		<text>Ammo crafting - settings</text>
-	</string>
 	<string id="ui_mcm_menu_rz_trade">
 		<text>Trade</text>
 	</string>
 	<string id="ui_mcm_rz_trade_title">
-		<text>GAMMA-style trading</text>
+		<text>Торговля</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Торговцы не покупают и не продают оружие, костюмы и шлемы. Снаряжение добывается с трупов, у друзей и в тайниках, его можно чинить и разбирать на детали. Ничего не удаляется, просто скрыто в окне торговли - при отключении всё вернётся.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma">
-		<text>Play like GAMMA</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma_desc">
-		<text>Main switch. Off = trading as before.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Торговцы ничего из этого не покупают</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Оружие (а также костюмы и шлемы) из инвентаря нельзя продать - торговцу это не интересно.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Торговцы ничего из этого не продают</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Оружие (а также костюмы и шлемы) исчезает из ассортимента торговцев.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee">
-		<text>Knives too</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee_desc">
-		<text>Off = knives can still be bought and sold. Grenades, ammo and attachments are never restricted.</text>
+		<text>Скупка, шлемы и запасы торговцев. «Играть как в GAMMA» (торговцы не продают и не скупают оружие, костюмы и шлемы, тайники только по координатам) теперь режим в меню Новая игра - отмечается при создании игры и действует всю игру.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Оружие = пистолеты, ПП, винтовки, дробовики и снайперские винтовки. Гранаты, патроны, обвесы и детали не ограничиваются.</text>
-	</string>
-	<string id="st_rz_trade_no_weapons">
-		<text>Traders do not buy weapons (ReZone: GAMMA-style trading)</text>
+		<text>Играть как в GAMMA - в меню Новая игра > Опции (по умолчанию выключено). Здесь больше не включается.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_prices">
 		<text>Prices</text>
@@ -474,9 +435,6 @@
 	<string id="ui_mcm_rz_loot_ammo_h">
 		<text>Ammo</text>
 	</string>
-	<string id="st_rz_trade_no_helmets">
-		<text>Торговцы не покупают шлемы (ReZone)</text>
-	</string>
 	<string id="ui_mcm_menu_rz_pop">
 		<text>Популяция</text>
 	</string>
@@ -637,7 +595,7 @@
 		<text>Торговцы не покупают шлемы</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_sell_desc">
-		<text>Шлемы им не продать. Работает и без торговли как в GAMMA.</text>
+		<text>Шлемы им не продать. Действует и без режима Играть как в GAMMA.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_buy">
 		<text>Торговцы не продают шлемы</text>
@@ -700,10 +658,10 @@
 		<text>Считаются штуки (пачки патронов, упаковки). Проданные тобой вещи ограничиваются только при следующем пополнении.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_ball">
-		<text>Баллистика</text>
+		<text>Баллистика и живучесть</text>
 	</string>
 	<string id="ui_mcm_rz_ball_title">
-		<text>Баллистика ReZone</text>
+		<text>ReZone баллистика и живучесть</text>
 	</string>
 	<string id="ui_mcm_rz_ball_info">
 		<text>Собственный расчёт урона по NPC и мутантам от твоих пуль. Данные патронов: configs\rezone\ammo.ltx. Бои NPC между собой считает игра, как раньше.</text>
@@ -725,12 +683,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
 		<text>CoP: если патрон пробивает броню, урон снижается в пропорции (пробитие - броня) / пробитие; если нет, проходит только заброневой удар. AP против брони, обычные против небронированных.</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough">
-		<text>Живучесть NPC</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough_desc">
-		<text>Множитель поверх пресета (2 = NPC выдерживают вдвое больше).</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Материалы и крафт патронов</text>
@@ -1425,9 +1377,6 @@
 	<string id="ui_mcm_rz_needs_note">
 		<text>Действует сразу. Жажда и усталость работают, только если включены в Опции > Геймплей. Файлы игры не меняются.</text>
 	</string>
-	<string id="ui_mcm_menu_rz_sthp">
-		<text>Живучесть сталкеров</text>
-	</string>
 	<string id="ui_mcm_rz_sthp_title">
 		<text>Живучесть сталкеров по рангу</text>
 	</string>
@@ -1536,12 +1485,6 @@
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Установлен Zone Customization Project. Обе настройки популяции будут складываться - используй только одну.</text>
 	</string>
-	<string id="ui_mcm_rz_trade_outfits">
-		<text>Также костюмы и шлемы</text>
-	</string>
-	<string id="ui_mcm_rz_trade_outfits_desc">
-		<text>Вкл = как в GAMMA, костюмы и шлемы тоже нельзя купить или продать. Выкл = только оружие.</text>
-	</string>
 	<string id="ui_mcm_rz_craft_keep_open">
 		<text>Не закрывать окна после действия</text>
 	</string>
@@ -1559,9 +1502,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_dis_yield_desc">
 		<text>Сколько возвращает разобранный патрон - доля именно тех предметов, из которых он крафтится в мастерской (0.5 = половина). Напр. «Дыхание дракона» вернёт дробовые патроны и огненный и звёздный порошок. Патроны без рецепта разбираются по-старому.</text>
-	</string>
-	<string id="ui_mcm_menu_rz_population">
-		<text>Население</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
 		<text>Атаки ножом</text>
@@ -1616,5 +1556,32 @@
 	</string>
 	<string id="ui_mcm_rz_knife_note">
 		<text>Изменения действуют сразу. Шанс ножа и сюжетные персонажи действуют на NPC, загруженных после изменения. Отдельного NPC можно исключить в логике: can_use_knife = false.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_mut_link">
+		<text>Живучесть мутантов настраивается на следующей странице.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled">
+		<text>Включить баллистику ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled_desc">
+		<text>Выключено = урон от твоих пуль считает игра, как в обычной Anomaly. Данные патронов и костюмов и особые эффекты патронов остаются.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled">
+		<text>Включить настройки торговли</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled_desc">
+		<text>Выключено = минимальное состояние скупки, запрет шлемов и ограничение запасов не действуют. Режим «Играть как в GAMMA» продолжает работать.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled">
+		<text>Включить изменение зрения NPC</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled_desc">
+		<text>Выключено = зрение сталкеров и мутантов как в обычной Anomaly (исходные значения возвращаются сразу).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled">
+		<text>Включить изменение голода, жажды и сна</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled_desc">
+		<text>Выключено = голод, жажда и усталость растут как в обычной Anomaly.</text>
 	</string>
 </string_table>

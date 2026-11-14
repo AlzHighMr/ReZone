@@ -3,11 +3,17 @@
 	<string id="ui_mcm_menu_rezone">
 		<text>ReZone</text>
 	</string>
-	<string id="ui_mcm_menu_rz_gameplay">
-		<text>Gameplay</text>
+	<string id="ui_mcm_menu_rz_econ">
+		<text>Ekonomika</text>
 	</string>
-	<string id="ui_mcm_menu_rz_health">
-		<text>Zdraví</text>
+	<string id="ui_mcm_menu_rz_combat">
+		<text>Boj</text>
+	</string>
+	<string id="ui_mcm_menu_rz_world">
+		<text>Svìt</text>
+	</string>
+	<string id="ui_mcm_menu_rz_survival">
+		<text>Pøežití</text>
 	</string>
 	<string id="ui_mcm_menu_rz_other">
 		<text>Ostatní</text>
@@ -48,14 +54,8 @@
 	<string id="ui_mcm_rz_pdmg_title">
 		<text>Poškození hráèe</text>
 	</string>
-	<string id="ui_mcm_rz_pdmg_off_note">
-		<text>Vypnuto = ReZone se zásahù vùbec nedotkne. Platí vanilla poškození, nebo nastavení jiného modu.</text>
-	</string>
 	<string id="ui_mcm_rz_pdmg_hits">
 		<text>Podle typu zásahu</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mutants">
-		<text>Podle mutanta, který útoèí (násobí se s typem zásahu)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_enabled">
 		<text>Zapnout systém poškození ReZone</text>
@@ -71,9 +71,6 @@
 	</string>
 	<string id="ui_mcm_rz_pdmg_all_desc">
 		<text>Násobí všechny typy zásahu (pøedvolba ho nemìní).</text>
-	</string>
-	<string id="ui_mcm_rz_pdmg_mut_enabled">
-		<text>Zapnout násobièe podle mutantù</text>
 	</string>
 	<string id="ui_mcm_rz_muthp_title">
 		<text>Odolnost mutantù</text>
@@ -192,53 +189,17 @@
 	<string id="ui_mcm_rz_sp_pseudo_gigant">
 		<text>Pseudogigant</text>
 	</string>
-	<string id="ui_mcm_rz_link_arti_hitnum">
-		<text>Arti balistika – èísla poškození</text>
-	</string>
-	<string id="ui_mcm_rz_link_arti_page">
-		<text>Arti balistika – nastavení</text>
-	</string>
-	<string id="ui_mcm_rz_link_ammomaker">
-		<text>Výroba munice – nastavení</text>
-	</string>
 	<string id="ui_mcm_menu_rz_trade">
 		<text>Obchod</text>
 	</string>
 	<string id="ui_mcm_rz_trade_title">
-		<text>Obchod jako v GAMMA</text>
+		<text>Obchod</text>
 	</string>
 	<string id="ui_mcm_rz_trade_info">
-		<text>Obchodníci nekupují ani neprodávají zbranì, obleky a helmy. Výbavu získáš z mrtvol, od pøátel a ze skrýší, opravíš ji a rozebereš na díly. Nic se nemaže, jen se to v obchodním oknì neukáže nebo to nejde prodat – vypnutím se vše vrátí.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma">
-		<text>Hrát jako GAMMA</text>
-	</string>
-	<string id="ui_mcm_rz_trade_gamma_desc">
-		<text>Hlavní vypínaè. Vypnuto = obchod jako døív.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell">
-		<text>Obchodníci nic z toho nekupují</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_sell_desc">
-		<text>Zbranì (a obleky s helmami) z tvého inventáøe nejde prodat – obchodník o nì nemá zájem.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy">
-		<text>Obchodníci nic z toho neprodávají</text>
-	</string>
-	<string id="ui_mcm_rz_trade_no_buy_desc">
-		<text>Zbranì (a obleky s helmami) zmizí z nabídky obchodníkù.</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee">
-		<text>Platí i pro nože</text>
-	</string>
-	<string id="ui_mcm_rz_trade_melee_desc">
-		<text>Vypnuto = nože jdou koupit a prodat dál. Granáty, munice a doplòky se neomezují nikdy.</text>
+		<text>Výkup, helmy a zásoby obchodníkù. „Hrát jako GAMMA“ (obchodníci neprodávají ani nevykupují zbranì, obleky a helmy, skrýše jen se souøadnicemi) je teï herní režim v menu Nová hra – zaškrtává se pøi založení hry a platí pro celou hru.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_note">
-		<text>Zbranì = pistole, samopaly, pušky, brokovnice a odstøelovaèky. Granáty, munice, doplòky a díly se neomezují nikdy.</text>
-	</string>
-	<string id="st_rz_trade_no_weapons">
-		<text>Obchodníci zbranì nekupují (ReZone: obchod jako GAMMA)</text>
+		<text>Hrát jako GAMMA najdeš v menu Nová hra › Možnosti (ve výchozím stavu vypnuté). Tady se už nezapíná.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_prices">
 		<text>Ceny</text>
@@ -474,9 +435,6 @@
 	<string id="ui_mcm_rz_loot_ammo_h">
 		<text>Munice</text>
 	</string>
-	<string id="st_rz_trade_no_helmets">
-		<text>Obchodníci helmy nekupují (ReZone)</text>
-	</string>
 	<string id="ui_mcm_menu_rz_pop">
 		<text>Populace</text>
 	</string>
@@ -637,7 +595,7 @@
 		<text>Obchodníci nekupují helmy</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_sell_desc">
-		<text>Helmy jim neprodáš. Platí i bez zapnutého obchodu jako GAMMA.</text>
+		<text>Helmy jim neprodáš. Platí i bez režimu Hrát jako GAMMA.</text>
 	</string>
 	<string id="ui_mcm_rz_trade_helm_no_buy">
 		<text>Obchodníci neprodávají helmy</text>
@@ -700,13 +658,13 @@
 		<text>Poèítají se kusy (krabice munice, balení). Tvoje prodané vìci se do limitu nepoèítají, dokud nepøijde další doplnìní.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_ball">
-		<text>Balistika</text>
+		<text>Balistika a odolnost</text>
 	</string>
 	<string id="ui_mcm_rz_ball_title">
-		<text>ReZone balistika</text>
+		<text>ReZone balistika a odolnost</text>
 	</string>
 	<string id="ui_mcm_rz_ball_info">
-		<text>Vlastní výpoèet poškození NPC a mutantù od tvých støel. Data munice: configs\rezone\ammo.ltx. Boje NPC mezi sebou poèítá hra jako døív.</text>
+		<text>Jak NPC a mutanti snesou tvoje støely (pøedvolba balistiky) a kolik stalkeøi vydrží celkovì (odolnost podle hodnosti). Data munice: configs\rezone\ammo.ltx. Boje NPC mezi sebou poèítá hra jako døív.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset">
 		<text>Pøedvolba poškození</text>
@@ -725,12 +683,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
 		<text>CoP: když náboj prorazí brnìní, poškození klesne podle pomìru (prùraz - brnìní) / prùraz; když ne, projde jen tupý náraz. Proto AP munice proti obrnìným a obyèejná proti neobrnìným.</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough">
-		<text>Odolnost NPC</text>
-	</string>
-	<string id="ui_mcm_rz_ball_npc_tough_desc">
-		<text>Násobiè navíc k pøedvolbì (2 = NPC vydrží dvakrát víc).</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Suroviny a výroba munice</text>
@@ -1425,9 +1377,6 @@
 	<string id="ui_mcm_rz_needs_note">
 		<text>Platí hned. Žízeò a únava fungují, jen když jsou zapnuté v Možnosti > Gameplay. Soubory hry se nemìní.</text>
 	</string>
-	<string id="ui_mcm_menu_rz_sthp">
-		<text>Odolnost stalkerù</text>
-	</string>
 	<string id="ui_mcm_rz_sthp_title">
 		<text>Odolnost stalkerù podle hodnosti</text>
 	</string>
@@ -1536,12 +1485,6 @@
 	<string id="ui_mcm_rz_pop_zcp_warn">
 		<text>Je nainstalovaný Zone Customization Project. Obì nastavení populace by se násobila – používej jen jedno z nich.</text>
 	</string>
-	<string id="ui_mcm_rz_trade_outfits">
-		<text>Platí i pro obleky a helmy</text>
-	</string>
-	<string id="ui_mcm_rz_trade_outfits_desc">
-		<text>Zapnuto = jako v GAMMA, obleky a helmy se taky nedají koupit ani prodat. Vypnuto = omezení jen pro zbranì.</text>
-	</string>
 	<string id="ui_mcm_rz_craft_keep_open">
 		<text>Okna zùstanou po akci otevøená</text>
 	</string>
@@ -1559,9 +1502,6 @@
 	</string>
 	<string id="ui_mcm_rz_ball_dis_yield_desc">
 		<text>Kolik surovin vrátí rozebraná munice – podíl pøesnì tìch vìcí, ze kterých se v dílnì vyrábí (0,5 = polovina). Napø. Draèí dech vrátí brokové náboje a ohnivý a hvìzdný prach, ne obecné díly. Munice bez receptu se rozebírá postaru.</text>
-	</string>
-	<string id="ui_mcm_menu_rz_population">
-		<text>Populace</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
 		<text>Útoky nožem</text>
@@ -1616,5 +1556,32 @@
 	</string>
 	<string id="ui_mcm_rz_knife_note">
 		<text>Zmìny platí hned. Šance na nùž a pøíbìhové postavy se projeví u NPC, která se naètou po zmìnì. Konkrétní NPC lze vyøadit v jeho logice: can_use_knife = false.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_mut_link">
+		<text>Odolnost mutantù nastavíš na další stránce Odolnost mutantù.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled">
+		<text>Zapnout ReZone balistiku</text>
+	</string>
+	<string id="ui_mcm_rz_ball_enabled_desc">
+		<text>Vypnuto = poškození od tvých støel poèítá hra jako vanilla Anomaly. Údaje munice a oblekù (tøídy prùrazu, profil oblekù) zùstávají, speciální efekty munice také.</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled">
+		<text>Zapnout nastavení obchodu</text>
+	</string>
+	<string id="ui_mcm_rz_trade_enabled_desc">
+		<text>Vypnuto = minimální stav výkupu, zákaz helem a omezení zásob neplatí (obchod jako v Anomaly). Režim Hrát jako GAMMA z nové hry platí dál.</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled">
+		<text>Zapnout úpravu zraku NPC</text>
+	</string>
+	<string id="ui_mcm_rz_vision_enabled_desc">
+		<text>Vypnuto = zrak stalkerù a mutantù je jako ve vanilla Anomaly (pùvodní hodnoty se vrátí hned).</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled">
+		<text>Zapnout úpravu hladu, žíznì a únavy</text>
+	</string>
+	<string id="ui_mcm_rz_needs_enabled_desc">
+		<text>Vypnuto = hlad, žízeò a únava pøibývají jako ve vanilla Anomaly.</text>
 	</string>
 </string_table>

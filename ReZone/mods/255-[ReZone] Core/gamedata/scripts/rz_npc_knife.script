@@ -1,20 +1,4 @@
---[[
-	ReZone NPC Knife - NPC utoci na hrace, stalkery a mutanty nozem
-	scheme_type: generic  (jako axr_fight_from_cover)
-
-	Port rx_knife.script z AI Additions (Rulix aka Bak, 2010/2016), jak je v Anthology, pro cistou Anomaly 1.5.2:
-	 * bez rx_ai / rx_utils / rx_sound / rx_gl / rx_bandage (v Anomaly nejsou) - potrebne funkce jsou primo tady
-	 * registrace jako generic schema Anomaly (LoadScheme), ne pres rx_ai
-	 * state_mgr.lock (v Anomaly neni) -> akce je v state_mgr.combat_action_ids (state manager do ni nezasahuje)
-	 * hit_callback pres npc_on_hit_callback (rx_ai.subscribe_for_events v Anomaly neni)
-	 * zvuky z temat Anomaly (fight_attack), granat = npc:best_danger()
-	 * opravene chyby originalu: npc_id pred definici (nil), cls_id v is_low_target (nil),
-	   chybejici frakce v konfiguraci (pad pri indexovani nil), NPC uz neplati 300 RU za nuz
-	Nastaveni: configs\misc\rz_npc_knife.ltx
-	Soucast ReZone (od 2.5.37): MCM ReZone > Gameplay > Utoky nozem (zapnuti, sance na nuz, odvaha,
-	zraneni hraci, lov mutantu, story postavy, zvuky). Bez ReZone plati jen hodnoty z LTX.
---]]
-
+-- port rx_knife z AI Additions (Rulix aka Bak)
 --------------------------------------
 evid_knife_attack = 188180
 actid_knife_attack = evid_knife_attack
@@ -56,7 +40,7 @@ local sets = {
 local attack_clsids, defend_clsids = {}, {}
 
 -- MCM ReZone (Gameplay > Utoky nozem): prepisuje / nasobi hodnoty z LTX
-local MCM_PAGE = "rezone/rz_gameplay/rz_knife"
+local MCM_PAGE = rezone_mcm.path("rz_knife")
 local mcm = { enabled = true, courage = 1, hunt = true }
 local ltx = {}		-- hodnoty z LTX pred upravou z MCM
 local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }

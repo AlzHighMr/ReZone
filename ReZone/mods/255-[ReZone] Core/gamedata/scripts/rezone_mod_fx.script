@@ -1,20 +1,3 @@
---[[
-	ReZone MCM - vypnuti obrazovych efektu (PPE) radiace, poltergeista a controllera
-
-	Engine (monster_aura) cte pri nacteni monstra z system.ltx klice
-	  psy_pp_effector_name, radiation_pp_effector_name  (aura - efekt, kdyz je monstrum blizko)
-	  detection_pp_effector_name                        (poltergeist - "skenovani" hrace)
-	a radiacni pole cte polomer efektu ze sekce [postprocess_rad].
-
-	Modul tyto hodnoty v pameti hry prepise (soubory na disku zustanou beze zmeny):
-	- jmeno efektu aury -> prazdne: engine pak efekt vubec neprida, zvuk aury, poskozeni
-	  a chovani monstra zustanou
-	- polomer efektu radiacnich poli -> 0
-	Puvodni hodnoty si pamatuje (v pameti hry, prezije nacteni savu) a pri vypnuti volby je vrati.
-	Projevi se u monster a poli, ktera se nactou potom (nejjisteji po nacteni savu).
-	Vyzaduje modded exes (ini_sys:set_readonly / w_string).
---]]
-
 local core = rezone_core
 local PAGE = rezone_mcm.ROOT .. "/" .. rezone_mcm.TAB_OT .. "/rz_fx"
 
