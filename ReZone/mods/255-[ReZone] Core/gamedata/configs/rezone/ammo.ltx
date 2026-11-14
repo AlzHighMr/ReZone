@@ -1,14 +1,5 @@
-; ReZone - data munice (vlastni format). Klice:
-;  hit     nasobic poskozeni      ap      pruraznost (0.05 = jedna trida brneni)
-;  impact  tupy naraz (kdyz neprorazi)  pen  ztrata pri prostrelu   hp  rozsireni (hollow point)
-;  effect  zvlastni efekt (rezone_ammo_fx)   on_impact / on_shoot  efekt pri dopadu / vystrelu
-;  wear    opotrebeni zbrane (1 = vanilla)   downgrade / downgrade_chance  horsi naboj u NPC a obchodniku
-;  price   cena krabice   name  textove id nazvu   tag  stitek v popisku
-
 [ammo_base]
 effect = none
-
-; ---------------- pistol
 
 [ammo_9x18_fmj]:ammo_base
 name     = ammo_new_9x18_fmj
@@ -323,7 +314,6 @@ downgrade_chance= 1
 [ammo_357_hp_mag_verybad]:ammo_357_hp_mag_bad
 downgrade= ammo_357_hp_mag_bad
 downgrade_chance= 1
-; ---------------- rifle
 
 [ammo_5.45x39_fmj]:ammo_base
 name     = ammo_new_5.45x39_fmj
@@ -552,7 +542,6 @@ tag      = ambush
 [ammo_7.62x39_fmj_verybad]:ammo_7.62x39_fmj_bad
 
 [ammo_7.62x39_ap_verybad]:ammo_7.62x39_ap_bad
-; ---------------- sniper
 
 [ammo_7.62x54_7h1]:ammo_base
 name     = ammo_new_7.62x54r
@@ -787,7 +776,6 @@ downgrade_chance= 0.8
 [ammo_12.7x55_ap_verybad]:ammo_12.7x55_ap_bad
 
 [ammo_magnum_300_verybad]:ammo_magnum_300_bad
-; ---------------- shotgun
 
 [ammo_12x70_buck]:ammo_base
 effect   = buckshot
@@ -855,7 +843,6 @@ on_shoot = muzzle_fire
 [ammo_12x76_zhekan_verybad]:ammo_12x76_zhekan_bad
 
 [ammo_12x76_dart_verybad]:ammo_12x76_dart_bad
-; ---------------- other
 
 [ammo_4.6x30_fmj]:ammo_base
 name     = ammo_new_4.6x30_fmj
@@ -890,7 +877,6 @@ hit      = 3
 ap       = 0.25
 impact   = 0.9
 price    = 6000
-; ---------------- grenades
 
 [ammo_m209]:ammo_base
 name     = ammo_new_m209
@@ -927,7 +913,6 @@ bombs    = 10
 downgrade= ammo_vog-25
 downgrade_chance= 0.4
 tag      = cluster
-; ---------------- bas
 
 [ammo_23x75_shrapnel]:ammo_base
 effect   = buckshot

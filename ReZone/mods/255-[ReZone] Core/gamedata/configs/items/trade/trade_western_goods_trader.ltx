@@ -1,0 +1,48 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+discounts                                        = discount_supplier
+
+buy_condition                                    = trade_generic_buy
+buy_supplies                                     = {=heavy_pockets_functor()} supplies_3, {=actor_goodwill_ge(killer:1000)} supplies_3, {=actor_goodwill_ge(killer:500)} supplies_2,  supplies_1
+buy_item_condition_factor                        = 1.0
+buy_item_exponent                                = 3.00
+
+sell_condition                                   = trade_generic_sell
+sell_item_exponent                               = 1.0
+
+[trade_generic_buy]
+
+[trade_generic_sell]
+
+[supplies_1]:common_stock
+
+wg_military_radio                                = 1    , 0.9
+
+wg_xbox_mag_1                                    = 1    , 0.85
+wg_strana_igr_mag_1                              = 1    , 0.70
+
+[supplies_2]:supplies_1
+
+wg_laptop                                        = 1    , 0.5
+wg_military_radio                                = 1    , 1.0
+
+wg_xbox_mag_1                                    = 5    , 0.9
+wg_xbox_mag_2                                    = 5    , 0.9
+wg_car_mag_1                                     = 1    , 0.75
+wg_car_mag_2                                     = 1    , 0.75
+
+outfit_nanosuit                                = 1    , 0.05
+nanosuit_defibrillator                         = 1    , 0.05
+
+[supplies_3]:supplies_2
+
+wg_gps                                           = 1    , 0.7
+
+wg_porn_mag_1                                    = 2    , 0.8
+wg_porn_mag_2                                    = 3    , 0.8
+wg_porn_mag_3                                    = 2    , 0.8
+
+outfit_nanosuit                                = 1    ,1
+nanosuit_defibrillator                         = 1    ,1

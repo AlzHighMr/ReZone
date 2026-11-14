@@ -1,23 +1,20 @@
 local ROOT = "rezone/"
 MASTER = ROOT .. "rz_main/rz_master/master"
-local APPLIED = "rz_master_applied"		-- [rezone_internal] v axr_options: posledni pouzita predvolba
+local APPLIED = "rz_master_applied"
 
-NAMES = { [0] = "custom", [1] = "cop", [2] = "trilogy", [3] = "hardcore" }	-- "trilogy" = v MCM "Anomaly"
+NAMES = { [0] = "custom", [1] = "cop", [2] = "trilogy", [3] = "hardcore" }
 
 local function copy_into(set, prefix, t)
 	for k, v in pairs(t) do set[prefix .. k] = v end
 end
 
--- id predvolby -> { balistika (0/1/2, zaroven profil obleku), poskozeni hrace, korist, populace, EFTH, artefakty }
 local MAP = {
-	-- Call of Pripyat (puvodni predvolba z 2.2.0): jen balistika CoP, poskozeni hrace, korist,
-	-- populace a obtiznost EFTH. Ostatni stranky (ceny, mutanti, artefakty...) nemeni.
+
 	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5 },
-	-- Anomaly: vanilla ekonomika a mutanti
+
 	[2] = { ball = 1, pdmg = 3, loot = 2, pop = 1, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
 	        prices = 1, prices_on = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
-	-- Hardcore: ceny jako GAMMA, omezene zasoby, tuzsi mutanti. Zakazy obchodu a toulavi stalkeri
-	-- se predvolbou nezapinaji nikdy - hrac si je zapne sam.
+
 	[3] = { ball = 2, pdmg = 4, loot = 3, pop = 4, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
 	        prices = 6, prices_on = true, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
 }
@@ -49,7 +46,7 @@ local function build(id)
 	s["rz_combat/rz_ball/st_all"] = m.tough
 	if math.abs(m.tough - 1) > 0.001 then s["rz_combat/rz_ball/st_enabled"] = true end
 	s["rz_combat/rz_ball/wear"] = m.wear
-	-- ekonomika: ceny, obchod, zasoby
+
 	s["rz_econ/rz_prices/enabled"] = m.prices_on
 	s["rz_econ/rz_prices/preset"] = m.prices
 	if rezone_prices and rezone_prices.PRESETS[m.prices] then
@@ -57,20 +54,20 @@ local function build(id)
 	end
 	s["rz_econ/rz_trade/enabled"] = true
 	s["rz_econ/rz_trade/stock"] = m.stock
-	-- zakazy obchodu vzdy vypnute (hrac si je zapne sam): helmy. "Hrat jako GAMMA" je rezim v menu Nova hra.
+
 	s["rz_econ/rz_trade/helm_no_sell"] = false
 	s["rz_econ/rz_trade/helm_no_buy"] = false
-	-- mutanti a artefakty
+
 	s["rz_combat/rz_muthp/enabled"] = math.abs(m.mut - 1) > 0.001
 	s["rz_combat/rz_muthp/all"] = m.mut
 	s["rz_survival/rz_af/punish_chance"] = m.punish
 	s["rz_survival/rz_af/punish_strength"] = m.punish
-	-- toulavi stalkeri
+
 	if rezone_mod_wander then
 		s["rz_world/rz_walk/enabled"] = m.walk > 0
 		if m.walk > 0 then s["rz_world/rz_walk/max_squads"] = m.walk end
 	end
-	-- crafting: znamy recept zustava i po vyrobe (CoP)
+
 	s["rz_econ/rz_craft/keep_known"] = m.keep_known
 	s["rz_combat/rz_pdmg/enabled"] = true
 	s["rz_combat/rz_pdmg/preset"] = m.pdmg
@@ -92,7 +89,7 @@ local function build(id)
 	return s
 end
 
-local function log(fmt, ...) if rezone_core and rezone_core.DEBUG then printf("[ReZone predvolba] " .. fmt, ...) end end
+local function log(fmt, ...) if rezone_core then rezone_core.dbg("[ReZone predvolba] " .. fmt, ...) end end
 
 local function applied_get()
 	local c = axr_main and axr_main.config
@@ -118,9 +115,6 @@ function apply(id)
 	return n
 end
 
--- Vyber predvolby v MCM: hned oznacit (cachovat) vsechny volby, ktere predvolba zmeni,
--- takze MCM ukaze skutecny pocet zmen a ulozi je sam po "Pouzit" (vcetne obtiznosti EFTH).
--- Drive se zmenila jen volba predvolby a zbytek se prepsal az po ulozeni - MCM ukazoval 1 zmenu.
 function on_select(path, opt, value, v)
 	local id = tonumber(value) or 0
 	if id == 0 then return end
@@ -147,16 +141,14 @@ local function on_option_change()
 	local id = tonumber(ui_mcm.get(MASTER)) or 0
 	if id == applied_get() then return end
 	applied_set(id)
-	if id == 0 then return end				-- Vlastni: nic neprepisovat
+	if id == 0 then return end
 	apply(id)
-	-- ostatni skripty (ReZone, EFTH) si nove hodnoty prectou znovu
+
 	busy = true
 	pcall(SendScriptCallback, "on_option_change", true)
 	busy = false
 end
 
--- MCM: kdyz hrac vybere predvolbu, oznacit (cachovat) i vsechny ostatni volby -> MCM ukaze
--- spravny pocet zmen a ulozi je sam. Primo pres UI_MCM.CacheValue, funguje v kazde verzi MCM 1.6+.
 function hook_gui()
 	local C = ui_mcm and ui_mcm.UI_MCM
 	if not (C and C.CacheValue) or C.__rz_master_hook then return end
@@ -185,6 +177,6 @@ end
 function on_game_start()
 	hook_gui()
 	RegisterScriptCallback("on_option_change", on_option_change)
-	-- predvolba zvolena v hlavnim menu: MCM tam on_option_change neposila -> pouzit po nacteni
+
 	RegisterScriptCallback("actor_on_first_update", on_option_change)
 end

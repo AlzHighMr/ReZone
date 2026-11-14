@@ -1,24 +1,22 @@
--- port rx_knife z AI Additions (Rulix aka Bak)
---------------------------------------
 evid_knife_attack = 188180
 actid_knife_attack = evid_knife_attack
---------------------------------------
-local MELEE_SLOT     = 1                  -- slot noze v Anomaly
+
+local MELEE_SLOT     = 1
 local CHECK_PRD      = 1000
 local MAX_PURSUE_D2  = 70 * 70
 local COURAGE_MULT   = 1.1
-local ACTOR_HIT_PPE  = "bloody.ppe"       -- efekt na obrazovce pri zasahu nozem (je v Anomaly)
-local SND_THEME      = "fight_attack"     -- tema Anomaly (vykriky do utoku)
+local ACTOR_HIT_PPE  = "bloody.ppe"
+local SND_THEME      = "fight_attack"
 local SND_PERIOD     = 4000
 
 local sneak_attack, close_attack, mutant_hunt, mutant_defend = 1, 2, 3, 4
 
 local function log(fmt, ...)
+	if not rezone_core.debug_on() then return end
 	local ok, s = pcall(string.format, fmt, ...)
-	printf("[rz_npc_knife] %s", ok and s or fmt)
+	rezone_core.dbg("[rz_npc_knife] %s", ok and s or fmt)
 end
 
--------------------------------------------------------------------- konfigurace
 local creatures = {
 	actor = clsid.script_actor, stalker = clsid.script_stalker, dog = clsid.dog_s, boar = clsid.boar_s,
 	flesh = clsid.flesh_s, pseudodog = clsid.pseudodog_s, bloodsucker = clsid.bloodsucker_s, snork = clsid.snork_s,
@@ -34,15 +32,14 @@ end
 local sets = {
 	weapon_to_spawn = "wpn_knife", spawn_chance = 0.35, skip_story = true, actor_mult = 1,
 	forbidden_factions = {}, forbidden_npcs = {}, ranks = {}, communities = {},
-	-- 1.3: zvuky na zacatku utoku nozem (nahodne jeden z nich)
+
 	start_sounds = { "rz_npc_knife\\knife_attack_1", "rz_npc_knife\\knife_attack_2" }, start_chance = 1, start_volume = 1,
 }
 local attack_clsids, defend_clsids = {}, {}
 
--- MCM ReZone (Gameplay > Utoky nozem): prepisuje / nasobi hodnoty z LTX
 local MCM_PAGE = rezone_mcm.path("rz_knife")
 local mcm = { enabled = true, courage = 1, hunt = true }
-local ltx = {}		-- hodnoty z LTX pred upravou z MCM
+local ltx = {}
 local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }
 local DEF_COMM = { courage = 1, mutant_hunt = true }
 
@@ -134,7 +131,6 @@ local function apply_mcm()
 	end
 end
 
--------------------------------------------------------------------- pomocne funkce (misto rx_utils)
 local function is_actor_cls(c) return c == clsid.script_actor or c == clsid.actor end
 local function is_firearm(o) return o and IsWeapon(o) and not IsMelee(o) and not (IsGrenade and IsGrenade(o)) end
 
@@ -166,7 +162,7 @@ local function is_trader(npc)
 	return st and st.ini and st.section_logic and st.ini:section_exist(st.section_logic) and st.ini:line_exist(st.section_logic, "trade") or false
 end
 local function rank_frac(npc)
-	return math.min(1, math.max(0, (npc:character_rank() or 0) / 26999))   -- legend od 26999 (game_relations)
+	return math.min(1, math.max(0, (npc:character_rank() or 0) / 26999))
 end
 
 local last_snd = {}
@@ -179,8 +175,6 @@ local function play_snd(npc_id)
 	end
 end
 
--- 1.3: zvuk na zacatku utoku: nahodne jeden ze [sounds] attack_start, 3D u NPC. Objekt zvuku se drzi v tabulce
--- (jinak ho Lua uklidi a zvuk utichne); chybejici soubor se preskoci.
 local start_snd_obj, start_snd_last = {}, {}
 local START_SND_PERIOD = 6000
 local function play_start_snd(npc)
@@ -199,10 +193,9 @@ local function play_start_snd(npc)
 		snd.volume = sets.start_volume or 1
 		snd:play_at_pos(npc, npc:position(), 0, sound_object.s3d)
 	end)
-	last_snd[id] = t + SND_PERIOD      -- vykrik Anomaly hned po tom ne
+	last_snd[id] = t + SND_PERIOD
 end
 
--------------------------------------------------------------------- cile
 targets = {}
 
 local function is_low_target(trg)
@@ -304,7 +297,6 @@ local function spawn_knife(npc)
 	return true
 end
 
--------------------------------------------------------------------- evaluator
 class "evaluator_knife_attack" (property_evaluator)
 function evaluator_knife_attack:__init(npc, name, storage) super(nil, name)
 	self.st = storage
@@ -315,7 +307,7 @@ function evaluator_knife_attack:__init(npc, name, storage) super(nil, name)
 	local comm = npc:character_community()
 	local courage = load_var(npc, "rz_knife_courage")
 	if not courage then
-		courage = math.random(25, math.floor(rank_frac(npc) * 23 + 53))   -- 25-53 .. 25-76
+		courage = math.random(25, math.floor(rank_frac(npc) * 23 + 53))
 		save_var(npc, "rz_knife_courage", courage)
 	end
 	local c = sets.communities[comm] or DEF_COMM
@@ -396,7 +388,6 @@ function evaluator_knife_attack:evaluate()
 	return get_target(npc, be, st)
 end
 
--------------------------------------------------------------------- akce
 class "action_knife_attack" (action_base)
 function action_knife_attack:__init(npc, name, storage) super(nil, name)
 	self.st = storage
@@ -616,7 +607,6 @@ function action_knife_attack:get_dodge_vertex(o, d)
 	return res
 end
 
--------------------------------------------------------------------- binder (generic schema Anomaly)
 local function forbidden(npc)
 	if not npc:alive() or sets.forbidden_factions[npc:character_community()] or is_trader(npc) then return true end
 	local ok, prof = pcall(npc.profile_name, npc)
@@ -651,7 +641,7 @@ function configure_actions(npc, ini, scheme, section, stype, temp)
 	local manager = npc and npc:motivation_action_manager()
 	if not (manager and temp.action) then return end
 	temp.action:add_precondition(world_property(xr_evaluators_id.sidor_wounded_base, false))
-	-- jine generic schemata Anomaly maji prednost (strelba pres spojence, granatomet...)
+
 	if rx_ff and rx_ff.evaid and _G.schemes and _G.schemes.rx_ff then
 		temp.action:add_precondition(world_property(rx_ff.evaid, false))
 	end
@@ -663,7 +653,6 @@ function configure_actions(npc, ini, scheme, section, stype, temp)
 	end
 end
 
--- can_use_knife = false v sekci schematu nebo v [logic] -> NPC nozem neutoci
 function reset_generic_scheme(npc, scheme, section, stype, st)
 	local s = st and st[scheme]
 	if not (s and st.ini) then return end
@@ -680,7 +669,6 @@ function reset_generic_scheme(npc, scheme, section, stype, st)
 	end
 end
 
--- Anomaly vola pri kazde zmene logiky disable a hned zase setup -> stav cile se jen uvolni
 function disable_generic_scheme(npc, scheme, stype)
 	local st = db.storage[npc:id()] and db.storage[npc:id()][scheme]
 	if st and st.target then remove_target(npc:id(), st) end
@@ -704,9 +692,6 @@ local function on_death(npc)
 	for t, n in pairs(targets) do if n == id then targets[t] = nil end end
 end
 
--- 1.1: xr_gather_items (Anomaly) po sebrani predmetu NPC pripojuje doplnky na best_weapon(); kdyz ma NPC jen nuz,
--- je to wpn_knife a engine pise do logu "CWeaponMagazined [wpn_knife]: cannot access class member Weapon_AddonAttach!".
--- Callback se obali: s nozem v ruce se jen odebere predmet ze seznamu sbirani (jako puvodni), doplnek se nepripojuje.
 local function find_upvalue(f, name)
 	if not (debug and debug.getupvalue and type(f) == "function") then return nil end
 	for i = 1, 200 do
@@ -734,8 +719,7 @@ local function patch_gather_items()
 				end
 				return f(npc, item)
 			end
-			-- 1.2: hodnota polozky = priorita callbacku (modded exes ji radi jako cislo) - musi zustat stejna,
-			-- "true" misto cisla shodilo hru (_g_patches spairs: attempt to compare boolean with number)
+
 			local prio = list[f]
 			list[f] = nil
 			list[wrapped] = prio
@@ -755,13 +739,11 @@ function on_game_start()
 		return
 	end
 	LoadScheme("rz_npc_knife", "rz_knife", modules.stype_stalker)
-	-- akce ridi pohyb/zbran sama (jako boj) - state manager do ni nesmi zasahovat (v Anthology state_mgr.lock)
+
 	if state_mgr and state_mgr.combat_action_ids then state_mgr.combat_action_ids[actid_knife_attack] = true end
 	RegisterScriptCallback("npc_on_hit_callback", on_hit)
 	RegisterScriptCallback("npc_on_death_callback", on_death)
-	-- 1.4 (ReZone 2.5.38): oprava musi byt hotova driv, nez se pri nacitani urovne zacnou NPC online plnit
-	-- predmety (spam vznikal behem nacitani, actor_on_first_update prisel pozde). xr_gather_items registruje
-	-- callback az ve svem on_game_start (bezi po tomto skriptu), proto actor_on_init = uplne prvni objekt.
+
 	local function try_patch() pcall(patch_gather_items) end
 	RegisterScriptCallback("actor_on_init", try_patch)
 	RegisterScriptCallback("on_game_load", try_patch)

@@ -1,7 +1,6 @@
 local random, floor, max, min = math.random, math.floor, math.max, math.min
 local RB = rezone_ballistics
 
--- ---------------------------------------------------------------- zvuky a castice
 local snd_ini = ini_file("rezone\\ammo_sounds.ltx")
 
 function sound(name, dist)
@@ -34,11 +33,10 @@ function particle_bone(npc, bone_id, name)
 	particle_at(ok and pos or npc:position(), name)
 end
 
--- ---------------------------------------------------------------- stav cilu
-local burns = {}		-- id -> { left, lo, hi }
-local stunned = {}		-- id -> konec
-local weakened = {}		-- id -> true (zirava mlha: cil dostava vic, dava min)
-local splode = {}		-- id -> true (hlava po smrti zmizi, kdyz zasah zabil)
+local burns = {}
+local stunned = {}
+local weakened = {}
+local splode = {}
 
 local function mark_splode(npc)
 	local id = npc:id()
@@ -98,7 +96,6 @@ local function blow_at(pos)
 	end, se.id)
 end
 
--- .health = x v enginu PRIDAVA (ChangeHealth); presne nastaveni pres set_health_ex (modded exes)
 local function set_hp(o, v)
 	v = clamp(v, 0, 1)
 	if o.set_health_ex then o:set_health_ex(v) else o.health = v - o.health end
@@ -113,7 +110,7 @@ local function heal_actor(power)
 end
 
 local function retype(ctx, t)
-	-- zivelny zasah: bez nasobice casti tela, ochranu resi engine
+
 	ctx.s_hit.type = t
 	if ctx.human and ctx.mult and ctx.mult > 0 then
 		ctx.s_hit.power = ctx.s_hit.power / ctx.mult
@@ -128,17 +125,14 @@ local function is_companion(npc)
 	return dialogs_axr_companion and dialogs_axr_companion.is_actor_companion and dialogs_axr_companion.is_actor_companion(db.actor, npc)
 end
 
--- ---------------------------------------------------------------- efekty pri zasahu
 EFFECTS = {}
 
--- otres: cil se zapotaci a chvili strili vedle
 EFFECTS.flinch = { post = function(ctx)
 	local ch = clamp(0.95 - (ctx.armor - ctx.ap) * 5, 0.01, 0.8)
 	if ctx.human and RB.HEAD[ctx.bone] then ch = min(ch + 0.1, 1) end
 	if random() < ch then stun(ctx.npc) end
 end }
 
--- broky: koncetiny hure chranene, vic tupeho narazu
 EFFECTS.buckshot = { pre = function(ctx)
 	if ctx.human and RB.is_limb(ctx.bone) then
 		ctx.armor = max(ctx.armor - 0.1, ctx.armor / 2)
@@ -146,7 +140,6 @@ EFFECTS.buckshot = { pre = function(ctx)
 	end
 end }
 
--- jednotna strela: na hlavu prorazi lehkou ochranu, na trup srazi
 EFFECTS.slug = { pre = function(ctx)
 	if not ctx.human then return end
 	if RB.HEAD[ctx.bone] then
@@ -164,7 +157,6 @@ end, post = function(ctx)
 	end
 end }
 
--- expanzni naboj: hlava bez tezke helmy = jista smrt
 EFFECTS.headshot = { pre = function(ctx)
 	if ctx.human and RB.HEAD[ctx.bone] and ctx.armor < 0.35 and not is_companion(ctx.npc) then
 		ctx.force_full = true
@@ -172,12 +164,10 @@ EFFECTS.headshot = { pre = function(ctx)
 	end
 end }
 
--- varmint: proti mutantum vic
 EFFECTS.varma = { post = function(ctx)
 	if not ctx.human then ctx.s_hit.power = ctx.s_hit.power * aval(ctx, "v_mult", 1.5) end
 end }
 
--- podzvukovy: z tlumene zbrane na nic netusiciho cil +20 % a lepsi pruraz
 EFFECTS.ambush = { pre = function(ctx)
 	local enemy = ctx.npc.best_enemy and ctx.npc:best_enemy()
 	if ctx.wpn:weapon_is_silencer() and not (enemy and enemy:id() == AC_ID) then
@@ -186,13 +176,11 @@ EFFECTS.ambush = { pre = function(ctx)
 	end
 end }
 
--- match: bez ubytku na vzdalenost, pruraz roste se vzdalenosti (do 200 m)
 EFFECTS.match = { pre = function(ctx)
 	ctx.no_falloff = true
 	ctx.ap = clamp(ctx.ap * clamp(1 + ctx.dist / 200, 1, 2), 0, 0.399)
 end }
 
--- terminal: do 10 m silnejsi, dal slabsi
 EFFECTS.terminal = { pre = function(ctx)
 	local k = clamp(1 - ctx.dist / 10, -1, 1)
 	ctx.impact = ctx.impact * (1 + 0.3 * k)
@@ -230,7 +218,6 @@ EFFECTS.acid = { post = function(ctx)
 	retype(ctx, hit.chemical_burn)
 end }
 
--- chaos: nahodna pruraz i sila, obcas nahodny efekt navic
 EFFECTS.chaos = { pre = function(ctx)
 	local r = random()
 	ctx.ap = clamp(ctx.ap + r / 9, 0, 1)
@@ -250,7 +237,6 @@ end, post = function(ctx)
 	end
 end }
 
--- elektro: cim tezsi kovove brneni, tim vic boli; tezke brneni vyboji okoli
 EFFECTS.shock = { pre = function(ctx)
 	if ctx.human then
 		ctx.shock_tier = clamp(floor(ctx.armor * 20), 0, 7)
@@ -274,7 +260,6 @@ EFFECTS.fragment = { post = function(ctx)
 	end
 end }
 
--- zirava mlha: cile v okoli 5 m dostavaji o 20 % vic a davaji o 30 % min
 EFFECTS.corrosive = { post = function(ctx)
 	particle_bone(ctx.npc, ctx.bone, "artefact\\effects\\af_acidic_show_01")
 	sound_at("acid", ctx.npc)
@@ -296,7 +281,6 @@ function post(ctx)
 	if e and e.post then e.post(ctx) end
 end
 
--- ---------------------------------------------------------------- dopad a vystrel
 IMPACT = {}
 IMPACT.explode = function(b) blow_at(b.position) end
 IMPACT.shock_arc = function(b)
@@ -340,7 +324,6 @@ function shoot(name, wpn)
 	if f then pcall(f, wpn) end
 end
 
--- ---------------------------------------------------------------- granaty z granatometu
 local last_launcher = nil
 local function remember_launcher()
 	local w = db.actor:active_item()
@@ -433,7 +416,7 @@ function rz_grenade_binder:fastcall()
 		local eff = RB.ini:r_string_ex(a, "effect") or "launcher"
 		local f = BLAST[eff] or BLAST.launcher
 		pcall(f, pos, a)
-		self.done = true                                   -- jen jeden vybuch
+		self.done = true
 		if obj.destroy_object then pcall(obj.destroy_object, obj)
 		else pcall(alife_release_id, obj:id()) end
 		return true
@@ -449,7 +432,6 @@ function bind(obj)
 	end
 end
 
--- ---------------------------------------------------------------- casovac a callbacky
 local next_tick = 0
 local function on_update()
 	local now = time_global()

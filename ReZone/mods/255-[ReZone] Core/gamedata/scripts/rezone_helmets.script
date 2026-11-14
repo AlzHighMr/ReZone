@@ -15,7 +15,6 @@ local function load_table()
 	end
 end
 
--- helma pro oblek (nil = zadna)
 function helmet_for(outfit)
 	if not closed then load_table() end
 	return outfit and closed[outfit]

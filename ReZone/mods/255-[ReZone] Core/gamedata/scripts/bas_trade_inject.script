@@ -1,0 +1,96 @@
+local ini_by_name = {
+    ["m_lesnik"] = ini_file("items\\trade\\trade_stalker_forester.ltx"),
+	["esc_maine_trader_mlr"] = ini_file("items\\trade\\trade_stalker_loris.ltx"),
+	["baraholka_trader_night"] = ini_file("items\\trade\\trade_stalker_flea_market_night.ltx"),
+	["bar_visitors_barman_stalker_trader"] = ini_file("items\\trade\\trade_stalker_barman.ltx"),
+	["jup_a6_freedom_trader_ashot"] = ini_file("items\\trade\\trade_freedom_ashot.ltx"),
+	["zat_stancia_trader_merc"] = ini_file("items\\trade\\trade_mercenary_zaton.ltx"),
+	["zat_b30_owl_stalker_trader"] = ini_file("items\\trade\\trade_stalker_owl.ltx"),
+	["zat_a2_stalker_nimble"] = ini_file("items\\trade\\trade_stalker_nimble.ltx"),
+	["zat_a2_stalker_barmen"] = ini_file("items\\trade\\trade_stalker_beard.ltx"),
+	["trader_pri_a15_mlr"] = ini_file("items\\trade\\trade_stalker_cashier.ltx"),
+	["pri_special_trader_mlr"] = ini_file("items\\trade\\trade_mercenary_pripyat.ltx"),
+	["yan_stalker_sakharov"] = ini_file("items\\trade\\trade_ecolog_sakharov.ltx"),
+
+	["jup_b6_scientist_nuclear_physicist"] = ini_file("items\\trade\\trade_ecolog_hermann.ltx")
+}
+
+local ini_by_faction = {
+    ["ecolog"] = ini_file("items\\trade\\trade_ecolog.ltx")
+}
+
+local format_table = utils_data.print_table
+local to_array = utils_data.parse_ini_section_to_array
+local math_random = math.random
+
+function bas_spawn_stock(npc)
+    local npc_name = npc:section()
+    local has_custom = ini_by_name[npc_name]
+    local is_supplier = trader_autoinject.get_trader_type(npc) == trader_autoinject.SUPPLIER
+    if not (is_supplier or has_custom) then
+
+        return
+    end
+    local community = get_trader_community(npc)
+    local supply_level = trader_autoinject.supply_level(npc) or "common_supplies"
+    local ini_trade = ini_by_name[npc_name] or ini_by_faction[community]
+    local supply_table = to_array(ini_trade, supply_level)
+    if not supply_table then
+
+        return
+    end
+
+    local to_spawn = {}
+    for item, amount in pairs(supply_table) do
+        local str_amount = str_explode(amount, ",")
+        to_spawn[item] = chance_for_each(tonumber(str_amount[1]), tonumber(str_amount[2]))
+    end
+
+    trader_autoinject.spawn_items(npc, to_spawn)
+end
+
+if trader_autoinject and trader_autoinject.update then
+    TraderAuto = trader_autoinject.update
+
+    function trader_autoinject.update(npc)
+        TraderAuto(npc)
+        bas_spawn_stock(npc)
+    end
+else
+    rezone_core.dbg("! ReZone obchod: trader_autoinject.script nenalezen - zbozi pojmenovanych obchodniku (bas_trade_inject) se nepridava")
+end
+
+function chance_for_each(n, chance)
+    local total = 0
+
+    for i = 1, n do
+        if math_random() < chance then
+            total = total + 1
+        end
+    end
+
+    return total
+end
+
+local furniture = {
+    ["esc_m_trader"] = true,
+    ["red_m_lesnik"] = true
+}
+
+local blacklisted_comms = {
+    ["trader"] = true,
+    ["monster"] = true
+}
+
+function get_trader_community(npc)
+    if furniture[npc:name()] then return "stalker" end
+    local community = character_community(npc)
+    if not blacklisted_comms[community] then return community end
+    local squad_community = get_object_squad(npc):get_squad_community()
+
+    if not blacklisted_comms[squad_community] then
+        return squad_community
+    else
+        return "stalker"
+    end
+end

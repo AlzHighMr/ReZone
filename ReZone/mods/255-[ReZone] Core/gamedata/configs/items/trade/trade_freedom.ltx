@@ -1,0 +1,550 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition =  trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(freedom:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(freedom:1500)} supplies_4, {=actor_goodwill_ge(freedom:1000)} supplies_3, {=actor_goodwill_ge(freedom:500)} supplies_2,  supplies_1
+buy_item_condition_factor = 0.90
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_supplier
+
+[trade_generic_buy]:trasher
+
+[trade_generic_sell]:trasher
+
+[supplies_1]:common_stock
+ammo_9x18_fmj           = 5, 1
+ammo_9x18_pmm           = 5, 1
+
+ammo_9x19_pbp           = 5, 1
+ammo_9x19_fmj           = 5, 1
+ammo_7.62x25_p          = 5, 1
+ammo_357_hp_mag         = 5, 1
+ammo_11.43x23_fmj       = 5, 1
+ammo_12x70_buck         = 5, 1
+ammo_5.45x39_fmj        = 5, 1
+ammo_5.56x45_fmj        = 5, 1
+ammo_7.62x39_fmj        = 5, 1
+ammo_7.92x33_fmj 	    = 5, 0.75
+
+detector_radio           = 1, 0.50
+detector_geiger          = 1, 0.50
+device_pda_1			= 1, 0.50
+batteries_dead			= 6, 0.50
+device_flashlight		= 1, 0.50
+device_torch_dummy		= 1, 0.50
+wpn_binoc_inv          		= 1, 0.50
+
+detector_simple			= 1, 0.50
+
+itm_actor_backpack	= 1, 1
+itm_backpack		= 1, 1
+guitar_a			= 1, 0.50
+harmonica_a			= 1, 0.50
+kit_hunt			= 1, 0.50
+fieldcooker			= 1, 0.50
+cooking				= 3, 0.50
+bolts_pack		= 2, 0.50
+itm_tent                = 1, 0.50
+itm_sleepbag		= 1, 0.50
+compression_bag		= 1, 0.50
+
+grooming		= 1, 0.50
+shovel_mili		= 1, 0.75
+grooming		= 1, 0.50
+beadspread		= 1, 0.75
+mirror			= 1, 0.50
+kit_hunt		= 1, 0.75
+tarpaulin		= 1, 0.50
+rope			= 1, 0.50
+synthrope		= 1, 0.50
+cutlery			= 1, 0.50
+lead_box		= 3, 0.50
+kerosene	              = 2, 0.50
+charcoal	              = 2, 0.50
+explo_balon_gas	       = 1, 0.75
+explo_jerrycan_fuel	   = 1, 0.50
+box_matches			= 4, 0.70
+
+bandage				= 8, 1
+survival_kit		= 1, 0.75
+medkit				= 6, 0.70
+medkit_army			= 4, 0.70
+stimpack			= 2, 0.70
+stimpack_army		= 2, 0.70
+stimpack_scientic	= 2, 0.70
+antirad				= 2, 0.70
+salicidic_acid			= 2, 0.70
+morphine			= 2, 0.70
+cocaine			= 2, 0.50
+salicidic_acid		= 2, 0.75
+morphine		= 2, 0.75
+drug_booster		= 2, 0.75
+drug_coagulant		= 1, 0.75
+drug_antidot		= 1, 0.75
+drug_radioprotector	= 1, 0.75
+drug_psy_blockade	= 1, 0.75
+drug_sleepingpills	= 1, 0.75
+
+meat_tushkano		= 3, 0.50
+meat_dog			= 3, 0.50
+meat_pseudodog		= 3, 0.50
+meat_flesh			= 3, 0.50
+meat_boar			= 3, 0.50
+meat_snork			= 1, 0.50
+meat_bloodsucker	= 2, 0.50
+meat_chimera		= 1, 0.50
+bread				= 3, 0.50
+breadold			= 4, 0.50
+kolbasa				= 3, 0.50
+conserva			= 3, 0.50
+tomato				= 2, 0.50
+sausage				= 2, 0.50
+corn				= 2, 0.50
+beans				= 2, 0.50
+chili				= 2, 0.50
+salmon				= 2, 0.50
+raisins				= 2, 0.50
+chocolate			= 2, 0.50
+nuts				= 2, 0.50
+mint				= 3, 0.50
+energy_drink		= 3, 0.50
+water_drink			= 3, 0.50
+beer				= 3, 0.50
+vodka				= 3, 0.50
+vodka2				= 3, 0.50
+vodka_quality		= 3, 0.75
+cigarettes 				= 3, 0.50
+cigar1 					= 2, 0.50
+cigar2 					= 2, 0.50
+cigar3 					= 2, 0.50
+joint					= 2, 0.50
+marijuana				= 2, 0.50
+tobacco					= 3, 0.50
+flask					= 3, 0.50
+mineral_water			= 3, 0.50
+caffeine				= 3, 0.50
+hand_rolling_tobacco	= 3, 0.50
+cigar					= 1, 0.50
+cigarettes_lucky		= 6, 0.75
+
+wpn_knife               = 1, 0.50
+wpn_knife2              = 1, 0.75
+
+mine_new                    = 5, 0.75
+
+[supplies_2]:supplies_1
+ammo_9x21_sp10        = 10, 1
+ammo_23x75_shrapnel   = 10, 1
+ammo_23x75_barrikada  = 10, 1
+ammo_20x70_buck       = 10, 1
+ammo_7.62x54_7h1      = 5,  1
+ammo_9x39_pab9        = 10, 1
+ammo_m209             = 3,  0.65
+ammo_vog-25           = 3,  0.65
+ammo_7.92x33_ap       = 5,  0.75
+ammo_7.62x25_ps       = 10, 1
+ammo_12x76_zhekan     = 10, 1
+
+device_torch_nv_1	= 1, 0.75
+equ_small_pack          = 1, 1
+af_frames		= 2, 0.75
+af_grid			= 2, 0.75
+af_kevlar		= 2, 0.75
+af_plates		= 2, 0.75
+af_camelbak		= 1, 0.75
+af_iam			= 3, 0.75
+detector_advanced	= 2, 0.75
+
+army_bowler             = 1, 0.50
+
+wpn_knife3              = 1, 0.50
+wpn_axe                 = 1, 0.75
+wpn_axe2                = 1, 0.75
+
+grenade_rgd5		= 1, 0.85
+grenade_gd-05		= 1, 0.85
+ied_rpg_new                 = 3, 0.75
+grenade_f1		= 4, 0.85
+grenade_smoke		= 4, 0.85
+
+wpn_glock              = 1, 0.55
+wpn_glock17            = 1, 0.40
+wpn_beretta            = 1, 0.55
+wpn_browninghp         = 1, 0.48
+wpn_colt1911           = 1, 0.55
+wpn_colt1911_alt       = 1, 0.52
+wpn_colt1911_camo      = 1, 0.48
+wpn_colt1911_custom    = 1, 0.48
+wpn_colt1911_n         = 1, 0.44
+wpn_colt1911_new       = 1, 0.42
+wpn_sig220             = 1, 0.46
+wpn_sig220_custom      = 1, 0.42
+wpn_sig226             = 1, 0.40
+wpn_hpsa               = 1, 0.38
+
+wpn_mp5                = 1, 0.50
+wpn_vz61_freedom       = 1, 0.50
+wpn_ump45              = 1, 0.45
+wpn_stenmk2_j          = 1, 0.50
+
+wpn_adar2_15           = 1, 0.50
+wpn_aug_freedom        = 1, 0.40
+
+wpn_ithacam37_sawnoff  = 1, 0.45
+wpn_remington870       = 1, 0.45
+wpn_mossberg590        = 1, 0.45
+
+wpn_karabiner98k       = 1, 0.40
+
+helm_m40		= 1, 0.30
+helm_m50		= 1, 0.30
+helm_ach7ex		= 1, 0.50
+helm_rp_bala            = 1, 0.50
+helm_respirator_old     = 1, 0.50
+helm_respirator_gp5     = 1, 0.50
+helm_ppm88		= 1, 0.50
+helm_ach7		= 1, 0.50
+
+svoboda_light_outfit	= 1, 0.50
+trenchcoat_freedom_brown_outfit = 1, 0.50
+nbc_freedom_outfit      	= 1, 0.50
+
+c-more				= 1, 0.50
+eot				= 1, 0.50
+wpn_addon_scope_galil		= 1, 0.50
+
+wpn_addon_grenade_launcher		= 1, 0.50
+wpn_addon_grenade_launcher_m203		= 1, 0.50
+
+wpn_sil_m42k               = 1, 1
+point_aimpro               = 1, 1
+pn23                       = 1, 1
+c-more                     = 1, 1
+eot                        = 1, 1
+ac10632                    = 1, 1
+
+acog				= 1, 0.50
+
+wpn_sil_osp9               = 1, 1
+wpn_sil_aac762             = 1, 1
+
+wpn_sil_45			= 1, 0.50
+wpn_sil_9mm			= 1, 0.50
+wpn_sil_gemtech			= 1, 0.50
+wpn_sil_nato			= 1, 0.50
+wpn_sil_pbs4			= 1, 0.50
+decor_barrel_metal            = 1, 0.07
+decor_bidon                   = 1, 0.07
+decor_biliard                 = 1, 0.07
+decor_countertop              = 1, 0.07
+decor_fchair                  = 1, 0.07
+decor_fuel                    = 1, 0.07
+decor_gaz_balon               = 1, 0.07
+decor_metal_table1            = 1, 0.07
+decor_metal_table2            = 1, 0.07
+decor_rug                     = 1, 0.07
+decor_shelves                 = 1, 0.07
+decor_shelves_b               = 1, 0.07
+decor_shower                  = 1, 0.07
+decor_sidetable1              = 1, 0.07
+decor_sidetable2              = 1, 0.07
+decor_sink                    = 1, 0.07
+decor_stool                   = 1, 0.07
+decor_toilet                  = 1, 0.07
+prop_bed_1                    = 1, 0.07
+prop_bed_2                    = 1, 0.07
+prop_bed_3                    = 1, 0.07
+prop_chair                    = 1, 0.07
+prop_couch_1                  = 1, 0.07
+prop_counter_1                = 1, 0.07
+prop_shelf_1                  = 1, 0.07
+prop_shelf_2                  = 1, 0.07
+prop_stove1                   = 1, 0.07
+prop_stove2                   = 1, 0.07
+prop_table_1                  = 1, 0.07
+prop_table_2                  = 1, 0.07
+decor_door                    = 1, 0.13
+decor_door02                  = 1, 0.13
+decor_door03                  = 1, 0.13
+decor_door04                  = 1, 0.13
+decor_door05                  = 1, 0.13
+decor_metal_plate             = 1, 0.13
+decor_wall                    = 1, 0.13
+decor_wall02                  = 1, 0.13
+decor_wall02_metal            = 1, 0.13
+decor_wall_divider            = 1, 0.13
+decor_wall_doorway            = 1, 0.13
+decor_wall_doorway_metal      = 1, 0.13
+decor_wall_metal              = 1, 0.13
+decor_wooden_board            = 1, 0.13
+decor_wooden_plank            = 1, 0.13
+
+[supplies_3]:supplies_2
+ammo_7.62x54_7h14     = 20, 1
+ammo_7.62x51_fmj      = 20, 1
+ammo_12x76_dart       = 10, 1
+ammo_magnum_300       = 5,  1
+
+equ_small_military_pack = 1, 1
+device_pda_2		= 1, 0.75
+af_aac			= 2, 0.75
+af_frames_up    	= 1, 0.75
+af_camelbak_up		= 1, 0.75
+
+wpn_knife4              = 2, 0.75
+wpn_knife6                 = 1, 1
+
+wpn_beretta_alt        = 1, 0.38
+wpn_beretta_camo       = 1, 0.38
+wpn_fn57               = 1, 0.36
+wpn_fnp45              = 1, 0.34
+wpn_fnx45              = 1, 0.32
+wpn_fnx45_alt          = 1, 0.30
+wpn_walther            = 1, 0.28
+wpn_walther_p99        = 1, 0.18
+wpn_desert_eagle          = 1, 0.15
+wpn_hpsa_alt              = 1, 0.45
+wpn_usp_custom            = 1, 0.25
+wpn_glock17_m1            = 1, 0.40
+wpn_sig226                = 1, 0.50
+
+wpn_stenmk2_j          = 1, 0.42
+
+wpn_mp5                = 1, 0.34
+wpn_mp5_alt            = 1, 0.30
+wpn_mp5_custom         = 1, 0.28
+wpn_scorpion           = 1, 0.44
+
+wpn_ithacam37          = 1, 0.20
+wpn_ithacam37_mag      = 1, 0.18
+wpn_spas12             = 1, 0.14
+wpn_protecta           = 1, 0.10
+
+wpn_ak74_pmc           = 1, 0.20
+wpn_aug_merc           = 1, 0.20
+wpn_adar2_15           = 1, 0.28
+wpn_famas_f1           = 1, 0.24
+wpn_sig550             = 1, 0.28
+wpn_sig550_camo        = 1, 0.26
+wpn_sig550_luckygun    = 1, 0.20
+wpn_fnc                = 1, 0.28
+wpn_fal                   = 1, 0.25
+wpn_mk14          	      = 1, 0.15
+wpn_g36                   = 1, 0.25
+wpn_g36k                  = 1, 0.25
+wpn_galil                 = 1, 0.50
+wpn_ak5c_bas              = 1, 0.30
+
+wpn_k98                = 1, 0.14
+
+light_freedom_outfit        = 1, 0.50
+svoboda_heavy_outfit		= 1, 0.50
+svoboda_heavy_outfit_2		= 1, 0.50
+ghillie_outfit          	= 1, 0.50
+
+helm_tactic		= 1, 0.75
+ied_new                       = 5, 0.75
+compm4s                    = 1, 1
+kemper                     = 1, 1
+susat                      = 1, 1
+pso2                       = 1, 1
+usp1                       = 1, 1
+1p78gs                     = 1, 1
+wpn_sil_auga               = 1, 1
+cortex					   = 1, 1
+
+wpn_adar2_15_kemper         = 1, 0.60
+wpn_adar2_15_marchf         = 1, 0.60
+
+ammo_5.7x28_ss190           = 3, 0.60
+blue_box_item                 = 1, 0.08
+case_item                     = 1, 0.08
+decor_box_paper               = 1, 0.08
+decor_box_wood                = 1, 0.08
+decor_cabinet                 = 1, 0.08
+decor_storage01               = 1, 0.08
+decor_storage02               = 1, 0.08
+decor_storage03               = 1, 0.08
+decor_storage04               = 1, 0.08
+decor_storage05               = 1, 0.08
+decor_storage06               = 1, 0.08
+decor_storage07               = 1, 0.08
+decor_storage08               = 1, 0.08
+pistol_shelf_item             = 1, 0.08
+prop_ammo_box                 = 1, 0.08
+prop_cans_tuna                = 1, 0.08
+prop_fridge                   = 1, 0.08
+sumka6_item                   = 1, 0.08
+weapon_rack_item              = 1, 0.08
+decor_light1                  = 1, 0.15
+decor_light2                  = 1, 0.15
+decor_light3                  = 1, 0.15
+decor_light4                  = 1, 0.15
+decor_light5                  = 1, 0.15
+decor_light6                  = 1, 0.15
+decor_light7                  = 1, 0.15
+decor_light8                  = 1, 0.15
+prop_lamp1                    = 1, 0.15
+prop_lamp2                    = 1, 0.15
+
+[supplies_4]:supplies_3
+ammo_12.7x55_fmj      = 5, 1
+ammo_338_federal      = 5, 1
+ammo_pkm_100 		  = 6, 0.75
+ammo_og-7b		      = 2, 0.85
+grenade_rgd5          = 3, 0.66
+grenade_gd-05         = 2, 0.66
+grenade_f1            = 2, 0.66
+
+wpn_glock_modern         = 1, 0.50
+wpn_glock17_m1           = 1, 0.50
+wpn_usp                  = 1, 0.50
+wpn_usp_tac              = 1, 0.50
+wpn_usp_match            = 1, 0.40
+wpn_desert_eagle_modern  = 1, 0.30
+wpn_pdp                  = 1, 0.50
+wpn_ppq5                 = 1, 0.50
+wpn_walther_p99_mod9     = 1, 0.50
+wpn_walther_custom       = 1, 0.50
+wpn_cr920                = 1, 0.50
+wpn_fnp45_custom         = 1, 0.50
+wpn_usms                 = 1, 0.50
+wpn_korth                = 1, 0.50
+wpn_korth_custom         = 1, 0.50
+
+wpn_mp5sd                = 1, 0.50
+
+wpn_ump45_custom         = 1, 0.50
+wpn_scorpion             = 1, 0.50
+
+wpn_ithacam37_stakeout   = 1, 0.50
+wpn_ithacam37_trench     = 1, 0.50
+wpn_usas12               = 1, 0.50
+wpn_protecta_aim         = 1, 0.50
+wpn_protecta_camo        = 1, 0.50
+wpn_saiga12s_m2          = 1, 0.50
+
+wpn_fal_aus              = 1, 0.30
+wpn_fal                  = 1, 0.30
+wpn_g3                   = 1, 0.30
+wpn_g3sg1                = 1, 0.30
+wpn_g36                  = 1, 0.30
+wpn_g36_camo             = 1, 0.30
+wpn_g36k                 = 1, 0.30
+wpn_aug                  = 1, 0.30
+wpn_aug_modern           = 1, 0.30
+wpn_ace21                = 1, 0.30
+wpn_sig550_siber         = 1, 0.30
+wpn_sig550_tac_siber     = 1, 0.30
+wpn_sig552               = 1, 0.30
+wpn_sig552_siber         = 1, 0.30
+wpn_cz_805               = 1, 0.30
+wpn_famas_felin          = 1, 0.30
+wpn_famas_felin_s        = 1, 0.30
+wpn_galil                = 1, 0.30
+wpn_galil_custom         = 1, 0.30
+wpn_galil_modern         = 1, 0.30
+wpn_hk416                = 1, 0.20
+wpn_lr300                = 1, 0.30
+wpn_lr300_camo           = 1, 0.30
+wpn_m16                  = 1, 0.30
+wpn_m16a2                = 1, 0.30
+wpn_scar                 = 1, 0.30
+wpn_scar_custom          = 1, 0.30
+wpn_scar_siber_black     = 1, 0.30
+wpn_scar_siber_m1        = 1, 0.30
+wpn_scar_siber_m1_black  = 1, 0.30
+wpn_scar_siber_m2        = 1, 0.30
+wpn_scar_siber_m2_custom = 1, 0.30
+wpn_vintorez_m2          = 1, 0.30
+wpn_scar_siber_black     = 1, 0.30
+
+wpn_k98_mod              = 1, 0.50
+wpn_k98_mod_silen98      = 1, 0.50
+
+equ_military_pack       = 1, 1
+device_pda_3		= 1, 0.75
+test_container          = 1, 0.50
+af_cooler_up		= 1, 0.75
+af_surge_up 		= 1, 0.75
+
+wpn_knife5              = 2, 0.50
+
+svoboda_scientific_outfit	    = 1, 0.50
+svoboda_light_proto_exo_outfit	= 1, 0.50
+military_freedom_outfit     	= 1, 0.75
+svoboda_exolight_outfit		    = 1, 0.50
+freedom_exo_vineleaf_outfit 	= 1, 0.50
+
+helm_exo                    = 1, 0.75
+workshop_item                 = 1, 0.30
+
+[supplies_5]:supplies_4
+ammo_gauss_cardan     = 10, 1
+ammo_gauss            = 5, 1
+
+wpn_mp5sd_custom         = 1, 0.30
+wpn_mp5sd_new            = 1, 0.30
+
+wpn_spas12_custom        = 1, 0.30
+wpn_usas12               = 1, 0.30
+wpn_protecta_aim         = 1, 0.30
+wpn_protecta_camo        = 1, 0.30
+
+wpn_ar15_freedom         = 1, 0.30
+wpn_famas_commando       = 1, 0.30
+wpn_famas_f1_tactical    = 1, 0.30
+wpn_famas_g2             = 1, 0.30
+wpn_famas_g2_tactical    = 1, 0.30
+wpn_ak5c_bas             = 1, 0.30
+wpn_hk416_custom         = 1, 0.30
+wpn_lr300_custom         = 1, 0.30
+wpn_m4                   = 1, 0.30
+wpn_m4_ru556             = 1, 0.30
+wpn_m4_butcher           = 1, 0.30
+wpn_m4_skryaga           = 1, 0.30
+wpn_m4_tac               = 1, 0.30
+wpn_m4a1                 = 1, 0.30
+wpn_m4a1_camo            = 1, 0.30
+wpn_m4a1_custom          = 1, 0.30
+wpn_m4a1_siber           = 1, 0.30
+wpn_aug_a3_bas           = 1, 0.30
+wpn_aug_a3_custom_bas    = 1, 0.30
+wpn_aug_custom           = 1, 0.30
+wpn_scar_new             = 1, 0.30
+wpn_scar_siber           = 1, 0.30
+
+wpn_m14                  = 1, 0.30
+wpn_mk14                 = 1, 0.30
+
+wpn_kar98_retrotac       = 1, 0.30
+wpn_karabiner98k         = 1, 0.30
+wpn_karabiner98k_silen98 = 1, 0.30
+
+wpn_l96a1                = 1, 0.20
+wpn_l96a1m               = 1, 0.20
+wpn_m21                  = 1, 0.20
+wpn_m24                  = 1, 0.20
+wpn_g28                  = 1, 0.20
+wpn_m98b                 = 1, 0.20
+
+wpn_rem700_aics          = 1, 0.20
+wpn_rem700_mcmillan      = 1, 0.20
+wpn_remington700         = 1, 0.20
+wpn_remington700_bas     = 1, 0.20
+
+af_aam				    = 2, 0.75
+af_freon_up 			= 1, 0.75
+detector_elite			= 1, 0.75
+device_torch_nv_2		= 1, 0.75
+
+svoboda_exo_outfit		    = 1, 0.20
+freedom_nosorog_outfit 		= 1, 0.20
+
+helm_spartan			= 1, 0.75
+
+wpn_rpg7                    	= 1, 0.80

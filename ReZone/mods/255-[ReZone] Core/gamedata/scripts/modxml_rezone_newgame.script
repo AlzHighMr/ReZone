@@ -1,11 +1,9 @@
--- sloupce jako vanilla (zaskrtavatko / popisek), radek y = 149
 local POS = {
 	[ [[ui\ui_mm_faction_select.xml]] ]    = { c = { 60, 331, 639 }, t = { 100, 371, 679 }, w = 35, tw = 40 },
 	[ [[ui\ui_mm_faction_select_16.xml]] ] = { c = { 48, 264, 511 }, t = { 80, 296, 543 }, w = 28, tw = 32 },
 	[ [[ui\ui_mm_faction_select_21.xml]] ] = { c = { 48, 264, 511 }, t = { 80, 296, 543 }, w = 28, tw = 32 },
 }
 
--- { nazev prvku, text popisku, sloupec }
 local OPTIONS = {
 	{ "blackroad_mode",    "st_cap_check_blackroad_mode",    1 },
 	{ "rz_gamma",          "st_cap_check_rz_gamma",          2 },
@@ -14,7 +12,6 @@ local OPTIONS = {
 local CAP = [[<cap_check_%s x="%d" y="150" width="%d" height="20" stretch="1"><text r="170" g="170" b="170" font="letterica16" align="l" vert_align="c">%s</text></cap_check_%s>]]
 local CHK = [[<check_%s x="%d" y="149" width="%d" height="23" stretch="1"><texture>ui_inGame2_checkbox</texture></check_%s>]]
 
--- volba v menu Nova hra: nejdriv z XML menu (DXML vlozeni), kdyz ho UI mod nema, z vlastniho ui_rz_newgame.xml
 local own_xml
 function init_option(self, name)
 	local cap, ck
@@ -34,7 +31,7 @@ function init_option(self, name)
 		end)
 	end
 	if not (ok and ck) then
-		printf("! ReZone: menu Nova hra - nelze vytvorit volbu %s", name)
+		rezone_core.dbg("! ReZone: menu Nova hra - nelze vytvorit volbu %s", name)
 		return nil
 	end
 	self["ck_" .. name .. "_cap"] = cap
@@ -47,12 +44,10 @@ local function patch(mod)
 	local m = mod and _G[mod]
 	if m and m.patch_ui then
 		local ok, err = pcall(m.patch_ui)
-		if not ok then printf("! ReZone: menu Nova hra (%s): %s", mod, tostring(err)) end
+		if not ok then rezone_core.dbg("! ReZone: menu Nova hra (%s): %s", mod, tostring(err)) end
 	end
 end
 
--- rozlozeni menu se lisi podle UI modu (vanilla: tri sloupce dole, jine UI: jeden sloupec vpravo).
--- Volby ReZone se proto po vytvoreni posunou do volnych radku sloupce, ve kterem je "Pribehovy rezim".
 local OWN = {
 	{ "ck_blackroad_mode", "ck_blackroad_mode_cap" },
 	{ "ck_rz_gamma", "ck_rz_gamma_cap" },
@@ -67,14 +62,13 @@ local EXTRA = {
 local function layout(self)
 	local story, story_cap = self.ck_story, self.ck_story_cap
 	if not (story and story.GetWndPos) then
-		printf("ReZone menu Nova hra: chybi ck_story - volby se neposouvaji")
+		rezone_core.dbg("ReZone menu Nova hra: chybi ck_story - volby se neposouvaji")
 		return
 	end
 	local sp = story:GetWndPos()
 	local cap_dx = story_cap and story_cap.GetWndPos and (story_cap:GetWndPos().x - sp.x) or 32
-	-- nase volby (i Black Road od jineho addonu, kdyz je mimo sloupec)
-	-- self je objekt luabind (pairs nejde): projdou se jmena z ck_states a zname seznamy/volby
-	local own = { list_difficulty = true, list_economy = true }		-- tyhle nejsou ve sloupci voleb
+
+	local own = { list_difficulty = true, list_economy = true }
 	for _, o in ipairs(OWN) do own[o[1]] = true; own[o[2]] = true end
 	local names, seen = {}, {}
 	local function add(n)
@@ -87,7 +81,7 @@ local function layout(self)
 		for n in pairs(self.ck_states) do add(n) end
 	end
 	for _, n in ipairs(EXTRA) do add(n) end
-	-- viditelna zaskrtavatka a seznamy; ys = obsazene radky sloupce
+
 	local ys, all = {}, {}
 	for _, n in ipairs(names) do
 		local v = self[n]
@@ -107,7 +101,7 @@ local function layout(self)
 		if d > 5 and (not step or d < step) then step = d end
 	end
 	step = step or 30
-	-- pozice z XML sedi (vanilla: tri sloupce, volny radek) -> nechat; jinak (mimo panel / prekryti) presunout
+
 	local tw = 0
 	if self.templ_options and self.templ_options.GetWidth then
 		local okw, w = pcall(self.templ_options.GetWidth, self.templ_options)
@@ -129,7 +123,7 @@ local function layout(self)
 			if not col then bad = true end
 		end
 	end
-	printf("ReZone menu Nova hra: sloupec x=%s, %d radku, krok %s, BR=%s GAMMA=%s, presun=%s", tostring(sp.x), #ys, tostring(step),
+	rezone_core.dbg("ReZone menu Nova hra: sloupec x=%s, %d radku, krok %s, BR=%s GAMMA=%s, presun=%s", tostring(sp.x), #ys, tostring(step),
 		tostring(self.ck_blackroad_mode ~= nil), tostring(self.ck_rz_gamma ~= nil), tostring(bad))
 	if not bad then return end
 	local function free(y)
@@ -169,11 +163,10 @@ local function patch_layout()
 	cls.Main_Controls = function(self, ...)
 		base_controls(self, ...)
 		local ok, err = pcall(layout, self)
-		if not ok then printf("! ReZone: rozlozeni voleb Nova hra: %s", tostring(err)) end
+		if not ok then rezone_core.dbg("! ReZone: rozlozeni voleb Nova hra: %s", tostring(err)) end
 	end
 end
 
--- jeden sloupec voleb (SOTA UI apod.): rozmer a x podle "Pribehovy rezim", radek = volne misto ve sloupci
 local function num(v) return tonumber((string.gsub(tostring(v or ""), '"', ""))) end
 
 local function column_layout(xml_obj, opt)
@@ -195,7 +188,7 @@ local function column_layout(xml_obj, opt)
 	local ys = {}
 	for _, r in ipairs(rows) do
 		if r.x and r.y then
-			if math.abs(r.x - sx) > 20 then return nil end		-- vic sloupcu (vanilla) -> puvodni rozlozeni
+			if math.abs(r.x - sx) > 20 then return nil end
 			ys[#ys + 1] = r.y
 		end
 	end
@@ -228,7 +221,7 @@ function insert_options(xml_obj, opt, p)
 	local col = column_layout(xml_obj, opt)
 	for i, o in ipairs(OPTIONS) do
 		local have = xml_obj:query("check_" .. o[1], opt)
-		if not (have and have[1]) then		-- uz tam je (puvodni addon) -> nepridavat
+		if not (have and have[1]) then
 			if col then
 				local y = col.slots[i]
 				xml_obj:insertFromXMLString(string.format(CAP2, o[1], col.cx, y + col.cdy, col.cw, o[2], o[1]), opt)
@@ -240,11 +233,11 @@ function insert_options(xml_obj, opt, p)
 			end
 		end
 	end
-	if col then printf("ReZone menu Nova hra: volby do sloupce, radky %s", table.concat(col.slots, ", ")) end
+	if col then rezone_core.dbg("ReZone menu Nova hra: volby do sloupce, radky %s", table.concat(col.slots, ", ")) end
 end
 
 function on_xml_read()
-	-- menu Nova hra bezi pred startem hry (on_game_start tam jeste nebezi) -> obalit UI uz tady
+
 	patch("rezone_newgame_modes")
 	patch("rezone_gamma_like_mode")
 	pcall(patch_layout)
@@ -255,10 +248,10 @@ function on_xml_read()
 		local dlg = xml_obj:query("main_dialog")
 		local opt = dlg and dlg[1] and xml_obj:query("options", dlg[1])
 		if not (opt and opt[1]) then
-			printf("! ReZone: %s bez main_dialog/options", xml_file_name)
+			rezone_core.dbg("! ReZone: %s bez main_dialog/options", xml_file_name)
 			return
 		end
 		local ok, err = pcall(insert_options, xml_obj, opt[1], p)
-		if not ok then printf("! ReZone: %s: %s", xml_file_name, tostring(err)) end
+		if not ok then rezone_core.dbg("! ReZone: %s: %s", xml_file_name, tostring(err)) end
 	end)
 end

@@ -4,7 +4,7 @@ Web modpacku Re:Zone pro S.T.A.L.K.E.R. Anomaly.
 
 | Soubor | Obsah |
 |---|---|
-| `index.html` | Příručka: Informace, Instalace, Příručka, Databáze, Výroba |
+| `index.html` | Příručka: Informace, Instalace, Příručka, Databáze (předměty, obchodníci, výzbroj NPC, nábytek do úkrytu), Výroba. Hráči tu můžou navrhnout úpravu předmětu, receptu, sortimentu obchodníka i výzbroje NPC – vznikne DLTX soubor pro Discord. |
 | `testy.html` | Test questů trilogie (zamčeno heslem) |
 | `changelog.html` | Changelog oprav trilogie (zamčeno vlastním heslem) |
 | `preklad.html`, `tr/` | Editace překladu |

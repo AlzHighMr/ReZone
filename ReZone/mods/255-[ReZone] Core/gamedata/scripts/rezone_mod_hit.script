@@ -18,7 +18,6 @@ local function write(sec, key, v)
 	return ok
 end
 
--- want = true: nastavit off_value (puvodni si ulozit), false: vratit puvodni
 local function set(sec, key, off_value, want)
 	if not ini_sys:section_exist(sec) then return end
 	local okey = "rz_orig_" .. key
@@ -54,7 +53,6 @@ local function apply_ini()
 	if not ok then core.warn("zasahy: %s", tostring(err)) end
 end
 
--- obe vypnute: celou HUD znacku zasahu vypnout hned (hra ji po cutscenach zapina zpet -> hlidat)
 local marks_off = false
 local function apply_actor()
 	if not db.actor then return end
@@ -74,7 +72,6 @@ local function on_update()
 	if not (db.actor and db.actor:disable_hit_marks()) then apply_actor() end
 end
 
--- skriptovy "aim punch" Anomaly: actor_effects.Update_Impact -> level.add_cam_effector(..., 999, ...)
 local IMPACT_CAM_ID = 999
 local function hook_impact()
 	if not (actor_effects and actor_effects.Update_Impact) or actor_effects.__rz_impact then return end
@@ -107,5 +104,5 @@ function on_game_start()
 	core.on_change(load)
 	hook_impact()
 	RegisterScriptCallback("actor_on_first_update", load)
-	load()	-- hned, at se smerovka nacte uz s nastavenou texturou
+	load()
 end

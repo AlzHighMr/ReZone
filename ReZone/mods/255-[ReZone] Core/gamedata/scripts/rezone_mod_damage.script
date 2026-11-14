@@ -2,7 +2,7 @@ local core = rezone_core
 local PAGE = rezone_mcm.path("rz_pdmg")
 local EPS = 0.0001
 
-local by_type = {}     -- [hit.<typ>] = nasobic
+local by_type = {}
 local registered = false
 
 local HIT_ID = {}
@@ -34,15 +34,13 @@ function load()
 	for k, id in pairs(HIT_ID) do
 		local m = tonumber(g(k)) or 1
 		if math.abs(m - 1) > EPS then
-			by_type[id] = m		-- v tabulce jen to, co se opravdu meni
+			by_type[id] = m
 			any = true
 		end
 	end
 	set_registered(g("enabled") ~= false and any)
 end
 
--- 2.5.40: predvolba Call of Pripyat mela mutanty x0.4 a udery x0.5 - s EFTH skoro nulove poskozeni.
--- Kdo ma ulozenou CoP predvolbu se starymi cisly, dostane jednou nove (vlastni upravy zustanou).
 local function migrate_cop()
 	local c = axr_main and axr_main.config
 	if not c or c:r_value("rezone_internal", "pdmg_cop_v2", 1, false) then return end

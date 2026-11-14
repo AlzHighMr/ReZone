@@ -1,6 +1,3 @@
-;------------------------------------------------------------------------------------------
-; FANATIC TRAINING REWARD za training
-;------------------------------------------------------------------------------------------
 ![task_fanat_training_1]
 icon = ui_icons_cordon22
 prior = 20
@@ -11,4 +8,3 @@ target = {+visit_esc_2_12_village_kmb_restr} esc_2_12_stalker_fanat, {+fanat_tra
 on_init = %=create_squad(esc_5_12_boars_training_squad:esc_smart_terrain_5_12)%
 on_complete = %=reward_item(recipe_ammo_1) =reward_item(cooking) =reward_random_item(antirad_cystamine:antirad_kalium:survival_kit:akvatab:yadylin:tushonka::meat_boar_b:conserva:ammo_9x18_ap:ammo_9x18_pmm)%
 condlist_0 = {+fanat_training_back_to_village_done} complete, {+esc_2_12_stalker_fanat_death} fail
-

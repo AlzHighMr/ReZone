@@ -2,10 +2,8 @@ local core = rezone_core
 local PAGE = rezone_mcm.path("rz_needs")
 
 local k_hunger, k_thirst, k_sleep = 1, 1, 1
+local needs_on = true
 
-------------------------------------------------------------
--- lokalni promenne ciziho modulu
-------------------------------------------------------------
 local function find_upvalue(fn, name)
 	if type(fn) ~= "function" or not (debug and debug.getupvalue) then return nil end
 	local i = 1
@@ -17,10 +15,8 @@ local function find_upvalue(fn, name)
 	end
 end
 
--- { modul, jmeno, funkce kde se pouziva }
 local VARS = {
 	thirst_step = { "actor_status_thirst", "up_drink", "actor_on_update" },
-	thirst_hour = { "actor_status_thirst", "in_hour", "actor_on_sleep" },
 	sleep_step  = { "actor_status_sleep",  "up_sleep", "actor_on_update" },
 }
 local orig = {}
@@ -49,7 +45,7 @@ local function set_var(def, val)
 end
 
 local function apply_vars()
-	local mul = { thirst_step = k_thirst, thirst_hour = k_thirst, sleep_step = k_sleep }
+	local mul = { thirst_step = k_thirst, sleep_step = k_sleep }
 	for key, def in pairs(VARS) do
 		if orig[key] == nil then orig[key] = get_var(def) or false end
 		if orig[key] then
@@ -62,17 +58,17 @@ local function apply_vars()
 	end
 end
 
-------------------------------------------------------------
--- hlad
-------------------------------------------------------------
 local prev_sat = nil
-local MAX_STEP = 0.005	-- vetsi skok za jeden update = jidlo / jiny mod, ten se nemeni
+local MAX_STEP = 0.005
 
+local god, god_t = false, 0
 local function actor_on_update()
 	if k_hunger == 1 or not db.actor then prev_sat = nil return end
 	local sat = db.actor.satiety
 	if not sat then return end
-	if prev_sat and not get_console_cmd(1, "g_god") then
+	local t = time_global()
+	if t > god_t then god_t, god = t + 1000, get_console_cmd(1, "g_god") end
+	if prev_sat and not god then
 		local d = sat - prev_sat
 		if d < 0 and d > -MAX_STEP then
 			db.actor:change_satiety(d * (k_hunger - 1))
@@ -82,15 +78,60 @@ local function actor_on_update()
 	prev_sat = sat
 end
 
+local THIRST_DRAIN, THIRST_FORCE = 2880, 7200
+local thirst_cache = {}
+
+local function thirst_ref()
+	local m = _G.actor_status_thirst
+	local fn = type(m) == "table" and m.actor_on_update
+	if not fn then return end
+	if thirst_cache.fn ~= fn then thirst_cache.fn, thirst_cache.i = fn, find_upvalue(fn, "last_drink") end
+	return thirst_cache.i and fn, thirst_cache.i
+end
+
+local function thirst_get()
+	local fn, i = thirst_ref()
+	if not fn then return end
+	local _, v = debug.getupvalue(fn, i)
+	return type(v) == "number" and v or nil
+end
+
+local function thirst_set(v)
+	local fn, i = thirst_ref()
+	if fn then debug.setupvalue(fn, i, math.max(0, math.min(10000, math.ceil(v)))) end
+end
+
+local in_hour
+local function after_sleep(hours)
+	local v = thirst_get()
+	if not v then return true end
+	in_hour = in_hour or get_var({ "actor_status_thirst", "in_hour", "actor_on_sleep" }) or 600
+	local extra = (k_thirst - 1) * hours * in_hour / 2
+	if extra > 0 then
+		v = math.min(v + extra, math.max(v, THIRST_DRAIN))
+	elseif extra < 0 then
+		v = v + extra
+	end
+	if v >= THIRST_FORCE then v = THIRST_FORCE - 1441 end
+	thirst_set(v)
+	return true
+end
+
+local function on_sleep(hours)
+	prev_sat = nil
+	if not needs_on or not (hours and hours > 0) then return end
+	CreateTimeEvent("rz_needs", "sleep", 0, after_sleep, hours)
+end
+
 local function reset_hunger() prev_sat = nil end
 
-------------------------------------------------------------
 function load()
 	local g = core.page(PAGE)
 	k_hunger = tonumber(g("hunger")) or 1
 	k_thirst = tonumber(g("thirst")) or 1
 	k_sleep  = tonumber(g("sleep")) or 1
-	if g("enabled") == false then k_hunger, k_thirst, k_sleep = 1, 1, 1 end		-- vypnuto = vanilla
+	needs_on = g("enabled") ~= false
+	if not needs_on then k_hunger, k_thirst, k_sleep = 1, 1, 1 end
 	prev_sat = nil
 	core.toggle_cb("actor_on_update", actor_on_update, k_hunger ~= 1)
 	apply_vars()
@@ -99,7 +140,7 @@ end
 
 function on_game_start()
 	RegisterScriptCallback("actor_on_first_update", reset_hunger)
-	RegisterScriptCallback("actor_on_sleep", reset_hunger)
+	RegisterScriptCallback("actor_on_sleep", on_sleep)
 	core.on_change(load)
 	load()
 end

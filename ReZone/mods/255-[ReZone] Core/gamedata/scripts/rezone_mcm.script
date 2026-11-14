@@ -1,9 +1,8 @@
-VERSION = "2.5.62"
+VERSION = "2.5.72"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
 
--- stranka -> zalozka (poradi stranek je v build_tree)
 PAGE_TAB = {
 	rz_master = TAB_MAIN, rz_links = TAB_MAIN,
 	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
@@ -14,12 +13,10 @@ PAGE_TAB = {
 	rz_fx = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
 
--- "rz_ball" -> "rezone/rz_combat/rz_ball"
 function path(pg)
 	return ROOT .. "/" .. (PAGE_TAB[pg] or TAB_OT) .. "/" .. pg
 end
 
--- zalozky do 2.5.45
 local OLD_TAB = {
 	rz_trade = "rz_gameplay", rz_prices = "rz_gameplay", rz_loot = "rz_gameplay", rz_craft = "rz_gameplay",
 	rz_ball = "rz_gameplay", rz_vision = "rz_gameplay", rz_knife = "rz_gameplay", rz_afsp = "rz_gameplay",
@@ -34,8 +31,6 @@ MUTANT_SPECIES = {
 	"controller", "poltergeist", "chimera", "pseudo_gigant",
 }
 
--- ReSpawn Mutants (Hades@DK): vlastni druhy, sekce prirazuje configs\rezone\rezone_species.ltx
--- [2] = zakladni sekce modu - posuvnik se ukaze, jen kdyz je mod nainstalovany
 RS_SPECIES = {
 	{ "rs_volk", "m_volk_e" }, { "rs_gonchaya", "m_gonchaya_e" }, { "rs_koyot", "m_koyot_e" }, { "rs_shepherd", "m_shepherd_e" },
 	{ "rs_burenka", "m_burenka_e" }, { "rs_vebber", "m_vebber_e" }, { "rs_ratking", "m_ratking_e" }, { "rs_zanoza", "m_zanoza_e" },
@@ -44,7 +39,7 @@ RS_SPECIES = {
 	{ "rs_tark", "m_tark_e" }, { "rs_obrazet", "m_obrazet_e" }, { "rs_predadar", "m_predadar_e" }, { "rs_jugger", "m_jugger_e" },
 	{ "rs_alghoul", "m_alghoul_e" }, { "rs_vendigo", "m_vendigo_e" }, { "rs_fur", "m_fur_e" },
 }
--- vsechny druhy (vanilla + ReSpawn) - pro urceni druhu a nasobice
+
 ALL_SPECIES = {}
 for i = 1, #MUTANT_SPECIES do ALL_SPECIES[#ALL_SPECIES + 1] = MUTANT_SPECIES[i] end
 for i = 1, #RS_SPECIES do ALL_SPECIES[#ALL_SPECIES + 1] = RS_SPECIES[i][1] end
@@ -54,9 +49,6 @@ local function rs_installed(base) return ini_sys:section_exist(base) end
 local CLR_DESC = { 255, 200, 200, 200 }
 local CLR_NOTE = { 255, 150, 150, 150 }
 
-------------------------------------------------------------
--- Stavebni bloky
-------------------------------------------------------------
 local function slide(text)
 	return { id = "banner", type = "slide", link = "ui_options_slider_disguise", text = text, size = { 512, 50 }, spacing = 20 }
 end
@@ -68,10 +60,6 @@ local function track(id, def, min, max, step, hint)
 end
 local function page(id, gr) return { id = id, sh = true, gr = gr } end
 
-------------------------------------------------------------
--- GAMEPLAY
-------------------------------------------------------------
--- Limit leku a drog (rezone_mod_meds)
 local function gp_meds()
 	return page("rz_meds", {
 		slide("ui_mcm_rz_meds_title"),
@@ -82,7 +70,6 @@ local function gp_meds()
 	})
 end
 
--- Hlad, zizen a unava (rezone_mod_needs)
 local function gp_needs()
 	return page("rz_needs", {
 		slide("ui_mcm_rz_needs_title"),
@@ -97,7 +84,6 @@ local function gp_needs()
 	})
 end
 
--- Zrak NPC pres vegetaci (rezone_mod_vision)
 local function gp_vision()
 	return page("rz_vision", {
 		slide("ui_mcm_rz_vision_title"),
@@ -112,7 +98,6 @@ local function gp_vision()
 	})
 end
 
--- Utoky nozem NPC (rz_npc_knife, port rx_knife z AI Additions / Anthology)
 local function gp_knife()
 	return page("rz_knife", {
 		slide("ui_mcm_rz_knife_title"),
@@ -201,7 +186,7 @@ local function gp_trade()
 		desc("ds", "ui_mcm_rz_stock_info"),
 		check("stock", false, "rz_stock"),
 	}
-	-- posuvniky omezeni zasob (rezone_mod_stock)
+
 	local S = rezone_mod_stock
 	if S then
 		for _, it in ipairs(S.GROUPS) do
@@ -276,7 +261,6 @@ local function gp_loot()
 	})
 end
 
--- Artefakty v anomaliich (rezone_mod_afspawn): sance, bourky, vzacnost silnych artefaktu
 local function gp_ranks()
 	return page("rz_ranks", {
 		slide("ui_mcm_rz_ranks_title"),
@@ -311,7 +295,6 @@ local function gp_afspawn()
 	})
 end
 
--- Populace = vlastni reseni (rezone_mod_population), zadny dalsi mod neni potreba
 local function gp_population()
 	local P = rezone_mod_population
 	local d = P.PRESETS[P.DEFAULT]
@@ -357,8 +340,6 @@ local function gp_population()
 	return page("rz_pop", gr)
 end
 
-
--- Toulavi stalkeri (rezone_mod_wander): skupiny prochazejici lokaci, zapinani po lokacich
 local function gp_wander()
 	local W = rezone_mod_wander
 	local gr = {
@@ -387,10 +368,7 @@ local function gp_wander()
 	for _, l in ipairs(W.LEVELS) do gr[#gr + 1] = check("lv_" .. l[2], l[3], "rz_walk_lv_" .. l[2]) end
 	return page("rz_walk", gr)
 end
-------------------------------------------------------------
--- ZDRAVI
-------------------------------------------------------------
--- Artefakty (rezone_af_punish, rezone_af_fx): chemicke a elektricke artefakty bez kontejneru
+
 local function hp_artefacts()
 	return page("rz_af", {
 		slide("ui_mcm_menu_rzaf"),
@@ -436,8 +414,6 @@ local function hp_damage()
 	return page("rz_pdmg", gr)
 end
 
--- Odolnost stalkeru podle hodnosti (rezone_mod_sthp)
-
 local function hp_mutants()
 	local gr = {
 		slide("ui_mcm_rz_muthp_title"),
@@ -461,7 +437,6 @@ local function hp_mutants()
 	return page("rz_muthp", gr)
 end
 
--- Sila utoku mutantu: nasobic poskozeni, ktere mutant da hraci (podle druhu)
 local function hp_mutdmg()
 	local gr = {
 		slide("ui_mcm_rz_mutdmg_title"),
@@ -485,11 +460,6 @@ local function hp_mutdmg()
 	return page("rz_mutdmg", gr)
 end
 
-------------------------------------------------------------
--- OSTATNI
-------------------------------------------------------------
--- Efekty: vypnuti obrazovych efektu (PPE) radiace, poltergeista a controllera (rezone_mod_fx)
--- Detekce cilu v dalekohledu (rezone_mod_binoc)
 local function ot_binoc()
 	return page("rz_binoc", {
 		slide("ui_mcm_rz_binoc_title"),
@@ -500,7 +470,6 @@ local function ot_binoc()
 	})
 end
 
--- Mrtvoly na minimape (modxml_rezone_pda)
 local function ot_pda()
 	return page("rz_pda", {
 		slide("ui_mcm_rz_pda_title"),
@@ -531,7 +500,6 @@ local function ot_fx()
 	})
 end
 
--- Hlavni menu: video na pozadi (modxml_rezone_mm_video)
 local function ot_menu()
 	local content = modxml_rezone_mm_video and modxml_rezone_mm_video.mcm_content() or { { "default", "default" } }
 	return page("rz_menu", {
@@ -552,9 +520,6 @@ local function ot_debug()
 	})
 end
 
-------------------------------------------------------------
--- HLAVNI: jedna predvolba pro vsechno (rezone_master)
-------------------------------------------------------------
 local function main_master()
 	local content = {}
 	for i = 0, #rezone_master.NAMES do content[#content + 1] = { i, "rz_master_" .. rezone_master.NAMES[i] } end
@@ -572,8 +537,6 @@ local function main_master()
 	})
 end
 
-------------------------------------------------------------
--- prevod ulozenych voleb do novych zalozek (2.5.46)
 local function migrate_tabs(tabs)
 	local c = axr_main and axr_main.config
 	if not c or c:r_value("rezone_internal", "tabs_v246", 1, false) then return end
@@ -596,10 +559,9 @@ local function migrate_tabs(tabs)
 	end
 	c:w_value("rezone_internal", "tabs_v246", true)
 	c:save()
-	if n > 0 then printf("[ReZone] MCM: prevedeno %d ulozenych voleb do novych zalozek", n) end
+	if n > 0 then rezone_core.dbg("[ReZone] MCM: prevedeno %d ulozenych voleb do novych zalozek", n) end
 end
 
--- odolnost stalkeru je od 2.5.57 na strance Balistika (st_*), "Odolnost NPC" z balistiky se do ni zapocita
 local STHP_IDS = { "enabled", "all", "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
 local function migrate_sthp()
 	local c = axr_main and axr_main.config
@@ -621,13 +583,12 @@ local function migrate_sthp()
 		local all = c:r_value("mcm", base .. "all", 2) or 1
 		c:w_value("mcm", base .. "all", all * nt)
 		c:w_value("mcm", base .. "enabled", true)
-		printf("[ReZone] Odolnost NPC z balistiky (%.2f) prevedena do Odolnost stalkeru", nt)
+		rezone_core.dbg("[ReZone] Odolnost NPC z balistiky (%.2f) prevedena do Odolnost stalkeru", nt)
 	end
 	c:w_value("rezone_internal", "sthp_v257", true)
 	c:save()
 end
 
--- uklid: ulozene volby ReZone, ktere uz v menu nejsou (stare zalozky Gameplay/Zdravi/Populace, zrusene volby)
 local function clean_old(tabs)
 	local c = axr_main and axr_main.config
 	if not (c and c.collect_section and c.remove_line) then return end
@@ -653,7 +614,7 @@ local function clean_old(tabs)
 	if c:line_exist("rezone_internal", "pop_tab_moved") then c:remove_line("rezone_internal", "pop_tab_moved") end
 	c:w_value("rezone_internal", "clean_v260", true)
 	c:save()
-	if n > 0 then printf("[ReZone] MCM: smazano %d starych ulozenych voleb", n) end
+	if n > 0 then rezone_core.dbg("[ReZone] MCM: smazano %d starych ulozenych voleb", n) end
 end
 
 local function add(t, cond, fn)
@@ -694,16 +655,16 @@ function build_tree()
 	}
 	pcall(migrate_tabs, tabs)
 	pcall(migrate_sthp)
-	-- uklid az ve hre (v hlavnim menu nemusi byt nactene vsechny moduly se strankami)
+
 	if db and db.actor then pcall(clean_old, tabs) end
 	return { id = ROOT, gr = tabs }
 end
 
 function on_mcm_load()
-	rezone_links.reset() -- znovu nacist LTX pri kazdem sestaveni MCM
-	-- predvolba hry musi oznacit vsechny volby i v hlavnim menu (on_game_start tam nebezi)
+	rezone_links.reset()
+
 	if rezone_master and rezone_master.hook_gui then pcall(rezone_master.hook_gui) end
-	-- video v hlavnim menu: zmena hned po Pouzit i bez nacteni hry
+
 	if modxml_rezone_mm_video and modxml_rezone_mm_video.ensure_live then pcall(modxml_rezone_mm_video.ensure_live) end
 	return build_tree()
 end

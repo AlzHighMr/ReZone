@@ -1,34 +1,32 @@
 local core = rezone_core
 local PAGE = rezone_mcm.path("rz_pop")
 
-MAX_MEMBERS = 12	-- strop velikosti jedne skupiny po zvetseni
+MAX_MEMBERS = 12
 POP_STALKER = "alife/general/alife_stalker_pop"
 POP_MUTANT  = "alife/general/alife_mutant_pop"
 
 local cfg = { on = false }
 
--- ---------------------------------------------------------------- predvolby
 NAMES = { [1] = "vanilla", [2] = "calm", [3] = "alive", [4] = "danger" }
 DEFAULT = 1
 
 PRESETS = {
-	-- vanilla Anomaly (hustota 1 = stejne jako vychozi volba ALife)
+
 	[1] = { st_pop = 1,   mu_pop = 1,   respawn = 1,    st_size = 1,   st_var = 0,   mu_size = 1,   mu_var = 0,
 	        st_random = false, st_random_ch = 10, mu_random = false, mu_random_ch = 10 },
-	-- klidna Zona: mene lidi i zvirat, pomalejsi respawn, mensi skupiny
+
 	[2] = { st_pop = 0.6, mu_pop = 0.5, respawn = 2,    st_size = 0.8, st_var = 0.2, mu_size = 0.8, mu_var = 0.2,
 	        st_random = false, st_random_ch = 10, mu_random = false, mu_random_ch = 10 },
-	-- ziva Zona: vic stalkeru, ruznorode skupiny, obcas nekdo navic
+
 	[3] = { st_pop = 1.3, mu_pop = 1,   respawn = 0.75, st_size = 1.2, st_var = 0.3, mu_size = 1.1, mu_var = 0.3,
 	        st_random = true,  st_random_ch = 15, mu_random = true,  mu_random_ch = 10 },
-	-- nebezpecna Zona: hodne mutantu, velke smecky, rychly respawn
+
 	[4] = { st_pop = 1.2, mu_pop = 1.6, respawn = 0.5,  st_size = 1.3, st_var = 0.4, mu_size = 1.5, mu_var = 0.5,
 	        st_random = true,  st_random_ch = 20, mu_random = true,  mu_random_ch = 25 },
 }
 
--- ---------------------------------------------------------------- pomocne
-local active = 0		-- >0 = jsme uvnitr respawnu nebo pocatecniho naplneni
-local created = nil		-- skupiny vytvorene behem jednoho try_respawn
+local active = 0
+local created = nil
 
 local function is_mutant_faction(f)
 	return f and is_squad_monster and is_squad_monster[f] and true or false
@@ -39,7 +37,6 @@ local function squad_is_mutant(squad)
 	return is_mutant_faction(f)
 end
 
--- cilova velikost: n * velikost * nahodne (1 +- rozptyl), aspon 1, nejvys MAX_MEMBERS
 function target_size(n, size, var, rnd)
 	local r = (rnd or math.random)() * 2 - 1
 	local f = size * (1 + r * var)
@@ -65,7 +62,7 @@ local function resize(squad)
 
 	local t = target_size(n, size, var)
 	if t > n then
-		-- novi clenove = kopie nahodnych stavajicich (stejna hodnost a vybava jako skupina)
+
 		for i = 1, t - n do
 			local se = alife_object(ids[math.random(n)])
 			if se then
@@ -73,7 +70,7 @@ local function resize(squad)
 			end
 		end
 	elseif t < n then
-		-- odebrat nahodne cleny krome velitele
+
 		local cmd = squad:commander_id()
 		local pool = {}
 		for i = 1, n do
@@ -89,7 +86,6 @@ local function resize(squad)
 	if core.DEBUG then core.log("populace: %s %d -> %d", squad:section_name(), n, t) end
 end
 
--- skupiny, ktere se na dane urovni bezne respawnuji (pro nahodne skupiny navic)
 local level_pool = {}
 
 local function level_of(obj)
@@ -123,7 +119,7 @@ end
 
 local function random_extra(smart)
 	if not (created and #created > 0) then return end
-	if smart.props and (smart.props.base or 0) > 0 then return end	-- ne na zakladnach frakci
+	if smart.props and (smart.props.base or 0) > 0 then return end
 
 	local mu = squad_is_mutant(created[1])
 	local want = mu and cfg.mu_random or cfg.st_random
@@ -138,7 +134,7 @@ local function random_extra(smart)
 	local sec = list[math.random(#list)]
 	local ok, sq = pcall(SIMBOARD.create_squad, SIMBOARD, smart, sec)
 	if ok and sq then
-		-- respawn_point_id se nenastavuje: skupina navic se nepocita do limitu smartu
+
 		for m in sq:squad_members() do
 			if m.object then SIMBOARD:setup_squad_and_group(m.object) end
 		end
@@ -148,9 +144,6 @@ local function random_extra(smart)
 	end
 end
 
-
--- ---------------------------------------------------------------- hodnosti na zacatecnich urovnich
--- id volby na strance -> nazev urovne
 RL_LEVELS = {
 	{ "rl_escape",    "l01_escape",    true },
 	{ "rl_marsh",     "k00_marsh",     true },
@@ -182,7 +175,6 @@ local function level_name_of(gvid)
 	return sim:level_name(gg:vertex(gvid):level_id())
 end
 
--- je smart na omezene urovni? (cache podle id; vynuluje se pri zmene nastaveni)
 local restricted_cache = {}
 local function smart_restricted(smart)
 	local r = restricted_cache[smart.id]
@@ -194,7 +186,6 @@ local function smart_restricted(smart)
 	return r
 end
 
--- nejvyssi trida clena skupiny (cache, prepocita se kdyz se zmeni pocet clenu)
 local tier_cache = {}
 local function squad_tier(squad)
 	local n = squad:npc_count()
@@ -211,14 +202,13 @@ local function squad_tier(squad)
 end
 
 local function lower_section(fac, max)
-	local want = math.random(math.max(0, max - 1), max)	-- trochu pestrosti: max nebo o tridu niz
+	local want = math.random(math.max(0, max - 1), max)
 	for t = want, 0, -1 do
 		local s = "sim_default_" .. fac .. "_" .. t
 		if ini_sys:section_exist(s) then return s end
 	end
 end
 
--- vymeni cleny nad limitem za slabsi verzi stejne frakce (stejne misto)
 function limit_ranks(squad)
 	local high = {}
 	for m in squad:squad_members() do
@@ -229,7 +219,7 @@ function limit_ranks(squad)
 		end
 	end
 	if #high == 0 then return end
-	-- nejdriv pridat nahradu, pak odebrat (skupina nikdy nezustane prazdna)
+
 	for _, h in ipairs(high) do
 		local sec = lower_section(h.fac, cfg.rl_max)
 		if sec then
@@ -245,7 +235,6 @@ function limit_ranks(squad)
 	if core.DEBUG then core.log("populace: %s - %d silnych clenu nahrazeno", squad:section_name(), #high) end
 end
 
--- ---------------------------------------------------------------- patch
 local patched = false
 local function patch()
 	if patched then return end
@@ -257,16 +246,6 @@ local function patch()
 		return
 	end
 	patched = true
-
-	-- hustota: behem respawnu / naplneni vrati ui_options nase cisla misto volby ALife
-	local orig_get = ui_options.get
-	ui_options.get = function(path, ...)
-		if active > 0 and cfg.on then
-			if path == POP_STALKER then return cfg.st_pop end
-			if path == POP_MUTANT then return cfg.mu_pop end
-		end
-		return orig_get(path, ...)
-	end
 
 	local orig_respawn = st.try_respawn
 	st.try_respawn = function(self, ...)
@@ -320,7 +299,6 @@ local function patch()
 		return r
 	end
 
-	-- silne skupiny si za cil nevyberou smart na omezene urovni (ty, co uz tam jsou, casem odejdou)
 	local orig_pre = st.target_precondition
 	st.target_precondition = function(self, squad, ...)
 		if cfg.rl and squad and squad.player_id and not is_mutant_faction(squad.player_id)
@@ -335,6 +313,55 @@ end
 function zcp_present()
 	local fs = getFS and getFS()
 	return fs and fs:exist("$game_scripts$", "smr_amain_mcm.script") and true or false
+end
+
+VANILLA_POP = { [POP_STALKER] = 0.5, [POP_MUTANT] = 0.75 }
+
+local get_installed = false
+local function install_get()
+	if get_installed or not (ui_options and ui_options.get) then return end
+	get_installed = true
+	local orig_get = ui_options.get
+	ui_options.get = function(path, ...)
+		if cfg.on then
+			if path == POP_STALKER then return VANILLA_POP[path] * cfg.st_pop end
+			if path == POP_MUTANT then return VANILLA_POP[path] * cfg.mu_pop end
+		end
+		return orig_get(path, ...)
+	end
+end
+
+function anomaly_pop_shown()
+	return not cfg.on
+end
+
+local function hide_in_tree()
+	for _, t in ipairs(ui_options and ui_options.options or {}) do
+		if t.id == "alife" then
+			for _, g in ipairs(t.gr or {}) do
+				if g.id == "general" then
+					for _, o in ipairs(g.gr or {}) do
+						if o.id == "alife_stalker_pop" or o.id == "alife_mutant_pop" then
+							o.precondition = { anomaly_pop_shown }
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+local hide_installed = false
+local function install_hide()
+	if hide_installed or not (ui_options and ui_options.init_opt_base) then return end
+	hide_installed = true
+	local orig_init = ui_options.init_opt_base
+	ui_options.init_opt_base = function(...)
+		local r = orig_init(...)
+		hide_in_tree()
+		return r
+	end
+	hide_in_tree()
 end
 
 local zcp_warned = false
@@ -367,6 +394,8 @@ function load()
 end
 
 function on_game_start()
+	install_get()
+	install_hide()
 	core.on_change(load)
 	load()
 end

@@ -1,7 +1,6 @@
 local core = rezone_core
 local PAGE = rezone_mcm.path("rz_trade")
 
--- skupiny: id volby -> vychozi limit (rezone_mcm stavi posuvniky z tohoto seznamu)
 GROUPS = {
 	{ "st_guns",       4 },
 	{ "st_pistols",    3 },
@@ -16,13 +15,12 @@ GROUPS = {
 	{ "st_meds",      18 },
 	{ "st_repair",    20 },
 }
-AMMO_DEFAULT = 100		-- % krabic munice, ktere zustanou
-RANDOM_DEFAULT = 20		-- +- % k limitu
+AMMO_DEFAULT = 100
+RANDOM_DEFAULT = 20
 
 local cfg = { on = false }
 
--- ---------------------------------------------------------------- trideni predmetu
-local LONG = { w_rifle = true, w_smg = true, w_shotgun = true, w_sniper = true, w_explosive = true }	-- w_explosive = granatomety
+local LONG = { w_rifle = true, w_smg = true, w_shotgun = true, w_sniper = true, w_explosive = true }
 local EXPLOSIVE_CLS = { G_F1 = true, G_F1_S = true, G_RGD5 = true, G_RGD5_S = true,
                         S_M209 = true, S_VOG25 = true, S_OG7B = true }
 local FOOD = { i_food = true, i_drink = true, i_mutant_cooked = true }
@@ -31,13 +29,13 @@ local NOT_ATTACH = { bolt = true, bolt_bullet = true }
 
 local group_cache = {}
 
--- vraci id skupiny, "ammo", nebo false
 function group_of(sec)
 	local g = group_cache[sec]
 	if g ~= nil then return g end
 	local kind = SYS_GetParam(0, sec, "kind", "") or ""
 	local cls = SYS_GetParam(0, sec, "class", "") or ""
-	if SYS_GetParam(1, sec, "quest_item", false) or SYS_GetParam(1, sec, "is_component", false) then
+	if SYS_GetParam(1, sec, "quest_item", false) or SYS_GetParam(1, sec, "is_component", false)
+		or (SYS_GetParam(0, sec, "placeable_type", "") or "") ~= "" then
 		g = false
 	elseif SYS_GetParam(1, sec, "is_mag", false) then
 		g = "st_mags"
@@ -72,7 +70,6 @@ function group_of(sec)
 	return g
 end
 
--- ---------------------------------------------------------------- vyber
 local function shuffle(t)
 	for i = #t, 2, -1 do
 		local j = math.random(i)
@@ -87,7 +84,6 @@ local function limit_with_random(n)
 	return math.max(0, n + math.random(-d, d))
 end
 
--- items = { [skupina] = { id, id, ... } } -> seznam id k odebrani
 function pick_removals(items)
 	local remove = {}
 	for grp, ids in pairs(items) do
@@ -117,7 +113,6 @@ function destock(id)
 	local npc = level.object_by_id(id)
 	if not (npc and npc:alive()) or is_companion(npc) then return true end
 
-	-- veci, ktere ma na sobe
 	local worn = {}
 	for slot = 0, 14 do
 		local o = npc:item_in_slot(slot)
@@ -149,7 +144,6 @@ function destock(id)
 	return true
 end
 
--- ---------------------------------------------------------------- doplneni zasob
 local registered = false
 local function patch()
 	if registered then return end

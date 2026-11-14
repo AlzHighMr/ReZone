@@ -6,7 +6,6 @@ local cache = nil
 
 function reset() cache = nil end
 
--- "1,str_a;2,str_b" -> { {1,"str_a"}, {2,"str_b"} }
 local function parse_content(s)
 	local t, numeric = {}, true
 	for pair in string.gmatch(s or "", "[^;]+") do
@@ -57,9 +56,6 @@ function load()
 	return cache
 end
 
-------------------------------------------------------------
--- Funkce volane z MCM (precondition / functor / curr)
-------------------------------------------------------------
 function exists(target)
 	return rezone_core.mcm_has(target)
 end
@@ -89,9 +85,6 @@ function set_value(target, value)
 	end
 end
 
-------------------------------------------------------------
--- Stranka "Odkazy" pro danou zalozku
-------------------------------------------------------------
 function build_page()
 	local gr = {
 		{ id = "banner", type = "slide", link = "ui_options_slider_disguise", text = "ui_mcm_rz_links_title", size = { 512, 50 }, spacing = 20 },

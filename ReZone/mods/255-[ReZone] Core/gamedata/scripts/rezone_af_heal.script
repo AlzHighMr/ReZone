@@ -4,7 +4,7 @@ local CFG = "rezone\\af_heal.ltx"
 
 local cfg = { on = true, mult = 1 }
 local tick, bleed_chance = 5, 0.25
-local heal = {}          -- sekce -> { hp, bleed, destroyed } (cache vcetne vylepsenych variant)
+local heal = {}
 local base_tbl, tier_mult, reg_hp
 local active = false
 local next_t = 0
@@ -43,7 +43,6 @@ local function load_cfg()
 	reg_hp = nums(ini:r_string_ex("reg", "hp") or "0.5,1,1.5,2")
 end
 
--- leceni pro sekci (zaklad, vylepsena varianta ze selekce, kontejner na pasu)
 local function heal_of(sec)
 	local h = heal[sec]
 	if h ~= nil then return h end
@@ -51,7 +50,7 @@ local function heal_of(sec)
 	local b, t, l = string.match(sec, "^(.-)_brd_(%a+)(%d)")
 	if b then base, typ, lvl = b, t, tonumber(l) end
 	if not base_tbl[base] then
-		local stripped = string.match(base, "^(.-)_af_a[ac]m$")		-- AAC / AAM na pasu
+		local stripped = string.match(base, "^(.-)_af_a[ac]m$")
 		if stripped then base = stripped end
 	end
 	local d = base_tbl[base]
@@ -67,7 +66,7 @@ local function heal_of(sec)
 end
 
 local function heal_limbs(bd, amount, allow_destroyed)
-	-- nejvic poskozena cast tela (podle podilu HP)
+
 	local best, best_r
 	for _, limb in pairs(bd.limbs) do
 		local max = limb.hp_max_current or limb.hp_max or 1
@@ -125,7 +124,7 @@ local function update()
 		if bleed and math.random() < bleed_chance then stop_light_bleed(bd) end
 	end)
 	if not ok then
-		-- jina verze EFT Health System: vypnout, jedna hlaska misto spamu
+
 		active = false
 		UnregisterScriptCallback("actor_on_update", update)
 		core.warn("leceni artefakty: EFT Health System ma jine funkce, vypinam (%s)", tostring(err))
@@ -149,7 +148,7 @@ local function actor_on_first_update()
 end
 
 function on_game_start()
-	if not efth_installed() then return end		-- bez EFTH nic
+	if not efth_installed() then return end
 	core.on_change(load)
 	load()
 	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)

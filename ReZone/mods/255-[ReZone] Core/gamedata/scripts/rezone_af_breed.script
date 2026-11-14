@@ -3,7 +3,7 @@ local BASES = "rezone\\af_breeding_bases.ltx"
 local SLOTS = 10
 local MAX_LVL = 3
 local TYPES = { "tier" }
-local FLAG = "sgmb_spawned_"		-- stejny jako puvodni SGM Selekce: nic se nespawnuje dvakrat
+local FLAG = "sgmb_spawned_"
 
 local bases, breeders, order, price_mult, price_min
 local cand, sel = {}, nil
@@ -15,9 +15,6 @@ local function warn(fmt, ...)
 	if rezone_core and rezone_core.warn then rezone_core.warn("selekce: " .. fmt, ...) end
 end
 
------------------------------------------------------------------------
--- nastaveni
------------------------------------------------------------------------
 local function nums(s)
 	local t = {}
 	for v in string.gmatch(s or "", "[^,%s]+") do t[#t + 1] = tonumber(v) end
@@ -55,10 +52,6 @@ local function load()
 	price_min = ini and ini:r_float_ex("prices", "min") or 0
 end
 
------------------------------------------------------------------------
--- artefakty
------------------------------------------------------------------------
--- rozklad sekce: zaklad, typ, stupen (zaklad = stupen 0)
 function parse(sec)
 	load()
 	if bases[sec] then return sec, nil, 0 end
@@ -69,7 +62,6 @@ function parse(sec)
 		return b, t, l
 	end
 end
-
 
 function price(base, lvl)
 	load()
@@ -85,7 +77,6 @@ local function talker()
 	return mob_trade and mob_trade.GetTalkingNpc and mob_trade.GetTalkingNpc()
 end
 
--- selekcionar podle story_id, profilu nebo sekce postavy
 function breeder_of(npc)
 	load()
 	if not npc then return end
@@ -130,9 +121,6 @@ local function class_list(npc)
 	return string.format(gs("st_rz_brd_classes"), table.concat(t, ", "), b.max)
 end
 
------------------------------------------------------------------------
--- dialog
------------------------------------------------------------------------
 function is_breeder(a, b) return breeder_of(dialogs.who_is_npc(a, b)) ~= nil end
 
 function text_intro()
@@ -212,7 +200,6 @@ end
 
 function breed_next(a, b) breed(a, b, nil) end
 
--- funkce pro sloty a typy (dialog je vola jmenem)
 local M = getfenv and getfenv(1) or _G
 for i = 1, SLOTS do
 	M["slot_" .. i] = function(a, b) return slot(i, a, b) end
@@ -228,7 +215,6 @@ for _, t in ipairs(TYPES) do
 	M["breed_" .. t] = function(a, b) breed(a, b, t) end
 end
 
--- chyba v dialogove funkci -> zapis do logu a bezpecna hodnota (dialog se nezasekne)
 do
 	local names = { "is_breeder", "text_intro", "text_offer", "text_done", "can_next", "no_money", "opt_next", "breed_next" }
 	for i = 1, SLOTS do
@@ -249,27 +235,24 @@ do
 	end
 end
 
------------------------------------------------------------------------
--- spawn selekcionaru
------------------------------------------------------------------------
 local INVALID_VID = 4294967295
 
 local function cop_port()
 	return type(xr_conditions) == "table" and type(rawget(xr_conditions, "cop_port_enabled")) == "function"
 end
 
-local moving = {}		-- selekcionar uvolneny kvuli presunu, ceka na novy spawn
+local moving = {}
 
 local function can_spawn(b)
 	if moving[b.id] then
 		if time_global() < moving[b.id] then return false end
-		if get_story_object_id and get_story_object_id(b.id) then return false end	-- stary jeste neni pryc
+		if get_story_object_id and get_story_object_id(b.id) then return false end
 		moving[b.id] = nil
 		disable_info(FLAG .. b.id)
 	end
 	if has_alife_info(FLAG .. b.id) then return false end
 	if b.wait_info and cop_port() and not has_alife_info(b.wait_info) then return false end
-	if get_story_object_id and get_story_object_id(b.id) then		-- uz na svete (napr. z predchozi verze)
+	if get_story_object_id and get_story_object_id(b.id) then
 		give_info(FLAG .. b.id)
 		return false
 	end
@@ -290,7 +273,6 @@ local function nearest_gvid(pos)
 	return best
 end
 
--- smart: <jmeno>  - spawn u smart terrainu, funguje z libovolneho levelu
 local function spawn_smart(b, name)
 	local smart = SIMBOARD and SIMBOARD.smarts_by_names and SIMBOARD.smarts_by_names[name]
 	if not smart then
@@ -303,7 +285,6 @@ local function spawn_smart(b, name)
 	log("spawn %s u %s", b.id, name)
 end
 
--- pos: <level>, x, y, z, vertex  - spawn az na danem levelu (overeni vertexu)
 local function spawn_pos(b, args)
 	local t = str_explode(args, ",")
 	if t[1] ~= level.name() then return end
@@ -317,8 +298,6 @@ local function spawn_pos(b, args)
 	log("spawn %s na %s", b.id, t[1])
 end
 
--- pos: selekcionar uz stoji jinde (stary save, zmena pozice v configu) -> presun
--- jen kdyz je hrac na cilovem levelu a selekcionar neni na ocich (dal nez 60 m)
 local function pos_args(args)
 	local t = str_explode(args, ",")
 	return t[1], vector():set(tonumber(t[2]) or 0, tonumber(t[3]) or 0, tonumber(t[4]) or 0)
@@ -335,10 +314,10 @@ local function relocate(b, args)
 	local here = alife():level_name(game_graph():vertex(se.m_game_vertex_id):level_id()) == lname
 	if here and se.position:distance_to(pos) < 5 then give_info(key) return end
 	local npc = level.object_by_id(id)
-	if npc and npc:position():distance_to(db.actor:position()) < 60 then return true end	-- zkusi pozdeji
+	if npc and npc:position():distance_to(db.actor:position()) < 60 then return true end
 	give_info(key)
 	alife_release(se)
-	moving[b.id] = time_global() + 1000		-- novy spawn az v dalsim kole
+	moving[b.id] = time_global() + 1000
 	log("presun %s na %s", b.id, lname)
 	return true
 end
@@ -346,7 +325,7 @@ end
 local pending = false
 local function spawn_all()
 	if not db.actor then return end
-	local co = rawget(_G, "XrrIsHost")				-- co-op: spawny ridi jen hostitel
+	local co = rawget(_G, "XrrIsHost")
 	if type(co) == "function" then
 		local ok, r = pcall(co)
 		if ok and r == false then return end
@@ -363,7 +342,7 @@ local function spawn_all()
 				if kind == "smart" then spawn_smart(b, args) else spawn_pos(b, args) end
 				if not has_alife_info(FLAG .. b.id) then pending = true end
 			elseif not has_alife_info(FLAG .. b.id) then
-				pending = true	-- ceka na info (CoP port)
+				pending = true
 			end
 		end
 	end

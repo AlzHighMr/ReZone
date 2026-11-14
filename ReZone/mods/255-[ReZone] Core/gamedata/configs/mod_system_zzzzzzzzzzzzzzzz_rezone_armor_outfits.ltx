@@ -1,10 +1,3 @@
-; ReZone Armor - outfits (DLTX), profile Call of Pripyat.
-; Values of the CoP counterpart (vanilla CoP 1.6.02 outfit.ltx) in Anomaly units:
-;   anomaly protections x burn 2.69, shock 3.50, chemical_burn 1.17, radiation 2.93, telepatic 1.82, strike 1.26, wound 1.62, explosion 1.46
-; Trilogie / Hardcore values: configs\rezone\armor_<profile>.ltx, applied at game load by rezone_armor.script.
-
-; ---- ReZone Helmets: every suit takes a helmet (vanilla closed suits had outfit_restrictions_1 / _3)
-; built-in mask protection of closed suits moved to the helmet (radiation, psy, chemical)
 ![outfit_restrictions_1]
 !helmet_avaliable = false
 
@@ -14,7 +7,6 @@
 ![outfit_restrictions_3]
 !helmet_avaliable = false
 
-; ---- helmets, profile Call of Pripyat (head armor on the ReZone scale)
 ![helm_ach7]
 bones_koeff_protection = actor_helm_rzc_021_001
 hit_fraction_actor = 0.5
@@ -79,7 +71,6 @@ hit_fraction_actor = 0.25
 bones_koeff_protection = actor_helm_rzc_040_001
 hit_fraction_actor = 0.4
 
-; army_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![army_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.1988
@@ -94,7 +85,6 @@ wound_protection = 0.8563
 explosion_protection = 0.9784
 artefact_count = 1
 
-; army_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![army_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.724
@@ -109,7 +99,6 @@ wound_protection = 0.1717
 explosion_protection = 0.1734
 artefact_count = 1
 
-; bandit_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![bandit_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2844
@@ -124,7 +113,6 @@ wound_protection = 0.5425
 explosion_protection = 0.5505
 artefact_count = 1
 
-; bandit_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![bandit_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3751
@@ -139,7 +127,6 @@ wound_protection = 0.5483
 explosion_protection = 0.5231
 artefact_count = 1
 
-; bandit_nbc_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![bandit_nbc_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.7456
@@ -154,7 +141,6 @@ wound_protection = 0.2925
 explosion_protection = 0.2897
 artefact_count = 2
 
-; bandit_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![bandit_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.8939
@@ -169,7 +155,6 @@ wound_protection = 0.1268
 explosion_protection = 0.1119
 artefact_count = 0
 
-; bandit_novice_outfit_alt  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![bandit_novice_outfit_alt]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.8789
@@ -184,7 +169,6 @@ wound_protection = 0.1306
 explosion_protection = 0.1164
 artefact_count = 0
 
-; bandit_ps5_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![bandit_ps5_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6287
@@ -199,7 +183,6 @@ wound_protection = 0.3761
 explosion_protection = 0.3899
 artefact_count = 1
 
-; bandit_scientific_dark_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![bandit_scientific_dark_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6987
@@ -214,7 +197,6 @@ wound_protection = 0.3081
 explosion_protection = 0.3221
 artefact_count = 2
 
-; bandit_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![bandit_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.7214
@@ -229,7 +211,6 @@ wound_protection = 0.2982
 explosion_protection = 0.3052
 artefact_count = 2
 
-; bandit_sun_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![bandit_sun_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.8853
@@ -244,7 +225,6 @@ wound_protection = 0.1974
 explosion_protection = 0.2271
 artefact_count = 1
 
-; banditmerc_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![banditmerc_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.6886
@@ -259,7 +239,6 @@ wound_protection = 0.1791
 explosion_protection = 0.1596
 artefact_count = 1
 
-; cs_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![cs_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2368
@@ -274,7 +253,6 @@ wound_protection = 0.6228
 explosion_protection = 0.6475
 artefact_count = 1
 
-; cs_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![cs_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3461
@@ -289,7 +267,6 @@ wound_protection = 0.6163
 explosion_protection = 0.5685
 artefact_count = 1
 
-; cs_heavy_outfit  [heavy] <- CoP cs_heavy_outfit (bone armor 0.30, hit_fraction 0.45)
 ![cs_heavy_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4174
@@ -304,7 +281,6 @@ wound_protection = 0.5402
 explosion_protection = 0.5481
 artefact_count = 1
 
-; cs_light_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![cs_light_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7747
@@ -319,7 +295,6 @@ wound_protection = 0.1471
 explosion_protection = 0.1272
 artefact_count = 1
 
-; cs_light_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![cs_light_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7408
@@ -334,7 +309,6 @@ wound_protection = 0.1491
 explosion_protection = 0.1327
 artefact_count = 1
 
-; cs_medium_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![cs_medium_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.719
@@ -349,7 +323,6 @@ wound_protection = 0.2408
 explosion_protection = 0.2799
 artefact_count = 1
 
-; cs_nbc_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![cs_nbc_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6732
@@ -364,7 +337,6 @@ wound_protection = 0.3003
 explosion_protection = 0.3184
 artefact_count = 3
 
-; cs_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![cs_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7937
@@ -379,7 +351,6 @@ wound_protection = 0.1331
 explosion_protection = 0.12
 artefact_count = 0
 
-; cs_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![cs_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6627
@@ -394,7 +365,6 @@ wound_protection = 0.3179
 explosion_protection = 0.3099
 artefact_count = 2
 
-; cs_scientific_outfit_good  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![cs_scientific_outfit_good]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6429
@@ -409,7 +379,6 @@ wound_protection = 0.3281
 explosion_protection = 0.3399
 artefact_count = 3
 
-; cs_stalker_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![cs_stalker_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7651
@@ -424,7 +393,6 @@ wound_protection = 0.2272
 explosion_protection = 0.2754
 artefact_count = 1
 
-; cs_stalker_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![cs_stalker_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3653
@@ -439,7 +407,6 @@ wound_protection = 0.5579
 explosion_protection = 0.5158
 artefact_count = 2
 
-; dolg_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![dolg_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2366
@@ -454,7 +421,6 @@ wound_protection = 0.6839
 explosion_protection = 0.7079
 artefact_count = 1
 
-; dolg_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![dolg_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.312
@@ -469,7 +435,6 @@ wound_protection = 0.7019
 explosion_protection = 0.6511
 artefact_count = 1
 
-; dolg_heavy_outfit  [heavy] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![dolg_heavy_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3062
@@ -484,7 +449,6 @@ wound_protection = 0.7176
 explosion_protection = 0.6796
 artefact_count = 0
 
-; dolg_heavy_proto_exo_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![dolg_heavy_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.2987
@@ -499,7 +463,6 @@ wound_protection = 0.7622
 explosion_protection = 0.6973
 artefact_count = 1
 
-; dolg_heavy_redline_outfit  [heavy] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![dolg_heavy_redline_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3053
@@ -514,7 +477,6 @@ wound_protection = 0.7419
 explosion_protection = 0.7267
 artefact_count = 1
 
-; dolg_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![dolg_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.1756
@@ -529,7 +491,6 @@ wound_protection = 0.9763
 explosion_protection = 0.9811
 artefact_count = 1
 
-; dolg_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![dolg_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7262
@@ -544,7 +505,6 @@ wound_protection = 0.1611
 explosion_protection = 0.1433
 artefact_count = 0
 
-; dolg_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![dolg_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.5923
@@ -559,7 +519,6 @@ wound_protection = 0.4252
 explosion_protection = 0.4629
 artefact_count = 1
 
-; dolg_pantsir_outfit  [heavy] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![dolg_pantsir_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3117
@@ -574,7 +533,6 @@ wound_protection = 0.7191
 explosion_protection = 0.6828
 artefact_count = 1
 
-; dolg_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![dolg_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3419
@@ -589,7 +547,6 @@ wound_protection = 0.6524
 explosion_protection = 0.6288
 artefact_count = 2
 
-; dolg_red_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![dolg_red_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.5134
@@ -604,7 +561,6 @@ wound_protection = 0.4831
 explosion_protection = 0.5045
 artefact_count = 1
 
-; dolg_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![dolg_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.5839
@@ -619,7 +575,6 @@ wound_protection = 0.3731
 explosion_protection = 0.374
 artefact_count = 2
 
-; dolg_scientific_red_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![dolg_scientific_red_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.5793
@@ -634,7 +589,6 @@ wound_protection = 0.3851
 explosion_protection = 0.3892
 artefact_count = 2
 
-; dolg_scientific_wood_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![dolg_scientific_wood_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6027
@@ -649,7 +603,6 @@ wound_protection = 0.3871
 explosion_protection = 0.4003
 artefact_count = 3
 
-; dolg_scout_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![dolg_scout_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6077
@@ -664,7 +617,6 @@ wound_protection = 0.3889
 explosion_protection = 0.4125
 artefact_count = 1
 
-; dolg_specops_red_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![dolg_specops_red_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3517
@@ -679,7 +631,6 @@ wound_protection = 0.709
 explosion_protection = 0.7317
 artefact_count = 1
 
-; dolg_voin_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![dolg_voin_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.5159
@@ -694,7 +645,6 @@ wound_protection = 0.5086
 explosion_protection = 0.5353
 artefact_count = 1
 
-; ecolog_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![ecolog_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2591
@@ -709,7 +659,6 @@ wound_protection = 0.634
 explosion_protection = 0.6357
 artefact_count = 1
 
-; ecolog_guard_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![ecolog_guard_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7127
@@ -724,7 +673,6 @@ wound_protection = 0.2478
 explosion_protection = 0.2977
 artefact_count = 2
 
-; ecolog_outfit_blue  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_blue]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6474
@@ -739,7 +687,6 @@ wound_protection = 0.3456
 explosion_protection = 0.3383
 artefact_count = 3
 
-; ecolog_outfit_green  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_green]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6505
@@ -754,7 +701,6 @@ wound_protection = 0.3313
 explosion_protection = 0.3516
 artefact_count = 3
 
-; ecolog_outfit_orange  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_orange]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6575
@@ -769,7 +715,6 @@ wound_protection = 0.3279
 explosion_protection = 0.3382
 artefact_count = 3
 
-; ecolog_outfit_red  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_red]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6479
@@ -784,7 +729,6 @@ wound_protection = 0.3484
 explosion_protection = 0.3471
 artefact_count = 3
 
-; ecolog_outfit_white  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_white]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6603
@@ -799,7 +743,6 @@ wound_protection = 0.3387
 explosion_protection = 0.3438
 artefact_count = 3
 
-; ecolog_outfit_yello  [ssp] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![ecolog_outfit_yello]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6493
@@ -814,7 +757,6 @@ wound_protection = 0.3274
 explosion_protection = 0.3496
 artefact_count = 3
 
-; ecolog_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![ecolog_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3551
@@ -829,7 +771,6 @@ wound_protection = 0.5854
 explosion_protection = 0.553
 artefact_count = 2
 
-; exo_dolg_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_dolg_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3306
@@ -844,7 +785,6 @@ wound_protection = 0.669
 explosion_protection = 0.6244
 artefact_count = 1
 
-; exo_dolg_red_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_dolg_red_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3096
@@ -859,7 +799,6 @@ wound_protection = 0.7174
 explosion_protection = 0.6695
 artefact_count = 1
 
-; exo_dolg_urban_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_dolg_urban_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3057
@@ -874,7 +813,6 @@ wound_protection = 0.7144
 explosion_protection = 0.6795
 artefact_count = 1
 
-; exo_dolg_wood_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_dolg_wood_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3164
@@ -889,7 +827,6 @@ wound_protection = 0.7302
 explosion_protection = 0.6624
 artefact_count = 1
 
-; exo_merc_grass_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_merc_grass_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3331
@@ -904,7 +841,6 @@ wound_protection = 0.6804
 explosion_protection = 0.6096
 artefact_count = 1
 
-; exo_merc_urban_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_merc_urban_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3236
@@ -919,7 +855,6 @@ wound_protection = 0.6708
 explosion_protection = 0.6494
 artefact_count = 1
 
-; exo_merc_wood_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_merc_wood_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3216
@@ -934,7 +869,6 @@ wound_protection = 0.6925
 explosion_protection = 0.641
 artefact_count = 1
 
-; exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2628
@@ -949,7 +883,6 @@ wound_protection = 0.6252
 explosion_protection = 0.6257
 artefact_count = 1
 
-; exo_wood_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exo_wood_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3409
@@ -964,7 +897,6 @@ wound_protection = 0.6582
 explosion_protection = 0.5937
 artefact_count = 1
 
-; exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3592
@@ -979,7 +911,6 @@ wound_protection = 0.6127
 explosion_protection = 0.5721
 artefact_count = 1
 
-; freedom_exo_vineleaf_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![freedom_exo_vineleaf_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3856
@@ -994,7 +925,6 @@ wound_protection = 0.5394
 explosion_protection = 0.5291
 artefact_count = 1
 
-; freedom_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![freedom_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2222
@@ -1009,7 +939,6 @@ wound_protection = 0.7705
 explosion_protection = 0.7494
 artefact_count = 1
 
-; ghillie_outfit  [explorer] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)
 ![ghillie_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.5516
@@ -1024,7 +953,6 @@ wound_protection = 0.3838
 explosion_protection = 0.3783
 artefact_count = 3
 
-; greh_armored_camo_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![greh_armored_camo_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6868
@@ -1039,7 +967,6 @@ wound_protection = 0.2727
 explosion_protection = 0.334
 artefact_count = 1
 
-; greh_armored_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![greh_armored_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7374
@@ -1054,7 +981,6 @@ wound_protection = 0.2635
 explosion_protection = 0.3075
 artefact_count = 1
 
-; greh_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![greh_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2692
@@ -1069,7 +995,6 @@ wound_protection = 0.6173
 explosion_protection = 0.6346
 artefact_count = 1
 
-; greh_ps5_outfit  [medium] <- CoP dolg_outfit (bone armor 0.15, hit_fraction 0.60)
 ![greh_ps5_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6218
@@ -1084,7 +1009,6 @@ wound_protection = 0.3995
 explosion_protection = 0.42
 artefact_count = 1
 
-; greh_trenchcoat_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![greh_trenchcoat_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.808
@@ -1099,7 +1023,6 @@ wound_protection = 0.2204
 explosion_protection = 0.265
 artefact_count = 1
 
-; hybrid_outfit  [sci_combat] <- CoP scientific_outfit (bone armor 0.30, hit_fraction 0.50)  | closed suit, helmet: helm_protective
 ![hybrid_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4741
@@ -1114,7 +1037,6 @@ wound_protection = 0.3575
 explosion_protection = 0.364
 artefact_count = 3
 
-; isg_camo_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![isg_camo_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6552
@@ -1129,7 +1051,6 @@ wound_protection = 0.262
 explosion_protection = 0.3195
 artefact_count = 2
 
-; isg_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![isg_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2331
@@ -1144,7 +1065,6 @@ wound_protection = 0.6803
 explosion_protection = 0.6834
 artefact_count = 1
 
-; isg_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![isg_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3136
@@ -1159,7 +1079,6 @@ wound_protection = 0.6505
 explosion_protection = 0.6066
 artefact_count = 1
 
-; isg_lcs_camo_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![isg_lcs_camo_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6842
@@ -1174,7 +1093,6 @@ wound_protection = 0.2457
 explosion_protection = 0.2955
 artefact_count = 2
 
-; isg_lcs_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![isg_lcs_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7203
@@ -1189,7 +1107,6 @@ wound_protection = 0.2528
 explosion_protection = 0.2982
 artefact_count = 1
 
-; isg_lcs_urban_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![isg_lcs_urban_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6914
@@ -1204,7 +1121,6 @@ wound_protection = 0.2633
 explosion_protection = 0.3155
 artefact_count = 1
 
-; isg_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![isg_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.1821
@@ -1219,7 +1135,6 @@ wound_protection = 0.8659
 explosion_protection = 0.8752
 artefact_count = 1
 
-; isg_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![isg_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6891
@@ -1234,7 +1149,6 @@ wound_protection = 0.2607
 explosion_protection = 0.3061
 artefact_count = 1
 
-; isg_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![isg_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3515
@@ -1249,7 +1163,6 @@ wound_protection = 0.5983
 explosion_protection = 0.5578
 artefact_count = 2
 
-; isg_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![isg_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6173
@@ -1264,7 +1177,6 @@ wound_protection = 0.3435
 explosion_protection = 0.355
 artefact_count = 2
 
-; light_dolg_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_dolg_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4003
@@ -1279,7 +1191,6 @@ wound_protection = 0.5511
 explosion_protection = 0.5742
 artefact_count = 0
 
-; light_freedom_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_freedom_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4648
@@ -1294,7 +1205,6 @@ wound_protection = 0.4438
 explosion_protection = 0.4568
 artefact_count = 0
 
-; light_isg_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_isg_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3858
@@ -1309,7 +1219,6 @@ wound_protection = 0.556
 explosion_protection = 0.5506
 artefact_count = 1
 
-; light_loner_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_loner_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4347
@@ -1324,7 +1233,6 @@ wound_protection = 0.4845
 explosion_protection = 0.4923
 artefact_count = 0
 
-; light_merc_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_merc_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4118
@@ -1339,7 +1247,6 @@ wound_protection = 0.5435
 explosion_protection = 0.5387
 artefact_count = 0
 
-; light_monolit_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_monolit_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4343
@@ -1354,7 +1261,6 @@ wound_protection = 0.5077
 explosion_protection = 0.5213
 artefact_count = 1
 
-; light_voen_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![light_voen_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4158
@@ -1369,7 +1275,6 @@ wound_protection = 0.5324
 explosion_protection = 0.6309
 artefact_count = 0
 
-; merc_ace_outfit  [sci_combat] <- CoP scientific_outfit (bone armor 0.30, hit_fraction 0.50)  | closed suit, helmet: helm_protective
 ![merc_ace_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4455
@@ -1384,7 +1289,6 @@ wound_protection = 0.406
 explosion_protection = 0.4098
 artefact_count = 3
 
-; merc_combat_scientific_outfit  [sci_combat] <- CoP scientific_outfit (bone armor 0.30, hit_fraction 0.50)  | closed suit, helmet: helm_protective
 ![merc_combat_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.464
@@ -1399,7 +1303,6 @@ wound_protection = 0.3742
 explosion_protection = 0.375
 artefact_count = 2
 
-; merc_coyote_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_coyote_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6965
@@ -1414,7 +1317,6 @@ wound_protection = 0.2774
 explosion_protection = 0.3092
 artefact_count = 2
 
-; merc_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![merc_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2291
@@ -1429,7 +1331,6 @@ wound_protection = 0.7263
 explosion_protection = 0.6927
 artefact_count = 1
 
-; merc_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![merc_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3296
@@ -1444,7 +1345,6 @@ wound_protection = 0.6599
 explosion_protection = 0.6402
 artefact_count = 1
 
-; merc_fighter_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![merc_fighter_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.6492
@@ -1459,7 +1359,6 @@ wound_protection = 0.1944
 explosion_protection = 0.1746
 artefact_count = 1
 
-; merc_jackal_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_jackal_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7022
@@ -1474,7 +1373,6 @@ wound_protection = 0.2542
 explosion_protection = 0.2924
 artefact_count = 2
 
-; merc_nighthunter_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![merc_nighthunter_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.361
@@ -1489,7 +1387,6 @@ wound_protection = 0.6624
 explosion_protection = 0.6609
 artefact_count = 0
 
-; merc_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![merc_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.178
@@ -1504,7 +1401,6 @@ wound_protection = 0.928
 explosion_protection = 0.9011
 artefact_count = 1
 
-; merc_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7551
@@ -1519,7 +1415,6 @@ wound_protection = 0.2541
 explosion_protection = 0.2889
 artefact_count = 1
 
-; merc_scientific_armored_outfit  [sci_combat] <- CoP scientific_outfit (bone armor 0.30, hit_fraction 0.50)  | closed suit, helmet: helm_protective
 ![merc_scientific_armored_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4394
@@ -1534,7 +1429,6 @@ wound_protection = 0.4126
 explosion_protection = 0.4235
 artefact_count = 2
 
-; merc_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![merc_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6118
@@ -1549,7 +1443,6 @@ wound_protection = 0.3645
 explosion_protection = 0.3584
 artefact_count = 2
 
-; merc_scout_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![merc_scout_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7249
@@ -1564,7 +1457,6 @@ wound_protection = 0.1668
 explosion_protection = 0.1424
 artefact_count = 0
 
-; merc_sun_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_sun_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7479
@@ -1579,7 +1471,6 @@ wound_protection = 0.2394
 explosion_protection = 0.2845
 artefact_count = 2
 
-; merc_sunset_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_sunset_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7192
@@ -1594,7 +1485,6 @@ wound_protection = 0.2466
 explosion_protection = 0.2898
 artefact_count = 1
 
-; merc_wolven_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![merc_wolven_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.666
@@ -1609,7 +1499,6 @@ wound_protection = 0.2752
 explosion_protection = 0.3187
 artefact_count = 2
 
-; military_bandit_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_bandit_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4083
@@ -1624,7 +1513,6 @@ wound_protection = 0.5222
 explosion_protection = 0.553
 artefact_count = 0
 
-; military_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![military_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2352
@@ -1639,7 +1527,6 @@ wound_protection = 0.6726
 explosion_protection = 0.7835
 artefact_count = 1
 
-; military_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![military_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3368
@@ -1654,7 +1541,6 @@ wound_protection = 0.6388
 explosion_protection = 0.6964
 artefact_count = 1
 
-; military_freedom_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_freedom_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4021
@@ -1669,7 +1555,6 @@ wound_protection = 0.5437
 explosion_protection = 0.5513
 artefact_count = 0
 
-; military_merc_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_merc_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3689
@@ -1684,7 +1569,6 @@ wound_protection = 0.6555
 explosion_protection = 0.6528
 artefact_count = 0
 
-; military_monolit_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_monolit_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.371
@@ -1699,7 +1583,6 @@ wound_protection = 0.5848
 explosion_protection = 0.6098
 artefact_count = 0
 
-; military_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3821
@@ -1714,7 +1597,6 @@ wound_protection = 0.6126
 explosion_protection = 0.7278
 artefact_count = 0
 
-; military_proto_exo_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![military_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3354
@@ -1729,7 +1611,6 @@ wound_protection = 0.6389
 explosion_protection = 0.66
 artefact_count = 1
 
-; military_sky_outfit  [heavy] <- CoP military_outfit (bone armor 0.60, hit_fraction 0.40)
 ![military_sky_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.384
@@ -1744,7 +1625,6 @@ wound_protection = 0.573
 explosion_protection = 0.593
 artefact_count = 1
 
-; monolith_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![monolith_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2338
@@ -1759,7 +1639,6 @@ wound_protection = 0.6822
 explosion_protection = 0.6775
 artefact_count = 1
 
-; monolith_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![monolith_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3359
@@ -1774,7 +1653,6 @@ wound_protection = 0.6329
 explosion_protection = 0.606
 artefact_count = 1
 
-; monolith_nbc_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![monolith_nbc_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6451
@@ -1789,7 +1667,6 @@ wound_protection = 0.3157
 explosion_protection = 0.3357
 artefact_count = 3
 
-; monolith_nosorog_outfit  [nosorog] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.20)  | closed suit, helmet: helm_spartan
 ![monolith_nosorog_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.1945
@@ -1804,7 +1681,6 @@ wound_protection = 0.8301
 explosion_protection = 0.8796
 artefact_count = 1
 
-; monolith_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![monolith_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7265
@@ -1819,7 +1695,6 @@ wound_protection = 0.2504
 explosion_protection = 0.2881
 artefact_count = 2
 
-; monolith_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![monolith_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3694
@@ -1834,7 +1709,6 @@ wound_protection = 0.5663
 explosion_protection = 0.5581
 artefact_count = 2
 
-; monolith_scientific_light_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![monolith_scientific_light_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6078
@@ -1849,7 +1723,6 @@ wound_protection = 0.3476
 explosion_protection = 0.3537
 artefact_count = 3
 
-; monolith_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![monolith_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6383
@@ -1864,7 +1737,6 @@ wound_protection = 0.3416
 explosion_protection = 0.3398
 artefact_count = 2
 
-; monolith_trenchcoat_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![monolith_trenchcoat_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.779
@@ -1879,7 +1751,6 @@ wound_protection = 0.2237
 explosion_protection = 0.2627
 artefact_count = 2
 
-; nbc_dolg_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![nbc_dolg_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6408
@@ -1894,7 +1765,6 @@ wound_protection = 0.3693
 explosion_protection = 0.3748
 artefact_count = 2
 
-; nbc_freedom_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![nbc_freedom_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6985
@@ -1909,7 +1779,6 @@ wound_protection = 0.3004
 explosion_protection = 0.2977
 artefact_count = 2
 
-; nbc_merc_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![nbc_merc_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6489
@@ -1924,7 +1793,6 @@ wound_protection = 0.3365
 explosion_protection = 0.3363
 artefact_count = 2
 
-; nbc_outfit  [nbc] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_m50
 ![nbc_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.7113
@@ -1939,7 +1807,6 @@ wound_protection = 0.3211
 explosion_protection = 0.3324
 artefact_count = 2
 
-; nomad_outfit  [explorer] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)
 ![nomad_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6194
@@ -1954,7 +1821,6 @@ wound_protection = 0.3186
 explosion_protection = 0.3407
 artefact_count = 3
 
-; novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.8504
@@ -1969,7 +1835,6 @@ wound_protection = 0.1367
 explosion_protection = 0.1233
 artefact_count = 0
 
-; novice_outfit_camo  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![novice_outfit_camo]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.8354
@@ -1984,7 +1849,6 @@ wound_protection = 0.1429
 explosion_protection = 0.1272
 artefact_count = 0
 
-; novice_outfit_tourist  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![novice_outfit_tourist]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7604
@@ -1999,7 +1863,6 @@ wound_protection = 0.1532
 explosion_protection = 0.1385
 artefact_count = 1
 
-; redline_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![redline_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7028
@@ -2014,7 +1877,6 @@ wound_protection = 0.1799
 explosion_protection = 0.1551
 artefact_count = 0
 
-; renegade_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![renegade_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2662
@@ -2029,7 +1891,6 @@ wound_protection = 0.6082
 explosion_protection = 0.6126
 artefact_count = 1
 
-; renegade_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![renegade_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.7128
@@ -2044,7 +1905,6 @@ wound_protection = 0.3079
 explosion_protection = 0.3163
 artefact_count = 2
 
-; renegademerc_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![renegademerc_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.8568
@@ -2059,7 +1919,6 @@ wound_protection = 0.2196
 explosion_protection = 0.2611
 artefact_count = 1
 
-; scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6878
@@ -2074,7 +1933,6 @@ wound_protection = 0.3059
 explosion_protection = 0.3118
 artefact_count = 2
 
-; specops_bandit_outfit  [medium] <- CoP specops_outfit (bone armor 0.30, hit_fraction 0.50)
 ![specops_bandit_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.5372
@@ -2089,7 +1947,6 @@ wound_protection = 0.4627
 explosion_protection = 0.4809
 artefact_count = 1
 
-; specops_dolg_outfit  [medium] <- CoP specops_outfit (bone armor 0.30, hit_fraction 0.50)
 ![specops_dolg_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.434
@@ -2104,7 +1961,6 @@ wound_protection = 0.5968
 explosion_protection = 0.6238
 artefact_count = 1
 
-; specops_merc_outfit  [medium] <- CoP specops_outfit (bone armor 0.30, hit_fraction 0.50)
 ![specops_merc_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4439
@@ -2119,7 +1975,6 @@ wound_protection = 0.5477
 explosion_protection = 0.5469
 artefact_count = 1
 
-; specops_outfit  [medium] <- CoP specops_outfit (bone armor 0.30, hit_fraction 0.50)
 ![specops_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4759
@@ -2134,7 +1989,6 @@ wound_protection = 0.5399
 explosion_protection = 0.6231
 artefact_count = 1
 
-; stalker_autumn_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_autumn_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7431
@@ -2149,7 +2003,6 @@ wound_protection = 0.2354
 explosion_protection = 0.282
 artefact_count = 1
 
-; stalker_bear_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_bear_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7987
@@ -2164,7 +2017,6 @@ wound_protection = 0.2284
 explosion_protection = 0.2667
 artefact_count = 1
 
-; stalker_drought_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_drought_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.706
@@ -2179,7 +2031,6 @@ wound_protection = 0.2528
 explosion_protection = 0.2992
 artefact_count = 2
 
-; stalker_graphite_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_graphite_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.8
@@ -2194,7 +2045,6 @@ wound_protection = 0.2333
 explosion_protection = 0.2763
 artefact_count = 1
 
-; stalker_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7823
@@ -2209,7 +2059,6 @@ wound_protection = 0.2266
 explosion_protection = 0.2672
 artefact_count = 1
 
-; stalker_predator_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![stalker_predator_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7131
@@ -2224,7 +2073,6 @@ wound_protection = 0.1738
 explosion_protection = 0.1576
 artefact_count = 1
 
-; stalker_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![stalker_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3799
@@ -2239,7 +2087,6 @@ wound_protection = 0.5697
 explosion_protection = 0.5564
 artefact_count = 1
 
-; stalker_salamander_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_salamander_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7753
@@ -2254,7 +2101,6 @@ wound_protection = 0.2405
 explosion_protection = 0.2901
 artefact_count = 1
 
-; stalker_tigerstripe_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![stalker_tigerstripe_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7803
@@ -2269,7 +2115,6 @@ wound_protection = 0.228
 explosion_protection = 0.2811
 artefact_count = 1
 
-; svoboda_exo_outfit  [exo] <- CoP exo_outfit (bone armor 0.65, hit_fraction 0.25)  | closed suit, helmet: helm_exo
 ![svoboda_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_044_h00
 hit_fraction_actor = 0.2567
@@ -2284,7 +2129,6 @@ wound_protection = 0.5952
 explosion_protection = 0.6086
 artefact_count = 1
 
-; svoboda_exolight_outfit  [exolight] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)  | closed suit, helmet: helm_battle
 ![svoboda_exolight_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.3606
@@ -2299,7 +2143,6 @@ wound_protection = 0.5667
 explosion_protection = 0.5511
 artefact_count = 1
 
-; svoboda_heavy_outfit  [medium] <- CoP svoboda_heavy_outfit (bone armor 0.30, hit_fraction 0.50)
 ![svoboda_heavy_outfit]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4864
@@ -2314,7 +2157,6 @@ wound_protection = 0.47
 explosion_protection = 0.4916
 artefact_count = 2
 
-; svoboda_heavy_outfit_2  [medium] <- CoP svoboda_heavy_outfit (bone armor 0.30, hit_fraction 0.50)
 ![svoboda_heavy_outfit_2]
 bones_koeff_protection = actor_armor_rzc_021_h00
 hit_fraction_actor = 0.4749
@@ -2329,7 +2171,6 @@ wound_protection = 0.4938
 explosion_protection = 0.5277
 artefact_count = 1
 
-; svoboda_light_outfit  [medium] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)
 ![svoboda_light_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6675
@@ -2344,7 +2185,6 @@ wound_protection = 0.2848
 explosion_protection = 0.2952
 artefact_count = 1
 
-; svoboda_light_proto_exo_outfit  [proto] <- CoP dolg_heavy_outfit (bone armor 0.60, hit_fraction 0.35)
 ![svoboda_light_proto_exo_outfit]
 bones_koeff_protection = actor_armor_rzc_040_h00
 hit_fraction_actor = 0.4017
@@ -2359,7 +2199,6 @@ wound_protection = 0.5129
 explosion_protection = 0.4803
 artefact_count = 2
 
-; svoboda_novice_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![svoboda_novice_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.8521
@@ -2374,7 +2213,6 @@ wound_protection = 0.128
 explosion_protection = 0.1146
 artefact_count = 0
 
-; svoboda_scientific_outfit  [sci] <- CoP scientific_outfit (bone armor 0.15, hit_fraction 0.65)  | closed suit, helmet: helm_protective
 ![svoboda_scientific_outfit]
 bones_koeff_protection = actor_armor_rzc_018_h00
 hit_fraction_actor = 0.6913
@@ -2389,7 +2227,6 @@ wound_protection = 0.3213
 explosion_protection = 0.3275
 artefact_count = 2
 
-; travel_outfit  [explorer] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)
 ![travel_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.6178
@@ -2404,7 +2241,6 @@ wound_protection = 0.3323
 explosion_protection = 0.3415
 artefact_count = 5
 
-; trenchcoat_brown_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![trenchcoat_brown_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7815
@@ -2419,7 +2255,6 @@ wound_protection = 0.2283
 explosion_protection = 0.2713
 artefact_count = 1
 
-; trenchcoat_dolg_brown_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![trenchcoat_dolg_brown_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7067
@@ -2434,7 +2269,6 @@ wound_protection = 0.2473
 explosion_protection = 0.3023
 artefact_count = 1
 
-; trenchcoat_freedom_brown_outfit  [medium] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)
 ![trenchcoat_freedom_brown_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7085
@@ -2449,7 +2283,6 @@ wound_protection = 0.287
 explosion_protection = 0.2908
 artefact_count = 1
 
-; trenchcoat_green_outfit  [medium] <- CoP stalker_outfit (bone armor 0.10, hit_fraction 0.75)
 ![trenchcoat_green_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.7824
@@ -2464,7 +2297,6 @@ wound_protection = 0.2321
 explosion_protection = 0.2758
 artefact_count = 1
 
-; trenchcoat_outfit  [light] <- CoP novice_outfit (bone armor 0.05, hit_fraction 0.75)
 ![trenchcoat_outfit]
 bones_koeff_protection = actor_armor_rzc_007_h00
 hit_fraction_actor = 0.7639
@@ -2479,7 +2311,6 @@ wound_protection = 0.1519
 explosion_protection = 0.1387
 artefact_count = 0
 
-; wastelander_outfit  [explorer] <- CoP svoboda_light_outfit (bone armor 0.10, hit_fraction 0.60)  | closed suit, helmet: helm_m40
 ![wastelander_outfit]
 bones_koeff_protection = actor_armor_rzc_010_h00
 hit_fraction_actor = 0.5949

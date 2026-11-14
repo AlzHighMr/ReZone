@@ -1,7 +1,7 @@
 local PATH = "rezone/rz_other/rz_pda/"
 local FILES = {
 	["ui\\map_spots.xml"] = true, ["ui\\map_spots_16.xml"] = true,
-	["ui\\map_spots_relations.xml"] = true,	-- tady je deadbody_mini_spot ve vanille
+	["ui\\map_spots_relations.xml"] = true,
 }
 
 local function get(key, def)
@@ -13,10 +13,6 @@ end
 
 local function show_corpses() return get("corpses", true) ~= false end
 
-------------------------------------------------------------
--- Trvale tecky mrtvol: kazda postava i mutant, ktery zemre v okoli, dostane tecku na minimape
--- (bez ohledu na dosah PDA). Zmizi, az mrtvolu prohledas. Spot "deadbody_location" je ukladany.
-------------------------------------------------------------
 local SPOT = "deadbody_location"
 
 local function keep_dots() return show_corpses() and get("corpses_keep", false) == true end
@@ -32,7 +28,7 @@ end
 local function remove_dot(obj)
 	if not obj then return end
 	local id = obj:id()
-	-- engine nekdy odebere jen jednu ze dvou vrstev spotu -> mazat, dokud tam je
+
 	for _ = 1, 3 do
 		if level.map_has_object_spot(id, SPOT) == 0 then break end
 		level.map_remove_object_spot(id, SPOT)
@@ -53,8 +49,8 @@ function on_xml_read()
 		for _, el in ipairs(res or {}) do
 			xml_obj:setElementAttr(el, { width = 0, height = 0 })
 		end
-		if rezone_core and rezone_core.DEBUG then
-			printf("[ReZone PDA] mrtvoly na minimape skryty (%s, %d)", xml_file_name, res and #res or 0)
+		if rezone_core and rezone_core.debug_on() then
+			rezone_core.dbg("[ReZone PDA] mrtvoly na minimape skryty (%s, %d)", xml_file_name, res and #res or 0)
 		end
 	end)
 end

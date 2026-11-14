@@ -6,17 +6,15 @@ local function cfg_on()
 	return c and c:r_value(CFG, KEY, 1) == true
 end
 
--- je rezim zapnuty v teto hre?
 function enabled()
 	local ok, m = pcall(alife_storage_manager.get_state)
 	if ok and m then
 		if m.rz_gamma_mode then return true end
 		if m.rz_gamma_checked then return false end
 	end
-	return cfg_on()		-- prave zalozena hra: klic jeste nebyl presunut do savu
+	return cfg_on()
 end
 
--------------------------------------------------------------------- menu Nova hra
 function patch_ui()
 	local cls = ui_mm_faction_select and ui_mm_faction_select.UINewGame
 	if not cls or cls.__rz_gamma then return end
@@ -28,8 +26,8 @@ function patch_ui()
 		if not (self.templ_options or self.dialog) then return end
 		local ck = modxml_rezone_newgame and modxml_rezone_newgame.init_option(self, "rz_gamma")
 		if not ck then return end
-		ck:SetCheck(false)		-- vychozi vypnuto
-		-- vysvetleni pri najeti mysi (vanilla Update: st_mm_ck_rz_gamma_desc)
+		ck:SetCheck(false)
+
 		if self.ck_states then self.ck_states["ck_rz_gamma"] = false end
 	end
 
@@ -43,7 +41,6 @@ function patch_ui()
 	end
 end
 
--------------------------------------------------------------------- skryse
 local function patch_stashes()
 	local tm = treasure_manager
 	if not tm or tm.__rz_gamma then return end
@@ -53,19 +50,17 @@ local function patch_stashes()
 	tm.create_random_stash = function(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
 		if no_spot == true and hint == "stash" and bonus_items == nil and spawn_local == nil and inv_box == nil
 			and enabled() then
-			return		-- prvni plneni beden na zacatku hry: v GAMMA rezimu nic
+			return
 		end
 		return base_create(no_spot, hint, bonus_items, spawn_local, inv_box, ...)
 	end
 end
 
--------------------------------------------------------------------- hra
--- volba z menu plati jen pro prave zalozenou hru (save bez znacky rz_gamma_checked)
 local function on_game_load()
 	local ok, m = pcall(alife_storage_manager.get_state)
 	if not (ok and m) or m.rz_gamma_checked then return end
 	if cfg_on() then m.rz_gamma_mode = true end
-	-- klic se smaze az po prvni aktualizaci (treasure_manager ho muze cist ve stejnem on_game_load)
+
 end
 
 local function actor_on_first_update()

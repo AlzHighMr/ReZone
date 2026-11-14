@@ -5,8 +5,8 @@ TABS_LIST = "rezone_craft_tabs"
 local OPT = rezone_mcm.path("rz_craft") .. "/"
 local defaults = { remove_recipe = true, keep_known = false, keep_open = true }
 
-local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy
-	if rezone_core and rezone_core.DEBUG then printf("[ReZone Crafting] " .. fmt, ...) end
+local function log(fmt, ...)
+	if rezone_core then rezone_core.dbg("[ReZone Crafting] " .. fmt, ...) end
 end
 
 local function opt(key)
@@ -17,8 +17,7 @@ local function opt(key)
 	return defaults[key]
 end
 
--- ---------------------------------------------------------------- zalozky
-local injected_into = nil		-- ini_craft, do ktereho uz jsme zalozky pridali
+local injected_into = nil
 
 local function tab_order(src)
 	local list = {}
@@ -70,7 +69,6 @@ function inject_tabs()
 	log("pridano %d zalozek (%d-%d)", n - first, first, n - 1)
 end
 
--- ---------------------------------------------------------------- recepty
 local patched = false
 local function patch_recipe()
 	if patched or not (item_recipe and item_recipe.func_recipe) then return end
@@ -93,9 +91,8 @@ local function patch_recipe()
 	end
 end
 
--- ---------------------------------------------------------------- clanek Zname recepty
 ARTICLE = "encyclopedia__notes__rz_known_recipes"
--- recepty, ktere vanilla dilna umi od zacatku (ui_workshop: recipes_items)
+
 DEFAULT_NOTES = { recipe_basic_0 = true, recipe_advanced_0 = true, recipe_expert_0 = true, recipe_drug_0 = true, recipe_ammo_0 = true }
 
 local function note_known(note)
@@ -146,7 +143,7 @@ function build_known_recipes()
 				for _, r in ipairs(learned) do out[#out + 1] = "\\n" .. r.s end
 			end
 			if #basic > 0 then
-				-- zakladnich receptu jsou stovky (Ukryt, Zasobniky): jen nazvy, suroviny ukaze dilna
+
 				local names = {}
 				for _, r in ipairs(basic) do names[#names + 1] = r.n end
 				out[#out + 1] = "\\n" .. green .. game.translate_string("st_rz_crafting_basic") .. " " .. gray .. table.concat(names, ", ")
@@ -182,8 +179,6 @@ local function patch_encyclopedia()
 	end
 end
 
--- ---------------------------------------------------------------- Craft use in tooltip
--- vysledek: { [sekce_vysledku] = true } pro recepty, kde je predmet surovinou, nebo ktere odemyka (recept)
 local tooltip_cache = {}
 
 function craftable_from(item_sec)
@@ -228,12 +223,8 @@ local function patch_tooltip()
 	log("Craft use in tooltip: recepty z vanilla dilny vcetne novych zalozek")
 end
 
--- ---------------------------------------------------------------- okna zustanou otevrena
--- Vanilla po kazde akci zavre okno: dilna (vyroba / oprava / vylepseni), vareni, opravarenske sady.
--- Behem akce se tu zavirani preskoci (i kdyz ho jiny mod vola pres owner:Close) a po chvilce,
--- az se spotrebovane predmety opravdu smazou, se okno obnovi se stejnym vyberem.
 local KEEP_DELAY = 0.15
-local holding = false		-- prave probiha akce -> zadne zavirani
+local holding = false
 local keep_patched = false
 
 local function block_close(cls, name)
@@ -243,14 +234,13 @@ local function block_close(cls, name)
 		if holding then return end
 		return orig(self, ...)
 	end
-	return orig		-- puvodni zavreni (pro pripad, ze obnova neni mozna)
+	return orig
 end
 
 local function obj_alive(id)
 	return id and level.object_by_id(id) ~= nil
 end
 
--- akce: provest, okno nechat, pak obnovit; refresh(self) vraci false = zavrit
 local function keep_open(cls, action, refresh, close_fn, tag)
 	local orig = cls and cls[action]
 	if type(orig) ~= "function" then return end
@@ -260,13 +250,13 @@ local function keep_open(cls, action, refresh, close_fn, tag)
 		local ok, err = pcall(orig, self, ...)
 		holding = false
 		if not ok then
-			printf("! [ReZone Crafting] %s: %s", tag, tostring(err))
+			rezone_core.dbg("! [ReZone Crafting] %s: %s", tag, tostring(err))
 			return
 		end
 		CreateTimeEvent("rz_keep_open", tag, KEEP_DELAY, function()
 			if not (self and self.IsShown and self:IsShown()) then return true end
 			local ok2, keep = pcall(refresh, self)
-			if not ok2 then printf("! [ReZone Crafting] obnova %s: %s", tag, tostring(keep)) end
+			if not ok2 then rezone_core.dbg("! [ReZone Crafting] obnova %s: %s", tag, tostring(keep)) end
 			if (not ok2) or keep == false then
 				if close_fn then pcall(close_fn, self) end
 			end
@@ -290,7 +280,7 @@ local function patch_keep_open()
 	local W = ui_workshop
 	if W and W.UIWorkshop then
 		block_close(W.UIWorkshop, "Close")
-		-- vyroba: znovu vypsat recepty zalozky a vybrat stejny
+
 		local C = W.UIWorkshopCraft
 		local c_close = block_close(C, "Close")
 		remember_selection(C, "__rz_idx", "list")
@@ -301,7 +291,7 @@ local function patch_keep_open()
 				self:On_CC_Mouse1("list", self.__rz_idx)
 			end
 		end, c_close, "craft")
-		-- oprava a vylepseni: znovu nacist inventar
+
 		local R = W.UIWorkshopRepair
 		local r_close = block_close(R, "Close")
 		keep_open(R, "Repair", function(self) self:Reset() end, r_close, "ws_repair")
@@ -310,7 +300,6 @@ local function patch_keep_open()
 		keep_open(U, "Upgrade", function(self) self:Reset() end, u_close, "ws_upgrade")
 	end
 
-	-- vareni
 	local K = item_cooking and item_cooking.UICook
 	if K then
 		local k_close = block_close(K, "Close")
@@ -321,7 +310,7 @@ local function patch_keep_open()
 			return orig_cook(self, ...)
 		end
 		keep_open(K, "OnCook", function(self)
-			if self.cooking_limited and not obj_alive(self.__rz_kit) then return false end	-- varic dosel
+			if self.cooking_limited and not obj_alive(self.__rz_kit) then return false end
 			self.obj = level.object_by_id(self.__rz_kit) or self.obj
 			empty_table(self.objs)
 			self:Load_ActorItems()
@@ -335,7 +324,6 @@ local function patch_keep_open()
 		end, k_close, "cook")
 	end
 
-	-- opravarenske sady (sici sada, sada na zbrane...)
 	local P = item_repair and item_repair.UIRepair
 	if P then
 		local p_close = block_close(P, "OnCancel")
@@ -345,7 +333,7 @@ local function patch_keep_open()
 			return orig_rep(self, ...)
 		end
 		keep_open(P, "OnRepair", function(self)
-			if not obj_alive(self.__rz_kit) then return false end	-- sada dosla
+			if not obj_alive(self.__rz_kit) then return false end
 			self.obj = level.object_by_id(self.__rz_kit)
 			self.con_val = {}
 			self.CC[2]:Reset()

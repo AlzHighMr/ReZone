@@ -9,7 +9,7 @@ local function patch()
 			local where = debug and debug.traceback and debug.traceback("", 2) or "?"
 			if not reported[where] then
 				reported[where] = true
-				printf("! [ReZone] random_key_table dostal %s misto tabulky - preskoceno. Volal:%s", type(t), where)
+				rezone_core.dbg("! [ReZone] random_key_table dostal %s misto tabulky - preskoceno. Volal:%s", type(t), where)
 			end
 			return nil
 		end
@@ -17,8 +17,6 @@ local function patch()
 	end
 end
 
--- Vareni: pred uvarenim znovu nacist predmety z inventare (seznam z otevreni okna muze byt zastaraly
--- - napr. palivo mezitim spotrebovane / presunute jinym modem). Pak uz OnCook nedostane nil.
 local function patch_cooking()
 	local C = item_cooking and item_cooking.UICook
 	if not (C and C.OnCook and C.Load_ActorItems) or item_cooking.__rz_cook_patched then return end

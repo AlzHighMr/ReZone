@@ -1,0 +1,162 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition                            = trade_generic_buy
+buy_item_condition_factor                = 0.80
+buy_item_exponent = 2.5
+sell_item_exponent = 1.1
+buy_supplies                             = supplies_generic
+price_profile                            = default
+sell_condition                           = trade_generic_sell
+discounts = discount_supplier
+
+[trade_generic_buy]:trasher
+
+[trade_generic_sell]:trasher
+itm_pda_common
+itm_pda_rare
+itm_pda_uncommon
+
+[supplies_generic]
+bandage                   = 10, 1
+medkit                    = 3,  0.8
+medkit_army               = 3,  0.4
+antirad                   = 3,  0.6
+
+light_repair_kit          = 1, 0.50
+medium_repair_kit         = 1, 0.40
+leatherman_tool           = 1, 0.70
+
+guitar_a                  = 1, 0.6
+harmonica_a               = 2, 0.6
+detector_simple           = 1, 0.50
+
+broken_detector           = 1, 0.9
+af_camelbak               = 1, 0.7
+
+itm_sleepbag              = 1, 0.60
+itm_actor_backpack        = 3, 1
+itm_backpack              = 2, 1
+box_matches               = 5, 0.80
+
+bread                     = 6, 0.6
+kolbasa                   = 6, 0.6
+conserva                  = 3, 0.6
+energy_drink              = 3, 0.6
+
+ammo_9x18_fmj             = 5, 0.50
+ammo_9x18_pmm             = 5, 0.50
+ammo_9x19_fmj             = 5, 0.50
+ammo_9x19_pbp             = 3, 0.50
+ammo_7.62x25_p            = 5, 0.50
+ammo_7.62x25_ps           = 4, 0.50
+ammo_5.45x39_fmj          = 5, 0.50
+ammo_12x76_zhekan         = 10, 0.50
+ammo_12x70_buck           = 10, 0.50
+ammo_5.56x45_fmj          = 5, 0.50
+ammo_9x39_pab9            = 3, 0.50
+ammo_9x39_ap              = 5,  0.30
+ammo_magnum_300           = 5,  0.30
+ammo_5.45x39_ep           = 5,  0.30
+ammo_5.45x39_ap           = 5,  0.30
+ammo_5.56x45_ss190        = 5,  0.30
+ammo_5.56x45_ap           = 5,  0.30
+ammo_vog-25               = 5,  0.40
+ammo_m209                 = 5,  0.40
+ammo_og-7b                = 2,  0.30
+
+wpn_pm                    = 3, 0.70
+wpn_fort                  = 3, 0.60
+
+wpn_protecta              = 1, 0.10
+wpn_bm16                  = 2, 0.60
+wpn_toz34                 = 1, 0.60
+wpn_bizon                 = 1, 0.40
+wpn_ak                    = 1, 0.30
+wpn_ak74_old              = 1, 0.30
+wpn_ak74			   	   = 1, 0.30
+wpn_ak74_alt			   = 1, 0.30
+
+wpn_k98                   = 1, 0.23
+wpn_mosin                 = 1, 0.23
+wpn_svt40                 = 1, 0.20
+
+wpn_rpk                   = 1, 0.10
+wpn_sks                   = 1, 0.50
+
+wpn_m79                   = 1, 0.05
+wpn_rpg7                  = 1, 0.05
+
+wpn_addon_grenade_launcher       = 1, 0.15
+wpn_addon_grenade_launcher_m203  = 1, 0.15
+wpn_addon_og_m203                = 1, 0.15
+wpn_sil_9mm                      = 1, 0.30
+wpn_sil_45                       = 1, 0.30
+wpn_sil_pbs1                     = 1, 0.30
+wpn_sil_pbs4                     = 1, 0.30
+wpn_sil_tgp-a                    = 1, 0.30
+wpn_sil_nato                     = 1, 0.30
+wpn_sil_kzrzp                    = 1, 0.30
+wpn_sil_atg                      = 1, 0.30
+wpn_sil_aps                      = 1, 0.30
+wpn_sil_9a91                     = 1, 0.30
+wpn_sil_6p9                      = 1, 0.30
+wpn_sil_vihr                     = 1, 0.30
+wpn_sil_gemtech                  = 1, 0.30
+wpn_sil_57                       = 1, 0.30
+
+wpn_colt1911                = 1, 0.44
+wpn_colt1911_new            = 1, 0.44
+wpn_cz52                    = 1, 0.44
+wpn_gsh18                   = 1, 0.44
+wpn_kiparis_m1              = 1, 0.44
+wpn_kiparis_m2              = 1, 0.44
+wpn_mp43                    = 1, 0.44
+wpn_oc33                    = 1, 0.44
+wpn_pb                      = 1, 0.44
+wpn_toz106                  = 1, 0.44
+wpn_toz106_m1               = 1, 0.44
+wpn_toz34_obrez             = 1, 0.44
+wpn_toz34_obrez_decor       = 1, 0.44
+decor_light1                  = 1, 0.07
+decor_light2                  = 1, 0.07
+decor_light3                  = 1, 0.07
+decor_light4                  = 1, 0.07
+decor_light5                  = 1, 0.07
+decor_light6                  = 1, 0.07
+decor_light7                  = 1, 0.07
+decor_light8                  = 1, 0.07
+device_gas_lamp               = 1, 0.07
+device_gas_lamp_al_1red       = 1, 0.07
+device_gas_lamp_al_2orange    = 1, 0.07
+device_gas_lamp_al_3yellow    = 1, 0.07
+device_gas_lamp_al_4green     = 1, 0.07
+device_gas_lamp_al_5cyan      = 1, 0.07
+device_gas_lamp_al_6blue      = 1, 0.07
+device_gas_lamp_al_7purple    = 1, 0.07
+device_gas_lamp_al_8pink      = 1, 0.07
+device_gas_lamp_al_9white     = 1, 0.07
+device_metal_torch            = 1, 0.07
+device_metal_torch_al_1red    = 1, 0.07
+device_metal_torch_al_2orange = 1, 0.07
+device_metal_torch_al_3yellow = 1, 0.07
+device_metal_torch_al_4green  = 1, 0.07
+device_metal_torch_al_5cyan   = 1, 0.07
+device_metal_torch_al_6blue   = 1, 0.07
+device_metal_torch_al_7purple = 1, 0.07
+device_metal_torch_al_8pink   = 1, 0.07
+device_metal_torch_al_9white  = 1, 0.07
+prop_lamp1                    = 1, 0.07
+prop_lamp2                    = 1, 0.07
+decor_radiola                 = 1, 0.18
+decor_tv_box                  = 1, 0.18
+prop_clock_1                  = 1, 0.18
+prop_fan                      = 1, 0.18
+prop_keyboard                 = 1, 0.18
+prop_laptop_item              = 1, 0.18
+prop_mice_pad                 = 1, 0.18
+prop_monitor                  = 1, 0.18
+prop_pccase                   = 1, 0.18
+prop_tv                       = 1, 0.18
+radio_item                    = 1, 0.18

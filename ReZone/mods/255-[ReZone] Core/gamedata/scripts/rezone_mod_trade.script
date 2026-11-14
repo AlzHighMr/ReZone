@@ -4,12 +4,11 @@ local PAGE = rezone_mcm.path("rz_trade")
 local on, no_sell, no_buy, melee = false, true, true, false
 local helm_no_sell, helm_no_buy = false, false
 
--- strelne zbrane (a volitelne noze); granaty, bolty, detektory apod. zustavaji
 local FIREARMS = { w_pistol = true, w_smg = true, w_rifle = true, w_shotgun = true, w_sniper = true }
-local outfits = true	-- GAMMA plati i na obleky a helmy
+local outfits = true
 
 local cat_cache = {}
--- "weapon" / "melee" / "outfit" / "helmet" / false
+
 local function category(sec)
 	if not sec then return false end
 	local c = cat_cache[sec]
@@ -26,7 +25,6 @@ local function category(sec)
 	return c
 end
 
--- mode 1 = veci hrace (prodej obchodnikovi), mode 2 = nabidka obchodnika
 local function blocked(sec, mode)
 	local c = category(sec)
 	if not c then return false end
@@ -39,9 +37,6 @@ local function blocked(sec, mode)
 	return false
 end
 
--- Vsechno obchodovani v Anomaly jde pres utils_item.get_item_trade_status
--- (4 = da se obchodovat, 1 = obchodnik nema zajem, 3 = u obchodnika skryt).
--- utils_ui si funkci kopiruje do lokalni promenne -> nahradi se i tam (debug.setupvalue).
 local function wrap_status(orig)
 	return function(obj, profile, ...)
 		local st = orig(obj, profile, ...)
@@ -78,7 +73,6 @@ local function patch()
 	local wrapped = wrap_status(orig)
 	utils_item.get_item_trade_status = wrapped
 
-	-- lokalni kopie v utils_ui (sdilena promenna -> staci jedna funkce, zkusi se vic)
 	local done = false
 	if utils_ui then
 		for _, f in ipairs({
@@ -90,7 +84,7 @@ local function patch()
 		end
 	end
 	if not done and utils_ui and utils_ui.UICellContainer then
-		-- zaloha: obalit primo metody okna
+
 		local orig_tradable = utils_ui.UICellContainer.IsTradable
 		function utils_ui.UICellContainer:IsTradable(obj)
 			local p = self.trade_profile
@@ -115,16 +109,13 @@ local function patch()
 	core.log("obchod: patch nasazen (%s)", done and "trade status" or "zaloha")
 end
 
--- Minimalni stav veci, ktere obchodnik vykoupi (Anomaly: Gameplay > Ekonomika > condition_buy_override).
--- Anomaly ho uklada do kazdeho savu zvlast a vychozi je 0 (= hodnota z obchodniho souboru).
--- ReZone ho po nacteni savu a po zmene v MCM nastavi na hodnotu z MCM (0 = nechat, jak je v savu).
 local buy_cond = 60
 local trade_on = true
 local function apply_buy_cond()
 	local ok, st = pcall(alife_storage_manager.get_state)
 	if not (ok and st) then return end
 	if not trade_on then
-		-- vypnuto: hodnotu, kterou nastavil ReZone, vratit na vychozi Anomaly (0 = podle obchodniho souboru)
+
 		if st.rz_buy_cond and st.trader_buy_condition_override == st.rz_buy_cond then
 			st.trader_buy_condition_override = 0
 		end
@@ -144,7 +135,7 @@ function load()
 	trade_on = g("enabled") ~= false
 	buy_cond = math.floor((tonumber(g("buy_cond")) or 60) + 0.5)
 	if db.actor then apply_buy_cond() end
-	-- GAMMA: herni rezim z menu Nova hra (zbrane + obleky + helmy, prodej i nakup, noze ne)
+
 	on      = rezone_gamma_like_mode and rezone_gamma_like_mode.enabled() or false
 	no_sell, no_buy, melee, outfits = true, true, false, true
 	helm_no_sell = trade_on and g("helm_no_sell") == true

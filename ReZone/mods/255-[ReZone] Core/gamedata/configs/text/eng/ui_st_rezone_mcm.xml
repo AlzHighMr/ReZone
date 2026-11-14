@@ -484,13 +484,13 @@
 		<text>Stalker density</text>
 	</string>
 	<string id="ui_mcm_rz_pop_st_pop_desc">
-		<text>How many stalker squads appear at smart terrains (1 = vanilla, 0 = none). Replaces the setting in Options > ALife.</text>
+		<text>How many stalker squads appear at smart terrains (1 = vanilla Anomaly, i.e. 0.5 in Options > ALife; 0 = none). While Population is enabled, the density options in Options > ALife are hidden and this one applies - respawn, game start, offline combat and warfare.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_mu_pop">
 		<text>Mutant density</text>
 	</string>
 	<string id="ui_mcm_rz_pop_mu_pop_desc">
-		<text>How many mutant packs appear (1 = vanilla, 0 = none). Replaces the setting in Options > ALife.</text>
+		<text>How many mutant packs appear (1 = vanilla Anomaly, i.e. 0.75 in Options > ALife; 0 = none). While Population is enabled, the density options in Options > ALife are hidden and this one applies.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_respawn">
 		<text>Respawn time</text>
@@ -1366,7 +1366,7 @@
 		<text>Thirst</text>
 	</string>
 	<string id="ui_mcm_rz_needs_thirst_desc">
-		<text>How fast thirst grows, also while sleeping (hydration with EFTH).</text>
+		<text>How fast thirst grows, also while sleeping (hydration with EFTH). Because of the multiplier, sleep never pushes you into thirst that drains health and stamina - above the vanilla gain only up to the yellow level. You never wake up straight into another forced sleep (the vanilla loop you could die in).</text>
 	</string>
 	<string id="ui_mcm_rz_needs_sleep">
 		<text>Sleepiness</text>

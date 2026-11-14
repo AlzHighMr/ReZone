@@ -6,9 +6,9 @@ local KEY_RAD = "radiation_pp_effector_name"
 local KEY_DET = "detection_pp_effector_name"
 local CLS_POLTER = "SM_POLTR"
 local CLS_CONTR  = "SM_CONTR"
-ZONE_PP = { "postprocess_rad" }		-- sekce efektu radiacnich poli
+ZONE_PP = { "postprocess_rad" }
 
-local monsters = nil	-- { sec, cls, psy, rad, det }
+local monsters = nil
 
 local warned = false
 local function can_write()
@@ -30,15 +30,12 @@ local function scan()
 	core.log("efekty: %d sekci monster s efekty aury", #monsters)
 end
 
--- Puvodni hodnota se pise primo do ini_sys (klic rz_orig_<klic> ve stejne sekci): ini_sys
--- prezije nacteni savu, Lua stav ne - jinak by se po loadu "puvodni" hodnotou stala prazdna.
 local EMPTY = "<rz_empty>"
 local function cur_value(sec, key)
 	if not ini_sys:line_exist(sec, key) then return false end
 	return ini_sys:r_string_ex(sec, key) or ""
 end
 
--- want = true: efekt vypnout, false: vratit puvodni hodnotu
 local changed = 0
 local function write(sec, key, v)
 	local ok, err = pcall(ini_sys.w_string, ini_sys, sec, key, v, "")
@@ -51,12 +48,12 @@ local function set(sec, key, off_value, want)
 	local has = ini_sys:line_exist(sec, okey)
 	local cur = cur_value(sec, key)
 	if want then
-		if cur == false then return end                     -- radek neexistuje, neni co vypinat
-		if has and cur == off_value then return end         -- uz vypnuto
+		if cur == false then return end
+		if has and cur == off_value then return end
 		if not has then write(sec, okey, cur == "" and EMPTY or cur) end
 		write(sec, key, off_value)
 	else
-		if not has then return end                          -- nikdy jsme nemenili
+		if not has then return end
 		local ov = ini_sys:r_string_ex(sec, okey) or EMPTY
 		if ov == EMPTY then ov = "" end
 		if cur ~= ov then write(sec, key, ov) end
@@ -71,7 +68,7 @@ local function apply(cfg)
 		end
 		return
 	end
-	-- nic zapnute a nikdy nic zmenene = neni co delat (neprochazet vsechny sekce hry pri kazdem loadu)
+
 	local any = cfg.rad or cfg.polter or cfg.contr or cfg.psy_other
 	local touched = ini_sys:section_exist(ZONE_PP[1]) and ini_sys:line_exist(ZONE_PP[1], "rz_fx_touched")
 	if not any and not touched then return end
@@ -83,7 +80,7 @@ local function apply(cfg)
 		for _, m in ipairs(monsters) do
 			local is_p, is_c = m.cls == CLS_POLTER, m.cls == CLS_CONTR
 			local own = (is_p and cfg.polter) or (is_c and cfg.contr)
-			-- psy aura: poltergeist / controller vlastnim prepinacem, ostatni (burer, karlik, psi pes) zvlast
+
 			if m.psy then
 				local want = own or (not is_p and not is_c and cfg.psy_other)
 				set(m.sec, KEY_PSY, "", want and true or false)
@@ -117,5 +114,5 @@ end
 
 function on_game_start()
 	core.on_change(load)
-	load()	-- hned, at to plati uz pro monstra a pole pri nacitani urovne
+	load()
 end

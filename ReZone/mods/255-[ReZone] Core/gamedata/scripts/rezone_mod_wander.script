@@ -3,9 +3,8 @@ local PAGE = rezone_mcm.path("rz_walk")
 local CFG_FILE = "rezone\\wander.ltx"
 local TICK = 5000
 
--- ---------------------------------------------------------------- konfigurace z LTX
-LEVELS = {}      -- poradi pro MCM: { lvl, opt, def, tier }
-FACTIONS = {}    -- { fac, opt, def, prefix, prop }
+LEVELS = {}
+FACTIONS = {}
 local LV, EXCL = {}, {}
 
 local function split(s)
@@ -40,7 +39,6 @@ function read_cfg()
 	each("exclude_smarts", function(k) EXCL[k] = true end)
 end
 
--- ---------------------------------------------------------------- nastaveni
 local cfg = { on = false }
 
 function load()
@@ -65,13 +63,12 @@ function load()
 	core.log("toulavi stalkeri: %s", cfg.on and "zapnuto" or "vypnuto")
 end
 
--- ---------------------------------------------------------------- stav (uklada se)
-local squads = {}        -- [id] = { lvl = nazev lokace, born = herni minuty, tg = { nazvy smartu } }
-local game_min = 0       -- herni minuty od nacteni (jen pro casovani)
+local squads = {}
+local game_min = 0
 local next_spawn = nil
 local last_tg = nil
 
-local smart_cache = {}   -- [lvl] = { smarts = {...}, props = { [prop] = true } }
+local smart_cache = {}
 
 local function level_name_of(se)
 	local gg, sim = game_graph(), alife()
@@ -109,7 +106,6 @@ local function storm()
 		or (psi_storm_manager and psi_storm_manager.is_started and psi_storm_manager.is_started())
 end
 
--- daleko od hrace nebo offline = lze smazat / spawnout bez povsimnuti
 local function far(pos)
 	return db.actor:position():distance_to_xz(pos) > cfg.radius
 end
@@ -136,7 +132,6 @@ local function remove(id)
 	squads[id] = nil
 end
 
--- vanilla chovani: skupina chodi po nahodnych smartech ze seznamu a na kazdem chvili postoji
 local function set_walk(se, d)
 	se.random_targets = d.tg
 	se.idle_time = math.random(10, 30) * 60
@@ -164,7 +159,6 @@ local function spawn(lvl)
 	local c = smarts_on(lvl)
 	if #c.list < 2 then return end
 
-	-- frakce: zapnute, volitelne jen ty, co na lokaci opravdu ziji
 	local fl = {}
 	for _, f in ipairs(cfg.factions) do
 		if not cfg.native or c.props[f[5]] then fl[#fl + 1] = f end
@@ -174,7 +168,6 @@ local function spawn(lvl)
 	local sec = "rz_wander_" .. f[1] .. "_" .. math.min(3, math.max(1, L[4]))
 	if not ini_sys:section_exist(sec) then return end
 
-	-- start daleko od hrace, cile = 3-5 jinych mist na lokaci
 	local starts = {}
 	for _, s in ipairs(c.list) do if far(s.pos) then starts[#starts + 1] = s end end
 	if #starts == 0 then return end
@@ -211,7 +204,6 @@ local function spawn(lvl)
 	core.log("toulavi stalkeri: %s (%d) na %s -> %s", sec, n, st.name, table.concat(tg, ", "))
 end
 
--- ---------------------------------------------------------------- hlavni smycka
 local function tick()
 	local tg = time_global()
 	if last_tg and tg - last_tg < TICK then return end
@@ -230,9 +222,9 @@ local function tick()
 		if not se or se:npc_count() == 0 then
 			squads[id] = nil
 		elseif is_companion(id) then
-			squads[id] = nil                                   -- spolecnik hrace zustane
+			squads[id] = nil
 		elseif d.lvl ~= lvl then
-			remove(id)                                         -- hrac je jinde, skupina je offline
+			remove(id)
 		else
 			local leave = not cfg.on or not cfg.levels[lvl] or (cfg.day_only and not day)
 				or (game_min - (d.born or 0)) > cfg.life * 60
@@ -259,7 +251,7 @@ local function on_first_update()
 	smart_cache = {}
 	for id, d in pairs(squads) do
 		local se = alife_object(id)
-		if se and d.tg then set_walk(se, d) end             -- random_targets se do savu neuklada
+		if se and d.tg then set_walk(se, d) end
 	end
 end
 
@@ -273,7 +265,7 @@ end
 local function save_state(m)
 	local out, n = {}, 0
 	for id, d in pairs(squads) do
-		out[id] = { lvl = d.lvl, born = 0, tg = d.tg }   -- vek se po nacteni pocita znovu
+		out[id] = { lvl = d.lvl, born = 0, tg = d.tg }
 		n = n + 1
 	end
 	m.rz_wander = n > 0 and out or nil

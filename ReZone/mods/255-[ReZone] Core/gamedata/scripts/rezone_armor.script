@@ -1,11 +1,9 @@
 local core = rezone_core
--- profil obleku = predvolba balistiky (0 cop / 1 trilogy / 2 hardcore)
+
 local PATH = rezone_mcm.path("rz_ball") .. "/preset"
 local PATH_HELM = rezone_mcm.path("rz_ball") .. "/helmets"
 local NAMES = { [0] = "cop", [1] = "trilogy", [2] = "hardcore" }
 
--- co je ted v pameti hry: ini_sys prezije nacteni savu (Lua stav ne), proto se znacka pise
--- primo do ini_sys (sekce exo_outfit, klic rz_armor_profile); bez znacky = DLTX = cop
 local MARK_SEC, MARK_KEY = "exo_outfit", "rz_armor_profile"
 local function applied_get()
 	return ini_sys and ini_sys:r_string_ex(MARK_SEC, MARK_KEY) or "cop"
@@ -37,7 +35,6 @@ local function write_file(file)
 	return n, bad
 end
 
--- name = profil, helm = ReZone helmy zapnute
 local function apply(name, helm)
 	local key = name .. (helm and "" or "|closed")
 	local applied = applied_get()
@@ -51,7 +48,7 @@ local function apply(name, helm)
 	ini_sys:set_readonly(false)
 	ini_sys:set_override_names(true)
 	local ok, err = pcall(function()
-		-- profil (vychozi DLTX = cop + helmy zapnute: neni co psat, kdyz se nic nemenilo)
+
 		if not (name == "cop" and applied == "cop") then
 			local a, b = write_file("rezone\\armor_" .. name .. ".ltx"); n, bad = n + a, bad + b
 		end
@@ -73,5 +70,5 @@ end
 
 function on_game_start()
 	core.on_change(load)
-	load()		-- hned, pred nactenim predmetu z ulozene hry
+	load()
 end

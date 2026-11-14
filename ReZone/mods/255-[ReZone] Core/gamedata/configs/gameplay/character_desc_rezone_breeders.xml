@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <xml>
-<!-- ReZone - selekcionari artefaktu -->
 
 <specific_character id="zat_stalker_breeder" team_default="1">
 	<name>zat_stalker_breeder_name</name>
@@ -70,7 +69,7 @@
 	<supplies>
 		[spawn] \n
 		device_torch \n
-		
+
 #include "gameplay\supplies\character_food.xml"
 #include "gameplay\supplies\character_drugs.xml"
 	</supplies>

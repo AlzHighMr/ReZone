@@ -6,12 +6,11 @@ local RANK_IDX = {}
 for i, r in ipairs(RANKS) do RANK_IDX[r] = i end
 
 local cfg = { on = false }
-local cur_comm = nil		-- komunita NPC, ktere se prave zpracovava (kvuli zombie)
-local in_ammo = false		-- jsme uvnitr funkce, ktera vytvari munici z mrtvoly
+local cur_comm = nil
+local in_ammo = false
 
 local function lerp(a, b, t) return a + (b - a) * t end
 
--- rozsah (min, max) v procentech pro hodnost; kind = "w" zbrane, "o" armory a helmy
 local function range_for(kind, rank, comm)
 	if comm == "zombied" then
 		return cfg[kind .. "_zmin"], cfg[kind .. "_zmax"]
@@ -28,7 +27,6 @@ local function roll(lo, hi)
 	return clamp(math.random(math.floor(lo + 0.5), math.floor(hi + 0.5)), 1, 100) / 100
 end
 
--- kategorie veci z mrtvoly podle "kind" v configu predmetu
 local CAT_CACHE = {}
 local function category(sec)
 	local c = CAT_CACHE[sec]
@@ -42,7 +40,6 @@ local function category(sec)
 	return c
 end
 
--- pocet * nasobic, desetinna cast nahodne (1 kus * 0.5 = polovina mrtvol)
 local function scale_count(n, m)
 	local x = n * m
 	local f = math.floor(x)
@@ -50,7 +47,6 @@ local function scale_count(n, m)
 	return f
 end
 
--- ---------------------------------------------------------------- patch
 local patched = false
 local function patch()
 	if patched then return end
@@ -61,7 +57,6 @@ local function patch()
 	end
 	patched = true
 
-	-- zbrane: puvodni funkce nastavi stav a vytvori munici; stav prepiseme
 	local orig_wpn = dm.set_weapon_drop_condition
 	dm.set_weapon_drop_condition = function(npc, itm)
 		in_ammo = true
@@ -75,7 +70,6 @@ local function patch()
 		end
 	end
 
-	-- munice navic z mrtvoly
 	if dm.try_spawn_ammo then
 		local orig_ammo = dm.try_spawn_ammo
 		dm.try_spawn_ammo = function(npc, ...)
@@ -87,11 +81,10 @@ local function patch()
 		end
 	end
 
-	-- veci z mrtvol (leky, jidlo, granaty, ostatni): create_item(npc, section, number, rnd, to_save)
 	if dm.create_item then
 		local orig_item = dm.create_item
 		dm.create_item = function(npc, section, number, rnd, ...)
-			-- rnd >= 1 = jista vec (predmety pribehovych postav, pevne dane veci) - nemenit
+
 			if cfg.on and section and type(number) == "number" and type(rnd) == "number" and rnd < 1 and not IsItem("ammo", section) then
 				local c = category(section)
 				number = scale_count(number, cfg[c .. "_n"] or 1)
@@ -102,11 +95,10 @@ local function patch()
 		end
 	end
 
-	-- alife_create_item jen pro death_manager (promenna modulu prekryje globalni funkci)
-	local g_create = rawget(dm, "alife_create_item") or _G.alife_create_item	-- zachovat i upravu z rezone_ammo
+	local g_create = rawget(dm, "alife_create_item") or _G.alife_create_item
 	dm.alife_create_item = function(sec, obj, t, ...)
 		if cfg.on and in_ammo and t and t.ammo and sec then
-			if cfg.ammo_ch < 1 and math.random() > cfg.ammo_ch then return end	-- k zbrani tentokrat zadna munice
+			if cfg.ammo_ch < 1 and math.random() > cfg.ammo_ch then return end
 			if cfg.no_special and sec:find("_bad$") and ini_sys:section_exist(sec:sub(1, -5)) then
 				sec = sec:sub(1, -5)
 			end
@@ -117,7 +109,6 @@ local function patch()
 		return g_create(sec, obj, t, ...)
 	end
 
-	-- armory a helmy: vanilla bere stav z get_condition_by_rank (s vahou podle komunity)
 	local orig_cond = dm.get_condition_by_rank
 	dm.get_condition_by_rank = function(rank, coef)
 		if not cfg.on then return orig_cond(rank, coef) end
@@ -125,7 +116,6 @@ local function patch()
 		return roll(lo, hi)
 	end
 
-	-- zjistit komunitu u funkci, ktere get_condition_by_rank volaji
 	if dm.spawn_cosmetics then
 		local orig_cos = dm.spawn_cosmetics
 		dm.spawn_cosmetics = function(npc, npc_id, npc_comm, ...)

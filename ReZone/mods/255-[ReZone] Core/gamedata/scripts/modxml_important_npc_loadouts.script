@@ -1,7 +1,5 @@
 local npc_supplies = {
-----------------------------------------------------------------
--- Sultan
-----------------------------------------------------------------
+
 ["zat_b7_bandit_boss_sultan"] = [[
 [spawn]
 
@@ -17,9 +15,6 @@ device_torch
 hand_radio
 ]],
 
-----------------------------------------------------------------
--- Bandit medic
-----------------------------------------------------------------
 ["bandit_main_base_medic_mlr"] = [[
 [spawn]
 wpn_protecta
@@ -28,9 +23,6 @@ medkit = 10
 bandage = 10
 ]],
 
-----------------------------------------------------------------
--- Army checkpoint mechanic cordon
-----------------------------------------------------------------
 ["army_south_mechan_mlr"] = [[
 [spawn]
 wpn_ak74 = 1
@@ -38,9 +30,6 @@ ammo_5.45x39_fmj = 1
 detector_advanced  = 1
 ]],
 
-----------------------------------------------------------------
--- Army checkpoint trader cordon
-----------------------------------------------------------------
 ["esc_3_16_military_trader"] = [[
 [spawn]
 wpn_protecta
@@ -49,12 +38,8 @@ medkit = 10
 bandage = 10
 ]],
 
-
 }
 
---=============================================================
--- CALLBACK
---=============================================================
 local function on_specific_character_init(character_id, data)
 
     local supplies = npc_supplies[character_id]
@@ -74,5 +59,9 @@ local function on_specific_character_init(character_id, data)
 end
 
 function on_game_start()
+    if rezone_core and not rezone_core.has_callback("on_specific_character_init") then
+        rezone_core.dbg("! ReZone: callback on_specific_character_init chybi (starsi exe) - zasoby dulezitych NPC se nemeni")
+        return
+    end
     RegisterScriptCallback("on_specific_character_init", on_specific_character_init)
 end

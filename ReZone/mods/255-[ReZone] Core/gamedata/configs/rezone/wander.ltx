@@ -1,14 +1,3 @@
-; ReZone - toulaví stalkeři (MCM › Gameplay › Toulaví stalkeři, skript rezone_mod_wander)
-; Malé skupiny stalkerů procházejí lokací od místa k místu. Na noc nebo po odchodu z lokace
-; zmizí, ale nikdy před očima hráče (jen daleko od něj nebo offline).
-; Laboratoře a podzemí v seznamu nejsou vůbec - tam se nikdy nic nespawnuje.
-;
-; [levels]   lokace = id volby v MCM, výchozí zapnuto (true/false), síla (1 jih, 2 střed, 3 sever)
-;            síla určuje hodnost: 1 = sim_default_*_0..2, 2 = _1..3, 3 = _2..4
-; [factions] frakce skupiny = id volby v MCM, výchozí, prefix NPC (sim_default_<prefix>_N), klíč v props smartu
-; [exclude_smarts] smarty, kam se nechodí a kde se nespawnuje (kromě základen - ty se vynechávají samy)
-; Skupiny (sekce rz_wander_<frakce>) jsou v configs\misc\squad_descr\squad_descr_rezone_wander.ltx.
-
 [levels]
 l01_escape           = escape, true, 1
 k00_marsh            = marsh, true, 1
@@ -50,7 +39,6 @@ isg       = f_isg, false, isg, isg
 greh      = f_greh, false, greh, greh
 
 [exclude_smarts]
-; příběhová a úkolová místa, kde by cizí skupina překážela
 mar_smart_terrain_base
 esc_smart_terrain_2_12
 esc_smart_terrain_5_7

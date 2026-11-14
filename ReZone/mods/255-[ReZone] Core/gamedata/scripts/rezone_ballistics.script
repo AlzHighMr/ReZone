@@ -9,9 +9,8 @@ function cfg(key)
 	return v
 end
 
--- ---------------------------------------------------------------- predvolby
 PRESETS = {
-	-- predvolba zaroven vybira profil obleku hrace (rezone_armor: 0 cop, 1 trilogy, 2 hardcore)
+
 	[0] = { name = "cop",      curve = "cop",    tough = 1.00, blunt_min = 0.10, bones = "vanilla", degrade = false },
 	[1] = { name = "trilogy",  curve = "cop",    tough = 0.85, blunt_min = 0.18, bones = "vanilla", degrade = false },
 	[2] = { name = "hardcore", curve = "smooth", tough = 1.00, blunt_min = 0.12, bones = "lethal",  degrade = true  },
@@ -20,7 +19,6 @@ function preset()
 	return PRESETS[tonumber(cfg("preset")) or 0] or PRESETS[0]
 end
 
--- ---------------------------------------------------------------- data munice
 ini = ini_file("rezone\\ammo.ltx")
 local ammo_cache = {}
 
@@ -46,7 +44,6 @@ function ammo(sec)
 	return a
 end
 
--- ---------------------------------------------------------------- casti tela
 BONE = {
 	[1] = "bip01_pelvis", [2] = "bip01_pelvis", [3] = "bip01_l_thigh", [4] = "bip01_l_calf",
 	[5] = "bip01_l_foot", [6] = "bip01_l_foot", [7] = "bip01_r_thigh", [8] = "bip01_r_calf",
@@ -63,7 +60,6 @@ HEAD = { [14] = true, [15] = true, [16] = true, [17] = true, [18] = true, [19] =
 TORSO = { [1] = true, [2] = true, [11] = true, [12] = true, [13] = true, [20] = true, [33] = true, [46] = true }
 function is_limb(id) return not HEAD[id] and not TORSO[id] end
 
--- Hardcore: smrtelnejsi hlava a krk, koncetiny slabsi (vlastni tabulka)
 local LETHAL = {
 	bip01_head = 3.6, eye_left = 4.5, eye_right = 4.5, eyelid_1 = 4.5, jaw_1 = 3.2, bip01_neck = 2.4,
 	bip01_spine = 1.1, bip01_spine1 = 1.1, bip01_spine2 = 1.15, bip01_pelvis = 0.95,
@@ -85,10 +81,9 @@ function bone_mult(bone_id, table_name)
 	return v
 end
 
--- brneni postavy: sekce bones_protection_sect z vizualu (stejne cte i engine)
 local prot_sect_by_visual = {}
 local prot_cache = {}
-local worn = {}			-- worn[npc_id][bone_id] = brneni po poskozeni (Hardcore)
+local worn = {}
 
 local function prot_sect(npc)
 	local vis = npc:get_visual_name()
@@ -139,10 +134,6 @@ function mutant_skin(npc)
 	return SYS_GetParam(2, sec, "skin_armor") or (p and SYS_GetParam(2, p, "skin_armor")) or 0
 end
 
--- ---------------------------------------------------------------- vzorce pruraznosti
--- CoP: strela, ktera brneni prorazi, ztrati cast sily podle toho, jak tesne ho prekonala
--- (ap = brneni -> 40 %, ap = 2x brneni -> 70 %, bez brneni 100 %). Kdyz neprorazi, projde
--- jen tupy naraz; tesne pod hranici (75-100 % brneni) naraz roste k 40 %.
 function curve_cop(ap, armor, blunt)
 	if armor <= 0.001 then return 1 end
 	if ap >= armor then
@@ -152,7 +143,6 @@ function curve_cop(ap, armor, blunt)
 	return blunt + (max(0.4, blunt) - blunt) * near
 end
 
--- Hardcore: plynule, bez skoku mezi tridami brneni
 function curve_smooth(ap, armor, blunt, impact, pen)
 	local r = ap - armor
 	if r >= 0 then
@@ -163,13 +153,12 @@ function curve_smooth(ap, armor, blunt, impact, pen)
 	return max(blunt + 0.08 * (impact or 0.3), 0.35 * (1 + (r + 0.1) * 4))
 end
 
--- ---------------------------------------------------------------- vzdalenost a rychlost
-local fired = { id = nil, vel = 0 }		-- bonus rychlosti strely z upgradu drzene zbrane
+local fired = { id = nil, vel = 0 }
 function on_before_fire()
 	local w = db.actor and db.actor:active_item()
 	if not (w and IsWeapon(w)) then return end
 	local now = time_global()
-	-- stejna zbran: prepocet jen jednou za 20 s (upgrady u mechanika se tak projevi)
+
 	if fired.id == w:id() and fired.t and now - fired.t < 20000 then return end
 	fired.id, fired.t = w:id(), now
 	local sec = w:section()
@@ -189,7 +178,6 @@ local function dist_mult(a, shooter, target)
 	return clamp(1 / (1 + d * clamp(a.air, 0, 1) / 450), 0.3, 1), d
 end
 
--- ---------------------------------------------------------------- jedna strela jen jednou na cil
 local seen, seen_n = {}, 0
 local function duplicate(s_hit, npc)
 	local bid = s_hit.bullet_id
@@ -206,12 +194,10 @@ local function duplicate(s_hit, npc)
 	return t ~= nil and (now - t) <= 15
 end
 
--- ---------------------------------------------------------------- hlavni vypocet
--- vraci ctx (s_hit.power je nova sila) nebo nil = nechat engine
 function compute(npc, s_hit, bone_id, human)
 	if s_hit.type ~= hit.fire_wound or (s_hit.power or 0) >= 50 then return end
 	local shooter = s_hit.draftsman
-	-- jen strely hrace; boje NPC mezi sebou pocita engine (stejne jako drive)
+
 	if not (shooter and shooter:id() == AC_ID) then return end
 	local wpn = s_hit.weapon_id and level.object_by_id(s_hit.weapon_id)
 	if not (wpn and IsWeapon(wpn)) or IsGrenade(wpn) then return end
@@ -240,7 +226,6 @@ function compute(npc, s_hit, bone_id, human)
 
 	rezone_ammo_fx.pre(ctx)
 
-	-- pruraz
 	local pm
 	if human then
 		local blunt = max(p.blunt_min, ctx.frac) + 0.1 * (ctx.impact - 0.3)
@@ -251,24 +236,22 @@ function compute(npc, s_hit, bone_id, human)
 			pm = curve_cop(ctx.ap, ctx.armor, blunt)
 		end
 	else
-		-- mutanti: kuze zastavi jen slabe naboje, maso tlumi lehke strely
+
 		pm = clamp(1 - max(ctx.armor - 2 * ctx.ap, 0) * 1.5, 0.4, 1)
 	end
 	ctx.pen_mult = pm
 	ctx.penetrated = ctx.ap >= ctx.armor
 
-	-- rozsireni (hollow point): plne jen kdyz strela projde
 	local hp = a.hp or 1
 	if hp > 1 then
 		hp = ctx.penetrated and hp or (1 + (hp - 1) * 0.3)
 	end
 
-	local tough = human and p.tough or 1	-- odolnost stalkeru/mutantu navic: rezone_mod_sthp / rezone_mod_toughness
+	local tough = human and p.tough or 1
 	if ctx.force_full then pm = 1 end
 	s_hit.power = base * a.hit * (ctx.no_falloff and 1 or dm) * vel * ctx.mult * pm * hp * ctx.extra / max(tough, 0.1)
 	ctx.power = s_hit.power
 
-	-- Hardcore: brneni casti tela se pod palbou rozbiji
 	if human and p.degrade and not ctx.penetrated and ctx.armor > 0 then
 		set_armor(npc, bone_id, ctx.armor - a.ap * 0.35)
 	end
@@ -277,21 +260,20 @@ function compute(npc, s_hit, bone_id, human)
 	return ctx
 end
 
--- ---------------------------------------------------------------- napojeni na engine
 local flags = { ret_value = true }
 local err_seen = {}
-local function err_once(r)          -- chyba za zasah by jinak zaplnila log
+local function err_once(r)
 	local m = tostring(r)
 	if err_seen[m] then return end
 	err_seen[m] = true
-	if rezone_core and rezone_core.DEBUG then printf("! ReZone balistika: %s", m) end
+	if rezone_core then rezone_core.dbg("! ReZone balistika: %s", m) end
 end
 
 local function stalker_cb(npc, s_hit, bone_id)
 	flags.ret_value = true
 	local ctx
 	if cfg("enabled") == false then
-		-- vypnuto: vanilla vypocet hry
+
 	elseif duplicate(s_hit, npc) then
 		s_hit.power = 0.0001
 	else
@@ -300,7 +282,7 @@ local function stalker_cb(npc, s_hit, bone_id)
 	end
 	SendScriptCallback("npc_on_before_hit", npc, s_hit, bone_id, flags)
 	if flags.ret_value and ctx and s_hit.type == hit.fire_wound then
-		-- ubrat primo, at engine nepocita brneni podruhe
+
 		npc:set_health_ex(npc.health - s_hit.power)
 		s_hit.power = 0.0001
 	end
@@ -310,7 +292,7 @@ end
 local function monster_cb(monster, s_hit, bone_id)
 	flags.ret_value = true
 	if cfg("enabled") == false then
-		-- vypnuto: vanilla vypocet hry
+
 	elseif duplicate(s_hit, monster) then
 		s_hit.power = 0.0001
 	else

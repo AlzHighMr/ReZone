@@ -1,17 +1,5 @@
--- ======================================================================
--- ReZone Artefacts CoP - punishment for carrying artefacts without a container
--- ----------------------------------------------------------------------
---  Chemical artefacts (af_class_chem) carried bare - on the belt or in the
---  backpack - now and then poison you: small chemical hit + poison screen
---  effect.  Electric artefacts (af_class_electro) now and then give you a
---  small electric shock + electric screen effect.
---  Artefacts in a lead box, IAM, AAC or AAM are safe.
---  Chance and strength grow with the artefact tier. Settings: [rzaf_punish]
---  in mod_system_zzzzzzzzzzzzzzzz_rezone_artefacts_punish.ltx and MCM.
--- ======================================================================
-
 local S = "rzaf_punish"
-local CLASS = nil				-- [section] = "chem" | "electro"
+local CLASS = nil
 local next_check = 0
 local cooldown = { chem = 0, electro = 0 }
 
@@ -38,7 +26,7 @@ local function load_classes()
 			end
 		end
 	end
-	-- extra artefacts from other mods (e.g. SoC artefacts)
+
 	for _, c in ipairs({ "chem", "electro" }) do
 		local list = ini_sys:r_string_ex(S, c .. "_extra")
 		for sec in string.gmatch(list or "", "[%w_]+") do CLASS[sec] = c end
@@ -49,12 +37,11 @@ end
 
 local CONTAINERS = { "_lead_box$", "_af_iam$", "_af_aac$", "_af_aam$" }
 
--- returns base artefact section (or nil if contained / not an artefact of a class)
 local function bare_artefact(sec)
 	for _, p in ipairs(CONTAINERS) do
 		if (string.find(sec, p)) then return nil end
 	end
-	local base = string.gsub(sec, "_brd_%a+%d$", "")		-- SGM Selekce (vylepsene artefakty)
+	local base = string.gsub(sec, "_brd_%a+%d$", "")
 	if (CLASS[base]) then return base end
 	return nil
 end
@@ -92,7 +79,7 @@ end
 
 local function check()
 	local now = time_global()
-	local roll = { chem = nil, electro = nil }		-- strongest artefact that triggered per kind
+	local roll = { chem = nil, electro = nil }
 	local chance_mult = clamp(cfg("punish_chance", 1.0), 0, 3)
 	local per_tier = num("chance_per_tier", 0.03)
 	db.actor:iterate_inventory(function(owner, item)
@@ -125,7 +112,6 @@ local function actor_on_update()
 	check()
 end
 
--- for other scripts / debug: is this item a bare chem / electro artefact
 function Kind(sec)
 	load_classes()
 	local base = bare_artefact(sec)

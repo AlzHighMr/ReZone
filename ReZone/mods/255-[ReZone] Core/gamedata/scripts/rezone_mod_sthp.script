@@ -1,7 +1,7 @@
 local core = rezone_core
 local PAGE = rezone_mcm.path("rz_ball")
 local EPS = 0.0001
-local LETHAL = 50		-- vetsi sila = skriptove zabiti, nechat byt
+local LETHAL = 50
 
 RANKS = { "novice", "trainee", "experienced", "professional", "veteran", "expert", "master", "legend" }
 DEFAULTS = { novice = 1, trainee = 1, experienced = 1, professional = 1, veteran = 1, expert = 1, master = 1, legend = 1 }

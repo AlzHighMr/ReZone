@@ -4,14 +4,10 @@ local PAGE = rezone_mcm.path("rz_ranks")
 VANILLA_MAX = 30000
 DEFAULT_MAX = 150000
 
--- Anomaly (30 000 = legenda). Hranice hodnosti, body za zabiti, rust ve smart terrainu.
 local V_RATING = { "novice", 3499, "trainee", 6499, "experienced", 8999, "professional", 11999, "veteran", 14499, "expert", 17499, "master", 26999, "legend" }
 local V_KILL = { novice = 5, trainee = 6, experienced = 7, professional = 8, veteran = 9, expert = 10, master = 15, legend = 20 }
 local V_SMART = { min = 1, max = 2 }
 
--- Rozsahy generiku v merite Anomaly (vynasobi se podle maxima). Klic = character_id bez "default_<n>",
--- addonove prefixy (dick_, dsim_ ...) se odriznou. Pevne hodnosti a vse ostatni jde pres nasobic.
--- Nove tridy z DUX / KVMA (military_5, killer_5, isg_0/5, renegade_3/4, zombied_0) jsou tu taky.
 local RANGES = {
 	stalker_0 = { 500, 3000 }, stalker_1 = { 3000, 6000 }, stalker_2 = { 6000, 10000 }, stalker_3 = { 10000, 20000 }, stalker_4 = { 22000, 30000 },
 	bandit_0 = { 500, 3000 }, bandit_1 = { 1000, 3000 }, bandit_2 = { 3000, 6000 }, bandit_3 = { 6000, 15000 }, bandit_4 = { 10000, 20000 },
@@ -30,7 +26,7 @@ local RANGES = {
 	renegade_0 = { 500, 3000 }, renegade_1 = { 1000, 3000 }, renegade_2 = { 3000, 6000 }, renegade_3 = { 12000, 20000 }, renegade_4 = { 22000, 30000 },
 	zombied_0 = { 500, 2500 }, zombied_1 = { 500, 3000 }, zombied_2 = { 3000, 10000 }, zombied_3 = { 10000, 20000 }, zombied_4 = { 15000, 22000 },
 }
--- obchodnici, mechanici, medici a barmani podle frakce (id: sim_default_<frakce>_<role>)
+
 local SPECIAL = {
 	stalker = { 10000, 20000 }, bandit = { 10000, 20000 }, dolg = { 10000, 20000 }, freedom = { 10000, 20000 },
 	csky = { 10000, 20000 }, ecolog = { 10000, 20000 }, killer = { 10000, 20000 }, army = { 15000, 20000 },
@@ -41,7 +37,6 @@ local cfg = { on = true, max = DEFAULT_MAX, mult = DEFAULT_MAX / VANILLA_MAX }
 local done = {}
 local foreign = false
 
--- nastaveni se cte primo z axr_options (bezi drive, nez je MCM sestavene)
 local function read_cfg()
 	local c = axr_main and axr_main.config
 	local on, mx
@@ -58,7 +53,6 @@ local function scaled(v)
 	return math.floor(v * cfg.mult + 0.5)
 end
 
--- hranice hodnosti, body za zabiti a rust ve smart terrainu do ini_sys (DLTX v ReZone dava vychozich 150 000)
 local function apply_ini()
 	if not (ini_sys and ini_sys.set_readonly and ini_sys.w_string) then return end
 	local r, names = {}, {}
@@ -95,7 +89,7 @@ local function on_init(character_id, data)
 	if not (omin or omax) then return end
 	local d = done[character_id]
 	if d and omin == d[1] and omax == d[2] then return end
-	-- hodnota nad maximem Anomaly = profil uz je v jinem meritku (jiny addon) -> nechat cely
+
 	if (omin and omin > VANILLA_MAX) or (omax and omax > VANILLA_MAX) then return end
 	local nmin, nmax
 	local rg = find_range(character_id)
@@ -110,7 +104,6 @@ local function on_init(character_id, data)
 	done[character_id] = { nmin, nmax }
 end
 
--- zmena maxima v rozehrane hre: hodnost hrace se prepocita, aby zustal na stejnem stupni
 local function rescale_actor()
 	local m = alife_storage_manager.get_state()
 	if not (m and db.actor) then return end
@@ -118,7 +111,7 @@ local function rescale_actor()
 	if old and math.abs(old - cfg.mult) > 0.001 and db.actor.set_character_rank then
 		local r = db.actor:character_rank()
 		db.actor:set_character_rank(math.floor(r * cfg.mult / old + 0.5))
-		printf("[ReZone] Hodnosti: maximum zmeneno, hodnost hrace %d -> %d", r, db.actor:character_rank())
+		rezone_core.dbg("[ReZone] Hodnosti: maximum zmeneno, hodnost hrace %d -> %d", r, db.actor:character_rank())
 	end
 	m.rz_rank_mult = cfg.mult
 end
@@ -134,14 +127,18 @@ local function load()
 end
 
 function on_game_start()
-	-- samostatny rank150k (modxml_zzz_rank150k) by hodnosti prevadel podruhe
+
 	if modxml_zzz_rank150k then
 		foreign = true
-		printf("! ReZone Hodnosti: nalezen samostatny rank150k - ReZone hodnosti NPC nemeni, smaz ho")
+		rezone_core.dbg("! ReZone Hodnosti: nalezen samostatny rank150k - ReZone hodnosti NPC nemeni, smaz ho")
 		return
 	end
 	load()
 	core.on_change(load)
-	RegisterScriptCallback("on_specific_character_init", on_init)
+	if not core.has_callback("on_specific_character_init") then
+		core.warn("hodnosti: callback on_specific_character_init chybi (starsi exe) - rozsahy hodnosti NPC se neprepocitaji")
+	else
+		RegisterScriptCallback("on_specific_character_init", on_init)
+	end
 	RegisterScriptCallback("actor_on_first_update", rescale_actor)
 end

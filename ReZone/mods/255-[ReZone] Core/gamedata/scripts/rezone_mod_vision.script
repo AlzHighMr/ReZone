@@ -4,7 +4,7 @@ local KEY = "transparency_threshold"
 local OKEY = "rz_orig_" .. KEY
 local STALKER_CLS = { AI_STL_S = true, ["AI_STL"] = true }
 
-local groups = nil	-- { st_free = {sec,...}, st_danger = {...}, mutant = {...} }
+local groups = nil
 local warned = false
 
 local function can_write()
@@ -64,7 +64,7 @@ function load()
 		st_danger = clamp(tonumber(g("st_danger")) or 0, 0, 1),
 		mutant    = clamp(tonumber(g("mutant")) or 0, 0, 1),
 	}
-	if g("enabled") == false then k.st_free, k.st_danger, k.mutant = 0, 0, 0 end		-- vypnuto = puvodni hodnoty
+	if g("enabled") == false then k.st_free, k.st_danger, k.mutant = 0, 0, 0 end
 	local any = k.st_free > 0 or k.st_danger > 0 or k.mutant > 0
 	local touched = ini_sys:section_exist("stalker_vision_free") and ini_sys:line_exist("stalker_vision_free", OKEY)
 	if not any and not touched then return end
@@ -89,5 +89,5 @@ end
 
 function on_game_start()
 	core.on_change(load)
-	load()	-- hned, at to plati uz pro NPC pri nacitani urovne
+	load()
 end

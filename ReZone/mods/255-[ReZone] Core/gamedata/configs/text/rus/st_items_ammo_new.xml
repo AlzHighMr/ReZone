@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 
-<!--
-	Ammunition
--->
-
 <string_table>
-	<!-- descriptors -->
+
 	<string id="st_dot">
 		<text>•</text>
 	</string>
@@ -123,8 +119,6 @@
 		<text>unlink belt</text>
 	</string>
 
-	
-	<!-- handgun -->
 	<string id="ammo_new_9x18_fmj">
 		<text>9x18mm FMJ rounds</text>
 	</string>
@@ -134,7 +128,7 @@
 	<string id="ammo_new_9x18_fmj_s">
 		<text>9x18 FMJ</text>
 	</string>
-	
+
 	<string id="ammo_new_9x18_plus">
 		<text>9x18mm +P+ FMJ rounds</text>
 	</string>
@@ -164,7 +158,7 @@
 	<string id="ammo_new_9x18_sp7_s">
 		<text>9x18 SP-7</text>
 	</string>
-	
+
 	<string id="ammo_new_9x18_ap">
 		<text>9x18mm RG028 rounds</text>
 	</string>
@@ -194,7 +188,7 @@
 	<string id="ammo_new_9x19_fmj_s">
 		<text>9x19 FMJ</text>
 	</string>
-	
+
 	<string id="ammo_new_9x19_plus">
 		<text>9x19mm FMJ +P+ rounds</text>
 	</string>
@@ -204,7 +198,7 @@
 	<string id="ammo_new_9x19_plus_s">
 		<text>9x19 FMJ+</text>
 	</string>
-	
+
 	<string id="ammo_new_9x19_pbp">
 		<text>9x19mm JHP rounds</text>
 	</string>
@@ -214,7 +208,7 @@
 	<string id="ammo_new_9x19_pbp_s">
 		<text>9x19 JHP</text>
 	</string>
-	
+
 	<string id="ammo_new_9x19_pbps">
 		<text>9x19mm JSP +P rounds</text>
 	</string>
@@ -233,7 +227,7 @@
 	<string id="ammo_new_9x19_ap_s">
 		<text>9x19 AP</text>
 	</string>
-	
+
 	<string id="ammo_new_9x19_7n31">
 		<text>9x19mm 7N31 AP rounds</text>
 	</string>
@@ -262,7 +256,7 @@
 	<string id="ammo_new_11.43x23_fmjs_s">
 		<text>.45 AP+P</text>
 	</string>
-	
+
 	<string id="ammo_new_11.43x23_hp">
 		<text>.45 ACP JHP rounds</text>
 	</string>
@@ -301,7 +295,7 @@
 	<string id="ammo_new_357_jfp_s">
 		<text>.357 JFP</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x25_p">
 		<text>7.62x25mm P rounds</text>
 	</string>
@@ -311,7 +305,7 @@
 	<string id="ammo_new_7.62x25_p_s">
 		<text>7.62x25 P</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x25_ps">
 		<text>7.62x25mm Pst rounds</text>
 	</string>
@@ -379,8 +373,6 @@
 		<text>5.7x28 HP</text>
 	</string>
 
-
-	<!-- shotgun -->
 	<string id="ammo_new_12x70_buck">
 		<text>12x70 #00 Buckshot</text>
 	</string>
@@ -438,9 +430,7 @@
 	<string id="ammo_new_12x70_dragon_s">
 		<text>12x70 Dragonsbreath</text>
 	</string>
-	
-	<!-- small rifle -->
-	
+
 	<string id="ammo_new_5.45x39_fmj">
 		<text>5.45x39mm FMJ rounds</text>
 	</string>
@@ -449,8 +439,8 @@
 	</string>
 	<string id="ammo_new_5.45x39_fmj_s">
 		<text>5.45x39 FMJ</text>
-	</string>	
-	
+	</string>
+
 	<string id="ammo_new_5.45x39_fmjs">
 		<text>5.45x39mm EP rounds</text>
 	</string>
@@ -499,8 +489,7 @@
 	<string id="ammo_new_5.45x39_aps_s">
 		<text>5.45x39 AP+</text>
 	</string>
-	
-	
+
 	<string id="ammo_new_5.56x45_fmj">
 		<text>5.56x45mm FMJ rounds</text>
 	</string>
@@ -520,7 +509,7 @@
 	<string id="ammo_new_5.56x45_fmjs_s">
 		<text>5.56x45 FMJ+</text>
 	</string>
-	
+
 	<string id="ammo_new_5.56x45_hp">
 		<text>5.56x45mm HP rounds</text>
 	</string>
@@ -530,7 +519,7 @@
 	<string id="ammo_new_5.56x45_hp_s">
 		<text>5.56x45 HP</text>
 	</string>
-	
+
 	<string id="ammo_new_5.56x45_varma">
 		<text>5.56x45mm 'Varmageddon' rounds</text>
 	</string>
@@ -540,7 +529,7 @@
 	<string id="ammo_new_5.56x45_varma_s">
 		<text>5.56x45 Varma</text>
 	</string>
-	
+
 	<string id="ammo_new_5.56x45_ap">
 		<text>5.56x45mm AP rounds</text>
 	</string>
@@ -550,7 +539,7 @@
 	<string id="ammo_new_5.56x45_ap_s">
 		<text>5.56x45 AP</text>
 	</string>
-	
+
 	<string id="ammo_new_5.56x45_ss190">
 		<text>5.56x45mm EP rounds</text>
 	</string>
@@ -560,7 +549,7 @@
 	<string id="ammo_new_5.56x45_ss190_s">
 		<text>5.56x45 EP</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x39_fmj">
 		<text>7.62x39mm FMJ rounds</text>
 	</string>
@@ -569,7 +558,7 @@
 	</string>
 	<string id="ammo_new_7.62x39_fmj_s">
 		<text>7.62x39 FMJ</text>
-	</string>	
+	</string>
 	<string id="ammo_new_7.62x39_fmjs">
 		<text>7.62x39mm M67 FMJ rounds</text>
 	</string>
@@ -578,7 +567,7 @@
 	</string>
 	<string id="ammo_new_7.62x39_fmjs_s">
 		<text>7.62x39 FMJ+</text>
-	</string>	
+	</string>
 
 	<string id="ammo_new_7.62x39_ap">
 		<text>7.62x39mm AP rounds</text>
@@ -600,7 +589,6 @@
 		<text>7.62x39 API</text>
 	</string>
 
-	
 	<string id="ammo_new_9x39_sp5">
 		<text>9x39mm SP-5 rounds</text>
 	</string>
@@ -619,7 +607,7 @@
 	<string id="ammo_new_9x39_spp_s">
 		<text>9x39 SPP</text>
 	</string>
-	
+
 	<string id="ammo_new_9x39_pab9">
 		<text>9x39mm PAB-9 rounds</text>
 	</string>
@@ -638,10 +626,7 @@
 	</string>
 	<string id="ammo_new_9x39_ap_s">
 		<text>9x39 SP-6</text>
-	</string>	
-	
-
-	<!-- large rifle -->
+	</string>
 
 	<string id="ammo_new_7.62x54r">
 		<text>7.62x54mm PP rounds</text>
@@ -662,7 +647,7 @@
 	<string id="ammo_new_7.62x54_7n1_s">
 		<text>7.62x54 7N1</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x54_hp">
 		<text>7.62x54mm HP rounds</text>
 	</string>
@@ -681,7 +666,7 @@
 	<string id="ammo_new_7.62x54_fp_s">
 		<text>7.62x54 FP</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x54_ap">
 		<text>7.62x54mm AP rounds</text>
 	</string>
@@ -701,7 +686,7 @@
 	<string id="ammo_new_7.62x54_api_s">
 		<text>7.62x54 API</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x54_ppr">
 		<text>7.62x54mm PP rounds (linked)</text>
 	</string>
@@ -711,7 +696,7 @@
 	<string id="ammo_new_7.62x54_ppr_s">
 		<text>7.62x54 PP MG</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x54_split">
 		<text>7.62x54mm Split Shot rounds</text>
 	</string>
@@ -721,7 +706,6 @@
 	<string id="ammo_new_7.62x54_split_s">
 		<text>7.62x54 Split</text>
 	</string>
-	
 
 	<string id="ammo_new_7.62x51_fmj">
 		<text>7.62x51mm M80 ball rounds</text>
@@ -732,7 +716,7 @@
 	<string id="ammo_new_7.62x51_fmj_s">
 		<text>7.62x51 FMJ</text>
 	</string>
-	
+
 	<string id="ammo_new_7.62x51_fmjs">
 		<text>7.62x51mm Mk316 Match rounds</text>
 	</string>
@@ -762,7 +746,6 @@
 	<string id="ammo_new_7.62x51_slap_s">
 		<text>7.62x51 SLAP</text>
 	</string>
-	
 
 	<string id="ammo_new_7.92x33_fmj">
 		<text>7.92x57mm Mauser rounds</text>
@@ -793,7 +776,7 @@
 	<string id="ammo_new_7.92x33_ap_s">
 		<text>7.92x57 AP</text>
 	</string>
-	
+
 	<string id="ammo_new_7.92x33_shock">
 		<text>7.92x57mm Lightning rounds</text>
 	</string>
@@ -803,7 +786,7 @@
 	<string id="ammo_new_7.92x33_shock_s">
 		<text>7.92x57 Shock</text>
 	</string>
-	
+
 	<string id="ammo_new_12.7x55_fmj">
 		<text>12.7x55mm STs-130 rounds</text>
 	</string>
@@ -813,7 +796,7 @@
 	<string id="ammo_new_12.7x55_fmj_s">
 		<text>12.7x55</text>
 	</string>
-	
+
 	<string id="ammo_new_12.7x55_fmjs">
 		<text>12.7x55mm STs-130 PT2 rounds</text>
 	</string>
@@ -842,8 +825,7 @@
 	<string id="ammo_new_12.7x55_exp_s">
 		<text>12.7x55 EXP</text>
 	</string>
-	
-	
+
 	<string id="ammo_new_338_lapua">
 		<text>.338 Lapua Magnum rounds</text>
 	</string>
@@ -853,7 +835,7 @@
 	<string id="ammo_new_338_lapua_s">
 		<text>.338 Lapua Magnum</text>
 	</string>
-	
+
 	<string id="ammo_new_338_ap">
 		<text>.338 'Soulripper' Sabot rounds</text>
 	</string>
@@ -863,9 +845,7 @@
 	<string id="ammo_new_338_ap_s">
 		<text>.338 DU AP</text>
 	</string>
-	
-	<!-- some leftovers -->
-	
+
 	<string id="ammo_new_50_bmg">
 		<text>.50 BMG M2 Ball Rounds</text>
 	</string>
@@ -885,7 +865,6 @@
 		<text>.50 AP</text>
 	</string>
 
-	
 	<string id="ammo_new_4.6x30_fmj">
 		<text>4.6x30mm FMJ rounds</text>
 	</string>

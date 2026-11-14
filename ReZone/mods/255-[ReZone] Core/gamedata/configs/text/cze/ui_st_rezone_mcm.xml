@@ -484,13 +484,13 @@
 		<text>Hustota stalkerù</text>
 	</string>
 	<string id="ui_mcm_rz_pop_st_pop_desc">
-		<text>Kolik skupin stalkerù se objevuje na místech (1 = vanilla, 0 = žádné). Nahrazuje volbu v Možnosti > ALife.</text>
+		<text>Kolik skupin stalkerù se objevuje na místech (1 = vanilla Anomaly, tj. 0,5 v Možnostech > ALife; 0 = žádné). Když je Populace zapnutá, volby hustoty v Možnostech > ALife se schovají a platí tato – pro respawn, zaèátek hry, offline boj i warfare.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_mu_pop">
 		<text>Hustota mutantù</text>
 	</string>
 	<string id="ui_mcm_rz_pop_mu_pop_desc">
-		<text>Kolik smeèek mutantù se objevuje (1 = vanilla, 0 = žádné). Nahrazuje volbu v Možnosti > ALife.</text>
+		<text>Kolik smeèek mutantù se objevuje (1 = vanilla Anomaly, tj. 0,75 v Možnostech > ALife; 0 = žádné). Když je Populace zapnutá, volby hustoty v Možnostech > ALife se schovají a platí tato.</text>
 	</string>
 	<string id="ui_mcm_rz_pop_respawn">
 		<text>Doba respawnu</text>
@@ -1366,7 +1366,7 @@
 		<text>Žízeò</text>
 	</string>
 	<string id="ui_mcm_rz_needs_thirst_desc">
-		<text>Jak rychle pøibývá žízeò, i bìhem spánku (u EFTH hydratace).</text>
+		<text>Jak rychle pøibývá žízeò, i bìhem spánku (u EFTH hydratace). Spánek tì kvùli násobièi nikdy nedostane do žíznì, která ubírá zdraví a výdrž – nad vanilla pøírùstek jen do žluté úrovnì. Po probuzení tì žízeò nikdy nevrátí rovnou do vynuceného spánku (vanilla smyèka, ve které se dalo umøít).</text>
 	</string>
 	<string id="ui_mcm_rz_needs_sleep">
 		<text>Únava</text>

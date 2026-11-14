@@ -3,7 +3,7 @@ local PATH = rezone_mcm.path("rz_ball") .. "/wear"
 local CLASSES = { EQU_STLK = true, E_STLK = true, EQU_HLMET = true, E_HLMET = true }
 local KEYS = { "burn_immunity", "strike_immunity", "shock_immunity", "wound_immunity", "radiation_immunity",
 	"telepatic_immunity", "chemical_burn_immunity", "explosion_immunity", "fire_wound_immunity" }
-local MARK_SEC, MARK_KEY = "actor_condition", "rz_wear_mult"   -- znacka: jaky nasobic je ted v pameti
+local MARK_SEC, MARK_KEY = "actor_condition", "rz_wear_mult"
 
 local warned = false
 local function can_write()
@@ -71,5 +71,5 @@ end
 
 function on_game_start()
 	core.on_change(load)
-	load()		-- hned, pred nactenim predmetu z ulozene hry
+	load()
 end

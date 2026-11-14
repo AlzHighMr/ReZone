@@ -1,19 +1,3 @@
--- ======================================================================
--- ReZone Artefacts CoP - screen effects (standalone, no EFTH needed)
--- ----------------------------------------------------------------------
---  Poison: green PPE (anims\rzaf\poison.ppe) + Hunt-style vignette and
---          small slime drips at the screen edges. Smooth onset, lingers
---          and fades slowly after the poison ends.
---  Electro: short electric PPE (anims\rzaf\electro.ppe) + 3 soft electric
---          arc flashes at the screen edges (max ~1 per second).
---  All curves are smooth (no strobing) - safe for photosensitive players.
---  Based on the EFT Health System ReZone effects, own ids and textures,
---  so both mods can run at the same time.
---
---  API:  rezone_af_fx.Poison(seconds, strength)
---        rezone_af_fx.Electro(strength)
--- ======================================================================
-
 local PPE_LOOP   = "rzaf\\poison.ppe"
 local PPE_WAVE   = "rzaf\\poison_wave.ppe"
 local PPE_ELEC   = "rzaf\\electro.ppe"
@@ -22,8 +6,8 @@ local ID_WAVE    = 99262
 local ID_ELEC    = 99263
 
 local UPDATE_MS  = 50
-local FADE_IN    = 0.18          -- poison level per second
-local LINGER_S   = 30            -- after-effect length (s)
+local FADE_IN    = 0.18
+local LINGER_S   = 30
 
 local CFG_P = rezone_mcm.path("rz_af") .. "/"
 local function cfg(k, def)
@@ -36,7 +20,6 @@ local function argb(a, r, g, b)
 	return GetARGB(math.floor(clamp(a, 0, 1) * 255), r or 255, g or 255, b or 255)
 end
 
--- ------------------------------------------------------------- decals
 local decals = {}
 
 local function decal(name, full)
@@ -74,9 +57,8 @@ local function remove_decals()
 	decals = {}
 end
 
--- ------------------------------------------------------------- poison
 local poison = { until_t = 0, strength = 0, factor = 0, fade_from = nil, fade_t = 0, loop = false, next_drip = 0, next_wave = 0 }
-local drips = {}		-- [1..3] = state
+local drips = {}
 
 function Poison(seconds, strength)
 	if (not cfg("poison_fx", true)) then return end
@@ -84,7 +66,7 @@ function Poison(seconds, strength)
 	poison.until_t = math.max(poison.until_t, now + (seconds or 20) * 1000)
 	poison.strength = math.max(poison.strength, clamp(strength or 1, 0.2, 1))
 	poison.fade_from = nil
-	-- nausea wave right away (max once per 15 s)
+
 	if (now > poison.next_wave) then
 		poison.next_wave = now + 15000
 		pcall(level.add_pp_effector, PPE_WAVE, ID_WAVE, false)
@@ -97,7 +79,7 @@ function IsPoisoned()
 	return time_global() < poison.until_t
 end
 
-local DRIP_ZONES = { { 4, 150 }, { 874, 1020 } }		-- left / right edge (1024 px wide UI)
+local DRIP_ZONES = { { 4, 150 }, { 874, 1020 } }
 
 local function start_drip(i, strength)
 	local z = DRIP_ZONES[math.random(1, #DRIP_ZONES)]
@@ -144,8 +126,8 @@ local function update_poison(dt)
 
 	local s = clamp(cfg("poison_fx_strength", 0.5), 0, 1.5)
 	local on = cfg("poison_fx", true)
-	-- PPE loop
-	local f = on and poison.factor * s * 2 or 0			-- strength 0.5 = factor 1.0 of the ppe
+
+	local f = on and poison.factor * s * 2 or 0
 	if (f > 0.005) then
 		if (not poison.loop) then
 			pcall(level.add_pp_effector, PPE_LOOP, ID_LOOP, true)
@@ -156,11 +138,11 @@ local function update_poison(dt)
 		pcall(level.remove_pp_effector, ID_LOOP)
 		poison.loop = false
 	end
-	-- vignette
+
 	local v = decal("rzaf_poison_vignette", true)
 	local pulse = 0.9 + 0.1 * math.sin(now / 1000 * 2.4)
 	set_alpha(v, on and poison.factor * 0.85 * pulse * s * 2 or 0)
-	-- drips only while poisoned
+
 	if (on) and (now < poison.until_t) and (now > poison.next_drip) then
 		poison.next_drip = now + math.random(2500, 5000)
 		for i = 1, 3 do
@@ -170,8 +152,6 @@ local function update_poison(dt)
 	update_drips()
 end
 
--- ------------------------------------------------------------- electro
--- arc flashes: start (s), strength, fade in / hold / fade out (ms)
 local ARC_FLASHES = { { 0.10, 1.0, 150, 120, 550 }, { 1.05, 0.6, 180, 100, 600 }, { 2.10, 0.35, 200, 100, 700 } }
 local arcs = { start = nil, strength = 1, frames = {} }
 
@@ -216,7 +196,6 @@ local function update_arcs()
 	end
 end
 
--- ------------------------------------------------------------- loop
 local last = 0
 local function actor_on_update()
 	local now = time_global()
@@ -236,7 +215,6 @@ local function actor_on_net_destroy()
 	remove_decals()
 end
 
--- poison timer survives save / load
 local function save_state(m_data)
 	local left = poison.until_t - time_global()
 	m_data.rzaf_fx = (left > 1000) and { left = left, s = poison.strength } or nil

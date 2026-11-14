@@ -1,29 +1,25 @@
 ROOT = "rezone"
 
-local defs      = nil   -- [path] = default
-local cache     = {}    -- [path] = hodnota
-local listeners = {}    -- seznam funkci volanych po zmene nastaveni
+local defs      = nil
+local cache     = {}
+local listeners = {}
 
 DEBUG = false
 
-------------------------------------------------------------
--- Log
-------------------------------------------------------------
+local debug_known = false
+
 function log(fmt, ...)
-	if DEBUG then
-		printf("[ReZone] " .. fmt, ...)
-	end
+	if debug_on() then printf("[ReZone] " .. fmt, ...) end
 end
 
 function warn(fmt, ...)
-	if not DEBUG then return end	-- jen se zapnutym Ladenim (log ma zustat cisty)
-	printf("! [ReZone] " .. fmt, ...)
+	if debug_on() then printf("! [ReZone] " .. fmt, ...) end
 end
 
-------------------------------------------------------------
--- Existuje callback v axr_main? (nektere pridavaji jen modded exes / jine mody)
--- RegisterScriptCallback na neexistujici jmeno pise do logu chybu pri kazdem nacteni.
-------------------------------------------------------------
+function dbg(fmt, ...)
+	if debug_on() then printf(fmt, ...) end
+end
+
 local intercepts_ref = false
 function has_callback(name)
 	if intercepts_ref == false then
@@ -37,13 +33,10 @@ function has_callback(name)
 			end
 		end
 	end
-	if not intercepts_ref then return true end      -- nelze zjistit: zaregistrovat jako driv
+	if not intercepts_ref then return true end
 	return intercepts_ref[name] ~= nil
 end
 
-------------------------------------------------------------
--- Vychozi hodnoty ze stromu MCM
-------------------------------------------------------------
 local function walk(t, path)
 	for i = 1, #(t.gr or {}) do
 		local v = t.gr[i]
@@ -71,14 +64,23 @@ function default(path)
 	return defs[path]
 end
 
-------------------------------------------------------------
--- Cteni nastaveni
-------------------------------------------------------------
 local function mcm_ready()
 	return ui_mcm and ui_mcm.get and not (ui_mcm.is_gathering and ui_mcm.is_gathering())
 end
 
-local NIL = {}       -- znacka "hodnota neni": neznama cesta se necte z MCM znovu (MCM by psal do logu)
+function debug_on()
+	if not debug_known then
+		local p = ROOT .. "/rz_other/rz_debug/debug"
+		local v
+		if mcm_ready() then v = ui_mcm.get(p) end
+		if v == nil and axr_main and axr_main.config then v = axr_main.config:r_value("mcm", p, 1) end
+		DEBUG = v == true
+		debug_known = true
+	end
+	return DEBUG
+end
+
+local NIL = {}
 function get(path)
 	local v = cache[path]
 	if v ~= nil then
@@ -97,12 +99,10 @@ function get(path)
 	return v
 end
 
--- getter pro jednu stranku: local g = rezone_core.page(rezone_mcm.path("rz_pdmg")); g("enabled")
 function page(p)
 	return function(key) return get(p .. "/" .. key) end
 end
 
--- existuje v MCM stranka nebo volba s touto cestou? (pro odkazy a kontroly kompatibility)
 function mcm_has(path)
 	if not (ui_mcm and path) then return false end
 	if ui_mcm.check_opt_table and ui_mcm.check_opt_table(path) then return true end
@@ -113,16 +113,12 @@ function mcm_has(path)
 	return false
 end
 
--- precte hodnotu ciziho modu bez chybove hlasky MCM, kdyz modul chybi
 function foreign_get(path)
 	if mcm_ready() and mcm_has(path) then
 		return ui_mcm.get(path)
 	end
 end
 
-------------------------------------------------------------
--- Druh mutanta (configs\rezone\rezone_species.ltx, cache podle sekce)
-------------------------------------------------------------
 local species_cache = {}
 local sp_ini, sp_known = nil, nil
 
@@ -157,14 +153,10 @@ function species_of(obj)
 	return s or nil
 end
 
-------------------------------------------------------------
--- Zmeny nastaveni
-------------------------------------------------------------
 function on_change(fn)
 	listeners[#listeners + 1] = fn
 end
 
--- callback registrovat jen kdyz je potreba (want), jinak odregistrovat
 local active_cb = {}
 function toggle_cb(name, fn, want)
 	local k = active_cb[fn]
@@ -180,6 +172,7 @@ end
 function reload()
 	cache = {}
 	DEBUG = get(ROOT .. "/rz_other/rz_debug/debug") == true
+	debug_known = true
 	for i = 1, #listeners do
 		local ok, err = pcall(listeners[i])
 		if not ok then warn("chyba pri nacitani nastaveni: %s", tostring(err)) end
@@ -191,16 +184,11 @@ local function on_option_change()
 	reload()
 end
 
-------------------------------------------------------------
--- Obchodnici: druh a doplneni zasob
-------------------------------------------------------------
--- "supplier", "mechanic", "barman", "medic", "companion" (podle obchodniho profilu)
 function trader_kind(npc)
 	local ltx = trade_manager and trade_manager.get_trade_profile and trade_manager.get_trade_profile(npc:id(), "cfg_ltx")
 	if not ltx then return end
 	ltx = string.lower(ltx):gsub("/", "\\")
-	-- bezni stalkeri: Anomaly da kazdemu NPC profil trade_generic (muzes s nim smenovat),
-	-- ale nejsou to obchodnici (stejny test jako release_npc_inventory.script)
+
 	if string.find(ltx, "trade_generic", 1, true) then return "generic" end
 	if string.find(ltx, "companion") then return "companion" end
 	if string.find(ltx, "mechanic") then return "mechanic" end
@@ -210,7 +198,7 @@ function trader_kind(npc)
 end
 
 local restock_fns = {}
--- fn(npc) se zavola ~1 s po doplneni zasob obchodnika (az po pridanych vecech jinych modu)
+
 function on_restock(fn)
 	restock_fns[#restock_fns + 1] = fn
 	if #restock_fns == 1 then
@@ -243,10 +231,6 @@ function on_restock(fn)
 	end
 end
 
-------------------------------------------------------------
--- Kontextove menu inventare: vlastni polozky na volnych slotech 9 a 10
-------------------------------------------------------------
--- add_menu(name_fn, action_fn): name_fn(obj, bag, mode) vrati id textu nebo nil
 local menus = {}
 local menu_patched = false
 
@@ -254,7 +238,6 @@ local function slot_free(obj, i)
 	return not SYS_GetParam(0, obj:section(), "use" .. i .. "_functor")
 end
 
--- vrati polozku, ktera pro predmet na danem slotu plati (slot 9 = prvni, 10 = druha)
 local function menu_for(ui, obj, bag, i)
 	local n = 0
 	for _, m in ipairs(menus) do
@@ -297,6 +280,6 @@ end
 
 function on_game_start()
 	RegisterScriptCallback("on_option_change", on_option_change)
-	-- moduly se zaregistruji ve svem on_game_start, prvni nacteni az po nich
+
 	RegisterScriptCallback("actor_on_first_update", reload)
 end

@@ -3,9 +3,9 @@ local PATH = "rezone/rz_other/rz_menu/mm_bg_video"
 
 local cache
 
-local function log(fmt, ...)       -- bezne zpravy jen s Ladenim, chyby ("!") vzdy
-	if rezone_core and rezone_core.DEBUG then
-		printf("[ReZone video menu] " .. fmt, ...)
+local function log(fmt, ...)
+	if rezone_core then
+		rezone_core.dbg("[ReZone video menu] " .. fmt, ...)
 	end
 end
 
@@ -14,7 +14,7 @@ local function add(list, seen, name)
 	local low = string.lower(name):gsub("/", "\\")
 	local short = low:match("([^\\]+)%.ogm$")
 	if not short then return end
-	-- jen soubory z nasi slozky (file_list_open_ex vraci cesty od textures\)
+
 	if low:find("\\", 1, true) and not low:find("rz_mm_bg\\", 1, true) then return end
 	if not seen[short] then
 		seen[short] = true
@@ -22,21 +22,20 @@ local function add(list, seen, name)
 	end
 end
 
--- seznam videi: { "jmeno", ... } (bez pripony, abecedne)
 function list_videos()
 	if cache then return cache end
 	cache = {}
 	local seen = {}
 	local fs = getFS and getFS()
 	if not fs then return cache end
-	-- 1) obsah slozky
+
 	if fs.file_list_open then
 		local ok, fl = pcall(fs.file_list_open, fs, "$game_textures$", DIR, bit_or(FS.FS_ListFiles, FS.FS_RootOnly))
 		if ok and fl then
 			for i = 0, fl:Size() - 1 do add(cache, seen, fl:GetAt(i)) end
 		end
 	end
-	-- 2) zaloha: vsechna .ogm v textures, filtr na nasi slozku
+
 	if #cache == 0 and fs.file_list_open_ex then
 		local ok, fl = pcall(fs.file_list_open_ex, fs, "$game_textures$", FS.FS_ListFiles, "*.ogm")
 		if ok and fl then
@@ -51,7 +50,6 @@ function list_videos()
 	return cache
 end
 
--- obsah seznamu v MCM
 function mcm_content()
 	local gts = game.translate_string
 	local t = { { "default", gts("ui_mcm_lst_rz_mm_bg_default") }, { "random", gts("ui_mcm_lst_rz_mm_bg_random") } }
@@ -76,7 +74,6 @@ local function chosen()
 	return nil
 end
 
--- rozliseni videa: hlavicka Theora (sirka/vyska obrazu), jinak konec jmena, jinak 1920x1080
 local function video_size(name)
 	local ok, w, h = pcall(function()
 		local p = getFS():update_path("$game_textures$", DIR .. name .. ".ogm")
@@ -86,7 +83,7 @@ local function video_size(name)
 		f:close()
 		local i = data:find("\128theora", 1, true)
 		if not i then return end
-		local b = { data:byte(i + 7 + 3, i + 7 + 3 + 9) }	-- za verzi: FMBW(2) FMBH(2) PICW(3) PICH(3)
+		local b = { data:byte(i + 7 + 3, i + 7 + 3 + 9) }
 		if #b < 10 then return end
 		local pw = b[5] * 65536 + b[6] * 256 + b[7]
 		local ph = b[8] * 65536 + b[9] * 256 + b[10]
@@ -100,8 +97,7 @@ local function video_size(name)
 	return 1920, 1080, "vychozi"
 end
 
--- aktualni volba; u "nahodne" se video losuje jen jednou (pri spusteni / pri zmene volby)
-local setting		-- hodnota z MCM, pro kterou plati 'video'
+local setting
 local video, vw, vh
 
 local function refresh()
@@ -121,10 +117,8 @@ local function refresh()
 	return old ~= video
 end
 
-local xml_has = {}	-- ktere prvky ma aktualni ui_mm_main (verze, upozorneni MCM)
+local xml_has = {}
 
--- textury pozadi: celoobrazovkovy auto_static (nebo vlastni textura) v prvnim <background>
--- (jmeno textury neresime - kazdy mod ho ma jine: ui_mm_main_bg, ui_background_new, ...)
 local function bg_textures(xml_obj)
 	local out = {}
 	local bg = xml_obj:query("background")[1]
@@ -146,10 +140,10 @@ local function bg_textures(xml_obj)
 	return out
 end
 
-local live_cb	-- definovano nize (zmena za behu)
+local live_cb
 
 function on_xml_read()
-	-- registrace hned pri startu (on_xml_read se vola drive nez vznikne prvni hlavni menu)
+
 	if live_cb then live_cb() end
 	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
 		local f = string.lower(xml_file_name)
@@ -163,7 +157,7 @@ function on_xml_read()
 		local n = 0
 		for _, el in ipairs(bg_textures(xml_obj)) do
 			xml_obj:setText(el, DIR .. video)
-			-- vyrez = cele video (bez nej UI video nevykresli)
+
 			xml_obj:setElementAttr(el, { x = 0, y = 0, width = vw, height = vh })
 			n = n + 1
 		end
@@ -171,17 +165,11 @@ function on_xml_read()
 	end)
 end
 
-------------------------------------------------------------------------------------------
--- Zmena za behu
--- Hlavni menu existuje, dokud je otevrene MCM (MCM je jeho podokno). Po "Pouzit" se nad
--- puvodni pozadi postavi nove (z ui_mm_main.xml, uz s novym videem) a ovladaci prvky menu
--- se presunou zpet nad nej. Puvodni pozadi zustane pod nim zakryte.
-------------------------------------------------------------------------------------------
-local mm	-- posledni vytvorene hlavni menu
+local mm
 
 local function raise(wnd, auto_del)
 	if not wnd then return end
-	wnd:SetAutoDelete(false)		-- DetachChild by jinak okno smazal
+	wnd:SetAutoDelete(false)
 	mm:DetachChild(wnd)
 	mm:AttachChild(wnd)
 	wnd:SetAutoDelete(auto_del)
@@ -191,14 +179,13 @@ local function rebuild()
 	if not mm then return end
 	local ok, err = pcall(function()
 		if mm.rz_mm_bg then
-			mm:DetachChild(mm.rz_mm_bg)	-- auto-delete: stare nove pozadi se uvolni
+			mm:DetachChild(mm.rz_mm_bg)
 			mm.rz_mm_bg = nil
 		end
 		local xml = CScriptXmlInit()
-		xml:ParseFile("ui_mm_main.xml")	-- projde on_xml_read -> uz s novou volbou
+		xml:ParseFile("ui_mm_main.xml")
 		mm.rz_mm_bg = xml:InitStatic("background", mm)
 
-		-- texty, ktere puvodne lezely primo v menu (jinak by byly pod novym pozadim)
 		if mm.rz_mm_ver then mm:DetachChild(mm.rz_mm_ver) mm.rz_mm_ver = nil end
 		if xml_has.version then
 			local flavor = anomaly_flavor and (" - " .. anomaly_flavor.get_flavor()) or ""
@@ -214,7 +201,6 @@ local function rebuild()
 			mm.rz_mm_disc:TextControl():SetText(game.translate_string("ui_mm_disclaimer"))
 		end
 
-		-- ovladani menu zpet nahoru
 		raise(mm.shniaga, true)
 		raise(mm.msg_wnd, false)
 	end)
@@ -233,10 +219,6 @@ local function main_menu_on_init(wnd)
 	refresh()
 end
 
-
--- v hlavnim menu MCM posila jen mcm_option_change (on_option_change az ve hre). Ten callback
--- ale vznikne az s nactenim ui_mcm (pri prvnim otevreni MCM), proto se registruje i odtud
--- (rezone_mcm.on_mcm_load) - drive se v menu video zmenilo az po nacteni hry.
 local live_mcm = false
 function ensure_live()
 	if live_mcm then return end

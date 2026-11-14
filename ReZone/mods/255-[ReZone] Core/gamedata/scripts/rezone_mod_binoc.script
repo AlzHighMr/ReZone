@@ -7,8 +7,8 @@ local KEYS = {
 	{ key = "scope_alive_detector", off = "", is_on = function(v) return v ~= "" end },
 }
 
-local enabled = true	-- true = vanilla (detekce zapnuta)
-local touched = nil		-- { [sec] = true } sekce, ktere jsme zmenili v tomto behu hry
+local enabled = true
+local touched = nil
 local warned = false
 
 local function can_write()
@@ -30,7 +30,7 @@ end
 local function disable_all()
 	touched = touched or {}
 	local n = 0
-	-- nejdriv sebrat, pak zapisovat (nemenit ini behem prochazeni)
+
 	local todo = {}
 	ini_sys:section_for_each(function(sec)
 		for _, k in ipairs(KEYS) do
@@ -92,5 +92,5 @@ end
 
 function on_game_start()
 	core.on_change(load)
-	load()	-- hned pri startu, aby se dalekohledy nacetly uz s novou hodnotou
+	load()
 end

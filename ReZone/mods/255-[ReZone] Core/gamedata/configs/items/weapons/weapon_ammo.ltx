@@ -1,6 +1,4 @@
-
 [ammo_base]:identity_immunities,default_weapon_params
-;belt				                     = true;
 slot				                     = -1
 cform                                    = skeleton
 class                                    = AMMO
@@ -30,13 +28,10 @@ k_air_resistance                         = 1
 disassemble_parts				 		 = prt_i_ammo,prt_i_ammo
 snd_on_take								 = ammo
 
-
-
-;;---------------------PISTOL AMMO----------------------
-[ammo_9x18_fmj]:ammo_base ; Pst
+[ammo_9x18_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x18_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x18_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x18_fmj.ogf
@@ -60,10 +55,9 @@ k_air_resistance = 0.8
 k_bullet_speed	= 1
 k_ap			= 0.1
 
-
 wm_size			= 0.042
 
-[ammo_9x18_fmj_bad]:ammo_9x18_fmj ; +P+ FMJ
+[ammo_9x18_fmj_bad]:ammo_9x18_fmj
 
 inv_weight		= .16
 cost = 900
@@ -83,15 +77,12 @@ k_ap			= 0.14
 impair      = 1.25
 k_cam_dispersion                         = 1.6
 
-
 wm_size			= 0.042
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x18_pmm]:ammo_base ; HP
+[ammo_9x18_pmm]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x18_pmm" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x18_pmm"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x18_pmm.ogf
@@ -114,11 +105,10 @@ k_impulse		= 0.7
 k_bullet_speed	= 1
 k_ap			= 0.15
 
-
 wm_size         = 0.062
 k_air_resistance = 0.8
 
-[ammo_9x18_pmm_bad]:ammo_9x18_pmm ; SP-7
+[ammo_9x18_pmm_bad]:ammo_9x18_pmm
 
 inv_grid_width = 2
 inv_grid_height = 1
@@ -136,15 +126,12 @@ k_ap			= 0.14
 impair      = 1.25
 k_cam_dispersion                         = 1.6
 
-
 wm_size         = 0.062
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x18_ap]:ammo_base ; RGO
+[ammo_9x18_ap]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x18_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x18_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x18_fmj.ogf
@@ -167,10 +154,9 @@ k_impulse		= 0.55
 k_air_resistance = 0.8
 k_ap			= 0.2
 
-
 wm_size			= 0.028
 
-[ammo_9x18_ap_bad]:ammo_9x18_ap ; 7N25
+[ammo_9x18_ap_bad]:ammo_9x18_ap
 cost = 1450
 inv_grid_width = 2
 inv_grid_height = 1
@@ -188,16 +174,12 @@ k_ap			= 0.19
 impair      = 1.25
 k_cam_dispersion                         = 1.6
 
-
-
 wm_size			= 0.028
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x19_fmj]:ammo_base ; FMJ
+[ammo_9x19_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -220,10 +202,9 @@ k_impulse		= 0.44
 k_air_resistance = 0.8
 k_ap			= 0.15
 
-
 wm_size         = 0.048
 
-[ammo_9x19_fmj_bad]:ammo_9x19_fmj ; +P+
+[ammo_9x19_fmj_bad]:ammo_9x19_fmj
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 2
@@ -241,16 +222,12 @@ k_ap			= 0.14
 impair      = 1.25
 k_cam_dispersion                         = 1.6
 
-
-
 wm_size         = 0.048
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x19_pbp]:ammo_base ; JHP
+[ammo_9x19_pbp]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_pbp" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_pbp"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x19_pbp.ogf
@@ -273,12 +250,9 @@ k_impulse		= 1
 k_air_resistance = 0.8
 k_ap			= 0.15
 
-
-
 wm_size         = 0.068
 
-
-[ammo_9x19_pbp_bad]:ammo_9x19_pbp ; JSP +P
+[ammo_9x19_pbp_bad]:ammo_9x19_pbp
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 2
@@ -296,15 +270,12 @@ k_ap			= 0.14
 impair      = 1.1
 k_cam_dispersion                         = 1.5
 
-
 wm_size         = 0.068
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x19_ap]:ammo_base ; 7N21
+[ammo_9x19_ap]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -329,12 +300,11 @@ k_bullet_speed	= 1.2
 k_ap			= 0.3
 k_cam_dispersion                         = 1.5
 
-
 wm_size         = 0.033
 
 tier                                     = 2
 
-[ammo_9x19_ap_bad]:ammo_9x19_ap ; 7N31
+[ammo_9x19_ap_bad]:ammo_9x19_ap
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 2
@@ -352,16 +322,12 @@ k_bullet_speed	= 1.3
 k_ap			= 0.28
 k_cam_dispersion                         = 1.9
 
-
-
 wm_size         = 0.033
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.7x28_ss190]:ammo_base ; civ fmj
+[ammo_5.7x28_ss190]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_57x28_ss190.ogf
@@ -384,12 +350,11 @@ k_impulse		= 0.36
 k_air_resistance = 0.8
 k_ap			= 0.35
 
-
 wm_size         = 0.017
 
 tier                                     = 2
 
-[ammo_5.7x28_ss190_bad]:ammo_5.7x28_ss190 ; ss190 ap
+[ammo_5.7x28_ss190_bad]:ammo_5.7x28_ss190
 
 inv_grid_width = 2
 inv_grid_height = 1
@@ -405,17 +370,14 @@ k_impulse		= 0.36
 k_ap			= 0.33
 k_air_resistance = 0.8
 
-
 wm_size         = 0.017
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.7x28_ss195]:ammo_base ; hp
+[ammo_5.7x28_ss195]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_57x28_ss195.ogf
@@ -438,12 +400,11 @@ k_impulse		= 1
 k_air_resistance = 0.8
 k_ap			= 0.2
 
-
 wm_size         = 0.019
 
 tier                                     = 2
 
-[ammo_5.7x28_ss195_bad]:ammo_5.7x28_ss195 ; chaos
+[ammo_5.7x28_ss195_bad]:ammo_5.7x28_ss195
 cost = 3125
 inv_grid_width = 2
 inv_grid_height = 1
@@ -459,17 +420,14 @@ k_air_resistance = 0.8
 k_ap			= 0.19
 k_cam_dispersion                         = 1.5
 
-
 wm_size         = 0.019
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.62x25_p]:ammo_base ;p
+[ammo_7.62x25_p]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_762x25_p.ogf
@@ -493,12 +451,11 @@ k_impulse		= 0.7
 k_air_resistance = 0.8
 k_ap			= 0.15
 
-
 wm_size        	= 0.033
 
 tier                                     = 3
 
-[ammo_7.62x25_p_bad]:ammo_7.62x25_p ; pst
+[ammo_7.62x25_p_bad]:ammo_7.62x25_p
 cost = 1120
 inv_grid_width = 2
 inv_grid_height = 1
@@ -514,17 +471,14 @@ k_ap			= 0.14
 k_air_resistance = 0.8
 k_cam_dispersion                         = 1.1
 
-
 wm_size        	= 0.033
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
- 
-[ammo_7.62x25_ps]:ammo_base ; hp
+[ammo_7.62x25_ps]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_pbp" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_pbp"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_762x25_ps.ogf
@@ -547,12 +501,11 @@ k_impulse		= 0.5
 k_air_resistance = 0.8
 k_ap			= 0.25
 
-
 wm_size        	= 0.036
 
 tier                                     = 3
 
-[ammo_7.62x25_ps_bad]:ammo_7.62x25_ps ; acid
+[ammo_7.62x25_ps_bad]:ammo_7.62x25_ps
 
 inv_grid_width = 2
 inv_grid_height = 1
@@ -575,12 +528,10 @@ wm_size        	= 0.036
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_11.43x23_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_11.43x23_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_11.43x23_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_1143x23_fmj.ogf
@@ -603,13 +554,11 @@ k_impulse		= 0.55
 k_air_resistance = 0.8
 k_ap			= 0.1
 
-
 wm_size         = 0.072
 
 tier                                     = 2
 
-
-[ammo_11.43x23_fmj_bad]:ammo_11.43x23_fmj ; +P
+[ammo_11.43x23_fmj_bad]:ammo_11.43x23_fmj
 cost = 1300
 inv_grid_width = 2
 inv_grid_height = 1
@@ -627,16 +576,14 @@ k_bullet_speed	= 1.2
 impair      = 1.25
 k_cam_dispersion                         = 1.7
 
-
 wm_size         = 0.072
 
 tier                                     = 2
 
-
-[ammo_11.43x23_hydro]:ammo_base ; hp
+[ammo_11.43x23_hydro]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_11.43x23_hydro" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_11.43x23_hydro"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_1143x23_Hydro.ogf
@@ -658,14 +605,12 @@ k_disp			= 1
 k_impulse		= 0.7
 k_ap			= 0.2
 
-
-
 wm_size         = 0.088
 k_air_resistance = 0.8
 
 tier                                     = 2
 
-[ammo_11.43x23_hydro_bad]:ammo_11.43x23_hydro ;rip
+[ammo_11.43x23_hydro_bad]:ammo_11.43x23_hydro
 
 inv_grid_width = 2
 inv_grid_height = 1
@@ -682,24 +627,19 @@ k_bullet_speed	= 1.2
 impair      = 1.15
 k_cam_dispersion                         = 1.5
 
-
-
 wm_size         = 0.088
 k_air_resistance = 0.8
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_357_hp_mag]:identity_immunities,default_weapon_params,ammo_base ; HP
+[ammo_357_hp_mag]:identity_immunities,default_weapon_params,ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-$spawn			= "weapons\wpn_ammo\ammo_357_hp_mag" ; option for Level Editor
+discovery_dependency =
+$spawn			= "weapons\wpn_ammo\ammo_357_hp_mag"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_357_jhp.ogf
 $prefetch 		= 64
-
 
 box_size		= 15
 cost = 1430
@@ -722,7 +662,7 @@ wm_size        	= 0.048
 
 tier                                     = 1
 
-[ammo_357_hp_mag_bad]:ammo_357_hp_mag ; JFP
+[ammo_357_hp_mag_bad]:ammo_357_hp_mag
 
 cost        = 2235
 inv_grid_width = 2
@@ -739,18 +679,15 @@ k_ap			= 0.23
 k_bullet_speed  = 1.1
 k_cam_dispersion                         = 1.7
 
-
 wm_size        	= 0.048
 k_air_resistance = 0.7
 
 tier                                     = 1
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.45x39_fmj]:ammo_base ; 7N6
+[ammo_5.45x39_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.45x39_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.45x39_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_545x39_fmj.ogf
@@ -773,12 +710,11 @@ k_impulse		= 0.6
 k_air_resistance = 0.25
 k_ap			= 0.4
 
-
 wm_size         = 0.034
 
 tier                                     = 2
 
-[ammo_5.45x39_fmj_bad]:ammo_5.45x39_fmj ; 7N6 terminal
+[ammo_5.45x39_fmj_bad]:ammo_5.45x39_fmj
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 14
@@ -795,23 +731,19 @@ k_bullet_speed	= 0.9
 k_impulse		= 0.58
 k_ap			= 0.38
 
-
 wm_size         = 0.034
 k_air_resistance = 0.25
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.45x39_ep]:ammo_base ; HP
+[ammo_5.45x39_ep]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.45x39_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.45x39_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_545x39_fmj.ogf
 $prefetch 		= 64
-
 
 box_size		= 15
 cost = 1550
@@ -828,13 +760,12 @@ k_disp			= 1
 k_impulse		= 0.55
 k_ap			= 0.5
 
-
 wm_size         = 0.031
 k_air_resistance = 0.25
 
 tier                                     = 2
 
-[ammo_5.45x39_ep_bad]:ammo_5.45x39_ep ; JSP
+[ammo_5.45x39_ep_bad]:ammo_5.45x39_ep
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 14
@@ -852,18 +783,14 @@ k_bullet_speed	= 1.1
 impair      = 1.05
 k_cam_dispersion                         = 1.1
 
-
-
 wm_size         = 0.031
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.45x39_ap]:ammo_base ; 7N10
+[ammo_5.45x39_ap]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.45x39_ap" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.45x39_ap"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_545x39_ap.ogf
@@ -887,13 +814,12 @@ k_impulse		= 0.55
 k_ap			= 0.6
 k_cam_dispersion                         = 1.5
 
-
 wm_size         = 0.031
 k_air_resistance = 0.25
 
 tier                                     = 3
 
-[ammo_5.45x39_ap_bad]:ammo_5.45x39_ap ; 7N22
+[ammo_5.45x39_ap_bad]:ammo_5.45x39_ap
 inv_grid_width = 2
 inv_grid_height = 1
 inv_grid_x = 14
@@ -910,18 +836,15 @@ impair      = 1.1
 k_bullet_speed	= 1.2
 k_cam_dispersion                         = 1.9
 
-
 wm_size         = 0.031
 k_air_resistance = 0.25
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.56x45_fmj]:ammo_base ; M193
+[ammo_5.56x45_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.56x45_ss190" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.56x45_ss190"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_556x45_ss190.ogf
@@ -942,7 +865,6 @@ inv_name_short		                     = ammo_new_5.56x45_fmj_s
 k_disp			= 1
 k_impulse		= 0.58
 k_ap			= 0.33
-
 
 wm_size         = 0.058
 k_air_resistance = 0.25
@@ -972,18 +894,15 @@ tracer = true
 tracer_color_ID = 3
 4to1_tracer = false
 
-
 wm_size         = 0.058
 k_air_resistance = 0.25
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.56x45_ss190]:ammo_base ; HP
+[ammo_5.56x45_ss190]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.56x45_ss190" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.56x45_ss190"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_556x45_ss190.ogf
@@ -1006,12 +925,11 @@ k_impulse		= 0.58
 k_ap			= 0.4
 k_air_resistance = 0.25
 
-
 wm_size         = 0.058
 
 tier                                     = 3
 
-[ammo_5.56x45_ss190_bad]:ammo_5.56x45_ss190 ; Varmageddon
+[ammo_5.56x45_ss190_bad]:ammo_5.56x45_ss190
 
 inv_grid_width = 2
 inv_grid_height = 1
@@ -1028,18 +946,14 @@ k_impulse		= 0.56
 k_air_resistance = 0.25
 impair      = 1.1
 
-
-
 wm_size         = 0.058
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_5.56x45_ap]:ammo_base ; M855A1
+[ammo_5.56x45_ap]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_5.56x45_ap" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_5.56x45_ap"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_556x45_ap.ogf
@@ -1062,12 +976,9 @@ k_impulse		= 0.54
 k_air_resistance = 0.25
 k_cam_dispersion                         = 1.5
 
-
-
 wm_size         = 0.034
 
 tier                                     = 4
-
 
 [ammo_5.56x45_ap_bad]:ammo_5.56x45_ap
 cost        = 2500
@@ -1086,20 +997,16 @@ k_impulse		= 0.52
 k_air_resistance = 0.25
 k_bullet_speed	= 1.05
 
-
 wm_size         = 0.034
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.62x39_fmj]:ammo_base ; 57-N-231
+[ammo_7.62x39_fmj]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-;$spawn			= "weapons\ammo\ammo_7.62x39_fmj" ; option for Level Editor
+discovery_dependency =
 class			= AMMO
 cform                   = skeleton
-visual                  = dynamics\weapons\wpn_ammo\ammo_762x39_fmj.ogf 
+visual                  = dynamics\weapons\wpn_ammo\ammo_762x39_fmj.ogf
 $prefetch 		= 64
 box_size		= 15
 cost = 1530
@@ -1122,7 +1029,7 @@ k_cam_dispersion                         = 1.2
 
 tier                                     = 4
 
-[ammo_7.62x39_fmj_bad]:ammo_7.62x39_fmj ; M67
+[ammo_7.62x39_fmj_bad]:ammo_7.62x39_fmj
 cost		= 1730
 inv_grid_width = 2
 inv_grid_height = 1
@@ -1138,18 +1045,13 @@ k_impulse		= 0.62
 k_air_resistance = 0.25
 impair      = 0.9
 
-
-
 wm_size         = 0.062
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_7.62x39_ap]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-;$spawn			= "weapons\ammo\ammo_7.62x39_ap" ; option for Level Editor
+discovery_dependency =
 class			= AMMO_S
 cform                   = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_762x39_ap.ogf
@@ -1174,7 +1076,6 @@ k_ap		    = 0.55
 k_air_resistance = 0.25
 impair      = 1.15
 k_cam_dispersion                         = 1.5
-
 
 wm_size         = 0.054
 
@@ -1201,22 +1102,18 @@ tracer_color_ID = 0
 4to1_tracer = false
 k_cam_dispersion                         = 1.6
 
-
 wm_size         = 0.054
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x39_pab9]:ammo_base ; SPP
+[ammo_9x39_pab9]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x39_pab9" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x39_pab9"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x39_pab9.ogf
 $prefetch 		= 64
-
 
 inv_weight		= .43
 box_size		= 15
@@ -1235,12 +1132,11 @@ k_impulse		= 0.55
 k_ap			= 0.35
 k_air_resistance = 0.13
 
-
 wm_size         = 0.048
 
 tier                                     = 3
 
-[ammo_9x39_pab9_bad]:ammo_9x39_pab9 ; SP-5
+[ammo_9x39_pab9_bad]:ammo_9x39_pab9
 cost		= 3400
 
 inv_grid_width = 2
@@ -1256,23 +1152,18 @@ k_ap			= 0.33
 k_impulse		= 0.53
 k_air_resistance = 0.15
 
-
-
 wm_size         = 0.048
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_9x39_ap]:ammo_base ; PAB-9
+[ammo_9x39_ap]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x39_ap" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x39_ap"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x39_ap.ogf
 $prefetch 		= 64
-
 
 inv_weight		= .43
 box_size		= 15
@@ -1290,12 +1181,11 @@ k_impulse		= 0.5
 k_ap			= 0.45
 k_air_resistance = 0.15
 
-
 wm_size         = 0.042
 
 tier                                     = 4
 
-[ammo_9x39_ap_bad]:ammo_9x39_ap ; SP-6
+[ammo_9x39_ap_bad]:ammo_9x39_ap
 cost		= 3500
 
 inv_grid_width = 2
@@ -1311,23 +1201,18 @@ k_ap			= 0.43
 k_impulse		= 0.47
 k_air_resistance = 0.15
 
-
-
 wm_size         = 0.042
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_12x70_buck]:ammo_base ; #00
+[ammo_12x70_buck]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_12x70_buck" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_12x70_buck"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_12x70_buck.ogf
 $prefetch 		= 64
-
 
 box_size		= 10
 cost = 800
@@ -1354,7 +1239,7 @@ wm_size         = 0.022
 
 tier                                     = 2
 
-[ammo_12x70_buck_bad]:ammo_12x70_buck ; Magnum
+[ammo_12x70_buck_bad]:ammo_12x70_buck
 
 box_size		= 10
 cost = 1300
@@ -1384,12 +1269,10 @@ wm_size         = 0.022
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12x76_zhekan]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_12x76_zhekan" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_12x76_zhekan"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_12x76_zhekan.ogf
@@ -1450,13 +1333,10 @@ k_bullet_speed	= 1.2
 
 tier                                     = 2
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12x76_dart]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-$spawn			= "weapons\ammo\ammo_12x76_zhekan" ; option for Level Editor
+discovery_dependency =
+$spawn			= "weapons\ammo\ammo_12x76_zhekan"
 class			= AMMO
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_12x76_dart.ogf
@@ -1490,8 +1370,6 @@ wm_size         = 0.05
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12x76_dart_bad]:ammo_12x76_dart
 
 box_size		= 10
@@ -1505,7 +1383,6 @@ inv_grid_y = 5
 icons_texture = ui\ui_maid_ammo
 inv_name = ammo_new_12x70_dragon
 inv_name_short		                     = ammo_new_12x70_dragon_s
-
 
 k_disp			= 6.6
 k_ap			= 0.2
@@ -1523,15 +1400,10 @@ wm_size         = 0.05
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_12x76_zhekan_heli]:ammo_12x76_zhekan ; Do not use! Fake zhekan for helicopter
-$spawn			= ;"weapons\ammo\ammo_12x76_zhekan_heli" ; option for Level Editor
+[ammo_12x76_zhekan_heli]:ammo_12x76_zhekan
+$spawn			=
 k_disp			= 1
-k_hit			= 1.0 ;  1
+k_hit			= 1.0
 k_impulse		= 1
 k_ap			= 0.75
 tracer			= on
@@ -1540,15 +1412,12 @@ tracer_color_ID	= 3
 wm_size         = 0.06
 explosive		= off
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.92x33_fmj]:ammo_base ; 7.92x57 German with mild steel
+[ammo_7.92x33_fmj]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-;$spawn			= "weapons\ammo\ammo_7.62x39_fmj" ; option for Level Editor
+discovery_dependency =
 class			= AMMO
 cform                   = skeleton
-visual                  = dynamics\weapons\wpn_ammo\ammo_792x33_fmj.ogf 
+visual                  = dynamics\weapons\wpn_ammo\ammo_792x33_fmj.ogf
 
 $prefetch 		= 64
 
@@ -1572,7 +1441,7 @@ k_air_resistance = 0.25
 
 tier                                     = 4
 
-[ammo_7.92x33_fmj_bad]:ammo_7.92x33_fmj ; ap
+[ammo_7.92x33_fmj_bad]:ammo_7.92x33_fmj
 
 cost        = 1500
 inv_grid_width = 2
@@ -1585,7 +1454,7 @@ inv_name_short		                     = ammo_new_7.92x33_match_s
 
 k_dist          = 1
 k_disp			= 1.1
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.66
 k_ap		    = 0.43
 wm_size         = 0.066
@@ -1595,12 +1464,9 @@ k_cam_dispersion= 1.4
 impair          = 1.1
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.92x33_ap]:ammo_base ; 7.92x57 hollowpoint
+[ammo_7.92x33_ap]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-;$spawn			= "weapons\ammo\ammo_7.62x39_ap" ; option for Level Editor
+discovery_dependency =
 class			= AMMO_S
 cform                   = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_792x33_ap.ogf
@@ -1641,7 +1507,7 @@ inv_name_short		                     = ammo_new_7.92x33_shock_s
 
 impair      = 1.5
 k_disp			= 1.1
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.47
 k_ap		    = 0.53
 wm_size         = 0.057
@@ -1650,12 +1516,10 @@ k_bullet_speed	= 0.9
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.62x51_fmj]:ammo_base ; M80
+[ammo_7.62x51_fmj]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-$spawn			= "weapons\ammo\ammo_7.62x51_fmj" ; option for Level Editor
+discovery_dependency =
+$spawn			= "weapons\ammo\ammo_7.62x51_fmj"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_762x51_fmj.ogf
@@ -1675,7 +1539,7 @@ inv_name = ammo_new_7.62x51_fmj
 inv_name_short		                     = ammo_new_7.62x51_fmj_s
 
 k_disp			= 1
-k_hit			= 1.0 ;  1.1
+k_hit			= 1.0
 k_impulse		= 0.66
 k_ap		    = 0.4
 
@@ -1683,8 +1547,6 @@ wm_size         = 0.068
 k_air_resistance = 0.1
 
 tier                                     = 4
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_7.62x51_fmj_bad]:ammo_7.62x51_fmj
 
@@ -1702,7 +1564,7 @@ inv_name_short		                     = ammo_new_7.62x51_fmjs_s
 
 k_dist          = 1.5
 k_disp			= 0.6
-k_hit			= 1.0 ;  1.05
+k_hit			= 1.0
 k_impulse		= 0.63
 k_ap		    = 0.38
 k_cam_dispersion                         = 0.8
@@ -1712,12 +1574,10 @@ k_air_resistance = 0.07
 k_bullet_speed	= 1.1
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.62x51_ap]:ammo_base ; M61
+[ammo_7.62x51_ap]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-$spawn			= "weapons\ammo\ammo_7.62x51_ap" ; option for Level Editor
+discovery_dependency =
+$spawn			= "weapons\ammo\ammo_7.62x51_ap"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_762x51_ap.ogf
@@ -1746,7 +1606,7 @@ k_air_resistance = 0.1
 
 tier                                     = 4
 
-[ammo_7.62x51_ap_bad]:ammo_7.62x51_ap ; slap
+[ammo_7.62x51_ap_bad]:ammo_7.62x51_ap
 box_size		= 10
 cost = 3750
 inv_weight		= .26
@@ -1760,7 +1620,7 @@ inv_name = ammo_new_7.62x51_slap
 inv_name_short		                     = ammo_new_7.62x51_slap_s
 
 k_disp			= 0.6
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.48
 k_ap		    = 0.8
 k_bullet_speed	= 1.2
@@ -1771,12 +1631,10 @@ k_air_resistance = 0.05
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_pkm_100]:ammo_base ; 57-N-323S belt
+[ammo_pkm_100]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_pkm_100" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_pkm_100"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_pkm.ogf
@@ -1795,12 +1653,11 @@ inv_name = ammo_new_7.62x54_ppr
 inv_name_short		                     = ammo_new_7.62x54_ppr_s
 
 k_disp			= 1.2
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.56
 k_ap			= 0.43
 k_air_resistance = 0.1
 k_bullet_speed	= 1
-
 
 wm_size         = 0.058
 
@@ -1830,17 +1687,14 @@ k_bullet_speed  = 0.6
 k_air_resistance = 1.7
 impair      = 1.5
 
-
 wm_size         = 0.058
 
 tier                                     = 3
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_7.62x54_7h1]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_7.62x54_7h1" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_7.62x54_7h1"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_762x54_7h1.ogf
@@ -1863,7 +1717,6 @@ k_disp			= 1.2
 k_impulse		= 0.8
 k_ap			= 0.5
 k_air_resistance = 0.04
-
 
 wm_size         = 0.064
 
@@ -1889,17 +1742,14 @@ k_impulse		= 0.76
 k_air_resistance = 0.04
 k_cam_dispersion                         = 0.8
 
-
 wm_size         = 0.064
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[ammo_7.62x54_ap]:ammo_base ; 7N13
+[ammo_7.62x54_ap]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_ap"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_762x54_ap.ogf
@@ -1923,7 +1773,6 @@ k_impulse		= 0.45
 k_ap		    = 0.6
 k_air_resistance = 0.05
 k_cam_dispersion                         = 1.5
-
 
 wm_size         = 0.051
 
@@ -1953,20 +1802,14 @@ tracer = true
 tracer_color_ID = 0
 k_cam_dispersion                         = 1.7
 
-
-
-
 wm_size         = 0.051
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_7.62x54_7h14]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_7h14" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_7h14"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_762x54_7h14.ogf
@@ -1989,12 +1832,9 @@ k_impulse		= 0.74
 k_air_resistance = 0.05
 k_ap			= 0.6
 
-
 wm_size         = 0.06
 
 tier                                     = 4
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_7.62x54_7h14_bad]:ammo_7.62x54_7h14
 
@@ -2017,22 +1857,19 @@ k_air_resistance = 0.05
 k_cam_dispersion                         = 0.8
 k_bullet_speed	= 1.2
 
-
 wm_size         = 0.06
 
 tier                                     = 4
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_12.7x55_fmj]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_7h1" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_7h1"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_127x55_fmj.ogf
 
 $prefetch 		= 64
-
 
 box_size		= 10
 cost = 4000
@@ -2055,8 +1892,6 @@ wm_size         = 0.086
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12.7x55_fmj_bad]:ammo_12.7x55_fmj
 box_size		= 10
 cost = 6000
@@ -2076,20 +1911,14 @@ k_impulse		= 0.96
 k_air_resistance = 0.03
 k_bullet_speed = 1.1
 
-
 wm_size         = 0.086
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12.7x55_ap]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_7h1" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_7h1"
 class			= AMMO_S
 cform                   = skeleton
 visual			= dynamics\weapons\wpn_ammo\ammo_127x55_ap.ogf
@@ -2114,12 +1943,9 @@ k_impulse		= 0.9
 k_air_resistance = 0.05
 k_cam_dispersion                         = 1.6
 
-
 wm_size			= 0.082
 
 tier                                     = 5
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_12.7x55_ap_bad]:ammo_12.7x55_ap
 box_size		= 10
@@ -2148,15 +1974,10 @@ wm_size			= 0.082
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_magnum_300]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_7.62x54_7h1" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_7.62x54_7h1"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_338_lapua.ogf
@@ -2180,12 +2001,9 @@ k_impulse		= 0.9
 k_air_resistance = 0.05
 k_ap			= 0.8
 
-
 wm_size         = 0.066
 
 tier                                     = 3
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_magnum_300_bad]:ammo_magnum_300
 box_size		= 10
@@ -2210,19 +2028,14 @@ tracer = true
 tracer_color_ID = 2
 k_cam_dispersion                         = 3
 
-
-
 wm_size         = 0.066
 
 tier                                     = 3
 
-
-
-;;;;;;;;;;;;;;;;;;;;;;;KNIFE AMMO;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_knife]:ammo_base
 GroupControlSection	                     = spawn_group
 discovery_dependency 	                 =
-$spawn			                         = "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			                         = "weapons\ammo\ammo_9x19_fmj"
 class			                         = AMMO_S
 cform                                    = skeleton
 visual                                   = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2255,7 +2068,7 @@ k_air_resistance 	                     = 1.5
 [ammo_knife_2]:ammo_base
 GroupControlSection	                     = spawn_group
 discovery_dependency 	                 =
-$spawn			                         = "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			                         = "weapons\ammo\ammo_9x19_fmj"
 class			                         = AMMO_S
 cform                                    = skeleton
 visual                                   = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2288,7 +2101,7 @@ k_air_resistance 	                     = 1.5
 [ammo_knife_3]:ammo_base
 GroupControlSection	                     = spawn_group
 discovery_dependency 	                 =
-$spawn			                         = "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			                         = "weapons\ammo\ammo_9x19_fmj"
 class			                         = AMMO_S
 cform                                    = skeleton
 visual                                   = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2321,7 +2134,7 @@ k_air_resistance 	                     = 1.5
 [ammo_knife_4]:ammo_base
 GroupControlSection	                     = spawn_group
 discovery_dependency 	                 =
-$spawn			                         = "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			                         = "weapons\ammo\ammo_9x19_fmj"
 class			                         = AMMO_S
 cform                                    = skeleton
 visual                                   = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2354,7 +2167,7 @@ k_air_resistance 	                     = 1.5
 [ammo_knife_5]:ammo_base
 GroupControlSection	                     = spawn_group
 discovery_dependency 	                 =
-$spawn			                         = "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			                         = "weapons\ammo\ammo_9x19_fmj"
 class			                         = AMMO_S
 cform                                    = skeleton
 visual                                   = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2387,12 +2200,10 @@ k_air_resistance 	                     = 1.5
 [ammo_knife_6]:ammo_knife_5
 k_ap                                     = 0.50
 
-
-;;;;;;;;;;;;;;;;;;;;;;;Binoc AMMO;;;;;;;;;;;;;;;;;;;;;;;
 [ammo_binoc]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency 	=
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform                  = skeleton
 visual                 = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
@@ -2402,7 +2213,7 @@ fake_ammo								 = true
 
 cost			= 0
 
-box_size		= 0 ;50
+box_size		= 0
 
 inv_name		= none
 inv_name_short	= none
@@ -2418,7 +2229,7 @@ k_disp			= 1
 k_hit			= 1
 k_impulse		= 1
 k_ap			= 1
-impair			= 1.5 ; 1
+impair			= 1.5
 buck_shot		= 1
 tracer			= off
 wm_size         	= 0.001
@@ -2443,15 +2254,15 @@ cost                        = 216
 visual                      = dynamics\weapons\wpn_ammo\ammo_12x76_zhekan.ogf
 tracer                      = off
 wm_size                     = 0.0000001
-		
-[ammo_batteries]:ammo_base	; dummy ammo section to be diplayed in UPD UI
+
+[ammo_batteries]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency 	=
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
-description		= st_energy_descr ; st_batteries_descr
+description		= st_energy_descr
 $prefetch 		= 64
 fake_ammo								 = true
 
@@ -2459,8 +2270,8 @@ cost			= 0
 
 box_size		= 1
 
-inv_name		= st_energy ; st_batteries
-inv_name_short	= st_energy ; st_batteries
+inv_name		= st_energy
+inv_name_short	= st_energy
 inv_weight		= 0.01
 
 inv_grid_width		= 1
@@ -2479,24 +2290,24 @@ tracer				= off
 wm_size         	= 1
 k_air_resistance 	= 1
 
-[ammo_batteries_dead]:ammo_base	; dummy ammo section to be diplayed in UPD UI
+[ammo_batteries_dead]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency 	=
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
-description		= st_energy_descr ; st_batteries_dead_descr
+description		= st_energy_descr
 $prefetch 		= 64
 fake_ammo								 = true
 
 cost			= 0
 
-box_size		= 1 ;50
+box_size		= 1
 
-inv_name		= st_energy ; st_batteries_dead
-inv_name_short	= st_energy ; st_batteries_dead
-inv_weight		= .1 ;.24
+inv_name		= st_energy
+inv_name_short	= st_energy
+inv_weight		= .1
 
 inv_grid_width		= 1
 inv_grid_height		= 1
@@ -2514,24 +2325,24 @@ tracer				= off
 wm_size         	= 1
 k_air_resistance 	= 1
 
-[ammo_batteries_ccell]:ammo_base	; dummy ammo section to be diplayed in UPD UI
+[ammo_batteries_ccell]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency 	=
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_9x19_fmj.ogf
-description		= st_energy_descr ; st_batteries_ccell_descr
+description		= st_energy_descr
 $prefetch 		= 64
 fake_ammo								 = true
 
 cost			= 0
 
-box_size		= 1 ;50
+box_size		= 1
 
-inv_name		= st_energy ; st_batteries_ccell
-inv_name_short	= st_energy ; st_batteries_ccell
-inv_weight		= .1 ;.24
+inv_name		= st_energy
+inv_name_short	= st_energy
+inv_weight		= .1
 
 inv_grid_width		= 1
 inv_grid_height		= 1
@@ -2549,14 +2360,12 @@ tracer				= off
 wm_size         	= 1
 k_air_resistance 	= 1
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_12x70_buck_self]:ammo_12x70_buck
 
 [ammo_12x76_bull]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency = 
-$spawn			= "weapons\ammo\ammo_12x76_zhekan" ; option for Level Editor
+discovery_dependency =
+$spawn			= "weapons\ammo\ammo_12x76_zhekan"
 class			= AMMO
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_12x76_dart.ogf
@@ -2579,7 +2388,7 @@ inv_grid_height = 1
 inv_grid_x = 18
 inv_grid_y = 1
 k_disp			= 1
-k_hit			= 2.5 ;  2.5
+k_hit			= 2.5
 k_ap			= 0.3
 tracer			= off
 4to1_tracer		= false
@@ -2591,7 +2400,7 @@ tier                                     = 5
 [ammo_4.6x30_fmj]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_46x30_fmj.ogf
@@ -2613,7 +2422,6 @@ inv_grid_height = 1
 inv_grid_x = 12
 inv_grid_y = 0
 
-
 k_disp			= 1
 k_impulse		= 0.36
 k_ap			= 0.35
@@ -2623,12 +2431,10 @@ k_air_resistance = 0.8
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_4.6x30_fmj_bad]:ammo_4.6x30_fmj
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 description		= ammo_new_4.6x30_fmj_descr
@@ -2640,7 +2446,6 @@ cost			= 2200
 box_size		= 15
 cost = 2
 
-;inv_name		= ammo_new_4.6x30_fmj_bad
 inv_name_short	= ammo_new_4.6x30_fmj_s
 inv_weight		= .09
 
@@ -2650,10 +2455,9 @@ inv_grid_x = 14
 inv_grid_y = 0
 
 k_disp			= 0.7
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.33
 k_ap			= 0.33
-
 
 wm_size         = 0.017
 k_air_resistance = 0.8
@@ -2661,12 +2465,10 @@ k_bullet_speed	= 1.1
 
 tier                                     = 2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_4.6x30_fmj_verybad]:ammo_4.6x30_fmj
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_9x19_fmj" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_9x19_fmj"
 class			= AMMO_S
 cform           = skeleton
 description		= ammo_new_4.6x30_fmj_descr
@@ -2678,7 +2480,6 @@ cost			= 250
 box_size		= 15
 cost = 2
 
-;inv_name		= ammo_new_4.6x30_fmj_verybad
 inv_name_short	= ammo_new_4.6x30_fmj_s
 inv_weight		= .09
 
@@ -2688,7 +2489,7 @@ inv_grid_x			= 59
 inv_grid_y			= 36
 
 k_disp			= 1
-k_hit			= 1.0 ;  0.9
+k_hit			= 1.0
 k_impulse		= 0.3
 k_ap			= 0.3
 impair			= 1
@@ -2699,11 +2500,10 @@ k_bullet_speed	= 0.9
 
 tier                                     = 1
 
-
-[ammo_50_bmg]:ammo_base ; 7N13
+[ammo_50_bmg]:ammo_base
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_ap"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_50_bmg.ogf
@@ -2734,12 +2534,10 @@ k_air_resistance = 0.05
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_50_bmg_bad]:ammo_50_bmg
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_ap"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_50_bmg.ogf
@@ -2760,10 +2558,9 @@ inv_grid_x = 14
 inv_grid_y = 7
 
 k_disp			= 1
-k_hit			= 1.0 ;  0.95
+k_hit			= 1.0
 k_impulse		= 0.43
 k_ap		    = 0.58
-
 
 wm_size         = 0.051
 k_air_resistance = 0.05
@@ -2771,12 +2568,10 @@ k_bullet_speed	= 0.95
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_50_bmg_verybad]:ammo_50_bmg
 GroupControlSection	= spawn_group
-discovery_dependency	= 
-$spawn			= "weapons\ammo\ammo_7.62x54_ap" ; option for Level Editor
+discovery_dependency	=
+$spawn			= "weapons\ammo\ammo_7.62x54_ap"
 class			= AMMO
 cform                   = skeleton
 visual                  = dynamics\weapons\wpn_ammo\ammo_50_bmg.ogf
@@ -2788,7 +2583,6 @@ cost					 = 500
 box_size		= 10
 cost = 2
 
-;inv_name		= ammo_new-50-bmg_verybad
 inv_name_short		= ammo_new-50-bmg_s
 inv_weight		= .33
 
@@ -2797,7 +2591,7 @@ inv_grid_height    = 1
 inv_grid_x         = 59
 inv_grid_y         = 38
 
-k_hit			= 1.0 ;  0.9
+k_hit			= 1.0
 k_impulse		= 0.4
 k_ap		    = 0.55
 impair			= 1
@@ -2808,14 +2602,10 @@ k_bullet_speed	= 0.9
 
 tier                                     = 4
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Grenades for Attachable grenade launcher
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_vog-25]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_vog-25" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_vog-25"
 class			= S_VOG25
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_vog_25.ogf
@@ -2830,7 +2620,7 @@ box_size		= 1
 inv_name		= ammo-vog-25
 icons_texture = ui\ui_vog_icon
 inv_name_short	= ammo-vog-25_s
-inv_weight		= 0.26 ;.08
+inv_weight		= 0.26
 
 inv_grid_width = 1
 inv_grid_height = 1
@@ -2843,7 +2633,7 @@ kill_msg_width		= 21
 kill_msg_height		= 22
 
 k_disp			= 1
-k_hit			= 1.0 ;  2
+k_hit			= 1.0
 k_impulse		= 1.3
 k_ap			= 0.35
 buck_shot		= 0
@@ -2859,7 +2649,7 @@ grenade_ammo							 = true
 [ammo_vog-25_bad]:ammo_vog-25
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_vog-25" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_vog-25"
 class			= S_VOG25
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_vog_25.ogf
@@ -2871,9 +2661,8 @@ cost			= 480
 
 box_size		= 1
 
-;inv_name		= ammo-vog-25_bad
 inv_name_short	= ammo-vog-25_s
-inv_weight		= 0.87 ;.08
+inv_weight		= 0.87
 
 inv_grid_width = 1
 inv_grid_height = 1
@@ -2886,7 +2675,7 @@ kill_msg_width		= 21
 kill_msg_height		= 22
 
 k_disp			= 1
-k_hit			= 1.0 ;  1.536
+k_hit			= 1.0
 k_impulse		= 1.2
 k_ap			= 0.30
 impair			= 1.1
@@ -2903,7 +2692,7 @@ grenade_ammo							 = true
 [ammo_vog-25_verybad]:ammo_vog-25
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_vog-25" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_vog-25"
 class			= S_VOG25
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_vog_25.ogf
@@ -2915,9 +2704,8 @@ cost			= 230
 
 box_size		= 1
 
-;inv_name		= ammo-vog-25_verybad
 inv_name_short	= ammo-vog-25_s
-inv_weight		= 0.26 ;.08
+inv_weight		= 0.26
 
 inv_grid_width = 1
 inv_grid_height = 1
@@ -2930,7 +2718,7 @@ kill_msg_width		= 21
 kill_msg_height		= 22
 
 k_disp			= 1
-k_hit			= 1.0 ;  1.01
+k_hit			= 1.0
 k_impulse		= 1.12
 k_ap			= 0.27
 impair			= 1.3
@@ -2938,21 +2726,16 @@ buck_shot		= 0
 tracer			= off
 wm_size         = 0.05
 
-; fake_grenade_name = fake_vog
 fake_grenade_name = wpn_fake_missile
 
 tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_m209]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_m209" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_m209"
 class			= S_M209
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_m209.ogf
@@ -2966,7 +2749,7 @@ box_size		= 1
 inv_name		= ammo-m209
 icons_texture = ui\ui_m209_icon
 inv_name_short	= ammo-m209_s
-inv_weight		= 0.2 ;.08
+inv_weight		= 0.2
 
 inv_grid_width = 1
 inv_grid_height = 1
@@ -2978,9 +2761,8 @@ kill_msg_y			= 232
 kill_msg_width		= 19
 kill_msg_height		= 22
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  2.1
+k_hit			= 1.0
 k_impulse		= 1.35
 k_ap			= 0.35
 buck_shot		= 0
@@ -2993,12 +2775,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_m209_bad]:ammo_m209
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_m209" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_m209"
 class			= S_M209
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_m209.ogf
@@ -3010,12 +2790,10 @@ cost			= 665
 
 box_size		= 1
 
-;inv_name		= ammo-m209_bad
 inv_name = ammo_new_m209
 description		= ammo_new_m209_descr
 inv_name_short	= ammo_new_m209_s
-inv_weight		= 0.4 ;.08
-
+inv_weight		= 0.4
 
 inv_grid_width = 1
 inv_grid_height = 1
@@ -3027,9 +2805,8 @@ kill_msg_y			= 232
 kill_msg_width		= 73
 kill_msg_height		= 18
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  1.78
+k_hit			= 1.0
 k_impulse		= 1.30
 k_ap			= 0.305
 impair			= 1.1
@@ -3043,12 +2820,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_m209_verybad]:ammo_m209
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_m209" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_m209"
 class			= S_M209
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_m209.ogf
@@ -3060,10 +2835,9 @@ cost			= 300
 
 box_size		= 1
 
-;inv_name		= ammo-m209_verybad
 icons_texture = ui\ui_maid_ammo
 inv_name_short	= ammo-m209_s
-inv_weight		= 0.2 ;.08
+inv_weight		= 0.2
 
 inv_grid_width		= 1
 inv_grid_height		= 1
@@ -3075,9 +2849,8 @@ kill_msg_y			= 232
 kill_msg_width		= 73
 kill_msg_height		= 25
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  1.38
+k_hit			= 1.0
 k_impulse		= 1.26
 k_ap			= 0.301
 impair			= 1.3
@@ -3091,12 +2864,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_og-7b]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_og-7b" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_og-7b"
 class			= S_OG7B
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_og_7b.ogf
@@ -3117,9 +2888,8 @@ inv_grid_height = 1
 inv_grid_x = 12
 inv_grid_y = 11
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  2.5
+k_hit			= 1.0
 k_impulse		= 1.5
 k_ap			= 1.25
 buck_shot		= 0
@@ -3132,12 +2902,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_og-7b_bad]:ammo_og-7b
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_og-7b" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_og-7b"
 class			= S_OG7B
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_og_7b.ogf
@@ -3148,7 +2916,6 @@ cost			= 520
 
 box_size		= 1
 
-;inv_name		= ammo-og-7b_bad
 icons_texture = ui\ui_maid_ammo
 inv_name_short	= ammo-og-7b_s
 inv_weight		= 1.96
@@ -3158,9 +2925,8 @@ inv_grid_height = 1
 inv_grid_x = 15
 inv_grid_y = 11
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  1.89
+k_hit			= 1.0
 k_impulse		= 1.4
 k_ap			= 1.25
 impair			= 1.1
@@ -3174,12 +2940,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_og-7b_verybad]:ammo_og-7b
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_og-7b" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_og-7b"
 class			= S_OG7B
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_og_7b.ogf
@@ -3190,7 +2954,6 @@ cost			= 200
 
 box_size		= 1
 
-;inv_name		= ammo-og-7b_verybad
 icons_texture = ui\ui_maid_ammo
 inv_name_short	= ammo-og-7b_s
 inv_weight		= 1.96
@@ -3200,9 +2963,8 @@ inv_grid_height		= 1
 inv_grid_x = 15
 inv_grid_y = 11
 
-
 k_disp			= 1
-k_hit			= 1.0 ;  1.29
+k_hit			= 1.0
 k_impulse		= 1.3
 k_ap			= 1.22
 impair			= 1.3
@@ -3216,12 +2978,10 @@ tier                                     = 5
 snd_on_take								 = other
 grenade_ammo							 = true
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 [ammo_gauss]:ammo_base
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_gauss" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_gauss"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_gauss.ogf
@@ -3243,7 +3003,7 @@ inv_grid_x = 18
 inv_grid_y = 2
 
 k_disp			= 1
-k_hit			= 2.5 ;  2.5
+k_hit			= 2.5
 k_impulse		= 100
 k_ap			= 5.0
 tracer			= off
@@ -3257,7 +3017,7 @@ snd_on_take								 = other
 [ammo_gauss_bad]:ammo_gauss
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_gauss" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_gauss"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_gauss.ogf
@@ -3268,7 +3028,6 @@ cost			= 2230
 
 box_size		= 8
 
-;inv_name		= ammo-gauss_bad
 icons_texture = ui\ui_maid_ammo
 inv_name_short	= ammo-gauss
 inv_weight		= 0.6
@@ -3279,7 +3038,7 @@ inv_grid_x = 19
 inv_grid_y = 2
 
 k_disp			= 1
-k_hit			= 2.3 ;  2.3
+k_hit			= 2.3
 k_impulse		= 1
 k_ap			= 4.5
 impair			= 1.1
@@ -3294,7 +3053,7 @@ snd_on_take								 = other
 [ammo_gauss_verybad]:ammo_gauss
 GroupControlSection	= spawn_group
 discovery_dependency =
-$spawn			= "weapons\ammo\ammo_gauss" ; option for Level Editor
+$spawn			= "weapons\ammo\ammo_gauss"
 class			= AMMO_S
 cform           = skeleton
 visual          = dynamics\weapons\wpn_ammo\ammo_gauss.ogf
@@ -3305,7 +3064,6 @@ cost			= 1570
 
 box_size		= 8
 
-;inv_name		= ammo-gauss_verybad
 icons_texture = ui\ui_maid_ammo
 inv_name_short	= ammo-gauss
 inv_weight		= 0.6
@@ -3316,7 +3074,7 @@ inv_grid_x = 18
 inv_grid_y = 3
 
 k_disp			= 1
-k_hit			= 2.0 ;  2.0
+k_hit			= 2.0
 k_impulse		= 1
 k_ap			= 4.0
 impair			= 1.3
@@ -3328,8 +3086,8 @@ explosive		= on
 tier                                     = 5
 snd_on_take								 = other
 
-[ammo_gauss_cardan]:ammo_gauss ; cocks
-$spawn			= "weapons\ammo\ammo_gauss_cardan" ; option for Level Editor
+[ammo_gauss_cardan]:ammo_gauss
+$spawn			= "weapons\ammo\ammo_gauss_cardan"
 visual          = dynamics\weapons\wpn_ammo\ammo_gauss_custom.ogf
 description		= ammo-gauss_cardan_descr
 
@@ -3347,14 +3105,6 @@ inv_grid_y = 3
 
 tier                                     = 5
 snd_on_take								 = other
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-; verybad dumping grounds
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [ammo_9x18_fmj_verybad]:ammo_9x18_fmj
 [ammo_9x18_pmm_verybad]:ammo_9x18_pmm
