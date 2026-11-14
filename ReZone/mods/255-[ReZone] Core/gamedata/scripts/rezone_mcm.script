@@ -1,4 +1,4 @@
-VERSION = "2.5.60"
+VERSION = "2.5.62"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -9,7 +9,7 @@ PAGE_TAB = {
 	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
 	rz_ball = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT, rz_knife = TAB_COMBAT,
-	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD,
+	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_ranks = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
 	rz_fx = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
@@ -277,6 +277,18 @@ local function gp_loot()
 end
 
 -- Artefakty v anomaliich (rezone_mod_afspawn): sance, bourky, vzacnost silnych artefaktu
+local function gp_ranks()
+	return page("rz_ranks", {
+		slide("ui_mcm_rz_ranks_title"),
+		desc("d", "ui_mcm_rz_ranks_info"),
+		line("l1"),
+		check("enabled", true, "rz_ranks_enabled"),
+		(function() local o = track("max_rank", 150000, 30000, 300000, 10000, "rz_ranks_max_rank") o.prec = 0 return o end)(),
+		line("l2"),
+		desc("n", "ui_mcm_rz_ranks_note", CLR_NOTE),
+	})
+end
+
 local function gp_afspawn()
 	local A = rezone_mod_afspawn
 	local d = A.PRESETS[A.PRESET_DEFAULT]
@@ -615,6 +627,35 @@ local function migrate_sthp()
 	c:save()
 end
 
+-- uklid: ulozene volby ReZone, ktere uz v menu nejsou (stare zalozky Gameplay/Zdravi/Populace, zrusene volby)
+local function clean_old(tabs)
+	local c = axr_main and axr_main.config
+	if not (c and c.collect_section and c.remove_line) then return end
+	if c:r_value("rezone_internal", "clean_v260", 1, false) then return end
+	local valid = {}
+	local function walk(n, pth)
+		local cur = pth .. "/" .. n.id
+		if n.gr then
+			for _, x in ipairs(n.gr) do walk(x, cur) end
+		else
+			valid[cur] = true
+		end
+	end
+	for _, tab in ipairs(tabs) do walk(tab, ROOT) end
+	local all = c:collect_section("mcm") or {}
+	local n = 0
+	for k in pairs(all) do
+		if type(k) == "string" and k:find("^" .. ROOT .. "/") and not valid[k] then
+			c:remove_line("mcm", k)
+			n = n + 1
+		end
+	end
+	if c:line_exist("rezone_internal", "pop_tab_moved") then c:remove_line("rezone_internal", "pop_tab_moved") end
+	c:w_value("rezone_internal", "clean_v260", true)
+	c:save()
+	if n > 0 then printf("[ReZone] MCM: smazano %d starych ulozenych voleb", n) end
+end
+
 local function add(t, cond, fn)
 	if cond then t[#t + 1] = fn() end
 end
@@ -637,6 +678,7 @@ function build_tree()
 	if rezone_mod_wander then rezone_mod_wander.read_cfg() end
 	add(world, rezone_mod_wander, gp_wander)
 	add(world, rezone_mod_afspawn, gp_afspawn)
+	add(world, rezone_mod_ranks, gp_ranks)
 
 	add(surv, true, gp_meds)
 	add(surv, true, gp_needs)
@@ -652,6 +694,8 @@ function build_tree()
 	}
 	pcall(migrate_tabs, tabs)
 	pcall(migrate_sthp)
+	-- uklid az ve hre (v hlavnim menu nemusi byt nactene vsechny moduly se strankami)
+	if db and db.actor then pcall(clean_old, tabs) end
 	return { id = ROOT, gr = tabs }
 end
 

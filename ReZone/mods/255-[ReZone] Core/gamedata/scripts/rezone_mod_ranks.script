@@ -1,0 +1,147 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_ranks")
+
+VANILLA_MAX = 30000
+DEFAULT_MAX = 150000
+
+-- Anomaly (30 000 = legenda). Hranice hodnosti, body za zabiti, rust ve smart terrainu.
+local V_RATING = { "novice", 3499, "trainee", 6499, "experienced", 8999, "professional", 11999, "veteran", 14499, "expert", 17499, "master", 26999, "legend" }
+local V_KILL = { novice = 5, trainee = 6, experienced = 7, professional = 8, veteran = 9, expert = 10, master = 15, legend = 20 }
+local V_SMART = { min = 1, max = 2 }
+
+-- Rozsahy generiku v merite Anomaly (vynasobi se podle maxima). Klic = character_id bez "default_<n>",
+-- addonove prefixy (dick_, dsim_ ...) se odriznou. Pevne hodnosti a vse ostatni jde pres nasobic.
+-- Nove tridy z DUX / KVMA (military_5, killer_5, isg_0/5, renegade_3/4, zombied_0) jsou tu taky.
+local RANGES = {
+	stalker_0 = { 500, 3000 }, stalker_1 = { 3000, 6000 }, stalker_2 = { 6000, 10000 }, stalker_3 = { 10000, 20000 }, stalker_4 = { 22000, 30000 },
+	bandit_0 = { 500, 3000 }, bandit_1 = { 1000, 3000 }, bandit_2 = { 3000, 6000 }, bandit_3 = { 6000, 15000 }, bandit_4 = { 10000, 20000 },
+	duty_0 = { 900, 3000 }, duty_1 = { 3000, 6000 }, duty_2 = { 6000, 10000 }, duty_3 = { 10000, 20000 }, duty_4 = { 22000, 30000 },
+	freedom_0 = { 1000, 3000 }, freedom_1 = { 3000, 6000 }, freedom_2 = { 6000, 10000 }, freedom_3 = { 10000, 20000 }, freedom_4 = { 22000, 30000 },
+	csky_0 = { 500, 3000 }, csky_1 = { 3000, 6000 }, csky_2 = { 6000, 10000 }, csky_3 = { 10000, 20000 }, csky_4 = { 15000, 20000 },
+	ecolog_0 = { 1000, 6000 }, ecolog_01 = { 1000, 6000 }, ecolog_1 = { 3000, 10000 }, ecolog_2 = { 6000, 10000 }, ecolog_3 = { 10000, 20000 },
+	ecolog_4 = { 15000, 25000 }, ecolog_5 = { 20000, 30000 },
+	killer_0 = { 2000, 5000 }, killer_1 = { 3000, 10000 }, killer_2 = { 6000, 10000 }, killer_3 = { 10000, 20000 }, killer_4 = { 22000, 30000 },
+	killer_5 = { 26000, 30000 },
+	military_0 = { 1000, 6000 }, military_1 = { 3000, 10000 }, military_2 = { 6000, 15000 }, military_3 = { 10000, 20000 }, military_4 = { 15000, 20000 },
+	military_5 = { 26000, 30000 },
+	monolith_0 = { 2000, 4000 }, monolith_1 = { 3000, 6000 }, monolith_2 = { 6000, 10000 }, monolith_3 = { 10000, 20000 }, monolith_4 = { 22000, 30000 },
+	greh_0 = { 1000, 3000 }, greh_1 = { 3000, 6000 }, greh_2 = { 2000, 8000 }, greh_3 = { 5000, 10000 }, greh_4 = { 10000, 20000 },
+	isg_0 = { 500, 2500 }, isg_1 = { 3000, 10000 }, isg_2 = { 6000, 10000 }, isg_3 = { 10000, 20000 }, isg_4 = { 22000, 30000 }, isg_5 = { 26000, 30000 },
+	renegade_0 = { 500, 3000 }, renegade_1 = { 1000, 3000 }, renegade_2 = { 3000, 6000 }, renegade_3 = { 12000, 20000 }, renegade_4 = { 22000, 30000 },
+	zombied_0 = { 500, 2500 }, zombied_1 = { 500, 3000 }, zombied_2 = { 3000, 10000 }, zombied_3 = { 10000, 20000 }, zombied_4 = { 15000, 22000 },
+}
+-- obchodnici, mechanici, medici a barmani podle frakce (id: sim_default_<frakce>_<role>)
+local SPECIAL = {
+	stalker = { 10000, 20000 }, bandit = { 10000, 20000 }, dolg = { 10000, 20000 }, freedom = { 10000, 20000 },
+	csky = { 10000, 20000 }, ecolog = { 10000, 20000 }, killer = { 10000, 20000 }, army = { 15000, 20000 },
+	monolith = { 10000, 20000 }, greh = { 5000, 10000 }, isg = { 10000, 20000 }, renegade = { 1000, 3000 },
+}
+
+local cfg = { on = true, max = DEFAULT_MAX, mult = DEFAULT_MAX / VANILLA_MAX }
+local done = {}
+local foreign = false
+
+-- nastaveni se cte primo z axr_options (bezi drive, nez je MCM sestavene)
+local function read_cfg()
+	local c = axr_main and axr_main.config
+	local on, mx
+	if c then
+		on = c:r_value("mcm", PAGE .. "/enabled", 1)
+		mx = c:r_value("mcm", PAGE .. "/max_rank", 2)
+	end
+	cfg.on = on ~= false
+	cfg.max = math.max(VANILLA_MAX, math.min(300000, math.floor((tonumber(mx) or DEFAULT_MAX) / 1000 + 0.5) * 1000))
+	cfg.mult = cfg.on and (cfg.max / VANILLA_MAX) or 1
+end
+
+local function scaled(v)
+	return math.floor(v * cfg.mult + 0.5)
+end
+
+-- hranice hodnosti, body za zabiti a rust ve smart terrainu do ini_sys (DLTX v ReZone dava vychozich 150 000)
+local function apply_ini()
+	if not (ini_sys and ini_sys.set_readonly and ini_sys.w_string) then return end
+	local r, names = {}, {}
+	for i = 1, #V_RATING do
+		local v = V_RATING[i]
+		if type(v) == "number" then
+			v = tostring(math.floor((v + 1) * cfg.mult + 0.5) - 1)
+			r[i], names[i] = v, v
+		else
+			r[i], names[i] = v, "st_rank_" .. v
+		end
+	end
+	ini_sys:set_readonly(false)
+	ini_sys:w_string("game_relations", "rating", table.concat(r, ", "))
+	ini_sys:w_string("game_relations", "rating_names", table.concat(names, ", "))
+	for k, v in pairs(V_KILL) do ini_sys:w_string("rank_kill_points", k, tostring(scaled(v))) end
+	ini_sys:w_string("smart_terrain_rank_change", "min", tostring(scaled(V_SMART.min)))
+	ini_sys:w_string("smart_terrain_rank_change", "max", tostring(scaled(V_SMART.max)))
+	ini_sys:set_readonly(true)
+	if ranks and ranks.read_all_ranks then pcall(ranks.read_all_ranks) end
+end
+
+local function find_range(id)
+	id = string.match(id, "sim_default_.*$") or id
+	local key = string.match(id, "^sim_default_(.-)_default_%d+$")
+	if key then return RANGES[key] end
+	local fac, role = string.match(id, "^sim_default_(%w+)_(%a+)$")
+	if fac and (role == "trader" or role == "mechanic" or role == "medic" or role == "barman") then return SPECIAL[fac] end
+end
+
+local function on_init(character_id, data)
+	if not (cfg.on and character_id and data) or cfg.mult == 1 then return end
+	local omin, omax = tonumber(data.rank_min), tonumber(data.rank_max)
+	if not (omin or omax) then return end
+	local d = done[character_id]
+	if d and omin == d[1] and omax == d[2] then return end
+	-- hodnota nad maximem Anomaly = profil uz je v jinem meritku (jiny addon) -> nechat cely
+	if (omin and omin > VANILLA_MAX) or (omax and omax > VANILLA_MAX) then return end
+	local nmin, nmax
+	local rg = find_range(character_id)
+	if rg and omin ~= omax then
+		nmin, nmax = scaled(rg[1]), scaled(rg[2])
+	else
+		nmin = (omin and omin > 0) and math.min(scaled(omin), cfg.max) or omin
+		nmax = (omax and omax > 0) and math.min(scaled(omax), cfg.max) or omax
+	end
+	if nmin and nmax and nmin > nmax then nmin, nmax = nmax, nmin end
+	data.rank_min, data.rank_max = nmin, nmax
+	done[character_id] = { nmin, nmax }
+end
+
+-- zmena maxima v rozehrane hre: hodnost hrace se prepocita, aby zustal na stejnem stupni
+local function rescale_actor()
+	local m = alife_storage_manager.get_state()
+	if not (m and db.actor) then return end
+	local old = tonumber(m.rz_rank_mult)
+	if old and math.abs(old - cfg.mult) > 0.001 and db.actor.set_character_rank then
+		local r = db.actor:character_rank()
+		db.actor:set_character_rank(math.floor(r * cfg.mult / old + 0.5))
+		printf("[ReZone] Hodnosti: maximum zmeneno, hodnost hrace %d -> %d", r, db.actor:character_rank())
+	end
+	m.rz_rank_mult = cfg.mult
+end
+
+function enabled() return cfg.on and not foreign end
+function max_rank() return cfg.max end
+
+local function load()
+	read_cfg()
+	if foreign then return end
+	apply_ini()
+	if db.actor then pcall(rescale_actor) end
+end
+
+function on_game_start()
+	-- samostatny rank150k (modxml_zzz_rank150k) by hodnosti prevadel podruhe
+	if modxml_zzz_rank150k then
+		foreign = true
+		printf("! ReZone Hodnosti: nalezen samostatny rank150k - ReZone hodnosti NPC nemeni, smaz ho")
+		return
+	end
+	load()
+	core.on_change(load)
+	RegisterScriptCallback("on_specific_character_init", on_init)
+	RegisterScriptCallback("actor_on_first_update", rescale_actor)
+end

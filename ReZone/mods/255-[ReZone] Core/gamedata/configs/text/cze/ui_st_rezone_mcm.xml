@@ -1584,4 +1584,28 @@
 	<string id="ui_mcm_rz_needs_enabled_desc">
 		<text>Vypnuto = hlad, žízeò a únava pøibývají jako ve vanilla Anomaly.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_ranks">
+		<text>Hodnosti NPC</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_title">
+		<text>ReZone hodnosti NPC</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_info">
+		<text>Rozšíøí hodnosti stalkerù nad 30 000 z Anomaly. Všechny hranice (nováèek … legenda), rozsahy frakcí a úrovní, body za zabití i rùst hodnosti NPC se vynásobí stejnì, takže pomìry zùstanou jako v Anomaly. Platí pro jakýkoli mod s modely NPC (DUX, KVMA, DICK…), vèetnì jejich nových úrovní (armáda 5, žoldáci 5, ISG 0/5, renegáti 3/4, zombie 0).</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled">
+		<text>Zapnout hodnosti ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled_desc">
+		<text>Vypnuto = hodnosti jako v Anomaly (legenda 30 000).</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank">
+		<text>Maximální hodnost (legenda)</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank_desc">
+		<text>30 000 = Anomaly, 150 000 = výchozí ReZone (×5). Hranice hodností a rozsahy NPC se pøepoèítají podle tohoto èísla.</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_note">
+		<text>Nová maximální hodnost platí pro novì vytvoøené NPC; tvoje hodnost se po zmìnì pøepoèítá, aby zùstala na stejném stupni. Samostatný rank150k smaž – ReZone ho nahrazuje.</text>
+	</string>
 </string_table>

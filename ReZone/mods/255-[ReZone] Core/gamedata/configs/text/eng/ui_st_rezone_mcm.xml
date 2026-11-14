@@ -1584,4 +1584,28 @@
 	<string id="ui_mcm_rz_needs_enabled_desc">
 		<text>Off = hunger, thirst and sleepiness grow like vanilla Anomaly.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_ranks">
+		<text>NPC ranks</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_title">
+		<text>ReZone NPC ranks</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_info">
+		<text>Extends stalker ranks beyond Anomaly's 30 000. All thresholds (novice … legend), faction and tier ranges, kill points and NPC rank growth are multiplied the same way, so the ratios stay as in Anomaly. Works with any NPC model mod (DUX, KVMA, DICK…), including their new tiers (army 5, mercenary 5, ISG 0/5, renegade 3/4, zombied 0).</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled">
+		<text>Enable ReZone ranks</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled_desc">
+		<text>Off = ranks like Anomaly (legend 30 000).</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank">
+		<text>Maximum rank (legend)</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank_desc">
+		<text>30 000 = Anomaly, 150 000 = ReZone default (x5). Rank thresholds and NPC ranges are recalculated from this number.</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_note">
+		<text>A new maximum applies to newly created NPCs; your own rank is recalculated after a change so it stays on the same step. Remove the standalone rank150k – ReZone replaces it.</text>
+	</string>
 </string_table>

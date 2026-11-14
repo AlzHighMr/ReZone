@@ -1584,4 +1584,28 @@
 	<string id="ui_mcm_rz_needs_enabled_desc">
 		<text>Выключено = голод, жажда и усталость растут как в обычной Anomaly.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_ranks">
+		<text>Ранги NPC</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_title">
+		<text>ReZone ранги NPC</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_info">
+		<text>Расширяет ранги сталкеров выше 30 000 из Anomaly. Все пороги (новичок … легенда), диапазоны фракций и уровней, очки за убийство и рост ранга NPC умножаются одинаково, пропорции остаются как в Anomaly. Работает с любым модом моделей NPC (DUX, KVMA, DICK…), включая их новые уровни.</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled">
+		<text>Включить ранги ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_enabled_desc">
+		<text>Выключено = ранги как в Anomaly (легенда 30 000).</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank">
+		<text>Максимальный ранг (легенда)</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_max_rank_desc">
+		<text>30 000 = Anomaly, 150 000 = по умолчанию ReZone (x5). Пороги рангов и диапазоны NPC пересчитываются от этого числа.</text>
+	</string>
+	<string id="ui_mcm_rz_ranks_note">
+		<text>Новый максимум действует для новых NPC; твой ранг пересчитывается, чтобы остаться на той же ступени. Отдельный rank150k удали – ReZone его заменяет.</text>
+	</string>
 </string_table>
