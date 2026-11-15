@@ -1,4 +1,4 @@
-VERSION = "2.5.80"
+VERSION = "2.5.87"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -8,7 +8,7 @@ PAGE_TAB = {
 	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
 	rz_ball = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT, rz_knife = TAB_COMBAT,
-	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_ranks = TAB_WORLD,
+	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
 	rz_fx = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
@@ -417,6 +417,7 @@ local function hp_damage()
 		local k = pr.HIT_TYPES[i]
 		local def = pr.PRESETS[pr.DEFAULT][k] or 1
 		gr[#gr + 1] = track(k, def, 0, 3, 0.05, "rz_hit_" .. k)
+		if k == "radiation" then gr[#gr + 1] = track("rad_gain", 1, 0, 3, 0.05, "rz_hit_rad_gain") end
 	end
 	return page("rz_pdmg", gr)
 end
@@ -524,6 +525,20 @@ local function ot_debug()
 		desc("ver", "ui_mcm_rz_about"),
 		line("l1"),
 		check("debug", false, "rz_debug_debug"),
+		line("l2"),
+		desc("dsec", "ui_mcm_rz_debug_sec_info"),
+		check("sec_cam", false, "rz_debug_sec_cam"),
+		{ id = "sec_key", type = "key_bind", val = 2, def = DIK_keys.DIK_ADD, hint = "rz_debug_sec_key" },
+		desc("nsec", "ui_mcm_rz_debug_sec_note", CLR_NOTE),
+	})
+end
+
+local function gp_secrets()
+	return page("rz_secrets", {
+		slide("ui_mcm_rz_secrets_title"),
+		desc("d", "ui_mcm_rz_secrets_info"),
+		line("l1"),
+		check("enabled", true, "rz_secrets_enabled"),
 	})
 end
 
@@ -647,6 +662,7 @@ function build_tree()
 	add(world, rezone_mod_wander, gp_wander)
 	add(world, rezone_mod_afspawn, gp_afspawn)
 	add(world, rezone_mod_ranks, gp_ranks)
+	add(world, rezone_secrets, gp_secrets)
 
 	add(surv, true, gp_meds)
 	add(surv, true, gp_needs)

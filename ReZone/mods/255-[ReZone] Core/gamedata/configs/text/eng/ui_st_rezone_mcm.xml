@@ -127,7 +127,7 @@
 		<text>Chemical burn</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation">
-		<text>Radiation</text>
+		<text>Radiation – health drain</text>
 	</string>
 	<string id="ui_mcm_rz_hit_telepatic">
 		<text>Psy (telepathic)</text>
@@ -1640,5 +1640,62 @@
 	</string>
 	<string id="ui_mcm_rz_craft_mech_tools_desc">
 		<text>A mechanic only repairs what he has tools for (toolkits you brought him). Light outfits, helmets and cheap weapons are always repaired. Medium outfits, helmets and weapons from 30,000 RU need the basic toolkit, heavy outfits and weapons from 50,000 RU the advanced one, exoskeletons and weapons from 75,000 RU the expert one.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_secrets">
+		<text>Stashes</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_title">
+		<text>Stashes</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_info">
+		<text>Items placed around the Zone: lying loose, in boxes and on corpses. Each stash appears once per game, and new ones are added to games already in progress.</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled">
+		<text>Enable ReZone stashes</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled_desc">
+		<text>Off = no new stashes are created. Those already in the game stay.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_info">
+		<text>Stash creation tool. Stash console output is enabled by the Debug log option.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam">
+		<text>Stash position camera</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam_desc">
+		<text>Free camera with a marker. Toggle it in game with the key below. Enter writes the position as a ready stash section (type, level, pos, box if any) to gamedata\configs\cache_dbg.ltx and shows it on screen. Needs modded exes.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key">
+		<text>Camera key</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key_desc">
+		<text>Turns the stash position camera on and off.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_note">
+		<text>Mouse look, WASD/QE fly, Shift/Ctrl speed, F marker to surface, left button drags the marker (Shift for height), arrows and PgUp/PgDn fine move, B nearest box, M hide marker, Enter print position, Esc exit.</text>
+	</string>
+	<string id="st_rz_sec_cam">
+		<text>Stash camera</text>
+	</string>
+	<string id="st_rz_sec_cam_help">
+		<text>mouse look, WASD/QE fly, Shift/Ctrl speed, F to surface, LMB drag (Shift = height)\narrows/PgUp/PgDn fine, B box, Enter print, M marker, Esc exit</text>
+	</string>
+	<string id="st_rz_sec_cam_noexe">
+		<text>Stash camera needs modded exes.</text>
+	</string>
+	<string id="st_rz_sec_cam_nobox">
+		<text>No box within %d m</text>
+	</string>
+	<string id="st_rz_sec_cam_badlv">
+		<text>level_vertex_id invalid (outside AI mesh) – for world and corpse move the marker to the ground</text>
+	</string>
+	<string id="ui_mcm_rz_hit_radiation_desc">
+		<text>How fast accumulated radiation drains health. 3 = triple drain at the same radiation level. Does not change how fast you gain radiation.</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain">
+		<text>Radiation – gain</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain_desc">
+		<text>How fast you gain radiation from radioactive areas and anomalies. 1 = vanilla.</text>
 	</string>
 </string_table>

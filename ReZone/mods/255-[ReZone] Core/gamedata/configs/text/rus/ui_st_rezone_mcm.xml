@@ -127,7 +127,7 @@
 		<text>Chemical burn</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation">
-		<text>Radiation</text>
+		<text>Радиация – потеря здоровья</text>
 	</string>
 	<string id="ui_mcm_rz_hit_telepatic">
 		<text>Psy (telepathic)</text>
@@ -1640,5 +1640,62 @@
 	</string>
 	<string id="ui_mcm_rz_craft_mech_tools_desc">
 		<text>Техник ремонтирует только то, на что у него есть инструменты (наборы, которые вы ему принесли). Лёгкие костюмы, шлемы и дешёвое оружие ремонтирует всегда. Средние костюмы, шлемы и оружие от 30 000 RU требуют базовый набор, тяжёлые костюмы и оружие от 50 000 RU — продвинутый, экзоскелеты и оружие от 75 000 RU — экспертный.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_secrets">
+		<text>Тайники</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_title">
+		<text>Тайники</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_info">
+		<text>Предметы по всей Зоне: на земле, в ящиках и на трупах. Каждый тайник появляется один раз за игру, новые добавляются и в начатую игру.</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled">
+		<text>Включить тайники ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled_desc">
+		<text>Выкл. = новые тайники не создаются. Уже созданные остаются.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_info">
+		<text>Инструмент для создания тайников. Вывод в консоль включается опцией Debug log.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam">
+		<text>Камера для позиций тайников</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam_desc">
+		<text>Свободная камера с указателем. В игре включается клавишей ниже. Enter записывает позицию готовой секцией тайника (type, level, pos, при наличии box) в gamedata\configs\cache_dbg.ltx и показывает её на экране. Нужны modded exes.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key">
+		<text>Клавиша камеры</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key_desc">
+		<text>Включает и выключает камеру позиций тайников.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_note">
+		<text>Мышь обзор, WASD/QE полёт, Shift/Ctrl скорость, F указатель на поверхность, левая кнопка тянет указатель (Shift высота), стрелки и PgUp/PgDn точно, B ближайший ящик, M скрыть указатель, Enter вывести позицию, Esc выход.</text>
+	</string>
+	<string id="st_rz_sec_cam">
+		<text>Камера тайников</text>
+	</string>
+	<string id="st_rz_sec_cam_help">
+		<text>мышь обзор, WASD/QE полёт, Shift/Ctrl скорость, F на поверхность, ЛКМ тянуть (Shift = высота)\nстрелки/PgUp/PgDn точно, B ящик, Enter вывести, M указатель, Esc выход</text>
+	</string>
+	<string id="st_rz_sec_cam_noexe">
+		<text>Камере тайников нужны modded exes.</text>
+	</string>
+	<string id="st_rz_sec_cam_nobox">
+		<text>Нет ящика в пределах %d м</text>
+	</string>
+	<string id="st_rz_sec_cam_badlv">
+		<text>level_vertex_id неверный (вне AI-сетки) – для world и corpse опусти указатель на землю</text>
+	</string>
+	<string id="ui_mcm_rz_hit_radiation_desc">
+		<text>Как быстро накопленная радиация отнимает здоровье. 3 = тройная потеря при том же уровне радиации. Не меняет скорость набора радиации.</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain">
+		<text>Радиация – набор</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain_desc">
+		<text>Как быстро набирается радиация в радиоактивных местах и аномалиях. 1 = ваниль.</text>
 	</string>
 </string_table>

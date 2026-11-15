@@ -4,6 +4,10 @@ local EPS = 0.0001
 
 local by_type = {}
 local registered = false
+local rad_mult = 1
+local rad_on = false
+local rad_hv = nil
+local rad_t, rad_last = 0, 0
 
 local HIT_ID = {}
 for _, k in ipairs(rezone_presets.HIT_TYPES) do
@@ -14,6 +18,34 @@ local function actor_on_before_hit(shit, bone_id, flags)
 	if not (shit and shit.power > 0) then return end
 	local m = by_type[shit.type]
 	if m then shit.power = shit.power * m end
+end
+
+local function rad_update()
+	local a = db.actor
+	if not (a and a:alive()) then return end
+	local t = time_global()
+	if t < rad_t then return end
+	local dt = math.min(2, (t - rad_last) / 1000)
+	rad_t, rad_last = t + 500, t
+	local r = a.radiation or 0
+	if r <= 0 then return end
+	if rad_hv == nil then rad_hv = tonumber(SYS_GetParam(2, "actor_condition", "radiation_health_v", 0)) or 0 end
+	if rad_hv <= 0 then return end
+	if get_console_cmd(1, "g_god") then return end
+	local d = (rad_mult - 1) * rad_hv * r * dt
+	if d ~= 0 then a:change_health(-d) end
+end
+
+local function set_rad(on)
+	if on == rad_on then return end
+	rad_on = on
+	rad_last = time_global()
+	rad_t = rad_last + 500
+	if on then
+		RegisterScriptCallback("actor_on_update", rad_update)
+	else
+		UnregisterScriptCallback("actor_on_update", rad_update)
+	end
 end
 
 local function set_registered(on)
@@ -32,13 +64,16 @@ function load()
 	by_type = {}
 	local any = false
 	for k, id in pairs(HIT_ID) do
-		local m = tonumber(g(k)) or 1
+		local m = tonumber(g(k == "radiation" and "rad_gain" or k)) or 1
 		if math.abs(m - 1) > EPS then
 			by_type[id] = m
 			any = true
 		end
 	end
-	set_registered(g("enabled") ~= false and any)
+	local on = g("enabled") ~= false
+	set_registered(on and any)
+	rad_mult = tonumber(g("radiation")) or 1
+	set_rad(on and HIT_ID.radiation ~= nil and math.abs(rad_mult - 1) > EPS)
 end
 
 local function migrate_cop()

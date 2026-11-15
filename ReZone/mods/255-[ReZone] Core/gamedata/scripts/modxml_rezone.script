@@ -7,6 +7,7 @@ function on_xml_read()
 </file>]])
 		elseif xml_file_name == [[ui\ui_custom_msgs.xml]] then
 			xml_obj:insertFromXMLFile([[ui\ui_rzaf_effects.xml]])
+			xml_obj:insertFromXMLFile([[ui\ui_rz_secrets_cam.xml]])
 		elseif xml_file_name == [[gameplay\character_desc_red_forest.xml]] then
 			local res = xml_obj:query("specific_character[id=red_forester_tech]")
 			if res and res[1] then

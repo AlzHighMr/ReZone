@@ -54,7 +54,10 @@ local function scaled(v)
 end
 
 local function apply_ini()
-	if not (ini_sys and ini_sys.set_readonly and ini_sys.w_string) then return end
+	if not (ini_sys and ini_sys.set_readonly and ini_sys.w_string and ini_sys.set_override_names) then
+		core.warn("hodnosti: exe neumi zapisovat do ini_sys - zebricek hodnosti zustava vanilla")
+		return
+	end
 	local r, names = {}, {}
 	for i = 1, #V_RATING do
 		local v = V_RATING[i]
@@ -66,11 +69,13 @@ local function apply_ini()
 		end
 	end
 	ini_sys:set_readonly(false)
+	ini_sys:set_override_names(true)
 	ini_sys:w_string("game_relations", "rating", table.concat(r, ", "))
 	ini_sys:w_string("game_relations", "rating_names", table.concat(names, ", "))
 	for k, v in pairs(V_KILL) do ini_sys:w_string("rank_kill_points", k, tostring(scaled(v))) end
 	ini_sys:w_string("smart_terrain_rank_change", "min", tostring(scaled(V_SMART.min)))
 	ini_sys:w_string("smart_terrain_rank_change", "max", tostring(scaled(V_SMART.max)))
+	ini_sys:set_override_names(false)
 	ini_sys:set_readonly(true)
 	if ranks and ranks.read_all_ranks then pcall(ranks.read_all_ranks) end
 end

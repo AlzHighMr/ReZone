@@ -127,7 +127,7 @@
 		<text>Chemické popálení</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation">
-		<text>Radiace</text>
+		<text>Radiace – úbytek zdraví</text>
 	</string>
 	<string id="ui_mcm_rz_hit_telepatic">
 		<text>Psy (telepatické)</text>
@@ -1640,5 +1640,62 @@
 	</string>
 	<string id="ui_mcm_rz_craft_mech_tools_desc">
 		<text>Mechanik opraví jen to, na co má náøadí (sady, které jsi mu pøinesl). Lehké obleky, helmy a levné zbranì opraví vdy. Støední obleky, helmy a zbranì od 30 000 RU potøebují základní sadu, tìké obleky a zbranì od 50 000 RU pokroèilou, exoskelety a zbranì od 75 000 RU expertní.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_secrets">
+		<text>Skrıše</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_title">
+		<text>Skrıše</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_info">
+		<text>Pøedmìty rozmístìné po Zónì: volnì leící, v bednách a u mrtvol. Kadá skrıš se objeví jednou za hru a nové se doplní i do rozehrané hry.</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled">
+		<text>Zapnout skrıše ReZone</text>
+	</string>
+	<string id="ui_mcm_rz_secrets_enabled_desc">
+		<text>Vypnuto = nové skrıše se nevytváøí. Ty, které u ve høe jsou, zùstanou.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_info">
+		<text>Nástroj pro tvorbu skrıší. Vıpis skrıší do konzole zapíná volba Vıpis do konzole.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam">
+		<text>Kamera pro pozice skrıší</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_cam_desc">
+		<text>Volná kamera s ukazatelem. Ve høe ji zapneš klávesou níe. Enter zapíše pozici jako hotovou sekci skrıše (type, level, pos, pøípadnì box) do gamedata\configs\cache_dbg.ltx a ukáe ji na obrazovce. Potøebuje modded exes.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key">
+		<text>Klávesa kamery</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_key_desc">
+		<text>Zapne a vypne kameru pro pozice skrıší.</text>
+	</string>
+	<string id="ui_mcm_rz_debug_sec_note">
+		<text>Myš rozhled, WASD/QE let, Shift/Ctrl rychlost, F ukazatel na povrch, levé tlaèítko tahá ukazatel (se Shift vıška), šipky a PgUp/PgDn jemnı posun, B nejbliší bedna, M skrıt ukazatel, Enter vypsat pozici, Esc konec.</text>
+	</string>
+	<string id="st_rz_sec_cam">
+		<text>Kamera skrıší</text>
+	</string>
+	<string id="st_rz_sec_cam_help">
+		<text>myš rozhled, WASD/QE let, Shift/Ctrl rychlost, F na povrch, LTM tahat (Shift = vıška)\nšipky/PgUp/PgDn jemnì, B bedna, Enter vypsat, M ukazatel, Esc konec</text>
+	</string>
+	<string id="st_rz_sec_cam_noexe">
+		<text>Kamera skrıší potøebuje modded exes.</text>
+	</string>
+	<string id="st_rz_sec_cam_nobox">
+		<text>ádná bedna do %d m</text>
+	</string>
+	<string id="st_rz_sec_cam_badlv">
+		<text>level_vertex_id neplatnı (mimo AI sí) – pro world a corpse posuò ukazatel na zem</text>
+	</string>
+	<string id="ui_mcm_rz_hit_radiation_desc">
+		<text>Jak rychle ti nasbíraná radiace ubírá zdraví. 3 = trojnásobnı úbytek pøi stejné úrovni radiace. Nemìní, jak rychle radiaci nabíráš.</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain">
+		<text>Radiace – nabírání</text>
+	</string>
+	<string id="ui_mcm_rz_hit_rad_gain_desc">
+		<text>Jak rychle radiaci nabíráš z radioaktivních míst a anomálií. 1 = vanilla.</text>
 	</string>
 </string_table>
