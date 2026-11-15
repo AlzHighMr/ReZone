@@ -11,7 +11,7 @@ for _, g in ipairs(GROUPS) do
 end
 
 EXTRA = {
-	i_arty_junk = "i_arty", i_arty_cont = "i_arty", i_attach = "i_arty",
+	i_arty_junk = "i_arty", i_arty_cont = "i_arty", i_attach = "o_medium",
 	i_mutant_raw = "i_food", i_mutant_cooked = "i_food",
 	i_drink = "i_medical", i_letter = "i_misc",
 	i_repair = "i_kit", i_tool = "i_kit",

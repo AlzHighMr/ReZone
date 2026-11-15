@@ -1,0 +1,96 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_ball")
+
+WEAR = {
+	af_kevlar     = { fw = 0.45, wound = 0.30, strike = 0.15, expl = 0.30 },
+	af_kevlar_up  = { fw = 0.40, wound = 0.25, strike = 0.12, expl = 0.25 },
+	af_plates     = { fw = 0.20, wound = 0.08, strike = 0.10, expl = 0.12 },
+	af_plates_up  = { fw = 0.16, wound = 0.06, strike = 0.08, expl = 0.10 },
+	af_polymer    = { fw = 0.50, wound = 0.15, strike = 0.15, expl = 0.30 },
+	af_polymer_up = { fw = 0.42, wound = 0.12, strike = 0.12, expl = 0.25 },
+	af_ceramic    = { fw = 0.80, wound = 0.15, strike = 0.35, expl = 0.50 },
+	af_ceramic_up = { fw = 0.70, wound = 0.12, strike = 0.30, expl = 0.45 },
+	fieldcraft_plate_attch = { fw = 0.35, wound = 0.12, strike = 0.12, expl = 0.20 },
+}
+local MIN_COND = 0.01
+
+local on, mult, one = true, 1, true
+local KEY = {}
+
+local function actor_on_before_hit(s_hit, bone_id, flags)
+	if not on or mult <= 0 then return end
+	local p = s_hit and s_hit.power or 0
+	if p <= 0 then return end
+	local key = KEY[s_hit.type]
+	if not key then return end
+	local who = s_hit.draftsman
+	if who and who:id() == AC_ID then return end
+	if get_console_cmd(1, "g_god") then return end
+	db.actor:iterate_belt(function(_, obj)
+		local w = WEAR[obj:section()]
+		if not w then return end
+		local loss = p * (w[key] or 0) * mult
+		if loss <= 0 then return end
+		local c = obj:condition() - loss
+		obj:set_condition(c > MIN_COND and c or MIN_COND)
+		if core.DEBUG then core.log("plate %s -%.3f -> %.2f", obj:section(), loss, obj:condition()) end
+	end)
+end
+
+local function plates_on_belt(except)
+	local n = 0
+	db.actor:iterate_belt(function(_, obj)
+		if WEAR[obj:section()] and obj:id() ~= except then n = n + 1 end
+	end)
+	return n
+end
+
+local function to_ruck(id)
+	local obj = level.object_by_id(id)
+	if obj and db.actor:is_on_belt(obj) then
+		db.actor:move_to_ruck(obj)
+		actor_menu.set_msg(1, game.translate_string("st_rz_plate_one"), 4)
+	end
+	return true
+end
+
+local function on_to_belt(obj)
+	if not one or not (obj and WEAR[obj:section()]) then return end
+	if plates_on_belt(obj:id()) > 0 then
+		CreateTimeEvent("rz_plates", "ruck" .. obj:id(), 0, to_ruck, obj:id())
+	end
+end
+
+local function check_belt()
+	if not one then return end
+	local seen = false
+	db.actor:iterate_belt(function(_, obj)
+		if WEAR[obj:section()] then
+			if seen then CreateTimeEvent("rz_plates", "ruck" .. obj:id(), 0, to_ruck, obj:id()) end
+			seen = true
+		end
+	end)
+end
+
+local registered = false
+function load()
+	local g = core.page(PAGE)
+	on = g("enabled") ~= false and g("pl_enabled") ~= false
+	mult = tonumber(g("pl_wear")) or 1
+	one = g("enabled") ~= false and g("pl_one") ~= false
+	if one and db.actor then check_belt() end
+	local want = on and mult > 0
+	if want ~= registered then
+		registered = want
+		if want then RegisterScriptCallback("actor_on_before_hit", actor_on_before_hit)
+		else UnregisterScriptCallback("actor_on_before_hit", actor_on_before_hit) end
+	end
+end
+
+function on_game_start()
+	KEY = { [hit.fire_wound] = "fw", [hit.wound] = "wound", [hit.strike] = "strike", [hit.explosion] = "expl" }
+	core.on_change(load)
+	load()
+	RegisterScriptCallback("actor_item_to_belt", on_to_belt)
+	RegisterScriptCallback("actor_on_first_update", check_belt)
+end

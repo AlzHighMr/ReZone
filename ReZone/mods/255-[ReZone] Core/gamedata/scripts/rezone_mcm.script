@@ -1,4 +1,4 @@
-VERSION = "2.5.75"
+VERSION = "2.5.80"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -124,6 +124,8 @@ local function gp_craft()
 		check("remove_recipe", true, "rz_craft_remove_recipe"),
 		check("keep_known", false, "rz_craft_keep_known"),
 		check("keep_open", true, "rz_craft_keep_open"),
+		line("l2"),
+		check("mech_tools", true, "rz_craft_mech_tools"),
 	})
 end
 
@@ -154,6 +156,11 @@ local function gp_ballistics()
 		track("dis_yield", 0.5, 0.1, 1, 0.05, "rz_ball_dis_yield"),
 		line("l4"),
 		track("wear", 0.33, 0, 2, 0.01, "rz_ball_wear"),
+		line("l_pl"),
+		desc("dpl", "ui_mcm_rz_ball_pl_info"),
+		check("pl_one", true, "rz_ball_pl_one"),
+		check("pl_enabled", true, "rz_ball_pl_enabled"),
+		track("pl_wear", 1, 0, 3, 0.05, "rz_ball_pl_wear"),
 		desc("dh", "ui_mcm_rz_ball_helm_info"),
 		check("helmets", true, "rz_ball_helmets"),
 		check("helm_drop", true, "rz_ball_helm_drop"),

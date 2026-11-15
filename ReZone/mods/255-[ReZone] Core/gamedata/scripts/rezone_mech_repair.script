@@ -1,0 +1,76 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_craft")
+
+local BY_TYPE = {
+	outfit_novice = 0, outfit_light = 0, helmet_light = 0, knife = 0,
+	outfit = 1, outfit_medium = 1, helmet = 1,
+	outfit_heavy = 2,
+	outfit_exo = 3, outfit_exoskeleton = 3,
+}
+local WPN_COST = { 30000, 50000, 75000 }
+local WPN_KIND = { w_pistol = true, w_smg = true, w_rifle = true, w_shotgun = true, w_sniper = true, w_explosive = true }
+local KIT = { "itm_basickit", "itm_advancedkit", "itm_expertkit" }
+
+local on = true
+local cache = {}
+
+function required(sec)
+	local r = cache[sec]
+	if r ~= nil then return r end
+	local rt = ini_sys:r_string_ex(sec, "repair_type") or ""
+	r = BY_TYPE[rt]
+	if r == nil then
+		r = 0
+		local kind = ini_sys:r_string_ex(sec, "kind") or ""
+		if WPN_KIND[kind] or rt == "pistol" or rt == "shotgun" or rt:find("^rifle") then
+			local cost = ini_sys:r_float_ex(sec, "cost") or 0
+			for i = #WPN_COST, 1, -1 do
+				if cost >= WPN_COST[i] then r = i break end
+			end
+		end
+	end
+	cache[sec] = r
+	return r
+end
+
+local function has_tier(npc_id, need)
+	local npc = npc_id and level.object_by_id(npc_id)
+	if not npc then return true end
+	local sec = npc:section()
+	for t = need, 3 do
+		if has_alife_info(sec .. "_upgrade_tier_" .. t) then return true end
+	end
+	return false
+end
+
+local patched = false
+local function patch()
+	local C = ui_inventory and ui_inventory.UIInventory
+	if patched or not (C and C.RMode_OnRepair) then return end
+	patched = true
+	local orig = C.RMode_OnRepair
+	function C:RMode_OnRepair(...)
+		if on and self.upgr and self.upgr.id then
+			local obj = level.object_by_id(self.upgr.id)
+			local need = obj and required(obj:section()) or 0
+			if need > 0 and not has_tier(self.npc_id, need) then
+				local kit = ui_item and ui_item.get_sec_name and ui_item.get_sec_name(KIT[need]) or KIT[need]
+				self.message_box:InitMessageBox("message_box_ok")
+				self.message_box:SetText(strformat(game.translate_string("st_rz_mech_no_tools"), kit))
+				self.message_box:ShowDialog(true)
+				return
+			end
+		end
+		return orig(self, ...)
+	end
+end
+
+function load()
+	on = core.page(PAGE)("mech_tools") ~= false
+	if on then patch() end
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end

@@ -1608,4 +1608,37 @@
 	<string id="ui_mcm_rz_ranks_note">
 		<text>A new maximum applies to newly created NPCs; your own rank is recalculated after a change so it stays on the same step. Remove the standalone rank150k – ReZone replaces it.</text>
 	</string>
+	<string id="ui_mcm_rz_ball_pl_info">
+		<text>Outfit plates (kevlar, steel, polymer, ceramic) protect against bullets, shrapnel and blows and wear down with every hit. The worse their condition, the less they protect. Ceramic protects best but cracks fastest, steel is heavy and lasts longest.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_enabled">
+		<text>Plate wear from hits</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_enabled_desc">
+		<text>Plates on the belt lose condition according to hit power and type. Off = condition does not change.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_wear">
+		<text>Plate wear rate</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_wear_desc">
+		<text>Plate wear multiplier (1 = default: ceramic lasts about 4–5 rifle hits, steel over 15).</text>
+	</string>
+	<string id="st_rz_plate_one">
+		<text>You already wear a plate – a second one does not fit the carrier.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_one">
+		<text>One plate only</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_one_desc">
+		<text>Only one plate (kevlar, steel, polymer, ceramic, improvised) can be on the belt. Extra ones go back to the backpack. Without this, plate protection stacks and several plates make the player almost immortal.</text>
+	</string>
+	<string id="st_rz_mech_no_tools">
+		<text>The mechanic does not have the tools for this repair. Bring him: %s.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_mech_tools">
+		<text>Mechanic repairs need toolkits</text>
+	</string>
+	<string id="ui_mcm_rz_craft_mech_tools_desc">
+		<text>A mechanic only repairs what he has tools for (toolkits you brought him). Light outfits, helmets and cheap weapons are always repaired. Medium outfits, helmets and weapons from 30,000 RU need the basic toolkit, heavy outfits and weapons from 50,000 RU the advanced one, exoskeletons and weapons from 75,000 RU the expert one.</text>
+	</string>
 </string_table>

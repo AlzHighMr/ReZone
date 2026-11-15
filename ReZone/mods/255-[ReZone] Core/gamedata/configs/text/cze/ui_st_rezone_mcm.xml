@@ -1608,4 +1608,37 @@
 	<string id="ui_mcm_rz_ranks_note">
 		<text>Nová maximální hodnost platí pro novì vytvoøené NPC; tvoje hodnost se po zmìnì pøepoèítá, aby zùstala na stejném stupni. Samostatný rank150k smaž – ReZone ho nahrazuje.</text>
 	</string>
+	<string id="ui_mcm_rz_ball_pl_info">
+		<text>Pláty v obleku (kevlar, ocel, polymer, keramika) chrání proti kulkám, støepinám a úderùm a s každým zásahem se opotøebí. Èím horší stav, tím ménì chrání. Keramika chrání nejvíc, ale nejrychleji praská, ocel je tìžká a vydrží nejdéle.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_enabled">
+		<text>Opotøebení plátù zásahy</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_enabled_desc">
+		<text>Pláty na pásu ztrácejí stav podle síly a druhu zásahu. Vypnuto = stav se nemìní.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_wear">
+		<text>Rychlost opotøebení plátù</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_wear_desc">
+		<text>Násobiè opotøebení plátù (1 = výchozí: keramika vydrží zhruba 4–5 zásahù z pušky, ocel pøes 15).</text>
+	</string>
+	<string id="st_rz_plate_one">
+		<text>Plát už máš nasazený – druhý se do nosièe nevejde.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_one">
+		<text>Jen jeden plát</text>
+	</string>
+	<string id="ui_mcm_rz_ball_pl_one_desc">
+		<text>Na pásu mùže být jen jeden plát (kevlar, ocel, polymer, keramika, improvizovaný). Další se vrátí do batohu. Bez toho se ochrana plátù sèítá a nìkolik plátù dìlá hráèe skoro nesmrtelným.</text>
+	</string>
+	<string id="st_rz_mech_no_tools">
+		<text>Mechanik na tuhle opravu nemá náøadí. Pøines mu: %s.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_mech_tools">
+		<text>Opravy u mechanika podle náøadí</text>
+	</string>
+	<string id="ui_mcm_rz_craft_mech_tools_desc">
+		<text>Mechanik opraví jen to, na co má náøadí (sady, které jsi mu pøinesl). Lehké obleky, helmy a levné zbranì opraví vždy. Støední obleky, helmy a zbranì od 30 000 RU potøebují základní sadu, tìžké obleky a zbranì od 50 000 RU pokroèilou, exoskelety a zbranì od 75 000 RU expertní.</text>
+	</string>
 </string_table>
