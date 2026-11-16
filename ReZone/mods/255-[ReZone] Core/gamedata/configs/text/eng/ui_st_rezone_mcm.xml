@@ -1698,4 +1698,19 @@
 	<string id="ui_mcm_rz_hit_rad_gain_desc">
 		<text>How fast you gain radiation from radioactive areas and anomalies. 1 = vanilla.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_hud">
+		<text>Radiation readout</text>
+	</string>
+	<string id="ui_mcm_rz_hud_title">
+		<text>Radiation readout</text>
+	</string>
+	<string id="ui_mcm_rz_hud_info">
+		<text>With a Geiger counter in inventory, shows the accumulated dose in mSv at the HUD radiation icon (same as the dosimeter).</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled">
+		<text>Show dose in mSv</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled_desc">
+		<text>Off = radiation icon only, like vanilla. The number shows only with a Geiger counter in inventory.</text>
+	</string>
 </string_table>

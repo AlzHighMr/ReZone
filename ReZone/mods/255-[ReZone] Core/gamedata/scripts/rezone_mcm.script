@@ -1,4 +1,4 @@
-VERSION = "2.5.87"
+VERSION = "2.5.98"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -10,7 +10,7 @@ PAGE_TAB = {
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT, rz_knife = TAB_COMBAT,
 	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
-	rz_fx = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
+	rz_fx = TAB_OT, rz_hud = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
 
 function path(pg)
@@ -508,6 +508,15 @@ local function ot_fx()
 	})
 end
 
+local function ot_hud()
+	return page("rz_hud", {
+		slide("ui_mcm_rz_hud_title"),
+		desc("d", "ui_mcm_rz_hud_info"),
+		line("l1"),
+		check("enabled", true, "rz_hud_enabled"),
+	})
+end
+
 local function ot_menu()
 	local content = modxml_rezone_mm_video and modxml_rezone_mm_video.mcm_content() or { { "default", "default" } }
 	return page("rz_menu", {
@@ -549,7 +558,7 @@ local function main_master()
 		slide("ui_mcm_rz_master_title"),
 		desc("d", "ui_mcm_rz_master_info"),
 		line("l1"),
-		{ id = "master", type = "list", val = 2, def = 0, content = content, hint = "rz_master" },
+		{ id = "master", type = "list", val = 2, def = 1, content = content, hint = "rz_master" },
 		line("l2"),
 		desc("d1", "ui_mcm_rz_master_cop_info"),
 		desc("d2", "ui_mcm_rz_master_trilogy_info"),
@@ -674,7 +683,7 @@ function build_tree()
 		{ id = TAB_COMBAT, gr = combat },
 		{ id = TAB_WORLD, gr = world },
 		{ id = TAB_SURV, gr = surv },
-		{ id = TAB_OT, gr = { ot_fx(), ot_binoc(), ot_pda(), ot_menu(), ot_debug() } },
+		{ id = TAB_OT, gr = { ot_fx(), ot_hud(), ot_binoc(), ot_pda(), ot_menu(), ot_debug() } },
 	}
 	pcall(migrate_tabs, tabs)
 	pcall(migrate_sthp)

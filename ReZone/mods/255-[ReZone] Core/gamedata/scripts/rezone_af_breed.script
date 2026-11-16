@@ -43,6 +43,9 @@ local function load()
 				for c in string.gmatch(ini:r_string_ex(id, "classes") or "all", "[%w_]+") do set[c] = true end
 				local b = { id = id, classes = set, max = clamp(ini:r_float_ex(id, "max_tier") or MAX_LVL, 1, MAX_LVL),
 				            spawn = ini:r_string_ex(id, "spawn") or "existing", wait_info = ini:r_string_ex(id, "wait_info") }
+				local sk = {}
+				for st in string.gmatch(ini:r_string_ex(id, "skip_story") or "", "[%w_]+") do sk[st] = true end
+				b.skip = next(sk) and sk or nil
 				breeders[id] = b
 				order[#order + 1] = b
 			end
@@ -322,6 +325,33 @@ local function relocate(b, args)
 	return true
 end
 
+local STORY_CHECK = {
+	cs = function() local m = rawget(_G, "cs_port") return m and m.is_cs_game and m.is_cs_game() end,
+	soc = function() local m = rawget(_G, "soc_port") return m and m.is_soc_game and m.is_soc_game() end,
+	cop = function() local f = type(xr_conditions) == "table" and rawget(xr_conditions, "cop_port_enabled") return f and f() end,
+}
+
+local function skipped(b)
+	if not b.skip then return false end
+	for st in pairs(b.skip) do
+		local f = STORY_CHECK[st]
+		local ok, r = pcall(function() return f and f() end)
+		if ok and r then return true end
+	end
+	return false
+end
+
+local function remove_skipped(b)
+	local id = get_story_object_id and get_story_object_id(b.id)
+	local se = id and alife_object(id)
+	if not se then return false end
+	local npc = level.object_by_id(id)
+	if npc and npc:position():distance_to(db.actor:position()) < 80 then return true end
+	alife_release(se)
+	log("%s v tomto pribehu nepatri, odebran", b.id)
+	return false
+end
+
 local pending = false
 local function spawn_all()
 	if not db.actor then return end
@@ -334,6 +364,10 @@ local function spawn_all()
 	pending = false
 	for _, b in ipairs(order) do
 		local kind, args = string.match(b.spawn, "^%s*(%a+)%s*:?%s*(.-)%s*$")
+		if skipped(b) then
+			if remove_skipped(b) then pending = true end
+			kind = nil
+		end
 		if kind == "pos" and has_alife_info(FLAG .. b.id) and not moving[b.id] then
 			if relocate(b, args) then pending = true end
 		end

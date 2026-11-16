@@ -1698,4 +1698,19 @@
 	<string id="ui_mcm_rz_hit_rad_gain_desc">
 		<text>Как быстро набирается радиация в радиоактивных местах и аномалиях. 1 = ваниль.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_hud">
+		<text>Индикатор радиации</text>
+	</string>
+	<string id="ui_mcm_rz_hud_title">
+		<text>Индикатор радиации</text>
+	</string>
+	<string id="ui_mcm_rz_hud_info">
+		<text>Со счётчиком Гейгера в инвентаре показывает у иконки радиации на HUD накопленную дозу в мЗв (как дозиметр).</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled">
+		<text>Показывать дозу в мЗв</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled_desc">
+		<text>Выкл. = только иконка радиации, как в ванили. Число показывается только со счётчиком Гейгера в инвентаре.</text>
+	</string>
 </string_table>

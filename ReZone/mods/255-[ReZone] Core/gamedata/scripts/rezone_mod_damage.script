@@ -10,14 +10,20 @@ local rad_hv = nil
 local rad_t, rad_last = 0, 0
 
 local HIT_ID = {}
+local HIT_NAME = {}
 for _, k in ipairs(rezone_presets.HIT_TYPES) do
-	if hit[k] then HIT_ID[k] = hit[k] end
+	if hit[k] then HIT_ID[k] = hit[k]; HIT_NAME[hit[k]] = k end
 end
 
 local function actor_on_before_hit(shit, bone_id, flags)
 	if not (shit and shit.power > 0) then return end
 	local m = by_type[shit.type]
-	if m then shit.power = shit.power * m end
+	if not m then return end
+	local p = shit.power
+	shit.power = p * m
+	if core.debug_on() then
+		core.log("poskozeni hrace: %s %.3f x %.2f = %.3f (kost %s)", HIT_NAME[shit.type] or tostring(shit.type), p, m, shit.power, tostring(bone_id))
+	end
 end
 
 local function rad_update()

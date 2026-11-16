@@ -1,0 +1,74 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_hud")
+
+local opt = { msv = true }
+local MSV = 10000 * 0.387
+local CLR = { 255, 235, 235, 235 }
+
+local function has_geiger()
+	return db.actor and db.actor:object("detector_geiger") ~= nil
+end
+
+local function rad_shown()
+	local v = actor_status.get_radiation and actor_status.get_radiation(true)
+	return v and v >= 1 and v <= 4
+end
+
+local function own_text(ui)
+	if ui.rz_msv then return ui.rz_msv end
+	local s = ui.slot and ui.slot[1]
+	local ico = s and (s.icon_f or s.icon_s)
+	if not (ico and ui.dialog) then return nil end
+	local p = ico:GetWndPos()
+	local w, h = ico:GetWidth(), ico:GetHeight()
+	local t = CUITextWnd()
+	t:SetAutoDelete(true)
+	ui.dialog:AttachChild(t)
+	t:SetWndRect(Frect():set(p.x - 10, p.y + h, p.x + w + 10, p.y + h + 16))
+	t:SetFont(GetFontSmall())
+	t:SetTextAlignment(2)
+	t:SetTextColor(GetARGB(CLR[1], CLR[2], CLR[3], CLR[4]))
+	t:Show(false)
+	ui.rz_msv = t
+	return t
+end
+
+local function msv_refresh(ui)
+	local s = ui.slot and ui.slot[1]
+	local t = s and s.xcvb_time or own_text(ui)
+	if not t then return end
+	local show = opt.msv and db.actor and main_hud_shown() and rad_shown() and has_geiger()
+	if show then
+		t:SetText(tostring(math.floor(db.actor.radiation * MSV)))
+		t:Show(true)
+	elseif t == ui.rz_msv then
+		t:Show(false)
+	end
+end
+
+local patched = false
+local function patch()
+	if patched or not (actor_status and actor_status.UIIndicators) then return end
+	patched = true
+	local cls = actor_status.UIIndicators
+	local orig = cls.Update
+	cls.Update = function(self, force)
+		local before = self._tmr
+		orig(self, force)
+		if force or self._tmr ~= before then
+			local ok, err = pcall(msv_refresh, self)
+			if not ok then core.warn("ui: msv %s", tostring(err)) end
+		end
+	end
+end
+
+function load()
+	local g = core.page(PAGE)
+	opt.msv = g("enabled") ~= false
+end
+
+function on_game_start()
+	patch()
+	core.on_change(load)
+	load()
+end

@@ -1698,4 +1698,19 @@
 	<string id="ui_mcm_rz_hit_rad_gain_desc">
 		<text>Jak rychle radiaci nabíráš z radioaktivních míst a anomálií. 1 = vanilla.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_hud">
+		<text>Ukazatel radiace</text>
+	</string>
+	<string id="ui_mcm_rz_hud_title">
+		<text>Ukazatel radiace</text>
+	</string>
+	<string id="ui_mcm_rz_hud_info">
+		<text>S Geigerovým poèítaèem v inventáøi ukáže u ikony radiace na HUD nasbíranou dávku v mSv (stejnì jako dozimetr).</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled">
+		<text>Zobrazit dávku v mSv</text>
+	</string>
+	<string id="ui_mcm_rz_hud_enabled_desc">
+		<text>Vypnuto = jen ikona radiace jako ve vanille. Èíslo se ukáže jen s Geigerovým poèítaèem v inventáøi.</text>
+	</string>
 </string_table>

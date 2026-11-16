@@ -65,7 +65,8 @@ function default(path)
 end
 
 local function mcm_ready()
-	return ui_mcm and ui_mcm.get and not (ui_mcm.is_gathering and ui_mcm.is_gathering())
+	local m = rawget(_G, "ui_mcm")
+	return m and m.get and not (m.is_gathering and m.is_gathering())
 end
 
 function debug_on()
