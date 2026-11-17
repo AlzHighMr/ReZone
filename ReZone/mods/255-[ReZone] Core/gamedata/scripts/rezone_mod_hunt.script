@@ -1,0 +1,627 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_hunt")
+local CFG_FILE = "rezone\\hunt.ltx"
+local TICK = 2000
+local REACH = 70
+local BOLT_LIFE = 20
+
+FACTIONS = {}
+local LV_TIER, RISK, HIT_OF = {}, {}, {}
+local AF_TIER = {}
+local cfg_read = false
+
+local function each(ini, sec, fn)
+	if not ini:section_exist(sec) then return end
+	for i = 0, ini:line_count(sec) - 1 do
+		local _, k, v = ini:r_line(sec, i, "", "")
+		if k and k ~= "" then fn(k, v) end
+	end
+end
+
+function read_cfg()
+	if cfg_read then return end
+	cfg_read = true
+	local ini = ini_file(CFG_FILE)
+	if not ini then core.warn("lovci artefaktu: chybi configs\\%s", CFG_FILE) return end
+	each(ini, "factions", function(k, v) FACTIONS[#FACTIONS + 1] = { k, v ~= "false" } end)
+	each(ini, "levels", function(k, v) LV_TIER[k] = tonumber(v) or 2 end)
+	each(ini, "rank_risk", function(k, v) RISK[k] = tonumber(v) end)
+	local types = {}
+	each(ini, "hit_types", function(k, v) types[k] = v end)
+
+	local af = ini_file("items\\settings\\artefacts.ltx")
+	if not af then return end
+	each(af, "artefact_groups", function(grp)
+		local ht = types[grp]
+		each(af, grp, function(sec)
+			if ini_sys:section_exist(sec) then
+				if ht and not HIT_OF[sec] then HIT_OF[sec] = ht end
+				if not AF_TIER[sec] then
+					local t = ini_sys:r_float_ex(sec, "tier") or (grp:find("musor") and 1) or 2
+					AF_TIER[sec] = math.max(1, math.min(5, math.floor(t)))
+				end
+			end
+		end)
+	end)
+end
+
+local cfg = { on = false }
+
+function load()
+	read_cfg()
+	local g = core.page(PAGE)
+	cfg.on      = g("enabled") == true
+	cfg.max     = tonumber(g("max_squads")) or 3
+	cfg.delay   = tonumber(g("delay")) or 20
+	cfg.radius  = tonumber(g("radius")) or 450
+	cfg.risk    = tonumber(g("risk")) or 1
+	cfg.bolts   = g("bolts") ~= false
+	cfg.psi     = g("psi") ~= false
+	cfg.other   = g("other_levels") ~= false
+	cfg.other_n = tonumber(g("other_count")) or 2
+	cfg.fac = {}
+	for _, f in ipairs(FACTIONS) do cfg.fac[f[1]] = g("f_" .. f[1]) == true end
+	core.log("lovci artefaktu: %s", cfg.on and "zapnuto" or "vypnuto")
+end
+
+local hunts = {}
+local orders = {}
+local game_min = 0
+local last_tg = nil
+local pending = nil
+local smart_cache = {}
+
+local function level_of(gvid)
+	local gg, sim = game_graph(), alife()
+	if not (gg and sim and gvid) then return end
+	return sim:level_name(gg:vertex(gvid):level_id())
+end
+
+local function smarts_on(lvl)
+	local c = smart_cache[lvl]
+	if c then return c end
+	c = {}
+	for id, s in pairs(SIMBOARD and SIMBOARD.smarts or {}) do
+		local smrt = s.smrt
+		if smrt and level_of(smrt.m_game_vertex_id) == lvl then
+			local props = smrt.props or {}
+			c[#c + 1] = { id = id, name = smrt:name(), pos = smrt.position, base = (tonumber(props.base) or 0) > 0 }
+		end
+	end
+	smart_cache[lvl] = c
+	return c
+end
+
+local function nearest_smart(lvl, pos)
+	local best, bd
+	for _, s in ipairs(smarts_on(lvl)) do
+		if not s.base then
+			local d = s.pos:distance_to_sqr(pos)
+			if not bd or d < bd then best, bd = s, d end
+		end
+	end
+	return best
+end
+
+local function storm()
+	local s = surge_manager and surge_manager.get_surge_manager and surge_manager.get_surge_manager()
+	if s and s.started then return true end
+	local p = psi_storm_manager and psi_storm_manager.get_psi_storm_manager and psi_storm_manager.get_psi_storm_manager()
+	return p and p.started or false
+end
+
+local function free_art(id)
+	local zone = bind_anomaly_zone.parent_zones_by_artefact_id[id]
+	if not zone or zone.forced_spawn or zone.forced_spawn_override then return end
+	if get_object_story_id(id) then return end
+	local se = alife_object(id)
+	if not (se and se.parent_id == 65535) then return end
+	if not AF_TIER[se:section_name()] then return end
+	return se
+end
+
+local function field_arts()
+	local fields, n = {}, 0
+	local list = bind_anomaly_zone and bind_anomaly_zone.parent_zones_by_artefact_id
+	if not list then return fields, 0 end
+	for id, zone in pairs(list) do
+		local se = free_art(id)
+		if se and zone then
+			local f = fields[zone]
+			if not f then
+				local zo = zone.object
+				f = { pos = zo and zo:position() or se.position, arts = {} }
+				fields[zone] = f
+			end
+			f.arts[#f.arts + 1] = id
+			n = n + 1
+		end
+	end
+	return fields, n
+end
+
+local function is_companion(id)
+	return axr_companions and axr_companions.companion_squads and axr_companions.companion_squads[id]
+end
+
+local SERVICE = { "trader", "barman", "medic", "mechanic", "dead", "guide", "leader", "guard", "story" }
+
+local function generic_squad(sq)
+	local sec = sq:section_name()
+	if not sec:find("sim_squad", 1, true) then return false end
+	if sec:find("^cs_") or sec:find("^soc_") or sec:find("^cop_") or sec:find("^trilogy") then return false end
+	for _, w in ipairs(SERVICE) do
+		if sec:find(w, 1, true) then return false end
+	end
+	return true
+end
+
+local function squad_ok(sq)
+	if not (sq and sq.npc_count and sq:npc_count() > 0) then return false end
+	if not cfg.fac[sq.player_id] then return false end
+	if sq.scripted_target or sq.random_targets or sq.action_condlist or is_companion(sq.id) or hunts[sq.id] then return false end
+	if not generic_squad(sq) then return false end
+	if get_object_story_id(sq.id) then return false end
+	if axr_task_manager and axr_task_manager.hostages_by_id and axr_task_manager.hostages_by_id[sq:commander_id()] then return false end
+	for m in sq:squad_members() do
+		if get_object_story_id(m.id) then return false end
+	end
+	return true
+end
+
+local function release_squad(sid, target)
+	local se = alife_object(sid)
+	if se and target and se.scripted_target == target then
+		se.scripted_target = nil
+		se.assigned_target_id = nil
+		se.current_action = 0
+	end
+end
+
+local function finish(sid, why)
+	local h = hunts[sid]
+	if not h then return end
+	for id, j in pairs(orders) do
+		if j.sq == sid then orders[id] = nil end
+	end
+	release_squad(sid, h.target)
+	hunts[sid] = nil
+	core.log("lovci artefaktu: squad %s konci (%s)", sid, why or "")
+end
+
+local function rank_risk(obj)
+	local r = ranks.get_obj_rank_name(obj)
+	return (RISK[r] or 0.1) * cfg.risk
+end
+
+local function af_hit_type(sec)
+	local t = HIT_OF[sec]
+	return t and hit[t] or hit.burn
+end
+
+local function give_art(se_art, owner)
+	local id = se_art.id
+	local sec = se_art:section_name()
+	local zone = bind_anomaly_zone.parent_zones_by_artefact_id[id]
+	if zone then
+		zone:on_artefact_take(se_art)
+	else
+		bind_anomaly_zone.artefact_ways_by_id[id] = nil
+	end
+	local o = level.object_by_id(id)
+	local a = o and o.get_artefact and o:get_artefact()
+	if a then a:FollowByPath("NULL", 0, vector():set(500, 500, 500)) end
+	alife_create_item(sec, owner)
+	alife_release(se_art)
+	return sec
+end
+
+local function npc_hurt(npc, sec, lethal)
+	local h = hit()
+	h.type = af_hit_type(sec)
+	h.power = lethal and 3 or (0.25 + math.random() * 0.3)
+	h.impulse = 0
+	h.direction = vector():set(0, -1, 0)
+	h.draftsman = npc
+	npc:hit(h)
+end
+
+local function pick_tier_art(tier)
+	local pool, total = {}, 0
+	for sec, t in pairs(AF_TIER) do
+		if t <= tier + 1 then
+			local w = (t <= tier) and (6 - t) or 1
+			pool[#pool + 1] = { sec, w }
+			total = total + w
+		end
+	end
+	if total <= 0 then return end
+	local r = math.random() * total
+	for _, p in ipairs(pool) do
+		r = r - p[2]
+		if r <= 0 then return p[1] end
+	end
+	return pool[#pool][1]
+end
+
+local function members(sq)
+	local t = {}
+	for m in sq:squad_members() do
+		local se = m.object or alife_object(m.id)
+		if se and se.alive and se:alive() then t[#t + 1] = se end
+	end
+	return t
+end
+
+local function resolve_offline(sid, h)
+	local sq = alife_object(sid)
+	if not sq then return end
+	local mem = members(sq)
+	if #mem == 0 then return end
+	local took, died = 0, 0
+	for _, aid in ipairs(h.arts) do
+		if took >= 2 then break end
+		local se_art = free_art(aid)
+		if se_art then
+			local who = mem[math.random(#mem)]
+			if math.random() < rank_risk(who) * 0.5 and #mem > 1 then
+				alife_release(who)
+				died = died + 1
+				for i = #mem, 1, -1 do if mem[i] == who then table.remove(mem, i) end end
+			else
+				give_art(se_art, who)
+				took = took + 1
+			end
+		end
+	end
+	core.log("lovci artefaktu: squad %s offline: %d artefaktu, %d mrtvych", sid, took, died)
+end
+
+local function next_art(h, npc_id)
+	local taken = {}
+	for id, j in pairs(orders) do if j.sq == h.sid and id ~= npc_id and j.art then taken[j.art] = true end end
+	for _, aid in ipairs(h.arts) do
+		if not taken[aid] and free_art(aid) then return aid end
+	end
+end
+
+local function give_orders(sid, h, sq)
+	for m in sq:squad_members() do
+		local npc = db.storage[m.id] and db.storage[m.id].object or level.object_by_id(m.id)
+		if npc and npc:alive() and not orders[m.id] then
+			local aid = next_art(h, m.id)
+			if not aid then break end
+			orders[m.id] = { sq = sid, art = aid, bolts = 0 }
+		end
+	end
+end
+
+local function tick()
+	local tg = time_global()
+	if last_tg and tg - last_tg < TICK then return end
+	local dt = last_tg and (tg - last_tg) or 0
+	last_tg = tg
+	game_min = game_min + dt / 1000 * (level.get_time_factor() or 10) / 60
+	if not (db.actor and level.present()) then return end
+
+	if pending and game_min >= pending then
+		pending = nil
+		if cfg.on and not storm() then
+			local ok, err = pcall(rezone_mod_hunt.start_wave)
+			if not ok then core.warn("lovci artefaktu: %s", tostring(err)) end
+		end
+	end
+
+	if next(hunts) == nil then return end
+	local lvl = level.name()
+	for sid, h in pairs(hunts) do
+		local sq = alife_object(sid)
+		if not cfg.on or not sq or sq:npc_count() == 0 or h.lvl ~= lvl or game_min > h.until_min then
+			finish(sid, "konec")
+		elseif sq.scripted_target ~= h.target or get_object_story_id(sid) then
+			h.target = nil
+			finish(sid, "prevzal jiny skript")
+		else
+			for i = #h.arts, 1, -1 do
+				if not free_art(h.arts[i]) then table.remove(h.arts, i) end
+			end
+			if #h.arts == 0 then
+				finish(sid, "hotovo")
+			elseif sq.online then
+				give_orders(sid, h, sq)
+			elseif (h.smart and sq.current_action == 1 and sq.assigned_target_id == h.smart) or sq.position:distance_to(h.pos) < REACH then
+				resolve_offline(sid, h)
+				finish(sid, "offline")
+			end
+		end
+	end
+end
+
+function start_wave()
+	local lvl = level.name()
+	local fields, n = field_arts()
+	if n == 0 then return end
+	local list = {}
+	for _, f in pairs(fields) do list[#list + 1] = f end
+
+	local cand = {}
+	for _, s in ipairs(smarts_on(lvl)) do
+		local sm = SIMBOARD.smarts[s.id]
+		for sid in pairs(sm and sm.squads or {}) do
+			local sq = alife_object(sid)
+			if sq and squad_ok(sq) then
+				local best, bd
+				for i, f in ipairs(list) do
+					local d = sq.position:distance_to(f.pos)
+					if d < cfg.radius and (not bd or d < bd) then best, bd = i, d end
+				end
+				if best then cand[#cand + 1] = { sq = sq, f = best, d = bd } end
+			end
+		end
+	end
+	table.sort(cand, function(a, b) return a.d < b.d end)
+
+	local used, count = {}, 0
+	for _, c in ipairs(cand) do
+		if count >= cfg.max then break end
+		local f = list[c.f]
+		if not used[c.f] and not hunts[c.sq.id] then
+			local sm = nearest_smart(lvl, f.pos)
+			if sm then
+				used[c.f] = true
+				count = count + 1
+				local sq = c.sq
+				sq.scripted_target = sm.name
+				sq.assigned_target_id = nil
+				sq.current_action = 0
+				local arts = {}
+				for i, a in ipairs(f.arts) do arts[i] = a end
+				hunts[sq.id] = { sid = sq.id, lvl = lvl, pos = f.pos, arts = arts, smart = sm.id, target = sm.name, until_min = game_min + 180 }
+				core.log("lovci artefaktu: %s (%s) -> %s, %d artefaktu", sq:section_name(), sq.player_id, sm.name, #arts)
+			end
+		end
+	end
+end
+
+local function other_levels()
+	if not cfg.other then return end
+	local cur = level.name()
+	local per = {}
+	for id, s in pairs(SIMBOARD and SIMBOARD.smarts or {}) do
+		local lvl = s.smrt and level_of(s.smrt.m_game_vertex_id)
+		local tier = lvl and LV_TIER[lvl]
+		if tier and lvl ~= cur then
+			for sid in pairs(s.squads or {}) do
+				per[lvl] = per[lvl] or { tier = tier, sq = {} }
+				per[lvl].sq[#per[lvl].sq + 1] = sid
+			end
+		end
+	end
+	local given = 0
+	for lvl, d in pairs(per) do
+		local done = 0
+		while done < cfg.other_n and #d.sq > 0 do
+			local sid = table.remove(d.sq, math.random(#d.sq))
+			local sq = alife_object(sid)
+			if sq and not sq.online and squad_ok(sq) and math.random() < 0.5 then
+				done = done + 1
+				local mem = members(sq)
+				if #mem > 0 then
+					local who = mem[math.random(#mem)]
+					if #mem > 1 and math.random() < rank_risk(who) * 0.5 then
+						alife_release(who)
+					else
+						local sec = pick_tier_art(d.tier)
+						if sec then
+							alife_create_item(sec, who)
+							given = given + 1
+						end
+					end
+				end
+			end
+		end
+	end
+	core.log("lovci artefaktu: jine levely, %d artefaktu", given)
+end
+
+local function on_interaction(typ, obj, name)
+	if typ ~= "anomalies" or not cfg.on then return end
+	if name ~= "emission_end" and not (name == "psi_storm_end" and cfg.psi) then return end
+	pending = game_min + cfg.delay * (0.6 + math.random() * 0.8)
+	local ok, err = pcall(other_levels)
+	if not ok then core.warn("lovci artefaktu: %s", tostring(err)) end
+end
+
+function can_work(npc)
+	if not cfg.on then return false end
+	local j = orders[npc:id()]
+	if not j then return false end
+	if storm() then return false end
+	if not free_art(j.art) then
+		orders[npc:id()] = nil
+		return false
+	end
+	return true
+end
+
+local function throw_bolt(npc, target)
+	if not (cfg.bolts and ini_sys:section_exist("bolt")) then return end
+	local from = npc:bone_position("bip01_r_hand")
+	from.y = from.y + 0.1
+	local se = alife_create("bolt", from, npc:level_vertex_id(), npc:game_vertex_id())
+	if not se then return end
+	local bid = se.id
+	CreateTimeEvent("rz_hunt_bolt", "f" .. bid, 0.15, function()
+		local o = level.object_by_id(bid)
+		local sh = o and o:get_physics_shell()
+		if sh then
+			local d = vector():set(target.x - from.x, 0, target.z - from.z)
+			local dist = math.max(2, math.min(18, d:magnitude()))
+			d:normalize()
+			local v = math.max(5, math.min(13, math.sqrt(dist * 9.8)))
+			local el = sh:get_element_by_order(0)
+			local m = el and el:get_mass() or 0.1
+			local k = m * v * 0.7071 / 0.02
+			sh:apply_force(d.x * k, k, d.z * k)
+		end
+		return true
+	end)
+	CreateTimeEvent("rz_hunt_bolt", "r" .. bid, BOLT_LIFE, function()
+		local s = alife_object(bid)
+		if s and s.parent_id == 65535 then alife_release(s) end
+		return true
+	end)
+end
+
+local function dest_vid(npc, pos, se_art)
+	local vid = level.vertex_id(pos)
+	if not vid or vid >= 4294967295 or level.vertex_position(vid):distance_to_sqr(pos) > 16 then
+		vid = se_art and se_art.m_level_vertex_id or vid
+	end
+	if vid and vid < 4294967295 and not npc:accessible(vid) then
+		vid = npc:accessible_nearest(level.vertex_position(vid), vector():set(0, 0, 0))
+	end
+	return vid
+end
+
+function on_start(npc)
+	local j = orders[npc:id()]
+	if j then j.stage, j.t, j.vid = "go", nil, nil end
+end
+
+function on_stop(npc)
+	local j = orders[npc:id()]
+	if j then j.stage, j.t, j.vid = nil, nil, nil end
+end
+
+function on_error(npc, err)
+	orders[npc:id()] = nil
+	core.warn("lovci artefaktu: %s: %s", npc:name(), tostring(err))
+end
+
+local function done(npc, j)
+	orders[npc:id()] = nil
+	local h = hunts[j.sq]
+	if h then
+		for i = #h.arts, 1, -1 do if h.arts[i] == j.art then table.remove(h.arts, i) end end
+	end
+end
+
+function step(npc)
+	local id = npc:id()
+	local j = orders[id]
+	if not j then return end
+	local se_art = free_art(j.art)
+	if not se_art then orders[id] = nil return end
+	local tg = time_global()
+	local pos = se_art.position
+
+	if j.stage == nil or j.stage == "go" then
+		if not j.deadline then j.deadline = tg + 120000 end
+		if tg > j.deadline then done(npc, j) return end
+		if not j.vid then
+			j.vid = dest_vid(npc, pos, se_art)
+			if not j.vid or j.vid >= 4294967295 then done(npc, j) return end
+			npc:set_dest_level_vertex_id(j.vid)
+			j.stage = "go"
+		end
+		if npc:position():distance_to_xz(pos) < 7 or npc:level_vertex_id() == j.vid then
+			j.stage, j.t = "probe", tg + math.random(2000, 3500)
+			state_mgr.set_state(npc, "probe_stand", nil, nil, { look_position = pos })
+			return
+		end
+		if not j.next_path or tg > j.next_path then
+			j.next_path = tg + 1500
+			npc:set_path_type(game_object.level_path)
+			npc:set_dest_level_vertex_id(j.vid)
+			state_mgr.set_state(npc, "patrol", nil, nil, { look_position = pos })
+		end
+		return
+	end
+
+	if j.stage == "probe" then
+		if tg < j.t then return end
+		local n = cfg.bolts and math.random(1, 3) or 0
+		if j.bolts < n then
+			j.bolts = j.bolts + 1
+			state_mgr.set_state(npc, "probe_way", nil, nil, { look_position = pos })
+			throw_bolt(npc, pos)
+			j.t = tg + math.random(1800, 3000)
+			return
+		end
+		j.stage, j.t = "pick", tg + 3500
+		state_mgr.set_state(npc, "pickup_crouch", nil, nil, { look_position = pos })
+		return
+	end
+
+	if j.stage == "pick" then
+		if tg < j.t then return end
+		if db.actor and db.actor:position():distance_to_sqr(pos) < 9 then done(npc, j) return end
+		local sec = se_art:section_name()
+		local risk = rank_risk(npc)
+		if math.random() < risk then
+			local lethal = math.random() < 0.5
+			npc_hurt(npc, sec, lethal)
+			core.log("lovci artefaktu: %s zasazen anomalii (%s)", npc:name(), lethal and "smrt" or "zraneni")
+			if lethal then done(npc, j) return end
+		end
+		give_art(se_art, npc)
+		pcall(game_statistics.increment_npc_statistic, npc, "artefacts_found")
+		core.log("lovci artefaktu: %s nasel %s", npc:name(), sec)
+		done(npc, j)
+	end
+end
+
+local function on_first_update()
+	smart_cache = {}
+	rezone_hunt_scheme.set_orders(orders)
+end
+
+local function on_before_level_changing()
+	for sid in pairs(hunts) do finish(sid, "zmena levelu") end
+	pending = nil
+end
+
+local function npc_on_death(npc)
+	if npc then orders[npc:id()] = nil end
+end
+
+local function save_state(m)
+	local out, n = {}, 0
+	for sid, h in pairs(hunts) do
+		out[sid] = { lvl = h.lvl, arts = h.arts, smart = h.smart, target = h.target, left = math.max(0, h.until_min - game_min), x = h.pos.x, y = h.pos.y, z = h.pos.z }
+		n = n + 1
+	end
+	local p = pending and math.max(0, pending - game_min) or nil
+	m.rz_hunt = (n > 0 or p) and { hunts = out, pending = p } or nil
+end
+
+local function load_state(m)
+	hunts, game_min, pending = {}, 0, nil
+	for k in pairs(orders) do orders[k] = nil end
+	local d = m.rz_hunt
+	if type(d) ~= "table" then return end
+	if tonumber(d.pending) then pending = tonumber(d.pending) end
+	for sid, h in pairs(d.hunts or {}) do
+		sid = tonumber(sid) or sid
+		if type(h) == "table" and type(h.lvl) == "string" and type(h.arts) == "table" then
+			hunts[sid] = { sid = sid, lvl = h.lvl, arts = h.arts, smart = tonumber(h.smart), target = type(h.target) == "string" and h.target or nil, until_min = tonumber(h.left) or 60,
+				pos = vector():set(tonumber(h.x) or 0, tonumber(h.y) or 0, tonumber(h.z) or 0) }
+		end
+	end
+end
+
+function on_game_start()
+	read_cfg()
+	LoadScheme("rezone_hunt_scheme", "rz_hunt", modules.stype_stalker)
+	rezone_hunt_scheme.set_orders(orders)
+	core.on_change(load)
+	load()
+	RegisterScriptCallback("actor_on_update", tick)
+	RegisterScriptCallback("actor_on_first_update", on_first_update)
+	RegisterScriptCallback("actor_on_interaction", on_interaction)
+	RegisterScriptCallback("on_before_level_changing", on_before_level_changing)
+	RegisterScriptCallback("npc_on_death_callback", npc_on_death)
+	RegisterScriptCallback("save_state", save_state)
+	RegisterScriptCallback("load_state", load_state)
+end

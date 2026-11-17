@@ -331,7 +331,7 @@ local function patch_craft_yield()
 		local ok, r = self.craft_allow_r, self.craft_item_r
 		local sec, box = r and r[1], r and r[2]
 		orig(self)
-		if not (ok and sec and box) or not IsItem("ammo", sec) or sec:find("_bad$") or not parts_of(sec) then return end
+		if not (ok and sec and box) or not IsItem("ammo", sec) or sec:find("_bad$") or not parts_of(sec) or upgraded(sec) then return end
 		local extra = max(1, floor((tonumber(cfg("craft_yield", 2)) or 2) + 0.5)) - 1
 		if extra > 0 then alife_create_item(sec, db.actor, { ammo = box * extra }) end
 	end
@@ -384,6 +384,15 @@ local function recipe_of(sec)
 	return recipe_cache[sec]
 end
 
+function upgraded(sec)
+	local rec = recipe_of(sec)
+	if not rec then return false end
+	for _, ing in ipairs(rec) do
+		if ing.ammo then return true end
+	end
+	return false
+end
+
 local function round_rnd(x)
 	local f = floor(x)
 	return f + ((random() < (x - f)) and 1 or 0)
@@ -401,7 +410,7 @@ local function breakdown(list, tool)
 
 			local n = box:ammo_get_count()
 
-			local outs = (sec:find("_bad$") or not parts_of(sec)) and 1 or craft_out
+			local outs = (sec:find("_bad$") or not parts_of(sec) or upgraded(sec)) and 1 or craft_out
 			local frac = n / (box_of(sec) * outs)
 			for _, ing in ipairs(rec) do
 				local got = round_rnd(ing.units * frac * share)
@@ -594,7 +603,7 @@ function on_game_start()
 
 		local prev = rawget(dm, "alife_create_item") or _G.alife_create_item
 		dm.alife_create_item = function(sec, obj, t, ...)
-			if dg and sec and IsItem("ammo", sec) and obj and obj.id and obj:id() ~= AC_ID then sec = downgrade(sec) end
+			if dg and sec and IsItem("ammo", sec) and obj and obj.id and obj:id() ~= AC_ID then sec = downgrade(downgrade(sec)) end
 			return prev(sec, obj, t, ...)
 		end
 	end

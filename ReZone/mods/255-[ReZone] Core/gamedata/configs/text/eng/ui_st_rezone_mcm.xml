@@ -739,7 +739,7 @@
 		<text>Sets all hit types at once, fine-tune afterwards.</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_cop_note">
-		<text>All damage you take is set only here. Call of Pripyat (beginners): bullets x0.35, mutants x1 (as in CoP), falls and blows x0.75, explosions x0.3, fire x0.65, anomalies, radiation and psi x0.75. Anomaly: bullets x0.7. Hardcore: everything stronger. Everything at 1 = vanilla.</text>
+		<text>All damage you take is set only here. Call of Pripyat (beginners): bullets x0.45, mutants x1 (as in CoP), falls and blows x0.75, explosions x0.3, fire x0.65, anomalies and psi x0.75, radiation x1.25 (escalates with dose). Anomaly: bullets x0.7. Hardcore: everything stronger. Everything at 1 = vanilla.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_craft">
 		<text>Crafting</text>
@@ -817,7 +817,7 @@
 		<text>Hardcore</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Call of Pripyat (original preset): CoP ballistics and armor, Call of Pripyat player damage (bullets x0.35, anomalies and radiation x0.75), usable gear from bodies, calmer Zone, EFTH difficulty Call of Pripyat. Prices, trade, mutants, artefacts, wear and recipes are not changed - your settings on the individual pages apply.</text>
+		<text>Call of Pripyat: CoP ballistics and armor without helmets from closed suits, realistic head hits, wear 0.9, Call of Pripyat player damage (bullets x0.45, anomalies x0.75, radiation x1.25 escalating with dose), CoP field artefacts, braver knife NPCs (1.55, chance 0.55), slower NPC detection (stalkers 0.5, mutants 0.15), known recipes kept, usable gear from bodies, calmer Zone, EFTH difficulty Call of Pripyat. Prices, trade and mutants are not changed.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
 		<text>Anomaly: bullets x0.7, Anomaly armor, prices and trade like vanilla Anomaly, vanilla mutants, usable gear from bodies, vanilla population, EFTH difficulty Normal.</text>
@@ -1504,13 +1504,13 @@
 		<text>How much disassembled ammo gives back - a share of exactly the items it is crafted from in the workshop (0.5 = half). E.g. Dragon's Breath returns buckshot shells plus fire and star powder, not generic parts. Ammo without a recipe is disassembled the old way.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
-		<text>Knife attacks</text>
+		<text>Knife and axe attacks</text>
 	</string>
 	<string id="ui_mcm_rz_knife_title">
-		<text>NPC knife attacks</text>
+		<text>NPC knife and axe attacks</text>
 	</string>
 	<string id="ui_mcm_rz_knife_info">
-		<text>NPCs with a knife sometimes rush the player, a stalker or a mutant in combat and stab them - ambush, close attack, mutant hunting and defence against mutants. Port of rx_knife from AI Additions (Rulix aka Bak). More settings in configs\misc\rz_npc_knife.ltx.</text>
+		<text>NPCs with a knife or an axe sometimes rush the player, a stalker or a mutant in combat and stab them - ambush, close attack, mutant hunting and defence against mutants. Port of rx_knife from AI Additions (Rulix aka Bak). More settings in configs\misc\rz_npc_knife.ltx.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_enabled">
 		<text>Enable knife attacks</text>
@@ -1519,10 +1519,10 @@
 		<text>Off = NPCs do not attack with knives and get no knives (like vanilla).</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance">
-		<text>Knife chance</text>
+		<text>Knife or axe chance</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance_desc">
-		<text>Chance an NPC without a knife gets one (0 = never, 0.35 = default). Each NPC is rolled only once.</text>
+		<text>Chance an NPC without a melee weapon gets a knife or an axe (about 5 : 4 for knives; 0 = never, 0.35 = default). Each NPC is rolled only once.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_courage">
 		<text>Courage (how often they attack)</text>
@@ -1690,7 +1690,7 @@
 		<text>level_vertex_id invalid (outside AI mesh) – for world and corpse move the marker to the ground</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation_desc">
-		<text>How fast accumulated radiation drains health. 3 = triple drain at the same radiation level. Does not change how fast you gain radiation.</text>
+		<text>How strongly accumulated radiation drains your health. Above 1 the drain escalates with the dose: light exposure barely matters, a high dose kills fast like in CoP. 1 = vanilla, 1.25 = CoP preset (full radiation kills in about 5 minutes), 3 = very dangerous. Does not change how fast you gain radiation.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_rad_gain">
 		<text>Radiation – gain</text>
@@ -1712,5 +1712,164 @@
 	</string>
 	<string id="ui_mcm_rz_hud_enabled_desc">
 		<text>Off = radiation icon only, like vanilla. The number shows only with a Geiger counter in inventory.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_hunt">
+		<text>Artefact hunters</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_title">
+		<text>Artefact hunters</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_info">
+		<text>After an emission or psi storm a few stalker squads on your current level head out to anomaly fields to collect fresh artefacts. At the field they throw bolts, probe carefully and pick up - so they can snatch an artefact from under your nose. A hunter can get hit by the anomaly and be wounded or die; the higher the rank, the lower the risk. When you are far away everything is only calculated and costs no performance. On other levels hunters simply get artefacts in their backpacks (they sell them or you find them on their bodies).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled">
+		<text>Enable artefact hunters</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled_desc">
+		<text>Off = nobody heads out; running hunts end at once and squads return to their targets.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads">
+		<text>Max hunting squads</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads_desc">
+		<text>How many squads head out after one emission on your current level. Each goes to a different field.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay">
+		<text>Departure after emission (game minutes)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay_desc">
+		<text>How long after an emission ends the hunters head out (randomised around this value). Short = competition right away, long = you get a head start.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius">
+		<text>Squad search range (m)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius_desc">
+		<text>How far from an anomaly field a squad may be to go hunting.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk">
+		<text>Hunting lethality</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk_desc">
+		<text>Scales the risk of an anomaly hit while collecting (by rank: novice most, legend almost none). 0 = hunters never get hurt, 1 = default, 3 = hunting is very dangerous.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts">
+		<text>Bolt throwing</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts_desc">
+		<text>Hunters throw 1-3 bolts before collecting; anomalies react to them. Bolts disappear after a while.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi">
+		<text>Hunt after psi storms too</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi_desc">
+		<text>Off = hunters head out only after emissions.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels">
+		<text>Hunting on other levels</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels_desc">
+		<text>After an emission some squads on other levels get an artefact matching the level (weaker in the south, better in the north); sometimes someone dies. It does not take artefacts from the fields on those levels.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count">
+		<text>Hunters on other levels</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count_desc">
+		<text>Max squads on one distant level that try their luck after an emission.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_factions">
+		<text>Who goes hunting:</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker">
+		<text>Stalkers</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker_desc">
+		<text>Loner stalkers.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom">
+		<text>Freedom</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom_desc">
+		<text>Freedom squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit">
+		<text>Bandits</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit_desc">
+		<text>Bandit squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer">
+		<text>Mercenaries</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer_desc">
+		<text>Mercenary squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog">
+		<text>Scientists</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog_desc">
+		<text>Science squads (ecologists).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky">
+		<text>Clear Sky</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky_desc">
+		<text>Clear Sky squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg">
+		<text>Duty</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg_desc">
+		<text>Duty squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army">
+		<text>Military</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army_desc">
+		<text>Military squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade">
+		<text>Renegades</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade_desc">
+		<text>Renegade squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith">
+		<text>Monolith</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith_desc">
+		<text>Monolith squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg">
+		<text>ISG</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg_desc">
+		<text>ISG squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh">
+		<text>Sin</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh_desc">
+		<text>Sin squads.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_note">
+		<text>Hunters are never story characters, companions or hostages. They do not take artefacts within 3 m of you. A hunt is cancelled by combat, danger, emissions and after 3 game hours. Faction, rank risk and level lists are in configs\rezone\hunt.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill">
+		<text>Realistic head hits</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill_desc">
+		<text>A hit to the head, eyes or jaw of an NPC without a helmet kills in one shot (a bandana, respirator or gas mask does not protect). Helmets reduce head hits by protection: science suit barely, tactical helmet by about a third, exo and heavier by half or more, so you need more shots. Does not apply to your companions.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet">
+		<text>Metal ricochet off your armor</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet_desc">
+		<text>When a bullet hits you and fails to penetrate your hard armor (heavy suit, exo, heavy helmet on the head), you hear a metal ricochet like when shooting an NPC in exo. Takes suit condition and bullet penetration into account.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup">
+		<text>Learned recipes window</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup_desc">
+		<text>After reading a recipe a window shows everything it unlocks, with ingredients (green = you carry enough). Off = original Anomaly window.</text>
 	</string>
 </string_table>

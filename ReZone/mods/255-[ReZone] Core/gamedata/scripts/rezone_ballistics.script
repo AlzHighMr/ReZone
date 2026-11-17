@@ -57,6 +57,8 @@ for i = 23, 32 do BONE[i] = "bip01_l_hand" end
 for i = 36, 45 do BONE[i] = "bip01_r_hand" end
 
 HEAD = { [14] = true, [15] = true, [16] = true, [17] = true, [18] = true, [19] = true }
+SKULL = { [15] = true, [16] = true, [17] = true, [18] = true, [19] = true }
+NO_HELMET = 0.05
 TORSO = { [1] = true, [2] = true, [11] = true, [12] = true, [13] = true, [20] = true, [33] = true, [46] = true }
 function is_limb(id) return not HEAD[id] and not TORSO[id] end
 
@@ -194,6 +196,11 @@ local function duplicate(s_hit, npc)
 	return t ~= nil and (now - t) <= 15
 end
 
+local function companion(npc)
+	local sq = get_object_squad(npc)
+	return sq and axr_companions and axr_companions.companion_squads and axr_companions.companion_squads[sq.id] and true or false
+end
+
 function compute(npc, s_hit, bone_id, human)
 	if s_hit.type ~= hit.fire_wound or (s_hit.power or 0) >= 50 then return end
 	local shooter = s_hit.draftsman
@@ -226,6 +233,12 @@ function compute(npc, s_hit, bone_id, human)
 
 	rezone_ammo_fx.pre(ctx)
 
+	local skull = human and SKULL[bone_id]
+	local head_rules = skull and cfg("head_kill") ~= false
+	if head_rules and ctx.armor >= 0.15 then
+		ctx.mult = ctx.mult * (1 - clamp((ctx.armor - 0.15) / 0.3, 0, 1) * 0.6)
+	end
+
 	local pm
 	if human then
 		local blunt = max(p.blunt_min, ctx.frac) + 0.1 * (ctx.impact - 0.3)
@@ -257,6 +270,10 @@ function compute(npc, s_hit, bone_id, human)
 	end
 
 	rezone_ammo_fx.post(ctx)
+	if head_rules and ctx.armor < NO_HELMET and s_hit.power > 0.01 and not companion(npc) then
+		s_hit.power = max(s_hit.power, (npc.health or 1) + 0.5)
+		ctx.power = s_hit.power
+	end
 	return ctx
 end
 
@@ -303,6 +320,36 @@ local function monster_cb(monster, s_hit, bone_id)
 	return flags.ret_value
 end
 
+local RICO = { "01", "02", "03", "04", "05" }
+local rico_t = 0
+local function slot_armor(slot, bone_name)
+	local o = db.actor:item_in_slot(slot)
+	if not o then return 0 end
+	local sect = SYS_GetParam(0, o:section(), "bones_koeff_protection")
+	local v = sect and SYS_GetParam(0, sect, bone_name)
+	local a = v and tonumber(str_explode(v, ",")[2]) or 0
+	return a * math.sqrt(clamp(o:condition(), 0, 1))
+end
+
+local function actor_ricochet(s_hit, bone_id)
+	if cfg("enabled") == false or cfg("ricochet") == false or not s_hit or s_hit.type ~= hit.fire_wound then return end
+	local who = s_hit.draftsman
+	if not who or who:id() == AC_ID then return end
+	local now = time_global()
+	if now - rico_t < 120 then return end
+	local name = BONE[bone_id] or "bip01_spine"
+	local armor = slot_armor(7, name)
+	if HEAD[bone_id] then armor = max(armor, slot_armor(12, name)) end
+	if armor < 0.3 or (s_hit.ap or 0) >= armor then return end
+	rico_t = now
+	local snd = xr_sound.get_safe_sound_object("material\\bullet\\collide\\metall" .. RICO[random(#RICO)] .. "gr")
+	if snd then snd:play(db.actor, 0, sound_object.s2d) end
+end
+
+local function on_actor_hit(s_hit, bone_id, flags)
+	pcall(actor_ricochet, s_hit, bone_id)
+end
+
 local function on_death(npc)
 	if npc then worn[npc:id()] = nil end
 end
@@ -311,6 +358,7 @@ function on_game_start()
 	_G.CAI_Stalker__BeforeHitCallback = stalker_cb
 	_G.CBaseMonster__BeforeHitCallback = monster_cb
 	RegisterScriptCallback("actor_on_weapon_before_fire", on_before_fire)
+	RegisterScriptCallback("actor_on_before_hit", on_actor_hit)
 	RegisterScriptCallback("npc_on_death_callback", on_death)
 	RegisterScriptCallback("monster_on_death_callback", on_death)
 end

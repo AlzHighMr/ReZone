@@ -1,0 +1,98 @@
+evaid = 188830
+actid = 188830
+
+local orders = {}
+
+function set_orders(t)
+	orders = t
+end
+
+class "eva_rz_hunt" (property_evaluator)
+function eva_rz_hunt:__init(name, st) super(nil, name)
+	self.st = st
+end
+
+function eva_rz_hunt:evaluate()
+	local npc = self.object
+	if not orders[npc:id()] then return false end
+	if not npc:alive() or IsWounded(npc) or npc:best_enemy() then return false end
+	if xr_danger.has_danger(npc) then return false end
+	return rezone_mod_hunt.can_work(npc)
+end
+
+class "act_rz_hunt" (action_base)
+function act_rz_hunt:__init(name, st) super(nil, name)
+	self.st = st
+end
+
+function act_rz_hunt:initialize()
+	action_base.initialize(self)
+	local npc = self.object
+	npc:set_desired_position()
+	npc:set_desired_direction()
+	npc:set_path_type(game_object.level_path)
+	rezone_mod_hunt.on_start(npc)
+end
+
+function act_rz_hunt:execute()
+	action_base.execute(self)
+	local npc = self.object
+	local ok, err = pcall(rezone_mod_hunt.step, npc)
+	if not ok then rezone_mod_hunt.on_error(npc, err) end
+end
+
+function act_rz_hunt:finalize()
+	pcall(rezone_mod_hunt.on_stop, self.object)
+	action_base.finalize(self)
+end
+
+function setup_generic_scheme(npc, ini, scheme, section, stype, temp)
+	xr_logic.assign_storage_and_bind(npc, ini, "rz_hunt", section, temp)
+end
+
+function add_to_binder(npc, ini, scheme, section, st, temp)
+	if not npc then return end
+	local manager = npc:motivation_action_manager()
+	if not manager then return end
+
+	if character_community(npc) == "zombied" or npc:section() == "actor_visual_stalker" then
+		manager:add_evaluator(evaid, property_evaluator_const(false))
+		temp.needs_configured = false
+		return
+	end
+
+	local wp = world_property
+	manager:add_evaluator(evaid, eva_rz_hunt("eva_rz_hunt", st))
+	temp.action = act_rz_hunt("act_rz_hunt", st)
+	temp.action:add_precondition(wp(stalker_ids.property_alive, true))
+	temp.action:add_precondition(wp(stalker_ids.property_enemy, false))
+	temp.action:add_precondition(wp(stalker_ids.property_danger, false))
+	temp.action:add_precondition(wp(evaid, true))
+	temp.action:add_effect(wp(evaid, false))
+	manager:add_action(actid, temp.action)
+end
+
+function configure_actions(npc, ini, scheme, section, stype, temp)
+	if not npc then return end
+	local manager = npc:motivation_action_manager()
+	if not (manager and temp.action) then return end
+	local wp = world_property
+
+	temp.action:add_precondition(wp(xr_evaluators_id.wounded_exist, false))
+	temp.action:add_precondition(wp(xr_evaluators_id.stohe_meet_base + 1, false))
+	temp.action:add_precondition(wp(xr_evaluators_id.sidor_wounded_base, false))
+	temp.action:add_precondition(wp(xr_evaluators_id.abuse_base, false))
+
+	local p = { stalker_ids.action_combat_planner, xr_actions_id.state_mgr + 2, xr_actions_id.alife }
+	for i = 1, #p do
+		local a = manager:action(p[i])
+		if a then a:add_precondition(wp(evaid, false)) end
+	end
+end
+
+function reset_generic_scheme(npc, scheme, section, stype, st)
+end
+
+function npc_add_precondition(action)
+	if action then action:add_precondition(world_property(evaid, false)) end
+end

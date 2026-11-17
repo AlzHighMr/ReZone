@@ -739,7 +739,7 @@
 		<text>Nastaví všechny typy zásahu najednou, pak je mùeš doladit.</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_cop_note">
-		<text>Všechno poškození, které dostáváš, se nastavuje jen tady. Call of Pripyat (pro nováèky): kulky x0.35, mutanti x1 (jako v CoP), pády a údery x0.75, vıbuchy x0.3, oheò x0.65, anomálie, radiace a psí x0.75. Anomaly: kulky x0.7. Hardcore: všechno silnìjší. Všechno na 1 = vanilla.</text>
+		<text>Všechno poškození, které dostáváš, se nastavuje jen tady. Call of Pripyat (pro nováèky): kulky x0.45, mutanti x1 (jako v CoP), pády a údery x0.75, vıbuchy x0.3, oheò x0.65, anomálie a psí x0.75, radiace x1.25 (roste s dávkou). Anomaly: kulky x0.7. Hardcore: všechno silnìjší. Všechno na 1 = vanilla.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_craft">
 		<text>Crafting</text>
@@ -817,7 +817,7 @@
 		<text>Hardcore</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Call of Pripyat (pùvodní pøedvolba): balistika a brnìní CoP, poškození hráèe Call of Pripyat (kulky x0.35, anomálie a radiace x0.75), pouitelné vìci z mrtvol, klidnìjší Zóna, EFTH obtínost Call of Pripyat. Ceny, obchod, mutanty, artefakty, opotøebení ani recepty nemìní – platí, co máš na jednotlivıch stránkách.</text>
+		<text>Call of Pripyat: balistika a brnìní CoP bez helem z uzavøenıch oblekù, realistické zásahy do hlavy, opotøebení 0.9, poškození hráèe Call of Pripyat (kulky x0.45, anomálie x0.75, radiace x1.25 roste s dávkou), artefakty v polích CoP, NPC s noi odvánìjší (1.55, šance 0.55), vidìní NPC zpomalené (stalkeøi 0.5, mutanti 0.15), známé recepty zùstávají, pouitelné vìci z mrtvol, klidnìjší Zóna, EFTH obtínost Call of Pripyat. Ceny, obchod a mutanty nemìní.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
 		<text>Anomaly: kulky x0.7, brnìní Anomaly, ceny a obchod jako vanilla Anomaly, mutanti vanilla, pouitelné vìci z mrtvol, populace vanilla, EFTH obtínost Normální.</text>
@@ -1504,13 +1504,13 @@
 		<text>Kolik surovin vrátí rozebraná munice – podíl pøesnì tìch vìcí, ze kterıch se v dílnì vyrábí (0,5 = polovina). Napø. Draèí dech vrátí brokové náboje a ohnivı a hvìzdnı prach, ne obecné díly. Munice bez receptu se rozebírá postaru.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
-		<text>Útoky noem</text>
+		<text>Útoky noem a sekyrou</text>
 	</string>
 	<string id="ui_mcm_rz_knife_title">
-		<text>Útoky noem (NPC)</text>
+		<text>Útoky noem a sekyrou (NPC)</text>
 	</string>
 	<string id="ui_mcm_rz_knife_info">
-		<text>NPC s noem v boji obèas vybìhnou na hráèe, stalkera nebo mutanta a sekají noem – pøepadení ze zálohy, útok zblízka, lov mutantù a obrana proti nim. Port rx_knife z AI Additions (Rulix aka Bak). Další podrobnosti v configs\misc\rz_npc_knife.ltx.</text>
+		<text>NPC s noem nebo sekyrou v boji obèas vybìhnou na hráèe, stalkera nebo mutanta a sekají – pøepadení ze zálohy, útok zblízka, lov mutantù a obrana proti nim. Port rx_knife z AI Additions (Rulix aka Bak). Další podrobnosti v configs\misc\rz_npc_knife.ltx.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_enabled">
 		<text>Zapnout útoky noem</text>
@@ -1519,10 +1519,10 @@
 		<text>Vypnuto = NPC noem neútoèí a noe se nerozdávají (jako vanilla).</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance">
-		<text>Šance na nù</text>
+		<text>Šance na nù nebo sekyru</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance_desc">
-		<text>Šance, e NPC bez noe dostane nù (0 = nedávat, 0.35 = vıchozí). Kadé NPC se losuje jen jednou.</text>
+		<text>Šance, e NPC bez zbranì nablízko dostane nù nebo sekyru (zhruba 5 : 4 pro noe; 0 = nedávat, 0.35 = vıchozí). Kadé NPC se losuje jen jednou.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_courage">
 		<text>Odvaha (jak èasto útoèí)</text>
@@ -1690,7 +1690,7 @@
 		<text>level_vertex_id neplatnı (mimo AI sí) – pro world a corpse posuò ukazatel na zem</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation_desc">
-		<text>Jak rychle ti nasbíraná radiace ubírá zdraví. 3 = trojnásobnı úbytek pøi stejné úrovni radiace. Nemìní, jak rychle radiaci nabíráš.</text>
+		<text>Jak silnì ti nasbíraná radiace ubírá zdraví. Nad 1 roste úbytek s dávkou: malé ozáøení skoro nevadí, vysoká dávka zabíjí rychle jako v CoP. 1 = vanilla, 1,25 = pøedvolba CoP (plná radiace zabije zhruba za 5 minut), 3 = velmi nebezpeèná. Nemìní, jak rychle radiaci nabíráš.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_rad_gain">
 		<text>Radiace – nabírání</text>
@@ -1712,5 +1712,164 @@
 	</string>
 	<string id="ui_mcm_rz_hud_enabled_desc">
 		<text>Vypnuto = jen ikona radiace jako ve vanille. Èíslo se ukáe jen s Geigerovım poèítaèem v inventáøi.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_hunt">
+		<text>Lovci artefaktù</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_title">
+		<text>Lovci artefaktù</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_info">
+		<text>Po emisi a psi bouøi vyrazí pár skupin stalkerù na lokaci, kde jsi, do polí anomálií sbírat èerstvé artefakty. U pole házejí šrouby, opatrnì prohledávají a sbírají – artefakt ti tak mùou vyfouknout pøed nosem. Lovec mùe od anomálie dostat zásah a zranit se nebo zemøít; èím vyšší hodnost, tím menší riziko. Kdy jsi daleko, vše se jen dopoèítá a nestojí to ádnı vıkon. Na ostatních lokacích si lovci najdou artefakty v batohu (prodají je nebo je u nich najdeš).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled">
+		<text>Zapnout lovce artefaktù</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled_desc">
+		<text>Vypnuto = nikdo nevyrazí; probíhající lovy hned skonèí a skupiny se vrátí ke svım cílùm.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads">
+		<text>Nejvíc loveckıch skupin</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads_desc">
+		<text>Kolik skupin vyrazí po jedné emisi na lokaci, kde jsi. Kadá jde k jinému poli.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay">
+		<text>Odchod po emisi (herní minuty)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay_desc">
+		<text>Za jak dlouho po konci emise lovci vyrazí (náhodnì kolem této hodnoty). Krátce = máš konkurenci hned, dlouze = máš náskok.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius">
+		<text>Dosah hledání skupin (m)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius_desc">
+		<text>Jak daleko od pole anomálií mùe bıt skupina, aby vyrazila na lov.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk">
+		<text>Smrtnost lovu</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk_desc">
+		<text>Násobí riziko zásahu anomálií pøi sbìru (podle hodnosti: nováèek nejvíc, legenda skoro nic). 0 = lovci se nikdy nezraní, 1 = vıchozí, 3 = lov je velmi nebezpeènı.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts">
+		<text>Házení šroubù</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts_desc">
+		<text>Lovci pøed sbìrem hodí 1–3 šrouby, na které anomálie reagují. Šrouby po chvíli zmizí.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi">
+		<text>Lovit i po psi bouøi</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi_desc">
+		<text>Vypnuto = lovci vyráejí jen po emisi.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels">
+		<text>Lov na ostatních lokacích</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels_desc">
+		<text>Po emisi dostanou nìkteré skupiny na ostatních lokacích artefakt odpovídající lokaci (jih slabší, sever lepší), obèas pøi tom nìkdo zemøe. Artefakty v polích na tìch lokacích to nebere.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count">
+		<text>Lovcù na ostatních lokacích</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count_desc">
+		<text>Nejvíc skupin na jedné vzdálené lokaci, které po emisi zkusí štìstí.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_factions">
+		<text>Kdo chodí na lov:</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker">
+		<text>Stalkeøi</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker_desc">
+		<text>Volní stalkeøi.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom">
+		<text>Svoboda</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom_desc">
+		<text>Skupiny Svobody.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit">
+		<text>Banditi</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit_desc">
+		<text>Skupiny banditù.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer">
+		<text>oldáci</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer_desc">
+		<text>Skupiny oldákù.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog">
+		<text>Vìdci</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog_desc">
+		<text>Vìdecké skupiny (ekologové).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky">
+		<text>Jasná obloha</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky_desc">
+		<text>Skupiny Jasné oblohy.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg">
+		<text>Povinnost</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg_desc">
+		<text>Skupiny Povinnosti.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army">
+		<text>Armáda</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army_desc">
+		<text>Vojenské skupiny.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade">
+		<text>Odpadlíci</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade_desc">
+		<text>Skupiny odpadlíkù.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith">
+		<text>Monolit</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith_desc">
+		<text>Skupiny Monolitu.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg">
+		<text>ISG</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg_desc">
+		<text>Skupiny ISG.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh">
+		<text>Høích</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh_desc">
+		<text>Skupiny Høíchu.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_note">
+		<text>Lovci nikdy nejsou pøíbìhové postavy, spoleèníci ani rukojmí. Neberou artefakty do 3 m od tebe. Lov se ruší pøi boji, nebezpeèí, emisi a po 3 herních hodinách. Seznam frakcí, rizika podle hodnosti a lokací je v configs\rezone\hunt.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill">
+		<text>Realistické zásahy do hlavy</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill_desc">
+		<text>Zásah do hlavy, oèí nebo èelisti NPC bez helmy zabije jednou ranou (šátek, respirátor ani plynová maska nechrání). Helmy zásah do hlavy sniují podle ochrany: vìdeckı oblek skoro nic, taktická helma asi o tøetinu, exo a tìší o polovinu a víc, take potøebuješ víc ran. Neplatí pro tvé spoleèníky.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet">
+		<text>Kovovı odraz kulek od tvého brnìní</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet_desc">
+		<text>Kdy tì trefí kulka a neprorazí tvé tvrdé brnìní (tìkı oblek, exo, tìká helma na hlavì), uslyšíš kovovı odraz jako pøi støelbì do NPC v exo. Poèítá se se stavem obleku a prùrazností kulky.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup">
+		<text>Okno s nauèenımi recepty</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup_desc">
+		<text>Po pøeètení receptu se ukáe okno se všemi vìcmi, které recept odemyká, i se surovinami (zelená = máš u sebe dost). Vypnuto = pùvodní okno Anomaly.</text>
 	</string>
 </string_table>

@@ -16,9 +16,11 @@ impact   = 0.4
 wear     = 1.25
 price    = 900
 downgrade= ammo_9x18_fmj
-downgrade_chance= 0.3
+downgrade_chance= 0.75
 
 [ammo_9x18_pmm]:ammo_base
+downgrade = ammo_9x18_fmj
+downgrade_chance = 0.6
 name     = ammo_new_9x18_hp
 hit      = 1
 ap       = 0.049
@@ -38,7 +40,7 @@ wear     = 1.25
 price    = 1216
 tag      = varma
 downgrade= ammo_9x18_pmm
-downgrade_chance= 0.3
+downgrade_chance= 0.75
 
 [ammo_9x18_ap]:ammo_base
 name     = ammo_new_9x18_ap
@@ -48,7 +50,7 @@ impact   = 0.3
 pen      = 0.3
 price    = 840
 downgrade= ammo_9x18_fmj
-downgrade_chance= 0.5
+downgrade_chance= 0.6
 
 [ammo_9x18_ap_bad]:ammo_9x18_ap
 name     = ammo_new_9x18_7n25
@@ -58,7 +60,7 @@ pen      = 0.4
 wear     = 1.25
 price    = 1450
 downgrade= ammo_9x18_ap
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 tag      = ambush
 
 [ammo_9x19_fmj]:ammo_base
@@ -76,9 +78,11 @@ impact   = 0.4
 wear     = 1.25
 price    = 1125
 downgrade= ammo_9x19_fmj
-downgrade_chance= 0.3
+downgrade_chance= 0.75
 
 [ammo_9x19_pbp]:ammo_base
+downgrade = ammo_9x19_fmj
+downgrade_chance = 0.6
 name     = ammo_new_9x19_pbp
 hit      = 1
 ap       = 0.055
@@ -99,7 +103,7 @@ wear     = 1.1
 price    = 1759
 tag      = flinch
 downgrade= ammo_9x19_pbp
-downgrade_chance= 0.35
+downgrade_chance= 0.75
 
 [ammo_9x19_ap]:ammo_base
 name     = ammo_new_9x19_ap
@@ -120,7 +124,7 @@ impact   = 0.4
 wear     = 1.25
 price    = 2250
 downgrade= ammo_9x19_ap
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 
 [ammo_11.43x23_fmj]:ammo_base
 name     = ammo_new_11.43x23_fmj
@@ -137,7 +141,7 @@ impact   = 0.5
 wear     = 1.15
 price    = 1300
 downgrade= ammo_11.43x23_fmj
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_11.43x23_hydro]:ammo_base
 effect   = varma
@@ -149,7 +153,7 @@ hp       = 1.5
 price    = 1000
 tag      = hp
 downgrade= ammo_11.43x23_fmj
-downgrade_chance= 0.4
+downgrade_chance= 0.6
 
 [ammo_11.43x23_hydro_bad]:ammo_11.43x23_hydro
 effect   = rip
@@ -162,7 +166,7 @@ wear     = 1.3
 price    = 1669
 tag      = rip
 downgrade= ammo_11.43x23_hydro
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 
 [ammo_357_hp_mag]:ammo_base
 name     = ammo_new_357_hp
@@ -199,9 +203,11 @@ hit      = 0.8
 ap       = 0.165
 price    = 1120
 downgrade= ammo_7.62x25_p
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 
 [ammo_7.62x25_ps]:ammo_base
+downgrade = ammo_7.62x25_p
+downgrade_chance = 0.6
 name     = ammo_new_7.62x25_hp
 hit      = 0.8
 ap       = 0.075
@@ -221,10 +227,12 @@ price    = 2700
 tag      = acid
 on_shoot = muzzle_acid
 downgrade= ammo_7.62x25_ps
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 acid     = 0.2
 
 [ammo_5.7x28_ss190]:ammo_base
+downgrade = ammo_5.7x28_ss195
+downgrade_chance = 0.6
 name     = ammo_new_5.7x28_fmj
 hit      = 0.9
 ap       = 0.165
@@ -239,7 +247,7 @@ ap       = 0.225
 pen      = 0.7
 price    = 2200
 downgrade= ammo_5.7x28_ss190
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_5.7x28_ss195]:ammo_base
 name     = ammo_new_5.7x28_ss195
@@ -261,7 +269,7 @@ price    = 3125
 tag      = chaos
 on_shoot = muzzle_grav
 downgrade= ammo_5.7x28_ss190
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 
 [ammo_9x18_fmj_verybad]:ammo_9x18_fmj
 downgrade= ammo_9x18_fmj
@@ -332,10 +340,12 @@ hit      = 1
 ap       = 0.175
 price    = 1950
 downgrade= ammo_5.45x39_fmj
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 tag      = terminal
 
 [ammo_5.45x39_ep]:ammo_base
+downgrade = ammo_5.45x39_fmj
+downgrade_chance = 0.6
 name     = ammo_new_5.45x39_hp
 hit      = 1
 hit_scale= 0.85
@@ -357,7 +367,7 @@ wear     = 1.1
 tag      = flinch
 price    = 1750
 downgrade= ammo_5.45x39_ep
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 
 [ammo_5.45x39_ap]:ammo_base
 name     = ammo_new_5.45x39_ap
@@ -369,7 +379,7 @@ pen      = 0.5
 wear     = 1.1
 price    = 2210
 downgrade= ammo_5.45x39_fmj
-downgrade_chance= 0.2
+downgrade_chance= 0.6
 
 [ammo_5.45x39_ap_bad]:ammo_5.45x39_ap
 name     = ammo_new_5.45x39_aps
@@ -399,10 +409,12 @@ hit      = 1.05
 ap       = 0.155
 price    = 2200
 downgrade= ammo_5.56x45_fmj
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 tag      = match
 
 [ammo_5.56x45_ss190]:ammo_base
+downgrade = ammo_5.56x45_fmj
+downgrade_chance = 0.6
 name     = ammo_new_5.56x45_hp
 hit      = 1
 hit_scale= 0.85
@@ -422,9 +434,11 @@ wear     = 1.1
 price    = 1900
 tag      = varma
 downgrade= ammo_5.56x45_ss190
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_5.56x45_ap]:ammo_base
+downgrade = ammo_5.56x45_fmj
+downgrade_chance = 0.6
 name     = ammo_new_5.56x45_ss190
 hit      = 0.75
 hit_scale= 0.85
@@ -482,7 +496,7 @@ wear     = 2
 price    = 3330
 tag      = fire
 downgrade= ammo_7.62x39_ap
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_9x39_pab9]:ammo_base
 name     = ammo_new_9x39_sp5
@@ -499,10 +513,12 @@ hit      = 1.3
 ap       = 0.245
 price    = 3300
 downgrade= ammo_9x39_pab9
-downgrade_chance= 0.5
+downgrade_chance= 0.75
 tag      = ambush
 
 [ammo_9x39_ap]:ammo_base
+downgrade = ammo_9x39_pab9
+downgrade_chance = 0.6
 name     = ammo_new_9x39_pab9
 hit      = 1.3
 ap       = 0.28
@@ -557,10 +573,12 @@ hit      = 1.1
 ap       = 0.185
 price    = 1400
 downgrade= ammo_7.62x54_7h1
-downgrade_chance= 0.5
+downgrade_chance= 0.75
 tag      = match
 
 [ammo_7.62x54_7h14]:ammo_base
+downgrade = ammo_7.62x54_7h1
+downgrade_chance = 0.6
 name     = ammo_new_7.62x54_hp
 hit      = 1
 ap       = 0.145
@@ -588,7 +606,7 @@ impact   = 0.85
 pen      = 0.5
 price    = 2100
 downgrade= ammo_7.62x54_7h1
-downgrade_chance= 0.5
+downgrade_chance= 0.6
 
 [ammo_7.62x54_ap_bad]:ammo_7.62x54_ap
 effect   = incendiary
@@ -620,7 +638,7 @@ hp       = 1.2
 wear     = 1.5
 price    = 6500
 downgrade= ammo_pkm_100
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_7.62x51_fmj]:ammo_base
 name     = ammo_new_7.62x51_fmj
@@ -636,7 +654,7 @@ hit      = 1.05
 ap       = 0.2
 price    = 2600
 downgrade= ammo_7.62x51_fmj
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 tag      = match
 
 [ammo_7.62x51_ap]:ammo_base
@@ -647,7 +665,7 @@ impact   = 0.85
 pen      = 0.6
 price    = 2500
 downgrade= ammo_7.62x51_fmj
-downgrade_chance= 0.5
+downgrade_chance= 0.6
 
 [ammo_7.62x51_ap_bad]:ammo_7.62x51_ap
 name     = ammo_new_7.62x51_slap
@@ -656,7 +674,7 @@ ap       = 0.395
 pen      = 0.8
 price    = 2750
 downgrade= ammo_7.62x51_fmj
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 tag      = pierce
 
 [ammo_7.92x33_fmj]:ammo_base
@@ -673,9 +691,11 @@ ap       = 0.305
 impact   = 0.85
 wear     = 1.1
 price    = 2100
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 
 [ammo_7.92x33_ap]:ammo_base
+downgrade = ammo_7.92x33_fmj
+downgrade_chance = 0.6
 name     = ammo_new_7.92x33_hp
 hit      = 1
 ap       = 0.145
@@ -693,7 +713,7 @@ wear     = 1.5
 price    = 3400
 on_shoot = muzzle_shock
 downgrade= ammo_7.92x33_ap
-downgrade_chance= 0.7
+downgrade_chance= 0.75
 tag      = shock
 
 [ammo_12.7x55_fmj]:ammo_base
@@ -710,7 +730,7 @@ hit      = 1.65
 ap       = 0.255
 price    = 3750
 downgrade= ammo_12.7x55_fmj
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 
 [ammo_12.7x55_ap]:ammo_base
 name     = ammo_new_12.7x55_ap
@@ -721,7 +741,7 @@ pen      = 0.2
 wear     = 1
 price    = 3500
 downgrade= ammo_12.7x55_fmj
-downgrade_chance= 0.4
+downgrade_chance= 0.6
 
 [ammo_12.7x55_ap_bad]:ammo_12.7x55_ap
 name     = ammo_new_12.7x55_exp
@@ -732,7 +752,7 @@ wear     = 1.3
 price    = 4560
 tag      = explodes
 downgrade= ammo_12.7x55_ap
-downgrade_chance= 0.6
+downgrade_chance= 0.75
 
 [ammo_magnum_300]:ammo_base
 name     = ammo_new_338_lapua
@@ -794,7 +814,7 @@ impact   = 0.6
 wear     = 1.3
 price    = 1300
 downgrade= ammo_12x70_buck
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 
 [ammo_12x76_zhekan]:ammo_base
 effect   = slug
@@ -814,9 +834,11 @@ impact   = 0.8
 wear     = 1.3
 price    = 1850
 downgrade= ammo_12x76_zhekan
-downgrade_chance= 0.5
+downgrade_chance= 0.75
 
 [ammo_12x76_dart]:ammo_base
+downgrade = ammo_12x76_zhekan
+downgrade_chance = 0.6
 effect   = buckshot
 name     = ammo_new_12x70_flechette
 hit      = 0.28
@@ -892,7 +914,7 @@ hit      = 0.2
 radius   = 8
 price    = 4069
 downgrade= ammo_m209
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 tag      = firebomb
 
 [ammo_vog-25]:ammo_base
@@ -911,7 +933,7 @@ radius   = 3
 bomb     = m209_sub
 bombs    = 10
 downgrade= ammo_vog-25
-downgrade_chance= 0.4
+downgrade_chance= 0.75
 tag      = cluster
 
 [ammo_23x75_shrapnel]:ammo_base
@@ -924,6 +946,8 @@ wear     = 1
 price    = 2100
 
 [ammo_23x75_barrikada]:ammo_base
+downgrade = ammo_23x75_shrapnel
+downgrade_chance = 0.6
 effect   = slug
 name     = ammo_new_23x75_barrikada
 hit      = 6.9

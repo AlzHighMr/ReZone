@@ -1504,13 +1504,13 @@
 		<text>Сколько возвращает разобранный патрон - доля именно тех предметов, из которых он крафтится в мастерской (0.5 = половина). Напр. «Дыхание дракона» вернёт дробовые патроны и огненный и звёздный порошок. Патроны без рецепта разбираются по-старому.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_knife">
-		<text>Атаки ножом</text>
+		<text>Атаки ножом и топором</text>
 	</string>
 	<string id="ui_mcm_rz_knife_title">
-		<text>Атаки ножом (NPC)</text>
+		<text>Атаки ножом и топором (NPC)</text>
 	</string>
 	<string id="ui_mcm_rz_knife_info">
-		<text>NPC с ножом в бою иногда бросаются на игрока, сталкера или мутанта и бьют ножом - засада, атака вблизи, охота на мутантов и защита от них. Порт rx_knife из AI Additions (Rulix aka Bak). Подробнее в configs\misc\rz_npc_knife.ltx.</text>
+		<text>NPC с ножом или топором в бою иногда бросаются на игрока, сталкера или мутанта и бьют ножом - засада, атака вблизи, охота на мутантов и защита от них. Порт rx_knife из AI Additions (Rulix aka Bak). Подробнее в configs\misc\rz_npc_knife.ltx.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_enabled">
 		<text>Включить атаки ножом</text>
@@ -1519,10 +1519,10 @@
 		<text>Выкл = NPC не атакуют ножом и не получают ножи (как в ванили).</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance">
-		<text>Шанс ножа</text>
+		<text>Шанс ножа или топора</text>
 	</string>
 	<string id="ui_mcm_rz_knife_spawn_chance_desc">
-		<text>Шанс, что NPC без ножа получит нож (0 = никогда, 0.35 = по умолчанию). Каждый NPC проверяется один раз.</text>
+		<text>Шанс, что NPC без оружия ближнего боя получит нож или топор (примерно 5 : 4 в пользу ножей; 0 = никогда, 0.35 = по умолчанию). Каждый NPC проверяется один раз.</text>
 	</string>
 	<string id="ui_mcm_rz_knife_courage">
 		<text>Смелость (как часто атакуют)</text>
@@ -1712,5 +1712,164 @@
 	</string>
 	<string id="ui_mcm_rz_hud_enabled_desc">
 		<text>Выкл. = только иконка радиации, как в ванили. Число показывается только со счётчиком Гейгера в инвентаре.</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup">
+		<text>Окно изученных рецептов</text>
+	</string>
+	<string id="ui_mcm_rz_craft_learn_popup_desc">
+		<text>После чтения рецепта показывается окно со всем, что он открывает, и ингредиентами (зелёный = хватает). Выкл. = обычное окно Anomaly.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_hunt">
+		<text>Охотники за артефактами</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_title">
+		<text>Охотники за артефактами</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_info">
+		<text>После выброса или пси-шторма несколько отрядов на вашей локации идут к аномальным полям собирать свежие артефакты. У поля бросают болты, осторожно ищут и подбирают - артефакт могут увести у вас из-под носа. Охотника может задеть аномалия: ранение или смерть, чем выше ранг, тем меньше риск. Когда вы далеко, всё только рассчитывается и не стоит производительности. На других локациях охотники просто получают артефакты в рюкзак.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled">
+		<text>Включить охотников за артефактами</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_enabled_desc">
+		<text>Выкл. = никто не выходит; текущие охоты сразу заканчиваются, отряды возвращаются к своим целям.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads">
+		<text>Максимум охотничьих отрядов</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_max_squads_desc">
+		<text>Сколько отрядов выходит после одного выброса на вашей локации. Каждый идёт к другому полю.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay">
+		<text>Выход после выброса (игровые минуты)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_delay_desc">
+		<text>Через сколько после конца выброса выходят охотники (случайно около этого значения).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius">
+		<text>Дальность поиска отрядов (м)</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_radius_desc">
+		<text>Как далеко от аномального поля может быть отряд, чтобы пойти на охоту.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk">
+		<text>Смертность охоты</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_risk_desc">
+		<text>Множитель риска удара аномалии при сборе (по рангу: новичок больше всех, легенда почти нет). 0 = охотники не ранятся, 1 = по умолчанию, 3 = очень опасно.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts">
+		<text>Бросание болтов</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_bolts_desc">
+		<text>Перед сбором охотники бросают 1-3 болта, аномалии на них реагируют. Болты через время исчезают.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi">
+		<text>Охота и после пси-шторма</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_psi_desc">
+		<text>Выкл. = охотники выходят только после выброса.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels">
+		<text>Охота на других локациях</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_levels_desc">
+		<text>После выброса некоторые отряды на других локациях получают артефакт по локации (на юге слабее, на севере лучше), иногда кто-то погибает.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count">
+		<text>Охотников на других локациях</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_other_count_desc">
+		<text>Максимум отрядов на одной дальней локации, которые пробуют удачу после выброса.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_factions">
+		<text>Кто ходит на охоту:</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker">
+		<text>Сталкеры</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_stalker_desc">
+		<text>Вольные сталкеры.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom">
+		<text>Свобода</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_freedom_desc">
+		<text>Отряды Свободы.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit">
+		<text>Бандиты</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_bandit_desc">
+		<text>Отряды бандитов.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer">
+		<text>Наёмники</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_killer_desc">
+		<text>Отряды наёмников.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog">
+		<text>Учёные</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_ecolog_desc">
+		<text>Научные отряды (экологи).</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky">
+		<text>Чистое Небо</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_csky_desc">
+		<text>Отряды Чистого Неба.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg">
+		<text>Долг</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_dolg_desc">
+		<text>Отряды Долга.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army">
+		<text>Военные</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_army_desc">
+		<text>Военные отряды.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade">
+		<text>Ренегаты</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_renegade_desc">
+		<text>Отряды ренегатов.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith">
+		<text>Монолит</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_monolith_desc">
+		<text>Отряды Монолита.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg">
+		<text>ISG</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_isg_desc">
+		<text>Отряды ISG.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh">
+		<text>Грех</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_f_greh_desc">
+		<text>Отряды Греха.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_note">
+		<text>Охотники никогда не сюжетные персонажи, компаньоны или заложники. Не берут артефакты в 3 м от вас. Охота прерывается боем, опасностью, выбросом и через 3 игровых часа. Списки фракций, риска по рангу и локаций - configs\rezone\hunt.ltx.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill">
+		<text>Реалистичные попадания в голову</text>
+	</string>
+	<string id="ui_mcm_rz_ball_head_kill_desc">
+		<text>Попадание в голову, глаза или челюсть NPC без шлема убивает с одного выстрела (бандана, респиратор или противогаз не защищают). Шлемы уменьшают урон в голову по защите: научный костюм почти нет, тактический шлем примерно на треть, экзо и тяжелее наполовину и больше. Не действует на ваших компаньонов.</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet">
+		<text>Металлический рикошет от вашей брони</text>
+	</string>
+	<string id="ui_mcm_rz_ball_ricochet_desc">
+		<text>Когда пуля попадает в вас и не пробивает твёрдую броню (тяжёлый костюм, экзо, тяжёлый шлем на голове), слышен металлический рикошет, как при стрельбе в NPC в экзо. Учитывается состояние костюма и бронепробиваемость пули.</text>
 	</string>
 </string_table>

@@ -101,8 +101,19 @@ local function load_config()
 			end
 		end
 	end
-	if sets.weapon_to_spawn and not ini_sys:section_exist(sets.weapon_to_spawn) then
-		log("! predmet %s neexistuje - noze se nerozdavaji", tostring(sets.weapon_to_spawn))
+	sets.pool, sets.pool_total = {}, 0
+	for entry in string.gmatch(sets.weapon_to_spawn or "", "[^,]+") do
+		local sec, w = entry:match("^%s*([%w_]+)%s*:?%s*([%d%.]*)%s*$")
+		w = tonumber(w) or 1
+		if sec and w > 0 and ini_sys:section_exist(sec) then
+			sets.pool[#sets.pool + 1] = { sec, w }
+			sets.pool_total = sets.pool_total + w
+		elseif sec then
+			log("! predmet %s neexistuje", sec)
+		end
+	end
+	if sets.pool_total <= 0 then
+		log("! zadna platna zbran nablizko - noze se nerozdavaji")
 		sets.spawn_chance = 0
 		sets.no_weapon = true
 	end
@@ -133,6 +144,36 @@ end
 
 local function is_actor_cls(c) return c == clsid.script_actor or c == clsid.actor end
 local function is_firearm(o) return o and IsWeapon(o) and not IsMelee(o) and not (IsGrenade and IsGrenade(o)) end
+
+local function best_firearm(npc)
+	local best, loaded
+	for _, sl in ipairs({ 2, 3 }) do
+		local w = npc:item_in_slot(sl)
+		if is_firearm(w) then
+			local ok, n = pcall(w.get_ammo_in_magazine, w)
+			if ok and n and n > 0 then return w end
+			best = best or w
+		end
+	end
+	if best then return best end
+	npc:iterate_inventory(function(_, it)
+		if not loaded and is_firearm(it) then loaded = it end
+	end)
+	return loaded
+end
+
+local guard_t = {}
+local function melee_guard(npc, st)
+	if st.active_action or npc:active_slot() ~= MELEE_SLOT then return end
+	local id, tg = npc:id(), time_global()
+	if (guard_t[id] or 0) > tg then return end
+	guard_t[id] = tg + 1000
+	local be = npc:best_enemy()
+	if be and be:position():distance_to_sqr(npc:position()) < 25 then return end
+	local gun = best_firearm(npc)
+	npc:set_item(object.idle, gun)
+	log("%s: zbran nablizko mimo utok - %s", npc:name(), gun and gun:section() or "schovat")
+end
 
 local bone_head, bone_torso = {}, {}
 local function fire_bone(sec, part)
@@ -183,16 +224,14 @@ local function play_start_snd(npc)
 	local id, t = npc:id(), time_global()
 	if (start_snd_last[id] or 0) > t then return end
 	local path = L[math.random(#L)]
-	if not getFS():exist("$game_sounds$", path .. ".ogg") then return end
 	local ok, snd = pcall(sound_object, path)
-	if not (ok and snd) then return end
+	if not (ok and snd) then log("! zvuk %s nejde nacist", path) return end
 	start_snd_last[id] = t + START_SND_PERIOD
 	if start_snd_obj[id] and start_snd_obj[id]:playing() then start_snd_obj[id]:stop() end
 	start_snd_obj[id] = snd
-	pcall(function()
-		snd.volume = sets.start_volume or 1
-		snd:play_at_pos(npc, npc:position(), 0, sound_object.s3d)
-	end)
+	local played = pcall(snd.play_no_feedback, snd, npc, sound_object.s3d, 0, npc:position(), sets.start_volume or 1)
+	if not played then played = pcall(snd.play_at_pos, snd, npc, npc:position(), 0, sound_object.s3d) end
+	log("%s: hlaska %s %s", npc:name(), path, played and "ok" or "selhala")
 	last_snd[id] = t + SND_PERIOD
 end
 
@@ -292,8 +331,14 @@ local function spawn_knife(npc)
 	if sets.spawn_chance <= 0 or load_var(npc, "rz_knife_spawn") then return false end
 	save_var(npc, "rz_knife_spawn", true)
 	if npc:item_in_slot(MELEE_SLOT) or not npc:best_weapon() or is_trader(npc) then return false end
-	if math.random() >= sets.spawn_chance then return false end
-	alife_create_item(sets.weapon_to_spawn, npc)
+	if math.random() >= sets.spawn_chance or not sets.pool then return false end
+	local r, pick = math.random() * sets.pool_total, nil
+	for _, p in ipairs(sets.pool) do
+		r = r - p[2]
+		if r <= 0 then pick = p[1] break end
+	end
+	pick = pick or sets.pool[#sets.pool][1]
+	alife_create_item(pick, npc)
 	return true
 end
 
@@ -317,13 +362,14 @@ end
 
 function evaluator_knife_attack:evaluate()
 	local st = self.st
+	local npc = self.object
+	if not npc:alive() then return false end
+	pcall(melee_guard, npc, st)
 	if not mcm.enabled then
-		if st.target then remove_target(self.object:id(), st) end
+		if st.target then remove_target(npc:id(), st) end
 		return false
 	end
 	if st.delay > time_global() then return false end
-	local npc = self.object
-	if not npc:alive() then return false end
 	local npc_id = npc:id()
 	if not npc:item_in_slot(MELEE_SLOT) then
 		remove_target(npc_id, st, spawn_knife(npc) and 3000 or 30000)
@@ -429,8 +475,11 @@ function action_knife_attack:initialize()
 	if knife:get_ammo_in_magazine() == 0 then knife:set_ammo_elapsed(1) end
 	play_start_snd(npc)
 	local sec = knife:section()
-	st.fire_dist = math.min(tonumber(ini_sys:r_string_ex(sec, "fire_distance") or "") or 1.5, 2)
+	st.fire_dist = math.max(1.1, math.min(tonumber(ini_sys:r_string_ex(sec, "fire_distance") or "") or 1.3, 1.6))
 	self.hit_type = hit[ini_sys:r_string_ex(sec, "hit_type") or "wound"] or hit.wound
+	local hp = str_explode(ini_sys:r_string_ex(sec, "hit_power") or "", ",")
+	self.knife_power = math.max(1, math.min(1.5, (tonumber(hp[#hp]) or 0.5) * 2))
+	log("%s: utok nozem na %s (typ %s)", npc:name(), tostring(st.target), tostring(st.type))
 end
 
 function action_knife_attack:execute()
@@ -472,9 +521,9 @@ function action_knife_attack:execute()
 
 	local acti = npc:active_slot() == MELEE_SLOT
 	local fd = st.fire_dist or 1.5
-	if acti and dist < fd + (st.type == mutant_defend and 1.4 or 0.8) then
+	if acti and dist < fd + (st.type == mutant_defend and 0.6 or 0.15) then
 		if self.fire_time < tg then
-			if self.fire_time ~= 0 and dist <= fd and npc:see(target) then self:additional_hit(target) end
+			if self.fire_time ~= 0 and dist <= fd + 0.25 then self:additional_hit(target) end
 			self.fire_time = tg + 700
 		end
 		npc:set_item(object.fire1, knife, 5, 300)
@@ -528,11 +577,13 @@ function action_knife_attack:execute()
 		npc:set_sight(look.fire_point, safe_bone_pos(target, "bip01_neck"))
 		npc:set_dest_level_vertex_id(npc:level_vertex_id())
 		return
-	elseif st.type == mutant_defend or (on_target and (st.type == mutant_hunt or (st.type == close_attack and target_actor))) then
+	elseif st.type == mutant_defend or (on_target and st.type == mutant_hunt) then
 		vertex = self:get_dodge_vertex(target_pos, target:direction())
 		dodge = true
+	elseif on_target then
+		vertex = npc:level_vertex_id()
 	end
-	if target_actor and npc:path_completed() and dist > fd + 0.1 and self.start_time ~= tg then
+	if target_actor and npc:path_completed() and dist > fd + 1.5 and self.start_time + 1500 < tg then
 		remove_target(npc_id, st, 15000)
 		return
 	end
@@ -558,7 +609,8 @@ function action_knife_attack:finalize()
 	self.mental, self.ddr, self.tlvid, self.relax_time, self.start_point = nil, nil, nil, nil, nil
 	if not npc:alive() then return end
 	npc:set_sight(look.direction, npc:direction(), 0)
-	npc:set_item(object.idle, npc:active_item())
+	local gun = best_firearm(npc)
+	npc:set_item(object.idle, gun or npc:best_weapon())
 	npc:set_mental_state(anim.danger)
 	npc:set_movement_type(move.walk)
 end
@@ -577,6 +629,7 @@ function action_knife_attack:additional_hit(target)
 		power = self.rankt.addhit_mutant
 	end
 	if not power or power <= 0 then return end
+	power = power * (self.knife_power or 1)
 	local h = hit()
 	if math.random() < 0.1 or yaw(npc:direction(), target:direction()) < 0.6 then
 		h:bone(fire_bone(target:section(), "head"))
@@ -589,6 +642,7 @@ function action_knife_attack:additional_hit(target)
 	h.draftsman = npc
 	h.direction = vector():sub(target:center(), npc:center())
 	target:hit(h)
+	log("%s: zasah nozem %s sila %.2f", npc:name(), target:name(), power)
 end
 
 function action_knife_attack:get_dodge_vertex(o, d)
@@ -687,6 +741,7 @@ local function on_death(npc)
 	if not npc then return end
 	local id = npc:id()
 	last_snd[id] = nil
+	guard_t[id] = nil
 	start_snd_last[id] = nil
 	start_snd_obj[id] = nil
 	for t, n in pairs(targets) do if n == id then targets[t] = nil end end

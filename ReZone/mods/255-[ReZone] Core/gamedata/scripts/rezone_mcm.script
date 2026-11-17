@@ -1,4 +1,4 @@
-VERSION = "2.5.98"
+VERSION = "2.6.10"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -8,7 +8,7 @@ PAGE_TAB = {
 	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
 	rz_ball = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT, rz_knife = TAB_COMBAT,
-	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
+	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_hunt = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
 	rz_fx = TAB_OT, rz_hud = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
@@ -124,6 +124,7 @@ local function gp_craft()
 		check("remove_recipe", true, "rz_craft_remove_recipe"),
 		check("keep_known", false, "rz_craft_keep_known"),
 		check("keep_open", true, "rz_craft_keep_open"),
+		check("learn_popup", true, "rz_craft_learn_popup"),
 		line("l2"),
 		check("mech_tools", true, "rz_craft_mech_tools"),
 	})
@@ -162,6 +163,8 @@ local function gp_ballistics()
 		check("pl_enabled", true, "rz_ball_pl_enabled"),
 		track("pl_wear", 1, 0, 3, 0.05, "rz_ball_pl_wear"),
 		desc("dh", "ui_mcm_rz_ball_helm_info"),
+		check("head_kill", true, "rz_ball_head_kill"),
+		check("ricochet", true, "rz_ball_ricochet"),
 		check("helmets", true, "rz_ball_helmets"),
 		check("helm_drop", true, "rz_ball_helm_drop"),
 	}
@@ -300,6 +303,32 @@ local function gp_afspawn()
 		line("l3"),
 		desc("n", "ui_mcm_rz_afsp_note", CLR_NOTE),
 	})
+end
+
+local function gp_hunt()
+	local H = rezone_mod_hunt
+	H.read_cfg()
+	local gr = {
+		slide("ui_mcm_rz_hunt_title"),
+		desc("d", "ui_mcm_rz_hunt_info"),
+		line("l1"),
+		check("enabled", true, "rz_hunt_enabled"),
+		track("max_squads", 3, 1, 6, 1, "rz_hunt_max_squads"),
+		track("delay", 20, 5, 120, 5, "rz_hunt_delay"),
+		track("radius", 450, 150, 900, 25, "rz_hunt_radius"),
+		track("risk", 1, 0, 3, 0.05, "rz_hunt_risk"),
+		check("bolts", true, "rz_hunt_bolts"),
+		check("psi", true, "rz_hunt_psi"),
+		line("l2"),
+		check("other_levels", true, "rz_hunt_other_levels"),
+		track("other_count", 2, 1, 5, 1, "rz_hunt_other_count"),
+		line("l3"),
+		desc("df", "ui_mcm_rz_hunt_factions"),
+	}
+	for _, f in ipairs(H.FACTIONS) do gr[#gr + 1] = check("f_" .. f[1], f[2], "rz_hunt_f_" .. f[1]) end
+	gr[#gr + 1] = line("l4")
+	gr[#gr + 1] = desc("n", "ui_mcm_rz_hunt_note", CLR_NOTE)
+	return page("rz_hunt", gr)
 end
 
 local function gp_population()
@@ -670,6 +699,7 @@ function build_tree()
 	if rezone_mod_wander then rezone_mod_wander.read_cfg() end
 	add(world, rezone_mod_wander, gp_wander)
 	add(world, rezone_mod_afspawn, gp_afspawn)
+	add(world, rezone_mod_hunt, gp_hunt)
 	add(world, rezone_mod_ranks, gp_ranks)
 	add(world, rezone_secrets, gp_secrets)
 

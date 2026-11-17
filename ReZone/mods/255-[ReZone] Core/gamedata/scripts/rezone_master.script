@@ -38,6 +38,21 @@ local function build(id)
 			s["rz_world/rz_pop/preset"] = m.pop
 			copy_into(s, "rz_world/rz_pop/", rezone_mod_population.PRESETS[m.pop])
 		end
+		s["rz_combat/rz_ball/wear"] = 0.9
+		s["rz_combat/rz_ball/helmets"] = false
+		s["rz_combat/rz_ball/helm_drop"] = false
+		s["rz_combat/rz_ball/head_kill"] = true
+		s["rz_combat/rz_knife/courage"] = 1.55
+		s["rz_combat/rz_knife/spawn_chance"] = 0.55
+		s["rz_combat/rz_vision/mutant"] = 0.15
+		s["rz_combat/rz_vision/st_danger"] = 0.5
+		s["rz_combat/rz_vision/st_free"] = 0.5
+		s["rz_econ/rz_craft/keep_known"] = true
+		if rezone_mod_afspawn then
+			s["rz_world/rz_afsp/enabled"] = true
+			s["rz_world/rz_afsp/preset"] = 2
+			copy_into(s, "rz_world/rz_afsp/", rezone_mod_afspawn.PRESETS[2])
+		end
 		s["!efth/efth_gen/difficulty"] = m.efth
 		return s
 	end
