@@ -42,8 +42,6 @@ local function build(id)
 		s["rz_combat/rz_ball/helmets"] = false
 		s["rz_combat/rz_ball/helm_drop"] = false
 		s["rz_combat/rz_ball/head_kill"] = true
-		s["rz_combat/rz_knife/courage"] = 1.55
-		s["rz_combat/rz_knife/spawn_chance"] = 0.55
 		s["rz_combat/rz_vision/mutant"] = 0.15
 		s["rz_combat/rz_vision/st_danger"] = 0.5
 		s["rz_combat/rz_vision/st_free"] = 0.5

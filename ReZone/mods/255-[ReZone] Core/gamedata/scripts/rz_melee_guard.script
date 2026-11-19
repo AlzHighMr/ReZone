@@ -1,0 +1,59 @@
+local PERIOD = 1500
+local next_t = {}
+local knife_cls = {}
+local addon = nil
+
+local function addon_on()
+	if addon == nil then
+		addon = (getFS and getFS():exist("$game_scripts$", "rz_npc_knife.script")) and true or false
+	end
+	return addon
+end
+
+local function is_melee(item)
+	if not item then return false end
+	local c = item:clsid()
+	if knife_cls[c] == nil then
+		knife_cls[c] = (c == clsid.wpn_knife) or (c == clsid.wpn_knife_s) or false
+	end
+	return knife_cls[c]
+end
+
+local function log(fmt, ...)
+	if not (rezone_core and rezone_core.debug_on and rezone_core.debug_on()) then return end
+	local ok, s = pcall(string.format, fmt, ...)
+	rezone_core.dbg("[rz_melee_guard] %s", ok and s or fmt)
+end
+
+local function guard(npc)
+	npc:iterate_inventory(function(_, item)
+		if is_melee(item) then
+			local ok, n = pcall(item.get_ammo_in_magazine, item)
+			if ok and n and n > 0 then pcall(item.set_ammo_elapsed, item, 0) end
+		end
+	end)
+	local act = npc:active_item()
+	if is_melee(act) then
+		local best = npc:best_weapon()
+		if is_melee(best) then best = nil end
+		npc:set_item(object.idle, best)
+		log("%s: melee weapon %s put away", npc:name(), act:section())
+	end
+end
+
+local function npc_on_update(npc)
+	if addon_on() or not (npc and npc:alive()) then return end
+	local id, tg = npc:id(), time_global()
+	if (next_t[id] or 0) > tg then return end
+	next_t[id] = tg + PERIOD
+	pcall(guard, npc)
+end
+
+local function npc_on_death(npc)
+	if npc then next_t[npc:id()] = nil end
+end
+
+function on_game_start()
+	RegisterScriptCallback("npc_on_update", npc_on_update)
+	RegisterScriptCallback("npc_on_death_callback", npc_on_death)
+end

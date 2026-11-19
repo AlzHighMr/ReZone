@@ -1503,61 +1503,7 @@
 	<string id="ui_mcm_rz_ball_dis_yield_desc">
 		<text>How much disassembled ammo gives back - a share of exactly the items it is crafted from in the workshop (0.5 = half). E.g. Dragon's Breath returns buckshot shells plus fire and star powder, not generic parts. Ammo without a recipe is disassembled the old way.</text>
 	</string>
-	<string id="ui_mcm_menu_rz_knife">
-		<text>Knife and axe attacks</text>
-	</string>
-	<string id="ui_mcm_rz_knife_title">
-		<text>NPC knife and axe attacks</text>
-	</string>
-	<string id="ui_mcm_rz_knife_info">
-		<text>NPCs with a knife or an axe sometimes rush the player, a stalker or a mutant in combat and stab them - ambush, close attack, mutant hunting and defence against mutants. Port of rx_knife from AI Additions (Rulix aka Bak). More settings in configs\misc\rz_npc_knife.ltx.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_enabled">
-		<text>Enable knife attacks</text>
-	</string>
-	<string id="ui_mcm_rz_knife_enabled_desc">
-		<text>Off = NPCs do not attack with knives and get no knives (like vanilla).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_spawn_chance">
-		<text>Knife or axe chance</text>
-	</string>
-	<string id="ui_mcm_rz_knife_spawn_chance_desc">
-		<text>Chance an NPC without a melee weapon gets a knife or an axe (about 5 : 4 for knives; 0 = never, 0.35 = default). Each NPC is rolled only once.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_courage">
-		<text>Courage (how often they attack)</text>
-	</string>
-	<string id="ui_mcm_rz_knife_courage_desc">
-		<text>Multiplier of NPC courage. Higher = they charge with a knife more often and from further away (1 = default, factions have their own courage in the LTX).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_actor_dmg">
-		<text>Damage to player</text>
-	</string>
-	<string id="ui_mcm_rz_knife_actor_dmg_desc">
-		<text>Multiplier of the extra damage when an NPC stabs you (on top of the knife's own damage; 1 = default, 0 = knife only).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_mutant_hunt">
-		<text>Hunt mutants with knives</text>
-	</string>
-	<string id="ui_mcm_rz_knife_mutant_hunt_desc">
-		<text>NPCs go after weaker mutants with knives on their own. Close defence against mutants always works.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_skip_story">
-		<text>No story characters</text>
-	</string>
-	<string id="ui_mcm_rz_knife_skip_story_desc">
-		<text>Traders, quest givers and other story characters do not attack with knives.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_sound">
-		<text>Attack sound</text>
-	</string>
-	<string id="ui_mcm_rz_knife_sound_desc">
-		<text>An NPC shouts at the start of a knife attack (one of two sounds at random).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_note">
-		<text>Changes apply immediately. Knife chance and story characters apply to NPCs loaded after the change. A specific NPC can be excluded in its logic: can_use_knife = false.</text>
-	</string>
-	<string id="ui_mcm_rz_ball_mut_link">
+<string id="ui_mcm_rz_ball_mut_link">
 		<text>Mutant toughness is on the next page, Mutant toughness.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_enabled">
@@ -1878,10 +1824,7 @@
 	<string id="ui_mcm_rz_trade_supply_step_desc">
 		<text>How much goodwill with the trader's faction each higher supply level needs. Level 2 = 1x, level 3 = 2x, level 4 = 3x, level 5 = 4x this value (traders with fewer levels use the first steps). Applies at the next trader restock. Original Anomaly: 400 / 600 / 800 / 1000.</text>
 	</string>
-	<string id="ui_mcm_rz_knife_experimental">
-		<text>EXPERIMENTAL - does not work reliably yet (NPCs sometimes swing the knife from a distance like a ranged weapon). Off by default.</text>
-	</string>
-	<string id="ui_mcm_rz_hunt_experimental">
+<string id="ui_mcm_rz_hunt_experimental">
 		<text>EXPERIMENTAL - may not work reliably yet. Off by default.</text>
 	</string>
 </string_table>

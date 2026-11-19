@@ -1503,61 +1503,7 @@
 	<string id="ui_mcm_rz_ball_dis_yield_desc">
 		<text>Сколько возвращает разобранный патрон - доля именно тех предметов, из которых он крафтится в мастерской (0.5 = половина). Напр. «Дыхание дракона» вернёт дробовые патроны и огненный и звёздный порошок. Патроны без рецепта разбираются по-старому.</text>
 	</string>
-	<string id="ui_mcm_menu_rz_knife">
-		<text>Атаки ножом и топором</text>
-	</string>
-	<string id="ui_mcm_rz_knife_title">
-		<text>Атаки ножом и топором (NPC)</text>
-	</string>
-	<string id="ui_mcm_rz_knife_info">
-		<text>NPC с ножом или топором в бою иногда бросаются на игрока, сталкера или мутанта и бьют ножом - засада, атака вблизи, охота на мутантов и защита от них. Порт rx_knife из AI Additions (Rulix aka Bak). Подробнее в configs\misc\rz_npc_knife.ltx.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_enabled">
-		<text>Включить атаки ножом</text>
-	</string>
-	<string id="ui_mcm_rz_knife_enabled_desc">
-		<text>Выкл = NPC не атакуют ножом и не получают ножи (как в ванили).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_spawn_chance">
-		<text>Шанс ножа или топора</text>
-	</string>
-	<string id="ui_mcm_rz_knife_spawn_chance_desc">
-		<text>Шанс, что NPC без оружия ближнего боя получит нож или топор (примерно 5 : 4 в пользу ножей; 0 = никогда, 0.35 = по умолчанию). Каждый NPC проверяется один раз.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_courage">
-		<text>Смелость (как часто атакуют)</text>
-	</string>
-	<string id="ui_mcm_rz_knife_courage_desc">
-		<text>Множитель смелости NPC. Больше = чаще бросаются с ножом и с большего расстояния (1 = по умолчанию, у группировок своя смелость в LTX).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_actor_dmg">
-		<text>Урон игроку</text>
-	</string>
-	<string id="ui_mcm_rz_knife_actor_dmg_desc">
-		<text>Множитель дополнительного урона, когда NPC бьёт тебя ножом (сверх урона ножа; 1 = по умолчанию, 0 = только нож).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_mutant_hunt">
-		<text>Охота на мутантов ножом</text>
-	</string>
-	<string id="ui_mcm_rz_knife_mutant_hunt_desc">
-		<text>NPC сами нападают на более слабых мутантов с ножом. Защита от мутантов вблизи работает всегда.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_skip_story">
-		<text>Без сюжетных персонажей</text>
-	</string>
-	<string id="ui_mcm_rz_knife_skip_story_desc">
-		<text>Торговцы, квестодатели и другие сюжетные персонажи не атакуют ножом.</text>
-	</string>
-	<string id="ui_mcm_rz_knife_sound">
-		<text>Звук атаки</text>
-	</string>
-	<string id="ui_mcm_rz_knife_sound_desc">
-		<text>В начале атаки ножом NPC кричит (случайно один из двух звуков).</text>
-	</string>
-	<string id="ui_mcm_rz_knife_note">
-		<text>Изменения действуют сразу. Шанс ножа и сюжетные персонажи действуют на NPC, загруженных после изменения. Отдельного NPC можно исключить в логике: can_use_knife = false.</text>
-	</string>
-	<string id="ui_mcm_rz_ball_mut_link">
+<string id="ui_mcm_rz_ball_mut_link">
 		<text>Живучесть мутантов настраивается на следующей странице.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_enabled">
@@ -1878,10 +1824,7 @@
 	<string id="ui_mcm_rz_trade_supply_step_desc">
 		<text>How much goodwill with the trader's faction each higher supply level needs. Level 2 = 1x, level 3 = 2x, level 4 = 3x, level 5 = 4x this value (traders with fewer levels use the first steps). Applies at the next trader restock. Original Anomaly: 400 / 600 / 800 / 1000.</text>
 	</string>
-	<string id="ui_mcm_rz_knife_experimental">
-		<text>EXPERIMENTAL - does not work reliably yet (NPCs sometimes swing the knife from a distance like a ranged weapon). Off by default.</text>
-	</string>
-	<string id="ui_mcm_rz_hunt_experimental">
+<string id="ui_mcm_rz_hunt_experimental">
 		<text>EXPERIMENTAL - may not work reliably yet. Off by default.</text>
 	</string>
 </string_table>
