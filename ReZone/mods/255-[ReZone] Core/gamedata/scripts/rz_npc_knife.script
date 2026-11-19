@@ -162,14 +162,27 @@ local function best_firearm(npc)
 	return loaded
 end
 
+local function loaded(w)
+	if not w then return false end
+	local ok, n = pcall(w.get_ammo_in_magazine, w)
+	return ok and n and n > 0 or false
+end
+
+local function knife_ammo(npc, n)
+	local k = npc:item_in_slot(MELEE_SLOT)
+	if not k then return end
+	local ok, cur = pcall(k.get_ammo_in_magazine, k)
+	if ok and cur ~= n then pcall(k.set_ammo_elapsed, k, n) end
+end
+
 local guard_t = {}
 local function melee_guard(npc, st)
-	if st.active_action or npc:active_slot() ~= MELEE_SLOT then return end
+	if st.active_action then return end
 	local id, tg = npc:id(), time_global()
 	if (guard_t[id] or 0) > tg then return end
-	guard_t[id] = tg + 1000
-	local be = npc:best_enemy()
-	if be and be:position():distance_to_sqr(npc:position()) < 25 then return end
+	guard_t[id] = tg + 500
+	knife_ammo(npc, 0)
+	if npc:active_slot() ~= MELEE_SLOT then return end
 	local gun = best_firearm(npc)
 	npc:set_item(object.idle, gun)
 	log("%s: zbran nablizko mimo utok - %s", npc:name(), gun and gun:section() or "schovat")
@@ -277,15 +290,9 @@ local function get_target(npc, be, st)
 		return false
 	end
 	local knife_active = npc:active_slot() == MELEE_SLOT
-	local knife_only = false
-	if knife_active then
-		courage = courage + 15
-		local wa, wb = npc:active_item(), npc:best_weapon()
-		if wa and wb and wa:id() == wb:id() then
-			knife_only = true
-			courage = courage + 30
-		end
-	end
+	local knife_only = not loaded(best_firearm(npc))
+	if knife_active then courage = courage + 15 end
+	if knife_only then courage = courage + 30 end
 	if is_actor_cls(bec) then
 		courage = courage + 5
 	elseif select(2, pcall(be.critically_wounded, be)) == true then
@@ -299,7 +306,7 @@ local function get_target(npc, be, st)
 	end
 	if IsStalker(nil, bec) or is_actor_cls(bec) then
 		local need = attack_clsids[bec]
-		if need and (dist > 4 or knife_active) and npc:see(be) and courage > need + 4 * dist then
+		if need and (dist > 4 or knife_active or knife_only) and npc:see(be) and courage > need + 4 * dist then
 			local nw, bw = npc:active_item(), be:active_item()
 			local both_loaded = not knife_active and is_firearm(bw) and nw and IsWeapon(nw)
 				and nw:get_ammo_in_magazine() ~= 0 and bw:get_ammo_in_magazine() ~= 0
@@ -609,8 +616,9 @@ function action_knife_attack:finalize()
 	self.mental, self.ddr, self.tlvid, self.relax_time, self.start_point = nil, nil, nil, nil, nil
 	if not npc:alive() then return end
 	npc:set_sight(look.direction, npc:direction(), 0)
+	knife_ammo(npc, 0)
 	local gun = best_firearm(npc)
-	npc:set_item(object.idle, gun or npc:best_weapon())
+	npc:set_item(object.idle, gun)
 	npc:set_mental_state(anim.danger)
 	npc:set_movement_type(move.walk)
 end
