@@ -32,6 +32,7 @@ end
 local sets = {
 	weapon_to_spawn = "wpn_knife", spawn_chance = 0.35, skip_story = true, actor_mult = 1,
 	forbidden_factions = {}, forbidden_npcs = {}, ranks = {}, communities = {},
+	forbidden_visuals = { "stalker_soldier5h_beret", "stalker_neutral1e_mas2" },
 
 	start_sounds = { "rz_npc_knife\\knife_attack_1", "rz_npc_knife\\knife_attack_2" }, start_chance = 1, start_volume = 1,
 }
@@ -42,6 +43,28 @@ local mcm = { enabled = true, courage = 1, hunt = true }
 local ltx = {}
 local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }
 local DEF_COMM = { courage = 1, mutant_hunt = true }
+
+local KNIFE_ANIM_SLOT = 5
+local slot_ok_cache = {}
+function melee_slot_ok(sec)
+	if not sec then return false end
+	local v = slot_ok_cache[sec]
+	if v == nil then
+		v = tonumber(ini_sys:r_string_ex(sec, "animation_slot") or "") == KNIFE_ANIM_SLOT
+		slot_ok_cache[sec] = v
+	end
+	return v
+end
+
+local function bad_visual(npc)
+	local ok, vis = pcall(npc.get_visual_name, npc)
+	if not (ok and vis) then return false end
+	vis = string.lower(vis)
+	for _, v in ipairs(sets.forbidden_visuals or {}) do
+		if vis:find(v, 1, true) then return true end
+	end
+	return false
+end
 
 local function load_config()
 	local ini = ini_file("misc\\rz_npc_knife.ltx")
@@ -73,6 +96,10 @@ local function load_config()
 		sets.actor_mult = num("main", "actor_hit_mult", 1)
 		for f in string.gmatch(str("main", "forbidden_factions", ""), "[^,%s]+") do sets.forbidden_factions[f] = true end
 		sets.forbidden_npcs = keys("forbidden_npcs")
+		if ini:line_exist("main", "forbidden_visuals") then
+			sets.forbidden_visuals = {}
+			for v in string.gmatch(str("main", "forbidden_visuals", ""), "[^,%s]+") do sets.forbidden_visuals[#sets.forbidden_visuals + 1] = v:lower() end
+		end
 		if ini:line_exist("sounds", "attack_start") then
 			sets.start_sounds = {}
 			for s in string.gmatch(str("sounds", "attack_start", ""), "[^,%s]+") do sets.start_sounds[#sets.start_sounds + 1] = s end
@@ -105,7 +132,9 @@ local function load_config()
 	for entry in string.gmatch(sets.weapon_to_spawn or "", "[^,]+") do
 		local sec, w = entry:match("^%s*([%w_]+)%s*:?%s*([%d%.]*)%s*$")
 		w = tonumber(w) or 1
-		if sec and w > 0 and ini_sys:section_exist(sec) then
+		if sec and w > 0 and ini_sys:section_exist(sec) and not melee_slot_ok(sec) then
+			log("! %s nema animace NPC pro nuz (animation_slot %s) - vynechano", sec, tostring(ini_sys:r_string_ex(sec, "animation_slot")))
+		elseif sec and w > 0 and ini_sys:section_exist(sec) then
 			sets.pool[#sets.pool + 1] = { sec, w }
 			sets.pool_total = sets.pool_total + w
 		elseif sec then
@@ -349,6 +378,19 @@ local function spawn_knife(npc)
 	return true
 end
 
+class "evaluator_knife_guard" (property_evaluator)
+function evaluator_knife_guard:__init(npc, name, storage) super(nil, name)
+	self.st = storage
+end
+function evaluator_knife_guard:evaluate()
+	local npc = self.object
+	if npc:alive() and npc:active_slot() == MELEE_SLOT then
+		local w = npc:active_item()
+		if w and (not melee_slot_ok(w:section()) or bad_visual(npc)) then pcall(melee_guard, npc, self.st) end
+	end
+	return false
+end
+
 class "evaluator_knife_attack" (property_evaluator)
 function evaluator_knife_attack:__init(npc, name, storage) super(nil, name)
 	self.st = storage
@@ -378,7 +420,12 @@ function evaluator_knife_attack:evaluate()
 	end
 	if st.delay > time_global() then return false end
 	local npc_id = npc:id()
-	if not npc:item_in_slot(MELEE_SLOT) then
+	local mw = npc:item_in_slot(MELEE_SLOT)
+	if mw and not melee_slot_ok(mw:section()) then
+		remove_target(npc_id, st, 30000)
+		return false
+	end
+	if not mw then
 		remove_target(npc_id, st, spawn_knife(npc) and 3000 or 30000)
 		return false
 	end
@@ -674,6 +721,7 @@ local function forbidden(npc)
 	local ok, prof = pcall(npc.profile_name, npc)
 	if (ok and prof and sets.forbidden_npcs[prof]) or sets.forbidden_npcs[npc:name()] or sets.forbidden_npcs[npc:section()] then return true end
 	if npc:section() == "actor_visual_stalker" then return true end
+	if bad_visual(npc) then return true end
 	if sets.skip_story and get_object_story_id and get_object_story_id(npc:id()) then return true end
 	return false
 end
@@ -687,7 +735,7 @@ function add_to_binder(npc, ini, scheme, section, storage, temp)
 	local manager = npc:motivation_action_manager()
 	if not manager then return end
 	if forbidden(npc) then
-		manager:add_evaluator(evid_knife_attack, property_evaluator_const(false))
+		manager:add_evaluator(evid_knife_attack, evaluator_knife_guard(npc, "eva_rz_knife_guard", storage))
 		temp.needs_configured = false
 		return
 	end
