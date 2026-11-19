@@ -53,7 +53,46 @@ local function npc_on_death(npc)
 	if npc then next_t[npc:id()] = nil end
 end
 
+local function find_upvalue(f, name)
+	if not (debug and debug.getupvalue and type(f) == "function") then return nil end
+	for i = 1, 200 do
+		local n, v = debug.getupvalue(f, i)
+		if n == nil then return nil end
+		if n == name then return v end
+	end
+end
+
+local function patch_gather_items()
+	if rawget(_G, "__rz_knife_gather") then return end
+	local intercepts = find_upvalue(axr_main and axr_main.callback_set, "intercepts")
+	local list = intercepts and intercepts.npc_on_item_take
+	if type(list) ~= "table" then return end
+	for f in pairs(list) do
+		local info = type(f) == "function" and debug.getinfo and debug.getinfo(f, "S")
+		if info and info.source and info.source:find("xr_gather_items") then
+			local items_tbl = find_upvalue(f, "Items")
+			local wrapped = function(npc, item)
+				local ok, w = pcall(npc.best_weapon, npc)
+				if ok and is_melee(w) then
+					if type(items_tbl) == "table" and item then items_tbl[item:id()] = nil end
+					return
+				end
+				return f(npc, item)
+			end
+			local prio = list[f]
+			list[f] = nil
+			list[wrapped] = prio
+			rawset(_G, "__rz_knife_gather", true)
+			return
+		end
+	end
+end
+
 function on_game_start()
+	local function try_patch() pcall(patch_gather_items) end
+	RegisterScriptCallback("actor_on_init", try_patch)
+	RegisterScriptCallback("on_game_load", try_patch)
+	RegisterScriptCallback("actor_on_first_update", try_patch)
 	RegisterScriptCallback("npc_on_update", npc_on_update)
 	RegisterScriptCallback("npc_on_death_callback", npc_on_death)
 end
