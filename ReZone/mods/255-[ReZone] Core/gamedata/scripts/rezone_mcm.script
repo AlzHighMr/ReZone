@@ -1,4 +1,4 @@
-VERSION = "2.6.12"
+VERSION = "2.6.14"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -48,6 +48,7 @@ local function rs_installed(base) return ini_sys:section_exist(base) end
 
 local CLR_DESC = { 255, 200, 200, 200 }
 local CLR_NOTE = { 255, 150, 150, 150 }
+local CLR_EXP = { 255, 230, 120, 90 }
 
 local function slide(text)
 	return { id = "banner", type = "slide", link = "ui_options_slider_disguise", text = text, size = { 512, 50 }, spacing = 20 }
@@ -103,7 +104,8 @@ local function gp_knife()
 		slide("ui_mcm_rz_knife_title"),
 		desc("d", "ui_mcm_rz_knife_info"),
 		line("l1"),
-		check("enabled", true, "rz_knife_enabled"),
+		desc("exp", "ui_mcm_rz_knife_experimental", CLR_EXP),
+		check("enabled", false, "rz_knife_enabled"),
 		track("spawn_chance", 0.35, 0, 1, 0.05, "rz_knife_spawn_chance"),
 		track("courage", 1, 0.25, 3, 0.05, "rz_knife_courage"),
 		track("actor_dmg", 1, 0, 3, 0.05, "rz_knife_actor_dmg"),
@@ -188,6 +190,8 @@ local function gp_trade()
 		check("enabled", true, "rz_trade_enabled"),
 		line("lb"),
 		track("buy_cond", 60, 0, 100, 1, "rz_trade_buy_cond"),
+		{ id = "supply_step", type = "radio_h", val = 2, def = 400, no_str = true, hint = "rz_trade_supply_step",
+		  content = { { 400, "400" }, { 500, "500" }, { 750, "750" }, { 1000, "1000" }, { 1500, "1500" } } },
 		line("l3"),
 		desc("dh", "ui_mcm_rz_trade_helmets"),
 		check("helm_no_sell", false, "rz_trade_helm_no_sell"),
@@ -312,7 +316,8 @@ local function gp_hunt()
 		slide("ui_mcm_rz_hunt_title"),
 		desc("d", "ui_mcm_rz_hunt_info"),
 		line("l1"),
-		check("enabled", true, "rz_hunt_enabled"),
+		desc("exp", "ui_mcm_rz_hunt_experimental", CLR_EXP),
+		check("enabled", false, "rz_hunt_enabled"),
 		track("max_squads", 3, 1, 6, 1, "rz_hunt_max_squads"),
 		track("delay", 20, 5, 120, 5, "rz_hunt_delay"),
 		track("radius", 450, 150, 900, 25, "rz_hunt_radius"),

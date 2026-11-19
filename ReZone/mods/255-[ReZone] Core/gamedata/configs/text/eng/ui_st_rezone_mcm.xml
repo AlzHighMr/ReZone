@@ -1872,4 +1872,16 @@
 	<string id="ui_mcm_rz_craft_learn_popup_desc">
 		<text>After reading a recipe a window shows everything it unlocks, with ingredients (green = you carry enough). Off = original Anomaly window.</text>
 	</string>
+	<string id="ui_mcm_rz_trade_supply_step">
+		<text>Goodwill per supply level</text>
+	</string>
+	<string id="ui_mcm_rz_trade_supply_step_desc">
+		<text>How much goodwill with the trader's faction each higher supply level needs. Level 2 = 1x, level 3 = 2x, level 4 = 3x, level 5 = 4x this value (traders with fewer levels use the first steps). Applies at the next trader restock. Original Anomaly: 400 / 600 / 800 / 1000.</text>
+	</string>
+	<string id="ui_mcm_rz_knife_experimental">
+		<text>EXPERIMENTAL - does not work reliably yet (NPCs sometimes swing the knife from a distance like a ranged weapon). Off by default.</text>
+	</string>
+	<string id="ui_mcm_rz_hunt_experimental">
+		<text>EXPERIMENTAL - may not work reliably yet. Off by default.</text>
+	</string>
 </string_table>

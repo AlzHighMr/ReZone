@@ -164,6 +164,11 @@ function update(npc, itm, force_refresh)
 		return
 	end
 
+	if rezone_mod_trade and rezone_mod_trade.scale_supplies then
+		local ok, s2 = pcall(rezone_mod_trade.scale_supplies, str)
+		if ok and type(s2) == "string" then str = s2 end
+	end
+
 	local condlist = xr_logic.parse_condlist(npc, "trader", "buy_supplies", str)
 	str = condlist and xr_logic.pick_section_from_condlist(db.actor, npc, condlist)
 	if(str=="" or str==nil) then

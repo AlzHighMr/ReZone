@@ -111,6 +111,24 @@ end
 
 local buy_cond = 60
 local trade_on = true
+local supply_step = 400
+
+function scale_supplies(str)
+	if not (trade_on and type(str) == "string" and supply_step and supply_step > 0) then return str end
+	local seen, list = {}, {}
+	for n in string.gmatch(str, "actor_goodwill_ge%([%w_]+:(%-?%d+)%)") do
+		n = tonumber(n)
+		if n and not seen[n] then seen[n] = true; list[#list + 1] = n end
+	end
+	if #list == 0 then return str end
+	table.sort(list)
+	local rank = {}
+	for i, n in ipairs(list) do rank[n] = i end
+	return (string.gsub(str, "actor_goodwill_ge%(([%w_]+):(%-?%d+)%)", function(f, n)
+		local r = rank[tonumber(n)]
+		return "actor_goodwill_ge(" .. f .. ":" .. tostring(r and r * supply_step or n) .. ")"
+	end))
+end
 local function apply_buy_cond()
 	local ok, st = pcall(alife_storage_manager.get_state)
 	if not (ok and st) then return end
@@ -134,6 +152,7 @@ function load()
 	local g = core.page(PAGE)
 	trade_on = g("enabled") ~= false
 	buy_cond = math.floor((tonumber(g("buy_cond")) or 60) + 0.5)
+	supply_step = tonumber(g("supply_step")) or 400
 	if db.actor then apply_buy_cond() end
 
 	on      = rezone_gamma_like_mode and rezone_gamma_like_mode.enabled() or false

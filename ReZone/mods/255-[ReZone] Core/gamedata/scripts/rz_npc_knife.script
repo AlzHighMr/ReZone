@@ -39,7 +39,7 @@ local sets = {
 local attack_clsids, defend_clsids = {}, {}
 
 local MCM_PAGE = rezone_mcm.path("rz_knife")
-local mcm = { enabled = true, courage = 1, hunt = true }
+local mcm = { enabled = false, courage = 1, hunt = true }
 local ltx = {}
 local DEF_RANK = { addhit_actor = 0.1, addhit_stalker = 0, addhit_mutant = 0.1 }
 local DEF_COMM = { courage = 1, mutant_hunt = true }
@@ -159,10 +159,10 @@ local function apply_mcm()
 		if x == nil then return def end
 		return x
 	end
-	mcm.enabled = v("enabled", true) ~= false
+	mcm.enabled = v("enabled", false) == true
 	mcm.courage = tonumber(v("courage", 1)) or 1
 	mcm.hunt = v("mutant_hunt", true) ~= false
-	sets.spawn_chance = sets.no_weapon and 0 or (tonumber(v("spawn_chance", ltx.spawn_chance)) or ltx.spawn_chance)
+	sets.spawn_chance = (sets.no_weapon or not mcm.enabled) and 0 or (tonumber(v("spawn_chance", ltx.spawn_chance)) or ltx.spawn_chance)
 	sets.actor_mult = (ltx.actor_mult or 1) * (tonumber(v("actor_dmg", 1)) or 1)
 	sets.skip_story = v("skip_story", ltx.skip_story) ~= false
 	sets.start_chance = (v("sound", true) ~= false) and ltx.start_chance or 0
