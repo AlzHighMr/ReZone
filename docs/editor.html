@@ -161,6 +161,28 @@ details.adv > .in { padding: 0 14px 14px; }
 .picks label input { accent-color: var(--red); }
 .picks .on { color: var(--amber); }
 .req { color: var(--red); }
+.wx-side { position: sticky; top: 118px; }
+.wx-side .list { max-height: calc(100vh - 230px); }
+.wx-gh { display: flex; align-items: center; gap: 12px; justify-content: space-between; margin: 0 0 10px; }
+.wx-gh h3 { margin: 0; font: 700 24px/1.1 var(--cond); text-transform: uppercase; letter-spacing: .04em; color: var(--amber); }
+.wx-u { border: 1px solid var(--line); background: #0c0c0c; padding: 10px 12px 8px; margin: 0 0 10px; }
+.wx-u.ch { border-color: #e0a43a66; box-shadow: inset 3px 0 0 var(--amber); }
+.wx-u.del { opacity: .55; box-shadow: inset 3px 0 0 var(--err); border-color: #ef8b7855; }
+.wx-u.del .wx-prev { text-decoration: line-through; }
+.wx-u.focus { outline: 2px solid var(--amber); outline-offset: 2px; }
+.wx-h { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 0 0 8px; }
+.wx-h .grow { flex: 1; }
+.wx-h .tag, .wx-fl .tag { display: inline-block; font: 600 10.5px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; padding: 3px 5px 2px; border: 1px solid var(--line2); color: var(--muted); }
+.wx-fl { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.wx-fl .tag.ch { color: var(--amber); border-color: #e0a43a66; }
+.wx-fl .tag.warn { color: #000; background: var(--amber); border-color: var(--amber); }
+.wx-fl .tag.del { color: var(--err); border-color: #ef8b7866; }
+.wx-tx textarea { min-height: 46px; overflow: auto; }
+.wx-prev { margin: 8px 0 0; padding: 6px 10px; border-left: 2px solid var(--line2); color: #bdb8ad; font-size: 15px; pointer-events: none; }
+.wx-prev:empty { display: none; }
+.wx-prev kbd, .wx-prev code { font: 13px var(--mono); background: #1a1a1a; border: 1px solid #333; padding: 0 4px; }
+.wx-u .msg.err:empty { display: none; }
+@media (max-width: 900px) { .wx-tx { grid-template-columns: 1fr; } .wx-side { position: static; } }
 </style>
 </head>
 <body>
@@ -169,7 +191,7 @@ details.adv > .in { padding: 0 14px 14px; }
 </div></header>
 <header class="appbar"><div class="ab-in">
   <nav class="ab-tabs" id="tabs" hidden>
-    <button data-grp="obsah" title="Novinky v launcheru a changelog pro testery">Obsah</button>
+    <button data-grp="obsah" title="Novinky v launcheru, changelog pro testery a texty webu">Obsah</button>
     <button data-grp="mody" title="Volitelné mody, patche a ModDB addony v launcheru">Mody</button>
     <button data-grp="hraci" title="Co launcher změní hráčům v modlistu a které mody smaže">Hráči</button>
     <button data-grp="odkazy" title="Odkazy ke stažení modpacku">Odkazy</button>
@@ -180,6 +202,7 @@ details.adv > .in { padding: 0 14px 14px; }
 <nav class="subtabs" id="subtabs" hidden>
     <button data-tab="news" data-g="obsah">Novinky</button>
     <button data-tab="chlog" data-g="obsah" title="Changelog oprav trilogie na stránce pro testery">Changelog</button>
+    <button data-tab="web" data-g="obsah" title="Úprava a mazání textů na webu (česky i anglicky)">Texty webu</button>
     <button data-tab="opt" data-g="mody">Volitelné mody</button>
     <button data-tab="patch" data-g="mody">Patche</button>
     <button data-tab="moddb" data-g="mody">ModDB addony</button>
@@ -237,6 +260,22 @@ details.adv > .in { padding: 0 14px 14px; }
       <div class="news-prev" id="clPrev" style="padding:0;overflow:auto;max-height:640px"></div>
     </div>
     <div class="bar" data-save="chlog"></div>
+  </section>
+
+  <section class="card" id="tab-web" hidden>
+    <div class="eb">// docs/index.html · docs/i18n-en.js</div>
+    <h2>Texty webu</h2>
+    <p class="hint">Všechny texty na webu – Informace, Instalace, Příručka, přehledy i Časté otázky. Vlevo vyber část webu nebo hledej. <b>Česky</b> = text na webu, <b>English</b> = překlad pro přepínač EN. Značky jako <code>&lt;b&gt;tučně&lt;/b&gt;</code> nebo <code>&lt;a href="…"&gt;</code> nech, jak jsou. <b>Smazat</b> odstraní text z webu (u tabulky celý řádek). Předměty a recepty v Databázi se generují z dat modpacku, ty se tu neupravují.</p>
+    <div class="split" style="margin-top:14px">
+      <div class="wx-side">
+        <input type="search" id="webSearch" placeholder="Hledat v textech (CZ i EN)…" style="margin-bottom:8px">
+        <label class="check" style="margin:0 0 6px"><input type="checkbox" id="webOnlyCh"> <span>Jen změněné a smazané</span></label>
+        <div class="count" id="webCount"></div>
+        <div class="list" id="webList"></div>
+      </div>
+      <div id="webBody"></div>
+    </div>
+    <div class="bar" data-save="web"></div>
   </section>
 
   <section class="card" id="tab-opt" hidden>
@@ -377,9 +416,11 @@ details.adv > .in { padding: 0 14px 14px; }
     moddb: { path: 'ReZone/moddb.json', sha: null, orig: '', dirty: false },
     src: { path: 'ReZone/sources.json', sha: null, orig: '', dirty: false },
     ml: { path: 'ReZone/modlist.json', sha: null, orig: '', dirty: false },
-    gl: { path: 'docs/tr/glossary.json', sha: null, orig: '', dirty: false }
+    gl: { path: 'docs/tr/glossary.json', sha: null, orig: '', dirty: false },
+    web: { path: 'docs/index.html', sha: null, orig: '', dirty: false, big: true },
+    webEn: { path: 'docs/i18n-en.js', sha: null, orig: '', dirty: false }
   };
-  var TAB_FILE = { news: 'news', chlog: 'chlog', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src', ml: 'ml', hrac: 'src', gl: 'gl' };
+  var TAB_FILE = { news: 'news', chlog: 'chlog', opt: 'opt', patch: 'opt', moddb: 'moddb', src: 'src', ml: 'ml', hrac: 'src', gl: 'gl', web: 'web' };
   function api(path, opts) {
     opts = opts || {};
     opts.headers = Object.assign({ 'Accept': 'application/vnd.github+json', 'Authorization': 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' }, opts.headers || {});
@@ -393,6 +434,18 @@ details.adv > .in { padding: 0 14px 14px; }
   }
   function getFile(fk) {
     var f = FILES[fk];
+    if (f.big) {
+      // soubory nad 1 MB: sha pres "object", obsah primo z blobu (raw)
+      var R = '/repos/' + S.repo;
+      return api(R + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now(), { headers: { 'Accept': 'application/vnd.github.object' } })
+        .then(function (j) {
+          f.sha = j.sha;
+          return fetch('https://api.github.com' + R + '/git/blobs/' + j.sha, { headers: { 'Accept': 'application/vnd.github.raw', 'Authorization': 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' } });
+        })
+        .then(function (r) { if (!r.ok) { var e = new Error('HTTP ' + r.status); e.status = r.status; throw e; } return r.text(); })
+        .then(function (t) { f.orig = t; return t; })
+        .catch(function (e) { if (e.status === 404) { f.sha = null; f.orig = ''; return ''; } throw e; });
+    }
     return api('/repos/' + S.repo + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now())
       .then(function (j) { f.sha = j.sha; f.orig = b64decode(j.content || ''); return f.orig; })
       .catch(function (e) { if (e.status === 404) { f.sha = null; f.orig = ''; return ''; } throw e; });
@@ -442,6 +495,7 @@ details.adv > .in { padding: 0 14px 14px; }
     var save = el('button', { class: 'btn pri', text: 'Uložit na GitHub' });
     var reload = el('button', { class: 'btn', text: 'Načíst znovu' });
     save.addEventListener('click', function () {
+      if (fk === 'web') { wxSave(save, msg, status); return; }
       save.disabled = true;
       Promise.resolve().then(function () { return validators[fk](); }).then(function (r) {
       save.disabled = false;
@@ -488,11 +542,13 @@ details.adv > .in { padding: 0 14px 14px; }
     var note = el('p', { class: 'msg', text: 'Načítám ' + FILES[fk].path + '…' });
     sec.appendChild(note);
     return getFile(fk).then(function (text) {
-      note.remove();
-      builders[fk](text); FILES[fk].dirty = false; loaded[fk] = true; markTabs();
-      Object.keys(TAB_FILE).forEach(function (t) { if (TAB_FILE[t] === fk) saveBar(t); });
-      if (onShow[tab]) onShow[tab]();
-    }, function (e) { note.className = 'msg err'; note.textContent = friendly(e); });
+      return Promise.resolve(builders[fk](text)).then(function () {
+        note.remove();
+        FILES[fk].dirty = false; loaded[fk] = true; markTabs();
+        Object.keys(TAB_FILE).forEach(function (t) { if (TAB_FILE[t] === fk) saveBar(t); });
+        if (onShow[tab]) onShow[tab]();
+      });
+    }).catch(function (e) { note.className = 'msg err'; note.textContent = e && e.status ? friendly(e) : (e && e.message) || String(e); });
   }
   function openTab(tab) {
     current = tab;
@@ -1292,7 +1348,7 @@ function clPage(md) {
     // kontrola, ze soubory mezitim nikdo nezmenil
     return Promise.all(ch.map(function (x) {
       var f = FILES[x.fk];
-      return api(R + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now())
+      return api(R + '/contents/' + f.path + '?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now(), { headers: { 'Accept': 'application/vnd.github.object' } })
         .then(function (j) { return j.sha; }, function (e) { if (e.status === 404) return null; throw e; })
         .then(function (sha) { if (sha !== f.sha) { var err = new Error('Soubor ' + f.path + ' mezitím změnil někdo jiný. Otevři jeho záložku, klikni na NAČÍST ZNOVU a změny udělej ještě jednou.'); throw err; } });
     }))
@@ -1300,7 +1356,15 @@ function clPage(md) {
       .then(function (ref) { head = ref.object.sha; return api(R + '/git/commits/' + head); })
       .then(function (c) {
         base = c.tree.sha;
-        var tree = ch.map(function (x) { return { path: FILES[x.fk].path, mode: '100644', type: 'blob', content: x.r.text }; });
+        // velke soubory (web) jdou pres samostatny blob
+        return Promise.all(ch.map(function (x) {
+          var path = FILES[x.fk].path;
+          if (x.r.text.length < 500000) return { path: path, mode: '100644', type: 'blob', content: x.r.text };
+          return api(R + '/git/blobs', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content: x.r.text, encoding: 'utf-8' }) })
+            .then(function (b) { return { path: path, mode: '100644', type: 'blob', sha: b.sha }; });
+        }));
+      })
+      .then(function (tree) {
         return api(R + '/git/trees', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ base_tree: base, tree: tree }) });
       })
       .then(function (t) { return api(R + '/git/commits', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: message, tree: t.sha, parents: [head] }) }); })
@@ -1396,6 +1460,368 @@ function clPage(md) {
     var out = { profiles: {} };
     Object.keys(ML.obj.profiles).forEach(function (p) { if (ML.obj.profiles[p].length) out.profiles[p] = ML.obj.profiles[p]; });
     return { text: JSON.stringify(out, null, 1) + '\n', errors: [], after: function () { ML.orig = JSON.parse(JSON.stringify(ML.obj.profiles)); mlDraw(); } };
+  };
+
+  // ---------- TEXTY WEBU: skener HTML (zachova presne pozice ve zdroji) ----------
+  var WX_INLINE = { a: 1, b: 1, strong: 1, em: 1, i: 1, code: 1, kbd: 1, span: 1, small: 1, br: 1, sup: 1, sub: 1, mark: 1, u: 1, abbr: 1, img: 1, s: 1, wbr: 1, q: 1, cite: 1, 'var': 1, time: 1 };
+  var WX_SKIP = { script: 1, style: 1, svg: 1, noscript: 1, template: 1, iframe: 1, video: 1, canvas: 1, textarea: 1, select: 1 };
+  var WX_VOID = { area: 1, base: 1, br: 1, col: 1, embed: 1, hr: 1, img: 1, input: 1, link: 1, meta: 1, source: 1, track: 1, wbr: 1 };
+  var WX_RAW = { script: 1, style: 1, textarea: 1, title: 1 };
+  function wxScan(src) {
+    var root = { tag: '#root', kids: [], leaf: true, parent: null, attrs: '' };
+    var top = root, i = 0, n = src.length, lower = null;
+    function text(s, e) { if (e > s) top.kids.push({ t: 1, s: s, e: e }); }
+    function nonInline(node) { for (var a = node; a && a.leaf; a = a.parent) a.leaf = false; }
+    while (i < n) {
+      var lt = src.indexOf('<', i);
+      if (lt < 0) { text(i, n); break; }
+      text(i, lt);
+      if (src.substr(lt, 4) === '<!--') { var ce = src.indexOf('-->', lt + 4); i = ce < 0 ? n : ce + 3; continue; }
+      var c1 = src.charAt(lt + 1);
+      if (c1 === '!' || c1 === '?') { var g = src.indexOf('>', lt); i = g < 0 ? n : g + 1; continue; }
+      if (c1 === '/') {
+        var m = /^<\/([a-zA-Z][a-zA-Z0-9-]*)\s*>/.exec(src.substr(lt, 80));
+        if (!m) { text(lt, lt + 1); i = lt + 1; continue; }
+        var name = m[1].toLowerCase(), j;
+        for (j = top; j && j.tag !== name; j = j.parent) { /* hledam */ }
+        if (j && j !== root) {
+          while (top !== j) { top.ce = lt; top.oe = lt; top = top.parent; }
+          j.ce = lt; j.oe = lt + m[0].length; top = j.parent;
+        }
+        i = lt + m[0].length; continue;
+      }
+      var mt = /^<([a-zA-Z][a-zA-Z0-9-]*)/.exec(src.substr(lt, 64));
+      if (!mt) { text(lt, lt + 1); i = lt + 1; continue; }
+      // konec tagu s ohledem na uvozovky
+      var k = lt + mt[0].length, q = null;
+      for (; k < n; k++) { var ch = src.charAt(k); if (q) { if (ch === q) q = null; } else if (ch === '"' || ch === "'") q = ch; else if (ch === '>') break; }
+      var tag = mt[1].toLowerCase();
+      var node = { tag: tag, os: lt, cs: k + 1, kids: [], leaf: true, parent: top, attrs: src.slice(lt + mt[0].length, k) };
+      top.kids.push(node);
+      if (!WX_INLINE[tag] || tag === 'img') nonInline(top);
+      if (WX_VOID[tag] || src.charAt(k - 1) === '/') { node.ce = node.oe = k + 1; i = k + 1; continue; }
+      if (WX_RAW[tag]) {
+        lower = lower || src.toLowerCase();
+        var endIdx = lower.indexOf('</' + tag, k + 1);
+        if (endIdx < 0) endIdx = n;
+        var gt = src.indexOf('>', endIdx);
+        node.ce = endIdx; node.oe = gt < 0 ? n : gt + 1; i = node.oe; continue;
+      }
+      top = node; i = k + 1;
+    }
+    while (top !== root) { top.ce = top.oe = n; top = top.parent; }
+    return root;
+  }
+  function wxAttr(attrs, name) {
+    var m = new RegExp('(?:^|\\s)' + name + '\\s*=\\s*("([^"]*)"|\'([^\']*)\'|([^\\s>]+))', 'i').exec(attrs || '');
+    return m ? (m[2] != null ? m[2] : m[3] != null ? m[3] : m[4]) : null;
+  }
+  // jednotky textu stejne jako je bere preklad (i18n-en.js): "listove" prvky a volny text
+  function wxUnits(src, root) {
+    var body = null;
+    (function find(nd) { if (body) return; if (nd.tag === 'body') { body = nd; return; } (nd.kids || []).forEach(function (c) { if (!c.t) find(c); }); })(root);
+    var out = [];
+    function grp(nd) {
+      for (var a = nd; a; a = a.parent) {
+        if (a.tag === 'section' || a.tag === 'header' || a.tag === 'footer' || a.tag === 'aside' || a.tag === 'nav') {
+          var id = wxAttr(a.attrs, 'id');
+          if (a.tag === 'section' && id) return id;
+          if (a.tag !== 'section') { var up = grp(a.parent); if (up && up.charAt(0) !== '@') return up; return '@' + a.tag + (id ? '#' + id : ''); }
+        }
+      }
+      return '@ostatni';
+    }
+    function walk(nd) {
+      nd.kids.forEach(function (c) {
+        if (c.t) { if (!WX_INLINE[nd.tag]) { var raw = src.slice(c.s, c.e); if (/[A-Za-z\u00C0-\u017E]{2}/.test(raw)) out.push({ kind: 'text', tag: '#text', s: c.s, e: c.e, os: c.s, oe: c.e, node: nd, g: grp(nd) }); } return; }
+        if (WX_SKIP[c.tag]) return;
+        if (WX_INLINE[c.tag] && !c.leaf) { walk(c); return; }
+        if (c.leaf && c.tag !== 'br' && c.tag !== 'img') {
+          var inner = src.slice(c.cs, c.ce);
+          if (/[A-Za-z\u00C0-\u017E]{2}/.test(inner.replace(/<[^>]*>/g, ''))) out.push({ kind: 'el', tag: c.tag, s: c.cs, e: c.ce, os: c.os, oe: c.oe, node: c, g: grp(c) });
+        } else walk(c);
+      });
+    }
+    if (body) walk(body);
+    return out;
+  }
+
+  // ---------- TEXTY WEBU (docs/index.html + anglicky preklad docs/i18n-en.js) ----------
+  var WX = { src: '', en: '', U: null, uA: -1, uB: -1, units: [], groups: [], gsel: null, q: '', onlyCh: false, focus: null, after: null };
+  var wxTpl = document.createElement('template');
+  function wxNorm(s) { return String(s).replace(/\s+/g, ' ').trim(); }
+  function wxText(html) { wxTpl.innerHTML = html; return wxNorm(wxTpl.content.textContent); }
+  var WX_KIND = { h1: 'Nadpis', h2: 'Nadpis', h3: 'Podnadpis', h4: 'Podnadpis', p: 'Odstavec', li: 'Bod', td: 'Buňka', th: 'Záhlaví', a: 'Odkaz', summary: 'Rozbalovací', dt: 'Popisek', dd: 'Hodnota', figcaption: 'Popisek', label: 'Popisek', button: 'Tlačítko', '#text': 'Text' };
+  function wxLineRange(a, b) {
+    var src = WX.src, n = src.length, s = a, e = b;
+    while (s > 0 && (src.charAt(s - 1) === ' ' || src.charAt(s - 1) === '\t')) s--;
+    if (s === 0 || src.charAt(s - 1) === '\n') {
+      while (e < n && (src.charAt(e) === ' ' || src.charAt(e) === '\t')) e++;
+      if (src.charAt(e) === '\r') e++;
+      if (src.charAt(e) === '\n') return [s, e + 1];
+    }
+    return [a, b];
+  }
+  // co se smaze: bunka -> cely radek tabulky, dt/dd -> cela dvojice, summary -> cely rozbalovaci blok
+  function wxDelTarget(u) {
+    if (u.kind === 'text') return { r: [u.s, u.e], what: '' };
+    var nd = u.node, t = nd, what = '';
+    if (nd.tag === 'td' || nd.tag === 'th') { for (var a = nd.parent; a; a = a.parent) if (a.tag === 'tr') { t = a; what = 'celý řádek tabulky'; break; } }
+    else if ((nd.tag === 'dt' || nd.tag === 'dd') && nd.parent && nd.parent.tag === 'div') { t = nd.parent; what = 'popisek i hodnotu'; }
+    else if (nd.tag === 'summary' && nd.parent && nd.parent.tag === 'details') { t = nd.parent; what = 'celý rozbalovací blok i s obsahem'; }
+    return { r: wxLineRange(t.os, t.oe), what: what };
+  }
+  function wxKey(u) { return u.cz === u.cz0 ? u.key0 : (u.kind === 'text' ? wxNorm(u.cz) : wxText(u.cz)); }
+  function wxCovered(u) {
+    if (u.del) return null;
+    for (var i = 0; i < WX.units.length; i++) { var o = WX.units[i]; if (o !== u && o.del && o.dr[0] <= u.os && o.dr[1] >= u.oe) return o; }
+    return null;
+  }
+  function wxGone(u) { return u.del || !!wxCovered(u); }
+  function wxChanged(u) { return u.del || u.cz !== u.cz0 || u.en !== u.en0; }
+  function wxCheck(html, plain) {
+    if (plain) return /[<>]/.test(html) ? 'Tady nejdou značky – jen čistý text.' : null;
+    var st = [], re = /<\/?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>/g, m;
+    if (/<(?![\/a-zA-Z])/.test(html)) return 'Znak < napiš jako &lt;';
+    while ((m = re.exec(html))) {
+      var t = m[1].toLowerCase();
+      if (!WX_INLINE[t]) return 'Značka <' + t + '> sem nepatří. Jde jen text a <b>, <i>, <a>, <span>, <code>, <kbd>, <br>…';
+      if (/^on/i.test((/\s(on\w+)\s*=/i.exec(m[0]) || [])[1] || '')) return 'Atributy on… (skripty) nejsou povolené.';
+      if (WX_VOID[t] || /\/>$/.test(m[0])) continue;
+      if (m[0].charAt(1) === '/') { if (st.pop() !== t) return 'Nesedí značky u </' + t + '>.'; }
+      else st.push(t);
+    }
+    if (st.length) return 'Neuzavřená značka <' + st[st.length - 1] + '>.';
+    return null;
+  }
+  function wxGroupName(g) {
+    if (g === '@header') return 'Hlavička';
+    if (g.indexOf('@nav') === 0) return 'Navigace a obsah';
+    if (g === '@footer') return 'Patička';
+    if (g === '@ostatni') return 'Ostatní';
+    if (g === 'view-db') return 'Databáze';
+    if (g === 'view-craft') return 'Výroba';
+    for (var i = 0; i < WX.units.length; i++) { var u = WX.units[i]; if (u.g === g && /^h[12]$/.test(u.tag)) return wxText(u.cz0).replace(/^\d+\s*/, '') || g; }
+    return g;
+  }
+  function wxParseEn(text) {
+    WX.U = null; WX.uA = WX.uB = -1;
+    var a = text.indexOf('var U = ');
+    if (a < 0) return;
+    var b = text.indexOf('\n};', a);
+    if (b < 0) return;
+    try { WX.U = JSON.parse(text.slice(a + 8, b + 2)); WX.uA = a + 8; WX.uB = b + 2; } catch (e) { WX.U = null; }
+  }
+  function wxLoad(src, en) {
+    WX.src = src; WX.en = en; wxParseEn(en);
+    var root = wxScan(src);
+    WX.units = wxUnits(src, root).map(function (u, i) {
+      var cz = src.slice(u.s, u.e);
+      u.id = i; u.cz0 = u.cz = cz;
+      u.key0 = u.kind === 'text' ? wxNorm(cz.replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')) : wxText(cz);
+      if (u.kind === 'text') u.key0 = wxText(cz);
+      var en0 = WX.U && WX.U[u.key0];
+      if (u.kind === 'text' && en0 && en0.indexOf('<') >= 0) en0 = '';
+      u.en0 = u.en = en0 || '';
+      u.del = false;
+      var dt = wxDelTarget(u); u.dr = dt.r; u.delWhat = dt.what;
+      return u;
+    });
+    var seen = {}; WX.groups = [];
+    WX.units.forEach(function (u) { if (!seen[u.g]) { seen[u.g] = true; WX.groups.push(u.g); } });
+    // nejdriv kapitoly webu, hlavicka, navigace a podobne az na konci
+    var side = function (g) { return g.charAt(0) === '@' || g.indexOf('view-') === 0; };
+    WX.groups = WX.groups.filter(function (g) { return !side(g); }).concat(WX.groups.filter(side));
+    WX.names = {}; WX.groups.forEach(function (g) { WX.names[g] = wxGroupName(g); });
+    if (!WX.gsel || WX.groups.indexOf(WX.gsel) < 0) WX.gsel = WX.groups[0];
+  }
+  function wxDirty() { setDirty('web'); if (WX.U) setDirty('webEn'); }
+  function wxSnip(s, n) { s = wxNorm(s); return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+  function wxRenderList() {
+    var L = $('webList'); L.innerHTML = '';
+    var q = WX.q.toLowerCase(), cnt = 0;
+    if (q || WX.onlyCh) {
+      var hits = WX.units.filter(function (u) {
+        if (WX.onlyCh && !wxChanged(u)) return false;
+        if (!q) return true;
+        return (wxText(u.cz) + ' ' + u.en).toLowerCase().indexOf(q) >= 0;
+      });
+      cnt = hits.length;
+      hits.slice(0, 300).forEach(function (u) {
+        L.appendChild(el('button', { class: 'item' + (WX.focus === u.id ? ' on' : '') + (u.del ? ' bad' : ''), onclick: function () { WX.gsel = u.g; WX.focus = u.id; wxRenderList(); wxRenderBody(); } }, [
+          el('span', { class: 't', text: wxSnip(u.kind === 'text' ? u.cz : wxText(u.cz), 80) || '(prázdné)' }),
+          el('span', { class: 's', text: WX.names[u.g] + ' · ' + (WX_KIND[u.tag] || u.tag) })
+        ]));
+      });
+      $('webCount').textContent = cnt + ' ' + plural(cnt, ['text', 'texty', 'textů']) + (cnt > 300 ? ' (ukazuji prvních 300)' : '');
+      return;
+    }
+    WX.groups.forEach(function (g) {
+      var us = WX.units.filter(function (u) { return u.g === g; });
+      var ch = us.filter(wxChanged).length;
+      L.appendChild(el('button', { class: 'item' + (g === WX.gsel ? ' on' : ''), onclick: function () { WX.gsel = g; WX.focus = null; wxRenderList(); wxRenderBody(); } }, [
+        el('span', { class: 't' }, [WX.names[g]].concat(ch ? [el('span', { class: 'tag', text: ch + ' změn' })] : [])),
+        el('span', { class: 's', text: us.length + ' ' + plural(us.length, ['text', 'texty', 'textů']) + (g.charAt(0) === '@' ? '' : ' · #' + g) })
+      ]));
+    });
+    $('webCount').textContent = WX.groups.length + ' částí webu · ' + WX.units.length + ' textů';
+  }
+  function wxAutoRows(ta) { ta.style.height = 'auto'; ta.style.height = Math.min(Math.max(ta.scrollHeight + 2, 46), 420) + 'px'; }
+  function wxCard(u) {
+    var cov = wxCovered(u);
+    var card = el('div', { class: 'wx-u' + (wxChanged(u) ? ' ch' : '') + (u.del || cov ? ' del' : ''), id: 'wxu-' + u.id });
+    var flags = el('span', { class: 'wx-fl' });
+    var err = el('p', { class: 'msg err' });
+    var prev = el('div', { class: 'wx-prev' });
+    var cz = el('textarea', { class: 'mono', spellcheck: 'true' }); cz.value = u.cz;
+    var en = el('textarea', { class: 'mono', spellcheck: 'false', placeholder: WX.U ? 'Chybí překlad – na EN se ukáže česky' : 'i18n-en.js na GitHubu chybí' }); en.value = u.en;
+    if (!WX.U) en.disabled = true;
+    var del = el('button', { class: 'btn small ' + (u.del ? '' : 'danger'), text: u.del ? 'Vrátit' : 'Smazat' });
+    var undo = el('button', { class: 'btn small', text: 'Vrátit změnu', title: 'Vrátí původní text (CZ i EN)' });
+    function paint() {
+      flags.innerHTML = '';
+      var dup = WX.units.filter(function (o) { return o !== u && !wxGone(o) && wxKey(o) === wxKey(u); }).length;
+      if (u.del) flags.appendChild(el('span', { class: 'tag del', text: 'smaže se' }));
+      else if (cov) flags.appendChild(el('span', { class: 'tag del', text: 'smaže se s řádkem' }));
+      else {
+        if (u.cz !== u.cz0) flags.appendChild(el('span', { class: 'tag ch', text: 'CZ upraveno' }));
+        if (u.en !== u.en0) flags.appendChild(el('span', { class: 'tag ch', text: 'EN upraveno' }));
+        if (u.cz !== u.cz0 && u.en === u.en0 && u.en) flags.appendChild(el('span', { class: 'tag warn', text: 'zkontroluj EN', title: 'Český text se změnil – uprav i anglický překlad' }));
+        if (WX.U && !u.en) flags.appendChild(el('span', { class: 'tag', text: 'bez EN' }));
+        if (dup) flags.appendChild(el('span', { class: 'tag', text: 'stejný text ještě ' + dup + '×', title: 'Stejný text je na webu víckrát (např. v obsahu a v nadpisu). Anglický překlad je pro všechny společný.' }));
+      }
+      card.className = 'wx-u' + (wxChanged(u) ? ' ch' : '') + (u.del || cov ? ' del' : '');
+      undo.hidden = !(u.cz !== u.cz0 || u.en !== u.en0) || u.del;
+      var e1 = u.cz.trim() ? wxCheck(u.cz, u.kind === 'text') : 'Prázdný text – na smazání použij tlačítko Smazat.';
+      var e2 = u.en ? wxCheck(u.en, u.kind === 'text') : null;
+      err.textContent = u.del || cov ? '' : (e1 ? 'Česky: ' + e1 : e2 ? 'English: ' + e2 : '');
+      // nahled jen u textu se znackami nebo entitami (u obycejneho textu by se jen opakoval)
+      if (!e1 && u.kind !== 'text' && /[<&]/.test(u.cz)) prev.innerHTML = u.cz; else prev.textContent = '';
+      cz.disabled = !!(u.del || cov); en.disabled = !WX.U || !!(u.del || cov);
+      del.textContent = u.del ? 'Vrátit' : 'Smazat'; del.className = 'btn small ' + (u.del ? '' : 'danger'); del.disabled = !!cov;
+    }
+    cz.addEventListener('input', function () { u.cz = cz.value; wxAutoRows(cz); paint(); wxDirty(); wxRenderList(); });
+    en.addEventListener('input', function () {
+      u.en = en.value; wxAutoRows(en);
+      var k = wxKey(u);
+      WX.units.forEach(function (o) { if (o !== u && wxKey(o) === k) o.en = u.en; });
+      paint(); wxDirty(); wxRenderList();
+    });
+    del.addEventListener('click', function () {
+      if (u.del) { u.del = false; wxDirty(); wxRenderBody(); wxRenderList(); return; }
+      var t = wxSnip(u.kind === 'text' ? u.cz0 : wxText(u.cz0), 140);
+      confirmBox('Smazat text?', '<p>Z webu zmizí: <b>' + esc(t) + '</b>' + (u.delWhat ? '<br><span class="hint">Smaže se ' + esc(u.delWhat) + '.</span>' : '') + '</p><p class="hint">Projeví se až po uložení na GitHub. Do té doby jde vrátit.</p>', 'Smazat')
+        .then(function (ok) { if (!ok) return; u.del = true; wxDirty(); wxRenderBody(); wxRenderList(); });
+    });
+    undo.addEventListener('click', function () { u.cz = u.cz0; u.en = u.en0; wxDirty(); wxRenderBody(); wxRenderList(); });
+    card.appendChild(el('div', { class: 'wx-h' }, [el('span', { class: 'tag', text: WX_KIND[u.tag] || u.tag }), flags, el('span', { class: 'grow' }), undo, del]));
+    card.appendChild(el('div', { class: 'grid2 wx-tx' }, [
+      el('label', { class: 'f' }, [el('span', { text: 'Česky' }), cz]),
+      el('label', { class: 'f' }, [el('span', { text: 'English' }), en])
+    ]));
+    card.appendChild(prev); card.appendChild(err);
+    paint();
+    setTimeout(function () { wxAutoRows(cz); wxAutoRows(en); }, 0);
+    return card;
+  }
+  function wxRenderBody() {
+    var B = $('webBody'); B.innerHTML = '';
+    var g = WX.gsel;
+    var us = WX.units.filter(function (u) { return u.g === g && (!WX.onlyCh || wxChanged(u) || WX.focus === u.id); });
+    var head = el('div', { class: 'wx-gh' }, [el('h3', { text: WX.names[g] || g })]);
+    if (g.charAt(0) !== '@') head.appendChild(el('a', { class: 'btn small', href: 'index.html#' + g, target: '_blank', rel: 'noopener', text: 'Otevřít na webu ›', style: 'text-decoration:none' }));
+    B.appendChild(head);
+    if (!WX.U) B.appendChild(el('p', { class: 'msg warn', text: 'Soubor docs/i18n-en.js na GitHubu není – anglické texty teď nejdou upravit. Nahraj nejdřív web s přepínačem CZ/EN.' }));
+    if (!us.length) B.appendChild(el('p', { class: 'hint', text: 'Žádné texty.' }));
+    us.forEach(function (u) { B.appendChild(wxCard(u)); });
+    if (WX.focus != null) {
+      var c = $('wxu-' + WX.focus);
+      if (c) { c.classList.add('focus'); setTimeout(function () { c.scrollIntoView({ block: 'center' }); }, 30); }
+    }
+  }
+  function wxBuild() {
+    var errors = [];
+    WX.units.forEach(function (u) {
+      if (wxGone(u)) return;
+      var where = WX.names[u.g] + ': „' + wxSnip(u.kind === 'text' ? u.cz0 : wxText(u.cz0), 40) + '“ – ';
+      if (u.cz !== u.cz0) { var e1 = u.cz.trim() ? wxCheck(u.cz, u.kind === 'text') : 'prázdný text (na smazání použij Smazat)'; if (e1) errors.push(where + e1); }
+      if (u.en !== u.en0 && u.en) { var e2 = wxCheck(u.en, u.kind === 'text'); if (e2) errors.push(where + 'EN: ' + e2); }
+    });
+    var ops = [];
+    WX.units.forEach(function (u) {
+      if (u.del) ops.push({ a: u.dr[0], b: u.dr[1], t: '' });
+      else if (u.cz !== u.cz0) ops.push({ a: u.s, b: u.e, t: u.cz });
+    });
+    ops.sort(function (x, y) { return x.a - y.a || (y.b - y.a) - (x.b - x.a); });
+    var parts = [], pos = 0, end = -1;
+    ops.forEach(function (o) {
+      if (o.a < end) return; // uvnitr smazaneho bloku
+      parts.push(WX.src.slice(pos, o.a), o.t); pos = o.b; end = o.b;
+    });
+    parts.push(WX.src.slice(pos));
+    var html = parts.join('');
+    var enText = WX.en;
+    if (WX.U) {
+      var U2 = {}; Object.keys(WX.U).forEach(function (k) { U2[k] = WX.U[k]; });
+      var live = {};
+      WX.units.forEach(function (u) { if (!wxGone(u)) live[wxKey(u)] = true; });
+      WX.units.forEach(function (u) {
+        if (wxGone(u)) return;
+        var k = wxKey(u);
+        if (u.en === u.en0 && k === u.key0) return;
+        var v = u.en.trim();
+        if (v) U2[k] = v; else delete U2[k];
+      });
+      WX.units.forEach(function (u) { if ((wxGone(u) || wxKey(u) !== u.key0) && !live[u.key0]) delete U2[u.key0]; });
+      var dump = '{\n' + Object.keys(U2).map(function (k) { return JSON.stringify(k) + ': ' + JSON.stringify(U2[k]); }).join(',\n') + '\n}';
+      dump = dump.replace(/<\//g, '<\\/');
+      var same = JSON.stringify(U2) === JSON.stringify(WX.U);
+      if (!same) enText = WX.en.slice(0, WX.uA) + dump + WX.en.slice(WX.uB);
+    }
+    return { html: html, en: enText, errors: errors };
+  }
+  function wxAfter() {
+    clearTimeout(WX.after);
+    WX.after = setTimeout(function () {
+      var keepG = WX.gsel;
+      wxLoad(FILES.web.orig, FILES.webEn.orig || WX.en);
+      WX.gsel = keepG; WX.focus = null;
+      FILES.web.dirty = false; FILES.webEn.dirty = false; markTabs();
+      wxRenderList(); wxRenderBody();
+    }, 300);
+  }
+  builders.web = function (text) {
+    $('webList').innerHTML = ''; $('webBody').innerHTML = '';
+    return getFile('webEn').then(function (en) {
+      loaded.webEn = true; FILES.webEn.dirty = false;
+      wxLoad(text, en);
+      $('webSearch').value = WX.q;
+      $('webSearch').oninput = function () { WX.q = this.value.trim(); WX.focus = null; wxRenderList(); };
+      $('webOnlyCh').onchange = function () { WX.onlyCh = this.checked; wxRenderList(); wxRenderBody(); };
+      wxRenderList(); wxRenderBody();
+    });
+  };
+  validators.web = function () {
+    var r = wxBuild();
+    return { text: r.html, errors: r.errors, after: wxAfter };
+  };
+  function wxSave(save, msg, status) {
+    save.disabled = true;
+    Promise.resolve().then(function () {
+      var a = validators.web(), b = validators.webEn();
+      if (a.errors.length) { status.className = 'msg err'; status.textContent = a.errors[0] + (a.errors.length > 1 ? ' (a další: ' + (a.errors.length - 1) + ')' : ''); return; }
+      var ch = [{ fk: 'web', r: a }, { fk: 'webEn', r: b }].filter(function (x) { return !(x.r.same || x.r.text === FILES[x.fk].orig); });
+      if (!ch.length) { FILES.web.dirty = FILES.webEn.dirty = false; markTabs(); status.className = 'msg warn'; status.textContent = 'Nic se nezměnilo.'; return; }
+      status.className = 'msg'; status.textContent = 'Ukládám…';
+      return commitMany(ch, (msg.value.trim() || 'Editor: texty webu') + ' (editor, ' + S.user + ')').then(function () {
+        msg.value = ''; status.className = 'msg ok'; status.textContent = 'Uloženo. Web se obnoví za pár minut (GitHub Pages).';
+      });
+    }).catch(function (e) { status.className = 'msg err'; status.textContent = e && e.status ? friendly(e) : (e && e.message) || String(e); })
+      .then(function () { save.disabled = false; });
+  }
+  validators.webEn = function () {
+    var r = wxBuild();
+    return { text: r.en, errors: [], same: r.en === FILES.webEn.orig, after: wxAfter };
   };
 
   // ---------- prihlaseni ----------
