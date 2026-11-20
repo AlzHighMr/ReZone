@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <string id="ui_mcm_menu_ghosts">
+    <text>Černý stalker</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_encounters">
+    <text>Obecné</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_title">
+    <text>Přítomnost Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_intro">
+    <text>Nastav, jak často se Černý stalker objevuje a jak dlouho trvají běžná setkání. Změny se projeví po uložení nastavení.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_enabled">
+    <text>Zapnout Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_enabled_desc">
+    <text>Povolí, aby se Černý stalker objevoval a spouštěl související setkání.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_intensity">
+    <text>Četnost setkání</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_intensity_desc">
+    <text>Celková četnost setkání. Hodnota 1 je standardní nastavení.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_max_observers">
+    <text>Maximum přízračných postav</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_max_observers_desc">
+    <text>Celkový počet postav včetně psí vidin. Skutečný Černý stalker je vždy jen jeden.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_first_spawn_delay_seconds">
+    <text>Počáteční prodleva (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_first_spawn_delay_seconds_desc">
+    <text>Čas do prvního pokusu po načtení uložené hry nebo zapnutí addonu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_encounter_cooldown_seconds">
+    <text>Čas mezi setkáními (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_encounter_cooldown_seconds_desc">
+    <text>Minimální pauza mezi běžnými pokusy o objevení. Režisér setkání ji může prodloužit.</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_max_lifetime_seconds">
+    <text>Délka setkání (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_encounters_max_lifetime_seconds_desc">
+    <text>Maximální délka běžného zjevení. Konkrétní scény mohou skončit dřív.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_apparitions">
+    <text>Pohled a vzdálenost</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_title">
+    <text>Sledování postavy</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_intro">
+    <text>Vzdálenosti objevení a reakce na přímé pozorování. Režim Noční můra dovoluje vzácné výjimky.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_spawn_radius_min">
+    <text>Minimální vzdálenost zjevení (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_spawn_radius_min_desc">
+    <text>Nejbližší vzdálenost běžného objevení, pokud je k dispozici bezpečné místo.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_spawn_radius_max">
+    <text>Maximální vzdálenost zjevení (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_spawn_radius_max_desc">
+    <text>Nejvzdálenější vzdálenost běžného objevení, pokud je k dispozici bezpečné místo.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_vanish_distance">
+    <text>Zmizení při přiblížení (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_vanish_distance_desc">
+    <text>Postava zmizí, jakmile se přiblížíš na tuto vzdálenost.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_fade_distance">
+    <text>Dosah přímého pohledu (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_fade_distance_desc">
+    <text>V tomto dosahu může skutečně nerušený pohled běžné zjevení zastavit.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_freeze_enabled">
+    <text>Ztuhnout při pozorování</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_freeze_enabled_desc">
+    <text>Černý stalker se při přímém pozorování obvykle přestane hýbat. Během Honu toto pravidlo platit nemusí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_freeze_confirm_seconds">
+    <text>Potvrzení pohledu (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_gaze_freeze_confirm_seconds_desc">
+    <text>Jak dlouho se musíš dívat, než zjevení ztuhne. Krátká ztráta výhledu ho hned neuvolní.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme">
+    <text>Vzhled zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme_desc">
+    <text>Vyber, které siluety NPC se použijí pro přeludy.</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme_lst_mixed">
+    <text>Smíšené</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme_lst_monolith">
+    <text>Monolit</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme_lst_zombie">
+    <text>Zombifikovaný stalker</text>
+  </string>
+  <string id="ui_mcm_ghosts_apparitions_visual_theme_lst_scientist">
+    <text>Vědec</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_sounds">
+    <text>Zvuky nablízku</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_title">
+    <text>Nativní zvuky hry</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_intro">
+    <text>Nejsou přiložené žádné vlastní zvukové soubory. Přehrát lze jen zvuky, které už má tvoje instalace Anomaly.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_voice_chance">
+    <text>Pravděpodobnost tichého hlasu</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_voice_chance_desc">
+    <text>Šance, že poblíž ducha uslyšíš hlas NPC.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_voice_volume">
+    <text>Hlasitost tichého hlasu</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_voice_volume_desc">
+    <text>Hlasitost hlasových klipů ze hry.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_noise_chance">
+    <text>Pravděpodobnost dalších zvuků</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_noise_chance_desc">
+    <text>Volitelné jednorázové tajemné zvuky. Ve výchozím stavu vypnuté.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_noise_volume">
+    <text>Hlasitost dalších zvuků</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_noise_volume_desc">
+    <text>Hlasitost volitelných jednorázových zvuků prostředí.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_distant">
+    <text>Vzdálené hlasy</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_title">
+    <text>Vzdálené hlasy</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_intro">
+    <text>Vzácné výkřiky a tajemné zvuky z herního archivu. Vzdálenost 10–20 km se simuluje jako tichý zvuk pro celou mapu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_enabled">
+    <text>Zapnout vzdálené výkřiky</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_enabled_desc">
+    <text>Zapne občasné vzdálené výkřiky a hlasy v prostředí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_chance">
+    <text>Šance na vzdálený zvuk</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_chance_desc">
+    <text>Pravděpodobnost při pokusu o vzdálenou zvukovou událost.</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_volume">
+    <text>Hlasitost vzdáleného zvuku</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_volume_desc">
+    <text>Tiché nastavení zachová dojem vzdáleného zvuku.</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_min_interval_seconds">
+    <text>Minimální interval (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_min_interval_seconds_desc">
+    <text>Dolní časová hranice mezi pokusy o vzdálený zvuk.</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_max_interval_seconds">
+    <text>Maximální interval (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_distant_distant_cry_max_interval_seconds_desc">
+    <text>Horní časová hranice mezi pokusy o vzdálený zvuk.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_testing">
+    <text>Diagnostika</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_title">
+    <text>Testování a diagnostika</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_intro">
+    <text>Ladicí volby jsou určené pro otevřený terén. Při běžném hraní vypni rychlé objevování a výpis do logu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_debug_logging">
+    <text>Zapnout diagnostiku</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_debug_logging_desc">
+    <text>Zapisuje do logu hry řádky [GHOST] při objevení a zmizení.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_debug_fast_spawn">
+    <text>Rychlé objevování (testování)</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_debug_fast_spawn_desc">
+    <text>Zkrátí intervaly setkání pro testování. Při běžném hraní vypni.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_spawn">
+    <text>Vytvořit testovacího ducha</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_spawn_desc">
+    <text>Pokusí se vytvořit postavu před hráčem; výsledek se zapíše do logu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_clear">
+    <text>Odstranit duchy</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_clear_desc">
+    <text>Odstraní jen zjevení vytvořená tímto addonem.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_help">
+    <text>Vyžaduje načtenou hru. Na otevřeném prostranství klikni na Vytvořit testovacího ducha a pak zavři menu. Ignoruje náhodné prodlevy objevení.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_presence">
+    <text>Pronásledování</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_fleeting">
+    <text>Prchavá zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_title">
+    <text>Kroky za zády</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_intro">
+    <text>Když ho nevidíš, může se Černý stalker pokusit přiblížit po dostupných cestách.</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_enabled">
+    <text>Zapnout nepozorované přibližování</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_enabled_desc">
+    <text>Černý stalker se může přiblížit. Běžná setkání se dál řídí pravidlem pohledu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_pause_seconds">
+    <text>Prodleva mezi kroky, s</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_pause_seconds_desc">
+    <text>Minimální čas mezi pokusy o přemístění mimo obraz.</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_step_meters">
+    <text>Krok přiblížení, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_step_meters_desc">
+    <text>Přibližná vzdálenost, o kterou se každým krokem přiblíží; závisí na dostupných navigačních bodech.</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_max_steps">
+    <text>Maximum kroků za setkání</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_max_steps_desc">
+    <text>Zabrání nekonečnému pronásledování během jednoho setkání.</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_min_distance">
+    <text>Minimální vzdálenost pronásledování (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_presence_approach_min_distance_desc">
+    <text>Černý stalker se pokusí přiblížit na tuto vzdálenost, pokud zjevení nezmizí dřív.</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_title">
+    <text>Krátká zjevení v koutku oka</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_intro">
+    <text>Po rychlém otočení kamery se mohou na 0,5–2 sekundy objevit vzácné siluety. Žádný hlasitý zvuk ani fyzické poškození.</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_enabled">
+    <text>Zapnout prchavá zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_enabled_desc">
+    <text>Samostatná vzácná událost, která není vázaná na intervaly běžných setkání.</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_chance">
+    <text>Šance po rychlém otočení</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_chance_desc">
+    <text>Kontroluje se jen po uplynutí prodlevy; opakované točení šanci nezvyšuje.</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_cooldown_seconds">
+    <text>Prodleva mezi pokusy, s</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_cooldown_seconds_desc">
+    <text>Čas do dalšího losování prchavého zjevení, i když poslední losování nevyšlo.</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_lifetime_seconds">
+    <text>Trvání prchavého zjevení, s</text>
+  </string>
+  <string id="ui_mcm_ghosts_fleeting_fleeting_lifetime_seconds_desc">
+    <text>Jak dlouho krátké zjevení vydrží, než zmizí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_quiet_close_enabled">
+    <text>Tiché zvuky nablízku</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_quiet_close_enabled_desc">
+    <text>Přednost má dýchání, zvonění v uších a šepot. Četnost hlasitých úleků je omezená zvlášť.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_distance">
+    <text>Vzdálenost tichého zvuku, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_distance_desc">
+    <text>Maximální vzdálenost pro tichý zvuk nablízku.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_chance">
+    <text>Pravděpodobnost tichého zvuku</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_chance_desc">
+    <text>Šance na jeden zvuk dýchání nebo zvonění za blízké setkání, s globální prodlevou 90 sekund.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_volume">
+    <text>Hlasitost tichého zvuku</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_close_cue_volume_desc">
+    <text>Ovládá hlasitost jemných zvuků přehrávaných u hráče.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_soft_blink_enabled">
+    <text>Krátké mrknutí obrazovky (experimentální)</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_soft_blink_enabled_desc">
+    <text>Ve výchozím stavu vypnuté. Používá vanilla efekt blink.ppe bez vypnutí ovládání. Může kolidovat s jinými efekty obrazovky.</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_soft_blink_chance">
+    <text>Pravděpodobnost mrknutí obrazovky</text>
+  </string>
+  <string id="ui_mcm_ghosts_sounds_soft_blink_chance_desc">
+    <text>Šance na mrknutí po úspěšném tichém zvuku. Nula ho vypne.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_fleeting">
+    <text>Test: prchavé zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_fleeting_desc">
+    <text>Vytvoří krátkou siluetu v otevřeném terénu, pokud existuje platný navigační bod.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_approach">
+    <text>Test: přikázat duchovi přiblížení</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_approach_desc">
+    <text>Přikáže existujícímu duchovi, aby k tobě šel po cestách úrovně. Vytvoř ducha a podívej se jinam.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_echoes">
+    <text>Hlasy Zóny</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_title">
+    <text>Klamné hlasy</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_intro">
+    <text>Vzácné hlasy stalkerů z prázdných míst. Používá jen existující zvuky hry. Ve výchozím režimu nevytváří žádné nepřátele, miny ani anomálie.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_enabled">
+    <text>Zapnout falešné hlasy</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_enabled_desc">
+    <text>Povolí vzdálené volání o pomoc, paniku a bojové výkřiky z nečekaných míst.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_chance">
+    <text>Šance na falešný signál</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_chance_desc">
+    <text>Pravděpodobnost, že pokus po čekací době uspěje.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_volume">
+    <text>Hlasitost falešných hlasů</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_volume_desc">
+    <text>Relativní hlasitost prostorových hlasů NPC. Nula zvuk vypne.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_distance_min">
+    <text>Minimální vzdálenost (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_distance_min_desc">
+    <text>Falešný hlas nezazní přímo vedle hráče.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_distance_max">
+    <text>Maximální vzdálenost (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_distance_max_desc">
+    <text>Horní dosah hledání pro falešné signály.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_min_interval_seconds">
+    <text>Minimální interval (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_min_interval_seconds_desc">
+    <text>Dolní pauza mezi pokusy o falešný hlas.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_max_interval_seconds">
+    <text>Maximální interval (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_max_interval_seconds_desc">
+    <text>Horní pauza mezi pokusy o falešný hlas.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_in_combat">
+    <text>Povolit během boje</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_in_combat_desc">
+    <text>Obvykle vypnuté, aby to nemátlo během skutečné přestřelky.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_near_anomalies">
+    <text>Hlasy u anomálií (experimentální)</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_near_anomalies_desc">
+    <text>Zvuk může zaznít u existující registrované anomálie. Žádné nebezpečí se nevytváří.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_rumors">
+    <text>Zvěsti v PDA</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_title">
+    <text>Zvěsti mezi stalkery</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_intro">
+    <text>Vzácná hlášení o neobvyklých setkáních přes běžný kanál zpráv. Sám Černý stalker tyto zprávy nikdy nepíše.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_enabled">
+    <text>Zapnout zvěsti</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_enabled_desc">
+    <text>Povolí vzácné zvěsti o přízračných postavách přes systém zpráv ve hře.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_chance">
+    <text>Pravděpodobnost zprávy</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_chance_desc">
+    <text>Šance, že se po uplynutí intervalu zařadí zvěst.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_min_interval_seconds">
+    <text>Minimální interval zpráv (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_min_interval_seconds_desc">
+    <text>Minimální čekání mezi pokusy o zvěst.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_max_interval_seconds">
+    <text>Maximální interval zpráv (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_echo_news_max_interval_seconds_desc">
+    <text>Maximální čekání mezi pokusy o zvěst.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_echo">
+    <text>Test: falešný hlas</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_echo_desc">
+    <text>Okamžitě se pokusí přehrát existující hlas NPC ze vzdáleného místa.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_news">
+    <text>Test: zvěst v PDA</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_news_desc">
+    <text>Okamžitě se pokusí zařadit zvěst do nativních dynamických zpráv.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_gunfire_enabled">
+    <text>Falešné výstřely</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_gunfire_enabled_desc">
+    <text>Občasné existující zvuky zbraní z prázdných míst. Lze vypnout v MCM.</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_gunfire_chance">
+    <text>Šance na falešné výstřely</text>
+  </string>
+  <string id="ui_mcm_ghosts_echoes_echo_gunfire_chance_desc">
+    <text>Uplatní se jen se zapnutou napodobenou střelbou. Ostatní události zůstanou hlasy.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_psychosis">
+    <text>Psí efekty</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_title">
+    <text>Vliv Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_intro">
+    <text>Volitelné psí efekty. Šetrný režim navíc zabrání ztrátě psí zdraví způsobené tímto addonem.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_enabled">
+    <text>Zapnout psí auru</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_enabled_desc">
+    <text>Když je šetrný režim vypnutý, může Černý stalker pomalu ubírat psí zdraví.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_radius">
+    <text>Dosah psí aury, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_radius_desc">
+    <text>Za touto vzdáleností aura nepůsobí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_rate">
+    <text>Ztráta psí zdraví, %/s</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_rate_desc">
+    <text>Přibližná ztráta psí zdraví za sekundu před úpravou podle vzdálenosti, noci a ochranné výstroje. 0,16 znamená 0,16 % za sekundu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_encounter_cap">
+    <text>Maximální ztráta za setkání</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_aura_encounter_cap_desc">
+    <text>Společný limit pro všechny duchy v jedné souvislé sérii. 0,08 = 8 ze 100; obnoví se po minutě bez běžných duchů.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_night_multiplier">
+    <text>Noční násobič</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_night_multiplier_desc">
+    <text>Mezi 21:00 a 6:00 je úbytek silnější; dolní hranice závisí i na lokaci.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_respect_protection">
+    <text>Brát ohled na psí ochranu</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_respect_protection_desc">
+    <text>Ochranné vybavení může účinek aury snížit.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_no_combat_damage">
+    <text>Bez psí poškození v boji</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_no_combat_damage_desc">
+    <text>Neubírat psí zdraví, dokud má hráč známého nepřítele. Chrání i před nespravedlivou smrtí v boji.</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_lethal_enabled">
+    <text>Odstranit bezpečné psí minimum</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_psy_lethal_enabled_desc">
+    <text>Nebezpečná volba pro uživatele dalších psí mechanik. Ve výchozím stavu vypnutá.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_hallucinations">
+    <text>Psí vidiny</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_title">
+    <text>Postavy na okraji zorného pole</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_intro">
+    <text>Nízké psí zdraví může vyvolat krátké vidiny Černého stalkera, aniž by nahradily existující fantomy Zóny.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_enabled">
+    <text>Zapnout psí vidiny</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_enabled_desc">
+    <text>Povolí krátké vidiny při nízkém psí zdraví.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_threshold">
+    <text>Práh psí zdraví</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_threshold_desc">
+    <text>Vidiny se mohou objevit jen pod touto úrovní psí zdraví.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_chance">
+    <text>Šance na vidinu</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_chance_desc">
+    <text>Šance na krátkou postavu, když je psí zdraví dost nízko.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_interval_seconds">
+    <text>Interval kontroly, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_interval_seconds_desc">
+    <text>Minimální prodleva mezi pokusy o vidinu, aby se neobjevovaly pořád.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_lifetime_seconds">
+    <text>Trvání vidiny, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_lifetime_seconds_desc">
+    <text>Krátká vidina sama vyprší, ať ji hráč vidí, nebo ne.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme">
+    <text>Vzhled vidin</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme_desc">
+    <text>Jen existující vzhledy: smíšené, Monolit, zombifikovaný, vědec. Žádné další modely postav se neinstalují.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_psy_status">
+    <text>Zkontrolovat psí systém (log)</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_psy_status_desc">
+    <text>Zapíše do logu psí zdraví, minimum lokace, místní čas a dostupnost API.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_vision">
+    <text>Vytvořit testovací psí vidinu</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_vision_desc">
+    <text>Vytvoří krátkou postavu pro test viditelnosti; nemůže způsobit psí poškození.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme_lst_mixed">
+    <text>Smíšené</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme_lst_monolith">
+    <text>Monolit</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme_lst_zombie">
+    <text>Zombifikovaný</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_theme_lst_scientist">
+    <text>Vědec</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_in_combat">
+    <text>Povolit vidiny v boji</text>
+  </string>
+  <string id="ui_mcm_ghosts_hallucinations_hallucinations_in_combat_desc">
+    <text>Ve výchozím stavu vypnuté: žádné krátké vidiny, dokud má hráč odhaleného nepřítele.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_hunt">
+    <text>Hon</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_title">
+    <text>Když se Černý stalker dá do pronásledování</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_intro">
+    <text>Vzácné setkání: Černý stalker se dá do pronásledování, může hráče ztratit z očí, prozkoumat poslední známou pozici a krátce čekat v záloze.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_enabled">
+    <text>Zapnout Hon</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_enabled_desc">
+    <text>Povolí, aby Černý stalker občas hráče pronásledoval.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_in_combat_only">
+    <text>Jen v boji</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_in_combat_only_desc">
+    <text>Hon začne až po několika sekundách boje. Vypnutím povolíš setkání i mimo boj.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_trigger_chance">
+    <text>Pravděpodobnost honu</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_trigger_chance_desc">
+    <text>Šance ve vhodné situaci. Režim setkání četnost dál omezuje.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_cooldown_seconds">
+    <text>Prodleva honu, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_cooldown_seconds_desc">
+    <text>Minimální interval mezi pokusy, včetně neúspěšných losování.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_duration_seconds">
+    <text>Délka honu (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_duration_seconds_desc">
+    <text>Maximální délka jednoho Honu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_spawn_distance">
+    <text>Počáteční vzdálenost, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_spawn_distance_desc">
+    <text>Počáteční vzdálenost hledání místa pro objevení.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_step_seconds">
+    <text>Interval přibližování, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_step_seconds_desc">
+    <text>Jak často se lovec pokusí přiblížit, když není v obraze.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_step_meters">
+    <text>Krok přiblížení, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_step_meters_desc">
+    <text>Přibližná vzdálenost za jeden krok. Teleport jen mimo obraz.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_contact_distance">
+    <text>Vzdálenost kontaktu, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_contact_distance_desc">
+    <text>Po 2,5 sekundy nablízku a mimo zorné pole může dojít k jednomu zásahu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_escape_distance">
+    <text>Vzdálenost úniku, m</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_escape_distance_desc">
+    <text>Dostaň se do této vzdálenosti od lovce a událost skončí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_psi_penalty">
+    <text>Ztráta psí zdraví při kontaktu</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_psi_penalty_desc">
+    <text>Podíl plného psí zdraví ztracený při jednom kontaktu. 0,12 = 12 procentních bodů.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_health_penalty">
+    <text>Ztráta zdraví při kontaktu</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_health_penalty_desc">
+    <text>Podíl zdraví, který lze při kontaktu ztratit, pokud je poškození zapnuté.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_health_floor">
+    <text>Minimum zbývajícího zdraví</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_health_floor_desc">
+    <text>Bez smrtícího režimu nemůže zdraví hráče klesnout pod tento podíl.</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_lethal_enabled">
+    <text>Povolit smrtící kontakt</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_hunt_lethal_enabled_desc">
+    <text>Nebezpečná volba: kontakt může hráče zabít. Ve výchozím stavu vypnutá.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_start">
+    <text>Spustit testovací hon</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_start_desc">
+    <text>Neškodné: vytvoří testovacího lovce ve vhodném otevřeném terénu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_status">
+    <text>Zapsat stav honu do logu</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_status_desc">
+    <text>Zapíše do logu průběh honu a poslední výsledek.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_stop">
+    <text>Zastavit testovací hon</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_hunt_stop_desc">
+    <text>Odstraní aktivního lovce bez poškození.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_witnesses">
+    <text>Svědci</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_title">
+    <text>Jak reagují ostatní stalkeři</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_intro">
+    <text>Stalkeři poblíž si mohou Černého stalkera všimnout a občas se o zážitek podělit. Jejich bojové úkoly zůstávají beze změny.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_enabled">
+    <text>Zapnout reakce svědků</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_enabled_desc">
+    <text>Ostatní stalkeři si mohou Černého stalkera během setkání všimnout.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_reaction_chance">
+    <text>Pravděpodobnost reakce</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_reaction_chance_desc">
+    <text>Šance, že si postava poblíž zjevení všimne.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_radius">
+    <text>Vzdálenost spatření (m)</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_radius_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_check_seconds">
+    <text>Interval prohledávání (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_check_seconds_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_npc_cooldown_seconds">
+    <text>Prodleva pro každé NPC (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_npc_cooldown_seconds_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_voice_enabled">
+    <text>Krátké hlasové reakce</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_voice_enabled_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_look_enabled">
+    <text>Podívat se k Černému stalkerovi</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_look_enabled_desc">
+    <text>Povolí krátkou viditelnou reakci svědka.</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_in_combat">
+    <text>Povolit v boji (experimentální)</text>
+  </string>
+  <string id="ui_mcm_ghosts_witnesses_witness_in_combat_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_news_global_cooldown_seconds">
+    <text>Globální prodleva zpráv (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_news_global_cooldown_seconds_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_news_background_rumors">
+    <text>Zvěsti z celé Zóny</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_news_background_rumors_desc">
+    <text>Povolí zvěsti v PDA i mimo vlastní setkání hráče.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_witness_reports_enabled">
+    <text>Hlášení svědků</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_witness_reports_enabled_desc">
+    <text>Stalkeři, kteří postavu viděli, mohou své pozorování nahlásit.</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_witness_report_chance">
+    <text>Šance na hlášení svědka</text>
+  </string>
+  <string id="ui_mcm_ghosts_rumors_witness_report_chance_desc">
+    <text>Nastaví tuto volbu bez nahrazení vanilla skriptů enginu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_news_status">
+    <text>Stav doručování zpráv</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_witness">
+    <text>Test reakce svědka poblíž</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_witness_status">
+    <text>Diagnostický stav svědků</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_release_diagnostics">
+    <text>Diagnostika 1.5.3</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_release_diagnostics_desc">
+    <text>Zapíše do logu hry souhrn zjevení, zvuku, svědků a volání API zpráv. Nespouští žádné události.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_motion_status">
+    <text>Diagnostika pohybu</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_motion_status_desc">
+    <text>Zapíše do logu hry příkazy k pohybu, skutečný postup a důvody pauz. Pro test chůze se od zjevení odvrať.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_scares">
+    <text>Znepokojivé události</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_title">
+    <text>Nečekaná zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_intro">
+    <text>Vzácná zjevení na nečekaných místech. Staré pípnutí a syntetický hlas se nepoužívají.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_enabled">
+    <text>Zapnout náhlá zjevení</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_night_only">
+    <text>Jen v noci</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_no_combat">
+    <text>Nepřerušovat boj</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_chance">
+    <text>Šance na setkání</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_cooldown_seconds">
+    <text>Čas mezi pokusy, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_night_multiplier">
+    <text>Noční aktivita</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_blink_enabled">
+    <text>Krátké ztmavnutí</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_behind_enabled">
+    <text>Scéna: za tebou</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_face_enabled">
+    <text>Scéna: tváří v tvář</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_window_enabled">
+    <text>Scéna: pozorovatel</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_last_step_enabled">
+    <text>Scéna: poslední krok</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_behind">
+    <text>Test: za tebou</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_face">
+    <text>Test: tváří v tvář</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_window">
+    <text>Test: pozorovatel</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_last_step">
+    <text>Test: poslední krok (bez poškození)</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_status">
+    <text>Diagnostika lekaček</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_enabled_desc">
+    <text>Povolí krátké vzácné scény, kdy se Černý stalker objeví poblíž hráče.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_night_only_desc">
+    <text>Omezí běžná náhlá zjevení na noc.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_no_combat_desc">
+    <text>Vyhnout se scénám náhlého zjevení, když je hráč v boji.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_chance_desc">
+    <text>Základní šance, když přijde řada na pokus o scénu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_cooldown_seconds_desc">
+    <text>Dlouhé klidné období; v noci kratší.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_night_multiplier_desc">
+    <text>Zvýší pravděpodobnost některých událostí po setmění.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_blink_enabled_desc">
+    <text>Volitelné krátké ztmavnutí při lekačkách zblízka.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_behind_enabled_desc">
+    <text>Zjevení za zády hráče s úlekem, když si ho všimne.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_face_enabled_desc">
+    <text>Krátké zjevení ve směru nedávného otočení kamery.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_window_enabled_desc">
+    <text>Nehybná postava u otvorů ve městě nebo v podzemí. Přesné umístění v okně závisí na geometrii mapy.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_last_step_enabled_desc">
+    <text>Úlek při kontaktu na konci aktivního Honu; bez dalšího poškození.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_behind_desc">
+    <text>Po zavření menu vytvoří siluetu za zády, pokud to graf úrovně dovolí.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_face_desc">
+    <text>Po zavření menu vytvoří krátké zjevení čelem k hráči.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_window_desc">
+    <text>Vzdálená silueta. Přesné umístění v okně není zaručené.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_last_step_desc">
+    <text>Otestuje zvuk a ztmavnutí při blízkém kontaktu bez bojového poškození.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_scare_status_desc">
+    <text>Počty, poslední scénář a důvody, proč se zjevení nepodařilo vytvořit.</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_identity">
+    <text>Černý stalker: identita</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_title">
+    <text>Černý stalker – jediná skutečná silueta</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_intro">
+    <text>Jediný model v černém plášti pro Černého stalkera; vidiny při nízké psí odolnosti zůstávají oddělené. Nepřátelství vyžaduje útok na nenepřátelské NPC a zapnutý Hon. Režim Průvodce varuje, ale bezpečné trasy nevytváří.</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_role">
+    <text>Povaha Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_night_pressure">
+    <text>Noční intenzita atmosféry</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_punish_neutrals">
+    <text>Reagovat na útoky na neutrální NPC</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_guide_mercy">
+    <text>Milost, když je hráč těžce zraněný</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_role_lst_observer">
+    <text>Pozorovatel</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_role_lst_balanced">
+    <text>Černý stalker (vyvážený)</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_role_lst_guide">
+    <text>Průvodce</text>
+  </string>
+  <string id="ui_mcm_ghosts_identity_identity_role_lst_judge">
+    <text>Soudce</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_identity_status">
+    <text>Diagnostika identity Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_brain">
+    <text>Jádro AI Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_title">
+    <text>JÁDRO AI ČERNÉHO STALKERA – paměť a rozhodování</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_intro">
+    <text>Samostatný skriptovaný rozhodovací systém v Lua. Vyhodnocuje hráče a ověřenou agresi a volí pozorování, varování, vedení nebo soud. Žádná externí AI ani hledání cesty v každém snímku. Když je zapnutý, starší pevná role identity se ignoruje. Hon zůstává VYPNUTÝ, pokud ho zvlášť nezapneš.</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_enabled">
+    <text>Zapnout rozhodovacího agenta Černého stalkera v Lua</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_react_aggression">
+    <text>Pamatovat si útoky na nenepřátelské stalkery</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_guide_enabled">
+    <text>Povolit milost ke zraněnému hráči</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_judge_enabled">
+    <text>Povolit, aby se Černý stalker stal soudcem</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_judge_threshold">
+    <text>Práh provinění pro soud</text>
+  </string>
+  <string id="ui_mcm_ghosts_brain_brain_tick_seconds">
+    <text>Interval přemýšlení mozku v Lua (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_brain_status">
+    <text>Zobrazit rozhodnutí mozku a uloženou paměť</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_visual_comfort_mode">
+    <text>Bez vizuálního zkreslení a psí poškození</text>
+  </string>
+  <string id="ui_mcm_ghosts_psychosis_visual_comfort_mode_desc">
+    <text>Šetrný režim vypne rušivé vizuální efekty a psí poškození z tohoto addonu. Ve výchozím stavu zapnutý.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_enabled">
+    <text>Postupně gradující psychologický horor</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_enabled_desc">
+    <text>Setkání se stupňují: neklid, přítomnost, přiblížení a rozuzlení. Nepřebírá kameru, nerozmazává obrazovku ani nezraňuje hráče.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_visions_enabled">
+    <text>Vidiny vyvolané setkáním</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_visions_enabled_desc">
+    <text>Vzácné přízraky se mohou objevit i při plném psí zdraví, nezávisle na psí poškození od Arsziho. Bez rozmazání obrazovky.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_vision_cooldown_seconds">
+    <text>Prodleva vyvolaných vidin, sekundy</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_horror_vision_cooldown_seconds_desc">
+    <text>Globální interval mezi vidinami vyvolanými duchem; oddělený od časovačů halucinací při nízké psí odolnosti.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_horror_status">
+    <text>Test: stav hororu a vrtulníku</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_horror_status_desc">
+    <text>Vypíše do logu X-Ray gradující setkání, zvuky nablízku, vyvolané vidiny a stav filtru cílů vrtulníku.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_horror_cue">
+    <text>Test: šepot Černého stalkera za hráčem</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_horror_cue_desc">
+    <text>Po zavření MCM přehraje za hráčem jeden krátký prostorový šepot. Vyžaduje zapnutý zvukový subsystém.</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_shukhov_model">
+    <text>Ověřit model Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_shukhov_model_desc">
+    <text>Zkontroluje sekci unikátního NPC, OGF, texturu a aktuální vizuál entity. Výsledky se vypíšou do konzole a logu.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_reactive_enabled">
+    <text>Reagovat na průchody a otočení</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_reactive_chance">
+    <text>Pravděpodobnost reakce na událost</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_reactive_cooldown_seconds">
+    <text>Čas mezi reakcemi (sekundy)</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_passage_sensor">
+    <text>Diagnostika senzoru průchodů</text>
+  </string>
+  <string id="ui_mcm_ghosts_testing_test_passage_event">
+    <text>Test reakce na odchod z průchodu</text>
+  </string>
+  <string id="ui_mcm_menu_ghosts_director160">
+    <text>Povaha setkání</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_title">
+    <text>Chování Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_intro">
+    <text>Legenda Zóny dává přednost zdrženlivým záhadám. Noční můra přináší víc pronásledování a nebezpečí. Další mutanty je potřeba zapnout zvlášť.</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mode">
+    <text>Režim chování</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_enabled">
+    <text>Vzácná setkání s mutanty</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_chance">
+    <text>Pravděpodobnost setkání s mutantem</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_cooldown_seconds">
+    <text>Čas mezi událostmi s mutanty (s)</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_mode_legend">
+    <text>Legenda Zóny</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_mode_nightmare">
+    <text>Noční můra</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mode_desc">
+    <text>Vyber vyznění setkání, ne obtížnost celé hry.</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_enabled_desc">
+    <text>V režimu Noční můra může setkání vést k jednomu slabému mutantovi. Bezpečné základny a bojové situace jsou vyloučené.</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_chance_desc">
+    <text>Šance na další událost s mutantem po vhodném setkání. Útok není zaručený.</text>
+  </string>
+  <string id="ui_mcm_ghosts_director160_bs160_mutants_cooldown_seconds_desc">
+    <text>Minimální pauza mezi dalšími setkáními s mutanty.</text>
+  </string>
+  <string id="ui_mcm_ghosts_scares_scares_reactive_enabled_desc">
+    <text>Může spustit scénu po odchodu z budovy nebo po otočení.</text>
+  </string>
+  <string id="ui_mcm_lst_bs_shukhov_legend">
+    <text>Legenda Zóny</text>
+  </string>
+  <string id="ui_mcm_lst_bs_shukhov_nightmare">
+    <text>Noční můra</text>
+  </string>
+  <string id="ui_mcm_ghosts_hunt_bs170_tactical_hunt"><text>Taktické pronásledování a zálohy</text></string>
+  <string id="ui_mcm_ghosts_hunt_bs170_tactical_hunt_desc"><text>Když Černý stalker ztratí výhled, prohledá poslední potvrzenou pozici. Režim Noční můra navíc zapne krátké pokusy o odříznutí cesty a zálohy. Ostatní NPC to neovlivní.</text></string>
+  <string id="ui_mcm_ghosts_hunt_bs180_ghost_ai_enabled"><text>Vlastní AI Černého stalkera (Ghost AI)</text></string>
+  <string id="ui_mcm_ghosts_hunt_bs180_ghost_ai_enabled_desc"><text>Samostatná rozhodnutí o sledování, hledání a zálohách bez běžného chování stalkerů. Vypnutím se vypnou Hony; běžná zjevení zůstanou.</text></string>
+
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_enabled"><text>Lekačka na obrazovce po pronásledování</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_enabled_desc"><text>Po skutečném pronásledování Černý stalker zmizí v dálce a na okamžik se objeví přes obrazovku. Jen v režimu Noční můra.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_adaptive"><text>Adaptivní konec pronásledování</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_adaptive_desc"><text>Po delším skutečném pronásledování může Černý stalker zmizet o něco dřív, až na 14 metrů. Řídí se hlavním přepínačem lekačky na obrazovce.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_distance"><text>Vzdálenost spuštění lekačky</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_distance_desc"><text>Vzdálenost v metrech po potvrzeném pronásledování, než Černý stalker zmizí.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_audio"><text>Zvuk lekačky po pronásledování</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_audio_desc"><text>Krátký původní úlek, oddělený od běžných zvuků přítomnosti.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_overlay"><text>Zjevení kontrolora na obrazovce</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_overlay_desc"><text>Zobrazí průsvitné tmavé zjevení pomocí herního efektu kontrolora. Bez ručního skrývání HUD.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_pp"><text>Další psí postprocess (experimentální)</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_pp_desc"><text>Nativní controller_hit.ppe. Ve výchozím stavu vypnuto, aby nekolidovalo s rendererem.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_enabled"><text>Ztráta psí zdraví při lekačce</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_enabled_desc"><text>Zjevení na obrazovce sníží psí zdraví přes Arsziho systém, nikdy ale pod bezpečné minimum.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_penalty"><text>Ztráta psí zdraví, podíl ukazatele</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_penalty_desc"><text>Velikost ztráty psí zdraví po dokončené lekačce (0–25 %). Bere ohled na psí ochranu.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_visual"><text>Styl vidiny na obrazovce</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_visual_desc"><text>Tři průsvitné ponuré vidiny Černého stalkera upravené z existujících textur modu. Režim kontrolora zachovává osvědčený kompatibilní originál.</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_dynamic"><text>Adaptivní intenzita psí lekačky</text></string>
+  <string id="ui_mcm_ghosts_hunt_hunt_screamer_psi_dynamic_desc"><text>Mírně roste s délkou a vzdáleností skutečného pronásledování; když je psí zdraví už nízko, postih zmírní, s bezpečným minimem.</text></string>
+  <string id="ui_mcm_lst_bs_vision_mixed"><text>Střídavé zjevení</text></string>
+  <string id="ui_mcm_lst_bs_vision_veil"><text>Závoj</text></string>
+  <string id="ui_mcm_lst_bs_vision_hollow"><text>Prázdnota</text></string>
+  <string id="ui_mcm_lst_bs_vision_fracture"><text>Trhlina</text></string>
+  <string id="ui_mcm_lst_bs_vision_controller"><text>Kontrolor (kompatibilita)</text></string>
+  <string id="ui_mcm_ghosts_director160_scene_nightmare_pressure_seconds"><text>Noční můra: čas aktivního pronásledování (sekundy)</text></string>
+  <string id="ui_mcm_ghosts_director160_scene_nightmare_max_seconds"><text>Noční můra: maximální délka setkání (sekundy)</text></string>
+  <string id="ui_mcm_ghosts_director160_scene_legend_pressure_seconds"><text>Legenda: čas plíživého pohybu (sekundy)</text></string>
+  <string id="ui_mcm_ghosts_director160_scene_legend_max_seconds"><text>Legenda: maximální délka setkání (sekundy)</text></string>
+  <string id="ui_mcm_ghosts_director160_scene_face_chance"><text>Šance na útok tváří při skutečném přiblížení</text></string>
+  <string id="ui_mcm_ghosts_scares_scares_reactive_ttl_seconds"><text>Trvání reakce na průchod (sekundy)</text></string>
+</string_table>

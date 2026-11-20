@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<string_table>
+  <string id="ui_mcm_bs_settings_v2_audio_enabled">
+    <text>Zapnout Audio2</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_audio_enabled_desc">
+    <text>Doplňkové 3D zvukové náznaky událostí od ověřených entit Černého stalkera. Nezávislé na nativním zvuku Face2 i na celkové hlasitosti hry.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_audio_intro">
+    <text>Dodané zvuky dechu, šepotu, větru, látky a přesunu. Žádné krátké mluvené repliky. Zvuky pohybu vyžadují skutečný pohyb.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_audio_volume">
+    <text>Hlasitost Audio2</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_audio_volume_desc">
+    <text>Ovládá jen doplňkovou atmosféru a zvukové náznaky Audio2, ne Face2, hudbu ve hře ani celkový zvuk.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_compat_comfort">
+    <text>Šetrné vizuální efekty</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_compat_comfort_desc">
+    <text>Upřednostnit krátké šetrné efekty bez trvalého rozmazání</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_compat_note">
+    <text>Verzi hry a kompatibilitu s G.A.M.M.A. vyber při instalaci ve FOMODu.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_encounters_cooldown_seconds">
+    <text>Interval setkání (s)</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_encounters_cooldown_seconds_desc">
+    <text>Základní pauza po dokončeném setkání, vydělená četností setkání, nejméně 15 sekund. Žádný další skrytý časovač klidu.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_encounters_frequency">
+    <text>Četnost setkání</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_encounters_frequency_desc">
+    <text>0,5 až 3,0. Dělí pauzu mezi dokončenými setkáními; vždy jen jeden skutečný duch. Neobchází navigaci ani běžící scénu.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_cooldown_seconds">
+    <text>Interval útoku tváří (s)</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_cooldown_seconds_desc">
+    <text>Minimální pauza mezi útoky tváří (sekundy)</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_enabled">
+    <text>Útok animovanou tváří</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_enabled_desc">
+    <text>Útok animovanou tváří; jen když to scéna dovolí</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_frequency">
+    <text>Šance na tvář při pozorování zblízka</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_face_frequency_desc">
+    <text>Šance po způsobilém blízkém kontaktu při běžném pozorování. 1,0 = při každém způsobilém kontaktu. Hon a reaktivní scény mají vlastní spouštěče; všechny sdílejí prodlevu a bezpečnostní kontroly HUD.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_enabled">
+    <text>Zapnout Černého stalkera</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_enabled_desc">
+    <text>Zapnout nebo vypnout setkání</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_intro">
+    <text>Legenda: zdrženlivá setkání. Noční můra: intenzivnější scény, bez změny jednotlivých přepínačů.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_mode">
+    <text>Režim setkání</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_mode_desc">
+    <text>Legenda je klidnější; Noční můra povolí způsobilé požadavky na tvář a zvýší váhu losování honu; jednotlivé šance zůstávají samostatné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_mode_lst_legend">
+    <text>Legenda Zóny</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_mode_lst_nightmare">
+    <text>Noční můra</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_reset_help">
+    <text>Po obnovení klikni na Použít. Ostatní mody se nemění.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_reset_recommended">
+    <text>Obnovit doporučené nastavení</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_general_reset_recommended_desc">
+    <text>Připraví doporučené nastavení jen pro tento mod. Uložíš ho kliknutím na Použít.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_hunt_automatic">
+    <text>Automatické hony</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_hunt_automatic_desc">
+    <text>Povolit automatické hony</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_hunt_chance">
+    <text>Šance na hon</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_hunt_chance_desc">
+    <text>Pravděpodobnost při každém způsobilém pokusu o automatický hon. 1,0 = při každém způsobilém pokusu; vyžaduje volné místo a bezpečnou navigaci. Žádný skrytý násobič podle režimu nebo postoje.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_damage">
+    <text>Psí poškození z lekaček s tváří</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_damage_desc">
+    <text>Povolit omezený psí postih z útoku tváří</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_flashes">
+    <text>Intenzita záblesků</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_flashes_desc">
+    <text>Záblesky obrazovky: vypnuté, tlumené, běžné</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_flashes_lst_normal">
+    <text>Běžné</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_flashes_lst_off">
+    <text>Bez záblesků</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_flashes_lst_soft">
+    <text>Jemné</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_strength">
+    <text>Síla psí poškození</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_psy_strength_desc">
+    <text>Maximální požadovaný psí postih; bezpečnostní pravidla platí dál</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_reactive_close">
+    <text>Blízká zjevení za zády</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_reactive_close_desc">
+    <text>Zjevení za zády mimo obraz upřednostňují 22–26 m; body blíž než 18 m se odmítají. Tvář vyžaduje samostatný ověřený blízký kontakt.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_reactive_enabled">
+    <text>Reaktivní zjevení</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_reactive_enabled_desc">
+    <text>Zapnout události při průchodu a ohlédnutí</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2">
+    <text>Černý stalker</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_audio">
+    <text>Zvuk</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_compat">
+    <text>Kompatibilita</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_encounters">
+    <text>Setkání</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_face">
+    <text>Lekačky s tváří</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_general">
+    <text>Obecné</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_hunt">
+    <text>Hony</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_psy">
+    <text>Psí efekty a záblesky</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_reactive">
+    <text>Reaktivní scény</text>
+  </string>
+  <string id="ui_mcm_menu_bs_settings_v2_modules">
+    <text>Moduly</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_hunt">
+    <text>Hon</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_hunt_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_reactive">
+    <text>Reaktivní přítomnost</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_reactive_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_motion">
+    <text>Pohyb</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_motion_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_face">
+    <text>Animovaná tvář</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_face_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_psy">
+    <text>Psí efekty</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_psy_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_audio">
+    <text>Zvukový režisér</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_audio_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_ecology">
+    <text>Éterická ekologie</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_ecology_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_memory">
+    <text>Paměť setkání</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_memory_desc">
+    <text>Vypne toto rozšíření; základní pozorování zůstane dostupné.</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_perf">
+    <text>Výkon a diagnostika</text>
+  </string>
+  <string id="ui_mcm_bs_settings_v2_modules_perf_desc">
+    <text>Vypne volitelnou optimalizaci plánování. Bezpečnostní a omezené diagnostické pojistky zůstávají aktivní.</text>
+  </string>
+<string id="ui_mcm_bs_settings_v2_audio_atmosphere"><text>Atmosféra a dozvuk</text></string><string id="ui_mcm_bs_settings_v2_audio_atmosphere_desc"><text>Tichý vítr při ověřeném pozorování a krátké svištění při způsobilém zmizení. Žádný smyčkový podkres.</text></string><string id="ui_mcm_bs_settings_v2_audio_event_cues"><text>Náznaky výpadů a přesunů</text></string><string id="ui_mcm_bs_settings_v2_audio_event_cues_desc"><text>Šustění látky po skutečném vlastním pohybu; svištění po potvrzeném přesunu mimo kameru. Žádný zvuk při odmítnutém přesunu nebo u stojícího NPC.</text></string><string id="ui_mcm_bs_settings_v2_face_sound"><text>Zvukový akcent Face2</text></string><string id="ui_mcm_bs_settings_v2_face_sound_desc"><text>Jeden dodaný akcent dechu, když se Face2 začne vykreslovat. Nezávislé na hlasitosti Audio2.</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_screen_effects"><text>Krátké psí vidiny na obrazovce</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_screen_effects_desc"><text>Ovládá jen krátké psí sprity; neovlivňuje záblesky, poškození, zvuk ani šance</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_reduced_motion"><text>Omezený pohyb psí spritů</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_reduced_motion_desc"><text>Vypne boční pohyb psí spritů beze změny šancí nebo poškození</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_auto_visions"><text>Automatické psí vidiny</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_auto_visions_desc"><text>Jen když je známá psí hodnota a čas; samostatná šance</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_whisper_enabled"><text>Psí šepot</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_whisper_enabled_desc"><text>Šepot jen pro Psy2; nezávislý na Audio2</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_encounter_frequency"><text>Četnost psí vidin</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_encounter_frequency_desc"><text>Jen automatické vidiny; ne poškození ani Face2</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_reaction_probability"><text>Šance na psí reakci scény</text></string>
+  <string id="ui_mcm_bs_settings_v2_psy_reaction_probability_desc"><text>Jen výslovné reakce scény; ne automatické vidiny ani poškození</text></string>
+
+<string id="ui_mcm_menu_bs_settings_v2_perf"><text>Výkon a logy</text></string><string id="ui_mcm_bs_settings_v2_perf_intro"><text>Optimalizace upravuje jen volitelné kontroly. Bezpečnost, imunita a úklid se nikdy nevypínají.</text></string><string id="ui_mcm_bs_settings_v2_perf_optimize"><text>Adaptivní plánování</text></string><string id="ui_mcm_bs_settings_v2_perf_optimize_desc"><text>Vypnutím se obnoví neomezované volitelné kontroly Černého stalkera. Ostatní mody zůstanou beze změny.</text></string><string id="ui_mcm_bs_settings_v2_perf_debug_log"><text>Podrobné ladění a časování</text></string><string id="ui_mcm_bs_settings_v2_perf_debug_log_desc"><text>Omezené diagnostické události a měřené vzorky; první selhání a koncové události se uchovávají ve zhuštěných logech.</text></string><string id="ui_mcm_bs_settings_v2_perf_sample_rate"><text>Interval měřených vzorků</text></string><string id="ui_mcm_bs_settings_v2_perf_sample_rate_desc"><text>1 = každé způsobilé volání; 8 = každé osmé; ovládá režii měření, ne četnost AI.</text></string><string id="ui_mcm_bs_settings_v2_perf_notes"><text>Metriky výkonu vyžadují měřené vzorky; počty volání nejsou čas CPU. Žádný univerzální cíl FPS se neslibuje.</text></string><string id="ui_mcm_bs_settings_v2_hunt_cooldown_seconds"><text>Prodleva honu (sekundy)</text></string>
+<string id="ui_mcm_bs_settings_v2_hunt_cooldown_seconds_desc"><text>Minimální odstup mezi úspěšnými začátky honu; i 100% šance vyžaduje volné místo pro NPC a bezpečnou navigaci.</text></string>
+<string id="ui_mcm_lst_bs_settings_v2_mode_legend"><text>Legenda Zóny</text></string><string id="ui_mcm_lst_bs_settings_v2_mode_nightmare"><text>Noční můra</text></string><string id="ui_mcm_lst_bs_settings_v2_flashes_normal"><text>Běžné</text></string><string id="ui_mcm_lst_bs_settings_v2_flashes_off"><text>Bez záblesků</text></string><string id="ui_mcm_lst_bs_settings_v2_flashes_soft"><text>Jemné</text></string></string_table>
