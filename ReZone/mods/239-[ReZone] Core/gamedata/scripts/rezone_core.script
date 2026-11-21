@@ -8,16 +8,25 @@ DEBUG = false
 
 local debug_known = false
 
+local function fmt_msg(fmt, ...)
+	if select("#", ...) == 0 then return fmt end
+	local ok, s = pcall(string.format, fmt, ...)
+	if ok then return s end
+	local a = { ... }
+	for i = 1, #a do a[i] = tostring(a[i]) end
+	return fmt .. " " .. table.concat(a, ", ")
+end
+
 function log(fmt, ...)
-	if debug_on() then printf("[ReZone] " .. fmt, ...) end
+	if debug_on() then printf("%s", "[ReZone] " .. fmt_msg(fmt, ...)) end
 end
 
 function warn(fmt, ...)
-	if debug_on() then printf("! [ReZone] " .. fmt, ...) end
+	if debug_on() then printf("%s", "! [ReZone] " .. fmt_msg(fmt, ...)) end
 end
 
 function dbg(fmt, ...)
-	if debug_on() then printf(fmt, ...) end
+	if debug_on() then printf("%s", fmt_msg(fmt, ...)) end
 end
 
 local intercepts_ref = false

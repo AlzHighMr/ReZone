@@ -1,0 +1,91 @@
+local ALERT_R2 = 60 * 60
+local CHECK_MS = 1000
+local next_check = {}
+
+local function online(id)
+	local st = db.storage[id]
+	local o = st and st.object
+	if o and o:alive() then return o end
+end
+
+local function keeps_ignoring(npc)
+	local st = db.storage[npc:id()]
+	return st and st.overrides and st.overrides.combat_ignore_keep_when_attacked == true
+end
+
+local function is_companion(npc)
+	return npc:has_info("npcx_is_companion")
+end
+
+local function alert_squad(npc, enemy)
+	local squad = get_object_squad(npc)
+	if not squad then return end
+	local id, p = npc:id(), npc:position()
+	for k in squad:squad_members() do
+		if k.id ~= id then
+			local m = online(k.id)
+			if m and not m:best_enemy() and m:position():distance_to_sqr(p) <= ALERT_R2 then
+				m:make_object_visible_somewhen(enemy)
+			end
+		end
+	end
+end
+
+local function after_actor_hit(id)
+	local npc = online(id)
+	local actor = db.actor
+	if not (npc and actor and actor:alive()) then return end
+	if npc:relation(actor) ~= game_object.enemy then return end
+	npc:make_object_visible_somewhen(actor)
+	if is_companion(npc) or keeps_ignoring(npc) then return end
+	local squad = get_object_squad(npc)
+	if not squad then return end
+	for k in squad:squad_members() do
+		if k.id ~= id then
+			local m = online(k.id)
+			if m and not is_companion(m) and m:relation(actor) ~= game_object.enemy then
+				m:force_set_goodwill(-1000, actor)
+			end
+		end
+	end
+	alert_squad(npc, actor)
+end
+
+local function npc_on_hit_callback(npc, amount, dir, who, bone)
+	if bone == "from_death_callback" then return end
+	if not (who and amount and amount > 0 and npc and npc:alive()) then return end
+	local wid = who:id()
+	if wid == AC_ID then
+		local id = npc:id()
+		CreateTimeEvent("rz_npc_alert", id, 0, function()
+			after_actor_hit(id)
+			return true
+		end)
+	elseif IsStalker(who) or IsMonster(who) then
+		if not npc:best_enemy() then
+			npc:make_object_visible_somewhen(who)
+		end
+		alert_squad(npc, who)
+	end
+end
+
+local function npc_on_update(npc)
+	local id = npc:id()
+	local t = time_global()
+	if t < (next_check[id] or 0) then return end
+	next_check[id] = t + CHECK_MS
+	local e = npc:best_enemy()
+	if e and e:alive() then
+		alert_squad(npc, e)
+	end
+end
+
+local function npc_on_net_destroy(npc)
+	next_check[npc:id()] = nil
+end
+
+function on_game_start()
+	RegisterScriptCallback("npc_on_hit_callback", npc_on_hit_callback)
+	RegisterScriptCallback("npc_on_update", npc_on_update)
+	RegisterScriptCallback("npc_on_net_destroy", npc_on_net_destroy)
+end

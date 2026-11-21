@@ -1,0 +1,96 @@
+local function part_of_day()
+	local h = level.get_time_hours()
+	if h >= 5 and h < 9 then return "morning" end
+	if h >= 9 and h < 18 then return "day" end
+	if h >= 18 and h < 22 then return "evening" end
+	return "night"
+end
+
+local function patch()
+	local sa = sound_ambient
+	if not (sa and sa.reset_settings) or sa.__rz_ambient_fix then return end
+	sa.__rz_ambient_fix = true
+	local orig = sa.reset_settings
+	local function dbg(fmt, ...)
+		if rezone_core and rezone_core.debug_on() then printf("[ReZone] ambient: " .. fmt, ...) end
+	end
+	sa.reset_settings = function(level_name, ambient)
+		if orig(level_name, ambient) then
+			dbg("%s / %s ok", tostring(level_name), tostring(ambient))
+			return true
+		end
+		dbg("%s / %s has no sound channels", tostring(level_name), tostring(ambient))
+		if not level_name then return false end
+		local alt = part_of_day()
+		if alt ~= ambient and orig(level_name, alt) then
+			dbg("%s / using %s instead", level_name, alt)
+			return true
+		end
+		if alt ~= "day" and ambient ~= "day" and orig(level_name, "day") then
+			dbg("%s / using day instead", level_name)
+			return true
+		end
+		dbg("%s / ambient sounds off", level_name)
+		return false
+	end
+end
+
+local wrapper
+local calls = 0
+
+local function hook_dbg()
+	local sa = sound_ambient
+	if not sa or sa.__rz_ambient_dbg then return end
+	sa.__rz_ambient_dbg = true
+	local orig_upd = sa.update_ambient
+	local last_report = 0
+	wrapper = function(...)
+		calls = calls + 1
+		local ok, res = pcall(orig_upd, ...)
+		local on = rezone_core and rezone_core.debug_on()
+		if not ok then
+			if on then printf("! [ReZone] sound_ambient | update error: %s", tostring(res)) end
+			return false
+		end
+		if on then
+			local t = time_global()
+			if t - last_report > 15000 then
+				last_report = t
+				printf("[ReZone] sound_ambient | timer alive, %s ticks", tostring(calls))
+			end
+			if res == true then printf("! [ReZone] sound_ambient | timer stopped (no sound channels for this level/ambient)") end
+		end
+		return res
+	end
+	sa.update_ambient = wrapper
+	sa.print_dbg = function(fmt, ...)
+		if rezone_core and rezone_core.debug_on() then printf("[ReZone] sound_ambient | " .. fmt, ...) end
+	end
+end
+
+local function watchdog()
+	if calls == 0 and wrapper then
+		local sa = sound_ambient
+		if rezone_core and rezone_core.debug_on() then
+			printf("! [ReZone] ambient: timer never ran, update_ambient replaced by another mod = %s, restarting", tostring(sa and sa.update_ambient ~= wrapper))
+		end
+		CreateTimeEvent("sound_channels", "update_ambient", 1, wrapper)
+	end
+	return true
+end
+
+local function actor_on_first_update()
+	CreateTimeEvent("rz_ambient_fix", "watchdog", 10, watchdog)
+	if not (rezone_core and rezone_core.debug_on()) then return end
+	local ok, v = pcall(ui_options.get, "sound/environment/ambient_volume")
+	printf("[ReZone] ambient: ambient_volume = %s, wind = %s", tostring(ok and v), tostring(ui_options.get("sound/environment/wind_sound")))
+end
+
+patch()
+hook_dbg()
+
+function on_game_start()
+	patch()
+	hook_dbg()
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+end
