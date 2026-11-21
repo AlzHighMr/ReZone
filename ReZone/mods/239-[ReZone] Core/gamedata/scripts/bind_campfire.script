@@ -145,12 +145,34 @@ local function on_before_save_input(flags, typ, text)
 	end
 end
 
+local near = {}
+local near_pos
+local near_time = 0
+local near_dirty = true
+
+local function refresh_near(pos)
+	empty_table(near)
+	for id,binder in pairs(campfires_all) do
+		if (binder and binder.campfire) then
+			if (id == tutorial_ran) or (pos:distance_to_sqr(binder.object:position()) <= 625) then
+				near[#near + 1] = id
+			end
+		end
+	end
+	near_pos = vector():set(pos)
+	near_time = time_global()
+	near_dirty = false
+end
+
 local function actor_on_update()
 	if not (db.actor) then
 		return
 	end
 
 	local pos = db.actor:position()
+	if near_dirty or (time_global() - near_time > 1000) or (pos:distance_to_sqr(near_pos) > 100) then
+		refresh_near(pos)
+	end
 	local obj = level.get_target_obj()
 	if obj and (pos:distance_to_sqr(obj:position()) <= dist_cf + 2) then
 		if (tutorial_ran > 0) then
@@ -162,7 +184,9 @@ local function actor_on_update()
 		return
 	end
 
-	for id,binder in pairs(campfires_all) do
+	for i = 1, #near do
+		local id = near[i]
+		local binder = campfires_all[id]
 		if (binder and binder.campfire) then
 			if (pos:distance_to_sqr(binder.object:position()) <= dist_cf) then
 				if (not game.has_active_tutorial()) then
@@ -222,6 +246,7 @@ function campfire_binder:net_spawn(se_abstract)
 		return false
 	end
     campfires_all[self.object:id()] = self
+	near_dirty = true
 
 	local id = self.object:id()
 	local m_data = alife_storage_manager.get_state()
@@ -247,6 +272,8 @@ function campfire_binder:net_spawn(se_abstract)
 end
 
 function campfire_binder:net_destroy(se_abstract)
+	campfires_all[self.object:id()] = nil
+	near_dirty = true
 
 	local smart_name = string.gsub(self.object:name(), "_campfire_%d*", "")
 	if SIMBOARD.smarts_by_names[smart_name] then

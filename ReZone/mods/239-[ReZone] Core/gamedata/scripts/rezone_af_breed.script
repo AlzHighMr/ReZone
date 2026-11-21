@@ -392,6 +392,7 @@ local function actor_on_update()
 end
 
 local GREET = { esc_stalker_breeder = "characters_voice\\rezone\\Semjon_meet" }
+local VISUAL = { esc_stalker_breeder = "actors\\rezone\\rz_semjon" }
 local greet_next, greet_armed = 0, {}
 local function greet_update()
 	local t = time_global()
@@ -402,6 +403,10 @@ local function greet_update()
 		local id = get_story_object_id(sid)
 		local npc = id and level.object_by_id(id)
 		if npc and npc:alive() then
+			local vis = VISUAL[sid]
+			if vis and npc.set_visual_name and not string.find(string.lower(npc:get_visual_name() or ""), "rz_semjon", 1, true) then
+				npc:set_visual_name(vis)
+			end
 			local d = npc:position():distance_to_sqr(apos)
 			if d > 100 then
 				greet_armed[sid] = true
