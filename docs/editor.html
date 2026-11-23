@@ -1181,7 +1181,8 @@ function clPage(md) {
   var SRC = { obj: null, raw: null };
   var SRC_FIELDS = [
     { k: 'drive_main', label: 'Modpack (Anomaly + ReZone)', type: 'one', tip: 'Hlavní složka. Podsložka = jeden archiv z dílů (.7z.001…).' },
-    { k: 'drive_patch', label: 'Patche', type: 'list', tip: 'První = hlavní složka patchů, další = zálohy.' },
+    { k: 'drive_patch', label: 'Patche', type: 'list', tip: 'Archiv pojmenovaný jako mod přepíše jen soubory, které obsahuje – ostatní soubory modu zůstanou. První = hlavní složka patchů, další = zálohy.' },
+    { k: 'replace_mods', label: 'Náhrady modů', type: 'list', tip: 'Archiv pojmenovaný přesně jako složka modu (např. 213-[Priler] Looting takes time REDUX.7z) u hráčů celý mod smaže a nainstaluje znovu, takže nezůstanou staré soubory. Nová verze = nový archiv se stejným názvem. Hráč, který mod nemá, ho dostane taky.' },
     { k: 'addons', label: 'Addony', type: 'list' },
     { k: 'npc', label: 'NPC Models', type: 'list' },
     { k: 'weapons', label: 'Zbraně', type: 'list' },
