@@ -41,7 +41,7 @@
 "Čísla jsou body pro každou uvedenou část (u „ruce a nohy“ pro každou končetinu). Přesné účinky ukazuje popisek léku v inventáři.": "Numbers are points for each listed part (for “arms and legs” per limb). The exact effects are shown in the medicine's description in the inventory.",
 "Panáček na obrazovceVzhled (Default, EFT, Liz, Text) a pozici změníš v MCM › Body Health System. Vanilla ukazatele zdraví, výdrže a psí BHS schovává.": "<b class=\"t\">The figure on screen<\/b>Change its look (Default, EFT, Liz, Text) and position in <span class=\"path\">MCM › Body Health System<\/span>. BHS hides the vanilla health, stamina and psi bars.",
 "S.T.A.L.K.E.R. Anomaly · modpackRe:ZonePříručka · Databáze · Výroba": "<span class=\"ml-pre\">S.T.A.L.K.E.R. Anomaly · modpack<\/span><span class=\"ml-name\">Re<i>:<\/i>Zone<\/span><span class=\"ml-sub\">Handbook · Database · Crafting<\/span>",
-"1.4.3 · stáhnout": "<a class=\"mast-dl\" download=\"\" href=\"https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe\">1.4.3 · download<\/a>",
+"1.5.0 · stáhnout": "<a class=\"mast-dl\" download=\"\" href=\"https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe\">1.5.0 · download<\/a>",
 "Jazyk": "Language",
 "čeština": "English",
 "Informace Instalace Příručka Databáze Testeři": "<a data-view=\"info\" href=\"#rezone\">About<\/a> <a data-view=\"install\" href=\"#start\">Installation<\/a> <a data-view=\"guide\" href=\"#ovladani\">Handbook<\/a> <a data-view=\"db\" href=\"#db\">Database<\/a> <a class=\"ab-ext\" href=\"testy.html\" title=\"Quest testing, changelog and translation\">Testers<\/a>",
@@ -755,10 +755,12 @@
 "Launcher chce stáhnout Anomaly ručně": "The launcher wants me to download Anomaly manually",
 "ModDB občas nedovolí automatické stažení. Stáhni archiv Anomaly ze stránky, kterou launcher otevře, do složky Stažené soubory a klikni na DOKONČIT INSTALACI.": "ModDB sometimes doesn't allow automatic downloads. Download the Anomaly archive from the page the launcher opens into your Downloads folder and click <span class=\"btn\">FINISH INSTALLATION<\/span>.",
 "Stahování se zastavilo nebo selhalo": "The download stopped or failed",
-"Zkus to znovu – už stažené díly se znovu nestahují. Google Drive občas omezí počet stažení; pak chvíli počkej.": "Try again – parts already downloaded aren't downloaded again. Google Drive sometimes limits the number of downloads; then wait a while.",
+"Zkus to znovu – už stažené díly se znovu nestahují. Když Google Drive launcheru nedovolí stahovat (limit), launcher otevře okno s odkazy: soubory stáhni v prohlížeči do Stažených souborů a instalace pokračuje sama. Poškozený nebo neúplný díl launcher pozná, smaže a stáhne znovu.": "Try again – parts already downloaded aren't downloaded again. If Google Drive won't let the launcher download (limit), the launcher opens a window with links: download the files in your browser into the Downloads folder and the installation continues on its own. The launcher recognises a damaged or incomplete part, deletes it and downloads it again.",
 "Launcher píše, že je spuštěný Mod Organizer": "The launcher says Mod Organizer is running",
 "Zavři Mod Organizer 2 i hru a akci zopakuj.": "Close Mod Organizer 2 and the game and repeat the action.",
 "Antivirus hlásí launcher": "Antivirus flags the launcher",
+"Windows hlásí „Neoprávněné změny zablokovány“": "Windows reports “Unauthorized changes blocked”",
+"To je ochrana před ransomwarem (Řízený přístup ke složkám), ne virus. Zablokovaný program nemůže zapisovat do chráněných složek, třeba do Dokumentů nebo na Plochu. V Zabezpečení Windows › Ochrana před viry a hrozbami › Ochrana před ransomwarem › Povolit aplikaci přes Řízený přístup ke složkám přidej launcher, Mod Organizer a hru. Modpack nedávej do Dokumentů ani na Plochu.": "That's ransomware protection (Controlled folder access), not a virus. A blocked program can't write to protected folders, such as Documents or the Desktop. In <b>Windows Security › Virus &amp; threat protection › Ransomware protection › Allow an app through Controlled folder access<\/b>, add the launcher, Mod Organizer and the game. Don't put the modpack in Documents or on the Desktop.",
 "Falešný poplach – launcher nemá placený podpisový certifikát, stahuje a rozbaluje soubory a sám se aktualizuje, což některé antiviry podezírají. Přidej ho do výjimek a stahuj ho jen z tohoto webu.": "False alarm – the launcher has no paid signing certificate, it downloads and extracts files and updates itself, which some antiviruses find suspicious. Add it to exceptions and only download it from this website.",
 "Přidal jsem mod ručně a nevidím ho": "I added a mod manually and don't see it",
 "Launcher ho najde sám, stačí chvilku počkat nebo přepnout stránku. Objeví se pod Custom addons HERE!": "The launcher finds it by itself, just wait a moment or switch pages. It appears under <i>Custom addons HERE!<\/i>",
@@ -767,7 +769,7 @@
 "COOP hlásí VERSION MISMATCH": "COOP says VERSION MISMATCH",
 "Nemáte stejnou sestavu – postupuj podle Krok 1: stejná sestava u všech.": "You don't have the same setup – follow <a href=\"#coop\">Step 1: the same setup for everyone<\/a>.",
 "Pořád nic?Ozvi se na Discordu Re:Zone (ikona vlevo dole v launcheru). Přidej popis problému, screenshot a log.": "<b class=\"t\">Still nothing?<\/b>Get in touch on the Re:Zone Discord (icon at the bottom left of the launcher). Add a description of the problem, a screenshot and the log.",
-"Re:Zone 2.6.18 · Re:Zone Launcher 1.4.3 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.4.3 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files."
+"Re:Zone 2.6.18 · Re:Zone Launcher 1.5.0 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.5.0 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files."
 };
   var A = {
 "Databáze": "Database",
