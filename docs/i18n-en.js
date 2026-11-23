@@ -41,7 +41,7 @@
 "Čísla jsou body pro každou uvedenou část (u „ruce a nohy“ pro každou končetinu). Přesné účinky ukazuje popisek léku v inventáři.": "Numbers are points for each listed part (for “arms and legs” per limb). The exact effects are shown in the medicine's description in the inventory.",
 "Panáček na obrazovceVzhled (Default, EFT, Liz, Text) a pozici změníš v MCM › Body Health System. Vanilla ukazatele zdraví, výdrže a psí BHS schovává.": "<b class=\"t\">The figure on screen<\/b>Change its look (Default, EFT, Liz, Text) and position in <span class=\"path\">MCM › Body Health System<\/span>. BHS hides the vanilla health, stamina and psi bars.",
 "S.T.A.L.K.E.R. Anomaly · modpackRe:ZonePříručka · Databáze · Výroba": "<span class=\"ml-pre\">S.T.A.L.K.E.R. Anomaly · modpack<\/span><span class=\"ml-name\">Re<i>:<\/i>Zone<\/span><span class=\"ml-sub\">Handbook · Database · Crafting<\/span>",
-"1.6.0 · stáhnout": "<a class=\"mast-dl\" download=\"\" href=\"https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe\">1.6.0 · download<\/a>",
+"1.6.1 · stáhnout": "<a class=\"mast-dl\" download=\"\" href=\"https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe\">1.6.1 · download<\/a>",
 "Jazyk": "Language",
 "čeština": "English",
 "Informace Instalace Příručka Databáze Testeři": "<a data-view=\"info\" href=\"#rezone\">About<\/a> <a data-view=\"install\" href=\"#start\">Installation<\/a> <a data-view=\"guide\" href=\"#ovladani\">Handbook<\/a> <a data-view=\"db\" href=\"#db\">Database<\/a> <a class=\"ab-ext\" href=\"testy.html\" title=\"Quest testing, changelog and translation\">Testers<\/a>",
@@ -769,7 +769,7 @@
 "COOP hlásí VERSION MISMATCH": "COOP says VERSION MISMATCH",
 "Nemáte stejnou sestavu – postupuj podle Krok 1: stejná sestava u všech.": "You don't have the same setup – follow <a href=\"#coop\">Step 1: the same setup for everyone<\/a>.",
 "Pořád nic?Ozvi se na Discordu Re:Zone (ikona vlevo dole v launcheru). Přidej popis problému, screenshot a log.": "<b class=\"t\">Still nothing?<\/b>Get in touch on the Re:Zone Discord (icon at the bottom left of the launcher). Add a description of the problem, a screenshot and the log.",
-"Re:Zone 2.6.18 · Re:Zone Launcher 1.6.0 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.0 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files."
+"Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files."
 };
   var A = {
 "Databáze": "Database",
