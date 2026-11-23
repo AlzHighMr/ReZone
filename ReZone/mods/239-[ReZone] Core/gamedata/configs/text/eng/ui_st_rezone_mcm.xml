@@ -1827,4 +1827,37 @@
 <string id="ui_mcm_rz_hunt_experimental">
 		<text>EXPERIMENTAL - may not work reliably yet. Off by default.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_wpnwear">
+		<text>Weapon wear</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_title">
+		<text>Weapon and parts wear</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_info">
+		<text>How fast your weapons and their parts wear out when shooting. 1 = unchanged, 0.5 = twice as slow, 0 = none, 2 = twice as fast. Applies to the player's weapons only.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled">
+		<text>Enable</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled_desc">
+		<text>Off = weapons and parts wear the same as without ReZone.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn">
+		<text>Weapon condition</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn_desc">
+		<text>How much weapon condition drops with each shot (1 = unchanged, 0 = condition does not drop when shooting).</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts">
+		<text>Parts (WPO)</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts_desc">
+		<text>How often Weapon Parts Overhaul parts get damaged when shooting - mechanism, trigger and barrel (1 = unchanged, 0 = parts are not damaged by shooting). Less worn parts also mean fewer jams.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_nowpo">
+		<text>Weapon Parts Overhaul is not installed - the Parts slider has no effect.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_note">
+		<text>Changes apply immediately, even in an ongoing game. Repairs, repair kits and jam chance are not changed - only the wear rate.</text>
+	</string>
 </string_table>

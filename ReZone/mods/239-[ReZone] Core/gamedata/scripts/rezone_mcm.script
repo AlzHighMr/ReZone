@@ -1,4 +1,4 @@
-VERSION = "2.6.27"
+VERSION = "2.6.28"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -6,7 +6,7 @@ TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ
 PAGE_TAB = {
 	rz_master = TAB_MAIN, rz_links = TAB_MAIN,
 	rz_trade = TAB_ECO, rz_prices = TAB_ECO, rz_loot = TAB_ECO, rz_craft = TAB_ECO,
-	rz_ball = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
+	rz_ball = TAB_COMBAT, rz_wpnwear = TAB_COMBAT, rz_pdmg = TAB_COMBAT, rz_muthp = TAB_COMBAT,
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT,
 	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_hunt = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
@@ -161,6 +161,22 @@ local function gp_ballistics()
 		end
 	end
 	return page("rz_ball", out)
+end
+
+local function gp_wpnwear()
+	local W = rezone_mod_wpnwear
+	return page("rz_wpnwear", {
+		slide("ui_mcm_rz_wpnwear_title"),
+		desc("d", "ui_mcm_rz_wpnwear_info"),
+		line("l1"),
+		check("enabled", true, "rz_wpnwear_enabled"),
+		track("wpn", 1, 0, 3, 0.05, "rz_wpnwear_wpn"),
+		track("parts", 1, 0, 3, 0.05, "rz_wpnwear_parts"),
+		{ id = "nowpo", type = "desc", text = "ui_mcm_rz_wpnwear_nowpo", clr = CLR_EXP,
+		  precondition = { function() return not (W and W.wpo_present()) end } },
+		line("l2"),
+		desc("n", "ui_mcm_rz_wpnwear_note", CLR_NOTE),
+	})
 end
 
 local function gp_trade()
@@ -676,6 +692,7 @@ function build_tree()
 	add(eco, true, gp_craft)
 
 	add(combat, true, gp_ballistics)
+	add(combat, rezone_mod_wpnwear, gp_wpnwear)
 	add(combat, true, hp_mutants)
 	add(combat, true, hp_damage)
 	add(combat, true, hp_mutdmg)

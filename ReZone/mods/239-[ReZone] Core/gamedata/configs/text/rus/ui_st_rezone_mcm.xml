@@ -1827,4 +1827,37 @@
 <string id="ui_mcm_rz_hunt_experimental">
 		<text>EXPERIMENTAL - may not work reliably yet. Off by default.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_wpnwear">
+		<text>Износ оружия</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_title">
+		<text>Износ оружия и деталей</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_info">
+		<text>Как быстро твоё оружие и его детали изнашиваются при стрельбе. 1 = без изменений, 0.5 = вдвое медленнее, 0 = не изнашиваются, 2 = вдвое быстрее. Только для оружия игрока.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled">
+		<text>Включить</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled_desc">
+		<text>Выключено = оружие и детали изнашиваются как без ReZone.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn">
+		<text>Состояние оружия</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn_desc">
+		<text>Насколько падает состояние оружия при каждом выстреле (1 = без изменений, 0 = состояние при стрельбе не падает).</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts">
+		<text>Детали (WPO)</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts_desc">
+		<text>Как часто при стрельбе повреждаются детали Weapon Parts Overhaul - механизм, спуск и ствол (1 = без изменений, 0 = детали от стрельбы не повреждаются). Меньший износ деталей - меньше заклиниваний.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_nowpo">
+		<text>Weapon Parts Overhaul не установлен - ползунок Детали не действует.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_note">
+		<text>Изменения действуют сразу, даже в текущей игре. Ремонт, ремкомплекты и шанс заклинивания не меняются - только скорость износа.</text>
+	</string>
 </string_table>

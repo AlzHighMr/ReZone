@@ -1827,4 +1827,37 @@
 <string id="ui_mcm_rz_hunt_experimental">
 		<text>EXPERIMENTÁLNÍ - zatím nemusí fungovat spolehlivì. Ve vıchozím stavu vypnuto.</text>
 	</string>
+	<string id="ui_mcm_menu_rz_wpnwear">
+		<text>Opotøebení zbraní</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_title">
+		<text>Opotøebení zbraní a souèástek</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_info">
+		<text>Jak rychle se tvoje zbranì a jejich souèástky opotøebovávají pøi støelbì. 1 = beze zmìny, 0.5 = dvakrát pomaleji, 0 = vùbec, 2 = dvakrát rychleji. Platí jen pro zbranì hráèe.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled">
+		<text>Zapnout</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_enabled_desc">
+		<text>Vypnuto = zbranì i souèástky se opotøebovávají stejnì jako bez ReZone.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn">
+		<text>Stav zbranì</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_wpn_desc">
+		<text>O kolik klesne stav zbranì pøi kadém vıstøelu (1 = beze zmìny, 0 = stav pøi støelbì neklesá).</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts">
+		<text>Souèástky (WPO)</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_parts_desc">
+		<text>Jak èasto se pøi støelbì poškozují souèástky z Weapon Parts Overhaul – mechanismus, spouš i hlaveò (1 = beze zmìny, 0 = souèástky se støelbou nepoškozují). Ménì opotøebené souèástky znamenají i ménì zaseknutí.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_nowpo">
+		<text>Weapon Parts Overhaul není nainstalovanı – posuvník Souèástky nemá vliv.</text>
+	</string>
+	<string id="ui_mcm_rz_wpnwear_note">
+		<text>Zmìna platí hned, i v rozehrané høe. Opravy, sady na opravu a šance na zaseknutí se nemìní – jen rychlost opotøebení.</text>
+	</string>
 </string_table>

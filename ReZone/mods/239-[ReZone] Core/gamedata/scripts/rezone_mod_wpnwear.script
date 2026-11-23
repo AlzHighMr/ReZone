@@ -1,0 +1,96 @@
+local core = rezone_core
+local PAGE = rezone_mcm.path("rz_wpnwear")
+
+local cfg = { enabled = true, wpn = 1, parts = 1 }
+local patched = false
+local before_id, before_cond = nil, nil
+
+function wpo_present()
+	return getFS():exist("$game_scripts$", "arti_jamming.script") and true or false
+end
+
+local function wpn_mult()
+	return cfg.enabled and cfg.wpn or 1
+end
+
+local function parts_mult()
+	return cfg.enabled and cfg.parts or 1
+end
+
+local function patch_wpo()
+	if patched or not wpo_present() then return end
+	local aj = arti_jamming
+	if not (aj and type(aj.calculate_damage_chance) == "function" and type(aj.calculate_barrel_wear) == "function") then return end
+	local orig_damage = aj.calculate_damage_chance
+	local orig_barrel = aj.calculate_barrel_wear
+	aj.calculate_damage_chance = function(...)
+		return (tonumber(orig_damage(...)) or 0) * parts_mult()
+	end
+	aj.calculate_barrel_wear = function(...)
+		return (tonumber(orig_barrel(...)) or 0) * parts_mult()
+	end
+	patched = true
+	core.log("opotrebeni zbrani: napojeno na Weapon Parts Overhaul")
+end
+
+local function shot_dec(wpn)
+	local d = tonumber(SYS_GetParam(2, wpn:section(), "condition_shot_dec")) or 0
+	local ok, ups = pcall(utils_item.get_upgrades_installed, wpn)
+	if ok and type(ups) == "table" then
+		for _, up in pairs(ups) do
+			local sec = ini_sys:r_string_ex(up, "section")
+			local v = sec and ini_sys:r_string_ex(sec, "condition_shot_dec")
+			if v then
+				local op, num = string.sub(v, 1, 1), tonumber(string.sub(v, 2))
+				if num then d = (op == "-") and d - num or d + num end
+			end
+		end
+	end
+	local ok2, ammo = pcall(utils_item.get_ammo, nil, wpn:id())
+	local sec = ok2 and type(ammo) == "table" and ammo[wpn:get_ammo_type() + 1]
+	local impair = sec and tonumber(SYS_GetParam(2, sec, "impair")) or 1
+	return math.max(0, d * impair)
+end
+
+local function on_before_fire()
+	before_id = nil
+	if math.abs(wpn_mult() - 1) < 0.001 then return end
+	local wpn = db.actor and db.actor:active_item()
+	if wpn and IsWeapon(wpn) and not wpn:weapon_in_grenade_mode() then
+		before_id, before_cond = wpn:id(), wpn:condition()
+	end
+end
+
+local function on_fired(obj, wpn)
+	if not (obj and obj:id() == AC_ID and wpn and before_id and wpn:id() == before_id) then return end
+	before_id = nil
+	local cur = wpn:condition()
+	local lost = before_cond - cur
+	if lost > 0.2 then return end
+	local new
+	if lost > 0 then
+		new = math.min(before_cond, cur + lost * (1 - wpn_mult()))
+	else
+		local d = shot_dec(wpn)
+		if d <= 0 then return end
+		new = cur + d * (1 - wpn_mult())
+	end
+	wpn:set_condition(math.max(0, math.min(1, new)))
+end
+
+function load()
+	local g = core.page(PAGE)
+	cfg.enabled = g("enabled") ~= false
+	cfg.wpn = math.max(0, tonumber(g("wpn")) or 1)
+	cfg.parts = math.max(0, tonumber(g("parts")) or 1)
+	local want = cfg.enabled and math.abs(cfg.wpn - 1) >= 0.001
+	core.toggle_cb("actor_on_weapon_before_fire", on_before_fire, want)
+	core.toggle_cb("actor_on_weapon_fired", on_fired, want)
+	patch_wpo()
+	core.log("opotrebeni zbrani: zbran x%.2f, soucastky x%.2f%s", wpn_mult(), parts_mult(), patched and "" or " (bez WPO)")
+end
+
+function on_game_start()
+	core.on_change(load)
+	load()
+end
