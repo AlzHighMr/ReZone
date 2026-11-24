@@ -40,7 +40,6 @@
 "ruce a nohy 1": "arms and legs 1",
 "Čísla jsou body pro každou uvedenou část (u „ruce a nohy“ pro každou končetinu). Přesné účinky ukazuje popisek léku v inventáři.": "Numbers are points for each listed part (for “arms and legs” per limb). The exact effects are shown in the medicine's description in the inventory.",
 "Panáček na obrazovceVzhled (Default, EFT, Liz, Text) a pozici změníš v MCM › Body Health System. Vanilla ukazatele zdraví, výdrže a psí BHS schovává.": "<b class=\"t\">The figure on screen<\/b>Change its look (Default, EFT, Liz, Text) and position in <span class=\"path\">MCM › Body Health System<\/span>. BHS hides the vanilla health, stamina and psi bars.",
-"S.T.A.L.K.E.R. Anomaly · modpackRe:ZonePříručka · Databáze · Výroba": "<span class=\"ml-pre\">S.T.A.L.K.E.R. Anomaly · modpack<\/span><span class=\"ml-name\">Re<i>:<\/i>Zone<\/span><span class=\"ml-sub\">Handbook · Database · Crafting<\/span>",
 "1.6.1 · stáhnout": "<a class=\"mast-dl\" download=\"\" href=\"https://github.com/AlzHighMr/ReZone/raw/main/ReZone/AnomalyLauncher.exe\">1.6.1 · download<\/a>",
 "Jazyk": "Language",
 "čeština": "English",
@@ -84,7 +83,6 @@
 "Pomoc": "Help",
 "33Časté otázky a problémy": "<a href=\"#faq\"><span>33<\/span>FAQ and problems<\/a>",
 "Příručka stalkera Re:Zone": "The Re:Zone stalker handbook",
-"Všechno na jednom místě: co je Re:Zone, jak používat launcher, jak hrát s přáteli a co je ve hře jinak než ve vanilla Anomaly. Bez technických řečí.": "Everything in one place: what Re:Zone is, how to use the launcher, how to play with friends and what's different in the game compared to vanilla Anomaly. No technical jargon.",
 "Trailer Re:Zone": "Re:Zone trailer",
 "Oficiální trailerOtevřít na YouTube ↗": "<span>Official trailer<\/span><a href=\"https://www.youtube.com/watch?v=OQavP6U5x6s\" rel=\"noopener\" target=\"_blank\">Open on YouTube ↗<\/a>",
 "Rozcestník – kam dál?": "Signpost – where next?",
@@ -769,7 +767,9 @@
 "COOP hlásí VERSION MISMATCH": "COOP says VERSION MISMATCH",
 "Nemáte stejnou sestavu – postupuj podle Krok 1: stejná sestava u všech.": "You don't have the same setup – follow <a href=\"#coop\">Step 1: the same setup for everyone<\/a>.",
 "Pořád nic?Ozvi se na Discordu Re:Zone (ikona vlevo dole v launcheru). Přidej popis problému, screenshot a log.": "<b class=\"t\">Still nothing?<\/b>Get in touch on the Re:Zone Discord (icon at the bottom left of the launcher). Add a description of the problem, a screenshot and the log.",
-"Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files."
+"Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files.",
+"S.T.A.L.K.E.R. Anomaly · modpackRe:ZonePříručka · Databáze · Výroba (BETA)": "<span class=\"ml-pre\">S.T.A.L.K.E.R. Anomaly · modpack<\/span><span class=\"ml-name\">Re<i>:<\/i>Zone<\/span><span class=\"ml-sub\">Handbook · Database · Crafting (BETA)<\/span>",
+"Všechno na jednom místě: co je Re:Zone, jak používat launcher, jak hrát s přáteli a co je ve hře jinak než ve vanilla Anomaly.": "Everything in one place: what Re:Zone is, how to use the launcher, how to play with friends and what's different in the game compared to vanilla Anomaly."
 };
   var A = {
 "Databáze": "Database",
