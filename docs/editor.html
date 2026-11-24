@@ -134,6 +134,8 @@ dialog::backdrop { background: #000a; }
 .mls { position: sticky; top: 0; background: #1b1b1b; color: #e0a43a; font: 600 12px/1.2 var(--mono, monospace); letter-spacing: .06em; text-transform: uppercase; padding: 7px 10px; border-bottom: 1px solid #2a2a2a; }
 .mlr { display: flex; gap: 10px; align-items: center; padding: 5px 10px; border-bottom: 1px solid #ffffff0a; cursor: pointer; margin: 0; }
 .mlr span { min-width: 0; overflow-wrap: anywhere; } .mlr input { margin: 0; flex: none; }
+.mlnew { border: 1px solid #e0a43a55; background: #e0a43a10; padding: 10px; margin: 6px 0; display: flex; flex-direction: column; gap: 6px; } .mlnew select { flex: 1 1 260px; min-width: 0; margin: 0; } .mlnew label { display: flex; gap: 6px; align-items: center; margin: 0; }
+.mlsum ul { margin: 4px 0 10px; padding-left: 20px; max-height: 22vh; overflow-y: auto; } .mlsum li { overflow-wrap: anywhere; }
 .mlr.chg { background: #e0a43a14; } .mlr small { margin-left: auto; color: #e0a43a; font: 11px var(--mono, monospace); }
 .ab-in { flex-wrap: wrap; } .ab-sub { flex-wrap: wrap; justify-content: flex-end; padding: 6px 0; min-width: 0; }
 #who { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -358,7 +360,7 @@ details.adv > .in { padding: 0 14px 14px; }
   <section class="card" id="tab-ml" hidden>
     <div class="eb">// ReZone/modlist.json</div>
     <h2>Modlist profilů</h2>
-    <p class="hint">Které mody mají být v profilech <b>Rookie</b> a <b>Veteran</b> zapnuté. Launcher to hráčům při kontrole aktualizací nastaví – každou změnu jen jednou, potom si to hráč může přepnout sám. Volitelné mody z launcheru (addony, textury, vegetace) se nemění, ty si hráč zapíná sám. Pořadí je jako v Mod Organizeru (nahoře = nejnižší priorita).</p>
+    <p class="hint">Které mody mají být v profilech <b>Rookie</b> a <b>Veteran</b> zapnuté. Launcher to hráčům při kontrole aktualizací nastaví – každou změnu jen jednou, potom si to hráč může přepnout sám. Volitelné mody z launcheru (addony, textury, vegetace) se nemění, ty si hráč zapíná sám. Pořadí je jako v Mod Organizeru (nahoře = nejnižší priorita). Po změnách v Mod Organizeru klikni na <b>Aktualizovat z modlist.txt</b> – doplní nové mody, odebere smazané a převezme pořadí. Nový mod se hráčům zařadí na stejné místo jako tady.</p>
     <div id="mlBody"></div>
     <div class="bar" data-save="ml"></div>
   </section>
@@ -1403,17 +1405,24 @@ function clPage(md) {
       f.text().then(function (t) {
         var l = t.split(/\r?\n/).map(function (x) { return x.trim(); }).filter(function (x) { return /^[+\-*]/.test(x); });
         if (!l.length) { $('mlMsg').className = 'msg err'; $('mlMsg').textContent = 'Tohle není modlist.txt z Mod Organizeru.'; return; }
-        ML.obj.profiles[ML.prof] = l; setDirty('ml'); $('mlMsg').className = 'msg ok';
-        $('mlMsg').textContent = 'Načteno ' + l.length + ' řádků do profilu ' + ML.prof + '. Uprav a ulož na GitHub.'; mlRender();
+        file.value = '';
+        if (!mlLines(ML.prof).length) {
+          ML.obj.profiles[ML.prof] = l; setDirty('ml'); mlRender(); $('mlMsg').className = 'msg ok';
+          $('mlMsg').textContent = 'Načteno ' + l.length + ' řádků do profilu ' + ML.prof + '. Uprav a ulož na GitHub.';
+          return;
+        }
+        mlMerge(l);
       });
     });
     var tools = el('div', { class: 'mlt' }, [
-      el('button', { class: 'btn small', text: 'Načíst modlist.txt z PC', onclick: function () { file.click(); } }), file,
+      el('button', { class: 'btn small', text: lines.length ? 'Aktualizovat z modlist.txt' : 'Načíst modlist.txt z PC', title: 'Vyber profiles/' + ML.prof + '/modlist.txt ze složky Mod Organizeru. Doplní nové mody, odebere smazané a převezme pořadí.', onclick: function () { file.click(); } }), file,
       el('input', { type: 'search', placeholder: 'Hledat mod…', value: ML.q, oninput: function (e) { ML.q = e.target.value; mlDraw(); } }),
       (function () { var s = el('select'); [['all', 'Vše'], ['on', 'Zapnuté'], ['off', 'Vypnuté'], ['chg', 'Změněné']].forEach(function (o) { s.appendChild(el('option', { value: o[0], text: o[1] })); }); s.value = ML.show; s.onchange = function () { ML.show = s.value; mlDraw(); }; return s; })()
     ]);
     box.appendChild(tools);
     box.appendChild(el('p', { class: 'msg', id: 'mlMsg' }));
+    box.appendChild(el('div', { id: 'mlRepo' }));
+    mlRepoBanner();
     if (!lines.length) {
       box.appendChild(el('p', { class: 'hint', html: 'Profil <b>' + esc(ML.prof) + '</b> je prázdný. Klikni na <b>Načíst modlist.txt z PC</b> a vyber soubor <code>profiles/' + esc(ML.prof) + '/modlist.txt</code> ze složky Mod Organizeru modpacku.' }));
       return;
@@ -1450,12 +1459,116 @@ function clPage(md) {
     $('mlMsg').className = chg ? 'msg warn' : 'msg';
     if (chg) $('mlMsg').textContent = 'Změněno v profilu ' + ML.prof + ': ' + chg + ' (zatím neuloženo na GitHub, nebo oproti poslednímu uložení).';
   }
+  function mlNum(n) { var m = /^(\d+)-/.exec(n); return m ? +m[1] : null; }
+  function mlList(arr, max) {
+    var ul = el('ul');
+    arr.slice(0, max).forEach(function (n) { ul.appendChild(el('li', { text: n })); });
+    if (arr.length > max) ul.appendChild(el('li', { text: '… a dalších ' + (arr.length - max) }));
+    return ul;
+  }
+  // aktualizace profilu z modlist.txt: nove mody, odebrane mody, poradi; stav zapnuti volitelne
+  function mlMerge(fileLines) {
+    var lines = mlLines(ML.prof), cur = {}, inFile = {};
+    lines.forEach(function (l) { if (/^[+-]/.test(l)) cur[mlName(l)] = l[0]; });
+    fileLines.forEach(function (l) { if (/^[+-]/.test(l)) inFile[mlName(l)] = l[0]; });
+    var isSep = function (n) { return /_separator$/.test(n); };
+    var added = [], removed = [], diff = [];
+    Object.keys(inFile).forEach(function (n) {
+      if (isSep(n)) return;
+      if (!(n in cur)) added.push(n); else if (cur[n] !== inFile[n]) diff.push(n);
+    });
+    Object.keys(cur).forEach(function (n) { if (!isSep(n) && !(n in inFile)) removed.push(n); });
+    var seqA = lines.map(mlName).filter(function (n) { return n in inFile; }).join('\n');
+    var seqB = fileLines.map(mlName).filter(function (n) { return n in cur; }).join('\n');
+    var moved = seqA !== seqB;
+    if (!added.length && !removed.length && !diff.length && !moved) {
+      $('mlMsg').className = 'msg ok'; $('mlMsg').textContent = 'Profil ' + ML.prof + ' už odpovídá tomuhle modlist.txt.';
+      return;
+    }
+    var take = el('input', { type: 'checkbox' });
+    var box = el('div', { class: 'mlsum' }, [
+      el('p', { html: 'Profil <b>' + esc(ML.prof) + '</b> oproti vybranému modlist.txt:' }),
+      added.length ? el('p', { html: '<b>Nové mody (' + added.length + ')</b> – přidají se na místo jako v Mod Organizeru:' }) : null,
+      added.length ? mlList(added, 40) : null,
+      removed.length ? el('p', { html: '<b>Odebrané mody (' + removed.length + ')</b> – v modlist.txt už nejsou:' }) : null,
+      removed.length ? mlList(removed, 40) : null,
+      moved ? el('p', { html: '<b>Pořadí</b> se převezme z modlist.txt.' }) : null,
+      diff.length ? el('p', { html: '<b>Jinak zapnuté (' + diff.length + ')</b> v Mod Organizeru než v editoru:' }) : null,
+      diff.length ? mlList(diff.map(function (n) { return (inFile[n] === '+' ? 'zapnuto: ' : 'vypnuto: ') + n; }), 40) : null,
+      diff.length ? el('label', {}, [take, el('span', { text: 'Převzít i zapnutí/vypnutí z modlist.txt (jinak zůstane, jak je v editoru)' })]) : null
+    ]);
+    dialog('Aktualizovat profil ' + ML.prof, box, [{ label: 'Aktualizovat', value: true, cls: 'pri' }, { label: 'Zpět', value: false }]).then(function (ok) {
+      if (!ok) return;
+      var keep = !take.checked;
+      ML.obj.profiles[ML.prof] = fileLines.map(function (l) {
+        var n = mlName(l);
+        if (keep && /^[+-]/.test(l) && !isSep(n) && (n in cur)) return cur[n] + n;
+        return l;
+      });
+      setDirty('ml'); mlRender();
+      var parts = [];
+      if (added.length) parts.push('přidáno ' + added.length);
+      if (removed.length) parts.push('odebráno ' + removed.length);
+      if (moved) parts.push('nové pořadí');
+      if (diff.length && !keep) parts.push('převzato zapnutí u ' + diff.length);
+      $('mlMsg').className = 'msg ok';
+      $('mlMsg').textContent = 'Profil ' + ML.prof + ' aktualizován: ' + parts.join(', ') + '. Zkontroluj a ulož na GitHub.';
+    });
+  }
+  // mody ze slozky ReZone/mods v repozitari, ktere v profilu chybi
+  function mlRepoMods() {
+    if (ML.repo) return Promise.resolve(ML.repo);
+    return api('/repos/' + S.repo + '/contents/ReZone/mods?ref=' + encodeURIComponent(S.branch) + '&t=' + Date.now())
+      .then(function (j) {
+        ML.repo = (Array.isArray(j) ? j : []).filter(function (x) { return x.type === 'dir'; }).map(function (x) { return x.name; });
+        return ML.repo;
+      }, function () { return []; });
+  }
+  function mlRepoBanner() {
+    mlRepoMods().then(function (repo) {
+      var b = $('mlRepo'); if (!b) return;
+      b.innerHTML = '';
+      var lines = mlLines(ML.prof); if (!lines.length) return;
+      var have = {}; lines.forEach(function (l) { have[mlName(l)] = 1; });
+      repo.filter(function (n) { return !have[n]; }).forEach(function (n) {
+        var num = mlNum(n), def = null, best = -1;
+        repo.forEach(function (r) { var k = mlNum(r); if (have[r] && k !== null && num !== null && k < num && k > best) { best = k; def = r; } });
+        var sel = el('select');
+        for (var i = lines.length - 1; i >= 0; i--) {
+          var l = lines[i]; if (!/^[+-]/.test(l)) continue;
+          var nm = mlName(l);
+          sel.appendChild(el('option', { value: nm, text: mlIsSep(l) ? '— ' + nm.replace(/_separator$/, '') + ' —' : nm }));
+        }
+        if (def) sel.value = def;
+        var all = el('input', { type: 'checkbox' }); all.checked = true;
+        var add = el('button', { class: 'btn small pri', text: 'Přidat', onclick: function () {
+          var anchor = sel.value, done = [], miss = [];
+          Object.keys(ML.obj.profiles).filter(function (p) { return all.checked || p === ML.prof; }).forEach(function (p) {
+            var L = ML.obj.profiles[p];
+            if (!L.length || L.some(function (l) { return mlName(l) === n; })) return;
+            var at = -1;
+            for (var j = 0; j < L.length; j++) { if (/^[+-]/.test(L[j]) && mlName(L[j]) === anchor) { at = j; break; } }
+            if (at < 0) { miss.push(p); return; }
+            L.splice(at, 0, '+' + n); done.push(p);
+          });
+          setDirty('ml'); mlRender();
+          $('mlMsg').className = miss.length ? 'msg warn' : 'msg ok';
+          $('mlMsg').textContent = 'Přidáno ' + n + (done.length ? ' do profilů: ' + done.join(', ') : '') + '.' + (miss.length ? ' V profilech ' + miss.join(', ') + ' chybí ' + anchor + ' – tam ho přidej přes modlist.txt.' : '') + ' Ulož na GitHub.';
+        } });
+        b.appendChild(el('div', { class: 'mlnew' }, [
+          el('div', { html: 'V repozitáři (ReZone/mods) je mod <b>' + esc(n) + '</b>, který v profilu <b>' + esc(ML.prof) + '</b> chybí. Přidej ho, nebo načti aktualizovaný modlist.txt.' }),
+          el('div', { class: 'mlt' }, [el('span', { text: 'Pod mod (vyšší priorita než):' }), sel, add]),
+          el('label', {}, [all, el('span', { text: 'Do všech profilů (Rookie i Veteran)' })])
+        ]));
+      });
+    });
+  }
   builders.ml = function (text) {
     var o;
     try { o = text.trim() ? JSON.parse(text) : {}; } catch (e) { o = {}; }
     if (!o || typeof o !== 'object') o = {};
     if (!o.profiles || typeof o.profiles !== 'object') o.profiles = {};
-    ML.obj = o; ML.orig = JSON.parse(JSON.stringify(o.profiles));
+    ML.obj = o; ML.orig = JSON.parse(JSON.stringify(o.profiles)); ML.repo = null;
     mlRender();
   };
   onShow.ml = function () { if (ML.obj) mlRender(); };
