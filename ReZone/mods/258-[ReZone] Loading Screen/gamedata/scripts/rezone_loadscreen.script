@@ -1,0 +1,203 @@
+local ROOT = "ui\\rezone_ls\\"
+local MAIN = "ui\\ui_actor_loadgame_screen.dds"
+local SIDE = "ui\\ui_actor_widescreen_sidepanels.dds"
+local NEAR = 60
+local FAR = 90
+
+local current
+local here
+local changers
+local next_check = 0
+
+local function path(rel)
+	return getFS():update_path("$game_textures$", rel)
+end
+
+local function exists(rel)
+	local f = io.open(path(rel), "rb")
+	if f then
+		f:close()
+		return true
+	end
+	return false
+end
+
+local function read(rel)
+	local f = io.open(path(rel), "rb")
+	if not f then
+		return
+	end
+	local data = f:read("*a")
+	f:close()
+	return data
+end
+
+local function write(rel, data)
+	local f = io.open(path(rel), "wb")
+	if not f then
+		return false
+	end
+	f:write(data)
+	f:close()
+	return true
+end
+
+local function variants(folder)
+	local list = {}
+	local i = 1
+	while exists(ROOT .. folder .. "\\" .. i .. ".dds") and exists(ROOT .. folder .. "\\" .. i .. "_side.dds") do
+		list[#list + 1] = i
+		i = i + 1
+	end
+	return list
+end
+
+function set_level(level)
+	if type(level) ~= "string" or level == "" or level == current then
+		return
+	end
+	local folder = level
+	local list = variants(folder)
+	if #list == 0 then
+		folder = "_default"
+		list = variants(folder)
+	end
+	if #list == 0 then
+		return
+	end
+	local n = list[math.random(#list)]
+	local main = read(ROOT .. folder .. "\\" .. n .. ".dds")
+	local side = read(ROOT .. folder .. "\\" .. n .. "_side.dds")
+	if not (main and side) then
+		return
+	end
+	if write(MAIN, main) and write(SIDE, side) then
+		current = level
+	end
+end
+
+local function level_of_gvid(gvid)
+	local gg = game_graph()
+	if not (gvid and gg:valid_vertex_id(gvid)) then
+		return
+	end
+	return alife():level_name(gg:vertex(gvid):level_id())
+end
+
+local function changer_dest(se)
+	local p = net_packet()
+	p:w_begin(0)
+	se:STATE_Write(p)
+	p:r_seek(2)
+	p:r_u16()
+	p:r_float()
+	p:r_s32()
+	p:r_s32()
+	p:r_s32()
+	p:r_stringZ()
+	p:r_s32()
+	p:r_s32()
+	local v = vector()
+	local shapes = p:r_u8()
+	for i = 1, shapes do
+		if p:r_u8() == 0 then
+			p:r_vec3(v)
+			p:r_float()
+		else
+			p:r_vec3(v)
+			p:r_vec3(v)
+			p:r_vec3(v)
+			p:r_vec3(v)
+		end
+	end
+	p:r_u8()
+	return p:r_u16()
+end
+
+local function scan()
+	changers = {}
+	local sim = alife()
+	local gg = game_graph()
+	if not (sim and gg and clsid.level_changer) then
+		return
+	end
+	local lid = gg:vertex(db.actor:game_vertex_id()):level_id()
+	for id = 1, 65534 do
+		local se = sim:object(id)
+		if se then
+			local c = se:clsid()
+			if (c == clsid.level_changer or c == clsid.level_changer_s) and gg:valid_vertex_id(se.m_game_vertex_id) and gg:vertex(se.m_game_vertex_id):level_id() == lid then
+				local ok, gvid = pcall(changer_dest, se)
+				local dest = ok and level_of_gvid(gvid)
+				if dest and dest ~= here then
+					changers[#changers + 1] = { pos = vector():set(se.position), dest = dest }
+				end
+			end
+		end
+	end
+end
+
+local function first_update()
+	here = level.name()
+	current = nil
+	set_level(here)
+	local ok = pcall(scan)
+	if not ok then
+		changers = {}
+	end
+end
+
+local function update()
+	local t = time_global()
+	if t < next_check or not changers then
+		return
+	end
+	next_check = t + 1000
+	local pos = db.actor:position()
+	local best, dist
+	for i = 1, #changers do
+		local d = pos:distance_to(changers[i].pos)
+		if not dist or d < dist then
+			best, dist = changers[i], d
+		end
+	end
+	if best and dist < NEAR then
+		set_level(best.dest)
+	elseif not dist or dist > FAR then
+		set_level(here)
+	end
+end
+
+local function patch()
+	if _G.ChangeLevel and not _G.rezone_loadscreen_change then
+		local base = _G.ChangeLevel
+		_G.rezone_loadscreen_change = base
+		_G.ChangeLevel = function(pos, lvid, gvid, angle, anim)
+			pcall(function()
+				set_level(level_of_gvid(gvid))
+			end)
+			return base(pos, lvid, gvid, angle, anim)
+		end
+	end
+	local dlg = ui_load_dialog and ui_load_dialog.UILoadDialog
+	if dlg and not ui_load_dialog.rezone_loadscreen_load then
+		local base = dlg.load_game_internal
+		ui_load_dialog.rezone_loadscreen_load = base
+		dlg.load_game_internal = function(self)
+			pcall(function()
+				local index = self.list_box:GetSelectedIndex()
+				if index ~= -1 then
+					local item = self.list_box:GetItemByIndex(index)
+					set_level(CSavedGameWrapper(item.fn:GetText()):level_name())
+				end
+			end)
+			return base(self)
+		end
+	end
+end
+
+function on_game_start()
+	patch()
+	RegisterScriptCallback("actor_on_first_update", first_update)
+	RegisterScriptCallback("actor_on_update", update)
+end
