@@ -63,13 +63,13 @@ local function patch()
 end
 
 local TPAGE = rezone_mcm.path("rz_taskhud")
-local topt = { on = true, y = 60, time = 7, rows = 3 }
+local topt = { on = true, y = 60, time = 7, rows = 3, fade = true, fade_y = 625, news = true }
 local T_ICON = { new = "ui_rz_task_new", updated = "ui_rz_task_new", complete = "ui_rz_task_done", fail = "ui_rz_task_done", reversed = "ui_rz_task_done" }
 local T_CLR = { new = { 255, 255, 255 }, updated = { 255, 255, 255 }, complete = { 255, 255, 255 }, fail = { 235, 120, 110 }, reversed = { 190, 190, 190 } }
 local T_HEAD = { complete = "st_rz_task_complete", fail = "st_rz_task_fail", reversed = "st_rz_task_reversed" }
 local T_SUB = { new = "st_rz_task_new", updated = "st_rz_task_updated" }
 local FADE_IN, FADE_OUT = 250, 600
-local ROW_H, ICON, GAP, MAXW = 44, 26, 10, 520
+local ROW_H, ICON, GAP, MAXW, SUBW = 44, 26, 10, 520, 560
 
 local function clean(str)
 	str = tostring(str or "")
@@ -113,12 +113,12 @@ function UIRzTaskHud:make_row()
 	self:AttachChild(r.sub)
 	r.sub:SetFont(GetFontLetterica16Russian())
 	r.sub:SetTextAlignment(0)
-	r.sub:SetEllipsis(true)
 	return r
 end
 
-local function text_w(wnd, txt, per)
-	wnd:SetWndSize(vector2():set(MAXW, 20))
+local function text_w(wnd, txt, per, max)
+	max = max or MAXW
+	wnd:SetWndSize(vector2():set(max, 20))
 	wnd:SetText(txt)
 	local w
 	pcall(function()
@@ -126,14 +126,32 @@ local function text_w(wnd, txt, per)
 		w = wnd:GetWidth()
 	end)
 	if not w or w <= 1 or w > 2000 then w = string.len(txt) * per end
-	return math.min(MAXW, w)
+	return math.min(max, w)
+end
+
+local function sub_size(wnd, txt)
+	wnd:SetTextComplexMode(false)
+	local w = text_w(wnd, txt, 7, 4000)
+	if w <= SUBW then return w, 16 end
+	wnd:SetTextComplexMode(true)
+	wnd:SetWndSize(vector2():set(SUBW, 16))
+	wnd:SetText(txt)
+	local h = 32
+	pcall(function()
+		wnd:AdjustHeightToText()
+		h = wnd:GetHeight()
+	end)
+	if not h or h < 16 then h = 32 end
+	return SUBW, math.min(h, 64)
 end
 
 function UIRzTaskHud:layout(r, e)
 	local k = utils_xml.screen_ratio()
 	local iw = ICON * k
 	local tw = text_w(r.title, e.title, 9.5)
-	local sw = e.sub ~= "" and text_w(r.sub, e.sub, 7) or 0
+	local sw, sh = 0, 0
+	if e.sub ~= "" then sw, sh = sub_size(r.sub, e.sub) end
+	e.h = ROW_H + math.max(0, sh - 16)
 	local bw = iw + GAP * k + math.max(tw, sw)
 	e.x0 = 512 - bw / 2
 	e.bw = bw
@@ -142,7 +160,7 @@ end
 
 function UIRzTaskHud:place(r, e, y)
 	local pad = 40 * utils_xml.screen_ratio()
-	r.bg:SetWndRect(Frect():set(e.x0 - pad, y - 4, e.x0 + e.bw + pad, y + ROW_H - 2))
+	r.bg:SetWndRect(Frect():set(e.x0 - pad, y - 4, e.x0 + e.bw + pad, y + e.h - 2))
 	local iy = y + (e.sub ~= "" and 8 or 4)
 	r.icon:InitTexture(e.icon)
 	r.icon:SetStretchTexture(true)
@@ -150,7 +168,7 @@ function UIRzTaskHud:place(r, e, y)
 	local tx = e.x0 + e.iw + GAP * utils_xml.screen_ratio()
 	r.title:SetWndRect(Frect():set(tx, y + 3, tx + e.tw + 4, y + 23))
 	r.title:SetText(e.title)
-	r.sub:SetWndRect(Frect():set(tx, y + 23, tx + e.sw + 4, y + 39))
+	r.sub:SetWndRect(Frect():set(tx, y + 23, tx + e.sw + 4, y + e.h - 5))
 	r.sub:SetText(e.sub)
 end
 
@@ -215,14 +233,16 @@ function UIRzTaskHud:Update()
 	end
 	self.queue = keep
 	while #self.rows < #self.queue do self.rows[#self.rows + 1] = self:make_row() end
+	local y = topt.y
 	for i, r in ipairs(self.rows) do
 		local e = self.queue[i]
 		if e then
 			if self.dirty or r.e ~= e then
 				r.e = e
 				self:layout(r, e)
-				self:place(r, e, topt.y + (i - 1) * ROW_H)
+				self:place(r, e, y)
 			end
+			y = y + (e.h or ROW_H)
 			local a = 1
 			if e.t < FADE_IN then a = e.t / FADE_IN
 			elseif e.t > e.life then a = 1 - (e.t - e.life) / FADE_OUT end
@@ -246,10 +266,21 @@ local function task_hud()
 	return THUD
 end
 
+local function task_descr(tsk)
+	local d = ""
+	pcall(function()
+		local tm = task_manager.get_task_manager()
+		local o = tm and tm.task_info and tm.task_info[tsk:get_id()]
+		local s = o and o.current_descr
+		if type(s) == "string" and s ~= "" then d = tr(s) end
+	end)
+	if d == "" then pcall(function() d = tr(tsk:get_description()) end) end
+	return d
+end
+
 local function task_entry(typ, tsk)
 	local title = tr(tsk:get_title())
-	local desc = ""
-	pcall(function() desc = tr(tsk:get_description()) end)
+	local desc = task_descr(tsk)
 	local e = { icon = T_ICON[typ] or "ui_rz_task_new", clr = T_CLR[typ] or T_CLR.new }
 	if T_HEAD[typ] then
 		e.title, e.sub = tr(T_HEAD[typ]), title
@@ -288,6 +319,25 @@ local function fade_msg(msg, tm, cl, snd)
 	return orig_fade_msg(msg, tm, cl, snd)
 end
 
+local FADE_ID = "not_enough_money_mine"
+local FADE_W = 800
+local fade_pos = nil
+local function place_fade()
+	local hud = get_hud()
+	local cs = hud and hud:GetCustomStatic(FADE_ID)
+	local w = cs and cs:wnd()
+	if not w then return end
+	fade_pos = fade_pos or vector2()
+	w:SetWndPos(fade_pos:set(512 - FADE_W / 2, topt.fade_y))
+end
+
+local orig_fade_check = nil
+local function fade_check()
+	local r = orig_fade_check()
+	if topt.fade and not r then pcall(place_fade) end
+	return r
+end
+
 local function patch_tasks()
 	if not orig_send_task and news_manager and news_manager.send_task then
 		orig_send_task = news_manager.send_task
@@ -296,6 +346,10 @@ local function patch_tasks()
 	if not orig_fade_msg and actor_menu and actor_menu.set_fade_msg then
 		orig_fade_msg = actor_menu.set_fade_msg
 		actor_menu.set_fade_msg = fade_msg
+	end
+	if not orig_fade_check and actor_menu and actor_menu.check_hud_fading_msg then
+		orig_fade_check = actor_menu.check_hud_fading_msg
+		actor_menu.check_hud_fading_msg = fade_check
 	end
 end
 
@@ -310,6 +364,86 @@ local function task_net_destroy()
 	end
 end
 
+local N_PAD, N_IW, N_IH, N_W = 6, 62, 42, 400
+
+local function n_static(view, tex, x1, y1, x2, y2)
+	if x2 - x1 <= 0 or y2 - y1 <= 0 then return end
+	local s = CUIStatic()
+	s:SetAutoDelete(true)
+	view:AttachChild(s)
+	s:InitTexture(tex)
+	s:SetStretchTexture(true)
+	s:SetWndRect(Frect():set(x1, y1, x2, y2))
+end
+
+local function n_text(view, font, clr, x, y, w, h, txt, complex)
+	local t = CUITextWnd()
+	t:SetAutoDelete(true)
+	view:AttachChild(t)
+	t:SetFont(font)
+	t:SetTextComplexMode(complex)
+	if not complex then t:SetEllipsis(true) end
+	t:SetWndRect(Frect():set(x, y, x + w, y + h))
+	t:SetTextColor(clr)
+	t:SetText(txt)
+end
+
+local function n_get(w)
+	local t
+	pcall(function() t = w:GetText() end)
+	return t or ""
+end
+
+local function on_news(view, time_w, cap_w, msg_w, icon)
+	if not (topt.news and view and time_w and cap_w and msg_w and icon) then return end
+	local cap, msg, tm = n_get(cap_w), n_get(msg_w), n_get(time_w)
+	local k = utils_xml.screen_ratio()
+	local W, p = N_W * k, N_PAD * k
+	local ix, iy, iw, ih = p, N_PAD, N_IW * k, N_IH
+	local tx = ix + iw + 8 * k
+	local mx, my, mw = p + 2 * k, iy + ih + 5, W - 2 * p - 4 * k
+	local f16 = GetFontLetterica16Russian()
+	local mh = 0
+	if msg ~= "" then
+		msg_w:SetFont(f16)
+		msg_w:SetWndSize(vector2():set(mw, 16))
+		msg_w:AdjustHeightToText()
+		mh = math.max(16, msg_w:GetHeight())
+	end
+	local H = (mh > 0 and (my + mh) or (iy + ih)) + N_PAD
+	time_w:Show(false)
+	cap_w:Show(false)
+	msg_w:Show(false)
+	icon:SetWndRect(Frect():set(ix, iy, ix + iw, iy + ih))
+	local B, L = "ui_rz_news_bg", "ui_rz_news_line"
+	n_static(view, B, 0, 0, ix, H)
+	n_static(view, B, ix + iw, 0, W, H)
+	n_static(view, B, ix, 0, ix + iw, iy)
+	n_static(view, B, ix, iy + ih, ix + iw, H)
+	n_static(view, L, 0, 0, W, 1)
+	n_static(view, L, 0, H - 1, W, H)
+	n_static(view, L, 0, 1, k, H - 1)
+	n_static(view, L, W - k, 1, W, H - 1)
+	n_static(view, "ui_rz_news_frame", ix - 2 * k, iy - 2, ix + iw + 2 * k, iy + ih + 2)
+	n_text(view, GetFontLetterica18Russian(), GetARGB(255, 255, 255, 255), tx, iy + 2, W - tx - p, 20, cap, false)
+	n_text(view, f16, GetARGB(255, 150, 150, 145), tx, iy + 23, W - tx - p, 16, tm, false)
+	if mh > 0 then
+		n_text(view, f16, GetARGB(255, 215, 215, 210), mx, my, mw, mh, msg, true)
+	end
+	view:SetWndSize(vector2():set(view:GetWidth(), H + 3))
+end
+
+local function news_cb(view, time_w, cap_w, msg_w, icon)
+	local ok, err = pcall(on_news, view, time_w, cap_w, msg_w, icon)
+	if not ok then core.warn("ui: news %s", tostring(err)) end
+end
+
+local function news_hook()
+	pcall(function() return callbacks_gameobject end)
+	if type(rawget(_G, "CUIMessagesWindow__AddIconedPdaMessage")) ~= "function" then return end
+	RegisterScriptCallback("on_news_received", news_cb)
+end
+
 function load()
 	local g = core.page(PAGE)
 	opt.msv = g("enabled") ~= false
@@ -318,11 +452,15 @@ function load()
 	topt.y = tonumber(t("pos_y")) or 60
 	topt.time = tonumber(t("time")) or 7
 	topt.rows = math.max(1, math.floor(tonumber(t("rows")) or 3))
+	topt.fade = t("fade_bottom") ~= false
+	topt.fade_y = tonumber(t("fade_y")) or 625
+	topt.news = t("news_style") ~= false
 end
 
 function on_game_start()
 	patch()
 	patch_tasks()
+	news_hook()
 	RegisterScriptCallback("actor_on_net_destroy", task_net_destroy)
 	RegisterScriptCallback("actor_on_first_update", task_first_update)
 	core.on_change(load)

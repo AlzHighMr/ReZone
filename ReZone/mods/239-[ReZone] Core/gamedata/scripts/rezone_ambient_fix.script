@@ -6,10 +6,42 @@ local function part_of_day()
 	return "night"
 end
 
+local snd_ok = {}
+
+local function sound_exists(f)
+	local v = snd_ok[f]
+	if v == nil then
+		v = false
+		if f ~= "" then
+			local ok, r = pcall(function() return getFS():exist("$game_sounds$", f .. ".ogg") end)
+			v = ok and r and true or false
+		end
+		snd_ok[f] = v
+	end
+	return v
+end
+
+local function clean_parse_list(ini, sec, key, ...)
+	local t = parse_list(ini, sec, key, ...)
+	if key ~= "sounds" then return t end
+	local out = {}
+	for i = 1, #t do
+		local f = tostring(t[i] or ""):gsub("^%s+", ""):gsub("%s+$", "")
+		if sound_exists(f) then
+			out[#out + 1] = f
+		elseif rezone_core and rezone_core.debug_on() then
+			printf("! [ReZone] ambient: [%s] zvuk '%s' neexistuje, vynechan", tostring(sec), f)
+		end
+	end
+	if #out == 0 then out[1] = "$no_sound" end
+	return out
+end
+
 local function patch()
 	local sa = sound_ambient
 	if not (sa and sa.reset_settings) or sa.__rz_ambient_fix then return end
 	sa.__rz_ambient_fix = true
+	sa.parse_list = clean_parse_list
 	local orig = sa.reset_settings
 	local function dbg(fmt, ...)
 		if rezone_core and rezone_core.debug_on() then printf("[ReZone] ambient: " .. fmt, ...) end

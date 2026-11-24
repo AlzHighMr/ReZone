@@ -94,13 +94,13 @@
 		<text>Ladìní</text>
 	</string>
 	<string id="ui_mcm_rz_about">
-		<text>ReZone MCM 1.0.0</text>
+		<text>ReZone Core</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug">
 		<text>Vıpis do konzole</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug_desc">
-		<text>Vypisuje, co ReZone MCM dìlá. Jen pro testování.</text>
+		<text>Vypisuje, co ReZone dìlá. Jen pro testování.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_fire_wound">
 		<text>Støelné zranìní</text>
@@ -139,7 +139,7 @@
 		<text>Pseudopes / psí pes</text>
 	</string>
 	<string id="ui_mcm_rz_sp_flesh">
-		<text>Masák</text>
+		<text>Flaksa</text>
 	</string>
 	<string id="ui_mcm_rz_sp_boar">
 		<text>Kanec</text>
@@ -148,7 +148,7 @@
 		<text>Snork</text>
 	</string>
 	<string id="ui_mcm_rz_sp_tushkano">
-		<text>Tuškan</text>
+		<text>Tarbík</text>
 	</string>
 	<string id="ui_mcm_rz_sp_rat">
 		<text>Krysa</text>
@@ -166,7 +166,7 @@
 		<text>Psysaj</text>
 	</string>
 	<string id="ui_mcm_rz_sp_lurker">
-		<text>Lurker</text>
+		<text>Èihavec</text>
 	</string>
 	<string id="ui_mcm_rz_sp_fracture">
 		<text>Zlom</text>
@@ -361,10 +361,10 @@
 		<text>Vanilla Anomaly</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_trilogy">
-		<text>Trilogie (pouitelné vìci)</text>
+		<text>Lehká a støední (pouitelné vìci)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_hard">
-		<text>Tvrdá (skoro vše na díly)</text>
+		<text>Tìká (skoro vše na díly)</text>
 	</string>
 	<string id="ui_mcm_rz_loot_weapons">
 		<text>Zbranì (stav v %)</text>
@@ -658,19 +658,19 @@
 		<text>Pøedvolba poškození</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_desc">
-		<text>Jak se poèítají tvoje støely do NPC a zároveò profil oblekù, které nosíš ty. CoP = Call of Pripyat, Anomaly = o kousek mìkèí NPC, Hardcore = smrtící hlava a rozbíjení brnìní. Profil oblekù se projeví po naètení hry.</text>
+		<text>Jak se poèítají tvoje støely do NPC a zároveò profil oblekù, které nosíš ty. Lehká = jako Call of Pripyat (vıchozí), Støední = o kousek mìkèí NPC jako v Anomaly, Tìká = smrtící zásahy do hlavy a rozbíjení brnìní. Profil oblekù se projeví po naètení hry.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_cop">
-		<text>CoP (vıchozí)</text>
+		<text>Lehká (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_trilogy">
-		<text>Anomaly</text>
+		<text>Støední (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_hardcore">
-		<text>Hardcore</text>
+		<text>Tìká (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
-		<text>CoP: kdy náboj prorazí brnìní, poškození klesne podle pomìru (prùraz - brnìní) / prùraz; kdy ne, projde jen tupı náraz. Proto AP munice proti obrnìnım a obyèejná proti neobrnìnım.</text>
+		<text>Lehká (Call of Pripyat): kdy náboj prorazí brnìní, poškození klesne podle pomìru (prùraz - brnìní) / prùraz; kdy ne, projde jen tupı náraz. Proto AP munice proti obrnìnım a obyèejná proti neobrnìnım.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Suroviny a vıroba munice</text>
@@ -709,16 +709,16 @@
 		<text>Mrtvı stalker v uzavøeném obleku (SEVA, exo, ...) upustí i odpovídající helmu, kdy ji jeho model nemá zvláš. Platí stejná pravidla dropu jako u obleku. Seznam: configs\rezone\helmets.ltx.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_cop">
-		<text>Call of Pripyat – pro nováèky</text>
+		<text>Lehká (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_normal">
 		<text>Normální (vanilla)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_trilogy">
-		<text>Anomaly</text>
+		<text>Støední (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_hardcore">
-		<text>Hardcore</text>
+		<text>Tìká (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_info">
 		<text>Kolik poškození dostáváš ty, podle typu zásahu. 1 = beze zmìny (vanilla).</text>
@@ -727,7 +727,7 @@
 		<text>Nastaví všechny typy zásahu najednou, pak je mùeš doladit.</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_cop_note">
-		<text>Všechno poškození, které dostáváš, se nastavuje jen tady. Call of Pripyat (pro nováèky): kulky x0.45, mutanti x1 (jako v CoP), pády a údery x0.75, vıbuchy x0.3, oheò x0.65, anomálie a psí x0.75, radiace x1.25 (roste s dávkou). Anomaly: kulky x0.7. Hardcore: všechno silnìjší. Všechno na 1 = vanilla.</text>
+		<text>Všechno poškození, které dostáváš, se nastavuje jen tady. Lehká (Call of Pripyat): kulky x0.45, mutanti x1 (jako v CoP), pády a údery x0.75, vıbuchy x0.3, oheò x0.65, anomálie a psí x0.75, radiace x1.25 (roste s dávkou). Støední (Anomaly): kulky x0.7. Tìká (Hardcore): všechno silnìjší. Všechno na 1 = vanilla.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_craft">
 		<text>Crafting</text>
@@ -736,7 +736,7 @@
 		<text>ReZone Crafting</text>
 	</string>
 	<string id="ui_mcm_rz_craft_info">
-		<text>Recepty ve vanilla dílnì a další záloky (Úkryt, Batohy, Zásobníky). Nastavení receptù po pøeètení.</text>
+		<text>Recepty ve vanilla dílnì a další záloky (Úkryt, Batohy, Zásobníky), co se stane s receptem po pøeètení, okna dílny a opravy u mechanika.</text>
 	</string>
 	<string id="ui_mcm_rz_craft_remove_recipe">
 		<text>Recept po pøeètení zmizí</text>
@@ -784,7 +784,7 @@
 		<text>Pøedvolba hry</text>
 	</string>
 	<string id="ui_mcm_rz_master_info">
-		<text>Jedna volba nastaví celé ReZone najednou podle stylu hry – balistiku, brnìní a opotøebení, poškození hráèe, odolnost mutantù, koøist, ceny, obchodníky a jejich zásoby, artefakty – a s EFT Health System i jeho obtínost. Toulavé stalkery a zákazy obchodu (Hrát jako GAMMA, helmy) pøedvolba nezapíná, ty si zapneš sám.</text>
+		<text>Jedna volba nastaví celé ReZone najednou podle stylu hry – balistiku, brnìní a opotøebení, poškození hráèe, odolnost stalkerù a mutantù, koøist, ceny, obchodníky a jejich zásoby, artefakty – a s EFT Health System i jeho obtínost. Lehká vychází z Call of Pripyat, Støední z vanilla Anomaly, Tìká je Hardcore.</text>
 	</string>
 	<string id="ui_mcm_rz_master">
 		<text>Pøedvolba hry</text>
@@ -796,25 +796,25 @@
 		<text>Vlastní (ruèní nastavení)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_cop">
-		<text>Call of Pripyat – pro nováèky</text>
+		<text>Lehká (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_trilogy">
-		<text>Anomaly</text>
+		<text>Støední (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_hardcore">
-		<text>Hardcore</text>
+		<text>Tìká (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Call of Pripyat: balistika a brnìní CoP bez helem z uzavøenıch oblekù, realistické zásahy do hlavy, opotøebení 0.9, poškození hráèe Call of Pripyat (kulky x0.45, anomálie x0.75, radiace x1.25 roste s dávkou), artefakty v polích CoP, NPC s noi odvánìjší (1.55, šance 0.55), vidìní NPC zpomalené (stalkeøi 0.5, mutanti 0.15), známé recepty zùstávají, pouitelné vìci z mrtvol, EFTH obtínost Call of Pripyat. Ceny, obchod a mutanty nemìní.</text>
+		<text>Lehká (Call of Pripyat): balistika a brnìní CoP, uzavøené obleky s vlastní maskou bez samostatné helmy, realistické zásahy do hlavy, opotøebení oblekù 0.9, poškození hráèe CoP (kulky x0.45, anomálie x0.75, radiace x1.25 roste s dávkou), artefakty v polích jako v CoP, NPC tì hùø vidí pøes vegetaci (stalkeøi 0.5, mutanti 0.15), známé recepty zùstávají, pouitelné vìci z mrtvol, EFTH obtínost Call of Pripyat. Ceny, obchod a mutanty nemìní.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
-		<text>Anomaly: kulky x0.7, brnìní Anomaly, ceny a obchod jako vanilla Anomaly, mutanti vanilla, pouitelné vìci z mrtvol, EFTH obtínost Normální.</text>
+		<text>Støední (Anomaly): balistika a brnìní Anomaly, kulky x0.7, opotøebení oblekù 0.5, ceny a obchod jako vanilla Anomaly bez omezení zásob, mutanti a postih artefaktù vanilla, artefakty v polích Anomaly, pouitelné vìci z mrtvol, EFTH obtínost Normální.</text>
 	</string>
 	<string id="ui_mcm_rz_master_hardcore_info">
-		<text>Hardcore: kulky x1.5 a všechno silnìjší, smrtící hlava, rozbíjení brnìní, plné opotøebení, tuší mutanti, ekonomika jako GAMMA (vıbava se prodává levnì, omezené zásoby), málo pouitelné koøisti, EFTH obtínost Hardcore.</text>
+		<text>Tìká (Hardcore): kulky x1.5 a všechno silnìjší, stalkeøi o 20 % a mutanti o 30 % odolnìjší, smrtící zásahy do hlavy a rozbíjení brnìní, plné opotøebení oblekù, silnìjší postih artefaktù, ekonomika jako GAMMA (vıbava se prodává levnì, omezené zásoby), málo pouitelné koøisti, artefakty v polích Hardcore, EFTH obtínost Hardcore.</text>
 	</string>
 	<string id="ui_mcm_rz_master_note">
-		<text>Po vıbìru se hned oznaèí všechny volby, které pøedvolba zmìní (poèet zmìn dole), a uloí se po Pouít. Potom si mùeš cokoliv doladit ruènì – pøedvolba to nepøepíše, dokud ji znovu nezmìníš. Ceny, obchod, efekty a populaci Zóny nemìní – populaci si nastavíš na její stránce.</text>
+		<text>Po vıbìru se hned oznaèí všechny volby, které pøedvolba zmìní (poèet zmìn dole), a uloí se po Pouít. Potom si mùeš cokoliv doladit ruènì – pøedvolba to nepøepíše, dokud ji znovu nezmìníš. Støední a Tìká vypnou toulavé stalkery. Hrát jako GAMMA, zákaz helem, efekty, HUD a populaci Zóny pøedvolba nezapíná ani nemìní – populaci si nastavíš na její stránce.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_fx">
 		<text>Efekty</text>
@@ -1195,13 +1195,13 @@
 		<text>Vanilla</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_cop">
-		<text>Call of Pripyat</text>
+		<text>Lehká (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_trilogy">
-		<text>Anomaly</text>
+		<text>Støední (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_hardcore">
-		<text>Hardcore</text>
+		<text>Tìká (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_afsp_chance">
 		<text>Šance na artefakt</text>
@@ -1624,7 +1624,7 @@
 		<text>level_vertex_id neplatnı (mimo AI sí) – pro world a corpse posuò ukazatel na zem</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation_desc">
-		<text>Jak silnì ti nasbíraná radiace ubírá zdraví. Nad 1 roste úbytek s dávkou: malé ozáøení skoro nevadí, vysoká dávka zabíjí rychle jako v CoP. 1 = vanilla, 1,25 = pøedvolba CoP (plná radiace zabije zhruba za 5 minut), 3 = velmi nebezpeèná. Nemìní, jak rychle radiaci nabíráš.</text>
+		<text>Jak silnì ti nasbíraná radiace ubírá zdraví. Nad 1 roste úbytek s dávkou: malé ozáøení skoro nevadí, vysoká dávka zabíjí rychle jako v CoP. 1 = vanilla, 1,25 = pøedvolba Lehká (Call of Pripyat) – plná radiace zabije zhruba za 5 minut, 3 = velmi nebezpeèná. Nemìní, jak rychle radiaci nabíráš.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_rad_gain">
 		<text>Radiace – nabírání</text>
@@ -1852,19 +1852,19 @@
 		<text>Podle obtínosti nové hry</text>
 	</string>
 	<string id="ui_mcm_rz_master_link_desc">
-		<text>Pøi zaèátku nové hry se ReZone nastaví podle toho, co hráè vybere v obrazovce vıbìru frakce. Obtínost øídí boj, zdraví a svìt, Ekonomie øídí ceny, loot, artefakty a opotøebení oblekù.</text>
+		<text>Pøi zaèátku nové hry se ReZone nastaví podle toho, co hráè vybere v obrazovce vıbìru frakce. Obtínost øídí boj, zdraví a svìt, Ekonomika øídí ceny, koøist, artefakty a opotøebení oblekù.</text>
 	</string>
 	<string id="ui_mcm_rz_master_link_info">
-		<text>Snadná = CoP, Støední = Trilogie, Tìká = Hardcore. Obtínost a Ekonomii lze kombinovat (tøeba Tìká obtínost a Snadná ekonomie) – pøedvolba pak ukáe Vlastní. Platí jen pøi zaèátku nové hry, rozehranou hru to nezmìní; potom mùeš cokoli upravit ruènì.</text>
+		<text>Snadná = Lehká (Call of Pripyat), Støední = Støední (Anomaly), Tìká a Hardcore = Tìká (Hardcore). Obtínost a Ekonomiku lze kombinovat (tøeba Tìká obtínost a Snadná ekonomika) – pøedvolba pak ukáe Vlastní. Platí jen pøi zaèátku nové hry, rozehranou hru to nezmìní; potom mùeš cokoli upravit ruènì.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_taskhud">
-		<text>Oznámení úkolù</text>
+		<text>Oznámení a zprávy</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_title">
-		<text>Oznámení úkolù</text>
+		<text>Oznámení a zprávy</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_info">
-		<text>Nové, aktualizované, splnìné a nesplnìné úkoly a aktivní úkol po stisku klávesy „Aktuální úkol“ (vıchozí Tab) se ukazují nahoøe uprostøed obrazovky: kosoètverec, název úkolu a pod ním cíl. Nìkolik oznámení najednou se skládá pod sebe, nejnovìjší nahoøe.</text>
+		<text>Nové, aktualizované, splnìné a nesplnìné úkoly a aktivní úkol po stisku klávesy „Aktuální úkol“ (vıchozí Tab) se ukazují nahoøe uprostøed obrazovky: kosoètverec, název úkolu a pod ním, co dìlat (stejnì jako v PDA). Nìkolik oznámení najednou se skládá pod sebe, nejnovìjší nahoøe. Ní je poloha textu pøi objevení místa a vzhled zpráv PDA.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_enabled">
 		<text>Nová oznámení úkolù</text>
@@ -1889,6 +1889,24 @@
 	</string>
 	<string id="ui_mcm_rz_taskhud_rows_desc">
 		<text>Kolik oznámení mùe bıt na obrazovce zároveò. Starší zmizí, kdy pøijde nové. Vıchozí 3.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom">
+		<text>Objevení místa dole uprostøed</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom_desc">
+		<text>Text pøi objevení nového místa (tøeba Vıtah) se ukáe dole uprostøed obrazovky nad HUD, ve vıšce dynamickıch zpráv. Vypnuto = nahoøe uprostøed jako v Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y">
+		<text>Vıška textu objevení místa</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y_desc">
+		<text>Svislá poloha textu v obrazovce 1024×768 (0 = horní okraj, 768 = spodní). Vıchozí 625. Zvyš, kdy se kryje s dynamickımi zprávami, sni, kdy zasahuje do HUD.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style">
+		<text>Novı vzhled zpráv PDA</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style_desc">
+		<text>Zprávy PDA vlevo dole (dynamické zprávy, zprávy od NPC a další) mají tmavı panel jako nápovìda v PDA: fotka v rámeèku, vırazné jméno odesílatele, èas a pod tím text. Potøebuje modded exes (callback on_news_received), jinak zùstane vzhled Anomaly. Vypnuto = vzhled Anomaly. Platí pro nové zprávy.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>Zvuk PDA u úkolu zùstává. Zprávy o úkolech se u nepøidávají do historie zpráv v PDA, úkoly samotné jsou dál v záloce úkolù.</text>

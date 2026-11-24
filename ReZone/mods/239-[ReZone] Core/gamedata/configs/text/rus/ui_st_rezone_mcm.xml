@@ -94,13 +94,13 @@
 		<text>Debug</text>
 	</string>
 	<string id="ui_mcm_rz_about">
-		<text>ReZone MCM 1.0.0</text>
+		<text>ReZone Core</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug">
 		<text>Debug log</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug_desc">
-		<text>Prints what ReZone MCM does. Testing only.</text>
+		<text>Выводит, что делает ReZone. Только для тестирования.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_fire_wound">
 		<text>Bullet (fire wound)</text>
@@ -361,10 +361,10 @@
 		<text>Vanilla Anomaly</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_trilogy">
-		<text>Trilogy (usable gear)</text>
+		<text>Лёгкая и Средняя (годные вещи)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_hard">
-		<text>Hard (almost all for parts)</text>
+		<text>Тяжёлая (почти всё на детали)</text>
 	</string>
 	<string id="ui_mcm_rz_loot_weapons">
 		<text>Weapons (condition %)</text>
@@ -658,19 +658,19 @@
 		<text>Пресет урона</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_desc">
-		<text>Как считаются твои выстрелы по NPC, а также профиль костюмов, которые носишь ты. CoP = Зов Припяти, Anomaly = NPC чуть мягче, Хардкор = смертельные хедшоты и разрушение брони. Профиль костюмов действует после загрузки сохранения.</text>
+		<text>Как считаются твои выстрелы по NPC, а также профиль костюмов, которые носишь ты. Лёгкая = как в Зове Припяти (по умолчанию), Средняя = NPC чуть мягче, как в Anomaly, Тяжёлая = смертельные хедшоты и разрушение брони. Профиль костюмов действует после загрузки сохранения.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_cop">
-		<text>CoP (по умолчанию)</text>
+		<text>Лёгкая (Зов Припяти)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_trilogy">
-		<text>Anomaly</text>
+		<text>Средняя (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_hardcore">
-		<text>Хардкор</text>
+		<text>Тяжёлая (Хардкор)</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
-		<text>CoP: если патрон пробивает броню, урон снижается в пропорции (пробитие - броня) / пробитие; если нет, проходит только заброневой удар. AP против брони, обычные против небронированных.</text>
+		<text>Лёгкая (Зов Припяти): если патрон пробивает броню, урон снижается в пропорции (пробитие - броня) / пробитие; если нет, проходит только заброневой удар. AP против брони, обычные против небронированных.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Материалы и крафт патронов</text>
@@ -709,16 +709,16 @@
 		<text>Мёртвый сталкер в закрытом костюме (СЕВА, экзо, ...) роняет и подходящий шлем, если у его модели нет отдельного. Те же правила выпадения, что и у костюма. Список: configs\rezone\helmets.ltx.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_cop">
-		<text>Зов Припяти — для новичков</text>
+		<text>Лёгкая (Зов Припяти)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_normal">
 		<text>Нормальный (ваниль)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_trilogy">
-		<text>Anomaly</text>
+		<text>Средняя (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_hardcore">
-		<text>Хардкор</text>
+		<text>Тяжёлая (Хардкор)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_info">
 		<text>Сколько урона получаешь ты, по типу попадания. 1 = без изменений (ваниль).</text>
@@ -727,7 +727,7 @@
 		<text>Задаёт все типы попаданий сразу, потом можно подстроить.</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_cop_note">
-		<text>Весь получаемый урон настраивается только здесь. Зов Припяти (для новичков): пули x0.35, мутанты x1 (как в CoP), падения и удары x0.75, взрывы x0.3, огонь x0.65, аномалии, радиация и пси x0.75. Anomaly: пули x0.7. Хардкор: всё сильнее. Всё на 1 = ваниль.</text>
+		<text>Весь получаемый урон настраивается только здесь. Лёгкая (Зов Припяти): пули x0.45, мутанты x1 (как в CoP), падения и удары x0.75, взрывы x0.3, огонь x0.65, аномалии и пси x0.75, радиация x1.25 (растёт с дозой). Средняя (Anomaly): пули x0.7. Тяжёлая (Хардкор): всё сильнее. Всё на 1 = ваниль.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_craft">
 		<text>Крафт</text>
@@ -736,7 +736,7 @@
 		<text>ReZone Crafting</text>
 	</string>
 	<string id="ui_mcm_rz_craft_info">
-		<text>Рецепты в ванильной мастерской и дополнительные вкладки (Убежище, Рюкзаки, Магазины). Что происходит с рецептами после прочтения.</text>
+		<text>Рецепты в ванильной мастерской и дополнительные вкладки (Убежище, Рюкзаки, Магазины), что происходит с рецептом после прочтения, окна мастерской и ремонт у механика.</text>
 	</string>
 	<string id="ui_mcm_rz_craft_remove_recipe">
 		<text>Рецепт исчезает после прочтения</text>
@@ -784,7 +784,7 @@
 		<text>Пресет игры</text>
 	</string>
 	<string id="ui_mcm_rz_master_info">
-		<text>Один выбор настраивает весь ReZone под стиль игры - баллистику, броню и износ, урон игроку, живучесть мутантов, лут, цены, торговцев и их запасы, артефакты - а с EFT Health System и его сложность.</text>
+		<text>Один выбор настраивает весь ReZone под стиль игры - баллистику, броню и износ, урон игроку, живучесть сталкеров и мутантов, лут, цены, торговцев и их запасы, артефакты - а с EFT Health System и его сложность. Лёгкая основана на Зове Припяти, Средняя на ванильной Anomaly, Тяжёлая - Хардкор.</text>
 	</string>
 	<string id="ui_mcm_rz_master">
 		<text>Пресет игры</text>
@@ -796,25 +796,25 @@
 		<text>Своё (вручную)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_cop">
-		<text>Зов Припяти — для новичков</text>
+		<text>Лёгкая (Зов Припяти)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_trilogy">
-		<text>Anomaly</text>
+		<text>Средняя (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_hardcore">
-		<text>Хардкор</text>
+		<text>Тяжёлая (Хардкор)</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Зов Припяти (исходный пресет): баллистика и броня CoP, урон игроку как в Зове Припяти (пули x0.35, аномалии и радиация x0.75), годный лут, сложность EFTH Зов Припяти. Цены, торговлю, мутантов, артефакты, износ и рецепты не меняет - действуют твои настройки на страницах.</text>
+		<text>Лёгкая (Зов Припяти): баллистика и броня CoP, закрытые костюмы со своей маской без отдельного шлема, реалистичные попадания в голову, износ костюмов 0.9, урон игроку как в CoP (пули x0.45, аномалии x0.75, радиация x1.25 растёт с дозой), артефакты в полях как в CoP, NPC хуже видят тебя сквозь растительность (сталкеры 0.5, мутанты 0.15), известные рецепты остаются, годный лут, сложность EFTH Зов Припяти. Цены, торговлю и мутантов не меняет.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
-		<text>Anomaly: пули x0.7, броня Anomaly, цены и торговля как в ванильной Anomaly, ванильные мутанты, годный лут, сложность EFTH Нормальная.</text>
+		<text>Средняя (Anomaly): баллистика и броня Anomaly, пули x0.7, износ костюмов 0.5, цены и торговля как в ванильной Anomaly без ограничения запасов, ванильные мутанты и штрафы артефактов, артефакты в полях Anomaly, годный лут, сложность EFTH Нормальная.</text>
 	</string>
 	<string id="ui_mcm_rz_master_hardcore_info">
-		<text>Хардкор: пули x1.5 и всё сильнее, смертельные хедшоты, разрушение брони, полный износ, живучие мутанты, экономика как в GAMMA (снаряжение дёшево, ограниченные запасы), мало годного лута, сложность EFTH Хардкор.</text>
+		<text>Тяжёлая (Хардкор): пули x1.5 и всё сильнее, сталкеры на 20 % и мутанты на 30 % живучее, смертельные хедшоты и разрушение брони, полный износ костюмов, сильнее штрафы артефактов, экономика как в GAMMA (снаряжение дёшево, ограниченные запасы), мало годного лута, артефакты в полях Хардкор, сложность EFTH Хардкор.</text>
 	</string>
 	<string id="ui_mcm_rz_master_note">
-		<text>Сразу после выбора отмечаются все опции, которые меняет пресет (число изменений внизу), сохраняются по «Применить». Потом можно всё подстроить вручную — пресет не перезапишет, пока не сменишь его снова. Цены, торговлю, эффекты и популяцию Зоны не меняет - популяция настраивается на своей странице.</text>
+		<text>Сразу после выбора отмечаются все опции, которые меняет пресет (число изменений внизу), сохраняются по «Применить». Потом можно всё подстроить вручную - пресет не перезапишет, пока не сменишь его снова. Средняя и Тяжёлая выключают бродячих сталкеров. Играть как GAMMA, запрет шлемов, эффекты, HUD и популяцию Зоны пресет не включает и не меняет - популяция настраивается на своей странице.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_fx">
 		<text>Эффекты</text>
@@ -1195,13 +1195,13 @@
 		<text>Ваниль</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_cop">
-		<text>Зов Припяти</text>
+		<text>Лёгкая (Зов Припяти)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_trilogy">
-		<text>Anomaly</text>
+		<text>Средняя (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_hardcore">
-		<text>Хардкор</text>
+		<text>Тяжёлая (Хардкор)</text>
 	</string>
 	<string id="ui_mcm_rz_afsp_chance">
 		<text>Шанс артефакта</text>
@@ -1624,7 +1624,7 @@
 		<text>level_vertex_id неверный (вне AI-сетки) – для world и corpse опусти указатель на землю</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation_desc">
-		<text>Как быстро накопленная радиация отнимает здоровье. 3 = тройная потеря при том же уровне радиации. Не меняет скорость набора радиации.</text>
+		<text>Как сильно накопленная радиация отнимает здоровье. Выше 1 потеря растёт с дозой: слабое облучение почти не мешает, высокая доза убивает быстро, как в CoP. 1 = ваниль, 1.25 = пресет Лёгкая (Зов Припяти) - полная радиация убивает примерно за 5 минут, 3 = очень опасно. Не меняет скорость набора радиации.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_rad_gain">
 		<text>Радиация – набор</text>
@@ -1855,16 +1855,16 @@
 		<text>При начале новой игры ReZone настраивается по тому, что игрок выбрал на экране выбора группировки. Сложность управляет боем, здоровьем и миром, Экономика - ценами, лутом, артефактами и износом костюмов.</text>
 	</string>
 	<string id="ui_mcm_rz_master_link_info">
-		<text>Лёгкая = CoP, Средняя = Трилогия, Тяжёлая = Хардкор. Сложность и Экономику можно сочетать (например, Тяжёлая сложность и Лёгкая экономика) - тогда пресет покажет Свой. Действует только при начале новой игры, текущую игру не меняет; потом всё можно настроить вручную.</text>
+		<text>Лёгкая = Лёгкая (Зов Припяти), Средняя = Средняя (Anomaly), Тяжёлая и Хардкор = Тяжёлая (Хардкор). Сложность и Экономику можно сочетать (например, Тяжёлая сложность и Лёгкая экономика) - тогда пресет покажет Свой. Действует только при начале новой игры, текущую игру не меняет; потом всё можно настроить вручную.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_taskhud">
-		<text>Уведомления о заданиях</text>
+		<text>Уведомления и сообщения</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_title">
-		<text>Уведомления о заданиях</text>
+		<text>Уведомления и сообщения</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_info">
-		<text>New, updated, completed and failed tasks, and the active task shown with the "Current task" key (Tab by default), appear at the top centre of the screen: a diamond, the task name and the objective below it. Several notifications stack, newest on top.</text>
+		<text>Новые, обновлённые, выполненные и проваленные задания и активное задание по клавише «Текущее задание» (по умолчанию Tab) показываются вверху по центру экрана: ромб, название задания и под ним, что делать (как в КПК). Несколько уведомлений складываются друг под другом, новое сверху. Ниже - положение текста при открытии места и вид сообщений КПК.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_enabled">
 		<text>New task notifications</text>
@@ -1889,6 +1889,24 @@
 	</string>
 	<string id="ui_mcm_rz_taskhud_rows_desc">
 		<text>How many notifications can be on screen at the same time. Older ones disappear when a new one arrives. Default 3.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom">
+		<text>Открытие места внизу по центру</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom_desc">
+		<text>Текст при открытии нового места (например, Лифт) показывается внизу по центру экрана над HUD, на высоте динамических новостей. Выключено = вверху по центру, как в Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y">
+		<text>Высота текста открытия места</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y_desc">
+		<text>Вертикальное положение текста на экране 1024x768 (0 = верхний край, 768 = нижний). По умолчанию 625. Увеличь, если перекрывает динамические новости, уменьши, если залезает на HUD.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style">
+		<text>Новый вид сообщений КПК</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style_desc">
+		<text>Сообщения КПК слева внизу (динамические новости, сообщения NPC и другие) получают тёмную панель как подсказка в КПК: фото в рамке, заметное имя отправителя, время и текст ниже. Нужны modded exes (callback on_news_received), иначе остаётся вид Anomaly. Выключено = вид Anomaly. Действует для новых сообщений.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>The PDA task sound stays. Task messages are no longer added to the PDA message history; the tasks themselves remain in the tasks tab.</text>

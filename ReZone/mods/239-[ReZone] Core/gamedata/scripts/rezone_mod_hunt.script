@@ -444,6 +444,10 @@ function can_work(npc)
 	return true
 end
 
+function is_hunting(id)
+	return cfg.on and id ~= nil and orders[id] ~= nil
+end
+
 local function throw_bolt(npc, target)
 	if not (cfg.bolts and ini_sys:section_exist("bolt")) then return end
 	local from = npc:bone_position("bip01_r_hand")

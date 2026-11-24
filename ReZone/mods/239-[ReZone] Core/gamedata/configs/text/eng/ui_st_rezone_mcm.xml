@@ -94,13 +94,13 @@
 		<text>Debug</text>
 	</string>
 	<string id="ui_mcm_rz_about">
-		<text>ReZone MCM 1.0.0</text>
+		<text>ReZone Core</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug">
 		<text>Debug log</text>
 	</string>
 	<string id="ui_mcm_rz_debug_debug_desc">
-		<text>Prints what ReZone MCM does. Testing only.</text>
+		<text>Prints what ReZone does. Testing only.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_fire_wound">
 		<text>Bullet (fire wound)</text>
@@ -361,7 +361,7 @@
 		<text>Vanilla Anomaly</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_trilogy">
-		<text>Trilogy (usable gear)</text>
+		<text>Easy and Medium (usable gear)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_loot_hard">
 		<text>Hard (almost all for parts)</text>
@@ -658,19 +658,19 @@
 		<text>Damage preset</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_desc">
-		<text>How your shots on NPCs are calculated and also the profile of the suits you wear. CoP = Call of Pripyat, Anomaly = slightly softer NPCs, Hardcore = lethal headshots and armor breaking. The suit profile applies after loading a save.</text>
+		<text>How your shots on NPCs are calculated and also the profile of the suits you wear. Easy = like Call of Pripyat (default), Medium = slightly softer NPCs like Anomaly, Hard = lethal headshots and armor breaking. The suit profile applies after loading a save.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_cop">
-		<text>CoP (default)</text>
+		<text>Easy (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_trilogy">
-		<text>Anomaly</text>
+		<text>Medium (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_ball_hardcore">
-		<text>Hardcore</text>
+		<text>Hard (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_ball_preset_note">
-		<text>CoP: if the round beats the armor, damage drops by (AP - armor) / AP; if not, only blunt impact gets through. Use AP rounds against armored targets, regular ones against unarmored.</text>
+		<text>Easy (Call of Pripyat): if the round beats the armor, damage drops by (AP - armor) / AP; if not, only blunt impact gets through. Use AP rounds against armored targets, regular ones against unarmored.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_craft">
 		<text>Ammo materials and crafting</text>
@@ -709,16 +709,16 @@
 		<text>A dead stalker in a closed suit (SEVA, exo, ...) also drops the matching helmet when his model has no separate one. Same drop rules as the suit. List: configs\rezone\helmets.ltx.</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_cop">
-		<text>Call of Pripyat - beginners</text>
+		<text>Easy (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_normal">
 		<text>Normal (vanilla)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_trilogy">
-		<text>Anomaly</text>
+		<text>Medium (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_pd_hardcore">
-		<text>Hardcore</text>
+		<text>Hard (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_info">
 		<text>How much damage you take, per hit type. 1 = no change (vanilla).</text>
@@ -727,7 +727,7 @@
 		<text>Sets all hit types at once, fine-tune afterwards.</text>
 	</string>
 	<string id="ui_mcm_rz_pdmg_cop_note">
-		<text>All damage you take is set only here. Call of Pripyat (beginners): bullets x0.45, mutants x1 (as in CoP), falls and blows x0.75, explosions x0.3, fire x0.65, anomalies and psi x0.75, radiation x1.25 (escalates with dose). Anomaly: bullets x0.7. Hardcore: everything stronger. Everything at 1 = vanilla.</text>
+		<text>All damage you take is set only here. Easy (Call of Pripyat): bullets x0.45, mutants x1 (as in CoP), falls and blows x0.75, explosions x0.3, fire x0.65, anomalies and psi x0.75, radiation x1.25 (escalates with dose). Medium (Anomaly): bullets x0.7. Hard (Hardcore): everything stronger. Everything at 1 = vanilla.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_craft">
 		<text>Crafting</text>
@@ -736,7 +736,7 @@
 		<text>ReZone Crafting</text>
 	</string>
 	<string id="ui_mcm_rz_craft_info">
-		<text>Recipes in the vanilla workshop and extra tabs (Hideout, Backpacks, Magazines). What happens to recipes after reading.</text>
+		<text>Recipes in the vanilla workshop and extra tabs (Hideout, Backpacks, Magazines), what happens to recipes after reading, workshop windows and repairs at the mechanic.</text>
 	</string>
 	<string id="ui_mcm_rz_craft_remove_recipe">
 		<text>Recipe disappears after reading</text>
@@ -784,7 +784,7 @@
 		<text>Game preset</text>
 	</string>
 	<string id="ui_mcm_rz_master_info">
-		<text>One choice sets all of ReZone for a play style - ballistics, armor and wear, player damage, mutant toughness, loot, prices, traders and their stock, artefacts - and with EFT Health System its difficulty too. Wandering stalkers and trade bans (Play like GAMMA, helmets) are never turned on by a preset, you enable them yourself.</text>
+		<text>One choice sets all of ReZone for a play style - ballistics, armor and wear, player damage, stalker and mutant toughness, loot, prices, traders and their stock, artefacts - and with EFT Health System its difficulty too. Easy is based on Call of Pripyat, Medium on vanilla Anomaly, Hard is Hardcore.</text>
 	</string>
 	<string id="ui_mcm_rz_master">
 		<text>Game preset</text>
@@ -796,25 +796,25 @@
 		<text>Custom (manual)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_cop">
-		<text>Call of Pripyat - beginners</text>
+		<text>Easy (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_trilogy">
-		<text>Anomaly</text>
+		<text>Medium (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_master_hardcore">
-		<text>Hardcore</text>
+		<text>Hard (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Call of Pripyat: CoP ballistics and armor without helmets from closed suits, realistic head hits, wear 0.9, Call of Pripyat player damage (bullets x0.45, anomalies x0.75, radiation x1.25 escalating with dose), CoP field artefacts, braver knife NPCs (1.55, chance 0.55), slower NPC detection (stalkers 0.5, mutants 0.15), known recipes kept, usable gear from bodies, EFTH difficulty Call of Pripyat. Prices, trade and mutants are not changed.</text>
+		<text>Easy (Call of Pripyat): CoP ballistics and armor, closed suits keep their own mask without a separate helmet, realistic head hits, suit wear 0.9, CoP player damage (bullets x0.45, anomalies x0.75, radiation x1.25 escalating with dose), CoP field artefacts, NPCs see you worse through vegetation (stalkers 0.5, mutants 0.15), known recipes kept, usable gear from bodies, EFTH difficulty Call of Pripyat. Prices, trade and mutants are not changed.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
-		<text>Anomaly: bullets x0.7, Anomaly armor, prices and trade like vanilla Anomaly, vanilla mutants, usable gear from bodies, EFTH difficulty Normal.</text>
+		<text>Medium (Anomaly): Anomaly ballistics and armor, bullets x0.7, suit wear 0.5, prices and trade like vanilla Anomaly without stock limits, vanilla mutants and artefact penalties, Anomaly field artefacts, usable gear from bodies, EFTH difficulty Normal.</text>
 	</string>
 	<string id="ui_mcm_rz_master_hardcore_info">
-		<text>Hardcore: bullets x1.5 and everything stronger, lethal headshots, armor breaking, full wear, tougher mutants, GAMMA-like economy (gear sells cheap, limited stock), little usable loot, EFTH difficulty Hardcore.</text>
+		<text>Hard (Hardcore): bullets x1.5 and everything stronger, stalkers 20 % and mutants 30 % tougher, lethal headshots and armor breaking, full suit wear, stronger artefact penalties, GAMMA-like economy (gear sells cheap, limited stock), little usable loot, Hardcore field artefacts, EFTH difficulty Hardcore.</text>
 	</string>
 	<string id="ui_mcm_rz_master_note">
-		<text>All options the preset changes are marked right after you pick it (change count at the bottom) and saved on Apply. Afterwards you can fine-tune anything by hand - the preset won't overwrite it until you change it again. Prices, trade, effects and Zone population are not changed - set population on its own page.</text>
+		<text>All options the preset changes are marked right after you pick it (change count at the bottom) and saved on Apply. Afterwards you can fine-tune anything by hand - the preset won't overwrite it until you change it again. Medium and Hard turn wandering stalkers off. Play like GAMMA, helmet bans, effects, HUD and Zone population are never turned on or changed by a preset - set population on its own page.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_fx">
 		<text>Effects</text>
@@ -1195,13 +1195,13 @@
 		<text>Vanilla</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_cop">
-		<text>Call of Pripyat</text>
+		<text>Easy (Call of Pripyat)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_trilogy">
-		<text>Anomaly</text>
+		<text>Medium (Anomaly)</text>
 	</string>
 	<string id="ui_mcm_lst_rz_afsp_p_hardcore">
-		<text>Hardcore</text>
+		<text>Hard (Hardcore)</text>
 	</string>
 	<string id="ui_mcm_rz_afsp_chance">
 		<text>Artefact chance</text>
@@ -1624,7 +1624,7 @@
 		<text>level_vertex_id invalid (outside AI mesh) – for world and corpse move the marker to the ground</text>
 	</string>
 	<string id="ui_mcm_rz_hit_radiation_desc">
-		<text>How strongly accumulated radiation drains your health. Above 1 the drain escalates with the dose: light exposure barely matters, a high dose kills fast like in CoP. 1 = vanilla, 1.25 = CoP preset (full radiation kills in about 5 minutes), 3 = very dangerous. Does not change how fast you gain radiation.</text>
+		<text>How strongly accumulated radiation drains your health. Above 1 the drain escalates with the dose: light exposure barely matters, a high dose kills fast like in CoP. 1 = vanilla, 1.25 = Easy (Call of Pripyat) preset - full radiation kills in about 5 minutes, 3 = very dangerous. Does not change how fast you gain radiation.</text>
 	</string>
 	<string id="ui_mcm_rz_hit_rad_gain">
 		<text>Radiation – gain</text>
@@ -1855,16 +1855,16 @@
 		<text>When a new game starts, ReZone is set up from what the player picks on the faction select screen. Difficulty controls combat, health and the world, Economy controls prices, loot, artefacts and suit wear.</text>
 	</string>
 	<string id="ui_mcm_rz_master_link_info">
-		<text>Easy = CoP, Medium = Trilogy, Hard = Hardcore. Difficulty and Economy can be combined (e.g. Hard difficulty with Easy economy) - the preset then shows Custom. Applies only when a new game starts, an ongoing game is not changed; afterwards you can adjust anything by hand.</text>
+		<text>Easy = Easy (Call of Pripyat), Medium = Medium (Anomaly), Hard and Hardcore = Hard (Hardcore). Difficulty and Economy can be combined (e.g. Hard difficulty with Easy economy) - the preset then shows Custom. Applies only when a new game starts, an ongoing game is not changed; afterwards you can adjust anything by hand.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_taskhud">
-		<text>Task notifications</text>
+		<text>Notifications and messages</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_title">
-		<text>Task notifications</text>
+		<text>Notifications and messages</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_info">
-		<text>New, updated, completed and failed tasks, and the active task shown with the "Current task" key (Tab by default), appear at the top centre of the screen: a diamond, the task name and the objective below it. Several notifications stack, newest on top.</text>
+		<text>New, updated, completed and failed tasks, and the active task shown with the "Current task" key (Tab by default), appear at the top centre of the screen: a diamond, the task name and below it what to do (same as in the PDA). Several notifications stack, newest on top. Below are the location discovery text position and the PDA message style.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_enabled">
 		<text>New task notifications</text>
@@ -1889,6 +1889,24 @@
 	</string>
 	<string id="ui_mcm_rz_taskhud_rows_desc">
 		<text>How many notifications can be on screen at the same time. Older ones disappear when a new one arrives. Default 3.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom">
+		<text>Location discovery at bottom center</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_bottom_desc">
+		<text>The text shown when you discover a new location (e.g. Elevator) appears at the bottom center of the screen above the HUD, at the height of the dynamic news. Off = top center as in Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y">
+		<text>Location discovery text height</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_fade_y_desc">
+		<text>Vertical position of the text on a 1024x768 screen (0 = top edge, 768 = bottom). Default 625. Raise it if it overlaps the dynamic news, lower it if it covers the HUD.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style">
+		<text>New PDA message style</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_style_desc">
+		<text>PDA messages at the bottom left (dynamic news, NPC messages and others) get a dark panel like the PDA tooltip: framed portrait, prominent sender name, time and the text below. Needs modded exes (on_news_received callback), otherwise the Anomaly look stays. Off = Anomaly look. Applies to new messages.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>The PDA task sound stays. Task messages are no longer added to the PDA message history; the tasks themselves remain in the tasks tab.</text>

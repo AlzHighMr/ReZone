@@ -1,4 +1,4 @@
-VERSION = "2.6.32"
+VERSION = "2.6.37"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -556,6 +556,11 @@ local function ot_taskhud()
 		{ id = "pos_y", type = "track", val = 2, def = 60, min = 0, max = 300, step = 5, hint = "rz_taskhud_pos_y" },
 		{ id = "time", type = "track", val = 2, def = 7, min = 3, max = 20, step = 1, hint = "rz_taskhud_time" },
 		{ id = "rows", type = "track", val = 2, def = 3, min = 1, max = 5, step = 1, hint = "rz_taskhud_rows" },
+		line("l2"),
+		check("fade_bottom", true, "rz_taskhud_fade_bottom"),
+		{ id = "fade_y", type = "track", val = 2, def = 625, min = 450, max = 740, step = 5, hint = "rz_taskhud_fade_y" },
+		line("l3"),
+		check("news_style", true, "rz_taskhud_news_style"),
 		desc("n", "ui_mcm_rz_taskhud_note", CLR_NOTE),
 	})
 end
