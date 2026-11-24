@@ -1,0 +1,18 @@
+local SHIFT = -26
+
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		if xml_file_name ~= [[ui\game_tutorials.xml]] then
+			return
+		end
+		local res = xml_obj:query("game_loaded auto_static")
+		for i = 1, #res do
+			local el = res[i]
+			local attr = xml_obj:getElementAttr(el)
+			local y = attr and tonumber(attr.y)
+			if y then
+				xml_obj:setElementAttr(el, { y = tostring(y + SHIFT) })
+			end
+		end
+	end)
+end
