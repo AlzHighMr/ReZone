@@ -11,12 +11,12 @@ end
 
 local MAP = {
 
-	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, pop = 2, efth = 5 },
+	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, efth = 5 },
 
-	[2] = { ball = 1, pdmg = 3, loot = 2, pop = 1, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
+	[2] = { ball = 1, pdmg = 3, loot = 2, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
 	        prices = 1, prices_on = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
 
-	[3] = { ball = 2, pdmg = 4, loot = 3, pop = 4, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
+	[3] = { ball = 2, pdmg = 4, loot = 3, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
 	        prices = 6, prices_on = true, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
 }
 
@@ -34,11 +34,6 @@ local function build(id)
 		s["rz_econ/rz_loot/enabled"] = true
 		s["rz_econ/rz_loot/preset"] = m.loot
 		copy_into(s, "rz_econ/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
-		if rezone_mod_population then
-			s["rz_world/rz_pop/enabled"] = true
-			s["rz_world/rz_pop/preset"] = m.pop
-			copy_into(s, "rz_world/rz_pop/", rezone_mod_population.PRESETS[m.pop])
-		end
 		s["rz_combat/rz_ball/wear"] = 0.9
 		s["rz_combat/rz_ball/helmets"] = false
 		s["rz_combat/rz_ball/helm_drop"] = false
@@ -89,11 +84,6 @@ local function build(id)
 	s["rz_econ/rz_loot/enabled"] = true
 	s["rz_econ/rz_loot/preset"] = m.loot
 	copy_into(s, "rz_econ/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
-	if rezone_mod_population then
-		s["rz_world/rz_pop/enabled"] = true
-		s["rz_world/rz_pop/preset"] = m.pop
-		copy_into(s, "rz_world/rz_pop/", rezone_mod_population.PRESETS[m.pop])
-	end
 	if rezone_mod_afspawn then
 		s["rz_world/rz_afsp/enabled"] = true
 		s["rz_world/rz_afsp/preset"] = m.afsp

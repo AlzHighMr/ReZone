@@ -784,7 +784,7 @@
 		<text>Game preset</text>
 	</string>
 	<string id="ui_mcm_rz_master_info">
-		<text>One choice sets all of ReZone for a play style - ballistics, armor and wear, player damage, mutant toughness, loot, prices, traders and their stock, artefacts and population - and with EFT Health System its difficulty too. Wandering stalkers and trade bans (Play like GAMMA, helmets) are never turned on by a preset, you enable them yourself.</text>
+		<text>One choice sets all of ReZone for a play style - ballistics, armor and wear, player damage, mutant toughness, loot, prices, traders and their stock, artefacts - and with EFT Health System its difficulty too. Wandering stalkers and trade bans (Play like GAMMA, helmets) are never turned on by a preset, you enable them yourself.</text>
 	</string>
 	<string id="ui_mcm_rz_master">
 		<text>Game preset</text>
@@ -805,16 +805,16 @@
 		<text>Hardcore</text>
 	</string>
 	<string id="ui_mcm_rz_master_cop_info">
-		<text>Call of Pripyat: CoP ballistics and armor without helmets from closed suits, realistic head hits, wear 0.9, Call of Pripyat player damage (bullets x0.45, anomalies x0.75, radiation x1.25 escalating with dose), CoP field artefacts, braver knife NPCs (1.55, chance 0.55), slower NPC detection (stalkers 0.5, mutants 0.15), known recipes kept, usable gear from bodies, calmer Zone, EFTH difficulty Call of Pripyat. Prices, trade and mutants are not changed.</text>
+		<text>Call of Pripyat: CoP ballistics and armor without helmets from closed suits, realistic head hits, wear 0.9, Call of Pripyat player damage (bullets x0.45, anomalies x0.75, radiation x1.25 escalating with dose), CoP field artefacts, braver knife NPCs (1.55, chance 0.55), slower NPC detection (stalkers 0.5, mutants 0.15), known recipes kept, usable gear from bodies, EFTH difficulty Call of Pripyat. Prices, trade and mutants are not changed.</text>
 	</string>
 	<string id="ui_mcm_rz_master_trilogy_info">
-		<text>Anomaly: bullets x0.7, Anomaly armor, prices and trade like vanilla Anomaly, vanilla mutants, usable gear from bodies, vanilla population, EFTH difficulty Normal.</text>
+		<text>Anomaly: bullets x0.7, Anomaly armor, prices and trade like vanilla Anomaly, vanilla mutants, usable gear from bodies, EFTH difficulty Normal.</text>
 	</string>
 	<string id="ui_mcm_rz_master_hardcore_info">
-		<text>Hardcore: bullets x1.5 and everything stronger, lethal headshots, armor breaking, full wear, tougher mutants, GAMMA-like economy (gear sells cheap, limited stock), little usable loot, dangerous Zone, EFTH difficulty Hardcore.</text>
+		<text>Hardcore: bullets x1.5 and everything stronger, lethal headshots, armor breaking, full wear, tougher mutants, GAMMA-like economy (gear sells cheap, limited stock), little usable loot, EFTH difficulty Hardcore.</text>
 	</string>
 	<string id="ui_mcm_rz_master_note">
-		<text>All options the preset changes are marked right after you pick it (change count at the bottom) and saved on Apply. Afterwards you can fine-tune anything by hand - the preset won't overwrite it until you change it again. Prices, trade and effects are not changed. Population applies to newly spawned squads.</text>
+		<text>All options the preset changes are marked right after you pick it (change count at the bottom) and saved on Apply. Afterwards you can fine-tune anything by hand - the preset won't overwrite it until you change it again. Prices, trade, effects and Zone population are not changed - set population on its own page.</text>
 	</string>
 	<string id="ui_mcm_menu_rz_fx">
 		<text>Effects</text>

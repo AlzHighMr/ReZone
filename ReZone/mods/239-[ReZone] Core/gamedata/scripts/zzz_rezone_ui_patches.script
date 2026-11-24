@@ -262,7 +262,7 @@ end
 
 local orig_send_task = nil
 local function send_task(actor, typ, tsk)
-	if not (topt.on and db.actor and tsk) or db.actor:is_talking() then
+	if not (topt.on and db.actor and tsk) then
 		return orig_send_task(actor, typ, tsk)
 	end
 	local ok, err = pcall(function()
@@ -272,14 +272,31 @@ local function send_task(actor, typ, tsk)
 		core.warn("ui: ukol %s", tostring(err))
 		return orig_send_task(actor, typ, tsk)
 	end
+	if db.actor:is_talking() then
+		return orig_send_task(actor, typ, tsk)
+	end
 	xr_sound.set_sound_play(AC_ID, "pda_task")
 	return true
 end
 
+local orig_fade_msg = nil
+local function fade_msg(msg, tm, cl, snd)
+	if topt.on and type(msg) == "string" then
+		local pre = game.translate_string("general_new_task")
+		if pre and pre ~= "" and msg:sub(1, #pre) == pre then return end
+	end
+	return orig_fade_msg(msg, tm, cl, snd)
+end
+
 local function patch_tasks()
-	if orig_send_task or not (news_manager and news_manager.send_task) then return end
-	orig_send_task = news_manager.send_task
-	news_manager.send_task = send_task
+	if not orig_send_task and news_manager and news_manager.send_task then
+		orig_send_task = news_manager.send_task
+		news_manager.send_task = send_task
+	end
+	if not orig_fade_msg and actor_menu and actor_menu.set_fade_msg then
+		orig_fade_msg = actor_menu.set_fade_msg
+		actor_menu.set_fade_msg = fade_msg
+	end
 end
 
 local function task_first_update()
