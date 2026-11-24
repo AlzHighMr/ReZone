@@ -26,7 +26,7 @@ NAMES = { [1] = "default", [2] = "arty", [3] = "helmets", [4] = "guns", [5] = "a
 DEFAULT = 1
 
 local function P(t)
-	local r = { sell_all = 1, buy_all = 1 }
+	local r = {}
 	for _, k in ipairs(KINDS) do r[k] = 1 end
 	for k, v in pairs(t or {}) do r[k] = v end
 	return r
@@ -48,5 +48,5 @@ PRESETS = {
 	[4] = P(GUNS),
 	[5] = P(merge(ARTY, HELM, GUNS)),
 
-	[6] = P(merge(ARTY, { sell_all = 0.6, buy_all = 1.2, w_ammo = 0.8 })),
+	[6] = P(merge(ARTY, { w_ammo = 0.8 })),
 }

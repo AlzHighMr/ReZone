@@ -4,7 +4,6 @@ local PAGE = rezone_mcm.path("rz_prices")
 local EPS = 0.0001
 
 local by_kind = {}
-local sell_all, buy_all = 1, 1
 local registered = false
 local kind_cache = {}
 
@@ -26,7 +25,6 @@ end
 local function on_get_item_cost(kind, obj, profile, calculated_cost, ret)
 	if not (obj and profile) then return end
 	local m = by_kind[kind_of(obj:section())] or 1
-	m = m * ((profile.mode == 1) and sell_all or buy_all)
 	if math.abs(m - 1) < EPS then return end
 	local old = tonumber(ret.new_cost) or calculated_cost or 0
 	ret.new_cost = math.floor(old * m + 0.5)
@@ -57,9 +55,6 @@ function load()
 		by_kind[k] = v
 		if math.abs(v - 1) > EPS then changed = true end
 	end
-	sell_all = g("sell_all") or 1
-	buy_all = g("buy_all") or 1
-	if math.abs(sell_all - 1) > EPS or math.abs(buy_all - 1) > EPS then changed = true end
 	set_registered(g("enabled") == true and changed)
 end
 

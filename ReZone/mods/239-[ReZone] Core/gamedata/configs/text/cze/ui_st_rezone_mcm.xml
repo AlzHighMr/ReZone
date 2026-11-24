@@ -208,7 +208,7 @@
 		<text>Ceny u obchodníkù</text>
 	</string>
 	<string id="ui_mcm_rz_prices_info">
-		<text>Násobiè ceny podle druhu pøedmìtu. 1.0 = beze zmìny, 2.0 = dvojnásobek. Platí pro nákup i prodej, celkové násobièe zvláš.</text>
+		<text>Násobiè ceny podle druhu pøedmìtu. 1.0 = beze zmìny, 2.0 = dvojnásobek. Platí pro nákup i prodej. Celkové ceny pøi nákupu a prodeji se nastavují jen v nastavení obtínosti Anomaly (Ekonomika).</text>
 	</string>
 	<string id="ui_mcm_rz_prices_warn">
 		<text>Pozor: je zapnutı i mod Configurable Item Cost Modifiers. Vypni ho, jinak se ceny násobí dvakrát.</text>
@@ -242,18 +242,6 @@
 	</string>
 	<string id="ui_mcm_lst_rz_price_gamma">
 		<text>ReZone: jako GAMMA</text>
-	</string>
-	<string id="ui_mcm_rz_prices_sell_all">
-		<text>Kdy prodáváš (celkem)</text>
-	</string>
-	<string id="ui_mcm_rz_prices_sell_all_desc">
-		<text>Kolik ti obchodník zaplatí. 0.6 = 60 % ceny.</text>
-	</string>
-	<string id="ui_mcm_rz_prices_buy_all">
-		<text>Kdy kupuješ (celkem)</text>
-	</string>
-	<string id="ui_mcm_rz_prices_buy_all_desc">
-		<text>Kolik zaplatíš obchodníkovi. 1.2 = o 20 % drá.</text>
 	</string>
 	<string id="ui_mcm_rz_price_g_arty">
 		<text>Artefakty a mutanti</text>
@@ -1859,5 +1847,65 @@
 	</string>
 	<string id="ui_mcm_rz_wpnwear_note">
 		<text>Zmìna platí hned, i v rozehrané høe. Opravy, sady na opravu a šance na zaseknutí se nemìní – jen rychlost opotøebení.</text>
+	</string>
+	<string id="ui_mcm_rz_master_link">
+		<text>Podle obtínosti nové hry</text>
+	</string>
+	<string id="ui_mcm_rz_master_link_desc">
+		<text>Pøi zaèátku nové hry se ReZone nastaví podle toho, co hráè vybere v obrazovce vıbìru frakce. Obtínost øídí boj, zdraví a svìt, Ekonomie øídí ceny, loot, artefakty a opotøebení oblekù.</text>
+	</string>
+	<string id="ui_mcm_rz_master_link_info">
+		<text>Snadná = CoP, Støední = Trilogie, Tìká = Hardcore. Obtínost a Ekonomii lze kombinovat (tøeba Tìká obtínost a Snadná ekonomie) – pøedvolba pak ukáe Vlastní. Platí jen pøi zaèátku nové hry, rozehranou hru to nezmìní; potom mùeš cokoli upravit ruènì.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_taskhud">
+		<text>Oznámení úkolù</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_title">
+		<text>Oznámení úkolù</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_info">
+		<text>Nové, aktualizované, splnìné a nesplnìné úkoly a aktivní úkol po stisku klávesy „Aktuální úkol“ (vıchozí Tab) se ukazují nahoøe uprostøed obrazovky: kosoètverec, název úkolu a pod ním cíl. Nìkolik oznámení najednou se skládá pod sebe, nejnovìjší nahoøe.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_enabled">
+		<text>Nová oznámení úkolù</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_enabled_desc">
+		<text>Vypnuto = úkoly se ukazují jako zprávy PDA jako døív. Pøi rozhovoru se úkol vdy ukáe v oknì rozhovoru.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_pos_y">
+		<text>Vıška od horního okraje</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_pos_y_desc">
+		<text>Jak daleko od horního okraje obrazovky zaèínají oznámení. Vıchozí 60. Posuò ní, kdy se pøekrıvají s kompasem nebo jinım prvkem HUD.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_time">
+		<text>Doba zobrazení (s)</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_time_desc">
+		<text>Kolik sekund zùstane oznámení na obrazovce, ne zmizí. Vıchozí 7. Kdy máš otevøenı inventáø nebo PDA, èas se zastaví.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_rows">
+		<text>Nejvíc oznámení najednou</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_rows_desc">
+		<text>Kolik oznámení mùe bıt na obrazovce zároveò. Starší zmizí, kdy pøijde nové. Vıchozí 3.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_note">
+		<text>Zvuk PDA u úkolu zùstává. Zprávy o úkolech se u nepøidávají do historie zpráv v PDA, úkoly samotné jsou dál v záloce úkolù.</text>
+	</string>
+	<string id="st_rz_task_complete">
+		<text>Úkol splnìn</text>
+	</string>
+	<string id="st_rz_task_fail">
+		<text>Úkol nesplnìn</text>
+	</string>
+	<string id="st_rz_task_reversed">
+		<text>Úkol zrušen</text>
+	</string>
+	<string id="st_rz_task_new">
+		<text>Novı úkol</text>
+	</string>
+	<string id="st_rz_task_updated">
+		<text>Úkol aktualizován</text>
 	</string>
 </string_table>

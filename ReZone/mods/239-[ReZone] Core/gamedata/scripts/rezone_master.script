@@ -1,5 +1,6 @@
 local ROOT = "rezone/"
 MASTER = ROOT .. "rz_main/rz_master/master"
+LINK = ROOT .. "rz_main/rz_master/link"
 local APPLIED = "rz_master_applied"
 
 NAMES = { [0] = "custom", [1] = "cop", [2] = "trilogy", [3] = "hardcore" }
@@ -128,6 +129,28 @@ function apply(id)
 	return n
 end
 
+local function is_eco(k)
+	return k:find("^rz_econ/") ~= nil or k:find("^rz_world/rz_afsp/") ~= nil or k == "rz_combat/rz_ball/wear"
+end
+
+function apply_split(game_id, eco_id)
+	local set = {}
+	for k, v in pairs(build(game_id)) do
+		if not is_eco(k) then set[k] = v end
+	end
+	for k, v in pairs(build(eco_id)) do
+		if is_eco(k) then set[k] = v end
+	end
+	local n = 0
+	for k, v in pairs(set) do
+		local path = (k:sub(1, 1) == "!") and k:sub(2) or (ROOT .. k)
+		local okh, has = pcall(rezone_core.mcm_has, path)
+		if okh and has and pcall(ui_mcm.set, path, v) then n = n + 1 end
+	end
+	log("obtiznost %s, progrese %s: nastaveno %d voleb", NAMES[game_id] or tostring(game_id), NAMES[eco_id] or tostring(eco_id), n)
+	return n
+end
+
 function on_select(path, opt, value, v)
 	local id = tonumber(value) or 0
 	if id == 0 then return end
@@ -187,9 +210,47 @@ function hook_gui()
 	end
 end
 
+local function diff_type(t)
+	local n = t and tonumber(t.type)
+	if not n then return nil end
+	return math.max(1, math.min(3, math.floor(n)))
+end
+
+local function link_new_game()
+	local st = alife_storage_manager and alife_storage_manager.get_state()
+	if not st or st.rz_diff_link ~= nil then return end
+	if has_alife_info("start_equippment_handled") or not (ui_mcm and ui_mcm.get and ui_mcm.set) then
+		st.rz_diff_link = false
+		return
+	end
+	if rezone_core.get(LINK) == false then
+		st.rz_diff_link = false
+		return
+	end
+	local g, e = diff_type(st.diff_game), diff_type(st.diff_eco)
+	if not (g and e) then
+		st.rz_diff_link = false
+		return
+	end
+	local id = (g == e) and g or 0
+	busy = true
+	pcall(ui_mcm.set, MASTER, id)
+	applied_set(id)
+	apply_split(g, e)
+	st.rz_diff_link = { g, e }
+	pcall(SendScriptCallback, "on_option_change", true)
+	busy = false
+end
+
+local function on_first_update()
+	pcall(link_new_game)
+	busy = false
+	on_option_change()
+end
+
 function on_game_start()
 	hook_gui()
 	RegisterScriptCallback("on_option_change", on_option_change)
 
-	RegisterScriptCallback("actor_on_first_update", on_option_change)
+	RegisterScriptCallback("actor_on_first_update", on_first_update)
 end

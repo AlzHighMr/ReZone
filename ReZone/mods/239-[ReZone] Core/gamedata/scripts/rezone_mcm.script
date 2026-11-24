@@ -1,4 +1,4 @@
-VERSION = "2.6.28"
+VERSION = "2.6.31"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -10,7 +10,7 @@ PAGE_TAB = {
 	rz_mutdmg = TAB_COMBAT, rz_vision = TAB_COMBAT,
 	rz_pop = TAB_WORLD, rz_walk = TAB_WORLD, rz_afsp = TAB_WORLD, rz_hunt = TAB_WORLD, rz_ranks = TAB_WORLD, rz_secrets = TAB_WORLD,
 	rz_meds = TAB_SURV, rz_needs = TAB_SURV, rz_af = TAB_SURV,
-	rz_fx = TAB_OT, rz_hud = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
+	rz_fx = TAB_OT, rz_hud = TAB_OT, rz_taskhud = TAB_OT, rz_binoc = TAB_OT, rz_pda = TAB_OT, rz_menu = TAB_OT, rz_debug = TAB_OT,
 }
 
 function path(pg)
@@ -224,8 +224,6 @@ local function gp_prices()
 		line("l1"),
 		check("enabled", false, "rz_prices_enabled"),
 		{ id = "preset", type = "preset", val = 2, def = pr.DEFAULT, content = content, presets = pr.PRESETS, hint = "rz_prices_preset" },
-		track("sell_all", 1, 0.1, 3, 0.05, "rz_prices_sell_all"),
-		track("buy_all", 1, 0.1, 3, 0.05, "rz_prices_buy_all"),
 	}
 	for gi, g in ipairs(pr.GROUPS) do
 		gr[#gr + 1] = line("lg" .. gi)
@@ -549,6 +547,19 @@ local function ot_hud()
 	})
 end
 
+local function ot_taskhud()
+	return page("rz_taskhud", {
+		slide("ui_mcm_rz_taskhud_title"),
+		desc("d", "ui_mcm_rz_taskhud_info"),
+		line("l1"),
+		check("enabled", true, "rz_taskhud_enabled"),
+		{ id = "pos_y", type = "track", val = 2, def = 60, min = 0, max = 300, step = 5, hint = "rz_taskhud_pos_y" },
+		{ id = "time", type = "track", val = 2, def = 7, min = 3, max = 20, step = 1, hint = "rz_taskhud_time" },
+		{ id = "rows", type = "track", val = 2, def = 3, min = 1, max = 5, step = 1, hint = "rz_taskhud_rows" },
+		desc("n", "ui_mcm_rz_taskhud_note", CLR_NOTE),
+	})
+end
+
 local function ot_menu()
 	local content = modxml_rezone_mm_video and modxml_rezone_mm_video.mcm_content() or { { "default", "default" } }
 	return page("rz_menu", {
@@ -591,6 +602,8 @@ local function main_master()
 		desc("d", "ui_mcm_rz_master_info"),
 		line("l1"),
 		{ id = "master", type = "list", val = 2, def = 1, content = content, hint = "rz_master" },
+		check("link", true, "rz_master_link"),
+		desc("dl", "ui_mcm_rz_master_link_info", CLR_NOTE),
 		line("l2"),
 		desc("d1", "ui_mcm_rz_master_cop_info"),
 		desc("d2", "ui_mcm_rz_master_trilogy_info"),
@@ -716,7 +729,7 @@ function build_tree()
 		{ id = TAB_COMBAT, gr = combat },
 		{ id = TAB_WORLD, gr = world },
 		{ id = TAB_SURV, gr = surv },
-		{ id = TAB_OT, gr = { ot_fx(), ot_hud(), ot_binoc(), ot_pda(), ot_menu(), ot_debug() } },
+		{ id = TAB_OT, gr = { ot_fx(), ot_hud(), ot_taskhud(), ot_binoc(), ot_pda(), ot_menu(), ot_debug() } },
 	}
 	pcall(migrate_tabs, tabs)
 	pcall(migrate_sthp)

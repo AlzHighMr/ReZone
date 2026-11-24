@@ -62,13 +62,252 @@ local function patch()
 	end
 end
 
+local TPAGE = rezone_mcm.path("rz_taskhud")
+local topt = { on = true, y = 60, time = 7, rows = 3 }
+local T_ICON = { new = "ui_rz_task_new", updated = "ui_rz_task_new", complete = "ui_rz_task_done", fail = "ui_rz_task_done", reversed = "ui_rz_task_done" }
+local T_CLR = { new = { 255, 255, 255 }, updated = { 255, 255, 255 }, complete = { 255, 255, 255 }, fail = { 235, 120, 110 }, reversed = { 190, 190, 190 } }
+local T_HEAD = { complete = "st_rz_task_complete", fail = "st_rz_task_fail", reversed = "st_rz_task_reversed" }
+local T_SUB = { new = "st_rz_task_new", updated = "st_rz_task_updated" }
+local FADE_IN, FADE_OUT = 250, 600
+local ROW_H, ICON, GAP, MAXW = 44, 26, 10, 520
+
+local function clean(str)
+	str = tostring(str or "")
+	str = str:gsub("%%c%[[^%]]*%]", ""):gsub("\\n", " "):gsub("[\r\n]+", " "):gsub("%s+", " ")
+	return str:gsub("^%s+", ""):gsub("%s+$", "")
+end
+
+local function tr(id)
+	return id and clean(game.translate_string(id)) or ""
+end
+
+class "UIRzTaskHud" (CUIScriptWnd)
+
+function UIRzTaskHud:__init() super()
+	self:SetWndRect(Frect():set(0, 0, 1024, 768))
+	self:SetAutoDelete(true)
+	self.rows = {}
+	self.queue = {}
+	self.last = time_global()
+end
+
+function UIRzTaskHud:make_row()
+	local r = {}
+	r.bg = CUIStatic()
+	r.bg:SetAutoDelete(true)
+	self:AttachChild(r.bg)
+	r.bg:InitTexture("ui_rz_task_bg")
+	r.bg:SetStretchTexture(true)
+	r.icon = CUIStatic()
+	r.icon:SetAutoDelete(true)
+	self:AttachChild(r.icon)
+	r.icon:InitTexture("ui_rz_task_new")
+	r.icon:SetStretchTexture(true)
+	r.title = CUITextWnd()
+	r.title:SetAutoDelete(true)
+	self:AttachChild(r.title)
+	r.title:SetFont(GetFontGraffiti19Russian())
+	r.title:SetTextAlignment(0)
+	r.sub = CUITextWnd()
+	r.sub:SetAutoDelete(true)
+	self:AttachChild(r.sub)
+	r.sub:SetFont(GetFontLetterica16Russian())
+	r.sub:SetTextAlignment(0)
+	r.sub:SetEllipsis(true)
+	return r
+end
+
+local function text_w(wnd, txt, per)
+	wnd:SetWndSize(vector2():set(MAXW, 20))
+	wnd:SetText(txt)
+	local w
+	pcall(function()
+		wnd:AdjustWidthToText()
+		w = wnd:GetWidth()
+	end)
+	if not w or w <= 1 or w > 2000 then w = string.len(txt) * per end
+	return math.min(MAXW, w)
+end
+
+function UIRzTaskHud:layout(r, e)
+	local k = utils_xml.screen_ratio()
+	local iw = ICON * k
+	local tw = text_w(r.title, e.title, 9.5)
+	local sw = e.sub ~= "" and text_w(r.sub, e.sub, 7) or 0
+	local bw = iw + GAP * k + math.max(tw, sw)
+	e.x0 = 512 - bw / 2
+	e.bw = bw
+	e.tw, e.sw, e.iw = tw, sw, iw
+end
+
+function UIRzTaskHud:place(r, e, y)
+	local pad = 40 * utils_xml.screen_ratio()
+	r.bg:SetWndRect(Frect():set(e.x0 - pad, y - 4, e.x0 + e.bw + pad, y + ROW_H - 2))
+	local iy = y + (e.sub ~= "" and 8 or 4)
+	r.icon:InitTexture(e.icon)
+	r.icon:SetStretchTexture(true)
+	r.icon:SetWndRect(Frect():set(e.x0, iy, e.x0 + e.iw, iy + ICON))
+	local tx = e.x0 + e.iw + GAP * utils_xml.screen_ratio()
+	r.title:SetWndRect(Frect():set(tx, y + 3, tx + e.tw + 4, y + 23))
+	r.title:SetText(e.title)
+	r.sub:SetWndRect(Frect():set(tx, y + 23, tx + e.sw + 4, y + 39))
+	r.sub:SetText(e.sub)
+end
+
+function UIRzTaskHud:paint(r, e, a)
+	local c = e.clr
+	local A = math.floor(255 * a)
+	r.bg:SetTextureColor(GetARGB(math.floor(200 * a), 255, 255, 255))
+	r.icon:SetTextureColor(GetARGB(A, c[1], c[2], c[3]))
+	r.title:SetTextColor(GetARGB(A, c[1], c[2], c[3]))
+	r.sub:SetTextColor(GetARGB(math.floor(200 * a), 200, 200, 200))
+end
+
+function UIRzTaskHud:push(e)
+	e.t = 0
+	e.life = topt.time * 1000
+	table.insert(self.queue, 1, e)
+	while #self.queue > topt.rows do table.remove(self.queue) end
+	self.dirty = true
+end
+
+local function static_text(hud, id)
+	local st = hud:GetCustomStatic(id)
+	if not st then return nil end
+	local txt
+	pcall(function() txt = st:wnd():TextControl():GetText() end)
+	return clean(txt)
+end
+
+function UIRzTaskHud:grab_active()
+	local hud = get_hud()
+	if not (hud and hud:GetCustomStatic("main_task")) then return end
+	local title = static_text(hud, "main_task") or ""
+	local sub = static_text(hud, "secondary_task") or ""
+	hud:RemoveCustomStatic("main_task")
+	if hud:GetCustomStatic("secondary_task") then hud:RemoveCustomStatic("secondary_task") end
+	if title == "" then return end
+	local top = self.queue[1]
+	if top and top.active and top.title == title and top.sub == sub then
+		top.t = math.min(top.t, FADE_IN)
+		return
+	end
+	self:push({ active = true, title = title, sub = sub, icon = sub ~= "" and "ui_rz_task_new" or "ui_rz_task_done", clr = T_CLR.new })
+end
+
+function UIRzTaskHud:Update()
+	CUIScriptWnd.Update(self)
+	if topt.on then pcall(self.grab_active, self) end
+	local now = time_global()
+	local dt = math.min(200, now - self.last)
+	self.last = now
+	local show = #self.queue > 0 and main_hud_shown()
+	if not show then
+		for _, r in ipairs(self.rows) do
+			r.bg:Show(false) r.icon:Show(false) r.title:Show(false) r.sub:Show(false)
+		end
+		return
+	end
+	local keep = {}
+	for _, e in ipairs(self.queue) do
+		e.t = e.t + dt
+		if e.t < e.life + FADE_OUT then keep[#keep + 1] = e else self.dirty = true end
+	end
+	self.queue = keep
+	while #self.rows < #self.queue do self.rows[#self.rows + 1] = self:make_row() end
+	for i, r in ipairs(self.rows) do
+		local e = self.queue[i]
+		if e then
+			if self.dirty or r.e ~= e then
+				r.e = e
+				self:layout(r, e)
+				self:place(r, e, topt.y + (i - 1) * ROW_H)
+			end
+			local a = 1
+			if e.t < FADE_IN then a = e.t / FADE_IN
+			elseif e.t > e.life then a = 1 - (e.t - e.life) / FADE_OUT end
+			a = math.max(0, math.min(1, a))
+			self:paint(r, e, a)
+			r.bg:Show(true) r.icon:Show(true) r.title:Show(true) r.sub:Show(e.sub ~= "")
+		else
+			r.e = nil
+			r.bg:Show(false) r.icon:Show(false) r.title:Show(false) r.sub:Show(false)
+		end
+	end
+	self.dirty = false
+end
+
+local THUD = nil
+local function task_hud()
+	if not THUD then
+		THUD = UIRzTaskHud()
+		get_hud():AddDialogToRender(THUD)
+	end
+	return THUD
+end
+
+local function task_entry(typ, tsk)
+	local title = tr(tsk:get_title())
+	local desc = ""
+	pcall(function() desc = tr(tsk:get_description()) end)
+	local e = { icon = T_ICON[typ] or "ui_rz_task_new", clr = T_CLR[typ] or T_CLR.new }
+	if T_HEAD[typ] then
+		e.title, e.sub = tr(T_HEAD[typ]), title
+	else
+		e.title = title
+		e.sub = (desc ~= "" and desc ~= title) and desc or tr(T_SUB[typ] or "st_rz_task_new")
+	end
+	return e
+end
+
+local orig_send_task = nil
+local function send_task(actor, typ, tsk)
+	if not (topt.on and db.actor and tsk) or db.actor:is_talking() then
+		return orig_send_task(actor, typ, tsk)
+	end
+	local ok, err = pcall(function()
+		task_hud():push(task_entry(typ, tsk))
+	end)
+	if not ok then
+		core.warn("ui: ukol %s", tostring(err))
+		return orig_send_task(actor, typ, tsk)
+	end
+	xr_sound.set_sound_play(AC_ID, "pda_task")
+	return true
+end
+
+local function patch_tasks()
+	if orig_send_task or not (news_manager and news_manager.send_task) then return end
+	orig_send_task = news_manager.send_task
+	news_manager.send_task = send_task
+end
+
+local function task_first_update()
+	if topt.on then task_hud() end
+end
+
+local function task_net_destroy()
+	if THUD then
+		get_hud():RemoveDialogToRender(THUD)
+		THUD = nil
+	end
+end
+
 function load()
 	local g = core.page(PAGE)
 	opt.msv = g("enabled") ~= false
+	local t = core.page(TPAGE)
+	topt.on = t("enabled") ~= false
+	topt.y = tonumber(t("pos_y")) or 60
+	topt.time = tonumber(t("time")) or 7
+	topt.rows = math.max(1, math.floor(tonumber(t("rows")) or 3))
 end
 
 function on_game_start()
 	patch()
+	patch_tasks()
+	RegisterScriptCallback("actor_on_net_destroy", task_net_destroy)
+	RegisterScriptCallback("actor_on_first_update", task_first_update)
 	core.on_change(load)
 	load()
 end

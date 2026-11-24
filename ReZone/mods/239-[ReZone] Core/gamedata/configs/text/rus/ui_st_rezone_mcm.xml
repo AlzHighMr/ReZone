@@ -208,7 +208,7 @@
 		<text>Trader prices</text>
 	</string>
 	<string id="ui_mcm_rz_prices_info">
-		<text>Price multiplier by item kind. 1.0 = unchanged, 2.0 = double. Applies to buying and selling, overall multipliers separately.</text>
+		<text>Множитель цены по типу предмета. 1.0 = без изменений, 2.0 = вдвое. Действует на покупку и продажу. Общие цены покупки и продажи задаются только в настройках сложности Anomaly (Экономика).</text>
 	</string>
 	<string id="ui_mcm_rz_prices_warn">
 		<text>Warning: Configurable Item Cost Modifiers is also enabled. Disable it, otherwise prices are multiplied twice.</text>
@@ -242,18 +242,6 @@
 	</string>
 	<string id="ui_mcm_lst_rz_price_gamma">
 		<text>ReZone: like GAMMA</text>
-	</string>
-	<string id="ui_mcm_rz_prices_sell_all">
-		<text>When you sell (overall)</text>
-	</string>
-	<string id="ui_mcm_rz_prices_sell_all_desc">
-		<text>What the trader pays you. 0.6 = 60 % of the price.</text>
-	</string>
-	<string id="ui_mcm_rz_prices_buy_all">
-		<text>When you buy (overall)</text>
-	</string>
-	<string id="ui_mcm_rz_prices_buy_all_desc">
-		<text>What you pay the trader. 1.2 = 20 % more.</text>
 	</string>
 	<string id="ui_mcm_rz_price_g_arty">
 		<text>Artefacts and mutants</text>
@@ -1859,5 +1847,65 @@
 	</string>
 	<string id="ui_mcm_rz_wpnwear_note">
 		<text>Изменения действуют сразу, даже в текущей игре. Ремонт, ремкомплекты и шанс заклинивания не меняются - только скорость износа.</text>
+	</string>
+	<string id="ui_mcm_rz_master_link">
+		<text>По сложности новой игры</text>
+	</string>
+	<string id="ui_mcm_rz_master_link_desc">
+		<text>При начале новой игры ReZone настраивается по тому, что игрок выбрал на экране выбора группировки. Сложность управляет боем, здоровьем и миром, Экономика - ценами, лутом, артефактами и износом костюмов.</text>
+	</string>
+	<string id="ui_mcm_rz_master_link_info">
+		<text>Лёгкая = CoP, Средняя = Трилогия, Тяжёлая = Хардкор. Сложность и Экономику можно сочетать (например, Тяжёлая сложность и Лёгкая экономика) - тогда пресет покажет Свой. Действует только при начале новой игры, текущую игру не меняет; потом всё можно настроить вручную.</text>
+	</string>
+	<string id="ui_mcm_menu_rz_taskhud">
+		<text>Уведомления о заданиях</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_title">
+		<text>Уведомления о заданиях</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_info">
+		<text>New, updated, completed and failed tasks, and the active task shown with the "Current task" key (Tab by default), appear at the top centre of the screen: a diamond, the task name and the objective below it. Several notifications stack, newest on top.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_enabled">
+		<text>New task notifications</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_enabled_desc">
+		<text>Off = tasks show as PDA messages like before. During a conversation the task always shows in the dialog window.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_pos_y">
+		<text>Distance from top edge</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_pos_y_desc">
+		<text>How far from the top of the screen the notifications start. Default 60. Move lower if they overlap the compass or another HUD element.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_time">
+		<text>Display time (s)</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_time_desc">
+		<text>How many seconds a notification stays on screen. Default 7. The timer pauses while the inventory or PDA is open.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_rows">
+		<text>Max notifications at once</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_rows_desc">
+		<text>How many notifications can be on screen at the same time. Older ones disappear when a new one arrives. Default 3.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_note">
+		<text>The PDA task sound stays. Task messages are no longer added to the PDA message history; the tasks themselves remain in the tasks tab.</text>
+	</string>
+	<string id="st_rz_task_complete">
+		<text>Задание выполнено</text>
+	</string>
+	<string id="st_rz_task_fail">
+		<text>Задание провалено</text>
+	</string>
+	<string id="st_rz_task_reversed">
+		<text>Задание отменено</text>
+	</string>
+	<string id="st_rz_task_new">
+		<text>Новое задание</text>
+	</string>
+	<string id="st_rz_task_updated">
+		<text>Задание обновлено</text>
 	</string>
 </string_table>
