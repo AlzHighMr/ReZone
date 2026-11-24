@@ -129,6 +129,7 @@ dialog::backdrop { background: #000a; }
 .catrow input[type=text] { margin: 0; min-width: 0; }
 @media (max-width: 600px) { .catrow { grid-template-columns: minmax(0, 1fr) 34px 34px auto 34px; padding: 8px 0; border-bottom: 1px solid #ffffff10; } .catrow .cn { display: none; } .catrow input[type=text] { grid-column: 1 / -1; } }
 .mlp { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 10px; }
+.mlall { display: flex; gap: 6px; align-items: center; margin: 0; font-size: 13px; } .mlall input { margin: 0; }
 .mlt { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 6px; } .mlt input[type=search] { flex: 1 1 200px; min-width: 0; margin: 0; } .mlt select { flex: 0 1 140px; margin: 0; }
 .mll { max-height: 62vh; overflow-y: auto; border: 1px solid var(--line, #2a2a2a); }
 .mls { position: sticky; top: 0; background: #1b1b1b; color: #e0a43a; font: 600 12px/1.2 var(--mono, monospace); letter-spacing: .06em; text-transform: uppercase; padding: 7px 10px; border-bottom: 1px solid #2a2a2a; }
@@ -136,7 +137,10 @@ dialog::backdrop { background: #000a; }
 .mlr span { min-width: 0; overflow-wrap: anywhere; } .mlr input { margin: 0; flex: none; }
 .mlnew { border: 1px solid #e0a43a55; background: #e0a43a10; padding: 10px; margin: 6px 0; display: flex; flex-direction: column; gap: 6px; } .mlnew select { flex: 1 1 260px; min-width: 0; margin: 0; } .mlnew label { display: flex; gap: 6px; align-items: center; margin: 0; }
 .mlsum ul { margin: 4px 0 10px; padding-left: 20px; max-height: 22vh; overflow-y: auto; } .mlsum li { overflow-wrap: anywhere; }
-.mlr.chg { background: #e0a43a14; } .mlr small { margin-left: auto; color: #e0a43a; font: 11px var(--mono, monospace); }
+.mlr.chg { background: #e0a43a14; }
+.mlr.drag { opacity: .4; } .mlr.over { box-shadow: inset 0 3px 0 #e0a43a; } .mls.over { box-shadow: inset 0 -3px 0 #e0a43a; }
+.mlr .mv { margin-left: 6px; flex: none; padding: 2px 8px; font-size: 12px; line-height: 1.4; cursor: pointer; } .mlr small + .mv { margin-left: 6px; } .mlr span + .mv { margin-left: auto; }
+.mlr { cursor: grab; } .mlr small { margin-left: auto; color: #e0a43a; font: 11px var(--mono, monospace); }
 .ab-in { flex-wrap: wrap; } .ab-sub { flex-wrap: wrap; justify-content: flex-end; padding: 6px 0; min-width: 0; }
 #who { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (max-width: 900px) {
@@ -1383,7 +1387,7 @@ function clPage(md) {
   }
 
   // ---------- MODLIST (zapnute / vypnute mody profilu) ----------
-  var ML = { obj: null, orig: {}, prof: '', q: '', show: 'all' };
+  var ML = { obj: null, orig: {}, prof: '', q: '', show: 'all', moved: {}, all: true, drag: null };
   function mlLines(p) { return (ML.obj.profiles[p] = ML.obj.profiles[p] || []); }
   function mlName(l) { return String(l).slice(1); }
   function mlIsSep(l) { return /_separator$/.test(l); }
@@ -1417,8 +1421,10 @@ function clPage(md) {
     var tools = el('div', { class: 'mlt' }, [
       el('button', { class: 'btn small', text: lines.length ? 'Aktualizovat z modlist.txt' : 'Načíst modlist.txt z PC', title: 'Vyber profiles/' + ML.prof + '/modlist.txt ze složky Mod Organizeru. Doplní nové mody, odebere smazané a převezme pořadí.', onclick: function () { file.click(); } }), file,
       el('input', { type: 'search', placeholder: 'Hledat mod…', value: ML.q, oninput: function (e) { ML.q = e.target.value; mlDraw(); } }),
-      (function () { var s = el('select'); [['all', 'Vše'], ['on', 'Zapnuté'], ['off', 'Vypnuté'], ['chg', 'Změněné']].forEach(function (o) { s.appendChild(el('option', { value: o[0], text: o[1] })); }); s.value = ML.show; s.onchange = function () { ML.show = s.value; mlDraw(); }; return s; })()
+      (function () { var s = el('select'); [['all', 'Vše'], ['on', 'Zapnuté'], ['off', 'Vypnuté'], ['chg', 'Změněné']].forEach(function (o) { s.appendChild(el('option', { value: o[0], text: o[1] })); }); s.value = ML.show; s.onchange = function () { ML.show = s.value; mlDraw(); }; return s; })(),
+      (function () { var c = el('input', { type: 'checkbox' }); c.checked = ML.all; c.onchange = function () { ML.all = c.checked; }; return el('label', { class: 'mlall', title: 'Přesunutý mod se přesune i v ostatních profilech (pokud tam je)' }, [c, el('span', { text: 'Přesouvat ve všech profilech' })]); })()
     ]);
+    box.appendChild(el('p', { class: 'hint', text: 'Mod přesuneš přetažením myší (pustíš ho na mod, nad který má být; na separátor = na začátek té sekce), nebo tlačítkem ⇅ u modu.' }));
     box.appendChild(tools);
     box.appendChild(el('p', { class: 'msg', id: 'mlMsg' }));
     box.appendChild(el('div', { id: 'mlRepo' }));
@@ -1440,17 +1446,21 @@ function clPage(md) {
     for (var i = lines.length - 1; i >= 0; i--) {
       (function (i) {
         var l = lines[i], n = mlName(l);
-        if (mlIsSep(l)) { flush(); cur = el('div', { class: 'mls', text: n.replace(/_separator$/, '') }); return; }
+        if (mlIsSep(l)) { flush(); cur = el('div', { class: 'mls', text: n.replace(/_separator$/, '') }); mlDnd(cur, n, true); return; }
         if (!/^[+-]/.test(l)) return;
         var was = orig[n], ch = was && was !== l[0];
         if (ch) chg++;
         if (q && n.toLowerCase().indexOf(q) < 0) return;
         if (ML.show === 'on' && l[0] !== '+') return;
         if (ML.show === 'off' && l[0] !== '-') return;
-        if (ML.show === 'chg' && !ch) return;
+        var mv = !!ML.moved[n];
+        if (ML.show === 'chg' && !ch && !mv) return;
         var cb = el('input', { type: 'checkbox' }); cb.checked = l[0] === '+';
         cb.addEventListener('change', function () { lines[i] = (cb.checked ? '+' : '-') + n; setDirty('ml'); mlDraw(); });
-        buf.push(el('label', { class: 'mlr' + (ch ? ' chg' : '') }, [cb, el('span', { text: n }), ch ? el('small', { text: 'změněno' }) : null]));
+        var btn = el('button', { class: 'btn small mv', type: 'button', title: 'Přesunout', text: '⇅', onclick: function (e) { e.preventDefault(); e.stopPropagation(); mlMoveDlg(n); } });
+        var row = el('label', { class: 'mlr' + (ch || mv ? ' chg' : ''), draggable: 'true' }, [cb, el('span', { text: n }), ch ? el('small', { text: 'změněno' }) : (mv ? el('small', { text: 'přesunuto' }) : null), btn]);
+        mlDnd(row, n, false);
+        buf.push(row);
         shown++;
       })(i);
     }
@@ -1458,6 +1468,55 @@ function clPage(md) {
     if (!shown) L.appendChild(el('div', { class: 'empty', text: 'Nic nenalezeno.' }));
     $('mlMsg').className = chg ? 'msg warn' : 'msg';
     if (chg) $('mlMsg').textContent = 'Změněno v profilu ' + ML.prof + ': ' + chg + ' (zatím neuloženo na GitHub, nebo oproti poslednímu uložení).';
+  }
+  // presun modu: before = v souboru pred cil (v MO2 pod nim, vyssi priorita), jinak za cil (v MO2 nad nim)
+  function mlMove(name, target, before) {
+    if (!name || !target || name === target) return;
+    var profs = ML.all ? Object.keys(ML.obj.profiles) : [ML.prof], done = [], miss = [];
+    profs.forEach(function (p) {
+      var L = ML.obj.profiles[p]; if (!L || !L.length) return;
+      var from = -1, j;
+      for (j = 0; j < L.length; j++) if (mlName(L[j]) === name) { from = j; break; }
+      if (from < 0) return;
+      var line = L.splice(from, 1)[0], at = -1;
+      for (j = 0; j < L.length; j++) if (mlName(L[j]) === target) { at = j; break; }
+      if (at < 0) { L.splice(from, 0, line); miss.push(p); return; }
+      L.splice(before ? at : at + 1, 0, line); done.push(p);
+    });
+    if (!done.length) return;
+    ML.moved[name] = 1; setDirty('ml'); mlDraw();
+    $('mlMsg').className = miss.length ? 'msg warn' : 'msg ok';
+    $('mlMsg').textContent = 'Přesunuto: ' + name + ' (' + done.join(', ') + ').' + (miss.length ? ' V profilu ' + miss.join(', ') + ' chybí ' + target.replace(/_separator$/, '') + ' – tam zůstal na místě.' : '') + ' Ulož na GitHub.';
+  }
+  function mlDnd(node, n, sep) {
+    node.addEventListener('dragstart', function (e) { ML.drag = n; try { e.dataTransfer.setData('text/plain', n); e.dataTransfer.effectAllowed = 'move'; } catch (x) { /* nic */ } node.classList.add('drag'); });
+    node.addEventListener('dragend', function () { node.classList.remove('drag'); ML.drag = null; });
+    node.addEventListener('dragover', function (e) { if (ML.drag && ML.drag !== n) { e.preventDefault(); node.classList.add('over'); } });
+    node.addEventListener('dragleave', function () { node.classList.remove('over'); });
+    node.addEventListener('drop', function (e) { e.preventDefault(); node.classList.remove('over'); var d = ML.drag; ML.drag = null; mlMove(d, n, sep); });
+  }
+  function mlMoveDlg(name) {
+    var lines = mlLines(ML.prof), sel = el('select');
+    for (var i = lines.length - 1; i >= 0; i--) {
+      var l = lines[i]; if (!/^[+-]/.test(l)) continue;
+      var nm = mlName(l); if (nm === name) continue;
+      sel.appendChild(el('option', { value: nm, text: mlIsSep(l) ? '— ' + nm.replace(/_separator$/, '') + ' — (na začátek sekce)' : nm }));
+    }
+    var pos = -1;
+    for (var k = 0; k < lines.length; k++) if (mlName(lines[k]) === name) { pos = k; break; }
+    if (pos > 0) sel.value = mlName(lines[pos - 1]);
+    var all = el('input', { type: 'checkbox' }); all.checked = ML.all;
+    var box = el('div', {}, [
+      el('p', { html: 'Přesunout <b>' + esc(name) + '</b> pod (vyšší priorita než):' }),
+      sel,
+      el('label', { style: 'display:flex;gap:6px;align-items:center;margin-top:10px' }, [all, el('span', { text: 'I v ostatních profilech' })])
+    ]);
+    dialog('Přesunout mod', box, [{ label: 'Přesunout', value: true, cls: 'pri' }, { label: 'Zpět', value: false }]).then(function (ok) {
+      if (!ok) return;
+      var keep = ML.all; ML.all = all.checked;
+      mlMove(name, sel.value, true);
+      ML.all = keep;
+    });
   }
   function mlNum(n) { var m = /^(\d+)-/.exec(n); return m ? +m[1] : null; }
   function mlList(arr, max) {
@@ -1568,7 +1627,7 @@ function clPage(md) {
     try { o = text.trim() ? JSON.parse(text) : {}; } catch (e) { o = {}; }
     if (!o || typeof o !== 'object') o = {};
     if (!o.profiles || typeof o.profiles !== 'object') o.profiles = {};
-    ML.obj = o; ML.orig = JSON.parse(JSON.stringify(o.profiles)); ML.repo = null;
+    ML.obj = o; ML.orig = JSON.parse(JSON.stringify(o.profiles)); ML.repo = null; ML.moved = {};
     mlRender();
   };
   onShow.ml = function () { if (ML.obj) mlRender(); };
@@ -1576,7 +1635,7 @@ function clPage(md) {
     if (!ML.obj) return { text: '', errors: ['Soubor se nenačetl.'] };
     var out = { profiles: {} };
     Object.keys(ML.obj.profiles).forEach(function (p) { if (ML.obj.profiles[p].length) out.profiles[p] = ML.obj.profiles[p]; });
-    return { text: JSON.stringify(out, null, 1) + '\n', errors: [], after: function () { ML.orig = JSON.parse(JSON.stringify(ML.obj.profiles)); mlDraw(); } };
+    return { text: JSON.stringify(out, null, 1) + '\n', errors: [], after: function () { ML.orig = JSON.parse(JSON.stringify(ML.obj.profiles)); ML.moved = {}; mlDraw(); } };
   };
 
   // ---------- TEXTY WEBU: skener HTML (zachova presne pozice ve zdroji) ----------
