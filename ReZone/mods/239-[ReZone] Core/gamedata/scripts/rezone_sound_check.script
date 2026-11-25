@@ -1,0 +1,51 @@
+local LIST = {
+	"characters_voice\\rezone\\Semjon_meet",
+	"anomaly\\electra_idle1",
+	"interface\\inv_cooking_open",
+	"interface\\inv_close",
+	"weapons\\mine_boom",
+	"ambient\\trx\\nature\\wind_gust\\rnd_wind_1",
+	"ambient\\trx\\nature\\wind_gust\\rnd_wind_2",
+	"ambient\\trx\\nature\\wind_gust\\rnd_wind_3",
+}
+
+local function add_set(t, base, n)
+	for i = 1, n do t[#t + 1] = base .. i end
+end
+
+local function build()
+	local t = {}
+	for _, v in ipairs(LIST) do t[#t + 1] = v end
+	for th = 1, 4 do
+		for pt = 1, 3 do t[#t + 1] = "music\\combat\\theme" .. th .. "_part_" .. pt end
+	end
+	for i = 1, 5 do t[#t + 1] = "material\\bullet\\collide\\metall0" .. i .. "gr" end
+	add_set(t, "Soul_", 5)
+	local ini = ini_file("rezone\\ammo_sounds.ltx")
+	if ini then
+		for _, sec in ipairs({ "acid", "electric", "electric_big", "headshot", "incendiary", "soulripper", "elite" }) do
+			if ini:section_exist(sec) then
+				for _, w in ipairs({ "near", "far" }) do
+					local b = ini:r_string_ex(sec, w)
+					if b then add_set(t, b, tonumber(ini:r_string_ex(sec, w .. "_amt") or 1) or 1) end
+				end
+			end
+		end
+	end
+	return t
+end
+
+local function check()
+	if not (rezone_core and rezone_core.debug_on()) then return end
+	local miss, n = {}, 0
+	for _, f in ipairs(build()) do
+		n = n + 1
+		if not rezone_core.sound_exists(f) then miss[#miss + 1] = f end
+	end
+	rezone_core.log("zvuky: zkontrolovano %d, chybi %d", n, #miss)
+	for _, f in ipairs(miss) do rezone_core.warn("chybi zvuk sounds\\%s.ogg", f) end
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_first_update", check)
+end

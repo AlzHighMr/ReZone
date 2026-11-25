@@ -10,7 +10,8 @@ function sound(name, dist)
 	local base = snd_ini:r_string_ex(name, which)
 	if not base then return end
 	local n = tonumber(snd_ini:r_string_ex(name, which .. "_amt") or 1) or 1
-	local s = xr_sound.get_safe_sound_object(base .. random(max(n, 1)))
+	local f = rezone_core.sound_pick(base, n)
+	local s = f and xr_sound.get_safe_sound_object(f)
 	if s then
 		s:play(db.actor, 0, sound_object.s2d)
 		s.volume = (dist > 10) and (0.3 + 0.7 * (1 - (clamp(dist, 2, 100) - 2) / 98)) or 1
@@ -103,7 +104,8 @@ end
 
 local function heal_actor(power)
 	if power > 0.5 and db.actor.health < 1 then
-		local s = xr_sound.get_safe_sound_object("Soul_" .. random(5))
+		local f = rezone_core.sound_pick("Soul_", 5)
+		local s = f and xr_sound.get_safe_sound_object(f)
 		if s then s:play(db.actor, 0, sound_object.s2d) end
 	end
 	set_hp(db.actor, db.actor.health + 0.05 + 0.2 * power)

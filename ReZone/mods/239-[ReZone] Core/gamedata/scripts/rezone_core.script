@@ -30,6 +30,29 @@ function dbg(fmt, ...)
 end
 
 local intercepts_ref = false
+local snd_cache = {}
+
+function sound_exists(path)
+	if type(path) ~= "string" or path == "" then return false end
+	local v = snd_cache[path]
+	if v == nil then
+		local ok, r = pcall(function() return getFS():exist("$game_sounds$", path .. ".ogg") end)
+		v = ok and r and true or false
+		snd_cache[path] = v
+	end
+	return v
+end
+
+function sound_pick(base, n)
+	local list = {}
+	for i = 1, math.max(n or 1, 1) do
+		local f = base .. i
+		if sound_exists(f) then list[#list + 1] = f end
+	end
+	if #list == 0 then return nil end
+	return list[math.random(#list)]
+end
+
 function has_callback(name)
 	if intercepts_ref == false then
 		intercepts_ref = nil

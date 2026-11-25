@@ -412,7 +412,7 @@ local function greet_update()
 				greet_armed[sid] = true
 			elseif d < 9 and greet_armed[sid] ~= false and npc:active_sound_count() == 0 then
 				greet_armed[sid] = false
-				local snd = xr_sound.get_safe_sound_object(path)
+				local snd = rezone_core.sound_exists(path) and xr_sound.get_safe_sound_object(path)
 				if snd then snd:play_at_pos(npc, npc:bone_position("bip01_head"), 0, sound_object.s3d) end
 			end
 		end

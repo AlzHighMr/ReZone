@@ -342,7 +342,9 @@ local function actor_ricochet(s_hit, bone_id)
 	if HEAD[bone_id] then armor = max(armor, slot_armor(12, name)) end
 	if armor < 0.3 or (s_hit.ap or 0) >= armor then return end
 	rico_t = now
-	local snd = xr_sound.get_safe_sound_object("material\\bullet\\collide\\metall" .. RICO[random(#RICO)] .. "gr")
+	local f = "material\\bullet\\collide\\metall" .. RICO[random(#RICO)] .. "gr"
+	if not rezone_core.sound_exists(f) then f = "material\\bullet\\collide\\metall01gr" end
+	local snd = rezone_core.sound_exists(f) and xr_sound.get_safe_sound_object(f)
 	if snd then snd:play(db.actor, 0, sound_object.s2d) end
 end
 
