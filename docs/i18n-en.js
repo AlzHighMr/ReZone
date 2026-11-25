@@ -769,7 +769,8 @@
 "Pořád nic?Ozvi se na Discordu Re:Zone (ikona vlevo dole v launcheru). Přidej popis problému, screenshot a log.": "<b class=\"t\">Still nothing?<\/b>Get in touch on the Re:Zone Discord (icon at the bottom left of the launcher). Add a description of the problem, a screenshot and the log.",
 "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). Konkrétní hodnoty jednotlivých modů najdeš v jejich souborech README.": "Re:Zone 2.6.18 · Re:Zone Launcher 1.6.1 · Body Health System (BHS Redux). You'll find the exact values of each mod in its README files.",
 "S.T.A.L.K.E.R. Anomaly · modpackRe:ZonePříručka · Databáze · Výroba (BETA)": "<span class=\"ml-pre\">S.T.A.L.K.E.R. Anomaly · modpack<\/span><span class=\"ml-name\">Re<i>:<\/i>Zone<\/span><span class=\"ml-sub\">Handbook · Database · Crafting (BETA)<\/span>",
-"Všechno na jednom místě: co je Re:Zone, jak používat launcher, jak hrát s přáteli a co je ve hře jinak než ve vanilla Anomaly.": "Everything in one place: what Re:Zone is, how to use the launcher, how to play with friends and what's different in the game compared to vanilla Anomaly."
+"Všechno na jednom místě: co je Re:Zone, jak používat launcher, jak hrát s přáteli a co je ve hře jinak než ve vanilla Anomaly.": "Everything in one place: what Re:Zone is, how to use the launcher, how to play with friends and what's different in the game compared to vanilla Anomaly.",
+"CZ/EN": "EN (AI)"
 };
   var A = {
 "Databáze": "Database",
