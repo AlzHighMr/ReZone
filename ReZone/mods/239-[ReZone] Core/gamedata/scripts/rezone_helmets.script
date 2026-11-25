@@ -1,5 +1,4 @@
 local core = rezone_core
-local PATH = rezone_mcm.path("rz_ball") .. "/helm_drop"
 local PATH_ON = rezone_mcm.path("rz_ball") .. "/helmets"
 
 local closed = nil
@@ -29,7 +28,7 @@ local function patch()
 	local orig = dm.get_outfit_by_visual
 	dm.get_outfit_by_visual = function(visual, ...)
 		local tbl = orig(visual, ...)
-		if tbl and tbl[1] and (not tbl[2] or tbl[2] == "") and core.get(PATH) ~= false and core.get(PATH_ON) ~= false then
+		if tbl and tbl[1] and (not tbl[2] or tbl[2] == "") and core.get(PATH_ON) ~= false then
 			local h = helmet_for(tbl[1])
 			if h then
 				local t = { tbl[1], h }

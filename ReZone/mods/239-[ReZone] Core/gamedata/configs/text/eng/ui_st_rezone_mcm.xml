@@ -694,7 +694,7 @@
 		<text>How much condition a suit or helmet loses when hit (1 = vanilla, 0.33 = three times slower, 0 = none). Replaces the armor_degradation_reduction DLTX - delete it, otherwise it multiplies. Applies after loading a save.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_helm_info">
-		<text>Helmets (ReZone's own separated helmets): every suit has a helmet slot and only the helmet protects the head. Closed suits (SEVA, exo, Nosorog, NBC, SSP) lost their built-in mask - part of their radiation, psy and chemical protection is now in the helmet. Helmet armor follows the suit profile above. The Separated Helmets mod is no longer needed.</text>
+		<text>Helmets (ReZone's own separated helmets): every suit has a helmet slot and only the helmet protects the head. Closed suits (SEVA, exo, Nosorog, NBC, SSP) lost their built-in mask - part of their radiation, psy and chemical protection is now in the helmet and a dead stalker in such a suit drops the helmet. Helmet armor follows the suit profile above. When your hard armor stops a bullet you hear a metal ricochet. The Separated Helmets mod is no longer needed.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_helmets">
 		<text>Enable ReZone helmets</text>
@@ -736,7 +736,7 @@
 		<text>ReZone Crafting</text>
 	</string>
 	<string id="ui_mcm_rz_craft_info">
-		<text>Recipes in the vanilla workshop and extra tabs (Hideout, Backpacks, Magazines), what happens to recipes after reading, workshop windows and repairs at the mechanic.</text>
+		<text>Recipes in the vanilla workshop and extra tabs (Hideout, Backpacks, Magazines). A read recipe always disappears; a recipe you already know stays so you can sell it. Workshop, cooking and repair kit windows stay open after an action and reading a recipe shows what it unlocks.</text>
 	</string>
 	<string id="ui_mcm_rz_craft_remove_recipe">
 		<text>Recipe disappears after reading</text>
@@ -823,7 +823,7 @@
 		<text>Screen effects</text>
 	</string>
 	<string id="ui_mcm_rz_fx_info">
-		<text>Turns off the screen distortion (PPE) that appears when you are near a monster or radiation. Sounds, damage, psy attacks and monster behaviour stay the same - only the on-screen effect is gone.</text>
+		<text>Turns off the screen distortion (PPE) that appears when you are near a monster or radiation. Sounds, damage, psy attacks and monster behaviour stay the same - only the on-screen effect is gone. Below are the psi dog filter for psi mutants and psi fields and psi voices during psi storms.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_rad">
 		<text>Disable radiation effect</text>
@@ -977,6 +977,18 @@
 	</string>
 	<string id="ui_mcm_rz_fx_hit_note">
 		<text>Camera kick applies right away. The marker disappears after loading a save or changing level (with both turned off it disappears right away). Requires modded exes.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_filter">
+		<text>Psi dog psi filter</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_filter_desc">
+		<text>The psi aura of burers, karliks, poltergeists and controllers and psi fields (Yantar, Radar, X-16 and others) use the psi dog filter - blur, noise and a bluish tint - instead of the old distortion. Pseudodogs get a weak psi aura up to 12 m with psi voices. The disable options above take priority. Off = effects as in Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_voices">
+		<text>Psi voices during psi storms</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_voices_desc">
+		<text>During a psi storm psi voices are heard now and then (about every second vortex, at most once per 25 s) and fade out within 8 s; quieter in shelter. The storm otherwise stays as in Anomaly.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_note">
 		<text>Applies to monsters and radiation fields loaded after the change - most reliably after loading a save. Requires modded exes. Game files are not changed.</text>
@@ -1543,7 +1555,7 @@
 		<text>A new maximum applies to newly created NPCs; your own rank is recalculated after a change so it stays on the same step. Remove the standalone rank150k – ReZone replaces it.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_pl_info">
-		<text>Outfit plates (kevlar, steel, polymer, ceramic) protect against bullets, shrapnel and blows and wear down with every hit. The worse their condition, the less they protect. Ceramic protects best but cracks fastest, steel is heavy and lasts longest.</text>
+		<text>Outfit plates (kevlar, steel, polymer, ceramic) protect against bullets, shrapnel and blows and wear down with every hit. The worse their condition, the less they protect. Ceramic protects best but cracks fastest, steel is heavy and lasts longest. Only one plate can be on the belt.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_pl_enabled">
 		<text>Plate wear from hits</text>
@@ -1907,6 +1919,12 @@
 	</string>
 	<string id="ui_mcm_rz_taskhud_news_style_desc">
 		<text>PDA messages at the bottom left (dynamic news, NPC messages and others) get a dark panel like the PDA tooltip: framed portrait, prominent sender name, time and the text below. Needs modded exes (on_news_received callback), otherwise the Anomaly look stays. Off = Anomaly look. Applies to new messages.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_scale">
+		<text>PDA message size</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_scale_desc">
+		<text>Shrinks or enlarges the PDA message panel at the bottom left - portrait, width and font. 1 = full size, default 0.8, 0.5 = smallest. Below 0.9 a smaller font is used, below 0.7 the smallest. Applies to new messages.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>The PDA task sound stays. Task messages are no longer added to the PDA message history; the tasks themselves remain in the tasks tab.</text>

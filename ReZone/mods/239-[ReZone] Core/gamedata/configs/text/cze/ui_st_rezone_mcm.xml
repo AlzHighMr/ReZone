@@ -694,7 +694,7 @@
 		<text>Kolik stavu ztratí oblek nebo helma pøi zásahu (1 = vanilla, 0.33 = tøikrát pomaleji, 0 = vùbec). Nahrazuje DLTX armor_degradation_reduction – ten smaž, jinak se to násobí. Projeví se po naètení hry.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_helm_info">
-		<text>Helmy (vlastní oddìlené helmy ReZone): každý oblek má slot na helmu a hlavu chrání jen helma. Uzavøené obleky (SEVA, exo, Nosorog, NBC, SSP) ztratily vestavìnou masku – èást ochrany proti radiaci, psí a chemii je teï v helmì. Pancíø helem se øídí profilem oblekù výše. Samostatný mod Separated Helmets už nepotøebuješ.</text>
+		<text>Helmy (vlastní oddìlené helmy ReZone): každý oblek má slot na helmu a hlavu chrání jen helma. Uzavøené obleky (SEVA, exo, Nosorog, NBC, SSP) ztratily vestavìnou masku – èást ochrany proti radiaci, psí a chemii je teï v helmì a mrtvý stalker v takovém obleku helmu upustí. Pancíø helem se øídí profilem oblekù výše. Když tvé tvrdé brnìní zastaví kulku, uslyšíš kovový odraz. Samostatný mod Separated Helmets už nepotøebuješ.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_helmets">
 		<text>Zapnout ReZone helmy</text>
@@ -736,7 +736,7 @@
 		<text>ReZone Crafting</text>
 	</string>
 	<string id="ui_mcm_rz_craft_info">
-		<text>Recepty ve vanilla dílnì a další záložky (Úkryt, Batohy, Zásobníky), co se stane s receptem po pøeètení, okna dílny a opravy u mechanika.</text>
+		<text>Recepty ve vanilla dílnì a další záložky (Úkryt, Batohy, Zásobníky). Pøeètený recept vždy zmizí; recept, který už znáš, ti zùstane, abys ho mohl prodat. Okna dílny, vaøení a opraváøských sad zùstanou po akci otevøená a po pøeètení receptu se ukáže, co odemyká.</text>
 	</string>
 	<string id="ui_mcm_rz_craft_remove_recipe">
 		<text>Recept po pøeètení zmizí</text>
@@ -823,7 +823,7 @@
 		<text>Obrazové efekty</text>
 	</string>
 	<string id="ui_mcm_rz_fx_info">
-		<text>Vypne zkreslení obrazu (PPE), které se objeví, když jsi blízko monstra nebo radiace. Zvuky, poškození, psí útoky i chování monster zùstanou stejné – zmizí jen efekt na obrazovce.</text>
+		<text>Vypne zkreslení obrazu (PPE), které se objeví, když jsi blízko monstra nebo radiace. Zvuky, poškození, psí útoky i chování monster zùstanou stejné – zmizí jen efekt na obrazovce. Níž je psi filtr psího psa pro psi mutanty a psi pole a psi hlasy pøi psi bouøi.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_rad">
 		<text>Vypnout efekt radiace</text>
@@ -977,6 +977,18 @@
 	</string>
 	<string id="ui_mcm_rz_fx_hit_note">
 		<text>Cuknutí kamery platí hned. Smìrovka zmizí po naètení uložené hry nebo pøechodu do jiné lokace (když vypneš obojí, zmizí hned). Vyžaduje modded exes.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_filter">
+		<text>Psi filtr psího psa</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_filter_desc">
+		<text>Psi aura bureru, karlíka, poltergeista a kontroléru a psi pole (Jantar, Radar, X-16 a další) mají filtr psího psa – rozmazání, šum a modravý nádech – místo starého zkreslení. Pseudopsi mají slabou psi auru do 12 m s psi hlasy. Volby výš, které efekty vypínají, mají pøednost. Vypnuto = efekty jako v Anomaly.</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_voices">
+		<text>Psi hlasy pøi psi bouøi</text>
+	</string>
+	<string id="ui_mcm_rz_fx_psi_voices_desc">
+		<text>Bìhem psi bouøe obèas zazní psi hlasy (zhruba u každého druhého víru, nejvýš jednou za 25 s), které za 8 s doznìjí; v úkrytu tišeji. Bouøe jinak zùstává jako v Anomaly.</text>
 	</string>
 	<string id="ui_mcm_rz_fx_note">
 		<text>Projeví se u monster a radiaèních polí, která se naètou po zmìnì – nejjistìji po naètení uložené hry. Vyžaduje modded exes. Soubory hry se nemìní.</text>
@@ -1543,7 +1555,7 @@
 		<text>Nová maximální hodnost platí pro novì vytvoøené NPC; tvoje hodnost se po zmìnì pøepoèítá, aby zùstala na stejném stupni. Samostatný rank150k smaž – ReZone ho nahrazuje.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_pl_info">
-		<text>Pláty v obleku (kevlar, ocel, polymer, keramika) chrání proti kulkám, støepinám a úderùm a s každým zásahem se opotøebí. Èím horší stav, tím ménì chrání. Keramika chrání nejvíc, ale nejrychleji praská, ocel je tìžká a vydrží nejdéle.</text>
+		<text>Pláty v obleku (kevlar, ocel, polymer, keramika) chrání proti kulkám, støepinám a úderùm a s každým zásahem se opotøebí. Èím horší stav, tím ménì chrání. Keramika chrání nejvíc, ale nejrychleji praská, ocel je tìžká a vydrží nejdéle. Na pásu mùže být jen jeden plát.</text>
 	</string>
 	<string id="ui_mcm_rz_ball_pl_enabled">
 		<text>Opotøebení plátù zásahy</text>
@@ -1907,6 +1919,12 @@
 	</string>
 	<string id="ui_mcm_rz_taskhud_news_style_desc">
 		<text>Zprávy PDA vlevo dole (dynamické zprávy, zprávy od NPC a další) mají tmavý panel jako nápovìda v PDA: fotka v rámeèku, výrazné jméno odesílatele, èas a pod tím text. Potøebuje modded exes (callback on_news_received), jinak zùstane vzhled Anomaly. Vypnuto = vzhled Anomaly. Platí pro nové zprávy.</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_scale">
+		<text>Velikost zpráv PDA</text>
+	</string>
+	<string id="ui_mcm_rz_taskhud_news_scale_desc">
+		<text>Zmenší nebo zvìtší panel zpráv PDA vlevo dole – fotku, šíøku i písmo. 1 = plná velikost, výchozí 0.8, 0.5 = nejmenší. Pod 0.9 se použije menší písmo, pod 0.7 nejmenší. Platí pro nové zprávy.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>Zvuk PDA u úkolu zùstává. Zprávy o úkolech se už nepøidávají do historie zpráv v PDA, úkoly samotné jsou dál v záložce úkolù.</text>

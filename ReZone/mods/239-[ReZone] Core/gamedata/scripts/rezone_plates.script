@@ -75,9 +75,9 @@ end
 local registered = false
 function load()
 	local g = core.page(PAGE)
-	on = g("enabled") ~= false and g("pl_enabled") ~= false
+	on = g("enabled") ~= false
 	mult = tonumber(g("pl_wear")) or 1
-	one = g("enabled") ~= false and g("pl_one") ~= false
+	one = on
 	if one and db.actor then check_belt() end
 	local want = on and mult > 0
 	if want ~= registered then

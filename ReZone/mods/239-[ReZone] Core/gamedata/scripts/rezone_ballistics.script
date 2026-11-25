@@ -332,7 +332,7 @@ local function slot_armor(slot, bone_name)
 end
 
 local function actor_ricochet(s_hit, bone_id)
-	if cfg("enabled") == false or cfg("ricochet") == false or not s_hit or s_hit.type ~= hit.fire_wound then return end
+	if cfg("enabled") == false or not s_hit or s_hit.type ~= hit.fire_wound then return end
 	local who = s_hit.draftsman
 	if not who or who:id() == AC_ID then return end
 	local now = time_global()

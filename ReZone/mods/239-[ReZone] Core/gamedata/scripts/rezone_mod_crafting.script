@@ -3,17 +3,13 @@ TABS_FILE = "items\\settings\\rezone_craft_tabs.ltx"
 TABS_LIST = "rezone_craft_tabs"
 
 local OPT = rezone_mcm.path("rz_craft") .. "/"
-local defaults = { remove_recipe = true, keep_known = false, keep_open = true, learn_popup = true }
+local defaults = { remove_recipe = true, keep_known = true, keep_open = true, learn_popup = true }
 
 local function log(fmt, ...)
 	if rezone_core then rezone_core.dbg("[ReZone Crafting] " .. fmt, ...) end
 end
 
 local function opt(key)
-	if rezone_core and rezone_core.get and rezone_mcm then
-		local v = rezone_core.get(OPT .. key)
-		if v ~= nil then return v end
-	end
 	return defaults[key]
 end
 

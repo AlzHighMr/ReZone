@@ -340,7 +340,7 @@ end
 function start_wave()
 	local lvl = level.name()
 	local fields, n = field_arts()
-	if n == 0 then return end
+	if n == 0 then core.log("lovci artefaktu: %s - zadne volne artefakty v polich", lvl) return end
 	local list = {}
 	for _, f in pairs(fields) do list[#list + 1] = f end
 
@@ -360,6 +360,7 @@ function start_wave()
 		end
 	end
 	table.sort(cand, function(a, b) return a.d < b.d end)
+	core.log("lovci artefaktu: %s - %d artefaktu v %d polich, %d vhodnych skupin do %d m", lvl, n, #list, #cand, cfg.radius)
 
 	local used, count = {}, 0
 	for _, c in ipairs(cand) do
@@ -428,6 +429,7 @@ local function on_interaction(typ, obj, name)
 	if typ ~= "anomalies" or not cfg.on then return end
 	if name ~= "emission_end" and not (name == "psi_storm_end" and cfg.psi) then return end
 	pending = game_min + cfg.delay * (0.6 + math.random() * 0.8)
+	core.log("lovci artefaktu: %s, vlna za %.0f hernich minut", name, pending - game_min)
 	local ok, err = pcall(other_levels)
 	if not ok then core.warn("lovci artefaktu: %s", tostring(err)) end
 end

@@ -14,10 +14,10 @@ local MAP = {
 	[1] = { classic = true, ball = 0, pdmg = 1, loot = 2, efth = 5 },
 
 	[2] = { ball = 1, pdmg = 3, loot = 2, efth = 2, afsp = 3, tough = 1.0, wear = 0.5,
-	        prices = 1, prices_on = false, stock = false, mut = 1.0, punish = 1.0, walk = 0, keep_known = false },
+	        prices = 1, prices_on = false, stock = false, mut = 1.0, punish = 1.0, walk = 0 },
 
 	[3] = { ball = 2, pdmg = 4, loot = 3, efth = 4, afsp = 4, tough = 1.2, wear = 1.0,
-	        prices = 6, prices_on = true, stock = true, mut = 1.3, punish = 1.5, walk = 0, keep_known = false },
+	        prices = 6, prices_on = true, stock = true, mut = 1.3, punish = 1.5, walk = 0 },
 }
 
 local function build(id)
@@ -36,12 +36,10 @@ local function build(id)
 		copy_into(s, "rz_econ/rz_loot/", rezone_loot_presets.PRESETS[m.loot])
 		s["rz_combat/rz_ball/wear"] = 0.9
 		s["rz_combat/rz_ball/helmets"] = false
-		s["rz_combat/rz_ball/helm_drop"] = false
 		s["rz_combat/rz_ball/head_kill"] = true
 		s["rz_combat/rz_vision/mutant"] = 0.15
 		s["rz_combat/rz_vision/st_danger"] = 0.5
 		s["rz_combat/rz_vision/st_free"] = 0.5
-		s["rz_econ/rz_craft/keep_known"] = true
 		if rezone_mod_afspawn then
 			s["rz_world/rz_afsp/enabled"] = true
 			s["rz_world/rz_afsp/preset"] = 2
@@ -77,7 +75,6 @@ local function build(id)
 		if m.walk > 0 then s["rz_world/rz_walk/max_squads"] = m.walk end
 	end
 
-	s["rz_econ/rz_craft/keep_known"] = m.keep_known
 	s["rz_combat/rz_pdmg/enabled"] = true
 	s["rz_combat/rz_pdmg/preset"] = m.pdmg
 	copy_into(s, "rz_combat/rz_pdmg/", rezone_presets.PRESETS[m.pdmg])

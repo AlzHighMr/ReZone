@@ -63,7 +63,7 @@ local function patch()
 end
 
 local TPAGE = rezone_mcm.path("rz_taskhud")
-local topt = { on = true, y = 60, time = 7, rows = 3, fade = true, fade_y = 625, news = true }
+local topt = { on = true, y = 60, time = 7, rows = 3, fade = true, fade_y = 625, news = true, news_scale = 0.8 }
 local T_ICON = { new = "ui_rz_task_new", updated = "ui_rz_task_new", complete = "ui_rz_task_done", fail = "ui_rz_task_done", reversed = "ui_rz_task_done" }
 local T_CLR = { new = { 255, 255, 255 }, updated = { 255, 255, 255 }, complete = { 255, 255, 255 }, fail = { 235, 120, 110 }, reversed = { 190, 190, 190 } }
 local T_HEAD = { complete = "st_rz_task_complete", fail = "st_rz_task_fail", reversed = "st_rz_task_reversed" }
@@ -398,19 +398,29 @@ local function on_news(view, time_w, cap_w, msg_w, icon)
 	if not (topt.news and view and time_w and cap_w and msg_w and icon) then return end
 	local cap, msg, tm = n_get(cap_w), n_get(msg_w), n_get(time_w)
 	local k = utils_xml.screen_ratio()
-	local W, p = N_W * k, N_PAD * k
-	local ix, iy, iw, ih = p, N_PAD, N_IW * k, N_IH
-	local tx = ix + iw + 8 * k
-	local mx, my, mw = p + 2 * k, iy + ih + 5, W - 2 * p - 4 * k
-	local f16 = GetFontLetterica16Russian()
+	local s = math.max(0.5, math.min(1.2, topt.news_scale or 1))
+	local fn, fb, nh, bh
+	if s >= 0.9 then
+		fn, fb, nh, bh = GetFontLetterica18Russian(), GetFontLetterica16Russian(), 20, 16
+	elseif s >= 0.7 then
+		fn, fb, nh, bh = GetFontLetterica16Russian(), GetFontSmall(), 17, 13
+	else
+		fn, fb, nh, bh = GetFontSmall(), GetFontSmall(), 14, 13
+	end
+	local pad = math.max(3, N_PAD * s)
+	local W, p = N_W * s * k, pad * k
+	local ix, iy, iw, ih = p, pad, N_IW * s * k, N_IH * s
+	local tx = ix + iw + 8 * s * k
+	local mx, mw = p + 2 * k, W - 2 * p - 4 * k
+	local my = math.max(iy + ih, iy + nh + bh + 4) + 4
 	local mh = 0
 	if msg ~= "" then
-		msg_w:SetFont(f16)
-		msg_w:SetWndSize(vector2():set(mw, 16))
+		msg_w:SetFont(fb)
+		msg_w:SetWndSize(vector2():set(mw, bh))
 		msg_w:AdjustHeightToText()
-		mh = math.max(16, msg_w:GetHeight())
+		mh = math.max(bh, msg_w:GetHeight())
 	end
-	local H = (mh > 0 and (my + mh) or (iy + ih)) + N_PAD
+	local H = (mh > 0 and (my + mh) or math.max(iy + ih, iy + nh + bh + 2)) + pad
 	time_w:Show(false)
 	cap_w:Show(false)
 	msg_w:Show(false)
@@ -425,10 +435,10 @@ local function on_news(view, time_w, cap_w, msg_w, icon)
 	n_static(view, L, 0, 1, k, H - 1)
 	n_static(view, L, W - k, 1, W, H - 1)
 	n_static(view, "ui_rz_news_frame", ix - 2 * k, iy - 2, ix + iw + 2 * k, iy + ih + 2)
-	n_text(view, GetFontLetterica18Russian(), GetARGB(255, 255, 255, 255), tx, iy + 2, W - tx - p, 20, cap, false)
-	n_text(view, f16, GetARGB(255, 150, 150, 145), tx, iy + 23, W - tx - p, 16, tm, false)
+	n_text(view, fn, GetARGB(255, 255, 255, 255), tx, iy + 1, W - tx - p, nh, cap, false)
+	n_text(view, fb, GetARGB(255, 150, 150, 145), tx, iy + nh + 2, W - tx - p, bh, tm, false)
 	if mh > 0 then
-		n_text(view, f16, GetARGB(255, 215, 215, 210), mx, my, mw, mh, msg, true)
+		n_text(view, fb, GetARGB(255, 215, 215, 210), mx, my, mw, mh, msg, true)
 	end
 	view:SetWndSize(vector2():set(view:GetWidth(), H + 3))
 end
@@ -455,6 +465,7 @@ function load()
 	topt.fade = t("fade_bottom") ~= false
 	topt.fade_y = tonumber(t("fade_y")) or 625
 	topt.news = t("news_style") ~= false
+	topt.news_scale = tonumber(t("news_scale")) or 0.8
 end
 
 function on_game_start()

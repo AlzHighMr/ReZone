@@ -1,4 +1,4 @@
-VERSION = "2.6.40"
+VERSION = "2.6.44"
 
 ROOT = "rezone"
 TAB_MAIN, TAB_ECO, TAB_COMBAT, TAB_WORLD, TAB_SURV, TAB_OT = "rz_main", "rz_econ", "rz_combat", "rz_world", "rz_survival", "rz_other"
@@ -61,16 +61,6 @@ local function track(id, def, min, max, step, hint)
 end
 local function page(id, gr) return { id = id, sh = true, gr = gr } end
 
-local function gp_meds()
-	return page("rz_meds", {
-		slide("ui_mcm_rz_meds_title"),
-		desc("d", "ui_mcm_rz_meds_info"),
-		line("l1"),
-		check("no_limit", true, "rz_meds_no_limit"),
-		desc("n", "ui_mcm_rz_meds_note", CLR_NOTE),
-	})
-end
-
 local function gp_needs()
 	return page("rz_needs", {
 		slide("ui_mcm_rz_needs_title"),
@@ -105,11 +95,6 @@ local function gp_craft()
 		slide("ui_mcm_rz_craft_title"),
 		desc("d", "ui_mcm_rz_craft_info"),
 		line("l1"),
-		check("remove_recipe", true, "rz_craft_remove_recipe"),
-		check("keep_known", false, "rz_craft_keep_known"),
-		check("keep_open", true, "rz_craft_keep_open"),
-		check("learn_popup", true, "rz_craft_learn_popup"),
-		line("l2"),
 		check("mech_tools", true, "rz_craft_mech_tools"),
 	})
 end
@@ -143,14 +128,10 @@ local function gp_ballistics()
 		track("wear", 0.33, 0, 2, 0.01, "rz_ball_wear"),
 		line("l_pl"),
 		desc("dpl", "ui_mcm_rz_ball_pl_info"),
-		check("pl_one", true, "rz_ball_pl_one"),
-		check("pl_enabled", true, "rz_ball_pl_enabled"),
 		track("pl_wear", 1, 0, 3, 0.05, "rz_ball_pl_wear"),
 		desc("dh", "ui_mcm_rz_ball_helm_info"),
 		check("head_kill", true, "rz_ball_head_kill"),
-		check("ricochet", true, "rz_ball_ricochet"),
 		check("helmets", true, "rz_ball_helmets"),
-		check("helm_drop", true, "rz_ball_helm_drop"),
 	}
 	local out = {}
 	for _, v in ipairs(gr) do
@@ -528,6 +509,9 @@ local function ot_fx()
 		check("polter", false, "rz_fx_polter"),
 		check("contr", false, "rz_fx_contr"),
 		check("psy_other", false, "rz_fx_psy_other"),
+		line("lp"),
+		check("psi_filter", true, "rz_fx_psi_filter"),
+		check("psi_voices", true, "rz_fx_psi_voices"),
 		line("l2"),
 		desc("n", "ui_mcm_rz_fx_note", CLR_NOTE),
 		line("l3"),
@@ -561,6 +545,7 @@ local function ot_taskhud()
 		{ id = "fade_y", type = "track", val = 2, def = 625, min = 450, max = 740, step = 5, hint = "rz_taskhud_fade_y" },
 		line("l3"),
 		check("news_style", true, "rz_taskhud_news_style"),
+		{ id = "news_scale", type = "track", val = 2, def = 0.8, min = 0.5, max = 1.2, step = 0.05, prec = 2, hint = "rz_taskhud_news_scale" },
 		desc("n", "ui_mcm_rz_taskhud_note", CLR_NOTE),
 	})
 end
@@ -724,7 +709,6 @@ function build_tree()
 	add(world, rezone_mod_ranks, gp_ranks)
 	add(world, rezone_secrets, gp_secrets)
 
-	add(surv, true, gp_meds)
 	add(surv, true, gp_needs)
 	add(surv, true, hp_artefacts)
 

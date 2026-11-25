@@ -157,20 +157,20 @@ local SIZES = { [1] = { 1, 2 }, [2] = { 2, 3 }, [3] = { 3, 4 } }
 local function spawn(lvl)
 	local L = LV[lvl]
 	local c = smarts_on(lvl)
-	if #c.list < 2 then return end
+	if #c.list < 2 then core.log("toulavi stalkeri: %s - malo smartu", lvl) return end
 
 	local fl = {}
 	for _, f in ipairs(cfg.factions) do
 		if not cfg.native or c.props[f[5]] then fl[#fl + 1] = f end
 	end
-	if #fl == 0 then return end
+	if #fl == 0 then core.log("toulavi stalkeri: %s - zadna povolena frakce tu nezije", lvl) return end
 	local f = fl[math.random(#fl)]
 	local sec = "rz_wander_" .. f[1] .. "_" .. math.min(3, math.max(1, L[4]))
-	if not ini_sys:section_exist(sec) then return end
+	if not ini_sys:section_exist(sec) then core.log("toulavi stalkeri: chybi sekce %s", sec) return end
 
 	local starts = {}
 	for _, s in ipairs(c.list) do if far(s.pos) then starts[#starts + 1] = s end end
-	if #starts == 0 then return end
+	if #starts == 0 then core.log("toulavi stalkeri: %s - zadny smart dost daleko od hrace", lvl) return end
 	local st = starts[math.random(#starts)]
 	local pool, tg = {}, {}
 	for _, s in ipairs(c.list) do if s.id ~= st.id then pool[#pool + 1] = s.name end end

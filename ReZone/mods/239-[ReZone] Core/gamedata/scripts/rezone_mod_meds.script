@@ -27,7 +27,7 @@ local function patch()
 end
 
 function load()
-	no_limit = core.page(PAGE)("no_limit") ~= false
+	no_limit = true
 	core.log("leky: limit leku a drog %s", no_limit and "vypnuty" or "vanilla")
 end
 
