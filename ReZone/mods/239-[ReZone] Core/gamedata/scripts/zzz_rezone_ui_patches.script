@@ -402,10 +402,8 @@ local function on_news(view, time_w, cap_w, msg_w, icon)
 	local fn, fb, nh, bh
 	if s >= 0.9 then
 		fn, fb, nh, bh = GetFontLetterica18Russian(), GetFontLetterica16Russian(), 20, 16
-	elseif s >= 0.7 then
-		fn, fb, nh, bh = GetFontLetterica16Russian(), GetFontSmall(), 17, 13
 	else
-		fn, fb, nh, bh = GetFontSmall(), GetFontSmall(), 14, 13
+		fn, fb, nh, bh = GetFontLetterica16Russian(), GetFontLetterica16Russian(), 17, 16
 	end
 	local pad = math.max(3, N_PAD * s)
 	local W, p = N_W * s * k, pad * k

@@ -1924,7 +1924,7 @@
 		<text>PDA message size</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_news_scale_desc">
-		<text>Shrinks or enlarges the PDA message panel at the bottom left - portrait, width and font. 1 = full size, default 0.8, 0.5 = smallest. Below 0.9 a smaller font is used, below 0.7 the smallest. Applies to new messages.</text>
+		<text>Shrinks or enlarges the PDA message panel at the bottom left - portrait, width and margins. 1 = full size, default 0.8, 0.5 = smallest. Below 0.9 the name uses a smaller font; the text stays in Letterica 16 so translated diacritics keep working. Applies to new messages.</text>
 	</string>
 	<string id="ui_mcm_rz_taskhud_note">
 		<text>The PDA task sound stays. Task messages are no longer added to the PDA message history; the tasks themselves remain in the tasks tab.</text>
