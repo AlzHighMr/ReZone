@@ -1,6 +1,9 @@
 local SHIFT = -26
 
 function on_xml_read()
+	pcall(function()
+		rezone_loadscreen.boot()
+	end)
 	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
 		if xml_file_name ~= [[ui\game_tutorials.xml]] then
 			return

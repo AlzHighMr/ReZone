@@ -52,13 +52,9 @@ local function variants(folder)
 	return list
 end
 
-function set_level(level)
-	if type(level) ~= "string" or level == "" or level == current then
-		return
-	end
-	local folder = level
+local function apply(key, folder)
 	local list = variants(folder)
-	if #list == 0 then
+	if #list == 0 and folder ~= "_default" then
 		folder = "_default"
 		list = variants(folder)
 	end
@@ -72,8 +68,50 @@ function set_level(level)
 		return
 	end
 	if write(MAIN, main) and write(SIDE, side) then
-		current = level
+		current = key
 	end
+end
+
+function set_level(level)
+	if type(level) ~= "string" or level == "" or level == current then
+		return
+	end
+	apply(level, level)
+end
+
+function reset()
+	if current == "_default" then
+		return
+	end
+	apply("_default", "_default")
+end
+
+local function save_level(name)
+	if type(name) ~= "string" or name == "" then
+		return
+	end
+	local ok, lvl = pcall(function()
+		return CSavedGameWrapper(name):level_name()
+	end)
+	if ok and lvl and lvl ~= "" then
+		set_level(lvl)
+	else
+		reset()
+	end
+end
+
+local function newest_save()
+	local flist = getFS():file_list_open_ex("$game_saves$", bit_or(FS.FS_ListFiles, FS.FS_RootOnly), "*.scop")
+	if not flist or flist:Size() == 0 then
+		return
+	end
+	flist:Sort(FS.FS_sort_by_modif_down)
+	local file = flist:GetAt(0)
+	if not file then
+		return
+	end
+	local full = file:NameFull()
+	return string.sub(full, 1, string.len(full) - string.len(".scop"))
 end
 
 local function level_of_gvid(gvid)
@@ -188,15 +226,60 @@ local function patch()
 				local index = self.list_box:GetSelectedIndex()
 				if index ~= -1 then
 					local item = self.list_box:GetItemByIndex(index)
-					set_level(CSavedGameWrapper(item.fn:GetText()):level_name())
+					save_level(item.fn:GetText())
 				end
 			end)
 			return base(self)
 		end
 	end
+	local mm = ui_main_menu and ui_main_menu.main_menu
+	if mm and not ui_main_menu.rezone_loadscreen_menu then
+		ui_main_menu.rezone_loadscreen_menu = true
+		local start = mm.StartGame
+		mm.StartGame = function(self)
+			pcall(reset)
+			return start(self)
+		end
+		local last = mm.OnButton_last_save
+		mm.OnButton_last_save = function(self)
+			if alife() == nil then
+				pcall(function()
+					save_level(newest_save())
+				end)
+			end
+			return last(self)
+		end
+		local load_last = mm.LoadLastSave
+		mm.LoadLastSave = function(self)
+			pcall(function()
+				save_level(newest_save())
+			end)
+			return load_last(self)
+		end
+	end
+end
+
+local function menu_init()
+	if not level.present() then
+		pcall(reset)
+	end
+end
+
+local booted = false
+function boot()
+	if booted then
+		return
+	end
+	booted = true
+	pcall(patch)
+	if not level.present() then
+		pcall(reset)
+	end
+	RegisterScriptCallback("main_menu_on_init", menu_init)
 end
 
 function on_game_start()
+	boot()
 	patch()
 	RegisterScriptCallback("actor_on_first_update", first_update)
 	RegisterScriptCallback("actor_on_update", update)
