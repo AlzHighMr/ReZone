@@ -35,6 +35,9 @@ local SPECIAL = {
 
 local cfg = { on = true, max = DEFAULT_MAX, mult = DEFAULT_MAX / VANILLA_MAX }
 local foreign = false
+local xml_done = {}
+local init_cfg = false
+local init_n = 0
 
 local function read_cfg()
 	local c = axr_main and axr_main.config
@@ -111,6 +114,7 @@ local function xml_ranks(xml_obj)
 					if amin then na.min = math.min(nmin or amin, cfg.max) end
 					if amax then na.max = math.min(nmax or amax, cfg.max) end
 					xml_obj:setElementAttr(k, na)
+					xml_done[id] = true
 					n = n + 1
 				else
 					local t = xml_obj.getText and xml_obj:getText(k)
@@ -123,6 +127,7 @@ local function xml_ranks(xml_obj)
 							else
 								xml_obj:setText(k, (string.gsub(t, "%d+", function(d) return tostring(scale_num(tonumber(d))) end)))
 							end
+							xml_done[id] = true
 							n = n + 1
 						end
 					end
@@ -145,6 +150,23 @@ function xml_hook(xml_file_name, xml_obj)
 	xml_log[#xml_log + 1] = { xml_file_name, ok, n }
 end
 
+function char_init(character_id, data)
+	if not data or rawget(_G, "modxml_zzz_rank150k") then return end
+	local id = tostring(character_id or "")
+	if xml_done[id] then return end
+	if not init_cfg then read_cfg() init_cfg = true end
+	if not cfg.on or cfg.mult == 1 then return end
+	local a, b = tonumber(data.rank_min), tonumber(data.rank_max)
+	if not (a or b) then return end
+	if (a and a > VANILLA_MAX) or (b and b > VANILLA_MAX) then return end
+	local rg = find_range(id)
+	local na, nb
+	if rg then na, nb = scaled(rg[1]), scaled(rg[2]) else na, nb = scale_num(a), scale_num(b) end
+	if a then data.rank_min = math.min(na or a, cfg.max) end
+	if b then data.rank_max = math.min(nb or b, cfg.max) end
+	init_n = init_n + 1
+end
+
 local function is_stalker(se)
 	local cls = se and se.clsid and se:clsid()
 	return cls and IsStalker and IsStalker(nil, cls)
@@ -160,7 +182,7 @@ local function set_npc_rank(id, se, factor, pending)
 		local ok = pcall(se.set_rank, se, math.floor(se:rank() * factor + 0.5))
 		if ok then return true end
 	end
-	pending[id] = factor
+	pending[id] = (pending[id] or 1) * factor
 	return false
 end
 
@@ -190,6 +212,27 @@ local function migrate_npcs()
 	rezone_core.dbg("[ReZone] Hodnosti NPC: %d NPC, nejvyssi %d, nasobek x%.2f, zmeneno %d, ceka na online %d", #list, top, factor, done_n, pend_n)
 end
 
+local function fix_generic()
+	local m = alife_storage_manager.get_state()
+	if not m or not alife_object or cfg.mult == 1 then return end
+	if m.rz_rank_gen_fix and math.abs(m.rz_rank_gen_fix - cfg.mult) < 0.001 then return end
+	m.rz_rank_pending = m.rz_rank_pending or {}
+	local p, done_n, pend_n = m.rz_rank_pending, 0, 0
+	for id = 1, 65534 do
+		local se = alife_object(id)
+		if se and not p[id] and is_stalker(se) and se.rank then
+			local key = string.match(se:section_name(), "^sim_default_(%a+_%d)$")
+			local rg = key and RANGES[key]
+			local r = se:rank()
+			if rg and r <= VANILLA_MAX and r < scaled(rg[1]) then
+				if set_npc_rank(id, se, cfg.mult, p) then done_n = done_n + 1 else pend_n = pend_n + 1 end
+			end
+		end
+	end
+	m.rz_rank_gen_fix = cfg.mult
+	rezone_core.dbg("[ReZone] Hodnosti NPC: opraveno %d beznych NPC s neprepocitanou hodnosti, ceka na online %d", done_n, pend_n)
+end
+
 local function on_net_spawn(npc)
 	local m = alife_storage_manager.get_state()
 	local p = m and m.rz_rank_pending
@@ -210,7 +253,10 @@ local function rescale_actor()
 		rezone_core.dbg("[ReZone] Hodnosti: maximum zmeneno, hodnost hrace %d -> %d", r, db.actor:character_rank())
 	end
 	m.rz_rank_mult = cfg.mult
-	if cfg.on and not foreign then pcall(migrate_npcs) end
+	if cfg.on and not foreign then
+		pcall(migrate_npcs)
+		pcall(fix_generic)
+	end
 end
 
 function enabled() return cfg.on and not foreign end
@@ -239,6 +285,7 @@ function on_game_start()
 		end
 	end
 	xml_log = {}
+	if init_n > 0 then rezone_core.dbg("[ReZone] Hodnosti: prepocitano %d postav pri nacteni profilu (x%.2f)", init_n, cfg.mult) end
 	load()
 	core.on_change(load)
 	RegisterScriptCallback("actor_on_first_update", rescale_actor)

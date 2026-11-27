@@ -281,11 +281,11 @@ local function patch()
 	end
 
 	local orig_npc = sq.create_npc
-	sq.create_npc = function(self, ...)
-		local r = orig_npc(self, ...)
+	sq.create_npc = function(self, spawn_smart, ...)
+		local r = orig_npc(self, spawn_smart, ...)
 		if (cfg.on or cfg.rl) and is_common(self:section_name()) then
 			if cfg.rl and not is_mutant_faction(self.player_id) and cfg.rl_levels[level_name_of(self.m_game_vertex_id) or ""] then
-				local smart = self.smart_id and alife_object(self.smart_id)
+				local smart = spawn_smart or (self.smart_id and alife_object(self.smart_id))
 				if not (smart and cfg.rl_bases and smart.props and (smart.props.base or 0) > 0) then
 					local ok, err = pcall(limit_ranks, self)
 					if not ok then core.warn("populace: hodnosti: %s", tostring(err)) end
